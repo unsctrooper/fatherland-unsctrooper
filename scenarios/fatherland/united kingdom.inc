@@ -84,8 +84,18 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
   } 
    SpyInfo                = {  country = "ENG" NumberOfSpies = 12  } 
     
-    nationalprovinces      = {  29 9 5 4 6 7 12 11 10 36 35 13 14 15 18 17 16 24 25 28  
+  nationalprovinces      = {  29 9 5 4 6 7 12 11 10 36 35 13 14 15 18 17 16 24 25 28  
         19 26 27 20 23 22 21 8 }
+		
+  claimedprovinces = {  
+   # Palestine
+   1172 1011 1010 1008 1009 1013 
+   # Kuweit
+   1041
+   # Hong Kong
+   1371 
+   }
+   
    
    ownedprovinces         = {  
    
@@ -602,7 +612,7 @@ inventions = { 3000027 3000028 3000012 }
      id       = {  type = 12700 id = 3807  } 
      Division = 
      {  id       = {  type = 12700 id = 3808  } 
-       name     = "3 Dywizja Strzelców Karpackich" 
+       name     = "3 Dywizja StrzelcÃ³w Karpackich" 
        type     = infantry 
 	   model    = 11
        strength = 80
