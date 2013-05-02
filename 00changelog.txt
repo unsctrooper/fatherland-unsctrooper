@@ -1,0 +1,216 @@
+####################################
+# Changelog for Alpha version 0.31
+####################################
+
+# Events/Decisions:
+- Integration of Mobilization System (Thanks to Tonie112)
+
+# AI
+- Completely reworked AI for major (UK,Germany,Italy,USSR,USA,France) (Thanks to Tonie112)
+
+####################################
+# Changelog for Alpha version 0.30
+####################################
+# Porting
+- Porting on the 1.03 RC3 patch
+- Add modified db/misc.txt 
+
+# Events/Decisions:
+- Small revision of Grand Council of Fascism (Pako)
+
+# Scenario files (INC):
+- Completely review Spain (Pako, NWO2)
+- Completely review Portugal (Pako, NWO2)
+- Completely review Ireland (Pako, NWO2)
+- Completely review South Africa (Pako, NWO2)
+- Added Ethiopia as new playable nation (Pako)
+
+# Other
+- Made Ethiopia selectable in Fatherland.eug file (Pako)
+
+####################################
+# Changelog for Alpha version 0.23
+####################################
+
+# Bug fixing:
+- Fixed multiple bugs 
+
+# Events/Decisions:
+- Little revision of Hitler Death Chain (Pako)
+- New events chains for Vichy France and Free France (Death of Petain, 2nd Treaty of Versailles, French Revenge, Crisis in the Med) (thanks to Tonie112)
+- Expanded and new events chains: Franco-Cambodian's relations and Cochinchina (thanks to Ticket Cookie)
+
+# Scenario files (INC):
+- Review Vichy France (thanks to Tonie112)
+- Review Free France (thanks to Tonie112)
+- Added 3 new playable nations, Cambodia, Laos, Vietnam (thanks to Ticket Cookie)	
+- Fixed Italian IC malus (thanks to Ticket Cookie)	
+- Fixed UK research malus (thanks to Ticket Cookie)	
+- Fixed Thai-Indochinese border (prov1402) (thanks to Ticket Cookie)		
+- Give core on Free France West Indies, Guyanna, French Pacific Island and St.Pierre et Miquelon (thanks to Ticket Cookie)	
+- Deleted land forts in Tunisia (5 years after Tunisia Campaign) (thanks to Ticket Cookie)
+- Deleted land forts in Italy (no Italian Campaign, so no Gothic and Po line.) (thanks to Ticket Cookie)
+- Deleted land forts in Greece (Metaxas Line would have been destroyed by Italian, German and Bulgarian forces by 1948) (thanks to Ticket Cookie)
+- Fixed Italian provinces revolt risk (no Italian Campaign, no RSI, so no partisans malus in their territories) (thanks to Ticket Cookie)
+
+# Scenario files (OOB):
+- Review Germany Naval OOB (thanks to WarHawk 109)
+- New U03 (Indochinese Union) OOB (thanks to Ticket Cookie)	
+- New CMB (Cambodia) OOB (thanks to Ticket Cookie)	
+- New LAO (Laos) OOB (thanks to Ticket Cookie)	
+- New VIE (Vietnam) OOB (thanks to Ticket Cookie)	
+
+# Ministers, leaders and tech teams:
+
+- Added some new French ministers in french minister file, 'woke up' Darlan (thanks to Tonie112)
+- New starting cabinet for U03 (Indochinese Union) (thanks to Ticket Cookie)	
+- Fix ministers Cambodia (thanks to Ticket Cookie)
+- Fix ministers Laos (thanks to Ticket Cookie) 
+- Fix ministers RSI (ministers_rsi): that was breaking Unit chain about a republican Italy, and reduced drastically the number of RSI ministers. (thanks to Ticket Cookie)
+- Improved leaders for U03 (Indochinese Union) (thanks to Ticket Cookie)
+- Improved and news ministers for U03 (Indochinese Union) and VIE (Vietnam) (thanks to Ticket Cookie)
+- New tech team for U01 (Free France), U03 (Indochinese Union) and VIE (Vietnam) (thanks to Ticket Cookie)
+- Fixed techs of Indochinese Union (thanks to Ticket Cookie)
+
+# Other
+- Made Vichy selectable in Fatherland.eug file (thanks to Tonie112)
+- Made Cambodia,Laos,Vietnam selectable in Fatherland.eug file (thanks to Ticket Cookie)
+
+####################################
+# Changelog for Alpha version 0.22
+####################################
+
+# Bug fixing:
+- Fixed multiple bugs 
+- Fixed scenario axis alliance (thanks to Korodikrisz)
+- Fixed Plan Marshall for Free France (thanks to Ticket Cookie)
+- Fixed Serbia's Future (thanks to Ticket Cookie)
+- Fixed Free France Capital (thanks to Ticket Cookie)
+- Fixed French Coastline (thanks to Ticket Cookie)
+- Fixed Transylvania crisis (thanks to Unit)		 
+
+# Events/Decisions:
+- New events chains : Algeria, Tunisia, Morocco (thanks to Ticket Cookie)	
+- New events chains : The Vladivostok Conference (thanks to Pako)
+- New events chains : Italy (thanks to Unit)			
+  
+# Gfx:
+- New Original splashscreen (credits Pako)
+
+# Scenario files (INC):
+- Fixed Italy.inc (Unit)
+- Fixed Finland.inc 
+
+# Other
+- Fixed and added ministers_ger.csv
+- New nation : Morocco (thanks to Ticket Cookie 6 news ministers, 1 new leader+1 new flag&shield [thanks to RumpNissen09])
+
+####################################
+# Changelog for Alpha version 0.21
+####################################
+
+# Bug fixing:
+- Fixed relationship between Germany and other axis nations
+- Fixed event 267 desc 
+# Events/Decisions:
+- China civil war (alpha version [credits NWO])
+- Integration of Transylvania Crisis
+- Integration of Abadan Crisis
+- Add event Claim the coastline (French State)
+# Gfx:
+- Add china civil war pics (credits NWO)
+# Scenario files (INC):
+- Review some diplomacy
+# Scenario files (INC. OOBs):
+- Review of Soviet Cabinet
+- Review of Soviet OOB
+- Review of China Nationalis OOB
+- Review of United Kingdom.inc,Germany.inc
+# Other
+- Completely reorganization of db\events folder
+- Renamed events2.txt to Fatherland.txt
+- New splash screen (crdits General Grant)
+
+####################################
+# Changelog for Alpha version 0.20
+####################################
+
+# Bug fixing:
+- 
+# Events/Decisions:
+- Added events chain for the Hitler Died
+- Added events chain for a central asia war
+- Added events chain to gain core as U01 on Algeria and Tunisia.
+# Ministers, leaders and tech teams:
+- Fixed Admiral Darlan leader and tech team for Free France and Vichy at the same time(+HoG Chief of Navy of VIC), he is now available only for Vichy.
+# gfx:
+- Added flags, shields and counters for Fascist Germany, Communist Kazakhstan, Communist Turkestan, Independent Turkestan and Axis Turkestan. 
+# Scenario files (INC):
+- Soviet Union no longer has cores on the Baltics, Bessarabia and Karelia.
+- Changed Free France capital back to Brazzaville.
+- Fixed Free France claims on North Africa.
+# Scenario files (INC. OOBs):
+- Provisional Soviet OOB
+
+
+####################################
+# Changelog for Alpha version 0.19
+####################################
+
+# Bug fixing:
+- Reorganized the mods.csv file to prevent "translation missing" errors.
+# Events/Decisions:
+- Added 14 new events for the Abadan Crisis (inspired by the NWO mod, all credit goes to them for the parts I copied)
+- Added new 10 general events for U44 and GER for the General Government.
+- Added 9 new events for the future of the General Government
+- Omitted "Operation Barbarossa".
+- Fixed some of the "Ost" events. 
+- Added a few more "Ost" events, including integration of Osland, pacification events for RK Ukraine and an expansion event for the Lokot Republic.
+- Added an event for Volksgrenadier divsions when Germany is forced on the defensive.
+# Ministers, leaders and tech teams:
+- Changed the files for the Cossacks (TRA) and Idel Ural State (UER)
+# gfx:
+- Added flags, shields and counters for the Idel Ural State and Goralenland.
+- Added one new event picture.
+# Scenario files (INC):
+- Removed the "AXI" tag (Crimea) from the scenario and alloted the territory to GER.
+- Added a cabinet for the Cossack Federation (TRA)
+# Scenario files (INC. OOBs):
+- Reorganized the German airforce. 
+# Map:
+-
+# Other:
+- Changed the revolt.txt file to create the Idel Ural State.
+- Changed the revolt.txt file to give province 341 (Novi Sad) to Hungary upon creation (as an extra province).
+- Added a new country: Goralenland (U62, formerly Far Eastern Host)
+- Added a new country: Galicia (U54, formerly West Ukrainian People's Republic)
+
+####################################
+# Changelog for Alpha version 0.18
+####################################
+
+# Bug fixing:
+-
+# Events/Decisions:
+- Added 37 new events for the Romanian-Hungarian war
+- Added new events for Free France, by Ticket Cookie.
+# Ministers, leaders and tech teams:
+- Added a new cabinet for the Lokot Republic
+- Added a new leader for the Lokot Republic
+- The tech teams for Free France have been improved. 
+# gfx:
+- Added a new flag, shield and counter for the Lokot Republic
+- Added a new flag, shield and counter for the Cossack Federation
+# Scenario files (INC):
+- Minor diplomacy changes.
+- Expanded the territory of the Lokot Republic.
+# Scenario files (OOB):
+- Temporarily removed the Soviet OOB for reorganization.
+- Temporarily removed the German Naval and Ariforce OOB for reorganization.
+- Reorganized the German land divisions in a more realistic way.
+- Vichy colonial divisions now belong to Free France. 
+# Map:
+-
+# Other:
+- From now on the Alpha version is compatible only with DH 1.3 RC1. 
+- The scenario files are no longer an adapted version of the DH 1.2 1942 scenario, but instead the DH 1.3 1945 scenario. 
