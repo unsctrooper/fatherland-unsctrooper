@@ -2,7 +2,32 @@
    ##############################   
    # Country definition for USA #   
    ##############################   
-      
+      #Occupied Korea Set-up:
+province = {
+    id = 1228
+    ic = 4
+    manpower = 3
+}
+province = {
+    id = 1230
+    ic = 2
+}
+province = {
+    id = 1223
+    ic = 4
+}
+province = {
+    id = 1221
+    ic = 8
+}
+province = {
+    id = 1225
+    ic = 4
+}
+province = {
+    id = 1227
+    ic = 4
+}
    #####################   
    # Country main data #   
    #####################   
