@@ -1,0 +1,96 @@
+
+
+	division_development = {
+		name  = "1. Kossaken-Kavallerie-Division" 
+		type  = cavalry
+		model = 12
+		cost  = 0.2 
+		id    = {  type = 14500 id = 715  } 
+		date  = {  year = 1945 month = february day = 1  } 
+	}
+	division_development = {
+		name  = "2. Kossaken-Kavallerie-Division" 
+		type  = cavalry
+		model = 12
+		cost  = 0.2 
+		id    = {  type = 14500 id = 716  } 
+		date  = {  year = 1945 month = march day = 1  } 
+	}
+	
+	### ROCKETS
+	division_development = {
+		name  = "6. V2 Batterie" 
+		type  = flying_rocket
+		model = 0
+		cost  = 0.2 
+		id    = {  type = 14500 id = 717  } 
+		date  = {  year = 1944 month = december day = 20  } 
+	}
+	division_development = {
+		name  = "7. V2 Batterie" 
+		type  = flying_rocket
+		model = 0
+		cost  = 0.2 
+		id    = {  type = 14500 id = 718  } 
+		date  = {  year = 1944 month = december day = 22  } 
+	}
+	division_development = {
+		name  = "8. V2 Batterie" 
+		type  = flying_rocket
+		model = 0
+		cost  = 0.2 
+		id    = {  type = 14500 id = 719  } 
+		date  = {  year = 1944 month = december day = 24  } 
+	}
+	division_development = {
+		name  = "9. V2 Batterie" 
+		type  = flying_rocket
+		model = 0
+		cost  = 0.2 
+		id    = {  type = 14500 id = 720  } 
+		date  = {  year = 1944 month = december day = 26  } 
+	}
+	division_development = {
+		name  = "10. V2 Batterie" 
+		type  = flying_rocket
+		model = 1
+		cost  = 0.2 
+		id    = {  type = 14500 id = 721  } 
+		date  = {  year = 1944 month = december day = 28  } 
+	}
+	division_development = {
+		name  = "11. V2 Batterie" 
+		type  = flying_rocket
+		model = 1
+		cost  = 0.2 
+		id    = {  type = 14500 id = 722  } 
+		date  = {  year = 1945 month = january day = 0  } 
+	}
+	division_development = {
+		name  = "12. V2 Batterie" 
+		type  = flying_rocket
+		model = 1
+		cost  = 0.2 
+		id    = {  type = 14500 id = 723  } 
+		date  = {  year = 1945 month = january day = 2  } 
+	}
+	division_development = {
+		name  = "13. V2 Batterie" 
+		type  = flying_rocket
+		model = 1
+		cost  = 0.2 
+		id    = {  type = 14500 id = 724  } 
+		date  = {  year = 1945 month = january day = 4  } 
+	}
+	
+	#U-Boot
+	
+	division_development = {
+		name  = "181. Unterseeboots-Division" 
+		type  = submarine
+		model = 5 # Type VII
+		cost  = 0.1 
+		id    = {  type = 14500 id = 725  } 
+		date  = {  year = 1945 month = january day = 1  } 
+	}
+} 

@@ -1,0 +1,1499 @@
+#Prelude:
+# 90000400 # GER # Turkestan Legion
+# 90000401 # SOV # Trouble in Central Asia
+# 90000402 # SOV # Soviet response to independence movements
+# 90000403 # TRK # Turkestan response to incorporation
+# 90000404 # KAZ # Kazakh response to incorporation
+# 90000405 # TRK # Turkestan response to becoming a puppet
+# 90000406 # KAZ # Kazakh response to becoming a puppet
+# 90000407 # TRK # Turkestan response to independence
+# 90000408 # KAZ # Kazkh response to independence
+#War:
+# 90000409 # SOV # War against Turkestan? (below)
+# 90000410 # TRK # Turkestan military
+# 90000411 # KAZ # Kazakh military
+# 90000412 # SOV # Defections
+# 90000413 # GER # Aid to Turkestan?
+# 90000414 # GER # Aid to Kazakhstan?
+# 90000415 # TRK # German aid!
+# 90000417 # KAZ # Kazakh aid!
+# 90000417 # TUR # Intervene in Central Asia?
+# 90000418 # TRK # Turkish aid!
+# 90000419 # KAZ # Turkish aid!
+# 90000420 # AFG # Tajiks leave for Turkestan
+# 90000421 # TRK # Afghan volunteers
+# 90000422 # GER # Caucasian volunteers
+# 90000423 # U42 # Caucasian volunteers
+# 90000424 # TRK # Caucasian volunteers
+#Aftermath:
+# 90000425 # SOV # Russia surrenders
+# 90000426 # SOV # Soviet victory over TRK
+# 90000427 # SOV # Soviet victory over KAZ
+# 90000430 # TRK # TRK post-war policy
+# 90000431 # KAZ # KAZ post-war policy
+# 90000432 # GER # Decision: Align TRK
+# 90000433 # TRK # Align TRK
+# 90000434 # GER # Decision: Align KAZ
+# 90000435 # TRK # Align KAZ
+# 90000438 # SOV # Reincorporate TRK
+# 90000439 # SOV # Reincorporate KAZ
+#Other:
+# 90000428 # SOV # Orenburg uprising
+# 90000429 # SOV # Astrakhan uprising
+# 90000436 # TRA # Cossack intervention
+# 90000437 # SOV # Battle of Astrakhan
+# 
+# 90000409 # SOV # War on Turkestan? 
+# 90000440 # SOV # War on KAZ
+
+event = {
+	id = 90000400
+	random = no
+	country = GER
+	
+	trigger = {
+	control = { province = 1097 data = SOV }
+	control = { province = 506 data = SOV }
+	}	
+	
+	name = EVT_90000400_NAME
+	desc = EVT_90000400_DESC
+	style = 2
+	picture = "0Turkestan"
+
+	date = { day = 1 month = february year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_OF_COURSE
+	ai_chance = 60
+	command = { type = money value = -100 }
+	command = { type = supplies value = -2500 }
+	command = { type = setflag which = Turkestan }
+	command = { type = setflag which = Kazakhstan }
+	}
+	action = {
+	name = ACTION_NAME_NO
+	ai_chance = 40
+	command = { type = remove_division which = 14500 value = 272 }
+	}
+}
+event = {
+	id = 90000401
+	random = no
+	country = SOV
+	
+	trigger = {
+		control = { province = 1097 data = SOV }
+		control = { province = 506 data = SOV }
+		event = 90000400
+		
+		OR = {
+		random = 10
+		AND = {
+		random = 30
+		year = 1949
+			}
+		AND = {
+		random = 40
+		year = 1950
+			}
+		AND = {
+		random = 60
+		year = 1951
+			}
+		AND = {
+		random = 80
+		year = 1952
+			}	
+		}
+	}	
+	
+	name = EVT_90000401_NAME
+	desc = EVT_90000401_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+	command = { type = 	dissent value = 10 }
+	command = { type = independence which = TRK value = 1 }
+	command = { type = make_puppet which = TRK }
+	command = { type = secederegion which = TRK value = "Central Asia" }
+	
+	command = { type = independence which = KAZ value = 1 }
+	command = { type = make_puppet which = KAZ }
+	command = { type = secederegion which = KAZ value = "Kazakstan" }
+	}
+}
+event = {
+	id = 90000402
+	random = no
+	country = SOV
+	
+	trigger = {
+		event = 90000401
+	}	
+	
+	name = EVT_90000402_NAME
+	desc = EVT_90000402_DESC
+	style = 2
+	picture = "0turkestan0"	 
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000402_A # Demand incorporation!
+	ai_chance = 60
+	command = { type = sleepevent which = 90000405 }
+	command = { type = sleepevent which = 90000406 }
+	command = { type = sleepevent which = 90000407 }
+	command = { type = sleepevent which = 90000408 }
+	command = { type = trigger which = 90000403 }
+	command = { type = trigger which = 90000404 }
+	}
+	action = {
+	name = EVT_90000402_B # Demand satellite states!
+	ai_chance = 40
+	command = { type = sleepevent which = 90000403 }
+	command = { type = sleepevent which = 90000404 }
+	command = { type = sleepevent which = 90000407 }
+	command = { type = sleepevent which = 90000408 }
+	command = { type = trigger which = 90000405 }
+	command = { type = trigger which = 90000406 }
+	}
+	action = {
+	name = EVT_90000402_C # Let them go...
+	ai_chance = 10
+	command = { type = non_aggression which = TRK where = GER } 
+	command = { type = non_aggression which = KAZ where = GER } 
+	command = { type = sleepevent which = 90000403 }
+	command = { type = sleepevent which = 90000404 }
+	command = { type = sleepevent which = 90000405 }
+	command = { type = sleepevent which = 90000406 }
+	command = { type = trigger which = 90000407 }
+	command = { type = trigger which = 90000408 }
+	}
+}
+event = {
+	id = 90000403 #Turkestan response to incorporation
+	random = no
+	country = TRK
+	
+	name = EVT_90000403_NAME
+	desc = EVT_90000403_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_NEVER
+	ai_chance = 80
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = setflag which = TRKwar }
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	command = { type = name where = TRK which = TRK_TUR }	
+	command = { type = flag_ext where = TRK which = "_TUR" }
+	command = { type = trigger which = 90000430 } # TRK
+	}
+	action = {
+	name = ACTION_NAME_ACCEPT
+	ai_chance = 20
+	command = { type = trigger which = 90000438 }
+	}
+}
+	event = {
+	id = 90000404 #Kazakh response to incorporation
+	random = no
+	country = KAZ	
+	
+	name = EVT_90000404_NAME
+	desc = EVT_90000404_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_NEVER
+	ai_chance = 70
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = setflag which = KAZwar }
+	command = { type = trigger which = 90000431 } # KAZ
+	}
+	action = {
+	name = ACTION_NAME_ACCEPT
+	ai_chance = 30
+	command = { type = trigger which = 90000439 }
+	}
+}
+event = {
+	id = 90000405 #Turkestan response to puppet status
+	random = no
+	country = TRK
+	
+	name = EVT_90000405_NAME
+	desc = EVT_90000405_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_NEVER
+	ai_chance = 70
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = setflag which = TRKwar }
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	command = { type = name where = TRK which = TRK_TUR }	
+	command = { type = flag_ext where = TRK which = "_TUR" }
+	command = { type = trigger which = 90000430 } # TRK
+	}
+	action = {
+	name = ACTION_NAME_ACCEPT
+	ai_chance = 30
+	command = { type =	alliance which = SOV }
+	command = { type = name where = TRK which = TRK_COM }
+    command = { type = flag_ext where = TRK which = "_COM" }																		
+	}
+}
+	event = {
+	id = 90000406 #Kazakh response to puppet status
+	random = no
+	country = KAZ	
+	
+	name = EVT_90000406_NAME
+	desc = EVT_90000406_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_NEVER
+	ai_chance = 60
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = setflag which = KAZwar }
+	command = { type = trigger which = 90000431 } # KAZ
+	}
+	action = {
+	name = ACTION_NAME_ACCEPT
+	ai_chance = 40
+	command = { type =	alliance which = SOV }
+	command = { type = name where = KAZ which = KAZ_COM }
+    command = { type = flag_ext where = KAZ which = "_COM" }																	
+	}
+}
+event = {
+	id = 90000407 #Turkestan response to independence
+	random = no
+	country = TRK
+	
+	name = EVT_90000407_NAME
+	desc = EVT_90000407_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = CA_SOV
+	ai_chance = 30
+	command = { type = end_puppet }
+	command = { type =	alliance which = SOV }
+	command = { type = set_relation which = GER value = -100 }
+	command = { type = name where = TRK which = TRK_COM }
+    command = { type = flag_ext where = TRK which = "_COM" }							
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	}
+	action = {
+	name = CA_IND
+	ai_chance = 60
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 0 }
+	command = { type = set_relation which = SOV value = 0 }
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	command = { type = name where = TRK which = TRK_TUR }	
+	command = { type = flag_ext where = TRK which = "_TUR" }
+	command = { type = local_setflag which = IND }	
+	}
+	action = {
+	name = CA_AXI
+	ai_chance = 50
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 100 }
+	command = { type = set_relation which = SOV value = -100 }
+	command = { type = setflag which = AxisTurkestan }
+	command = { type = name where = TRK which = TRK_AXI }
+    command = { type = flag_ext where = TRK which = "_AXI" }
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	command = { type = local_setflag which = IND }	
+	}
+}
+event = {
+	id = 90000408 #Kaz response to independence
+	random = no
+	country = KAZ
+	
+	name = EVT_90000408_NAME
+	desc = EVT_90000408_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = CA_COM # Align with Soviet Union
+	ai_chance = 40
+	command = { type = end_puppet }
+	command = { type =	alliance which = SOV }
+	command = { type = set_relation which = GER value = -100 }
+	command = { type = name where = KAZ which = KAZ_COM }
+    command = { type = flag_ext where = KAZ which = "_COM" }
+	}
+	action = {
+	name = CA_IND # Independent path
+	ai_chance = 60
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 0 }
+	command = { type = set_relation which = SOV value = 0 }
+	command = { type = local_setflag which = IND }	
+	}
+	action = {
+	name = CA_AXI # Pro-Axis
+	ai_chance = 50
+	command = { type = end_puppet }
+	command = { type = 	leave_alliance }
+	command = { type = 	end_access which = SOV }
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 100 }
+	command = { type = set_relation which = SOV value = -100 }
+	command = { type = setflag which = AxisKazakhstan }
+	command = { type = local_setflag which = IND }	
+	}
+}
+#90000409 (see below)
+event = {
+	id = 90000410
+	random = no
+	country = TRK
+	
+	trigger = {
+	OR = {
+	flag = TRKwar
+	local_flag = IND
+		}	
+	}
+	
+	name = EVT_90000410_NAME
+	desc = EVT_90000410_DESC
+	style = 2
+	picture = "0Turkestan"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = province_keypoints which = 1097 value = 1 }
+	command = { type = province_keypoints which = 1107 value = 1 }
+	command = { type = province_keypoints which = 1099 value = 1 }
+	command = { type = add_corps which = "1ya Turkestanskaya Korpus" value = land where = 1097 }
+	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "4th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "5th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "6th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "7th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "8th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "9th Rifle Division" value = infantry when = 12 }
+	command = { type = add_corps which = "2ya Turkestanskaya Korpus" value = land where = 1103 }
+	command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "2nd Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "3rd Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "4th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "5th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "6th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "7th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "8th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "9th Cavalry Division" value = cavalry when = 10 }
+	command = { type = local_clrflag which = IND }
+	}
+}
+event = {
+	id = 90000411
+	random = no
+	country = KAZ
+	
+	trigger = {
+	OR = {
+	flag = KAZwar
+	local_flag = IND
+		}	
+	}	
+	
+	name = EVT_90000411_NAME
+	desc = EVT_90000411_DESC
+	style = 2
+	picture = "0Turkestan"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = province_keypoints which = 504 value = 1 }
+	command = { type = province_keypoints which = 1118 value = 1 }
+	command = { type = province_keypoints which = 503 value = 1 }
+	command = { type = add_corps which = "1ya Korpus Qazaqstan" value = land where = 504 }
+	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "4th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "5th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "6th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "7th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "8th Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "9th Rifle Division" value = infantry when = 12 }
+	command = { type = add_corps which = "2ya Korpus Qazaqstan" value = land where = 503 }
+	command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "2nd Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "3rd Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "4th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "5th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "6th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "7th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "8th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "9th Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_corps which = "3ya Korpus Qazaqstan" value = land where = 1118 }
+	command = { type = add_division which = "Alash Orda" value = cavalry when = 10 }
+	command = { type = add_division which = "Kazakhstan" value = cavalry when = 10 }
+	command = { type = add_division which = "Kazakh Raiders" value = cavalry when = 10 }
+	command = { type = local_clrflag which = IND }
+	}
+}
+event = {
+	id = 90000412
+	random = no
+	country = SOV
+	
+	trigger = {
+	OR = {
+	war = { country = TRK country = SOV }
+	war = { country = KAZ country = SOV }
+		}
+	}	
+	
+	name = EVT_90000412_NAME
+	desc = EVT_90000412_DESC
+	style = 2
+	picture = "0Turkestan"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+	command = { type = 	dissent value = 5 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	command = { type = delete_unit which = -1 }
+	}
+}
+event = {
+	id = 90000413
+	random = no
+	country = GER
+	
+	trigger = {
+	war = { country = TRK country = SOV }
+	}	
+	
+	name = EVT_90000413_NAME
+	desc = EVT_90000413_DESC
+	style = 2
+	picture = "0turkestansoldiers"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000413_A # Help
+	ai_chance = 70
+	command = { type = 	belligerence which = GER value = 1 }
+	command = { type = supplies value = -1000 } 
+	}
+	action = {
+	name = EVT_90000413_B
+	trigger = { ai = no }
+	command = { type = 	belligerence which = GER value = 1 } 
+	command = { type = supplies value = -1000 } 
+	command = { type = military_control which = GER where = TRK value = 1 }
+	}
+	action = {
+	name = EVT_90000413_C
+	ai_chance = 30
+	command = { type = 	belligerence which = GER value = -1 } 
+	command = { type = clrflag which = Turkestan }
+	}
+}
+event = {
+	id = 90000414
+	random = no
+	country = GER
+	
+	trigger = {
+	war = { country = KAZ country = SOV }
+	}	
+	
+	name = EVT_90000414_NAME
+	desc = EVT_90000414_DESC
+	style = 2
+	picture = "0turkestansoldiers"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000414_A
+	ai_chance = 60
+	command = { type = 	belligerence which = GER value = 1 } 
+	command = { type = supplies value = -1000 } 
+	}
+	action = {
+	name = EVT_90000414_B
+	trigger = { ai = no }
+	command = { type = 	belligerence which = GER value = 1 } 
+	command = { type = supplies value = -1000 } 
+	command = { type = military_control which = GER where = KAZ value = 1 }
+	}
+	action = {
+	name = EVT_90000414_C
+	ai_chance = 40
+	command = { type = 	belligerence which = GER value = -1 } 
+	command = { type = clrflag which = Kazakhstan }
+	}
+}
+event = {
+	id = 90000415
+	random = no
+	country = TRK
+	
+	trigger = {
+	OR = {
+	event = 90000413
+		}
+	}	
+	
+	name = EVT_90000415_NAME
+	desc = EVT_90000415_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = relation which = GER value = 10 }
+	command = { type = supplies value = 1000 }
+	command = { trigger = { flag = Turkestan } type = add_division which = "Turkestan Legion" value = infantry when = 12 }
+	command = { type = clrflag which = Turkestan }
+	}
+}
+event = {
+	id = 90000416
+	random = no
+	country = KAZ
+	
+	trigger = {
+	OR = {
+	event = 90000413
+		}
+	}	
+	
+	name = EVT_90000416_NAME
+	desc = EVT_90000416_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = relation which = GER value = 10 }
+	command = { type = supplies value = 1000 }
+	command = { trigger = { flag = Kazakhstan } type = add_division which = "German-Kazakh Army" value = cavalry when = 10 }
+	command = { type = clrflag which = Kazakhstan }
+	}
+}
+event = {
+	id = 90000417
+	random = no
+	country = TUR
+	
+	trigger = {
+	OR = {
+	war = { country = TRK country = SOV }
+	war = { country = KAZ country = SOV }
+		}
+	}	
+	
+	name = EVT_90000417_NAME
+	desc = EVT_90000417_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_YES
+	ai_chance = 50
+	command = { type = 	belligerence which = TUR value = 1 }
+	command = { type = supplies value = -1000 } 
+	command = { trigger = { war = { country = TRK country = SOV } } type = trigger which = 90000418 }
+	command = { trigger = { war = { country = KAZ country = SOV } } type = trigger which = 90000419 }
+	}
+	action = {
+	name = ACTION_NAME_NO
+	ai_chance = 50
+	command = { type = 	belligerence which = GER value = -1 } 
+	}
+}
+event = {
+	id = 90000418
+	random = no
+	country = TRK
+	
+	#Triggered by 90000417
+	
+	name = EVT_90000418_NAME
+	desc = EVT_90000418_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = supplies value = 1000 } 
+	}
+}
+event = {
+	id = 90000419
+	random = no
+	country = KAZ
+	
+	#Triggered by 90000417
+	
+	name = EVT_90000419_NAME
+	desc = EVT_90000419_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = supplies value = 1000 } 
+	}
+}
+event = {
+	id = 90000420
+	random = no
+	country = AFG
+	
+	trigger = {
+	war = { country = TRK country = SOV }
+	}	
+	
+	name = EVT_90000420_NAME
+	desc = EVT_90000420_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000420_A
+	ai_chance = 60
+	command = { type = relation which = SOV value = -30 }
+	}
+	action = {
+	name = EVT_90000420_B
+	ai_chance = 50
+	command = { type = relation which = SOV value = -50 }
+	command = { type = belligerence which = AFG value = 1 }
+	command = { type = supplies value = -250 } 
+	command = { type = trigger which = 90000421 }
+	}
+}
+event = {
+	id = 90000421
+	random = no
+	country = TRK
+	
+	#Triggered by 90000420
+	
+	name = EVT_90000421_NAME
+	desc = EVT_90000421_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = add_division which = "Afghan volunteers" value = militia when = 5 }
+	}
+}
+event = {
+	id = 90000422
+	random = no
+	country = GER
+	
+	trigger = {
+	OR = {
+	war = { country = TRK country = SOV }
+	war = { country = KAZ country = SOV }
+	}	
+		}
+	name = EVT_90000422_NAME
+	desc = EVT_90000422_DESC
+	style = 2
+	picture = "0caucasus"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000422_A
+	ai_chance = 60
+	command = { type = 	belligerence which = GER value = 1 }
+	command = { type = 	belligerence which = U42 value = 1 }
+	command = { type = supplies value = -250 } 
+	}
+	action = {
+	name = EVT_90000422_B
+	ai_chance = 50
+	command = { type = 	belligerence which = GER value = -1 }
+	command = { type = trigger which = 90000423 }
+	command = { type = trigger which = 90000424 }
+	}
+}
+event = {
+	id = 90000423
+	random = no
+	country = U42
+	
+	#Triggered by 90000422
+	
+	name = EVT_90000423_NAME
+	desc = EVT_90000423_DESC
+	style = 2
+	picture = "0caucasus"
+
+	action = {
+	name = ACTION_NAME_OK
+	command = { }
+	}
+}
+event = {
+	id = 90000424
+	random = no
+	country = TRK
+	
+	#Triggered by 90000422
+	
+	name = EVT_90000424_NAME
+	desc = EVT_90000424_DESC
+	style = 2
+	picture = "0caucasus"
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = add_division which = "Caucasian volunteers" value = militia when = 5 }
+	}
+}
+event = {
+	id = 90000425
+	random = no
+	country = SOV
+	
+	trigger = {
+		ai = yes
+		event = { id = 90000409 days = 360 }
+	OR = {
+	war = { country = TRK country = SOV }
+	war = { country = KAZ country = SOV }
+	}	
+		}
+	name = EVT_90000425_NAME
+	desc = EVT_90000425_DESC
+	style = 2
+	picture = "0turkestan0"	 
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_ACCEPT
+	ai_chance = 60
+	command = { type = 	dissent value = 5 }
+	command = { type = 	peace which = TRK value = 0 }
+	command = { type = 	peace which = KAZ value = 0 }
+	command = { type = non_aggression which = TRK where = SOV } 
+	command = { type = non_aggression which = KAZ where = SOV }
+	command = { type = trigger which = 90000430 }
+	command = { type = trigger which = 90000431 }
+	}
+	action = {
+	name = ACTION_NAME_NEVER
+	ai_chance = 40
+	command = { type = 	dissent value = 10 }
+	}
+}
+event = {
+	id = 90000426 # Victory over TRK
+	random = no
+	country = SOV
+	
+	trigger = {
+		control = { province = 1097 data = SOV }
+		event = 90000409
+		NOT = { exists = TRK }
+	}	
+	
+	name = EVT_90000426_NAME
+	desc = EVT_90000426_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = 	dissent value = -5 }
+	command = { type = addcore which = 1097 }
+	command = { type = addcore which = 1098 }
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	}
+}
+event = {
+	id = 90000427 # Victory over KAZ
+	random = no
+	country = SOV
+	
+	trigger = {
+		control = { province = 506 data = SOV }
+		event = 90000409
+		NOT = { exists = KAZ }
+	}	
+	
+	name = EVT_90000427_NAME
+	desc = EVT_90000427_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = 	dissent value = -5 }
+	command = { type = addcore which = 498 }
+	command = { type = addcore which = 499 }
+	command = { type = addcore which = 500 }
+	command = { type = addcore which = 501 }
+	command = { type = addcore which = 502 }
+	command = { type = addcore which = 503 }
+	command = { type = addcore which = 504 }
+	command = { type = addcore which = 505 }
+	command = { type = addcore which = 506 }
+	command = { type = addcore which = 507 }
+	command = { type = addcore which = 1108 }
+	command = { type = addcore which = 1109 }
+	command = { type = addcore which = 1110 }
+	command = { type = addcore which = 1111 }
+	command = { type = addcore which = 1112 }
+	command = { type = addcore which = 1113 }
+	command = { type = addcore which = 1114 }
+	command = { type = addcore which = 1115 }
+	command = { type = addcore which = 1116 }
+	command = { type = addcore which = 1117 }
+	command = { type = addcore which = 1118 }
+	}
+}
+event = {
+	id = 90000428 # Orenburg uprising
+	random = no
+	country = SOV
+	
+	trigger = {
+	 OR = {
+			AND = {
+			war = { country = KAZ country = SOV }
+			war = { country = TRK country = SOV }
+			random = 80
+			}
+			AND = {
+			war = { country = KAZ country = SOV }
+			random = 50
+			}
+			AND = {
+			year = 1950
+			random = 25
+			}
+			random = 10
+			}
+	}	
+	
+	name = EVT_90000428_NAME
+	desc = EVT_90000428_DESC
+	style = 2
+	picture = "0caucasus"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+		command = { type = revolt which = 1134 } 
+		command = { type = revolt which = 1134 } 
+		command = { type = revolt which = 1134 } 
+		command = { type = revolt which = 1134 } 
+	}
+}
+event = {
+	id = 90000429 # Astrakhan uprising
+	random = no
+	country = SOV
+	
+	trigger = {
+	 OR = {
+			AND = {
+			war = { country = KAZ country = SOV }
+			war = { country = TRK country = SOV }
+			random = 80
+			}
+			AND = {
+			war = { country = KAZ country = SOV }
+			random = 50
+			}
+			AND = {
+			year = 1950
+			random = 25
+			}
+			random = 10
+			}
+	}	
+	
+	name = EVT_90000429_NAME
+	desc = EVT_90000429_DESC
+	style = 2
+	picture = "0cossacks"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+		command = { type = revolt which = 706 } 
+	}
+}
+event = {
+	id = 90000430 #Turkestan post-war policy
+	random = no
+	country = TRK
+	
+	name = EVT_90000430_NAME
+	desc = EVT_90000430_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = EVT_90000430_A # Independent path
+	ai_chance = 60
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 0 }
+	}
+	action = {
+	name = EVT_90000430_B # Pro-Axis
+	ai_chance = 40
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 100 }
+	command = { type = setflag which = AxisTurkestan }
+	command = { type = name where = TRK which = TRK_AXI }	
+	command = { type = flag_ext where = TRK which = "_AXI" }
+	}
+}
+event = {
+	id = 90000431 #KAZ post-war policy
+	random = no
+	country = KAZ
+	
+	name = EVT_90000431_NAME
+	desc = EVT_90000431_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = EVT_90000431_A # Independent path
+	ai_chance = 50
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 0 }
+	}
+	action = {
+	name = EVT_90000431_B # Pro-Axis
+	ai_chance = 50
+	command = { type = set_domestic which = democratic value = 3 }
+	command = { type = set_domestic which = political_left value = 4 }
+	command = { type = set_domestic which = interventionism value = 4 }
+	command = { type = set_domestic which = free_market value = 5 }
+	command = { type = set_relation which = GER value = 100 }
+	command = { type = setflag which = AxisKazakhstan }
+	}
+}
+event = {
+	id = 90000432 # Align TRK
+	random = no
+	country = GER
+		
+		
+	trigger = {	
+	exists = TRK
+		NOT = { war = { country = TRK country = SOV }	}
+		NOT = { ispuppet = TRK }
+	
+	flag = AxisTurkestan
+		OR = {
+		ai = yes
+		relation = { which = TRK value = 100 } 
+			}	
+	}
+	
+	name = EVT_90000432_NAME
+	desc = EVT_90000432_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_YES
+	ai_chance = 70
+	command = { type = trigger which = 90000433 }
+	}
+	action = {
+	name = ACTION_NAME_NO
+	ai_chance = 30
+	command = { } 
+	}
+}
+event = {
+	id = 90000433 # Align TRK
+	random = no
+	country = TRK
+	
+	name = EVT_90000433_NAME
+	desc = EVT_90000433_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	action = {
+	name = ACTION_NAME_YES
+	ai_chance = 60
+	command = { type =	alliance which = GER }
+	}
+	action = {
+	name = ACTION_NAME_NO
+	ai_chance = 40
+	command = { type = set_relation which = GER value = 0 }
+	}
+}
+event = {
+	id = 90000434 # Align KAZ
+	random = no
+	country = GER
+	
+	trigger = {		
+		exists = KAZ
+		NOT = { war = { country = TRK country = SOV } }  
+		NOT = { ispuppet = TRK }
+
+	flag = AxisKazakhstan
+		OR = {
+		ai = yes
+		relation = { which = KAZ value = 100 } 
+			}	
+	}
+	
+	name = EVT_90000434_NAME
+	desc = EVT_90000434_DESC
+	style = 2
+	picture = "0turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_YES
+	ai_chance = 60
+	command = { type = trigger which = 90000435 }
+	}
+	action = {
+	name = ACTION_NAME_NO
+	ai_chance = 40
+	command = { } 
+	}
+}
+event = {
+	id = 90000435 # Align KAZ
+	random = no
+	country = KAZ
+	
+	name = EVT_90000435_NAME
+	desc = EVT_90000435_DESC
+	style = 2
+	picture = "0turkestan0"
+	
+	action = {
+	name = ACTION_NAME_YES
+	ai_chance = 50
+	command = { type =	alliance which = GER }
+	}
+	action = {
+	name = ACTION_NAME_NO
+	ai_chance = 50
+	command = { type = set_relation which = GER value = 0 }
+	}
+}
+event = {
+	id = 90000436 #Astrakhan uprising, Cossacks intervene
+	random = no
+	country = TRA
+	
+	trigger = {
+	event = 90000429
+	}	
+	
+	name = EVT_90000436_NAME
+	desc = EVT_90000436_DESC
+	style = 2
+	picture = "0cossacks"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000436_A
+	ai_chance = 60
+	command = { type = relation which = SOV value = -100 }
+	command = { type = 	belligerence which = TRA value = 1 }
+	command = { type = supplies value = -250 } 
+	}
+	action = {
+	name = EVT_90000436_B
+	ai_chance = 50
+	command = { type = 	belligerence which = TRA value = -1 }
+	}
+}
+event = {
+	id = 90000437 #Astrakhan uprising, Cossacks intervene
+	random = no
+	country = SOV
+	one_action = yes
+	
+	trigger = {
+	event = 90000436
+	}	
+	
+	name = EVT_90000437_NAME
+	desc = EVT_90000437_DESC
+	style = 2
+	picture = "0cossacks"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000437_A # We lost!
+	ai_chance = 60
+	command = { type = 	dissent value = 1 }
+	command = { type =	secedeprovince which = TRA value = 706 }
+	command = { type = removecore which = 706 }
+	command = { type = addclaim which = 706 }
+	}
+	action = {
+	name = EVT_90000437_B # We won!
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	}
+}
+event = {
+	id = 90000438 # Incorporation of TRK
+	random = no
+	country = SOV
+	
+	name = EVT_90000438_NAME
+	desc = EVT_90000438_DESC
+	style = 2
+	picture = "0turkestan0"
+	
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = 	dissent value = -5 }
+	command = { type = addcore which = 1105 }
+	command = { type = addcore which = 1104 }
+	command = { type = addcore which = 1107 }
+	command = { type = addcore which = 1106 }
+	command = { type = addcore which = 1101 }
+	command = { type = addcore which = 1102 }
+	command = { type = addcore which = 1100 }
+	command = { type = addcore which = 1103 }
+	command = { type = addcore which = 1097 }
+	command = { type = addcore which = 1098 }
+	command = { type =	inherit which = TRK }
+	}
+}
+event = {
+	id = 90000439 # Incorporation of KAZ
+	random = no
+	country = SOV
+	
+	name = EVT_90000439_NAME
+	desc = EVT_90000439_DESC
+	style = 2
+	picture = "0turkestan0"
+	
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = 	dissent value = -5 }
+	command = { type = addcore which = 498 }
+	command = { type = addcore which = 499 }
+	command = { type = addcore which = 500 }
+	command = { type = addcore which = 501 }
+	command = { type = addcore which = 502 }
+	command = { type = addcore which = 503 }
+	command = { type = addcore which = 504 }
+	command = { type = addcore which = 505 }
+	command = { type = addcore which = 506 }
+	command = { type = addcore which = 507 }
+	command = { type = addcore which = 1108 }
+	command = { type = addcore which = 1109 }
+	command = { type = addcore which = 1110 }
+	command = { type = addcore which = 1111 }
+	command = { type = addcore which = 1112 }
+	command = { type = addcore which = 1113 }
+	command = { type = addcore which = 1114 }
+	command = { type = addcore which = 1115 }
+	command = { type = addcore which = 1116 }
+	command = { type = addcore which = 1117 }
+	command = { type = addcore which = 1118 }
+	command = { type =	inherit which = KAZ }
+	}
+}
+#########################
+event = {
+	id = 90000409 # War against Turkestan
+	random = no
+	country = SOV
+	save_date = yes
+	
+	trigger = {
+	
+	NOT = { alliance = { country = GER country = TRK } }
+	OR = {
+			event =	90000403
+			event =	90000405
+			event =	90000407
+		}
+	flag = TRKwar
+	}	
+	
+	name = EVT_90000409_NAME
+	desc = EVT_90000409_DESC
+	style = 2
+	picture = "0Turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	ai_chance = 70
+	command = { type = war which = TRK }
+	command = { type = 	dissent value = 10 }
+	}
+	action = {
+	name = EVT_90000409_B # Back down
+	ai_chance = 30
+	command = { type = 	dissent value = 15 }
+	command = { type = clrflag which = TRKwar }
+	}
+}
+event = {
+	id = 90000440 # War against Kazakhstan
+	random = no
+	country = SOV
+	save_date = yes
+	
+	trigger = {
+	NOT = { alliance = { country = GER country = KAZ } }
+	flag = KAZwar
+	OR = {
+			event =	90000404
+			event =	90000406
+			event =	90000408
+			}
+		}
+		
+	name = EVT_90000409_NAME
+	desc = EVT_90000409_DESC
+	style = 2
+	picture = "0Turkestan0"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	ai_chance = 70
+	command = { type = war which = KAZ }
+	command = { type = 	dissent value = 10 }
+	}
+	action = {
+	name = EVT_90000409_B # Back down
+	ai_chance = 30
+	command = { type = 	dissent value = 15 }
+	command = { type = clrflag which = KAZwar }
+	}
+}

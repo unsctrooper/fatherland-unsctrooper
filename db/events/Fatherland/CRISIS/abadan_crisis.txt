@@ -1,0 +1,477 @@
+#NOTE: This event chain is an adapted event chain from the NWO Mod. 
+# All credits go to this mod for the original idea. 
+# Some events were added, and the Abadan crisis in Fatherland is betwen Germany and Britain, not Britain and the Soviet Union. 
+
+# Abadan crisis (semi-historical):
+# 90000100 # PER # Iran nationalizes oil fields
+# 90000101 # ENG # United Kingdom considers sanctions
+# 90000102 # PER # Effect of sanctions
+# 90000103 # PER # Sanctions take their toll, ask Germany for help
+# 90000104 # GER # German response
+# 90000105 # ENG # British ultimatum
+# 90000106 # GER # German response to the ultimatum
+# 90000107 # ENG # War with Germany?
+# 90000108 # PER # German help arrives
+# 90000109 # PER # Operation Ajax
+# 90000110 # PER # Iranian coup d'état
+# 90000111 # GER # German-Iranian Defense Treaty
+# 90000112 # PER # German-Iranian Defense Treaty
+# 90000113 # GER # German-Iranian Defense Treaty: Cooperation
+# 90000114 # GER # German-Iranian Defense Treaty: Alliance
+# 90000114 # SOV # Axis presence in Iran
+
+event = {
+	id = 90000100
+	country = PER
+
+	name = 90000100_NAME
+	desc = 90000100_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		puppet = { country = PER country = ENG }
+		OR = { 
+			AND = {
+				year = 1950
+				random = 15
+				}
+			AND = {
+				year = 1951
+				random = 30
+				}
+			year = 1952
+			}
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = 90000100_A # Nationalize!
+		ai_chance = 80
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = add_prov_resource which = 1089 value = 50 where = oil }
+		command = { type = add_prov_resource which = 1090 value = 20 where = oil }
+		command = { type = add_prov_resource which = 1091 value = 5 where = oil }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = 	end_puppet }
+		command = { type = 	end_access which = ENG }
+	}
+	
+	action = {
+		name = 90000100_B # No
+		ai_chance = 20
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 90000101 }
+	}
+}
+event = {
+	id = 90000101
+	country = ENG
+
+	name = 90000101_NAME
+	desc = 90000101_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		event = 90000100
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = 90000101_A # Impose sanctions
+		ai_chance = 85
+		command = { type = belligerence value = 10 }
+		command = { type = relation which = PER value = -100 }
+	}
+	
+	action = {
+		name = 90000101_B # Accept
+		ai_chance = 15
+		command = { type = dissent value = 10 }
+		command = { type = relation which = PER value = 100 }
+		command = { type = sleepevent which = 90000102 }
+	}
+}
+event = {
+	id = 90000102
+	country = PER
+	one_action = yes
+
+	name = EVT_90000102_NAME
+	desc = EVT_90000102_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		event = 90000101
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = february year = 1953 }
+
+	action = {
+		name = EVT_90000102_A # Sanctions are successful
+		ai_chance = 90
+		command = { type = industrial_modifier which = total value = -10 }
+		command = { type = dissent value = 15 }
+	}
+	
+	action = {
+		name = EVT_90000102_B # Sanctions are a failure
+		ai_chance = 20
+		command = { type = dissent value = 10 } # There's some turmoil, anyway
+		command = { type = sleepevent which = 90000103 }
+		command = { type = sleepevent which = 90000109 } # Operation Ajax															
+	}
+}
+event = {
+	id = 90000103
+	country = PER
+	one_action = yes
+
+	name = EVT_90000103_NAME
+	desc = EVT_90000103_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		event = 90000102
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = february year = 1953 }
+
+	action = {
+		name = EVT_90000103_A # Oh oh
+		ai_chance = 40
+		command = { type = dissent value = 15 }
+	}
+	
+	action = {
+		name = EVT_90000103_B # Ask Germany
+		ai_chance = 60
+		command = { type = dissent value = 10 } # There's some turmoil, anyway
+		command = { type = trigger which = 90000104 }
+	}
+}
+# Germans are asked for help
+event = {
+	id = 90000104
+	country = GER
+
+	name = EVT_90000104_NAME
+	desc = EVT_90000104_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = EVT_90000104_NAME # Help out
+		ai_chance = 75
+		command = { type = relation which = PER value = 50 }
+		command = { type = trigger which = 90000105 } # British ultimatum
+	}
+	
+	action = {
+		name = EVT_90000104_B # Too risky...
+		ai_chance = 25
+		command = { type = relation which = PER value = -50 }
+	}
+}
+# British ultimatum
+event = {
+	id = 90000105
+	country = ENG
+
+	name = EVT_90000105_NAME
+	desc = EVT_90000105_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = EVT_90000105__A # Send it
+		ai_chance = 50
+		command = { type = relation which = PER value = -50 }
+		command = { type = trigger which = 90000106 } # German reaction
+	}
+	
+	action = {
+		name = EVT_90000105__B # Too risky...
+		ai_chance = 40
+		command = { type = trigger which = 90000108 } # Germans are able to send Iranians help     		
+	}
+}
+# German reaction to ultimatum
+event = {
+	id = 90000106
+	country = GER
+
+	name = EVT_90000106_NAME
+	desc = EVT_90000106_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = EVT_90000106_A # Withdraw
+		ai_chance = 75
+		command = { type = relation which = PER value = -50 }
+	}
+	
+	action = {
+		name = EVT_90000106_B # Risk war
+		ai_chance = 25
+		command = { type = trigger which = 90000108 } # Germans are able to send Iranians help 				
+		command = { type = trigger which = 90000107 }
+	}
+}
+# The Alies carry out ultimatum
+event = {
+	id = 90000107
+	country = ENG
+
+	name = EVT_90000107_NAME
+	desc = EVT_90000107_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = EVT_90000107_A # WW3
+		ai_chance = 40
+		command = { type = war which = GER }
+		command = { type = war which = PER }
+		command = { type = dissent value = 5 }
+	}
+	
+	action = {
+		name = EVT_90000107_B # Back down
+		ai_chance = 60
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+# German help arrives
+event = {
+	id = 90000108
+	country = PER
+
+	name = EVT_90000108_NAME
+	desc = EVT_90000108_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = EVT_90000108_A # Thanks!
+		ai_chance = 50
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = dissent value = -20 }
+		command = { type = trigger which = 90000115 }
+	}
+}
+#Operation Ajax
+event = {
+	id = 90000109
+	country = PER
+
+	name = EVT_90000109_NAME
+	desc = EVT_90000109_NAME
+	picture = "operation_ajax"
+	style = 1
+
+	trigger = {
+		event = 90000103 # We got hit by sanctions
+		NOT = { event = 90000108 } # Germans didn't help
+	}
+
+	date = { day = 0 month = march year = 1950  }
+	offset = 45
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 10 }
+		command = { type = add_prov_resource which = 1089 value = -50 where = oil }
+		command = { type = add_prov_resource which = 1090 value = -20 where = oil }
+		command = { type = add_prov_resource which = 1091 value = -5 where = oil }
+		### End of blockade
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = trigger which = 90000110 }
+	}
+}
+#Iranian coup d'état
+event = {
+	id = 90000110
+	country = PER
+
+	name = EVT_111_NAME
+	desc = EVT_111_DESC
+	picture = "operation_ajax"
+	style = 1
+
+	action = {
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 }
+		command = { type = headofgovernment which = 150101 }
+		command = { type = foreignminister which = 150031 }
+		command = { type = armamentminister which = 150047 }
+		command = { type = ministerofsecurity which = 150052 }
+		command = { type = ministerofintelligence which = 150065 }
+		command = { type = chiefofstaff which = 150103 }
+		command = { type = chiefofarmy which = 150105 }
+		command = { type = chiefofnavy which = 150083 }
+		command = { type = chiefofair which = 150104 }
+		command = { type = dissent value = 3 }
+		command = { type = sleepevent which = 2500124 }
+		command = { type = sleepevent which = 2500125 }
+		command = { type = set_relation which = ENG value = 100 }
+		command = { type = set_relation which = USA value = 100 }
+		command = { type = set_relation which = FRA value = 100 }
+		command = { type = set_relation which = SOV value = 0 }
+		command = { type = set_relation which = GER value = -100 }
+	}
+}
+event = {
+	id = 90000111
+	random = no
+	save_date = yes
+	country = GER
+	
+	decision = {	
+		event = 90000108
+			NOT = { alliance = { country = GER country = PER } }
+	}
+	decision_trigger = { 
+	NOT = { war = { country = ENG country = GER } }
+	
+	OR = {
+		ai = yes
+		relation = { which = PER value = 100 }	
+		}
+	}
+	
+	name = EVT_90000111_NAME
+	desc = EVT_90000111_DESC
+	style = 2
+	picture = "decision_persia"
+	decision_picture = "persia"
+
+	date = { day = 1 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = EVT_90000111_A
+		ai_chance = 50
+		command = { type = setflag which = Iran1 }
+		command = { type = trigger which = 90000112 }
+	}
+	action = {
+		name = EVT_90000111_B
+		ai_chance = 40
+		command = { type = setflag which = Iran2 }
+		command = { type = trigger which = 90000112 }
+	}
+	action = {
+		name = EVT_90000111_C
+		ai_chance = 20
+		command = { type = sleepevent which = 90000112 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+event = {
+	id = 90000112
+	country = PER
+
+	name = 90000112_NAME
+	desc = 90000112_DESC
+	picture = "persia"
+	style = 1
+
+	action = {
+		name = 90000112_A 
+		ai_chance = 60
+		command = { type = clrflag which =  Iran1 }
+		command = { type = clrflag which =  Iran2 }
+		command = { type = belligerence value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = 	access which = GER } 
+		command = { type = trigger which = 90000113 }
+	}	
+	action = {
+		name = 90000112_B 
+		ai_chance = 50
+		trigger = { flag = Iran2 }
+		command = { type = clrflag which =  Iran1 }
+		command = { type = clrflag which =  Iran2 }
+		command = { type = belligerence value = 2 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = 	access which = GER } 
+		command = { type =	alliance which = GER }
+		command = { type = trigger which = 90000114 }
+	}
+	action = {
+		name = 90000112_C 
+		ai_chance = 20
+		command = { type = belligerence value = -1 }
+		command = { type = clrflag which =  Iran1 }
+		command = { type = clrflag which =  Iran2 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = sleepevent which = 90000113 }
+		command = { type = sleepevent which = 90000114 }
+	}
+}
+event = {
+	id = 90000113
+	country = GER
+
+	name = 90000113_NAME
+	desc = 90000113_DESC
+	picture = "persia"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = PER value = 10 }
+		command = { type =	guarantee which = GER where = PER 	}
+	}	
+}
+event = {
+	id = 90000114
+	country = GER
+
+	name = 90000114_NAME
+	desc = 90000114_DESC
+	picture = "persia"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = PER value = 10 }
+		command = { type =	guarantee which = GER where = PER 	}
+	}	
+}
+event = {
+	id = 90000115
+	country = SOV
+
+	name = 90000115_NAME
+	desc = 90000115_DESC
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = PER value = -100 }
+	}
+}

@@ -1,0 +1,4804 @@
+#### READ THIS FIRST!
+#### Some triggers are not realistic, this is due to testing
+#### use notepad++ for best view!
+
+# 200 # GER # Decision: Generalplan Ost/East
+########################################################
+# Ostland events									   #
+########################################################
+# 201 # GER # Status of Ingria
+# 202 # U40 # Expanding the Estonian border
+# 203 # FIN # Ingria, a part of Greater Finland?
+# 204 # GER # Finnish claims on Jamburg
+# 205 # U40 # Jamburg to Finland
+# 206 # FIN # Settlers arrive in Kingisepp
+# 207 # FIN # Finland gaining a core on Kingisepp				
+# 208 # GER # The Destruction of Leningrad
+# 209 # GER # Recovery of the Leningrad Industry
+# 210 # FIN # Scavenging Leningrad's fortifications
+# 211 # GER/FIN # Revolts in Leningrad 
+########################################################
+# Settlement event chain for Ingria and Western Russia #
+########################################################
+# 212 # U40 # German settlers arrive
+# 213 # GER # Baltic Autobahn
+# 214 # GER # Baltic Autobahn completed								
+# 215 # U40 # East side of Lake Peipus settled!
+# 216 # U40 # Ingria pacified
+# 217 # U40 # Pleskau region secured
+# 218 # U40 # Lake Ilmen region pacified
+# 219 # U40 # Lovat River: the new Germanic frontier
+# 220 # U40 # The Hanseatic Legacy: Holmgard
+########################################################
+# Settlement event chain for Estonia				   #
+########################################################
+# 221 # GER # Occupation policy of Estonia
+# 222 # U40 # Colonial office opens in Reval (start of the settlements)
+# 223 # U40 # Arensburg integrated
+# 224 # U40 # Narwa integrated
+# 225 # U40 # Pernau integrated
+# 226 # U40 # Estonia fully integrated
+########################################################
+# Settlement event chain for Latvia 				   #
+########################################################
+# 227 # GER # The future of Latvia
+# 228 # GER # The Lovat River (extension of Latvian territory)
+# 229 # U40 # Expanding the Latvian border
+# 230 # U40 # Colonial office opens in Riga
+# 231 # U40 # Germanization of Courland
+# 232 # U40 # Dünaburg, Eastern Latvia integrated
+# 233 # U40 # Wolmar integrated, Germanization of Latvia a succes!
+########################################################
+# Settlement event chain for Lithuania 				   #
+########################################################
+# 234 # GER # German plans with Lithuania
+# 235 # LIT # Germany reveals its devious plans
+# 236 # GER # Lithuania agrees to our plans!
+# 237 # GER # Lithuania refuses our plans!
+# 238 # GER # Schaulen integrated
+# 239 # GER # Southern Lithuania integrated
+# 240 # GER # Ponewesch Germanized
+# 241 # GER # Kauen: a new German city in the Baltics
+# 242 # GER # Wilna-land is German!
+########################################################
+# Estonia a puppet or to Finland 					   #
+########################################################
+# 243 # U40 # Future of Estonia
+# 244 # GER # Estonia a German puppet!
+########################################################
+# Latvia a puppet									   #
+########################################################
+# 245 # U40 # Latvian autonomy
+# 246 # GER # Latvia a German puppet!
+########################################################
+# End of Ostland									   #
+########################################################
+# 247 # U40 # Ostland ready for annexation?
+# 248 # GER # German decision to annex Ostland (leads to event 296 )
+########################################################
+# Settlement of the Ukraine & Crimea   				   #
+########################################################
+#### Crimea
+# 249 # GER # Colonization of the Crimea 
+# 250 # GER # Colonization of Reichskommissariat Ukraine 
+# 251 # U41 # Ukrainian Autonomy
+# 252 # GER # Settlers arrive in the Crimean peninsula
+# 253 # GER # A complaint from Alfred Rosenberg
+# 254 # U41 #  254 RESERVED FOR UKRAINIAN CHANGE OF LEADERSHIP, will come after 1.3								!!!!!!UNFINISHED
+# 255 # GER # Gotenburg integrated
+# 256 # GER # Theodorichshafen integrated
+# 257 # GER # Germanization of Taurida
+# 258 # GER # Crimean countryside pacified
+#### Ukraine
+# 259 # U41 UKR # Start of colonization in the Ukraine
+# 260 # U41 UKR # Dnipropetrovsk integration
+# 261 # U41 UKR # Integration of Kirivograd
+# 262 # GER # The fate of Kiev
+# 263 # GER # Recovery of Kievan industry
+# 264 # GER # Litzmannstadt-Halbstadt Autobahn
+# 265 # GER # Litzmannstadt-Halbstadt Autobahn Finished
+##################################################												
+# Expansions (of the Reichskommissariat Ukraine) #											
+##################################################
+# 266 # GER # Expansion of the Reichskommissariat Ukraine
+# 267 # GER # Expansion of the Lokot Republic															
+##################################################												
+# Completion of Gotengau					     #											
+##################################################
+# 268 # UKR U41 # Gotengau finished?
+# 269 # GER # Gotengau finished
+# 270 # GER # Gotengau pacified
+##################################################												
+# Pacification of the Ukraine				     #											
+##################################################
+# 271 # U41 # Pacification of Central Ukraine
+# 272 # U41 # Pacification of West Ukraine
+# 273 # U41 # Pacification of East Ukraine 
+# 274 # U41/UKR # Pacification of Odessa territory
+# 275 # U41/UKR # Integration of Galicia																					
+##################################################												
+# General Government events					     #											
+##################################################
+# 276 # GER # Warthegau secured
+# 277 # GER # Sudauen secured 
+# 278 # GER # Scharfenwiese secured 
+# 279 # GER # Destruction of Warshaw
+# 280 # GER # Goralen census
+# 281 # U44 # Goralen census a succes!
+# 282 # GER # Pflugstadt project
+# 283 # U44 # Settlers arrive in the General Government
+# 284 # U44 # Pflugstadt settlements finished! (1)
+# 285 # GER # Pflugstadt settlements finished! (2)
+# 286 # GER # The Status of Galicia
+# 287 # GER # Galicia to the Ukraine? (triggers 295)
+# 288 # U44 # Polish-Ukrainian Unrest
+# 289 # GER # Problems in Galicia
+# 290 # U44 # Terrorism in Galicia
+# 291 # GER # Ukrainian Central Committee
+# 292 # U44 # Ukrainischer Heimatdienst (Ukrainian labor service)
+# 293 # U44 # Order and Security in District Galicia
+# 294 # U44 # German settlers arrive in Krakau
+# 295 # U44 # Galicia to the Ukraine 
+##################################################
+# 296 # GER # Integration of Ostland
+###################################################
+
+event = {
+	id = 200
+	random = no
+	country = GER
+	
+	decision = {	# need to be reworked entirely, suggestions welcome
+		exists = SOV
+		year = 1942 				
+		NOT = {
+			OR = {			
+				ispuppet = GER
+				ispuppet = SOV		
+				war = { country = SOV country = GER }
+				alliance = { country = GER country = SOV }
+			}
+		}		
+	}
+	decision_trigger = { # need to be reworked entirely, suggestions welcome
+	NOT = { war = { country = SOV country = GER } }
+		
+	}
+	
+	name = "200NAME"
+	desc = "200DESC"
+	style = 2
+	picture = "alfred_rosenberg"
+	decision_picture = "decision_anschluss"
+
+	date = { day = 1 month = january year = 1942 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "200A"
+		ai_chance = 50
+		command = { type = relation which = U41 value = -100 } # Ukraine
+		command = { type = set_relation which = U40 value = 200 } # Ostland
+		command = { type = relation which = U44 value = -100 } # General Government
+		command = { type = relation which = LIT value = -100 } 
+		command = { type = setflag which = Ostland }
+	}
+	action_b = {
+		name = "200B"
+		ai_chance = 50
+		command = { type = relation which = U41 value = -100 } # Ukraine
+		command = { type = relation which = U40 value = -100 } # Ostland
+		command = { type = set_relation which = U44 value = 200 } # General Government
+		command = { type = relation which = LIT value = 10 } 
+		command = { type = setflag which = General_Government }
+	}
+	action_c = {
+		name = "200C"
+		ai_chance = 50
+		command = { type = set_relation which = U41 value = 200 } # Ukraine
+		command = { type = relation which = U40 value = -100 } # Ostland
+		command = { type = relation which = U44 value = -100 } # General Government
+		command = { type = relation which = LIT value = 10 } 
+		command = { type = setflag which = Ukraine }
+	}
+}
+########################################################
+# Ostland events									   #
+########################################################
+#Status of Ingria
+event = {
+	id = 201
+	random = no
+	save_date = yes
+	country = GER
+	
+	trigger = {
+	
+		
+		
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = 221
+		random = 60
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 221
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = "201NAME"
+	desc = "201DESC"
+	style = 2
+	picture = "alfred_rosenberg"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "201A"
+	ai_chance = 60
+	command = { type = sleepevent which = 202 }
+	}
+	action_b = {
+	name = "201B"
+	ai_chance = 40
+	trigger = { exists = EST }
+	command = { type = trigger which = 202 }
+	command = { type = sleepevent which = 203 }
+	command = { type = sleepevent which = 212 }
+	}
+}
+event = {
+	id = 202
+	random = no
+	country = U40
+	
+	# Triggered by 201
+	
+	name = "202NAME"
+	desc = "202DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type =	secedeprovince which = EST value = 550 }
+		command = { type =	secedeprovince which = EST value = 551 }
+		command = { type =	secedeprovince which = EST value = 549 }
+		command = { type =	secedeprovince which = EST value = 560 }
+		command = { type =	secedeprovince which = EST value = 566 }
+		command = { type =	secedeprovince which = EST value = 565 }
+		command = { type =	secedeprovince which = EST value = 561 }
+	}  
+}
+#### 	
+event = {
+	id = 203
+	random = no
+	country = FIN
+
+	trigger = {
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+	event = 201
+	}	
+	name = "203NAME"
+	desc = "203DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = ACTION_NAME_YES
+	ai_chance = 70
+	command = { }
+	}
+	action_b = {
+	name = ACTION_NAME_NO
+	ai_chance = 30
+	command = { type = sleepevent which = 204 }
+	}
+}
+event = {
+	id = 204
+	random = no
+	country = GER
+
+	trigger = {
+	event = 203
+	}	
+	name = "204NAME"
+	desc = "204DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_YES"
+	ai_chance = 50
+	command = { type = money value = 100 }
+	command = { type = supplies value = 100 } #where?
+	command = { type = relation which = FIN value = 10 } 
+	}
+	action_b = {
+	name = "ACTION_NAME_NO"
+	ai_chance = 50
+	command = { type = relation which = FIN value = -10 }  
+	command = { type = sleepevent which = 205 }
+	command = { type = sleepevent which = 206 }
+	}
+}
+event = {
+	id = 205
+	random = no
+	country = U40
+
+	trigger = {
+	event = 204
+	random = 50
+	}	
+	name = "205NAME"
+	desc = "205DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type =	secedeprovince which = FIN value = 550 }
+	}
+}
+event = {
+	id = 206
+	random = no
+	save_date = yes
+	country = FIN
+
+	trigger = {
+	event = 205
+	random = 50
+	}	
+	name = "206NAME"
+	desc = "206DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = money value = -100 }
+	command = { type = free_supplies value = -1 }
+	}
+}
+
+event = {
+	id = 207
+	random = no
+	country = FIN
+
+	trigger = {
+	OR = {
+	event = 205
+	random = 30
+	}	
+	OR = {
+	event = 205
+	random = 60
+	}	
+		}
+	name = "207NAME"
+	desc = "207DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 550 } 
+	}
+}
+event = {
+	id = 208 # Leningrad
+	random = no
+	save_date = yes
+	country = GER
+
+
+	trigger = {
+	
+	
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = 201
+		random = 60
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 201
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "208NAME"
+	desc = "208DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "208A"
+	ai_chance = 90
+	command = { type = 	dissent value = 1 }
+	command = { type = construct which = ic where = 553 value = -4 }
+	command = { type = construct which = land_fort where = 553 value = -5 }
+	command = { type = construct which = coastal_fort where = 553 value = -5 }
+	command = { type = construct which = air_base where = 553 value = -9 }
+	command = { type = construct which = naval_base where = 553 value = -9 }
+	command = { type = construct which = infrastructure where = 553 value = -30 }
+	command = { type = construct which = flak where = 553 value = -6 }
+	command = { type = province_manpower which = 553 value = -3 }
+	command = { type = secedeprovince which = FIN value = 553 }
+	command = { type = relation which = FIN value = 10 } 
+	}
+	action_a = {
+	name = "208B"
+	ai_chance = 20
+	command = { type = 	dissent value = 5 }
+	command = { type = construct which = ic where = 553 value = -4 }
+	command = { type = construct which = land_fort where = 553 value = -5 }
+	command = { type = construct which = coastal_fort where = 553 value = -5 }
+	command = { type = construct which = air_base where = 553 value = -9 }
+	command = { type = construct which = naval_base where = 553 value = -9 }
+	command = { type = construct which = infrastructure where = 553 value = -30 }
+	command = { type = construct which = flak where = 553 value = -6 }
+	command = { type = province_manpower which = 553 value = -3 }
+	command = { type = relation which = FIN value = -10 } 
+	}
+	action_b = {
+	name = "208C"
+	ai_chance = 10
+	command = { type = 	dissent value = 10 }
+	command = { type = relation which = FIN value = -10 } 
+	command = { type = sleepevent which = 209 }
+	command = { type = sleepevent which = 210 }
+	}
+}
+event = {
+	id = 209
+	random = no
+	country = GER
+
+	trigger = {
+	event = 208
+	random = 50
+	}	
+	name = "209NAME"
+	desc = "209DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = money value = -100 }
+	command = { type = construct which = ic where = -4 value = 1 }
+	}
+}
+event = {
+	id = 210
+	random = no
+	country = FIN
+
+	trigger = {
+	event = 208
+	random = 50
+	}	
+	name = "210NAME"
+	desc = "210DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = money value = -10 }
+	command = { type = construct which = land_fort where = 541 value = 1 }
+	command = { type = construct which = flak where = 541 value = 1 }
+	}
+}
+event = {
+	id = 211
+	random = no
+	#tag = { GER FIN }
+	persistent = yes
+	
+	trigger = {
+	
+	event = 208
+	random = 50
+	control = { province = 553 data = -1 }
+	}	
+	name = "211NAME"
+	desc = "211DESC"
+	style = 2
+	picture = "resistance"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 50
+	name = "ACTION_NAME_DAMN"
+	command = { type = 	dissent value = 1 }
+	command = { type = revolt which = 553 }
+	}
+	action_b = {
+	ai_chance = 50
+	name = "ACTION_NAME_DAMN"
+	command = { type = 	dissent value = 2 }
+	command = { type = revolt which = 553 }
+	command = { type = revolt which = 553 }
+	command = { type = revolt which = 553 }
+	}
+}
+########################################################
+# Settlement event chain for Ingria and Western Russia #
+########################################################
+event = {
+	id = 212
+	random = no
+	country = U40
+	persistent = yes
+	save_date = yes
+	
+	trigger = {
+	
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event =  201
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 201
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+		
+	name = "212NAME"
+	desc = "212DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 120
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 100
+	name = "212A"
+	trigger = { 
+	Not = { 
+	flag = Ingrian1
+	flag = Ingrian2 
+	flag = Ingrian3 } 
+	}
+	command = { type = province_manpower which = 552 value = 1 }
+	command = { type = setflag which = Ingrian1 }
+	}
+	action_b = {
+	ai_chance = 100
+	name = "212B"
+	trigger = { flag = Ingrian1
+	Not = { 
+	flag = Ingrian2 
+	flag = Ingrian3 } }
+	command = { type = province_manpower which = 549 value = 1 }
+	command = { type = setflag which = Ingrian2 }
+	}
+	action_c = {
+	ai_chance = 100
+	name = "212C"
+	trigger = { flag = Ingrian2
+	Not = { 
+	flag = Ingrian3 } }
+	command = { type = province_manpower which = 560 value = 1 }
+	command = { type = setflag which = Ingrian3 }
+	}
+	action_d = {
+	ai_chance = 100
+	name = "212D"
+	trigger = { flag = Ingrian3 }
+	command = { type = province_manpower which = 566 value = 1 }
+	command = { type = sleepevent which = 212 }
+	}
+}
+event = {
+	id = 213
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = 201
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 201
+			OR = { 
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+		
+	name = "213NAME"
+	desc = "213DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 60
+	name = "213A"
+	command = { type = 	dissent value = -1 }
+	command = { type = free_ic value = -6 } 
+	command = { type = relation which = U40 value = 20 }
+	command = { type = relation which = LIT value = 20 }
+	command = { type = relation which = EST value = 20 } 
+	command = { type = relation which = LAT value = 20 }
+	command = { type = setflag which = BalticRoad }
+	}
+	action_b = {
+	ai_chance = 40
+	name = "213B"
+	command = { type = 	dissent value = 1 }
+	command = { type = free_ic value = -4 } 
+	command = { type = relation which = U40 value = -10 }
+	command = { type = relation which = LIT value = -10 }
+	command = { type = relation which = EST value = -10 } 
+	command = { type = relation which = LAT value = -10 }
+	command = { type = setflag which = BalticRoad }
+	command = { type = setflag which = LocalRoad }
+	}
+	action_c = {
+	ai_chance = 20
+	name = "213C"
+	command = { type = 	dissent value = 2 }
+	command = { type = relation which = U40 value = -20 }
+	command = { type = relation which = LIT value = -20 }
+	command = { type = relation which = EST value = -20 } 
+	command = { type = relation which = LAT value = -20 }
+	command = { type = setflag which = BalticHorse }
+	}
+}
+event = { # Baltic Autobahn Finished
+	id = 214
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+
+	OR = { 
+			AND = {
+			event = 213
+			flag = BalticRoad
+			random = 50
+				}
+				
+			AND = { 
+			event = 213
+			flag = LocalRoad
+			random = 50
+				}	
+		}
+	}	
+		
+	name = "214NAME"
+	desc = "214DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 100
+	name = "ACTION_NAME_GREAT"
+	trigger = { flag = LocalRoad }
+	command = { type = 	dissent value = -1 }
+	command = { type = free_ic value = 4 } 
+	command = { type = construct which = infrastructure where = 261 value = 5 } # Memel
+	command = { type = construct which = infrastructure where = 259 value = 10 } # The actual Autobahn
+	command = { type = construct which = infrastructure where = 269 value = 10 }     
+	command = { type = construct which = infrastructure where = 265 value = 10 }
+	command = { type = construct which = infrastructure where = 272 value = 10 }
+	command = { type = construct which = infrastructure where = 270 value = 10 } 
+	command = { type = construct which = infrastructure where = 273 value = 10 } # Minor Baltic roads
+	command = { type = construct which = infrastructure where = 267 value = 10 }
+	command = { type = construct which = infrastructure where = 271 value = 10 }
+	command = { type = construct which = infrastructure where = 274 value = 5 } 
+	command = { type = construct which = infrastructure where = 266 value = 5 }
+	command = { type = construct which = infrastructure where = 267 value = 5 }
+	command = { type = construct which = infrastructure where = 275 value = 1 } # No true awesome Autobahn on an Island!
+	command = { type = construct which = infrastructure where = 268 value = 5 }
+	command = { type = relation which = U40 value = 10 }
+	command = { type = relation which = LIT value = 10 }
+	command = { type = relation which = EST value = 10 }
+	command = { type = relation which = LAT value = 10 }
+	}
+	action_b = { 
+	ai_chance = 100
+	name = "ACTION_NAME_GREAT"
+	trigger = { NOT = { flag = LocalRoad } }
+	command = { type = 	dissent value = -2 }
+	command = { type = free_ic value = 6 } 
+	command = { type = construct which = infrastructure where = 261 value = 5 } # Memel
+	command = { type = construct which = infrastructure where = 259 value = 10 } # The actual Autobahn
+	command = { type = construct which = infrastructure where = 269 value = 10 }     
+	command = { type = construct which = infrastructure where = 265 value = 10 }
+	command = { type = construct which = infrastructure where = 272 value = 10 }
+	command = { type = construct which = infrastructure where = 270 value = 10 } 
+	command = { type = construct which = infrastructure where = 273 value = 10 } # Minor Baltic roads
+	command = { type = construct which = infrastructure where = 267 value = 10 }
+	command = { type = construct which = infrastructure where = 271 value = 10 }
+	command = { type = construct which = infrastructure where = 274 value = 5 } 
+	command = { type = construct which = infrastructure where = 266 value = 5 }
+	command = { type = construct which = infrastructure where = 267 value = 5 }
+	command = { type = construct which = infrastructure where = 275 value = 1 } # No true awesome Autobahn on an Island!
+	command = { type = construct which = infrastructure where = 268 value = 5 }
+	command = { type = relation which = U40 value = 25 }
+	command = { type = relation which = LIT value = 25 }
+	command = { type = relation which = EST value = 25 }
+	command = { type = relation which = LAT value = 25 }
+	}
+}
+
+event = { # East side of Lake Peipus settled!
+	id = 215
+	random = no
+	country = U40
+	save_date = yes
+
+	trigger = {
+	
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = { id = 213 days = 120 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 213 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 213 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 213 days = 150 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "215NAME"
+	desc = "215DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	#offset = 360
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 552 } 
+		}
+	}
+event = { # Ingria
+	id = 216
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = { id = 215 days = 120 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 215 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 215 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 215 days = 150 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "216NAME"
+	desc = "216DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 551 } 
+	command = { type = addcore which = 549 } 
+	command = { trigger = { control = { province = 550 data = U40 } } type = addcore which = 550 } 
+	
+		}
+	}
+event = { 
+	id = 217
+	random = no
+	country = U40
+	save_date = yes
+
+	trigger = {
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = { id = 216 days = 120 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 216 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 216 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 216 days = 150 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "217NAME"
+	desc = "217DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 566 } 
+	command = { type = addcore which = 565 } 
+		}
+	}
+event = { # Lake illmen
+	id = 218
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = { id = 217 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 217 days = 120 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 217 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 217 days = 150 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "218NAME"
+	desc = "218DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 561 } 
+		}
+	}
+event = { # Lovat River
+	id = 219
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		control = { province = 564 data = U40 }
+		control = { province = 573 data = U40 }
+		NOT = { 
+		war = { country = GER country = SOV } 
+		
+		}
+			OR = { 
+		AND = {
+		event = { id = 218 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 218 days = 100 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 218 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 218 days = 130 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "219NAME"
+	desc = "219DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	#offset = 360
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 564 } 
+	command = { type = addcore which = 573 } 
+		}
+	}
+	
+event = { # Novgorod
+	id = 220
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		control = { province = 564 data = U40 }
+		control = { province = 573 data = U40 }
+		NOT = { 
+		war = { country = GER country = SOV } 
+		
+		}
+			OR = { 
+		AND = {
+		event = { id = 219 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 219 days = 100 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 219 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 219 days = 130 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "220NAME"
+	desc = "220DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 560 } 
+		}
+	}
+########################################################
+# Settlement event chain for Estonia				   #
+########################################################
+event = {
+	id = 221
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 200
+	random = 60
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 200
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "221NAME"
+	desc = "221DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "RUTHLESS"
+	ai_chance = 40
+	command = { type = setflag which = Estonia1 }
+	command = { type = relation which = FIN value = -10 } 
+	command = { type = relation which = LIT value = -10 } 
+	}
+	action_b = {
+	name = "LOCAL"
+	ai_chance = 50
+	command = { type = setflag which = Estonia2 }
+	command = { type = relation which = FIN value = -10 } 
+	command = { type = relation which = LIT value = -10 } 
+	}
+	action_c = {
+	name = "PUPPET"
+	ai_chance = 35
+	command = { type = sleepevent which = 222 }
+	command = { type = setflag which = Estonia3 }
+	command = { type = relation which = FIN value = 5 } 
+	command = { type = relation which = LIT value = 10 } 
+	command = { type = relation which = U40 value = -100 }
+	command = { type = trigger which = 243 }
+	}
+	action_d = {
+	name = "221FINLAND"
+	ai_chance = 25
+	command = { type = sleepevent which = 222 }
+	command = { type = setflag which = Estonia4 }
+	command = { type = relation which = FIN value = 50 } 
+	command = { type = relation which = LIT value = -10 }
+	command = { type = relation which = U40 value = -50 }
+	command = { type = trigger which = 243 }
+	
+	}
+}
+#### Settling Estonia
+event = { # 
+	id = 222
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		control = { province = 270 data = U40 }
+		
+		### Estonia is last to be integrated 
+		
+		OR = { # "Latvian" Russia 
+		event = 219
+		AND = {
+		control = { province = 564 data = LAT }
+		control = { province = 573 data = LAT }
+			}
+		}
+		OR = { # Ingria finished
+		event = 220
+		control = { province = 560 data = EST }
+		}
+		OR = { # Latvia events finished
+		puppet = { country = LAT country = GER }
+		event = 233
+		}
+		
+		flag = Lithuania #Lithuanian event chain finished	
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 221 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 221 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 221 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 221 days = 150 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "222NAME"
+	desc = "222DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 270 } 
+		}
+	}
+#### Settling Estonia (Arensburg)
+event = { # 
+	id = 223
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 222 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 222 days = 100 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 222 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 222 days = 130 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "223NAME"
+	desc = "223DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 275 } 
+		}
+	}	
+#### Narwa
+event = { # 
+	id = 224
+	random = no
+	country = U40
+	save_date = yes
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 223 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 223 days = 100 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 223 days = 100 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 223 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "224NAME"
+	desc = "224DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 274 } 
+		}
+	}	
+#### Pernau
+event = { # 
+	id = 225
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 224 days = 100 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 224 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 224 days = 100 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 224 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "225NAME"
+	desc = "225DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 271 } 
+		}
+	}	
+#### 
+event = { # 
+	id = 226
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 225 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 225 days = 100 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 225 days = 110 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 225 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "226NAME"
+	desc = "226DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 273 } 
+	command = { type = addcore which = 272 } 
+		}
+	}	
+
+########################################################
+# Settlement event chain for Latvia 				   #
+########################################################
+event = {
+	id = 227
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 221
+		random = 60
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 221
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "227NAME"
+	desc = "227DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "PUPPET"
+	ai_chance = 30
+	command = { type = relation which = U40 value = -10 } 
+	command = { type = relation which = LIT value = 10 } 
+	command = { type = relation which = EST value = 10 } 
+	command = { type = trigger which = 245 }
+	}
+	action_b = {
+	name = "RUTHLESS"
+	ai_chance = 50
+	command = { type = setflag which = Latvia2 }
+	command = { type = relation which = U40 value = 10 } 
+	command = { type = relation which = LIT value = -10 } 
+	command = { type = relation which = EST value = -10 }
+	}
+	action_c = {
+	name = "LOCAL"
+	ai_chance = 50
+	command = { type = setflag which = Latvia3 }
+	command = { type = relation which = U40 value = -5 } 
+	command = { type = relation which = LIT value = 5 } 
+	command = { type = relation which = EST value = 5 }
+	}
+}
+event = { # 
+	id = 228
+	random = no
+	country = GER
+
+	trigger = {
+	event = 227
+	ispuppet = LAT
+	}	
+		
+	name = "228NAME"
+	desc = "228DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 50
+	name = "ACTION_NAME_AGREE"
+	command = { type = trigger which = 229 }
+		}
+	action_b = {
+	ai_chance = 50
+	name = "ACTION_NAME_NEVER"
+	command = { type = sleepevent which = 229 }
+		}
+	}	
+event = {
+	id = 229
+	random = no
+	country = U40
+	
+	# Triggered by 228
+	
+	name = "229NAME"
+	desc = "229DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type =	secedeprovince which = LAT value = 564 }
+		command = { type =	secedeprovince which = LAT value = 573 }
+		command = { type = removeclaim which = 564 }
+		command = { type = removeclaim which = 573 }
+	}  
+}
+
+event = { # 
+	id = 230
+	random = no
+	country = U40
+	save_date = yes
+
+	trigger = {
+		control = { province = 264 data = U40 }
+	 
+		
+		### Latvia is to be integrated after Ingria and Lithuania
+		
+		OR = { # "Latvian" Russia 
+		event = 219
+		AND = {
+		control = { province = 564 data = LAT }
+		control = { province = 573 data = LAT }
+			}
+		}
+		
+		OR = { # Ingria finished
+		event = 220
+		control = { province = 560 data = EST }
+		}
+		
+		flag = Lithuania # Lithuanian events finished
+		
+		OR = { 
+		flag = Latvia2
+		flag = Latvia3 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 227 days = 100 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 227 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 227 days = 100}
+		flag = BalticRoad
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+						
+				} 
+			}	
+		AND = { 
+		event = { id = 201 days = 120 }
+		flag = BalticHorse
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			
+				} 
+			}
+		}
+	}	
+		
+	name = "230NAME"
+	desc = "230DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = addcore which = 264 } 
+		}
+	}
+event = { # 
+	id = 231
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 230 days = 100 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 230 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 230 days = 100 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 230 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "231NAME"
+	desc = "231DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 268 } 
+	command = { type = addcore which = 269 } 
+		}
+	}
+event = { # 
+	id = 232
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 231 days = 100 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 231 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 231 days = 100 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 231 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "232NAME"
+	desc = "232DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	#offset = 360?
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 267 } 
+	command = { type = addcore which = 266 } 
+		}
+	}
+event = { # 
+	id = 233
+	random = no
+	save_date = yes
+	country = U40
+
+	trigger = {
+		
+		OR = { 
+		flag = Estonia1
+		flag = Estonia2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 232 days = 100 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 232 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 232 days = 100 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 232 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "233NAME"
+	desc = "233DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = addcore which = 265 }  
+		}
+	}
+########################################################
+# Settlement event chain for Lithuania 				   #
+########################################################
+event = {
+	id = 234
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		event = 221
+		event = 227
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		random = 60
+		flag = Ostland 		
+		}
+		AND = { 
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "234NAME"
+	desc = "234DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "PUPPET"
+	ai_chance = 35
+	command = { type = make_puppet which = LIT }
+	command = { type = setflag which = Lithuania } 
+	command = { type = set_relation which = LIT value = 0 } 
+	command = { type = relation which = EST value = -10 } 
+	command = { type = relation which = LAT value = -10 } 
+	}
+	action_b = {
+	name = "234B"
+	ai_chance = 50
+	command = { type = make_puppet which = LIT }
+	command = { type = setflag which = Lithuania1 } 
+	command = { type = set_relation which = LIT value = -50 } 
+	command = { type = relation which = EST value = -20 } 
+	command = { type = relation which = LAT value = -20 }
+	command = { type = addclaim which = 259 }
+	}
+	action_c = {
+	name = "234C"
+	ai_chance = 40
+	command = { type = make_puppet which = LIT }
+	command = { type = setflag which = Lithuania2 } 
+	command = { type = set_relation which = LIT value = -75 } 
+	command = { type = relation which = EST value = -30 } 
+	command = { type = relation which = LAT value = -30 }
+	command = { type = addclaim which = 259 }
+	command = { type = addclaim which = 263 }
+	}
+	action_d = {
+	name = "RUTHLESS"
+	ai_chance = 35
+	command = { type = make_puppet which = LIT }
+	command = { type = setflag which = Lithuania3 } 
+	command = { type = set_relation which = LIT value = -75 } 
+	command = { type = relation which = EST value = -30 } 
+	command = { type = relation which = LAT value = -30 }
+	command = { type = addclaim which = 259 }
+	command = { type = addclaim which = 263 }
+	command = { type = addclaim which = 262 }
+	command = { type = addclaim which = 260 }
+	command = { type = addclaim which = 258 }
+	}
+}
+event = {
+	id = 235
+	random = no
+	country = LIT
+
+	trigger = {
+		event = 234
+		NOT = { flag = Lithuania }
+	}	
+	name = "235NAME"
+	desc = "235DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action_a = {
+	name = "235A"
+	ai_chance = 100
+	command = { type = sleepevent which = 237 }
+
+	command = { trigger = { flag = Lithuania1 } type = secedeprovince which = GER value = 259 when = 1 }  # Coastline
+	command = { trigger = { flag = Lithuania2 } type = secedeprovince which = GER value = 259 when = 1 } 
+	command = { trigger = { flag = Lithuania3 } type = secedeprovince which = GER value = 259 when = 1 } 
+	command = { trigger = { flag = Lithuania2 } type = secedeprovince which = GER value = 263 when = 1 }  # South
+	command = { trigger = { flag = Lithuania3 } type = secedeprovince which = GER value = 263 when = 1 } 
+	command = { trigger = { flag = Lithuania3 } type = secedeprovince which = GER value = 262 when = 1 }  # Other provinces
+	#command = { trigger = { flag = Lithuania3 } type = secedeprovince which = GER value = 258 when = 1 }  # Other provinces
+	command = { trigger = { flag = Lithuania3 } type = secedeprovince which = GER value = 260 when = 1 }  # Other provinces
+	
+	command = { trigger = { flag = Lithuania1 } type = removecore which = 259 }
+	command = { trigger = { flag = Lithuania2 } type = removecore which = 259 }
+	command = { trigger = { flag = Lithuania3 } type = removecore which = 259 }
+	command = { trigger = { flag = Lithuania2 } type = removecore which = 263 }
+	command = { trigger = { flag = Lithuania3 } type = removecore which = 263 }
+	command = { trigger = { flag = Lithuania3 } type = removecore which = 262 }
+	command = { trigger = { flag = Lithuania3 } type = removecore which = 260 }
+	command = { trigger = { flag = Lithuania3 } type = removecore which = 258 }
+	}
+	action_b = {
+	name = "235B"
+	ai_chance = 40
+	trigger = { flag = Lithuania1 }
+	command = { type = end_puppet }
+	command = { type = sleepevent which = 236 }
+	command = { type = 	leave_alliance }
+	}
+	action_c = {
+	name = "235B"
+	ai_chance = 50
+	trigger = { flag = Lithuania2 }
+	command = { type = end_puppet }
+	command = { type = sleepevent which = 236 }
+	command = { type = 	leave_alliance }
+	}
+	action_d = {
+	name = "235B"
+	ai_chance = 60
+	trigger = { flag = Lithuania3 }
+	command = { type = end_puppet }
+	command = { type = sleepevent which = 236 }
+	command = { type = 	leave_alliance }
+	}
+}
+event = {
+	id = 236
+	random = no
+	country = GER
+
+	trigger = {
+		event = 235
+		exists = LIT
+	}	
+	name = "236NAME"
+	desc = "236DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = relation which = LIT value = 50 }
+	}	
+}
+event = {
+	id = 237
+	random = no
+	country = GER
+
+	trigger = {
+		event = 235
+	}	
+	name = "237NAME"
+	desc = "237DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	action_a = {
+	name = "ACTION_NAME_DAMN"
+	ai_chance = 50
+	command = { type = setflag which = Lithuania } 
+	command = { type = non_aggression which = LIT where = GER } 
+	}
+	action_b = {
+	name = "237B"
+	ai_chance = 50
+	command = { type =	inherit which = LIT }
+	command = { type = 	dissent value = 5 }
+	}
+}
+event = { # 
+	id = 238
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		control = { province = 259 data = GER }
+	 	
+		### Lithuania is second to be integrated 
+		
+		OR = { # Ingria finished
+		event = 220
+		control = { province = 560 data = EST }
+		}
+
+		OR = {
+		flag = Lithuania1
+		flag = Lithuania2
+		flag = Lithuania3
+		}
+		
+	}	
+		
+	name = "238NAME"
+	desc = "238DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 45
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 100
+	trigger = { flag = Lithuania1 }
+	command = { type = addclaim which = 259 } 
+	command = { type = setflag which = Lithuania } 
+		}
+		action_b = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 100
+	trigger = { flag = Lithuania2 }
+	command = { type = addclaim which = 259 } 
+		}
+		action_c = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 100
+	trigger = { flag = Lithuania3 }
+	command = { type = addclaim which = 259 } 
+		}
+	}
+event = { # 
+	id = 239
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		control = { province = 263 data = GER }
+	 	
+
+	OR = {
+		flag = Lithuania2
+		flag = Lithuania3
+		}
+		
+		NOT = { war = { country = GER country = SOV } }
+		
+			OR = { 
+		AND = {
+		event = { id = 238 days = 100 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 238 days = 90 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 238 days = 110 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 238 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "239NAME"
+	desc = "239DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 100
+	trigger = { flag = Lithuania2 }
+	command = { type = addclaim which = 263 } 
+	command = { type = setflag which = Lithuania } 
+		}
+	action_b = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 100
+	trigger = { flag = Lithuania3 }
+	command = { type = addclaim which = 263 } 
+		}
+	}
+event = { # 
+	id = 240
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		control = { province = 260 data = GER }
+
+		flag = Lithuania3
+		
+		NOT = { war = { country = GER country = SOV } }
+		
+			OR = { 
+		AND = {
+		event = { id = 239 days = 90 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 239 days = 80 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 239 days = 100 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 239 days = 120 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "240NAME"
+	desc = "240DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addclaim which = 260 } 
+		}
+	}
+event = { # 
+	id = 241
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		control = { province = 262 data = GER }
+
+		flag = Lithuania3
+		
+		NOT = { war = { country = GER country = SOV } }
+		
+			OR = { 
+		AND = {
+		event = { id = 240 days = 75 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 240 days = 65 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 240 days = 85 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 240 days = 95 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "241NAME"
+	desc = "241DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	#offset = 360
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addclaim which = 262 } 
+		}
+	}
+event = { # 
+	id = 242
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+
+		flag = Lithuania3
+		
+		NOT = { war = { country = GER country = SOV } }
+		
+			OR = { 
+		AND = {
+		event = { id = 241 days = 120 }
+		flag = Ostland 	
+		flag = BalticHorse
+		}
+		AND = {
+		event = { id = 241 days = 100 }
+		flag = Ostland 	
+		flag = BalticRoad	
+		}
+		AND = { 
+		event = { id = 241 days = 130 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine
+			flag = BalticRoad			
+				} 
+			}	
+		AND = { 
+		event = { id = 241 days = 150 }
+			OR = {
+			flag = General_Government
+			flag = Ukraine	
+			flag = BalticHorse
+				} 
+			}
+		}
+	}	
+		
+	name = "242NAME"
+	desc = "242DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	#offset = 360
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addclaim which = 258 } 
+	command = { type = setflag which = Lithuania } 
+	command = { type =	inherit which = LIT }
+		}
+	}
+########################################################
+# Estonia a puppet or to Finland 					   #
+########################################################
+event = {
+	id = 243
+	random = no
+	country = U40
+	
+	# Triggered by 221
+	
+	name = "243NAME"
+	desc = "NONE"
+  	style = 2
+  	picture = "news_paper"
+	
+	action_a = {
+		name = "PUPPET"
+		ai_chance = 100
+		trigger = { flag = Estonia3 }
+		command = { type = independence which = EST  value = 1 }
+		command = { type = trigger which = 244 }
+		
+	} 
+	action_b = {
+		name = "243FIN"
+		ai_chance = 100
+		trigger = { flag = Estonia4 }
+		command = { type = secedearea which = FIN value = ESTONIA }
+	}
+}
+
+event = {
+	id = 244
+	random = no
+	country = GER
+	
+	# Triggered by 243
+	
+	name = "244NAME"
+	desc = "244DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = 	make_puppet which = EST }
+	} 
+}
+########################################################
+# Latvia a puppet									   #
+########################################################
+event = {
+	id = 245
+	random = no
+	country = U40
+	
+	# Triggered by 227 (future of Estonia)
+	
+	name = "245NAME"
+	desc = "NONE"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = independence which = LAT   value = 1 }
+		command = { type = trigger which = 246 }
+		command = { type =	secedeprovince which = LAT value = 264 }
+	} 
+}
+event = {
+	id = 246
+	random = no
+	country = GER
+	
+	# Triggered by 227 (future of Estonia)
+	
+	name = "245NAME"
+	desc = "NONE"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_EXCELLENT"
+		command = { type = 	make_puppet which = LAT }
+	} 
+}
+########################################################
+# End of Ostland									   #
+########################################################
+event = {
+	id = 247
+	random = no
+	country = U40
+	save_date = yes
+	persistent = yes
+
+	trigger = {
+	
+	flag = Lithuania # Lithuanian events finished
+	
+	OR = { # "Latvian" Russian status clear
+		event = 219
+		AND = {
+		control = { province = 564 data = LAT }
+		control = { province = 573 data = LAT }
+			}
+		}
+	
+	OR = { # Ingria finished
+		event = 220
+		control = { province = 560 data = EST }
+		}
+		
+	OR = { # Latvian Events finished
+	exists = LAT
+	event = 233
+	}	
+	
+	OR = { # Estonian events finished
+	control = { province = 270 data = FIN }
+	exists = EST
+	event = 226
+	}	
+	
+	NOT = { war = { country = GER country = SOV } }
+	
+	}
+	
+	name = "247NAME"
+	desc = "247DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_OF_COURSE"
+	ai_chance = 50
+	command = { type = setflag which = AnnexOstland } 
+	}
+	action_b = {
+	name = "247NO"
+	ai_chance = 50
+	command = { type = relation which = GER value = -5 } 
+	}
+}
+event = {
+	id = 248
+	random = no
+	country = GER
+	
+	decision = {	
+	event = 247
+		NOT = {			
+			OR = {
+				ispuppet = GER		
+				war = { country = SOV country = GER }
+				war = { country = SOV country = LIT }
+				war = { country = SOV country = EST }
+				war = { country = SOV country = LAT }
+			}
+		}	
+	}
+	decision_trigger = { 
+	flag = AnnexOstland	
+	}
+	
+	name = "248NAME"
+	desc = "248DESC"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_anschluss"
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { trigger = { owned = { province = 274 data = U40 } } type = addclaim which = 274 } #Estonia
+		command = { trigger = { owned = { province = 275 data = U40 } } type = addclaim which = 275 }
+		command = { trigger = { owned = { province = 271 data = U40 } } type = addclaim which = 271 }
+		command = { trigger = { owned = { province = 272 data = U40 } } type = addclaim which = 272 }
+		command = { trigger = { owned = { province = 273 data = U40 } } type = addclaim which = 273 }
+		command = { trigger = { owned = { province = 270 data = U40 } } type = addclaim which = 270 }
+		command = { trigger = { owned = { province = 267 data = U40 } } type = addclaim which = 267 } # Latvia
+		command = { trigger = { owned = { province = 269 data = U40 } } type = addclaim which = 269 }
+		command = { trigger = { owned = { province = 268 data = U40 } } type = addclaim which = 268 }
+		command = { trigger = { owned = { province = 264 data = U40 } } type = addclaim which = 264 }
+		command = { trigger = { owned = { province = 266 data = U40 } } type = addclaim which = 266 }
+		command = { trigger = { owned = { province = 265 data = U40 } } type = addclaim which = 265 }
+		command = { trigger = { owned = { province = 550 data = U40 } } type = addclaim which = 550 } #Ingria
+		command = { trigger = { owned = { province = 549 data = U40 } } type = addclaim which = 549 }
+		command = { trigger = { owned = { province = 552 data = U40 } } type = addclaim which = 552 }
+		command = { trigger = { owned = { province = 560 data = U40 } } type = addclaim which = 560 }
+		command = { trigger = { owned = { province = 564 data = U40 } } type = addclaim which = 564 }
+		command = { trigger = { owned = { province = 565 data = U40 } } type = addclaim which = 565 }
+		command = { trigger = { owned = { province = 566 data = U40 } } type = addclaim which = 566 }
+		command = { trigger = { owned = { province = 551 data = U40 } } type = addclaim which = 551 }
+		command = { trigger = { owned = { province = 561 data = U40 } } type = addclaim which = 561 } #Parts of Russia
+		command = { trigger = { owned = { province = 573 data = U40 } } type = addclaim which = 573 }
+	}	
+}
+
+
+#########################################
+# Settlement of the Ukraine & Crimea	#
+#########################################
+event = { # Crimea policy
+	id = 249
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 200
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		event = 200
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "249NAME"
+	desc = "249DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "RUTHLESS"
+	ai_chance = 50
+	command = { type = setflag which = Crimea1 }
+	command = { type = 	dissent value = 2 }
+	}
+	action_b = {
+	name = "LOCAL"
+	ai_chance = 50
+	command = { type = setflag which = Crimea2 }
+	command = { type = 	dissent value = 1 }
+	}
+	action_c = {
+	name = "249C"
+	ai_chance = 1
+	command = { type = setflag which = Crimea3 }
+	command = { type = 	dissent value = -1 }
+	}
+}
+event = {
+	id = 250
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 249
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		event = 249
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "250NAME"
+	desc = "250DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "RUTHLESS"
+	ai_chance = 50
+	command = { type = setflag which = Ukraine1 }
+	command = { type = 	dissent value = 2 }
+	}
+	action_b = {
+	name = "LOCAL"
+	ai_chance = 50
+	command = { type = setflag which = Ukraine2 }
+	command = { type = 	dissent value = 1 }
+	}
+	action_c = {
+	name = "PUPPET"
+	ai_chance = 20
+	command = { type = setflag which = Ukraine3 }
+	#command = { type =	inherit which = U41 }
+	command = { type = 	dissent value = -2 }
+	command = { type = trigger which = 251 }
+	}
+}
+event = {
+	id = 251
+	random = no
+	country = U41
+	
+	# Triggered by 250
+	# Creates an Ukrainian puppet state. 
+	
+	name = "251NAME"
+	desc = "251DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action_a = {
+		name = "ACTION_NAME_OK"
+		ai_chance = 100
+		trigger = { flag = Ukraine3 }
+		command = { type =	country which = UKR }		
+	} 
+}
+event = {
+	id = 252
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		event = 250 # Policy on the Ukraine
+		
+		NOT = { flag = Crimea3 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 249
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		event = 249
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "252NAME"
+	desc = "252DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "252A"
+	ai_chance = 50
+	command = { type = setflag which = Gotenburg }
+	command = { type = province_manpower which = 638 value = 1 }
+	}
+	action_b = {
+	name = "252B"
+	ai_chance = 50
+	command = { type = setflag which = Theodoric }
+	command = { type = province_manpower which = 641 value = 1 }
+	}
+	action_c = {
+	name = "252C"
+	ai_chance = 50
+	command = { type = setflag which = Taurida }
+	command = { type = province_manpower which = 624 value = 1 }
+	}
+}
+event = {
+	id = 253
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		event = 250 # Policy on the Ukraine
+		event = 249 # Policy on the Crimea
+		
+		NOT = {
+		flag = Ukraine3
+		}
+		
+		random = 50
+	}	
+	name = "253NAME"
+	desc = "253DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "253A"
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	command = { type = relation which = U41 value = 10 } 
+	command = { type = relation which = U40 value = -10 } 
+	}
+	action_b = {
+	name = "253B"
+	ai_chance = 40
+	command = { type = 	dissent value = 2 }
+	command = { type = relation which = U41 value = -10 } 
+	command = { type = relation which = U40 value = 10 }
+	}
+	action_c = {
+	name = "253C"
+	ai_chance = 30
+	command = { trigger = { flag = Ukraine1 } type = setflag which = Ukraine2 } # Reduces partisan attacks!
+	command = { type = clrflag which = Ukraine1 }
+	command = { type = 	dissent value = 5 }
+	command = { type = relation which = U41 value = -10 } 
+	command = { type = relation which = U40 value = 10 }
+	# command = { type = trigger which = 254 } 
+	}
+}
+
+### 254 RESERVED FOR UKRAINIAN CHANGE OF LEADERSHIP
+
+event = {
+	id = 255 # Gotenburg
+	random = no
+	country = GER
+
+	trigger = {
+		
+		OR = {
+		flag = Gotenburg
+		event = 256
+		event = 257 
+		}
+		
+		NOT = { flag = Crimea3 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "255NAME"
+	desc = "255DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 638 } 
+	}
+}
+
+event = {
+	id = 256 # Theodorichshafen integrated
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		OR = {
+		flag = Theodoric
+		event = 255
+		event = 257
+		}
+		
+		NOT = { flag = Crimea3 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "256NAME"
+	desc = "256DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 641 } 
+	}
+}
+event = {
+	id = 257 # Germanization of Taurida
+	random = no
+	country = GER
+
+	trigger = {
+		
+		EVENT = 252
+		
+		OR = {
+		flag = Taurida
+		event = 255
+		event = 256
+		}
+		
+		NOT = { flag = Crimea3 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "257NAME"
+	desc = "257DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 624 } 
+	command = { type = addcore which = 623 } 
+	}
+}
+event = {
+	id = 258 # Crimean countryside pacified
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+
+		event = 255
+		event = 257 	
+		
+		NOT = { 
+		flag = Crimea1
+		flag = Crimea3 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "258NAME"
+	desc = "258DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 639 } 
+	command = { type = addcore which = 640 } 
+	command = { type = addcore which = 637 }
+	}
+}
+### Ukraine policy
+event = {
+	id = 259 # Start of colonization in the Ukraine
+	random = no
+	save_date = yes
+	country = U41
+
+	trigger = {
+		
+		event = 250 # Policy on the Ukraine
+		
+		NOT = { flag = Ukraine3
+		war = { country = GER country = SOV } 
+		}
+		
+		OR = { 
+		AND = {
+		event = 250
+		random = 80
+		flag = Ukraine		
+		}
+		AND = { 
+		event = 250
+		random = 60
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "259NAME"
+	desc = "259DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_EXCELLENT"
+	command = { type = setflag which = Gotenburg }
+	command = { type = province_manpower which = 632 value = 1 }
+}
+	}
+event = { # Dnipropetrovsk
+	id = 260
+	random = no
+	save_date = yes
+	country = U41
+
+	trigger = {
+		
+		control = { province = 630 data = -1 }
+		control = { province = 632 data = -1 }
+		
+		NOT = { 
+		flag = Ukraine3
+		war = { country = GER country = SOV } 
+		}
+		
+		OR = {
+		AND = {
+			flag = Crimea2
+			event = 258
+			}
+		AND = {
+			flag = Crimea1
+			event = 255
+			event = 256
+			event = 257 }
+		}
+		
+		OR = { 
+		AND = {
+		event = 259
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		event = 259
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "260NAME"
+	desc = "260DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type = addcore which = 632 } 
+	command = { type = addcore which = 630 }
+	}
+}
+event = { # Integration of Kirivograd
+	id = 261
+	random = no
+	save_date = yes
+	country = U41
+
+	trigger = {
+		
+		control = { province = 628 data = -1 }  
+		control = { province = 627 data = -1 }
+		
+		NOT = { 
+		flag = Ukraine3
+		war = { country = GER country = SOV } 
+		}
+		
+		OR = {
+		AND = {
+			flag = Crimea2
+			event = 258
+			}
+		AND = {
+			flag = Crimea1
+			event = 255
+			event = 256
+			event = 257 }
+		}
+		
+		OR = { 
+		AND = {
+		event = 260
+		random = 60
+		flag = Ukraine		
+		}
+		AND = { 
+		event = 260
+		random = 40
+			OR = {
+			flag = General_Government
+			flag = Ostland 		
+				} 
+			}	
+		}
+	}	
+	name = "261NAME"
+	desc = "261DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 628 } 
+	command = { type = addcore which = 627 }
+	}
+}
+event = {
+	id = 262 # The fate of Kiev
+	random = no
+	save_date = yes
+	country = GER
+
+
+	trigger = {
+	
+		NOT = { 
+		flag = Ukraine3
+		exists = UKR
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = 250
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 250
+		random = 40
+			OR = {	
+			flag = Ostland 	
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "262NAME"
+	desc = "262DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "262A"
+	ai_chance = 90
+	command = { type = 	dissent value = 1 }
+	command = { type = construct which = ic where = 617 value = -4 }
+	command = { type = construct which = air_base where = 617 value = -7 }
+	command = { type = construct which = infrastructure where = 617 value = -30 }
+	command = { type = construct which = flak where = 617 value = -3 }
+	command = { type = province_manpower which = 617 value = -3 }
+	command = { type = province_manpower which = 608 value = 1 } # Ukrainians move elsewhere, DOESN'T WORK?!!
+	command = { type = province_manpower which = 610 value = 1 }
+	command = { type = province_manpower which = 610 value = 1 }
+	}
+	action_b = {
+	name = "208C"
+	ai_chance = 10
+	command = { type = 	dissent value = 10 }
+	}
+}
+event = {
+	id = 263 # Recovery of Kievan industry
+	random = no
+	country = GER
+
+	trigger = {
+	event = 262
+	random = 50
+	}	
+	name = "263NAME"
+	desc = "263DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_EXCELLENT"
+	command = { type = money value = -100 }
+	command = { type = supplies value = -1000 }
+	command = { type = construct which = ic where = -4 value = 1 }
+	}
+}
+event = {
+	id = 264 # Litzmannstadt-Halbstadt Autobahn
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+
+		NOT = {
+		flag = Ukraine3		
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = 259
+		random = 80
+		flag = Ostland 		
+		}
+		AND = { 
+		event = 259
+		random = 60
+			OR = { 
+			flag = General_Government
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+		
+	name = "264NAME"
+	desc = "264DESC"
+	style = 2
+	picture = "autobahn"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 60
+	name = "ACTION_NAME_ACCEPT"
+	command = { type = 	dissent value = -1 }
+	command = { type = free_ic value = -9 } 
+	command = { type = relation which = U41 value = 20 }
+	command = { type = relation which = U44 value = 20 }
+	command = { type = setflag which = EastRoad1 }
+	}
+	action_b = { 
+	ai_chance = 40
+	name = "264B"
+	command = { type = 	dissent value = 1 }
+	command = { type = free_ic value = -6 } 
+	command = { type = relation which = U41 value = -20 }
+	command = { type = relation which = U44 value = -20 }
+	command = { type = setflag which = EastRoad2 }
+	}
+	action_c = {
+	ai_chance = 20
+	name = "ACTION_NAME_DECLINE"
+	command = { type = 	dissent value = 2 }
+	command = { type = relation which = U41 value = -50 }
+	command = { type = relation which = U44 value = -50 }
+	}
+}
+event = { # Litzmannstadt-Halbstadt Autobahn Finished
+	id = 265
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+
+	OR = { 
+			AND = {
+			event = 264
+			random = 90
+			flag = EastRoad1
+				}
+				
+			AND = { 
+			event = 264
+			flag = EastRoad2
+			random = 40
+				}	
+		}
+	}	
+		
+	name = "265NAME"
+	desc = "265DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 100
+	name = "ACTION_NAME_GREAT"
+	trigger = { flag = EastRoad1 }
+	command = { type = 	dissent value = -1 }
+	command = { type = free_ic value = 9 } 
+	command = { type = construct which = infrastructure where = 223 value = 5 } # Lodz
+	command = { type = construct which = infrastructure where = 234 value = 10 } # The actual Autobahn
+	command = { type = construct which = infrastructure where = 243 value = 10 }
+	command = { type = construct which = infrastructure where = 246 value = 10 }
+	command = { type = construct which = infrastructure where = 245 value = 10 }
+	command = { type = construct which = infrastructure where = 244 value = 10 }
+	command = { type = construct which = infrastructure where = 614 value = 10 }
+	command = { type = construct which = infrastructure where = 611 value = 10 }
+	command = { type = construct which = infrastructure where = 613 value = 10 }
+	command = { type = construct which = infrastructure where = 628 value = 5 } # Colonized area
+	command = { type = construct which = infrastructure where = 627 value = 5 }
+	command = { type = construct which = infrastructure where = 632 value = 5 }
+	command = { type = construct which = infrastructure where = 630 value = 5 }
+	command = { type = relation which = U41 value = 20 }
+	command = { type = relation which = U44 value = 20 }
+	}
+	action_b = { 
+	ai_chance = 100
+	name = "ACTION_NAME_GREAT"
+	trigger = { flag = EastRoad2 }
+	command = { type = 	dissent value = -1 }
+	command = { type = free_ic value = 4 } 
+	command = { type = construct which = infrastructure where = 223 value = 5 } # Lodz
+	command = { type = construct which = infrastructure where = 234 value = 10 } # The actual Autobahn
+	command = { type = construct which = infrastructure where = 243 value = 10 }
+	command = { type = construct which = infrastructure where = 246 value = 10 }
+	command = { type = construct which = infrastructure where = 245 value = 10 }
+	command = { type = construct which = infrastructure where = 244 value = 10 }
+	command = { type = construct which = infrastructure where = 614 value = 10 }
+	command = { type = construct which = infrastructure where = 611 value = 10 }
+	command = { type = construct which = infrastructure where = 613 value = 10 }
+	command = { type = construct which = infrastructure where = 628 value = 5 } # Colonized area
+	command = { type = construct which = infrastructure where = 627 value = 5 }
+	command = { type = construct which = infrastructure where = 632 value = 5 }
+	command = { type = construct which = infrastructure where = 630 value = 5 }
+	command = { type = relation which = U41 value = 10 }
+	command = { type = relation which = U44 value = 10 }
+	}
+}
+##################################################
+# 												 #
+# Expansion of the Reichskommissariat Ukraine    #
+#												 #
+##################################################
+event = {
+	id = 266 																					# SHOULD PROBABLY BE CONVERTED INTO A DECISION!!!
+	random = no
+	country = GER
+
+	trigger = {
+	
+	control = { province = 634 data = GER }
+	NOT = { war = { country = SOV country = GER } }
+	event = 261
+	random = 25
+	
+	}	
+	name = "266NAME"
+	desc = "266DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "266A"
+	ai_chance = 50
+	command = { type = 	dissent value = 1 }
+	command = { type = free_supplies value = 10 } 
+	command = { type = free_oil value = 5 }
+	command = { type =	secedeprovince which = U41 value = 650 }
+	command = { type =	secedeprovince which = U41 value = 651 }
+	command = { type =	secedeprovince which = U41 value = 658 }
+	command = { type =	secedeprovince which = U41 value = 652 }
+	command = { type =	secedeprovince which = U41 value = 654 }
+	command = { type =	secedeprovince which = U41 value = 657 }
+	command = { type =	secedeprovince which = U41 value = 580 }                
+	}
+	action_b = {
+	name = "ACTION_NAME_NEVER"
+	ai_chance = 10
+	command = { type = 	dissent value = 1 }
+	}
+}
+event = {
+	id = 267 																					
+	random = no
+	country = GER
+
+	trigger = {
+	
+	control = { province = 574 data = GER }
+	control = { province = 576 data = GER }
+	control = { province = 584 data = GER }
+	control = { province = 579 data = GER }
+	
+	random = 50
+	
+	}	
+	name = EVT_276_NAME
+	desc = EVT_276_DESC
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = ACTION_NAME_OK
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = UTC value = 574 }
+	command = { type =	secedeprovince which = UTC value = 576  }
+	command = { type =	secedeprovince which = UTC value = 584  }
+	command = { type =	secedeprovince which = UTC value = 579 }   
+	command = { type =	secedeprovince which = UTC value = 580 }  	
+	}
+	action_b = {
+	name = "ACTION_NAME_NEVER"
+	ai_chance = 40
+	command = { type = 	dissent value = 1 }
+	}
+}
+##################################################												
+# Completion of Gotengau					     #											
+##################################################
+event = {
+	id = 268
+	random = no
+	save_date = yes
+	persistent = yes
+	#tag = { U41 UKR } # TESTING IF THIS WORKS...
+	
+
+	trigger = {
+	
+	control = { province = 630 data = -1 }		
+	
+	random = 40
+	
+	OR = {  
+	event = 261
+	flag = Ukraine3
+		}
+	
+	OR = { # Crimean chain finished
+		AND = {
+			flag = Crimea1
+			event = 257
+			}
+			event = 258 
+		}
+	
+	NOT = { 
+	war = { country = GER country = SOV } 
+	flag = AnnexGotengau
+	}
+	
+	}
+	
+	name = "268NAME"
+	desc = "268DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_YES"
+	ai_chance = 50
+	command = { type = setflag which = AnnexGotengau } 
+	command = { type =	secedeprovince which = GER value = 630 }
+	command = { type =	secedeprovince which = GER value = 632 }
+	command = { type =	secedeprovince which = GER value = 627 }
+	command = { type =	secedeprovince which = GER value = 628 }
+	command = { type = removeclaim which = 630 }
+	command = { type = removeclaim which = 632 }
+	command = { type = removeclaim which = 627 }
+	command = { type = removeclaim which = 628 }
+	command = { type = removecore which = 630 }
+	command = { type = removecore which = 632 }
+	command = { type = removecore which = 627 }
+	command = { type = removecore which = 628 }
+	}
+	action_b = {
+	name = "ACTION_NAME_NO"
+	ai_chance = 50
+	command = { type = relation which = GER value = -5 } 
+	}
+}
+event = {
+	id = 269
+	random = no
+	save_date = yes
+	country = GER
+	
+	decision = {	
+	
+	flag = AnnexGotengau
+	
+	}
+	decision_trigger = { 
+	NOT = { war = { country = SOV country = GER } }
+		
+	}
+	
+	name = "269NAME"
+	desc = "269DESC"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_anschluss"
+
+	date = { day = 1 month = january year = 1942 }
+	offset = 90
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addclaim which = 630 } # Ukraine
+	command = { type = addclaim which = 632 }
+	command = { type = addclaim which = 627 }
+	command = { type = addclaim which = 628 }		
+	command = { type = addclaim which = 623 } # Taurida
+	command = { type = addclaim which = 624 }
+	command = { type = addclaim which = 637 } #Crimea
+	command = { type = addclaim which = 638 }
+	command = { type = addclaim which = 639 }
+	command = { type = addclaim which = 640 }
+	command = { type = addclaim which = 641 }
+	}
+}
+event = {
+	id = 270
+	random = no
+	country = GER
+	
+
+	trigger = {
+	
+	event = 269
+	
+	}
+	
+	name = "270NAME"
+	desc = "270DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_HURRAH"
+	command = { type = addcore which = 630 } # Ukraine
+	command = { type = addcore which = 632 }
+	command = { type = addcore which = 627 }
+	command = { type = addcore which = 628 }		
+	command = { type = addcore which = 623 } # Taurida
+	command = { type = addcore which = 624 }
+	command = { type = addcore which = 637 } #Crimea
+	command = { type = addcore which = 638 }
+	command = { type = addcore which = 639 }
+	command = { type = addcore which = 640 }
+	command = { type = addcore which = 641 }
+	}
+}
+#####################################
+# Pacification of the Ukraine		#
+#####################################
+event = { # I
+	id = 271
+	random = no
+	save_date = yes
+	country = U41
+
+	trigger = {
+		
+		control = { province = 244 data = U41 }
+		control = { province = 245 data = U41 }
+		
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+		
+		OR = {
+		AND = {
+			flag = Ukraine1
+			event = 270
+			random = 10
+			}
+		AND = {
+			flag = Ukraine2
+			event = 270
+			random = 40
+			 }
+		}
+	
+	
+	
+	}	
+	name = "271NAME"
+	desc = "271DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 245 } 
+	command = { type = addcore which = 249 }
+	command = { type = addcore which = 616 }
+	command = { type = addcore which = 609 }
+	command = { type = addcore which = 614 }
+	command = { type = addcore which = 611 }
+	command = { type = addcore which = 612 }
+	command = { type = addcore which = 618 }
+	}
+}
+event = { # II
+	id = 272
+	random = no
+	save_date = yes
+	country = U41
+
+	trigger = {
+		
+		control = { province = 607  data = U41 }
+		control = { province = 617 data = U41 }
+		
+		OR = {
+		AND = {
+			flag = Ukraine1
+			event = 271
+			random = 10
+			}
+		AND = {
+			flag = Ukraine2
+			event = 271
+			random = 40
+			 }
+		}
+	
+	
+	
+	}	
+	name = "272NAME"
+	desc = "272DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 607  } 
+	command = { type = addcore which = 608  }
+	command = { type = addcore which = 610  }
+	command = { type = addcore which = 629  }
+	command = { type = addcore which = 615  }
+	command = { type = addcore which = 613  }
+	command = { type = addcore which = 617  }
+	}
+}
+event = { # III
+	id = 273
+	random = no
+	save_date = yes
+	country = U41
+
+	trigger = {
+		
+		control = { province = 607  data = U41 }
+		control = { province = 617 data = U41 }
+		
+		OR = {
+		AND = {
+			flag = Ukraine1
+			event = 272
+			random = 10
+			}
+		AND = {
+			flag = Ukraine2
+			event = 272
+			random = 40
+			 }
+		}
+	
+	
+	
+	}	
+	name = EVT_273_NAME
+	desc = EVT_273_DESC
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT 
+
+
+
+
+	command = { type = addcore which = 631  } 
+	command = { type = addcore which = 635  }
+	command = { type = addcore which = 634  }
+	command = { type = addcore which = 633  }
+	command = { type = addcore which = 636  }
+	}
+}
+event = { # IV
+	id = 274
+	random = no
+	save_date = yes
+	tag = { UKR U41 }
+
+	trigger = {
+		
+		NOT = { war = { country = ROM country = GER } }
+		control = { province = 626 data = -1 }
+	
+	}	
+	name = EVT_274_NAME
+	desc = EVT_274_DESC
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type =  addcore which = 631 } 
+	command = { type =	addcore which = 622 }
+	command = { type =	addcore which = 625 }
+	command = { type =	addcore which = 626 }
+	command = { type =	addcore which = 620 }
+	command = { type =	addcore which = 619 }
+	command = { type =	addcore which = 621 }
+	}
+}
+event = { # V
+	id = 275
+	random = no
+	tag = { UKR U41 }
+
+	trigger = {
+		
+		NOT = { war = { country = ROM country = GER } }
+		control = { province = 242 data = -1 }
+		event = 295
+	
+	}	
+	name = EVT_275_NAME
+	desc = EVT_275_DESC
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type =  addcore which = 238 }
+	command = { type =	addcore which = 239 }
+	command = { type =	addcore which = 240 }
+	command = { type =	addcore which = 241 }
+	command = { type =	addcore which = 242 }
+	command = { trigger = { control = { province = 300 data = -1 } }  type =	addcore which = 300 }
+	command = { trigger = { control = { province = 301 data = -1 } } type =	addcore which = 301 }
+	}
+}
+#####################################
+# POLAND EVENTS						#
+#####################################
+event = {
+	id = 276
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+	
+		OR = { 
+		AND = {
+		event = 200
+		flag = General_Government 
+random = 80		
+		}
+		AND = { 
+		event = 200
+			OR = {
+			flag = Ostland
+			flag = Ukraine
+			random = 60
+				} 
+			}	
+		}
+		
+	NOT = { war = { country = GER country = SOV } }
+	
+	}
+	
+	name = "276NAME"
+	desc = "276DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_HURRAH"
+	command = { type = addcore which = 227 } 
+	command = { type = addcore which = 223 }
+	command = { type = addcore which = 231 }
+	}
+}
+event = {
+	id = 277
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+	
+		OR = { 
+		AND = {
+		event = { id = 276 days = 240 }
+		flag = General_Government 		
+		}
+		AND = { 
+		event = { id = 276 days = 360 }
+			OR = {
+			flag = Ostland
+			flag = Ukraine	
+				} 
+			}	
+		}
+		
+	NOT = { war = { country = GER country = SOV } }
+	
+	}
+	
+	name = "277NAME" 
+	desc = "277DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_HURRAH"
+	command = { type = addcore which = 252 }
+	}
+}
+event = {
+	id = 278
+	random = no
+	country = GER
+	
+
+	trigger = {
+	
+		OR = { 
+		AND = {
+		event = { id = 277 days = 240 }
+		flag = General_Government 		
+		}
+		AND = { 
+		event = { id = 277 days = 360 }
+			OR = {
+			flag = Ostland
+			flag = Ukraine	
+				} 
+			}	
+		}
+		
+	NOT = { war = { country = GER country = SOV } }
+	
+	}
+	
+	name = "278NAME" 
+	desc = "278DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_HURRAH"
+	command = { type = addcore which = 229 }
+	}
+}
+event = {
+	id = 279 # Warshaw
+	random = no
+	save_date = yes
+	country = U44
+
+
+	trigger = {
+	
+	
+		NOT = { 
+		war = { country = GER country = SOV } 
+		}
+			OR = { 
+		AND = {
+		event = 200
+		random = 60
+		flag = General_Government 		
+		}
+		AND = { 
+		event = 200
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "229NAME"
+	desc = "229DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = 	dissent value = 10 }
+	command = { type = construct which = ic where = 553 value = -6 }
+	command = { type = construct which = air_base where = 553 value = -5 }
+	command = { type = construct which = infrastructure where = 553 value = -40 }
+	command = { type = construct which = flak where = 553 value = -2 }
+	}
+}
+event = {
+	id = 280
+	random = no
+	save_date = yes
+	country = GER
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 200
+	random = 60
+		flag = General_Government		
+		}
+		AND = { 
+		event = 200
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	name = "280NAME"
+	desc = EVT_280_DESC
+	style = 2
+	picture = "gorals"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "280A"
+	ai_chance = 40
+	command = { type = setflag which = Goralenvolk }
+	command = { type = money value = -50 }
+	}
+	action_b = {
+	name = "280B"
+	ai_chance = 50
+	command = { type = 	dissent value = 1 } 
+	}
+}
+event = {
+	id = 281
+	random = no
+	save_date = yes
+	country = U44
+
+	trigger = {
+	
+	OR = {
+			AND = {
+					random = 10
+					flag = Goralenvolk
+				}		
+			AND = {
+					event = { id = 280 days = 360 }	
+					random = 20
+					flag = Goralenvolk
+				}
+			AND = {
+					event = { id = 280 days = 400 }	
+					random = 25 
+					flag = Goralenvolk
+				}
+			AND = {
+					event = { id = 280 days = 450 }	
+					random = 40 
+					flag = Goralenvolk
+				}				
+	}	
+	 }
+	name = "281NAME"
+	desc = "281DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 236 } 
+	command = { type = sleepevent which = 750034 }
+	}
+}
+event = {
+	id = 282 
+	random = no
+	country = GER
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 279 days = 30 }
+		random = 60
+		flag = General_Government		
+		}
+		AND = { 
+		event = { id = 279 days = 60 }
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = "282NAME"
+	desc = "282DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_OK"
+	ai_chance = 50
+	command = { type = free_supplies value = -10 } 
+	}
+	action_b = {
+	name = "282B"
+	ai_chance = 50
+	command = { type = sleepevent which = 283 }
+	command = { type = sleepevent which = 284 }
+	command = { type = sleepevent which = 285 }
+	}
+}
+event = {
+	id = 283 
+	random = no
+	save_date = yes
+	country = U44
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = 282
+		random = 60
+		flag = General_Government		
+		}
+		AND = { 
+		event = 282
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = "283NAME"
+	desc = "283DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type = province_manpower which = 243 value = 1 } 
+	}
+}
+event = {
+	id = 284 
+	random = no
+	save_date = yes
+	country = U44
+
+	trigger = {
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 283 days = 360 }
+		random = 60
+		flag = General_Government		
+		}
+		AND = { 
+		event = { id = 283 days = 450 }
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = "284NAME"
+	desc = "284DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 243 } 
+	command = { type = sleepevent which = 750035 }
+	command = { type = trigger which = 285 }
+	}
+}
+event = {
+	id = 285
+	random = no
+	save_date = yes
+	country = GER
+	
+	# Triggered by 228
+	
+	name = "284NAME"
+	desc = "285DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = free_supplies value = 11 }
+	}  
+}
+event = {
+	id = 286
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 278
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 278
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = "286NAME"
+	desc = "286DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "286B"
+	ai_chance = 60
+	command = { type = sleepevent which = 289 } 
+	}
+	action_b = {
+	name = "286C"
+	ai_chance = 40
+	command = { type = sleepevent which = 288 }
+	command = { type = sleepevent which = 290 }
+	command = { type = sleepevent which = 287 }
+	}
+}
+event = {
+	id = 287
+	random = no
+	country = GER
+	
+	trigger = {
+	
+	puppet = { country = UKR country = GER }	
+		
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = "287NAME"
+	desc = "287DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = ACTION_NAME_YES
+	ai_chance = 60
+	command = { type = trigger which = 295 }
+	}
+	action_b = {
+	name = ACTION_NAME_NO
+	ai_chance = 40
+	command = { }
+	}
+}
+event = {
+	id = 295
+	random = no
+	country = U44
+	
+	# Triggered by 287
+	
+	name = EVT_295_NAME
+	desc = EVT_295_DESC
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type =	secedeprovince which = UKR value = 239 }
+		command = { type =	secedeprovince which = UKR value = 238 }
+		command = { type =	secedeprovince which = UKR value = 242 }
+		command = { type =	secedeprovince which = UKR value = 240 }
+		command = { type =	secedeprovince which = UKR value = 241 }
+		command = { type =	secedeprovince which = UKR value = 300 } # In case of Transylvanian war gains
+		command = { type =	secedeprovince which = UKR value = 301 }
+	}  
+}
+event = {
+	id = 288
+	random = no
+	country = U44
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 288NAME
+	desc = 288DESC
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+	command = { type = 	dissent value = 5 }
+	}
+}
+event = {
+	id = 289
+	random = no
+	country = U44
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 289NAME
+	desc = 289DESC
+	style = 2
+	picture = "resistance"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+	command = { type = revolt which = 239 }
+	command = { type = revolt which = 242 }
+	command = { type = revolt which = 241 }
+	}
+}
+event = {
+	id = 290
+	random = no
+	country = U44
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 290NAME
+	desc = 290DESC
+	style = 2
+	picture = "resistance"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_DAMN
+	command = { type = 	dissent value = 1 }
+	}
+}
+event = {
+	id = 291
+	random = no
+	country = GER
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 291NAME
+	desc = 291DESC
+	style = 2
+	picture = "invest_infrastructures"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "291A"
+		ai_chance = 50	
+		command = { type = setflag which = UKCC1 }
+		command = { type = relation which = UKR value = -10 } # Ukraine
+	}
+	action_b = {
+		name = "291B"
+		ai_chance = 50
+		command = { type = setflag which = UKCC2 }
+		command = { type = supplies value = -500 } 
+		command = { type = relation which = UKR value = 10 } # Ukraine
+	}
+	action_c = {
+		name = "291C"
+		ai_chance = 50
+		command = { type = setflag which = UKCC1 }
+		command = { type = supplies value = -1000 } 
+		command = { type = relation which = UKR value = 20 } # Ukraine
+	}
+}
+event = {
+	id = 292
+	random = no
+	country = U44
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 292NAME
+	desc = 292DESC
+	style = 2
+	picture = "invest_infrastructures"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "292"
+		trigger = { flag = UKCC1 }
+		command = { type = clrflag which = UKCC1 }     
+		command = { type = construct which = infrastructure where = 238 value = 5 }
+		command = { type = construct which = infrastructure where = 239 value = 5 }
+		command = { type = construct which = infrastructure where = 242 value = 5 }
+		command = { type = construct which = infrastructure where = 240 value = 5 }
+		command = { type = construct which = infrastructure where = 241 value = 5 }
+	}
+	action_b = {
+		name = "292"
+		trigger = { flag = UKCC1 }
+		command = { type = clrflag which = UKCC1 }     
+		command = { type = construct which = infrastructure where = 238 value = 10 }
+		command = { type = construct which = infrastructure where = 239 value = 10 }
+		command = { type = construct which = infrastructure where = 242 value = 10 }
+		command = { type = construct which = infrastructure where = 240 value = 10 }
+		command = { type = construct which = infrastructure where = 241 value = 10 }
+	}
+	action_c = {
+		name = "292"
+		trigger = { flag = UKCC3 }
+		command = { type = clrflag which = UKCC3 }     
+		command = { type = construct which = infrastructure where = 238 value = 10 }
+		command = { type = construct which = infrastructure where = 239 value = 10 }
+		command = { type = construct which = infrastructure where = 242 value = 10 }
+		command = { type = construct which = infrastructure where = 240 value = 10 }
+		command = { type = construct which = infrastructure where = 241 value = 10 }
+		command = { type = construct which = ic where = 239 value = 1 }
+	}
+}
+event = {
+	id = 293
+	random = no
+	country = U44
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 286
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 286
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 293NAME
+	desc = 293DESC
+	style = 2
+	picture = "Rhineland"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GOOD	
+		command = { type = setflag which = UKCC1 }
+		command = { type = relation which = UKR value = -10 } # Ukraine
+		command = { type = addcore which = 238 } 
+		command = { type = addcore which = 239 } 
+		command = { type = addcore which = 240 } 
+		command = { type = addcore which = 241 } 
+		command = { type = addcore which = 242 }
+	}
+}
+event = {
+	id = 294
+	random = no
+	country = U44
+	
+	trigger = {	
+		
+		NOT = { 
+		}
+			OR = { 
+		AND = {
+		event = 283
+		random = 60
+		flag = General_Government	
+		}
+		AND = { 
+		event = 283
+		random = 40
+			OR = {
+			flag = Ostland 
+			flag = Ukraine	
+				} 
+			}	
+		}
+	}	
+	
+	name = 294NAME
+	desc = 294DESC
+	style = 2
+	picture = "Rheinland"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GOOD	
+		command = { type = 	dissent value = 1 }
+		command = { type = province_manpower which = 235 value = -3 } 
+		command = { type = addcore which = 235 }
+	}
+}
+event = {
+	id = 296
+	random = no
+	save_date = yes
+	country = GER
+	
+	decision = {	
+	event = 248
+	random = 50
+		NOT = {			
+			OR = {
+				ispuppet = GER		
+				war = { country = SOV country = GER }
+				war = { country = SOV country = LIT }
+				war = { country = SOV country = EST }
+				war = { country = SOV country = LAT }
+			}
+		}	
+	}
+	decision_trigger = { 
+	OR = {
+		ai = yes
+		relation = { which = U40 value = 150 }	
+		}
+	}
+	
+	name = EVT_296_NAME
+	desc = EVT_296_DESC
+	style = 2
+	picture = "alfred_rosenberg"
+	decision_picture = "decision_Memel"
+
+	date = { day = 1 month = january year = 1953 } # 5 years!
+	offset = 90
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { trigger = { owned = { province = 274 data = U40 } } type = addcore which = 274 } #Estonia
+		command = { trigger = { owned = { province = 275 data = U40 } } type = addcore which = 275 }
+		command = { trigger = { owned = { province = 271 data = U40 } } type = addcore which = 271 }
+		command = { trigger = { owned = { province = 272 data = U40 } } type = addcore which = 272 }
+		command = { trigger = { owned = { province = 273 data = U40 } } type = addcore which = 273 }
+		command = { trigger = { owned = { province = 270 data = U40 } } type = addcore which = 270 }
+		command = { trigger = { owned = { province = 267 data = U40 } } type = addcore which = 267 } # Latvia
+		command = { trigger = { owned = { province = 269 data = U40 } } type = addcore which = 269 }
+		command = { trigger = { owned = { province = 268 data = U40 } } type = addcore which = 268 }
+		command = { trigger = { owned = { province = 264 data = U40 } } type = addcore which = 264 }
+		command = { trigger = { owned = { province = 266 data = U40 } } type = addcore which = 266 }
+		command = { trigger = { owned = { province = 265 data = U40 } } type = addcore which = 265 }
+		command = { trigger = { owned = { province = 550 data = U40 } } type = addcore which = 550 } #Ingria
+		command = { trigger = { owned = { province = 549 data = U40 } } type = addcore which = 549 }
+		command = { trigger = { owned = { province = 552 data = U40 } } type = addcore which = 552 }
+		command = { trigger = { owned = { province = 560 data = U40 } } type = addcore which = 560 }
+		command = { trigger = { owned = { province = 564 data = U40 } } type = addcore which = 564 }
+		command = { trigger = { owned = { province = 565 data = U40 } } type = addcore which = 565 }
+		command = { trigger = { owned = { province = 566 data = U40 } } type = addcore which = 566 }
+		command = { trigger = { owned = { province = 551 data = U40 } } type = addcore which = 551 }
+		command = { trigger = { owned = { province = 561 data = U40 } } type = addcore which = 561 } #Parts of Russia
+		command = { trigger = { owned = { province = 573 data = U40 } } type = addcore which = 573 }
+		command = { type =	inherit which = U40 value = 1 }
+	}	
+}

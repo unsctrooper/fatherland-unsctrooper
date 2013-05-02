@@ -1,0 +1,297 @@
+########################################
+# Serbia's Future
+########################################
+# 300 # GER # Decision: Serbia's future
+# 301 # GER # Colonial Policy toward Banat
+# 303 # GER # Banat integration
+# 302 # SER # The National Government
+# 306 # SER # The National Government-Foreign Banat
+# 304 # HUN # Hungarian Banat
+# 305 # ROM # Romanian Banat
+# 307 # GER # The Fate of Banat (no SER)
+
+event = {
+	id = 300
+	random = no
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = HUN
+		exists = ROM
+		year = 1942 				
+		NOT = {
+			OR = {			
+				ispuppet = GER
+				exists = SER		
+				war = { country = SOV country = GER }
+			}
+		}		
+	}
+	decision_trigger = {
+		NOT = { war = { country = SOV country = GER } 
+		}		
+	}
+	
+	name = "300NAME"
+	desc = "300DESC"
+	style = 2
+	picture = "Reichstag"
+	decision_picture = "decision_anticominternpact"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "300A"
+		ai_chance = 20
+		command = { type = independence which = SER value = 1 }
+		command = { type = make_puppet which = SER } 
+		command = { type = trigger which = 301 }
+		command = { type = trigger which = 306 } 
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = -50 } 
+		command = { type = setflag which = Banat }
+	}
+	action_b = {
+		name = "300B"
+		ai_chance = 50
+		command = { type = independence which = SER value = 1 }
+		command = { type = make_puppet which = SER }
+		command = { type = removeclaim which = 336 }
+		command = { type = trigger which = 302 } 
+		command = { type = relation which = HUN value = -25 } 
+		command = { type = relation which = ROM value = -25 } 
+	}
+	action_c = {
+		name = "300C"
+		ai_chance = 30
+		command = { type = relation which = HUN value = 100 } 
+		command = { type = relation which = ROM value = -50} 
+		command = { type = secedeprovince which = HUN value = 336 }
+		command = { type = independence which = SER value = 1 }
+		command = { type = make_puppet which = SER }
+		command = { type = removeclaim which = 336 } 
+		command = { type = trigger which = 306 } 
+		command = { type = trigger which = 304 } 
+	}
+	action_d = {
+		name = "300D" 
+		ai_chance = 30
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = 100} 
+		command = { type = secedeprovince which = ROM value = 336 }
+		command = { type = independence which = SER value = 1 }
+		command = { type = make_puppet which = SER }
+		command = { type = removeclaim which = 336 } 
+		command = { type = trigger which = 306 } 
+		command = { type = trigger which = 305 } 
+	}
+		action = {
+		name = "300E"
+		ai_chance = 20
+		command = { type = trigger which = 307 } 
+	}
+}
+event = {
+	id = 301
+	random = no
+	save_date = yes
+	country = GER	
+	name = "301NAME"
+	desc = "301DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+	name = "RUTHLESS"
+	ai_chance = 40
+	command = { type = setflag which = Banat1 }
+	command = { type = relation which = HUN value = -10 } 
+	command = { type = relation which = ROM value = -10 } 
+	command = { type = relation which = CRO value = -10 } 
+	command = { type = relation which = SER value = -10 } 
+	command = { type = 	dissent value = 2 }
+	}
+	action_b = {
+	name = "LOCAL"
+	ai_chance = 50
+	command = { type = setflag which = Banat2 }
+	command = { type = 	dissent value = -1 }
+	}
+}
+event = { 
+	id = 303
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+		OR = { 
+		flag = Banat1
+		flag = Banat2 }
+		
+		NOT = { war = { country = GER country = SOV } }
+			OR = { 
+		AND = {
+		event = { id = 301 days = 360 } 
+		flag = Banat1 	
+		}
+		AND = {
+		event = { id = 301 days = 450 } 
+		flag = Banat2 	
+		}
+		}
+	}	
+		
+	name = "303NAME"
+	desc = "303DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 336 } 
+	command = { type = 	dissent value = 1 }
+		}
+	}	
+
+event = {
+	id = 302
+	random = no
+	country = SER
+	style = 2
+	save_date = yes
+
+	name = "302NAME" 
+	desc = "302DESC"
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = headofstate which = 415001 }
+		command = { type = flag_ext which = "_fas" where = SER }
+		command = { type = set_relation which = GER value = 200 }
+		command = { type = set_relation which = ITA value = 150 }
+		command = { type = set_relation which = HUN value = 50 }
+		command = { type = set_relation which = ROM value = 50 }
+		command = { type = set_relation which = BUL value = 30 }
+		command = { type = removecore which = 329 } 
+		command = { type = removecore which = 331 } 
+		command = { type = removecore which = 341 } 
+		command = { type = removecore which = 337 } 
+      	command = { type = dissent value = 15 }
+		}
+	}
+event = {
+	id = 306
+	random = no
+	country = SER
+	style = 2
+	save_date = yes
+
+	name = "302NAME" 
+	desc = "306"
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = headofstate which = 415001 }
+		command = { type = flag_ext which = "_fas" where = SER }
+		command = { type = secedeprovince which = GER value = 336 }
+		command = { type = set_relation which = GER value = 200 }
+		command = { type = set_relation which = ITA value = 150 }
+		command = { type = set_relation which = HUN value = 50 }
+		command = { type = set_relation which = ROM value = 50 }
+		command = { type = set_relation which = BUL value = 30 }
+		command = { type = removecore which = 329 } 
+		command = { type = removecore which = 331 } 
+		command = { type = removecore which = 341 } 
+		command = { type = removecore which = 337 } 
+		command = { type = removecore which = 336 } 
+      	command = { type = dissent value = 20 }
+		}
+	}
+event = { 
+	id = 304
+	random = no
+	country = HUN
+	save_date = yes
+		
+	name = "BANAT"
+	desc = "304DESC"
+	style = 2
+	picture = "news_paper"	
+
+
+	action = {
+	name =  "ACTION_NAME_GREAT"
+	command = { type = addcore which = 336 } 
+		}
+	}	
+event = { 
+	id = 305
+	random = no
+	country = ROM
+	save_date = yes
+		
+	name = "BANAT"
+	desc = "NONE"
+	style = 2
+	picture = "news_paper"	
+
+
+	action = {
+	name =  "ACTION_NAME_GREAT"
+	command = { type = addcore which = 336 } 
+		}
+	
+}	
+event = {
+	id = 307
+	random = no
+	save_date = yes
+	country = GER	
+	name = "307NAME"
+	desc = "307DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+		name = "307A"
+		ai_chance = 20
+		command = { type = trigger which = 301 } 
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = -50 } 
+		command = { type = setflag which = Banat }
+	}
+	action_b = {
+		name = "307B"
+		ai_chance = 30
+		command = { type = relation which = HUN value = 100 } 
+		command = { type = relation which = ROM value = -50} 
+		command = { type = secedeprovince which = HUN value = 336 }
+		command = { type = removeclaim which = 336 } 
+		command = { type = trigger which = 304 } 
+	}
+	action_c = {
+		name = "307C" 
+		ai_chance = 30
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = 100} 
+		command = { type = secedeprovince which = ROM value = 336 }
+		command = { type = removeclaim which = 336 } 
+		command = { type = trigger which = 305 } 
+	}
+}

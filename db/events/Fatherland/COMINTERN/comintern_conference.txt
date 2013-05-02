@@ -1,0 +1,1093 @@
+#############################################
+###### The Vladivostok Conference Chain  
+###### Credits Pako
+#############################################
+
+#############################################
+###### The Vladivostok Conference
+#############################################
+event = {
+        id = 600
+        random = no
+        country = SOV
+		style = 2
+		picture = "news_paper"
+		
+        name = "The Vladivostok Conference"
+        desc = "After the victory of the Communists in the civil war the time has come to unite all the proletarian forces and forge a renovated Comintern !"
+	
+		date = { day = 1 month = april year = 1950 }
+		
+        trigger = {
+                flag = CHC_won_civil_war
+				atwar = no 
+        }
+ 
+        action = {
+                name = "Invite just the Socialist nations"
+				ai_chance = 45
+                command = { type = setflag which = COMINTERN_CONFERENCE }
+				
+				command = { type = domestic which = interventionism value = 7 }
+                command = { type = money value = -500 }
+                command = { type = belligerence value = 1 }
+				command = { type = dissent value = -1 }
+				
+                command = { type = set_relation which = CHC value = 20 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+                command = { type = set_relation which = SIK value = 10 }
+        }
+		action = {
+                name = "Invite all the Communist around the world !"
+				ai_chance = 45
+                command = { type = setflag which = COMINTERN_CONFERENCE }
+				command = { type = setflag which = COMINTERN_CONFERENCE_WORLD }
+				
+				command = { type = domestic which = interventionism value = 8 }
+                command = { type = money value = -700 }
+                command = { type = belligerence value = 3 }
+				command = { type = dissent value = -3 }
+				
+                command = { type = set_relation which = CHC value = 20 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+                command = { type = set_relation which = SIK value = 10 }
+        }
+        action = {
+                name = "No, cancel the conference. The time is not ripe !"
+				ai_chance = 10
+				
+                command = { type = dissent value = 10 }
+				command = { type = domestic which = interventionism value = -3 }
+				
+                command = { type = set_relation which = CHC value = -20 }
+                command = { type = set_relation which = PRK value = -10 }
+                command = { type = set_relation which = MON value = -10 }
+                command = { type = set_relation which = SIK value = -10 }
+                
+        }
+
+}
+#############################################
+###### We have received an invitation
+#############################################
+event = {
+        id = 601
+        random = no
+        country = CHC
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "We have received an invitation"
+        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        style = 0
+ 
+        date = { day = 5 month = april year = 1950 }
+ 
+        action_a = {
+                name = "Let's go!"
+				ai_chance = 90
+				
+				command = { type = setflag which = COMINTERN_CONFERENCE_CHC }
+				
+                command = { type = money value = -50 }
+                command = { type = dissent value = -5 }
+				
+				command = { type = set_relation which = SOV value = 20 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+                command = { type = set_relation which = SIK value = 10 }
+				
+				command = { type = set_domestic which = interventionism value = 7 }
+        }
+		
+		action_b = {
+				name = "No, we must remain in Beijing"
+				ai_chance = 10
+				
+                command = { type = dissent value = 10 }
+				
+                command = { type = set_relation which = SOV value = -20 }
+                command = { type = set_relation which = PRK value = -10 }
+                command = { type = set_relation which = MON value = -10 }
+                command = { type = set_relation which = SIK value = -10 }
+				
+                command = { type = set_domestic which = interventionism value = -5 }
+				
+				command = { type = leave_alliance }
+				command = { type = end_access which = SOV }
+				command = { type = end_non_aggression which = SOV where = CHC }
+				command = { type = end_guarantee which = SOV where = CHC }
+        }
+
+}
+event = {
+        id = 602
+        random = no
+        country = PRK
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "We have received an invitation"
+        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        style = 0
+ 
+        date = { day = 7 month = april year = 1950 }
+ 
+        action_a = {
+                name = "It's near home ... let's go !!!"
+				ai_chance = 90
+				
+				command = { type = setflag which = COMINTERN_CONFERENCE_PRK }
+				
+                command = { type = money value = -50 }
+                command = { type = dissent value = -5 }
+				
+				command = { type = set_relation which = SOV value = 20 }
+                command = { type = set_relation which = CHC value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+                command = { type = set_relation which = SIK value = 10 }
+				
+				command = { type = set_domestic which = interventionism value = 7 }
+        }
+		
+		action_b = {
+				ai_chance = 10
+                name = "No, we don't need it"
+				
+                command = { type = dissent value = 10 }
+				
+                command = { type = set_relation which = SOV value = -20 }
+                command = { type = set_relation which = CHC value = -10 }
+                command = { type = set_relation which = MON value = -10 }
+                command = { type = set_relation which = SIK value = -10 }
+				
+                command = { type = set_domestic which = interventionism value = -5 }
+				
+				command = { type = leave_alliance }
+				command = { type = end_access which = SOV }
+				command = { type = end_non_aggression which = SOV where = PRK }
+				command = { type = end_guarantee which = SOV where = PRK }
+        }
+
+}
+event = {
+        id = 603
+        random = no
+        country = MON
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "We have received an invitation"
+        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        style = 0
+ 
+        date = { day = 9 month = april year = 1950 }
+ 
+        action_a = {
+				ai_chance = 90
+                name = "Take the Horses and ... let's go!"
+				
+				command = { type = setflag which = COMINTERN_CONFERENCE_MON }
+                
+				command = { type = money value = -50 }
+                command = { type = dissent value = -5 }
+				
+				command = { type = set_relation which = SOV value = 20 }
+                command = { type = set_relation which = CHC value = 10 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = SIK value = 10 }
+        }
+		
+		action_b = {
+				ai_chance = 10
+                name = "No, we don't need it ... we are puppets !"
+				
+                command = { type = dissent value = 10 }
+				
+                command = { type = set_relation which = SOV value = 20 }
+				
+				command = { type = dissent value = 10 }
+								
+        }
+
+}
+event = {
+        id = 604
+        random = no
+        country = SIK
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "We have received an invitation"
+        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        style = 0
+ 
+        date = { day = 11 month = april year = 1950 }
+ 
+        action_a = {
+				ai_chance = 90
+                name = "Hey oh ! Let's go !"
+				
+				command = { type = setflag which = COMINTERN_CONFERENCE_SIK }
+				
+                command = { type = money value = -50 }
+                command = { type = dissent value = -5 }
+				
+				command = { type = set_relation which = SOV value = 20 }
+                command = { type = set_relation which = CHC value = 10 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+        }
+		
+		action_b = {
+				ai_chance = 10
+                name = "No, we don't need it"
+				
+                command = { type = dissent value = 10 }
+				
+                command = { type = set_relation which = SOV value = 20 }
+				
+				command = { type = dissent value = 10 }
+								
+        }
+
+}
+event = {
+        id = 605
+        random = no
+        country = TRK
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				ispuppet = SOV
+        }
+ 
+        name = "We have received an invitation"
+        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        style = 0
+ 
+        date = { day = 12 month = april year = 1950 }
+ 
+        action_a = {
+				ai_chance = 90
+                name = "Road to Vladivostok !!!"
+				command = { type = setflag which = COMINTERN_CONFERENCE_TRK }
+                command = { type = money value = -50 }
+                command = { type = dissent value = -5 }
+				command = { type = set_relation which = SOV value = 20 }
+                command = { type = set_relation which = CHC value = 10 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+				command = { type = set_relation which = SIK value = 10 }
+        }
+		
+		action_b = {
+				ai_chance = 10
+                name = "No, we don't need it ... we are puppets !"
+				
+                command = { type = dissent value = 10 }
+				
+                command = { type = set_relation which = SOV value = 20 }
+				
+				command = { type = dissent value = 10 }
+        }
+
+}
+event = {
+        id = 606
+        random = no
+        country = KAZ
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				ispuppet = SOV
+        }
+ 
+        name = "We have received an invitation"
+        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        style = 0
+ 
+        date = { day = 15 month = april year = 1950 }
+ 
+        action_a = {
+				ai_chance = 90
+                name = "Road to Vladivostok !!!"
+				command = { type = setflag which = COMINTERN_CONFERENCE_KAZ }
+                command = { type = money value = -500 }
+                command = { type = dissent value = -5 }
+				command = { type = set_relation which = SOV value = 20 }
+                command = { type = set_relation which = CHC value = 10 }
+                command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = MON value = 10 }
+				command = { type = set_relation which = SIK value = -10 }
+        }
+		
+		action_b = {
+				ai_chance = 10
+                name = "No, we don't need it ... we are puppets !"
+				
+                command = { type = dissent value = 10 }
+				
+                command = { type = set_relation which = SOV value = 20 }
+				
+				command = { type = dissent value = 10 }
+        }
+}
+#############################################
+###### The Conference begins
+#############################################
+event = {
+        id = 607
+        random = no
+        country = SOV
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "The Conference begins"
+        desc = "All delegates are arrived, the Conference can officially begin."
+        style = 0
+ 
+        date = { day = 1 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "Hurrah !!!"
+                command = { type = money value = -100 }
+        }		
+}
+#############################################
+###### Forge a new alliance !
+#############################################
+event = {
+        id = 608
+        random = no
+        country = SOV
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "Forge a new alliance"
+        desc = "We must forge a new Alliance exchanging knowledge and doctrine and training together our armies !"
+        style = 0
+ 
+        date = { day = 3 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                command = { type = belligerence value = 1 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry }
+				
+				command = { type = add_division value = light_armor }
+				command = { type = add_division value = light_armor }
+				command = { type = add_division value = light_armor }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				
+        }		
+}
+event = {
+        id = 609
+        random = no
+        country = CHC
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				flag = COMINTERN_CONFERENCE_CHC
+				event = 608
+        }
+ 
+        name = "Forge new alliance"
+        desc = "We are in !"
+        style = 0
+ 
+        date = { day = 5 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                
+				command = { type = belligerence value = 1 }
+				command = { type = alliance which = SOV }
+				command = { type = relation which = SOV value = 200}
+				command = { type = access which = SOV }
+				command = { type = non_aggression which = SOV where = CHC }
+				command = { type = domestic which = interventionism value = 10 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry }
+				
+				command = { type = add_division value = light_armor }
+				command = { type = add_division value = light_armor }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched			
+        }		
+}
+event = {
+        id = 610
+        random = no
+        country = PRK
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				flag = COMINTERN_CONFERENCE_PRK
+				event = 608
+        }
+ 
+        name = "Forge new alliance"
+        desc = "We are in !"
+        style = 0
+ 
+        date = { day = 5 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                
+				command = { type = belligerence value = 1 }
+				command = { type = alliance which = SOV }
+				command = { type = relation which = SOV value = 200}
+				command = { type = access which = SOV }
+				command = { type = non_aggression which = SOV where = PRK }
+				command = { type = domestic which = interventionism value = 10 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = motorized }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				
+				command = { type = add_division value = light_armor }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched	
+				
+        }		
+}
+event = {
+        id = 611
+        random = no
+        country = MON
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				flag = COMINTERN_CONFERENCE_MON
+				event = 608
+        }
+ 
+        name = "Forge new alliance"
+        desc = "We are in !"
+        style = 0
+ 
+        date = { day = 5 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                
+				command = { type = belligerence value = 1 }
+				command = { type = alliance which = SOV }
+				command = { type = relation which = SOV value = 200}
+				command = { type = access which = SOV }
+				command = { type = non_aggression which = SOV where = MON }
+				command = { type = domestic which = interventionism value = 10 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched	
+
+        }		
+}
+event = {
+        id = 612
+        random = no
+        country = SIK
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				flag = COMINTERN_CONFERENCE_SIK
+				event = 608
+        }
+ 
+        name = "Forge new alliance"
+        desc = "We are in !"
+        style = 0
+ 
+        date = { day = 5 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                
+				command = { type = belligerence value = 1 }
+				command = { type = alliance which = SOV }
+				command = { type = relation which = SOV value = 200}
+				command = { type = access which = SOV }
+				command = { type = non_aggression which = SOV where = SIK }
+				command = { type = domestic which = interventionism value = 10 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched	
+				
+        }		
+}
+event = {
+        id = 613
+        random = no
+        country = TRK
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				flag = COMINTERN_CONFERENCE_TRK
+				event = 608
+        }
+ 
+        name = "Forge new alliance"
+        desc = "We are in !"
+        style = 0
+ 
+        date = { day = 5 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                
+				command = { type = belligerence value = 1 }
+				command = { type = alliance which = SOV }
+				command = { type = relation which = SOV value = 200}
+				command = { type = access which = SOV }
+				command = { type = non_aggression which = SOV where = TRK }
+				command = { type = domestic which = interventionism value = 10 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched	
+				
+        }		
+}
+event = {
+        id = 614
+        random = no
+        country = KAZ
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+				flag = COMINTERN_CONFERENCE_KAZ
+				event = 608
+        }
+ 
+        name = "Forge new alliance"
+        desc = "We are in !"
+        style = 0
+ 
+        date = { day = 5 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "We must forge a new strong workers world alliance !"
+                
+				command = { type = belligerence value = 1 }
+				command = { type = alliance which = SOV }
+				command = { type = relation which = SOV value = 200}
+				command = { type = access which = SOV }
+				command = { type = non_aggression which = SOV where = KAZ }
+				command = { type = domestic which = interventionism value = 10 }
+				
+				command = { type = add_division value = hq }
+				
+				command = { type = add_division value = militia }
+				command = { type = add_division value = militia }
+								
+				command = { type = add_division value = infantry }
+				
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched	
+				
+        }		
+}
+#############################################
+###### Foreign Policy
+#############################################
+event = {
+        id = 615
+        random = no
+        country = SOV
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "Foreign Policy"
+        desc = "Where spread the revolution ?"
+        style = 0
+ 
+        date = { day = 10 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 45
+                name = "Focus on Asia"
+                command = { type = setflag which = COMINTERN_CONFERENCE_ASIA }
+        }	
+        action_a = {
+				ai_chance = 45
+                name = "Focus on Europe"
+                command = { type = setflag which = COMINTERN_CONFERENCE_EUROPE }
+        }
+        action_a = {
+				ai_chance = 10
+                name = "Assume a defensive position"
+                command = { type = setflag which = COMINTERN_CONFERENCE_NOPE }
+				command = { type = dissent value = 10 }
+        }		
+}
+#############################################
+###### Economic Policy
+#############################################
+event = {
+        id = 616
+        random = no
+        country = SOV
+        trigger = {
+            flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "Economic Policy"
+        desc = "We have to define an economic policy towards the fascist and capitalist countries ... no trade with them!"
+        style = 0
+ 
+        date = { day = 20 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "End every trade with the capitalist and the fascists !"
+                
+				command = { type = relation which = USA value = -50 }
+				command = { type = relation which = ENG value = -50 }
+				command = { type = relation which = U01 value = -50 }
+				
+				command = { type = relation which = GER value = -50 }
+				command = { type = relation which = ITA value = -50 }
+
+				command = { type = end_trades which = SOV where = USA }
+				command = { type = end_trades which = CHC where = USA }
+				command = { type = end_trades which = MON where = USA }
+				command = { type = end_trades which = SIK where = USA }		
+				command = { type = end_trades which = PRK where = USA }
+				
+				command = { type = end_trades which = SOV where = ENG }
+				command = { type = end_trades which = CHC where = ENG }
+				command = { type = end_trades which = MON where = ENG }
+				command = { type = end_trades which = SIK where = ENG }		
+				command = { type = end_trades which = PRK where = ENG }				
+				
+				command = { type = end_trades which = SOV where = U01 }
+				command = { type = end_trades which = CHC where = U01 }
+				command = { type = end_trades which = MON where = U01 }
+				command = { type = end_trades which = SIK where = U01 }		
+				command = { type = end_trades which = PRK where = U01 }	
+				
+				command = { type = end_trades which = SOV where = GER }
+				command = { type = end_trades which = CHC where = GER }
+				command = { type = end_trades which = MON where = GER }
+				command = { type = end_trades which = SIK where = GER }		
+				command = { type = end_trades which = PRK where = GER }		
+
+				command = { type = end_trades which = SOV where = ITA }
+				command = { type = end_trades which = CHC where = ITA }
+				command = { type = end_trades which = MON where = ITA }
+				command = { type = end_trades which = SIK where = ITA }		
+				command = { type = end_trades which = PRK where = ITA }					
+
+        }		
+}
+#############################################
+###### Conference Ended
+#############################################
+event = {
+        id = 617
+        random = no
+        country = SOV
+        trigger = {
+            flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "Conference Ended"
+        desc = "The Conference has ended"
+        style = 0
+ 
+        date = { day = 25 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "A really success !"
+                command = { type = dissent value = -3 }
+        }		
+}
+#############################################
+###### The Reactions
+#############################################
+event = {
+        id = 618
+        random = no
+        country = GER
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "German Reaction"
+        desc = "The Vladivostok Conference is over, our spies have informed us that the socialist countries are rearming"
+        style = 0
+ 
+        date = { day = 27 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 90
+                name = "Just condamn the Conference"				
+                command = { type = dissent value = 1 }	
+				command = { type = belligerence value = 1 }
+        }	
+        action_b = {
+				ai_chance = 10
+                name = "Crush Them before they become too strong !"
+                command = { type = war which = SOV }
+        }			
+}
+event = {
+        id = 619
+        random = no
+        country = USA
+        trigger = {
+                flag = COMINTERN_CONFERENCE
+        }
+ 
+        name = "Allies Reaction"
+        desc = "The Conference has ended"
+        style = 0
+ 
+        date = { day = 29 month = may year = 1950 }
+ 
+        action_a = {
+				ai_chance = 30
+                name = "Just Condamn the Conference"
+                command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }	
+		action_b = {
+				ai_chance = 60
+                name = "Guaranteed the indipendence of our friends in Asia !"
+            
+			    command = { type = guarantee which = USA where = KOR }
+				command = { type = guarantee which = USA where = JAP }
+				command = { type = guarantee which = USA where = CHI }
+				command = { type = guarantee which = USA where = PHI }
+				
+        }	
+        action_c = {
+				ai_chance = 10
+                name = "Crush Them before they become too strong !"
+                command = { type = war which = SOV }
+        }			
+}
+#############################################
+###### Spread the Revolutions !
+#############################################
+event = {
+        id = 620
+        random = no
+        country = SOV
+        trigger = {
+                flag = COMINTERN_CONFERENCE_ASIA
+        }
+ 
+        name = "Spread the Revolution in Asia"
+        desc = "Our spies have done a great job, we are ready to launch a coordinated general uprising in asia!"
+        style = 0
+ 
+		date = { day = 1 month = september year = 1950 }
+		offset = 180
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+        action_a = {
+				ai_chance = 80
+                name = "Rise the Partisan !"
+				
+				command = { type = dissent value = -1 }
+				command = { type = trigger value = 621 }							
+				
+        }	
+		action_b = {
+				ai_chance = 20
+                name = "Attack directly !"
+                command = { type = war which = KOR }
+				command = { type = war which = U03 }
+				command = { type = war which = IND }
+				command = { type = sleepevent value = 621 }	
+        }	
+		
+}
+event = {
+        id = 621
+        random = no
+        country = U03
+        trigger = {
+                flag = COMINTERN_CONFERENCE_ASIA
+				event = 620
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in asia!"
+        style = 0
+ 
+		date = { day = 1 month = september year = 1950 }
+		offset = 180
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "Civil War !"
+				command = { type = 	civil_war which = U72 }
+				#command = { type = dissent value = 80 }
+        }	
+		
+}
+event = {
+        id = 622
+        random = no
+        country = IND
+        trigger = {
+                flag = COMINTERN_CONFERENCE_ASIA
+				event = 620
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in asia!"
+        style = 0
+ 
+		date = { day = 1 month = september year = 1950 }
+		offset = 180
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "Civil War !"
+				
+				command = { type = dissent value = 80 }
+        }	
+		
+}
+event = {
+        id = 623
+        random = no
+        country = KOR
+        trigger = {
+                flag = COMINTERN_CONFERENCE_ASIA
+				event = 620
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in asia!"
+        style = 0
+ 
+		date = { day = 1 month = september year = 1950 }
+		offset = 180
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+        action_a = {
+				ai_chance = 100
+                name = "Communist Revolt !"				
+				command = { type = dissent value = 40 }
+        }	
+		
+}
+event = {
+        id = 624
+        random = no
+        country = U01
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+        }
+ 
+        name = "Communist Revolt in the Free France !"
+        desc = "It has spread a general Communist-style rebellion in the Republique !"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action_a = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 50 }
+        }	
+}
+event = {
+        id = 626
+        random = no
+        country = BRA
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "It has spread a general Communist-style rebellion in the Empire!"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action_a = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 50 }
+        }	
+}
+event = {
+        id = 627
+        random = no
+        country = MEX
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "Viva la Revolucion Comunista !"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action_a = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 50 }
+        }	
+}event = {
+        id = 628
+        random = no
+        country = CUB
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "Viva la Revolucion Comunista !"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action_a = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 50 }
+        }	
+}
+event = {
+        id = 629
+        random = no
+        country = ENG
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+        }
+ 
+        name = "Communist Revolt in the Empire !"
+        desc = "It has spread a general Communist-style rebellion in the Empire!"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action_a = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 50 }
+        }	
+}
+event = {
+        id = 630
+        random = no
+        country = SOV
+        trigger = {
+                flag = COMINTERN_CONFERENCE_EUROPE
+        }
+ 
+        name = "We must destroy the Nazi"
+        desc = "The defeat in the last war should finally be vindicated ... let's go to Berlin!"
+        style = 0
+ 
+		date = { day = 1 month = september year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action_a = {
+				ai_chance = 40
+                name = "Attack the Reich ! Spread the WW3 !"
+                command = { type = war which = GER }
+        }	
+		action_b = {
+				ai_chance = 60
+                name = "No, the time is not now !"
+                command = { type = dissent value = 20 }
+        }			
+}

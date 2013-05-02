@@ -1,0 +1,40 @@
+#####################################
+# Fatherland events
+#####################################
+
+event = "db\events\fatherland\credits.txt"
+
+# GER
+event = "db\events\fatherland\ger\ost.txt"
+event = "db\events\fatherland\ger\west.txt"
+event = "db\events\fatherland\ger\hitlerdied.txt"
+event = "db\events\fatherland\ger\generalgovernment.txt"
+#event = "db\events\fatherland\ger\volksgrenadier.txt"
+
+# EUROPE
+event = "db\events\fatherland\europe\freefrance.txt"
+event = "db\events\fatherland\europe\italy.txt"
+#event = "db\events\fatherland\europe\nationalist spain.txt"
+event = "db\events\fatherland\europe\serbia.txt"
+event = "db\events\fatherland\europe\transylvania.txt"
+event = "db\events\fatherland\europe\vichyfrance.txt"
+
+
+# CRISIS
+event = "db\events\fatherland\crisis\abadan_crisis.txt"
+event = "db\events\fatherland\crisis\centralasia.txt"
+
+# ASIA
+event = "db\events\fatherland\asia\china.txt"
+event = "db\events\fatherland\asia\indochina.txt"
+
+# COMINTERN
+event = "db\events\fatherland\comintern\comintern_conference.txt"
+
+# Secret Weapons
+event = "db\events\secret_weapon_events.txt"
+
+#Mobilization Events
+event = "db\events\Mobilization.txt"
+event = "db\events\Mobilization_events.txt"
+event = "db\events\generic_decisions.txt"

@@ -1,0 +1,16 @@
+event = { 
+id = 1
+picture = "news_paper"
+style = 1
+
+trigger = { ai = no }
+
+date = { day = 3 month = january year = 1948 }	
+
+name = CREDITS1
+desc = CREDITS2
+action = {
+name = ACTION_NAME_HURRAH
+	command = { }
+	}
+}

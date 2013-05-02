@@ -1,0 +1,18 @@
+#Event ID Ranges:
+
+#	1 	# Credits
+# 200-299 # Generalplan Ost events
+# 308-309 # Free France
+# 310-324 # Other France
+# 300-307 # Banat
+# 400-450 # Western Europe events
+# 500-504 # Free France
+# 600-6?? # Comintern
+# 90000000-90000037 # Transylvania
+# 90000100-90000114 # Abadan crisis
+# 90000200-90000299 # Volksgrenadier
+# 90000300-90000399 # General Government
+# 90000400-90000499 # Central Asia
+# 90000500-90000599 # Hitler's death
+# 8200030-82000?? # China
+# 90001000-90001??? # Indochina

@@ -1,0 +1,98 @@
+########################
+# Cambodia and Cochinchina
+########################
+# 90001000 # The Treaty of Franco-Cambodian friendship (CMB)
+# 90001001 # The Treaty of Franco-Cambodian friendship (Indochinese Union)
+# 90001002 # The Vietnamese reaction to the acknoledgement of cambodian claims (VIE)
+########################################
+# The French in Indochina
+########################################
+# 90001003 # U01 # The Treaty of Fontainebleau - What to do now?
+# 90001004 # U03 # Orders from the Capital
+# 90001005 #  # 
+# 90001006 #  # 
+# 90001007 #  # 
+# 90001008 #  # 
+# 90001009 #  # 
+# 90001010 #  # 
+# 90001011 #  # 
+# 90001012 #  # 
+# 90001013 #  # 
+# 90001014 #  # 
+########################################
+event = {
+id = 90001000
+random = no
+country = CMB
+style = 2
+picture = "news_paper"
+
+trigger = {
+exists = U03
+ispuppet = CMB
+	}
+
+
+date = { day = 8 month = november year = 1949 }	
+
+name = "The Treaty of Franco-Cambodian friendship"
+desc = "We are now autonomous inside the Indochinese Union for more than 3 years, and our relations with the French are better than ever. Howewer, we are now preparing for our full independance, wich shall take place in 1951, and we should ask the french to recognize now ours claims to Cochinchina if we want to ever take it back..."
+
+
+	action_a = {
+		ai_chance = 100
+		name = "Sign the Treaty, and ask the French to acknoledge our claims!"
+	        command = { type = dissent value = -5 }
+            command = { type = addcore   which = 1399  }
+            command = { type = addcore   which = 1403  }
+			command = { type = trigger which = 90001001 }
+		}
+
+	action_b = {
+
+		ai_chance = 0
+		name = "Sign it without mentionning Cochinchina."
+	        command = { type = dissent value = 1 }
+			command = { type = relation which = U03 value = 25 }
+		}
+}
+event = {
+	id = 90001001 
+	random = no
+	country = U03	
+	
+	name = "The Treaty of Franco-Cambodian friendship"
+	desc = "Our Cambodians friends want to celebrate our friendship, but they add a clause wich recognize their claims to Cochinchina Province, that we have already promised to the Viet. They have howewer reals historic and cultural links, and that will let us decide in due time..."
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+	name = "Recognize them, we will decide whom to give the province when we leave!"
+	ai_chance = 100
+	command = { type = setflag which = CMBCLAIMs }
+	command = { type = relation which = CMB value = 50 }
+	command = { type = trigger which = 90001002 }	
+	}
+	action_b = {
+	name = "No, that would be betraying the Treaty of Fontainebleau."
+	ai_chance = 0
+	command = { type = relation which = VIE value = 25 }
+	command = { type = relation which = CMB value = -25 }
+	}
+}
+event = {
+	id = 90001002 
+	random = no
+	country = VIE	
+	
+	name = "The Vietnamese reaction"
+	desc = "The french acknowledge the treacherous cambodians claims on Cochinchina!"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "How they dare? Saigon is Viet!"
+		command = { type = relation which = U03 value = -50 }
+		command = { type = relation which = CMB value = -50 }
+		}
+}

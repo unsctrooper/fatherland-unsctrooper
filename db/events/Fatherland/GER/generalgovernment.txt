@@ -1,0 +1,390 @@
+# 90000300 # GER # Future of General Government
+# 90000301 # GER # Galicia
+# 90000302 # GER # Goralenland
+# 90000303 # U44 # Goralenland to Germany 
+# 90000304 # GER # Goralenland is German
+# 90000305 # U44 # Galicia to Germany
+# 90000306 # GER # Galician independence
+# 90000307 # U44 # Krakau district to Germany
+# 90000308 # GER # Annexation of General Government
+# 90000309 # U44 # Transfer Waffen-SS (unfinished)
+
+
+
+event = {
+	id = 90000300
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 235 data = U44 }
+		random = 50
+	}	
+	
+	name = EVT_90000300_NAME
+	desc = EVT_90000300_DESC
+	style = 2
+	picture = "generalgovernment"	
+
+	date = { day = 1 month = october year = 1951 } #october 1951
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000300_A # Status quo
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	}
+	action = {
+	name = EVT_90000300_B # Annexation
+	ai_chance = 20
+	command = { type = 	dissent value = 7 }
+	command = { type = setflag which = GG1 }
+	}
+	action = {
+	name = EVT_90000300_C # South Poland
+	ai_chance = 60
+	command = { type = 	dissent value = 2 } 
+	command = { type = setflag which = GG2 }
+	}
+}
+event = {
+	id = 90000301
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 242 data = U44 }
+		event = 90000300
+	}	
+	
+	name = EVT_90000301_NAME
+	desc = EVT_90000301_DESC
+	style = 2
+	picture = "galicia"
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000301_A # Annex it!
+	ai_chance = 25
+	trigger = { OR = { 
+	flag = GG1 
+	flag = GG2 } }
+	command = { type = 	dissent value = 5 }
+	command = { type = setflag which = Galizien }
+	}
+	action = {
+	name = EVT_90000301_B # Civil Administration
+	ai_chance = 40
+	command = { } 
+	}
+	action = {
+	name = EVT_90000301_C # Give it to Ukraine
+	ai_chance = 40
+	trigger = { puppet = { country = UKR country = GER } }
+	command = { type = trigger which = 295 } 
+	}
+	action = {
+	name = EVT_90000301_D # Give them autonomy
+	ai_chance = 60
+	command = { type = 	dissent value = -1 }
+	command = { type = setflag which = GaliciaIndependence }
+	}
+}
+event = {
+	id = 90000302
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 236 data = U44 }
+		event = 90000300
+	}	
+	
+	name = EVT_90000302_NAME
+	desc = EVT_90000302_DESC
+	style = 2
+	picture = "gorals"
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000302_A # Annex it!
+	ai_chance = 50
+	trigger = { OR = {
+	flag = GG1 
+	flag = GG2 
+	} }
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 236 } # Goralenland
+	command = { type = setflag which = NoGoralenland }
+	}
+	action = {
+	name = EVT_90000302_B # Goral independence 1
+	ai_chance = 60
+	trigger = { event = 281 } # Succesful Goral census
+	command = { type = 	dissent value = -1 }  
+	command = { type = setflag which = Goralenland }
+	}
+	action = {
+	name = EVT_90000302_C # Goral independence 2
+	ai_chance = 20
+	trigger = { NOT = { event = 281  } } # No succesful Goral census
+	command = { type = setflag which = Goralenland }
+	}
+	action = {
+	name = EVT_90000302_D # Civil administration
+	ai_chance = 20
+	trigger = { NOT = { flag = GG1 } }
+	trigger = { NOT = { flag = GG2 } }
+	command = { }
+	}
+}
+event = {
+	id = 90000303 # Goralenland to Germany
+	random = no
+	country = U44
+	
+	trigger = {
+				OR = { 
+				flag = Goralenland
+				flag = NoGoralenland
+				}
+	}	
+	
+	name = EVT_90000303_NAME
+	desc = EVT_90000303_DESC
+	style = 2
+	picture = "gorals"	
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_OK
+	command = { type = removeclaim which = 236 }
+	command = { type =	secedeprovince which = GER value = 236 }
+	}
+}
+event = {
+	id = 90000304 # Future of Goralenland
+	random = no
+	country = GER
+	
+	trigger = {
+				event = 90000303
+	}	
+	
+	name = EVT_90000304_NAME
+	desc = EVT_90000304_DESC
+	style = 2
+	picture = "gorals"	
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_OK
+	trigger = { flag = NoGoralenland }
+	command = { type = addclaim which = 236 }
+	command = { type = clrflag which =  NoGoralenland }
+	}
+	action = {
+	name = EVT_90000304_B
+	trigger = { flag = Goralenland }
+	command = { type = independence which = U62  value = 1 }
+	command = { type = 	make_puppet which = U62 }
+	command = { type = clrflag which =  Goralenland }
+	}
+}
+event = {
+	id = 90000305 # Galicia to Germany
+	random = no
+	country = U44
+	
+	trigger = {
+				OR = { 
+				flag = Galizien
+				flag = GaliciaIndependence
+				}
+	}	
+	
+	name = EVT_90000305_NAME
+	desc = EVT_90000305_DESC
+	style = 2
+	picture = "galicia"
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_OK
+	command = { type = removeclaim which = 239 }
+	command = { type = removeclaim which = 238 }
+	command = { type = removeclaim which = 242 }
+	command = { type = removeclaim which = 240 }
+	command = { type = removeclaim which = 241 }
+	command = { type = removeclaim which = 300 }
+	command = { type = removeclaim which = 301 }
+	command = { type =	secedeprovince which = GER value = 239 }
+	command = { type =	secedeprovince which = GER value = 238 }
+	command = { type =	secedeprovince which = GER value = 242 }
+	command = { type =	secedeprovince which = GER value = 240 }
+	command = { type =	secedeprovince which = GER value = 241 }
+	command = { type =	secedeprovince which = GER value = 300 } # In case of Transylvanian war gains
+	command = { type =	secedeprovince which = GER value = 301 }
+	}
+}
+event = {
+	id = 90000306 # Future of Galicia
+	random = no
+	country = GER
+	
+	trigger = {
+				event = 90000305
+	}	
+	
+	name = EVT_90000306_NAME
+	desc = EVT_90000306_DESC
+	style = 2
+	picture = "galicia"
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_OK
+	trigger = { flag = Galizien }
+	command = { type =  addclaim which = 238 }
+	command = { type =	addclaim which = 239 }
+	command = { type =	addclaim which = 240 }
+	command = { type =	addclaim which = 241 }
+	command = { type =	addclaim which = 242 }
+	command = { trigger = { control = { province = 300 data = -1 } }  type = addclaim which = 300 }
+	command = { trigger = { control = { province = 301 data = -1 } } type =	addclaim which = 301 }
+	command = { type = clrflag which =  Galizien }
+	}
+	action = {
+	name = EVT_90000306_B
+	trigger = { flag = GaliciaIndependence }
+	command = { type = independence which = U54  value = 1 }										#U54 needs to be reworked...
+	command = { type = 	make_puppet which = U54 }
+	command = { type = clrflag which =  Galizien }
+	command = { type = clrflag which =  GaliciaIndependence }
+	}
+}
+event = {
+	id = 90000307 # Krakau district to Germany
+	random = no
+	country = U44
+	
+	trigger = {
+				OR = { 
+				flag = GG1
+				flag = GG2
+				}
+				event = 90000302
+	}	
+	
+	name = EVT_90000307_NAME
+	desc = EVT_90000307_DESC
+	style = 2
+	picture = "generalgovernment"														#picture of Krakau
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_OK
+	command = { type = removeclaim which = 235 }
+	command = { type = removeclaim which = 237 }
+	command = { type =	secedeprovince which = GER value = 235 }
+	command = { type =	secedeprovince which = GER value = 237 }
+	}
+}
+event = {
+	id = 90000308 # 
+	random = no
+	country = GER
+	
+	trigger = {
+				event = 90000307
+	}	
+	
+	name = EVT_90000308_NAME
+	desc = EVT_90000308_DESC
+	style = 2
+	picture = "generalgovernment"
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_GREAT
+	command = { type =  addclaim which = 235 }
+	command = { type =	addclaim which = 237 }
+	command = { trigger = { flag = GG1 } type =	 addclaim which = 234 }
+	command = { trigger = { flag = GG1 } type =	 addclaim which = 246 }
+	command = { trigger = { flag = GG1 } type =	 addclaim which = 243 }
+	command = { trigger = { flag = GG1 } type =	 addclaim which = 233 }
+	command = { trigger = { flag = GG1 } type =	 addclaim which = 232 }
+	command = { trigger = { flag = GG1 } type =	 inherit which = U44 value = 1 }
+	command = { type = clrflag which =  GG1 }
+	command = { type = clrflag which =  GG2 }
+	}
+}
+#event = {
+#	id = 90000309 # Transfer of the "14. Galizische SS-Freiw.-Div."
+#	random = no
+#	country = U44
+#	
+#	trigger = {
+#		OR = {
+#			AND = { 
+#			control = { province = 240 data = U54 }
+#			alliance = { country = GER country = U54 }
+#				}
+#			AND = { 
+#			control = { province = 240 data = UKR }
+#			alliance = { country = GER country = UKR }
+#				}
+#			control = { province = 240 data = GER }
+#			}
+#	}	
+#	
+#	name = EVT_90000309_NAME
+#	desc = EVT_90000309_DESC
+#	style = 2
+#	picture = "galiciaSS"
+#
+#	date = { day = 1 month = january year = 1948 }
+#	offset = 1
+#	deathdate = { day = 30 month = december year = 1963 }
+#
+#	action = {
+#	name = ACTION_NAME_OK
+#	trigger = { control = { province = 240 data = UKR } }
+#	command = { type = switch_allegiance which = 14502 value = 2	where = UKR }
+#	}
+#	action = {
+#	name = ACTION_NAME_OK
+#	trigger = { control = { province = 240 data = U54 } }
+#	command = { type = switch_allegiance which = 14502 value = 2	where = U54 }
+#	}
+#	action = {
+#	name = ACTION_NAME_OK
+#	trigger = { control = { province = 240 data = GER } }
+#	command = { type = switch_allegiance which = 14502 value = 2	where = GER }
+#	}
+#}

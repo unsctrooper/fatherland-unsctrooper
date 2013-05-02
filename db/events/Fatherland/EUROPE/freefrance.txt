@@ -1,0 +1,660 @@
+########################
+# Plan Marshall
+########################
+# 500 # Plan Marshall (US)
+# 501 # The US aid (Free France)
+# 502 # The French application (US)
+# 503 # The American answer - YES (Free France)
+# 504 # The American answer - NO (Free France)
+########################################
+# Free France (U01)
+########################################
+# 308 # U01 # De Gaulle's Appeal
+# 309 # U01 # Move the Capital - Fatherland
+# 310 # U01 # The Home of the French Nation
+# 311 # U01 # A Tunisian Province?
+# 317 # U01 # The Morocco Protectorate
+# 318 # MOR # A New Statut
+# 319 # GER # Mohammed V seeks asylum
+# 320 # U01 # The Moroccan Uprising
+# 321 # MOR # Independance
+# 322 # U01 # Morocco is winning
+# 323 # U01 # Moroccan rebellion crushed
+# 324 # MOR # A New Marocco (Peaceful independance)
+########################################
+
+event = {
+	id = 500
+	random = no
+	country = USA
+	
+	decision = {  		
+		NOT = {		
+				war = { country = SOV country = GER }
+				war = { country = ENG country = GER }
+				war = { country = U01 country = GER }
+				war = { country = USA country = JAP }
+		}
+	}
+	
+	decision_trigger = {
+					government = democratic
+	}
+	
+
+	name = "500NAME"
+	desc = "500DESC"
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 10 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		ai_chance = 100
+		command = { type = relation which = ENG value = 15 }
+		command = { type = relation which = U01 value = 15 }
+		command = { type = trigger which = 501 }
+		command = { type = relation which = ICL value = 15 }
+		command = { type = relation which = TUR value = 10 }
+		command = { type = relation which = IRE value = 10 }
+		command = { type = relation which = GER value = -25 }
+		command = { type = relation which = ITA value = -15 }
+		command = { type = relation which = FRA value = -10 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+}
+
+event = {
+	id = 501
+	random = no
+	country = U01
+	name = "501NAME"
+	desc = "501DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_GREAT
+			ai_chance = 90
+		command = { type = relation which = USA value = 50 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = trigger which = 502 }
+	}
+		action_b = {
+			ai_chance = 10
+		name = "501REFUSE"
+		command = { type = relation which = USA value = -50 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 502
+	random = no
+	country = USA	
+	name = "502NAME"
+	desc = "502DESC"
+	style = 2
+	picture = "lend_lease"	
+
+	action_a = {
+	name = "502A"
+	ai_chance = 100
+	command = { type = trigger which = 503 }
+	command = { type = relation which = U01 value = 10 } 
+	command = { type = construct which = ic where = 1832 value = -5 }
+	command = { type = construct which = ic where = 1805 value = -5 }
+	command = { type = construct which = ic where = 1889 value = -5 }
+	command = { type = construct which = ic where = 1846 value = -5 }
+	}
+	action_b = {
+	name = "502B"
+	ai_chance = 0
+	command = { type = relation which = U01 value = -100 } 
+	}
+}
+
+event = {
+	id = 503
+	random = no
+	country = U01
+
+	name = "503NAME"
+	desc = "503DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 727 value = 5 }
+		command = { type = construct which = ic where = 728 value = 5 }
+		command = { type = construct which = ic where = 734 value = 5 }
+		command = { type = construct which = ic where = 978 value = 5 }
+	}
+}
+
+event = {
+	id = 504
+	random = no
+	country = U01
+
+	name = "504NAME"
+	desc = "504DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = 	leave_alliance }
+	}
+}
+event = {
+id = 308
+country = U01
+persistent = yes
+style = 2
+picture = "Appel_de_Gaulle"
+
+trigger = {
+	day = 18
+	month = 6
+	NOT = {
+		day = 19
+		}
+	NOT = {
+		month = 7
+		}
+	}
+
+date = { day = 0 month = january year = 1936 }
+offset = 1
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "308NAME"
+desc = "308DESC"
+
+action_a = {
+name = "308A"
+command = { type = dissent value = -1 }
+command = { type = add_division value = militia }
+command = { type = manpowerpool value = 30 }
+}
+}
+
+event = {
+id = 309
+random = no
+country = U01
+
+decision = {
+NOT = { capital = { province = 55 data = U01 } } #Paris is not the capital of Free France
+		
+	}
+	
+decision_trigger = {
+	    control = { province = 978 data = U01 } #Free France controls Dakar
+		owned = { province = 978 data = U01 } #Free France controls Dakar
+		NOT = { capital = { province = 978 data = U01 } } #Dakar is not the capital of Free France
+		control = { province = 727 data = U01 } #Free France controls Algiers
+		owned = { province = 727 data = U01 } #Free France controls Algiers
+		NOT = { capital = { province = 727 data = U01 } } #Algiers is not the capital of Free France
+		NOT = { control = { province = 55 data = U01 } } #Free France does not controls Paris
+	}
+
+trigger = {
+		NOT = { capital = { province = 55 data = U01 } }
+		OR = {
+			AND = {
+	      	control = { province = 978 data = U01 } #Free France controls Dakar
+			owned = { province = 978 data = U01 } #Free France controls Dakar
+			NOT = { capital = { province = 978 data = U01 } } #Dakar is not the capital of Free France
+			NOT = { control = { province = 55 data = U01 } } #Free France does not controls Paris
+			}
+	      	AND = {
+			control = { province = 727 data = U01 } #Free France controls Algiers
+			owned = { province = 727 data = U01 } #Free France controls Algiers
+			NOT = { capital = { province = 727 data = U01 } } #Algiers is not the capital of Free France
+			NOT = { control = { province = 55 data = U01 } } #Free France does not controls Paris
+			}
+		} 
+	}
+
+date = { day = 2 month = january year = 1936 }
+offset = 60
+deathdate = { day = 30 month = december year = 1963 }	
+
+name = "309NAME"
+desc = "309DESC"
+style = 2
+picture = "news_paper"
+
+action_a = {
+ai_chance = 80
+name = "309A"
+command = { type = supplies value = -100  }
+command = { type = waketeam which =  820015 }
+command = { type = capital which = 727 } # Algiers
+command = { type = addcore which = 727 } # Algiers
+}
+
+action_b = {
+ ai_chance = 20
+ name = "309B"
+command = { type = supplies value = -100 }
+command = { type = waketeam which =  820014 }
+command = { type = capital which = 978 } # Dakar
+command = { type = addcore which = 978 } # Dakar
+}
+}
+
+event = {
+id = 310
+random = no
+country = U01
+style = 2
+picture = "news_paper"
+
+trigger = {
+exists = FRA
+	NOT = { 
+	ispuppet = U01
+	atwar = U01
+	}
+}
+
+
+	name = "The Home of the French Nation"
+	desc = "After the Fall of mainland France in 1940, the Free French governement finally regain a part of de jure metropolitan territories: the departements of Algeria. Howewer, the locals indigenous, if not hostiles, are not that happy by the Free French presence. Perhaps with a small improvement of their living conditions and the help of the pied-noir settlers we could integrate them in the National Community?"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 1 month = december year = 1960 }
+
+	action_a = {
+		ai_chance = 65
+		name = "Integrate them at all costs, we are all Frenchs!"
+	        command = { type = set_domestic which = freedom value = 8  }
+                command = { type = addcore   which = 727  }
+                command = { type = addcore   which = 728  }
+                command = { type = addcore   which = 729  }
+                command = { type = addcore   which = 730  }
+                command = { type = addcore   which = 731  }
+                command = { type = addcore   which = 732  }
+                command = { type = addcore   which = 733  }
+                command = { type = addcore   which = 734  }
+                command = { type = addcore   which = 735  }
+                command = { type = addcore   which = 736  }
+                command = { type = addcore   which = 743  }
+				command = { type = wakeminister which = 820091 }
+				command = { type = wakeminister which = 820092 }
+				command = { type = wakeleader which = 820097 }
+				command = { type = setflag which = Assimilation1 }
+				command = { type = money value = -1000  }
+		}
+
+	action_b = {
+
+		ai_chance = 35
+		name = "France is so close... I won't spend any money on Algeria."
+	        command = { type = dissent value = 1 }
+				command = { type = money value = 100  }
+		}
+}
+
+event = {
+id = 311
+random = no
+country = U01
+style = 2
+picture = "news_paper"
+
+trigger = {
+exists = FRA
+event = 310
+flag = Assimilation1
+}
+
+
+	name = "A new Tunisian Province?"
+	desc = "The Beylicat of Tunis is less and less popular, thanks to a better treatment of the locals indigenous by the French authorities. With the influx of the refugees from Vichy 'France' established there and the support of the old 'pieds-noirs' community, we could very well abolish the protectorate and integrate Tunisia in de jure France. Howewer, it would mean give to the locals Arabs and ethnics frenchs equals rights, including voting right, to placate them."
+	
+	date = { day = 1 month = january year = 1951 }
+	offset = 90
+	deathdate = { day = 1 month = december year = 1960 }
+
+	action_a = {
+		ai_chance = 65
+		name = "Integrate them at all costs, we are all Frenchs!"
+                command = { type = addcore   which = 740  }
+                command = { type = addcore   which = 741  }
+                command = { type = addcore   which = 742  }
+                command = { type = addcore   which = 744  }
+                command = { type = addcore   which = 745  }
+                command = { type = addcore   which = 746  }
+                command = { type = addcore   which = 747  }
+                command = { type = addcore   which = 748  }
+                command = { type = addcore   which = 749  }
+				command = { type = wakeminister which = 820093 }
+				command = { type = dissent value = 5 }
+				command = { type = money value = -2000  }
+				command = { type = clrflag which = Assimilation1 }
+				command = { type = setflag which = Assimilation1_1 }
+		}
+
+	action_b = {
+
+		ai_chance = 35
+		name = "Citizenship? Please, veto it quickly."
+	        command = { type = dissent value = 1 }
+			command = { type = money value = 100  }
+			command = { type = clrflag which = Assimilation1 }
+			command = { type = setflag which = Assimilation1_2 }
+		}
+}
+event = {
+	id = 317
+	random = no
+	save_date = yes
+	country = U01
+	
+	decision = {			
+		NOT = {		
+				exists = MOR		
+		}		
+	}
+	decision_trigger = {
+		NOT = { war = { country = U01 country = FRA } }
+	}
+	
+	name = "The Morocco Protectorate"
+	desc = "Morocco is a french protectorate and country's soldiers fought vaillantly in both World War in the name of our Republic, but now that we are at peace, the Sultan Mohammed Ben Youssef is joining the nationalists, in a threatening move. The Pasha of Marrakesh, El Glaoui, have an interesting proposition: make him Grand Vizir, replace the current Sultan, and give the protectorate more freedom in its domestic affair, while keeping an important role in the army and control of the kingdom's diplomatics relations."
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_bananawars"
+
+	trigger = {
+		NOT = { war = { country = U01 country = FRA } }
+	}
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 20
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "A most clever move!"
+		ai_chance = 60
+		command = { type = removeclaim which = 721 }
+		command = { type = removeclaim which = 717 }
+		command = { type = removeclaim which = 724 }
+		command = { type = removeclaim which = 718 }
+		command = { type = removeclaim which = 722 }
+		command = { type = removeclaim which = 725 }
+		command = { type = removeclaim which = 726 }
+		command = { type = removeclaim which = 723 }
+		command = { type = removeclaim which = 987 }
+		command = { type = removeclaim which = 715 }
+		command = { type = removeclaim which = 988 }
+		command = { type = removeclaim which = 989 }
+		command = { type = removeclaim which = 719 }
+		command = { type = removeclaim which = 716 }
+		command = { type = removeclaim which = 720 }
+		command = { type = independence which = MOR value = 1 }
+		command = { type = make_puppet which = MOR } 
+		command = { type = trigger which = 318 }
+		command = { type = relation which = USA value = 25 } #anti-colonialist stance of the USA
+		command = { type = relation which = ENG value = -5 } #UK see it as supporting similar demands from theirs africans colonies
+		command = { type = setflag which = Emancipation1 }
+	}
+	action_b = {
+		name = "Ridiculous. If Mohammed Ben Youssef try anything, we will act in force; we didn't need the help of a local notable."
+		ai_chance = 35
+		command = { type = relation which = ENG value = 25 } #same policy with UK
+		command = { type = relation which = USA value = -5 } #anti-colonialist stance of the USA
+		command = { type = setflag which = Oppression1 } 
+	}
+	action_c = {
+		name = "If they want their independance, they will have it!"
+		ai_chance = 5
+		command = { type = removeclaim which = 721 }
+		command = { type = removeclaim which = 717 }
+		command = { type = removeclaim which = 724 }
+		command = { type = removeclaim which = 718 }
+		command = { type = removeclaim which = 722 }
+		command = { type = removeclaim which = 725 }
+		command = { type = removeclaim which = 726 }
+		command = { type = removeclaim which = 723 }
+		command = { type = removeclaim which = 987 }
+		command = { type = removeclaim which = 715 }
+		command = { type = removeclaim which = 988 }
+		command = { type = removeclaim which = 989 }
+		command = { type = removeclaim which = 719 }
+		command = { type = removeclaim which = 716 }
+		command = { type = removeclaim which = 720 }
+		command = { type = independence which = MOR value = 1 }
+		command = { type = end_mastery which = MOR }
+		command = { type = trigger which = 324 }
+		command = { type = relation which = USA value = 50 } #anti-colonialist stance of the USA
+		command = { type = relation which = ENG value = -15 }  #UK see it as supporting similar demands from theirs africans colonies
+		command = { type = setflag which = Decolonization1 }
+	}
+}
+event = {
+	id = 318
+	random = no
+	country = MOR
+	style = 2
+	save_date = yes
+
+	name = "The New Statut" 
+	desc = "The rights of our state have been extended under the wise guidance of the French Republic and of our new Grand Vizir, El Glaoui. Howewer, it also means a change in the country leadership, including the depart of the current Sultan."
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofgovernment which = 505046 }
+		command = { type = headofstate which = 505047 }
+		command = { type = ministerofsecurity which = 505048 }
+		command = { type = flag_ext which = "_pro" where = MOR }
+		command = { type = sleepminister which = 505001 }
+		command = { type = set_relation which = U01 value = 200 }
+		command = { type = set_relation which = USA value = 150 }
+		command = { type = set_relation which = ENG value = 150 }
+		command = { type = set_relation which = GER value = -200 }
+		command = { type = set_relation which = FRA value = -150 }
+		command = { type = set_relation which = ITA value = -150 }
+		command = { type = construct which = ic where = 717 value = 5 }
+      	command = { type = dissent value = 5 }
+		command = { type = trigger which = 319 }
+		}
+}
+event = {
+	id = 319
+	random = no
+	country = GER	
+	style = 2
+	save_date = yes
+
+	name = "Mohammed V seeks asylum" #flavour event
+	desc = "The Sultan of Morokko, Mohammed Ben Youssef, seeks asylum and support in Germany against the French oppressors of the Moroccan people after being dethroned for nationalism. Even if we are not really interested in Morokko, we could still use him for propaganda purpose, and show to the world the real face of the capitalists and imperialists of 'Free France'."
+	picture = "news_paper"
+	
+	action = {
+		ai_chance = 75
+		name = "Welcome here!"
+		command = { type = relation which = U01 value = -50 }
+		command = { type = 	belligerence which = GER value = -1 }
+		command = { type = money value = -10  }
+	}
+		
+	action = {
+		ai_chance = 25
+		name = "Don't bother me with such unimportants demands."
+		command = { type = relation which = U01 value = 5 }
+	}	
+}
+event = {
+	id = 320
+	random = no
+	country = U01
+	
+	trigger = {	flag = Oppression1
+	}	
+	
+	name = "The Moroccan Uprising"
+	desc = "The Sultan of Morocco launch today at the Great Mosque of Casablanca an appeal 'to all the faithfull', to kick off 'the French oppressor of the sacred land' of the protectorate. According to our resident-general, situation is concerning, with locals communists supporting the movement..."
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = leave_alliance } 
+		command = { type = independence which = MOR value = 1 when = 0 }
+		command = { type = secedeprovince which = MOR value = 717 }
+		command = { type = secedeprovince which = MOR value = 718 }
+		command = { type = secedeprovince which = MOR value = 722 } 
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 321 }
+		}
+}
+event = {
+	id = 321
+	random = no
+	country = MOR
+	style = 2
+	picture = "news_paper"   
+
+	name = "Independance!"
+	desc = "We have revolted and are fighting for our future! Death to the colonialists oppressors!"
+
+	action_a = {
+		name = "We will fight for freedom!"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 505001 }
+		command = { type = headofgovernment which = 505016 }
+		command = { type = manpowerpool value = 200 }
+		command = { type = add_corps which = "1ère Armée Marocaine" value = land when = -1 where = 717 }
+		command = { type = add_division which = "1st Morocco Infantry Division" value = infantry when = 9 }
+		command = { type = add_division which = "2nd Morocco Infantry Division" value = infantry when = 9 }
+		command = { type = add_division which = "1st Morocco Cavalry Division" value = cavalry when = 8 }
+		command = { type = add_corps which = "2ème Armée Marocaine" value = land when = -1 where = 718 }
+		command = { type = add_division which = "3rd Morocco Infantry Division" value = infantry when = 9 }
+		command = { type = add_division which = "4th Morocco Infantry Division" value = militia when = 4 }
+		command = { type = add_division which = "5th Morocco Infantry Division" value = militia when = 4 }
+		command = { type = construct which = ic where = 717 value = 5 }
+		command = { type = supplies value = 2500 }
+		command = { type = oilpool value = 2500 }
+		command = { type = metalpool value = 2500 }
+		command = { type = energypool value = 5000 }
+		command = { type = rarematerialspool value = 2500 }
+		command = { type = war which = U01 }
+	}
+}
+event = {
+	id = 322
+	random = no
+	country = U01
+	style = 2
+	picture = "news_paper" 
+
+	trigger = { 
+	control = { province = 721 data = MOR } 
+	control = { province = 717 data = MOR }
+	control = { province = 724 data = MOR }
+	control = { province = 718 data = MOR }
+	control = { province = 722 data = MOR }
+	control = { province = 725 data = MOR }
+	control = { province = 726 data = MOR }
+	control = { province = 723 data = MOR }
+	control = { province = 719 data = MOR }
+	control = { province = 720 data = MOR }
+	control = { province = 729 data = MOR }
+	control = { province = 733 data = MOR }
+	control = { province = 739 data = MOR }
+	}
+
+	name = "Morocco is winning!"
+	desc = "Moroccan rebels have succesfully take control of the protectorate, and are even advancing in Algeria. We must end this situation quickly, or the Algerians nationalists will rises too, and we may lost control of our empire... Should we seek peace?"
+
+	action_a = {
+	ai_chance = 65
+	name = "We must accept their victory..."
+		command = { type = peace which = MOR value = 0 }
+		command = { type = secedeprovince which = MOR value = 721 } 
+		command = { type = secedeprovince which = MOR value = 717 }
+		command = { type = secedeprovince which = MOR value = 724 }
+		command = { type = secedeprovince which = MOR value = 718 }
+		command = { type = secedeprovince which = MOR value = 722 }
+		command = { type = secedeprovince which = MOR value = 725 }
+		command = { type = secedeprovince which = MOR value = 726 }
+		command = { type = secedeprovince which = MOR value = 723 }
+		command = { type = secedeprovince which = MOR value = 719 }
+		command = { type = secedeprovince which = MOR value = 720 }
+		command = { type = dissent value = 15 }
+	}   
+
+	action_b = {
+	ai_chance = 35
+	name = "This is only a temporay setback. Onwards to victory!"
+		command = { type = dissent value = 10 }
+	}
+}
+event = {
+	id = 323
+	random = no
+	country = U01
+	style = 2
+    save_date = yes
+	picture = "news_paper"
+
+	trigger = { 
+		event = 321
+		control = { province = 717 data = U01 }
+		control = { province = 718 data = U01 }
+		control = { province = 722 data = U01 }
+        NOT = { exists = MOR
+                }
+		}
+
+	name = "Maroccan rebellion crushed"
+	desc = "Our glorious armed forces defeated moroccan rabble, regaining control of our colony!"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1966 }
+
+	action_a = {
+	name = "Good"
+		command = { type = dissent value = -10 }
+		command = { type =	alliance which = USA }
+	}
+}
+event = {
+	id = 324
+	random = no
+	country = MOR
+	style = 2
+	save_date = yes
+
+	name = "A New Morocco" 
+	desc = "The French oppressors finally accept our independance without war. Praise our Sultan Mohammed V for this achievement!"
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofstate which = 505001 }
+		command = { type = headofgovernment which = 505016 }
+		command = { type = sleepminister which = 505047 }
+		command = { type = construct which = ic where = 717 value = 5 }
+		}
+}

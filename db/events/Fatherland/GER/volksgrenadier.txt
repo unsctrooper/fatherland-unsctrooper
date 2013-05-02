@@ -1,0 +1,201 @@
+event = { # Phase 1
+	id = 90000200
+	random = no
+	country = GER
+	
+	trigger = {
+	atwar = yes	
+	OR = {
+	control = { province = 125 data = -2 }
+	control = { province = 116 data = -2 }
+	control = { province = 115 data = -2 }
+	control = { province = 108 data = -2 }
+		}
+	}	
+	name = EVT_Volksgrenadier_NAME
+	desc = EVT_Volksgrenadier_DESC
+	style = 2
+	picture = "German_mobilization2"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	command = { type = 	dissent value = 2 }
+	command = { type = activate_division which = 14500 value = 32 when = 0 }
+	command = { type = activate_division which = 14500 value = 47 when = 0 }
+	command = { type = activate_division which = 14500 value = 82 when = 0 }
+	command = { type = activate_division which = 14500 value = 83 when = 0 }
+	command = { type = activate_division which = 14500 value = 89 when = 0 }
+	command = { type = activate_division which = 14500 value = 88 when = 0 }
+	command = { type = activate_division which = 14500 value = 90 when = 0 }
+	command = { type = activate_division which = 14500 value = 101 when = 0 }
+	command = { type = activate_division which = 14500 value = 102 when = 0 }
+	command = { type = activate_division which = 14500 value = 105 when = 0 }
+	}
+}
+event = { # Phase 2
+	id = 90000201
+	random = no
+	country = GER
+	
+	trigger = {
+	atwar = yes	
+	OR = {
+	AND = {
+	control = { province = 264 data = -2 }
+	control = { province = 270 data = -2 }
+	}
+	control = { province = 184 data = -2 }
+		}
+	}	
+	name = EVT_Volksgrenadier_NAME
+	desc = EVT_Volksgrenadier_DESC
+	style = 2
+	picture = "German_mobilization2"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	command = { type = 	dissent value = 2 }
+	command = { type = activate_division which = 14500 value = 106 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 129 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 137 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 138 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 141 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 172 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 173 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 174 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 176 where = 181 when = 0 }
+	command = { type = activate_division which = 14500 value = 224 where = 181 when = 0 }
+	}
+}
+event = { # Phase 3
+	id = 90000202
+	random = no
+	country = GER
+	
+	trigger = {
+	atwar = yes	
+	OR = {
+	control = { province = 232 data = -2 }
+	control = { province = 234 data = -2 }
+	control = { province = 237 data = -2 }
+	control = { province = 223 data = -2 }
+		}
+	}	
+	name = EVT_Volksgrenadier_NAME
+	desc = EVT_Volksgrenadier_DESC
+	style = 2
+	picture = "German_mobilization2"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	command = { type = 	dissent value = 2 }
+	command = { type = activate_division which = 14500 value = 345 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 347 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 350 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 351 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 358 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 359 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 361 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 362 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 366 where = 231 when = 0 }
+	command = { type = activate_division which = 14500 value = 370 where = 231 when = 0 }
+	}
+}
+event = { # Phase 4
+	id = 90000203
+	random = no
+	country = GER
+	
+	trigger = {
+	atwar = yes	
+		OR = {
+	OR = {
+	control = { province = 201 data = -2 }
+	control = { province = 207 data = -2 }
+	control = { province = 206 data = -2 }
+		}
+	OR = {
+	control = { province = 191 data = -2 }
+	control = { province = 189 data = -2 }
+	control = { province = 195 data = -2 }
+		}
+	 }
+	}	
+	name = EVT_Volksgrenadier_NAME
+	desc = EVT_Volksgrenadier_DESC
+	style = 2
+	picture = "German_mobilization2"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	command = { type = 	dissent value = 2 }
+	command = { type = activate_division which = 14500 value = 387 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 388 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 390 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 391 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 394 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 403 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 404 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 409 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 415 where = 179 when = 0 }
+	command = { type = activate_division which = 14500 value = 411 where = 179 when = 0 }
+	}
+}
+event = { # Phase 5
+	id = 90000204
+	random = no
+	country = GER
+	
+	trigger = {
+	atwar = yes	
+		OR = {
+	OR = {
+	control = { province = 159 data = -2 }
+	control = { province = 158 data = -2 }
+	control = { province = 165 data = -2 }
+		}
+	OR = {
+	control = { province = 130 data = -2 }
+	control = { province = 128 data = -2 }
+	control = { province = 132 data = -2 }
+	control = { province = 129 data = -2 }
+	control = { province = 131 data = -2 }
+		}
+	 }
+	}	
+	name = EVT_Volksgrenadier_NAME
+	desc = EVT_Volksgrenadier_DESC
+	style = 2
+	picture = "German_mobilization2"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = ACTION_NAME_FIGHT
+	command = { type = 	dissent value = 2 }
+	command = { type = activate_division which = 14500 value = 416 where = 180 when = 0 }
+	command = { type = activate_division which = 14500 value = 428 where = 180 when = 0 }
+	command = { type = activate_division which = 14500 value = 431 where = 180 when = 0 }
+	command = { type = activate_division which = 14500 value = 706 where = 180 when = 0 }
+	command = { type = activate_division which = 14500 value = 702 where = 180 when = 0 }
+	command = { type = activate_division which = 14500 value = 704 where = 180 when = 0 }
+	}
+}

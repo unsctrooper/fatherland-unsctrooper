@@ -1,0 +1,1923 @@
+#### READ THIS FIRST!
+#### Some triggers are not realistic, this is due to testing
+#### use notepad++ for best view!
+
+#####################################################
+# Policy events									   	# 
+#####################################################
+# 400 # GER # Decision: Western Europe
+# 401 # GER # Policy in Norway
+# 402 # GER # Abwehr concerns								!!! Start of a proxy conflict in the Norwegian countryside, coming soon. 
+# 403 # U45 # Norway changes TAG
+# 404 # GER # The case of Denmark
+# 405 # GER # The future of Flanders
+# 429 # GER # The Jutland peninsula
+# 406 # GER # Wallonia
+# 407 # GER # Status of Brussels
+# 408 # GER # South Flanders								
+# 409 # U47 # French Flanders to Flanders
+# 410 # GER # Policy for the Netherlands
+# 411 # GER # Greater Netherlands								
+# 412 # U46 # The Dutch in the New European Order
+# 413 # U47 # Flanders to the Dutch						
+# 414 # GER # Zone interdite												
+# 415 # FRA # Zone réservée
+# 416 # GER # Malgré-nous (Alsace)
+#####################################################
+# Pacification and some integration events		    # Should happen after 1950 !!!, except for Alsace and Jutland. 
+#####################################################
+# 417 # GER # Order restored in Alsace-Lorraine
+# 418 # GER # Order restored in Alsace-Lorraine (2)
+# 419 # U46 # Anti-insurgency campaign succesful!
+# 420 # U46 # Southern provinces pacified
+# 421 # GER # Jutland pacified							
+# 422 # GER # Denmark integrated
+# 423 # U47 # Gleichschaltung of Flanders
+# 424 # U47 # Gleichschaltung of French Flanders				
+# 425 # WLL # Gleichschaltung of Wallonia
+# 426 # U45 # Pacification of Norway
+# 427 # GER # Road sign incident
+# 428 # GER # Unrest spreads to Northern France
+# 429 # GER # The Jutland peninsula (see above)
+#####################################################
+# Annexation, indepencence and integration events   # Should happen around 1951, integration offset at 120 (434, 437, 431, 442, 447, 450)
+#####################################################
+# 430 # GER # Gau Westland
+# 431 # GER # Gau Westland integrated!
+# 432 # GER # Reichsgau Flandern annexed!
+# 433 # FLA # Flemish independence						
+# 434 # GER # Reichsgau integrated!
+# 435 # GER # District Brussels annexed!
+# 436 # U47 # Brussels transferred to Germany (DELETED)						!!! empty event
+# 437 # GER # District Brussels integrated
+# 438 # GER # End of Reichskommissariat Norwegen
+# 439 # GER # Integration of Norway
+# 440 # GER # Annexation of Reichsgau Wallonien!
+# 441 # WLL # Flemish independence!
+# 442 # GER # Integration of Reichsgau Wallonien
+# 443 # GER # Corruption scandal in France!
+# 444 # GER # Settlers arrive in Northeastern France (1)
+# 445 # GER # Settlers arrive in Northeastern France (2)
+# 446 # GER # Settlers arrive in Northeastern France (3)
+# 447 # GER # Integrate Northeastern France?						!!!! Diminishes chance for an alliance with France. 
+# 448 # GER # Annexation of French Flanders
+# 449 # U47 # Transfer of French Flanders
+# 450 # GER # South Flanders integrated!
+
+
+event = {
+	id = 400
+	random = no
+	country = GER
+	
+	trigger = {
+	puppet = { country = U46 country = GER } # Netherlands
+	puppet = { country = U47 country = GER } # Belgium
+	puppet = { country = U45 country = GER } # Norway	
+	}
+	
+	name = "400NAME"
+	desc = "400DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "400A"
+		command = { }
+	}
+}
+event = {
+	id = 401
+	random = no
+	country = GER
+	
+	trigger = {
+	
+
+		control = { province = 483 data = U45 } # Norway under control
+		event = 400
+	}	
+	
+	name = "401NAME"
+	desc = "401DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "401A"
+	ai_chance = 60
+	command = { type = 	dissent value = 1 }
+	command = { type = free_supplies value = -5 } # Integration costs an effo
+	command = { type = trigger which = 402 }
+	}
+	action_b = {
+	name = "401B"
+	ai_chance = 40
+	command = { type = trigger which = 403 }
+	command = { type = trigger which = 402 }
+	}
+	action_c = {
+	name = "401c"
+	ai_chance = 20
+	command = { type = trigger which = 402 }
+	command = { type = trigger which = 499 }
+	}
+	action_d = {
+	name = "401D"
+	ai_chance = 0
+	command = { }
+	}
+}
+event = {
+	id = 402
+	random = no
+	country = GER
+	
+	# Triggered by 401
+	
+	name = "402NAME"
+	desc = "402DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action_a = {
+	name = "402A"
+	ai_chance = 50
+	command = { type = supplies value = -500 }
+	command = { type = money value = -250 }
+	command = { type = 	dissent value = 1 }
+	} 
+	action_b = {
+	name = "402B"
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	} 	
+}
+event = {
+	id = 403
+	random = no
+	country = U45
+	
+	name = "403NAME"
+	desc = "403DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+	name = "403A"
+	command = { type =	country which = NOR }
+	} 
+}
+event = {
+	id = 499
+	random = no
+	country = U45
+	
+	name = "SCAN"
+	desc = "NONE"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+	name = "403A"
+	command = { type =	country which = SCA }
+	} 
+}
+event = {
+	id = 404
+	random = no
+	country = GER
+	
+	trigger = {
+	
+
+		control = { province = 294 data = DEN } # Copenhagen under Danish control
+		event = 401
+	}	
+	
+	name = "404NAME"
+	desc = "404DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "404A"
+	ai_chance = 60
+	command = { type = sleepevent which = 422 }
+	}
+	action_b = {
+	name = "404B"
+	ai_chance = 40
+	command = { type = sleepevent which = 422 }
+	}
+	action_c = {
+	name = "404c"
+	ai_chance = 10
+	command = { type = 	dissent value = 1 }
+	command = { type =	inherit which = DEN value = 1 }
+	}
+}
+event = {
+	id = 429
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		event = 401
+		event = 404
+	}	
+	
+	name = "429NAME"
+	desc = "429DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "429A"
+	ai_chance = 40
+	trigger = { exists = DEN }
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = DEN value = 218 }
+	command = { type =	secedeprovince which = DEN value = 217 }
+	command = { type =	secedeprovince which = DEN value = 220 }
+	}
+	action_b = {
+	name = "429B"
+	ai_chance = 40
+	trigger = { exists = SCA }
+	command = { type =	secedeprovince which = SCA value = 218 }
+	command = { type =	secedeprovince which = SCA value = 217 }
+	command = { type =	secedeprovince which = SCA value = 220 }
+	}
+	action_c = {
+	name = "429C"
+	ai_chance = 50
+	command = { type = addclaim which = 218 }
+	command = { type = addclaim which = 217 }
+	command = { type = addclaim which = 220 }
+	command = { trigger = { exists = DEN } type = relation which = DEN value = -10 }
+	command = { trigger = { exists = SCA } type = relation which = SCA value = -10 }
+	}
+}
+event = {
+	id = 405
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 115 data = FLA } # Antwerp
+		event = 410
+	}	
+	
+	name = "405NAME"
+	desc = "405DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "405A"
+	ai_chance = 50
+	command = { type = free_supplies value = -5 } # Costs of integration
+	}
+	action_b = {
+	name = "405B"
+	ai_chance = 50
+	command = { type = sleepevent which = 423 }
+	command = { type = trigger which = 433 }
+	}
+}
+event = {
+	id = 406
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 108 data = WLL } # Luik
+		event = 410
+	}	
+	
+	name = "406NAME"
+	desc = "406DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "406A"
+	ai_chance = 50
+	command = { type = free_supplies value = -5 } # Costs of integration
+	command = { type =	secedeprovince which = U47 value = 112 } # Civil administration in preparation for integration
+	command = { type =	secedeprovince which = U47 value = 111 }    
+	command = { type =	secedeprovince which = U47 value = 108 }
+	command = { type =	secedeprovince which = U47 value = 113 }
+	}
+	action_b = {
+	name = "406B"
+	ai_chance = 50
+	command = { type = setflag which = Burgundy }
+	command = { type = sleepevent which = 425 }
+	command = { type = trigger which = 441 }	
+	}
+}
+event = {
+	id = 407
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 116 data = GER } # Brussels
+		event = 406
+		event = 410
+	}	
+	
+	name = "407NAME"
+	desc = "407DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "407A"
+	ai_chance = 40
+	trigger = { puppet = { country = FLA country = GER } }
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = FLA value = 116 }
+	command = { type = sleepevent which = 435 }
+	}
+	action_b = {
+	name = "407B"
+	ai_chance = 40
+	trigger = { puppet = { country = WLL country = GER } }
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = WLL value = 116 }
+	command = { type = sleepevent which = 435 }
+	}
+	action_c = {
+	name = "407DUTCH"
+	ai_chance = 40
+		trigger = {
+				event = 411
+				}
+							
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = HOL value = 116 }
+	}
+	action_d = {
+	name = "407C"
+	ai_chance = 60
+	command = { type = 	dissent value = 1 }
+	}
+}
+event = {
+	id = 408
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 52 data = U47 } # Lille
+		event = 407
+	}	
+	
+	name = "408NAME"
+	desc = "408DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "408A"
+	ai_chance = 40
+	trigger = { puppet = { country = FLA country = GER } }
+	command = { type = 	dissent value = -1 }
+	command = { type = relation which = FRA value = -50 }
+	command = { type = trigger which = 409 }
+	}
+	action_b = {
+	name = "408B"
+	ai_chance = 60
+	command = { type = free_supplies value = -5 } # Costs of integration
+	command = { type = 	dissent value = 1 }
+	command = { type = relation which = FRA value = -50 }
+	}
+	action_c = {
+	name = "408C"
+	ai_chance = 30
+	command = { type = 	dissent value = -1 }
+	command = { type = relation which = FRA value = 10 } # France prefers military administration over annexation
+	}
+	action_d = {
+	name = "407DUTCH"
+	ai_chance = 40
+	trigger = { owned = { province = 114 data = HOL }	}
+	command = { type = 	dissent value = -1 }
+	command = { type = trigger which = 413 }
+	}
+}
+event = {
+	id = 409
+	random = no
+	country = U47
+	
+	#Triggered by 408
+	
+	name = "409NAME"
+	desc = "409DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+	name = "ACTION_NAME_OK"
+	#command = { type =	secedeprovince which = FLA value = 52 }    
+	command = { type =	secedeprovince which = FLA value = 51 }
+	command = { type =	secedeprovince which = FLA value = 49 }
+	}
+}
+event = {
+	id = 410
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 122 data = U46 } # Amsterdam under control
+		event = 400
+	}	
+	
+	name = "410NAME"
+	desc = "410DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "410A"
+	ai_chance = 60
+	command = { type = 	dissent value = 1 }
+	command = { type = free_supplies value = -5 } # Integration costs an effort!
+	}
+	action_b = {
+	name = "410B" # Independence
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	command = { type = trigger which = 412 }
+	}
+	action_c = {
+	name = "410D" # Dietsland
+	ai_chance = 50
+	command = { type = sleepevent which = 420 }
+	command = { type =	secedeprovince which = U46 value = 115 }    
+	command = { type =	secedeprovince which = U46 value = 117 }
+	command = { type =	secedeprovince which = U46 value = 114 }
+	command = { type = trigger which = 411 }
+	}
+}
+event = {
+	id = 411
+	random = no
+	country = U46
+	
+	# Triggered by 410
+	
+	name = "411NAME"
+	desc = "411DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action_a = {
+	name = "411A"
+	ai_chance = 50
+	command = { type =	country which = HOL }
+	command = { type = addcore which = 115 }
+	command = { type = addcore which = 117 }
+	command = { type = addcore which = 114 }
+	command = { type = addcore which = 116 }
+	command = { type =	inherit which = FLA value = 1 }
+	} 
+	action_b = {
+	name = "411B"
+	ai_chance = 50
+	command = { type =	country which = HOL }
+	command = { type = addcore which = 115 }
+	command = { type = addcore which = 117 }
+	command = { type = addcore which = 114 }
+	command = { type = addcore which = 116 }
+	command = { type = addclaim which = 51 }
+	command = { type = addclaim which = 49 }
+	command = { type = addclaim which = 52 }
+	command = { type =	inherit which = FLA value = 1 }
+
+	} 	 
+}
+event = {
+	id = 412
+	random = no
+	country = U46
+	
+	# Triggered by 410
+	
+	name = "412NAME"
+	desc = "412DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type =	country which = HOL }
+	} 	
+}
+event = {
+	id = 413
+	random = no
+	country = U47
+	
+	# Triggered by 408
+	
+	name = "413NAME"
+	desc = "413DESC"
+  	style = 2
+  	picture = "news_paper"
+	
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type =	secedeprovince which = HOL value = 49 }    
+	command = { type =	secedeprovince which = HOL value = 51 }
+	#command = { type =	secedeprovince which = HOL value = 52 }
+	} 	
+}
+event = {
+	id = 414
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 106 data = GER } # Nancy under our control
+		event = 408
+	}	
+	
+	name = "414NAME"
+	desc = "414DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "414A"
+	ai_chance = 50
+	command = { type = 	dissent value = -2 }
+	command = { type =	secedeprovince which = FRA value = 102 } # Sedan
+	command = { type =	secedeprovince which = FRA value = 103 } # Hirson	
+	command = { type = secedeprovince which = FRA value = 101 } # Laon
+	command = { type = relation which = FRA value = 30 }
+	command = { type = relation which = U47 value = -30 }
+	command = { type = sleepevent which = 428 }
+	}
+	action_b = {
+	name = "414B"
+	ai_chance = 30 
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = U47 value = 102 } # Sedan
+	command = { type =	secedeprovince which = U47 value = 103 } # Hirson	
+	command = { type = secedeprovince which = U47 value = 101 } # Laon
+	command = { type = secedeprovince which = U47 value = 50 } # Amiens
+	command = { type = relation which = FRA value = -30 }
+	command = { type = relation which = U47 value = 30 }
+	command = { type = sleepevent which = 428 }
+	}
+	action_c = {
+	name = "414C"
+	ai_chance = 60
+	command = { type = 	dissent value = 1 }
+	command = { type = supplies value = -200 }
+	command = { type = money value = -20 }
+	command = { type = free_supplies value = -5 } # Integration costs an effort!
+	command = { type = addclaim which = 101 }  # Laon
+	command = { type = addclaim which = 103 } #Hirson
+	command = { type = addclaim which = 102 } #Sedan
+	command = { type = relation which = FRA value = -30 }
+	command = { type = relation which = U47 value = -30 }
+	}
+	action_d = {
+	name = "414D"
+	ai_chance = 1
+	trigger = { flag = Burgundy }
+	command = { type = 	dissent value = -1 }
+	command = { type = relation which = WLL value = 50 }
+	command = { type =	secedeprovince which = WLL value = 102 } # Sedan
+	command = { type =	secedeprovince which = WLL value = 103 } # Hirson	
+	command = { type = secedeprovince which = WLL value = 101 } # Laon 
+	command = { type = sleepevent which = 428 }
+	}
+}
+event = {
+	id = 415
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 106 data = GER } # Nancy under our control
+		event = 414
+	}	
+	
+	name = "415NAME"
+	desc = "415DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "414A"
+	ai_chance = 50
+	command = { type = 	dissent value = -2 }
+	command = { type =	secedeprovince which = FRA value = 96 } # Longwy
+	command = { type =	secedeprovince which = FRA value = 106 } # Nancy	
+	command = { type = secedeprovince which = FRA value = 97 } # Belfort
+	command = { type = secedeprovince which = FRA value = 98 } # Pontarlier
+	command = { type = relation which = FRA value = 40 }
+	command = { type = relation which = WLL value = -40 }
+	command = { type = sleepevent which = 427 }
+	}
+	action_b = {
+	name = "BURGUNDYb"
+	ai_chance = 1 
+	trigger = { control = { province = 102 data = WLL  } } # Forbidden zone was already given to Wallonia
+	command = { type = 	dissent value = -1 }
+	command = { type =	secedeprovince which = WLL value = 96 } # Longwy
+	command = { type =	secedeprovince which = WLL value = 106 } # Nancy	
+	command = { type = secedeprovince which = WLL value = 97 } # Belfort
+	command = { type = secedeprovince which = WLL value = 98 } # Pontarlier
+	command = { type = relation which = FRA value = -40 }
+	command = { type = relation which = WLL value = 40 }
+	command = { type = sleepevent which = 427 }
+	}
+	action_c = {
+	name = "414C"
+	ai_chance = 60
+	command = { type = 	dissent value = 1 }
+	command = { type = supplies value = -200 }
+	command = { type = money value = -20 }
+	command = { type = free_supplies value = -5 } # Integration costs an effort!
+	command = { type = addclaim which = 96 } # Longwy
+	command = { type = addclaim which = 106 } # Nancy
+	command = { type = addclaim which = 97 } # Belfort
+	command = { type = addclaim which = 98 } # Pontarlier
+	command = { type = relation which = FRA value = -40 }
+	command = { type = relation which = WLL value = -40 }
+	}
+}
+event = {
+	id = 416
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 107 data = GER } # Strassbourg under our control
+		event = 400
+		random = 50
+	}	
+	
+	name = "416NAME"
+	desc = "416DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "416A"
+	ai_chance = 50
+	command = { type = 	dissent value = 1 }
+	command = { type = relation which = FRA value = -10 }
+	command = { type = sleepevent which = 417 }
+	}
+	action_b = {
+	name = "416B"
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	command = { type = relation which = FRA value = 10 }
+	command = { type = sleepevent which = 418 }
+	}
+}
+event = {
+	id = 417
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 107 data = GER } # Alsace
+		control = { province = 104 data = GER } # 
+		control = { province = 105 data = GER } # 
+		event = 416
+		random = 50
+	}	
+	
+	name = "417NAME"
+	desc = "417DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 104 } 
+	command = { type = addcore which = 105 } 
+	command = { type = addcore which = 107 } 
+	}
+}
+event = {
+	id = 418
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 107 data = GER } # Alsace
+		control = { province = 104 data = GER } # 
+		control = { province = 105 data = GER } # 
+		event = 416
+		random = 40
+	}	
+	
+	name = "417NAME"
+	desc = "418DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 104 } 
+	command = { type = addcore which = 105 } 
+	command = { type = addcore which = 107 } 
+	}
+}
+event = {
+	id = 419
+	random = no
+	country = U46
+	
+	trigger = {
+		
+		control = { province = 122 data = U46 } # Amsterdam under control	
+		event = 410
+		
+		OR = { 
+		random = 50
+		year = 1951 
+		}
+	}	
+	
+	name = "419NAME"
+	desc = "419DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 124 } 
+	command = { type = addcore which = 119 } 
+	command = { type = addcore which = 125 } 
+	command = { type = addcore which = 120 } 
+	}
+}     
+event = {
+	id = 420
+	random = no
+	country = U46
+	
+	trigger = {
+		
+		control = { province = 122 data = U46 } # Amsterdam under control
+		OR = { 
+		random = 50
+		year = 1951 
+		}
+		event = 410
+	}	
+	
+	name = "420NAME"
+	desc = "420DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 123 } 
+	command = { type = addcore which = 118 } 
+	command = { type = addcore which = 121 } 
+	}
+}     
+event = {
+	id = 421
+	random = no
+	country = GER
+	
+	trigger = {
+		
+		control = { province = 220 data = GER } # Arhus under control
+		
+		OR = {
+		year = 1951
+		AND = {
+		year = 1949
+		random = 30
+		}
+		AND = {
+		random = 50
+		year = 1950
+		}
+		}
+		
+	}	
+	
+	name = "421NAME"
+	desc = "421DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 220 }   
+	command = { type = addcore which = 217 } 
+	command = { type = addcore which = 218 }  
+	}
+}    
+event = {
+	id = 422
+	random = no
+	country = GER
+	
+	trigger = {
+		
+		control = { province = 294 data = GER } # Copenhagen under control
+		event = 404
+	
+	OR = {
+		year = 1951
+		AND = {
+		year = 1949
+		random = 30
+		}
+		AND = {
+		random = 50
+		year = 1950
+			}
+		}
+		
+	}	
+	
+	name = "422NAME"
+	desc = "422DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 219 } 
+	command = { type = addcore which = 294 } 
+	}
+}   
+event = {
+	id = 423
+	random = no
+	country = FLA
+	
+	trigger = {
+	
+		control = { province = 115 data = FLA } # Antwerp under control
+		
+		event = 405
+			
+		OR = {
+		year = 1951
+		AND = {
+		random = 50
+		year = 1950
+			}
+		}
+	}	
+	
+	name = "423NAME"
+	desc = "423DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 117 } 
+	command = { type = addcore which = 115 } 
+	command = { type = addcore which = 114 } 
+		}
+}
+event = {
+	id = 424
+	random = no
+	country = U47
+	
+	trigger = {
+	
+		control = { province = 51 data = U47 } # Dunkirk under control
+		event = 408
+		
+		
+		OR = {
+		random = 90
+		AND = {
+		random = 50
+		year = 1950
+			}
+		}
+	}	
+	
+	name = "424NAME"
+	desc = "424DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 51 } 
+	command = { type = addcore which = 52 } 
+	command = { type = addcore which = 49 } 
+		}
+}
+event = {
+	id = 425
+	random = no
+	country = WLL
+	
+	trigger = {
+
+		control = { province = 112 data = WLL } # Mons under control
+		event = 406
+		
+		
+		OR = {
+		AND = {
+		random = 90
+		}
+		AND = {
+		random = 50
+		year = 1950
+			}
+		}
+	}	
+	
+	name = "425NAME"
+	desc = "425DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = dissent value = 1 }
+	command = { type = addcore which = 112 } 
+	command = { type = addcore which = 113 } 
+	command = { type = addcore which = 111 } 
+	command = { type = addcore which = 108 }
+		}
+}
+event = {
+	id = 426
+	random = no
+	country = U45
+	
+	trigger = {
+	
+		control = { province = 483 data = U45 } # Norway under control
+		event = 401
+		
+		
+		OR = {
+		AND = {
+		random = 90
+		}
+		AND = {
+		random = 50
+		year = 1950
+		}
+			}
+	}	
+	
+	name = "426NAME"
+	desc = "426DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addcore which = 491 }              
+	command = { type = addcore which = 495 } 
+	command = { type = addcore which = 484 } 
+	command = { type = addcore which = 485 } 
+	command = { type = addcore which = 486 } 
+	command = { type = addcore which = 487 } 
+	command = { type = addcore which = 488 } 
+	command = { type = addcore which = 489 } 
+	command = { type = addcore which = 490 } 
+	command = { type = addcore which = 492 } 
+	command = { type = addcore which = 493 } 
+	command = { type = addcore which = 494 } 
+	command = { type = addcore which = 496 } 
+	command = { type = addcore which = 497 } 
+		}
+}   
+event = {
+	id = 427
+	random = no
+	country = GER
+	
+	trigger = {	
+		control = { province = 106 data = GER } # Nancy under control
+		event = 414
+		random = 80
+	}	
+	
+	name = "427NAME"
+	desc = "427DESC"
+	style = 2
+	picture = "resistance"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	#offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_DAMN"
+	command = { type = 	dissent value = 1 }
+	command = { type = revolt which = 106 }
+	command = { type = revolt which = 96 }
+		}
+}
+event = {
+	id = 428
+	random = no
+	country = GER
+	
+	trigger = {
+		random = 80
+		event = 415
+		control = { province = 102 data = GER } # Sedan under control
+	}	
+	
+	name = "428NAME"
+	desc = "428DESC"
+	style = 2
+	picture = "resistance"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_DAMN"
+	command = { type = 	dissent value = 1 }
+	command = { type = revolt which = 102 }
+	command = { type = revolt which = 101 }
+	command = { type = revolt which = 56 }
+		}
+}
+event = {
+	id = 430
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 125 data = U46 } # Amsterdam under control
+		event = 419	
+	}	
+	
+	name = "430NAME"
+	desc = "430DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 124 } 
+	command = { type = addclaim which = 122 } 
+	command = { type = addclaim which = 119 } 
+	command = { type = addclaim which = 125 } 
+	command = { type = addclaim which = 120 } 
+	#South
+	command = { trigger = { owned = { province = 123 data = U46 } } type = addclaim which = 123 }
+	command = { trigger = { owned = { province = 118 data = U46 } }type = addclaim which = 118 }
+	command = { trigger = { owned = { province = 121 data = U46 } } type = addclaim which = 121 }
+	
+	command = { type =	inherit which = U46 value = 1 }
+		}
+}
+event = {
+	id = 431
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 125 data = GER } # Amsterdam under German control
+		event = 430
+	}	
+	
+	name = "431NAME"
+	desc = "431DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_supplies value = 5 }
+	command = { type = 	dissent value = -1 }
+	command = { type = addcore which = 124 } 
+	command = { type = addcore which = 122 } 
+	command = { type = addcore which = 119 } 
+	command = { type = addcore which = 125 } 
+	command = { type = addcore which = 120 } 
+	#South
+	command = { trigger = { owned = { province = 123 data = GER } } type = addcore which = 123 }
+	command = { trigger = { owned = { province = 118 data = GER } }type = addcore which = 118 }
+	command = { trigger = { owned = { province = 121 data = GER } } type = addcore which = 121 }
+		}
+}
+event = {
+	id = 432
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 115 data = FLA } # Antwerp under control	
+		event = 423
+	}	
+	
+	name = "432NAME"
+	desc = "432DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	ai_chance = 100
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 115 } 
+	command = { type = addclaim which = 114 } 
+	command = { type = addclaim which = 117 }  
+	command = { type = 	inherit which = FLA value = 1 }
+		}
+}
+event = {
+	id = 433
+	random = no
+	country = FLA
+	
+	#Triggered by 432
+	
+	name = "433NAME"
+	desc = "433DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type =	addcore   which = 117 }    
+	command = { type =	addcore   which = 114 }
+	}
+}
+event = {
+	id = 434
+	random = no
+	country = GER
+	
+	trigger = {
+	control = { province = 115 data = GER } # Antwerp under German control	
+	event = 432
+	}
+	
+	name = "434NAME"
+	desc = "434DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_supplies value = 5 } # Integration investment
+	command = { type = 	dissent value = -1 }
+	command = { type = addcore which = 115 } 
+	command = { type = addcore which = 117 } 
+	command = { type = addcore which = 114 }
+	}
+}
+event = {
+	id = 435
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 116 data = GER } # Brussels under control
+		event = 407
+		
+		random = 50
+		
+	}	
+	
+	name = "435NAME"
+	desc = "435DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 116 }  
+		}
+}
+#event = {
+#	id = 436
+#	random = no
+#	
+#	country = U47
+#	
+#	#Triggered by 435
+#	
+#	name = "436NAME"
+#	desc = "436DESC"
+#	style = 2
+#	picture = "news_paper"	
+#
+#	#date = { day = 1 month = january year = 1948 }
+#	#offset = 30
+#	#deathdate = { day = 30 month = december year = 1963 }
+#
+#	action = {
+#	name = "ACTION_NAME_OK"
+#	command = { type =	secedeprovince which = GER value = 116 }    
+#	}
+#}
+event = {
+	id = 437
+	random = no
+	country = GER
+	
+	trigger = {
+	control = { province = 116 data = GER } # Brussels under German control
+	event = 435	
+	}	
+	
+	name = "437NAME"
+	desc = "437DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_supplies value = 5 } # Integration investment
+	command = { type = 	dissent value = -1 }
+	command = { type = addcore which = 116 } 
+	}
+}
+event = {
+	id = 438
+	random = no
+	country = GER
+	
+	trigger = {
+	control = { province = 483 data = U45 } # Oslo under control	
+	event = 426	
+	random = 50	
+	}	
+	
+	name = "438NAME"
+	desc = "438DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 483 } 
+	command = { type = addclaim which = 491 } 
+	command = { type = addclaim which = 495 } 
+	command = { type = addclaim which = 484 } 
+	command = { type = addclaim which = 485 } 
+	command = { type = addclaim which = 486 } 
+	command = { type = addclaim which = 487 } 
+	command = { type = addclaim which = 488 } 
+	command = { type = addclaim which = 489 } 
+	command = { type = addclaim which = 490 } 
+	command = { type = addclaim which = 492 } 
+	command = { type = addclaim which = 493 } 
+	command = { type = addclaim which = 494 } 
+	command = { type = addclaim which = 496 } 
+	command = { type = addclaim which = 497 } 
+	command = { type =	inherit which = U45 value = 1 }
+		}
+}
+event = {
+	id = 439
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		#Norway has to be clear of partisans
+		control = { province = 483 data = GER } # Oslo
+		control = { province = 491 data = GER }
+		control = { province = 495 data = GER }
+		control = { province = 484 data = GER }
+		control = { province = 485 data = GER }
+		control = { province = 486 data = GER }
+		control = { province = 487 data = GER }
+		control = { province = 488 data = GER }
+		control = { province = 489 data = GER }
+		control = { province = 490 data = GER }
+		control = { province = 492 data = GER }
+		control = { province = 493 data = GER }
+		control = { province = 494 data = GER }
+		control = { province = 496 data = GER }
+		control = { province = 497 data = GER }	
+		
+		event = 438
+	}	
+	
+	name = "439NAME"
+	desc = "439DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_supplies value = 5 }
+	command = { type = 	dissent value = -1 }
+	command = { type = addcore which = 483 } 
+	command = { type = addcore which = 491 } 
+	command = { type = addcore which = 495 } 
+	command = { type = addcore which = 484 } 
+	command = { type = addcore which = 485 } 
+	command = { type = addcore which = 486 } 
+	command = { type = addcore which = 487 } 
+	command = { type = addcore which = 488 } 
+	command = { type = addcore which = 489 } 
+	command = { type = addcore which = 490 } 
+	command = { type = addcore which = 492 } 
+	command = { type = addcore which = 493 } 
+	command = { type = addcore which = 494 } 
+	command = { type = addcore which = 496 } 
+	command = { type = addcore which = 497 } 
+		}
+}
+event = {
+	id = 440
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 112 data = WLL } # Mons under control
+		event = 425
+		random = 50	
+	}	
+	
+	name = "440NAME"
+	desc = "440DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 108 } 
+	command = { type = addclaim which = 111 } 
+	command = { type = addclaim which = 113 }  
+	command = { type = addclaim which = 112 } 
+	command = { type = inherit which = WLL value = 1 }
+		}
+}
+event = {
+	id = 441 
+	random = no
+
+	country = WLL
+	
+	#
+	
+	name = "441NAME"
+	desc = "441DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 111 } 
+	command = { type = addcore which = 113 }  
+	command = { type = addcore which = 112 }
+	}
+}
+event = {
+	id = 442
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 112 data = GER } # Mons under German control
+		event = 440
+	}	
+	
+	name = "442NAME"
+	desc = "442DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_supplies value = 5 } # Integration investment
+	command = { type = 	dissent value = -1 }
+	command = { type = addcore which = 108 } 
+	command = { type = addcore which = 111 } 
+	command = { type = addcore which = 113 }
+	command = { type = addcore which = 112 }
+	}
+}
+event = {
+	id = 443
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 106 data = GER } # Nancy under our control
+		
+		OR = {
+		event = 427
+		event = 428
+		}
+	}	
+	
+	name = "443NAME"
+	desc = "443DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 45
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "443A"
+	ai_chance = 40
+	command = { type = 	dissent value = -2 } 
+	command = { type = free_supplies value = 5 } # Settlement plans stop
+	command = { type = removeclaim which = 106 }  # Nancy
+	command = { type = removeclaim which = 96 } #Longwy
+	command = { type = removeclaim which = 102 } # Sedan
+	command = { type = removeclaim which = 103 } # Hirson
+	command = { type = removeclaim which = 97 } # Belfort
+	command = { type = removeclaim which = 98 } # Pontarlier	
+	command = { type = removeclaim which = 101 } # Laon
+	command = { type = removeclaim which = 50 } # Amiens
+	command = { type =	secedeprovince which = FRA value = 106 }
+	command = { type =	secedeprovince which = FRA value = 96 }
+	command = { type =	secedeprovince which = FRA value = 102 }
+	command = { type =	secedeprovince which = FRA value = 103 }
+	command = { type =	secedeprovince which = FRA value = 97 }
+	command = { type =	secedeprovince which = FRA value = 98 }
+	command = { type =	secedeprovince which = FRA value = 101 }
+	#command = { type =	secedeprovince which = FRA value = 50 }
+	command = { type = relation which = FRA value = 50 }
+	command = { type = sleepevent which = 444 }
+	command = { type = sleepevent which = 445 }
+	command = { type = sleepevent which = 446 }
+	}
+	action_b = {
+	name = "443B"
+	ai_chance = 50
+	command = { type = 	dissent value = 2 }
+	command = { type = supplies value = -500 }
+	command = { type = money value = -250 }
+	command = { type = relation which = FRA value = -10 }
+	}
+	action_c = {
+	name = "443C" #Nancy, Longwy, Sedan
+	ai_chance = 10
+	command = { type = 	dissent value = -1 } 
+	command = { type = free_supplies value = 5 } # Settlement plans stop
+	command = { type = removeclaim which = 106 }  # Nancy
+	command = { type = removeclaim which = 96 } #Longwy
+	command = { type = removeclaim which = 102 } # Sedan
+	command = { type = removeclaim which = 103 } # Hirson
+	command = { type = removeclaim which = 97 } # Belfort
+	command = { type = removeclaim which = 98 } # Pontarlier	
+	command = { type = removeclaim which = 101 } # Laon
+	command = { type = removeclaim which = 50 } # Amiens
+	command = { type = sleepevent which = 444 }
+	command = { type = sleepevent which = 445 }
+	command = { type = sleepevent which = 446 }
+	}
+}
+event = {
+	id = 444
+	random = no
+	one_action = yes
+	country = GER
+	
+	trigger = {
+	
+		OR = {
+		control = { province = 106 data = GER } # Nancy under our control
+		control = { province = 102 data = GER } # Sedan under our control
+		}
+		event = 443
+	}	
+	
+	name = "SETTLERS1"
+	desc = "SETTLERS2"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	command = { type = free_supplies value = 2 }
+	command = { type = province_manpower which = 106 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+	action_b = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	command = { type = free_supplies value = 2 }
+	command = { type = province_manpower which = 102 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+	action_c = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	command = { type = free_supplies value = 2 }
+	command = { type = province_manpower which = 96 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+}
+event = {
+	id = 445
+	random = no
+	one_action = yes
+	country = GER
+	
+	trigger = {
+	
+	OR = {
+		control = { province = 106 data = GER } # Nancy under our control
+		control = { province = 102 data = GER } # Sedan under our control
+		}
+		event = 444
+	}	
+	
+	name = "SETTLERS1"
+	desc = "SETTLERS2"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	trigger = { control = { province = 106 data = GER } }
+	command = { type = free_supplies value = 2 }
+	command = { type = province_manpower which = 106 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+	action_b = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	trigger = { control = { province = 102 data = GER } }
+	command = { type = free_supplies value = 2 }
+	command = { type = province_manpower which = 102 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+	action_c = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	trigger = { control = { province = 96 data = GER } }
+	command = { type = free_supplies value = 2 }
+	command = { type = province_manpower which = 96 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+}
+event = {
+	id = 446
+	random = no
+	one_action = yes
+	country = GER
+	
+	trigger = {
+	
+	OR = {
+		control = { province = 106 data = GER } # Nancy under our control
+		control = { province = 102 data = GER } # Sedan under our control
+		}
+		event = 445
+	}	
+	
+	name = "SETTLERS1"
+	desc = "SETTLERS2"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	trigger = { control = { province = 106 data = GER } }
+	command = { type = free_supplies value = 1 } # End of settlement investment
+	command = { type = province_manpower which = 106 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+	action_b = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	trigger = { control = { province = 102 data = GER } }
+	command = { type = free_supplies value = 1 }
+	command = { type = province_manpower which = 102 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+	action_c = {
+	name = "ACTION_NAME_GREAT"
+	ai_chance = 50
+	trigger = { control = { province = 96 data = GER } }
+	command = { type = free_supplies value = 1 }
+	command = { type = province_manpower which = 96 value = 1 }
+	command = { type = relation which = FRA value = -5 }
+	}
+}
+event = {
+	id = 447
+	random = no
+	country = GER
+	
+	trigger = {
+	
+	OR = {
+		control = { province = 106 data = GER } # Nancy under our control
+		control = { province = 102 data = GER } # Sedan under our control
+		}
+		event = 445
+	}	
+	
+	name = "447NAME"
+	desc = "447DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+	name = "447A"
+	ai_chance = 60
+	command = { trigger = { control = { province = 106 data = GER } } type = addcore which = 106 } 
+	command = { trigger = { control = { province = 96 data = GER } } type = addcore which = 96 } 
+	command = { trigger = { control = { province = 102 data = GER } } type = addcore which = 102 } 
+	command = { type = relation which = FRA value = -100 }
+	}
+	action_b = {
+	name = "447B"
+	ai_chance = 40
+	command = { type = relation which = FRA value = 100 }
+	}
+}
+
+event = {
+	id = 448
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 51 data = U47 } # French Flanders under control
+		control = { province = 52 data = U47 }
+		control = { province = 49 data = U47 }
+		event = 424
+		
+		random = 50
+		
+	}	
+	
+	name = "448NAME"
+	desc = "448DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = 	dissent value = 1 }
+	command = { type = addclaim which = 51 }  
+	command = { type = addclaim which = 52 }
+	command = { type = addclaim which = 49 }	
+	command = { type = 	inherit which = U47 value = 1 }
+	command = { trigger = { exists = U47 } type = trigger which = 449 }
+		}
+}
+event = {
+	id = 449
+	random = no
+	
+	country = U47
+	
+	#Triggered by 435
+	
+	name = "449NAME"
+	desc = "449DESC"
+	style = 2
+	picture = "news_paper"	
+
+	#date = { day = 1 month = january year = 1948 }
+	#offset = 30
+	#deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_OK"
+	command = { type =	secedeprovince which = GER value = 51 }    
+	command = { type =	secedeprovince which = GER value = 52 }
+	command = { type =	secedeprovince which = GER value = 49 }
+	}
+}
+event = {
+	id = 450
+	random = no
+	country = GER
+	
+	trigger = {
+	
+		control = { province = 51 data = GER } # French Flanders under Germam control
+		control = { province = 52 data = GER }
+		control = { province = 49 data = GER }
+		event = 448
+	
+	}	
+	
+	name = EVT_450_NAME
+	desc = EVT_450_DESC
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_supplies value = 5 } # Integration investment
+	command = { type = 	dissent value = -1 }
+	command = { type = addcore which = 51 }  
+	command = { type = addcore which = 52 }
+	command = { type = addcore which = 49 }
+	}
+}
+

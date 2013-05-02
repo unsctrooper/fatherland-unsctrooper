@@ -1,0 +1,57 @@
+#########################################################################
+#  Gibraltar or War (Last chance for peace)
+#########################################################################
+event = {
+	id = ????
+	random = yes
+	country = SPA
+	
+	decision = {
+		exists = ENG
+		atwar = no
+		government = fascist	
+		
+		owned = { province = ???? [data = ENG] } #Gibraltar
+	}
+	
+	decision_trigger = {
+		NOT = { owned = { province = ???? data = SPA } } # Danzig
+		NOT = { alliance = { country = GER country = ENG } }
+		NOT = { war = { country = GER country = ENG } }
+		NOT = { puppet = { country = ENG country = GER } }
+		NOT = { ispuppet = GER }
+	}
+	
+	trigger = {
+		random = 80
+		government = fascist
+		exists = SPA
+		atwar = no		
+		
+		owned = { province = ???? [data = ENG] } #Gibraltar
+		NOT = { owned = { province = ???? data = SPA } } # Danzig
+		NOT = { alliance = { country = GER country = ENG } }
+		NOT = { war = { country = GER country = ENG } }
+		NOT = { puppet = { country = ENG country = GER } }
+		NOT = { ispuppet = GER }
+	}
+
+	name = "EVT_2027_NAME"
+	desc = "EVT_2027_DESC"
+	style = 2
+	picture = "Poland_Invasion"
+	decision_picture = "decision_danzig_or_war"
+
+	date = { day = 1 month = january year = 1948 }
+    offset = 90
+    deathdate = { day = 30 month = december year = 1966 }
+
+	action = {
+		name = "ACTIONNAME2027A" # Final Ultimatum - Gibraltar or War
+		ai_chance = 100 
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = FRA value = -30 }   
+		command = { type = end_non_aggression which = POL where = GER }        
+		command = { type = trigger which = ???? } # POL
+	}
+}
