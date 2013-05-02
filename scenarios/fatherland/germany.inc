@@ -4871,7 +4871,123 @@ landunit =
 	   extra1 = naval_torpedoes_s
 	brigade_model1 = 0
       }
-	}
+	} 						
+	navalunit = { 
+		id = { type = 10848 id = 5200 } 
+		name = "Schwarzmeer-Flotte" 
+		location = 641 
+		base = 641 
+		division = { 
+			id = { type = 10848 id = 5201 } 
+			name = "Kaiser Barbarossa" 
+			type = battleship 
+			model = 2 
+			extra1 = floatplane
+			brigade_model1 = 4
+			extra2 = naval_improved_hull_l
+			brigade_model2 = 0
+			extra3 = naval_fire_controll_l
+			brigade_model3 = 0
+			extra4 = naval_anti_air_l
+			brigade_model4 = 0			
+			} 
+		division = { 
+			id = { type = 10848 id = 8500 } 
+			name = "von Bock" 
+			type = heavy_cruiser
+			model = 5 
+			extra1 = floatplane
+			brigade_model1 = 4
+			} 
+		division = { 
+			id = { type = 10848 id = 8502 } 
+			name = "von Leeb" 
+			type = heavy_cruiser
+			model = 5 
+			extra1 = floatplane
+			brigade_model1 = 4
+			} 
+		division = { 
+			id = { type = 10848 id = 5202 } 
+			name = "Paulus" 
+			type = heavy_cruiser 
+			model = 5 
+			extra1 = floatplane
+			brigade_model1 = 4
+			} 
+		division = { 
+			id = { type = 10848 id = 5203 } 
+			name = "Hartmann" 
+			type = light_cruiser 
+			model = 3 
+			} 
+		division = { 
+			id = { type = 10848 id = 5204 } 
+			name = "Barkhorn" 
+			type = light_cruiser 
+			model = 3 
+			} 
+		division = { 
+			id = { type = 10848 id = 5205 } 
+			name = "Rall" 
+			type = light_cruiser 
+			model = 3 
+			} 
+		division = { 
+			id = { type = 10848 id = 5207 } 
+			name = "1. Umgewandelt Zerstörergeschwader" 
+			type = destroyer 
+			model = 4 
+			}
+		division = { 
+			id = { type = 10848 id = 5502 } 
+			name = "2. Umgewandelt Zerstörergeschwader" 
+			type = destroyer 
+			model = 4 
+			} 
+		division = { 
+			id = { type = 10848 id = 5503 } 
+			name = "3. Umgewandelt Zerstörergeschwader" 
+			type = destroyer 
+			model = 4 
+			} 
+		division = { 
+			id = { type = 10848 id = 5504 } 
+			name = "4. Umgewandelt Zerstörergeschwader" 
+			type = destroyer 
+			model = 4 
+			} 
+		division = { 
+			id = { type = 10848 id = 5302 } 
+			name = "1. Umgewandelt Unterseeboots-Division" 
+			type = submarine 
+			model = 4 
+			} 
+		division = { 
+			id = { type = 10848 id = 6011 } 
+			name = "2. Umgewandelt Unterseeboots-Division" 
+			type = submarine 
+			model = 4 
+			}
+		division = { 
+			id = { type = 10848 id = 5172 } 
+			name = "3. Umgewandelt Unterseeboots-Division" 
+			type = submarine 
+			model = 4 
+			} 
+		division = { 
+			id = { type = 10848 id = 5173 } 
+			name = "4. Umgewandelt Unterseeboots-Division" 
+			type = submarine 
+			model = 4 
+			}
+		division = { 
+			id = { type = 10848 id = 6012 } 
+			name = "5. Umgewandelt Unterseeboots-Division" 
+			type = submarine 
+			model = 4 
+			}
+		} 
 	#
 	############
 	# END

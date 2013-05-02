@@ -116,7 +116,6 @@ rare_materials         = 5000
 #TAD
 1105 1104 	 
 
-1223 1221 1222 1226 1227 1224 1225 # North Korea
 1542 #South Sahalin
 1543 # Kurils
 
@@ -159,7 +158,6 @@ rare_materials         = 5000
 #TAD
 1105 1104 	           
 
-1223 1221 1222 1226 1227 1224 1225 # North Korea
 1542 #South Sahalin
 1543 # Kurils
 
@@ -1887,122 +1885,6 @@ airunit = {
 			type = submarine 
 			model = 3 
 			} 
-		}  						
-	navalunit = { # Kozhanov I.K.
-		id = { type = 10848 id = 5200 } 
-		name = "Chernomorskiy Flot" 
-		location = 641 
-		base = 641 
-		division = { 
-			id = { type = 10848 id = 5201 } 
-			name = "Parizhskaya Kommuna" 
-			type = battleship 
-			model = 2 
-			extra1 = floatplane
-			brigade_model1 = 4
-			extra2 = naval_improved_hull_l
-			brigade_model2 = 0
-			extra3 = naval_fire_controll_l
-			brigade_model3 = 0
-			extra4 = naval_anti_air_l
-			brigade_model4 = 0			
-			} 
-		division = { 
-			id = { type = 10848 id = 5202 } 
-			name = "Krasnyi Kavkaz" 
-			type = heavy_cruiser 
-			model = 2 
-			extra1 = floatplane
-			brigade_model1 = 4
-			} 
-		division = { 
-			id = { type = 10848 id = 5203 } 
-			name = "Krasnyi Krym" 
-			type = light_cruiser 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5204 } 
-			name = "Komintern" 
-			type = light_cruiser 
-			model = 0 
-			} 
-		division = { 
-			id = { type = 10848 id = 5205 } 
-			name = "Chervona Ukraina" 
-			type = light_cruiser 
-			model = 2 
-			} 
-		division = { 
-			id = { type = 10848 id = 8500 } 
-			name = "Voroshilov" 
-			type = heavy_cruiser
-			model = 5 
-			extra1 = floatplane
-			brigade_model1 = 4
-			} 
-		division = { 
-			id = { type = 10848 id = 8502 } 
-			name = "Molotov" 
-			type = heavy_cruiser
-			model = 5 
-			extra1 = floatplane
-			brigade_model1 = 4
-			} 
-		division = { 
-			id = { type = 10848 id = 5207 } 
-			name = "6. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 5502 } 
-			name = "7. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5503 } 
-			name = "12. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5504 } 
-			name = "13. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5302 } 
-			name = "11. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 6011 } 
-			name = "12. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			}
-		division = { 
-			id = { type = 10848 id = 5172 } 
-			name = "13. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5173 } 
-			name = "14. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			}
-		division = { 
-			id = { type = 10848 id = 6012 } 
-			name = "15. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
 		} 
 	navalunit = { # Viktorov M.V.
 		id = { type = 10848 id = 5515 } 
