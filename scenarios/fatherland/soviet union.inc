@@ -116,7 +116,7 @@ rare_materials         = 5000
 #TAD
 1105 1104 	 
 
-1223 1221 1222 1226 1227 1224 1225 # North Korea
+#1223 1221 1222 1226 1227 1224 1225 # North Korea
 1542 #South Sahalin
 1543 # Kurils
 
@@ -159,7 +159,7 @@ rare_materials         = 5000
 #TAD
 1105 1104 	           
 
-1223 1221 1222 1226 1227 1224 1225 # North Korea
+#1223 1221 1222 1226 1227 1224 1225 # North Korea
 1542 #South Sahalin
 1543 # Kurils
 
