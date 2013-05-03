@@ -150,6 +150,12 @@ event = {
 	command = { type = setflag which = RadicalItaly }
 	command = { type = sleepevent which = 90000609 }
 	command = { type = domestic which = political_left value = -1 }
+	command = { type = sleepminister which = 25002 }
+	command = { type = sleepminister which = 25004 }
+	command = { type = sleepminister which = 25173 }
+	command = { type = sleepminister which = 25188 }
+	command = { type = sleepminister which = 25230 }
+	command = { type = headofgovernment which = 25025 }
 	command = { type = dissent value = 2 }
 	}
 	action_b = {
@@ -162,6 +168,12 @@ event = {
 	command = { type = sleepevent which = 90000606 }
 	command = { type = sleepevent which = 90000609 }
 	command = { type = domestic which = political_left value = 1 } 
+	command = { type = sleepminister which = 25002 }
+	command = { type = sleepminister which = 25004 }
+	command = { type = sleepminister which = 25173 }
+	command = { type = sleepminister which = 25188 }
+	command = { type = sleepminister which = 25230 }
+	command = { type = headofgovernment which = 25026 }
 	command = { type = dissent value = 1 }
 	}
 }
