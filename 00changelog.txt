@@ -5,6 +5,18 @@
 # Events/Decisions:
 - Integration of Mobilization System (Thanks to Tonie112)
 
+# Scenario files (INC):
+- Review of USA (Ticket Cookie)
+- Set-up of US-occupied Korean Peninsula (Ticket Cookie)
+- Review with NWO of minors regional powers of North and South America (Argentina,Canada,Chile,Columbia,
+	Costa Rica,Cuba,Dominican Republic,Ecuador,Guatemala,Haiti,Honduras,Mexico,Nicaragua,Panama,Paraguay,
+	Peru,San Salvador,Urugay,Venezuela) (Ticket Cookie)
+- Minor changes UK (Newfoundland reworked) (Ticket Cookie)
+- Rebase 12th and 15th USAF from Southern Italy to Korea (Ticket Cookie)
+
+# Scenario files (OOB):
+- New German Black Sea Fleet made with converted Soviet vessels (Ticket Cookie)
+
 # AI
 - Completely reworked AI for major (UK,Germany,Italy,USSR,USA,France) (Thanks to Tonie112)
 
