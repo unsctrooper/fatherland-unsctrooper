@@ -1565,7 +1565,7 @@ event = {
 	command = { type = dissent value = -1 }
 	command = { type = addcore which = 332 } 
 	command = { type = construct which = infrastructure where = 332 value = 10 }
-	command = { type = addclaim which = 335 } 
+	command = { type = addcore which = 335 } 
 	}
 }
 event = {
