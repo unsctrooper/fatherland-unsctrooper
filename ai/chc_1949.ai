@@ -27,6 +27,9 @@ claim_acceptance = -59
 demand_claims = {
 
 }
+
+liberate = { PRK }
+
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = {  
 	CHI = 6
