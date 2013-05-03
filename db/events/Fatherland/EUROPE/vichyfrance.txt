@@ -72,6 +72,7 @@ trigger = {
 	action = {
 			name = "351A"
 			ai_chance = 60
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
 			command = { type = relation which = GER value = 50 }		
@@ -91,6 +92,7 @@ trigger = {
 	action = {
 			name = "351B"
 			ai_chance = 30
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5393 }
 			command = { type = headofgovernment which = 5197 }	
             command = { type = relation which = GER value = 50 }					
@@ -111,6 +113,7 @@ trigger = {
 	action = {
 			name = "351C"
 			ai_chance = 5
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5395 }
 			command = { type = headofgovernment which = 5381 }
 		    command = { type = set_domestic which = democratic value = 1 }
@@ -132,6 +135,7 @@ trigger = {
 	action = {
 			name = "351D"
 			ai_chance = 5
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5396 }
 			command = { type = headofgovernment which = 5284 }
 		    command = { type = set_domestic which = democratic value = 7 }
