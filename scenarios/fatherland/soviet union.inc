@@ -1,4 +1,4 @@
- ############################## 
+  ############################## 
  # Country definition for SOV # 
  ############################## 
 
@@ -366,9 +366,7 @@ inventions = { 3000027 }
        name     = "Generalnyi Shtab RKKA" 
        strength = 100
        type     = HQ
-	   model    = 4
-	   extra    = artillery
-	   brigade_model    = 10	
+	   model    = 4	
 	   } 
  } 
    landunit = 
