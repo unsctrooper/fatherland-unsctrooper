@@ -12,7 +12,7 @@
    regular_id             = RUS 
    intrinsic_gov_type     = leninist 
    #ground_def_eff         = 0.88
-   capital                = 572 
+   capital                = 1138 
    # Resource Reserves 
 energy                 = 50000
 metal                  = 50000
@@ -116,7 +116,6 @@ rare_materials         = 5000
 #TAD
 1105 1104 	 
 
-#1223 1221 1222 1226 1227 1224 1225 # North Korea
 1542 #South Sahalin
 1543 # Kurils
 
@@ -159,7 +158,6 @@ rare_materials         = 5000
 #TAD
 1105 1104 	           
 
-#1223 1221 1222 1226 1227 1224 1225 # North Korea
 1542 #South Sahalin
 1543 # Kurils
 
@@ -1889,12 +1887,12 @@ airunit = {
 			} 
 		}  						
 	navalunit = { # Kozhanov I.K.
-		id = { type = 10848 id = 5200 } 
+		id = { type = 10848 id = 9000 } 
 		name = "Chernomorskiy Flot" 
 		location = 641 
 		base = 641 
 		division = { 
-			id = { type = 10848 id = 5201 } 
+			id = { type = 10848 id = 9001 } 
 			name = "Parizhskaya Kommuna" 
 			type = battleship 
 			model = 2 
@@ -1908,7 +1906,7 @@ airunit = {
 			brigade_model4 = 0			
 			} 
 		division = { 
-			id = { type = 10848 id = 5202 } 
+			id = { type = 10848 id = 9002 } 
 			name = "Krasnyi Kavkaz" 
 			type = heavy_cruiser 
 			model = 2 
@@ -1916,25 +1914,25 @@ airunit = {
 			brigade_model1 = 4
 			} 
 		division = { 
-			id = { type = 10848 id = 5203 } 
+			id = { type = 10848 id = 9003 } 
 			name = "Krasnyi Krym" 
 			type = light_cruiser 
 			model = 3 
 			} 
 		division = { 
-			id = { type = 10848 id = 5204 } 
+			id = { type = 10848 id = 9004 } 
 			name = "Komintern" 
 			type = light_cruiser 
 			model = 0 
 			} 
 		division = { 
-			id = { type = 10848 id = 5205 } 
+			id = { type = 10848 id = 9005 } 
 			name = "Chervona Ukraina" 
 			type = light_cruiser 
 			model = 2 
 			} 
 		division = { 
-			id = { type = 10848 id = 8500 } 
+			id = { type = 10848 id = 9006 } 
 			name = "Voroshilov" 
 			type = heavy_cruiser
 			model = 5 
@@ -1942,7 +1940,7 @@ airunit = {
 			brigade_model1 = 4
 			} 
 		division = { 
-			id = { type = 10848 id = 8502 } 
+			id = { type = 10848 id = 9007 } 
 			name = "Molotov" 
 			type = heavy_cruiser
 			model = 5 
@@ -1950,55 +1948,55 @@ airunit = {
 			brigade_model1 = 4
 			} 
 		division = { 
-			id = { type = 10848 id = 5207 } 
+			id = { type = 10848 id = 9010 } 
 			name = "6. Divizion Esmintsev" 
 			type = destroyer 
 			model = 3 
 			}
 		division = { 
-			id = { type = 10848 id = 5502 } 
+			id = { type = 10848 id = 9011 } 
 			name = "7. Divizion Esmintsev" 
 			type = destroyer 
 			model = 3 
 			} 
 		division = { 
-			id = { type = 10848 id = 5503 } 
+			id = { type = 10848 id = 9012 } 
 			name = "12. Divizion Esmintsev" 
 			type = destroyer 
 			model = 3 
 			} 
 		division = { 
-			id = { type = 10848 id = 5504 } 
+			id = { type = 10848 id = 9013 } 
 			name = "13. Divizion Esmintsev" 
 			type = destroyer 
 			model = 3 
 			} 
 		division = { 
-			id = { type = 10848 id = 5302 } 
+			id = { type = 10848 id = 9014 } 
 			name = "11. Divizion Podlodok" 
 			type = submarine 
 			model = 3 
 			} 
 		division = { 
-			id = { type = 10848 id = 6011 } 
+			id = { type = 10848 id = 9015 } 
 			name = "12. Divizion Podlodok" 
 			type = submarine 
 			model = 2 
 			}
 		division = { 
-			id = { type = 10848 id = 5172 } 
+			id = { type = 10848 id = 9016 } 
 			name = "13. Divizion Podlodok" 
 			type = submarine 
 			model = 3 
 			} 
 		division = { 
-			id = { type = 10848 id = 5173 } 
+			id = { type = 10848 id = 9017 } 
 			name = "14. Divizion Podlodok" 
 			type = submarine 
 			model = 2 
 			}
 		division = { 
-			id = { type = 10848 id = 6012 } 
+			id = { type = 10848 id = 9018 } 
 			name = "15. Divizion Podlodok" 
 			type = submarine 
 			model = 3 
