@@ -10,7 +10,6 @@
  country = 
  { # tag                    = RUS 
 	tag                    = UTC 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes } }
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
@@ -18,7 +17,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    name = "Lokot Republic"
    
    capital                = 163 
-   manpower               = 0
+   manpower               = 50
    transports             = 10 
    escorts                = 0 
    #ground_def_eff         = 0.82 

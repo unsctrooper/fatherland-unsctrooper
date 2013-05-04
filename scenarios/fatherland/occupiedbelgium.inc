@@ -9,7 +9,6 @@
   
  country = 
  {  tag                    = U47 # Reichskommissariat Belgien-Nordfrankreich 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes } }
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
