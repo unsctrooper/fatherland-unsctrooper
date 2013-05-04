@@ -426,8 +426,6 @@ inventions = { 3000027 }
        type     = motorized 
        model    = 1 
        strength = 70 
-       extra    = anti_tank
-       brigade_model = 2
       } 
      division = 
      { id       = {  type = 13500 id = 619  } 
@@ -472,8 +470,6 @@ inventions = { 3000027 }
        type     = bergsjaeger 
        model    = 10 
        strength = 60 
-       extra    = anti_tank
-       brigade_model = 2
       } 
      division = 
      { id       = {  type = 13500 id = 613  } 
@@ -854,8 +850,6 @@ landunit =
        type     = infantry 
        model    = 8 
        strength = 40 
-       extra    = anti_tank
-       brigade_model = 0
       } 
     } 
    landunit = 

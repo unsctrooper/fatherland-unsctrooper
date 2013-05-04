@@ -320,8 +320,6 @@ rare_materials         = 5000
        strength = 60 
        type     = infantry 
 	   model    = 10
-       extra    = anti_tank 
-	   brigade_model = 1
       } 
     } 
    landunit = 

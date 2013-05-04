@@ -1400,8 +1400,6 @@ landunit =
        type     = bergsjaeger 
        model    = 11 
        strength = 80
-       extra    = armored_car
-       brigade_model = 5
        experience = 60
       }
       division = 
@@ -1571,8 +1569,6 @@ landunit =
        type     = mechanized 
        model    = 0 
        strength = 50 
-       extra    = police
-       brigade_model = 1
        experience = 80
       }
      
@@ -1723,8 +1719,6 @@ landunit =
        model    = 0 
        strength = 50 
        max_strength = 50
-       extra    = police
-       brigade_model = 1
        experience = 80
       }
      division = 
@@ -2336,8 +2330,6 @@ landunit =
        model    = 2 
        strength = 65 
        experience = 80
-       extra    = anti_air
-       brigade_model = 4
       }
      division = 
      { id       = {  type = 14500 id = 325  } 
@@ -2346,8 +2338,6 @@ landunit =
        model    = 2 
        strength = 65 
        experience = 80
-       extra    = anti_air
-       brigade_model = 4
       }
      division = 
      { id       = {  type = 14500 id = 326  } 
@@ -2356,8 +2346,6 @@ landunit =
        model    = 11 
        strength = 80
        experience = 80
-       extra    = sp_artillery
-       brigade_model = 2
       }
      division = 
      { id       = {  type = 14500 id = 327  } 
@@ -2716,8 +2704,6 @@ landunit =
        type     = mechanized 
        model    = 0 
        strength = 65 
-       extra    = anti_air
-       brigade_model = 4
        experience = 80
       }
        
@@ -2994,8 +2980,6 @@ landunit =
        model    = 2 
        strength = 65 
        experience = 80
-       extra    = anti_air
-       brigade_model = 4
       }
 	    division = 
      { id       = {  type = 14500 id = 287  } 
@@ -3004,8 +2988,6 @@ landunit =
        model    = 2 
        strength = 65 
        experience = 80
-       extra    = anti_air
-       brigade_model = 4
       }
      division = 
      { id       = {  type = 14500 id = 288  } 
@@ -4189,8 +4171,6 @@ landunit =
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
 	brigade_model2 = 0
-	extra3 = naval_radar_l
-	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 807  } 
@@ -4201,8 +4181,6 @@ landunit =
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
 	brigade_model2 = 0
-	extra3 = naval_radar_l
-	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 808  } 
@@ -4213,8 +4191,6 @@ landunit =
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
 	brigade_model2 = 0
-	extra3 = naval_radar_l
-	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 809  } 
@@ -4225,32 +4201,24 @@ landunit =
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
 	brigade_model2 = 0
-	extra3 = naval_radar_l
-	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 810  } 
        name  = "Nürnberg" 
        type  = light_cruiser 
        model = 4 
-	extra1 = naval_radar_l
-	brigade_model1 = 3
       } 
 	  Division = 
      {  id    = {  type = 14500 id = 811  } 
        name  = "Emden" 
        type  = light_cruiser 
        model = 3 
-	extra1 = naval_radar_l
-	brigade_model1 = 3
       } 
 	  Division = 
      {  id    = {  type = 14500 id = 812  } 
        name  = "Köln" 
        type  = light_cruiser 
        model = 3 
-	extra1 = naval_radar_l
-	brigade_model1 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 813  } 

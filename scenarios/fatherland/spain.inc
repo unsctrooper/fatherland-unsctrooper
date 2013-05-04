@@ -266,12 +266,6 @@ country = {
 			name = "Canarias"
 			type = heavy_cruiser
 			model = 6
-			extra1 = none
-			extra2 = naval_fire_controll_l
-			extra3 = naval_anti_air_l
-			brigade_model1 = 0
-			brigade_model2 = 1
-			brigade_model3 = 2
 		}
 		division = {
 			id = { type = 25000 id = 502 }
