@@ -285,13 +285,13 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 inventions = { 3000027 3000028 3000012 }
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
-     democratic        = 8 
+     democratic        = 10 
      political_left    = 2 
-     freedom           = 8 
+     freedom           = 10
      free_market       = 8 
      professional_army = 6 
-     defense_lobby     = 7 
-     interventionism   = 6 
+     defense_lobby     = 10
+     interventionism   = 10
     }
    headofstate            = {  type = 9 id = 10014  } 
    headofgovernment       = {  type = 9 id = 10018  } 
@@ -308,3391 +308,3608 @@ inventions = { 3000027 3000028 3000012 }
                             }
    dormant_leaders        = {  10083 10313  }
   
-   # ## United Kingdom Land OOB ### 
-   landunit = 
-   {  name     = "Aldershot Command" 
-     location = 27 
-     id       = {  type = 12700 id = 1  } 
-     Division = 
-     {  id       = {  type = 12700 id = 63  } 
-       name     = "British Army HQ" 
-       type     = hq 
-       model    = 4 
-       strength = 100
-       experience = 30 
-      }
-     Division = 
-     {  id            = {  type = 12700 id = 1902  } 
-       name 	= "1st Airborne Division" 
-       type     = paratrooper 
-	   model    = 2
-       strength = 20
-       extra    = glider_artillery
-       brigade_model = 1	   
-       experience = 50
-      } 
-     Division = 
-     {  id       = {  type = 12700 id = 1502  } 
-       name     = "50th (Northumbrian) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 90
-       experience = 40
-      }  
-    } 
-   landunit = 
-   {  name     = "Southern Command" 
-     location = 26 
-     id       = {  type = 12700 id = 6  } 
-     Division = 
-     {  id       = {  type = 12700 id = 506  } 
-       name     = "48th (South Midland) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 100
-       experience = 30 
-      }
-    } 
-   landunit = 
-   {  name     = "Western Command" 
-     location = 17 
-     id       = {  type = 12700 id = 514  } 
-     Division = 
-     {  id       = {  type = 12700 id = 517  } 
-       name     = "55th (West Lancashire) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 100
-       experience = 30 
-      }  
-    } 
-   landunit = 
-   {  name     = "Eastern Command" 
-     location = 25 
-     id       = {  type = 12700 id = 521  } 
-     Division = 
-     {  id       = {  type = 12700 id = 508  } 
-       name     = "61st (South Midland) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 100
-       experience = 30 
-      }  
-    } 
-   landunit = 
-   {  name     = "London District" 
-     location = 29 
-     id       = {  type = 12700 id = 527  } 
-     Division = 
-     {  id       = {  type = 12700 id = 528  } 
-       name     = "47th (London) Division" 
-       type     = motorized 
-	   model    = 2
-       strength = 100
-       extra    = anti_air
-       brigade_model = 4
-       experience = 30 
-      }  
-    } 
-   landunit = 
-   {  name     = "XIII Corps" 
-     location = 28 
-     id       = {  type = 12700 id = 1000  } 
-     Division = 
-     {  id       = {  type = 12700 id = 5050  } 
-       name     = "1st Armoured Div. (Royal Hussars)" 
-       type     = armor 
-	   model    = 2
-       strength = 80
-       experience = 50
-      }   
-     Division = 
-     {  id       = {  type = 12700 id = 1920  } 
-       name     = "6th Armoured Division" 
-       type     = armor 
-	   model    = 2
-       strength = 70
-       extra    = heavy_armor
-       brigade_model = 1
-       experience = 30
-      } 
-    } 
-   landunit = 
-   {  name     = "2nd Army" 
-      leader   = 10078 # Dempsey
-     location = 29 
-     id       = {  type = 12700 id = 3805  } 
-     Division = 
-     {  id       = {  type = 12700 id = 3806  } 
-       name     = "2nd Army" 
-       type     = hq 
-       model    = 4 
-       strength = 100
-       extra    = anti_air
-       brigade_model = 4
-       experience = 30
-      }
-     Division = 
-     {  id            = {  type = 12700 id = 3800  } 
-       name 	= "6th Airborne Division" 
-       type     = paratrooper 
-	   model    = 2
-       strength = 80
-       extra    = glider_artillery
-       brigade_model = 1	   
-       experience = 30
-      } 
-     Division = 
-     {  id       = {  type = 12700 id = 1501  } 
-       name     = "49th (West Riding) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 100
-       experience = 40
-      } 
-    } 
-   landunit = 
-   {  name     = "XII Corps" 
-     location = 29 
-     id       = {  type = 12700 id = 3813  } 
-     Division = 
-     {  id       = {  type = 12700 id = 7  } 
-       name     = "3rd Infantry Division" 
-       type     = motorized 
-       strength = 90
-	   model    = 2
-       extra    = sp_artillery
-       brigade_model = 0
-       experience = 40
-      } 
-     Division = 
-     {  id       = {  type = 12700 id = 513  } 
-       name     = "15th (Scottish) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 85
-       experience = 30
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 512  } 
-       name     = "51st (Highland) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 85
-       extra    = sp_artillery
-       brigade_model = 0
-       experience = 40
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 511  } 
-       name     = "52nd (Lowland) Division" 
-       type     = infantry 
-	   model    = 11
-	   extra = amph_armor
-	   brigade_model = 0			
-       strength = 80
-       experience = 30 
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 1900  } 
-       name     = "7th Armoured Division" 
-       type     = armor
-	   model    = 2
-       strength = 75
-       experience = 40
-      } 
-     Division = 
-     {  id       = {  type = 12700 id = 1508  } 
-       name     = "79th Armoured Division" 
-       type     = armor 
-	   model    = 1
-       strength = 60
-       extra    = armored_car
-       brigade_model = 5
-       experience = 30 
-      } 
-    } 
-   landunit = 
-   {  name     = "XXX Corps" 
-     location = 28 
-     id       = {  type = 12700 id = 3814  } 
-     Division = 
-     {  id       = {  type = 12700 id = 505  } 
-       name     = "43rd (Wessex) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 85
-       experience = 40
-      }    
-     Division = 
-     {  id       = {  type = 12700 id = 516  } 
-       name     = "53rd (Welsh) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 85
-       experience = 30 
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 1941  } 
-       name     = "Guards Armoured Division" 
-       type     = armor 
-	   model    = 2
-       strength = 80
-       experience = 30 
-      }   
-     Division = 
-     {  id       = {  type = 12700 id = 1925  } 
-       name     = "11th Armoured Division" 
-       type     = armor 
-	   model    = 2
-       strength = 55
-       experience = 20
-      } 
-    } 
-   landunit = 
-   {  name     = "8th Army" 
-      leader   = 10178 # McCreery
-     location = 28 
-     id       = {  type = 12700 id = 1930  } 
-     Division = 
-     {  id       = {  type = 12700 id = 1931  } 
-       name     = "8th Army" 
-       type     = hq 
-       model    = 4 
-       strength = 70
-       extra    = anti_air
-       brigade_model = 4
-       experience = 40
-      }
-     Division = 
-     {  id       = {  type = 12700 id = 5  } 
-       name     = "5th Infantry Division" 
-       type     = motorized 
-	   model    = 2
-       strength = 100
-       experience = 40
-      }
-    } 
-   landunit = 
-   {  name     = "V Corps" 
-     location = 28 
-     id       = {  type = 12700 id = 3816  } 
-     Division = 
-     {  id            = {  type = 12700 id = 2  } 
-       name 	= "1st Infantry Division" 
-       type 	= motorized
-	   model 	= 2
-       strength = 100
-	   extra 	= light_armor_brigade
-	   brigade_model = 3
-       experience = 30
-      } 
-     Division = 
-     {  id       = {  type = 12700 id = 529  } 
-       name     = "56th (London) Division" 
-       type     = motorized 
-	   model    = 2
-       strength = 80
-       extra    = anti_air
-       brigade_model = 4
-       experience = 30 
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 1505  } 
-       name     = "78th Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 80
-       experience = 40
-      }  
-    } 
-   landunit = 
-   {  name     = "2 Korpus Wojska Polskiego" 
-     location = 28 
-     id       = {  type = 12700 id = 3807  } 
-     Division = 
-     {  id       = {  type = 12700 id = 3808  } 
-       name     = "3 Dywizja Strzelców Karpackich" 
-       type     = infantry 
-	   model    = 11
-       strength = 80
-       experience = 30
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 3809  } 
-       name     = "5 Kresowa Dywizja Piechoty" 
-       type     = infantry 
-	   model    = 11
-       strength = 80
-       experience = 30
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 3810  } 
-       name     = "7 Dywizja Piechoty" 
-       type     = infantry 
-	   model    = 11
-       strength = 80
-       experience = 30
-      }  
-     Division = 
-     {  id       = {  type = 12700 id = 3815  } 
-       name     = "2 Warszawska Dywizja Pancerna" 
-       type     = light_armor 
-	   model    = 2
-       strength = 40
-      }  
-    } 
-   landunit = 
-   {  name     = "1 Dywizja Pancerna" 
-     location = 29 
-     id       = {  type = 12700 id = 3811  } 
-     Division = 
-     {  id       = {  type = 12700 id = 3812  } 
-       name     = "1 Dywizja Pancerna" 
-       type     = armor 
-	   model    = 1
-       strength = 60
-      }  
-    } 
-   landunit = 
-   {  name     = "III Corps" 
-     location = 28 
-     id       = {  type = 12700 id = 1935  } 
-     Division = 
-     {  id       = {  type = 12700 id = 522  } 
-       name     = "4th Infantry Division" 
-       type     = motorized 
-       strength = 100
-	   model    = 2
-	   extra    = anti_air
-       brigade_model = 4
-       experience = 30
-      } 
-     Division = 
-     {  id       = {  type = 12700 id = 1504  } 
-       name     = "46th (West Riding) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 100
-       experience = 30 
-      }   
-    } 
-   landunit = 
-   {  name     = "81st Division" 
-     location = 1450 
-     id       = {  type = 12700 id = 282  } 
-     Division = 
-     {  id       = {  type = 12700 id = 3801  } 
-       name     = "81st (West Africa) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 80
-      } 
-    } 
-   landunit = 
-   {  name     = "82nd Division" 
-     location = 1511 
-     id       = {  type = 12700 id = 283  } 
-     Division = 
-     {  id       = {  type = 12700 id = 3802  } 
-       name     = "82nd (West Africa) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 80
-      } 
-    } 
-   landunit = 
-   {  name     = "British Troops on Gibraltar" 
-     location = 348 
-     id       = {  type = 12700 id = 12  } 
-     Division = 
-     {  id       = {  type = 12700 id = 13  } 
-       name     = "Gibraltar Defence Force" 
-       type     = garrison 
-	   model    = 5
-       strength = 25
-       locked   = yes 
-      } 
-    } 
-   landunit = 
-   {  name     = "Ceylon Command" 
-     location = 1511 
-     id       = {  type = 12700 id = 14  } 
-     Division = 
-     {  id       = {  type = 12700 id = 15  } 
-       name     = "Ceylon Defence Force" 
-       type     = militia 
-	   model    = 5
-       strength = 80
-      } 
-    } 
-   landunit = 
-   {  name     = "Malta Command" 
-     location = 429 
-     id       = {  type = 12700 id = 16  } 
-     Division = 
-     {  id       = {  type = 12700 id = 17  } 
-       name     = "Malta Defence Force" 
-       type     = garrison 
-	   model    = 5
-       strength = 35
-       locked   = yes 
-      } 
-    } 
-   landunit = 
-   {  name     = "14th Army" 
-      #leader   = ##### # Slim
-     location = 1441 
-     id       = {  type = 12700 id = 1938  } 
-     Division = 
-     {  id       = {  type = 12700 id = 1939  } 
-       name     = "14th Army" 
-       type     = hq 
-       model    = 4 
-       strength = 80
-       extra    = anti_air
-       brigade_model = 4
-       experience = 30 
-      }
-     Division = 
-     {  id       = {  type = 12700 id = 4800  } 
-       name     = "11th (East Africa) Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 100
-      } 
-    } 
-   landunit = 
-   {  name     = "2nd Division" 
-     location = 1442 
-     id       = {  type = 12700 id = 1901  } 
-     Division = 
-     {  id       = {  type = 12700 id = 3  } 
-       name     = "2nd Infantry Division" 
-       type     = infantry
-		model   = 11	   
-       strength = 80
-	   extra    = light_armor_brigade
-	   brigade_model = 2
-       experience = 30 
-      } 
-    } 
-   landunit = 
-   {  name     = "70th Division" 
-     location = 1450 
-     id       = {  type = 12700 id = 1940  } 
-     Division = 
-     {  id       = {  type = 12700 id = 19  } 
-       name     = "70th Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 40
-       experience = 30 
-      } 
-    }
-   landunit = 
-   {  name     = "9th Army" 
-      #leader   = ##### # Holmes
-     location = 1172 
-     id       = {  type = 12700 id = 1936  } 
-     Division = 
-     {  id       = {  type = 12700 id = 1937  } 
-       name     = "9th Army" 
-       type     = hq 
-       model    = 4 
-       strength = 80
-       extra    = anti_air
-       brigade_model = 4
-      }
-     Division = 
-     {  id       = {  type = 12700 id = 531  } 
-       name     = "8th Infantry Division" 
-       type     = infantry 
-	   model    = 11
-       strength = 20
-      }
-    }
- landunit = 
-   {  name     = "Gold Coast Defence Force" 
-     location = 956 
-     id       = {  type = 12700 id = 43  } 
-     Division = 
-     {  id       = {  type = 12700 id = 44  } 
-       name     = "The Gold Coast Regiment" 
-       type     = militia 
-	   model    = 5
-       strength = 30
-      } 
-    } 
-   landunit = 
-   {  name     = "British troops in the Sudan" 
-     location = 810 
-     id       = {  type = 12700 id = 45  } 
-     Division = 
-     {  id       = {  type = 12700 id = 46  } 
-       name     = "Sudan Defence Force" 
-       type     = militia 
-	   model    = 5
-       strength = 40
-      } 
-    } 
-   landunit = 
-   {  name     = "Southern Rhodesia Defence Force" 
-     location = 867 
-     id       = {  type = 12700 id = 47  } 
-     Division = 
-     {  id       = {  type = 12700 id = 48  } 
-       name     = "Southern Rhodesia Defence Force" 
-       type     = militia 
-	   model    = 5
-       strength = 30
-      } 
-    } 
-   landunit = 
-   {  name     = "East Africa Force" 
-     location = 841 
-     id       = {  type = 12700 id = 55  } 
-     Division = 
-     {  id       = {  type = 12700 id = 56  } 
-       name     = "King's African Rifles" 
-       type     = militia 
-	   model    = 5
-       strength = 70
-      } 
-    }
-   # ################# 
-   # Royal Navy # 
-   # ################# 
+	landunit = {
+		id = { type = 30251 id = 1 }
+		name = "I Corps"
+		location = 15
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 1 }
+			name = "3rd Infantry Division"
+			extra = engineer
+			brigade_model = 5
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 2 }
+			name = "49th (West Riding) Infantry Division"
+			extra = sp_artillery
+			brigade_model = 3
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 3 }
+			name = "53rd (Welsh) Infantry Division"
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 4 }
+			name = "52nd (Lowland) Infantry Division"
+			extra = anti_air
+			brigade_model = 4
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 5 }
+			name = "Guards Infantry Division"
+			extra = light_armor_brigade
+			brigade_model = 7
+		}
+				division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 35 }
+			name = "13th Infantry Division"
+			extra = sp_artillery
+			brigade_model = 3
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 36 }
+			name = "51rd Infantry Division"
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 37 }
+			name = "61nd Infantry Division"
+			extra = anti_air
+			brigade_model = 4
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 38 }
+			name = "6th Infranty Division"
+			extra = light_armor_brigade
+			brigade_model = 7
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 11 }
+		name = "Paratroop Division"
+		location = 7
+		division = {
+			type = paratrooper
+			model = 2
+			id = { type = 30254 id = 39 }
+			name = "1st Parachute Brigade"
+			strength = 50
+			max_strength = 50
+		}
+		division = {
+			type = paratrooper
+			model = 2
+			id = { type = 30254 id = 40 }
+			name = "2nd Parachute Brigade"
+			strength = 50
+			max_strength = 50
+		}
+		division = {
+			type = paratrooper
+			model = 2
+			id = { type = 30254 id = 41 }
+			name = "3nd Parachute Brigade"
+			strength = 50
+			max_strength = 50
+		}
+	}
+		landunit = {
+		id = { type = 30251 id = 12 }
+		name = "Marine Division"
+		location = 5
+		division = {
+			type = marine
+			model = 5
+			id = { type = 30254 id = 42 }
+			name = "1st Marine Brigade"
+			extra = engineer
+			strength = 50
+			max_strength = 50
+		}
+		division = {
+			type = marine
+			model = 5
+			id = { type = 30254 id = 43 }
+			name = "2nd Marine Brigade"
+			extra = engineer
+			strength = 50
+			max_strength = 50
+		}
+		division = {
+			type = marine
+			model = 5
+			id = { type = 30254 id = 44 }
+			name = "3nd Marine Brigade"
+			extra = engineer
+			strength = 50
+			max_strength = 50
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 2 }
+		name = "VIII Corps"
+		location = 29
+		division = {
+			type = armor
+			model = 3
+			id = { type = 30254 id = 7 }
+			name = "7th Armoured Division"
+			extra = heavy_armor
+			brigade_model = 3
+		}
+		division = {
+			type = armor
+			model = 3
+			id = { type = 30254 id = 8 }
+			name = "11th Armoured Division"
+			extra = tank_destroyer
+			brigade_model = 3
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 9 }
+			name = "55th (West Lancashire) Infantry Division"
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 10 }
+			name = "77th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 11 }
+			name = "15th (Scottish) Infantry Division"
+			
+			extra = engineer
+			brigade_model = 5
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 3 }
+		name = "XXX Corps"
+		location = 25
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 12 }
+			name = "43rd (Wessex) Infantry Division"
+			
+			extra = engineer
+			brigade_model = 5
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 13 }
+			name = "5th Infantry Division"
+			
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 14 }
+			name = "51st (Highland) Infantry Division"
+			
+			extra = engineer
+			brigade_model = 5
+		}
+		division = {
+			type = armor
+			model = 3
+			id = { type = 30254 id = 15 }
+			name = "Guards Armoured Division"
+			extra = heavy_armor
+			brigade_model = 3
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 16 }
+			name = "305th Infantry Brigade"
+			strength = 35
+			max_strength = 35
+			
+			extra = anti_air
+			brigade_model = 4
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 17 }
+			name = "301st Infantry Division"
+			strength = 35
+			max_strength = 35
+			
+			extra = tank_destroyer
+			brigade_model = 3
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 4 }
+		name = "West Command HQ"
+		location = 17
+		division = {
+			type = hq
+			model = 4
+			id = { type = 30254 id = 18 }
+			name = "West Command HQ"
+			extra = anti_air
+			brigade_model = 4
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 45 }
+			name = "71th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 46 }
+			name = "44th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 5 }
+		name = "East Command HQ"
+		location = 28
+		division = {
+			type = hq
+			model = 4
+			id = { type = 30254 id = 19 }
+			name = "East Command HQ"
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 47 }
+			name = "33th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 48 }
+			name = "21th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 6 }
+		name = "V Corps"
+		location = 16
+		division = {
+			type = armor
+			model = 3
+			id = { type = 30254 id = 20 }
+			name = "6th Armoured Division"
+			
+			extra = heavy_armor
+			brigade_model = 3
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 21 }
+			name = "56th (London) Infantry Division"
+			extra = light_armor_brigade
+			brigade_model = 7
+		}
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 22 }
+			name = "78th Infantry Division"
+			
+			extra = light_armor_brigade
+			brigade_model = 7
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 8 }
+		name = "X Corps"
+		location = 24
+		division = {
+			type = mechanized
+			model = 1
+			id = { type = 30254 id = 25 }
+			name = "10th Mechanized Division"
+			
+			extra = sp_artillery
+			brigade_model = 3
+		}
+		division = {
+			type = mechanized
+			model = 1
+			id = { type = 30254 id = 26 }
+			name = "4th Mechanized Division"
+			
+			extra = tank_destroyer
+			brigade_model = 3
+		}
+		division = {
+			type = mechanized
+			model = 1
+			id = { type = 30254 id = 27 }
+			name = "1st Mechanized Division"
+			extra = sp_artillery			
+			brigade_model = 11
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 9 }
+		name = "14th Army HQ"
+		location = 1432
+		division = {
+			type = hq
+			model = 4
+			id = { type = 30254 id = 29 }
+			name = "14th Army HQ"
+			extra = engineer
+			brigade_model = 5
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 49 }
+			name = "4th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+		division = {
+			type = infantry
+			model = 12
+			id = { type = 30254 id = 50 }
+			name = "11th Infantry Division "
+			extra = artillery
+			brigade_model = 11
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 10 }
+		name = "XV Corps"
+		location = 29
+		division = {
+			type = motorized
+			model = 3
+			id = { type = 30254 id = 30 }
+			name = "82nd Infantry Division"
+		}
+		division = {
+			type = mechanized
+			model = 1
+			id = { type = 30254 id = 31 }
+			name = "81st Mechanized Division"
+		}
+		division = {
+			type = mechanized
+			model = 1
+			id = { type = 30254 id = 32 }
+			name = "26th Mechanized Division"
+		}
+		division = {
+			type = armor
+			model = 3
+			id = { type = 30254 id = 33 }
+			name = "11th Armored Division"
+			extra = sp_artillery
+			brigade_model = 3
+		}
+		division = {
+			type = armor
+			model = 3
+			id = { type = 30254 id = 34 }
+			name = "12th Armored Division"
+			extra = sp_artillery
+			brigade_model = 3
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 13 }
+		name = "Norwich Garrison"
+		location = 25
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 49 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 50 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 51 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 14 }
+		name = "Dover Garrison"
+		location = 26
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 49 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 50 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 51 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 15 }
+		name = "Portsmouth Garrison"
+		location = 27
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 52 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 53 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 54 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 16 }
+		name = "Plymouth Garrison"
+		location = 23
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 55 }
+			name = "Beach Defense"
+            experience = 20
+		}
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 56 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 17 }
+		name = "Cardiff Garrison"
+		location = 22
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 57 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 18 }
+		name = "Manchester Garrison"
+		location = 17
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 57 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 19 }
+		name = "Edinburgh Garrison"
+		location = 11
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 57 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 20 }
+		name = "Glasgow Garrison"
+		location = 12
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 57 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	landunit = {
+		id = { type = 30251 id = 21 }
+		name = "Belfast Garrison"
+		location = 36
+		division = {
+			type = garrison
+			model = 5
+			id = { type = 30254 id = 57 }
+			name = "Beach Defense"
+            experience = 20
+		}
+	}
+	
+	# ######################################################
+	# ############# Active Fleets ###########################
+	# #######################################################
+	# Home Fleet #
+	
 
-	# HOME FLEET
-	navalunit = { 
-		id = { type = 12700 id = 84 } 
-		name = "Home Fleet" 
-		location = 5 
-		base = 5  
-		division = { 
-			id = { type = 12700 id = 93 } 
-			name = "HMS Furious" 
-			type = carrier 
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 208 } 
-			name = "HMS Berwick" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			}
-		division = { 
-			id = { type = 12700 id = 212 } 
-			name = "HMS Kent" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 156 } 
-			name = "HMS Devonshire" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 274 } 
-			name = "HMS Jamaica" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 234 } 
-			name = "HMS Sheffield" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 101 } 
-			name = "Destroyer Division 1" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 102 } 
-			name = "Destroyer Division 2" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 103 } 
-			name = "Destroyer Division 3" 
-			type = destroyer 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 95 } 
-			name = "Destroyer Division 4" 
-			type = destroyer 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 131 } 
-			name = "Destroyer Division 5" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		}
-	# Reserve Fleet
-	navalunit = { 
-		id = { type = 12700 id = 202 } 
-		name = "Reserve Fleet" 
-		location = 36 
-		base = 36  
-		division = { 
-			id = { type = 12700 id = 295 } 
-			name = "HMS Colossus" 
-			type = escort_carrier 
-                        model = 4
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 150 } 
-			name = "HMS Valiant" 
-			type = battleship 
-			model = 4 
-			experience = 30 
-			extra1 = naval_anti_air_l
-			extra2 = naval_fire_controll_l
-			extra3 = floatplane
-			brigade_model3 = 6
-			}
-		division = { 
-			id = { type = 12700 id = 89 } 
-			name = "HMS Resolution" 
-			type = battleship 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 188 } 
-			name = "HMS Norfolk" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			}
-		division = { 
-			id = { type = 12700 id = 218 } 
-			name = "HMS Cardiff" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 196 } 
-			name = "HMS Capetown" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}  
-		division = { 
-			id = { type = 12700 id = 222 } 
-			name = "HMS Dauntless" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 184 } 
-			name = "HMS Carlisle" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 189 } 
-			name = "HMS Diomede" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}  
-		division = { 
-			id = { type = 12700 id = 2161 } 
-			name = "HMS Liverpool" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 230 } 
-			name = "HMS Birmingham" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 264 } 
-			name = "HMS Cleopatra" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 267 } 
-			name = "HMS Bellona" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 132 } 
-			name = "Destroyer Division 6" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 133 } 
-			name = "Destroyer Division 7" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		}
-	# MEDITERRANEAN FLEET
-	navalunit = { 
-		id = { type = 12700 id = 147 } 
-		name = "Mediterranean Fleet" 
-		location = 789 
-		base = 789
-		division = { 
-			id = { type = 12700 id = 2200 } 
-			name = "HMS Dido" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 1670 } 
-			name = "HMS Phoebe" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 270 } 
-			name = "HMS Royalist" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 135 } 
-			name = "Destroyer Division 8" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 136 } 
-			name = "Destroyer Division 9" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 138 } 
-			name = "Destroyer Division 10" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 139 } 
-			name = "Destroyer Division 11" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 141 } 
-			name = "Destroyer Division 12" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 142 } 
-			name = "Destroyer Division 13" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 144 } 
-			name = "Destroyer Division 14" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		}
-	# FORCE A
-	navalunit = { 
-		id = { type = 12700 id = 1470 } 
-		name = "Force A" 
-		location = 27 
-		base = 27
-		division = { 
-			id = { type = 12700 id = 2020 } 
-			name = "HMS Albatross" 
-			type = escort_carrier 
-			model = 0 
-			}
-		division = { 
-			id = { type = 12700 id = 152 } 
-			name = "HMS Warspite" 
-			type = battleship 
-			model = 4 
-			experience = 30 
-			extra1 = naval_anti_air_l
-			extra2 = naval_fire_controll_l
-			extra3 = floatplane
-			brigade_model3 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 90 } 
-			name = "HMS Ramillies" 
-			type = battleship 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 86 } 
-			name = "HMS Rodney" 
-			type = battleship 
-			model = 6 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			}  
-		division = { 
-			id = { type = 12700 id = 85 } 
-			name = "HMS Nelson" 
-			type = battleship 
-			model = 6 
-			experience = 30
-			extra1 = naval_anti_air_l
-			extra2 = floatplane
-			brigade_model2 = 6
-			}
-		division = { 
-			id = { type = 12700 id = 3900 } 
-			name = "HMS Roberts" 
-			type = heavy_cruiser # Roberts-class monitor
-			model = 4 
-			experience = 30 
-			extra1 = naval_fire_controll_l
-			brigade_model1 = 0
-			} 
-		division = { 
-			id = { type = 12700 id = 1807 } 
-			name = "HMS Erebus" 
-			type = heavy_cruiser # Erebus-class monitor
-			model = 2 
-			experience = 30 
-			extra1 = naval_fire_controll_l
-			brigade_model1 = 0
-			} 
-		division = { 
-			id = { type = 12700 id = 221 } 
-			name = "HMS Danae" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 205 } 
-			name = "HMS Frobisher" 
-			type = heavy_cruiser 
-			model = 2 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 207 } 
-			name = "HMS Hawkins" 
-			type = heavy_cruiser 
-			model = 2 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 167 } 
-			name = "HMS Arethusa" 
-			type = light_cruiser 
-			model = 4 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 190 } 
-			name = "HMS Emerald" 
-			type = light_cruiser 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 191 } 
-			name = "HMS Enterprise" 
-			type = light_cruiser 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 165 } 
-			name = "HMS Despatch" 
-			type = light_cruiser 
-			model = 2
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 178 } 
-			name = "ORP Dragon" 
-			type = light_cruiser 
-			model = 2
-			experience = 30 
-                        extra1 = naval_improved_hull_s
-			}
-		division = { 
-			id = { type = 12700 id = 179 } 
-			name = "HMS Ajax" 
-			type = light_cruiser 
-			model = 4 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 100 } 
-			name = "HMS Orion" 
-			type = light_cruiser 
-			model = 4 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 231 } 
-			name = "HMS Glasgow" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 265 } 
-			name = "HMS Scylla" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 262 } 
-			name = "HMS Sirius" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 2168 } 
-			name = "HMS Mauritius" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 219 } 
-			name = "HMS Ceres" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			extra1 = naval_anti_air_s
-			} 
-		division = { 
-			id = { type = 12700 id = 269 } 
-			name = "HMS Diadem" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		} 
-	# 1ST ESCORT GROUP
-	navalunit = { 
-		id = { type = 12700 id = 1450 } 
-		name = "1st Escort Group" 
-		location = 17 
-		base = 17
-		division = { 
-			id = { type = 12700 id = 145 } 
-			name = "Destroyer Division 15" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 146 } 
-			name = "Destroyer Division 16" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		} 
-	# 1ST DESTROYER SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 1451 } 
-		name = "1st Destroyer Squadron" 
-		location = 23 
-		base = 23
-		division = { 
-			id = { type = 12700 id = 1452 } 
-			name = "Destroyer Division 15" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 1453 } 
-			name = "Destroyer Division 16" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		} 
-	# 2ND ESCORT GROUP
-	navalunit = { 
-		id = { type = 12700 id = 1454 } 
-		name = "2nd Escort Group" 
-		location = 27 
-		base = 27
-		division = { 
-			id = { type = 12700 id = 217 } 
-			name = "HMS Colombo" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			extra1 = naval_anti_air_s
-			}
-		division = { 
-			id = { type = 12700 id = 1455 } 
-			name = "Destroyer Division 19" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 171 } 
-			name = "Destroyer Division 20" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# ROSYTH ESCORT FORCE
-	navalunit = { 
-		id = { type = 12700 id = 1456 } 
-		name = "Rosyth Escort Force" 
-		location = 13 
-		base = 13
-		division = { 
-			id = { type = 12700 id = 172 } 
-			name = "Destroyer Division 21" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# 2ND DESTROYER SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 1457 } 
-		name = "2nd Destroyer Squadron" 
-		location = 23 
-		base = 23
-		division = { 
-			id = { type = 12700 id = 173 } 
-			name = "Destroyer Division 22" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 180 } 
-			name = "Destroyer Division 23" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 181 } 
-			name = "Destroyer Division 24" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# 3RD DESTROYER SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 1459 } 
-		name = "3rd Destroyer Squadron" 
-		location = 23 
-		base = 23
-		division = { 
-			id = { type = 12700 id = 185 } 
-			name = "Destroyer Division 25" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 186 } 
-			name = "Destroyer Division 26" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# 3RD ESCORT GROUP
-	navalunit = { 
-		id = { type = 12700 id = 1460 } 
-		name = "3rd Escort Group" 
-		location = 36 
-		base = 36
-		division = { 
-			id = { type = 12700 id = 192 } 
-			name = "Destroyer Division 27" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		} 
-	# EAST INDIES FORCE
-	navalunit = { 
-		id = { type = 12700 id = 2411 } 
-		name = "East Indies Force" 
-		location = 1511 
-		base = 1511
-		division = { 
-			id = { type = 12700 id = 9601 } 
-			name = "HMS Nigeria" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}  
-		division = { 
-			id = { type = 12700 id = 278 } 
-			name = "HMS Ceylon" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 193 } 
-			name = "Destroyer Division 28" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 1830 } 
-			name = "Destroyer Division 29" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 1831 } 
-			name = "Destroyer Division 30" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		}
-	# EASTERN FLEET
-	navalunit = { 
-		id = { type = 12700 id = 1474 } 
-		name = "Eastern Fleet" 
-		location = 1511 
-		base = 1511
-		division = { 
-			id = { type = 12700 id = 148 } 
-			name = "HMS Queen Elizabeth" 
-			type = battleship 
-			model = 4 
-			experience = 30 
-			extra1 = naval_anti_air_l
-			extra2 = naval_fire_controll_l
-			extra3 = floatplane
-			brigade_model3 = 6
-			}
-		division = { 
-			id = { type = 12700 id = 92 } 
-			name = "HMS Renown" 
-			type = battlecruiser 
-			model = 1 
-			experience = 30 
-			extra1 = naval_anti_air_l
-			extra2 = naval_fire_controll_l
-			extra3 = naval_improved_hull_l
-			extra4 = floatplane
-			brigade_model4 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 159 } 
-			name = "HMS Sussex" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
+	navalunit = {
+		name = "Home Fleet"
+		id = { type = 30252 id = 1 }
+		location = 5 # Scapa Flow
+		base = 5 # Scapa Flow
+		division = {
+			
+			id = { type = 30255 id = 110 }
+			name = "HMS Illustrious"
+			type = carrier
+			model = 5
+			extra1 = cag
 			brigade_model1 = 5
-			} 
-		division = { 
-			id = { type = 12700 id = 157 } 
-			name = "HMS London" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			extra2 = naval_anti_air_l
-			extra3 = naval_improved_hull_l
-			extra4 = naval_radar_l
-			brigade_model4 = 2
-			} 
-		division = { 
-			id = { type = 12700 id = 273 } 
-			name = "HMS Gambia" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 210 } 
-			name = "HMS Cumberland" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			}   
-		division = { 
-			id = { type = 12700 id = 211 } 
-			name = "HMS Suffolk" 
-			type = heavy_cruiser 
-			model = 3 
-			experience = 30 
-			extra1 = floatplane
-			brigade_model1 = 6
-			} 
-		division = { 
-			id = { type = 12700 id = 232 } 
-			name = "HMS Newcastle" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 9600 } 
-			name = "HMS Kenya" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}  
-		division = { 
-			id = { type = 12700 id = 215 } 
-			name = "HMS Caradoc" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			} 
 		}
-	# FORCE H
-	navalunit = { 
-		id = { type = 12700 id = 1471 } 
-		name = "Force H" 
-		location = 348 
-		base = 348
-		division = { 
-			id = { type = 12700 id = 164 } 
-			name = "HMS Delhi" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 213 } 
-			name = "HMS Caledon" 
-			type = light_cruiser 
-			model = 2 
-			experience = 30 
+		division = {
+			experience = 0
+			id = { type = 30255 id = 304 }
+			name = "HMS Ocean"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			experience = 0
+			id = { type = 30255 id = 305 }
+			name = "HMS Pioneer"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 100 }
+			name = "HMS Queen Elizabeth"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 75 }
+			name = "HMS Swiftsure"
+			type = light_cruiser
+			model = 6
 			extra1 = naval_anti_air_s
-			} 
-		division = { 
-			id = { type = 12700 id = 229 } 
-			name = "HMS Aurora" 
-			type = light_cruiser 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 224 } 
-			name = "Destroyer Division 31" 
-			type = destroyer 
-			model = 5 
-			experience = 30 
-			} 
-		} 
-	# PACIFIC FLEET
-	navalunit = { 
-		id = { type = 12700 id = 2423 } 
-		name = "Pacific Fleet" 
-		location = 1511 
-		base = 1511
-		division = { 
-			id = { type = 12700 id = 2362 } 
-			name = "HMS Illustrious" 
-			type = carrier 
-                        model = 3
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 246 } 
-			name = "HMS Indefatigable" 
-			type = carrier 
-                        model = 4
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2361 } 
-			name = "HMS Formidable" 
-			type = carrier 
-                        model = 3
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 245 } 
-			name = "HMS Implacable" 
-			type = carrier 
-                        model = 4
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2360 } 
-			name = "HMS Victorious" 
-			type = carrier 
-                        model = 3
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 244 } 
-			name = "HMS Indomitable" 
-			type = carrier 
-                        model = 3
-			extra1 = cag 
-			brigade_model1 = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 243 } 
-			name = "HMS Unicorn" 
-			type = escort_carrier 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 242 } 
-			name = "HMS Howe" 
-			type = battleship 
-			model = 7 
-			experience = 30 
-			extra1 = naval_anti_air_l
-			extra2 = naval_radar_l
-			brigade_model2 = 2
-			extra3 = floatplane
-			brigade_model3 = 6   
-			}  
-		division = { 
-			id = { type = 12700 id = 8600 } 
-			name = "HMS King George V" 
-			type = battleship 
-			model = 7 
-			experience = 30 
-			extra1 = naval_anti_air_l
-			extra2 = naval_radar_l
-			brigade_model2 = 2
-			extra3 = floatplane
-			brigade_model3 = 6
-			}  
-		division = { 
-			id = { type = 12700 id = 266 } 
-			name = "HMS Argonaut" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 268 } 
-			name = "HMS Black Prince" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 2166 } 
-			name = "HMS Belfast" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 272 } 
-			name = "HMS Bermuda" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 261 } 
-			name = "HMS Euryalus" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 279 } 
-			name = "HMS Newfoundland" 
-			type = light_cruiser 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 281 } 
-			name = "HMS Swiftsure" 
-			type = light_cruiser 
-                        model = 6
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 225 } 
-			name = "Destroyer Division 32" 
-			type = destroyer 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 226 } 
-			name = "Destroyer Division 33" 
-			type = destroyer 
-			model = 6 
-			experience = 30 
-			} 
-		} 
-	# 1ST SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 174 } 
-		name = "1st Submarine Squadron" 
-		location = 13 
-		base = 13 
-		division = { 
-			id = { type = 12700 id = 175 } 
-			name = "1st Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 176 } 
-			name = "2nd Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# 3RD SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 199 } 
-		name = "3rd Submarine Squadron" 
-		location = 36 
-		base = 36 
-		division = { 
-			id = { type = 12700 id = 107 } 
-			name = "3rd Submarine Flotilla" 
-			type = submarine 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 108 } 
-			name = "4th Submarine Flotilla" 
-			type = submarine 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 109 } 
-			name = "5th Submarine Flotilla" 
-			type = submarine 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 110 } 
-			name = "6th Submarine Flotilla" 
-			type = submarine 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 111 } 
-			name = "7th Submarine Flotilla" 
-			type = submarine 
-			model = 3 
-			experience = 30 
-			}  
-		} 
-	# 4TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 1990 } 
-		name = "4th Submarine Squadron" 
-		location = 1511 
-		base = 1511 
-		division = { 
-			id = { type = 12700 id = 200 } 
-			name = "8th Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 201 } 
-			name = "9th Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 228 } 
-			name = "10th Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# 5TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 1991 } 
-		name = "5th Submarine Squadron" 
-		location = 27 
-		base = 27 
-		division = { 
-			id = { type = 12700 id = 2280 } 
-			name = "11th Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2281 } 
-			name = "12th Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 1462 } 
-			name = "13th Submarine Flotilla" 
-			type = submarine 
-			model = 6 
-			experience = 30 
-			} 
-		} 
-	# 6TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 1463 } 
-		name = "6th Submarine Squadron" 
-		location = 13 
-		base = 13 
-		division = { 
-			id = { type = 12700 id = 1464 } 
-			name = "14th Submarine Flotilla" 
-			type = submarine 
-			model = 6 
-			experience = 30 
-			} 
-		} 
-	# 7TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4000 } 
-		name = "7th Submarine Squadron" 
-		location = 36 
-		base = 36 
-		division = { 
-			id = { type = 12700 id = 4001 } 
-			name = "15th Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4002 } 
-			name = "16th Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4003 } 
-			name = "17th Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4004 } 
-			name = "18th Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		} 
-	# 8TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4005 } 
-		name = "8th Submarine Squadron" 
-		location = 1511 
-		base = 1511 
-		division = { 
-			id = { type = 12700 id = 4006 } 
-			name = "19th Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4007 } 
-			name = "20th Submarine Flotilla" 
-			type = submarine 
-			model = 6 
-			experience = 30 
-			} 
-		} 
-	# 9TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4008 } 
-		name = "9th Submarine Squadron" 
-		location = 5 
-		base = 5 
-		division = { 
-			id = { type = 12700 id = 4009 } 
-			name = "21st Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4010 } 
-			name = "22nd Submarine Flotilla" 
-			type = submarine 
-			model = 4 
-			experience = 30 
-			} 
-		} 
-	# 10TH SUBMARINE SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4011 } 
-		name = "10th Submarine Squadron" 
-		location = 430 
-		base = 430 
-		division = { 
-			id = { type = 12700 id = 4012 } 
-			name = "23rd Submarine Flotilla" 
-			type = submarine 
-			model = 5 
-			experience = 30 
-			} 
-		} 
-	# 1ST TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4013 } 
-		name = "1st Transport Squadron" 
-		location = 5 
-		base = 5 
-		division = { 
-			id = { type = 12700 id = 113 } 
-			name = "1st Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 114 } 
-			name = "2nd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2500 } 
-			name = "3rd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4014 } 
-			name = "4th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4015 } 
-			name = "5th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 116 } 
-			name = "6th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 117 } 
-			name = "7th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 122 } 
-			name = "8th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			}  
-		division = { 
-			id = { type = 12700 id = 119 } 
-			name = "9th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-	# 2ND TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 2022 } 
-		name = "2nd Transport Squadron" 
-		location = 5 
-		base = 5 
-		division = { 
-			id = { type = 12700 id = 120 } 
-			name = "10th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 121 } 
-			name = "11th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2503 } 
-			name = "12th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 124 } 
-			name = "13th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 125 } 
-			name = "14th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			}  
-		division = { 
-			id = { type = 12700 id = 2504 } 
-			name = "15th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2505 } 
-			name = "16th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 127 } 
-			name = "17th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 128 } 
-			name = "18th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 129 } 
-			name = "19th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-	# 3RD TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4016 } 
-		name = "3rd Transport Squadron" 
-		location = 27 
-		base = 27 
-		division = { 
-			id = { type = 12700 id = 2506 } 
-			name = "20th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2508 } 
-			name = "21st Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2509 } 
-			name = "22nd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2510 } 
-			name = "23rd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2511 } 
-			name = "24th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2512 } 
-			name = "25th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2513 } 
-			name = "26th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2514 } 
-			name = "27th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2515 } 
-			name = "28th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2516 } 
-			name = "29th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-	# 4TH TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4017 } 
-		name = "4th Transport Squadron" 
-		location = 27 
-		base = 27 
-		division = { 
-			id = { type = 12700 id = 1812 } 
-			name = "30th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2518 } 
-			name = "31st Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2519 } 
-			name = "32nd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2520 } 
-			name = "33rd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2521 } 
-			name = "34th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2522 } 
-			name = "35th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2507 } 
-			name = "36th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			}
-		division = { 
-			id = { type = 12700 id = 2523 } 
-			name = "37th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2524 } 
-			name = "38th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 2525 } 
-			name = "39th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-	# 5TH TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4018 } 
-		name = "5th Transport Squadron" 
-		location = 789 
-		base = 789 
-		division = { 
-			id = { type = 12700 id = 4019 } 
-			name = "40th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4020 } 
-			name = "41st Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4021 } 
-			name = "42nd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4022 } 
-			name = "43rd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4023 } 
-			name = "44th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4024 } 
-			name = "45th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4025 } 
-			name = "46th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4026 } 
-			name = "47th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4027 } 
-			name = "48th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4028 } 
-			name = "49th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-	# 6TH TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4029 } 
-		name = "6th Transport Squadron" 
-		location = 789 
-		base = 789 
-		division = { 
-			id = { type = 12700 id = 4030 } 
-			name = "50th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4031 } 
-			name = "51st Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4032 } 
-			name = "52nd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4033 } 
-			name = "53rd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4034 } 
-			name = "54th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4035 } 
-			name = "55th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4036 } 
-			name = "56th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4037 } 
-			name = "57th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4038 } 
-			name = "58th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4039 } 
-			name = "59th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-	# 7TH TRANSPORT SQUADRON
-	navalunit = { 
-		id = { type = 12700 id = 4040 } 
-		name = "7th Transport Squadron" 
-		location = 1511 
-		base = 1511 
-		division = { 
-			id = { type = 12700 id = 4041 } 
-			name = "60th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4042 } 
-			name = "61st Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4043 } 
-			name = "62nd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4044 } 
-			name = "63rd Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4045 } 
-			name = "64th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4046 } 
-			name = "65th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4047 } 
-			name = "66th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4048 } 
-			name = "67th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4049 } 
-			name = "68th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		division = { 
-			id = { type = 12700 id = 4050 } 
-			name = "69th Transport Flotilla" 
-			type = transport 
-			model = 3 
-			experience = 30 
-			} 
-		} 
-   # ################# 
-   # Royal Airforce # 
-   # ################# 
-  airunit = 
-  { location = 19 
-    base     = 19 
-    id       = {  type = 12700 id = 7900  } 
-    name     = "No.10 Group" 
-    division =
-    { experience = 30
-      id       = {  type = 12700 id = 7901  } 
-      name     = "No.126 Squadron" 
-      type     = multi_role 
-      model    = 7
-      strength = 100
-    } 
-    division =
-    { experience = 30
-      id       = {  type = 12700 id = 7902  } 
-      name     = "No.165 Squadron" 
-      type     = multi_role 
-      model    = 7
-      strength = 100
-    } 
-    division =
-    { experience = 30
-      id       = {  type = 12700 id = 7903  } 
-      name     = "No.406 Squadron RCAF" 
-      type     = tactical_bomber 
-      model    = 8 
-      strength = 100
-    } 
-    division =
-    { experience = 30
-      id       = {  type = 12700 id = 7904  } 
-      name     = "No.464 Squadron RCAF" 
-      type     = tactical_bomber 
-      model    = 8 
-      strength = 100
-    } 
-    division =
-    { experience = 30
-      id       = {  type = 12700 id = 7905  } 
-      name     = "No.610 Squadron" 
-      type     = multi_role 
-      model    = 6
-      strength = 100
-    } 
-  } 
-  airunit =
-  { location = 26
-    base     = 26
-    id       = { type = 10499 id = 7906 }
-    name     = "No.11 Group"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7907 }
-      name       = "No.1 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7908 }
-      name       = "No.64 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7909 }
-      name       = "No.313 Squadron "
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7910 }
-      name       = "No.501 Squadron "
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7911 }
-      name       = "No.219 Squadron"
-      strength   = 100
-      type       = tactical_bomber
-      model      = 8
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7912 }
-      name       = "No.29 Squadron"
-      strength   = 100
-      type       = tactical_bomber
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7913 }
-      name       = "No.303 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-  }
-  airunit =
-  { location = 27
-    base     = 27
-    id       = { type = 10499 id = 7914 }
-    name     = "2nd TAF/1"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7915 }
-      name       = "No.3 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7916 }
-      name       = "No.33 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7917 }
-      name       = "No.137 Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 9
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7918 }
-      name       = "No.184 Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7919 }
-      name       = "No.245 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7920 }
-      name       = "No.264 Squadron"
-      strength   = 100
-      type       = tactical_bomber
-      model      = 8
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7921 }
-      name       = "No.416 Squadron RCAF"
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7922 }
-      name       = "No.80 Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7923 }
-      name       = "No.132 Squadron "
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7924 }
-      name       = "No.183 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7925 }
-      name       = "No.308 Squadron "
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7926 }
-      name       = "No.331 Squadron "
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7927 }
-      name       = "No.332 Squadron "
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7928 }
-      name       = "No.694 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-  }
-  airunit =
-  { location = 26
-    base     = 26
-    id       = { type = 10499 id = 7929 }
-    name     = "2nd TAF/2"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7930 }
-      name       = "No.65 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7931 }
-      name       = "No.181 Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7932 }
-      name       = "No.401 Squadron RCAF "
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7933 }
-      name       = "No.412 Squadron RCAF "
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7934 }
-      name       = "No.441 Squadron RCAF "
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-  }
-  airunit =
-  { location = 17
-    base     = 17
-    id       = { type = 10499 id = 7935 }
-    name     = "No.12 Group"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7936 }
-      name       = "No.168 Squadron"
-      strength   = 75
-      type       = multi_role
-      model      = 6
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7937 }
-      name       = "No.25 Squadron"
-      strength   = 75
-      type       = tactical_bomber
-      model      = 7
-    }
-  }
-  airunit =
-  { location = 26
-    base     = 26
-    id       = { type = 10499 id = 7938 }
-    name     = "No.13 Group"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7939 }
-      name       = "No.504 Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-  }
-  airunit =
-  { location = 26
-    base     = 26
-    id       = { type = 10499 id = 7940 }
-    name     = "No.14 Group"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7941 }
-      name       = "No.118 Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 9
-    }
-  }
-  airunit =
-  { location = 10
-    base     = 10
-    id       = { type = 10499 id = 7942 }
-    name     = "No.38 Group"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7943 }
-      name       = "No.190 Squadron"
-      strength   = 100
-      type       = naval_bomber
-      model      = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7944 }
-      name       = "No.297 Squadron "
-      strength   = 100
-      type       = naval_bomber
-      model      = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7945 }
-      name       = "No.570 Squadron"
-      strength   = 100
-      type       = naval_bomber
-      model      = 2
-    }
-  }
-  airunit =
-  { location = 13
-    base     = 13
-    id       = { type = 10499 id = 7946 }
-    name     = "No.603 Squadron"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7947 }
-      name       = "No.603 Squadron "
-      strength   = 100
-      type       = interceptor
-      model      = 8
-    }
-  }
-  airunit =
-  { location = 348
-    base     = 348
-    id       = { type = 10499 id = 7948 }
-    name     = "No.43 Squadron"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7949 }
-      name       = "No.43 Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 8
-    }
-  }
-  airunit =
-  { location = 1447
-    base     = 1447
-    id       = { type = 10499 id = 7950 }
-    name     = "1/SEAC Air Forces"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7951 }
-      name       = "17./67./81. Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7952 }
-      name       = "136./155. Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7953 }
-      name       = "607./615. Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-  }
-  airunit =
-  { location = 1697
-    base     = 1697
-    id       = { type = 10499 id = 7954 }
-    name     = "ANZAC Air Forces"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7955 }
-      name       = "452./455./54. Squadron"
-      strength   = 100
-      type       = interceptor
-      model      = 10
-    }
-  }
-  airunit =
-  { location = 1447
-    base     = 1447
-    id       = { type = 10499 id = 7956 }
-    name     = "2/SEAC Air Forces"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7957 }
-      name       = "5./11./20. Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 7
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7958 }
-      name       = "28./30. Squadron"
-      strength   = 100
-      type       = multi_role
-      model      = 6
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7959 }
-      name       = "42./34./42. Squadron"
-      strength   = 100
-      type       = cas
-      model      = 3
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7960 }
-      name       = "60./79. Squadron"
-      strength   = 100
-      type       = cas
-      model      = 3
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7961 }
-      name       = "113./123./134. Squadron"
-      strength   = 100
-      type       = cas
-      model      = 3
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7962 }
-      name       = "135./146./152. Squadron"
-      strength   = 100
-      type       = cas
-      model      = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7963 }
-      name       = "258./261./273. Squadron"
-      strength   = 100
-      type       = cas
-      model      = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7964 }
-      name       = "No.45 Squadron"
-      strength   = 40
-      type       = tactical_bomber
-      model      = 8
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7965 }
-      name       = "82./84./110. Squadron"
-      strength   = 100
-      type       = cas
-      model      = 3
-    }
-  }
-  airunit =
-  { location = 1442
-    base     = 1442
-    id       = { type = 10499 id = 7966 }
-    name     = "3/SEAC Air Forces"
-    division =
-    { experience    = 30
-      id            = { type = 10499 id = 7967 }
-      name          = "200./203./215. Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 10499 id = 7968 }
-      name          = "99./159. Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 10499 id = 7969 }
-      name          = "292./355./356. Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-  }
-  airunit =
-  { location = 1442
-    base     = 1442
-    id       = { type = 10499 id = 7970 }
-    name     = "4/SEAC Air Forces"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7971 }
-      name       = "27./47./88. Squadron"
-      strength   = 100
-      type       = naval_bomber
-      model      = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7972 }
-      name       = "176./177./211. Squadron"
-      strength   = 100
-      type       = naval_bomber
-      model      = 2
-    }
-  }
-  airunit =
-  { location = 1447
-    base     = 1447
-    id       = { type = 10499 id = 7973 }
-    name     = "5/SEAC Air Forces"
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7974 }
-      name       = "31./62./117. Squadron"
-      strength   = 100
-      type       = transport_plane
-      model      = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 10499 id = 7975 }
-      name       = "194./435./436. Squadron"
-      strength   = 100
-      type       = transport_plane
-      model      = 2
-    }
-  }
-  airunit =
-  { location = 23
-    base     = 23
-    id       = { type = 11128 id = 7976 }
-    name     = "No.1 Group "
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7977 }
-      name          = "No.12 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7978 }
-      name          = "No.103 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7979 }
-      name          = "No.300 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 1
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7980 }
-      name          = "No.576 Squadron "
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7981 }
-      name          = "No.625 Squadron "
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-  }
-  airunit =
-  { location = 17
-    base     = 17
-    id       = { type = 11128 id = 7982 }
-    name     = "No.3 Group"
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7983 }
-      name          = "No.15 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 1
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7984 }
-      name          = "No.115 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7985 }
-      name          = "No.218 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-  }
-  airunit =
-  { location = 25
-    base     = 25
-    id       = { type = 11128 id = 7986 }
-    name     = "No.4 Group"
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7987 }
-      name          = "No.10 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7988 }
-      name          = "No.76 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7989 }
-      name          = "No.78 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 1
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7990 }
-      name          = "No.346 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7991 }
-      name          = "No.640 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 1
-    }
-  }
-  airunit =
-  { location = 18
-    base     = 18
-    id       = { type = 11128 id = 7992 }
-    name     = "No.5 Group"
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7993 }
-      name          = "No.9 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7994 }
-      name          = "No.49 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7995 }
-      name          = "No.61 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7996 }
-      name          = "No.106 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7997 }
-      name          = "No.467 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 7998 }
-      name          = "No.619 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-  }
-  airunit =
-  { location = 18
-    base     = 18
-    id       = { type = 11128 id = 7999 }
-    name     = "No.6 Group"
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8000 }
-      name          = "No.408 Squadron RCAF"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8001 }
-      name          = "No.424 Squadron RCAF"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8002 }
-      name          = "No.427 Squadron RCAF"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8003 }
-      name          = "No.429 Squadron RCAF"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8004 }
-      name          = "No.432 Squadron RCAF"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 2
-    }
-  }
-  airunit =
-  { location = 19
-    base     = 19
-    id       = { type = 11128 id = 8005 }
-    name     = "No.8 Group"
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8006 }
-      name          = "No.7 Squadron"
-      strength      = 75
-      type          = strategic_bomber
-      model         = 4
-      extra         = escort
-      brigade_model = 1
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8007 }
-      name          = "No.156 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience    = 30
-      id            = { type = 11128 id = 8008 }
-      name          = "No.582 Squadron"
-      strength      = 100
-      type          = strategic_bomber
-      model         = 5
-      extra         = escort
-      brigade_model = 2
-    }
-    division =
-    { experience = 30
-      id         = { type = 11128 id = 8009 }
-      name       = "No.692 Squadron"
-      strength   = 100
-      type       = tactical_bomber
-      model      = 7
-    }
-  }
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 31 }
+			name = "HMS Birmingham"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 37 }
+			name = "HMS Bellona"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 72 }
+			name = "HMS Black Prince"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 73 }
+			name = "HMS Diadem"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 55 }
+			name = "HMS Danae"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 10 }
+			name = "1st Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 11 }
+			name = "2nd Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 12 }
+			name = "3rd Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 13 }
+			name = "4th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 14 }
+			name = "5th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+	} ####################################################
+	# Reserve Fleet - Clyde#
+	
 
-   # Warships Under Construction# 
-   division_development = 
-   {  name  = "HMS Duke of York" # 1944-45 refit
-     type  = battleship 
-     model = 7
-     cost  = 0.5
-     unitcost = no
-     id    = {  type = 12700 id = 240  } 
-     date  = {  year = 1945 month = april day = 1  } 
-     extra1 = naval_anti_air_l
-     extra2 = naval_radar_l
-     brigade_model2 = 2
-     extra3 = floatplane
-     brigade_model3 = 6   
-    }
-   division_development = 
-   {  name  = "HMS Anson" # 1944-45 refit
-     type  = battleship 
-     model = 7
-     cost  = 0.5
-     unitcost = no
-     id    = {  type = 12700 id = 241  } 
-     date  = {  year = 1945 month = march day = 1  } 
-     extra1 = naval_anti_air_l
-     extra2 = naval_radar_l
-     brigade_model2 = 2
-     extra3 = floatplane
-     brigade_model3 = 6   
-    }
-   division_development = 
-   {  name  = "HMS Vanguard" 
-     type  = battleship 
-     model = 8
-     cost  = 0.1
-     id    = {  type = 12700 id = 297  } 
-     date  = {  year = 1946 month = august day = 9  } 
-     extra1 = floatplane
-     brigade_model1 = 6   
-    }
-   division_development = 
-   {  name  = "HMS Audacious" 
-     type  = carrier 
-     model = 5
-     cost  = 0.1
-     id    = {  type = 12700 id = 293  } 
-     date  = {  year = 1946 month = march day = 19  } 
-     extra = cag 
-     brigade_model = 5  
-    }
-   division_development = 
-   {  name  = "HMS Irresistible" 
-     type  = carrier 
-     model = 5
-     cost  = 0.1
-     id    = {  type = 12700 id = 304  } 
-     date  = {  year = 1947 month = february day = 18  } 
-     extra = cag 
-     brigade_model = 5  
-    }
-   division_development = 
-   {  name  = "HMS Glory" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 294  } 
-     date  = {  year = 1945 month = april day = 2  } 
-    }
-   division_development = 
-   {  name  = "HMS Ocean" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 296  } 
-     date  = {  year = 1945 month = august day = 8  } 
-    }
-   division_development = 
-   {  name  = "HMS Vengeance" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 292  } 
-     date  = {  year = 1945 month = january day = 15  } 
-    }
-   division_development = 
-   {  name  = "HMS Theseus" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 298  } 
-     date  = {  year = 1946 month = february day = 9  } 
-    }
-   division_development = 
-   {  name  = "HMS Triumph" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 299  } 
-     date  = {  year = 1946 month = may day = 9  } 
-    }
-   division_development = 
-   {  name  = "HMS Venerable" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 300  } 
-     date  = {  year = 1945 month = january day = 17  } 
-    }
-   division_development = 
-   {  name  = "HMS Warrior" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 301  } 
-     date  = {  year = 1945 month = april day = 2  } 
-    }
-   division_development = 
-   {  name  = "HMS Pioneer" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 302  } 
-     date  = {  year = 1945 month = february day = 8  } 
-    }
-   division_development = 
-   {  name  = "HMS Majestic" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 303  } 
-     date  = {  year = 1946 month = august day = 1  } 
-    }
-   division_development = 
-   {  name  = "HMS Terrible" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 305  } 
-     date  = {  year = 1945 month = september day = 30  } 
-    }
-   division_development = 
-   {  name  = "HMS Hercules" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 306  } 
-     date  = {  year = 1946 month = september day = 22  } 
-    }
-   division_development = 
-   {  name  = "HMS Magnificent" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 307  } 
-     date  = {  year = 1945 month = november day = 16  } 
-    }
-   division_development = 
-   {  name  = "HMS Leviathan" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 308  } 
-     date  = {  year = 1946 month = june day = 7  } 
-    }
-   division_development = 
-   {  name  = "HMS Powerful" 
-     type  = escort_carrier 
-     model = 4
-     cost  = 0.1
-     id    = {  type = 12700 id = 309  } 
-     date  = {  year = 1946 month = february day = 27  } 
-    }
-   division_development = 
-   {  name  = "HMS Centaur" 
-     type  = escort_carrier 
-     model = 5
-     cost  = 0.1
-     id    = {  type = 12700 id = 310  } 
-     date  = {  year = 1947 month = april day = 22  } 
-    }
-   division_development = 
-   {  name  = "HMS Albion" 
-     type  = escort_carrier 
-     model = 5
-     cost  = 0.1
-     id    = {  type = 12700 id = 311  } 
-     date  = {  year = 1947 month = may day = 16  } 
-    }
-   division_development = 
-   {  name  = "HMS Superb" 
-     type  = light_cruiser 
-     model = 6
-     cost  = 0.1
-     id    = {  type = 12700 id = 291  } 
-     date  = {  year = 1945 month = november day = 16  } 
-    }
-   division_development = 
-   {  name  = "HMS Bellerophon" 
-     type  = light_cruiser 
-     model = 6
-     cost  = 0.1
-     id    = {  type = 12700 id = 312  } 
-     date  = {  year = 1945 month = october day = 25  } 
-    }
-   division_development = 
-   {  name  = "HMS Defense" 
-     type  = light_cruiser 
-     model = 6
-     cost  = 0.1
-     id    = {  type = 12700 id = 313  } 
-     date  = {  year = 1945 month = september day = 2  } 
-    }
-   division_development = 
-   {  name  = "HMS Tiger" 
-     type  = light_cruiser 
-     model = 6
-     cost  = 0.1
-     id    = {  type = 12700 id = 314  } 
-     date  = {  year = 1945 month = december day = 20  } 
-    }
-  } 
- 
+	navalunit = {
+		name = "Reserve Fleet"
+		id = { type = 30252 id = 2 }
+		location = 36 # Glasgow
+		base = 36
+		division = {
+			
+			id = { type = 30255 id = 6 }
+			name = "HMS Kent"
+			type = heavy_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			extra3 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+			brigade_model3 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 56 }
+			name = "HMS Hawkins"
+			type = heavy_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			extra3 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+			brigade_model3 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 24 }
+			name = "HMS Cardiff"
+			type = light_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 38 }
+			name = "6th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 39 }
+			name = "7th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+	} ####################################################
+	# Devonport #
+	
+
+	navalunit = {
+		name = "Devonport Yards"
+		id = { type = 30252 id = 306 }
+		location = 27 # Portsmouth
+		base = 27
+		division = {
+			
+			id = { type = 30255 id = 2 }
+			name = "HMS Furious"
+			type = carrier
+			model = 5
+			extra1 = cag
+			brigade_model1 = 5
+		}
+		division = {
+			
+			id = { type = 30255 id = 1 }
+			name = "HMS Argus"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 112 }
+			name = "HMS Valiant"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 0
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 23 }
+			name = "HMS Norfolk"
+			type = heavy_cruiser
+			model = 6
+		}
+		division = {
+			
+			id = { type = 30255 id = 69 }
+			name = "HMS Mauritius"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_fire_controll_s
+			extra2 = naval_radar_s
+			brigade_model1 = 1
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 63 }
+			name = "HMS Ajax"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 61 }
+			name = "HMS Despatch"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+	} ####################################################
+	# Chatham #
+	
+
+	navalunit = {
+		name = "Chatham Naval Yard"
+		id = { type = 30252 id = 307 }
+		location = 26 # Dover
+		base = 26
+		division = {
+			
+			id = { type = 30255 id = 57 }
+			name = "HMS Frobisher"
+			type = heavy_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			extra3 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+			brigade_model3 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 118 }
+			name = "HMS Kenya"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 58 }
+			name = "HMS Arethusa"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 40 }
+			name = "HMS Dido"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 41 }
+			name = "HMS Phoebe"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 67 }
+			name = "HMS Scylla"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 104 }
+			name = "HMS Delhi"
+			type = light_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+		}
+	} ####################################################
+	# Plymouth Reserve #
+	
+
+	navalunit = {
+		name = "Plymouth Reserve"
+		id = { type = 30252 id = 308 }
+		location = 20 # Plymouth
+		base = 20
+		division = {
+			
+			id = { type = 30255 id = 105 }
+			name = "HMS Caledon"
+			type = light_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 25 }
+			name = "HMS Capetown"
+			type = light_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 70 }
+			name = "HMS Ceres"
+			type = light_cruiser
+			model = 6
+			extra1 = none
+			extra2 = none
+			brigade_model1 = 0
+			brigade_model2 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 80 }
+			name = "HMS Colombo"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		} ####################################################
+		# Mediterrean Fleet #
+	}
+	navalunit = {
+		name = "Mediterranean Squadron"
+		id = { type = 30252 id = 3 }
+		location = 388 # Cyprus
+		base = 388
+		division = {
+			
+			id = { type = 30255 id = 64 }
+			name = "HMS Orion"
+			type = light_cruiser
+			model = 6
+			extra1 = none
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 68 }
+			name = "HMS Sirius"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 43 }
+			name = "8th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 44 }
+			name = "9th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 45 }
+			name = "10th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 46 }
+			name = "11th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 47 }
+			name = "12th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 48 }
+			name = "13th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 49 }
+			name = "14th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "Force A"
+		id = { type = 30252 id = 4 }
+		location = 27 # Portsmouth/Southampton
+		base = 27
+		division = {
+			
+			id = { type = 30255 id = 50 }
+			name = "HMS Warspite"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 53 }
+			name = "HMS Rodney"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 0
+			brigade_model2 = 1
+			brigade_model3 = 2
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 109 }
+			name = "HMS Suffolk"
+			type = heavy_cruiser
+			model = 6
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "Egypt Squadron"
+		id = { type = 30252 id = 5 }
+		location = 789 # Alexandria
+		base = 789
+		division = {
+			
+			id = { type = 30255 id = 29 }
+			name = "HMS Liverpool"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 106 }
+			name = "HMS Aurora"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 83 }
+			name = "15th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 84 }
+			name = "16th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_radar_s
+			brigade_model1 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 85 }
+			name = "17th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 86 }
+			name = "18th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 81 }
+			name = "19th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 82 }
+			name = "20th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 79 }
+			name = "21st Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_radar_s
+			brigade_model1 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 87 }
+			name = "22nd Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_radar_s
+			brigade_model1 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 88 }
+			name = "23rd Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_radar_s
+			brigade_model1 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 89 }
+			name = "24th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 90 }
+			name = "25th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 91 }
+			name = "26th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_fire_controll_s
+			brigade_model1 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 92 }
+			name = "27th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 76 }
+			name = "34th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = none
+			brigade_model1 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 77 }
+			name = "35th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = none
+			brigade_model1 = 0
+		}
+		division = {
+			
+			id = { type = 30255 id = 78 }
+			name = "36th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_radar_s
+			brigade_model1 = 1
+		}
+	} ####################################################
+	# East Indies Taskforce #
+	
+
+	navalunit = {
+		name = "East Indies Force"
+		id = { type = 30252 id = 6 }
+		location = 1511 # Colombo
+		base = 1511
+		division = {
+			
+			id = { type = 30255 id = 94 }
+			name = "HMS Ceylon"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 93 }
+			name = "HMS Nigeria"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 95 }
+			name = "28th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 96 }
+			name = "29th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_radar_s
+			brigade_model1 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 97 }
+			name = "30th Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_anti_air_s
+			brigade_model1 = 2
+		}
+	} ####################################################
+	# Eastern Fleet#
+	
+
+	navalunit = {
+		name = "Eastern Fleet"
+		id = { type = 30252 id = 7 }
+		location = 1511 # Colombo
+		base = 1511
+		division = {
+			
+			id = { type = 30255 id = 16 }
+			name = "HMS Anson"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 17 }
+			name = "HMS Howe"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 102 }
+			name = "HMS Caradoc"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_fire_controll_s
+			extra2 = naval_radar_s
+			brigade_model1 = 1
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 120 }
+			name = "33rd Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+	} ####################################################
+	# Hong Kong Taskforce #
+	
+
+	navalunit = {
+		name = "China Fleet"
+		id = { type = 30252 id = 8 }
+		location = 1371 # Hong Kong
+		base = 1371
+		division = {
+			
+			id = { type = 30255 id = 74 }
+			name = "HMS Implacable"
+			type = carrier
+			model = 5
+			extra1 = cag
+			brigade_model1 = 5
+		}
+		division = {
+			
+			id = { type = 30255 id = 99 }
+			name = "HMS Indomitable"
+			type = carrier
+			model = 5
+			extra1 = cag
+			brigade_model1 = 5
+		}
+		division = {
+			experience = 0
+			id = { type = 30255 id = 300 }
+			name = "HMS Colossus"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			experience = 0
+			id = { type = 30255 id = 303 }
+			name = "HMS Glory"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			experience = 0
+			id = { type = 30255 id = 301 }
+			name = "HMS Vengeance"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 66 }
+			name = "HMS Belfast"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 30 }
+			name = "HMS Bermuda"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 71 }
+			name = "HMS Argonaut"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 35 }
+			name = "HMS Euryalus"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 107 }
+			name = "31st Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+	} ####################################################
+	# Indian Ocean Fleet#
+	
+
+	navalunit = {
+		name = "Indian Ocean Squadron"
+		id = { type = 30252 id = 9 }
+		location = 1509 # Trincomalee
+		base = 1509
+		division = {
+			
+			id = { type = 30255 id = 114 }
+			name = "HMS London"
+			type = heavy_cruiser
+			model = 6
+		}
+		division = {
+			
+			id = { type = 30255 id = 34 }
+			name = "HMS Cleopatra"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+	} ####################################################
+	# Far East Fleet#
+	
+
+	navalunit = {
+		name = "Far East Fleet"
+		id = { type = 30252 id = 10 }
+		location = 1729 # Vanua Levu
+		base = 1729
+		division = {
+			
+			id = { type = 30255 id = 111 }
+			name = "HMS Indefatigable"
+			type = carrier
+			extra1 = cag
+			model = 5
+			brigade_model1 = 5
+		}
+		division = {
+			
+			id = { type = 30255 id = 3 }
+			name = "HMS Formidable"
+			type = carrier
+			model = 5
+			extra1 = cag
+			brigade_model1 = 5
+		}
+		division = {
+			
+			id = { type = 30255 id = 98 }
+			name = "HMS Victorious"
+			type = carrier
+			model = 5
+			extra1 = cag
+			brigade_model1 = 5
+		}
+		division = {
+			
+			id = { type = 30255 id = 15 }
+			name = "HMS Unicorn"
+			type = carrier
+			model = 5
+			extra1 = cag
+			brigade_model1 = 5
+		}
+		division = {
+			
+			id = { type = 30255 id = 4 }
+			name = "HMS Duke of York"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 18 }
+			name = "HMS King George V"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 22 }
+			name = "HMS Erebus, Roberts & Abercrombie"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 0
+			brigade_model2 = 1
+			brigade_model3 = 1
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 5 }
+			name = "HMS Berwick"
+			type = heavy_cruiser
+			model = 6
+		}
+		division = {
+			
+			id = { type = 30255 id = 9 }
+			name = "HMS Devonshire"
+			type = heavy_cruiser
+			model = 6
+		}
+		division = {
+			
+			id = { type = 30255 id = 32 }
+			name = "HMS Newfoundland"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 119 }
+			name = "32nd Destroyer Flotilla"
+			type = destroyer
+			model = 7
+			extra1 = naval_asw
+			brigade_model1 = 2
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "Malaya Force"
+		id = { type = 30252 id = 309 }
+		location = 1432 # Singapore
+		base = 1432
+		division = {
+			experience = 0
+			id = { type = 30255 id = 302 }
+			name = "HMS Venerable"
+			type = escort_carrier
+			model = 6
+			extra1 = none
+			brigade_model1 = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 54 }
+			name = "HMS Nelson"
+			type = battleship
+			model = 8
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = none
+			extra4 = naval_anti_air_l
+			extra5 = naval_radar_l
+			brigade_model1 = 0
+			brigade_model2 = 1
+			brigade_model3 = 0
+			brigade_model4 = 2
+			brigade_model5 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 117 }
+			name = "HMS Cumberland"
+			type = heavy_cruiser
+			model = 6
+		}
+		division = {
+			
+			id = { type = 30255 id = 113 }
+			name = "HMS Sussex"
+			type = heavy_cruiser
+			model = 6
+		}
+		division = {
+			
+			id = { type = 30255 id = 7 }
+			name = "HMS Jamaica"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 42 }
+			name = "HMS Royalist"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "Rosyth Navy Yard"
+		id = { type = 30252 id = 310 }
+		location = 5
+		base = 5
+		division = {
+			
+			id = { type = 30255 id = 101 }
+			name = "HMS Renown"
+			type = battlecruiser
+			model = 4
+			extra1 = none
+			extra2 = naval_fire_controll_l
+			extra3 = naval_anti_air_l
+			extra4 = naval_radar_l
+			brigade_model1 = 1
+			brigade_model2 = 1
+			brigade_model3 = 2
+			brigade_model4 = 2
+		}
+		division = {
+			
+			id = { type = 30255 id = 108 }
+			name = "HMS Newcastle"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_fire_controll_s
+			extra2 = naval_radar_s
+			brigade_model1 = 1
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 8 }
+			name = "HMS Sheffield"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 59 }
+			name = "HMS Emerald"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 26 }
+			name = "HMS Dauntless"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 28 }
+			name = "HMS Diomede"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "Tynemouth Yards"
+		id = { type = 30252 id = 311 }
+		location = 25 # Norwich
+		base = 25
+		division = {
+			
+			id = { type = 30255 id = 65 }
+			name = "HMS Glasgow"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+		division = {
+			
+			id = { type = 30255 id = 36 }
+			name = "HMS Leander"
+			type = light_cruiser
+			model = 6
+			extra1 = naval_anti_air_s
+			extra2 = naval_radar_s
+			brigade_model1 = 2
+			brigade_model2 = 1
+		}
+	} ####################################################
+	# 1st Submarine Squadron#
+	
+
+	navalunit = {
+		name = "1st Submarine Squadron"
+		id = { type = 30252 id = 11 }
+		location = 23 # Plymouth
+		base = 23
+		division = {
+			
+			id = { type = 30255 id = 121 }
+			name = "1st Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 122 }
+			name = "2nd Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 123 }
+			name = "24st Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 124 }
+			name = "25th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 3rd Submarine Squadron - Holy Loch #
+	
+
+	navalunit = {
+		name = "3rd Submarine Squadron"
+		id = { type = 30252 id = 12 }
+		location = 36 # Belfast
+		base = 36
+		division = {
+			
+			id = { type = 30255 id = 125 }
+			name = "3rd Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 126 }
+			name = "4th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 127 }
+			name = "5th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 128 }
+			name = "6th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 129 }
+			name = "7th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 4th Submarine Squadron - Trincomalee #
+	
+
+	navalunit = {
+		name = "4th Submarine Squadron"
+		id = { type = 30252 id = 13 }
+		location = 1509 # Trincomalee
+		base = 1509
+		division = {
+			
+			id = { type = 30255 id = 130 }
+			name = "8th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 131 }
+			name = "9th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 132 }
+			name = "10th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 5th Submarine Squadron#
+	
+
+	navalunit = {
+		name = "5th Submarine Squadron"
+		id = { type = 30252 id = 14 }
+		location = 27 # Portsmouth
+		base = 27
+		division = {
+			
+			id = { type = 30255 id = 133 }
+			name = "11th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 134 }
+			name = "12th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 135 }
+			name = "13th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 6th Submarine Squadron - Blyth #
+	
+
+	navalunit = {
+		name = "6th Submarine Squadron"
+		id = { type = 30252 id = 15 }
+		location = 23 # Plymouth
+		base = 23
+		division = {
+			
+			id = { type = 30255 id = 136 }
+			name = "14th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 7th Submarine Squadron - Rothesay#
+	
+
+	navalunit = {
+		name = "7th Submarine Squadron"
+		id = { type = 30252 id = 16 }
+		location = 36 # Belfast
+		base = 36
+		division = {
+			
+			id = { type = 30255 id = 137 }
+			name = "15th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 138 }
+			name = "16th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 139 }
+			name = "17th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 140 }
+			name = "18th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 8th Submarine Squadron - Trincomalee#
+	
+
+	navalunit = {
+		name = "8th Submarine Squadron"
+		id = { type = 30252 id = 17 }
+		location = 1511 # Colombo
+		base = 1511
+		division = {
+			
+			id = { type = 30255 id = 141 }
+			name = "19th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 142 }
+			name = "20th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 9th Submarine Squadron - Dundee#
+	
+
+	navalunit = {
+		name = "9th Submarine Squadron"
+		id = { type = 30252 id = 18 }
+		location = 7 # Aberdeen
+		base = 7
+		division = {
+			
+			id = { type = 30255 id = 143 }
+			name = "21th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+		division = {
+			
+			id = { type = 30255 id = 144 }
+			name = "22th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	# 10th Submarine Squadron - Maddalena#
+	
+
+	navalunit = {
+		name = "10th Submarine Squadron"
+		id = { type = 30252 id = 19 }
+		location = 5
+		base = 5
+		division = {
+			
+			id = { type = 30255 id = 145 }
+			name = "23th Submarine Flotilla"
+			type = submarine
+			model = 7
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "1st Transport Squadron"
+		id = { type = 30252 id = 20 }
+		location = 5 # Scapa Flow
+		base = 5
+		division = {
+			
+			id = { type = 30255 id = 146 }
+			name = "Suffolk Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 147 }
+			name = "Trojan Star Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 148 }
+			name = "Queen Mary Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 149 }
+			name = "Nieuw Amsterdam Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 150 }
+			name = "Strathenden Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 151 }
+			name = "Fort Edmonton Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 152 }
+			name = "Lars Bay Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 153 }
+			name = "Fort Langley Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 154 }
+			name = "King Ethelred Flotilla"
+			type = transport
+			model = 3
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "2nd Transport Squadron"
+		id = { type = 30252 id = 21 }
+		location = 5 # Scapa Flow
+		base = 5
+		division = {
+			
+			id = { type = 30255 id = 155 }
+			name = "Dominion Monarch Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 156 }
+			name = "Empire Arquebus Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 157 }
+			name = "Hororata Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 158 }
+			name = "Henry the VIII Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 159 }
+			name = "The Bishops Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 160 }
+			name = "Empire of India Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 161 }
+			name = "Empire of Africa Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 162 }
+			name = "Royal Caledonian Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 163 }
+			name = "Royal Sovereign Flotilla"
+			type = transport
+			model = 3
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "3rd Transport Squadron"
+		id = { type = 30252 id = 22 }
+		location = 27 # Portsmouth
+		base = 27
+		division = {
+			
+			id = { type = 30255 id = 164 }
+			name = "Queen Elizabeth Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 165 }
+			name = "Empress of Canada Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 166 }
+			name = "Clan Macauley Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 167 }
+			name = "Samfleet Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 168 }
+			name = "Samfreedom Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 169 }
+			name = "Samfoyle Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 170 }
+			name = "Samconstant Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 171 }
+			name = "Samleyte Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 172 }
+			name = "Samfaithful Flotilla"
+			type = transport
+			model = 3
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "4th Transport Squadron"
+		id = { type = 30252 id = 23 }
+		location = 388 # Cyprus
+		base = 388
+		division = {
+			
+			id = { type = 30255 id = 173 }
+			name = "Empire Captain Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 174 }
+			name = "Andes Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 175 }
+			name = "Empire Charmain Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 176 }
+			name = "Samoresby Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 177 }
+			name = "1st Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 178 }
+			name = "2nd Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 179 }
+			name = "3rd Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 180 }
+			name = "4th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 181 }
+			name = "5th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "5th Transport Squadron"
+		id = { type = 30252 id = 24 }
+		location = 388 # Cyprus
+		base = 388
+		division = {
+			
+			id = { type = 30255 id = 182 }
+			name = "Essex Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 183 }
+			name = "Maloja Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 184 }
+			name = "Empire Chieftain Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 185 }
+			name = "6th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 186 }
+			name = "7th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 187 }
+			name = "8th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 188 }
+			name = "9th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 189 }
+			name = "10th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 190 }
+			name = "11th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "6th Transport Squadron"
+		id = { type = 30252 id = 25 }
+		location = 1432 # Singapore
+		base = 1432
+		division = {
+			
+			id = { type = 30255 id = 191 }
+			name = "Stirling Castle Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 192 }
+			name = "Empire Splendour Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 193 }
+			name = "Sam Torch Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 194 }
+			name = "12th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 195 }
+			name = "13th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 196 }
+			name = "14th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 197 }
+			name = "15th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 198 }
+			name = "16th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 199 }
+			name = "17th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+	} ####################################################
+	
+
+	navalunit = {
+		name = "7th Transport Squadron"
+		id = { type = 30252 id = 26 }
+		location = 1415 # Rangoon
+		base = 1415
+		division = {
+			
+			id = { type = 30255 id = 200 }
+			name = "Resolution Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 201 }
+			name = "Fort Dunvegan Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 202 }
+			name = "Durham Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 203 }
+			name = "18th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 204 }
+			name = "19th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 205 }
+			name = "20th Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 206 }
+			name = "21st Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 207 }
+			name = "22nd Transport Flotilla"
+			type = transport
+			model = 3
+		}
+		division = {
+			
+			id = { type = 30255 id = 208 }
+			name = "23rd Transport Flotilla"
+			type = transport
+			model = 3
+		}
+	} ######################################################
+	# ############# ROYAL AIR FORCE 1944 OOB###################
+	# #########################################################
+	
+
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 1 }
+		name = "10th Group"
+		division = {
+			
+			id = { type = 30256 id = 1 }
+			name = "No.126 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 2 }
+			name = "No.165 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 3 }
+			name = "No.406 Squadron RCAF"
+			strength = 100
+			type = tactical_bomber
+			model = 9
+		}
+		division = {
+			
+			id = { type = 30256 id = 4 }
+			name = "No.464 Squadron RAAF"
+			strength = 100
+			type = tactical_bomber
+			model = 9
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 2 }
+		name = "11th Group"
+		division = {
+			
+			id = { type = 30256 id = 5 }
+			name = "No.1 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 6 }
+			name = "No.501 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 7 }
+			name = "No.219 Squadron"
+			strength = 100
+			type = tactical_bomber
+			model = 9
+		}
+		division = {
+			
+			id = { type = 30256 id = 8 }
+			name = "No.29 Squadron"
+			strength = 100
+			type = tactical_bomber
+			model = 9
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 3 }
+		name = "2nd TAF/1"
+		division = {
+			
+			id = { type = 30256 id = 9 }
+			name = "No.3 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 10 }
+			name = "No.33 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 11 }
+			name = "No.245 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 12 }
+			name = "No.694 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+	}
+	airunit = {
+		location = 27
+		base = 27
+		id = { type = 30253 id = 4 }
+		name = "2nd TAF/2"
+		division = {
+			
+			id = { type = 30256 id = 13 }
+			name = "No.65 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 14 }
+			name = "No.181 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 15 }
+			name = "No.401 Squadron RCAF"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 16 }
+			name = "No.610 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 5 }
+		name = "12th Group"
+		division = {
+			
+			id = { type = 30256 id = 17 }
+			name = "No.168 Squadron"
+			strength = 75
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 18 }
+			name = "No.25 Squadron"
+			strength = 75
+			type = tactical_bomber
+			model = 9
+		}
+		division = {
+			
+			id = { type = 30256 id = 19 }
+			name = "No.264 Squadron"
+			strength = 100
+			type = tactical_bomber
+			model = 9
+		}
+		division = {
+			
+			id = { type = 30256 id = 20 }
+			name = "No.303 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 6 }
+		name = "13th Group"
+		division = {
+			
+			id = { type = 30256 id = 21 }
+			name = "No.504 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 22 }
+			name = "No.412 Squadron RCAF"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 23 }
+			name = "No.308 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 7 }
+		name = "14th Group"
+		division = {
+			
+			id = { type = 30256 id = 24 }
+			name = "No.118 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 25 }
+			name = "No.441 Squadron RCAF"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 26 }
+			name = "No.331 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+	}
+	airunit = {
+		location = 5
+		base = 5
+		id = { type = 30253 id = 8 }
+		name = "38th Group"
+		division = {
+			
+			id = { type = 30256 id = 27 }
+			name = "No.190 Squadron"
+			strength = 100
+			type = naval_bomber
+			model = 5
+		}
+		division = {
+			
+			id = { type = 30256 id = 28 }
+			name = "No.297 Squadron"
+			strength = 100
+			type = naval_bomber
+			model = 5
+		}
+		division = {
+			
+			id = { type = 30256 id = 29 }
+			name = "No.570 Squadron"
+			strength = 100
+			type = naval_bomber
+			model = 5
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 9 }
+		name = "No.603 Squadron"
+		division = {
+			
+			id = { type = 30256 id = 30 }
+			name = "No.603 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+	}
+	airunit = {
+		location = 348
+		base = 348
+		id = { type = 30253 id = 10 }
+		name = "No.43 Squadron"
+		division = {
+			
+			id = { type = 30256 id = 31 }
+			name = "No.43 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+	}
+	
+
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 11 }
+		name = "1/SEAC Air Forces"
+		division = {
+			
+			id = { type = 30256 id = 32 }
+			name = "17/.67./81. Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 33 }
+			name = "136./155. Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 34 }
+			name = "607./615. Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 35 }
+			name = "28./30. Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+	}
+	airunit = {
+		location = 388
+		base = 388
+		id = { type = 30253 id = 12 }
+		name = "2/SEAC Air Forces"
+		division = {
+			
+			id = { type = 30256 id = 36 }
+			name = "5./11./20. Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 37 }
+			name = "42./34./42. Squadron"
+			strength = 100
+			type = cas
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 38 }
+			name = "60./79. Squadron"
+			strength = 100
+			type = cas
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 39 }
+			name = "No.183 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 13 }
+		name = "3/SEAC Air Forces"
+		division = {
+			
+			id = { type = 30256 id = 40 }
+			name = "200./203./215. Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 41 }
+			name = "99./159. Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 42 }
+			name = "292./355./356. Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 43 }
+			name = "No.429 Squadron RCAF"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 14 }
+		name = "4/SEAC Air Forces"
+		division = {
+			
+			id = { type = 30256 id = 44 }
+			name = "27./47./88. Squadron"
+			strength = 100
+			type = naval_bomber
+			model = 5
+		}
+		division = {
+			
+			id = { type = 30256 id = 45 }
+			name = "176./177./211. Squadron"
+			strength = 100
+			type = naval_bomber
+			model = 5
+		}
+	}
+	airunit = {
+		location = 789
+		base = 789
+		id = { type = 30253 id = 15 }
+		name = "5/SEAC Air Forces"
+		division = {
+			
+			id = { type = 30256 id = 46 }
+			name = "31./62./117. Squadron"
+			strength = 100
+			type = transport_plane
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 47 }
+			name = "194./435./436. Squadron"
+			strength = 100
+			type = transport_plane
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 48 }
+			name = "45. Squadron"
+			strength = 40
+			type = tactical_bomber
+			model = 9
+		}
+		division = {
+			
+			id = { type = 30256 id = 49 }
+			name = "No.692 Squadron"
+			strength = 100
+			type = tactical_bomber
+			model = 9
+		}
+	}
+	
+
+	airunit = {
+		location = 20
+		base = 20
+		id = { type = 30253 id = 16 }
+		name = "1st Group"
+		division = {
+			
+			id = { type = 30256 id = 50 }
+			name = "No.12 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 51 }
+			name = "No.103 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 52 }
+			name = "No.300 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 53 }
+			name = "No.576 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		location = 18
+		base = 18
+		id = { type = 30253 id = 17 }
+		name = "3rd Group"
+		division = {
+			
+			id = { type = 30256 id = 54 }
+			name = "No.15 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 55 }
+			name = "No.115 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 56 }
+			name = "No.218 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 57 }
+			name = "No.106 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		location = 25
+		base = 25
+		id = { type = 30253 id = 18 }
+		name = "4th Group"
+		division = {
+			
+			id = { type = 30256 id = 58 }
+			name = "No.10 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 59 }
+			name = "No.76 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 60 }
+			name = "No.78 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 61 }
+			name = "No.640 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		location = 18
+		base = 18
+		id = { type = 30253 id = 19 }
+		name = "5th Group"
+		division = {
+			
+			id = { type = 30256 id = 62 }
+			name = "No.9 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 63 }
+			name = "No.49 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 64 }
+			name = "No.467 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 65 }
+			name = "No.619 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 20 }
+		name = "6th Group"
+		division = {
+			
+			id = { type = 30256 id = 66 }
+			name = "No.408 Squadron RCAF"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 67 }
+			name = "No.424 Squadron RCAF"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 68 }
+			name = "No.427 Squadron RCAF"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 69 }
+			name = "No.432 Squadron RCAF"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		location = 26
+		base = 26
+		id = { type = 30253 id = 21 }
+		name = "8th Group"
+		division = {
+			
+			id = { type = 30256 id = 70 }
+			name = "No.7 Squadron"
+			strength = 75
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 71 }
+			name = "No.156 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 72 }
+			name = "No.582 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 73 }
+			name = "No.346 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+	airunit = {
+		id = { type = 30253 id = 22 }
+		name = "16th Group"
+		location = 26
+		base = 26
+		division = {
+			
+			id = { type = 30256 id = 74 }
+			name = "No.313 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 75 }
+			name = "No.64 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 76 }
+			name = "No.332 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+		division = {
+			
+			id = { type = 30256 id = 77 }
+			name = "No.132 Squadron"
+			strength = 100
+			type = multi_role
+			model = 8
+		}
+	}
+	airunit = {
+		id = { type = 30253 id = 23 }
+		name = "18th Group"
+		location = 26
+		base = 26
+		division = {
+			
+			id = { type = 30256 id = 78 }
+			name = "No.184 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 79 }
+			name = "No.80 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 80 }
+			name = "No.137 Squadron"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+		division = {
+			
+			id = { type = 30256 id = 81 }
+			name = "No.416 Squadron RCAF"
+			strength = 100
+			type = interceptor
+			model = 11
+		}
+	}
+	airunit = {
+		id = { type = 30253 id = 523 }
+		name = "Meteor Mk III"
+		location = 26
+		base = 26
+		division = {
+			
+			id = { type = 30256 id = 578 }
+			name = "Meteor Mk I Group"
+			type = interceptor
+			model = 11
+		}
+	}
+	airunit = {
+		id = { type = 30253 id = 24 }
+		name = "9th Group"
+		location = 26
+		base = 26
+		division = {
+			
+			id = { type = 30256 id = 82 }
+			name = "82./84./110. Squadron"
+			strength = 100
+			type = cas
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 83 }
+			name = "258./261./273. Squadron"
+			strength = 100
+			type = cas
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 84 }
+			name = "135./146./152. Squadron"
+			strength = 100
+			type = cas
+			model = 4
+		}
+		division = {
+			
+			id = { type = 30256 id = 85 }
+			name = "113./123./134. Squadron"
+			strength = 100
+			type = cas
+			model = 4
+		}
+	}
+	airunit = {
+		id = { type = 30253 id = 25 }
+		name = "7th Group"
+		location = 10
+		base = 10
+		division = {
+			
+			id = { type = 30256 id = 86 }
+			name = "No.61 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+		division = {
+			
+			id = { type = 30256 id = 87 }
+			name = "No.625 Squadron"
+			strength = 100
+			type = strategic_bomber
+			model = 6
+			extra = escort
+			brigade_model = 3
+		}
+	}
+}
