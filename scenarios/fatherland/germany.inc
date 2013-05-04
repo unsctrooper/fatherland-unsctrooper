@@ -4146,9 +4146,9 @@ landunit =
 	extra1 = naval_anti_air_l
 	brigade_model1 = 3
 	extra2 = naval_fire_controll_l
-	brigade_model1 = 1
+	brigade_model2 = 1
 	extra3 = naval_torpedoes_s
-	brigade_model1 = 0
+	brigade_model3 = 0
       } 
      Division = 
      {  id    = {  type = 14500 id = 803  } 
@@ -4158,11 +4158,11 @@ landunit =
 	extra1 = naval_anti_air_l
 	brigade_model1 = 0
 	extra2 = naval_fire_controll_l
-	brigade_model1 = 1
+	brigade_model2 = 1
 	extra3 = naval_torpedoes_s
-	brigade_model1 = 0
+	brigade_model3 = 0
 	extra4 = naval_radar_l
-	brigade_model1 = 3
+	brigade_model4 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 804  } 
@@ -4188,9 +4188,9 @@ landunit =
 	extra1 = floatplane
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
-	brigade_model1 = 0
+	brigade_model2 = 0
 	extra3 = naval_radar_l
-	brigade_model1 = 3
+	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 807  } 
@@ -4200,9 +4200,9 @@ landunit =
 	extra1 = floatplane
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
-	brigade_model1 = 0
+	brigade_model2 = 0
 	extra3 = naval_radar_l
-	brigade_model1 = 3
+	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 808  } 
@@ -4212,9 +4212,9 @@ landunit =
 	extra1 = floatplane
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
-	brigade_model1 = 0
+	brigade_model2 = 0
 	extra3 = naval_radar_l
-	brigade_model1 = 3
+	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 809  } 
@@ -4224,9 +4224,9 @@ landunit =
 	extra1 = floatplane
 	brigade_model1 = 5
 	extra2 = naval_torpedoes_s
-	brigade_model1 = 0
+	brigade_model2 = 0
 	extra3 = naval_radar_l
-	brigade_model1 = 3
+	brigade_model3 = 3
       } 
      Division = 
      {  id    = {  type = 14500 id = 810  } 
