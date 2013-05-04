@@ -2774,12 +2774,14 @@ province = { id = 10   # Dumfries - South Scotland - Scotland
 
 province = { id = 11   # Glasgow - South Scotland - Scotland
    ic       = 4
+   coastalfort = 1
    radar_station = { size = 3 current_size = 3 } 
  }
  
 province = { id = 12   # Edinburgh - South Scotland - Scotland
    ic       = 4
    radar_station = { size = 4 current_size = 4 } 
+   coastalfort = 1
  }
 
 province = { id = 13   # Sunderland - North England - England
@@ -2801,6 +2803,7 @@ province = { id = 17   # Manchester - North England - England
    naval_base = { size = 10 current_size = 10 }
    radar_station = { size = 2 current_size = 2 } 
    ic       = 8
+   coastalfort = 1
  } 
  
 province = { id = 18   # Sheffield - North England - England
@@ -2824,13 +2827,14 @@ province = { id = 20   # Exeter - West England - England
 
 province = { id = 22   # Cardiff - West England - England
    radar_station = { size = 4 current_size = 4 }
+   coastalfort = 1
  } 
 
 province = { id = 23   # Plymouth - West England - England
    anti_air = 6 
    air_base      = { size = 10 current_size = 10 }
    naval_base = { size = 10 current_size = 10 } 
-   coastalfort = 1 
+   coastalfort = 2 
    radar_station = { size = 7 current_size = 7 }
  } 
  
@@ -2842,14 +2846,15 @@ province = { id = 24   # Birmingham - West England - England
  }
 
 province = { id = 25   # Norwich - East England - England
-   anti_air = 4 
-   radar_station = { size = 7 current_size = 7 }
+   anti_air = 6 
+   coastalfort = 3
+   radar_station = { size = 8 current_size = 8 }
    air_base = { size = 10 current_size = 10 } 
    naval_base = { size = 10 current_size = 10 } 
  } 
  
 province = { id = 26   # Dover - East England - England
-   anti_air = 5 
+   anti_air = 6 
    air_base = { size = 10 current_size = 10 } 
    naval_base = { size = 10 current_size = 10 } 
    coastalfort = 3 
@@ -2858,12 +2863,14 @@ province = { id = 26   # Dover - East England - England
  
 province = { id = 27   # Portsmouth - East England - England
    anti_air = 6 
+   coastalfort = 3 
    air_base = { size = 10 current_size = 10 } 
    naval_base = { size = 10 current_size = 10 } 
    radar_station = { size = 8 current_size = 8 }
  } 
 province = { id = 28   # Oxford - East England - England
    anti_air = 2 
+   nuclear_reactor = { size = 4 current_size = 4 }
    radar_station = { size = 2 current_size = 2 }
  } 
  
@@ -2877,6 +2884,7 @@ province = { id = 29   # London - East England - England
 
 province = { id = 36   # Belfast - Northern Ireland - Ireland
    supplypool  = 500
+   coastalfort = 1
    radar_station = { size = 1 current_size = 1 } 
    air_base = { size = 8 current_size = 8 } 
    naval_base = { size = 3 current_size = 3 } 
