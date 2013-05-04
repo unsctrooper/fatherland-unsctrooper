@@ -281,7 +281,7 @@
        dormant_ministers      = {  25016 25195 25008 }
       
 	     # ######################
-       # ITA 1943 LAND OOB
+       # ITA 1948 LAND OOB
 
        # SUPREME COMMAND
        landunit =
@@ -292,16 +292,16 @@
          { id       = {  type = 23500 id = 2  }
            name     = "Comando Supremo"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 100
            extra    = anti_air
-           brigade_model = 2
+           brigade_model = 3
           }
          division =
          { id       = {  type = 23500 id = 46  }
            name     = "12a Divisione 'Sassari'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -314,7 +314,7 @@
          {  id       = {  type = 23500 id = 25  }
            name     = "Guarnigione di Leros"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 30  #the garrison was 5500 soldiers strong
           }
         }
@@ -327,7 +327,7 @@
          { id       = {  type = 23500 id = 9  }
            name     = "16a Divisione 'Pistoia'"
            type     = motorized
-           model    = 1
+           model    = 2
            strength = 30
           }
         }
@@ -340,14 +340,14 @@
          { id       = {  type = 23500 id = 2500  }
            name     = "4a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 18  }
            name     = "3a Divisione 'Ravenna'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 60
            max_strength = 70
           }
@@ -355,14 +355,14 @@
          { id       = {  type = 23500 id = 16  }
            name     = "4a Divisione Alpina 'Cuneense'"
            type     = bergsjaeger
-           model    = 10
+           model    = 11
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 8  }
            name     = "5a Divisione Alpina 'Pusteria'"
            type     = bergsjaeger
-           model    = 10
+           model    = 11
            strength = 70
           }
         }
@@ -374,14 +374,14 @@
          { id       = {  type = 23500 id = 62  }
            name     = "10a Divisione 'Piave'"
            type     = motorized
-           model    = 1
+           model    = 2
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 11  }
            name     = "7a Divisione 'Lupi di Toscana'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -389,7 +389,7 @@
          { id       = {  type = 23500 id = 27  }
            name     = "58a Divisione 'Legnano'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -402,14 +402,14 @@
          { id       = {  type = 23500 id = 6929  }
            name     = "103a Divisione 'Rovigo'"
            type     = motorized
-           model    = 1
+           model    = 2
            strength = 30
           }
          division =
          { id       = {  type = 23500 id = 54  }
            name     = "2a Divisione 'Emanuele Filiberto'"
            type     = cavalry
-           model    = 10
+           model    = 11
            strength = 70
            extra    = light_armor_brigade
 	   brigade_model = 6
@@ -418,7 +418,7 @@
          { id       = {  type = 23500 id = 96  }
            name     = "48a Divisione 'Taro'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -432,14 +432,14 @@
          { id       = {  type = 23500 id = 38  }
            name     = "6a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 13  }
            name     = "4a Divisione 'Livorno'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -452,7 +452,7 @@
          { id       = {  type = 23500 id = 77  }
            name     = "28a Divisione 'Aosta'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 60
            max_strength = 70
           }
@@ -460,7 +460,7 @@
          { id       = {  type = 23500 id = 37  }
            name     = "26a Divisione 'Assietta'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
            extra    = artillery
@@ -470,21 +470,21 @@
          { id       = {  type = 23500 id = 6947  }
            name     = "202a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
          division =
          { id       = {  type = 23500 id = 6948  }
            name     = "207a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
          division =
          { id       = {  type = 23500 id = 6949  }
            name     = "208a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
         }
@@ -496,7 +496,7 @@
          { id       = {  type = 23500 id = 78  }
            name     = "54a Divisione 'Napoli'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -504,14 +504,14 @@
          { id       = {  type = 23500 id = 6950  }
            name     = "206a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
          division =
          { id       = {  type = 23500 id = 6951  }
            name     = "213a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
         }
@@ -524,21 +524,21 @@
          { id       = {  type = 23500 id = 98  }
            name     = "7a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 6927  }
            name     = "104a Divisione 'Mantova'"
            type     = motorized
-           model    = 1
+           model    = 2
            strength = 30
           }
          division =
          { id       = {  type = 23500 id = 6938  }
            name     = "152a Divisione 'Piceno'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
         }
@@ -550,21 +550,21 @@
          { id       = {  type = 23500 id = 6917  }
            name     = "6a Divisione Alpina 'Alpi Graje'"
            type     = bergsjaeger
-           model    = 10
+           model    = 11
            strength = 80
           }
          division =
          { id       = {  type = 23500 id = 6928  }
            name     = "105a Divisione 'Rovigo'"
            type     = motorized
-           model    = 1
+           model    = 2
            strength = 30
           }
          division =
          { id       = {  type = 23500 id = 103  }
            name     = "21a Divisione 'Granatieri di Sardegna'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -572,21 +572,21 @@
          { id       = {  type = 23500 id = 6954  }
            name     = "183a Divisione 'Ciclone'"
            type     = paratrooper
-           model    = 10
+           model    = 11
            strength = 50
           }
          division =
          { id       = {  type = 23500 id = 6955  }
            name     = "Divisione CCNN 'M'"
            type     = light_armor
-           model    = 2
+           model    = 3
            strength = 45
           }
          division =
          { id       = {  type = 23500 id = 61  }
            name     = "9a Divisione 'Pasubio'"
            type     = motorized
-           model    = 0
+           model    = 1
            strength = 55
           }
         }
@@ -599,28 +599,28 @@
          { id       = {  type = 23500 id = 74  }
            name     = "8a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 28  }
            name     = "2a Divisione Alpina 'Tridentina'"
            type     = bergsjaeger
-           model    = 10
+           model    = 11
            strength = 30
           }
          division =
          { id       = {  type = 23500 id = 87  }
            name     = "3a Divisione Alpina 'Julia'"
            type     = bergsjaeger
-           model    = 10
+           model    = 11
            strength = 20
           }
          division =
          { id       = {  type = 23500 id = 6958  }
            name     = "135a Divisione 'Ariete II'"
            type     = cavalry
-           model    = 11
+           model    = 12
            strength = 50
            extra    = light_armor_brigade
 	   brigade_model = 6
@@ -629,7 +629,7 @@
          { id       = {  type = 23500 id = 21  }
            name     = "5a Divisione 'Cosseria'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 55
            max_strength = 70
           }
@@ -637,7 +637,7 @@
          { id       = {  type = 23500 id = 36  }
            name     = "2a Divisione 'Sforzesca'"
            type     = infantry
-           model    = 9
+           model    = 10
            strength = 50
            max_strength = 70
           }
@@ -645,16 +645,16 @@
          { id       = {  type = 23500 id = 55  }
            name     = "3a Divisione 'Principe Amedeo'"
            type     = cavalry
-           model    = 50
+           model    = 12
            strength = 30
            extra    = light_armor_brigade
-	   brigade_model = 6
+	   brigade_model = 7
           }
          division =
          { id       = {  type = 23500 id = 63  }
            name     = "52a Divisione 'Torino'"
            type     = motorized
-           model    = 0
+           model    = 1
            strength = 50
            extra    = armored_car
            brigade_model = 3
@@ -670,14 +670,14 @@
          { id       = {  type = 23500 id = 110  }
            name     = "5a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 100  }
            name     = "20a Divisione 'Friuli'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -685,24 +685,24 @@
          { id       = {  type = 23500 id = 23  }
            name     = "44a Divisione 'Cremona'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
            extra    = medium_armor
-           brigade_model = 1
+           brigade_model = 2
           }
          division =
          { id       = {  type = 23500 id = 6959  }
            name     = "225a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
          division =
          { id       = {  type = 23500 id = 6960  }
            name     = "226a Divisione Costiera"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 50
           }
         }
@@ -715,7 +715,7 @@
          { id       = {  type = 23500 id = 80  }
            name     = "30a Divisione 'Sabauda'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 60
            max_strength = 70
           }
@@ -723,7 +723,7 @@
          { id       = {  type = 23500 id = 81  }
            name     = "31a Divisione 'Calabria'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 60
            max_strength = 70
           }
@@ -731,7 +731,7 @@
          { id       = {  type = 23500 id = 95  }
            name     = "47a Divisione 'Bari'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -739,7 +739,7 @@
          { id       = {  type = 23500 id = 6961  }
            name     = "184a Divisione 'Nembo'"
            type     = paratrooper
-           model    = 10
+           model    = 11
            strength = 60
           }
         }
@@ -754,17 +754,17 @@
          { id       = {  type = 23500 id = 39  }
            name     = "2a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 53  }
            name     = "1a Divisione 'Eugenio di Savoia'"
            type     = cavalry
-           model    = 11
+           model    = 12
            strength = 70
            extra    = light_armor_brigade
-	   brigade_model = 6
+	   brigade_model = 7
           }
         }
        landunit =
@@ -775,7 +775,7 @@
          { id       = {  type = 23500 id = 43  }
            name     = "13a Divisione 'Re'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -783,14 +783,14 @@
          { id       = {  type = 23500 id = 6914  }
            name     = "153a Divisione 'Macerata'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
          division =
          { id       = {  type = 23500 id = 6912  }
            name     = "154a Divisione 'Murge'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
         }
@@ -802,7 +802,7 @@
          { id       = {  type = 23500 id = 70  }
            name     = "18a Divisione 'Messina'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -810,7 +810,7 @@
          { id       = {  type = 23500 id = 67  }
            name     = "32a Divisione 'Marche'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -823,7 +823,7 @@
          { id       = {  type = 23500 id = 44  }
            name     = "14a Divisione 'Isonzo'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -831,7 +831,7 @@
          { id       = {  type = 23500 id = 7  }
            name     = "22a Divisione 'Cacciatori delle Alpi'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -839,7 +839,7 @@
          { id       = {  type = 23500 id = 49  }
            name     = "57a Divisione 'Lombardia'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -852,7 +852,7 @@
          { id       = {  type = 23500 id = 47  }
            name     = "15a Divisione 'Bergamo'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -860,7 +860,7 @@
          { id       = {  type = 23500 id = 6916  }
            name     = "158a Divisione 'Zara'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
         }
@@ -873,7 +873,7 @@
          { id       = {  type = 23500 id = 84  }
            name     = "19a Divisione 'Venezia'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -881,7 +881,7 @@
          { id       = {  type = 23500 id = 85  }
            name     = "23a Divisione 'Ferrara'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -889,14 +889,14 @@
          { id       = {  type = 23500 id = 6913  }
            name     = "155a Divisione 'Emilia'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
          division =
          { id       = {  type = 23500 id = 30  }
            name     = "1a Divisione Alpina 'Taurinese'"
            type     = bergsjaeger
-           model    = 10
+           model    = 11
            strength = 80
           }
         }
@@ -909,14 +909,14 @@
          { id       = {  type = 23500 id = 1003  }
            name     = "9a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 6964  }
            name     = "1a Divisione 'Albania'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 60
            max_strength = 70
           }
@@ -924,7 +924,7 @@
          { id       = {  type = 23500 id = 6965  }
            name     = "2a Divisione 'Albania'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 60
            max_strength = 70
           }
@@ -937,7 +937,7 @@
          { id       = {  type = 23500 id = 68  }
            name     = "38a Divisione 'Puglie'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -945,7 +945,7 @@
          { id       = {  type = 23500 id = 73  }
            name     = "49a Divisione 'Parma'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -958,7 +958,7 @@
          { id       = {  type = 23500 id = 101  }
            name     = "41a Divisione 'Firenze'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -966,7 +966,7 @@
          { id       = {  type = 23500 id = 86  }
            name     = "53a Divisione 'Arezzo'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -981,14 +981,14 @@
          { id       = {  type = 23500 id = 1004  }
            name     = "11a Armata"
            type     = hq
-           model    = 2
+           model    = 3
            strength = 60
           }
          division =
          { id       = {  type = 23500 id = 26  }
            name     = "11a Divisione 'Brennero'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -996,7 +996,7 @@
          { id       = {  type = 23500 id = 6918  }
            name     = "151a Divisione 'Perugia'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
         }
@@ -1008,7 +1008,7 @@
          { id       = {  type = 23500 id = 33  }
            name     = "24a Divisione 'Pinerolo'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1016,7 +1016,7 @@
          { id       = {  type = 23500 id = 15  }
            name     = "36a Divisione 'Forlì'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1029,7 +1029,7 @@
          { id       = {  type = 23500 id = 94  }
            name     = "29a Divisione 'Piemonte'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1037,7 +1037,7 @@
          { id       = {  type = 23500 id = 34  }
            name     = "59a Divisione 'Cagliari'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1050,7 +1050,7 @@
          { id       = {  type = 23500 id = 22  }
            name     = "37a Divisione 'Modena'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1058,7 +1058,7 @@
          { id       = {  type = 23500 id = 71  }
            name     = "56a Divisione 'Casale'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1071,7 +1071,7 @@
          { id       = {  type = 23500 id = 14  }
            name     = "33a Divisione 'Acqui'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1084,7 +1084,7 @@
          { id       = {  type = 23500 id = 19  }
            name     = "6a Divisione 'Cuneo'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1097,7 +1097,7 @@
          { id       = {  type = 23500 id = 106  }
            name     = "50a Divisione 'Regina'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
           }
@@ -1110,11 +1110,11 @@
          { id       = {  type = 23500 id = 104  }
            name     = "51a Divisione 'Siena'"
            type     = infantry
-           model    = 10
+           model    = 11
            strength = 70
            max_strength = 70
            extra    = artillery
-           brigade_model = 7
+           brigade_model = 8
           }
         }
        landunit =
@@ -1125,7 +1125,7 @@
          { id       = {  type = 23500 id = 6942  }
            name     = "159a Divisione 'Veneto'"
            type     = garrison
-           model    = 4
+           model    = 5
            strength = 70
           }
         }
@@ -1175,12 +1175,59 @@
 			model = 2 
 			} 
 		division = { 
-			id = { type = 23500 id = 2830 } 
-			name = "Squadrone Porto di Roma" 
-			type = transport 
-			model = 2 
+			id = { type = 23500 id = 6023 } 
+			name = "RN Leonardo Da Vinci" 
+			type = battleship
+			model = 8
 			} 
-		} 
+		division = { 
+			id = { type = 23500 id = 6024 } 
+			name = "RN Francesco Caracciolo" 
+			type = battleship
+			model = 8 
+			} 
+		division = { 
+			id = { type = 23500 id = 6025 } 
+			name = "RN Cristoforo Colombo" 
+			type = battleship
+			model = 8 
+			} 
+		division = { 
+			id = { type = 23500 id = 6026 } 
+			name = "RN Marcantonio Colonna" 
+			type = battleship
+			model = 9
+			} 
+		division = { 
+			id = { type = 23500 id = 6029 } 
+			name = "RN Falco" 
+            type          = carrier  
+            model         = 3  
+            extra         = CAG  
+            brigade_model = 3  
+			} 
+		division = { 
+			id = { type = 23500 id = 6031 } 
+			name = "RN Europa" 
+            type          = light_carrier 
+            model         = 1
+            extra         = light_cag 
+            brigade_model = 3  
+			} 
+		division = { 
+			id = { type = 23500 id = 6032 } 
+			name = "RN Etna" 
+			type = light_cruiser 
+			model = 3 
+			} 
+		division = { 
+			id = { type = 23500 id = 3033 } 
+			name = "RN Pisa" 
+			type = heavy_cruiser 
+			model = 4 
+			}
+	}
+	
 	# 1ST FLEET
 	navalunit = { 
 		id = { type = 23500 id = 200 } 
@@ -1617,21 +1664,21 @@
       name     = "2a Divisione Caccia 'Borea'"
       strength = 100
       type     = interceptor
-      model    = 7
+      model    = 8
     }
     division =
     { id       = { type = 23500 id = 302 }
       name     = "4a Divisione Bombardieri 'Drago"
       strength = 100
       type     = tactical_bomber
-      model    = 6
+      model    = 7
     }
     division =
     { id       = { type = 23500 id = 303 }
       name     = "6a Divisione Bombardieri 'Falco"
       strength = 100
       type     = tactical_bomber
-      model    = 6
+      model    = 7
     }
   }
   # 2ND AIR FLEET
@@ -1645,21 +1692,21 @@
       name     = "1a Divisione Caccia 'Aquila'"
       strength = 100
       type     = interceptor
-      model    = 7
+      model    = 8
     }
     division =
     { id       = { type = 23500 id = 306 }
       name     = "3a Divisione Bombardieri 'Centauro'"
       strength = 100
       type     = naval_bomber
-      model    = 2
+      model    = 3
     }
     division =
     { id       = { type = 23500 id = 307 }
       name     = "11a Brigata Bombardieri 'Nibbio'"
       strength = 40
       type     = naval_bomber
-      model    = 2
+      model    = 3
     }
   }
   # 3RD AIR FLEET
@@ -1673,14 +1720,14 @@
       name     = "5a Divisione Bombardieri 'Eolo'"
       strength = 100
       type     = cas
-      model    = 1
+      model    = 2
     }
     division =
     { id       = { type = 23500 id = 310 }
       name     = "8a Brigata Caccia 'Ibis'"
       strength = 40
       type     = multi_role
-      model    = 5
+      model    = 6
     }
   }
   # 4TH TERRITORIAL AIR FORCE ZONE
@@ -1694,7 +1741,7 @@
       name     = "9a Divisione Bombardieri 'Leone'"
       strength = 100
       type     = tactical_bomber
-      model    = 6
+      model    = 7
     }
   }
   # SARDINIA AVIATION COMMAND
@@ -1708,7 +1755,7 @@
       name     = "10a Divisione Caccia 'Marte'"
       strength = 100
       type     = interceptor
-      model    = 7
+      model    = 8
     }
   }
   # ROYAL AIR FORCE
@@ -1722,102 +1769,9 @@
       name     = "Comando Servici Aerei Speciali"
       strength = 25
       type     = transport_plane
-      model    = 1
+      model    = 2
     }
   }
-	
-	division_development = {
-		id    = { type = 23500 id = 402 }
-		name  = "RN Impero"
-		type  = battleship
-		model = 7
-		cost  = 0.2
-		date  = { year = 1945 month = april day = 9 } # 18 months from 09.09.1943
-	}
-	division_development = {
-		id    = { type = 23500 id = 419 }
-		name  = "RN Conte di Cavour"
-		type  = battleship
-		model = 5
-		cost  = 0.2
-		date  = { year = 1944 month = january day = 1 } # this date is random, since the ship was captured incomplete by the Germans in 10.09.1943
-		extra = naval_anti_air_l
-	}
-	division_development = {
-		id    = { type = 23500 id = 420 }
-		name  = "RN Aquila"
-		type  = carrier
-		model = 2
-		cost  = 0.3
-		date  = { year = 1944 month = january day = 21 }
-		extra = cag
-		brigade_model = 3
-	}
-	division_development = {
-		id    = { type = 23500 id = 421 }
-		name  = "RN Sparviero"
-		type  = escort_carrier
-		model = 1
-		cost  = 0.3
-		date  = { year = 1945 month = may day = 1 }
-		extra = cag
-		brigade_model = 3
-	}
-	division_development = {
-		id    = { type = 23500 id = 405 }
-		name  = "RN Caio Mario"
-		type  = light_cruiser
-		model = 5
-		date  = { year = 1944 month = january day = 24 }
-		cost  = 0.3
-		}
-	division_development = {
-		id    = { type = 23500 id = 408 }
-		name  = "RN Cornelio Silla"
-		type  = light_cruiser
-		model = 5
-		date  = { year = 1944 month = february day = 7 }
-		cost  = 0.3
-	}
-	division_development = {
-		id    = { type = 23500 id = 409 }
-		name  = "RN Giulio Germanico"
-		type  = light_cruiser
-		model = 5
-		cost  = 0.3
-		date  = { year = 1943 month = november day = 1 } # almost complete by 09.1943
-	}
-	division_development = {
-		id    = { type = 23500 id = 410 }
-		name  = "RN Ottaviano Augusto"
-		type  = light_cruiser
-		cost  = 0.3
-		model = 5
-		date  = { year = 1944 month = january day = 19 }
-	}
-	division_development = {
-		id    = { type = 23500 id = 414 }
-		name  = "RN Ulpio Traiano"
-		cost  = 0.3
-		type  = light_cruiser
-		model = 5
-		date  = { year = 1944 month = january day = 19 }
-	}
-	division_development = {
-		id    = { type = 23500 id = 416 }
-		name  = "RN Etna"
-		type  = light_cruiser
-		model = 6
-		cost  = 0.3
-		date  = { year = 1944 month = may day = 28 }
-	}
-	division_development = {
-		id    = { type = 23500 id = 417 }
-		name  = "RN Vesuvio"
-		type  = light_cruiser
-		model = 6
-		date  = { year = 1944 month = august day = 1 }
-		cost  = 0.3
-	}
 }
+	
 

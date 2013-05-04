@@ -747,21 +747,21 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 49 }
+			id = { type = 30254 id = 75 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 50 }
+			id = { type = 30254 id = 73 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 51 }
+			id = { type = 30254 id = 74 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -773,21 +773,21 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 49 }
+			id = { type = 30254 id = 60 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 50 }
+			id = { type = 30254 id = 61 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 51 }
+			id = { type = 30254 id = 62 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -799,21 +799,21 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 52 }
+			id = { type = 30254 id = 63 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 53 }
+			id = { type = 30254 id = 64 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 54 }
+			id = { type = 30254 id = 65 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -825,14 +825,14 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 55 }
+			id = { type = 30254 id = 66 }
 			name = "Beach Defense"
             experience = 20
 		}
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 56 }
+			id = { type = 30254 id = 67 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -844,7 +844,7 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 57 }
+			id = { type = 30254 id = 68 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -856,7 +856,7 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 57 }
+			id = { type = 30254 id = 69 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -868,7 +868,7 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 57 }
+			id = { type = 30254 id = 70 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -880,7 +880,7 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 57 }
+			id = { type = 30254 id = 71 }
 			name = "Beach Defense"
             experience = 20
 		}
@@ -892,7 +892,7 @@ inventions = { 3000027 3000028 3000012 }
 		division = {
 			type = garrison
 			model = 5
-			id = { type = 30254 id = 57 }
+			id = { type = 30254 id = 72 }
 			name = "Beach Defense"
             experience = 20
 		}
