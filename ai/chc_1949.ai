@@ -27,9 +27,6 @@ claim_acceptance = -59
 demand_claims = {
 
 }
-
-liberate = { PRK }
-
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = {  
 	CHI = 6
@@ -338,7 +335,6 @@ front = {
 	urban_attack 	= 1.0
 	river 		= 1.0
 	
-	reserve_prop = 0.5
 
    	enemy_handicap = { } 
    	passivity = { } 
@@ -426,3 +422,4 @@ admiral = {
 	target = { } 
 	core = { } 
 }
+
