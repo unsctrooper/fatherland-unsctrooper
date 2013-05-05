@@ -21,83 +21,127 @@ event = {
 	style = 2
 	picture = "lend_lease"
 
-	date = { day = 10 month = january year = 1948 }
-	offset = 30
+	date = { day = 1 month = january year = 1948 }
+	offset = 2
 	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = ACTION_NAME_GREAT
 		ai_chance = 100
+		command = { type = trigger which = 503 }
 		command = { type = trigger which = 501 }
 		command = { type = peacetime_ic_mod value = -10 }
+	    command = { type = relation which = ENG value = 100 } 
+	    command = { type = relation which = U01 value = 100 } 
+	    command = { type = construct which = ic where = 1832 value = -5 }
+	    command = { type = construct which = ic where = 1805 value = -5 }
+	    command = { type = construct which = ic where = 1889 value = -5 }
+	    command = { type = construct which = ic where = 1846 value = -5 }
 	}
 }
 event = {
 	id = 501
 	random = no
-	country = U01
+	country = ENG
+
 	name = "501NAME"
 	desc = "501DESC"
 	style = 2
 	picture = "lend_lease"
 
-	action_a = {
-		name = ACTION_NAME_GREAT
-			ai_chance = 90
-		command = { type = relation which = USA value = 50 }
-		command = { type = domestic which = free_market value = 1 }
-		command = { type = domestic which = democratic value = 1 }
-		command = { type = trigger which = 502 }
-	}
-		action_b = {
-			ai_chance = 10
-		name = "501REFUSE"
-		command = { type = relation which = USA value = -50 }
-		command = { type = domestic which = interventionism value = -1 }
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = peacetime_ic_mod value = 5 }
+		command = { type = construct which = ic where = 17 value = 5 }
+		command = { type = construct which = ic where = 24 value = 5 }
+		command = { type = construct which = ic where = 29 value = 5 }
+		command = { type = domestic which = free_market value = 3 }
+		command = { type = domestic which = democratic value = 3 }
 	}
 }
-
-event = {
-	id = 502
-	random = no
-	country = USA	
-	name = "502NAME"
-	desc = "502DESC"
-	style = 2
-	picture = "lend_lease"	
-
-	action_a = {
-	name = "502A"
-	ai_chance = 100
-	command = { type = trigger which = 503 }
-	command = { type = relation which = U01 value = 10 } 
-	command = { type = construct which = ic where = 1832 value = -5 }
-	command = { type = construct which = ic where = 1805 value = -5 }
-	command = { type = construct which = ic where = 1889 value = -5 }
-	command = { type = construct which = ic where = 1846 value = -5 }
-	}
-	action_b = {
-	name = "502B"
-	ai_chance = 0
-	command = { type = relation which = U01 value = -100 } 
-	}
-}
-
 event = {
 	id = 503
 	random = no
 	country = U01
 
-	name = "503NAME"
-	desc = "503DESC"
+	name = "501NAME"
+	desc = "501DESC"
 	style = 2
 	picture = "lend_lease"
 
 	action = {
 		name = ACTION_NAME_OK
+		command = { type = peacetime_ic_mod value = 5 }
 		command = { type = construct which = ic where = 727 value = 5 }
 		command = { type = construct which = ic where = 728 value = 5 }
 		command = { type = construct which = ic where = 734 value = 5 }
 		command = { type = construct which = ic where = 978 value = 5 }
+		command = { type = domestic which = free_market value = 3 }
+		command = { type = domestic which = democratic value = 3 }
+	}
+}
+event = {
+id = 365
+	random = no
+	country = USA
+	style = 2
+	picture = "lend_lease"
+
+	trigger = {
+	event = { id = 364 days = 30 }
+	event = { id = 378 days = 30 }
+    flag = DeGaulleVichy
+	}
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 1 month = december year = 1955 }
+
+	name = "365NAME"
+    desc = "365DESC"
+	
+	action = {
+			name = "365A"
+			ai_chance = 90
+			command = { type = trigger which = 366 }
+			command = { type = relation which = GER value = -100 }
+			command = { type = relation which = FRA value = 25 }
+
+ 		
+	}
+	
+	action = {
+			name = "365B"
+			ai_chance = 10
+			command = { type = relation which = FRA value = -10 }
+			command = { type = relation which = U01 value = -10 }
+			command = { type = relation which = GER value = 10 }
+}
+}
+event = {
+	id = 366
+	random = no
+    save_date = yes
+	country = FRA
+	name = "366NAME"
+	desc = "366DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "366A"
+			ai_chance = 99
+        command = { type = peacetime_ic_mod value = 5 }
+		command = { type = construct which = ic where = 55 value = 5 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+
+	}
+		action_b = {
+			ai_chance = 1
+		name = "366B"
+		command = { type = relation which = USA value = -50 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = clrflag which = DeGaulleVichy  }
 	}
 }
