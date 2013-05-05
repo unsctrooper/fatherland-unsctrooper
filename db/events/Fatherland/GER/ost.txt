@@ -475,6 +475,7 @@ event = {
 	command = { type = construct which = infrastructure where = 553 value = -30 }
 	command = { type = construct which = flak where = 553 value = -6 }
 	command = { type = province_manpower which = 553 value = -3 }
+	command = { type = removeclaim which = 553 }
 	command = { type = secedeprovince which = FIN value = 553 }
 	command = { type = relation which = FIN value = 10 } 
 	}
