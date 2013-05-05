@@ -1598,6 +1598,8 @@ event = {
 	command = { type =	removecore which = 293 } # North Transylvania
 	command = { type =	removecore which = 292 }
 	command = { type =	removecore which = 288 }
+	command = { type =	removecore which = 287 }
+	command = { type =	removecore which = 296 }
 
 	command = { type =	removecore which = 291 } # South Transylvania
 	command = { type =	removecore which = 289 }
@@ -1639,6 +1641,8 @@ event = {
 	command = { type =	removecore  which = 293 } # North Transylvania
 	command = { type =	removecore which = 292 }
 	command = { type =	removecore which = 288 }
+	command = { type =	removecore which = 287 }
+	command = { type =	removecore which = 296 }
 	
 	command = { type =	removecore which = 291 } # South Transylvania
 	command = { type =	removecore which = 289 }
