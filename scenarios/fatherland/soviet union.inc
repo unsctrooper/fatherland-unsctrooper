@@ -179,8 +179,9 @@ rare_materials         = 5000
  270 264 262
  #Karelia
  530 531 532 534 535 536 537 538 539 540 541 517 519 
-   
-   
+ #Tatar land
+ 670 675 674 672 664 690 1131 687 671 673
+ 
  #Bessarabia
  300 302  303 304 305 306
    } 
@@ -359,7 +360,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  1 } 
      name     = "Raboche-Krest'yanskaya Krasnaya Armiya" 
-     location = 572 #Moscow 
+     location = 706 #Moscow 
      Division = 
      {  id       = {  type = 10848 id = 2  } 
        name     = "Generalnyi Shtab RKKA" 
@@ -433,7 +434,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  37 } 
      name     = "50-i Strelkovyi Korpus" 
-     location = 531
+     location = 673
      Division = 
      {  id       = {  type = 10848 id = 38  } 
        name     = "43-ya Strelkovaya Diviziya" 
@@ -486,7 +487,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  21 } 
      name     = "14-ya Armiya" 
-     location = 535
+     location = 546
      Division = 
      {  id       = {  type = 10848 id = 22  } 
        name     = "14-ya Krivorozhskaya Strelkovaya Diviziya" 
@@ -558,7 +559,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  191 } 
      name     = "Zakavkazskyi Voennyi Okrug" 
-     location = 709
+     location = 1097
      Division = 
      {  id       = {  type = 10848 id = 192  } 
        name     = "Zakavkazskyi Voennyi Okrug" 
@@ -658,7 +659,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  1485 } 
      name     = "28-i Mekhanizirovannyi Korpus" 
-     location = 713
+     location = 1098
       Division = 
      {  id       = {  type = 10848 id = 1486  } 
        name     = "6-ya Tankovaya Diviziya" 
@@ -714,7 +715,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  209 } 
      name     = "Moskovskyi Voennyi Okrug" 
-     location = 572
+     location = 664
      Division = 
      {  id       = {  type = 10848 id = 210  } 
        name     = "Moskovskyi Voennyi Okrug" 
@@ -1459,8 +1460,8 @@ airunit = {
 airunit = { 
 	id = { type = 10848 id = 7026 } 
 	name = "Pribaltii'skii Front Vozdushnogo Komandovaniya" 
-	location = 264 # Riga
-	base = 264 # Riga 
+	location = 1130 
+	base = 1130 
 
 	division = { 
 	id = { type = 10848 id = 7027 } 
@@ -1522,8 +1523,8 @@ airunit = {
 airunit = { 
 	id = { type = 10848 id = 7037 } 
 	name = "Zapadnyi Front Vozdushnogo Komandovaniya" 
-	location = 597 # Luban
-	base = 597 # Luban 
+	location = 666
+	base = 666
 
 	division = { 
 	id = { type = 10848 id = 7038 } 
@@ -1592,8 +1593,8 @@ airunit = {
 airunit = { 
 	id = { type = 10848 id = 7048 } 
 	name = "Yugo-Zapadnogo Fronta Vozdushnogo Komandovaniya" 
-	location = 240 # Tarnopol
-	base = 240 # Tarnopol
+	location = 706
+	base = 706
 
 	division = { 
 	id = { type = 10848 id = 7049 } 
@@ -1662,8 +1663,8 @@ airunit = {
 airunit = { 
 	id = { type = 10848 id = 7068 } 
 	name = "Moskva Vozdushnogo Komandovaniya" 
-	location = 572 # Moscow 
-	base = 572 # Moscow 
+	location = 706
+	base = 706
 
 	division = { 
 	id = { type = 10848 id = 7069 } 
@@ -1882,123 +1883,7 @@ airunit = {
 			type = submarine 
 			model = 3 
 			} 
-		}  						
-	navalunit = { # Kozhanov I.K.
-		id = { type = 10848 id = 9000 } 
-		name = "Chernomorskiy Flot" 
-		location = 641 
-		base = 641 
-		division = { 
-			id = { type = 10848 id = 9001 } 
-			name = "Parizhskaya Kommuna" 
-			type = battleship 
-			model = 2 
-			extra1 = floatplane
-			brigade_model1 = 4
-			extra2 = naval_improved_hull_l
-			brigade_model2 = 0
-			extra3 = naval_fire_controll_l
-			brigade_model3 = 0
-			extra4 = naval_anti_air_l
-			brigade_model4 = 0			
-			} 
-		division = { 
-			id = { type = 10848 id = 9002 } 
-			name = "Krasnyi Kavkaz" 
-			type = heavy_cruiser 
-			model = 2 
-			extra1 = floatplane
-			brigade_model1 = 4
-			} 
-		division = { 
-			id = { type = 10848 id = 9003 } 
-			name = "Krasnyi Krym" 
-			type = light_cruiser 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 9004 } 
-			name = "Komintern" 
-			type = light_cruiser 
-			model = 0 
-			} 
-		division = { 
-			id = { type = 10848 id = 9005 } 
-			name = "Chervona Ukraina" 
-			type = light_cruiser 
-			model = 2 
-			} 
-		division = { 
-			id = { type = 10848 id = 9006 } 
-			name = "Voroshilov" 
-			type = heavy_cruiser
-			model = 5 
-			extra1 = floatplane
-			brigade_model1 = 4
-			} 
-		division = { 
-			id = { type = 10848 id = 9007 } 
-			name = "Molotov" 
-			type = heavy_cruiser
-			model = 5 
-			extra1 = floatplane
-			brigade_model1 = 4
-			} 
-		division = { 
-			id = { type = 10848 id = 9010 } 
-			name = "6. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 9011 } 
-			name = "7. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 9012 } 
-			name = "12. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 9013 } 
-			name = "13. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 9014 } 
-			name = "11. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 9015 } 
-			name = "12. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			}
-		division = { 
-			id = { type = 10848 id = 9016 } 
-			name = "13. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 9017 } 
-			name = "14. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			}
-		division = { 
-			id = { type = 10848 id = 9018 } 
-			name = "15. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		} 
+		}
 	navalunit = { # Viktorov M.V.
 		id = { type = 10848 id = 5515 } 
 		name = "Tikhookeanskiy Flot" 
