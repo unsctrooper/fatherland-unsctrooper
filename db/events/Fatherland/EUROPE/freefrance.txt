@@ -301,7 +301,6 @@ event = {
 		command = { type = trigger which = 324 }
 		command = { type = relation which = USA value = 50 } #anti-colonialist stance of the USA
 		command = { type = relation which = ENG value = -15 }  #UK see it as supporting similar demands from theirs africans colonies
-		command = { type = setflag which = Decolonization1 }
 	}
 }
 event = {
@@ -411,6 +410,10 @@ event = {
 		command = { type = add_division which = "3rd Morocco Infantry Division" value = infantry when = 9 }
 		command = { type = add_division which = "4th Morocco Infantry Division" value = militia when = 4 }
 		command = { type = add_division which = "5th Morocco Infantry Division" value = militia when = 4 }
+		command = { type = add_corps which = "3ème Armée Marocaine" value = land when = -1 where = 722 }
+		command = { type = add_division which = "6th Morocco Infantry Division" value = infantry when = 9 }
+		command = { type = add_division which = "7th Morocco Infantry Division" value = militia when = 4 }
+		command = { type = add_division which = "8th Morocco Infantry Division" value = militia when = 4 }
 		command = { type = construct which = ic where = 717 value = 5 }
 		command = { type = supplies value = 2500 }
 		command = { type = oilpool value = 2500 }
@@ -447,7 +450,7 @@ event = {
 	desc = "Moroccan rebels have succesfully take control of the protectorate, and are even advancing in Algeria. We must end this situation quickly, or the Algerians nationalists will rises too, and we may lost control of our empire... Should we seek peace?"
 
 	action_a = {
-	ai_chance = 65
+	ai_chance = 75
 	name = "We must accept their victory..."
 		command = { type = peace which = MOR value = 0 }
 		command = { type = secedeprovince which = MOR value = 721 } 
@@ -461,10 +464,11 @@ event = {
 		command = { type = secedeprovince which = MOR value = 719 }
 		command = { type = secedeprovince which = MOR value = 720 }
 		command = { type = dissent value = 15 }
+		command = { type = trigger which = 325 }
 	}   
 
 	action_b = {
-	ai_chance = 35
+	ai_chance = 25
 	name = "This is only a temporay setback. Onwards to victory!"
 		command = { type = dissent value = 10 }
 	}
@@ -494,9 +498,10 @@ event = {
 	deathdate = { day = 30 month = december year = 1966 }
 
 	action_a = {
-	name = "Good"
+	name = "ACTION_NAME_GREAT"
 		command = { type = dissent value = -10 }
 		command = { type =	alliance which = USA }
+		command = { type = construct which = ic where = 717 value = -5 }
 	}
 }
 event = {
@@ -516,5 +521,25 @@ event = {
 		command = { type = headofgovernment which = 505016 }
 		command = { type = sleepminister which = 505047 }
 		command = { type = construct which = ic where = 717 value = 5 }
+		command = { type = setflag which = MORfreeG }
+		}
+}
+event = {
+	id = 325
+	random = no
+	country = MOR
+	style = 2
+	save_date = yes
+
+	name = "A New Morocco" 
+	desc = "Our Great Sultan Mohammed V lead us to victory against french oppressors! Glory to him and Morroco!"
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofstate which = 505001 }
+		command = { type = headofgovernment which = 505016 }
+		command = { type = sleepminister which = 505047 }
+		command = { type = setflag which = MORfreeF }
 		}
 }
