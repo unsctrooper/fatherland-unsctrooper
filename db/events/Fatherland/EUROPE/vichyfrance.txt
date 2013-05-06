@@ -824,13 +824,13 @@ id = 369
     desc = "369DESC"
 	
 	action = {
-			name = "368A"
+			name = "369A"
 			ai_chance = 80
 			command = { type = trigger which = 371 }			
 	}
 	
 	action = {
-			name = "368B"
+			name = "369B"
 			ai_chance = 20
 			command = { type = dissent value = 1 }
 } 
