@@ -750,6 +750,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 75 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -757,6 +758,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 73 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -764,6 +766,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 74 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -776,6 +779,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 60 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -783,6 +787,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 61 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -790,6 +795,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 62 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -802,6 +808,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 63 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -809,6 +816,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 64 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -816,6 +824,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 65 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -828,6 +837,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 66 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 		division = {
 			type = garrison
@@ -835,6 +845,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 67 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -847,6 +858,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 68 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -859,6 +871,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 69 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -871,6 +884,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 70 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -883,6 +897,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 71 }
 			name = "Beach Defense"
             experience = 20
+			locked = yes
 		}
 	}
 	landunit = {
@@ -895,6 +910,7 @@ inventions = { 3000027 3000028 3000012 }
 			id = { type = 30254 id = 72 }
 			name = "Beach Defense"
             experience = 20
+		    locked = yes
 		}
 	}
 	
