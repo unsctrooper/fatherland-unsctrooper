@@ -16,9 +16,11 @@
 
 # Scenario files (OOB):
 - New German Black Sea Fleet made with converted Soviet vessels (Ticket Cookie)
+- Revision of Nationalist China OOB (Pako)
 
 # AI
 - Completely reworked AI for major (UK,Germany,Italy,USSR,USA,France) (Thanks to Tonie112)
+- Revision of Nationalist China and Communist China (Pako)
 
 ####################################
 # Changelog for Alpha version 0.30
