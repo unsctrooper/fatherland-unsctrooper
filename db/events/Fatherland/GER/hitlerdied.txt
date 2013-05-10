@@ -105,7 +105,7 @@
 		country = GER
 		random = no
 		
-		name = "Death of the Führer 1 !"
+		name = "Death of the Führer!"
 		desc = "The Führer's health had deteriorated over the past several years. He suffered from Parkinson's Disease as a result of exposure to nerve gases in World War I and cleverly disguised this by holding his shaking hand. He developed increasing heart and stomach problems and died in his sleep. An inquest into his death resulted in the conviction of Dr. Morrell, who was sentenced to death by firing squad."
 		
 		action = {
@@ -127,7 +127,7 @@
 		random = no
 		
 		trigger = { 
-			year = 1951
+			year = 1953
 			event = 90000598
 		}
 

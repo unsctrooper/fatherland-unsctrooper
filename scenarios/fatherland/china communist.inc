@@ -25,10 +25,9 @@ rare_materials         = 60
    manpower               = 2000
    dissent                = 20 
    diplomacy = 
-   {  relation = {  tag = JAP value = -200  } 
-     relation = {  tag = MAN value = -200  } 
-     relation = {  tag = MEN value = -200  }
-     relation = {  tag = CHI value = -100  }  
+   { 
+	 relation = {  tag = JAP value = -100  } 
+     relation = {  tag = CHI value = -150  }  
      relation = {  tag = SOV value = 100  } 
      relation = {  tag = MON value = 25  }
      relation = {  tag = U67 value = 50  } 

@@ -21,8 +21,9 @@ use_offensive_supply = yes
 # Diplomacy
 ###################################
 combat = { 
-	CHI = 50 
-	TIB = 20
+	CHI = 80 
+	TIB = 50
+	KOR = 20
 }
 
 liberate = { 
@@ -31,7 +32,7 @@ liberate = {
 
 claim_acceptance = -59
 
-demand_claims = { }
+demand_claims = { TIB }
 
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = {  
@@ -54,7 +55,7 @@ protect = {
 	PRK = 100
     SIK = 70
 	MON = 70
-	SOV = 50
+	SOV = 30
 }
 
 target = {

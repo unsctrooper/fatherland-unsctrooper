@@ -24,7 +24,7 @@ rare_materials         = 75
    capital                = 1124 
    diplomacy = 
    {  relation = {  tag = CHC value = 25  } 
-     relation = {  tag = MON value = 150  } 
+     relation = {  tag = SOV value = 150  } 
      relation = {  tag = TAN value = 200  } 
     } 
    SpyInfo                = {  country = "MON" NumberOfSpies = 3  } 

@@ -23,12 +23,11 @@ rare_materials         = 500
    escorts                = 2 
     
   diplomacy =
-  { relation = { tag = CHC value = 100 }
+  { 
+	relation = { tag = CHC value = -150 }
     relation = { tag = ENG value = 100 }
-    relation = { tag = ITA value = 25  }
-    relation = { tag = JAP value = -200 }
-    relation = { tag = MAN value = -200 }
-    relation = { tag = MEN value = -200 }
+    relation = { tag = ITA value = 25 }
+    relation = { tag = JAP value = -100 }
     relation = { tag = SIK value = -125 }
     relation = { tag = USA value = 100 }
   }

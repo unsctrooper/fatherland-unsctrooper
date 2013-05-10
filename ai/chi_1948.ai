@@ -27,16 +27,16 @@ use_offensive_supply = no
 # Diplomacy
 ###################################
 combat = { 
-	CHC = 50
-	TIB = 30
+	CHC = 80
+	TIB = 50
+	PRK = 40
 	MON = 20
 	SIK = 20
 }
 
 claim_acceptance = -69
 
-demand_claims = {
-}
+demand_claims = { TIB }
 
 befriend = {
 	KOR = 8

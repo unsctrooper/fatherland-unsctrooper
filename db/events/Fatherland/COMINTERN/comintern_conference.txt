@@ -16,11 +16,16 @@ event = {
         name = "The Vladivostok Conference"
         desc = "After the victory of the Communists in the civil war the time has come to unite all the proletarian forces and forge a renovated Comintern !"
 	
-		date = { day = 1 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 30
+		deathdate = { day = 30 month = december year = 1963 }
 		
         trigger = {
-                flag = CHC_won_civil_war
-				atwar = no 
+			OR = {
+				flag = CHC_won_civil_war
+				flag = CHI_won_civil_war
+			}
+			atwar = no 
         }
  
         action = {
@@ -84,7 +89,9 @@ event = {
         desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
         style = 0
  
-        date = { day = 5 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 3
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
                 name = "Let's go!"
@@ -135,7 +142,9 @@ event = {
         desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
         style = 0
  
-        date = { day = 7 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 3
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
                 name = "It's near home ... let's go !!!"
@@ -186,7 +195,9 @@ event = {
         desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
         style = 0
  
-        date = { day = 9 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 3
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 90
@@ -228,7 +239,9 @@ event = {
         desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
         style = 0
  
-        date = { day = 11 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 3
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 90
@@ -271,7 +284,9 @@ event = {
         desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
         style = 0
  
-        date = { day = 12 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 3
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 90
@@ -311,7 +326,9 @@ event = {
         desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
         style = 0
  
-        date = { day = 15 month = april year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 3
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 90
@@ -346,13 +363,19 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE
+				event = 601
+				event = 602
+				event = 603
+				event = 604
         }
  
         name = "The Conference begins"
         desc = "All delegates are arrived, the Conference can officially begin."
         style = 0
  
-        date = { day = 1 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 10
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -369,13 +392,16 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE
+				event = 607
         }
  
         name = "Forge a new alliance"
         desc = "We must forge a new Alliance exchanging knowledge and doctrine and training together our armies !"
         style = 0
  
-        date = { day = 3 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 10
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -426,7 +452,9 @@ event = {
         desc = "We are in !"
         style = 0
  
-        date = { day = 5 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -472,7 +500,9 @@ event = {
         desc = "We are in !"
         style = 0
  
-        date = { day = 5 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -516,7 +546,9 @@ event = {
         desc = "We are in !"
         style = 0
  
-        date = { day = 5 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -556,7 +588,9 @@ event = {
         desc = "We are in !"
         style = 0
  
-        date = { day = 5 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -596,7 +630,9 @@ event = {
         desc = "We are in !"
         style = 0
  
-        date = { day = 5 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -636,7 +672,9 @@ event = {
         desc = "We are in !"
         style = 0
  
-        date = { day = 5 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -671,13 +709,17 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE
+				event = 608
+				event = 609
         }
  
         name = "Foreign Policy"
         desc = "Where spread the revolution ?"
         style = 0
  
-        date = { day = 10 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 45
@@ -705,13 +747,16 @@ event = {
         country = SOV
         trigger = {
             flag = COMINTERN_CONFERENCE
+			event = 615
         }
  
         name = "Economic Policy"
         desc = "We have to define an economic policy towards the fascist and capitalist countries ... no trade with them!"
         style = 0
  
-        date = { day = 20 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -765,13 +810,16 @@ event = {
         country = SOV
         trigger = {
             flag = COMINTERN_CONFERENCE
+			event = 616
         }
  
         name = "Conference Ended"
         desc = "The Conference has ended"
         style = 0
  
-        date = { day = 25 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
@@ -788,13 +836,16 @@ event = {
         country = GER
         trigger = {
                 flag = COMINTERN_CONFERENCE
+				event = 617
         }
  
         name = "German Reaction"
         desc = "The Vladivostok Conference is over, our spies have informed us that the socialist countries are rearming"
         style = 0
  
-        date = { day = 27 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 90
@@ -814,13 +865,16 @@ event = {
         country = USA
         trigger = {
                 flag = COMINTERN_CONFERENCE
+				event = 617
         }
  
         name = "Allies Reaction"
         desc = "The Conference has ended"
         style = 0
  
-        date = { day = 29 month = may year = 1950 }
+		date = { day = 1 month = january year = 1950 }
+		offset = 1
+		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 30
@@ -853,6 +907,7 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE_ASIA
+				event = 617
         }
  
         name = "Spread the Revolution in Asia"
@@ -961,6 +1016,7 @@ event = {
         country = U01
         trigger = {
                 flag = COMINTERN_CONFERENCE_WORLD
+				event = 620
         }
  
         name = "Communist Revolt in the Free France !"
@@ -983,6 +1039,7 @@ event = {
         country = BRA
         trigger = {
                 flag = COMINTERN_CONFERENCE_WORLD
+								event = 620
         }
  
         name = "Communist Revolt !"
@@ -1005,6 +1062,7 @@ event = {
         country = MEX
         trigger = {
                 flag = COMINTERN_CONFERENCE_WORLD
+								event = 620
         }
  
         name = "Communist Revolt !"
@@ -1026,6 +1084,7 @@ event = {
         country = CUB
         trigger = {
                 flag = COMINTERN_CONFERENCE_WORLD
+								event = 620
         }
  
         name = "Communist Revolt !"
@@ -1048,6 +1107,7 @@ event = {
         country = ENG
         trigger = {
                 flag = COMINTERN_CONFERENCE_WORLD
+								event = 620
         }
  
         name = "Communist Revolt in the Empire !"
@@ -1070,6 +1130,7 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE_EUROPE
+								event = 620
         }
  
         name = "We must destroy the Nazi"

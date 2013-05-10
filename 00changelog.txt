@@ -9,6 +9,7 @@
 - Integration of Mobilization System (Tonie112)
 - Review of Vichy France event chain (Tonie112)
 - Review of Marshal Plan event chain (Tonie112)
+- Review of Vladivostok Conference chain (Pako)
 
 # Scenario files (INC):
 - Review of USA (Ticket Cookie)
@@ -19,6 +20,7 @@ Peru,San Salvador,Urugay,Venezuela) (Ticket Cookie)
 - Nuclear Reactor and Coastal Forts added to UK (Tonie112)
 - Minor changes UK (Newfoundland reworked) (Ticket Cookie)
 - Rebase 12th and 15th USAF from Southern Italy to Korea (Ticket Cookie)
+- Review of Chinas,Mongolia and add Koreas .inc (Pako)
 
 # Scenario files (OOB):
 - New German Black Sea Fleet made with converted Soviet vessels (Ticket Cookie)
