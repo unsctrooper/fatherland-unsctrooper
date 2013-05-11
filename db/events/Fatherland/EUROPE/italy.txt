@@ -527,6 +527,7 @@ event = {
 	ai_chance = 90
 	command = { type = set_relation which = YEM value = 100 }
 	command = { type = non_aggression which = YEM where = ITA }
+	command = { type = setflag which = ITAYEMTR }
 	}
 	action_b = {
 	name = ACTION_NAME_NO
@@ -541,6 +542,7 @@ event = {
 	
 	trigger = {
 			event = 90000611
+			flag = ITAYEMTR
 		}
 	
 	name = EVT_90000612_NAME

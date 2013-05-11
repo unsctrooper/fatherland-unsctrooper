@@ -522,6 +522,10 @@ event = {
 		command = { type = sleepminister which = 505047 }
 		command = { type = construct which = ic where = 717 value = 5 }
 		command = { type = setflag which = MORfreeG }
+		command = { type = add_corps which = "1ère Armée Marocaine" value = land when = -1 where = 717 }
+		command = { type = add_division which = "1st Morocco Infantry Division" value = infantry when = 9 }
+		command = { type = add_division which = "2nd Morocco Infantry Division" value = infantry when = 9 }
+		command = { type = add_division which = "1st Morocco Cavalry Division" value = cavalry when = 8 }
 		}
 }
 event = {
