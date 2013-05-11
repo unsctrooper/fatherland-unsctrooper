@@ -1,0 +1,599 @@
+event = {
+id = 700
+	random = no
+	country = GER	
+	style = 2
+	picture = "reichstag"
+	
+	name = "700NAME" 
+    desc = "700DESC" 
+	
+	date = { day = 25 month = september year = 1948 }
+	
+	action = {
+			name = "700A" 
+			ai_chance = 99
+			command = { type = local_setflag which = GERIRA } 
+		    command = { type = manpowerpool value = -1 }
+			command = { type = belligerence which = GER value = 5 }
+		    command = { type = supplies value = -2000 }
+		    command = { type = money value = -400 }			
+	}
+	
+	action = {
+			name = "700B"
+			ai_chance = 1
+			command = { type = domestic which = interventionism value = -1 }
+}
+}
+
+event = {
+id = 701
+	random = no
+	country = GER	
+	style = 2
+	picture = "reichstag"
+
+	trigger = {
+    local_flag = GERIRA
+	}
+	
+	name = "701NAME" 
+    desc = "701DESC"
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+	action = {
+			name = "701A" # Focus on bringing down the Irish Government
+			ai_chance = 60
+			command = { type = setflag which = IRAIRE } 
+	}	
+	action = {
+			name = "701B" # Focus on bringing North-Ireland down
+			ai_chance = 30
+	        command = { type = setflag which = IRANIRE }
+}
+	action = {
+			name = "701C" # Terror Campaign in England!
+			ai_chance = 10
+		    command = { type = setflag which = IRAUK }
+}
+}
+event = {
+id = 702
+country = IRE
+random = no
+style = 2
+persistent = yes
+picture = "resistance"
+
+trigger = {
+flag = IRAIRE
+random = 10
+}
+
+name = "702NAME"
+desc = "702DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "702A"
+command = { type = trigger which = 721 }
+command = { type = dissent value = 5 }
+command = { type = supplies value = -100 }
+command = { type = money value = -100 }		
+}
+}
+event = {
+id = 703
+country = IRE
+random = no
+style = 2
+persistent = yes
+picture = "resistance"
+
+trigger = {
+flag = IRAIRE
+random = 10
+}
+
+name = "703NAME"
+desc = "703DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "703A"
+command = { type = trigger which = 721 }
+command = { type = dissent value = 3 }
+}
+}
+event = {
+id = 704
+country = IRE
+random = no
+style = 2
+persistent = yes
+picture = "resistance"
+
+trigger = {
+flag = IRAIRE
+random = 10
+}
+
+name = "704NAME"
+desc = "704DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "704A"
+ai_chance = 50
+command = { type = trigger which = 721 }
+command = { type = dissent value = 1 }
+command = { type = money value = -100 }	
+}
+action_b = {
+name = "704B"
+ai_chance = 50
+command = { type = trigger which = 721 }
+command = { type = dissent value = 5 }
+}
+}
+event = {
+id = 705
+country = ENG
+random = no
+style = 2
+persistent = yes
+picture = "resistance"
+
+trigger = {
+flag = IRANIRE
+random = 10
+}
+
+name = "705NAME"
+desc = "705DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "705A"
+command = { type = trigger which = 711 }
+command = { type = dissent value = 5 }
+command = { type = supplies value = -100 }
+command = { type = money value = -100 }		
+}
+}
+event = {
+id = 706
+country = ENG
+random = no
+style = 2
+persistent = yes
+picture = "resistance"
+
+trigger = {
+flag = IRANIRE
+random = 10
+}
+
+name = "706NAME"
+desc = "706DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "706A"
+command = { type = trigger which = 711 }
+command = { type = dissent value = 3 }
+}
+}
+event = {
+id = 707
+country = IRE
+random = no
+style = 2
+persistent = yes
+picture = "resistance"
+
+trigger = {
+flag = IRANIRE
+random = 10
+}
+
+name = "707NAME"
+desc = "707DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "707A"
+ai_chance = 50
+command = { type = trigger which = 711 }
+command = { type = dissent value = 1 }
+command = { type = money value = -100 }	
+}
+action_b = {
+name = "707B"
+ai_chance = 50
+command = { type = trigger which = 711 }
+command = { type = dissent value = 5 }
+}
+}
+event = {
+id = 708
+country = ENG
+random = no
+style = 2
+picture = "news_paper"
+
+trigger = {
+flag = IRAUK
+}
+
+name = "708NAME"
+desc = "708DESC"
+
+date = { day = 1 month = january year = 1950 }
+
+action_a = {
+name = "708A"
+command = { type = supplies value = -100 }
+command = { type = money value = -100 }	
+command = { type = dissent value = 5 }
+}
+}
+event = {
+id = 709
+country = ENG
+random = no
+style = 2
+picture = "news_paper"
+
+trigger = {
+flag = IRAUK
+}
+
+name = "709NAME"
+desc = "709DESC"
+
+date = { day = 14 month = january year = 1950 }
+
+action_a = {
+name = "709A"
+ai_chance = 80
+command = { type = dissent value = 5 }
+command = { type = trigger which = 710 }
+}
+action_b = {
+name = "709B"
+ai_chance = 20
+command = { type = war which = GER }
+}
+}
+event = {
+id = 710
+country = GER
+random = no
+style = 2
+picture = "reichstag"
+
+name = "710NAME"
+desc = "710DESC"
+
+action_a = {
+name = "710A"
+ai_chance = 80
+command = { type = local_clrflag which = GERIRA  }
+command = { type = clrflag which = IRAUK  }
+command = { type = money value = -100 }	
+command = { type = dissent value = 3 }
+}
+action_b = {
+name = "710B"
+ai_chance = 20
+command = { type = war which = ENG }
+}
+}
+event = {
+	id = 711
+	country = ENG
+	random = no
+	persistent = yes
+
+	name = "711NAME"
+	desc = "711DESC" 
+	style = 2
+	picture = "public_jobs"
+
+	action = {
+		name = "711A"
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+		command = { type = supplies value = -1000 }
+        command = { type = money value = -100 }	
+		command = { type = clrflag which = IRANIRE  }
+        command = { type = trigger which = 712 }
+	}
+		action = {
+		name = "710B"
+		ai_chance = 50
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 721
+    country = IRE
+	random = no
+	persistent = yes
+
+	name = "711NAME"
+	desc = "711DESC" 
+	style = 2
+	picture = "public_jobs"
+
+	action = {
+		name = "711A"
+		ai_chance = 30
+		command = { type = dissent value = -1 }
+		command = { type = supplies value = -1000 }
+        command = { type = money value = -100 }	
+		command = { type = clrflag which = IRAIRE  }
+        command = { type = trigger which = 712 }
+	}
+	action = {
+		name = "710B"
+		ai_chance = 70
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+id = 712
+country = GER
+random = no
+persistent = yes
+style = 2
+picture = "reichstag"
+
+name = "712NAME"
+desc = "712DESC"
+
+action_a = {
+name = "712A"
+ai_chance = 40
+command = { type = setflag which = IRAIRE }  
+command = { type = manpowerpool value = -1 }
+command = { type = belligerence which = GER value = 5 }
+command = { type = supplies value = -2000 }
+command = { type = money value = -400 }
+}
+action_b = {
+name = "712B"
+ai_chance = 40
+command = { type = setflag which = IRANIRE }  
+command = { type = manpowerpool value = -1 }
+command = { type = belligerence which = GER value = 5 }
+command = { type = supplies value = -2000 }
+command = { type = money value = -400 }
+}
+action_c = {
+name = "712C"
+ai_chance = 20
+command = { type = money value = 100 }
+}
+}
+event = {
+id = 713
+country = ENG
+random = no
+style = 2
+picture = "news_paper"
+
+trigger = {
+flag = IRANIRE
+random = 10
+}
+
+date = { day = 1 month = july year = 1949 }
+offset = 30
+deathdate = { day = 1 month = december year = 1955 }
+
+name = "713NAME"
+desc = "713DESC"
+
+action_a = {
+name = "713A"
+ai_chance = 99
+command = { type = trigger which = 714 }
+}
+action_b = {
+name = "713B"
+ai_chance = 1
+command = { type = war which = GER }
+}
+}
+event = {
+id = 714
+country = GER
+random = no
+style = 2
+picture = "reichstag"
+
+name = "714NAME"
+desc = "714DESC"
+
+action_a = {
+name = "714A"
+ai_chance = 90
+command = { type = clrflag which = IRANIRE }
+command = { type = local_clrflag which = GERIRE }
+command = { type = money value = -100 }	
+}
+action_b = {
+name = "714B"
+ai_chance = 10
+command = { type = war which = ENG }
+}
+}
+event = {
+id = 715
+country = IRE
+random = no
+style = 2
+picture = "resistance"
+
+trigger = {
+flag = IRAIRE
+dissent = 10
+random = 50
+}
+
+name = "715NAME"
+desc = "715DESC"
+
+date = { day = 1 month = july year = 1949 }
+offset = 14
+deathdate = { day = 1 month = december year = 1955 }
+
+action_a = {
+name = "715A"
+ai_chance = 50
+command = { type = dissent value = 10 }
+command = { type = relation which = GER value = 150 }
+command = { type = trigger which = 716 }	
+}
+action_b = {
+name = "715B"
+ai_chance = 50
+command = { type = dissent value = 10 }
+command = { type = trigger which = 717 }
+}
+}
+event = {
+id = 716
+country = GER
+random = no
+style = 2
+picture = "reichstag"
+
+name = "716NAME"
+desc = "716DESC"
+
+action_a = {
+name = "716A"
+ai_chance = 50
+command = { type = clrflag which = IRAIRE }
+command = { type = local_clrflag which = GERIRE }
+command = { type = alliance which = IRE when = 1 }
+command = { type = trigger which = 718 }	
+}
+action_b = {
+name = "716B"
+ai_chance = 50
+command = { type = clrflag which = IRAIRE }
+command = { type = local_clrflag which = GERIRE }
+command = { type = trigger which = 719 }
+}
+}
+event = {
+id = 718
+country = ENG
+random = no
+style = 2
+picture = "news_paper"
+
+name = "718NAME"
+desc = "718DESC"
+
+action_a = {
+name = "718A"
+ai_chance = 90
+command = { type = war which = IRE }
+}
+action_b = {
+name = "718B"
+ai_chance = 50
+command = { type = dissent value = 5 }
+}
+}
+event = {
+id = 719
+country = ENG
+random = no
+style = 2
+picture = "news_paper"
+
+name = "719NAME"
+desc = "719DESC"
+
+action_a = {
+name = "719A"
+ai_chance = 50
+command = { type = war which = IRE }
+command = { type = dissent value = 3 }
+}
+action_b = {
+name = "719B"
+ai_chance = 50
+command = { type = dissent value = 3 }
+}
+}
+event = {
+id = 717
+country = ENG
+random = no
+style = 2
+picture = "news_paper"
+
+name = "717NAME"
+desc = "717DESC"
+
+action_a = {
+name = "717A"
+ai_chance = 90
+command = { type = make_puppet which = IRE }
+command = { type = trigger which = 720 }
+}
+action_b = {
+name = "717B"
+ai_chance = 10
+command = { type = money value = -100 }	
+command = { type = dissent value = 3 }
+command = { type = trigger which = 720 }
+}
+}
+event = {
+id = 720
+country = GER
+random = no
+style = 2
+picture = "reichstag"
+
+name = "720NAME"
+desc = "720DESC"
+
+action_a = {
+name = "720A"
+command = { type = clrflag which = IRAIRE }
+command = { type = local_clrflag which = GERIRE }
+command = { type = money value = 100 }	
+command = { type = manpowerpool value = 1 }
+}
+}
