@@ -1,15 +1,20 @@
 ####################################
-# Changelog for Alpha version 0.31
+# Changelog for Beta version 1.0
 ####################################
 
 # Bug fixing:
 - Fixed all issues which caused errors when starting scenario (Tonie112)
+- Fixed Transylvania War event chain (Ticket Cookie)
+- Fixed Leningrad Settlement event chain (Ticket Cookie)
 
 # Events/Decisions:
 - Integration of Mobilization System (Tonie112)
 - Review of Vichy France event chain (Tonie112)
 - Review of Marshal Plan event chain (Tonie112)
+- Review of Colonial Morocco event chain (Ticket Cookie)
+- Review/fixes of Grand Council of Fascism event chain (Ticket Cookie)
 - Review of Vladivostok Conference chain (Pako)
+- New Morocco Crisis event chain (Ticket Cookie)
 
 # Scenario files (INC):
 - Review of USA (Ticket Cookie)
@@ -18,9 +23,11 @@
 Costa Rica,Cuba,Dominican Republic,Ecuador,Guatemala,Haiti,Honduras,Mexico,Nicaragua,Panama,Paraguay,
 Peru,San Salvador,Urugay,Venezuela) (Ticket Cookie)
 - Nuclear Reactor and Coastal Forts added to UK (Tonie112)
-- Minor changes UK (Newfoundland reworked) (Ticket Cookie)
+- Minor changes UK (Newfoundland/colonial claims reworked) (Ticket Cookie)
 - Rebase 12th and 15th USAF from Southern Italy to Korea (Ticket Cookie)
 - Review of Chinas,Mongolia and add Koreas .inc (Pako)
+- Review of Finnish and Bulgarian cores and provinces (Ticket Cookie)
+- Review of Soviet claims and localization of OOB (Ticket Cookie)
 
 # Scenario files (OOB):
 - New German Black Sea Fleet made with converted Soviet vessels (Ticket Cookie)
