@@ -194,7 +194,7 @@ claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908
 227 231 252 223 229 250 253 254 255 # Poland
 336 # Banat 
 553 # Military Administration of Leningrad
-
+116 #Brussels
 }
 	# Germany 1944.12 techs 
 	# ###################### 

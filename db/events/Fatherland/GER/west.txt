@@ -10,8 +10,8 @@
 # 402 # GER # Abwehr concerns								!!! Start of a proxy conflict in the Norwegian countryside, coming soon. 
 # 403 # U45 # Norway changes TAG
 # 404 # GER # The case of Denmark
-# 405 # GER # The future of Flanders
 # 429 # GER # The Jutland peninsula
+# 405 # GER # The future of Flanders
 # 406 # GER # Wallonia
 # 407 # GER # Status of Brussels
 # 408 # GER # South Flanders								
@@ -53,7 +53,7 @@
 # 438 # GER # End of Reichskommissariat Norwegen
 # 439 # GER # Integration of Norway
 # 440 # GER # Annexation of Reichsgau Wallonien!
-# 441 # WLL # Flemish independence!
+# 441 # WLL # Walloon independence!
 # 442 # GER # Integration of Reichsgau Wallonien
 # 443 # GER # Corruption scandal in France!
 # 444 # GER # Settlers arrive in Northeastern France (1)
@@ -353,6 +353,7 @@ event = {
 	trigger = {
 	
 		control = { province = 116 data = GER } # Brussels
+		event = 405
 		event = 406
 		event = 410
 	}	
@@ -370,7 +371,9 @@ event = {
 	name = "407A"
 	ai_chance = 40
 	trigger = { puppet = { country = FLA country = GER } }
+	trigger = { event = 433 }
 	command = { type = 	dissent value = -1 }
+	command = { type = removeclaim which = 116 }
 	command = { type =	secedeprovince which = FLA value = 116 }
 	command = { type = sleepevent which = 435 }
 	}
@@ -378,19 +381,20 @@ event = {
 	name = "407B"
 	ai_chance = 40
 	trigger = { puppet = { country = WLL country = GER } }
+	trigger = { event = 441 }
 	command = { type = 	dissent value = -1 }
+	command = { type = removeclaim which = 116 }
 	command = { type =	secedeprovince which = WLL value = 116 }
 	command = { type = sleepevent which = 435 }
 	}
 	action_c = {
 	name = "407DUTCH"
 	ai_chance = 40
-		trigger = {
-				event = 411
-				}
-							
+	trigger = { event = 411 }
 	command = { type = 	dissent value = -1 }
+	command = { type = removeclaim which = 116 }
 	command = { type =	secedeprovince which = HOL value = 116 }
+	command = { type = sleepevent which = 435 }
 	}
 	action_d = {
 	name = "407C"
