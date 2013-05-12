@@ -1866,13 +1866,13 @@ event = {
 	random = no
 	country = GER	
 	
-	name = EVT_90000642_NAME
-	desc = EVT_90000641_DESC
+	name = EVT_90000650_NAME
+	desc = EVT_90000650_DESC
 	style = 2
 	picture = "mittelmeerdivision2"	
 
 	action_a = {
-	name = EVT_90000642_A # War!
+	name = EVT_315_B # War!
 	ai_chance = 50
 	command = { type = 	relation which = ITA value = -200 }
 	command = { type = 	dissent value = 1 }

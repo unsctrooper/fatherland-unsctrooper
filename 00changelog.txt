@@ -6,6 +6,7 @@
 - Fixed all issues which caused errors when starting scenario (Tonie112)
 - Fixed Transylvania War event chain (Ticket Cookie)
 - Fixed Leningrad Settlement event chain (Ticket Cookie)
+- Fixed some Italians events localization (Ticket Cookie)
 
 # Events/Decisions:
 - Integration of Mobilization System (Tonie112)
