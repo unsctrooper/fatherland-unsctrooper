@@ -977,14 +977,38 @@ landunit =
    landunit = 
    { location = 377							#Athens 
      name     = "LXVII. Armeekorps" 
-     id       = {  type = 14500 id = 355  } 
-  
+     leader   = 248 # Schörner
+     id       = {  type = 14500 id = 26  } 
+    division = 
+     { id       = {  type = 14500 id = 12  } 
+       name     = "169. Infanterie-Division" 
+       type     = infantry 
+       model    = 11 
+       strength = 80
+       experience = 60
+      }
      division = 
      { id       = {  type = 14500 id = 357  } 
        name     = "89. Infanterie-Division" 
        type     = infantry 
        model    = 11 
        strength = 80 
+      }
+     division = 
+     { id       = {  type = 14500 id = 93  } 
+       name     = "607. z.b.V. Division" 
+       type     = infantry 
+       model    = 11 
+       strength = 65 
+       experience = 80
+      }
+     division = 
+     { id       = {  type = 14500 id = 94  } 
+       name     = "58. Infanterie-Division" 
+       type     = infantry 
+       model    = 11 
+       strength = 65 
+       experience = 80
       }
        
     }
@@ -1036,42 +1060,6 @@ landunit =
        experience = 80
       }
        
-    }
-	  landunit = 
-   { location = 366 					# Kozani
-     name     = "Kozani" 
-     leader   = 248 # Schörner
-     id       = {  type = 14500 id = 26  } 
-    division = 
-     { id       = {  type = 14500 id = 12  } 
-       name     = "169. Infanterie-Division" 
-       type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 60
-      }
-       
-    }
-	  landunit = 
-   { location = 365								# Thesaloniki 
-     name     = "XXVIII. Armeekorps" 
-     id       = {  type = 14500 id = 92  } 
-     division = 
-     { id       = {  type = 14500 id = 93  } 
-       name     = "607. z.b.V. Division" 
-       type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-      }
-     division = 
-     { id       = {  type = 14500 id = 94  } 
-       name     = "58. Infanterie-Division" 
-       type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-      }
     }
 landunit = 
    { location = 358 
@@ -2736,21 +2724,6 @@ landunit =
        strength = 80
        experience = 80
       }
-       
-    }
-	   landunit = 
-   { location = 370 
-     name     = "LXXIV. Armeekorps" 
-     id       = {  type = 14500 id = 348  } 
-     division = 
-     { id       = {  type = 14500 id = 349  } 
-       name     = "85. Infanterie-Division" 
-       type     = infantry 
-       model    = 11 
-       strength = 70
-       experience = 80
-      }
-     
        
     }
    # 14th Army

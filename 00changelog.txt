@@ -35,6 +35,8 @@ Peru,San Salvador,Urugay,Venezuela) (Ticket Cookie)
 - New German Black Sea Fleet made with converted Soviet vessels (Ticket Cookie)
 - Revision of Nationalist China OOB (Pako)
 - Revision of OOB Italy, United Kingdom and Free France (Tonie112)
+- Revision of Syria and Lebanon OOBs (Ticket Cookie)
+- Revision of German Occupation Army of Greece (Ticket Cookie)
 
 # AI
 - Completely reworked AI for major (UK,Germany,Italy,USSR,USA,France) (Tonie112)
