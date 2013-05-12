@@ -401,7 +401,9 @@ event = {
 		command = { type = set_domestic which = political_left value = 7 }
 		command = { type = headofstate which = 505001 }
 		command = { type = headofgovernment which = 505016 }
+		command = { type = chiefofnavy which = 505039 }
 		command = { type = manpowerpool value = 200 }
+		command = { type = province_keypoints which = 722 value = 1 } # Marrakech
 		command = { type = add_corps which = "1ère Armée Marocaine" value = land when = -1 where = 717 }
 		command = { type = add_division which = "1st Morocco Infantry Division" value = infantry when = 9 }
 		command = { type = add_division which = "2nd Morocco Infantry Division" value = infantry when = 9 }
@@ -517,6 +519,8 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_GREAT"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
 		command = { type = headofstate which = 505001 }
 		command = { type = headofgovernment which = 505016 }
 		command = { type = sleepminister which = 505047 }
