@@ -105,7 +105,6 @@ inventions = { 3000027 }
      defense_lobby     = 7 
      interventionism   = 2 
     } 
-  }
    landunit = 
    { id       = {  type = 13500 id = 602  } 
      name     = "Troupes de Aleppo" 
@@ -130,3 +129,5 @@ inventions = { 3000027 }
        strength = 35 
       } 
     }
+
+  }
