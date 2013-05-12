@@ -106,3 +106,27 @@ inventions = { 3000027 }
      interventionism   = 2 
     } 
   }
+   landunit = 
+   { id       = {  type = 13500 id = 602  } 
+     name     = "Troupes de Aleppo" 
+     location = 1021
+     division = 
+     { id       = {  type = 13500 id = 603  } 
+       name     = "Troupes de Aleppo" 
+       type     = militia 
+       model    = 4 
+       strength = 35 
+      } 
+    } 
+   landunit = 
+   { id       = {  type = 13500 id = 606  } 
+     name     = "Troupes de Damascus" 
+     location = 1016
+     division = 
+     { id       = {  type = 13500 id = 607  } 
+       name     = "Troupes de Damascus" 
+       type     = militia 
+       model    = 4 
+       strength = 35 
+      } 
+    }

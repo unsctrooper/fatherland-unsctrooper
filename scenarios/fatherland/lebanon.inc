@@ -106,3 +106,15 @@ inventions = { 3000027 }
      interventionism   = 2 
     } 
   }
+   landunit = 
+   { id       = {  type = 13500 id = 604  } 
+     name     = "Troupes de Beirut" 
+     location = 1019
+     division = 
+     { id       = {  type = 13500 id = 605  } 
+       name     = "Troupes de Beirut" 
+       type     = militia 
+       model    = 4 
+       strength = 35 
+      } 
+    } 

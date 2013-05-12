@@ -291,8 +291,8 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 601  } 
        name     = "Troupes de Caledonie Nouvelle" 
-       type     = infantry 
-       model    = 12
+       type     = militia 
+       model    = 4 
        strength = 35 
       } 
     } 
@@ -303,8 +303,8 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 40  } 
        name     = "Troupes de Djibouti" 
-       type     = infantry 
-       model    = 12
+       type     = militia 
+       model    = 4 
        strength = 35 
       } 
     } 
@@ -315,8 +315,8 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 42  } 
        name     = "Troupes de Guyanne" 
-       type     = infantry 
-       model    = 12
+       type     = militia 
+       model    = 4 
        strength = 35 
       } 
     } 
@@ -327,8 +327,8 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 52  } 
        name     = "Troupes de Fort de France" 
-       type     = infantry 
-       model    = 12
+       type     = militia 
+       model    = 4 
        strength = 35 
       } 
     } 
@@ -339,99 +339,63 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 44  } 
        name     = "Troupes de Gabon" 
-       type     = infantry 
-       model    = 12
+       type     = militia 
+       model    = 4 
        strength = 35 
       } 
-    } 
-   landunit = 
-   { id       = {  type = 13500 id = 602  } 
-     name     = "Troupes de Aleppo" 
-     location = 1021
-     division = 
-     { id       = {  type = 13500 id = 603  } 
-       name     = "Troupes de Aleppo" 
-       type     = infantry 
-       model    = 12
-       strength = 35 
-      } 
-    } 
-   landunit = 
-   { id       = {  type = 13500 id = 604  } 
-     name     = "Troupes de Beirut" 
-     location = 1019
-     division = 
-     { id       = {  type = 13500 id = 605  } 
-       name     = "Troupes de Beirut" 
-       type     = infantry 
-       model    = 12
-       strength = 35 
-      } 
-    } 
-   landunit = 
-   { id       = {  type = 13500 id = 606  } 
-     name     = "Troupes de Damascus" 
-     location = 1016
-     division = 
-     { id       = {  type = 13500 id = 607  } 
-       name     = "Troupes de Damascus" 
-       type     = infantry 
-       model    = 12
-       strength = 35 
-      } 
-    } 
+    }  
    # 1st Army
    landunit = 
    { id       = {  type = 13500 id = 617  } 
      name     = "Ière Armée" 
-     location = 907 
+     location = 978 
      division = 
      { id       = {  type = 13500 id = 618  } 
        name     = "Ière Armée" 
        type     = hq 
-       model    = 4 
+       model    = 2 
        strength = 75 
       } 
      division = 
      { id       = {  type = 13500 id = 616  } 
        name     = "2ème Division Blindée" 
        type     = armor 
-       model    = 3 
+       model    = 2 
        strength = 60 
        extra    = sp_artillery
-       brigade_model = 1
+       brigade_model = 0
       } 
      division = 
      { id       = {  type = 13500 id = 626  } 
        name     = "1ère Division d'Infanterie" 
-       type     = motorized
-       model    = 3 
+       type     = infantry 
+       model    = 10 
        strength = 70 
       } 
      division = 
      { id       = {  type = 13500 id = 629  } 
        name     = "14ème Division d'Infanterie" 
        type     = infantry 
-       model    = 12
+       model    = 10 
        strength = 70 
       } 
     } 
    landunit = 
    { id       = {  type = 13500 id = 608  } 
      name     = "IIème Corps d'Armée" 
-     location = 722
+     location = 978
      division = 
      { id       = {  type = 13500 id = 609  } 
        name     = "1ère Division Française Libre" 
        type     = motorized 
-       model    = 3 
+       model    = 1 
        strength = 70 
       } 
      division = 
      { id       = {  type = 13500 id = 619  } 
        name     = "1ère Division Blindée" 
        type     = armor 
-       model    = 3 
+       model    = 1 
        strength = 70 
        extra    = sp_artillery
        brigade_model = 0
@@ -439,27 +403,27 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 611  } 
        name     = "3ème Division d'Infanterie Algérienne" 
-       type     = motorized
-       model    = 3
+       type     = infantry 
+       model    = 10 
        strength = 70 
       } 
      division = 
      { id       = {  type = 13500 id = 620  } 
        name     = "9ème Division d'Infanterie Coloniale" 
        type     = infantry 
-       model    = 12 
+       model    = 10 
        strength = 70 
       } 
     } 
    landunit = 
    { id       = {  type = 13500 id = 615  } 
      name     = "Ière Corps d'Armée" 
-     location = 747
+     location = 978
      division = 
      { id       = {  type = 13500 id = 614  } 
        name     = "2ème Division d'Infanterie Marocaine" 
        type     = infantry 
-       model    = 12 
+       model    = 10 
        strength = 70 
        extra    = artillery
        brigade_model = 9
@@ -468,23 +432,23 @@ inventions = { 3000027 }
      { id       = {  type = 13500 id = 612  } 
        name     = "4ème Division Marocaine de Montagne" 
        type     = bergsjaeger 
-       model    = 12 
+       model    = 10 
        strength = 60 
       } 
      division = 
      { id       = {  type = 13500 id = 613  } 
        name     = "5ème Division Blindée" 
        type     = armor 
-       model    = 3 
+       model    = 1 
        strength = 60 
        extra    = sp_artillery
-       brigade_model = 1
+       brigade_model = 0
       } 
      division = 
      { id       = {  type = 13500 id = 621  } 
        name     = "10ème Division d'Infanterie" 
        type     = infantry 
-       model    = 12 
+       model    = 10 
        strength = 70 
       } 
     } 
@@ -495,50 +459,80 @@ inventions = { 3000027 }
      division = 
      { id       = {  type = 13500 id = 46  } 
        name     = "9ème Division d'Infanterie Coloniale" 
-       type     = motorized
-       model    = 3
+       type     = infantry 
+       model    = 9 
        strength = 25 
+      } 
     } 
+   landunit = 
+   { id       = {  type = 13500 id = 1004  } 
+     name     = "Forces Françaises Libres" 
+     location = 978
      division = 
      { id       = {  type = 13500 id = 625  } 
        name     = "27ème Division d'Infanterie Alpine" 
        type     = bergsjaeger 
-       model    = 12 
+       model    = 10 
        strength = 70 
       } 
+    } 
+   landunit = 
+   { id       = {  type = 13500 id = 1005  } 
+     name     = "Forces Françaises Libres" 
+     location = 978
      division = 
      { id       = {  type = 13500 id = 627  } 
        name     = "36ème Division d'Infanterie" 
-       type     = motorized
-       model    = 3
+       type     = infantry 
+       model    = 10 
        strength = 70 
       } 
+    } 
+   landunit = 
+   { id       = {  type = 13500 id = 628  } 
+     name     = "Forces Françaises Libres" 
+     location = 978
      division = 
      { id       = {  type = 13500 id = 630  } 
        name     = "10ème Division d'Infanterie" 
-       type     = motorized
-       model    = 3 
+       type     = infantry 
+       model    = 10 
        strength = 70 
       } 
+    } 
+   landunit = 
+   { id       = {  type = 13500 id = 631  } 
+     name     = "Forces Françaises Libres" 
+     location = 978
      division = 
      { id       = {  type = 13500 id = 632  } 
        name     = "19ème Division d'Infanterie" 
        type     = infantry 
-       model    = 12 
+       model    = 10 
        strength = 70 
+      } 
     } 
+   landunit = 
+   { id       = {  type = 13500 id = 633  } 
+     name     = "Forces Françaises Libres" 
+     location = 978
      division = 
      { id       = {  type = 13500 id = 634  } 
        name     = "23ème Division d'Infanterie" 
        type     = infantry 
-       model    = 12
+       model    = 10 
        strength = 70 
+      } 
     } 
+   landunit = 
+   { id       = {  type = 13500 id = 635  } 
+     name     = "Forces Françaises Libres" 
+     location = 978
      division = 
      { id       = {  type = 13500 id = 636  } 
        name     = "25ème Division d'Infanterie" 
        type     = infantry 
-       model    = 12 
+       model    = 10 
        strength = 70 
       } 
     } 
@@ -717,42 +711,36 @@ inventions = { 3000027 }
 		} 
    airunit = 
    {  id       = {  type = 13500 id = 800  } 
-     name     = "Commande Aérienne Moyen-Orient" 
-     location = 1019 
-     base     = 1019 
+     name     = "Commande Aérienne d'Afrique du Nord" 
+     location = 727 
+     base     = 727
      Division = 
      {  id       = {  type = 13500 id = 801  } 
        name     = "Groupe de Chasse 'Alsace'" 
        strength = 80 
        type     = interceptor 
-       model    = 10 
+       model    = 6 
       }
      Division = 
      {  id       = {  type = 13500 id = 802  } 
        name     = "Groupe de Bombardement Tactique 'Lorraine'" 
        strength = 50 
        type     = tactical_bomber 
-	   model = 8
+	   model = 4
       }
-    }
-   airunit = 
-   {  id       = {  type = 13500 id = 500  } 
-     name     = "Escadre du Moyen-Orient" 
-     location = 1019 
-     base     = 1019 
      Division = 
      {  id       = {  type = 13500 id = 501  } 
        name     = "Groupe de Chasse 21" 
        strength = 80 
        type     = interceptor 
-       model    = 10
+       model    = 7 
       }
      Division = 
      {  id       = {  type = 13500 id = 503  } 
        name     = "Groupe de Bombardement Tactique 1" 
        strength = 50 
        type     = tactical_bomber 
-	   model = 8
+	   model = 4
       }
     }
    airunit = 
@@ -765,7 +753,7 @@ inventions = { 3000027 }
        name     = "Groupe de Bombardement Naval 1" 
        strength = 30 
        type     = naval_bomber 
-	   model = 4
+	   model = 2
       }
     }
    airunit = 
@@ -778,7 +766,7 @@ inventions = { 3000027 }
        name     = "Groupe de Bombardement Naval 2" 
        strength = 20 
        type     = naval_bomber 
-	   model = 4
+	   model = 2
       }
     }
 	
@@ -806,7 +794,7 @@ landunit =
      { id       = {  type = 13500 id = 18  } 
        name     = "Commandement Supérieur des Troupes de Tunisie" 
        type     = hq 
-       model    = 4 
+       model    = 2 
        strength = 30 
       } 
     } 
@@ -818,7 +806,7 @@ landunit =
      { id       = {  type = 13500 id = 20  } 
        name     = "Division de Casablanca" 
        type     = infantry 
-       model    = 12 
+       model    = 8 
        strength = 40 
       } 
     } 
@@ -830,7 +818,7 @@ landunit =
      { id       = {  type = 13500 id = 22  } 
        name     = "Division de Fez" 
        type     = infantry 
-       model    = 12
+       model    = 8 
        strength = 40 
       } 
     } 
@@ -842,7 +830,7 @@ landunit =
      { id       = {  type = 13500 id = 24  } 
        name     = "Division de Marrakech" 
        type     = infantry 
-       model    = 12 
+       model    = 8 
        strength = 40 
       } 
     } 
@@ -854,7 +842,7 @@ landunit =
      { id       = {  type = 13500 id = 26  } 
        name     = "Division de Meknès" 
        type     = infantry 
-       model    = 12
+       model    = 8 
        strength = 40 
       } 
     } 
@@ -866,14 +854,14 @@ landunit =
      { id       = {  type = 13500 id = 28  } 
        name     = "Division Territoriale d'Alger" 
        type     = infantry 
-       model    = 12 
+       model    = 8 
        strength = 40 
       } 
      division = 
      { id       = {  type = 13500 id = 29  } 
        name     = "Groupement d'Alger" 
-       type     = mechanized
-       model    = 1
+       type     = cavalry 
+       model    = 9 
        strength = 30 
       } 
     } 
@@ -885,14 +873,14 @@ landunit =
      { id       = {  type = 13500 id = 31  } 
        name     = "Division Territoriale d'Oran" 
        type     = infantry 
-       model    = 12
+       model    = 8 
        strength = 40 
       } 
      division = 
      { id       = {  type = 13500 id = 32  } 
        name     = "Groupement d'Oran" 
-       type     = mechanized 
-       model    = 1 
+       type     = cavalry 
+       model    = 9 
        strength = 30 
       } 
     } 
@@ -904,14 +892,14 @@ landunit =
      { id       = {  type = 13500 id = 34  } 
        name     = "Division Territoriale de Constantine" 
        type     = infantry 
-       model    = 12 
+       model    = 8 
        strength = 40 
       } 
      division = 
      { id       = {  type = 13500 id = 35  } 
        name     = "Groupement de Constantine" 
-       type     = mechanized
-       model    = 1 
+       type     = cavalry 
+       model    = 9 
        strength = 30 
       } 
     } 
@@ -923,14 +911,14 @@ landunit =
      { id       = {  type = 13500 id = 37  } 
        name     = "Division Territoriale de Tunis" 
        type     = infantry 
-       model    = 12 
+       model    = 8 
        strength = 40 
       } 
      division = 
      { id       = {  type = 13500 id = 38  } 
        name     = "Groupement de Tunis" 
-       type     = mechanized
-       model    = 1 
+       type     = cavalry 
+       model    = 9 
        strength = 30 
       } 
     } 
@@ -942,14 +930,14 @@ landunit =
      { id       = {  type = 13500 id = 47  } 
        name     = "2éme Division d'Infanterie Coloniale" 
        type     = infantry 
-       model    = 12 
+       model    = 7 
        strength = 25 
       } 
      division = 
      { id       = {  type = 13500 id = 48  } 
        name     = "3éme Division d'Infanterie Coloniale" 
        type     = infantry 
-       model    = 12
+       model    = 7 
        strength = 25 
       } 
     }
