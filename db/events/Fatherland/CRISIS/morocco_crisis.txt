@@ -1,12 +1,12 @@
 ########################################
-# Morroco Crisis
+# Morroco Crisis I
 ########################################
-# 90001500 # MOR # Spain and Morroco
-# 90001501 # SPA # A demand by the sultan of Morroco
+# 90001500 # MOR # Spain and Morocco
+# 90001501 # SPA # A demand by the sultan of Morocco
 # 90001502 # MOR # They give-up!
 # 90001503 # MOR # Negociations?
 # 90001504 # SPA # The Sultan accept our offer
-# 90001505 # SPA # Morroco refuse our offer
+# 90001505 # SPA # Morocco refuse our offer
 # 90001506 # MOR # Reconsider our position?
 # 90001507 # USA # A Call for Help
 # 90001508 # SPA # A message from the US Ambassador
@@ -39,7 +39,7 @@ trigger = {
 }
 
 
-	name = "Spain and Morroco"
+	name = "Spain and Morocco"
 	desc = "Now that France give up it domination of our people and land, it's time to claim our rightfull northern and southern provinces."
 
 	date = { day = 1 month = january year = 1952 }
@@ -68,13 +68,18 @@ style = 2
 picture = "spanish_morroco"
 
 
-	name = "A demand by the sultan of Morroco"
+	name = "A demand by the sultan of Morocco"
 	desc = "Now that the French ended their protectorate on Marocco, the newly independent sultan ask us to do the same, and return not only the North but also the south part of the country we manage."
 
 
 	action_a = {
 		ai_chance = 25
 		name = "Accept their claims, we can't have another Rif war."
+		command = { type = removeclaim which =  715 }
+		command = { type = removeclaim which =  716 } 
+		command = { type = removeclaim which =  987 }
+		command = { type = removeclaim which =  988 }
+		command = { type = removeclaim which =  989 } 
 		command = { type = secedeprovince which = MOR value = 715 }
 		command = { type = secedeprovince which = MOR value = 716 } 
 		command = { type = secedeprovince which = MOR value = 987 }
@@ -147,11 +152,13 @@ event = {
 	save_date = yes
 
 	name = "The Sultan accept our offer" 
-	desc = "The Morrocan wisely decided to accept our offer, will keep Western Sahara!"
+	desc = "The Moroccan wisely decided to accept our offer, will keep Western Sahara!"
 	picture = "news_paper"
 
 	action = {
 		name = "ACTION_NAME_GREAT"
+		command = { type = removeclaim which =  715 }
+		command = { type = removeclaim which =  716 } 
 		command = { type = secedeprovince which = MOR value = 715 }
 		command = { type = secedeprovince which = MOR value = 716 } 
 		command = { type = relation which = MOR value = 5 }
@@ -165,7 +172,7 @@ country = SPA
 style = 2
 picture = "news_paper"
 
-name = "Morroco refuse our offer"
+name = "Morocco refuse our offer"
 desc = "The country absolutly want all the territories, and threaten us to call the USA to help them."
 
 action_a = {
@@ -178,6 +185,11 @@ name = "How they dare? We won't give up!"
 action_b = {
 ai_chance = 15
 name = "Well, we can't wage a war overseas, and we can't afford economic sanctions by USA."
+	command = { type = removeclaim which =  715 }
+	command = { type = removeclaim which =  716 } 
+	command = { type = removeclaim which =  987 }
+	command = { type = removeclaim which =  988 }
+	command = { type = removeclaim which =  989 } 
 	command = { type = secedeprovince which = MOR value = 715 }
 	command = { type = secedeprovince which = MOR value = 716 } 
 	command = { type = secedeprovince which = MOR value = 987 }
@@ -223,7 +235,7 @@ trigger = {
 
 
 	name = "A Call for Help"
-	desc = "Morroco, relying on our anti-colonialist stance, ask us to support them against Spain for it's marrocan colonies."
+	desc = "Morroco, relying on our anti-colonialist stance, ask us to support them against Spain for it's maroccan colonies."
 
 	action_a = {
 		ai_chance = 75
@@ -249,7 +261,7 @@ style = 2
 picture = "news_paper"
 
 name = "A message from the US Ambassador"
-desc = "The United States of America fully support Morroco, and ask us to fold, or suffer economic and political retaliations."
+desc = "The United States of America fully support Morocco, and ask us to fold, or suffer economic and political retaliations."
 
 action_a = {
 ai_chance = 65
@@ -263,6 +275,11 @@ ai_chance = 35
 name = "I won't risk a war for those provinces. Let it go."
 	command = { type = trigger which = 90001502 }
 	command = { type = relation which = USA value = -30 }
+	command = { type = removeclaim which =  715 }
+	command = { type = removeclaim which =  716 } 
+	command = { type = removeclaim which =  987 }
+	command = { type = removeclaim which =  988 }
+	command = { type = removeclaim which =  989 } 
 	command = { type = secedeprovince which = MOR value = 715 }
 	command = { type = secedeprovince which = MOR value = 716 } 
 	command = { type = secedeprovince which = MOR value = 987 }
@@ -366,6 +383,11 @@ event = {
 		name = "We have no choice now."
 		command = { type = relation which = GER value = -100 }
 		command = { type = trigger which = 90001502 }
+		command = { type = removeclaim which =  715 }
+		command = { type = removeclaim which =  716 } 
+		command = { type = removeclaim which =  987 }
+		command = { type = removeclaim which =  988 }
+		command = { type = removeclaim which =  989 } 
 		command = { type = secedeprovince which = MOR value = 715 }
 		command = { type = secedeprovince which = MOR value = 716 } 
 		command = { type = secedeprovince which = MOR value = 987 }
@@ -405,4 +427,404 @@ event = {
 		name = "We have no choice but to let the issue go."
 		command = { type = dissent value = 5 }
 		}
+}
+########################################
+# Morocco Crisis II
+########################################
+# 90001515 # MOR # Spain and Morocco
+# 90001516 # SPA # A demand by the sultan of Morocco
+# 90001517 # MOR # Negociations?
+# 90001518 # GER # A new ally?
+# 90001519 # SPA # A message from the German Ambassador
+# 90001520 # MOR # Treacherous Germans
+# 90001521 # MOR # We are alone
+# 90001522 # SPA # Morocco is winning!
+# 90001523 # SPA # Marocco crushed
+# 90001524 # MOR # The New Statut
+# 90001525 # MOR # Appeal the Germans?
+########################################
+
+event = {
+id = 90001515
+random = no
+country = MOR
+style = 2
+picture = "news_paper"
+
+trigger = {
+	flag = MORfreeF
+	exists = SPA
+	owned = { province = 987 data = SPA }
+	owned = { province = 988 data = SPA }
+	owned = { province = 989 data = SPA }
+	owned = { province = 715 data = SPA }
+	owned = { province = 716 data = SPA }
+	NOT = { 
+	ispuppet = MOR
+	atwar = MOR
+	}
+}
+
+
+	name = "Spain and Morocco"
+	desc = "Now that France give up it domination of our people and land, it's time to claim our rightfull northern and southern provinces."
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 1 month = december year = 1960 }
+
+	action_a = {
+		ai_chance = 100
+		name = "Ask Franco to leave his 'protectorate', and restitue Sahara!"
+	        command = { type = dissent value = -2 }
+			command = { type = trigger which = 90001516 }
+		}
+
+	action_b = {
+
+		ai_chance = 0
+		name = "Franco is too strong, we need to wait a better time."
+	        command = { type = dissent value = 1 }
+		}
+}
+event = {
+id = 90001516
+random = no
+country = SPA
+style = 2
+picture = "spanish_morocco"
+
+
+	name = "A demand by the sultan of Morocco"
+	desc = "The Moroccan won their war of independance against the Free French, and the newly independent sultan threaten us with war if we don't return not only the North but also the south part of the country we manage."
+
+
+	action_a = {
+		ai_chance = 25
+		name = "Accept their claims, we can't have another Rif war."
+		command = { type = removeclaim which =  715 }
+		command = { type = removeclaim which =  716 } 
+		command = { type = removeclaim which =  987 }
+		command = { type = removeclaim which =  988 }
+		command = { type = removeclaim which =  989 } 
+		command = { type = secedeprovince which = MOR value = 715 }
+		command = { type = secedeprovince which = MOR value = 716 } 
+		command = { type = secedeprovince which = MOR value = 987 }
+		command = { type = secedeprovince which = MOR value = 988 }
+		command = { type = secedeprovince which = MOR value = 989 } 
+		command = { type = dissent value = 5 }
+		command = { type = relation which = MOR value = 25 }
+		command = { type = trigger which = 90001502 }
+		}
+
+	action_b = {
+
+		ai_chance = 60
+		name = "Propose a deal: they take the north, and we keep the south."
+			command = { type = trigger which = 90001517 }
+		}
+	action_c = {
+
+		ai_chance = 15
+		name = "Refuse! Those territories are essential to our defense and prestige."
+	        command = { type = dissent value = 2 }
+			command = { type = trigger which = 90001525 }
+		}
+}
+event = {
+id = 90001517
+random = no
+country = MOR
+style = 2
+picture = "news_paper"
+
+name = "Negociations?"
+desc = "Spain want to give us Northern provinces, el Protectorado español en Marruecos proper, and keep the Western Sahara. What should we do?"
+
+action_a = {
+ai_chance = 65
+name = "That's a deal, we will see later for the South."
+	command = { type = trigger which = 90001504 }
+	command = { type = relation which = SPA value = 25 }
+	command = { type = dissent value = -5 }
+	}
+action_b = {
+ai_chance = 35
+name = "Ask Germans to back us."
+command = { type = trigger which = 90001518 }
+	}
+}
+event = {
+id = 90001518
+random = no
+country = GER
+style = 2
+picture = "news_paper"
+
+
+	name = "A new ally?"
+	desc = "The newly independant Morocco, who win a war against our Free French foes, ask us to support them in their quest of Spanish North Africans colonies. We would gain a new ally, but Franco is an old friend... What should we do?"
+
+	action_a = {
+		ai_chance = 35
+		name = "This is a golden opportunitie to add Morocco to the Axis!"
+	    command = { type = dissent value = 1 }
+		command = { type = alliance which = MOR }
+		command = { type = relation which = MOR value = 200 }
+		command = { type = trigger which = 90001519 }
+		}
+
+	action_b = {
+
+		ai_chance = 35
+		name = "Spain is far too important for us."
+	        command = { type = dissent value = 1 }
+			command = { type = relation which = MOR value = -50 }
+			command = { type = relation which = SPA value = 50 }
+			command = { type = trigger which = 90001520 }
+		}
+	action_c = {
+
+		ai_chance = 30
+		name = "We want both friendship, stay neutral."
+	        command = { type = dissent value = -1 }
+			command = { type = relation which = MOR value = -10 }
+			command = { type = relation which = SPA value = -10 }
+			command = { type = trigger which = 90001521 }
+		}
+}
+event = {
+id = 90001519
+random = no
+country = SPA
+style = 2
+picture = "news_paper"
+
+name = "A message from the German Ambassador"
+desc = "The German Reich fully support Morocco, and ask us to fold, or suffer economic and political retaliations."
+
+action_a = {                                                                                   
+ai_chance = 100
+name = "We have no choice."
+	command = { type = trigger which = 90001502 }
+	command = { type = relation which = USA value = 50 }
+	command = { type = relation which = GER value = -100 }
+	command = { type = removeclaim which =  715 }
+	command = { type = removeclaim which =  716 } 
+	command = { type = removeclaim which =  987 }
+	command = { type = removeclaim which =  988 }
+	command = { type = removeclaim which =  989 } 
+	command = { type = secedeprovince which = MOR value = 715 }
+	command = { type = secedeprovince which = MOR value = 716 } 
+	command = { type = secedeprovince which = MOR value = 987 }
+	command = { type = secedeprovince which = MOR value = 988 }
+	command = { type = secedeprovince which = MOR value = 989 } 
+	command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 90001520
+	random = no
+	country = MOR
+	style = 2
+	save_date = yes
+
+	name = "Treacherous Germans" 
+	desc = "Reich Minister for Foreign affairs send a message, telling that they support Spain."
+	picture = "news_paper"
+
+	action = {
+		name = "And here our dream collapses."
+		command = { type = relation which = GER value = -25 }
+		command = { type = dissent value = 5 }
+		}
+}
+event = {
+	id = 90001521
+	random = no
+	country = MOR
+	style = 2
+	picture = "news_paper"   
+
+	name = "We are alone"
+	desc = "Germany support neither Spain or us. It is time to backdown or start war!"
+
+action_a = {
+ai_chance = 50
+name = "Well, declare war!"
+	command = { type = war which = SPA }
+	command = { type = dissent value = -5 }
+	}
+action_b = {
+ai_chance = 50
+name = "Backdown."
+	command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 90001522
+	random = no
+	country = SPA
+	style = 2
+	picture = "news_paper" 
+
+	trigger = { 
+	control = { province = 987 data = MOR }
+	control = { province = 988 data = MOR }
+	control = { province = 989 data = MOR }
+	control = { province = 715 data = MOR }
+	control = { province = 716 data = MOR }
+	}
+
+	name = "Morocco is winning!"
+	desc = "Moroccan rebels have succesfully take control of our North Africans colonies. We have no choice but to seek peace."
+
+	action_a = {
+	ai_chance = 100
+	name = "We must accept their victory..."
+		command = { type = peace which = MOR value = 0 }
+		command = { type = removeclaim which =  715 }
+		command = { type = removeclaim which =  716 } 
+		command = { type = removeclaim which =  987 }
+		command = { type = removeclaim which =  988 }
+		command = { type = removeclaim which =  989 } 
+		command = { type = secedeprovince which = MOR value = 987 } 
+		command = { type = secedeprovince which = MOR value = 988 }
+		command = { type = secedeprovince which = MOR value = 789 }
+		command = { type = secedeprovince which = MOR value = 715 }
+		command = { type = secedeprovince which = MOR value = 716 }
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 90001502 }
+	}   
+
+	action_b = {
+	ai_chance = 0
+	name = "This is only a temporay setback. Onwards to victory!"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 90001523
+	random = no
+	country = SPA
+	style = 2
+    save_date = yes
+	picture = "news_paper"
+
+	trigger = { 
+		control = { province = 717 data = SPA }
+		control = { province = 718 data = SPA }
+		control = { province = 722 data = SPA }
+        NOT = { exists = MOR
+                }
+		}
+
+	name = "Marocco crushed"
+	desc = "Our glorious armed forces defeated moroccan rabble, gaining control of the country!"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1966 }
+
+	action_a = {
+	ai_chance = 25
+	name = "That's a shiny new colony we have there!"
+		command = { type = dissent value = -10 }
+		command = { type = construct which = ic where = 717 value = -5 }
+		command = { type = addclaim which = 721 }
+		command = { type = addclaim which = 717 }
+		command = { type = addclaim which = 724 }
+		command = { type = addclaim which = 718 }
+		command = { type = addclaim which = 722 }
+		command = { type = addclaim which = 725 }
+		command = { type = addclaim which = 726 }
+		command = { type = addclaim which = 723 }
+		command = { type = addclaim which = 987 }
+		command = { type = addclaim which = 715 }
+		command = { type = addclaim which = 988 }
+		command = { type = addclaim which = 989 }
+		command = { type = addclaim which = 719 }
+		command = { type = addclaim which = 716 }
+		command = { type = addclaim which = 720 }
+	}
+
+	action_b = {
+	ai_chance = 75
+	name = "After all, a united Morocco is not a bad idea... Under our terms!"
+		command = { type = dissent value = -10 }
+		command = { type = removeclaim which =  715 }
+		command = { type = removeclaim which =  716 } 
+		command = { type = removeclaim which =  987 }
+		command = { type = removeclaim which =  988 }
+		command = { type = removeclaim which =  989 } 
+		command = { type = independence which = MOR value = 1 }
+		command = { type = make_puppet which = MOR } 
+		command = { type = trigger which = 90001524 }
+	}
+}
+event = {
+	id = 90001524
+	random = no
+	country = MOR
+	style = 2
+	save_date = yes
+
+	name = "The New Statut" 
+	desc = "After their conquer of the independant Sultanate of Morocco, Spain decided to extand over all the country their protectorate, and put their puppets in command."
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofgovernment which = 505049 }
+		command = { type = headofstate which = 505050 }
+		command = { type = sleepminister which = 505001 }
+		command = { type = sleepminister which = 505002 }
+		command = { type = sleepminister which = 505004 }
+		command = { type = sleepminister which = 505005 }
+		command = { type = sleepminister which = 505006 }
+		command = { type = sleepminister which = 505007 }
+		command = { type = sleepminister which = 505008 }
+		command = { type = sleepminister which = 505009 }
+		command = { type = sleepminister which = 505010 }
+		command = { type = sleepminister which = 505012 }
+		command = { type = sleepminister which = 505013 }
+		command = { type = sleepminister which = 505014 }
+		command = { type = sleepminister which = 505020 }
+		command = { type = sleepminister which = 505022 }
+		command = { type = sleepminister which = 505023 }
+		command = { type = sleepminister which = 505029 }
+		command = { type = sleepminister which = 505033 }
+		command = { type = sleepminister which = 505038 }
+		command = { type = sleepminister which = 505040 }
+		command = { type = sleepminister which = 505046 }
+		command = { type = sleepminister which = 505047 }
+		command = { type = set_relation which = SPA value = 200 }
+		command = { type = set_relation which = GER value = 50 }
+		command = { type = set_relation which = FRA value = 25 }
+		command = { type = set_relation which = ITA value = 25 }
+      	command = { type = dissent value = 5 }
+		}
+}
+event = {
+id = 90001525
+random = no
+country = MOR
+style = 2
+picture = "news_paper"
+
+name = "Appeal the Germans?"
+desc = "Spain refuse to give-up our stolen provinces. What should we do? A diplomatic solution is possible if the Germans agree..."
+
+action_a = {
+ai_chance = 100
+name = "Ask Germans to back us."
+command = { type = trigger which = 90001518 }
+	}
+action_b = {
+ai_chance = 0
+name = "No, declare war!"
+	command = { type = war which = SPA }
+	command = { type = dissent value = -5 }
+	}
 }
