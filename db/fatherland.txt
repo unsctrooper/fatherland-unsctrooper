@@ -18,11 +18,12 @@ event = "db\events\fatherland\europe\italy.txt"
 event = "db\events\fatherland\europe\serbia.txt"
 event = "db\events\fatherland\europe\transylvania.txt"
 event = "db\events\fatherland\europe\vichyfrance.txt"
+event = "db\events\fatherland\europe\unitedkingdom.txt"
+
 
 # CRISIS
 event = "db\events\fatherland\crisis\abadan_crisis.txt"
 event = "db\events\fatherland\crisis\centralasia.txt"
-event = "db\events\fatherland\crisis\morocco_crisis.txt"
 event = "db\events\fatherland\crisis\ira.txt"
 
 # ASIA
