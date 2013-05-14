@@ -75,6 +75,14 @@ trigger = {
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
+			command = { type = foreignminister which = 5397 }
+			command = { type = armamentminister which = 5398 }
+			command = { type = ministerofsecurity which = 5215 }
+			command = { type = ministerofintelligence which = 5226 }
+			command = { type = chiefofstaff which = 5399 }
+			command = { type = chiefofarmy which = 5136 }
+			command = { type = chiefofnavy which = 5009 }
+			command = { type = chiefofair which = 5196 }
 			command = { type = relation which = GER value = 50 }		
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
@@ -94,7 +102,15 @@ trigger = {
 			ai_chance = 30
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5393 }
-			command = { type = headofgovernment which = 5197 }	
+			command = { type = headofgovernment which = 5197 }
+			command = { type = foreignminister which = 5201 }
+			command = { type = armamentminister which = 5400 }
+			command = { type = ministerofsecurity which = 5192 }
+			command = { type = ministerofintelligence which = 5193 }
+			command = { type = chiefofstaff which = 5363 }
+			command = { type = chiefofarmy which = 5221 }
+			command = { type = chiefofnavy which = 5009 }
+			command = { type = chiefofair which = 5196 }	
             command = { type = relation which = GER value = 50 }					
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
@@ -115,7 +131,15 @@ trigger = {
 			ai_chance = 5
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = headofstate which = 5395 }
-			command = { type = headofgovernment which = 5381 }
+			command = { type = headofgovernment which = 5404 }
+			command = { type = foreignminister which = 5403 }
+			command = { type = armamentminister which = 5400 }
+			command = { type = ministerofsecurity which = 5402 }
+			command = { type = ministerofintelligence which = 5401 }
+			command = { type = chiefofstaff which = 5362 }
+			command = { type = chiefofarmy which = 5371 }
+			command = { type = chiefofnavy which = 5377 }
+			command = { type = chiefofair which = 5196 }
 		    command = { type = set_domestic which = democratic value = 1 }
 		    command = { type = set_domestic which = political_left value = 1 }
 			command = { type = relation which = GER value = 150 }	

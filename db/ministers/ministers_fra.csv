@@ -360,21 +360,21 @@ FRA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 5360;Minister of Security;Jean-Marie Le Pen;1956;1964;1999;FA;Prince of Terror;High;6111;x
 5361;Minister of Security;Rene Binet;1945;1964;1999;FA;Prince of Terror;Medium;6112;x
 5362;Chief of Staff;Rene Binet;1946;1964;1999;FA;School of Psychology;Medium;6112;x
-5363;Chief of Staff;Deloncle Eugene;1933;1964;1999;FA;School of Fire Support;Medium;6113;x
-5364;Foreign Minister;Deloncle Eugene;1939;1964;1999;FA;General Staffer;Medium;6113;x
+5363;Chief of Staff;Eugène Deloncle;1933;1964;1999;FA;School of Fire Support;Medium;6113;x
+5364;Foreign Minister;Eugène Deloncle;1939;1964;1999;FA;General Staffer;Medium;6113;x
 5365;Minister of Armament;Renault Louis;1940;1964;1999;PA;Steel magnate;Medium;8531;x
 5366;Foreign Minister;Robert Brasillach;1940;1964;1999;NS;Biased Intellectual;High;6015;x
 5367;Foreign Minister;Lucien Rebatet;1942;1964;1999;NS;The Cloak N Dagger Schemer;Medium;5785;x
 5368;Foreign Minister;Maurice Pujo;1930;1964;1999;FA;The Cloak N Dagger Schemer;Medium;6017;x
 5369;Minister of Security;Maulnier Thierry;1940;1964;1999;FA;Prince of Terror;Medium;6018;x
-5370;Chief of Army;André Bayle;1950;1964;1999;SC;Elastic Defence Doctrine;High;6019;x
-5371;Chief of Army;André Bayle;1950;1964;1999;PA;Elastic Defence Doctrine;High;6019;x
+5370;Chief of Army;André Bayle;1950;1964;1999;FA;Elastic Defence Doctrine;High;6019;x
+5371;Chief of Army;André Bayle;1950;1964;1999;NS;Elastic Defence Doctrine;High;6019;x
 5372;Minister of Armament;Alexandre Millerand;1914;1936;1999;SD;resource industrialist;Very High;2595;X
 5373;Chief of Navy;Louis Pivet;1914;1920;1999;SL;Open Seas Doctrine;High;8018;X
 5374;Chief of Air Force;Auguste Edouard Hirschauer;1914;1936;1999;SL;Air Superiority Doctrine;High;8019;X
 5375;Chief of Navy;Jean-Marie Charles Abrial;1924;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;7765;x
 5376;Chief of Navy;Jean Decoux;1938;1964;1999;NS;Indirect Approach Doctrine;High;7766;x
-5377;Chief of Navy;Charles Platon;1940;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;7767;x
+5377;Chief of Navy;Charles Platon;1940;1964;1999;FA;Power Projection Doctrine;Medium;7767;x
 5378;Minister of Security;Jean Decoux;1941;1964;1999;NS;Crime Fighter;Medium;7766;x
 5379;Minister of Armament;Pierre Étienne Flandin;1931;1936;1999;SL;Resource Industrialist;Very High;M2003;X
 5380;Head of State;Jean Hennessy;1924;1936;1999;SD;Benevolent Gentleman;High;unknownminister;X
@@ -393,5 +393,13 @@ FRA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 5392;Chief of Army;Louis Franchet d'Espèrey;1924;1936;1999;PA;Elastic Defence Doctrine;Very High;2587;X
 5393;Head of State;Pierre Laval;1940;1964;1999;PA;Powerhungry Demagogue;High;M57011;X
 5394;Head of State;Jean-Francois Darlan;1940;1964;1999;PA;Resigned Generalissimo;High;M57002;X
-5395;Head of State;Carl Oberg;1940;1964;1999;NS;Ruthless Powermonger;High;unknownminister;X
+5395;Head of State;Karl Oberg;1940;1964;1999;NS;Ruthless Powermonger;High;oberg;X
 5396;Head of State;Henri Rol-Tanguy;1940;1964;1999;LWR;Popular Figurehead;High;unknownminister;X
+5397;Foreign Minister;Pierre Etienne Flandin;1933;1964;1999;SC;Ideological Crusader;Medium;M2003;X
+5398;Minister of Armament;Jean Berthelot;1943;1964;1999;PA;Theoretical Scientist;Medium;berthelot;X
+5399;Chief of Staff;Pierre Héring;1940;1964;1999;PA;School of Manoeuvre;High;hering;X
+5400;Minister of Armament;Jean Bichelonne;1941;1964;1999;FA;Administrative Genius;Medium;bichelonne;X
+5401;Head of Military Intelligence;Henri Lafont;1941;1964;1999;NS;Political Specialist;Low;lafont;X
+5402;Minister of Security;Pierre Pucheu;1940;1964;1999;FA;Prince of Terror;Medium;pucheu;x
+5403;Foreign Minister;Fernand de Brinon;1940;1964;1999;FA;Biased Intellectual;High;brinon;x
+5404;Head of Government;Marcel Déat;1940;1964;1999;FA;Flamboyant Tough Guy;High;deat;x
