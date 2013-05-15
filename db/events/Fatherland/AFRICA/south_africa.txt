@@ -61,7 +61,7 @@ event = {
 
 	name = EVT_8012603_NAME
 	desc = EVT_8012603_DESC
-	picture = "eath"
+	picture = "news_paper"
 	style = 1
 
 	trigger = {
@@ -117,7 +117,7 @@ event = {
 
 	name = "Apartheid"
 	desc = "The main Afrikaner nationalist party, the Herenigde Nasionale Party (Reunited National Party) under the leadership of Protestant cleric Daniel Francois Malan, starts its policy of apartheid"
-	picture = "nwo\apartheid"
+	picture = "apartheid"
 	style = 1
 
 	trigger = {
