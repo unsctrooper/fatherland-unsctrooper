@@ -17,6 +17,7 @@
 - Review/fixes of Future of Belgium (West Plan) event chain (Ticket Cookie)
 - Review of Vladivostok Conference chain (Pako)
 - New Morocco Crisis event chain (with 2 new ministers for MOR)(Ticket Cookie)
+- New South Africa event chain (Pako)
 
 # Scenario files (INC):
 - Review of USA (Ticket Cookie)
