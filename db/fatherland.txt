@@ -36,6 +36,9 @@ event = "db\events\fatherland\comintern\comintern_conference.txt"
 # AMERICAS
 event = "db\events\fatherland\americas\marshallplan.txt"
 
+# AFRICA
+event = "db\events\fatherland\africa\south_africa.txt"
+
 # Secret Weapons
 event = "db\events\secret_weapon_events.txt"
 

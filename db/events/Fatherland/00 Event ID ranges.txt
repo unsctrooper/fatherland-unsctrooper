@@ -15,7 +15,7 @@
 # 90000400-90000499 # Central Asia
 # 90000500-90000599 # Hitler's death
 # 8200030-82000?? # China
-# 90001000-90001499 # Indochina
 # 90001500-90001999 # Morroco crisis
+# 8012601-8012604 #South Africa
 #700-730: Germany/IRA Events
 #730-760: Marshall Plan Events
