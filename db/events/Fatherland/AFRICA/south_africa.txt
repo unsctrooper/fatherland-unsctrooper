@@ -181,6 +181,9 @@ event = {
 
 		command = { type = belligerence value = 1 }
 		command = { type = dissent value = 5 }
+		
+		command = { type = trigger which = 8012605 } 
+		command = { type = trigger which = 8012606 } 
 	}
 	
 	action = {
@@ -199,11 +202,8 @@ event = {
         id = 8012605
         random = no
         country = GER
-        trigger = {
-				event = 8012604
-        }
  
-        name = "German Reaction"
+        name = "German Reaction at the South African Referendum"
         desc = "The South Africa is now a Republic ! Congrats !"
         style = 0
  
@@ -219,7 +219,7 @@ event = {
         }	
         action = {
 				ai_chance = 10
-                name = "Ignore !"
+                name = "They are so far away !"
                 command = { type = relation which = SAF value = -10 }
         }			
 }
@@ -227,11 +227,8 @@ event = {
         id = 8012606
         random = no
         country = ENG
-        trigger = {
-				event = 8012604
-        }
  
-        name = "UK Reaction"
+        name = "UK Reaction at the South African Referendum"
         desc = "The South Africa is now a Republic !"
         style = 0
  
@@ -240,15 +237,10 @@ event = {
 		deathdate = { day = 30 month = december year = 1952 }
  
         action= {
-				ai_chance = 90
+				ai_chance = 100
                 name = "Damn !"				
 				command = { type = relation which = SAF value = -50 }
 				
-        }	
-        action = {
-				ai_chance = 10
-                name = "Congrats ! Rest with us !"
-                command = { type = relation which = SAF value = 50 }
         }			
 }
 
