@@ -31,6 +31,7 @@ Peru,San Salvador,Urugay,Venezuela) (Ticket Cookie)
 - Review of Chinas,Mongolia and add Koreas .inc (Pako)
 - Review of Finnish and Bulgarian cores and provinces (Ticket Cookie)
 - Review of Soviet claims and localization of OOB (Ticket Cookie)
+- Review of Cossack Federation OOB (Pako)
 
 # Scenario files (OOB):
 - New German Black Sea Fleet made with converted Soviet vessels (Ticket Cookie)

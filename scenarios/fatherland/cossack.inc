@@ -1,7 +1,6 @@
- 
- ############################## 
- # Country definition for GER # 
- ############################## 
+ ###################################################
+ # Country definition for COSSACK FEDERATION # 
+ ###################################################
 
  ##################### 
  # Country main data # 
@@ -10,11 +9,10 @@
  country = 
  { 
    tag                    = TRA 
- 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }	
-   #ai                     = "GER_1942.ai"
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }	
    
    capital                = 691 
-   manpower               = 100 
+   manpower               = 150 
    transports             = 10 
    escorts                = 0 
 
@@ -262,6 +260,54 @@ inventions = { 3000027 3000028 }
   # dormant_ministers      = {  }
   # dormant_leaders        = {  }
 
-  
+    landunit = {
+		location = 691 
+		name = "Kossacka Armija" 
+		id = {  
+			type = 30501 
+			id = 1  
+		} 
+		Division = {  
+			id   = {  
+				type = 30501 
+				id = 3  
+			} 
+			name = "2. Nayramdakh Kavaleriyskaya Div." 
+			strength     = 10
+			type = cavalry 
+			model    = 7
+		} 
+	}
+	landunit = {
+		location = 663 
+		name = "Kossacka Militija 1" 
+		id = {  
+			type = 30501 
+			id = 1  
+		} 
+
+     Division = 
+     {  id   = {  type = 30501 id = 4  } 
+       name = "3. Nayramdakh Div." 
+	   strength     = 10
+       type = militia 
+	   model    = 4
+      } 
+	}
+	landunit = {
+			location = 644 
+		name = "Kossacka Militija 2" 
+		id = {  
+			type = 30501 
+			id = 1  
+		} 
+     Division = 
+     {  id   = {  type = 30501 id = 5  } 
+       name = "4. Nayramdakh Div." 
+	   strength     = 10
+       type = militia 
+	   model    = 4
+      } 
+    } 
 } 
 
