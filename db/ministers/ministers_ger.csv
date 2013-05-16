@@ -5,12 +5,12 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 4;Minister of Armament;Werner von Blomberg;1933;1964;1999;NS;Infantry Proponent;High;L607;X
 5;Minister of Security;Wilhelm Frick;1933;1964;1999;NS;Ruthless Organizer;High;M5;X
 6;Head of Military Intelligence;Wilhelm Canaris;1933;1946;1999;FA;Brilliant Spymaster;Medium;2639;X
-7;Chief of Staff;Ludwig Beck;1933;1945;1999;PA;School of Manoeuvre;High;2640;X
+7;Chief of Staff;Ludwig Beck;1933;1964;1999;PA;School of Manoeuvre;High;2640;X
 8;Chief of Army;Werner von Fritsch;1933;1940;1999;PA;Armoured Spearhead Doctrine;High;L611;X
 9;Chief of Navy;Erich Raeder;1933;1964;1999;NS;Decisive Naval Battle Doctrine;High;L409;X
 10;Chief of Air Force;Hermann Göring;1933;1964;1999;NS;The Iron Knight;Very High;L440;X
 11;Head of State;Hermann Göring;1933;1964;1999;NS;Barking Buffoon;Very High;L440;X
-12;Head of State;Joseph Goebbels;1942;1946;1999;NS;Powerhungry Demagogue;Very High;3587;X
+12;Head of State;Joseph Goebbels;1942;1964;1999;NS;Powerhungry Demagogue;Very High;3587;X
 13;Head of State;Karl Dönitz;1945;1964;1999;NS;Resigned Generalissimo;High;M32;X
 14;Head of State;Oskar von Hindenburg;1933;1964;1999;FA;Insignificant Layman;High;3580;X
 15;Head of State;Ludwig Beck;1939;1999;1999;FA;Resigned Generalissimo;High;2640;X
@@ -33,7 +33,7 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 33;Head of Government;Ernst Toller;1939;1964;1999;ST;Ambitious Union Boss;High;M25;X
 34;Head of Government;Walter Ulbricht;1946;1964;1999;ST;Backroom Backstabber;High;M53;X
 35;Foreign Minister;Joachim von Ribbentrop;1937;1964;1999;NS;Salesman of Deception;High;3586;X
-36;Foreign Minister;Joseph Goebbels;1942;1946;1999;NS;The Cloak N Dagger Schemer;Very High;3587;X
+36;Foreign Minister;Joseph Goebbels;1942;1964;1999;NS;The Cloak N Dagger Schemer;Very High;3587;X
 37;Foreign Minister;Alfred Rosenberg;1943;1964;1999;NS;Ideological Crusader;Very High;M57;X
 38;Foreign Minister;Arthur Seyss-Inquart;1945;1964;1999;NS;Iron Fisted Brute;Very High;M58;X
 39;Foreign Minister;Johann Schwerin von Krosigk;1945;1964;1999;NS;Apologetic Clerk;Very High;M49;X
@@ -77,14 +77,14 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 78;Minister of Armament;Carl Friedrich Goerdeler;1940;1946;1999;PA;Military Entrepreneur;High;M12;X
 79;Minister of Armament;Albert Speer;1942;1964;1999;PA;Administrative Genius;Medium;2645;X
 80;Minister of Armament;Johannes Popitz;1941;1946;1999;PA;Resource Industrialist;Very High;M101;X
-81;Minister of Armament;Claus Schenk Graf von Stauffenberg;1944;1945;1999;PA;Infantry Proponent;High;M102;X
+81;Minister of Armament;Claus Schenk Graf von Stauffenberg;1944;1964;1999;PA;Infantry Proponent;High;M102;X
 82;Minister of Armament;Fritz Schäffer;1946;1964;1999;SC;Resource Industrialist;Very High;M103;X
 83;Minister of Armament;Ludwig Erhard;1947;1964;1999;SC;Mixed economy;Very High;M104;X
 84;Minister of Armament;Albert Kuntz;1933;1964;1999;ST;Resource Industrialist;High;M105;X
 85;Minister of Armament;Willie Munzenberg;1942;1964;1999;ST;Administrative Genius;High;M24;X
-86;Minister of Security;Heinrich Himmler;1938;1946;1999;NS;SS Reichsfuhrer;Very High;M108;X
+86;Minister of Security;Heinrich Himmler;1938;1964;1999;NS;SS Reichsfuhrer;Very High;M108;X
 87;Minister of Security;Viktor Lutze;1939;1964;1999;NS;Compassionate Gentleman;Very High;M109;X
-88;Minister of Security;Joseph Goebbels;1942;1946;1999;NS;Master of Propaganda;Very High;3587;X
+88;Minister of Security;Joseph Goebbels;1942;1964;1999;NS;Master of Propaganda;Very High;3587;X
 89;Minister of Security;Heinrich Müller;1943;1964;1999;NS;Secret police chief;Very Low;M26;X
 90;Minister of Security;Arthur Seyss-Inquart;1943;1964;1999;NS;Silent Lawyer;Very High;M58;X
 91;Minister of Security;Karl Hanke;1944;1964;1999;NS;Back Stabber;Very Low;M113;X
@@ -93,7 +93,7 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 94;Minister of Security;Ernst Trendelenburg;1933;1964;1999;PA;Compassionate Gentleman;Medium;M116;X
 95;Minister of Security;Alfred Hugenberg;1933;1964;1999;PA;Compassionate Gentleman;Medium;M117;X
 96;Minister of Security;Heinrich Müller;1939;1964;1999;PA;Efficient Sociopath;Very Low;M26;X
-97;Minister of Security;Arthur Nebe;1941;1946;1999;FA;Crime Fighter;Low;M119;X
+97;Minister of Security;Arthur Nebe;1941;1964;1999;FA;Crime Fighter;Low;M119;X
 98;Minister of Security;Arthur Axmann;1945;1964;1999;FA;Man of the People;Low;M120;X
 99;Minister of Security;Albrecht Graf von Bernstorff;1933;1964;1999;PA;Back Stabber;Medium;M121;X
 100;Minister of Security;Karl Sack;1933;1946;1999;PA;Silent Lawyer;Medium;M122;X
@@ -132,10 +132,10 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 133;Chief of Staff;Heinz Guderian;1944;1964;1999;PA;School of Mass Combat;Medium;L94;X
 134;Chief of Staff;Hans Krebs;1945;1964;1999;NS;School of Defence;Medium;L170;X
 135;Chief of Staff;Fritz Bayerlein;1933;1964;1999;PA;School of Psychology;High;3747;X
-136;Chief of Staff;Erich Hoepner;1937;1945;1999;FA;School of Fire Support;Medium;M18;X
+136;Chief of Staff;Erich Hoepner;1937;1964;1999;FA;School of Fire Support;Medium;M18;X
 137;Chief of Staff;Erwin von Witzleben;1941;1945;1999;PA;School of Fire Support;High;M17;X
 138;Chief of Staff;Kurt Zeitzler;1942;1964;1999;FA;School of Defence;Medium;L369;X
-139;Chief of Staff;Erwin Rommel;1943;1945;1999;PA;School of Manoeuvre;High;M165;X
+139;Chief of Staff;Erwin Rommel;1943;1964;1999;PA;School of Manoeuvre;High;M165;X
 140;Chief of Staff;Wilhelm Groener;1914;1964;1999;PA;School of Defence;Medium;M166;X
 141;Chief of Staff;Adolf Heusinger;1942;1964;1999;PA;School of Mass Combat;Low;M168;X
 142;Chief of Staff;Julius Ringel;1944;1964;1999;PA;School of Manoeuvre;Medium;L227;X
@@ -150,8 +150,8 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 151;Chief of Army;Erich Ludendorff;1933;1964;1999;PA;Elastic Defence Doctrine;High;M179;X
 152;Chief of Army;Werner von Blomberg;1937;1964;1999;NS;Guns and Butter Doctrine;High;L607;X
 153;Chief of Army;Fedor von Bock;1939;1964;1999;FA;Decisive Battle Doctrine;High;M182;X
-154;Chief of Army;Erich Hoepner;1942;1945;1999;FA;Armoured Spearhead Doctrine;High;M18;X
-155;Chief of Army;Erwin von Witzleben;1943;1945;1999;PA;Static Defence Doctrine;High;M17;X
+154;Chief of Army;Erich Hoepner;1942;1964;1999;FA;Armoured Spearhead Doctrine;High;M18;X
+155;Chief of Army;Erwin von Witzleben;1943;1964;1999;PA;Static Defence Doctrine;High;M17;X
 156;Chief of Army;Walter von Lüttwitz;1933;1964;1999;PA;Decisive Battle Doctrine;Low;M185;X
 157;Chief of Army;Julius Ringel;1942;1964;1999;PA;Guns and Butter Doctrine;Medium;L227;X
 158;Chief of Army;Theodor Blank;1946;1964;1999;SC;Armoured Spearhead Doctrine;High;M188;X
@@ -200,7 +200,7 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 203;Minister of Armament;Lutz von Schwerin-Krosigk;1945;1964;1999;NS;Resource Industrialist;High;M241;X
 204;Minister of Security;Paul Giesler;1945;1964;1999;NS;Efficient Sociopath;Very High;M242;X
 205;Minister of Security;Werner Naumann;1945;1964;1999;NS;Compassionate Gentleman;Very High;M243;X
-206;Minister of Security;Reinhard Heydrich;1931;1943;1999;NS;Secret police chief;Very High;M244;X
+206;Minister of Security;Reinhard Heydrich;1931;1964;1999;NS;Secret police chief;Very High;M244;X
 207;Minister of Armament;Alfred Hugenberg;1933;1964;1999;PA;Resource Industrialist;High;M117;X
 208;Minister of Security;Helmuth von Moltke;1939;1964;1999;SC;Compassionate Gentleman;High;M246;X
 209;Head of Military Intelligence;Hans Gisevius;1939;1946;1999;SC;Dismal Enigma;Medium;M247;X
@@ -265,9 +265,9 @@ GER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 270;Chief of Staff;Ernst Röhm;1933;1934;1999;NS;School of Mass Combat;Low;5781;X
 271;Foreign Minister;Heinrich Brüning;1933;1934;1999;PA;Great Compromiser;Low;5782;x
 272;Minister of Armament;Gregor Strasser;1933;1934;1999;FA;infantry proponent;Low;5784;x
-273;Chief of Army;Erwin Rommel;1943;1945;1999;PA;Doctrine of autonomy;High;M165;X
-274;Head of Military Intelligence;Reinhard Heydrich;1931;1943;1999;NS;The Hangman;Very High;M244;X
-275;Head of Government;Joseph Goebbels;1941;1946;1999;NS;Backroom Backstabber;Very High;3587;X
+273;Chief of Army;Erwin Rommel;1943;1964;1999;PA;Doctrine of autonomy;High;M165;X
+274;Head of Military Intelligence;Reinhard Heydrich;1931;1964;1999;NS;The Hangman;Very High;M244;X
+275;Head of Government;Joseph Goebbels;1941;1964;1999;NS;Backroom Backstabber;Very High;3587;X
 276;Head of State;Heinrich Himmler;1941;1986;1999;NS;stern imperialist;Very High;M108;X
 277;Head of Government;Heinrich Himmler;1941;1986;1999;NS;old general;Very High;M108;X
 278;Head of State;Albert Speer;1945;1964;1999;NS;die-hard reformer;High;2645;X
