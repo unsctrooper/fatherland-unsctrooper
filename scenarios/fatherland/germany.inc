@@ -44,7 +44,7 @@
     relation = { tag = ITA value = 200 access = yes }
     relation = { tag = JAP value = -200 }
     relation = { tag = MAN value = 20 }
-	relation = { tag = TRA value = 150 access = yes guaranteed = { day = 1 month = december year = 1947 } }
+	relation = { tag = TRA value = 150 access = yes guaranteed = { day = 1 month = december year = 1950 } }
 	relation = { tag = DEN value = 150 access = yes }
     relation = { tag = MEN value = 20 }
     relation = { tag = NEP value = -200 }
@@ -201,81 +201,81 @@ claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908
 	techapps = { 
 	
 	# Manufacturing
-	5810 5820 5050 5830 5060 5070 5130
+	5810 5820 5050 5830 5060 5070 5130 5040 5110
 	# Assembly Line
 	5140 5150 5160 5170 5180
 	# Construction Engineering 
 	5800 5080 5090 5100
 	# Computers & cryptography
-	5310 54010 54020 54030 5320 5330 5340 5316 5326 5327 5350 5360 5370 5380
+	5310 54010 54020 54030 5320 5330 5340 5316 5326 5327 5350 5360 5370 5380 5390 5400 7140 7150
 	# Agriculture 
-	5700 5710 5010 5020 5030
+	5700 5710 5010 5020 5030 
 	# Oil Refining
-	5190 5200 5210 5220 5230
+	5190 5200 5210 5220 5230 5240 53020 53040
 	# Atomic Research
 	5470 5480 5490 5500
 	# Exp. Rocket
-	5560
+	5560 
 	# Medicine
-	5600 5610 5620 5630 5640
+	5600 5610 5620 5630 5640 5650
 	# Radar
 	5410 5416 5417 5420 5426 5430 5440
 	# Specialised Equipment
-	5920 5960 5970
+	5920 5960 5970 5930 5940 5950 5980 5990
 
 	# Infantry Division  
-	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120
+	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140
 	# Mountain Division 
-	1160  1170 1180 1190 1200 1210 1220 1230 1240 1250 1260 1270
+	1160  1170 1180 1190 1200 1210 1220 1230 1240 1250 1260 1270 1280
 	# Airborne Infantry
-	1670 1680 1690
+	1670 1680 1690 1700
 	# Motorized Infantry
-	1396 1400 1410
+	1396 1400 1410 1420 1430
 	# Cavalry 
 	13060 13070 13080 1310 1320 1330 1340 1350 1360 1370 1380 1390 1530
 	# Mechanized Inf
-	1470
+	1470 1480 1490
 	# Engineers
-	1830 1840 1850 1860 1870
+	1830 1840 1850 1860 1870 1880 
 	# Supply
-	1910 1920 1930 1940 1950 1960 1970 1980 1990 199100 199110 199130 199140
+	1910 1920 1930 1940 1950 1960 1970 1980 1990 199100 199110 199130 199140 199150
 
 	# Light / Early Tank 
 	7600 7610 2620 2010 2630 2640 2646 2650 2030 2040 2050 2060
 	# Medium Tank
-	2070 2080 2090
+	2070 2080 2090 2140 11000
 	# Heavy Tank
 	2100 2110 2120 2126
 	# Armoured Car  
-	2860 2870 2880 2020 2150 2160
+	2860 2870 2880 2020 2150 2160 2890
 	# Tank Destroyer
-	2170 2180 2850
+	2170 2180 2850 2190
 	# Field Artillery 
-	2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340
+	2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360
 	# Anti-tank Artillery
 	2400 2410 2420 2430
 	# Static Anti-Air Artillery 
-	2800 2450 21180 21190 21200 2460 2470 2480
+	2800 2450 21180 21190 21200 2460 2470 2480 2490
 	# Anti-Air Artillery Brigade 
 	2810 2820 2510 2520 2530
 	# Self-Propelled Artillery
-	2220 2230 2240
+	2220 2230 2240 2250
 	# Rocket Artillery
-	2970 2370
+	2970 2370 2380
 	# SP Anti-Air Artillery Brigade
 	22910 22920 22930
 	# SP Rocket Artillery
-	2980 2260
+	2980 2260 2270
 
 	# Hospital System 
-	14000 14010 14020 14030
+	14000 14010 14020 14030 14040
 	# Great War Land Doctrines (central powers)
-	6500 6510 6530 6550 6590 6600 6620 6650 6670 6680 6690 6700 6710 6910
+	6500 6510 6530 6550 6590 6600 6610 6620 6650 6670 6680 6690 6700 6710 6910
 	# WW2 Land Doctrines
-	6210 6220 6230 6240 6250 6260 6270 6280 6290 6900 
+	6210 6220 6230 6240 6250 6260 6270 6280 6290 6900 14100
 
 	# Light Cruiser 
-	3110 3120 3130 3140 3150 3160
+	3110 3120 3130 3140 3150 3160 12010
 	# Battleship 
 	3410 3420 3430 3440 3450 3456 3460 3470 3480
 	# Battlecruiser
@@ -283,34 +283,34 @@ claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908
 	# Heavy Cruiser 
 	3210 3220 3230 3240 3250 3260 12020
 	# Destroyer 
-	3010 3020 3030 3040 3050 3060 3070 12000
+	3010 3020 3030 3040 3050 3060 3070 12000 3080
 	# Submarine 
-	3610 3620 3630 3640 3650 3660 3670 3680
+	3610 3620 3630 3640 3650 3660 3670 3680 3710
 	# Light Carrier 
 	12100 12110 12120 12130
 	# Aircraft Carrier 
 	3510 3520 3530
 	# Torpedo & ASW 18
-	3720 3730 3736 3740 3750 3760 3900 3910
+	3720 3730 3736 3740 3750 3760 3900 3910 3770
 	# Troopships
 	3810 3820 3830
 
 	# Multirole fighter
-	4300 4310 4320 4330 4340 4040 4070 4100
+	4300 4310 4320 4330 4340 4040 4070 4100 4350
 	# CAS
-	4400 4170 4280 4450
+	4400 4170 4280 4450 4180
 	# Strategic bomber
-	4800 4810 4820 4220 4230
+	4800 4810 4820 4220 4230 4240
 	# Navalbomber
 	4700 4710 4190 4200 4210
 	# Interceptor  
-	4500 4510 4520 4530 4540 4550 4010 4020 4030 4060 4090
+	4500 4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 
 	# Tactical Bomber
-	4600 4610 4620 4630 4120 4130 4140 4150 4160
+	4600 4610 4620 4630 4120 4130 4140 4150 4160 15100
 	# Seaplanes
 	4740 4750 4760 4770 4780 4790 4850 4860
 	# Escort Fighter
-	4050 4080 4110
+	4050 4080 4110 4116
 	# CAG
 	4900 4910 4920 4930 4940
 	# Air Transport 
@@ -319,18 +319,18 @@ claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908
 	#Air Doctrines - ww2 techs
 	27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470
 	9010 9040 9050 9060 9070 9080 9090 9100 9110 9120 9130 9140 9150 9190 9200 9210 9220 9230 9240 9250 9260 9270
-	9280 9350 9360 9290 9300 9310 9370 9390 9400 9380 9320 9330 9340 9410 9420
+	9280 9350 9360 9290 9300 9310 9370 9390 9400 9380 9320 9330 9340 9410 9420 27000 
 
 	#Naval Doctrines
-	8010 8020 8030 8040 8050 8060 8070 8080
+	8010 8020 8030 8040 8050 8060 8070 8080 81380
 	# Amphib
 	82300 82310
 	# Naval Logistics
-	82500
+	82500 82510 82520
 	# Naval Interdiction
-	8500 8510 8520 8550 8560 8570 8600 
+	8500 8510 8520 8550 8560 8600 8570
 	# Trade Interdiction Submarine
-	8610 8620 8630
+	8610 8620 8630 8640 8650 8660
 	# Indirect Approach
 	81300 81310 81320 81330 81340 81350 81360 81370
 	# Naval Supremacy
@@ -341,9 +341,9 @@ claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908
 	# Rocket Tech
 	7550 7560 7570 7580 7590 7100 7110 7120 7010 7020
 	#Goliath Tanks
-	7620
+	7620 7630
 	} 
-inventions = { 3000027 3000028 3000031 }
+inventions = { 3000027 3000028 3000031 3000017 3000018 }
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 1 
@@ -359,9 +359,9 @@ inventions = { 3000027 3000028 3000031 }
    foreignminister        = {  type = 9 id = 35  } 
    armamentminister       = {  type = 9 id = 65  } 
    ministerofsecurity     = {  type = 9 id = 86  } 
-   ministerofintelligence = {  type = 9 id = 119 } 
-   chiefofstaff           = {  type = 9 id = 133 } 
-   chiefofarmy            = {  type = 9 id = 149 } 
+   ministerofintelligence = {  type = 9 id = 274 } 
+   chiefofstaff           = {  type = 9 id = 132 } 
+   chiefofarmy            = {  type = 9 id = 146 } 
    chiefofnavy            = {  type = 9 id = 161 } 
    chiefofair             = {  type = 9 id = 10  } 
    dormant_ministers      = {  
@@ -391,10 +391,10 @@ inventions = { 3000027 3000028 3000031 }
      { id       = {  type = 14500 id = 2  } 
        name     = "Oberkommando des Heeres" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 100 
        extra    = anti_air
-       brigade_model = 4
+       brigade_model = 5
       }
     }
 
@@ -408,9 +408,8 @@ landunit =
      { id       = {  type = 14500 id = 414  } 
        name     = "245. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 80
+       model    = 12 
+       strength = 25
       }
      
        
@@ -424,28 +423,24 @@ landunit =
      { id       = {  type = 14500 id = 133  } 
        name     = "A.O.K. 9" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
       }
      division = 
      { id       = {  type = 14500 id = 134  } 
        name     = "17. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 135  } 
        name     = "214. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -457,18 +452,15 @@ landunit =
      { id       = {  type = 14500 id = 420  } 
        name     = "265. Infanterie-Division (mot)" 
        type     = motorized 
-       model    = 2 
-       strength = 45
-       experience = 50
+       model    = 3 
+       strength = 25
       }
 	  division = 
      { id       = {  type = 14500 id = 9  } 
        name     = "230. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 60
-	   locked = yes
+       model    = 12 
+       strength = 25
       }
        
     }
@@ -480,9 +472,8 @@ landunit =
      { id       = {  type = 14500 id = 162  } 
        name     = "68. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
       
     }
@@ -494,9 +485,8 @@ landunit =
      { id       = {  type = 14500 id = 43  } 
        name     = "87. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
       
     }
@@ -509,10 +499,8 @@ landunit =
      { id       = {  type = 14500 id = 440  } 
        name     = "Festungs Lorient" 
        type     = garrison 
-       model    = 5 
+       model    = 6 
        strength = 65 
-       experience = 60
-	   locked = yes
       }
        
     }
@@ -524,17 +512,15 @@ landunit =
      { id       = {  type = 14500 id = 18  } 
        name     = "702. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 100 
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
 	division = 
      { id       = {  type = 14500 id = 422  } 
        name     = "319. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 35
-       experience = 50
+       model    = 12
+       strength = 25
       }
     }	
 	  landunit = 
@@ -546,9 +532,8 @@ landunit =
      { id       = {  type = 14500 id = 412  } 
        name     = "347. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 70
-       experience = 80
+       model    = 12 
+       strength = 25
       }
        
     }
@@ -560,10 +545,8 @@ landunit =
      { id       = {  type = 14500 id = 402  } 
        name     = "526. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -576,18 +559,15 @@ landunit =
      { id       = {  type = 14500 id = 130  } 
        name     = "35. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 131  } 
        name     = "252. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
     }
 	 landunit = 
@@ -599,12 +579,10 @@ landunit =
      { id       = {  type = 14500 id = 107  } 
        name     = "131. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
 	   extra    = anti_air
-       brigade_model = 4
-       strength = 65 
-       experience = 80
-	   locked = yes
+       brigade_model = 5
+       strength = 25 
       }
        
     }
@@ -617,18 +595,15 @@ landunit =
      { id       = {  type = 14500 id = 103  } 
        name     = "203. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
 	division = 
      { id       = {  type = 14500 id = 84  } 
        name     = "1. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65  
-       experience = 80
+       model    = 12 
+       strength = 25  
       }
        
     }
@@ -640,20 +615,17 @@ landunit =
      { id       = {  type = 14500 id = 418  } 
        name     = "226. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
 	   extra    = anti_air
-       brigade_model = 4
-       strength = 65
-       experience = 80
-	   locked = yes
+       brigade_model = 5
+       strength = 25
       }
 	  division = 
      { id       = {  type = 14500 id = 73  } 
        name     = "281. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -668,19 +640,17 @@ landunit =
      { id       = {  type = 14500 id = 29  } 
        name     = "A.O.K. 18" 
        type     = hq 
-       model    = 4 
-       strength = 75 
+       model    = 5 
+       strength = 100 
        extra    = anti_air
        brigade_model = 4
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 72  } 
        name     = "81. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       } 
        
     }	
@@ -692,26 +662,22 @@ landunit =
      { id       = {  type = 14500 id = 14  } 
        name     = "163. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 60
-	   locked = yes
+       model    = 12 
+       strength = 25
       }
      division = 
      { id       = {  type = 14500 id = 15  } 
        name     = "199. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 60
+       model    = 12 
+       strength = 25
       }
      division = 
      { id       = {  type = 14500 id = 16  } 
        name     = "210. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 60
+       model    = 12
+       strength = 25
       }
        
     }
@@ -723,18 +689,17 @@ landunit =
      { id       = {  type = 14500 id = 23  } 
        name     = "274. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 100 
+       model    = 12 
+       strength = 25
        extra    = artillery
-       brigade_model = 10
+       brigade_model = 11
       }
      division = 
      { id       = {  type = 14500 id = 24  } 
        name     = "280. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 100 
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
     }
 	   landunit = 
@@ -745,34 +710,29 @@ landunit =
      { id       = {  type = 14500 id = 55  } 
        name     = "205. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 56  } 
        name     = "215. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
 	  division = 
      { id       = {  type = 14500 id = 60  } 
        name     = "122. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 57  } 
        name     = "329. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -784,18 +744,15 @@ landunit =
      { id       = {  type = 14500 id = 59  } 
        name     = "24. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 61  } 
        name     = "290. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 60 
-       experience = 80
-	   locked = yes
+       model    = 12 
+       strength = 25 
       }
 
        
@@ -809,7 +766,7 @@ landunit =
      { id       = {  type = 14500 id = 309  } 
        name     = "166. Reserve-Division" 
        type     = infantry 
-       model    = 10 
+       model    = 12
        strength = 10
       }
     }
@@ -821,7 +778,7 @@ landunit =
      { id       = {  type = 14500 id = 311  } 
        name     = "160. Reserve-Division" 
        type     = infantry 
-       model    = 10 
+       model    = 12 
        strength = 10
       }
     }
@@ -836,18 +793,17 @@ landunit =
      { id       = {  type = 14500 id = 4  } 
        name     = "A.O.K. 21" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        extra    = police
-       brigade_model = 2
-       strength = 60 
+       brigade_model = 3
+       strength = 25 
       }
 	division = 
      { id       = {  type = 14500 id = 62  } 
        name     = "389. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
     }
 	   landunit = 
@@ -858,8 +814,8 @@ landunit =
      { id       = {  type = 14500 id = 21  } 
        name     = "295. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 100   
+       model    = 12 
+       strength = 25   
       }
     }
 	landunit = 
@@ -871,9 +827,8 @@ landunit =
      { id       = {  type = 14500 id = 33  } 
        name     = "225. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      
        
@@ -887,9 +842,8 @@ landunit =
      { id       = {  type = 14500 id = 49  } 
        name     = "263. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -903,27 +857,26 @@ landunit =
      { id       = {  type = 14500 id = 6  } 
        name     = "A.O.K. 20" 
        type     = hq 
-       model    = 4 
+       model    = 5
        strength = 70 
        extra    = anti_air
        brigade_model = 4
-       experience = 60
       }
 	  division = 
      { id       = {  type = 14500 id = 274  } 
        name     = "5. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 65 
-       experience = 60
+       model    = 12 
+       strength = 80 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 8  } 
        name     = "7. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 100 
-       experience = 60
+       model    = 12
+       strength = 80 
+       experience = 40
       }
        
     }
@@ -941,7 +894,6 @@ landunit =
        type     = cavalry 
        model    = 12 
        strength = 75 
-       experience = 80
       }
 	}
 	
@@ -953,25 +905,24 @@ landunit =
      { id       = {  type = 14500 id = 264  } 
        name     = "133. Festungs-Division" 
        type     = garrison 
-       model    = 5 
+       model    = 6 
        strength = 35 
-       experience = 40
       }
 	division = 
      { id       = {  type = 14500 id = 193  } 
        name     = "3. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 80 
+       experience = 40
       }
 	division = 
      { id       = {  type = 14500 id = 356  } 
        name     = "3. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
+       model    = 3 
        strength = 80
-       experience = 80
+       experience = 40
       }
     }
    landunit = 
@@ -983,32 +934,29 @@ landunit =
      { id       = {  type = 14500 id = 12  } 
        name     = "169. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 80
-       experience = 60
       }
      division = 
      { id       = {  type = 14500 id = 357  } 
        name     = "89. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 80 
       }
      division = 
      { id       = {  type = 14500 id = 93  } 
        name     = "607. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
        strength = 65 
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 94  } 
        name     = "58. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
       }
        
     }
@@ -1021,43 +969,39 @@ landunit =
      { id       = {  type = 14500 id = 230  } 
        name     = "Pz. A.O.K. 2" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 232  } 
        name     = "44. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
        strength = 65 
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 233  } 
        name     = "71. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
       }
 	division = 
      { id       = {  type = 14500 id = 11  } 
        name     = "270. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
        strength = 80
-       experience = 60
       }
 	 division = 
      { id       = {  type = 14500 id = 35  } 
        name     = "218. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
       }
        
     }
@@ -1069,25 +1013,25 @@ landunit =
      { id       = {  type = 14500 id = 261  } 
        name     = "373. Kroatische Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 80
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 262  } 
        name     = "392. Kroatische Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 55 
-       experience = 80
+       model    = 12 
+       strength = 80
+       experience = 20
       }
 	 division = 
      { id       = {  type = 14500 id = 247  } 
        name     = "369. Kroatische Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 55 
-       experience = 80
+       model    = 12 
+       strength = 80 
+       experience = 20
       }
        
     }
@@ -1099,9 +1043,8 @@ landunit =
      { id       = {  type = 14500 id = 266  } 
        name     = "Kommandantur d. Ost Ägäis" 
        type     = garrison 
-       model    = 5 
+       model    = 6 
        strength = 25 
-       experience = 40
       }
     }
 	landunit = 
@@ -1113,27 +1056,26 @@ landunit =
      { id       = {  type = 14500 id = 258  } 
        name     = "117. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 75 
+       model    = 12 
+       strength = 40 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
       }
 	  division = 
      { id       = {  type = 14500 id = 231  } 
        name     = "13. Waffen-SS Geb.Div. 'Handschar'" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 35 
-       experience = 80
+       model    = 12 
+       strength = 40 
+       experience = 40
       } 
 	  division = 
      { id       = {  type = 14500 id = 255  } 
        name     = "7. SS-Freiw.-Geb.Div. 'Prinz Eugen'" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 40
+       experience = 40
       }
        
     }
@@ -1146,17 +1088,17 @@ landunit =
      { id       = {  type = 14500 id = 3936  } 
        name     = "21. Waffen-SS Geb.Div. 'Skanderbeg'" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 45 
-       experience = 80
+       model    = 12 
+       strength = 80 
+       experience = 40
       }
 	division = 
      { id       = {  type = 14500 id = 256  } 
        name     = "21. Albanische SS-Freiw.-Div." 
        type     = motorized 
-       model    = 2 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 80 
+       experience = 20
       }
        
     }
@@ -1171,27 +1113,24 @@ landunit =
      { id       = {  type = 14500 id = 251  } 
        name     = "41. Festungs-Division" 
        type     = garrison 
-       model    = 5 
-       strength = 65 
-       experience = 80
+       model    = 6 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 252  } 
        name     = "104. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 50
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
       }
      division = 
      { id       = {  type = 14500 id = 253  } 
        name     = "297. Infanterie-Division" 
        type     = infantry 
        model    = 11 
-       strength = 70 
-       experience = 80
+       strength = 50 
       }
        
     }
@@ -1207,27 +1146,27 @@ landunit =
      { id       = {  type = 14500 id = 171  } 
        name     = "A.O.K. 17" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
           division = 
      { id       = {  type = 14500 id = 439  } 
        name     = "31. SS-Freiwilligen-Grenadier-Div." 
        type     = motorized 
-       model    = 2 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 80 
+       experience = 40
       }
 	     division = 
      { id       = {  type = 14500 id = 272  } 
        name     = "162. Infanterie-Div. 'Turkestan'" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 80 
+       experience = 20
       }  
      
        
@@ -1241,10 +1180,8 @@ landunit =
      { id       = {  type = 14500 id = 95  } 
        name     = "206. Sicherungs-Division" 
        type     = garrison 
-       model    = 5 
-       strength = 65 
-       experience = 80
-	   locked = yes
+       model    = 6 
+       strength = 100 
       }
 	}
 	   landunit = 
@@ -1257,11 +1194,11 @@ landunit =
      { id       = {  type = 14500 id = 30  } 
        name     = "52. Sicherungs-Division" 
        type     = garrison 
-       model    = 5 
-       strength = 65 
+       model    = 6 
+       strength = 100
        extra    = police
        brigade_model = 2
-       experience = 80
+       experience = 20
       }
        
     }
@@ -1274,12 +1211,10 @@ landunit =
      { id       = {  type = 14500 id = 69  } 
        name     = "221. Sicherungs-Division" 
        type     = garrison 
-       model    = 5 
-       strength = 65 
+       model    = 6 
+       strength = 100 
 	   extra    = police
 	   brigade_model = 2
-       experience = 80
-	   locked = yes
       }
 	}
 
@@ -1294,27 +1229,27 @@ landunit =
      { id       = {  type = 14500 id = 315  } 
        name     = "2. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
+       model    = 12 
        strength = 80 
-       experience = 60
+       experience = 20
       }
 	   division = 
      { id       = {  type = 14500 id = 237  } 
        name     = "1. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
+       model    = 12 
        strength = 80 
-       experience = 80
+       experience = 40
       }
 	division = 
      { id       = {  type = 14500 id = 302  } 
        name     = "114. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 80 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
     }
 landunit = 
@@ -1325,19 +1260,19 @@ landunit =
      { id       = {  type = 14500 id = 183  } 
        name     = "1. Skijäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12
+       strength = 80 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 184  } 
        name     = "97. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 80 
+       experience = 20
       }
        
     }
@@ -1349,9 +1284,9 @@ landunit =
      { id       = {  type = 14500 id = 194  } 
        name     = "4. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 80 
+       experience = 40
       }
        
     }
@@ -1368,7 +1303,7 @@ landunit =
      { id       = {  type = 14500 id = 305  } 
        name     = "188. Reserve-Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 10 
+       model    = 12 
        strength = 10
       }
        
@@ -1386,29 +1321,29 @@ landunit =
      { id       = {  type = 14500 id = 7  } 
        name     = "6. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 80
-       experience = 60
+       model    = 12 
+       strength = 100
+       experience = 40
       }
       division = 
      { id       = {  type = 14500 id = 111  } 
        name     = "28. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 100 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
 	  division = 
      { id       = {  type = 14500 id = 185  } 
        name     = "101. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12
+       strength = 100
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
        
     }
@@ -1421,29 +1356,29 @@ landunit =
      { id       = {  type = 14500 id = 203  } 
        name     = "118. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80 
+       model    = 12
+       strength = 100 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
     division = 
      { id       = {  type = 14500 id = 124  } 
        name     = "5. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 100 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
 	  division = 
      { id       = {  type = 14500 id = 285  } 
        name     = "157. Gebirgsjäger-Division" 
        type     = bergsjaeger 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12
+       strength = 100 
+       experience = 40
       }
        
     }
@@ -1456,31 +1391,31 @@ landunit =
      { id       = {  type = 14500 id = 291  } 
        name     = "42. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 100 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 186  } 
        name     = "254. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 100 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 189  } 
        name     = "100. Jäger-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 100 
        extra    = engineer
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }   
        
     }
@@ -1492,81 +1427,81 @@ landunit =
      { id       = {  type = 14500 id = 199  } 
        name     = "Panzer-Division 'Tatra'" 
        type     = armor 
-       model    = 1 
-       strength = 60 
-       experience = 80
+       model    = 3 
+       strength = 100
+       experience = 40
       }
 	 division = 
      { id       = {  type = 14500 id = 784  } 
        name     = "83. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80 
+       model    = 12 
+       strength = 100 
 	   extra    = artillery
-       brigade_model = 10
-       experience = 80
+       brigade_model = 11
+       experience = 20
       }
 	division = 
      { id       = {  type = 14500 id = 712  } 
        name  = "32. SS-Freiw.Div. '30. Januar'"
        type     = motorized 
-       model    = 2 
-       strength = 90
+       model    = 3 
+       strength = 75
       }
 	 division = 
      { id       = {  type = 14500 id = 64  } 
        name     = "93. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 75 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 200  } 
        name     = "3. SS-Panzer-Div. 'Totenkopf'" 
        type     = armor 
-       model    = 2 
-       strength = 80 
+       model    = 3 
+       strength = 100
        extra    = heavy_armor
-       brigade_model = 3 
-       experience = 80
+       brigade_model = 4 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 201  } 
        name     = "5. SS-Panzer-Div. 'Wiking'" 
        type     = armor 
-       model    = 2 
-       strength = 80 
+       model    = 3 
+       strength = 100 
        extra    = heavy_armor
-       brigade_model = 3 
-       experience = 80
+       brigade_model = 4 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 202  } 
        name     = "96. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 75 
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 212  } 
        name     = "4. SS-Pz.Gr.Div. 'Polizei'" 
        type     = mechanized 
-       model    = 0 
-       strength = 50 
-       experience = 80
+       model    = 1 
+       strength = 100
+       experience = 40
       }
      
      division = 
      { id       = {  type = 14500 id = 205  } 
        name     = "711. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 80
+       model    = 12 
+       strength = 75
+       experience = 20
       }
     }
 	   landunit = 
@@ -1577,27 +1512,27 @@ landunit =
      { id       = {  type = 14500 id = 67  } 
        name     = "4. Panzer-Division" 
        type     = armor 
-       model    = 1 
-       strength = 50 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 30
       }
      division = 
      { id       = {  type = 14500 id = 68  } 
        name     = "12. Panzer-Division" 
        type     = armor 
-       model    = 1 
-       strength = 70 
+       model    = 3 
+       strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 30
       }
      division = 
      { id       = {  type = 14500 id = 3937  } 
        name     = "22. SS-Kav.Div. 'Maria Theresia'" 
        type     = cavalry 
        model    = 12 
-       strength = 70 
-       experience = 80
+       strength = 75 
+       experience = 40
       }
        
     }
@@ -1610,37 +1545,37 @@ landunit =
      { id       = {  type = 14500 id = 401  } 
        name     = "A.O.K. 1" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 70 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }    
      division = 
      { id       = {  type = 14500 id = 405  } 
        name     = "17. SS-Pz.Gr.Div. 'Götz Berlichingen'" 
        type     = mechanized 
-       model    = 0 
-       strength = 70
-       experience = 80
+       model    = 1 
+       strength = 75
+       experience = 40
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
       }
      division = 
      { id       = {  type = 14500 id = 406  } 
        name     = "25. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1
+       strength = 75 
+       experience = 30
       }
      division = 
      { id       = {  type = 14500 id = 407  } 
        name     = "21. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 50
-       experience = 80
+       model    = 3 
+       strength = 75
+       experience = 30
       }
        
     }
@@ -1655,8 +1590,8 @@ landunit =
      { id       = {  type = 14500 id = 27  } 
        name     = "Feldausbildung-Division 'Nord'" 
        type     = infantry 
-       model    = 11 
-       strength = 50 
+       model    = 12
+       strength = 100
        extra    = police
        brigade_model = 2
       }
@@ -1670,30 +1605,29 @@ landunit =
      { id       = {  type = 14500 id = 364  } 
        name     = "2. SS-Panzer-Div. 'Das Reich'" 
        type     = armor 
-       model    = 2 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 75
+       experience = 30
        extra    = sp_artillery
-       brigade_model = 2 
+       brigade_model = 3 
       }
      division = 
      { id       = {  type = 14500 id = 365  } 
        name     = "9. SS-Panzer-Div. 'Hohenstaufen'" 
        type     = armor 
-       model    = 2 
-       strength = 40 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 30
        extra    = sp_artillery
-       brigade_model = 2      
+       brigade_model = 3      
       }
 	    division = 
      { id       = {  type = 14500 id = 235  } 
        name     = "3. Kavallerie-Brigade" 
        type     = cavalry 
        model    = 12 
-       strength = 40
-       max_strength = 40 
-       experience = 80
+       strength = 75
+       experience = 40
       }  
     }
 	 landunit = 
@@ -1704,28 +1638,27 @@ landunit =
      { id       = {  type = 14500 id = 38  } 
        name     = "4. SS-Pz.Gr.Brig. 'Nederland'" 
        type     = mechanized 
-       model    = 0 
-       strength = 50 
-       max_strength = 50
-       experience = 80
+       model    = 1 
+       strength = 75 
+       experience = 30
       }
      division = 
      { id       = {  type = 14500 id = 39  } 
        name     = "11. SS-Pz.Gr.Freiw.Div. 'Nordland'" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 75 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 40  } 
        name     = "121. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12
+       strength = 75 
        extra    = artillery
-       brigade_model = 10
-       experience = 80
+       brigade_model = 11
+       experience = 40
       }      
     }
    landunit = 
@@ -1737,8 +1670,8 @@ landunit =
      { id       = {  type = 14500 id = 197  } 
        name     = "153. Feldausbildung-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 50 
+       model    = 12 
+       strength = 75 
        extra    = police
        brigade_model = 2
       }
@@ -1751,18 +1684,18 @@ landunit =
      { id       = {  type = 14500 id = 301  } 
        name     = "16. SS-Pz.Gr.Div. 'Reichsführer SS'" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 75 
+       experience = 40
        extra    = tank_destroyer
-       brigade_model = 2
+       brigade_model = 3
       }
 	     division = 
      { id       = {  type = 14500 id = 181  } 
        name     = "154. Feldausbildung-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 50 
+       model    = 12 
+       strength = 100 
        extra    = police
        brigade_model = 2
       }
@@ -1770,9 +1703,9 @@ landunit =
      { id       = {  type = 14500 id = 432  } 
        name     = "716. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 20
-       experience = 80
+       model    = 12 
+       strength = 75
+       experience = 20
       }
        
     }
@@ -1784,52 +1717,51 @@ landunit =
      { id       = {  type = 14500 id = 166  } 
        name     = "72. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 75 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
+       experience = 30
       }
      division = 
      { id       = {  type = 14500 id = 167  } 
        name     = "88. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
 	   extra    = tank_destroyer
-       brigade_model = 2 
-       strength = 65 
-       experience = 80
+       brigade_model = 3 
+       strength = 100 
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 168  } 
        name     = "291. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
 	   extra    = tank_destroyer
-       brigade_model = 2 
-       strength = 65 
-       experience = 80
+       brigade_model = 3 
+       strength = 75 
+       experience = 30
       }
 	     division = 
      { id       = {  type = 14500 id = 238  } 
        name     = "92. Grenadier-Brigade (mot)" 
        type     = motorized 
-       model    = 2 
-       strength = 40
-       max_strength = 40 
+       model    = 3
+       strength = 80
        extra    = artillery
-       brigade_model = 10
-       experience = 80
+       brigade_model = 11
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 169  } 
        name     = "342. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
 	   extra    = artillery
-       brigade_model = 10 
-       strength = 65 
-       experience = 80
+       brigade_model = 11 
+       strength = 75
+       experience = 10
       }
        
     }
@@ -1842,87 +1774,86 @@ landunit =
      { id       = {  type = 14500 id = 426  } 
        name     = "A.O.K. 19" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 70 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 40
       }
         division = 
      { id       = {  type = 14500 id = 339  } 
        name     = "10. SS-Panzer-Div. 'Frundsberg'" 
        type     = armor 
-       model    = 2 
-       strength = 55 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 20
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
       }
 	 division = 
      { id       = {  type = 14500 id = 369  } 
        name     = "12. SS-Panzer-Div. 'Hitlerjugend'" 
        type     = armor 
-       model    = 2 
-       strength = 65
-       experience = 80
+       model    = 3 
+       strength = 75
+       experience = 40
        extra    = heavy_armor
-       brigade_model = 2
+       brigade_model = 3
       }
 	   division = 
      { id       = {  type = 14500 id = 376  } 
        name     = "1. SS-Leibstandarte Adolf Hitler" 
        type     = armor 
-       model    = 2 
-       strength = 80
-       experience = 80
+       model    = 3 
+       strength = 75
+       experience = 30
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
       }
 	 division = 
      { id       = {  type = 14500 id = 341  } 
        name     = "59. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 80
+       model    = 12 
+       strength = 75
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 342  } 
        name     = "176. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
 	   extra    = tank_destroyer
-       brigade_model = 2
-       strength = 70
-       experience = 80
+       brigade_model = 3
+       strength = 75
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 343  } 
        name     = "183. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 70
-       experience = 80
+       model    = 12 
+       strength = 100
+       experience = 15
       }
 	division = 
      { id       = {  type = 14500 id = 427  } 
        name     = "106. Panzer-Brigade" 
        type     = armor 
-       model    = 2 
-       strength = 40
-       max_strength = 40
-       experience = 80
+       model    = 3 
+       strength = 75
+       experience = 40
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
       }
      
      division = 
      { id       = {  type = 14500 id = 429  } 
        name     = "189. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65
-       experience = 80
+       model    = 12 
+       strength = 75
+       experience = 15
       }
        
     }
@@ -1936,79 +1867,78 @@ landunit =
      { id       = {  type = 14500 id = 217  } 
        name     = "A.O.K. 6" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
 	   division = 
      { id       = {  type = 14500 id = 10  } 
        name     = "140. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 60
+       model    = 12 
+       strength = 75
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 218  } 
        name     = "1. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 50 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 219  } 
        name     = "3. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 50 
+       model    = 3 
+       strength = 75 
        extra    = sp_artillery
-       brigade_model = 2
-       experience = 80
+       brigade_model = 3
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 220  } 
        name     = "6. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 50 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 221  } 
        name     = "8. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 50 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 222  } 
        name     = "23. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 50 
-       experience = 80
+       model    = 3 
+       strength = 75 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 223  } 
        name     = "4. Kavallerie-Brigade" 
        type     = cavalry 
        model    = 12 
-       strength = 40
-       max_strength = 40 
-       experience = 80
+       strength = 75
+       experience = 20
       }
      
      division = 
      { id       = {  type = 14500 id = 225  } 
        name     = "357. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 35 
-       experience = 80
+       model    = 12
+       strength = 100
+       experience = 15
       }
    
        
@@ -2021,37 +1951,37 @@ landunit =
      { id       = {  type = 14500 id = 204  } 
        name     = "211. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
        extra    = anti_air
-       brigade_model = 4 
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 213  } 
        name     = "24. Panzer-Division" 
        type     = armor 
-       model    = 1 
+       model    = 3 
        strength = 80 
        extra    = heavy_armor
-       brigade_model = 3 
-       experience = 80
+       brigade_model = 4 
+       experience = 40
       }
      division = 
      { id       = {  type = 14500 id = 214  } 
        name     = "46. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
+       experience = 15
       }
      division = 
      { id       = {  type = 14500 id = 215  } 
        name     = "18. SS-Pz.Gr.Div. 'Horst Wessel'" 
        type     = mechanized 
-       model    = 0 
-       strength = 70 
-       experience = 80
+       model    = 1 
+       strength = 75 
+       experience = 25
       }
     
        
@@ -2066,27 +1996,25 @@ landunit =
      { id       = {  type = 14500 id = 319  } 
        name     = "70. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
 	   extra    = tank_destroyer
-       brigade_model = 2
-       strength = 65 
-       experience = 80
+       brigade_model = 3
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 321  } 
        name     = "604. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
 	   extra    = artillery
-       brigade_model = 10
-       strength = 65 
-       experience = 80
+       brigade_model = 11
+       strength = 25 
       }
 	  division = 
      { id       = {  type = 14500 id = 313  } 
        name     = "233. Reserve-Panzer-Division" 
        type     = armor 
-       model    = 1 
+       model    = 3 
        strength = 10
       }
     }
@@ -2100,57 +2028,52 @@ landunit =
      { id       = {  type = 14500 id = 329  } 
        name     = "Fsch. A.O.K. 1" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
       }
      division = 
      { id       = {  type = 14500 id = 330  } 
        name     = "7. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 50 
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 331  } 
        name     = "606. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
 	   extra    = artillery
-       brigade_model = 10
-       strength = 65 
-       experience = 80
+       brigade_model = 11
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 332  } 
        name     = "84. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 60
-       experience = 80
+       model    = 12 
+       strength = 25
       }
      division = 
      { id       = {  type = 14500 id = 333  } 
        name     = "180. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
 	   extra    = tank_destroyer
-       brigade_model = 2 
-       strength = 60
-       experience = 80
+       brigade_model = 3 
+       strength = 25
       }
      division = 
      { id       = {  type = 14500 id = 334  } 
        name     = "190. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
 	   extra    = artillery
-       brigade_model = 10
-       strength = 60
-       experience = 80
+       brigade_model = 11
+       strength = 25
       }
        
     }
@@ -2162,9 +2085,9 @@ landunit =
      { id       = {  type = 14500 id = 393  } 
        name     = "5. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
-       strength = 65
-       experience = 80
+       model    = 3
+       strength = 50
+       experience = 20
         
       }
      
@@ -2172,9 +2095,9 @@ landunit =
      { id       = {  type = 14500 id = 395  } 
        name     = "Führer-Grenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 75 
-       experience = 80
+       model    = 1 
+       strength = 25 
+       experience = 20
         
       }
        
@@ -2187,32 +2110,29 @@ landunit =
      { id       = {  type = 14500 id = 42  } 
        name     = "30. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 25 
 	   extra    = artillery
-       brigade_model = 10
-       experience = 80
+       brigade_model = 11
       }
     
      division = 
      { id       = {  type = 14500 id = 44  } 
        name     = "132. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12
+       strength = 25 
 	   extra    = artillery
-       brigade_model = 10
-       experience = 80
+       brigade_model = 11
       }
 	      division = 
      { id       = {  type = 14500 id = 46  } 
        name     = "14. Panzer-Division" 
        type     = armor 
-       model    = 1 
-       strength = 80 
+       model    = 3 
+       strength = 25
        extra    = heavy_armor
-       brigade_model = 3 
-       experience = 80
+       brigade_model = 4 
       }
 
      
@@ -2228,35 +2148,34 @@ landunit =
      { id       = {  type = 14500 id = 76  } 
        name     = "7. Panzer-Division" 
        type     = armor 
-       model    = 2 
+       model    = 3 
        strength = 50 
-       experience = 80
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 77  } 
        name     = "18. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 50
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 78  } 
        name     = "605. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 50 
 	   extra    = tank_destroyer
-       brigade_model = 2
-       experience = 80
+       brigade_model = 3
       }
      division = 
      { id       = {  type = 14500 id = 79  } 
        name     = "20. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 70 
-       experience = 80
+       model    = 3 
+       strength = 50 
+       experience = 20
       }
     }
 	  # 8th Army
@@ -2269,18 +2188,18 @@ landunit =
      { id       = {  type = 14500 id = 207  } 
        name     = "A.O.K. 8" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 209  } 
        name     = "15. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 50 
        experience = 80
       }
 	
@@ -2288,9 +2207,8 @@ landunit =
      { id       = {  type = 14500 id = 210  } 
        name     = "76. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
        
     }
@@ -2305,43 +2223,41 @@ landunit =
      { id       = {  type = 14500 id = 323  } 
        name     = "A.O.K. 25" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 324  } 
        name     = "2. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 50 
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 325  } 
        name     = "6. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 50
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 326  } 
        name     = "346. Infanterie-Division" 
        type     = infantry 
        model    = 11 
-       strength = 80
-       experience = 80
+       strength = 50
       }
      division = 
      { id       = {  type = 14500 id = 327  } 
        name     = "711. Infanterie-Division" 
        type     = infantry 
        model    = 11 
-       strength = 80
-       experience = 80
+       strength = 50
       }
        
     }
@@ -2354,9 +2270,8 @@ landunit =
      { id       = {  type = 14500 id = 303  } 
        name     = "356. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
        
     }
@@ -2368,33 +2283,29 @@ landunit =
      { id       = {  type = 14500 id = 296  } 
        name     = "29. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 297  } 
        name     = "90. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 298  } 
        name     = "278. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 299  } 
        name     = "715. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50
       }
        
     }
@@ -2408,28 +2319,26 @@ landunit =
      { id       = {  type = 14500 id = 161  } 
        name     = "Pz. A.O.K. 4" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      
      division = 
      { id       = {  type = 14500 id = 163  } 
        name     = "168. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 164  } 
        name     = "304. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -2443,31 +2352,29 @@ landunit =
      { id       = {  type = 14500 id = 119  } 
        name     = "A.O.K. 2" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 120  } 
        name     = "14. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80 
+       model    = 12 
+       strength = 50 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
       }
      division = 
      { id       = {  type = 14500 id = 122  } 
        name     = "292. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 50 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3
       }
        
     }
@@ -2479,51 +2386,45 @@ landunit =
      { id       = {  type = 14500 id = 154  } 
        name     = "602. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 155  } 
        name     = "608. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 156  } 
        name     = "344. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 80
+       model    = 12 
+       strength = 50
       }
      division = 
      { id       = {  type = 14500 id = 157  } 
        name     = "19. Panzer-Division" 
        type     = armor 
-       model    = 1 
+       model    = 3 
        strength = 45 
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 158  } 
        name     = "25. Panzer-Division" 
        type     = armor 
-       model    = 2 
+       model    = 3 
        strength = 65 
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 159  } 
        name     = "10. SS-Panzer-Div. 'Frundsberg'" 
        type     = armor 
-       model    = 2 
+       model    = 3
        strength = 55 
-       experience = 80
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
       }
        
     }
@@ -2537,53 +2438,48 @@ landunit =
      { id       = {  type = 14500 id = 282  } 
        name     = "A.O.K. 10" 
        type     = hq 
-       model    = 4 
+       model    = 5
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
 	division = 
      { id       = {  type = 14500 id = 34  } 
        name     = "32. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65
-       experience = 80
       }  
      division = 
      { id       = {  type = 14500 id = 36  } 
        name     = "11. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
        extra    = artillery
-       brigade_model = 10
-       experience = 80
+       brigade_model = 11
       }
      division = 
      { id       = {  type = 14500 id = 283  } 
        name     = "26. Panzer-Division" 
        type     = armor 
-       model    = 1 
+       model    = 3 
        strength = 50 
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 284  } 
        name     = "98. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
       division = 
      { id       = {  type = 14500 id = 178  } 
        name     = "371. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
       }
        
     }
@@ -2597,39 +2493,36 @@ landunit =
      { id       = {  type = 14500 id = 97  } 
        name     = "A.O.K. 4" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
 	    division = 
      { id       = {  type = 14500 id = 87  } 
        name     = "56. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
       }
      division = 
      { id       = {  type = 14500 id = 98  } 
        name     = "5. Panzer-Division" 
        type     = armor 
-       model    = 1 
+       model    = 3 
        strength = 50 
-       experience = 80
       }
      division = 
      { id       = {  type = 14500 id = 99  } 
        name     = "Fallschirm Pz-Div. 'Hermann Göring'" 
        type     = armor 
-       model    = 2 
-       strength = 70 
+       model    = 3 
+       strength = 25 
        extra    = heavy_armor
-       brigade_model = 3 
-       experience = 80
+       brigade_model = 4 
       }
        
     }
@@ -2642,57 +2535,53 @@ landunit =
      { id       = {  type = 14500 id = 147  } 
        name     = "601. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
 	   division = 
      { id       = {  type = 14500 id = 139  } 
        name     = "251. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 142  } 
        name     = "73. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 148  } 
        name     = "603. z.b.V. Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50 
       }
      division = 
      { id       = {  type = 14500 id = 150  } 
        name     = "16. Panzer-Division" 
        type     = armor 
-       model    = 1 
+       model    = 3 
        strength = 35 
-       experience = 80
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 151  } 
        name     = "17. Panzer-Division" 
        type     = armor 
-       model    = 2 
+       model    = 3 
        strength = 50 
-       experience = 80
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 152  } 
        name     = "20. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 50 
+       experience = 20
       }
        
     }
@@ -2704,25 +2593,22 @@ landunit =
      { id       = {  type = 14500 id = 436  } 
        name     = "159. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 70
-       experience = 80
+       model    = 12 
+       strength = 25
       }
      division = 
      { id       = {  type = 14500 id = 437  } 
        name     = "269. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65
-       experience = 80
+       model    = 12 
+       strength = 25
       }
      division = 
      { id       = {  type = 14500 id = 438  } 
        name     = "338. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 80
+       model    = 12 
+       strength = 25
       }
        
     }
@@ -2736,27 +2622,25 @@ landunit =
      { id       = {  type = 14500 id = 279  } 
        name     = "A.O.K. 14" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 280  } 
        name     = "232. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
 	    division = 
      { id       = {  type = 14500 id = 354  } 
        name     = "12. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25
         
       }
        
@@ -2769,31 +2653,31 @@ landunit =
      { id       = {  type = 14500 id = 372  } 
        name     = "2. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 70 
-       experience = 80
+       model    = 3 
+       strength = 30 
+       experience = 20
        extra    = tank_destroyer
-       brigade_model = 2
+       brigade_model = 3
         
       }
      division = 
      { id       = {  type = 14500 id = 373  } 
        name     = "9. Panzer-Division" 
        type     = armor 
-       model    = 2 
-       strength = 70 
-       experience = 80
+       model    = 3 
+       strength = 30 
+       experience = 20
        extra    = heavy_armor
-       brigade_model = 2
+       brigade_model = 3
         
       }
      division = 
      { id       = {  type = 14500 id = 374  } 
        name     = "116. Panzer-Division" 
        type     = armor 
-       model    = 1 
-       strength = 65 
-       experience = 80
+       model    = 3 
+       strength = 30
+       experience = 20
         
       }
        
@@ -2806,31 +2690,31 @@ landunit =
      { id       = {  type = 14500 id = 380  } 
        name     = "130. Panzer-Lehr-Division" 
        type     = armor 
-       model    = 2 
-       strength = 75
-       experience = 80
+       model    = 3 
+       strength = 50
+       experience = 20
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
         
       }
      division = 
      { id       = {  type = 14500 id = 381  } 
        name     = "Panzer-Führerbegleitdivision" 
        type     = armor 
-       model    = 2 
-       strength = 75
-       experience = 80
+       model    = 3 
+       strength = 25
+       experience = 20
        extra    = sp_artillery
-       brigade_model = 2
+       brigade_model = 3
         
       }
      division = 
      { id       = {  type = 14500 id = 382  } 
        name     = "15. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 25 
+       experience = 20
         
       }
        
@@ -2845,29 +2729,29 @@ landunit =
      { id       = {  type = 14500 id = 384  } 
        name     = "A.O.K. 7" 
        type     = hq 
-       model    = 4 
+       model    = 5
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
         
       }
      division = 
      { id       = {  type = 14500 id = 385  } 
        name     = "11. Panzer-Division" 
        type     = armor 
-       model    = 1 
-       strength = 70 
-       experience = 80
+       model    = 3 
+       strength = 50 
+       experience = 40
         
       }
 	  division = 
      { id       = {  type = 14500 id = 430  } 
        name     = "198. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
+       experience = 20
       }
        
     }  
@@ -2881,30 +2765,28 @@ landunit =
      { id       = {  type = 14500 id = 180  } 
        name     = "Pz. A.O.K. 1" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
 	   division = 
      { id       = {  type = 14500 id = 377  } 
        name     = "3. Panzergrenadier-Division" 
        type     = mechanized 
-       model    = 0 
-       strength = 65 
-       experience = 80
+       model    = 1 
+       strength = 50 
         
       }
      division = 
      { id       = {  type = 14500 id = 378  } 
        name     = "26. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12
+       strength = 50 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
         
       }
        
@@ -2918,27 +2800,25 @@ landunit =
      { id       = {  type = 14500 id = 81  } 
        name     = "Pz. A.O.K. 3" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 85  } 
        name     = "69. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 50
       }
 	  division = 
      { id       = {  type = 14500 id = 277  } 
        name     = "148. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80
-       experience = 80
+       model    = 12 
+       strength = 50
       }
        
     }
@@ -2950,57 +2830,52 @@ landunit =
      { id       = {  type = 14500 id = 290  } 
        name     = "1. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
+       model    = 3 
        strength = 65 
-       experience = 80
+       experience = 20
       }
 	    division = 
      { id       = {  type = 14500 id = 287  } 
        name     = "4. Fallschirmjäger-Division" 
        type     = paratrooper 
-       model    = 2 
+       model    = 3 
        strength = 65 
-       experience = 80
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 288  } 
        name     = "94. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 80 
-       experience = 80
+       model    = 12 
+       strength = 25
       }
       division = 
      { id       = {  type = 14500 id = 188  } 
        name     = "75. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 292  } 
        name     = "65. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 293  } 
        name     = "334. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 294  } 
        name     = "362. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -3012,18 +2887,17 @@ landunit =
      { id       = {  type = 14500 id = 338  } 
        name     = "A.O.K. 15" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 65 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
       }
      division = 
      { id       = {  type = 14500 id = 246  } 
        name     = "181. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 75 
+       model    = 12 
+       strength = 50 
        experience = 80
       }
      division = 
@@ -3031,8 +2905,7 @@ landunit =
        name     = "264. Infanterie-Division" 
        type     = infantry 
        model    = 11 
-       strength = 75 
-       experience = 80
+       strength = 50 
       }
        
     }
@@ -3044,27 +2917,25 @@ landunit =
      { id       = {  type = 14500 id = 116  } 
        name     = "Panzergrenadier-Div. 'Hermann Göring'" 
        type     = mechanized 
-       model    = 0 
-       strength = 70 
-       experience = 80
+       model    = 1 
+       strength = 30 
+       experience = 20
       }
 	   division = 
       { id       = {  type = 14500 id = 110  } 
        name     = "21. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65
+       model    = 12 
+       strength = 50
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3
       }
 	   division = 
 	    { id       = {  type = 14500 id = 275  } 
        name     = "34. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 65 
-       experience = 80
       }
        
     }
@@ -3076,35 +2947,31 @@ landunit =
      { id       = {  type = 14500 id = 177  } 
        name     = "359. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division =   
       { id       = {  type = 14500 id = 125  } 
        name     = "7. Infanterie-Division" 
        type     = infantry
-		model    = 11 	   
-      strength = 65 
+		model    = 12 	   
+      strength = 25 
        extra    = tank_destroyer
-       brigade_model = 2 
-       experience = 80
+       brigade_model = 3 
       }
      division = 
      { id       = {  type = 14500 id = 126  } 
        name     = "129. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
      division = 
      { id       = {  type = 14500 id = 127  } 
        name     = "299. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -3117,28 +2984,28 @@ landunit =
      { id       = {  type = 14500 id = 353  } 
        name     = "Pz. A.O.K. 6" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
         
       }
    division = 
      { id       = {  type = 14500 id = 346  } 
        name     = "353. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 70
-       experience = 80
+       model    = 12 
+       strength = 75
+       experience = 20
       }
      	  division = 
      { id       = {  type = 14500 id = 245  } 
        name     = "22. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 70 
-       experience = 80
+       model    = 12 
+       strength = 75 
+       experience = 20
       }
        
     }
@@ -3153,54 +3020,49 @@ landunit =
      { id       = {  type = 14500 id = 368  } 
        name     = "Pz. A.O.K. 5" 
        type     = hq 
-       model    = 4 
+       model    = 5
        strength = 75 
        extra    = anti_air
-       brigade_model = 4
-       experience = 80
+       brigade_model = 5
+       experience = 20
         
       }
   division = 
      { id       = {  type = 14500 id = 316  } 
        name     = "6. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
+       model    = 12 
+       strength = 25
        extra    = artillery
-       brigade_model = 10
-       experience = 60
+       brigade_model = 11
       }
      division = 
      { id       = {  type = 14500 id = 307  } 
        name     = "710. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
 	division = 
      { id       = {  type = 14500 id = 306  } 
        name     = "237. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
 	division = 
      { id       = {  type = 14500 id = 700  } 
        name     = "23. Infanterie-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
 	division = 
      { id       = {  type = 14500 id = 703  } 
        name     = "182. Reserve-Division" 
        type     = infantry 
-       model    = 11 
-       strength = 65 
-       experience = 80
+       model    = 12 
+       strength = 25 
       }
        
     }
@@ -3213,30 +3075,25 @@ landunit =
      { id       = {  type = 14500 id = 19  } 
        name     = "14. Luftwaffen-Feld-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12
        strength = 70 
        max_strength = 70
-	   locked = yes
       }
 	       division = 
      { id       = {  type = 14500 id = 66  } 
        name     = "12. Luftwaffen-Feld-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 55 
        max_strength = 70
-       experience = 80
-	   locked = yes
       }
 	   division = 
      { id       = {  type = 14500 id = 71  } 
        name     = "21. Luftwaffen-Feld-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 55 
        max_strength = 70
-       experience = 80
-	   locked = yes
       }
 
        
@@ -3249,11 +3106,9 @@ landunit =
      { id       = {  type = 14500 id = 257  } 
        name     = "11. Luftwaffen-Feld-Division" 
        type     = infantry 
-       model    = 11 
+       model    = 12 
        strength = 60 
        max_strength = 70
-       experience = 80
-	   locked = yes
       }
     }
 landunit = 
@@ -3264,7 +3119,7 @@ landunit =
      { id       = {  type = 14500 id = 3934  } 
        name     = "25. Waffen-Gr.Div. d. SS 'Hunyadi'" 
        type     = motorized 
-       model    = 2 
+       model    = 3 
        strength = 65 
        experience = 20
       }
@@ -3272,7 +3127,7 @@ landunit =
      { id       = {  type = 14500 id = 707  } 
        name     = "26. Waffen-Gr.Div. d. SS 'Hungaria'"  
        type     = motorized 
-       model    = 2 
+       model    = 3 
        strength = 65 
        experience = 20
       }
@@ -3287,8 +3142,7 @@ landunit =
        name     = "Festungs-Kdr. Warschau" 
        type     = garrison 
        model    = 5 
-       strength = 65 
-       experience = 80
+       strength = 65
 	   locked = yes
       }
        
@@ -3303,10 +3157,9 @@ landunit =
        name     = "391. Sicherungs-Division" 
        type     = garrison 
        model    = 5 
-       strength = 40 
+       strength = 56 
        extra    = police
        brigade_model = 2
-       experience = 80
 	   locked = yes
       }
 	 }
@@ -3319,10 +3172,9 @@ landunit =
        name     = "286. Sicherungs-Division" 
        type     = garrison 
        model    = 5 
-       strength = 40 
+       strength = 65
        extra    = police
        brigade_model = 2
-       experience = 80
 	   locked = yes
       }
        
@@ -3341,7 +3193,6 @@ landunit =
        strength = 65 
 	   extra    = police
 	   brigade_model = 2
-       experience = 80
 	   locked = yes
       }
 	}
@@ -3358,7 +3209,6 @@ landunit =
        strength = 65 
 	   extra    = police
 	   brigade_model = 2
-       experience = 80
 	   locked = yes
       }
 	}
@@ -3375,7 +3225,6 @@ landunit =
        strength = 65 
 	   extra    = police
 	   brigade_model = 2
-       experience = 80
 	   locked = yes
       }
 	}
@@ -3392,7 +3241,6 @@ landunit =
        strength = 65 
 	   extra    = police
 	   brigade_model = 2
-       experience = 80
 	   locked = yes
       }
 	}
@@ -3406,11 +3254,11 @@ landunit =
      { id       = {  type = 14500 id = 51  } 
        name     = "A.O.K. 16" 
        type     = hq 
-       model    = 4 
+       model    = 5 
        strength = 75 
        extra    = anti_air
        brigade_model = 4
-       experience = 80
+       experience = 20
       }
      division = 
      { id       = {  type = 14500 id = 52  } 
@@ -3420,7 +3268,6 @@ landunit =
        strength = 40 
        extra    = police
        brigade_model = 2
-       experience = 80
 	    locked = yes
       }
      division = 
@@ -3431,7 +3278,6 @@ landunit =
        strength = 65 
        extra    = police
        brigade_model = 2
-       experience = 80
 	    locked = yes
       }
        
@@ -3449,7 +3295,6 @@ landunit =
        strength = 40 
        extra    = police
        brigade_model = 2
-       experience = 80
 	    locked = yes
       }
 }
@@ -3466,7 +3311,6 @@ landunit =
        strength = 40 
        extra    = police
        brigade_model = 2
-       experience = 80
 	   locked = yes
       }	}
 	
@@ -3480,8 +3324,8 @@ landunit =
      { id       = {  type = 14500 id = 710  } 
        name     = "27. SS-Freiw.-Div. 'Langemark'"  
        type     = motorized 
-       model    = 2 
-       strength = 90 
+       model    = 3 
+       strength = 50
       }
     }
 # Walloon Waffen-SS
@@ -3493,8 +3337,8 @@ landunit =
      { id       = {  type = 14500 id = 711  } 
        name     = "28. SS-Freiw.-Div. 'Wallonien'" 
        type     = motorized 
-       model    = 2 
-       strength = 90
+       model    = 3
+       strength = 50
       }
     }
 	
@@ -3509,24 +3353,21 @@ landunit =
        name     = "600. Russische Infanterie-Div."  
        type     = infantry 
        model    = 11
-       strength = 90 
-	   locked = yes
+       strength = 75 
       }
 	 division = 
      { id       = {  type = 14500 id = 716  } 
        name     = "650. Russische Infanterie-Div."  
        type     = infantry 
        model    = 11
-       strength = 90 
-	   locked = yes
+       strength = 75 
       }
 	 division = 
      { id       = {  type = 14500 id = 717  } 
        name     = "700. Russische Infanterie-Div."  
        type     = infantry 
        model    = 11
-       strength = 90 
-	   locked = yes
+       strength = 75 
       }
 }	
 ##########################################
@@ -3543,28 +3384,28 @@ landunit =
       name       = "Jagdgeschwader 300"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 602 }
       name       = "Jagdgeschwader 301"
       strength   = 80
       type       = multi_role
-      model      = 7 # Fw 190
+      model      = 9 # Fw 190
     }
     division =
     { id         = { type = 14500 id = 603 }
       name       = "Jagdgeschwader 400"
       strength   = 80
       type       = interceptor
-      model      = 17 # Me 163A
+      model      = 12 # Me 163A
     }
     division =
     { id         = { type = 14500 id = 604 }
       name       = "Kampfgeschwader 100"
       strength   = 80
       type       = tactical_bomber
-      model      = 8 # He 177A
+      model      = 10 # He 177A
       extra      = escort
       brigade_model = 2
     }
@@ -3573,7 +3414,7 @@ landunit =
       name       = "Kampfgeschwader 200"
       strength   = 100
       type       = tactical_bomber
-      model      = 7 # Various
+      model      = 9 # Various
       extra      = escort
       brigade_model = 2
     }
@@ -3582,64 +3423,56 @@ landunit =
       name       = "Nachtjagdgeschwader 1"
       strength   = 100
       type       = multi_role
-      model      = 7 # He 219A
-      experience = 60
+      model      = 9 # He 219A
     }
     division =
     { id         = { type = 14500 id = 607 }
       name       = "Nachtjagdgeschwader 2"
       strength   = 100
       type       = multi_role
-      model      = 6 # Ju 88
-      experience = 60
+      model      = 9 # Ju 88
     }
     division =
     { id         = { type = 14500 id = 608 }
       name       = "Nachtjagdgeschwader 3"
       strength   = 100
       type       = multi_role
-      model      = 5 # Bf 110G
-      experience = 60
+      model      = 9 # Bf 110G
     }
     division =
     { id         = { type = 14500 id = 609 }
       name       = "Nachtjagdgeschwader 4"
       strength   = 100
       type       = multi_role
-      model      = 5 # Bf 110G
-      experience = 60
+      model      = 9 # Bf 110G
     }
     division =
     { id         = { type = 14500 id = 610 }
       name       = "Nachtjagdgeschwader 5"
       strength   = 100
       type       = multi_role
-      model      = 5 # Bf 110G
-      experience = 60
+      model      = 9 # Bf 110G
     }
     division =
     { id         = { type = 14500 id = 611 }
       name       = "Nachtjagdgeschwader 6"
       strength   = 25
       type       = multi_role
-      model      = 5 # Bf 110G
-      experience = 60
+      model      = 9 # Bf 110G
     }
     division =
     { id         = { type = 14500 id = 612 }
       name       = "Nachtjagdgeschwader 11"
       strength   = 50
       type       = multi_role
-      model      = 5 # Bf 110
-      experience = 60
+      model      = 9 # Bf 110
     }
     division =
     { id         = { type = 14500 id = 613 }
       name       = "Nachtjagdgeschwader 100"
       strength   = 50
       type       = multi_role
-      model      = 5 # Bf 110
-      experience = 60
+      model      = 9 # Bf 110
     }
   }
   # 1ST AIR FLEET
@@ -3653,16 +3486,16 @@ landunit =
       name       = "JG 54 'Grünherz'"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 616 }
       name       = "Transportgeschwader 1"
       strength   = 80
       type       = transport_plane
-      model      = 1 # Ju 52
+      model      = 4 # Ju 52
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
   }
   # 2ND AIR FLEET
@@ -3676,7 +3509,7 @@ landunit =
       name       = "Sturzkampfgeschwader 3"
       strength   = 80
       type       = cas
-      model      = 3
+      model      = 5
     }
   }
   # 3RD AIR FLEET
@@ -3690,25 +3523,25 @@ landunit =
       name       = "KG 51 'Edelweiß'"
       strength   = 40
       type       = multi_role
-      model      = 8 # Me 262
+      model      = 9 # Me 262
     }
     division =
     { id         = { type = 14500 id = 621 }
       name       = "Lehrgeschwader 1"
       strength   = 100
       type       = tactical_bomber
-      model      = 7 # Ju 88A
+      model      = 9 # Ju 88A
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
     division =
     { id         = { type = 14500 id = 622 }
       name       = "KG 53 'Legion Condor'"
       strength   = 65
       type       = tactical_bomber
-      model      = 6 # He 111H
+      model      = 9 # He 111H
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
   }
   airunit =
@@ -3721,46 +3554,46 @@ landunit =
       name       = "JG 1 'Oesau'"
       strength   = 80
       type       = multi_role
-      model      = 6 # Fw 190D
+      model      = 9 # Fw 190D
     }
     division =
     { id         = { type = 14500 id = 625 }
       name       = "Jagdgeschwader 4"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 626 }
       name       = "JG 53 'Pik As'"
       strength   = 100
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 627 }
       name       = "JG 77 'Herz As'"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 628 }
       name       = "KG 2 'Holzhammer'"
       strength   = 45
       type       = tactical_bomber
-      model      = 8 # Ju 188
+      model      = 9 # Ju 188
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
     division =
     { id         = { type = 14500 id = 629 }
       name       = "Kampfgeschwader 66"
       strength   = 80
       type       = tactical_bomber
-      model      = 8 # Ju 188
+      model      = 9 # Ju 188
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
     division =
     { id         = { type = 14500 id = 630 }
@@ -3769,7 +3602,7 @@ landunit =
       type       = tactical_bomber
       model      = 9 # Ar 234A
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
   }
   airunit =
@@ -3782,23 +3615,23 @@ landunit =
       name       = "Jagdgeschwader 11"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109
+      model      = 12 # Bf 109
     }
     division =
     { id         = { type = 14500 id = 633 }
       name       = "Sturzkampfgeschwader 4"
       strength   = 100
       type       = cas
-      model      = 3 # Hs 129
+      model      = 5 # Hs 129
     }
     division =
     { id         = { type = 14500 id = 634 }
       name       = "Transportgeschwader 4"
       strength   = 80
       type       = transport_plane
-      model      = 1 # Ju 52
+      model      = 4 # Ju 52
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
   }
   airunit =
@@ -3811,28 +3644,28 @@ landunit =
       name       = "JG 2 'Richthofen'"
       strength   = 100
       type       = multi_role
-      model      = 7 # Fw 190D
+      model      = 9 # Fw 190D
     }
     division =
     { id         = { type = 14500 id = 637 }
       name       = "JG 3 'Udet'"
       strength   = 100
       type       = interceptor
-      model      = 10 # Bf 109
+      model      = 12 # Bf 109
     }
     division =
     { id         = { type = 14500 id = 638 }
       name       = "JG 26 'Schlageter'"
       strength   = 100
       type       = multi_role
-      model      = 7 # Fw 190D
+      model      = 9 # Fw 190D
     }
     division =
     { id         = { type = 14500 id = 639 }
       name       = "Jagdgeschwader 27"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
   }
   # 4TH AIR FLEET
@@ -3846,39 +3679,39 @@ landunit =
       name       = "Jagdgeschwader 76"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 642 }
       name       = "KG 4 'General Wever'"
       strength   = 80
       type       = tactical_bomber
-      model      = 6 # He 111H
+      model      = 9 # He 111H
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
     division =
     { id         = { type = 14500 id = 643 }
       name       = "Schlachtgeschwader 2"
       strength   = 80
       type       = multi_role
-      model      = 7 # Fw 190D
+      model      = 9 # Fw 190D
     }
     division =
     { id         = { type = 14500 id = 644 }
       name       = "Schnellkampfgeschwader 10"
       strength   = 80
       type       = multi_role
-      model      = 7 # Fw 190D
+      model      = 9 # Fw 190D
     }
     division =
     { id         = { type = 14500 id = 645 }
       name       = "Transportgeschwader 2"
       strength   = 80
       type       = transport_plane
-      model      = 1 # Ju 52
+      model      = 4 # Ju 52
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
   }
   # 5TH AIR FLEET
@@ -3892,23 +3725,23 @@ landunit =
       name       = "JG 5 'Eismeer'"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 648 }
       name       = "ZG 26 'Horst Wessel'"
       strength   = 80
       type       = multi_role
-      model      = 7 # Me 410
+      model      = 9 # Me 410
     }
     division =
     { id         = { type = 14500 id = 649 }
       name       = "KG 26 'Löwen'"
       strength   = 80
       type       = tactical_bomber
-      model      = 7 # Ju 88A
+      model      = 9 # Ju 88A
       extra      = escort
-      brigade_model = 2
+      brigade_model = 4
     }
   }
   # 6TH AIR FLEET
@@ -3922,21 +3755,21 @@ landunit =
       name       = "JG 51 'Mölders'"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 652 }
       name       = "Jagdgeschwader 52"
       strength   = 80
       type       = interceptor
-      model      = 10 # Bf 109G
+      model      = 12 # Bf 109G
     }
     division =
     { id         = { type = 14500 id = 653 }
       name       = "Schlachtgeschwader 1"
       strength   = 80
       type       = multi_role
-      model      = 7 # Fw 190D
+      model      = 9 # Fw 190D
     }
   }
   airunit =
@@ -3949,14 +3782,14 @@ landunit =
       name       = "Schlachtgeschwader 3"
       strength   = 80
       type       = multi_role
-      model      = 7 # Fw 190D
+      model      = 9 # Fw 190D
     }
     division =
     { id         = { type = 14500 id = 656 }
       name       = "Sturzkampfgeschwader 77"
       strength   = 80
       type       = cas
-      model      = 2 # Ju 87G
+      model      = 5 # Ju 87G
     }
   }
   # V2 BATTERIES
