@@ -548,8 +548,6 @@ techapps = { 1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 11
 			model = 1
 			id = { type = 30304 id = 25 }
 			name = "4th Mech Division"
-			extra = anti_air
-			brigade_model = 4
 			experience = 15
 		}
 		division = {
