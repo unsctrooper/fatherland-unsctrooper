@@ -1,0 +1,522 @@
+event = {
+	id = 800
+	random = no
+	country = ENG
+	
+	decision = {
+		year = 1948					
+	}
+	decision_trigger = { 
+		year = 1948	
+	}
+	trigger = {
+        year = 1948
+	}
+	
+	name = "800NAME"
+	desc = "800DESC"
+	style = 2
+	picture = "atomic_research"
+	decision_picture = "decision_atomic_research"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "800A"
+		command = { type = relation which = USA value = 10 }
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -10000 }
+		command = { type = building_prod_mod which = nuclear_reactor value = 50 }
+		command = { type = gain_tech which = 5500 }
+		command = { type = gain_tech which = 5510 }
+		command = { type = gain_tech which = 5520 }
+		command = { type = gain_tech which = 5530 }
+		command = { type = gain_tech which = 5540 }
+		command = { type = setflag which = engnuke }	
+		command = { type = trigger which = 801 }
+	}
+}
+event = {
+	id = 801
+	random = no
+	save_date = yes
+	country = GER
+
+	name = "801NAME"
+	desc = "801DESC" 
+	style = 2
+	picture = "atomic_research"
+
+	action = {
+		name = "801A"
+		ai_chance = 90
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -10000 } 
+		command = { type = building_prod_mod which = nuclear_reactor value = 50 }
+		command = { type = gain_tech which = 5500 }
+		command = { type = gain_tech which = 5510 }
+		command = { type = gain_tech which = 5520 }
+		command = { type = gain_tech which = 5530 }
+		command = { type = gain_tech which = 5540 }
+		command = { type = setflag which = gernuke }	
+	}
+	action = {
+		name = "801B"
+		ai_chance = 10
+		command = { type = dissent value = 10 }
+	}
+}
+event = {
+	id = 802
+	random = no
+	country = GER
+
+	trigger = {
+	event = { id = 801 days = 60 } 
+	flag = gernuke
+	}
+
+	name = "802NAME"
+	desc = "802DESC" 
+	style = 2
+	picture = "atomic_research"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "802A"
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -10000 } 
+		command = { type = construct which = nuclear_reactor where = 133 value = 2 }
+	}
+}
+event = {
+	id = 803
+	random = no
+	save_date = yes
+	country = ENG
+	
+	decision = {
+		event = 802				
+	}
+	decision_trigger = { 
+		event = 802		
+		supplies = 1000
+	}
+	trigger = {
+		event = 802		
+		supplies = 1000
+	}
+	
+	name = "803NAME"
+	desc = "803DESC"
+	style = 2
+	picture = "resistance"
+	decision_picture = "decision_atomic_research"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "803A"
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -1000 }	
+	}
+}
+event = {
+	id = 804
+	random = no
+	country = SCH
+
+	trigger = {
+	event = { id = 803 days = 30 } 
+	}
+
+	name = "804NAME"
+	desc = "804DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "804A"
+		ai_chance = 90
+		command = { type = money value = 1000 }
+		command = { type = supplies value = 1000 } 
+	}
+	action = {
+		name = "804B"
+		ai_chance = 10
+		command = { type = trigger which = 805 }
+	}
+}
+event = {
+	id = 805
+	random = no
+	save_date = yes
+	country = ENG
+
+	name = "805NAME"
+	desc = "805DESC" 
+	style = 2
+	picture = "resistance"
+
+	action = {
+		name = "805A"
+		command = { type = money value = -100 }	
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 806
+	random = no
+	country = ENG
+	
+	decision = {
+		event = 804
+        NOT = { event = 805 }		
+	}
+	decision_trigger = { 	
+		event = 804
+        NOT = { event = 805 }		
+		supplies = 1000
+	}
+	trigger = {
+		event = 804
+        NOT = { event = 805 }		
+		supplies = 1000
+	}
+	
+	name = "806NAME"
+	desc = "806DESC"
+	style = 2
+	picture = "resistance"
+	decision_picture = "decision_atomic_research"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "806A"
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -1000 }	
+		command = { type = trigger which = 807 }
+	}
+}
+event = {
+	id = 807
+	random = no
+	save_date = yes
+	country = GER
+	one_action = yes
+
+	name = "807NAME"
+	desc = "807DESC" 
+	style = 2
+	picture = "resistance"
+
+	action = {
+		name = "807A"
+		ai_chance = 50
+		command = { type = trigger which = 808 }
+		command = { type = dissent value = 2 }
+		command = { type = construct which = nuclear_reactor where = 133 value = -1 }
+
+	}
+	action = {
+		name = "807B"
+		ai_chance = 50
+		command = { type = trigger which = 809 }
+		command = { type = dissent value = -5 }
+	}
+}
+event = {
+	id = 808
+	random = no
+	country = ENG
+	
+	name = "808NAME"
+	desc = "808DESC"
+	style = 2
+	picture = "resistance"
+
+	action_a = {
+		name = "808A"
+		command = { type = dissent value = -5 }
+	}
+}
+event = {
+	id = 809
+	random = no
+	country = ENG
+	
+	name = "809NAME"
+	desc = "809DESC"
+	style = 2
+	picture = "resistance"
+
+	action_a = {
+		name = "809A"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 810
+	random = no
+	country = GER
+	save_date = yes
+	
+	decision = {
+		event = 807
+	}
+	decision_trigger = { 
+		event = 807
+		supplies = 1000
+	}
+	trigger = {
+		event = 807
+		supplies = 1000
+	}
+	
+	name = "810NAME"
+	desc = "810DESC"
+	style = 2
+	picture = "resistance"
+	decision_picture = "decision_atomic_research"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "810A"
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -1000 }	
+	}
+}
+event = {
+	id = 811
+	random = no
+	country = GER
+	
+	decision = {
+	event = 810
+	}
+	decision_trigger = { 
+	    event = { id = 810 days = 60 }
+		supplies = 1000
+	}
+	trigger = {
+	    event = { id = 810 days = 60 }
+		supplies = 1000
+	}
+	
+	name = "811NAME"
+	desc = "811DESC"
+	style = 2
+	picture = "resistance"
+	decision_picture = "decision_atomic_research"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "811A"
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -1000 }	
+		command = { type = trigger which = 812 }
+	}
+}
+event = {
+	id = 812
+	random = no
+	save_date = yes
+	country = ENG
+	one_action = yes
+
+	name = "812NAME"
+	desc = "812DESC" 
+	style = 2
+	picture = "resistance"
+
+	action = {
+		name = "812A"
+		ai_chance = 30
+		command = { type = trigger which = 813 }
+		command = { type = dissent value = 5 }
+		command = { type = construct which = nuclear_reactor where = 28 value = -1 }
+
+	}
+	action = {
+		name = "812B"
+		ai_chance = 70
+		command = { type = trigger which = 814 }
+		command = { type = dissent value = 1 }
+	}
+}
+event = {
+	id = 813
+	random = no
+	country = GER
+	
+	name = "813NAME"
+	desc = "813DESC"
+	style = 2
+	picture = "resistance"
+
+	action_a = {
+		name = "813A"
+		command = { type = dissent value = -5 }
+	}
+}
+event = {
+	id = 814
+	random = no
+	country = GER
+	
+	name = "814NAME"
+	desc = "814DESC"
+	style = 2
+	picture = "resistance"
+
+	action_a = {
+		name = "814A"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 815
+	random = no
+	country = GER
+	save_date = yes
+	
+	decision = {
+		event = 807
+	}
+	decision_trigger = { 
+		event = 807
+		supplies = 1000
+	}
+	trigger = {
+		event = 807
+		supplies = 1000
+	}
+
+	
+	name = "815NAME"
+	desc = "815DESC"
+	style = 2
+	picture = "resistance"
+	decision_picture = "decision_atomic_research"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action_a = {
+		name = "815A"
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -1000 }	
+	}
+}
+event = {
+	id = 816
+	random = no
+	country = SCH
+
+	trigger = {
+	event = { id = 815 days = 30 } 
+	}
+
+	name = "816NAME"
+	desc = "816DESC" 
+	style = 2
+	picture = "resistance"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "816A"
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 817 }
+		command = { type = trigger which = 818 }
+	}
+}
+event = {
+	id = 817
+	random = no
+	country = ENG
+	save_date = yes
+
+	name = "817NAME"
+	desc = "817DESC" 
+	style = 2
+	picture = "resistance"
+
+	action = {
+		name = "817A"
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+	}
+    action = {
+		name = "817A"
+		ai_chance = 50
+		command = { type = dissent value = 1 }
+	}
+}
+event = {
+	id = 818
+	random = no
+	country = GER
+
+	name = "818NAME"
+	desc = "818DESC" 
+	style = 2
+	picture = "resistance"
+
+	action = {
+		name = "818A"
+		command = { type = dissent value = 1 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = SCH }
+	}
+}
+event = {
+	id = 819
+	random = no
+	country = GER
+
+	decision = {
+		event = 817
+	}
+	decision_trigger = { 
+	event = { id = 817 days = 30 } 
+	}
+	trigger = {
+	event = { id = 817 days = 30 } 
+	}
+
+	name = "819NAME"
+	desc = "819DESC" 
+	style = 2
+	picture = "reichstag"
+
+	action = {
+		name = "819A"
+			command = { type = end_non_aggression which = SCH where = GER } 
+		    command = { type = war which = SCH }
+	}
+}
+
+#Nuke Moscow!
