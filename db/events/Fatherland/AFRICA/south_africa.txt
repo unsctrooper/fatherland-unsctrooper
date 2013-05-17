@@ -260,8 +260,13 @@ event = {
 		year = 1952		
 	}
 	decision_trigger = { 
+
 		year = 1952	
 		relation = { which = SAF value = 150 }
+		NOT = {
+			alliance = { country = SAF country = ENG }
+		}
+
 	}
 	
 	name = "Invite the new South Africa Republican Government at Berlin"
@@ -321,9 +326,6 @@ event = {
 	picture = "congress"	
 	decision_picture = "decision_congress"
 	
-	date = { day = 5 month = january year = 1952 }
-	offset = 30
-	deathdate = { day = 30 month = december year = 1952 }
 
 	action = {
 		name = "Focus on a proposal of a full friendship" #Propose a full friendship (non-agression pact, military access)
