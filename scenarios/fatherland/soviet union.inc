@@ -120,8 +120,6 @@ rare_materials         = 5000
 
 1280 # Occupied East Turkestan
 
-1219 #Port Arthur
-
 1119 # Tannu Tuva
   }  
 
@@ -159,8 +157,6 @@ rare_materials         = 5000
 
 1542 #South Sahalin
 1543 # Kurils
-
-1219 #Port Arthur
 
 1119 # Tannu Tuva
 
