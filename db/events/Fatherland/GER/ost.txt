@@ -4032,8 +4032,8 @@ event = {
 			}	
 		}
 	}	
-	name = "229NAME"
-	desc = "229DESC"
+	name = "279NAME"
+	desc = "279DESC"
 	style = 2
 	picture = "news_paper"	
 
@@ -4076,7 +4076,7 @@ event = {
 		}
 	}	
 	name = "280NAME"
-	desc = EVT_280_DESC
+	desc = 281DESC
 	style = 2
 	picture = "gorals"	
 
@@ -4126,7 +4126,7 @@ event = {
 				}				
 	}	
 	 }
-	name = "281NAME"
+	name = "280NAME"
 	desc = "281DESC"
 	style = 2
 	picture = "news_paper"	
@@ -4214,8 +4214,8 @@ event = {
 		}
 	}	
 	
-	name = "283NAME"
-	desc = "283DESC"
+	name = EVT_283_NAME
+	desc = EVT_283_DESC
 	style = 2
 	picture = "news_paper"	
 
@@ -4254,8 +4254,8 @@ event = {
 		}
 	}	
 	
-	name = "284NAME"
-	desc = "284DESC"
+	name = EVT_284_NAME
+	desc = EVT_284_DESC
 	style = 2
 	picture = "news_paper"	
 
@@ -4278,8 +4278,8 @@ event = {
 	
 	# Triggered by 228
 	
-	name = "284NAME"
-	desc = "285DESC"
+	name = EVT_285_NAME
+	desc = EVT_285_DESC
   	style = 2
   	picture = "news_paper"
 	
@@ -4316,8 +4316,8 @@ event = {
 		}
 	}	
 	
-	name = "286NAME"
-	desc = "286DESC"
+	name = EVT_286_NAME
+	desc = EVT_286_DESC
 	style = 2
 	picture = "news_paper"	
 
@@ -4364,8 +4364,8 @@ event = {
 		}
 	}	
 	
-	name = "287NAME"
-	desc = "287DESC"
+	name = EVT_287_NAME
+	desc = EVT_287_DESC
 	style = 2
 	picture = "news_paper"	
 
@@ -4433,8 +4433,8 @@ event = {
 		}
 	}	
 	
-	name = 288NAME
-	desc = 288DESC
+	name = EVT_288_NAME
+	desc = EVT_288_DESC
 	style = 2
 	picture = "news_paper"	
 
@@ -4473,8 +4473,8 @@ event = {
 		}
 	}	
 	
-	name = 289NAME
-	desc = 289DESC
+	name = EVT_289_NAME
+	desc = EVT_289_DESC
 	style = 2
 	picture = "resistance"	
 
@@ -4515,8 +4515,8 @@ event = {
 		}
 	}	
 	
-	name = 290NAME
-	desc = 290DESC
+	name = EVT_290_NAME
+	desc = EVT_290_DESC
 	style = 2
 	picture = "resistance"	
 
@@ -4555,8 +4555,8 @@ event = {
 		}
 	}	
 	
-	name = 291NAME
-	desc = 291DESC
+	name = EVT_291_NAME
+	desc = EVT_291_DESC
 	style = 2
 	picture = "invest_infrastructures"	
 
@@ -4611,8 +4611,8 @@ event = {
 		}
 	}	
 	
-	name = 292NAME
-	desc = 292DESC
+	name = EVT_292_NAME
+	desc = EVT_292_DESC
 	style = 2
 	picture = "invest_infrastructures"	
 
@@ -4678,8 +4678,8 @@ event = {
 		}
 	}	
 	
-	name = 293NAME
-	desc = 293DESC
+	name = EVT_293_NAME
+	desc = EVT_293_DESC
 	style = 2
 	picture = "Rhineland"	
 
@@ -4724,8 +4724,8 @@ event = {
 		}
 	}	
 	
-	name = 294NAME
-	desc = 294DESC
+	name = EVT_294_NAME
+	desc = EVT_294_DESC
 	style = 2
 	picture = "Rheinland"	
 
