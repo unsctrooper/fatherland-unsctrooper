@@ -382,7 +382,6 @@ event = {
 		command = { type = secedeprovince which = MOR value = 718 }
 		command = { type = secedeprovince which = MOR value = 722 } 
 		command = { type = dissent value = 10 }
-		command = { type = trigger which = 321 }
 		}
 }
 event = {
@@ -392,6 +391,14 @@ event = {
 	style = 2
 	picture = "news_paper"   
 
+	trigger = {
+			event = { id = 320 days = 1 } 
+	}
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1963 }
+	
 	name = "Independance!"
 	desc = "We have revolted and are fighting for our future! Death to the colonialists oppressors!"
 
