@@ -270,7 +270,7 @@ inventions = { 3000027 3000028 }
 		Division = {  
 			id   = {  
 				type = 30501 
-				id = 3  
+				id = 2 
 			} 
 			name = "2. Nayramdakh Kavaleriyskaya Div." 
 			strength     = 10
@@ -283,7 +283,7 @@ inventions = { 3000027 3000028 }
 		name = "Kossacka Militija 1" 
 		id = {  
 			type = 30501 
-			id = 1  
+			id = 3 
 		} 
 
      Division = 
@@ -299,10 +299,10 @@ inventions = { 3000027 3000028 }
 		name = "Kossacka Militija 2" 
 		id = {  
 			type = 30501 
-			id = 1  
+			id = 5  
 		} 
      Division = 
-     {  id   = {  type = 30501 id = 5  } 
+     {  id   = {  type = 30501 id = 6  } 
        name = "4. Nayramdakh Div." 
 	   strength     = 10
        type = militia 
