@@ -1,4 +1,4 @@
-Fatherland Alpha 0.31
+Fatherland Beta 1.0
 A post-ww2 scenario with Germany victorious.
 
 Compatibility:
