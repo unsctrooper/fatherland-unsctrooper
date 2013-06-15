@@ -9,10 +9,9 @@
   
  country = 
  { 
- tag                    = U05
+ tag                    = HOL
  ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }	
-regular_id             = HOL 
-   capital                = 1596 
+   capital                = 1647
    manpower               = 25 
    # Resource Reserves 
 energy                 = 1740
@@ -187,16 +186,16 @@ inventions = { 3000027 }
      defense_lobby     = 6 
      interventionism   = 2 
     } 
-  # headofstate            = {  type = 9 id = 15001  } 
-  # headofgovernment       = {  type = 9 id = 15021  } 
-  # foreignminister        = {  type = 9 id = 15038  } 
-  # armamentminister       = {  type = 9 id = 15051  } 
-  # ministerofsecurity     = {  type = 9 id = 15078  } 
-  # ministerofintelligence = {  type = 9 id = 15101  } 
-  # chiefofstaff           = {  type = 9 id = 15007  } 
-  # chiefofarmy            = {  type = 9 id = 15117  } 
-  # chiefofnavy            = {  type = 9 id = 15009  } 
-   #chiefofair             = {  type = 9 id = 15127  }
+  headofstate            = {  type = 9 id = 15001  } 
+  headofgovernment       = {  type = 9 id = 15021  } 
+  foreignminister        = {  type = 9 id = 15038  } 
+  armamentminister       = {  type = 9 id = 15051  } 
+  ministerofsecurity     = {  type = 9 id = 15078  } 
+  ministerofintelligence = {  type = 9 id = 15101  } 
+  chiefofstaff           = {  type = 9 id = 15007  } 
+  chiefofarmy            = {  type = 9 id = 15117  } 
+  chiefofnavy            = {  type = 9 id = 15009  } 
+  chiefofair             = {  type = 9 id = 15127  }
 
    landunit = 
    {  id       = {  type = 10100 id = 1  } 
@@ -205,23 +204,43 @@ inventions = { 3000027 }
      Division = 
      {  id   = {  type = 10100 id = 2  } 
        name = "Ie Divisie" 
-	   strength     = 90
+	   strength     = 100
        type = infantry 
-	   model = 6 
+	   model = 11 
+	   extra    = artillery
+       brigade_model = 10
       } 
      Division = 
      {  id   = {  type = 10100 id = 3  } 
        name = "IIe Divisie" 
-	   strength     = 90
+	   strength     = 100
        type = infantry
-		model = 6 	   
+		model = 11 	
+	   extra    = artillery
+       brigade_model = 10		
       } 
      Division = 
      {  id   = {  type = 10100 id = 4  } 
        name = "IIIe Divisie" 
-	   strength     = 90
+	   strength     = 100
        type = infantry 
-	   model = 6 
+	   model = 11 
+	   extra    = artillery
+       brigade_model = 10
+      } 
+    } 
+	   landunit = 
+   {  id       = {  type = 10100 id = 8  } 
+     location = 1642
+     name     = "K.N.I.L. Sumatra" 
+     Division = 
+     {  id   = {  type = 10100 id = 9  } 
+       name = "IVe Divisie" 
+	   strength     = 30
+       type = infantry 
+	   model = 11 
+	   extra    = artillery
+       brigade_model = 10
       } 
     } 
    navalunit = 

@@ -1,8 +1,4 @@
- 
- ############################## 
- # Country definition for HOL # 
- ############################## 
- 
+
  ##################### 
  # Country main data # 
  ##################### 
@@ -35,7 +31,7 @@ rare_materials         = 435
     relation = { tag = USA value = 70 }
     relation = { tag = U05 value = -150 } 
   } 
-   SpyInfo                = {  country = "HOL" NumberOfSpies = 6  } 
+   SpyInfo                = {  country = "INO" NumberOfSpies = 6  } 
   
    nationalprovinces      = {  
     #Indonesia
@@ -146,16 +142,122 @@ inventions = { 3000027 }
      defense_lobby     = 5 
      interventionism   = 3  
     } 
-  # headofstate            = {  type = 9 id = 15001  } 
-  # headofgovernment       = {  type = 9 id = 15021  } 
-  # foreignminister        = {  type = 9 id = 15038  } 
-  # armamentminister       = {  type = 9 id = 15051  } 
-  # ministerofsecurity     = {  type = 9 id = 15078  } 
-  # ministerofintelligence = {  type = 9 id = 15101  } 
-  # chiefofstaff           = {  type = 9 id = 15007  } 
-  # chiefofarmy            = {  type = 9 id = 15117  } 
-  # chiefofnavy            = {  type = 9 id = 15009  } 
-  # chiefofair             = {  type = 9 id = 15127  }
+  headofstate            = {  type = 9 id = 270011 } 
+  headofgovernment       = {  type = 9 id = 270014 } 
+  foreignminister        = {  type = 9 id = 270017 } 
+  armamentminister       = {  type = 9 id = 270022 } 
+  ministerofsecurity     = {  type = 9 id = 270028 } 
+  ministerofintelligence = {  type = 9 id = 270034 } 
+  chiefofstaff           = {  type = 9 id = 270038 } 
+  chiefofarmy            = {  type = 9 id = 270043 } 
+  chiefofnavy            = {  type = 9 id = 270049 } 
+  chiefofair             = {  type = 9 id = 270053 }
   
-  } 
- 
+
+	   landunit = 
+   {  id       = {  type = 10100 id = 10  } 
+     name     = "Liberation Army of Java" 
+     location = 1654 
+     division = 
+   {  id       = {  type = 10100 id = 11  } 
+       name     = "1e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	       division = 
+   {  id       = {  type = 10100 id = 12  } 
+       name     = "2e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100 
+      } 
+	       division = 
+   {  id       = {  type = 10100 id = 13 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	  	       division = 
+   {  id       = {  type = 10100 id = 14 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	  	       division = 
+   {  id       = {  type = 10100 id = 15 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+    } 
+	   landunit = 
+   {  id       = {  type = 10100 id = 16  } 
+     name     = "Independence Army" 
+     location = 1651
+     division = 
+   {  id       = {  type = 10100 id = 17  } 
+       name     = "1e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	       division = 
+   {  id       = {  type = 10100 id = 18  } 
+       name     = "2e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100 
+      } 
+	       division = 
+   {  id       = {  type = 10100 id = 19 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	  	       division = 
+   {  id       = {  type = 10100 id = 20 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	  	       division = 
+   {  id       = {  type = 10100 id = 21 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+    } 
+	   landunit = 
+   {  id       = {  type = 10100 id = 22 } 
+     name     = "Liberation Army of Sumatra" 
+     location = 1641
+     division = 
+   {  id       = {  type = 10100 id = 23 } 
+       name     = "1e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+	       division = 
+   {  id       = {  type = 10100 id = 24  } 
+       name     = "2e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100 
+      } 
+	       division = 
+   {  id       = {  type = 10100 id = 25 } 
+       name     = "3e Divisie" 
+       type     = militia
+       model    = 5
+       strength = 100
+      } 
+    } 
+ }
