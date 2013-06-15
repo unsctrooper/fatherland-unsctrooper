@@ -10,11 +10,12 @@ Installation instructions:
 3: Copy contents of the downloaded archive into the newly copied directory (agree to replace all the files when asked).
 
 Credits (in no particular order):
--To Unit101 to concept and starting phase
--To pakotorino for continuing this mod
--To Ticket Cookie for events and support to develop
--To Tonie112 for tons of thing,bugfix and events
--To Bizon for allowing me to use files from his New World Order 2 mod. The NWO2 mod is also a great inspiration.
+-To Unit101 for concept and starting phase.
+-To pakotorino for continuing this mod.
+-To Ticket Cookie for support to develop and events and files.
+-To Tonie112 for tons of thing, like AI, bugfix and events.
+-To Bizon for allowing us to use files from his New World Order 2 mod. The NWO2 mod is also a great inspiration.
+-To Kretoxian for allowing us to incorporate his Cold War Tech Tree Expansion mod.
 -To Kaiserreich team for letting me use some of their files for the Cossacks and Idel-Ural State. 
 -To Chronic for the flag of the Lokot Republic.
 -To Panzergruppe for suggesting the Lokot cabinet.
