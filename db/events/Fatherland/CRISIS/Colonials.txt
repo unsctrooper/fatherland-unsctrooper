@@ -1,0 +1,442 @@
+event = {
+id = 1800
+	random = no
+	country = HOL	
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	name = "1800NAME" 
+    desc = "1800DESC" 
+	
+	date = { day = 10 month = january year = 1948 }
+	
+	action = {
+			name = "1800A" 
+			ai_chance = 99
+		    command = { type = money value = -400 }	
+            command = { type = dissent value = 3 }
+            command = { type = trigger which = 1801 }			
+	}
+	
+	action = {
+			name = "1800B"
+			ai_chance = 1
+			command = { type = domestic which = interventionism value = -1 }
+            command = { type = dissent value = 3 }
+}
+}
+event = {
+id = 1801
+	random = no
+	country = USA	
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	    name = "1801NAME" 
+        desc = "1801DESC" 
+	
+	
+	action = {
+			name = "1801A" 
+			ai_chance = 80
+            command = { type = dissent value = 3 }	
+			command = { type = manpowerpool value = -10 }
+			command = { type = supplies value = -5000 } 
+		    command = { type = resource which = oil value = -5000 } 
+            command = { type = trigger which = 1802 }			
+	}
+	
+	action = {
+			name = "1801B"
+			ai_chance = 20
+			command = { type = domestic which = interventionism value = -1 }
+            command = { type = dissent value = 5 }
+}
+}
+event = {
+	id = 1802
+	random = no
+	country = HOL
+	save_date = yes
+
+	name = "1802NAME"
+	desc = "1802DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = alliance which = USA }	
+		command = { type = supplies value = 5000 } 
+		command = { type = resource which = oil value = 5000 } 
+		command = { type = construct which = ic where = 1647 value = 10 }
+		command = { type = add_division value = armor when = 3 }
+		command = { type = add_division value = tactical_bomber when = 9 }
+	}
+}
+event = {
+	id = 1803
+	random = no
+	country = HOL
+	
+	trigger = {
+	control = { province = 1647 data = HOL } 
+	event = { id = 1802 days = 30 } }
+
+	name = "1803NAME"
+	desc = "1803DESC"
+	style = 2
+	picture = "swedish_volunteers"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = inherit which = INO }	
+	}
+}
+event = {
+	id = 1804
+	random = no
+	country = USA
+	
+	trigger = {
+	NOT = { control = { province = 1647 data = HOL } }
+	event = { id = 1802 days = 30 } }
+
+	name = "1804NAME"
+	desc = "1804DESC"
+	style = 2
+	picture = "swedish_volunteers"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = inherit which = HOL }	
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1805
+	random = no
+	country = HOL
+	
+	trigger = { event = 1803 }
+
+	name = "1805NAME"
+	desc = "1805DESC"
+	style = 2
+	picture = "lend_lease"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = peacetime_ic_mod value = 5 }
+		command = { type = construct which = ic where = 1647 value = 10 }
+		command = { type = domestic which = free_market value = 1 }
+	}
+}
+event = {
+id = 1806
+	random = no
+	country = HOL	
+	style = 2
+	save_date = yes
+	picture = "elections"
+	
+	trigger = { event = 1803 }
+	
+	    name = "1806NAME"  
+        desc = "1806DESC" 
+		
+	date = { day = 0 month = january year = 1948 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	
+	action = {
+			name = "1806A" 
+			ai_chance = 70
+			command = { type = set_domestic which = democratic value = 4 }
+		    command = { type = set_domestic which = political_left value = 3 }
+            command = { type = relation which = USA value = 5 }	
+			command = { type = headofgovernment which = 15011 }	
+			command = { type = headofstate which = 15011 }					
+	}
+	action = {
+			name = "1806B"
+			ai_chance = 25
+            command = { type = relation which = USA value = 50 }		
+			command = { type = domestic which = interventionism value = -1 }
+            command = { type = dissent value = 5 }
+			command = { type = headofgovernment which = 15018 }	
+}
+	action = {
+			name = "1806C"
+			ai_chance = 5
+            command = { type = addcore which = 1618 }
+		    command = { type = addcore which = 1639 }
+		    command = { type = addcore which = 1642 }
+		    command = { type = addcore which = 1640 }
+		    command = { type = addcore which = 1635 }
+		    command = { type = addcore which = 1634 }
+		    command = { type = addcore which = 1637 }
+		    command = { type = addcore which = 1636 }
+		    command = { type = addcore which = 1641 }
+		    command = { type = addcore which = 1638 }
+		    command = { type = addcore which = 1648 }
+            command = { type = addcore which = 1651 }
+		    command = { type = addcore which = 1650 }
+		    command = { type = addcore which = 1647 }
+		    command = { type = addcore which = 1648 }
+		    command = { type = addcore which = 1654 }
+		    command = { type = addcore which = 1653 }
+		    command = { type = addcore which = 1652 }
+		    command = { type = addcore which = 1655 }
+		    command = { type = addcore which = 1656 }
+		    command = { type = addcore which = 1643 }
+		    command = { type = addcore which = 1645 }
+            command = { type = addcore which = 1615 }
+		    command = { type = addcore which = 1616 }
+		    command = { type = addcore which = 1619 }
+		    command = { type = addcore which = 1644 }
+		    command = { type = addcore which = 1657 }
+		    command = { type = addcore which = 1658 }
+		    command = { type = addcore which = 1660 }
+		    command = { type = addcore which = 1659 }
+		    command = { type = addcore which = 1620 }
+		    command = { type = addcore which = 1621 }
+		    command = { type = addcore which = 1622 }
+		    command = { type = addcore which = 1629 }
+		    command = { type = addcore which = 1631 }
+		    command = { type = addcore which = 1630 }
+		    command = { type = addcore which = 1633 }
+		    command = { type = addcore which = 1632 }
+		    command = { type = addcore which = 1628 }
+		    command = { type = addcore which = 1623 }
+		    command = { type = addcore which = 1627 }
+            command = { type = addcore which = 1599 }
+		    command = { type = addcore which = 1600 }
+		    command = { type = addcore which = 1601 }
+		    command = { type = addcore which = 1595 }
+		    command = { type = addcore which = 1596 }
+		    command = { type = addcore which = 1594 }
+		    command = { type = addcore which = 1598 }
+		    command = { type = addcore which = 1597 }
+			command = { type = headofgovernment which = 270014 }
+			command = { type = chiefofair which = 270053 }
+            command = { type = dissent value = 15 }
+            command = { type = relation which = U01 value = -50 }
+            command = { type = relation which = USA value = -50 }
+            command = { type = relation which = FRA value = -50 }
+            command = { type = relation which = BEL value = -50 }
+			command = { type = local_setflag which = InoHol }
+}
+}
+event = {
+	id = 1807
+	random = no
+	country = HOL
+	
+	decision = {
+	event = { id = 1806 days = 30 } 
+	NOT = {
+	local_flag = InoHol
+	}
+	}
+
+	decision_trigger = {
+	event = { id = 1806 days = 30 } 
+	}
+
+	trigger = {
+	event = { id = 1806 days = 30 } 
+	}
+
+	name = "1807NAME"
+	desc = "1807DESC"
+	style = 2
+	picture = "abadan_oil"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 50 }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = metal }
+		command = { type = add_prov_resource which = -1 value = 50 where = metal }
+		command = { type = add_prov_resource which = -1 value = 50 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 50 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 50 where = oil }
+	}
+}
+event = {
+	id = 1808
+	random = no
+	country = GER
+	
+	trigger = { 
+	event = 1802
+    random = 20
+	}
+
+	name = "1808NAME"
+	desc = "1808DESC"
+	style = 2
+	picture = "Reichstag"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = belligerence which = GER value = -5 }
+		command = { type = trigger which = 1809 } 
+		command = { type = trigger which = 1810 } 
+		command = { type = trigger which = 1811 } 
+		command = { type = trigger which = 1812 } 
+	}
+}
+event = {
+	id = 1809
+	random = no
+	country = HOL
+
+	name = "1809NAME"
+	desc = "1809DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1810
+	random = no
+	country = ENG
+
+	name = "1810NAME"
+	desc = "1810DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 1811
+	random = no
+	country = FRA
+
+	name = "1811NAME"
+	desc = "1811DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1812
+	random = no
+	country = BEL
+
+	name = "1812NAME"
+	desc = "1812DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1813
+	random = no
+	country = USA
+	
+	decision = { event = 1812 }
+	decision_trigger = { event = 1812 } 
+	trigger = { event = 1812 }
+
+	name = "1813NAME"
+	desc = "1813DESC"
+	style = 2
+	picture = "lend_lease"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+			name = "1813A" 
+			ai_chance = 95
+            command = { type = dissent value = 3 }	
+			command = { type = manpowerpool value = -10 }
+			command = { type = supplies value = -5000 } 
+		    command = { type = resource which = oil value = -5000 } 
+            command = { type = trigger which = 1814 }			
+	}
+	
+	action = {
+			name = "1813B"
+			ai_chance = 5
+			command = { type = domestic which = interventionism value = -1 }
+}
+}
+event = {
+	id = 1814
+	random = no
+	country = BEL
+	save_date = yes
+
+	name = "1814NAME"
+	desc = "1814DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = supplies value = 5000 } 
+		command = { type = construct which = ic where = 899 value = 10 }
+		command = { type = add_division value = armor when = 3 }
+		command = { type = add_division value = tactical_bomber when = 9 }
+		command = { type = peacetime_ic_mod value = 5 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = energy }
+		command = { type = add_prov_resource which = -1 value = 50 where = metal }
+		command = { type = add_prov_resource which = -1 value = 50 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 10 where = oil }
+	}
+}
+
+
+
