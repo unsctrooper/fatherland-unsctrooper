@@ -781,7 +781,7 @@ province = { id = 104   # Metz - Lorraine_Alsace - France
    anti_air = 3 
    air_base = { size = 10 current_size = 10 } 
    landfort = 3
-   ic       = 1 
+   ic       = 6 
  } 
  
 province = { id = 105   # Colmar - Lorraine_Alsace - France
@@ -793,7 +793,7 @@ province = { id = 105   # Colmar - Lorraine_Alsace - France
 province = { id = 107   # Strasbourg - Lorraine_Alsace - France
    anti_air = 2 
    landfort = 3
-   ic       = 1 
+   ic       = 6 
  } 
  
 province = { id = 717   # Rabat - Morocco - Morocco
@@ -895,6 +895,7 @@ province = { id = 1743   # Papeete
  #.#.# Germany 
  
 province = { id = 126   # Aachen - Rhineland - Germany
+   ic       = 5
    landfort = 2 
    radar_station = { size = 2 current_size = 2 }
    anti_air = 2 
@@ -902,6 +903,7 @@ province = { id = 126   # Aachen - Rhineland - Germany
  
 province = { id = 127   # Saarbrucken - Rhineland - Germany
    anti_air = 2 
+   ic       = 5
    landfort = 3 
    radar_station = { size = 1 current_size = 1 }
  } 
@@ -917,6 +919,7 @@ province = { id = 129   # Koblenz - Rhineland - Germany
  }
  
 province = { id = 130   # Mainz - Rhineland - Germany
+   ic       = 5
    landfort = 3 
    air_base = { size = 4 current_size = 4 } 
    radar_station = { size = 2 current_size = 2 } 
@@ -926,6 +929,7 @@ province = { id = 130   # Mainz - Rhineland - Germany
  
 province = { id = 131   # Cologne - Rhineland - Germany
    landfort = 2 
+   ic       = 5
    radar_station = { size = 4 current_size = 4 } 
    anti_air = 2
  }
@@ -936,8 +940,8 @@ province = { id = 132   # Freiburg - Baden_Wurttemberg - Germany
  } 
  
 province = { id = 134   # Stuttgart - Baden_Wurttemberg - Germany
- #   landfort = 1 
    anti_air = 3 
+   ic       = 5
    air_base = { size = 4 current_size = 4 } 
    radar_station = { size = 1 current_size = 1 } 
  } 
@@ -949,6 +953,7 @@ province = { id = 137   # Kassel - Hessen - Germany
  
 province = { id = 138   # Frankfurt/Main - Hessen - Germany
    anti_air = 4 
+   ic       = 5
    air_base = { size = 4 current_size = 4 } 
    radar_station = { size = 1 current_size = 1 }
  } 
@@ -960,6 +965,7 @@ province = { id = 141   # Muenster - Westphalen - Germany
 
 province = { id = 142   # Düsseldorf - Westphalen - Germany 
    anti_air = 3
+   ic       = 5
  } 
 
 province = { id = 144   # Bielefeld - Westphalen - Germany 
@@ -974,6 +980,7 @@ province = { id = 145   # Essen - Westphalen - Germany
  } 
  
 province = { id = 146   # Hannover - Hannover_Magdeburg - Germany
+   ic       = 5
    anti_air = 2
    radar_station = { size = 3 current_size = 3 } 
  } 
@@ -986,6 +993,7 @@ province = { id = 147   # Wilhelmshaven - Hannover_Magdeburg - Germany
  } 
  
 province = { id = 148   # Bremen - Hannover_Magdeburg - Germany
+   ic       = 5
    radar_station = { size = 2 current_size = 2 } 
    anti_air = 1
    air_base = { size = 2 current_size = 2 }
@@ -1013,6 +1021,7 @@ province = { id = 153   # Rostock - Holstein_Mecklemburg - Germany
  
 province = { id = 154   # Hamburg - Holstein_Mecklemburg - Germany
    anti_air = 2 
+   ic       = 5
    naval_base = { size = 10 current_size = 10 } 
    radar_station = { size = 2 current_size = 2 }
  } 
@@ -1031,12 +1040,13 @@ province = { id = 161   # Deutsch-Krone - Brandenburg - Germany
 
 province = { id = 163   # Berlin - Brandenburg - Germany
    anti_air = 5 
-   ic       = 1
+   ic       = 11
    air_base = { size = 10 current_size = 10 } 
    radar_station = { size = 2 current_size = 2 }
  } 
  
 province = { id = 167   # Breslau - Silesia - Germany
+   ic       = 5
    anti_air = 2 
    air_base = { size = 10 current_size = 10 } 
  } 
@@ -1055,14 +1065,17 @@ province = { id = 170   # Leipzig - Sachsen - Germany
 province = { id = 173   # Dresden - Sachsen - Germany
    radar_station = { size = 1 current_size = 1 }
    air_base = { size = 3 current_size = 3 } 
+   ic       = 6
  } 
 
 province = { id = 177   # Nuremberg - Bavaria - Germany
    anti_air = 1 
+   ic       = 5
  } 
  
 province = { id = 179   # Munich - Bavaria - Germany
    anti_air = 5 
+   ic       = 6
    air_base = { size = 10 current_size = 10 } 
  } 
  
@@ -1074,6 +1087,7 @@ province = { id = 181   # Danzig - Poznan - Germany
  }
 
 province = { id = 184   # Koenigsberg - East Prussia - Germany
+   ic       = 5
    anti_air = 4 
    air_base = { size = 10 current_size = 10 } 
    naval_base = { size = 10 current_size = 10 } 
@@ -1090,6 +1104,7 @@ province = { id = 191   # Klagenfurt - Austria - Austria
  } 
  
 province = { id = 195   # Vienna - Austria - Austria
+   ic       = 5
    anti_air = 5 
    air_base = { size = 10 current_size = 10 } 
  } 
@@ -1099,6 +1114,7 @@ province = { id = 196   # Brno - Bohemia - Czechoslovakia
  } 
  
 province = { id = 207   # Prague - Bohemia - Czechoslovakia
+   ic       = 5
    anti_air = 2 
    air_base = { size = 3 current_size = 3 } 
  } 
@@ -1118,6 +1134,7 @@ province = { id = 223   # Lodz - Poznan - Poland
  } 
 
 province = { id = 224   # Poznan - Poznan - Poland
+   ic       = 5
    anti_air = 4 
    air_base = { size = 4 current_size = 4 } 
  } 
@@ -1159,7 +1176,7 @@ province = { id = 231   # Wloclawek - Warsaw - Poland
 
 province = { id = 232   # Warsaw - Warsaw - Poland
    anti_air = 2 
-   ic       = 2
+   ic       = -3
    air_base = { size = 6 current_size = 6 } 
    province_revoltrisk = 8
  } 
@@ -1174,10 +1191,19 @@ province = { id = 234   # Radom - Krakow - Poland
 
 province = { id = 235   # Krakow - Krakow - Poland
    anti_air = 2 
+   ic       = -3
    air_base = { size = 4 current_size = 4 } 
    province_revoltrisk = 8
  } 
-
+province = { id = 635   
+   ic       = -3
+ } 
+province = { id = 645   
+   ic       = -2
+ } 
+province = { id = 633  
+   ic       = -2
+ } 
 province = { id = 236   # Nowy Sacz - Krakow - Poland
    province_revoltrisk = 8
  } 
@@ -1806,6 +1832,10 @@ province = { id = 1669   # Yap
    naval_base = { size = 2 current_size = 2 } 
  } 
  
+province = { id = 668  
+   ic       = -2 
+ } 
+ 
 province = { id = 1670   # Peleliu
    anti_air = 1 
    air_base = { size = 2 current_size = 2 } 
@@ -2226,7 +2256,7 @@ province = { id = 240   # Tarnopol - Lvov - Poland
  } 
  
 province = { id = 242   # Lvov - Lvov - Poland
-   ic       = 1
+   ic       = -2
  } 
 
 province = { id = 247   # Brest-Litovsk - Brest Litovsk - Poland
@@ -2295,7 +2325,7 @@ province = { id = 572   # Moscow - Moscow - Russia
    air_base = { size = 10 current_size = 10 } 
    landfort = 5 
    anti_air = 4
-   ic       = 3 
+   ic       = -2 
  } 
  
 province = { id = 576   # Kaluga - Ryazan - Central Russia
@@ -2424,6 +2454,7 @@ province = { id = 666   # Engels - Engels - Eastern Russia
  
 province = { id = 669   # Saratov - Penza - Southern Russia
    air_base = { size = 3 current_size = 3 } 
+   ic       = -2
  } 
  
 province = { id = 679   # Ivanovo - Vladimir - Central Russia
@@ -2431,7 +2462,7 @@ province = { id = 679   # Ivanovo - Vladimir - Central Russia
  }
 
 province = { id = 682   # Murom - Saransk - Central Russia
-   ic       = 2  
+   ic       = -1
  }
 
 province = { id = 691   # Krasnodar - Krasnodar - Kaucasus
@@ -2449,16 +2480,9 @@ province = { id = 708   # Kutaisi - Georgien - Kaukasus
    air_base = { size = 4 current_size = 4 } 
  }
 
-province = { id = 709   # Tblisi - Georgien - Kaukasus
-   ic       = 3  
- }
 
 province = { id = 711   # Yerevan - Armenia-Azerbaijan - Kaukasus
-   ic       = 2  
- }
-
-province = { id = 713   # Baku - Armenia-Azerbaijan - Kaukasus
-   ic       = 2  
+   ic       = 1
  }
 
 province = { id = 1097   # Ashkhabad - Turkmenistan - Central Asia
@@ -2491,7 +2515,7 @@ province = { id = 1131   # Ufa - Ufa - Eastern Russia
  }
 
 province = { id = 1132   # Chelyabinsk - Ufa - Eastern Russia
-   ic       = 2 
+   ic       = 12 
  }
 
 province = { id = 1134   # Orenburg - Orenburg - Eastern Russia
@@ -2500,12 +2524,12 @@ province = { id = 1134   # Orenburg - Orenburg - Eastern Russia
  } 
  
 province = { id = 1137   # Kurgan - Tyumen - Novosibirsk
-   ic       = 5 
+   ic       = 15
  } 
 
 province = { id = 1138   # Omsk - Omsk - Novosibirsk
    air_base = { size = 1 current_size = 1 }
-   ic       = 9 
+   ic       = 19 
  } 
 
 province = { id = 1142   # Novosibirsk - Novosibirsk - Novosibirsk
@@ -2521,7 +2545,7 @@ province = { id = 1148   # Tomsk - Tomsk - Tomsk
  }
 
 province = { id = 1151   # Sverdlovsk - Sverdlovsk - Urals
-   ic       = 5 
+   ic       = 15 
  }
 
 province = { id = 1158   # Minuskinsk - South Krasnoyarsk - Krasnoyarsk
@@ -2566,6 +2590,7 @@ province = { id = 654 # Voronezh
    air_base = { size = 2 current_size = 1 }
  }
 province = { id = 588 # Bryansk
+   ic       = 5
    air_base = { size = 4 current_size = 3 }
  }
 province = { id = 589 # Smolensk
