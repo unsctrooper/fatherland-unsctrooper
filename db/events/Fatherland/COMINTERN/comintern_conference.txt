@@ -14,7 +14,7 @@ event = {
 		picture = "news_paper"
 		
         name = "The Vladivostok Conference"
-        desc = "After the victory of the Communists in the civil war the time has come to unite all the proletarian forces and forge a renovated Comintern !"
+        desc = "After the end of the chinese civil war the time has come to unite all the proletarian forces and forge a renovated Comintern !"
 	
 		date = { day = 1 month = january year = 1950 }
 		offset = 30
@@ -919,7 +919,7 @@ event = {
 		deathdate = { day = 1 month = december year = 1960 }
  
         action_a = {
-				ai_chance = 80
+				ai_chance = 70
                 name = "Rise the Partisan !"
 				
 				command = { type = dissent value = -1 }
@@ -927,7 +927,7 @@ event = {
 				
         }	
 		action_b = {
-				ai_chance = 20
+				ai_chance = 30
                 name = "Attack directly !"
                 command = { type = war which = KOR }
 				command = { type = war which = U03 }
@@ -982,7 +982,7 @@ event = {
 				ai_chance = 100
                 name = "Civil War !"
 				
-				command = { type = dissent value = 80 }
+				command = { type = dissent value = 100 }
         }	
 		
 }
@@ -1006,7 +1006,7 @@ event = {
         action_a = {
 				ai_chance = 100
                 name = "Communist Revolt !"				
-				command = { type = dissent value = 40 }
+				command = { type = dissent value = 80 }
         }	
 		
 }
@@ -1053,7 +1053,7 @@ event = {
 		action_a = {
 				ai_chance = 100
                 name = "Damn !"
-                command = { type = dissent value = 50 }
+                command = { type = dissent value = 70 }
         }	
 }
 event = {
@@ -1076,9 +1076,10 @@ event = {
 		action_a = {
 				ai_chance = 100
                 name = "Damn !"
-                command = { type = dissent value = 50 }
+                command = { type = dissent value = 70 }
         }	
-}event = {
+}
+event = {
         id = 628
         random = no
         country = CUB
@@ -1098,7 +1099,7 @@ event = {
 		action_a = {
 				ai_chance = 100
                 name = "Damn !"
-                command = { type = dissent value = 50 }
+                command = { type = dissent value = 70 }
         }	
 }
 event = {
@@ -1121,7 +1122,7 @@ event = {
 		action_a = {
 				ai_chance = 100
                 name = "Damn !"
-                command = { type = dissent value = 50 }
+                command = { type = dissent value = 70 }
         }	
 }
 event = {
@@ -1142,12 +1143,12 @@ event = {
 		deathdate = { day = 1 month = december year = 1960 }
  
 		action_a = {
-				ai_chance = 40
+				ai_chance = 50
                 name = "Attack the Reich ! Spread the WW3 !"
                 command = { type = war which = GER }
         }	
 		action_b = {
-				ai_chance = 60
+				ai_chance = 50
                 name = "No, the time is not now !"
                 command = { type = dissent value = 20 }
         }			

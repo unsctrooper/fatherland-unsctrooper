@@ -18,58 +18,46 @@
    escorts                = 0 
    #ground_def_eff         = 0.82 
    # Resource Reserves 
-   energy                 = 100
-   metal                  = 500
+   energy                 = 120
+   metal                  = 380
    rare_materials         = 150
-   oil                    = 200 
-   supplies               = 1000 
+   oil                    = 100 
+   supplies               = 750 
    money                  = 10
  
  
   diplomacy =
   { 
+    #Axis
 	relation = { tag = GER value = 200 }
+	relation = { tag = BUL value = 100 }
+	relation = { tag = CRO value = 50 }
+    relation = { tag = FIN value = 100 }
+	relation = { tag = HUN value = 100 }
+	relation = { tag = ITA value = 150 }
+    relation = { tag = ROM value = 80 }
 	
-	relation = { tag = ARG value = 75 }
+	#Allies
     relation = { tag = AST value = -200 }
     relation = { tag = BEL value = -200 }
     relation = { tag = BHU value = -200 }
-    relation = { tag = BOL value = 15 }
-    relation = { tag = BRA value = 50 }
-    relation = { tag = BUL value = 200 }
     relation = { tag = CAN value = -200 }
-    relation = { tag = CHL value = 50 }
-    relation = { tag = COL value = -20 }
-    relation = { tag = CRO value = 200 }
-    relation = { tag = SLO value = 200 }
     relation = { tag = ENG value = -200 }
-    relation = { tag = FIN value = 125 }
     relation = { tag = U01 value = -200 }
     relation = { tag = HOL value = -200 }
-    relation = { tag = HUN value = 200  }
     relation = { tag = IRQ value = -200 }
-    relation = { tag = ITA value = 200 }
-    relation = { tag = MTN value = 200 }
-    relation = { tag = JAP value = 135 }
-    relation = { tag = MAN value = 20 }
-    relation = { tag = MEN value = 20 }
     relation = { tag = NEP value = -200 }
     relation = { tag = NIC value = -200 }
     relation = { tag = NZL value = -200 }
     relation = { tag = OMN value = -200 }
-    relation = { tag = POR value = 75 }
-    relation = { tag = ROM value = 200 }
-    relation = { tag = SAF value = -200 }
-    relation = { tag = SCH value = 50 }
+    relation = { tag = USA value = -200 }
+	
+	#Comintern
     relation = { tag = SOV value = -200 }
-    relation = { tag = SPA value = 50  }
-    relation = { tag = SWE value = 50 }
-    relation = { tag = TUR value = 10 }
-    relation = { tag = USA value = -125 }
-    relation = { tag = FRA value = 75 }
-    relation = { tag = YEM value = -200 }
-    relation = { tag = U02 value = -200 }
-    relation = { tag = U05 value = -200 }
+	
+	#Neutral
+    relation = { tag = TUR value = -100 }
+
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    

@@ -2,6 +2,15 @@
 # New Changelog 
 ####################################
 
+# Events/Decisions:
+- Review/fixes South Africa events
+
+# Scenario files (INC):
+- Review of Reichskommissariat Kaukasus
+- Review of Reichskommissariat Ostland
+
+#Other
+- Remove duplicate files
 
 ####################################
 # Changelog for Beta version 1.0

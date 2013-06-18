@@ -203,7 +203,7 @@ event = {
         random = no
         country = GER
  
-        name = "German Reaction at the South African Referendum"
+        name = "German Reaction at the planning South African Referendum"
         desc = "The South Africa is now a Republic ! Congrats !"
         style = 0
  
@@ -228,7 +228,7 @@ event = {
         random = no
         country = ENG
  
-        name = "UK Reaction at the South African Referendum"
+        name = "UK Reaction at the planning South African Referendum"
         desc = "The South Africa is now a Republic !"
         style = 0
  

@@ -1,7 +1,6 @@
- 
- ############################## 
- # Country definition for GER # 
- ############################## 
+######################################################
+# Country definition for Reichskommissariat Kaukasus # 
+######################################################
 
  ##################### 
  # Country main data # 
@@ -9,67 +8,54 @@
   
  country = 
  { tag                    = U42 
-   #ai                     = "GER_1942.ai"
-   puppet = GER
-   Control = GER
-   
+   puppet 				  = GER
+   control 				  = GER
    capital                = 709 
-   manpower               = 10 
+   manpower               = 20 
    transports             = 10 
    escorts                = 0 
 
    # Resource Reserves 
-   energy                 = 100
-   metal                  = 500
+   energy                 = 150
+   metal                  = 250
    rare_materials         = 150
-   oil                    = 200 
-   supplies               = 1000 
+   oil                    = 800
+   supplies               = 500
    money                  = 10
    
  
   diplomacy =
   {
+    #Axis
 	relation = { tag = GER value = 200 }
-	relation = { tag = ARG value = 75 }
+	relation = { tag = BUL value = 100 }
+	relation = { tag = CRO value = 50 }
+    relation = { tag = FIN value = 125 }
+	relation = { tag = HUN value = 100 }
+	relation = { tag = ITA value = 150 }
+    relation = { tag = ROM value = 80 }
+	
+	#Allies
     relation = { tag = AST value = -200 }
     relation = { tag = BEL value = -200 }
     relation = { tag = BHU value = -200 }
-    relation = { tag = BOL value = 15 }
-    relation = { tag = BRA value = 50 }
-    relation = { tag = BUL value = 200 }
     relation = { tag = CAN value = -200 }
-    relation = { tag = CHL value = 50 }
-    relation = { tag = COL value = -20 }
-    relation = { tag = CRO value = 200 }
-    relation = { tag = SLO value = 200 }
     relation = { tag = ENG value = -200 }
-    relation = { tag = FIN value = 125 }
     relation = { tag = U01 value = -200 }
     relation = { tag = HOL value = -200 }
-    relation = { tag = HUN value = 200  }
     relation = { tag = IRQ value = -200 }
-    relation = { tag = ITA value = 200 }
-    relation = { tag = MTN value = 200 }
-    relation = { tag = JAP value = 135 }
-    relation = { tag = MAN value = 20 }
-    relation = { tag = MEN value = 20 }
     relation = { tag = NEP value = -200 }
     relation = { tag = NIC value = -200 }
     relation = { tag = NZL value = -200 }
     relation = { tag = OMN value = -200 }
-    relation = { tag = POR value = 75 }
-    relation = { tag = ROM value = 200 }
-    relation = { tag = SAF value = -200 }
-    relation = { tag = SCH value = 50 }
+    relation = { tag = USA value = -200 }
+	
+	#Comintern
     relation = { tag = SOV value = -200 }
-    relation = { tag = SPA value = 50  }
-    relation = { tag = SWE value = 50 }
-    relation = { tag = TUR value = 10 }
-    relation = { tag = USA value = -125 }
-    relation = { tag = FRA value = 75 }
-    relation = { tag = YEM value = -200 }
-    relation = { tag = U02 value = -200 }
-    relation = { tag = U05 value = -200 }
+	
+	#Neutral
+    relation = { tag = TUR value = -100 }
+
   }
    SpyInfo                = {  country = "U42" NumberOfSpies = 7  } 
    
@@ -268,19 +254,21 @@ inventions = { 3000027 3000028 }
      interventionism   = 1 
     }
 	
-  # headofstate            = {  type = 9 id = 1   } 
-  # headofgovernment       = {  type = 9 id = 23  } 
-  # foreignminister        = {  type = 9 id = 35  } 
-  # armamentminister       = {  type = 9 id = 70  } 
-  # ministerofsecurity     = {  type = 9 id = 86  } 
-  # ministerofintelligence = {  type = 9 id = 6   } 
-  # chiefofstaff           = {  type = 9 id = 132 } 
-  # chiefofarmy            = {  type = 9 id = 146 } 
-  # chiefofnavy            = {  type = 9 id = 9   } 
-  # chiefofair             = {  type = 9 id = 10  } 
-  # dormant_ministers      = {  }
-  # dormant_leaders        = {  }
+	 ############ German Army in Kaukasus ###########
 
+	landunit = 
+   { location = 709 
+     name     = "Kaukasus SS" 
+     id       = {  type = 14505 id = 1  } 
+    division = 
+     { id       = {  type = 14505 id = 2  } 
+       name     = "342. Kaukasus SS" 
+       type     = motorized 
+       model    = 2 
+       strength = 35 
+       experience = 60
+      }
+} 
   
 } 
 
