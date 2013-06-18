@@ -25,6 +25,7 @@ event = "db\events\fatherland\europe\unitedkingdom.txt"
 event = "db\events\fatherland\crisis\abadan_crisis.txt"
 event = "db\events\fatherland\crisis\centralasia.txt"
 event = "db\events\fatherland\crisis\ira.txt"
+event = "db\events\fatherland\crisis\colonials.txt"
 
 # ASIA
 event = "db\events\fatherland\asia\china.txt"

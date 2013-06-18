@@ -19,3 +19,4 @@
 # 8012601-8012604 #South Africa
 #700-730: Germany/IRA Events
 #730-760: Marshall Plan Events
+#1800+: Colonials

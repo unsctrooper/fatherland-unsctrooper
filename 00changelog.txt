@@ -4,14 +4,18 @@
 
 # Events/Decisions:
 - Review/fixes South Africa events
+- Event chain (15+) on Colonialism
 
 # Scenario files (INC):
 - Review of Reichskommissariat Kaukasus
 - Review of Reichskommissariat Ostland
+- Review of the Netherlands (exiles)
+- Review of Indonesia
+- Review of Belgium (exiles)
 
 #Other
 - Remove duplicate files
-
+- Implementing of Cold War Tech Tree Expansion
 ####################################
 # Changelog for Beta version 1.0
 ####################################
