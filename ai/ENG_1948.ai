@@ -227,7 +227,7 @@ spyprefs =
 ###################################
 #Default values
 construction = { 
-   	max_factor = 0.9 
+   	max_factor = 0.75
 
    	AA_batteries = no 
 	max_AA_level = 5 
@@ -275,6 +275,10 @@ construction = {
 	force_ic_until = 1938
 	ic_end_year = 1940
 	IC_provs = { 4 5 6 7 11 13 36 35 } 
+	
+	nuclear_reactor = yes	
+	nuclear_reactor_prov = 28
+	max_nuclear = 10
 }
 military = { 
 	relative_build_scheme 	= yes 
@@ -358,14 +362,14 @@ technology = {
 	ignore 		= { }
  
 	armor 		= 5 
-	infantry 	= 6
-	industry 	= 6
+	infantry 	= 5
+	industry 	= 5
 	aircraft 	= 5
-	naval 		= 4
-	land_doctrines 	= 1
-	secret_weapons 	= 1
-	air_doctrines 	= 1
-	naval_doctrines = 1
+	naval 		= 5
+	land_doctrines 	= 3
+	secret_weapons 	= 10
+	air_doctrines 	= 3
+	naval_doctrines = 3
 }  
 ###################################
 # Ground Combat, Leaders and Garrisons

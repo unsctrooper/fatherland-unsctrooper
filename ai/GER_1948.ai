@@ -274,13 +274,31 @@ construction = {
 	max_AA_level = 6 
 	AA_provs = { }
 
-	coastal_fort = atwar
-	max_coastal_level = 3
+	coastal_fort = yes
+	max_coastal_level = 5
 	coastal_fort_provs = {
-		152 # Kiel
+		68
+		69
+		39
+		37
+		44
+		46
+		53
+		147
+		217
+		125
+		122
+		144
+		51
+		49
+		495
+		493
+		491
+		485
+		483		
 	} 
 
-	radar_station = atwar
+	radar_station = yes
 	max_radar = 2
 	radar_provs = {
 		145 # Essen
@@ -294,7 +312,7 @@ construction = {
 		55 # Paris
 	} 
 
-	air_base = atwar
+	air_base = no                      
 	max_air_base = 3
 	air_base_provs = {
 		126 # Aachen
@@ -329,7 +347,7 @@ construction = {
 	} 
 	
 	nuclear_reactor = yes	
-	nuclear_reactor_prov = 163 
+	nuclear_reactor_prov = 133
 	max_nuclear = 10
 }
 
@@ -414,15 +432,15 @@ technology = {
 		preference 	= { } 
 	ignore 		= { }
  
-	armor 		= 7
-	infantry 	= 5
-	industry 	= 6
-	aircraft 	= 6
-	naval 		= 3
-	land_doctrines 	= 7
-	secret_weapons 	= 2
-	air_doctrines 	= 5
-	naval_doctrines = 2
+	armor 		= 4
+	infantry 	= 4
+	industry 	= 4
+	aircraft 	= 5
+	naval 		= 5
+	land_doctrines 	= 3
+	secret_weapons 	= 10
+	air_doctrines 	= 3
+	naval_doctrines = 3
 }  
 
 ###################################
@@ -451,8 +469,8 @@ garrison = {
 	revolt_risk_mult	= 0.3
 
 	# PRIORITIES:
-	beach			= 20	# Beach level 2
-	capital			= 40	# Our capital
+	beach			= 100	# Beach level 2
+	capital			= 0	# Our capital
 	human_border		= 0	# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
 	
@@ -463,6 +481,7 @@ garrison = {
 	# Borders with specific countries
 	country_priorities = {
 		SOV = 100
+		FRA = 50
 	}
 	ignore = { }
 	province_priorities = {}

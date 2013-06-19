@@ -185,7 +185,7 @@ spyprefs =
 ###################################
 #Default values
 construction = { 
-	max_factor = 0.10 
+	max_factor = 0.50 
 
 
 	AA_batteries = no
@@ -200,7 +200,7 @@ construction = {
 		396 # Genoa
 	} 
 
-	coastal_fort = no
+	coastal_fort = yes
 	max_coastal_level = 3
 	coastal_fort_provs = { } 
 
@@ -234,7 +234,7 @@ construction = {
 }
 
 military = { 
-	relative_build_scheme 	= no
+	relative_build_scheme 	= yes
 	max_batch_peace 	= 680 
 	max_batch_war 		= 320 
 	max_batch_home_front = 180
@@ -322,8 +322,8 @@ garrison = {
 	revolt_risk_mult	= 0.3
 
 	# PRIORITIES:
-	beach			= 30	# Beach level 2
-	capital			= 40	# Our capital
+	beach			= 100	# Beach level 2
+	capital			= 50	# Our capital
 	human_border	= 0		# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
 	
@@ -333,46 +333,8 @@ garrison = {
 
 	# Borders with specific countries
 	country_priorities = { }
-	province_priorities = {
-		# French Border
-		398  = 50  #Turin
-		396  = 50  #Genoa
-
-		434  = 10  #Sardinia
-		379  = 10  #Rhodes
-		
-		# North Africa
-		752  = 10
-		750  = 10
-		761  = 10
-		771  = 10
-		769  = 20
-		770  = 20
-
-     		825  = 50  # Addis Adeba 
-		
-		# Albania prep for Greece invasion
-		360  = 100
-	}
-	area_multiplier = {
-		# French Border
-		398  = 1.5  #Turin
-		396  = 1.5  #Genoa
-
-		# Yugoslavia Border
-		400  = 0.3
-
-		434  = 1.0  #Sardinia
-		379  = 1.0  #Rhodes
-
-		# North Africa
-		769  = 1.5
-		770  = 1.5
-		752  = 1.5
-
-		# Albania prep for Greece invasion
-		360  = 5.0
-	}
+	province_priorities = { }
+	area_multiplier = { }
 }
 front = { 
 	recklessness 		= 3 # 0-3

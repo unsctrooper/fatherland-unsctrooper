@@ -237,17 +237,21 @@ spyprefs =
 ###################################
 #Default values
 construction = { 
-	max_factor = 0.000
+	max_factor = 0.500
 
 	AA_batteries = no
 	coastal_fort = no
 	radar_station = no 
-	air_base = atwar
+	air_base = no
 	naval_base = no 
 	land_fort = no
 	ic_at_war = no
-	force_ic_until = 1935
-	ic_end_year = 1935
+	force_ic_until = 1951
+	ic_end_year = 1953
+	nuclear_reactor = yes	
+	nuclear_reactor_prov = 1070
+	max_nuclear = 10
+}
 }
 
 military = { 
@@ -260,7 +264,7 @@ military = {
 
 
 	#### Divisions etc... Sov build land setting
-	infantry 		= 63
+	infantry 		= 57
 	cavalry 	= 0
 	motorized 		= 6
 	mechanized 	= 0
@@ -276,12 +280,12 @@ military = {
 	interceptor 		= 5
 	multi_role 		= 5
 	cas 			= 5
-	strategic_bomber = 0
+	strategic_bomber = 3
 	tactical_bomber 	= 3
 	naval_bomber 	= 0
 	transport_plane = 0
 	flying_bomb 	= 0
-	flying_rocket 	= 0
+	flying_rocket 	= 3
 #				18 %
 	battleship 	= 0
 	carrier 	= 0
@@ -333,14 +337,14 @@ technology = {
 		preference 	= { } 
 	ignore 		= { }
  
-	armor 		= 8
+	armor 		= 5
 	infantry 	= 5
-	industry 	= 6
-	aircraft 	= 3
+	industry 	= 5
+	aircraft 	= 2
 	naval 		= 1
-	land_doctrines 	= 2
-	secret_weapons 	= 1
-	air_doctrines 	= 1
+	land_doctrines 	= 3
+	secret_weapons 	= 10
+	air_doctrines 	= 2
 	naval_doctrines = 1
 }  
 
@@ -371,7 +375,7 @@ garrison = {
 
 	# PRIORITIES:
 	beach			= 10	# Beach level 2
-	capital			= 80	# Our capital
+	capital			= 10	# Our capital
 	human_border	= 0		# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
 	reserves 		= 20	# bonus for provinces just behind a frontline.
@@ -393,18 +397,11 @@ garrison = {
 		CYN = -1
 		CHC = -1
 		CSX = -1
-		FIN = 5 #10
-		ROM = 70 # 100
-		POL = 70
 		GER = 150
-		ITA = 100
 		JAP = -1
 		MAN = -1
 		SWE = -1
 		NOR = -1
-		HUN = 15
-		SLO = 15
-		BUL = 15
 	}
 	province_priorities = { }
 	ignore = { } 
