@@ -5,6 +5,7 @@
 # Events/Decisions:
 - Review/fixes South Africa events
 - Event chain (15+) on Colonialism
+- Formation of North and South Korea Armies
 
 # Scenario files (INC):
 - Review of IC Germany/USSR 

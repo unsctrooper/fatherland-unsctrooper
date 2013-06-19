@@ -1,0 +1,69 @@
+# 800 # PRK # Formation of North Korea Army
+# 801 # KOR # Formation of South Korea Army
+event = {
+	id = 8200000
+	random = no
+	country = PRK
+	
+	trigger = {
+		exists = PRK
+	}
+	
+	name = "Creation of the North Korea People's Army"
+	desc = "Creation of the North Korea People's Army"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 25
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "Create the Army"
+	command = { type = add_corps which = "1st Kim Il Sung Corps" value = land where = 1221 }
+	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+	command = { type = add_corps which = "2nd Kim Il Sung Corps" value = land where = 1223 }
+	command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "4th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
+	}
+}
+
+event = {
+	id = 8200001
+	random = no
+	country = KOR
+	
+	trigger = {
+		exists = KOR
+	}
+	
+	name = "Creation of the South Korea Army"
+	desc = "Creation of the South Korea Army"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 25
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "Create the Army"
+	command = { type = add_corps which = "1st Korean Army" value = land where = 1228 }
+	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 11 }
+	command = { type = add_division which = "4th Rifle Division" value = infantry when = 11 }
+	command = { type = add_division which = "5th Rifle Division" value = infantry when = 11 }
+	command = { type = add_corps which = "2nd Korean Army" value = land where = 1232 }
+	command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
+	command = { type = add_division which = "6th Rifle Division" value = infantry when = 10 }
+	command = { type = add_division which = "7th Rifle Division" value = infantry when = 10 }
+	}
+}

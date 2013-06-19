@@ -20,3 +20,4 @@
 #700-730: Germany/IRA Events
 #730-760: Marshall Plan Events
 #1800+: Colonials
+#8200000-8200001:Formation of army of two Koreas
