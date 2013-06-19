@@ -1,0 +1,1016 @@
+event = {
+	id = 8214011
+	country = IND
+
+	name = "Unilateral independence of Kashmir"
+	desc = "Unilateral independence of Kashmir"
+	picture = "nwo\independence_of_india"
+	style = 1
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8020215_A
+		command = { type = independence which = U80 value = 1 }
+	}
+}
+event = {
+	id = 8007206
+	country = IND
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 250062 } # Chakravarti Rajagopalachari
+		command = { type = headofgovernment which = 250013 } # Jawaharlal Nehru
+	}
+}
+
+event = {
+	id = 8007207
+	country = IND
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 250001 } # Rajendra Prasad
+		command = { type = headofgovernment which = 250013 } # Jawaharlal Nehru
+	}
+}
+
+event = {
+	id = 8007208
+	country = IND
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 250001 } # Rajendra Prasad
+		command = { type = headofgovernment which = 250013 } # Jawaharlal Nehru
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 250001 } # Rajendra Prasad
+		command = { type = headofgovernment which = 250106 } # Shripat Amrit Dange
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8007209
+	country = IND
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -15 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 250001 } # Rajendra Prasad
+		command = { type = headofgovernment which = 250013 } # Jawaharlal Nehru
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 250001 } # Rajendra Prasad
+		command = { type = headofgovernment which = 250106 } # Shripat Amrit Dange
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8007210
+	country = IND
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -15 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofgovernment which = 250013 } # Jawaharlal Nehru
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 250106 } # Shripat Amrit Dange
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8007211
+	country = IND
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 250107 } # Sarvepalli Radhakrishnan
+	}
+}
+
+### India is set up
+
+event = {
+	id = 8007212
+	country = IND
+	save_date = yes
+
+	name = EVT_8007212_NAME
+	desc = EVT_8007212_DESC
+	picture = "nwo\independence_of_india"
+	style = 1
+
+	date = { day = 2 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		### First government
+		command = { trigger = { NOT = { event = 8007205 } } type = trigger which = 8007205 }
+		command = { type = dissent value = 5 }
+		command = { type = add_division value = motorized when = 5 }
+		command = { type = add_division value = motorized when = 5 }
+		# 20 infantry divisions
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		# 3 bergsjaeger divisions
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		# 10 garrison division
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+	}                                                           
+}
+
+### Acquisition of princely states
+event = {
+	id = 8007213
+	country = IND
+
+	name = EVT_8007213_NAME
+	desc = EVT_8007213_DESC
+	picture = "nwo\independence_of_india"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 14
+	deathdate = { day = 30 month = december year = 1963 }
+
+	# Iron fist in a velvet glove
+	action = {
+		name = EVT_8007213_A
+		ai_chance = 95
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 20 }
+	}
+	
+	# Let them retain self-governance
+	action = {
+		name = EVT_8007213_B
+		ai_chance = 5
+		command = { type = dissent value = 20 }
+		command = { type = industrial_modifier which = total value = -10 }
+		# Prevent acquisition of Kashmir
+		command = { type = setflag which = princely_states }
+	}
+
+}
+
+### First Kashmir War
+# Kashmir is set up
+
+event = {
+	id = 8007214
+	country = U80
+
+	name = EVT_8007214_NAME
+	desc = EVT_8007214_DESC
+	picture = "nwo\kashmir"
+	style = 1
+
+	trigger = {
+		event = 8214011 # event dividing India
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8007214_A
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+	}
+}
+
+# Kashmir decides its alignment
+event = {
+	id = 8007215
+	country = U80
+
+	name = EVT_8007215_NAME
+	desc = EVT_8007215_DESC
+	picture = "nwo\kashmir"
+	style = 1
+
+	trigger = {
+		event = 8007214 # event setting up Kashmir
+		### Armies have time to be set up
+		event = { id = 8007212 days = 60 }
+		event = { id = 8011020 days = 60 }
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+	# Kashmir acceeds India
+	action = {
+		name = EVT_8007215_A
+		trigger = { NOT = { flag = princely_states } }
+		ai_chance = 70
+		command = { type = trigger which = 8007216 }
+	}
+	
+	# Kashmir acceeds Pakistan
+	action = {
+		name = EVT_8007215_B
+		ai_chance = 25
+		command = { type = trigger which = 8007218 }
+	}
+	
+	# Kashmir tries to remain independent (very improbable)
+	action = {
+		name = EVT_8007215_C
+		ai_chance = 5
+		command = { type = trigger which = 8007220 }
+		command = { type = trigger which = 8007221 }
+	}
+}
+
+# Kashmir is annexed by India, triggers reaction of Pakistan
+
+event = {
+	id = 8007216
+	country = IND
+
+	name = EVT_8007216_NAME
+	desc = EVT_8007216_DESC
+	picture = "nwo\kashmir"
+	style = 1
+
+	action = {
+		name = EVT_8007216_A
+		command = { type = inherit which = U80 value = 1 }
+		command = { type = trigger which = 8007217 }
+	}
+}
+
+event = {
+	id = 8007217
+	country = PAK
+	save_date = yes
+
+	name = EVT_8007217_NAME
+	desc = EVT_8007217_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action = {
+		name = EVT_8007217_A
+		ai_chance = 98
+		command = { type = war which = IND }
+	}
+	
+	# Leave them in peace
+	action = {
+		name = EVT_8007217_B
+		ai_chance = 2
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+# Kashmir is annexed by Pakistan, triggers reaction of India
+
+event = {
+	id = 8007218
+	country = PAK
+
+	name = EVT_8007218_NAME
+	desc = EVT_8007218_DESC
+	picture = "nwo\kashmir"
+	style = 1
+
+	action = {
+		name = EVT_8007218_A
+		command = { type = inherit which = U80 value = 1 }
+		command = { type = trigger which = 8007219 }
+	}
+}
+
+event = {
+	id = 8007219
+	country = IND
+	save_date = yes
+
+	name = EVT_8007219_NAME
+	desc = EVT_8007219_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		NOT = { flag = princely_states }
+	}
+
+	# First Kashmir War
+	action = {
+		name = EVT_8007219_A
+		ai_chance = 95
+		command = { type = war which = PAK }
+	}
+	
+	# Leave them in peace
+	action = {
+		name = EVT_8007219_B
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+# Kashmir withholds accession, triggers reaction of India and Pakistan
+
+event = {
+	id = 8007220
+	country = IND
+
+	name = EVT_8007220_NAME
+	desc = EVT_8007220_DESC
+	picture = "nwo\kashmir"
+	style = 1
+	
+	trigger = {
+		NOT = { flag = princely_states }
+	}
+
+	# Force Kashmir into submission
+	action = {
+		name = EVT_8007220_A
+		ai_chance = 80
+		command = { type = war which = U80 }
+		command = { type = trigger which = 8007223 }
+	}
+	
+	# Leave them in peace
+	action = {
+		name = EVT_8007220_B
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8007221
+	country = PAK
+
+	name = EVT_8007221_NAME
+	desc = EVT_8007221_DESC
+	picture = "nwo\kashmir"
+	style = 1
+
+	# Force Kashmir into submission
+	action = {
+		name = EVT_8007221_A
+		ai_chance = 90
+		command = { type = war which = U80 }
+		command = { type = trigger which = 8007222 }
+	}
+	
+	# Leave them in peace
+	action = {
+		name = EVT_8007221_B
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+	}
+}
+
+# India/Pakistan DOWs independent Kashmir, triggers reaction of the other party
+
+event = {
+	id = 8007222
+	country = IND
+	save_date = yes
+
+	name = EVT_8007222_NAME
+	desc = EVT_8007222_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		NOT = { flag = princely_states }
+	}
+
+	# First Kashmir War
+	action = {
+		name = EVT_8007222_A
+		ai_chance = 90
+		command = { type = war which = PAK }
+	}
+	
+	# Leave them in peace
+	action = {
+		name = EVT_8007222_B
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8007223
+	country = PAK
+	save_date = yes
+
+	name = EVT_8007223_NAME
+	desc = EVT_8007223_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action = {
+		name = EVT_8007223_A
+		ai_chance = 95
+		command = { type = war which = IND }
+	}
+	
+	# Leave them in peace
+	action = {
+		name = EVT_8007223_B
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+### End of the First Kashmir War
+# Total Pakistani victory
+
+event = {
+	id = 8007224
+	country = PAK
+
+	name = EVT_8007224_NAME
+	desc = EVT_8007224_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		OR = {
+			event = { id = 8007217 days = 30 }
+			event = { id = 8007219 days = 30 }
+			event = { id = 8007222 days = 30 }
+			event = { id = 8007223 days = 30 }
+		}
+		OR = {
+			AND = {
+				control = { province = 1540 data = PAK } # Srinagar
+				OR = {	
+					area = { area = "Eastern Ghat" country = PAK data = 1 value = 50 }
+					area = { area = "Rajastan" country = PAK data = 1 value = 50 }
+					area = { area = "Delhi" country = PAK data = 1 value = 50 }
+					control = { province = 1459 data = PAK } # Delhi
+				}
+				NOT = { exists = U80 }
+			}
+			NOT = { exists = IND }
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8007224_A
+		command = { type = peace which = IND value = 1 }
+		command = { trigger = { NOT = { exists = IND } } type = independence which = IND value = 0 }
+		command = { type = trigger which = 8007225 }
+		# Sleep other peace events
+		command = { type = sleepevent which = 8007226 }
+		command = { type = sleepevent which = 8007228 }
+		command = { type = sleepevent which = 8007230 }
+		command = { type = sleepevent which = 8007232 }
+	}
+}
+
+event = {
+	id = 8007225
+	country = IND
+
+	name = EVT_8007225_NAME
+	desc = EVT_8007225_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action = {
+		name = EVT_8007225_A
+		command = { type = secedeprovince which = PAK value = 1539 when = 2 } # Muzaffarabad
+		command = { type = secedeprovince which = PAK value = 1540 when = 2 } # Srinagar
+		command = { type = secedeprovince which = PAK value = 1278 when = 2 } # Sumdo
+		command = { type = secedeprovince which = PAK value = 1535 when = 1 } # Amritsar
+		command = { type = secedeprovince which = PAK value = 1453 when = 1 } # Dharmasala
+		command = { type = secedeprovince which = PAK value = 1531 when = 1 } # Ludhiana
+		command = { type = secedeprovince which = PAK value = 1454 when = 1 } # Simla
+		# Gains in Bangladesh
+		command = { type = secedeprovince which = PAK value = 1447 when = 1 }
+		command = { type = secedeprovince which = PAK value = 1440 when = 1 }
+		command = { type = secedeprovince which = PAK value = 1448 when = 1 }
+		# Kavaratti!
+		command = { type = secedeprovince which = PAK value = 1612 when = 1 }
+	}
+}
+
+# Marginal Pakistani victory
+
+event = {
+	id = 8007226
+	country = PAK
+
+	name = EVT_8007226_NAME
+	desc = EVT_8007226_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		OR = {
+			event = { id = 8007217 days = 150 }
+			event = { id = 8007219 days = 150 }
+			event = { id = 8007222 days = 150 }
+			event = { id = 8007223 days = 150 }
+		}
+		control = { province = 1540 data = IND } # Srinagar
+		control = { province = 1539 data = IND } # Muzaffarabad
+		NOT = { exists = U80 }
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8007226_A
+		command = { type = peace which = IND value = 1 }
+		command = { type = trigger which = 8007227 }
+		# Sleep other peace events
+		command = { type = sleepevent which = 8007224 }
+		command = { type = sleepevent which = 8007228 }
+		command = { type = sleepevent which = 8007230 }
+		command = { type = sleepevent which = 8007232 }
+	}
+}
+
+event = {
+	id = 8007227
+	country = IND
+
+	name = EVT_8007227_NAME
+	desc = EVT_8007227_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action = {
+		name = EVT_8007227_A
+		command = { type = secedeprovince which = PAK value = 1539 when = 2 } # Muzaffarabad
+		command = { type = secedeprovince which = PAK value = 1540 when = 2 } # Srinagar
+		command = { type = secedeprovince which = PAK value = 1278 when = 2 } # Sumdo
+	}
+}
+
+# Stalemate
+
+event = {
+	id = 8007228
+	country = IND
+
+	name = EVT_8007228_NAME
+	desc = EVT_8007228_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		OR = {
+			event = { id = 8007217 days = 150 }
+			event = { id = 8007219 days = 150 }
+			event = { id = 8007222 days = 150 }
+			event = { id = 8007223 days = 150 }
+		}
+		control = { province = 1540 data = IND } # Srinagar
+		control = { province = 1539 data = PAK } # Muzaffarabad
+		NOT = { exists = U80 }
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8007228_A
+		command = { type = peace which = PAK value = 1 }
+		command = { type = trigger which = 8007229 }
+		command = { type = sleepevent which = 8007224 }
+		command = { type = sleepevent which = 8007226 }
+		command = { type = sleepevent which = 8007230 }
+		command = { type = sleepevent which = 8007232 }
+	}
+}
+
+event = {
+	id = 8007229
+	country = PAK
+
+	name = EVT_8007229_NAME
+	desc = EVT_8007229_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action = {
+		name = EVT_8007229_A
+		command = { type = secedeprovince which = PAK value = 1539 when = 2 } # Muzaffarabad
+		command = { type = secedeprovince which = IND value = 1540 when = 2 } # Srinagar
+		command = { type = secedeprovince which = IND value = 1278 when = 2 } # Sumdo
+	}
+}
+
+# Marginal Indian victory
+
+event = {
+	id = 8007230
+	country = IND
+
+	name = EVT_8007230_NAME
+	desc = EVT_8007230_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		OR = {
+			event = { id = 8007217 days = 150 }
+			event = { id = 8007219 days = 150 }
+			event = { id = 8007222 days = 150 }
+			event = { id = 8007223 days = 150 }
+		}
+		control = { province = 1540 data = IND } # Srinagar
+		control = { province = 1539 data = IND } # Muzaffarabad
+		NOT = { exists = U80 }
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8007230_A
+		command = { type = peace which = PAK value = 1 }
+		command = { type = trigger which = 8007231 }
+		command = { type = sleepevent which = 8007224 }
+		command = { type = sleepevent which = 8007226 }
+		command = { type = sleepevent which = 8007228 }
+		command = { type = sleepevent which = 8007232 }
+	}
+}
+
+event = {
+	id = 8007231
+	country = PAK
+
+	name = EVT_8007231_NAME
+	desc = EVT_8007231_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action = {
+		name = EVT_8007231_A
+		command = { type = secedeprovince which = IND value = 1539 when = 2 } # Muzaffarabad
+		command = { type = secedeprovince which = IND value = 1540 when = 2 } # Srinagar
+		command = { type = secedeprovince which = IND value = 1278 when = 2 } # Sumdo
+	}
+}
+
+# Total Indian victory
+
+event = {
+	id = 8007232
+	country = IND
+
+	name = EVT_8007224_NAME
+	desc = EVT_8007224_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		OR = {
+			event = { id = 8007217 days = 30 }
+			event = { id = 8007219 days = 30 }
+			event = { id = 8007222 days = 30 }
+			event = { id = 8007223 days = 30 }
+		}
+		control = { province = 1540 data = IND } # Srinagar
+		control = { province = 1539 data = IND } # Muzaffarabad
+		OR = {
+			control = { province = 1534 data = IND } # Islamabad
+			control = { province = 1533 data = IND } # Karachi
+		}
+		NOT = { exists = U80 }
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8007224_A
+		command = { type = peace which = PAK value = 1 }
+		command = { type = trigger which = 8007233 }
+		command = { type = sleepevent which = 8007224 }
+		command = { type = sleepevent which = 8007226 }
+		command = { type = sleepevent which = 8007228 }
+		command = { type = sleepevent which = 8007230 }
+	}
+}
+
+event = {
+	id = 8007233
+	country = PAK
+
+	name = EVT_8007233_NAME
+	desc = EVT_8007233_DESC
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action = {
+		name = EVT_8007231_A
+		command = { type = secedeprovince which = IND value = 1539 when = 2 } # Muzaffarabad
+		command = { type = secedeprovince which = IND value = 1540 when = 2 } # Srinagar
+		command = { type = secedeprovince which = IND value = 1278 when = 2 } # Sumdo
+		command = { type = secedeprovince which = IND value = 1532 when = 2 }
+		command = { type = secedeprovince which = IND value = 1536 when = 2 }
+		# East Pakistan
+		command = { type = secedeprovince which = IND value = 1439 when = 2 }
+		command = { type = secedeprovince which = IND value = 1450 when = 2 }
+	}
+}
+
+### Invasion of Goa
+
+event = {
+	id = 8007240
+	country = IND
+
+	name = EVT_8007240_NAME
+	desc = EVT_8007240_DESC
+	picture = "nwo\invasion_of_goa"
+	decision_picture = "nwo\d_invasion_of_goa"
+	style = 1
+	
+	decision = {
+		control = { province = 1513 data = POR }
+		NOT = { alliance = { country = IND country = POR } }
+	}
+	
+	decision_trigger = {
+		control = { province = 1513 data = POR }
+		NOT = { alliance = { country = IND country = POR } }
+	}
+	
+	trigger = {
+		control = { province = 1513 data = POR }
+		NOT = { alliance = { country = IND country = POR } }
+	}
+
+	date = { day = 18 month = december year = 1961 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	# Carry out Operation Vijay
+	action = {
+		name = EVT_8007240_A
+		ai_chance = 98
+		command = { type = money value = -200 }
+		command = { type = belligerence value = 5 }
+	}
+	
+	# Better not
+	action = {
+		name = EVT_8007240_B
+		trigger = { ai = yes }
+		ai_chance = 2
+		command = { type = relation which = POR value = 100 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 8007241 }
+	}
+}
+
+event = {
+	id = 8007241
+	country = POR
+	one_action = yes
+
+	name = EVT_8007241_NAME
+	desc = EVT_8007241_DESC
+	picture = "nwo\invasion_of_goa"
+	style = 1
+	
+	trigger = {
+		event = 8007240
+	}
+	
+	date = { day = 18 month = december year = 1961 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	# Operation Vijay is a success
+	action = {
+		name = EVT_8007241_A
+		ai_chance = 95
+		command = { type = dissent value = 5 }
+		command = { type = secedeprovince which = IND value = 1513 }
+		command = { type = trigger which = 8007242 }
+	}
+	
+	# Operation Vijay is a failure
+	action = {
+		name = EVT_8007241_B
+		ai_chance = 5
+		command = { type = dissent value = -3 }
+		command = { type = trigger which = 8007243 }
+	}
+}
+
+event = {
+	id = 8007242
+	country = IND
+
+	name = EVT_8007242_NAME
+	desc = EVT_8007242_DESC
+	picture = "nwo\invasion_of_goa"
+	style = 1
+
+	action = {
+		name = EVT_8007242_A
+		command = { type = dissent value = -3 }
+	}
+}
+
+event = {
+	id = 8007243
+	country = IND
+
+	name = EVT_8007243_NAME
+	desc = EVT_8007243_DESC
+	picture = "nwo\invasion_of_goa"
+	style = 1
+	
+	action = {
+		name = EVT_8007243_A
+		command = { type = dissent value = 3 }
+	}
+}

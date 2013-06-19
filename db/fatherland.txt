@@ -31,6 +31,8 @@ event = "db\events\fatherland\crisis\colonials.txt"
 event = "db\events\fatherland\asia\china.txt"
 event = "db\events\fatherland\asia\indochina.txt"
 event = "db\events\fatherland\asia\koreas.txt"
+event = "db\events\fatherland\asia\india.txt"
+event = "db\events\fatherland\asia\pakistan.txt"
 
 # COMINTERN
 event = "db\events\fatherland\comintern\comintern_conference.txt"

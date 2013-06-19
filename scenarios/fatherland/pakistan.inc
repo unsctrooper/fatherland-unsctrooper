@@ -4,7 +4,7 @@
 
 country = {
 	tag = PAK
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
+	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
 	
 	energy = 4000
 	metal = 2000
@@ -19,10 +19,32 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
 	
 	capital = 1533
 	
-	diplomacy = {
-		relation = { tag = ENG value = 50 }
-	}
+  diplomacy =
+  { 
+    #Axis
+	relation = { tag = GER value = 50 }
+	relation = { tag = ITA value = 20 }
 	
+	#Allies
+    relation = { tag = AST value = -50 }
+    relation = { tag = BHU value = 50 }
+    relation = { tag = CAN value = 10 }
+    relation = { tag = ENG value = -50 }
+    relation = { tag = U01 value = -50 }
+    relation = { tag = HOL value = -50 }
+    relation = { tag = NEP value = 50 } 
+    relation = { tag = NZL value = -100 }
+    relation = { tag = USA value = 30 }
+	
+	#Comintern
+    relation = { tag = SOV value = 25 }
+	
+	#Neutral
+    relation = { tag = TUR value = -50 }
+	relation = { tag = PER value = -100 }
+	relation = { tag = IND value = -200 }
+
+  }	
 	nationalprovinces = { 1538 1533 1532 1534 1539 1537 1530 1529 1536 1444 1449 1439 1445 1450 }
 	ownedprovinces = { 1538 1533 1532 1534 1539 1537 1530 1529 1536 1444 1449 1439 1445 1450 }
 	controlledprovinces = { 1538 1533 1532 1534 1539 1537 1530 1529 1536 1444 1449 1439 1445 1450 }

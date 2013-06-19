@@ -31,7 +31,7 @@ event = {
 		ai_chance = 90
 		command = { type = dissent value = -6 }
 		command = { type = set_domestic which = democratic value = 3 }
-		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = set_domestic which = political_left value = 3 }
 		command = { type = headofgovernment which = 425018 } # D. F. Malan
 		command = { type = foreignminister which = 425028 } # D. F. Malan
 		command = { type = armamentminister which = 425080 } # F.C. Erasmus

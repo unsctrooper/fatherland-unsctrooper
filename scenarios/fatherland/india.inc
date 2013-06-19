@@ -12,16 +12,36 @@ country = {
 	oil = 500
 	supplies = 1000
 	money = 100
-	
 	transports = 50
-	
 	manpower = 500
-	
 	capital = 1459
 	
-	diplomacy = {
-		relation = { tag = ENG value = 50 }
-	}
+  diplomacy =
+  { 
+    #Axis
+	relation = { tag = GER value = 100 }
+	relation = { tag = ITA value = 80 }
+	
+	#Allies
+    relation = { tag = AST value = -100 }
+    relation = { tag = BHU value = -50 }
+    relation = { tag = CAN value = -100 }
+    relation = { tag = ENG value = -50 }
+    relation = { tag = U01 value = -50 }
+    relation = { tag = HOL value = -100 }
+    relation = { tag = NEP value = -50 }
+    relation = { tag = NZL value = -200 }
+    relation = { tag = USA value = -20 }
+	
+	#Comintern
+    relation = { tag = SOV value = -100 }
+	
+	#Neutral
+    relation = { tag = TUR value = -10 }
+	relation = { tag = PER value = -100 }
+	relation = { tag = PAK value = -200 }
+
+  }
 	
 	nationalprovinces = { 1278 1442 1443 1421 1458 1455 1440 1441 1519 1520 1468 1528 1481 1469 1478 1451 1454 1486 1490 1508 1479 1480 1516 1488 1453 1489 1491 1505 1506 1507 1492 1485 1470 1446 1447 1471 1476 1483 1477 1482 1484 1521 1522 1518 1523 1524 1460 1461 1462 1531 1463 1527 1525 1517 1512 1487 1493 1494 1501 1502 1503 1495 1504 1448 1500 1496 1514 1472 1535 1526 1497 1452 1473 1464 1465 1498 1499 1474 1466 1515 1475 1467 1459 1540 1513 1612 }
 	ownedprovinces = { 1278 1442 1443 1421 1458 1455 1440 1441 1519 1520 1468 1528 1481 1469 1478 1451 1454 1486 1490 1508 1479 1480 1516 1488 1453 1489 1491 1505 1506 1507 1492 1485 1470 1446 1447 1471 1476 1483 1477 1482 1484 1521 1522 1518 1523 1524 1460 1461 1462 1531 1463 1527 1525 1517 1512 1487 1493 1494 1501 1502 1503 1495 1504 1448 1500 1496 1514 1472 1535 1526 1497 1452 1473 1464 1465 1498 1499 1474 1466 1515 1475 1467 1459 1540 1612 }

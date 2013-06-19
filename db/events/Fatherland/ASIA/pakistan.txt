@@ -1,0 +1,360 @@
+event = {
+	id = 8011007
+	country = PAK
+
+	name = EVT_8011007_NAME
+	desc = EVT_8011007_DESC
+	picture = "nwo\mohammed_ali_jinnah"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = EVT_8011007_A
+		ai_chance = 100
+		command = { type = sleepminister which = 725013 } # Mohammed Ali Jinnah
+		command = { type = sleepminister which = 725039 } # Mohammed Ali Jinnah
+		command = { type = headofstate which = 725040 } # Khwaja Nazimuddin
+		command = { type = headofgovernment which = 725042 } # Liaquat Ali Khan
+	}
+}
+
+event = {
+	id = 8011008
+	country = PAK
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 725041 } # Gholam Muhammad
+		command = { type = headofgovernment which = 725043 } # Khwaja Nazimuddin
+		command = { type = foreignminister which = 725046 } # Husain Suhrawandy
+		command = { type = armamentminister which = 725047 } # Abdul Wahab Khan
+		command = { type = ministerofsecurity which = 725048 } # Moulvi Tamizaddin Khan
+		command = { type = ministerofintelligence which = 725049 } # Abdul Wahab Khan
+	}
+}
+
+event = {
+	id = 8011009
+	country = PAK
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 725041 } # Gholam Muhammad
+		command = { type = headofgovernment which = 725044 } # Mohammad Ali Bogra
+	}
+}
+
+event = {
+	id = 8011010
+	country = PAK
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 725106 } # Iskander Mirza
+		command = { type = headofgovernment which = 725107 } # Chaudry Mohammad Ali
+	}
+}
+
+event = {
+	id = 8011011
+	country = PAK
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 725106 } # Iskander Mirza
+		command = { type = headofgovernment which = 725108 } # Huseyn Shaheed Suhrawardy
+	}
+}
+
+event = {
+	id = 8011012
+	country = PAK
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 725109 } # Muhammad Ayub Khan
+		command = { type = headofgovernment which = 725110 } # Sir Feroz Khan Noon
+	}
+}
+
+event = {
+	id = 8011013
+	country = PAK
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 725109 } # Muhammad Ayub Khan
+		command = { type = headofgovernment which = 725111 } # Muhammad Ayub Khan
+	}
+}
+
+event = {
+	id = 8011014
+	country = PAK
+
+	name = EVT_8011014_NAME #"New capital of Islamabad"
+	desc = EVT_8011014_DESC
+	picture = "nwo\islamabad"
+	style = 1
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8011014_A #"Build Islamabad"
+		ai_chance = 90
+		command = { type = capital which = 1534 }
+		command = { type = construct which = ic where = 1534 value = 3 }
+        command = { type = construct which = infrastructure where = 1534 value = 20 }
+		command = { type = add_prov_resource which = 1534 value = 3 where = metal }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+		command = { type = add_prov_resource which = 1534 value = 2 where = rare_materials }
+		command = { type = money value = -2000 }
+	}
+	
+	action = {
+		name = EVT_8011014_B #Move to Rawalpindi
+		ai_chance = 5
+		command = { type = money value = 100 }
+	}
+	
+	action = {
+		name = EVT_8011014_C #"Stay in Karachi"
+		ai_chance = 5
+		command = { type = money value = 200 }
+	}
+
+}
+
+### Pakistan is set up
+
+event = {
+	id = 8011020
+	country = PAK
+	save_date = yes
+
+	name = EVT_8011020_NAME
+	desc = EVT_8011020_DESC
+	picture = "nwo\independence_of_pakistan"
+	style = 1
+
+	date = { day = 5 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8011020_A
+		### First government
+		#command = { trigger = { NOT = { event = 8007205 } } type = trigger which = 8007205 }
+		command = { type = dissent value = 5 }
+		# 1 Motorized division
+		command = { type = add_division value = motorized when = 5 }
+		
+		# 18 infantry divisions
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		# 3 bergsjaeger divisions
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		
+		# 5 garrison division
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		
+		## Transport force
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		
+		## A separate force for Bangladesh
+		command = { type = add_corps where = 1439 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }		
+		
+		command = { type = add_corps where = 1445 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		
+		command = { type = add_corps where = 1444 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		
+		command = { type = add_corps where = 1449 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		
+		command = { type = add_corps where = 1445 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		
+		command = { type = transport_pool which = PAK value = 80 }
+		command = { type = escort_pool which = PAK value = 30 }
+	}                                                           
+}
