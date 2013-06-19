@@ -252,7 +252,6 @@ construction = {
 	nuclear_reactor_prov = 1070
 	max_nuclear = 10
 }
-}
 
 military = { 
 	relative_build_scheme 	= no

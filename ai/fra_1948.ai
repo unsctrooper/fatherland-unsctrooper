@@ -293,7 +293,6 @@ construction = {
 	nuclear_reactor_prov = 77
 	max_nuclear = 10
 }
-}
 
 military = { 
 	relative_build_scheme 	= no
@@ -304,7 +303,7 @@ military = {
        	extra_convoys_peace = 0.0000
 
 	#### Divisions etc...
-	infantry 		= 45
+	infantry 		= 40
 	cavalry 		= 0
 	motorized 		= 10
 	mechanized 		= 10
