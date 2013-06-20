@@ -26,6 +26,7 @@ event = "db\events\fatherland\crisis\abadan_crisis.txt"
 event = "db\events\fatherland\crisis\centralasia.txt"
 event = "db\events\fatherland\crisis\ira.txt"
 event = "db\events\fatherland\crisis\colonials.txt"
+event = "db\events\fatherland\crisis\sino_indian_war.txt"
 
 # ASIA
 event = "db\events\fatherland\asia\china.txt"
@@ -33,6 +34,8 @@ event = "db\events\fatherland\asia\indochina.txt"
 event = "db\events\fatherland\asia\koreas.txt"
 event = "db\events\fatherland\asia\india.txt"
 event = "db\events\fatherland\asia\pakistan.txt"
+event = "db\events\fatherland\asia\tibet.txt"
+event = "db\events\fatherland\asia\sinkiang.txt"
 
 # COMINTERN
 event = "db\events\fatherland\comintern\comintern_conference.txt"

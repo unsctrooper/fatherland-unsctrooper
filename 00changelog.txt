@@ -7,6 +7,10 @@
 - Event chain (15+) on Colonialism
 - Formation of North and South Korea Armies
 - Indo-Pakistan war and more events (thanks to NWO2)
+- Added Tibet events (thanks to NWO2)
+- Added Sinkiang events (thanks to NWO2)
+- Sino-Indian crisis (thanks to NWO2)
+
 
 # Scenario files (INC):
 - Review of IC Germany/USSR 
@@ -18,8 +22,10 @@
 - Review of Pakistan
 - Review of India
 
-#Other
+# AI
 - Improved AI for France, Free France, Soviet Union, Germany & United Kingdom
+
+#Other
 - Remove duplicate files
 - Implementing of Cold War Tech Tree Expansion
 

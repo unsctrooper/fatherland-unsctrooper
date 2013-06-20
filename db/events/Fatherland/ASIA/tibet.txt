@@ -1,0 +1,528 @@
+event = {
+	id = 8015101
+	country = TIB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1941 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 440011 } # Taktra Rinpoche
+	}
+}
+
+event = {
+	id = 8015102
+	country = TIB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 440200 } # Tenzin Jigme
+	}
+}
+
+### Relations with Communist China
+
+event = {
+	id = 8015103
+	country = CHC
+
+	name = EVT_8015103_NAME
+	desc = EVT_8015103_DESC
+	picture = nwo\dalai_lama_with_mao
+	style = 1
+
+	trigger = {
+		exists = TIB
+		NOT = { ispuppet = TIB }
+		flag = CHC_won_civil_war
+	}
+
+	date = { day = 1 month = july year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015103_A #"Put pressure"
+		ai_chance = 98
+		command = { type = belligerence value = 5 }
+		command = { type = addcore which = 1455 }
+		command = { type = addcore which = 1458 }
+		# Remove cores for a moment
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1286 }
+		command = { type = removecore which = 1287 }
+		command = { type = removecore which = 1288 }
+		command = { type = removecore which = 1289 }
+		command = { type = removecore which = 1290 }
+		command = { type = removecore which = 1294 }
+		command = { type = removecore which = 1295 }
+	}
+	
+	action = {
+		name = EVT_8015103_B #"Let them be"
+		ai_chance = 2
+		command = { type = sleepevent which = 8015104 }
+		command = { type = belligerence value = -10 }
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1286 }
+		command = { type = removecore which = 1287 }
+		command = { type = removecore which = 1288 }
+		command = { type = removecore which = 1289 }
+		command = { type = removecore which = 1290 }
+		command = { type = removecore which = 1294 }
+		command = { type = removecore which = 1295 }
+	}
+
+}
+
+# Recognizing nominal Chinese superiority
+event = {
+	id = 8015104
+	country = TIB
+
+	name = EVT_8015104_NAME
+	desc = EVT_8015104_DESC
+	picture = nwo\dalai_lama_with_mao
+	style = 1
+
+	trigger = {
+		event = 8015103
+		exists = CHC
+		NOT = { ispuppet = TIB }
+	}
+
+	date = { day = 21 month = may year = 1951 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015104_A #"Seek coperation risking submission"
+		ai_chance = 98
+		command = { type = leave_alliance }
+		command = { type = dissent value = 5 }
+		command = { type = relation which = CHC value = 100 }
+		command = { type = access which = CHC }
+	}
+	
+	action = {
+		name = EVT_8015104_B #"Let there be war"
+		ai_chance = 2
+		command = { type = leave_alliance }
+		command = { type = war which = CHC }
+		command = { type = sleepevent value = 8015105 }
+	}
+
+}
+
+event = {
+	id = 8015105
+	country = CHC
+
+	name = EVT_8015105_NAME
+	desc = EVT_8015105_DESC
+	picture = nwo\seventeen_points_for_tibet
+	style = 1
+	
+	trigger = {
+		event = 8015104
+		exists = TIB
+	}
+
+	date = { day = 23 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		command = { type = dissent value = -5 }
+		command = { type = make_puppet which = TIB }
+				
+		command = { type = secedeprovince which = TIB value = 1278 }
+		command = { type = secedeprovince which = TIB value = 1286 }
+		command = { type = secedeprovince which = TIB value = 1287 }
+		command = { type = secedeprovince which = TIB value = 1288 }
+		command = { type = secedeprovince which = TIB value = 1289 }
+		command = { type = secedeprovince which = TIB value = 1290 }
+		command = { type = secedeprovince which = TIB value = 1294 }
+		command = { type = secedeprovince which = TIB value = 1295 }
+	}
+
+}
+
+event = {
+	id = 8015106
+	country = TIB
+	save_date = yes
+
+	name = EVT_8015106_NAME
+	desc = EVT_8015106_DESC
+	picture = nwo\tibetan_rebellion
+	style = 1
+
+	trigger = {
+		OR = {
+			puppet = { country = TIB country = CHC }
+			event = 8015105
+		}
+	}
+
+	date = { day = 1 month = march year = 1959 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015106_A #"Revolt is the only option"
+		ai_chance = 90
+		command = { type = end_puppet }
+		command = { type = war which = CHC }
+	}
+	
+	action = {
+		name = EVT_8015106_B #"Let Dalai Lama be abducted"
+		ai_chance = 10
+		command = { type = dissent value = 50 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = trigger which = 8015107 }
+	}
+
+}
+
+event = {
+	id = 8015107
+	country = CHC
+
+	name = EVT_8015107_NAME
+	desc = EVT_8015107_DESC
+	picture = nwo\no_unhealthy_thoughts
+	style = 1
+
+	action = {
+		name = EVT_8015107_A
+		ai_chance = 99
+		command = { type = inherit which = TIB value = 0 }
+	}
+	
+	action = {
+		name = EVT_8015107_B
+		ai_chance = 1
+		command = { type = removecore which = 1286 }
+		command = { type = removecore which = 1287 }
+		command = { type = removecore which = 1288 }
+		command = { type = removecore which = 1294 }
+		command = { type = removecore which = 1285 }
+		command = { type = removecore which = 1283 }
+		command = { type = removecore which = 1284 }
+		command = { type = removecore which = 1262 }
+		command = { type = removecore which = 1289 }
+		command = { type = removecore which = 1290 }
+		command = { type = removecore which = 1295 }
+		command = { type = make_puppet which = TIB }
+		command = { type = secedeprovince which = TIB value = 1289 when = 1 }
+		command = { type = secedeprovince which = TIB value = 1290 when = 1 }
+		command = { type = secedeprovince which = TIB value = 1295 when = 1 }
+	}
+
+}
+
+event = {
+	id = 8015108
+	country = TIB
+
+	name = EVT_8015108_NAME
+	desc = EVT_8015108_DESC
+	picture = nwo\destroyed_temple
+	style = 1
+	
+	trigger = {
+		event = 8015107
+	}
+
+	date = { day = 1 month = march year = 1959 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015108_A
+		command = { type = name where = TIB which = "TIB59" }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 3 }
+		# TODO: Set up communist government
+		command = { type = headofstate which = 440201 } # Panchen Lama Choekyi Gyaltsen
+		command = { type = headofgovernment which = 440202 } # Phuntsog Wangyal
+		command = { type = foreignminister which = 440018 } # Dudjom Rimpoche
+		command = { type = armamentminister which = 440027 } # Jigme Taring
+		command = { type = ministerofsecurity which = 440036 } # Gedun Choephel
+		command = { type = ministerofintelligence which = 440040 } # Chama Sanampo
+		command = { type = chiefofstaff which = 440044 } # Jampal Rabgyé Rinpoche
+		command = { type = chiefofarmy which = 440049 } # Jampal Rabgyé Rinpoche
+		command = { type = chiefofnavy which = 440051 } # Lhalu Tsewang Dorje
+		command = { type = chiefofair which = 440054 } # Bapa Yeshe
+	}
+}
+
+### Camp Hale
+
+event = {
+	id = 8015109
+	country = USA
+
+	name = EVT_8015109_NAME
+	desc = EVT_8015109_DESC
+	picture = nwo\camp_hale
+	style = 1
+
+	trigger = {
+		war = { country = CHC country = TIB }
+		government = democratic
+	}
+
+	date = { day = 1 month = march year = 1959 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015109_A # "Organize the training"
+		command = { type = relation which = TIB value = 300 }
+		command = { type = relation which = CHC value = -100 }
+		command = { type = money value = -100 }
+	}
+	
+	action = {
+		name = EVT_8015109_B #"Tibet is far away and of little interest"
+		command = { type = money value = 10 }
+		command = { type = sleepevent which = 8015110 }
+	}
+
+}
+
+event = {
+	id = 8015110
+	country = TIB
+
+	name = EVT_8015110_NAME
+	desc = EVT_8015110_DESC
+	picture = nwo\camp_hale
+	style = 1
+
+	trigger = {
+		war = { country = CHC country = TIB }
+		event = 8015109
+	}
+
+	date = { day = 1 month = march year = 1959 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015110_A
+		command = { type = add_division value = bergsjaeger when = 15 }
+	}
+
+}
+
+### Tibetan victory
+
+event = {
+	id = 8015111
+	country = TIB
+
+	name = EVT_8015111_NAME
+	desc = EVT_8015111_DESC
+	picture = nwo\dalai_lama
+	style = 1
+
+	trigger = {
+		event = { id = 8015106 days = 60 } 
+		war = { country = CHC country = TIB }
+		control = { province = 1289 data = -1 } # Lhasa
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015111_A
+		command = { type = peace which = CHC }
+		command = { type = dissent value = -25 }
+	}
+
+}
+
+### Nationalist China tries to subjugate Tibet
+
+event = {
+	id = 8015120
+	country = CHI
+
+	name = EVT_8015120_NAME
+	desc = EVT_8015120_DESC
+	picture = nwo\tibet
+	style = 1
+
+	trigger = {
+		exists = TIB
+		flag = CHI_won_civil_war
+	}
+
+	date = { day = 1 month = march year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015120_A #Demand them to join us
+		ai_chance = 80
+		command = { type = trigger which = 8015121 }
+	}
+	
+	action = {
+		name = EVT_8015120_B #Let them remain free
+		ai_chance = 20
+		command = { type = dissent value = 8 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1286 }
+		command = { type = removecore which = 1287 }
+		command = { type = removecore which = 1288 }
+		command = { type = removecore which = 1289 }
+		command = { type = removecore which = 1290 }
+		command = { type = removecore which = 1294 }
+		command = { type = removecore which = 1295 }
+	}
+
+}
+
+event = {
+	id = 8015121
+	country = TIB
+	save_date = yes
+
+	name = EVT_8015121_NAME
+	desc = EVT_8015121_DESC
+	picture = nwo\tibet
+	style = 1
+
+	action = {
+		name = EVT_8015121_A
+		ai_chance = 75
+		command = { type = leave_alliance }
+		command = { type = war which = CHI }
+	}
+	
+	action = {
+		name = EVT_8015121_B
+		ai_chance = 25
+		command = { type = trigger which = 8015122 }
+	}
+
+}
+
+event = {
+	id = 8015122
+	country = CHI
+
+	name = EVT_8015122_NAME
+	desc = EVT_8015122_DESC
+	picture = nwo\tibet
+	style = 1
+
+	action = {
+		name = EVT_8015122_A
+		command = { type = inherit which = TIB value = 0 }
+	}
+}
+
+### Tibetan victory
+
+event = {
+	id = 8015123
+	country = TIB
+
+	name = EVT_8015123_NAME
+	desc = EVT_8015123_DESC
+	picture = nwo\dalai_lama
+	style = 1
+
+	trigger = {
+		event = { id = 8015121 days = 180 } 
+		war = { country = CHI country = TIB }
+		control = { province = 1289 data = -1 } # Lhasa
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		command = { type = peace which = CHI }
+		command = { type = dissent value = -25 }
+	}
+
+}
+
+event = {
+	id = 8015124
+	country = CHC
+
+	name = EVT_8015124_NAME
+	desc = EVT_8015124_DESC
+	picture = nwo\no_unhealthy_thoughts
+	style = 1
+
+	trigger = {
+		NOT = { exists = TIB }
+		event = 8015103
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015124_A
+		# Readd cores
+		command = { type = addcore which = 1278 }
+		command = { type = addcore which = 1286 }
+		command = { type = addcore which = 1287 }
+		command = { type = addcore which = 1288 }
+		command = { type = addcore which = 1289 }
+		command = { type = addcore which = 1290 }
+		command = { type = addcore which = 1294 }
+		command = { type = addcore which = 1295 }
+	}
+
+}

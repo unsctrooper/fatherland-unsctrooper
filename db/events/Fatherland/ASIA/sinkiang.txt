@@ -1,0 +1,279 @@
+### Subjugation of Sinkiang
+
+event = {
+	id = 8013801
+	country = CHI
+
+	name = EVT_8013801_NAME
+	desc = EVT_8013801_DESC
+	picture = "nwo\sinkiang"
+	style = 1
+
+	trigger = {
+		exists = SIK
+		NOT = { war = { country = CHI country = SIK } }
+	}
+
+	date = { day = 0 month = august year = 1944 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1944 }
+
+	action = {
+		name = EVT_8013801_A # Recall Sheng Shicai
+		ai_chance = 95
+		command = { type = inherit which = SIK value = 0 }
+	}
+	
+	action = {
+		name = EVT_8013801_B # Leave him at the post
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+### Soviet acquisition of Sinkiang
+
+event = {
+	id = 8013802
+	country = SOV
+
+	name = EVT_8013802_NAME
+	desc = EVT_8013802_DESC
+	picture = "nwo\sinkiang"
+	style = 1
+
+	trigger = {
+		exists = SIK
+		event = 8013801
+	}
+
+	date = { day = 0 month = august year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = EVT_8013802_A # Accept the offer
+		ai_chance = 60
+		command = { type = inherit which = SIK value = 0 }
+		command = { type = dissent value = 5 }
+		command = { type = belligerence value = 25 }
+	}
+	
+	action = {
+		name = EVT_8013802_B # Leave matters as they are
+		ai_chance = 40
+		command = { type = relation which = CHI value = 100 }
+		command = { type = relation which = CHC value = 100 }
+	}
+}
+
+### Three District Rebellion
+
+event = {
+	id = 8013803
+	country = CHI
+
+	name = EVT_8013803_NAME
+	desc = EVT_8013803_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+
+	trigger = {
+		exists = SIK
+		event = 8013801
+	}
+
+	date = { day = 0 month = november year = 1944 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = EVT_8013803_A
+		command = { type = independence which = SIK value = 1 }
+		command = { type = trigger which = 8013804 }
+	}
+}
+
+# Second Turkestan Republic
+
+event = {
+	id = 8013804
+	country = SIK
+
+	name = EVT_8013804_NAME
+	desc = EVT_8013804_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = name where = SIK which = "SIK44" }
+		command = { type = flag_ext where = SIK which = "_eastturkestan" }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 420100 } # Ali Khan T?re
+		command = { type = headofgovernment which = 420101 } # Ehmetjan Qasim
+		command = { type = addcore which = 1281 }
+		command = { type = addcore which = 1275 }
+		command = { type = addcore which = 1279 }
+		command = { type = addcore which = 1282 }
+		command = { type = addcore which = 1274 }
+		command = { type = addcore which = 1277 }
+		
+		command = { type = add_division value = cavalry when = 2 }
+		command = { type = add_division value = militia when = 1 }
+		command = { type = add_division value = militia when = 1 }
+		command = { type = add_division value = militia when = 1 }
+	}
+}
+
+### End of Second Turkestan Republic
+
+event = {
+	id = 8013805
+	country = CHC
+
+	name = EVT_8013805_NAME
+	desc = EVT_8013805_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+	
+	trigger = {
+		exists = SIK
+		flag = CHC_won_civil_war
+	}
+	
+	date = { day = 0 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8013805_A # Create a plot to annex Turkestan
+		ai_chance = 100
+		command = { type = trigger which = 8013806 }
+	}
+	
+	action = {
+		name = EVT_8013805_B # Leave them be
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8013806
+	country = SIK
+
+	name = EVT_8013806_NAME
+	desc = EVT_8013806_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+
+	action = {
+		name = EVT_8013806_A # Accept invitation (Game Over)
+		ai_chance = 90
+		command = { type = trigger which = 8013807 }
+	}
+	
+	action = {
+		name = EVT_8013806_B # See through the machinations
+		ai_chance = 10
+		command = { type = dissent value = 10 }
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = war which = CHC }
+	}
+}
+
+event = {
+	id = 8013807
+	country = CHC
+
+	name = EVT_8013807_NAME
+	desc = EVT_8013807_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+
+	action = {
+		name = EVT_8013807_A
+		ai_chance = 100
+		command = { type = inherit which = SIK value = 0 }
+	}
+
+}
+
+### End of Turkestan - Nationalist version
+
+event = {
+	id = 8013808
+	country = CHI
+
+	name = EVT_8013808_NAME
+	desc = EVT_8013808_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+	
+	trigger = {
+		exists = SIK
+		flag = CHI_won_civil_war
+	}
+	
+	date = { day = 0 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8013808_A # Demand them to join
+		ai_chance = 100
+		command = { type = trigger which = 8013809 }
+	}
+	
+	action = {
+		name = EVT_8013808_B # Leave them be
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8013809
+	country = SIK
+
+	name = EVT_8013809_NAME
+	desc = EVT_8013809_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+
+	action = {
+		name = EVT_8013809_A # Accept (Game Over)
+		ai_chance = 80
+		command = { type = trigger which = 8013810 }
+	}
+	
+	action = {
+		name = EVT_8013809_B # We'll defend ourselves!
+		ai_chance = 20
+		command = { type = dissent value = 10 }
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = war which = CHI }
+	}
+}
+
+event = {
+	id = 8013810
+	country = CHI
+
+	name = EVT_8013810_NAME
+	desc = EVT_8013810_DESC
+	picture = "nwo\east_turkestan"
+	style = 1
+
+	action = {
+		name = EVT_8013810_A
+		ai_chance = 100
+		command = { type = inherit which = SIK value = 0 }
+	}
+
+}

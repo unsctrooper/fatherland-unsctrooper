@@ -1,0 +1,643 @@
+# China expresses claims to borders (CHC)
+event = {
+	id = 8229000
+	country = CHC
+
+	name = EVT_8229000_NAME
+	desc = EVT_8229000_DESC
+	picture = nwo\himalayan_border
+	decision_picture = nwo\d_himalayan_border
+	style = 1
+	
+	decision = {
+		flag = cold_war
+		exists = IND
+		NOT = {
+			control = { province = 1278 data = -1 }
+			control = { province = 1455 data = -1 }
+			control = { province = 1458 data = -1 }
+		}
+		NOT = { war = { country = IND country = CHC } }
+	}
+
+	trigger = {
+		flag = cold_war
+		exists = IND
+		NOT = {
+			control = { province = 1278 data = -1 }
+			control = { province = 1455 data = -1 }
+			control = { province = 1458 data = -1 }
+		}
+		NOT = { war = { country = IND country = CHC } }
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = EVT_8229000_A # Put forward those claims
+		ai_chance = 90
+		command = { type = addcore which = 1278 }
+		command = { type = addcore which = 1455 }
+		command = { type = addcore which = 1458 }
+	}
+	
+	action = {
+		name = EVT_8229000_B # Drop the case
+		trigger = { ai = yes }
+		ai_chance = 10
+		command = { type = sleepevent which = 8229001 }
+	}
+}
+
+# India initiates Forward Policy (IND)
+event = {
+	id = 8229001
+	country = IND
+
+	name = EVT_8229001_NAME
+	desc = EVT_8229001_DESC
+	picture = nwo\himalayan_border
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229000
+		exists = CHC
+		NOT = { war = { country = IND country = CHC } }
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = EVT_8229001_A # Initiate the policy
+		ai_chance = 95
+		command = { type = construct which = land_fort where = 1278 value = 1 }
+		command = { type = construct which = land_fort where = 1455 value = 1 }
+		command = { type = construct which = land_fort where = 1458 value = 1 }
+	}
+	
+	action = {
+		name = EVT_8229001_B # Withdraw from those areas
+		ai_chance = 5
+		command = { type = dissent value = 3 }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+		command = { type = sleepevent which = 8229002 }
+	}
+}
+
+# Confrontation at Thag La (IND)
+event = {
+	id = 8229002
+	country = IND
+
+	name = EVT_8229002_NAME
+	desc = EVT_8229002_DESC
+	picture = nwo\thag_la
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229001
+		exists = CHC
+		NOT = { war = { country = IND country = CHC } }
+	}
+
+	date = { day = 0 month = june year = 1962 }
+	offset = 30
+	deathdate = { day = 30 month = june year = 1962 }
+
+	action = {
+		name = EVT_8229002_A # Hold the line! (high risk of war with China)
+		ai_chance = 95
+		command = { type = relation which = CHC value = -100 }
+	}
+	
+	action = {
+		name = EVT_8229002_B # Withdraw
+		ai_chance = 5
+		command = { type = dissent value = 8 }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+		command = { type = sleepevent which = 8229003 }
+	}
+}
+
+# Confrontation at Thag La (CHC)
+event = {
+	id = 8229003
+	country = CHC
+
+	name = EVT_8229003_NAME
+	desc = EVT_8229003_DESC
+	picture = nwo\thag_la
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229002
+		exists = IND
+		NOT = { war = { country = IND country = CHC } }
+	}
+
+	date = { day = 0 month = august year = 1962 }
+	offset = 30
+	deathdate = { day = 30 month = august year = 1962 }
+
+	action = {
+		name = EVT_8229003_A # This means war!
+		ai_chance = 95
+		command = { type = war which = IND }
+	}
+	
+	action = {
+		name = EVT_8229003_B # Withdraw
+		ai_chance = 5
+		command = { type = dissent value = 8 }
+		command = { type = secedeprovince which = IND value = 1278 when = 1 }
+		command = { type = secedeprovince which = IND value = 1455 when = 1 }
+		command = { type = secedeprovince which = IND value = 1458 when = 1 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1455 }
+		command = { type = removecore which = 1458 }
+		command = { type = sleepevent which = 8229010 }
+	}
+}
+
+### Early resolution of the war (ahistorical)
+
+# Early end of the war (CHC)
+event = {
+	id = 8229010
+	country = CHC
+
+	name = EVT_8229010_NAME
+	desc = EVT_8229010_DESC
+	picture = nwo\sino_indian_war
+	decision_picture = nwo\d_sino_indian_war
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229003
+		exists = IND
+		war = { country = IND country = CHC }
+	}
+	
+	decision = {
+		flag = cold_war
+		event = 8229003
+		exists = IND
+		war = { country = IND country = CHC }
+	}
+
+	date = { day = 0 month = september year = 1962 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = EVT_8229010_A # Send a letter
+		ai_chance = 95
+		command = { type = trigger which = 8229011 }
+		command = { type = dissent value = -3 }
+	}
+	
+	action = {
+		name = EVT_8229010_B # We'll not settle this early
+		ai_chance = 5
+		command = { type = sleepevent which = 8229011 }
+	}
+}
+
+# Early end of the war (IND)
+event = {
+	id = 8229011
+	country = IND
+
+	name = EVT_8229011_NAME
+	desc = EVT_8229011_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229010
+		war = { country = IND country = CHC }
+	}
+
+	date = { day = 0 month = september year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = EVT_8229011_A # We can do better
+		ai_chance = 95
+		command = { type = relation which = CHC value = -50 }
+	}
+	
+	action = {
+		name = EVT_8229011_B # It's enough
+		ai_chance = 5
+		command = { type = dissent value = 3 }
+		command = { type = peace which = CHC }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+	}
+}
+
+### Final settlement of the war (historical)
+
+# Chinese victory
+event = {
+	id = 8229020
+	country = CHC
+
+	name = EVT_8229020_NAME
+	desc = EVT_8229020_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229003
+		war = { country = IND country = CHC }
+		OR = {
+			control = { province = 1540 data = -1 }
+			control = { province = 1453 data = -1 }
+			control = { province = 1454 data = -1 }
+			control = { province = 1451 data = -1 }
+			control = { province = 1452 data = -1 }
+		}
+	}
+
+	date = { day = 0 month = november year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8229020_A # It's enough for us, announce end of war
+		ai_chance = 98
+		command = { type = peace which = IND }
+		command = { type = trigger which = 8229021 }
+	}
+	
+	action = {
+		name = EVT_8229020_B # Push further south
+		ai_chance = 2
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 25 }
+	}
+}
+
+event = {
+	id = 8229021
+	country = IND
+
+	name = EVT_8229021_NAME
+	desc = EVT_8229021_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	action = {
+		name = EVT_8229021_A # OK and revoke our claims
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1455 }
+		command = { type = removecore which = 1458 }
+	}
+	
+	action = {
+		name = EVT_8229021_B # We may reconquer it one day
+		ai_chance = 10
+		command = { type = dissent value = 8 }
+		command = { type = belligerence value = 15 }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+	}
+}
+
+# Indian victory
+event = {
+	id = 8229022
+	country = IND
+
+	name = EVT_8229022_NAME
+	desc = EVT_8229022_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229003
+		war = { country = IND country = CHC }
+		OR = {
+			control = { province = 1286 data = -1 }
+			control = { province = 1288 data = -1 }
+			control = { province = 1295 data = -1 }
+		}
+	}
+
+	date = { day = 0 month = november year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8229022_A # It's enough for us, announce end of war
+		ai_chance = 98
+		command = { type = peace which = CHC }
+		command = { type = trigger which = 8229023 }
+	}
+	
+	action = {
+		name = EVT_8229022_B # Push further north
+		ai_chance = 2
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 25 }
+	}
+}
+
+event = {
+	id = 8229023
+	country = CHC
+
+	name = EVT_8229023_NAME
+	desc = EVT_8229023_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	action = {
+		name = EVT_8229023_A # OK and revoke our claims
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = secedeprovince which = IND value = 1278 when = 1 }
+		command = { type = secedeprovince which = IND value = 1455 when = 1 }
+		command = { type = secedeprovince which = IND value = 1458 when = 1 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1455 }
+		command = { type = removecore which = 1458 }
+	}
+	
+	action = {
+		name = EVT_8229023_B # We may reconquer it one day
+		ai_chance = 10
+		command = { type = dissent value = 8 }
+		command = { type = belligerence value = 15 }
+		command = { type = secedeprovince which = IND value = 1278 when = 1 }
+		command = { type = secedeprovince which = IND value = 1455 when = 1 }
+		command = { type = secedeprovince which = IND value = 1458 when = 1 }
+	}
+}
+
+### Total victory (ahistorical)
+
+# Chinese victory
+event = {
+	id = 8229030
+	country = CHC
+
+	name = EVT_8229030_NAME
+	desc = EVT_8229030_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229003
+		war = { country = IND country = CHC }
+		OR = {
+			control = { province = 1535 data = -1 }
+			control = { province = 1531 data = -1 }
+			control = { province = 1463 data = -1 }
+			control = { province = 1460 data = -1 }
+			control = { province = 1464 data = -1 }
+			control = { province = 1446 data = -1 }
+			control = { province = 1442 data = -1 }
+		}
+	}
+
+	date = { day = 0 month = november year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8229030_A # It's enough for us, announce end of war
+		ai_chance = 98
+		command = { type = peace which = IND }
+		command = { type = trigger which = 8229031 }
+	}
+	
+	action = {
+		name = EVT_8229030_B # The war goes total!!
+		ai_chance = 2
+		command = { type = dissent value = 25 }
+		command = { type = belligerence value = 100 }
+	}
+}
+
+event = {
+	id = 8229031
+	country = IND
+
+	name = EVT_8229031_NAME
+	desc = EVT_8229031_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	action = {
+		name = EVT_8229031_A # OK and revoke our claims
+		ai_chance = 90
+		command = { type = dissent value = 15 }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1540 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1453 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1454 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1451 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1452 when = 1 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1455 }
+		command = { type = removecore which = 1458 }
+		command = { type = removecore which = 1540 }
+		command = { type = removecore which = 1453 }
+		command = { type = removecore which = 1454 }
+		command = { type = removecore which = 1451 }
+		command = { type = removecore which = 1452 }
+	}
+	
+	action = {
+		name = EVT_8229031_B # We may reconquer it one day
+		ai_chance = 10
+		command = { type = dissent value = 25 }
+		command = { type = belligerence value = 30 }
+		command = { type = secedeprovince which = CHC value = 1278 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1455 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1458 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1540 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1453 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1454 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1451 when = 1 }
+		command = { type = secedeprovince which = CHC value = 1452 when = 1 }
+	}
+}
+
+# Indian victory
+event = {
+	id = 8229032
+	country = IND
+
+	name = EVT_8229032_NAME
+	desc = EVT_8229032_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229003
+		war = { country = IND country = CHC }
+		control = { province = 1289 data = -1 } # Lhasa
+	}
+
+	date = { day = 0 month = november year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8229032_A # It's enough for us, announce end of war
+		ai_chance = 98
+		command = { type = peace which = CHC }
+		command = { type = trigger which = 8229033 }
+	}
+	
+	action = {
+		name = EVT_8229032_B # The war goes total!!
+		ai_chance = 2
+		command = { type = dissent value = 25 }
+		command = { type = belligerence value = 100 }
+	}
+}
+
+event = {
+	id = 8229033
+	country = CHC
+
+	name = EVT_8229033_NAME
+	desc = EVT_8229033_DESC
+	picture = nwo\sino_indian_war
+	style = 1
+
+	action = {
+		name = EVT_8229033_A # OK and revoke our claims
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = secedeprovince which = IND value = 1278 when = 1 }
+		command = { type = secedeprovince which = IND value = 1455 when = 1 }
+		command = { type = secedeprovince which = IND value = 1458 when = 1 }
+		command = { type = secedeprovince which = IND value = 1286 when = 1 }
+		command = { type = secedeprovince which = IND value = 1287 when = 1 }
+		command = { type = secedeprovince which = IND value = 1288 when = 1 }
+		command = { type = secedeprovince which = IND value = 1289 when = 1 }
+		command = { type = secedeprovince which = IND value = 1290 when = 1 }
+		command = { type = secedeprovince which = IND value = 1295 when = 1 }
+		command = { type = secedeprovince which = IND value = 1294 when = 1 }
+		command = { type = secedeprovince which = IND value = 1285 when = 1 }
+		command = { type = removecore which = 1278 }
+		command = { type = removecore which = 1455 }
+		command = { type = removecore which = 1458 }
+		command = { type = removecore which = 1286 }
+		command = { type = removecore which = 1287 }
+		command = { type = removecore which = 1288 }
+		command = { type = removecore which = 1289 }
+		command = { type = removecore which = 1290 }
+		command = { type = removecore which = 1295 }
+		command = { type = removecore which = 1294 }
+		command = { type = removecore which = 1285 }
+	}
+	
+	action = {
+		name = EVT_8229033_B # We may reconquer it one day
+		ai_chance = 10
+		command = { type = dissent value = 8 }
+		command = { type = belligerence value = 15 }
+		command = { type = secedeprovince which = IND value = 1278 when = 1 }
+		command = { type = secedeprovince which = IND value = 1455 when = 1 }
+		command = { type = secedeprovince which = IND value = 1458 when = 1 }
+	}
+}
+
+
+# Tibet is free again (IND)
+
+event = {
+	id = 8229034
+	country = IND
+
+	name = EVT_8229034_NAME
+	desc = EVT_8229034_DESC
+	picture = nwo\free_tibet
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229033
+		control = { province = 1289 data = -1 } # Lhasa
+	}
+
+	date = { day = 0 month = november year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8229034_A # Set Tibet free!
+		ai_chance = 98
+		command = { type = independence which = TIB value = 1 }
+		command = { type = make_puppet which = TIB }
+	}
+	
+	action = {
+		name = EVT_8229034_B # Continue military occupation
+		ai_chance = 2
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 100 }
+	}
+}
+
+# Tibet is free again (TIB)
+
+event = {
+	id = 8229035
+	country = TIB
+
+	name = EVT_8229035_NAME
+	desc = EVT_8229035_DESC
+	picture = nwo\free_tibet
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		event = 8229034
+	}
+
+	date = { day = 0 month = november year = 1962 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8229035_A
+		command = { type = access which = IND }
+		command = { type = headofstate which = 440001 } # Dalai Lama
+		command = { type = headofgovernment which = 440200 } # Tenzin Jigme
+	}
+}
