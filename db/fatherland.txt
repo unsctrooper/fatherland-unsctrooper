@@ -45,6 +45,7 @@ event = "db\events\fatherland\americas\marshallplan.txt"
 
 # AFRICA
 event = "db\events\fatherland\africa\south_africa.txt"
+event = "db\events\fatherland\africa\ethiopia.txt"
 
 # Secret Weapons
 event = "db\events\secret_weapon_events.txt"

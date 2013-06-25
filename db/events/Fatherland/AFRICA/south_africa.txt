@@ -1,6 +1,15 @@
 #########################################################
 # South Africa events - Based on NWO events - Credits by Pako
 # v.0.1
+###
+#### 8012601 - It's time for elections in South Africa
+#### 8012602 - Death of Smuts
+#### 8012603 - Apartheid
+#### 8012604 - Republican Referendum of 1951
+#### 8012605 - Republican Referendum of 1951 - GER Reaction
+#### 8012606 - Republican Referendum of 1951 - UK Reaction
+#### 8012607 - State visit to Germany (1952) - GER
+
 #########################################################
 
 #########################################################
@@ -10,7 +19,7 @@ event = {
 	id = 8012601
 	country = SAF
 
-	name = "It 's time for elections in South Africa"
+	name = "It's time for elections in South Africa"
 	desc = "There are two main factions, the main Afrikaner nationalist party, the Herenigde Nasionale Party (Reunited National Party) under the leadership of Protestant cleric Daniel Francois Malan and Democrat United Party, leaded by J.C.Smuts"
 	picture = "elections"
 	style = 1
@@ -28,7 +37,7 @@ event = {
 
 	action = {
 		name = "The majority goes to the right! D.F.Malan is our new Head of Government"
-		ai_chance = 90
+		ai_chance = 70
 		command = { type = dissent value = -6 }
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = set_domestic which = political_left value = 3 }
@@ -40,7 +49,7 @@ event = {
 	}
 	action = {
 		name = "The leftists win ! J.C.Smuts is our new Head of Government"
-		ai_chance = 10
+		ai_chance = 30
 		command = { type = dissent value = -2 }
 		command = { type = set_domestic which = democratic value = 8 }
 		command = { type = set_domestic which = political_left value = 5 }
@@ -74,7 +83,7 @@ event = {
 
 	action = {
 		name = "While walking through the streets of the capital's new prime minister was shot by a sniper, taking advantage of the situation D.F.Malan and his party take the control of parliament and of government"
-		ai_chance = 60
+		ai_chance = 70
 		command = { type = sleepminister which = 425005 } # Jan C. Smuts
 		command = { type = sleepminister which = 425006 } # Jan C. Smuts
 		command = { type = sleepminister which = 425008 } # Jan C. Smuts
@@ -99,7 +108,7 @@ event = {
 	}
 	action = {
 		name = "While walking through the streets of the capital's new prime minister was injured by a sniper, arrested the shooter is a man of D.F.Malan. Arrest him immediately"
-		ai_chance = 40
+		ai_chance = 30
 		command = { type = sleepminister which = 425018 } # D. F. Malan
 		command = { type = sleepminister which = 425080 } # F.C. Erasmus
 		command = { type = sleepminister which = 425046 } # T.E. D?nges
@@ -135,7 +144,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		name = "Shameful laws" #"Shameful laws"
+		name = "Shameful laws"
 		command = { type = dissent value = 10 }
 		command = { type = domestic which = democratic value = -1 }
 		command = { type = domestic which = freedom value = -4 }
@@ -151,7 +160,7 @@ event = {
 	country = SAF
 
 	name = "The Republica Referendum of 1951"
-	desc = "In 1960, the National Party government of South Africa held a referendum on whether the then Union of South Africa should abandon its status as a Commonwealth realm and become a republic. The Afrikaner-dominated right-wing National Party, which had come to power in 1948, was avowedly republican, and regarded South Africa's status as a Commonwealth realm as a relic of British imperialism"
+	desc = "In 1951, the National Party government of South Africa held a referendum on whether the then Union of South Africa should abandon its status as a Commonwealth realm and become a republic. The Afrikaner-dominated right-wing National Party, which had come to power in 1948, was avowedly republican, and regarded South Africa's status as a Commonwealth realm as a relic of British imperialism"
 	picture = "south_african_referendum_1960"
 	style = 1
 	
@@ -164,7 +173,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
-		name = "Become Republic of South Africa and leave allies" #"Become Republic of South Africa"
+		name = "Become Republic of South Africa and leave allies" 
 		ai_chance = 75
 		command = { type = name where = SAF which = "Republic of Sud Afrika" }
 		
@@ -175,6 +184,8 @@ event = {
 		command = { type = relation which = NZL value = -100 }		
 				
 		command = { type = leave_alliance }
+		command = { type = peace which = GER value = 1 }
+		command = { type = end_access which = ENG }
 		
 		command = { type = relation which = GER value = 100 }
 		command = { type = relation which = ITA value = 100 }
@@ -187,7 +198,7 @@ event = {
 	}
 	
 	action = {
-		name = "Remain Union of South Africa" #"Remain Union of South Africa"
+		name = "Remain Union of South Africa"
 		ai_chance = 25
 		command = { type = relation which = ENG value = 50 }
 		command = { type = dissent value = 1 }

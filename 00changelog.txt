@@ -2,15 +2,19 @@
 # New Changelog 
 ####################################
 
+# Bug fixing:
+- Fixed South Africa chain
+- Fixed Vladivostok Conference
+
 # Events/Decisions:
-- Review/fixes South Africa events
+- Review of South Africa events
 - Event chain (15+) on Colonialism
 - Formation of North and South Korea Armies
 - Indo-Pakistan war and more events (thanks to NWO2)
 - Added Tibet events (thanks to NWO2)
 - Added Sinkiang events (thanks to NWO2)
 - Sino-Indian crisis (thanks to NWO2)
-
+- British-Ethiopian war
 
 # Scenario files (INC):
 - Review of IC Germany/USSR 

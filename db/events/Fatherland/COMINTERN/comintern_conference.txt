@@ -366,7 +366,7 @@ event = {
 				event = 601
 				event = 602
 				event = 603
-				event = 604
+				#event = 604
         }
  
         name = "The Conference begins"

@@ -1,0 +1,610 @@
+################################################
+### ETHIOPIA EVENTS made by Pako
+################################################
+#### 91664 - ETH - The Addis Abeba-Mogadishu Railroad
+#### 91665 - ETH - The Cattle war
+#### 91666 - ETH - The Ethiopian sea access problem
+#### 91667 - ETH - British reaction (Eritrea)
+#### 91668 - ENG - British reaction (Somaliland)
+#### 91669 - ENG - British reaction (Somalia)
+#### 91670 - ENG - British reaction (East Africa)	
+#### 91671 - ETH - Spread Ethiopia ! 
+#### 91672 - ENG - Armistice - Lost Eritrea (England)
+#### 91673 - ETH - Armistice - Lost Eritrea (Ethiopia)
+#### 91674 - ENG - Armistice - Lost Somaliland (England)
+#### 91675 - ETH - Armistice - Lost Somaliland (Ethiopia)
+#### 91676 - ENG - Armistice - Lost Somalia (England)
+#### 91677 - ETH - Armistice - Lost Somalia (Ethiopia)
+#### 91678 - ENG - Armistice - Lost East Africa (England)
+#### 91679 - ETH - Armistice - Lost East Africa (Ethiopia)
+################################################
+
+#########################################################
+#### 91664 - ETH - The Addis Abeba-Mogadishu Railroad
+#########################################################
+	 event = {
+		id = 91664
+		random = no
+		country = ETH
+
+		 name = "The Addis Abeba-Mogadishu Railroad"
+		 desc = "A private english consortium has begun building a railroad running from Addis Abeba to Mogadishu"
+		 style = 2
+		 picture = "news_paper"
+
+		 trigger = {
+			 NOT = {
+				exists = SOM
+				war = { country = ENG country = ETH }
+			 }
+		 }
+		 
+		 date = { day = 1 month = january year = 1949 }
+		 offset = 100 
+		 deathdate = { day = 30 month = january year = 1960 }
+		 
+		 action_a = {
+			name = "It's true, at the end we need a railroad"
+			command = { type = construct which = infrastructure where = 825 value = 10 }
+			command = { type = construct which = infrastructure where = 831 value = 10 }		
+			command = { type = construct which = infrastructure where = 826 value = 10 }
+			command = { type = construct which = infrastructure where = 837 value = 10 }		
+			command = { type = construct which = infrastructure where = 836 value = 10 }
+		 }
+	 }
+
+#########################################################
+#### 91665 - ETH - The Cattle war
+#########################################################
+	 event = {
+	 id = 91665
+	 random = no
+	 country = ETH
+
+	 name = "The Cattle War"
+	 desc = "The Addis Abeba-Mogadishu railroad was bound to create trouble. Concerned about the railroad being drawn across their land, cattle herders throughout eastern Ethiopia have begun attacking the workers. The private consortium has brought in guards, and have killed a number of herders. Swift action is required unless this is going to escalate even further."
+	 style = 2
+	 picture = "news_paper"
+
+		 trigger = {
+			 NOT = {
+				exists = SOM
+				war = { country = ENG country = ETH }
+			 }
+		 }
+
+		  date = { day = 1 month = august year = 1949 }
+		 offset = 45 
+		 deathdate = { day = 30 month = january year = 1960 }
+		 
+
+	 action_a = {
+		ai_chance = 20
+		name = "Take the side of the english private consortium"
+		command = { type = dissent value = 15 }
+		command = { type = relation which = ENG value = 50 }
+	 }
+	 action_b = {
+		ai_chance = 70
+		name = "Take the side of the ethiopian herders"
+		command = { type = relation which = ENG value = -50 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = end_access which=ENG }
+		command = { type = end_non_aggression which=ENG }
+	 }
+	 action_c = {
+		ai_chance = 10
+		name = "Compromise"
+		command = { type = dissent value = 10 }
+		command = { type = money value = -20 }
+		command = { type = supplies value = -10 }
+		command = { type = relation which = ENG value = 20 }
+	 }
+	 }
+	 
+#########################################################
+#### 91666 - ETH - The Ethiopian sea access problem
+#########################################################
+	 event = {
+	 id = 91666
+	 random = no
+	 country = ETH
+
+	 name = "The Ethiopian sea access problem"
+	 desc = "The Addis Abeba claim a directly seacoast. The Negus want an access to sea for Ethiopians"
+	 style = 2
+	 picture = "news_paper"
+
+		 trigger = {
+			 NOT = {
+				exists = SOM
+				alliance = { country = ENG country = ETH }
+				war = { country = ENG country = ETH }
+			 }
+		 }
+
+		  date = { day = 1 month = december year = 1949 }
+		 offset = 80 
+		 deathdate = { day = 30 month = january year = 1960 }
+		 
+
+	 action = {
+		ai_chance = 30
+		name = "We want Eritrea"
+		command = { type = addcore which = 815}
+		command = { type = addcore which = 816}
+		command = { type = addcore which = 817}
+		command = { type = trigger which = 91667}
+	 }
+	 action = {
+		 ai_chance = 20
+		 name = "We want the Somaliland"
+		command = { type = addcore which = 832}
+		command = { type = trigger which = 91668}
+	 }
+	 action = {
+		ai_chance = 20
+		name = "We want the Somalia"
+		command = { type = addcore which = 834}
+		command = { type = addcore which = 835}
+		command = { type = addcore which = 836}
+		command = { type = addcore which = 837}
+		command = { type = trigger which = 91669}
+	 }
+	  action = {
+		ai_chance = 20
+		name = "We want the entire East Africa"
+		command = { type = addcore which = 815}
+		command = { type = addcore which = 816}
+		command = { type = addcore which = 817}
+		command = { type = addcore which = 832}
+		command = { type = addcore which = 834}
+		command = { type = addcore which = 835}
+		command = { type = addcore which = 836}
+		command = { type = addcore which = 837}
+		command = { type = trigger which = 91670}
+	 }
+	   action = {
+		ai_chance = 10
+		name = "No,it's not necessary"
+		command = { type = dissent value = 20 }
+		command = { type = money value = -20 }
+	   	command = { type = relation which = ENG value = 10 }
+	 }
+	 }
+	 
+#########################################################
+#### 91667 - ETH - British reaction (Eritrea)
+#########################################################
+	event = {
+	 id = 91667
+	 random = no
+	 country = ENG
+
+	 name = "British reaction"
+	 desc = "The Addis Abeba claim Eritrea !"
+	 style = 2
+	 picture = "news_paper"		 
+
+	 action = {
+		ai_chance = 20
+		name = "Ok, we hope this can improve our friendship"
+		command = { type = secedeprovince which = ETH value = 815}
+		command = { type = secedeprovince which = ETH value = 816}
+		command = { type = secedeprovince which = ETH value = 817}
+		command = { type = relation which = ETH value = 100 }
+	 }
+	 action = {
+		 ai_chance = 80
+		 name = "No way ..."
+		 command = { type = relation which = ETH value = -100 }
+		 command = { type = trigger which = 91671}
+	 }
+
+	 }
+
+#########################################################
+#### 91668 - ENG - British reaction (Somaliland)
+#########################################################	 
+	 event = {
+	 id = 91668
+	 random = no
+	 country = ENG
+
+	 name = "British reaction"
+	 desc = "The Addis Abeba claim the Somaliland !"
+	 style = 2
+	 picture = "news_paper"		 
+
+	 action = {
+		ai_chance = 70
+		name = "Ok, we hope this can improve our friendship"
+		command = { type = secedeprovince which = ETH value = 832}
+		command = { type = relation which = ETH value = 100 }
+	 }
+	 action = {
+		 ai_chance = 30
+		 name = "No way ..."
+		 command = { type = relation which = ETH value = -100 }
+		 command = { type = trigger which = 91671}
+	 }
+
+	 }
+
+#########################################################
+#### 91669 - ENG - British reaction (Somalia)
+#########################################################	 
+	 event = {
+	 id = 91669
+	 random = no
+	 country = ENG
+
+	 name = "British reaction"
+	 desc = "The Addis Abeba claim Somalia !"
+	 style = 2
+	 picture = "news_paper"		 
+
+	 action = {
+		ai_chance = 30
+		name = "Ok, we hope this can improve our friendship"
+		command = { type = secedeprovince which = ETH value = 834}
+		command = { type = secedeprovince which = ETH value = 835}
+		command = { type = secedeprovince which = ETH value = 836}
+		command = { type = secedeprovince which = ETH value = 837}
+		command = { type = relation which = ETH value = 100 }
+	 }
+	 action = {
+		 ai_chance = 70
+		 name = "No way ..."
+		 command = { type = relation which = ETH value = -100 }
+		 command = { type = trigger which = 91671}
+	 }
+
+	 }
+
+#########################################################
+#### 91670 - ENG - British reaction (East Africa)
+#########################################################	
+	 event = {
+	 id = 91670
+	 random = no
+	 country = ENG
+
+	 name = "British reaction"
+	 desc = "The Addis Abeba claim the entire East Africa !"
+	 style = 2
+	 picture = "news_paper"		 
+
+	 action = {
+		ai_chance = 10
+		name = "Ok, we hope this can improve our friendship"
+		command = { type = secedeprovince which = ETH value = 815}
+		command = { type = secedeprovince which = ETH value = 816}
+		command = { type = secedeprovince which = ETH value = 817}
+		command = { type = secedeprovince which = ETH value = 832}
+		command = { type = secedeprovince which = ETH value = 834}
+		command = { type = secedeprovince which = ETH value = 835}
+		command = { type = secedeprovince which = ETH value = 836}
+		command = { type = secedeprovince which = ETH value = 837}
+		command = { type = relation which = ETH value = 100 }
+		command = { type = alliance which = ETH }
+	 }
+	 action = {
+		 ai_chance = 90
+		 name = "No way ..."
+		 command = { type = relation which = ETH value = -100 }
+		 command = { type = trigger which = 91671}
+	 }
+
+	 }
+
+#########################################################
+#### 91671 - ETH - Spread Ethiopia ! 
+#########################################################	
+	 event = {
+	 id = 91671
+	 random = no
+	 country = ETH
+
+	 name = "Spread of Ethiopia !"
+	 desc = "So, the British are like the Italian ... we'll fight for our rightfull claims !!!!"
+	 style = 2
+	 picture = "news_paper"		 
+
+	 action = {
+		ai_chance = 80
+		name = "Then, it's war !"
+		command = { type = relation which = ENG value = -200 }
+		command = { type = war which = ENG }
+		command = { type = add_corps which = "1st Ethiopian Army" value = land where = 825 }
+		command = { type = add_division which = "1st Rifle Division" value = infantry when = 10 }
+		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 10 }
+		command = { type = add_division which = "3rd Rifle Division" value = infantry when = 10 }
+		command = { type = add_corps which = "2st Ethiopian Army" value = land where = 821 }
+		command = { type = add_division which = "1st Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "2nd Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "3rd Militia Division" value = militia when = 6 }
+		command = { type = add_corps which = "4th Ethiopian Army" value = land where = 828 }
+		command = { type = add_division which = "4th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "5th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "6th Militia Division" value = militia when = 6 }
+		command = { type = add_corps which = "5th Ethiopian Army" value = land where = 827 }
+		command = { type = add_division which = "7th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "8th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "9th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "10th Militia Division" value = militia when = 6 }
+		command = { type = add_corps which = "3th Ethiopian Army" value = land where = 826 }
+		command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
+		command = { type = add_division which = "2nd Cavalry Division" value = cavalry when = 10 }
+		command = { type = add_division which = "3rd Cavalry Division" value = cavalry when = 10 }
+		command = { type = add_corps which = "6th Ethiopian Army" value = land where = 818 }
+		command = { type = add_division which = "1st Motorized Division" value = motorized when = 7 }
+	 }
+	 action = {
+		 ai_chance = 20
+		 name = "No ... rest in peace. The Britsh are too strong for us"
+		 command = { type = relation which = ENG value = 10 }
+		 command = { type = dissent value = 15 }
+	 }
+
+	 }
+
+#########################################################
+#### 91672 - ENG - Armistice - Lost Eritrea (England)
+#########################################################		 
+	event = {
+	 id = 91672
+	 random = no
+	 country = ENG
+
+	 name = "Armistice"
+	 desc = "THe Ethiopians are in Massawa, the war seems loss ! It's time for peace ?"
+	 style = 2
+	 picture = "news_paper"		 
+
+		 date = { day = 1 month = december year = 1949 }
+		 offset = 10 
+		 deathdate = { day = 30 month = january year = 1960 }
+
+	 
+	 trigger = {
+		atwar = ETH
+		event = 91667
+		event = 91671
+		control = { province = 815 data = ETH }
+	 }
+	 
+	 action = {
+		ai_chance = 80
+		name = "Yes, time for peace"
+		command = { type = relation which = ETH value = 20 }
+		command = { type = peace which = ETH value = 0 }
+		command = { type = trigger which = 91673 }
+		command = { type = secedeprovince which = ETH value = 815 } #Eritrea
+		command = { type = secedeprovince which = ETH value = 816 } #Eritrea
+		command = { type = secedeprovince which = ETH value = 817 } #Eritrea
+	 }
+	 action = {
+		 ai_chance = 20
+		 name = "No ... we want destroy the Ethiopians !"
+		 command = { type = dissent value = 10 }
+	 }
+
+	 }
+
+#########################################################
+#### 91673 - ETH - Armistice - Lost Eritrea (Ethiopia)
+#########################################################		 
+	 event = {
+	 id = 91673
+	 random = no
+	 country = ETH
+
+	 name = "Armistice"
+	 desc = "We are in Massaua, we have won the war ! The british want an armistice"
+	 style = 2
+	 picture = "news_paper"		 
+	 
+	 action = {
+		ai_chance = 100
+		name = "Yes, we have won our war !"
+		command = { type = relation which = ENG value = 20 }
+	 }
+
+	 }
+#########################################################
+#### 91674 - ENG - Armistice - Lost Somaliland (England)
+#########################################################		 
+	event = {
+	 id = 91674
+	 random = no
+	 country = ENG
+
+	 name = "Armistice"
+	 desc = "THe Ethiopians are in Hargeisa and Gardo, the war seems loss ! It's time for peace ?"
+	 style = 2
+	 picture = "news_paper"		 
+
+	 date = { day = 1 month = december year = 1949 }
+	 offset = 10 
+	 deathdate = { day = 30 month = january year = 1960 }
+
+	 
+	 trigger = {
+		atwar = ETH
+		event = 91668
+		event = 91671
+		control = { province = 832 data = ETH }
+		control = { province = 834 data = ETH }
+	 }
+	 
+	 action = {
+		ai_chance = 80
+		name = "Yes, time for peace"
+		command = { type = relation which = ETH value = 20 }
+		command = { type = peace which = ETH value = 0 }
+		command = { type = trigger which = 91675 }
+		command = { type = secedeprovince which = ETH value = 832 } #Somaliland
+		command = { type = secedeprovince which = ETH value = 834 } #Somaliland
+	 }
+	 action = {
+		 ai_chance = 20
+		 name = "No ... we want destroy the Ethiopians !"
+		 command = { type = dissent value = 10 }
+	 }
+
+	 }
+
+#########################################################
+#### 91675 - ETH - Armistice - Lost Somaliland (Ethiopia)
+#########################################################		 
+	 event = {
+	 id = 91675
+	 random = no
+	 country = ETH
+
+	 name = "Armistice"
+	 desc = "We are in Hargeisa and Gardo, we have won the war ! The british want an armistice"
+	 style = 2
+	 picture = "news_paper"		 
+	 
+	 action = {
+		ai_chance = 100
+		name = "Yes, we have won our war !"
+		command = { type = relation which = ENG value = 20 }
+	 }
+
+	 }
+
+#########################################################
+#### 91676 - ENG - Armistice - Lost Somalia (England)
+#########################################################		 
+	event = {
+	 id = 91676
+	 random = no
+	 country = ENG
+
+	 name = "Armistice"
+	 desc = "THe Ethiopian are in Somalia, the war seems loss ! It's time for peace ?"
+	 style = 2
+	 picture = "news_paper"		 
+
+		 date = { day = 1 month = december year = 1949 }
+		 offset = 10 
+		 deathdate = { day = 30 month = january year = 1960 }
+
+	 
+	 trigger = {
+		atwar = ETH
+		event = 91669
+		event = 91671
+		control = { province = 835 data = ETH }
+		control = { province = 836 data = ETH }
+		control = { province = 837 data = ETH }
+		control = { province = 838 data = ETH }
+	 }
+	 
+	 action = {
+		ai_chance = 80
+		name = "Yes, time for peace"
+		command = { type = relation which = ETH value = 20 }
+		command = { type = peace which = ETH value = 0 }
+		command = { type = trigger which = 91677 }
+		command = { type = secedeprovince which = ETH value = 835 } #Somalia
+		command = { type = secedeprovince which = ETH value = 836 } #Somalia
+		command = { type = secedeprovince which = ETH value = 837 } #Somalia
+		command = { type = secedeprovince which = ETH value = 838 } #Somalia
+	 }
+	 action = {
+		 ai_chance = 20
+		 name = "No ... we want destroy the Ethiopians !"
+		 command = { type = dissent value = 10 }
+	 }
+
+	 }
+
+#########################################################
+#### 91677 - ETH - Armistice - Lost Somalia (Ethiopia)
+#########################################################		 
+	 event = {
+	 id = 91677
+	 random = no
+	 country = ETH
+
+	 name = "Armistice"
+	 desc = "We are in Somalia, we have won the war ! The british want an armistice"
+	 style = 2
+	 picture = "news_paper"		 
+	 
+	 action = {
+		ai_chance = 100
+		name = "Yes, we have won our war !"
+		command = { type = relation which = ENG value = 20 }
+	 }
+
+	 }
+	 
+#########################################################
+#### 91678 - ENG - Armistice - Lost East Africa (England)
+#########################################################		 
+	event = {
+	 id = 91678
+	 random = no
+	 country = ENG
+
+	 name = "Armistice"
+	 desc = "THe Ethiopian are in Massawa,Mogadishu and Hargeisa, the war seems loss ! It's time for peace ?"
+	 style = 2
+	 picture = "news_paper"		 
+
+		 date = { day = 1 month = december year = 1949 }
+		 offset = 10 
+		 deathdate = { day = 30 month = january year = 1960 }
+
+	 
+	 trigger = {
+		atwar = ETH
+		event = 91670
+		event = 91671
+		control = { province = 832 data = ETH }
+	 }
+	 
+	 action = {
+		ai_chance = 80
+		name = "Yes, time for peace"
+		command = { type = relation which = ETH value = 20 }
+		command = { type = peace which = ETH value = 0 }
+		command = { type = trigger which = 91679 }
+		command = { type = secedeprovince which = ETH value = 815 }
+		command = { type = secedeprovince which = ETH value = 832 }
+		command = { type = secedeprovince which = ETH value = 836 }
+	 }
+	 action = {
+		 ai_chance = 20
+		 name = "No ... we want destroy the Ethiopians !"
+		 command = { type = dissent value = 10 }
+	 }
+
+	 }
+
+#########################################################
+#### 91679 - ETH - Armistice - Lost East Africa (Ethiopia)
+#########################################################		 
+	 event = {
+	 id = 91679
+	 random = no
+	 country = ETH
+
+	 name = "Armistice"
+	 desc = "We are in all the East Africa, we have won the war ! The british want an armistice"
+	 style = 2
+	 picture = "news_paper"		 
+	 
+	 action = {
+		ai_chance = 100
+		name = "Yes, we have won our war !"
+		command = { type = relation which = ENG value = 20 }
+	 }
+
+	 }
