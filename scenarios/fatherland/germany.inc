@@ -158,12 +158,12 @@
 		104 105 107 # Alsace
 		
 		#Non-National provinces
-		338 339 340 330 342 327 # Military Administration of Serbia 
+		338 340 330 342 327 # Military Administration of Serbia 
 		377 382 383 # Military Administration of Greece
 		553 # Military Administration of Leningrad
 		50 101 102 103 106 96 97 98 # Military Administation of France (Zone interdite)
 		69 68 67 57 40 41 37 38 39 45 42 43 44 46 53 # Military Administration of France (Atlantic Wall)
-		336 # Banat region of Serbia 
+		336 339 # Banat&Bor region of Serbia 
 		217 218 220 # Jutland Peninsula (216 is South Jutland)
 		346 # Maribor
 		227 231 252 223 229 250 253 254 255 # Poland (claims)
@@ -192,7 +192,8 @@ claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908
 1328 # Qingdao
 346 # Maribor
 227 231 252 223 229 250 253 254 255 # Poland
-336 # Banat 
+338 340 330 342 327 # Military Administration of Serbia 
+336 339 # Banat&Bor
 553 # Military Administration of Leningrad
 116 #Brussels
 }

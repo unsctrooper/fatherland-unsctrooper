@@ -1,17 +1,20 @@
 ########################################
 # Serbia's Future
 ########################################
-# 300 # GER # Decision: Serbia's future
-# 301 # GER # Colonial Policy toward Banat
-# 303 # GER # Banat integration
-# 302 # SER # The National Government
-# 306 # SER # The National Government-Foreign Banat
-# 304 # HUN # Hungarian Banat
-# 305 # ROM # Romanian Banat
-# 307 # GER # The Fate of Banat (no SER)
+# 900 # GER # Decision: Serbia's future
+# 901 # GER # Colonial Policy toward Banat
+# 903 # GER # Banat integration
+# 902 # SER # The National Government
+# 906 # SER # The National Government - W/o Banat
+# 904 # HUN # Hungarian Banat
+# 905 # ROM # Romanian Banat
+# 907 # GER # The Fate of Banat (no SER)
+# 908 # GER # The Fate of Bor
+# 909 # ROM # Romanian Bor
+# 910 # GER # The Fate of Bor (no SER)
 
 event = {
-	id = 300
+	id = 900
 	random = no
 	save_date = yes
 	country = GER
@@ -33,8 +36,8 @@ event = {
 		}		
 	}
 	
-	name = "300NAME"
-	desc = "300DESC"
+	name = "900NAME"
+	desc = "900DESC"
 	style = 2
 	picture = "Reichstag"
 	decision_picture = "decision_anticominternpact"
@@ -44,63 +47,88 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 
 	action_a = {
-		name = "300A"
+		name = "900A"
 		ai_chance = 20
+		command = { type = removeclaim which = 338 }
+		command = { type = removeclaim which = 340 }
+		command = { type = removeclaim which = 330 }
+		command = { type = removeclaim which = 342 }
+		command = { type = removeclaim which = 327 }
 		command = { type = independence which = SER value = 1 }
 		command = { type = make_puppet which = SER } 
-		command = { type = trigger which = 301 }
-		command = { type = trigger which = 306 } 
+		command = { type = trigger which = 901 }
+		command = { type = trigger which = 906 } 
 		command = { type = relation which = HUN value = -50 } 
 		command = { type = relation which = ROM value = -50 } 
 		command = { type = setflag which = Banat }
+		command = { type = trigger which = 908 } 
 	}
 	action_b = {
-		name = "300B"
-		ai_chance = 50
+		name = "900B"
+		ai_chance = 0
+		command = { type = removeclaim which = 338 }
+		command = { type = removeclaim which = 340 }
+		command = { type = removeclaim which = 330 }
+		command = { type = removeclaim which = 342 }
+		command = { type = removeclaim which = 327 }
+		command = { type = removeclaim which = 336 }
 		command = { type = independence which = SER value = 1 }
 		command = { type = make_puppet which = SER }
-		command = { type = removeclaim which = 336 }
-		command = { type = trigger which = 302 } 
+		command = { type = trigger which = 902 } 
 		command = { type = relation which = HUN value = -25 } 
 		command = { type = relation which = ROM value = -25 } 
+		command = { type = trigger which = 908 } 
 	}
 	action_c = {
-		name = "300C"
+		name = "900C"
 		ai_chance = 30
+		command = { type = removeclaim which = 338 }
+		command = { type = removeclaim which = 340 }
+		command = { type = removeclaim which = 330 }
+		command = { type = removeclaim which = 342 }
+		command = { type = removeclaim which = 327 }
 		command = { type = relation which = HUN value = 100 } 
 		command = { type = relation which = ROM value = -50} 
 		command = { type = secedeprovince which = HUN value = 336 }
 		command = { type = independence which = SER value = 1 }
 		command = { type = make_puppet which = SER }
 		command = { type = removeclaim which = 336 } 
-		command = { type = trigger which = 306 } 
-		command = { type = trigger which = 304 } 
+		command = { type = trigger which = 906 } 
+		command = { type = trigger which = 904 } 
+		command = { type = trigger which = 908 } 
 	}
 	action_d = {
-		name = "300D" 
+		name = "900D" 
 		ai_chance = 30
+		command = { type = removeclaim which = 338 }
+		command = { type = removeclaim which = 340 }
+		command = { type = removeclaim which = 330 }
+		command = { type = removeclaim which = 342 }
+		command = { type = removeclaim which = 327 }
 		command = { type = relation which = HUN value = -50 } 
 		command = { type = relation which = ROM value = 100} 
 		command = { type = secedeprovince which = ROM value = 336 }
 		command = { type = independence which = SER value = 1 }
 		command = { type = make_puppet which = SER }
 		command = { type = removeclaim which = 336 } 
-		command = { type = trigger which = 306 } 
-		command = { type = trigger which = 305 } 
+		command = { type = trigger which = 906 } 
+		command = { type = trigger which = 905 } 
+		command = { type = trigger which = 908 } 
 	}
 		action = {
-		name = "300E"
+		name = "900E"
 		ai_chance = 20
-		command = { type = trigger which = 307 } 
+		command = { type = trigger which = 907 } 
+		command = { type = trigger which = 910 } 
 	}
 }
 event = {
-	id = 301
+	id = 901
 	random = no
 	save_date = yes
 	country = GER	
-	name = "301NAME"
-	desc = "301DESC"
+	name = "901NAME"
+	desc = "901DESC"
 	style = 2
 	picture = "news_paper"	
 
@@ -122,7 +150,7 @@ event = {
 	}
 }
 event = { 
-	id = 303
+	id = 903
 	random = no
 	country = GER
 	save_date = yes
@@ -135,18 +163,18 @@ event = {
 		NOT = { war = { country = GER country = SOV } }
 			OR = { 
 		AND = {
-		event = { id = 301 days = 360 } 
+		event = { id = 901 days = 360 } 
 		flag = Banat1 	
 		}
 		AND = {
-		event = { id = 301 days = 450 } 
+		event = { id = 901 days = 450 } 
 		flag = Banat2 	
 		}
 		}
 	}	
 		
-	name = "303NAME"
-	desc = "303DESC"
+	name = "903NAME"
+	desc = "903DESC"
 	style = 2
 	picture = "news_paper"	
 
@@ -162,14 +190,14 @@ event = {
 	}	
 
 event = {
-	id = 302
+	id = 902
 	random = no
 	country = SER
 	style = 2
 	save_date = yes
 
-	name = "302NAME" 
-	desc = "302DESC"
+	name = "902NAME" 
+	desc = "902DESC"
 	picture = "news_paper"
 
 	action = {
@@ -192,14 +220,14 @@ event = {
 		}
 	}
 event = {
-	id = 306
+	id = 906
 	random = no
 	country = SER
 	style = 2
 	save_date = yes
 
-	name = "302NAME" 
-	desc = "306"
+	name = "902NAME" 
+	desc = "906DESC"
 	picture = "news_paper"
 
 	action = {
@@ -224,13 +252,13 @@ event = {
 		}
 	}
 event = { 
-	id = 304
+	id = 904
 	random = no
 	country = HUN
 	save_date = yes
 		
 	name = "BANAT"
-	desc = "304DESC"
+	desc = "904DESC"
 	style = 2
 	picture = "news_paper"	
 
@@ -241,13 +269,13 @@ event = {
 		}
 	}	
 event = { 
-	id = 305
+	id = 905
 	random = no
 	country = ROM
 	save_date = yes
 		
 	name = "BANAT"
-	desc = "NONE"
+	desc = "905DESC"
 	style = 2
 	picture = "news_paper"	
 
@@ -259,39 +287,109 @@ event = {
 	
 }	
 event = {
-	id = 307
+	id = 907
 	random = no
 	save_date = yes
 	country = GER	
-	name = "307NAME"
-	desc = "307DESC"
+	name = "907NAME"
+	desc = "907DESC"
 	style = 2
 	picture = "news_paper"	
 
 	action_a = {
-		name = "307A"
-		ai_chance = 20
-		command = { type = trigger which = 301 } 
+		name = "907A"
+		ai_chance = 65
+		command = { type = trigger which = 901 } 
 		command = { type = relation which = HUN value = -50 } 
 		command = { type = relation which = ROM value = -50 } 
 		command = { type = setflag which = Banat }
 	}
 	action_b = {
-		name = "307B"
-		ai_chance = 30
+		name = "907B"
+		ai_chance = 15
 		command = { type = relation which = HUN value = 100 } 
 		command = { type = relation which = ROM value = -50} 
 		command = { type = secedeprovince which = HUN value = 336 }
 		command = { type = removeclaim which = 336 } 
-		command = { type = trigger which = 304 } 
+		command = { type = trigger which = 904 } 
 	}
 	action_c = {
-		name = "307C" 
-		ai_chance = 30
+		name = "907C" 
+		ai_chance = 20
 		command = { type = relation which = HUN value = -50 } 
 		command = { type = relation which = ROM value = 100} 
 		command = { type = secedeprovince which = ROM value = 336 }
 		command = { type = removeclaim which = 336 } 
-		command = { type = trigger which = 305 } 
+		command = { type = trigger which = 905 } 
 	}
 }
+event = {
+	id = 908
+	random = no
+	save_date = yes
+	country = GER	
+	name = "908NAME"
+	desc = "908DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+		name = "908A" 
+		ai_chance = 75
+		command = { type = relation which = ROM value = 50} 
+		command = { type = relation which = SER value = -10 } # SER is a puppet and cannot oppose
+		command = { type = secedeprovince which = ROM value = 339 }
+		command = { type = removeclaim which = 339 } 
+		command = { type = trigger which = 909 } 
+	}
+	action_b = {
+		name = "908B"
+		ai_chance = 25
+		command = { type = relation which = ROM value = -25 } # Bor is not very important
+		command = { type = secedeprovince which = SER value = 339 }
+		command = { type = removeclaim which = 339 } 
+	}
+}	
+event = { 
+	id = 909
+	random = no
+	country = ROM
+	save_date = yes
+		
+	name = "909NAME"
+	desc = "909DESC"
+	style = 2
+	picture = "news_paper"	
+
+
+	action = {
+	name =  "ACTION_NAME_GREAT"
+	command = { type = addcore which = 339 } 
+		}
+	
+}
+event = {
+	id = 910
+	random = no
+	save_date = yes
+	country = GER	
+	name = "908NAME"
+	desc = "910DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+		name = "908A" 
+		ai_chance = 50
+		command = { type = relation which = ROM value = 50} 
+		command = { type = relation which = SER value = -10 } # SER is a puppet and cannot oppose
+		command = { type = secedeprovince which = ROM value = 339 }
+		command = { type = removeclaim which = 339 } 
+		command = { type = trigger which = 909 } 
+	}
+	action_b = {
+		name = "910B"
+		ai_chance = 50
+		command = { type = relation which = ROM value = -10 } # Bor is not very important
+	}
+}		
