@@ -1,0 +1,258 @@
+################################################
+### KAUKASUS EVENTS made by Pako
+################################################
+#### 92000 - U42 - Dissent and Revolts
+#### 92001 - U42 - Cechenian uprising
+#### 92002 - U42 - Georgian Revolts and Unilateral Independence
+#### 92003 - GEO - Georgian Answer
+#### 92004 - U42 - Armenian revolt
+#### 92005 - U42 - Terrorism in RK
+#### 92006 - U42 - Reorganize RK
+################################################
+
+################################################
+#### 92000 - U42 - Dissent and Revolts
+################################################
+event = {
+	id = 92000 #Dissent and Revolts
+	random = no
+	country = U42	
+	
+	trigger = {
+		random = 50
+	}
+	
+	name = "Dissent and Revolts spread in the Reichkommissariat !"
+	desc = "In the RK Kaukasus the dissent has reached very high levels"
+	style = 2
+	picture = "news_paper"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 100
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN	
+		command = { type = dissent value = 15 }
+		command = { type = peacetime_ic_mod value = -5 }
+	}
+}
+
+################################################
+#### 92001 - U42 - Cechenian uprising
+################################################
+event = {
+	id = 92001 #Cechenian uprising
+	random = no
+	country = U42	
+	
+	trigger = {
+		event = 92000
+		random = 50
+	}
+	
+	name = "Cechenian uprising !"
+	desc = "In Grozny, the insurgents occupied the city"
+	style = 2
+	picture = "news_paper"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN	
+		command = { type = revolt which = 702 } #Grozny
+		command = { type = revolt which = 702 } #Grozny
+		command = { type = revolt which = 702 } #Grozny
+		
+		command = { type = dissent value = 10 }
+	}
+}
+
+################################################
+#### 92002 - U42 - Georgian Revolt
+################################################
+event = {
+	id = 92002 #Georgian Revolt
+	random = no
+	country = U42	
+	
+	trigger = {
+		event = 92001
+		random = 50
+	}
+	
+	name = "Georgian Revolt !"
+	desc = "Georgian declare an unilateral independence !"
+	style = 2
+	picture = "news_paper"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "Is unacceptable we will win back by force"	
+		ai_chance = 60
+		
+		command = { type = revolt which = 707 }
+		command = { type = revolt which = 708 }
+		command = { type = revolt which = 709 }
+		
+		command = { type = dissent value = 10 }
+		
+		command = { type = independence which = GEO value = 0 when = 1 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		
+		command = { type = war which = GEO }
+	}
+	
+	action = {
+		name = "Ok, but they must remain in our sphere of influence"	
+		ai_chance = 40
+		
+		command = { type = dissent value = 25 }
+		
+		command = { type = independence which = GEO value = 0 when = 0 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		
+		command = { type = trigger which = 92003 }
+	}
+	
+	action = {
+		name = "Do nothing ..."	
+		ai_chance = 10
+		
+		command = { type = dissent value = 50 }
+		
+		command = { type = independence which = GEO value = 0 when = 1 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		
+	}
+}
+
+################################################
+#### 92003 - GEO - Georgian Answer
+################################################
+event = {
+	id = 92003 #Georgian Answer
+	random = no
+	country = GEO	
+	
+	trigger = {
+		event = 92002
+	}
+	
+	name = "Georgian Answer !"
+	desc = "The Reich wants us to re-enter under his sphere of influence, for independence are we willing to accept?"
+	style = 2
+	picture = "news_paper"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "Yes, independence first !"	
+		command = { type = alliance value = GER }
+		
+	}
+	
+		action = {
+		name = "No, we want a real independence !"	
+		command = { type = war value = U42 }
+	
+	}
+}
+
+################################################
+#### 92004 - U42 - Armenian revolt
+################################################
+event = {
+	id = 92004 # Armenian revolt
+	random = no
+	country = U42	
+	
+	trigger = {
+		event = 92003
+		random = 80
+	}
+	
+	name = "Armenian Revolt !"
+	desc = "The Armenian follow the examples of the georgians ... and try to revolt !"
+	style = 2
+	picture = "news_paper"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN	
+		command = { type = revolt which = 711 }
+		command = { type = revolt which = 711 }
+		command = { type = dissent value = 10 }
+		#command = { type = independence which = ARM value = 0 when = 1 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		#command = { type = war which = ARM }
+	}
+}
+
+################################################
+#### 92005 - U42 - Terrorism in RK
+################################################
+event = {
+	id = 92005 # Terrorism in RK
+	random = no
+	country = U42	
+	persistent = yes
+	
+	trigger = {
+		random = 30
+	}
+	
+	name = "Bombing in RK Kaukasus !"
+	desc = "Bombing in RK Kaukasus !"
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 60
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN	
+		command = { type = dissent value = 10 }
+		command = { trigger = { random = 50 } type = supplies value = -100 }
+		command = { trigger = { random = 50 } type = oilpool value = -100 }
+		command = { trigger = { random = 50 } type = metalpool value = -100 }
+		command = { trigger = { random = 50 } type = energypool value = -100 }
+		command = { trigger = { random = 50 } type = rarematerialspool value = -100 }
+		command = { trigger = { random = 50 } type = money value = -100 }
+	}
+}
+
+################################################
+#### 92006 - U42 - Reorganize RK
+################################################
+event = {
+	id = 92006 # Reorganize RK
+	random = no
+	country = U42	
+	persistent = yes
+	
+	trigger = {
+		dissent = 50
+	}
+	
+	name = "It's time to reorganize the RK ?"
+	desc = "Follow the dissent and the numerous events of terrorism ... It's time to reorganize the RK ?"
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN	
+		command = { type = dissent value = -10 }
+	}
+}

@@ -85,8 +85,8 @@ event = {
 	picture = "Mussolini"	
 	decision_picture = "decision_congress"
 	
-	date = { day = 15 month = january year = 1948 }
-	offset = 30 #offset = 5
+	date = { day = 15 month = july year = 1948 }
+	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
@@ -108,8 +108,8 @@ event = {
 	style = 2
 	picture = "Mussolini"		
 	
-	date = { day = 1 month = january year = 1948 }
-	offset = 5 # 30
+	date = { day = 1 month = july year = 1948 }
+	offset = 5 
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
@@ -139,7 +139,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 1 month = july year = 1948 }
 	offset = 5 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -199,7 +199,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 1 month = july year = 1948 }
 	offset = 5 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -209,6 +209,10 @@ event = {
 	trigger = { NOT = { flag = RadicalItaly } }
 	command = { type = setflag which = Chaos }
 	command = { type = dissent value = 2 }
+	command = { type = flag_ext where = ITA which = _democratic }
+	command = { type = name where = ITA which = "Italian Republic" }
+	command = { type = headofstate which = 25017 } # Paolo Thaon di Revel
+	command = { trigger = { flag = IndustrialItaly } type = headofstate which = 25026 } # Pietro Badoglio, Industrialists
 	}
 	action_b = {
 	name = ACTION_NAME_YES
@@ -216,6 +220,9 @@ event = {
 	trigger = { flag = RadicalItaly }
 	command = { type = setflag which = Chaos }
 	command = { type = dissent value = 1 }
+	command = { type = flag_ext where = ITA which = _rsi }
+	command = { type = name where = ITA which = "Italian Social Republic" }
+	command = { trigger = { flag = RadicalItaly } type = headofstate which = 282 } # Junio Borghese, Radicals 
 	}
 	action_c = {
 	name = ACTION_NAME_NO
@@ -244,7 +251,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 1 month = july year = 1948 }
 	offset = 5 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -274,7 +281,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 5 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -310,7 +317,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -342,7 +349,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 15
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -403,7 +410,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -441,7 +448,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -476,7 +483,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -504,7 +511,7 @@ event = {
 	}
 }
 event = {
-	id = 90000611 # Yemen
+	id = 90000611 # Turkey
 	random = no
 	country = ITA	
 	
@@ -518,31 +525,31 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
 	name = ACTION_NAME_YES
 	ai_chance = 90
-	command = { type = set_relation which = YEM value = 100 }
-	command = { type = non_aggression which = YEM where = ITA }
-	command = { type = setflag which = ITAYEMTR }
+	command = { type = set_relation which = TUR value = 100 }
+	command = { type = non_aggression which = TUR where = ITA }
+	command = { type = setflag which = ITATURTR }
 	}
 	action_b = {
 	name = ACTION_NAME_NO
 	ai_chance = 10
-	command = { type = set_relation which = YEM value = -100 }
+	command = { type = set_relation which = TUR value = -100 }
 	}
 }
 event = {
-	id = 90000612 # Yemen
+	id = 90000612 # TURKEY
 	random = no
-	country = YEM	
+	country = TUR	
 	
 	trigger = {
 			event = 90000611
-			flag = ITAYEMTR
+			flag = ITATURTR
 		}
 	
 	name = EVT_90000612_NAME
@@ -550,7 +557,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -573,7 +580,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -612,7 +619,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -661,7 +668,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -701,7 +708,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -753,7 +760,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -793,7 +800,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -872,7 +879,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -907,7 +914,7 @@ event = {
 	style = 2
 	picture = "mittelmeerdivision2"	
 	
-	date = { day = 1 month = april year = 1948 }
+	date = { day = 1 month = july year = 1948 }
 	offset = 30 #offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -952,7 +959,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -975,7 +982,7 @@ event = {
 	}
 }
 event = {
-	id = 90000623 # Spanish-Italian Relations 2															# Allied response
+	id = 90000623 # Spanish-Italian Relations 2	# Allied response
 	random = no
 	country = SPA	
 	
@@ -988,7 +995,7 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1024,18 +1031,19 @@ event = {
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = july year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
 	name = ACTION_NAME_OK
 	command = { type = clrflag which = Council }
-	command = { trigger = { flag = RadicalItaly } type = headofgovernment which = 25026 } # Pietro Badoglio, Industrialists
-	command = { trigger = { flag = IndustrialItaly } type = headofgovernment which = 282 } # Junio Borghese, Radicals
+	command = { trigger = { flag = RadicalItaly } type = headofgovernment which = 282 } # Junio Borghese, Radicals 
+	command = { trigger = { flag = IndustrialItaly } type = headofgovernment which = 25026 } # Pietro Badoglio, Industrialists
 	command = { trigger = { flag = Chaos } type = headofstate which = 25017 } # Paolo Thaon di Revel
 	}
 }
+
 # Spanish-Italian conference
 event = {
 	id = 90000625 # State visit to Spain
@@ -1058,7 +1066,7 @@ event = {
 	picture = "congress"	
 	decision_picture = "decision_congress"
 	
-	date = { day = 5 month = january year = 1948 }
+	date = { day = 5 month = september year = 1948 }
 	offset = 30 #offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1181,7 +1189,7 @@ event = {
 	style = 2
 	picture = "elser_bomb_plot"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = december year = 1948 } 
 	offset = 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1207,7 +1215,7 @@ event = {
 	style = 2
 	picture = "elser_bomb_plot"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = december year = 1948 } 
 	offset = 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1244,7 +1252,7 @@ event = {
 	style = 2
 	picture = "elser_bomb_plot"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = december year = 1948 } 
 	offset = 10 # 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1310,7 +1318,7 @@ event = {
 	style = 2
 	picture = "elser_bomb_plot"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = december year = 1948 } 
 	offset = 10 # 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1363,7 +1371,7 @@ event = {
 	style = 2
 	picture = "elser_bomb_plot"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = december year = 1948 } 
 	offset = 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1401,7 +1409,7 @@ event = {
 	style = 2
 	picture = "elser_bomb_plot"		
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = december year = 1948 } 
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1441,7 +1449,7 @@ event = {
 	style = 2
 	picture = "mittelmeerdivision2"	
 	
-	date = { day = 1 month = january year = 1949 } 
+	date = { day = 1 month = july year = 1949 } 
 	offset = 90
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -1838,7 +1846,7 @@ event = {
 	style = 2
 	picture = "mittelmeerdivision2"	
 	
-	date = { day = 1 month = january year = 1948 } 
+	date = { day = 1 month = january year = 1949 } 
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
