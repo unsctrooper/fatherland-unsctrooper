@@ -16,7 +16,7 @@ event = {
 
 	date = { day = 0 month = august year = 1944 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1944 }
+	deathdate = { day = 30 month = december year = 1949 }
 
 	action = {
 		name = EVT_8013801_A # Recall Sheng Shicai

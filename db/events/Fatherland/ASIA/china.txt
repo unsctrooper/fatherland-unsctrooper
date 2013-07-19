@@ -116,10 +116,12 @@ event = {
 		name = EVT_8200006_A #"Limited support"
 		ai_chance = 55
 		command = { type = relation which = CHC value = 50 }
-		command = { type = supplies value = -5000 }
-		command = { type = oilpool value = -2000 }
-		command = { type = money value = -200 }
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -1000 }
+		command = { type = money value = -50 }
 		command = { type = trigger which = 8200007 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = 1 }
 	}	
 	
 	action = {
@@ -132,9 +134,9 @@ event = {
 		name = EVT_8200006_C #"Considerable support"
 		ai_chance = 15
 		command = { type = relation which = CHC value = 100 }
-		command = { type = supplies value = -15000 }
-		command = { type = oilpool value = -10000 }
-		command = { type = money value = -1000 }
+		command = { type = supplies value = -1500 }
+		command = { type = oilpool value = -2000 }
+		command = { type = money value = -100 }
 		command = { type = belligerence value = 10 }
 		command = { type = dissent value = 3 }
 		command = { type = trigger which = 8200008 }
@@ -143,11 +145,9 @@ event = {
 	action = {
 		name = EVT_8200006_D #"Propose alliance"
 		ai_chance = 20
-		command = { type = relation which = CHC value = 150 }
-		command = { type = supplies value = -15000 }
-		command = { type = oilpool value = -10000 }
-		command = { type = money value = -1000 }
-		command = { type = belligerence value = 40 }
+		command = { type = relation which = CHC value = 200 }
+		command = { type = money value = -2000 }
+		command = { type = belligerence value = 25 }
 		command = { type = dissent value = 15 }
 		command = { type = trigger which = 8200009 }
 	}	
@@ -187,8 +187,8 @@ event = { # Considerable support (CHC)
 
 	action = {
 		name = EVT_8200008_A #"We will put it to good use"
-		command = { type = supplies value = 12000 }
-		command = { type = oilpool value = 8000 }
+		command = { type = supplies value = 6000 }
+		command = { type = oilpool value = 3000 }
 		command = { type = money value = 500 }
 		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
 		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 5 }
@@ -215,15 +215,17 @@ event = { # Total support (CHC)
 		name = EVT_8200009_A #"Alliance of the working class!"
 		ai_chance = 60
 		#command = { type = trigger which = 8500101 } # Soviet intervention: WW3 flashpoint
-		command = { type = supplies value = 12000 }
-		command = { type = oilpool value = 8000 }
-		command = { type = money value = 500 }
+		command = { type = supplies value = 8000 }
+		command = { type = oilpool value = 5000 }
+		command = { type = money value = 1000 }
 		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 3 }
 		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 4 }
 		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 4 }
 		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 4 }
 		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 4 }
 		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 4 }
+		command = { type = add_division which = "7. Div Siberian Volunteers" value = mechanized when = 4 }
+		command = { type = add_division which = "8. Div Siberian Volunteers" value = mechanized when = 4 }
 		command = { type = alliance which = SOV }
 	}	
 
@@ -234,11 +236,8 @@ event = { # Total support (CHC)
 		command = { type = oilpool value = 8000 }
 		command = { type = money value = 500 }
 		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 3 }
-		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 4 }
-		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 4 }
 		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 4 }
 		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 4 }
-		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 4 }
 		#command = { type = sleepevent which = 8200121 } # End of intervention
 	}		
 }
@@ -484,19 +483,19 @@ event = {
 		ai_chance = 70
 		command = { type = relation which = CHI value = 100 }
 		command = { type = relation which = CHC value = -150 }
-		command = { type = supplies value = -5000 }
-		command = { type = oilpool value = -2000 }
-		command = { type = money value = -1500 }
+		command = { type = supplies value = -1000 }
+		command = { type = oilpool value = -500 }
+		command = { type = money value = -500 }
 		command = { type = trigger which = 8200046 }
 	}	
 	
 	action = {
 		name = "EVT_8200044_B" # No support
 		ai_chance = 5
-		command = { type = relation which = CHI value = -20 }
-		command = { type = relation which = CHC value = 20 }
+		command = { type = relation which = CHI value = -50 }
+		command = { type = relation which = CHC value = 10 }
 		command = { type = domestic which = interventionism value = -1 }
-		command = { type = dissent value = 2 }
+		command = { type = dissent value = 5 }
 	}	
 	
 	action = {
@@ -504,8 +503,8 @@ event = {
 		ai_chance = 10
 		command = { type = relation which = CHI value = 20 }
 		command = { type = relation which = CHC value = -50 }
-		command = { type = supplies value = -2000 }
-		command = { type = oilpool value = -500 }
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -250 }
 		command = { type = money value = -300 }
 		command = { type = trigger which = 8200045 }
 	}	
@@ -515,8 +514,8 @@ event = {
 		ai_chance = 15
 		command = { type = relation which = CHI value = 150 }
 		command = { type = relation which = CHC value = -200 }
-		command = { type = supplies value = -5000 }
-		command = { type = oilpool value = -2000 }
+		command = { type = supplies value = -2000 }
+		command = { type = oilpool value = -1000 }
 		command = { type = money value = -1500 }
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = dissent value = 15 }

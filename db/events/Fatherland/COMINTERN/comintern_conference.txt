@@ -34,7 +34,7 @@ event = {
                 command = { type = setflag which = COMINTERN_CONFERENCE }
 				
 				command = { type = domestic which = interventionism value = 7 }
-                command = { type = money value = -500 }
+                command = { type = money value = -50 }
                 command = { type = belligerence value = 1 }
 				command = { type = dissent value = -1 }
 				
@@ -50,14 +50,14 @@ event = {
 				command = { type = setflag which = COMINTERN_CONFERENCE_WORLD }
 				
 				command = { type = domestic which = interventionism value = 8 }
-                command = { type = money value = -700 }
+                command = { type = money value = -100 }
                 command = { type = belligerence value = 3 }
 				command = { type = dissent value = -3 }
 				
-                command = { type = set_relation which = CHC value = 20 }
-                command = { type = set_relation which = PRK value = 10 }
-                command = { type = set_relation which = MON value = 10 }
-                command = { type = set_relation which = SIK value = 10 }
+                command = { type = set_relation which = CHC value = 30 }
+                command = { type = set_relation which = PRK value = 20 }
+                command = { type = set_relation which = MON value = 20 }
+                command = { type = set_relation which = SIK value = 20 }
         }
         action = {
                 name = "No, cancel the conference. The time is not ripe !"
@@ -334,7 +334,7 @@ event = {
 				ai_chance = 90
                 name = "Road to Vladivostok !!!"
 				command = { type = setflag which = COMINTERN_CONFERENCE_KAZ }
-                command = { type = money value = -500 }
+                command = { type = money value = -50 }
                 command = { type = dissent value = -5 }
 				command = { type = set_relation which = SOV value = 20 }
                 command = { type = set_relation which = CHC value = 10 }
@@ -380,7 +380,7 @@ event = {
         action_a = {
 				ai_chance = 100
                 name = "Hurrah !!!"
-                command = { type = money value = -100 }
+                command = { type = money value = -10 }
         }		
 }
 #############################################
@@ -406,35 +406,78 @@ event = {
         action_a = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
+				
+				#Relations
+				
                 command = { type = belligerence value = 1 }
 				
-				command = { type = add_division value = hq }
+				command = { type = alliance which = CHC }
+				command = { type = relation which = CHC value = 200}
+				command = { type = access which = CHC }
+				command = { type = non_aggression which = CHC where = SOV }
 				
-				command = { type = add_division value = motorized }
-				command = { type = add_division value = motorized }
-				command = { type = add_division value = motorized }
-				command = { type = add_division value = motorized }
-				command = { type = add_division value = motorized }
+				command = { type = alliance which = PRK }
+				command = { type = relation which = PRK value = 200}
+				command = { type = access which = PRK }
+				command = { type = non_aggression which = PRK where = SOV }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = alliance which = SIK }
+				command = { type = relation which = SIK value = 200}
+				command = { type = access which = SIK }
+				command = { type = non_aggression which = SIK where = SOV }
+				
+				#Armies
+				
+				command = { type = add_division value = hq when = 3 }
+				command = { type = add_division value = hq when = 3 }
+				command = { type = add_division value = hq when = 3 }
+				
+				command = { type = add_division value = motorized when = 5 }
+				command = { type = add_division value = motorized when = 5 }
+				command = { type = add_division value = motorized when = 5 }
+				command = { type = add_division value = motorized when = 5 }
+				command = { type = add_division value = motorized when = 5 }
+				
+				command = { type = add_division value = mechanized when = 2 }
+				command = { type = add_division value = mechanized when = 2 }
+				command = { type = add_division value = mechanized when = 2 }
 								
-				command = { type = add_division value = infantry }
-				command = { type = add_division value = infantry }
-				command = { type = add_division value = infantry }
-				command = { type = add_division value = infantry }
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
 				
-				command = { type = add_division value = light_armor }
-				command = { type = add_division value = light_armor }
-				command = { type = add_division value = light_armor }
+				command = { type = add_division value = armor when = 2 }
+				command = { type = add_division value = armor when = 2 }
+				command = { type = add_division value = armor when = 2 }
+				command = { type = add_division value = armor when = 2 }
 				
-				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
-				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
-				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				
+				command = { type = add_division which = "Lenin militia I" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia II" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia III" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia IV" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia V" value = militia when = 7 }
+				
+				command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
+				command = { type = gain_tech which = -2 } # get blueprints for a random tech currently being researched
 				
         }		
 }
@@ -461,25 +504,38 @@ event = {
                 name = "We must forge a new strong workers world alliance !"
                 
 				command = { type = belligerence value = 1 }
-				command = { type = alliance which = SOV }
+				
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = CHC }
+				
 				command = { type = domestic which = interventionism value = 10 }
 				
-				command = { type = add_division value = hq }
+				command = { type = add_division value = hq when = 3 }
 				
-				command = { type = add_division value = motorized }
-				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized when = 5 }
+				command = { type = add_division value = motorized when = 5 }
+				command = { type = add_division value = motorized when = 5 }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = add_division which = "Lenin militia I" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia II" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia III" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia IV" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia V" value = militia when = 7 }
 								
-				command = { type = add_division value = infantry }
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 } 
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
 				
-				command = { type = add_division value = light_armor }
-				command = { type = add_division value = light_armor }
+				command = { type = add_division value = armor when = 2 }
+				command = { type = add_division value = armor when = 2 }
+
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
 				
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
@@ -509,22 +565,27 @@ event = {
                 name = "We must forge a new strong workers world alliance !"
                 
 				command = { type = belligerence value = 1 }
-				command = { type = alliance which = SOV }
+				
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = PRK }
 				command = { type = domestic which = interventionism value = 10 }
 				
-				command = { type = add_division value = hq }
+				command = { type = add_division value = hq when = 3 }
 				
-				command = { type = add_division value = motorized }
+				command = { type = add_division value = motorized when = 5 }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = add_division which = "Lenin militia I" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia II" value = militia when = 7 }
+				command = { type = add_division which = "Lenin militia III" value = militia when = 7 }
 								
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 13 }
+				command = { type = add_division value = infantry when = 13 }
 				
-				command = { type = add_division value = light_armor }
+				command = { type = add_division value = armor when = 2 }
+				
+				command = { type = add_division value = light_armor when = 3 }
+				command = { type = add_division value = light_armor when = 3 }
 				
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
@@ -555,18 +616,18 @@ event = {
                 name = "We must forge a new strong workers world alliance !"
                 
 				command = { type = belligerence value = 1 }
-				command = { type = alliance which = SOV }
+				#command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = MON }
 				command = { type = domestic which = interventionism value = 10 }
 				
-				command = { type = add_division value = hq }
+				command = { type = add_division value = hq when = 2 }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = add_division value = militia when = 7 }
+				command = { type = add_division value = militia when = 7 }
 								
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 10 }
 				
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
@@ -597,18 +658,18 @@ event = {
                 name = "We must forge a new strong workers world alliance !"
                 
 				command = { type = belligerence value = 1 }
-				command = { type = alliance which = SOV }
+				#command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = SIK }
 				command = { type = domestic which = interventionism value = 10 }
 				
-				command = { type = add_division value = hq }
+				command = { type = add_division value = hq when = 3 }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = add_division value = militia when = 7 }
+				command = { type = add_division value = militia when = 7 }
 								
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 10 }
 				
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
@@ -639,18 +700,18 @@ event = {
                 name = "We must forge a new strong workers world alliance !"
                 
 				command = { type = belligerence value = 1 }
-				command = { type = alliance which = SOV }
+				#command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = TRK }
 				command = { type = domestic which = interventionism value = 10 }
 				
-				command = { type = add_division value = hq }
+				command = { type = add_division value = hq when = 3 }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = add_division value = militia when = 7 }
+				command = { type = add_division value = militia when = 7 }
 								
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 10 }
 				
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
@@ -681,18 +742,18 @@ event = {
                 name = "We must forge a new strong workers world alliance !"
                 
 				command = { type = belligerence value = 1 }
-				command = { type = alliance which = SOV }
+				#command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = KAZ }
 				command = { type = domestic which = interventionism value = 10 }
 				
-				command = { type = add_division value = hq }
+				command = { type = add_division value = hq when = 3 }
 				
-				command = { type = add_division value = militia }
-				command = { type = add_division value = militia }
+				command = { type = add_division value = militia when = 7 }
+				command = { type = add_division value = militia when = 7 }
 								
-				command = { type = add_division value = infantry }
+				command = { type = add_division value = infantry when = 10 }
 				
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
 				command = { type = gain_tech which = -2 } 		# get blueprints for a random tech currently being researched
@@ -718,7 +779,7 @@ event = {
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
-		offset = 1
+		offset = 5
 		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
@@ -751,55 +812,22 @@ event = {
         }
  
         name = "Economic Policy"
-        desc = "We have to define an economic policy towards the fascist and capitalist countries ... no trade with them!"
+        desc = "We have to define a new economic policy of our new alliance"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
-		offset = 1
+		offset = 5
 		deathdate = { day = 30 month = december year = 1963 }
  
-        action_a = {
+        action = {
 				ai_chance = 100
-                name = "End every trade with the capitalist and the fascists !"
+                name = "Integrate our economies"
                 
-				command = { type = relation which = USA value = -50 }
-				command = { type = relation which = ENG value = -50 }
-				command = { type = relation which = U01 value = -50 }
+				command = { type = money value = -100 }
+				command = { type = industrial_modifier which = total value = 0.5 }
 				
-				command = { type = relation which = GER value = -50 }
-				command = { type = relation which = ITA value = -50 }
-
-				command = { type = end_trades which = SOV where = USA }
-				command = { type = end_trades which = CHC where = USA }
-				command = { type = end_trades which = MON where = USA }
-				command = { type = end_trades which = SIK where = USA }		
-				command = { type = end_trades which = PRK where = USA }
-				
-				command = { type = end_trades which = SOV where = ENG }
-				command = { type = end_trades which = CHC where = ENG }
-				command = { type = end_trades which = MON where = ENG }
-				command = { type = end_trades which = SIK where = ENG }		
-				command = { type = end_trades which = PRK where = ENG }				
-				
-				command = { type = end_trades which = SOV where = U01 }
-				command = { type = end_trades which = CHC where = U01 }
-				command = { type = end_trades which = MON where = U01 }
-				command = { type = end_trades which = SIK where = U01 }		
-				command = { type = end_trades which = PRK where = U01 }	
-				
-				command = { type = end_trades which = SOV where = GER }
-				command = { type = end_trades which = CHC where = GER }
-				command = { type = end_trades which = MON where = GER }
-				command = { type = end_trades which = SIK where = GER }		
-				command = { type = end_trades which = PRK where = GER }		
-
-				command = { type = end_trades which = SOV where = ITA }
-				command = { type = end_trades which = CHC where = ITA }
-				command = { type = end_trades which = MON where = ITA }
-				command = { type = end_trades which = SIK where = ITA }		
-				command = { type = end_trades which = PRK where = ITA }					
-
         }		
+		
 }
 #############################################
 ###### Conference Ended
@@ -818,7 +846,7 @@ event = {
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
-		offset = 1
+		offset = 5
 		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
@@ -849,13 +877,16 @@ event = {
  
         action_a = {
 				ai_chance = 90
-                name = "Just condamn the Conference"				
+                name = "Just condamn the Conference"		
+				
                 command = { type = dissent value = 1 }	
 				command = { type = belligerence value = 1 }
+				
         }	
         action_b = {
 				ai_chance = 10
                 name = "Crush Them before they become too strong !"
+				
                 command = { type = war which = SOV }
         }			
 }
@@ -877,8 +908,9 @@ event = {
 		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
-				ai_chance = 30
+				ai_chance = 35
                 name = "Just Condamn the Conference"
+				
                 command = { type = dissent value = 1 }
 				command = { type = belligerence value = 1 }
         }	
@@ -893,8 +925,9 @@ event = {
 				
         }	
         action_c = {
-				ai_chance = 10
+				ai_chance = 5
                 name = "Crush Them before they become too strong !"
+				
                 command = { type = war which = SOV }
         }			
 }
@@ -918,20 +951,39 @@ event = {
 		offset = 180
 		deathdate = { day = 1 month = december year = 1960 }
  
-        action_a = {
-				ai_chance = 70
-                name = "Rise the Partisan !"
+        action = {
+				ai_chance = 75
+                name = "Export the revolution"
 				
 				command = { type = dissent value = -1 }
+				command = { type = money value = -50 }
+				
 				command = { type = trigger value = 621 }							
 				
         }	
-		action_b = {
-				ai_chance = 30
-                name = "Attack directly !"
+		
+		action = {
+				ai_chance = 10
+                name = "Attack neutral nations !"
+				
+                command = { type = war which = SIA }
+				command = { type = war which = TIB }
+				command = { type = war which = AFG }
+				
+				command = { type = sleepevent value = 621 }	
+        }
+		
+		action = {
+				ai_chance = 5
+                name = "Attack in all directions !"
+				
                 command = { type = war which = KOR }
 				command = { type = war which = U03 }
-				command = { type = war which = IND }
+				command = { type = war which = JAP }
+				command = { type = war which = BUR }
+				command = { type = war which = TIB }
+				command = { type = war which = CHI }
+				
 				command = { type = sleepevent value = 621 }	
         }	
 		
@@ -945,8 +997,8 @@ event = {
 				event = 620
         }
  
-        name = "Communist Revolt !"
-        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in asia!"
+        name = "Communist Revolution !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in our country !"
         style = 0
  
 		date = { day = 1 month = september year = 1950 }
@@ -956,8 +1008,14 @@ event = {
         action_a = {
 				ai_chance = 100
                 name = "Civil War !"
-				command = { type = 	civil_war which = U72 }
-				#command = { type = dissent value = 80 }
+				
+				command = { type = dissent value = 50 }
+				
+				command = { type = revolt which = 1403 }
+				command = { type = revolt which = 1395 }
+				command = { type = revolt which = 1395 }
+				command = { type = revolt which = 1395 }
+				command = { type = revolt which = 1401 }				
         }	
 		
 }
@@ -971,7 +1029,7 @@ event = {
         }
  
         name = "Communist Revolt !"
-        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in asia!"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in our country !"
         style = 0
  
 		date = { day = 1 month = september year = 1950 }
@@ -983,6 +1041,20 @@ event = {
                 name = "Civil War !"
 				
 				command = { type = dissent value = 100 }
+				
+				command = { type = revolt which = 1484 }
+				command = { type = revolt which = 1484 }
+				command = { type = revolt which = 1484 }
+				command = { type = revolt which = 1526 }
+				command = { type = revolt which = 1497 }
+				command = { type = revolt which = 1472 }
+				command = { type = revolt which = 1441 }
+				command = { type = revolt which = 1505 }
+				command = { type = revolt which = 1454 }
+				command = { type = revolt which = 1525 }
+				command = { type = revolt which = 1498 }
+				command = { type = revolt which = 1498 }
+				command = { type = revolt which = 1498 }
         }	
 		
 }
@@ -1005,8 +1077,13 @@ event = {
  
         action_a = {
 				ai_chance = 100
-                name = "Communist Revolt !"				
-				command = { type = dissent value = 80 }
+                name = "Communist Revolt !"		
+				
+				command = { type = dissent value = 50 }
+				
+				command = { type = revolt which = 1231 }
+				command = { type = revolt which = 1230 }
+				
         }	
 		
 }
@@ -1020,7 +1097,37 @@ event = {
         }
  
         name = "Communist Revolt in the Free France !"
-        desc = "It has spread a general Communist-style rebellion in the Republique !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in the Republique !"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 30 }
+								
+				command = { type = revolt which = 978 }
+				command = { type = revolt which = 962 }
+				command = { type = revolt which = 747 }
+				command = { type = revolt which = 909 }				
+				command = { type = revolt which = 922 }				
+				
+        }	
+}
+event = {
+        id = 626
+        random = no
+        country = BRA
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+				event = 620
+        }
+ 
+        name = "Communist Revolt !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in our country !"
         style = 0
  
 		date = { day = 1 month = july year = 1950 }
@@ -1031,29 +1138,11 @@ event = {
 				ai_chance = 100
                 name = "Damn !"
                 command = { type = dissent value = 50 }
-        }	
-}
-event = {
-        id = 626
-        random = no
-        country = BRA
-        trigger = {
-                flag = COMINTERN_CONFERENCE_WORLD
-								event = 620
-        }
- 
-        name = "Communist Revolt !"
-        desc = "It has spread a general Communist-style rebellion in the Empire!"
-        style = 0
- 
-		date = { day = 1 month = july year = 1950 }
-		offset = 360
-		deathdate = { day = 1 month = december year = 1960 }
- 
-		action_a = {
-				ai_chance = 100
-                name = "Damn !"
-                command = { type = dissent value = 70 }
+				
+				command = { type = revolt which = 2075 }
+				command = { type = revolt which = 2071 }
+				command = { type = revolt which = 2058 }
+				
         }	
 }
 event = {
@@ -1077,6 +1166,12 @@ event = {
 				ai_chance = 100
                 name = "Damn !"
                 command = { type = dissent value = 70 }
+				
+				command = { type = revolt which = 1965 }
+				command = { type = revolt which = 1966 }
+				command = { type = revolt which = 1968 }
+				command = { type = revolt which = 1980 }
+				
         }	
 }
 event = {
@@ -1085,21 +1180,27 @@ event = {
         country = CUB
         trigger = {
                 flag = COMINTERN_CONFERENCE_WORLD
-								event = 620
+				event = 620
         }
  
         name = "Communist Revolt !"
-        desc = "Viva la Revolucion Comunista !"
+        desc = "Viva la Revolucion !"
         style = 0
  
 		date = { day = 1 month = july year = 1950 }
 		offset = 360
 		deathdate = { day = 1 month = december year = 1960 }
  
-		action_a = {
+		action = {
 				ai_chance = 100
                 name = "Damn !"
+				
                 command = { type = dissent value = 70 }
+				
+				command = { type = revolt which = 1777 }
+				command = { type = revolt which = 1777 }
+				command = { type = revolt which = 1777 }
+					
         }	
 }
 event = {
@@ -1112,17 +1213,55 @@ event = {
         }
  
         name = "Communist Revolt in the Empire !"
-        desc = "It has spread a general Communist-style rebellion in the Empire!"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in the Empire!"
         style = 0
  
 		date = { day = 1 month = july year = 1950 }
 		offset = 360
 		deathdate = { day = 1 month = december year = 1960 }
  
-		action_a = {
+		action = {
 				ai_chance = 100
                 name = "Damn !"
-                command = { type = dissent value = 70 }
+                command = { type = dissent value = 30 }
+				
+				command = { type = revolt which = 956 }
+				command = { type = revolt which = 964 }
+				command = { type = revolt which = 842 }
+				command = { type = revolt which = 1509 }	
+				command = { type = revolt which = 1436 }
+				command = { type = revolt which = 870 }				
+				
+        }	
+}
+event = {
+        id = 631
+        random = no
+        country = POR
+        trigger = {
+                flag = COMINTERN_CONFERENCE_WORLD
+								event = 620
+        }
+ 
+        name = "Communist Revolt in the Empire !"
+        desc = "The Communist spies have done a great job, they are ready to launch a coordinated general uprising in the Empire!"
+        style = 0
+ 
+		date = { day = 1 month = july year = 1950 }
+		offset = 360
+		deathdate = { day = 1 month = december year = 1960 }
+ 
+		action = {
+				ai_chance = 100
+                name = "Damn !"
+                command = { type = dissent value = 30 }
+				
+				command = { type = revolt which = 892 }
+				command = { type = revolt which = 888 }
+				command = { type = revolt which = 857 }
+				command = { type = revolt which = 854 }	
+				command = { type = revolt which = 963 }		
+				
         }	
 }
 event = {

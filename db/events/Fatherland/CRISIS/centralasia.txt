@@ -26,7 +26,7 @@
 # 90000423 # U42 # Caucasian volunteers
 # 90000424 # TRK # Caucasian volunteers
 #Aftermath:
-# 90000425 # SOV # Russia surrenders
+# 90000425 # SOV # Soviet surrenders
 # 90000426 # SOV # Soviet victory over TRK
 # 90000427 # SOV # Soviet victory over KAZ
 # 90000430 # TRK # TRK post-war policy
@@ -579,20 +579,20 @@ event = {
 	command = { type = delete_unit which = -1 }
 	command = { type = delete_unit which = -1 }
 	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
-	command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
+	#command = { type = delete_unit which = -1 }
 	}
 }
 event = {

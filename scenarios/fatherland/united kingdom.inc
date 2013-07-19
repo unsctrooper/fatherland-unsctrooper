@@ -293,16 +293,16 @@ inventions = { 3000027 3000028 3000012 }
      defense_lobby     = 10
      interventionism   = 10
     }
-   headofstate            = {  type = 9 id = 10014  } 
-   headofgovernment       = {  type = 9 id = 10018  } 
-   foreignminister        = {  type = 9 id = 10003  } 
-   armamentminister       = {  type = 9 id = 10038  } 
-   ministerofsecurity     = {  type = 9 id = 10064  } 
-   ministerofintelligence = {  type = 9 id = 10078  } 
-   chiefofstaff           = {  type = 9 id = 10094  } 
-   chiefofarmy            = {  type = 9 id = 10104  } 
-   chiefofnavy            = {  type = 9 id = 10112  } 
-   chiefofair             = {  type = 9 id = 10117  }
+	headofstate = { type = 9 id = 10014 }
+	headofgovernment = { type = 9 id = 10019 }
+	foreignminister = { type = 9 id = 10024 }
+	armamentminister = { type = 9 id = 10044 }
+	ministerofsecurity = { type = 9 id = 10065 }
+	ministerofintelligence = { type = 9 id = 10080 }
+	chiefofstaff = { type = 9 id = 10097 }
+	chiefofarmy = { type = 9 id = 10106 }
+	chiefofnavy = { type = 9 id = 10111 }
+	chiefofair = { type = 9 id = 10118 }
    dormant_ministers      = {  10001 10011 10002 10004 10005 10058 10006 10007 10008 10101 10102 10009 10109 10010 10017 10022 10091 10103 10105 10119 10059 10131 10141 10142 10093 
                                10112 10039 
                             }

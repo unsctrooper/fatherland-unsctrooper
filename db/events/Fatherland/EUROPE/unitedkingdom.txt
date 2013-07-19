@@ -520,3 +520,324 @@ event = {
 }
 
 #Nuke Moscow!
+
+
+## Elections from NWO2
+
+event = {
+	id = 8005001
+	country = ENG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10014 } # George VI
+		command = { type = headofgovernment which = 10018 } # Winston Churchill
+		command = { type = foreignminister which = 10003 } # Anthony Eden
+		command = { type = armamentminister which = 10154 } # Winston Churchill
+		command = { type = ministerofsecurity which = 10061 } # David Maxwell Fyfe
+		command = { type = ministerofintelligence which = 10079 } # Kim Philby
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 10014 } # George VI
+		command = { type = headofgovernment which = 10019 } # Clement Attlee
+		command = { type = foreignminister which = 10025 } # Herbert Morrison
+		command = { type = armamentminister which = 10043 } # Clement Attlee
+		command = { type = ministerofsecurity which = 10065 } # James Chuter Ede
+		command = { type = ministerofintelligence which = 10079 } # Kim Philby
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8005003
+	country = ENG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10159 } # Anthony Eden
+		command = { type = foreignminister which = 10164 } # Harold MacMillan
+		command = { type = armamentminister which = 10173 } # Walter Monckton
+		command = { type = ministerofsecurity which = 10180 } # Gwilym Lloyd-George
+		command = { type = ministerofintelligence which = 10185 } # Antony Head
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10019 } # Clement Attlee
+		command = { type = foreignminister which = 10167 } # Alfred Robens
+		command = { type = armamentminister which = 10153 } # Emanuel Shinwell
+		command = { type = ministerofsecurity which = 10130 } # Leo Amery
+		command = { type = ministerofintelligence which = 10190 } # James Callaghan
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8005004
+	country = ENG
+
+	name = "EVT_8005004_NAME"
+	desc = "EVT_8005004_DESC"
+	picture = "nwo\anthony_eden"
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofgovernment = 10164
+		event = 8500322 # Suez War is lost by Israels
+	}
+
+	date = { day = 9 month = january year = 1957 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = "EVT_8005004_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10160 } # Harold MacMillan
+		command = { type = foreignminister which = 10023 } # John Selwyn Lloyd
+		command = { type = armamentminister which = 10175 } # Duncan Sandys
+		command = { type = ministerofsecurity which = 10181 } # Richard A. Butler
+		command = { type = ministerofintelligence which = 10186 } # John Hugh Hare
+	}
+}
+
+event = {
+	id = 8005005
+	country = ENG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10160 } # Harold MacMillan
+		command = { type = foreignminister which = 10023 } # John Selwyn Lloyd
+		command = { type = armamentminister which = 10176 } # Harold Watkinson
+		command = { type = ministerofsecurity which = 10181 } # Richard A. Butler
+		command = { type = ministerofintelligence which = 10187 } # Christopher Soames
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 10158 } # Elisabeth II
+		command = { type = headofgovernment which = 10162 } # Hugh Gaitskell
+		command = { type = foreignminister which = 10169 } # Denis Healey
+		command = { type = armamentminister which = 10178 } # Harold Wilson
+		command = { type = ministerofsecurity which = 10183 } # Patrick Gordon Walker
+		command = { type = ministerofintelligence which = 10190 } # James Callaghan
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8005006
+	country = ENG
+
+	name = "EVT_8005006_NAME"
+	desc = "EVT_8005006_DESC"
+	picture = "nwo\harold_macmillan"
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofgovernment = 10160
+		event = 8005007 # Profumo Affair
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_8005006_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10161 } # Alec Douglas-Home
+		command = { type = foreignminister which = 10166 } # Richard A. Butler
+		command = { type = armamentminister which = 10177 } # Peter Thorneycroft
+		command = { type = ministerofsecurity which = 10182 } # Henry Brooke
+		command = { type = ministerofintelligence which = 10189 } # James Ramsden
+	}
+}
+
+event = {
+	id = 8005007
+	country = ENG
+
+	name = EVT_8005007_NAME
+	desc = EVT_8005007_DESC
+	picture = "nwo\profumo_affair"
+	style = 1
+	
+	trigger = {
+		government = democratic
+		headofgovernment = 1192 # Harold MacMillan in office
+		}
+
+	date = { day = 1 month = may year = 1963 }
+	offset = 30
+	deathdate = { day = 29 month = may year = 1963 }
+
+
+	action_a = {
+		name = EVT_8005007_A
+		command = { type = dissent value = 3 }
+		command = { type = ministerofintelligence which = 1221 }
+		}
+}
+
+event = {
+	id = 8005008
+	country = ENG
+	
+	name = EVT_8005008_NAME
+	desc = EVT_8005008_DESC
+	picture = "nwo\george_vi_funeral"
+	style = 1
+	
+	trigger = {
+		OR = {
+			headofstate = 10014 # George VI
+			headofstate = 10015 # George VI
+			headofstate = 10157 # George VI
+		}
+	}
+
+	date = { day = 6 month = february year = 1952 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action_a = {
+		name = EVT_8005008_A
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		}
+}
+
+event = {
+	id = 8005009
+	country = ENG
+	
+	name = EVT_8005009_NAME
+	desc = EVT_8005009_DESC
+	picture = "nwo\elizabeth_ii_coronation"
+	style = 1
+	
+	trigger = {
+		event = 8005008
+	}
+
+	date = { day = 10 month = february year = 1952 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action_a = {
+		name = EVT_8005009_A
+		command = { type = dissent value = -5 }
+		}
+}
+
+event = {
+	id = 8005010
+	country = ENG
+	
+	name = EVT_8005010_NAME
+	desc = EVT_8005010_DESC
+	picture = "nwo\london_1948"
+	style = 1
+	
+	trigger = {
+		atwar = no
+	}
+
+	date = { day = 29 month = july year = 1948 }
+	offset = 7
+	deathdate = { day = 14 month = august year = 1948 }
+
+
+	action_a = {
+		name = EVT_8005010_A
+		command = { type = dissent value = -3 }
+		}
+}

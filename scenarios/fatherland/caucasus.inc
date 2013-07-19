@@ -59,7 +59,7 @@
   }
    SpyInfo                = {  country = "U42" NumberOfSpies = 7  } 
    
-   nationalprovinces      = { 709 } 
+   nationalprovinces      = { 713 } 
    ownedprovinces         = {  
 # Armenia
 711 712 714 

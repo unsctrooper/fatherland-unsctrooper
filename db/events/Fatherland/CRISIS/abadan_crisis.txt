@@ -56,8 +56,9 @@ event = {
 		command = { type = add_prov_resource which = 1090 value = 20 where = oil }
 		command = { type = add_prov_resource which = 1091 value = 5 where = oil }
 		command = { type = relation which = ENG value = -100 }
-		command = { type = 	end_puppet }
-		command = { type = 	end_access which = ENG }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		command = { type = leave_alliance }
 	}
 	
 	action = {
@@ -119,7 +120,7 @@ event = {
 
 	action = {
 		name = EVT_90000102_A # Sanctions are successful
-		ai_chance = 90
+		ai_chance = 80
 		command = { type = industrial_modifier which = total value = -10 }
 		command = { type = dissent value = 15 }
 	}
@@ -175,14 +176,14 @@ event = {
 
 	action = {
 		name = EVT_90000104_NAME # Help out
-		ai_chance = 75
+		ai_chance = 80
 		command = { type = relation which = PER value = 50 }
 		command = { type = trigger which = 90000105 } # British ultimatum
 	}
 	
 	action = {
 		name = EVT_90000104_B # Too risky...
-		ai_chance = 25
+		ai_chance = 20
 		command = { type = relation which = PER value = -50 }
 	}
 }

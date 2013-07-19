@@ -17,6 +17,7 @@
 - British-Ethiopian war
 - Review of italian events
 - New RK Kaukasus events
+- Added elections events
 
 # Scenario files (INC):
 - Review of IC Germany/USSR 
@@ -27,6 +28,7 @@
 - Review of Belgium (exiles)
 - Review of Pakistan
 - Review of India
+- Review of UK cabinet
 
 # AI
 - Improved AI for France, Free France, Soviet Union, Germany & United Kingdom

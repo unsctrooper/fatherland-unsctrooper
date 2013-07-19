@@ -114,6 +114,8 @@ event = {
 		command = { type = dissent value = 25 }
 		
 		command = { type = independence which = GEO value = 0 when = 0 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+
+		command = { type = make_puppet which = GEO }
 		
 		command = { type = trigger which = 92003 }
 	}
@@ -137,10 +139,6 @@ event = {
 	random = no
 	country = GEO	
 	
-	trigger = {
-		event = 92002
-	}
-	
 	name = "Georgian Answer !"
 	desc = "The Reich wants us to re-enter under his sphere of influence, for independence are we willing to accept?"
 	style = 2
@@ -152,13 +150,14 @@ event = {
 
 	action = {
 		name = "Yes, independence first !"	
-		command = { type = alliance value = GER }
+		command = { type = alliance value = U42 }
 		
 	}
 	
 		action = {
 		name = "No, we want a real independence !"	
 		command = { type = war value = U42 }
+		command = { type = end_puppet }
 	
 	}
 }
