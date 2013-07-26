@@ -1,0 +1,330 @@
+event = {
+	id = 8014601
+	country = SWE
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofgovernment which = 40012 } # Per Albin Hansson
+		command = { type = foreignminister which = 40019 } # ?sten Und?n
+		command = { type = armamentminister which = 40034 } # Bertil Ohlin
+		command = { type = ministerofsecurity which = 40038 } # Gustav Andersson-Rasj?n
+		command = { type = ministerofintelligence which = 40047 } # ?ke Hammerski?ld
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofgovernment which = 40014 } # G?sta Bagge
+		command = { type = foreignminister which = 40024 } # Georg Andr?n
+		command = { type = armamentminister which = 40036 } # Fritjof Dom?
+		command = { type = ministerofsecurity which = 40041 } # Peter G.A. Wijkman
+		command = { type = ministerofintelligence which = 40045 } # Helge Jung
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8014602
+	country = SWE
+
+	name = EVT_DEATH_NAME
+	desc = EVT_DEATH_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofgovernment = 40012 # Per Albin Hansson
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = EVT_DEATH
+		ai_chance = 100
+		command = { type = sleepminister which = 40012 }
+		command = { type = sleepminister which = 40168 }
+		command = { type = headofgovernment which = 40013 } # Tage Erlander
+	}
+}
+
+event = {
+	id = 8014603
+	country = SWE
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofgovernment which = 40013 } # Tage Erlander
+		command = { type = foreignminister which = 40019 } # ?sten Und?n
+		command = { type = armamentminister which = 40088 } # Per Edvin Sk?ld
+		command = { type = ministerofsecurity which = 40044 } # Arvid G. Richert
+		command = { type = ministerofintelligence which = 40047 } # ?ke Hammerski?ld
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofgovernment which = 40016 } # Bertil Ohlin
+		command = { type = foreignminister which = 40024 } # Georg Andr?n
+		command = { type = armamentminister which = 40036 } # Fritjof Dom?
+		command = { type = ministerofsecurity which = 40043 } # K.G. Westman
+		command = { type = ministerofintelligence which = 40045 } # Helge Jung
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+# Death of Gustav V
+event = {
+	id = 8014604
+	country = SWE
+
+	name = EVT_8014604_NAME
+	desc = EVT_8014604_DESC
+	picture = "nwo\gustav_vi"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_8014604_A
+		ai_chance = 100
+		command = { type = sleepminister which = 40001 }
+		command = { type = sleepminister which = 40011 }
+		command = { type = sleepminister which = 40094 }
+		command = { type = sleepminister which = 40156 }
+		command = { type = sleepminister which = 40157 }
+		command = { type = sleepminister which = 40158 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+	}
+}
+
+event = {
+	id = 8014605
+	country = SWE
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40013 } # Tage Erlander
+		command = { type = foreignminister which = 40019 } # ?sten Und?n
+		command = { type = armamentminister which = 40088 } # Per Edvin Sk?ld
+		command = { type = ministerofsecurity which = 40044 } # Arvid G. Richert
+		command = { type = ministerofintelligence which = 40047 } # ?ke Hammerski?ld
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40016 } # Bertil Ohlin
+		command = { type = foreignminister which = 40024 } # Georg Andr?n
+		command = { type = armamentminister which = 40036 } # Fritjof Dom?
+		command = { type = ministerofsecurity which = 40043 } # K.G. Westman
+		command = { type = ministerofintelligence which = 40045 } # Helge Jung
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8014606
+	country = SWE
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40013 } # Tage Erlander
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40016 } # Bertil Ohlin
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8014607
+	country = SWE
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40013 } # Tage Erlander
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40300 } # Jarl Hjalmarson
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8014608
+	country = SWE
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40013 } # Tage Erlander
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 40087 } # Gustav VI Adolf
+		command = { type = headofgovernment which = 40016 } # Bertil Ohlin
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+

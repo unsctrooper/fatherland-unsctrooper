@@ -1,0 +1,270 @@
+event = {
+	id = 8011501
+	country = PHI
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 325015 } # Manuel Roxas
+		command = { type = headofgovernment which = 325016 } # Elpidio Quirino
+		command = { type = foreignminister which = 325023 } # Juan Sumulong
+		command = { type = armamentminister which = 325035 } # Diosdado P. Macapagal
+		command = { type = ministerofsecurity which = 325046 } # Ramon Quisumbing
+		command = { type = ministerofintelligence which = 325059 } # John Gilbert Winant
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 325014 } # Sergio Osme?a
+		command = { type = headofgovernment which = 325213 } # Eulogio Rodriguez
+		command = { type = foreignminister which = 325023 } # Juan Sumulong
+		command = { type = armamentminister which = 325035 } # Diosdado P. Macapagal
+		command = { type = ministerofsecurity which = 325046 } # Ramon Quisumbing
+		command = { type = ministerofintelligence which = 325059 } # John Gilbert Winant
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8011502
+	country = PHI
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 325011 } # Elpidio Quirino
+		command = { type = headofgovernment which = 325200 } # Fernando Lopez
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 325067 } # Jos? P. Laurel
+		command = { type = headofgovernment which = 325201 } # Manuel Briones
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8011503
+	country = PHI
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 325203 } # Ramon Magsaysay
+		command = { type = headofgovernment which = 325204 } # Carlos P. Garcia
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 325011 } # Elpidio Quirino
+		command = { type = headofgovernment which = 325202 } # Jose Yulo
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8011504
+	country = PHI
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 325207 } # Carlos P. Garcia
+		command = { type = headofgovernment which = 325208 } # Diosdado Macapagal
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 325205 } # Jose Yulo
+		command = { type = headofgovernment which = 325206 } # Jose B. Laurel, Jr.
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8011505
+	country = PHI
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 325209 } # Diosdado Macapagal
+		command = { type = headofgovernment which = 325210 } # Emmanuel Pelaez
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 325211 } # Carlos P. Garcia
+		command = { type = headofgovernment which = 325212 } # Sergio Osme?a, Jr.
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+
+event = {
+	id = 8011506
+	country = PHI
+
+	name = EVT_8011506_NAME #"Relations with USA"
+	desc = EVT_8011506_DESC
+	picture = "nwo\philippines_and_usa"
+	style = 1
+
+	trigger = {
+		flag = cold_war_pacific
+		puppet = { country = PHI country = USA }
+	}
+
+	date = { day = 1 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8011506_A
+		command = { type = dissent value = 5 }
+		command = { type = end_puppet }
+		command = { type = access which = USA }
+	}
+
+}
+
+event = {
+	id = 8011507
+	country = PHI
+
+	name = EVT_8011507_NAME #"Hukbalahap Rebellion"
+	desc = EVT_8011507_DESC
+	picture = "nwo\hukbalahap_rebellion"
+	style = 1
+
+	trigger = {
+		flag = cold_war_pacific
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = EVT_8011507_A
+		command = { type = dissent value = 10 }
+	}
+
+}

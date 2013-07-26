@@ -1,0 +1,332 @@
+event = {
+	id = 8015701
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 195016 } # Luis Conrado Batlle Beres
+		command = { type = headofgovernment which = 195200 } # Alfeo Brum
+	}
+}
+
+event = {
+	id = 8015702
+	country = URU
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 195089 } # Andres Trueba Mart?nez
+		command = { type = headofgovernment which = 195021 } # Tomas Beretta Gandolfo
+		command = { type = foreignminister which = 195027 } # Jos? Serrato
+		command = { type = armamentminister which = 195038 } # Julio Cesar Grauer
+		command = { type = ministerofsecurity which = 195046 } # Andres Pacheco
+		command = { type = ministerofintelligence which = 195054 } # Andres Trueba Mart?nez
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 195016 } # Luis Conrado Batlle Beres
+		command = { type = headofgovernment which = 195022 } # Luis Conrado Batlle Beres
+		command = { type = foreignminister which = 195029 } # Emilio Frugoni
+		command = { type = armamentminister which = 195036 } # Carlos Jackson Urrib?
+		command = { type = ministerofsecurity which = 195047 } # Jose Pedro Varela
+		command = { type = ministerofintelligence which = 195055 } # James McFarlane Rubio
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+
+
+event = {
+	id = 8015703
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195016 } # Luis Conrado Batlle Beres
+		command = { type = headofgovernment which = 195022 } # Luis Conrado Batlle Beres
+		command = { type = foreignminister which = 195029 } # Emilio Frugoni
+		command = { type = armamentminister which = 195036 } # Carlos Jackson Urrib?
+		command = { type = ministerofsecurity which = 195047 } # Jose Pedro Varela
+		command = { type = ministerofintelligence which = 195055 } # James McFarlane Rubio
+	}
+}
+
+event = {
+	id = 8015704
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195201 } # Alberto Fermin Zubiria
+		command = { type = headofgovernment which = 195202 } # Alberto Fermin Zubiria
+	}
+}
+
+event = {
+	id = 8015705
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195203 } # Arturo Lezama
+		command = { type = headofgovernment which = 195204 } # Arturo Lezama
+	}
+}
+
+event = {
+	id = 8015706
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195205 } # Carlos Fischer
+		command = { type = headofgovernment which = 195206 } # Carlos Fischer
+	}
+}
+
+event = {
+	id = 8015707
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195207 } # Martin Echegoyen
+		command = { type = headofgovernment which = 195208 } # Martin Echegoyen
+	}
+}
+
+event = {
+	id = 8015708
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195209 } # Benito Nardone
+		command = { type = headofgovernment which = 195210 } # Benito Nardone
+	}
+}
+
+event = {
+	id = 8015709
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195211 } # Eduardo Victor Haedo
+		command = { type = headofgovernment which = 195212 } # Eduardo Victor Haedo
+	}
+}
+
+event = {
+	id = 8015710
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195213 } # Faustino Harrison
+		command = { type = headofgovernment which = 195214 } # Faustino Harrison
+	}
+}
+
+event = {
+	id = 8015711
+	country = URU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 195215 } # Daniel Fern?ndez Crespo
+		command = { type = headofgovernment which = 195216 } # Daniel Fern?ndez Crespo
+	}
+}
+
+# Tupamaros Movement
+event = {
+	id = 8015712
+	country = URU
+	
+	name = EVT_8015712_NAME
+	desc = EVT_8015712_DESC
+	picture = nwo\tupamaros
+	style = 1
+
+	trigger = {
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_8015712_A
+		command = { type = dissent value = 10 }
+	}
+
+}

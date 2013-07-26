@@ -1,0 +1,70 @@
+# Death of Abdul Aziz
+event = {
+	id = 8012901
+	country = SAU
+
+	name = EVT_8012901_NAME
+	desc = EVT_8012901_DESC
+	picture = "nwo\death"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_DEATH
+		ai_chance = 100
+		command = { type = sleepminister which = 295001 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295044 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295045 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295046 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295048 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295049 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295050 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295051 } # Abdul Aziz al Saud
+		command = { type = sleepminister which = 295052 } # Abdul Aziz al Saud
+		command = { type = headofstate which = 295100 } # Saud al Saud
+		command = { type = headofgovernment which = 295101 } # Faisal al Saud
+		command = { type = foreignminister which = 295014 } # Saud al Saud
+		command = { type = armamentminister which = 295020 } # Salih al Rajihi
+		command = { type = ministerofsecurity which = 295025 } # Suleiman al Olyan
+		command = { type = ministerofintelligence which = 295029 } # Faisal al Saud
+		command = { type = chiefofstaff which = 295034 } # Faisal al Saud
+		command = { type = chiefofarmy which = 295037 } # T.R.S. Smythe-Cooper
+		command = { type = chiefofnavy which = 295039 } # Philip Gordon-Lee
+		command = { type = chiefofair which = 295043 } # Bassam Abu Khadar
+	}
+}
+
+# Saud's handling of economy
+event = {
+	id = 8012902
+	country = SAU
+
+	name = EVT_8012902_NAME
+	desc = EVT_8012902_DESC
+	picture = "nwo\king_saud"
+	style = 1
+
+	trigger = {
+		headofstate = 295100
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8012902_A
+		command = { type = dissent value = 15 }
+	}
+
+}

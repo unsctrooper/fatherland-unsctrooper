@@ -1,57 +1,37 @@
-#########################################################################
-#  Gibraltar or War (Last chance for peace)
-#########################################################################
+
 event = {
-	id = ????
-	random = yes
+	id = 8014301
 	country = SPA
-	
-	decision = {
-		exists = ENG
-		atwar = no
-		government = fascist	
-		
-		owned = { province = ???? [data = ENG] } #Gibraltar
-	}
-	
-	decision_trigger = {
-		NOT = { owned = { province = ???? data = SPA } } # Danzig
-		NOT = { alliance = { country = GER country = ENG } }
-		NOT = { war = { country = GER country = ENG } }
-		NOT = { puppet = { country = ENG country = GER } }
-		NOT = { ispuppet = GER }
-	}
-	
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
 	trigger = {
-		random = 80
-		government = fascist
-		exists = SPA
-		atwar = no		
-		
-		owned = { province = ???? [data = ENG] } #Gibraltar
-		NOT = { owned = { province = ???? data = SPA } } # Danzig
-		NOT = { alliance = { country = GER country = ENG } }
-		NOT = { war = { country = GER country = ENG } }
-		NOT = { puppet = { country = ENG country = GER } }
-		NOT = { ispuppet = GER }
+		OR = {
+			government = democratic
+			government = communist
+		}
 	}
 
-	name = "EVT_2027_NAME"
-	desc = "EVT_2027_DESC"
-	style = 2
-	picture = "Poland_Invasion"
-	decision_picture = "decision_danzig_or_war"
-
-	date = { day = 1 month = january year = 1948 }
-    offset = 90
-    deathdate = { day = 30 month = december year = 1966 }
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "ACTIONNAME2027A" # Final Ultimatum - Gibraltar or War
-		ai_chance = 100 
-		command = { type = relation which = ENG value = -30 }
-		command = { type = relation which = FRA value = -30 }   
-		command = { type = end_non_aggression which = POL where = GER }        
-		command = { type = trigger which = ???? } # POL
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 35011 } # Francisco Franco Bahamonde
+		command = { type = headofgovernment which = 35016 } # Francisco Franco Bahamonde
+		command = { type = foreignminister which = 35026 } # Alberto M. Artejo-?lvarez
+		command = { type = armamentminister which = 35056 } # Jos? Mar?a Lammami?
+		command = { type = ministerofsecurity which = 35090 } # Raimundo Fern?ndez Cuesta
+		command = { type = ministerofintelligence which = 35109 } # On?simo Redondo Ortega
+		command = { type = chiefofstaff which = 35120 } # Carlos Asensio Cabanillas
+		command = { type = chiefofarmy which = 35143 } # Antonio Aranda Mata
+		command = { type = chiefofnavy which = 35152 } # Tom?s Dom?nguez Ar?valo
+		command = { type = chiefofair which = 35169 } # Francisco Reglado Rodr?guez
 	}
 }
+

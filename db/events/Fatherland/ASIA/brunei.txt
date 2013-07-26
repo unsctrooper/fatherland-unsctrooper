@@ -1,0 +1,60 @@
+event = {
+	id = 8002101
+	country = BRU
+
+	name = "EVT_8002101_NAME"
+	desc = "EVT_8002101_DESC"
+	picture = "nwo\brunei_coronation"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 335100 } # Ahmad Tajuddin
+		command = { type = headofgovernment which = 335101 } # Omar Ali Saifuddien III
+	}
+}
+
+event = {
+	id = 8002102
+	country = BRU
+
+	name = "EVT_8002102_NAME"
+	desc = "EVT_8002102_DESC"
+	picture = "nwo\brunei_coronation"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 335102 } # Omar Ali Saifuddien III
+		command = { type = headofgovernment which = 335103 } # Hassanal Bolkiah
+	}
+}
+

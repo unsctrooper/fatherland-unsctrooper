@@ -1,0 +1,318 @@
+event = {
+	id = 8010301
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395012 } # Padma Rana
+		command = { type = foreignminister which = 395020 } # Kiran Rana
+		command = { type = armamentminister which = 395029 } # Robert Mainwaring
+		command = { type = ministerofsecurity which = 395036 } # Padma Rana
+		command = { type = ministerofintelligence which = 395042 } # Dhir Rana
+		command = { type = chiefofstaff which = 395047 } # Padma Rana
+		command = { type = chiefofarmy which = 395051 } # Mohan Rana
+		command = { type = chiefofnavy which = 395052 } # H.T.S Collins
+		command = { type = chiefofair which = 395054 } # Gehendra Rana
+	}
+}
+
+event = {
+	id = 8010302
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395013 } # Mohan Rana
+		command = { type = chiefofstaff which = 395055 } # Pyar Jung Thapa
+	}
+}
+
+# Matrika Koirala coup
+event = {
+	id = 8010303
+	country = NEP
+
+	name = EVT_8010303_NAME
+	desc = EVT_8010303_DESC
+	picture = "nwo\nepal"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_8010303_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofgovernment which = 395056 } # Matrika Koirala
+		command = { type = foreignminister which = 395019 } # Edward Cook
+		command = { type = armamentminister which = 395029 } # Robert Mainwaring
+		command = { type = ministerofsecurity which = 395035 } # William Stevenson Meyer
+		command = { type = ministerofintelligence which = 395041 } # Edward Cook
+		command = { type = chiefofstaff which = 395046 } # L.M. Potter
+		command = { type = chiefofarmy which = 395049 } # L.M. Potter
+		command = { type = chiefofnavy which = 395052 } # H.T.S Collins
+		command = { type = chiefofair which = 395053 } # H.T.S Collins
+	}
+}
+
+event = {
+	id = 8010304
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395100 } # HRH Tribhuvana
+	}
+}
+
+event = {
+	id = 8010305
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395056 } # Matrika Koirala
+	}
+}
+
+event = {
+	id = 8010306
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395101 } # Tanka Prasad Acharya
+	}
+}
+
+event = {
+	id = 8010307
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395102 } # Kunwar Inderjit Singh
+	}
+}
+
+event = {
+	id = 8010308
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395103 } # Subarna Shamsher Rana
+	}
+}
+
+event = {
+	id = 8010309
+	country = NEP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 395104 } # Bishweshwar Prasad Koirala
+	}
+}
+
+event = {
+	id = 8010310
+	country = NEP
+
+	name = EVT_8010310_NAME
+	desc = EVT_8010310_DESC
+	picture = "nwo\panchayat"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8010310_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 395105 } # Tulsi Giri
+	}
+}
+
+event = {
+	id = 8010311
+	country = NEP
+
+	name = EVT_8010311_NAME
+	desc = EVT_8010311_DESC
+	picture = "nwo\death"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8010311_A
+		ai_chance = 100
+		command = { type = headofstate which = 395106 } # Mahendra Bir Bikram 
+	}
+}

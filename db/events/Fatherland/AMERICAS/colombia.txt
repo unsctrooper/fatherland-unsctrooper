@@ -1,0 +1,253 @@
+event = {
+	id = 8003201
+	country = COL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 175017 } # Mariano Ospina P?rez
+		command = { type = headofgovernment which = 175030 } # Mariano Ospina P?rez
+		command = { type = foreignminister which = 175046 } # Francisco Umana Bernal
+		command = { type = armamentminister which = 175064 } # Camilo Ospina Bernal
+		command = { type = ministerofsecurity which = 175079 } # Ulpiano Rengifo C?rdenas
+		command = { type = ministerofintelligence which = 175094 } # Guillermo Padilla Manrique
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 175021 } # Jorge Eliecer Gaitan
+		command = { type = headofgovernment which = 175034 } # Jorge Eliecer Gaitan
+		command = { type = foreignminister which = 175003 } # Ernesto Gonzalez Piedrahita
+		command = { type = armamentminister which = 175068 } # Gabriel Quintanilla Morales
+		command = { type = ministerofsecurity which = 175086 } # Dar?o Echand?a
+		command = { type = ministerofintelligence which = 175099 } # Leon de Greiff
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003202
+	country = COL
+
+	name = "EVT_8003202_NAME"
+	desc = "EVT_8003202_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = "EVT_8003202_A"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 175133 } # Laureano G?mez Castro
+		command = { type = headofgovernment which = 175032 } # Ruben Piedrahita Arango
+		command = { type = foreignminister which = 175046 } # Francisco Umana Bernal
+		command = { type = armamentminister which = 175066 } # Julio Valdez
+		command = { type = ministerofsecurity which = 175080 } # Francesco Jos? Urrutia
+		command = { type = ministerofintelligence which = 175097 } # Enrico D?az Carias
+	}
+	action = {
+		name = "EVT_8003202_B"
+		ai_chance = 15
+		command = { type = dissent value = 15 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 175300 } # Duane Enchandia
+		command = { type = headofgovernment which = 175301 } # Duane Enchandia
+		command = { type = foreignminister which = 175042 } # Eduardo Zuleta Castillo
+		command = { type = armamentminister which = 175058 } # Mauricio Soto Gomez
+		command = { type = ministerofsecurity which = 175076 } # Eduardo Zuleta Castillo
+		command = { type = ministerofintelligence which = 175091 } # Enrico D?az Carias
+	}
+}
+
+event = {
+	id = 8003203
+	country = COL
+
+	name = "EVT_8003203_NAME"
+	desc = "EVT_8003203_DESC"
+	picture = "nwo\la_violencia"
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofstate = 175133
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = "EVT_8003203_A"
+		ai_chance = 100
+		command = { type = sleepminister which = 175133 } # Laureano G?mez Castro
+		command = { type = headofstate which = 175302 } # Roberto Urdaneta Arbel?ez
+	}
+}
+
+event = {
+	id = 8003204
+	country = COL
+
+	name = "EVT_8003204_NAME"
+	desc = "EVT_8003204_DESC"
+	picture = "nwo\pinilla_coup"
+	style = 1
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = "EVT_8003204_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 175132 } # Gustavo Rojas Pinilla
+		command = { type = headofgovernment which = 175034 } # Jorge Eliecer Gaitan
+		command = { type = foreignminister which = 175038 } # Alberto Lleras Camargo
+		command = { type = armamentminister which = 175069 } # Carlos Lozano y Lozano
+		command = { type = ministerofsecurity which = 175086 } # Dar?o Echand?a
+		command = { type = ministerofintelligence which = 175099 } # Leon de Greiff
+		command = { type = chiefofstaff which = 175134 } # Gabriel Paris Gordillo
+		command = { type = chiefofarmy which = 175110 } # Gustavo Rojas Pinilla
+		command = { type = chiefofnavy which = 175117 } # Mauricio Soto Gomez
+		command = { type = chiefofair which = 175130 } # Raphael Hollmann
+	}
+}
+
+event = {
+	id = 8003205
+	country = COL
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 175303 } # Gabriel Paris Gordillo
+		command = { type = headofgovernment which = 175304 } # Gabriel Paris Gordillo
+	}
+}
+
+event = {
+	id = 8003206
+	country = COL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 175012 } # Alberto Lleras Camargo
+		command = { type = headofgovernment which = 175025 } # Alberto Lleras Camargo
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 175305 } # Jorge Leyva Urdaneta
+		command = { type = headofgovernment which = 175306 } # Jorge Leyva Urdaneta
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8003207
+	country = COL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 175309 } # Guillermo Leon Valencia
+		command = { type = headofgovernment which = 175310 } # Guillermo Leon Valencia
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 175307 } # Alfonso Lopez Michelsen 
+		command = { type = headofgovernment which = 175308 } # Alfonso Lopez Michelsen 
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+

@@ -1,0 +1,231 @@
+event = {
+	id = 8004801
+	country = ECU
+
+	name = "EVT_8004801_NAME"
+	desc = "EVT_8004801_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = "EVT_8004801_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 190018 } # Carlos Arosemena Tola
+		command = { type = headofgovernment which = 190200 } # Jos? Rafael Bustamante
+		command = { type = foreignminister which = 190060 } # Benigno Andrade Flores
+		command = { type = armamentminister which = 190068 } # Miquel Andramonte
+		command = { type = ministerofsecurity which = 190081 } # Gustavo Las Salas
+		command = { type = ministerofintelligence which = 190101 } # Guillermo Freire Posso
+		command = { type = chiefofstaff which = 190110 } # Guillermo Freire Posso
+		command = { type = chiefofarmy which = 190116 } # Luis Cabrera Sevilla
+		command = { type = chiefofnavy which = 190123 } # Jorge Escobedo Duarte
+		command = { type = chiefofair which = 190124 } # Juan Bayardo Tobar
+	}
+}
+
+event = {
+	id = 8004802
+	country = ECU
+
+	name = EVT_8004802_NAME
+	desc = EVT_8004802_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_8004802_A
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 190136 } # Galo Plaza Lasso
+		command = { type = headofgovernment which = 190137 } # Galo Plaza Lasso
+		command = { type = foreignminister which = 190058 } # Juan de Diaz Mera
+		command = { type = armamentminister which = 190074 } # Carlos Arroyo del R?o
+		command = { type = ministerofsecurity which = 190086 } # Juan de Diaz Mera
+		command = { type = ministerofintelligence which = 190099 } # Francisco Guarderas P?rez
+	}
+	action = {
+		name = EVT_8004802_B
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 190014 } # Camillo Ponce Enr?quez
+		command = { type = headofgovernment which = 190032 } # Camillo Ponce Enr?quez
+		command = { type = foreignminister which = 190051 } # Gustavo Becerra P?z
+		command = { type = armamentminister which = 190064 } # Nicolas Delgado
+		command = { type = ministerofsecurity which = 190081 } # Gustavo Las Salas
+		command = { type = ministerofintelligence which = 190092 } # Carlos Mancheno Cajas
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8004803
+	country = ECU
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 190013 } # Jos? Mar?a Velasco Ibarra
+		command = { type = headofgovernment which = 190031 } # Jos? Mar?a Velasco Ibarra
+		command = { type = foreignminister which = 190048 } # Jos? Mar?a Velasco Ibarra
+		command = { type = armamentminister which = 190063 } # Carlos Arosemena Tola
+		command = { type = ministerofsecurity which = 190078 } # Juan Vicente Trujillo
+		command = { type = ministerofintelligence which = 190092 } # Carlos Mancheno Cajas
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 190136 } # Galo Plaza Lasso
+		command = { type = headofgovernment which = 190137 } # Galo Plaza Lasso
+		command = { type = foreignminister which = 190058 } # Juan de Diaz Mera
+		command = { type = armamentminister which = 190074 } # Carlos Arroyo del R?o
+		command = { type = ministerofsecurity which = 190086 } # Juan de Diaz Mera
+		command = { type = ministerofintelligence which = 190099 } # Francisco Guarderas P?rez
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8004804
+	country = ECU
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 190014 } # Camillo Ponce Enr?quez
+		command = { type = headofgovernment which = 190201 } # Francisco Illingworth Icaza
+	}
+}
+
+event = {
+	id = 8004805
+	country = ECU
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 190013 } # Jos? Mar?a Velasco Ibarra
+		command = { type = headofgovernment which = 190202 } # Carlos Julio Monroy
+	}
+}
+
+event = {
+	id = 8004806
+	country = ECU
+
+	name = "EVT_8004806_NAME"
+	desc = "EVT_8004806_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = "EVT_8004806_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 190203 } # Carlos Julio Monroy
+		command = { type = headofgovernment which = 190204 } # Reinaldo Varea Donoso
+	}
+}
+
+event = {
+	id = 8004807
+	country = ECU
+
+	name = "EVT_8004807_NAME"
+	desc = "EVT_8004807_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_8004807_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 190205 } # Ram?n Castro Jij?n
+		command = { type = headofgovernment which = 190206 } # Ram?n Castro Jij?n
+	}
+}
+

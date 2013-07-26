@@ -1,0 +1,429 @@
+event = {
+	id = 8002601
+	country = CAN
+
+	name = "EVT_GOVGENERAL_NAME"
+	desc = "EVT_GOVGENERAL_DESC"
+	picture = "nwo\governor_general"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 220100 } # Harold Viscount of Tunis
+	}
+}
+
+event = {
+	id = 8002602
+	country = CAN
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220101 } # Louis St-Laurent
+		command = { type = foreignminister which = 220104 } # Lester B. Pearson
+		command = { type = armamentminister which = 220106 } # Brooke Claxton
+		command = { type = ministerofsecurity which = 220108 } # Stuart Sinclair Garson
+		command = { type = ministerofintelligence which = 220110 } # Walter Edward Harris
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofgovernment which = 220102 } # Gordon Graydon
+		command = { type = foreignminister which = 220105 } # Robert Stanfield
+		command = { type = armamentminister which = 220107 } # Ralph Osbourne Campney
+		command = { type = ministerofsecurity which = 220109 } # Edmond David Fulton
+		command = { type = ministerofintelligence which = 220110 } # Walter Edward Harris
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8002603
+	country = CAN
+
+	name = "EVT_GOVGENERAL_NAME"
+	desc = "EVT_GOVGENERAL_DESC"
+	picture = "nwo\governor_general"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 220112 } # Vincent Massey
+	}
+}
+
+event = {
+	id = 8002604
+	country = CAN
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220101 } # Louis St-Laurent
+		command = { type = foreignminister which = 220104 } # Lester B. Pearson
+		command = { type = armamentminister which = 220106 } # Brooke Claxton
+		command = { type = ministerofsecurity which = 220108 } # Stuart Sinclair Garson
+		command = { type = ministerofintelligence which = 220111 } # Bill Newson
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofgovernment which = 220103 } # J.L. Isley
+		command = { type = foreignminister which = 220105 } # Robert Stanfield
+		command = { type = armamentminister which = 220107 } # Ralph Osbourne Campney
+		command = { type = ministerofsecurity which = 220109 } # Edmond David Fulton
+		command = { type = ministerofintelligence which = 220111 } # Bill Newson
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+	}
+}
+
+event = {
+	id = 8002605
+	country = CAN
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -15 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220116 } # John Diefenbaker
+		command = { type = foreignminister which = 220118 } # Howard Charles Green
+		command = { type = armamentminister which = 220120 } # George Pearkes
+		command = { type = ministerofsecurity which = 220109 } # Edmond David Fulton
+		command = { type = ministerofintelligence which = 220127 } # Donald M. Fleming
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220101 } # Louis St-Laurent
+		command = { type = foreignminister which = 220104 } # Lester B. Pearson
+		command = { type = armamentminister which = 220106 } # Brooke Claxton
+		command = { type = ministerofsecurity which = 220108 } # Stuart Sinclair Garson
+		command = { type = ministerofintelligence which = 220126 } # Douglas C. Abbott
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8002606
+	country = CAN
+
+	name = "EVT_GOVGENERAL_NAME"
+	desc = "EVT_GOVGENERAL_DESC"
+	picture = "nwo\governor_general"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 220114 } # George P. Vanier
+	}
+}
+
+event = {
+	id = 8002607
+	country = CAN
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220117 } # Lester B. Pearson
+		command = { type = foreignminister which = 220119 } # Paul Joseph Martin sr.
+		command = { type = armamentminister which = 220123 } # Paul Hellyer
+		command = { type = ministerofsecurity which = 220125 } # Lionel Chevrier
+		command = { type = ministerofintelligence which = 220128 } # George Nowlan
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220116 } # John Diefenbaker
+		command = { type = foreignminister which = 220118 } # Howard Charles Green
+		command = { type = armamentminister which = 220122 } # Gordon M. Churchill
+		command = { type = ministerofsecurity which = 220124 } # Donald M. Fleming
+		command = { type = ministerofintelligence which = 220127 } # Donald M. Fleming
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8002608
+	country = ENG
+	
+	name = EVT_8002608_NAME
+	desc = EVT_8002608_DESC
+	picture = "NWO\newfoundland"
+	style = 1
+
+	trigger = {
+		area = { area = "New Foundland" country = -1 data = 1 value = 100 }
+		atwar = no
+		NOT = { war = { country = CAN } }
+		exists = CAN
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8002608_A
+		ai_chance = 80
+		command = { type = secedearea which = CAN value = "New Foundland" when = 1 }
+		command = { type = dissent value = -2 }
+	}
+
+	action = {
+		name = EVT_8002608_B
+		ai_chance = 18
+		command = { type = dissent value = 3 }
+		command = { type = sleepevent which = 8002609 }
+	}
+	
+	action = {
+		name = EVT_8002608_C
+		ai_chance = 2
+		command = { type = independence which = U60 value = 1 when = 0 } # Newfoundland
+		command = { type = sleepevent which = 8002609 }
+	}
+
+}
+
+event = {
+	id = 8002609
+	country = CAN
+
+	name = EVT_8002609_NAME
+	desc = EVT_8002609_DESC
+	picture = "NWO\newfoundland"
+	style = 1
+
+	trigger = {
+		event = 8002608
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		command = { type = addcore which = 2136 }
+		command = { type = addcore which = 2137 }
+		command = { type = addcore which = 2138 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 8002610
+	country = CAN
+
+	name = EVT_8002610_NAME
+	desc = EVT_8002610_DESC
+	picture = "nwo\canadian_oil_fields"
+	style = 1
+
+	trigger = {
+		control = { province = 2103 data = -1 }
+		control = { province = 2104 data = -1 }
+	}
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		command = { type = add_prov_resource which = 2103 value = 4 where = oil } # Edmonton
+		command = { type = add_prov_resource which = 2104 value = 2 where = oil } # Calgary
+	}
+}
+
+event = {
+	id = 8002611
+	country = CAN
+
+	name = EVT_8002611_NAME
+	desc = EVT_8002611_DESC
+	picture = "nwo\canadian_red_scare"
+	decision_picture = "nwo\d_canadian_red_scare"
+	style = 1
+
+	decision = {
+		flag = cold_war
+		NOT = { government = communist }
+	}
+	
+	trigger = {
+		flag = cold_war
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		command = { type = dissent value = -2 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = freedom value = -2 }
+	}
+}
+
+### Avro Arrow
+
+event = {
+	id = 8002612
+	country = CAN
+
+	name = EVT_8002612_NAME
+	desc = EVT_8002612_DESC
+	picture = nwo\avro_arrow
+	style = 1
+	
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 1 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8002612_A # Avro Arrow is cancelled
+		trigger = { headofgovernment = 220116 } # Diefenbaker is in power
+		ai_chance = 100
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		name = EVT_8002612_B # Avro Arrow enters service
+		trigger = { NOT = { headofgovernment = 220116 } } # Diefenbaker is not in power
+		ai_chance = 98
+		command = { type = money value = -1000 }
+		command = { type = task_efficiency which = air_superiority value = 0.15 }
+	}
+	
+	action = {
+		name = EVT_8002612_C # Save money
+		trigger = { NOT = { headofgovernment = 220116 } } # Diefenbaker is not in power
+		ai_chance = 2
+		command = { type = money value = 1000 }
+		command = { type = dissent value = 3 }
+	}
+}

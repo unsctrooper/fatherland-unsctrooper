@@ -1,0 +1,168 @@
+event = {
+	id = 8011301
+	country = PAR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 200070 } # Juan Natalicio Gonzalez
+		command = { type = headofgovernment which = 200200 } # Juan Natalicio Gonzalez
+		command = { type = foreignminister which = 200030 } # Cesar Augusto Vasconcellos
+		command = { type = armamentminister which = 200077 } # Remigio Bastia Mart?n
+		command = { type = ministerofsecurity which = 200044 } # Luis de Gasperi
+		command = { type = ministerofintelligence which = 200076 } # Felipe Molas Lopez
+		command = { type = chiefofstaff which = 200075 } # Raimundo Rolon Villasanti
+		command = { type = chiefofarmy which = 200059 } # Alfred Stroessner Matiauda
+		command = { type = chiefofnavy which = 200062 } # Jesus G. Arraza
+		command = { type = chiefofair which = 200064 } # H?ctor Velasquez
+	}
+}
+
+event = {
+	id = 8011302
+	country = PAR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 200072 } # Felipe Molas Lopez
+		command = { type = headofgovernment which = 200201 } # Felipe Molas Lopez
+		command = { type = foreignminister which = 200030 } # Cesar Augusto Vasconcellos
+		command = { type = armamentminister which = 200077 } # Remigio Bastia Mart?n
+		command = { type = ministerofsecurity which = 200044 } # Luis de Gasperi
+		command = { type = ministerofintelligence which = 200076 } # Felipe Molas Lopez
+		command = { type = chiefofstaff which = 200075 } # Raimundo Rolon Villasanti
+		command = { type = chiefofarmy which = 200059 } # Alfred Stroessner Matiauda
+		command = { type = chiefofnavy which = 200062 } # Jesus G. Arraza
+		command = { type = chiefofair which = 200064 } # H?ctor Velasquez
+	}
+}
+
+event = {
+	id = 8011303
+	country = PAR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 200073 } # Federico Chaves
+		command = { type = headofgovernment which = 200202 } # Federico Chaves
+		command = { type = foreignminister which = 200030 } # Cesar Augusto Vasconcellos
+		command = { type = armamentminister which = 200077 } # Remigio Bastia Mart?n
+		command = { type = ministerofsecurity which = 200044 } # Luis de Gasperi
+		command = { type = ministerofintelligence which = 200076 } # Felipe Molas Lopez
+		command = { type = chiefofstaff which = 200075 } # Raimundo Rolon Villasanti
+		command = { type = chiefofarmy which = 200059 } # Alfred Stroessner Matiauda
+		command = { type = chiefofnavy which = 200062 } # Jesus G. Arraza
+		command = { type = chiefofair which = 200064 } # H?ctor Velasquez
+	}
+}
+
+# Stroessner's Regime
+event = {
+	id = 8011304
+	country = PAR
+
+	name = EVT_8011304_NAME
+	desc = EVT_8011304_DESC
+	picture = "nwo\alfred_stroessner"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8011304_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 200203 } # Alfred Stroessner Matiauda
+		command = { type = headofgovernment which = 200074 } # Alfred Stroessner Matiauda
+	}
+}
+
+event = {
+	id = 8011305
+	country = PAR
+
+	name = EVT_8011305_NAME
+	desc = EVT_8011305_DESC
+	picture = "nwo\alfred_stroessner"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8011305_A
+		ai_chance = 100
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = freedom value = -2 }
+	}
+}

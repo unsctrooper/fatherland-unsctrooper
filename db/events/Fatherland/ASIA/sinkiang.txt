@@ -20,13 +20,13 @@ event = {
 
 	action = {
 		name = EVT_8013801_A # Recall Sheng Shicai
-		ai_chance = 95
+		ai_chance = 35
 		command = { type = inherit which = SIK value = 0 }
 	}
 	
 	action = {
 		name = EVT_8013801_B # Leave him at the post
-		ai_chance = 5
+		ai_chance = 65
 		command = { type = dissent value = 5 }
 	}
 }
@@ -49,7 +49,7 @@ event = {
 
 	date = { day = 0 month = august year = 1945 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1948 }
+	deathdate = { day = 30 month = december year = 1949 }
 
 	action = {
 		name = EVT_8013802_A # Accept the offer
@@ -85,7 +85,7 @@ event = {
 
 	date = { day = 0 month = november year = 1944 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1948 }
+	deathdate = { day = 30 month = december year = 1949 }
 
 	action = {
 		name = EVT_8013803_A

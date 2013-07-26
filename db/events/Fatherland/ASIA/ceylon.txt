@@ -1,0 +1,329 @@
+event = {
+	id = 8028301
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1937 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800327 } # Reginald Edward Stubbs
+		command = { type = headofgovernment which = 800328 } # Reginald Edward Stubbs
+	}
+}
+
+event = {
+	id = 8028302
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1938 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1944 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800329 } # Andrew Caldecott
+		command = { type = headofgovernment which = 800330 } # Andrew Caldecott
+	}
+}
+
+event = {
+	id = 8028303
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800331 } # Henry Monck-Mason Moore
+		command = { type = headofgovernment which = 800332 } # Henry Monck-Mason Moore
+	}
+}
+
+event = {
+	id = 8028304
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofgovernment which = 800305 } # Don Stephen Senanayake
+	}
+}
+
+event = {
+	id = 8028305
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 800333 } # Herwald Ramsbotham
+	}
+}
+
+event = {
+	id = 8028306
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800334 } # Dudley Shelton Senanayake
+	}
+}
+
+event = {
+	id = 8028307
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800335 } # Oliver Ernest Goonetilleke
+		command = { type = headofgovernment which = 800336 } # John Kotelawala
+	}
+}
+
+event = {
+	id = 8028308
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800303 } # Solomon Bandaranaike
+	}
+}
+
+event = {
+	id = 8028309
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800337 } # Wijeyananda Dahanayake
+	}
+}
+
+event = {
+	id = 8028310
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800338 } # Sirimavo Bandaranaike
+	}
+}
+
+event = {
+	id = 8028311
+	country = U83
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800339 } # William Gopallawa
+	}
+}
+
+# Fate of Ceylon - India stayed federated
+
+event = {
+	id = 8028320
+	country = ENG
+	persistent = yes
+
+	name = EVT_8028320_NAME
+	desc = EVT_8028320_DESC
+	picture = "nwo\independence_of_india"
+	style = 1
+	
+	trigger = {
+		event = 8214012 # India stays federated
+		control = { province = 1511 data = -1 }
+	}
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	action = {
+		name = EVT_8028320_A # Cede Ceylon to India
+		command = { type = secedeprovince which = IND value = 1509 when = 1 }
+		command = { type = secedeprovince which = IND value = 1510 when = 1 }
+		command = { type = secedeprovince which = IND value = 1511 when = 1 }		
+	}
+	
+	action = {
+		name = EVT_8028320_B # Create Dominion of Ceylon
+		ai_chance = 25
+		command = { type = removecore which = 1509 }
+		command = { type = removecore which = 1510 }
+		command = { type = removecore which = 1511 }
+		command = { type = independence which = U83 value = 1 }
+		#command = { type = make_puppet which = U83 }
+		#command = { type = trigger which = 8028322 }		
+	}
+	
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 5
+		command = { type = dissent value = 3 }              
+	}
+}
+
+# Fate of Ceylon - India is divided
+
+event = {
+	id = 8028321
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_U83_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		event = 8214011 # India is divided
+		NOT = { exists = U83 }
+		control = { province = 1511 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 70
+		command = { type = independence which = U83 value = 1 }
+		#command = { type = make_puppet which = U83 }
+		#command = { type = trigger which = 8028322 }	
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 30
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8028322
+	country = U83
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+

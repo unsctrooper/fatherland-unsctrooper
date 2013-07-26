@@ -1,0 +1,307 @@
+event = {
+	id = 8017801
+	country = VEN
+
+	name = EVT_8017801_NAME
+	desc = EVT_8017801_DESC
+	picture = "nwo\venezuela"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = EVT_8017801_A
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180012 } # Romulo Betancourt
+		command = { type = headofgovernment which = 180014 } # Romulo Betancourt
+	}
+}
+
+event = {
+	id = 8017802
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180200 } # Rafael Caldera
+		command = { type = headofgovernment which = 180201 } # Rafael Caldera
+		command = { type = foreignminister which = 180017 } # Carlos Morales Acorzia
+		command = { type = armamentminister which = 180025 } # Jose Vicente Rangel
+		command = { type = ministerofsecurity which = 180034 } # Adolfo Gonzalez Aquilar
+		command = { type = ministerofintelligence which = 180042 } # Jovito Villalba
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 180078 } # Romulo Gallegos Freire
+		command = { type = headofgovernment which = 180202 } # Romulo Gallegos Freire
+		command = { type = foreignminister which = 180018 } # Gonzalo Barrios
+		command = { type = armamentminister which = 180024 } # Julio Garcia Jarpa
+		command = { type = ministerofsecurity which = 180035 } # Isidoro Ruiz Tuerro
+		command = { type = ministerofintelligence which = 180041 } # Robert Letts Sanchez
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8017803
+	country = VEN
+
+	name = EVT_8017803_NAME
+	desc = EVT_8017803_DESC
+	picture = "nwo\venezuela"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 27 month = november year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = EVT_8017803_A
+		ai_chance = 100
+		command = { type = dissent value = 5 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 180079 } # Carlos Delgado Chalbaud
+		command = { type = headofgovernment which = 180203 } # Carlos Delgado Chalbaud
+		command = { type = foreignminister which = 180084 } # German Suarez Flamerich
+		command = { type = armamentminister which = 180024 } # Julio Garcia Jarpa
+		command = { type = ministerofsecurity which = 180035 } # Isidoro Ruiz Tuerro
+		command = { type = ministerofintelligence which = 180041 } # Robert Letts Sanchez
+		command = { type = chiefofstaff which = 180045 } # Gustavo Gonzalez Lopez
+		command = { type = chiefofarmy which = 180086 } # Marcos Perez Jimenez
+		command = { type = chiefofnavy which = 180054 } # Carlos Ramos D?az
+		command = { type = chiefofair which = 180058 } # Miguel D?az Fraile
+	}
+}
+
+event = {
+	id = 8017804
+	country = VEN
+
+	name = EVT_8017804_NAME
+	desc = EVT_8017804_DESC
+	picture = "nwo\assassination_of_chalbaud"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 180079
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_8017804_A
+		ai_chance = 100
+		command = { type = dissent value = 5 }
+		command = { type = headofstate which = 180080 } # German Suarez Flamerich
+		command = { type = headofgovernment which = 180204 } # German Suarez Flamerich
+	}
+}
+
+event = {
+	id = 8017805
+	country = VEN
+
+	name = EVT_8017805_NAME
+	desc = EVT_8017805_DESC
+	picture = "nwo\marcos_jimenez"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = EVT_8017805_A # We decide the results
+		ai_chance = 80
+		command = { type = headofstate which = 180080 } # German Suarez Flamerich
+		command = { type = headofgovernment which = 180204 } # German Suarez Flamerich
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = EVT_8017805_B # Step down
+		ai_chance = 20
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = domestic which = freedom value = 2 }
+		command = { type = headofstate which = 180200 } # Rafael Caldera
+		command = { type = headofgovernment which = 180201 } # Rafael Caldera
+		command = { type = armamentminister which = 180019 } # Don Pedro Grases
+		command = { type = armamentminister which = 180024 } # Julio Garcia Jarpa
+		command = { type = ministerofsecurity which = 180035 } # Isidoro Ruiz Tuerro
+		command = { type = ministerofintelligence which = 180041 } # Robert Letts Sanchez
+		command = { type = chiefofstaff which = 180045 } # Gustavo Gonzalez Lopez
+		command = { type = chiefofarmy which = 180087 } # Wolfgang Larrazabal Ugueto
+		command = { type = chiefofnavy which = 180054 } # Carlos Ramos D?az
+		command = { type = chiefofair which = 180058 } # Miguel D?az Fraile
+		command = { type = sleepevent which = 8017806 }
+	}
+}
+
+event = {
+	id = 8017806
+	country = VEN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\marcos_jimenez"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 180080
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 180081 } # Marcos Perez Jimenez
+		command = { type = headofgovernment which = 180083 } # Marcos Perez Jimenez
+	}
+}
+
+event = {
+	id = 8017807
+	country = VEN
+
+	name = EVT_8017807_NAME
+	desc = EVT_8017807_DESC
+	picture = "nwo\punto_fijo_pact"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 180081
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = EVT_8017807_A # Sign it
+		ai_chance = 90
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 180205 } # Wolfgang Larrazabal
+		command = { type = headofgovernment which = 180206 } # Wolfgang Larrazabal
+		command = { type = domestic which = freedom value = 2 }
+	}
+	action = {
+		name = EVT_8017807_B # The junta won't share power
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 180081 } # Marcos Perez Jimenez
+		command = { type = headofgovernment which = 180083 } # Marcos Perez Jimenez
+	}
+}
+
+event = {
+	id = 8017808
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180205 } # Wolfgang Larrazabal
+		command = { type = headofgovernment which = 180206 } # Wolfgang Larrazabal
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 180012 } # Romulo Betancourt
+		command = { type = headofgovernment which = 180014 } # Romulo Betancourt
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+

@@ -435,6 +435,14 @@ globaldata = {
     startdate  = { year = 1935 month = december day = 30 }
     expirydate = { year = 1964 month = december day = 30 }
   }
+    treaty =
+  { id         = { type = 16384 id = 174 }
+    type       = non_aggression
+    country    = "ENG"
+    country    = "SOV"
+    startdate  = { year = 1935 month = december day = 30 }
+    expirydate = { year = 1964 month = december day = 30 }
+  }
   # ###################### 1944 TRADES #####################
   treaty =
   { id         = { type = 16384 id = 300 }

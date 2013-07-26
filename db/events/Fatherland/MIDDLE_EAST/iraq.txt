@@ -1,0 +1,509 @@
+event = {
+	id = 8007501
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365028 } # Salih Jabr
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365102 } # Nuri as Said
+		command = { type = chiefofstaff which = 365113 } # Nuri as-Said
+		command = { type = chiefofarmy which = 365121 } # Faysal II ibn Ghazi
+		command = { type = chiefofnavy which = 365126 } # Jamil al Midfai
+		command = { type = chiefofair which = 365133 } # Faysal II ibn Ghazi
+	}
+}
+
+event = {
+	id = 8007502
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365147 } # Muhammad as Sadr
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365102 } # Nuri as Said
+	}
+}
+
+event = {
+	id = 8007503
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365148 } # Muzahim al Bayyaji
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365102 } # Nuri as Said
+	}
+}
+
+event = {
+	id = 8007504
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 180
+	deathdate = { day = 30 month = june year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365141 } # Nuri as Said
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007505
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = july year = 1949 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365149 } # Ali Jawdat
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007506
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 180
+	deathdate = { day = 30 month = june year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365150 } # Tawfiq al Suweidi
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007507
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = july year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365142 } # Nuri as Said
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007508
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 180
+	deathdate = { day = 30 month = june year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365155 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365152 } # Mustafa al Umari
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007509
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = july year = 1952 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365151 } # Nurreddin Mahmud
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007510
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 180
+	deathdate = { day = 30 month = june year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365025 } # Jamil al Midfai
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007511
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = july year = 1953 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365153 } # Muhamed Fadhel al-Jamali
+		command = { type = foreignminister which = 365051 } # Muhammed Fadelfomali
+		command = { type = armamentminister which = 365072 } # Abdullah
+		command = { type = ministerofsecurity which = 365086 } # Nuri as Said
+		command = { type = ministerofintelligence which = 365154 } # Nurreddin Mahmud
+	}
+}
+
+event = {
+	id = 8007512
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365142 } # Nuri as Said
+	}
+}
+
+event = {
+	id = 8007513
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365019 } # Faysal II ibn Ghazi
+		command = { type = headofgovernment which = 365149 } # Ali Jawdat
+	}
+}
+
+# 14 July Revolution
+event = {
+	id = 8007514
+	country = IRQ
+
+	name = EVT_8007514_NAME
+	desc = EVT_8007514_DESC
+	picture = "nwo\14_july_revolution"
+	style = 1
+
+	date = { day = 14 month = july year = 1958 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = EVT_8007514_A
+		ai_chance = 100
+		command = { type = end_puppet }
+		command = { type = flag_ext which = _1958 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 365200 } # Muhammad Najib ar-Ruba'i
+		command = { type = headofgovernment which = 365201 } # Abdul Karim Qassim
+		command = { type = dissent value = 10 }
+		command = { type = independence which = JOR } # Arab Federation breaks up
+	}
+}
+
+event = {
+	id = 8007515
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 180
+	deathdate = { day = 30 month = june year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 365202 } # Abdul Salam Arif
+		command = { type = headofgovernment which = 365203 } # Ahmed Hassan al-Bakr
+	}
+}
+
+event = {
+	id = 8007516
+	country = IRQ
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = july year = 1963 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = flag_ext where = EGY which = _1963 }
+		command = { type = headofstate which = 365202 } # Abdul Salam Arif
+		command = { type = headofgovernment which = 365204 } # Tahir Yahya
+	}
+}
+
+### Arab Federation of Iraq and Jordan
+
+event = {
+	id = 8007517
+	country = IRQ
+
+	name = EVT_8007517_NAME
+	desc = EVT_8007517_DESC
+	picture = "nwo\iraqi_arab_federation"
+	decision_picture = "nwo\d_iraqi_arab_federation"
+	style = 1
+	
+	decision = {
+		event = 8004922 # Formation of United Arab Republic
+		exists = JOR
+		government = fascist
+	}
+	
+	trigger = {
+		event = 8004922 # Formation of United Arab Republic
+		exists = JOR
+		government = fascist
+	}
+
+	date = { day = 14 month = february year = 1958 }
+	offset = 1
+	deathdate = { day = 29 month = february year = 1958 }
+
+	# Propose it
+	action_a = {
+		name = EVT_8007517_A
+		ai_chance = 80
+		command = { type = trigger which = 8007518 }
+	}
+	
+	# This serves no purpose
+	action_b = {
+		name = EVT_8007517_B
+		trigger = { ai = yes }
+		ai_chance = 20
+		command = { type = dissent value = 1 }
+	}
+
+}
+
+event = {
+	id = 8007518
+	country = JOR
+
+	name = EVT_8007518_NAME
+	desc = EVT_8007518_DESC
+	picture = "nwo\iraqi_arab_federation"
+	style = 1
+	
+	# Agree
+	action_a = {
+		name = EVT_8007518_A
+		ai_chance = 80
+		command = { type = trigger which = 8007519 }
+	}
+
+	# We shall remain independent
+	action_b = {
+		name = EVT_8007518_B
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+	}
+	
+}
+
+event = {
+	id = 8007519
+	country = JOR
+
+	name = EVT_8007519_NAME
+	desc = EVT_8007519_DESC
+	picture = "nwo\iraqi_arab_federation"
+	style = 1
+	
+	action_a = {
+		name = EVT_8007519_A
+		command = { type = inherit which = JOR }
+		command = { type = add_corps when = 1022 } # Amman
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+	}
+}
+
+event = {
+	id = 8007520
+	country = IRQ
+
+	name = EVT_8007520_NAME
+	desc = EVT_8007520_DESC
+	picture = "nwo\iraq"
+	style = 1
+	
+	trigger = {
+		flag = cold_war
+		ispuppet = yes
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action_a = {
+		name = EVT_8007520_A
+		command = { type = end_puppet }
+	}
+}

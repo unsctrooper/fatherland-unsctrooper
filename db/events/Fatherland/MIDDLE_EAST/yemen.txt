@@ -1,0 +1,79 @@
+event = {
+	id = 8018201
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445100 } # Ahmad al Hamid
+		command = { type = headofgovernment which = 445101 } # Ahmad al Hamid
+	}
+}
+
+event = {
+	id = 8018202
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445102 } # Muhammad al-Badr
+		command = { type = headofgovernment which = 445103 } # Muhammad al-Badr
+	}
+}
+
+event = {
+	id = 8018203
+	country = YEM
+
+	name = EVT_8018203_NAME
+	desc = EVT_8018203_DESC
+	picture = "nwo\abdullah_al_sallal"
+	style = 1
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8018203_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 445104 } # Abdullah al-Sallal
+		command = { type = headofgovernment which = 445105 } # Abdullah al-Sallal
+	}
+}
+

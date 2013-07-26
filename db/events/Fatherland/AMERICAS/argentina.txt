@@ -1,0 +1,290 @@
+event = {
+	id = 8000801
+	country = ARG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 165024 } # Juan Domingo Peron
+		command = { type = headofgovernment which = 165300 } # Juan Hortensio Quijano
+		command = { type = foreignminister which = 165184 } # Hipol?to Jes?s Paz
+		command = { type = armamentminister which = 165084 } # Francisco L?pez Mart?n
+		command = { type = ministerofsecurity which = 165107 } # Eva Peron
+		command = { type = ministerofintelligence which = 165186 } # Jeronimo Remorino
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 165301 } # Jose Tamborini
+		command = { type = headofgovernment which = 165302 } # Enrique Mosca
+		command = { type = foreignminister which = 165177 } # Segundo R. Storni
+		command = { type = armamentminister which = 165178 } # Benito Sueyro
+		command = { type = ministerofsecurity which = 165179 } # Diego Isidro Mason
+		command = { type = ministerofintelligence which = 165180 } # Vicente Huidrabra Urribe
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8000802
+	country = ARG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -15 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 165024 } # Juan Domingo Peron
+		command = { type = headofgovernment which = 165303 } # Alberto Teisaire
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 165304 } # Ricardo Balbin
+		command = { type = headofgovernment which = 165305 } # Arturo Frondizi
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8000803
+	country = ARG
+
+	name = "EVT_8000803_NAME"
+	desc = "EVT_8000803_DESC"
+	picture = "nwo\revolucion_libertadora"
+	style = 1
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = "EVT_8000803_A"
+		ai_chance = 90
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 165306 } # Pedro Aramburu
+		command = { type = headofgovernment which = 165307 } # Isaac Rojas
+		command = { type = foreignminister which = 165188 } # Alberto Podesta Castro
+		command = { type = armamentminister which = 165082 } # Juan Oztero Medina
+		command = { type = ministerofsecurity which = 165102 } # Eduardo Miya Bermudez
+		command = { type = ministerofintelligence which = 165180 } # Vicente Huidrabra Urribe
+		command = { type = chiefofstaff which = 165138 } # Carlos von der Becke
+		command = { type = chiefofarmy which = 165181 } # Adolfo Rawson Bustamante
+		command = { type = chiefofnavy which = 165162 } # Pedro Grosso Soto
+		command = { type = chiefofair which = 165174 } # Gabriel A. Hermansson
+	}
+	
+	action = {
+		name = "EVT_8000803_B"
+		ai_chance = 10
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -2 }
+	}	
+}
+
+event = {
+	id = 8000804
+	country = ARG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+			AND = {
+				government = communist
+				random = 25
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 165308 } # Arturo Frondizi
+		command = { type = headofgovernment which = 165305 } # Arturo Frondizi
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 165304 } # Ricardo Balbin
+		command = { type = headofgovernment which = 165309 } # Ricardo Balbin
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8000805
+	country = ARG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+			AND = {
+				government = communist
+				random = 25
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -15 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165310 } # Arturo Umberto Illia 
+		command = { type = headofgovernment which = 165311 } # Carlos Humberto Perette
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 165313 } # Oscar Alende
+		command = { type = headofgovernment which = 165312 } # Jose Maria Guido
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8000806
+	country = ARG
+
+	name = "EVT_8000806_NAME"
+	desc = "EVT_8000806_DESC"
+	picture = "nwo\juan_peron"
+	style = 1
+	
+	trigger = {
+		headofstate = 165024 # Peron
+	}
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action = {
+		name = "EVT_8000806_A"
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = freedom value = -1 }
+		command = { type = construct which = ic where = -1 value = 2 }
+		command = { type = add_prov_resource which = -1 value = 2 where = metal }
+		command = { type = add_prov_resource which = -1 value = 4 where = energy }
+		command = { type = add_prov_resource which = -1 value = 1 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 1 where = oil }
+		command = { type = construct which = ic where = -1 value = 2 }
+		command = { type = add_prov_resource which = -1 value = 2 where = metal }
+		command = { type = add_prov_resource which = -1 value = 4 where = energy }
+		command = { type = add_prov_resource which = -1 value = 1 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 1 where = oil }
+	}	
+
+}
+
+event = {
+	id = 8000807
+	country = ARG	
+
+	name = "EVT_8000807_NAME"
+	desc = "EVT_8000807_DESC"
+	picture = "nwo\eva_peron_death"
+	style = 1
+
+	date = { day = 26 month = july year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = july year = 1952 }
+
+	action = {
+		name = "EVT_8000807_A"
+		command = { type = dissent value = -1 }
+		command = { type = sleepminister value = 35134 }
+	}	
+
+}

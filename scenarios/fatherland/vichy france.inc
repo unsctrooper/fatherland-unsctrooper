@@ -54,7 +54,7 @@
 	#Vichy Heartland
    85    89  81  82  80  84  79  77  71  78  74  75 72  73       83 88 76  
    #Formerly occupied north
-   70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99
+   70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99 67 57 38 40 41 42
    
    90  86  94 93 92 91	87 # Former Occupation of France by Italy
 							
@@ -73,7 +73,7 @@
    #Vichy Heartland
    85    89  81  82  80  84  79  77  71  78  74  75 72  73       83 88 76  
    #Formerly occupied north
-   70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99
+   70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99 67 57 38 40 41 42
    
   90  86  94 93 92 91	87 # Former Occupation of France by Italy	
 

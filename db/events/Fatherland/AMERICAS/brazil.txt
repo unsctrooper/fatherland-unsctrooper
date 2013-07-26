@@ -1,0 +1,379 @@
+event = {
+	id = 8002001
+	country = BRA
+
+	name = "EVT_8002001_NAME"
+	desc = "EVT_8002001_DESC"
+	picture = "nwo\vargas_estado_novo"
+	style = 1
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160122 } # Jos? Linhares Filho
+		command = { type = headofgovernment which = 160021 } # Gaspar Dutra
+		command = { type = foreignminister which = 160035 } # Joao Neves da Fontoura
+		command = { type = armamentminister which = 160052 } # Gast?o Vidigal
+		command = { type = ministerofsecurity which = 160069 } # Epitacio da Silva Pessoa
+		command = { type = ministerofintelligence which = 160082 } # Pedro Perotti
+		command = { type = chiefofstaff which = 160093 } # Joao Neves da Fontoura
+		command = { type = chiefofarmy which = 160106 } # Gaspar Dutra
+		command = { type = chiefofnavy which = 160113 } # Floriano Peixoto
+		command = { type = chiefofair which = 160120 } # Eduardo Gom?s
+	}
+}
+
+event = {
+	id = 8002002
+	country = BRA
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160015 } # Gaspar Dutra
+		command = { type = headofgovernment which = 160300 } # Nereu de Oliveira Ramos
+		command = { type = foreignminister which = 160033 } # S. de Sousa Le?o Grac?e
+		command = { type = armamentminister which = 160049 } # Elyseu F. de Montarroyos
+		command = { type = ministerofsecurity which = 160070 } # Teotonio da Fonseca
+		command = { type = ministerofintelligence which = 160081 } # Rodrigo Octavio
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 160013 } # Eduardo Gomes
+		command = { type = headofgovernment which = 160127 } # Afranio de Mello Franco
+		command = { type = foreignminister which = 160028 } # Otavio Mangabeira
+		command = { type = armamentminister which = 160044 } # Luis Carlos Prestes
+		command = { type = ministerofsecurity which = 160064 } # Carlos Abguar Bastos
+		command = { type = ministerofintelligence which = 160078 } # Manuel A. Ven?ncio
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8002003
+	country = BRA
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -15 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 160124 } # Getulio Vargas
+		command = { type = headofgovernment which = 160126 } # Caf? Filho
+		command = { type = foreignminister which = 160035 } # Joao Neves da Fontoura
+		command = { type = armamentminister which = 160129 } # Vicente Ra?
+		command = { type = ministerofsecurity which = 160131 } # Jos? de Macedo Soares
+		command = { type = ministerofintelligence which = 160133 } # Raoul Fernandes
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 160125 } # Afranio de Mello Franco
+		command = { type = headofgovernment which = 160019 } # Eduardo Gomes
+		command = { type = foreignminister which = 160128 } # Manuel A. Ven?ncio
+		command = { type = armamentminister which = 160130 } # S. Rauliono de Oliviera
+		command = { type = ministerofsecurity which = 160132 } # Horacio Laf?r
+		command = { type = ministerofintelligence which = 160134 } # Horacio Laf?r
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8002004
+	country = BRA
+
+	name = "EVT_8002004_NAME"
+	desc = "EVT_8002004_DESC"
+	picture = "nwo\getulio_vargas"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = "EVT_8002004_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 160301 } # Nereu de Oliveira Ramos
+		command = { type = sleepminister which = 160001 } # Getulio Vargas
+		command = { type = sleepminister which = 160002 } # Getulio Vargas
+		command = { type = sleepminister which = 160041 } # Getulio Vargas
+		command = { type = sleepminister which = 160124 } # Getulio Vargas
+	}
+}
+
+event = {
+	id = 8002005
+	country = BRA
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 160302 } # Juscelino Kubitschek
+		command = { type = headofgovernment which = 160303 } # Joao Goulart
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160304 } # Juarez T?vora
+		command = { type = headofgovernment which = 160305 } # Adhemar de Barros
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8002006
+	country = BRA
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160308 } # Janio Quadros
+		command = { type = headofgovernment which = 160309 } # Milton Campos
+	}
+	
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 160306 } # Henrique Teixeira Lott
+		command = { type = headofgovernment which = 160303 } # Joao Goulart
+	}
+
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 8002008
+	country = BRA
+
+	name = "EVT_8002007_NAME"
+	desc = "EVT_8002007_DESC"
+	picture = "nwo\janio_quadros_resignation"
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofstate = 160308 # Janio Quadros
+	}
+
+	date = { day = 0 month = july year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_8002007_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 160307 } # Joao Goulart
+	}
+}
+
+
+event = {
+	id = 8002009
+	random = no
+	country = BRA
+	picture = "nwo\plano_de_metas"
+
+	name = "EVT_8002009_NAME"
+	desc = "EVT_8002009_DESC"
+
+	trigger = {
+		headofstate = 160302 # Kubitschek
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "EVT_8002009_A"
+		ai_chance = 95
+		command = { type = money value = -5000 }
+		command = { type = construct which = ic where = -1 value = 2 }
+		command = { type = add_prov_resource which = -1 value = 2 where = metal }
+		command = { type = add_prov_resource which = -1 value = 4 where = energy }
+		command = { type = add_prov_resource which = -1 value = 1 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 1 where = oil }
+		command = { type = construct which = ic where = -1 value = 2 }
+		command = { type = add_prov_resource which = -1 value = 2 where = metal }
+		command = { type = add_prov_resource which = -1 value = 4 where = energy }
+		command = { type = add_prov_resource which = -1 value = 1 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 1 where = oil }
+	}
+	
+	action = {
+		name = "EVT_8002009_B"
+		ai_chance = 5
+		command = { type = dissent value = -3 }
+		command = { type = money value = 1000 }
+	}
+
+}
+
+event = {
+	id = 8002010
+	country = BRA
+	
+	name = "EVT_8002010_NAME"
+	desc = "EVT_8002010_DESC"
+	picture = "nwo\building_brasilia"
+	style = 1
+
+	trigger = {
+		headofstate = 160302 # Kubitschek
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "EVT_8002010_A"
+		ai_chance = 95
+		command = { type = money value = -5000 }
+	}
+	
+	action = {
+		name = "EVT_8002010_B"
+		ai_chance = 5
+		command = { type = dissent value = -3 }
+		command = { type = money value = 1000 }
+		command = { type = sleepevent which = 8002011 }
+	}
+
+}
+
+event = {
+	id = 8002011
+	country = BRA
+	
+	name = "EVT_8002011_NAME"
+	desc = "EVT_8002011_DESC"
+	picture = "nwo\brasilia"
+	style = 1
+	
+	trigger = {
+		event = 8002010
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "EVT_8002011_A"
+		command = { type = dissent value = -2 }
+		command = { type = capital which = 2067 }
+		command = { type = construct which = ic where = 2067 value = 6 }
+		command = { type = add_prov_resource which = 2067 value = 4 where = metal }
+		command = { type = add_prov_resource which = 2067 value = 8 where = energy }
+		command = { type = add_prov_resource which = 2067 value = 2 where = rare_materials }
+		command = { type = construct which = infrastructure where = 2067 value = 60 }
+	}
+
+}

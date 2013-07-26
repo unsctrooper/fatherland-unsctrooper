@@ -7,7 +7,7 @@
  {  tag                    = SIK 
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }	
    # Resource Reserves 
-   puppet = SOV 
+   #puppet = SOV 
 energy                 = 240
 metal                  = 120
 rare_materials         = 60
@@ -59,9 +59,9 @@ rare_materials         = 60
   inventions = { 3000027 }
    diplomacy = 
    {  relation = {  tag = CHC value = 40  } 
-     relation = {  tag = SOV value = 125  } 
-     relation = {  tag = TAN value = 125  } 
-     relation = {  tag = CHI value = -125  } 
+		relation = {  tag = SOV value = 50  } 
+     relation = {  tag = TAN value = 50  } 
+     relation = {  tag = CHI value = -10  } 
     } 
    SpyInfo                = {  country = "SIK" NumberOfSpies = 4  } 
    headofstate            = {  type = 9 id = 420001  } 

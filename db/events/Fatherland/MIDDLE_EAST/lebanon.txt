@@ -1,0 +1,615 @@
+event = {
+	id = 8008701
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1936 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375001 } # ?mile Edd?
+		command = { type = headofgovernment which = 375002 } # Ayoub Tabet
+	}
+}
+
+event = {
+	id = 8008702
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1937 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1937 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375001 } # ?mile Edd?
+		command = { type = headofgovernment which = 375015 } # Kayreddin al-Ahdab
+	}
+}
+
+event = {
+	id = 8008703
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1938 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1938 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375001 } # ?mile Edd?
+		command = { type = headofgovernment which = 375016 } # Khaled Chehab
+	}
+}
+
+event = {
+	id = 8008704
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1939 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375001 } # ?mile Edd?
+		command = { type = headofgovernment which = 375017 } # Abdallah Aref al-Yafi
+	}
+}
+
+event = {
+	id = 8008705
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1940 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1940 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375001 } # ?mile Edd?
+		command = { type = headofgovernment which = 375018 } # Abdullah Bayum
+	}
+}
+
+event = {
+	id = 8008706
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1941 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1942 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375011 } # Alfred Nacchache
+		command = { type = headofgovernment which = 375019 } # Alfred Nacchache
+	}
+}
+
+event = {
+	id = 8008708
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1943 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1943 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375013 } # Bachara al-Khoury
+		command = { type = headofgovernment which = 375021 } # Sami as-Solh
+		command = { type = headofgovernment which = 375022 } # Petro Trad
+		command = { type = foreignminister which = 375033 } # Majid Arslane
+		command = { type = armamentminister which = 375036 } # Rayan Kadi
+		command = { type = ministerofsecurity which = 375042 } # Nassim Majdalany
+		command = { type = ministerofintelligence which = 375050 } # Slimane Naoufai
+		command = { type = chiefofstaff which = 375052 } # Antoine Harb
+		command = { type = chiefofarmy which = 375055 } # Jamil Lahoud
+		command = { type = chiefofnavy which = 375059 } # Nabil Jad
+		command = { type = chiefofair which = 375061 } # Slimane Naoufai
+	}
+}
+
+event = {
+	id = 8008709
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1944 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375013 } # Bachara al-Khoury
+		command = { type = headofgovernment which = 375023 } # Riad as-Solh
+	}
+}
+
+event = {
+	id = 8008710
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375013 } # Bachara al-Khoury
+		command = { type = headofgovernment which = 375024 } # Abdul Hamid Karami
+		command = { type = foreignminister which = 375033 } # Majid Arslane
+		command = { type = armamentminister which = 375039 } # Nassim Majdalany
+		command = { type = ministerofsecurity which = 375045 } # Slimane Naoufai
+		command = { type = ministerofintelligence which = 375050 } # Slimane Naoufai
+		command = { type = chiefofstaff which = 375053 } # Iskander Ghanem
+		command = { type = chiefofarmy which = 375056 } # Fouad Chehab
+		command = { type = chiefofnavy which = 375059 } # Nabil Jad
+		command = { type = chiefofair which = 375062 } # Emile Boustany
+	}
+}
+
+
+event = {
+	id = 8008719
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375013 } # Bachara al-Khoury
+		command = { type = headofgovernment which = 375025 } # Sami as-Solh
+	}
+}
+
+event = {
+	id = 8008720
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 375013 } # Bachara al-Khoury
+		command = { type = headofgovernment which = 375027 } # Riad as-Solh
+	}
+}
+
+event = {
+	id = 8008721
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 375013 } # Bachara al-Khoury
+		command = { type = headofgovernment which = 375017 } # Abdallah Aref al-Yafi
+		command = { type = foreignminister which = 375074 } # Fouad Chehab
+	}
+}
+
+event = {
+	id = 8008722
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 375070 } # Camille Chamoun
+		command = { type = headofgovernment which = 375025 } # Sami as-Solh
+	}
+}
+
+event = {
+	id = 8008724
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 375070 } # Camille Chamoun
+		command = { type = headofgovernment which = 375016 } # Khaled Chehab
+	}
+}
+
+event = {
+	id = 8008725
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375070 } # Camille Chamoun
+		command = { type = headofgovernment which = 375017 } # Abdallah Aref al-Yafi
+	}
+}
+
+event = {
+	id = 8008726
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375070 } # Camille Chamoun
+		command = { type = headofgovernment which = 375025 } # Sami as-Solh
+	}
+}
+
+event = {
+	id = 8008727
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375070 } # Camille Chamoun
+		command = { type = headofgovernment which = 375017 } # Abdallah Aref al-Yafi
+	}
+}
+
+event = {
+	id = 8008728
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375070 } # Camille Chamoun
+		command = { type = headofgovernment which = 375025 } # Sami as-Solh
+	}
+}
+
+event = {
+	id = 8008729
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375100 } # Fouad Chehab
+		command = { type = headofgovernment which = 375101 } # Rachid Karami
+	}
+}
+
+event = {
+	id = 8008731
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375100 } # Fouad Chehab
+		command = { type = headofgovernment which = 375073 } # Saeb Sallam
+	}
+}
+
+event = {
+	id = 8008732
+	country = LEB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 375100 } # Fouad Chehab
+		command = { type = headofgovernment which = 375101 } # Rachid Karami
+	}
+}
+

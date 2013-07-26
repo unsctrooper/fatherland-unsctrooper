@@ -52,7 +52,7 @@
 		random = no
 		
 		trigger = {
-			random = 25
+			random = 40
 		}
 		
 		date = { day = 1 month = july year = 1949 }
@@ -66,11 +66,13 @@
 			name = "Get the Führer qualified help"
 			ai_chance = 50
 			command = { type = trigger which = 90000598 }
+			command = { type = dissent value = 1 }
 		}
 		action = {
 			name = "The Führer sees only Dr. Morrell"
 			ai_chance = 50
 			command = { type = trigger which = 90000597 } #1
+			command = { type = dissent value = 2 }
 		}
 
 	}
@@ -90,7 +92,7 @@
 		action = {
 			name = "The Führer survive !"
 			ai_chance = 100
-			command = { type = trigger which = 90000596 } #2
+			#command = { type = trigger which = 90000596 } #2
 			command = { type = dissent value = -1 }
 		}
 
@@ -112,7 +114,7 @@
 			name = "The Führer is dead !"
 			ai_chance = 100
 			command = { type = trigger which = 90000500 } 
-			command = { type = dissent value = 3 }
+			command = { type = dissent value = 7 }
 		}
 
 	}
@@ -127,13 +129,13 @@
 		random = no
 		
 		trigger = { 
-			year = 1953
+			random = 75
 			event = 90000598
 		}
 
 		date = { day = 1 month = july year = 1951 }
 		offset = 70
-		deathdate = { day = 1 month = january year = 1953 }	
+		deathdate = { day = 1 month = january year = 1968 }	
 
 		name = "Death of the Führer"
 		desc = "After an illustrious career, Germany's beloved Führer has passed away. Though hated abroad, he seemed to ride out the scandals of the Third Reich and most Germans still regarded him as a father figure. Numerous disappearances in the East were attributed to partisan activity and the harsh conditions of life along the Russian frontier. His life had been prolonged with competent medical treatment and rest. A power struggle ensued over his succession."
@@ -142,7 +144,7 @@
 			name = "The Führer is dead !"
 			ai_chance = 100
 			command = { type = trigger which = 90000500 } 
-			command = { type = dissent value = 1 }
+			command = { type = dissent value = 5 }
 		}
 
 	}
@@ -1330,7 +1332,7 @@ event = {
 	
 		trigger = { 
 			#event = 90000519
-			dissent = 35
+			dissent = 20
 		}
 
 	date = { day = 1 month = january year = 1948 }
@@ -1445,7 +1447,7 @@ event = {
 	offset = 10
 	deathdate = { day = 30 month = december year = 1963 }	
 	
-	name = EVT_90000523_NAME # "Fascist Germany"
+	name = "Proclamation of a New Germany" # "Fascist Germany"
 	desc = EVT_90000523_DESC # "We proclaim a new Germany with a new old flag!"
 	
 	action = {
@@ -1478,54 +1480,166 @@ event = {
 	action = {
 		name = EVT_90000524_A # "Focus on the east, review the ost plan and create new satellites" 
 	
-			ai_chance = 40
+			ai_chance = 60
 			
-			command = { type = inherit which = U41 value = 0 } #Ukraine
+			#Remove claim
+				#Poland
+			command = { type = removeclaim which = 232 } 
+			command = { type = removeclaim which = 228 } 
+			command = { type = removeclaim which = 231 } 
+			command = { type = removeclaim which = 233 } 
+			command = { type = removeclaim which = 234 } 
+			command = { type = removeclaim which = 235 } 
+			command = { type = removeclaim which = 236 } 
+			command = { type = removeclaim which = 237 } 			
+			command = { type = removeclaim which = 243 } 
+			command = { type = removeclaim which = 246 } 
+			command = { type = removeclaim which = 229 } 
+			command = { type = removeclaim which = 250 } 
+			command = { type = removeclaim which = 252 }
+			command = { type = removeclaim which = 253 } 
+			command = { type = removeclaim which = 254 } 
+			command = { type = removeclaim which = 255 }
+				#Baltic States
+			command = { type = removeclaim which = 258 } 
+			command = { type = removeclaim which = 259 }
+			command = { type = removeclaim which = 260 } 
+			command = { type = removeclaim which = 261 } 
+			command = { type = removeclaim which = 262 }
+			command = { type = removeclaim which = 263 }
+			command = { type = removeclaim which = 264 } 
+			command = { type = removeclaim which = 265 }
+			command = { type = removeclaim which = 266 } 
+			command = { type = removeclaim which = 267 } 
+			command = { type = removeclaim which = 268 }
+			command = { type = removeclaim which = 269 }
+			command = { type = removeclaim which = 270 }
+			command = { type = removeclaim which = 271 } 
+			command = { type = removeclaim which = 272 } 
+			command = { type = removeclaim which = 273 }
+			command = { type = removeclaim which = 274 }
+			command = { type = removeclaim which = 275 }
+				#Banat
+			command = { type = removeclaim which = 336 }	
+				#Ukraina
+			command = { type = removeclaim which = 628 }
+			command = { type = removeclaim which = 627 } 
+			command = { type = removeclaim which = 632 } 
+			command = { type = removeclaim which = 630 }
+			command = { type = removeclaim which = 623 }	
+				#Russia			
+			command = { type = removeclaim which = 549 }	
+			command = { type = removeclaim which = 550 }
+			command = { type = removeclaim which = 551 }
+			command = { type = removeclaim which = 552 }
+			command = { type = removeclaim which = 560 }
+			command = { type = removeclaim which = 561 }
+			command = { type = removeclaim which = 565 }
+			command = { type = removeclaim which = 566 }
+			command = { type = removeclaim which = 564 }
+			command = { type = removeclaim which = 573 }
+
+			#Ukraine
+			command = { type = inherit which = U41 value = 0 } 
 			command = { type = independence which = UKR value = 1 when = 1 }
 			command = { type = make_puppet which = UKR }
 			command = { type = military_control which = GER where = UKR value = 1 }
+			command = { type = secedearea which = UKR value = KIEV }
+			command = { type = secedearea which = UKR value = DNEPROPRETOVSK }
 			
-			command = { type = inherit which = U40 value = 0 } #Ostland
+			#Ostland
+			command = { type = inherit which = U40 value = 0 } 
+				# Latvia
 			command = { type = independence which = LAT value = 1 when = 0 }	
-			command = { type = independence which = EST value = 1 when = 0 }
-			command = { type = independence which = LIT value = 1 when = 0 }			
 			command = { type = make_puppet which = LAT }
+			command = { type = secedearea which = LAT value = LATVIA }
 			command = { type = military_control which = GER where = LAT value = 1 }
-			command = { type = make_puppet which = EST }
-			command = { type = military_control which = GER where = EST value = 1 }
-			command = { type = make_puppet which = LIT }
+				# Lithuania
+			command = { type = independence which = LIT value = 1 when = 0 }
+			command = { type = make_puppet which = LIT }			
+			command = { type = secedearea which = LIT value = LITHUANIA }
 			command = { type = military_control which = GER where = LIT value = 1 }
+				#Estonia
+			command = { type = independence which = EST value = 1 when = 0 }
+			command = { type = make_puppet which = EST }
+			command = { type = secedearea which = EST value = ESTONIA }
+			command = { type = military_control which = GER where = EST value = 1 }
 			
+			#Lokot Republic aka Russia		
 			command = { type = name where = UTC which = Russia}
+			command = { type = make_puppet which = UTC }
+			command = { type = military_control which = GER where = UTC value = 1 }			
 			command = { type = secedearea which = UTC value = MOSCOW }
 			command = { type = secedearea which = UTC value = KURSK }
-			command = { type = secedearea which = UTC value = SARANSK }
 			command = { type = secedearea which = UTC value = BELGOROD }
 			command = { type = secedearea which = UTC value = TAMBOV }
 			command = { type = secedearea which = UTC value = RYAZAN }
-			command = { type = make_puppet which = UTC }
-			command = { type = military_control which = GER where = UTC value = 1 }
+			command = { type = secedearea which = UTC value = PENZA }
+			command = { type = secedearea which = UTC value = PSKOV }
+			command = { type = secedearea which = UTC value = LENINGRAD }
+			command = { type = secedearea which = UTC value = NOVGOROD }
+			#command = { type = secedearea which = UTC value = SARANSK }
+			command = { type = secedeprovince which = UTC value = 679 }
+			command = { type = secedeprovince which = UTC value = 670 }
+			command = { type = secedeprovince which = UTC value = 578 }
+			#command = { type = secedearea which = UTC value = VELIKIYE LUKI }
+			command = { type = secedeprovince which = UTC value = 569 }
+			command = { type = secedeprovince which = UTC value = 563 }
+			command = { type = secedeprovince which = UTC value = 558 }
+			command = { type = secedeprovince which = UTC value = 577 }
 			
+			#Poland
 			command = { type = inherit which = U44 value = 0 } #Gov. Polen
 			command = { type = independence which = POL value = 1 when = 0 }
 			command = { type = make_puppet which = POL }
 			command = { type = military_control which = GER where = POL value = 1 }
+			command = { type = secedearea which = POL value = WARSAW }
+			command = { type = secedearea which = POL value = KRAKOW }
+			command = { type = secedearea which = POL value = POLOTSK }
+			#command = { type = secedearea which = POL value = BREST LITOVSK }
 			
-			command = { type = 	belligerence which = GER value = -1 }
+			#Bielorussia
+			command = { type = make_puppet which = BLR }
+			command = { type = military_control which = GER where = POL value = 1 }
+			command = { type = secedearea which = BLR value = MOZYR }
 			
-			command = { type = dissent value = 5 }
+			#Kaukasus
+			command = { type = inherit which = U42 value = 0 } 
+				#Georgia
+			command = { type = independence which = GEO value = 1 when = 1 }
+			command = { type = make_puppet which = GEO }
+			command = { type = military_control which = GER where = GEO value = 1 }
+			command = { type = secedearea which = GEO value = GEORGIEN }
+				#Armenia
+			command = { type = independence which = ARM value = 1 when = 1 }
+			command = { type = make_puppet which = ARM }
+			command = { type = military_control which = GER where = ARM value = 1 }
+				#Azerbaijan
+			command = { type = independence which = AZB value = 1 when = 1 }
+			command = { type = make_puppet which = AZB }
+			command = { type = military_control which = GER where = AZB value = 1 }
+							
+			command = { type = 	belligerence which = GER value = -5 }
+			
+			command = { type = dissent value = 10 }
 			
 	}	
 	
 	action = {
 		name = EVT_90000524_B # "Focus on the west" 
 	
-			ai_chance = 40
+			ai_chance = 30
 
+			#Remove claim
+				#Netherland
+			#command = { type = removeclaim which =  } 
+			
 			command = { type = relation which = SPA value = 100 }
 			command = { type = relation which = POR value = 80 }
 			command = { type = relation which = SWE value = 80 }
 			command = { type = relation which = FRA value = 60 }
+			command = { type = relation which = IRE value = 50 }
+			command = { type = relation which = DEN value = 50 }
 			
 			command = { type = 	non_aggression which = GER where = SPA}
 			command = { type = 	non_aggression which = GER where = POR}
@@ -1547,6 +1661,9 @@ event = {
 			command = { type = secedeprovince which = FRA value = 53 }	
 			command = { type = secedeprovince which = FRA value = 50 }	
 
+			#Norway
+			command = { type = independence which = NOR value = 1 when = 1 }
+			
 			command = { type = 	belligerence which = GER value = 3 }
 			
 			command = { type = dissent value = -1 }
@@ -1555,7 +1672,7 @@ event = {
 	action = {
 		name = EVT_90000524_C # "No change, proceed with the old plans" 
 			
-			ai_chance = 20
+			ai_chance = 10
 			
 			command = { type = belligerence which = GER value = 1 }
 			

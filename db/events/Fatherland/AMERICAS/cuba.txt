@@ -1,0 +1,660 @@
+event = {
+	id = 8003801
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85017 } # Carlos Prio
+		command = { type = headofgovernment which = 85089 } # Manuel de Varona Loredo
+	}
+}
+
+event = {
+	id = 8003802
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85017 } # Carlos Prio
+		command = { type = headofgovernment which = 85090 } # Felix Lanchis Sanchez
+	}
+}
+
+event = {
+	id = 8003803
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85017 } # Carlos Prio
+		command = { type = headofgovernment which = 85091 } # Oscar y Lopez-Martinez
+		command = { type = ministerofsecurity which = 85093 } # Andres Perez Chaumont
+	}
+}
+
+event = {
+	id = 8003804
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85014 } # Fulgencio Batista
+		command = { type = headofgovernment which = 85023 } # Fulgencio Batista
+	}
+}
+
+event = {
+	id = 8003805
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85014 } # Fulgencio Batista
+		command = { type = headofgovernment which = 85200 } # Jorge Garcia Montes
+	}
+}
+
+event = {
+	id = 8003806
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85014 } # Fulgencio Batista
+		command = { type = headofgovernment which = 85201 } # Andr?s Rivero Aguero
+	}
+}
+
+event = {
+	id = 8003807
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+	
+	trigger = {
+		NOT = { 
+			flag = castro_rules
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85014 } # Fulgencio Batista
+		command = { type = headofgovernment which = 85202 } # Gonzalo de los Rios
+	}
+}
+
+event = {
+	id = 8003808
+	country = CUB
+
+	name = "EVT_8003808_NAME"
+	desc = "EVT_8003808_DESC"
+	picture = "nwo\castro_triumph"
+	style = 1
+	
+	action = {
+		name = "EVT_8003808_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 85203 } # Manuel Urrutia Lleo
+		command = { type = headofgovernment which = 85109 } # Fid?l Castro
+		command = { type = dissent value = -25 }
+		command = { type = setflag which = castro_rules }
+		command = { type = clrflag which = castro_rebellion }
+	}
+}
+
+event = {
+	id = 8003809
+	country = CUB
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+	
+	trigger = {
+		headofstate = 85203 # Manuel Urrutia Lleo
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 85204 } # Osvaldo Dorticos Torrado
+	}
+}
+
+### Castro
+
+event = {
+	id = 8003810
+	country = CUB
+	one_action = yes
+	
+	name = EVT_8003810_NAME
+	desc = EVT_8003810_DESC
+	picture = "nwo\moncada_barracks"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+	}
+	
+	date = { day = 26 month = july year = 1953 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = EVT_8003810_A
+		ai_chance = 98
+		command = { type = dissent value = -3 }
+	}
+	
+	# Castro rebellion starts early, with high dissent value from the beginning
+	action = {
+		name = EVT_8003810_B
+		ai_chance = 2
+		command = { type = dissent value = 10 }
+		command = { type = setflag which = castro_rebellion }
+	}
+
+}
+
+event = {
+	id = 8003811
+	country = CUB
+	persistent = yes
+	one_action = yes
+
+	name = EVT_8003811_NAME
+	desc = EVT_8003811_DESC
+	picture = "nwo\castro_rebellion"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+		flag = castro_rebellion
+		NOT = { flag = castro_rules }
+		random = 50
+	}
+	
+	date = { day = 1 month = january year = 1954 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	## 1954-1956
+	
+	# Castro remains in hiding
+	action = {
+		name = EVT_8003811_A
+		ai_chance = 96
+		trigger = { year = 1954 NOT = { year = 1956 } }
+		command = { type = dissent value = 12 }		
+	}
+	
+	# Castro succeeds
+	action = {
+		name = EVT_8003811_B
+		ai_chance = 2
+		trigger = { year = 1954 NOT = { year = 1956 } }
+		command = { type = dissent value = -6 }		
+		command = { type = trigger which = 8003808 }		
+	}
+	
+	# Castro is caught!!
+	action = {
+		name = EVT_8003811_C
+		ai_chance = 2
+		trigger = { year = 1954 NOT = { year = 1956 } }
+		command = { type = dissent value = -12 }		
+		command = { type = trigger which = 8003812 }		
+	}
+	
+	## 1956-1958
+	
+	# Castro remains in hiding
+	action = {
+		name = EVT_8003811_A
+		ai_chance = 90
+		trigger = { year = 1956 NOT = { year = 1958 } }
+		command = { type = dissent value = 12 }		
+	}
+	
+	# Castro succeeds
+	action = {
+		name = EVT_8003811_B
+		ai_chance = 6
+		trigger = { year = 1956 NOT = { year = 1958 } }
+		command = { type = dissent value = -6 }		
+		command = { type = trigger which = 8003808 }		
+	}
+	
+	# Castro is caught!!
+	action = {
+		name = EVT_8003811_C
+		ai_chance = 4
+		trigger = { year = 1956 NOT = { year = 1958 } }
+		command = { type = dissent value = -12 }		
+		command = { type = trigger which = 8003812 }		
+	}
+	
+	## 1959
+	
+	# Castro remains in hiding
+	action = {
+		name = EVT_8003811_A
+		ai_chance = 50
+		trigger = { year = 1959 NOT = { year = 1960 } }
+		command = { type = dissent value = 12 }		
+	}
+	
+	# Castro succeeds
+	action = {
+		name = EVT_8003811_B
+		ai_chance = 48
+		trigger = { year = 1959 NOT = { year = 1960 } }
+		command = { type = dissent value = -6 }		
+		command = { type = trigger which = 8003808 }		
+	}
+	
+	# Castro is caught!!
+	action = {
+		name = EVT_8003811_C
+		ai_chance = 2
+		trigger = { year = 1959 NOT = { year = 1960 } }
+		command = { type = dissent value = -12 }		
+		command = { type = trigger which = 8003812 }		
+	}
+	
+	## 1960-61
+	
+	# Castro remains in hiding
+	action = {
+		name = EVT_8003811_A
+		ai_chance = 50
+		trigger = { year = 1960 NOT = { year = 1961 } }
+		command = { type = dissent value = 12 }		
+	}
+	
+	# Castro succeeds
+	action = {
+		name = EVT_8003811_B
+		ai_chance = 30
+		trigger = { year = 1960 NOT = { year = 1961 } }
+		command = { type = dissent value = -6 }		
+		command = { type = trigger which = 8003808 }		
+	}
+	
+	# Castro is caught!!
+	action = {
+		name = EVT_8003811_C
+		ai_chance = 20
+		trigger = { year = 1960 NOT = { year = 1961 } }
+		command = { type = dissent value = -12 }		
+		command = { type = trigger which = 8003812 }		
+	}
+	
+	## 1962-1963
+	
+	# Castro remains in hiding
+	action = {
+		name = EVT_8003811_A
+		ai_chance = 10
+		trigger = { year = 1962 }
+		command = { type = dissent value = 12 }		
+	}
+	
+	# Castro succeeds
+	action = {
+		name = EVT_8003811_B
+		ai_chance = 20
+		trigger = { year = 1962 }
+		command = { type = dissent value = -6 }		
+		command = { type = trigger which = 8003808 }		
+	}
+	
+	# Castro is caught!!
+	action = {
+		name = EVT_8003811_C
+		ai_chance = 70
+		trigger = { year = 1962 }
+		command = { type = dissent value = -12 }		
+		command = { type = trigger which = 8003812 }		
+	}
+
+}
+
+event = {
+	id = 8003812
+	country = CUB
+	persistent = yes
+
+	name = EVT_8003812_NAME
+	desc = EVT_8003812_DESC
+	picture = "nwo\castro_rebellion"
+	style = 1
+
+	action = {
+		name = EVT_8003812_A
+		command = { type = dissent value = 3 }
+		command = { type = clrflag which = castro_rebellion }
+		command = { type = sleepminister which = 85074 }
+		command = { type = sleepminister which = 85077 }
+		command = { type = sleepminister which = 85108 }
+		command = { type = sleepminister which = 85109 }
+	}
+
+}
+
+event = {
+	id = 8003813
+	country = CUB
+	
+	name = EVT_8003813_NAME
+	desc = EVT_8003813_DESC
+	picture = "nwo\granma"	
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+		NOT = { flag = castro_rebellion }
+	}
+	
+	date = { day = 1 month = december year = 1956 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = EVT_8003813_A
+		ai_chance = 95
+		command = { type = setflag which = castro_rebellion }
+	}
+	
+	action = {
+		name = EVT_8003813_B
+		ai_chance = 5
+		command = { type = dissent value = -3 }
+		command = { type = sleepminister which = 85074 }
+		command = { type = sleepminister which = 85077 }
+		command = { type = sleepminister which = 85108 }
+		command = { type = sleepminister which = 85109 }
+	}
+
+}
+
+event = {
+	id = 8003814
+	country = CUB
+	
+	name = EVT_8003814_NAME
+	desc = EVT_8003814_DESC
+	picture = "nwo\castro_with_khrushchev"
+	style = 1
+
+	trigger = {
+		government = communist
+		flag = castro_rules
+	}
+	
+	date = { day = 1 month = january year = 1961 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8003814_A
+		ai_chance = 95
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = SOV value = 150 }
+		command = { type = guarantee which = SOV where = CUB }
+		command = { type = end_guarantee which = USA where = CUB }
+		command = { type = end_non_aggression which = USA where = CUB }
+	}
+	
+	action = {
+		name = EVT_8003814_B
+		ai_chance = 5
+		command = { type = dissent value = 15 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = freedom value = 5 }
+		command = { type = relation which = USA value = 100 }
+		command = { type = clrflag which = castro_rules	}
+	}
+
+}
+
+### Bay of Pigs Invasion and Missile Crisis
+
+event = {
+	id = 8003815
+	country = USA	
+
+	name = EVT_8003815_NAME
+	desc = EVT_8003815_DESC
+	picture = "nwo\bay_of_pigs_invasion"
+	style = 1
+	
+	trigger = {
+		flag = castro_rules
+		flag = cold_war
+	}
+	
+	date = { day = 1 month = march year = 1961 }
+	offset = 30
+	deathdate = { day = 29 month = june year = 1961 }
+
+	action = {
+		name = 	EVT_8003815_A
+		ai_chance = 95
+		command = { type = dissent value = -1 }
+		command = { type = belligerence value = 10 }
+	}
+	
+	action = {
+		name = EVT_8003815_B
+		ai_chance = 5
+		command = { type = relation which = CUB value = 50 }
+		command = { type = sleepevent which = 8003816 }
+	}
+
+}
+
+event = { # Bay of Pigs invasion resolution
+	id = 8003816
+	random = no
+	country = REB
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+
+	trigger = {
+		event = 8003815
+	}
+	
+	date = { day = 1 month = april year = 1961 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1961 }
+
+	# Failure
+	action = {
+		name = OK
+		ai_chance = 90
+		command = { type = trigger which = 8702917 }
+		command = { type = trigger which = 8702918 }
+	}
+	
+	# Success
+	action = {
+		name = OK
+		ai_chance = 10
+		command = { type = trigger which = 8702919 }
+		command = { type = trigger which = 8702920 }
+	}
+
+}
+
+### CUB: Failure of invasion
+event = {
+	id = 8003817
+	country = CUB
+
+	name = EVT_8003817_NAME
+	desc = EVT_8003817_DESC
+	picture = "nwo\bay_of_pigs_invasion"
+	style = 1
+
+	action = {
+		name = EVT_8003817_A
+		command = { type = dissent value = -5 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = SOV value = 100 }
+	}
+
+}
+
+### USA: Failure of invasion
+event = {
+	id = 8003818
+	country = USA
+
+	name = EVT_8003818_NAME
+	desc = EVT_8003818_DESC
+	picture = "nwo\bay_of_pigs_invasion"
+	style = 1
+
+	action = {
+		name = EVT_8003818_A
+		command = { type = dissent value = -5 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = SOV value = 100 }
+	}
+
+}
+
+### CUB: Success of invasion
+event = {
+	id = 8003819
+	country = CUB
+
+	name = EVT_8003819_NAME
+	desc = EVT_8003819_DESC	
+	picture = "nwo\bay_of_pigs_invasion"
+	style = 1
+
+	action = {
+		name = EVT_8003819_A
+		command = { type = dissent value = 15 }
+		command = { type = headofstate which = 33034 } # Fulgencio Batista
+		command = { type = headofgovernment which = 33129 } # Gonzalo de los Rios
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = relation which = USA value = 300 }
+		command = { type = relation which = SOV value = -200 }
+		command = { type = clrflag which = castro_rules }
+	}
+
+}
+
+### USA: Success of invasion
+event = {
+	id = 8003820
+	country = USA
+
+	name = EVT_8003820_NAME
+	desc = EVT_8003820_DESC
+	picture = "nwo\bay_of_pigs_invasion"
+	style = 1
+
+	action = {
+		name = EVT_8003820_A
+		command = { type = dissent value = -5 }
+		command = { type = make_puppet which = CUB } # Batista is on our mercy
+	}
+
+}

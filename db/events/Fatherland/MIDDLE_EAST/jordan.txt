@@ -1,0 +1,566 @@
+event = {
+	id = 8007901
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1937 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 370038 } # Ibrahim Hashem
+		command = { type = foreignminister which = 370015 } # Said al-Mufti
+		command = { type = armamentminister which = 370017 } # Ahmad Qadri
+		command = { type = ministerofsecurity which = 370021 } # Jacob Dorval-Penney
+		command = { type = ministerofintelligence which = 370025 } # Rustum Haidar
+	}
+}
+
+event = {
+	id = 8007902
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1938 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1943 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 370002 } # Tawfiq Abul-Huda
+		command = { type = ministerofsecurity which = 370019 } # Alec Seath Kirkbride
+	}
+}
+
+event = {
+	id = 8007903
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1944 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 370039 } # Samir al-Rifai
+		command = { type = ministerofsecurity which = 370022 } # Mohammed al-Shureiki
+		command = { type = ministerofintelligence which = 370024 } # John Bagot Glubb
+	}
+}
+
+event = {
+	id = 8007904
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 370038 } # Ibrahim Hashem
+		command = { type = foreignminister which = 370015 } # Said al-Mufti
+		command = { type = ministerofsecurity which = 370020 } # Awni Abdul Hadi
+		command = { type = ministerofintelligence which = 370024 } # John Bagot Glubb
+	}
+}
+
+event = {
+	id = 8007905
+	country = JOR
+
+	name = EVT_8007905_NAME
+	desc = EVT_8007905_DESC
+	picture = "nwo\king_abdullah"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = EVT_8007905_A
+		ai_chance = 100
+		command = { type = headofstate which = 370001 } # H.M. Abdullah I
+		command = { type = dissent value = -3 }
+	}
+}
+
+event = {
+	id = 8007906
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 370001 } # H.M. Abdullah I
+		command = { type = headofgovernment which = 370039 } # Samir al-Rifai
+	}
+}
+
+event = {
+	id = 8007907
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370001 } # H.M. Abdullah I
+		command = { type = headofgovernment which = 370002 } # Tawfiq Abul-Huda
+	}
+}
+
+event = {
+	id = 8007908
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370001 } # H.M. Abdullah I
+		command = { type = headofgovernment which = 370040 } # Said al-Mufti
+	}
+}
+
+# Assassination of Abdullah I
+event = {
+	id = 8007909
+	country = JOR
+
+	name = EVT_8007909_NAME
+	desc = EVT_8007909_DESC
+	picture = "nwo\assassination_of_abdullah"
+	style = 1
+
+	trigger = {
+		headofstate = 370001
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_8007909_A
+		ai_chance = 100
+		command = { type = headofstate which = 370011 } # H.M. Talal I
+		command = { type = sleepminister which = 370001 } # H.M. Abdullah I
+		command = { type = sleepminister which = 370008 } # H.M. Abdullah I
+		command = { type = headofgovernment which = 370039 } # Samir al-Rifai
+	}
+}
+
+# Abdication of King Talal
+event = {
+	id = 8007910
+	country = JOR
+
+	name = EVT_8007910_NAME
+	desc = EVT_8007910_DESC
+	picture = "nwo\king_talal"
+	style = 1
+
+	trigger = {
+		headofstate = 370011
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = EVT_8007910_A
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370002 } # Tawfiq Abul-Huda
+	}
+}
+
+event = {
+	id = 8007911
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370041 } # Fawzi al-Mulqi
+	}
+}
+
+event = {
+	id = 8007912
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370002 } # Tawfiq Abul-Huda
+	}
+}
+
+event = {
+	id = 8007913
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370040 } # Said al-Mufti
+	}
+}
+
+event = {
+	id = 8007914
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370039 } # Samir al-Rifai
+	}
+}
+
+event = {
+	id = 8007915
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370038 } # Ibrahim Hashem
+	}
+}
+
+event = {
+	id = 8007916
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370039 } # Samir al-Rifai
+	}
+}
+
+event = {
+	id = 8007917
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370100 } # Hazza' al-Majali 
+	}
+}
+
+event = {
+	id = 8007918
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370101 } # Bahjat al-Talhouni
+	}
+}
+
+event = {
+	id = 8007919
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370102 } # Wasfi al-Tal
+	}
+}
+
+event = {
+	id = 8007920
+	country = JOR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 370037 } # H.M. Hussein I
+		command = { type = headofgovernment which = 370103 } # Hussein ibn Nasser
+	}
+}
+

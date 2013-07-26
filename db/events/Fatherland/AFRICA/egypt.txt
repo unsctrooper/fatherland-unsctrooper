@@ -1,0 +1,210 @@
+event = {
+	id = 8004901
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340011 } # Faruq I
+		command = { type = headofgovernment which = 340016 } # Mahmoud an Nukraishi Pasha
+		command = { type = foreignminister which = 340033 } # Ibrahim Abdel Hadi
+		command = { type = armamentminister which = 340047 } # Muhammad Mahmoud Pasha
+		command = { type = ministerofsecurity which = 340061 } # H.R.H. Nawal Zaki
+		command = { type = ministerofintelligence which = 340072 } # Pierre Lacau
+		command = { type = chiefofstaff which = 340078 } # Abdelhamid Soliman
+		command = { type = chiefofarmy which = 340083 } # Mohammed Naguib
+		command = { type = chiefofnavy which = 340087 } # Mohammed Azmy Pasha
+		command = { type = chiefofair which = 340093 } # Mohammed Azmy Pasha
+	}
+}
+
+event = {
+	id = 8004902
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340011 } # Faruq I
+		command = { type = headofgovernment which = 340021 } # Ismail Sidqi Pasha
+		command = { type = foreignminister which = 340039 } # Ahmed Lofti al Sayed
+		command = { type = ministerofsecurity which = 340070 } # Ali Hilali Pasha
+	}
+}
+
+event = {
+	id = 8004903
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340011 } # Faruq I
+		command = { type = headofgovernment which = 340016 } # Mahmoud an Nukraishi Pasha
+	}
+}
+
+event = {
+	id = 8004904
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340011 } # Faruq I
+		command = { type = headofgovernment which = 340019 } # Hussein Sirri Pasha
+	}
+}
+
+event = {
+	id = 8004905
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340011 } # Faruq I
+		command = { type = headofgovernment which = 340024 } # Mustafa an-Nahhas Pasha
+	}
+}
+
+event = {
+	id = 8004906
+	country = EGY
+
+	name = "EVT_8004906_NAME"
+	desc = "EVT_8004906_DESC"
+	picture = "nwo\nasser_revolution_1952"
+	style = 1
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = "EVT_8004906_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		command = { type = headofstate which = 340200 } # Fuad II
+		command = { type = headofgovernment which = 340101 } # Mohammed Naguib
+		command = { type = foreignminister which = 340043 } # Wasef Boutros Ghali
+		command = { type = armamentminister which = 340102 } # Noureddin Arraf
+		command = { type = ministerofsecurity which = 340103 } # Kamaleddin Hussein
+		command = { type = ministerofintelligence which = 340077 } # Wahid Raafat
+		command = { type = chiefofstaff which = 340104 } # Mohammed Naguib
+		command = { type = chiefofarmy which = 340105 } # Gamal Abdel Nasser
+		command = { type = chiefofnavy which = 340091 } # Wahid Raafat
+		command = { type = chiefofair which = 340106 } # Gamal Abdel Nasser
+	}
+}
+
+event = {
+	id = 8004907
+	country = EGY
+
+	name = "EVT_8004907_NAME"
+	desc = "EVT_8004907_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = "EVT_8004907_A"
+		ai_chance = 100
+		command = { type = flag_ext where = EGY which = _republic }
+		command = { type = headofstate which = 340099 } # Mohammed Naguib
+	}
+}
+
+event = {
+	id = 8004908
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340153 } # Gamal Abdel Nasser
+		command = { type = headofgovernment which = 340152 } # Gamal Abdel Nasser
+	}
+}
+
+event = {
+	id = 8004909
+	country = EGY
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 340153 } # Gamal Abdel Nasser
+		command = { type = headofgovernment which = 340201 } # Ali Sabri
+	}
+}

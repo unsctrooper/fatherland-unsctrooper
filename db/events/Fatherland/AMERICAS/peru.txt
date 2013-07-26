@@ -1,0 +1,286 @@
+event = {
+	id = 8012001
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 185013 } # Jos? Bustamante y Rivero
+		command = { type = headofgovernment which = 185025 } # Rafel Belaunde D?ez
+		command = { type = foreignminister which = 185034 } # Javier Correa El?as
+		command = { type = armamentminister which = 185050 } # Guillermo Almenara Irigoyen
+		command = { type = ministerofsecurity which = 185063 } # Juan Cort?s Azar
+		command = { type = ministerofintelligence which = 185075 } # Juan F. Guabloche Rodr?gues
+		command = { type = chiefofstaff which = 185082 } # Fortunato Quesada Larrea
+		command = { type = chiefofarmy which = 185089 } # Vladimiro Lop?z Trigoso
+		command = { type = chiefofnavy which = 185095 } # Luis Navarret?
+		command = { type = chiefofair which = 185102 } # Luis Navarret?
+	}
+}
+
+event = {
+	id = 8012002
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185013 } # Jos? Bustamante y Rivero
+		command = { type = headofgovernment which = 185026 } # Julio Portugal Montero
+	}
+}
+
+event = {
+	id = 8012003
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185013 } # Jos? Bustamante y Rivero
+		command = { type = headofgovernment which = 185206 } # Jos? R. Alzamora Freundt 
+	}
+}
+
+# Odria's Coup
+event = {
+	id = 8012004
+	country = PRU
+
+	name = EVT_8012004_NAME
+	desc = EVT_8012004_DESC
+	picture = "nwo\manuel_odria"
+	style = 1
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = EVT_8012004_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 185114 } # Manuel Odria Amoretti
+		command = { type = headofgovernment which = 185116 } # Armando Reveredo Iglesias
+		command = { type = foreignminister which = 185032 } # Manuel Gallagher
+		command = { type = armamentminister which = 185046 } # Oscar Trelles Mont?s
+		command = { type = ministerofsecurity which = 185060 } # Carlos Berninzon
+		command = { type = ministerofintelligence which = 185071 } # Alfredo Alvarez Calder?n
+		command = { type = chiefofstaff which = 185118 } # Alberto Zenon Ag?ero
+		command = { type = chiefofarmy which = 185120 } # Manuel Odria Amoretti
+		command = { type = chiefofnavy which = 185095 } # Luis Navarret?
+		command = { type = chiefofair which = 185102 } # Luis Navarret?
+	}
+}
+
+event = {
+	id = 8012005
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 185114 } # Manuel Odria Amoretti
+		command = { type = headofgovernment which = 185117 } # Alberto Zenon Ag?ero
+		command = { type = chiefofstaff which = 185119 } # Nicolas Lindley Lopez
+		command = { type = chiefofarmy which = 185121 } # Riccardo Perez Godoy
+	}
+}
+
+event = {
+	id = 8012006
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185114 } # Manuel Odria Amoretti
+		command = { type = headofgovernment which = 185115 } # Alberto Roque Sald?as
+	}
+}
+
+event = {
+	id = 8012007
+	country = PRU
+
+	name = EVT_8012007_NAME
+	desc = EVT_8012007_DESC
+	picture = "nwo\manuel_odria"
+	style = 1
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = EVT_8012007_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 185012 } # Manuel Prado y Ugarteche
+		command = { type = headofgovernment which = 185021 } # Manuel Cisneros Sanchez
+	}
+}
+
+event = {
+	id = 8012008
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185012 } # Manuel Prado y Ugarteche
+		command = { type = headofgovernment which = 185200 } # Luis Gallo Porras
+	}
+}
+
+event = {
+	id = 8012009
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185012 } # Manuel Prado y Ugarteche
+		command = { type = headofgovernment which = 185201 } # Pedro G. Beltran Espantoso
+	}
+}
+
+event = {
+	id = 8012010
+	country = PRU
+
+	name = EVT_8012010_NAME
+	desc = EVT_8012010_DESC
+	picture = "nwo\riccardo_godoy"
+	style = 1
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = EVT_8012010_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 185202 } # Riccardo Perez Godoy
+		command = { type = headofgovernment which = 185203 } # Nicolas Lindley Lopez
+	}
+}
+
+event = {
+	id = 8012011
+	country = PRU
+
+	name = EVT_8012011_NAME
+	desc = EVT_8012011_DESC
+	picture = "nwo\riccardo_godoy"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8012011_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 185204 } # Fernando Belaunde Terry
+		command = { type = headofgovernment which = 185205 } # Julio Trelles Montes
+	}
+}
+

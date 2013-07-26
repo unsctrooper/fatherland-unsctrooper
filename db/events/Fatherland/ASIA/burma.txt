@@ -1,0 +1,192 @@
+event = {
+	id = 8002301
+	country = BUR
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = flag_ext where = BUR which = _socialist }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 465012 } # Sao Shwe Thaik
+		command = { type = headofgovernment which = 465054 } # U Nu
+		command = { type = foreignminister which = 465020 } # U Thant
+		command = { type = armamentminister which = 465024 } # Aung Gyi
+		command = { type = ministerofsecurity which = 465028 } # Wing Maung
+		command = { type = ministerofintelligence which = 465032 } # Hla Myaing
+		command = { type = chiefofstaff which = 465036 } # Smith Dun
+		command = { type = chiefofarmy which = 465041 } # Aung San
+		command = { type = chiefofnavy which = 465046 } # Khin Maung Swe
+		command = { type = chiefofair which = 465050 } # Naw Seng
+	}
+}
+
+event = {
+	id = 8002302
+	country = BUR
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = flag_ext which = _socialist }
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 465053 } # Ba U
+		command = { type = headofgovernment which = 465054 } # U Nu
+		command = { type = foreignminister which = 465020 } # U Thant
+		command = { type = armamentminister which = 465024 } # Aung Gyi
+		command = { type = ministerofsecurity which = 465028 } # Wing Maung
+		command = { type = ministerofintelligence which = 465032 } # Hla Myaing
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = flag_ext which = _socialist }
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 465013 } # H.M. Sao Yang Wen Pin
+		command = { type = headofgovernment which = 465017 } # H.R.H. Sao Edward Yang Kyein Tsai
+		command = { type = foreignminister which = 465021 } # Thakin Nu
+		command = { type = armamentminister which = 465025 } # James Franklyn
+		command = { type = ministerofsecurity which = 465029 } # Sein Lwin
+		command = { type = ministerofintelligence which = 465033 } # Cecil Crouch Ford
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = flag_ext which = _socialist }
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8002303
+	country = BUR
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = flag_ext which = _socialist }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 465100 } # Wing Maung
+	}
+}
+
+event = {
+	id = 8002304
+	country = BUR
+
+	name = "EVT_8002304_NAME"
+	desc = "EVT_8002304_DESC"
+	picture = "nwo\ne_win"
+	style = 1
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_8002304_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 465101 } # Ne Win
+		command = { type = headofgovernment which = 465102 } # Ne Win
+	}
+}
+
+event = {
+	id = 8002305
+	country = BUR
+	
+	name = "EVT_8002305_NAME"
+	desc = "EVT_8002305_DESC"
+	picture = "nwo\burmese_road_to_socialism"
+	style = 1
+
+	date = { day = 1 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "OK"
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = dissent value = 10 }
+		command = { type = money value = -2000 }
+	}
+
+}
+
+event = {
+	id = 8002306
+	country = BUR
+	persistent = yes
+	
+	name = "EVT_8002306_NAME"
+	desc = "EVT_8002306_DESC"
+	picture = "nwo\burmese_insurgency"
+	style = 1
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "EVT_8002306_A"
+		command = { trigger = { flag = CHC_won_civil_war } type = dissent value = 12 }
+		command = { trigger = { NOT = { flag = CHC_won_civil_war } } type = dissent value = 6 }
+	}
+
+}

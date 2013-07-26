@@ -75,8 +75,8 @@
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
    nationalprovinces      = {  } 
-   ownedprovinces         = { 51 52 49 } 
-   controlledprovinces    = {  51 52 49 } 
+   ownedprovinces         = { 51 52 49 50 53 45 43 44 46} 
+   controlledprovinces    = { 51 52 49 50 53 45 43 44 46} 
 	claimedprovinces 	  = { 
 	#Flanders
 	#115 117 114
@@ -84,8 +84,11 @@
 	#113 108 111 112
 	#Brussels
 	#116
-  # Pas De Calais
- 51 52 49   } 
+	# Pas De Calais
+	51 52 49   
+	#NordFrankreich
+	50 53 45 43 44 46
+	} 
 	
 	# Germany 1944.06 techs 
 	# ###################### 

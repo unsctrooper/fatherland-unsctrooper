@@ -1,0 +1,646 @@
+event = {
+	id = 8014701
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1936 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 430001 } # Muhammed Bey al-Abid
+		command = { type = headofgovernment which = 430200 } # Ata al-Ayyubi
+	}
+}
+
+event = {
+	id = 8014702
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1937 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1938 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430012 } # Hassim al-Atassi
+		command = { type = headofgovernment which = 430022 } # Jamil Mardam Bay
+	}
+}
+
+event = {
+	id = 8014703
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1940 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430013 } # Bahij ad din al-Khatib
+		command = { type = headofgovernment which = 430201 } # Bahij ad din al-Khatib
+	}
+}
+
+event = {
+	id = 8014704
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1941 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1941 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430202 } # Khalid al-Azm
+		command = { type = headofgovernment which = 430203 } # Khalid al-Azm
+	}
+}
+
+event = {
+	id = 8014705
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1942 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1942 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430014 } # Shaykh Taj ad-din al-Hasani
+		command = { type = headofgovernment which = 430204 } # Husni al-Barazi
+	}
+}
+
+event = {
+	id = 8014706
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1943 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1943 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430205 } # Ata al-Ayyubi
+		command = { type = headofgovernment which = 430200 } # Ata al-Ayyubi
+	}
+}
+
+event = {
+	id = 8014707
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1944 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430015 } # Shukri al-Kuwaitli
+		command = { type = headofgovernment which = 430206 } # Saadallah al-Jabiri
+	}
+}
+
+event = {
+	id = 8014708
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430015 } # Shukri al-Kuwaitli
+		command = { type = headofgovernment which = 430207 } # Faris al-Khouri
+	}
+}
+
+event = {
+	id = 8014721
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430015 } # Shukri al-Kuwaitli
+		command = { type = headofgovernment which = 430206 } # Saadallah al-Jabiri
+	}
+}
+
+event = {
+	id = 8014709
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430015 } # Shukri al-Kuwaitli
+		command = { type = headofgovernment which = 430022 } # Jamil Mardam Bay
+	}
+}
+
+event = {
+	id = 8014710
+	country = SYR
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 430060 } # Hussein al-Zaim
+		command = { type = headofgovernment which = 430066 } # Hassim al-Atassi
+		command = { type = foreignminister which = 430073 } # Muhsin al Barazi
+		command = { type = armamentminister which = 430075 } # Hassan al Hakim
+		command = { type = ministerofsecurity which = 430074 } # Nazim al Kudsi
+		command = { type = ministerofintelligence which = 430076 } # Sami Hinnawi
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 430014 } # Shaykh Taj ad-din al-Hasani
+		command = { type = headofgovernment which = 430022 } # Jamil Mardam Bay
+		command = { type = foreignminister which = 430027 } # Shaykh Mustafa al-Maraghi
+		command = { type = armamentminister which = 430033 } # Shaykh Mustafa al-Maraghi
+		command = { type = ministerofsecurity which = 430039 } # Faris al-Khouri
+		command = { type = ministerofintelligence which = 430044 } # Shaykh Muhammed al-Gawzi
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8014711
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430012 } # Hassim al-Atassi
+		command = { type = headofgovernment which = 430067 } # Nazim al Kudsi
+		command = { type = foreignminister which = 430073 } # Muhsin al Barazi
+		command = { type = armamentminister which = 430075 } # Hassan al Hakim
+		command = { type = ministerofsecurity which = 430074 } # Nazim al Kudsi
+		command = { type = ministerofintelligence which = 430076 } # Sami Hinnawi
+		command = { type = chiefofstaff which = 430071 } # Fawzi as Silu
+		command = { type = chiefofarmy which = 430051 } # Adib al-Shishakli
+		command = { type = chiefofnavy which = 430054 } # Omar Abrash
+		command = { type = chiefofair which = 430077 } # Khaleed al Razi
+	}
+}
+
+event = {
+	id = 8014712
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430012 } # Hassim al-Atassi
+		command = { type = headofgovernment which = 430063 } # Khalid al-Azm
+	}
+}
+
+event = {
+	id = 8014713
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 430061 } # Fawzi as Silu
+		command = { type = headofgovernment which = 430069 } # Fawzi as Silu
+		command = { type = foreignminister which = 430073 } # Muhsin al Barazi
+		command = { type = armamentminister which = 430075 } # Hassan al Hakim
+		command = { type = ministerofsecurity which = 430074 } # Nazim al Kudsi
+		command = { type = ministerofintelligence which = 430076 } # Sami Hinnawi
+		command = { type = chiefofstaff which = 430071 } # Fawzi as Silu
+		command = { type = chiefofarmy which = 430051 } # Adib al-Shishakli
+		command = { type = chiefofnavy which = 430054 } # Omar Abrash
+		command = { type = chiefofair which = 430077 } # Khaleed al Razi
+	}
+}
+
+event = {
+	id = 8014714
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430062 } # Adib al-Shishakli
+		command = { type = headofgovernment which = 430070 } # Adib al-Shishakli
+		command = { type = foreignminister which = 430073 } # Muhsin al Barazi
+		command = { type = armamentminister which = 430075 } # Hassan al Hakim
+		command = { type = ministerofsecurity which = 430074 } # Nazim al Kudsi
+		command = { type = ministerofintelligence which = 430076 } # Sami Hinnawi
+		command = { type = chiefofstaff which = 430071 } # Fawzi as Silu
+		command = { type = chiefofarmy which = 430051 } # Adib al-Shishakli
+		command = { type = chiefofnavy which = 430054 } # Omar Abrash
+		command = { type = chiefofair which = 430077 } # Khaleed al Razi
+	}
+}
+
+event = {
+	id = 8014715
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430012 } # Hassim al-Atassi
+		command = { type = headofgovernment which = 430208 } # Sabri al-Assali
+	}
+}
+
+event = {
+	id = 8014716
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430015 } # Shukri al-Kuwaitli
+		command = { type = headofgovernment which = 430209 } # Said al-Ghazzi
+	}
+}
+
+event = {
+	id = 8014717
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430015 } # Shukri al-Kuwaitli
+		command = { type = headofgovernment which = 430208 } # Sabri al-Assali
+	}
+}
+
+event = {
+	id = 8014718
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 430210 } # Nazim al-Kudsi
+		command = { type = headofgovernment which = 430211 } # Maarouf al-Dawalibi
+	}
+}
+
+event = {
+	id = 8014719
+	country = SYR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 430210 } # Nazim al-Kudsi
+		command = { type = headofgovernment which = 430212 } # Bashir al-Azma
+	}
+}
+
+# Baath's Party Coup
+event = {
+	id = 8014720
+	country = SYR
+
+	name = EVT_8014720_NAME
+	desc = EVT_8014720_DESC
+	picture = "nwo\baath_party_coup"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8014720_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 430213 } # Amin al-Hafiz
+		command = { type = headofgovernment which = 430214 } # Salah al-Din al-Bitar
+	}
+}
+

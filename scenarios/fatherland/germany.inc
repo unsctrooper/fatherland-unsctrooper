@@ -69,12 +69,8 @@
    
 		# Germany proper
 		126  145  127  131  142  147  141  137  174  171  176  146  148  154   
-         151  152  153 156 169 157 163 162 158 183 159 172 170 173 177 138 
-                              134 132 178 175 179 167 164 184        
-         182 155 161 185 165 166 168 133 
-         144 160 180 136 139 135 129 128 130 
-          181 225 224  221 149  
-         150 140
+         151  152  153 156 169 157 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184        
+         182 155 161 185 165 166 168 133 144 160 180 136 139 135 129 128 130 181 225 224  221 149 150 140
 		
 		#Other National Provinces
 		261 # Memelgebiet
@@ -113,8 +109,8 @@
 		377 382 383 # Military Administration of Greece
 		553 # Military Administration of Leningrad
 		98 97 106 96 # Military Administation of France (Zone réservée)
-		50 101 102 103 # Military Administation of France (Zone interdite)
-		69 68 67 57 40 41 37 38 39 45 42 43 44 46 53 # Military Administration of France (Atlantic Wall)
+		101 102 103 # Military Administation of France (Zone interdite)
+		69 68   37  39   # 45 43 44 46 53 50 67 57 38 40 41 42# Military Administration of France (Atlantic Wall)
 		336 # Banat region of Serbia 
 		217 218 220 # Jutland Peninsula (216 is South Jutland)
 		346 # Maribor
@@ -161,8 +157,8 @@
 		338 340 330 342 327 # Military Administration of Serbia 
 		377 382 383 # Military Administration of Greece
 		553 # Military Administration of Leningrad
-		50 101 102 103 106 96 97 98 # Military Administation of France (Zone interdite)
-		69 68 67 57 40 41 37 38 39 45 42 43 44 46 53 # Military Administration of France (Atlantic Wall)
+		101 102 103 106 96 97 98 # Military Administation of France (Zone interdite)
+		69 68   37  39  # 42 43 44 46 45 50 53 67 57 40 41 38# Military Administration of France (Atlantic Wall)
 		336 339 # Banat&Bor region of Serbia 
 		217 218 220 # Jutland Peninsula (216 is South Jutland)
 		346 # Maribor

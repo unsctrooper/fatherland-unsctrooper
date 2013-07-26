@@ -1,0 +1,126 @@
+event = {
+	id = 8012701
+	country = SAL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 345048 } # Oscar A. Osorio
+		command = { type = headofgovernment which = 345049 } # Oscar A. Osorio
+		command = { type = foreignminister which = 345050 } # Franco Amerigo Paz
+		command = { type = armamentminister which = 345051 } # Humberto Costa
+		command = { type = ministerofsecurity which = 345052 } # Manuel de Jes?s Cordova
+		command = { type = ministerofintelligence which = 345053 } # Reinaldo Galindo Pohl
+		command = { type = chiefofstaff which = 345060 } # Manuel de Jes?s Cordova
+		command = { type = chiefofarmy which = 345059 } # Manuel Jose Maria Lemus Lopez
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 345100 } # Jos? Asencio Men?ndez
+		command = { type = headofgovernment which = 345101 } # Jos? Asencio Men?ndez
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8012702
+	country = SAL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 345104 } # Manuel Jose Maria Lemus Lopez
+		command = { type = headofgovernment which = 345105 } # Manuel Jose Maria Lemus Lopez
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 345102 } # Rafael Carranza Anaya
+		command = { type = headofgovernment which = 345103 } # Rafael Carranza Anaya
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8012703
+	country = SAL
+
+	name = EVT_8012703_NAME
+	desc = EVT_8012703_DESC
+	picture = "nwo\empty"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_8012703_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 345106 } # Julio Adalberto Rivera Carballo
+		command = { type = headofgovernment which = 345107 } # Julio Adalberto Rivera Carballo
+	}
+}
+

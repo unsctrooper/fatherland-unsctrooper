@@ -1,0 +1,142 @@
+event = {
+	id = 8003001
+	country = CHL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 210013 } # Gabriel Gonzalez Videla
+		command = { type = headofgovernment which = 210021 } # Gabriel Gonzalez Videla
+		command = { type = foreignminister which = 210046 } # Fernando Brown Morales
+		command = { type = armamentminister which = 210068 } # Aurelio Celedon Palma
+		command = { type = ministerofsecurity which = 210072 } # Antonio J. Rios
+		command = { type = ministerofintelligence which = 210088 } # Dario Mujica Gamboa
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 210300 } # Eduardo Cruz-Coke Lassabe
+		command = { type = headofgovernment which = 210301 } # Eduardo Cruz-Coke Lassabe
+		command = { type = foreignminister which = 210037 } # Ra?l Juliet G?mez
+		command = { type = armamentminister which = 210061 } # Gustavo Ross Santa Maria
+		command = { type = ministerofsecurity which = 210078 } # Ernesto Barras Jarpa
+		command = { type = ministerofintelligence which = 210093 } # Dario Cellejas Rojas
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003002
+	country = CHL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 210014 } # Carlos Ibanez del Campo
+		command = { type = headofgovernment which = 210138 } # Jorge Alessandri Rodriguez
+		command = { type = foreignminister which = 210043 } # Luis Renard Valenzuela
+		command = { type = armamentminister which = 210061 } # Gustavo Ross Santa Maria
+		command = { type = ministerofsecurity which = 210077 } # Manuel Rivas Vicuna
+		command = { type = ministerofintelligence which = 210093 } # Dario Cellejas Rojas
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 210013 } # Gabriel Gonzalez Videla
+		command = { type = headofgovernment which = 210021 } # Gabriel Gonzalez Videla
+		command = { type = foreignminister which = 210037 } # Ra?l Juliet G?mez
+		command = { type = armamentminister which = 210054 } # Manuel C. Pereira
+		command = { type = ministerofsecurity which = 210083 } # Cristob?l Sa?nz Cerda
+		command = { type = ministerofintelligence which = 210088 } # Dario Mujica Gamboa
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003003
+	country = CHL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 210302 } # Jorge Alessandri Rodriguez
+		command = { type = headofgovernment which = 210138 } # Jorge Alessandri Rodriguez
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 210018 } # Salvador Allende
+		command = { type = headofgovernment which = 210029 } # Salvador Allende
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+

@@ -1,0 +1,88 @@
+event = {
+	id = 8010801
+	country = OMN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 400001 } # Said ibn Timur
+		command = { type = headofgovernment which = 400002 } # Said ibn Timur
+		command = { type = foreignminister which = 400012 } # Ibrahim ibn Timur
+		command = { type = armamentminister which = 400015 } # Ali ibn Timur
+		command = { type = ministerofsecurity which = 400017 } # Said ibn Timur
+		command = { type = ministerofintelligence which = 400018 } # Harold Beresford-Butler
+		command = { type = chiefofstaff which = 400021 } # Jamil ibn Timur
+		command = { type = chiefofarmy which = 400024 } # Zahir ibn Timur
+		command = { type = chiefofnavy which = 400025 } # Derek Leaf
+		command = { type = chiefofair which = 400028 } # Fawzi ibn Timur
+	}
+}
+
+event = {
+	id = 8010802
+	country = OMN
+
+	name = EVT_8010802_NAME #"Conflict with Imamate of Oman"
+	desc = EVT_8010802_DESC #"The autonomous Imam of Oman was once a leader of Ibadi religious sect, centered around the town of Nizwa. The conflict, settled temporarily by the Treaty of Seeb, flared up again in 1954. The sultan defeated the insurgents and eliminated the office of the imam."
+	picture = "nwo\oman"
+	style = 1
+
+	date = { day = 1 month = january year = 1954 }
+	offset = 300
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = EVT_8010802_A #"Fight with the Imam!"
+		ai_chance = 80
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	
+	action = {
+		name = EVT_8010802_B #"Let him rule"
+		ai_chance = 20
+		command = { type = dissent value = 10 }
+		command = { type = sleepevent which = 8010803 }
+	}
+
+}
+
+# Outcome of the conflict with the imam
+event = {
+	id = 8010803
+	country = OMN
+	one_action = yes
+
+	name = EVT_8010803_NAME #"Conflict with Imamate of Oman"
+	desc = EVT_8010803_DESC #"The autonomous Imam of Oman was once a leader of Ibadi religious sect, centered around the town of Nizwa. The conflict, settled temporarily by the Treaty of Seeb, flared up again in 1954. The sultan defeated the insurgents and eliminated the office of the imam."
+	picture = "nwo\oman"
+	style = 1
+	
+	trigger = { event = 8010802 }
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 300
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = EVT_8010803_A # We prevailed
+		ai_chance = 80
+		command = { type = dissent value = -10 }
+	}
+	
+	action = {
+		name = EVT_8010803_B # The imam was tougher than we thought
+		ai_chance = 20
+		command = { type = dissent value = 25 }
+	}
+
+}

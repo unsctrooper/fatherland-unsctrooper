@@ -11,6 +11,6 @@ name = CREDITS1
 desc = CREDITS2
 action = {
 name = ACTION_NAME_HURRAH
-	command = { }
+	command = { type = setflag which = cold_war }
 	}
 }

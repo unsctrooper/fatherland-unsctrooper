@@ -1,0 +1,209 @@
+event = {
+	id = 8013401
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 290019 } # Pridi Phanomyong
+		command = { type = foreignminister which = 290031 } # Thawon Thamrongnawasawat
+		command = { type = armamentminister which = 290048 } # Phao Peeralert
+		command = { type = ministerofsecurity which = 290059 } # Bung Suphachahlasai
+		command = { type = ministerofintelligence which = 290064 } # Phraya Chitnasongkhla
+		command = { type = chiefofstaff which = 290071 } # Thawon Thamrongnawasawat
+		command = { type = chiefofarmy which = 290076 } # Tianliang Huntrakool
+		command = { type = chiefofnavy which = 290081 } # Thawon Thamrongnawasawat
+		command = { type = chiefofair which = 290086 } # Luang Kajsongkram
+	}
+}
+
+# Death of Rama VIII
+event = {
+	id = 8013402
+	country = SIA
+
+	name = EVT_8013402_NAME
+	desc = EVT_8013402_DESC
+	picture = "nwo\rama_viii"
+	style = 1
+
+	trigger = {
+		OR = {
+			headofstate = 290001 
+			headofstate = 290012
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = EVT_8013402_A
+		ai_chance = 100
+		command = { type = sleepminister which = 290001 } # Rama VIII
+		command = { type = sleepminister which = 290012 } # Rama VIII
+		command = { type = sleepminister which = 290087 } # Rama VIII
+		command = { type = headofstate which = 290013 } # Rama IX
+	}
+}
+
+event = {
+	id = 8013403
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290020 } # Thawon Thamrongnawasawat
+	}
+}
+
+event = {
+	id = 8013404
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290200 } # Plaek Pibulsongkram
+	}
+}
+
+# Sarit's coup
+event = {
+	id = 8013405
+	country = SIA
+
+	name = EVT_8013405_NAME
+	desc = EVT_8013405_DESC
+	picture = "nwo\sarit_thanarat"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290201 } # Pote Sarasin
+	}
+}
+
+event = {
+	id = 8013406
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290202 } # Thanom Kittikachorn
+	}
+}
+
+event = {
+	id = 8013407
+	country = SIA
+
+	name = EVT_8013407_NAME
+	desc = EVT_8013407_DESC
+	picture = "nwo\sarit_thanarat"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290203 } # Sarit Thanarat
+	}
+}
+

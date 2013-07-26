@@ -1,0 +1,394 @@
+event = {
+	id = 8011401
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150020 } # Ibrahim Hakimi al Mulk
+	}
+}
+
+event = {
+	id = 8011402
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150017 } # Ahmeed Qawan as Saltana
+	}
+}
+
+event = {
+	id = 8011403
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150095 } # Abdol Hossein Hajir
+	}
+}
+
+event = {
+	id = 8011404
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150096 } # Mohammed Said Maraghei
+	}
+}
+
+event = {
+	id = 8011405
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150098 } # Ali Razmara
+	}
+}
+
+### Mossadegh sworn into office
+event = {
+	id = 8011406
+	country = PER
+
+	name = EVT_8011406_NAME
+	desc = EVT_8011406_DESC
+	picture = "nwo\mohammed_mossadegh"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = EVT_8011406_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150100 } # Mohammed Mossadeq
+		command = { type = foreignminister which = 150102 } # Abdol Hossein Hajir
+		command = { type = armamentminister which = 150048 } # Anushirvan Sepahbody
+		command = { type = ministerofsecurity which = 150058 } # Hossein Arfazni
+		command = { type = ministerofintelligence which = 150068 } # Mohammed Mossadeq
+		command = { type = chiefofstaff which = 150074 } # Hossein Afkhami
+		command = { type = chiefofarmy which = 150105 } # Fazlollah Zahedi
+		command = { type = chiefofnavy which = 150084 } # Mohammed Moini
+		command = { type = chiefofair which = 150104 } # Ali Razmara
+	}
+}
+
+### Mossadegh ousted, the Shah returns
+event = {
+	id = 8011407
+	country = PER
+
+	name = EVT_8011407_NAME
+	desc = EVT_8011407_DESC
+	picture = "nwo\operation_ajax"
+	style = 1
+
+	trigger = {
+		event = 8501020 # Operation Ajax
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = EVT_8011407_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150101 } # Fazlollah Zahedi
+		command = { type = foreignminister which = 150031 } # Anushirvan Sepahbody
+		command = { type = armamentminister which = 150047 } # Ja'fer Pishevari
+		command = { type = ministerofsecurity which = 150052 } # Hussein Khan Ala
+		command = { type = ministerofintelligence which = 150065 } # Abdol Hossein Sardarie
+		command = { type = chiefofstaff which = 150103 } # Ali Razmara
+		command = { type = chiefofarmy which = 150105 } # Fazlollah Zahedi
+		command = { type = chiefofnavy which = 150083 } # Ahmad Khan Nakhjaavan
+		command = { type = chiefofair which = 150104 } # Ali Razmara
+	}
+}
+
+event = {
+	id = 8011408
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150099 } # Hussein Khan Ala
+	}
+}
+
+event = {
+	id = 8011409
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150200 } # Manouchehr Eghbal
+	}
+}
+
+event = {
+	id = 8011410
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150201 } # Jafar Sharif-Emami 
+	}
+}
+
+event = {
+	id = 8011411
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150011 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150202 } # Ali Amini
+	}
+}
+
+event = {
+	id = 8011412
+	country = PER
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 150011 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150203 } # Asadollah Alam
+	}
+}
+
+event = {
+	id = 8011413
+	country = PER
+	
+	name = EVT_8011413_NAME #"White Revolution"
+	desc = EVT_8011413_DESC
+	picture = "nwo\mohammed_reza_pahlavi"
+	style = 1
+
+	date = { day = 1 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = 2 }
+	}
+
+}
+
+

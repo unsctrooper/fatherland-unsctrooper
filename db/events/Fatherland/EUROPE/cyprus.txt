@@ -1,0 +1,45 @@
+event = {
+	id = 8004101
+	country = CYP
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 620011 } # H.H. Makarios III
+		command = { type = headofgovernment which = 620100 } # H.H. Makarios III
+		command = { type = foreignminister which = 620015 } # Harilaos Agapias
+		command = { type = armamentminister which = 620017 } # Traianos Basiliakos
+		command = { type = ministerofintelligence which = 620021 } # Eleferides Clerides
+		command = { type = chiefofstaff which = 620023 } # Giorgios Siradikis
+		command = { type = chiefofarmy which = 620025 } # Dighenis Grivas
+		command = { type = chiefofnavy which = 620027 } # Polo Miltoniades
+		command = { type = chiefofair which = 620029 } # Georgios Vayenas
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 620101 } # John Klerides
+		command = { type = headofgovernment which = 620102 } # John Klerides
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
