@@ -5,6 +5,7 @@
 # Bug fixing:
 - Fixed South Africa referendum chain
 - Fixed Vladivostok Conference
+- Fixed Transylvania War localization(90000010C)
 
 # Events/Decisions:
 - Review of South Africa events
@@ -18,6 +19,7 @@
 - Review of italian events
 - New RK Kaukasus events
 - Added elections events
+- New Banat Economic Exploitation events
 
 # Scenario files (INC):
 - Review of IC Germany/USSR 
@@ -29,6 +31,8 @@
 - Review of Pakistan
 - Review of India
 - Review of UK cabinet
+- Review of Indochina Minister&Leader pool
+- Review of Vietnam Minister&Leader pool
 
 # AI
 - Improved AI for France, Free France, Soviet Union, Germany & United Kingdom
@@ -36,6 +40,7 @@
 #Other
 - Remove duplicate files
 - Implementing of Cold War Tech Tree Expansion
+- Add 2 ministers for Goralenvolk and Galizia
 
 ####################################
 # Changelog for Beta version 1.0

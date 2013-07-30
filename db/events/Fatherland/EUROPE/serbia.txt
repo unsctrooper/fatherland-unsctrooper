@@ -393,3 +393,163 @@ event = {
 		command = { type = relation which = ROM value = -10 } # Bor is not very important
 	}
 }		
+event = { 
+	id = 911
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+		flag = Banat
+		event = { id = 901 days = 90 } 
+		owned = { province = 336 }
+		control = { province = 336 }
+	}	
+		
+	name = "911NAME"
+	desc = "911DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "911A" 
+		ai_chance = 50
+		command = { type = free_ic value = -2 }
+		command = { type = setflag which = BanatEx }
+	}
+	action_b = {
+		name = "911B"
+		ai_chance = 50
+		command = { type = money value = 250 }
+	}
+	}
+event = { 
+	id = 912
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+		flag = BanatEX
+		AND = {
+		event = { id = 911 days = 730 } 
+		owned = { province = 336 }
+		control = { province = 336 }
+		}
+	}	
+		
+	name = "912NAME"
+	desc = "912DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_ic value = 2 }
+	command = { type = add_prov_resource which = 336 value = 50 where = energy }
+	command = { type = construct which = ic where = 336 value = 1 }
+		}
+	}
+event = { 
+	id = 913
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+			OR = { 
+		event = { id = 904 days = 90 } 
+		event = { id = 905 days = 90 } 
+		}
+		}
+		
+	name = "911NAME"
+	desc = "913DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "911A" 
+		ai_chance = 50
+		command = { type = free_ic value = -2 }
+		command = { type = setflag which = BanatEx2 }
+	}
+	action_b = {
+		name = "911B"
+		ai_chance = 50
+		command = { type = money value = 250 }
+	}
+	}
+event = { 
+	id = 914
+	random = no
+	country = ROM
+	save_date = yes
+
+	trigger = {
+		flag = BanatEX2
+		event = { id = 913 days = 730 }
+		owned = { province = 336 }
+		control = { province = 336 } 
+	}	
+		
+	name = "912NAME"
+	desc = "914DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_ic value = 2 }
+	command = { type = add_prov_resource which = 336 value = 50 where = energy }
+	command = { type = construct which = ic where = 336 value = 1 }
+	command = { type = trade which = GER where = ROM energy = 40 value = 1 } 
+		}
+	}	
+
+event = { 
+	id = 915
+	random = no
+	country = HUN
+	save_date = yes
+
+	trigger = {
+		flag = BanatEX2
+		event = { id = 913 days = 730 } 
+		owned = { province = 336 }
+		control = { province = 336 }
+	}	
+		
+	name = "912NAME"
+	desc = "914DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_ic value = 2 }
+	command = { type = add_prov_resource which = 336 value = 50 where = energy }
+	command = { type = construct which = ic where = 336 value = 1 }
+	command = { type = trade which = GER where = HUN energy = 40 value = 1 } 
+		}
+	}	

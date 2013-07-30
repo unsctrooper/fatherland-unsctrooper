@@ -464,7 +464,7 @@ event = {
 	command = { type = sleepevent which = 90000008 }
 	}
 	action_c = {
-	name = 90000009C
+	name = 90000010C
 	ai_chance = 50
 	command = { type = leave_alliance }
 	command = { type = 	non_aggression which = GER where = HUN }
