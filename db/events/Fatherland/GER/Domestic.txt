@@ -1,0 +1,105 @@
+event = {
+id = 2000
+country = GER
+random = no
+style = 2
+picture = "nwo/wartime"
+
+date = { day = 5 month = january year = 1948 }
+
+name = "2000NAME"
+desc = "2000DESC"
+
+action_a = {
+name = "2000A"
+command = { type = trigger which = 2001 }
+}
+}
+
+event = {
+id = 2001
+country = GER
+random = no
+style = 2
+picture = "Hitler_Turkey"
+
+name = "2001NAME"
+desc = "2001DESC"
+
+action_a = {
+name = "2000A"
+command = { type = free_ic value = -25 }
+command = { type = trigger which = 2002 }
+}
+}
+
+event = {
+id = 2002
+country = GER
+random = no
+style = 2
+picture = "nwo/rosenberg_plan"
+
+name = "2006NAME"
+desc = "2006DESC"
+
+action_a = {
+name = "2000A"
+command = { type = free_ic value = -100 }
+command = { type = research_mod value = -25 }
+command = { type = tc_mod value = -50 }
+command = { type = trigger which = 2003 }
+}
+}
+
+
+event = {
+id = 2003
+country = GER
+random = no
+style = 2
+picture = "Petain"
+
+name = "2003NAME"
+desc = "2003DESC"
+
+action_a = {
+name = "2000A"
+command = { type = peacetime_ic_mod value = 10 }
+command = { type = free_ic value = -25 }
+command = { type = trigger which = 2004 }
+}
+}
+
+event = {
+id = 2004
+country = GER
+random = no
+style = 2
+picture = "Mussolini"
+
+name = "2004NAME"
+desc = "2004DESC"
+
+action_a = {
+name = "2000A"
+command = { type = free_ic value = -25 }
+command = { type = trigger which = 2005 }
+}
+}
+
+event = {
+id = 2005
+country = GER
+random = no
+style = 2
+picture = "Narvik"
+
+name = "2005NAME"
+desc = "2005DESC"
+
+action_a = {
+name = "2000A"
+command = { type = free_ic value = -25 }
+}
+}
