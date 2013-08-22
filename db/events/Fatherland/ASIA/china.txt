@@ -357,6 +357,7 @@ event = {
 	}
 
 	trigger = {
+		random = 25
 		OR = {
 			AND = {
 				exists = CSX
@@ -394,6 +395,64 @@ event = {
 	}	
 }
 
+event = { 
+	id = 8200111
+	random = no
+	country = CHI
+	persistent = yes
+
+	name = "EVT_8200111_NAME" 
+	desc = "EVT_8200111_DESC"
+	picture = "united_china"
+	style = 1
+
+	decision = {
+		OR = {
+			exists = CSX
+			exists = CXB
+			exists = CGX
+			exists = CYN
+		}
+	}
+
+	trigger = {
+		random = 25
+		OR = {
+			AND = {
+				exists = CSX
+				NOT = { war = { country = CSX } }
+				ai = CSX
+			}
+			AND = {
+				exists = CXB
+				NOT = { war = { country = CXB} }
+				ai = CXB
+			}
+			AND = {
+				exists = CGX
+				NOT = { war = { country = CGX} }
+				ai = CGX
+			}
+			AND = {
+				exists = CYN
+				NOT = { war = { country = CYN} }
+				ai = CYN
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "EVT_8200111_A" #"Rejoice"
+		command = { trigger = { exists = CSX NOT = { war = { country = CSX } } ai = CSX } type = inherit which = CSX }
+		command = { trigger = { exists = CXB NOT = { war = { country = CXB } } ai = CXB } type = inherit which = CXB }
+		command = { trigger = { exists = CGX NOT = { war = { country = CGX } } ai = CSX } type = inherit which = CGX }
+		command = { trigger = { exists = CYN NOT = { war = { country = CYN } } ai = CSX } type = inherit which = CYN }
+	}	
+}
 ########################################
 ### DISSENT MANAGEMENT
 ########################################

@@ -8,7 +8,7 @@ max_front_ratio = 1.50
 max_garrison_prop = 0.40
 min_garrison_prop = 0.30
 neutrality = 0
-war = 10
+war = 0
 reinforcement = 0.20 
 upgrading = 0.20
 strat_redeploy_threshold = 35
@@ -20,10 +20,6 @@ no_exp_forces_to = { JAP SIA MAN }
 # Diplomacy
 ###################################
 combat = { 
-	ENG = 100
-	U01 = 100
-	ETH = 100
-	SOV = 80
 }
 
 claim_acceptance = -100
