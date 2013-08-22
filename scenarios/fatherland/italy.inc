@@ -1,5 +1,6 @@
     ##############################
     # Country definition for ITA #
+	# Review by Pako #
     ##############################
      
     #####################
@@ -7,125 +8,87 @@
     #####################
      
     country =
-    {  tag                    = ITA
- 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }
-       manpower               = 500
-       # Resource Reserves
-       energy                 = 3600
-       metal                  = 1800
-       rare_materials         = 1000
-       oil                    = 3000
-       supplies               = 2000
-       money                  = 100
-       capital                = 419
-       transports             = 130
-       escorts                = 35
+    {	tag = ITA
+		ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }
+		manpower               = 500
+		energy                 = 3600
+		metal                  = 1800
+		rare_materials         = 1000
+		oil                    = 3000
+		supplies               = 2000
+		money                  = 100
+		capital                = 419
+		transports             = 130
+		escorts                = 35
  
-  diplomacy =
-  { relation = { tag = AFG value = 50 }
-    relation = { tag = ARG value = 30 }
-    relation = { tag = AST value = -200 }
-    relation = { tag = BEL value = -200 }
-    relation = { tag = BHU value = -200 }
-    relation = { tag = BUL value = 150 }
-    relation = { tag = CAN value = -200 }
-    relation = { tag = CHI value = 25 }
-    relation = { tag = CHL value = 30 }
-    relation =
-    { tag        = CRO
-      value      = 200
-      access     = yes
-      guaranteed = { day = 1 month = may year = 1941 }
-    }
-    relation = { tag = SLO value = 120 }
-    relation = { tag = ENG value = -200 }
-    relation = { tag = ETH value = -200 }
-    relation = { tag = FIN value = 100 }
-    relation = { tag = U01 value = -200 }
-    relation =
-    { tag        = GER
-      value      = 200
-      guaranteed = { day = 27 month = september year = 1940 }
-    }
-    relation = { tag = HOL value = -200 }
-    relation =
-    { tag        = HUN
-      value      = 200
-      guaranteed = { day = 20 month = november year = 1940 }
-    }
-    relation = { tag = IRQ value = -200 }
-    relation =
-    { tag        = JAP
-      value      = 125
-      guaranteed = { day = 27 month = september year = 1940 }
-    }
-    relation =
-    { tag        = MTN
-      value      = 200
-      access     = yes
-      guaranteed = { day = 1 month = may year = 1941 }
-    }
-    relation = { tag = NEP value = -200 }
-    relation = { tag = NIC value = -200 }
-    relation = { tag = NZL value = -200 }
-    relation = { tag = OMN value = -200 }
-    relation = { tag = POR value = 65 }
-    relation =
-    { tag        = ROM
-      value      = 150
-      guaranteed = { day = 20 month = november year = 1940 }
-    }
-    relation = { tag = SAF value = -200 }
-    relation = { tag = SAU value = -25 }
-    relation = { tag = SCH value = -25 }
-    relation =
-    { tag        = SPA
-      value      = 50
-      guaranteed = { day = 18 month = november year = 1940 }
-    }
-    relation = { tag = TUR value = 1 }
-    relation = { tag = FRA value = 50 }
-    relation = { tag = YEM value = -200 }
-  }
-       SpyInfo                = {  country = "ITA" NumberOfSpies = 9  }
-       # Somaliland
-         nationalprovinces      = {  430 431 425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434 350 343   
-            403 406 402 413 417 435 432 405 404 390 94 399 429 378 379 87 394 395 418 426 427 428 433 91 }
-            #367 90 371 429 378 379 #added
-            #389 335 361 329 359 334 362 360 87 2509#removed
-       
-       ownedprovinces         = { 430  431  425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434 378 
-                                  379     403 406 394 395 418 426 427 428 433   
-	                          402 413 417 435 432 405 404  399
-                                         350 343       
- 
-#750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 #Libya 
-359 362 361 360 334 329 #Albania 
-349 #Ljubljana
-367 368 369 371 372 373 374 375 376 380 381 # Greece 
-
-#90  86  94 93 92 91	87 # Occupation of France			
-		}
-       controlledprovinces    = {  430  431  425  422  424  421  420  416  423  415  414  419  410  412  411  393  408  396  398  407  401  400  434  378 
-                                  379                
-                                    
-             403 406  394 395 418 426 427 428 433 402 413 417 435 432 405 404  399
-                    350 343           
-			 
-#750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 #Libya    
-359 362 361 360 334 329 #Albania  
-349 #Ljubljana
-367 368 369 371 372 373 374 375 376 380 381 # Greece                       
-						 
-#90  86  94 93 92 91	87 # Occupation of France						  
- }
-		claimedprovinces =  {   740 741 742 744 745 746 747 748 749 #Tunisia (owned by Vichy)
-                                750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 #Libya
-                                359 362 361 360 334 329 #Albania
-								349 #Ljubljana
-                                367 368 369 371 372 373 374 375 376 380 381 # Greece
-								90  86  94 93 92 91	87 # Occupation of France
-							} 
+		diplomacy = { 
+		#Neutral
+			relation = { tag = AFG value = 0 }
+			relation = { tag = ARG value = 30 }
+			relation = { tag = CHI value = 25 }
+			relation = { tag = CHL value = 30 }
+			relation = { tag = TUR value = 50 }
+			relation = { tag = POR value = 65 }
+			relation = { tag = SPA value = 85 guaranteed = { day = 18 month = november year = 1940 } }
+			relation = { tag = SAU value = -25 }
+			relation = { tag = SCH value = -25 }
+			relation = { tag = FRA value = 50 }	
+		#Allies
+			relation = { tag = AST value = -200 }
+			relation = { tag = BEL value = -200 }
+			relation = { tag = BHU value = -200 }
+			relation = { tag = CAN value = -200 }
+			relation = { tag = ENG value = -200 }
+			relation = { tag = ETH value = -200 }
+			relation = { tag = U01 value = -200 }
+			relation = { tag = HOL value = -200 }
+			relation = { tag = IRQ value = -150 }	
+			relation = { tag = NEP value = -200 }
+			relation = { tag = NIC value = -200 }
+			relation = { tag = NZL value = -200 }
+			relation = { tag = OMN value = -100 }	
+			relation = { tag = SAF value = -200 }
+			relation = { tag = YEM value = -100 }
+		#Axis
+			relation = { tag = GER value = 180 guaranteed = { day = 27 month = september year = 1940 } }
+			relation = { tag = BUL value = 150 }
+			relation = { tag = CRO value = 180 access = yes guaranteed = { day = 1 month = may year = 1941 } }
+			relation = { tag = SLO value = 120 }
+			relation = { tag = FIN value = 100 }
+			relation = { tag = HUN value = 175 guaranteed = { day = 20 month = november year = 1940 } }
+			relation = { tag = JAP value = 125 guaranteed = { day = 27 month = september year = 1940 } }
+			relation = { tag = MTN value = 200 access = yes guaranteed = { day = 1 month = may year = 1941 } }
+			relation = { tag = ROM value = 150 guaranteed = { day = 20 month = november year = 1940 } }
+	}
+  
+    nationalprovinces 	= { 430 431 425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434 350 343   
+							403 406 402 413 417 435 432 405 404 390 94 399 429 378 379 87 394 395 418 426 427 428 433 91 
+						}    
+    ownedprovinces 		= { 430 431 425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434 378 
+                            379 403 406 394 395 418 426 427 428 433 402 413 417 435 432 405 404	399 350 343       
+							359 362 361 360 334 329 #Albania 
+							349 #Ljubljana
+							367 368 369 371 372 373 374 375 376 380 381 # Greece 		
+						}
+    controlledprovinces = { 430 431  425  422  424  421  420  416  423  415  414  419  410  412  411  393  408  396  398  407  401  400  434  378 379                
+                            403 406  394 395 418 426 427 428 433 402 413 417 435 432 405 404  399 350 343              
+							359 362 361 360 334 329 #Albania  
+							349 #Ljubljana
+							367 368 369 371 372 373 374 375 376 380 381 # Greece                       										  
+						}
+	claimedprovinces =  {   740 741 742 744 745 746 747 748 749 #Tunisia (owned by Vichy)
+                            750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 #Libya
+                            359 362 361 360 334 329 #Albania
+							349 #Ljubljana
+                            367 368 369 371 372 373 374 375 376 380 381 # Greece
+							90  86  94 93 92 91	87 # France
+							818 819 820 821 822 823 824 825 826 827 828 829 830 831 #Ethiopia
+							815 816 817 #Eritrea
+							832 834 835 836 837 838 #Somalia
+							833 #Djibouti
+						} 
+						
+	SpyInfo = { country = "ITA" NumberOfSpies = 9  }
 
 	# ITA 1944.12 techs
 	# ######################
@@ -151,9 +114,8 @@
 	5600 5610 5620 5630 5640
 	# Exp. Rocket
 	5560
-	
 	# Infantry Division  
-	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110
+	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130
 	# Mountain Division
 	1160 1170 1180 1190 1200 1210 1220 1230 1240 1250 1260
 	# Cavalry
@@ -168,7 +130,6 @@
 	1830 1840 1850 1860 1870
 	# Supply 
 	1910 1920 1930 1940 1950 1960 1970 1980 1990 199130
-
 	# Tanks 
 	7600 7610 2620 2010 2630 2640 2646 2650 2030 2040 2050 2070
 	# Armored Car 
@@ -181,7 +142,6 @@
 	2800 2450 21180 21190 21200 2460 2470
 	# Anti-Air Artillery
 	2810 2820 2510 2520
-
 	# Hospital System 
 	14000 14010 14020 14030
 	# Great War Land Doctrines (entente)
@@ -190,7 +150,6 @@
 	6560 6030 6120 6110 6130
 	# Armored Division Formation
 	6900
-
 	# Light Cruiser 
 	3110 3120 3130 3140 3150 3160 12010
 	# Battleship 
@@ -211,7 +170,6 @@
 	3720 3730 3736 3740 3750 3900
 	# Troopships
 	3810 3820
-
 	# Naval Doctrines
 	# Engagement Theories
 	8010 8020 8030 8040 8050 8060 8070 8080
@@ -229,7 +187,6 @@
 	8100 8110 8120 8150 8160 8170 8200 8210
 	# Carrier
 	81650
-
 	# Interceptor Fighter  
 	4500 4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 
 	# Multirole fighter
@@ -250,7 +207,6 @@
 	4900 4910 4920
 	# Air Transport 
 	4290 4250 4260
-
 	# Air Doctrines
 	27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470 9010 
 	9040 9050 9060 9070 9090 9100 9110 9120 9130 9140 9190 9200 9210 9220 9230 9240
@@ -280,9 +236,9 @@
       
        dormant_ministers      = {  25016 25195 25008 }
       
-	     # ######################
+	   # ######################
        # ITA 1948 LAND OOB
-
+	   
        # SUPREME COMMAND
        landunit =
        {  id       = {  type = 23500 id = 1  }
@@ -572,7 +528,7 @@
          { id       = {  type = 23500 id = 6954  }
            name     = "183a Divisione 'Ciclone'"
            type     = paratrooper
-           model    = 11
+           model    = 2
            strength = 50
           }
          division =
@@ -739,7 +695,7 @@
          { id       = {  type = 23500 id = 6961  }
            name     = "184a Divisione 'Nembo'"
            type     = paratrooper
-           model    = 11
+           model    = 2
            strength = 60
           }
         }

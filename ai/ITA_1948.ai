@@ -1,59 +1,69 @@
-# Italy 1936 AI File by Lothos
+##############################
+# AI definition for ITA #
+# Review by Pako #
+##############################
 
 switch = no # [yes/no]
-max_front_ratio = 1.0 
+max_front_ratio = 1.50 
 max_garrison_prop = 0.40
 min_garrison_prop = 0.30
-neutrality = 150.000 
-war = 0
-reinforcement = 0.000 
+neutrality = 0
+war = 10
+reinforcement = 0.20 
 upgrading = 0.20
-strat_redeploy_threshold = 50
+strat_redeploy_threshold = 35
 max_redeploying = 0.05
-exp_force_ratio = 0.0
-exp_force_ratios = { } 
-no_exp_forces_to = { GER ROM HUN BUL FIN JAP SIA MAN FRA }
+exp_force_ratio = 0.50
+no_exp_forces_to = { JAP SIA MAN }
 
 ###################################
 # Diplomacy
 ###################################
-combat = { }
+combat = { 
+	ENG = 100
+	U01 = 100
+	ETH = 100
+	SOV = 80
+}
 
-claim_acceptance = -69
+claim_acceptance = -100
 
-demand_claims = { }
-liberate = { SCH SPA U66 }
-resistance = { }
+demand_claims = { FRA U01 ENG GRE }
+liberate = { SCH SPA POR CRO SER HUN ROM TUR FRA }
+resistance = { 
+	ENG = 10
+	U01 = 10
+	SOV = 10
+	FRA = 6
+}
 befriend = {
-	ROM = 50
+	GER = 100
+	ROM = 60
 	SLO = 50
-	BUL = 40 
+	BUL = 80 
 	HUN = 80 
-	SPA = 50
-	YUG = 50
-	GER = 100 
+	SPA = 60
+	CRO = 60
 	SWE = 10
 	FIN = 20
 	JAP = 20
-	POR = 10
+	POR = 20
 	TUR = 30
 }
 protect = {
-	ROM = 80
-	BUL = 80 
-	HUN = 80 
-	SWE = 80
-	SCH = 80
-	AUS = 80
-	POL = 80
-	SLO = 80
-	NOR = 80
-	GER = 80
-	TUR = 80
+	CRO = 80 
+	MTN = 100
+	U66 = 100
+	TUR = 40
 }
-target = { }  
+target = { 
+	429 = 100 #Malta
+	750 = 90 #Tripoli
+	760 = 90 #Bengazi
+	787 = 60 #Cairo
+}  
 trade = {
-	cancel_deal_threshold = 2
+	cancel_deal_threshold = 3
 
 	energy 		= -1
 	rare_materials 	= -1
@@ -63,14 +73,23 @@ trade = {
 	money 		= -1
 
 	favored = {
-		ROM = 150
 		GER = 100
+		ROM = 100
 		HUN = 80
-		YUG = 100
+		CRO = 100
 		SPA = 80
 		BUL = 50
 		SWE = 100
+		FIN = 50
+		FRA = 20
+		SER = 30
+		POR = 10
+		TUR = 40
+		JAP = 50
+		SLO = 20
 	}
+	
+	embargo = { ENG USA U01 AST NZL CAN BEL SOV MON }
 }
 tech_sharing = {
 	favored = {
@@ -79,14 +98,14 @@ tech_sharing = {
 		BUL = 100
 		HUN = 100
 		SPA = 120
-		YUG = 50
+		CRO = 50
 		GER = 150
 		SWE = 50
 		FIN = 120
 		JAP = 150
-		TUR = 100
+		TUR = 80
 	}
-	embargo = { }
+	embargo = { ENG USA U01 AST NZL CAN BEL SOV MON }
 	not = { }
 	prioritized = { }
 }
@@ -177,7 +196,7 @@ spyprefs =
 		found_partisans		= 1
 		massmedia 			= 0
 		disrupt_techteam 	= 5
-		country 			= SPR
+		country 			= U01
 	}
 }
 ###################################
@@ -187,9 +206,9 @@ spyprefs =
 construction = { 
 	max_factor = 0.50 
 
-
 	AA_batteries = no
 	max_AA_level = 4
+	
 	AA_provs = { 
 		419 # Roma
 		411 # Bologna
@@ -202,11 +221,20 @@ construction = {
 
 	coastal_fort = yes
 	max_coastal_level = 3
-	coastal_fort_provs = { } 
+	coastal_fort_provs = { 
+		430 #Palermo
+		422 #Taranto
+		396 #Genoa
+	} 
 
-	radar_station = no 
+	radar_station = not_atwar 
 	max_radar = 5 
-	radar_provs = { } 
+	radar_provs = { 
+		398 # Turin
+		419 # Roma
+		431 # Messina
+		422 #Taranto
+	} 
 
 	air_base = no
 	max_air_base = 2
@@ -221,8 +249,8 @@ construction = {
 	fort_borders = { } 
 
 	ic_at_war = no 
-	force_ic_until = 1935
-	ic_end_year = 1940
+	force_ic_until = 1949
+	ic_end_year = 1960
 	IC_provs = {
 		419 # Roma
 		411 # Bologna
@@ -238,9 +266,8 @@ military = {
 	max_batch_peace 	= 680 
 	max_batch_war 		= 320 
 	max_batch_home_front = 180
-        extra_convoys_war = 0.0500 
-        extra_convoys_peace = 0.0500 
-
+	extra_convoys_war = 0.0500 
+	extra_convoys_peace = 0.0500 
 
 	#### Divisions etc...
 	infantry 		= 15

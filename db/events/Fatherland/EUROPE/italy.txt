@@ -1,5 +1,13 @@
+#####################################
+# Italy events
+# Review Pako
 #90000600-90000699
-# 90000600 # ITA # Grand Council of Fascism
+#####################################
+# NUOVI
+# 90000680 # ITA # Italian situation
+# VECCHI
+# 90000600 # ITA # Extraordinary Grand Council of Fascism
+
 # 90000601 # ITA # Mussolini enters the Palazzo Venezia
 # 90000602 # ITA # Il Duce forced to resign
 # 90000603 # ITA # Abolish the monarchy?
@@ -58,73 +66,78 @@
 # 90000656 # GER # USA takes over Spain
 # 90000657 # U01 # Take over Spanish colonies?
 # 90000658 # SPA # Free France takes over our colonies!
-############################################################
-#Grand Council of Fascism
+
 ###########################################################
-
-
+#Extraordinary Grand Council of Fascism
+###########################################################
 event = {
-	id = 90000600 # Grand Council of Fascism
+	id = 90000600 #Extraordinary Grand Council of Fascism
 	random = no
 	country = ITA	
 	
-	decision = {						
-			NOT = {
-			ispuppet = ITA	
-			war = { country = SOV country = ITA }
-			atwar = yes
-			}		
-	}
 	decision_trigger = { 
-	year = 1948	
+		year = 1948	
+	}
+	
+	decision = {						
+		NOT = {
+			ispuppet = ITA	
+			atwar = yes
+		}		
 	}
 	
 	name = EVT_90000600_NAME
-	desc = EVT_90000600_DESC
+	desc = "Due to the strong social tensions in the country for the first time since the end of World War 2 the Grand Council of Fascism organized a national conference to discuss Italy's social, economic, political and foreign policy. The Grand Council begin."
 	style = 2
 	picture = "Mussolini"	
 	decision_picture = "decision_congress"
 	
-	date = { day = 15 month = july year = 1948 }
+	date = { day = 15 month = june year = 1948 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = ACTION_NAME_GREAT
-	command = { }							
+		name = ACTION_NAME_GREAT
+		command = { }							
 	}
 }
+###########################################################
+#First point of congress : the trust in Benito Mussolini
+###########################################################
 event = {
-	id = 90000601 # Mussolini enters the Palazzo Venezia
+	id = 90000601 #First point of congress : the trust in Benito Mussolini
 	random = no
 	country = ITA	
 	
 	trigger = {
-	event = 90000600
+		event = 90000600
 	}
 	
-	name = EVT_90000601_NAME
-	desc = EVT_90000601_DESC
+	name = "First point of congress : the trust in Benito Mussolini"
+	desc = "First point of congress : the trust in Benito Mussolini as DUCE. It should be a formality, but the outcome of the war and the last internal dissent on the country show some dissent on the Council"
 	style = 2
 	picture = "Mussolini"		
 	
-	date = { day = 1 month = july year = 1948 }
+	date = { day = 15 month = june year = 1948 }
 	offset = 5 
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = EVT_90000601_A # Welcome il Duce we love you!
-	ai_chance = 60
-	command = { type = sleepevent which = 90000602 }
-	command = { type = setflag which = Council }
+		name = "We trust again in Benito Mussolini, he's IL DUCE !"
+		ai_chance = 60
+		command = { type = sleepevent which = 90000602 }
+		command = { type = setflag which = Council }
 	}
 	action_b = {
-	name = EVT_90000601_B # The Grand Council no longer trusts Benito Mussolini!
-	ai_chance = 40
-	command = { type = dissent value = 5 }
-	command = { type = trigger which = 90000602 }
+		name = "The Grand Council no longer trust in Benito Mussolini !" # Il Duce forced to resign
+		ai_chance = 40
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 90000602 }
 	}
 }
+###########################################################
+#Il Duce is forced to resign and is arrested by the militia!
+###########################################################
 event = {
 	id = 90000602 # Il Duce forced to resign
 	random = no
@@ -134,49 +147,52 @@ event = {
 		event = 90000601
 	}
 	
-	name = EVT_90000602_NAME
-	desc = EVT_90000602_DESC
+	name = "Il Duce is forced to resign and is arrested by the militia!"
+	desc = "Most of the Grand Council of Fascism has accepted that il Duce is no longer fit to govern and put under arrest, now is the time to choose quickly a new command-in-Chief"
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = july year = 1948 }
-	offset = 5 # 30
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = EVT_90000602_A # Radical Fascists take over!
-	ai_chance = 50
-	command = { type = setflag which = Council }
-	command = { type = setflag which = RadicalItaly }
-	command = { type = sleepevent which = 90000609 }
-	command = { type = domestic which = political_left value = -1 }
-	command = { type = sleepminister which = 25002 }
-	command = { type = sleepminister which = 25004 }
-	command = { type = sleepminister which = 25173 }
-	command = { type = sleepminister which = 25188 }
-	command = { type = sleepminister which = 25230 }
-	command = { type = headofgovernment which = 25025 }
-	command = { type = dissent value = 2 }
+		name = "The Radical Fascists take over, a revamp Fascism will born !"
+		ai_chance = 50
+		command = { type = setflag which = Council }
+		command = { type = setflag which = RadicalItaly }
+		command = { type = sleepevent which = 90000609 }
+		command = { type = domestic which = political_left value = -1 } #Nazi
+		command = { type = sleepminister which = 25002 } #Mussolini HoS
+		command = { type = sleepminister which = 25004 } #Mussolini MoA
+		command = { type = sleepminister which = 25173 } #Mussolini FM
+		command = { type = sleepminister which = 25188 } #Mussolini HoG
+		command = { type = sleepminister which = 25230 } #Mussolini MoS
+		command = { type = headofgovernment which = 25025 } #Junio Borghese
+		command = { type = dissent value = 2 }
 	}
 	action_b = {
 	name = EVT_90000602_B # Conservative Industrialists!
-	ai_chance = 60
-	command = { type = setflag which = Council }
-	command = { type = setflag which = IndustrialItaly }
-	command = { type = sleepevent which = 90000603 }
-	command = { type = sleepevent which = 90000605 }
-	command = { type = sleepevent which = 90000606 }
-	command = { type = sleepevent which = 90000609 }
-	command = { type = domestic which = political_left value = 1 } 
-	command = { type = sleepminister which = 25002 }
-	command = { type = sleepminister which = 25004 }
-	command = { type = sleepminister which = 25173 }
-	command = { type = sleepminister which = 25188 }
-	command = { type = sleepminister which = 25230 }
-	command = { type = headofgovernment which = 25026 }
-	command = { type = dissent value = 1 }
+		ai_chance = 50
+		command = { type = setflag which = Council }
+		command = { type = setflag which = IndustrialItaly }
+		command = { type = sleepevent which = 90000603 }
+		command = { type = sleepevent which = 90000605 }
+		command = { type = sleepevent which = 90000606 }
+		command = { type = sleepevent which = 90000609 }
+		command = { type = domestic which = political_left value = 1 } 
+		command = { type = sleepminister which = 25002 } #Mussolini HoS
+		command = { type = sleepminister which = 25004 } #Mussolini MoA
+		command = { type = sleepminister which = 25173 } #Mussolini FM
+		command = { type = sleepminister which = 25188 } #Mussolini HoG
+		command = { type = sleepminister which = 25230 } #Mussolini MoS
+		command = { type = headofgovernment which = 25026 } #Badoglio
+		command = { type = dissent value = 1 }
 	}
 }
+###########################################################
+#Abolish the monarchy?
+###########################################################
 event = {
 	id = 90000603 # Abolish the monarchy?
 	random = no
@@ -194,57 +210,60 @@ event = {
 			}
 		}
 	}
-	name = EVT_90000603_NAME
-	desc = EVT_90000603_DESC
+	name = "Abolish the Monarchy ?"
+	desc = "Should we abolish the monarchy? Some Fascists argue the King prevents Italy from becoming a true Fascist nation. However, he is still popular in many areas, particularly the south. What should we do ?"
 	style = 2
 	picture = "congress"		
 	
-	date = { day = 1 month = july year = 1948 }
-	offset = 5 # 30
+	date = { day = 15 month = june year = 1948 }
+	offset = 5
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 20
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = setflag which = Chaos }
-	command = { type = dissent value = 2 }
-	command = { type = flag_ext where = ITA which = _democratic }
-	command = { type = name where = ITA which = "Italian Republic" }
-	command = { type = headofstate which = 25017 } # Paolo Thaon di Revel
-	command = { trigger = { flag = IndustrialItaly } type = headofstate which = 25026 } # Pietro Badoglio, Industrialists
+	action = { #Mussolini or Industrialist at Power
+		name = "Yes, It is time to put an end to the Monarchy"
+		ai_chance = 20
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = setflag which = Chaos }
+		command = { type = dissent value = 2 }
+		command = { type = flag_ext where = ITA which = _democratic }
+		command = { type = name where = ITA which = "Italian Republic" }
+		command = { type = headofstate which = 25017 } # Paolo Thaon di Revel, Mussolini HoG
+		command = { trigger = { flag = IndustrialItaly } type = headofstate which = 25026 } # Pietro Badoglio, Industrialists
 	}
-	action_b = {
-	name = ACTION_NAME_YES
-	ai_chance = 50
-	trigger = { flag = RadicalItaly }
-	command = { type = setflag which = Chaos }
-	command = { type = dissent value = 1 }
-	command = { type = flag_ext where = ITA which = _rsi }
-	command = { type = name where = ITA which = "Italian Social Republic" }
-	command = { trigger = { flag = RadicalItaly } type = headofstate which = 282 } # Junio Borghese, Radicals 
+	action = { #Mussolini or Industrialist at Power
+		name = "No, the King will continue to be a puppet "
+		ai_chance = 80
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = dissent value = -1 }
 	}
-	action_c = {
-	name = ACTION_NAME_NO
-	ai_chance = 80
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { }
+	action = { #Radicals at Power
+		name = "Yes, the Fascism will renew from the ashes of the Monarchy !"
+		ai_chance = 80
+		trigger = { flag = RadicalItaly }
+		command = { type = setflag which = Chaos }
+		command = { type = dissent value = 1 }
+		command = { type = flag_ext where = ITA which = _rsi }
+		command = { type = name where = ITA which = "Italian Social Republic" }
+		command = { type = headofstate which = 282 } # Junio Borghese, Radicals 
 	}
-	action_d = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	trigger = { flag = RadicalItaly }
-	command = { }
+	action = { #Radicals at Power
+		name = "No, we cannot risk others unrest"
+		ai_chance = 20
+		trigger = { flag = RadicalItaly }
+		command = { }
 	}
 }
+###########################################################
+#Censorship, Culture and Arts
+###########################################################
 event = {
 	id = 90000604 # Censorship, Culture and Arts
 	random = no
 	country = ITA	
 	
 	trigger = {
-			flag = Council
-		}
+		flag = Council
+	}
 	
 	name = EVT_90000604_NAME
 	desc = EVT_90000604_DESC
@@ -252,29 +271,32 @@ event = {
 	picture = "congress"		
 	
 	date = { day = 1 month = july year = 1948 }
-	offset = 5 # 30
+	offset = 5 # 5
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = EVT_90000604_A # Current level of censorship is sufficient
-	ai_chance = 50
-	command = { type = domestic which = freedom value = 1 }
+		name = EVT_90000604_A # Current level of censorship is sufficient
+		ai_chance = 50
+		command = { type = domestic which = freedom value = 1 }
 	}
 	action_b = {
-	name = EVT_90000604_B # We need tighter control on the arts and culture 
-	ai_chance = 50
-	command = { type = domestic which = freedom value = -1 }
-	command = { type = dissent value = 1 }
+		name = EVT_90000604_B # We need tighter control on the arts and culture 
+		ai_chance = 50
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 1 }
 	}
 }
+###########################################################
+#Youth Movements
+###########################################################
 event = {
 	id = 90000605 # Youth Movements (Gioventù Italiana del Littorio)
 	random = no
 	country = ITA	
 	
 	trigger = {
-			event = 90000604
-		}
+		event = 90000604
+	}
 	
 	name = EVT_90000605_NAME
 	desc = EVT_90000605_DESC
@@ -303,6 +325,9 @@ event = {
 	command = { type = dissent value = 1 }
 	}
 }
+###########################################################
+#Relations with the Vatican
+###########################################################
 event = {
 	id = 90000606 # Relations with the Vatican
 	random = no
@@ -334,6 +359,9 @@ event = {
 	command = { type = domestic which = interventionism value = 1 }
 	}
 }
+###########################################################
+#Mafia
+###########################################################
 event = {
 	id = 90000607 # Mafia
 	random = no
@@ -356,7 +384,7 @@ event = {
 	action_a = {
 	name = EVT_90000607_A # Only arrest low-profile mafiosi
 	ai_chance = 50
-	command = { type = dissent value = -2 }
+	command = { type = dissent value = -1 }
 	command = { type = setflag which = mafia1 }
 	command = { type = removecore which = 433 }
 	command = { type = removecore which = 432 }
@@ -374,7 +402,7 @@ event = {
 	action_b = {
 	name = EVT_90000607_B # Launch a massive anti-mafia campaign
 	ai_chance = 50
-	command = { type = dissent value = -5 }
+	command = { type = dissent value = -2 }
 	command = { type = setflag which = mafia2 }
 	command = { type = removecore which = 433 }
 	command = { type = removecore which = 432 }
@@ -387,7 +415,7 @@ event = {
 	command = { type = removecore which = 422 }
 	command = { type = removecore which = 426 }
 	command = { type = removecore which = 421 }
-	command = { type = resource which = supplies value = -5000 }
+	command = { type = resource which = supplies value = -1000 }
 	}
 	action_b = {
 	name = EVT_90000607_C # Ignore the problem
@@ -396,6 +424,9 @@ event = {
 	command = { type = dissent value = 10 }
 	}
 }
+###########################################################
+#Chamber of Fasci and Corporations
+###########################################################
 event = {
 	id = 90000608 # Chamber of Fasci and Corporations
 	random = no
@@ -417,11 +448,13 @@ event = {
 	action_a = {
 	name = EVT_90000608_A # The Corporatist system has served us well.
 	ai_chance = 50
+	trigger = { NOT = { flag = IndustrialItaly } }
 	command = { type = dissent value = -1 }
 	}
 	action_b = {
 	name = EVT_90000608_B # The Industrialist elites gain more influence.
 	ai_chance = 50
+	trigger = { NOT = { flag = RadicalItaly } }
 	command = { type = domestic which = free_market value = 1 }
 	command = { type = dissent value = 1 }
 	}
@@ -433,6 +466,9 @@ event = {
 	command = { type = dissent value = 1 }
 	}
 }
+###########################################################
+#Ideology of the National Fascist Party
+###########################################################
 event = {
 	id = 90000609 # Ideology of the National Fascist Party
 	random = no
@@ -453,22 +489,30 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = EVT_90000609_A # The Fascist party moves to the right.
-	ai_chance = 40
-	command = { type = domestic which = political_left value = -1 }
+		name = EVT_90000609_A # The Fascist party moves to the right.
+		ai_chance = 40
+		trigger = { NOT = { flag = IndustrialItaly } }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = 10 }
 	}
 	action_b = {
-	name = EVT_90000609_B # Corporatist Fascism has served us well.
-	ai_chance = 60
-	command = { }
+		name = EVT_90000609_B # Corporatist Fascism has served us well.
+		ai_chance = 60
+		command = { type = dissent value = -1 }
 	}
 	action_c = {
-	name = EVT_90000609_C # The Fascist party moves to the left.
-	ai_chance = 40
-	command = { type = domestic which = political_left value = 1 }
-	command = { type = relation which = GER value = -10 }
+		name = EVT_90000609_C # The Fascist party moves to the left.
+		ai_chance = 40
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = -10 }
 	}
 }
+###########################################################
+#Women
+###########################################################
 event = {
 	id = 90000610 # Women
 	random = no
@@ -495,7 +539,7 @@ event = {
 	action_b = {
 	name = EVT_90000610_B # Support very limited female labor participation.
 	ai_chance = 40
-	command = { type = dissent value = 2 }
+	command = { type = dissent value = 1 }
 	command = { type = industrial_modifier which = total value = 1 }
 	command = { type = manpowerpool value = 1 }
 	}
@@ -505,11 +549,14 @@ event = {
 	trigger = { NOT = { OR = {
 	flag = RadicalItaly 
 	flag = IndustrialItaly } } } # Because Conservatives and radicals will not approve of this...
-	command = { type = dissent value = 4 }
+	command = { type = dissent value = 3 }
 	command = { type = industrial_modifier which = total value = 2 }
 	command = { type = manpowerpool value = 2 }
 	}
 }
+###########################################################
+#Foreign policy - Turkey
+###########################################################
 event = {
 	id = 90000611 # Turkey
 	random = no
@@ -520,8 +567,8 @@ event = {
 			flag = Council
 		}
 	
-	name = EVT_90000611_NAME
-	desc = EVT_90000611_DESC
+	name = "Approach with Turkey and offer a non-aggression pact"
+	desc = "Should we offer a non-agression pact to the Turkey?"
 	style = 2
 	picture = "congress"		
 	
@@ -530,18 +577,20 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 90
-	command = { type = set_relation which = TUR value = 100 }
-	command = { type = non_aggression which = TUR where = ITA }
-	command = { type = setflag which = ITATURTR }
+		name = "Yes, we can to bring the Turkey under our influence sphere"
+		ai_chance = 90
+		command = { type = set_relation which = TUR value = 50 }
+		command = { type = setflag which = ITATURTR }
 	}
 	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 10
-	command = { type = set_relation which = TUR value = -100 }
+		name = "No, we don't need it"
+		ai_chance = 10
+		command = { type = set_relation which = TUR value = -20 }
 	}
 }
+###########################################################
+#Foreign policy - Answer
+###########################################################
 event = {
 	id = 90000612 # TURKEY
 	random = no
@@ -552,8 +601,8 @@ event = {
 			flag = ITATURTR
 		}
 	
-	name = EVT_90000612_NAME
-	desc = EVT_90000612_DESC
+	name = "Italian offer of a non aggression pact"
+	desc = "We are being offered a non-aggression pact from Italy what should we answer?"
 	style = 2
 	picture = "congress"		
 	
@@ -561,11 +610,23 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = ACTION_NAME_GOOD
-	command = { type = set_relation which = ITA value = 100 }
+	action = {
+		name = "Yes, we need powerfull friends"
+		ai_chance = 60
+		command = { type = set_relation which = ITA value = 50 }
+		command = { type = non_aggression which = ITA where = TUR }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	action = {
+		name = "No, we don't need it"
+		ai_chance = 40
+		command = { type = set_relation which = ITA value = -100 }
+		command = { type = domestic which = interventionism value = -2 }
 	}
 }
+###########################################################
+#Colonization project on Corfu	
+###########################################################
 event = {
 	id = 90000613 # Colonization project on Corfu	
 	random = no
@@ -575,8 +636,8 @@ event = {
 			event = 90000611
 		}
 	
-	name = EVT_90000613_NAME
-	desc = EVT_90000613_DESC
+	name = "Development project on Corfu island ?"
+	desc = "After many years of Italian rule the island of Corfu still has a tiny Italian population. Some irredentists have suggested we need to invest in the island of Corfu  to make it more attractive to settle there. However,  some fear the local Greek resistance may attempt to sabotage our project."
 	style = 2
 	picture = "congress"		
 	
@@ -585,26 +646,29 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 50
-	command = { type = free_supplies value = -5 }
-	command = { type = dissent value = 1 }
+		name = ACTION_NAME_YES
+		ai_chance = 50
+		command = { type = free_supplies value = -5 } #offmap
+		command = { type = dissent value = 1 }
 	}
 	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000636 }
+		name = ACTION_NAME_NO
+		ai_chance = 50
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000636 } #Colonization finished
 	}
 	action_c = {
-	name = ACTION_NAME_NO
-	ai_chance = 20
-	trigger = { flag = RadicalItaly }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000636 }
+		name = ACTION_NAME_NO
+		ai_chance = 20
+		trigger = { flag = RadicalItaly }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000636 } #Colonization finished
 	}
 }
+###########################################################
+#Colonization project of Albania	
+###########################################################
 event = {
 	id = 90000614 # Colonization of Albania											
 	random = no
@@ -614,8 +678,8 @@ event = {
 			event = 90000613
 		}
 	
-	name = EVT_90000614_NAME
-	desc = EVT_90000614_DESC
+	name = "Colonization of Albania"
+	desc = "Should we invest more money in colonizing of Albania? And what should be our policy towards the local Albanians ?"
 	style = 2
 	picture = "congress"		
 	
@@ -623,37 +687,55 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = LOCAL
-	ai_chance = 75
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = free_supplies value = -5 }
-	command = { type = dissent value = 1 }
+	action = { #Mussolini or Industrialists
+		name = LOCAL #Colonization but with some local autonomy
+		ai_chance = 50
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = free_supplies value = -5 } #offmap
+		command = { type = dissent value = 1 }
 	}
-	action_b = {
-	name = RUTHLESS
-	ai_chance = 40
-	command = { type = free_supplies value = -10 }
-	command = { type = dissent value = 1 }
-	command = { type = setflag which = AlbaniaItaly }
+	action = { #Mussolini or Industrialists
+		name = PUPPET #Create a loyal puppet
+		trigger = { NOT = { flag = RadicalItaly } }
+		ai_chance = 40
+		command = { type = free_supplies value = -1 } #offmap
+		command = { type = dissent value = -1 }
+		command = { type = removeclaim which = 329 } #Pristina
+		command = { type = removeclaim which = 361 } #Shkoder
+		command = { type = removeclaim which = 334 } #Tetovo
+		command = { type = removeclaim which = 359 } #Tirana
+		command = { type = removeclaim which = 362 } #Vlore
+		command = { type = removeclaim which = 360 } #Korce
+		command = { type = independence which = ALB value = 1}
+		command = { type = make_puppet which = ALB }
 	}
-	action_c = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000637 }
-	command = { type = sleepevent which = 90000645 }
+	action = { #Mussolini or Industrialists
+		name = "No, status quo is the best solution"
+		ai_chance = 10
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000637 }
+		command = { type = sleepevent which = 90000645 }
 	}
-	action_d = {
-	name = ACTION_NAME_NO
-	ai_chance = 10
-	trigger = { flag = RadicalItaly }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000637 }
-	command = { type = sleepevent which = 90000645 }
+	action = { #All
+		name = RUTHLESS #Aggressively encourage colonization and integration
+		ai_chance = 60
+		command = { type = free_supplies value = -10 } #offmap
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = AlbaniaItaly }
+	}
+	action = { #All
+		name = "No, status quo is the best solution"
+		ai_chance = 40
+		trigger = { flag = RadicalItaly }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000637 }
+		command = { type = sleepevent which = 90000645 }
 	}
 }
+###########################################################
+#Colonization project of Aegean Islands
+###########################################################
 event = {
 	id = 90000615 # Colonization project on the Aegean Islands
 	random = no
@@ -669,31 +751,36 @@ event = {
 	picture = "congress"		
 	
 	date = { day = 1 month = july year = 1948 } 
-	offset = 10 # 30
+	offset = 10
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 60
-	command = { type = free_supplies value = -5 }
-	command = { type = dissent value = 1 }
-	command = { type = relation which = GER value = -10 }
+	action = { #All
+		name = ACTION_NAME_YES
+		ai_chance = 60
+		command = { type = free_supplies value = -5 }
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = -5 }
 	}
-	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000638 }
+	action = { #Mussolini or Industrialists
+		name = ACTION_NAME_NO
+		ai_chance = 50
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000638 }
+		command = { type = relation which = GER value = 5 }
 	}
-	action_c = {
-	name = ACTION_NAME_NO
-	ai_chance = 20
-	trigger = { flag = RadicalItaly }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000638 }
+	action = { #Radicals
+		name = ACTION_NAME_NO
+		ai_chance = 20
+		trigger = { flag = RadicalItaly }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000638 }
+		command = { type = relation which = GER value = 10 }
 	}
 }
+###########################################################
+#Integrating the Province of Ljubljana
+###########################################################
 event = {
 	id = 90000616 # Integrating the Province of Ljubljana?
 	random = no
@@ -712,40 +799,43 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 50
-	command = { type = free_supplies value = -5 }
-	command = { type = dissent value = 1 }
+	action = { #All
+		name = ACTION_NAME_YES
+		ai_chance = 50
+		command = { type = free_supplies value = -5 }
+		command = { type = dissent value = 1 }
 	}
-	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000639 }
-	command = { type = sleepevent which = 90000648 }
+	action = { #Mussolini or Industrialists
+		name = ACTION_NAME_NO
+		ai_chance = 50
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000639 }
+		command = { type = sleepevent which = 90000648 }
 	}
-	action_c = {
-	name = ACTION_NAME_NO
-	ai_chance = 20
-	trigger = { flag = RadicalItaly }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000639 }
-	command = { type = sleepevent which = 90000648 }
+	action = { #Radicals
+		name = ACTION_NAME_NO
+		ai_chance = 20
+		trigger = { flag = RadicalItaly }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000639 }
+		command = { type = sleepevent which = 90000648 }
 	}
-	action_d = {
-	name = PUPPET
-	ai_chance = 35
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = removeclaim which = 349 }
-	command = { type = independence which = SLV  value = 1 }
-	command = { type = 	make_puppet which = SLV }
-	command = { type = dissent value = -2 }
-	command = { type = sleepevent which = 90000639 }
-	command = { type = sleepevent which = 90000648 }
+	action = { #Mussolini or Industrialists
+		name = PUPPET
+		ai_chance = 35
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = removeclaim which = 349 }
+		command = { type = independence which = SLV  value = 1 }
+		command = { type = make_puppet which = SLV }
+		command = { type = dissent value = -2 }
+		command = { type = sleepevent which = 90000639 }
+		command = { type = sleepevent which = 90000648 }
 	}
 }
+###########################################################
+#Croatia
+###########################################################
 event = {
 	id = 90000617 # Croatia
 	random = no
@@ -755,7 +845,7 @@ event = {
 			event = 90000616
 		}
 	
-	name = EVT_90000617_NAME
+	name = "We must increase the Italian influence in Croatia ?"
 	desc = EVT_90000617_DESC
 	style = 2
 	picture = "congress"		
@@ -764,27 +854,34 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000616_A # Help Croatian development
-	ai_chance = 40
-	command = { type = relation which = GER value = -10 }
-	command = { type = relation which = CRO value = 50 }
-	command = { type = resource which = supplies value = -1000 }
-	command = { type = resource which = money value = -100 }
+	action = {
+		name = EVT_90000616_A # Help Croatian development
+		ai_chance = 40
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = CRO value = 50 }
+		command = { type = resource which = supplies value = -1000 }
+		command = { type = resource which = money value = -100 }
 	}
-	action_b = {
-	name = ACTION_NAME_NO # Limit help to some anti-partisan operations
-	ai_chance = 50
-	command = { type = relation which = CRO value = 5 }
-	command = { type = sleepevent which = 90000618 }
+	action = {
+		name = ACTION_NAME_NO # Limit help to some anti-partisan operations
+		ai_chance = 50
+		command = { type = relation which = CRO value = 25 }
+		command = { type = relation which = GER value = -5 }
+		command = { type = resource which = supplies value = -500 }
+		command = { type = resource which = money value = -50 }
+		command = { type = sleepevent which = 90000618 }
 	}
-	action_c = {
-	name = ACTION_NAME_NO # No help
-	ai_chance = 30
-	command = { type = relation which = CRO value = -10 }
-	command = { type = sleepevent which = 90000618 }
+	action = {
+		name = ACTION_NAME_NO # No help
+		ai_chance = 30
+		command = { type = relation which = CRO value = -10 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = sleepevent which = 90000618 }
 	}
 }
+###########################################################
+#Croatia Answer
+###########################################################
 event = {
 	id = 90000618 # Aid from Italy!
 	random = no
@@ -795,7 +892,7 @@ event = {
 		random = 50
 		}
 	
-	name = EVT_90000618_NAME
+	name = "Italian military aid has come, we can improve navy and industries"
 	desc = EVT_90000618_DESC
 	style = 2
 	picture = "congress"		
@@ -805,15 +902,18 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = construct which = ic where = 347 value = 1 }
-	command = { type = construct which = infrastructure where = 347 value = 1 }
-	command = { type = construct which = naval_base where = 347 value = 1 }
-	command = { type = relation which = ITA value = 50 }
-	command = { type = add_corps which = "Croatian Navy" value = naval where = 347 }
-	command = { type = add_division which = "Croatian Navy" value = destroyer when = 8 }
+		name = ACTION_NAME_GREAT
+		command = { type = construct which = ic where = 347 value = 1 }
+		command = { type = construct which = infrastructure where = 347 value = 1 }
+		command = { type = construct which = naval_base where = 347 value = 1 }
+		command = { type = relation which = ITA value = 50 }
+		command = { type = add_corps which = "Croatian Navy" value = naval where = 347 }
+		command = { type = add_division which = "Croatian Navy" value = destroyer when = 8 }
 	}
 }
+###########################################################
+#Claims on France
+###########################################################
 event = {
 	id = 90000619 # Claims on France
 	random = no
@@ -832,39 +932,43 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000619_A # Drop claims
-	ai_chance = 50
-	command = { type = set_relation which = FRA value = 100 }
-	command = { type = relation which = GER value = 5 }
-	command = { type =	removeclaim which = 91 }
-	command = { type =	removeclaim which = 92 }
-	command = { type =	removeclaim which = 93 }
-	command = { type =	removeclaim which = 90 }
-	command = { type =	removeclaim which = 86 }
-	command = { type =	removecore which = 87 }
-	command = { type =	removecore which = 94 }
-	command = { type =	removeclaim which = 94 }
-	command = { type = industrial_modifier which = total value = 1 }
-	command = { type = dissent value = 5 }
+	action = {
+		name = EVT_90000619_A # Drop claims
+		ai_chance = 50
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = set_relation which = FRA value = 50 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = removeclaim which = 91 }
+		command = { type = removeclaim which = 92 }
+		command = { type = removeclaim which = 93 }
+		command = { type = removeclaim which = 90 }
+		command = { type = removeclaim which = 86 }
+		command = { type = removecore which = 87 }
+		command = { type = removecore which = 94 }
+		command = { type = removeclaim which = 94 }
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = dissent value = 5 }
 	}
-	action_b = {
-	name = EVT_90000619_B # Maintain claims
-	ai_chance = 50
-	trigger = { NOT = { flag = RadicalItaly } }
-	command = { type = relation which = FRA value = -10 }
-	command = { type = relation which = GER value = -5 }
-	command = { type = dissent value = -1 }
+	action = {
+		name = EVT_90000619_B # Maintain claims
+		ai_chance = 50
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = relation which = FRA value = -25 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = dissent value = -1 }
 	}
-	action_c = {
-	name = EVT_90000619_B # Maintain claims
-	ai_chance = 75
-	trigger = { flag = RadicalItaly }
-	command = { type = relation which = FRA value = -10 }
-	command = { type = relation which = GER value = -5 }
-	command = { type = dissent value = -1 }
+	action = {
+		name = EVT_90000619_B # Maintain claims
+		ai_chance = 75
+		trigger = { flag = RadicalItaly }
+		command = { type = relation which = FRA value = -50 }
+		command = { type = relation which = GER value = -20 }
+		command = { type = dissent value = -1 }
 	}
 }
+###########################################################
+#Principality of the Pindus
+###########################################################
 event = {															
 	id = 90000620 # Principality of the Pindus
 	random = no
@@ -883,22 +987,25 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = PUPPET # Create a loyal puppet.
-	ai_chance = 60
-	command = { type = removeclaim which = 369 }
-	command = { type = independence which = U66  value = 1 }
-	command = { type = 	make_puppet which = U66 }
-	command = { type = dissent value = -2 }
-	command = { type = relation which = GER value = -10 }
+	action = {
+		name = PUPPET # Create a loyal puppet.
+		ai_chance = 40
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = removeclaim which = 369 }
+		command = { type = independence which = U66  value = 1 }
+		command = { type = make_puppet which = U66 }
+		command = { type = dissent value = -2 }
+		command = { type = relation which = GER value = -10 }
 	}
-	action_b = {
-	name = EVT_90000620_C # Keep the area under military occupation for now. 
-	ai_chance = 50
-	command = { type = dissent value = -1 }
+	action = {
+		name = EVT_90000620_C # Keep the area under military occupation for now. 
+		ai_chance = 60
+		command = { type = dissent value = -1 }
 	}
 }
-
+###########################################################
+#Future of Montenegro
+###########################################################
 event = {
 	id = 90000621 # Future of Montenegro														
 	random = no
@@ -906,7 +1013,6 @@ event = {
 	
 	trigger = { 
 		event = 90000619
-		#event = 90000620
 	}
 	
 	name = EVT_90000621_NAME
@@ -918,33 +1024,35 @@ event = {
 	offset = 30 #offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000621_A # Remove their independence and colonize them. 
-	ai_chance = 80
-	command = { type =	inherit which = MTN }
-	command = { type = free_supplies value = -5 }
-	command = { type = 	dissent value = 3 }
-	command = { type = addclaim which = 332 } 
-	command = { type = addclaim which = 335 } 	
-	command = { type = sleepevent which = 90000641 }
+	action = {
+		name = EVT_90000621_A # Remove their independence and colonize them. 
+		ai_chance = 50
+		command = { type = inherit which = MTN }
+		command = { type = free_supplies value = -5 }
+		command = { type = dissent value = 3 }
+		command = { type = addclaim which = 332 } 
+		command = { type = addclaim which = 335 } 	
+		command = { type = sleepevent which = 90000641 }
 	}
-	action_b = {
-	name = EVT_90000621_B # Gradual Italianization is the best policy.
-	ai_chance = 50
-	command = { type = resource which = supplies value = -500 }
-	command = { type = sleepevent which = 90000640 }
-	command = { type = sleepevent which = 90000647 }
+	action = {
+		name = EVT_90000621_B # Gradual Italianization is the best policy.
+		ai_chance = 50
+		command = { type = resource which = supplies value = -500 }
+		command = { type = sleepevent which = 90000640 }
+		command = { type = sleepevent which = 90000647 }
 	}
-	action_c = {
-	name = EVT_90000621_C # Status Quo is just fine.
-	ai_chance = 50
-	command = { type = relation which = MTN value = 10 }
-	command = { type = sleepevent which = 90000640 }
-	command = { type = sleepevent which = 90000641 }
-	command = { type = sleepevent which = 90000647 }
+	action = {
+		name = EVT_90000621_C # Status Quo is just fine.
+		ai_chance = 50
+		command = { type = relation which = MTN value = 10 }
+		command = { type = sleepevent which = 90000640 }
+		command = { type = sleepevent which = 90000641 }
+		command = { type = sleepevent which = 90000647 }
 	}
 }
-
+###########################################################
+#Future of Montenegro
+###########################################################
 event = {
 	id = 90000622 # Spanish-Italian Relations
 	random = no
@@ -963,24 +1071,27 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000622_A # Send him our best wishes
-	ai_chance = 60
-	command = { type = relation which = SPA value = 10 }
-	command = { type = sleepevent which = 90000623 }
+	action = {
+		name = EVT_90000622_A # Send him our best wishes
+		ai_chance = 60
+		command = { type = relation which = SPA value = 10 }
+		command = { type = sleepevent which = 90000623 }
 	}
-	action_b = {
-	name = EVT_90000622_B # Propose a state visit
-	ai_chance = 40
-	command = { type = relation which = SPA value = 10 }
+	action = {
+		name = EVT_90000622_B # Propose a state visit
+		ai_chance = 40
+		command = { type = relation which = SPA value = 10 }
 	}
 	action_c = {
-	name = EVT_90000622_C # Falangists are mere pseudo-Fascists!
-	ai_chance = 30
-	command = { type = relation which = SPA value = -10 }
-	command = { type = sleepevent which = 90000623 }
+		name = EVT_90000622_C # Falangists are mere pseudo-Fascists!
+		ai_chance = 20
+		command = { type = relation which = SPA value = -10 }
+		command = { type = sleepevent which = 90000623 }
 	}
 }
+###########################################################
+#Spanish answer
+###########################################################
 event = {
 	id = 90000623 # Spanish-Italian Relations 2	# Allied response
 	random = no
@@ -999,26 +1110,30 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = ACTION_NAME_OF_COURSE
-	ai_chance = 60
-	command = { type = relation which = ITA value = 10 }
-	command = { type = relation which = U01 value = -10 }
-	command = { type = relation which = ENG value = -10 }
-	command = { type = relation which = USA value = -10 }
+	action = {
+		name = ACTION_NAME_OF_COURSE
+		ai_chance = 60
+		command = { type = relation which = ITA value = 10 }
+		command = { type = relation which = GER value = -5 }
+		command = { type = relation which = U01 value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = USA value = -10 }
 	}
-	action_b = {
-	name = ACTION_NAME_DECLINE
-	ai_chance = 40
-	command = { type = sleepevent which = 90000625 }
-	command = { type = relation which = ITA value = -10 }
-	command = { type = relation which = U01 value = 10 }
-	command = { type = relation which = ENG value = 10 }
-	command = { type = relation which = USA value = 10 }
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 40
+		command = { type = sleepevent which = 90000625 }
+		command = { type = relation which = ITA value = -10 }
+		command = { type = relation which = U01 value = 10 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = USA value = 10 }
 	}
 }
+###########################################################
+#End of council
+###########################################################
 event = {
-	id = 90000624 # End of the conference 
+	id = 90000624 # End of council
 	random = no
 	country = ITA	
 	
@@ -1027,7 +1142,7 @@ event = {
 		}
 	
 	name = EVT_90000624_NAME
-	desc = EVT_90000624_DESC # End of the conference of the Grand Council of Fascism
+	desc = EVT_90000624_DESC # End of the Grand Council of Fascism
 	style = 2
 	picture = "congress"		
 	
@@ -1036,14 +1151,16 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_OK
-	command = { type = clrflag which = Council }
-	command = { trigger = { flag = RadicalItaly } type = headofgovernment which = 282 } # Junio Borghese, Radicals 
-	command = { trigger = { flag = IndustrialItaly } type = headofgovernment which = 25026 } # Pietro Badoglio, Industrialists
-	command = { trigger = { flag = Chaos } type = headofstate which = 25017 } # Paolo Thaon di Revel
+		name = ACTION_NAME_OK
+		command = { type = clrflag which = Council }
+		command = { trigger = { flag = RadicalItaly } type = headofgovernment which = 282 } # Junio Borghese, Radicals 
+		command = { trigger = { flag = IndustrialItaly } type = headofgovernment which = 25026 } # Pietro Badoglio, Industrialists
+		command = { trigger = { flag = Chaos } type = headofstate which = 25017 } # Paolo Thaon di Revel
 	}
 }
-
+###########################################################
+#Spanish-Italian conference
+###########################################################
 # Spanish-Italian conference
 event = {
 	id = 90000625 # State visit to Spain
@@ -1052,12 +1169,15 @@ event = {
 	
 	decision = {						
 			NOT = {
-			ispuppet = ITA	
-			atwar = yes
+				ispuppet = ITA	
+				atwar = yes
 			}		
 	}
 	decision_trigger = { 
 		event = 90000623
+		day = 1
+		month = 11
+		year = 1948
 	}
 	
 	name = EVT_90000625_NAME
@@ -1066,27 +1186,29 @@ event = {
 	picture = "congress"	
 	decision_picture = "decision_congress"
 	
-	date = { day = 5 month = september year = 1948 }
+	date = { day = 5 month = december year = 1948 }
 	offset = 30 #offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000625_A 	# Propose a non-agression pact.	
-	ai_chance = 60	
-	command = { type = trigger which = 90000626 } 
+	action = {
+		name = EVT_90000625_A 	# Propose a non-agression pact.	
+		ai_chance = 60	
+		command = { type = trigger which = 90000626 } 
 	}
-	action_b = {
-	name = EVT_90000625_b 	# Request military access.
-	ai_chance = 40	
-	command = { type = trigger which = 90000626 } 	
-	command = { type = trigger which = 90000627 }
+	action = {
+		name = EVT_90000625_b 	# Request military access.
+		ai_chance = 40	
+		command = { type = trigger which = 90000626 } 	
+		command = { type = trigger which = 90000627 }
+		command = { type = relation which = GER value = -10 }
 	}
-	action_b = {
-	name = EVT_90000625_c 	# Our goal is a Latin Mediterranean union!
-	ai_chance = 20	
-	command = { type = trigger which = 90000626 }
-	command = { type = trigger which = 90000627 } 
-	command = { type = trigger which = 90000629 } 
+	action = {
+		name = EVT_90000625_c 	# Our goal is a Latin Mediterranean union!
+		ai_chance = 20	
+		command = { type = trigger which = 90000626 }
+		command = { type = trigger which = 90000627 } 
+		command = { type = trigger which = 90000629 } 
+		command = { type = relation which = GER value = -20 }
 	}
 }
 event = {
@@ -1100,14 +1222,23 @@ event = {
 	picture = "congress"	
 
 	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 75
-	command = { type = 	non_aggression which = SPA where = ITA }
+		name = ACTION_NAME_YES
+		ai_chance = 75
+		command = { type = 	non_aggression which = SPA where = ITA }
+		command = { type = relation which = ITA value = 10 }
+		command = { type = relation which = GER value = -5 }
+		command = { type = relation which = U01 value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = USA value = -10 }
 	}
 	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 25
-	command = { type = relation which = ITA value = -10 }
+		name = ACTION_NAME_NO
+		ai_chance = 25
+		command = { type = relation which = ITA value = -10 }		
+		command = { type = relation which = GER value = 5 }
+		command = { type = relation which = U01 value = 10 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = USA value = 10 }
 	}
 }
 event = {
@@ -1120,16 +1251,25 @@ event = {
 	style = 2
 	picture = "congress"	
 
-	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 50
-	command = { type = trigger which = 90000628 }
-	command = { type = access which = ITA }
+	action = {
+		name = ACTION_NAME_YES
+		ai_chance = 50
+		command = { type = trigger which = 90000628 }
+		command = { type = access which = ITA }
+		command = { type = relation which = ITA value = 25 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = U01 value = -20 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = USA value = -20 }
 	}
-	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	command = { type = relation which = ITA value = -10 }
+	action = {
+		name = ACTION_NAME_NO
+		ai_chance = 50
+		command = { type = relation which = ITA value = 25 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = U01 value = -20 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = USA value = -20 }
 	}
 }
 event = {
@@ -1143,9 +1283,9 @@ event = {
 	picture = "congress"	
 
 	action = {
-	name = ACTION_NAME_HURRAH
-	command = { type = access which = SPA }
-	command = { type = relation which = SPA value = 10 }
+		name = ACTION_NAME_HURRAH
+		command = { type = access which = SPA }
+		command = { type = relation which = SPA value = 10 }
 	}
 }
 event = {
@@ -1158,15 +1298,230 @@ event = {
 	style = 2
 	picture = "congress"	
 
+	action = {
+		name = ACTION_NAME_OF_COURSE
+		ai_chance = 40
+		command = { type = relation which = ITA value = 50 }
+		command = { type = relation which = GER value = -20 }
+		command = { type = relation which = U01 value = -40 }
+		command = { type = relation which = ENG value = -40 }
+		command = { type = relation which = USA value = -40 }
+	}
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 60
+		command = { type = sleepevent which = 90000651 }
+		command = { type = relation which = ITA value = -50 }
+		command = { type = relation which = GER value = 20 }
+		command = { type = relation which = U01 value = 40 }
+		command = { type = relation which = ENG value = 40 }
+		command = { type = relation which = USA value = 40 }
+	}
+}
+#################################
+# SPANISH CRISIS
+#################################
+event = {
+	id = 90000651 # Spain to join Italy
+	random = no
+	country = USA	
+	
+	trigger = {
+		event = 90000629
+	}
+	name = EVT_90000651_NAME # Spain to join Italy
+	desc = EVT_90000651_DESC
+	style = 2
+	picture = "mittelmeerdivision2"		
+	
+	date = { day = 1 month = january year = 1948 } 
+	offset = 10 # 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_90000651_A # Threaten Spain with an intervention!
+		ai_chance = 50
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = EVT_90000651_B # We cannot intervene.
+		ai_chance = 50
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 90000652 }
+		command = { type = trigger which = 90000655 }
+	}
+}
+event = {
+	id = 90000652 # USA threatens us!
+	random = no
+	country = SPA	
+	
+	trigger = {
+		event = 90000651
+	}
+	name = EVT_90000652_NAME # USA threatens us!
+	desc = EVT_90000652_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+	
+	date = { day = 1 month = january year = 1948 } 
+	offset = 5 # 90
+	deathdate = { day = 30 month = december year = 1963 }
+
 	action_a = {
-	name = ACTION_NAME_OF_COURSE
-	ai_chance = 30
-	command = { }
+		name = EVT_90000652_A # We are not afraid!
+		ai_chance = 50
+		command = { type = sleepevent which = 90000654 }
 	}
 	action_b = {
-	name = ACTION_NAME_DECLINE
+		name = EVT_90000652_B # Relations with the Axis may be too dangerous.
+		ai_chance = 50
+		command = { type = sleepevent which = 90000653 }
+	}
+}
+event = {
+	id = 90000653 # Spain remains defiant!
+	random = no
+	country = USA	
+	
+	trigger = {
+		event = 90000652
+	}
+	name = EVT_90000653_NAME  # Spain remains defiant!
+	desc = EVT_90000653_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+	
+	date = { day = 1 month = january year = 1948 } 
+	offset = 10 # 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_90000653_A # Launch an intervention
+		ai_chance = 50
+		command = { type = coup_nation which = SPA }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 90000656 } 
+	}
+	action_b = {
+		name = EVT_90000653_B # Back down
+		ai_chance = 50
+		command = { type = trigger which = 90000655 } 
+	}
+}
+event = {
+	id = 90000654 # Spain backs down!
+	random = no
+	country = USA	
+	
+	trigger = {
+		event = 90000652
+	}
+	name = EVT_90000654_NAME  # Spain backs down!
+	desc = EVT_90000654_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+	
+	date = { day = 1 month = january year = 1948 } 
+	offset = 10 # 90
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -5 }
+	}
+}
+event = {
+	id = 90000655 # Spanish-Italian Union!
+	random = no
+	country = ITA	
+	
+	name = EVT_90000655_NAME  # Spanish-Italian Union!
+	desc = EVT_90000655_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+	
+	action = {
+	name = ACTION_NAME_GREAT
+		command = { type = dissent value = -5 }
+		command = { type = make_puppet which = SPA }
+		command = { type = trigger which = 90000657 } 
+	}
+}
+event = {
+	id = 90000656 # USA takes over Spain
+	random = no
+	country = ITA	
+	
+	name = EVT_90000656_NAME  
+	desc = EVT_90000656_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+
+	action = {
+		name = EVT_90000656_A # Reinstall the Falangists and declare war on the Allies!
+		ai_chance = 30
+		command = { type = coup_nation which = SPA }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = USA }
+	}
+	action = {
+	name = EVT_90000656_B # Back down
 	ai_chance = 70
-	command = { type = sleepevent which = 90000651 }
+	command = { type = domestic which = interventionism value = -1 }
+	}
+}
+event = {
+	id = 90000657 # Take over Spanish colonies?
+	random = no
+	country = U01	
+	
+	name = EVT_90000657_NAME  
+	desc = EVT_90000657_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+
+	action = {
+		name = ACTION_NAME_YES
+		ai_chance = 80
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = addclaim which = 715 }       
+		command = { type = addclaim which = 716 }
+		command = { type = addclaim which = 913 } 
+		command = { type = addclaim which = 916 }
+		command = { type = addclaim which = 987 } 
+		command = { type = addclaim which = 988 }
+		command = { type = addclaim which = 989 }
+		command = { type = trigger which = 90000658 }
+	}
+	action = {
+		name = ACTION_NAME_NO
+		ai_chance = 20
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+event = {
+	id = 90000658 # Free France takes over our colonies!
+	random = no
+	country = SPA	
+	
+	name = EVT_90000658_NAME  
+	desc = EVT_90000658_DESC
+	style = 2
+	picture = "mittelmeerdivision2"			
+
+	action = {
+		name = ACTION_NAME_DAMN
+		ai_chance = 70
+		command = { type = dissent value = 5 }
+		command = { type =	secedeprovince which = U01 value = 715 }
+		command = { type =	secedeprovince which = U01 value = 716 }
+		command = { type =	secedeprovince which = U01 value = 913 }
+		command = { type =	secedeprovince which = U01 value = 916 }
+		command = { type =	secedeprovince which = U01 value = 987 }
+		command = { type =	secedeprovince which = U01 value = 988 }
+		command = { type =	secedeprovince which = U01 value = 989 }
 	}
 }
 #################################################
@@ -1194,8 +1549,8 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_DAMN	
-	command = { type = 	dissent value = 1 }
+		name = ACTION_NAME_DAMN	
+		command = { type = 	dissent value = 1 }
 	}
 }
 event = {
@@ -1220,8 +1575,8 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_DAMN	
-	command = { type = 	dissent value = 1 }
+		name = ACTION_NAME_DAMN	
+		command = { type = 	dissent value = 1 }
 	}
 }
 ###############################
@@ -1240,10 +1595,10 @@ event = {
 			flag = RadicalItaly
 		}
 		OR = {
-			random = 10
+			random = 30
 			AND = {
-			random = 40
-			atwar = yes
+				random = 40
+				atwar = yes
 			}
 		}
 	}
@@ -1256,30 +1611,32 @@ event = {
 	offset = 10 # 90
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000632_A # Il Duce is back!
-	ai_chance = 50
-	command = { type = sleepevent which = 90000630 }
-	command = { type = sleepevent which = 90000631 }
-	command = { type = headofgovernment which = 25002 } # 
-	command = { type = 	dissent value = 10 }
+	action = {
+		name = EVT_90000632_A # Il Duce is back!
+		ai_chance = 50
+		command = { type = sleepevent which = 90000630 }
+		command = { type = sleepevent which = 90000631 }
+		command = { type = headofstate which = 25001 } # King is back!
+		command = { type = headofgovernment which = 25002 } #Mussolini
+		command = { type = flag_ext where = ITA }
+		command = { type = dissent value = 15 }
 	}
-	action_b = {
-	name = EVT_1_ACTA # Crush the coup
-	ai_chance = 50
-	command = { type = 	dissent value = 5 }
-	command = { type = revolt which = 430 }
-	command = { type = revolt which = 428 }
-	command = { type = revolt which = 426 }
-	command = { type = revolt which = 421 }
-	command = { type = revolt which = 415 }
-	command = { type = revolt which = 398 }
-	command = { type = revolt which = 416 }
-	command = { type = revolt which = 410 }
-	command = { type = revolt which = 393 }
-	command = { type = revolt which = 406 }
-	command = { type = revolt which = 403 }
-	command = { type = revolt which = 404 }
+	action = {
+		name = EVT_1_ACTA # Crush the coup
+		ai_chance = 50
+		command = { type = dissent value = 20 }
+		command = { type = revolt which = 430 }
+		command = { type = revolt which = 428 }
+		command = { type = revolt which = 426 }
+		command = { type = revolt which = 421 }
+		command = { type = revolt which = 415 }
+		command = { type = revolt which = 398 }
+		command = { type = revolt which = 416 }
+		command = { type = revolt which = 410 }
+		command = { type = revolt which = 393 }
+		command = { type = revolt which = 406 }
+		command = { type = revolt which = 403 }
+		command = { type = revolt which = 404 }
 	}
 }
 event = {
@@ -1322,32 +1679,33 @@ event = {
 	offset = 10 # 90
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000633_A # Royalists take over!
-	ai_chance = 80
-	command = { type = sleepevent which = 90000630 }
-	command = { type = headofstate which = 25001 } # King is back!
-	command = { type = 	dissent value = 5 }
-	command = { type = clrflag which = RadicalItaly }
-	command = { type = clrflag which = Chaos }
+	action = {
+		name = EVT_90000633_A # Royalists take over!
+		ai_chance = 80
+		command = { type = sleepevent which = 90000630 }
+		command = { type = headofstate which = 25001 } # King is back!
+		command = { type = dissent value = 5 }
+		command = { type = clrflag which = RadicalItaly }
+		command = { type = clrflag which = Chaos }
+		command = { type = flag_ext where = ITA }
 	}
-	action_b = {
-	name = EVT_1_ACTA # Crush the coup!
-	ai_chance = 50
-	command = { type = 	dissent value = 5 }
-	command = { type = revolt which = 430 }
-	command = { type = revolt which = 431 }
-	command = { type = revolt which = 425 }
-	command = { type = revolt which = 422 }
-	command = { type = revolt which = 421 }
-	command = { type = revolt which = 420 }
-	command = { type = revolt which = 418 }
-	command = { type = revolt which = 417 }
-	command = { type = revolt which = 415 }
-	command = { type = revolt which = 416 }
-	command = { type = revolt which = 399 }
-	command = { type = revolt which = 396 }
-	command = { type = sleepevent which = 90000649 }
+	action = {
+		name = EVT_1_ACTA # Crush the coup!
+		ai_chance = 50
+		command = { type = 	dissent value = 5 }
+		command = { type = revolt which = 430 }
+		command = { type = revolt which = 431 }
+		command = { type = revolt which = 425 }
+		command = { type = revolt which = 422 }
+		command = { type = revolt which = 421 }
+		command = { type = revolt which = 420 }
+		command = { type = revolt which = 418 }
+		command = { type = revolt which = 417 }
+		command = { type = revolt which = 415 }
+		command = { type = revolt which = 416 }
+		command = { type = revolt which = 399 }
+		command = { type = revolt which = 396 }
+		command = { type = sleepevent which = 90000649 }
 	}
 }
 event = {
@@ -1376,10 +1734,10 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_DAMN	
-	command = { type = resource which = money value = -100 }
-	command = { trigger = {flag = mafia1} type = resource which = money value = -100 }
-	command = { trigger = {flag = mafia3} type = dissent value = 2 }
+		name = ACTION_NAME_DAMN	
+		command = { type = resource which = money value = -100 }
+		command = { trigger = {flag = mafia1} type = resource which = money value = -100 }
+		command = { trigger = {flag = mafia3} type = dissent value = 2 }
 	}
 }
 event = {
@@ -1431,7 +1789,7 @@ event = {
 	}
 }
 ##############################
-# Partially finished events
+#Colonization events
 ##############################
 event = {
 	id = 90000636 # Colonization of Corfu finished	(90000613)
@@ -1454,12 +1812,12 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = free_supplies value = 5 }
-	command = { type = dissent value = -1 }
-	command = { type = addcore which = 371 } 
-	command = { type = construct which = ic where = 371 value = 1 }
-	command = { type = construct which = infrastructure where = 371 value = 10 }
+		name = ACTION_NAME_GREAT
+		command = { type = free_supplies value = 5 }
+		command = { type = dissent value = -1 }
+		command = { type = addcore which = 371 } 
+		command = { type = construct which = ic where = 371 value = 1 }
+		command = { type = construct which = infrastructure where = 371 value = 10 }
 	}
 }
 event = {
@@ -1485,17 +1843,17 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = free_supplies value = 5 }
-	command = { trigger = { flag = AlbaniaItaly } type = free_supplies value = 5 }
-	command = { type = dissent value = -1 }
-	command = { type = addcore which = 359 } 
-	command = { type = addcore which = 362 } 
-	command = { type = addcore which = 361 } 
-	command = { type = addcore which = 360 }	
-	command = { trigger = { flag = AlbaniaItaly } type = construct which = ic where = 359 value = 1 }
-	command = { trigger = { flag = AlbaniaItaly } type = construct which = infrastructure where = 359 value = 10 }
-	#command = { type = clrflag which = AlbaniaItaly }
+		name = ACTION_NAME_GREAT
+		command = { type = free_supplies value = 5 }
+		command = { trigger = { flag = AlbaniaItaly } type = free_supplies value = 5 }
+		command = { type = dissent value = -1 }
+		command = { type = addcore which = 359 } 
+		command = { type = addcore which = 362 } 
+		command = { type = addcore which = 361 } 
+		command = { type = addcore which = 360 }	
+		command = { trigger = { flag = AlbaniaItaly } type = construct which = ic where = 359 value = 1 }
+		command = { trigger = { flag = AlbaniaItaly } type = construct which = infrastructure where = 359 value = 10 }
+		#command = { type = clrflag which = AlbaniaItaly }
 	}
 }
 event = {
@@ -1639,21 +1997,21 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-	name = EVT_90000642_A # Promise investments in Croatia.
-	ai_chance = 50
-	command = { type = relation which = CRO value = 10 }
-	command = { type = relation which = ITA value = -10 }
-	command = { type = resource which = money value = -1000 }
-	command = { type = resource which = supplies value = -1000 }
-	command = { type = sleepevent which = 90000644 }
+		name = EVT_90000642_A # Promise new investments in Croatia.
+		ai_chance = 50
+		command = { type = relation which = CRO value = 10 }
+		command = { type = relation which = ITA value = -10 }
+		command = { type = resource which = money value = -1000 }
+		command = { type = resource which = supplies value = -1000 }
+		command = { type = sleepevent which = 90000644 }
 	}
 	action_b = {
-	name = EVT_90000642_B # Nothing we can do about this. 
-	ai_chance = 50
-	command = { type = relation which = CRO value = -10 }
-	command = { type = relation which = ITA value = -10 }
-	command = { type = dissent value = 1 }
-	command = { type = sleepevent which = 90000643 }
+		name = EVT_90000642_B # Nothing we can do about this. 
+		ai_chance = 50
+		command = { type = relation which = CRO value = -10 }
+		command = { type = relation which = ITA value = -10 }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000643 }
 	}
 }
 event = {
@@ -1675,12 +2033,12 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = free_supplies value = 1 }
-	command = { type = dissent value = -1 }
-	command = { type = construct which = infrastructure where = 347 value = 10 }
-	command = { type = construct which = infrastructure where = 352 value = 10 }
-	command = { type = construct which = ic where = 352 value = 1 }
+		name = ACTION_NAME_GREAT
+		command = { type = free_supplies value = 1 }
+		command = { type = dissent value = -1 }
+		command = { type = construct which = infrastructure where = 347 value = 10 }
+		command = { type = construct which = infrastructure where = 352 value = 10 }
+		command = { type = construct which = ic where = 352 value = 1 }
 	}
 }
 event = {
@@ -1703,8 +2061,8 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = 	make_puppet which = CRO }
+		name = ACTION_NAME_GREAT
+		command = { type = 	make_puppet which = CRO }
 	}
 }
 ##############################
@@ -1850,23 +2208,22 @@ event = {
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 50
-	command = { type = 	leave_alliance }
-	command = { type = 	relation which = GER value = -200 }
-	command = { type = trigger which = 90000650 } 
-	command = { type = 	peace which = SOV value = 1 } 
-	command = { type = 	peace which = SOV value = 1 } 
-	command = { type = 	peace which = USA value = 1 } 
-	command = { type = 	peace which = ENG value = 1 } 
-	command = { type = 	peace which = U01 value = 1 } 
+	action = {
+		name = ACTION_NAME_YES
+		ai_chance = 50
+		command = { type = leave_alliance }
+		command = { type = relation which = GER value = -200 }
+		command = { type = trigger which = 90000650 } 
+		command = { type = peace which = SOV value = 1 } 
+		command = { type = peace which = USA value = 1 } 
+		command = { type = peace which = ENG value = 1 } 
+		command = { type = peace which = U01 value = 1 } 
 	}
-	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 50
-	command = { type = relation which = GER value = 10 }
-	command = { type = sleepevent which = 90000643 }
+	action = {
+		name = ACTION_NAME_NO
+		ai_chance = 50
+		command = { type = relation which = GER value = 10 }
+		command = { type = sleepevent which = 90000643 }
 	}
 }
 event = {
@@ -1880,224 +2237,19 @@ event = {
 	picture = "mittelmeerdivision2"	
 
 	action_a = {
-	name = EVT_315_B # War!
-	ai_chance = 50
-	command = { type = 	relation which = ITA value = -200 }
-	command = { type = 	dissent value = 1 }
-	command = { type = 	war which = ITA }
-	command = { type = addcore which = 402 }
-	command = { type = addcore which = 401 }
+		name = EVT_315_B # War!
+		ai_chance = 50
+		command = { type = relation which = ITA value = -200 }
+		command = { type = dissent value = 1 }
+		command = { type = war which = ITA }
+		command = { type = addcore which = 402 }
+		command = { type = addcore which = 401 }
 	}
 	action_b = {
-	name = EVT_90000642_B  # Damn!
-	ai_chance = 50
-	command = { type = 	relation which = ITA value = -200 }
-	command = { type = 	dissent value = 5 }
+		name = EVT_90000642_B  # Damn!
+		ai_chance = 50
+		command = { type = relation which = ITA value = -200 }
+		command = { type = dissent value = 5 }
 	}
 }
-#################################
-# SPANISH CRISIS
-#################################
-event = {
-	id = 90000651 # Spain to join Italy
-	random = no
-	country = USA	
-	
-	trigger = {
-		event = 90000629
-	}
-	name = EVT_90000651_NAME # Spain to join Italy
-	desc = EVT_90000651_DESC
-	style = 2
-	picture = "mittelmeerdivision2"		
-	
-	date = { day = 1 month = january year = 1948 } 
-	offset = 10 # 90
-	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
-	name = EVT_90000651_A # Threaten Spain with an intervention!
-	ai_chance = 50
-	command = { type = domestic which = interventionism value = 1 }
-	command = { type = dissent value = 5 }
-	}
-	action_b = {
-	name = EVT_90000651_B # We cannot intervene.
-	ai_chance = 50
-	command = { type = domestic which = interventionism value = -1 }
-	command = { type = sleepevent which = 90000652 }
-	command = { type = trigger which = 90000655 }
-	}
-}
-event = {
-	id = 90000652 # USA threatens us!
-	random = no
-	country = SPA	
-	
-	trigger = {
-		event = 90000651
-	}
-	name = EVT_90000652_NAME # USA threatens us!
-	desc = EVT_90000652_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-	
-	date = { day = 1 month = january year = 1948 } 
-	offset = 5 # 90
-	deathdate = { day = 30 month = december year = 1963 }
-
-	action_a = {
-	name = EVT_90000652_A # We are not afraid!
-	ai_chance = 50
-	command = { type = sleepevent which = 90000654 }
-	}
-	action_b = {
-	name = EVT_90000652_B # Relations with the Axis may be too dangerous.
-	ai_chance = 50
-	command = { type = sleepevent which = 90000653 }
-	}
-}
-event = {
-	id = 90000653 # Spain remains defiant!
-	random = no
-	country = USA	
-	
-	trigger = {
-		event = 90000652
-	}
-	name = EVT_90000653_NAME  # Spain remains defiant!
-	desc = EVT_90000653_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-	
-	date = { day = 1 month = january year = 1948 } 
-	offset = 10 # 90
-	deathdate = { day = 30 month = december year = 1963 }
-
-	action_a = {
-	name = EVT_90000653_A # Launch an intervention
-	ai_chance = 40
-	command = { type = 	coup_nation which = SPA }
-	command = { type = dissent value = 5 }
-	command = { type = trigger which = 90000656 } 
-	}
-	action_b = {
-	name = EVT_90000653_B # Back down
-	ai_chance = 60
-	command = { type = trigger which = 90000655 } 
-	}
-}
-event = {
-	id = 90000654 # Spain backs down!
-	random = no
-	country = USA	
-	
-	trigger = {
-		event = 90000652
-	}
-	name = EVT_90000654_NAME  # Spain backs down!
-	desc = EVT_90000654_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-	
-	date = { day = 1 month = january year = 1948 } 
-	offset = 10 # 90
-	deathdate = { day = 30 month = december year = 1963 }
-
-	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = dissent value = -5 }
-	}
-}
-event = {
-	id = 90000655 # Spanish-Italian Union!
-	random = no
-	country = ITA	
-	
-	name = EVT_90000655_NAME  # Spanish-Italian Union!
-	desc = EVT_90000655_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-	
-	action = {
-	name = ACTION_NAME_GREAT
-	command = { type = dissent value = -5 }
-	command = { type = 	make_puppet which = SPA }
-	command = { type = trigger which = 90000657 } 
-	}
-}
-event = {
-	id = 90000656 # USA takes over Spain
-	random = no
-	country = GER	
-	
-	name = EVT_90000656_NAME  
-	desc = EVT_90000656_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-
-	action_a = {
-	name = EVT_90000656_A # Reinstall the Falangists and declare war on the Allies!
-	ai_chance = 30
-	command = { type = 	coup_nation which = SPA }
-	command = { type = domestic which = interventionism value = 1 }
-	command = { type = 	war which = USA }
-	}
-	action_b = {
-	name = EVT_90000656_B # Back down
-	ai_chance = 70
-	command = { type = domestic which = interventionism value = -1 }
-	}
-}
-event = {
-	id = 90000657 # Take over Spanish colonies?
-	random = no
-	country = U01	
-	
-	name = EVT_90000657_NAME  
-	desc = EVT_90000657_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-
-	action_a = {
-	name = ACTION_NAME_YES
-	ai_chance = 70
-	command = { type = domestic which = interventionism value = 1 }
-	command = { type = addclaim which = 715 }       
-	command = { type = addclaim which = 716 }
-	command = { type = addclaim which = 913 } 
-	command = { type = addclaim which = 916 }
-	command = { type = addclaim which = 987 } 
-	command = { type = addclaim which = 988 }
-	command = { type = addclaim which = 989 }
-	command = { type = trigger which = 90000658 }
-	}
-	action_b = {
-	name = ACTION_NAME_NO
-	ai_chance = 30
-	command = { type = domestic which = interventionism value = -1 }
-	}
-}
-event = {
-	id = 90000658 # Free France takes over our colonies!
-	random = no
-	country = SPA	
-	
-	name = EVT_90000658_NAME  
-	desc = EVT_90000658_DESC
-	style = 2
-	picture = "mittelmeerdivision2"			
-
-	action_a = {
-	name = ACTION_NAME_DAMN
-	ai_chance = 70
-	command = { type = dissent value = 5 }
-	command = { type =	secedeprovince which = U01 value = 715 }
-	command = { type =	secedeprovince which = U01 value = 716 }
-	command = { type =	secedeprovince which = U01 value = 913 }
-	command = { type =	secedeprovince which = U01 value = 916 }
-	command = { type =	secedeprovince which = U01 value = 987 }
-	command = { type =	secedeprovince which = U01 value = 988 }
-	command = { type =	secedeprovince which = U01 value = 989 }
-	}
-}
