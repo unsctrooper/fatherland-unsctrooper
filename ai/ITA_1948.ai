@@ -220,7 +220,6 @@ construction = {
 	coastal_fort_provs = { 
 		430 #Palermo
 		422 #Taranto
-		396 #Genoa
 	} 
 
 	radar_station = not_atwar 

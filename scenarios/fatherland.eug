@@ -3,8 +3,8 @@ panel      = "scenarios/data/fatherland.bmp"
 header = {
 	name       = "Fatherland"
 	startdate  = { year = 1948 }
-	selectable = { AFG ARG AST BLR BHU BOL BRA BUL CAN CHC CXB CHI TRA COS CRO CUB DEN DOM ECU EGY ENG FIN U01 GER GUA HAI HON HUN ICL INO IRQ IRE ITA JAP JOR LEB UTC LIB LIT MEX MON MTN NEP NIC NZL OMN PAN PAR PER POR PRU PHI ROM SAF SAU SLO SIK SOV SPA SYR SWE TAN SIA TIB TUR URU USA VEN YEM 
-				   U47 U42 U44 HOL U45 U46 U40 U03 U41 IND BEL WLL PAK FRA CMB LAO VIE ETH}  
+	selectable = { AFG ARG AST BHU BOL BRA BUL CAN CHC CXB CHI TRA COS CRO CUB DEN DOM ECU EGY ENG FIN U01 GER GUA HAI HON HUN ICL INO IRQ IRE ITA JAP JOR LEB UTC LIB MEX MON MTN NEP NIC NZL OMN PAN PAR PER POR PRU PHI ROM SAF SAU SLO SIK SOV SPA SYR SWE TAN SIA TIB TUR URU USA VEN YEM 
+				   U42 U44 HOL U45 U46 U40 U03 U41 IND BEL WLL PAK FRA CMB LAO VIE ETH SER BLR }  
   GER        = { }
   ITA        = { }
   FIN 	     = { }
@@ -24,7 +24,7 @@ globaldata = {
 	startdate = { year = 1948 month = january day = 1 }
 	axis = { 
 		id = { type = 15000 id = 2 }
-		participant = { GER BLR SLO ITA BUL CRO FIN MTN U44 UTC U47 U46 U45 U41 U40 U42 LIT WLL FLA HUN ROM }
+		participant = { GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR }
 	}
 	allies = { 
 		id = { type = 15000 id = 1 }
@@ -729,22 +729,21 @@ include = "scenarios\fatherland\bases.inc"
 
 #NEW NATIONS
 #EUROPE
-include = "scenarios\fatherland\belarus.inc"
 include = "scenarios\fatherland\ostland.inc" #U40
+include = "scenarios\fatherland\belarus.inc"
 include = "scenarios\fatherland\caucasus.inc" #U42
 include = "scenarios\fatherland\cossack.inc" #TRA
 include = "scenarios\fatherland\denmark.inc"
 include = "scenarios\fatherland\generalgovernment.inc" #U44
 include = "scenarios\fatherland\lokot.inc"
-include = "scenarios\fatherland\lithuania.inc"
 include = "scenarios\fatherland\occupiednetherlands.inc" #U46
-include = "scenarios\fatherland\occupiedbelgium.inc" #U47
 include = "scenarios\fatherland\occupiedbelgium(wallonia).inc" #WLL
 include = "scenarios\fatherland\occupiedbelgium(flanders).inc" #WLL
 include = "scenarios\fatherland\occupiednorway.inc" #U45
 include = "scenarios\fatherland\ukraine.inc" #U41
 include = "scenarios\fatherland\iceland.inc"
 include = "scenarios\fatherland\vichy france.inc"
+include = "scenarios\fatherland\serbia.inc"
 #Asia
 include = "scenarios\fatherland\philippines.inc"
 include = "scenarios\fatherland\china xibei.inc"

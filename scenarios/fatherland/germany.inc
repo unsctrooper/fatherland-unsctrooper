@@ -80,8 +80,8 @@
 		216 # South Jutland
 		110 # Eupen
 		109 # Luxembourg
-		226 230 222 # Poland (cores)
-		#104 105 107 # Alsace
+		226 230 222 231 232 227 223 # Poland (cores)
+		104 105 107 # Alsace
 
                              } 
    ownedprovinces         = {  126  145  127  131  142  147  141  137  174  171  176  146  148  
@@ -105,16 +105,15 @@
 		104 105 107 # Alsace
 		
 		#Non-National provinces
-		338 339 340 330 342 327 # Military Administration of Serbia 
 		377 382 383 # Military Administration of Greece
 		553 # Military Administration of Leningrad
 		98 97 106 96 # Military Administation of France (Zone réservée)
 		101 102 103 # Military Administation of France (Zone interdite)
 		69 68   37  39   # 45 43 44 46 53 50 67 57 38 40 41 42# Military Administration of France (Atlantic Wall)
 		336 # Banat region of Serbia 
-		217 218 220 # Jutland Peninsula (216 is South Jutland)
 		346 # Maribor
 		227 231 252 223 229 250 253 254 255 # Poland (claims)
+	    50 53 45 43 44 46
 		
 		#Brussels
 		116
@@ -154,15 +153,14 @@
 		104 105 107 # Alsace
 		
 		#Non-National provinces
-		338 340 330 342 327 # Military Administration of Serbia 
 		377 382 383 # Military Administration of Greece
 		553 # Military Administration of Leningrad
 		101 102 103 106 96 97 98 # Military Administation of France (Zone interdite)
 		69 68   37  39  # 42 43 44 46 45 50 53 67 57 40 41 38# Military Administration of France (Atlantic Wall)
-		336 339 # Banat&Bor region of Serbia 
-		217 218 220 # Jutland Peninsula (216 is South Jutland)
+		336 # Banat&Bor region of Serbia 
 		346 # Maribor
 		227 231 252 223 229 250 253 254 255 # Poland (claims)
+	    50 53 45 43 44 46
 		
 		#Brussels
 		116
@@ -184,12 +182,11 @@
 	} 
 claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908 909 910 919 911 928 925 933 936  # Afrika
 1605 1602 1668 1667 1727 1726 1725 1665 1587 1675 1674 1681 1677 1603 1610 1234 1666 1669 1670 1671 1676 1684 1685 1686 # Pacific
-1731 #Apia
+1731 #Asia
 1328 # Qingdao
 346 # Maribor
-227 231 252 223 229 250 253 254 255 # Poland
-338 340 330 342 327 # Military Administration of Serbia 
-336 339 # Banat&Bor
+252 229 250 253 254 255 # Poland
+336 # Banat
 553 # Military Administration of Leningrad
 116 #Brussels
 }
@@ -345,7 +342,7 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 1 
      political_left    = 1 
-     free_market       = 5 
+     free_market       = 2 
      freedom           = 1 
      professional_army = 7
      defense_lobby     = 10 

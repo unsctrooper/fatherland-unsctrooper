@@ -75,16 +75,16 @@
  # Ingria
  549 552 560 564 565 566 551	550
  # parts of russia
- 561 573       } 
+ 561 573 262 259 263 260 258 } 
    controlledprovinces    = {
  # Estonia
  274 275 271 272 273 270
  # Latvia
  267 269 268 264 266 265
  # Ingria
- 549 552 560 564 565 566 551	550
+ 549 552 560 564 565 566 551 550
  # parts of russia
- 561 573    } 
+ 561 573 262 259 263 260 258 } 
 claimedprovinces = { }
  
 	# Germany 1944.06 techs 

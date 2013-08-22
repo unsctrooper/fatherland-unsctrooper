@@ -13,7 +13,8 @@
 # 730-760			# Marshall Plan Events
 # 800-820 			# Nuclear Programs
 # 900-915 			# Serbia + Banat
-# 1800-?			# Colonials
+# 1800-1900			# Colonials
+# 2000-2100                     # German Domestic Events
 # 90000000-90000037 # Transylvania
 # 90000100-90000114 # Abadan crisis
 # 90000200-90000299 # Volksgrenadier
@@ -26,4 +27,4 @@
 # 8012601-8012604 	# South Africa
 # 8200000-8200001	# Formation of army of two Koreas
 # 91664-91679 		# Ethiopia
-# 92000-?			# Kaukasus
+# 92000-?	        # Kaukasus

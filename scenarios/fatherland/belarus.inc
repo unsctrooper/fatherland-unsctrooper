@@ -10,8 +10,7 @@
  country = 
  {  tag                    = BLR 
    name = "Belarussian Central Rada"
-   puppet = GER
-   control = GER
+   puppet = U40
    #ai                     = "GER_1942.ai"
    
    capital                = 599 

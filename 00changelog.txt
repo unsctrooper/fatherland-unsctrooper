@@ -3,6 +3,7 @@
 ####################################
 
 # Bug fixing:
+- Fixed Soviet Union Claims
 - Fixed South Africa referendum chain
 - Fixed Vladivostok Conference
 - Fixed Transylvania War localization(90000010C)
@@ -22,6 +23,8 @@
 - New Banat Economic Exploitation events
 
 # Scenario files (INC):
+- Implementation of a Serbian State in 1948
+- Review of German cores, puppets and borders
 - Review of IC Germany/USSR 
 - Review of Reichskommissariat Kaukasus
 - Review of Reichskommissariat Ostland
@@ -39,7 +42,7 @@
 
 #Other
 - Remove duplicate files
-- Implementing of Cold War Tech Tree Expansion
+- Implementing of Cold War Tech Tree Expansion 
 - Add 2 ministers for Goralenvolk and Galizia
 
 ####################################

@@ -75,9 +75,9 @@
    SpyInfo                = {  country = "FLA" NumberOfSpies = 7  } 
    
    nationalprovinces      = { 115 116 } 
-   ownedprovinces         = { 115 117 114 } 
-   controlledprovinces    = { 115 117 114 } 
-	claimedprovinces 	  = {  49 51 52 } 
+   ownedprovinces         = { 115 117 114 49 51 52 } 
+   controlledprovinces    = { 115 117 114 49 51 52 } 
+	claimedprovinces 	  = { } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 

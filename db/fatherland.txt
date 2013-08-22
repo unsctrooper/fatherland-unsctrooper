@@ -11,6 +11,8 @@ event = "db\events\fatherland\ger\hitlerdied.txt"
 event = "db\events\fatherland\ger\generalgovernment.txt"
 #event = "db\events\fatherland\ger\volksgrenadier.txt"
 event = "db\events\fatherland\ger\kaukasus.txt"
+event = "db\events\fatherland\ger\domestic.txt"
+
 
 # EUROPE
 event = "db\events\fatherland\europe\freefrance.txt"
