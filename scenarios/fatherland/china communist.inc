@@ -32,6 +32,7 @@ rare_materials         = 60
      relation = {  tag = MON value = 25  }
      relation = {  tag = U67 value = 50  } 
      relation = {  tag = SIK value = 40  }
+	 relation = {  tag = PRK value = 200 access = yes }
     } 
    SpyInfo                = {  country = "CHC" NumberOfSpies = 3  } 
    nationalprovinces      = {   

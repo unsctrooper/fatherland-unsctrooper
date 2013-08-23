@@ -1,44 +1,45 @@
-# Soviet 1936 AI File by Lothos
+##############################
+# AI definition for SOV #
+# Review by Pako #
+##############################
 
 switch = no # [yes/no]
-max_front_ratio = 1.5 
+max_front_ratio = 2
 max_front_ratios = {
-	FIN = 0.15 #0.5 # 0.7
-	ROM = 1.0 # 1.0
+	FIN = 0.50
+	ROM = 1.0
 	GER = 10.0
 	ITA = 2.0
-	JAP = 1.2
+	TRA = 0.25
 }
 max_garrison_prop = 0.70
-min_garrison_prop = 0.10
-neutrality = 100.000 
+min_garrison_prop = 0.20
+neutrality = 200
 war = 0
-reinforcement = 0.0000
-upgrading = 0.0000 
-desperation = 0.3
-strat_redeploy_threshold = 50
+reinforcement = 0.50
+upgrading = 0.50
+desperation = 0.30
+strat_redeploy_threshold = 25
 max_redeploying = 0.05
 exp_force_ratio = 0.10
-exp_force_ratios = { } 
-no_exp_forces_to = { FIN JAP SIA MAN VIC }
+no_exp_forces_to = { }
 
 ###################################
 # Diplomacy
 ###################################
-combat = { }
+combat = { 
+}
 
-claim_acceptance = -69
+claim_acceptance = -100
 
 liberate = { U10 U11 U12 U13 U14 U15 U17 U18 U19 U20 U21 U22 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 PRK MON CHC }
 
-liberate_nation = { PRK }
-
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = {  
-	GER = 1 
-	ENG = 2
-	FRA = 2
-	USA = 2
+	GER = 10
+	ENG = 8
+	U01 = 8
+	USA = 10
 	JAP = 2
 }
 demand_claims = {
@@ -47,33 +48,38 @@ demand_claims = {
 	ROM
 	LIT
 	FIN
+	AFG
+	JAP
+	CHI
+	GER
 }
 befriend = {
-	ENG = 10
-	ROM = 50
-	BUL = 40 
-	TUR = 60 
-	POL = 20 
-	YUG = 40
-	PER = 60 
-	SPR = 100
 	MON = 100
-	TAN = 100
+	#CHC = 100
+	#PRK = 100
+	ENG = 30
+	U01 = 40
+	USA = 10
+	TUR = 10 
 }
 protect = {
-	PER = 80 
-	ROM = 80 
-	TUR = 80
-	POL = 10
-	LAT = 50
-	EST = 50
-	LIT = 50
-	FIN = 50
-	TAN = 50
-	MON = 50
-	AFG = 50
+	MON = 100 
+	#CHC = 100 
+	#PRK = 100
 }
-target = { } 
+target = { 
+	572 = 100 #Moscow
+	553 = 90 #Leningrad
+	663 = 90 #Stalingrad
+	713 = 80 #Baku
+	599 = 70 #Minsk
+	264 = 70 #Riga
+	617 = 70 #Kiev
+	163 = 60 #Berlin
+	284 = 50 #Budapest
+	311 = 50 #Ploesti
+	525 = 50 #Helsinki
+} 
 trade = {
 	cancel_deal_threshold = 2
 
@@ -85,34 +91,26 @@ trade = {
 	money 		= -1
 
 	favored = {
-		GER = 90
-		SWE = 20
-		ITA = 50
-		SPR = 60
-		BUL = 40
-		YUG = 40
-		TUR = 50
-		ROM = 30
+		MON = 100
+		CHC = 100
+		PRK = 100
+		ENG = 60
+		U01 = 40
 		JAP = 40
-		CHI = 50
+		USA = 50
+		AST = 30
+		NZL = 40
+		POR = 50
 	}
-	embargo = { }
+	embargo = { GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR }
 }
 tech_sharing = {
 	favored = {
-		GER = 20
-		SWE = 20
-		ITA = 50
-		SPR = 60
-		BUL = 40
-		YUG = 40
-		TUR = 50
-		ROM = 30
-		JAP = 20
-		TAN = 20
-		MON = 20
+		MON = 100
+		CHC = 100
+		PRK = 100
 	}
-	embargo = { }
+	embargo = { GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR }
 	not = { }
 	prioritized = { }
 }
@@ -121,18 +119,18 @@ tech_sharing = {
 ###################################
 spyprefs =
 {
-	percentage_on_spies 		= 0.2
-	percentage_foreign_mission 	= 0.8
+	percentage_on_spies 		= 0.3
+	percentage_foreign_mission 	= 0.9
 
 	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
 	{
-		NumberOfSpies = 20
+		NumberOfSpies = 35
 		min_number_of_spies = 3
 		steal_blueprint = 10
 		minister_assassination = 5
 		smear_campaign 	= 10
-		coup = 3
+		coup = 4
 		sabotage_industry = 10
 		nuclear_sabotage = 5
 		found_partisans	= 10
@@ -142,13 +140,13 @@ spyprefs =
 	}
 	spyprefsdata = {
 		country_priorities	= 10
-		steal_blueprint 	= 8 # 10
-		minister_assassination          = 1
-		smear_campaign 		= 4
+		steal_blueprint 	= 10
+		minister_assassination = 1
+		smear_campaign 		= 5
 		coup 				= 0
-		sabotage_industry 	= 7 # 5
-		nuclear_sabotage 	= 0
-		found_partisans		= 4 # 2
+		sabotage_industry 	= 8
+		nuclear_sabotage 	= 1
+		found_partisans		= 6
 		massmedia 			= 1
 		disrupt_techteam 	= 5
 		country 			= GER
@@ -237,19 +235,26 @@ spyprefs =
 ###################################
 #Default values
 construction = { 
-	max_factor = 0.500
+	max_factor = 0.50
 
-	AA_batteries = no
+	AA_batteries = not_atwar
+	max_AA_level = 4
+	
 	coastal_fort = no
-	radar_station = no 
+	
+	radar_station = not_atwar 
+	max_radar = 5 
+	
 	air_base = no
 	naval_base = no 
 	land_fort = no
+	
 	ic_at_war = no
 	force_ic_until = 1951
 	ic_end_year = 1953
+	
 	nuclear_reactor = yes	
-	nuclear_reactor_prov = 1070
+	nuclear_reactor_prov = 1138
 	max_nuclear = 10
 }
 
@@ -258,14 +263,14 @@ military = {
 	max_batch_peace 		= 680 
 	max_batch_war 			= 320 
 	max_batch_home_front = 180
-        extra_convoys_war = 0.000 
-        extra_convoys_peace = 0.000 
+	extra_convoys_war = 0.000 
+	extra_convoys_peace = 0.000 
 
 
 	#### Divisions etc... Sov build land setting
-	infantry 		= 57
+	infantry = 55
 	cavalry 	= 0
-	motorized 		= 6
+	motorized 		= 8
 	mechanized 	= 0
 	light_armor 	= 0
 	armor 			= 10
@@ -408,7 +413,7 @@ garrison = {
 }
 
 front = { 
-	recklessness 		= 3 # 0-3
+	recklessness 		= 3
 	distrib_vs_ai 		= offensive
 	distrib_vs_human 	= offensive
 

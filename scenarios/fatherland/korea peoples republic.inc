@@ -33,6 +33,7 @@ country = {
 		relation = { tag = SOV value = 100 }
 		relation = { tag = USA value = -100 }
 		relation = { tag = KOR value = -100 }
+		relation = { tag = CHC value = 200 access = yes }
 	}
 	
 	nationalprovinces = { 1230 1232 1231 1233 1228 1229 1223 1221 1222 1225 1226 1227 1224 }

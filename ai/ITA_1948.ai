@@ -14,7 +14,7 @@ upgrading = 0.20
 strat_redeploy_threshold = 35
 max_redeploying = 0.05
 exp_force_ratio = 0.50
-no_exp_forces_to = { JAP SIA MAN }
+no_exp_forces_to = { }
 
 ###################################
 # Diplomacy
@@ -24,8 +24,8 @@ combat = {
 
 claim_acceptance = -100
 
-demand_claims = { FRA U01 ENG GRE }
-liberate = { SCH SPA POR CRO SER HUN ROM TUR FRA }
+demand_claims = { FRA U01 ENG GRE CRO }
+liberate = { SCH SPA POR CRO SER HUN ROM TUR FRA AUS }
 resistance = { 
 	ENG = 10
 	U01 = 10
@@ -42,7 +42,6 @@ befriend = {
 	CRO = 60
 	SWE = 10
 	FIN = 20
-	JAP = 20
 	POR = 20
 	TUR = 30
 }
@@ -85,7 +84,7 @@ trade = {
 		SLO = 20
 	}
 	
-	embargo = { ENG USA U01 AST NZL CAN BEL SOV MON }
+	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
 }
 tech_sharing = {
 	favored = {
@@ -101,7 +100,7 @@ tech_sharing = {
 		JAP = 150
 		TUR = 80
 	}
-	embargo = { ENG USA U01 AST NZL CAN BEL SOV MON }
+	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
 	not = { }
 	prioritized = { }
 }
@@ -202,7 +201,7 @@ spyprefs =
 construction = { 
 	max_factor = 0.50 
 
-	AA_batteries = no
+	AA_batteries = not_atwar
 	max_AA_level = 4
 	
 	AA_provs = { 

@@ -41,6 +41,7 @@ event = "db\events\fatherland\asia\sinkiang.txt"
 
 # COMINTERN
 event = "db\events\fatherland\comintern\comintern_conference.txt"
+event = "db\events\fatherland\comintern\soviet_union.txt"
 
 # AMERICAS
 event = "db\events\fatherland\americas\marshallplan.txt"

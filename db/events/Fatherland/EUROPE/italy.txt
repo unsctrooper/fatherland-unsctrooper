@@ -244,7 +244,7 @@ event = {
 		command = { type = dissent value = 1 }
 		command = { type = flag_ext where = ITA which = _rsi }
 		command = { type = name where = ITA which = "Italian Social Republic" }
-		command = { type = headofstate which = 282 } # Junio Borghese, Radicals 
+		command = { type = headofstate which = 25017 } # Paolo Thaon di Revel, Borghese HoG 
 	}
 	action = { #Radicals at Power
 		name = "No, we cannot risk others unrest"
@@ -2240,7 +2240,7 @@ event = {
 		name = EVT_315_B # War!
 		ai_chance = 50
 		command = { type = relation which = ITA value = -200 }
-		command = { type = dissent value = 1 }
+		command = { type = dissent value = 3 }
 		command = { type = war which = ITA }
 		command = { type = addcore which = 402 }
 		command = { type = addcore which = 401 }

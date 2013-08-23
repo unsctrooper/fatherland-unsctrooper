@@ -1,104 +1,133 @@
-  ############################## 
- # Country definition for SOV # 
- ############################## 
-
- ##################### 
- # Country main data # 
- ##################### 
+    ##############################
+    # Country definition for SOV #
+	# Review by Pako #
+    ##############################
+     
+    #####################
+    # Country main data #
+    #####################
   
- country = 
- {  tag                    = SOV 
-   regular_id             = RUS 
-   intrinsic_gov_type     = leninist 
-   #ground_def_eff         = 0.88
-   capital                = 1138 
-   # Resource Reserves 
-energy                 = 50000
-metal                  = 50000
-rare_materials         = 5000
-   oil                    = 5000 
-   supplies               = 5000 
-   money                  = 100 
-   manpower               = 2000
-   transports             = 30 
-   escorts                = 15 
+	country = 
+	{  tag = SOV 
+	   regular_id = RUS 
+	   intrinsic_gov_type = leninist 
+	   capital = 1138 
+	   energy = 71235
+       metal = 48521
+	   rare_materials = 5369
+       oil = 4250 
+       supplies = 7890 
+       money = 550 
+       manpower = 1800
+       transports = 30 
+       escorts = 15 
     
-  diplomacy =
-  { relation = { tag = AFG value = -10 }
-    relation = { tag = BRA value = -50 }
-    relation = { tag = BUL value = -150 }
-    relation = { tag = CHI value = -50 }
-	relation = { tag = CHC value = 50 }
-    relation = { tag = ENG value = 150 }
-    relation = { tag = FIN value = -50 }
-    relation = { tag = U01 value = 100 }
-	relation = { tag = PRK value = 200 access = yes}
-    relation = { tag = GER value = -200 }
-    relation =
-    { tag        = MON
-      value      = 150
-      guaranteed = { day = 8 month = april year = 1947 }
-      access     = yes
-    }
-    relation = { tag = PER value = -20 }
-    relation = { tag = ROM value = -150 }
-    relation =
-    { tag        = SIK
-      value      = 125
-      guaranteed = { day = 30 month = december year = 1947 }
-	  access = yes
-    }
-    relation = { tag = SPA value = -100 }
-    relation = { tag = TUR value = 20 }
-    relation = { tag = URU value = -100 }
-    relation = { tag = USA value = 175 }
-  }
-
-   SpyInfo                = {  country = "SOV" NumberOfSpies = 10  } 
+		diplomacy = { 
+		#Neutral AFG ARG BOL BRA CHI TRA DEN ECU IRE MEX MTN PAR PER POR SYR SWE URU PAK
+			relation = { tag = AFG value = -100 }
+			relation = { tag = CHI value = -100 }
+			relation = { tag = SAU value = -50 }
+			relation = { tag = SYR value = 30 }	
+			relation = { tag = PAK value = -100 }
+			relation = { tag = IND value = -50 }
+			relation = { tag = ARG value = -50 }
+			relation = { tag = URU value = -50 }
+			relation = { tag = BOL value = -50 }
+			relation = { tag = BRA value = -50 }
+			relation = { tag = PAR value = -50 }
+			relation = { tag = MEX value = -50 }
+			relation = { tag = CHL value = -30 }
+			relation = { tag = ECU value = -20 }			
+			relation = { tag = DEN value = -100 }
+			relation = { tag = TUR value = -25 }
+			relation = { tag = IRE value = -10 }
+			relation = { tag = TRA value = -50 }
+			relation = { tag = POR value = -65 }
+			relation = { tag = SPA value = -85 }
+			relation = { tag = SCH value = -25 }
+			relation = { tag = FRA value = -150 }	
+			relation = { tag = SWE value = -10 }
+			relation = { tag = SER value = -100 }
+		#Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
+			relation = { tag = AST value = -100 }
+			relation = { tag = BEL value = -10 }
+			relation = { tag = BHU value = -10 }
+			relation = { tag = CAN value = -200 }
+			relation = { tag = EGY value = -50 }
+			relation = { tag = ENG value = 50 }
+			relation = { tag = ETH value = -0 }
+			relation = { tag = U01 value = 50 }
+			relation = { tag = HOL value = -20 }
+			relation = { tag = IRQ value = -15 }	
+			relation = { tag = NEP value = -20 }
+			relation = { tag = NIC value = 20 }
+			relation = { tag = NZL value = -20 }
+			relation = { tag = OMN value = -10 }	
+			relation = { tag = SAF value = -150 }
+			relation = { tag = YEM value = -10 }
+			relation = { tag = JAP value = -125 }
+		#Comintern CHC SOV MON
+			relation = { tag = CHC value = 150 }
+			#relation = { tag = SOV value = -200 }
+			relation = { tag = MON value = 200 access = yes guaranteed = { day = 27 month = september year = 1943 } }
+		#Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR
+			relation = { tag = GER value = -200 }
+			relation = { tag = BUL value = -200 }
+			relation = { tag = CRO value = -200 }
+			relation = { tag = SLO value = -200 }
+			relation = { tag = FIN value = -200 }
+			relation = { tag = HUN value = -200 }
+			relation = { tag = MTN value = -200 }
+			relation = { tag = ROM value = -200 }
+			relation = { tag = UTC value = -200 }
+			relation = { tag = ITA value = -200 }
+	}
     
-   nationalprovinces      = {  1119 498 499 500 501 502 503 504 505 506 507 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641 642 643 644 645 646 647 648 649 650 651 652 653 654 655 656 657 658 659 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 1069 1070 1097 1098 1099 1100 1101 1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1112 1113 1114 1115 1116 1117 1118 1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 1138 1139 1140 1141 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 1152 1153 1154 1155 1156 1157 1158 1161 1162 1163 1164 1165 1166 1167 1168 1169 1170 1171 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 1195 1196 1541 1542 
-                             }						 
-   ownedprovinces         = {  1191  1193 1192 1196 1195 1190 1187 1188 1175 1174 1541 1189 1176 1180     1181 1182 1183 1184  
-                              1194 1179 1178 1168 1177 1169 1164 1163 1162 1167  1166 1186     1165 1150 1154    1153 
-                              1152 1145 1146 1147 1158 1156    1157 1144 1143 1129 1142 1140 1148 685 1155 544 546   545  
-                                       1138 1139  1136 1135           
-                                 1151 1130 1137  1132  1133            689 688 542  
-                              686 681 543  547                      
-                                       666  1134     706       667     
-                              684                             680      676  548      
-                                                    660                                     1185   
-                                 1149 1141   
-                   
-         1126 1127 1128 1069 1070 1161 1170 1171                
+    
+   nationalprovinces = {  1119 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 
+						  551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 
+						  580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 600 601 602 603 604 605 606 607 608 609 
+						  610 611 612 613 614 615 616 617 618 619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 
+						  640 641 642 643 644 645 646 647 648 649 650 651 652 653 654 655 656 657 658 659 660 661 662 663 664 665 666 667 668 669 
+						  670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 
+						  700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 1069 1070        
+						  1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 
+						  1138 1139 1140 1141 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 1152 1153 1154 1155 1156 1157 1158 1161 1162 1163 
+						  1164 1165 1166 1167 1168 1169 1170 1171 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1185 1186 1187 1188 1189 
+						  1190 1191 1192 1193 1194 1195 1196 1541 1542 
+                        }						 
+   ownedprovinces = {  1191 1193 1192 1196 1195 1190 1187 1188 1175 1174 1541 1189 1176 1180 1181 1182 1183 1184 1194 1179 1178 1168 1177 1169 
+					   1164 1163 1162 1167  1166 1186 1165 1150 1154 1153 1152 1145 1146 1147 1158 1156 1157 1144 1143 1129 1142 
+					   1140 1148 685 1155 544 546 545 1138 1139  1136 1135 1151 1130 1137  1132  1133 689 688 542  
+                       686 681 543  547 666  1134 706 667 684 680 676  548 660 1185 1149 1141   
+					   1126 1127 1128 1069 1070 1161 1170 1171                
 		   
-#Idel-Ural 
-672 664 #Tatarstan 
-690 1131 # Bashkortostan 
-671 #Udmurt Republic
-673 # Mari El
-687 # Perm Krai
+						#Idel-Ural 
+						672 664 #Tatarstan 
+						690 1131 # Bashkortostan 
+						671 #Udmurt Republic
+						673 # Mari El
+						687 # Perm Krai
 
+						#Central Asia
+						#Kazakhstan
+						506 507 505 500 498 504 1114 1117 1118 1116 503 1110 1108 1113 1115 1111 502 499 1109 1112 501 
+						#Turkmenistan
+						1097 1098   
+						#KYG
+						1107 1106  
+						#UZB
+						1101 1102 1100 1103 1099
+						#TAD
+						1105 1104 	 
 
+						1542 #South Sahalin
+						1543 # Kurils
 
-#Central Asia
-#Kazakhstan
-506 507 505 500 498 504 1114 1117 1118 1116 503 1110 1108 1113 1115 1111 502 499 1109 1112 501 
-#Turkmenistan
-1097 1098   
-#KYG
-1107 1106  
-#UZB
-1101 1102 1100 1103 1099
-#TAD
-1105 1104 	 
+						1280 # Occupied East Turkestan
 
-1542 #South Sahalin
-1543 # Kurils
-
-1280 # Occupied East Turkestan
-
-1119 # Tannu Tuva
-  }  
+						1119 # Tannu Tuva
+					}  
 
    controlledprovinces    = {  1191  1193 1192 1196 1195 1190 1187 1188 1175 1174 1541 1189 1176 1180     1181 1182 1183 1184  
                               1194 1179 1178 1168 1177 1169 1164 1163 1162 1167  1166 1186     1165 1150 1154    1153 
@@ -159,7 +188,9 @@ rare_materials         = 5000
  300 302  303 304 305 306
    } 
 
-   # Soviet Techs 1944.12
+   SpyInfo = { country = "SOV" NumberOfSpies = 10 }
+   
+   # Soviet Techs
    # ################ 
 	techapps = {
 
@@ -187,28 +218,28 @@ rare_materials         = 5000
 	5920
 	
 	# Infantry Division  
-	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120
+	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130
 	# Mountain Division 
-	1160 1170 1180 1190 1200 1210 1220 1230 1240 1250 1260 1270
+	1160 1170 1180 1190 1200 1210 1220 1230 1240 1250 1260 1270 1280
 	# Marines
-	1560 1570 1580 1590 1600 1610
+	1560 1570 1580 1590 1600 1610 1620
 	# Paratroopers
-	1670
+	1670 1680
 	# Motorized Inf
-	1396 1400 1410
+	1396 1400 1410 1420
 	# Cavalry
 	13060 13070 13080 1310 1320 1330 1340 1350 1360 1370 1380 1390 1530
 	# Mechanized Inf
 	1470
 	# Engineers
-	1830 1840 1850 1860 1870
+	1830 1840 1850 1860 1870 1880
 	# Supply 
 	1910 1920 1930 1940 1950 1960 1970 1980 1990 199100 199130 199140
 
 	# Early/Light Tank 
 	7600 7610 2620 2010 2630 2640 2646 2650 2030 2040 2050 2100 2110
 	# Medium Tank
-	2070 2080 2090
+	2070 2080 2090 
 	# Armoured Car  
 	2860 2870 2880 2020 2150
 	# Field Artillery 
@@ -218,18 +249,18 @@ rare_materials         = 5000
 	# Self-Propelled Rocket
 	2980
 	# Anti-tank Artillery
-	2400 2410
+	2400 2410 2420
 	# Static Anti-Air Artillery 
 	2800 2450 21180 21190 21200 2460
 	# Anti-air Brig
 	2810 2820 2510 2520 2530
 	# Tank Destroyer
-	2170 2180
+	2170 2180 2190
 	#Rocket Artillery
 	2970
  
  	# Hospital System 
-	14000 14010 14020 14030
+	14000 14010 14020 14030 14040
 	# Great War Land Doctrines (central powers)
 	6500 6510 6530 6550 6590 6600 6620 6650 6670 6610 6680 6690 6700 6710 6910
 	# Land Doctrines
@@ -295,7 +326,7 @@ rare_materials         = 5000
  	} 
 
 inventions = { 3000027 }
-   blueprints             = {   } 
+   blueprints             = { } 
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 1 

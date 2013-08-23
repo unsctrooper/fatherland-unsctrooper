@@ -22,22 +22,37 @@
 		escorts                = 35
  
 		diplomacy = { 
-		#Neutral
+		#Neutral AFG ARG BOL BRA CHI TRA DEN ECU IRE MEX MTN PAR PER POR SYR SWE URU PAK
 			relation = { tag = AFG value = 0 }
-			relation = { tag = ARG value = 30 }
 			relation = { tag = CHI value = 25 }
+			relation = { tag = SAU value = -25 }
+			relation = { tag = SYR value = 10 }	
+			relation = { tag = PAK value = 50 }
+			relation = { tag = IND value = 0 }
+			relation = { tag = ARG value = 30 }
+			relation = { tag = URU value = 30 }
+			relation = { tag = BOL value = 25 }
+			relation = { tag = BRA value = -25 }
+			relation = { tag = PAR value = 0 }
+			relation = { tag = MEX value = -25 }
 			relation = { tag = CHL value = 30 }
+			relation = { tag = ECU value = 25 }			
+			relation = { tag = DEN value = 100 }
 			relation = { tag = TUR value = 50 }
+			relation = { tag = IRE value = 0 }
+			relation = { tag = TRA value = 50 }
 			relation = { tag = POR value = 65 }
 			relation = { tag = SPA value = 85 guaranteed = { day = 18 month = november year = 1940 } }
-			relation = { tag = SAU value = -25 }
 			relation = { tag = SCH value = -25 }
 			relation = { tag = FRA value = 50 }	
-		#Allies
+			relation = { tag = SWE value = 50 }
+			relation = { tag = SER value = 10 }
+		#Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
 			relation = { tag = AST value = -200 }
 			relation = { tag = BEL value = -200 }
 			relation = { tag = BHU value = -200 }
 			relation = { tag = CAN value = -200 }
+			relation = { tag = EGY value = -100 }
 			relation = { tag = ENG value = -200 }
 			relation = { tag = ETH value = -200 }
 			relation = { tag = U01 value = -200 }
@@ -49,16 +64,22 @@
 			relation = { tag = OMN value = -100 }	
 			relation = { tag = SAF value = -200 }
 			relation = { tag = YEM value = -100 }
-		#Axis
+			relation = { tag = JAP value = -125 }
+		#Comintern CHC SOV MON
+			relation = { tag = CHC value = -150 }
+			relation = { tag = SOV value = -200 }
+			relation = { tag = MON value = -100 }
+		#Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR
 			relation = { tag = GER value = 180 guaranteed = { day = 27 month = september year = 1940 } }
 			relation = { tag = BUL value = 150 }
 			relation = { tag = CRO value = 180 access = yes guaranteed = { day = 1 month = may year = 1941 } }
 			relation = { tag = SLO value = 120 }
 			relation = { tag = FIN value = 100 }
 			relation = { tag = HUN value = 175 guaranteed = { day = 20 month = november year = 1940 } }
-			relation = { tag = JAP value = 125 guaranteed = { day = 27 month = september year = 1940 } }
 			relation = { tag = MTN value = 200 access = yes guaranteed = { day = 1 month = may year = 1941 } }
 			relation = { tag = ROM value = 150 guaranteed = { day = 20 month = november year = 1940 } }
+			relation = { tag = UTC value = 50 }
+			#relation = { tag = ITA value = 150 access = yes }
 	}
   
     nationalprovinces 	= { 430 431 425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434 350 343   
