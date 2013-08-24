@@ -8,6 +8,7 @@ header = {
   GER        = { }
   ITA        = { }
   FIN 	     = { }
+  SPA        = { }
  
   ENG        = { }
   USA        = { }
@@ -16,8 +17,6 @@ header = {
   SOV        = { }
   CHC        = { }
   CHI        = { }
-  
-  HAI        = { }
 
 }
 globaldata = { 
