@@ -53,7 +53,7 @@ TRA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 785051;Chief of Navy;Aleksandr Kolchak;1933;1955;1955;FA;Decisive Naval Battle Doctrine;Medium;aleksandr_kolchak;X
 785052;Head of State;I.N. Kononov;1933;1955;1955;FA;Popular Figurehead;High;in_kononov;X
 785053;Head of Government;Helmuth von Pannwitz;1933;1980;1980;NS;Old General;High;helmuth_von_pannwitz;X
-785053;Head of Government;I.N. Kononov;1933;1955;1955;FA;flamboyant tough guy;High;in_kononov;X
+785060;Head of Government;I.N. Kononov;1933;1955;1955;FA;flamboyant tough guy;High;in_kononov;X
 785054;Chief of Staff;Petr Krasnov;1933;1950;1950;PA;School of Fire Support;Medium;Mrus krasnov;X
 785055;Chief of Army;Andrei Shkuro;1933;1960;1960;PA;Decisive Battle Doctrine;Medium;andrei_shkuro;X
 785056;Chief of Air Force;Andrei Shkuro;1933;1960;1960;PA;Air Superiority Doctrine;Medium;andrei_shkuro;X
