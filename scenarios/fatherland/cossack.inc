@@ -238,25 +238,25 @@ claimedprovinces = {
 inventions = { 3000027 3000028 }
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
-     democratic        = 3 
-     political_left    = 3 
+     democratic        = 2
+     political_left    = 2 
      free_market       = 5 
      freedom           = 3 
      professional_army = 6 
      defense_lobby     = 10 
-     interventionism   = 1 
+     interventionism   = 6
     }
 	
-   headofstate            = {  type = 9 id = 785001   } #Petr Krasnov
-   headofgovernment       = {  type = 9 id = 785002  } #Petr Krasnov
-	foreignminister = { type = 9 id = 785018  } # Viktor Fausek
- 	armamentminister = { type = 9 id = 785025 } # Dimitri Grabbe-Nikitin
- 	ministerofsecurity = { type = 9 id = 785030 } # Alexei Friedmann
+   headofstate            = {  type = 9 id = 785052   } #I.N. Kononov
+   headofgovernment       = {  type = 9 id = 785053  } #Helmuth von Pannwitz
+	foreignminister = { type = 9 id = 785057  } # Serge Jaroff
+ 	armamentminister = { type = 9 id = 785058 } # Petr Krasnov
+ 	ministerofsecurity = { type = 9 id = 785059 } # I.N. Kononov
  	ministerofintelligence = { type = 9 id = 785036 } #  Gleb Krzhizhanovsky
- 	chiefofstaff = { type = 9 id = 785038 } # Razak Hadjiev
- 	chiefofarmy = { type = 9 id = 785042 } # Sergei Korovalcheff
- 	chiefofnavy = { type = 9 id = 785043  }  # Ignatz Dmyrkin      
- 	chiefofair = { type = 9 id = 785045  } # Nikifor Gapon 
+ 	chiefofstaff = { type = 9 id = 785054 } # Pyotr Krasnov
+ 	chiefofarmy = { type = 9 id = 785055 } # Andrei Shkuro
+ 	chiefofnavy = { type = 9 id = 785051  }  # Aleksandr Kolchak
+ 	chiefofair = { type = 9 id = 785056  } # Andrei Shkuro
   # dormant_ministers      = {  }
   # dormant_leaders        = {  }
 
