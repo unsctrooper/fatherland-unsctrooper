@@ -1,0 +1,28 @@
+Hi, here some advices concerning Wallonia after the release of Burgundy:
+
+
+The Cabinet should be as follow :
+HoS : Paul Ruscart (795043)
+HoG : Roger de Moor (795044)
+F M : Jean-François Collard (795016)
+MoA : Paul Garain (795022)
+MoS : Paul Ouwerx (795005)
+H I : Paul Ouwerx (795006)
+CoS : Lucien Lippert (795034)
+CoA : Lambert Chardonne (795008)
+CoN : Egert Reeder (795041)
+CoAF : Egert Reeder (795042)
+
+(Both HoS and HoG are new, I committed a new minister file and pictures for them)
+
+Men to sleep in the WLL minister file:
+
+795001 795002 795003 795004 795007 795009 795012 795015 795021 795024 795025 795027  795029 795033 795037 795038
+
+Men to sleep in the WLL leader file :
+
+795002 795003 795008 795009 
+
+Tech team to sleep in the WLL TT file:
+
+795009
