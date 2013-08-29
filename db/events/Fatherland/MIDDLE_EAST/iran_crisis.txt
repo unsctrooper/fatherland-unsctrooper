@@ -1,9 +1,15 @@
-### Iran Crisis of 1946
+##########################################
+# Iran Crisis events edited and modified by Pako
+# NOTE: This event chain is an adapted event chain from the NWO Mod. 
+# All credits go to this mod for the original idea. 
+##########################################
 
-# Soviets found the Republic of Mahabad
+##########################################
+# Found the Republic of Mahabad
+##########################################
 event = {
 	id = 8500901
-	country = SOV
+	country = PER
 
 	name = EVT_8500901_NAME
 	desc = EVT_8500901_DESC
@@ -15,27 +21,33 @@ event = {
 		#control = { province = 1083 data = -1 }
 	}
 
-	date = { day = 0 month = december year = 1945 }
+	date = { day = 1 month = december year = 1948 }
 	offset = 30
 	deathdate = { day = 30 month = march year = 1949 }
 
 	action = {
 		name = EVT_8500901_A # Allow secessionist elements
 		ai_chance = 70
+		command = { type = removecore which = 1084 }
 		command = { type = independence which = KUR value = 1 }
-		command = { type = make_puppet which = KUR }
-		command = { type = relation which = PER value = -100 }
+		command = { type = relation which = TUR value = -100 }	
+		command = { type = relation which = IRQ value = -100 }	
+		command = { type = relation which = ENG value = -50 }	
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = SOV value = 50 }
 	}
 	
 	action = {
 		name = EVT_8500901_B # Contain Kurdish movements
 		ai_chance = 30
-		command = { type = dissent value = 2 }
-		command = { type = relation which = PER value = 50 }
+		command = { type = dissent value = 5 }
+		command = { type = province_revoltrisk which = 1084 value = 75 }
 	}
 }
 
+##########################################
 # Mahabad Republic
+##########################################
 event = {
 	id = 8500902
 	country = KUR
@@ -49,7 +61,7 @@ event = {
 		event = 8500901
 	}
 
-	date = { day = 0 month = december year = 1945 }
+	date = { day = 1 month = december year = 1948 }
 	offset = 3
 	deathdate = { day = 30 month = april year = 1949 }
 
@@ -62,8 +74,9 @@ event = {
 	}
 }
 
+##########################################
 ## Soviets back Mahabad Republic or not
-
+##########################################
 event = {
 	id = 8500903
 	country = SOV
@@ -79,14 +92,13 @@ event = {
 		exists = PER
 	}
 
-	date = { day = 0 month = march year = 1946 }
+	date = { day = 0 month = march year = 1949 }
 	offset = 30
 	deathdate = { day = 30 month = june year = 1949 }
 
 	action = {
 		name = EVT_8500903_A # Don't give support
-		ai_chance = 89
-		command = { type = relation which = PER value = 50 }
+		ai_chance = 80
 		command = { type = relation which = KUR value = -200 }
 		command = { type = trigger which = 8500911 } # Soviets withdraw support for the Kurds
 		command = { type = sleepevent which = 8500921 }
@@ -94,15 +106,17 @@ event = {
 	
 	action = {
 		name = EVT_8500903_B # Give support
-		ai_chance = 11
+		ai_chance = 20
 		command = { type = relation which = PER value = -100 }
 		command = { type = relation which = KUR value = 200 }
+		command = { type = make_puppet which = KUR }
 		command = { type = trigger which = 8500904 } # American ultimatum
 	}
 }
 
+##########################################
 # Americans set ultimatum
-
+##########################################
 event = {
 	id = 8500904
 	country = USA
@@ -124,7 +138,7 @@ event = {
 		name = EVT_8500904_B # Let Soviets have it
 		ai_chance = 15
 		command = { type = relation which = PER value = -100 }
-		command = { type = relation which = KUR value = 200 }
+		command = { type = relation which = KUR value = 100 }
 		command = { type = trigger which = 8500910 } # Soviet support for Kurdistan
 		command = { type = trigger which = 8500909 } # Soviet support for Kurdistan
 		command = { type = sleepevent which = 8500908 } # Iran reasserts control over Kurdistan
@@ -132,8 +146,9 @@ event = {
 	}
 }
 
+##########################################
 # Soviets respond to ultimatum
-
+##########################################
 event = {
 	id = 8500905
 	country = SOV
@@ -163,8 +178,9 @@ event = {
 	}
 }
 
+##########################################
 # Americans carry out ultimatum
-
+##########################################
 event = {
 	id = 8500906
 	country = USA
@@ -190,9 +206,9 @@ event = {
 		command = { type = dissent value = 5 }
 	}
 }
-
+##########################################
 ## Iran reasserts control over Mahabad
-
+##########################################
 event = {
 	id = 8500908
 	country = PER
@@ -207,7 +223,7 @@ event = {
 		exists = KUR
 	}
 
-	date = { day = 0 month = march year = 1946 }
+	date = { day = 0 month = march year = 1949 }
 	offset = 60
 	deathdate = { day = 30 month = september year = 1949 }
 
@@ -225,9 +241,9 @@ event = {
 		command = { type = dissent value = 20 }
 	}
 }
-
+##########################################
 ### Iran is betrayed - USA allows for independent Kurdistan
-
+##########################################
 event = {
 	id = 8500909
 	country = PER
@@ -244,9 +260,9 @@ event = {
 	}
 	
 }
-
+##########################################
 ### Soviet support for Kurdistan continues
-
+##########################################
 event = {
 	id = 8500910
 	country = SOV
@@ -262,9 +278,9 @@ event = {
 	}
 	
 }
-
+##########################################
 ### Soviet support for Kurdistan is ended
-
+##########################################
 event = {
 	id = 8500911
 	country = KUR
@@ -283,9 +299,9 @@ event = {
 	}
 	
 }
-
+##########################################
 ### Soviets give the corridor back to Iran (if Kurdistan doesn't exist)
-
+##########################################
 event = {
 	id = 8500920
 	country = SOV
@@ -309,7 +325,7 @@ event = {
 		NOT = { war = { country = KUR country = PER } }
 	}
 
-	date = { day = 0 month = july year = 1946 }
+	date = { day = 0 month = july year = 1949 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1949 }
 
@@ -322,9 +338,9 @@ event = {
 		command = { type = secedeprovince which = PER value = 1092 when = 1 }
 	}
 }
-
+##########################################
 ### Soviets give the corridor to Republic of Mahabad
-
+##########################################
 event = {
 	id = 8500921
 	country = SOV
@@ -346,7 +362,7 @@ event = {
 		NOT = { war = { country = KUR country = PER } }
 	}
 
-	date = { day = 0 month = july year = 1946 }
+	date = { day = 0 month = july year = 1949 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1949 }
 
@@ -357,9 +373,9 @@ event = {
 		command = { type = secedeprovince which = KUR value = 1081 when = 1 }
 	}
 }
-
+##########################################
 ### Iran ceases to be a puppet
-
+##########################################
 event = {
 	id = 8500922
 	country = PER
@@ -374,7 +390,7 @@ event = {
 		ispuppet = yes
 	}
 
-	date = { day = 0 month = january year = 1946 }
+	date = { day = 0 month = january year = 1949 }
 	offset = 360
 	deathdate = { day = 30 month = december year = 1963 }
 

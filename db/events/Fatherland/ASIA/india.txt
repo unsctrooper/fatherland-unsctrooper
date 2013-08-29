@@ -7,7 +7,7 @@ event = {
 	picture = "nwo\independence_of_india"
 	style = 1
 	
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 15 month = january year = 1948 }
 	offset = 15
 	deathdate = { day = 30 month = december year = 1963 }
 	
@@ -29,7 +29,7 @@ event = {
 		government = democratic
 	}
 
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 15 month = january year = 1948 }
 	offset = 360
 	deathdate = { day = 30 month = december year = 1949 }
 
@@ -290,8 +290,8 @@ event = {
 	picture = "nwo\independence_of_india"
 	style = 1
 
-	date = { day = 0 month = january year = 1947 }
-	offset = 14
+	date = { day = 0 month = january year = 1948 }
+	offset = 10
 	deathdate = { day = 30 month = december year = 1963 }
 
 	# Iron fist in a velvet glove
@@ -330,7 +330,7 @@ event = {
 		event = 8214011 # event dividing India
 	}
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 1 month = january year = 1948 }
 	offset = 3
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -367,7 +367,7 @@ event = {
 	action = {
 		name = EVT_8007215_A
 		trigger = { NOT = { flag = princely_states } }
-		ai_chance = 70
+		ai_chance = 65
 		command = { type = trigger which = 8007216 }
 	}
 	
@@ -381,7 +381,7 @@ event = {
 	# Kashmir tries to remain independent (very improbable)
 	action = {
 		name = EVT_8007215_C
-		ai_chance = 5
+		ai_chance = 10
 		command = { type = trigger which = 8007220 }
 		command = { type = trigger which = 8007221 }
 	}
@@ -1000,17 +1000,117 @@ event = {
 	}
 }
 
+# International reactions
+
 event = {
 	id = 8007243
-	country = IND
+	country = GER
 
-	name = EVT_8007243_NAME
-	desc = EVT_8007243_DESC
-	picture = "nwo\invasion_of_goa"
+	name = "India-Pakistan Kashmir war"
+	desc = "A war broke out between India and Pakistan for control of Kashmir, which part should publicly support?"
+	picture = "nwo\first_kashmir_war"
 	style = 1
 	
-	action = {
-		name = EVT_8007243_A
-		command = { type = dissent value = 3 }
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	trigger = {
+		war = { country = IND  country = PAK }
 	}
+	
+	action = {
+		name = "Public support India"
+		ai_chance = 25
+		command = { type = relation which = IND value = 25 }
+		command = { type = relation which = PAK value = -25 }
+		command = { type = relation which = AFG value = -10 }
+	}
+	action = {
+		name = "Public support Pakistan"
+		ai_chance = 25
+		command = { type = relation which = PAK value = 25 }
+		command = { type = relation which = AFG value = 10 }		
+		command = { type = relation which = IND value = -25 }
+	}
+	action = {
+		name = "It's not in our interest"
+		ai_chance = 50
+	}
+}
+
+event = {
+	id = 8007244
+	country = SOV
+
+	name = "India-Pakistan Kashmir war"
+	desc = "A war broke out between India and Pakistan for control of Kashmir, which part should publicly support?"
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	trigger = {
+		war = { country = IND  country = PAK }
+	}
+	
+	action = {
+		name = "Public support India"
+		ai_chance = 25
+		command = { type = relation which = IND value = 25 }
+		command = { type = relation which = PAK value = -25 }
+		command = { type = relation which = AFG value = -10 }
+	}
+	action = {
+		name = "Public support Pakistan"
+		ai_chance = 50
+		command = { type = relation which = PAK value = 25 }
+		command = { type = relation which = AFG value = 10 }		
+		command = { type = relation which = IND value = -25 }
+	}
+	action = {
+		name = "It's not in our interest"
+		ai_chance = 25
+	}
+
+}
+
+event = {
+	id = 8007245
+	country = USA
+
+	name = "India-Pakistan Kashmir war"
+	desc = "A war broke out between India and Pakistan for control of Kashmir, which part should publicly support?"
+	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	trigger = {
+		war = { country = IND  country = PAK }
+	}
+	
+	action = {
+		name = "Public support India"
+		ai_chance = 50
+		command = { type = relation which = IND value = 25 }
+		command = { type = relation which = PAK value = -25 }
+		command = { type = relation which = AFG value = -10 }
+	}
+	action = {
+		name = "Public support Pakistan"
+		ai_chance = 25
+		command = { type = relation which = PAK value = 25 }
+		command = { type = relation which = AFG value = 10 }		
+		command = { type = relation which = IND value = -25 }
+	}
+	action = {
+		name = "It's not in our interest"
+		ai_chance = 25
+	}
+
 }

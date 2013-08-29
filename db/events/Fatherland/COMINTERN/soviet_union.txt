@@ -1,5 +1,5 @@
 ##########################################
-# China events edited by Pako
+# Soviet Union events edited by Pako
 # NOTE: This event chain is an adapted event chain from the NWO Mod. 
 # All credits go to this mod for the original idea. 
 ##########################################

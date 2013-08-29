@@ -1,3 +1,30 @@
+# Madagascar
+event = {
+	id = 8210001
+	tag = { ENG FRA ITA GER SPR SPA BEL HOL U05 U02 U01 }
+
+	name = EVT_COLONIALUNREST_NAME
+	desc = EVT_COLONIALUNREST_DESC
+	picture = "nwo\colonial_unrest"
+	style = 1
+
+	trigger = {
+		control = { province = 1001 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 1080
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = OK
+		command = { type = dissent value = 3 }
+		command = { type = province_revoltrisk which = 1001 value = 50 }
+		command = { type = province_revoltrisk which = 1002 value = 50 }
+		command = { type = province_revoltrisk which = 1003 value = 50 }
+		
+	}
+}
 event = {
 	id = 8009101
 	country = MAD

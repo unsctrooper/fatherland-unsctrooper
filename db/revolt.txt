@@ -1284,6 +1284,7 @@ GER = { # Germany
  } 
  extra = { 1084 1063 1064 1060 1027 1062 1015 1029 } 
  capital = 1036 
+ intrinsic_gov_type = stalinist 
  } 
  
  

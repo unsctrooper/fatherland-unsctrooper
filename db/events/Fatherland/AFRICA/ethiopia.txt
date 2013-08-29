@@ -334,6 +334,8 @@
 		command = { type = add_division which = "8th Militia Division" value = militia when = 6 }
 		command = { type = add_division which = "9th Militia Division" value = militia when = 6 }
 		command = { type = add_division which = "10th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "11th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "12th Militia Division" value = militia when = 6 }
 		command = { type = add_corps which = "3th Ethiopian Army" value = land where = 826 }
 		command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
 		command = { type = add_division which = "2nd Cavalry Division" value = cavalry when = 10 }
