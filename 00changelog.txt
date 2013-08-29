@@ -45,6 +45,16 @@
 - Implementing of Cold War Tech Tree Expansion 
 - Add 2 ministers for Goralenvolk and Galizia
 
+#To add
+Fix SOV_1948.ai
+Fix mods.csv
+Fix ministers_sov.csv
+Review Ethiopia,Madagascar,India,Soviet Union events
+Add Kurdistan crisis (iran_crisis.txt)
+Fix Kurdistan on revolt.txt 
+Add counter,shields and Palette
+Review East Turkestan chain
+Review Chinese Warlord return to the flock
 ####################################
 # Changelog for Beta version 1.0
 ####################################
