@@ -221,16 +221,16 @@ inventions = { 3000027 }
      Division = 
      { id         = {  type = 22000 id = 2  } 
        name       = "30. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       }
      Division = 
      { id         = {  type = 22000 id = 3  } 
        name       = "42. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       }
      dig_in   = 20.000 
     }
@@ -241,16 +241,16 @@ inventions = { 3000027 }
      Division = 
      { id         = {  type = 22000 id = 5  } 
        name       = "68. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       }
      Division = 
      { id         = {  type = 22000 id = 6  } 
        name       = "40. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       } 
      dig_in   = 20.000 
     }
@@ -261,16 +261,16 @@ inventions = { 3000027 }
      Division = 
      { id         = {  type = 22000 id = 8  } 
        name       = "76. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       } 
      Division = 
      { id         = {  type = 22000 id = 9  } 
        name       = "12. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       } 
      dig_in   = 20.000 
     }
@@ -281,23 +281,23 @@ inventions = { 3000027 }
      Division = 
      { id         = {  type = 22000 id = 11  } 
        name       = "38. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 7
       } 
      Division = 
      { id         = {  type = 22000 id = 12  } 
        name       = "47. Jun" 
        type       = infantry 
 	   strength  = 60
-       model     = 8
+       model     = 7
       }
      Division = 
      { id         = {  type = 22000 id = 13  } 
        name       = "96. Jun" 
-       type       = militia 
+       type       = infantry 
 	   strength  = 60
-       model     = 4
+       model     = 8
       } 
      dig_in   = 20.000 
     }

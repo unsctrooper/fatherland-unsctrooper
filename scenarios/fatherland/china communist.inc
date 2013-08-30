@@ -242,33 +242,33 @@ inventions = { 3000027 }
      {  experience = 60 
        id         = {  type = 24000 id = 11  } 
        name       = "4. Jun" 
-       type       = infantry 
-       strength  = 50
-       model      = 8
+       type       = militia 
+       strength  = 60
+       model      = 4
       } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 12  } 
        name       = "9. Jun" 
-       type       = infantry 
-       strength  = 50
-       model      = 8
+       type       = militia 
+       strength  = 60
+       model      = 4
       } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 13  } 
        name       = "30. Jun" 
-       type       = infantry 
-       strength  = 50
-       model      = 8
+       type       = militia 
+       strength  = 60
+       model      = 4
       } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 14  } 
        name       = "31. Jun" 
-       type       = infantry 
-       strength  = 50
-       model      = 8
+       type       = militia 
+       strength  = 60
+       model      = 4
       } 
      dig_in   = 20.000
     } 
@@ -280,9 +280,9 @@ inventions = { 3000027 }
      {  experience = 60 
        id         = {  type = 24000 id = 16  } 
        name       = "25. Jun" 
-       type       = infantry 
-       strength  = 50
-       model      = 8
+       type       = militia 
+       strength  = 60
+       model      = 4
       } 
      Division = 
      {  experience = 60 

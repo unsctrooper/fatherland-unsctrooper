@@ -1616,9 +1616,11 @@ event = {
 		ai_chance = 50
 		command = { type = sleepevent which = 90000630 }
 		command = { type = sleepevent which = 90000631 }
-		command = { type = headofstate which = 25001 } # King is back!
+		command = { type = headofstate which = 25016 } # Mussolini
 		command = { type = headofgovernment which = 25002 } #Mussolini
-		command = { type = flag_ext where = ITA }
+		command = { type = flag_ext where = ITA which = _democratic }
+		command = { type = name where = ITA which = "Italy" }
+		command = { type = domestic which = political_left value = 1 }
 		command = { type = dissent value = 15 }
 	}
 	action = {
@@ -1684,10 +1686,13 @@ event = {
 		ai_chance = 80
 		command = { type = sleepevent which = 90000630 }
 		command = { type = headofstate which = 25001 } # King is back!
+		command = { type = headofgovernment which = 25026 } #Badoglio
 		command = { type = dissent value = 5 }
 		command = { type = clrflag which = RadicalItaly }
 		command = { type = clrflag which = Chaos }
 		command = { type = flag_ext where = ITA }
+		command = { type = name where = ITA which = "Kingdom of Italy" }
+		command = { type = domestic which = political_left value = 2 }
 	}
 	action = {
 		name = EVT_1_ACTA # Crush the coup!
