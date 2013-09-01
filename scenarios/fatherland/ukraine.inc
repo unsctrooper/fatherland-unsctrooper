@@ -285,8 +285,78 @@ inventions = { 3000027 3000028 }
   # dormant_ministers      = {  }
   # dormant_leaders        = {  }
 
-  
+### Reichskommissariat Army ###
 
+	landunit = 
+   { location = 617 # Kiev 
+     name     = "Deutsch-Ukrainische Besatzung Kiew" 
+     id       = {  type = 14506 id = 1  } 
+    division = 
+     { id       = {  type = 14506 id = 2  } 
+       name     = "1. Deutsch-Ukrainische Besatzung" 
+       type     = garrison
+       model    = 6
+       strength = 35 
+       experience = 50
+      }
+} 
+
+	landunit = 
+   { location = 632 # Dnepopetrovsk 
+     name     = "Deutsch-Ukrainische Besatzung Dnepopetrovsk" 
+     id       = {  type = 14506 id = 3  } 
+    division = 
+     { id       = {  type = 14506 id = 4  } 
+       name     = "1. Deutsch-Ukrainische mot. Infanterie" 
+       type     = motorized
+       model    = 2
+       strength = 35 
+       experience = 50
+      }
+} 
+
+	airunit = 
+   { location = 617
+   base = 617
+     name     = "I. RK Ukraine Luftflotte" 
+     id       = {  type = 14506 id = 6  } 
+    division = 
+     { id       = {  type = 14506 id = 7  } 
+       name     = "1. RK Ukraine Bomber Fliegerkorps" 
+       type     = strategic_bomber
+       model    = 5
+       strength = 40 
+      }
+} 
+
+	landunit = 
+   { location = 633 # Kupyansk 
+     name     = "Ukrainische Nationalarmee" 
+     id       = {  type = 14506 id = 9 } 
+    division = 
+     { id       = {  type = 14506 id = 10 } 
+       name     = "1. Waffen-SS 'Galizien' Division" 
+       type     = infantry
+       model    = 11
+       strength = 80 
+	   extra = armored_car
+	   brigade_model = 5
+       experience = 20
+      }
+	 division = 
+     { id       = {  type = 14506 id = 11 } 
+       name     = "1. OUN Bewaffnete Regiment" 
+       type     = militia
+       model    = 5
+       strength = 50 
+	   max_strength = 50
+      }
+} 
+
+### Divisions to be activated ###
+
+landdivision = { dormant = yes id = { type = 14506 id = 20 }  name = "2. OUN Bewaffnete Division" type = militia model = 5 extra = artillery brigade_model = 10 }
+landdivision = { dormant = yes id = { type = 14506 id = 21 }  name = "3. OUN Bewaffnete Division" type = militia model = 5 }
   
 } 
 

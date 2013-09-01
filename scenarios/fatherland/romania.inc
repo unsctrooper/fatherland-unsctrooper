@@ -1,4 +1,6 @@
  
+ province = { id = 316 ic = 1 } # Bucharest
+ 
  ############################## 
  # Country definition for ROM # 
  ############################## 
@@ -152,13 +154,13 @@ inventions = { 3000027 }
      defense_lobby     = 5 
      interventionism   = 6 
     } 
-   headofstate            = {  type = 9 id = 110014  } 
-   headofgovernment       = {  type = 9 id = 110025  } 
-   foreignminister        = {  type = 9 id = 110041  } 
-   armamentminister       = {  type = 9 id = 110057  } 
-   ministerofsecurity     = {  type = 9 id = 110069  } 
-   ministerofintelligence = {  type = 9 id = 110082  } 
-   chiefofstaff           = {  type = 9 id = 110091  } 
+   headofstate            = {  type = 9 id = 110014  } # Mihai I
+   headofgovernment       = {  type = 9 id = 110025  } # Ion Antonescu
+   foreignminister        = {  type = 9 id = 110043  } # Mihai Antonescu
+   armamentminister       = {  type = 9 id = 110058  } # Gheorghe Dobre
+   ministerofsecurity     = {  type = 9 id = 110197  } # Dumitru Popescu
+   ministerofintelligence = {  type = 9 id = 110082  } # Iosif Iacobici
+   chiefofstaff           = {  type = 9 id = 110090  } # Constantin Pantazi
    chiefofarmy            = {  type = 9 id = 110102  } 
    chiefofnavy            = {  type = 9 id = 110107  } 
    chiefofair             = {  type = 9 id = 110113  } 
@@ -220,14 +222,14 @@ inventions = { 3000027 }
      id       = {  type = 20600 id = 39  } 
      Division = 
      {  id       = {  type = 20600 id = 41  } 
-       name     = "Divizie 2 Munte" 
+       name     = "Divizie 2 Vanatori de Munte" 
        type     = bergsjaeger 
 	   model = 10
        strength = 100 
       } 
      Division = 
      {  id       = {  type = 20600 id = 1002  } 
-       name     = "Divizie 4 Munte" 
+       name     = "Divizie 4 Vanatori de Munte" 
        type     = bergsjaeger 
 	   model = 10
        strength = 100 
@@ -241,7 +243,7 @@ inventions = { 3000027 }
      id       = {  type = 20600 id = 70  } 
      Division = 
      {  id       = {  type = 20600 id = 40  } 
-       name     = "Divizie 1 Munte" 
+       name     = "Divizie 1 Vanatori de Munte" 
        type     = bergsjaeger 
 	   model = 10
        strength = 100 
@@ -413,26 +415,45 @@ inventions = { 3000027 }
     } 
 
    landunit = 
-   {  location = 304
-     name     = "Corp III Armata" 
-     id       = {  type = 20600 id = 16  }
+   {  location = 287 # Turda
+     name     = "Corpul Rapid" 
+     id       = {  type = 20600 id = 110  }
      Division = 
-     {  id       = {  type = 20600 id = 9  } 
+     {  id       = {  type = 20600 id = 111  } 
+       name     = "Divizie Moto. 'Victoria din Est'" 
+       type     = motorized 
+	   model = 3
+       strength = 60 
+      } 
+	   Division = 
+     {  id       = {  type = 20600 id = 112  } 
+       name     = "Divizie 1 Blindata" 
+       type     = armor 
+	   model = 3
+       strength = 60 
+      } 
+     Division = 
+     {  id       = {  type = 20600 id = 113  } 
+       name     = "Divizie Aeropurtata 'Antonescu'" 
+       type     = paratrooper 
+	   model = 2
+       strength = 80
+	   max_strength = 80
+      } 
+    } 
+	
+	   landunit = 
+   {  location = 304
+     name     = "Corp VI Armata" 
+     id       = {  type = 20600 id = 30  }
+     Division = 
+     {  id       = {  type = 20600 id = 31  } 
        name     = "Divizie 11 Infanterie" 
        type     = infantry 
 	   model = 10
        strength = 60 
       } 
-     Division = 
-     {  id       = {  type = 20600 id = 32  } 
-       name     = "Divizie 14 Infanterie" 
-       type     = infantry 
-	   model = 10
-       extra    = artillery 
-	   brigade_model = 8
-       strength = 80 
-      } 
-    } 
+	  }
 
    navalunit = 
    {  location = 310 # Constanta 

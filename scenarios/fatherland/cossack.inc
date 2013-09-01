@@ -275,7 +275,7 @@ inventions = { 3000027 3000028 }
 			name = "2. Nayramdakh Kavaleriyskaya Div." 
 			strength     = 10
 			type = cavalry 
-			model    = 7
+			model    = 9
 		} 
 	}
 	landunit = {
@@ -285,13 +285,19 @@ inventions = { 3000027 3000028 }
 			type = 30501 
 			id = 3 
 		} 
-
      Division = 
      {  id   = {  type = 30501 id = 4  } 
        name = "3. Nayramdakh Div." 
 	   strength     = 10
        type = militia 
-	   model    = 4
+	   model    = 6
+      } 
+	     Division = 
+     {  id   = {  type = 30501 id = 11  } 
+       name = "7. Nayramdakh Div." 
+	   strength     = 50
+       type = garrison 
+	   model    = 6
       } 
 	}
 	landunit = {
@@ -306,8 +312,38 @@ inventions = { 3000027 3000028 }
        name = "4. Nayramdakh Div." 
 	   strength     = 10
        type = militia 
-	   model    = 4
+	   model    = 6
       } 
     } 
+		landunit = {
+			location = 699 # Elista
+		name = "Kossacka Militija 3" 
+		id = {  
+			type = 30501 
+			id = 7  
+		} 
+     Division = 
+     {  id   = {  type = 30501 id = 8  } 
+       name = "1. Oboronne vіddіlennja" 
+	   strength     = 70
+       type = garrison 
+	   model    = 6
+      } 
+	  Division = 
+     {  id   = {  type = 30501 id = 9  } 
+       name = "5. Nayramdakh Div." 
+	   strength     = 70
+       type = militia 
+	   model    = 6
+      } 
+	  	  Division = 
+     {  id   = {  type = 30501 id = 10  } 
+       name = "6. Nayramdakh Div." 
+	   strength     = 70
+       type = infantry 
+	   model    = 10
+      } 
+    } 
+	
 } 
 

@@ -1,3 +1,4 @@
+
  
  ############################## 
  # Country definition for HUN # 
@@ -157,21 +158,28 @@ inventions = { 3000027 }
     } 
    landunit = 
    {  id       = {  type = 20500 id = 12  } 
-     name     = "I. Páncélos Hadtest" 
+     name     = "Gyorshadtest" 
      location = 284 
      Division = 
      {  id       = {  type = 20500 id = 55  } 
        name     = "1. Tábori páncéloshadostzály" 
        strength     = 75
        type     = armor 
-	   model = 0
+	   model = 3
       } 
      Division = 
      {  id       = {  type = 20500 id = 60  } 
-       name     = "2. Tábori páncéloshadostzály" 
+       name     = "1. Motoros részleg" 
        strength     = 55
-       type     = armor 
-	   model = 0
+       type     = motorized 
+	   model = 3
+      } 
+	 Division = 
+     {  id       = {  type = 20500 id = 80  } 
+       name     = "2. Motoros részleg" 
+       strength     = 55
+       type     = motorized 
+	   model = 3
       } 
     } 
    landunit = 
@@ -204,18 +212,11 @@ inventions = { 3000027 }
      name     = "VI. Hadtest/I. Hadsereg" 
      location = 296 
      Division = 
-     {  id       = {  type = 20500 id = 36  } 
-       name     = "16. Gyaloghadosztály" 
-       strength     = 55
-       type     = infantry
-	   model = 10
-      } 
-     Division = 
      {  id       = {  type = 20500 id = 38  } 
        name     = "18. Foglaljahadosztály" 
        strength     = 55
-       type     = infantry 
-	   model = 10
+       type     = garrison 
+	   model = 6
       } 
     } 
    landunit = 
@@ -253,13 +254,6 @@ inventions = { 3000027 }
        name     = "25. Gyaloghadosztály" 
        strength     = 45
        type     = infantry
-	   model = 10
-      } 
-     Division = 
-     {  id       = {  type = 20500 id = 52  } 
-       name     = "27. Gyaloghadosztály" 
-       strength     = 45
-       type     = infantry 
 	   model = 10
       } 
      Division = 

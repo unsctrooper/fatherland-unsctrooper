@@ -258,17 +258,56 @@ inventions = { 3000027 3000028 }
 
 	landunit = 
    { location = 709 
-     name     = "Kaukasus SS" 
+     name     = "Kaukasus motorisierte SS Korps" 
      id       = {  type = 14505 id = 1  } 
     division = 
      { id       = {  type = 14505 id = 2  } 
-       name     = "342. Kaukasus SS" 
+       name     = "342. Kaukasus SS Division" 
        type     = motorized 
        model    = 2 
-       strength = 35 
+       strength = 35
+		extra = sp_artillery
+		brigade_model = 3
        experience = 60
       }
+	 division = 
+     { id       = {  type = 14505 id = 3  } 
+       name     = "1. Kaukasus Sicherheitsdivision" 
+       type     = bergsjaeger 
+       model    = 12
+       strength = 40
+       experience = 20
+      }
 } 
+
+	landunit = 
+   { location = 713 # Baku
+     name     = "Baku Sicherheits Korps" 
+     id       = {  type = 14505 id = 4  } 
+    division = 
+     { id       = {  type = 14505 id = 5  } 
+       name     = "1. Baku Sicherheitsdivision" 
+       type     = garrison 
+       model    = 6
+       strength = 35
+		extra = artillery
+		brigade_model = 11
+      }
+	  }
+	  
+	landunit = 
+   { location = 707 # Tskhinvali
+     name     = "Georgien Waffen-SS Legion" 
+     id       = {  type = 14505 id = 6  } 
+    division = 
+     { id       = {  type = 14505 id = 7  } 
+       name     = "Georgian Waffen-SS Legion" 
+       type     = infantry 
+       model    = 11
+       strength = 75
+	   max_strength = 75
+      }
+	  }
   
 } 
 
