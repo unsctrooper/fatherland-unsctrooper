@@ -3064,6 +3064,19 @@ U50 = { #Hejaz #added a revolt-tag for U50 # Hejaz, to allow Saudi-Arabia to pro
  liberate = no
 }
 
+U52 = { # Burgundy SS State
+ date = { day = 1 month = january year = 1941 }
+ expirydate = { day = 30 month = december year = 1999 }
+ minimum = {
+  106 96
+ }
+ claims = { 56 95 97 98 99 100 101 102 103 391
+ }
+ capital = 106
+ country = { GER }
+ intrinsic_gov_type = nazi 
+}
+
  UTC = { # Volunteers army by Rhysaxiel
  date = { day = 1 month = january year = 1914 } 
  expirydate = { day = 30 month = december year = 1930 } 
