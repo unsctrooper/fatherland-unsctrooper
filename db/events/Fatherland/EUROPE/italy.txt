@@ -1692,7 +1692,8 @@ event = {
 		command = { type = clrflag which = Chaos }
 		command = { type = flag_ext where = ITA }
 		command = { type = name where = ITA which = "Kingdom of Italy" }
-		command = { type = domestic which = political_left value = 2 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = political_left value = 1 }
 	}
 	action = {
 		name = EVT_1_ACTA # Crush the coup!
