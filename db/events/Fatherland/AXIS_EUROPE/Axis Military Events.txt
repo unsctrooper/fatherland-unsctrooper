@@ -1,0 +1,903 @@
+#######################
+# Axis Military Events
+# By Alex
+# Event Range: 900000 +
+#######################
+###########################################
+### 1. Formation of the Volga Coalition ###
+### 2. The Wehrbauer Program 			###
+
+
+###########################################
+### 1. Formation of the Volga Coalition ###
+###########################################
+#########################################
+# Opportunity opens in Novorossiysk - SOV
+#########################################
+
+event = {
+id = 900000
+random = no
+country = SOV
+
+trigger = {
+NOT = {
+garrison = { country = ROM province = 694 type = land size = 1 } # Novorossiysk
+owned = { province = 572 data = -1 } # Soviets don't own Moscow
+owned = { province = 663 data = -1 } # Soviets don't own Stalingrad
+owned = { province = 713 data = -1 } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+OR = {
+owned = { province = 694 data = U42 } # RK Kaukasus
+owned = { province = 694 data = GER }
+owned = { province = 694 data = ROM }
+}
+}
+
+name = "900000NAME"
+desc = "900000DESC" 
+style = 1
+picture = "fatherland\baku_oilwells"
+date = { day = 1 month = january year = 1940 }
+offset = 2
+deathdate = { day = 30 month = december year = 1980 }
+
+action_a = {
+name = "Perfect, blow up the docks!"
+ai_chance = 75
+command = { type = trigger which = 900001 } # RK Kaukasus
+command = { type = relation which = U42 value = -50 }
+command = { type = relation which = GER value = -50 }
+command = { type = relation which = ROM value = -50 }
+command = { type = domestic which = interventionism value = -1 }
+}
+
+action_b = {
+name = "We should not provoke the Axis."
+ai_chance = 25
+command = { type = domestic which = interventionism value = 1 }
+command = { type = setflag which = kerch_no }
+}
+}
+
+#################################################
+# Communist terrorists infiltrate the Kerch docks - U42
+#################################################
+
+event = {
+id = 900001
+random = no
+country = U42
+
+name = "900001NAME"
+desc = "900001DESC" 
+style = 2
+picture = "fatherland\baku_oilwells"
+
+action = {
+name = "Retake control of the docks!"
+command = { type = revolt which = 694 when = 0 }
+command = { type = dissent value = 7 }
+command = { type = oilpool value = -500 }
+command = { type = relation which = SOV value = -50 }
+command = { type = trigger which = 900002 } # For Axis countries
+}
+}
+
+######################################
+# The Kerch docks have been sabotaged! - AXIS
+######################################
+
+event = {
+id = 900002
+random = no
+TAG = { GER ROM HUN ITA CRO SPA BUL FIN SLO SER }
+all = yes
+
+name = "900002NAME"
+desc = "900002DESC" 
+style = 2
+picture = "fatherland\baku_oilwells"
+
+action = {
+name = "The Soviets will pay for this travesty."
+command = { type = dissent value = 3 }
+command = { type = oilpool value = -500 }
+command = { type = relation which = SOV value = -50 }
+command = { type = peacetime_ic_mod value = -2 }
+}
+}
+
+####################################
+# The Volga Coalition is proposed - GER
+####################################
+
+event = {
+id = 900003
+random = no
+country = GER
+
+trigger = {
+event = 900001
+OR = {
+control = { province = 694 data = U42 }
+control = { province = 694 data = GER }
+}
+NOT = {
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+}
+}
+
+name = "900003NAME"
+desc = "900003DESC" 
+style = 1
+picture = "fatherland\romanianarmy"
+date = { day = 1 month = january year = 1940 }
+offset = 4
+deathdate = { day = 30 month = december year = 1980 }
+
+action_a = {
+name = "Germany must form a pan-European coalition for the East."
+ai_chance = 90
+command = { type = trigger which = 900004 }
+command = { type = trigger which = 900005 }
+command = { type = trigger which = 900007 }
+command = { type = trigger which = 900008 }
+command = { type = trigger which = 900009 }
+command = { type = trigger which = 900010 }
+command = { type = trigger which = 900011 }
+command = { type = trigger which = 900040 }
+}
+
+action_b = {
+name = "We don't need to meddle in the internal affairs of others."
+ai_chance = 10
+command = { type = domestic which = interventionism value = -1 }
+}
+}
+
+#########################################################
+# Germany requests military access for Axis nations - TRA
+#########################################################
+
+event = {
+id = 900040
+random = no
+country = TRA
+
+name = "900040NAME"
+desc = "900040DESC" 
+style = 2
+picture = "fatherland\german_gathering"
+
+action_a = {
+name = "Allow the Axis to pass through our territory."
+ai_chance = 90
+command = { type = dissent value = 8 }
+command = { type = relation which = GER value = 20 }
+command = { type = access which = ROM }
+command = { type = access which = HUN }
+command = { type = access which = ITA }
+command = { type = access which = SLO }
+command = { type = access which = CRO }
+command = { type = access which = BUL }
+command = { type = access which = SPA }
+command = { type = setflag which = cossacks_access }
+}
+
+action_b = {
+name = "Never! We are independent!"
+ai_chance = 10
+command = { type = dissent value = 5 }
+command = { type = war which = GER }
+}
+}
+
+############################################################
+# Start of the Volga Coalition - ROM/HUN/ITA/SLO/BUL/CRO/SPA
+############################################################
+
+event = {
+id = 900004
+random = no
+country = ROM
+
+name = "900004NAME"
+desc = "900004DESC" 
+style = 2
+picture = "fatherland\romanianarmy"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 75
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_rom_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 25
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_rom_no }
+}
+}
+
+event = {
+id = 900005
+random = no
+country = HUN
+
+name = "900005NAME"
+desc = "900005DESC" 
+style = 2
+picture = "fatherland\hungarianarmy"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 70
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_hun_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 30
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_hun_no }
+}
+}
+
+event = {
+id = 900007
+random = no
+country = ITA
+
+name = "900005NAME"
+desc = "900007DESC" 
+style = 2
+picture = "fatherland\italian_warposter"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 60
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_ita_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 40
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_ita_no }
+}
+}
+
+event = {
+id = 900008
+random = no
+country = SLO
+
+name = "900005NAME"
+desc = "900008DESC" 
+style = 2
+picture = "fatherland\german_gathering"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 65
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_slo_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 35
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_slo_no }
+}
+}
+
+event = {
+id = 900009
+random = no
+country = CRO
+
+name = "900005NAME"
+desc = "900009DESC" 
+style = 2
+picture = "fatherland\german_gathering"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 75
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_cro_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 25
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_cro_no }
+}
+}
+
+event = {
+id = 900010
+random = no
+country = BUL
+
+name = "900005NAME"
+desc = "900010DESC" 
+style = 2
+picture = "fatherland\german_gathering"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 30
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_bul_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 70
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_bul_no }
+}
+}
+
+event = {
+id = 900011
+random = no
+country = SPA
+
+name = "900005NAME"
+desc = "900011DESC" 
+style = 2
+picture = "fatherland\german_gathering"
+
+action_a = {
+name = "Join the coalition."
+ai_chance = 75
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = 20 }
+command = { type = setflag which = volga_spa_yes }
+}
+
+action_b = {
+name = "We're not Germany's vassals."
+ai_chance = 25
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -30 }
+command = { type = setflag which = volga_spa_no }
+}
+
+}
+
+######################################
+# The Volga Coalition Order of Battle
+######################################
+
+# Romania
+
+event = {
+id = 900006
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_rom_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900006NAME"
+desc = "900006DESC" 
+style = 1
+picture = "fatherland\romanianarmy"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Romania deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900025 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = ROM value = 10 }
+}
+}
+
+# Hungary
+
+event = {
+id = 900015
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_hun_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900015NAME"
+desc = "900015DESC" 
+style = 1
+picture = "fatherland\hungarianarmy"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Hungary deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900026 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = HUN value = 10 }
+}
+}
+
+# Italy
+
+event = {
+id = 900016
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_ita_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900016NAME"
+desc = "900016DESC" 
+style = 1
+picture = "fatherland\italian_warposter"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Italy deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900027 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = ITA value = 10 }
+}
+}
+
+# Slovakia
+
+event = {
+id = 900017
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_slo_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900017NAME"
+desc = "900017DESC" 
+style = 1
+picture = "fatherland\german_warposter"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Slovakia deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900028 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = SLO value = 10 }
+}
+}
+
+# Croatia
+
+event = {
+id = 900018
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_cro_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900018NAME"
+desc = "900018DESC" 
+style = 1
+picture = "fatherland\german_warposter"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Croatia deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900029 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = CRO value = 10 }
+}
+}
+
+# Bulgaria 
+
+event = {
+id = 900019
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_bul_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900019NAME"
+desc = "900019DESC" 
+style = 1
+picture = "fatherland\german_warposter"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Bulgaria deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900030 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = BUL value = 10 }
+}
+}
+
+# Spain
+
+event = {
+id = 900020
+random = no
+country = GER
+
+trigger = {
+event = 900003 # Volga Coalition proposal
+event = 900002 # Kerch attack
+flag = volga_spa_yes
+flag = cossacks_access # Cossacks give access
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+}
+
+name = "900020NAME"
+desc = "900020DESC" 
+style = 1
+picture = "fatherland\german_warposter"
+date = { day = 1 month = january year = 1940 }
+offset = 10
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Demand Spain deploy a security corps on the Volga."
+ai_chance = 100
+command = { type = trigger which = 900031 }
+}
+
+action = {
+name = "Don't demand anything."
+command = { type = relation which = SPA value = 10 }
+}
+}
+
+#############################
+# Deploy troops to the Volga?
+#############################
+
+event = {
+id = 900025
+random = no
+country = ROM
+
+name = "900025NAME"
+desc = "900025DESC" 
+style = 2
+picture = "fatherland\romanianarmy"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 80
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Corpul de Garda in Rusia" value = land where = 663 }
+command = { type = activate_division which = 20600 value = 200 where = 663 when = 0 }
+command = { type = lock_division which = 20600 value = 200 }
+command = { type = activate_division which = 20600 value = 201 where = 663 when = 0 }
+command = { type = lock_division which = 20600 value = 201 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 20
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = rom_no_garrison }
+}
+}
+
+event = {
+id = 900026
+random = no
+country = HUN
+
+name = "900025NAME"
+desc = "900025DESC" 
+style = 2
+picture = "fatherland\hungarianarmy"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 70
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Hungarian Expeditionary Force" value = land where = 669 }
+command = { type = activate_division which = 20500 value = 100 where = 669 when = 0 }
+command = { type = lock_division which = 20500 value = 100 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 30
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = hun_no_garrison }
+}
+}
+
+event = {
+id = 900027
+random = no
+country = ITA
+
+name = "900025NAME"
+desc = "900025DESC" 
+style = 2
+picture = "fatherland\italian_warposter2"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 75
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Italian Corps in Russia" value = land where = 699 }
+command = { type = activate_division which = 23500 value = 400 where = 699 when = 0 }
+command = { type = lock_division which = 23500 value = 401 }
+command = { type = activate_division which = 23500 value = 401 where = 699 when = 0 }
+command = { type = lock_division which = 23500 value = 401 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 25
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = ita_no_garrison }
+}
+}
+
+event = {
+id = 900028
+random = no
+country = SLO
+
+name = "900025NAME"
+desc = "900025DESC" 
+style = 2
+picture = "fatherland\german_warposter"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 90
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Slovak Anti-Bolshevik Detachment" value = land where = 661 }
+command = { type = activate_division which = 26000 value = 50 where = 661 when = 0 }
+command = { type = lock_division which = 26000 value = 50 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 10
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = slo_no_garrison }
+}
+}
+
+event = {
+id = 900029
+random = no
+country = CRO
+
+name = "900025NAME"
+desc = "900025DESC" 
+style = 2
+picture = "fatherland\german_warposter"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 80
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Croatian Occupation Corps" value = land where = 662 }
+command = { type = activate_division which = 12607 value = 100 where = 662 when = 0 }
+command = { type = lock_division which = 12607 value = 100 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 20
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = cro_no_garrison }
+}
+}
+
+event = {
+id = 900030
+random = no
+country = BUL
+
+name = "900025NAME"
+desc = "900025DESC" 
+style = 2
+picture = "fatherland\german_warposter"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 60
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Bulgarian Expedition in Russia" value = land where = 662 }
+command = { type = activate_division which = 19000 value = 200 where = 662 when = 0 }
+command = { type = lock_division which = 19000 value = 200 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 40
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = bul_no_garrison }
+}
+}
+
+event = {
+id = 900031
+random = no
+country = SPA
+
+name = "900031NAME"
+desc = "900031DESC" 
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action_a = {
+name = "Send a garrison to the Cossack sector."
+ai_chance = 80
+command = { type = dissent value = 4 }
+command = { type = relation which = GER value = 10 }
+command = { type = add_corps which = "Blue Corps of Spain" value = land where = 661 }
+command = { type = activate_division which = 25000 value = 900 where = 661 when = 0 }
+command = { type = lock_division which = 25000 value = 900 }
+}
+
+action_b = {
+name = "We need our troops at home."
+ai_chance = 20
+command = { type = dissent value = 3 }
+command = { type = relation which = GER value = -20 }
+command = { type = setflag which = spa_no_garrison }
+}
+}
+
+#############################
+# 2. The Wehrbauer Campaign #
+#############################
+#############################
+#
+#############################
