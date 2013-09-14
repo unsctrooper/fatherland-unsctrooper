@@ -536,4 +536,9 @@ country = {
 			model = 4
 		}
 	}
+	
+	### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 25000 id = 900 } name = "Anti-bolcheviques cuerpos" type = garrison model = 5 extra = police brigade_model = 2 }
+	
 }

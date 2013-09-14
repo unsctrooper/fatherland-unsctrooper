@@ -514,4 +514,11 @@ inventions = { 3000027 }
        strength = 34 
       } 
     } 
+	
+### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 20600 id = 200 } name = "Garnizoana antibolsevica de siguranta" type = garrison model = 6 }
+landdivision = { dormant = yes id = { type = 20600 id = 201 } name = "Detasamentul legionar de siguranta" type = militia model = 6 }
+
+	
   } 

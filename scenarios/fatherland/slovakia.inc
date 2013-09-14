@@ -147,5 +147,10 @@ inventions = { 3000027 }
       type          = infantry
       model         = 9
     }
-  } 
+  }
+
+  ### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 26000 id = 50 } name = "Volga oddelenie " type = militia model = 6 }
+  
 }

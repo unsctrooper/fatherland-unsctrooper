@@ -429,5 +429,11 @@ inventions = { 3000027 }
        strength = 30 
       } 
     } 
+	
+	  ### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 20500 id = 100 } name = "Volga rendorségi körzet" type = garrison model = 6 extra = artillery brigade_model = 9 }
+
+	
   } 
  

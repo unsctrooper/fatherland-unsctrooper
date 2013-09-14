@@ -289,4 +289,9 @@ inventions = { 3000027 }
       strength = 60
     }
   }
+  
+  ### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 12607 id = 100 } name = "Ustaše Volga Odred" type = garrison model = 6 extra = police brigade_model = 2 }
+
 }

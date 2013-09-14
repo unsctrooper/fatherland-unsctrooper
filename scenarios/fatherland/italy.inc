@@ -1224,7 +1224,7 @@
 			model = 5 
 			}
 		division = { 
-			id = { type = 23500 id = 401 } 
+			id = { type = 23500 id = 3000 } 
 			name = "RN Caio Duilio" 
 			type = battleship 
 			model = 5 
@@ -1749,6 +1749,12 @@
       model    = 2
     }
   }
+  
+  	  ### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 23500 id = 400 } name = "Volga Divisione Sicurezza" type = garrison model = 6 extra = medium_armor brigade_model = 4 }
+landdivision = { dormant = yes id = { type = 23500 id = 401 } name = "1. Volga Divisione" type = paratrooper model = 2 }
+
 }
 	
 

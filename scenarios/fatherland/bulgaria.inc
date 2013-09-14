@@ -395,5 +395,11 @@ inventions = { 3000027 }
        model    = 6 
       } 
     } 
+	
+### Volga Coalition Troops ###
+	
+landdivision = { dormant = yes id = { type = 19000 id = 200 } name = "Volga sigurnost korpus" type = garrison model = 5 }
+
+	
   } 
  
