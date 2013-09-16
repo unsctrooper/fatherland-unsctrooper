@@ -332,21 +332,313 @@ event = {
 	name = "408A"
 	ai_chance = 50
 	command = { type = dissent value = 1 }
+    command = { type = event which = 411 where = GER when = 3 }
 	}
 	action_b = {
 	name = "408B"
 	ai_chance = 25
 	command = { type = secedeprovince which = FLA value = 116 }
+    command = { type = event which = 411 where = GER when = 3 }
 	}
-	action_a = {
+	action_c = {
 	name = "408C"
 	ai_chance = 25
 	command = { type = secedeprovince which = WLL value = 116 }
+    command = { type = event which = 411 where = GER when = 3 }
 	}
 }
 ##############
 ### France ###
 ##############
+event = {
+	id = 411
+	random = no
+	country = GER
+
+	name = "411NAME"
+	desc = "411DESC"
+	style = 2
+	picture = "news_paper"	
+	
+
+	action_a = {
+    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+	name = "411A"
+	ai_chance = 90
+	command = { type = dissent value = 1 }
+	command = { type = trigger which = 357 }
+	}
+	action_b = {
+	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+	name = "411B"
+	ai_chance = 10
+	command = { type = dissent value = 1 }
+	command = { type = trigger which = 410 }
+	}
+	action_a = {
+    trigger = { OR = { flag = SSGermany flag = LegGermany } }
+	name = "411A"
+	ai_chance = 10
+	command = { type = dissent value = 1 }
+	command = { type = trigger which = 357 }
+	}
+	action_b = {
+	trigger = { OR = { flag = SSGermany flag = LegGermany } }
+	name = "411B"
+	ai_chance = 90
+	command = { type = dissent value = 1 }
+	command = { type = trigger which = 410 }
+	}
+}
+event = {
+	id = 410
+	random = no
+	country = GER
+
+	name = "410NAME"
+	desc = "410DESC"
+	style = 2
+	picture = "news_paper"	
+	
+
+	action_a = { 
+	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+	name = "410A"
+	ai_chance = 10
+	command = { type = dissent value = 3 }
+	}
+	action_b = { ### RK Frankreich
+	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+	name = "410B"
+	ai_chance = 60
+    command = { type = independence which = U47 } 
+    command = { type = make_puppet which = U47 }
+	}
+	action_c = { ### Share the spoils with our friends!
+	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+	name = "410C"
+	ai_chance = 30
+    command = { type = secedeprovince which = FLA value = 101 when = 1 }
+    command = { type = secedeprovince which = FLA value = 50 when = 1 }
+    command = { type = secedeprovince which = WLL value = 96 when = 1 }
+    command = { type = secedeprovince which = WLL value = 102 when = 1 }
+	}
+	action_a = { ### Burgundy State
+	trigger = { OR = { flag = SSGermany flag = LegGermany } }
+	name = "410D"
+	ai_chance = 70
+    command = { type = independence which = U52 } 
+    command = { type = make_puppet which = U52 }
+	}
+	action_b = { 
+	trigger = { OR = { flag = SSGermany flag = LegGermany } }
+	name = "410A"
+	ai_chance = 10
+	command = { type = dissent value = 3 }
+	}
+	action_c = { ### RK Frankreich
+	trigger = { OR = { flag = SSGermany flag = LegGermany } }
+	name = "410B"
+	ai_chance = 20
+    command = { type = independence which = U47 } 
+    command = { type = make_puppet which = U47 }
+	}
+}
+event = {
+id = 357
+	random = no
+	country = FRA
+	style = 2
+	picture = "aar_versailles"
+
+	name = "357NAME"
+    desc = "357DESC"
+	
+action = { 
+        trigger = { local_flag = LavalVichy }
+		ai_chance = 50
+		name = "357A" 
+		command = { type = dissent value = 5 }
+    } 
+action = { 
+        trigger = { local_flag = LavalVichy }
+		ai_chance = 50
+		name = "357B" 
+		command = { type = trigger which = 358 } 
+    } 
+	action = {
+        trigger = { local_flag = DarlanVichy }
+        ai_chance = 5
+		name = "357A" 
+		command = { type = dissent value = 5 } # Keep the current situation!
+    }
+	action = {
+        trigger = { local_flag = DarlanVichy }
+        ai_chance = 70
+	    name = "357B"
+		command = { type = trigger which = 358 } # Negotiate!
+    }
+	action = {
+        trigger = { local_flag = DarlanVichy }
+        ai_chance = 25
+		name = "357C" 
+		command = { type = local_setflag which = FreeVichy } # Break this Treaty!
+    }
+	action = {
+        trigger = { local_flag = CivilVichy }
+        ai_chance = 50
+		name = "357A" 		
+		command = { type = dissent value = 5 }
+    } 
+	action = {
+        trigger = { local_flag = CivilVichy }
+        ai_chance = 50
+		name = "357B" 
+		command = { type = trigger which = 358 }
+    } 
+}
+event = {
+id = 358
+	random = no
+	country = GER
+	style = 2
+	picture = "reichstag"
+	
+	name = "358NAME"
+    desc = "358DESC"
+
+	action = {
+			ai_chance = 60
+			name = "358A" # Make the current situation Official!
+			command = { type = trigger which = 359 }
+	}
+	action = {
+			ai_chance = 40
+			name = "358B" # Give them back their lands!
+			command = { type = trigger which = 360 }
+}
+}
+event = {
+id = 359
+country = FRA
+random = no
+style = 2
+picture = "aar_versailles"
+
+name = "359NAME"
+desc = "359DESC"
+
+action = {
+trigger = { NOT = { local_flag = LavalVichy } } 
+ai_chance = 1
+name = "359A"
+command = { type = relation which = GER value = -50 }	
+command = { type = dissent value = 5 }
+command = { type = local_setflag which = GerVichy }
+}
+action = {
+trigger = { NOT = { local_flag = LavalVichy } } 
+ai_chance = 99
+name = "359B"
+command = { type = relation which = GER value = -150 }	
+command = { type = local_setflag which = FreeVichy } 
+}
+action = {
+trigger = { local_flag = LavalVichy }
+ai_chance = 80
+name = "359A"
+command = { type = relation which = GER value = -50 }	
+command = { type = dissent value = 5 }
+command = { type = local_setflag which = GerVichy } 
+}
+action = {
+trigger = { local_flag = LavalVichy }
+ai_chance = 20
+name = "359B"
+command = { type = relation which = GER value = -150 }	
+command = { type = local_setflag which = FreeVichy } 
+}
+}
+event = {
+id = 360
+country = FRA
+random = no
+style = 2
+picture = "aar_versailles"
+
+name = "360NAME"
+desc = "360DESC"
+
+action = {
+trigger = { NOT = { local_flag = LavalVichy } } 
+ai_chance = 1
+name = "360A"
+command = { type = alliance which = GER }
+command = { type = relation which = GER value = 200 }	
+command = { type = peacetime_ic_mod value = 30 }
+command = { type = dissent value = 3 }
+command = { type = local_setflag which = GerVichy } 
+command = { type = setflag which = Versailles1 } 
+}
+action = {
+trigger = { NOT = { local_flag = LavalVichy } } 
+ai_chance = 99
+name = "360B"
+command = { type = relation which = GER value = -50 }	
+command = { type = local_setflag which = FreeVichy } 
+command = { type = setflag which = VersaillesRefusal } 
+}
+action = {
+trigger = { local_flag = LavalVichy }
+ai_chance = 99
+name = "360A"
+command = { type = alliance which = GER }
+command = { type = relation which = GER value = 200 }	
+command = { type = peacetime_ic_mod value = 30 }
+command = { type = dissent value = 3 }
+command = { type = local_setflag which = GerVichy } 
+command = { type = setflag which = Versailles1 } 
+}
+action = {
+trigger = { local_flag = LavalVichy }
+ai_chance = 1
+name = "360A"
+command = { type = relation which = GER value = -50 }	
+command = { type = local_setflag which = FreeVichy } 
+command = { type = setflag which = VersaillesRefusal } 
+}
+}
+event = {
+id = 362
+	random = no
+	country = GER
+	style = 2
+	picture = "reichstag"
+	
+	trigger = {
+	event = 358
+	}
+	name = "362NAME"
+    desc = "362DESC"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+	action = {
+            trigger = { flag = VersaillesRefusal }
+			name = "362A"
+            command = { type = dissent value = 1 }
+	        command = { type = trigger which = 410 }
+	}
+	action = {
+            trigger = { flag = Versailles1 }
+			name = "362B"
+            command = { type = dissent value = -1 }
+		    # command = { type = trigger which = 411 } # French Flanders
+	        command = { type = secederegion which = FRA value = "France" when = 1 }	
+}
+}
 ###############################
 ### Flavour Events & Others ###
 ###############################

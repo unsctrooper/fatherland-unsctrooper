@@ -25,24 +25,6 @@ command = { type = deactivate_unit_type which = motorized }
 command = { type = deactivate_unit_type which = mechanized } 
 command = { type = deactivate_unit_type which = light_armor } 
 command = { type = dissent value = 15 }
-command = { type = trigger which = 312 }
-}
-}
-
-event = {
-id = 312
-country = GER
-random = no
-style = 2
-picture = "reichstag"
-
-
-name = "312NAME"
-desc = "312DESC"
-
-action_a = {
-name = "312A"
-command = { type = peacetime_ic_mod value = 10 }
 }
 }
 ##############################
@@ -385,305 +367,6 @@ id = 313
 		command = { type = local_setflag which = GerVichy } 		
 	}
 }
-#########################################
-######### Treaty of Versailles ##########
-#########################################
-event = {
-id = 357
-	random = no
-	country = FRA
-	style = 2
-	picture = "aar_versailles"
-	
-	decision = {
-    event = 350
-	OR = {
-	local_flag = DarlanVichy
-	local_flag = CivilVichy
-	local_flag = LavalVichy
-	}
-	}
-
-	decision_trigger = {
-	event = { id = 351 days = 30 } 
-	OR = {
-	local_flag = DarlanVichy
-	local_flag = CivilVichy
-	local_flag = LavalVichy
-	}
-	}
-
-	trigger = {
-	event = { id = 351 days = 30 } 
-	OR = {
-	local_flag = DarlanVichy
-	local_flag = CivilVichy
-	local_flag = LavalVichy
-	}
-	}
-	
-	date = { day = 1 month = january year = 1948 }
-	offset = 3
-	deathdate = { day = 1 month = december year = 1955 }
-
-	name = "357NAME"
-    desc = "357DESC"
-	
-action = { 
-        trigger = { local_flag = LavalVichy }
-		ai_chance = 50
-		name = "357A" 
-		command = { type = dissent value = 5 }
-    } 
-action = { 
-        trigger = { local_flag = LavalVichy }
-		ai_chance = 50
-		name = "357B" 
-		command = { type = trigger which = 358 }
-    } 
-	action = {
-        trigger = { local_flag = DarlanVichy }
-        ai_chance = 5
-		name = "357A" 
-		command = { type = dissent value = 5 }
-    }
-	action = {
-        trigger = { local_flag = DarlanVichy }
-        ai_chance = 70
-	    name = "357B"
-		command = { type = trigger which = 358 } 
-    }
-	action = {
-        trigger = { local_flag = DarlanVichy }
-        ai_chance = 25
-		name = "357C" 
-		command = { type = local_setflag which = FreeVichy } 
-    }
-	action = {
-        trigger = { local_flag = CivilVichy }
-        ai_chance = 50
-		name = "357A" 		
-		command = { type = dissent value = 5 }
-    } 
-	action = {
-        trigger = { local_flag = CivilVichy }
-        ai_chance = 50
-		name = "357B" 
-		command = { type = trigger which = 358 }
-    } 
-}
-event = {
-id = 358
-	random = no
-	country = GER
-	style = 2
-	picture = "reichstag"
-	
-	name = "358NAME"
-    desc = "358DESC"
-	
-	action = {
-            trigger = { headofstate = 1 }
-			ai_chance = 60
-			name = "358A"
-			command = { type = trigger which = 359 }
-	}
-	action = {
-            trigger = { headofstate = 1 }
-			ai_chance = 40
-			name = "358B"
-			command = { type = trigger which = 360 }
-}
-	action = {
-            trigger = { NOT = { headofstate = 1 } }
-			ai_chance = 10
-			name = "358A"
-			command = { type = trigger which = 359 }
-	}
-	action = {
-            trigger = { NOT = { headofstate = 1 } }
-			ai_chance = 80
-			name = "358B"
-			command = { type = trigger which = 360 }
-}
-	action = {
-            trigger = { NOT = { headofstate = 1 } }
-			ai_chance = 10
-			name = "358C"
-			command = { type = trigger which = 361 }
-}
-}
-event = {
-id = 359
-country = FRA
-random = no
-style = 2
-picture = "aar_versailles"
-
-name = "359NAME"
-desc = "359DESC"
-
-action = {
-trigger = { NOT = { local_flag = LavalVichy } } 
-ai_chance = 1
-name = "359A"
-command = { type = relation which = GER value = -50 }	
-command = { type = dissent value = 5 }
-command = { type = local_setflag which = GerVichy }
-}
-action = {
-trigger = { NOT = { local_flag = LavalVichy } } 
-ai_chance = 99
-name = "359B"
-command = { type = relation which = GER value = -150 }	
-command = { type = local_setflag which = FreeVichy } 
-}
-action = {
-trigger = { local_flag = LavalVichy }
-ai_chance = 80
-name = "359A"
-command = { type = relation which = GER value = -50 }	
-command = { type = dissent value = 5 }
-command = { type = local_setflag which = GerVichy } 
-}
-action = {
-trigger = { local_flag = LavalVichy }
-ai_chance = 20
-name = "359B"
-command = { type = relation which = GER value = -150 }	
-command = { type = local_setflag which = FreeVichy } 
-}
-}
-event = {
-id = 360
-country = FRA
-random = no
-style = 2
-picture = "aar_versailles"
-
-name = "360NAME"
-desc = "360DESC"
-
-action = {
-trigger = { NOT = { local_flag = LavalVichy } } 
-ai_chance = 1
-name = "360A"
-command = { type = relation which = GER value = 200 }	
-command = { type = peacetime_ic_mod value = 30 }
-command = { type = dissent value = 3 }
-command = { type = local_setflag which = GerVichy } 
-command = { type = setflag which = Versailles1 } 
-}
-action = {
-trigger = { NOT = { local_flag = LavalVichy } } 
-ai_chance = 99
-name = "360B"
-command = { type = relation which = GER value = -50 }	
-command = { type = local_setflag which = FreeVichy } 
-command = { type = setflag which = VersaillesRefusal } 
-}
-action = {
-trigger = { local_flag = LavalVichy }
-ai_chance = 99
-name = "360A"
-command = { type = relation which = GER value = 200 }	
-command = { type = peacetime_ic_mod value = 30 }
-command = { type = dissent value = 3 }
-command = { type = local_setflag which = GerVichy } 
-command = { type = setflag which = Versailles1 } 
-}
-action = {
-trigger = { local_flag = LavalVichy }
-ai_chance = 1
-name = "360A"
-command = { type = relation which = GER value = -50 }	
-command = { type = local_setflag which = FreeVichy } 
-command = { type = setflag which = VersaillesRefusal } 
-}
-}
-event = {
-id = 361
-country = FRA
-random = no
-style = 2
-picture = "aar_versailles"
-
-name = "361NAME"
-desc = "361DESC"
-
-action = {
-trigger = { NOT = { local_flag = LavalVichy } } 
-ai_chance = 80
-name = "361A"
-command = { type = relation which = GER value = 200 }	
-command = { type = peacetime_ic_mod value = 30 }
-command = { type = dissent value = 3 }
-command = { type = local_setflag which = GerVichy } 
-command = { type = setflag which = Versailles2 } 
-}
-action = {
-trigger = { NOT = { local_flag = LavalVichy } } 
-ai_chance = 20
-name = "361B"
-command = { type = relation which = GER value = -50 }	
-command = { type = local_setflag which = FreeVichy } 
-command = { type = setflag which = VersaillesRefusal } 
-}
-action = {
-trigger = { local_flag = LavalVichy }
-ai_chance = 99
-name = "361A"
-command = { type = relation which = GER value = 200 }	
-command = { type = peacetime_ic_mod value = 30 }
-command = { type = dissent value = 3 }
-command = { type = local_setflag which = GerVichy } 
-command = { type = setflag which = Versailles2 } 
-}
-action = {
-trigger = { local_flag = LavalVichy }
-ai_chance = 1
-name = "361A"
-command = { type = relation which = GER value = -50 }	
-command = { type = local_setflag which = FreeVichy } 
-command = { type = setflag which = VersaillesRefusal } 
-}
-}
-
-
-
-event = {
-id = 362
-	random = no
-	country = GER
-	style = 2
-	picture = "reichstag"
-	
-	trigger = {
-	event = 358
-	}
-	name = "362NAME"
-    desc = "362DESC"
-	
-	date = { day = 1 month = january year = 1948 }
-	offset = 7
-	deathdate = { day = 1 month = december year = 1955 }
-	
-	action = {
-            trigger = { flag = VersaillesRefusal }
-			name = "362A"
-            command = { type = dissent value = 1 }
-	}
-	action = {
-            trigger = { flag = Versailles1 }
-			name = "362B"
-            command = { type = dissent value = -1 }
-}	action = {
-            trigger = { flag = Versailles2 }
-			name = "362C"
-            command = { type = dissent value = 5 }
-	        command = { type = secederegion which = FRA value = "France" when = 1 }			
-}
-}
 #########################
 ### Crisis in the Med ###
 #########################
@@ -801,7 +484,7 @@ id = 367
 	action = {
 			name = "367A"
 			ai_chance = 95
-			command = { type = peacetime_ic_mod value = -5 }
+			command = { type = peacetime_ic_mod value = -10 }
 		    command = { type = relation which = USA value = -50 }
 		    command = { type = relation which = FRA value = -50 }
 			command = { type = trigger which = 368 }			
@@ -811,6 +494,7 @@ id = 367
 			name = "367B"
 			ai_chance = 5
 			command = { type = dissent value = 10 }
+			command = { type = peacetime_ic_mod value = -10 }
 } 
 }
 
@@ -1062,6 +746,7 @@ id = 376
 	action = {
 			name = "376B"
 			ai_chance = 50
+			command = { type = peacetime_ic_mod value = -10 }
 			command = { type = relation which = FRA value = -10 }
 			command = { type = trigger which = 377 }
 
