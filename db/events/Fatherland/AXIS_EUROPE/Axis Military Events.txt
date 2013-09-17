@@ -895,9 +895,115 @@ command = { type = setflag which = spa_no_garrison }
 }
 }
 
-#############################
-# 2. The Wehrbauer Campaign #
-#############################
-#############################
-#
-#############################
+##############################
+# 2. Operation Barbarossa II #
+##############################
+
+event = {
+id = 900033
+random = no
+country = GER
+
+decision = {
+# Soviets own Ural territories
+owned = { province = 688 data = SOV } # Ukhta
+owned = { province = 671 data = SOV } # Izhevsk
+owned = { province = 689 data = SOV } # Solikamsk
+}
+
+decision_trigger = {
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+### Germans garrison frontier ###
+garrison = { country = GER province = 669 type = land size = 1 } # Saratov
+garrison = { country = GER province = 665 type = land size = 1 } # Volsk
+garrison = { country = GER province = 668 type = land size = 1 } # Kuyibishev
+garrison = { country = GER province = 656 type = land size = 1 } # Ulyanovsk
+garrison = { country = GER province = 674 type = land size = 1 } # Zelenodolsk
+garrison = { country = GER province = 675 type = land size = 1 } # Cheboksary
+garrison = { country = GER province = 683 type = land size = 1 } # Arzamas
+garrison = { country = GER province = 682 type = land size = 1 } # Ivanovo
+garrison = { country = GER province = 677 type = land size = 1 } # Iaroslavl
+garrison = { country = GER province = 554 type = land size = 1 } # Kinry
+garrison = { country = GER province = 555 type = land size = 1 } # Cherepovets
+garrison = { country = GER province = 556 type = land size = 1 } # Vytegra
+}
+
+trigger = {
+NOT = {
+owned = { province = 572 data = SOV } # Soviets don't own Moscow
+owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+owned = { province = 713 data = SOV } # Soviets don't own Baku
+war = { country = GER country = SOV }
+alliance = { country = GER country = SOV }
+}
+### Germans garrison frontier ###
+garrison = { country = GER province = 669 type = land size = 1 } # Saratov
+garrison = { country = GER province = 665 type = land size = 1 } # Volsk
+garrison = { country = GER province = 668 type = land size = 1 } # Kuyibishev
+garrison = { country = GER province = 656 type = land size = 1 } # Ulyanovsk
+garrison = { country = GER province = 647 type = land size = 1 } # Zelenodolsk
+garrison = { country = GER province = 675 type = land size = 1 } # Cheboksary
+garrison = { country = GER province = 683 type = land size = 1 } # Arzamas
+garrison = { country = GER province = 682 type = land size = 1 } # Ivanovo
+garrison = { country = GER province = 677 type = land size = 1 } # Iaroslavl
+garrison = { country = GER province = 554 type = land size = 1 } # Kinry
+garrison = { country = GER province = 555 type = land size = 1 } # Cherepovets
+garrison = { country = GER province = 556 type = land size = 1 } # Vytegra
+}
+
+name = "900033NAME"
+desc = "900033DESC" 
+style = 1
+picture = "fatherland\barbarossa2"
+decision_picture = "fatherland\decision_wehrmacht_color"
+date = { day = 1 month = january year = 1940 }
+offset = 5
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "The Urals must be our natural frontier."
+ai_chance = 20
+command = { type = trigger which = 900034 } # War erupts in Russia again
+command = { type = end_non_aggression which = GER where = SOV }
+command = { type = war which = SOV }
+command = { type = belligerence value = 5 }
+command = { type = dissent value = 8 }
+}
+
+action = {
+name = "We don't need this right now."
+ai_chance = 80
+command = { type = dissent value = 3 }
+}
+}
+
+############################
+# War erupts in Russia again
+############################
+
+event = {
+id = 900034
+random = no
+TAG = { ITA FIN ROM BUL CRO HUN TRA SPA NOR DEN U40 U41 U42 U44 U52 UKR BLR RUS }
+all = yes
+
+name = "900034NAME"
+desc = "900034DESC" 
+style = 2
+picture = "fatherland\barbarossa2"
+
+action = {
+name = "Onwards to Russia once more!"
+ai_chance = 20
+command = { type = dissent value = 5 }
+}
+}
+
+############################
+### 
