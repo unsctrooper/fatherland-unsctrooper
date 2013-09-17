@@ -1,0 +1,198 @@
+######################
+# The Future of Moscow
+######################
+
+event = {
+id = 900400
+random = no
+country = GER
+
+trigger = {
+NOT = {
+alliance = { country = GER country = SOV }
+war = { country = GER country = USA }
+}
+owned = { province = 572 data = GER } # Germany owns Moscow
+headofstate = 1 # Hitler
+ideology = nazi # NS government
+}
+
+name = "900400NAME"
+desc = "900400DESC" 
+style = 1
+picture = "fatherland\moscow"
+date = { day = 5 month = february year = 1948 }
+offset = 5
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Kasche is an armchair sloth. Destroy the city!"
+ai_chance = 75
+command = { type = setflag which = moscow_total }
+command = { type = dissent value = 5 }
+command = { type = construct which = ic where = 572 value = -5 }
+command = { type = province_manpower which = 572 value = -6 }
+}
+
+action = {
+name = "Kasche may be right. Conduct limited destruction."
+ai_chance = 25
+command = { type = setflag which = moscow_limited }
+command = { type = dissent value = 3 }
+command = { type = construct which = ic where = 572 value = -3 }
+command = { type = province_manpower which = 572 value = -4 }
+}
+
+action = {
+name = "Leave the city as it is."
+ai_chance = 0
+command = { type = dissent value = 5 }
+}
+}
+
+############################
+# Revolts throughout Muscovy
+############################
+
+event = {
+id = 900401
+random = no
+country = GER
+
+trigger = {
+NOT = {
+alliance = { country = GER country = SOV }
+war = { country = GER country = USA }
+}
+owned = { province = 572 data = GER } # Germany owns Moscow
+headofstate = 1 # Hitler
+ideology = nazi # NS government
+flag = moscow_total
+}
+
+name = "900401NAME"
+desc = "900401DESC" 
+style = 2
+picture = "fatherland\moscow"
+date = { day = 5 month = february year = 1948 }
+offset = 3
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "This will take some time to quell."
+command = { type = clrflag which = moscow_total }
+command = { type = dissent value = 10 }
+command = { type = revolt which = 572 when = 0 } # Moscow
+command = { type = revolt which = 572 when = 0 } # Moscow
+command = { type = revolt which = 572 when = 0 } # Moscow
+command = { type = revolt which = 572 when = 0 } # Moscow
+command = { type = revolt which = 678 when = 0 } # Vladimir
+command = { type = revolt which = 678 when = 0 } # Vladimir
+command = { type = revolt which = 570 when = 0 } # Zagorsk
+command = { type = revolt which = 570 when = 0 } # Zagorsk
+command = { type = revolt which = 568 when = 0 } # Solnecnogorsk
+command = { type = revolt which = 567 when = 0 } # Serpuov
+command = { type = revolt which = 571 when = 0 } # Orehovozuevo
+command = { type = 	province_revoltrisk which = 572 value = 30 }
+command = { type = 	province_revoltrisk which = 678 value = 30 }
+command = { type = 	province_revoltrisk which = 570 value = 30 }
+command = { type = 	province_revoltrisk which = 568 value = 30 }
+command = { type = 	province_revoltrisk which = 567 value = 30 }
+command = { type = 	province_revoltrisk which = 571 value = 30 }
+command = { type = 	province_revoltrisk which = 679 value = 30 } # Muron
+command = { type = trigger which = 900402 } # Revolts in Finnish Russia
+}
+}
+
+#########################
+# Revolts in East Karelia
+#########################
+
+event = {
+id = 900402
+random = no
+country = FIN
+
+name = "900402NAME"
+desc = "900402DESC" 
+style = 2
+picture = "fatherland\wehrmacht1"
+
+action = {
+name = "This will take some time to quell."
+command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
+command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
+command = { type = 	province_revoltrisk which = 539 value = 30 } # Petrozavodsk in Finland
+command = { type = 	province_revoltrisk which = 541 value = 30 } # Belomorsk in Finland
+}
+}
+
+######################
+# Resistance in Moscow
+######################
+
+event = {
+id = 900403
+random = no
+country = GER
+
+trigger = {
+NOT = {
+alliance = { country = GER country = SOV }
+war = { country = GER country = USA }
+}
+owned = { province = 572 data = GER } # Germany owns Moscow
+headofstate = 1 # Hitler
+ideology = nazi # NS government
+flag = moscow_limited
+}
+
+name = "900403NAME"
+desc = "900403DESC" 
+style = 2
+picture = "fatherland\moscow"
+date = { day = 5 month = february year = 1948 }
+offset = 3
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "This will take some time to quell."
+command = { type = clrflag which = moscow_limited }
+command = { type = dissent value = 10 }
+command = { type = revolt which = 572 when = 0 } # Moscow
+command = { type = revolt which = 572 when = 0 } # Moscow
+command = { type = 	province_revoltrisk which = 572 value = 30 }
+}
+}
+
+####################
+# Moscow is pacified
+####################
+
+event = {
+id = 900404
+random = no
+country = GER
+
+trigger = {
+control = { province = 572 data = GER }
+control = { province = 678 data = GER }
+control = { province = 570 data = GER }
+control = { province = 568 data = GER }
+event = 900401 # Revolts throughout Muscovy
+}
+
+name = "900404NAME"
+desc = "900404DESC" 
+style = 2
+picture = "fatherland\german_gathering"
+date = { day = 5 month = february year = 1948 }
+offset = 3
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Moscow is in German hands once more."
+command = { type = dissent value = -3 }
+command = { type = 	province_revoltrisk which = 572 value = 25 }
+}
+}
