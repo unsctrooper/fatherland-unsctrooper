@@ -101,7 +101,7 @@ trade = {
 		ARG = 40	
 		TUR = 40	
 	}
-	embargo = { }
+	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
 }
 tech_sharing = {
 	favored = {
@@ -118,7 +118,7 @@ tech_sharing = {
 		JAP = 150
 		TUR = 100
 	}
-	embargo = { }
+	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
 	not = { }
 	prioritized = { }
 }

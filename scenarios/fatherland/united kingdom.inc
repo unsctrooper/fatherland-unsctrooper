@@ -30,7 +30,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
     relation = { tag = BEL value = 200 }
     relation = { tag = BHU value = 200 access = yes }
     relation = { tag = BUL value = -150 }
-    relation = { tag = CAN value = 200 access = yes }
+    relation = { tag = CAN value = 200 access = yes guaranteed = { day = 1 month = december year = 1947 } }
     relation = { tag = CHI value = 80 }
     relation = { tag = SLO value = -100 }
     relation = { tag = ETH value = 50 }
@@ -39,7 +39,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
     relation = { tag = GER value = -200 }
 	relation = { tag = FRA value = -50 }
     relation = { tag = GUA value = 50 }
-    relation = { tag = HOL value = -100 }
+    relation = { tag = HOL value = 10 }
     relation = { tag = HON value = 50 }
     relation = { tag = HUN value = -100 }
     relation = { tag = IRE value = 50 }

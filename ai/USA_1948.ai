@@ -114,7 +114,7 @@ trade = {
 		CHI = 10
 		KOR = 50
 	}
-	embargo = { }
+	embargo = { GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR }
 }
 tech_sharing = {
 	favored = {
@@ -136,7 +136,7 @@ tech_sharing = {
 		PHI = 10
 		LIB = 10
 	}
-	embargo = { }
+	embargo = { GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR }
 	not = { }
 	prioritized = {	}
 }

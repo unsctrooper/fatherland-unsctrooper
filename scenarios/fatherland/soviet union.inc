@@ -124,7 +124,7 @@
 						1542 #South Sahalin
 						1543 # Kurils
 
-						1280 # Occupied East Turkestan
+						#1280 # Occupied East Turkestan
 
 						1119 # Tannu Tuva
 					}  
@@ -166,7 +166,7 @@
 
 1119 # Tannu Tuva
 
-1280 # Occupied East Turkestan
+#1280 # Occupied East Turkestan
      }
    claimedprovinces    = { 
 

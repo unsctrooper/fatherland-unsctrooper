@@ -89,9 +89,9 @@
 		name = "Take the side of the ethiopian herders"
 		command = { type = relation which = ENG value = -50 }
 		command = { type = end_puppet }
-		command = { type = leave_alliance }
-		command = { type = end_access which=ENG }
-		command = { type = end_non_aggression which=ENG }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
+		command = { type = end_access which = ENG }
+		command = { type = end_non_aggression which = ENG }
 	 }
 	 action_c = {
 		ai_chance = 10

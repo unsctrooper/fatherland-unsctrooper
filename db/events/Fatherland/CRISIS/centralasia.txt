@@ -1314,8 +1314,10 @@ event = {
 	name = EVT_90000436_A
 	ai_chance = 60
 	command = { type = relation which = SOV value = -100 }
-	command = { type = 	belligerence which = TRA value = 1 }
+	command = { type = belligerence which = TRA value = 1 }
 	command = { type = supplies value = -250 } 
+	command = { type = setflag which = CSKINTR }
+	command = { type = trigger which = 90000437 }
 	}
 	action = {
 	name = EVT_90000436_B
@@ -1330,7 +1332,8 @@ event = {
 	one_action = yes
 	
 	trigger = {
-	event = 90000436
+		event = 90000436
+		flag = CSKINTR
 	}	
 	
 	name = EVT_90000437_NAME
@@ -1345,8 +1348,8 @@ event = {
 	action = {
 	name = EVT_90000437_A # We lost!
 	ai_chance = 60
-	command = { type = 	dissent value = 1 }
-	command = { type =	secedeprovince which = TRA value = 706 }
+	command = { type = dissent value = 1 }
+	command = { type = secedeprovince which = TRA value = 706 }
 	command = { type = removecore which = 706 }
 	command = { type = addclaim which = 706 }
 	}

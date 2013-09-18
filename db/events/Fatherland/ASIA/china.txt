@@ -380,6 +380,7 @@ event = {
 				ai = CYN
 			}
 		}
+		NOT = { event = 8200111 }
 	}
 
 	date = { day = 1 month = january year = 1945 }
@@ -439,6 +440,7 @@ event = {
 				ai = CYN
 			}
 		}
+				NOT = { event = 8200110 }
 	}
 
 	date = { day = 1 month = january year = 1945 }

@@ -82,7 +82,7 @@ trade = {
 		SIA = 40
 		HOL = 50
 	}
-	embargo = { CHC }
+	embargo = { CHC PRK }
 }
 tech_sharing = {
 	favored = {
@@ -95,7 +95,7 @@ tech_sharing = {
 		HOL = 20
 		KOR = 20
 	}
-	embargo = { CHC }
+	embargo = { CHC PRK }
 	not = { }
 	prioritized = {	}
 }

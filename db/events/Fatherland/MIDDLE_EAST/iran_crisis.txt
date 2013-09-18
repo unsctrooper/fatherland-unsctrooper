@@ -12,7 +12,7 @@ event = {
 	country = PER
 
 	name = EVT_8500901_NAME
-	desc = EVT_8500901_DESC
+	desc = "The Kurdish minority want more independence"#EVT_8500901_DESC
 	picture = "nwo\republic_of_mahabad"
 	style = 1
 
@@ -41,7 +41,10 @@ event = {
 		name = EVT_8500901_B # Contain Kurdish movements
 		ai_chance = 30
 		command = { type = dissent value = 5 }
-		command = { type = province_revoltrisk which = 1084 value = 75 }
+		command = { type = province_revoltrisk which = 1084 value = 80 }
+		command = { type = relation which = TUR value = 50 }	
+		command = { type = relation which = IRQ value = 50 }	
+		command = { type = relation which = SOV value = -10 }
 	}
 }
 
@@ -67,7 +70,7 @@ event = {
 
 	action = {
 		name = EVT_8500902_A
-		command = { type = access which = SOV }
+		#command = { type = access which = SOV }
 		command = { type = add_division value = militia when = 6 }
 		command = { type = add_division value = militia when = 6 }
 		command = { type = add_division value = militia when = 6 }
@@ -81,8 +84,8 @@ event = {
 	id = 8500903
 	country = SOV
 
-	name = EVT_8500903_NAME
-	desc = EVT_8500903_DESC
+	name = "Approach the Mahabad Republic" #EVT_8500903_NAME
+	desc = "We should try an approach with the new Republic and tighten relations with Kurds in the area"#EVT_8500903_DESC
 	picture = "nwo\republic_of_mahabad"
 	style = 1
 
@@ -100,6 +103,7 @@ event = {
 		name = EVT_8500903_A # Don't give support
 		ai_chance = 80
 		command = { type = relation which = KUR value = -200 }
+		command = { type = relation which = PER value = 10 }
 		command = { type = trigger which = 8500911 } # Soviets withdraw support for the Kurds
 		command = { type = sleepevent which = 8500921 }
 	}
@@ -128,7 +132,7 @@ event = {
 
 	action = {
 		name = EVT_8500904_A # Send ultimatum
-		ai_chance = 85
+		ai_chance = 80
 		command = { type = trigger which = 8500905 }
 		command = { type = relation which = SOV value = -50 }
 		command = { type = dissent value = 3 }
@@ -136,7 +140,7 @@ event = {
 	
 	action = {
 		name = EVT_8500904_B # Let Soviets have it
-		ai_chance = 15
+		ai_chance = 20
 		command = { type = relation which = PER value = -100 }
 		command = { type = relation which = KUR value = 100 }
 		command = { type = trigger which = 8500910 } # Soviet support for Kurdistan
@@ -256,7 +260,7 @@ event = {
 	action = {
 		name = EVT_8500909_A
 		command = { type = end_puppet }
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 }
 	}
 	
 }
@@ -298,80 +302,6 @@ event = {
 		command = { type = remove_division which = -1 }
 	}
 	
-}
-##########################################
-### Soviets give the corridor back to Iran (if Kurdistan doesn't exist)
-##########################################
-event = {
-	id = 8500920
-	country = SOV
-
-	name = EVT_8500920_NAME
-	desc = EVT_8500920_DESC
-	picture = "nwo\persian_corridor"
-	style = 1
-
-	trigger = {
-		flag = cold_war
-		NOT = { exists = KUR }
-		exists = PER
-		OR = {
-			control = { province = 1082 data = -1 }
-			control = { province = 1083 data = -1 }
-			control = { province = 1081 data = -1 }
-			control = { province = 1080 data = -1 }
-			control = { province = 1092 data = -1 }
-		}
-		NOT = { war = { country = KUR country = PER } }
-	}
-
-	date = { day = 0 month = july year = 1949 }
-	offset = 30
-	deathdate = { day = 30 month = december year = 1949 }
-
-	action = {
-		name = EVT_8500920_A
-		command = { type = secedeprovince which = PER value = 1082 when = 1 }
-		command = { type = secedeprovince which = PER value = 1083 when = 1 }
-		command = { type = secedeprovince which = PER value = 1081 when = 1 }
-		command = { type = secedeprovince which = PER value = 1080 when = 1 }
-		command = { type = secedeprovince which = PER value = 1092 when = 1 }
-	}
-}
-##########################################
-### Soviets give the corridor to Republic of Mahabad
-##########################################
-event = {
-	id = 8500921
-	country = SOV
-
-	name = EVT_8500921_NAME
-	desc = EVT_8500921_DESC
-	picture = "nwo\persian_corridor"
-	style = 1
-
-	trigger = {
-		flag = cold_war
-		exists = KUR
-		exists = PER
-		OR = {
-			control = { province = 1082 data = -1 }
-			control = { province = 1083 data = -1 }
-			control = { province = 1081 data = -1 }
-		}
-		NOT = { war = { country = KUR country = PER } }
-	}
-
-	date = { day = 0 month = july year = 1949 }
-	offset = 30
-	deathdate = { day = 30 month = december year = 1949 }
-
-	action = {
-		name = EVT_8500921_A
-		command = { type = secedeprovince which = KUR value = 1082 when = 1 }
-		command = { type = secedeprovince which = KUR value = 1083 when = 1 }
-		command = { type = secedeprovince which = KUR value = 1081 when = 1 }
-	}
 }
 ##########################################
 ### Iran ceases to be a puppet

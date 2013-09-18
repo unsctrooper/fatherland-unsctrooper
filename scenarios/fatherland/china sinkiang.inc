@@ -28,8 +28,8 @@ rare_materials         = 60
      interventionism   = 5 
     } 
    nationalprovinces      = {  1273 1274 1275 1276 1277 1278 1279 1280 1281 1282  } 
-   ownedprovinces         = {  1273 1274 1275 1276 1277 1279  1281 1282  } 
-   controlledprovinces    = {  1273 1274 1275 1276 1277 1279  1281 1282  } 
+   ownedprovinces         = {  1273 1274 1275 1276 1277 1279 1280 1281 1282  } 
+   controlledprovinces    = {  1273 1274 1275 1276 1277 1279  1280 1281 1282  } 
    # ROTW Minor Tech '36 
    # Group E 1936 techs 
    # ###################### 

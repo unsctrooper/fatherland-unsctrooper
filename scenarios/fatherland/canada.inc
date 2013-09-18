@@ -49,7 +49,7 @@ country = {
 	
 	diplomacy = {
 		relation = { tag = SAF value = 200 }
-		relation = { tag = ENG value = 200 }
+		relation = { tag = ENG value = 200 access = yes }
 		relation = { tag = AST value = 200 }
 		relation = { tag = NZL value = 200 }
 		relation = { tag = FRA value = 150 }
