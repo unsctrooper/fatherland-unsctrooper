@@ -124,7 +124,7 @@
 						1542 #South Sahalin
 						1543 # Kurils
 
-						#1280 # Occupied East Turkestan
+						1280 # Occupied East Turkestan
 
 						1119 # Tannu Tuva
 					}  
@@ -166,7 +166,7 @@
 
 1119 # Tannu Tuva
 
-#1280 # Occupied East Turkestan
+1280 # Occupied East Turkestan
      }
    claimedprovinces    = { 
 
@@ -1356,32 +1356,11 @@ airunit = {
 		model = 5 
 			}
 	division = { 
-	id = { type = 10848 id = 7008 } 
-		name = "32.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
 	id = { type = 10848 id = 7001 } 
 		name = "34.LSHABR" 
 		strength = 80 
 		type = cas 
 		model = 1 
-			}
-	division = { 
-	id = { type = 10848 id = 7002 } 
-		name = "69.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			} 
-	division = { 
-	id = { type = 10848 id = 7003 } 
-		name = "70.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
 			}
 	}
 airunit = { 
@@ -1405,39 +1384,11 @@ airunit = {
 		model = 7 
 			}
 	division = { 
-	id = { type = 10848 id = 7019 } 
-		name = "4.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7020 } 
-		name = "5.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
 	id = { type = 10848 id = 7010 } 
 		name = "23.TBABR" 
 		strength = 80 
 		type = tactical_bomber 
 		model = 6 
-			}
-	division = { 
-	id = { type = 10848 id = 7011 } 
-		name = "24.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7012 } 
-		name = "26.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
 			}
 	division = { 
 	id = { type = 10848 id = 7013 } 
@@ -1481,48 +1432,6 @@ airunit = {
 		type = interceptor 
 		model = 7 
 			}
-	division = { 
-	id = { type = 10848 id = 7029 } 
-		name = "8.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7030 } 
-		name = "39.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7022 } 
-		name = "12.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7023 } 
-		name = "13.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7024 } 
-		name = "57.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7025 } 
-		name = "62.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
 	}
 airunit = { 
 	id = { type = 10848 id = 7037 } 
@@ -1545,53 +1454,11 @@ airunit = {
 		model = 7 
 			}
 	division = { 
-	id = { type = 10848 id = 7040 } 
-		name = "11.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7041 } 
-		name = "25.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
 	id = { type = 10848 id = 7032 } 
 		name = "28.TBABR" 
 		strength = 80 
 		type = tactical_bomber 
 		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7033 } 
-		name = "31.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7034 } 
-		name = "29.TBABR" 
-		strength = 80 
-		type = strategic_bomber 
-		model = 2 
-			}
-	division = { 
-	id = { type = 10848 id = 7035 } 
-		name = "30.TBABR" 
-		strength = 80 
-		type = strategic_bomber 
-		model = 2 
-			}
-	division = { 
-	id = { type = 10848 id = 7036 } 
-		name = "42.TBABR" 
-		strength = 80 
-		type = strategic_bomber 
-		model = 2 
 			}
 	}
 airunit = { 
@@ -1615,41 +1482,6 @@ airunit = {
 		model = 7 
 			}
 	division = { 
-	id = { type = 10848 id = 7051 } 
-		name = "16.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7052 } 
-		name = "17.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7043 } 
-		name = "19.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7044 } 
-		name = "32.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7045 } 
-		name = "33.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
 	id = { type = 10848 id = 7046 } 
 		name = "37.TBABR" 
 		strength = 80 
@@ -1671,20 +1503,6 @@ airunit = {
 	base = 706
 
 	division = { 
-	id = { type = 10848 id = 7069 } 
-		name = "36.LBABR" 
-		strength = 80 
-		type = multi_role 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7070 } 
-		name = "43.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 8 
-			}
-	division = { 
 	id = { type = 10848 id = 7071 } 
 		name = "46./48.ABRON" 
 		strength = 70 
@@ -1699,32 +1517,11 @@ airunit = {
 		model = 1
 			}
 	division = { 
-	id = { type = 10848 id = 7064 } 
-		name = "44.LBABR" 
-		strength = 80 
-		type = multi_role 
-		model = 5 
-			}
-	division = { 
 	id = { type = 10848 id = 7065 } 
 		name = "47.LSHABR" 
 		strength = 80 
 		type = cas 
 		model = 1 
-			}
-	division = { 
-	id = { type = 10848 id = 7066 } 
-		name = "55.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 6 
-			}
-	division = { 
-	id = { type = 10848 id = 7067 } 
-		name = "52.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 6 
 			}
 	}
 
