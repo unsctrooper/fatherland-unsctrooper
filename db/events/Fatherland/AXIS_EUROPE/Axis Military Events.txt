@@ -5,7 +5,8 @@
 #######################
 ###########################################
 ### 1. Formation of the Volga Coalition ###
-### 2. The Wehrbauer Program 			###
+### 2. Operation Barbarossa II			###
+### 3. Spanish Entry into the Axis		###
 
 
 ###########################################
@@ -51,13 +52,13 @@ command = { type = trigger which = 900001 } # RK Kaukasus
 command = { type = relation which = U42 value = -50 }
 command = { type = relation which = GER value = -50 }
 command = { type = relation which = ROM value = -50 }
-command = { type = domestic which = interventionism value = -1 }
+command = { type = domestic which = interventionism value = 1 }
 }
 
 action_b = {
 name = "We should not provoke the Axis."
 ai_chance = 25
-command = { type = domestic which = interventionism value = 1 }
+command = { type = domestic which = interventionism value = -1 }
 command = { type = setflag which = kerch_no }
 }
 }
@@ -195,7 +196,7 @@ action_b = {
 name = "Never! We are independent!"
 ai_chance = 10
 command = { type = dissent value = 5 }
-command = { type = war which = GER }
+command = { type = war which = GER } # Germany attacks Cossacks
 }
 }
 
@@ -999,11 +1000,159 @@ style = 2
 picture = "fatherland\barbarossa2"
 
 action = {
-name = "Onwards to Russia once more!"
+name = "Onwards to Siberia!"
 ai_chance = 20
 command = { type = dissent value = 5 }
 }
 }
 
-############################
-### 
+######################################
+### 3. Spanish Entry into the Axis ###
+######################################
+######################################
+#	Start the Axis Integration Talks
+######################################
+
+event = {
+id = 900038
+random = no
+country = SPA
+
+trigger = {
+NOT = {
+alliance = { country = GER country = SPA }
+alliance = { country = ITA country = SPA } # Alliance with Italy precludes alliance with Germany
+}
+participant = { country = GER value = 2 } # Germany is in Axis
+government = fascist
+}
+
+name = "900038NAME"
+desc = "900038DESC" 
+style = 1
+picture = "diplomatic_campaign"
+date = { day = 1 month = january year = 1940 }
+offset = 1
+deathdate = { day = 30 month = december year = 1980 }
+
+action = {
+name = "Send envoys to Rome and Berlin."
+ai_chance = 80
+command = { type = trigger which = 900039 } # German event
+}
+
+action = {
+name = "We should aim for a purely economic alliance."
+ai_chance = 15
+command = { type = trigger which = 900041 } # German event on trade
+}
+
+action = {
+name = "We should not join an Axis-led Europe."
+ai_chance = 5
+command = { type = domestic which = interventionism value = -1 }
+command = { type = dissent value = 10 }
+command = { type = setflag which = spain_no_axis }
+}
+}
+
+#################################
+# Spain asks for Axis integration
+#################################
+
+event = {
+id = 900039
+random = no
+country = GER
+
+name = "900039NAME"
+desc = "900039DESC" 
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "Our response is positive - Spain joins the Axis"
+ai_chance = 75
+command = { type = alliance which = SPA }
+command = { type = relation which = SPA value = 40 }
+command = { type = trigger which = 900043 } # Spain joins the Axis
+}
+
+action = {
+name = "Spain was a traitor during the war - don't let them in."
+ai_chance = 25
+command = { type = relation which = SPA value = -40 }
+}
+}
+
+#######################
+# We are in the Axis!
+#######################
+
+event = {
+id = 900043
+random = no
+country = SPA
+
+name = "900043NAME"
+desc = "900043DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "This is a great day for Spain."
+command = { type = access which = GER }
+command = { type = relation which = GER value = 40 }
+command = { type = dissent value = -10 }
+command = { type = domestic which = interventionism value = 2 }
+}
+}
+
+#####################################
+# Spain requests economic partnership
+#####################################
+
+event = {
+id = 900041
+random = no
+country = GER
+
+name = "900041NAME"
+desc = "900041DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "Grant Spain this economic partnership."
+ai_chance = 90
+command = { type = relation which = SPA value = 20 }
+command = { type = trigger which = 900042 } # Spain receives contract
+}
+
+action = {
+name = "Spain is useless as an ally and partner."
+ai_chance = 20
+command = { type = relation which = SPA value = -20 }
+}
+}
+
+########################################
+# Germany accepts our trade partnership
+########################################
+
+event = {
+id = 900042
+random = no
+country = SPA
+
+name = "900042NAME"
+desc = "900042DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "Grant Spain this economic partnership."
+command = { type = relation which = GER value = 20 }
+command = { type = trade which = SPA where = GER metal = -10  supplies = 10 oil = 10 when = 3650 value = 0 }
+}
+}
