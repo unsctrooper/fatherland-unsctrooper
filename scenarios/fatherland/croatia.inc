@@ -25,7 +25,10 @@ rare_materials         = 200
      relation = {  tag = RSI value = 200  } 
     } 
    SpyInfo                = {  country = "CRO" NumberOfSpies = 7  } 
-   nationalprovinces      = {  337 345 344 352 353 355 354 347 357 358 356  351  } 
+   nationalprovinces      = {  337 345 344 352 353 355 354 347 357 358 356  351 
+   # Fiume
+   406 
+   } 
    ownedprovinces         = {  337 345 344 352 353 355 354 347 357 358 356  351 } 
    controlledprovinces    = {  337 345 344 352 353 355 354 347 357 358 356  351 } 
    claimedprovinces       = {  337 343 344 345 347 350 351 353 354 355 356 357 358  } 
