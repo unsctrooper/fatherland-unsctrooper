@@ -1032,7 +1032,7 @@ desc = "900038DESC"
 style = 1
 picture = "diplomatic_campaign"
 date = { day = 1 month = january year = 1940 }
-offset = 1
+offset = 60
 deathdate = { day = 30 month = december year = 1980 }
 
 action = {
