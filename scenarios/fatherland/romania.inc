@@ -292,7 +292,7 @@ inventions = { 3000027 }
       dig_in = 20.000
     } 
    landunit = 
-   {  location = 619 
+   {  location = 291 # Sibiu 
      name     = "Corp II Armata" 
      id       = {  type = 20600 id = 63  } 
      Division = 
@@ -354,7 +354,7 @@ inventions = { 3000027 }
       }
     } 
    landunit = 
-   {  location = 310
+   {  location = 286 # Arad
      name     = "Corp VI Armata" 
      id       = {  type = 20600 id = 67  } 
      Division = 
@@ -386,7 +386,7 @@ inventions = { 3000027 }
       } 
     } 
    landunit = 
-   {  location = 619 
+   {  location = 291 # Sibiu 
      name     = "Corp IV Armata" 
      id       = {  type = 20600 id = 21  } 
      Division = 

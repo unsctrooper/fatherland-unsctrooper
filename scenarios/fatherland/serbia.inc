@@ -27,7 +27,7 @@
      relation = {  tag = ITA value = 200  } 
     } 
    SpyInfo                = {  country = "SER" NumberOfSpies = 7  } 
-   nationalprovinces      = {  338 } 
+   nationalprovinces      = {  327 330 338 339 340 342 } 
    ownedprovinces         = {  327 330 338 339 340 342  } 
    controlledprovinces    = {  327 330 338 339 340 342  } 
    claimedprovinces       = {  327 328 329 330 331 332 333 334 335 336 337 339 340 341 342 343 344 350 351 353 354 355 356 357 358  } 

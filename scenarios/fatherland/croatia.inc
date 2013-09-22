@@ -25,7 +25,7 @@ rare_materials         = 200
      relation = {  tag = RSI value = 200  } 
     } 
    SpyInfo                = {  country = "CRO" NumberOfSpies = 7  } 
-   nationalprovinces      = {  352  } 
+   nationalprovinces      = {  337 345 344 352 353 355 354 347 357 358 356  351  } 
    ownedprovinces         = {  337 345 344 352 353 355 354 347 357 358 356  351 } 
    controlledprovinces    = {  337 345 344 352 353 355 354 347 357 358 356  351 } 
    claimedprovinces       = {  337 343 344 345 347 350 351 353 354 355 356 357 358  } 
@@ -87,7 +87,7 @@ inventions = { 3000027 }
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 1 
-     political_left    = 4 
+     political_left    = 2
      free_market       = 4 
      freedom           = 3 
      professional_army = 8 
