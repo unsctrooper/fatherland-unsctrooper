@@ -70,7 +70,7 @@ country = {
 	
 	headofstate = { type = 9 id = 35011 }
 	headofgovernment = { type = 9 id = 35016 }
-	foreignminister = { type = 9 id = 35026 }
+	foreignminister = { type = 9 id = 35024 } # Ramon Serrano Suner
 	armamentminister = { type = 9 id = 35056 }
 	ministerofsecurity = { type = 9 id = 35090 }
 	ministerofintelligence = { type = 9 id = 35109 }
