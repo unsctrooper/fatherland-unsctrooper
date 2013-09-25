@@ -995,7 +995,7 @@ TAG = { ITA FIN ROM BUL CRO HUN TRA SPA NOR DEN U40 U41 U42 U44 U52 UKR BLR RUS 
 all = yes
 
 name = "900034NAME"
-desc = "900034DESC" 
+desc = "900034DESC"
 style = 2
 picture = "fatherland\barbarossa2"
 
@@ -1028,11 +1028,11 @@ government = fascist
 }
 
 name = "900038NAME"
-desc = "900038DESC" 
+desc = "900038DESC"
 style = 1
 picture = "diplomatic_campaign"
 date = { day = 1 month = january year = 1940 }
-offset = 60
+offset = 1
 deathdate = { day = 30 month = december year = 1980 }
 
 action = {
@@ -1066,7 +1066,7 @@ random = no
 country = GER
 
 name = "900039NAME"
-desc = "900039DESC" 
+desc = "900039DESC"
 style = 2
 picture = "fatherland\spanish_warposter"
 
