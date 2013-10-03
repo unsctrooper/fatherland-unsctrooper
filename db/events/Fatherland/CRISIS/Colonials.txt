@@ -66,7 +66,7 @@ event = {
 
 	action = {
 		name = ACTION_NAME_OK
-		command = { type = alliance which = USA }	
+		#command = { type = alliance which = USA }	
 		command = { type = supplies value = 5000 } 
 		command = { type = resource which = oil value = 5000 } 
 		command = { type = construct which = ic where = 1647 value = 10 }
@@ -95,6 +95,7 @@ event = {
 	action = {
 		name = ACTION_NAME_OK
 		command = { type = inherit which = INO }	
+		command = { type = alliance which = USA }	
 	}
 }
 event = {

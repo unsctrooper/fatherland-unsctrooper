@@ -9,17 +9,19 @@ event = {
 	id = 8014250
 	country = SOV
 
-	name = EVT_8014250_NAME
+	#name = EVT_8014250_NAME
+	name = "It's time to decide a new general secretary of Soviet Union Communist Party"
 	desc = EVT_8014250_DESC
+	
 	picture = nwo\succession_of_stalin
 	style = 1
 
 	trigger = {
-		flag = cold_war
+		#flag = cold_war
 	}
 
 	date = { day = 1 month = january year = 1948 }
-	offset = 5
+	offset = 1
 	deathdate = { day = 30 month = april year = 1953 }
 
 	# Krushchev (5% probability of dissent)

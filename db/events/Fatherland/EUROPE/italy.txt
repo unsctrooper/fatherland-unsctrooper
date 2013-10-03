@@ -163,7 +163,7 @@ event = {
 		command = { type = setflag which = RadicalItaly }
 		command = { type = sleepevent which = 90000609 }
 		command = { type = domestic which = political_left value = -1 } #Nazi
-		command = { type = sleepminister which = 25002 } #Mussolini HoS
+		#command = { type = sleepminister which = 25002 } #Mussolini HoS
 		command = { type = sleepminister which = 25004 } #Mussolini MoA
 		command = { type = sleepminister which = 25173 } #Mussolini FM
 		command = { type = sleepminister which = 25188 } #Mussolini HoG
@@ -181,7 +181,7 @@ event = {
 		command = { type = sleepevent which = 90000606 }
 		command = { type = sleepevent which = 90000609 }
 		command = { type = domestic which = political_left value = 1 } 
-		command = { type = sleepminister which = 25002 } #Mussolini HoS
+		#command = { type = sleepminister which = 25002 } #Mussolini HoS
 		command = { type = sleepminister which = 25004 } #Mussolini MoA
 		command = { type = sleepminister which = 25173 } #Mussolini FM
 		command = { type = sleepminister which = 25188 } #Mussolini HoG

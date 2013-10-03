@@ -1,7 +1,7 @@
 ITA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
 ;Replacements;;;;;;;;;X
 25001;Head of State;Vittorio Emanuele III;1933;1964;1999;FA;Weary Stiffneck;High;6377;X
-25002;Head of Government;Benito Mussolini;1933;1964;1999;FA;Imperialist buffoon;High;2688;X
+25002;Head of Government;Benito Mussolini;1933;1998;1999;FA;Imperialist buffoon;High;2688;X
 25003;Foreign Minister;Gian Galeazzo Ciano;1933;1964;1999;FA;Fascist Crusader;Very High;6378;X
 25004;Minister of Armament;Benito Mussolini;1933;1964;1999;FA;Autarkic Fascist;Very High;2688;X
 25005;Minister of Security;Guido Buffarini-Guidi;1933;1964;1999;FA;Man of the People;Very High;6380;X
@@ -15,7 +15,7 @@ ITA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 25013;Chief of Army;Enrico Mattei;1943;1964;1999;SC;Decisive Battle Doctrine;High;M3018;X
 25014;Head of State;Vittorio Emanuele III;1933;1964;1999;PA;Weary Stiffneck;High;6377;X
 25015;Head of State;Vittorio Emanuele III;1933;1964;1999;SC;Weary Stiffneck;High;6377;X
-25016;Head of State;Benito Mussolini;1933;1933;1999;NS;Barking Buffoon;High;2688;X
+25016;Head of State;Benito Mussolini;1933;1998;1999;NS;Barking Buffoon;High;2688;X
 25017;Head of State;Paolo Thaon di Revel;1933;1964;1999;NS;Resigned Generalissimo;High;M3035;X
 25018;Head of State;Umberto II;1933;1964;1999;PA;Autocratic Charmer;High;7370;X
 25019;Head of State;Umberto II;1933;1964;1999;SC;Autocratic Charmer;High;7370;X
