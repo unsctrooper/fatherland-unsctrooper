@@ -392,7 +392,7 @@ event = {
 	picture = "news_paper"   
 
 	trigger = {
-			event = { id = 320 days = 1 } 
+			event = 320
 	}
 	
 	date = { day = 1 month = january year = 1949 }
