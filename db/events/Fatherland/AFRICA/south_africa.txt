@@ -183,8 +183,8 @@ event = {
 		command = { type = relation which = AST value = -100 }
 		command = { type = relation which = NZL value = -100 }		
 				
-		command = { type = leave_alliance }
-		command = { type = peace which = GER value = 1 }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
+		#command = { type = peace which = GER value = 1 }
 		command = { type = end_access which = ENG }
 		
 		command = { type = relation which = GER value = 100 }
