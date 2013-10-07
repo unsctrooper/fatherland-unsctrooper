@@ -19,7 +19,7 @@ rare_materials         = 200
    oil                    = 200
    supplies               = 200 
    money                  = 10 
-   manpower               = 130
+   manpower               = 30
    capital                = 352 
    diplomacy = 
    { relation = {  tag = GER value = 200  } 

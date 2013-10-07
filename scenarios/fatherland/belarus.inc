@@ -9,7 +9,7 @@
   
  country = 
  {  tag                    = BLR 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes } }
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes } }
    name = "Belarussian Central Rada"
    puppet = U40
    #ai                     = "GER_1942.ai"
@@ -250,7 +250,7 @@ inventions = { 3000027 3000028 }
      political_left    = 3 
      free_market       = 5 
      freedom           = 2 
-     professional_army = 9 
+     professional_army = 10
      defense_lobby     = 10 
      interventionism   = 1 
     }

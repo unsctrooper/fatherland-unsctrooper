@@ -268,7 +268,7 @@ inventions = { 3000027 3000028 }
      political_left    = 1 
      free_market       = 5 
      freedom           = 2 
-     professional_army = 9 
+     professional_army = 10 
      defense_lobby     = 10 
      interventionism   = 1 
     }
