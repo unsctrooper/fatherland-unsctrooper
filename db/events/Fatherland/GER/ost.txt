@@ -6,6 +6,7 @@ event = {
 	decision = {
 	flag = PostHitler
 	puppet = { country = U40 country = GER } # Ostland
+	puppet = { country = BLR country = GER } # Ostland
 	puppet = { country = U41 country = GER } # Ukraine
 	}
 	
