@@ -9,6 +9,7 @@
   
 	country = 
 	{  tag = SOV 
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
 	   regular_id = RUS 
 	   intrinsic_gov_type = leninist 
 	   capital = 1138 
@@ -333,7 +334,7 @@ inventions = { 3000027 }
      political_left    = 10 
      freedom           = 1 
      free_market       = 1 
-     professional_army = 8 
+     professional_army = 7 
      defense_lobby     = 10 
      interventionism   = 10 
     } 

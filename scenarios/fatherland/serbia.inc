@@ -95,5 +95,50 @@ inventions = { 3000027 }
      professional_army = 5 
      defense_lobby     = 7 
      interventionism   = 8 
+	 }
+landunit = {
+		id = { type = 30204 id = 49 }
+		name = "Jugoslavenska Narodna Armija"
+		location = 338
+		division = {
+			id = { type = 30204 id = 50 }
+			name = "Generalstab Srbije"
+			strength = 40
+			type = hq
+			model = 2
+			experience = 20
+		}
+		division = {
+			id = { type = 30204 id = 51 }
+			name = "22. Srpska Divizija"
+			strength = 55
+			type = militia
+			model = 5
+			experience = 20
+		}
+		division = {
+			id = { type = 30204 id = 52 }
+			name = "24. Srpska Divizija"
+			strength = 55
+			type = militia
+			model = 5
+			experience = 20
+		}
+		division = {
+			id = { type = 30204 id = 53 }
+			name = "46. Srpska Divizija"
+			strength = 55
+			type = militia
+			model = 5
+			experience = 20
+		}
+		division = {
+			id = { type = 30204 id = 54 }
+			name = "47. Srpska Divizija"
+			strength = 55
+			type = militia
+			model = 5
+			experience = 20
+		}
+	}
     } 
-}
