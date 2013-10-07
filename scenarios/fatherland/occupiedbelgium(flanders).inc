@@ -9,6 +9,7 @@
   
  country = 
  {  tag                    = FLA
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
@@ -74,7 +75,7 @@
   }
    SpyInfo                = {  country = "FLA" NumberOfSpies = 7  } 
    
-   nationalprovinces      = { 115 116 } 
+   nationalprovinces      = { 115 117 114} 
    ownedprovinces         = { 115 117 114 49 51 52 } 
    controlledprovinces    = { 115 117 114 49 51 52 } 
 	claimedprovinces 	  = { } 

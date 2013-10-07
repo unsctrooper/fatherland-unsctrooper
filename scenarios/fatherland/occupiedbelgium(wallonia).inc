@@ -9,6 +9,7 @@
   
  country = 
  {  tag                    = WLL
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
@@ -74,7 +75,7 @@
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
-   nationalprovinces      = { 108 116 } 
+   nationalprovinces      = { 113 108 111 112 } 
    ownedprovinces         = { 113 108 111 112 } 
    controlledprovinces    = { 113 108 111 112 } 
 	claimedprovinces 	  = {   } 
@@ -232,7 +233,7 @@ inventions = { 3000027 3000028 }
      political_left    = 1 
      free_market       = 5 
      freedom           = 2 
-     professional_army = 8 
+     professional_army = 6 
      defense_lobby     = 10 
      interventionism   = 1 
     }

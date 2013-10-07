@@ -9,6 +9,7 @@
   
  country = 
  {  tag                    = FRA 
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
     flag_ext               = _Vic
     name                   = FRA_1
     ai                     = "vic_1941.ai"

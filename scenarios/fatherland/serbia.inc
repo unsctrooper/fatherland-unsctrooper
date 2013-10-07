@@ -9,6 +9,7 @@
   
  country = 
  {  tag                    = SER 
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
 	puppet                 = GER
 	control                = GER
 	flag_ext = _fas
@@ -20,7 +21,7 @@
 	oil                    = 200
 	supplies               = 500 
 	money                  = 10 
-	manpower               = 10 
+	manpower               = 25 
 	capital                = 338 
    diplomacy = 
    { relation = {  tag = GER value = 200  } 
@@ -92,7 +93,7 @@ inventions = { 3000027 }
      political_left    = 4 
      free_market       = 4 
      freedom           = 3 
-     professional_army = 5 
+     professional_army = 7 
      defense_lobby     = 7 
      interventionism   = 8 
 	 }

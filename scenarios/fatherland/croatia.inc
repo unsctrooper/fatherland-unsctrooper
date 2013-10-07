@@ -9,6 +9,7 @@
   
  country = 
  {  tag                    = CRO 
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes } }
     puppet                 = GER
     control                = GER
    # Resource Reserves 
