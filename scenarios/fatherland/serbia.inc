@@ -13,7 +13,6 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 	puppet                 = GER
 	control                = GER
 	flag_ext = _fas
-	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
 	# Resource Reserves 
 	energy                 = 200 
 	metal                  = 200
