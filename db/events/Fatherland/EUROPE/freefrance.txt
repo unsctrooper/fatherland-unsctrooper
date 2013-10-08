@@ -225,11 +225,13 @@ event = {
 	
 	decision = {			
 		NOT = {		
-				exists = MOR		
-		}		
+		exists = MOR		
+		}	
+    event = 1808		
 	}
 	decision_trigger = {
-		NOT = { war = { country = U01 country = FRA } }
+	NOT = { war = { country = U01 country = FRA } }
+    event = 1808		
 	}
 	
 	name = "The Morocco Protectorate"

@@ -4,13 +4,16 @@ event = {
 	country = ENG
 	
 	decision = {
-		year = 1948					
+		year = 1948
+        event = 2001		
 	}
 	decision_trigger = { 
 		year = 1948	
+        event = 2001		
 	}
 	trigger = {
         year = 1948
+        event = 2001		
 	}
 	
 	name = "800NAME"
