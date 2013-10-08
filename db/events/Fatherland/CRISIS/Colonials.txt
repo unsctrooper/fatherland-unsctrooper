@@ -112,9 +112,9 @@ event = {
 	style = 2
 	picture = "swedish_volunteers"
 	
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 1 month = january year = 1948 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 1 month = april year = 1948 }
 
 	action = {
 		name = ACTION_NAME_OK
