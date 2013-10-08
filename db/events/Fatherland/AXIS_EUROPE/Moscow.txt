@@ -15,14 +15,15 @@ war = { country = GER country = USA }
 owned = { province = 572 data = GER } # Germany owns Moscow
 headofstate = 1 # Hitler
 ideology = nazi # NS government
+event = 900000
 }
 
 name = "900400NAME"
 desc = "900400DESC" 
 style = 1
 picture = "fatherland\moscow"
-date = { day = 5 month = february year = 1948 }
-offset = 5
+date = { day = 1 month = february year = 1948 }
+offset = 14
 deathdate = { day = 30 month = december year = 1980 }
 
 action = {

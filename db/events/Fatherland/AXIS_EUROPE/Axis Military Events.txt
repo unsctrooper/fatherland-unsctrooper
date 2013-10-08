@@ -34,6 +34,7 @@ OR = {
 owned = { province = 694 data = U42 } # RK Kaukasus
 owned = { province = 694 data = GER }
 owned = { province = 694 data = ROM }
+random = 10 
 }
 }
 
@@ -41,8 +42,8 @@ name = "900000NAME"
 desc = "900000DESC" 
 style = 1
 picture = "fatherland\baku_oilwells"
-date = { day = 1 month = january year = 1940 }
-offset = 2
+date = { day = 1 month = february year = 1948 }
+offset = 5
 deathdate = { day = 30 month = december year = 1980 }
 
 action_a = {
@@ -1025,6 +1026,8 @@ alliance = { country = ITA country = SPA } # Alliance with Italy precludes allia
 }
 participant = { country = GER value = 2 } # Germany is in Axis
 government = fascist
+event = 2004
+random = 20
 }
 
 name = "900038NAME"
@@ -1032,7 +1035,7 @@ desc = "900038DESC"
 style = 1
 picture = "diplomatic_campaign"
 date = { day = 1 month = january year = 1940 }
-offset = 1
+offset = 7
 deathdate = { day = 30 month = december year = 1980 }
 
 action = {
