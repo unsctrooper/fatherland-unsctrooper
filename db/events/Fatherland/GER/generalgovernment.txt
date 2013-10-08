@@ -26,24 +26,24 @@ event = {
 	style = 2
 	picture = "generalgovernment"	
 
-	date = { day = 1 month = october year = 1951 } #october 1951
-	offset = 30
+	date = { day = 1 month = october year = 1949 }
+	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
 	name = EVT_90000300_A # Status quo
-	ai_chance = 50
+	ai_chance = 10
 	command = { type = 	dissent value = -1 }
 	}
 	action = {
 	name = EVT_90000300_B # Annexation
-	ai_chance = 20
+	ai_chance = 80
 	command = { type = 	dissent value = 7 }
 	command = { type = setflag which = GG1 }
 	}
 	action = {
 	name = EVT_90000300_C # South Poland
-	ai_chance = 60
+	ai_chance = 10
 	command = { type = 	dissent value = 2 } 
 	command = { type = setflag which = GG2 }
 	}
@@ -69,7 +69,7 @@ event = {
 
 	action = {
 	name = EVT_90000301_A # Annex it!
-	ai_chance = 25
+	ai_chance = 70
 	trigger = { OR = { 
 	flag = GG1 
 	flag = GG2 } }
@@ -78,18 +78,18 @@ event = {
 	}
 	action = {
 	name = EVT_90000301_B # Civil Administration
-	ai_chance = 40
+	ai_chance = 10
 	command = { } 
 	}
 	action = {
 	name = EVT_90000301_C # Give it to Ukraine
-	ai_chance = 40
+	ai_chance = 10
 	trigger = { puppet = { country = UKR country = GER } }
 	command = { type = trigger which = 295 } 
 	}
 	action = {
 	name = EVT_90000301_D # Give them autonomy
-	ai_chance = 60
+	ai_chance = 10
 	command = { type = 	dissent value = -1 }
 	command = { type = setflag which = GaliciaIndependence }
 	}
@@ -115,7 +115,7 @@ event = {
 
 	action = {
 	name = EVT_90000302_A # Annex it!
-	ai_chance = 50
+	ai_chance = 70
 	trigger = { OR = {
 	flag = GG1 
 	flag = GG2 
@@ -126,20 +126,20 @@ event = {
 	}
 	action = {
 	name = EVT_90000302_B # Goral independence 1
-	ai_chance = 60
+	ai_chance = 10
 	trigger = { event = 281 } # Succesful Goral census
 	command = { type = 	dissent value = -1 }  
 	command = { type = setflag which = Goralenland }
 	}
 	action = {
 	name = EVT_90000302_C # Goral independence 2
-	ai_chance = 20
+	ai_chance = 10
 	trigger = { NOT = { event = 281  } } # No succesful Goral census
 	command = { type = setflag which = Goralenland }
 	}
 	action = {
 	name = EVT_90000302_D # Civil administration
-	ai_chance = 20
+	ai_chance = 10
 	trigger = { NOT = { flag = GG1 } }
 	trigger = { NOT = { flag = GG2 } }
 	command = { }
