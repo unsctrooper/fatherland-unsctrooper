@@ -12,7 +12,7 @@ desc = "2000DESC"
 
 action_a = {
 name = "2000A"
-command = { type = trigger which = 2001 }
+command = { type = event which = 2001 where = GER when = 1 }
 }
 }
 
@@ -29,7 +29,7 @@ desc = "2001DESC"
 action_a = {
 name = "2000A"
 command = { type = free_ic value = -25 }
-command = { type = trigger which = 2002 }
+command = { type = event which = 2002 where = GER when = 1 }
 }
 }
 
@@ -48,7 +48,7 @@ name = "2000A"
 command = { type = free_ic value = -100 }
 command = { type = research_mod value = -25 }
 command = { type = tc_mod value = -50 }
-command = { type = trigger which = 2003 }
+command = { type = event which = 2003 where = GER when = 1 }
 }
 }
 
@@ -67,7 +67,7 @@ action_a = {
 name = "2000A"
 command = { type = peacetime_ic_mod value = 10 }
 command = { type = free_ic value = -25 }
-command = { type = trigger which = 2004 }
+command = { type = event which = 2004 where = GER when = 1 }
 }
 }
 
@@ -84,7 +84,7 @@ desc = "2004DESC"
 action_a = {
 name = "2000A"
 command = { type = free_ic value = -25 }
-command = { type = trigger which = 2005 }
+command = { type = event which = 2005 where = GER when = 1 }
 }
 }
 
