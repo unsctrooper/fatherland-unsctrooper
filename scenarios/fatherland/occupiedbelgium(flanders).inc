@@ -78,7 +78,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    nationalprovinces      = { 115 117 114} 
    ownedprovinces         = { 115 117 114 49 51 52 } 
    controlledprovinces    = { 115 117 114 49 51 52 } 
-	claimedprovinces 	  = { } 
+	claimedprovinces 	  = { 116 49 51 52 } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 
