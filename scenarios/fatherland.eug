@@ -3,7 +3,7 @@ panel      = "scenarios/data/fatherland.bmp"
 header = {
 	name       = "Fatherland"
 	startdate  = { year = 1948 }
-	selectable = { AFG ARG AST BHU BOL BRA BUL CAN CHC CXB CHI TRA COS CRO CUB DEN DOM ECU EGY ENG FIN U01 GER GUA HAI HON HUN ICL INO IRQ IRE ITA JAP JOR LEB UTC LIB MEX MON MTN NEP NIC NZL OMN PAN PAR PER POR PRU PHI ROM SAF SAU SLO SIK SOV SPA SYR SWE TAN SIA TIB TUR URU USA VEN YEM 
+	selectable = { AFG ARG AST BHU BOL BRA BUL CAN CHC CHI TRA COS CRO CUB DEN DOM ECU EGY ENG FIN U01 GER GUA HAI HON HUN ICL INO IRQ IRE ITA JAP JOR LEB UTC LIB MEX MON MTN NEP NIC NZL OMN PAN PAR PER POR PRU PHI ROM SAF SAU SLO SIK SOV SPA SYR SWE TAN SIA TIB TUR URU USA VEN YEM 
 				   U42 U44 HOL U45 U46 U40 U03 U41 IND BEL WLL PAK FRA CMB LAO VIE ETH SER BLR }  
   GER        = { }
   ITA        = { }
@@ -32,10 +32,6 @@ globaldata = {
 	comintern = { 
 		id = { type = 15000 id = 3 }
 		participant = { SOV MON }
-	}
-	alliance = { 
-		id = { type = 15000 id = 10 }
-		participant = { CHI CSX CXB CGX }
 	}
     war = { 
 		id = { type = 9430 id = 1 }
@@ -623,7 +619,6 @@ event      = "db\events\AI\AI_ARG.txt"
 event      = "db\events\AI\AI_CHL.txt"
 event      = "db\events\AI\AI_CGX.txt"
 event      = "db\events\AI\AI_CYN.txt"
-event      = "db\events\AI\AI_CXB.txt"
 event      = "db\events\AI\AI_SIK.txt"
 event      = "db\events\AI\AI_CHC.txt"
 event      = "db\events\AI\AI_CSX.txt"
@@ -745,7 +740,6 @@ include = "scenarios\fatherland\vichy france.inc"
 include = "scenarios\fatherland\serbia.inc"
 #Asia
 include = "scenarios\fatherland\philippines.inc"
-include = "scenarios\fatherland\china xibei.inc"
 include = "scenarios\fatherland\indonesia.inc"
 include = "scenarios\fatherland\burma.inc"
 include = "scenarios\fatherland\pakistan.inc"
