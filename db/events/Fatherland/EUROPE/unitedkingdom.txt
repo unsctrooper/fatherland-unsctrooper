@@ -32,11 +32,12 @@ event = {
 		command = { type = money value = -1000 }
 		command = { type = supplies value = -10000 }
 		command = { type = building_prod_mod which = nuclear_reactor value = 50 }
-		command = { type = gain_tech which = 5500 }
-		command = { type = gain_tech which = 5510 }
-		command = { type = gain_tech which = 5520 }
-		command = { type = gain_tech which = 5530 }
 		command = { type = gain_tech which = 5540 }
+		command = { type = gain_tech which = 5540 }
+		command = { type = gain_tech which = 7170 }
+		command = { type = gain_tech which = 7180 }
+		command = { type = gain_tech which = 7190 }
+		command = { type = gain_tech which = 16010 }
 		command = { type = setflag which = engnuke }	
 		command = { type = trigger which = 801 }
 	}
@@ -58,11 +59,12 @@ event = {
 		command = { type = money value = -1000 }
 		command = { type = supplies value = -10000 } 
 		command = { type = building_prod_mod which = nuclear_reactor value = 50 }
-		command = { type = gain_tech which = 5500 }
-		command = { type = gain_tech which = 5510 }
-		command = { type = gain_tech which = 5520 }
-		command = { type = gain_tech which = 5530 }
 		command = { type = gain_tech which = 5540 }
+		command = { type = gain_tech which = 5540 }
+		command = { type = gain_tech which = 7170 }
+		command = { type = gain_tech which = 7180 }
+		command = { type = gain_tech which = 7190 }
+		command = { type = gain_tech which = 16010 }
 		command = { type = setflag which = gernuke }	
 	}
 	action = {
@@ -483,6 +485,7 @@ event = {
 	id = 818
 	random = no
 	country = GER
+	save_date = yes
 
 	name = "818NAME"
 	desc = "818DESC" 
@@ -521,10 +524,6 @@ event = {
 		    command = { type = war which = SCH }
 	}
 }
-
-#Nuke Moscow!
-
-
 ## Elections from NWO2
 
 event = {
