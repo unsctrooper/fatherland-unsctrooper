@@ -357,7 +357,7 @@ military = {
 }
 
 technology = { 
-	endgoal 	= { } 
+	endgoal 	= { 5540 16020 } 
 		preference 	= {	} 
 	ignore 		= { }
  
