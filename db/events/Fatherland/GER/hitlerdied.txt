@@ -1606,6 +1606,7 @@ style = 2
 picture = "reichstag"
 
 trigger = {
+NOT = { event = 90000001 }
 event = 90000517
 random = 25
 	}
