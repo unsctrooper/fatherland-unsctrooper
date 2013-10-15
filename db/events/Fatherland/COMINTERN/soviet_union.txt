@@ -1,904 +1,257 @@
-##########################################
-# Soviet Union events edited by Pako
-# NOTE: This event chain is an adapted event chain from the NWO Mod. 
-# All credits go to this mod for the original idea. 
-##########################################
-
-# Fate of the Soviet Union
 event = {
 	id = 8014250
+	random = no
 	country = SOV
 
-	#name = EVT_8014250_NAME
-	name = "It's time to decide a new general secretary of Soviet Union Communist Party"
-	desc = EVT_8014250_DESC
-	
-	picture = nwo\succession_of_stalin
-	style = 1
-
 	trigger = {
-		#flag = cold_war
+	event = { id = 900000 days = 30 } 
 	}
 
-	date = { day = 1 month = january year = 1948 }
-	offset = 1
-	deathdate = { day = 30 month = april year = 1953 }
-
-	# Krushchev (5% probability of dissent)
-	action = {
-		name = EVT_8014250_A
-		ai_chance = 70
-		command = { type = set_domestic which = democratic value = 1 }
-		command = { type = set_domestic which = political_left value = 9 }
-		command = { type = set_domestic which = free_market value = 1 }
-		command = { type = set_domestic which = freedom value = 2 }
-		
-		command = { type = headofstate which = 30201 } # Nikita S. Khrushchev
-		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
-		
-		command = { type = sleepevent which = 8014252 }
-	}
+	name = "8014250NAME"
+	desc = "8014250DESC" 
+	style = 2
+	picture = "fatherland\baku_oilwells"
 	
-	# Malenkov, Molotov (10% probability of dissent)
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
 	action = {
-		name = EVT_8014250_B
-		ai_chance = 10
+		name = "8014250A"
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 8014251
+	random = no
+	country = SOV
+	
+	trigger = {
+    event = 8014250
+	random = 25
+	}
+
+	name = "8014251NAME"
+	desc = "8014251DESC" 
+	style = 2
+	picture = "nwo\succession_of_stalin"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "8014251A" # Molotov
+		ai_chance = 50
+        command = { type = dissent value = 10 }
+		command = { type = trigger which = 8014252 }
 		command = { type = set_domestic which = democratic value = 2 }
 		command = { type = set_domestic which = political_left value = 10 }
 		command = { type = set_domestic which = free_market value = 1 }
-		command = { type = set_domestic which = freedom value = 2 }
-		
+		command = { type = set_domestic which = freedom value = 2 }	
 		command = { type = headofstate which = 30012 } # Vyacheslav Molotov
 		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
-		
-		command = { type = sleepevent which = 8014251 }
 	}
-	
-	# Beria (10% probability of dissent)
 	action = {
-		name = EVT_8014250_C
-		ai_chance = 10
-		command = { type = set_domestic which = democratic value = 1 }
-		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = set_domestic which = free_market value = 4 }
-		command = { type = set_domestic which = freedom value = 1 }
-		
-		command = { type = headofstate which = 30200 } # Lavrenti P. Beria
-		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
-		
-		command = { type = sleepevent which = 8014206 } # Arrest of Beria
-		
-		command = { type = sleepevent which = 8014251 }
-	}
-	
-	# Zhukov (5% probability of dissent)
-	action = {
-		name = EVT_8014250_D
-		ai_chance = 10
+		name = "8014251B" # Beria
+		ai_chance = 30
+        command = { type = dissent value = 10 }
+		command = { type = trigger which = 8014253 }
 		command = { type = set_domestic which = democratic value = 1 }
 		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = set_domestic which = free_market value = 4 }
+		command = { type = set_domestic which = freedom value = 1 }
+		command = { type = headofstate which = 30152 } # Beria
+		command = { type = headofgovernment which = 30017 } # Beria
+	}
+	action = {
+		name = "8014251C" # Voroshilov / Zhukov
+		ai_chance = 20
+        command = { type = dissent value = 10 }
+		command = { type = trigger which = 8014254 }
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
 		command = { type = set_domestic which = free_market value = 1 }
 		command = { type = set_domestic which = freedom value = 1 }
-		
-		command = { type = headofstate which = 30218 } # Georgiy K. Zhukov
-		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
-		
-		command = { type = sleepevent which = 8014252 }
+		command = { type = headofstate which = 30077 } # Voroshilov
+		command = { type = headofgovernment which = 30153 } # Zhukov
 	}
 }
-
-# Dissent in Soviet Union - 5% chance
-
-event = {
-	id = 8014251
-	country = SOV
-	one_action = yes
-
-	name = EVT_8014251_NAME
-	desc = EVT_8014251_DESC
-	picture = nwo\succession_of_stalin_dissent
-	style = 1
-
-	trigger = {
-		flag = cold_war
-		event = 8014250
-		random = 5
-	}
-
-	date = { day = 1 month = may year = 1948 }
-	offset = 30
-	deathdate = { day = 30 month = may year = 1948 }
-
-	# Dissent is crushed
-	action = {
-		name = EVT_8014251_A
-		ai_chance = 95
-		command = { type = dissent value = 10 }
-		
-		command = { type = sleepevent which = 8014253 }
-	}
-	
-	# Dissent intensifies
-	action = {
-		name = EVT_8014251_B
-		ai_chance = 5
-		command = { type = dissent value = 12 }
-	}
-}
-
-# Dissent in Soviet Union - 10% chance
-
 event = {
 	id = 8014252
+	random = no
 	country = SOV
-	one_action = yes
 
-	name = EVT_8014252_NAME
-	desc = EVT_8014252_DESC
-	picture = nwo\succession_of_stalin_dissent
-	style = 1
 
-	trigger = {
-		flag = cold_war
-		event = 8014250
-		random = 10
-	}
-
-	date = { day = 1 month = may year = 1948 }
-	offset = 30
-	deathdate = { day = 30 month = may year = 1948 }
-
-	# Dissent is crushed
-	action = {
-		name = EVT_8014252_A
-		ai_chance = 95
-		command = { type = dissent value = 10 }
-		
-		command = { type = sleepevent which = 8014253 }
-	}
+	name = "SUPURGENAME"
+	desc = "SUPURGEDESC" 
+	style = 2
+	picture = "nwo\govt_change"
 	
-	# Dissent intensifies
-	action = {
-		name = EVT_8014252_B
-		ai_chance = 5
-		command = { type = dissent value = 12 }
+	action = { # No Purges
+		name = "SUPURGEA"
+		ai_chance = 70
+        command = { type = dissent value = 5 }
+	}
+	action = { # Purge Beria
+		name = "SUPURGEB"
+		ai_chance = 10
+        command = { type = dissent value = 5 }
+		command = { type = sleepminister which = 30017 } 
+		command = { type = sleepminister which = 30028 } 
+		command = { type = sleepminister which = 30152 } 
+		command = { type = sleepminister which = 30036 } 
+	}
+	action = { # Purge Military
+		name = "SUPURGEC"
+		ai_chance = 10
+        command = { type = dissent value = 7 }
+		command = { type = sleepminister which = 30040 } 
+		command = { type = sleepminister which = 30072 } 
+		command = { type = sleepminister which = 30089 } 
+		command = { type = sleepminister which = 30008 } 
+		command = { type = sleepminister which = 30077 } 
+		command = { type = sleepminister which = 30151 } 
+		command = { type = sleepminister which = 30037 } 
+		command = { type = sleepminister which = 30049 } 
+		command = { type = sleepminister which = 30073 } 		
+		command = { type = sleepminister which = 30053 } 	
+	}
+	action = { # Purge Both
+		name = "SUPURGED"
+		ai_chance = 10
+        command = { type = dissent value = 10 }
+		command = { type = sleepminister which = 30040 } 
+		command = { type = sleepminister which = 30072 } 
+		command = { type = sleepminister which = 30089 } 
+		command = { type = sleepminister which = 30008 } 
+		command = { type = sleepminister which = 30077 } 
+		command = { type = sleepminister which = 30151 } 
+		command = { type = sleepminister which = 30037 } 
+		command = { type = sleepminister which = 30049 } 
+		command = { type = sleepminister which = 30073 } 		
+		command = { type = sleepminister which = 30053 } 
+		command = { type = sleepminister which = 30017 } 
+		command = { type = sleepminister which = 30028 } 
+		command = { type = sleepminister which = 30152 } 
+		command = { type = sleepminister which = 30036 } 		
 	}
 }
-
-# Intensification of the struggle - SOV on the verge
-
 event = {
 	id = 8014253
+	random = no
 	country = SOV
 
-	name = EVT_8014253_NAME
-	desc = EVT_8014253_DESC
-	picture = "nwo\soviet_republics"
-	style = 1
 
-	trigger = {
-		flag = cold_war
-		OR = {
-			event = 8014251
-			event = 8014252
-		}
-	}
-
-	date = { day = 1 month = june year = 1948 }
-	offset = 30
-	deathdate = { day = 30 month = june year = 1948 }
-
-	# We crush counterrevolution
-	action = {
-		name = EVT_8014253_A
-		ai_chance = 80
-		command = { type = dissent value = 10 }
-	}
+	name = "SUPURGENAME"
+	desc = "SUPURGEDESC" 
+	style = 2
+	picture = "nwo\govt_change"
 	
-	# Dissent intensifies
-	action = {
-		name = EVT_8014253_B
-		ai_chance = 20
-		command = { type = setflag which = breakup_of_ussr }
-		command = { type = sleepevent which = 8014206 }
-		
-		command = { type = independence which = LIT value = 0 }
-		command = { type = independence which = LAT value = 0 }
-		command = { type = independence which = EST value = 0 }
-		command = { type = independence which = BLR value = 0 }
-		command = { type = independence which = UKR value = 0 }
-		
-		command = { type = independence which = KAZ value = 0 }
-		command = { type = secederegion which = KAZ value = "Kazakstan" when = 1 }
-		command = { type = independence which = TRK value = 0 }
-		command = { type = independence which = UZB value = 0 }
-		command = { type = independence which = KYG value = 0 }
-		command = { type = independence which = TAJ value = 0 }
-		command = { type = independence which = PRI value = 0 }
-		
-		### Possible ahistorical holdings
-		command = { type = independence which = U11 value = 0 }
-		command = { type = independence which = U12 value = 0 }
-		command = { type = independence which = U13 value = 0 }
-		command = { type = independence which = U14 value = 0 }
-		command = { type = independence which = U15 value = 0 }
-		command = { type = independence which = U16 value = 0 }
-		command = { type = independence which = U17 value = 0 }
-		command = { type = independence which = U18 value = 0 }
-		command = { type = independence which = U19 value = 0 }
-		command = { type = independence which = U20 value = 0 }
-		command = { type = independence which = U21 value = 0 }
-		command = { type = independence which = U22 value = 0 }
-		command = { type = independence which = U23 value = 0 }
-		command = { type = independence which = U24 value = 0 }
-		command = { type = independence which = U25 value = 0 }
-		command = { type = independence which = U26 value = 0 }
-		command = { type = independence which = U27 value = 0 }
-		command = { type = independence which = U28 value = 0 }
-		command = { type = independence which = U29 value = 0 }
-		command = { type = independence which = U30 value = 0 }
-		command = { type = independence which = U31 value = 0 }
-		command = { type = independence which = U32 value = 0 }
-		command = { type = independence which = U33 value = 0 }
+
+	action = { # No Purges
+		name = "SUPURGEA"
+		ai_chance = 10
+        command = { type = dissent value = 5 }
+	}
+	action = { # Purge Molotov
+		name = "SUPURGEE"
+		ai_chance = 10
+        command = { type = dissent value = 5 }
+		command = { type = sleepminister which = 30012 } 
+		command = { type = sleepminister which = 30016 } 
+		command = { type = sleepminister which = 30021 } 
+		command = { type = sleepminister which = 30020 } 
+		command = { type = sleepminister which = 30085 } 
+		command = { type = sleepminister which = 30094 }  
+	}
+	action = { # Purge Military
+		name = "SUPURGEC"
+		ai_chance = 10
+        command = { type = dissent value = 7 }
+		command = { type = sleepminister which = 30040 } 
+		command = { type = sleepminister which = 30072 } 
+		command = { type = sleepminister which = 30089 } 
+		command = { type = sleepminister which = 30008 } 
+		command = { type = sleepminister which = 30077 } 
+		command = { type = sleepminister which = 30151 } 
+		command = { type = sleepminister which = 30037 } 
+		command = { type = sleepminister which = 30049 } 
+		command = { type = sleepminister which = 30073 } 		
+		command = { type = sleepminister which = 30053 } 	
+	}
+	action = { # Purge Both
+		name = "SUPURGED"
+		ai_chance = 70
+        command = { type = dissent value = 10 }
+		command = { type = sleepminister which = 30040 } 
+		command = { type = sleepminister which = 30072 } 
+		command = { type = sleepminister which = 30089 } 
+		command = { type = sleepminister which = 30008 } 
+		command = { type = sleepminister which = 30077 } 
+		command = { type = sleepminister which = 30151 } 
+		command = { type = sleepminister which = 30037 } 
+		command = { type = sleepminister which = 30049 } 
+		command = { type = sleepminister which = 30073 } 		
+		command = { type = sleepminister which = 30053 } 
+		command = { type = sleepminister which = 30012 } 
+		command = { type = sleepminister which = 30016 } 
+		command = { type = sleepminister which = 30021 } 
+		command = { type = sleepminister which = 30020 } 
+		command = { type = sleepminister which = 30085 } 
+		command = { type = sleepminister which = 30094 }   		
 	}
 }
-
-### Beria's USSR
-
 event = {
 	id = 8014254
+	random = no
 	country = SOV
 
-	name = EVT_8014254_NAME
-	desc = EVT_8014254_DESC
-	picture = nwo\beria_rules_ussr
-	style = 1
 
-	trigger = {
-		flag = cold_war
-		headofstate = 30200
-		event = 8014250
-	}
-
-	date = { day = 1 month = may year = 1948 }
-	offset = 30
-	deathdate = { day = 30 month = may year = 1948 }
-
-	# Malenkov rules in Beria's name
-	action = {
-		name = EVT_8014254_A
-		ai_chance = 80
-		command = { type = dissent value = -5 }
-		command = { type = headofstate which = 30077 } # Kliment Y. Voroshilov
-		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
-		command = { type = ministerofsecurity which = 30028 } # Lavrentiy P. Beria
-	}
-	
-	# Beria rules alone
-	action = {
-		name = EVT_8014254_B
-		ai_chance = 20
-		command = { type = dissent value = 15 }
-	}
-}
-
-event = {
-	id = 8014262
-	country = SOV
-
-	name = EVT_8014262_NAME
-	desc = EVT_8014262_DESC
-	picture = nwo\soviet_economy
-	style = 1
-	
-	trigger = {
-		flag = cold_war
-		event = 8014261
-	}
-
-	date = { day = 1 month = october year = 1949 }
-	offset = 360
-	deathdate = { day = 30 month = april year = 1963 }
-
-	action = {
-		name = EVT_8014262_A
-		command = { type = industrial_modifier which = total value = 4 }
-	}
-}
-###
-
-# Arrest of Beria
-event = {
-	id = 8014206
-	country = SOV
-
-	name = EVT_8014206_NAME
-	desc = EVT_8014206_DESC
-	picture = "nwo\lavrentiy_beria"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 26 month = june year = 1948 }
-	offset = 1
-	deathdate = { day = 30 month = october year = 1948 }
-
-	action = {
-		name = EVT_8014206_A # Arrest him
-		ai_chance = 98
-		command = { type = dissent value = 3 }
-	}
-	
-	action = {
-		name = EVT_8014206_B # Let him be
-		ai_chance = 2
-		command = { type = sleepevent which = 8014213 }
-	}
-}
-
-event = {
-	id = 8014207
-	country = SOV
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
+	name = "SUPURGENAME"
+	desc = "SUPURGEDESC" 
+	style = 2
 	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 0 month = january year = 1950 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1950 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofgovernment which = 30086 } # Nikolay A. Bulganin
-		command = { type = armamentminister which = 30089 } # Georgiy K. Zhukov
-		
-		command = { type = chiefofarmy which = 30072 }  # Georgiy K. Zhukov
-	}
-}
-
-event = {
-	id = 8014208
-	country = SOV
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 0 month = january year = 1951 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = foreignminister which = 30087 } # Dmitriy T. Shepilov
-		command = { type = ministerofsecurity which = 30091 } # Nikolay Dudorov
-		command = { type = ministerofintelligence which = 30216 } # M.A. Shalin
-		
-		command = { type = chiefofnavy which = 30215 }  # Sergey Gorshkov
-	}
-}
-
-event = {
-	id = 8014209
-	country = SOV
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 0 month = january year = 1954 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1954 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = foreignminister which = 30088 } # Andrey A. Gromyko
-		
-		command = { type = chiefofarmy which = 30047 }  # Rodion Y. Malinovsky
-		command = { type = chiefofair which = 30143 }  # Pavel F. Zhigarev
-	}
-}
-
-event = {
-	id = 8014210
-	country = SOV
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 0 month = january year = 1955 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1955 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = set_domestic which = democratic value = 2 }
-		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = headofgovernment which = 30078 } # Nikita S. Khrushchev
-		command = { type = ministerofintelligence which = 30092 } # Aleksandr N. Shelepin
-	}
-}
-
-event = {
-	id = 8014211
-	country = SOV
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 0 month = january year = 1956 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = armamentminister which = 30090 } # Rodion Y. Malinovsky
-		
-		command = { type = chiefofstaff which = 30212 } # Matvei Zakharov
-	}
-}
-
-event = {
-	id = 8014212
-	country = SOV
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		government = communist
-	}
-
-	date = { day = 0 month = january year = 1958 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = ministerofintelligence which = 30093 } # Vladimir Y. Semichastny
-	}
-}
-
-# Execution of Beria
-event = {
-	id = 8014213
-	country = SOV
-
-	name = EVT_8014213_NAME
-	desc = EVT_8014213_DESC
-	picture = "nwo\lavrentiy_beria"
-	style = 1
-
-	trigger = {
-		event = 8014206 # Arrest of Beria
-	}
-
-	date = { day = 23 month = december year = 1948 }
-	offset = 1
-	deathdate = { day = 30 month = february year = 1949 }
-
-	action = {
-		name = EVT_8014213_A
-		ai_chance = 100
-		command = { type = set_domestic which = democratic value = 1 }
-		command = { type = sleepminister which = 30017 } # Lavrentiy P. Beria
-		command = { type = sleepminister which = 30028 } # Lavrentiy P. Beria
-		command = { type = sleepminister which = 30200 } # Lavrentiy P. Beria
-	}
-}
-
-# Foundation of Cominform
-event = {
-	id = 8014214
-	country = SOV
-
-	name = EVT_8014214_NAME
-	desc = EVT_8014214_DESC
-	picture = "nwo\cominform"
-	style = 1
-
-	date = { day = 1 month = january year = 1949 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1956 }
-
-	action = {
-		name = EVT_8014214_A
-		command = { type = domestic which = interventionism value = 1 }
-		command = { type = relation which = CHC value = 50 }
-		command = { type = relation which = PRK value = 50 }
-		command = { type = relation which = MON value = 50 }
-	}
-
-}
-
-# Virgin Lands Campaign
-event = {
-	id = 8014215
-	country = SOV
-
-	name = EVT_8014215_NAME
-	desc = EVT_8014215_DESC
-	picture = "nwo\virgin_lands_campaign"
-	style = 1
 	
-	trigger = {
-		headofstate = 30201 # Khrushchev
-	}
 
-	date = { day = 1 month = january year = 1950 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1960 }
-
-	action = {
-		name = EVT_8014215_A
-		command = { type = dissent value = 7 }
-		command = { type = domestic which = free_market value = -2 }
-		command = { type = industrial_modifier which = total value = -3 }
-	}
-
-}
-
-# 20th Party Congress
-event = {
-	id = 8014216
-	country = SOV
-	
-	name = EVT_8014216_NAME
-	desc = EVT_8014216_DESC
-	picture = "nwo\cpsu_congress_1956"
-	style = 1
-	
-	trigger = {
-		headofstate = 30201 # Khrushchev
-	}
-
-	date = { day = 25 month = february year = 1951 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 1960 }
-
-	action = {
-		name = EVT_8014216_A # Criticize cult of personality
-		ai_chance = 90
-		command = { type = dissent value = 10 }
-		
-		command = { type = event which = 8225001 where = SOV when = 1 } ## CEE influence -1
-	}
-	
-	action = {
-		name = EVT_8014216_B # Contemplate greatness of Stalin
+	action = { # No Purges
+		name = "SUPURGEA"
 		ai_chance = 10
-		command = { type = dissent value = -2 }
-		command = { type = domestic which = freedom value = -1 }
-		command = { type = sleepevent which = 8014217 }
+        command = { type = dissent value = 10 }
 	}
-
-}
-
-# De-Stalinization
-event = {
-	id = 8014217
-	country = SOV
-
-	name = EVT_8014217_NAME
-	desc = EVT_8014217_DESC
-	picture = "nwo\tomb_of_stalin"
-	style = 1
-	
-	trigger = {
-		headofstate = 30201 # Khrushchev
-		event = 8014216
-	}
-
-	date = { day = 1 month = april year = 1951 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1960 }
-
-	action_a = {
-		name = EVT_8014217_A # Let's breathe with relief
-		command = { type = dissent value = -15 }
-		command = { type = domestic which = freedom value = 2 }
-	}
-
-}
-
-### Additional events proposed by FCZP
-
-
-# 1952 U-2 Incident
-
-event = {
-	id = 8014222
-	country = USA
-
-	name = EVT_8014222_NAME
-	desc = EVT_8014222_DESC
-	picture = nwo\u2_flights
-	decision_picture = nwo\d_u2_flights
-	style = 1
-	
-	trigger = {
-		flag = cold_war
-		relation = { which = PAK value = 50 }
-	}
-	
-	decision = {
-		flag = cold_war
-	}
-
-	decision_trigger = {
-		flag = cold_war
-		relation = { which = PAK value = 50 }
-	}
-
-
-	date = { day = 25 month = march year = 1952 }
-	offset = 14
-	deathdate = { day = 29 month = april year = 1952 }
-
-	action = {
-		name = EVT_8014222_A # Get the mission running!
-		ai_chance = 70
-		command = { type = money value = -500 }
-		command = { type = intelligence which = them value = 15 } # Modifier in percents
-	}
-	
-	action = {
-		name = EVT_8014222_B # Abandon this idea
-		ai_chance = 30
-		trigger = { ai = yes }
-		command = { type = money value = 10 }
-	}
-
-}
-
-event = {
-	id = 8014223
-	country = USA
-
-	name = EVT_8014223_NAME
-	desc = EVT_8014223_DESC
-	picture = nwo\u2_incident
-
-	style = 1
-	
-	trigger = {
-		flag = cold_war
-		event = 8014222
-		random = 50
-	}
-
-	date = { day = 25 month = april year = 1952 }
-	offset = 14
-	deathdate = { day = 29 month = may year = 1952 }
-
-	action = {
-		name = EVT_8014220_A # An embarassment
-		ai_chance = 70
-		command = { type = dissent value = 5 }
-		command = { type = relation which = SOV value = -100 }
-		command = { type = intelligence which = them value = -5 } # Modifier in percents
-		command = { type = trigger which = 8014224 }
-	}
-
-}
-
-event = {
-	id = 8014224
-	country = USA
-
-	name = EVT_8014224_NAME
-	desc = EVT_8014224_DESC
-	picture = nwo\u2_incident
-
-	style = 1
-
-	action = {
-		name = EVT_8014224_A
-		command = { type = dissent value = -3 }
-	}
-
-}
-
-# Catalina Affair
-
-event = {
-	id = 8014225
-	country = SWE
-
-	name = EVT_8014225_NAME
-	desc = EVT_8014225_DESC
-	picture = nwo\catalina_affair
-
-	style = 1
-	
-	trigger = {
-		flag = cold_war
-		NOT = { relation = { which = SOV value = -50 } }
-		random = 25
-	}
-
-	date = { day = 1 month = june year = 1952 }
-	offset = 30
-	deathdate = { day = 29 month = june year = 1952 }
-
-	action = {
-		name = EVT_8014225_A
-		command = { type = dissent value = 5 }
-		command = { type = relation which = SOV value = -100 }
-	}
-
-}
-
-# Internal troops
-
-event = {
-	id = 8014226
-	country = SOV
-
-	name = EVT_8014226_NAME
-	desc = EVT_8014226_DESC
-	picture = nwo\internal_troops
-	decision_picture = nwo\d_internal_troops
-
-	style = 1
-	
-	trigger = {
-		flag = cold_war
-		dissent = 10
-		NOT = { dissent = 20 }
-	}
-	
-	decision = {
-		flag = cold_war
-		NOT = { dissent = 20 }
-	}
-
-	decision_trigger = {
-		flag = cold_war
-		dissent = 10
-		NOT = { dissent = 20 }
-	}
-	
-	date = { day = 1 month = april year = 1946 }
-	offset = 1080
-	deathdate = { day = 29 month = december year = 1952 }
-
-	action = {
-		name = EVT_8014226_A # Form them!
-		ai_chance = 70
-		command = { type = manpower value = -150 when = on_upgrade }
-		command = { type = dissent value = -7 }
-	}
-	
-	action = {
-		name = EVT_8014226_B
-		ai_chance = 30
-		trigger = { ai = yes }
-		command = { type = money value = 10 }
-	}
-
-}
-
-# Doctors' plot
-
-event = {
-	id = 8014227
-	country = SOV
-
-	name = EVT_8014227_NAME
-	desc = EVT_8014227_DESC
-	picture = nwo\doctors_plot
-	decision_picture = nwo\d_doctors_plot
-	style = 1
-	
-	trigger = {
-		NOT = { domestic = { type = freedom value = 2 } }
-		dissent = 3
-		event = 8014221
-	}
-	
-	decision = {
-		NOT = { domestic = { type = freedom value = 2 } }
-		event = 8014221
-	}
-	
-	decision_trigger = {
-		NOT = { domestic = { type = freedom value = 2 } }
-		dissent = 3
-		event = 8014221
-	}
-
-	date = { day = 1 month = december year = 1952 }
-	offset = 90
-	deathdate = { day = 29 month = february year = 1953 }
-
-	action = {
-		name = EVT_8014227_A # Uncover the plot!
-		ai_chance = 80
-		command = { type = dissent value = -5 }
-		command = { type = domestic which = freedom value = -1 }
-	}
-	
-	action = {
-		name = EVT_8014227_B # Abandon this idea
-		ai_chance = 20
-		trigger = { ai = yes }
-		command = { type = money value = 10 }
-	}
-
-}
-
-# 20th Party Congress - alternative
-event = {
-	id = 8014228
-	country = SOV
-	
-	name = EVT_8014228_NAME
-	desc = EVT_8014228_DESC
-	picture = "nwo\cpsu_congress_1956"
-	style = 1
-	
-	trigger = {
-		NOT = { headofstate = 30201 } # Khrushchev
-	}
-
-	date = { day = 25 month = february year = 1951 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 1960 }
-
-	action = {
-		name = EVT_8014228_B # Contemplate greatness of Stalin
-		ai_chance = 90
-		command = { type = dissent value = -2 }
-		command = { type = domestic which = freedom value = -1 }
-		command = { type = sleepevent which = 8014217 }
-	}
-	
-	action = {
-		name = EVT_8014228_A # Criticize cult of personality
+	action = { # Purge Molotov
+		name = "SUPURGE"
 		ai_chance = 10
-		command = { type = dissent value = 10 }
-				
-		command = { type = event which = 8225001 where = SOV when = 1 } ## CEE influence -1
+        command = { type = dissent value = 3 }
+		command = { type = sleepminister which = 30012 } 
+		command = { type = sleepminister which = 30016 } 
+		command = { type = sleepminister which = 30021 } 
+		command = { type = sleepminister which = 30020 } 
+		command = { type = sleepminister which = 30085 } 
+		command = { type = sleepminister which = 30094 }  
 	}
-	
-
+	action = { # Purge Beria
+		name = "SUPURGEB"
+		ai_chance = 10
+        command = { type = dissent value = 3 }
+		command = { type = sleepminister which = 30017 } 
+		command = { type = sleepminister which = 30028 } 
+		command = { type = sleepminister which = 30152 } 
+		command = { type = sleepminister which = 30036 } 	
+	}
+	action = { # Purge Both
+		name = "SUPURGED"
+		ai_chance = 70
+        command = { type = dissent value = 5 }
+		command = { type = sleepminister which = 30017 } 
+		command = { type = sleepminister which = 30028 } 
+		command = { type = sleepminister which = 30152 } 
+		command = { type = sleepminister which = 30036 } 
+		command = { type = sleepminister which = 30012 } 
+		command = { type = sleepminister which = 30016 } 
+		command = { type = sleepminister which = 30021 } 
+		command = { type = sleepminister which = 30020 } 
+		command = { type = sleepminister which = 30085 } 
+		command = { type = sleepminister which = 30094 }   		
+	}
 }
