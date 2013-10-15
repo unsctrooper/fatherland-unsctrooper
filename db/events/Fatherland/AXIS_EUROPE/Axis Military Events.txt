@@ -20,6 +20,7 @@ event = {
 id = 900000
 random = no
 country = SOV
+save_date = yes
 
 trigger = {
 NOT = {
@@ -34,8 +35,8 @@ OR = {
 owned = { province = 694 data = U42 } # RK Kaukasus
 owned = { province = 694 data = GER }
 owned = { province = 694 data = ROM }
-random = 10 
 }
+random = 5
 }
 
 name = "900000NAME"
