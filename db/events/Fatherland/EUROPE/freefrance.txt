@@ -242,6 +242,7 @@ event = {
 
 	trigger = {
 		NOT = { war = { country = U01 country = FRA } }
+    event = 1808	
 	}
 	
 	date = { day = 1 month = january year = 1948 }
