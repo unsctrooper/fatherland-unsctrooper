@@ -496,3 +496,6 @@ event = {
 	command = { type = country which = UKR }
 	} 
 }
+##############################
+### Flavour & Other Events ###
+##############################

@@ -639,6 +639,8 @@ id = 362
 	        command = { type = secederegion which = FRA value = "France" when = 1 }	
 }
 }
+
+### FLANDERS ###
 ###############################
 ### Flavour Events & Others ###
 ###############################
