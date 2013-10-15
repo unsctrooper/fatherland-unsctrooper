@@ -15,7 +15,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    control = GER
    
    capital                = 108 
-   manpower               = 35
+   manpower               = 70
    transports             = 10 
    escorts                = 0 
    
@@ -251,6 +251,30 @@ inventions = { 3000027 3000028 }
   # dormant_ministers      = {  }
   # dormant_leaders        = {  }
 
-  
-} 
-
+landunit = {
+		id = { type = 30300 id = 1 }
+		name = "Armee Wallonien"
+		location = 108
+		division = {
+			id = { type = 30204 id = 2 }
+			name = "1ere Div. d'Inf. Wallonien"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30204 id = 3 }
+			name = "2e Div. d'Inf. Wallonien"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30204 id = 4 }
+			name = "3e Div. d'Inf. Wallonien"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+	}
+    } 

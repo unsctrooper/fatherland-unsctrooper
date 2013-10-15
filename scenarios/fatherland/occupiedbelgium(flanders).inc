@@ -252,5 +252,30 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
   
-} 
-
+landunit = {
+		id = { type = 30401 id = 1 }
+		name = "1ste Leger"
+		location = 115
+		division = {
+			id = { type = 30401 id = 2 }
+			name = "'Langemarck' Divisie"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30401 id = 3 }
+			name = "'Ieper' Divisie"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30401 id = 4 }
+			name = "'Jan Breydel' Divisie"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+	}
+    } 

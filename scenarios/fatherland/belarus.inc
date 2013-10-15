@@ -268,5 +268,30 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
   
-} 
-
+landunit = {
+		id = { type = 30406 id = 1 }
+		name = "Belarusian Armiya"
+		location = 599
+		division = {
+			id = { type = 30406 id = 2 }
+			name = "1. 'Belarus' Diviziya"
+			strength = 100
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30406 id = 3 }
+			name = "2. 'Minsk' Diviziya"
+			strength = 100
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30406 id = 4 }
+			name = "Inf;3. 'Brest' Diviziya"
+			strength = 100
+			type = infantry
+			model = 11
+		}
+	}
+    } 

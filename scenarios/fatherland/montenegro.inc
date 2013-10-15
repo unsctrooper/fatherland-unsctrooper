@@ -103,4 +103,16 @@ inventions = { 3000027 }
    chiefofarmy            = {  type = 9 id = 390008  } 
    chiefofnavy            = {  type = 9 id = 390009  } 
    chiefofair             = {  type = 9 id = 390010  }
-}
+landunit = {
+		id = { type = 30405 id = 1 }
+		name = "Crna gora armija"
+		location = 332
+		division = {
+			id = { type = 30405 id = 2 }
+			name = "1. Pesadijska divizija"
+			strength = 25
+			type = infantry
+			model = 11
+		}
+	}
+    } 

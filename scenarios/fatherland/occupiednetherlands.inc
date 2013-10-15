@@ -252,5 +252,31 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
   
-} 
+landunit = {
+		id = { type = 30402 id = 1 }
+		name = "Schutz-Kommando RK Niederlande"
+		location = 122
+		division = {
+			id = { type = 30402 id = 2 }
+			name = "1. RK. Niederlande Schutz-Kommando"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30402 id = 3 }
+			name = "2. RK. Niederlande Schutz-Kommando"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30402 id = 4 }
+			name = "3. RK. Niederlande Schutz-Kommando"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+	}
+    } 
 

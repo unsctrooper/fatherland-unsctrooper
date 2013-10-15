@@ -27,7 +27,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
      relation = {  tag = ITA value = 200  } 
     } 
    SpyInfo                = {  country = "SER" NumberOfSpies = 7  } 
-   nationalprovinces      = {  327 330 338 339 340 342 336 337 341 } 
+   nationalprovinces      = {  327 330 338 339 340 342 337 341 } 
    ownedprovinces         = {  327 330 338 339 340 342  } 
    controlledprovinces    = {  327 330 338 339 340 342  } 
    claimedprovinces       = {  327 328 329 330 331 332 333 334 335 339 340 342 343 344 350 351 353 354 355 356 357 358  } 

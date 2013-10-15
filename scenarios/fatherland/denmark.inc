@@ -248,5 +248,17 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
   
-} 
+landunit = {
+		id = { type = 30404 id = 1 }
+		name = "General Kommandoen"
+		location = 294
+		division = {
+			id = { type = 30404 id = 2 }
+			name = "1. Jydske Division"
+			strength = 25
+			type = infantry
+			model = 11
+		}
+	}
+    } 
 

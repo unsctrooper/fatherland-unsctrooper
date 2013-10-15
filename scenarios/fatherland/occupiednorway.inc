@@ -14,7 +14,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    puppet = GER
    control = GER
    
-   capital                = 122 
+   capital                = 483
    manpower               = 15 
    transports             = 10 
    escorts                = 0 
@@ -252,5 +252,31 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
   
-} 
+landunit = {
+		id = { type = 30403 id = 1 }
+		name = "Schutz-Kommando RK Norwegen"
+		location = 483
+		division = {
+			id = { type = 30403 id = 2 }
+			name = "1. RK. Norwegen Schutz-Kommando"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30403 id = 3 }
+			name = "2. RK. Norwegen Schutz-Kommando"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 30403 id = 4 }
+			name = "3. RK. Norwegen Schutz-Kommando"
+			strength = 80
+			type = infantry
+			model = 11
+		}
+	}
+    } 
 
