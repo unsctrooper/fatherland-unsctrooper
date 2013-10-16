@@ -63,7 +63,7 @@ event = {
 	style = 2
 	picture = "galicia"
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -109,7 +109,7 @@ event = {
 	style = 2
 	picture = "gorals"
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -162,7 +162,7 @@ event = {
 	style = 2
 	picture = "gorals"	
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -186,7 +186,7 @@ event = {
 	style = 2
 	picture = "gorals"	
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -221,7 +221,7 @@ event = {
 	style = 2
 	picture = "galicia"
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 15
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -257,7 +257,7 @@ event = {
 	style = 2
 	picture = "galicia"
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 15
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -300,7 +300,7 @@ event = {
 	style = 2
 	picture = "generalgovernment"														#picture of Krakau
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 
@@ -326,7 +326,7 @@ event = {
 	style = 2
 	picture = "generalgovernment"
 
-	date = { day = 1 month = october year = 1951 }
+	date = { day = 1 month = october year = 1949 }
 	offset = 3
 	deathdate = { day = 30 month = december year = 1963 }
 
