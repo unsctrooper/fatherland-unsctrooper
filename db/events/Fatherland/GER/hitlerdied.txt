@@ -999,7 +999,7 @@ command = { type = end_puppet }
 command = { type = headofstate which = 274 }		
 command = { type = headofgovernment which = 274 }	
 command = { type = end_access which = GER }
-command = { type = trigger which = 90000529 }
+command = { type = event which = 90000529 where = U41 when = 1 }
 command = { type = dissent value = 3 }
 }
 }
@@ -1569,7 +1569,6 @@ desc = "90000546DESC"
 action_a = {
 name = 90000546A
 ai_chance = 95
-command = {	type = leave_alliance }
 command = { type = trigger which = 90000547 }
 }
 action_b = {
