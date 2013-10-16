@@ -1,60 +1,156 @@
 ####################################
-# New Changelog 
+# Changelog for Beta version 2.0
 ####################################
 
-# Bug fixing:
-- Fixed Soviet Union Claims
-- Fixed South Africa referendum chain
-- Fixed Vladivostok Conference
-- Fixed Transylvania War localization(90000010C)
+#Events/Decision Modified (*) or Added (+)	
+	GERMANY
+		- (+) Hitler Death Chain
+		- (+) Generalplan OST Chain
+		- (+) Generalplan WEST Chain
+		- (*) Domestic events
+	AXIS
+		- (+) Formation of the Volga Coalition Chain
+		- (+) Operation Barbarossa II Chain
+		- (+) Spain entry into the axis event
+		- (+) Pacification of Moscow zone
+		- (+) Reichskommissariat Kaukasus events		
+		
+	COMINTERN
+		- (*) Vladivostok Conference
+		- (*) Soviet Union Domestic events
+	EUROPE
+		- (*) Italy domestic events
+		- (*) Italy Grand Council
+		- (*) Vichy France Petain Death Chain
+		- (*) Vichy France domestic
+		- (*) Serbia events
+		- (*) Transylvanian War
+		- (*) Spain domestic events
+		- (*) United Kingdom domestic events
+	CRISIS
+		- (*) Abadan Crisis
+		- (*) Central Asia Crisis
+		- (*) Morocco Crisis
+		- (+) Iran/Kurdish Crisis		
+		- (+) Colonials Events
+		- (+) IRA Chain
+		- (+) Sino/India War (thanks NWO)
+		- (+) United Arab Republic (thanks NWO)
+	ASIA
+		- (*) China civil war
+		- (*) India-Pakistan war
+		- (*) Sinkiang fate
+		- (*) Korean front
+		- (*) Indochina chain
+		- (*) Tibet-China conflict
+		- (+) Add events for Burma (thanks NWO)
+		- (+) Add events for Ceylon (thanks NWO)		
+		- (+) Add events for New Zealand (thanks NWO)		
+		- (+) Add events for Mongolia (thanks NWO)		
+		- (+) Add events for Philippines (thanks NWO)	
+		- (+) Add events for Thailand (thanks NWO)		
+		- (+) Add events for Nepal (thanks NWO)		
+		- (+) Add events for Brunei (thanks NWO)		
+	AFRICA
+		- (+) Ethiopian crisis chain
+		- (*) South Africa events
+		- (+) Add events for Egypt (thanks NWO)
+		- (+) Add events for Madagascar (thanks NWO)
+	AMERICAS
+		- (*) Marshall Plan chain
+		- (+) Add events for Cuba (thanks NWO)
+		- (+) Add events for Chile (thanks NWO)
+		- (+) Add events for Canada (thanks NWO)	
+		- (+) Add events for Argentina (thanks NWO)		
+		- (+) Add events for Uruguay (thanks NWO)	
+		- (+) Add events for Paraguay (thanks NWO)		
+		- (+) Add events for Venezuela (thanks NWO)	
+		- (+) Add events for Peru (thanks NWO)
+		- (+) Add events for El Salvador (thanks NWO)		
+		- (+) Add events for Colombia (thanks NWO)
+		- (+) Add events for Panama (thanks NWO)
+		- (+) Add events for Ecuador (thanks NWO)	
+		- (+) Add events for Brazil (thanks NWO)		
+	
+#DB
+- Add ministers_ita.csv (Italy)
+- Add ministers_rom.csv (Romania)
+- Add ministers_sov.csv (Soviet Union)
+- Add ministers_wll.csv (Wallonia)
+- Add ministers_tra.csv (Cossack Federation)
+- Add ministers_U44.csv (Generalgouvernement Polen)
+- Add ministers_U52.csv (Burgundy SS State)
+- Add ministers_U54.csv (Galicia)
+- Add ministers_U62.csv (Goralenland)
+- Add leaders U52 (Burgundy SS State)
+- Add teams_U52 (Burgundy SS State)
 
-# Events/Decisions:
-- Review of South Africa events
-- Event chain (15+) on Colonialism
-- Formation of North and South Korea Armies
-- Indo-Pakistan war and more events (thanks to NWO2)
-- Added Tibet events (thanks to NWO2)
-- Added Sinkiang events (thanks to NWO2)
-- Sino-Indian crisis (thanks to NWO2)
-- British-Ethiopian war
-- Review of italian events
-- New RK Kaukasus events
-- Added elections events
-- New Banat Economic Exploitation events
+#Config
+- Review mods.csv
+- Review world_names.csv
+- Review scenario_text.csv
 
-# Scenario files (INC):
-- Implementation of a Serbian State in 1948
-- Review of German cores, puppets and borders
-- Review of IC Germany/USSR 
-- Review of Reichskommissariat Kaukasus
-- Review of Reichskommissariat Ostland
-- Review of the Netherlands (exiles)
-- Review of Indonesia
-- Review of Belgium (exiles)
-- Review of Pakistan
-- Review of India
-- Review of UK cabinet
-- Review of Indochina Minister&Leader pool
-- Review of Vietnam Minister&Leader pool
+#Inc
+- New inc for Croatia
+- New inc for Romania
+- New inc for Serbia
+- New inc for Soviet Union
+- New inc for Spain
+- New inc for Sinkiang
+- New inc for United Kingdom
+- New inc for Canada
+- New inc for Bulgaria
+- New inc for Hungary
+- New inc for Italy
+- New inc for Slovakia
+- New inc for Reichskommissariat Kaukasus (U42)
+- New inc for Cossack Federation
+- New inc for Reichskommissariat Ukraine (U41)
+- New inc for China Nationalist
+- New inc for China Communist
+- New inc for Korea People's Republic
+- New inc for Belarus Central Rada
+- New inc for Denmark
+- New inc for Germany
+- New inc for Flanders
+- New inc for Reichskommissariat Ostland (U40)
+- New inc for Vietnam
+- New inc for Indochinese Union
+- New inc for France
+- New inc for Reichskommissariat Belgien-Nordfrankreich (U47)
+- New inc for Indonesia
+- New inc for Netherland (East Indies)
+- New inc for Belgium (Congo)
+- New inc for Pakistan
+- New inc for India
 
 # AI
-- Improved AI for France, Free France, Soviet Union, Germany & United Kingdom
+- Improved AI for Soviet Union
+- Improved AI for France
+- Improved AI for Free France
+- Improved AI for Germany
+- Improved AI for United Kingdom
+
+#Scenarios
+- Review of fatherland.eug
+
+#GFX
+- New load screen
+- New event pics
+- New icon
+- New scenario pic
+- New flags
+- New counters
 
 #Other
-- Remove duplicate files
 - Implementing of Cold War Tech Tree Expansion 
-- Add 2 ministers for Goralenvolk and Galizia
+- Review of revolt.txt
+- Remove duplicate files
+- Minor fixing
 
-#To add
-Fix SOV_1948.ai
-Fix mods.csv
-Fix ministers_sov.csv
-Review Ethiopia,Madagascar,India,Soviet Union events
-Add Kurdistan crisis (iran_crisis.txt)
-Fix Kurdistan on revolt.txt 
-Add counter,shields and Palette
-Review East Turkestan chain
-Review Chinese Warlord return to the flock
+# Map fixing:
+- Fixed Soviet Union Claims
+
 ####################################
 # Changelog for Beta version 1.0
 ####################################
