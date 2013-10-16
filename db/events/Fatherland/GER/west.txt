@@ -148,7 +148,7 @@ event = {
 	name = "403B"
 	ai_chance = 80
 	command = { type = dissent value = 3 }
-	command = { type = inherit which = U45 value = 1 }
+	command = { type = inherit which = DEN value = 1 }
     command = { type = event which = 404 where = GER when = 3 }
 	}
 }
