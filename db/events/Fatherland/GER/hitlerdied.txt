@@ -640,7 +640,6 @@ trigger = {
     command = { type = trigger which = 90000526 }
     command = { type = trigger which = 90000527 }
     command = { type = trigger which = 90000528 }
-    command = { type = trigger which = 90000529 }
 	}
     action_b = {
     trigger = { flag = LegGermany }
@@ -655,7 +654,6 @@ trigger = {
     command = { type = trigger which = 90000526 }
     command = { type = trigger which = 90000527 }
     command = { type = trigger which = 90000528 }
-    command = { type = trigger which = 90000529 }
 }
 	action = {
     trigger = { flag = NaziGermany }
