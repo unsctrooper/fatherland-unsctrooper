@@ -191,11 +191,11 @@ event = { # Considerable support (CHC)
 		command = { type = oilpool value = 3000 }
 		command = { type = money value = 500 }
 		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
-		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 5 }
-		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 5 }
-		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 5 }
-		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 2 }
-		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 2 }
+		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 0 }
 	}		
 }
 
@@ -218,14 +218,14 @@ event = { # Total support (CHC)
 		command = { type = supplies value = 8000 }
 		command = { type = oilpool value = 5000 }
 		command = { type = money value = 1000 }
-		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 3 }
-		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 4 }
-		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 4 }
-		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 4 }
-		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 4 }
-		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 4 }
-		command = { type = add_division which = "7. Div Siberian Volunteers" value = mechanized when = 4 }
-		command = { type = add_division which = "8. Div Siberian Volunteers" value = mechanized when = 4 }
+		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
+		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "7. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "8. Div Siberian Volunteers" value = mechanized when = 0 }
 		command = { type = alliance which = SOV }
 	}	
 
@@ -235,9 +235,9 @@ event = { # Total support (CHC)
 		command = { type = supplies value = 12000 }
 		command = { type = oilpool value = 8000 }
 		command = { type = money value = 500 }
-		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 3 }
-		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 4 }
-		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 4 }
+		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
+		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 0 }
 		#command = { type = sleepevent which = 8200121 } # End of intervention
 	}		
 }
@@ -500,12 +500,12 @@ event = { # Considerable support (CHI)
 		command = { type = supplies value = 3000 }
 		command = { type = oilpool value = 1000 }
 		command = { type = money value = 1000 }
-		command = { type = add_division which = "1. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "2. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "3. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "4. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "5. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "6. Div American Marines" value = marine when = 7 }
+		command = { type = add_division which = "1. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "2. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "3. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "4. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "5. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "6. Div American Marines" value = marine when = 5 }
 		command = { type = dissent value = -12 }
 	}		
 }
@@ -529,12 +529,12 @@ event = { # Total support (CHI)
 		command = { type = supplies value = 3000 }
 		command = { type = oilpool value = 1000 }
 		command = { type = money value = 1000 }
-		command = { type = add_division which = "1. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "2. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "3. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "4. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "5. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "6. Div American Marines" value = marine when = 7 }
+		command = { type = add_division which = "1. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "2. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "3. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "4. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "5. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "6. Div American Marines" value = marine when = 5 }
 		command = { type = dissent value = -12 }
 		command = { type = alliance which = USA }
 	}	
@@ -545,12 +545,12 @@ event = { # Total support (CHI)
 		command = { type = supplies value = 3000 }
 		command = { type = oilpool value = 1000 }
 		command = { type = money value = 1000 }
-		command = { type = add_division which = "1. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "2. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "3. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "4. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "5. Div American Marines" value = marine when = 7 }
-		command = { type = add_division which = "6. Div American Marines" value = marine when = 7 }
+		command = { type = add_division which = "1. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "2. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "3. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "4. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "5. Div American Marines" value = marine when = 5 }
+		command = { type = add_division which = "6. Div American Marines" value = marine when = 5 }
 		command = { type = sleepevent which = 8200120 }
 		command = { type = dissent value = -12 }
 	}		
