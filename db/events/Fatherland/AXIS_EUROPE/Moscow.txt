@@ -15,7 +15,6 @@ war = { country = GER country = USA }
 owned = { province = 572 data = GER } # Germany owns Moscow
 headofstate = 1 # Hitler
 ideology = nazi # NS government
-event = 900000
 }
 
 name = "900400NAME"
