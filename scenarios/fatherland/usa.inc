@@ -222,7 +222,9 @@ rare_materials         = 90000
   #Attu Island
   2174
   #South Korea 
-  1228 1229 1233 1232 1231 1230  
+  1228 1229 1233 1232 1231 1230 
+  # North Korea
+  1224 1226 1227 1225 1222 1223 1221
   #Trust Territory of the Pacific Islands
   1665 1666 1667 1668 1669 1670 1671 1672 1674 1675 1676 1677 1681 1684 1685 1686 
   #Okinawa
@@ -255,6 +257,8 @@ rare_materials         = 90000
   2174
   #South Korea 
   1228 1229 1233 1232 1231 1230  
+  # North Korea
+  1224 1226 1227 1225 1222 1223 1221
   #Trust Territory of the Pacific Islands
   1665 1666 1667 1668 1669 1670 1671 1672 1674 1675 1676 1677 1681 1684 1685 1686 
   #Okinawa
@@ -1526,6 +1530,52 @@ techapps = { 1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 11
 		}
 	}
 	
+### Korea ###
+	landunit = {
+		location = 1226 # Gangye
+		id = { type = 30301 id = 500 }
+		name = "1. Korean Protection Force"
+		division = {
+			id = { type = 30304 id = 501 }
+			name = "85th Infantry Division"
+			strength = 100
+			type = motorized
+			model = 3
+			extra = sp_artillery
+			brigade_model = 2
+		}
+		division = {
+			id = { type = 30304 id = 502 }
+			name = "30th Mtn. Infantry Division"
+			strength = 100
+			type = bergsjaeger
+			model = 8
+			extra = armored_car
+			brigade_model = 6
+		}
+}
+	landunit = {
+		location = 1221 # Pyeongyang
+		id = { type = 30301 id = 503 }
+		name = "2. Korean Protection Force"
+		division = {
+			id = { type = 30304 id = 504 }
+			name = "86th Infantry Division"
+			strength = 100
+			type = infantry
+			model = 10
+		}
+		division = {
+			id = { type = 30304 id = 505 }
+			name = "30th Mtn. Infantry Division"
+			strength = 100
+			type = infantry
+			model = 10
+			extra = artillery
+			brigade_model = 11
+		}
+}
+
 
 	navalunit = {
 		id = { type = 30302 id = 1 }

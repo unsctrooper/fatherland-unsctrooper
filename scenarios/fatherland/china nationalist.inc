@@ -2,6 +2,25 @@
 # Country definition for CHI #
 ##############################
 
+province = { id = 1307   # Huaihua
+   ic       = -2
+ } 
+ 
+ province = { id = 1338   # Shanghai
+   ic       = -3
+ } 
+ 
+ province = { id = 1264   # Lanzhou
+   ic       = -2
+ } 
+ 
+ province = { id = 1217   # Anshan
+   ic       = -2
+ } 
+ 
+  province = { id = 1299   # Chongqing
+   ic       = -1
+ } 
  
  ##################### 
  # Country main data # 
@@ -89,7 +108,7 @@ rare_materials         = 500
  #Guangxi
  1378  1376 1377  1380 1381 1382 1383    1379 
  #North China
- 1251 1250 1247 1241 1245 1236 1246 1252 1249
+ 1250 1245 1252 1249
  
   #Taiwan    
   1361 1362 1363 1364   
@@ -97,6 +116,9 @@ rare_materials         = 500
              1328       1333 1334  1339 1336  1337 1338 1344  1345 1343 1350 1353 
  1318 1369 1365 1370 1346 1348    1367 1358 1360 1375
  1268 1256 1270 1271 1264 1263 1262 1272 1265 1266 1283 1284 1285
+ 
+ # New Civil War Front
+ 1219 1220 1215 1211 1212 1217 1214 1207 1119 1205 1204 1202 1208 1216 1235 1236 1243 1250 1252 1249 1253
  
 
                              } 
@@ -112,7 +134,7 @@ rare_materials         = 500
   #Guangxi
  1378  1376 1377  1380 1381 1382 1383    1379 
 #North China
- 1251 1250 1247 1241 1245 1236 1246 1252 1249
+ 1250 1245 1236 1252 1249
  
   #Taiwan    
   1361 1362 1363 1364   
@@ -120,7 +142,9 @@ rare_materials         = 500
              1328       1333 1334  1339 1336  1337 1338 1344  1345 1343 1350 1353 
  1318 1369 1365 1370 1346 1348    1367 1358 1360 1375
  1268 1256 1270 1271 1264 1263 1262 1272 1265 1266 1283 1284 1285
- 
+  # New Civil War Front
+ 1219 1220 1215 1211 1212 1217 1214 1207 1119 1205 1204 1202 1208 1216 1235 1236 1243 1250 1252 1249 1253
+ 1335 1342 1340 1341 1317 1320 1324 1322 1257 1315 1314 1258  1260 1269 1237 1218 1199
 
                 
      } 
@@ -217,86 +241,39 @@ inventions = { 3000027 }
    dormant_leaders        = {  55012 55303 55338 55370 55377 55003 55029 55018 55020  }
    dormant_teams          = {  55005  }
    landunit = 
-   {  location = 1349
-     name     = "2. Juntuan" 
+   {  location = 1299 # Chongqing
+     name     = "1. Juntuan" 
      id       = {  type = 22000 id = 1  } 
      Division = 
      { id         = {  type = 22000 id = 2  } 
-       name       = "30. Jun" 
+       name       = "1. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
-       model     = 7
+       model     = 8
       }
      Division = 
      { id         = {  type = 22000 id = 3  } 
-       name       = "42. Jun" 
+       name       = "2. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
-       model     = 7
+       model     = 8
       }
      dig_in   = 20.000 
     }
    landunit = 
-   {  location = 1311
-     name     = "2. Juntuan" 
+   {  location = 1199 # Harbin
+     name     = "3. Juntuan" 
      id       = {  type = 22000 id = 4  }
      Division = 
      { id         = {  type = 22000 id = 5  } 
-       name       = "68. Jun" 
+       name       = "4. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
-       model     = 7
+       model     = 8
       }
      Division = 
      { id         = {  type = 22000 id = 6  } 
-       name       = "40. Jun" 
-       type       = infantry 
-	   strength  = 60
-       model     = 7
-      } 
-     dig_in   = 20.000 
-    }
-   landunit = 
-   {  location = 1368
-     name     = "2. Juntuan" 
-     id       = {  type = 22000 id = 7  }
-     Division = 
-     { id         = {  type = 22000 id = 8  } 
-       name       = "76. Jun" 
-       type       = infantry 
-	   strength  = 60
-       model     = 7
-      } 
-     Division = 
-     { id         = {  type = 22000 id = 9  } 
-       name       = "12. Jun" 
-       type       = infantry 
-	   strength  = 60
-       model     = 7
-      } 
-     dig_in   = 20.000 
-    }
-   landunit = 
-   {  location = 1368
-     name     = "4. Juntuan" 
-     id       = {  type = 22000 id = 10  }
-     Division = 
-     { id         = {  type = 22000 id = 11  } 
-       name       = "38. Jun" 
-       type       = infantry 
-	   strength  = 60
-       model     = 7
-      } 
-     Division = 
-     { id         = {  type = 22000 id = 12  } 
-       name       = "47. Jun" 
-       type       = infantry 
-	   strength  = 60
-       model     = 7
-      }
-     Division = 
-     { id         = {  type = 22000 id = 13  } 
-       name       = "96. Jun" 
+       name       = "5. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
        model     = 8
@@ -304,87 +281,136 @@ inventions = { 3000027 }
      dig_in   = 20.000 
     }
    landunit = 
-   {  location = 1306
+   {  location = 1253 # Linfen
+     name     = "10. Juntuan" 
+     id       = {  type = 22000 id = 7  }
+     Division = 
+     { id         = {  type = 22000 id = 8  } 
+       name       = "6. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+      } 
+     Division = 
+     { id         = {  type = 22000 id = 9  } 
+       name       = "7. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+      } 
+     dig_in   = 20.000 
+    }
+   landunit = 
+   {  location = 1236 # Chengde
      name     = "4. Juntuan" 
+     id       = {  type = 22000 id = 10  }
+     Division = 
+     { id         = {  type = 22000 id = 11  } 
+       name       = "8. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+      } 
+     Division = 
+     { id         = {  type = 22000 id = 12  } 
+       name       = "9. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+      }
+     Division = 
+     { id         = {  type = 22000 id = 13  } 
+       name       = "10. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+      } 
+     dig_in   = 20.000 
+    }
+   landunit = 
+   {  location = 1256 # Baoji
+     name     = "5. Juntuan" 
      id       = {  type = 22000 id = 14  }
      Division = 
      { id         = {  type = 22000 id = 15  } 
-       name       = "3. Jun" 
+       name       = "1. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       } 
      Division = 
      { id         = {  type = 22000 id = 16  } 
-       name       = "15. Jun" 
+       name       = "2. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       } 
      Division = 
      { id         = {  type = 22000 id = 17  } 
-       name       = "17. Jun" 
+       name       = "3. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       }
      dig_in   = 20.000 
     }
    landunit = 
-   {  location = 1356
+   {  location = 1339 # Souzhou
      name     = "6. Juntuan" 
      id       = {  type = 22000 id = 18  }
      Division = 
      { id         = {  type = 22000 id = 19  } 
-       name       = "19. Jun" 
+       name       = "4. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       } 
      Division = 
      { id         = {  type = 22000 id = 20  } 
-       name       = "61. Jun" 
+       name       = "5. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       } 
      Division = 
      { id         = {  type = 22000 id = 21  } 
        name       = "1. Guo Qibing Jun" 
        type       = cavalry 
 	   strength  = 40
-       model     = 7
+       model     = 10
+	  extra = sp_artillery
+	   brigade_model = 1
       }
      Division = 
      { id         = {  type = 22000 id = 22  } 
-       name       = "51. Jun" 
+       name       = "6. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       }
      dig_in   = 20.000 
     }
    landunit = 
-   {  location = 1325
+   {  location = 1324 # Zhengzhou
      name     = "7. Juntuan" 
      id       = {  type = 22000 id = 23  }
      Division = 
      { id         = {  type = 22000 id = 24  } 
-       name       = "Xin 1. Jun" 
+       name       = "Xin 11. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
        model     = 8
       } 
      Division = 
      { id         = {  type = 22000 id = 25  } 
-       name       = "22. Jun" 
+       name       = "7. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       }
      Division = 
      { id         = {  type = 22000 id = 26  } 
-       name       = "74. Jun" 
+       name       = "12. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
        model     = 8
@@ -393,32 +419,124 @@ inventions = { 3000027 }
     }
  
    landunit = 
-   {  location = 1381
-     name     = "33. Juntuan" 
+   {  location = 1271 # Wuzhong
+     name     = "8. Juntuan" 
      id       = {  type = 22000 id = 70  }
      Division = 
      { id         = {  type = 22000 id = 71  } 
-       name       = "1. Jun" 
+       name       = "8. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       }
      Division = 
      { id         = {  type = 22000 id = 72  } 
-       name       = "59. Jun" 
+       name       = "13. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
        model     = 8
       }
      Division = 
      { id         = {  type = 22000 id = 73  } 
-       name       = "77. Jun" 
+       name       = "9. Bubing Lü" 
        type       = militia 
 	   strength  = 60
-       model     = 4
+       model     = 5
       }
      dig_in   = 20.000 
     }
+	
+	  landunit = 
+   {  location = 1208 # Changchun
+     name     = "9. Juntuan" 
+     id       = {  type = 22000 id = 74  }
+     Division = 
+     { id         = {  type = 22000 id = 75  } 
+       name       = "11. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+	  	   extra = armored_car
+	   brigade_model = 5
+      }
+	 Division = 
+     { id         = {  type = 22000 id = 76  } 
+       name       = "12. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+	   extra = artillery
+	   brigade_model = 10
+      }
+	 Division = 
+     { id         = {  type = 22000 id = 77  } 
+       name       = "1. KMT Manchuria HQ" 
+       type       = hq 
+	   strength  = 60
+       model     = 5
+      }
+	  }
+		  landunit = 
+   {  location = 1205 # Mudanjiang
+     name     = "12. Juntuan" 
+     id       = {  type = 22000 id = 78  }
+     Division = 
+     { id         = {  type = 22000 id = 79  } 
+       name       = "11. Bubing Shi" 
+       type       = infantry 
+	   strength  = 60
+       model     = 8
+	 	   extra = cavalry
+	   brigade_model = 11
+      }
+	  Division = 
+     { id         = {  type = 22000 id = 80  } 
+       name       = "11. Bubing Lü" 
+       type       = militia 
+	   strength  = 60
+       model     = 5
+      }
+	 	  Division = 
+     { id         = {  type = 22000 id = 81  } 
+       name       = "12. Bubing Lü" 
+       type       = militia 
+	   strength  = 60
+       model     = 5
+      }
+	  }
+			  landunit = 
+   {  location = 1338 # Shanghai
+     name     = "Shanghai Garrison" 
+     id       = {  type = 22000 id = 90  }
+     Division = 
+     { id         = {  type = 22000 id = 91  } 
+       name       = "13. Bubing Lü" 
+       type       = militia 
+	   strength  = 60
+       model     = 5
+      }
+	  Division = 
+     { id         = {  type = 22000 id = 92  } 
+       name       = "14. Bubing Lü" 
+       type       = militia 
+	   strength  = 60
+       model     = 5
+      }
+	 	  Division = 
+     { id         = {  type = 22000 id = 93  } 
+       name       = "15. Bubing Lü" 
+       type       = militia 
+	   strength  = 60
+       model     = 5
+      }
+	   Division = 
+     { id         = {  type = 22000 id = 94  } 
+       name       = "16. Jun" 
+       type       = garrison 
+	   strength  = 60
+       model     = 5
+      }
+	  }
   airunit =
   { location = 1297
     id       = { type = 22000 id = 300 }
@@ -467,5 +585,31 @@ inventions = { 3000027 }
       model = 5
     }
   }
+  
+   navalunit =
+  { location = 1338 # Shanghai
+    id       = { type = 22000 id = 400 }
+    name     = "ROC Navy"
+    base     = 1338
+    division =
+    { id    = { type = 22000 id = 401 }
+      name  = "'Kee Lung'"
+      type  = destroyer
+      model = 6
+    }
+	    division =
+    { id    = { type = 22000 id = 402 }
+      name  = "'Cheng Kung'"
+      type  = destroyer
+      model = 6
+    }
+		division =
+    { id    = { type = 22000 id = 403 }
+      name  = "'Hai Lung'"
+      type  = submarine
+      model = 5
+    }
+  }
+
 } 
  

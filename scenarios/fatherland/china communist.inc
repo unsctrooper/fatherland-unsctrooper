@@ -3,8 +3,29 @@
  # Country definition for CHC # 
  ############################## 
   
+  province = { id = 1330   # Jinan
+   ic       = 2
+ } 
 
+ province = { id = 1247   # Beijing
+   ic       = 2
+ } 
   
+ province = { id = 1323   # Anyang
+   ic       = 2
+ } 
+ 
+ province = { id = 1241   # Tianjin
+   ic       = 2
+ } 
+ 
+  province = { id = 1254   # Hequ
+   ic       = 2
+ } 
+ 
+  province = { id = 1331   # Yantai
+   ic       = 2
+ } 
  ##################### 
  # Country main data # 
  ##################### 
@@ -78,24 +99,13 @@ rare_materials         = 60
   
   } 
   
-	ownedprovinces         = {   1259 1260 1255 1254 1321 1327 1323 1242  1244 1330 1332 1329 1331
-	 1253 1248         1257 1258 1243  1319 1341 1340 1335 1317 1322 1324 1320 1342 1315 1314
-	#Manchuria
-	1202 1204 1212 1205 1199 1203 1200 1206 1213 1237 1207 1220 1218 1201 1208 1209 1210 1211 1214 1215 1217 1197 1198 1216 1235 1219
-	#Inner Mongolia
-	1240  1238 1239 1269
-
-	#North Korea
-	1221 1222 1223 1224 1225 1226 1227
+	ownedprovinces         = {  
+	# New Civil War Front
+1331 1329 1332 1330 1244 1242 1323 1327 1319 1321 1248 1259 1254 1251 1239 1246 1247 1241 1240 1210 1209 1213 1206 1200 1198 1201 1203 1197 1238 1255
 	} 
-	controlledprovinces    = {  1259 1260 1255 1254 1321 1327 1323 1242  1244 1330 1332 1329 1331
-	 1253 1248         1257 1258 1243  1319 1341 1340 1335 1317 1322 1324 1320 1342 1315 1314 
-	#Manchuria
-	1202 1204 1212 1205 1199 1203 1200 1206 1213 1237 1207 1220 1218 1201 1208 1209 1210 1211 1214 1215 1217 1197 1198 1216 1235 1219
-	#Inner Mongolia
-	1240  1238 1239	1269 
-	#North Korea
-	1221 1222 1223 1224 1225 1226 1227
+	controlledprovinces    = {  
+	# New Civil War Front
+1331 1329 1332 1330 1244 1242 1323 1327 1319 1321 1248 1259 1254 1251 1239 1246 1247 1241 1240 1210 1209 1213 1206 1200 1198 1201 1203 1197 1238 1255
 	} 
 	claimedprovinces = { 
 	1455 1458 #Arunachal Pradesh
@@ -167,13 +177,13 @@ inventions = { 3000027 }
    # 2 other units did not arrive until 1 year later
    # ###### 
    landunit = 
-   {  location = 1260 # Yan'an 
+   {  location = 1259 # Yan'an 
      name     = "1. Fangmianjun" 
      id       = {  type = 24000 id = 1  } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 2  } 
-       name       = "1. Juntuan" 
+       name       = "1. Zhidui" 
        type       = bergsjaeger 
        strength  = 50 
        model      = 8 
@@ -181,15 +191,17 @@ inventions = { 3000027 }
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 3  } 
-       name       = "3. Juntuan" 
+       name       = "2. Zhidui" 
        type       = bergsjaeger 
        strength  = 50 
        model      = 8 
+	   extra = artillery
+	   brigade_model = 10
       } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 4  } 
-       name       = "5. Juntuan" 
+       name       = "3. Zhidui" 
        type       = bergsjaeger 
        strength  = 50 
        model      = 8 
@@ -197,7 +209,7 @@ inventions = { 3000027 }
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 5  } 
-       name       = "8. Juntuan" 
+       name       = "1. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8 
@@ -205,7 +217,7 @@ inventions = { 3000027 }
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 6  } 
-       name       = "9. Juntuan" 
+       name       = "2. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8 
@@ -219,7 +231,7 @@ inventions = { 3000027 }
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 8  } 
-       name       = "2. Juntuan" 
+       name       = "3. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8 
@@ -227,7 +239,7 @@ inventions = { 3000027 }
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 9  } 
-       name       = "6. Juntuan" 
+       name       = "4. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8 
@@ -235,80 +247,202 @@ inventions = { 3000027 }
      dig_in   = 20.000 
     } 
    landunit = 
-   {  location = 1259 # Xianyang 
-     name     = "4. Fangmianjun" 
+   {  location = 1247 # Beijing 
+     name     = "3. Fangmianjun" 
      id       = {  type = 24000 id = 10  } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 11  } 
-       name       = "4. Jun" 
+       name       = "1. Bubing Lü" 
        type       = militia 
        strength  = 60
-       model      = 4
+       model      = 5
       } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 12  } 
-       name       = "9. Jun" 
+       name       = "2. Bubing Lü" 
        type       = militia 
        strength  = 60
-       model      = 4
+       model      = 5
       } 
      Division = 
      {  experience = 60 
        id         = {  type = 24000 id = 13  } 
-       name       = "30. Jun" 
+       name       = "3. Bubing Lü" 
        type       = militia 
        strength  = 60
-       model      = 4
+       model      = 5
       } 
+	  }
+	     landunit = 
+   {  location = 1246 # Zhanguyan 
+     name     = "4. Fangmianjun" 
+     id       = {  type = 24000 id = 14  } 
      Division = 
      {  experience = 60 
-       id         = {  type = 24000 id = 14  } 
-       name       = "31. Jun" 
+       id         = {  type = 24000 id = 15  } 
+       name       = "4. Bubing Lü" 
        type       = militia 
        strength  = 60
-       model      = 4
+       model      = 5
+      } 
+	      Division = 
+     {  experience = 60 
+       id         = {  type = 24000 id = 16  } 
+       name       = "5. Bubing Shi" 
+       type       = infantry 
+       strength  = 60
+       model      = 8
+      } 
+	  Division = 
+     {  experience = 60 
+       id         = {  type = 24000 id = 17  } 
+       name       = "5. Bubing Lü" 
+       type       = militia 
+       strength  = 60
+       model      = 5
       } 
      dig_in   = 20.000
     } 
    landunit = 
-   {  location = 1260 # Yan'an 
+   {  location = 1327 # Heze
      name     = "15. Juntuan" 
-     id       = {  type = 24000 id = 15  } 
+     id       = {  type = 24000 id = 18  } 
      Division = 
      {  experience = 60 
-       id         = {  type = 24000 id = 16  } 
-       name       = "25. Jun" 
+       id         = {  type = 24000 id = 19  } 
+       name       = "6. Bubing Lü" 
        type       = militia 
        strength  = 60
-       model      = 4
+       model      = 5
       } 
      Division = 
      {  experience = 60 
-       id         = {  type = 24000 id = 17  } 
-       name       = "26. Jun" 
+       id         = {  type = 24000 id = 20  } 
+       name       = "6. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8
       } 
+	  }
+   landunit = 
+   {  location = 1329 # Weifang
+     name     = "16. Juntuan" 
+     id       = {  type = 24000 id = 21  } 
      Division = 
      {  experience = 60 
-       id         = {  type = 24000 id = 18  } 
-       name       = "27. Jun" 
+       id         = {  type = 24000 id = 22  } 
+       name       = "7. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8 
       } 
      Division = 
      {  experience = 60 
-       id         = {  type = 24000 id = 19  } 
-       name       = "28. Jun" 
+       id         = {  type = 24000 id = 23  } 
+       name       = "8. Bubing Shi" 
        type       = infantry 
        strength  = 50
        model      = 8
       } 
      dig_in   = 20.000 
+	     Division = 
+     {  experience = 60 
+       id         = {  type = 24000 id = 35  } 
+       name       = "12. Bubing Shi" 
+       type       = infantry 
+       strength  = 50
+       model      = 8
+      } 
     } 
+	   landunit = 
+   {  location = 1213 # Baicheng
+     name     = "1. Manchuria Guerilla Base" 
+     id       = {  type = 24000 id = 24  } 
+     Division = 
+     { 
+       id         = {  type = 24000 id = 25  } 
+       name       = "7. Bubing Lü" 
+       type       = militia 
+       strength  = 60
+       model      = 5
+      } 
+	  Division = 
+     { 
+       id         = {  type = 24000 id = 26  } 
+       name       = "9. Bubing Shi" 
+       type       = infantry 
+       strength  = 60
+       model      = 8
+      } 
+     Division = 
+     {
+       id         = {  type = 24000 id = 27  } 
+       name       = "4. Zhidui" 
+       type       = bergsjaeger 
+       strength  = 60
+       model      = 8
+	   extra = artillery
+	   brigade_model = 10
+      } 
+	  }
+	 	   landunit = 
+   {  location = 1203 # Qiqihaer
+     name     = "2. Manchuria Guerilla Base" 
+     id       = {  type = 24000 id = 28  } 
+     Division = 
+     {  
+       id         = {  type = 24000 id = 29  } 
+       name       = "10. Bubing Shi" 
+       type       = infantry 
+       strength  = 60
+       model      = 8
+      } 
+	  Division = 
+     {  
+       id         = {  type = 24000 id = 30  } 
+       name       = "11. Bubing Shi" 
+       type       = infantry 
+       strength  = 60
+       model      = 8
+      } 
+     Division = 
+     {
+       id         = {  type = 24000 id = 31  } 
+       name       = "5. Zhidui" 
+       type       = bergsjaeger 
+       strength  = 60
+       model      = 8
+	 extra = armored_car
+	   brigade_model = 5
+      } 
+	      Division = 
+     {
+       id         = {  type = 24000 id = 32  } 
+       name       = "1. Manchuria HQ" 
+       type       = hq 
+       strength  = 60
+       model      = 3
+      } 
   } 
- 
+    airunit =
+  { location = 1247 # Beijing
+    id       = { type = 24000 id = 300 }
+    name     = "Zhongguo Renmin Jiefangjun Kongjun"
+    base     = 1247
+    division =
+    { id    = { type = 24000 id = 301 }
+      name  = "1. Interceptor Wing"
+      type  = interceptor
+      model = 6
+    }
+    division =
+    { id    = { type = 24000 id = 301 }
+      name  = "1. Bomber Wing"
+      type  = tactical_bomber
+      model = 6
+    }
+  }
+
+ }
