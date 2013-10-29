@@ -1550,8 +1550,6 @@ techapps = { 1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 11
 			strength = 100
 			type = bergsjaeger
 			model = 8
-			extra = armored_car
-			brigade_model = 6
 		}
 }
 	landunit = {

@@ -414,8 +414,6 @@ inventions = { 3000027 }
        type       = bergsjaeger 
        strength  = 60
        model      = 8
-	 extra = armored_car
-	   brigade_model = 5
       } 
 	      Division = 
      {
@@ -438,7 +436,7 @@ inventions = { 3000027 }
       model = 6
     }
     division =
-    { id    = { type = 24000 id = 301 }
+    { id    = { type = 24000 id = 302 }
       name  = "1. Bomber Wing"
       type  = tactical_bomber
       model = 6
