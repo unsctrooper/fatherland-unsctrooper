@@ -1,15 +1,33 @@
 #########################################################
-# South Africa events - Based on NWO events - Credits by Pako
+# South Africa events - Made by Pako
 # v.0.1
 ###
-#### 8012601 - It's time for elections in South Africa
-#### 8012602 - Death of Smuts
-#### 8012603 - Apartheid
-#### 8012604 - Republican Referendum of 1951
-#### 8012605 - Republican Referendum of 1951 - GER Reaction
-#### 8012606 - Republican Referendum of 1951 - UK Reaction
-#### 8012607 - State visit to Germany (1952) - GER
-
+#### 8012601 - 1948 Elections
+#### DUP
+	#### 8012602 - Bombing at the Congress (possible coup)
+#### HNP	
+	#### 8012613 - Priority : restore order
+	#### 8012603 - Apartheid
+	#### 8012604 - Republican Referendum of 1951
+		#### Path to a possible alignment with Axis
+			#### 8012605 - Republican Referendum of 1951 - GER Reaction
+			#### 8012606 - Republican Referendum of 1951 - UK Reaction
+			#### 8012620 - Republican Referendum of 1951 - NZL Reaction
+			#### 8012621 - Republican Referendum of 1951 - AUS Reaction
+			#### 8012622 - Republican Referendum of 1951 - CAN Reaction
+			#### 8012607 - State visit to Germany (1952) - GER
+			#### 8012609 - What kind of relationship is possible with South Africa ? - GER
+			#### 8012610 - Full friendship with Germany ? - SAF
+			#### 8012611 - Enter in the Axis - SAF
+			#### 8012612 - Meeting failed - SAF
+		#### Path to a review of UK-SAF relationship
+			#### 8012614 - We rest in Commonwealth but it's time to review our relationship with UK
+			#### 8012615 - Meeting in Pretoria - Rightfull claim
+			#### 8012616 - Recognize the claim and the new government (we need powerfull allies) - UK
+			#### 8012617 - Don't recognize the claim and the new government - UK
+			#### 8012618 - The UK suspend us from commonwealth - SAF
+			#### 8012619 - The British accepted all our suggestions, we remain faithful allies - SAF
+					
 #########################################################
 
 #########################################################
@@ -19,8 +37,8 @@ event = {
 	id = 8012601
 	country = SAF
 
-	name = "It's time for elections in South Africa"
-	desc = "There are two main factions, the main Afrikaner nationalist party, the Herenigde Nasionale Party (Reunited National Party) under the leadership of Protestant cleric Daniel Francois Malan and Democrat United Party, leaded by J.C.Smuts"
+	name = "1948 Elections"
+	desc = "After the victory of Germany in World War II pro-Nazi movements reached a unity around the Herenigde Nasionale Party (Reunited National Party) that allowed him to submit a United National Front. Two main parties are the favourites for the victory in the elections, the Herenigde Nasionale Party (Reunited National Party,fascist inspired) under the leadership of Daniel Francois Malan and J.F.van Rensburg and the Democrat United Party, leaded by J.C.Smuts more moderate and british friendly"
 	picture = "elections"
 	style = 1
 
@@ -32,58 +50,68 @@ event = {
 	}
 
 	date = { day = 0 month = january year = 1948 }
-	offset = 180
-	deathdate = { day = 30 month = december year = 1949 }
+	offset = 100
+	deathdate = { day = 30 month = december year = 1948 }
 
 	action = {
-		name = "The majority goes to the right! D.F.Malan is our new Head of Government"
+		name = "The Herenigde Nasionale Party (HNP) won the elections!"
 		ai_chance = 70
-		command = { type = dissent value = -6 }
+		
+		command = { type = dissent value = -5 }
+		
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = set_domestic which = political_left value = 3 }
-		command = { type = headofgovernment which = 425018 } # D. F. Malan
-		command = { type = foreignminister which = 425028 } # D. F. Malan
-		command = { type = armamentminister which = 425080 } # F.C. Erasmus
-		command = { type = ministerofsecurity which = 425046 } # T.E. D?nges
-		command = { type = ministerofintelligence which = 425057 } # Nicolaas Havenga
+		
+		command = { type = headofstate which = 425075 } #J.F.van Rensburg
+		command = { type = headofgovernment which = 425018 } #D.F.Malan
+		command = { type = foreignminister which = 425028 } #D.F.Malan
+		command = { type = armamentminister which = 425080 } #F.C.Erasmus
+		command = { type = ministerofsecurity which = 425046 } #T.E.Danges
+		command = { type = ministerofintelligence which = 425057 } #Nicolaas Havenga
+		
 	}
 	action = {
-		name = "The leftists win ! J.C.Smuts is our new Head of Government"
+		name = "The Democrat United Party (DUP) won the elections!"
 		ai_chance = 30
+	
 		command = { type = dissent value = -2 }
-		command = { type = set_domestic which = democratic value = 8 }
+		
+		command = { type = set_domestic which = democratic value = 5 }
 		command = { type = set_domestic which = political_left value = 5 }
-		command = { type = headofgovernment which = 425019 } # Jan C. Smuts
-		command = { type = foreignminister which = 425024 } # Jan C. Smuts
-		command = { type = armamentminister which = 425079 } # Jan C. Smuts
-		command = { type = ministerofsecurity which = 425081 } # H.G. Lawrence
-		command = { type = ministerofintelligence which = 425057 } # Nicolaas Havenga
+		
+		command = { type = headofstate which = 425012 } #Sir Patrick Duncan
+		command = { type = headofgovernment which = 425019 } #Jan C.Smuts
+		command = { type = foreignminister which = 425024 } #Jan C.Smuts
+		command = { type = armamentminister which = 425079 } #Jan C.Smuts
+		command = { type = ministerofsecurity which = 425081 } #H.G.Lawrence
+		command = { type = ministerofintelligence which = 425057 } #Nicolaas Havenga
 	}
 }
 
 #########################################################
-# Death of Smuts (if left win, coup)
+# Death of Smuts (if Democrat United Party win, coup)
 #########################################################
 event = {
 	id = 8012602
 	country = SAF
 
-	name = EVT_8012603_NAME
-	desc = EVT_8012603_DESC
+	name = "Bombing at the Congress"
+	desc = "A bomb exploding during the Democrat United Party Congress in Johannesburg"
 	picture = "news_paper"
 	style = 1
 
 	trigger = {
-		headofgovernment = 425019
+		headofgovernment = 425019 #Jan C. Smuts
 	}
 
-	date = { day = 0 month = january year = 1950 }
-	offset = 150
-	deathdate = { day = 30 month = december year = 1950 }
+	date = { day = 0 month = january year = 1949 }
+	offset = 50
+	deathdate = { day = 30 month = june year = 1950 }
 
 	action = {
-		name = "While walking through the streets of the capital's new prime minister was shot by a sniper, taking advantage of the situation D.F.Malan and his party take the control of parliament and of government"
+		name = "The bomb killing J.C.Smuts and the greatest exponents of the party"
 		ai_chance = 70
+		
 		command = { type = sleepminister which = 425005 } # Jan C. Smuts
 		command = { type = sleepminister which = 425006 } # Jan C. Smuts
 		command = { type = sleepminister which = 425008 } # Jan C. Smuts
@@ -92,40 +120,43 @@ event = {
 		command = { type = sleepminister which = 425079 } # Jan C. Smuts
 		command = { type = sleepminister which = 425096 } # Jan C. Smuts
 		command = { type = sleepminister which = 425115 } # Jan C. Smuts
+		command = { type = sleepminister which = 425081 } # H.G. Lawrence
+		command = { type = sleepminister which = 425012 } #Sir Patrick Duncan
+				
 		command = { type = sleepteam which = 425008 }
 		command = { type = sleepleader which = 425027 }
 		
 		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 3 }
 		
-		command = { type = headofgovernment which = 425018 } # D. F. Malan
 		command = { type = set_domestic which = democratic value = 3 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofgovernment which = 425018 } # D. F. Malan
-		command = { type = foreignminister which = 425028 } # D. F. Malan
-		command = { type = armamentminister which = 425080 } # F.C. Erasmus
-		command = { type = ministerofsecurity which = 425046 } # T.E. D?nges
+		command = { type = set_domestic which = political_left value = 3 }
+		
+		command = { type = headofstate which = 425075 } #J.F.van Rensburg		
+		command = { type = headofgovernment which = 425018 } # D.F.Malan
+		command = { type = foreignminister which = 425028 } # D.F.Malan
+		command = { type = armamentminister which = 425080 } # F.C.Erasmus
+		command = { type = ministerofsecurity which = 425046 } # T.E.Danges
 		command = { type = ministerofintelligence which = 425057 } # Nicolaas Havenga
 	}
 	action = {
-		name = "While walking through the streets of the capital's new prime minister was injured by a sniper, arrested the shooter is a man of D.F.Malan. Arrest him immediately"
+		name = "The bomb injuring J.C.Smuts and some members of the party."
 		ai_chance = 30
-		command = { type = sleepminister which = 425018 } # D. F. Malan
-		command = { type = sleepminister which = 425080 } # F.C. Erasmus
-		command = { type = sleepminister which = 425046 } # T.E. D?nges
-		command = { type = sleepminister which = 425057 } # Nicolaas Havenga
-
+		
+		command = { type = dissent value = 5 }
+		command = { type = belligerence value = 1 }
 	}
 }
 
 #########################################################
-# Apartheid - If Malan HoG
+# Order & Segregation
 #########################################################
 event = {
-	id = 8012603
+	id = 8012613
 	country = SAF
 
-	name = "Apartheid"
-	desc = "The main Afrikaner nationalist party, the Herenigde Nasionale Party (Reunited National Party) under the leadership of Protestant cleric Daniel Francois Malan, starts its policy of apartheid"
+	name = "Priority : restore order"
+	desc = "The new government has the priority to restore order in the country; for this reason the new elections are suspended and the parliament vote for given special powers to our new Head of Government D.F.Malan"
 	picture = "apartheid"
 	style = 1
 
@@ -136,46 +167,92 @@ event = {
 			ideology = fascist
 			ideology = nazi
 		}
-		headofgovernment = 425018 # D. F. Malan
+		OR = {
+			headofgovernment = 425018 # D. F. Malan
+			headofgovernment = 425076 # van Rensburg
+		}
+
 	}
 
-	date = { day = 1 month = january year = 1952 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1963 }
+	date = { day = 1 month = july year = 1950 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
-		name = "Shameful laws"
-		command = { type = dissent value = 10 }
-		command = { type = domestic which = democratic value = -1 }
-		command = { type = domestic which = freedom value = -4 }
+		name = "By force, if necessary"
+		command = { type = dissent value = -5 }
+		#command = { type = domestic which = democratic value = -1 }
+		#command = { type = domestic which = freedom value = -4 }
 	}
 
 }
 
 #########################################################
-# Republican Referendum of 1951
+# Apartheid - If Malan HoG
+#########################################################
+event = {
+	id = 8012603
+	country = SAF
+
+	name = "Apartheid"
+	desc = "The second step for a complete order restored is a policy of Apartheid"
+	picture = "apartheid"
+	style = 1
+
+	trigger = {
+		OR = {
+			ideology = social_conservative
+			ideology = paternal_autocrat
+			ideology = fascist
+			ideology = nazi
+		}
+				OR = {
+			headofgovernment = 425018 # D. F. Malan
+			headofgovernment = 425076 # van Rensburg
+		}
+	}
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 29 month = june year = 1951 }
+
+	action = {
+		name = "Shameful laws"
+		command = { type = dissent value = 10 }
+		#command = { type = domestic which = democratic value = -1 }
+		#command = { type = domestic which = freedom value = -4 }
+	}
+
+}
+
+#########################################################
+# Constitutional Referendum of 1951 - Republiek van Suid-Afrika
 #########################################################
 event = {
 	id = 8012604
 	country = SAF
 
-	name = "The Republica Referendum of 1951"
-	desc = "In 1951, the National Party government of South Africa held a referendum on whether the then Union of South Africa should abandon its status as a Commonwealth realm and become a republic. The Afrikaner-dominated right-wing National Party, which had come to power in 1948, was avowedly republican, and regarded South Africa's status as a Commonwealth realm as a relic of British imperialism"
+	name = "The Constitutional Referendum of 1951"
+	desc = "In 1951, the government of South Africa held a referendum on whether the then Union of South Africa should abandon its status as a Commonwealth member and become a complete independent republic.The South Africa's status as a Commonwealth realm is a relic of British imperialism"
 	picture = "south_african_referendum_1960"
 	style = 1
 	
 	trigger = {
+	OR = {
 		headofgovernment = 425018 # Malan
+		headofgovernment = 425076 # van Rensburg
+	}
 	}
 
-	date = { day = 1 month = january year = 1951 }
+	date = { day = 1 month = july year = 1951 }
 	offset = 50
 	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
-		name = "Become Republic of South Africa and leave allies" 
+		name = "Become Republiek van Suid-Afrika and leave commonwealth and allies" 
 		ai_chance = 75
-		command = { type = name where = SAF which = "Republic of Sud Afrika" }
+		command = { type = name where = SAF which = "Republiek van Suid-Afrika" }
+		command = { type = flag_ext where = SAF which = _suidafrika }
 		
 		command = { type = relation which = ENG value = -100 }
 		command = { type = relation which = USA value = -100 }
@@ -184,54 +261,57 @@ event = {
 		command = { type = relation which = NZL value = -100 }		
 				
 		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
-		#command = { type = peace which = GER value = 1 }
 		command = { type = end_access which = ENG }
 		
 		command = { type = relation which = GER value = 100 }
 		command = { type = relation which = ITA value = 100 }
 
-		command = { type = belligerence value = 1 }
+		command = { type = belligerence value = 5 }
 		command = { type = dissent value = 5 }
 		
-		command = { type = trigger which = 8012605 } 
-		command = { type = trigger which = 8012606 } 
+		command = { type = trigger which = 8012605 } #UK reactions
+		command = { type = trigger which = 8012606 } #GER reactions
 	}
 	
 	action = {
-		name = "Remain Union of South Africa"
+		name = "Remain Union of South Africa and rest in Commonwealth"
 		ai_chance = 25
+		
 		command = { type = relation which = ENG value = 50 }
+		
 		command = { type = dissent value = 1 }
+		command = { type = belligerence value = -1 }
+		
+		command = { type = trigger which = 8012614 } #New realtionship
 	}
 
 }
 
 #########################################################
-# Republican Referendum of 1951 - GER - UK Reactions
+# Constitutional Referendum of 1951 - GER - UK Reactions
 #########################################################
 event = {
         id = 8012605
         random = no
         country = GER
  
-        name = "German Reaction at the planning South African Referendum"
-        desc = "The South Africa is now a Republic ! Congrats !"
+        name = "German Reaction at the South African Constituional Referendum result"
+        desc = "The South Africa is now a Republic out from Commonwealth ! Congrats with the Afrikaaner !"
         style = 0
  
-		date = { day = 1 month = january year = 1951 }
-		offset = 5
-		deathdate = { day = 30 month = december year = 1952 }
- 
         action = {
-				ai_chance = 90
-                name = "Congrats !"				
+				ai_chance = 95
+                name = "Congrats with the Afrikaaner !"				
 				command = { type = relation which = SAF value = 50 }
-				
+				command = { type = embargo which = -1 where = SAF value = 0 } #remove embargo
         }	
         action = {
-				ai_chance = 10
+				ai_chance = 5
                 name = "They are so far away !"
-                command = { type = relation which = SAF value = -10 }
+                command = { type = relation which = SAF value = -25 }
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
         }			
 }
 event = {
@@ -239,19 +319,87 @@ event = {
         random = no
         country = ENG
  
-        name = "UK Reaction at the planning South African Referendum"
-        desc = "The South Africa is now a Republic !"
+        name = "UK Reaction at the South African Constituional Referendum results"
+        desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
         style = 0
- 
-		date = { day = 1 month = january year = 1951 }
-		offset = 5
-		deathdate = { day = 30 month = december year = 1952 }
  
         action= {
 				ai_chance = 100
-                name = "Damn !"				
-				command = { type = relation which = SAF value = -50 }
+                name = "Condamn the result and apply a trade and tech embargo, they have betrayed the Empire"				
+				command = { type = relation which = SAF value = -100 }
 				
+				command = { type = embargo which = -1 where = SAF value = 3 } #make embargo
+				
+				command = { type = end_access which = SAF }
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+event = {
+        id = 8012620
+        random = no
+        country = NZL
+ 
+        name = "NZL Reaction at the South African Constituional Referendum results"
+        desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
+        style = 0
+ 
+        action= {
+				ai_chance = 100
+                name = "Condamn the result and apply a trade and tech embargo, they have betrayed the Empire"				
+				command = { type = relation which = SAF value = -100 }
+				
+				command = { type = embargo which = -1 where = SAF value = 3 } # embargo
+				
+				command = { type = end_access which = SAF }
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+event = {
+        id = 8012621
+        random = no
+        country = AUS
+ 
+        name = "NZL Reaction at the South African Constituional Referendum results"
+        desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
+        style = 0
+ 
+        action= {
+				ai_chance = 100
+                name = "Condamn the result and apply a trade and tech embargo, they have betrayed the Empire"				
+				command = { type = relation which = SAF value = -100 }
+				
+				command = { type = embargo which = -1 where = SAF value = 3 } # embargo
+				
+				command = { type = end_access which = SAF }
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+event = {
+        id = 8012622
+        random = no
+        country = CAN
+ 
+        name = "NZL Reaction at the South African Constituional Referendum results"
+        desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
+        style = 0
+ 
+        action= {
+				ai_chance = 100
+                name = "Condamn the result and apply a trade and tech embargo, they have betrayed the Empire"				
+				command = { type = relation which = SAF value = -100 }
+				
+				command = { type = embargo which = -1 where = SAF value = 3 } # embargo
+				
+				command = { type = end_access which = SAF }
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
         }			
 }
 
@@ -260,7 +408,7 @@ event = {
 #########################################################
 # South Africa - Axis conference
 event = {
-	id = 8012607 # Invite state visit from South Africa
+	id = 8012607 #Invite the new South Africa Republican Government at Berlin
 	random = no
 	country = GER	
 	
@@ -271,7 +419,6 @@ event = {
 		year = 1952		
 	}
 	decision_trigger = { 
-
 		year = 1952	
 		relation = { which = SAF value = 150 }
 		NOT = {
@@ -280,8 +427,8 @@ event = {
 
 	}
 	
-	name = "Invite the new South Africa Republican Government at Berlin"
-	desc = "It's time to known this new South African Republican Government !"
+	name = "Invite the HoG of Republiek van Suid-Afrika at Berlin"
+	desc = "It's time to known this new Republiek van Suid-Afrika Head of Government !"
 	style = 2
 	picture = "congress"	
 	decision_picture = "decision_congress"
@@ -291,67 +438,77 @@ event = {
 	deathdate = { day = 30 month = december year = 1952 }
 
 	action = {
-		name = ACTION_NAME_YES
-		ai_chance = 75
+		name = "Invite our Afrikaaner camerades !"
+		ai_chance = 90
 		command = { type = trigger which = 8012608 }
-		command = { type = relation which = SAF value = 10 }
+		command = { type = relation which = SAF value = 25 }
 	}
 	action = {
-		name = ACTION_NAME_NO
-		ai_chance = 25
-		command = { type = relation which = SAF value = -10 }
+		name = "No, it's not necessary. They are too far from us"
+		ai_chance = 10
+		command = { type = relation which = SAF value = -25 }
+		command = { type = dissent value = 1 }
+		command = { type = belligerence value = 1 }		
 	}
 
 }
 #South Africa answer
 event = {
-	id = 8012608 #State visit to Berlin
+	id = 8012608 #State visit at Berlin
 	random = no
 	country = SAF	
 	
-	name = "Germany has invited us for a meeting in Berlin"
-	desc = "The Germans want to know our new government and make us some proposals"
+	name = "The Third Reich has invited our HoG for a meeting in Berlin"
+	desc = "The Germans want to know our new HoG and make us some proposals"
 	style = 2
 	picture = "congress"	
 
 	action = {
-		name = ACTION_NAME_YES
-		ai_chance = 75
+		name = "Yes, let's go !"
+		ai_chance = 90
 		command = { type = trigger which = 8012609 }
-		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = GER value = 25 }
+		command = { type = domestic which = interventionism value = 3 }
+		command = { type = dissent value = -1 }
+		command = { type = belligerence value = 1 }		
 	}
 	action = {
-		name = ACTION_NAME_NO
-		ai_chance = 25
-		command = { type = relation which = GER value = -10 }
+		name = "No, it's not necessary"
+		ai_chance = 10
+		command = { type = relation which = GER value = -25 }
+		command = { type = domestic which = interventionism value = -3 }
+		command = { type = dissent value = 3 }
 	}
 }
 event = {
-	id = 8012609 # Invite state visit from South Africa
+	id = 8012609 
 	random = no
 	country = GER	
 	
 	name = "What kind of relationship is possible with South Africa ?"
-	desc = "What kind of relationship is possible with South Africa ?"
+	desc = "We must decide our proposal"
 	style = 2
 	picture = "congress"	
 	decision_picture = "decision_congress"
 	
 
 	action = {
-		name = "Focus on a proposal of a full friendship" #Propose a full friendship (non-agression pact, military access)
+		name = "Focus on a proposal of a full friendship and cooperation (non-agression pact, military access, trade agreements)" #Propose a full friendship (non-agression pact, military access)
 		ai_chance = 45	
 		command = { type = trigger which = 8012610 } 
+		command = { type = belligerence value = 1 }
 	}
 	action = {
-		name = "Focus on a proposal of Axis alignement" #Invite to Axis
-		ai_chance = 45	
+		name = "Focus on a proposal for a complete Axis alignement" #Invite to Axis
+		ai_chance = 50	
 		command = { type = trigger which = 8012611 } 	
+		command = { type = belligerence value = 3 }		
 	}
 	action = {
-		name = "Bah ! South Africa is so far away !" #Not interesting
-		ai_chance = 10	
+		name = "Just a sincerly hand shake !" #Not interesting
+		ai_chance = 5	
 		command = { type = trigger which = 8012612 } 	
+		command = { type = dissent value = 5 }	
 	}
 }
 event = {
@@ -359,21 +516,25 @@ event = {
 	random = no
 	country = SAF	
 	
-	name = "A full friendship treaty with Germany ?"
-	desc = "The German invite us to subscribe a full friendship treaty .... what should we do ?"
+	name = "The Reich invite us to subscribe a full friendship and cooperation treaty"
+	desc = "What should we do ?"
 	style = 2
 	picture = "congress"	
 
 	action = {
 		name = "Accept"
-		ai_chance = 75
+		ai_chance = 85
 		command = { type = non_aggression which = GER where = SAF}
-		command = { type = relation which = GER value = 10 }
+		command = { type = access which = GER }	
+		command = { type = relation which = GER value = 25 }
+		command = { type = dissent value = -1 }
+		command = { type = belligerence value = 3 }		
 	}
 	action = {
-		name = "No, just a simpaty between our governments"
-		ai_chance = 25
-		command = { type = relation which = GER value = 5 }
+		name = "No, it's not in our interest at the moment"
+		ai_chance = 15
+		command = { type = relation which = GER value = -25 }
+		command = { type = dissent value = 3 }	
 	}
 }
 event = {
@@ -381,27 +542,33 @@ event = {
 	random = no
 	country = SAF	
 	
-	name = "Germany has proposed an advantageous offer to join his alliance"
-	desc = "Germany has proposed an advantageous offer to join his alliance : we will have a free hand in Africa"
+	name = "The Reich invite us to join a full title in the Axis : we will have a free hands in Africa"
+	desc = "What should we do ?"
 	style = 2
 	picture = "congress"	
 
 	action = {
-		name = "Hurrah ! Let's go to enter in the Axis !"
+		name = "Sure ! We must stay with our european camerades !"
+		ai_chance = 90
 		command = { type = alliance which = GER }
 		command = { type = relation which = GER value = 50 }
-		command = { type = non_aggression which = GER where = SAF }
 		command = { type = access which = GER }
+		command = { type = non_aggression which = GER where = SAF }
+		command = { type = dissent value = -3 }
+		command = { type = belligerence value = 5 }		
 	}
 	action = {
-		name = "No, we must remain isolated from the rest of the world"
-		ai_chance = 25
+		name = "No, it's too dangerous"
+		ai_chance = 10
 		command = { type = relation which = GER value = -50 }
 		command = { type = relation which = ENG value = 10 }
+		
+		command = { type = domestic which = interventionism value = -5 }
+		command = { type = dissent value = 3 }	
 	}
 }
 event = {
-	id = 8012612 # Meeting failure
+	id = 8012612 # Meeting failed
 	random = no
 	country = SAF	
 	
@@ -411,9 +578,162 @@ event = {
 	picture = "congress"	
 
 	action_a = {
-		name = "Damn German !"
+		name = "Damn German ! "
 		ai_chance = 30
-		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = domestic which = interventionism value = -3 }
+		command = { type = dissent value = 1 }	
 	}
 }
 
+#########################################################
+# Republican Referendum of 1951 - Union of South Africa
+#########################################################
+
+event = {
+	id = 8012614 #We rest in Commonwealth but it's time to review our relationship with UK
+	random = no
+	country = SAF	
+	
+	name = "The Government and the Constitutional Referendum's result"
+	desc = "The peoples of South Africa has decide to rest in commonwealth as Union of Sout Africa but the new national government had decided to review anyway our realtionship with the UK"
+	style = 2
+	picture = "congress"	
+
+	trigger = {
+		event = 8012604
+	}
+	
+	action = {
+		name = "Organize as soon as possible a meeting with UK in Pretoria"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+		command = { type = trigger which = 8012615 } 
+	}
+}
+event = {
+	id = 8012615 #We rest in Commonwealth but it's time to review our relationship with UK
+	random = no
+	country = SAF	
+	
+	name = "Meeting in Pretoria"
+	desc = "Meeting in Pretoria - The people's of South Africa has voted but we want anyway review our relationship. We have some claim. We want the United Kingdom and the commonwealt recognize the Government and our rightfully territorial claims (Bechuanaland, South Rodesia and Transvaal region)"
+	style = 2
+	picture = "congress"	
+
+	trigger = { 	
+		event = 8012614
+	}
+	
+	action = {
+		name = "We want become a powerfull South Africa"
+		ai_chance = 100
+		command = { type = trigger which = 8012616 } 	
+	}
+}
+event = {
+	id = 8012616 #Recognize the claim
+	random = no
+	country = ENG	
+	
+	name = "The South African have some claims"
+	desc = "The South Africa Government want a complete recognition of its legitimacy and they have also some territorial claims (Bechuanaland, South Rodesia and Transvaal region)"
+	style = 2
+	picture = "congress"	
+
+	trigger = {
+		event = 8012615
+	}
+	
+	action = {
+		name = "Ok, we need powerfull allies. We may accept the conditions."
+		ai_chance = 50
+		command = { type = relation which = SAF value = 100 }
+		command = { type = secedeprovince which = SAF value = 874 }
+		command = { type = secedeprovince which = SAF value = 877 }
+		command = { type = secedeprovince which = SAF value = 870 }
+		command = { type = secedeprovince which = SAF value = 871 }		
+		command = { type = secedeprovince which = SAF value = 869 }
+		command = { type = secedeprovince which = SAF value = 866 }		
+		command = { type = secedeprovince which = SAF value = 868 }	
+		command = { type = trigger which = 8012619 } 				
+	}
+	
+	action = {
+		name = "No, they cannot dictate conditions. They must respect the South African peoples vote."
+		ai_chance = 50
+		command = { type = relation which = SAF value = -100 }
+		command = { type = trigger which = 8012617 } 	
+	}
+}
+event = {
+	id = 8012617 #SAF out of commonwealth
+	random = no
+	country = ENG	
+	
+	name = "South Africa expelled from Commonwealth"
+	desc = "What should we do ?"
+	style = 2
+	picture = "congress"	
+
+	trigger = {
+		event = 8012616
+	}
+	
+	action = {
+		name = "From today, the South Africa is expelled from Commonwealth."
+		ai_chance = 100
+		command = { type = relation which = SAF value = -100 }
+		command = { type = embargo which = -1 where = SAF value = 3 } # embargo	
+	}
+}
+event = {
+	id = 8012618 #SAF out of commonwealth
+	random = no
+	country = SAF	
+	
+	name = "We were expelled from Commonwealth"
+	desc = "We were expelled from Commonwealth"
+	style = 2
+	picture = "congress"	
+
+	trigger = {
+		event = 8012617
+	}
+	
+	action = {
+		name = "Damn!"
+		ai_chance = 100
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = CAN value = -100 }
+		command = { type = relation which = NZL value = -100 }
+		command = { type = relation which = AUS value = -100 }
+		
+		command = { type = dissent value = 10 }			
+	}
+}
+event = {
+	id = 8012619 #Great South Africa
+	random = no
+	country = SAF	
+	
+	name = "The British accepted all our suggestions, we remain faithful allies"
+	desc = "The British accepted all our suggestions, we remain faithful allies"
+	style = 2
+	picture = "congress"	
+
+	trigger = {
+		event = 8012616
+	}
+	
+	action = {
+		name = "Hurra for the Empire, the Commonwealth and the Great Union of South Africa !"
+		ai_chance = 100
+		command = { type = name where = SAF which = "Great Union of South Africa" }
+		command = { type = relation which = ENG value = 100 }
+		command = { type = relation which = CAN value = 100 }
+		command = { type = relation which = NZL value = 100 }
+		command = { type = relation which = AUS value = 100 }
+		command = { type = dissent value = -10 }			
+	}
+}

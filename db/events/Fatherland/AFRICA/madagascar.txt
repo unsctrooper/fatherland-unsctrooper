@@ -13,7 +13,7 @@ event = {
 	}
 
 	date = { day = 0 month = january year = 1948 }
-	offset = 1080
+	offset = 500
 	deathdate = { day = 30 month = december year = 1951 }
 
 	action = {

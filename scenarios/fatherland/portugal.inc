@@ -58,8 +58,8 @@ country = {
 		relation = { tag = BEL value = -20 }
 		relation = { tag = BRA value = 75 }
 		relation = { tag = ENG value = 100 }
-		relation = { tag = SAF value = 50 access = yes }
-		relation = { tag = USA value = -25 access = yes }
+		relation = { tag = SAF value = 50 }
+		relation = { tag = USA value = -25 }
 	}
 	
 	dormant_ministers = { 20004 20019 20020 20021 20022 20023 20024 20025 20030 20031 20032 20011 20012 20005 20006 20037 20007 20008 20042 20009 20010 }
