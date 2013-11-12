@@ -105,3 +105,5 @@ event = "db\events\fatherland\middle_east\saudi_arabia.txt"
 event = "db\events\fatherland\middle_east\syria.txt"
 event = "db\events\fatherland\middle_east\united_arab_republic.txt"
 event = "db\events\fatherland\middle_east\yemen.txt"
+#FLAVOUR
+event = "db\events\fatherland\flavour.txt"

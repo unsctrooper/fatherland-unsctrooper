@@ -1,0 +1,1944 @@
+#Flavour events
+
+#  General Strikes in Morocco (U01)
+#  Anglo-Irish Trade Pact (ENG,IRE)
+#  Formation of the Arab High Committee in Palestine (ENG)
+#  Saudi-Iraqi Renew Treaty of Non-Aggression (IRQ,SAU,ENG)
+#  Turkish Request to Fortify the Straits (TUR)
+#  Reorganization of the Bank of Free France (U01)
+#  Iraqi-Syrian Treaty of Friendship (IRQ,SYR)
+#  Swiss Abandonment of the Gold Standard (SCH)
+#  Devaluation of the Swiss Franc (SCH)
+#  Dutch Abandonment of the Gold Standard (HOL)
+#  Devaluation of the French Franc (FRA)
+#  Turkish Rioting in Syria (TUR)
+#  Flanders Proclamation of Martial Law (WLL)
+#  Oslo Conference - Scandinavian's Day of Friendship (U45,SWE,DEN,FIN)
+#  Turkish Suppression of Communists (TUR)
+#  Mexican Expropriation Law (MEX,USA)
+#  Capture of Greek Resistance Leader by the Italians (ITA)
+#  New Vatican Encyclical against Communism (SOV)
+#  Portuguese Accept British Border Patrols (POR,ENG)
+#  Croatian State Visit to Italy (CRO,ITA)
+#  Muslim Insurrection in Southern Albania (ITA)
+#  Kurdish Insurrection in Syria (SYR)
+#  U.S.-Russian Trade Agreement (USA,SOV)
+#  Kurdish Assassination of Iraqi General (IRQ)
+#  Italian State Visit to Germany (ITA,GER)
+#  Assassination of British Commissioner for Galilee (ENG)
+#  British Arrest of Arab High Committee in Palestine (ENG)
+#  Palestinian Arab Leader Escape to Syria (ENG)
+#  Royal Rhodesia Commission (ENG)
+#  Mexican Nationalization of Petroleum (MEX,USA,ENG)
+#  Special Military Courts in Palestine (ENG)
+#  Arab-Jewish Fighting in Jerusalem (ENG)
+#  Unionist Victory in Northern Irish Elections (ENG)
+#  Mexican Court Decision on Oil Companies (MEX,USA)
+#  New British High Commissioner in Palestine (ENG)
+#  Anglo-Turkish Agreement (TUR,ENG)
+#  Terrorist Attacks in Palestine (ENG)
+#  Revolt in Crete (ITA)
+#  Italian-Bulgarian Agreement (ITA,BUL)
+#  Hungarian State Visit to Germany (HUN,GER)
+#  U.S.-Mexican Property Agreement (USA,MEX)
+#  Anglo-Canadian-U.S. Trade Agreement (ENG,USA,CAN)
+#  German Claim in Antarctica (GER)
+#  British Royal Visit to Canada (ENG,CAN)
+#  British Parliament Approval of Palestinian Plan (ENG)
+
+#########################################################################
+#  General Strikes in Morocco
+#########################################################################
+
+	event = {
+	id = 7776006 
+	random = no
+	country = U01
+	trigger = {
+			NOT = { war = { country = U01 } }
+			}
+	date = { day = 23 month = march year = 1948 }
+	offset = 1
+	deathdate = { day = 25 month = march year = 1948 }
+	
+	name = "General Strikes in Morocco"
+	desc = "In response to the French dissolution of the Nationalist Party and the proclamation of martial law, Nationalists launched a general strike. The economic gridlock forced the French to concede to nationalist demands."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We can't stand it anymore!"
+		ai_chance = 100
+		
+		command = { type = dissent which = 717 value = 1 } #Rabat
+		command = { type = dissent which = 718 value = 1 } #Casablanca
+						
+	}
+}
+
+#########################################################################
+#  Anglo-Irish Trade Pact
+#########################################################################
+
+	event = {
+	id = 7776010 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+	date = { day = 16 month = february year = 1949 }
+	offset = 1
+	deathdate = { day = 18 month = february year = 1949 }
+	
+	name = "Anglo-Irish Trade Pact"
+	desc = "After several years of a disastrous trade war, the British and Irish governments signed a trade pact which greatly reduced tariffs between the two countries. The Irish government finally agreed to pay the land annuities to British claimants, but Irish exporters regained access to their most lucrative market."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Why not?"
+		ai_chance = 100
+		command = { type = relation which = IRE value = 10 }
+		command = { type = money value = 100 }
+				
+	}
+}
+
+
+#########################################################################
+#  Anglo-Irish Trade Pact
+#########################################################################
+
+	event = {
+	id = 7776011 
+	random = no
+	country = IRE
+	trigger = {
+			NOT = { war = { country = IRE } }
+			}
+	date = { day = 16 month = february year = 1949 }
+	offset = 1
+	deathdate = { day = 18 month = february year = 1949 }
+	
+	name = "Anglo-Irish Trade Pact"
+	desc = "After several years of a disastrous trade war, the British and Irish governments signed a trade pact which greatly reduced tariffs between the two countries. The Irish government finally agreed to pay the land annuities to British claimants, but Irish exporters regained access to their most lucrative market."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Why not?"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+		command = { type = money value = 100 }
+				
+	}
+}
+
+#########################################################################
+#  Formation of the Arab High Committee in Palestine
+#########################################################################
+
+	event = {
+	id = 7776019 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+	date = { day = 31 month = march year = 1949 }
+	offset = 1
+	deathdate = { day = 02 month = april year = 1949 }
+	
+	name = "Formation of the Arab High Committee in Palestine"
+	desc = "To oppose Jewish claims in Palestine, the Arabs established the Arab High Commission. By this time, Arab demonstrations and riots had reached a critical level, resulting in an open war against the Jews. While four Arab leaders called for peace negotiations in August, the Arab High Commission instituted a general strike."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Please, calm down!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 }
+								
+	}
+}
+
+#########################################################################
+#  Saudi-Iraqi Renew Treaty of Non-Aggression
+#########################################################################
+
+	event = {
+	id = 7776025 
+	random = no
+	country = IRQ
+	trigger = {
+			NOT = { war = { country = IRQ } }
+			}
+	date = { day = 02 month = april year = 1950 }
+	offset = 1
+	deathdate = { day = 04 month = april year = 1950 }
+	
+	name = "Saudi-Iraqi Renew Treaty of Non-Aggression"
+	desc = "The Saudi Arabian and Iraqi governments signed a treaty of non-aggression and Arab brotherhood, which became the basis for a series of pacts between Arab states. All of the signatories were united in their stand on the future of Palestine. These agreements also promoted the concept of Pan-Arabism and discussions on the formation of an Arab federation."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Arab Brotherhood!"
+		ai_chance = 100
+		command = { type = relation which = SAU value = 30 }
+		command = { type = non_aggression which = IRQ where = SAU }									
+	}
+}
+#########################################################################
+#  Saudi-Iraqi Treaty of Non-Aggression
+#########################################################################
+
+	event = {
+	id = 7776026 
+	random = no
+	country = SAU
+	trigger = {
+			NOT = { war = { country = SAU } }
+			}
+	date = { day = 02 month = april year = 1950 }
+	offset = 1
+	deathdate = { day = 04 month = april year = 1950 }
+	
+	name = "Saudi-Iraqi Renew Treaty of Non-Aggression"
+	desc = "The Saudi Arabian and Iraqi governments signed a treaty of non-aggression and Arab brotherhood, which became the basis for a series of pacts between Arab states. All of the signatories were united in their stand on the future of Palestine. These agreements also promoted the concept of Pan-Arabism and discussions on the formation of an Arab federation."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Arab Brotherhood!"
+		ai_chance = 100
+		command = { type = relation which = IRQ value = 30 }
+		command = { type = non_aggression which = SAU where = IRQ }														
+	}
+}
+
+#########################################################################
+#  Saudi-Iraqi Treaty of Non-Aggression
+#########################################################################
+
+	event = {
+	id = 7776027 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+	date = { day = 04 month = april year = 1950 }
+	offset = 1
+	deathdate = { day = 06 month = april year = 1950 }
+	
+	name = "Saudi-Iraqi Renew Treaty of Non-Aggression"
+	desc = "The Saudi Arabian and Iraqi governments signed a treaty of non-aggression and Arab brotherhood, which became the basis for a series of pacts between Arab states. All of the signatories were united in their stand on the future of Palestine. These agreements also promoted the concept of Pan-Arabism and discussions on the formation of an Arab federation."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We should increase our presence in the region!"
+		ai_chance = 100
+		command = { type = relation which = SAU value = -25 }
+		command = { type = relation which = IRQ value = -25 }							
+	}
+}
+
+#########################################################################
+#  Turkish Fortify the Straits
+#########################################################################
+
+	event = {
+	id = 7776029 
+	random = no
+	country = TUR
+	trigger = {
+			NOT = { war = { country = TUR } }
+			}
+	date = { day = 10 month = april year = 1948 }
+	offset = 1
+	deathdate = { day = 12 month = april year = 1948 }
+	
+	name = "Turkish Fortify the Straits"
+	desc = "The Turkish government fortify the Straits."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We should intervene!"
+		ai_chance = 100
+		
+		command = { type = domestic which = interventionism value = 1 }
+		
+		command = { type = construct which = coastal_fort where = 409 value = 1 }
+		command = { type = construct which = land_fort where = 409 value = 1 }
+		command = { type = construct which = flak where = 409 value = 1 }	
+		
+		command = { type = construct which = coastal_fort where = 1076 value = 1 }
+		command = { type = construct which = land_fort where = 1076 value = 1 }
+		command = { type = construct which = flak where = 1076 value = 1 }
+	}
+}
+
+#########################################################################
+#  Reorganization of the Bank of Free France
+#########################################################################
+
+	event = {
+	id = 7776040 
+	random = no
+	country = U01
+	trigger = {
+			NOT = { war = { country = U01 } }
+			}
+	date = { day = 11 month = june year = 1949 }
+	offset = 1
+	deathdate = { day = 13 month = june year = 1949 }
+	
+	name = "Reorganization of the Bank of France"
+	desc = "It's time to reorganize the Bank of Free France"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "The Bank of France must be reorganized!"
+		ai_chance = 100
+		command = { type = money value = 150 }											
+	}
+}
+
+#########################################################################
+#  Iraqi-Syrian Treaty of Friendship
+#########################################################################
+
+	event = {
+	id = 7776058 
+	random = no
+	country = IRQ
+	trigger = {
+			NOT = { war = { country = IRQ } }
+			}
+	date = { day = 08 month = august year = 1951 }
+	offset = 1
+	deathdate = { day = 10 month = august year = 1951 }
+	
+	name = "Iraqi-Syrian Treaty of Friendship"
+	desc = "The Iraq and Syrian governments signed a treaty of friendship"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We are friends !"
+		ai_chance = 100
+		command = { type = relation which = SYR value = 30 }
+		command = { type = dissent value = -1 }												
+	}
+}
+
+#########################################################################
+#  Iraqi-Syrian Treaty of Friendship
+#########################################################################
+
+	event = {
+	id = 7776059 
+	random = no
+	country = SYR
+	trigger = {
+			NOT = { war = { country = IRQ } }
+			}
+	date = { day = 08 month = august year = 1951 }
+	offset = 1
+	deathdate = { day = 10 month = august year = 1951 }
+	
+	name = "Iraqi-Syrian Treaty of Friendship"
+	desc = "The Iraq and Syrian governments signed a treaty of friendship"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We are friends !"
+		ai_chance = 100
+		command = { type = relation which = IRQ value = 30 }
+		command = { type = dissent value = -1 }												
+	}
+}
+
+#########################################################################
+#  Swiss Abandonment of the Gold Standard
+#########################################################################
+
+	event = {
+	id = 7776062 
+	random = no
+	country = SCH
+	trigger = {
+			NOT = { war = { country = SCH } }
+			}
+	date = { day = 26 month = september year = 1951 }
+	offset = 1
+	deathdate = { day = 28 month = september year = 1951 }
+	
+	name = "Abandonment of the Gold Standard"
+	desc = "The Swiss government took the franc off the gold standard in an effort to further stimulate the Swiss economy."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Can we recover?"
+		ai_chance = 100
+		command = { type = industrial_modifier which = total value = 0.5 }
+		command = { type = dissent value = -1 }
+		command = { type = money value = 100 }
+													
+	}
+}
+
+
+#########################################################################
+#  Devaluation of the Swiss Franc
+#########################################################################
+
+	event = {
+	id = 7776063 
+	random = no
+	country = SCH
+	trigger = {
+			NOT = { war = { country = SCH } }
+			}
+	date = { day = 25 month = september year = 1952 }
+	offset = 1
+	deathdate = { day = 27 month = september year = 1952 }
+	
+	name = "Devaluation of the Swiss Franc"
+	desc = "In response to the French government's decision to devalue the French franc, the Swiss government took similar steps with the Swiss franc. The devaluation spurred the Swiss economy resulting in an economic revival."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Let's do it!"
+		ai_chance = 100
+		command = { type = industrial_modifier which = total value = 0.5 }
+		command = { type = dissent value = -2 }
+		command = { type = money value = 300 }
+													
+	}
+}
+
+
+#########################################################################
+#  Dutch Abandonment of the Gold Standard
+#########################################################################
+
+	event = {
+	id = 7776064 
+	random = no
+	country = HOL
+	trigger = {
+			NOT = { war = { country = HOL } }
+			}
+	date = { day = 26 month = september year = 1948 }
+	offset = 1
+	deathdate = { day = 28 month = september year = 1948 }
+	
+	name = "Dutch Abandonment of the Gold Standard"
+	desc = "The Dutch government took the guilder off the gold standard in an attempt to spur the Dutch economy."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Let's do it!"
+		ai_chance = 100
+		command = { type = industrial_modifier which = total value = 0.5 }
+		command = { type = dissent value = -2 }
+		command = { type = money value = 300 }
+													
+	}
+}
+
+#########################################################################
+#  Devaluation of the French Franc
+#########################################################################
+
+	event = {
+	id = 7776068 
+	random = no
+	country = FRA
+	trigger = {
+			NOT = { war = { country = FRA } }
+			}
+	date = { day = 01 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 03 month = october year = 1950 }
+	
+	name = "Devaluation of the French Franc"
+	desc = "Our government finally passed a bill which devalued the value of the franc, although the legislation did not fix the franc's new gold content. Since the implementation of the new social policies under the Popular Front, production costs greatly increased in France and prices rose steadily. Also, capital fled the republic which undermined the value of the franc. Only with the cooperation of the British and U.S. governments we were able to avert violent fluctuations in our foreign exchange transactions."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "What can we do?"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 15 }
+		command = { type = relation which = USA value = 15 }	
+		command = { type = industrial_modifier which = total value = -0.5 }
+		command = { type = dissent value = 3 }
+		command = { type = money value = -300 }
+				
+	}
+}
+
+
+#########################################################################
+#  Turkish Rioting in Syria
+#########################################################################
+
+	event = {
+	id = 7776070 
+	random = no
+	country = TUR
+	trigger = {
+			NOT = { war = { country = TUR } }
+			}
+	date = { day = 05 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 07 month = october year = 1950 }
+	
+	name = "Turkish Rioting in Syria"
+	desc = "The Turkish population in Alexandretta started riots of protestThe Turkish government aggravated the situation and talks began between the Turkish and Syrian governments to find a solution to Turkish minority problems."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must protect our people!"
+		ai_chance = 100
+		command = { type = relation which = SYR value = -15 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = dissent value = 1 }
+				
+	}
+}
+
+#########################################################################
+#  Wallonia Proclamation of Martial Law
+#########################################################################
+
+	event = {
+	id = 7776075 
+	random = no
+	country = WLL
+	trigger = {
+			NOT = { war = { country = WLL } }
+			}
+	date = { day = 21 month = october year = 1948 }
+	offset = 1
+	deathdate = { day = 23 month = october year = 1948 }
+	
+	name = "Wallonian Proclamation of Martial Law"
+	desc = "To deal with the excesses of the resistance, the Wallonian government proclaimed martial law and clamped down on the rebels."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We don' want Rebels here!"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = GER value = 20 }
+				
+	}
+}
+
+#########################################################################
+#  Oslo Conference - Scandinavian's Day of Friendship
+#########################################################################
+
+	event = {
+	id = 7776076 
+	random = no
+	country = SWE
+	trigger = {
+			NOT = { war = { country = SWE } }
+			}
+	date = { day = 26 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 28 month = october year = 1950 }
+	
+	name = "Oslo Conference - Scandinavian's Day of Friendship"
+	desc = "The leaders of the Scandinavian countries agreed to take steps to increase their security with approvation of Germany"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must increase our security!"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = DEN value = 15 }
+		command = { type = relation which = U45 value = 15 }
+		command = { type = relation which = FIN value = 15 }
+						
+	}
+}
+
+
+	event = {
+	id = 7776077 
+	random = no
+	country = DEN
+	trigger = {
+			NOT = { war = { country = SWE } }
+			}
+	date = { day = 26 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 28 month = october year = 1950 }
+	
+	name = "Oslo Conference - Scandinavian's Day of Friendship"
+	desc = "The leaders of the Scandinavian countries agreed to take steps to increase their security with approvation of Germany"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must increase our security!"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = SWE value = 15 }
+		command = { type = relation which = U45 value = 15 }
+		command = { type = relation which = FIN value = 15 }
+						
+	}
+}
+
+
+	event = {
+	id = 7776078 
+	random = no
+	country = U45
+	trigger = {
+			NOT = { war = { country = U45 } }
+			}
+	date = { day = 26 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 28 month = october year = 1950 }
+	
+	name = "Oslo Conference - Scandinavian's Day of Friendship"
+	desc = "The leaders of the Scandinavian countries agreed to take steps to increase their security with approvation of Germany"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must increase our security!"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = SWE value = 15 }
+		command = { type = relation which = DEN value = 15 }
+		command = { type = relation which = FIN value = 15 }
+						
+	}
+}
+
+	event = {
+	id = 7776079 
+	random = no
+	country = FIN
+	trigger = {
+			NOT = { war = { country = FIN } }
+			}
+	date = { day = 26 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 28 month = october year = 1950 }
+	
+	name = "Oslo Conference - Scandinavian's Day of Friendship"
+	desc = "The leaders of the Scandinavian countries agreed to take steps to increase their security with approvation of Germany"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must increase our security!"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = SWE value = 15 }
+		command = { type = relation which = DEN value = 15 }
+		command = { type = relation which = U45 value = 15 }
+						
+	}
+}
+
+#########################################################################
+#  Turkish Suppression of Communists
+#########################################################################
+
+	event = {
+	id = 7776082 
+	random = no
+	country = TUR
+	trigger = {
+			NOT = { war = { country = TUR } }
+			}
+	date = { day = 02 month = november year = 1951 }
+	offset = 1
+	deathdate = { day = 04 month = november year = 1951 }
+	
+	name = "Turkish Suppression of Communists"
+	desc = "The Turkish government took new steps to repress Communism in Turkey made the Communist Party illegal."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Communists - leave the country!"
+		ai_chance = 100
+		
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = GER value = 25 }
+								
+	}
+}
+
+#########################################################################
+#  Mexican Expropriation Law
+#########################################################################
+
+	event = {
+	id = 7776091 
+	random = no
+	country = MEX
+	trigger = {
+			NOT = { war = { country = MEX } }
+			}
+	date = { day = 22 month = november year = 1949 }
+	offset = 1
+	deathdate = { day = 24 month = november year = 1949 }
+	
+	name = "Expropriation Law"
+	desc = "The Mexican government passed a new expropriation law which authorized the state to seize private property when necessary for the public or social welfare. This law would lead to tensions between the U.S. and Mexican governments when Mexico began to expropriate the property of American and foreign corporations."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Seize private property when necessary!"
+		ai_chance = 100
+		command = { type = relation which = USA value = -20 }
+		
+		
+	}
+}
+
+	event = {
+	id = 7776092 
+	random = no
+	country = USA
+	trigger = {
+			NOT = { war = { country = USA } }
+			}
+	date = { day = 22 month = november year = 1949 }
+	offset = 1
+	deathdate = { day = 24 month = november year = 1949 }
+	
+	name = "Mexican Expropriation Law"
+	desc = "The Mexican government passed a new expropriation law which authorized the state to seize private property when necessary for the public or social welfare. This law would lead to tensions between the U.S. and Mexican governments when Mexico began to expropriate the property of American and foreign corporations."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Don't touch our property!"
+		ai_chance = 100
+		command = { type = relation which = MEX value = -20 }
+		
+		
+	}
+}
+
+#########################################################################
+#  Capture of Greek Resistance Leader by the Italians
+#########################################################################
+
+	event = {
+	id = 7776117 
+	random = no
+	country = ITA
+	trigger = {
+			year = 1937
+			}
+	date = { day = 20 month = february year = 1949 }
+	offset = 1
+	deathdate = { day = 22 month = february year = 1949 }
+	
+	name = "Capture of Greek Resistance Leader by the Italians"
+	desc = "The Italians captured the primary leader of the Greek resistance. The Greek leader was executed on February 24th."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We got him!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -1 }
+				
+		}
+}
+#########################################################################
+#  New Vatican Encyclical against Communism
+#########################################################################
+
+	event = {
+	id = 7776129 
+	random = no
+	country = SOV
+	trigger = {
+			NOT = { war = { country = SOV } }
+			}
+	date = { day = 18 month = march year = 1952 }
+	offset = 1
+	deathdate = { day = 20 month = march year = 1952 }
+	
+	name = "Vatican Encyclical against Communism"
+	desc = "A new papal encyclical, after that the 1937, aimed primarily at the Soviets and their campaign against religion."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "What?"
+		ai_chance = 100
+		command = { type = belligerence value = 1 }
+										
+		}
+	}
+	
+#########################################################################
+#  Portuguese Accept British Border Patrols
+#########################################################################
+
+	event = {
+	id = 7776130 
+	random = no
+	country = POR
+	trigger = {
+			NOT = { war = { country = POR } }
+			}
+	date = { day = 01 month = april year = 1948 }
+	offset = 1
+	deathdate = { day = 03 month = april year = 1948 }
+	
+	name = "Portuguese Accept British Border Patrols"
+	desc = "In an effort to cut off military supplies to the Axis, the British government finally persuaded the Portuguese government to permit the British to station patrols on the border with Spain. By this time, General Franco's forces began to receive military supplies through northern Spanish ports and Portugal was no longer a critical staging area. The British had to conduct a balanced approach towards Portugal since that country became strategically important to traffic between Britain and Africa."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "It doesn't matter anyway."
+		ai_chance = 100
+		
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = SPA value = -10 }
+								
+		}
+}
+
+
+	event = {
+	id = 7776131 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+	date = { day = 01 month = april year = 1948 }
+	offset = 1
+	deathdate = { day = 03 month = april year = 1948 }
+	
+	name = "Portuguese Accept British Border Patrols"
+	desc = "In an effort to cut off military supplies to the Nationalists, the British government finally persuaded the Portuguese government to permit the British to station patrols on the border with Spain. By this time, General Franco's forces began to receive military supplies through northern Spanish ports and Portugal was no longer a critical staging area. The British had to conduct a balanced approach towards Portugal since that country became strategically important to traffic between Britain and Africa."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "The war must stop!"
+		ai_chance = 100
+		
+		command = { type = relation which = POR value = 15 }
+		command = { type = relation which = SPA value = -10 }
+								
+		}
+}	
+
+#########################################################################
+#  Croatian State Visit to Italy
+#########################################################################
+
+	event = {
+	id = 7776135 
+	random = no
+	country = CRO
+	trigger = {
+			NOT = { war = { country = CRO } }
+			}
+	date = { day = 21 month = april year = 1949 }
+	offset = 1
+	deathdate = { day = 23 month = april year = 1949 }
+	
+	name = "Croatian State Visit to Italy"
+	desc = "It's time to increase our relationaship"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 }
+		command = { type = relation which = ITA value = 25 }
+		command = { type = relation which = GER value = -10 }
+								
+		}
+}
+
+	event = {
+	id = 7776136 
+	random = no
+	country = ITA
+	trigger = {
+			NOT = { war = { country = ITA } }
+			}
+	date = { day = 21 month = april year = 1949 }
+	offset = 1
+	deathdate = { day = 23 month = april year = 1949 }
+	
+	name = "Croatian State Visit to Italy"
+	desc = "It's time to increase our relationaship"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100
+		command = { type = relation which = CRO value = 25 }
+		command = { type = relation which = GER value = -10 }
+								
+		}
+}
+
+#########################################################################
+#  Muslim Insurrection in Southern Albania
+#########################################################################
+
+	event = {
+	id = 7776143 
+	random = no
+	country = ITA
+	trigger = {
+			NOT = { war = { country = ITA } }
+			}
+	date = { day = 14 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 16 month = may year = 1951 }
+	
+	name = "Muslim Insurrection in Southern Albania"
+	desc = "A Muslim insurrection broke out in southern Albania after the Italian government issued a decree prohibiting the veiling of women. The revolt reflected a larger protest movement which opposed King Zog's dictatorial rule."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Damn!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 }
+		command = { type = province_revoltrisk which = 362 value = 50 }
+		}
+}
+
+#########################################################################
+#  Kurdish Insurrection in Syria
+#########################################################################
+	event = {
+	id = 7776156 
+	random = no
+	country = SYR
+	trigger = {
+			NOT = { war = { country = SYR } }
+			}
+	date = { day = 02 month = july year = 1950 }
+	offset = 1
+	deathdate = { day = 04 month = july year = 1950 }
+	
+	name = "Kurdish Insurrection in Syria"
+	desc = "The Kurds in northeastern Syria mounted an insurrection, demanding autonomy and separate status."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Damn!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 } 
+		command = { type = revolt which = 1015 }											
+		}
+}
+#########################################################################
+#  U.S.-Russian Trade Agreement
+#########################################################################
+
+	event = {
+	id = 7776159 
+	random = no
+	country = USA
+	trigger = {
+			NOT = { war = { country = USA } }
+			}
+	date = { day = 05 month = august year = 1948 }
+	offset = 1
+	deathdate = { day = 07 month = august year = 1948 }
+	
+	name = "U.S.-Russian Trade Agreement"
+	desc = "The U.S. and Soviet governments signed an economic agreement designed to promote trade between the two countries."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must cooperate, despite...!"
+		ai_chance = 100
+		
+		command = { type = relation which = SOV value = 10 }
+																
+		}
+}
+
+event = {
+	id = 7776160 
+	random = no
+	country = SOV
+	trigger = {
+			NOT = { war = { country = SOV } }
+			}
+	date = { day = 05 month = august year = 1948 }
+	offset = 1
+	deathdate = { day = 07 month = august year = 1948 }
+	
+	name = "U.S.-Russian Trade Agreement"
+	desc = "The U.S. and Soviet governments signed an economic agreement designed to promote trade between the two countries."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We must cooperate, despite...!"
+		ai_chance = 100
+		
+		command = { type = relation which = USA value = 10 }
+																
+		}
+}
+
+#########################################################################
+#  Kurdish Assassination of Iraqi General
+#########################################################################
+
+	event = {
+	id = 7776161 
+	random = no
+	country = IRQ
+	trigger = {
+			NOT = { war = { country = IRQ } }
+			}
+	date = { day = 05 month = august year = 1950 }
+	offset = 1
+	deathdate = { day = 07 month = august year = 1950 }
+	
+	name = "Kurdish Assassination of Iraqi General"
+	desc = "A Kurd assassinated General Bakr Sidqi, a prominent Pan-Arab proponent and leader of the military coup in October 1936. The Iraqis formed a new Pan-Arab cabinet, which became an active defender of Palestinian Arabs and a major force behind Arab solidarity."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Damn!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 2 }
+		command = { type = revolt which = 1029 }	
+		command = { type = revolt which = 1036 }
+		}
+}
+
+#########################################################################
+#  Italian State Visit to Germany
+#########################################################################
+
+	event = {
+	id = 7776179 
+	random = no
+	country = ITA
+	trigger = {
+			NOT = { war = { country = ITA } }
+			}
+		
+	date = { day = 24 month = september year = 1948 }
+	offset = 1
+	deathdate = { day = 26 month = september year = 1948 }
+	
+	name = "Italian State Visit to Germany"
+	desc = "Premier conducted a state visit to Berlin where the German and Italian governments reaffirmed the goals of the Rome-Berlin Axis."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We should reaffirm the goals of the Rome-Berlin Axis!"
+		ai_chance = 100
+		
+		command = { type = relation which = GER value = 30 }
+						
+		}
+}
+	event = {
+	id = 7776178
+	random = no
+	country = GER
+	trigger = {
+			NOT = { war = { country = GER } }
+			}
+		
+	date = { day = 24 month = september year = 1948 }
+	offset = 1
+	deathdate = { day = 26 month = september year = 1948 }
+	
+	name = "Italian State Visit to Germany"
+	desc = "The German and Italian governments reaffirmed the goals of the Rome-Berlin Axis."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We should reaffirm the goals of the Rome-Berlin Axis!"
+		ai_chance = 100
+		
+		command = { type = relation which = ITA value = 30 }
+						
+		}
+}
+
+#########################################################################
+#  Assassination of British Commissioner for Galilee
+#########################################################################
+
+	event = {
+	id = 7776180 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 25 month = september year = 1948 }
+	offset = 1
+	deathdate = { day = 27 month = september year = 1948 }
+	
+	name = "Assassination of British Commissioner for Galilee"
+	desc = "Yelland Andrews, the British District Commissioner for Galilee, was murdered which represented the apex of the great Arab Insurrection in Palestine."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "That's worrying!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 } 
+								
+		}
+}
+
+#########################################################################
+#  British Arrest of Arab High Committee in Palestine
+#########################################################################
+
+	event = {
+	id = 7776182 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 01 month = october year = 1948 }
+	offset = 1
+	deathdate = { day = 03 month = october year = 1948 }
+	
+	name = "British Arrest of Arab High Committee in Palestine"
+	desc = "In response to the assassination of the British Commissioner for Galilee, the British government arrested the members of the Arab High Commission and deported most of them to the Seychelles. By expelling the Arab leadership, the British hoped to restore order in the mandate."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "This was unavoidable!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 } 
+								
+		}
+}
+
+#########################################################################
+#  Palestinian Arab Leader Escape to Syria
+#########################################################################
+
+	event = {
+	id = 7776195 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 15 month = october year = 1948 }
+	offset = 1
+	deathdate = { day = 17 month = october year = 1948 }
+	
+	name = "Palestinian Arab Leader Escape to Syria"
+	desc = "Haj Amin el Husseini, the Grand Mufti of Jerusalem and the most influential leader in the Arab Revolt, took refuge in a mosque when the British government cracked down on the leaders of the Arab High Commission. The mufti escaped capture and fled to Syria, where he set up headquarters to maintain the insurgency. As a result, the more radical members (terrorists) gained control over the movement and expanded the fighting."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Wanted dead or alive!"
+		ai_chance = 100
+		
+		command = { type = relation which = SYR value = -25 }
+		command = { type = revolt which = 1172 value = 10 } # Jerusalem
+						
+		}
+}
+
+#########################################################################
+#  Royal Rhodesia Commission
+#########################################################################
+
+	event = {
+	id = 7776198 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 04 month = november year = 1949 }
+	offset = 1
+	deathdate = { day = 06 month = november year = 1949 }
+	
+	name = "Royal Rhodesia Commission"
+	desc = "A royal commission visited Northern Rhodesia, Southern Rhodesia, and Nyasaland to investigate the possibility of establishing a closer political and economic union between the three colonies."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "A closer political and economic union!"
+		ai_chance = 100
+		
+		command = { type = construct which = infrastructure where = 863 value = 10 } # Lusaka
+		command = { type = construct which = infrastructure where = 859 value = 10 } # Livingstone
+		command = { type = construct which = infrastructure where = 862 value = 10 } # Chingola
+								
+		}
+}
+
+#########################################################################
+#  Mexican Nationalization of Petroleum
+#########################################################################
+
+	event = {
+	id = 7776199 
+	random = no
+	country = MEX
+	trigger = {
+			NOT = { war = { country = MEX } }
+			}
+		
+	date = { day = 31 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 02 month = november year = 1950 }
+	
+	name = "Mexican Nationalization of Petroleum"
+	desc = "The Cardenas government announced the nationalization of the sub-soil rights of the country, which included the nationalization of the petroleum holdings of the Standard Oil Company, a U.S. multinational corporation. This policy marked a new series of conflict with foreign governments, especially the United States and Britain. The Mexican federal labor board ordered American and British oil companies to increase worker wages by one-third, a demand the companies declared to be impossible."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Our workers deserve better wages!"
+		ai_chance = 100
+		
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = dissent value = -1 }
+								
+		}
+}
+
+event = {
+	id = 7776200 
+	random = no
+	country = USA
+	trigger = {
+			NOT = { war = { country = USA } }
+			}
+		
+	date = { day = 31 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 02 month = november year = 1950 }
+	
+	name = "Mexican Nationalization of Petroleum"
+	desc = "The Cardenas government announced the nationalization of the sub-soil rights of the country, which included the nationalization of the petroleum holdings of the Standard Oil Company, a U.S. multinational corporation. This policy marked a new series of conflict with foreign governments, especially the United States and Britain. The Mexican federal labor board ordered American and British oil companies to increase worker wages by one-third, a demand the companies declared to be impossible."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "That's outrageous!"
+		ai_chance = 100
+		
+		command = { type = relation which = MEX value = -20 }
+		command = { type = dissent value = 1 }
+								
+		}
+}
+
+event = {
+	id = 7776201 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 31 month = october year = 1950 }
+	offset = 1
+	deathdate = { day = 02 month = november year = 1950 }
+	
+	name = "Mexican Nationalization of Petroleum"
+	desc = "The Cardenas government announced the nationalization of the sub-soil rights of the country, which included the nationalization of the petroleum holdings of the Standard Oil Company, a U.S. multinational corporation. This policy marked a new series of conflict with foreign governments, especially the United States and Britain. The Mexican federal labor board ordered American and British oil companies to increase worker wages by one-third, a demand the companies declared to be impossible."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "That's outrageous!"
+		ai_chance = 100
+		
+		command = { type = relation which = MEX value = -20 }
+										
+		}
+}
+
+#########################################################################
+#  Special Military Courts in Palestine
+#########################################################################
+
+	event = {
+	id = 7776204 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 10 month = november year = 1948 }
+	offset = 1
+	deathdate = { day = 12 month = november year = 1948 }
+	
+	name = "Special Military Courts in Palestine"
+	desc = "In an effort to control terrorist attacks in Palestine, the British commissioner set up special military courts to try suspected terrorists. Anyone caught carrying firearms or bombs could be sentenced to death by these courts."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Order! Order!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -2 } 
+		
+		}
+}
+
+#########################################################################
+#  Arab-Jewish Fighting in Jerusalem
+#########################################################################
+
+	event = {
+	id = 7776206 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 13 month = november year = 1948 }
+	offset = 1
+	deathdate = { day = 15 month = november year = 1948 }
+	
+	name = "Arab-Jewish Fighting in Jerusalem"
+	desc = "Violence escalated in Palestine to the point of pitched battles in Jerusalem between Arab and Jewish forces. The British expanded their efforts to restore security in the Palestine mandate."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Not again!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 } 
+								
+		}
+}
+
+#########################################################################
+#  Unionist Victory in Northern Irish Elections
+#########################################################################
+
+	event = {
+	id = 7776233 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 06 month = february year = 1950 }
+	offset = 1
+	deathdate = { day = 08 month = february year = 1950 }
+	
+	name = "Unionist Victory in Northern Irish Elections"
+	desc = "The Unionists won an overwhelming victory in elections in Northern Ireland. Their success ended any hopes of a merger between Northern Ireland and the Irish Free State."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Great!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -2 }
+		command = { type = relation which = IRE value = -5 }
+						
+		}
+}
+
+#########################################################################
+#  Mexican Court Decision on Oil Companies
+#########################################################################
+
+	event = {
+	id = 7776237 
+	random = no
+	country = MEX
+	trigger = {
+			NOT = { war = { country = MEX } }
+			}
+		
+	date = { day = 28 month = february year = 1951 }
+	offset = 1
+	deathdate = { day = 01 month = march year = 1951 }
+	
+	name = "Mexican Court Decision on Oil Companies"
+	desc = "The Mexican courts supported the government decision which required oil companies to increase wages for workers. This decision affected 17 foreign oil companies operating in Mexico and continued to fuel tensions between the U.S. and Mexico."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Increase the wages!"
+		ai_chance = 100
+		
+		command = { type = oilpool value = 500 }
+		command = { type = relation which = USA value = -5 }
+						
+		}
+}
+
+event = {
+	id = 7776238 
+	random = no
+	country = USA
+	trigger = {
+			NOT = { war = { country = USA } }
+			}
+		
+	date = { day = 28 month = february year = 1951 }
+	offset = 1
+	deathdate = { day = 01 month = march year = 1951 }
+	
+	name = "Mexican Court Decision on Oil Companies"
+	desc = "The Mexican courts supported the government decision which required oil companies to increase wages for workers. This decision affected 17 foreign oil companies operating in Mexico and continued to fuel tensions between the U.S. and Mexico."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Shameful!"
+		ai_chance = 100
+		
+		command = { type = oilpool value = -500 }
+		command = { type = relation which = MEX value = -10 }
+						
+		}
+}
+
+#########################################################################
+#  New British High Commissioner in Palestine
+#########################################################################
+
+	event = {
+	id = 7776239 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 02 month = march year = 1949 }
+	offset = 1
+	deathdate = { day = 04 month = march year = 1949 }
+	
+	name = "New British High Commissioner in Palestine"
+	desc = "Sir Harold MacMichael arrived in Palestine and replaced Sir Arthur Wauchope as the High Commissioner for Palestine. Sir Harold represented a more draconian occupation as the British increased the number of troops in the mandate to 30,000 in an effort to repress continuing political disorder."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Order!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -1 } 
+		command = { type = relation which = SAU value = -10 }
+		command = { type = relation which = PER value = -5 }
+		command = { type = relation which = EGY value = -10 }
+						
+		}
+}
+
+#########################################################################
+#  Anglo-Turkish Agreement
+#########################################################################
+
+	event = {
+	id = 7776277 
+	random = no
+	country = TUR
+	trigger = {
+			NOT = { war = { country = TUR } }
+			}
+		
+	date = { day = 16 month = may year = 1950 }
+	offset = 1
+	deathdate = { day = 18 month = may year = 1950 }
+	
+	name = "Anglo-Turkish Agreement"
+	desc = "The British and Turkish governments signed an agreement to promote stability in the eastern Mediterranean."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Stability in the eastern Mediterranean!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -1 }
+		command = { type = relation which = ENG value = 20 }
+														
+		}
+}
+
+event = {
+	id = 7776278 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			}
+		
+	date = { day = 16 month = may year = 1950 }
+	offset = 1
+	deathdate = { day = 18 month = may year = 1950 }
+	
+	name = "Anglo-Turkish Agreement"
+	desc = "The British and Turkish governments signed an agreement to promote stability in the eastern Mediterranean."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Stability in the eastern Mediterranean!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -1 }
+		command = { type = relation which = TUR value = 20 }
+														
+		}
+}
+
+#########################################################################
+#  Terrorist Attacks in Palestine
+#########################################################################
+
+	event = {
+	id = 7776287 
+	random = no
+	country = ENG
+	trigger = {
+			NOT = { war = { country = ENG } }
+			
+			}
+		
+	date = { day = 02 month = july year = 1949 }
+	offset = 1
+	deathdate = { day = 04 month = july year = 1949 }
+	
+	name = "Terrorist Attacks in Palestine"
+	desc = "During the summer of 1949, terrorist groups conducted a series of attacks in Palestine, which included major bombings in the Jerusalem, Haifa, and the Jaffa Arab markets. These attacks reflected an undeclared state of war between the Arabs and the Jews."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Not again!"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 } 
+				
+		}
+}
+
+#########################################################################
+#  Revolt in Crete
+#########################################################################
+
+	event = {
+	id = 7776297 
+	random = no
+	country = ITA
+	trigger = {
+			exists = ITA
+			}
+		
+	date = { day = 28 month = july year = 1950 }
+	offset = 1
+	deathdate = { day = 30 month = july year = 1950 }
+	
+	name = "Revolt in Crete"
+	desc = "Political dissatisfaction led to a revolt on the island of Crete. The Italian government took immediate access to suppress the rebellion."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Revolt?"
+		ai_chance = 100
+		
+		command = { type = dissent value = 1 }					
+		}
+}
+#########################################################################
+#  Greco-Bulgarian Agreement
+#########################################################################
+
+	event = {
+	id = 7776298 
+	random = no
+	country = ITA
+	trigger = {
+			exists = ITA
+			}
+		
+	date = { day = 29 month = july year = 1951 }
+	offset = 1
+	deathdate = { day = 31 month = july year = 1951 }
+	
+	name = "Italian-Bulgarian Agreement"
+	desc = "The Bulgarian and Italian governments signed an economic and friendshipo agreement"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "It's a good agreement!"
+		ai_chance = 100
+		
+		command = { type = relation which = ITA value = 20 }
+		command = { type = dissent value = -1 }					
+		}
+}
+
+event = {
+	id = 7776299 
+	random = no
+	country = BUL
+	trigger = {
+			exists = BUL
+			}
+		
+	date = { day = 29 month = july year = 1938 }
+	offset = 1
+	deathdate = { day = 31 month = july year = 1938 }
+	
+	name = "Italian-Bulgarian Agreement"
+	desc = "The Bulgarian and Italian governments signed an economic and friendshipo agreement"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "It's a good agreement!"
+		ai_chance = 100
+		
+		command = { type = relation which = BUL value = 20 }
+		command = { type = dissent value = -2 }				
+		}
+}
+
+#########################################################################
+#  Hungarian State Visit to Germany
+#########################################################################
+
+	event = {
+	id = 7776300 
+	random = no
+	country = HUN
+	trigger = {
+			exists = HUN
+			}
+		
+	date = { day = 01 month = august year = 1952 }
+	offset = 1
+	deathdate = { day = 03 month = august year = 1952 }
+	
+	name = "Hungarian State Visit to Germany"
+	desc = "The Hungarian conducted a state visit to Germany, where he was received by the German government with great ceremony."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "What a ceremony!"
+		ai_chance = 100
+		
+		command = { type = relation which = GER value = 20 }
+		command = { type = dissent value = -1 }					
+		}
+}
+
+
+	event = {
+	id = 7776301 
+	random = no
+	country = GER
+	trigger = {
+			exists = GER
+			}
+		
+	date = { day = 01 month = august year = 1952 }
+	offset = 1
+	deathdate = { day = 03 month = august year = 1952 }
+	
+	name = "Hungarian State Visit to Germany"
+	desc = "The Hungarian conducted a state visit to Germany, where he was received by the German government with great ceremony."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Welcome!"
+		ai_chance = 100
+		
+		command = { type = relation which = HUN value = 20 }
+		command = { type = dissent value = -1 }					
+		}
+}
+
+#########################################################################
+#  U.S.-Mexican Property Agreement
+#########################################################################
+
+event = {
+	id = 7776369 
+	random = no
+	country = USA
+	trigger = {
+		exists = USA
+						
+			}
+		
+	date = { day = 11 month = november year = 1951 }
+	offset = 1
+	deathdate = { day = 13 month = november year = 1951 }
+	
+	name = "U.S.-Mexican Property Agreement"
+	desc = "After serious tensions after the Mexican government expropriated the property of American oil companies operating in Mexico, the U.S. and Mexican governments signed an agreement on the land question issue. Under this plan, commissioners would appraise the value of the properties and the Mexican government would pay compensation to the American oil companies at a rate of $1 million per annum until the claims were liquidated. The two governments, could not reach an agreement to settle the oil issue."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Agreement!"
+		ai_chance = 100
+				
+		command = { type = relation which = MEX value = 20 } 
+		command = { type = money  value = 500 } 
+																			
+	}
+}	
+
+
+event = {
+	id = 7776370 
+	random = no
+	country = MEX
+	trigger = {
+		exists = MEX
+						
+			}
+		
+	date = { day = 11 month = november year = 1951 }
+	offset = 1
+	deathdate = { day = 13 month = november year = 1951 }
+	
+	name = "U.S.-Mexican Property Agreement"
+	desc = "After serious tensions after the Mexican government expropriated the property of American oil companies operating in Mexico, the U.S. and Mexican governments signed an agreement on the land question issue. Under this plan, commissioners would appraise the value of the properties and the Mexican government would pay compensation to the American oil companies at a rate of $1 million per annum until the claims were liquidated. The two governments, could not reach an agreement to settle the oil issue."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Agreement!"
+		ai_chance = 100
+				
+		command = { type = relation which = USA value = 20 } 
+		command = { type = money  value = -100 } 
+																			
+	}
+}	
+
+#########################################################################
+#  Anglo-Canadian-U.S. Trade Agreement
+#########################################################################
+
+event = {
+	id = 7776373 
+	random = no
+	country = ENG
+	trigger = {
+		exists = ENG
+						
+			}
+		
+	date = { day = 16 month = november year = 1952 }
+	offset = 1
+	deathdate = { day = 18 month = november year = 1952 }
+	
+	name = "Anglo-Canadian-U.S. Trade Agreement"
+	desc = "The British, Canadian, and American governments signed a major trade agreement, which the three countries had negotiated for a considerable period of time. Each state agreed to considerable trade concessions, a position which marked growing cooperation between the English-speaking countries."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Trade Agreement!"
+		ai_chance = 100
+				
+		command = { type = relation which = USA value = 15 } 
+		command = { type = relation which = CAN value = 15 } 
+		command = { type = dissent  value = -1 } 
+		command = { type = supplies value = 1000 } 
+																			
+	}
+}	
+
+
+event = {
+	id = 7776374 
+	random = no
+	country = USA
+	trigger = {
+		exists = USA
+						
+			}
+		
+	date = { day = 16 month = november year = 1952 }
+	offset = 1
+	deathdate = { day = 18 month = november year = 1952 }
+	
+	name = "Anglo-Canadian-U.S. Trade Agreement"
+	desc = "The British, Canadian, and American governments signed a major trade agreement, which the three countries had negotiated for a considerable period of time. Each state agreed to considerable trade concessions, a position which marked growing cooperation between the English-speaking countries."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Trade Agreement!"
+		ai_chance = 100
+				
+		command = { type = relation which = ENG value = 15 } 
+		command = { type = relation which = CAN value = 15 } 
+		command = { type = dissent  value = -1 } 
+		command = { type = supplies value = 1000 } 
+																			
+	}
+}	
+
+
+event = {
+	id = 7776375 
+	random = no
+	country = CAN
+	trigger = {
+		exists = CAN
+						
+			}
+		
+	date = { day = 16 month = november year = 1952 }
+	offset = 1
+	deathdate = { day = 18 month = november year = 1952 }
+	
+	name = "Anglo-Canadian-U.S. Trade Agreement"
+	desc = "The British, Canadian, and American governments signed a major trade agreement, which the three countries had negotiated for a considerable period of time. Each state agreed to considerable trade concessions, a position which marked growing cooperation between the English-speaking countries."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Trade Agreement!"
+		ai_chance = 100
+				
+		command = { type = relation which = ENG value = 15 } 
+		command = { type = supplies value = 1000 } 
+		command = { type = relation which = USA value = 15 } 
+		command = { type = dissent  value = -1 } 
+																			
+	}
+}	
+
+#########################################################################
+#  German Claim in Antarctica
+#########################################################################
+
+event = {
+	id = 7776407
+	random = no
+	country = GER
+	trigger = {
+		exists = GER
+						
+			}
+		
+	date = { day = 18 month = january year = 1951 }
+	offset = 1
+	deathdate = { day = 20 month = january year = 1951 }
+	
+	name = "German Claim in Antarctica"
+	desc = "The German government laid claim to one million square miles of Antarctic territory from 20 degrees West Longitude to 45 degrees East Longitude, the region between Coats Land and Enderby Land. This claim represented 20 percent of the entire Antarctic coast."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "The land is ours!"
+		ai_chance = 100
+				
+		command = { type = belligerence value = 1 }	
+																																	
+	}
+}	
+
+####################################################################
+#  British Royal Visit to Canada
+#########################################################################
+
+event = {
+	id = 7776464
+	random = no
+	country = ENG
+	trigger = {
+		   exists = CAN 
+		    }
+		
+	date = { day = 16 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 18 month = may year = 1951 }
+	
+	name = "British Royal Visit to Canada"
+	desc = "King George VI and Queen Elizabeth arrived in Canada to begin an official state visit to the dominion. This was the first time a British monarch visited Canada and the Canadian welcome reinforced Anglo-Canadian ties."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Let's visit Canada"
+		ai_chance = 100
+				
+		
+		command = { type = relation which = CAN value = 20 }
+																								
+	}
+}	
+
+
+event = {
+	id = 7776465
+	random = no
+	country = CAN
+	trigger = {
+		   exists = ENG 
+		    }
+		
+	date = { day = 16 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 18 month = may year = 1951 }
+	
+	name = "British Royal Visit to Canada"
+	desc = "King George VI and Queen Elizabeth arrived in Canada to begin an official state visit to the dominion. This was the first time a British monarch visited Canada and the Canadian welcome reinforced Anglo-Canadian ties."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Welcome!"
+		ai_chance = 100
+				
+		
+		command = { type = relation which = ENG value = 20 }
+																								
+	}
+}	
+
+####################################################################
+#  British Parliament Approval of Palestinian Plan
+#########################################################################
+
+event = {
+	id = 7776470
+	random = no
+	country = ENG
+	trigger = {
+		   exists = ITA 
+		    }
+		
+	date = { day = 22 month = may year = 1952 }
+	offset = 1
+	deathdate = { day = 24 month = may year = 1952 }
+	
+	name = "British Parliament Approval of Palestinian Plan"
+	desc = "The British Parliament approved the new Palestinian plan, announced on May 17th, by a narrow majority (89 votes). Jews around the world denounced the plan since it made Palestine a 'territorial ghetto.' The Palestinian Arabs also rejected the scheme and clashes broke out across the mandate."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We hope they'll accept it!"
+		ai_chance = 100
+				
+		
+		command = { type = revolt which = 1172 value = 5 } # Jerusalem
+																								
+	}
+}	
