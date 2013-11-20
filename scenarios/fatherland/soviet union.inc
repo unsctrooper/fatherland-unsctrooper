@@ -1,6 +1,6 @@
     ##############################
     # Country definition for SOV #
-	# Review by Pako #
+	# Review by Pako & T.C       #
     ##############################
      
     #####################
@@ -94,14 +94,14 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 						  700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 1069 1070        
 						  1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 
 						  1138 1139 1140 1141 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 1152 1153 1154 1155 1156 1157 1158 1161 1162 1163 
-						  1164 1165 1166 1167 1168 1169 1170 1171 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1185 1186 1187 1188 1189 
-						  1190 1191 1192 1193 1194 1195 1196 1541 1542 
+						  1164 1165 1166 1167      1177 1178 1179 1180 1181 1182 1183 1184   
+						       1541 1542 
                         }						 
-   ownedprovinces = {  1191 1193 1192 1196 1195 1190 1187 1188 1175 1174 1541 1189 1176 1180 1181 1182 1183 1184 1194 1179 1178 1168 1177 1169 
-					   1164 1163 1162 1167  1166 1186 1165 1150 1154 1153 1152 1145 1146 1147 1158 1156 1157 1144 1143 1129 1142 
+   ownedprovinces = {  1541 1180 1181 1182 1183 1184 1179 1178 1177 
+					   1164 1163 1162 1167  1166 1165 1150 1154 1153 1152 1145 1146 1147 1158 1156 1157 1144 1143 1129 1142 
 					   1140 1148 685 1155 544 546 545 1138 1139  1136 1135 1151 1130 1137  1132  1133 689 688 542  
-                       686 681 543  547 666  1134 706 667 684 680 676  548 660 1185 1149 1141   
-					   1126 1127 1128 1069 1070 1161 1170 1171                
+                       686 681 543  547 666  1134 706 667 684 680 676  548 660  1149 1141   
+					   1126 1127 1128 1069 1070 1161                  
 		   
 						#Idel-Ural 
 						672 664 #Tatarstan 
@@ -130,44 +130,37 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 						1119 # Tannu Tuva
 					}  
 
-   controlledprovinces    = {  1191  1193 1192 1196 1195 1190 1187 1188 1175 1174 1541 1189 1176 1180     1181 1182 1183 1184  
-                              1194 1179 1178 1168 1177 1169 1164 1163 1162 1167  1166 1186     1165 1150 1154    1153 
-                              1152 1145 1146 1147 1158 1156    1157 1144 1143 1129 1142 1140 1148 685 1155 544 546   545  
-                                       1138 1139  1136 1135           
-                                 1151 1130 1137  1132  1133            689 688 542  
-                              686 681 543  547                      
-                                       666  1134     706       667     
-                              684                             680      676  548      
-                                                    660                                     1185   
-                                 1149 1141   
-                   
-         1126 1127 1128 1069 1070 1161 1170 1171  
+   controlledprovinces    = { 1541 1180 1181 1182 1183 1184 1179 1178 1177 
+					   1164 1163 1162 1167  1166 1165 1150 1154 1153 1152 1145 1146 1147 1158 1156 1157 1144 1143 1129 1142 
+					   1140 1148 685 1155 544 546 545 1138 1139  1136 1135 1151 1130 1137  1132  1133 689 688 542  
+                       686 681 543  547 666  1134 706 667 684 680 676  548 660  1149 1141   
+					   1126 1127 1128 1069 1070 1161                  
 		   
-#Idel-Ural
-672 664 #Tatarstan 
-690 1131 # Bashkortostan 
-671 #Udmurt Republic
-673 # Mari El
-687 # Perm Krai
+						#Idel-Ural 
+						672 664 #Tatarstan 
+						690 1131 # Bashkortostan 
+						671 #Udmurt Republic
+						673 # Mari El
+						687 # Perm Krai
 
-#Central Asia
-#Kazakhstan
-506 507 505 500 498 504 1114 1117 1118 1116 503 1110 1108 1113 1115 1111 502 499 1109 1112 501 
-#Turkmenistan
-1097 1098   
-#KYG
-1107 1106  
-#UZB
-1101 1102 1100 1103 1099
-#TAD
-1105 1104 	           
+						#Central Asia
+						#Kazakhstan
+						506 507 505 500 498 504 1114 1117 1118 1116 503 1110 1108 1113 1115 1111 502 499 1109 1112 501 
+						#Turkmenistan
+						1097 1098   
+						#KYG
+						1107 1106  
+						#UZB
+						1101 1102 1100 1103 1099
+						#TAD
+						1105 1104 	 
 
-1542 #South Sahalin
-1543 # Kurils
+						1542 #South Sahalin
+						1543 # Kurils
 
-1119 # Tannu Tuva
+						#1280 # Occupied East Turkestan
 
-#1280 # Occupied East Turkestan
+						1119 # Tannu Tuva
      }
    claimedprovinces    = { 
 
@@ -950,18 +943,6 @@ inventions = { 3000027 }
       }
  }
    landunit = 
-   {  id       = {  type = 10848 id =  245 } 
-     name     = "Zabaikalskyi Voennyi Okrug" 
-     location = 1169
-     Division = 
-     {  id       = {  type = 10848 id = 246  } 
-       name     = "114-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
- }
-   landunit = 
    {  id       = {  type = 10848 id =  239 } 
      name     = "12-i Strelkovyi Korpus" 
      location = 1167
@@ -1101,185 +1082,6 @@ inventions = { 3000027 }
 	   }
  }
    landunit = 
-   {  id       = {  type = 10848 id =  296 } 
-     name     = "Dalnevostochnyi Front" 
-     location = 1191
-     Division = 
-     {  id       = {  type = 10848 id = 297  } 
-       name     = "Dalnevostochnyi Front" 
-       strength = 80 
-       type     = HQ
-	   model    = 4
-	   extra    = anti_air
-	   brigade_model = 0
-	   }
-     Division = 
-     {  id       = {  type = 10848 id = 298  } 
-       name     = "35-ya Sibirskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 299  } 
-       name     = "66-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 300  } 
-       name     = "78-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
- }
-   landunit = 
-   {  id       = {  type = 10848 id =  301 } 
-     name     = "Dalnevostochnyi Front" 
-     location = 1191
-     Division = 
-     {  id       = {  type = 10848 id = 302  } 
-       name     = "79-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 303  } 
-       name     = "101-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = bergsjaeger 
-	   model    = 9
-      }
- }
-   landunit = 
-   {  id       = {  type = 10848 id =  304 } 
-     name     = "1-ya Armiya" 
-     location = 1196
-     Division = 
-     {  id       = {  type = 10848 id = 305  } 
-       name     = "26-ya Zlatoustovskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 306  } 
-       name     = "21-ya Permskaya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-	   extra    = artillery
-	   brigade_model = 8
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 307  } 
-       name     = "22-ya Krasnodarskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 308  } 
-       name     = "39-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 309  } 
-       name     = "59-ya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 9
-	   extra    = artillery
-	   brigade_model = 8
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 312  } 
-       name     = "8-ya Dalnevostochnaya Kavaleriiskaya Diviziya" 
-       strength = 60 
-       type     = cavalry
-	   model    = 11
-	extra = light_armor_brigade
-	brigade_model = 3
-      }
- }
-   landunit = 
-   {  id       = {  type = 10848 id =  1541 } 
-     name     = "30-i Mekhanizirovannyi Korpus" 
-     location = 1196
-      Division = 
-     {  id       = {  type = 10848 id = 1542  } 
-       name     = "58-ya Tankovaya Diviziya" 
-       strength = 65 
-       type     = light_armor
-	   model    = 1
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1543  } 
-       name     = "69-ya Tankovaya Diviziya" 
-       strength = 65 
-       type     = light_armor
-	   model    = 1 
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1544  } 
-       name     = "239-ya Motostrelkovaya Diviziya" 
-       strength = 80 
-       type     = motorized
-	   model    = 1
-       extra    = medium_armor
-       brigade_model = 1 
-      }
- }
-   landunit = 
-   {  id       = {  type = 10848 id =  313 } 
-     name     = "2-ya Armiya" 
-     location = 1175
-     Division = 
-     {  id       = {  type = 10848 id = 314  } 
-       name     = "12-ya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-	   extra    = artillery
-	   brigade_model = 8
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 315  } 
-       name     = "3-ya Tihookeanskaya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-	   extra    = artillery
-	   brigade_model = 8
-      }
- }
-   landunit = 
-   {  id       = {  type = 10848 id = 1545  } 
-     name     = "18-i Sibirskyi Korpus" 
-     location = 1168
-      Division = 
-     {  id       = {  type = 10848 id = 1546  } 
-       name     = "59-ya Tankovaya Diviziya" 
-       strength = 40 
-       type     = light_armor
-	   model    = 0 
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1547  } 
-       name     = "69-ya Motostrelkovaya Diviziya" 
-       strength = 80 
-       type     = motorized
-	   model    = 1
-       extra    = medium_armor
-       brigade_model = 1 
-      }
- }
-   landunit = 
    {  id       = {  type = 10848 id =  316 } 
      name     = "15-ya Armiya" 
      location = 1183
@@ -1291,79 +1093,9 @@ inventions = { 3000027 }
 	   model    = 9
       }
  }
-   landunit = 
-   {  id       = {  type = 10848 id =  318 } 
-     name     = "25-ya Armiya" 
-     location = 1190
-     Division = 
-     {  id       = {  type = 10848 id = 319  } 
-       name     = "92-ya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-	   extra    = artillery
-	   brigade_model = 8
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 320  } 
-       name     = "32-ya Saratovskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 321  } 
-       name     = "40-ya Bogucharskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 322  } 
-       name     = "105-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
- }
 
 # Air OOB
 #MVO
-airunit = { 
-	id = { type = 10848 id = 7004 } 
-	name = "Dal'nii Vostok Vozdushnogo Komandovaniya" 
-	location = 1191 # Vladivostok 
-	base = 1191 # Vladivostok 
-
-	division = { 
-	id = { type = 10848 id = 7005 } 
-		name = "29.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7006 } 
-		name = "79.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7007 } 
-		name = "31.TBABR" 
-		strength = 50 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7001 } 
-		name = "34.LSHABR" 
-		strength = 80 
-		type = cas 
-		model = 1 
-			}
-	}
 airunit = { 
 	id = { type = 10848 id = 7016 } 
 	name = "Leningradskaya Vozdushnogo Komandovaniya" 
@@ -1686,138 +1418,6 @@ airunit = {
 			model = 3 
 			} 
 		}
-	navalunit = { # Viktorov M.V.
-		id = { type = 10848 id = 5515 } 
-		name = "Tikhookeanskiy Flot" 
-		location = 1191 
-		base = 1191 
-		division = { 
-			id = { type = 10848 id = 6001 } 
-			name = "8. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6015 } 
-			name = "9. Divizion Esmintsev" 
-			type = destroyer 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6013 } 
-			name = "16. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6014 } 
-			name = "17. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 5551 } 
-			name = "18. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			} 
-		division = { 
-			id = { type = 10848 id = 5552 } 
-			name = "19. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			}
-		division = { 
-			id = { type = 10848 id = 5351 } 
-			name = "20. Divizion Podlodok" 
-			type = submarine 
-			model = 1 
-			} 
-		division = { 
-			id = { type = 10848 id = 5352 } 
-			name = "21. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5353 } 
-			name = "22. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}
-		division = { 
-			id = { type = 10848 id = 6006 } 
-			name = "23. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6007 } 
-			name = "24. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6018 } 
-			name = "25. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6019 } 
-			name = "26. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6010 } 
-			name = "27. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}  
-		division = { 
-			id = { type = 10848 id = 6021 } 
-			name = "28. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}  
-		division = { 
-			id = { type = 10848 id = 6022 } 
-			name = "29. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}  
-		division = { 
-			id = { type = 10848 id = 6023 } 
-			name = "30. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}  
-		division = { 
-			id = { type = 10848 id = 6024 } 
-			name = "31. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}  
-		division = { 
-			id = { type = 10848 id = 6025 } 
-			name = "32. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}  
-		division = { 
-			id = { type = 10848 id = 6026 } 
-			name = "33. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}  
-		division = { 
-			id = { type = 10848 id = 5514 } 
-			name = "1. Transportnaya Flotiliya" 
-			type = transport 
-			model = 2 
-			} 
-		} 	
 	
 	# Starting Build Queue 
 	division_development = {

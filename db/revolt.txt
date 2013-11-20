@@ -3195,3 +3195,10 @@ capital = 242
 revolt = no 
 country = { GER } #only Ger can release it
 } 
+U57 = { # Far Eastern Republic
+date = { day = 1 month = january year = 1933 } 
+expirydate = { day = 30 month = december year = 1999 } 
+minimum = { 1185 1191 1192 1193 1195 1196 } 
+extra = { 1161 1162 1167 1168 1169 1170 1171 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1186 1187 1188 1189 1190 1194 1541 1542 } 
+capital = 1191 
+} 
