@@ -27,15 +27,16 @@ country = {
 	
 	policy = {
 		date = { year = 0 month = january day = 0 }
-		democratic = 4
-		political_left = 6
+		democratic = 3
+		political_left = 7
 		free_market = 6
 		freedom = 6
 		professional_army = 4
 		defense_lobby = 3
 		interventionism = 2
 	}
-	
+	puppet = ARG
+	dissent = 35
 	ai_settings = {
 		flags = { 
 			MOB1 = 1
@@ -64,40 +65,59 @@ country = {
 		relation = { tag = USA value = 85 }
 	}
 	
-	dormant_ministers = { 205001 205011 205013 205016 205002 205028 205034 205030 205049 205054 205003 205072 205005 205104 205006 205125 205008 205150 205009 205172 205010 205012 205017 205029 205031 205004 205109 205138 205140 205161 205025 205014 205020 205023 205026 205042 205040 205044 205050 205063 205079 205075 205073 205096 205110 205100 205135 205122 205143 205139 205007 205154 205155 205163 205174 }
-		
-	dormant_leaders        = {  205005 205020  }
+   headofstate            = {  type = 9 id = 205021  } 
+   headofgovernment       = {  type = 9 id = 205038  } 
+   foreignminister        = {  type = 9 id = 205065  } 
+   armamentminister       = {  type = 9 id = 205092  } 
+   ministerofsecurity     = {  type = 9 id = 205117  } 
+   ministerofintelligence = {  type = 9 id = 205133  } 
+   chiefofstaff           = {  type = 9 id = 205146  } 
+   chiefofarmy            = {  type = 9 id = 205157  } 
+   chiefofnavy            = {  type = 9 id = 205168  } 
+   chiefofair             = {  type = 9 id = 205182  } 
+   dormant_leaders        = {  205005 205020  }
+   dormant_ministers      = {  205001 205011 205013 205016 205002 205028 205034 205030 205049 205050 205054 205003 205072 205005 205109 205006 205125
+                               205008 205150 205009 205172 205010 205029 205004 205138 205140 205161 205012 205017 } 
 	
-	headofstate = { type = 9 id = 205306 }
-	headofgovernment = { type = 9 id = 205033 }
-	foreignminister = { type = 9 id = 205055 }
-	armamentminister = { type = 9 id = 205081 }
-	ministerofsecurity = { type = 9 id = 205108 }
-	ministerofintelligence = { type = 9 id = 205128 }
-	chiefofstaff = { type = 9 id = 205142 }
-	chiefofarmy = { type = 9 id = 205186 }
-	chiefofnavy = { type = 9 id = 205165 }
-	chiefofair = { type = 9 id = 205179 }
-	
-	landunit = {
-		id = { type = 10343 id = 1 }
-		name = "Bolivian Army"
-		location = 2020
-		division = {
-			id = { type = 10343 id = 2 }
-			name = "1a División de Infantería"
-			strength = 90
-			type = infantry
-			extra = artillery
-			model = 11
-			brigade_model = 10
-		}
-		division = {
-			id = { type = 10343 id = 3 }
-			name = "2a División de Infantería"
-			strength = 60
-			type = infantry
-			model = 11
-		}
-	}
-}
+   landunit = 
+   {  id       = {  type = 17000 id = 40  } 
+     name     = "Ejercito de Bolivia" 
+     location = 2020 
+     Division = 
+     {  id       = {  type = 17000 id = 4000  } 
+       name     = "1. Brigada de Infantería 'Bolivar'" 
+       strength = 30 
+       type     = infantry 
+       model    = 11
+       extra    = artillery 
+	   brigade_model = 4
+      } 
+     Division = 
+     {  id       = {  type = 17000 id = 4001  } 
+       name     = "2. Brigada de Infantería" 
+       strength = 30 
+       type     = infantry 
+       model    = 11
+      } 
+     Division = 
+     {  id       = {  type = 17000 id = 4002  } 
+       name     = "3. Brigada de Infantería" 
+       strength = 30 
+       type     = infantry 
+       model    = 11
+      }   
+    }
+   airunit = 
+   {  id       = {  type = 12000 id = 4005  } 
+     name     = "Aviación del Ejército" 
+     location = 2020 
+     base     = 2020 
+     Division = 
+     {  id       = {  type = 12000 id = 4006  } 
+       name     = "Grupo Aérea Nro. 1" 
+       strength = 20 
+       type     = interceptor 
+       model    = 7
+      } 
+    } 	
+  } 

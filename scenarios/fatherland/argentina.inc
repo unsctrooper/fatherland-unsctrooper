@@ -11,38 +11,29 @@ province = {
 	rare_materials = 1
 	manpower = 1
 }
+
 country = {
 	tag = ARG
-	
 	energy = 5000
 	metal = 5000
 	rare_materials = 5000
 	oil = 5000
 	supplies = 5000
-	
-	manpower = 70
-	
+	manpower = 300
 	capital = 2050
 	
 	policy = {
 		date = { year = 0 month = january day = 0 }
-		democratic = 6
+		democratic = 3
 		political_left = 7
 		free_market = 6
 		freedom = 6
-		professional_army = 4
-		defense_lobby = 4
-		interventionism = 3
+		professional_army = 7
+		defense_lobby = 7
+		interventionism = 7
 	}
 	
-	ai_settings = {
-		flags = { 
-			MOB1 = 1
-			MOB2 = 1
-			MOB3 = 1
-			MOB4 = 1
-		}
-	}
+    ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
 	
 	SpyInfo = { country = "ARG" NumberOfSpies = 1 }
 	SpyInfo = { country = "CAN" NumberOfSpies = 1 }
@@ -90,39 +81,78 @@ country = {
 		division = {
 			id = { type = 10384 id = 41 }
 			name = "III Brigada 'Pellegrini'"
-			strength = 100
+			strength = 75
 			type = infantry
 			extra = artillery
 			brigade_model = 10
-			model = 11
+			model = 12
 		}
 		division = {
 			id = { type = 10384 id = 2 }
 			name = "II Brigada 'San Martín'"
-			strength = 100
+			strength = 75
 			type = infantry
-			model = 11
+			model = 12
 		}
+		division = {
+			id = { type = 10384 id = 38 }
+			name = "XIII División de Infantería"
+			strength = 75
+			type = infantry
+			model = 12
+		}
+	}
+		
+	    landunit = {
+		id = { type = 10384 id = 39 }
+		name = "II Cuerpo de Ejército"
+		location = 2050		
 		division = {
 			id = { type = 10384 id = 3 }
 			name = "I Brigada 'Ing. Krausse'"
-			strength = 100
+			strength = 75
 			type = motorized
-			model = 2
+			model = 3
 		}
 		division = {
 			id = { type = 10384 id = 4 }
 			name = "Agrupación IV GN 'Misiones'"
 			strength = 100
 			type = motorized
-			model = 2
+			model = 3
 		}
 		division = {
 			id = { type = 10384 id = 5 }
 			name = "Agrupación VI GN 'Formosa'"
-			strength = 100
+			strength = 75
 			type = motorized
-			model = 2
+			model = 3
+		}
+	}
+	    landunit = {
+		id = { type = 10384 id = 40 }
+		name = "III Cuerpo de Ejército"
+		location = 2050		
+		division = {
+			id = { type = 10384 id = 44 }
+			name = "I Brigada 'Ing. Krausse'"
+			strength = 75
+			type = motorized
+			model = 3
+		}
+		division = {
+			id = { type = 10384 id = 42 }
+			name = "Agrupación IV GN 'Misiones'"
+			strength = 75
+			type = motorized
+			model = 3
+		}
+		division = {
+			id = { type = 10384 id = 43 }
+			name = "Agrupación VI GN 'Formosa'"
+			strength = 75
+			type = motorized
+			model = 3
 		}
 	}
 	landunit = {
@@ -132,9 +162,9 @@ country = {
 		division = {
 			id = { type = 30051 id = 8 }
 			name = "VI Brigada de Montaía 'Villegas'"
-			strength = 100
+			strength = 75
 			type = bergsjaeger
-			model = 11
+			model = 12
 		}
 	}
 	navalunit = {
@@ -329,9 +359,23 @@ country = {
 		division = {
 			id = { type = 10384 id = 10 }
 			name = "Grupo Aérea Nro. 1"
-			strength = 100
+			strength = 50
 			type = interceptor
-			model = 10
+			model = 12
+		}
+		division = {
+			id = { type = 10384 id = 36 }
+			name = "Grupo Aérea Nro. 2"
+			strength = 50
+			type = interceptor
+			model = 12
+		}
+		division = {
+			id = { type = 10384 id = 37 }
+			name = "Fuerza Aeronaval Nro. 1"
+			strength = 75
+			type = naval_bomber
+			model = 5
 		}
 	}
 }

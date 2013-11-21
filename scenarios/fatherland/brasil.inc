@@ -6,10 +6,10 @@
 
 province = {
 	id = 2075
-	ic = 1
-	energy = 4
-	metal = 2
-	rare_materials = 1
+	ic = 6
+	energy = 20
+	metal = 10
+	rare_materials = 5
 	manpower = 1
 }
 
@@ -21,7 +21,7 @@ country = {
 	oil = 5000
 	supplies = 5000
 	
-	manpower = 200
+	manpower = 500
 	
 	capital = 2075
 	
@@ -36,13 +36,7 @@ country = {
 		interventionism = 3
 	}
 	
-	ai_settings = {
-		flags = { 
-			MOB1 = 1
-			MOB2 = 1
-			MOB3 = 1
-		}
-	}
+    ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
 	
 	SpyInfo = { country = "CAN" NumberOfSpies = 1 }
 	SpyInfo = { country = "ARG" NumberOfSpies = 4 }
@@ -92,7 +86,25 @@ country = {
 			name = "1a Divisão de Infantaria"
 			strength = 100
 			type = infantry
-			model = 11
+			model = 12
+			extra = artillery
+			brigade_model = 10
+		}
+		division = {
+			id = { type = 10356 id = 35 }
+			name = "11a Divisão de Infantaria"
+			strength = 100
+			type = infantry
+			model = 12
+			extra = artillery
+			brigade_model = 10
+		}
+		division = {
+			id = { type = 10356 id = 36 }
+			name = "12a Divisão de Infantaria"
+			strength = 100
+			type = infantry
+			model = 12
 			extra = artillery
 			brigade_model = 10
 		}
@@ -106,21 +118,21 @@ country = {
 			name = "2a Divisão de Infantaria"
 			strength = 100
 			type = infantry
-			model = 11
+			model = 12
 		}
 		division = {
 			id = { type = 10356 id = 4 }
 			name = "3a Divisão de Infantaria"
 			strength = 100
 			type = motorized
-			model = 2
+			model = 3
 		}
 		division = {
 			id = { type = 10356 id = 5 }
 			name = "4a Divisão de Infantaria"
 			strength = 100
 			type = motorized
-			model = 2
+			model = 3
 		}
 	}
 	landunit = {
@@ -132,25 +144,39 @@ country = {
 			name = "5a Divisão de Infantaria"
 			strength = 100
 			type = motorized
-			model = 2
+			model = 3
 		}
 		division = {
 			id = { type = 10356 id = 8 }
 			name = "6a Divisão de Infantaria"
 			strength = 100
 			type = motorized
-			model = 2
+			model = 3
 		}
 		division = {
 			id = { type = 10356 id = 9 }
 			name = "7a Divisão de Infantaria"
 			strength = 100
 			type = motorized
-			model = 2
+			model = 3
 		}
 		division = {
 			id = { type = 10356 id = 10 }
 			name = "8a Divisão"
+			strength = 100
+			type = armor
+			model = 2
+		}
+		division = {
+			id = { type = 10356 id = 33 }
+			name = "9a Divisão"
+			strength = 100
+			type = armor
+			model = 2
+		}
+		division = {
+			id = { type = 10356 id = 34 }
+			name = "10a Divisão"
 			strength = 100
 			type = armor
 			model = 2
@@ -308,14 +334,28 @@ country = {
 			name = "1a Divisão de Caças"
 			strength = 100
 			type = interceptor
-			model = 10
+			model = 12
 		}
 		division = {
 			id = { type = 10356 id = 13 }
 			name = "2a Divisão de Caças"
 			strength = 100
 			type = interceptor
-			model = 10
+			model = 12
+		}
+		division = {
+			id = { type = 10356 id = 37 }
+			name = "3a Divisão de Caças"
+			strength = 100
+			type = interceptor
+			model = 12
+		}
+		division = {
+			id = { type = 10356 id = 38 }
+			name = "4a Divisão de Caças"
+			strength = 100
+			type = interceptor
+			model = 12
 		}
 	}
 }

@@ -78,7 +78,7 @@ country = {
 			name = "1. División de Infantería"
 			strength = 100
 			type = infantry
-			model = 11
+			model = 12
 			extra = artillery
 			brigade_model = 10
 		}
@@ -87,14 +87,14 @@ country = {
 			name = "2. División de Infantería"
 			strength = 100
 			type = infantry
-			model = 11
+			model = 12
 		}
 		division = {
 			id = { type = 10372 id = 4 }
 			name = "3. División de Infantería"
 			strength = 100
 			type = infantry
-			model = 11
+			model = 12
 		}
 	}
 	
