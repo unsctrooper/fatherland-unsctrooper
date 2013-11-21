@@ -33,6 +33,10 @@ globaldata = {
 		id = { type = 15000 id = 3 }
 		participant = { SOV MON }
 	}
+  alliance =
+  { id          = { type = 15000 id = 4 }
+    participant = { ARG BOL }
+  }
     war = { 
 		id = { type = 9430 id = 1 }
 		date = { year = 1939 month = september day = 0 }
