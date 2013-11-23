@@ -163,14 +163,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id = 1545  } 
      name     = "18-i Sibirskyi Korpus" 
-     location = 1168
-      Division = 
-     {  id       = {  type = 10848 id = 1546  } 
-       name     = "59-ya Tankovaya Diviziya" 
-       strength = 40 
-       type     = light_armor
-	   model    = 0 
-      }
+     location = 1176
       Division = 
      {  id       = {  type = 10848 id = 1547  } 
        name     = "69-ya Motostrelkovaya Diviziya" 
@@ -179,29 +172,6 @@ inventions = { 3000027 }
 	   model    = 1
        extra    = medium_armor
        brigade_model = 1 
-      }
- }
-   landunit = 
-   {  id       = {  type = 10848 id =  313 } 
-     name     = "2-ya Armiya" 
-     location = 1175
-     Division = 
-     {  id       = {  type = 10848 id = 314  } 
-       name     = "12-ya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-	   extra    = artillery
-	   brigade_model = 8
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 315  } 
-       name     = "3-ya Tihookeanskaya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-	   extra    = artillery
-	   brigade_model = 8
       }
  }
    landunit = 
@@ -244,13 +214,6 @@ inventions = { 3000027 }
      name     = "1-ya Armiya" 
      location = 1196
      Division = 
-     {  id       = {  type = 10848 id = 305  } 
-       name     = "26-ya Zlatoustovskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
      {  id       = {  type = 10848 id = 306  } 
        name     = "21-ya Permskaya Strelkovaya Diviziya" 
        strength = 80 
@@ -258,20 +221,6 @@ inventions = { 3000027 }
 	   model    = 11
 	   extra    = artillery
 	   brigade_model = 8
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 307  } 
-       name     = "22-ya Krasnodarskaya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 308  } 
-       name     = "39-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
       }
      Division = 
      {  id       = {  type = 10848 id = 309  } 
@@ -296,20 +245,6 @@ inventions = { 3000027 }
    {  id       = {  type = 10848 id =  1541 } 
      name     = "30-i Mekhanizirovannyi Korpus" 
      location = 1196
-      Division = 
-     {  id       = {  type = 10848 id = 1542  } 
-       name     = "58-ya Tankovaya Diviziya" 
-       strength = 65 
-       type     = light_armor
-	   model    = 1
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1543  } 
-       name     = "69-ya Tankovaya Diviziya" 
-       strength = 65 
-       type     = light_armor
-	   model    = 1 
-      }
       Division = 
      {  id       = {  type = 10848 id = 1544  } 
        name     = "239-ya Motostrelkovaya Diviziya" 
@@ -403,138 +338,59 @@ airunit = {
 		type = tactical_bomber 
 		model = 5 
 			}
-	division = { 
-	id = { type = 10848 id = 7001 } 
-		name = "34.LSHABR" 
-		strength = 80 
-		type = cas 
-		model = 1 
-			}
 	}
 # Naval OOB
 
-	navalunit = { # Viktorov M.V.
+	navalunit = {
 		id = { type = 10848 id = 5515 } 
 		name = "Tikhookeanskiy Flot" 
 		location = 1191 
 		base = 1191 
 		division = { 
 			id = { type = 10848 id = 6001 } 
-			name = "8. Divizion Esmintsev" 
+			name = "1. Divizion Esmintsev" 
 			type = destroyer 
 			model = 3 
 			}
 		division = { 
 			id = { type = 10848 id = 6015 } 
-			name = "9. Divizion Esmintsev" 
+			name = "2. Divizion Esmintsev" 
 			type = destroyer 
 			model = 3 
 			}
 		division = { 
-			id = { type = 10848 id = 6013 } 
-			name = "16. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6014 } 
-			name = "17. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 5551 } 
-			name = "18. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			} 
-		division = { 
-			id = { type = 10848 id = 5552 } 
-			name = "19. Divizion Podlodok" 
-			type = submarine 
-			model = 2 
-			}
-		division = { 
-			id = { type = 10848 id = 5351 } 
-			name = "20. Divizion Podlodok" 
-			type = submarine 
-			model = 1 
-			} 
-		division = { 
-			id = { type = 10848 id = 5352 } 
-			name = "21. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			} 
-		division = { 
-			id = { type = 10848 id = 5353 } 
-			name = "22. Divizion Podlodok" 
-			type = submarine 
-			model = 4 
-			}
-		division = { 
-			id = { type = 10848 id = 6006 } 
-			name = "23. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6007 } 
-			name = "24. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6018 } 
-			name = "25. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6019 } 
-			name = "26. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}
-		division = { 
-			id = { type = 10848 id = 6010 } 
-			name = "27. Divizion Podlodok" 
-			type = submarine 
-			model = 3 
-			}  
-		division = { 
 			id = { type = 10848 id = 6021 } 
-			name = "28. Divizion Podlodok" 
+			name = "1. Divizion Podlodok" 
 			type = submarine 
 			model = 4 
 			}  
 		division = { 
 			id = { type = 10848 id = 6022 } 
-			name = "29. Divizion Podlodok" 
+			name = "2. Divizion Podlodok" 
 			type = submarine 
 			model = 4 
 			}  
 		division = { 
 			id = { type = 10848 id = 6023 } 
-			name = "30. Divizion Podlodok" 
+			name = "3. Divizion Podlodok" 
 			type = submarine 
 			model = 4 
 			}  
 		division = { 
 			id = { type = 10848 id = 6024 } 
-			name = "31. Divizion Podlodok" 
+			name = "4. Divizion Podlodok" 
 			type = submarine 
 			model = 4 
 			}  
 		division = { 
 			id = { type = 10848 id = 6025 } 
-			name = "32. Divizion Podlodok" 
+			name = "5. Divizion Podlodok" 
 			type = submarine 
 			model = 4 
 			}  
 		division = { 
 			id = { type = 10848 id = 6026 } 
-			name = "33. Divizion Podlodok" 
+			name = "6. Divizion Podlodok" 
 			type = submarine 
 			model = 4 
 			}  
