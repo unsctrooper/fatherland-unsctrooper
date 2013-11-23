@@ -128,10 +128,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 		674 # Tatarstan province
 		675 # Chuvash Republic
 		670 683 #Mordovia  
-  
-		#Crimea-Taurida
-		623 624 # Taurida
-		639 637 641 638 640 # Crimea
+ 
 		}  
 							 
    controlledprovinces    = {  126  145  127  131  142  147  141  137  174  171  176  146  148  
@@ -175,10 +172,6 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 		674 # Tatarstan province
 		675 # Chuvash Republic
 		670 683 #Mordovia   
-		
-		#Crimea-Taurida
-		623 624 # Taurida
-		639 637 641 638 640 # Crimea
 	} 
 claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908 909 910 919 911 928 925 933 936  # Afrika
 1605 1602 1668 1667 1727 1726 1725 1665 1587 1675 1674 1681 1677 1603 1610 1234 1666 1669 1670 1671 1676 1684 1685 1686 # Pacific
@@ -876,21 +869,7 @@ landunit =
     }
 ####################  
 #### Army in the Balkans
-#########################
-     landunit = 
-   { location = 336 
-     name     = "8. SS-Kav.Div. 'Florian Geyer'" 
-     leader   = 223 # Reinhardt
-     id       = {  type = 14502 id = 800  }
-  division = 
-     { id       = {  type = 14500 id = 226  } 
-       name     = "8. SS-Kav.Div. 'Florian Geyer'" 
-       type     = cavalry 
-       model    = 12 
-       strength = 75 
-      }
-	}
-	
+#########################	
 landunit = 
    { location = 382 								#Crete
      name     = "Kommandantur d. Festung Kreta" 
@@ -997,7 +976,15 @@ landunit =
        model    = 12 
        strength = 65 
       }
-       
+       division = 
+     { id       = {  type = 14500 id = 13333  } 
+       name     = "117. Jäger-Division" 
+       type     = infantry 
+       model    = 12 
+       strength = 40 
+       extra    = engineer
+       brigade_model = 5
+      }     
     }
 landunit = 
    { location = 358 
@@ -1040,61 +1027,6 @@ landunit =
        model    = 6 
        strength = 25 
       }
-    }
-	landunit = 
-   { location = 355 
-     name     = "Heeresgruppe E Reserve" 
-     leader   = 560 # Löhr
-     id       = {  type = 14500 id = 239  } 
-       division = 
-     { id       = {  type = 14500 id = 258  } 
-       name     = "117. Jäger-Division" 
-       type     = infantry 
-       model    = 12 
-       strength = 40 
-       extra    = engineer
-       brigade_model = 5
-      }
-	  division = 
-     { id       = {  type = 14500 id = 231  } 
-       name     = "13. Waffen-SS Geb.Div. 'Handschar'" 
-       type     = bergsjaeger 
-       model    = 12 
-       strength = 40 
-       experience = 40
-      } 
-	  division = 
-     { id       = {  type = 14500 id = 255  } 
-       name     = "7. SS-Freiw.-Geb.Div. 'Prinz Eugen'" 
-       type     = bergsjaeger 
-       model    = 12 
-       strength = 40
-       experience = 40
-      }
-       
-    }
-#### Albania
-  landunit = 
-   { location = 329 
-     name     = "IX. Armeekorps" 
-     id       = {  type = 14500 id = 86  } 
-    division = 
-     { id       = {  type = 14500 id = 3936  } 
-       name     = "21. Waffen-SS Geb.Div. 'Skanderbeg'" 
-       type     = bergsjaeger 
-       model    = 12 
-       strength = 80 
-       experience = 40
-      }
-	division = 
-     { id       = {  type = 14500 id = 256  } 
-       name     = "21. Albanische SS-Freiw.-Div." 
-       type     = motorized 
-       model    = 3 
-       strength = 80 
-       experience = 20
-      }
-       
     }
 	####################
 	# Carinthia
@@ -1145,14 +1077,6 @@ landunit =
        extra    = anti_air
        brigade_model = 5
        experience = 20
-      }
-          division = 
-     { id       = {  type = 14500 id = 439  } 
-       name     = "31. SS-Freiwilligen-Grenadier-Div." 
-       type     = motorized 
-       model    = 3 
-       strength = 80 
-       experience = 40
       }
 	     division = 
      { id       = {  type = 14500 id = 272  } 
@@ -1435,13 +1359,6 @@ landunit =
        brigade_model = 11
        experience = 20
       }
-	division = 
-     { id       = {  type = 14500 id = 712  } 
-       name  = "32. SS-Freiw.Div. '30. Januar'"
-       type     = motorized 
-       model    = 3 
-       strength = 75
-      }
 	 division = 
      { id       = {  type = 14500 id = 64  } 
        name     = "93. Infanterie-Division" 
@@ -1453,26 +1370,6 @@ landunit =
        experience = 20
       }
      division = 
-     { id       = {  type = 14500 id = 200  } 
-       name     = "3. SS-Panzer-Div. 'Totenkopf'" 
-       type     = armor 
-       model    = 3 
-       strength = 100
-       extra    = heavy_armor
-       brigade_model = 4 
-       experience = 40
-      }
-     division = 
-     { id       = {  type = 14500 id = 201  } 
-       name     = "5. SS-Panzer-Div. 'Wiking'" 
-       type     = armor 
-       model    = 3 
-       strength = 100 
-       extra    = heavy_armor
-       brigade_model = 4 
-       experience = 40
-      }
-     division = 
      { id       = {  type = 14500 id = 202  } 
        name     = "96. Infanterie-Division" 
        type     = infantry 
@@ -1480,15 +1377,6 @@ landunit =
        strength = 75 
        experience = 20
       }
-     division = 
-     { id       = {  type = 14500 id = 212  } 
-       name     = "4. SS-Pz.Gr.Div. 'Polizei'" 
-       type     = mechanized 
-       model    = 1 
-       strength = 100
-       experience = 40
-      }
-     
      division = 
      { id       = {  type = 14500 id = 205  } 
        name     = "711. Infanterie-Division" 
@@ -1500,7 +1388,7 @@ landunit =
     }
 	   landunit = 
    { location = 674 
-     name     = "VI. SS-Korps" 
+     name     = "VI. Korps" 
      id       = {  type = 14500 id = 63  } 
      division = 
      { id       = {  type = 14500 id = 67  } 
@@ -1520,15 +1408,6 @@ landunit =
        brigade_model = 5
        experience = 30
       }
-     division = 
-     { id       = {  type = 14500 id = 3937  } 
-       name     = "22. SS-Kav.Div. 'Maria Theresia'" 
-       type     = cavalry 
-       model    = 12 
-       strength = 75 
-       experience = 40
-      }
-       
     }
 	 landunit = 
    { location = 658 
@@ -1545,16 +1424,6 @@ landunit =
        brigade_model = 5
        experience = 20
       }    
-     division = 
-     { id       = {  type = 14500 id = 405  } 
-       name     = "17. SS-Pz.Gr.Div. 'Götz Berlichingen'" 
-       type     = mechanized 
-       model    = 1 
-       strength = 75
-       experience = 40
-       extra    = sp_artillery
-       brigade_model = 3
-      }
      division = 
      { id       = {  type = 14500 id = 406  } 
        name     = "25. Panzergrenadier-Division" 
@@ -1579,7 +1448,6 @@ landunit =
      name     = "18. Armee" 
      leader   = 189 # Loch
      id       = {  type = 14500 id = 28  } 
-  
 	      division = 
      { id       = {  type = 14500 id = 27  } 
        name     = "Feldausbildung-Division 'Nord'" 
@@ -1588,33 +1456,12 @@ landunit =
        strength = 100
        extra    = police
        brigade_model = 2
-      }
-       
+      }     
     }
 landunit = 
    { location = 679 
-     name     = "II. SS-Panzerkorps" 
+     name     = "II. Panzerkorps" 
      id       = {  type = 14500 id = 363  } 
-     division = 
-     { id       = {  type = 14500 id = 364  } 
-       name     = "2. SS-Panzer-Div. 'Das Reich'" 
-       type     = armor 
-       model    = 3 
-       strength = 75
-       experience = 30
-       extra    = sp_artillery
-       brigade_model = 3 
-      }
-     division = 
-     { id       = {  type = 14500 id = 365  } 
-       name     = "9. SS-Panzer-Div. 'Hohenstaufen'" 
-       type     = armor 
-       model    = 3 
-       strength = 75 
-       experience = 30
-       extra    = sp_artillery
-       brigade_model = 3      
-      }
 	    division = 
      { id       = {  type = 14500 id = 235  } 
        name     = "3. Kavallerie-Brigade" 
@@ -1626,24 +1473,8 @@ landunit =
     }
 	 landunit = 
    { location = 555 
-     name     = "III. SS-Panzerkorps" 
+     name     = "III. Panzerkorps" 
      id       = {  type = 14500 id = 37  } 
-     division = 
-     { id       = {  type = 14500 id = 38  } 
-       name     = "4. SS-Pz.Gr.Brig. 'Nederland'" 
-       type     = mechanized 
-       model    = 1 
-       strength = 75 
-       experience = 30
-      }
-     division = 
-     { id       = {  type = 14500 id = 39  } 
-       name     = "11. SS-Pz.Gr.Freiw.Div. 'Nordland'" 
-       type     = mechanized 
-       model    = 1 
-       strength = 75 
-       experience = 40
-      }
      division = 
      { id       = {  type = 14500 id = 40  } 
        name     = "121. Infanterie-Division" 
@@ -1674,16 +1505,6 @@ landunit =
    { location = 579 
      name     = "LXXIII. z.b.V. Korps" 
      id       = {  type = 14500 id = 300  } 
-     division = 
-     { id       = {  type = 14500 id = 301  } 
-       name     = "16. SS-Pz.Gr.Div. 'Reichsführer SS'" 
-       type     = mechanized 
-       model    = 1 
-       strength = 75 
-       experience = 40
-       extra    = tank_destroyer
-       brigade_model = 3
-      }
 	     division = 
      { id       = {  type = 14500 id = 181  } 
        name     = "154. Feldausbildung-Division" 
@@ -1762,7 +1583,7 @@ landunit =
 	############# KIEV
 	 landunit = 
    { location = 617									# Kiev 
-     name     = "XII. SS-Korps" 
+     name     = "XII. Korps" 
      id       = {  type = 14500 id = 340  } 
 	 division = 
      { id       = {  type = 14500 id = 426  } 
@@ -1773,36 +1594,6 @@ landunit =
        extra    = anti_air
        brigade_model = 5
        experience = 40
-      }
-        division = 
-     { id       = {  type = 14500 id = 339  } 
-       name     = "10. SS-Panzer-Div. 'Frundsberg'" 
-       type     = armor 
-       model    = 3 
-       strength = 75 
-       experience = 20
-       extra    = sp_artillery
-       brigade_model = 3
-      }
-	 division = 
-     { id       = {  type = 14500 id = 369  } 
-       name     = "12. SS-Panzer-Div. 'Hitlerjugend'" 
-       type     = armor 
-       model    = 3 
-       strength = 75
-       experience = 40
-       extra    = heavy_armor
-       brigade_model = 3
-      }
-	   division = 
-     { id       = {  type = 14500 id = 376  } 
-       name     = "1. SS-Leibstandarte Adolf Hitler" 
-       type     = armor 
-       model    = 3 
-       strength = 75
-       experience = 30
-       extra    = sp_artillery
-       brigade_model = 3
       }
 	 division = 
      { id       = {  type = 14500 id = 341  } 
@@ -1968,17 +1759,7 @@ landunit =
        model    = 12 
        strength = 65 
        experience = 15
-      }
-     division = 
-     { id       = {  type = 14500 id = 215  } 
-       name     = "18. SS-Pz.Gr.Div. 'Horst Wessel'" 
-       type     = mechanized 
-       model    = 1 
-       strength = 75 
-       experience = 25
-      }
-    
-       
+      }     
     }
 	  # GERMAN ARMY RESERVE COLOGNE
    landunit = 
@@ -2411,16 +2192,6 @@ landunit =
        model    = 3 
        strength = 65 
       }
-     division = 
-     { id       = {  type = 14500 id = 159  } 
-       name     = "10. SS-Panzer-Div. 'Frundsberg'" 
-       type     = armor 
-       model    = 3
-       strength = 55 
-       extra    = sp_artillery
-       brigade_model = 3
-      }
-       
     }
 	# 10th Army
    landunit = 
@@ -3105,27 +2876,6 @@ landunit =
        max_strength = 70
       }
     }
-landunit = 
-   { location = 284 
-     name     = "25. Waffen-Gr.Div. d. SS 'Hunyadi'" 
-     id       = {  type = 14501 id = 3934  } 
-	  	   division = 
-     { id       = {  type = 14500 id = 3934  } 
-       name     = "25. Waffen-Gr.Div. d. SS 'Hunyadi'" 
-       type     = motorized 
-       model    = 3 
-       strength = 65 
-       experience = 20
-      }
-	division = 
-     { id       = {  type = 14500 id = 707  } 
-       name     = "26. Waffen-Gr.Div. d. SS 'Hungaria'"  
-       type     = motorized 
-       model    = 3 
-       strength = 65 
-       experience = 20
-      }
-   }
    ### GARRISONS IN POLAND ###
 landunit = 
    { location = 232 
@@ -3307,35 +3057,7 @@ landunit =
        brigade_model = 2
 	   locked = yes
       }	}
-	
-
-# Flemish Waffen-SS
-landunit = 
-   { location = 117 
-     name     = "27. SS-Freiw.-Div. 'Langemark'"  
-     id       = {  type = 14501 id = 710  } 
-     division = 
-     { id       = {  type = 14500 id = 710  } 
-       name     = "27. SS-Freiw.-Div. 'Langemark'"  
-       type     = motorized 
-       model    = 3 
-       strength = 50
-      }
-    }
-# Walloon Waffen-SS
-landunit = 
-   { location = 108 
-     name     = "28. SS-Freiw.-Div. 'Wallonien'"  
-     id       = {  type = 14501 id = 711  } 
-     division = 
-     { id       = {  type = 14500 id = 711  } 
-       name     = "28. SS-Freiw.-Div. 'Wallonien'" 
-       type     = motorized 
-       model    = 3
-       strength = 50
-      }
-    }
-	
+		
 # Russian Liberation Army
 landunit = 
    { location = 572 
