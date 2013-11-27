@@ -10,303 +10,25 @@ event = {
 
 	trigger = {
 		control = { province = 1001 data = -1 }
+		random = 70
 	}
 
-	date = { day = 0 month = january year = 1948 }
-	offset = 500
-	deathdate = { day = 30 month = december year = 1951 }
+	date = { day = 0 month = january year = 1951 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = OK
 		command = { type = dissent value = 3 }
-		command = { type = province_revoltrisk which = 1001 value = 50 }
-		command = { type = province_revoltrisk which = 1002 value = 50 }
-		command = { type = province_revoltrisk which = 1003 value = 50 }
+		command = { type = revolt which = 1001 }
+		command = { type = revolt which = 1002 }
+		command = { type = revolt which = 1003 }
 		
 	}
 }
-event = {
-	id = 8009101
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1936 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1938 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690001 } # Leon Cayla
-		command = { type = headofgovernment which = 690002 } # Leon Cayla
-	}
-}
 
 event = {
-	id = 8009102
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1939 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1939 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690014 } # Marcel de Coppet
-		command = { type = headofgovernment which = 690019 } # Marcel de Coppet
-	}
-}
-
-event = {
-	id = 8009103
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1940 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1940 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690001 } # Leon Cayla
-		command = { type = headofgovernment which = 690002 } # Leon Cayla
-	}
-}
-
-event = {
-	id = 8009104
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1941 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1942 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690011 } # Armand Annet
-		command = { type = headofgovernment which = 690016 } # Armand Annet
-	}
-}
-
-event = {
-	id = 8009105
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1943 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1943 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690012 } # Paul Le Gentilhomme
-		command = { type = headofgovernment which = 690017 } # Paul Le Gentilhomme
-	}
-}
-
-event = {
-	id = 8009106
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1944 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1945 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690013 } # Pierre de Saint-Mart
-		command = { type = headofgovernment which = 690018 } # Pierre de Saint-Mart
-	}
-}
-
-event = {
-	id = 8009107
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1946 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1947 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690014 } # Marcel de Coppet
-		command = { type = headofgovernment which = 690019 } # Marcel de Coppet
-	}
-}
-
-event = {
-	id = 8009108
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1948 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1949 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690100 } # Pierre Gabriel de Chevign?
-		command = { type = headofgovernment which = 690101 } # Pierre Gabriel de Chevign?
-	}
-}
-
-event = {
-	id = 8009109
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1950 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1952 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690102 } # Robert Isaac Bargues
-		command = { type = headofgovernment which = 690103 } # Robert Isaac Bargues
-	}
-}
-
-event = {
-	id = 8009110
-	country = MAD
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
-	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
-	}
-
-	date = { day = 0 month = january year = 1953 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1955 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 690104 } # Andr? Soucadaux
-		command = { type = headofgovernment which = 690105 } # Andr? Soucadaux
-	}
-}
-
-event = {
-	id = 8009111
+	id = 800910
 	country = MAD
 
 	name = EVT_8009111_NAME
@@ -315,15 +37,12 @@ event = {
 	style = 1
 
 	trigger = {
-		OR = {
-			government = democratic
-			government = fascist
-		}
+		random = 50
 	}
 
-	date = { day = 0 month = january year = 1956 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	date = { day = 0 month = january year = 1952 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1960 }
 
 	action = {
 		name = EVT_8009111_A
@@ -340,6 +59,31 @@ event = {
 		command = { type = chiefofarmy which = 690033 } # Rafeno Fanjava
 		command = { type = chiefofnavy which = 690035 } # Olivier Randrianantenaina
 		command = { type = chiefofair which = 690037 } # Solomon Rabemanoela
+		
+		command = { type = trigger which = 8009111 }
+	}
+}
+
+
+
+event = {
+	id = 8009111
+	tag = { ENG FRA ITA GER SPR SPA BEL HOL U05 U02 U01 }
+
+	name = "The Madagascar is independent"
+	desc = "They are independent."
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		event = 8009110
+	}
+		
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = peace which = MAD value = 0 }
 	}
 }
 

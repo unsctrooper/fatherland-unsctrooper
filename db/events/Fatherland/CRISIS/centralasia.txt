@@ -614,23 +614,25 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-	name = EVT_90000413_A # Help
-	ai_chance = 70
-	command = { type = 	belligerence which = GER value = 1 }
-	command = { type = supplies value = -1000 } 
+		name = EVT_90000413_A # Help
+		ai_chance = 70
+		command = { type = 	belligerence which = GER value = 1 }
+		command = { type = supplies value = -1000 } 
+		command = { type = trigger which = 90000415 } 
 	}
 	action = {
-	name = EVT_90000413_B
-	trigger = { ai = no }
-	command = { type = 	belligerence which = GER value = 1 } 
-	command = { type = supplies value = -1000 } 
-	command = { type = military_control which = GER where = TRK value = 1 }
+		name = EVT_90000413_B
+		trigger = { ai = no }
+		command = { type = belligerence which = GER value = 1 } 
+		command = { type = supplies value = -1000 } 
+		command = { type = military_control which = GER where = TRK value = 1 }
+		command = { type = trigger which = 90000415 } 
 	}
 	action = {
-	name = EVT_90000413_C
-	ai_chance = 30
-	command = { type = 	belligerence which = GER value = -1 } 
-	command = { type = clrflag which = Turkestan }
+		name = EVT_90000413_C
+		ai_chance = 30
+		command = { type = belligerence which = GER value = -1 } 
+		command = { type = clrflag which = Turkestan }
 	}
 }
 event = {
@@ -656,6 +658,7 @@ event = {
 	ai_chance = 60
 	command = { type = 	belligerence which = GER value = 1 } 
 	command = { type = supplies value = -1000 } 
+		command = { type = trigger which = 90000416 } 
 	}
 	action = {
 	name = EVT_90000414_B
@@ -663,6 +666,7 @@ event = {
 	command = { type = 	belligerence which = GER value = 1 } 
 	command = { type = supplies value = -1000 } 
 	command = { type = military_control which = GER where = KAZ value = 1 }
+			command = { type = trigger which = 90000416 } 
 	}
 	action = {
 	name = EVT_90000414_C
@@ -676,20 +680,20 @@ event = {
 	random = no
 	country = TRK
 	
-	trigger = {
-	OR = {
-	event = 90000413
-		}
-	}	
+	#trigger = {
+	#	OR = {
+	#		event = 90000413
+	#		}
+	#}	
 	
 	name = EVT_90000415_NAME
 	desc = EVT_90000415_DESC
 	style = 2
 	picture = "0turkestan0"
 
-	date = { day = 1 month = january year = 1948 }
-	offset = 15
-	deathdate = { day = 30 month = december year = 1963 }
+	#date = { day = 1 month = january year = 1948 }
+	#offset = 15
+	#deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
 	name = ACTION_NAME_GREAT
@@ -704,20 +708,20 @@ event = {
 	random = no
 	country = KAZ
 	
-	trigger = {
-	OR = {
-	event = 90000413
-		}
-	}	
+	#trigger = {
+	#OR = {
+	#event = 90000413
+	#	}
+	#}	
 	
 	name = EVT_90000416_NAME
 	desc = EVT_90000416_DESC
 	style = 2
 	picture = "0turkestan0"
 
-	date = { day = 1 month = january year = 1948 }
-	offset = 15
-	deathdate = { day = 30 month = december year = 1963 }
+	#date = { day = 1 month = january year = 1948 }
+	#offset = 15
+	#deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
 	name = ACTION_NAME_GREAT

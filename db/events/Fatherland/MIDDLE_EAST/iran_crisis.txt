@@ -261,6 +261,7 @@ event = {
 		name = EVT_8500909_A
 		command = { type = end_puppet }
 		command = { type = leave_alliance when = 1 }
+		command = { type = end_access which = ENG }
 	}
 	
 }
@@ -328,5 +329,6 @@ event = {
 		name = EVT_8500922_A
 		command = { type = end_puppet }
 		command = { type = add_division value = infantry when = 12 }
+		command = { type = end_access which = ENG }
 	}
 }

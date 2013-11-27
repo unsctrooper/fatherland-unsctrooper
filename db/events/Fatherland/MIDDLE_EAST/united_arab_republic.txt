@@ -1,4 +1,6 @@
-### United Arab Republic
+################################################
+### UAR EVENTS made by Pako Original by NWO
+################################################
 
 event = {
 	id = 8218000
@@ -34,7 +36,7 @@ event = {
 		exists = SYR
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = august year = 1952 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -71,7 +73,7 @@ event = {
 		atwar = no
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = august year = 1952 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -107,7 +109,7 @@ event = {
 		command = { type = dissent value = -5 }
 		command = { type = inherit which = SYR value = 1 }
 		command = { type = flag_ext where = EGY which = _uar }
-		command = { type = name where = EGY which = "EGY58" }
+		command = { type = name where = EGY which = "United Arab Republic" }
 		
 		command = { type = addcore which = 1016 }
 		command = { type = addcore which = 1020 }
@@ -155,7 +157,7 @@ event = {
 		exists = IRQ
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1953 }
 	offset = 60
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -194,7 +196,7 @@ event = {
 		atwar = no
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1953 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -281,7 +283,7 @@ event = {
 		exists = JOR
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1954 }
 	offset = 60
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -320,7 +322,7 @@ event = {
 		atwar = no
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1954 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -385,7 +387,7 @@ event = {
 		atwar = no
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1955 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -504,7 +506,7 @@ event = {
 		exists = PAL
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1956 }
 	offset = 60
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -543,7 +545,7 @@ event = {
 		atwar = no
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1956 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -611,7 +613,7 @@ event = {
 		exists = PAL
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1956 }
 	offset = 60
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -650,7 +652,7 @@ event = {
 		atwar = no
 		}
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1956 }
 	offset = 14
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -716,7 +718,7 @@ event = {
 		}
 		
 
-	date = { day = 1 month = february year = 1958 }
+	date = { day = 1 month = february year = 1956 }
 	offset = 60
 	deathdate = { day = 29 month = december year = 1963 }
 	

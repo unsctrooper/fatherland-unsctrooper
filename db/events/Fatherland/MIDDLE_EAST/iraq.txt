@@ -505,5 +505,41 @@ event = {
 	action_a = {
 		name = EVT_8007520_A
 		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
+		command = { type = trigger which = 8012605 } #GER reactions
 	}
+}
+event = {
+        id = 8007521
+        random = no
+        country = GER
+ 
+        name = "The Allies withdrawl from iraq"
+        desc = "It's time to remove the embargo and try to estabilish new relationship"
+        style = 0
+ 
+        action = {
+				ai_chance = 100
+                name = "Remove the embargo"				
+				command = { type = relation which = IRQ value = 50 }
+				command = { type = embargo which = -1 where = IRQ value = 0 } #remove embargo
+				command = { type = trigger which = 8012605 } #ITA reactions
+        }	
+}
+event = {
+        id = 8007522
+        random = no
+        country = ITA
+ 
+        name = "The Allies withdrawl from iraq"
+        desc = "It's time to remove the embargo and try to estabilish new relationship"
+        style = 0
+ 
+        action = {
+				ai_chance = 100
+                name = "Remove the embargo"				
+				command = { type = relation which = IRQ value = 50 }
+				command = { type = embargo which = -1 where = IRQ value = 0 } #remove embargo
+        }	
 }

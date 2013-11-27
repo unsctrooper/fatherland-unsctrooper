@@ -1,0 +1,4 @@
+* USSR has a fleet in Finland Controlled Murask (Murmansk?)
+* Hungary never left Axis despite Germany letting them sort out the Transylvania crisis, so Romania is fighting the whole of Axis
+* Burma flag doesn't show up correctly in diplomacy or intelligence panel
+* 

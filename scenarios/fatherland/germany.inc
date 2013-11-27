@@ -173,15 +173,16 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 		675 # Chuvash Republic
 		670 683 #Mordovia   
 	} 
-claimedprovinces = { 846 847 849 851 848 850 883 884 882 886 885 948 950 955 908 909 910 919 911 928 925 933 936  # Afrika
-1605 1602 1668 1667 1727 1726 1725 1665 1587 1675 1674 1681 1677 1603 1610 1234 1666 1669 1670 1671 1676 1684 1685 1686 # Pacific
-1731 #Asia
-1328 # Qingdao
-346 # Maribor
-252 229 250 253 254 255 # Poland
-336 # Banat
-553 # Military Administration of Leningrad
-116 #Brussels
+claimedprovinces = { 
+	#846 847 849 851 848 850 883 884 882 886 885 948 950 955 908 909 910 919 911 928 925 933 936  # Afrika
+	#1605 1602 1668 1667 1727 1726 1725 1665 1587 1675 1674 1681 1677 1603 1610 1234 1666 1669 1670 1671 1676 1684 1685 1686 # Pacific
+	#1731 # Asia
+	#1328 # Qingdao
+	346 # Maribor
+	252 229 250 253 254 255 # Poland
+	336 # Banat
+	553 # Military Administration of Leningrad
+	116 # Brussels
 }
 	# Germany 1944.12 techs 
 	# ###################### 

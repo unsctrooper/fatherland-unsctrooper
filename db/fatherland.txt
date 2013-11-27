@@ -2,7 +2,86 @@
 # Fatherland events
 #####################################
 
+# CREDITS
 event = "db\events\fatherland\credits.txt"
+
+# SECRET WEAPONS
+event = "db\events\secret_weapon_events.txt"
+
+#MOBILIZATION EVENTS
+event = "db\events\Mobilization.txt"
+event = "db\events\Mobilization_events.txt"
+event = "db\events\generic_decisions.txt"
+
+#FLAVOUR
+event = "db\events\fatherland\flavour.txt"
+
+# AFRICA
+event = "db\events\fatherland\africa\egypt.txt"
+event = "db\events\fatherland\africa\ethiopia.txt"
+event = "db\events\fatherland\africa\madagascar.txt"
+event = "db\events\fatherland\africa\south_africa.txt"
+
+# AMERICAS
+event = "db\events\fatherland\americas\argentina.txt"
+event = "db\events\fatherland\americas\brazil.txt"
+event = "db\events\fatherland\americas\canada.txt"
+event = "db\events\fatherland\americas\chile.txt"
+event = "db\events\fatherland\americas\colombia.txt"
+event = "db\events\fatherland\americas\cuba.txt"
+event = "db\events\fatherland\americas\ecuador.txt"
+event = "db\events\fatherland\americas\el_salvador.txt"
+event = "db\events\fatherland\americas\marshallplan.txt"
+event = "db\events\fatherland\americas\panama.txt"
+event = "db\events\fatherland\americas\paraguay.txt"
+event = "db\events\fatherland\americas\peru.txt"
+event = "db\events\fatherland\americas\uruguay.txt"
+event = "db\events\fatherland\americas\venezuela.txt"
+
+# ASIA
+event = "db\events\fatherland\asia\brunei.txt"
+event = "db\events\fatherland\asia\burma.txt"
+event = "db\events\fatherland\asia\ceylon.txt"
+event = "db\events\fatherland\asia\china.txt"
+event = "db\events\fatherland\asia\india.txt"
+event = "db\events\fatherland\asia\indochina.txt"
+event = "db\events\fatherland\asia\koreas.txt"
+event = "db\events\fatherland\asia\mongolia.txt"
+event = "db\events\fatherland\asia\nepal.txt"
+event = "db\events\fatherland\asia\new_zealand.txt"
+event = "db\events\fatherland\asia\philippines.txt"
+event = "db\events\fatherland\asia\pakistan.txt"
+event = "db\events\fatherland\asia\sinkiang.txt"
+event = "db\events\fatherland\asia\tibet.txt"
+event = "db\events\fatherland\asia\thailand.txt"
+
+# AXIS EUROPE
+event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
+event = "db\events\fatherland\axis_europe\Moscow.txt"
+
+# COMINTERN
+event = "db\events\fatherland\comintern\comintern_conference.txt"
+event = "db\events\fatherland\comintern\soviet_union.txt"
+
+# CRISIS
+event = "db\events\fatherland\crisis\abadan_crisis.txt"
+event = "db\events\fatherland\crisis\centralasia.txt"
+event = "db\events\fatherland\crisis\ira.txt"
+event = "db\events\fatherland\crisis\colonials.txt"
+event = "db\events\fatherland\crisis\sino_indian_war.txt"
+event = "db\events\fatherland\crisis\morocco_crisis.txt"
+
+# EUROPE
+event = "db\events\fatherland\europe\cyprus.txt"
+event = "db\events\fatherland\europe\freefrance.txt"
+event = "db\events\fatherland\europe\italy.txt"
+event = "db\events\fatherland\europe\nationalist spain.txt"
+event = "db\events\fatherland\europe\serbia.txt"
+event = "db\events\fatherland\europe\sweden.txt"
+event = "db\events\fatherland\europe\transylvania.txt"
+event = "db\events\fatherland\europe\turkey.txt"
+event = "db\events\fatherland\europe\unitedkingdom.txt"
+event = "db\events\fatherland\europe\vichyfrance.txt"
 
 # GER
 event = "db\events\fatherland\ger\ost.txt"
@@ -13,86 +92,6 @@ event = "db\events\fatherland\ger\generalgovernment.txt"
 event = "db\events\fatherland\ger\kaukasus.txt"
 event = "db\events\fatherland\ger\domestic.txt"
 
-
-# EUROPE
-event = "db\events\fatherland\europe\freefrance.txt"
-event = "db\events\fatherland\europe\italy.txt"
-#event = "db\events\fatherland\europe\nationalist spain.txt"
-event = "db\events\fatherland\europe\serbia.txt"
-event = "db\events\fatherland\europe\transylvania.txt"
-event = "db\events\fatherland\europe\vichyfrance.txt"
-event = "db\events\fatherland\europe\unitedkingdom.txt"
-
-# CRISIS
-event = "db\events\fatherland\crisis\abadan_crisis.txt"
-event = "db\events\fatherland\crisis\centralasia.txt"
-event = "db\events\fatherland\crisis\ira.txt"
-event = "db\events\fatherland\crisis\colonials.txt"
-event = "db\events\fatherland\crisis\sino_indian_war.txt"
-
-# ASIA
-event = "db\events\fatherland\asia\china.txt"
-event = "db\events\fatherland\asia\indochina.txt"
-event = "db\events\fatherland\asia\koreas.txt"
-event = "db\events\fatherland\asia\india.txt"
-event = "db\events\fatherland\asia\pakistan.txt"
-event = "db\events\fatherland\asia\tibet.txt"
-event = "db\events\fatherland\asia\sinkiang.txt"
-
-# COMINTERN
-event = "db\events\fatherland\comintern\comintern_conference.txt"
-event = "db\events\fatherland\comintern\soviet_union.txt"
-
-# AXIS EUROPE
-event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
-event = "db\events\fatherland\axis_europe\Moscow.txt"
-
-# AMERICAS
-event = "db\events\fatherland\americas\marshallplan.txt"
-
-# AFRICA
-event = "db\events\fatherland\africa\south_africa.txt"
-event = "db\events\fatherland\africa\ethiopia.txt"
-
-# Secret Weapons
-event = "db\events\secret_weapon_events.txt"
-
-#Mobilization Events
-event = "db\events\Mobilization.txt"
-event = "db\events\Mobilization_events.txt"
-event = "db\events\generic_decisions.txt"
-
-#Nuovi da verificare e aggiungere nel changelog
-# AFRICA
-event = "db\events\fatherland\africa\egypt.txt"
-event = "db\events\fatherland\africa\madagascar.txt"
-# AMERICAS
-event = "db\events\fatherland\americas\argentina.txt"
-event = "db\events\fatherland\americas\brazil.txt"
-event = "db\events\fatherland\americas\canada.txt"
-event = "db\events\fatherland\americas\chile.txt"
-event = "db\events\fatherland\americas\colombia.txt"
-event = "db\events\fatherland\americas\cuba.txt"
-event = "db\events\fatherland\americas\ecuador.txt"
-event = "db\events\fatherland\americas\el_salvador.txt"
-event = "db\events\fatherland\americas\panama.txt"
-event = "db\events\fatherland\americas\paraguay.txt"
-event = "db\events\fatherland\americas\peru.txt"
-event = "db\events\fatherland\americas\uruguay.txt"
-event = "db\events\fatherland\americas\venezuela.txt"
-# ASIA
-event = "db\events\fatherland\asia\burma.txt"
-event = "db\events\fatherland\asia\brunei.txt"
-event = "db\events\fatherland\asia\ceylon.txt"
-event = "db\events\fatherland\asia\mongolia.txt"
-event = "db\events\fatherland\asia\nepal.txt"
-event = "db\events\fatherland\asia\new_zealand.txt"
-event = "db\events\fatherland\asia\philippines.txt"
-event = "db\events\fatherland\asia\thailand.txt"
-# EUROPE
-event = "db\events\fatherland\europe\cyprus.txt"
-event = "db\events\fatherland\europe\sweden.txt"
-event = "db\events\fatherland\europe\turkey.txt"
 # MIDDLE EAST
 event = "db\events\fatherland\middle_east\iran.txt"
 event = "db\events\fatherland\middle_east\iran_crisis.txt"
@@ -105,5 +104,3 @@ event = "db\events\fatherland\middle_east\saudi_arabia.txt"
 event = "db\events\fatherland\middle_east\syria.txt"
 event = "db\events\fatherland\middle_east\united_arab_republic.txt"
 event = "db\events\fatherland\middle_east\yemen.txt"
-#FLAVOUR
-event = "db\events\fatherland\flavour.txt"

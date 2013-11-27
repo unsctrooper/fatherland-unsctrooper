@@ -1,40 +1,55 @@
 ################################################
-### KAUKASUS EVENTS made by Pako
+### RK KAUKASUS EVENTS made by Pako
 ################################################
-#### 92000 - U42 - Dissent and Revolts
+#### 92000 - U42 - Dissent and Riots
 #### 92001 - U42 - Cechenian uprising
-#### 92002 - U42 - Georgian Revolts and Unilateral Independence
-#### 92003 - GEO - Georgian Answer
+#### 92002 - U42 - Georgian Revolts and the declaration of unilateral independence
+	#### 92003 - GEO - Georgian position
 #### 92004 - U42 - Armenian revolt
 #### 92005 - U42 - Terrorism in RK
-#### 92006 - U42 - Reorganize RK
+#### 92006 - U42 - Is time to reorganize the RK ?
+	#### 92007 - U42 - Reorganize the RK
+		#### 92008 - U42 - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
+		#### 92009 - GER - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
+		#### 92010 - TRA - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact		
+#### 92011 - GER - Offer Armenia to Turkey
+#### 92012 - TUR - Turkish answer
+		#### 92013 - GER - Germany and Turkey - Trebizond Conference
+		#### 92013 - TUR - Germany and Turkey - Trebizond Conference
 ################################################
 
 ################################################
-#### 92000 - U42 - Dissent and Revolts
+#### 92000 - U42 - Dissent and Riots
 ################################################
 event = {
-	id = 92000 #Dissent and Revolts
+	id = 92000
 	random = no
 	country = U42	
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1952 }
 	
 	trigger = {
 		random = 50
 	}
 	
-	name = "Dissent and Revolts spread in the Reichkommissariat !"
-	desc = "In the RK Kaukasus the dissent has reached very high levels"
+	name = "Dissent and riots spread in the Reichkommissariat !"
+	desc = "In the RK Kaukasus the dissent has reached very high levels. All the minorities are organizing to fight the Axis occupation."
 	style = 2
 	picture = "news_paper"	
 	
-	date = { day = 1 month = may year = 1948 } 
-	offset = 100
-	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = ACTION_NAME_DAMN	
-		command = { type = dissent value = 15 }
-		command = { type = peacetime_ic_mod value = -5 }
+		name = "Damn!"	
+		ai_chance = 100
+		
+		command = { type = dissent value = 10 }
+		
+		command = { type = money value = -25 }
+		command = { type = supplies value = -50 }		
+		command = { type = oilpool value = -100 }				
+
 	}
 }
 
@@ -42,9 +57,13 @@ event = {
 #### 92001 - U42 - Cechenian uprising
 ################################################
 event = {
-	id = 92001 #Cechenian uprising
+	id = 92001
 	random = no
 	country = U42	
+	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
 	
 	trigger = {
 		event = 92000
@@ -52,29 +71,31 @@ event = {
 	}
 	
 	name = "Cechenian uprising !"
-	desc = "In Grozny, the insurgents occupied the city"
+	desc = "In Grozny, the cechenian rebels capture the city."
 	style = 2
 	picture = "news_paper"	
 	
-	date = { day = 1 month = may year = 1948 } 
-	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
-
 	action = {
-		name = ACTION_NAME_DAMN	
+		name = "Send troops now !"	
+		ai_chance = 100
+		
+		command = { type = dissent value = 10 }
+		
 		command = { type = revolt which = 702 } #Grozny
 		command = { type = revolt which = 702 } #Grozny
 		command = { type = revolt which = 702 } #Grozny
 		
-		command = { type = dissent value = 10 }
+		command = { type = money value = -25 }
+		command = { type = supplies value = -50 }		
+		command = { type = oilpool value = -25 }
 	}
 }
 
 ################################################
-#### 92002 - U42 - Georgian Revolt
+#### 92002 - U42 - Georgian Revolts and the declaration of unilateral independence
 ################################################
 event = {
-	id = 92002 #Georgian Revolt
+	id = 92002
 	random = no
 	country = U42	
 	
@@ -84,7 +105,7 @@ event = {
 	}
 	
 	name = "Georgian Revolt !"
-	desc = "Georgian declare an unilateral independence !"
+	desc = "The georgian rebels declare an unilateral independence in Tblisi !"
 	style = 2
 	picture = "news_paper"	
 	
@@ -93,54 +114,68 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "Is unacceptable we will win back by force"	
-		ai_chance = 60
-		
-		command = { type = revolt which = 707 }
-		command = { type = revolt which = 708 }
-		command = { type = revolt which = 709 }
+		name = "We can't accept their unilateral independence !"	
+		ai_chance = 70
 		
 		command = { type = dissent value = 10 }
 		
-		command = { type = independence which = GEO value = 0 when = 1 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		command = { type = revolt which = 708 } #Kutaisi
+		
+		command = { type = revolt which = 709 } #Tbilisi
+		command = { type = revolt which = 709 } #Tbilisi
+		command = { type = revolt which = 709 } #Tbilisi
+		
+		command = { type = revolt which = 710 } #Sukumi
+		
+		command = { type = independence which = GEO value = 0 when = 1 }
 		
 		command = { type = war which = GEO }
 	}
 	
 	action = {
 		name = "Ok, but they must remain in our sphere of influence"	
-		ai_chance = 40
+		ai_chance = 35
 		
 		command = { type = dissent value = 25 }
 		
-		command = { type = independence which = GEO value = 0 when = 0 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		command = { type = removecore which = 708 } #Kutaisi
+		command = { type = removecore which = 709 } #Tbilisi
+		command = { type = removecore which = 710 } #Sukumi
+		command = { type = removeclaim which = 708 } #Kutaisi
+		command = { type = removeclaim which = 709 } #Tbilisi
+		command = { type = removeclaim which = 710 } #Sukumi
+		
+		command = { type = independence which = GEO value = 0 when = 0 }
 
 		command = { type = make_puppet which = GEO }
-		
+						
 		command = { type = trigger which = 92003 }
 	}
 	
 	action = {
-		name = "Do nothing ..."	
-		ai_chance = 10
+		name = "Let them go their way"	
+		ai_chance = 5
 		
 		command = { type = dissent value = 50 }
 		
-		command = { type = independence which = GEO value = 0 when = 1 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
+		command = { type = removecore which = 708 } #Kutaisi
+		command = { type = removecore which = 709 } #Tbilisi
+		command = { type = removecore which = 710 } #Sukumi
 		
+		command = { type = independence which = GEO value = 0 when = 1 }
 	}
 }
 
 ################################################
-#### 92003 - GEO - Georgian Answer
+#### 92003 - GEO - Georgian position
 ################################################
 event = {
-	id = 92003 #Georgian Answer
+	id = 92003 
 	random = no
 	country = GEO	
 	
-	name = "Georgian Answer !"
-	desc = "The Reich wants us to re-enter under his sphere of influence, for independence are we willing to accept?"
+	name = "Georgian Position"
+	desc = "The Reich recognize our independece but they wants we rest under its sphere of influence"
 	style = 2
 	picture = "news_paper"	
 	
@@ -149,16 +184,26 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "Yes, independence first !"	
-		command = { type = alliance value = U42 }
+		name = "Yes, we will be an independent nation into the Axis"	
+		
+		ai_chance = 50
+		
+		command = { type = alliance value = GER }
+		
+		command = { type = relation which = GER value = 200 }
+		command = { type = relation which = U42 value = 200 }
 		
 	}
 	
-		action = {
-		name = "No, we want a real independence !"	
-		command = { type = war value = U42 }
+	action = {
+		name = "No, we want a real and complete independence !"	
+		
+		ai_chance = 50
+
 		command = { type = end_puppet }
-	
+		
+		command = { type = war which = GER }
+		
 	}
 }
 
@@ -170,27 +215,26 @@ event = {
 	random = no
 	country = U42	
 	
+	date = { day = 1 month = may year = 1948 } 
+	offset = 25
+	deathdate = { day = 30 month = december year = 1963 }
+	
 	trigger = {
 		event = 92003
-		random = 80
+		random = 70
 	}
 	
 	name = "Armenian Revolt !"
-	desc = "The Armenian follow the examples of the georgians ... and try to revolt !"
+	desc = "The Armenian follow the examples of the georgians and fight for independence !"
 	style = 2
 	picture = "news_paper"	
 	
-	date = { day = 1 month = may year = 1948 } 
-	offset = 10
-	deathdate = { day = 30 month = december year = 1963 }
-
 	action = {
-		name = ACTION_NAME_DAMN	
-		command = { type = revolt which = 711 }
-		command = { type = revolt which = 711 }
+		name = "Clash the armenian bandits!"	
 		command = { type = dissent value = 10 }
-		#command = { type = independence which = ARM value = 0 when = 1 } # Country [tag] gains independence. value: [0]-units in the area change allegiance, [1]-they don't. When 0=normal, 1=force them to be democratic
-		#command = { type = war which = ARM }
+		
+		command = { type = revolt which = 711 } #Yerevan
+		command = { type = revolt which = 711 } #Yerevan
 	}
 }
 
@@ -207,8 +251,8 @@ event = {
 		random = 30
 	}
 	
-	name = "Bombing in RK Kaukasus !"
-	desc = "Bombing in RK Kaukasus !"
+	name = "Bomb in RK Kaukasus !"
+	desc = "Bomb in RK Kaukasus !"
 	style = 2
 	picture = "mittelmeerdivision2"	
 	
@@ -217,7 +261,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = ACTION_NAME_DAMN	
+		name = "Damn!"	
 		command = { type = dissent value = 10 }
 		command = { trigger = { random = 50 } type = supplies value = -100 }
 		command = { trigger = { random = 50 } type = oilpool value = -100 }
@@ -229,20 +273,20 @@ event = {
 }
 
 ################################################
-#### 92006 - U42 - Reorganize RK
+#### 92006 - U42 - Is time to reorganize the RK ?
 ################################################
 event = {
 	id = 92006 # Reorganize RK
 	random = no
 	country = U42	
-	persistent = yes
+	persistent = no
 	
 	trigger = {
 		dissent = 50
 	}
 	
-	name = "It's time to reorganize the RK ?"
-	desc = "Follow the dissent and the numerous events of terrorism ... It's time to reorganize the RK ?"
+	name = "Is time to reorganize the RK ?"
+	desc = "Follow the dissent and the numerous events of terrorism ... is time to reorganize the RK ?"
 	style = 2
 	picture = "mittelmeerdivision2"	
 	
@@ -251,7 +295,279 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = ACTION_NAME_DAMN	
-		command = { type = dissent value = -10 }
+		name = "Yes, we may reorganize our territories"
+		ai_chance = 80
+		
+		command = { type = dissent value = -30 }
+		
+		command = {	type = sleepevent which = 92005} #Terrorism
+		
+		command = { type = trigger which = 92007 }
+	}
+	
+	action = {
+		name = "No, continue the repression ! We need more repression !"
+		ai_chance = 20
+		
+		command = { type = dissent value = 10 }
+		
+	}
+}
+################################################
+#### 92007 - U42 - Reorganize the RK
+################################################
+event = {
+	id = 92007
+	random = no
+	country = U42	
+	
+	trigger = {
+		event = 92006
+	}
+	
+	name = "Reorganize the RK"
+	desc = "It's time to decide our new reorganization"
+	style = 2
+	picture = "mittelmeerdivision2"	
+
+	action = {
+		name = "The Orthodoxs (Armenia/Georgia) get their independence"
+		ai_chance = 20
+		
+		#GEORGIA
+		command = { type = removecore which = 709 } #Tbilisi
+		command = { type = removeclaim which = 708 } #Kutaisi
+		command = { type = removeclaim which = 709 } #Tbilisi
+		command = { type = removeclaim which = 710 } #Sukumi
+		
+		command = { type = independence which = GEO value = 0 when = 0 }
+
+		command = { type = make_puppet which = GEO }
+		
+		#ARMENIA
+		command = { type = removeclaim which = 711 } #Yerevan
+		command = { type = removeclaim which = 712 } 
+		
+		command = { type = independence which = ARM value = 0 when = 0 }
+
+		command = { type = make_puppet which = ARM }
+		
+		#NEW RK CAPITAL
+		command = { type = capital which = 713 } #Baku
+		
+		command = { type = trigger which = 92008 }
+
+	}
+	
+	action = {
+		name = "The Muslims (Azerbijan) get their independence"
+		ai_chance = 20
+		
+		#AZERBAIJAN
+		command = { type = removecore which = 713 } #Baku
+		command = { type = removeclaim which = 713 } 
+		command = { type = removeclaim which = 712 } 
+		command = { type = removeclaim which = 714 } 
+		
+		command = { type = independence which = AZB value = 0 when = 0 }
+
+		command = { type = make_puppet which = AZB }
+		
+		command = {	type = secedeprovince which = AZB value = 712 }
+		
+		command = { type = trigger which = 92008 }
+
+	}
+		
+	action = {
+		name = "The minorities get their independence"
+		ai_chance = 50
+		
+		#NEW RK CAPITAL
+		command = { type = capital which = 695 } #Sochi
+		
+		#GEORGIA
+		command = { type = removecore which = 709 } #Tbilisi
+		command = { type = removeclaim which = 708 } #Kutaisi
+		command = { type = removeclaim which = 709 } #Tbilisi
+		command = { type = removeclaim which = 710 } #Sukumi
+		
+		command = { type = independence which = GEO value = 0 when = 0 }
+
+		command = { type = make_puppet which = GEO }
+		
+		#ARMENIA
+		command = { type = removeclaim which = 711 } #Yerevan
+		command = { type = removeclaim which = 712 } 
+		
+		command = { type = independence which = ARM value = 0 when = 0 }
+
+		command = { type = make_puppet which = ARM }
+
+		#AZERBAIJAN
+		command = { type = removecore which = 713 } #Baku
+		command = { type = removeclaim which = 713 } 
+		command = { type = removeclaim which = 712 } 
+		command = { type = removeclaim which = 714 } 
+		
+		command = { type = independence which = AZB value = 0 when = 0 }
+
+		command = { type = make_puppet which = AZB }
+		
+		command = { type = trigger which = 92008 }
+
+	}
+		
+	action = {
+		name = "The minorities will rest under our boot"
+		ai_chance = 10
+		
+		command = { type = dissent value = 30 }
+	}
+		
+	action = {
+		name = ""
+		ai_chance = 100
+		
+		#COSSACKS
+		#695
+		#694
+		command = { type = removeclaim which = 693 } 
+		command = { type = removeclaim which = 696 } 		
+		command = { type = removeclaim which = 701 } 	
+		command = { type = removeclaim which = 702 } 		
+		command = { type = removeclaim which = 703 } 
+		command = { type = removeclaim which = 704 } 		
+		command = { type = removeclaim which = 705 } 		
+		command = { type = removeclaim which = 707 } 	
+		
+		command = { type = secedeprovince which = TRA value = 693 }
+		command = { type = secedeprovince which = TRA value = 696 }
+		command = { type = secedeprovince which = TRA value = 701 }
+		command = { type = secedeprovince which = TRA value = 702 }
+		command = { type = secedeprovince which = TRA value = 703 }
+		command = { type = secedeprovince which = TRA value = 704 }
+		command = { type = secedeprovince which = TRA value = 705 }	
+		command = { type = secedeprovince which = TRA value = 707 }	
+
+		command = { type = trigger which = 92008 }
+	}
+	
+}
+################################################
+#### 92008 - U42 - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
+################################################
+event = {
+	id = 92008
+	random = no
+	country = U42	
+	
+	trigger = {
+		event = 92007
+	}
+	
+	name = "Reorganize the RK"
+	desc = "We may made a new agreement with the Cossack Federation"
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+		action = {
+		name = "They can have the russian minorities area"
+		ai_chance = 80
+		
+		#NEW RK CAPITAL
+		command = { type = capital which = 695 } #Sochi
+		
+		#COSSACKS
+		#695
+		#694
+		command = { type = removeclaim which = 693 } 
+		command = { type = removeclaim which = 696 } 		
+		command = { type = removeclaim which = 701 } 	
+		command = { type = removeclaim which = 702 } 		
+		command = { type = removeclaim which = 703 } 
+		command = { type = removeclaim which = 704 } 		
+		command = { type = removeclaim which = 705 } 		
+		command = { type = removeclaim which = 707 } 	
+		
+		command = { type = secedeprovince which = TRA value = 693 }
+		command = { type = secedeprovince which = TRA value = 696 }
+		command = { type = secedeprovince which = TRA value = 701 }
+		command = { type = secedeprovince which = TRA value = 702 }
+		command = { type = secedeprovince which = TRA value = 703 }
+		command = { type = secedeprovince which = TRA value = 704 }
+		command = { type = secedeprovince which = TRA value = 705 }	
+		command = { type = secedeprovince which = TRA value = 707 }	
+		
+		command = { type = trigger which = 92009 }
+		
+	}
+	
+		
+	action = {
+		name = "Do nothing with them"
+		ai_chance = 20
+		
+	   	command = { type = relation which = TRA value = -100 }
+		
+	}
+}
+
+################################################
+#### 92009 - GER - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
+################################################
+event = {
+	id = 92009
+	random = no
+	country = GER	
+	
+	trigger = {
+		event = 92008
+	}
+	
+	name = "ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact"
+	desc = "A new agreement with the Cossack Federation"
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+	action = {
+	name = "Sign a new agreement with the Cossack Federation"
+	ai_chance = 100
+	
+		command = { type = guarantee which = GER where = TRA }	
+		command = { type = non_aggression which = GER where = TRA }
+		command = { type = relation which = TRA value = 200 }
+		command = { type = trigger which = 92010 }
+			
+	}
+	
+}
+
+################################################
+#### 92010 - TRA - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
+################################################
+event = {
+	id = 92010
+	random = no
+	country = TRA	
+	
+	trigger = {
+		event = 92008
+	}
+	
+	name = "ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact"
+	desc = "A new agreement with Germany"
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+		action = {
+		name = "Sign the new agreement with the Germany"
+		ai_chance = 100
+		
+		command = { type = guarantee which = TRA where = GER }
+		command = { type = access which = GER } 	
+		command = { type = non_aggression which = TRA where = GER }
+		command = { type = relation which = GER value = 200 }
+
 	}
 }

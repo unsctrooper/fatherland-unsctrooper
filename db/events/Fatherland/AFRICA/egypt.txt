@@ -1,54 +1,6 @@
-event = {
-	id = 8004901
-	country = EGY
-
-	name = "EVT_GOVTCHANGE_NAME"
-	desc = "EVT_GOVTCHANGE_DESC"
-	picture = "nwo\govt_change"
-	style = 1
-
-	date = { day = 0 month = january year = 1945 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1945 }
-
-	action = {
-		name = "OK"
-		ai_chance = 100
-		command = { type = headofstate which = 340011 } # Faruq I
-		command = { type = headofgovernment which = 340016 } # Mahmoud an Nukraishi Pasha
-		command = { type = foreignminister which = 340033 } # Ibrahim Abdel Hadi
-		command = { type = armamentminister which = 340047 } # Muhammad Mahmoud Pasha
-		command = { type = ministerofsecurity which = 340061 } # H.R.H. Nawal Zaki
-		command = { type = ministerofintelligence which = 340072 } # Pierre Lacau
-		command = { type = chiefofstaff which = 340078 } # Abdelhamid Soliman
-		command = { type = chiefofarmy which = 340083 } # Mohammed Naguib
-		command = { type = chiefofnavy which = 340087 } # Mohammed Azmy Pasha
-		command = { type = chiefofair which = 340093 } # Mohammed Azmy Pasha
-	}
-}
-
-event = {
-	id = 8004902
-	country = EGY
-
-	name = "EVT_GOVTCHANGE_NAME"
-	desc = "EVT_GOVTCHANGE_DESC"
-	picture = "nwo\govt_change"
-	style = 1
-
-	date = { day = 0 month = january year = 1946 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1946 }
-
-	action = {
-		name = "OK"
-		ai_chance = 100
-		command = { type = headofstate which = 340011 } # Faruq I
-		command = { type = headofgovernment which = 340021 } # Ismail Sidqi Pasha
-		command = { type = foreignminister which = 340039 } # Ahmed Lofti al Sayed
-		command = { type = ministerofsecurity which = 340070 } # Ali Hilali Pasha
-	}
-}
+################################################
+### EGYPT EVENTS made by Pako Original by NWO
+################################################
 
 event = {
 	id = 8004903
@@ -93,27 +45,6 @@ event = {
 }
 
 event = {
-	id = 8004905
-	country = EGY
-
-	name = "EVT_GOVTCHANGE_NAME"
-	desc = "EVT_GOVTCHANGE_DESC"
-	picture = "nwo\govt_change"
-	style = 1
-
-	date = { day = 0 month = january year = 1950 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
-
-	action = {
-		name = "OK"
-		ai_chance = 100
-		command = { type = headofstate which = 340011 } # Faruq I
-		command = { type = headofgovernment which = 340024 } # Mustafa an-Nahhas Pasha
-	}
-}
-
-event = {
 	id = 8004906
 	country = EGY
 
@@ -122,9 +53,9 @@ event = {
 	picture = "nwo\nasser_revolution_1952"
 	style = 1
 
-	date = { day = 0 month = january year = 1952 }
+	date = { day = 0 month = january year = 1950 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1952 }
+	deathdate = { day = 30 month = december year = 1951 }
 
 	action = {
 		name = "EVT_8004906_A"
@@ -155,9 +86,9 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 0 month = january year = 1953 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1953 }
+	date = { day = 0 month = january year = 1952 }
+	offset = 15
+	deathdate = { day = 30 month = february year = 1952 }
 
 	action = {
 		name = "EVT_8004907_A"
@@ -176,7 +107,7 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 0 month = january year = 1954 }
+	date = { day = 0 month = january year = 1953 }
 	offset = 360
 	deathdate = { day = 30 month = december year = 1961 }
 
