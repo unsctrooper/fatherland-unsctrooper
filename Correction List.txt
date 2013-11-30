@@ -1,6 +1,3 @@
 * USSR has a fleet in Finland Controlled Murask (Murmansk?)
-* Hungary never left Axis despite Germany letting them sort out the Transylvania crisis, so Romania is fighting the whole of Axis
-* Burma flag doesn't show up correctly in diplomacy or intelligence panel
 * Revision of mods.csv
-* Moving of picture from nwo dir under fatherland directory
-* Iran allied with Axis to fight Kurdistan after I withdrew support Bulgaria and Serbia eventually left Axis, but they are allied with Iran, by this time Iran was no longer in Axis, but it made peace with Kurdistan[/QUOTE]
+* Moving of events_pics bmp all under fatherland directory

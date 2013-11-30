@@ -196,7 +196,7 @@ event = {
 	name = ACTION_NAME_NEVER
 	ai_chance = 80
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -235,7 +235,7 @@ event = {
 	name = ACTION_NAME_NEVER
 	ai_chance = 70
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -264,7 +264,7 @@ event = {
 	name = ACTION_NAME_NEVER
 	ai_chance = 70
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -305,7 +305,7 @@ event = {
 	name = ACTION_NAME_NEVER
 	ai_chance = 60
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -353,7 +353,7 @@ event = {
 	name = CA_IND
 	ai_chance = 60
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -377,7 +377,7 @@ event = {
 	name = CA_AXI
 	ai_chance = 50
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -422,7 +422,7 @@ event = {
 	name = CA_IND # Independent path
 	ai_chance = 60
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }
@@ -436,7 +436,7 @@ event = {
 	name = CA_AXI # Pro-Axis
 	ai_chance = 50
 	command = { type = end_puppet }
-	command = { type = 	leave_alliance }
+	command = { type = 	leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	end_access which = SOV }
 	command = { type = set_domestic which = democratic value = 3 }
 	command = { type = set_domestic which = political_left value = 4 }

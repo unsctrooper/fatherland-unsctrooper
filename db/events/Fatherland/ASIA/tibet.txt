@@ -131,7 +131,7 @@ event = {
 	action = {
 		name = EVT_8015104_A #"Seek coperation risking submission"
 		ai_chance = 98
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		command = { type = dissent value = 5 }
 		command = { type = relation which = CHC value = 100 }
 		command = { type = access which = CHC }
@@ -140,7 +140,7 @@ event = {
 	action = {
 		name = EVT_8015104_B #"Let there be war"
 		ai_chance = 2
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		command = { type = war which = CHC }
 		command = { type = sleepevent value = 8015105 }
 	}
@@ -438,7 +438,7 @@ event = {
 	action = {
 		name = EVT_8015121_A
 		ai_chance = 75
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		command = { type = war which = CHI }
 	}
 	

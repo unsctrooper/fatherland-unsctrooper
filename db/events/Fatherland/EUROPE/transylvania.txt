@@ -132,7 +132,7 @@ event = {
 
 	action_a = {
 	name = ACTION_NAME_OK
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = set_relation which = GER value = -150 } 
 	}
 }
@@ -148,7 +148,7 @@ event = {
 
 	action_a = {
 	name = ACTION_NAME_OK
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	command = { type = set_relation which = GER value = -150 }
 	}
 }
@@ -227,7 +227,7 @@ event = {
 	action_b = {
 	name = ACTION_NAME_NEVER
 	ai_chance = 60
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	command = { type = 	non_aggression which = GER where = HUN }
 	command = { type = trigger which = 90000006 }
 	command = { type = set_relation which = GER value = -150 }
@@ -255,7 +255,7 @@ event = {
 	action_b = {
 	name = ACTION_NAME_NEVER
 	ai_chance = 60
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	command = { type = 	non_aggression which = GER where = ROM }
 	command = { type = set_relation which = GER value = -150 }
 	}
@@ -397,7 +397,7 @@ event = {
 	command = { type =	secedeprovince which = HUN value = 285 }
 	command = { type =	secedeprovince which = HUN value = 286 }
 	command = { type =	secedeprovince which = HUN value = 287 }
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	command = { type = 	non_aggression which = GER where = ROM }
 	command = { type = set_relation which = GER value = -100 }
 	command = { type = set_relation which = HUN value = -200 }
@@ -407,7 +407,7 @@ event = {
 	action_c = {
 	name = 90000009C
 	ai_chance = 50
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	command = { type = 	non_aggression which = GER where = ROM }
 	command = { type = set_relation which = GER value = -150 }
 	command = { type = set_relation which = HUN value = -200 }
@@ -452,7 +452,7 @@ event = {
 	command = { type =	secedeprovince which = ROM value = 296 }
 	command = { type =	secedeprovince which = ROM value = 292 }
 	command = { type =	secedeprovince which = ROM value = 293 }
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	non_aggression which = GER where = HUN }
 	command = { type = set_relation which = GER value = -100 }
 	command = { type = set_relation which = ROM value = -200 }
@@ -462,7 +462,7 @@ event = {
 	action_c = {
 	name = 90000010C
 	ai_chance = 50
-	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = 	non_aggression which = GER where = HUN }
 	command = { type = set_relation which = GER value = -150 }
 	command = { type = set_relation which = ROM value = -200 }

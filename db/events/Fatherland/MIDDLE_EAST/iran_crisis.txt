@@ -298,7 +298,7 @@ event = {
 	action = {
 		name = EVT_8500911_A
 		command = { type = end_puppet }
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		command = { type = end_access which = SOV }
 		command = { type = remove_division which = -1 }
 	}

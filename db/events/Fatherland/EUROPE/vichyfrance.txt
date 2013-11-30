@@ -721,7 +721,7 @@ id = 375
 			name = "375B"
 			ai_chance = 20
 			command = { type = dissent value = -3 } 
-			command = {	type = leave_alliance }
+			command = {	type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		    command = { type = war which = FRA }
 			command = { type = trigger which = 376 }
 }

@@ -58,7 +58,7 @@ event = {
 		command = { type = relation which = ENG value = -100 }
 		command = { type = end_puppet }
 		command = { type = end_access which = ENG }
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 	}
 	
 	action = {

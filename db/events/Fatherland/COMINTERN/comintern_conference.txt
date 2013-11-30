@@ -123,7 +123,7 @@ event = {
 				
                 command = { type = set_domestic which = interventionism value = -5 }
 				
-				command = { type = leave_alliance }
+				command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 				command = { type = end_access which = SOV }
 				command = { type = end_non_aggression which = SOV where = CHC }
 				command = { type = end_guarantee which = SOV where = CHC }
@@ -176,7 +176,7 @@ event = {
 				
                 command = { type = set_domestic which = interventionism value = -5 }
 				
-				command = { type = leave_alliance }
+				command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 				command = { type = end_access which = SOV }
 				command = { type = end_non_aggression which = SOV where = PRK }
 				command = { type = end_guarantee which = SOV where = PRK }

@@ -157,7 +157,7 @@ command = { type = domestic which = interventionism value = -3 }
 command = { type = event which = 90000534 where = FIN when = 14 }
 command = { type = event which = 90000542 where = HUN when = 14 }
 command = { type = event which = 90000543 where = ROM when = 14 }
-command = { type = leave_alliance }
+command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 command = { type = dissent value = 25 }
 }
 }
@@ -1258,7 +1258,7 @@ desc = "90000534DESC"
 
 action_a = {
 name = ACTION_NAME_OK
-command = { type = leave_alliance }
+command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 }
 }
 event = {
@@ -1274,7 +1274,7 @@ desc = "90000542DESC"
 
 action_a = {
 name = ACTION_NAME_OK
-command = { type = leave_alliance }
+command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 }
 }
 event = {
@@ -1290,7 +1290,7 @@ desc = "90000543DESC"
 
 action_a = {
 name = ACTION_NAME_OK
-command = { type = leave_alliance }
+command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 }
 }
 ############################

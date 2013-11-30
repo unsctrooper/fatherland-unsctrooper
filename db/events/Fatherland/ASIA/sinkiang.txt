@@ -180,7 +180,7 @@ event = {
 		name = EVT_8013806_B # See through the machinations
 		ai_chance = 10
 		command = { type = dissent value = 10 }
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		command = { type = end_puppet }
 		command = { type = war which = CHC }
 	}
@@ -255,7 +255,7 @@ event = {
 		name = EVT_8013809_B # We'll defend ourselves!
 		ai_chance = 20
 		command = { type = dissent value = 10 }
-		command = { type = leave_alliance }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		command = { type = end_puppet }
 		command = { type = war which = CHI }
 	}
