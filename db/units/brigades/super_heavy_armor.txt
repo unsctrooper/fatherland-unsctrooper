@@ -38,6 +38,7 @@ model = {
 	upgrade_time_factor = 0.8
 	upgrade_cost_factor = 0.6
 	speed_cap			= 9
+	b_07 = 0
 	equipment = { manpower = 2500 medium_armor = 84 heavy_armor = 4 }
 }
 
@@ -58,5 +59,7 @@ model = {
 	upgrade_time_factor = 0.8
 	upgrade_cost_factor = 0.6
 	speed_cap			= 9
+	medium_armor = 10
+	b_07 = 1
 	equipment = { manpower = 2500 medium_armor = 84 heavy_armor = 4 }
 }

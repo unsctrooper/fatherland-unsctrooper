@@ -592,6 +592,10 @@ technology =
   effects = {
   command = { type = new_model which = infantry value = 19 }
       command = { type = scrap_model which = infantry value = 18 }
+	  command = { type = new_model which = militia value = 10 }
+      command = { type = scrap_model which = militia value = 9 }
+	  command = { type = new_model which = garrison value = 10 }
+      command = { type = scrap_model which = garrison value = 9 }
 	  }
 	}
   #1979 INFANTRY
@@ -640,6 +644,10 @@ technology =
   effects = {
   command = { type = new_model which = infantry value = 21 }
       command = { type = scrap_model which = infantry value = 20 }
+	  command = { type = new_model which = militia value = 11 }
+      command = { type = scrap_model which = militia value = 10 }
+	  command = { type = new_model which = garrison value = 11 }
+      command = { type = scrap_model which = garrison value = 10 }
 	  }
 	}
 	#1989 INFANTRY

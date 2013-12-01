@@ -56,7 +56,7 @@ model = {
 	equipment = { nuclear_submarine = 1 manpower = 100 }
 }
 
-# 2 - Improved Nuclear Fast Attack Submarine (1963) -Sturgeon-class/Victor-class
+# 2 - Improved Nuclear Fast Attack Submarine (1963) -Sturgeon-class/Victor-class/Type XXX
 model = {
 	cost						= 2
 	buildtime					= 1300

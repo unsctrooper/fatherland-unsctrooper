@@ -168,7 +168,7 @@ model = {
 	equipment = { bomber = 100 manpower = 600 }
 }
 
-# 6 - Basic Turbojet Naval Bomber (1949) Lockheed P2V-3 Neptune/Martin P5M Marlin
+# 6 - Basic Turbojet Naval Bomber (1949) Lockheed P2V-3 Neptune/Martin P5M Marlin/Beriev Be-6
 model = {
 	cost 						= 22
 	buildtime					= 240
@@ -222,7 +222,7 @@ model = {
 	equipment = { bomber = 100 manpower = 600 }
 }
 
-# 8 - Advanced Turbojet Naval Bomber (1960) Hawker Siddeley Nimrod MR1/Breguet Atlantic/Lockheed P-3A Orion/Ilyushin Il-38
+# 8 - Advanced Turbojet Naval Bomber (1960) Hawker Siddeley Nimrod MR1/Breguet Atlantic/Lockheed P-3A Orion/Beriev Be-12
 model = {
 	cost 						= 24
 	buildtime					= 240

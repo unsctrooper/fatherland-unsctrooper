@@ -7,6 +7,8 @@ allowed_brigades = naval_torpedoes_s
 allowed_brigades = b_01
 allowed_brigades = b_14
 
+max_allowed_brigades = 3
+
 # 0 - Early Nuclear Heavy Cruiser (1957) - Long Beach/Bainbridge/Truxtun
 model = {
 	cost						= 3

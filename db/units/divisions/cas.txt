@@ -173,7 +173,7 @@ model = {
 	equipment = { bomber = 100 manpower = 200 }
 }
 
-# 7 - Improved Turbojet Close Air Support Aircraft (1966) Mig-27K/Dassault Mirage 5F/SEPECAT Jaguar A
+# 7 - Improved Turbojet Close Air Support Aircraft (1966) Mig-27K/Dassault Mirage 5F/SEPECAT Jaguar A/Nanchang Q-5
 model = {
 	cost 					= 23
 	buildtime	 			= 230
@@ -197,7 +197,7 @@ model = {
 	equipment = { bomber = 100 manpower = 200 }
 }
 
-# 8 - Improved Turbojet Close Air Support Aircraft (1975) Fairchild Republic A-10 Thunderbolt II/Dassault Mirage 2000D
+# 8 - Improved Turbojet Close Air Support Aircraft (1975) Fairchild Republic A-10 Thunderbolt II/Dassault Mirage 2000D/Sukhoi Su-25
 model = {
 	cost 					= 25
 	buildtime	 			= 230

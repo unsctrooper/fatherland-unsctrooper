@@ -14,7 +14,7 @@ technology =
   { id        = 6500
     name      = TECH_APP_LD_120_NAME
 
-    position = { x = 65 y = 3 }
+    position = { x = 1 y = 8 }
 	picture   = "DH6500"
     year      = 1800
     # ? 
@@ -59,7 +59,7 @@ technology =
   { id        = 6510
     name      = TECH_APP_LD_121_NAME
 
-    position = { x = 176 y = 3 }
+    position = { x = 112 y = 8 }
 	picture   = "DH6510"
     year      = 1870
     # ? 
@@ -87,7 +87,7 @@ technology =
   { id        = 6530
     name      = TECH_APP_LD_123_NAME
 
-    position = { x = 176 y = 20 }
+    position = { x = 223 y = 8 }
 	picture   = "DH6530"
     year      = 1907
     # ? 
@@ -115,7 +115,7 @@ technology =
   { id        = 6580
     name      = TECH_APP_LD_128_NAME
 
-    position = { x = 227 y = 37 }
+    position = { x = 334 y = 1 }
 	picture   = "DH6580"
     year      = 1907
     # ? 
@@ -140,7 +140,7 @@ technology =
   { id        = 6590
     name      = TECH_APP_LD_129_NAME
 
-    position = { x = 116 y = 37 }
+    position = { x = 334 y = 19 }
 	picture   = "DH6590"
     year      = 1907
     # ? 
@@ -165,14 +165,14 @@ technology =
 ######################################
   label =
   { tag      = TECH_CAT_WW
-    position = { x = 181 y = 52 }
+    position = { x = 1 y = 30 }
   }
   # Strong Point
   application =
   { id        = 6600
     name      = TECH_APP_LD_130_NAME
 
-    position = { x = 176 y = 64 }
+    position = { x = 1 y = 44 }
 	picture   = "DH6600"
     year      = 1914
     # ? 
@@ -199,7 +199,7 @@ technology =
   { id        = 6610
     name      = TECH_APP_LD_138_NAME
 
-    position = { x = 176 y = 81 }
+    position = { x = 112 y = 44 }
 	picture   = "DH6680"
     year      = 1914
     # ? 
@@ -224,7 +224,7 @@ technology =
   { id        = 6680
     name      = TECH_APP_LD_131_NAME
 
-    position = { x = 176 y = 98 }
+    position = { x = 223 y = 44 }
 	picture   = "DH6610"
     year      = 1914
     # ? 
@@ -260,7 +260,7 @@ technology =
   { id        = 6620
     name      = TECH_APP_LD_132_NAME
 
-    position = { x = 176 y = 115 }
+    position = { x = 334 y = 44 }
 	picture   = "DH6620"
     year      = 1914
     # ? 
@@ -286,7 +286,7 @@ technology =
   { id        = 6630
     name      = TECH_APP_LD_133_NAME
 
-    position = { x = 227 y = 132 }
+    position = { x = 460 y = 1 }
 	picture   = "DH6630"
     year      = 1915
     # ? 
@@ -321,7 +321,7 @@ technology =
   { id        = 6690
     name      = TECH_APP_LD_139_NAME
 
-    position = { x = 116 y = 132 }
+    position = { x = 576 y = 1 }
 	picture   = "DH6690"
     year      = 1915
     # ? 
@@ -346,7 +346,7 @@ technology =
   { id        = 6640
     name      = TECH_APP_LD_134_NAME
 
-    position = { x = 227 y = 149 }
+    position = { x = 460 y = 37 }
 	picture   = "DH6640"
     year      = 1915
     # ? 
@@ -378,7 +378,7 @@ technology =
   { id        = 6700
     name      = TECH_APP_LD_140_NAME
 
-    position = { x = 116 y = 149 }
+    position = { x = 576 y = 37 }
 	picture   = "DH6700"
     year      = 1916
     # ? 
@@ -414,7 +414,7 @@ technology =
   { id        = 6650
     name      = TECH_APP_LD_135_NAME
 
-    position = { x = 176 y = 166 }
+    position = { x = 508 y = 19 }
 	picture   = "DH6650"
     year      = 1916
     # ? 
@@ -449,7 +449,7 @@ technology =
   { id        = 6660
     name      = TECH_APP_LD_136_NAME
 
-    position = { x = 227 y = 183 }
+    position = { x = 460 y = 55 }
 	picture   = "DH6660"
     year      = 1917
     # ? 
@@ -479,7 +479,7 @@ technology =
   { id        = 6710
     name      = TECH_APP_LD_141_NAME
 
-    position = { x = 116 y = 183 }
+    position = { x = 576 y = 55 }
 	picture   = "DH6710"
     year      = 1917
     # ? 
@@ -518,7 +518,7 @@ technology =
   { id        = 6670
     name      = TECH_APP_LD_137_NAME
 
-    position = { x = 176 y = 200 }
+    position = { x = 508 y = 73 }
 	picture   = "DH6670"
     year      = 1918
     # ? 
@@ -552,14 +552,14 @@ technology =
 ######################################
   label =
   { tag      = TECH_CAT_IW
-    position = { x = 181 y = 218 }
+    position = { x = 1 y = 62 }
   }
   # Specialized-branch tactical experience
   application =
   { id        = 6540
     name      = TECH_APP_LD_124_NAME
 
-    position = { x = 227 y = 232 }
+    position = { x = 1 y = 76 }
 	picture   = "DH6540"
     year      = 1923
     # ? 
@@ -598,7 +598,7 @@ technology =
   { id        = 6550
     name      = TECH_APP_LD_125_NAME
 
-    position = { x = 116 y = 232 }
+    position = { x = 1 y = 94 }
 	picture   = "DH6550"
     year      = 1923
     # ? 
@@ -638,7 +638,7 @@ technology =
   { id        = 6910
     name      = TECH_APP_LD_160_NAME
 
-    position = { x = 176 y = 250 }
+    position = { x = 112 y = 85 }
 	picture   = "DH6910"
     year      = 1926
     # ? 
@@ -688,552 +688,19 @@ technology =
 	  command = { type = urban_defense which = land value = 5 } 
     }
   }
-  
-#########################################
-### People's War Doctrine Tree #######
-#########################################
-
-#######################################################################################################################################################################################################
-### I haven't changed the X and Y axises but i did delete 2 techs 14170 (Mobile Guerilla Warfare) and 14180 (Revolutionary base Areas Expansion). They seemed redundant. I changed around the pre-  ### 
-### prerequisites accordingly. Also, I changed protracted people's war to one of the doctrines you have to choose between. All of those doctrines now unlock the final level of the HQ.             ### 
-### we could also delete the SAM defense doctrine if needed and add some of its effects to other techs.                                                                                             ###
-#######################################################################################################################################################################################################
-
-#########################################
-### People’s War Doctrine #######
-#########################################
-  application = {
- id        = 14140
-    name      = TECH_APP_LD_114_NAME
-    
-    position  = { x = 345 y = 3 }
-	picture   = "14140"
-    year      = 1937
- #Protracted War Theory- infantry focus
-   component = { id = 14141 name = TECH_CMP_LD_114_1_NAME type = management difficulty = 7 }
-    #Avoiding Decisive Battles
-   component = { id = 14142 name = TECH_CMP_LD_114_2_NAME type = small_unit_tactics difficulty = 7 }
-    # Hit & Run Tactics
-   component = { id = 14143 name = TECH_CMP_LD_114_3_NAME type = training difficulty = 7 }
-    # Difficult Terrain Focus 
-   component = { id = 14144 name = TECH_CMP_LD_114_4_NAME type = management difficulty = 7 }
-    # Independent Resistance Cells
-   component = { id = 14145 name = TECH_CMP_LD_114_5_NAME type = decentralized_execution difficulty = 7 }
-
- required  = { 6300 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 0.50 }
-command = { type = building_prod_mod which = land_fort value = 10 }
-command = { type = deactivate which = 6310 }
-command = { type = tactical_withdrawal value = 4 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.1 }
-command = { type = morale which = infantry value = 5 }
-command = { type = morale which = bergsjaeger value = 5 }
-command = { type = morale which = militia value = 5 }
-command = { type = max_organization which = militia value = 5 }
-command = { type = max_organization which = infantry value = 5 }
-command = { type = max_organization which = bergsjaeger value = 5 }
-    }
-  }
-  
-#########################################
-### Rural Guerilla Tactics #######
-#########################################
-application = 
-{ id        = 14150
-    name      = TECH_APP_LD_115_NAME
-
-    position  = { x = 345 y = 21 }
-    picture   = "14150"
-    year      = 1938
-    # Trading Space for Time
-  component = { id = 14151 name = TECH_CMP_LD_115_1_NAME type = maneuver_tactics difficulty = 7 }
-    # Operations behind enemy lines
-  component = { id = 14152 name = TECH_CMP_LD_115_2_NAME type = individual_courage difficulty = 7 }
-    # Sabotage tactics
-  component = { id = 14153 name = TECH_CMP_LD_115_3_NAME type = individual_courage difficulty = 7 }
-    # decentralized planning
-  component = { id = 14154 name = TECH_CMP_LD_115_4_NAME type = decentralized_execution difficulty = 7 }
-    # targets of opportunity focus
-  component = { id = 14155 name = TECH_CMP_LD_115_5_NAME type = training difficulty = 7 }
- required  = { 6300 }
-    effects =
-    { 
-command = { type = surprise which = land value = 5 }
-command = { type = army_detection which = us value = 5 }
-command = { type = army_detection which = them value = -5 }
-command = { type = night_move which = hq value = 25 }
-command = { type = night_move which = infantry value = 25 }
-command = { type = night_attack which = infantry value = 5 }
-command = { type = night_defense which = infantry value = 15 }
-command = { type = night_move which = militia value = 25 }
-command = { type = night_attack which = militia value = 5 }
-command = { type = night_defense which = militia value = 15 }	
-command = { type = night_move which = bergsjaeger value = 25 }
-command = { type = night_attack which = bergsjaeger value = 5 }
-command = { type = night_defense which = bergsjaeger value = 15 }
-command = { type = tactical_withdrawal value = 10 }
-command = { type = counterattack value = 5 }
-command = { type = delay value = 5 }
-command = { type = ambush value = 5 }
-command = { type = encirclement value = 5 }
-command = { type = breakthrough value = 5 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.1 }
-command = { type = morale which = infantry value = 5 }
-command = { type = morale which = bergsjaeger value = 5 }
-command = { type = morale which = militia value = 5 }
-    }
-  }
-  
-#########################################
-### Revolutionary Base Areas #######
-#########################################
-application = 
-{ id        = 14160
-    name      = TECH_APP_LD_116_NAME
-
-    position  = { x = 345 y = 39 }
-    picture   = "14160"
-    year      = 1939
-# Ideological promotion
-component = { id = 14161 name = TECH_CMP_LD_116_1_NAME type = management difficulty = 8 }
-# Guerilla Warfare Experience
-component = { id = 14162 name = TECH_CMP_LD_116_2_NAME type = training difficulty = 8 }
-# Difficult Terrain as a Force Modifier Theory
-component = { id = 14163 name = TECH_CMP_LD_116_3_NAME type = infantry_focus difficulty = 7 }
-# Autonomous Recruiting Posts
-component = { id = 14164 name = TECH_CMP_LD_116_4_NAME type = decentralized_execution difficulty = 7 }
-# Revolutionary Base Areas Theory 
-component = { id = 14165 name = TECH_CMP_LD_116_5_NAME type = management difficulty = 7 }
- required  = { 14140 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 0.60 }
-command = { type = building_prod_mod which = land_fort value = 20 }
-command = { type = building_prod_mod which = infrastructure value = 20 }
-command = { type = trickleback_mod value = 1 }
-command = { type = attrition_mod value = 1 }
-command = { type = intelligence which = them value = -5 }
-command = { type = army_detection which = them value = -5 }
-command = { type = relative_manpower value = 5 }
-command = { type = new_model which = hq value = 3 }
-command = { type = scrap_model which = hq value = 2 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.1 }
-command = { type = build_time which = militia when = on_upgrade where = relative value = -5 }
-command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
-command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
-command = { type = build_time which = hq when = on_upgrade where = relative value = -10 }
-command = { type = max_organization which = militia value = 5 }
-command = { type = max_organization which = infantry value = 5 }
-command = { type = max_organization which = bergsjaeger value = 5 }
-command = { type = industrial_modifier which = supplies value = 2 }
-command = { type = desert_defense which = militia value = 2.5 }
-command = { type = mountain_defense which = militia value = 2.5 }
-command = { type = hill_defense which = militia value = 2.5 }
-command = { type = forest_defense which = militia value = 2.5 }
-command = { type = jungle_defense which = militia value = 2.5 }
-command = { type = swamp_defense which = militia value = 2.5 } 
-command = { type = mountain_defense which = bergsjaeger value = 5 }
-command = { type = hill_defense which = bergsjaeger value = 5 }
-command = { type = desert_defense which = infantry value = 2.5 }
-command = { type = mountain_defense which = infantry value = 2.5 }
-command = { type = hill_defense which = infantry value = 2.5 }
-command = { type = forest_defense which = infantry value = 2.5 }
-command = { type = jungle_defense which = infantry value = 2.5 }
-command = { type = swamp_defense which = infantry value = 2.5 }
-    }
-  }   
-#########################################
-### Asymmetric Warfare #######
-#########################################
-application = 
-{ id        = 14190
-    name      = TECH_APP_LD_119_NAME
-
-    position  = { x = 345 y = 57 }
-    picture   = "14190"
-    year      = 1945
-#Asymmetric warfare theory
-component = { id = 14191 name = TECH_CMP_LD_119_1_NAME type = management difficulty = 10 } 
-# Anti tank tactics
-component = { id = 14192 name = TECH_CMP_LD_119_2_NAME type = small_unit_tactics difficulty = 10 }
-# Anti air tactics
-component = { id = 14193 name = TECH_CMP_LD_119_3_NAME type = training difficulty = 10 }
-# Naval sabotage
-component = { id = 14194 name = TECH_CMP_LD_119_4_NAME type = individual_courage difficulty = 10 }
-#Terror Tactics
-component = { id = 14195 name = TECH_CMP_LD_119_5_NAME type = training difficulty = 10 }
- required  = { 14160 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 0.75 }
-command = { type = intelligence which = us value = 5  }
-command = { type = surprise which = land value = 5 }
-command = { type = army_detection which = us value = 5 }
-command = { type = intelligence which = them value = -5 }
-command = { type = army_detection which = them value = -5 }
-command = { type = tactical_withdrawal value = 10 }
-command = { type = delay value = 5 }
-command = { type = ambush value = 5 }
-command = { type = breakthrough value = 5 }
-command = { type = encirclement value = 5 }
-command = { type = counterattack value = 15 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.1 }
-command = { type = max_organization which = land value = 10 }
-command = { type = morale which = land value = 5 }
-    }
-  }
-#########################################
-### Positional Warfare #######
-#########################################
-application = 
-{ id        = 14200
-    name      = TECH_APP_LD_161_NAME
-
-    position  = { x = 345 y = 75 }
-	picture   = "14200"
-    year      = 1948
-# Demoralization of the enemy
-component = { id = 14201 name = TECH_CMP_LD_161_1_NAME type = training difficulty = 10 }
-# Depletion of enemy power
-component = { id = 14202 name = TECH_CMP_LD_161_2_NAME type = maneuver_tactics difficulty = 10 }
-# Urban Encirclement Doctrine
-component = { id = 14203 name = TECH_CMP_LD_161_3_NAME type = maneuver_tactics difficulty = 10 }
-# emboldened partisans
-component = { id = 14204 name = TECH_CMP_LD_161_4_NAME type = individual_courage difficulty = 10 }
-# Large-scale counteroffensives
-component = { id = 14205 name = TECH_CMP_LD_161_5_NAME type = large_unit_tactics difficulty = 10 }
- required  = { 14190 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 0.80 }
-command = { type = new_model which = hq value = 4 }
-command = { type = scrap_model which = hq value = 3 }
-command = { type = tactical_withdrawal value = 5 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.1 }
-command = { type = ambush value = 5 }
-command = { type = breakthrough value = 15 }
-command = { type = assault value = 15 }
-command = { type = counterattack value = 15 }
-command = { type = encirclement value = 15 }
-command = { type = max_organization which = land value = 10 }
-command = { type = morale which = land value = 15 }
-command = { type = muddy_attack which = land value = 2 }
-command = { type = plain_attack which = land value = 5 }
-command = { type = desert_attack which = land value = 2 }
-command = { type = mountain_attack which = land value = 2 }
-command = { type = hill_attack which = land value = 5 }
-command = { type = forest_attack which = land value = 5 }
-command = { type = jungle_attack which = land value = 2 }
-command = { type = swamp_attack which = land value = 2 }
-command = { type = urban_attack which = land value = 10 }
-command = { type = fort_attack which = land value = 10 }
-    }
-  } 
-#########################################
-### Protracted People’s War Doctrine ####### 
-#########################################
-application = 
-{ id        = 14220
-    name      = TECH_APP_LD_163_NAME
-
-    position  = { x = 345 y = 93 }
-    picture   = "14220"
-    year = 1960
-    # International Support
-component = { id = 14221 name = TECH_CMP_LD_163_1_NAME type = management difficulty = 10 }
-    # Do or Die Mentality
-component = { id = 14222 name = TECH_CMP_LD_163_2_NAME type = individual_courage difficulty = 10 }
-    # Ideological Struggle Sessions
-component = { id = 14223 name = TECH_CMP_LD_163_3_NAME type = management difficulty = 10 }
-    # Dispersed Fighting Groups
-component = { id = 14224 name = TECH_CMP_LD_163_4_NAME type = decentralized_execution difficulty = 10 }
-    # Underground Command and Control
-component = { id = 14225 name = TECH_CMP_LD_163_5_NAME type = centralized_execution difficulty = 10 }
-
- required  = { 14200 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 1.02 }
-command = { type = building_prod_mod which = land_fort value = 10 }
-command = { type = building_prod_mod which = infrastructure value = 15 }
-command = { type = intelligence which = us value = 25  }
-command = { type = surprise which = land value = 15 }
-command = { type = army_detection which = us value = 5 }
-command = { type = army_detection which = them value = -10 }
-command = { type = relative_manpower value = 5 }
-command = { type = tactical_withdrawal value = 5 }
-command = { type = ambush value = 5 }
-command = { type = delay value = 5 }
-command = { type = breakthrough value = 15 }
-command = { type = assault value = 15 }
-command = { type = encirclement value = 5 }
-command = { type = counterattack value = 5 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.1 }
-command = { type = max_organization which = land value = 10 }
-command = { type = morale which = land value = 15 }
-command = { type = new_model which = hq value = 5 }
-command = { type = scrap_model which = hq value = 4 }
-command = { type = night_move which = land value = 15 }
-command = { type = deactivate which = 14240 } #Urban Insurgency
-command = { type = deactivate which = 14250 } #Folk & Faith
-command = { type = deactivate which = 14260 } #Modern People's War
-command = { type = deactivate which = 14230 } #Focalism
-    }
-  }
-  
-#########################################
-### Focalism #######
-#########################################
-application = 
-{ id        = 14230
-    name      = TECH_APP_LD_164_NAME
-
-    position  = { x = 345 y = 111 }
-    picture   = "14230"
-    year      = 1960
-# People’s War Experience
-component = { id = 14231 name = TECH_CMP_LD_164_1_NAME type = infantry_focus difficulty = 5 }
-# fast-moving paramilitary groups
-component = { id = 14232 name = TECH_CMP_LD_164_2_NAME type = small_unit_tactics difficulty = 15 }
-# vanguardism
-component = { id = 14233 name = TECH_CMP_LD_164_3_NAME type = centralized_execution difficulty = 30 }
-# Jumpstarting the revolution Doctrine
-component = { id = 14234 name = TECH_CMP_LD_164_4_NAME type = individual_courage difficulty = 20 }
-# Militia and Conventional Forces Cooperation
-component = { id = 14235 name = TECH_CMP_LD_164_5_NAME type = centralized_execution difficulty = 20 }
-
- required  = { 14200 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 1.00 }
-command = { type = trickleback_mod value = 1 }
-command = { type = attrition_mod value = 1 }
-command = { type = deactivate which = 14240 } #Urban Insurgency
-command = { type = deactivate which = 14250 } #Folk & Faith
-command = { type = deactivate which = 14260 } #Modern People's War
-command = { type = deactivate which = 14220 } #Protracted People's War
-command = { type = surprise which = land value = 5 }
-command = { type = army_detection which = us value = 5 }
-command = { type = intelligence which = them value = -25 }
-command = { type = army_detection which = them value = -15 }
-command = { type = hq_supply_eff value = 5 }
-command = { type = sce_frequency value = 0.5 }
-command = { type = max_organization which = land value = 15 }
-command = { type = morale which = land value = 5 }
-command = { type = delay value = 5 }
-command = { type = breakthrough value = 15 }
-command = { type = assault value = 5 }
-command = { type = counterattack value = 5 }
-command = { type = encirclement value = 15 }
-command = { type = ambush value = 15 }
-command = { type = new_model which = hq value = 5 }
-command = { type = scrap_model which = hq value = 4 }
-command = { type = tactical_withdrawal value = 5 }
-command = { type = hill_attack which = land value = 5 }
-command = { type = jungle_attack which = land value = 5 }
-command = { type = hill_defense which = land value = 5 }
-command = { type = jungle_defense which = land value = 5 }
-    }
-  }
-#########################################
-### Urban Insurgency Focus #######
-#########################################
-application = 
-{ id        = 14240
-    name      = TECH_APP_LD_165_NAME
-
-    position  = { x = 345 y = 129 }
-    picture   = "14240"
-    year      = 1960
-    # Foreign Support Focus
-   component = { id = 14241 name = TECH_CMP_LD_165_1_NAME type = management difficulty = 20 }
-    # Terrorism
-   component = { id = 14242 name = TECH_CMP_LD_165_2_NAME type = small_unit_tactics difficulty = 20 }
-    # Advanced Ambushes
-   component = { id = 14243 name = TECH_CMP_LD_165_3_NAME type = training difficulty = 20 }
-    # Assassinations
-   component = { id = 14244 name = TECH_CMP_LD_165_4_NAME type = decentralized_execution difficulty = 20 }
-    # Urban Anti-tank tactics
-   component = { id = 14245 name = TECH_CMP_LD_165_5_NAME type = individual_courage difficulty = 20 }
-
- required  = { 14200 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 1.00 }
-command = { type = trickleback_mod value = 1 }
-command = { type = attrition_mod value = 1 }
-command = { type = deactivate which = 14230 } #Focalism
-command = { type = deactivate which = 14250 } #Folk & Faith
-command = { type = deactivate which = 14260 } #Modern People's War
-command = { type = deactivate which = 14220 } #Protracted People's War
-command = { type = intelligence which = us value = 15  }
-command = { type = surprise which = land value = 15 }
-command = { type = army_detection which = us value = 5 }
-command = { type = intelligence which = them value = -5 }
-command = { type = army_detection which = them value = -5 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = new_model which = hq value = 5 }
-command = { type = scrap_model which = hq value = 4 }
-command = { type = sce_frequency value = 0.3 }
-command = { type = urban_attack which = infantry value = 15 }
-command = { type = urban_defense which = infantry value = 25 }
-command = { type = urban_defense which = militia value = 25 }
-command = { type = urban_attack which = militia value = 15 }
-command = { type = urban_defense which = land value = 15 }
-command = { type = urban_attack which = land value = 15 }
-command = { type = hard_attack which = infantry value = 5 }
-command = { type = soft_attack which = infantry value = 5 }
-command = { type = hard_attack which = militia value = 2 }
-command = { type = soft_attack which = militia value = 2 }
-command = { type = max_organization which = land value = 5 }
-command = { type = morale which = land value = 5 }
-command = { type = delay value = 5 }
-command = { type = ambush value = 25 }
-command = { type = tactical_withdrawal value = 15 }
-    }
-  }  
-#########################################
-### Folk and Faith Focus  #######
-#########################################
-application =
-{ id        = 14250
-    name      = TECH_APP_LD_166_NAME
-
-    position  = { x = 345 y = 147 }
-    picture   = "14250"
-    year      = 1960
-# ashes of his fathers and the temples of his gods worldview
-component = { id = 14251 name = TECH_CMP_LD_166_1_NAME type = management difficulty = 10 }
-# Freedom Fighter Mentality
-component = { id = 14252 name = TECH_CMP_LD_166_2_NAME type = infantry_focus difficulty = 20 }
-# Appeals to Religious and Ethnic identity
-component = { id = 14253 name = TECH_CMP_LD_166_3_NAME type = training difficulty = 10 }
-# Asymmetric warfare Tactics
-component = { id = 14254 name = TECH_CMP_LD_166_4_NAME type = individual_courage difficulty = 30 }
-# Loosly organized cells
-component = { id = 14255 name = TECH_CMP_LD_166_5_NAME type = decentralized_execution difficulty = 20 }
-
- required  = { 14200 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 1.10 }
-command = { type = trickleback_mod value = 10 }
-command = { type = attrition_mod value = 5 }
-command = { type = deactivate which = 14230 } #Focalism
-command = { type = deactivate which = 14240 } #Urban Insurgency
-command = { type = deactivate which = 14260 } #Modern People's War
-command = { type = deactivate which = 14220 } #Protracted People's War
-command = { type = new_model which = hq value = 5 }
-command = { type = scrap_model which = hq value = 4 }
-command = { type = surprise which = land value = 15 }
-command = { type = army_detection which = us value = 25 }
-command = { type = intelligence which = them value = -20 }
-command = { type = army_detection which = them value = -10 }
-command = { type = relative_manpower value = 15 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.3 }
-command = { type = hard_attack which = militia value = 1 }
-command = { type = soft_attack which = militia value = 1 }
-command = { type = hard_attack which = infantry value = 2 }
-command = { type = soft_attack which = infantry value = 2 }
-command = { type = delay value = 5 }
-command = { type = assault value = 5 }
-command = { type = counterattack value = 5 }
-command = { type = ambush value = 5 }
-command = { type = tactical_withdrawal value = 5 }
-command = { type = max_organization which = land value = 5 }
-command = { type = morale which = land value = 25 }
-    }
-  }  
-#########################################
-### People's War under Modern Conditions #######
-#########################################
-application = 
-{ id        = 14260
-    name      = TECH_APP_LD_167_NAME
-
-    position  = { x = 345 y = 165 }
-    picture   = "14260"
-    year      = 1970
-# Theory of Productive Forces
-component = { id = 14261 name = TECH_CMP_LD_167_1_NAME type = mathematics difficulty = 10 }
-# Military Modernization
-component = { id = 14262 name = TECH_CMP_LD_167_2_NAME type = technical_efficiency difficulty = 30 }
-# Military de-politicization
-component = { id = 14263 name = TECH_CMP_LD_167_3_NAME type = management difficulty = 10 }
-# extended depth of defense
-component = { id = 14264 name = TECH_CMP_LD_167_4_NAME type = centralized_execution difficulty = 30 }
-# C3I nodes survivability
-component = { id = 14265 name = TECH_CMP_LD_167_5_NAME type = industrial_engineering difficulty = 30 }
-
- required  = { 14200 }
-    effects =
-    { 
-command = { type = ground_def_eff value = 1.00 }
-command = { type = new_model which = hq value = 5 }
-command = { type = scrap_model which = hq value = 4 }
-command = { type = deactivate which = 14230 } #Focalism
-command = { type = deactivate which = 14240 } #Urban Insurgency
-command = { type = deactivate which = 14250 } #Folk & Faith
-command = { type = deactivate which = 14220 } #Protracted People's War
-command = { type = trickleback_mod value = 1 }
-command = { type = attrition_mod value = 1 }
-command = { type = intelligence which = us value = 15  }
-command = { type = intelligence which = them value = -5 }
-command = { type = surprise which = land value = 5 }
-command = { type = army_detection which = us value = 10 }
-command = { type = army_detection which = them value = -5 }
-command = { type = wartime_ic_mod value = 10 }
-command = { type = hq_supply_eff value = 3 }
-command = { type = sce_frequency value = 0.3 }
-command = { type = muddy_defense which = land value = 5 }
-command = { type = plain_defense which = land value = 5 }
-command = { type = desert_defense which = land value = 5 }
-command = { type = mountain_defense which = land value = 5 }
-command = { type = hill_defense which = land value = 5 }
-command = { type = forest_defense which = land value = 5 }
-command = { type = jungle_defense which = land value = 5 }
-command = { type = swamp_defense which = land value = 5 }
-command = { type = urban_defense which = land value = 5 }
-command = { type = max_organization which = land value = 20 }
-command = { type = morale which = land value = 5 }
-command = { type = muddy_attack which = armor value = 5 }
-command = { type = plain_attack which = armor value = 15 }
-command = { type = desert_attack which = armor value = 5 }
-command = { type = hill_attack which = armor value = 5 }
-command = { type = forest_attack which = armor value = 5 }
-command = { type = urban_attack which = armor value = 5 }
-command = { type = fort_attack which = armor value = 5 }
-command = { type = muddy_attack which = mechanized value = 5 }
-command = { type = plain_attack which = mechanized value = 15 }
-command = { type = desert_attack which = mechanized value = 5 }
-command = { type = hill_attack which = mechanized value = 5 }
-command = { type = forest_attack which = mechanized value = 5 }
-command = { type = urban_attack which = mechanized value = 5 }
-command = { type = fort_attack which = mechanized value = 5 }
-    }
-  }
 ######################################
 # Armor Division Formation
 ######################################
   label =
   { tag      = TECH_CAT_ARMOR
-    position = { x = 5 y = 169 }
+    position = { x = 334 y = 70 }
   }
   # Armored Division formations
   application =
   { id        = 6900
     name      = TECH_APP_LD_90_NAME
 
-    position  = { x = 5 y = 184 }
+    position  = { x = 334 y = 84 }
 	picture   = "DH6900"
     year      = 1934
     # Infantry-Tank Combined Combat Theory
@@ -1281,12 +748,16 @@ command = { type = fort_attack which = mechanized value = 5 }
 ##########################################################
 # MOBILITY FOCUS Path (GER)
 ##########################################################
+  label =
+  { tag      = TECH_CAT_MOBILITY
+    position = { x = 1 y = 112 }
+  }
   # Mobility Focus Doctrine
   application =
   { id        = 6210
     name      = TECH_APP_LD_21_NAME
 
-    position  = { x = 60 y = 277 }
+    position  = { x = 1 y = 126 }
 	picture   = "6210"
     year      = 1930
     # Motorized Reconnaissance
@@ -1320,7 +791,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6220
     name      = TECH_APP_LD_22_NAME
 
-    position = { x = 60 y = 294 }
+    position = { x = 112 y = 126 }
 	picture   = "6220"
     year      = 1937
     # Assault detachments
@@ -1364,7 +835,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6250
     name      = TECH_APP_LD_25_NAME
 
-    position  = { x = 116 y = 311 }
+    position  = { x = 223 y = 119 }
 	picture   = "6250"
     year      = 1937
     # Decentralized field artillery
@@ -1421,7 +892,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6260
     name      = TECH_APP_LD_26_NAME
 
-    position  = { x = 116 y = 328 }
+    position  = { x = 223 y = 137 }
 	picture   = "6260"
     year      = 1938
     # Concentrated combined arms employment
@@ -1474,7 +945,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6230
     name      = TECH_APP_LD_23_NAME
 
-    position  = { x = 5 y = 311 }
+    position  = { x = 334 y = 119 }
 	picture   = "6230"
     year      = 1939
     # Mobile Operational Deployments
@@ -1511,7 +982,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6240
     name      = TECH_APP_LD_24_NAME
 
-    position  = { x = 5 y = 328 }
+    position  = { x = 334 y = 137 }
 	picture   = "6240"
     year      = 1940
     # Mobile reserves
@@ -1550,7 +1021,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6270
     name      = TECH_APP_LD_27_NAME
 
-    position  = { x = 60 y = 345 }
+    position  = { x = 449 y = 126 }
 	picture   = "6270"
     year      = 1941
     # Self propelled support elements
@@ -1578,7 +1049,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6290
     name      = TECH_APP_LD_29_NAME
 
-    position  = { x = 116 y = 362 }
+    position  = { x = 565 y = 119 }
 	picture   = "6290"
     year      = 1943
     # Deep reconnaissance focus
@@ -1607,7 +1078,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6280
     name      = TECH_APP_LD_28_NAME
 
-    position  = { x = 5 y = 362 }
+    position  = { x = 565 y = 137 }
 	picture   = "6280"
     year      = 1943
     # Fluid battle mentality
@@ -1630,12 +1101,16 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = sce_frequency value = 0.2 }
     }
   }
+    label =
+  { tag      = TECH_CAT_MOBILITY_CW
+    position = { x = 1 y = 152 }
+  }
   # Modern Blitzkrieg
   application =
   { id        = 14100
     name      = TECH_APP_LD_110_NAME
 
-    position  = { x = 60 y = 379 }
+    position  = { x = 1 y = 166 }
 	picture   = "14100"
     year      = 1947
     component = { id = 14101 name = TECH_CMP_LD_10_3_NAME type = combined_arms_focus difficulty = 8 }
@@ -1669,7 +1144,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6720
     name      = TECH_APP_LD_142_NAME
 
-    position = { x = 60 y = 396 }
+    position = { x = 112 y = 166 }
 	picture   = "DH6720"
     year      = 1948
     # ? 
@@ -1699,7 +1174,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6740
     name      = TECH_APP_LD_144_NAME
 
-    position = { x = 116 y = 413 }
+    position = { x = 223 y = 157 }
 	picture   = "2170"
     year      = 1953
     # ? 
@@ -1757,9 +1232,9 @@ command = { type = fort_attack which = mechanized value = 5 }
   application =
   { id        = 6730
     name      = TECH_APP_LD_143_NAME
-    position = { x = 5 y = 413 }
-	position = { x = 235 y = 413 }
-	position = { x = 465 y = 413 }
+    position = { x = 223 y = 175 }
+	position = { x = 223 y = 257 }
+	position = { x = 223 y = 337 }
 	picture   = "DH6730"
     year      = 1950
     # ? 
@@ -1793,7 +1268,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6810
     name      = TECH_APP_LD_151_NAME
 
-    position = { x = 116 y = 430 }
+    position = { x = 334 y = 157 }
 	picture   = "10100"
     year      = 1955
     # ? 
@@ -1814,6 +1289,8 @@ command = { type = fort_attack which = mechanized value = 5 }
 	  command = { type = morale which = land value = 1 }
       command = { type = breakthrough value = 15 }
       command = { type = assault value = 15 }
+	  command = { type = new_model which = hq value = 6 }
+	  command = { type = scrap_model which = hq value = 5 }
     }
   }
   # Aircavalry Doctrine
@@ -1821,9 +1298,9 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6750
     name      = TECH_APP_LD_145_NAME
 	
-    position = { x = 5 y = 430 }
-	position = { x = 235 y = 430 }	
-	position = { x = 465 y = 430 }
+    position = { x = 334 y = 175 }
+	position = { x = 334 y = 257 }	
+	position = { x = 334 y = 337 }
 	picture   = "DH6750"
     year      = 1955
     # ? 
@@ -1853,9 +1330,9 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6760
     name      = TECH_APP_LD_146_NAME
 	
-    position = { x = 116 y = 447 }
-	position = { x = 346 y = 447 }
-	position = { x = 576 y = 447 }
+    position = { x = 449 y = 157 }
+	position = { x = 449 y = 257 }
+	position = { x = 449 y = 337 }
 	picture   = "10030"
     year      = 1960
     # ? 
@@ -1884,7 +1361,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6820
     name      = TECH_APP_LD_152_NAME
 
-    position = { x = 5 y = 447 }
+    position = { x = 449 y = 175 }
 	picture   = "10080"
     year      = 1963
     # ? 
@@ -1905,6 +1382,8 @@ command = { type = fort_attack which = mechanized value = 5 }
 	  command = { type = tactical_withdrawal value = 3 }
       command = { type = encirclement value = 10 }
       command = { type = assault value = 5 }
+	  command = { type = new_model which = hq value = 7 }
+	  command = { type = scrap_model which = hq value = 6 }
     }
   }  
   # Unified Axis Doctrine
@@ -1912,7 +1391,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6830
     name      = TECH_APP_LD_153_NAME
 
-    position = { x = 60 y = 464 }
+    position = { x = 565 y = 166 }
 	picture   = "DH6840"
     year      = 1970
     # ? 
@@ -1935,16 +1414,22 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = breakthrough value = 5 }
       command = { type = encirclement value = 3 }
       command = { type = assault value = 5 }
+	  command = { type = new_model which = hq value = 8 }
+	  command = { type = scrap_model which = hq value = 7 }
     }
   }  
 ######################################  
 # Manpower Focus
 ######################################
+    label =
+  { tag      = TECH_CAT_MANPOWER
+    position = { x = 1 y = 192 }
+  }
   application =
   { id        = 6570
     name      = TECH_APP_LD_127_NAME
 
-    position = { x = 290 y = 277 }
+    position = { x = 1 y = 206 }
 	picture   = "DH6570"
     year      = 1930
     # ? 
@@ -1978,7 +1463,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6300
     name      = TECH_APP_LD_30_NAME
 
-    position  = { x = 290 y = 294 }
+    position  = { x = 112 y = 206 }
 	picture   = "6300"
     year      = 1936
     # High Echelon Fire Support
@@ -2004,7 +1489,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6310
     name      = TECH_APP_LD_31_NAME
 
-    position  = { x = 290 y = 311 }
+    position  = { x = 223 y = 206 }
 	picture   = "6310"
     year      = 1937
     # Artillery divisions
@@ -2044,7 +1529,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6320
     name      = TECH_APP_LD_32_NAME
 
-    position  = { x = 346 y = 328 }
+    position  = { x = 334 y = 199 }
 	picture   = "6320"
     year      = 1940
     # Artillery groups
@@ -2074,7 +1559,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6330
     name      = TECH_APP_LD_33_NAME
 
-    position  = { x = 235 y = 328 }
+    position  = { x = 334 y = 217 }
 	picture   = "6330"
     year      = 1940
     # Mechanized forward elements
@@ -2123,7 +1608,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6340
     name      = TECH_APP_LD_34_NAME
 
-    position  = { x = 346 y = 345 }
+    position  = { x = 449 y = 199 }
 	picture   = "6340"
     year      = 1941
     # Counterpreparating artillery fire
@@ -2163,7 +1648,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6350
     name      = TECH_APP_LD_35_NAME
 
-    position  = { x = 235 y = 345 }
+    position  = { x = 449 y = 217 }
 	picture   = "6350"
     year      = 1941
     # Operational deception 
@@ -2191,7 +1676,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6370
     name      = TECH_APP_LD_37_NAME
 
-    position  = { x = 346 y = 362 }
+    position  = { x = 565 y = 199 }
 	picture   = "6370"
     year      = 1942
     # Airmobile combined-arms formations 
@@ -2225,7 +1710,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6360
     name      = TECH_APP_LD_36_NAME
 
-    position  = { x = 235 y = 362 }
+    position  = { x = 565 y = 217 }
 	picture   = "6360"
     year      = 1943
     # Bind enemy in depth-operations
@@ -2257,12 +1742,16 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = sce_frequency value = 0.25 }
     }
   }
+      label =
+  { tag      = TECH_CAT_MANPOWER_CW
+    position = { x = 1 y = 232 }
+  }
   # Mechanized Wave
   application =
   { id        = 14060
     name      = TECH_APP_LD_106_NAME
 
-    position  = { x = 290 y = 379 }
+    position  = { x = 1 y = 246 }
 	picture   = "14060"
     year      = 1946
     # ?
@@ -2301,7 +1790,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6770
     name      = TECH_APP_LD_147_NAME
 
-    position = { x = 290 y = 396 }
+    position = { x = 112 y = 246 }
 	picture   = "DH6770"
     year      = 1948
     # ? 
@@ -2337,7 +1826,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6780
     name      = TECH_APP_LD_148_NAME
 
-    position = { x = 346 y = 413 }
+    position = { x = 223 y = 239 }
 	picture   = "1280"
     year      = 1952
     # ? 
@@ -2364,7 +1853,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6860
     name      = TECH_APP_LD_156_NAME
 
-    position = { x = 346 y = 430 }
+    position = { x = 334 y = 239 }
 	picture   = "1300"
     year      = 1957
     # ? 
@@ -2386,6 +1875,8 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = encirclement value = 7 }
       command = { type = assault value = 3 }
       command = { type = ambush value = 5 }
+	  command = { type = new_model which = hq value = 6 }
+	  command = { type = scrap_model which = hq value = 5 }
     }
   }  
   # Realistic Threat and Containment
@@ -2393,7 +1884,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6870
     name      = TECH_APP_LD_157_NAME
 
-    position = { x = 235 y = 447 }
+    position = { x = 449 y = 239 }
 	picture   = "1260"
     year      = 1963
     # ? 
@@ -2414,6 +1905,8 @@ command = { type = fort_attack which = mechanized value = 5 }
 	  command = { type = morale which = land value = 2.64 }
 	  command = { type = tactical_withdrawal value = 2 }
       command = { type = delay value = 2 }
+	  command = { type = new_model which = hq value = 7 }
+	  command = { type = scrap_model which = hq value = 6 }
     }
   }    
   # Unified Soviet Doctrine
@@ -2421,7 +1914,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6840
     name      = TECH_APP_LD_154_NAME
 
-    position = { x = 290 y = 464 }
+    position = { x = 565 y = 246 }
 	picture   = "DH6840"
     year      = 1970
     # ? 
@@ -2446,17 +1939,23 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = encirclement value = 1 }
       command = { type = assault value = 3 }
       command = { type = ambush value = 1 }
+	  command = { type = new_model which = hq value = 8 }
+	  command = { type = scrap_model which = hq value = 7 }
     }
   }
 ######################################
 # Superior Firepower Path (US)
 ######################################
+      label =
+  { tag      = TECH_CAT_SUPFIREPOWER
+    position = { x = 1 y = 272 }
+  }
   # Firepower Focus Doctrine
   application =
   { id        = 6010
     name      = TECH_APP_LD_1_NAME
 
-	position = { x = 520 y = 277 }
+	position = { x = 1 y = 286 }
 	picture   = "6010"
     year      = 1930
     # Tactical unit - Battalion 
@@ -2488,7 +1987,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6020
     name      = TECH_APP_LD_2_NAME
 
-    position  = { x = 520 y = 294 }
+    position  = { x = 112 y = 286 }
 	picture   = "6020"
     year      = 1936
     # High Echelon Fire Support
@@ -2519,7 +2018,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6040
     name      = TECH_APP_LD_4_NAME
 
-    position = { x = 465 y = 311 }
+    position = { x = 223 y = 279 }
 	picture   = "6040"
     year      = 1937
     # Mid Echelon Fire Support
@@ -2557,7 +2056,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6050
     name      = TECH_APP_LD_5_NAME
 
-    position  = { x = 576 y = 311 }
+    position  = { x = 223 y = 297 }
 	picture   = "6050"
     year      = 1938
     # Pre-computed firing data
@@ -2597,7 +2096,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6060
     name      = TECH_APP_LD_6_NAME
 
-    position  = { x = 465 y = 328 }
+    position  = { x = 334 y = 279 }
 	picture   = "6060"
     year      = 1939
     # Mid Echelon Fire Support
@@ -2637,7 +2136,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6070
     name      = TECH_APP_LD_7_NAME
 
-    position  = { x = 576 y = 328 }
+    position  = { x = 334 y = 297 }
 	picture   = "6070"
     year      = 1940
     # Low Echelon Fire Support
@@ -2689,7 +2188,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6080
     name      = TECH_APP_LD_8_NAME
 
-    position  = { x = 520 y = 345 }
+    position  = { x = 449 y = 286 }
 	picture   = "6080"
     year      = 1942
     # Tactical unit - Platoon
@@ -2732,7 +2231,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6100
     name      = TECH_APP_LD_10_NAME
 
-    position  = { x = 576 y = 362 }
+    position  = { x = 565 y = 276 }
 	picture   = "6100"
     year      = 1943
     # Artillery Proximity fuses
@@ -2775,7 +2274,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6090
     name      = TECH_APP_LD_9_NAME
 
-    position  = { x = 465 y = 362 }
+    position  = { x = 565 y = 294 }
 	picture   = "6090"
     year      = 1943
     # Time on Target firemissions
@@ -2812,12 +2311,19 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = sce_frequency value = 0.3 }
     }
   }
+########
+# NATO #
+########
+      label =
+  { tag      = TECH_CAT_NATODOC
+    position = { x = 1 y = 312 }
+  }
   # Air Land Battle
   application =
   { id        = 14050
     name      = TECH_APP_LD_105_NAME
 
-    position  = { x = 520 y = 379 }
+    position  = { x = 1 y = 326 }
 	picture   = "14050"
     year      = 1946
     # ?
@@ -2850,7 +2356,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6790
     name      = TECH_APP_LD_149_NAME
 
-    position = { x = 520 y = 396 }
+    position = { x = 112 y = 326 }
 	picture   = "DH6790"
     year      = 1949
     # ? 
@@ -2877,15 +2383,12 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = assault value = 1 }
 	  }
   } 
-########
-# NATO #
-########
-  # Military Projection
+    # Military Projection
   application =
   { id        = 6800
     name      = TECH_APP_LD_150_NAME
 
-    position = { x = 576 y = 413 }
+    position = { x = 223 y = 319 }
 	picture   = "1090"
     year      = 1951
     # ? 
@@ -2917,7 +2420,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6880
     name      = TECH_APP_LD_158_NAME
 
-    position = { x = 576 y = 430 }
+    position = { x = 334 y = 319 }
 	picture   = "14090"
     year      = 1958
     # ? 
@@ -2947,7 +2450,8 @@ command = { type = fort_attack which = mechanized value = 5 }
 	  command = { type = jungle_defense which = land value = 2 }
 	  command = { type = swamp_defense which = land value = 1.25 }
 	  command = { type = urban_defense which = land value = 5.5 }
-	  
+	  command = { type = new_model which = hq value = 6 }
+	  command = { type = scrap_model which = hq value = 5 }
       command = { type = delay value = 10 }
       command = { type = ambush value = 5 }
     }
@@ -2957,7 +2461,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6890
     name      = TECH_APP_LD_159_NAME
 
-    position = { x = 465 y = 447 }
+    position = { x = 449 y = 319 }
 	picture   = "DH6890"
     year      = 1966
     # ? 
@@ -2977,6 +2481,8 @@ command = { type = fort_attack which = mechanized value = 5 }
 		command = { type = morale which = land value = 1.8 }
 		command = { trigger = { technology = 6490 } type = morale which = land value = -0.8 }
 		command = { trigger = { not = { technology = 6490 } } type = nuke_damage value = 30 }
+		command = { type = new_model which = hq value = 7 }
+	  command = { type = scrap_model which = hq value = 6 }
     }
   }
   # Unified Nato Doctrine
@@ -2984,7 +2490,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6850
     name      = TECH_APP_LD_155_NAME
 
-    position = { x = 520 y = 464 }
+    position = { x = 565 y = 314 }
 	picture   = "DH6850"
     year      = 1970
     # ? 
@@ -3010,17 +2516,23 @@ command = { type = fort_attack which = mechanized value = 5 }
       command = { type = encirclement value = 1 }
       command = { type = assault value = 1 }
       command = { type = ambush value = 1 }
+	  command = { type = new_model which = hq value = 8 }
+	  command = { type = scrap_model which = hq value = 7 }
     }
   }
-######################################
+ ######################################
 # Grand Battleplan Path (UK, FRA)
 ######################################
+      label =
+  { tag      = TECH_CAT_GRANDBATTLE
+    position = { x = 1 y = 352 }
+  }
   # Defensive Focus
   application =
   { id        = 6560
     name      = TECH_APP_LD_126_NAME
 
-    position = { x = 520 y = 140 }
+    position = { x = 1 y = 366 }
 	picture   = "DH6560"
     year      = 1930
     # ? 
@@ -3057,7 +2569,7 @@ command = { type = fort_attack which = mechanized value = 5 }
 
 	picture   = "6030"
     year      = 1936
-    position  = { x = 520 y = 157 }
+    position  = { x = 112 y = 366 }
     # High Echelon Fire Support
     component = { id = 6031 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 5 }
     # Advance under Fire
@@ -3112,7 +2624,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6120
     name      = TECH_APP_LD_12_NAME
 
-    position  = { x = 465 y = 174 }
+    position  = { x = 223 y = 359 }
 	picture   = "6120"
     year      = 1936
     # Organic divisional artillery
@@ -3151,7 +2663,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6110
     name      = TECH_APP_LD_11_NAME
 
-    position  = { x = 576 y = 174 }
+    position  = { x = 223 y = 377 }
 	picture   = "6110"
     year      = 1938
     # Multiple pre-planned targets
@@ -3195,7 +2707,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6130
     name      = TECH_APP_LD_13_NAME
 
-    position  = { x = 520 y = 191 }
+    position  = { x = 334 y = 359 }
 	picture   = "6130"
     year      = 1940
     # Multiple Bunker-lines
@@ -3236,7 +2748,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6140
     name      = TECH_APP_LD_14_NAME
 
-    position  = { x = 520 y = 208 }
+    position  = { x = 334 y = 377 }
 	picture   = "6140"
     year      = 1942
     # Artillery divisions
@@ -3275,7 +2787,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6150
     name      = TECH_APP_LD_15_NAME
 
-    position  = { x = 465 y = 225 }
+    position  = { x = 449 y = 359 }
 	picture   = "6150"
     year      = 1942
     # Field fortification emphasis
@@ -3303,7 +2815,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6170
     name      = TECH_APP_LD_17_NAME
 
-    position  = { x = 576 y = 225 }
+    position  = { x = 449 y = 377 }
 	picture   = "6170"
     year      = 1943
     # Dedicated artillery
@@ -3334,7 +2846,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6180
     name      = TECH_APP_LD_18_NAME
 
-    position  = { x = 465 y = 242 }
+    position  = { x = 565 y = 334 }
 	picture   = "6180"
     year      = 1944
     # low level field artillery
@@ -3377,7 +2889,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6200
     name      = TECH_APP_LD_20_NAME
 
-    position  = { x = 576 y = 242 }
+    position  = { x = 565 y = 352 }
 	picture   = "6200"
     year      = 1944
     # Combined arms operations
@@ -3412,7 +2924,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 14070
     name      = TECH_APP_LD_107_NAME
 
-    position  = { x = 520 y = 259 }
+    position  = { x = 565 y = 370 }
 	picture   = "14070"
     year      = 1946
     # ?
@@ -3447,13 +2959,17 @@ command = { type = fort_attack which = mechanized value = 5 }
 ######################################
 # Light infantry
 ######################################
+      label =
+  { tag      = TECH_CAT_LIGHTINF
+    position = { x = 1 y = 392 }
+  }
 # Light infantry
   application = { 
 	id = 6390
 	name = TECH_APP_LD_39_NAME
 
 
-	position = { x = 520 y = 3 }
+	position = { x = 1 y = 406 }
 	picture   = "DH6390"
     year = 1936
 
@@ -3497,7 +3013,7 @@ command = { type = fort_attack which = mechanized value = 5 }
 
 	picture   = "DH6400"
     year      = 1936
-    position  = { x = 520 y = 20 }
+    position  = { x = 112 y = 406 }
     # High Echelon Fire Support
     component = { id = 6401 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 5 }
     # Advance under Fire
@@ -3548,7 +3064,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6420
     name      = TECH_APP_LD_12_NAME
 
-    position  = { x = 465 y = 37 }
+    position  = { x = 223 y = 399 }
 	picture   = "DH6420"
     year      = 1936
     # Organic divisional artillery
@@ -3586,7 +3102,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6410
     name      = TECH_APP_LD_11_NAME
 
-    position  = { x = 576 y = 37 }
+    position  = { x = 223 y = 417 }
 	picture   = "DH6410"
     year      = 1938
     # Multiple pre-planned targets
@@ -3631,7 +3147,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6430
     name      = TECH_APP_LD_13_NAME
 
-    position  = { x = 520 y = 54 }
+    position  = { x = 334 y = 399 }
 	picture   = "DH6430"
     year      = 1940
     # Multiple Bunker-lines
@@ -3673,7 +3189,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6440
     name      = TECH_APP_LD_14_NAME
     #position = { x = 576 y = 88 }
-    position  = { x = 520 y = 71 }
+    position  = { x = 334 y = 417 }
 	picture   = "DH6440"
     year      = 1942
     # Artillery divisions
@@ -3713,7 +3229,7 @@ command = { type = fort_attack which = mechanized value = 5 }
 	name = TECH_APP_LD_45_NAME
 
     #position  = { x = 520 y = 71 }
-	position = { x = 576 y = 88 }
+	position = { x = 449 y = 399 }
 	picture   = "DH6450"
     year = 1941
 
@@ -3757,7 +3273,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6160
     name      = TECH_APP_LD_16_NAME
 
-    position  = { x = 465 y = 88 }
+    position  = { x = 449 y = 417 }
 	picture   = "6160"
     year      = 1942
     # Night Attacks
@@ -3822,7 +3338,7 @@ command = { type = fort_attack which = mechanized value = 5 }
 	name = TECH_APP_LD_46_NAME
 
 
-	position = { x = 576 y = 105 }
+	position = { x = 565 y = 390 }
 	picture   = "DH6460"
     year = 1943
 
@@ -3866,7 +3382,7 @@ command = { type = fort_attack which = mechanized value = 5 }
   { id        = 6190
     name      = TECH_APP_LD_19_NAME
 
-    position  = { x = 465 y = 105 }
+    position  = { x = 565 y = 408 }
 	picture   = "6190"
     year      = 1943
     # Self sustaining units
@@ -3914,7 +3430,7 @@ command = { type = fort_attack which = mechanized value = 5 }
 	name = TECH_APP_LD_49_NAME
 
 
-	position = { x = 520 y = 122 }
+	position = { x = 565 y = 426 }
 	picture   = "DH6490"
     year = 1946
 
@@ -3935,199 +3451,650 @@ command = { type = fort_attack which = mechanized value = 5 }
 		command = { type = task_efficiency which = amphibious_assault value = 0.25 }
 		}
 	}
- ######################################
-# Hospital System
-######################################
-  # Great War Hospital System
-  application =
-  { id        = 14000
-    name      = TECH_APP_LD_100_NAME
+#########################################
+### People's War Doctrine Tree #######
+#########################################
 
-    position  = { x = 5 y = 30 }
-	picture   = "14000"
-    year      = 1914
-    # ?
-    component = { id = 14001 name = TECH_CMP_LD_100_1_NAME type = individual_courage difficulty = 4 }
-    # ?
-    component = { id = 14002 name = TECH_CMP_LD_100_2_NAME type = training difficulty = 4 }
-    # ?
-    component = { id = 14003 name = TECH_CMP_LD_100_3_NAME type = combined_arms_focus difficulty = 4 }
-    # ?
-    component = { id = 14004 name = TECH_CMP_LD_100_4_NAME type = medicine difficulty = 4 }
-    # ?
-    component = { id = 14005 name = TECH_CMP_LD_100_5_NAME type = mechanics difficulty = 4 }
-    required  = { }
+#######################################################################################################################################################################################################
+### I haven't changed the X and Y axises but i did delete 2 techs 14170 (Mobile Guerilla Warfare) and 14180 (Revolutionary base Areas Expansion). They seemed redundant. I changed around the pre-  ### 
+### prerequisites accordingly. Also, I changed protracted people's war to one of the doctrines you have to choose between. All of those doctrines now unlock the final level of the HQ.             ### 
+### we could also delete the SAM defense doctrine if needed and add some of its effects to other techs.                                                                                             ###
+#######################################################################################################################################################################################################
+
+#########################################
+### People’s War Doctrine #######
+#########################################
+      label =
+  { tag      = TECH_CAT_PPLWAR
+    position = { x = 1 y = 432 }
+  }
+  application = {
+ id        = 14140
+    name      = TECH_APP_LD_114_NAME
+    
+    position  = { x = 1 y = 446 }
+	picture   = "14140"
+    year      = 1937
+ #Protracted War Theory- infantry focus
+   component = { id = 14141 name = TECH_CMP_LD_114_1_NAME type = management difficulty = 7 }
+    #Avoiding Decisive Battles
+   component = { id = 14142 name = TECH_CMP_LD_114_2_NAME type = small_unit_tactics difficulty = 7 }
+    # Hit & Run Tactics
+   component = { id = 14143 name = TECH_CMP_LD_114_3_NAME type = training difficulty = 7 }
+    # Difficult Terrain Focus 
+   component = { id = 14144 name = TECH_CMP_LD_114_4_NAME type = management difficulty = 7 }
+    # Independent Resistance Cells
+   component = { id = 14145 name = TECH_CMP_LD_114_5_NAME type = decentralized_execution difficulty = 7 }
+
+ required  = { 6300 }
     effects =
-    { command = { type = attrition_mod value = 1 }
-      command = { type = trickleback_mod value = 2 }
+    { 
+command = { type = ground_def_eff value = 0.50 }
+command = { type = building_prod_mod which = land_fort value = 10 }
+command = { type = deactivate which = 6310 }
+command = { type = tactical_withdrawal value = 4 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = morale which = infantry value = 5 }
+command = { type = morale which = bergsjaeger value = 5 }
+command = { type = morale which = militia value = 5 }
+command = { type = max_organization which = militia value = 5 }
+command = { type = max_organization which = infantry value = 5 }
+command = { type = max_organization which = bergsjaeger value = 5 }
     }
   }
-  # Improved Great War Hospital System
-  application =
-  { id        = 14010
-    name      = TECH_APP_LD_101_NAME
+  
+#########################################
+### Rural Guerilla Tactics #######
+#########################################
+application = 
+{ id        = 14150
+    name      = TECH_APP_LD_115_NAME
 
-    position  = { x = 5 y = 47 }
-	picture   = "DH14010"
-    year      = 1916
-    # ?
-    component = { id = 14011 name = TECH_CMP_LD_101_1_NAME type = individual_courage difficulty = 4 }
-    # ?
-    component = { id = 14012 name = TECH_CMP_LD_101_2_NAME type = training difficulty = 4 }
-    # ?
-    component = { id = 14013 name = TECH_CMP_LD_101_3_NAME type = combined_arms_focus difficulty = 4 }
-    # ?
-    component = { id = 14014 name = TECH_CMP_LD_101_4_NAME type = medicine difficulty = 4 }
-    # ?
-    component = { id = 14015 name = TECH_CMP_LD_101_5_NAME type = vehicle_engineering difficulty = 4 }
-    required  = { 14000 }
+    position  = { x = 1 y = 464 }
+    picture   = "14150"
+    year      = 1938
+    # Trading Space for Time
+  component = { id = 14151 name = TECH_CMP_LD_115_1_NAME type = maneuver_tactics difficulty = 7 }
+    # Operations behind enemy lines
+  component = { id = 14152 name = TECH_CMP_LD_115_2_NAME type = individual_courage difficulty = 7 }
+    # Sabotage tactics
+  component = { id = 14153 name = TECH_CMP_LD_115_3_NAME type = individual_courage difficulty = 7 }
+    # decentralized planning
+  component = { id = 14154 name = TECH_CMP_LD_115_4_NAME type = decentralized_execution difficulty = 7 }
+    # targets of opportunity focus
+  component = { id = 14155 name = TECH_CMP_LD_115_5_NAME type = training difficulty = 7 }
+ required  = { 6300 }
     effects =
-    { command = { type = attrition_mod value = 1 }
-      command = { type = trickleback_mod value = 6 } #higher trickleback due to gas
+    { 
+command = { type = surprise which = land value = 5 }
+command = { type = army_detection which = us value = 5 }
+command = { type = army_detection which = them value = -5 }
+command = { type = night_move which = hq value = 25 }
+command = { type = night_move which = infantry value = 25 }
+command = { type = night_attack which = infantry value = 5 }
+command = { type = night_defense which = infantry value = 15 }
+command = { type = night_move which = militia value = 25 }
+command = { type = night_attack which = militia value = 5 }
+command = { type = night_defense which = militia value = 15 }	
+command = { type = night_move which = bergsjaeger value = 25 }
+command = { type = night_attack which = bergsjaeger value = 5 }
+command = { type = night_defense which = bergsjaeger value = 15 }
+command = { type = tactical_withdrawal value = 10 }
+command = { type = counterattack value = 5 }
+command = { type = delay value = 5 }
+command = { type = ambush value = 5 }
+command = { type = encirclement value = 5 }
+command = { type = breakthrough value = 5 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = morale which = infantry value = 5 }
+command = { type = morale which = bergsjaeger value = 5 }
+command = { type = morale which = militia value = 5 }
     }
   }
-  # Early Hospital System
-  application =
-  { id        = 14020
-    name      = TECH_APP_LD_102_NAME
+  
+#########################################
+### Revolutionary Base Areas #######
+#########################################
+application = 
+{ id        = 14160
+    name      = TECH_APP_LD_116_NAME
 
-    position  = { x = 5 y = 64 }
-	picture   = "14010"
-    year      = 1924
-    # ?
-    component = { id = 14021 name = TECH_CMP_LD_102_1_NAME type = centralized_execution difficulty = 5 }
-    # ?
-    component = { id = 14022 name = TECH_CMP_LD_102_2_NAME type = medicine difficulty = 5 }
-    # ?
-    component = { id = 14023 name = TECH_CMP_LD_102_3_NAME type = individual_courage difficulty = 5 }
-    # ?
-    component = { id = 14024 name = TECH_CMP_LD_102_4_NAME type = technical_efficiency difficulty = 5 }
-    # ?
-    component = { id = 14025 name = TECH_CMP_LD_102_5_NAME type = training difficulty = 5 }
-    required  = { 14010 }
+    position  = { x = 112 y = 446 }
+    picture   = "14160"
+    year      = 1939
+# Ideological promotion
+component = { id = 14161 name = TECH_CMP_LD_116_1_NAME type = management difficulty = 8 }
+# Guerilla Warfare Experience
+component = { id = 14162 name = TECH_CMP_LD_116_2_NAME type = training difficulty = 8 }
+# Difficult Terrain as a Force Modifier Theory
+component = { id = 14163 name = TECH_CMP_LD_116_3_NAME type = infantry_focus difficulty = 7 }
+# Autonomous Recruiting Posts
+component = { id = 14164 name = TECH_CMP_LD_116_4_NAME type = decentralized_execution difficulty = 7 }
+# Revolutionary Base Areas Theory 
+component = { id = 14165 name = TECH_CMP_LD_116_5_NAME type = management difficulty = 7 }
+ required  = { 14140 }
     effects =
-    { command = { type = attrition_mod value = 1 }
-     # command = { type = trickleback_mod value = -2 } # gas no longer used so the overall trickle back is lower 
+    { 
+command = { type = ground_def_eff value = 0.60 }
+command = { type = building_prod_mod which = land_fort value = 20 }
+command = { type = building_prod_mod which = infrastructure value = 20 }
+command = { type = trickleback_mod value = 1 }
+command = { type = attrition_mod value = 1 }
+command = { type = intelligence which = them value = -5 }
+command = { type = army_detection which = them value = -5 }
+command = { type = relative_manpower value = 5 }
+command = { type = new_model which = hq value = 3 }
+command = { type = scrap_model which = hq value = 2 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = build_time which = militia when = on_upgrade where = relative value = -5 }
+command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
+command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
+command = { type = build_time which = hq when = on_upgrade where = relative value = -10 }
+command = { type = max_organization which = militia value = 5 }
+command = { type = max_organization which = infantry value = 5 }
+command = { type = max_organization which = bergsjaeger value = 5 }
+command = { type = industrial_modifier which = supplies value = 2 }
+command = { type = desert_defense which = militia value = 2.5 }
+command = { type = mountain_defense which = militia value = 2.5 }
+command = { type = hill_defense which = militia value = 2.5 }
+command = { type = forest_defense which = militia value = 2.5 }
+command = { type = jungle_defense which = militia value = 2.5 }
+command = { type = swamp_defense which = militia value = 2.5 } 
+command = { type = mountain_defense which = bergsjaeger value = 5 }
+command = { type = hill_defense which = bergsjaeger value = 5 }
+command = { type = desert_defense which = infantry value = 2.5 }
+command = { type = mountain_defense which = infantry value = 2.5 }
+command = { type = hill_defense which = infantry value = 2.5 }
+command = { type = forest_defense which = infantry value = 2.5 }
+command = { type = jungle_defense which = infantry value = 2.5 }
+command = { type = swamp_defense which = infantry value = 2.5 }
+    }
+  } 
+#########################################
+### Mobile Guerilla Warfare Theory #######
+#########################################
+application = 
+{ id        = 14170
+    name      = TECH_APP_LD_117_NAME
+
+    position  = { x = 112 y = 464 }
+    picture   = "14170"
+    year      = 1941
+# Hit-and-run strikes
+component = { id = 14171 name = TECH_CMP_LD_117_1_NAME type = maneuver_tactics difficulty = 8 }
+# melting into the countryside
+component = { id = 14172 name = TECH_CMP_LD_117_2_NAME type = maneuver_tactics difficulty = 8 }
+# Enemy attrition focus
+component = { id = 14173 name = TECH_CMP_LD_117_3_NAME type = small_unit_tactics difficulty = 8 }
+# Enemy demoralization focus
+component = { id = 14174 name = TECH_CMP_LD_117_4_NAME type = small_unit_tactics difficulty = 8 }
+# fomenting popular resistance
+component = { id = 14175 name = TECH_CMP_LD_117_5_NAME type = training difficulty = 8 }
+
+ required  = { 14150 }
+    effects =
+    { 
+command = { type = surprise which = land value = 5 }
+command = { type = army_detection which = them value = -5 }
+command = { type = night_move which = hq value = 25 }
+command = { type = night_move which = infantry value = 25 }
+command = { type = night_attack which = infantry value = 5 }
+command = { type = night_defense which = infantry value = 15 }
+command = { type = night_move which = militia value = 25 }
+command = { type = night_attack which = militia value = 5 }
+command = { type = night_defense which = militia value = 15 }	
+command = { type = night_move which = bergsjaeger value = 25 }
+command = { type = night_attack which = bergsjaeger value = 5 }
+command = { type = night_defense which = bergsjaeger value = 15 }
+command = { type = tactical_withdrawal value = 10 }
+command = { type = counterattack value = 5 }
+command = { type = delay value = 5 }
+command = { type = ambush value = 5 }
+command = { type = encirclement value = 5 }
+command = { type = breakthrough value = 5 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = morale which = infantry value = 5 }
+command = { type = morale which = bergsjaeger value = 5 }
+command = { type = morale which = militia value = 5 }
+    }
+  } 
+#########################################
+### Revolutionary base Areas Expansion #######
+#########################################
+application = 
+{ id        = 14180
+    name      = TECH_APP_LD_118_NAME
+
+    position  = { x = 223 y = 446 }
+    picture   = "14180"
+    year      = 1942
+# Fish in the Sea Doctrine
+component = { id = 14181 name = TECH_CMP_LD_118_1_NAME type = management difficulty = 8 }
+# Cultivating Hearts and Minds
+component = { id = 14182 name = TECH_CMP_LD_118_2_NAME type = management difficulty = 8 }
+# Civilian intelligence sources
+component = { id = 14183 name = TECH_CMP_LD_118_3_NAME type = individual_courage difficulty = 8 }
+# Civilian Material support
+component = { id = 14184 name = TECH_CMP_LD_118_4_NAME type = decentralized_execution difficulty = 8 }
+# Passive Resistance
+component = { id = 14185 name = TECH_CMP_LD_118_5_NAME type = individual_courage difficulty = 8 }
+
+ required  = { 14160 }
+    effects =
+    { 
+command = { type = ground_def_eff value = 0.70 }
+command = { type = building_prod_mod which = land_fort value = 10 }
+command = { type = building_prod_mod which = infrastructure value = 20 }
+command = { type = trickleback_mod value = 1 }
+command = { type = attrition_mod value = 1 }
+command = { type = intelligence which = them value = -5 }
+command = { type = army_detection which = them value = -5 }
+command = { type = relative_manpower value = 5 }
+command = { type = new_model which = hq value = 4 }
+command = { type = scrap_model which = hq value = 3 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = build_time which = militia when = on_upgrade where = relative value = -5 }
+command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
+command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
+command = { type = build_time which = hq when = on_upgrade where = relative value = -10 }
+command = { type = max_organization which = militia value = 5 }
+command = { type = max_organization which = infantry value = 5 }
+command = { type = max_organization which = bergsjaeger value = 5 }
+command = { type = industrial_modifier which = supplies value = 2 }
+command = { type = desert_defense which = militia value = 2.5 }
+command = { type = mountain_defense which = militia value = 2.5 }
+command = { type = hill_defense which = militia value = 2.5 }
+command = { type = forest_defense which = militia value = 2.5 }
+command = { type = jungle_defense which = militia value = 2.5 }
+command = { type = swamp_defense which = militia value = 2.5 } 
+command = { type = mountain_defense which = bergsjaeger value = 5 }
+command = { type = hill_defense which = bergsjaeger value = 5 }
+command = { type = desert_defense which = infantry value = 2.5 }
+command = { type = mountain_defense which = infantry value = 2.5 }
+command = { type = hill_defense which = infantry value = 2.5 }
+command = { type = forest_defense which = infantry value = 2.5 }
+command = { type = jungle_defense which = infantry value = 2.5 }
+command = { type = swamp_defense which = infantry value = 2.5 }
+    }
+  } 
+#########################################
+### Asymmetric Warfare #######
+#########################################
+application = 
+{ id        = 14190
+    name      = TECH_APP_LD_119_NAME
+
+    position  = { x = 223 y = 464 }
+    picture   = "14190"
+    year      = 1945
+#Asymmetric warfare theory
+component = { id = 14191 name = TECH_CMP_LD_119_1_NAME type = management difficulty = 10 } 
+# Anti tank tactics
+component = { id = 14192 name = TECH_CMP_LD_119_2_NAME type = small_unit_tactics difficulty = 10 }
+# Anti air tactics
+component = { id = 14193 name = TECH_CMP_LD_119_3_NAME type = training difficulty = 10 }
+# Naval sabotage
+component = { id = 14194 name = TECH_CMP_LD_119_4_NAME type = individual_courage difficulty = 10 }
+#Terror Tactics
+component = { id = 14195 name = TECH_CMP_LD_119_5_NAME type = training difficulty = 10 }
+ required  = { 14160 }
+    effects =
+    { 
+command = { type = ground_def_eff value = 0.75 }
+command = { type = intelligence which = us value = 5  }
+command = { type = surprise which = land value = 5 }
+command = { type = army_detection which = us value = 5 }
+command = { type = intelligence which = them value = -5 }
+command = { type = army_detection which = them value = -5 }
+command = { type = tactical_withdrawal value = 10 }
+command = { type = delay value = 5 }
+command = { type = ambush value = 5 }
+command = { type = breakthrough value = 5 }
+command = { type = encirclement value = 5 }
+command = { type = counterattack value = 15 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = max_organization which = land value = 10 }
+command = { type = morale which = land value = 5 }
     }
   }
-  # Basic Hospital System
-  application =
-  { id        = 14030
-    name      = TECH_APP_LD_103_NAME
+#########################################
+### Positional Warfare #######
+#########################################
+application = 
+{ id        = 14200
+    name      = TECH_APP_LD_161_NAME
 
-    position  = { x = 5 y = 81 }
-	picture   = "14020"
-    year      = 1936
-    # ?
-    component = { id = 14031 name = TECH_CMP_LD_103_1_NAME type = centralized_execution difficulty = 6 }
-    # ?
-    component = { id = 14032 name = TECH_CMP_LD_103_2_NAME type = small_unit_tactics difficulty = 6 }
-    # ?
-    component = { id = 14033 name = TECH_CMP_LD_103_3_NAME type = medicine difficulty = 6 }
-    # ?
-    component = { id = 14034 name = TECH_CMP_LD_103_4_NAME type = mechanics difficulty = 6 }
-    # ?
-    component = { id = 14035 name = TECH_CMP_LD_103_5_NAME type = training difficulty = 6 }
-    required  = { 14020 }
+    position  = { x = 334 y = 446 }
+	picture   = "14200"
+    year      = 1948
+# Demoralization of the enemy
+component = { id = 14201 name = TECH_CMP_LD_161_1_NAME type = training difficulty = 10 }
+# Depletion of enemy power
+component = { id = 14202 name = TECH_CMP_LD_161_2_NAME type = maneuver_tactics difficulty = 10 }
+# Urban Encirclement Doctrine
+component = { id = 14203 name = TECH_CMP_LD_161_3_NAME type = maneuver_tactics difficulty = 10 }
+# emboldened partisans
+component = { id = 14204 name = TECH_CMP_LD_161_4_NAME type = individual_courage difficulty = 10 }
+# Large-scale counteroffensives
+component = { id = 14205 name = TECH_CMP_LD_161_5_NAME type = large_unit_tactics difficulty = 10 }
+ required  = { 14190 }
     effects =
-    { command = { type = attrition_mod value = 1 }
-     # command = { type = trickleback_mod value = 2 }
+    { 
+command = { type = ground_def_eff value = 0.80 }
+command = { type = new_model which = hq value = 4 }
+command = { type = scrap_model which = hq value = 3 }
+command = { type = tactical_withdrawal value = 5 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = ambush value = 5 }
+command = { type = breakthrough value = 15 }
+command = { type = assault value = 15 }
+command = { type = counterattack value = 15 }
+command = { type = encirclement value = 15 }
+command = { type = max_organization which = land value = 10 }
+command = { type = morale which = land value = 15 }
+command = { type = muddy_attack which = land value = 2 }
+command = { type = plain_attack which = land value = 5 }
+command = { type = desert_attack which = land value = 2 }
+command = { type = mountain_attack which = land value = 2 }
+command = { type = hill_attack which = land value = 5 }
+command = { type = forest_attack which = land value = 5 }
+command = { type = jungle_attack which = land value = 2 }
+command = { type = swamp_attack which = land value = 2 }
+command = { type = urban_attack which = land value = 10 }
+command = { type = fort_attack which = land value = 10 }
+    }
+  } 
+#########################################
+### Protracted People’s War Doctrine ####### 
+#########################################
+application = 
+{ id        = 14220
+    name      = TECH_APP_LD_163_NAME
+
+    position  = { x = 334 y = 464 }
+    picture   = "14220"
+    year = 1960
+    # International Support
+component = { id = 14221 name = TECH_CMP_LD_163_1_NAME type = management difficulty = 10 }
+    # Do or Die Mentality
+component = { id = 14222 name = TECH_CMP_LD_163_2_NAME type = individual_courage difficulty = 10 }
+    # Ideological Struggle Sessions
+component = { id = 14223 name = TECH_CMP_LD_163_3_NAME type = management difficulty = 10 }
+    # Dispersed Fighting Groups
+component = { id = 14224 name = TECH_CMP_LD_163_4_NAME type = decentralized_execution difficulty = 10 }
+    # Underground Command and Control
+component = { id = 14225 name = TECH_CMP_LD_163_5_NAME type = centralized_execution difficulty = 10 }
+
+ required  = { 14200 }
+    effects =
+    { 
+command = { type = ground_def_eff value = 1.02 }
+command = { type = building_prod_mod which = land_fort value = 10 }
+command = { type = building_prod_mod which = infrastructure value = 15 }
+command = { type = intelligence which = us value = 25  }
+command = { type = surprise which = land value = 15 }
+command = { type = army_detection which = us value = 5 }
+command = { type = army_detection which = them value = -10 }
+command = { type = relative_manpower value = 5 }
+command = { type = tactical_withdrawal value = 5 }
+command = { type = ambush value = 5 }
+command = { type = delay value = 5 }
+command = { type = breakthrough value = 15 }
+command = { type = assault value = 15 }
+command = { type = encirclement value = 5 }
+command = { type = counterattack value = 5 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.1 }
+command = { type = max_organization which = land value = 10 }
+command = { type = morale which = land value = 15 }
+command = { type = new_model which = hq value = 5 }
+command = { type = scrap_model which = hq value = 4 }
+command = { type = night_move which = land value = 15 }
+command = { type = deactivate which = 14240 } #Urban Insurgency
+command = { type = deactivate which = 14250 } #Folk & Faith
+command = { type = deactivate which = 14260 } #Modern People's War
+command = { type = deactivate which = 14230 } #Focalism
     }
   }
-  # Improved Hospital System
-  application =
-  { id        = 14040
-    name      = TECH_APP_LD_104_NAME
+  
+#########################################
+### Focalism #######
+#########################################
+application = 
+{ id        = 14230
+    name      = TECH_APP_LD_164_NAME
 
-    position  = { x = 5 y = 98 }
-	picture   = "14030"
-    year      = 1944
-    # ?
-    component = { id = 14041 name = TECH_CMP_LD_103_1_NAME type = centralized_execution difficulty = 7 }
-    # ?
-    component = { id = 14042 name = TECH_CMP_LD_103_2_NAME type = small_unit_tactics difficulty = 7 }
-    # ?
-    component = { id = 14043 name = TECH_CMP_LD_103_3_NAME type = medicine difficulty = 7 }
-    # ?
-    component = { id = 14044 name = TECH_CMP_LD_103_4_NAME type = individual_courage difficulty = 7 }
-    # ?
-    component = { id = 14045 name = TECH_CMP_LD_103_5_NAME type = training difficulty = 7 }
-    required  = { 14030 }
+    position  = { x = 449 y = 446 }
+    picture   = "14230"
+    year      = 1960
+# People’s War Experience
+component = { id = 14231 name = TECH_CMP_LD_164_1_NAME type = infantry_focus difficulty = 5 }
+# fast-moving paramilitary groups
+component = { id = 14232 name = TECH_CMP_LD_164_2_NAME type = small_unit_tactics difficulty = 15 }
+# vanguardism
+component = { id = 14233 name = TECH_CMP_LD_164_3_NAME type = centralized_execution difficulty = 30 }
+# Jumpstarting the revolution Doctrine
+component = { id = 14234 name = TECH_CMP_LD_164_4_NAME type = individual_courage difficulty = 20 }
+# Militia and Conventional Forces Cooperation
+component = { id = 14235 name = TECH_CMP_LD_164_5_NAME type = centralized_execution difficulty = 20 }
+
+ required  = { 14200 }
     effects =
-    { command = { type = attrition_mod value = 2 }
-      command = { type = trickleback_mod value = 2 }
+    { 
+command = { type = ground_def_eff value = 1.00 }
+command = { type = trickleback_mod value = 1 }
+command = { type = attrition_mod value = 1 }
+command = { type = deactivate which = 14240 } #Urban Insurgency
+command = { type = deactivate which = 14250 } #Folk & Faith
+command = { type = deactivate which = 14260 } #Modern People's War
+command = { type = deactivate which = 14220 } #Protracted People's War
+command = { type = surprise which = land value = 5 }
+command = { type = army_detection which = us value = 5 }
+command = { type = intelligence which = them value = -25 }
+command = { type = army_detection which = them value = -15 }
+command = { type = hq_supply_eff value = 5 }
+command = { type = sce_frequency value = 0.5 }
+command = { type = max_organization which = land value = 15 }
+command = { type = morale which = land value = 5 }
+command = { type = delay value = 5 }
+command = { type = breakthrough value = 15 }
+command = { type = assault value = 5 }
+command = { type = counterattack value = 5 }
+command = { type = encirclement value = 15 }
+command = { type = ambush value = 15 }
+command = { type = new_model which = hq value = 5 }
+command = { type = scrap_model which = hq value = 4 }
+command = { type = tactical_withdrawal value = 5 }
+command = { type = hill_attack which = land value = 5 }
+command = { type = jungle_attack which = land value = 5 }
+command = { type = hill_defense which = land value = 5 }
+command = { type = jungle_defense which = land value = 5 }
     }
   }
-  # Semi-modern Hospital System
-  application =
-  { id        = 14110
-    name      = TECH_APP_LD_111_NAME
+#########################################
+### Urban Insurgency Focus #######
+#########################################
+application = 
+{ id        = 14240
+    name      = TECH_APP_LD_165_NAME
 
-    position  = { x = 5 y = 115 }
-	picture   = "14040"
-    year      = 1951
-    # ?
-    component = { id = 14111 name = TECH_CMP_LD_111_1_NAME type = aeronautics difficulty = 8 }
-    # ?
-    component = { id = 14112 name = TECH_CMP_LD_111_2_NAME type = large_unit_tactics difficulty = 8 }
-    # ?
-    component = { id = 14113 name = TECH_CMP_LD_111_3_NAME type = medicine difficulty = 8 }
-    # ?
-    component = { id = 14114 name = TECH_CMP_LD_111_4_NAME type = electronics difficulty = 8 }
-    # ?
-    component = { id = 14115 name = TECH_CMP_LD_111_5_NAME type = training difficulty = 8 }
-    required  = { 14040 }
+    position  = { x = 565 y = 446 }
+    picture   = "14240"
+    year      = 1960
+    # Foreign Support Focus
+   component = { id = 14241 name = TECH_CMP_LD_165_1_NAME type = management difficulty = 20 }
+    # Terrorism
+   component = { id = 14242 name = TECH_CMP_LD_165_2_NAME type = small_unit_tactics difficulty = 20 }
+    # Advanced Ambushes
+   component = { id = 14243 name = TECH_CMP_LD_165_3_NAME type = training difficulty = 20 }
+    # Assassinations
+   component = { id = 14244 name = TECH_CMP_LD_165_4_NAME type = decentralized_execution difficulty = 20 }
+    # Urban Anti-tank tactics
+   component = { id = 14245 name = TECH_CMP_LD_165_5_NAME type = individual_courage difficulty = 20 }
+
+ required  = { 14200 }
     effects =
-    { command = { type = attrition_mod value = 2 }
-      command = { type = trickleback_mod value = 2 }
+    { 
+command = { type = ground_def_eff value = 1.00 }
+command = { type = trickleback_mod value = 1 }
+command = { type = attrition_mod value = 1 }
+command = { type = deactivate which = 14230 } #Focalism
+command = { type = deactivate which = 14250 } #Folk & Faith
+command = { type = deactivate which = 14260 } #Modern People's War
+command = { type = deactivate which = 14220 } #Protracted People's War
+command = { type = intelligence which = us value = 15  }
+command = { type = surprise which = land value = 15 }
+command = { type = army_detection which = us value = 5 }
+command = { type = intelligence which = them value = -5 }
+command = { type = army_detection which = them value = -5 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = new_model which = hq value = 5 }
+command = { type = scrap_model which = hq value = 4 }
+command = { type = sce_frequency value = 0.3 }
+command = { type = urban_attack which = infantry value = 15 }
+command = { type = urban_defense which = infantry value = 25 }
+command = { type = urban_defense which = militia value = 25 }
+command = { type = urban_attack which = militia value = 15 }
+command = { type = urban_defense which = land value = 15 }
+command = { type = urban_attack which = land value = 15 }
+command = { type = hard_attack which = infantry value = 5 }
+command = { type = soft_attack which = infantry value = 5 }
+command = { type = hard_attack which = militia value = 2 }
+command = { type = soft_attack which = militia value = 2 }
+command = { type = max_organization which = land value = 5 }
+command = { type = morale which = land value = 5 }
+command = { type = delay value = 5 }
+command = { type = ambush value = 25 }
+command = { type = tactical_withdrawal value = 15 }
     }
-  }
-    # Advanced Hospital System
-  application =
-  { id        = 14120
-    name      = TECH_APP_LD_112_NAME
+  }  
+#########################################
+### Folk and Faith Focus  #######
+#########################################
+application =
+{ id        = 14250
+    name      = TECH_APP_LD_166_NAME
 
-    position  = { x = 5 y = 132 }
-	picture   = "DH14120"
-    year      = 1962
-    # ?
-    component = { id = 14121 name = TECH_CMP_LD_112_1_NAME type = aeronautics difficulty = 8 }
-    # ?
-    component = { id = 14122 name = TECH_CMP_LD_112_2_NAME type = nuclear_physics difficulty = 8 }
-    # ?
-    component = { id = 14123 name = TECH_CMP_LD_112_3_NAME type = medicine difficulty = 8 }
-    # ?
-    component = { id = 14124 name = TECH_CMP_LD_112_4_NAME type = electronics difficulty = 8 }
-    # ?
-    component = { id = 14125 name = TECH_CMP_LD_112_5_NAME type = training difficulty = 8 }
-    required  = { 14110 }
+    position  = { x = 449 y = 476 }
+    picture   = "14250"
+    year      = 1960
+# ashes of his fathers and the temples of his gods worldview
+component = { id = 14251 name = TECH_CMP_LD_166_1_NAME type = management difficulty = 10 }
+# Freedom Fighter Mentality
+component = { id = 14252 name = TECH_CMP_LD_166_2_NAME type = infantry_focus difficulty = 20 }
+# Appeals to Religious and Ethnic identity
+component = { id = 14253 name = TECH_CMP_LD_166_3_NAME type = training difficulty = 10 }
+# Asymmetric warfare Tactics
+component = { id = 14254 name = TECH_CMP_LD_166_4_NAME type = individual_courage difficulty = 30 }
+# Loosly organized cells
+component = { id = 14255 name = TECH_CMP_LD_166_5_NAME type = decentralized_execution difficulty = 20 }
+
+ required  = { 14200 }
     effects =
-    { command = { type = attrition_mod value = 2 }
-      command = { type = trickleback_mod value = 3 }
+    { 
+command = { type = ground_def_eff value = 1.10 }
+command = { type = trickleback_mod value = 10 }
+command = { type = attrition_mod value = 5 }
+command = { type = deactivate which = 14230 } #Focalism
+command = { type = deactivate which = 14240 } #Urban Insurgency
+command = { type = deactivate which = 14260 } #Modern People's War
+command = { type = deactivate which = 14220 } #Protracted People's War
+command = { type = new_model which = hq value = 5 }
+command = { type = scrap_model which = hq value = 4 }
+command = { type = surprise which = land value = 15 }
+command = { type = army_detection which = us value = 25 }
+command = { type = intelligence which = them value = -20 }
+command = { type = army_detection which = them value = -10 }
+command = { type = relative_manpower value = 15 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.3 }
+command = { type = hard_attack which = militia value = 1 }
+command = { type = soft_attack which = militia value = 1 }
+command = { type = hard_attack which = infantry value = 2 }
+command = { type = soft_attack which = infantry value = 2 }
+command = { type = delay value = 5 }
+command = { type = assault value = 5 }
+command = { type = counterattack value = 5 }
+command = { type = ambush value = 5 }
+command = { type = tactical_withdrawal value = 5 }
+command = { type = max_organization which = land value = 5 }
+command = { type = morale which = land value = 25 }
     }
-  }
-    # Modern Hospital System
-  application =
-  { id        = 14130
-    name      = TECH_APP_LD_113_NAME
+  }  
+#########################################
+### People's War under Modern Conditions #######
+#########################################
+application = 
+{ id        = 14260
+    name      = TECH_APP_LD_167_NAME
 
-    position  = { x = 5 y = 149 }
-	picture   = "DH14130"
+    position  = { x = 565 y = 476 }
+    picture   = "14260"
     year      = 1970
-    # ?
-    component = { id = 14131 name = TECH_CMP_LD_113_1_NAME type = aeronautics difficulty = 8 }
-    # ?
-    component = { id = 14132 name = TECH_CMP_LD_113_2_NAME type = technical_efficiency difficulty = 8 }
-    # ?
-    component = { id = 14133 name = TECH_CMP_LD_113_3_NAME type = medicine difficulty = 8 }
-    # ?
-    component = { id = 14134 name = TECH_CMP_LD_113_4_NAME type = electronics difficulty = 8 }
-    # ?
-    component = { id = 14135 name = TECH_CMP_LD_113_5_NAME type = training difficulty = 8 }
-    required  = { 14120 }
+# Theory of Productive Forces
+component = { id = 14261 name = TECH_CMP_LD_167_1_NAME type = mathematics difficulty = 10 }
+# Military Modernization
+component = { id = 14262 name = TECH_CMP_LD_167_2_NAME type = technical_efficiency difficulty = 30 }
+# Military de-politicization
+component = { id = 14263 name = TECH_CMP_LD_167_3_NAME type = management difficulty = 10 }
+# extended depth of defense
+component = { id = 14264 name = TECH_CMP_LD_167_4_NAME type = centralized_execution difficulty = 30 }
+# C3I nodes survivability
+component = { id = 14265 name = TECH_CMP_LD_167_5_NAME type = industrial_engineering difficulty = 30 }
+
+ required  = { 14200 }
     effects =
-    { command = { type = attrition_mod value = 2 }
-      command = { type = trickleback_mod value = 3 }
+    { 
+command = { type = ground_def_eff value = 1.00 }
+command = { type = new_model which = hq value = 5 }
+command = { type = scrap_model which = hq value = 4 }
+command = { type = deactivate which = 14230 } #Focalism
+command = { type = deactivate which = 14240 } #Urban Insurgency
+command = { type = deactivate which = 14250 } #Folk & Faith
+command = { type = deactivate which = 14220 } #Protracted People's War
+command = { type = trickleback_mod value = 1 }
+command = { type = attrition_mod value = 1 }
+command = { type = intelligence which = us value = 15  }
+command = { type = intelligence which = them value = -5 }
+command = { type = surprise which = land value = 5 }
+command = { type = army_detection which = us value = 10 }
+command = { type = army_detection which = them value = -5 }
+command = { type = wartime_ic_mod value = 10 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.3 }
+command = { type = muddy_defense which = land value = 5 }
+command = { type = plain_defense which = land value = 5 }
+command = { type = desert_defense which = land value = 5 }
+command = { type = mountain_defense which = land value = 5 }
+command = { type = hill_defense which = land value = 5 }
+command = { type = forest_defense which = land value = 5 }
+command = { type = jungle_defense which = land value = 5 }
+command = { type = swamp_defense which = land value = 5 }
+command = { type = urban_defense which = land value = 5 }
+command = { type = max_organization which = land value = 20 }
+command = { type = morale which = land value = 5 }
+command = { type = muddy_attack which = armor value = 5 }
+command = { type = plain_attack which = armor value = 15 }
+command = { type = desert_attack which = armor value = 5 }
+command = { type = hill_attack which = armor value = 5 }
+command = { type = forest_attack which = armor value = 5 }
+command = { type = urban_attack which = armor value = 5 }
+command = { type = fort_attack which = armor value = 5 }
+command = { type = muddy_attack which = mechanized value = 5 }
+command = { type = plain_attack which = mechanized value = 15 }
+command = { type = desert_attack which = mechanized value = 5 }
+command = { type = hill_attack which = mechanized value = 5 }
+command = { type = forest_attack which = mechanized value = 5 }
+command = { type = urban_attack which = mechanized value = 5 }
+command = { type = fort_attack which = mechanized value = 5 }
     }
   }
+
  }

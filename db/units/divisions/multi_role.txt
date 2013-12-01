@@ -221,7 +221,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 8 - Advanced Multi-Role Fighter (1945)
+# 8 - Advanced Multi-Role Fighter (1945) P-47N
 model = { 
 	cost 						= 22
 	buildtime	 				= 210
@@ -356,7 +356,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 13 - Modern Supersonic Turbojet Multi-Role Fighter - Third Generation (1963) F-4D Phantom II Northrop F-5A/Mikoyan-Gurevich Mig-21bis/Dassault Mirage F1A/Saab 37 Viggen/HESA Saeqeh
+# 13 - Modern Supersonic Turbojet Multi-Role Fighter - Third Generation (1963) F-4D Phantom II Northrop F-5A/Mikoyan-Gurevich Mig-21bis/Dassault Mirage F.1C/Saab 37 Viggen/HESA Saeqeh
 model = { 
 	cost 						= 28
 	buildtime	 				= 210
@@ -383,7 +383,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 14 - Advanced Supersonic Turbojet Multi-Role Fighter  - Third Generation (1968) F-4E Phantom II Northrop F-5E Tiger II/Mikoyan Gurevich MiG-23M/IAI Kfir/Atlas Cheetah/Dassault Mirage F1E
+# 14 - Advanced Supersonic Turbojet Multi-Role Fighter  - Third Generation (1968) F-4E Phantom II Northrop F-5E Tiger II/Mikoyan Gurevich MiG-23B/IAI Kfir/Atlas Cheetah/Dassault Mirage F1E
 model = { 
 	cost 						= 29
 	buildtime	 				= 210
@@ -410,7 +410,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 15 - Fourth Generation Supersonic Turbojet Multi-Role Fighter (1976) F-16 Fighting Falcon/Sukhoi Su-27S/Mikoyan MiG-29/Panavia Tornado IDS/Dassault Mirage 2000-5
+# 15 - Fourth Generation Supersonic Turbojet Multi-Role Fighter (1976) F-16 Fighting Falcon/Sukhoi Su-27S/Mikoyan MiG-29/Panavia Tornado IDS/Dassault Mirage 2000-5/AIDC F-CK-1 Ching-kuo
 model = { 
 	cost 						= 30
 	buildtime	 				= 210
@@ -437,7 +437,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 16 - Fourth & Half Generation Supersonic Turbojet Multi-Role Fighter (1983) F-18 Hornet/Mig-35/Eurofighter Typhoon/Saab JAS 39 Gripen/Dassault Rafale
+# 16 - Fourth & Half Generation Supersonic Turbojet Multi-Role Fighter (1983) F-18 Hornet/Mig-35/Eurofighter Typhoon/Saab JAS 39 Gripen/Dassault Rafale/HAL Tejas
 model = { 
 	cost 						= 30
 	buildtime	 				= 210
@@ -462,6 +462,7 @@ model = {
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	multi_role = 18
+	multi_role = 17
 	equipment = { fighter = 100 manpower = 100 }
 }
 
@@ -517,6 +518,6 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	multi_role = 18
+	multi_role = 17
 	equipment = { fighter = 100 manpower = 100 }
 }

@@ -234,6 +234,7 @@ technology =
     effects =
     { command = { type = new_model which = interceptor value = 8 }
       command = { type = scrap_model which = interceptor value = 7 }
+	  command = { type = info_may_cause which = 7810 }
     }
   }
   # Improved Interceptor
@@ -306,6 +307,8 @@ technology =
     effects =
     { command = { type = new_model which = interceptor value = 11 }
       command = { type = scrap_model which = interceptor value = 10 }
+	  command = { type = scrap_model which = d_10 value = 0 }
+	  command = { type = deactivate_unit_type which = d_10 }
     }
   }
   # Improved Turbojet Interceptor
@@ -672,6 +675,8 @@ technology =
     effects =
     { command = { type = new_model which = multi_role value = 8 }
       command = { type = scrap_model which = multi_role value = 7 }
+	  command = { type = scrap_model which = d_10 value = 0 }
+	  command = { type = deactivate_unit_type which = d_10 }
     }
   } 
   label = {

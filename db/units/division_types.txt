@@ -675,7 +675,7 @@ d_01 = {
 	desc = LDESC_AIRASSAULTDIVISION
 	short_desc = SDESC_AIRASSAULTDIVISION
 	eyr = 1
-	sprite = cavalry
+	sprite = d_01
 	transmute = cavalry
 	gfx_prio = 6
 	value = 1.15
@@ -796,4 +796,19 @@ d_09 = {
 	gfx_prio = 3
 	value = 1.0
 	list_prio = 10
+}
+d_10 = {
+	#ID 50
+	type = interceptor
+	name = NAME_LIGHTWEIGHTFIGHTER
+	short_name = SNAME_LIGHTWEIGHTFIGHTER
+	desc = LDESC_LIGHTWEIGHTFIGHTER
+	short_desc = SDESC_LIGHTWEIGHTFIGHTER
+	eyr = 2
+	sprite = interceptor
+	transmute = interceptor
+	gfx_prio = 2
+	value = 1.0
+	list_prio = 10
+	interceptor	= yes
 }

@@ -1,5 +1,5 @@
 detachable = yes
-# 0 - Early Naval Scout Helicopter (1943) Sikorsky R-4 Sikorsky H-5/
+# 0 - Early Naval Scout Helicopter (1943) Sikorsky R-4 Sikorsky H-5/Kamov Ka-8 Irkutyanin/Flettner Fl-282
 model = {
 	cost 						= 0.5
 	buildtime					= 100
@@ -24,7 +24,7 @@ model = {
 	}
 }
 
-# 1 - Basic Naval Scout Helicopter (1947) Bell H-13 Sioux
+# 1 - Basic Naval Scout Helicopter (1947) Bell H-13 Sioux/Mil Mi-1
 model = {
 	cost 						= 0.5
 	buildtime					= 101
@@ -49,7 +49,7 @@ model = {
 	}
 }
 
-# 2 - Improved ASW Helicopter (1953) Westland Whirlwind 
+# 2 - Improved ASW Helicopter (1953) Westland Whirlwind /Mil Mi-4PL
 model = {
 	cost 						= 0.5
 	buildtime					= 110
@@ -74,7 +74,7 @@ model = {
 	}
 }
 
-# 3 - Advanced ASW Helicopter (1961) Westland Sea King
+# 3 - Advanced ASW Helicopter (1961) Westland Sea King/Kamov Ka-25/Kaman SH-2 Seasprite
 model = {
 	cost 						= 0.5
 	buildtime					= 130
@@ -99,7 +99,7 @@ model = {
 	}
 }
 
-# 4 - Modern ASW Helicopter (1978) Westland Lynx
+# 4 - Modern ASW Helicopter (1978) Westland Lynx/Kamov Ka-27;
 model = {
 	cost 						= 0.5
 	buildtime					= 150
@@ -124,7 +124,7 @@ model = {
 	}
 }
 
-# 5 - Improved Modern ASW Helicopter (1999) AgustaWestland AW101/Sikorsky CH-148 Cyclone/Eurocopter EC725
+# 5 - Improved Modern ASW Helicopter (1999) AgustaWestland AW101/Sikorsky CH-148 Cyclone/Eurocopter EC725/Kamov Ka-40
 model = {
 	cost 						= 0.5
 	buildtime					= 150

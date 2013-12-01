@@ -274,7 +274,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 10 - Advanced Interceptor (1942)
+# 10 - Advanced Interceptor (1942) - P-51B
 model = { 
 	cost 						= 20
 	buildtime	 				= 210
@@ -301,7 +301,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 11 - Early Turbojet Interceptor (1944) - First Generation: Dassault M.D.450 Ouragan/Gloster Meteor F.1/Heinkel He 162/Mikoyan-Gurevich MiG-9/Lockheed F-80 Shooting Star/FMA I.Ae. 27 Pulqui I
+# 11 - Early Turbojet Interceptor (1944) - First Generation: Dassault M.D.450 Ouragan/Gloster Meteor F.1/Heinkel He 162/Mikoyan-Gurevich MiG-9/Lockheed F-80 Shooting Star/FMA I.Ae. 27 Pulqui I/P-51D
 model = { 
 	cost 						= 22
 	buildtime	 				= 210

@@ -208,3 +208,32 @@ model = {
 	reinforce_cost				= 0.6	
 	equipment = { carrier = 1 manpower = 1690 }
 }
+
+# 7 - Seaplane tender (1926) Commandant Teste/HMAS Albatross/Chitose/Currituck
+model = {
+	cost						= 1.3
+	buildtime 					= 960
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.4
+	maxspeed					= 18
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 5
+	subdetectioncapability		= 5
+	visibility					= 80
+	seadefence					= 35
+	airdefence					= 28
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 5
+	airattack					= 5
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 5000
+	supplyconsumption			= 1.2
+	fuelconsumption				= 1
+	distance					= 0.39
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 400 floatplane = 20 }
+}

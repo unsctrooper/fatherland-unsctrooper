@@ -119,5 +119,6 @@ model = {
 	upgrade_time_factor = 0.95
 	upgrade_cost_factor = 0.95
 	speed_cap			= 20
+	medium_armor = 9
 	equipment = { manpower = 2500 heavy_armor = 98  }
 }

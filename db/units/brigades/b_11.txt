@@ -27,7 +27,7 @@ model = {
 	}
 }
 
-# 1 Basic Refuelling Aircraft (1956) Boeing KC-97 Stratotanker/Ilyushin Il-78
+# 1 Basic Refuelling Aircraft (1956) Boeing KC-97 Stratotanker/
 model = { 
 	cost 						= 10
 	buildtime	 				= 200
@@ -111,7 +111,7 @@ model = {
 	}
 }
 
-# 4 Modern Refuelling Aircraft (1980) McDonnell Douglas KC-10 Extender/
+# 4 Modern Refuelling Aircraft (1980) McDonnell Douglas KC-10 Extender/Ilyushin Il-78
 model = { 
 	cost 						= 15
 	buildtime	 				= 200

@@ -595,3 +595,14 @@ b_15 = {
 	cag = yes
 	list_prio	= 10
 }
+b_16 = {
+	#ID			56
+	type		= air
+	name		= NAME_MIRV
+	short_name	= SNAME_MIRV
+	desc		= LDESC_MIRV
+	short_desc	= SDESC_MIRV
+	value		= 2.0
+	escort = yes
+	list_prio	= 10
+}

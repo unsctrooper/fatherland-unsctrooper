@@ -17063,9 +17063,6 @@ DFR;TP;27. Truppentransporterflottille
 DFR;TP;28. Truppentransporterflottille
 DFR;TP;29. Truppentransporterflottille
 DFR;TP;30. Truppentransporterflottille
-DFR;46;FGS Lütjens (D185)
-DFR;46;FGS Mölders (D186)
-DFR;46;FGS Rommel (D187)
 DOM;HQ;Cuartel General 1er Ejército
 DOM;HQ;Cuartel General 2o Ejército
 DOM;HQ;Cuartel General 3er Ejército
@@ -19463,57 +19460,6 @@ ENG;TP;97th Transport Flotilla
 ENG;TP;98th Transport Flotilla
 ENG;TP;99th Transport Flotilla
 ENG;TP;100th Transport Flotilla
-ENG;43;HMS Dreadnought (S101)
-ENG;43;HMS Valiant (S102)
-ENG;43;HMS Warspite (S103)
-ENG;43;HMS Churchill (S46)
-ENG;43;HMS Conqueror (S48)
-ENG;43;HMS Courageous (S50)
-ENG;43;HMS Swiftsure (S126)
-ENG;43;HMS Sovereign (S108)
-ENG;43;HMS Superb (S109)
-ENG;43;HMS Sceptre (S104)
-ENG;43;HMS Spartan (S105)
-ENG;43;HMS Splendid (S106)
-ENG;43;HMS Trafalgar (S107)
-ENG;43;HMS Turbulent (S87)
-ENG;43;HMS Tireless (S88)
-ENG;43;HMS Torbay (S90)
-ENG;43;HMS Trenchant (S91)
-ENG;43;HMS Talent (S92)
-ENG;43;HMS Triumph (S93)
-ENG;44;HMS Resolution (S22)
-ENG;44;HMS Repulse (S23)
-ENG;44;HMS Renown (S26)
-ENG;44;HMS Revenge (S27)
-ENG;44;HMS Vanguard (S28)
-ENG;44;HMS Victorious (S29)
-ENG;44;HMS Vigilant (S30)
-ENG;44;HMS Vengeance (S31)
-ENG;46;HMS Decoy (D106)
-ENG;46;HMS Devonshire (D02)
-ENG;46;HMS Hampshire (D06)
-ENG;46;HMS Kent (D12)
-ENG;46;HMS London (D16)
-ENG;46;HMS Fife (D20)
-ENG;46;HMS Glamorgan (D19)
-ENG;46;HMS Norfolk (D21)
-ENG;46;HMS Antrim (D18)
-ENG;46;HMS Bristol (D23)
-ENG;46;HMS Sheffield (D80)
-ENG;46;HMS Birmingham (D86)
-ENG;46;HMS Newcastle (D87)
-ENG;46;HMS Coventry (D118)
-ENG;46;HMS Glasgow (D88)
-ENG;46;HMS Cardiff (D108)
-ENG;46;HMS Exeter (D89)
-ENG;46;HMS Southampton (D90)
-ENG;46;HMS Liverpool (D92)
-ENG;46;HMS Nottingham (D91)
-ENG;46;HMS Manchester (D95)
-ENG;46;HMS York (D98)
-ENG;46;HMS Gloucester (D96)
-ENG;46;HMS Edinburgh (D97)
 EQA;HQ;1ère Armée de l'Afrique Éq.
 EQA;HQ;2ème Armée de l'Afrique Éq.
 EQA;HQ;3ème Armée de l'Afrique Éq.
@@ -21934,22 +21880,6 @@ FRA;TP;96e Flottille de Convois
 FRA;TP;97e Flottille de Convois
 FRA;TP;98e Flottille de Convois
 FRA;TP;99e Flottille de Convois
-FRA;43;Améthyste (S605)
-FRA;43;Casabianca (S603)
-FRA;43;Émeraude (S604)
-FRA;43;Perle (S606)
-FRA;43;Rubis (S601)
-FRA;43;Saphir (S602)
-FRA;44;Le Redoutable (S611)
-FRA;44;Le Terrible (S612)
-FRA;44;Le Foudroyant (S610)
-FRA;44;L'Indomptable (S613)
-FRA;44;Le Tonnant (S614)
-FRA;44;L'Inflexible (S615)
-FRA;44;Le Triomphant (S616)
-FRA;44;Le Téméraire (S617)
-FRA;44;Le Vigilant (S618)
-FRA;44;Le Terrible (S619)
 GAB;HQ;1ère Armée du Gabon
 GAB;HQ;2e Armée du Gabon
 GAB;HQ;3e Armée du Gabon
@@ -55890,6 +55820,10 @@ SOV;CA;Admiral Zozulya
 SOV;CA;Vladivostok
 SOV;CA;Vice-admiral Drozd
 SOV;CA;Sevastopol
+SOV;42;Kirov
+SOV;42;Frunze
+SOV;42;Kalinin
+SOV;42;Yuri Andropov
 SOV;CL;Chapayev
 SOV;CL;Chkalov
 SOV;CL;Zhelezniakov
@@ -55924,6 +55858,56 @@ SOV;CL;Riga
 SOV;CL;Profintern
 SOV;CL;Chervona Ukraina
 SOV;CL;Krasnyi Kavkaz
+SOV;47;Chapayev
+SOV;47;Chkalov
+SOV;47;Zhelezniakov
+SOV;47;Frunze
+SOV;47;Blukher
+SOV;47;Krasnyi Oktyabr
+SOV;47;Komsomolec
+SOV;47;Murmansk
+SOV;47;Grozny
+SOV;47;Admiral Fokin
+SOV;47;Admiral Golovko
+SOV;47;Chernomorets
+SOV;47;Sevastopol
+SOV;47;Admiral Zozulya
+SOV;47;Baltiets
+SOV;47;Admiral Isakov
+SOV;47;Admiral Nakhimov
+SOV;47;Admiral Semerkin
+SOV;47;Marshal Voroshilov
+SOV;47;Admiral Oktyabrskiy
+SOV;47;Admiral Isachenkov
+SOV;47;Marshal Timoshenko
+SOV;47;Admiral Yumashev
+SOV;47;Nikolayev
+SOV;47;Riga
+SOV;47;Profintern
+SOV;47;Chervona Ukraina
+SOV;47;Krasnyi Kavkaz
+SOV;47;Nikolayev
+SOV;47;Ochakov
+SOV;47;Kerch
+SOV;47;Azov
+SOV;47;Petropavlovsk
+SOV;47;Tashkent
+SOV;47;Vladivostok
+SOV;47;Udaloy
+SOV;47;Vice-Admiral Kulakov
+SOV;47;Marshal Vasilyevsky
+SOV;47;Admiral Zakharov
+SOV;47;Admiral Spiridonov
+SOV;47;Admiral Tributs
+SOV;47;Marshal Shaposhnikov
+SOV;47;Severomorsk
+SOV;47;Admiral Levchenko
+SOV;47;Admiral Vinogradov
+SOV;47;Admiral Kharlamov
+SOV;47;Admiral Panteleyev
+SOV;47;Admiral Chabanenko
+SOV;47;Admiral Basisty
+SOV;47;Admiral Kucherov
 SOV;DD;1-ya Flotiliya Esmintsev
 SOV;DD;2-ya Flotiliya Esmintsev
 SOV;DD;3-ya Flotiliya Esmintsev
@@ -56224,323 +56208,6 @@ SOV;TP;97-ya Transportnaya Flotiliya
 SOV;TP;98-ya Transportnaya Flotiliya
 SOV;TP;99-ya Transportnaya Flotiliya
 SOV;TP;100-ya Transportnaya Flotiliya
-SOV;41;76th Guards Air Assault Division
-SOV;42;Kirov
-SOV;42;Frunze
-SOV;42;Kalinin
-SOV;42;Yuri Andropov
-SOV;42;Admiral Flota Sovetskogo Soyuza Kuznetcov
-SOV;43;K-3
-SOV;43;K-5
-SOV;43;K-8
-SOV;43;K-14
-SOV;43;K-52
-SOV;43;K-21
-SOV;43;K-11
-SOV;43;K-133
-SOV;43;K-181
-SOV;43;K-115
-SOV;43;K-159
-SOV;43;K-42
-SOV;43;K-50
-SOV;43;K-27
-SOV;43;K-38
-SOV;43;K-69
-SOV;43;K-147
-SOV;43;K-53
-SOV;43;K-306
-SOV;43;K-323
-SOV;43;K-370
-SOV;43;K-438
-SOV;43;K-367
-SOV;43;K-398
-SOV;43;K-462
-SOV;43;K-481
-SOV;43;K-314
-SOV;43;K-454
-SOV;43;K-469
-SOV;43;K-387
-SOV;43;K-371
-SOV;43;K-467
-SOV;43;K-488
-SOV;43;K-505
-SOV;43;K-495
-SOV;43;K-513
-SOV;43;K-517
-SOV;43;K-524
-SOV;43;K-254
-SOV;43;K-502
-SOV;43;K-527
-SOV;43;K-298
-SOV;43;K-358
-SOV;43;K-299
-SOV;43;K-244
-SOV;43;K-247
-SOV;43;K-507
-SOV;43;K-251
-SOV;43;K-255
-SOV;43;K-324
-SOV;43;K-355
-SOV;43;K-360
-SOV;43;K-218
-SOV;43;K-242
-SOV;43;K-492
-SOV;43;K-412
-SOV;43;K-305
-SOV;43;K-264
-SOV;43;K-315
-SOV;43;K-292
-SOV;43;K-388
-SOV;43;K-138
-SOV;43;K-414
-SOV;43;K-448
-SOV;43;K-278
-SOV;43;K-64
-SOV;43;K-316
-SOV;43;K-373
-SOV;43;K-463
-SOV;43;K-123
-SOV;43;K-432
-SOV;43;K-493
-SOV;43;K-239
-SOV;43;K-276
-SOV;43;K-534
-SOV;43;K-336
-SOV;43;K-536
-SOV;44;B-67
-SOV;44;B-73
-SOV;44;B-78
-SOV;44;B-79
-SOV;44;B-89
-SOV;44;B-92
-SOV;44;B-40
-SOV;44;B-41
-SOV;44;B-42
-SOV;44;B-121
-SOV;44;B-125
-SOV;44;B-45
-SOV;44;B-29
-SOV;44;B-146
-SOV;44;B-149
-SOV;44;B-95
-SOV;44;K-91
-SOV;44;K-93
-SOV;44;K-110
-SOV;44;K-153
-SOV;44;B-93
-SOV;44;B-103
-SOV;44;B-109
-SOV;44;B-113
-SOV;44;B-46
-SOV;44;B-51
-SOV;44;K-163
-SOV;44;K-142
-SOV;44;K-19
-SOV;44;K-33
-SOV;44;K-55
-SOV;44;K-40
-SOV;44;K-16
-SOV;44;K-145
-SOV;44;K-149
-SOV;44;K-178
-SOV;44;K-45
-SOV;44;K-59
-SOV;44;K-66
-SOV;44;K-122
-SOV;44;K-151
-SOV;44;K-30
-SOV;44;K-18
-SOV;44;K-137
-SOV;44;K-140
-SOV;44;K-216
-SOV;44;K-26
-SOV;44;K-32
-SOV;44;K-207
-SOV;44;K-210
-SOV;44;K-249
-SOV;44;K-253
-SOV;44;K-395
-SOV;44;K-408
-SOV;44;K-411
-SOV;44;K-418
-SOV;44;K-420
-SOV;44;K-423
-SOV;44;K-426
-SOV;44;K-415
-SOV;44;K-403
-SOV;44;K-245
-SOV;44;K-214
-SOV;44;K-444
-SOV;44;K-399
-SOV;44;K-434
-SOV;44;K-236
-SOV;44;K-389
-SOV;44;K-258
-SOV;44;K-219
-SOV;44;K-228
-SOV;44;K-252
-SOV;44;K-446
-SOV;44;K-451
-SOV;44;K-436
-SOV;44;K-430
-SOV;44;K-279
-SOV;44;K-447
-SOV;44;K-450
-SOV;44;K-385
-SOV;44;K-457
-SOV;44;K-465
-SOV;44;K-460
-SOV;44;K-472
-SOV;44;K-475
-SOV;44;K-171
-SOV;44;K-366
-SOV;44;K-417
-SOV;44;K-477
-SOV;44;K-497
-SOV;44;K-500
-SOV;44;K-512
-SOV;44;K-523
-SOV;44;K-530
-SOV;44;K-182
-SOV;44;K-92
-SOV;44;K-193
-SOV;44;K-421
-SOV;44;K-424
-SOV;44;K-441
-SOV;44;K-449
-SOV;44;K-455
-SOV;44;K-490
-SOV;44;K-487
-SOV;44;K-496
-SOV;44;K-506
-SOV;44;K-211
-SOV;44;K-223
-SOV;44;K-180
-SOV;44;K-433
-SOV;44;K-129
-SOV;44;K-44
-SOV;44;K-51
-SOV;44;K-84
-SOV;44;K-64
-SOV;44;K-114
-SOV;44;K-117
-SOV;44;K-18
-SOV;44;K-407
-SOV;44;K-43
-SOV;44;K-87
-SOV;44;K-25
-SOV;44;K-143
-SOV;44;K-313
-SOV;44;K-308
-SOV;44;K-320
-SOV;44;K-302
-SOV;44;K-325
-SOV;44;K-429
-SOV;44;K-201
-SOV;44;K-452
-SOV;44;K-458
-SOV;44;K-479
-SOV;44;K-503
-SOV;44;K-508
-SOV;44;K-209
-SOV;44;K-166
-SOV;44;K-104
-SOV;44;K-170
-SOV;44;K-172
-SOV;44;K-47
-SOV;44;K-1
-SOV;44;K-28
-SOV;44;K-74
-SOV;44;K-22
-SOV;44;K-35
-SOV;44;K-90
-SOV;44;K-116
-SOV;44;K-125
-SOV;44;K-128
-SOV;44;K-131
-SOV;44;K-135
-SOV;44;K-175
-SOV;44;K-184
-SOV;44;K-189
-SOV;44;K-57
-SOV;44;K-31
-SOV;44;K-48
-SOV;44;K-56
-SOV;44;K-10
-SOV;44;K-94
-SOV;44;K-108
-SOV;44;K-7
-SOV;44;K-23
-SOV;44;K-34
-SOV;44;TK-208
-SOV;44;TK-202
-SOV;44;TK-12
-SOV;44;TK-13
-SOV;44;TK-17
-SOV;44;TK-20
-SOV;44;TK-210
-SOV;44;K-525
-SOV;44;K-206
-SOV;44;K-148
-SOV;44;K-173
-SOV;44;K-132
-SOV;44;K-119
-SOV;44;K-410
-SOV;44;K-442
-SOV;44;K-456
-SOV;44;K-266
-SOV;44;K-186
-SOV;44;K-141
-SOV;44;K-150
-SOV;44;K-135
-SOV;44;K-160 Barnaul
-SOV;46;Bedovyy
-SOV;46;Prozorlivyy
-SOV;46;Neulovimyy
-SOV;46;Neuderzhimyy
-SOV;46;Neukrotimyy
-SOV;46;Gnevnyy
-SOV;46;Upornyy
-SOV;46;Boykiy
-SOV;46;Gremyashchiy
-SOV;46;Zhguchiy
-SOV;46;Zorkiy
-SOV;46;Derzkiy
-SOV;46;Gordyy
-SOV;46;Khrabryy
-SOV;46;Sovremennyy
-SOV;46;Otchayannyy
-SOV;46;Otlichnyy
-SOV;46;Osmotritelnyy
-SOV;46;Bezuprechnyy
-SOV;46;Boevoy
-SOV;46;Stoykiy
-SOV;46;Okrylyonnyy
-SOV;46;Burnyy
-SOV;46;Veduschiy
-SOV;46;Bystryy
-SOV;46;Rastoropnyy
-SOV;46;Bezboyaznennyy
-SOV;46;Bezuderzhnyy
-SOV;46;Bespokoynyy
-SOV;46;Moskovskiy Komsomolets
-SOV;46;Besstrashnyy
-SOV;46;Buynyy
-SOV;46;Vechnyy
-SOV;46;Vnushitelnyy
-SOV;46;Vazhnyy
-SOV;46;Vdumchivyy
-SOV;46;Vnushitelnyy
-SOV;46;Vechnyy
-SOV;46;
-SOV;46;
-SOV;46;
-SOV;46;
-SOV;46;
-SOV;46;
-SOV;46;
-SOV;46;
-SOV;46;
 SPA;HQ;Cuartel General 1er Ejército
 SPA;HQ;Cuartel General 2o Ejército
 SPA;HQ;Cuartel General 3er Ejército
@@ -83096,6 +82763,26 @@ USA;31;USS Bataan
 USA;31;USS San Jacinto
 USA;31;USS Saipan
 USA;31;USS Wright
+USA;31;USS Iwo Jima
+USA;31;USS Okinawa
+USA;31;USS Guadalcanal
+USA;31;USS Guam
+USA;31;USS Tripoli
+USA;31;USS New Orleans
+USA;31;USS Inchon
+USA;31;USS Wasp
+USA;31;USS Tarawa
+USA;31;USS Saipan
+USA;31;USS Belleau Wood
+USA;31;USS Nassau
+USA;31;USS Peleliu
+USA:31;USS Bataan
+USA;31;USS Bonhomme Richard
+USA;31;USS Boxer
+USA;31;USS Essex
+USA;31;USS Iwo Jima
+USA;31;USS Kearsarge
+USA;31;USS Makin Island
 USA;CA;USS Pensacola
 USA;CA;USS Salt Lake City
 USA;CA;USS Northampton
@@ -83605,252 +83292,6 @@ USA;TP;47th Transport Flotilla
 USA;TP;48th Transport Flotilla
 USA;TP;49th Transport Flotilla
 USA;TP;50th Transport Flotilla
-USA;41;101st Air Assault Division 'Screaming Eagles'
-USA;41;1st Air Cavalry Division
-USA;41;11th Air Assault Division 'Angels'
-USA;42;USS Long Beach (CGN-9)
-USA;42;USS Bainbridge (CGN-25)
-USA;42;USS Truxtun (CGN-35)
-USA;42;USS California (CGN-36)
-USA;42;USS South Carolina (CGN-37)
-USA;42;USS Virginia (CGN-38)
-USA;42;USS Texas (CGN-39)
-USA;42;USS Mississippi (CGN-40)
-USA;42;USS Arkansas (CGN-41)
-USA;43;USS Nautilus (SSN-571)
-USA;43;USS Seawolf (SSN-575)
-USA;43;USS Skate (SSN-578)
-USA;43;USS Swordfish (SSN-579)
-USA;43;USS Sargo (SSN-583)
-USA;43;USS Seadragon (SSN-584)
-USA;43;USS Skipjack (SSN-585)
-USA;43;USS Scamp (SSN-588)
-USA;43;USS Scorpion (SSN-589)
-USA;43;USS Sculpin (SSN-590)
-USA;43;USS Shark (SSN-591)
-USA;43;USS Snook (SSN-592)
-USA;43;USS Tullibee (SSN-597)
-USA;43;USS Thresher (SSN-593)
-USA;43;USS Permit (SSN-594)
-USA;43;USS Plunger (SSN-595)
-USA;43;USS Barb (SSN-596)
-USA;43;USS Pollack (SSN-603)
-USA;43;USS Haddo (SSN-604)
-USA;43;USS Jack (SSN-605)
-USA;43;USS Tinosa (SSN-606)
-USA;43;USS Dace (SSN-607)
-USA;43;USS Guardfish (SSN-612)
-USA;43;USS Flasher (SSN-613)
-USA;43;USS Greenling (SSN-614)
-USA;43;USS Gato (SSN-615)
-USA;43;USS Haddock (SSN-621)
-USA;43;USS Sturgeon (SSN-637)
-USA;43;USS Whale (SSN-638)
-USA;43;USS Tautog (SSN-639)
-USA;43;USS Grayling (SSN-646)
-USA;43;USS Pogy (SSN-647)
-USA;43;USS Aspro (SSN-648)
-USA;43;USS Sunfish (SSN-649)
-USA;43;USS Pargo (SSN-650)
-USA;43;USS Queenfish (SSN-651)
-USA;43;USS Puffer (SSN-652)
-USA;43;USS Ray (SSN-653)
-USA;43;USS Sand Lance (SSN-660)
-USA;43;USS Lapon (SSN-661)
-USA;43;USS Gurnard (SSN-662)
-USA;43;USS Hammerhead (SSN-663)
-USA;43;USS Sea Devil (SSN-664)
-USA;43;USS Guitarro (SSN-665)
-USA;43;USS Hawkbill (SSN-666)
-USA;43;USS Bergall (SSN-667)
-USA;43;USS Spadefish (SSN-668)
-USA;43;USS Seahorse (SSN-669)
-USA;43;USS Finback (SSN-670)
-USA;43;USS Narwhal (SSN-671)
-USA;43;USS Pintado (SSN-672)
-USA;43;USS Flying Fish (SSN-673)
-USA;43;USS Trepang (SSN-674)
-USA;43;USS Bluefish (SSN-675)
-USA;43;USS Billfish (SSN-676)
-USA;43;USS Drum (SSN-677)
-USA;43;USS Archerfish (SSN-678)
-USA;43;USS Silversides (SSN-679)
-USA;43;USS William H. Bates (SSN-680)
-USA;43;USS Batfish (SSN-681)
-USA;43;USS Tunny (SSN-682)
-USA;43;USS Parche (SSN-683)
-USA;43;USS Cavalla (SSN-684)
-USA;43;USS Glenard P. Lipscomb (SSN-685)
-USA;43;USS L. Mendel Rivers (SSN-686)
-USA;43;USS Richard B. Russell (SSN-687)
-USA;43;USS Los Angeles (SSN-688)
-USA;43;USS Baton Rouge (SSN-689)
-USA;43;USS Philadelphia (SSN-690)
-USA;43;USS Memphis (SSN-691)
-USA;43;USS Omaha (SSN-692)
-USA;43;USS Cincinnati (SSN-693)
-USA;43;USS Groton (SSN-694)
-USA;43;USS Birmingham (SSN-695)
-USA;43;USS New York City (SSN-696)
-USA;43;USS Indianapolis (SSN-697)
-USA;43;USS Bremerton (SSN-698)
-USA;43;USS Jacksonville (SSN-699)
-USA;43;USS Dallas (SSN-700)
-USA;43;USS La Jolla (SSN-701)
-USA;43;USS Phoenix (SSN-702)
-USA;43;USS Boston (SSN-703)
-USA;43;USS Baltimore (SSN-704)
-USA;43;USS City of Corpus Christi (SSN-705)
-USA;43;USS Albuquerque (SSN-706)
-USA;43;USS Portsmouth (SSN-707)
-USA;43;USS Minneapolis–Saint Paul (SSN-708)
-USA;43;USS Hyman G. Rickover (SSN-709)
-USA;43;USS Augusta (SSN-710)
-USA;43;USS San Francisco (SSN-711)
-USA;43;USS Atlanta (SSN-712)
-USA;43;USS Houston (SSN-713)
-USA;43;USS Norfolk (SSN-714)
-USA;43;USS Buffalo (SSN-715)
-USA;43;USS Salt Lake City (SSN-716)
-USA;43;USS Olympia (SSN-717)
-USA;43;USS Honolulu (SSN-718)
-USA;43;USS Providence (SSN-719)
-USA;43;USS Pittsburgh (SSN-720)
-USA;43;USS Chicago (SSN-721)
-USA;43;USS Key West (SSN-722)
-USA;43;USS Oklahoma City (SSN-723)
-USA;43;USS Louisville (SSN-724)
-USA;43;USS Helena (SSN-725)
-USA;43;USS Newport News (SSN-750)
-USA;44;USS Grayback (SSG-574)
-USA;44;USS Growler (SSG-577)
-USA;44;USS George Washington (SSBN-598)
-USA;44;USS Patrick Henry (SSBN-599)
-USA;44;USS Theodore Roosevelt (SSBN-600)
-USA;44;USS Robert E. Lee (SSBN-601)
-USA;44;USS Abraham Lincoln (SSBN-602)
-USA;44;USS Ethan Allen (SSBN-608)
-USA;44;USS Sam Houston (SSBN-609)
-USA;44;USS Thomas A. Edison (SSBN-610)
-USA;44;USS John Marshall (SSBN-611)
-USA;44;USS Thomas Jefferson (SSBN-618)
-USA;44;USS Lafayette (SSBN-616)
-USA;44;USS Alexander Hamilton (SSBN-617)
-USA;44;USS Andrew Jackson (SSBN-619)
-USA;44;USS John Adams (SSBN-620)
-USA;44;USS James Monroe (SSBN-622)
-USA;44;USS Nathan Hale (SSBN-623)
-USA;44;USS Woodrow Wilson (SSBN-624)
-USA;44;USS Henry Clay (SSBN-625)
-USA;44;USS Daniel Webster (SSBN-626)
-USA;44;USS James Madison (SSBN-627)
-USA;44;USS Tecumseh (SSBN-628)
-USA;44;USS Daniel Boone (SSBN-629)
-USA;44;USS John C. Calhoun (SSBN-630)
-USA;44;USS Ulysses S. Grant (SSBN-631)
-USA;44;USS Von Steuben (SSBN-632)
-USA;44;USS Casimir Pulaski (SSBN-633)
-USA;44;USS Stonewall Jackson (SSBN-634)
-USA;44;USS Sam Rayburn (SSBN-635)
-USA;44;USS Nathanael Greene (SSBN-636)
-USA;44;USS Benjamin Franklin (SSBN-640)
-USA;44;USS Simon Bolivar (SSBN-641)
-USA;44;USS Kamehameha (SSBN-642)
-USA;44;USS George Bancroft (SSBN-643)
-USA;44;USS Lewis and Clark (SSBN-644)
-USA;44;USS James K. Polk (SSBN-645)
-USA;44;USS George C. Marshall (SSBN-654)
-USA;44;USS Henry L. Stimson (SSBN-655)
-USA;44;USS George Washington Carver (SSBN-656)
-USA;44;USS Francis Scott Key (SSBN-657)
-USA;44;USS Mariano G. Vallejo (SSBN-658)
-USA;44;USS Will Rogers (SSBN-659)
-USA;44;USS Ohio (SSBN-726)
-USA;44;USS Michigan (SSBN-727)
-USA;44;USS Florida (SSBN-728)
-USA;44;USS Georgia (SSBN-729)
-USA;44;USS Henry M. Jackson (SSBN-730)
-USA;44;USS Alabama (SSBN-731)
-USA;44;USS Alaska (SSBN-732)
-USA;44;USS Nevada (SSBN-733)
-USA;44;USS Tennessee (SSBN-734)
-USA;44;USS Pennsylvania (SSBN-735)
-USA;44;USS West Virginia (SSBN-736)
-USA;44;USS Kentucky (SSBN-737)
-USA;44;USS Maryland (SSBN-738)
-USA;44;USS Nebraska (SSBN-739)
-USA;44;USS Rhode Island (SSBN-740)
-USA;44;USS Maine (SSBN-741)
-USA;44;USS Wyoming (SSBN-742)
-USA;44;USS Louisiana (SSBN-743)
-USA;46;USS John Paul Jones (DDG-32)
-USA;46;USS Decatur (DDG-31)
-USA;46;USS Somers (DDG-34)
-USA;46;USS Parsons (DDG-33)
-USA;46;USS Farragut (DDG-37)
-USA;46;USS Luce (DDG-38)
-USA;46;USS Macdonough (DDG-39)
-USA;46;USS Coontz (DDG-40)
-USA;46;USS King (DDG-41)
-USA;46;USS Mahan (DDG-42)
-USA;46;USS Dahlgren (DDG-43)
-USA;46;USS William V. Pratt (DDG-44)
-USA;46;USS Dewey (DDG-45)
-USA;46;USS Preble (DDG-46)
-USA;46;USS Charles F. Adams (DDG-2)
-USA;46;USS John King (DDG-3)
-USA;46;USS Lawrence (DDG-4)
-USA;46;USS Claude V. Ricketts (DDG-5)
-USA;46;USS Barney (DDG-6)
-USA;46;USS Henry B. Wilson (DDG-7)
-USA;46;USS Lynde McCormick (DDG-8)
-USA;46;USS Towers (DDG-9)
-USA;46;USS Sampson (DDG-10)
-USA;46;USS Sellers (DDG-11)
-USA;46;USS Robison (DDG-12)
-USA;46;USS Hoel (DDG-13)
-USA;46;USS Buchanan (DDG-14)
-USA;46;USS Berkeley (DDG-15)
-USA;46;USS Joseph Strauss (DDG-16)
-USA;46;USS Conyngham (DDG-17)
-USA;46;USS Semmes (DDG-18)
-USA;46;USS Tattnall (DDG-19)
-USA;46;USS Goldsborough (DDG-20)
-USA;46;USS Cochrane (DDG-21)
-USA;46;USS Benjamin Stoddert (DDG-22)
-USA;46;USS Richard E. Byrd (DDG-23)
-USA;46;USS Waddell (DDG-24)
-USA;46;USS Spruance (DD-963)
-USA;46;USS Paul F. Foster (DD-964)
-USA;46;USS Kinkaid (DD-965)
-USA;46;USS Hewitt (DD-966)
-USA;46;USS Elliot (DD-967)
-USA;46;USS Arthur W. Radford (DD-968)
-USA;46;USS Peterson (DD-969)
-USA;46;USS Caron (DD-970)
-USA;46;USS David R. Ray (DD-971)
-USA;46;USS Oldendorf (DD-972)
-USA;46;USS John Young (DD-973)
-USA;46;USS Comte de Grasse (DD-974)
-USA;46;USS O'Brien (DD-975)
-USA;46;USS Merrill (DD-976)
-USA;46;USS Briscoe (DD-977)
-USA;46;USS Stump (DD-978)
-USA;46;USS Conolly (DD-979)
-USA;46;USS Moosbrugger (DD-980)
-USA;46;USS John Hancock (DD-981)
-USA;46;USS Nicholson (DD-982)
-USA;46;USS John Rodgers (DD-983)
-USA;46;USS Leftwich (DD-984)
-USA;46;USS Cushing (DD-985)
-USA;46;USS Harry W. Hill (DD-986)
-USA;46;USS O'Bannon (DD-987)
-USA;46;USS Thorn (DD-988)
-USA;46;USS Deyo (DD-989)
-USA;46;USS Ingersoll (DD-990)
-USA;46;USS Fife (DD-991)
-USA;46;USS Fletcher (DD-992)
-USA;46;USS Hayler (DD-997)
 UZB;HQ;1st Ozbekiston Armiya
 UZB;HQ;2nd Ozbekiston Armiya
 UZB;HQ;3rd Ozbekiston Armiya
@@ -86695,3 +86136,4158 @@ U44;Mil;7. Reserve Polen
 U44;Mil;8. Reserve Polen
 U44;Mil;9. Reserve Polen
 U44;Mil;10. Reserve Polen
+CAN;41;9th Canadian Airborne Division
+CAN;41;21st Canadian Airborne Division
+CAN;41;32nd Canadian Airborne Division
+CAN;41;44th Canadian Airborne Division
+CAN;41;45th Canadian Airborne Division
+CAN;41;45th Canadian Airborne Division
+CAN;41;46th Canadian Airborne Division
+CAN;42;HMCS Canada
+CAN;42;HMCS Ontario
+CAN;42;HMCS Québec
+CAN;42;HMCS British Columbia
+CAN;42;HMCS Nova Scotia
+CAN;42;HMCS New Brunswick
+CAN;42;HMCS Manitoba
+CAN;42;HMCS Alberta
+CAN;42;HMCS Saskatchewan
+CAN;42;HMCS Prince Edward Island
+CAN;42;HMCS Dominion
+CAN;42;HMCS Toronto
+CAN;42;HMCS Montréal
+CAN;42;HMCS Vancouver
+CAN;42;HMCS Ottawa
+CAN;42;HMCS Calgary
+CAN;42;HMCS Edmonton
+CAN;42;HMCS Ile de Québec
+CAN;42;HMCS Winnipeg
+CAN;42;HMCS Hamilton
+CAN;42;HMCS London
+CAN;42;HMCS Kitchener
+CAN;42;HMCS St. Catharines
+CAN;42;HMCS Halifax
+CAN;42;HMCS Victoria
+CAN;42;HMCS Windsor
+CAN;42;HMCS Oshawa
+CAN;42;HMCS Saskatoon
+CAN;42;HMCS Regina
+CAN;42;HMCS Sherbrooke
+CAN;42;HMCS Barrie
+CAN;42;HMCS Kelowna
+CAN;42;HMCS Abbotsford
+CAN;42;HMCS Kingston
+CAN;42;HMCS Trois-Rivieres
+CAN;42;HMCS Saint John
+CAN;42;HMCS Moncton
+CAN;43;HMCS Ojibwa
+CAN;43;HMCS Okanagan
+CAN;43;HMCS Onondaga
+CAN;43;HMCS Olympus
+CAN;43;HMCS Osiris
+CAN;43;HMCS Victoria
+CAN;43;HMCS Windsor
+CAN;43;HMCS Corner Brook
+CAN;43;HMCS Chicoutimi
+CAN;43;HMCS Canada
+CAN;43;HMCS Ontario
+CAN;43;HMCS Québec
+CAN;43;HMCS British Columbia
+CAN;43;HMCS Nova Scotia
+CAN;43;HMCS New Brunswick
+CAN;43;HMCS Manitoba
+CAN;43;HMCS Alberta
+CAN;43;HMCS Saskatchewan
+CAN;43;HMCS Prince Edward Island
+CAN;43;HMCS Dominion
+CAN;43;HMCS Toronto
+CAN;43;HMCS Montréal
+CAN;43;HMCS Vancouver
+CAN;43;HMCS Ottawa
+CAN;43;HMCS Calgary
+CAN;43;HMCS Edmonton
+CAN;43;HMCS Ile de Québec
+CAN;43;HMCS Winnipeg
+CAN;43;HMCS Hamilton
+CAN;43;HMCS London
+CAN;43;HMCS Kitchener
+CAN;43;HMCS St. Catharines
+CAN;43;HMCS Halifax
+CAN;43;HMCS Victoria
+CAN;43;HMCS Windsor
+CAN;43;HMCS Oshawa
+CAN;43;HMCS Saskatoon
+CAN;43;HMCS Regina
+CAN;43;HMCS Sherbrooke
+CAN;43;HMCS Barrie
+CAN;43;HMCS Kelowna
+CAN;43;HMCS Abbotsford
+CAN;43;HMCS Kingston
+CAN;43;HMCS Trois-Rivieres
+CAN;43;HMCS Saint John
+CAN;43;HMCS Moncton
+CAN;44;HMCS Ojibwa
+CAN;44;HMCS Okanagan
+CAN;44;HMCS Onondaga
+CAN;44;HMCS Olympus
+CAN;44;HMCS Osiris
+CAN;44;HMCS Victoria
+CAN;44;HMCS Windsor
+CAN;44;HMCS Corner Brook
+CAN;44;HMCS Chicoutimi
+CAN;44;HMCS Canada
+CAN;44;HMCS Ontario
+CAN;44;HMCS Québec
+CAN;44;HMCS British Columbia
+CAN;44;HMCS Nova Scotia
+CAN;44;HMCS New Brunswick
+CAN;44;HMCS Manitoba
+CAN;44;HMCS Alberta
+CAN;44;HMCS Saskatchewan
+CAN;44;HMCS Prince Edward Island
+CAN;44;HMCS Dominion
+CAN;44;HMCS Toronto
+CAN;44;HMCS Montréal
+CAN;44;HMCS Vancouver
+CAN;44;HMCS Ottawa
+CAN;44;HMCS Calgary
+CAN;44;HMCS Edmonton
+CAN;44;HMCS Ile de Québec
+CAN;44;HMCS Winnipeg
+CAN;44;HMCS Hamilton
+CAN;44;HMCS London
+CAN;44;HMCS Kitchener
+CAN;44;HMCS St. Catharines
+CAN;44;HMCS Halifax
+CAN;44;HMCS Victoria
+CAN;44;HMCS Windsor
+CAN;44;HMCS Oshawa
+CAN;44;HMCS Saskatoon
+CAN;44;HMCS Regina
+CAN;44;HMCS Sherbrooke
+CAN;44;HMCS Barrie
+CAN;44;HMCS Kelowna
+CAN;44;HMCS Abbotsford
+CAN;44;HMCS Kingston
+CAN;44;HMCS Trois-Rivieres
+CAN;44;HMCS Saint John
+CAN;44;HMCS Moncton
+CAN;45;Frigate Flotilla 1
+CAN;45;Frigate Flotilla 2
+CAN;45;Frigate Flotilla 3
+CAN;45;Frigate Flotilla 4
+CAN;45;Frigate Flotilla 5
+CAN;45;Frigate Flotilla 6
+CAN;45;Frigate Flotilla 7
+CAN;45;Frigate Flotilla 8
+CAN;45;Frigate Flotilla 9
+CAN;45;Frigate Flotilla 10
+CAN;45;Frigate Flotilla 11
+CAN;45;Frigate Flotilla 12
+CAN;45;Frigate Flotilla 13
+CAN;45;Frigate Flotilla 14
+CAN;45;Frigate Flotilla 15
+CAN;45;Frigate Flotilla 16
+CAN;45;Frigate Flotilla 17
+CAN;45;Frigate Flotilla 18
+CAN;45;Frigate Flotilla 19
+CAN;45;Frigate Flotilla 20
+CAN;46;HMCS Iroquois
+CAN;46;HMCS Athabaskan
+CAN;46;HMCS Algonquin
+CAN;46;HMCS Huron
+CAN;46;HMCS Chaudiere
+CAN;46;HMCS Columbia
+CAN;46;HMCS Gatineau
+CAN;46;HMCS Kootenay
+CAN;46;HMCS Restigouche
+CAN;46;HMCS St. Croix
+CAN;46;HMCS Terra Nova
+CAN;46;HMCS Mackenzie
+CAN;46;HMCS Qu'Appelle
+CAN;46;HMCS Saskatchewan
+CAN;46;HMCS Yukon
+CAN;46;HMCS Nipigon
+CAN;46;HMCS Annapolis
+CAN;46;HMCS Halifax
+CAN;46;HMCS Vancouver
+CAN;46;HMCS Ville de Québec
+CAN;46;HMCS Toronto
+CAN;46;HMCS Regina
+CAN;46;HMCS Montréal
+CAN;46;HMCS Fredericton
+CAN;46;HMCS Winnipeg
+CAN;46;HMCS Calgary
+CAN;46;HMCS Charlottetown
+CAN;46;HMCS St. John's
+CAN;46;HMCS Ottawa
+CAN;47;HMCS St. Laurent
+CAN;47;HMCS Saguenay
+CAN;47;HMCS Skeena
+CAN;47;HMCS Ottawa
+CAN;47;HMCS Margaree
+CAN;47;HMCS Fraser
+CAN;47;HMCS Assiniboine
+CAN;47;HMCS Canada
+CAN;47;HMCS Ontario
+CAN;47;HMCS Québec
+CAN;47;HMCS British Columbia
+CAN;47;HMCS Nova Scotia
+CAN;47;HMCS New Brunswick
+CAN;47;HMCS Manitoba
+CAN;47;HMCS Alberta
+CAN;47;HMCS Saskatchewan
+CAN;47;HMCS Prince Edward Island
+CAN;47;HMCS Dominion
+CAN;47;HMCS Toronto
+CAN;47;HMCS Montréal
+CAN;47;HMCS Vancouver
+CAN;47;HMCS Ottawa
+CAN;47;HMCS Calgary
+CAN;47;HMCS Edmonton
+CAN;47;HMCS Ile de Québec
+CAN;47;HMCS Winnipeg
+CAN;47;HMCS Hamilton
+CAN;47;HMCS London
+CAN;47;HMCS Kitchener
+CAN;47;HMCS St. Catharines
+CAN;47;HMCS Halifax
+CAN;47;HMCS Victoria
+CAN;47;HMCS Windsor
+CAN;47;HMCS Oshawa
+CAN;47;HMCS Saskatoon
+CAN;47;HMCS Regina
+CAN;47;HMCS Sherbrooke
+CAN;47;HMCS Barrie
+CAN;47;HMCS Kelowna
+CAN;47;HMCS Abbotsford
+CAN;47;HMCS Kingston
+CAN;47;HMCS Trois-Rivieres
+CAN;47;HMCS Saint John
+CAN;47;HMCS Moncton
+CAN;48;Corvette Flotilla 1
+CAN;48;Corvette Flotilla 2
+CAN;48;Corvette Flotilla 3
+CAN;48;Corvette Flotilla 4
+CAN;48;Corvette Flotilla 5
+CAN;48;Corvette Flotilla 6
+CAN;48;Corvette Flotilla 7
+CAN;48;Corvette Flotilla 8
+CAN;48;Corvette Flotilla 9
+CAN;48;Corvette Flotilla 10
+CAN;48;Corvette Flotilla 11
+CAN;48;Corvette Flotilla 12
+CAN;48;Corvette Flotilla 13
+CAN;48;Corvette Flotilla 14
+CAN;48;Corvette Flotilla 15
+CAN;48;Corvette Flotilla 16
+CAN;48;Corvette Flotilla 17
+CAN;48;Corvette Flotilla 18
+CAN;48;Corvette Flotilla 19
+CAN;48;Corvette Flotilla 20
+CAN;49;Corvette Flotilla 1
+CAN;49;Corvette Flotilla 2
+CAN;49;Corvette Flotilla 3
+CAN;49;Corvette Flotilla 4
+CAN;49;Corvette Flotilla 5
+CAN;49;Corvette Flotilla 6
+CAN;49;Corvette Flotilla 7
+CAN;49;Corvette Flotilla 8
+CAN;49;Corvette Flotilla 9
+CAN;49;Corvette Flotilla 10
+CAN;49;Corvette Flotilla 11
+CAN;49;Corvette Flotilla 12
+CAN;49;Corvette Flotilla 13
+CAN;49;Corvette Flotilla 14
+CAN;49;Corvette Flotilla 15
+CAN;49;Corvette Flotilla 16
+CAN;49;Corvette Flotilla 17
+CAN;49;Corvette Flotilla 18
+CAN;49;Corvette Flotilla 19
+CAN;49;Corvette Flotilla 20
+DDR;41;Luftbewegliche Division 1
+DDR;41;Luftbewegliche Division 2
+DDR;41;Luftbewegliche Division 3
+DDR;41;Luftbewegliche Division 4
+DDR;41;Luftbewegliche Division 5
+DDR;41;Luftbewegliche Division 6
+DDR;41;Luftbewegliche Division 7
+DDR;41;Luftbewegliche Division 8
+DDR;41;Luftbewegliche Division 9
+DDR;41;Luftbewegliche Division 10
+DDR;42;VMS Karl Marx
+DDR;42;VMS Friedrich Engels
+DDR;42;VMS Kurt Barthel
+DDR;42;VMS Karl Liebknecht
+DDR;42;VMS Heinz Kapelle
+DDR;42;VMS Rosa Luxemburg
+DDR;42;VMS Walter Ulbrecht
+DDR;42;VMS Walter Steffens
+DDR;42;VMS Stephan Jantzen
+DDR;42;VMS Rostock
+DDR;42;VMS Berlin
+DDR;42;VMS Halle 
+DDR;42;VMS Kurt Barthel
+DDR;42;VMS Karl Liebknecht
+DDR;42;VMS Heinz Kapelle
+DDR;42;VMS Rosa Luxemburg
+DDR;42;VMS Walter Ulbrecht
+DDR;42;VMS Walter Steffens
+DDR;42;VMS Hiddensee
+DDR;42;VMS Stephan Jantzen
+DDR;42;VMS Peenemünde
+DDR;42;VMS Dranske
+DDR;43;VMS Karl Marx
+DDR;43;VMS Friedrich Engels
+DDR;43;VMS Kurt Barthel
+DDR;43;VMS Karl Liebknecht
+DDR;43;VMS Heinz Kapelle
+DDR;43;VMS Rosa Luxemburg
+DDR;43;VMS Walter Ulbrecht
+DDR;43;VMS Walter Steffens
+DDR;43;VMS Stephan Jantzen
+DDR;43;VMS Rostock
+DDR;43;VMS Berlin
+DDR;43;VMS Halle 
+DDR;43;VMS Kurt Barthel
+DDR;43;VMS Karl Liebknecht
+DDR;43;VMS Heinz Kapelle
+DDR;43;VMS Rosa Luxemburg
+DDR;43;VMS Walter Ulbrecht
+DDR;43;VMS Walter Steffens
+DDR;43;VMS Hiddensee
+DDR;43;VMS Stephan Jantzen
+DDR;43;VMS Peenemünde
+DDR;43;VMS Dranske
+DDR;44;VMS Karl Marx
+DDR;44;VMS Friedrich Engels
+DDR;44;VMS Kurt Barthel
+DDR;44;VMS Karl Liebknecht
+DDR;44;VMS Heinz Kapelle
+DDR;44;VMS Rosa Luxemburg
+DDR;44;VMS Walter Ulbrecht
+DDR;44;VMS Walter Steffens
+DDR;44;VMS Stephan Jantzen
+DDR;44;VMS Rostock
+DDR;44;VMS Berlin
+DDR;44;VMS Halle 
+DDR;44;VMS Kurt Barthel
+DDR;44;VMS Karl Liebknecht
+DDR;44;VMS Heinz Kapelle
+DDR;44;VMS Rosa Luxemburg
+DDR;44;VMS Walter Ulbrecht
+DDR;44;VMS Walter Steffens
+DDR;44;VMS Hiddensee
+DDR;44;VMS Stephan Jantzen
+DDR;44;VMS Peenemünde
+DDR;44;VMS Dranske
+DDR;45;1. Fregattengeschwader
+DDR;45;2. Fregattengeschwader
+DDR;45;3. Fregattengeschwader
+DDR;45;4. Fregattengeschwader
+DDR;45;5. Fregattengeschwader
+DDR;45;6. Fregattengeschwader
+DDR;45;7. Fregattengeschwader
+DDR;45;8. Fregattengeschwader
+DDR;45;9. Fregattengeschwader
+DDR;45;10. Fregattengeschwader
+DDR;45;11. Fregattengeschwader
+DDR;45;12. Fregattengeschwader
+DDR;45;13. Fregattengeschwader
+DDR;45;14. Fregattengeschwader
+DDR;45;15. Fregattengeschwader
+DDR;45;16. Fregattengeschwader
+DDR;45;17. Fregattengeschwader
+DDR;45;18. Fregattengeschwader
+DDR;45;19. Fregattengeschwader
+DDR;45;20. Fregattengeschwader
+DDR;45;21. Fregattengeschwader
+DDR;45;22. Fregattengeschwader
+DDR;45;23. Fregattengeschwader
+DDR;45;24. Fregattengeschwader
+DDR;45;25. Fregattengeschwader
+DDR;45;26. Fregattengeschwader
+DDR;45;27. Fregattengeschwader
+DDR;45;28. Fregattengeschwader
+DDR;45;29. Fregattengeschwader
+DDR;45;30. Fregattengeschwader
+DDR;45;31. Fregattengeschwader
+DDR;45;32. Fregattengeschwader
+DDR;45;33. Fregattengeschwader
+DDR;45;34. Fregattengeschwader
+DDR;45;35. Fregattengeschwader
+DDR;45;36. Fregattengeschwader
+DDR;45;37. Fregattengeschwader
+DDR;45;38. Fregattengeschwader
+DDR;45;39. Fregattengeschwader
+DDR;45;40. Fregattengeschwader
+DDR;45;41. Fregattengeschwader
+DDR;45;42. Fregattengeschwader
+DDR;45;43. Fregattengeschwader
+DDR;45;44. Fregattengeschwader
+DDR;45;45. Fregattengeschwader
+DDR;45;46. Fregattengeschwader
+DDR;45;47. Fregattengeschwader
+DDR;45;48. Fregattengeschwader
+DDR;45;49. Fregattengeschwader
+DDR;45;50. Fregattengeschwader
+DDR;46;VMS Karl Marx
+DDR;46;VMS Friedrich Engels
+DDR;46;VMS Kurt Barthel
+DDR;46;VMS Karl Liebknecht
+DDR;46;VMS Heinz Kapelle
+DDR;46;VMS Rosa Luxemburg
+DDR;46;VMS Walter Ulbrecht
+DDR;46;VMS Walter Steffens
+DDR;46;VMS Stephan Jantzen
+DDR;46;VMS Rostock
+DDR;46;VMS Berlin
+DDR;46;VMS Halle 
+DDR;46;VMS Kurt Barthel
+DDR;46;VMS Karl Liebknecht
+DDR;46;VMS Heinz Kapelle
+DDR;46;VMS Rosa Luxemburg
+DDR;46;VMS Walter Ulbrecht
+DDR;46;VMS Walter Steffens
+DDR;46;VMS Hiddensee
+DDR;46;VMS Stephan Jantzen
+DDR;46;VMS Peenemünde
+DDR;46;VMS Dranske
+DDR;47;VMS Karl Marx
+DDR;47;VMS Friedrich Engels
+DDR;47;VMS Kurt Barthel
+DDR;47;VMS Karl Liebknecht
+DDR;47;VMS Heinz Kapelle
+DDR;47;VMS Rosa Luxemburg
+DDR;47;VMS Walter Ulbrecht
+DDR;47;VMS Walter Steffens
+DDR;47;VMS Stephan Jantzen
+DDR;47;VMS Rostock
+DDR;47;VMS Berlin
+DDR;47;VMS Halle 
+DDR;47;VMS Kurt Barthel
+DDR;47;VMS Karl Liebknecht
+DDR;47;VMS Heinz Kapelle
+DDR;47;VMS Rosa Luxemburg
+DDR;47;VMS Walter Ulbrecht
+DDR;47;VMS Walter Steffens
+DDR;47;VMS Hiddensee
+DDR;47;VMS Stephan Jantzen
+DDR;47;VMS Peenemünde
+DDR;47;VMS Dranske
+DDR;48;1. Korvettengeschwader
+DDR;48;2. Korvettengeschwader
+DDR;48;3. Korvettengeschwader
+DDR;48;4. Korvettengeschwader
+DDR;48;5. Korvettengeschwader
+DDR;48;6. Korvettengeschwader
+DDR;48;7. Korvettengeschwader
+DDR;48;8. Korvettengeschwader
+DDR;48;9. Korvettengeschwader
+DDR;48;10. Korvettengeschwader
+DDR;48;11. Korvettengeschwader
+DDR;48;12. Korvettengeschwader
+DDR;48;13. Korvettengeschwader
+DDR;48;14. Korvettengeschwader
+DDR;48;15. Korvettengeschwader
+DDR;48;16. Korvettengeschwader
+DDR;48;17. Korvettengeschwader
+DDR;48;18. Korvettengeschwader
+DDR;48;19. Korvettengeschwader
+DDR;48;20. Korvettengeschwader
+DDR;48;21. Korvettengeschwader
+DDR;48;22. Korvettengeschwader
+DDR;48;23. Korvettengeschwader
+DDR;48;24. Korvettengeschwader
+DDR;48;25. Korvettengeschwader
+DDR;48;26. Korvettengeschwader
+DDR;48;27. Korvettengeschwader
+DDR;48;28. Korvettengeschwader
+DDR;48;29. Korvettengeschwader
+DDR;48;30. Korvettengeschwader
+DDR;48;31. Korvettengeschwader
+DDR;48;32. Korvettengeschwader
+DDR;48;33. Korvettengeschwader
+DDR;48;34. Korvettengeschwader
+DDR;48;35. Korvettengeschwader
+DDR;48;36. Korvettengeschwader
+DDR;48;37. Korvettengeschwader
+DDR;48;38. Korvettengeschwader
+DDR;48;39. Korvettengeschwader
+DDR;48;40. Korvettengeschwader
+DDR;48;41. Korvettengeschwader
+DDR;48;42. Korvettengeschwader
+DDR;48;43. Korvettengeschwader
+DDR;48;44. Korvettengeschwader
+DDR;48;45. Korvettengeschwader
+DDR;48;46. Korvettengeschwader
+DDR;48;47. Korvettengeschwader
+DDR;48;48. Korvettengeschwader
+DDR;48;49. Korvettengeschwader
+DDR;48;50. Korvettengeschwader
+DDR;49;1. Korvettengeschwader
+DDR;49;2. Korvettengeschwader
+DDR;49;3. Korvettengeschwader
+DDR;49;4. Korvettengeschwader
+DDR;49;5. Korvettengeschwader
+DDR;49;6. Korvettengeschwader
+DDR;49;7. Korvettengeschwader
+DDR;49;8. Korvettengeschwader
+DDR;49;9. Korvettengeschwader
+DDR;49;10. Korvettengeschwader
+DDR;49;11. Korvettengeschwader
+DDR;49;12. Korvettengeschwader
+DDR;49;13. Korvettengeschwader
+DDR;49;14. Korvettengeschwader
+DDR;49;15. Korvettengeschwader
+DDR;49;16. Korvettengeschwader
+DDR;49;17. Korvettengeschwader
+DDR;49;18. Korvettengeschwader
+DDR;49;19. Korvettengeschwader
+DDR;49;20. Korvettengeschwader
+DDR;49;21. Korvettengeschwader
+DDR;49;22. Korvettengeschwader
+DDR;49;23. Korvettengeschwader
+DDR;49;24. Korvettengeschwader
+DDR;49;25. Korvettengeschwader
+DDR;49;26. Korvettengeschwader
+DDR;49;27. Korvettengeschwader
+DDR;49;28. Korvettengeschwader
+DDR;49;29. Korvettengeschwader
+DDR;49;30. Korvettengeschwader
+DDR;49;31. Korvettengeschwader
+DDR;49;32. Korvettengeschwader
+DDR;49;33. Korvettengeschwader
+DDR;49;34. Korvettengeschwader
+DDR;49;35. Korvettengeschwader
+DDR;49;36. Korvettengeschwader
+DDR;49;37. Korvettengeschwader
+DDR;49;38. Korvettengeschwader
+DDR;49;39. Korvettengeschwader
+DDR;49;40. Korvettengeschwader
+DDR;49;41. Korvettengeschwader
+DDR;49;42. Korvettengeschwader
+DDR;49;43. Korvettengeschwader
+DDR;49;44. Korvettengeschwader
+DDR;49;45. Korvettengeschwader
+DDR;49;46. Korvettengeschwader
+DDR;49;47. Korvettengeschwader
+DDR;49;48. Korvettengeschwader
+DDR;49;49. Korvettengeschwader
+DDR;49;50. Korvettengeschwader
+DFR;41;Luftbewegliche Division 1
+DFR;41;Luftlandebrigade 26 "Saarland"
+DFR;41;Luftlandebrigade 31 “Oldenburg“
+DFR;41;Luftbewegliche Division 2
+DFR;41;Luftbewegliche Division 3
+DFR;41;Luftbewegliche Division 4
+DFR;41;Luftbewegliche Division 5
+DFR;41;Luftbewegliche Division 6
+DFR;41;Luftbewegliche Division 7
+DFR;41;Luftbewegliche Division 8
+DFR;42;FGS Admiral Hipper
+DFR;42;FGS Blücher
+DFR;42;FGS Prinz Eugen
+DFR;42;FGS Lützow
+DFR;42;FGS Admiral Scheer
+DFR;42;FGS Admiral Graf Spee
+DFR;42;FGS Deutschland
+DFR;42;FGS Frithjof
+DFR;42;FGS Friedrich Carl
+DFR;42;FGS Horst Wessel
+DFR;42;FGS Götz von Berlichingen
+DFR;42;FGS Admiral Pohl
+DFR;42;FGS Admiral Holtzendorff
+DFR;42;FGS Admiral Deinhard
+DFR;42;FGS Admiral Zenker
+DFR;42;FGS Admiral von Knorr
+DFR;42;FGS Admiral Souchon
+DFR;42;FGS von der Gröben
+DFR;42;FGS Graf von Schwerin
+DFR;42;FGS Heimdall
+DFR;42;FGS Hildebrand
+DFR;42;FGS Beowulf
+DFR;43;FGS Wilhelm Bauer
+DFR;43;FGS Friedrich Schürer
+DFR;43;FGS Hans Techel
+DFR;43;FGS von Arnauld de la Perière
+DFR;43;FGS Walther Forstmann
+DFR;43;FGS Max Valentiner
+DFR;43;FGS Otto Steinbrinck
+DFR;43;FGS Hans Rose
+DFR;43;FGS Walther Schwieger
+DFR;43;FGS Reinhold Saltzwedel
+DFR;43;FGS Johannes Lohs
+DFR;43;FGS Waldemar Kophamel
+DFR;43;FGS Otto Schultze
+DFR;43;FGS Otto Kretschmer
+DFR;43;FGS Wolfgang Lüth
+DFR;43;FGS Erich Topp
+DFR;43;FGS Heinrich Liebe
+DFR;43;FGS Viktor Schütze
+DFR;43;FGS Heinrich Lehmann-Willenbrock
+DFR;43;FGS Karl-Friedrich Merten
+DFR;43;FGS Herbert Schultze
+DFR;43;FGS Günther Prien
+DFR;43;FGS Georg Lassen
+DFR;43;FGS Joachim Schepke
+DFR;43;FGS Werner Henke
+DFR;43;FGS Carl Emmermann
+DFR;43;FGS Heinrich Bleichrodt
+DFR;43;FGS Robert Gysae
+DFR;43;FGS Ernst Kals
+DFR;43;FGS Johann Mohr
+DFR;43;FGS Klaus Scholtz
+DFR;43;FGS Adolf Piening
+DFR;43;FGS Helmut Witte
+DFR;43;FGS Günther Hessler
+DFR;43;FGS Ernst Bauer
+DFR;43;FGS Engelbert Endrass
+DFR;43;FGS Reinhard Hardegen
+DFR;43;FGS Werner Hartmann
+DFR;43;FGS Hans Jenisch
+DFR;43;FGS Robert-Richard Zapp
+DFR;43;FGS Victor Oehrn
+DFR;43;FGS Jürgen Oesten
+DFR;43;FGS Wilhelm Rollmann
+DFR;43;FGS Erwin Rostin
+DFR;43;FGS Hans Witt
+DFR;43;FGS Günther Krech
+DFR;43;FGS Harald Gelhaus
+DFR;43;FGS Werner Hartenstein
+DFR;43;FGS Fritz-Julius Lemp
+DFR;43;FGS Adalbert Schnee
+DFR;44;FGS Wilhelm Bauer
+DFR;44;FGS Friedrich Schürer
+DFR;44;FGS Hans Techel
+DFR;44;FGS von Arnauld de la Perière
+DFR;44;FGS Walther Forstmann
+DFR;44;FGS Max Valentiner
+DFR;44;FGS Otto Steinbrinck
+DFR;44;FGS Hans Rose
+DFR;44;FGS Walther Schwieger
+DFR;44;FGS Reinhold Saltzwedel
+DFR;44;FGS Johannes Lohs
+DFR;44;FGS Waldemar Kophamel
+DFR;44;FGS Otto Schultze
+DFR;44;FGS Otto Kretschmer
+DFR;44;FGS Wolfgang Lüth
+DFR;44;FGS Erich Topp
+DFR;44;FGS Heinrich Liebe
+DFR;44;FGS Viktor Schütze
+DFR;44;FGS Heinrich Lehmann-Willenbrock
+DFR;44;FGS Karl-Friedrich Merten
+DFR;44;FGS Herbert Schultze
+DFR;44;FGS Günther Prien
+DFR;44;FGS Georg Lassen
+DFR;44;FGS Joachim Schepke
+DFR;44;FGS Werner Henke
+DFR;44;FGS Carl Emmermann
+DFR;44;FGS Heinrich Bleichrodt
+DFR;44;FGS Robert Gysae
+DFR;44;FGS Ernst Kals
+DFR;44;FGS Johann Mohr
+DFR;44;FGS Klaus Scholtz
+DFR;44;FGS Adolf Piening
+DFR;44;FGS Helmut Witte
+DFR;44;FGS Günther Hessler
+DFR;44;FGS Ernst Bauer
+DFR;44;FGS Engelbert Endrass
+DFR;44;FGS Reinhard Hardegen
+DFR;44;FGS Werner Hartmann
+DFR;44;FGS Hans Jenisch
+DFR;44;FGS Robert-Richard Zapp
+DFR;44;FGS Victor Oehrn
+DFR;44;FGS Jürgen Oesten
+DFR;44;FGS Wilhelm Rollmann
+DFR;44;FGS Erwin Rostin
+DFR;44;FGS Hans Witt
+DFR;44;FGS Günther Krech
+DFR;44;FGS Harald Gelhaus
+DFR;44;FGS Werner Hartenstein
+DFR;44;FGS Fritz-Julius Lemp
+DFR;44;FGS Adalbert Schnee
+DFR;45;1. Fregattengeschwader
+DFR;45;2. Fregattengeschwader
+DFR;45;3. Fregattengeschwader
+DFR;45;4. Fregattengeschwader
+DFR;45;5. Fregattengeschwader
+DFR;45;6. Fregattengeschwader
+DFR;45;7. Fregattengeschwader
+DFR;45;8. Fregattengeschwader
+DFR;45;9. Fregattengeschwader
+DFR;45;10. Fregattengeschwader
+DFR;45;11. Fregattengeschwader
+DFR;45;12. Fregattengeschwader
+DFR;45;13. Fregattengeschwader
+DFR;45;14. Fregattengeschwader
+DFR;45;15. Fregattengeschwader
+DFR;45;16. Fregattengeschwader
+DFR;45;17. Fregattengeschwader
+DFR;45;18. Fregattengeschwader
+DFR;45;19. Fregattengeschwader
+DFR;45;20. Fregattengeschwader
+DFR;45;21. Fregattengeschwader
+DFR;45;22. Fregattengeschwader
+DFR;45;23. Fregattengeschwader
+DFR;45;24. Fregattengeschwader
+DFR;45;25. Fregattengeschwader
+DFR;45;26. Fregattengeschwader
+DFR;45;27. Fregattengeschwader
+DFR;45;28. Fregattengeschwader
+DFR;45;29. Fregattengeschwader
+DFR;45;30. Fregattengeschwader
+DFR;45;31. Fregattengeschwader
+DFR;45;32. Fregattengeschwader
+DFR;45;33. Fregattengeschwader
+DFR;45;34. Fregattengeschwader
+DFR;45;35. Fregattengeschwader
+DFR;45;36. Fregattengeschwader
+DFR;45;37. Fregattengeschwader
+DFR;45;38. Fregattengeschwader
+DFR;45;39. Fregattengeschwader
+DFR;45;40. Fregattengeschwader
+DFR;45;41. Fregattengeschwader
+DFR;45;42. Fregattengeschwader
+DFR;45;43. Fregattengeschwader
+DFR;45;44. Fregattengeschwader
+DFR;45;45. Fregattengeschwader
+DFR;45;46. Fregattengeschwader
+DFR;45;47. Fregattengeschwader
+DFR;45;48. Fregattengeschwader
+DFR;45;49. Fregattengeschwader
+DFR;45;50. Fregattengeschwader
+DFR;46;FGS Hamburg (D181)
+DFR;46;FGS Schleswig-Holstein (D182)
+DFR;46;FGS Bayern (D183)
+DFR;46;FGS Hessen (D184)
+DFR;46;FGS Lütjens (D185)
+DFR;46;FGS Mölders (D186)
+DFR;46;FGS Rommel (D187)
+DFR;46;FGS Z1 (D188)
+DFR;46;FGS Z2 (D189)
+DFR;46;FGS Z3 (D190)
+DFR;46;FGS Z4 (D191)
+DFR;46;FGS Z5 (D192)
+DFR;46;FGS Z6 (D193)
+DFR;46;FGS Z7 (D194)
+DFR;46;FGS Z8 (D195)
+DFR;46;FGS Z9 (D196)
+DFR;46;FGS Z10 (D197)
+DFR;46;FGS Z11 (D198)
+DFR;46;FGS Z12 (D199)
+DFR;47;FGS Königsberg
+DFR;47;FGS Karlsruhe
+DFR;47;FGS Köln
+DFR;47;FGS Leipzig
+DFR;47;FGS Nürnberg
+DFR;47;FGS Emden
+DFR;47;FGS Stuttgart
+DFR;47;FGS Stettin
+DFR;47;FGS Dresden
+DFR;47;FGS Hannover
+DFR;47;FGS Mainz
+DFR;47;FGS Dortmund
+DFR;47;FGS Augsburg
+DFR;47;FGS Bamberg
+DFR;47;FGS Magdeburg
+DFR;47;FGS Breslau
+DFR;47;FGS Straßburg
+DFR;47;FGS Stralsund
+DFR;47;FGS Rostock
+DFR;47;FGS Graudenz
+DFR;47;FGS Regensburg
+DFR;47;FGS Pillau
+DFR;47;FGS Elbing
+DFR;47;FGS Frankfurt
+DFR;47;FGS Wiesbaden
+DFR;47;FGS Frankfurt
+DFR;47;FGS Kolberg
+DFR;47;FGS Heilbronn
+DFR;47;FGS Ingolstadt
+DFR;47;FGS Düsseldorf
+DFR;47;FGS Duisberg
+DFR;47;FGS Bochum
+DFR;47;FGS Wuppertal
+DFR;47;FGS Bielefeld
+DFR;47;FGS Bonn
+DFR;47;FGS Mannheim
+DFR;47;FGS Gelsenkirchen
+DFR;47;FGS Münster
+DFR;47;FGS Mönchengladbach
+DFR;47;FGS Chemnitz
+DFR;47;FGS Braunschweig
+DFR;47;FGS Aachen
+DFR;47;FGS Krefeld
+DFR;47;FGS Halle
+DFR;47;FGS Kiel
+DFR;47;FGS Oberhausen
+DFR;47;FGS Lübeck
+DFR;47;FGS Freiburg
+DFR;47;FGS Hagen
+DFR;47;FGS Erfurt
+DFR;47;FGS Kassel
+DFR;47;FGS Hamm
+DFR;47;FGS Saarbrücken
+DFR;47;FGS Herne
+DFR;47;FGS Mülheim
+DFR;47;FGS Solingen
+DFR;47;FGS Osnabrück
+DFR;47;FGS Ludwigshafen
+DFR;47;FGS Leverkusen
+DFR;47;FGS Oldenburg
+DFR;47;FGS Neuss
+DFR;47;FGS Paderborn
+DFR;47;FGS Heidelberg
+DFR;47;FGS Darmstadt
+DFR;47;FGS Potsdam
+DFR;47;FGS Würzburg
+DFR;47;FGS Göttingen
+DFR;47;FGS Recklinghausen
+DFR;47;FGS Bottrop
+DFR;47;FGS Wolfsburg
+DFR;47;FGS München
+DFR;47;FGS Emden
+DFR;47;FGS Königsberg
+DFR;47;FGS Karlsruhe
+DFR;47;FGS Köln
+DFR;47;FGS Leipzig
+DFR;47;FGS Yorck
+DFR;47;FGS Wolfsburg
+DFR;47;FGS Brummer
+DFR;47;FGS Bremse
+DFR;47;FGS Nautilus
+DFR;47;FGS Albatross
+DFR;48;1. Korvettengeschwader
+DFR;48;2. Korvettengeschwader
+DFR;48;3. Korvettengeschwader
+DFR;48;4. Korvettengeschwader
+DFR;48;5. Korvettengeschwader
+DFR;48;6. Korvettengeschwader
+DFR;48;7. Korvettengeschwader
+DFR;48;8. Korvettengeschwader
+DFR;48;9. Korvettengeschwader
+DFR;48;10. Korvettengeschwader
+DFR;48;11. Korvettengeschwader
+DFR;48;12. Korvettengeschwader
+DFR;48;13. Korvettengeschwader
+DFR;48;14. Korvettengeschwader
+DFR;48;15. Korvettengeschwader
+DFR;48;16. Korvettengeschwader
+DFR;48;17. Korvettengeschwader
+DFR;48;18. Korvettengeschwader
+DFR;48;19. Korvettengeschwader
+DFR;48;20. Korvettengeschwader
+DFR;48;21. Korvettengeschwader
+DFR;48;22. Korvettengeschwader
+DFR;48;23. Korvettengeschwader
+DFR;48;24. Korvettengeschwader
+DFR;48;25. Korvettengeschwader
+DFR;48;26. Korvettengeschwader
+DFR;48;27. Korvettengeschwader
+DFR;48;28. Korvettengeschwader
+DFR;48;29. Korvettengeschwader
+DFR;48;30. Korvettengeschwader
+DFR;48;31. Korvettengeschwader
+DFR;48;32. Korvettengeschwader
+DFR;48;33. Korvettengeschwader
+DFR;48;34. Korvettengeschwader
+DFR;48;35. Korvettengeschwader
+DFR;48;36. Korvettengeschwader
+DFR;48;37. Korvettengeschwader
+DFR;48;38. Korvettengeschwader
+DFR;48;39. Korvettengeschwader
+DFR;48;40. Korvettengeschwader
+DFR;48;41. Korvettengeschwader
+DFR;48;42. Korvettengeschwader
+DFR;48;43. Korvettengeschwader
+DFR;48;44. Korvettengeschwader
+DFR;48;45. Korvettengeschwader
+DFR;48;46. Korvettengeschwader
+DFR;48;47. Korvettengeschwader
+DFR;48;48. Korvettengeschwader
+DFR;48;49. Korvettengeschwader
+DFR;48;50. Korvettengeschwader
+DFR;49;1. Korvettengeschwader
+DFR;49;2. Korvettengeschwader
+DFR;49;3. Korvettengeschwader
+DFR;49;4. Korvettengeschwader
+DFR;49;5. Korvettengeschwader
+DFR;49;6. Korvettengeschwader
+DFR;49;7. Korvettengeschwader
+DFR;49;8. Korvettengeschwader
+DFR;49;9. Korvettengeschwader
+DFR;49;10. Korvettengeschwader
+DFR;49;11. Korvettengeschwader
+DFR;49;12. Korvettengeschwader
+DFR;49;13. Korvettengeschwader
+DFR;49;14. Korvettengeschwader
+DFR;49;15. Korvettengeschwader
+DFR;49;16. Korvettengeschwader
+DFR;49;17. Korvettengeschwader
+DFR;49;18. Korvettengeschwader
+DFR;49;19. Korvettengeschwader
+DFR;49;20. Korvettengeschwader
+DFR;49;21. Korvettengeschwader
+DFR;49;22. Korvettengeschwader
+DFR;49;23. Korvettengeschwader
+DFR;49;24. Korvettengeschwader
+DFR;49;25. Korvettengeschwader
+DFR;49;26. Korvettengeschwader
+DFR;49;27. Korvettengeschwader
+DFR;49;28. Korvettengeschwader
+DFR;49;29. Korvettengeschwader
+DFR;49;30. Korvettengeschwader
+DFR;49;31. Korvettengeschwader
+DFR;49;32. Korvettengeschwader
+DFR;49;33. Korvettengeschwader
+DFR;49;34. Korvettengeschwader
+DFR;49;35. Korvettengeschwader
+DFR;49;36. Korvettengeschwader
+DFR;49;37. Korvettengeschwader
+DFR;49;38. Korvettengeschwader
+DFR;49;39. Korvettengeschwader
+DFR;49;40. Korvettengeschwader
+DFR;49;41. Korvettengeschwader
+DFR;49;42. Korvettengeschwader
+DFR;49;43. Korvettengeschwader
+DFR;49;44. Korvettengeschwader
+DFR;49;45. Korvettengeschwader
+DFR;49;46. Korvettengeschwader
+DFR;49;47. Korvettengeschwader
+DFR;49;48. Korvettengeschwader
+DFR;49;49. Korvettengeschwader
+DFR;49;50. Korvettengeschwader
+ENG:41;1st Commando Brigade
+ENG:41;2nd Commando Brigade
+ENG:41;3rd Commando Brigade
+ENG:41;5th Airborne Brigade
+ENG;41;24 Airmobile Brigade
+ENG:41;16 Air Assault Brigade
+ENG;42;HMS Surrey
+ENG;42;HMS Northumberland
+ENG;42;HMS Middlesex
+ENG;42;HMS Berkshire
+ENG;42;HMS Cheshire
+ENG;42;HMS Essex
+ENG;42;HMS Lancashire
+ENG;42;HMS Wiltshire
+ENG;42;HMS Cavendish
+ENG;42;HMS Hawkins
+ENG;42;HMS Raleigh
+ENG;42;HMS Frobisher
+ENG;42;HMS Effingham
+ENG;42;HMS Kent
+ENG;42;HMS Berwick
+ENG;42;HMS Cornwall
+ENG;42;HMS Cumberland
+ENG;42;HMS Suffolk
+ENG;42;HMS London
+ENG;42;HMS Devonshire
+ENG;42;HMS Sussex
+ENG;42;HMS Shropshire
+ENG;42;HMS Norfolk
+ENG;42;HMS Dorsetshire
+ENG;42;HMS York
+ENG;42;HMS Exeter
+ENG;42;HMS Penelope
+ENG;42;HMS Aurora
+ENG;42;HMS Southampton
+ENG;42;HMS Newcastle
+ENG;42;HMS Sheffield
+ENG;42;HMS Glasgow
+ENG;42;HMS Birmingham
+ENG;42;HMS Gloucester
+ENG;42;HMS Manchester
+ENG;42;HMS Liverpool
+ENG;42;HMS Edinburgh
+ENG;42;HMS Belfast
+ENG;42;HMS Dido
+ENG;42;HMS Bonaventure
+ENG;42;HMS Naiad
+ENG;42;HMS Phoebe
+ENG;42;HMS Hermione
+ENG;42;HMS Euryalus
+ENG;42;HMS Charybdis
+ENG;42;HMS Cleopatra
+ENG;42;HMS Sirius
+ENG;42;HMS Scylla
+ENG;42;HMS Argonaut
+ENG;42;HMS Fiji
+ENG;42;HMS Kenya
+ENG;42;HMS Nigeria
+ENG;42;HMS Mauritius
+ENG;42;HMS Trinidad
+ENG;42;HMS Gambia
+ENG;42;HMS Jamaica
+ENG;42;HMS Bermuda
+ENG;42;HMS Uganda
+ENG;42;HMS Newfoundland
+ENG;42;HMS Ceylon
+ENG;42;HMS Bellona
+ENG;42;HMS Royalist
+ENG;42;HMS Spartan
+ENG;42;HMS Black Prince
+ENG;42;HMS Diadem
+ENG;42;HMS Swiftsure
+ENG;42;HMS Minotaur
+ENG;42;HMS Tiger
+ENG;42;HMS Bellerophon
+ENG;42;HMS Superb
+ENG;42;HMS Blake
+ENG;42;HMS Defence
+ENG;42;HMS Hawke
+ENG;42;HMS Neptune
+ENG;42;HMS Centurion
+ENG;42;HMS Edgar
+ENG;42;HMS Mars
+ENG;42;HMS Bristol
+ENG;42;HMS Weymouth
+ENG;42;HMS Falmouth
+ENG;42;HMS Dartmouth
+ENG;42;HMS Yarmouth
+ENG;42;HMS Chatham
+ENG;42;HMS Dublin
+ENG;42;HMS Lowestoft
+ENG;42;HMS Nottingham
+ENG;42;HMS Inconstant
+ENG;42;HMS Undaunted
+ENG;42;HMS Caroline
+ENG;42;HMS Carysfort
+ENG;42;HMS Comus
+ENG;42;HMS Conquest
+ENG;42;HMS Cordelia
+ENG;42;HMS Calliope
+ENG;42;HMS Champion
+ENG;42;HMS Birkenhead
+ENG;42;HMS Chester
+ENG;42;HMS Cambrian
+ENG;42;HMS Castor
+ENG;42;HMS Constance
+ENG;42;HMS Canterbury
+ENG;42;HMS Centaur
+ENG;42;HMS Concord
+ENG;42;HMS Caledon
+ENG;42;HMS Calypso
+ENG;42;HMS Caradoc
+ENG;42;HMS Cassandra
+ENG;42;HMS Ceres
+ENG;42;HMS Cardiff
+ENG;42;HMS Curlew
+ENG;42;HMS Coventry
+ENG;42;HMS Curacoa
+ENG;42;HMS Capetown
+ENG;42;HMS Carlisle
+ENG;42;HMS Calcutta
+ENG;42;HMS Cairo
+ENG;42;HMS Colombo
+ENG;42;HMS Danae
+ENG;42;HMS Dragon
+ENG;42;HMS Dauntless
+ENG;42;HMS Delhi
+ENG;42;HMS Dunedin
+ENG;42;HMS Durban
+ENG;42;HMS Despatch
+ENG;42;HMS Diomede
+ENG;42;HMS Daedalus
+ENG;42;HMS Daring
+ENG;42;HMS Desperate
+ENG;42;HMS Dryad
+ENG;42;HMS Emerald
+ENG;42;HMS Enterprise
+ENG;42;HMS Euphrates
+ENG;42;HMS Ajax
+ENG;42;HMS Orion
+ENG;42;HMS Apollo
+ENG;42;HMS Amphion
+ENG;42;HMS Phaeton
+ENG;42;HMS Arethusa
+ENG;42;HMS Galatea
+ENG;43;HMS Dreadnought (S101)
+ENG;43;HMS Valiant (S102)
+ENG;43;HMS Warspite (S103)
+ENG;43;HMS Churchill (S46)
+ENG;43;HMS Conqueror (S48)
+ENG;43;HMS Courageous (S50)
+ENG;43;HMS Swiftsure (S126)
+ENG;43;HMS Sovereign (S108)
+ENG;43;HMS Superb (S109)
+ENG;43;HMS Sceptre (S104)
+ENG;43;HMS Spartan (S105)
+ENG;43;HMS Splendid (S106)
+ENG;43;HMS Trafalgar (S107)
+ENG;43;HMS Turbulent (S87)
+ENG;43;HMS Tireless (S88)
+ENG;43;HMS Torbay (S90)
+ENG;43;HMS Trenchant (S91)
+ENG;43;HMS Talent (S92)
+ENG;43;HMS Triumph (S93)
+ENG;44;HMS Resolution (S22)
+ENG;44;HMS Repulse (S23)
+ENG;44;HMS Renown (S26)
+ENG;44;HMS Revenge (S27)
+ENG;44;HMS Vanguard (S28)
+ENG;44;HMS Victorious (S29)
+ENG;44;HMS Vigilant (S30)
+ENG;44;HMS Vengeance (S31)
+ENG;45;Frigate Division 1
+ENG;45;Frigate Division 2
+ENG;45;Frigate Division 3
+ENG;45;Frigate Division 4
+ENG;45;Frigate Division 5
+ENG;45;Frigate Division 6
+ENG;45;Frigate Division 7
+ENG;45;Frigate Division 8
+ENG;45;Frigate Division 9
+ENG;45;Frigate Division 10
+ENG;45;Frigate Division 11
+ENG;45;Frigate Division 12
+ENG;45;Frigate Division 13
+ENG;45;Frigate Division 14
+ENG;45;Frigate Division 15
+ENG;45;Frigate Division 16
+ENG;45;Frigate Division 17
+ENG;45;Frigate Division 18
+ENG;45;Frigate Division 19
+ENG;45;Frigate Division 20
+ENG;45;Frigate Division 21
+ENG;45;Frigate Division 22
+ENG;45;Frigate Division 23
+ENG;45;Frigate Division 24
+ENG;45;Frigate Division 25
+ENG;45;Frigate Division 26
+ENG;45;Frigate Division 27
+ENG;45;Frigate Division 28
+ENG;45;Frigate Division 29
+ENG;45;Frigate Division 30
+ENG;45;Frigate Division 31
+ENG;45;Frigate Division 32
+ENG;45;Frigate Division 33
+ENG;45;Frigate Division 34
+ENG;45;Frigate Division 35
+ENG;45;Frigate Division 36
+ENG;45;Frigate Division 37
+ENG;45;Frigate Division 38
+ENG;45;Frigate Division 39
+ENG;45;Frigate Division 40
+ENG;45;Frigate Division 41
+ENG;45;Frigate Division 42
+ENG;45;Frigate Division 43
+ENG;45;Frigate Division 44
+ENG;45;Frigate Division 45
+ENG;45;Frigate Division 46
+ENG;45;Frigate Division 47
+ENG;45;Frigate Division 48
+ENG;45;Frigate Division 49
+ENG;45;Frigate Division 50
+ENG;45;Frigate Division 51
+ENG;45;Frigate Division 52
+ENG;45;Frigate Division 53
+ENG;45;Frigate Division 54
+ENG;45;Frigate Division 55
+ENG;45;Frigate Division 56
+ENG;45;Frigate Division 57
+ENG;45;Frigate Division 58
+ENG;45;Frigate Division 59
+ENG;45;Frigate Division 60
+ENG;45;Frigate Division 61
+ENG;45;Frigate Division 62
+ENG;45;Frigate Division 63
+ENG;45;Frigate Division 64
+ENG;45;Frigate Division 65
+ENG;45;Frigate Division 66
+ENG;45;Frigate Division 67
+ENG;45;Frigate Division 68
+ENG;45;Frigate Division 69
+ENG;45;Frigate Division 70
+ENG;45;Frigate Division 71
+ENG;45;Frigate Division 72
+ENG;45;Frigate Division 73
+ENG;45;Frigate Division 74
+ENG;45;Frigate Division 75
+ENG;45;Frigate Division 76
+ENG;45;Frigate Division 77
+ENG;45;Frigate Division 78
+ENG;45;Frigate Division 79
+ENG;45;Frigate Division 80
+ENG;45;Frigate Division 81
+ENG;45;Frigate Division 82
+ENG;45;Frigate Division 83
+ENG;45;Frigate Division 84
+ENG;45;Frigate Division 85
+ENG;45;Frigate Division 86
+ENG;45;Frigate Division 87
+ENG;45;Frigate Division 88
+ENG;45;Frigate Division 89
+ENG;45;Frigate Division 90
+ENG;45;Frigate Division 91
+ENG;45;Frigate Division 92
+ENG;45;Frigate Division 93
+ENG;45;Frigate Division 94
+ENG;45;Frigate Division 95
+ENG;45;Frigate Division 96
+ENG;45;Frigate Division 97
+ENG;45;Frigate Division 98
+ENG;45;Frigate Division 99
+ENG;45;Frigate Division 100
+ENG;46;HMS Decoy (D106)
+ENG;46;HMS Devonshire (D02)
+ENG;46;HMS Hampshire (D06)
+ENG;46;HMS Kent (D12)
+ENG;46;HMS London (D16)
+ENG;46;HMS Fife (D20)
+ENG;46;HMS Glamorgan (D19)
+ENG;46;HMS Norfolk (D21)
+ENG;46;HMS Antrim (D18)
+ENG;46;HMS Bristol (D23)
+ENG;46;HMS Sheffield (D80)
+ENG;46;HMS Birmingham (D86)
+ENG;46;HMS Newcastle (D87)
+ENG;46;HMS Coventry (D118)
+ENG;46;HMS Glasgow (D88)
+ENG;46;HMS Cardiff (D108)
+ENG;46;HMS Exeter (D89)
+ENG;46;HMS Southampton (D90)
+ENG;46;HMS Liverpool (D92)
+ENG;46;HMS Nottingham (D91)
+ENG;46;HMS Manchester (D95)
+ENG;46;HMS York (D98)
+ENG;46;HMS Gloucester (D96)
+ENG;46;HMS Edinburgh (D97)
+ENG;47;HMS Surrey
+ENG;47;HMS Northumberland
+ENG;47;HMS Middlesex
+ENG;47;HMS Berkshire
+ENG;47;HMS Cheshire
+ENG;47;HMS Essex
+ENG;47;HMS Lancashire
+ENG;47;HMS Wiltshire
+ENG;47;HMS Cavendish
+ENG;47;HMS Hawkins
+ENG;47;HMS Raleigh
+ENG;47;HMS Frobisher
+ENG;47;HMS Effingham
+ENG;47;HMS Kent
+ENG;47;HMS Berwick
+ENG;47;HMS Cornwall
+ENG;47;HMS Cumberland
+ENG;47;HMS Suffolk
+ENG;47;HMS London
+ENG;47;HMS Devonshire
+ENG;47;HMS Sussex
+ENG;47;HMS Shropshire
+ENG;47;HMS Norfolk
+ENG;47;HMS Dorsetshire
+ENG;47;HMS York
+ENG;47;HMS Exeter
+ENG;47;HMS Penelope
+ENG;47;HMS Aurora
+ENG;47;HMS Southampton
+ENG;47;HMS Newcastle
+ENG;47;HMS Sheffield
+ENG;47;HMS Glasgow
+ENG;47;HMS Birmingham
+ENG;47;HMS Gloucester
+ENG;47;HMS Manchester
+ENG;47;HMS Liverpool
+ENG;47;HMS Edinburgh
+ENG;47;HMS Belfast
+ENG;47;HMS Dido
+ENG;47;HMS Bonaventure
+ENG;47;HMS Naiad
+ENG;47;HMS Phoebe
+ENG;47;HMS Hermione
+ENG;47;HMS Euryalus
+ENG;47;HMS Charybdis
+ENG;47;HMS Cleopatra
+ENG;47;HMS Sirius
+ENG;47;HMS Scylla
+ENG;47;HMS Argonaut
+ENG;47;HMS Fiji
+ENG;47;HMS Kenya
+ENG;47;HMS Nigeria
+ENG;47;HMS Mauritius
+ENG;47;HMS Trinidad
+ENG;47;HMS Gambia
+ENG;47;HMS Jamaica
+ENG;47;HMS Bermuda
+ENG;47;HMS Uganda
+ENG;47;HMS Newfoundland
+ENG;47;HMS Ceylon
+ENG;47;HMS Bellona
+ENG;47;HMS Royalist
+ENG;47;HMS Spartan
+ENG;47;HMS Black Prince
+ENG;47;HMS Diadem
+ENG;47;HMS Swiftsure
+ENG;47;HMS Minotaur
+ENG;47;HMS Tiger
+ENG;47;HMS Bellerophon
+ENG;47;HMS Superb
+ENG;47;HMS Blake
+ENG;47;HMS Defence
+ENG;47;HMS Hawke
+ENG;47;HMS Neptune
+ENG;47;HMS Centurion
+ENG;47;HMS Edgar
+ENG;47;HMS Mars
+ENG;47;HMS Bristol
+ENG;47;HMS Weymouth
+ENG;47;HMS Falmouth
+ENG;47;HMS Dartmouth
+ENG;47;HMS Yarmouth
+ENG;47;HMS Chatham
+ENG;47;HMS Dublin
+ENG;47;HMS Lowestoft
+ENG;47;HMS Nottingham
+ENG;47;HMS Inconstant
+ENG;47;HMS Undaunted
+ENG;47;HMS Caroline
+ENG;47;HMS Carysfort
+ENG;47;HMS Comus
+ENG;47;HMS Conquest
+ENG;47;HMS Cordelia
+ENG;47;HMS Calliope
+ENG;47;HMS Champion
+ENG;47;HMS Birkenhead
+ENG;47;HMS Chester
+ENG;47;HMS Cambrian
+ENG;47;HMS Castor
+ENG;47;HMS Constance
+ENG;47;HMS Canterbury
+ENG;47;HMS Centaur
+ENG;47;HMS Concord
+ENG;47;HMS Caledon
+ENG;47;HMS Calypso
+ENG;47;HMS Caradoc
+ENG;47;HMS Cassandra
+ENG;47;HMS Ceres
+ENG;47;HMS Cardiff
+ENG;47;HMS Curlew
+ENG;47;HMS Coventry
+ENG;47;HMS Curacoa
+ENG;47;HMS Capetown
+ENG;47;HMS Carlisle
+ENG;47;HMS Calcutta
+ENG;47;HMS Cairo
+ENG;47;HMS Colombo
+ENG;47;HMS Danae
+ENG;47;HMS Dragon
+ENG;47;HMS Dauntless
+ENG;47;HMS Delhi
+ENG;47;HMS Dunedin
+ENG;47;HMS Durban
+ENG;47;HMS Despatch
+ENG;47;HMS Diomede
+ENG;47;HMS Daedalus
+ENG;47;HMS Daring
+ENG;47;HMS Desperate
+ENG;47;HMS Dryad
+ENG;47;HMS Emerald
+ENG;47;HMS Enterprise
+ENG;47;HMS Euphrates
+ENG;47;HMS Ajax
+ENG;47;HMS Orion
+ENG;47;HMS Apollo
+ENG;47;HMS Amphion
+ENG;47;HMS Phaeton
+ENG;47;HMS Arethusa
+ENG;47;HMS Galatea
+ENG;48;Corvette Squadron 1
+ENG;48;Corvette Squadron 2
+ENG;48;Corvette Squadron 3
+ENG;48;Corvette Squadron 4
+ENG;48;Corvette Squadron 5
+ENG;48;Corvette Squadron 6
+ENG;48;Corvette Squadron 7
+ENG;48;Corvette Squadron 8
+ENG;48;Corvette Squadron 9
+ENG;48;Corvette Squadron 10
+ENG;48;Corvette Squadron 11
+ENG;48;Corvette Squadron 12
+ENG;48;Corvette Squadron 13
+ENG;48;Corvette Squadron 14
+ENG;48;Corvette Squadron 15
+ENG;48;Corvette Squadron 16
+ENG;48;Corvette Squadron 17
+ENG;48;Corvette Squadron 18
+ENG;48;Corvette Squadron 19
+ENG;48;Corvette Squadron 20
+ENG;48;Corvette Squadron 21
+ENG;48;Corvette Squadron 22
+ENG;48;Corvette Squadron 23
+ENG;48;Corvette Squadron 24
+ENG;48;Corvette Squadron 25
+ENG;48;Corvette Squadron 26
+ENG;48;Corvette Squadron 27
+ENG;48;Corvette Squadron 28
+ENG;48;Corvette Squadron 29
+ENG;48;Corvette Squadron 30
+ENG;48;Corvette Squadron 31
+ENG;48;Corvette Squadron 32
+ENG;48;Corvette Squadron 33
+ENG;48;Corvette Squadron 34
+ENG;48;Corvette Squadron 35
+ENG;48;Corvette Squadron 36
+ENG;48;Corvette Squadron 37
+ENG;48;Corvette Squadron 38
+ENG;48;Corvette Squadron 39
+ENG;48;Corvette Squadron 40
+ENG;48;Corvette Squadron 41
+ENG;48;Corvette Squadron 42
+ENG;48;Corvette Squadron 43
+ENG;48;Corvette Squadron 44
+ENG;48;Corvette Squadron 45
+ENG;48;Corvette Squadron 46
+ENG;48;Corvette Squadron 47
+ENG;48;Corvette Squadron 48
+ENG;48;Corvette Squadron 49
+ENG;48;Corvette Squadron 50
+ENG;48;Corvette Squadron 51
+ENG;48;Corvette Squadron 52
+ENG;48;Corvette Squadron 53
+ENG;48;Corvette Squadron 54
+ENG;48;Corvette Squadron 55
+ENG;48;Corvette Squadron 56
+ENG;48;Corvette Squadron 57
+ENG;48;Corvette Squadron 58
+ENG;48;Corvette Squadron 59
+ENG;48;Corvette Squadron 60
+ENG;48;Corvette Squadron 61
+ENG;48;Corvette Squadron 62
+ENG;48;Corvette Squadron 63
+ENG;48;Corvette Squadron 64
+ENG;48;Corvette Squadron 65
+ENG;48;Corvette Squadron 66
+ENG;48;Corvette Squadron 67
+ENG;48;Corvette Squadron 68
+ENG;48;Corvette Squadron 69
+ENG;48;Corvette Squadron 70
+ENG;48;Corvette Squadron 71
+ENG;48;Corvette Squadron 72
+ENG;48;Corvette Squadron 73
+ENG;48;Corvette Squadron 74
+ENG;48;Corvette Squadron 75
+ENG;48;Corvette Squadron 76
+ENG;48;Corvette Squadron 77
+ENG;48;Corvette Squadron 78
+ENG;48;Corvette Squadron 79
+ENG;48;Corvette Squadron 80
+ENG;48;Corvette Squadron 81
+ENG;48;Corvette Squadron 82
+ENG;48;Corvette Squadron 83
+ENG;48;Corvette Squadron 84
+ENG;48;Corvette Squadron 85
+ENG;48;Corvette Squadron 86
+ENG;48;Corvette Squadron 87
+ENG;48;Corvette Squadron 88
+ENG;48;Corvette Squadron 89
+ENG;48;Corvette Squadron 90
+ENG;48;Corvette Squadron 91
+ENG;48;Corvette Squadron 92
+ENG;48;Corvette Squadron 93
+ENG;48;Corvette Squadron 94
+ENG;48;Corvette Squadron 95
+ENG;48;Corvette Squadron 96
+ENG;48;Corvette Squadron 97
+ENG;48;Corvette Squadron 98
+ENG;48;Corvette Squadron 99
+ENG;48;Corvette Squadron 100
+ENG;49;Corvette Squadron 1
+ENG;49;Corvette Squadron 2
+ENG;49;Corvette Squadron 3
+ENG;49;Corvette Squadron 4
+ENG;49;Corvette Squadron 5
+ENG;49;Corvette Squadron 6
+ENG;49;Corvette Squadron 7
+ENG;49;Corvette Squadron 8
+ENG;49;Corvette Squadron 9
+ENG;49;Corvette Squadron 10
+ENG;49;Corvette Squadron 11
+ENG;49;Corvette Squadron 12
+ENG;49;Corvette Squadron 13
+ENG;49;Corvette Squadron 14
+ENG;49;Corvette Squadron 15
+ENG;49;Corvette Squadron 16
+ENG;49;Corvette Squadron 17
+ENG;49;Corvette Squadron 18
+ENG;49;Corvette Squadron 19
+ENG;49;Corvette Squadron 20
+ENG;49;Corvette Squadron 21
+ENG;49;Corvette Squadron 22
+ENG;49;Corvette Squadron 23
+ENG;49;Corvette Squadron 24
+ENG;49;Corvette Squadron 25
+ENG;49;Corvette Squadron 26
+ENG;49;Corvette Squadron 27
+ENG;49;Corvette Squadron 28
+ENG;49;Corvette Squadron 29
+ENG;49;Corvette Squadron 30
+ENG;49;Corvette Squadron 31
+ENG;49;Corvette Squadron 32
+ENG;49;Corvette Squadron 33
+ENG;49;Corvette Squadron 34
+ENG;49;Corvette Squadron 35
+ENG;49;Corvette Squadron 36
+ENG;49;Corvette Squadron 37
+ENG;49;Corvette Squadron 38
+ENG;49;Corvette Squadron 39
+ENG;49;Corvette Squadron 40
+ENG;49;Corvette Squadron 41
+ENG;49;Corvette Squadron 42
+ENG;49;Corvette Squadron 43
+ENG;49;Corvette Squadron 44
+ENG;49;Corvette Squadron 45
+ENG;49;Corvette Squadron 46
+ENG;49;Corvette Squadron 47
+ENG;49;Corvette Squadron 48
+ENG;49;Corvette Squadron 49
+ENG;49;Corvette Squadron 50
+ENG;49;Corvette Squadron 51
+ENG;49;Corvette Squadron 52
+ENG;49;Corvette Squadron 53
+ENG;49;Corvette Squadron 54
+ENG;49;Corvette Squadron 55
+ENG;49;Corvette Squadron 56
+ENG;49;Corvette Squadron 57
+ENG;49;Corvette Squadron 58
+ENG;49;Corvette Squadron 59
+ENG;49;Corvette Squadron 60
+ENG;49;Corvette Squadron 61
+ENG;49;Corvette Squadron 62
+ENG;49;Corvette Squadron 63
+ENG;49;Corvette Squadron 64
+ENG;49;Corvette Squadron 65
+ENG;49;Corvette Squadron 66
+ENG;49;Corvette Squadron 67
+ENG;49;Corvette Squadron 68
+ENG;49;Corvette Squadron 69
+ENG;49;Corvette Squadron 70
+ENG;49;Corvette Squadron 71
+ENG;49;Corvette Squadron 72
+ENG;49;Corvette Squadron 73
+ENG;49;Corvette Squadron 74
+ENG;49;Corvette Squadron 75
+ENG;49;Corvette Squadron 76
+ENG;49;Corvette Squadron 77
+ENG;49;Corvette Squadron 78
+ENG;49;Corvette Squadron 79
+ENG;49;Corvette Squadron 80
+ENG;49;Corvette Squadron 81
+ENG;49;Corvette Squadron 82
+ENG;49;Corvette Squadron 83
+ENG;49;Corvette Squadron 84
+ENG;49;Corvette Squadron 85
+ENG;49;Corvette Squadron 86
+ENG;49;Corvette Squadron 87
+ENG;49;Corvette Squadron 88
+ENG;49;Corvette Squadron 89
+ENG;49;Corvette Squadron 90
+ENG;49;Corvette Squadron 91
+ENG;49;Corvette Squadron 92
+ENG;49;Corvette Squadron 93
+ENG;49;Corvette Squadron 94
+ENG;49;Corvette Squadron 95
+ENG;49;Corvette Squadron 96
+ENG;49;Corvette Squadron 97
+ENG;49;Corvette Squadron 98
+ENG;49;Corvette Squadron 99
+ENG;49;Corvette Squadron 100
+FRA;43;Améthyste (S605)
+FRA;43;Casabianca (S603)
+FRA;43;Émeraude (S604)
+FRA;43;Perle (S606)
+FRA;43;Rubis (S601)
+FRA;43;Saphir (S602)
+FRA;44;Le Redoutable (S611)
+FRA;44;Le Terrible (S612)
+FRA;44;Le Foudroyant (S610)
+FRA;44;L'Indomptable (S613)
+FRA;44;Le Tonnant (S614)
+FRA;44;L'Inflexible (S615)
+FRA;44;Le Triomphant (S616)
+FRA;44;Le Téméraire (S617)
+FRA;44;Le Vigilant (S618)
+FRA;44;Le Terrible (S619)
+ITA;41;80a Divisione 'Spezia'
+ITA;41;184a Divisione 'Nembo'
+ITA;41;185a Divisione 'Folgore'
+ITA;41;183a Divisione 'Ciclone'
+ITA;41;182a Divisione 'Falco'
+ITA;41;181a Divisione 'Sagittario'
+ITA;41;186a Divisione 'Saetta'
+ITA;41;187a Divisione Paracadutisti
+ITA;41;188a Divisione Paracadutisti
+ITA;41;189a Divisione Paracadutisti
+ITA;41;190a Divisione Paracadutisti
+ITA;41;191a Divisione Paracadutisti
+ITA;41;192a Divisione Paracadutisti
+ITA;41;193a Divisione Paracadutisti
+ITA;41;194a Divisione Paracadutisti
+ITA;41;195a Divisione Paracadutisti
+ITA;41;196a Divisione Paracadutisti
+ITA;41;197a Divisione Paracadutisti
+ITA;41;198a Divisione Paracadutisti
+ITA;41;199a Divisione Paracadutisti
+ITA;42;RN Littorio
+ITA;42;RN Vittorio Veneto
+ITA;42;RN Roma
+ITA;42;RN Impero
+ITA;42;RN Francesco Caracciolo
+ITA;42;RN Cristoforo Colombo
+ITA;42;RN Marcantonio Colonna
+ITA;42;RN Francesco Morosini
+ITA;42;RN Dante Alighieri
+ITA;42;RN Giulio Cesare
+ITA;42;RN Leonardo Da Vinci
+ITA;42;RN Conte Di Cavour
+ITA;42;RN Andrea Doria
+ITA;42;RN Caio Duilio
+ITA;42;RN Taranto
+ITA;42;RN La Spezia
+ITA;42;RN Genova
+ITA;42;RN Milano
+ITA;42;RN Marco Polo
+ITA;42;RN Carlo Alberto
+ITA;42;RN Vettor Pisani
+ITA;42;RN Francesco Ferruccio
+ITA;42;RN Giuseppe Garibaldi
+ITA;42;RN Varese
+ITA;42;RN Pisa
+ITA;42;RN Amalfi
+ITA;42;RN San Giorgo
+ITA;42;RN San Marco
+ITA;42;RN Trento
+ITA;42;RN Trieste
+ITA;42;RN Fiume
+ITA;42;RN Gorizia
+ITA;42;RN Pola
+ITA;42;RN Zara
+ITA;42;RN Bolzano
+ITA;42;RN Duca degli Abruzzi
+ITA;42;RN Giuseppe Garibaldi
+ITA;42;RN Costanzo Ciano
+ITA;42;RN Venezia
+ITA;42;RN Attilio Regolo
+ITA;42;RN Caio Mario
+ITA;42;RN Claudio Druso
+ITA;42;RN Claudio Tiberio
+ITA;42;RN Cornelio Silla
+ITA;42;RN Giulio Germanico
+ITA;42;RN Ottaviano Augusto
+ITA;42;RN Paolo Emilio
+ITA;42;RN Pompeo Magno
+ITA;42;RN Scipione Africano
+ITA;42;RN Ulpio Traiano
+ITA;42;RN Vipsiano Agrippa
+ITA;42;RN Etna
+ITA;42;RN Vesuvio
+ITA;42;RN Elba
+ITA;42;RN Etruria
+ITA;42;RN Liguria
+ITA;42;RN Lombardia
+ITA;42;RN Puglia
+ITA;42;RN Umbria
+ITA;42;RN Calabria
+ITA;42;RN Libia
+ITA;42;RN Campania
+ITA;42;RN Basilicata
+ITA;42;RN Quarto
+ITA;42;RN Nino Bixio
+ITA;42;RN Marsala
+ITA;42;RN Brindisi
+ITA;42;RN Ancona
+ITA;42;RN Bari
+ITA;42;RN Alberto da Giussano
+ITA;42;RN Alberico da Barbiano
+ITA;42;RN Bartolomeo Colleoni
+ITA;42;RN Giovanni dalle Bande Nere
+ITA;42;RN Luigi Cardorna
+ITA;42;RN Armando Diaz
+ITA;42;RN Raimondo Montecuccoli
+ITA;42;RN Muzio Attendolo
+ITA;42;RN Duca d'Aosta
+ITA;42;RN Eugenio di Savoia
+ITA;43;RN Livio Piomarta
+ITA;43;RN Romeo Romei
+ITA;43;RN Attilio Bagnolini
+ITA;43;RN Enrico Toti
+ITA;43;RN Enrico Dandolo
+ITA;43;RN Lazaro Mocenigo
+ITA;43;RN Nazario Sauro
+ITA;43;RN Carlo Fecia di Cossato
+ITA;43;RN Leonardo Da Vinci
+ITA;43;RN Guglielmo Marconi
+ITA;43;RN Salvatore Pelosi
+ITA;43;RN Giuliano Prini
+ITA;43;RN Primo Longobardo
+ITA;43;RN Gianfranco Gazzana Priaroggia
+ITA;43;RN Salvatore Todaro
+ITA;43;RN Scirè
+ITA;43;RN Pietro Venuti
+ITA;44;RN Livio Piomarta
+ITA;44;RN Romeo Romei
+ITA;44;RN Attilio Bagnolini
+ITA;44;RN Enrico Toti
+ITA;44;RN Enrico Dandolo
+ITA;44;RN Lazaro Mocenigo
+ITA;44;RN Nazario Sauro
+ITA;44;RN Carlo Fecia di Cossato
+ITA;44;RN Leonardo Da Vinci
+ITA;44;RN Guglielmo Marconi
+ITA;44;RN Salvatore Pelosi
+ITA;44;RN Giuliano Prini
+ITA;44;RN Primo Longobardo
+ITA;44;RN Gianfranco Gazzana Priaroggia
+ITA;44;RN Salvatore Todaro
+ITA;44;RN Scirè
+ITA;44;RN Pietro Venuti
+ITA;46;RN Impetuoso
+ITA;46;RN Indomito
+ITA;46;RN Impavido
+ITA;46;RN Intrepido
+ITA;46;RN Audace
+ITA;46;RN Ardito
+ITA;46;RN Andrea Doria
+ITA;46;RN Caio Duilio
+ITA;46;RN Luigi Durand de la Penne
+ITA;46;RN Francesco Mimbelli 
+ITA;46;RN Maestrale
+ITA;46;RN Grecale
+ITA;46;RN Libeccio
+ITA;46;RN Scirocco
+ITA;46;RN Aliseo
+ITA;46;RN Euro
+ITA;46;RN Espero
+ITA;46;RN Zeffiro
+ITA;46;RN Artigliere
+ITA;46;RN Aviere
+ITA;46;RN Bersagliere
+ITA;46;RN Granatiere
+ITA;46;RN Minerva
+ITA;46;RN Urania
+ITA;46;RN Daneide
+ITA;46;RN Sfinge
+ITA;46;RN Driade
+ITA;46;RN Chimera
+ITA;46;RN Fenice
+ITA;46;RN Sibilla
+ITA;46;RN Marco Polo
+ITA;46;RN Carlo Alberto
+ITA;46;RN Vettor Pisani
+ITA;46;RN Francesco Ferruccio
+ITA;46;RN Giuseppe Garibaldi
+ITA;46;RN Varese
+ITA;46;RN Pisa
+ITA;46;RN Amalfi
+ITA;46;RN San Giorgo
+ITA;46;RN San Marco
+ITA;46;RN Trento
+ITA;46;RN Trieste
+ITA;46;RN Fiume
+ITA;46;RN Gorizia
+ITA;46;RN Pola
+ITA;46;RN Zara
+ITA;46;RN Bolzano
+ITA;46;RN Duca degli Abruzzi
+ITA;46;RN Giuseppe Garibaldi
+ITA;46;RN Costanzo Ciano
+ITA;46;RN Venezia
+ITA;46;RN Attilio Regolo
+ITA;46;RN Caio Mario
+ITA;46;RN Claudio Druso
+ITA;46;RN Claudio Tiberio
+ITA;46;RN Cornelio Silla
+ITA;46;RN Giulio Germanico
+ITA;46;RN Ottaviano Augusto
+ITA;46;RN Paolo Emilio
+ITA;46;RN Pompeo Magno
+ITA;46;RN Scipione Africano
+ITA;46;RN Ulpio Traiano
+ITA;46;RN Vipsiano Agrippa
+ITA;46;RN Etna
+ITA;46;RN Vesuvio
+ITA;46;RN Elba
+ITA;46;RN Etruria
+ITA;46;RN Liguria
+ITA;46;RN Lombardia
+ITA;46;RN Puglia
+ITA;46;RN Umbria
+ITA;46;RN Calabria
+ITA;46;RN Libia
+ITA;46;RN Campania
+ITA;46;RN Basilicata
+ITA;46;RN Quarto
+ITA;46;RN Nino Bixio
+ITA;46;RN Marsala
+ITA;46;RN Brindisi
+ITA;46;RN Ancona
+ITA;46;RN Bari
+ITA;46;RN Alberto da Giussano
+ITA;46;RN Alberico da Barbiano
+ITA;46;RN Bartolomeo Colleoni
+ITA;46;RN Giovanni dalle Bande Nere
+ITA;46;RN Luigi Cardorna
+ITA;46;RN Armando Diaz
+ITA;46;RN Raimondo Montecuccoli
+ITA;46;RN Muzio Attendolo
+ITA;46;RN Duca d'Aosta
+ITA;46;RN Eugenio di Savoia
+ITA;47;RN Marco Polo
+ITA;47;RN Carlo Alberto
+ITA;47;RN Vettor Pisani
+ITA;47;RN Francesco Ferruccio
+ITA;47;RN Giuseppe Garibaldi
+ITA;47;RN Varese
+ITA;47;RN Pisa
+ITA;47;RN Amalfi
+ITA;47;RN San Giorgo
+ITA;47;RN San Marco
+ITA;47;RN Trento
+ITA;47;RN Trieste
+ITA;47;RN Fiume
+ITA;47;RN Gorizia
+ITA;47;RN Pola
+ITA;47;RN Zara
+ITA;47;RN Bolzano
+ITA;47;RN Duca degli Abruzzi
+ITA;47;RN Giuseppe Garibaldi
+ITA;47;RN Costanzo Ciano
+ITA;47;RN Venezia
+ITA;47;RN Attilio Regolo
+ITA;47;RN Caio Mario
+ITA;47;RN Claudio Druso
+ITA;47;RN Claudio Tiberio
+ITA;47;RN Cornelio Silla
+ITA;47;RN Giulio Germanico
+ITA;47;RN Ottaviano Augusto
+ITA;47;RN Paolo Emilio
+ITA;47;RN Pompeo Magno
+ITA;47;RN Scipione Africano
+ITA;47;RN Ulpio Traiano
+ITA;47;RN Vipsiano Agrippa
+ITA;47;RN Etna
+ITA;47;RN Vesuvio
+ITA;47;RN Elba
+ITA;47;RN Etruria
+ITA;47;RN Liguria
+ITA;47;RN Lombardia
+ITA;47;RN Puglia
+ITA;47;RN Umbria
+ITA;47;RN Calabria
+ITA;47;RN Libia
+ITA;47;RN Campania
+ITA;47;RN Basilicata
+ITA;47;RN Quarto
+ITA;47;RN Nino Bixio
+ITA;47;RN Marsala
+ITA;47;RN Brindisi
+ITA;47;RN Ancona
+ITA;47;RN Bari
+ITA;47;RN Alberto da Giussano
+ITA;47;RN Alberico da Barbiano
+ITA;47;RN Bartolomeo Colleoni
+ITA;47;RN Giovanni dalle Bande Nere
+ITA;47;RN Luigi Cardorna
+ITA;47;RN Armando Diaz
+ITA;47;RN Raimondo Montecuccoli
+ITA;47;RN Muzio Attendolo
+ITA;47;RN Duca d'Aosta
+ITA;47;RN Eugenio di Savoia
+ITA;48;1a Flottiglia Torpediniere
+ITA;48;2a Flottiglia Torpediniere
+ITA;48;3a Flottiglia Torpediniere
+ITA;48;4a Flottiglia Torpediniere
+ITA;48;5a Flottiglia Torpediniere
+ITA;48;6a Flottiglia Torpediniere
+ITA;48;7a Flottiglia Torpediniere
+ITA;48;8a Flottiglia Torpediniere
+ITA;48;9a Flottiglia Torpediniere
+ITA;48;10a Flottiglia Torpediniere
+ITA;48;11a Flottiglia Torpediniere
+ITA;48;12a Flottiglia Torpediniere
+ITA;48;13a Flottiglia Torpediniere
+ITA;48;14a Flottiglia Torpediniere
+ITA;48;15a Flottiglia Torpediniere
+ITA;48;16a Flottiglia Torpediniere
+ITA;48;17a Flottiglia Torpediniere
+ITA;48;18a Flottiglia Torpediniere
+ITA;48;19a Flottiglia Torpediniere
+ITA;48;20a Flottiglia Torpediniere
+ITA;48;21a Flottiglia Torpediniere
+ITA;48;22a Flottiglia Torpediniere
+ITA;48;23a Flottiglia Torpediniere
+ITA;48;24a Flottiglia Torpediniere
+ITA;48;25a Flottiglia Torpediniere
+ITA;48;26a Flottiglia Torpediniere
+ITA;48;27a Flottiglia Torpediniere
+ITA;48;28a Flottiglia Torpediniere
+ITA;48;29a Flottiglia Torpediniere
+ITA;48;30a Flottiglia Torpediniere
+ITA;48;31a Flottiglia Torpediniere
+ITA;48;32a Flottiglia Torpediniere
+ITA;48;33a Flottiglia Torpediniere
+ITA;48;34a Flottiglia Torpediniere
+ITA;48;35a Flottiglia Torpediniere
+ITA;48;36a Flottiglia Torpediniere
+ITA;48;37a Flottiglia Torpediniere
+ITA;48;38a Flottiglia Torpediniere
+ITA;48;39a Flottiglia Torpediniere
+ITA;48;40a Flottiglia Torpediniere
+ITA;48;41a Flottiglia Torpediniere
+ITA;48;42a Flottiglia Torpediniere
+ITA;48;43a Flottiglia Torpediniere
+ITA;48;44a Flottiglia Torpediniere
+ITA;48;45a Flottiglia Torpediniere
+ITA;48;46a Flottiglia Torpediniere
+ITA;48;47a Flottiglia Torpediniere
+ITA;48;48a Flottiglia Torpediniere
+ITA;48;49a Flottiglia Torpediniere
+ITA;48;50a Flottiglia Torpediniere
+ITA;48;51a Flottiglia Torpediniere
+ITA;48;52a Flottiglia Torpediniere
+ITA;48;53a Flottiglia Torpediniere
+ITA;48;54a Flottiglia Torpediniere
+ITA;48;55a Flottiglia Torpediniere
+ITA;48;56a Flottiglia Torpediniere
+ITA;48;57a Flottiglia Torpediniere
+ITA;48;58a Flottiglia Torpediniere
+ITA;48;59a Flottiglia Torpediniere
+ITA;48;60a Flottiglia Torpediniere
+ITA;48;61a Flottiglia Torpediniere
+ITA;48;62a Flottiglia Torpediniere
+ITA;48;63a Flottiglia Torpediniere
+ITA;48;64a Flottiglia Torpediniere
+ITA;48;65a Flottiglia Torpediniere
+ITA;48;66a Flottiglia Torpediniere
+ITA;48;67a Flottiglia Torpediniere
+ITA;48;68a Flottiglia Torpediniere
+ITA;48;69a Flottiglia Torpediniere
+ITA;48;70a Flottiglia Torpediniere
+ITA;48;71a Flottiglia Torpediniere
+ITA;48;72a Flottiglia Torpediniere
+ITA;48;73a Flottiglia Torpediniere
+ITA;48;74a Flottiglia Torpediniere
+ITA;48;75a Flottiglia Torpediniere
+ITA;48;76a Flottiglia Torpediniere
+ITA;48;77a Flottiglia Torpediniere
+ITA;48;78a Flottiglia Torpediniere
+ITA;48;79a Flottiglia Torpediniere
+ITA;48;80a Flottiglia Torpediniere
+ITA;48;81a Flottiglia Torpediniere
+ITA;48;82a Flottiglia Torpediniere
+ITA;48;83a Flottiglia Torpediniere
+ITA;48;84a Flottiglia Torpediniere
+ITA;48;85a Flottiglia Torpediniere
+ITA;48;86a Flottiglia Torpediniere
+ITA;48;87a Flottiglia Torpediniere
+ITA;48;88a Flottiglia Torpediniere
+ITA;48;89a Flottiglia Torpediniere
+ITA;48;90a Flottiglia Torpediniere
+ITA;48;91a Flottiglia Torpediniere
+ITA;48;92a Flottiglia Torpediniere
+ITA;48;93a Flottiglia Torpediniere
+ITA;48;94a Flottiglia Torpediniere
+ITA;48;95a Flottiglia Torpediniere
+ITA;48;96a Flottiglia Torpediniere
+ITA;48;97a Flottiglia Torpediniere
+ITA;48;98a Flottiglia Torpediniere
+ITA;48;99a Flottiglia Torpediniere
+ITA;48;100a Flottiglia Torpediniere
+ITA;49;1a Flottiglia Torpediniere
+ITA;49;2a Flottiglia Torpediniere
+ITA;49;3a Flottiglia Torpediniere
+ITA;49;4a Flottiglia Torpediniere
+ITA;49;5a Flottiglia Torpediniere
+ITA;49;6a Flottiglia Torpediniere
+ITA;49;7a Flottiglia Torpediniere
+ITA;49;8a Flottiglia Torpediniere
+ITA;49;9a Flottiglia Torpediniere
+ITA;49;10a Flottiglia Torpediniere
+ITA;49;11a Flottiglia Torpediniere
+ITA;49;12a Flottiglia Torpediniere
+ITA;49;13a Flottiglia Torpediniere
+ITA;49;14a Flottiglia Torpediniere
+ITA;49;15a Flottiglia Torpediniere
+ITA;49;16a Flottiglia Torpediniere
+ITA;49;17a Flottiglia Torpediniere
+ITA;49;18a Flottiglia Torpediniere
+ITA;49;19a Flottiglia Torpediniere
+ITA;49;20a Flottiglia Torpediniere
+ITA;49;21a Flottiglia Torpediniere
+ITA;49;22a Flottiglia Torpediniere
+ITA;49;23a Flottiglia Torpediniere
+ITA;49;24a Flottiglia Torpediniere
+ITA;49;25a Flottiglia Torpediniere
+ITA;49;26a Flottiglia Torpediniere
+ITA;49;27a Flottiglia Torpediniere
+ITA;49;28a Flottiglia Torpediniere
+ITA;49;29a Flottiglia Torpediniere
+ITA;49;30a Flottiglia Torpediniere
+ITA;49;31a Flottiglia Torpediniere
+ITA;49;32a Flottiglia Torpediniere
+ITA;49;33a Flottiglia Torpediniere
+ITA;49;34a Flottiglia Torpediniere
+ITA;49;35a Flottiglia Torpediniere
+ITA;49;36a Flottiglia Torpediniere
+ITA;49;37a Flottiglia Torpediniere
+ITA;49;38a Flottiglia Torpediniere
+ITA;49;39a Flottiglia Torpediniere
+ITA;49;40a Flottiglia Torpediniere
+ITA;49;41a Flottiglia Torpediniere
+ITA;49;42a Flottiglia Torpediniere
+ITA;49;43a Flottiglia Torpediniere
+ITA;49;44a Flottiglia Torpediniere
+ITA;49;45a Flottiglia Torpediniere
+ITA;49;46a Flottiglia Torpediniere
+ITA;49;47a Flottiglia Torpediniere
+ITA;49;48a Flottiglia Torpediniere
+ITA;49;49a Flottiglia Torpediniere
+ITA;49;50a Flottiglia Torpediniere
+ITA;49;51a Flottiglia Torpediniere
+ITA;49;52a Flottiglia Torpediniere
+ITA;49;53a Flottiglia Torpediniere
+ITA;49;54a Flottiglia Torpediniere
+ITA;49;55a Flottiglia Torpediniere
+ITA;49;56a Flottiglia Torpediniere
+ITA;49;57a Flottiglia Torpediniere
+ITA;49;58a Flottiglia Torpediniere
+ITA;49;59a Flottiglia Torpediniere
+ITA;49;60a Flottiglia Torpediniere
+ITA;49;61a Flottiglia Torpediniere
+ITA;49;62a Flottiglia Torpediniere
+ITA;49;63a Flottiglia Torpediniere
+ITA;49;64a Flottiglia Torpediniere
+ITA;49;65a Flottiglia Torpediniere
+ITA;49;66a Flottiglia Torpediniere
+ITA;49;67a Flottiglia Torpediniere
+ITA;49;68a Flottiglia Torpediniere
+ITA;49;69a Flottiglia Torpediniere
+ITA;49;70a Flottiglia Torpediniere
+ITA;49;71a Flottiglia Torpediniere
+ITA;49;72a Flottiglia Torpediniere
+ITA;49;73a Flottiglia Torpediniere
+ITA;49;74a Flottiglia Torpediniere
+ITA;49;75a Flottiglia Torpediniere
+ITA;49;76a Flottiglia Torpediniere
+ITA;49;77a Flottiglia Torpediniere
+ITA;49;78a Flottiglia Torpediniere
+ITA;49;79a Flottiglia Torpediniere
+ITA;49;80a Flottiglia Torpediniere
+ITA;49;81a Flottiglia Torpediniere
+ITA;49;82a Flottiglia Torpediniere
+ITA;49;83a Flottiglia Torpediniere
+ITA;49;84a Flottiglia Torpediniere
+ITA;49;85a Flottiglia Torpediniere
+ITA;49;86a Flottiglia Torpediniere
+ITA;49;87a Flottiglia Torpediniere
+ITA;49;88a Flottiglia Torpediniere
+ITA;49;89a Flottiglia Torpediniere
+ITA;49;90a Flottiglia Torpediniere
+ITA;49;91a Flottiglia Torpediniere
+ITA;49;92a Flottiglia Torpediniere
+ITA;49;93a Flottiglia Torpediniere
+ITA;49;94a Flottiglia Torpediniere
+ITA;49;95a Flottiglia Torpediniere
+ITA;49;96a Flottiglia Torpediniere
+ITA;49;97a Flottiglia Torpediniere
+ITA;49;98a Flottiglia Torpediniere
+ITA;49;99a Flottiglia Torpediniere
+ITA;49;100a Flottiglia Torpediniere
+SOV;41;7th Guards Airborne-Assault (Mountain) Division
+SOV;41;76th Guards Air Assault Division
+SOV;41;98th Guards Airborne Division
+SOV;41;106th Guards Airborne Division
+SOV;41;103rd Guards Airborne Division
+SOV;41;345th Independent Guards Airborne Regiment
+SOV;41;1-ya Vozdushno-Desantnaya Diviziya
+SOV;41;2-ya Vozdushno-Desantnaya Diviziya
+SOV;41;3-ya Vozdushno-Desantnaya Diviziya
+SOV;41;4-ya Vozdushno-Desantnaya Diviziya
+SOV;41;5-ya Vozdushno-Desantnaya Diviziya
+SOV;41;6-ya Vozdushno-Desantnaya Diviziya
+SOV;41;7-ya Vozdushno-Desantnaya Diviziya
+SOV;41;8-ya Vozdushno-Desantnaya Diviziya
+SOV;41;9-ya Vozdushno-Desantnaya Diviziya
+SOV;41;10-ya Vozdushno-Desantnaya Diviziya
+SOV;41;11-ya Vozdushno-Desantnaya Diviziya
+SOV;41;12-ya Vozdushno-Desantnaya Diviziya
+SOV;41;13-ya Vozdushno-Desantnaya Diviziya
+SOV;41;14-ya Vozdushno-Desantnaya Diviziya
+SOV;41;15-ya Vozdushno-Desantnaya Diviziya
+SOV;41;16-ya Vozdushno-Desantnaya Diviziya
+SOV;41;17-ya Vozdushno-Desantnaya Diviziya
+SOV;41;18-ya Vozdushno-Desantnaya Diviziya
+SOV;41;19-ya Vozdushno-Desantnaya Diviziya
+SOV;41;20-ya Vozdushno-Desantnaya Diviziya
+SOV;42;Kirov
+SOV;42;Frunze
+SOV;42;Kalinin
+SOV;42;Yuri Andropov
+SOV;42;Voroshilov
+SOV;42;Maxim Gorkiy
+SOV;42;Molotov
+SOV;42;Kaganovich
+SOV;42;Tallin
+SOV;42;Sverdlov
+SOV;42;Zhdanov
+SOV;42;Admiral Lazarev
+SOV;42;Admiral Ushakov
+SOV;42;Admiral Senyavin
+SOV;42;Dmitry Pozharski
+SOV;42;Admiral Kruzenstern
+SOV;42;Ordzhonikidze
+SOV;42;Aleksandr Nevskiy
+SOV;42;Aleksandr Suvorov
+SOV;42;Admiral Makarov
+SOV;42;Severomorsk
+SOV;42;Dzerzhinski
+SOV;42;Admiral Nakhimov
+SOV;42;Mikhail Kutuzov
+SOV;42;Kagul
+SOV;42;Pamiat Merkuriya
+SOV;42;Krasnyi Krym
+SOV;42;Krasnyi Kavkaz
+SOV;42;Grozny
+SOV;42;Steregushchiy
+SOV;42;Doblestnyy
+SOV;42;Soobrazitelny
+SOV;42;Admiral Zozulya
+SOV;42;Vladivostok
+SOV;42;Vice-admiral Drozd
+SOV;42;Sevastopol
+SOV;43;K-3
+SOV;43;K-5
+SOV;43;K-8
+SOV;43;K-14
+SOV;43;K-52
+SOV;43;K-21
+SOV;43;K-11
+SOV;43;K-133
+SOV;43;K-181
+SOV;43;K-115
+SOV;43;K-159
+SOV;43;K-42
+SOV;43;K-50
+SOV;43;K-27
+SOV;43;K-38
+SOV;43;K-69
+SOV;43;K-147
+SOV;43;K-53
+SOV;43;K-306
+SOV;43;K-323
+SOV;43;K-370
+SOV;43;K-438
+SOV;43;K-367
+SOV;43;K-398
+SOV;43;K-462
+SOV;43;K-481
+SOV;43;K-314
+SOV;43;K-454
+SOV;43;K-469
+SOV;43;K-387
+SOV;43;K-371
+SOV;43;K-467
+SOV;43;K-488
+SOV;43;K-505
+SOV;43;K-495
+SOV;43;K-513
+SOV;43;K-517
+SOV;43;K-524
+SOV;43;K-254
+SOV;43;K-502
+SOV;43;K-527
+SOV;43;K-298
+SOV;43;K-358
+SOV;43;K-299
+SOV;43;K-244
+SOV;43;K-247
+SOV;43;K-507
+SOV;43;K-251
+SOV;43;K-255
+SOV;43;K-324
+SOV;43;K-355
+SOV;43;K-360
+SOV;43;K-218
+SOV;43;K-242
+SOV;43;K-492
+SOV;43;K-412
+SOV;43;K-305
+SOV;43;K-264
+SOV;43;K-315
+SOV;43;K-292
+SOV;43;K-388
+SOV;43;K-138
+SOV;43;K-414
+SOV;43;K-448
+SOV;43;K-278
+SOV;43;K-64
+SOV;43;K-316
+SOV;43;K-373
+SOV;43;K-463
+SOV;43;K-123
+SOV;43;K-432
+SOV;43;K-493
+SOV;43;K-239
+SOV;43;K-276
+SOV;43;K-534
+SOV;43;K-336
+SOV;43;K-536
+SOV;44;B-67
+SOV;44;B-73
+SOV;44;B-78
+SOV;44;B-79
+SOV;44;B-89
+SOV;44;B-92
+SOV;44;B-40
+SOV;44;B-41
+SOV;44;B-42
+SOV;44;B-121
+SOV;44;B-125
+SOV;44;B-45
+SOV;44;B-29
+SOV;44;B-146
+SOV;44;B-149
+SOV;44;B-95
+SOV;44;K-91
+SOV;44;K-93
+SOV;44;K-110
+SOV;44;K-153
+SOV;44;B-93
+SOV;44;B-103
+SOV;44;B-109
+SOV;44;B-113
+SOV;44;B-46
+SOV;44;B-51
+SOV;44;K-163
+SOV;44;K-142
+SOV;44;K-19
+SOV;44;K-33
+SOV;44;K-55
+SOV;44;K-40
+SOV;44;K-16
+SOV;44;K-145
+SOV;44;K-149
+SOV;44;K-178
+SOV;44;K-45
+SOV;44;K-59
+SOV;44;K-66
+SOV;44;K-122
+SOV;44;K-151
+SOV;44;K-30
+SOV;44;K-18
+SOV;44;K-137
+SOV;44;K-140
+SOV;44;K-216
+SOV;44;K-26
+SOV;44;K-32
+SOV;44;K-207
+SOV;44;K-210
+SOV;44;K-249
+SOV;44;K-253
+SOV;44;K-395
+SOV;44;K-408
+SOV;44;K-411
+SOV;44;K-418
+SOV;44;K-420
+SOV;44;K-423
+SOV;44;K-426
+SOV;44;K-415
+SOV;44;K-403
+SOV;44;K-245
+SOV;44;K-214
+SOV;44;K-444
+SOV;44;K-399
+SOV;44;K-434
+SOV;44;K-236
+SOV;44;K-389
+SOV;44;K-258
+SOV;44;K-219
+SOV;44;K-228
+SOV;44;K-252
+SOV;44;K-446
+SOV;44;K-451
+SOV;44;K-436
+SOV;44;K-430
+SOV;44;K-279
+SOV;44;K-447
+SOV;44;K-450
+SOV;44;K-385
+SOV;44;K-457
+SOV;44;K-465
+SOV;44;K-460
+SOV;44;K-472
+SOV;44;K-475
+SOV;44;K-171
+SOV;44;K-366
+SOV;44;K-417
+SOV;44;K-477
+SOV;44;K-497
+SOV;44;K-500
+SOV;44;K-512
+SOV;44;K-523
+SOV;44;K-530
+SOV;44;K-182
+SOV;44;K-92
+SOV;44;K-193
+SOV;44;K-421
+SOV;44;K-424
+SOV;44;K-441
+SOV;44;K-449
+SOV;44;K-455
+SOV;44;K-490
+SOV;44;K-487
+SOV;44;K-496
+SOV;44;K-506
+SOV;44;K-211
+SOV;44;K-223
+SOV;44;K-180
+SOV;44;K-433
+SOV;44;K-129
+SOV;44;K-44
+SOV;44;K-51
+SOV;44;K-84
+SOV;44;K-64
+SOV;44;K-114
+SOV;44;K-117
+SOV;44;K-18
+SOV;44;K-407
+SOV;44;K-43
+SOV;44;K-87
+SOV;44;K-25
+SOV;44;K-143
+SOV;44;K-313
+SOV;44;K-308
+SOV;44;K-320
+SOV;44;K-302
+SOV;44;K-325
+SOV;44;K-429
+SOV;44;K-201
+SOV;44;K-452
+SOV;44;K-458
+SOV;44;K-479
+SOV;44;K-503
+SOV;44;K-508
+SOV;44;K-209
+SOV;44;K-166
+SOV;44;K-104
+SOV;44;K-170
+SOV;44;K-172
+SOV;44;K-47
+SOV;44;K-1
+SOV;44;K-28
+SOV;44;K-74
+SOV;44;K-22
+SOV;44;K-35
+SOV;44;K-90
+SOV;44;K-116
+SOV;44;K-125
+SOV;44;K-128
+SOV;44;K-131
+SOV;44;K-135
+SOV;44;K-175
+SOV;44;K-184
+SOV;44;K-189
+SOV;44;K-57
+SOV;44;K-31
+SOV;44;K-48
+SOV;44;K-56
+SOV;44;K-10
+SOV;44;K-94
+SOV;44;K-108
+SOV;44;K-7
+SOV;44;K-23
+SOV;44;K-34
+SOV;44;TK-208
+SOV;44;TK-202
+SOV;44;TK-12
+SOV;44;TK-13
+SOV;44;TK-17
+SOV;44;TK-20
+SOV;44;TK-210
+SOV;44;K-525
+SOV;44;K-206
+SOV;44;K-148
+SOV;44;K-173
+SOV;44;K-132
+SOV;44;K-119
+SOV;44;K-410
+SOV;44;K-442
+SOV;44;K-456
+SOV;44;K-266
+SOV;44;K-186
+SOV;44;K-141
+SOV;44;K-150
+SOV;44;K-135
+SOV;44;K-160 Barnaul
+SOV;45;1-ya Flotiliya Esmintsev
+SOV;45;2-ya Flotiliya Esmintsev
+SOV;45;3-ya Flotiliya Esmintsev
+SOV;45;4-ya Flotiliya Esmintsev
+SOV;45;5-ya Flotiliya Esmintsev
+SOV;45;6-ya Flotiliya Esmintsev
+SOV;45;7-ya Flotiliya Esmintsev
+SOV;45;8-ya Flotiliya Esmintsev
+SOV;45;9-ya Flotiliya Esmintsev
+SOV;45;10-ya Flotiliya Esmintsev
+SOV;45;11-ya Flotiliya Esmintsev
+SOV;45;12-ya Flotiliya Esmintsev
+SOV;45;13-ya Flotiliya Esmintsev
+SOV;45;14-ya Flotiliya Esmintsev
+SOV;45;15-ya Flotiliya Esmintsev
+SOV;45;16-ya Flotiliya Esmintsev
+SOV;45;17-ya Flotiliya Esmintsev
+SOV;45;18-ya Flotiliya Esmintsev
+SOV;45;19-ya Flotiliya Esmintsev
+SOV;45;20-ya Flotiliya Esmintsev
+SOV;45;21-ya Flotiliya Esmintsev
+SOV;45;22-ya Flotiliya Esmintsev
+SOV;45;23-ya Flotiliya Esmintsev
+SOV;45;24-ya Flotiliya Esmintsev
+SOV;45;25-ya Flotiliya Esmintsev
+SOV;45;26-ya Flotiliya Esmintsev
+SOV;45;27-ya Flotiliya Esmintsev
+SOV;45;28-ya Flotiliya Esmintsev
+SOV;45;29-ya Flotiliya Esmintsev
+SOV;45;30-ya Flotiliya Esmintsev
+SOV;45;31-ya Flotiliya Esmintsev
+SOV;45;32-ya Flotiliya Esmintsev
+SOV;45;33-ya Flotiliya Esmintsev
+SOV;45;34-ya Flotiliya Esmintsev
+SOV;45;35-ya Flotiliya Esmintsev
+SOV;45;36-ya Flotiliya Esmintsev
+SOV;45;37-ya Flotiliya Esmintsev
+SOV;45;38-ya Flotiliya Esmintsev
+SOV;45;39-ya Flotiliya Esmintsev
+SOV;45;40-ya Flotiliya Esmintsev
+SOV;45;41-ya Flotiliya Esmintsev
+SOV;45;42-ya Flotiliya Esmintsev
+SOV;45;43-ya Flotiliya Esmintsev
+SOV;45;44-ya Flotiliya Esmintsev
+SOV;45;45-ya Flotiliya Esmintsev
+SOV;45;46-ya Flotiliya Esmintsev
+SOV;45;47-ya Flotiliya Esmintsev
+SOV;45;48-ya Flotiliya Esmintsev
+SOV;45;49-ya Flotiliya Esmintsev
+SOV;45;50-ya Flotiliya Esmintsev
+SOV;45;51-ya Flotiliya Esmintsev
+SOV;45;52-ya Flotiliya Esmintsev
+SOV;45;53-ya Flotiliya Esmintsev
+SOV;45;54-ya Flotiliya Esmintsev
+SOV;45;55-ya Flotiliya Esmintsev
+SOV;45;56-ya Flotiliya Esmintsev
+SOV;45;57-ya Flotiliya Esmintsev
+SOV;45;58-ya Flotiliya Esmintsev
+SOV;45;59-ya Flotiliya Esmintsev
+SOV;45;60-ya Flotiliya Esmintsev
+SOV;45;61-ya Flotiliya Esmintsev
+SOV;45;62-ya Flotiliya Esmintsev
+SOV;45;63-ya Flotiliya Esmintsev
+SOV;45;64-ya Flotiliya Esmintsev
+SOV;45;65-ya Flotiliya Esmintsev
+SOV;45;66-ya Flotiliya Esmintsev
+SOV;45;67-ya Flotiliya Esmintsev
+SOV;45;68-ya Flotiliya Esmintsev
+SOV;45;69-ya Flotiliya Esmintsev
+SOV;45;70-ya Flotiliya Esmintsev
+SOV;45;71-ya Flotiliya Esmintsev
+SOV;45;72-ya Flotiliya Esmintsev
+SOV;45;73-ya Flotiliya Esmintsev
+SOV;45;74-ya Flotiliya Esmintsev
+SOV;45;75-ya Flotiliya Esmintsev
+SOV;45;76-ya Flotiliya Esmintsev
+SOV;45;77-ya Flotiliya Esmintsev
+SOV;45;78-ya Flotiliya Esmintsev
+SOV;45;79-ya Flotiliya Esmintsev
+SOV;45;80-ya Flotiliya Esmintsev
+SOV;45;81-ya Flotiliya Esmintsev
+SOV;45;82-ya Flotiliya Esmintsev
+SOV;45;83-ya Flotiliya Esmintsev
+SOV;45;84-ya Flotiliya Esmintsev
+SOV;45;85-ya Flotiliya Esmintsev
+SOV;45;86-ya Flotiliya Esmintsev
+SOV;45;87-ya Flotiliya Esmintsev
+SOV;45;88-ya Flotiliya Esmintsev
+SOV;45;89-ya Flotiliya Esmintsev
+SOV;45;90-ya Flotiliya Esmintsev
+SOV;45;91-ya Flotiliya Esmintsev
+SOV;45;92-ya Flotiliya Esmintsev
+SOV;45;93-ya Flotiliya Esmintsev
+SOV;45;94-ya Flotiliya Esmintsev
+SOV;45;95-ya Flotiliya Esmintsev
+SOV;45;96-ya Flotiliya Esmintsev
+SOV;45;97-ya Flotiliya Esmintsev
+SOV;45;98-ya Flotiliya Esmintsev
+SOV;45;99-ya Flotiliya Esmintsev
+SOV;45;100-ya Flotiliya Esmintsev
+SOV;46;Bedovyy
+SOV;46;Prozorlivyy
+SOV;46;Neulovimyy
+SOV;46;Neuderzhimyy
+SOV;46;Neukrotimyy
+SOV;46;Gnevnyy
+SOV;46;Upornyy
+SOV;46;Boykiy
+SOV;46;Gremyashchiy
+SOV;46;Zhguchiy
+SOV;46;Zorkiy
+SOV;46;Derzkiy
+SOV;46;Gordyy
+SOV;46;Khrabryy
+SOV;46;Sovremennyy
+SOV;46;Otchayannyy
+SOV;46;Otlichnyy
+SOV;46;Osmotritelnyy
+SOV;46;Bezuprechnyy
+SOV;46;Boevoy
+SOV;46;Stoykiy
+SOV;46;Okrylyonnyy
+SOV;46;Burnyy
+SOV;46;Veduschiy
+SOV;46;Bystryy
+SOV;46;Rastoropnyy
+SOV;46;Bezboyaznennyy
+SOV;46;Bezuderzhnyy
+SOV;46;Bespokoynyy
+SOV;46;Moskovskiy Komsomolets
+SOV;46;Besstrashnyy
+SOV;46;Buynyy
+SOV;46;Vechnyy
+SOV;46;Vnushitelnyy
+SOV;46;Vazhnyy
+SOV;46;Vdumchivyy
+SOV;46;Vnushitelnyy
+SOV;46;Vechnyy
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;46;
+SOV;47;Chapayev
+SOV;47;Chkalov
+SOV;47;Zhelezniakov
+SOV;47;Frunze
+SOV;47;Blukher
+SOV;47;Krasnyi Oktyabr
+SOV;47;Komsomolec
+SOV;47;Murmansk
+SOV;47;Grozny
+SOV;47;Admiral Fokin
+SOV;47;Admiral Golovko
+SOV;47;Chernomorets
+SOV;47;Sevastopol
+SOV;47;Admiral Zozulya
+SOV;47;Baltiets
+SOV;47;Admiral Isakov
+SOV;47;Admiral Nakhimov
+SOV;47;Admiral Semerkin
+SOV;47;Marshal Voroshilov
+SOV;47;Admiral Oktyabrskiy
+SOV;47;Admiral Isachenkov
+SOV;47;Marshal Timoshenko
+SOV;47;Admiral Yumashev
+SOV;47;Nikolayev
+SOV;47;Riga
+SOV;47;Profintern
+SOV;47;Chervona Ukraina
+SOV;47;Krasnyi Kavkaz
+SOV;47;Nikolayev
+SOV;47;Ochakov
+SOV;47;Kerch
+SOV;47;Azov
+SOV;47;Petropavlovsk
+SOV;47;Tashkent
+SOV;47;Vladivostok
+SOV;47;Udaloy
+SOV;47;Vice-Admiral Kulakov
+SOV;47;Marshal Vasilyevsky
+SOV;47;Admiral Zakharov
+SOV;47;Admiral Spiridonov
+SOV;47;Admiral Tributs
+SOV;47;Marshal Shaposhnikov
+SOV;47;Severomorsk
+SOV;47;Admiral Levchenko
+SOV;47;Admiral Vinogradov
+SOV;47;Admiral Kharlamov
+SOV;47;Admiral Panteleyev
+SOV;47;Admiral Chabanenko
+SOV;47;Admiral Basisty
+SOV;47;Admiral Kucherov
+SOV;48;1-ya Flotiliya Esmintsev
+SOV;48;2-ya Flotiliya Esmintsev
+SOV;48;3-ya Flotiliya Esmintsev
+SOV;48;4-ya Flotiliya Esmintsev
+SOV;48;5-ya Flotiliya Esmintsev
+SOV;48;6-ya Flotiliya Esmintsev
+SOV;48;7-ya Flotiliya Esmintsev
+SOV;48;8-ya Flotiliya Esmintsev
+SOV;48;9-ya Flotiliya Esmintsev
+SOV;48;10-ya Flotiliya Esmintsev
+SOV;48;11-ya Flotiliya Esmintsev
+SOV;48;12-ya Flotiliya Esmintsev
+SOV;48;13-ya Flotiliya Esmintsev
+SOV;48;14-ya Flotiliya Esmintsev
+SOV;48;15-ya Flotiliya Esmintsev
+SOV;48;16-ya Flotiliya Esmintsev
+SOV;48;17-ya Flotiliya Esmintsev
+SOV;48;18-ya Flotiliya Esmintsev
+SOV;48;19-ya Flotiliya Esmintsev
+SOV;48;20-ya Flotiliya Esmintsev
+SOV;48;21-ya Flotiliya Esmintsev
+SOV;48;22-ya Flotiliya Esmintsev
+SOV;48;23-ya Flotiliya Esmintsev
+SOV;48;24-ya Flotiliya Esmintsev
+SOV;48;25-ya Flotiliya Esmintsev
+SOV;48;26-ya Flotiliya Esmintsev
+SOV;48;27-ya Flotiliya Esmintsev
+SOV;48;28-ya Flotiliya Esmintsev
+SOV;48;29-ya Flotiliya Esmintsev
+SOV;48;30-ya Flotiliya Esmintsev
+SOV;48;31-ya Flotiliya Esmintsev
+SOV;48;32-ya Flotiliya Esmintsev
+SOV;48;33-ya Flotiliya Esmintsev
+SOV;48;34-ya Flotiliya Esmintsev
+SOV;48;35-ya Flotiliya Esmintsev
+SOV;48;36-ya Flotiliya Esmintsev
+SOV;48;37-ya Flotiliya Esmintsev
+SOV;48;38-ya Flotiliya Esmintsev
+SOV;48;39-ya Flotiliya Esmintsev
+SOV;48;40-ya Flotiliya Esmintsev
+SOV;48;41-ya Flotiliya Esmintsev
+SOV;48;42-ya Flotiliya Esmintsev
+SOV;48;43-ya Flotiliya Esmintsev
+SOV;48;44-ya Flotiliya Esmintsev
+SOV;48;45-ya Flotiliya Esmintsev
+SOV;48;46-ya Flotiliya Esmintsev
+SOV;48;47-ya Flotiliya Esmintsev
+SOV;48;48-ya Flotiliya Esmintsev
+SOV;48;49-ya Flotiliya Esmintsev
+SOV;48;50-ya Flotiliya Esmintsev
+SOV;48;51-ya Flotiliya Esmintsev
+SOV;48;52-ya Flotiliya Esmintsev
+SOV;48;53-ya Flotiliya Esmintsev
+SOV;48;54-ya Flotiliya Esmintsev
+SOV;48;55-ya Flotiliya Esmintsev
+SOV;48;56-ya Flotiliya Esmintsev
+SOV;48;57-ya Flotiliya Esmintsev
+SOV;48;58-ya Flotiliya Esmintsev
+SOV;48;59-ya Flotiliya Esmintsev
+SOV;48;60-ya Flotiliya Esmintsev
+SOV;48;61-ya Flotiliya Esmintsev
+SOV;48;62-ya Flotiliya Esmintsev
+SOV;48;63-ya Flotiliya Esmintsev
+SOV;48;64-ya Flotiliya Esmintsev
+SOV;48;65-ya Flotiliya Esmintsev
+SOV;48;66-ya Flotiliya Esmintsev
+SOV;48;67-ya Flotiliya Esmintsev
+SOV;48;68-ya Flotiliya Esmintsev
+SOV;48;69-ya Flotiliya Esmintsev
+SOV;48;70-ya Flotiliya Esmintsev
+SOV;48;71-ya Flotiliya Esmintsev
+SOV;48;72-ya Flotiliya Esmintsev
+SOV;48;73-ya Flotiliya Esmintsev
+SOV;48;74-ya Flotiliya Esmintsev
+SOV;48;75-ya Flotiliya Esmintsev
+SOV;48;76-ya Flotiliya Esmintsev
+SOV;48;77-ya Flotiliya Esmintsev
+SOV;48;78-ya Flotiliya Esmintsev
+SOV;48;79-ya Flotiliya Esmintsev
+SOV;48;80-ya Flotiliya Esmintsev
+SOV;48;81-ya Flotiliya Esmintsev
+SOV;48;82-ya Flotiliya Esmintsev
+SOV;48;83-ya Flotiliya Esmintsev
+SOV;48;84-ya Flotiliya Esmintsev
+SOV;48;85-ya Flotiliya Esmintsev
+SOV;48;86-ya Flotiliya Esmintsev
+SOV;48;87-ya Flotiliya Esmintsev
+SOV;48;88-ya Flotiliya Esmintsev
+SOV;48;89-ya Flotiliya Esmintsev
+SOV;48;90-ya Flotiliya Esmintsev
+SOV;48;91-ya Flotiliya Esmintsev
+SOV;48;92-ya Flotiliya Esmintsev
+SOV;48;93-ya Flotiliya Esmintsev
+SOV;48;94-ya Flotiliya Esmintsev
+SOV;48;95-ya Flotiliya Esmintsev
+SOV;48;96-ya Flotiliya Esmintsev
+SOV;48;97-ya Flotiliya Esmintsev
+SOV;48;98-ya Flotiliya Esmintsev
+SOV;48;99-ya Flotiliya Esmintsev
+SOV;48;100-ya Flotiliya Esmintsev
+SOV;49;1-ya Flotiliya Esmintsev
+SOV;49;2-ya Flotiliya Esmintsev
+SOV;49;3-ya Flotiliya Esmintsev
+SOV;49;4-ya Flotiliya Esmintsev
+SOV;49;5-ya Flotiliya Esmintsev
+SOV;49;6-ya Flotiliya Esmintsev
+SOV;49;7-ya Flotiliya Esmintsev
+SOV;49;8-ya Flotiliya Esmintsev
+SOV;49;9-ya Flotiliya Esmintsev
+SOV;49;10-ya Flotiliya Esmintsev
+SOV;49;11-ya Flotiliya Esmintsev
+SOV;49;12-ya Flotiliya Esmintsev
+SOV;49;13-ya Flotiliya Esmintsev
+SOV;49;14-ya Flotiliya Esmintsev
+SOV;49;15-ya Flotiliya Esmintsev
+SOV;49;16-ya Flotiliya Esmintsev
+SOV;49;17-ya Flotiliya Esmintsev
+SOV;49;18-ya Flotiliya Esmintsev
+SOV;49;19-ya Flotiliya Esmintsev
+SOV;49;20-ya Flotiliya Esmintsev
+SOV;49;21-ya Flotiliya Esmintsev
+SOV;49;22-ya Flotiliya Esmintsev
+SOV;49;23-ya Flotiliya Esmintsev
+SOV;49;24-ya Flotiliya Esmintsev
+SOV;49;25-ya Flotiliya Esmintsev
+SOV;49;26-ya Flotiliya Esmintsev
+SOV;49;27-ya Flotiliya Esmintsev
+SOV;49;28-ya Flotiliya Esmintsev
+SOV;49;29-ya Flotiliya Esmintsev
+SOV;49;30-ya Flotiliya Esmintsev
+SOV;49;31-ya Flotiliya Esmintsev
+SOV;49;32-ya Flotiliya Esmintsev
+SOV;49;33-ya Flotiliya Esmintsev
+SOV;49;34-ya Flotiliya Esmintsev
+SOV;49;35-ya Flotiliya Esmintsev
+SOV;49;36-ya Flotiliya Esmintsev
+SOV;49;37-ya Flotiliya Esmintsev
+SOV;49;38-ya Flotiliya Esmintsev
+SOV;49;39-ya Flotiliya Esmintsev
+SOV;49;40-ya Flotiliya Esmintsev
+SOV;49;41-ya Flotiliya Esmintsev
+SOV;49;42-ya Flotiliya Esmintsev
+SOV;49;43-ya Flotiliya Esmintsev
+SOV;49;44-ya Flotiliya Esmintsev
+SOV;49;45-ya Flotiliya Esmintsev
+SOV;49;46-ya Flotiliya Esmintsev
+SOV;49;47-ya Flotiliya Esmintsev
+SOV;49;48-ya Flotiliya Esmintsev
+SOV;49;49-ya Flotiliya Esmintsev
+SOV;49;50-ya Flotiliya Esmintsev
+SOV;49;51-ya Flotiliya Esmintsev
+SOV;49;52-ya Flotiliya Esmintsev
+SOV;49;53-ya Flotiliya Esmintsev
+SOV;49;54-ya Flotiliya Esmintsev
+SOV;49;55-ya Flotiliya Esmintsev
+SOV;49;56-ya Flotiliya Esmintsev
+SOV;49;57-ya Flotiliya Esmintsev
+SOV;49;58-ya Flotiliya Esmintsev
+SOV;49;59-ya Flotiliya Esmintsev
+SOV;49;60-ya Flotiliya Esmintsev
+SOV;49;61-ya Flotiliya Esmintsev
+SOV;49;62-ya Flotiliya Esmintsev
+SOV;49;63-ya Flotiliya Esmintsev
+SOV;49;64-ya Flotiliya Esmintsev
+SOV;49;65-ya Flotiliya Esmintsev
+SOV;49;66-ya Flotiliya Esmintsev
+SOV;49;67-ya Flotiliya Esmintsev
+SOV;49;68-ya Flotiliya Esmintsev
+SOV;49;69-ya Flotiliya Esmintsev
+SOV;49;70-ya Flotiliya Esmintsev
+SOV;49;71-ya Flotiliya Esmintsev
+SOV;49;72-ya Flotiliya Esmintsev
+SOV;49;73-ya Flotiliya Esmintsev
+SOV;49;74-ya Flotiliya Esmintsev
+SOV;49;75-ya Flotiliya Esmintsev
+SOV;49;76-ya Flotiliya Esmintsev
+SOV;49;77-ya Flotiliya Esmintsev
+SOV;49;78-ya Flotiliya Esmintsev
+SOV;49;79-ya Flotiliya Esmintsev
+SOV;49;80-ya Flotiliya Esmintsev
+SOV;49;81-ya Flotiliya Esmintsev
+SOV;49;82-ya Flotiliya Esmintsev
+SOV;49;83-ya Flotiliya Esmintsev
+SOV;49;84-ya Flotiliya Esmintsev
+SOV;49;85-ya Flotiliya Esmintsev
+SOV;49;86-ya Flotiliya Esmintsev
+SOV;49;87-ya Flotiliya Esmintsev
+SOV;49;88-ya Flotiliya Esmintsev
+SOV;49;89-ya Flotiliya Esmintsev
+SOV;49;90-ya Flotiliya Esmintsev
+SOV;49;91-ya Flotiliya Esmintsev
+SOV;49;92-ya Flotiliya Esmintsev
+SOV;49;93-ya Flotiliya Esmintsev
+SOV;49;94-ya Flotiliya Esmintsev
+SOV;49;95-ya Flotiliya Esmintsev
+SOV;49;96-ya Flotiliya Esmintsev
+SOV;49;97-ya Flotiliya Esmintsev
+SOV;49;98-ya Flotiliya Esmintsev
+SOV;49;99-ya Flotiliya Esmintsev
+SOV;49;100-ya Flotiliya Esmintsev
+GER;41;1. Luftbewegliche Division
+GER;41;2. Luftbewegliche Division
+GER;41;3. Luftbewegliche Division
+GER;41;1. SS Luftbewegliche Division
+GER;41;2. SS Luftbewegliche Division
+GER;41;3. SS Luftbewegliche Division
+GER;41;4. Luftbewegliche Division
+GER;41;5. Luftbewegliche Division
+GER;41;6. Luftbewegliche Division
+GER;41;4. SS Luftbewegliche Division
+GER;41;5. SS Luftbewegliche Division
+GER;41;6. SS Luftbewegliche Division
+GER;41;7. Luftbewegliche Division
+GER;41;8. Luftbewegliche Division
+GER;41;9. Luftbewegliche Division
+GER;41;7. SS Luftbewegliche Division
+GER;41;8. SS Luftbewegliche Division
+GER;41;9. SS Luftbewegliche Division
+GER;41;10. Luftbewegliche Division
+GER;41;11. Luftbewegliche Division
+GER;41;12. Luftbewegliche Division
+GER;41;13. Luftbewegliche Division
+GER;41;14. Luftbewegliche Division
+GER;41;15. Luftbewegliche Division
+GER;41;16. Luftbewegliche Division
+GER;41;17. Luftbewegliche Division
+GER;41;18. Luftbewegliche Division
+GER;41;19. Luftbewegliche Division
+GER;41;20. Luftbewegliche Division
+GER;41;21. Luftbewegliche Division
+GER;41;22. Luftbewegliche Division
+GER;41;23. Luftbewegliche Division
+GER;41;24. Luftbewegliche Division
+GER;41;25. Luftbewegliche Division
+GER;41;26. Luftbewegliche Division
+GER;41;27. Luftbewegliche Division
+GER;41;28. Luftbewegliche Division
+GER;41;29. Luftbewegliche Division
+GER;41;30. Luftbewegliche Division
+GER;42;Admiral Hipper
+GER;42;Blücher
+GER;42;Prinz Eugen
+GER;42;Lützow
+GER;42;Admiral Scheer
+GER;42;Admiral Graf Spee
+GER;42;Deutschland
+GER;42;Frithjof
+GER;42;Friedrich Carl
+GER;42;Horst Wessel
+GER;42;Götz von Berlichingen
+GER;42;Admiral Pohl
+GER;42;Admiral Holtzendorff
+GER;42;Admiral Deinhard
+GER;42;Admiral Zenker
+GER;42;Admiral von Knorr
+GER;42;Admiral Souchon
+GER;42;von der Gröben
+GER;42;Graf von Schwerin
+GER;42;Roon
+GER;42;Goeben
+GER;42;Bülow
+GER;42;Falkenhayn
+GER;42;Hoffmann
+GER;42;Moritz
+GER;42;Zieten
+GER;42;Bevan
+GER;42;Kleist
+GER;42;Bethmann-Hollweg
+GER;42;Stosch
+GER;42;Stein
+GER;42;Steuben
+GER;42;Yorck
+GER;42;von der Tann
+GER;42;Derfflinger
+GER;42;Moltke
+GER;42;Mackensen
+GER;42;Clausewitz
+GER;42;Seydlitz
+GER;42;Großer Kurfürst
+GER;42;Reichsmarschall
+GER;42;Adolf Lüderitz
+GER;42;Gorch Fock
+GER;42;Friedrich Carl
+GER;42;Plüschow
+GER;42;Coronel
+GER;42;Wörth
+GER;42;Weissenburg
+GER;42;Albert Speer
+GER;42;Joseph Goebbels
+GER;42;Wernher von Braun
+GER;42;Großadmiral Raeder
+GER;42;Admiral Hipper
+GER;42;Blücher
+GER;42;Prinz Eugen
+GER;42;Lützow
+GER;42;Admiral Scheer
+GER;42;Admiral Graf Spee
+GER;42;Deutschland
+GER;42;Frithjof
+GER;42;Friedrich Carl
+GER;42;Horst Wessel
+GER;42;Götz von Berlichingen
+GER;42;Admiral Pohl
+GER;42;Admiral Holtzendorff
+GER;42;Admiral Deinhard
+GER;42;Admiral Zenker
+GER;42;Admiral von Knorr
+GER;42;Admiral Souchon
+GER;42;von der Gröben
+GER;42;Graf von Schwerin
+GER;42;Roon
+GER;42;Goeben
+GER;42;Bülow
+GER;42;Falkenhayn
+GER;42;Hoffmann
+GER;42;Moritz
+GER;42;Zieten
+GER;42;Bevan
+GER;42;Kleist
+GER;42;Bethmann-Hollweg
+GER;42;Stosch
+GER;42;Stein
+GER;42;Steuben
+GER;42;Yorck
+GER;42;von der Tann
+GER;42;Derfflinger
+GER;42;Moltke
+GER;42;Mackensen
+GER;42;Clausewitz
+GER;42;Seydlitz
+GER;42;Großer Kurfürst
+GER;42;Reichsmarschall
+GER;42;Adolf Lüderitz
+GER;42;Gorch Fock
+GER;42;Friedrich Carl
+GER;42;Plüschow
+GER;42;Coronel
+GER;42;Wörth
+GER;42;Weissenburg
+GER;42;Albert Speer
+GER;42;Joseph Goebbels
+GER;42;Wernher von Braun
+GER;42;Großadmiral Raeder
+GER;42;Admiral Hipper
+GER;42;Blücher
+GER;42;Prinz Eugen
+GER;42;Lützow
+GER;42;Admiral Scheer
+GER;42;Admiral Graf Spee
+GER;42;Deutschland
+GER;42;Frithjof
+GER;42;Friedrich Carl
+GER;42;Horst Wessel
+GER;42;Götz von Berlichingen
+GER;42;Admiral Pohl
+GER;42;Admiral Holtzendorff
+GER;42;Admiral Deinhard
+GER;42;Admiral Zenker
+GER;42;Admiral von Knorr
+GER;42;Admiral Souchon
+GER;42;von der Gröben
+GER;42;Graf von Schwerin
+GER;42;Heimdall
+GER;42;Hildebrand
+GER;42;Beowulf
+GER;47;Königsberg
+GER;47;Karlsruhe
+GER;47;Köln
+GER;47;Leipzig
+GER;47;Nürnberg
+GER;47;Emden
+GER;47;Stuttgart
+GER;47;Stettin
+GER;47;Dresden
+GER;47;Hannover
+GER;47;Mainz
+GER;47;Dortmund
+GER;47;Augsburg
+GER;47;Bamberg
+GER;47;Magdeburg
+GER;47;Breslau
+GER;47;Straßburg
+GER;47;Stralsund
+GER;47;Rostock
+GER;47;Graudenz
+GER;47;Regensburg
+GER;47;Pillau
+GER;47;Elbing
+GER;47;Frankfurt
+GER;47;Wiesbaden
+GER;47;Frankfurt
+GER;47;Kolberg
+GER;47;Heilbronn
+GER;47;Ingolstadt
+GER;47;Düsseldorf
+GER;47;Duisberg
+GER;47;Bochum
+GER;47;Wuppertal
+GER;47;Bielefeld
+GER;47;Bonn
+GER;47;Mannheim
+GER;47;Gelsenkirchen
+GER;47;Münster
+GER;47;Mönchengladbach
+GER;47;Chemnitz
+GER;47;Braunschweig
+GER;47;Aachen
+GER;47;Krefeld
+GER;47;Halle
+GER;47;Kiel
+GER;47;Oberhausen
+GER;47;Lübeck
+GER;47;Freiburg
+GER;47;Hagen
+GER;47;Erfurt
+GER;47;Kassel
+GER;47;Hamm
+GER;47;Saarbrücken
+GER;47;Herne
+GER;47;Mülheim
+GER;47;Solingen
+GER;47;Osnabrück
+GER;47;Ludwigshafen
+GER;47;Leverkusen
+GER;47;Oldenburg
+GER;47;Neuss
+GER;47;Paderborn
+GER;47;Heidelberg
+GER;47;Darmstadt
+GER;47;Potsdam
+GER;47;Würzburg
+GER;47;Göttingen
+GER;47;Recklinghausen
+GER;47;Bottrop
+GER;47;Wolfsburg
+GER;47;München
+GER;47;Emden
+GER;47;Königsberg
+GER;47;Karlsruhe
+GER;47;Köln
+GER;47;Leipzig
+GER;47;Yorck
+GER;47;Wolfsburg
+GER;47;Brummer
+GER;47;Bremse
+GER;47;Nautilus
+GER;47;Albatross
+GER;48;1. Korvettengeschwader
+GER;48;2. Korvettengeschwader
+GER;48;3. Korvettengeschwader
+GER;48;4. Korvettengeschwader
+GER;48;5. Korvettengeschwader
+GER;48;6. Korvettengeschwader
+GER;48;7. Korvettengeschwader
+GER;48;8. Korvettengeschwader
+GER;48;9. Korvettengeschwader
+GER;48;10. Korvettengeschwader
+GER;48;11. Korvettengeschwader
+GER;48;12. Korvettengeschwader
+GER;48;13. Korvettengeschwader
+GER;48;14. Korvettengeschwader
+GER;48;15. Korvettengeschwader
+GER;48;16. Korvettengeschwader
+GER;48;17. Korvettengeschwader
+GER;48;18. Korvettengeschwader
+GER;48;19. Korvettengeschwader
+GER;48;20. Korvettengeschwader
+GER;48;21. Korvettengeschwader
+GER;48;22. Korvettengeschwader
+GER;48;23. Korvettengeschwader
+GER;48;24. Korvettengeschwader
+GER;48;25. Korvettengeschwader
+GER;48;26. Korvettengeschwader
+GER;48;27. Korvettengeschwader
+GER;48;28. Korvettengeschwader
+GER;48;29. Korvettengeschwader
+GER;48;30. Korvettengeschwader
+GER;48;31. Korvettengeschwader
+GER;48;32. Korvettengeschwader
+GER;48;33. Korvettengeschwader
+GER;48;34. Korvettengeschwader
+GER;48;35. Korvettengeschwader
+GER;48;36. Korvettengeschwader
+GER;48;37. Korvettengeschwader
+GER;48;38. Korvettengeschwader
+GER;48;39. Korvettengeschwader
+GER;48;40. Korvettengeschwader
+GER;48;41. Korvettengeschwader
+GER;48;42. Korvettengeschwader
+GER;48;43. Korvettengeschwader
+GER;48;44. Korvettengeschwader
+GER;48;45. Korvettengeschwader
+GER;48;46. Korvettengeschwader
+GER;48;47. Korvettengeschwader
+GER;48;48. Korvettengeschwader
+GER;48;49. Korvettengeschwader
+GER;48;50. Korvettengeschwader
+GER;49;1. Korvettengeschwader
+GER;49;2. Korvettengeschwader
+GER;49;3. Korvettengeschwader
+GER;49;4. Korvettengeschwader
+GER;49;5. Korvettengeschwader
+GER;49;6. Korvettengeschwader
+GER;49;7. Korvettengeschwader
+GER;49;8. Korvettengeschwader
+GER;49;9. Korvettengeschwader
+GER;49;10. Korvettengeschwader
+GER;49;11. Korvettengeschwader
+GER;49;12. Korvettengeschwader
+GER;49;13. Korvettengeschwader
+GER;49;14. Korvettengeschwader
+GER;49;15. Korvettengeschwader
+GER;49;16. Korvettengeschwader
+GER;49;17. Korvettengeschwader
+GER;49;18. Korvettengeschwader
+GER;49;19. Korvettengeschwader
+GER;49;20. Korvettengeschwader
+GER;49;21. Korvettengeschwader
+GER;49;22. Korvettengeschwader
+GER;49;23. Korvettengeschwader
+GER;49;24. Korvettengeschwader
+GER;49;25. Korvettengeschwader
+GER;49;26. Korvettengeschwader
+GER;49;27. Korvettengeschwader
+GER;49;28. Korvettengeschwader
+GER;49;29. Korvettengeschwader
+GER;49;30. Korvettengeschwader
+GER;49;31. Korvettengeschwader
+GER;49;32. Korvettengeschwader
+GER;49;33. Korvettengeschwader
+GER;49;34. Korvettengeschwader
+GER;49;35. Korvettengeschwader
+GER;49;36. Korvettengeschwader
+GER;49;37. Korvettengeschwader
+GER;49;38. Korvettengeschwader
+GER;49;39. Korvettengeschwader
+GER;49;40. Korvettengeschwader
+GER;49;41. Korvettengeschwader
+GER;49;42. Korvettengeschwader
+GER;49;43. Korvettengeschwader
+GER;49;44. Korvettengeschwader
+GER;49;45. Korvettengeschwader
+GER;49;46. Korvettengeschwader
+GER;49;47. Korvettengeschwader
+GER;49;48. Korvettengeschwader
+GER;49;49. Korvettengeschwader
+GER;49;50. Korvettengeschwader
+GER;45;1. Fregattengeschwader
+GER;45;2. Fregattengeschwader
+GER;45;3. Fregattengeschwader
+GER;45;4. Fregattengeschwader
+GER;45;5. Fregattengeschwader
+GER;45;6. Fregattengeschwader
+GER;45;7. Fregattengeschwader
+GER;45;8. Fregattengeschwader
+GER;45;9. Fregattengeschwader
+GER;45;10. Fregattengeschwader
+GER;45;11. Fregattengeschwader
+GER;45;12. Fregattengeschwader
+GER;45;13. Fregattengeschwader
+GER;45;14. Fregattengeschwader
+GER;45;15. Fregattengeschwader
+GER;45;16. Fregattengeschwader
+GER;45;17. Fregattengeschwader
+GER;45;18. Fregattengeschwader
+GER;45;19. Fregattengeschwader
+GER;45;20. Fregattengeschwader
+GER;45;21. Fregattengeschwader
+GER;45;22. Fregattengeschwader
+GER;45;23. Fregattengeschwader
+GER;45;24. Fregattengeschwader
+GER;45;25. Fregattengeschwader
+GER;45;26. Fregattengeschwader
+GER;45;27. Fregattengeschwader
+GER;45;28. Fregattengeschwader
+GER;45;29. Fregattengeschwader
+GER;45;30. Fregattengeschwader
+GER;45;31. Fregattengeschwader
+GER;45;32. Fregattengeschwader
+GER;45;33. Fregattengeschwader
+GER;45;34. Fregattengeschwader
+GER;45;36. Fregattengeschwader
+GER;45;37. Fregattengeschwader
+GER;45;38. Fregattengeschwader
+GER;45;39. Fregattengeschwader
+GER;45;40. Fregattengeschwader
+GER;45;41. Fregattengeschwader
+GER;45;42. Fregattengeschwader
+GER;45;43. Fregattengeschwader
+GER;45;44. Fregattengeschwader
+GER;45;45. Fregattengeschwader
+GER;45;46. Fregattengeschwader
+GER;45;47. Fregattengeschwader
+GER;45;48. Fregattengeschwader
+GER;45;49. Fregattengeschwader
+GER;45;50. Fregattengeschwader
+GER;46;Iltis
+GER;46;Jaguar
+GER;46;Leopard
+GER;46;Luchs
+GER;46;Wolf
+GER;46;Tiger
+GER;46;Panther
+GER;46;Löwe
+GER;46;Fuchs
+GER;46;Marder
+GER;46;Seeadler
+GER;46;Albatros
+GER;46;Kondor
+GER;46;Greif
+GER;46;Falke
+GER;46;Geier
+GER;46;Bussard
+GER;46;Habicht
+GER;46;Sperber
+GER;46;Kormoran
+GER;46;Weihe
+GER;46;Kranich
+GER;46;Alk
+GER;46;Storch
+GER;46;Pelikan
+GER;46;Häher
+GER;46;Elster
+GER;46;Reiher
+GER;46;Pinguin
+GER;46;Dommel
+GER;46;Zobel
+GER;46;Wiesel
+GER;46;Dachs
+GER;46;Hermalin
+GER;46;Nerz
+GER;46;Puma
+GER;46;Gepard
+GER;46;Hyäne
+GER;46;Frettchen
+GER;46;Ozelot
+GER;46;Silbermöwe
+GER;46;Sturmmöwe
+GER;46;Wildschawn
+GER;46;Eismöwe
+GER;46;Raubmöwe
+GER;46;Seeschwalbe
+GER;46;1. Zerstörergeschwader
+GER;46;2. Zerstörergeschwader
+GER;46;3. Zerstörergeschwader
+GER;46;4. Zerstörergeschwader
+GER;46;5. Zerstörergeschwader
+GER;46;6. Zerstörergeschwader
+GER;46;7. Zerstörergeschwader
+GER;46;8. Zerstörergeschwader
+GER;46;9. Zerstörergeschwader
+GER;46;10. Zerstörergeschwader
+GER;46;11. Zerstörergeschwader
+GER;46;12. Zerstörergeschwader
+GER;46;13. Zerstörergeschwader
+GER;46;14. Zerstörergeschwader
+GER;46;15. Zerstörergeschwader
+GER;46;16. Zerstörergeschwader
+GER;46;17. Zerstörergeschwader
+GER;46;18. Zerstörergeschwader
+GER;46;19. Zerstörergeschwader
+GER;46;20. Zerstörergeschwader
+GER;46;21. Zerstörergeschwader
+GER;46;22. Zerstörergeschwader
+GER;46;23. Zerstörergeschwader
+GER;46;24. Zerstörergeschwader
+GER;46;25. Zerstörergeschwader
+GER;46;26. Zerstörergeschwader
+GER;46;27. Zerstörergeschwader
+GER;46;28. Zerstörergeschwader
+GER;46;29. Zerstörergeschwader
+GER;46;30. Zerstörergeschwader
+GER;46;31. Zerstörergeschwader
+GER;46;32. Zerstörergeschwader
+GER;46;33. Zerstörergeschwader
+GER;46;34. Zerstörergeschwader
+GER;46;35. Zerstörergeschwader
+GER;46;36. Zerstörergeschwader
+GER;46;37. Zerstörergeschwader
+GER;46;38. Zerstörergeschwader
+GER;46;39. Zerstörergeschwader
+GER;46;40. Zerstörergeschwader
+GER;46;41. Zerstörergeschwader
+GER;46;42. Zerstörergeschwader
+GER;46;43. Zerstörergeschwader
+GER;46;44. Zerstörergeschwader
+GER;46;45. Zerstörergeschwader
+GER;46;46. Zerstörergeschwader
+GER;46;47. Zerstörergeschwader
+GER;46;48. Zerstörergeschwader
+GER;46;49. Zerstörergeschwader
+GER;46;50. Zerstörergeschwader
+GER;46;51. Zerstörergeschwader
+GER;46;52. Zerstörergeschwader
+GER;46;53. Zerstörergeschwader
+GER;46;54. Zerstörergeschwader
+GER;46;55. Zerstörergeschwader
+GER;46;56. Zerstörergeschwader
+GER;46;57. Zerstörergeschwader
+GER;46;58. Zerstörergeschwader
+GER;46;59. Zerstörergeschwader
+GER;46;60. Zerstörergeschwader
+GER;46;61. Zerstörergeschwader
+GER;46;62. Zerstörergeschwader
+GER;46;63. Zerstörergeschwader
+GER;46;64. Zerstörergeschwader
+GER;46;65. Zerstörergeschwader
+GER;46;66. Zerstörergeschwader
+GER;46;67. Zerstörergeschwader
+GER;46;68. Zerstörergeschwader
+GER;46;69. Zerstörergeschwader
+GER;46;70. Zerstörergeschwader
+GER;46;71. Zerstörergeschwader
+GER;46;72. Zerstörergeschwader
+GER;46;73. Zerstörergeschwader
+GER;46;74. Zerstörergeschwader
+GER;46;75. Zerstörergeschwader
+GER;46;76. Zerstörergeschwader
+GER;46;77. Zerstörergeschwader
+GER;46;78. Zerstörergeschwader
+GER;46;79. Zerstörergeschwader
+GER;46;80. Zerstörergeschwader
+GER;46;81. Zerstörergeschwader
+GER;46;82. Zerstörergeschwader
+GER;46;83. Zerstörergeschwader
+GER;46;84. Zerstörergeschwader
+GER;46;85. Zerstörergeschwader
+GER;46;86. Zerstörergeschwader
+GER;46;87. Zerstörergeschwader
+GER;46;88. Zerstörergeschwader
+GER;46;89. Zerstörergeschwader
+GER;46;90. Zerstörergeschwader
+GER;46;91. Zerstörergeschwader
+GER;46;92. Zerstörergeschwader
+GER;46;93. Zerstörergeschwader
+GER;46;94. Zerstörergeschwader
+GER;46;95. Zerstörergeschwader
+GER;46;96. Zerstörergeschwader
+GER;46;97. Zerstörergeschwader
+GER;46;98. Zerstörergeschwader
+GER;46;99. Zerstörergeschwader
+GER;46;100. Zerstörergeschwader
+GER;43;Wilhelm Bauer
+GER;43;Friedrich Schürer
+GER;43;Hans Techel
+GER;43;von Arnauld de la Perière
+GER;43;Walther Forstmann
+GER;43;Max Valentiner
+GER;43;Otto Steinbrinck
+GER;43;Hans Rose
+GER;43;Walther Schwieger
+GER;43;Reinhold Saltzwedel
+GER;43;Johannes Lohs
+GER;43;Waldemar Kophamel
+GER;43;Otto Schultze
+GER;43;Otto Kretschmer
+GER;43;Wolfgang Lüth
+GER;43;Erich Topp
+GER;43;Heinrich Liebe
+GER;43;Viktor Schütze
+GER;43;Heinrich Lehmann-Willenbrock
+GER;43;Karl-Friedrich Merten
+GER;43;Herbert Schultze
+GER;43;Günther Prien
+GER;43;Georg Lassen
+GER;43;Joachim Schepke
+GER;43;Werner Henke
+GER;43;Carl Emmermann
+GER;43;Heinrich Bleichrodt
+GER;43;Robert Gysae
+GER;43;Ernst Kals
+GER;43;Johann Mohr
+GER;43;Klaus Scholtz
+GER;43;Adolf Piening
+GER;43;Helmut Witte
+GER;43;Günther Hessler
+GER;43;Ernst Bauer
+GER;43;Engelbert Endrass
+GER;43;Reinhard Hardegen
+GER;43;Werner Hartmann
+GER;43;Hans Jenisch
+GER;43;Robert-Richard Zapp
+GER;43;Victor Oehrn
+GER;43;Jürgen Oesten
+GER;43;Wilhelm Rollmann
+GER;43;Erwin Rostin
+GER;43;Hans Witt
+GER;43;Günther Krech
+GER;43;Harald Gelhaus
+GER;43;Werner Hartenstein
+GER;43;Fritz-Julius Lemp
+GER;43;Adalbert Schnee
+GER;44;Wilhelm Bauer
+GER;44;Friedrich Schürer
+GER;44;Hans Techel
+GER;44;von Arnauld de la Perière
+GER;44;Walther Forstmann
+GER;44;Max Valentiner
+GER;44;Otto Steinbrinck
+GER;44;Hans Rose
+GER;44;Walther Schwieger
+GER;44;Reinhold Saltzwedel
+GER;44;Johannes Lohs
+GER;44;Waldemar Kophamel
+GER;44;Otto Schultze
+GER;44;Otto Kretschmer
+GER;44;Wolfgang Lüth
+GER;44;Erich Topp
+GER;44;Heinrich Liebe
+GER;44;Viktor Schütze
+GER;44;Heinrich Lehmann-Willenbrock
+GER;44;Karl-Friedrich Merten
+GER;44;Herbert Schultze
+GER;44;Günther Prien
+GER;44;Georg Lassen
+GER;44;Joachim Schepke
+GER;44;Werner Henke
+GER;44;Carl Emmermann
+GER;44;Heinrich Bleichrodt
+GER;44;Robert Gysae
+GER;44;Ernst Kals
+GER;44;Johann Mohr
+GER;44;Klaus Scholtz
+GER;44;Adolf Piening
+GER;44;Helmut Witte
+GER;44;Günther Hessler
+GER;44;Ernst Bauer
+GER;44;Engelbert Endrass
+GER;44;Reinhard Hardegen
+GER;44;Werner Hartmann
+GER;44;Hans Jenisch
+GER;44;Robert-Richard Zapp
+GER;44;Victor Oehrn
+GER;44;Jürgen Oesten
+GER;44;Wilhelm Rollmann
+GER;44;Erwin Rostin
+GER;44;Hans Witt
+GER;44;Günther Krech
+GER;44;Harald Gelhaus
+GER;44;Werner Hartenstein
+GER;44;Fritz-Julius Lemp
+GER;44;Adalbert Schnee
+USA;41;101st Air Assault Division 'Screaming Eagles'
+USA;41;1st Air Cavalry Division
+USA;41;11th Air Assault Division 'Angels'
+USA;41;21st Air Cavalry Division
+USA;41;24th Air Cavalry Division
+USA;41;56th Air Cavalry Division
+USA;41;61st Air Cavalry Division
+USA;41;62nd	Air Cavalry Division
+USA;41;63rd Air Cavalry Division
+USA;41;64th Air Cavalry Division
+USA;41;65th Air Cavalry Division
+USA;41;66th Air Cavalry Division
+USA;41;21st Air Cavalry Division
+USA;41;22nd Air Cavalry Division
+USA;41;23rd Air Cavalry Division
+USA;41;25th Air Cavalry Division
+USA;41;26th Air Cavalry Division
+USA;41;27th Air Cavalry Division
+USA;41;28th Air Cavalry Division
+USA;41;29th Air Cavalry Division
+USA;41;30th Air Cavalry Division
+USA;42;USS Long Beach (CGN-9)
+USA;42;USS Bainbridge (CGN-25)
+USA;42;USS Truxtun (CGN-35)
+USA;42;USS California (CGN-36)
+USA;42;USS South Carolina (CGN-37)
+USA;42;USS Virginia (CGN-38)
+USA;42;USS Texas (CGN-39)
+USA;42;USS Mississippi (CGN-40)
+USA;42;USS Arkansas (CGN-41)
+USA;43;USS Nautilus (SSN-571)
+USA;43;USS Seawolf (SSN-575)
+USA;43;USS Skate (SSN-578)
+USA;43;USS Swordfish (SSN-579)
+USA;43;USS Sargo (SSN-583)
+USA;43;USS Seadragon (SSN-584)
+USA;43;USS Skipjack (SSN-585)
+USA;43;USS Scamp (SSN-588)
+USA;43;USS Scorpion (SSN-589)
+USA;43;USS Sculpin (SSN-590)
+USA;43;USS Shark (SSN-591)
+USA;43;USS Snook (SSN-592)
+USA;43;USS Tullibee (SSN-597)
+USA;43;USS Thresher (SSN-593)
+USA;43;USS Permit (SSN-594)
+USA;43;USS Plunger (SSN-595)
+USA;43;USS Barb (SSN-596)
+USA;43;USS Pollack (SSN-603)
+USA;43;USS Haddo (SSN-604)
+USA;43;USS Jack (SSN-605)
+USA;43;USS Tinosa (SSN-606)
+USA;43;USS Dace (SSN-607)
+USA;43;USS Guardfish (SSN-612)
+USA;43;USS Flasher (SSN-613)
+USA;43;USS Greenling (SSN-614)
+USA;43;USS Gato (SSN-615)
+USA;43;USS Haddock (SSN-621)
+USA;43;USS Sturgeon (SSN-637)
+USA;43;USS Whale (SSN-638)
+USA;43;USS Tautog (SSN-639)
+USA;43;USS Grayling (SSN-646)
+USA;43;USS Pogy (SSN-647)
+USA;43;USS Aspro (SSN-648)
+USA;43;USS Sunfish (SSN-649)
+USA;43;USS Pargo (SSN-650)
+USA;43;USS Queenfish (SSN-651)
+USA;43;USS Puffer (SSN-652)
+USA;43;USS Ray (SSN-653)
+USA;43;USS Sand Lance (SSN-660)
+USA;43;USS Lapon (SSN-661)
+USA;43;USS Gurnard (SSN-662)
+USA;43;USS Hammerhead (SSN-663)
+USA;43;USS Sea Devil (SSN-664)
+USA;43;USS Guitarro (SSN-665)
+USA;43;USS Hawkbill (SSN-666)
+USA;43;USS Bergall (SSN-667)
+USA;43;USS Spadefish (SSN-668)
+USA;43;USS Seahorse (SSN-669)
+USA;43;USS Finback (SSN-670)
+USA;43;USS Narwhal (SSN-671)
+USA;43;USS Pintado (SSN-672)
+USA;43;USS Flying Fish (SSN-673)
+USA;43;USS Trepang (SSN-674)
+USA;43;USS Bluefish (SSN-675)
+USA;43;USS Billfish (SSN-676)
+USA;43;USS Drum (SSN-677)
+USA;43;USS Archerfish (SSN-678)
+USA;43;USS Silversides (SSN-679)
+USA;43;USS William H. Bates (SSN-680)
+USA;43;USS Batfish (SSN-681)
+USA;43;USS Tunny (SSN-682)
+USA;43;USS Parche (SSN-683)
+USA;43;USS Cavalla (SSN-684)
+USA;43;USS Glenard P. Lipscomb (SSN-685)
+USA;43;USS L. Mendel Rivers (SSN-686)
+USA;43;USS Richard B. Russell (SSN-687)
+USA;43;USS Los Angeles (SSN-688)
+USA;43;USS Baton Rouge (SSN-689)
+USA;43;USS Philadelphia (SSN-690)
+USA;43;USS Memphis (SSN-691)
+USA;43;USS Omaha (SSN-692)
+USA;43;USS Cincinnati (SSN-693)
+USA;43;USS Groton (SSN-694)
+USA;43;USS Birmingham (SSN-695)
+USA;43;USS New York City (SSN-696)
+USA;43;USS Indianapolis (SSN-697)
+USA;43;USS Bremerton (SSN-698)
+USA;43;USS Jacksonville (SSN-699)
+USA;43;USS Dallas (SSN-700)
+USA;43;USS La Jolla (SSN-701)
+USA;43;USS Phoenix (SSN-702)
+USA;43;USS Boston (SSN-703)
+USA;43;USS Baltimore (SSN-704)
+USA;43;USS City of Corpus Christi (SSN-705)
+USA;43;USS Albuquerque (SSN-706)
+USA;43;USS Portsmouth (SSN-707)
+USA;43;USS Minneapolis–Saint Paul (SSN-708)
+USA;43;USS Hyman G. Rickover (SSN-709)
+USA;43;USS Augusta (SSN-710)
+USA;43;USS San Francisco (SSN-711)
+USA;43;USS Atlanta (SSN-712)
+USA;43;USS Houston (SSN-713)
+USA;43;USS Norfolk (SSN-714)
+USA;43;USS Buffalo (SSN-715)
+USA;43;USS Salt Lake City (SSN-716)
+USA;43;USS Olympia (SSN-717)
+USA;43;USS Honolulu (SSN-718)
+USA;43;USS Providence (SSN-719)
+USA;43;USS Pittsburgh (SSN-720)
+USA;43;USS Chicago (SSN-721)
+USA;43;USS Key West (SSN-722)
+USA;43;USS Oklahoma City (SSN-723)
+USA;43;USS Louisville (SSN-724)
+USA;43;USS Helena (SSN-725)
+USA;43;USS Newport News (SSN-750)
+USA;44;USS Grayback (SSG-574)
+USA;44;USS Growler (SSG-577)
+USA;44;USS George Washington (SSBN-598)
+USA;44;USS Patrick Henry (SSBN-599)
+USA;44;USS Theodore Roosevelt (SSBN-600)
+USA;44;USS Robert E. Lee (SSBN-601)
+USA;44;USS Abraham Lincoln (SSBN-602)
+USA;44;USS Ethan Allen (SSBN-608)
+USA;44;USS Sam Houston (SSBN-609)
+USA;44;USS Thomas A. Edison (SSBN-610)
+USA;44;USS John Marshall (SSBN-611)
+USA;44;USS Thomas Jefferson (SSBN-618)
+USA;44;USS Lafayette (SSBN-616)
+USA;44;USS Alexander Hamilton (SSBN-617)
+USA;44;USS Andrew Jackson (SSBN-619)
+USA;44;USS John Adams (SSBN-620)
+USA;44;USS James Monroe (SSBN-622)
+USA;44;USS Nathan Hale (SSBN-623)
+USA;44;USS Woodrow Wilson (SSBN-624)
+USA;44;USS Henry Clay (SSBN-625)
+USA;44;USS Daniel Webster (SSBN-626)
+USA;44;USS James Madison (SSBN-627)
+USA;44;USS Tecumseh (SSBN-628)
+USA;44;USS Daniel Boone (SSBN-629)
+USA;44;USS John C. Calhoun (SSBN-630)
+USA;44;USS Ulysses S. Grant (SSBN-631)
+USA;44;USS Von Steuben (SSBN-632)
+USA;44;USS Casimir Pulaski (SSBN-633)
+USA;44;USS Stonewall Jackson (SSBN-634)
+USA;44;USS Sam Rayburn (SSBN-635)
+USA;44;USS Nathanael Greene (SSBN-636)
+USA;44;USS Benjamin Franklin (SSBN-640)
+USA;44;USS Simon Bolivar (SSBN-641)
+USA;44;USS Kamehameha (SSBN-642)
+USA;44;USS George Bancroft (SSBN-643)
+USA;44;USS Lewis and Clark (SSBN-644)
+USA;44;USS James K. Polk (SSBN-645)
+USA;44;USS George C. Marshall (SSBN-654)
+USA;44;USS Henry L. Stimson (SSBN-655)
+USA;44;USS George Washington Carver (SSBN-656)
+USA;44;USS Francis Scott Key (SSBN-657)
+USA;44;USS Mariano G. Vallejo (SSBN-658)
+USA;44;USS Will Rogers (SSBN-659)
+USA;44;USS Ohio (SSBN-726)
+USA;44;USS Michigan (SSBN-727)
+USA;44;USS Florida (SSBN-728)
+USA;44;USS Georgia (SSBN-729)
+USA;44;USS Henry M. Jackson (SSBN-730)
+USA;44;USS Alabama (SSBN-731)
+USA;44;USS Alaska (SSBN-732)
+USA;44;USS Nevada (SSBN-733)
+USA;44;USS Tennessee (SSBN-734)
+USA;44;USS Pennsylvania (SSBN-735)
+USA;44;USS West Virginia (SSBN-736)
+USA;44;USS Kentucky (SSBN-737)
+USA;44;USS Maryland (SSBN-738)
+USA;44;USS Nebraska (SSBN-739)
+USA;44;USS Rhode Island (SSBN-740)
+USA;44;USS Maine (SSBN-741)
+USA;44;USS Wyoming (SSBN-742)
+USA;44;USS Louisiana (SSBN-743)
+USA;46;USS John Paul Jones (DDG-32)
+USA;46;USS Decatur (DDG-31)
+USA;46;USS Somers (DDG-34)
+USA;46;USS Parsons (DDG-33)
+USA;46;USS Farragut (DDG-37)
+USA;46;USS Luce (DDG-38)
+USA;46;USS Macdonough (DDG-39)
+USA;46;USS Coontz (DDG-40)
+USA;46;USS King (DDG-41)
+USA;46;USS Mahan (DDG-42)
+USA;46;USS Dahlgren (DDG-43)
+USA;46;USS William V. Pratt (DDG-44)
+USA;46;USS Dewey (DDG-45)
+USA;46;USS Preble (DDG-46)
+USA;46;USS Charles F. Adams (DDG-2)
+USA;46;USS John King (DDG-3)
+USA;46;USS Lawrence (DDG-4)
+USA;46;USS Claude V. Ricketts (DDG-5)
+USA;46;USS Barney (DDG-6)
+USA;46;USS Henry B. Wilson (DDG-7)
+USA;46;USS Lynde McCormick (DDG-8)
+USA;46;USS Towers (DDG-9)
+USA;46;USS Sampson (DDG-10)
+USA;46;USS Sellers (DDG-11)
+USA;46;USS Robison (DDG-12)
+USA;46;USS Hoel (DDG-13)
+USA;46;USS Buchanan (DDG-14)
+USA;46;USS Berkeley (DDG-15)
+USA;46;USS Joseph Strauss (DDG-16)
+USA;46;USS Conyngham (DDG-17)
+USA;46;USS Semmes (DDG-18)
+USA;46;USS Tattnall (DDG-19)
+USA;46;USS Goldsborough (DDG-20)
+USA;46;USS Cochrane (DDG-21)
+USA;46;USS Benjamin Stoddert (DDG-22)
+USA;46;USS Richard E. Byrd (DDG-23)
+USA;46;USS Waddell (DDG-24)
+USA;46;USS Spruance (DD-963)
+USA;46;USS Paul F. Foster (DD-964)
+USA;46;USS Kinkaid (DD-965)
+USA;46;USS Hewitt (DD-966)
+USA;46;USS Elliot (DD-967)
+USA;46;USS Arthur W. Radford (DD-968)
+USA;46;USS Peterson (DD-969)
+USA;46;USS Caron (DD-970)
+USA;46;USS David R. Ray (DD-971)
+USA;46;USS Oldendorf (DD-972)
+USA;46;USS John Young (DD-973)
+USA;46;USS Comte de Grasse (DD-974)
+USA;46;USS O'Brien (DD-975)
+USA;46;USS Merrill (DD-976)
+USA;46;USS Briscoe (DD-977)
+USA;46;USS Stump (DD-978)
+USA;46;USS Conolly (DD-979)
+USA;46;USS Moosbrugger (DD-980)
+USA;46;USS John Hancock (DD-981)
+USA;46;USS Nicholson (DD-982)
+USA;46;USS John Rodgers (DD-983)
+USA;46;USS Leftwich (DD-984)
+USA;46;USS Cushing (DD-985)
+USA;46;USS Harry W. Hill (DD-986)
+USA;46;USS O'Bannon (DD-987)
+USA;46;USS Thorn (DD-988)
+USA;46;USS Deyo (DD-989)
+USA;46;USS Ingersoll (DD-990)
+USA;46;USS Fife (DD-991)
+USA;46;USS Fletcher (DD-992)
+USA;46;USS Hayler (DD-997)
+USA;46;USS Arleigh Burke (DDG-51)
+USA;46;USS Barry (DDG-52)
+USA;46;USS John Paul Jones (DDG-53)
+USA;46;USS Curtis Wilbur (DDG-54)
+USA;46;USS Stout (DDG-55)
+USA;46;USS John S. McCain (DDG-56)
+USA;46;USS Mitscher (DDG-57)
+USA;46;USS Laboon (DDG-58)
+USA;46;USS Russell (DDG-59)
+USA;46;USS Paul Hamilton (DDG-60)
+USA;46;USS Ramage (DDG-61)
+USA;46;USS Fitzgerald (DDG-62)
+USA;46;USS Stethem (DDG-63)
+USA;46;USS Carney (DDG-64)
+USA;46;USS Benfold (DDG-65)
+USA;46;USS Gonzalez (DDG-66)
+USA;46;USS Cole (DDG-67)
+USA;46;USS The Sullivans (DDG-68)
+USA;46;USS Milius (DDG-69)
+USA;46;USS Hopper (DDG-70)
+USA;46;USS Ross (DDG-71)
+USA;46;USS Mahan (DDG-72)
+USA;46;USS Decatur (DDG-73)
+USA;46;USS McFaul (DDG-74)
+USA;46;USS Donald Cook (DDG-75)
+USA;46;USS Higgins (DDG-76)
+USA;46;USS O'Kane (DDG-77)
+USA;46;USS Porter (DDG-78)
+USA;46;USS Oscar Austin (DDG-79)
+USA;46;USS Roosevelt (DDG-80)
+USA;46;USS Winston S. Churchill (DDG-81)
+USA;46;USS Lassen (DDG-82)
+USA;46;USS Howard (DDG-83)
+USA;46;USS Bulkeley (DDG-84)
+USA;46;USS McCampbell (DDG-85)
+USA;46;USS Shoup (DDG-86)
+USA;46;USS Mason (DDG-87)
+USA;46;USS Preble (DDG-88)
+USA;46;USS Mustin (DDG-89)
+USA;46;USS Chafee (DDG-90)
+USA;46;USS Pinckney (DDG-91)
+USA;46;USS Momsen (DDG-92)
+USA;46;USS Chung-Hoon (DDG-93)
+USA;46;USS Nitze (DDG-	94)
+USA;46;USS James E. Williams (DDG-95)
+USA;46;USS Bainbridge (DDG-96)
+USA;46;USS Halsey (DDG-97)
+USA;46;USS Forrest Sherman (DDG-98)
+USA;46;USS Farragut (DDG-99)
+USA;46;USS Kidd (DDG-100)
+USA;46;USS Gridley (DDG-101)
+USA;46;USS Sampson (DDG-102)
+USA;46;USS Truxtun (DDG-103)
+USA;46;USS Sterett (DDG-104)
+USA;46;USS Dewey (DDG-105)
+USA;46;USS Stockdale (DDG-106)
+USA;46;USS Gravely (DDG-107)
+USA;46;USS Wayne E. Meyer (DDG-108)
+USA;46;USS Jason Dunham (DDG-109)
+USA;46;USS William P. Lawrence (DDG-110)
+USA;46;USS Spruance (DDG-111)
+USA;46;USS Michael Murphy (DDG-112)
+USA;46;USS John Finn (DDG-113)
+USA;46;USS Ralph Johnson (DDG-114)
+USA;46;USS Rafael Peralta (DDG-115)
+USA;46;USS Thomas Hudner (DDG-116)
+USA;46;USS Paul Ignatius (DDG-117)
+USA;46;USS Daniel Inouye (DDG-118)
+USA;46;Destroyer Division 1
+USA;46;Destroyer Division 2
+USA;46;Destroyer Division 3
+USA;46;Destroyer Division 4
+USA;46;Destroyer Division 5
+USA;46;Destroyer Division 6
+USA;46;Destroyer Division 7
+USA;46;Destroyer Division 8
+USA;46;Destroyer Division 9
+USA;46;Destroyer Division 10
+USA;46;Destroyer Division 11
+USA;46;Destroyer Division 12
+USA;46;Destroyer Division 13
+USA;46;Destroyer Division 14
+USA;46;Destroyer Division 15
+USA;46;Destroyer Division 16
+USA;46;Destroyer Division 17
+USA;46;Destroyer Division 18
+USA;46;Destroyer Division 19
+USA;46;Destroyer Division 20
+USA;46;Destroyer Division 21
+USA;46;Destroyer Division 22
+USA;46;Destroyer Division 23
+USA;46;Destroyer Division 24
+USA;46;Destroyer Division 25
+USA;46;Destroyer Division 26
+USA;46;Destroyer Division 27
+USA;46;Destroyer Division 28
+USA;46;Destroyer Division 29
+USA;46;Destroyer Division 30
+USA;46;Destroyer Division 31
+USA;46;Destroyer Division 32
+USA;46;Destroyer Division 33
+USA;46;Destroyer Division 34
+USA;46;Destroyer Division 35
+USA;46;Destroyer Division 36
+USA;46;Destroyer Division 37
+USA;46;Destroyer Division 38
+USA;46;Destroyer Division 39
+USA;46;Destroyer Division 40
+USA;46;Destroyer Division 41
+USA;46;Destroyer Division 42
+USA;46;Destroyer Division 43
+USA;46;Destroyer Division 44
+USA;46;Destroyer Division 45
+USA;46;Destroyer Division 46
+USA;46;Destroyer Division 47
+USA;46;Destroyer Division 48
+USA;46;Destroyer Division 49
+USA;46;Destroyer Division 50
+USA;46;Destroyer Division 51
+USA;46;Destroyer Division 52
+USA;46;Destroyer Division 53
+USA;46;Destroyer Division 54
+USA;46;Destroyer Division 55
+USA;46;Destroyer Division 56
+USA;46;Destroyer Division 57
+USA;46;Destroyer Division 58
+USA;46;Destroyer Division 59
+USA;46;Destroyer Division 60
+USA;46;Destroyer Division 61
+USA;46;Destroyer Division 62
+USA;46;Destroyer Division 63
+USA;46;Destroyer Division 64
+USA;46;Destroyer Division 65
+USA;46;Destroyer Division 66
+USA;46;Destroyer Division 67
+USA;46;Destroyer Division 68
+USA;46;Destroyer Division 69
+USA;46;Destroyer Division 70
+USA;46;Destroyer Division 71
+USA;46;Destroyer Division 72
+USA;46;Destroyer Division 73
+USA;46;Destroyer Division 74
+USA;46;Destroyer Division 75
+USA;46;Destroyer Division 76
+USA;46;Destroyer Division 77
+USA;46;Destroyer Division 78
+USA;46;Destroyer Division 79
+USA;46;Destroyer Division 80
+USA;46;Destroyer Division 81
+USA;46;Destroyer Division 82
+USA;46;Destroyer Division 83
+USA;46;Destroyer Division 84
+USA;46;Destroyer Division 85
+USA;46;Destroyer Division 86
+USA;46;Destroyer Division 87
+USA;46;Destroyer Division 88
+USA;46;Destroyer Division 89
+USA;46;Destroyer Division 90
+USA;46;Destroyer Division 91
+USA;46;Destroyer Division 92
+USA;46;Destroyer Division 93
+USA;46;Destroyer Division 94
+USA;46;Destroyer Division 95
+USA;46;Destroyer Division 96
+USA;46;Destroyer Division 97
+USA;46;Destroyer Division 98
+USA;46;Destroyer Division 99
+USA;46;Destroyer Division 100
+USA;45;Frigate Division 1
+USA;45;Frigate Division 2
+USA;45;Frigate Division 3
+USA;45;Frigate Division 4
+USA;45;Frigate Division 5
+USA;45;Frigate Division 6
+USA;45;Frigate Division 7
+USA;45;Frigate Division 8
+USA;45;Frigate Division 9
+USA;45;Frigate Division 10
+USA;45;Frigate Division 11
+USA;45;Frigate Division 12
+USA;45;Frigate Division 13
+USA;45;Frigate Division 14
+USA;45;Frigate Division 15
+USA;45;Frigate Division 16
+USA;45;Frigate Division 17
+USA;45;Frigate Division 18
+USA;45;Frigate Division 19
+USA;45;Frigate Division 20
+USA;45;Frigate Division 21
+USA;45;Frigate Division 22
+USA;45;Frigate Division 23
+USA;45;Frigate Division 24
+USA;45;Frigate Division 25
+USA;45;Frigate Division 26
+USA;45;Frigate Division 27
+USA;45;Frigate Division 28
+USA;45;Frigate Division 29
+USA;45;Frigate Division 30
+USA;45;Frigate Division 31
+USA;45;Frigate Division 32
+USA;45;Frigate Division 33
+USA;45;Frigate Division 34
+USA;45;Frigate Division 35
+USA;45;Frigate Division 36
+USA;45;Frigate Division 37
+USA;45;Frigate Division 38
+USA;45;Frigate Division 39
+USA;45;Frigate Division 40
+USA;45;Frigate Division 41
+USA;45;Frigate Division 42
+USA;45;Frigate Division 43
+USA;45;Frigate Division 44
+USA;45;Frigate Division 45
+USA;45;Frigate Division 46
+USA;45;Frigate Division 47
+USA;45;Frigate Division 48
+USA;45;Frigate Division 49
+USA;45;Frigate Division 50
+USA;45;Frigate Division 51
+USA;45;Frigate Division 52
+USA;45;Frigate Division 53
+USA;45;Frigate Division 54
+USA;45;Frigate Division 55
+USA;45;Frigate Division 56
+USA;45;Frigate Division 57
+USA;45;Frigate Division 58
+USA;45;Frigate Division 59
+USA;45;Frigate Division 60
+USA;45;Frigate Division 61
+USA;45;Frigate Division 62
+USA;45;Frigate Division 63
+USA;45;Frigate Division 64
+USA;45;Frigate Division 65
+USA;45;Frigate Division 66
+USA;45;Frigate Division 67
+USA;45;Frigate Division 68
+USA;45;Frigate Division 69
+USA;45;Frigate Division 70
+USA;45;Frigate Division 71
+USA;45;Frigate Division 72
+USA;45;Frigate Division 73
+USA;45;Frigate Division 74
+USA;45;Frigate Division 75
+USA;45;Frigate Division 76
+USA;45;Frigate Division 77
+USA;45;Frigate Division 78
+USA;45;Frigate Division 79
+USA;45;Frigate Division 80
+USA;45;Frigate Division 81
+USA;45;Frigate Division 82
+USA;45;Frigate Division 83
+USA;45;Frigate Division 84
+USA;45;Frigate Division 85
+USA;45;Frigate Division 86
+USA;45;Frigate Division 87
+USA;45;Frigate Division 88
+USA;45;Frigate Division 89
+USA;45;Frigate Division 90
+USA;45;Frigate Division 91
+USA;45;Frigate Division 92
+USA;45;Frigate Division 93
+USA;45;Frigate Division 94
+USA;45;Frigate Division 95
+USA;45;Frigate Division 96
+USA;45;Frigate Division 97
+USA;45;Frigate Division 98
+USA;45;Frigate Division 99
+USA;45;Frigate Division 100
+USA;48;Corvette Squadron 1
+USA;48;Corvette Squadron 2
+USA;48;Corvette Squadron 3
+USA;48;Corvette Squadron 4
+USA;48;Corvette Squadron 5
+USA;48;Corvette Squadron 6
+USA;48;Corvette Squadron 7
+USA;48;Corvette Squadron 8
+USA;48;Corvette Squadron 9
+USA;48;Corvette Squadron 10
+USA;48;Corvette Squadron 11
+USA;48;Corvette Squadron 12
+USA;48;Corvette Squadron 13
+USA;48;Corvette Squadron 14
+USA;48;Corvette Squadron 15
+USA;48;Corvette Squadron 16
+USA;48;Corvette Squadron 17
+USA;48;Corvette Squadron 18
+USA;48;Corvette Squadron 19
+USA;48;Corvette Squadron 20
+USA;48;Corvette Squadron 21
+USA;48;Corvette Squadron 22
+USA;48;Corvette Squadron 23
+USA;48;Corvette Squadron 24
+USA;48;Corvette Squadron 25
+USA;48;Corvette Squadron 26
+USA;48;Corvette Squadron 27
+USA;48;Corvette Squadron 28
+USA;48;Corvette Squadron 29
+USA;48;Corvette Squadron 30
+USA;48;Corvette Squadron 31
+USA;48;Corvette Squadron 32
+USA;48;Corvette Squadron 33
+USA;48;Corvette Squadron 34
+USA;48;Corvette Squadron 35
+USA;48;Corvette Squadron 36
+USA;48;Corvette Squadron 37
+USA;48;Corvette Squadron 38
+USA;48;Corvette Squadron 39
+USA;48;Corvette Squadron 40
+USA;48;Corvette Squadron 41
+USA;48;Corvette Squadron 42
+USA;48;Corvette Squadron 43
+USA;48;Corvette Squadron 44
+USA;48;Corvette Squadron 45
+USA;48;Corvette Squadron 46
+USA;48;Corvette Squadron 47
+USA;48;Corvette Squadron 48
+USA;48;Corvette Squadron 49
+USA;48;Corvette Squadron 50
+USA;48;Corvette Squadron 51
+USA;48;Corvette Squadron 52
+USA;48;Corvette Squadron 53
+USA;48;Corvette Squadron 54
+USA;48;Corvette Squadron 55
+USA;48;Corvette Squadron 56
+USA;48;Corvette Squadron 57
+USA;48;Corvette Squadron 58
+USA;48;Corvette Squadron 59
+USA;48;Corvette Squadron 60
+USA;48;Corvette Squadron 61
+USA;48;Corvette Squadron 62
+USA;48;Corvette Squadron 63
+USA;48;Corvette Squadron 64
+USA;48;Corvette Squadron 65
+USA;48;Corvette Squadron 66
+USA;48;Corvette Squadron 67
+USA;48;Corvette Squadron 68
+USA;48;Corvette Squadron 69
+USA;48;Corvette Squadron 70
+USA;48;Corvette Squadron 71
+USA;48;Corvette Squadron 72
+USA;48;Corvette Squadron 73
+USA;48;Corvette Squadron 74
+USA;48;Corvette Squadron 75
+USA;48;Corvette Squadron 76
+USA;48;Corvette Squadron 77
+USA;48;Corvette Squadron 78
+USA;48;Corvette Squadron 79
+USA;48;Corvette Squadron 80
+USA;48;Corvette Squadron 81
+USA;48;Corvette Squadron 82
+USA;48;Corvette Squadron 83
+USA;48;Corvette Squadron 84
+USA;48;Corvette Squadron 85
+USA;48;Corvette Squadron 86
+USA;48;Corvette Squadron 87
+USA;48;Corvette Squadron 88
+USA;48;Corvette Squadron 89
+USA;48;Corvette Squadron 90
+USA;48;Corvette Squadron 91
+USA;48;Corvette Squadron 92
+USA;48;Corvette Squadron 93
+USA;48;Corvette Squadron 94
+USA;48;Corvette Squadron 95
+USA;48;Corvette Squadron 96
+USA;48;Corvette Squadron 97
+USA;48;Corvette Squadron 98
+USA;48;Corvette Squadron 99
+USA;48;Corvette Squadron 100
+USA;49;Corvette Squadron 1
+USA;49;Corvette Squadron 2
+USA;49;Corvette Squadron 3
+USA;49;Corvette Squadron 4
+USA;49;Corvette Squadron 5
+USA;49;Corvette Squadron 6
+USA;49;Corvette Squadron 7
+USA;49;Corvette Squadron 8
+USA;49;Corvette Squadron 9
+USA;49;Corvette Squadron 10
+USA;49;Corvette Squadron 11
+USA;49;Corvette Squadron 12
+USA;49;Corvette Squadron 13
+USA;49;Corvette Squadron 14
+USA;49;Corvette Squadron 15
+USA;49;Corvette Squadron 16
+USA;49;Corvette Squadron 17
+USA;49;Corvette Squadron 18
+USA;49;Corvette Squadron 19
+USA;49;Corvette Squadron 20
+USA;49;Corvette Squadron 21
+USA;49;Corvette Squadron 22
+USA;49;Corvette Squadron 23
+USA;49;Corvette Squadron 24
+USA;49;Corvette Squadron 25
+USA;49;Corvette Squadron 26
+USA;49;Corvette Squadron 27
+USA;49;Corvette Squadron 28
+USA;49;Corvette Squadron 29
+USA;49;Corvette Squadron 30
+USA;49;Corvette Squadron 31
+USA;49;Corvette Squadron 32
+USA;49;Corvette Squadron 33
+USA;49;Corvette Squadron 34
+USA;49;Corvette Squadron 35
+USA;49;Corvette Squadron 36
+USA;49;Corvette Squadron 37
+USA;49;Corvette Squadron 38
+USA;49;Corvette Squadron 39
+USA;49;Corvette Squadron 40
+USA;49;Corvette Squadron 41
+USA;49;Corvette Squadron 42
+USA;49;Corvette Squadron 43
+USA;49;Corvette Squadron 44
+USA;49;Corvette Squadron 45
+USA;49;Corvette Squadron 46
+USA;49;Corvette Squadron 47
+USA;49;Corvette Squadron 48
+USA;49;Corvette Squadron 49
+USA;49;Corvette Squadron 50
+USA;49;Corvette Squadron 51
+USA;49;Corvette Squadron 52
+USA;49;Corvette Squadron 53
+USA;49;Corvette Squadron 54
+USA;49;Corvette Squadron 55
+USA;49;Corvette Squadron 56
+USA;49;Corvette Squadron 57
+USA;49;Corvette Squadron 58
+USA;49;Corvette Squadron 59
+USA;49;Corvette Squadron 60
+USA;49;Corvette Squadron 61
+USA;49;Corvette Squadron 62
+USA;49;Corvette Squadron 63
+USA;49;Corvette Squadron 64
+USA;49;Corvette Squadron 65
+USA;49;Corvette Squadron 66
+USA;49;Corvette Squadron 67
+USA;49;Corvette Squadron 68
+USA;49;Corvette Squadron 69
+USA;49;Corvette Squadron 70
+USA;49;Corvette Squadron 71
+USA;49;Corvette Squadron 72
+USA;49;Corvette Squadron 73
+USA;49;Corvette Squadron 74
+USA;49;Corvette Squadron 75
+USA;49;Corvette Squadron 76
+USA;49;Corvette Squadron 77
+USA;49;Corvette Squadron 78
+USA;49;Corvette Squadron 79
+USA;49;Corvette Squadron 80
+USA;49;Corvette Squadron 81
+USA;49;Corvette Squadron 82
+USA;49;Corvette Squadron 83
+USA;49;Corvette Squadron 84
+USA;49;Corvette Squadron 85
+USA;49;Corvette Squadron 86
+USA;49;Corvette Squadron 87
+USA;49;Corvette Squadron 88
+USA;49;Corvette Squadron 89
+USA;49;Corvette Squadron 90
+USA;49;Corvette Squadron 91
+USA;49;Corvette Squadron 92
+USA;49;Corvette Squadron 93
+USA;49;Corvette Squadron 94
+USA;49;Corvette Squadron 95
+USA;49;Corvette Squadron 96
+USA;49;Corvette Squadron 97
+USA;49;Corvette Squadron 98
+USA;49;Corvette Squadron 99
+USA;49;Corvette Squadron 100

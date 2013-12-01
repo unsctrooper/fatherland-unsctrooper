@@ -104,6 +104,9 @@ BRIG_MODEL_ENG_45_0;Air Assault Brig. '51 (Westland Whirlwind HAR.2);Air Assault
 BRIG_MODEL_ENG_45_1;Air Assault Brig. '60 (Westland Wessex HC.2);Air Assault Brig. '60 (Westland Wessex HC.2);Air Assault Brig. '60 (Westland Wessex HC.2);Air Assault Brig. '60 (Westland Wessex HC.2);Air Assault Brig. '60 (Westland Wessex HC.2);Air Assault Brig. '60 (Westland Wessex HC.2);;Air Assault Brig. '60 (Westland Wessex HC.2);;;X
 BRIG_MODEL_ENG_45_2;Air Assault Brig. '74 (Westland Puma HC Mk.1);Air Assault Brig. '74 (Westland Puma HC Mk.1);Air Assault Brig. '74 (Westland Puma HC Mk.1);Air Assault Brig. '74 (Westland Puma HC Mk.1);Air Assault Brig. '74 (Westland Puma HC Mk.1);Air Assault Brig. '74 (Westland Puma HC Mk.1);;Air Assault Brig. '74 (Westland Puma HC Mk.1);;;X
 BRIG_MODEL_ENG_45_3;Air Assault Brig. '89 (AgustaWestland Merlin HC.3);Air Assault Brig. '89 (AgustaWestland Merlin HC.3);Air Assault Brig. '89 (AgustaWestland Merlin HC.3);Air Assault Brig. '89 (AgustaWestland Merlin HC.3);Air Assault Brig. '89 (AgustaWestland Merlin HC.3);Air Assault Brig. '89 (AgustaWestland Merlin HC.3);;Air Assault Brig. '89 (AgustaWestland Merlin HC.3);;;X
+BRIG_MODEL_ENG_53_0;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;;Hawker Siddeley Harrier GR.1A;;;X
+BRIG_MODEL_ENG_53_1;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;;Hawker Siddeley Harrier GR.3;;;X
+BRIG_MODEL_ENG_53_2;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;;British Aerospace Harrier II GR.5;;;X
 # England air brigades;;;;;;;;;;;X
 BRIG_MODEL_ENG_15_0;Boulton Paul Defiant;Boulton Paul Defiant;Boulton Paul Defiant;Boulton Paul Defiant;Boulton Paul Defiant;Boulton Paul Defiant;;Boulton Paul Defiant;;;X
 BRIG_MODEL_ENG_15_1;Westland Whirlwind;Westland Whirlwind;Westland Whirlwind;Westland Whirlwind;Westland Whirlwind;Westland Whirlwind;;Westland Whirlwind;;;X
@@ -129,14 +132,11 @@ BRIG_MODEL_ENG_31_7;Sea Hawk/;Sea Hawk/;Sea Hawk/;Sea Hawk/;Sea Hawk/;Sea Hawk/;
 BRIG_MODEL_ENG_31_8;Sea Venom/;Sea Venom/;Sea Venom/;Sea Venom/;Sea Venom/;Sea Venom/;;Sea Venom/;;;X
 BRIG_MODEL_ENG_51_0;Avro Lancaster B.I Special;Avro Lancaster B.I Special;Avro Lancaster B.I Special;Avro Lancaster B.I Special;Avro Lancaster B.I Special;Avro Lancaster B.I Special;;Avro Lancaster B.I Special;;;X
 BRIG_MODEL_ENG_51_1;Vickers Valiant B(K).1;Vickers Valiant B(K).1;Vickers Valiant B(K).1;Vickers Valiant B(K).1;Vickers Valiant B(K).1;Vickers Valiant B(K).1;;Vickers Valiant B(K).1;;;X
-BRIG_MODEL_ENG_51_2;Avro Vulcan K.2;Avro Vulcan K.2;Avro Vulcan K.2;Avro Vulcan K.2;Avro Vulcan K.2;Avro Vulcan K.2;;Avro Vulcan K.2;;;X
+BRIG_MODEL_ENG_51_2;Vickers VC10K2;Vickers VC10K2;Vickers VC10K2;Vickers VC10K2;Vickers VC10K2;Vickers VC10K2;;Vickers VC10K2;;;X
 BRIG_MODEL_ENG_51_3;Handley Page Victor K.2;Handley Page Victor K.2;Handley Page Victor K.2;Handley Page Victor K.2;Handley Page Victor K.2;Handley Page Victor K.2;;Handley Page Victor K.2;;;X
 BRIG_MODEL_ENG_51_4;Lockheed TriStar K.1;Lockheed TriStar K.1;Lockheed TriStar K.1;Lockheed TriStar K.1;Lockheed TriStar K.1;Lockheed TriStar K.1;;Lockheed TriStar K.1;;;X
 BRIG_MODEL_ENG_52_0;Avro Shackleton AEW.2;Avro Shackleton AEW.2;Avro Shackleton AEW.2;Avro Shackleton AEW.2;Avro Shackleton AEW.2;Avro Shackleton AEW.2;;Avro Shackleton AEW.2;;;X
 BRIG_MODEL_ENG_52_1;British Aerospace Nimrod AEW3;British Aerospace Nimrod AEW3;British Aerospace Nimrod AEW3;British Aerospace Nimrod AEW3;British Aerospace Nimrod AEW3;British Aerospace Nimrod AEW3;;British Aerospace Nimrod AEW3;;;X
-BRIG_MODEL_ENG_53_0;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;Hawker Siddeley Harrier GR.1A;;Hawker Siddeley Harrier GR.1A;;;X
-BRIG_MODEL_ENG_53_1;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;Hawker Siddeley Harrier GR.3;;Hawker Siddeley Harrier GR.3;;;X
-BRIG_MODEL_ENG_53_2;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;British Aerospace Harrier II GR.5;;British Aerospace Harrier II GR.5;;;X
 # England naval brigades;;;;;;;;;;;X
 BRIG_MODEL_ENG_14_0;Fairey III;Fairey III;Fairey III;Fairey III;Fairey III;Fairey III;;Fairey III;;;X
 BRIG_MODEL_ENG_14_1;Seal/Ripon/Nimrod;Seal/Ripon/Nimrod;Seal/Ripon/Nimrod;Seal/Ripon/Nimrod;Seal/Ripon/Nimrod;Seal/Ripon/Nimrod;;Seal/Ripon/Nimrod;;;X
@@ -252,7 +252,7 @@ MODEL_ENG_15_2;Handley Page O/400;Handley Page O/400;Handley Page O/400;Handley 
 MODEL_ENG_15_3;Vickers Vimy;Vickers Vimy;Vickers Vimy;Vickers Vimy;Vickers Vimy;Vickers Vimy;;Vickers Vimy;;;X
 MODEL_ENG_15_4;Boulton Paul Sidestrand;Boulton Paul Sidestrand;Boulton Paul Sidestrand;Boulton Paul Sidestrand;Boulton Paul Sidestrand;Boulton Paul Sidestrand;;Boulton Paul Sidestrand;;;X
 MODEL_ENG_15_5;Handley Page Heyford;Handley Page Heyford;Handley Page Heyford;Handley Page Heyford;Handley Page Heyford;Handley Page Heyford;;Handley Page Heyford;;;X
-MODEL_ENG_15_6;Armstrong Whitworth Whitley;Armstrong Whitworth Whitley;Armstrong Whitworth Whitley;Armstrong Whitworth Whitley;Armstrong Whitworth Whitley;Armstrong Whitworth Whitley;;Armstrong Whitworth Whitley;;;X
+MODEL_ENG_15_6;Handley Page Hampden;Handley Page Hampden;Handley Page Hampden;Handley Page Hampden;Handley Page Hampden;Handley Page Hampden;;Handley Page Hampden;;;X
 MODEL_ENG_15_7;Vickers Wellington;Vickers Wellington;Vickers Wellington;Vickers Wellington;Vickers Wellington;Vickers Wellington;;Vickers Wellington;;;X
 MODEL_ENG_15_8;De Havilland Mosquito B.Mk.IV;De Havilland Mosquito B.Mk.IV;De Havilland Mosquito B.Mk.IV;De Havilland Mosquito B.Mk.IV;De Havilland Mosquito B.Mk.IV;De Havilland Mosquito B.Mk.IV;;De Havilland Mosquito B.Mk.IV;;;X
 MODEL_ENG_15_9;De Havilland Mosquito B.Mk.XX;De Havilland Mosquito B.Mk.XX;De Havilland Mosquito B.Mk.XX;De Havilland Mosquito B.Mk.XX;De Havilland Mosquito B.Mk.XX;De Havilland Mosquito B.Mk.XX;;De Havilland Mosquito B.Mk.XX;;;X
@@ -276,7 +276,7 @@ MODEL_ENG_17_2;Hawker Hurricane Mk IV;Hawker Hurricane Mk IV;Hawker Hurricane Mk
 MODEL_ENG_17_3;Bristol Beaufighter Mk IC;Bristol Beaufighter Mk IC;Bristol Beaufighter Mk IC;Bristol Beaufighter Mk IC;Bristol Beaufighter Mk IC;Bristol Beaufighter Mk IC;;Bristol Beaufighter Mk IC;;;X
 MODEL_ENG_17_4;Bristol Beaufighter Mk VI;Bristol Beaufighter Mk VI;Bristol Beaufighter Mk VI;Bristol Beaufighter Mk VI;Bristol Beaufighter Mk VI;Bristol Beaufighter Mk VI;;Bristol Beaufighter Mk VI;;;X
 MODEL_ENG_17_5;Gloster Reaper FGA.Mk.22;Gloster Reaper FGA.Mk.22;Gloster Reaper FGA.Mk.22;Gloster Reaper FGA.Mk.22;Gloster Reaper FGA.Mk.22;Gloster Reaper FGA.Mk.22;;Gloster Reaper FGA.Mk.22;;;X
-MODEL_ENG_17_6;Hawker Hunter FGA.Mk.9;Hawker Hunter FGA.Mk.9;Hawker Hunter FGA.Mk.9;Hawker Hunter FGA.Mk.9;Hawker Hunter FGA.Mk.9;Hawker Hunter FGA.Mk.9;;Hawker Hunter FGA.Mk.9;;;X
+MODEL_ENG_17_6;Blackburn Buccaneer S.2B;Blackburn Buccaneer S.2B;Blackburn Buccaneer S.2B;Blackburn Buccaneer S.2B;Blackburn Buccaneer S.2B;Blackburn Buccaneer S.2B;;Blackburn Buccaneer S.2B;;;X
 MODEL_ENG_17_7;SEPECAT Jaguar GR.1;SEPECAT Jaguar GR.1;SEPECAT Jaguar GR.1;SEPECAT Jaguar GR.1;SEPECAT Jaguar GR.1;SEPECAT Jaguar GR.1;;SEPECAT Jaguar GR.1;;;X
 MODEL_ENG_17_8;SEPECAT Jaguar GR.3;SEPECAT Jaguar GR.3;SEPECAT Jaguar GR.3;SEPECAT Jaguar GR.3;SEPECAT Jaguar GR.3;SEPECAT Jaguar GR.3;;SEPECAT Jaguar GR.3;;;X
 MODEL_ENG_18_0;Handley Page H.P.45;Handley Page H.P.45;Handley Page H.P.45;Handley Page H.P.45;Handley Page H.P.45;Handley Page H.P.45;;Handley Page H.P.45;;;X
@@ -317,6 +317,7 @@ MODEL_ENG_22_6;Dido-class;Classe Dido;Classe Dido;Clase Dido;Dido-Klasse;Dido-kl
 MODEL_ENG_22_7;Minotaur-class;Classe Minotaur;Classe Minotaur;Clase Minotaur;Minotaur-Klasse;Minotaur-klasa;;Minotaur-Klasse;;;X
 MODEL_ENG_22_8;Tiger-class;Classe Tiger;Classe Tiger;Clase Tiger;Tiger-Klasse;Tiger-klasa;;Tiger-Klasse;;;X
 MODEL_ENG_22_9;Bristol-class;Bristol-class;Bristol-class;Bristol-class;Bristol-class;Bristol-class;;Bristol-class;;;X
+MODEL_ENG_22_10;Bellona-class;Bellona-class;Bellona-class;Bellona-class;Bellona-class;Bellona-class;;Bellona-class;;;X
 MODEL_ENG_23_0;Shannon-class;Classe Shannon;Classe Shannon;Clase Shannon;Shannon-Klasse;Shannon-klasa;;Shannon-Klasse;;;X
 MODEL_ENG_23_1;Drake-class;Classe Drake;Classe Drake;Clase Drake;Drake-Klasse;Drake-klasa;;Drake-Klasse;;;X
 MODEL_ENG_23_2;Duke of Edinburgh-class;Classe Duke of Edinburgh;Classe Duke of Edinburgh;Clase Duke of Edinburgh;Duke of Edinburgh-Klasse;Duke of Edinburgh-klasa;;Duke of Edinburgh-Klasse;;;X
@@ -339,7 +340,7 @@ MODEL_ENG_25_4;A-class;Classe A;Classe A;Clase A;A-Klasse;A-klasa;;A-Klasse;;;X
 MODEL_ENG_25_5;F-class;Classe F;Classe F;Clase F;F-Klasse;F-klasa;;F-Klasse;;;X
 MODEL_ENG_25_6;Tribal-class;Classe Tribal;Classe Tribal;Clase Tribal;Tribal-Klasse;Tribal-klasa;;Tribal-Klasse;;;X
 MODEL_ENG_25_7;L-class;Classe L;Classe L;Clase L;L-Klasse;L-klasa;;L-Klasse;;;X
-MODEL_ENG_25_8;Battle-class;Classe Battle;Classe Battle;Clase Battle;Battle-Klasse;Battle-klasa;;Battle-Klasse;;;X
+MODEL_ENG_25_8;Weapon-class;Classe Weapon;Classe Weapon;Clase Weapon;Weapon-Klasse;Weapon-klasa;;Weapon-Klasse;;;X
 MODEL_ENG_26_0;Courageous-class;Classe Courageous;Classe Courageous;Clase Courageous;Courageous-Klasse;Courageous-klasa;;Courageous-Klasse;;;X
 MODEL_ENG_26_1;Furious-class;Furious-class;Furious-class;Furious-class;Furious-class;Furious-class;;Furious-class;;;X
 MODEL_ENG_26_2;Ark Royal-class;Classe Ark Royal;Classe Ark Royal;Clase Ark Royal;Ark Royal-Klasse;Ark Royal-klasa;;Ark Royal-Klasse;;;X
@@ -353,8 +354,9 @@ MODEL_ENG_27_0;Empress-class;Classe Empress;Classe Empress;Clase Empress;Empress
 MODEL_ENG_27_1;Argus-class;Classe Argus;Classe Argus;Clase Argus;Argus-Klasse;Argus-klasa;;Argus-Klasse;;;X
 MODEL_ENG_27_2;Hermes-class;Classe Hermes;Classe Hermes;Clase Hermes;Hermes-Klasse;Hermes-klasa;;Hermes-Klasse;;;X
 MODEL_ENG_27_3;Avenger-class;Classe Avenger;Classe Avenger;Clase Avenger;Avenger-Klasse;Avenger-klasa;;Avenger-Klasse;;;X
+MODEL_ENG_27_4;Ruler-class;Ruler-class;Ruler-class;Ruler-class;Ruler-class;Ruler-class;;Ruler-class;;;X
 MODEL_ENG_28_0;Holland-class;Classe Holland;Classe Holland;Clase Holland;Holland-Klasse;Holland-klasa;;Holland-Klasse;;;X
-MODEL_ENG_28_1;E-boat-class;Classe E-boat;Classe E-boat;Clase E-boat;E-boat-Klasse;E-boat-klasa;;E-boat-Klasse;;;X
+MODEL_ENG_28_1;C-boat-class;Classe C-boat;Classe C-boat;Clase C-boat;C-boat-Klasse;C-boat-klasa;;C-boat-Klasse;;;X
 MODEL_ENG_28_2;H-boat-class;Classe H-boat;Classe H-boat;Clase H-boat;H-boat-Klasse;H-boat-klasa;;H-boat-Klasse;;;X
 MODEL_ENG_28_3;Odin-class;Classe Odin;Classe Odin;Clase Odin;Odin-Klasse;Odin-klasa;;Odin-Klasse;;;X
 MODEL_ENG_28_4;S-boat-class;Classe S-boat;Classe S-boat;Clase S-boat;S-boat-Klasse;S-boat-klasa;;S-boat-Klasse;;;X
@@ -384,7 +386,7 @@ MODEL_ENG_44_2;Resolution-class;Resolution-class;Resolution-class;Resolution-cla
 MODEL_ENG_44_3;Vanguard-class;Vanguard-class;Vanguard-class;Vanguard-class;Vanguard-class;Vanguard-class;;Vanguard-class;;;X
 MODEL_ENG_45_0;River-class;River-class;River-class;River-class;River-class;River-class;;River-class;;;X
 MODEL_ENG_45_1;Bay-class;Bay-class;Bay-class;Bay-class;Bay-class;Bay-class;;Bay-class;;;X
-MODEL_ENG_45_2;Whitby-class;Whitby-class;Whitby-class;Whitby-class;Whitby-class;Whitby-class;;Whitby-class;;;X
+MODEL_ENG_45_2;Leopard-class;Leopard-class;Leopard-class;Leopard-class;Leopard-class;Leopard-class;;Leopard-class;;;X
 MODEL_ENG_45_3;Rothesay-class;Rothesay-class;Rothesay-class;Rothesay-class;Rothesay-class;Rothesay-class;;Rothesay-class;;;X
 MODEL_ENG_45_4;Leander-class;Leander-class;Leander-class;Leander-class;Leander-class;Leander-class;;Leander-class;;;X
 MODEL_ENG_45_5;Type 22-class;Type 22-class;Type 22-class;Type 22-class;Type 22-class;Type 22-class;;Type 22-class;;;X
@@ -666,7 +668,8 @@ MODEL_FRA_25_6;Hardi-class;Classe Hardi;Classe Hardi;Clase Hardi;Hardi-Klasse;Ha
 MODEL_FRA_25_7;Improved Hardi-class;Improved Hardi-class;Improved Hardi-class;Improved Hardi-class;Improved Hardi-class;Improved Hardi-class;;Improved Hardi-class;;;X
 MODEL_FRA_25_8;Surcouf-class;Surcouf-class;Surcouf-class;Surcouf-class;Surcouf-class;Surcouf-class;;Surcouf-class;;;X
 MODEL_FRA_26_0;Guynemer-class;Guynemer-class;Guynemer-class;Guynemer-class;Guynemer-class;Guynemer-class;;Guynemer-class;;;X
-MODEL_FRA_26_1;Joffre-class;Classe Joffre;Classe Joffre;Clase Joffre;Joffre-Klasse;Joffre-klasa;;Joffre-Klasse;;;X
+MODEL_FRA_26_1;Neptune-class;Neptune-class;Neptune-class;Neptune-class;Neptune-class;Neptune-class;;Neptune-class;;;X
+MODEL_FRA_26_2;Joffre-class;Classe Joffre;Classe Joffre;Clase Joffre;Joffre-Klasse;Joffre-klasa;;Joffre-Klasse;;;X
 MODEL_FRA_26_7;Clemenceau-class;Classe Clemenceau;Classe Clemenceau;Clase Clemenceau;Clemenceau-Klasse;Clemenceau-klasa;;Clemenceau-Klasse;;;X
 MODEL_FRA_26_9;Charles de Gaulle-class;Charles de Gaulle-class;Charles de Gaulle-class;Charles de Gaulle-class;Charles de Gaulle-class;Charles de Gaulle-class;;Charles de Gaulle-class;;;X
 MODEL_FRA_27_0;Foudre-class;Classe Foudre;Classe Foudre;Clase Foudre;Foudre-Klasse;Foudre-klasa;;Foudre-Klasse;;;X
@@ -688,8 +691,10 @@ MODEL_FRA_29_0;Surcouf class;Surcouf class;Surcouf class;Surcouf class;Surcouf c
 MODEL_FRA_30_1;SS Cap Tourane-class;SS Cap Tourane-class;SS Cap Tourane-class;SS Cap Tourane-class;SS Cap Tourane-class;SS Cap Tourane-class;;SS Cap Tourane-class;;;X
 MODEL_FRA_31_1;Arromanches-class;Arromanches-class;Arromanches-class;Arromanches-class;Arromanches-class;Arromanches-class;;Arromanches-class;;;X
 MODEL_FRA_31_3;Clemenceau (PA-28)-class;Clemenceau (PA-28)-class;Clemenceau (PA-28)-class;Clemenceau (PA-28)-class;Clemenceau (PA-28)-class;Clemenceau (PA-28)-class;;Clemenceau (PA-28)-class;;;X
+MODEL_FRA_43_2;Suffren-class;Suffren-class;Suffren-class;Suffren-class;Suffren-class;Suffren-class;;Suffren-class;;;X
 MODEL_FRA_43_3;Rubis-class;Rubis-class;Rubis-class;Rubis-class;Rubis-class;Rubis-class;;Rubis-class;;;X
 MODEL_FRA_43_4;Barracuda-class;Barracuda-class;Barracuda-class;Barracuda-class;Barracuda-class;Barracuda-class;;Barracuda-class;;;X
+MODEL_FRA_44_0;Gymmnote-class;Gymmnote-class;Gymmnote-class;Gymmnote-class;Gymmnote-class;Gymmnote-class;;Gymmnote-class;;;X
 MODEL_FRA_44_2;Redoutable-class;Redoutable-class;Redoutable-class;Redoutable-class;Redoutable-class;Redoutable-class;;Redoutable-class;;;X
 MODEL_FRA_44_3;Triomphant-class;Triomphant-class;Triomphant-class;Triomphant-class;Triomphant-class;Triomphant-class;;Triomphant-class;;;X
 MODEL_FRA_45_0;Croix de Lorraine-class;Croix de Lorraine-class;Croix de Lorraine-class;Croix de Lorraine-class;Croix de Lorraine-class;Croix de Lorraine-class;;Croix de Lorraine-class;;;X
@@ -801,10 +806,9 @@ BRIG_MODEL_GER_15_3;Messerschmitt Me 609;Messerschmitt Me 609;Messerschmitt Me 6
 BRIG_MODEL_GER_15_4;Messerschmitt Me-262;Messerschmitt Me-262;Messerschmitt Me-262;Messerschmitt Me-262;Messerschmitt Me-262;Messerschmitt Me-262;;Messerschmitt Me-262;;;X
 BRIG_MODEL_GER_15_5;Gotha Go-229;Gotha Go-229;Gotha Go-229;Gotha Go-229;Gotha Go-229;Gotha Go-229;;Gotha Go-229;;;X
 BRIG_MODEL_GER_15_6;Horton Ho.XIIIb;Horton Ho.XIIIb;Horton Ho.XIIIb;Horton Ho.XIIIb;Horton Ho.XIIIb;Horton Ho.XIIIb;;Horton Ho.XIIIb;;;X
-BRIG_MODEL_GER_26_0;Heinkel He.60;Heinkel He.60;Heinkel He.60;Heinkel He.60;Heinkel He.60;Heinkel He.60;;Heinkel He.60;;;X
-BRIG_MODEL_GER_26_5;Heinkel He 60;Heinkel He 60;Heinkel He 60;Heinkel He 60;Heinkel He 60;Heinkel He 60;;Heinkel He 60;;;X
-BRIG_MODEL_GER_26_6;Arado Ar 196;Arado Ar 196;Arado Ar 196;Arado Ar 196;Arado Ar 196;Arado Ar 196;;Arado Ar 196;;;X
-BRIG_MODEL_GER_26_7;Heinkel He 115;Heinkel He 115;Heinkel He 115;Heinkel He 115;Heinkel He 115;Heinkel He 115;;Heinkel He 115;;;X
+BRIG_MODEL_GER_30_5;Heinkel He 60;Heinkel He 60;Heinkel He 60;Heinkel He 60;Heinkel He 60;Heinkel He 60;;Heinkel He 60;;;X
+BRIG_MODEL_GER_30_6;Arado Ar 196;Arado Ar 196;Arado Ar 196;Arado Ar 196;Arado Ar 196;Arado Ar 196;;Arado Ar 196;;;X
+BRIG_MODEL_GER_30_7;Heinkel He 115;Heinkel He 115;Heinkel He 115;Heinkel He 115;Heinkel He 115;Heinkel He 115;;Heinkel He 115;;;X
 # Germany;;;;;;;;;;;X
 # Germany land units;;;;;;;;;;;X
 MODEL_GER_1_11;Cavalry '38 (Kfz.70 Krupp-Prötze);Cavalry '38 (Kfz.70 Krupp-Prötze);Cavalry '38 (Kfz.70 Krupp-Prötze);Cavalry '38 (Kfz.70 Krupp-Prötze);Cavalry '38 (Kfz.70 Krupp-Prötze);Cavalry '38 (Kfz.70 Krupp-Prötze);;Cavalry '38 (Kfz.70 Krupp-Prötze);;;X
@@ -957,10 +961,10 @@ MODEL_GER_28_4;Type II-class;Classe Type II;Classe Type II;Clase Tipo II;Type II
 MODEL_GER_28_5;Type VII-class;Classe Type VII;Classe Type VII;Clase Tipo VII;Type VII-Klasse;Type VII-klasa;;Type VII-Klasse;;;X
 MODEL_GER_28_6;Type IX-class;Classe Type IX;Classe Type IX;Clase Tipo IX;Type IX-Klasse;Type IX-klasa;;Type IX-Klasse;;;X
 MODEL_GER_28_7;Type XXI-class;Classe Type XXI;Classe Type XXI;Clase Tipo XXI;Type XXI-Klasse;Type XXI-klasa;;Type XXI-Klasse;;;X
-MODEL_GER_28_8;Type CCI-class;Type CCI-class;Type CCI-class;Type CCI-class;Type CCI-class;Type CCI-class;;Type CCI-class;;;X
-MODEL_GER_28_9;Type CCV-class;Classe Type CCV;Classe Type CCV;Clase Tipo CCV;Type CCV-Klasse;Type CCV-klasa;;Type CCV-Klasse;;;X
-MODEL_GER_28_11;Type XXXb-class;Type XXXb-class;Type XXXb-class;Type XXXb-class;Type XXXb-class;Type XXXb-class;;Type XXXb-class;;;X
-MODEL_GER_28_12;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;;Type XXXIb-class;;;X
+MODEL_GER_28_9;Type CCI-class;Type CCI-class;Type CCI-class;Type CCI-class;Type CCI-class;Type CCI-class;;Type CCI-class;;;X
+MODEL_GER_28_10;Type CCV-class;Classe Type CCV;Classe Type CCV;Clase Tipo CCV;Type CCV-Klasse;Type CCV-klasa;;Type CCV-Klasse;;;X
+MODEL_GER_28_11;Type CCVI-class;Type CCVI-class;Type CCVI-class;Type CCVI-class;Type CCVI-class;Type CCVI-class;;Type CCVI-class;;;X
+MODEL_GER_28_12;Type CCIX-class;Type CCIX-class;Type CCIX-class;Type CCIX-class;Type CCIX-class;Type CCIX-class;;Type CCIX-class;;;X
 MODEL_GER_29_0;Type XIb-class;Type XIb-class;Type XIb-class;Type XIb-class;Type XIb-class;Type XIb-class;;Type XIb-class;;;X
 MODEL_GER_30_0;Gluckauf-class;Gluckauf-class;Gluckauf-class;Gluckauf-class;Gluckauf-class;Gluckauf-class;;Gluckauf-class;;;X
 MODEL_GER_30_1;SS Neidenfels-class;SS Neidenfels-class;SS Neidenfels-class;SS Neidenfels-class;SS Neidenfels-class;SS Neidenfels-class;;SS Neidenfels-class;;;X
@@ -971,6 +975,8 @@ MODEL_GER_30_5;Keiler-class;Keiler-class;Keiler-class;Keiler-class;Keiler-class;
 MODEL_GER_31_0;Seydlitz-class;Seydlitz-class;Seydlitz-class;Seydlitz-class;Seydlitz-class;Seydlitz-class;;Seydlitz-class;;;X
 MODEL_GER_31_1;Goering-class;Goering-class;Goering-class;Goering-class;Goering-class;Goering-class;;Goering-class;;;X
 MODEL_GER_31_2;Rheinland-class;Rheinland-class;Rheinland-class;Rheinland-class;Rheinland-class;Rheinland-class;;Rheinland-class;;;X
+MODEL_GER_43_2;Type XXXb-class;Type XXXb-class;Type XXXb-class;Type XXXb-class;Type XXXb-class;Type XXXb-class;;Type XXXb-class;;;X
+MODEL_GER_44_1;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;Type XXXIb-class;;Type XXXIb-class;;;X
 #;;;;;;;;;;;X
 # Italy;;;;;;;;;;;X
 # Italy land brigades;;;;;;;;;;;X
@@ -1075,7 +1081,7 @@ MODEL_ITA_5_7;OF-40;OF-40;OF-40;OF-40;OF-40;OF-40;;OF-40;;;X
 #MODEL_ITA_5_7;Leopard 1;Leopard 1;Leopard 1;Leopard 1;Leopard 1;Leopard 1;;Leopard 1;;;X
 MODEL_ITA_10_3;HQ '39 (Fiat 508CM);HQ '39 (Fiat 508CM);HQ '39 (Fiat 508CM);HQ '39 (Fiat 508CM);HQ '39 (Fiat 508CM);HQ '39 (Fiat 508CM);;HQ '39 (Fiat 508CM);;;X
 # Italy air units;;;;;;;;;;;X
-MODEL_ITA_12_0;SPAD S.VII;SPAD S.VII;SPAD S.VII;SPAD S.VII;SPAD S.VII;SPAD S.VII;;SPAD S.VII;;;X
+MODEL_ITA_12_0;Hanriot HD.1;Hanriot HD.1;Hanriot HD.1;Hanriot HD.1;Hanriot HD.1;Hanriot HD.1;;Hanriot HD.1;;;X
 MODEL_ITA_12_1;Pomilio PE;Pomilio PE;Pomilio PE;Pomilio PE;Pomilio PE;Pomilio PE;;Pomilio PE;;;X
 MODEL_ITA_12_2;Pomilio Gamma;Pomilio Gamma;Pomilio Gamma;Pomilio Gamma;Pomilio Gamma;Pomilio Gamma;;Pomilio Gamma;;;X
 MODEL_ITA_12_3;FIAT CR.1;FIAT CR.1;FIAT CR.1;FIAT CR.1;FIAT CR.1;FIAT CR.1;;FIAT CR.1;;;X
@@ -1287,14 +1293,14 @@ BRIG_MODEL_JAP_15_3;Kawasaki Ki-96;Kawasaki Ki-96;Kawasaki Ki-96;Kawasaki Ki-96;
 BRIG_MODEL_JAP_15_4;Rikugun Ki-93;Rikugun Ki-93;Rikugun Ki-93;Rikugun Ki-93;Rikugun Ki-93;Rikugun Ki-93;;Rikugun Ki-93;;;X
 BRIG_MODEL_JAP_15_5;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;Nakajima Ki-201 Karyu;;Nakajima Ki-201 Karyu;;;X
 BRIG_MODEL_JAP_15_6;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;Mitsubishi F-1;;Mitsubishi F-1;;;X
-BRIG_MODEL_JAP_26_0;Curtiss Model E;Curtiss Model E;Curtiss Model E;Curtiss Model E;Curtiss Model E;Curtiss Model E;;Curtiss Model E;;;X
-BRIG_MODEL_JAP_26_1;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;;Hansa-Brandenburg W.33;;;X
-BRIG_MODEL_JAP_26_2;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;;Felixstowe F.5;;;X
-BRIG_MODEL_JAP_26_3;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;;Yokosuka E1Y;;;X
-BRIG_MODEL_JAP_26_4;Aichi E3A;Aichi E3A;Aichi E3A;Aichi E3A;Aichi E3A;Aichi E3A;;Aichi E3A;;;X
-BRIG_MODEL_JAP_26_5;Nakajima E4N;Nakajima E4N;Nakajima E4N;Nakajima E4N;Nakajima E4N;Nakajima E4N;;Nakajima E4N;;;X
-BRIG_MODEL_JAP_26_6;Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';;Kawanishi E7K 'Alf';;;X
-BRIG_MODEL_JAP_26_7;Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';;Kawanishi E15K 'Norm';;;X
+BRIG_MODEL_JAP_30_0;Curtiss Model E;Curtiss Model E;Curtiss Model E;Curtiss Model E;Curtiss Model E;Curtiss Model E;;Curtiss Model E;;;X
+BRIG_MODEL_JAP_30_1;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;Hansa-Brandenburg W.33;;Hansa-Brandenburg W.33;;;X
+BRIG_MODEL_JAP_30_2;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;Felixstowe F.5;;Felixstowe F.5;;;X
+BRIG_MODEL_JAP_30_3;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;Yokosuka E1Y;;Yokosuka E1Y;;;X
+BRIG_MODEL_JAP_30_4;Nakajima E2N;Nakajima E2N;Nakajima E2N;Nakajima E2N;Nakajima E2N;Nakajima E2N;;Nakajima E2N;;;X
+BRIG_MODEL_JAP_30_5;Nakajima E4N;Nakajima E4N;Nakajima E4N;Nakajima E4N;Nakajima E4N;Nakajima E4N;;Nakajima E4N;;;X
+BRIG_MODEL_JAP_30_6;Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';Kawanishi E7K 'Alf';;Kawanishi E7K 'Alf';;;X
+BRIG_MODEL_JAP_30_7;Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';Kawanishi E15K 'Norm';;Kawanishi E15K 'Norm';;;X
 BRIG_MODEL_JAP_31_0;Mitsubishi 1MF/Mitsubishi B1M;Mitsubishi 1MF/Mitsubishi B1M;Mitsubishi 1MF/Mitsubishi B1M;Mitsubishi 1MF/Mitsubishi B1M;Mitsubishi 1MF/Mitsubishi B1M;Mitsubishi 1MF/Mitsubishi B1M;;Mitsubishi 1MF/Mitsubishi B1M;;;X
 BRIG_MODEL_JAP_31_1;Nakajima A2N/Mitsubishi B2M;Nakajima A2N/Mitsubishi B2M;Nakajima A2N/Mitsubishi B2M;Nakajima A2N/Mitsubishi B2M;Nakajima A2N/Mitsubishi B2M;Nakajima A2N/Mitsubishi B2M;;Nakajima A2N/Mitsubishi B2M;;;X
 BRIG_MODEL_JAP_31_2;Nakajima A4N/Yokosuka B3Y;Nakajima A4N/Yokosuka B3Y;Nakajima A4N/Yokosuka B3Y;Nakajima A4N/Yokosuka B3Y;Nakajima A4N/Yokosuka B3Y;Nakajima A4N/Yokosuka B3Y;;Nakajima A4N/Yokosuka B3Y;;;X
@@ -1474,17 +1480,6 @@ BRIG_MODEL_SOV_2_3;ISU-152;ISU-152;ISU-152;ISU-152;ISU-152;ISU-152;;ÈÑÓ-152;;;X
 BRIG_MODEL_SOV_2_4;ISU-152 m45;ISU-152 m45;ISU-152 m45;ISU-152 m45;ISU-152 m45;ISU-152 m45;;ÈÑÓ-152 îáð. 1945ã.;;;X
 BRIG_MODEL_SOV_2_5;ISU-152K;ISU-152K;ISU-152K;ISU-152K;ISU-152K;ISU-152K;;ÈÑÓ-152K;;;X
 BRIG_MODEL_SOV_2_6;ISU-152M;ISU-152M;ISU-152M;ISU-152M;ISU-152M;ISU-152M;;ÈÑÓ-152M;;;X
-BRIG_MODEL_SOV_5_0;;;;;;;;;;;X
-BRIG_MODEL_SOV_5_2;T-24;T-24;T-24;T-24;T-24;T-24;;T-24;;;X
-BRIG_MODEL_SOV_5_3;T-28 m34;T-28 m34;T-28 m34;T-28 m34;T-28 m34;T-28 m34;;T-28 îáð. 1934 ã.;;;X
-BRIG_MODEL_SOV_5_4;T-28 m38;T-28 m38;T-28 m38;T-28 m38;T-28 m38;T-28 m38;;T-28 îáð. 1938 ã.;;;X
-BRIG_MODEL_SOV_5_5;T-34 m41;T-34 m41;T-34 m41;T-34 m41;T-34 m41;T-34 m41;;T-34 îáð. 1941 ã.;;;X
-BRIG_MODEL_SOV_5_6;T-34 m43;T-34 m43;T-34 m43;T-34 m43;T-34 m43;T-34 m43;;T-34 îáð. 1943 ã.;;;X
-BRIG_MODEL_SOV_5_7;T-34/85;T-34/85;T-34/85;T-34/85;T-34/85;T-34/85;;T-34/85;;;X
-BRIG_MODEL_SOV_5_8;T-44;T-44;T-44;T-44;T-44;T-44;;T-44;;;X
-BRIG_MODEL_SOV_5_9;T-54;T-54;T-54;T-54;T-54;T-54;;T-54;;;X
-BRIG_MODEL_SOV_5_10;T-55;T-55;T-55;T-55;T-55;T-55;;T-55;;;X
-BRIG_MODEL_SOV_5_11;T-62;T-62;T-62;T-62;T-62;T-62;;T-62;;;X
 BRIG_MODEL_SOV_6_0;ZiS-30;ZiS-30;ZiS-30;ZiS-30;ZiS-30;ZiS-30;;ÇèÑ-30;;;X
 BRIG_MODEL_SOV_6_1;SU-76;SU-76;SU-76;SU-76;SU-76;SU-76;;ÑÓ-76;;;X
 BRIG_MODEL_SOV_6_2;SU-85;SU-85;SU-85;SU-85;SU-85;SU-85;;Ñó-85;;;X
@@ -1519,17 +1514,39 @@ BRIG_MODEL_SOV_10_5;BA-64;BA-64;BA-64;BA-64;BA-64;BA-64;;ÁA-64;;;X
 BRIG_MODEL_SOV_10_6;;;;;;;;ÁÒÐ-152;;;X
 BRIG_MODEL_SOV_10_7;BTR-40;BTR-40;BTR-40;BTR-40;BTR-40;BTR-40;;ÁÒÐ-40;;;X
 BRIG_MODEL_SOV_10_8;BRDM-1;BRDM-1;BRDM-1;BRDM-1;BRDM-1;BRDM-1;;ÁÐÄÌ-1;;;X
+BRIG_MODEL_SOV_29_1;T-24;T-24;T-24;T-24;T-24;T-24;;T-24;;;X
+BRIG_MODEL_SOV_29_2;T-28 m34;T-28 m34;T-28 m34;T-28 m34;T-28 m34;T-28 m34;;T-28 îáð. 1934 ã.;;;X
+BRIG_MODEL_SOV_29_3;T-28 m38;T-28 m38;T-28 m38;T-28 m38;T-28 m38;T-28 m38;;T-28 îáð. 1938 ã.;;;X
+BRIG_MODEL_SOV_29_4;T-34/76 m41;T-34/76 m41;T-34/76 m41;T-34/76 m41;T-34/76 m41;T-34/76 m41;;T-34/76 îáð. 1941 ã.;;;X
+BRIG_MODEL_SOV_29_5;T-34/76 m43;T-34/76 m43;T-34/76 m43;T-34/76 m43;T-34/76 m43;T-34/76 m43;;T-34/76 îáð. 1943 ã.;;;X
+BRIG_MODEL_SOV_29_6;T-34/85;T-34/85;T-34/85;T-34/85;T-34/85;T-34/85;;T-34/85;;;X
+BRIG_MODEL_SOV_29_7;T-44/100;T-44/100;T-44/100;T-44/100;T-44/100;T-44/100;;T-44/100;;;X
+BRIG_MODEL_SOV_29_8;T-54;T-54;T-54;T-54;T-54;T-54;;T-54;;;X
+BRIG_MODEL_SOV_29_9;T-55;T-55;T-55;T-55;T-55;T-55;;T-55;;;X
+BRIG_MODEL_SOV_29_10;T-62;T-62;T-62;T-62;T-62;T-62;;T-62;;;X
+BRIG_MODEL_SOV_29_11;T-72;T-72;T-72;T-72;T-72;T-72;;T-72;;;X
+BRIG_MODEL_SOV_29_12;T-72A;T-72A;T-72A;T-72A;T-72A;T-72A;;T-72A;;;X
+BRIG_MODEL_SOV_29_13;T-80B;T-80B;T-80B;T-80B;T-80B;T-80B;;T-80B;;;X
+BRIG_MODEL_SOV_29_14;T-80U;T-80U;T-80U;T-80U;T-80U;T-80U;;T-80U;;;X
+BRIG_MODEL_SOV_29_15;T-90;T-90;T-90;T-90;T-90;T-90;;T-90;;;X
 BRIG_MODEL_SOV_32_0;T-38;T-38;T-38;T-38;T-38;T-38;;T-38;;;X
 BRIG_MODEL_SOV_32_1;T-40;T-40;T-40;T-40;T-40;T-40;;T-40;;;X
-#BRIG_MODEL_SOV_33_0;Light Tank Mk VII Tetrarch;Light Tank Mk VII Tetrarch;Light Tank Mk VII Tetrarch;Light Tank Mk VII Tetrarch;Light Tank Mk VII Tetrarch;Light Tank Mk VII Tetrarch;;Light Tank Mk VII Tetrarch;;;X
 BRIG_MODEL_SOV_33_0;T-60;T-60;T-60;T-60;T-60;T-60;;T-60;;;X
 BRIG_MODEL_SOV_33_1;T-70;T-70;T-70;T-70;T-70;T-70;;T-70;;;X
 BRIG_MODEL_SOV_35_0;280 mm Schneider Mortar Model 1914/15;280 mm Schneider Mortar Model 1914/15;280 mm Schneider Mortar Model 1914/15;280 mm Schneider Mortar Model 1914/15;280 mm Schneider Mortar Model 1914/15;280 mm Schneider Mortar Model 1914/15;;280 mm Schneider Mortar Model 1914/15;;;X
 BRIG_MODEL_SOV_35_1;203 mm howitzer Mk. 1916;203 mm howitzer Mk. 1916;203 mm howitzer Mk. 1916;203 mm howitzer Mk. 1916;203 mm howitzer Mk. 1916;203 mm howitzer Mk. 1916;;203 mm howitzer Mk. 1916;;;X
 BRIG_MODEL_SOV_35_3;210 mm gun M1939 (Br-17);210 mm gun M1939 (Br-17);210 mm gun M1939 (Br-17);210 mm gun M1939 (Br-17);210 mm gun M1939 (Br-17);210 mm gun M1939 (Br-17);;210 mm gun M1939 (Br-17);;;X
-#BRIG_MODEL_SOV_35_3;305 mm howitzer M1939 (Br-18);305 mm howitzer M1939 (Br-18);305 mm howitzer M1939 (Br-18);305 mm howitzer M1939 (Br-18);305 mm howitzer M1939 (Br-18);305 mm howitzer M1939 (Br-18);;305 mm howitzer M1939 (Br-18);;;X
+BRIG_MODEL_SOV_42_0;Mil Mi-2URP Salamandra;Mil Mi-2URP Salamandra;Mil Mi-2URP Salamandra;Mil Mi-2URP Salamandra;Mil Mi-2URP Salamandra;Mil Mi-2URP Salamandra;;Mil Mi-2URP Salamandra;;;X
+BRIG_MODEL_SOV_42_1;Mil Mi-24;Mil Mi-24;Mil Mi-24;Mil Mi-24;Mil Mi-24;Mil Mi-24;;Mil Mi-24;;;X
+BRIG_MODEL_SOV_42_2;Mil Mi-24D;Mil Mi-24D;Mil Mi-24D;Mil Mi-24D;Mil Mi-24D;Mil Mi-24D;;Mil Mi-24D;;;X
+BRIG_MODEL_SOV_42_3;Kamov Ka-50 Chornaya Akula;Kamov Ka-50 Chornaya Akula;Kamov Ka-50 Chornaya Akula;Kamov Ka-50 Chornaya Akula;Kamov Ka-50 Chornaya Akula;Kamov Ka-50 Chornaya Akula;;Kamov Ka-50 Chornaya Akula;;;X
 BRIG_MODEL_SOV_45_0;Air Assault Brig. '51 (Mil Mi-4);Air Assault Brig. '51 (Mil Mi-4);Air Assault Brig. '51 (Mil Mi-4);Air Assault Brig. '51 (Mil Mi-4);Air Assault Brig. '51 (Mil Mi-4);Air Assault Brig. '51 (Mil Mi-4);;Air Assault Brig. '51 (Mil Mi-4);;;X
 BRIG_MODEL_SOV_45_1;Air Assault Brig. '60 (Mil Mi-2);Air Assault Brig. '60 (Mil Mi-2);Air Assault Brig. '60 (Mil Mi-2);Air Assault Brig. '60 (Mil Mi-2);Air Assault Brig. '60 (Mil Mi-2);Air Assault Brig. '60 (Mil Mi-2);;Air Assault Brig. '60 (Mil Mi-2);;;X
+BRIG_MODEL_SOV_45_2;Air Assault Brig. '74 (Mil Mi-17);Air Assault Brig. '74 (Mil Mi-17);Air Assault Brig. '74 (Mil Mi-17);Air Assault Brig. '74 (Mil Mi-17);Air Assault Brig. '74 (Mil Mi-17);Air Assault Brig. '74 (Mil Mi-17);;Air Assault Brig. '74 (Mil Mi-17);;;X
+BRIG_MODEL_SOV_45_3;Air Assault Brig. '89 (Kamov Ka-60R);Air Assault Brig. '89 (Kamov Ka-60R);Air Assault Brig. '89 (Kamov Ka-60R);Air Assault Brig. '89 (Kamov Ka-60R);Air Assault Brig. '89 (Kamov Ka-60R);Air Assault Brig. '89 (Kamov Ka-60R);;Air Assault Brig. '89 (Kamov Ka-60R);;;X
+BRIG_MODEL_SOV_53_0;Yakovlev Yak-36;Yakovlev Yak-36;Yakovlev Yak-36;Yakovlev Yak-36;Yakovlev Yak-36;Yakovlev Yak-36;;Yakovlev Yak-36;;;X
+BRIG_MODEL_SOV_53_1;Yakovlev Yak-38;Yakovlev Yak-38;Yakovlev Yak-38;Yakovlev Yak-38;Yakovlev Yak-38;Yakovlev Yak-38;;Yakovlev Yak-38;;;X
+BRIG_MODEL_SOV_53_2;Yakovlev Yak-141;Yakovlev Yak-141;Yakovlev Yak-141;Yakovlev Yak-141;Yakovlev Yak-141;Yakovlev Yak-141;;Yakovlev Yak-141;;;X
 # USSR air brigades;;;;;;;;;;;X
 BRIG_MODEL_SOV_14_9;Yak-36;Yak-36;Yak-36;Yak-36;Yak-36;Yak-36;;ßê-36;;;X
 BRIG_MODEL_SOV_15_0;Tupolev DI-8;Tupolev DI-8;Tupolev DI-8;Tupolev DI-8;Tupolev DI-8;Tupolev DI-8;;ÄÈ-8;;;X
@@ -1539,9 +1556,26 @@ BRIG_MODEL_SOV_15_4;Mikoyan-Gurevich MiG-15bisS;Mikoyan-Gurevich MiG-15bisS;Miko
 BRIG_MODEL_SOV_15_5;Yak-25 'Flashlight';Yak-25 'Flashlight';Yak-25 'Flashlight';Yak-25 'Flashlight';Yak-25 'Flashlight';Yak-25 'Flashlight';;ßê-25;;;X
 BRIG_MODEL_SOV_15_6;Yak-28P 'Firebar';Yak-28P 'Firebar';Yak-28P 'Firebar';Yak-28P 'Firebar';Yak-28P 'Firebar';Yak-28P 'Firebar';;ßê-28Ï;;;X
 BRIG_MODEL_SOV_15_8;Tupolev Tu-128 'Fiddler';Tupolev Tu-128 'Fiddler';Tupolev Tu-128 'Fiddler';Tupolev Tu-128 'Fiddler';Tupolev Tu-128 'Fiddler';Tupolev Tu-128 'Fiddler';;Òó-128;;;X
-#BRIG_MODEL_SOV_26_1;Vought OS2U Kingfisher;Vought OS2U Kingfisher;Vought OS2U Kingfisher;Vought OS2U Kingfisher;Vought OS2U Kingfisher;Vought OS2U Kingfisher;;Vought OS2U Kingfisher;;;X
-BRIG_MODEL_SOV_26_6;Be-2 'Mote';Be-2 'Mote';Be-2 'Mote';Be-2 'Mote';Be-2 'Mote';Be-2 'Mote';;Áå-2;;;X
-BRIG_MODEL_SOV_26_7;Be-4 'Mug';Be-4 'Mug';Be-4 'Mug';Be-4 'Mug';Be-4 'Mug';Be-4 'Mug';;Áå-4;;;X
+BRIG_MODEL_SOV_51_0;Tupolev Tu-4TRZhK;Tupolev Tu-4TRZhK;Tupolev Tu-4TRZhK;Tupolev Tu-4TRZhK;Tupolev Tu-4TRZhK;Tupolev Tu-4TRZhK;;Tupolev Tu-4TRZhK;;;X
+BRIG_MODEL_SOV_51_4;Ilyushin Il-78;Ilyushin Il-78;Ilyushin Il-78;Ilyushin Il-78;Ilyushin Il-78;Ilyushin Il-78;;Ilyushin Il-78;;;X
+BRIG_MODEL_SOV_52_0;Tupolev Tu-126;Tupolev Tu-126;Tupolev Tu-126;Tupolev Tu-126;Tupolev Tu-126;Tupolev Tu-126;;Tupolev Tu-126;;;X
+BRIG_MODEL_SOV_52_1;Beriev A-50;Beriev A-50;Beriev A-50;Beriev A-50;Beriev A-50;Beriev A-50;;Beriev A-50;;;X
+#USSR Naval Brigs;;;;;;;;;;;X
+BRIG_MODEL_SOV_30_2;Polikarpov MR-1;Polikarpov MR-1;Polikarpov MR-1;Polikarpov MR-1;Polikarpov MR-1;Polikarpov MR-1;;Polikarpov MR-1;;;X
+BRIG_MODEL_SOV_30_6;Beriev Be-2;Beriev Be-2;Beriev Be-2;Beriev Be-2;Beriev Be-2;Beriev Be-2;;Beriev Be-2;;;X
+BRIG_MODEL_SOV_30_7;Beriev Be-4;Beriev Be-4;Beriev Be-4;Beriev Be-4;Beriev Be-4;Beriev Be-4;;Beriev Be-4;;;X
+BRIG_MODEL_SOV_41_0;Kamov Ka-8 Irkutyanin;Kamov Ka-8 Irkutyanin;Kamov Ka-8 Irkutyanin;Kamov Ka-8 Irkutyanin;Kamov Ka-8 Irkutyanin;Kamov Ka-8 Irkutyanin;;Kamov Ka-8 Irkutyanin;;;X
+BRIG_MODEL_SOV_41_1;Mil Mi-1;Mil Mi-1;Mil Mi-1;Mil Mi-1;Mil Mi-1;Mil Mi-1;;Mil Mi-1;;;X
+BRIG_MODEL_SOV_41_2;Mil Mi-4PL;Mil Mi-4PL;Mil Mi-4PL;Mil Mi-4PL;Mil Mi-4PL;Mil Mi-4PL;;Mil Mi-4PL;;;X
+BRIG_MODEL_SOV_41_3;Kamov Ka-25;Kamov Ka-25;Kamov Ka-25;Kamov Ka-25;Kamov Ka-25;Kamov Ka-25;;Kamov Ka-25;;;X
+BRIG_MODEL_SOV_41_4;Kamov Ka-27;Kamov Ka-27;Kamov Ka-27;Kamov Ka-27;Kamov Ka-27;Kamov Ka-27;;Kamov Ka-27;;;X
+BRIG_MODEL_SOV_41_5;Kamov Ka-40;Kamov Ka-40;Kamov Ka-40;Kamov Ka-40;Kamov Ka-40;Kamov Ka-40;;Kamov Ka-40;;;X
+BRIG_MODEL_SOV_48_0;AK-630;AK-630;AK-630;AK-630;AK-630;AK-630;;AK-630;;;X
+BRIG_MODEL_SOV_50_0;Yakovlev Yak-38/Kamov Ka-25;Yakovlev Yak-38/Kamov Ka-25;Yakovlev Yak-38/Kamov Ka-25;Yakovlev Yak-38/Kamov Ka-25;Yakovlev Yak-38/Kamov Ka-25;Yakovlev Yak-38/Kamov Ka-25;;Yakovlev Yak-38/Kamov Ka-25;;;X
+BRIG_MODEL_SOV_50_1;Su-33/Mig-29K/Ka-27;Su-33/Mig-29K/Ka-27;Su-33/Mig-29K/Ka-27;Su-33/Mig-29K/Ka-27;Su-33/Mig-29K/Ka-27;Su-33/Mig-29K/Ka-27;;Su-33/Mig-29K/Ka-27;;;X
+BRIG_MODEL_SOV_55_0;Mil Mi-4MT/Mil Mi-1T;Mil Mi-4MT/Mil Mi-1T;Mil Mi-4MT/Mil Mi-1T;Mil Mi-4MT/Mil Mi-1T;Mil Mi-4MT/Mil Mi-1T;Mil Mi-4MT/Mil Mi-1T;;Mil Mi-4MT/Mil Mi-1T;;;X
+BRIG_MODEL_SOV_55_1;Kamov Ka-25/Mil Mi-14;Kamov Ka-25/Mil Mi-14;Kamov Ka-25/Mil Mi-14;Kamov Ka-25/Mil Mi-14;Kamov Ka-25/Mil Mi-14;Kamov Ka-25/Mil Mi-14;;Kamov Ka-25/Mil Mi-14;;;X
+BRIG_MODEL_SOV_55_2;Kamov Ka-27PL/Kamov Ka-31;Kamov Ka-27PL/Kamov Ka-31;Kamov Ka-27PL/Kamov Ka-31;Kamov Ka-27PL/Kamov Ka-31;Kamov Ka-27PL/Kamov Ka-31;Kamov Ka-27PL/Kamov Ka-31;;Kamov Ka-27PL/Kamov Ka-31;;;X
 # USSR;;;;;;;;;;;X
 # land units;;;;;;;;;;;X
 MODEL_SOV_1_11;Cavalry '38 (Ba-11);Cavalry '38 (Ba-11);Cavalry '38 (Ba-11);Cavalry '38 (Ba-11);Cavalry '38 (Ba-11);Cavalry '38 (Ba-11);;Cavalry '38 (Ba-11);;;X
@@ -1572,10 +1606,18 @@ MODEL_SOV_5_4;T-44/100;T-44/100;T-44/100;T-44/100;T-44/100;T-44/100;;T-44/100;;;
 MODEL_SOV_5_5;T-54;T-54;T-54;T-54;T-54;T-54;;T-54;;;X
 MODEL_SOV_5_6;T-55;T-55;T-55;T-55;T-55;T-55;;T-55;;;X
 MODEL_SOV_5_7;T-64A;T-64A;T-64A;T-64A;T-64A;T-64A;;T-64A;;;X
+MODEL_SOV_5_8;T-72;T-72;T-72;T-72;T-72;T-72;;T-72;;;X
+MODEL_SOV_5_9;T-72A;T-72A;T-72A;T-72A;T-72A;T-72A;;T-72A;;;X
+MODEL_SOV_5_10;T-80B;T-80B;T-80B;T-80B;T-80B;T-80B;;T-80B;;;X
+MODEL_SOV_5_11;T-80U;T-80U;T-80U;T-80U;T-80U;T-80U;;T-80U;;;X
+MODEL_SOV_5_12;T-90;T-90;T-90;T-90;T-90;T-90;;T-90;;;X
 MODEL_SOV_7_10;Marines '61 (BTR-50);Marines '61 (BTR-50);Marines '61 (BTR-50);Marines '61 (BTR-50);Marines '61 (BTR-50);Marines '61 (BTR-50);;Marines '61 (BTR-50);;;X
 MODEL_SOV_10_3;Hq '39 (GAZ 61-73);Hq '39 (GAZ 61-73);Hq '39 (GAZ 61-73);Hq '39 (GAZ 61-73);Hq '39 (GAZ 61-73);Hq '39 (GAZ 61-73);;Hq '39 (GAZ 61-73);;;X
 MODEL_SOV_10_4;Hq '44 (GAZ 67);Hq '44 (GAZ 67);Hq '44 (GAZ 67);Hq '44 (GAZ 67);Hq '44 (GAZ 67);Hq '44 (GAZ 67);;Hq '44 (GAZ 67);;;X
 MODEL_SOV_41_0;Air Assault Division '56 (Yakovlev Yak-24);Air Assault Division '56 (Yakovlev Yak-24);Air Assault Division '56 (Yakovlev Yak-24);Air Assault Division '56 (Yakovlev Yak-24);Air Assault Division '56 (Yakovlev Yak-24);Air Assault Division '56 (Yakovlev Yak-24);;Air Assault Division '56 (Yakovlev Yak-24);;;X
+MODEL_SOV_41_1;Air Assault Division '61 (Mil Mi-8);Air Assault Division '61 (Mil Mi-8);Air Assault Division '61 (Mil Mi-8);Air Assault Division '61 (Mil Mi-8);Air Assault Division '61 (Mil Mi-8);Air Assault Division '61 (Mil Mi-8);;Air Assault Division '61 (Mil Mi-8);;;X
+MODEL_SOV_41_2;Air Assault Division '74 (Mil Mi-26);Air Assault Division '74 (Mil Mi-26);Air Assault Division '74 (Mil Mi-26);Air Assault Division '74 (Mil Mi-26);Air Assault Division '74 (Mil Mi-26);Air Assault Division '74 (Mil Mi-26);;Air Assault Division '74 (Mil Mi-26);;;X
+MODEL_SOV_41_3;Air Assault Division '89 (Kamov Ka-60 Kasatka);Air Assault Division '89 (Kamov Ka-60 Kasatka);Air Assault Division '89 (Kamov Ka-60 Kasatka);Air Assault Division '89 (Kamov Ka-60 Kasatka);Air Assault Division '89 (Kamov Ka-60 Kasatka);Air Assault Division '89 (Kamov Ka-60 Kasatka);;Air Assault Division '89 (Kamov Ka-60 Kasatka);;;X
 # air units;;;;;;;;;;;X
 MODEL_SOV_12_0;SPAD S.VII;SPAD S.VII;SPAD S.VII;SPAD S.VII;SPAD S.VII;SPAD S.VII;; 'Íüþïîð-10';;;X
 MODEL_SOV_12_1;Sikorsky S-XVI;Sikorsky S-XVI;Sikorsky S-XVI;Sikorsky S-XVI;Sikorsky S-XVI;Sikorsky S-XVI;;Ñèêîðñêèé Ñ-XVI;;;X
@@ -1584,74 +1626,89 @@ MODEL_SOV_12_3;Polikarpov I-5;Polikarpov I-5;Polikarpov I-5;Polikarpov I-5;Polik
 MODEL_SOV_12_4;Polikarpov I-16 Ishak;Polikarpov I-16 Ishak;Polikarpov I-16 Ishak;Polikarpov I-16 Ishak;Polikarpov I-16 Ishak;Polikarpov I-16 Ishak;;Polikarpov I-16 Ishak;;;X
 MODEL_SOV_12_5;Mikoyan-Gurevich MiG-3;Mikoyan-Gurevich MiG-3;Mikoyan-Gurevich MiG-3;Mikoyan-Gurevich MiG-3;Mikoyan-Gurevich MiG-3;Mikoyan-Gurevich MiG-3;;ÌèÃ-3;;;X
 MODEL_SOV_12_6;Lavochkin La-5;Lavochkin La-5;Lavochkin La-5;Lavochkin La-5;Lavochkin La-5;Lavochkin La-5;;Ëà-5 ÔÍ;;;X
-MODEL_SOV_12_7;Lavochkin La-7 'Fin';Lavochkin La-7 'Fin';Lavochkin La-7 'Fin';Lavochkin La-7 'Fin';Lavochkin La-7 'Fin';Lavochkin La-7 'Fin';;Ëà-7;;;X
-MODEL_SOV_12_8;Mikoyan-Gurevich MiG-9 'Fargo';Mikoyan-Gurevich MiG-9 'Fargo';Mikoyan-Gurevich MiG-9 'Fargo';Mikoyan-Gurevich MiG-9 'Fargo';Mikoyan-Gurevich MiG-9 'Fargo';Mikoyan-Gurevich MiG-9 'Fargo';;ÌèÃ-9;;;X
+MODEL_SOV_12_7;Lavochkin La-7;Lavochkin La-7;Lavochkin La-7;Lavochkin La-7;Lavochkin La-7;Lavochkin La-7;;Ëà-7;;;X
+MODEL_SOV_12_8;Lavochkin La-9;Lavochkin La-9;Lavochkin La-9;Lavochkin La-9;Lavochkin La-9;Lavochkin La-9;;Ëà-9;;;X
 MODEL_SOV_12_9;Mikoyan-Gurevich MiG-15;Mikoyan-Gurevich MiG-15;Mikoyan-Gurevich MiG-15;Mikoyan-Gurevich MiG-15;Mikoyan-Gurevich MiG-15;Mikoyan-Gurevich MiG-15;;ÌèÃ-15;;;X
 MODEL_SOV_12_10;Mikoyan-Gurevich MiG-17;Mikoyan-Gurevich MiG-17;Mikoyan-Gurevich MiG-17;Mikoyan-Gurevich MiG-17;Mikoyan-Gurevich MiG-17;Mikoyan-Gurevich MiG-17;;ÌèÃ-17;;;X
 MODEL_SOV_12_11;Mikoyan-Gurevich MiG-19;Mikoyan-Gurevich MiG-19;Mikoyan-Gurevich MiG-19;Mikoyan-Gurevich MiG-19;Mikoyan-Gurevich MiG-19;Mikoyan-Gurevich MiG-19;;ÌèÃ-19;;;X
 MODEL_SOV_12_12;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;;ÌèÃ-21;;;X
-MODEL_SOV_12_13;Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';;ÌèÃ-21 áèñ;;;X
+MODEL_SOV_12_13;Mikoyan-Gurevich MiG-21bis;Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';;ÌèÃ-21 áèñ;;;X
+MODEL_SOV_12_14;Mikoyan Gurevich MiG-23B;Mikoyan Gurevich MiG-23B;Mikoyan Gurevich MiG-23B;Mikoyan Gurevich MiG-23B;Mikoyan Gurevich MiG-23B;Mikoyan Gurevich MiG-23B;;Mikoyan Gurevich MiG-23B;;;X
+MODEL_SOV_12_15;Mikoyan Gurevich MiG-29;Mikoyan Gurevich MiG-29;Mikoyan Gurevich MiG-29;Mikoyan Gurevich MiG-29;Mikoyan Gurevich MiG-29;Mikoyan Gurevich MiG-29;;Mikoyan Gurevich MiG-29;;;X
+MODEL_SOV_12_16;Mikoyan Gurevich MiG-35;Mikoyan Gurevich MiG-35;Mikoyan Gurevich MiG-35;Mikoyan Gurevich MiG-35;Mikoyan Gurevich MiG-35;Mikoyan Gurevich MiG-35;;Mikoyan Gurevich MiG-35;;;X
+MODEL_SOV_12_17;Sukhoi T-50;Sukhoi T-50;Sukhoi T-50;Sukhoi T-50;Sukhoi T-50;Sukhoi T-50;;Sukhoi T-50;;;X
+MODEL_SOV_12_18;Sukhoi PAK FA;Sukhoi PAK FA;Sukhoi PAK FA;Sukhoi PAK FA;Sukhoi PAK FA;Sukhoi PAK FA;;Sukhoi PAK FA;;;X
 MODEL_SOV_13_0;Morane-Saulnier G;Morane-Saulnier G;Morane-Saulnier G;Morane-Saulnier G;Morane-Saulnier G;Morane-Saulnier G;;Ìîðàí-Ñîëíüå òèï G;;;X
 MODEL_SOV_13_1;Morane-Saulnier L;Morane-Saulnier L;Morane-Saulnier L;Morane-Saulnier L;Morane-Saulnier L;Morane-Saulnier L;;Ìîðàí-Ñîëíüå òèï L;;;X
 MODEL_SOV_13_2;Mosca-Bistritsky MB-bis;Mosca-Bistritsky MB-bis;Mosca-Bistritsky MB-bis;Mosca-Bistritsky MB-bis;Mosca-Bistritsky MB-bis;Mosca-Bistritsky MB-bis;;Ìîñêà-Áûñòðèöêèé ÌÁ áèñ;;;X
 MODEL_SOV_13_3;Nieuport 17;Nieuport 17;Nieuport 17;Nieuport 17;Nieuport 17;Nieuport 17;;Nieuport 17;;;X
-#MODEL_SOV_13_4;Anatra Anadis;Anatra Anadis;Anatra Anadis;Anatra Anadis;Anatra Anadis;Anatra Anadis;;Àíàòðà-Àíàäèñ;;;X
 MODEL_SOV_13_4;Nieuport 25;Nieuport 25;Nieuport 25;Nieuport 25;Nieuport 25;Nieuport 25;;Nieuport 25;;;X
 MODEL_SOV_13_5;Polikarpov I-1;Polikarpov I-1;Polikarpov I-1;Polikarpov I-1;Polikarpov I-1;Polikarpov I-1;;Polikarpov I-1;;;X
 MODEL_SOV_13_6;Polikarpov I-3;Polikarpov I-3;Polikarpov I-3;Polikarpov I-3;Polikarpov I-3;Polikarpov I-3;;È-16;;;X
-#MODEL_SOV_13_6;Fokker D.XI;Fokker D.XI;Fokker D.XI;Fokker D.XI;Fokker D.XI;Fokker D.XI;;Fokker D.XI;;;X
 MODEL_SOV_13_7;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;;È-15;;;X
 MODEL_SOV_13_8;Yakovlev Yak-1;Yakovlev Yak-1;Yakovlev Yak-1;Yakovlev Yak-1;Yakovlev Yak-1;Yakovlev Yak-1;;ßê-1;;;X
 MODEL_SOV_13_9;Yakovlev Yak-3;Yakovlev Yak-3;Yakovlev Yak-3;Yakovlev Yak-3;Yakovlev Yak-3;Yakovlev Yak-3;;ßê-3;;;X
 MODEL_SOV_13_10;Yakovlev Yak-9 'Frank';Yakovlev Yak-9 'Frank';Yakovlev Yak-9 'Frank';Yakovlev Yak-9 'Frank';Yakovlev Yak-9 'Frank';Yakovlev Yak-9 'Frank';;ßê-9;;;X
-MODEL_SOV_13_11;Yakovlev Yak-15 'Feather';Yakovlev Yak-15 'Feather';Yakovlev Yak-15 'Feather';Yakovlev Yak-15 'Feather';Yakovlev Yak-15 'Feather';Yakovlev Yak-15 'Feather';;ßê-15;;;X
-MODEL_SOV_13_12;Yakovlev Yak-17 'Feather';Yakovlev Yak-17 'Feather';Yakovlev Yak-17 'Feather';Yakovlev Yak-17 'Feather';Yakovlev Yak-17 'Feather';Yakovlev Yak-17 'Feather';;ßê-17;;;X
-MODEL_SOV_13_13;Lavochkin La-15 'Fantail';Lavochkin La-15 'Fantail';Lavochkin La-15 'Fantail';Lavochkin La-15 'Fantail';Lavochkin La-15 'Fantail';Lavochkin La-15 'Fantail';;Ëà-15;;;X
-MODEL_SOV_13_14;Mikoyan-Gurevich MiG-19PF;Mikoyan-Gurevich MiG-19PF;Mikoyan-Gurevich MiG-19PF;Mikoyan-Gurevich MiG-19PF;Mikoyan-Gurevich MiG-19PF;Mikoyan-Gurevich MiG-19PF;;Mikoyan-Gurevich MiG-19PF;;;X
-MODEL_SOV_13_15;Sukhoi Su-9 'Fishpot';Sukhoi Su-9 'Fishpot';Sukhoi Su-9 'Fishpot';Sukhoi Su-9 'Fishpot';Sukhoi Su-9 'Fishpot';Sukhoi Su-9 'Fishpot';;Ñó-9;;;X
-MODEL_SOV_13_16;Mikoyan-Gurevich MiG-21PFM;Mikoyan-Gurevich MiG-21PFM;Mikoyan-Gurevich MiG-21PFM;Mikoyan-Gurevich MiG-21PFM;Mikoyan-Gurevich MiG-21PFM;Mikoyan-Gurevich MiG-21PFM;;Ñó-11;;;X
+MODEL_SOV_13_11;Mikoyan-Gurevich MiG-9;Mikoyan-Gurevich MiG-9;Mikoyan-Gurevich MiG-9;Mikoyan-Gurevich MiG-9;Mikoyan-Gurevich MiG-9;Mikoyan-Gurevich MiG-9;;ßê-15;;;X
+MODEL_SOV_13_12;Yakovlev Yak-23;Yakovlev Yak-23;Yakovlev Yak-23;Yakovlev Yak-23;Yakovlev Yak-23;Yakovlev Yak-23;;ßê-17;;;X
+MODEL_SOV_13_13;Yakovlev Yak-25;Yakovlev Yak-25;Yakovlev Yak-25;Yakovlev Yak-25;Yakovlev Yak-25;Yakovlev Yak-25;;Ëà-15;;;X
+MODEL_SOV_13_14;Sukhoi Su-9;Sukhoi Su-9;Sukhoi Su-9;Sukhoi Su-9;Sukhoi Su-9;Sukhoi Su-9;;Sukhoi Su-9;;;X
+MODEL_SOV_13_15;Mikoyan-Gurevich MiG-21PF;Mikoyan-Gurevich MiG-21PF;Mikoyan-Gurevich MiG-21PF;Mikoyan-Gurevich MiG-21PF;Mikoyan-Gurevich MiG-21PF;Mikoyan-Gurevich MiG-21PF;;Ñó-9;;;X
+MODEL_SOV_13_16;Mikoyan-Gurevich MiG-25;Mikoyan-Gurevich MiG-25;Mikoyan-Gurevich MiG-25;Mikoyan-Gurevich MiG-25;Mikoyan-Gurevich MiG-25;Mikoyan-Gurevich MiG-25;;Ñó-11;;;X
+MODEL_SOV_13_17;Mikoyan-Gurevich MiG-31;Mikoyan-Gurevich MiG-31;Mikoyan-Gurevich MiG-31;Mikoyan-Gurevich MiG-31;Mikoyan-Gurevich MiG-31;Mikoyan-Gurevich MiG-31;;Mikoyan-Gurevich MiG-31;;;X
 MODEL_SOV_14_0;Sikorsky Ilya Muromets;Sikorsky Ilya Muromets;Sikorsky Ilya Muromets;Sikorsky Ilya Muromets;Sikorsky Ilya Muromets;Sikorsky Ilya Muromets;;Ñ-22 'Èëüÿ Ìóðîìåö';;;X
 MODEL_SOV_14_2;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;;ÒÁ-3;;;X
 MODEL_SOV_14_3;Tupolev TB-6;Tupolev TB-6;Tupolev TB-6;Tupolev TB-6;Tupolev TB-6;Tupolev TB-6;;ÒÁ-6;;;X
 MODEL_SOV_14_4;Petlyakov Pe-8;Petlyakov Pe-8;Petlyakov Pe-8;Petlyakov Pe-8;Petlyakov Pe-8;Petlyakov Pe-8;;Ïe-8;;;X
-MODEL_SOV_14_5;Tupolev Tu-4 'Bull';Tupolev Tu-4 'Bull';Tupolev Tu-4 'Bull';Tupolev Tu-4 'Bull';Tupolev Tu-4 'Bull';Tupolev Tu-4 'Bull';;Òó-4;;;X
-MODEL_SOV_14_6;Myasishchev M-4 'Bison';Myasishchev M-4 'Bison';Myasishchev M-4 'Bison';Myasishchev M-4 'Bison';Myasishchev M-4 'Bison';Myasishchev M-4 'Bison';;M-4;;;X
-MODEL_SOV_14_7;Tupolev Tu-16 'Badger';Tupolev Tu-16 'Badger';Tupolev Tu-16 'Badger';Tupolev Tu-16 'Badger';Tupolev Tu-16 'Badger';Tupolev Tu-16 'Badger';;Òó-16;;;X
-MODEL_SOV_14_8;Tupolev Tu-95 'Bear';Tupolev Tu-95 'Bear';Tupolev Tu-95 'Bear';Tupolev Tu-95 'Bear';Tupolev Tu-95 'Bear';Tupolev Tu-95 'Bear';;Òó-95;;;X
-MODEL_SOV_14_9;Myasishchev M-50 'Bounder';Myasishchev M-50 'Bounder';Myasishchev M-50 'Bounder';Myasishchev M-50 'Bounder';Myasishchev M-50 'Bounder';Myasishchev M-50 'Bounder';;Ì-50;;;X
+MODEL_SOV_14_5;Tupolev Tu-4;Tupolev Tu-4;Tupolev Tu-4;Tupolev Tu-4;Tupolev Tu-4;Tupolev Tu-4;;Òó-4;;;X
+MODEL_SOV_14_6;Myasishchev M-4;Myasishchev M-4;Myasishchev M-4;Myasishchev M-4;Myasishchev M-4;Myasishchev M-4;;M-4;;;X
+MODEL_SOV_14_7;Tupolev Tu-16;Tupolev Tu-16;Tupolev Tu-16;Tupolev Tu-16;Tupolev Tu-16;Tupolev Tu-16;;Òó-16;;;X
+MODEL_SOV_14_8;Tupolev Tu-95;Tupolev Tu-95;Tupolev Tu-95;Tupolev Tu-95;Tupolev Tu-95;Tupolev Tu-95;;Òó-95;;;X
+MODEL_SOV_14_9;Tupolev Tu-95KM;Tupolev Tu-95KM;Tupolev Tu-95KM;Tupolev Tu-95KM;Tupolev Tu-95KM;Tupolev Tu-95KM;;Ì-50;;;X
+MODEL_SOV_14_10;Tupolev Tu-96;Tupolev Tu-96;Tupolev Tu-96;Tupolev Tu-96;Tupolev Tu-96;Tupolev Tu-96;;Tupolev Tu-96;;;X
+MODEL_SOV_14_11;Tupolev Tu-160;Tupolev Tu-160;Tupolev Tu-160;Tupolev Tu-160;Tupolev Tu-160;Tupolev Tu-160;;Tupolev Tu-160;;;X
+MODEL_SOV_14_12;Sukhoi PAK-DA;Sukhoi PAK-DA;Sukhoi PAK-DA;Sukhoi PAK-DA;Sukhoi PAK-DA;Sukhoi PAK-DA;;Sukhoi PAK-DA;;;X
 MODEL_SOV_15_3;Kolpakov-Moroshnichenko 2B-L1;Kolpakov-Moroshnichenko 2B-L1;Kolpakov-Moroshnichenko 2B-L1;Kolpakov-Moroshnichenko 2B-L1;Kolpakov-Moroshnichenko 2B-L1;Kolpakov-Moroshnichenko 2B-L1;;Kolpakov-Moroshnichenko 2B-L1;;;X
 MODEL_SOV_15_4;Tupolev TB-1;Tupolev TB-1;Tupolev TB-1;Tupolev TB-1;Tupolev TB-1;Tupolev TB-1;;ÒÁ-1;;;X
 MODEL_SOV_15_5;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;;ÑÁ-2;;;X
 MODEL_SOV_15_6;Petlyakov Pe-2 Peshka;Petlyakov Pe-2 Peshka;Petlyakov Pe-2 Peshka;Petlyakov Pe-2 Peshka;Petlyakov Pe-2 Peshka;Petlyakov Pe-2 Peshka;;Ïå-2;;;X
-MODEL_SOV_15_7;Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';;Èë-4;;;X
-MODEL_SOV_15_8;Tupolev Tu-2 'Bat';Tupolev Tu-2 'Bat';Tupolev Tu-2 'Bat';Tupolev Tu-2 'Bat';Tupolev Tu-2 'Bat';Tupolev Tu-2 'Bat';;Òó-2;;;X
+MODEL_SOV_15_7;Ilyushin Il-4;Ilyushin Il-4;Ilyushin Il-4;Ilyushin Il-4;Ilyushin Il-4;Ilyushin Il-4;;Èë-4;;;X
+MODEL_SOV_15_8;Tupolev Tu-2;Tupolev Tu-2;Tupolev Tu-2;Tupolev Tu-2;Tupolev Tu-2;Tupolev Tu-2;;Òó-2;;;X
 MODEL_SOV_15_9;Tupolev Tu-12;Tupolev Tu-12;Tupolev Tu-12;Tupolev Tu-12;Tupolev Tu-12;Tupolev Tu-12;;Òó-12;;;X
-MODEL_SOV_15_10;Tupolev Tu-82 'Butcher';Tupolev Tu-82 'Butcher';Tupolev Tu-82 'Butcher';Tupolev Tu-82 'Butcher';Tupolev Tu-82 'Butcher';Tupolev Tu-82 'Butcher';;Òó-82;;;X
-MODEL_SOV_15_11;Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';;Èë-28;;;X
-MODEL_SOV_15_12;Ilyushin Il-54 'Blowlamp';Ilyushin Il-54 'Blowlamp';Ilyushin Il-54 'Blowlamp';Ilyushin Il-54 'Blowlamp';Ilyushin Il-54 'Blowlamp';Ilyushin Il-54 'Blowlamp';;Èë-54;;;X
+MODEL_SOV_15_10;Tupolev Tu-82;Tupolev Tu-82;Tupolev Tu-82;Tupolev Tu-82;Tupolev Tu-82;Tupolev Tu-82;;Òó-82;;;X
+MODEL_SOV_15_11;Ilyushin Il-28;Ilyushin Il-28;Ilyushin Il-28;Ilyushin Il-28;Ilyushin Il-28;Ilyushin Il-28;;Èë-28;;;X
+MODEL_SOV_15_12;Yakovlev Yak-28I;Yakovlev Yak-28I;Yakovlev Yak-28I;Yakovlev Yak-28I;Yakovlev Yak-28I;Yakovlev Yak-28I;;Èë-54;;;X
+MODEL_SOV_15_13;Sukhoi Su-34;Sukhoi Su-34;Sukhoi Su-34;Sukhoi Su-34;Sukhoi Su-34;Sukhoi Su-34;;Sukhoi Su-34;;;X
 MODEL_SOV_16_0;Grigorovich M-15;Grigorovich M-15;Grigorovich M-15;Grigorovich M-15;Grigorovich M-15;Grigorovich M-15;;Grigorovich M-15;;;X
 MODEL_SOV_16_1;Grigorovich M-24;Grigorovich M-24;Grigorovich M-24;Grigorovich M-24;Grigorovich M-24;Grigorovich M-24;;Grigorovich M-24;;;X
-MODEL_SOV_16_2;Arkhangelsky Ar-2;Arkhangelsky Ar-2;Arkhangelsky Ar-2;Arkhangelsky Ar-2;Arkhangelsky Ar-2;Arkhangelsky Ar-2;;Àð-2;;;X
-MODEL_SOV_16_3;Ilyushin Il-4T 'Bob';Ilyushin Il-4T 'Bob';Ilyushin Il-4T 'Bob';Ilyushin Il-4T 'Bob';Ilyushin Il-4T 'Bob';Ilyushin Il-4T 'Bob';;Èë-4Ò;;;X
-MODEL_SOV_16_4;Tupolev Tu-2T 'Bat';Tupolev Tu-2T 'Bat';Tupolev Tu-2T 'Bat';Tupolev Tu-2T 'Bat';Tupolev Tu-2T 'Bat';Tupolev Tu-2T 'Bat';;Òó-2Ò;;;X
+MODEL_SOV_16_2;Beriev MDR-5;Beriev MDR-5;Beriev MDR-5;Beriev MDR-5;Beriev MDR-5;Beriev MDR-5;;Àð-2;;;X
+MODEL_SOV_16_3;Ilyushin Il-4T;Ilyushin Il-4T;Ilyushin Il-4T;Ilyushin Il-4T;Ilyushin Il-4T;Ilyushin Il-4T;;Èë-4Ò;;;X
+MODEL_SOV_16_4;Tupolev Tu-2T;Tupolev Tu-2T;Tupolev Tu-2T;Tupolev Tu-2T;Tupolev Tu-2T;Tupolev Tu-2T;;Òó-2Ò;;;X
 MODEL_SOV_16_5;Tupolev Tu-12T;Tupolev Tu-12T;Tupolev Tu-12T;Tupolev Tu-12T;Tupolev Tu-12T;Tupolev Tu-12T;;Tupolev Tu-12T;;;X
-MODEL_SOV_16_6;Beriev Be-6 'Madge';Beriev Be-6 'Madge';Beriev Be-6 'Madge';Beriev Be-6 'Madge';Beriev Be-6 'Madge';Beriev Be-6 'Madge';;Áå-6;;;X
-MODEL_SOV_16_7;Ilyushin Il-28T 'Beagle';Ilyushin Il-28T 'Beagle';Ilyushin Il-28T 'Beagle';Ilyushin Il-28T 'Beagle';Ilyushin Il-28T 'Beagle';Ilyushin Il-28T 'Beagle';;Èë-28T;;;X
-MODEL_SOV_16_8;Beriev Be-12 'Mail';Beriev Be-12 'Mail';Beriev Be-12 'Mail';Beriev Be-12 'Mail';Beriev Be-12 'Mail';Beriev Be-12 'Mail';;Áå-12;;;X
+MODEL_SOV_16_6;Beriev Be-6;Beriev Be-6;Beriev Be-6;Beriev Be-6;Beriev Be-6;Beriev Be-6;;Áå-6;;;X
+MODEL_SOV_16_7;Ilyushin Il-28T;Ilyushin Il-28T;Ilyushin Il-28T;Ilyushin Il-28T;Ilyushin Il-28T;Ilyushin Il-28T;;Èë-28T;;;X
+MODEL_SOV_16_8;Beriev Be-12;Beriev Be-12;Beriev Be-12;Beriev Be-12;Beriev Be-12;Beriev Be-12;;Áå-12;;;X
+MODEL_SOV_16_9;Ilyushin Il-38;Ilyushin Il-38;Ilyushin Il-38;Ilyushin Il-38;Ilyushin Il-38;Ilyushin Il-38;;Ilyushin Il-38;;;X
+MODEL_SOV_16_10;Beriev A-40 Albatros;Beriev A-40 Albatros;Beriev A-40 Albatros;Beriev A-40 Albatros;Beriev A-40 Albatros;Beriev A-40 Albatros;;Beriev A-40 Albatros;;;X
 MODEL_SOV_17_0;TsKB TSh-1;TsKB TSh-1;TsKB TSh-1;TsKB TSh-1;TsKB TSh-1;TsKB TSh-1;;TsKB TSh-1;;;X
 MODEL_SOV_17_1;Sukhoi Su-2;Sukhoi Su-2;Sukhoi Su-2;Sukhoi Su-2;Sukhoi Su-2;Sukhoi Su-2;;Ñó-2;;;X
-#MODEL_SOV_17_1;Sukhoi Su-4;Sukhoi Su-4;Sukhoi Su-4;Sukhoi Su-4;Sukhoi Su-4;Sukhoi Su-4;;Ñó-4;;;X
 MODEL_SOV_17_2;Ilyushin Il-2 Shturmovik;Ilyushin Il-2 Shturmovik;Ilyushin Il-2 Shturmovik;Ilyushin Il-2 Shturmovik;Ilyushin Il-2 Shturmovik;Ilyushin Il-2 Shturmovik;;Èë-2;;;X
 MODEL_SOV_17_3;Ilyushin Il-2M Shturmovik;Ilyushin Il-2M Shturmovik;Ilyushin Il-2M Shturmovik;Ilyushin Il-2M Shturmovik;Ilyushin Il-2M Shturmovik;Ilyushin Il-2M Shturmovik;;ÈË-2Ì;;;X
-MODEL_SOV_17_4;Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';;Èë-10;;;X
+MODEL_SOV_17_4;Ilyushin Il-10;Ilyushin Il-10;Ilyushin Il-10;Ilyushin Il-10;Ilyushin Il-10;Ilyushin Il-10;;Èë-10;;;X
 MODEL_SOV_17_5;Ilyushin Il-40;Ilyushin Il-40;Ilyushin Il-40;Ilyushin Il-40;Ilyushin Il-40;Ilyushin Il-40;;Èë-40;;;X
 MODEL_SOV_17_6;Sukhoi Su-7B 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';;Ñó-7;;;X
+MODEL_SOV_17_7;Mikoyan-Gurevich MiG-27K;Mikoyan-Gurevich MiG-27K;Mikoyan-Gurevich MiG-27K;Mikoyan-Gurevich MiG-27K;Mikoyan-Gurevich MiG-27K;Mikoyan-Gurevich MiG-27K;;Mikoyan-Gurevich MiG-27K;;;X
+MODEL_SOV_17_8;Sukhoi Su-25;Sukhoi Su-25;Sukhoi Su-25;Sukhoi Su-25;Sukhoi Su-25;Sukhoi Su-25;;Sukhoi Su-25;;;X
 MODEL_SOV_18_0;Tupolev ANT-9;Tupolev ANT-9;Tupolev ANT-9;Tupolev ANT-9;Tupolev ANT-9;Tupolev ANT-9;;Tupolev ANT-9;;;X
 MODEL_SOV_18_1;Tupolev ANT-14;Tupolev ANT-14;Tupolev ANT-14;Tupolev ANT-14;Tupolev ANT-14;Tupolev ANT-14;;Tupolev ANT-14;;;X
-MODEL_SOV_18_2;Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';;Ëè-2;;;X
-MODEL_SOV_18_3;Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';;Èë-12;;;X
-MODEL_SOV_18_4;Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';;Àí-2;;;X
-MODEL_SOV_18_5;Antonov An-8 'Camp';Antonov An-8 'Camp';Antonov An-8 'Camp';Antonov An-8 'Camp';Antonov An-8 'Camp';Antonov An-8 'Camp';;Àí-8;;;X
+MODEL_SOV_18_2;Lisunov Li-2;Lisunov Li-2;Lisunov Li-2;Lisunov Li-2;Lisunov Li-2;Lisunov Li-2;;Ëè-2;;;X
+MODEL_SOV_18_3;Ilyushin Il-12;Ilyushin Il-12;Ilyushin Il-12;Ilyushin Il-12;Ilyushin Il-12;Ilyushin Il-12;;Èë-12;;;X
+MODEL_SOV_18_4;Antonov An-2;Antonov An-2;Antonov An-2;Antonov An-2;Antonov An-2;Antonov An-2;;Àí-2;;;X
+MODEL_SOV_18_5;Antonov An-8;Antonov An-8;Antonov An-8;Antonov An-8;Antonov An-8;Antonov An-8;;Àí-8;;;X
+MODEL_SOV_18_6;Antonov An-12;Antonov An-12;Antonov An-12;Antonov An-12;Antonov An-12;Antonov An-12;;Antonov An-12;;;X
+MODEL_SOV_18_7;Antonov An-26;Antonov An-26;Antonov An-26;Antonov An-26;Antonov An-26;Antonov An-26;;Antonov An-26;;;X
+MODEL_SOV_18_8;Antonov An-124;Antonov An-124;Antonov An-124;Antonov An-124;Antonov An-124;Antonov An-124;;Antonov An-124;;;X
+MODEL_SOV_18_9;Antonov An-70;Antonov An-70;Antonov An-70;Antonov An-70;Antonov An-70;Antonov An-70;;Antonov An-70;;;X
 MODEL_SOV_19_0;10Kh;10Kh;10Kh;10Kh;10Kh;10Kh;;10Kh;;;X
 MODEL_SOV_20_0;R-1;R-1;R-1;R-1;R-1;SS-1 Scunner;;Ð-1 (SS-1 Scunner);;;X
 MODEL_SOV_20_1;R-5 Pobeda;R-5 Pobeda;R-5 Pobeda;R-5 Pobeda;R-5 Pobeda;SS-3 Shyster;;Ð-5Ì (SS-3 Shyster);;;X
@@ -1687,7 +1744,6 @@ MODEL_SOV_23_5;Kirov-class;Classe Kirov;Classe Kirov;Clase Kirov;Kirov-Klasse;Ki
 MODEL_SOV_23_6;Chapayev-class;Classe Chapayev;Classe Chapayev;Clase Chapayev;Chapayev-Klasse;Chapayev-Klasse;;êëàññà '×àïàåâ';;;X
 MODEL_SOV_23_7;Sverdlov-class;Classe Sverdlov;Classe Sverdlov;Clase Sverdlov;Sverdlov-Klasse;Sverdlov-Klasse;;êëàññà 'Ñâåðäëîâ';;;X
 MODEL_SOV_23_8;Slava-class;Classe Slava;Classe Slava;Clase Slava;Slava-Klasse;Slava-Klasse;;êëàññà 'Ñëàâà';;;X
-MODEL_SOV_23_9;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;;Oktyabrskaya Revolutsiya-class;;;X
 MODEL_SOV_24_1;Borodino-class;Classe Borodino;Classe Borodino;Clase Borodino;Borodino-Klasse;Borodino-klasa;;êëàññà 'Áîðîäèíî';;;X
 MODEL_SOV_24_3;Kronshtadt-class;Classe Kronshtadt;Classe Kronshtadt;Clase Kronshtadt;Kronshtadt-Klasse;Kronshtadt-klasa;;êëàññà 'Êðîíøòàäò';;;X
 MODEL_SOV_24_4;Soviet-class;Soviet-class;Soviet-class;Soviet-class;Soviet-class;Soviet-class;;Soviet-class;;;X
@@ -1702,14 +1758,16 @@ MODEL_SOV_25_5;P-class;P-class;P-class;P-class;P-class;P-class;;P-class;;;X
 MODEL_SOV_25_6;Ognevoy-class;Classe Ognevoy;Classe Ognevoy;Clase Ognevoy;Ognevoy-Klasse;Ognevoy-klasa;;êëàññà 'Îãíåâîé';;;X
 MODEL_SOV_25_7;Opytny-class;Classe Opytny;Classe Opytny;Clase Opytny;Opytny-Klasse;Opytny-klasa;;êëàññà 'Îïûòíûé';;;X
 MODEL_SOV_25_8;Skoriy-class;Classe Skoriy;Classe Skoriy;Clase Skoriy;Skoriy-Klasse;Skoriy-klasa;;êëàññà 'Ñêîðûé';;;X
-MODEL_SOV_25_9;Kotlin-class;Classe Kotlin;Classe Kotlin;Clase Kotlin;Kotlin-Klasse;Kotlin-klasa;;êëàññà 'Êîòëèí';;;X
 MODEL_SOV_26_3;Filip Oktyabrsky-class;Filip Oktyabrsky-class;Filip Oktyabrsky-class;Filip Oktyabrsky-class;Filip Oktyabrsky-class;Filip Oktyabrsky-class;;Filip Oktyabrsky-class;;;X
 MODEL_SOV_26_4;Baku-class;Classe Baku;Classe Baku;Clase Baku;Baku-Klasse;Baku-klasa;;Ïðîåêò 72;;;X
 MODEL_SOV_26_5;Kostromitinov-class;Classe Kostromitinov;Classe Kostromitinov;Clase Kostromitinov;Kostromitinov-Klasse;Kostromitinov-klasa;;Ïðîåêò Êîñòðîìèòèíîâà;;;X
 MODEL_SOV_26_6;Vladivostock-class;Vladivostock-class;Vladivostock-class;Vladivostock-class;Vladivostock-class;Vladivostock-class;;Vladivostock-class;;;X
 MODEL_SOV_26_7;Gorky-class;Classe Gorky;Classe Gorky;Clase Gorky;Gorky-Klasse;Gorky-klasa;;Ïðîåêò 85;;;X
 MODEL_SOV_26_8;OREL-class;OREL-class;OREL-class;OREL-class;OREL-class;OREL-class;;OREL-class;;;X
+MODEL_SOV_26_9;Ulyanovsk-class;Ulyanovsk-class;Ulyanovsk-class;Ulyanovsk-class;Ulyanovsk-class;Ulyanovsk-class;;Ulyanovsk-class;;;X
 MODEL_SOV_27_0;Almaz-class;Almaz-class;Almaz-class;Almaz-class;Almaz-class;Almaz-class;;Almaz-class;;;X
+MODEL_SOV_27_5;Kiev-class;Kiev-class;Kiev-class;Kiev-class;Kiev-class;Kiev-class;;Kiev-class;;;X
+MODEL_SOV_27_6;Kuznetsov-class;Kuznetsov-class;Kuznetsov-class;Kuznetsov-class;Kuznetsov-class;Kuznetsov-class;;Kuznetsov-class;;;X
 MODEL_SOV_28_0;Kasatka-class;Kasatka-class;Kasatka-class;Kasatka-class;Kasatka-class;Kasatka-class;;Kasatka-class;;;X
 MODEL_SOV_28_1;Narval-class;Classe Narval;Classe Narval;Clase Narval;Narval-Klasse;Narval-klasa;;êëàññà  'Íàðâàë';;;X
 MODEL_SOV_28_2;AG-boat-class;Classe AG-boat;Classe AG-boat;Clase AG-boat;AG-boat-Klasse;AG-boat-klasa;;êëàññà 'ÀÃ';;;X
@@ -1720,9 +1778,9 @@ MODEL_SOV_28_6;Series XV;Classe Series XV;Classe Series XV;Clase Series XV;Serie
 MODEL_SOV_28_7;Series XVI;Classe Series XVI;Classe Series XVI;Clase Series XVI;Series XVI;Series XVI;;Ñåðèÿ XVI;;;X
 MODEL_SOV_28_8;Project 613;Classe Project 613;Classe Project 613;Clase Project 613;Project 613-Klasse;Project 613-klasa;;Ïðîåêò 613;;;X
 MODEL_SOV_28_9;Project 633;Classe Project 633;Classe Project 633;Clase Project 633;Project 633-Klasse;Project 633-klasa;;Ïðîåêò 633;;;X
-MODEL_SOV_28_10;Project 627;Classe Project 627;Classe Project 627;Clase Project 627;Project 627-Klasse;Project 627-klasa;;Ïðîåêò 627(À) 'Êèò';;;X
-MODEL_SOV_28_11;Project 671 Yorsh;Project 671 Yorsh;Project 671 Yorsh;Project 671 Yorsh;Project 671 Yorsh;Project 671 Yorsh;;Project 671 Yorsh;;;X
-MODEL_SOV_28_12;Project 658;Project 658;Project 658;Project 658;Project 658;Project 658;;Project 658;;;X
+MODEL_SOV_28_10;Project 641;Project 641;Project 641;Project 641;Project 641;Project 641;;Project 641;;;X
+MODEL_SOV_28_11;Project 641B Som;Project 641B Som;Project 641B Som;Project 641B Som;Project 641B Som;Project 641B Som;;Project 641B Som;;;X
+MODEL_SOV_28_12;Project 877 Paltus;Project 877 Paltus;Project 877 Paltus;Project 877 Paltus;Project 877 Paltus;Project 877 Paltus;;Project 877 Paltus;;;X
 MODEL_SOV_29_0;Series XIV;Series XIV-class;Series XIV-class;Series XIV-class;Series XIV-class;Series XIV-class;;Series XIV-class;;;X
 MODEL_SOV_29_1;Series IV;Series IV-class;Series IV-class;Series IV-class;Series IV-class;Series IV-class;;Series IV-class;;;X
 MODEL_SOV_30_1;SS Admiral Ushakov-class;SS Admiral Ushakov-class;SS Admiral Ushakov-class;SS Admiral Ushakov-class;SS Admiral Ushakov-class;SS Admiral Ushakov-class;;SS Admiral Ushakov-class;;;X
@@ -1732,6 +1790,39 @@ MODEL_SOV_30_4;Kaiman II-class;Kaiman II-class;Kaiman II-class;Kaiman II-class;K
 MODEL_SOV_30_5;Krokodil-class;Krokodil-class;Krokodil-class;Krokodil-class;Krokodil-class;Krokodil-class;;Krokodil-class;;;X
 MODEL_SOV_31_0;Kraznyy Baykal-class;Kraznyy Baykal-class;Kraznyy Baykal-class;Kraznyy Baykal-class;Kraznyy Baykal-class;Kraznyy Baykal-class;;Kraznyy Baykal-class;;;X
 MODEL_SOV_31_1;Krasnoye Vympel-class;Krasnoye Vympel-class;Krasnoye Vympel-class;Krasnoye Vympel-class;Krasnoye Vympel-class;Krasnoye Vympel-class;;Krasnoye Vympel-class;;;X
+MODEL_SOV_42_0;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;Oktyabrskaya Revolutsiya-class;;Oktyabrskaya Revolutsiya-class;;;X
+MODEL_SOV_42_1;Krasnaia Zvezda-class;Krasnaia Zvezda-class;Krasnaia Zvezda-class;Krasnaia Zvezda-class;Krasnaia Zvezda-class;Krasnaia Zvezda-class;;Krasnaia Zvezda-class;;;X
+MODEL_SOV_43_0;Project 627A;Project 627A;Project 627A;Project 627A;Project 627A;Project 627A;;Project 627A;;;X
+MODEL_SOV_43_1;Project 645;Project 645;Project 645;Project 645;Project 645;Project 645;;Project 645;;;X
+MODEL_SOV_43_2;Project 671;Project 671;Project 671;Project 671;Project 671;Project 671;;Project 671;;;X
+MODEL_SOV_43_3;Project 705 Lira;Project 705 Lira;Project 705 Lira;Project 705 Lira;Project 705 Lira;Project 705 Lira;;Project 705 Lira;;;X
+MODEL_SOV_43_4;Project 945 Barrakuda;Project 945 Barrakuda;Project 945 Barrakuda;Project 945 Barrakuda;Project 945 Barrakuda;Project 945 Barrakuda;;Project 945 Barrakuda;;;X
+MODEL_SOV_44_0;Project 629;Project 629;Project 629;Project 629;Project 629;Project 629;;Project 629;;;X
+MODEL_SOV_44_1;Project 658;Project 658;Project 658;Project 658;Project 658;Project 658;;Project 658;;;X
+MODEL_SOV_44_2;Project 667A Navaga;Project 667A Navaga;Project 667A Navaga;Project 667A Navaga;Project 667A Navaga;Project 667A Navaga;;Project 667A Navaga;;;X
+MODEL_SOV_44_3;Project 941 Akula;Project 941 Akula;Project 941 Akula;Project 941 Akula;Project 941 Akula;Project 941 Akula;;Project 941 Akula;;;X
+MODEL_SOV_45_0;Project 29k-class;Project 29k-class;Project 29k-class;Project 29k-class;Project 29k-class;Project 29k-class;;Project 29k-class;;;X
+MODEL_SOV_45_1;Project 42;Project 42;Project 42;Project 42;Project 42;Project 42;;Project 42;;;X
+MODEL_SOV_45_2;Project 50 Gornostay;Project 50 Gornostay;Project 50 Gornostay;Project 50 Gornostay;Project 50 Gornostay;Project 50 Gornostay;;Project 50 Gornostay;;;X
+MODEL_SOV_45_3;Project 159;Project 159;Project 159;Project 159;Project 159;Project 159;;Project 159;;;X
+MODEL_SOV_45_4;Project 1135 Burevestnik;Project 1135 Burevestnik;Project 1135 Burevestnik;Project 1135 Burevestnik;Project 1135 Burevestnik;Project 1135 Burevestnik;;Project 1135 Burevestnik;;;X
+MODEL_SOV_45_5;Project 1159;Project 1159;Project 1159;Project 1159;Project 1159;Project 1159;;Project 1159;;;X
+MODEL_SOV_46_0;Project 56M;Project 56M;Project 56M;Project 56M;Project 56M;Project 56M;;Project 56M;;;X
+MODEL_SOV_46_1;Project 56U;Project 56U;Project 56U;Project 56U;Project 56U;Project 56U;;Project 56U;;;X
+MODEL_SOV_46_2;Project 57A Gnevny;Project 57A Gnevny;Project 57A Gnevny;Project 57A Gnevny;Project 57A Gnevny;Project 57A Gnevny;;Project 57A Gnevny;;;X
+MODEL_SOV_46_3;Project 956 Sarych;Project 956 Sarych;Project 956 Sarych;Project 956 Sarych;Project 956 Sarych;Project 956 Sarych;;Project 956 Sarych;;;X
+MODEL_SOV_47_0;Project 61;Project 61;Project 61;Project 61;Project 61;Project 61;;Project 61;;;X
+MODEL_SOV_47_1;Project 1134A Berkut-A;Project 1134A Berkut-A;Project 1134A Berkut-A;Project 1134A Berkut-A;Project 1134A Berkut-A;Project 1134A Berkut-A;;Project 1134A Berkut-A;;;X
+MODEL_SOV_47_2;Project 1155 Fregat;Project 1155 Fregat;Project 1155 Fregat;Project 1155 Fregat;Project 1155 Fregat;Project 1155 Fregat;;Project 1155 Fregat;;;X
+MODEL_SOV_48_0;PA-class;PA-class;PA-class;PA-class;PA-class;PA-class;;PA-class;;;X
+MODEL_SOV_48_1;Project 122A;Project 122A;Project 122A;Project 122A;Project 122A;Project 122A;;Project 122A;;;X
+MODEL_SOV_48_2;Project 204;Project 204;Project 204;Project 204;Project 204;Project 204;;Project 204;;;X
+MODEL_SOV_48_3;Project 1124 Albatros;Project 1124 Albatros;Project 1124 Albatros;Project 1124 Albatros;Project 1124 Albatros;Project 1124 Albatros;;Project 1124 Albatros;;;X
+MODEL_SOV_48_4;Project 12412 Molniya-2;Project 12412 Molniya-2;Project 12412 Molniya-2;Project 12412 Molniya-2;Project 12412 Molniya-2;Project 12412 Molniya-2;;Project 12412 Molniya-2;;;X
+MODEL_SOV_48_5;Project 133;Project 133;Project 133;Project 133;Project 133;Project 133;;Project 133;;;X
+MODEL_SOV_49_0;Project 205 Moskit;Project 205 Moskit;Project 205 Moskit;Project 205 Moskit;Project 205 Moskit;Project 205 Moskit;;Project 205 Moskit;;;X
+MODEL_SOV_49_1;Project 1234 Ovod;Project 1234 Ovod;Project 1234 Ovod;Project 1234 Ovod;Project 1234 Ovod;Project 1234 Ovod;;Project 1234 Ovod;;;X
+MODEL_SOV_49_2;Project 1241;Project 1241;Project 1241;Project 1241;Project 1241;Project 1241;;Project 1241;;;X
 # USA;;;;;;;;;;;X
 # land brigades;;;;;;;;;;;X
 BRIG_MODEL_USA_1_0;3inch M1902;3inch M1902;3inch M1902;3inch M1902;3inch M1902;3inch M1902;;3inch M1902;;;X
@@ -1875,7 +1966,12 @@ MODEL_USA_5_3;M4A3E8(76)W Sherman;M4A3E8(76)W Sherman;M4A3E8(76)W Sherman;M4A3E8
 MODEL_USA_5_4;M26 Pershing;M26 Pershing;M26 Pershing;M26 Pershing;M26 Pershing;M26 Pershing;;M26 Pershing;;;X
 MODEL_USA_5_5;M47 Patton I;M47 Patton I;M47 Patton I;M47 Patton I;M47 Patton I;M47 Patton I;;M47 Patton I;;;X
 MODEL_USA_5_6;M48 Patton II;M48 Patton II;M48 Patton II;M48 Patton II;M48 Patton II;M48 Patton II;;M48 Patton II;;;X
-MODEL_USA_5_7;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;;M60A1 Main battle tank;;;X
+MODEL_USA_5_7;M60A1;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;M60A1 Main battle tank;;M60A1 Main battle tank;;;X
+MODEL_USA_5_8;M60A2 'Starship';M60A2 'Starship';M60A2 'Starship';M60A2 'Starship';M60A2 'Starship';M60A2 'Starship';;M60A2 'Starship';;;X
+MODEL_USA_5_9;M60A3;M60A3;M60A3;M60A3;M60A3;M60A3;;M60A3;;;X
+MODEL_USA_5_10;M1 Abrams;M1 Abrams;M1 Abrams;M1 Abrams;M1 Abrams;M1 Abrams;;M1 Abrams;;;X
+MODEL_USA_5_11;M1A1 Abrams;M1A1 Abrams;M1A1 Abrams;M1A1 Abrams;M1A1 Abrams;M1A1 Abrams;;M1A1 Abrams;;;X
+MODEL_USA_5_12;M1A2 Abrams;M1A2 Abrams;M1A2 Abrams;M1A2 Abrams;M1A2 Abrams;M1A2 Abrams;;M1A2 Abrams;;;X
 MODEL_USA_7_10;Marines '61 (LVTP-5);Marines '61 (LVTP-5);Marines '61 (LVTP-5);Marines '61 (LVTP-5);Marines '61 (LVTP-5);Marines '61 (LVTP-5);;Marines '61 (LVTP-5);;;X
 MODEL_USA_10_3;Hq '39 (Dodge WC-56);Hq '39 (Dodge WC-56);Hq '39 (Dodge WC-56);Hq '39 (Dodge WC-56);Hq '39 (Dodge WC-56);Hq '39 (Dodge WC-56);;Hq '39 (Dodge WC-56);;;X
 MODEL_USA_10_4;Hq '44 (M3 Command Halftrack);Hq '44 (M3 Command Halftrack);Hq '44 (M3 Command Halftrack);Hq '44 (M3 Command Halftrack);Hq '44 (M3 Command Halftrack);Hq '44 (M3 Command Halftrack);;Hq '44 (M3 Command Halftrack);;;X
@@ -1895,6 +1991,7 @@ MODEL_USA_12_10;Republic F-84F Thunderstreak;Republic F-84F Thunderstreak;Republ
 MODEL_USA_12_11;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;;McDonnell F-101 Voodoo;;;X
 MODEL_USA_12_12;Republic F-105 Thunderchief;Republic F-105 Thunderchief;Republic F-105 Thunderchief;Republic F-105 Thunderchief;Republic F-105 Thunderchief;Republic F-105 Thunderchief;;Republic F-105 Thunderchief;;;X
 MODEL_USA_12_13;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;;McDonnell-Douglas F-4 Phantom II;;;X
+MODEL_USA_12_16;F-18 Hornet;F-18 Hornet;F-18 Hornet;F-18 Hornet;F-18 Hornet;F-18 Hornet;;F-18 Hornet;;;X
 MODEL_USA_13_0;Wright Model B;Wright Model B;Wright Model B;Wright Model B;Wright Model B;Wright Model B;;Wright Model B;;;X
 MODEL_USA_13_1;Curtiss Model R;Curtiss Model R;Curtiss Model R;Curtiss Model R;Curtiss Model R;Curtiss Model R;;Curtiss Model R;;;X
 MODEL_USA_13_2;Curtiss JN-4 "Jenny";Curtiss JN-4 "Jenny";Curtiss JN-4 "Jenny";Curtiss JN-4 "Jenny";Curtiss JN-4 "Jenny";Curtiss JN-4 "Jenny";;Curtiss JN-4 "Jenny";;;X
@@ -2623,6 +2720,7 @@ MODEL_AST_18_0;Junkers W 34;Junkers W 34;Junkers W 34;Junkers W 34;Junkers W 34;
 MODEL_AST_18_1;Bristol Bombay;Bristol Bombay;Bristol Bombay;Bristol Bombay;Bristol Bombay;Bristol Bombay;;Bristol Bombay;;;X
 MODEL_AST_18_3;Douglas DC-2;Douglas DC-2;Douglas DC-2;Douglas DC-2;Douglas DC-2;Douglas DC-2;;Douglas DC-2;;;X
 MODEL_AST_18_4;Douglas C-54 Skymaster;Douglas C-54 Skymaster;Douglas C-54 Skymaster;Douglas C-54 Skymaster;Douglas C-54 Skymaster;Douglas C-54 Skymaster;;Douglas C-54 Skymaster;;;X
+MODEL_AST_18_6;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;;Hawker Siddeley HS 748;;;X
 # Australia naval units -mixed with inventions-;;;;;;;;;;;X
 MODEL_AST_21_0;Cerberus-class;Cerberus-class;Cerberus-class;Cerberus-class;Cerberus-class;Cerberus-class;;Cerberus-class;;;X
 MODEL_AST_21_1;Cape Leeuwin-class;Cape Leeuwin-class;Cape Leeuwin-class;Cape Leeuwin-class;Cape Leeuwin-class;Cape Leeuwin-class;;Cape Leeuwin-class;;;X
@@ -2836,6 +2934,7 @@ MODEL_BEL_18_0;Farman F.63 Goliath;Farman F.63 Goliath;Farman F.63 Goliath;Farma
 MODEL_BEL_18_3;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;;Douglas C-47 Skytrain;;;X
 MODEL_BEL_18_4;Douglas DC-4;Douglas DC-4;Douglas DC-4;Douglas DC-4;Douglas DC-4;Douglas DC-4;;Douglas DC-4;;;X
 MODEL_BEL_18_5;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;;Fairchild C-119 Flying Boxcar;;;X
+MODEL_BEL_18_6;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;Hawker Siddeley HS 748;;Hawker Siddeley HS 748;;;X
 #Naval Units (invented);;;;;;;;;;;X
 MODEL_BEL_22_5;Wandelaar class;Wandelaar class;Wandelaar class;Wandelaar class;Wandelaar class;Wandelaar class;;Wandelaar class;;;X
 MODEL_BEL_22_6;Wielingen class;Wielingen class;Wielingen class;Wielingen class;Wielingen class;Wielingen class;;Wielingen class;;;X
@@ -3269,7 +3368,8 @@ MODEL_CAN_12_3;Armstrong Whitworth Sisskin Mk.IIIA;Armstrong Whitworth Sisskin M
 #MODEL_CAN_12_4;Gloster Gladiator;Gloster Gladiator;Gloster Gladiator;Gloster Gladiator;Gloster Gladiator;Gloster Gladiator;;Gloster Gladiator;;;X
 MODEL_CAN_12_4;Canadian Car & Foundry G-23;Canadian Car & Foundry G-23;Canadian Car & Foundry G-23;Canadian Car & Foundry G-23;Canadian Car & Foundry G-23;Canadian Car & Foundry G-23;;Canadian Car & Foundry G-23;;;X
 MODEL_CAN_12_5;Supermarine Spitfire Mk.IIa;Supermarine Spitfire Mk.IIa;Supermarine Spitfire Mk.IIa;Supermarine Spitfire Mk.IIa;Supermarine Spitfire Mk.IIa;Supermarine Spitfire Mk.IIa;;Supermarine Spitfire Mk.IIa;;;X
-MODEL_CAN_12_6;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
+#MODEL_CAN_12_6;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;Hawker Typhoon;;Hawker Typhoon;;;X
+MODEL_CAN_12_6;Supermarine Spitfire Mk.Vc;Supermarine Spitfire Mk.Vc;Supermarine Spitfire Mk.Vc;Supermarine Spitfire Mk.Vc;Supermarine Spitfire Mk.Vc;Supermarine Spitfire Mk.Vc;;Supermarine Spitfire Mk.Vc;;;X
 #MODEL_CAN_12_7;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;;Republic P-47 Thunderbolt;;;X
 #MODEL_CAN_12_7;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;;Hawker Tempest;;;X
 #MODEL_CAN_12_8;Gloster Meteor F 4;Gloster Meteor F 4;Gloster Meteor F 4;Gloster Meteor F 4;Gloster Meteor F 4;Gloster Meteor F 4;;Gloster Meteor F 4;;;X
@@ -3486,9 +3586,11 @@ MODEL_CHC_16_6;Beriev Be-6 'Madge';Beriev Be-6 'Madge';Beriev Be-6 'Madge';Berie
 MODEL_CHC_17_0;Mitsubishi Ki-30 'Ann';Mitsubishi Ki-30 'Ann';Mitsubishi Ki-30 'Ann';Mitsubishi Ki-30 'Ann';Mitsubishi Ki-30 'Ann';Mitsubishi Ki-30 'Ann';;Mitsubishi Ki-30 'Ann';;;X
 MODEL_CHC_17_1;Tachikawa Ki-36;Tachikawa Ki-36;Tachikawa Ki-36;Tachikawa Ki-36;Tachikawa Ki-36;Tachikawa Ki-36;;Tachikawa Ki-36;;;X
 MODEL_CHC_17_4;Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';Ilyushin Il-10 'Beast';;Èë-10;;;X
+MODEL_CHC_17_7;Nanchang Q-5;Nanchang Q-5;Nanchang Q-5;Nanchang Q-5;Nanchang Q-5;Nanchang Q-5;;Nanchang Q-5;;;X
 MODEL_CHC_18_2;Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';;Ëè-2;;;X
 MODEL_CHC_18_3;Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';;Èë-12;;;X
 MODEL_CHC_18_4;Nanchang/Shijiazhuang Y-5;Nanchang/Shijiazhuang Y-5;Nanchang/Shijiazhuang Y-5;Nanchang/Shijiazhuang Y-5;Nanchang/Shijiazhuang Y-5;Nanchang/Shijiazhuang Y-5;;Àí-2;;;X
+MODEL_CHC_18_5;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;;Ilyushin Il-14;;;X
 #MODEL_CHC_13_10;Nakajima Ki-61 'Tony';Nakajima Ki-61 'Tony';Nakajima Ki-61 'Tony';Nakajima Ki-61 'Tony';Nakajima Ki-61 'Tony';Nakajima Ki-61 'Tony';;Nakajima Ki-61 'Tony';;;X
 #MODEL_CHC_15_6;Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';;Kawasaki Ki-48 'Lily';;;X
 #MODEL_CHC_18_2;Tachikawa Ki-54 'Hickory';Tachikawa Ki-54 'Hickory';Tachikawa Ki-54 'Hickory';Tachikawa Ki-54 'Hickory';Tachikawa Ki-54 'Hickory';Tachikawa Ki-54 'Hickory';;Tachikawa Ki-54 'Hickory';;;X
@@ -3571,6 +3673,7 @@ MODEL_CHI_12_10;Republic F-84F Thunderstreak;Republic F-84F Thunderstreak;Republ
 MODEL_CHI_12_11;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;McDonnell F-101 Voodoo;;McDonnell F-101 Voodoo;;;X
 MODEL_CHI_12_12;Northrop F-5A Freedom Fighter;Northrop F-5A Freedom Fighter;Northrop F-5A Freedom Fighter;Northrop F-5A Freedom Fighter;Northrop F-5A Freedom Fighter;Northrop F-5A Freedom Fighter;;Northrop F-5A Freedom Fighter;;;X
 MODEL_CHI_12_13;Northrop F-5E Freedom Fighter;Northrop F-5E Freedom Fighter;Northrop F-5E Freedom Fighter;Northrop F-5E Freedom Fighter;Northrop F-5E Freedom Fighter;Northrop F-5E Freedom Fighter;;Northrop F-5E Freedom Fighter;;;X
+MODEL_CHI_12_15;AIDC F-CK-1 Ching-kuo;AIDC F-CK-1 Ching-kuo;AIDC F-CK-1 Ching-kuo;AIDC F-CK-1 Ching-kuo;AIDC F-CK-1 Ching-kuo;AIDC F-CK-1 Ching-kuo;;AIDC F-CK-1 Ching-kuo;;;X
 MODEL_CHI_13_0;Rumpler Taube;Rumpler Taube;Rumpler Taube;Rumpler Taube;Rumpler Taube;Rumpler Taube;;Rumpler Taube;;;X
 MODEL_CHI_13_2;Avro 504;Avro 504;Avro 504;Avro 504;Avro 504;Avro 504;;Avro 504;;;X
 #MODEL_CHI_13_2;Caudron G.3;Caudron G.3;Caudron G.3;Caudron G.3;Caudron G.3;Caudron G.3;;Caudron G.3;;;X
@@ -3597,21 +3700,22 @@ MODEL_CHI_14_2;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;Tupolev TB-3;
 MODEL_CHI_14_4;Boeing B-17F Flying Fortress;Boeing B-17F Flying Fortress;Boeing B-17F Flying Fortress;Boeing B-17F Flying Fortress;Boeing B-17F Flying Fortress;Boeing B-17F Flying Fortress;;Boeing B-17F Flying Fortress;;;X
 MODEL_CHI_14_5;Consolidated B-24 Liberator;Consolidated B-24 Liberator;Consolidated B-24 Liberator;Consolidated B-24 Liberator;Consolidated B-24 Liberator;Consolidated B-24 Liberator;;Consolidated B-24 Liberator;;;X
 #MODEL_CHI_15_5;Martin B-10;Martin B-10;Martin B-10;Martin B-10;Martin B-10;Martin B-10;;Martin B-10;;;X
-MODEL_CHI_15_5;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;;Savoia-Marchetti SM.81 Pipistrello;;;X
+#MODEL_CHI_15_5;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;Savoia-Marchetti SM.81 Pipistrello;;Savoia-Marchetti SM.81 Pipistrello;;;X
 #MODEL_CHI_15_5;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;Tupolev SB Katyusha;;ÑÁ-2;;;X
 #MODEL_CHI_15_6;Fiat BR.20 Cicogna;Fiat BR.20 Cicogna;Fiat BR.20 Cicogna;Fiat BR.20 Cicogna;Fiat BR.20 Cicogna;Fiat BR.20 Cicogna;;Fiat BR.20 Cicogna;;;X
 #MODEL_CHI_15_6;Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';Kawasaki Ki-48 'Lily';;Kawasaki Ki-48 'Lily';;;X
-MODEL_CHI_15_6;Heinkel He 111;Heinkel He 111;Heinkel He 111;Heinkel He 111;Heinkel He 111;Heinkel He 111;;Heinkel He 111;;;X
+MODEL_CHI_15_5;Heinkel He 111A;Heinkel He 111;Heinkel He 111;Heinkel He 111;Heinkel He 111;Heinkel He 111;;Heinkel He 111;;;X
 MODEL_CHI_15_7;North American B-25 Mitchell;North American B-25 Mitchell;North American B-25 Mitchell;North American B-25 Mitchell;North American B-25 Mitchell;North American B-25 Mitchell;;North American B-25 Mitchell;;;X
 #MODEL_CHI_15_7;Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';Ilyushin Il-4 'Bob';;Èë-4;;;X
 MODEL_CHI_15_8;De Havilland Mosquito;De Havilland Mosquito;De Havilland Mosquito;De Havilland Mosquito;De Havilland Mosquito;De Havilland Mosquito;;De Havilland Mosquito;;;X
 MODEL_CHI_15_11;Martin B-57 Canberra;Martin B-57 Canberra;Martin B-57 Canberra;Martin B-57 Canberra;Martin B-57 Canberra;Martin B-57 Canberra;;Martin B-57 Canberra;;;X
 MODEL_CHI_16_2;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;;Consolidated PBY Catalina;;;X
+MODEL_CHI_16_4;Consolidated PB4Y-2;Consolidated PB4Y-2;Consolidated PB4Y-2;Consolidated PB4Y-2;Consolidated PB4Y-2;Consolidated PB4Y-2;;Consolidated PB4Y-2;;;X
 MODEL_CHI_16_6;Lockheed P-2V Neptune;Lockheed P-2V Neptune;Lockheed P-2V Neptune;Lockheed P-2V Neptune;Lockheed P-2V Neptune;Lockheed P-2V Neptune;;Lockheed P-2V Neptune;;;X
 MODEL_CHI_16_7;Grumman S-2 Tracker;Grumman S-2 Tracker;Grumman S-2 Tracker;Grumman S-2 Tracker;Grumman S-2 Tracker;Grumman S-2 Tracker;;Grumman S-2 Tracker;;;X
 MODEL_CHI_16_8;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;;Lockheed P-3 Orion;;;X
-MODEL_CHI_17_0;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;;Henschel Hs 123;;;X
-#MODEL_CHI_17_0;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;;Curtiss A-12 Shrike;;;X
+#MODEL_CHI_17_0;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;Henschel Hs 123;;Henschel Hs 123;;;X
+MODEL_CHI_17_0;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;Curtiss A-12 Shrike;;Curtiss A-12 Shrike;;;X
 #MODEL_CHI_17_0;Nanchan N1-D1-A1;Nanchan N1-D1-A1;Nanchan N1-D1-A1;Nanchan N1-D1-A1;Nanchan N1-D1-A1;Nanchan N1-D1-A1;;Nanchan N1-D1-A1;;;X
 MODEL_CHI_17_1;Vultee V-11;Vultee V-11;Vultee V-11;Vultee V-11;Vultee V-11;Vultee V-11;;Vultee V-11;;;X
 #MODEL_CHI_17_1;Nanchan N1-D2;Nanchan N1-D2;Nanchan N1-D2;Nanchan N1-D2;Nanchan N1-D2;Nanchan N1-D2;;Nanchan N1-D2;;;X
@@ -4250,6 +4354,8 @@ MODEL_DDR_12_13;Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 
 MODEL_DDR_15_11;Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';Ilyushin Il-28 'Beagle';;Èë-28;;;X
 MODEL_DDR_17_7;Aero L-29 Delfín;Aero L-29 Delfín;Aero L-29 Delfín;Aero L-29 Delfín;Aero L-29 Delfín;Aero L-29 Delfín;;Aero L-29 Delfín;;;X
 MODEL_DDR_18_4;Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';;Àí-2;;;X
+MODEL_DDR_18_5;Ilyushin Il-14P;Ilyushin Il-14P;Ilyushin Il-14P;Ilyushin Il-14P;Ilyushin Il-14P;Ilyushin Il-14P;;Ilyushin Il-14P;;;X
+MODEL_DDR_18_6;Ilyushin Il-14M;Ilyushin Il-14M;Ilyushin Il-14M;Ilyushin Il-14M;Ilyushin Il-14M;Ilyushin Il-14M;;Ilyushin Il-14M;;;X
 #Naval units (All of them invented, except those that could have took part in the cold war);;;;;;;;;;;X
 MODEL_DDR_21_7;Karl Marx-class;Classe Karl Marx;Classe Karl Marx;Clase Karl Marx;Karl Marx-Klasse;Karl Marx-klasa;;Karl Marx-Klasse;;;X
 MODEL_DDR_23_5;Rostock-class;Classe Rostock;Classe Rostock;Clase Rostock;Rostock-Klasse;Rostock-klasa;;Rostock-Klasse;;;X
@@ -4454,6 +4560,7 @@ MODEL_ECU_12_5;Seversky P-35 Guardsman;Seversky P-35 Guardsman;Seversky P-35 Gua
 MODEL_ECU_12_7;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;Republic P-47 Thunderbolt;;Republic P-47 Thunderbolt;;;X
 MODEL_ECU_12_9;Gloster Meteor F 8;Gloster Meteor F 8;Gloster Meteor F 8;Gloster Meteor F 8;Gloster Meteor F 8;Gloster Meteor F 8;;Gloster Meteor F 8;;;X
 MODEL_ECU_12_13;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;;Dassault Mirage 5;;;X
+MODEL_ECU_12_14;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;;Atlas Cheetah;;;X
 MODEL_ECU_13_11;Lockheed P-80 Shooting Star;Lockheed P-80 Shooting Star;Lockheed P-80 Shooting Star;Lockheed P-80 Shooting Star;Lockheed P-80 Shooting Star;Lockheed P-80 Shooting Star;;Lockheed P-80 Shooting Star;;;X
 MODEL_ECU_15_11;English Electric Canberra;English Electric Canberra;English Electric Canberra;English Electric Canberra;English Electric Canberra;English Electric Canberra;;English Electric Canberra;;;X
 MODEL_ECU_15_12;SEPECAT Jaguar;SEPECAT Jaguar;SEPECAT Jaguar;SEPECAT Jaguar;SEPECAT Jaguar;SEPECAT Jaguar;;SEPECAT Jaguar;;;X
@@ -4549,7 +4656,7 @@ MODEL_EGY_18_2;Curtiss-Wright C-46 Commando;Curtiss-Wright C-46 Commando;Curtiss
 MODEL_EGY_18_3;Douglas Dakota;Douglas Dakota;Douglas Dakota;Douglas Dakota;Douglas Dakota;Douglas Dakota;;Douglas Dakota;;;X
 #MODEL_EGY_18_3;Savoia-Marchetti SM.95;Savoia-Marchetti SM.95;Savoia-Marchetti SM.95;Savoia-Marchetti SM.95;Savoia-Marchetti SM.95;Savoia-Marchetti SM.95;;Savoia-Marchetti SM.95;;;X
 MODEL_EGY_18_4;Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';;Àí-2;;;X
-MODEL_EGY_18_5;Antonov An-12;Antonov An-12;Antonov An-12;Antonov An-12;Antonov An-12;Antonov An-12;;Antonov An-12;;;X
+MODEL_EGY_18_5;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;;Ilyushin Il-14T;;;X
 #Naval Units (warning, partially invented names ahead);;;;;;;;;;;X
 MODEL_EGY_21_2;Echnaton class;Echnaton class;Echnaton class;Echnaton class;Echnaton class;Echnaton class;;Echnaton class;;;X
 MODEL_EGY_22_8;Bastet class;Bastet class;Bastet class;Bastet class;Bastet class;Bastet class;;Bastet class;;;X
@@ -4701,9 +4808,9 @@ MODEL_FIN_13_5;Fokker D.VII;Fokker D.VII;Fokker D.VII;Fokker D.VII;Fokker D.VII;
 MODEL_FIN_13_6;Gloster Gamecock;Gloster Gamecock;Gloster Gamecock;Gloster Gamecock;Gloster Gamecock;Gloster Gamecock;;Gloster Gamecock;;;X
 #MODEL_FIN_13_7;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;Polikarpov I-15 Chaika;;È-15;;;X
 MODEL_FIN_13_7;Bristol Bulldog;Bristol Bulldog;Bristol Bulldog;Bristol Bulldog;Bristol Bulldog;Bristol Bulldog;;Bristol Bulldog;;;X
-MODEL_FIN_13_8;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;;Fokker D.XXI;;;X
+#MODEL_FIN_13_8;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;Fokker D.XXI;;Fokker D.XXI;;;X
 #MODEL_FIN_13_8;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;;FIAT G.50 Freccia;;;X
-#MODEL_FIN_13_8;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;;Curtiss P-36 Hawk;;;X
+MODEL_FIN_13_8;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;Curtiss P-36 Hawk;;Curtiss P-36 Hawk;;;X
 #MODEL_FIN_13_8;Hawker Hurricane Mk I;Hawker Hurricane Mk I;Hawker Hurricane Mk I;Hawker Hurricane Mk I;Hawker Hurricane Mk I;Hawker Hurricane Mk I;;Hawker Hurricane Mk I;;;X
 #MODEL_FIN_13_8;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;;Morane-Saulnier MS.406;;;X
 MODEL_FIN_13_9;Curtiss P-40M Warhawk;Curtiss P-40M Warhawk;Curtiss P-40M Warhawk;Curtiss P-40M Warhawk;Curtiss P-40M Warhawk;Curtiss P-40M Warhawk;;Curtiss P-40M Warhawk;;;X
@@ -4840,6 +4947,7 @@ MODEL_GRE_15_7;Vickers Wellington Mk.I;Vickers Wellington Mk.I;Vickers Wellingto
 MODEL_GRE_16_0;Short 184;Short 184;Short 184;Short 184;Short 184;Short 184;;Short 184;;;X
 MODEL_GRE_16_6;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;;Lockheed P-3 Orion;;;X
 MODEL_GRE_17_1;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;;Fairey Battle Mk.I;;;X
+MODEL_GRE_17_2;Martin Baltimore;Martin Baltimore;Martin Baltimore;Martin Baltimore;Martin Baltimore;Martin Baltimore;;Martin Baltimore;;;X
 MODEL_GRE_17_6;Fiat G-91R;Fiat G-91R;Fiat G-91R;Fiat G-91R;Fiat G-91R;Fiat G-91R;;Fiat G-91R;;;X
 MODEL_GRE_18_0;Junkers G.24;Junkers G.24;Junkers G.24;Junkers G.24;Junkers G.24;Junkers G.24;;Junkers G.24;;;X
 MODEL_GRE_18_1;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;;Junkers Ju 52;;;X
@@ -5210,7 +5318,7 @@ MODEL_IND_12_8;Dassault Ouragan;Dassault Ouragan;Dassault Ouragan;Dassault Ourag
 MODEL_IND_12_9;FMA IAe 33 Pulqui II;FMA IAe 33 Pulqui II;FMA IAe 33 Pulqui II;FMA IAe 33 Pulqui II;FMA IAe 33 Pulqui II;FMA IAe 33 Pulqui II;;FMA IAe 33 Pulqui II;;;X
 MODEL_IND_12_10;Dassault Mystère IV;Dassault Mystère IV;Dassault Mystère IV;Dassault Mystère IV;Dassault Mystère IV;Dassault Mystère IV;;Dassault Mystère IV;;;X
 MODEL_IND_12_11;Hawker Hunter;Hawker Hunter;Hawker Hunter;Hawker Hunter;Hawker Hunter;Hawker Hunter;;Hawker Hunter;;;X
-MODEL_IND_12_12;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;Mikoyan-Gurevich Mig-21;;ÌèÃ-21;;;X
+MODEL_IND_12_12;HAL HF-24 Marut;HAL HF-24 Marut;HAL HF-24 Marut;HAL HF-24 Marut;HAL HF-24 Marut;HAL HF-24 Marut;;ÌèÃ-21;;;X
 MODEL_IND_12_13;Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';Mikoyan-Gurevich MiG-21bis 'Fishbed';;ÌèÃ-21 áèñ;;;X
 MODEL_IND_13_9;Hawker Hurricane Mk IIA;Hawker Hurricane Mk IIA;Hawker Hurricane Mk IIA;Hawker Hurricane Mk IIA;Hawker Hurricane Mk IIA;Hawker Hurricane Mk IIA;;Hawker Hurricane Mk IIA;;;X
 MODEL_IND_13_10;Supermarine Spitfire Mk XIV;Supermarine Spitfire Mk XIV;Supermarine Spitfire Mk XIV;Supermarine Spitfire Mk XIV;Supermarine Spitfire Mk XIV;Supermarine Spitfire Mk XIV;;Supermarine Spitfire Mk XIV;;;X
@@ -5223,7 +5331,7 @@ MODEL_IND_15_12;SEPECAT Jaguar;SEPECAT Jaguar;SEPECAT Jaguar;SEPECAT Jaguar;SEPE
 MODEL_IND_16_7;Bréguet Alizé;Bréguet Alizé;Bréguet Alizé;Bréguet Alizé;Bréguet Alizé;Bréguet Alizé;;Bréguet Alizé;;;X
 MODEL_IND_17_6;Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';Sukhoi Su-7 'Fitter';;Ñó-7;;;X
 MODEL_IND_18_3;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;;Douglas C-47 Skytrain;;;X
-MODEL_IND_18_5;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;Fairchild C-119 Flying Boxcar;;Fairchild C-119 Flying Boxcar;;;X
+MODEL_IND_18_5;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;Ilyushin Il-14T;;Ilyushin Il-14T;;;X
 #Naval Units;;;;;;;;;;;X
 MODEL_IND_22_4;Delhi class;Delhi class;Delhi class;Delhi class;Delhi class;Delhi class;;Delhi class;;;X
 MODEL_IND_25_7;Godavari class;Godavari class;Godavari class;Godavari class;Godavari class;Godavari class;;Godavari class;;;X
@@ -5314,6 +5422,7 @@ MODEL_IRE_12_2;Bristol F.2 Fighter;Bristol F.2 Fighter;Bristol F.2 Fighter;Brist
 MODEL_IRE_12_4;Gloster Gladiator Mk.I;Gloster Gladiator Mk.I;Gloster Gladiator Mk.I;Gloster Gladiator Mk.I;Gloster Gladiator Mk.I;Gloster Gladiator Mk.I;;Gloster Gladiator Mk.I;;;X
 MODEL_IRE_12_5;Supermarine Spitfire Mk.III;Supermarine Spitfire Mk.III;Supermarine Spitfire Mk.III;Supermarine Spitfire Mk.III;Supermarine Spitfire Mk.III;Supermarine Spitfire Mk.III;;Supermarine Spitfire Mk.III;;;X
 MODEL_IRE_13_2;Avro 504;Avro 504;Avro 504;Avro 504;Avro 504;Avro 504;;Avro 504;;;X
+MODEL_IRA_13_5;Martinsyde F.4 Buzzard;Martinsyde F.4 Buzzard;Martinsyde F.4 Buzzard;Martinsyde F.4 Buzzard;Martinsyde F.4 Buzzard;Martinsyde F.4 Buzzard;;Martinsyde F.4 Buzzard;;;X
 MODEL_IRE_13_8;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;Hawker Hurricane Mk.I;;Hawker Hurricane Mk.I;;;X
 MODEL_IRE_17_1;Fairey Battle;Fairey Battle;Fairey Battle;Fairey Battle;Fairey Battle;Fairey Battle;;Fairey Battle;;;X
 MODEL_IRE_18_2;Curtiss-Wright C-46 Commando;Curtiss-Wright C-46 Commando;Curtiss-Wright C-46 Commando;Curtiss-Wright C-46 Commando;Curtiss-Wright C-46 Commando;Curtiss-Wright C-46 Commando;;Curtiss-Wright C-46 Commando;;;X
@@ -5446,8 +5555,8 @@ MODEL_ISR_12_10;Dassault Mystère IV;Dassault Mystère IV;Dassault Mystère IV;Dass
 MODEL_ISR_12_11;Dassault Super Mystère;Dassault Super Mystère;Dassault Super Mystère;Dassault Super Mystère;Dassault Super Mystère;Dassault Super Mystère;;Dassault Super Mystère;;;X
 #MODEL_ISR_12_13;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;McDonnell-Douglas F-4 Phantom II;;McDonnell-Douglas F-4 Phantom II;;;X
 MODEL_ISR_12_13;IAI Nesher;IAI Nesher;IAI Nesher;IAI Nesher;IAI Nesher;IAI Nesher;;IAI Nesher;;;X
-MODEL_ISR_13_10;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;;North American P-51 Mustang;;;X
-#MODEL_ISR_13_10;Avia S.199;Avia S.199;Avia S.199;Avia S.199;Avia S.199;Avia S.199;;Avia S.199;;;X
+#MODEL_ISR_13_10;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;;North American P-51 Mustang;;;X
+MODEL_ISR_13_10;Avia S.199;Avia S.199;Avia S.199;Avia S.199;Avia S.199;Avia S.199;;Avia S.199;;;X
 MODEL_ISR_13_14;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;Dassault Mystere IVA;;Dassault Mystere IVA;;;X
 MODEL_ISR_13_15;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;Dassault Mirage III;;Dassault Mirage III;;;X
 MODEL_ISR_13_16;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;;Dassault Mirage IIIC;;;X
@@ -6241,6 +6350,7 @@ MODEL_NZL_16_8;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed
 MODEL_NZL_17_3;Bristol Beaufighter Mk.IIF;Bristol Beaufighter Mk.IIF;Bristol Beaufighter Mk.IIF;Bristol Beaufighter Mk.IIF;Bristol Beaufighter Mk.IIF;Bristol Beaufighter Mk.IIF;;Bristol Beaufighter Mk.IIF;;;X
 MODEL_NZL_17_6;Douglas A-4 Skyhawk;Douglas A-4 Skyhawk;Douglas A-4 Skyhawk;Douglas A-4 Skyhawk;Douglas A-4 Skyhawk;Douglas A-4 Skyhawk;;Douglas A-4 Skyhawk;;;X
 MODEL_NZL_18_3;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;;Douglas C-47 Skytrain;;;X
+MODEL_NZL_18_7;Hawker Siddeley Andover;Hawker Siddeley Andover;Hawker Siddeley Andover;Hawker Siddeley Andover;Hawker Siddeley Andover;Hawker Siddeley Andover;;Hawker Siddeley Andover;;;X
 #;;;;;;;;;;;X
 #Oman;;;;;;;;;;;X
 #Land Brigades;;;;;;;;;;;X
@@ -6328,8 +6438,8 @@ MODEL_PAK_12_7;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawker Tempest;Hawke
 MODEL_PAK_12_9;Shenyang F-2;Shenyang F-2;Shenyang F-2;Shenyang F-2;Shenyang F-2;Shenyang F-2;;Shenyang F-2;;;X
 MODEL_PAK_12_10;Shenyang F-5;Shenyang F-5;Shenyang F-5;Shenyang F-5;Shenyang F-5;Shenyang F-5;;Shenyang F-5;;;X
 MODEL_PAK_12_11;Shenyang F-6;Shenyang F-6;Shenyang F-6;Shenyang F-6;Shenyang F-6;Shenyang F-6;;Shenyang F-6;;;X
-MODEL_PAK_12_12;Chengdu F-7;Chengdu F-7;Chengdu F-7;Chengdu F-7;Chengdu F-7;Chengdu F-7;;Chengdu F-7;;;X
-#MODEL_PAK_12_12;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;;Dassault Mirage IIIE;;;X
+#MODEL_PAK_12_12;Chengdu F-7;Chengdu F-7;Chengdu F-7;Chengdu F-7;Chengdu F-7;Chengdu F-7;;Chengdu F-7;;;X
+MODEL_PAK_12_12;Dassault Mirage IIIEP;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;Dassault Mirage IIIE;;Dassault Mirage IIIE;;;X
 MODEL_PAK_12_13;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;Dassault Mirage 5;;Dassault Mirage 5;;;X
 MODEL_PAK_13_12;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;;North American F-86F Sabre;;;X
 MODEL_PAK_13_15;Lockheed F-104 Starfighter;Lockheed F-104 Starfighter;Lockheed F-104 Starfighter;Lockheed F-104 Starfighter;Lockheed F-104 Starfighter;Lockheed F-104 Starfighter;;Lockheed F-104 Starfighter;;;X
@@ -6339,6 +6449,7 @@ MODEL_PAK_15_11;Martin B-57 Canberra;Martin B-57 Canberra;Martin B-57 Canberra;M
 MODEL_PAK_16_2;Bristol Brigand;Bristol Brigand;Bristol Brigand;Bristol Brigand;Bristol Brigand;Bristol Brigand;;Bristol Brigand;;;X
 #MODEL_PAK_16_8;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;Lockheed P-3 Orion;;Lockheed P-3 Orion;;;X
 MODEL_PAK_16_8;Bréguet Atlantic;Bréguet Atlantic;Bréguet Atlantic;Bréguet Atlantic;Bréguet Atlantic;Bréguet Atlantic;;Bréguet Atlantic;;;X
+MODEL_PAK_17_7;Nanchang A-5C;Nanchang A-5C;Nanchang A-5C;Nanchang A-5C;Nanchang A-5C;Nanchang A-5C;;Nanchang A-5C;;;X
 MODEL_PAK_18_3;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;;Douglas C-47 Skytrain;;;X
 #Naval Units;;;;;;;;;;;X
 MODEL_PAK_22_6;Babur class;Babur class;Babur class;Babur class;Babur class;Babur class;;Babur class;;;X
@@ -7123,6 +7234,8 @@ MODEL_SAF_12_7;Supermarine Spitfire Mk.IXc;Supermarine Spitfire Mk.IXc;Supermari
 MODEL_SAF_12_8;Supermarine Spitfire Mk.XVIe;Supermarine Spitfire Mk.XVIe;Supermarine Spitfire Mk.XVIe;Supermarine Spitfire Mk.XVIe;Supermarine Spitfire Mk.XVIe;Supermarine Spitfire Mk.XVIe;;Supermarine Spitfire Mk.XVIe;;;X
 MODEL_SAF_12_10;De Havilland Vampire FB.Mk.5;De Havilland Vampire FB.Mk.5;De Havilland Vampire FB.Mk.5;De Havilland Vampire FB.Mk.5;De Havilland Vampire FB.Mk.5;De Havilland Vampire FB.Mk.5;;De Havilland Vampire FB.Mk.5;;;X
 MODEL_SAF_12_12;Dassault Mirage IIIEZ;Dassault Mirage IIIEZ;Dassault Mirage IIIEZ;Dassault Mirage IIIEZ;Dassault Mirage IIIEZ;Dassault Mirage IIIEZ;;Dassault Mirage IIIEZ;;;X
+MODEL_SAF_12_13;Dassault Mirage F.1CZ;Dassault Mirage F.1CZ;Dassault Mirage F.1CZ;Dassault Mirage F.1CZ;Dassault Mirage F.1CZ;Dassault Mirage F.1CZ;;Dassault Mirage F.1CZ;;;X
+MODEL_SAF_12_14;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;Atlas Cheetah;;Atlas Cheetah;;;X
 MODEL_SAF_13_0;RAF B.E.2a;RAF B.E.2a;RAF B.E.2a;RAF B.E.2a;RAF B.E.2a;RAF B.E.2a;;RAF B.E.2a;;;X
 MODEL_SAF_13_2;Avro 504;Avro 504;Avro 504;Avro 504;Avro 504;Avro 504;;Avro 504;;;X
 MODEL_SAF_13_8;Curtiss Mohawk Mk.IV;Curtiss Mohawk Mk.IV;Curtiss Mohawk Mk.IV;Curtiss Mohawk Mk.IV;Curtiss Mohawk Mk.IV;Curtiss Mohawk Mk.IV;;Curtiss Mohawk Mk.IV;;;X
@@ -7145,6 +7258,9 @@ MODEL_SAF_16_5;Bristol Beaufighter TF.Mk.X;Bristol Beaufighter TF.Mk.X;Bristol B
 MODEL_SAF_16_7;Avro Shackleton MR.Mk.3;Avro Shackleton MR.Mk.3;Avro Shackleton MR.Mk.3;Avro Shackleton MR.Mk.3;Avro Shackleton MR.Mk.3;Avro Shackleton MR.Mk.3;;Avro Shackleton MR.Mk.3;;;X
 MODEL_SAF_17_0;Hawker Hart;Hawker Hart;Hawker Hart;Hawker Hart;Hawker Hart;Hawker Hart;;Hawker Hart;;;X
 MODEL_SAF_17_1;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;Fairey Battle Mk.I;;Fairey Battle Mk.I;;;X
+MODEL_SAF_17_2;Martin Maryland;Martin Maryland;Martin Maryland;Martin Maryland;Martin Maryland;Martin Maryland;;Martin Maryland;;;X
+MODEL_SAF_17_6;Blackburn Buccaneer S.50;Blackburn Buccaneer S.50;Blackburn Buccaneer S.50;Blackburn Buccaneer S.50;Blackburn Buccaneer S.50;Blackburn Buccaneer S.50;;Blackburn Buccaneer S.50;;;X
+MODEL_SAF_17_7;Dassault Mirage F.1AZ;Dassault Mirage F.1AZ;Dassault Mirage F.1AZ;Dassault Mirage F.1AZ;Dassault Mirage F.1AZ;Dassault Mirage F.1AZ;;Dassault Mirage F.1AZ;;;X
 MODEL_SAF_18_0;Junkers W 34;Junkers W 34;Junkers W 34;Junkers W 34;Junkers W 34;Junkers W 34;;Junkers W 34;;;X
 #MODEL_SAF_18_1;Vickers Valentia Mk.I;Vickers Valentia Mk.I;Vickers Valentia Mk.I;Vickers Valentia Mk.I;Vickers Valentia Mk.I;Vickers Valentia Mk.I;;Vickers Valentia Mk.I;;;X
 MODEL_SAF_18_1;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;Junkers Ju 52;;Junkers Ju 52;;;X
@@ -7297,7 +7413,7 @@ MODEL_SCH_13_7;Dewoitine D.27;Dewoitine D.27;Dewoitine D.27;Dewoitine D.27;Dewoi
 #MODEL_SCH_13_8;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;;Messerschmitt Bf 109D;;;X
 MODEL_SCH_13_8;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;Morane-Saulnier MS.406;;Morane-Saulnier MS.406;;;X
 MODEL_SCH_13_10;Messerschmitt Bf 109G Gustav;Messerschmitt Bf 109G Gustav;Messerschmitt Bf 109G Gustav;Messerschmitt Bf 109G Gustav;Messerschmitt Bf 109G Gustav;Messerschmitt Bf 109G Gustav;;Messerschmitt Bf 109G Gustav;;;X
-#MODEL_SCH_13_10;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;;North American P-51 Mustang;;;X
+MODEL_SCH_13_11;North American P-51D Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;North American P-51 Mustang;;North American P-51 Mustang;;;X
 MODEL_SCH_13_12;De Havilland Vampire Mk.1;De Havilland Vampire Mk.1;De Havilland Vampire Mk.1;De Havilland Vampire Mk.1;De Havilland Vampire Mk.1;De Havilland Vampire Mk.1;;De Havilland Vampire Mk.1;;;X
 MODEL_SCH_13_16;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;Dassault Mirage IIIC;;Dassault Mirage IIIC;;;X
 MODEL_SCH_15_5;Dornier Do 17 Fliegender Bleistift;Dornier Do 17 Fliegender Bleistift;Dornier Do 17 Fliegender Bleistift;Dornier Do 17 Fliegender Bleistift;Dornier Do 17 Fliegender Bleistift;Dornier Do 17 Fliegender Bleistift;;Dornier Do 17 Fliegender Bleistift;;;X
@@ -7686,8 +7802,9 @@ MODEL_SPA_13_6;FIAT CR.20;FIAT CR.20;FIAT CR.20;FIAT CR.20;FIAT CR.20;FIAT CR.20
 #MODEL_SPA_13_7;FIAT CR.30;FIAT CR.30;FIAT CR.30;FIAT CR.30;FIAT CR.30;FIAT CR.30;;FIAT CR.30;;;X
 MODEL_SPA_13_7;Heinkel He 51;Heinkel He 51;Heinkel He 51;Heinkel He 51;Heinkel He 51;Heinkel He 51;;Heinkel He 51;;;X
 #MODEL_SPA_13_8;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;FIAT G.50 Freccia;;FIAT G.50 Freccia;;;X
-MODEL_SPA_13_8;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;;Messerschmitt Bf 109D;;;X
+MODEL_SPA_13_8;Messerschmitt Bf 109C;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;Messerschmitt Bf 109D;;Messerschmitt Bf 109D;;;X
 MODEL_SPA_13_9;Messerschmitt Bf 109F Franz;Messerschmitt Bf 109F Franz;Messerschmitt Bf 109F Franz;Messerschmitt Bf 109F Franz;Messerschmitt Bf 109F Franz;Messerschmitt Bf 109F Franz;;Messerschmitt Bf 109F Franz;;;X
+MODEL_SPA_13_10;Hispano Aviación HA-1112;Hispano Aviación HA-1112;Hispano Aviación HA-1112;Hispano Aviación HA-1112;Hispano Aviación HA-1112;Hispano Aviación HA-1112;;Hispano Aviación HA-1112;;;X
 MODEL_SPA_13_12;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;North American F-86F Sabre;;North American F-86F Sabre;;;X
 MODEL_SPA_14_4;Junkers Ju 290;Junkers Ju 290;Junkers Ju 290;Junkers Ju 290;Junkers Ju 290;Junkers Ju 290;;Junkers Ju 290;;;X
 MODEL_SPA_15_0;Farman M.F.7 Longhorn;Farman M.F.7 Longhorn;Farman M.F.7 Longhorn;Farman M.F.7 Longhorn;Farman M.F.7 Longhorn;Farman M.F.7 Longhorn;;Farman M.F.7 Longhorn;;;X
@@ -8400,7 +8517,8 @@ MODEL_U01_15_7;Martin B-26 Marauder;Martin B-26 Marauder;Martin B-26 Marauder;Ma
 #MODEL_U01_15_7;Vickers Wellington;Vickers Wellington;Vickers Wellington;Vickers Wellington;Vickers Wellington;Vickers Wellington;;Vickers Wellington;;;X
 MODEL_U01_16_2;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;Consolidated PBY Catalina;;Consolidated PBY Catalina;;;X
 MODEL_U01_16_3;Lockheed PV-1 "Ventura";Lockheed P-2 Neptune;Lockheed P-2 Neptune;Lockheed P-2 Neptune;Lockheed P-2 Neptune;Lockheed P-2 Neptune;;Lockheed P-2 Neptune;;;X
-MODEL_U01_17_2;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;;Douglas A-24 Banshee;;;X
+MODEL_U01_17_2;Martin Baltimore;Martin Baltimore;Martin Baltimore;Martin Baltimore;Martin Baltimore;Martin Baltimore;;Martin Baltimore;;;X
+#MODEL_U01_17_2;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;Douglas A-24 Banshee;;Douglas A-24 Banshee;;;X
 #MODEL_U01_17_2;Vultee A-31 Vengeance;Vultee A-31 Vengeance;Vultee A-31 Vengeance;Vultee A-31 Vengeance;Vultee A-31 Vengeance;Vultee A-31 Vengeance;;Vultee A-31 Vengeance;;;X
 MODEL_U01_18_1;Bloch MB.220;Bloch MB.220;Bloch MB.220;Bloch MB.220;Bloch MB.220;Bloch MB.220;;Bloch MB.220;;;X
 MODEL_U01_18_2;Vickers Wellington C.Mk.XV;Vickers Wellington C.Mk.XV;Vickers Wellington C.Mk.XV;Vickers Wellington C.Mk.XV;Vickers Wellington C.Mk.XV;Vickers Wellington C.Mk.XV;;Vickers Wellington C.Mk.XV;;;X
@@ -8962,6 +9080,7 @@ MODEL_U27_17_3;Ilyushin Il-2M Shturmovik;Ilyushin Il-2M Shturmovik;Ilyushin Il-2
 MODEL_U27_18_2;Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';;Ëè-2;;;X
 MODEL_U27_18_3;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;Douglas C-47 Skytrain;;Douglas C-47 Skytrain;;;X
 MODEL_U27_18_4;Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';;Àí-2;;;X
+MODEL_U27_18_5;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;;Ilyushin Il-14;;;X
 #Naval Units;;;;;;;;;;;X
 MODEL_U27_25_8;Kotor class;Kotor class;Kotor class;Kotor class;Kotor class;Kotor class;;Kotor class;;;X
 MODEL_U27_28_8;Sutjeska class;Sutjeska class;Sutjeska class;Sutjeska class;Sutjeska class;Sutjeska class;;Sutjeska class;;;X
@@ -9043,6 +9162,7 @@ MODEL_U29_17_4;Avia B-33;Avia B-33;Avia B-33;Avia B-33;Avia B-33;Avia B-33;;Avia
 MODEL_U29_18_2;Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';;Ëè-2;;;X
 MODEL_U29_18_3;Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';;Èë-12;;;X
 MODEL_U29_18_4;Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';;Àí-2;;;X
+MODEL_U29_18_5;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;Ilyushin Il-14;;Ilyushin Il-14;;;X
 #Naval Units;;;;;;;;;;;X
 MODEL_U29_28_8;Project 613-class;Classe Project 613;Classe Project 613;Clase Project 613;Project 613-Klasse;Project 613-klasa;;Ïðîåêò 613;;;X
 MODEL_U29_28_9;Project 633;Classe Project 633;Classe Project 633;Clase Project 633;Project 633-Klasse;Project 633-klasa;;Ïðîåêò 633;;;X
@@ -9146,6 +9266,7 @@ MODEL_U31_17_6;Sukhoi Su-7BM 'Fitter';Sukhoi Su-7BM 'Fitter';Sukhoi Su-7BM 'Fitt
 MODEL_U31_18_2;Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';Lisunov Li-2 'Cab';;Ëè-2;;;X
 MODEL_U31_18_3;Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';Ilyushin Il-12 'Coach';;Èë-12;;;X
 MODEL_U31_18_4;Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';Antonov An-2 'Colt';;Àí-2;;;X
+MODEL_U31_18_6;Avia Av-14T;Avia Av-14T;Avia Av-14T;Avia Av-14T;Avia Av-14T;Avia Av-14T;;Avia Av-14T;;;X
 #;;;;;;;;;;;X
 #People's Republic of Poland (U32);;;;;;;;;;;X
 #Land Brigades;;;;;;;;;;;X

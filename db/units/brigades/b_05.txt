@@ -1,5 +1,5 @@
 detachable = yes
-# 14 - Air Cavalry Brigade (1951) - Mil Mi-4/Sikorsky H-19/Westland Whirlwind HAR.2
+# 0 - Air Cavalry Brigade (1951) - Mil Mi-4/Sikorsky H-19/Westland Whirlwind HAR.2
 model = {
 	cost 					= 5
 	buildtime	 			= 390
@@ -17,7 +17,7 @@ model = {
 }
 
 
-# 15 - Air Cavalry Brig 1960 (1960) - Bell UH-1/Mil Mi-2/Westland Wessex HC.2
+# 1 - Air Cavalry Brig 1960 (1960) - Bell UH-1/Mil Mi-2/Westland Wessex HC.2
 model = {
 	cost 					= 5.5
 	buildtime	 			= 330
@@ -34,7 +34,7 @@ model = {
 	equipment = { manpower = 1000 helicopter = 54 }
 }
 
-# 16 - Air Cavalry Brig 1974 (1974) - Sikorsky UH-60A/Mil Mi-17
+# 2 - Air Cavalry Brig 1974 (1974) - Sikorsky UH-60A/Mil Mi-17
 model = {
 	cost 					= 5.5
 	buildtime	 			= 330
@@ -51,7 +51,7 @@ model = {
 	equipment = { manpower = 1000 helicopter = 54 }
 }
 
-# 17 - Air Cavalry Brig 1974 (1989) - Sikorsky UH-60L Black Hawk/Kamov Ka-60R
+# 3 - Air Cavalry Brig 1974 (1989) - Sikorsky UH-60L Black Hawk/Kamov Ka-60R
 model = {
 	cost 					= 5.5
 	buildtime	 			= 330
