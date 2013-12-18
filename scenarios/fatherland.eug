@@ -743,6 +743,7 @@ include = "scenarios\fatherland\iceland.inc"
 include = "scenarios\fatherland\vichy france.inc"
 include = "scenarios\fatherland\serbia.inc"
 include = "scenarios\fatherland\SS.inc"
+include = "scenarios\fatherland\Axis.inc"
 #Asia
 include = "scenarios\fatherland\philippines.inc"
 include = "scenarios\fatherland\indonesia.inc"
