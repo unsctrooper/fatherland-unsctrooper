@@ -49,7 +49,6 @@ event = {
 		command = { type = money value = -25 }
 		command = { type = supplies value = -50 }		
 		command = { type = oilpool value = -100 }				
-
 	}
 }
 
@@ -104,7 +103,7 @@ event = {
 		random = 50
 	}
 	
-	name = "Georgian Revolt !"
+	name = "Georgian Revolt ! The georgian rebels declare an unilateral independence in Tblisi !"
 	desc = "The georgian rebels declare an unilateral independence in Tblisi !"
 	style = 2
 	picture = "news_paper"	
@@ -117,6 +116,10 @@ event = {
 		name = "We can't accept their unilateral independence !"	
 		ai_chance = 70
 		
+		command = { type = removecore which = 709 } #Tbilisi
+		
+		command = { type = independence which = GEO value = 0 when = 1 }
+				
 		command = { type = dissent value = 10 }
 		
 		command = { type = revolt which = 708 } #Kutaisi
@@ -126,8 +129,6 @@ event = {
 		command = { type = revolt which = 709 } #Tbilisi
 		
 		command = { type = revolt which = 710 } #Sukumi
-		
-		command = { type = independence which = GEO value = 0 when = 1 }
 		
 		command = { type = war which = GEO }
 	}
@@ -148,7 +149,9 @@ event = {
 		command = { type = independence which = GEO value = 0 when = 0 }
 
 		command = { type = make_puppet which = GEO }
-						
+		
+		command = { type = setflag which = GEOAXIS }
+		
 		command = { type = trigger which = 92003 }
 	}
 	
@@ -183,6 +186,10 @@ event = {
 	offset = 10
 	deathdate = { day = 30 month = december year = 1963 }
 
+	trigger = {
+		flag = GEOAXIS
+	}
+	
 	action = {
 		name = "Yes, we will be an independent nation into the Axis"	
 		
@@ -202,7 +209,7 @@ event = {
 
 		command = { type = end_puppet }
 		
-		command = { type = war which = GER }
+		command = { type = war which = U42 }
 		
 	}
 }

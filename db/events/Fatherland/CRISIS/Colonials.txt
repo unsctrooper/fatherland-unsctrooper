@@ -8,7 +8,7 @@ id = 1800
 	name = "1800NAME" 
     desc = "1800DESC" 
 	
-	date = { day = 10 month = january year = 1948 }
+	date = { day = 30 month = march year = 1948 }
 	
 	action = {
 			name = "1800A" 

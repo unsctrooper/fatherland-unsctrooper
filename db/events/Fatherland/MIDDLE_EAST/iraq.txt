@@ -507,7 +507,7 @@ event = {
 		command = { type = end_puppet }
 		command = { type = end_access which = ENG }
 		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
-		command = { type = trigger which = 8012605 } #GER reactions
+		command = { type = trigger which = 8007521 } #GER reactions
 	}
 }
 event = {
@@ -524,7 +524,7 @@ event = {
                 name = "Remove the embargo"				
 				command = { type = relation which = IRQ value = 50 }
 				command = { type = embargo which = -1 where = IRQ value = 0 } #remove embargo
-				command = { type = trigger which = 8012605 } #ITA reactions
+				command = { type = trigger which = 8007522 } #ITA reactions
         }	
 }
 event = {

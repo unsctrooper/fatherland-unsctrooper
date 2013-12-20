@@ -20,6 +20,11 @@
 			#### 8012610 - Full friendship with Germany ? - SAF
 			#### 8012611 - Enter in the Axis - SAF
 			#### 8012612 - Meeting failed - SAF
+				#### 8012624 - Ethnical riots in Salisbury - UK
+				#### 8012625 - The South African Army Force direct intervention in the Salisbury crisis - SAF
+				#### 8012626 - The South African Army reach Salisbury - SAF
+				#### 8012627 - We have lost this limited battle - ENG
+				#### 8012628 - We have won this limited battle - ENG
 		#### Path to a review of UK-SAF relationship
 			#### 8012614 - We rest in Commonwealth but it's time to review our relationship with UK
 			#### 8012615 - Meeting in Pretoria - Rightfull claim
@@ -49,7 +54,7 @@ event = {
 		}
 	}
 
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 1 month = january year = 1948 }
 	offset = 100
 	deathdate = { day = 30 month = december year = 1948 }
 
@@ -238,10 +243,11 @@ event = {
 	style = 1
 	
 	trigger = {
-	OR = {
-		headofgovernment = 425018 # Malan
-		headofgovernment = 425076 # van Rensburg
-	}
+		OR = {
+			headofgovernment = 425018 # Malan
+			headofgovernment = 425076 # van Rensburg
+		}
+		
 	}
 
 	date = { day = 1 month = july year = 1951 }
@@ -295,12 +301,11 @@ event = {
 #########################################################
 event = {
         id = 8012605
-        random = no
         country = GER
  
         name = "German Reaction at the South African Constituional Referendum result"
         desc = "The South Africa is now a Republic out from Commonwealth ! Congrats with the Afrikaaner !"
-        style = 0
+        style = 1
  
         action = {
 				ai_chance = 95
@@ -344,7 +349,7 @@ event = {
         random = no
         country = NZL
  
-        name = "NZL Reaction at the South African Constituional Referendum results"
+        name = "New Zealand Reaction at the South African Constituional Referendum results"
         desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
         style = 0
  
@@ -364,9 +369,9 @@ event = {
 event = {
         id = 8012621
         random = no
-        country = AUS
+        country = AST
  
-        name = "NZL Reaction at the South African Constituional Referendum results"
+        name = "Australian Reaction at the South African Constituional Referendum results"
         desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
         style = 0
  
@@ -388,7 +393,7 @@ event = {
         random = no
         country = CAN
  
-        name = "NZL Reaction at the South African Constituional Referendum results"
+        name = "Canadian Reaction at the South African Constituional Referendum results"
         desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
         style = 0
  
@@ -750,5 +755,160 @@ event = {
 		command = { type = non_aggression which = SAF where = ENG }
 		
 		command = { type = trigger which = 92009 }
+	}
+}
+
+#########################################################
+# Proxies War > 1953 - South Africa
+#########################################################
+
+event = {
+	id = 8012624
+	country = ENG
+
+	name = "Ethnical riots in Salisbury"
+	desc = "Ethnical tensions between white and black are grow up in Salisbury and Livingstone"
+	picture = "elections"
+	style = 1
+	
+	date = { day = 0 month = january year = 1953 }
+	offset = 50
+	deathdate = { day = 30 month = december year = 1953 }
+	
+	trigger = {
+		OR = { #Meeting with Axis failed or only Economical Agreement with Germany
+			event = 8012610
+			event = 8012612
+			#SAF out of Commonwealth
+			event = 8012617
+			event = 8012618
+		}
+		control = { province = 867 data = -1 }
+		random = 80
+	}
+	
+	action = {
+		name = "Damn!" 
+		ai_chance = 100
+		command = { type = revolt which = 867 } #Salisbury		
+		command = { type = revolt which = 859 } #Livingstone						
+	}
+	
+}
+
+event = {
+	id = 8012625
+	country = SAF
+
+	name = "The South African Army Force direct intervention in the Salisbury crisis"
+	desc = "The South African Army Force direct intervention to help the white minority in Salisbury."
+	picture = "elections"
+	style = 1
+	
+	date = { day = 0 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1953 }
+	
+	trigger = {
+		OR = { #Meeting with Axis failed or only Economical Agreement with Germany
+			event = 8012610
+			event = 8012612
+			#SAF out of Commonwealth
+			event = 8012617
+			event = 8012618
+		}
+		NOT = {
+			control = { province = 867 data = ENG }
+		}
+	}
+	
+	action = {
+		name = "Limited intervention. If we don't reach Salisbury in 30 days the war will be lost." 
+		ai_chance = 100
+		command = { type = war which = ENG }
+		command = { type = trigger which = 8012626 } #Limited war - Salisbury only
+		command = { type = local_setflag which = SAFLIMITED }
+	}
+	
+	action = {
+		name = "Free Entire Rhodesia" 
+		ai_chance = 0
+	}
+	
+	action = {
+		name = "Total war" 
+		ai_chance = 0
+	}
+	
+}
+
+event = {
+	id = 8012626
+	country = SAF
+
+	name = "The South African Army reach Salisbury"
+	desc = "We have reach Salisbury, we've achieved our objective."
+	picture = "elections"
+	style = 1
+	
+	date = { day = 0 month = january year = 1953 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1953 }
+	
+	trigger = {
+		event = 8012621
+		local_flag = SAFLIMITED
+		control = { province = 867 data = SAF } #Salisbury
+	}
+	
+	action = {
+		name = "We have reach Salisbury ! We've achieved our objective. It's time for peace with UK" 
+		ai_chance = 100
+		command = { type = trigger which = 8012627 } #Armistice
+	}
+}
+
+event = {
+	id = 8012627
+	country = ENG
+	
+	name = "We have lost this limited war"
+	desc = "We have lost this limited war, Salisbury is South African. Stop the violence."
+	picture = "elections"
+	style = 1
+	
+	trigger = {
+		local_flag = SAFLIMITED
+		control = { province = 867 data = SAF } #Salisbury
+	}
+	
+	action = {
+		name = "We have lost this limited war, Salisbury is South African" 
+		ai_chance = 100
+		command = { type = peace which = SAF value = 0 }
+		command = { type = secedeprovince which = SAF value = 867 }
+		command = { type = secedeprovince which = SAF value = 866 }
+	}
+}
+
+event = {
+	id = 8012628
+	country = ENG
+	
+	name = "We have won this limited war"
+	desc = "We have won this limited war. Stop the violence."
+	picture = "elections"
+	style = 1
+	
+	trigger = {
+		local_flag = SAFLIMITED
+		event = { id = 8012628 days = 30  }
+		control = { province = 867 data = -1 } #Salisbury
+	}
+	
+	action = {
+		name = "We have won this limited war, Salisbury rest British" 
+		ai_chance = 100
+		command = { type = peace which = SAF value = 0 }
 	}
 }
