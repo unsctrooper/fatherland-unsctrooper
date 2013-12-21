@@ -101,11 +101,13 @@ rare_materials         = 60
   
 	ownedprovinces         = {  
 	# New Civil War Front
-1331 1329 1332 1330 1244 1242 1323 1327 1319 1321 1248 1259 1254 1251 1239 1246 1247 1241 1240 1210 1209 1213 1206 1200 1198 1201 1203 1197 1238 1255
+1331 1329 1332 1330 1244 1242 1323 1327 1319 1321 1248 1259 1254 1251 1239 1246 1247 1241 1240 1210 1209 1213 1206 1200 1198 1201 1203 1197 1238 1255 
+1250 1243 1252 1249 1260 1237
 	} 
 	controlledprovinces    = {  
 	# New Civil War Front
-1331 1329 1332 1330 1244 1242 1323 1327 1319 1321 1248 1259 1254 1251 1239 1246 1247 1241 1240 1210 1209 1213 1206 1200 1198 1201 1203 1197 1238 1255
+1331 1329 1332 1330 1244 1242 1323 1327 1319 1321 1248 1259 1254 1251 1239 1246 1247 1241 1240 1210 1209 1213 1206 1200 1198 1201 1203 1197 1238 1255 
+1250 1243 1252 1249 1260 1237
 	} 
 	claimedprovinces = { 
 	1455 1458 #Arunachal Pradesh
@@ -424,6 +426,51 @@ inventions = { 3000027 }
        model      = 3
       } 
   } 
+  
+  	 	   landunit = 
+   {  location = 1237 # Ulanyanqada
+     name     = "3. Manchuria Guerilla Base" 
+     id       = {  type = 24000 id = 34  } 
+     Division = 
+     {  
+       id         = {  type = 24000 id = 35  } 
+       name       = "12. Bubing Shi" 
+       type       = infantry 
+       strength  = 60
+       model      = 8
+      } 
+	 Division = 
+     {  
+       id         = {  type = 24000 id = 36  } 
+       name       = "13. Bubing Shi" 
+       type       = infantry 
+       strength  = 60
+       model      = 8
+      } 
+}
+  	 	   landunit = 
+   {  location = 1252 # Tayiuan
+     name     = "2. Capital Guerilla Base" 
+     id       = {  type = 24000 id = 37  } 
+     Division = 
+     {  
+       id         = {  type = 24000 id = 38  } 
+       name       = "14. Bubing Shi" 
+       type       = militia 
+       strength  = 60
+       model      = 5
+      } 
+	 Division = 
+     {  
+       id         = {  type = 24000 id = 39  } 
+       name       = "15. Bubing Shi" 
+       type       = militia 
+       strength  = 60
+       model      = 5
+      } 
+}
+
+
     airunit =
   { location = 1247 # Beijing
     id       = { type = 24000 id = 300 }
