@@ -433,8 +433,8 @@ inventions = { 3000027 }
      id       = {  type = 24000 id = 34  } 
      Division = 
      {  
-       id         = {  type = 24000 id = 35  } 
-       name       = "12. Bubing Shi" 
+       id         = {  type = 24000 id = 40  } 
+       name       = "12. Bubing Shi"
        type       = infantry 
        strength  = 60
        model      = 8
