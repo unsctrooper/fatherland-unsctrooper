@@ -1128,7 +1128,7 @@ airunit = {
 		model = 2 
 			}
 	}
-#airunit = { 
+airunit = { 
 	id = { type = 10848 id = 7026 } 
 	name = "Pribaltii'skii Front Vozdushnogo Komandovaniya" 
 	location = 1130 
