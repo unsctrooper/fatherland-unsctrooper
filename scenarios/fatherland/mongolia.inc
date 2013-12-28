@@ -10,9 +10,7 @@
  country = 
  {  tag                    = MON 
  	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }
-	name 				   = MON1924
-   puppet                 = SOV 
-   control                = SOV 
+   name 				   = MON1924
    # Resource Reserves 
 energy                 = 300
 metal                  = 150
@@ -29,8 +27,9 @@ rare_materials         = 75
     } 
    SpyInfo                = {  country = "MON" NumberOfSpies = 3  } 
    nationalprovinces      = {  1120 1121 1122 1123 1124 1125  } 
-   ownedprovinces         = {  1120 1121 1122 1123 1124 1125  } 
-   controlledprovinces    = {  1120 1121 1122 1123 1124 1125  } 
+   ownedprovinces         = {  1120 1121 1122 1123 1124 1125 1119 1167 1162 } 
+   controlledprovinces    = {  1120 1121 1122 1123 1124 1125 1119 1167 1162 } 
+   claimedprovinces       = {  1272 1270 1240 1239 1238 1200 1198 1209 1206 1119 1167 1162 }
    # ROTW Minor Tech '36 
    # Group E 1936 techs 
    # ###################### 
