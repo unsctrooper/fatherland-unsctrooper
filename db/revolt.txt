@@ -3103,9 +3103,9 @@ claims = { 683 }
  capital = 672 
  } 
  
-UPE = { # Basmatchi by Rhysaxiel
- date = { day = 1 month = january year = 1914 } 
- expirydate = { day = 30 month = december year = 1930 } 
+UPE = { # Fatherland Turkestan
+ date = { day = 1 month = january year = 1948 } 
+ expirydate = { day = 30 month = december year = 1999 } 
  minimum = { 
  1105 
  } 

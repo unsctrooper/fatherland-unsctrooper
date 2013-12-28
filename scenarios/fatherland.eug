@@ -4,7 +4,7 @@ header = {
 	name       = "Fatherland"
 	startdate  = { year = 1948 }
 	selectable = { AFG ARG AST BHU BOL BRA BUL CAN CHC CHI TRA COS CRO CUB DEN DOM ECU EGY ENG FIN U01 GER GUA HAI HON HUN ICL INO IRQ IRE ITA JAP JOR LEB UTC LIB MEX MON MTN NEP NIC NZL OMN PAN PAR PER POR PRU PHI ROM SAF SAU SLO SIK SOV SPA SYR SWE TAN SIA TIB TUR URU USA VEN YEM 
-				   U42 U44 HOL U45 U46 U40 U03 U41 IND BEL WLL PAK FRA CMB LAO VIE ETH SER BLR U57 U58 }  
+				   U42 U44 HOL U45 U46 U40 U03 U41 IND BEL WLL PAK FRA CMB LAO VIE ETH SER BLR U57 U58 UPE U59 SIB }  
   GER        = { }
   ITA        = { }
   FIN 	     = { }
@@ -48,6 +48,19 @@ globaldata = {
 		defenders =
 		{ id          = { type = 9430 id = 3 }
         participant = { INO }
+		}
+     }
+    war = { 
+		id = { type = 9430 id = 4 }
+		date = { year = 1939 month = september day = 0 }
+		enddate = { year = 1948 month = april day = 21 }
+		attackers =
+		{ id          = { type = 9430 id = 5 }
+			participant = { SOV }
+		}
+		defenders =
+		{ id          = { type = 9430 id = 6 }
+        participant = { UPE }
 		}
      }
 
@@ -753,6 +766,9 @@ include = "scenarios\fatherland\cambodia.inc"
 include = "scenarios\fatherland\laos.inc"
 include = "scenarios\fatherland\vietnam.inc"
 include = "scenarios\fatherland\far eastern republic.inc"
+include = "scenarios\fatherland\turkestan.inc"
+include = "scenarios\fatherland\siberia.inc"
+include = "scenarios\fatherland\Russian Empire.inc"
 #Middle East
 include = "scenarios\fatherland\lebanon.inc"
 include = "scenarios\fatherland\syria.inc"

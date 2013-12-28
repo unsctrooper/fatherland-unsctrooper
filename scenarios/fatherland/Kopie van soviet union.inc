@@ -94,7 +94,8 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 						  700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 1069 1070        
 						  1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 
 						  1138 1139 1140 1141 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 1152 1153 1154 1155 1156 1157 1158 1161 1162 1163 
-						  1164 1165 1166 1167 1177 1178 1179 1180 1181 1182 1183 1184 1541 1542 
+						  1164 1165 1166 1167      1177 1178 1179 1180 1181 1182 1183 1184   
+						       1541 1542 
                         }						 
    ownedprovinces = {  
 					   1150 1153 1129
@@ -132,7 +133,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 
 						#Central Asia
 						#Kazakhstan
-					    500 498 1114 1117 1118 1116 503 1110 1113 1115 1111 502 499 501
+					    500 498 1114 1117 1118 1116 503 1110 1113 1115 1111 502 499 501 1101
 
 
 						#1280 # Occupied East Turkestan
@@ -152,19 +153,9 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
  530 531 532 534 535 536 537 538 539 540 541 517 519 
  #Tatar land
  670 675 674 672 664 690 1131 687 671 673
+ 
  #Bessarabia
  300 302  303 304 305 306
- #Central Asia
- #Kazakhstan
- 506 507 505 500 498 504 1114 1117 1118 1116 503 1110 1108 1113 1115 1111 502 499 1109 1112 501 
- #Turkmenistan
- 1097 1098   
- #KYG
- 1107 1106  
- #UZB
- 1101 1102 1100 1103 1099
- #TAD
- 1105 1104 	 
    } 
 
    SpyInfo = { country = "SOV" NumberOfSpies = 10 }
@@ -326,7 +317,7 @@ inventions = { 3000027 }
    chiefofstaff           = {  type = 9 id = 30151  } 
    chiefofarmy            = {  type = 9 id = 30072  } 
    chiefofnavy            = {  type = 9 id = 30049  } 
-   chiefofair             = {  type = 9 id = 30143  }
+   chiefofair             = {  type = 9 id = 30053  }
    dormant_ministers      = {  30003 30005 30007 30009 30006 30010 30026 30027 30032 30033 30048 30002 30011 30046 30076 30144 }
    dormant_leaders        = {  30050 30040 30042 30044 30085 30095 30097 30101 30108 30111 30127 30131 30135 30152 30156 30170 30175 30192 30194 30207
                                30217 30220 30229 30232 30243 30255 30267 30272 30315 30316 30338 30339 30403 30409 30416 30454 30472 30477 30484 30487
@@ -337,7 +328,9 @@ inventions = { 3000027 }
                                30447 30491 30494 30509 30521 30548 30552 30576 30614 30658 30660 30720 30473 30778 30076 30216 30744 30266 30322 30463
                                30479 30538 30789 30313 30765 30767 30515 30776 30528 30758 30373 30564
                             }
-							
+
+#1948
+
    landunit = 
    {  id       = {  type = 10848 id =  1 } 
      name     = "Raboche-Krest'yanskaya Krasnaya Armiya" 
@@ -353,7 +346,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  3 } 
      name     = "Leningradskyi Voennyi Okrug" 
-     location = 1118 #Leningrad 
+     location = 542 #Leningrad 
      Division = 
      {  id       = {  type = 10848 id = 4  } 
        name     = "Leningradskyi Voennyi Okrug" 
@@ -540,7 +533,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  191 } 
      name     = "Zakavkazskyi Voennyi Okrug" 
-     location = 1118
+     location = 1097
      Division = 
      {  id       = {  type = 10848 id = 192  } 
        name     = "Zakavkazskyi Voennyi Okrug" 
@@ -640,7 +633,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  1485 } 
      name     = "28-i Mekhanizirovannyi Korpus" 
-     location = 1111
+     location = 1098
       Division = 
      {  id       = {  type = 10848 id = 1486  } 
        name     = "6-ya Tankovaya Diviziya" 
@@ -813,7 +806,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  229 } 
      name     = "Sredneaziatskyi Voennyi Okrug" 
-     location = 1110
+     location = 1103
      Division = 
      {  id       = {  type = 10848 id = 230  } 
        name     = "Sredneaziatskyi Voennyi Okrug" 
@@ -834,7 +827,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  233 } 
      name     = "58-i Strelkovyi Korpus" 
-     location = 500
+     location = 1105
      Division = 
      {  id       = {  type = 10848 id = 231  } 
        name     = "68-ya Strelkovaya Diviziya" 
@@ -881,7 +874,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  1506 } 
      name     = "27-i Mekhanizirovannyi Korpus" 
-     location = 1110
+     location = 1103
       Division = 
      {  id       = {  type = 10848 id = 1507  } 
        name     = "9-ya Tankovaya Diviziya" 
@@ -907,7 +900,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  242 } 
      name     = "Zabaikalskyi Voennyi Okrug" 
-     location = 1140
+     location = 1138
      Division = 
      {  id       = {  type = 10848 id = 243  } 
        name     = "Zabaikalskyi Voennyi Okrug" 
@@ -928,7 +921,7 @@ inventions = { 3000027 }
    landunit = 
    {  id       = {  type = 10848 id =  239 } 
      name     = "12-i Strelkovyi Korpus" 
-     location = 498
+     location = 1138
      Division = 
      {  id       = {  type = 10848 id = 240  } 
        name     = "65-ya Strelkovaya Diviziya" 
@@ -1050,32 +1043,32 @@ inventions = { 3000027 }
 	   brigade_model = 0
 	   }
  }
-   landunit = 
-   {  id       = {  type = 10848 id =  1539 } 
-     name     = "Sibirskyi Voennyi Okrug" 
-    location = 500
-   Division = 
-     {  id       = {  type = 10848 id = 1540  } 
-       name     = "Sibirskyi Voennyi Okrug" 
-       strength = 60 
-      type     = HQ
-	   model    = 4
-	   extra    = anti_air
-	   brigade_model = 0
-	   }
-}
- landunit = 
-   {  id       = {  type = 10848 id =  316 } 
-    name     = "15-ya Armiya" 
-    location = 1183
-    Division = 
-    {  id       = {  type = 10848 id = 317  } 
-     name     = "34-ya Srednevolzhskaya Strelkovaya Diviziya" 
-     strength = 80 
-     type     = infantry 
-	   model    = 9
-     }
- }
+ #  landunit = 
+ #  {  id       = {  type = 10848 id =  1539 } 
+  #   name     = "Sibirskyi Voennyi Okrug" 
+  #   location = 1142
+  #   Division = 
+  #   {  id       = {  type = 10848 id = 1540  } 
+   #    name     = "Sibirskyi Voennyi Okrug" 
+  ##     strength = 60 
+  #     type     = HQ
+	#   model    = 4
+	#   extra    = anti_air
+	#   brigade_model = 0
+	#   }
+# }
+ #  landunit = 
+ #  {  id       = {  type = 10848 id =  316 } 
+ #    name     = "15-ya Armiya" 
+ #    location = 1183
+  #   Division = 
+ #    {  id       = {  type = 10848 id = 317  } 
+ #      name     = "34-ya Srednevolzhskaya Strelkovaya Diviziya" 
+ #      strength = 80 
+ #      type     = infantry 
+#	   model    = 9
+ #     }
+ # }
 
 # Air OOB
 #MVO
@@ -1129,26 +1122,26 @@ airunit = {
 			}
 	}
 #airunit = { 
-	id = { type = 10848 id = 7026 } 
-	name = "Pribaltii'skii Front Vozdushnogo Komandovaniya" 
-	location = 1130 
-	base = 1130 
-
-	division = { 
-	id = { type = 10848 id = 7027 } 
-		name = "6.LBABR" 
-		strength = 80 
-		type = multi_role 
-		model = 4 
-			}
-	division = { 
-	id = { type = 10848 id = 7028 } 
-		name = "7.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	}
+#	id = { type = 10848 id = 7026 } 
+#	name = "Pribaltii'skii Front Vozdushnogo Komandovaniya" 
+#	location = 1130 
+#	base = 1130 
+#
+#	division = { 
+#	id = { type = 10848 id = 7027 } 
+#		name = "6.LBABR" 
+#		strength = 80 
+#		type = multi_role 
+#		model = 4 
+#			}
+#	division = { 
+#	id = { type = 10848 id = 7028 } 
+#		name = "7.IABR" 
+#		strength = 80 
+#		type = interceptor 
+#		model = 7 
+#			}
+#	}
 airunit = { 
 	id = { type = 10848 id = 7037 } 
 	name = "Zapadnyi Front Vozdushnogo Komandovaniya" 
@@ -1240,7 +1233,6 @@ airunit = {
 		model = 1 
 			}
 	}
-
 
 # Naval OOB
 

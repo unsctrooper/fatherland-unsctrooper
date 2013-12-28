@@ -2495,6 +2495,7 @@ province = { id = 1099   # Samarkand - Uzbekistan - Central Asia
 
 province = { id = 1103   # Tashkent - Uzbekistan - Central Asia
    ic       = 3
+   landfort = 3 
  } 
  
 province = { id = 1107   # Frunze - Kirgizistan - Central Asia
