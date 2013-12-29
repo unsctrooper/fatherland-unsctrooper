@@ -74,6 +74,8 @@ event = {
 		command = { type = add_division value = militia when = 6 }
 		command = { type = add_division value = militia when = 6 }
 		command = { type = add_division value = militia when = 6 }
+		command = { type = belligerence value = 5 }
+		
 	}
 }
 
@@ -101,7 +103,7 @@ event = {
 
 	action = {
 		name = EVT_8500903_A # Don't give support
-		ai_chance = 80
+		ai_chance = 70
 		command = { type = relation which = KUR value = -200 }
 		command = { type = relation which = PER value = 10 }
 		command = { type = trigger which = 8500911 } # Soviets withdraw support for the Kurds
@@ -110,7 +112,7 @@ event = {
 	
 	action = {
 		name = EVT_8500903_B # Give support
-		ai_chance = 20
+		ai_chance = 30
 		command = { type = relation which = PER value = -100 }
 		command = { type = relation which = KUR value = 200 }
 		command = { type = make_puppet which = KUR }

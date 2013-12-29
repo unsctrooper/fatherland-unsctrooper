@@ -1393,6 +1393,7 @@ name = 90000538A
 ai_chance = 99
 command = { type = country which = RUS }
 command = { type = capital which = 572 }
+command = { type = belligerence value = 5 }
 }
 action_b = {
 name = 90000538B

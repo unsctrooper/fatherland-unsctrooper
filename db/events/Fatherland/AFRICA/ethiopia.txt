@@ -194,6 +194,7 @@
 		command = { type = secedeprovince which = ETH value = 816}
 		command = { type = secedeprovince which = ETH value = 817}
 		command = { type = relation which = ETH value = 100 }
+		command = { type = alliance which = ETH }
 	 }
 	 action = {
 		 ai_chance = 80
@@ -222,6 +223,7 @@
 		name = "Ok, we hope this can improve our friendship"
 		command = { type = secedeprovince which = ETH value = 832}
 		command = { type = relation which = ETH value = 100 }
+		command = { type = alliance which = ETH }
 	 }
 	 action = {
 		 ai_chance = 30
@@ -253,6 +255,7 @@
 		command = { type = secedeprovince which = ETH value = 836}
 		command = { type = secedeprovince which = ETH value = 837}
 		command = { type = relation which = ETH value = 100 }
+		command = { type = alliance which = ETH }
 	 }
 	 action = {
 		 ai_chance = 70
