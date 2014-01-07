@@ -2,22 +2,18 @@ Games Bug
 
 * USSR has a fleet in Finland Controlled Murmansk
 * GER : Banat feed reich - Review Trigger
-Ã USA : CCW event "little" support change it in "Limited"
 * ITA : Change in Paternal Autocrat with industrial and Badoglio
-Ã SOV : "Leave Iran for Good" change text
 * IRN : Allies withdrawl from Iran may leave alliance also
-Ã ETH : Re-Enter in the Allies if they accept the Ethiopian claims
 * IRN : Review German Cooperation events
-Ã KUR : Add More Belligerance
-Ã EGY : Change Revolution of 1952 in Revolution of 1950
-Ã ITA : Event 90000546A text missed
-Ã LOK : Event 90000536A text missed
-Ã HUN : Event 90000553A text missed
-Ã FRA : Event 90000554A text missed
-Ã SOV : Event 90000539A text missed
-Ã COS : Event 90000541A text missed
-Ã ROM : Event 90000549A text missed
-Ã LOK : Russian dream add belligerance
+* When Heydrich kills Himmler the leader Himmler should also die. More generally, when the SS is purged, several SS ministers+leaders survive, intended?
+* Nehru has the wrong picture in India
+* Ceylon doesn't have any ministers, even when it had a "Change of government" event
+* The "18 June Appeal" for Free France yearly fires on July 18th
+* Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
+* RK Norwegen had the "United Ostland" event
+* Dewey as President, but Truman as Vicepresident, why?
+* The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
+
 
 Mod Improvement
 
