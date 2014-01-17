@@ -1,7 +1,16 @@
 ################################################
 ### EGYPT EVENTS made by Pako Original by NWO
 ################################################
+#### 8004903 - EGY - Government change (1948)
+#### 8004904 - EGY - Government change (1949)
+#### 8004906 - EGY - Revolution of 1950 (1950)
+#### 8004907 - EGY - Deposition of Fuad II (1951)
+#### 8004908 - EGY - Government change (Nasser - 1952)
+#### 8004909 - EGY - Government change
 
+#########################################################
+#### 8004903 - EGY - Government change (1948)
+#########################################################
 event = {
 	id = 8004903
 	country = EGY
@@ -11,8 +20,8 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 0 month = january year = 1947 }
-	offset = 360
+	date = { day = 1 month = january year = 1948 }
+	offset = 320
 	deathdate = { day = 30 month = december year = 1948 }
 
 	action = {
@@ -23,6 +32,9 @@ event = {
 	}
 }
 
+#########################################################
+#### 8004904 - EGY - Government change (1949)
+#########################################################
 event = {
 	id = 8004904
 	country = EGY
@@ -33,7 +45,7 @@ event = {
 	style = 1
 
 	date = { day = 0 month = january year = 1949 }
-	offset = 360
+	offset = 320
 	deathdate = { day = 30 month = december year = 1949 }
 
 	action = {
@@ -44,6 +56,9 @@ event = {
 	}
 }
 
+#########################################################
+#### 8004906 - EGY - Revolution of 1950 (1950)
+#########################################################
 event = {
 	id = 8004906
 	country = EGY
@@ -54,16 +69,17 @@ event = {
 	style = 1
 
 	date = { day = 0 month = january year = 1950 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	offset = 320
+	deathdate = { day = 30 month = december year = 1950 }
 
 	action = {
 		name = "EVT_8004906_A"
 		ai_chance = 100
 		command = { type = set_domestic which = democratic value = 4 }
 		command = { type = set_domestic which = political_left value = 7 }
+	
 		command = { type = end_puppet }
-		command = { type = end_access which = ENG }
+	
 		command = { type = headofstate which = 340200 } # Fuad II
 		command = { type = headofgovernment which = 340101 } # Mohammed Naguib
 		command = { type = foreignminister which = 340043 } # Wasef Boutros Ghali
@@ -77,6 +93,9 @@ event = {
 	}
 }
 
+#########################################################
+#### 8004907 - EGY - Deposition of Fuad II (1951)
+#########################################################
 event = {
 	id = 8004907
 	country = EGY
@@ -86,18 +105,24 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 0 month = january year = 1952 }
+	date = { day = 0 month = january year = 1951 }
 	offset = 15
-	deathdate = { day = 30 month = february year = 1952 }
+	deathdate = { day = 30 month = february year = 1951 }
 
 	action = {
 		name = "EVT_8004907_A"
 		ai_chance = 100
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
+		command = { type = end_access which = ENG }
+		command = { type = end_non_aggression which = ENG }
 		command = { type = flag_ext where = EGY which = _republic }
 		command = { type = headofstate which = 340099 } # Mohammed Naguib
 	}
 }
 
+#########################################################
+#### 8004908 - EGY - Government change (Nasser)
+#########################################################
 event = {
 	id = 8004908
 	country = EGY
@@ -107,7 +132,7 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 0 month = january year = 1953 }
+	date = { day = 0 month = january year = 1952 }
 	offset = 360
 	deathdate = { day = 30 month = december year = 1961 }
 
@@ -119,6 +144,9 @@ event = {
 	}
 }
 
+#########################################################
+#### 8004909 - EGY - Government change (1962)
+#########################################################
 event = {
 	id = 8004909
 	country = EGY
