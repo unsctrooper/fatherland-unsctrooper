@@ -69,7 +69,7 @@
 			relation = { tag = CHC value = -150 }
 			relation = { tag = SOV value = -200 }
 			relation = { tag = MON value = -100 }
-		#Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR
+		#Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
 			relation = { tag = GER value = 180 guaranteed = { day = 27 month = september year = 1940 } }
 			relation = { tag = BUL value = 150 }
 			relation = { tag = CRO value = 180 access = yes guaranteed = { day = 1 month = may year = 1941 } }
@@ -79,7 +79,7 @@
 			relation = { tag = MTN value = 200 access = yes guaranteed = { day = 1 month = may year = 1941 } }
 			relation = { tag = ROM value = 150 guaranteed = { day = 20 month = november year = 1940 } }
 			relation = { tag = UTC value = 50 }
-			#relation = { tag = ITA value = 150 access = yes }
+			relation = { tag = U58 value = 100 } #SS
 	}
   
     nationalprovinces 	= { 430 431 425 422 424 421 420 416 423 415 414 419 410 412 411 393 408 396 398 407 401 400 434 350 343   
@@ -111,86 +111,136 @@
 						
 	SpyInfo = { country = "ITA" NumberOfSpies = 9  }
 
-	# ITA 1944.12 techs
+	# ######################
+	# ITA 1948
 	# ######################
 	techapps = {  
 	
-	# Manufacturing
-	5810 5820 5050 5830 5060 5070 5130
-	# Construction Engineering 
-	5800 5080 5090 5100
 	# Agriculture 
-	5700 5710 5010 5020 5030
+	5700 5710 5010 5020 5030 5040
+	# Production
+	5810 5820 5050 5830 5060 5070 5130 5140 5150 5160 5180 5170 5110
+	# Construction 
+	5800 5080 5090 5100
 	# Computers
-	5310 54010 54020 54030 5320
-	# Cryptography
-	5316 5326 5327 5350 5360
-	# Radar
-	5410
-	# Oil Refining
-	5190
-	# Atomic Research
-	5470 
+	5316 5326 5327 5350 5360 5310 54010 54020 54030 5320 5350 5360 5330 5370 5380 5340 5390 5400
 	# Medicine
-	5600 5610 5620 5630 5640
-	# Exp. Rocket
-	5560
+	5600 5610 5620 5630 5640 5650
+	# Oil Refining
+	5190 5200 5210 5220 5230 5240
+	#Rocket
+	5560 7550 7560 7570 7580 7590 7100 15500 7110
+	# Radar
+	5410 5416 5417 5420 5426 5430 5440 5466
+	# Nuclear
+	5470 5480 5490 5500
+
+	# Equipment
+	5920 5980
+	
+	# Static Anti-Air Artillery 
+	2800 2450 21180 21190 21200 2460 2470 2480 2490
+	
 	# Infantry Division  
-	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130
+	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 
 	# Mountain Division
-	1160 1170 1180 1190 1200 1210 1220 1230 1240 1250 1260
+	1160 1170 1180 1190 1200 1210 1220 1230 1240 1250 1260 1270 1280
+	# Marines
+	1560 1570 1580 1590 1600 
+	# Paratroopers
+	1670 1680 1690
 	# Cavalry
-	13060 13070 13080 1310 1320 1330 1340 1350 1360 1370 1380 1390
+	13060 13070 13080 1310 1320 1330 1340 1350 1360 1370 1380 1390 1530 
 	# Motorized Infantry
 	1396 1400
-	# Naval Infantry
-	1560 1570 1580 1590
-	# Paratroopers
-	1670
-	# Engineers
-	1830 1840 1850 1860 1870
-	# Supply 
-	1910 1920 1930 1940 1950 1960 1970 1980 1990 199130
+	# Mechanized
+	1470
 	# Tanks 
-	7600 7610 2620 2010 2630 2640 2646 2650 2030 2040 2050 2070
-	# Armored Car 
-	2860 2870 2880 2020 2150 
-	# Artillery
-	2290 2300 2310 2900 2910 2920 2930 2940 2320 2330
-	# Anti-Tank Artillery
-	2400 2410
-	# Static Anti-Air Artillery 
-	2800 2450 21180 21190 21200 2460 2470
-	# Anti-Air Artillery
-	2810 2820 2510 2520
-	# Hospital System 
-	14000 14010 14020 14030
-	# Great War Land Doctrines (entente)
-	6500 6510 6530 6580 6600 6610 6620 6630 6640 6650 6660 6670 6540 6910
-	# WWII Land Doctrines
-	6560 6030 6120 6110 6130
-	# Armored Division Formation
+	7600 7610 2620 2010 2630 2640 2646 2650 2030 2040 2050 2070 2080 2090 2060 
+	# Tank Division Activation
 	6900
-	# Light Cruiser 
-	3110 3120 3130 3140 3150 3160 12010
-	# Battleship 
-	3410 3420 3430 3440 3450 3456 3460 3470
-	# Battlecruiser  
-	3310 3320 3330
-	# Heavy Cruiser 
-	3210 3220 3230 3240 3250 3260
+	
+	# Artillery
+	2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 
+	# Anti-Air Artillery
+	2810 2820 2510 2520 2530
+	# Anti-Tank Artillery
+	2400 2410 2420	
+	# Rocket Artillery
+	2970 
+	
+	# Armored Car 
+	2860 2870 2880 2020 2150 2160
+	# Tank Destroyer
+	2170
+	# Heavy Tanks
+	2100 2110
+	# SP Artillery
+	2220 2230 2240
+	# SP Anti-Air
+	22910
+	# SP Rocket Artillery
+	2980
+	# Engineers
+	1830 1840 1850 1860 1870 1880
+	
+	# Supply 
+	1910 1920 1930 1940 1950 1960 1970 1980 1990 199130 199100 199140 
+	
+	# Submarine 
+	3610 3620 3630 3640 3650 3660 3670 3680
 	# Destroyer 
 	3010 3020 3030 3040 3050 3060 3070 12000
-	# Submarine 
-	3610 3620 3630 3640 3650 3660 3670
-	# Light carrier 
-	12100 12110
+	# Light Cruiser 
+	3110 3120 3130 3140 3150 3160 12010	
+	# Heavy Cruiser 
+	3210 3220 3230 3240 3250 3260 12020 
+	# Battlecruiser  
+	3310 3320 3330 3340 3350	
+	# Battleship 
+	3410 3420 3430 3440 3450 3456 3460 3470 	
+	# Escort carrier 
+	12100 12110 12120 12130 
 	# Carrier
-	3510 3520 3530
-	# Torpedo & ASW
-	3720 3730 3736 3740 3750 3900
+	3510 3520 3530 3540	
 	# Troopships
-	3810 3820
+	3810 3820 3830
+	# Torpedo
+	3720 3730 3736 3740 3750 3760 
+	# ASW
+	3900 3910
+	
+	# Interceptor Fighter  
+	4500 4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 	
+	# Multirole fighter
+	4300 4310 4320 4330 4340 4040 4280
+	# Close Air Support
+    4400 4170	
+	# Tactical Bomber 
+	4600 4610 4620 4630 4120 4130 4140 4150 
+	# Strategic Bomber
+	4800 4810 4820 4230
+	# Naval Bomber
+	4700 4710 4190 4200 4210 	
+	# Transport 
+	4290 4250 4260
+	
+	# Seaplanes
+	4740 4750 4760 4770 4780 4790 4850 4860	
+	# Escort fighter
+	4050
+	# CAG
+	4900 4910 4920 4930 4940
+
+	# Hospital System 
+	14000 14010 14020 14030
+	
+	# Great War Land Doctrines
+	6500 6510 6530 6580 6600 6610 6620 6630 6640 6650 6660 6670 6540 6910
+
+	# WWII Land Doctrines
+	6560 6030 6120 6110 6130
+
 	# Naval Doctrines
 	# Engagement Theories
 	8010 8020 8030 8040 8050 8060 8070 8080
@@ -208,26 +258,7 @@
 	8100 8110 8120 8150 8160 8170 8200 8210
 	# Carrier
 	81650
-	# Interceptor Fighter  
-	4500 4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 
-	# Multirole fighter
-	4300 4310 4320 4330 4340 4040
-	# Escort fighter
-	4050
-	# Close Air Support
-    4400 4170
-	# Tactical Bomber 
-	4600 4610 4620 4630 4120 4130 4140 4150
-	# Strategic Bomber
-	4800 4810 4820
-	# Naval Bomber
-	4700 4710 4190
-	# Seaplanes
-	4740 4750 4760 4770 4780 4790 4850 4860
-	# CAG
-	4900 4910 4920
-	# Air Transport 
-	4290 4250 4260
+	
 	# Air Doctrines
 	27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470 9010 
 	9040 9050 9060 9070 9090 9100 9110 9120 9130 9140 9190 9200 9210 9220 9230 9240

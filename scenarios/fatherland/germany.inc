@@ -1,4 +1,3 @@
- 
  ############################## 
  # Country definition for GER # 
  ############################## 
@@ -9,20 +8,20 @@
   
  country = 
  {  tag                    = GER 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
-   capital                = 163 
-   manpower               = 500
-   transports             = 135 
-   escorts                = 35 
+	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+    capital                = 163 
+    manpower               = 500
+    transports             = 135 
+    escorts                = 35 
 
-   # Resource Reserves 
-   energy                 = 35000
-   metal                  = 10000
-   rare_materials         = 3000
-   oil                    = 1000 
-   supplies               = 1000 
-   money                  = 200
-   #belligerence           = 120
+	# Resource Reserves 
+	energy                 = 35000
+	metal                  = 10000
+	rare_materials         = 3000
+	oil                    = 1000 
+	supplies               = 1000 
+	money                  = 200
+	#belligerence           = 120
  
   diplomacy =
   { relation = { tag = ARG value = 75 }
@@ -39,7 +38,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
     relation = { tag = ENG value = -200 }
     relation = { tag = U01 value = -200 }
     relation = { tag = HUN value  = 200 access = yes }
-	relation = { tag = FIN value  = 100 access = yes }
+	relation = { tag = FIN value  = 125 access = yes }
     relation = { tag = IRQ value = 0 }
     relation = { tag = ITA value = 200 access = yes }
     relation = { tag = JAP value = -200 }
@@ -62,6 +61,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
     relation = { tag = USA value = -200 }
     relation = { tag = YEM value = -200 }
     relation = { tag = U02 value = -200 }
+	relation = { tag = U58 value = 200 access = yes } #SS
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    

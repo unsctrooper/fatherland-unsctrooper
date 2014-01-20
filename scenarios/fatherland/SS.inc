@@ -1,12 +1,12 @@
- 
  ############################## 
  # Country definition for U58 # 
  ############################## 
   
  country = 
  {  tag                    = U58
-    control = GER
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+   puppet = GER
+   control = GER
+	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
    # Resource Reserves 
    energy                 = 240
    metal                  = 120
@@ -180,7 +180,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 	} 
 inventions = { 3000027 3000028 3000031 3000017 3000018 }
    diplomacy = 
-   {  relation = { tag = GER value = 150  } 
+   {  relation = { tag = GER value = 200  } 
     } 
    SpyInfo                = {  country = "U58" NumberOfSpies = 1  } 
    #headofstate            = {  type = 9 id = 1105001  } 
