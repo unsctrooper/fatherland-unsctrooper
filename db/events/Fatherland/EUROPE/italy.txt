@@ -188,6 +188,7 @@ event = {
 		command = { type = sleepminister which = 25230 } #Mussolini MoS
 		command = { type = headofgovernment which = 25026 } #Badoglio
 		command = { type = dissent value = 1 }
+		command = { type = 	end_access which = GER }
 	}
 }
 ###########################################################
@@ -2218,12 +2219,21 @@ event = {
 		name = ACTION_NAME_YES
 		ai_chance = 50
 		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
+		
 		command = { type = relation which = GER value = -200 }
+		
+		command = { type = relation which = SOV value = 50 }
+		
+		command = { type = relation which = ENG value = 280 }
+		command = { type = relation which = USA value = 250 }
+		command = { type = relation which = U01 value = 250 }
+		
+		command = { type = embargo which = -1 where = ENG value = 0 } #remove embargo
+		command = { type = embargo which = -1 where = USA value = 0 } #remove embargo
+		command = { type = embargo which = -1 where = U01 value = 0 } #remove embargo
+		
 		command = { type = trigger which = 90000650 } 
-		command = { type = peace which = SOV value = 1 } 
-		command = { type = peace which = USA value = 1 } 
-		command = { type = peace which = ENG value = 1 } 
-		command = { type = peace which = U01 value = 1 } 
+ 
 	}
 	action = {
 		name = ACTION_NAME_NO

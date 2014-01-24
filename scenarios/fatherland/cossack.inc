@@ -23,6 +23,7 @@
    oil                    = 200 
    supplies               = 1000 
    money                  = 10
+   belligerence           = 10
  
   diplomacy =
   { relation = { tag = GER value = 150 }
