@@ -1,14 +1,14 @@
 Games Bug
 
-* USSR has a fleet in Finland Controlled Murmansk
+V USSR has a fleet in Finland Controlled Murmansk
 * GER : Banat feed reich - Review Trigger
-* ITA : Change in Paternal Autocrat with industrial and Badoglio
-* IRN : Allies withdrawl from Iran may leave alliance also
-* IRN : Review German Cooperation events
+V ITA : Change in Paternal Autocrat with industrial and Badoglio
+V IRN : Allies withdrawl from Iran may leave alliance also
+V IRN : Review German Cooperation events
 * When Heydrich kills Himmler the leader Himmler should also die. More generally, when the SS is purged, several SS ministers+leaders survive, intended?
 * Nehru has the wrong picture in India
 * Ceylon doesn't have any ministers, even when it had a "Change of government" event
-* The "18 June Appeal" for Free France yearly fires on July 18th
+V The "18 June Appeal" for Free France yearly fires on July 18th
 * Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
 * RK Norwegen had the "United Ostland" event
 * Dewey as President, but Truman as Vicepresident, why?

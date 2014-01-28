@@ -1247,8 +1247,8 @@ airunit = {
 	navalunit = { # Dushenov K.I.
 		id = { type = 10848 id = 5400 } 
 		name = "Severnaya Voennaya Flotiliya" 
-		location = 535 
-		base = 535 
+		location = 542 
+		base = 542 
 		division = { 
 			id = { type = 10848 id = 5401 } 
 			name = "1. Divizion Esmintsev" 

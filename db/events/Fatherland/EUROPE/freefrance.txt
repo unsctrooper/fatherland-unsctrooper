@@ -23,12 +23,12 @@ picture = "Appel_de_Gaulle"
 
 trigger = {
 	day = 18
-	month = 6
+	month = 5
 	NOT = {
 		day = 19
 		}
 	NOT = {
-		month = 7
+		month = 6
 		}
 	}
 
