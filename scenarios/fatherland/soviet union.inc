@@ -20,6 +20,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
        supplies = 7890 
        money = 550 
        manpower = 1800
+       dissent = 30
        transports = 30 
        escorts = 15 
     
@@ -351,41 +352,6 @@ inventions = { 3000027 }
 	   } 
  } 
    landunit = 
-   {  id       = {  type = 10848 id =  3 } 
-     name     = "Leningradskyi Voennyi Okrug" 
-     location = 1118 #Leningrad 
-     Division = 
-     {  id       = {  type = 10848 id = 4  } 
-       name     = "Leningradskyi Voennyi Okrug" 
-       strength = 80 
-       type     = HQ
-	   model    = 4
-	   extra    = anti_air
-	   brigade_model = 2
-	   }
-     Division = 
-     {  id       = {  type = 10848 id = 5  } 
-       name     = "177-ya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 6  } 
-       name     = "191-ya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 7  } 
-       name     = "8-ya Minskaya Strelkovaya Diviziya" 
-       strength = 80 
-       type     = infantry 
-	   model    = 11
-      }
- }
-   landunit = 
    {  id       = {  type = 10848 id =  14 } 
      name     = "1-i Mekhanizirovannyi Korpus" 
      location = 672
@@ -438,33 +404,6 @@ inventions = { 3000027 }
 	   model    = 9
       }
  }
-   landunit = 
-   {  id       = {  type = 10848 id =  1403 } 
-     name     = "10-i Mekhanizirovannyi Korpus" 
-     location = 531
-      Division = 
-     {  id       = {  type = 10848 id = 1404  } 
-       name     = "21-ya Tankovaya Diviziya" 
-       strength = 65 
-       type     = light_armor
-	   model    = 0 
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1405  } 
-       name     = "24-ya Tankovaya Diviziya" 
-       strength = 65 
-       type     = light_armor
-	   model    = 0 
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1406  } 
-       name     = "198-ya Motostrelkovaya Diviziya" 
-       strength = 80 
-       type     = motorized
-	   model    = 1 
-      }
- }
-
    landunit = 
    {  id       = {  type = 10848 id =  21 } 
      name     = "14-ya Armiya" 
@@ -945,46 +884,6 @@ inventions = { 3000027 }
       } 
  }
    landunit = 
-   {  id       = {  type = 10848 id =  1510 } 
-     name     = "17-ya Armiya" 
-     location = 1138
-      Division = 
-     {  id       = {  type = 10848 id = 1511  } 
-       name     = "57-ya Tankovaya Diviziya" 
-       strength = 20 
-       type     = light_armor
-	   model    = 0
-      }
-      Division = 
-     {  id       = {  type = 10848 id = 1512  } 
-       name     = "61-ya Tankovaya Diviziya" 
-       strength = 20 
-       type     = light_armor
-	   model    = 0 
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 1513  } 
-       name     = "36-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      }
-     Division = 
-     {  id       = {  type = 10848 id = 1514  } 
-       name     = "57-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      } 
-     Division = 
-     {  id       = {  type = 10848 id = 1515  } 
-       name     = "82-ya Strelkovaya Diviziya" 
-       strength = 70 
-       type     = infantry 
-	   model    = 9
-      } 
- }
-   landunit = 
    {  id       = {  type = 10848 id =  1516 } 
      name     = "45-i Strelkovyi Korpus" 
      location = 660
@@ -1064,70 +963,9 @@ inventions = { 3000027 }
 	   brigade_model = 0
 	   }
 }
- landunit = 
-   {  id       = {  type = 10848 id =  316 } 
-    name     = "15-ya Armiya" 
-    location = 1183
-    Division = 
-    {  id       = {  type = 10848 id = 317  } 
-     name     = "34-ya Srednevolzhskaya Strelkovaya Diviziya" 
-     strength = 80 
-     type     = infantry 
-	   model    = 9
-     }
- }
 
 # Air OOB
 #MVO
-airunit = { 
-	id = { type = 10848 id = 7016 } 
-	name = "Leningradskaya Vozdushnogo Komandovaniya" 
-	location = 542 # Leningrad
-	base = 542 # Leningrad 
-
-	division = { 
-	id = { type = 10848 id = 7017 } 
-		name = "1.LBABR" 
-		strength = 80 
-		type = multi_role 
-		model = 4 
-			}
-	division = { 
-	id = { type = 10848 id = 7018 } 
-		name = "2.IABR" 
-		strength = 80 
-		type = interceptor 
-		model = 7 
-			}
-	division = { 
-	id = { type = 10848 id = 7010 } 
-		name = "23.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 6 
-			}
-	division = { 
-	id = { type = 10848 id = 7013 } 
-		name = "40.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7014 } 
-		name = "41.TBABR" 
-		strength = 80 
-		type = tactical_bomber 
-		model = 5 
-			}
-	division = { 
-	id = { type = 10848 id = 7015 } 
-		name = "3.TBABR" 
-		strength = 80 
-		type = strategic_bomber 
-		model = 2 
-			}
-	}
 airunit = { 
 	id = { type = 10848 id = 7026 } 
 	name = "Pribaltii'skii Front Vozdushnogo Komandovaniya" 
