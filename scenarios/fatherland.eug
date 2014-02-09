@@ -11,12 +11,12 @@ header = {
   SPA        = { desc = "SPA_1948_DESC" }
  
   ENG        = { desc = "ENG_1948_DESC" }
-  USA        = { }
-  U01 	     = { }
+  USA        = { desc = "USA_1948_DESC" }
+  U01 	     = { desc = "U01_1948_DESC" }
 
-  SOV        = { }
-  CHC        = { }
-  CHI        = { }
+  SOV        = { desc = "SOV_1948_DESC" }
+  CHC        = { desc = "CHC_1948_DESC" }
+  CHI        = { desc = "CHI_1948_DESC" }
 
 }
 globaldata = { 
