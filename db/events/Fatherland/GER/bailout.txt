@@ -1,0 +1,179 @@
+# RK Ukraine ###
+################
+
+event = {
+id = 77000
+	random = no
+	country = U41	
+	style = 2
+	persistent = yes
+	picture = "ProtestAlexanderetta"
+	
+	name = "We're bleeding dry!"
+    desc = "We need to request the German central government to help us out, again!"
+	
+	date = { day = 1 month = february year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+
+trigger = { 
+NOT = { manpower = 10 } 
+	}
+
+	action = {
+			name = "Damn!"
+			command = { type = dissent value = 5 }
+			command = { type = manpowerpool value = 20 }
+		    command = { type = trigger which = 77100 }
+	}
+}
+
+##############
+# RK Ostland #
+##############
+
+event = {
+id = 77001
+	random = no
+	country = U40	
+	style = 2
+	persistent = yes
+	picture = "ProtestAlexanderetta"
+	
+	name = "We're bleeding dry!"
+    desc = "We need to request the German central government to help us out, again!"
+	
+	date = { day = 1 month = february year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+
+trigger = { 
+NOT = { manpower = 10 } 
+	}
+
+	action = {
+			name = "Damn!"
+			command = { type = dissent value = 5 }
+			command = { type = manpowerpool value = 20 }
+		    command = { type = trigger which = 77100 }
+	}
+}
+
+##############
+# Belarus    #
+##############
+
+event = {
+id = 77002
+	random = no
+	country = BLR
+	style = 2
+	persistent = yes
+	picture = "ProtestAlexanderetta"
+	
+	name = "We're bleeding dry!"
+    desc = "We need to request the German central government to help us out, again!"
+	
+	date = { day = 1 month = february year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+
+trigger = { 
+NOT = { manpower = 10 } 
+	}
+
+	action = {
+			name = "Damn!"
+			command = { type = dissent value = 5 }
+			command = { type = manpowerpool value = 20 }
+		    command = { type = trigger which = 77100 }
+	}
+}
+
+############
+# Kakausus #
+############
+
+event = {
+id = 77003
+	random = no
+	country = U42
+	style = 2
+	persistent = yes
+	picture = "ProtestAlexanderetta"
+	
+	name = "We're bleeding dry!"
+    desc = "We need to request the German central government to help us out, again!"
+	
+	date = { day = 1 month = february year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+
+trigger = { 
+NOT = { manpower = 10 } 
+	}
+
+	action = {
+			name = "Damn!"
+			command = { type = dissent value = 5 }
+			command = { type = manpowerpool value = 20 }
+		    command = { type = trigger which = 77100 }
+	}
+}
+
+##############
+### Norway ###
+##############
+
+event = {
+id = 77004
+	random = no
+	country = U45
+	style = 2
+	persistent = yes
+	picture = "ProtestAlexanderetta"
+	
+	name = "We're bleeding dry!"
+    desc = "We need to request the German central government to help us out, again!"
+	
+	date = { day = 1 month = february year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1955 }
+	
+
+trigger = { 
+NOT = { manpower = 10 } 
+	}
+
+	action = {
+			name = "Damn!"
+			command = { type = dissent value = 5 }
+			command = { type = manpowerpool value = 20 }
+		    command = { type = trigger which = 77100 }
+	}
+}
+################
+# German Reply #
+################
+event = {
+id = 77100
+	random = no
+	country = GER
+	style = 2
+	persistent = yes
+	picture = "ProtestAlexanderetta"
+	
+	name = "Bailout!"
+    desc = "One of our Reichskommisariats is under continueing risk of getting overrun by partisans. We need to be more lenient in recruiting locals, or send back some working forces to their own country."
+
+	
+	action = {
+			name = "Damn!"
+			command = { type = dissent value = 1 }
+			command = { type = manpowerpool value = -10 }
+	}
+}
