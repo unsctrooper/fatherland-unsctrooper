@@ -42,6 +42,7 @@ event = {
 	    action = {
 		name = "8014250A"
 		command = { type = peace which = SOV value = 1 }
+		command = { type = leave_alliance when = 1 }
 	}
 }
 
