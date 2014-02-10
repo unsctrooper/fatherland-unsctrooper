@@ -11,7 +11,7 @@
  {  tag                    = WLL
 ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
    #ai                     = "GER_1942.ai"
-   puppet = GER
+   puppet = U47
    control = GER
    
    capital                = 108 
@@ -78,7 +78,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    nationalprovinces      = { 113 108 111 112 } 
    ownedprovinces         = { 113 108 111 112 } 
    controlledprovinces    = { 113 108 111 112 } 
-	claimedprovinces 	  = { 116  } 
+	claimedprovinces 	  = {  } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 

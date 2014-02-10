@@ -16,6 +16,7 @@
    
    name = "Lokot Republic"
    
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes RES = yes NEIN = yes } }
    capital                = 163 
    manpower               = 50
    transports             = 10 

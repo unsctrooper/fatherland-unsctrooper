@@ -10,7 +10,7 @@
  country = 
  {  tag                    = U01 
  	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }	
-   capital                = 907 
+   capital                = 727
    # Resource Reserves 
   energy                 = 2000
   metal                  = 2000

@@ -13,10 +13,13 @@
    puppet = GER
    control = GER
    
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes RES = yes NEIN = yes } }
    capital                = 235 
-   manpower               = 10 
+   manpower               = 25
    transports             = 10 
    escorts                = 0 
+   
+   free = { supplies = 10 } 
  
    # Resource Reserves 
    energy                 = 100
@@ -268,19 +271,55 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
    landunit = 
-   { location = 242 
-     name     = "14. Galizische SS-Freiw.-Div." 
-     leader   = 223 # Reinhardt
+   { location = 232 
+     name     = "1. Polnische Polizei im Generalgouvernement" 
      id       = {  type = 14502 id = 1  }
  division = 
      { id       = {  type = 14502 id = 2  } 
-       name     = "14. Galizische SS-Freiw.-Div." 
-       type     = motorized 
-       model    = 2 
-       strength = 70
+       name     = "Schutzmannschaft Bataillon nr. 1" 
+       type     = militia
+       model    = 5
+       strength = 20
+	   max_strength = 25
+		}
+ division = 
+     { id       = {  type = 14502 id = 3  } 
+       name     = "Brygada Swietokrzyska" 
+       type     = infantry
+       model    = 11
+	   extra = artillery 
+       brigade_model = 10
+       strength = 5
+	   max_strength = 10
        experience = 80
 		}
 	 }
 
+   landunit = 
+   { location = 242 
+     name     = "2. Polnische Polizei im Generalgouvernement" 
+     id       = {  type = 14502 id = 4  }
+ division = 
+     { id       = {  type = 14502 id = 5  } 
+       name     = "Schutzmannschaft Bataillon nr. 4" 
+       type     = militia
+       model    = 5
+       strength = 20
+	   max_strength = 25
+		}
+	 }
+   landunit = 
+   { location = 243
+     name     = "2. Polnische Polizei im Generalgouvernement" 
+     id       = {  type = 14502 id = 6  }
+ division = 
+     { id       = {  type = 14502 id =7  } 
+       name     = "Schutzmannschaft Bataillon nr. 7" 
+       type     = militia
+       model    = 5
+       strength = 20
+	   max_strength = 25
+		}
+	 }
 }
 

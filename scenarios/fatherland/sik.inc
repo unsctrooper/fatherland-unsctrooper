@@ -5,22 +5,19 @@
 
 country = {
 	tag = SIK
+    puppet = UPE
 	name = SIK44
-	flag_ext = _eastturkestan
-	
+	flag_ext = _eastturkestan	
 	energy = 2000
 	metal = 2000
 	rare_materials = 500
 	oil = 500
 	supplies = 200
 	money = 10
-	manpower = 50
-	
-	capital = 1280 # Gulja
-	
+	manpower = 50	
+	capital = 1280 # Gulja	
 	dissent = 30
-	puppet = SOV
-	control = SOV
+
 	
 	policy = {
 		date = { year = 0 month = january day = 0 }

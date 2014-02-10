@@ -9,7 +9,7 @@
   
  country = 
  {  tag                    = MTN 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes } }
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes RES = yes NEIN = yes } }
     puppet                 = ITA
    # Resource Reserves 
  
@@ -89,7 +89,7 @@ inventions = { 3000027 }
      political_left    = 3 
      free_market       = 3 
      freedom           = 3 
-     professional_army = 9 
+     professional_army = 8
      defense_lobby     = 7 
      interventionism   = 8 
     } 

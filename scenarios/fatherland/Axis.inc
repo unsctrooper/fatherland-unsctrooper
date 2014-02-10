@@ -5,7 +5,7 @@
   
  country = 
  {  tag                    = AXI
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes NEIN = yes RES = yes } }
    # Resource Reserves 
    energy                 = 240
    metal                  = 120
@@ -21,8 +21,8 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 1
      political_left    = 1 
-     freedom           = 1
-     free_market       = 2
+     freedom           = 1 
+     free_market       = 9
      professional_army = 7
      defense_lobby     = 9 
      interventionism   = 9 
@@ -181,7 +181,7 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
    diplomacy = 
    {  relation = { tag = GER value = 150  } 
     } 
-   SpyInfo                = {  country = "U58" NumberOfSpies = 1  } 
+   SpyInfo                = {  country = "AXI" NumberOfSpies = 1  } 
    #headofstate            = {  type = 9 id = 1105001  } 
    #headofgovernment       = {  type = 9 id = 1105002  } 
    #foreignminister        = {  type = 9 id = 1105003  } 
@@ -192,5 +192,56 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
    #chiefofarmy            = {  type = 9 id = 1105008  } 
    #chiefofnavy            = {  type = 9 id = 1105009  } 
    #chiefofair             = {  type = 9 id = 1105010  }
-  } 
- 
+  
+landunit = {
+ id = { type = 17345  id = 29 }
+ name = "Generalstaff Ostlegion"
+ location = 1103
+  	division = {
+   	id = { type = 17345  id = 30 }
+   	name = "Panzer-Divison Turkestan"
+   	strength = 75
+   	type = armor
+	model = 3
+        }
+  	division = {
+   	id = { type = 17345  id = 31 }
+   	name = "Panzergredanier-Division Tashkent"
+   	strength = 75
+   	type = mechanized
+	model = 1
+        }
+  	division = {
+   	id = { type = 17345  id = 32 }
+   	name = "Panzergredanier-Division Basmachi"
+   	strength = 75
+   	type = mechanized
+	model = 1
+        }
+        } 
+landunit = {
+ id = { type = 17345  id = 33 }
+ name = "Generalstaff Turkestan"
+ location = 1103
+  	division = {
+   	id = { type = 17345  id = 34 }
+   	name = "Generalstaff Turkestan"
+   	strength = 50
+   	type = hq
+	model = 4
+        }
+        } 
+landunit = {
+ id = { type = 17345  id = 35 }
+ name = "353. Sicherungs-Division"
+ location = 1103
+  	division = {
+   	id = { type = 17345  id = 36 }
+       name     = "Condor Legion" 
+       type     = bergsjaeger 
+       model    = 12 
+       strength = 80 
+       experience = 40
+      }
+      } 
+}

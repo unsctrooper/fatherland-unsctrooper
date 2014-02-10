@@ -9,7 +9,7 @@
   
  country = 
  {  tag                    = U46 # Reichskommissariat Niederlande
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes  } }
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
@@ -75,10 +75,10 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
-   nationalprovinces      = { 122 } 
+   nationalprovinces      = { 122 118 119 120 121 123 124 125 } 
    ownedprovinces         = { 122 118 119 120 121 123 124 125 } 
    controlledprovinces    = { 122 118 119 120 121 123 124 125 } 
-	claimedprovinces 	  = { 118 119 120 121 123 124 125  } 
+	claimedprovinces 	  = {  } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 
@@ -233,7 +233,7 @@ inventions = { 3000027 3000028 }
      political_left    = 1 
      free_market       = 5 
      freedom           = 2 
-     professional_army = 7 
+     professional_army = 6 
      defense_lobby     = 10 
      interventionism   = 1 
     }
@@ -254,28 +254,15 @@ inventions = { 3000027 3000028 }
   
 landunit = {
 		id = { type = 30402 id = 1 }
-		name = "Schutz-Kommando RK Niederlande"
+		name = "Weerbaarheids Afdeling"
 		location = 122
 		division = {
 			id = { type = 30402 id = 2 }
-			name = "1. RK. Niederlande Schutz-Kommando"
-			strength = 80
-			type = infantry
-			model = 11
-		}
-		division = {
-			id = { type = 30402 id = 3 }
-			name = "2. RK. Niederlande Schutz-Kommando"
-			strength = 80
-			type = infantry
-			model = 11
-		}
-		division = {
-			id = { type = 30402 id = 4 }
-			name = "3. RK. Niederlande Schutz-Kommando"
-			strength = 80
-			type = infantry
-			model = 11
+			name = "1. Bataljon Weerbaarheids Afdeling"
+            type     = militia
+            model    = 5
+            strength = 25
+	        max_strength = 25
 		}
 	}
     } 

@@ -21,9 +21,10 @@ rare_materials         = 75
    manpower               = 25 
    capital                = 1124 
    diplomacy = 
-   {  relation = {  tag = CHC value = 25  } 
-     relation = {  tag = SOV value = 150  } 
-     relation = {  tag = TAN value = 200  } 
+   { relation = {  tag = CHC value = 25  } 
+     relation = {  tag = SOV value = -50  } 
+     relation = {  tag = U59 value = 100  } 
+     relation = {  tag = SIB value = 100  } 
     } 
    SpyInfo                = {  country = "MON" NumberOfSpies = 3  } 
    nationalprovinces      = {  1120 1121 1122 1123 1124 1125  } 
@@ -86,25 +87,51 @@ rare_materials         = 75
      name     = "Armija Mongol Nayramdakh" 
      id       = {  type = 30500 id = 1  } 
      Division = 
+     {  id   = {  type = 30500 id = 2  } 
+       name = "2. Nayramdakh Opolcheniya Div." 
+	   strength     = 75
+       type = infantry
+	   model    = 9
+      } 
+     Division = 
      {  id   = {  type = 30500 id = 3  } 
-       name = "2. Nayramdakh Kavaleriyskaya Div." 
-	   strength     = 10
-       type = cavalry 
-	   model    = 7
+       name = "3. Nayramdakh Opolcheniya Div." 
+	   strength     = 75
+       type = infantry 
+	   model    = 9
       } 
      Division = 
      {  id   = {  type = 30500 id = 4  } 
-       name = "3. Nayramdakh Opolcheniya Div." 
-	   strength     = 10
-       type = militia 
-	   model    = 3
+       name = "4. Nayramdakh Opolcheniya Div." 
+	   strength     = 75
+       type = infantry
+	   model    = 9
+      } 
+    } 
+   landunit = 
+   {  location = 1124 
+     name     = "Armija Kavaleriyskaya" 
+     id       = {  type = 30500 id = 5  } 
+     Division = 
+     {  id   = {  type = 30500 id = 6  } 
+       name = "1. Nayramdakh Kavaleriyskaya Div." 
+	   strength     = 50
+       type = cavalry
+	   model    = 10
       } 
      Division = 
-     {  id   = {  type = 30500 id = 5  } 
-       name = "4. Nayramdakh Opolcheniya Div." 
-	   strength     = 10
-       type = militia 
-	   model    = 3
+     {  id   = {  type = 30500 id = 7  } 
+       name = "2. Nayramdakh Kavaleriyskaya Div." 
+	   strength     = 50
+       type = cavalry 
+	   model    = 10
+      } 
+     Division = 
+     {  id   = {  type = 30500 id = 8  } 
+       name = "3. Nayramdakh Kavaleriyskaya Div." 
+	   strength     = 33
+       type = cavalry
+	   model    = 10
       } 
     } 
   } 

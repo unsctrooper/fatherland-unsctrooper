@@ -9,13 +9,13 @@
   
  country = 
  {  tag                    = U45 # Reichskommissariat Norwegen 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes RES = yes NEIN = yes} }
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
    
    capital                = 483
-   manpower               = 15 
+   manpower               = 25
    transports             = 10 
    escorts                = 0 
    #ground_def_eff         = 0.82 
@@ -75,10 +75,10 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
-   nationalprovinces      = { 483 } 
+   nationalprovinces      = { 483 493 491 495 488} 
    ownedprovinces         = { 483 491 495 484 485 486 487 488 489 490 492 493 494 496 497 } 
    controlledprovinces    = { 483 491 495 484 485 486 487 488 489 490 492 493 494 496 497 } 
-	claimedprovinces 	  = { 491 495 484 485 486 487 488 489 490 492 493 494 496 497  } 
+	claimedprovinces 	  = { 484 485 486 487 489 490 492 494 496 497 } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 
@@ -254,28 +254,31 @@ inventions = { 3000027 3000028 }
   
 landunit = {
 		id = { type = 30403 id = 1 }
-		name = "Schutz-Kommando RK Norwegen"
+		name = "Hird"
 		location = 483
 		division = {
 			id = { type = 30403 id = 2 }
-			name = "1. RK. Norwegen Schutz-Kommando"
-			strength = 80
-			type = infantry
-			model = 11
+			name = "1. Hird Bataillon"
+            type     = militia
+            model    = 5
+            strength = 25
+	        max_strength = 25
 		}
 		division = {
 			id = { type = 30403 id = 3 }
-			name = "2. RK. Norwegen Schutz-Kommando"
-			strength = 80
-			type = infantry
-			model = 11
+			name = "2. Hird Bataillon"
+            type     = militia
+            model    = 5
+            strength = 25
+	        max_strength = 25
 		}
 		division = {
 			id = { type = 30403 id = 4 }
-			name = "3. RK. Norwegen Schutz-Kommando"
-			strength = 80
-			type = infantry
-			model = 11
+			name = "3. Hird Bataillon"
+            type     = militia
+            model    = 5
+            strength = 25
+	        max_strength = 25
 		}
 	}
     } 

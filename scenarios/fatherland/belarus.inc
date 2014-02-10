@@ -11,10 +11,12 @@
  {  tag                    = BLR 
    name = "Belarussian Central Rada"
    puppet = U40
-   #ai                     = "GER_1942.ai"
-   
+
+   	free = { supplies = 10 } 
+
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes RES = yes NEIN = yes } }
    capital                = 599 
-   manpower               = 100 
+   manpower               = 10
    transports             = 10 
    escorts                = 0 
    
@@ -274,24 +276,24 @@ landunit = {
 		location = 599
 		division = {
 			id = { type = 30406 id = 2 }
-			name = "1. 'Belarus' Diviziya"
-			strength = 100
-			type = infantry
-			model = 11
+			name = "1. Bielaruskaja Krajovaja Abarona"
+			strength = 75
+			type = militia
+			model = 5
 		}
 		division = {
 			id = { type = 30406 id = 3 }
-			name = "2. 'Minsk' Diviziya"
-			strength = 100
-			type = infantry
-			model = 11
+			name = "2. Bielaruskaja Krajovaja Abarona"
+			strength = 75
+			type = militia
+			model = 5
 		}
 		division = {
 			id = { type = 30406 id = 4 }
-			name = "Inf;3. 'Brest' Diviziya"
-			strength = 100
-			type = infantry
-			model = 11
+			name = "3. Bielaruskaja Krajovaja Abarona"
+			strength = 75
+			type = militia
+			model = 5
 		}
 	}
     } 

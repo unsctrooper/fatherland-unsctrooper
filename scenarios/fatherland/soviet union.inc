@@ -9,7 +9,7 @@
   
 	country = 
 	{  tag = SOV 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes RES = yes } }
 	   regular_id = RUS 
 	   intrinsic_gov_type = leninist 
 	   capital = 1138 
@@ -19,8 +19,8 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
        oil = 4250 
        supplies = 7890 
        money = 550 
-       manpower = 1800
-       dissent = 30
+       manpower = 3000
+       dissent = 20
        transports = 30 
        escorts = 15 
     

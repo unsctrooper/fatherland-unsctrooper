@@ -11,7 +11,7 @@
  {  tag                    = FLA
 ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
    #ai                     = "GER_1942.ai"
-   puppet = GER
+   puppet = U47
    control = GER
    
    capital                = 115 
@@ -78,7 +78,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    nationalprovinces      = { 115 117 114} 
    ownedprovinces         = { 115 117 114 49 51 52 } 
    controlledprovinces    = { 115 117 114 49 51 52 } 
-	claimedprovinces 	  = { 116 49 51 52 } 
+	claimedprovinces 	  = { 49 51 52 } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 

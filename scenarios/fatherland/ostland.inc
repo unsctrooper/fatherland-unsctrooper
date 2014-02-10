@@ -12,11 +12,15 @@
    #ai                     = "GER_1942.ai"
    puppet = GER
    control = GER
+   
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes RES = yes NEIN = yes } }
    capital                = 264 
-   manpower               = 30 
+   manpower               = 50
    transports             = 10 
    escorts                = 0 
-   #ground_def_eff         = 0.82 
+   
+   free = { supplies = 10 } 
+
    # Resource Reserves 
    energy                 = 120
    metal                  = 380
@@ -66,7 +70,7 @@
  # Belarus
  # 599 594 591 600 596 601 255 257 251 590 592 593 256 258
 
- nationalprovinces      = {   } 
+ nationalprovinces      = { 270 264 } 
    ownedprovinces         = {
  # Estonia
  274 275 271 272 273 270
@@ -85,7 +89,15 @@
  549 552 560 564 565 566 551 550
  # parts of russia
  561 573 262 259 263 260 258 } 
-claimedprovinces = { }
+claimedprovinces = {
+ # Estonia
+ 274 275 271 272 273 
+ # Latvia
+ 267 269 268 266 265
+ # Ingria
+ 549 552 560 564 565 566 551 550
+ # parts of russia
+ 561 573 262 259 263 260 258 } 
  
 	# Germany 1944.06 techs 
 	# ###################### 
@@ -260,57 +272,125 @@ inventions = { 3000027 3000028 }
 
   ############ German Army in Ostland ###########
   
-   landunit = 
-   { location = 264 
-     name     = "Lettische SS-Freiw.-Div." 
-     leader   = 223 # Reinhardt
-     id       = {  type = 14501 id = 1  } 
-    division = 
-     { id       = {  type = 14501 id = 2  } 
-       name     = "15. Lettische SS-Freiw.-Div." 
-       type     = motorized 
-       model    = 2 
-       strength = 45 
-       experience = 80
-      }
-	  division = 
-     { id       = {  type = 14501 id = 3  } 
-       name     = "19. Lettische SS-Freiw.-Div." 
-       type     = motorized 
-       model    = 2 
-       strength = 65 
-       experience = 80
-      }
-} 
-landunit = 
-   { location = 270 
-     name     = "20. Estische SS-Freiw.-Div." 
-     id       = {  type = 14500 id = 3935  } 
-     division = 
-     { id       = {  type = 14500 id = 3933  } 
-       name     = "20. Estische SS-Freiw.-Div." 
-       type     = motorized 
-       model    = 2 
-       strength = 55 
-       experience = 60
-      }
-    }
+
+
 
 	landunit = 
-   { location = 274 
-     name     = "300. z.b.V. Division" 
+   { location = 270
+     name     = "Omakaitse" 
      id       = {  type = 14501 id = 701  } 
      division = 
-     { id       = {  type = 14500 id = 701  } 
-       name     = "Estonian Security Regiments" 
-       type     = infantry 
-       model    = 11
-       strength = 55 
-       experience = 60
+     { id       = {  type = 14501 id = 702  } 
+       name     = "XCI Miilitsadiviis" 
+       type     = militia 
+       model    = 5
+       strength = 75
+      }
+     division = 
+     { id       = {  type = 14501 id = 703  } 
+       name     = "XCII Miilitsadiviis" 
+       type     = militia 
+       model    = 5
+       strength = 75
+      }
+     division = 
+     { id       = {  type = 14501 id = 704  } 
+       name     = "XCIII Miilitsadiviis" 
+       type     = militia 
+       model    = 5
+       strength = 75
       }
     }
 	
+	landunit = 
+   { location = 273
+     name     = "1. Estnische Hilfspolizei" 
+     id       = {  type = 14501 id = 705  } 
+     division = 
+     { id       = {  type = 14501 id = 706  } 
+       name     = "Estnische Polizei Fusilier Bataillon 29" 
+       type     = militia 
+       model    = 5
+	   extra = artillery 
+       brigade_model = 10
+       strength = 25
+	   max_strength = 25
+      }
+     division = 
+     { id       = {  type = 14501 id = 707  } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 39" 
+       type     = militia 
+       model    = 5
+	   extra = artillery 
+       brigade_model = 10
+       strength = 25
+	   max_strength = 25
+      }
+     division = 
+     { id       = {  type = 14501 id = 708  } 
+       name     = "Schutzmannschaft Pioneer Bataillon 42" 
+       type     = militia 
+       model    = 5
+	   extra = artillery 
+       brigade_model = 10
+       strength = 25
+	   max_strength = 25
+      }
+    }
 	
-	#END
+	landunit = 
+   { location = 264
+     name     = "1. Lettische Hilfspolizei" 
+     id       = {  type = 14501 id = 709  } 
+     division = 
+     { id       = {  type = 14501 id = 710  } 
+       name     = "Sonderkommando Arajs" 
+       type     = infantry
+       model    = 11
+	   extra = artillery 
+       brigade_model = 10
+       strength = 15
+	   max_strength = 15
+       experience = 80
+      }
+     division = 
+     { id       = {  type = 14501 id = 711  } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 11" 
+       type     = militia 
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+     division = 
+     { id       = {  type = 14501 id = 712  } 
+       name     = "Schutzmannschaft Wacht Bataillon 15" 
+       type     = militia 
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    }	
+	
+	landunit = 
+   { location = 258
+     name     = "1. Litauische Hilfspolizei" 
+     id       = {  type = 14501 id = 713  } 
+     division = 
+     { id       = {  type = 14501 id = 714  } 
+       name     = "Saugumas" 
+       type     = militia
+       model    = 5
+       strength = 10
+	   max_strength = 10
+      }
+     division = 
+     { id       = {  type = 14501 id = 716  } 
+       name     = "Schutzmannschaft Wacht Bataillon 3" 
+       type     = militia
+       model    = 5
+       strength = 10
+	   max_strength = 10
+      }
+}
 }
 

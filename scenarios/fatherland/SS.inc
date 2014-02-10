@@ -6,7 +6,7 @@
  {  tag                    = U58
    puppet = GER
    control = GER
-	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes NEIN = yes RES = yes } }
    # Resource Reserves 
    energy                 = 240
    metal                  = 120
@@ -15,8 +15,10 @@
    oil                    = 200 
    supplies               = 200 
    money                  = 10 
-   manpower               = 10
-   capital                = 1050 
+   manpower               = 500
+   capital                = 641 
+   
+	free = { ic = 15 supplies = 25 oil = 25 } 
        
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
@@ -24,13 +26,14 @@
      political_left    = 1 
      freedom           = 1 
      free_market       = 1 
-     professional_army = 7
+     professional_army = 8
      defense_lobby     = 10 
      interventionism   = 1 
     } 
-   nationalprovinces      = { 623 624 639 637 641 638 640 } 
-   ownedprovinces         = { 623 624 639 637 641 638 640 } 
-   controlledprovinces    = { 623 624 639 637 641 638 640 } 
+   nationalprovinces      = { 641 } 
+   ownedprovinces         = { 639 637 641 638 640 } 
+   controlledprovinces    = { 639 637 641 638 640 } 
+   claimedprovinces = { 639 637 638 640 }
    	# Germany 1944.12 techs 
 	# ###################### 
 	techapps = { 
@@ -439,7 +442,7 @@ landunit =
      name     = "XXXX. SS-Panzerkorps" 
      id       = {  type = 14500 id = 11032  } 
      division = 
-     { id       = {  type = 14500 id = 11042  } 
+     { id       = {  type = 14500 id = 11048  } 
        name     = "10. SS-Panzer-Div. 'Frundsberg'" 
        type     = armor 
        model    = 3
@@ -495,5 +498,100 @@ landunit =
        strength = 50
       }
     }
+	landunit = 
+   { location = 633 # Kupyansk 
+     name     = "1. Waffen-SS 'Galizien' Division" 
+     id       = {  type = 14500 id = 11054 } 
+    division = 
+     { id       = {  type = 14500 id = 11042 } 
+       name     = "1. Waffen-SS 'Galizien' Division" 
+       type     = infantry
+       model    = 11
+       strength = 80 
+	   extra = armored_car
+	   brigade_model = 5
+       experience = 20
+      }	
+	  } 
+	  
+   landunit = 
+   { location = 264 
+     name     = "Lettische SS-Freiw.-Div." 
+     id       = {  type = 14500 id = 11043  } 
+    division = 
+     { id       = {  type = 14500 id = 11044  } 
+       name     = "15. Lettische SS-Freiw.-Div." 
+       type     = motorized 
+       model    = 2 
+       strength = 45 
+       experience = 80
+      }
+	  division = 
+     { id       = {  type = 14500 id = 11045  } 
+       name     = "19. Lettische SS-Freiw.-Div." 
+       type     = motorized 
+       model    = 2 
+       strength = 65 
+       experience = 80
+      }
+} 
+
+landunit = 
+   { location = 270 
+     name     = "20. Estische SS-Freiw.-Div." 
+     id       = {  type = 14500 id = 11046   } 
+     division = 
+     { id       = {  type = 14500 id = 11047   } 
+       name     = "20. Estische SS-Freiw.-Div." 
+       type     = motorized 
+       model    = 2 
+       strength = 55 
+       experience = 60
+      }
+    }
+	
+	landunit = 
+   { location = 707 # Tskhinvali
+     name     = "1. Georgien Waffen-SS Legion" 
+     id       = {  type = 14500 id = 11055 } 
+    division = 
+     { id       = {  type = 14500 id = 11049  } 
+       name     = "Georgian Waffen-SS Legion" 
+       type     = infantry 
+       model    = 11
+       strength = 75
+	   max_strength = 75
+      }
+	  }	
+	  
+	landunit = 
+   { location = 709 # Tskhinvali
+     name     = "2. Georgien Waffen-SS Legion" 
+     id       = {  type = 14500 id = 11050 } 
+    division = 
+     { id       = {  type = 14505 id = 11051  } 
+       name     = "342. Kaukasus SS Division" 
+       type     = motorized 
+       model    = 2 
+       strength = 35
+		extra = sp_artillery
+		brigade_model = 3
+        experience = 60
+      }
+	  }	
+	  
+   landunit = 
+   { location = 242 
+     name     = "14. Galizische SS-Freiw.-Div." 
+     id       = {  type = 14500 id = 11052  }
+ division = 
+     { id       = {  type = 14500 id = 11053 } 
+       name     = "14. Galizische SS-Freiw.-Div." 
+       type     = motorized 
+       model    = 2 
+       strength = 70
+       experience = 80
+		}
+	 }
   } 
  

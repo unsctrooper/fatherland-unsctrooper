@@ -15,6 +15,9 @@
    puppet = GER
    control = GER
    
+	free = { supplies = 10 } 
+   
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes RES = yes NEIN = yes } }
    capital                = 244 
    manpower               = 50 
    transports             = 10 
@@ -76,35 +79,35 @@
    SpyInfo                = {  country = "U41" NumberOfSpies = 7  } 
    
    nationalprovinces      = { 
- 244 # Rowne
+ 244 636 617
  
  } 
    
    ownedprovinces         = {  
- 245 249 244  616 614 609 611 612 617 608 610 613 615 628 629 627 632 630 618 607 # Ukraine 
+ 245 249 244  616 614 609 611 612 617 608 610 613 615 628 629 627 632 630 618 607 622 # Ukraine 
  634 633 606 605 635 636 631  # Extra Ukraine
  646 602 603 604 647 # South-West Russia
  247 #Brest-L
 #Polesia
-248 597 598 595
+248 597 598 595 623 624
 } 
 
    controlledprovinces    = {  
- 245 249 244  616 614 609 611 612 617 608 610 613 615 628 629 627 632 630 618 607 # Ukraine
+ 245 249 244  616 614 609 611 612 617 608 610 613 615 628 629 627 632 630 618 607 622 # Ukraine
  634 633 606 605 635 636 631  # Extra Ukraine
  646 602 603 604 647 # South-West Russia
  247 #Brest-L
 #Polesia
-248 597 598 595
+248 597 598 595 623 624
 } 
 
 claimedprovinces = {  
 
-245 249 244 616 614 609 611 612 617 608 610 613 615 628 629 627 632 630 618 607 # Ukraine 
+245 249 616 614 609 612 608 610 613 615 628 629 627 632 630 618 607 622 611 # Ukraine 
 247 #Brest-L province
-248 597 598 595 #Polesia
+248 597 598 595 623 624 #Polesia
 
-634 633 606 605 635 636 631  # Extra Ukraine
+634 633 606 605 635 631  # Extra Ukraine
 646 602 603 604 647 # South-West Russia
 #650 651 658 652 654 657 580 # parts of Russia
 
@@ -296,8 +299,27 @@ inventions = { 3000027 3000028 }
        name     = "1. Deutsch-Ukrainische Besatzung" 
        type     = garrison
        model    = 6
-       strength = 35 
+       strength = 75
        experience = 50
+      }
+	 division = 
+     { id       = {  type = 14506 id = 11 } 
+       name     = "1. OUN Bewaffnete Regiment" 
+       type     = militia
+       model    = 5
+       strength = 40
+	   max_strength = 50
+      }
+    division = 
+     { id       = {  type = 14506 id = 12 } 
+       name     = "3. OUN Bewaffnete Division" 
+       type     = militia
+       model    = 5
+       strength = 40 
+	   extra = artillery 
+       brigade_model = 10
+       experience = 20
+	   max_strength = 50
       }
 } 
 
@@ -310,53 +332,151 @@ inventions = { 3000027 3000028 }
        name     = "1. Deutsch-Ukrainische mot. Infanterie" 
        type     = motorized
        model    = 2
-       strength = 35 
+       strength = 75 
        experience = 50
       }
-} 
-
-	airunit = 
-   { location = 617
-   base = 617
-     name     = "I. RK Ukraine Luftflotte" 
-     id       = {  type = 14506 id = 6  } 
     division = 
-     { id       = {  type = 14506 id = 7  } 
-       name     = "1. RK Ukraine Bomber Fliegerkorps" 
-       type     = strategic_bomber
-       model    = 5
-       strength = 40 
-      }
-} 
-
-	landunit = 
-   { location = 633 # Kupyansk 
-     name     = "Ukrainische Nationalarmee" 
-     id       = {  type = 14506 id = 9 } 
-    division = 
-     { id       = {  type = 14506 id = 10 } 
-       name     = "1. Waffen-SS 'Galizien' Division" 
-       type     = infantry
-       model    = 11
-       strength = 80 
-	   extra = armored_car
-	   brigade_model = 5
-       experience = 20
-      }
-	 division = 
-     { id       = {  type = 14506 id = 11 } 
-       name     = "1. OUN Bewaffnete Regiment" 
+     { id       = {  type = 14506 id = 13 } 
+       name     = "2. OUN Bewaffnete Division" 
        type     = militia
        model    = 5
-       strength = 50 
+       strength = 40
+	   extra = artillery 
+       brigade_model = 10
+       experience = 20
 	   max_strength = 50
       }
 } 
+	landunit = 
+   { location = 617 
+     name     = "1. Ukrainische Hilfspolizei" 
+     id       = {  type = 14506 id = 14  } 
+    division = 
+     { id       = {  type = 14506 id = 15  } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 51" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    division = 
+     { id       = {  type = 14506 id = 16  } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 55" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+	  }
+	  
+	landunit = 
+   { location = 632
+     name     = "2. Ukrainische Hilfspolizei" 
+     id       = {  type = 14506 id = 17 } 
+    division = 
+     { id       = {  type = 14506 id = 18 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 61" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    division = 
+     { id       = {  type = 14506 id = 31 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 63" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+	  }
+	  
+	landunit = 
+   { location = 636
+     name     = "3. Ukrainische Hilfspolizei" 
+     id       = {  type = 14506 id = 19 } 
+    division = 
+     { id       = {  type = 14506 id = 20 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 101" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    division = 
+     { id       = {  type = 14506 id = 21 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 111" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+	  }
+	  
+	landunit = 
+   { location = 628
+     name     = "4. Ukrainische Hilfspolizei" 
+     id       = {  type = 14506 id = 22 } 
+    division = 
+     { id       = {  type = 14506 id = 23 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 126" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    division = 
+     { id       = {  type = 14506 id = 24 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 129" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+	  }
+	  
+	landunit = 
+   { location = 244
+     name     = "5. Ukrainische Hilfspolizei" 
+     id       = {  type = 14506 id = 25 } 
+    division = 
+     { id       = {  type = 14506 id = 26 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 131" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    division = 
+     { id       = {  type = 14506 id = 27 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 134" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+	  }
 
-### Divisions to be activated ###
-
-landdivision = { dormant = yes id = { type = 14506 id = 20 }  name = "2. OUN Bewaffnete Division" type = militia model = 5 extra = artillery brigade_model = 10 }
-landdivision = { dormant = yes id = { type = 14506 id = 21 }  name = "3. OUN Bewaffnete Division" type = militia model = 5 }
-  
-} 
+	 landunit = 
+   { location = 247
+     name     = "6. Ukrainische Hilfspolizei" 
+     id       = {  type = 14506 id = 28 } 
+    division = 
+     { id       = {  type = 14506 id = 29 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 140" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+    division = 
+     { id       = {  type = 14506 id = 30 } 
+       name     = "Schutzmannschaft Wacht Bataillon nr. 143" 
+       type     = militia
+       model    = 5
+       strength = 25
+	   max_strength = 25
+      }
+	  }
+}
 

@@ -10,10 +10,14 @@
  { tag                    = U42 
    puppet 				  = GER
    control 				  = GER
+   
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes MOB9 = yes MOB10 = yes RES = yes NEIN = yes } }
    capital                = 709 
    manpower               = 20 
    transports             = 10 
    escorts                = 0 
+   
+	free = { supplies = 10 } 
 
    # Resource Reserves 
    energy                 = 150
@@ -59,7 +63,7 @@
   }
    SpyInfo                = {  country = "U42" NumberOfSpies = 7  } 
    
-   nationalprovinces      = { 713 } 
+   nationalprovinces      = { 713 709 } 
    ownedprovinces         = {  
 # Armenia
 711 712 714 
@@ -260,32 +264,43 @@ inventions = { 3000027 3000028 }
    { location = 709 
      name     = "Kaukasus motorisierte SS Korps" 
      id       = {  type = 14505 id = 1  } 
-    division = 
-     { id       = {  type = 14505 id = 2  } 
-       name     = "342. Kaukasus SS Division" 
-       type     = motorized 
-       model    = 2 
-       strength = 35
-		extra = sp_artillery
-		brigade_model = 3
-       experience = 60
-      }
 	 division = 
-     { id       = {  type = 14505 id = 3  } 
+     { id       = {  type = 14505 id = 2  } 
        name     = "1. Kaukasus Sicherheitsdivision" 
        type     = bergsjaeger 
        model    = 12
        strength = 40
        experience = 20
       }
+	 division = 
+     { id       = {  type = 14505 id = 3  } 
+       name     = "1. Georgische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
+	 division = 
+     { id       = {  type = 14505 id = 4  } 
+       name     = "2. Georgische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
+	 division = 
+     { id       = {  type = 14505 id = 5  } 
+       name     = "3. Georgische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
 } 
 
 	landunit = 
    { location = 713 # Baku
      name     = "Baku Sicherheits Korps" 
-     id       = {  type = 14505 id = 4  } 
+     id       = {  type = 14505 id = 6 } 
     division = 
-     { id       = {  type = 14505 id = 5  } 
+     { id       = {  type = 14505 id = 7  } 
        name     = "1. Baku Sicherheitsdivision" 
        type     = garrison 
        model    = 6
@@ -293,21 +308,76 @@ inventions = { 3000027 3000028 }
 		extra = artillery
 		brigade_model = 11
       }
+	 division = 
+     { id       = {  type = 14505 id = 8  } 
+       name     = "7. Kaukasisch-Mohammedanische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
+	 division = 
+     { id       = {  type = 14505 id = 9  } 
+       name     = "11. Kaukasisch-Mohammedanische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
+	 division = 
+     { id       = {  type = 14505 id = 10 } 
+       name     = "14. Kaukasisch-Mohammedanische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
 	  }
 	  
 	landunit = 
-   { location = 707 # Tskhinvali
-     name     = "Georgien Waffen-SS Legion" 
-     id       = {  type = 14505 id = 6  } 
+   { location = 711 # Yerevan
+     name     = "Armenische Sicherheits Korps" 
+     id       = {  type = 14505 id = 11 } 
     division = 
-     { id       = {  type = 14505 id = 7  } 
-       name     = "Georgian Waffen-SS Legion" 
-       type     = infantry 
-       model    = 11
+     { id       = {  type = 14505 id = 12  } 
+       name     = "1. Yerevan Sicherheitsdivision" 
+       type     = garrison 
+       model    = 6
+       strength = 35
+		extra = artillery
+		brigade_model = 11
+      }
+	 division = 
+     { id       = {  type = 14505 id = 13 } 
+       name     = "1. Armenische Legion" 
+       type     = militia
+       model    = 5
        strength = 75
-	   max_strength = 75
+      }
+	 division = 
+     { id       = {  type = 14505 id = 14  } 
+       name     = "2. Armenische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
+	 division = 
+     { id       = {  type = 14505 id = 15 } 
+       name     = "3. Armenische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
       }
 	  }
-  
+	  
+	landunit = 
+   { location = 702 # Grozny
+     name     = "Armenische Sicherheits Korps" 
+     id       = {  type = 14505 id = 16 } 
+	 division = 
+     { id       = {  type = 14505 id = 17 } 
+       name     = "1. Nordkaukasische Legion" 
+       type     = militia
+       model    = 5
+       strength = 75
+      }
+	  }
 } 
 

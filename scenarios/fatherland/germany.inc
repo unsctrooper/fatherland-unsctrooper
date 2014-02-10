@@ -8,9 +8,9 @@
   
  country = 
  {  tag                    = GER 
-	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes } }
+	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes RES = yes NEIN = yes } }
     capital                = 163 
-    manpower               = 500
+    manpower               = 5000
     transports             = 135 
     escorts                = 35 
 
@@ -38,7 +38,7 @@
     relation = { tag = ENG value = -200 }
     relation = { tag = U01 value = -200 }
     relation = { tag = HUN value  = 200 access = yes }
-	relation = { tag = FIN value  = 125 access = yes }
+	relation = { tag = FIN value  = 150 access = yes guaranteed = { day = 1 month = december year = 1950 } }
     relation = { tag = IRQ value = 0 }
     relation = { tag = ITA value = 200 access = yes }
     relation = { tag = JAP value = -200 }
@@ -116,7 +116,6 @@
 	    50 53 45 43 44 46
 		
 		#Brussels
-		116
 		
 		#Occupied Russia
 		#Muscovy 
@@ -160,7 +159,6 @@
 	    50 53 45 43 44 46
 		
 		#Brussels
-		116
 							
 		#Occupied Russia
 		#Muscovy
@@ -182,7 +180,6 @@ claimedprovinces = {
 	252 229 250 253 254 255 # Poland
 	336 # Banat
 	553 # Military Administration of Leningrad
-	116 # Brussels
 }
 	# Germany 1944.12 techs 
 	# ###################### 

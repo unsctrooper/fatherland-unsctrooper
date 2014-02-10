@@ -9,12 +9,13 @@
   
  country = 
  {  tag                    = U47 # Reichskommissariat Belgien-Nordfrankreich 
-   #ai                     = "GER_1942.ai"
+
+   ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
    puppet = GER
    control = GER
    
    capital                = 116 
-   manpower               = 50
+   manpower               = 0
    transports             = 10 
    escorts                = 0 
    
@@ -74,21 +75,10 @@
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
-   nationalprovinces      = {  } 
-   ownedprovinces         = { 51 52 49 50 53 45 43 44 46} 
-   controlledprovinces    = { 51 52 49 50 53 45 43 44 46} 
-	claimedprovinces 	  = { 
-	#Flanders
-	#115 117 114
-	#Wallonia
-	#113 108 111 112
-	#Brussels
-	#116
-	# Pas De Calais
-	51 52 49   
-	#NordFrankreich
-	50 53 45 43 44 46
-	} 
+   nationalprovinces      = { 116 } 
+   ownedprovinces         = { 116 } 
+   controlledprovinces    = { 116 } 
+	claimedprovinces 	  = { } 
 	
 	# Germany 1944.06 techs 
 	# ###################### 
@@ -243,7 +233,7 @@ inventions = { 3000027 3000028 }
      political_left    = 1 
      free_market       = 5 
      freedom           = 2 
-     professional_army = 8 
+     professional_army = 6 
      defense_lobby     = 10 
      interventionism   = 1 
     }
@@ -262,5 +252,5 @@ inventions = { 3000027 3000028 }
   # dormant_leaders        = {  }
 
   
-} 
+}
 

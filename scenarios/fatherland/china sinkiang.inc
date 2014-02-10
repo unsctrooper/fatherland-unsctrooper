@@ -7,15 +7,16 @@
  {  tag                    = SIK 
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }	
    # Resource Reserves 
-   #puppet = SOV 
+    puppet = UPE
+	name = SIK44
 energy                 = 240
 metal                  = 120
 rare_materials         = 60
    oil                    = 5000 
    supplies               = 2000 
    money                  = 10 
-   capital                = 1281 # Urumqi 
-   manpower               = 5 
+   capital                = 1281 
+   manpower               = 50 
    dissent                = 40 
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
@@ -64,16 +65,19 @@ rare_materials         = 60
      relation = {  tag = CHI value = -10  } 
     } 
    SpyInfo                = {  country = "SIK" NumberOfSpies = 4  } 
-   headofstate            = {  type = 9 id = 420001  } 
-   headofgovernment       = {  type = 9 id = 420002  } 
-   foreignminister        = {  type = 9 id = 420003  } 
-   armamentminister       = {  type = 9 id = 420004  } 
-   ministerofsecurity     = {  type = 9 id = 420005  } 
-   ministerofintelligence = {  type = 9 id = 420006  } 
-   chiefofstaff           = {  type = 9 id = 420007  } 
-   chiefofarmy            = {  type = 9 id = 420008  } 
-   chiefofnavy            = {  type = 9 id = 420009  } 
-   chiefofair             = {  type = 9 id = 420010  } 
+	headofstate = { type = 9 id = 420100 }
+	headofgovernment = { type = 9 id = 420101 }
+	foreignminister = { type = 9 id = 420011 }
+	armamentminister = { type = 9 id = 420012 }
+	ministerofsecurity = { type = 9 id = 420015 }
+	ministerofintelligence = { type = 9 id = 420016 }
+	chiefofstaff = { type = 9 id = 420019 }
+	chiefofarmy = { type = 9 id = 420020 }
+	chiefofnavy = { type = 9 id = 420009 }
+	chiefofair = { type = 9 id = 420010 }
+	
+	### OOB ###
+	
    landunit = 
    {  location = 1281 
      name     = "Xin'jiang Jüntuan 1" 
@@ -82,23 +86,68 @@ rare_materials         = 60
      {  id   = {  type = 25600 id = 2  } 
        name = "1 Xin'jiang Shi" 
        type = infantry 
-	   strength = 40 
-	   model    = 6
+	   strength = 80
+	   model    = 8
       } 
      Division = 
      {  id   = {  type = 25600 id = 3  } 
        name = "7 Xin'jiang Lü" 
        type = militia 
-	   strength = 40 
-	   model    = 3
+	   strength = 80
+	   model    = 5
       } 
      Division = 
      {  id   = {  type = 25600 id = 4  } 
        name = "8 Xin'jiang Lü" 
        type = militia 
-	   strength = 40 
-	   model    = 3
+	   strength = 80
+	   model    = 5
       } 
     } 
+   landunit = 
+   {  location = 1281 
+     name     = "Xin'jiang Jüntuan 2" 
+     id       = {  type = 25600 id = 5  } 
+     Division = 
+     {  id   = {  type = 25600 id = 6  } 
+       name = "5 Xin'jiang Shi" 
+       type = infantry 
+	   strength = 80
+	   model    = 8
+      } 
+     Division = 
+     {  id   = {  type = 25600 id = 7  } 
+       name = "9 Xin'jiang Lü" 
+       type = militia 
+	   strength = 80
+	   model    = 5
+      } 
+     Division = 
+     {  id   = {  type = 25600 id = 8  } 
+       name = "3 Xin'jiang Lü" 
+       type = militia 
+	   strength = 80
+	   model    = 5
+      } 
+    } 	
+   landunit = 
+   {  location = 1281 
+     name     = "Xin'jiang Jüntuan 2" 
+     id       = {  type = 25600 id = 9  } 
+     Division = 
+     {  id   = {  type = 25600 id = 10  } 
+       name = "11 Xin'jiang Shi" 
+       type = cavalry 
+	   strength = 75
+	   model    = 10
+      } 
+     Division = 
+     {  id   = {  type = 25600 id = 11  } 
+       name = "13 Xin'jiang Lü" 
+       type = cavalry 
+	   strength = 75
+	   model    = 10
+      } 
+    } 	
   } 
  

@@ -12,13 +12,13 @@ country =
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
   capital                = 392
   manpower               = 120
-  # Resource Reserves
+
 energy                 = 840
 metal                  = 420
 rare_materials         = 210
-   oil                    = 500 
-   supplies               = 500 
-   money                  = 25 
+oil                    = 500 
+supplies               = 500 
+money                  = 25 
       
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 

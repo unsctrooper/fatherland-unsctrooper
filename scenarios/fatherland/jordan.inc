@@ -9,7 +9,10 @@
   
  country = 
  {  tag                    = JOR 
- 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
+   name = "Transjordan"
+   puppet = ENG
+   
+ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
  
    # Resource Reserves 
 energy                 = 360
