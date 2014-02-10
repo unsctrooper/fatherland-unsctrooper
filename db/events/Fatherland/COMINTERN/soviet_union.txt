@@ -29,9 +29,9 @@ event = {
 event = {
 	id = 8014300
 	random = no
-	country = SOV
+	country = AXI
 
-	name = "Peace with Axis Exp."
+	name = "Peace with Soviet Union"
 	desc = "DESC" 
 	style = 2
 	picture = "spread_revolution"
