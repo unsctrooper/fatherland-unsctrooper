@@ -20,7 +20,6 @@ event = {
 id = 900000
 random = no
 country = SOV
-save_date = yes
 
 trigger = {
 NOT = {
@@ -49,7 +48,7 @@ deathdate = { day = 30 month = december year = 1980 }
 
 action_a = {
 name = "Perfect, blow up the docks!"
-ai_chance = 75
+ai_chance = 100
 command = { type = trigger which = 900001 } # RK Kaukasus
 command = { type = relation which = U42 value = -50 }
 command = { type = relation which = GER value = -50 }
@@ -59,7 +58,7 @@ command = { type = domestic which = interventionism value = 1 }
 
 action_b = {
 name = "We should not provoke the Axis."
-ai_chance = 25
+ai_chance = 0
 command = { type = domestic which = interventionism value = -1 }
 command = { type = setflag which = kerch_no }
 }
@@ -965,7 +964,7 @@ desc = "900033DESC"
 style = 1
 picture = "fatherland\barbarossa2"
 decision_picture = "fatherland\decision_wehrmacht_color"
-date = { day = 1 month = january year = 1940 }
+date = { day = 1 month = january year = 1953 }
 offset = 5
 deathdate = { day = 30 month = december year = 1980 }
 
