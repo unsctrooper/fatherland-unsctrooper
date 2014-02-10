@@ -25,6 +25,26 @@ event = {
 		command = { type = ground_def_eff value = 0.5 }
 	}
 }
+
+event = {
+	id = 8014286
+	random = no
+	country = SOV
+
+	name = "Peace with Axis Exp."
+	desc = "DESC" 
+	style = 2
+	picture = "spread_revolution"
+	
+   date = { day = 1 month = march year = 1948 }
+
+
+	    action = {
+		name = "8014250A"
+		command = { type = peace which = AXI value = 0 }
+	}
+}
+
 event = { # Fate of Turkestan
 	id = 8014251 
 	random = no
