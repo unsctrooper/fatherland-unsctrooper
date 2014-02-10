@@ -510,10 +510,10 @@ event = { # Test Nuke
 	random = no
 	country = GER
 
-	name = "8014252NAME"
-	desc = "8014252DESC" 
+	name = "Nuclear Test"
+	desc = "Our first nukes are ready to be tested! While we have enough land to decimate, the Führer has other plans: He wants to make it one big propaganda spectacle." 
 	style = 2
-	picture = "east_turkestan"
+	picture = "atomic_research"
 	
     trigger = {
     nuke = 1
@@ -524,7 +524,7 @@ event = { # Test Nuke
 	deathdate = { day = 30 month = december year = 1963 }
 	
 action_a = { 
-name = "8014252A" # Moskau
+name = "Nuke Moscow"
 ai_chance = 75
 command = { type = relation which = SOV value = -200 }
 command = { type = relation which = TRA value = -50 }
@@ -535,13 +535,13 @@ command = { type = construct which = infrastructure where = 572 value = -50 }
 
 }
 action_b = { 
-name = "8014252A" # London
+name = "Nuke London" 
 ai_chance = 5	
 command = { type = trigger which = 701 }
 command = { type = belligerence which = GER value = 25 }
 }
 action_c = { 
-name = "8014252A" # We're no animals!
+name = "We're no animals!" 
 ai_chance = 20
 command = { type = belligerence which = GER value = -5 }
 }
@@ -552,14 +552,13 @@ event = {
 	random = no
 	country = ENG
 
-	name = "817NAME"
-	desc = "817DESC" 
+	name = "London has been nuked!"
+	desc = "In a cowardly attack, the Germans have nuked our capital. This of course means immediate war!" 
 	style = 2
-	picture = "resistance"
+	picture = "atomic_research"
 
 	action = {
-		name = "817A"
-		ai_chance = 50
+		name = "Damn!"
 		command = { type = dissent value = 10 }
         command = { type = construct which = ic where = 29 value = -10 }
         command = { type = construct which = infrastructure where = 29 value = -50 }
