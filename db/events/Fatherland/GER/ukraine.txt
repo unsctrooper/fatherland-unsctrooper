@@ -1,0 +1,262 @@
+### RK Ukraine ###
+##################
+
+event = {
+	id = 93000 # The Rations of the War
+	random = no
+	country = GER	
+	
+	name = "The Rations of the War"
+	desc = "The German people have never suffered too much undernourishment during the Second World War, in contrary to most involved countries. In fact, the Germans lived in relative luxury, fueled by Germany's growing conquests. Only in the latter years, there were some forms of rationing in the country. After the war, the government never fully abolished those programs, due to the closed world market and troubles with increasing argicultural levels in specifically the Lebensraum in the East. However, it was during Hitler 59th birthday all food rationing were abolished - in the actual Fatherland, that was. Many other parts of German-influenced Europe still lived in relative poverty."
+	style = 2
+	picture = "news_paper"	
+	
+	date = { day = 20 month = april year = 1948 } 
+
+	action = {
+		name = "Happy Birthday, mein Führer!" 
+		command = { type = dissent value = -3 }
+		command = { type = free_supplies value = -25 }
+		command = { type = relation which = ITA value = -10 }
+		command = { type = relation which = FRA value = -10 }
+	}
+}
+
+event = {
+	id = 93001 # The Granary of The Fatherland?
+	random = no
+	country = GER	
+	
+	trigger = {
+	event = 93000
+	random = 50
+		}
+		
+	date = { day = 1 month = july year = 1948 } 
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+		
+	name = "The Granary of the Fatherland"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+	    ai_chance = 99
+		name = "We will establish control with force!" 
+		command = { type = dissent value = 3 }
+		command = { type = manpowerpool value = -50 }
+		command = { type = trigger which = 93002 }
+	}
+	action = {
+	    ai_chance = 1
+		name = "They can't revolt forever" 
+		command = { type = dissent value = 25 }
+	}
+}
+
+event = {
+	id = 93002 # German Help
+	random = no
+	country = U41	
+		
+	name = "XXX"
+	desc = "XXX"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "Okay!" 
+		command = { type = dissent value = -5 }
+		command = { type = manpowerpool value = 50 }
+	    command = { type = local_setflag which = GranaryUkraine } 
+	}
+}
+
+event = {
+	id = 93003 # Burning!
+	random = no
+	persistent = yes
+	country = U41	
+	
+	trigger = {
+	flag = GranaryUkraine
+	random = 25
+		}
+		
+	date = { day = 1 month = july year = 1948 } 
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+		
+	name = "Burning!"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "Oh no!" 
+		command = { type = dissent value = 3 }
+		command = { type = supplies value = -500 }
+		command = { type = manpowerpool value = -1 }
+	}
+}
+
+event = {
+	id = 93004 # Massacre!
+	random = no
+	persistent = yes
+	country = U41	
+	
+	trigger = {
+	flag = GranaryUkraine
+	random = 25
+		}
+		
+	date = { day = 1 month = july year = 1948 } 
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+		
+	name = "Massacre!"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "Oh no!" 
+		command = { type = dissent value = 10 }
+		command = { type = manpowerpool value = -1 }
+	}
+}
+
+event = {
+	id = 93005 # Large Scale Revolt!
+	random = no
+	country = U41	
+	
+	trigger = {
+    dissent = 25
+	flag = GranaryUkraine
+		}
+		
+	date = { day = 1 month = july year = 1948 } 
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+		
+	name = "The Granary of the Fatherland"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "Oh no!" 
+		command = { type = dissent value = 5 }
+		### Revolts
+		### German Reply
+	}
+}
+
+event = {
+	id = 93006 # German Reply to Troubles in Ukraine
+	random = no
+	country = GER
+		
+	name = "The Granary of the Fatherland"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "Keep Koch!" 
+		command = { type = dissent value = 3 }
+		command = { type = relation which = U40 value = -10 }
+	}
+	action = {
+		name = "Listen to Rosenberg - Replace Koch" 
+		command = { type = dissent value = 5 }
+		command = { type = relation which = U40 value = 10 }
+		### Sleep Assasination of Koch
+		### Replacement
+	}
+}
+
+event = {
+	id = 93007 # Assassination of Koch!
+	random = no
+	persistent = yes
+	country = U41	
+	
+	trigger = {
+	flag = GranaryUkraine
+	random = 25
+		}
+		
+	date = { day = 1 month = july year = 1948 } 
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+		
+	name = "The Granary of the Fatherland"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "Oh no!" 
+		command = { type = dissent value = 5 }
+		command = { type = manpowerpool value = -1 }
+		command = { type = trigger which = 93008 }
+	}
+}
+event = {
+	id = 93008 # Assassination of Koch!
+	random = no
+	persistent = yes
+	country = GER	
+		
+	name = "Assassination of Koch"
+	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+		name = "This will have reprisals!" 
+		command = { type = dissent value = 3 }
+		command = { type = manpowerpool value = -50 }
+	}
+	action = {
+		name = "That's sad.." 
+		command = { type = dissent value = 15 }
+	}
+}
+
+### Aftermath Events
+
+event = {
+	id = XXXX
+	random = no
+	country = U41	
+		
+	name = "XXX"
+	desc = "XXX"
+	style = 2
+	picture = "news_paper"	
+	
+	action = {
+	    ai_chance = 50
+		name = "Okay!" 
+		command = { type = dissent value = 10 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = U40 value = 10 }
+		command = { type = free_supplies value = 25 }
+	    command = { type = local_setflag which = ReverseColl } # Step 1/2/3 e.g Perhaps move after Koch
+	}
+	action = {
+	    ai_chance = 50
+		name = "We are not here to help you!" 
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = U40 value = -10 }
+	}
+}
+
+### Assisination of Koch! - > German Reply -> Argetinian Offer
+### What to do with Southern Belarus
