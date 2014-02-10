@@ -35,10 +35,10 @@ event = { # Fate of Switzerland
 	random = no
 	country = GER
 
-	name = "8014252NAME"
-	desc = "8014252DESC" 
+	name = "Fate of Switzerland"
+	desc = "We've finally occupied the stubborn Swiss. They're only an offspring of the Deutsche Volke and therefore should be prepared to be integrated!" 
 	style = 2
-	picture = "east_turkestan"
+	picture = "news_paper"
 	
     trigger = {
 	control = { province = 392 data = GER } 
@@ -50,7 +50,7 @@ event = { # Fate of Switzerland
 	deathdate = { day = 30 month = december year = 1963 }
 	
 action_a = { 
-name = "8014252A" # RK Switzerland
+name = "RK Schweiz" 
 command = { type = independence which = SCH value = 1 } 
 command = { type = make_puppet which = SCH }
 command = { type = event which = 821 where = SCH when = 1 }
@@ -62,10 +62,10 @@ event = { # RK Switzerland
 	random = no
 	country = SCH
 
-name = "8014254NAME"
-desc = "8014254DESC" 
+name = "RK Schweiz"
+desc = "Our so called German brother have decided our destinity: We're just one more area to be eventually integrated into the Third Reich." 
 style = 2
-picture = "sinkiang"
+picture = "news_paper"
 	
 action = { 
 name = "Okay!" 
@@ -82,10 +82,10 @@ event = { # Partition of Switzerland
 	random = no
 	country = GER
 
-	name = "8014251NAME"
-	desc = "8014251DESC" 
+	name = "Partition of Switzerland"
+	desc = "Not only do we have interests in Switzerland, so do Italy and France. While France has to be appeased every now and then, Geneva belong to the Holy Roman Borders and we should never offer German blood for French gain. Italy, on the other hand, has been our loyal ally most of the times." 
 	style = 2
-	picture = "0turkestan0"
+	picture = "news_paper"
 	
     trigger = {
     puppet = { country = SCH country = GER }
@@ -97,7 +97,7 @@ event = { # Partition of Switzerland
 
 
 	    action_a = { #Chur to Italy, Geneva to Vichy
-		name = "8014251A"
+		name = "Chur to Italy, Geneva to Vichy"
         ai_chance = 20
         command = { type = relation which = SCH value = -50 }	
         command = { type = relation which = ITA value = 50 }
@@ -106,7 +106,7 @@ event = { # Partition of Switzerland
 		command = { type = trigger which = 824 }		
 	}
 	    action_b = { #Chur to Italy, Geneva Swiss
-		name = "8014251B" 
+		name = "Chur to Italy" 
 		ai_chance = 60
         command = { type = relation which = SCH value = -50 }	
         command = { type = relation which = ITA value = 50 }
@@ -114,7 +114,7 @@ event = { # Partition of Switzerland
 		command = { type = trigger which = 823 }
 	}
 	    action_c = { #All German!
-		name = "8014251B" 
+		name = "They're all German!" 
 		ai_chance = 20
         command = { type = relation which = SCH value = 50 }	
         command = { type = relation which = ITA value = -50 }
@@ -126,10 +126,10 @@ event = { # Chur
 	random = no
 	country = SCH
 
-name = "8014254NAME"
-desc = "8014254DESC" 
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
 style = 2
-picture = "sinkiang"
+picture = "news_paper"
 	
 action = { 
 name = "Okay!" 
@@ -145,10 +145,10 @@ event = { # Geneva
 	random = no
 	country = SCH
 
-name = "8014254NAME"
-desc = "8014254DESC" 
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
 style = 2
-picture = "sinkiang"
+picture = "news_paper"
 	
 action = { 
 name = "Okay!" 
@@ -164,10 +164,10 @@ event = { # Chur
 	random = no
 	country = ITA
 
-name = "8014254NAME"
-desc = "8014254DESC" 
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
 style = 2
-picture = "sinkiang"
+picture = "news_paper"
 	
 action = { 
 name = "Okay!" 
@@ -181,10 +181,10 @@ event = { # Geneva
 	random = no
 	country = FRA
 
-name = "8014254NAME"
-desc = "8014254DESC" 
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
 style = 2
-picture = "sinkiang"
+picture = "news_paper"
 	
 action = { 
 name = "Okay!" 
@@ -203,14 +203,14 @@ event = { # Execution of David Frankfurter
 	style = 2
 	picture = "0turkestan0"
 	
-    trigger = {
-    puppet = { country = SCH country = GER }
-	random = 25
-	}
+    #trigger = {
+    #puppet = { country = SCH country = GER }
+	#random = 25
+	#}
 	
-    date = { day = 1 month = january year = 1948 }
-	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+    #date = { day = 1 month = january year = 1948 }
+	#offset = 30
+	#deathdate = { day = 30 month = december year = 1963 }
 
 
 	    action_a = { #Execute him!
@@ -229,13 +229,13 @@ event = { # Improve Vital Trade Links w/ Vichy France & Italy
 	style = 2
 	picture = "0turkestan0"
 	
-    trigger = {
-    puppet = { country = SCH country = GER }
-	}
+    #trigger = {
+    #puppet = { country = SCH country = GER }
+	#}
 	
-    date = { day = 1 month = january year = 1950 }
-	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+    #date = { day = 1 month = january year = 1950 }
+	#offset = 30
+	#deathdate = { day = 30 month = december year = 1963 }
 
 
 	    action_a = { #Yes
