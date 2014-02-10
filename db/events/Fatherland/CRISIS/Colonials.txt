@@ -3,6 +3,7 @@ id = 1800
 	random = no
 	country = HOL	
 	style = 2
+	save_date = yes
 	picture = "diplomatic_campaign"
 	
 	name = "1800NAME" 
@@ -80,7 +81,6 @@ event = {
 	country = HOL
 	
 	trigger = {
-	control = { province = 1647 data = HOL } 
 	event = { id = 1802 days = 30 } }
 
 	name = "1803NAME"
@@ -101,11 +101,11 @@ event = {
 event = {
 	id = 1804
 	random = no
-	country = USA
+	country = ENG
 	
 	trigger = {
-	NOT = { control = { province = 1647 data = HOL } }
-	event = { id = 1802 days = 30 } }
+	NOT = { event = 1802 }
+	event = { id = 1800 days = 30 } }
 
 	name = "1804NAME"
 	desc = "1804DESC"
@@ -114,7 +114,7 @@ event = {
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 1
-	deathdate = { day = 1 month = april year = 1948 }
+	deathdate = { day = 1 month = april year = 1964 }
 
 	action = {
 		name = ACTION_NAME_OK
@@ -141,7 +141,8 @@ event = {
 	action = {
 		name = ACTION_NAME_OK
 		command = { type = peacetime_ic_mod value = 5 }
-		command = { type = construct which = ic where = 1647 value = 10 }
+		command = { type = construct which = ic where = 1647 value = 5 }
+		command = { type = construct which = infrastructure where = 1647 value = 30 }
 		command = { type = domestic which = free_market value = 1 }
 	}
 }
@@ -273,17 +274,17 @@ event = {
 
 	action = {
 		name = ACTION_NAME_OK
-        command = { type = dissent value = 50 }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = metal }
-		command = { type = add_prov_resource which = -1 value = 50 where = metal }
-		command = { type = add_prov_resource which = -1 value = 50 where = rare_materials }
-		command = { type = add_prov_resource which = -1 value = 50 where = rare_materials }
-		command = { type = add_prov_resource which = -1 value = 50 where = oil }
+        command = { type = dissent value = 5 }
+		command = { type = add_prov_resource which = -1 value = 15 where = energy }
+		command = { type = add_prov_resource which = -1 value = 10 where = energy }
+		command = { type = add_prov_resource which = -1 value = 10 where = energy }
+		command = { type = add_prov_resource which = -1 value = 10 where = energy }
+		command = { type = add_prov_resource which = -1 value = 10 where = energy }
+		command = { type = add_prov_resource which = -1 value = 25 where = metal }
+		command = { type = add_prov_resource which = -1 value = 10 where = metal }
+		command = { type = add_prov_resource which = -1 value = 25 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 10 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 10 where = oil }
 	}
 }
 event = {
@@ -416,7 +417,6 @@ event = {
 	id = 1814
 	random = no
 	country = BEL
-	save_date = yes
 
 	name = "1814NAME"
 	desc = "1814DESC"
@@ -427,14 +427,15 @@ event = {
 		name = ACTION_NAME_OK
 		command = { type = supplies value = 5000 } 
 		command = { type = construct which = ic where = 899 value = 10 }
+		command = { type = construct which = infrastructure where = 899 value = 30 }
 		command = { type = add_division value = armor when = 3 }
 		command = { type = add_division value = tactical_bomber when = 9 }
 		command = { type = peacetime_ic_mod value = 5 }
 		command = { type = domestic which = free_market value = 1 }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = energy }
-		command = { type = add_prov_resource which = -1 value = 50 where = metal }
-		command = { type = add_prov_resource which = -1 value = 50 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 25 where = energy }
+		command = { type = add_prov_resource which = -1 value = 25 where = energy }
+		command = { type = add_prov_resource which = -1 value = 25 where = metal }
+		command = { type = add_prov_resource which = -1 value = 25 where = rare_materials }
 		command = { type = add_prov_resource which = -1 value = 10 where = oil }
 	}
 }
