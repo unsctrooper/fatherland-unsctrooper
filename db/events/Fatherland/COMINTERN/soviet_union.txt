@@ -1,50 +1,634 @@
+
+####################################
+### Round I - Turkestan Troubles ###
+####################################
+
+
 event = {
 	id = 8014250
 	random = no
 	country = SOV
 
-	trigger = {
-	event = { id = 900000 days = 30 } 
-	}
-
 	name = "8014250NAME"
 	desc = "8014250DESC" 
 	style = 2
-	picture = "fatherland\baku_oilwells"
+	picture = "spread_revolution"
 	
-	date = { day = 1 month = january year = 1948 }
-	offset = 7
+   date = { day = 5 month = january year = 1948 }
+
+
+	    action = {
+		name = "8014250A"
+        command = { type = dissent value = 5 }
+		command = { type = max_organization which = land value = -10 }
+		command = { type = morale which = land value = -20 }
+		command = { type = ground_def_eff value = 0.5 }
+	}
+}
+event = { # Fate of Turkestan
+	id = 8014251 
+	random = no
+	country = SOV
+
+	name = "8014251NAME"
+	desc = "8014251DESC" 
+	style = 2
+	picture = "0turkestan0"
+	
+    trigger = {
+	control = { province = 1103 data = SOV } #Tashkent
+	atwar = no 
+	NOT = { exists = UPE } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { #Decentralize
+		name = "8014251A"
+        ai_chance = 80
+        command = { type = dissent value = -5 }
+        command = { type = manpowerpool value = -100 } 
+		command = { type = peacetime_ic_mod value = -5 }
+		command = { type = morale which = land value = 10 }
+		command = { type = max_organization which = land value = 5 }
+		command = { type = ground_def_eff value = 0.75 }
+	    command = { type = addcore which = 1101 }
+	    command = { type = addcore which = 1102 }
+	    command = { type = addcore which = 1100 }
+	    command = { type = addcore which = 1097 }
+	    command = { type = addcore which = 1099 }
+	    command = { type = addcore which = 1098 }
+	    command = { type = addcore which = 1104 }
+	    command = { type = addcore which = 1105 }
+	    command = { type = addcore which = 1106 }
+	    command = { type = addcore which = 1107 }	
+	    command = { type = addcore which = 506 }
+	    command = { type = addcore which = 507 }
+	    command = { type = addcore which = 505 }
+	    command = { type = addcore which = 500 }
+	    command = { type = addcore which = 498 }
+	    command = { type = addcore which = 504 }
+	    command = { type = addcore which = 1114 }
+	    command = { type = addcore which = 1117 }
+	    command = { type = addcore which = 1118 }
+	    command = { type = addcore which = 1116 }
+	    command = { type = addcore which = 1103 }
+	    command = { type = addcore which = 1110 }
+	    command = { type = addcore which = 503 }
+	    command = { type = addcore which = 1100 }
+	    command = { type = addcore which = 1108 }
+	    command = { type = addcore which = 1113 }
+	    command = { type = addcore which = 1115 }
+	    command = { type = addcore which = 1111 }
+	    command = { type = addcore which = 502 }
+	    command = { type = addcore which = 499 }
+	    command = { type = addcore which = 1109 }
+	    command = { type = addcore which = 1112 }
+	    command = { type = addcore which = 501 }
+	}
+	    action_b = { #Centralize
+		name = "8014251B" 
+		ai_chance = 20
+        command = { type = dissent value = -10 }
+        command = { type = research_mod value = 10 }
+        command = { type = tc_mod value = 10 }
+		command = { type = peacetime_ic_mod value = 5 }
+		command = { type = morale which = land value = 10 }
+		command = { type = max_organization which = land value = 5 }
+		command = { type = ground_def_eff value = 0.75 }
+	    command = { type = addcore which = 506 }
+	    command = { type = addcore which = 507 }
+	    command = { type = addcore which = 505 }
+	    command = { type = addcore which = 500 }
+	    command = { type = addcore which = 498 }
+	    command = { type = addcore which = 504 }
+	    command = { type = addcore which = 1114 }
+	    command = { type = addcore which = 1117 }
+	    command = { type = addcore which = 1118 }
+	    command = { type = addcore which = 1110 }
+	    command = { type = addcore which = 1116 }
+	    command = { type = addcore which = 503 }
+	    command = { type = addcore which = 1100 }
+	    command = { type = addcore which = 1108 }
+	    command = { type = addcore which = 1113 }
+	    command = { type = addcore which = 1115 }
+	    command = { type = addcore which = 1111 }
+	    command = { type = addcore which = 502 }
+	    command = { type = addcore which = 499 }
+	    command = { type = addcore which = 1109 }
+	    command = { type = addcore which = 1112 }
+	    command = { type = addcore which = 501 }
+	    command = { type = addcore which = 1273 }
+	    command = { type = addcore which = 1274 }
+	    command = { type = addcore which = 1275 }
+	    command = { type = addcore which = 1276 }
+	    command = { type = addcore which = 1277 }
+	    command = { type = addcore which = 1279 }
+	    command = { type = addcore which = 1280 }
+	    command = { type = addcore which = 1281 }
+	    command = { type = addcore which = 1282 }
+	}
+}
+
+event = { # Fate of East Turkestan
+	id = 8014252 
+	random = no
+	country = SOV
+    save_date = yes
+
+	name = "8014252NAME"
+	desc = "8014252DESC" 
+	style = 2
+	picture = "east_turkestan"
+	
+    trigger = {
+	atwar = no
+	control = { province = 1281 data = SOV } # Uruumqi
+	NOT = { exists = SIK } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action_a = { 
+name = "8014252A" 
+ai_chance = 5
+command = { type = dissent value = 3 }
+command = { type = local_setflag which = SIKSSR } 
+command = { type = relation which = CHI value = -50 }	
+command = { type = relation which = CHC value = -50 }	
+command = { type = addclaim which = 1273 }
+command = { type = addclaim which = 1274 }
+command = { type = addclaim which = 1275 }
+command = { type = addclaim which = 1276 }
+command = { type = addclaim which = 1277 }
+command = { type = addclaim which = 1278 }
+command = { type = addclaim which = 1279 }
+command = { type = addclaim which = 1280 }
+command = { type = addclaim which = 1281 }
+command = { type = addclaim which = 1282 }
+}
+action_b = { 
+name = "8014252B" # Reinstall Shenq Qai
+ai_chance = 70
+command = { type = dissent value = -3 }
+command = { type = independence which = SIK value = 1 } 
+command = { type = make_puppet which = SIK }
+command = { type = relation which = CHI value = -25 }	
+command = { type = relation which = CHC value = -25 }
+command = { type = event which = 8014254 where = SIK when = 1 }
+}	
+action_c = { 
+name = "8014252C" # Return to China after Civil War
+ai_chance = 20
+command = { type = dissent value = 1 }
+command = { type = local_setflag which = SovietReturnsSik } 
+command = { type = relation which = CHI value = 50 }	
+command = { type = relation which = CHC value = 50 }
+}
+action_d = { 
+name = "8014252B" # Contain Turkestani Elements
+ai_chance = 5
+command = { type = dissent value = -1 }
+command = { type = independence which = SIK value = 1 }  
+command = { type = make_puppet which = SIK }
+command = { type = relation which = CHI value = -50 }	
+command = { type = relation which = CHC value = -50 }
+command = { type = event which = 8014255 where = SIK when = 1 }
+}	
+}
+
+event = { # Integration of Sinkiang SSR
+	id = 8014253 
+	random = no
+	country = SOV
+
+	name = "8014253NAME"
+	desc = "8014253DESC" 
+	style = 2
+	picture = "sinkiang"
+	
+    trigger = {
+	event = { id = 8014253 days = 180 } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action = { 
+name = "Okay!" 
+command = { type = addcore which = 1273 }
+command = { type = addcore which = 1274 }
+command = { type = addcore which = 1275 }
+command = { type = addcore which = 1276 }
+command = { type = addcore which = 1277 }
+command = { type = addcore which = 1278 }
+command = { type = addcore which = 1279 }
+command = { type = addcore which = 1280 }
+command = { type = addcore which = 1281 }
+command = { type = addcore which = 1282 }
+}
+}
+
+event = { # Shenq Quai
+	id = 8014254 
+	random = no
+	country = SIK
+
+	name = "8014254NAME"
+	desc = "8014254DESC" 
+	style = 2
+	picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = headofstate which = 420024 }  
+command = { type = headofgovernment which = 420025 }  
+command = { type = add_division value = militia when = 1 }
+command = { type = add_division value = militia when = 1 }
+command = { type = add_division value = militia when = 1 }
+}
+}
+
+event = { # Turkestani State
+	id = 8014255 
+	random = no
+	country = SIK
+
+	name = "8014255NAME"
+	desc = "8014255DESC" 
+	style = 2
+	picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = name where = SIK which = TRK_COM }
+command = { type = flag_ext where = SIK which = "_TRK_COM" }
+command = { type = set_domestic which = democratic value = 4 }
+command = { type = set_domestic which = political_left value = 8 }
+command = { type = headofstate which = 420100 } 
+command = { type = headofgovernment which = 420101 } 
+command = { type = add_division value = militia when = 1 }
+command = { type = add_division value = militia when = 1 }
+command = { type = add_division value = militia when = 1 }
+command = { type = add_division value = cavalry when = 1 }
+command = { type = add_division value = cavalry when = 1 }
+command = { type = add_division value = cavalry when = 1 }
+}
+}
+
+###################################
+### Round II - Siberia Prepares ###
+###################################
+### Russian Empire ###
+######################
+event = { # Soviet Resurgent!!
+	id = 8014256 
+	random = no
+	country = U59
+
+	name = "8014256NAME"
+	desc = "8014256DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+    trigger = {
+    event = 8014251
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { # Side with Zdhanov
+		name = "8014256A"
+        ai_chance = 75
+        command = { type = dissent value = 5 }
+		command = { type = trigger which = 8014257 }
+	}
+	    action_b = { # Weather the storm
+		name = "8014256B" 
+		ai_chance = 25
+        command = { type = dissent value = -10 }
+		command = { type = trigger which = 8014259 }
+	}
+}
+
+event = { # Romanov Request
+	id = 8014257 
+	random = no
+	country = SIB
+
+	name = "8014257NAME"
+	desc = "8014257DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+
+	    action_a = { # Side with the Romanovs!
+		name = "8014257A"
+        ai_chance = 80
+        command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014258 }
+	}
+	    action_b = { # Remove the Tsars!
+		name = "8014257B" 
+		ai_chance = 20
+        command = { type = dissent value = 5 }
+		command = { type = war which = U59 }	
+        command = { type = addcore which = 1142 }
+        command = { type = addcore which = 1143 }
+        command = { type = addcore which = 1144 }
+        command = { type = addcore which = 1145 }
+        command = { type = addcore which = 1146 }
+        command = { type = addcore which = 1147 }
+	}
+}
+event = { # What to do about Russian Empire
+	id = 8014259
+	random = no
+	country = SIB
+
+	name = "8014259NAME"
+	desc = "8014259DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+
+	    action_a = { 
+		name = "8014259A"
+        ai_chance = 99
+        command = { type = dissent value = 5 }
+		command = { type = war which = U59 }	
+        command = { type = addcore which = 1142 }
+        command = { type = addcore which = 1143 }
+        command = { type = addcore which = 1144 }
+        command = { type = addcore which = 1145 }
+        command = { type = addcore which = 1146 }
+        command = { type = addcore which = 1147 }
+	}
+	    action_b = { 
+		name = "8014259B"
+        ai_chance = 1
+        command = { type = dissent value = 1 }
+	}
+}
+
+event = { # Romanov Dzhanov Alliance
+	id = 8014258 
+	random = no
+	country = U59
+
+	name = "8014258NAME"
+	desc = "8014258DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+
+
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = 3 }
+		command = { type = alliance which = SIB }	
+		command = { type = relation which = SIB value = 200 }		
+        command = { type = addcore which = 1143 }
+        command = { type = addcore which = 1144 }
+        command = { type = addcore which = 1145 }
+        command = { type = addcore which = 1146 }
+        command = { type = addcore which = 1147 }
+	}
+}
+################
+### Mongolia ###
+################
+event = { # Soviet Resurgent!!
+	id = 8014260 
+	random = no
+	country = MON
+
+	name = "8014260NAME"
+	desc = "8014260DESC" 
+	style = 2
+	picture = "mongolia"
+	
+    trigger = {
+    event = 8014251
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { # Check with Zhdanov
+		name = "8014260A"
+        ai_chance = 90
+        command = { type = dissent value = 1 }
+		command = { type = trigger which = 8014261 }
+	}
+	    action_b = { # We'll Rather Stay Independent
+		name = "8014260B" 
+		ai_chance = 10
+        command = { type = dissent value = -5 }
+		command = { type = trigger which = 8014264 }		
+	}
+}
+
+event = { # Mongols Offer
+	id = 8014261 
+	random = no
+	country = SIB
+
+	name = "8014261NAME"
+	desc = "8014261DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action_a = { # Recognize their claims
+		name = "8014261A"
+        ai_chance = 50
+        command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014262 }
+	}
+	    action_b = { # Request our rightfull lands
+		name = "8014261B" 
+		ai_chance = 50
+        command = { type = dissent value = -3 }
+		command = { type = trigger which = 8014263 }
+        command = { type = addcore which = 1119 }
+        command = { type = addcore which = 1167 }
+        command = { type = addcore which = 1162 }
+	}
+}
+
+event = { # Dhzanov-Mongol Alliance
+	id = 8014262 
+	random = no
+	country = MON
+
+	name = "8014262NAME"
+	desc = "8014262DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = 1 }
+		command = { type = alliance which = SIB }
+		command = { type = relation which = SIB value = 200 }				
+        command = { type = addcore which = 1119 }
+        command = { type = addcore which = 1167 }
+        command = { type = addcore which = 1162 }
+	}
+}
+
+event = { # Alliance for Offers
+	id = 8014263 
+	random = no
+	country = MON
+
+	name = "8014263NAME"
+	desc = "8014263DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action_a = { # Accept
+		name = "8014263A"
+        ai_chance = 75
+        command = { type = dissent value = 3 }
+        command = { type = secedeprovince which = SIB value = 1119 when = 1 }
+        command = { type = secedeprovince which = SIB value = 1167 when = 1 }
+        command = { type = secedeprovince which = SIB value = 1162 when = 1 }
+		command = { type = alliance which = SIB }	
+		command = { type = relation which = SIB value = 200 }		
+
+	}
+	    action_b = { # No way!
+		name = "8014263B" 
+		ai_chance = 25
+        command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014264 }
+	}
+}
+
+event = { # Dzhanov Reply
+	id = 8014264 
+	random = no
+	country = SIB
+
+	name = "8014264NAME"
+	desc = "8014264DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action_a = { # Let Them Have It
+		name = "8014264A"
+        ai_chance = 75
+        command = { type = dissent value = 3 }
+		command = { type = alliance which = MON }
+		command = { type = relation which = MON value = 200 }		
+
+	}
+	    action_b = { # WAR!
+		name = "8014264B" 
+		ai_chance = 25
+        command = { type = dissent value = -3 }
+		command = { type = war which = MON }	
+	}
+}
+
+event = { # What to do about Mongols
+	id = 8014271
+	random = no
+	country = SIB
+
+	name = "8014271NAME"
+	desc = "8014271DESC" 
+	style = 2
+	picture = "mongolia"
+
+	    action_a = { 
+		name = "8014271A"
+        ai_chance = 75
+        command = { type = dissent value = 5 }
+		command = { type = war which = MON }	
+        command = { type = addcore which = 1119 }
+        command = { type = addcore which = 1167 }
+        command = { type = addcore which = 1162 }
+	}
+	    action_b = { 
+		name = "8014271B"
+        ai_chance = 25
+        command = { type = dissent value = 1 }
+	}
+}
+############################################
+### Round III - Soviet Leadership Crisis ###
+############################################
+
+event = {
+	id = 8014265
+	random = no
+	country = SOV
+
+	trigger = {
+    event = 900000
+	random = 35
+	atwar = no 
+	}
+
+	name = "8014265NAME"
+	desc = "8014265DESC" 
+	style = 2
+	picture = "nwo\succession_of_stalin"
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 14
 	deathdate = { day = 12 month = march year = 1966 }
 
 	action = {
 		name = "8014250A"
         command = { type = dissent value = 5 }
+		command = { type = max_organization which = land value = -5 }
+		command = { type = morale which = land value = -10 }
 	}
 }
 event = {
-	id = 8014251
+	id = 8014266
 	random = no
 	country = SOV
+    save_date = yes
 	
 	trigger = {
-    event = 8014250
+    event = 8014265
 	random = 25
 	}
 
-	name = "8014251NAME"
-	desc = "8014251DESC" 
+	name = "8014266NAME"
+	desc = "8014266DESC" 
 	style = 2
 	picture = "nwo\succession_of_stalin"
 	
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 1 month = january year = 1949 }
 	offset = 14
 	deathdate = { day = 12 month = march year = 1966 }
 
 	action = {
-		name = "8014251A" # Molotov
+		name = "8014266A" # Molotov
 		ai_chance = 50
         command = { type = dissent value = 10 }
-		command = { type = trigger which = 8014252 }
+		command = { type = trigger which = 8014267 }
+		command = { type = trigger which = 8014270 }
 		command = { type = set_domestic which = democratic value = 2 }
 		command = { type = set_domestic which = political_left value = 10 }
 		command = { type = set_domestic which = free_market value = 1 }
@@ -53,10 +637,11 @@ event = {
 		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
 	}
 	action = {
-		name = "8014251B" # Beria
+		name = "8014266B" # Beria
 		ai_chance = 30
         command = { type = dissent value = 10 }
-		command = { type = trigger which = 8014253 }
+		command = { type = trigger which = 8014268 }
+		command = { type = trigger which = 8014270 }
 		command = { type = set_domestic which = democratic value = 1 }
 		command = { type = set_domestic which = political_left value = 9 }
 		command = { type = set_domestic which = free_market value = 4 }
@@ -65,10 +650,11 @@ event = {
 		command = { type = headofgovernment which = 30017 } # Beria
 	}
 	action = {
-		name = "8014251C" # Voroshilov / Zhukov
+		name = "8014266C" # Voroshilov / Zhukov
 		ai_chance = 20
         command = { type = dissent value = 10 }
-		command = { type = trigger which = 8014254 }
+		command = { type = trigger which = 8014269 }
+		command = { type = trigger which = 8014270 }
 		command = { type = set_domestic which = democratic value = 1 }
 		command = { type = set_domestic which = political_left value = 8 }
 		command = { type = set_domestic which = free_market value = 1 }
@@ -78,7 +664,7 @@ event = {
 	}
 }
 event = {
-	id = 8014252
+	id = 8014267
 	random = no
 	country = SOV
 
@@ -138,7 +724,7 @@ event = {
 	}
 }
 event = {
-	id = 8014253
+	id = 8014268
 	random = no
 	country = SOV
 
@@ -203,7 +789,7 @@ event = {
 	}
 }
 event = {
-	id = 8014254
+	id = 8014269
 	random = no
 	country = SOV
 
@@ -255,3 +841,495 @@ event = {
 		command = { type = sleepminister which = 30094 }   		
 	}
 }
+event = { # Romanov Dzhanov Alliance
+	id = 8014270 
+	random = no
+	country = SIB
+	
+	trigger = {
+    event = 8014266
+	}
+
+	name = "8014270NAME"
+	desc = "8014270DESC" 
+	style = 2
+	picture = "nwo\succession_of_stalin"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+	
+	    action = { 
+		name = "Damn!"
+        command = { type = war which = SOV }
+	}
+}
+event = { # Dzhanov Influences
+	id = 8014279
+	random = no
+	country = SOV
+    persistent = yes
+	
+	trigger = {
+    war = { country = SOV country = SIB }
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	name = "Dzhanov Influences"
+	desc = "Dzhanov's alternative, more democratic form of Communism has attracted some support within the Soviet Union. Perhaps we should check our ranks more often.." 
+	style = 2
+	picture = "nwo\succession_of_stalin"
+	
+	    action = { 
+		name = "Damn!"
+        command = { type = dissent value = 3 }
+        command = { type = switch_allegiance which = -1 where = SIB }
+		command = { type = max_organization which = land value = -5 }
+		command = { type = morale which = land value = -10 }
+	}
+}
+event = { # Tsarist Influences
+	id = 8014272 
+	random = no
+	country = SOV
+    persistent = yes
+
+	trigger = {
+    war = { country = SOV country = U59 }
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Tsarist Influences"
+	desc = "Even after all the Soviet purges and propaganda, there are still conservative elements loyal to the Tsar. Perhaps we should check our ranks more often.." 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Damn!"
+        command = { type = dissent value = 3 }
+        command = { type = switch_allegiance which = -1 where = U59 }
+		command = { type = max_organization which = land value = -5 }
+		command = { type = morale which = land value = -10 }
+	}
+}
+event = { # Romanov Defeat - Dzhanov
+	id = 8014273 
+	random = no
+	country = SIB
+
+	trigger = {
+    war = { country = SIB country = U59 }
+	control = { province = 1142 data = SIB } # Novo
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Romanov Defeat"
+	desc = "We have marched into Novobirsk and executed the fake Tsarina. Long live Zhdanovism!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = U59 value = 1 }
+	}
+}
+event = { # Romanov Defeat - Soviet
+	id = 8014274
+	random = no
+	country = SIB
+
+	trigger = {
+    war = { country = SOV country = U59 }
+	control = { province = 1142 data = SOV } # Novo
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Romanov Defeat"
+	desc = "We have marched into Novobirsk and executed the fake Tsarina. Long live Bolshevism!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = U59 value = 1 }
+	}
+}
+event = { # Dzhanov Defeat - Romanov
+	id = 8014276 
+	random = no
+	country = U59
+
+	trigger = {
+    war = { country = U59 country = SIB }
+	control = { province = 1157 data = U59 } # Kansk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of Zhdanov"
+	desc = "We have marched into Kansk, executed Zhdanov and abolished the fake Siberian autority. Long live the Tsarina!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SIB value = 1 }
+	}
+}
+event = { # Dzhanov Defeat - Soviet
+	id = 8014280 
+	random = no
+	country = SOV
+
+	trigger = {
+    war = { country = SOV country = SIB }
+	control = { province = 1157 data = SOV } # Kansk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of Zhdanov"
+	desc = "We have marched into Kansk, executed Zhdanov and abolished the fake Siberian autority. Long live Bolshevism!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SIB value = 1 }
+	}
+}
+event = { # Soviet Defeat - Romanov
+	id = 8014277 
+	random = no
+	country = U59
+
+	trigger = {
+    war = { country = U59 country = SOV }
+	control = { province = 1138 data = U59 } # Omsk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of the Soviets"
+	desc = "We have marched into Omsk and abolished the crumbling Soviet Union. Long live the Tsarina!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SOV value = 1 }
+	}
+}
+event = { # Soviet Defeat - Dzhanov
+	id = 8014278
+	random = no
+	country = SIB
+
+	trigger = {
+    war = { country = SIB country = SOV }
+	control = { province = 1138 data = SIB } # Omsk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of the Soviets"
+	desc = "We have marched into Omsk and abolished the crumbling Soviet Union. Long live Zhdanov!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SOV value = 1 }
+	}
+}
+
+#######################################
+### Round IV - Far Eastern Republic ###
+#######################################
+event = { # What to do about the FER ? 
+	id = 8014286 
+	random = no
+	country = SOV
+    save_date = yes
+
+	name = "The Status of the Far Eastern Republic"
+	desc = "Now that we have established control over these unrecognized breakoff states, it's time to face the Allied aligned Far Eastern Republic." 
+	style = 2
+	picture = "news_paper"
+	
+    trigger = {
+	AND = {
+	event = { id = 8014266 days = 365 } 
+	NOT = { exists = SIB }
+	NOT = { exists = U59 }		
+	}
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { # Push the Allies for a Conference!
+		name = "Push the Allies for a Conference!"
+        ai_chance = 95
+        command = { type = dissent value = -1 }
+	    command = { type = trigger which = 8014287 }
+	}
+	    action_b = { # War!
+		name = "Violence is the way!" 
+		ai_chance = 4
+        command = { type = dissent value = 1 }
+		command = { type = war which = U57 }
+		command = { type = setflag which = SOVUSAenemy } 
+	}
+	    action_c = { # 
+		name = "We have enough land to govern for now!" 
+		ai_chance = 1
+        command = { type = dissent value = 5 }
+		command = { type = setflag which = SOVUSAneutr } 
+	}
+}
+
+event = { # Soviet Offer
+	id = 8014287
+	random = no
+	country = USA
+
+	name = "The Soviet Plea"
+	desc = "The Soviet Union, slowly getting back on it's feet, has approached us regarding the status of the Far Eastern Republic. While we've never been friends, the Soviet Union is still an profitable partner in the battle against the Axis." 
+	style = 2
+	picture = "news_paper"
+	
+	    action_a = { # Yes
+		name = "Call a Conference!"
+        ai_chance = 80
+		command = { type = relation which = SOV value = 50 }
+		command = { type = relation which = U57 value = -50 }
+        command = { type = event which = 8014282 where = USA when = 14 }		
+	}
+	    action_b = { # No 
+		name = "Communism is over! No!" 
+		ai_chance = 20
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = U57 value = 50 }
+	    command = { type = trigger which = 8014281 }	
+	}
+}
+
+event = { # The Americans Refuse!
+	id = 8014281
+	random = no
+	country = SOV
+
+	name = "American Refusal"
+	desc = "The American have refused our request to reconsider the status of the Far Eastern Republic." 
+	style = 2
+	picture = "news_paper"
+	
+	    action_a = { # War it is!
+		name = "War it is!"
+        ai_chance = 50
+		command = { type = war which = U57 }
+		command = { type = relation which = USA value = -100 }		
+		command = { type = setflag which = SOVUSAenemy } 
+	}
+	    action_b = { # We have to accept..
+		name = "We have to accept.." 
+		ai_chance = 50
+        command = { type = dissent value = 5 }
+		command = { type = setflag which = SOVUSAneutr } 
+	}
+}
+
+event = { # Conference of Tokyo
+	id = 8014282
+	random = no
+	country = USA
+
+	name = "Conference of Tokyo"
+	desc = "Soviet and Western diplomats have gathered in the capital of Japan to discuss the status of the Far Eastern Republic." 
+	style = 2
+	picture = "news_paper"
+	
+	    action_a = { # Far Eastern Republic to Soviets, with consessions
+		name = "The Far Eastern Republic is integral to Russia"
+        ai_chance = 75
+		command = { type = relation which = SOV value = 25 }	
+	    command = { type = trigger which = 8014283 }		
+	}
+	    action_b = { # The FER stays independent!
+		name = "The Far Eastern Republic stays independent!" 
+		ai_chance = 25
+		command = { type = relation which = SOV value = -100 }	
+	    command = { type = trigger which = 8014284 }
+	}
+}
+
+event = { # Conference of Tokyo - Offer I
+	id = 8014283
+	random = no
+	country = SOV
+
+	name = "The American Offer"
+	desc = "The Americans have approached us with a very lucrative deal. We'll be recognized rule over Primorsk, for economic and political consessions." 
+	style = 2
+	picture = "news_paper"
+	
+	    action_a = { # Yes!
+		name = "Yes!"
+        ai_chance = 99
+	    command = { type = inherit which = U57 value = 1 }
+        command = { type = peacetime_ic_mod value = -3 }
+        command = { type = access which = USA }	
+        command = { type = dissent value = 3 }
+		command = { type = setflag which = SOVUSAfriendly } 		
+	}
+	    action_b = { # Concessions? nah! 
+		name = "Consessions? No!" 
+		ai_chance = 1
+		command = { type = relation which = USA value = -100 }	
+		command = { type = setflag which = SOVUSAneutr } 
+	}
+}
+
+event = { # Conference of Tokyo - Offer II
+	id = 8014284
+	random = no
+	country = SOV
+
+	name = "The American Offer"
+	desc = "The Americans have approached us with an outrageous deal. They want us to recognize the Far Eastern Republic as independent entity!" 
+	style = 2
+	picture = "news_paper"
+	
+	    action_a = { # 
+		name = "We have no choice.."
+        ai_chance = 20
+		command = { type = relation which = USA value = 50 }	
+		command = { type = relation which = U57 value = 50 }
+        command = { type = peacetime_ic_mod value = 5 }
+		command = { type = setflag which = SOVUSAfriendly } 		
+	}
+	    action_b = { # 
+		name = "No, we'll take it ourselves!" 
+		ai_chance = 80
+		command = { type = relation which = USA value = -200 }	
+		command = { type = war which = U57 }
+		command = { type = setflag which = SOVUSAenemy } 
+	}
+}
+##########################
+### Round V - Sakhalin ###
+##########################
+event = { # What to do with the Sakhalin Islands?
+	id = 8014285
+	random = no
+	country = USA
+
+	
+    trigger = {
+	event = { id = 8014286 days = 60 } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "The Status of the Sakhalin Islands"
+	desc = "In the aftermath of World War II we occupied the Sakhalin Islands and kept it under our control, with both Japan and the Soviets being crumbling and unstable powers. With it being the last piece of Russian lands under our influence, perhaps it's wise to get rid of it while we can!" 
+	style = 2
+	picture = "news_paper"
+	
+action = {
+trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
+ai_chance = 10 # Military Administration
+name = "We'll put it under military administration"
+command = { type = relation which = JAP value = -25 }	
+command = { type = relation which = SOV value = -25 }	
+}
+action = {
+trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
+ai_chance = 90
+name = "Hand it back to the Soviets"
+command = { type = relation which = JAP value = 25 }
+command = { type = relation which = SOV value = -50 }	
+command = { type = secedeprovince which = JAP value = 1541 when = 1 }
+command = { type = secedeprovince which = JAP value = 1542 when = 1 }
+command = { type = secedeprovince which = JAP value = 1543 when = 1 }
+}
+action = {
+trigger = { flag = SOVfriendly } 
+ai_chance = 10 # Republic
+name = "An independent Sakhalin Republic!"
+command = { type = relation which = JAP value = -50 }	
+command = { type = relation which = SOV value = -50 }	
+}
+action = {
+trigger = { flag = SOVfriendly } 
+ai_chance = 10 # Military Administration
+name = "We'll put it under Military Administration"
+command = { type = relation which = JAP value = -50 }	
+command = { type = relation which = SOV value = -50 }	
+}
+action = {
+trigger = { flag = SOVfriendly } 
+ai_chance = 20
+name = "Hand it back to Japan"
+command = { type = relation which = JAP value = 25 }
+command = { type = relation which = SOV value = -50 }	
+command = { type = secedeprovince which = JAP value = 1541 when = 1 }
+command = { type = secedeprovince which = JAP value = 1542 when = 1 }
+command = { type = secedeprovince which = JAP value = 1543 when = 1 }
+}
+action = {
+trigger = { flag = SOVfriendly } 
+ai_chance = 70
+name = "Hand it back to the Soviets"
+command = { type = relation which = SOV value = 25 }
+command = { type = relation which = JAP value = -50 }	
+command = { type = secedeprovince which = SOV value = 1541 when = 1 }
+command = { type = secedeprovince which = SOV value = 1542 when = 1 }
+command = { type = secedeprovince which = SOV value = 1543 when = 1 }
+}
+}
+##########################
+### VI - Internationale ##
+##########################
+
+### China Approachment ###
+
+##########################
+### VI - Allied        ###
+##########################
+
+### Lend Lease ###
+### Alliance ###
