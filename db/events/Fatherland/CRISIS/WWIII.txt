@@ -3,8 +3,8 @@ event = { # Enable Nukes
 	random = no
     TAG = { SOV FRA ENG USA GER ITA } 
 	
-	name = "8014255NAME"
-	desc = "8014255DESC" 
+	name = "Active Nukes"
+	desc = "World War III has broken out! Let's not hesistate and evade a long lasting war, but one of mutual destruction!" 
 	style = 2
 	picture = "sinkiang"
 	
