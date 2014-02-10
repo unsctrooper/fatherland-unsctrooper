@@ -86,11 +86,11 @@ economy = {
 # Nationalism per MP (added to stating value)
 	1.0 # 0.0
 # Max unmodified nationalism = starting + MP*mod + added by events or prtissan funds
-	20 # 30
+	40 # 30
 # Max final province revolt risk = THIS + current country dissent
-	35 # 100
+	60 # 100
 # Monthly Nationalism reduction
-	0.1250
+	0.250
 # Time in days to send a division to an ally
 	30	
 # TC Load from undeployed brigades (multiplied on top of the division cost)

@@ -17,7 +17,6 @@ event = "db\events\generic_decisions.txt"
 event = "db\events\fatherland\flavour.txt"
 
 # AFRICA
-event = "db\events\fatherland\africa\egypt.txt"
 event = "db\events\fatherland\africa\ethiopia.txt"
 event = "db\events\fatherland\africa\madagascar.txt"
 event = "db\events\fatherland\africa\south_africa.txt"
@@ -65,11 +64,14 @@ event = "db\events\fatherland\comintern\soviet_union.txt"
 
 # CRISIS
 event = "db\events\fatherland\crisis\abadan_crisis.txt"
-event = "db\events\fatherland\crisis\centralasia.txt"
+event = "db\events\fatherland\crisis\nuclear.txt"
+event = "db\events\fatherland\crisis\SwissProblem.txt"
 event = "db\events\fatherland\crisis\ira.txt"
 event = "db\events\fatherland\crisis\colonials.txt"
 event = "db\events\fatherland\crisis\sino_indian_war.txt"
 event = "db\events\fatherland\crisis\morocco_crisis.txt"
+event = "db\events\fatherland\crisis\WWIII.txt"
+event = "db\events\fatherland\crisis\SuezKuwaitCrisis.txt"
 
 # EUROPE
 event = "db\events\fatherland\europe\cyprus.txt"
@@ -90,7 +92,9 @@ event = "db\events\fatherland\ger\hitlerdied.txt"
 event = "db\events\fatherland\ger\generalgovernment.txt"
 #event = "db\events\fatherland\ger\volksgrenadier.txt"
 event = "db\events\fatherland\ger\kaukasus.txt"
+event = "db\events\fatherland\ger\ukraine.txt"
 event = "db\events\fatherland\ger\domestic.txt"
+event = "db\events\fatherland\ger\Bailout.txt"
 
 # MIDDLE EAST
 event = "db\events\fatherland\middle_east\iran.txt"
@@ -104,3 +108,4 @@ event = "db\events\fatherland\middle_east\saudi_arabia.txt"
 event = "db\events\fatherland\middle_east\syria.txt"
 event = "db\events\fatherland\middle_east\united_arab_republic.txt"
 event = "db\events\fatherland\middle_east\yemen.txt"
+event = "db\events\fatherland\middle_east\israel.txt"
