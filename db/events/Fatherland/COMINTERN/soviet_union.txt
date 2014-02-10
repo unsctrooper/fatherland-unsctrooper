@@ -27,7 +27,7 @@ event = {
 }
 
 event = {
-	id = 8014286
+	id = 8014300
 	random = no
 	country = SOV
 
