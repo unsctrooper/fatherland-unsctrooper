@@ -21,11 +21,11 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 1
      political_left    = 1 
-     freedom           = 1 
-     free_market       = 1 
+     freedom           = 1
+     free_market       = 9
      professional_army = 7
-     defense_lobby     = 10 
-     interventionism   = 1 
+     defense_lobby     = 9 
+     interventionism   = 9 
     } 
    nationalprovinces      = { 157 } 
    ownedprovinces         = { 157 } 
