@@ -76,7 +76,7 @@ trigger = {
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
 			command = { type = dissent value = 5 }
-			command = { type = local_setflag which = DarlanVichy } 
+			command = { type = setflag which = DarlanVichy } 
 	}
 	
 	action = {
@@ -104,7 +104,7 @@ trigger = {
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
 			command = { type = dissent value = 10 }
-			command = { type = local_setflag which = LavalVichy } 
+			command = { type = setflag which = LavalVichy } 
 
 	}
 	
@@ -135,7 +135,7 @@ trigger = {
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
 			command = { type = dissent value = 15 }
-			command = { type = local_setflag which = UltraVichy } 
+			command = { type = setflag which = UltraVichy } 
 	}
 	
 	action = {
@@ -157,7 +157,7 @@ trigger = {
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
 			command = { type = dissent value = 3 }
-			command = { type = local_setflag which = CivilVichy } 
+			command = { type = setflag which = CivilVichy } 
 }
 }
 event = {
@@ -232,7 +232,7 @@ id = 354
 	picture = "ProtestAlexanderetta"
 
 	trigger = {
-    local_flag = UltraVichy	
+    flag = UltraVichy	
 	random = 20
 	}
 	
@@ -248,12 +248,12 @@ id = 354
 			ai_chance = 80
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
-			command = { type = local_clrflag which = UltraVichy } 
+			command = { type = clrflag which = UltraVichy } 
 			command = { type = headofgovernment which = 5189 }
 			command = { type = set_domestic which = democratic value = 4 }
 		    command = { type = set_domestic which = political_left value = 3 }
 	        command = { type = relation which = GER value = -50 }
-			command = { type = local_setflag which = DarlanVichy } 
+			command = { type = setflag which = DarlanVichy } 
 	
 	}
 	
@@ -262,12 +262,12 @@ id = 354
 			ai_chance = 15
 			command = { type = headofstate which = 5396 }
 			command = { type = headofgovernment which = 5284 }
-			command = { type = local_clrflag which = UltraVichy } 
+			command = { type = clrflag which = UltraVichy } 
 		    command = { type = set_domestic which = democratic value = 7 }
 		    command = { type = set_domestic which = political_left value = 8 }
             command = { type = relation which = GER value = -50 }			
 			command = { type = dissent value = 3 }
-			command = { type = local_setflag which = CivilVichy } 
+			command = { type = setflag which = CivilVichy } 
 }
 	action = {
 			name = "354C"
@@ -364,7 +364,7 @@ id = 313
 	    command = { type = secederegion which = GER value = "Benelux" when = 1 }
 	    command = { type = secederegion which = GER value = "Germany" when = 1 }
         command = { trigger = { region = { region = Tunisia country = ITA value = 60 } } type = secederegion which = ITA value = Tunisia when = 1 }	
-		command = { type = local_setflag which = GerVichy } 		
+		command = { type = setflag which = GerVichy } 		
 	}
 }
 #########################
@@ -381,8 +381,8 @@ picture = "news_paper"
 	trigger = {
 	random = 10
 	OR = {
-	local_flag = GerVichy
-	local_flag = FreeVichy
+	flag = GerVichy
+	flag = FreeVichy
 	}
 	}
 
@@ -394,7 +394,7 @@ offset = 7
 deathdate = { day = 1 month = december year = 1955 }
 
 action = {
-trigger = { local_flag = FreeVichy }  
+trigger = { flag = FreeVichy }  
 ai_chance = 99
 name = "363A"
 command = { type = dissent value = -5 }
@@ -403,13 +403,13 @@ command = { type = relation which = U01 value = 50 }
 command = { type = setflag which = DeGaulleVichy } 
 }
 action = {
-trigger = { local_flag = FreeVichy }
+trigger = { flag = FreeVichy }
 ai_chance = 1
 name = "363B"
 command = { type = dissent value = 3 }
 }
 action = {
-trigger = { local_flag = GerVichy }
+trigger = { flag = GerVichy }
 ai_chance = 1
 name = "363A"
 command = { type = dissent value = -5 }
@@ -418,7 +418,7 @@ command = { type = relation which = U01 value = 50 }
 command = { type = setflag which = DeGaulleVichy } 
 }
 action = {
-trigger = { local_flag = GerVichy }
+trigger = { flag = GerVichy }
 ai_chance = 99
 name = "363B"
 command = { type = dissent value = 3 }
@@ -796,15 +796,15 @@ event = {
 	country = FRA
 
 	decision = {
-    local_flag = FreeVichy
+    flag = FreeVichy
 	}
 
 	decision_trigger = {
-    local_flag = FreeVichy 
+    flag = FreeVichy 
 	}
 
 	trigger = {
-    local_flag = FreeVichy
+    flag = FreeVichy
 	}
    
 	name = "378NAME"
