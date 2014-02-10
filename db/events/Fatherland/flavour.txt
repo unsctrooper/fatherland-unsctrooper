@@ -2,7 +2,6 @@
 
 #  General Strikes in Morocco (U01)
 #  Anglo-Irish Trade Pact (ENG,IRE)
-#  Formation of the Arab High Committee in Palestine (ENG)
 #  Saudi-Iraqi Renew Treaty of Non-Aggression (IRQ,SAU,ENG)
 #  Turkish Request to Fortify the Straits (TUR)
 #  Reorganization of the Bank of Free France (U01)
@@ -25,18 +24,12 @@
 #  U.S.-Russian Trade Agreement (USA,SOV)
 #  Kurdish Assassination of Iraqi General (IRQ)
 #  Italian State Visit to Germany (ITA,GER)
-#  Assassination of British Commissioner for Galilee (ENG)
-#  British Arrest of Arab High Committee in Palestine (ENG)
-#  Palestinian Arab Leader Escape to Syria (ENG)
 #  Royal Rhodesia Commission (ENG)
 #  Mexican Nationalization of Petroleum (MEX,USA,ENG)
-#  Special Military Courts in Palestine (ENG)
-#  Arab-Jewish Fighting in Jerusalem (ENG)
 #  Unionist Victory in Northern Irish Elections (ENG)
 #  Mexican Court Decision on Oil Companies (MEX,USA)
 #  New British High Commissioner in Palestine (ENG)
 #  Anglo-Turkish Agreement (TUR,ENG)
-#  Terrorist Attacks in Palestine (ENG)
 #  Revolt in Crete (ITA)
 #  Italian-Bulgarian Agreement (ITA,BUL)
 #  Hungarian State Visit to Germany (HUN,GER)
@@ -44,7 +37,6 @@
 #  Anglo-Canadian-U.S. Trade Agreement (ENG,USA,CAN)
 #  German Claim in Antarctica (GER)
 #  British Royal Visit to Canada (ENG,CAN)
-#  British Parliament Approval of Palestinian Plan (ENG)
 
 #########################################################################
 #  General Strikes in Morocco
@@ -131,35 +123,6 @@
 				
 	}
 }
-
-#########################################################################
-#  Formation of the Arab High Committee in Palestine
-#########################################################################
-
-	event = {
-	id = 7776019 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-	date = { day = 31 month = march year = 1949 }
-	offset = 1
-	deathdate = { day = 02 month = april year = 1949 }
-	
-	name = "Formation of the Arab High Committee in Palestine"
-	desc = "To oppose Jewish claims in Palestine, the Arabs established the Arab High Commission. By this time, Arab demonstrations and riots had reached a critical level, resulting in an open war against the Jews. While four Arab leaders called for peace negotiations in August, the Arab High Commission instituted a general strike."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "Please, calm down!"
-		ai_chance = 100
-		
-		command = { type = dissent value = 1 }
-								
-	}
-}
-
 #########################################################################
 #  Saudi-Iraqi Renew Treaty of Non-Aggression
 #########################################################################
@@ -1076,94 +1039,6 @@ event = {
 }
 
 #########################################################################
-#  Assassination of British Commissioner for Galilee
-#########################################################################
-
-	event = {
-	id = 7776180 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-		
-	date = { day = 25 month = september year = 1948 }
-	offset = 1
-	deathdate = { day = 27 month = september year = 1948 }
-	
-	name = "Assassination of British Commissioner for Galilee"
-	desc = "Yelland Andrews, the British District Commissioner for Galilee, was murdered which represented the apex of the great Arab Insurrection in Palestine."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "That's worrying!"
-		ai_chance = 100
-		
-		command = { type = dissent value = 1 } 
-								
-		}
-}
-
-#########################################################################
-#  British Arrest of Arab High Committee in Palestine
-#########################################################################
-
-	event = {
-	id = 7776182 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-		
-	date = { day = 01 month = october year = 1948 }
-	offset = 1
-	deathdate = { day = 03 month = october year = 1948 }
-	
-	name = "British Arrest of Arab High Committee in Palestine"
-	desc = "In response to the assassination of the British Commissioner for Galilee, the British government arrested the members of the Arab High Commission and deported most of them to the Seychelles. By expelling the Arab leadership, the British hoped to restore order in the mandate."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "This was unavoidable!"
-		ai_chance = 100
-		
-		command = { type = dissent value = 1 } 
-								
-		}
-}
-
-#########################################################################
-#  Palestinian Arab Leader Escape to Syria
-#########################################################################
-
-	event = {
-	id = 7776195 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-		
-	date = { day = 15 month = october year = 1948 }
-	offset = 1
-	deathdate = { day = 17 month = october year = 1948 }
-	
-	name = "Palestinian Arab Leader Escape to Syria"
-	desc = "Haj Amin el Husseini, the Grand Mufti of Jerusalem and the most influential leader in the Arab Revolt, took refuge in a mosque when the British government cracked down on the leaders of the Arab High Commission. The mufti escaped capture and fled to Syria, where he set up headquarters to maintain the insurgency. As a result, the more radical members (terrorists) gained control over the movement and expanded the fighting."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "Wanted dead or alive!"
-		ai_chance = 100
-		
-		command = { type = relation which = SYR value = -25 }
-		command = { type = revolt which = 1172 value = 10 } # Jerusalem
-						
-		}
-}
-
-#########################################################################
 #  Royal Rhodesia Commission
 #########################################################################
 
@@ -1277,64 +1152,6 @@ event = {
 }
 
 #########################################################################
-#  Special Military Courts in Palestine
-#########################################################################
-
-	event = {
-	id = 7776204 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-		
-	date = { day = 10 month = november year = 1948 }
-	offset = 1
-	deathdate = { day = 12 month = november year = 1948 }
-	
-	name = "Special Military Courts in Palestine"
-	desc = "In an effort to control terrorist attacks in Palestine, the British commissioner set up special military courts to try suspected terrorists. Anyone caught carrying firearms or bombs could be sentenced to death by these courts."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "Order! Order!"
-		ai_chance = 100
-		
-		command = { type = dissent value = -2 } 
-		
-		}
-}
-
-#########################################################################
-#  Arab-Jewish Fighting in Jerusalem
-#########################################################################
-
-	event = {
-	id = 7776206 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-		
-	date = { day = 13 month = november year = 1948 }
-	offset = 1
-	deathdate = { day = 15 month = november year = 1948 }
-	
-	name = "Arab-Jewish Fighting in Jerusalem"
-	desc = "Violence escalated in Palestine to the point of pitched battles in Jerusalem between Arab and Jewish forces. The British expanded their efforts to restore security in the Palestine mandate."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "Not again!"
-		ai_chance = 100
-		
-		command = { type = dissent value = 1 } 
-								
-		}
-}
-
-#########################################################################
 #  Unionist Victory in Northern Irish Elections
 #########################################################################
 
@@ -1420,37 +1237,7 @@ event = {
 		}
 }
 
-#########################################################################
-#  New British High Commissioner in Palestine
-#########################################################################
 
-	event = {
-	id = 7776239 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			}
-		
-	date = { day = 02 month = march year = 1949 }
-	offset = 1
-	deathdate = { day = 04 month = march year = 1949 }
-	
-	name = "New British High Commissioner in Palestine"
-	desc = "Sir Harold MacMichael arrived in Palestine and replaced Sir Arthur Wauchope as the High Commissioner for Palestine. Sir Harold represented a more draconian occupation as the British increased the number of troops in the mandate to 30,000 in an effort to repress continuing political disorder."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "Order!"
-		ai_chance = 100
-		
-		command = { type = dissent value = -1 } 
-		command = { type = relation which = SAU value = -10 }
-		command = { type = relation which = PER value = -5 }
-		command = { type = relation which = EGY value = -10 }
-						
-		}
-}
 
 #########################################################################
 #  Anglo-Turkish Agreement
@@ -1505,36 +1292,6 @@ event = {
 		command = { type = dissent value = -1 }
 		command = { type = relation which = TUR value = 20 }
 														
-		}
-}
-
-#########################################################################
-#  Terrorist Attacks in Palestine
-#########################################################################
-
-	event = {
-	id = 7776287 
-	random = no
-	country = ENG
-	trigger = {
-			NOT = { war = { country = ENG } }
-			
-			}
-		
-	date = { day = 02 month = july year = 1949 }
-	offset = 1
-	deathdate = { day = 04 month = july year = 1949 }
-	
-	name = "Terrorist Attacks in Palestine"
-	desc = "During the summer of 1949, terrorist groups conducted a series of attacks in Palestine, which included major bombings in the Jerusalem, Haifa, and the Jaffa Arab markets. These attacks reflected an undeclared state of war between the Arabs and the Jews."
-	style = 2
-	picture = "news_paper"
-	action = {
-		name = "Not again!"
-		ai_chance = 100
-		
-		command = { type = dissent value = 1 } 
-				
 		}
 }
 
