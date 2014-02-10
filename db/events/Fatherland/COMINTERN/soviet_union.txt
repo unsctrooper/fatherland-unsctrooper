@@ -41,7 +41,7 @@ event = {
 
 	    action = {
 		name = "8014250A"
-		command = { type = peace which = AXI value = 0 }
+		command = { type = peace which = AXI value = 1 }
 	}
 }
 
