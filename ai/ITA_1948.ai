@@ -353,7 +353,12 @@ garrison = {
 	unstable_border		= 0	# Bordering countries at war with someone else get this
 
 	# Borders with specific countries
-	country_priorities = { }
+	country_priorities = { 
+		FRA = 35
+		GER = 10
+		SCH = 10
+		CRO = 10
+	}
 	province_priorities = { }
 	area_multiplier = { }
 }
