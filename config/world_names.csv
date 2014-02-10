@@ -204,15 +204,15 @@ U34;Socialist Republic of Turkey;Rйpublique Socialiste de Turquie;Repubblica Soc
 U35;Democratic Spanish Union;Union Dйmocratique d'Espagne;Unione Democratica Spagnola;Uniуn Democrбtica Espaсola;Demokratische Spanische Union;Demokratyczna Unia Hiszpanii;;Демократический союз Испании;;;X
 U36;Zhili Clique;Clan Zhili;Clicca Zhili;Camarilla de Zhili;Zhili Clique;Kliknij Zhili;;Чжилийская клика;;;X
 U39;Hatay State;Etat de Hatay;Hatay State;Hatay State;Staat Hatay;Paсstwo Hatay;;Государство Хатай;;;X
-U40;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Komisariat Rzeszy Wschуd;;Рейхскомиссариат Остланд;;;X
-U41;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Komisariat Rzeszy Ukraina;;Рейхскомиссариат Украина;;;X
-U42;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Komisariat Rzeszy Kaukaz;;Рейхскомиссариат Кавказ;;;X
-U43;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Komisariat Rzeszy Moskwa;;Рейхскомиссариат Московия;;;X
-U44;Generalgouvernement Polen;Gouvernement Gйnйral de Pologne;Generalgouvernement Polen;Generalgouvernement Polen;Generalgouvernement Polen;Generalne Gubernatorstwo;;Генерал-Губернаторство;;;X
-U45;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Komisariat Rzeszy Norwegia;;Рейхскомиссариат Норвегия;;;X
-U46;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Komisariat Rzeszy Holandia;;Рейхскомиссариат Нидерланды;;;X
-U47;Reichskommissariat Belgien-Nordfrankreich;Reichskommissariat Belgien-Nordfrankreich;Reichskommissariat Belgien-Nordfrankreich;Reichskommissariat Belgien-Nordfrankreich;Reichskommissariat Belgien-Nordfrankreich;Komisariat Rzeszy Belgia-Pуіnocna Francja;;Рейхскомиссариат Бельгия и Северная Франция;;;X
-U48;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Komisariat Rzeszy Turkiestan;;Рейхскомиссариат Туркестан;;;X
+U40;RK Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Reichskommissariat Ostland;Komisariat Rzeszy Wschуd;;Рейхскомиссариат Остланд;;;X
+U41;RK Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Reichskommissariat Ukraine;Komisariat Rzeszy Ukraina;;Рейхскомиссариат Украина;;;X
+U42;RK Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Reichskommissariat Kaukasus;Komisariat Rzeszy Kaukaz;;Рейхскомиссариат Кавказ;;;X
+U43;RK Moskowien;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Reichskommissariat Moskowien;Komisariat Rzeszy Moskwa;;Рейхскомиссариат Московия;;;X
+U44;GG Polen;Gouvernement Gйnйral de Pologne;Generalgouvernement Polen;Generalgouvernement Polen;Generalgouvernement Polen;Generalne Gubernatorstwo;;Генерал-Губернаторство;;;X
+U45;RK Norwegen;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Reichskommissariat Norwegen;Komisariat Rzeszy Norwegia;;Рейхскомиссариат Норвегия;;;X
+U46;RK Niederlande;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Reichskommissariat Niederlande;Komisariat Rzeszy Holandia;;Рейхскомиссариат Нидерланды;;;X
+U47;RK Belgien-Frankreich;RK Belgien-Frankreich;RK Belgien-Frankreich;RK Belgien-Frankreich;RK Belgien-Frankreich;RK Belgien-Frankreich;;Рейхскомиссариат Бельгия и Северная Франция;;;X
+U48;RK Turkestan;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Reichskommissariat Turkestan;Komisariat Rzeszy Turkiestan;;Рейхскомиссариат Туркестан;;;X
 U49;Italian East Africa;Afrique Orientale Italienne;Africa Orientale Italiana;Africa Oriental Italiana;Italienisch Ostafrika;Wіoska Afryka Wschodnia;;Итальянская Вост.Африка;;;X
 U50;Hejaz;Hedjaz;Hejaz;Hejaz;Hedschas;Hidїaz;;Хиджаз;;;X
 U51;Qatar;Qatar;Qatar;Qatar;Katar;Katar;;Катар;;;X
@@ -288,6 +288,7 @@ TRK_AXI;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;Turkestan;;Turkestan;;
 TRK_COM;Turkestan SSR;Turkestan SSR;Turkestan SSR;Turkestan SSR;Turkestan SSR;Turkestan SSR;;Turkestan SSR;;;X
 KAZ_COM;Kazakhstan SSR;Kazakhstan SSR;Kazakhstan SSR;Kazakhstan SSR;Kazakhstan SSR;Kazakhstan SSR;;Kazakhstan SSR;;;X
 SIK44;East Turkestan;East Turkestan;East Turkestan;East Turkestan;East Turkestan;East Turkestan;;Туркестан;;;X
+RK_S;RK Schweiz;RK Schweiz;RK Schweiz;RK Schweiz;RK Schweiz;RK Schweiz;;Туркестан;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
