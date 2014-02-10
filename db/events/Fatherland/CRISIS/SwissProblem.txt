@@ -1,0 +1,249 @@
+event = {
+	id = 819
+	random = no
+	country = GER
+
+	decision = {
+		event = 817
+		local_flag = Tannenbaum
+	}
+	decision_trigger = { 
+	event = { id = 817 days = 30 } 
+	}
+	trigger = {
+	event = { id = 817 days = 30 } 
+	}
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	name = "819NAME"
+	desc = "819DESC" 
+	style = 2
+	picture = "reichstag"
+
+	action = {
+		    name = "819A" # Operation Tannenbaum
+			command = { type = end_non_aggression which = SCH where = GER } 
+		    command = { type = war which = SCH }
+	}
+}
+
+event = { # Fate of Switzerland
+	id = 820
+	random = no
+	country = GER
+
+	name = "8014252NAME"
+	desc = "8014252DESC" 
+	style = 2
+	picture = "east_turkestan"
+	
+    trigger = {
+	control = { province = 392 data = GER } 
+	NOT = { exists = SCH } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action_a = { 
+name = "8014252A" # RK Switzerland
+command = { type = independence which = SCH value = 1 } 
+command = { type = make_puppet which = SCH }
+command = { type = event which = 821 where = SCH when = 1 }
+}
+}
+
+event = { # RK Switzerland
+	id = 821
+	random = no
+	country = SCH
+
+name = "8014254NAME"
+desc = "8014254DESC" 
+style = 2
+picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = name where = SCH which = "RK_S" }
+command = { type = flag_ext where = SCH which = "_RK_S" }
+command = { type = chiefofstaff which = 1050007 }
+command = { type = chiefofarmy which = 1050008 }
+command = { type = chiefofnavy which = 1050009 }
+command = { type = chiefofair which = 1050010 }
+}
+}
+event = { # Partition of Switzerland
+	id = 822 
+	random = no
+	country = GER
+
+	name = "8014251NAME"
+	desc = "8014251DESC" 
+	style = 2
+	picture = "0turkestan0"
+	
+    trigger = {
+    puppet = { country = SCH country = GER }
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { #Chur to Italy, Geneva to Vichy
+		name = "8014251A"
+        ai_chance = 20
+        command = { type = relation which = SCH value = -50 }	
+        command = { type = relation which = ITA value = 50 }
+        command = { type = relation which = FRA value = 25 }
+		command = { type = trigger which = 823 }	
+		command = { type = trigger which = 824 }		
+	}
+	    action_b = { #Chur to Italy, Geneva Swiss
+		name = "8014251B" 
+		ai_chance = 60
+        command = { type = relation which = SCH value = -50 }	
+        command = { type = relation which = ITA value = 50 }
+        command = { type = relation which = FRA value = -25 }	
+		command = { type = trigger which = 823 }
+	}
+	    action_c = { #All German!
+		name = "8014251B" 
+		ai_chance = 20
+        command = { type = relation which = SCH value = 50 }	
+        command = { type = relation which = ITA value = -50 }
+        command = { type = relation which = FRA value = -25 }	
+	}
+}
+event = { # Chur
+	id = 823
+	random = no
+	country = SCH
+
+name = "8014254NAME"
+desc = "8014254DESC" 
+style = 2
+picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = removecore which = 390 }
+command = { type = dissent value = 5 }
+command = { type = secedeprovince which = ITA value = 390 when = 1 }
+command = { type = trigger which = 825 }
+}
+}
+
+event = { # Geneva
+	id = 824
+	random = no
+	country = SCH
+
+name = "8014254NAME"
+desc = "8014254DESC" 
+style = 2
+picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = removecore which = 391 }
+command = { type = dissent value = 5 }
+command = { type = secedeprovince which = FRA value = 391 when = 1 }
+command = { type = trigger which = 826 }
+}
+}
+
+event = { # Chur
+	id = 825
+	random = no
+	country = ITA
+
+name = "8014254NAME"
+desc = "8014254DESC" 
+style = 2
+picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = addcore which = 390 }
+command = { type = dissent value = -3 }
+}
+}
+
+event = { # Geneva
+	id = 826
+	random = no
+	country = FRA
+
+name = "8014254NAME"
+desc = "8014254DESC" 
+style = 2
+picture = "sinkiang"
+	
+action = { 
+name = "Okay!" 
+command = { type = addcore which = 391 }
+command = { type = dissent value = -3 }
+}
+}
+
+event = { # Execution of David Frankfurter
+	id = 827 
+	random = no
+	country = GER
+
+	name = "8014251NAME"
+	desc = "8014251DESC" 
+	style = 2
+	picture = "0turkestan0"
+	
+    trigger = {
+    puppet = { country = SCH country = GER }
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { #Execute him!
+		name = "8014251A"
+        command = { type = dissent value = -3 }
+	}
+}
+
+event = { # Improve Vital Trade Links w/ Vichy France & Italy
+	id = 828 
+	random = no
+	country = GER
+
+	name = "8014251NAME"
+	desc = "8014251DESC" 
+	style = 2
+	picture = "0turkestan0"
+	
+    trigger = {
+    puppet = { country = SCH country = GER }
+	}
+	
+    date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { #Yes
+		ai_chance = 20
+		name = "8014251A"
+	}
+	    action_a = { #No
+		ai_chance = 20
+		name = "8014251A"
+	}
+}
