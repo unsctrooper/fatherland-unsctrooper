@@ -643,7 +643,7 @@ event = {
 	action_a = {
 		name = EVT_8007517_A
 		ai_chance = 80
-		command = { type = trigger which = 8218037 }
+		command = { type = trigger which = 8218038 }
 	}
 	
 	# This serves no purpose
