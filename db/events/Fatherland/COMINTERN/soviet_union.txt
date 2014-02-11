@@ -25,27 +25,6 @@ event = {
 		command = { type = ground_def_eff value = 0.5 }
 	}
 }
-
-event = {
-	id = 8014300
-	random = no
-	country = AXI
-
-	name = "Peace with Soviet Union"
-	desc = "DESC" 
-	style = 2
-	picture = "spread_revolution"
-	
-   date = { day = 1 month = march year = 1948 }
-
-
-	    action = {
-		name = "8014250A"
-		command = { type = peace which = SOV value = 1 }
-		command = { type = leave_alliance when = 1 }
-	}
-}
-
 event = { # Fate of Turkestan
 	id = 8014251 
 	random = no
