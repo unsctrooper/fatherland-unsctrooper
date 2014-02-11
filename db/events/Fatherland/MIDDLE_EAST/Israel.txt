@@ -1,0 +1,781 @@
+#########################################################################
+#  Formation of the Arab High Committee in Palestine
+#########################################################################
+
+	event = {
+	id = 78000 
+	random = no
+	country = ENG
+	trigger = {
+			random = 25
+			}
+			
+	date = { day = 31 month = march year = 1948 }
+	offset = 30
+	deathdate = { day = 02 month = april year = 1964 }
+	
+	name = "Formation of the Arab High Committee in Palestine"
+	desc = "To oppose Jewish claims in Palestine, the Arabs established the Arab High Commission. By this time, Arab demonstrations and riots had reached a critical level, resulting in an open war against the Jews. While four Arab leaders called for peace negotiations in August, the Arab High Commission instituted a general strike."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Please, calm down!"
+		command = { type = dissent value = 1 }
+	}
+}
+
+#########################################################################
+#  British Arrest of Arab High Committee in Palestine
+#########################################################################
+
+	event = {
+	id = 78001
+	random = no
+	country = ENG
+	trigger = {
+    event = 78000
+	random = 40
+			}
+		
+	date = { day = 01 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 03 month = october year = 1964 }
+	
+	name = "British Arrest of Arab High Committee in Palestine"
+	desc = "In response to the assassination of the British Commissioner for Galilee, the British government arrested the members of the Arab High Commission and deported most of them to the Seychelles. By expelling the Arab leadership, the British hoped to restore order in the mandate."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "This was unavoidable!"
+		command = { type = dissent value = 1 } 
+		command = { type = relation which = SAU value = -10 }
+		command = { type = relation which = PER value = -10 }
+		command = { type = relation which = SYR value = -10 }
+		command = { type = relation which = JOR value = -10 }
+		command = { type = relation which = LEB value = -10 }
+		command = { type = relation which = IRQ value = -10 }
+								
+		}
+}
+
+#########################################################################
+#  High Commissioner Cunningham suggest us to leave
+#########################################################################
+
+	event = {
+	id = 78002
+	random = no
+	country = ENG
+	trigger = {
+    event = 78001
+			}
+		
+	date = { day = 02 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 04 month = march year = 1964 }
+	
+	name = "High Commissioner Cunningham's Suggestion"
+	desc = "Sir Alan Cunningham, British High Commissioner of Palestine, has stressed that British autority over the area is disputed and ravaged by Jewish and Arab violence. He suggests the British Parliament to finally decide on the future of Palestine. "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Sure.."
+		command = { type = dissent value = 3 } 
+		command = { type = relation which = SAU value = -10 }
+		command = { type = relation which = PER value = -10 }
+		command = { type = relation which = SYR value = -10 }
+		command = { type = relation which = JOR value = -10 }
+		command = { type = relation which = LEB value = -10 }
+		command = { type = relation which = IRQ value = -10 }
+						
+		}
+}
+############################
+### Trouble in Palestina ###
+############################
+
+	event = {
+	id = 78003
+	random = no
+	country = ENG
+	persistent = yes
+	
+	
+	trigger = {
+			NOT = { exists = ISR } 
+			NOT = { exists = PAL } 
+            event = 78002
+			random = 50
+			}
+		
+	date = { day = 01 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 04 month = july year = 1964 }
+	
+	name = "Terrorist Attacks in Palestine"
+	desc = "After the summer of 1948, terrorist groups conducted a series of attacks in Palestine, which included major bombings in the Jerusalem, Haifa, and the Jaffa Arab markets. These attacks reflected an undeclared state of war between the Arabs and the Jews."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Not again!"
+		command = { type = dissent value = 3 } 
+		}
+}
+
+	event = {
+	id = 78004
+	random = no
+	country = ENG
+    persistent = yes
+	
+	trigger = {
+    event = 78002
+	random = 30
+			}
+		
+	date = { day = 13 month = january year = 1948 }
+	offset = 21
+	deathdate = { day = 15 month = november year = 1964 }
+	
+	name = "Arab-Jewish Fighting in Jerusalem"
+	desc = "Violence escalated in Palestine to the point of pitched battles in Jerusalem between Arab and Jewish forces. The British expanded their efforts to restore security in the Palestine mandate."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Not again!"
+		command = { type = dissent value = 3 } 		
+		}
+}
+
+	event = {
+	id = 78005
+	random = no
+	country = ENG
+	trigger = {
+    event = 78002
+    dissent = 5
+			}
+		
+	date = { day = 01 month = september year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = november year = 1964 }
+	
+	name = "Special Military Courts in Palestine"
+	desc = "In an effort to control terrorist attacks in Palestine, the British commissioner set up special military courts to try suspected terrorists. Anyone caught carrying firearms or bombs could be sentenced to death by these courts."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Order! Order!"
+		command = { type = dissent value = 1 } 
+		command = { type = sleepevent which = 78004 }
+		command = { type = sleepevent which = 78003 }
+		command = { type = relation which = U01 value = -10 }
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = SAU value = -10 }
+		command = { type = relation which = PER value = -10 }
+		command = { type = relation which = SYR value = -10 }
+		command = { type = relation which = JOR value = -10 }
+		command = { type = relation which = LEB value = -10 }
+		command = { type = relation which = IRQ value = -10 }
+		}
+}
+
+#############################
+### Israeli / Arab Revolt ###
+#############################
+	event = {
+	id = 78006
+	random = no
+	country = ENG
+	save_date = yes
+	
+	trigger = {
+    event = 78005
+	random = 25
+			}
+		
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 12 month = november year = 1964 }
+	
+	name = "Palestinian Revolt"
+	desc = "We could have known this day would come. Both the Jews and Arabs have declared our mandate to be void and have organized themselves in two states who both declare "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "So that's the end of our mandate.."
+		command = { type = dissent value = 3 } 
+		command = { type = independence which = ISR value = 0 }
+		command = { type = independence which = PAL value = 0 }
+		command = { type = trigger which = 78007 }
+		command = { type = trigger which = 78008 }
+		}
+}
+
+# Israeli declaration of independence
+event = {
+	id = 78007
+	country = ISR
+	save_date = yes
+
+	name = EVT_8007620_NAME
+	desc = EVT_8007620_DESC
+	picture = "nwo\independence_of_israel"
+	style = 1
+
+	action = {
+		name = "OK"
+		command = { type = leave_alliance }
+		command = { type = trigger which = 78009 }
+		command = { type = dissent value = -10 }
+		command = { type = add_division value = infantry when = 13 }
+		command = { type = add_division value = infantry when = 13 }
+		command = { type = add_division value = infantry when = 13 }
+		command = { type = add_division value = infantry when = 13 }
+		command = { type = add_division value = infantry when = 13 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_corps where = 1010 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_corps where = 1008 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_corps where = 1011 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = add_division value = garrison when = 5 }
+		command = { type = morale which = infantry value = 10 }
+		command = { type = morale which = militia value = 10 }
+		command = { type = morale which = motorized value = 10 }
+		command = { type = secedeprovince which = PAL value = 1013 when = 1 }
+		command = { type = addcore which = 1008 }
+		command = { type = addcore which = 1010 }
+		command = { type = addcore which = 1011 }
+		command = { type = addcore which = 1009 }
+		command = { type = addcore which = 1013 }
+		command = { type = addcore which = 1172 }
+	}
+
+}
+
+
+event = {
+	id = 78009
+	country = ISR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 675001 } # Chaim Weizmann
+		command = { type = headofgovernment which = 675002 } # David Ben Gurion
+		command = { type = foreignminister which = 675003 } # Moshe Sharett
+		command = { type = armamentminister which = 675004 } # Levi Eshkol
+		command = { type = ministerofsecurity which = 675005 } # Golda Meir
+		command = { type = ministerofintelligence which = 675006 } # Yigal Allon
+		command = { type = chiefofstaff which = 675007 } # Yigael Yadin
+		command = { type = chiefofarmy which = 675008 } # Yigal Allon
+		command = { type = chiefofnavy which = 675009 } # Yedidia Ya'ari
+		command = { type = chiefofair which = 675010 } # Haim Laskov
+	}
+}
+
+# Palestinian declaration of independence
+event = {
+	id = 78008
+	country = PAL
+	save_date = yes
+
+	name = EVT_8007622_NAME
+	desc = EVT_8007622_DESC
+	picture = "nwo\independence_of_palestine"
+	style = 1
+
+	action = {
+		name = "OK"
+		command = { type = leave_alliance }
+		command = { type = dissent value = -3 }
+		command = { type = add_division value = infantry when = 13 }	
+		command = { type = add_division value = militia when = 5 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = addcore which = 1008 }
+		command = { type = addcore which = 1010 }
+		command = { type = addcore which = 1011 }
+		command = { type = addcore which = 1009 }
+		command = { type = addcore which = 1013 }
+		command = { type = addcore which = 1172 }
+	}
+}
+
+##########################
+### Arab - Israeli War ###
+##########################
+
+# Civil War of 1948
+event = {
+	id = 78010
+	country = ISR
+	picture = "nwo\palestine_civil_war_1948"
+	decision_picture = "nwo\d_palestine_civil_war_1948"
+	style = 1
+
+	decision = {
+		exists = PAL
+	}
+
+	decision_trigger = {
+		exists = PAL
+		event = { id = 78006 days = 50 }
+	}
+
+	
+	trigger = {
+		exists = PAL
+		event = { id = 78006 days = 50 }
+
+	}
+
+	name = EVT_8007640_NAME
+	desc = EVT_8007640_DESC
+
+	date = { day = 1 month = may year = 1948 }
+	offset = 150
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8007640_A
+		ai_chance = 99
+		command = { type = war which = PAL }
+		command = { type = sleepevent which = 78011 }
+        command = { type = event which = 78012 where = EGY when = 14 }
+	}
+
+	action = {
+		name = EVT_8007640_B
+		ai_chance = 1
+		command = { type = dissent value = 25 }
+		command = { type = domestic which = interventionism value = -4 }
+	}
+}
+
+event = {
+	id = 78011
+	country = PAL
+	picture = "nwo\palestine_civil_war_1948"
+	decision_picture = "nwo\d_palestine_civil_war_1948"
+	style = 1
+
+	decision = {
+		exists = ISR
+	}
+
+	decision_trigger = {
+		exists = ISR
+		event = { id = 78006 days = 50 }
+	}
+
+	
+	trigger = {
+		exists = ISR
+		event = { id = 78006 days = 50 }
+	}
+
+	name = EVT_8007641_NAME
+	desc = EVT_8007641_DESC
+
+	date = { day = 1 month = may year = 1948 }
+	offset = 150
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8007641_A
+		ai_chance = 99
+		command = { type = war which = ISR }
+		command = { type = sleepevent which = 78010 }
+        command = { type = event which = 78012 where = EGY when = 14 }
+	}
+
+	action = {
+		name = EVT_8007641_B
+		ai_chance = 1
+		command = { type = dissent value = 25 }
+		command = { type = domestic which = interventionism value = -4 }
+	}
+}
+
+##############################
+### Arab Countries Furious ###
+##############################
+event = {
+	id = 78012
+	country = EGY
+	save_date = yes
+
+	name = "EVT_8004907_NAME"
+	desc = "EVT_8004907_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+
+	action = {
+		name = "EVT_8004907_A"
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = trigger which = 78013 } #Lebanon 
+		command = { type = trigger which = 78014 } #Syria 
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = GER value = 100 }
+		command = { type = leave_alliance when = 1 } 
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		command = { type = end_non_aggression which = ENG }
+		command = { type = flag_ext where = EGY which = _republic }
+		command = { type = headofstate which = 340153 } #Gamal Abdel Nasser
+		command = { type = headofgovernment which = 340152 } #Gamal Abdel Nasser
+	}
+}
+
+event = {
+	id = 78013
+	country = LEB
+	picture = "nwo\palestine_civil_war_1948"
+	style = 1
+
+	name = EVT_8007641_NAME
+	desc = EVT_8007641_DESC
+
+	action = {
+		name = EVT_8007641_A
+		ai_chance = 99
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = GER value = 100 }
+		command = { type = leave_alliance when = 1 } 
+		command = { type = end_puppet }
+		command = { type = end_access which = U01 }
+		command = { type = end_non_aggression which = U01 }
+	}
+
+	action = {
+		name = EVT_8007641_B
+		ai_chance = 1
+		command = { type = dissent value = 25 }
+	}
+}
+
+event = {
+	id = 78014
+	country = SYR
+	picture = "nwo\palestine_civil_war_1948"
+	style = 1
+
+	name = EVT_8007641_NAME
+	desc = EVT_8007641_DESC
+
+	action = {
+		name = EVT_8007641_A
+		ai_chance = 99
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = GER value = 100 }
+		command = { type = leave_alliance when = 1 } 
+		command = { type = end_puppet }
+		command = { type = end_access which = U01 }
+		command = { type = end_non_aggression which = U01 }
+	}
+
+	action = {
+		name = EVT_8007641_B
+		ai_chance = 1
+		command = { type = dissent value = 25 }
+	}
+}
+
+	event = {
+	id = 78015
+	random = no
+	country = EGY
+	
+	trigger = {
+    event = 78012
+			}
+		
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = november year = 1964 }
+	
+	name = "Palestinian Revolt"
+	desc = "We could have known this day would come. Both the Jews and Arabs have declared our mandate to be void and have organized themselves in two states who both declare "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "So that's the end of our mandate.."
+        command = { type = war which = ISR }
+		command = { type = trigger which = 78016 } 
+        command = { type = alliance which = SYR }
+        command = { type = alliance which = LEB }
+        command = { type = alliance which = PAL }
+		}
+}
+
+	event = {
+	id = 78016
+	random = no
+	country = JOR
+	
+	name = "Palestinian Revolt"
+	desc = "We could have known this day would come. Both the Jews and Arabs have declared our mandate to be void and have organized themselves in two states who both declare "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "So that's the end of our mandate.."
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = GER value = 100 }
+		command = { type = leave_alliance when = 1 } 
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		command = { type = end_non_aggression which = ENG }
+        command = { type = war which = ISR }
+		command = { type = trigger which = 78017 } 
+		}
+}
+
+	event = {
+	id = 78017
+	random = no
+	country = IRQ
+	
+	name = "Palestinian Revolt"
+	desc = "We could have known this day would come. Both the Jews and Arabs have declared our mandate to be void and have organized themselves in two states who both declare "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "So that's the end of our mandate.."
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = GER value = 100 }
+		command = { type = leave_alliance when = 1 } 
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		command = { type = end_non_aggression which = ENG }
+        command = { type = war which = ISR }
+        command = { type = alliance which = JOR }
+		}
+}
+
+##############################################
+### Conclusion of Arab-Israeli War of 1948 ###
+##############################################
+
+# Total victory of Arabs
+event = {
+	id = 78018
+	tag = { EGY JOR LEB SYR IRQ }
+
+	trigger = {
+		NOT = { exists = ISR }
+		control = { province = 1172 data = -1 } # Jerusalem
+	}
+
+	name = EVT_8007660_NAME
+	desc = EVT_8007660_DESC
+	picture = "nwo\arab_israeli_war_1948"
+	style = 1
+
+	date = { day = 1 month = june year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	# Set up Palestinian government
+	action = {
+		name = EVT_8007660_A
+		command = { type = independence which = PAL value = 0 }
+		command = { type = secedeprovince which = PAL value = 1172 when = 2 }
+		command = { type = secedeprovince which = PAL value = 1009 when = 2 }
+		command = { type = secedeprovince which = PAL value = 1013 when = 2 }
+		command = { type = secedeprovince which = PAL value = 1011 when = 2 }
+		command = { type = secedeprovince which = PAL value = 1008 when = 2 }
+		command = { type = secedeprovince which = PAL value = 1010 when = 2 }
+	}
+
+	# Stay
+	action = {
+		name = EVT_8007660_B
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 20 }
+	}
+}
+
+
+# Stalemate
+event = {
+	id = 78019
+	country = ISR
+
+	trigger = {
+		NOT = { control = { province = 1008 data = -1 } } # Tel Aviv
+		event = { id = 78012 days = 50 }
+	}
+
+	name = EVT_8007661_NAME
+	desc = EVT_8007661_DESC
+	picture = "nwo\arab_israeli_war_1948"
+	style = 1
+
+	date = { day = 1 month = december year = 1948 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8007661_A
+		command = { type = dissent value = 10 }
+		command = { type = peace which = EGY value = 0 }
+		command = { type = peace which = JOR value = 0 }
+		command = { type = peace which = SYR value = 0 }
+		command = { type = peace which = LEB value = 0 }
+		command = { type = peace which = IRQ value = 0 }
+		command = { type = independence which = EGY value = 0 }
+		command = { type = independence which = JOR value = 0 }
+		command = { type = independence which = SYR value = 0 }
+		command = { type = independence which = LEB value = 0 }
+		command = { type = independence which = IRQ value = 0 }
+		command = { type = secedeprovince which = JOR value = 1172 when = 2 }
+		command = { type = secedeprovince which = JOR value = 1013 when = 2 }
+		command = { type = secedeprovince which = EGY value = 1009 when = 2 }
+		command = { type = morale which = infantry value = -10 }
+		command = { type = morale which = militia value = -10 }
+		command = { type = morale which = motorized value = -10 }
+	}
+}
+
+# Historical, tactical victory of Israel
+event = {
+	id = 78020
+	country = ISR
+
+	trigger = {
+		control = { province = 1008 data = -1 } # Tel Aviv
+		NOT = {
+			control = { province = 1769 data = -1 } # Amman
+		}
+		event = { id = 78012 days = 50 }
+	}
+
+	name = EVT_8007662_NAME
+	desc = EVT_8007662_DESC
+	picture = "nwo\arab_israeli_war_1948"
+	style = 1
+
+	date = { day = 1 month = december year = 1948 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8007662_A
+		# Make peace with belligerents
+		command = { type = peace which = EGY value = 0 }
+		command = { type = peace which = JOR value = 0 }
+		command = { type = peace which = SYR value = 0 }
+		command = { type = peace which = LEB value = 0 }
+		command = { type = peace which = IRQ value = 0 }
+		command = { type = independence which = EGY value = 0 }
+		command = { type = independence which = JOR value = 0 }
+		command = { type = independence which = SYR value = 0 }
+		command = { type = independence which = LEB value = 0 }
+		command = { type = independence which = IRQ value = 0 }
+		command = { type = secedeprovince which = JOR value = 1172 when = 2 }
+		command = { type = secedeprovince which = ISR value = 1013 when = 2 }
+		command = { type = secedeprovince which = EGY value = 1009 when = 2 }
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = morale which = infantry value = -10 }
+		command = { type = morale which = militia value = -10 }
+		command = { type = morale which = motorized value = -10 }
+	}
+}
+
+
+# Total victory of Israel
+event = {
+	id = 78021
+	country = ISR
+
+	trigger = {
+		control = { province = 1008 data = -1 } # Tel Aviv
+		area = { area = "Palestine" country = -1 data = 1 value = 100 }
+		control = { province = 1769 data = -1 } # Amman
+	}
+
+	name = EVT_8007663_NAME
+	desc = EVT_8007663_DESC
+	picture = "nwo\arab_israeli_war_1948"
+	style = 1
+
+	date = { day = 1 month = june year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	# Settle for our demands
+	action = {
+		name = EVT_8007663_A
+		ai_chance = 75
+		command = { type = peace which = EGY value = 0 }
+		command = { type = peace which = JOR value = 0 }
+		command = { type = peace which = SYR value = 0 }
+		command = { type = peace which = LEB value = 0 }
+		command = { type = peace which = IRQ value = 0 }
+		command = { type = independence which = EGY value = 0 }
+		command = { type = independence which = JOR value = 0 }
+		command = { type = independence which = SYR value = 0 }
+		command = { type = independence which = LEB value = 0 }
+		command = { type = independence which = IRQ value = 0 }
+		command = { type = secedeprovince which = ISR value = 1172 when = 2 }
+		command = { type = secedeprovince which = ISR value = 1013 when = 2 }
+		command = { type = secedeprovince which = ISR value = 1009 when = 2 }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = clrflag which = arab_israeli_war_1948 }
+		command = { type = morale which = infantry value = -10 }
+		command = { type = morale which = militia value = -10 }
+		command = { type = morale which = motorized value = -10 }
+	}
+
+	# Strive for Greater Israel!
+	action = {
+		name = EVT_8007663_B
+		ai_chance = 25
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 20 }
+		command = { type = peace which = EGY value = 0 }
+		command = { type = peace which = JOR value = 0 }
+		command = { type = peace which = IRQ value = 0 }
+		command = { type = independence which = EGY value = 0 }
+		command = { type = independence which = JOR value = 0 }
+		command = { type = independence which = SYR value = 0 }
+		command = { type = independence which = LEB value = 0 }
+		command = { type = independence which = IRQ value = 0 }
+		command = { type = secedeprovince which = ISR value = 1172 when = 2 }
+		command = { type = secedeprovince which = ISR value = 1013 when = 2 }
+		command = { type = secedeprovince which = ISR value = 1009 when = 2 }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = clrflag which = arab_israeli_war_1948 }
+		command = { type = addclaim which = 1026 }
+		command = { type = addclaim which = 1023 }
+		command = { type = addclaim which = 1020 }
+		command = { type = addclaim which = 1019 } # Beirut
+		command = { type = addclaim which = 1018 } # Trablos
+		command = { type = addclaim which = 1016 } # Damascus
+		command = { type = addclaim which = 1004 } # Sinai
+		command = { type = addclaim which = 1005 } # Sinai
+		command = { type = addclaim which = 1006 } # Sinai
+		command = { type = addclaim which = 1007 } # Sinai
+		command = { type = morale which = infantry value = -10 }
+		command = { type = morale which = militia value = -10 }
+		command = { type = morale which = motorized value = -10 }
+	}
+}

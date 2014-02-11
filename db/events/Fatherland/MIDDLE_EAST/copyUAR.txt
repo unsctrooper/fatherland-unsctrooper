@@ -1,0 +1,1110 @@
+################################################
+### UAR EVENTS made by Pako Original by NWO
+################################################
+
+#### FORMATION OF UAR
+
+#### 8004903 - EGY - Invite Syria to United Arab Republic (1952/1963)
+	#### 8218001 - SYR - Answer to Join to United Arab Republic (1952/1963)
+		#### 8218002 - EGY - Syria joins UAR
+		
+#### 8218003 - EGY - Invite Iraq to United Arab Republic (1953/1963)
+	#### 8218004 - IRQ - Answer to Join to United Arab Republic (1953/1963)
+		#### 8218005 - EGY - Iraq joins UAR
+		#### 8218006 - EGY - Invite Jordan to United Arab Republic (1954/1963)
+			#### 8218007 - JOR - Answer to Join United Arab Republic (1954/1963)
+			#### 8218008 - EGY - Jordan joins UAR
+
+#### 8218020 - EGY/ARA - Invite Lebanon to United Arab Republic (1954/1963)
+	#### 8218021 - LEB - Answer to Join to United Arab Republic (1954/1963)
+		#### 8218022 - EGY/ARA - Lebanon joins UAR
+		
+#### 8218023 - EGY/ARA - Invite Palestine to United Arab Republic (1954/1963)
+	#### 8218024 - PAL - Answer to Join to United Arab Republic (1954/1963)	
+		#### 8218025 - EGY/ARA - Palestine joins UAR 
+		
+#### 8218010 - EGY - Establishment of permanent UAR (1955)
+
+#### POLITICAL AFTER THE FORMATION OF UAR
+#### 8218029 - EGY - Nasser Speach	
+#### 8218030-35 - Axis,Allies,Cominter Reactions
+
+#### TODO
+# * UAR geostrategy target (Suez,Kuwait,Libya,Sudan,Yemen)
+# * Raise the claims
+# * British reactions
+	# * Directly or via Saudi Arabia
+		# * Great Saudi Arabia (Kuwait,EAU,Qatar,Yemen,Oman + Claims)
+# Position of Turkey and Persia and Axis and Commie
+# Possible proxy war UAR vs Saudi		
+		
+#### 8218030 - EGY/ARA - New claims on Libya,Sudan,Suez and Palestine
+	#### 8218031 - ENG - British reaction
+
+#### 8218011 - EGY - Dissolution of UAR (1961/1963) 
+
+################################################
+#### 8004903 - EGY - Invite Syria to United Arab Republic (1952)
+################################################
+event = {
+	id = 8218000
+	country = EGY
+
+	name = "Invite Syria to United Arab Republic"
+	desc = "In 1952, Syria is facing an internal political chaos. The Egypt takes advantage of weak government in Damascus to propose an pan-arab federation between the two states"
+	picture = "nwo\united_arab_republic"
+	decision_picture = "nwo\d_united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8004906 # Revolution has happened
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = SYR }
+		exists = SYR
+	}
+		
+	decision = {
+		event = 8004906 # Revolution has happened
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = SYR }
+		exists = SYR
+	}
+		
+	decision_trigger = {
+		event = 8004906 # Revolution has happened
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = SYR }
+		exists = SYR
+		year = 1952
+	}
+
+	date = { day = 1 month = august year = 1952 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1952 }
+
+	# Propose the union
+	action = {
+		name = "Propose the union"
+		ai_chance = 90
+		command = { type = domestic which = interventionism value = 1 }
+	}
+
+	# It doesn't interest us
+	action = {
+		name = "It doesn't interest us"
+		trigger = { ai = yes }
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		command = { type = sleepevent which = 8218001 }
+	}
+}
+
+################################################
+#### 8218001 - SYR - Join to United Arab Republic (1952)
+################################################
+event = {
+	id = 8218001
+	country = SYR
+
+	name = "United Arab Republic"
+	desc = "The Egypt can guarantee stability and prosperity. It's an interesting proposal"
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8218000
+		exists = EGY
+		flag = cold_war
+		atwar = no
+		}
+
+	date = { day = 1 month = august year = 1952 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1952 }
+
+	# We want to join
+	action = {
+		name = EVT_8218001_A
+		ai_chance = 90
+		command = { type = relation which = EGY value = 200 }
+		command = { type = trigger which = 8218002 }
+	}
+
+	# It doesn't interest us
+	action = {
+		name = EVT_8218001_B
+		ai_chance = 10
+		command = { type = relation which = EGY value = -100 }
+		command = { type = dissent value = 3 }
+	}
+
+}
+
+################################################
+#### 8218002 - EGY - Syria joins UAR
+################################################
+event = {
+	id = 8218002 
+	country = EGY
+
+	name = EVT_8218002_NAME
+	desc = EVT_8218002_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	action = {
+		name = EVT_8218002_A
+		command = { type = dissent value = -5 }
+		command = { type = inherit which = SYR value = 1 }
+		command = { type = flag_ext where = EGY which = _uar }
+		command = { type = name where = EGY which = "United Arab Republic" }
+		
+		command = { type = addcore which = 1016 }
+		command = { type = addcore which = 1020 }
+		command = { type = addcore which = 1017 }
+		command = { type = addcore which = 1021 }
+		command = { type = addcore which = 1014 }
+		command = { type = addcore which = 1015 }
+	}
+
+}
+
+################################################
+### 8218003 - EGY - Invite Iraq to United Arab Republic
+################################################
+event = {
+	id = 8218003
+	country = EGY
+
+	name = EVT_8218003_NAME
+	desc = EVT_8218003_DESC
+	picture = "nwo\united_arab_republic"
+	decision_picture = "nwo\d_united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8218002 # Syria successfully joins
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = IRQ }
+		exists = IRQ
+		}
+	
+	decision = {
+		event = 8004906 # Revolution has happened
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = IRQ }
+		exists = IRQ
+		}
+		
+	decision_trigger = {
+		event = 8218002 # Syria successfully joins
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = IRQ }
+		exists = IRQ
+		}
+
+	date = { day = 1 month = february year = 1953 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1953 }
+
+	# Propose the union
+	action = {
+		name = EVT_8218003_A
+		ai_chance = 99
+		command = { type = domestic which = interventionism value = 1 }
+	}
+
+	# It doesn't interest us
+	action = {
+		name = EVT_8218003_B
+		trigger = { ai = yes }
+		ai_chance = 1
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 8218004 }
+	}
+
+
+}
+
+################################################
+#### 8218004 - IRQ - Answer to Join to United Arab Republic (1953)
+################################################
+event = {
+	id = 8218004
+	country = IRQ
+
+	name = EVT_8218004_NAME
+	desc = EVT_8218004_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8218003
+		exists = EGY
+		flag = cold_war
+		atwar = no
+		}
+
+	date = { day = 1 month = february year = 1953 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	# It doesn't interest us
+	action = {
+		name = EVT_8218004_A
+		ai_chance = 55
+		command = { type = relation which = EGY value = -100 }
+		command = { type = dissent value = -2 }
+	}
+
+	# We want to join
+	action = {
+		name = EVT_8218004_B
+		ai_chance = 45
+		command = { type = relation which = EGY value = 200 }
+		command = { type = trigger which = 8218005 }
+	}
+}
+
+################################################
+#### 8218005 - EGY - Iraq joins UAR
+################################################
+event = {
+	id = 8218005
+	country = EGY
+
+	name = EVT_8218005_NAME
+	desc = EVT_8218005_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	action = {
+		name = EVT_8218005_A
+		command = { type = dissent value = -5 }
+		command = { type = inherit which = IRQ value = 1 }
+		
+		command = { type = addcore which = 1030 }
+		command = { type = addcore which = 1033 }
+		command = { type = addcore which = 1029 }
+		command = { type = addcore which = 1027 }
+		command = { type = addcore which = 1034 }
+		command = { type = addcore which = 1036 }
+		command = { type = addcore which = 1035 }
+		command = { type = addcore which = 1037 }
+		command = { type = addcore which = 1031 }
+		command = { type = addcore which = 1028 }
+		command = { type = addcore which = 1032 }
+	}
+
+}
+
+################################################
+#### 8218006 - EGY - Invite Jordan to United Arab Republic (1953/1954)
+################################################
+event = {
+	id = 8218006
+	country = EGY
+
+	name = EVT_8218006_NAME
+	desc = EVT_8218006_DESC
+	picture = "nwo\united_arab_republic"
+	decision_picture = "nwo\united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8218005 #Iraq successfully joins
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = JOR }
+		exists = JOR
+		}
+		
+	decision = {
+		event = 8004906 # Revolution has happened
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = JOR }
+		exists = JOR
+		}
+		
+	decision_trigger = {
+		event = 8218005 #Iraq successfully joins
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = JOR }
+		exists = JOR
+		}
+
+	date = { day = 1 month = february year = 1953 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1954 }
+
+	# Propose the union
+	action = {
+		name = EVT_8218006_A
+		ai_chance = 99
+		command = { type = domestic which = interventionism value = 1 }
+	}
+
+	# It doesn't interest us
+	action = {
+		name = EVT_8218006_B
+		trigger = { ai = yes }
+		ai_chance = 1
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 8218007 }
+	}
+
+
+}
+
+################################################
+#### 8218006 - JOR - Answer to Join United Arab Republic (1954)
+################################################
+event = {
+	id = 8218007
+	country = JOR
+
+	name = EVT_8218007_NAME
+	desc = EVT_8218007_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8218006
+		exists = EGY
+		flag = cold_war
+		atwar = no
+		}
+
+	date = { day = 1 month = february year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	# We want to join
+	action = {
+		name = EVT_8218007_A
+		ai_chance = 55
+		command = { type = relation which = EGY value = 200 }
+		command = { type = trigger which = 8218008 }
+	}
+	
+	# It doesn't interest us
+	action = {
+		name = EVT_8218007_B
+		ai_chance = 45
+		command = { type = relation which = EGY value = -100 }
+		command = { type = dissent value = -5 }
+	}
+	
+}
+
+################################################
+#### 8218008 - EGY - Jordan joins UAR
+################################################
+event = {
+	id = 8218008
+	country = EGY
+
+	name = EVT_8218008_NAME
+	desc = EVT_8218008_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	action = {
+		name = EVT_8218008_A
+		command = { type = dissent value = -5 }
+		command = { type = inherit which = JOR value = 1 }
+		
+		command = { type = addcore which = 1025 }
+		command = { type = addcore which = 1026 }
+		command = { type = addcore which = 1022 }
+		command = { type = addcore which = 1024 }
+		command = { type = addcore which = 1023 }
+	}
+
+}
+
+################################################
+#### 8218010 - EGY - Establishment of permanent UAR (1955-1958)
+################################################
+event = {
+	id = 8218010
+	country = EGY
+
+	name = EVT_8218010_NAME
+	desc = EVT_8218010_DESC
+	picture = "nwo\nasser_diplomacy"
+	decision_picture = "nwo\d_nasser_diplomacy"
+	style = 1	
+
+	trigger = {
+		event = 8004903
+		event = 8218003
+		event = 8218020
+		#event = 8218023 Palestina, potrebbe essere in guerra meglio non metterla
+		#flag = cold_war
+		atwar = no
+		}
+
+	date = { day = 1 month = february year = 1955 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = EVT_8218010_A
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		#command = { type = country which = ARA }
+		
+		# United cabinet
+		command = { type = headofstate which = 560051 } # Gamal Abdel Nasser
+		command = { type = headofgovernment which = 560016 } # Shukri al-Kuwaitli
+		command = { type = foreignminister which = 560071 } # Anwar El Sadat
+		command = { type = armamentminister which = 560074 } # Khaled Mohieddin
+		command = { type = ministerofsecurity which = 560072 } # Gamal Salem
+		command = { type = ministerofintelligence which = 560069 } # Ali Sabri
+		command = { type = chiefofstaff which = 560079 } # Mohamed Hussein Tantawi
+		command = { type = chiefofarmy which = 560075 } # Hussein El-Shafei
+		command = { type = chiefofnavy which = 560095 } # Gadi abd-el Jabbar
+		command = { type = chiefofair which = 560062 } # Gamal Abdel Nasser
+	}
+	
+	action = {
+		name = EVT_8218010_B
+		trigger = { ai = yes }
+		ai_chance = 0
+		command = { type = dissent value = 1 }
+	}
+
+}
+
+################################################
+#### 8218011 - EGY - Dissolution of UAR (1961/1963)
+################################################
+event = {
+	id = 8218011
+	country = EGY
+
+	name = EVT_8218011_NAME
+	desc = EVT_8218011_DESC
+	picture = "nwo\egypt"
+	style = 1
+	
+	trigger = {
+		event = 8218002
+		}
+
+	date = { day = 28 month = september year = 1961 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8218011_A
+		
+		command = { type = name where = EGY which = "EGY" }
+		command = { type = flag_ext where = EGY which = _uar }
+		
+		command = { type = dissent value = 5 }
+		command = { type = independence which = SYR value = 0 }
+		command = { type = independence which = JOR value = 0 }
+		command = { type = independence which = IRQ value = 0 }
+		
+		# Syria
+		command = { type = removecore which = 1016 }
+		command = { type = removecore which = 1020 }
+		command = { type = removecore which = 1017 }
+		command = { type = removecore which = 1021 }
+		command = { type = removecore which = 1014 }
+		command = { type = removecore which = 1015 }
+		                   
+		# Iraq             
+		command = { type = removecore which = 1030 }
+		command = { type = removecore which = 1033 }
+		command = { type = removecore which = 1029 }
+		command = { type = removecore which = 1027 }
+		command = { type = removecore which = 1034 }
+		command = { type = removecore which = 1036 }
+		command = { type = removecore which = 1035 }
+		command = { type = removecore which = 1037 }
+		command = { type = removecore which = 1031 }
+		command = { type = removecore which = 1028 }
+		command = { type = removecore which = 1032 }
+		                   
+		# Jordan           
+		command = { type = removecore which = 1025 }
+		command = { type = removecore which = 1026 }
+		command = { type = removecore which = 1022 }
+		command = { type = removecore which = 1024 }
+		command = { type = removecore which = 1023 }
+	}
+
+}
+
+################################################
+#### 8218020 - EGY/ARA - Invite Lebanon to United Arab Republic (1954)
+################################################
+event = {
+	id = 8218020
+	tag = { EGY ARA }
+
+	name = EVT_8218020_NAME
+	desc = EVT_8218020_DESC
+	picture = "nwo\united_arab_republic"
+	decision_picture = "nwo\d_united_arab_republic"
+	style = 1	
+
+	trigger = {
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = LEB }
+		exists = LEB
+	}
+		
+	decision = {
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = LEB }
+		exists = LEB
+	}
+
+	date = { day = 1 month = february year = 1954 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1954 }
+
+	# Propose the union
+	action = {
+		name = EVT_8218020_A
+		ai_chance = 100
+		command = { type = domestic which = interventionism value = 1 }
+	}
+
+	# It doesn't interest us
+	action = {
+		name = EVT_8218020_B
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 8218021 }
+	}
+
+
+}
+
+################################################
+#### 8218021 - LEB - Answer to Join to United Arab Republic (1954)
+################################################
+event = {
+	id = 8218021
+	country = LEB
+
+	name = EVT_8218021_NAME
+	desc = EVT_8218021_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	trigger = {
+		OR = {
+			exists = ARA
+			exists = EGY
+		}
+		event = 8218020
+		flag = cold_war
+		atwar = no
+		}
+
+	date = { day = 1 month = february year = 1954 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1954 }
+
+	# We want to join
+	action = {
+		name = EVT_8218021_A
+		ai_chance = 98
+		command = { type = relation which = EGY value = 200 }
+		command = { type = relation which = ARA value = 200 }
+		command = { type = trigger which = 8218022 }
+	}
+	
+	# It doesn't interest us
+	action = {
+		name = EVT_8218021_B
+		ai_chance = 2
+		command = { type = relation which = ARA value = -100 }
+		command = { type = relation which = EGY value = -100 }
+		command = { type = dissent value = -5 }
+	}
+	
+}
+
+################################################
+#### 8218022 - EGY/ARA - Lebanon joins UAR
+################################################
+event = {
+	id = 8218022
+	tag = { EGY ARA }
+
+	name = EVT_8218022_NAME
+	desc = EVT_8218022_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	action = {
+		name = EVT_8218022_A
+		command = { type = dissent value = -5 }
+		command = { type = inherit which = LEB value = 1 }
+		
+		command = { type = addcore which = 1018 }
+		command = { type = addcore which = 1019 }
+	}
+
+}
+
+################################################
+#### 8218023 - EGY/ARA - Invite Palestine to United Arab Republic (1954-1958)
+################################################
+event = {
+	id = 8218023
+	tag = { EGY ARA }
+
+	name = EVT_8218023_NAME
+	desc = EVT_8218023_DESC
+	picture = "nwo\united_arab_republic"
+	decision_picture = "nwo\d_united_arab_republic"
+	style = 1	
+
+	trigger = {
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = PAL }
+		exists = PAL
+	}
+		
+	decision = {
+		flag = cold_war
+		atwar = no
+		NOT = { atwar = PAL }
+		exists = PAL
+	}
+
+	date = { day = 1 month = february year = 1954 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1958 }
+
+	# Propose the union
+	action = {
+		name = EVT_8218023_A
+		ai_chance = 100
+		command = { type = domestic which = interventionism value = 1 }
+	}
+
+	# It doesn't interest us
+	action = {
+		name = EVT_8218023_B
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 8218024 }
+	}
+
+
+}
+
+################################################
+#### 8218024 - PAL - Answer to Join to United Arab Republic (1954)	
+################################################
+event = {
+	id = 8218024
+	country = PAL
+
+	name = EVT_8218024_NAME
+	desc = EVT_8218024_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	trigger = {
+		event = 8218023
+		OR = {
+			exists = ARA
+			exists = EGY
+		}
+		flag = cold_war
+		atwar = no
+		}
+
+	date = { day = 1 month = february year = 1954 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	# We want to join
+	action = {
+		name = EVT_8218024_A
+		ai_chance = 98
+		command = { type = relation which = ARA value = 200 }
+		command = { type = trigger which = 8218025 }
+	}
+	
+	# It doesn't interest us
+	action = {
+		name = EVT_8218024_B
+		ai_chance = 2
+		command = { type = relation which = ARA value = -100 }
+		command = { type = dissent value = -5 }
+	}
+	
+}
+
+################################################
+#### 8218025 - EGY/ARA - Palestine joins UAR
+################################################
+event = {
+	id = 8218025
+	tag = { EGY ARA }
+
+	name = EVT_8218025_NAME
+	desc = EVT_8218025_DESC
+	picture = "nwo\united_arab_republic"
+	style = 1	
+
+	action = {
+		name = EVT_8218025_A
+		command = { type = dissent value = -5 }
+		command = { type = inherit which = PAL value = 1 }
+		
+		command = { type = addclaim which = 1010 }
+		command = { type = addclaim which = 1008 }
+		command = { type = addcore which = 1172 }
+		command = { type = addclaim which = 1011 }
+		command = { type = addcore which = 1013 }
+		
+		command = { type = sleepevent which = 8218030 }
+	}
+
+}
+
+#########################################################
+#### 8218029 - EGY/ARA - Nasser Speach
+#########################################################
+event = {
+	id = 8218029
+	tag = { EGY ARA }
+
+	name = "Nasser Speach"
+	desc = "Now that the Union is established, we can say that we will be a major power in the Middle East. The axis and the allies did not find in us a potential ally. The time of imperialism is finished."
+	picture = "nwo\dome_of_the_rock"
+	style = 1	
+		
+	trigger = {
+		event = 8218010
+		#flag = cold_war
+		atwar = no
+	}
+		
+
+	date = { day = 1 month = march year = 1955 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Condamn the Imperialism of Axis and Allies"
+		command = { type = dissent value = -5 }
+		
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = U01 value = -100 }		
+		command = { type = embargo which = -1 where = ENG value = 3 } #make embargo
+		command = { type = embargo which = -1 where = USA value = 3 } #make embargo
+		command = { type = embargo which = -1 where = U01 value = 3 } #make embargo
+						
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = ITA value = -100 }	
+		command = { type = embargo which = -1 where = GER value = 3 } #make embargo
+		command = { type = embargo which = -1 where = ITA value = 3 } #make embargo
+		
+		command = { type = money value = -50 }
+		command = { type = supplies value = -250 }
+		
+		command = { type = relation which = SOV value = -50 }
+		command = { type = belligerence value = 10 }		
+	}
+	
+	action = {
+		name = "Condamn the Imperialism of and sign a friendship treaty with Soviet Union"
+		command = { type = dissent value = -10 }
+		
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = U01 value = -100 }		
+		command = { type = embargo which = -1 where = ENG value = 3 } #make embargo
+		command = { type = embargo which = -1 where = USA value = 3 } #make embargo
+		command = { type = embargo which = -1 where = U01 value = 3 } #make embargo
+						
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = ITA value = -100 }	
+		command = { type = embargo which = -1 where = GER value = 3 } #make embargo
+		command = { type = embargo which = -1 where = ITA value = 3 } #make embargo
+		
+		command = { type = relation which = SOV value = 100 }
+		command = { type = belligerence value = 15 }
+		
+		command = { type = non_aggression which = SOV }
+		
+		command = { type = money value = -100 }
+		command = { type = supplies value = -500 }
+	}
+	
+}
+
+#########################################################
+# Nasser Speech - Reactions
+#########################################################
+event = {
+        id = 8218030
+        random = no
+        country = ENG
+ 
+        name = "La reazione britannica al discorso di nasser"
+        desc = "Il discorso è semplicemente inaccettabile, ritiriamo il nostro ambasciatore" 
+        style = 0
+ 
+		trigger = {
+			event = 8218029
+		}
+		date = { day = 1 month = january year = 1956 }
+		offset = 5
+		deathdate = { day = 29 month = march year = 1956 }
+ 
+        action= {
+				ai_chance = 100
+                name = "Il discorso di Nasser non è accettabile. La UAR ne pagherà le conseguenze"				
+				
+				command = { type = embargo which = -1 where = EGY value = 3 } #make embargo
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+				
+        }			
+}
+
+event = {
+        id = 8218031
+        random = no
+        country = U01
+ 
+        name = "La reazione francese al discorso di nasser"
+        desc = "Il discorso è semplicemente inaccettabile, ritiriamo il nostro ambasciatore" 
+        style = 0
+ 
+		trigger = {
+			event = 8218029
+		}
+		date = { day = 1 month = january year = 1956 }
+		offset = 5
+		deathdate = { day = 29 month = march year = 1956 }
+	
+        action= {
+				ai_chance = 100
+                name = "Il discorso di Nasser non è accettabile. La UAR ne pagherà le conseguenze"				
+				
+				command = { type = embargo which = -1 where = EGY value = 3 } #make embargo
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+
+event = {
+        id = 8218032
+        random = no
+        country = USA
+ 
+        name = "La reazione americana al discorso di nasser"
+        desc = "Il discorso è semplicemente inaccettabile, ritiriamo il nostro ambasciatore" 
+        style = 0
+ 
+ 		trigger = {
+			event = 8218029
+		}
+		date = { day = 1 month = january year = 1956 }
+		offset = 5
+		deathdate = { day = 29 month = march year = 1956 }
+ 
+        action= {
+				ai_chance = 100
+                name = "Il discorso di Nasser non è accettabile. La UAR ne pagherà le conseguenze"				
+				
+				command = { type = embargo which = -1 where = EGY value = 3 } #make embargo
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+
+event = {
+        id = 8218033
+        random = no
+        country = GER
+ 
+        name = "La reazione tedesca al discorso di nasser"
+        desc = "Il discorso è semplicemente inaccettabile, ritiriamo il nostro ambasciatore" 
+        style = 0
+ 
+ 		trigger = {
+			event = 8218029
+		}
+		date = { day = 1 month = january year = 1956 }
+		offset = 5
+		deathdate = { day = 29 month = march year = 1956 }
+ 
+        action= {
+				ai_chance = 100
+                name = "Il discorso di Nasser non è accettabile. La UAR ne pagherà le conseguenze"				
+				
+				command = { type = embargo which = -1 where = EGY value = 3 } #make embargo
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+
+event = {
+        id = 8218034
+        random = no
+        country = ITA
+ 
+        name = "La reazione italiana al discorso di nasser"
+        desc = "Il discorso è semplicemente inaccettabile, ritiriamo il nostro ambasciatore" 
+        style = 0
+ 
+ 		trigger = {
+			event = 8218029
+		}
+		date = { day = 1 month = january year = 1956 }
+		offset = 5
+		deathdate = { day = 29 month = march year = 1956 }
+
+        action= {
+				ai_chance = 100
+                name = "Il discorso di Nasser non è accettabile. La UAR ne pagherà le conseguenze"				
+				
+				command = { type = embargo which = -1 where = EGY value = 3 } #make embargo
+				
+				command = { type = dissent value = 1 }
+				command = { type = belligerence value = 1 }
+        }			
+}
+
+event = {
+        id = 8218035
+        random = no
+        country = SOV
+ 
+        name = "La reazione sovietica al discorso di nasser"
+        desc = "Il discorso è corretto ! Stabiliamo nuovi rapporti con la UAR" 
+        style = 0
+ 
+ 		trigger = {
+			event = 8218029
+		}
+		date = { day = 1 month = january year = 1956 }
+		offset = 5
+		deathdate = { day = 29 month = march year = 1956 }
+
+        action= {
+				ai_chance = 100
+                name = "Miglioriamo le nostre relazioni con la gloriosa nazione araba"				
+				
+				command = { type = relation which = EGY value = 50 }	
+				
+				command = { type = belligerence value = 1 }
+        }			
+}
+
+#########################################################
+#### 8218036 - EGY - New geostrategy
+#########################################################
+event = {
+	id = 8218036
+	tag = { EGY ARA }
+
+	name = "New geostrategy"
+	desc = "Scegliamo la nostra nuova geostrategia"
+	picture = "nwo\dome_of_the_rock"
+	style = 1	
+
+		
+	decision = {
+		flag = cold_war
+		atwar = no
+		OR = {
+			control = { province = 750 data = -1 } #Tripoli
+			control = { province = 813 data = -1 } #Port Sudan
+			control = { province = 900 data = -1 } #Suez
+			control = { province = 1008 data = -1 } #Tel Aviv
+		}
+		}
+		
+	trigger = {
+		flag = cold_war
+		atwar = no
+		OR = {
+			control = { province = 750 data = -1 } #Tripoli
+			control = { province = 813 data = -1 } #Port Sudan
+			control = { province = 900 data = -1 } #Suez
+			control = { province = 1008 data = -1 } #Tel Aviv
+		}
+	}
+
+	date = { day = 1 month = april year = 1956 }
+	offset = 25
+	deathdate = { day = 30 month = june year = 1956 }
+	
+	action = {
+		name = "Sudan e Libia"
+		ai_chance = 25
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = 10 }
+		
+		#command = { type = addclaim which = 900 } #Suez
+		
+		#command = { type = trigger which = 8218036 } #reazione britannica
+		
+	}
+	
+	action = {
+		name = "Claim Suez e Kuwait"
+		ai_chance = 25
+		
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = 10 }
+		command = { type = addclaim which = 900 } #Suez
+		
+		#command = { type = trigger which = 8218036 } #crisi Suez
+	}
+	
+	action = {
+		name = "Tutto"
+		ai_chance = 25
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = 10 }
+		
+		#command = { type = trigger which = 8218036 } #reazione britannica + grande arabia
+	}
+	
+	action = {
+		name = "Invita lo Yemen"
+		ai_chance = 25
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = 10 }
+		
+		command = { type = trigger which = 8218036 } #grande arabia
+	}
+	
+}
