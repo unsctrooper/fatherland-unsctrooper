@@ -20,8 +20,6 @@ event = {
 	    action = {
 		name = "8014250A"
         command = { type = dissent value = 5 }
-		command = { type = max_organization which = land value = -10 }
-		command = { type = morale which = land value = -20 }
 		command = { type = ground_def_eff value = 0.5 }
 	}
 }
@@ -888,8 +886,6 @@ event = { # Dzhanov Influences
 		name = "Damn!"
         command = { type = dissent value = 3 }
         command = { type = switch_allegiance which = -1 where = SIB }
-		command = { type = max_organization which = land value = -5 }
-		command = { type = morale which = land value = -10 }
 	}
 }
 event = { # Tsarist Influences
@@ -916,8 +912,6 @@ event = { # Tsarist Influences
 		name = "Damn!"
         command = { type = dissent value = 3 }
         command = { type = switch_allegiance which = -1 where = U59 }
-		command = { type = max_organization which = land value = -5 }
-		command = { type = morale which = land value = -10 }
 	}
 }
 event = { # Romanov Defeat - Dzhanov
@@ -1028,6 +1022,8 @@ event = { # Soviet Defeat - Romanov
 	trigger = {
     war = { country = U59 country = SOV }
 	control = { province = 1138 data = U59 } # Omsk
+	control = { province = 1137 data = U59 } # Kurgan
+	control = { province = 1132 data = U59 } # Cheylabisk
 	}
 	
     date = { day = 1 month = january year = 1948 }
@@ -1052,7 +1048,9 @@ event = { # Soviet Defeat - Dzhanov
 
 	trigger = {
     war = { country = SIB country = SOV }
-	control = { province = 1138 data = SIB } # Omsk
+	control = { province = 1138 data = SIB }
+	control = { province = 1137 data = SIB }
+	control = { province = 1132 data = SIB }	
 	}
 	
     date = { day = 1 month = january year = 1948 }
@@ -1321,6 +1319,9 @@ command = { type = secedeprovince which = SOV value = 1542 when = 1 }
 command = { type = secedeprovince which = SOV value = 1543 when = 1 }
 }
 }
+
+################
+### Mongolia ###
 ##########################
 ### VI - Internationale ##
 ##########################
