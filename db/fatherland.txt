@@ -57,6 +57,7 @@ event = "db\events\fatherland\asia\thailand.txt"
 # AXIS EUROPE
 event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
 event = "db\events\fatherland\axis_europe\Moscow.txt"
+event = "db\events\fatherland\axis_europe\Intervention.txt"
 
 # COMINTERN
 event = "db\events\fatherland\comintern\comintern_conference.txt"
