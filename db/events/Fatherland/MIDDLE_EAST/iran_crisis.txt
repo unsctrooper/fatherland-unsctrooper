@@ -309,28 +309,28 @@ event = {
 ##########################################
 ### Iran ceases to be a puppet
 ##########################################
-event = {
-	id = 8500922
-	country = PER
+#event = {
+    #id = 8500922
+	#country = PER
 
-	name = EVT_8500922_NAME
-	desc = EVT_8500922_DESC
-	picture = "nwo\mohammed_reza_pahlavi"
-	style = 1
+	#name = EVT_8500922_NAME
+	#desc = EVT_8500922_DESC
+	#picture = "nwo\mohammed_reza_pahlavi"
+	#style = 1
 
-	trigger = {
-		flag = cold_war
-		ispuppet = yes
-	}
+	#trigger = {
+	#	flag = cold_war
+	#	ispuppet = yes
+	#}
 
-	date = { day = 0 month = january year = 1949 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	#date = { day = 0 month = january year = 1949 }
+	#offset = 360
+	#deathdate = { day = 30 month = december year = 1963 }
 
-	action = {
-		name = EVT_8500922_A
-		command = { type = end_puppet }
-		command = { type = add_division value = infantry when = 12 }
-		command = { type = end_access which = ENG }
-	}
-}
+	#action = {
+	#	name = EVT_8500922_A
+	#	command = { type = end_puppet }
+	#	command = { type = add_division value = infantry when = 12 }
+	#	command = { type = end_access which = ENG }
+	#}
+    #}
