@@ -9,18 +9,18 @@ event = {
 	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Turkestani elements in the Soviet Union. However, Turkestani nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
 	picture = "news_paper"
 	style = 1	
-
-	trigger = {
-    war = { country = AXI country = SOV }
-	}
-		
+	
 	decision = {
     war = { country = AXI country = SOV }
 	}
 		
 	decision_trigger = {
     war = { country = AXI country = SOV }
-    month  = march 
+	}
+	
+	trigger = {
+    war = { country = AXI country = SOV }
+    month = march
 	}
 
 	date = { day = 1 month = january year = 1948 }
