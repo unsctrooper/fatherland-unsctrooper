@@ -62,7 +62,7 @@
     relation = { tag = YEM value = -200 }
     relation = { tag = U02 value = -200 }
 	relation = { tag = U58 value = 200 access = yes }   #SS
-	relation = { tag = AXIS value = 200 access = yes }	Axis HQ
+	relation = { tag = AXI value = 200 access = yes }	Axis HQ
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
