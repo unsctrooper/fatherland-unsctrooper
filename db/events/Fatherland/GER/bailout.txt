@@ -19,6 +19,7 @@ id = 77000
 
 trigger = { 
 NOT = { manpower = 10 } 
+NOT = { army = 30 } 
 	}
 
 	action = {
@@ -51,6 +52,7 @@ id = 77001
 
 trigger = { 
 NOT = { manpower = 10 } 
+NOT = { army = 20 } 
 	}
 
 	action = {
@@ -83,6 +85,7 @@ id = 77002
 
 trigger = { 
 NOT = { manpower = 10 } 
+NOT = { army = 6 } 
 	}
 
 	action = {
@@ -115,38 +118,7 @@ id = 77003
 
 trigger = { 
 NOT = { manpower = 10 } 
-	}
-
-	action = {
-			name = "Damn!"
-			command = { type = dissent value = 5 }
-			command = { type = manpowerpool value = 20 }
-		    command = { type = trigger which = 77100 }
-	}
-}
-
-##############
-### Norway ###
-##############
-
-event = {
-id = 77004
-	random = no
-	country = U45
-	style = 2
-	persistent = yes
-	picture = "ProtestAlexanderetta"
-	
-	name = "We're bleeding dry!"
-    desc = "We need to request the German central government to help us out, again!"
-	
-	date = { day = 1 month = february year = 1948 }
-	offset = 7
-	deathdate = { day = 1 month = december year = 1955 }
-	
-
-trigger = { 
-NOT = { manpower = 10 } 
+NOT = { army = 20 } 
 	}
 
 	action = {
