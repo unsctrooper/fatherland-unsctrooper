@@ -1,0 +1,60 @@
+# Turkestan #
+#############
+
+event = {
+	id = 780000
+	country = GER
+
+	name = "Pull back from Turkestan"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Turkestani elements in the Soviet Union. However, Turkestani nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	picture = "news_paper"
+	style = 1	
+
+	trigger = {
+    war = { country = AXI country = SOV }
+	}
+		
+	decision = {
+    war = { country = AXI country = SOV }
+	}
+		
+	decision_trigger = {
+    war = { country = AXI country = SOV }
+    month  = march 
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "Retreat!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 780001 } 
+		command = { type = manpowerpool value = 50 }
+		command = { type = supplies value = 5000 }
+		command = { type = oilpool value = 2500 }
+	}
+}
+
+event = {
+	id = 780001
+	random = no
+	country = AXI
+
+    name = "Pull back from Turkestan"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Turkestani elements in the Soviet Union. However, Turkestani nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	style = 2
+	picture = "newspaper"
+	
+	    action = {
+		name = "8014250A"
+		command = { type = peace which = SOV value = 1 }
+        command = { type = leave_alliance when = 1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+	}
+}
