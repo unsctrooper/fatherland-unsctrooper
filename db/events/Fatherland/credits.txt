@@ -2,15 +2,168 @@ event = {
 id = 1
 picture = "news_paper"
 style = 1
+persistent = yes
 
-trigger = { ai = no }
+trigger = { NOT = { local_flag = 1945_dev_applied } }
 
-date = { day = 3 month = january year = 1948 }	
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2000 }  
 
 name = CREDITS1
 desc = CREDITS2
 action = {
 name = ACTION_NAME_HURRAH
-	command = { type = setflag which = cold_war }
+
+command = { type = setflag which = cold_war }
+command = { type = local_setflag which = 1945_dev_applied }
+command = { trigger = { control = { province = 786 data = -1 } } type = construct which = ic where = 786 value = -0.6667 }
+command = { trigger = { control = { province = 787 data = -1 } } type = construct which = ic where = 787 value = -2 }
+command = { trigger = { control = { province = 789 data = -1 } } type = construct which = ic where = 789 value = -0.6667 }
+command = { trigger = { control = { province = 790 data = -1 } } type = construct which = ic where = 790 value = -1.3333 }
+command = { trigger = { control = { province = 791 data = -1 } } type = construct which = ic where = 791 value = -0.6667 }
+command = { trigger = { control = { province = 796 data = -1 } } type = add_prov_resource which = 796 value = 5.5706 where = oil }
+command = { trigger = { control = { province = 1004 data = -1 } } type = add_prov_resource which = 1004 value = -0.8333 where = rare_materials }
+command = { trigger = { control = { province = 1008 data = -1 } } type = construct which = ic where = 1008 value = 6.4 }
+command = { trigger = { control = { province = 1008 data = -1 } } type = province_manpower which = 1008 value = 7.418 }
+command = { trigger = { control = { province = 1011 data = -1 } } type = construct which = ic where = 1011 value = 1.6 }
+command = { trigger = { control = { province = 1016 data = -1 } } type = construct which = ic where = 1016 value = 2.4 }
+command = { trigger = { control = { province = 1016 data = -1 } } type = add_prov_resource which = 1016 value = 2.1 where = energy }
+command = { trigger = { control = { province = 1016 data = -1 } } type = add_prov_resource which = 1016 value = 1.96 where = metal }
+command = { trigger = { control = { province = 1016 data = -1 } } type = add_prov_resource which = 1016 value = 1 where = rare_materials }
+command = { trigger = { control = { province = 1019 data = -1 } } type = construct which = ic where = 1019 value = 1.2 }
+command = { trigger = { control = { province = 1019 data = -1 } } type = province_manpower which = 1019 value = 2.0672 }
+command = { trigger = { control = { province = 1019 data = -1 } } type = add_prov_resource which = 1019 value = 1.05 where = energy }
+command = { trigger = { control = { province = 1019 data = -1 } } type = add_prov_resource which = 1019 value = 0.98 where = metal }
+command = { trigger = { control = { province = 1019 data = -1 } } type = add_prov_resource which = 1019 value = 0.5 where = rare_materials }
+command = { trigger = { control = { province = 1022 data = -1 } } type = construct which = ic where = 1022 value = 4.8 }
+command = { trigger = { control = { province = 1022 data = -1 } } type = province_manpower which = 1022 value = 5.6344 }
+command = { trigger = { control = { province = 1022 data = -1 } } type = add_prov_resource which = 1022 value = 4.2 where = energy }
+command = { trigger = { control = { province = 1022 data = -1 } } type = add_prov_resource which = 1022 value = 3.92 where = metal }
+command = { trigger = { control = { province = 1022 data = -1 } } type = add_prov_resource which = 1022 value = 2 where = rare_materials }
+command = { trigger = { control = { province = 1027 data = -1 } } type = construct which = ic where = 1027 value = -0.2 }
+command = { trigger = { control = { province = 1027 data = -1 } } type = province_manpower which = 1027 value = 1.6213 }
+command = { trigger = { control = { province = 1027 data = -1 } } type = add_prov_resource which = 1027 value = -0.7017 where = oil }
+command = { trigger = { control = { province = 1029 data = -1 } } type = construct which = ic where = 1029 value = -0.2 }
+command = { trigger = { control = { province = 1029 data = -1 } } type = add_prov_resource which = 1029 value = -0.4678 where = oil }
+command = { trigger = { control = { province = 1032 data = -1 } } type = construct which = ic where = 1032 value = -0.2 }
+command = { trigger = { control = { province = 1032 data = -1 } } type = add_prov_resource which = 1032 value = -1.4033 where = oil }
+command = { trigger = { control = { province = 1034 data = -1 } } type = construct which = ic where = 1034 value = -0.2 }
+command = { trigger = { control = { province = 1034 data = -1 } } type = province_manpower which = 1034 value = 1.6213 }
+command = { trigger = { control = { province = 1035 data = -1 } } type = construct which = ic where = 1035 value = -0.2 }
+command = { trigger = { control = { province = 1035 data = -1 } } type = province_manpower which = 1035 value = 1.6213 }
+command = { trigger = { control = { province = 1035 data = -1 } } type = add_prov_resource which = 1035 value = -0.4678 where = oil }
+command = { trigger = { control = { province = 1036 data = -1 } } type = construct which = ic where = 1036 value = -0.2 }
+command = { trigger = { control = { province = 1036 data = -1 } } type = province_manpower which = 1036 value = 1.6213 }
+command = { trigger = { control = { province = 1036 data = -1 } } type = add_prov_resource which = 1036 value = -1.1694 where = oil }
+command = { trigger = { control = { province = 1038 data = -1 } } type = add_prov_resource which = 1038 value = 1.6604 where = oil }
+command = { trigger = { control = { province = 1040 data = -1 } } type = construct which = ic where = 1040 value = -0.2 }
+command = { trigger = { control = { province = 1040 data = -1 } } type = add_prov_resource which = 1040 value = 35.4215 where = oil }
+command = { trigger = { control = { province = 1041 data = -1 } } type = construct which = ic where = 1041 value = 1.2 }
+command = { trigger = { control = { province = 1041 data = -1 } } type = province_manpower which = 1041 value = 1.5 }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 1.05 where = energy }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 0.98 where = metal }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 0.5 where = rare_materials }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 21.12 where = oil }
+command = { trigger = { control = { province = 1045 data = -1 } } type = construct which = ic where = 1045 value = -1 }
+command = { trigger = { control = { province = 1050 data = -1 } } type = construct which = ic where = 1050 value = 1.2 }
+command = { trigger = { control = { province = 1532 data = -1 } } type = province_manpower which = 1532 value = 0.1877 }
+command = { trigger = { control = { province = 1533 data = -1 } } type = construct which = ic where = 1533 value = 3 }
+command = { trigger = { control = { province = 1533 data = -1 } } type = province_manpower which = 1533 value = 0.2502 }
+command = { trigger = { control = { province = 1533 data = -1 } } type = add_prov_resource which = 1533 value = 0.88 where = oil }
+command = { trigger = { control = { province = 1534 data = -1 } } type = province_manpower which = 1534 value = 0.6256 }
+command = { trigger = { control = { province = 1534 data = -1 } } type = add_prov_resource which = 1534 value = 73.5 where = energy }
+command = { trigger = { control = { province = 1534 data = -1 } } type = add_prov_resource which = 1534 value = 44.1 where = metal }
+command = { trigger = { control = { province = 1535 data = -1 } } type = province_manpower which = 1535 value = 0.6243 }
+command = { trigger = { control = { province = 1536 data = -1 } } type = province_manpower which = 1536 value = 0.1251 }
+command = { trigger = { control = { province = 1537 data = -1 } } type = construct which = ic where = 1537 value = 6 }
+command = { trigger = { control = { province = 1537 data = -1 } } type = province_manpower which = 1537 value = 0.2502 }
+command = { trigger = { control = { province = 1537 data = -1 } } type = add_prov_resource which = 1537 value = 10.5 where = energy }
+command = { trigger = { control = { province = 1537 data = -1 } } type = add_prov_resource which = 1537 value = 2.5 where = rare_materials }
+command = { trigger = { control = { province = 1538 data = -1 } } type = province_manpower which = 1538 value = 0.0626 }
+command = { trigger = { control = { province = 1539 data = -1 } } type = province_manpower which = 1539 value = 0.0626 }
+command = { trigger = { control = { province = 1540 data = -1 } } type = province_manpower which = 1540 value = 0.6243 }
+command = { trigger = { control = { province = 1540 data = -1 } } type = add_prov_resource which = 1540 value = 2.88 where = energy }
+command = { trigger = { control = { province = 786 data = -1 } } type = construct which = ic where = 786 value = 0.7 }
+command = { trigger = { control = { province = 786 data = -1 } } type = province_manpower which = 786 value = 1.0972 }
+command = { trigger = { control = { province = 787 data = -1 } } type = construct which = ic where = 787 value = 2.1 }
+command = { trigger = { control = { province = 787 data = -1 } } type = province_manpower which = 787 value = 2.1944 }
+command = { trigger = { control = { province = 788 data = -1 } } type = province_manpower which = 788 value = 1.0972 }
+command = { trigger = { control = { province = 789 data = -1 } } type = construct which = ic where = 789 value = 0.7 }
+command = { trigger = { control = { province = 789 data = -1 } } type = province_manpower which = 789 value = 1.0972 }
+command = { trigger = { control = { province = 790 data = -1 } } type = construct which = ic where = 790 value = 1.4 }
+command = { trigger = { control = { province = 790 data = -1 } } type = province_manpower which = 790 value = 1.6458 }
+command = { trigger = { control = { province = 791 data = -1 } } type = construct which = ic where = 791 value = 0.7 }
+command = { trigger = { control = { province = 792 data = -1 } } type = province_manpower which = 792 value = 0.5486 }
+command = { trigger = { control = { province = 793 data = -1 } } type = province_manpower which = 793 value = 0.5486 }
+command = { trigger = { control = { province = 794 data = -1 } } type = province_manpower which = 794 value = 1.0972 }
+command = { trigger = { control = { province = 796 data = -1 } } type = add_prov_resource which = 796 value = 1.6451 where = oil }
+command = { trigger = { control = { province = 1004 data = -1 } } type = add_prov_resource which = 1004 value = 1.8958 where = rare_materials }
+command = { trigger = { control = { province = 1008 data = -1 } } type = construct which = ic where = 1008 value = 5.76 }
+command = { trigger = { control = { province = 1008 data = -1 } } type = province_manpower which = 1008 value = 0.3069 }
+command = { trigger = { control = { province = 1011 data = -1 } } type = construct which = ic where = 1011 value = 1.44 }
+command = { trigger = { control = { province = 1016 data = -1 } } type = construct which = ic where = 1016 value = 2.4 }
+command = { trigger = { control = { province = 1016 data = -1 } } type = province_manpower which = 1016 value = 0.0365 }
+command = { trigger = { control = { province = 1016 data = -1 } } type = add_prov_resource which = 1016 value = 2.1 where = energy }
+command = { trigger = { control = { province = 1016 data = -1 } } type = add_prov_resource which = 1016 value = 1.96 where = metal }
+command = { trigger = { control = { province = 1016 data = -1 } } type = add_prov_resource which = 1016 value = 1 where = rare_materials }
+command = { trigger = { control = { province = 1017 data = -1 } } type = province_manpower which = 1017 value = 0.0365 }
+command = { trigger = { control = { province = 1019 data = -1 } } type = construct which = ic where = 1019 value = 3.6 }
+command = { trigger = { control = { province = 1019 data = -1 } } type = province_manpower which = 1019 value = 0.1118 }
+command = { trigger = { control = { province = 1019 data = -1 } } type = add_prov_resource which = 1019 value = 3.15 where = energy }
+command = { trigger = { control = { province = 1019 data = -1 } } type = add_prov_resource which = 1019 value = 2.94 where = metal }
+command = { trigger = { control = { province = 1019 data = -1 } } type = add_prov_resource which = 1019 value = 1.5 where = rare_materials }
+command = { trigger = { control = { province = 1021 data = -1 } } type = province_manpower which = 1021 value = 0.0365 }
+command = { trigger = { control = { province = 1022 data = -1 } } type = construct which = ic where = 1022 value = 4.8 }
+command = { trigger = { control = { province = 1022 data = -1 } } type = province_manpower which = 1022 value = 0.2418 }
+command = { trigger = { control = { province = 1022 data = -1 } } type = add_prov_resource which = 1022 value = 4.2 where = energy }
+command = { trigger = { control = { province = 1022 data = -1 } } type = add_prov_resource which = 1022 value = 3.92 where = metal }
+command = { trigger = { control = { province = 1022 data = -1 } } type = add_prov_resource which = 1022 value = 2 where = rare_materials }
+command = { trigger = { control = { province = 1027 data = -1 } } type = construct which = ic where = 1027 value = 0.768 }
+command = { trigger = { control = { province = 1027 data = -1 } } type = province_manpower which = 1027 value = 0.0956 }
+command = { trigger = { control = { province = 1027 data = -1 } } type = add_prov_resource which = 1027 value = 0.3791 where = oil }
+command = { trigger = { control = { province = 1029 data = -1 } } type = construct which = ic where = 1029 value = 0.768 }
+command = { trigger = { control = { province = 1029 data = -1 } } type = add_prov_resource which = 1029 value = 0.2527 where = oil }
+command = { trigger = { control = { province = 1032 data = -1 } } type = construct which = ic where = 1032 value = 0.768 }
+command = { trigger = { control = { province = 1032 data = -1 } } type = add_prov_resource which = 1032 value = 0.7582 where = oil }
+command = { trigger = { control = { province = 1034 data = -1 } } type = construct which = ic where = 1034 value = 0.768 }
+command = { trigger = { control = { province = 1034 data = -1 } } type = province_manpower which = 1034 value = 0.0956 }
+command = { trigger = { control = { province = 1035 data = -1 } } type = construct which = ic where = 1035 value = 0.768 }
+command = { trigger = { control = { province = 1035 data = -1 } } type = province_manpower which = 1035 value = 0.0956 }
+command = { trigger = { control = { province = 1035 data = -1 } } type = add_prov_resource which = 1035 value = 0.2527 where = oil }
+command = { trigger = { control = { province = 1036 data = -1 } } type = construct which = ic where = 1036 value = 0.768 }
+command = { trigger = { control = { province = 1036 data = -1 } } type = province_manpower which = 1036 value = 0.0956 }
+command = { trigger = { control = { province = 1036 data = -1 } } type = add_prov_resource which = 1036 value = 0.6318 where = oil }
+command = { trigger = { control = { province = 1038 data = -1 } } type = add_prov_resource which = 1038 value = 1.1669 where = oil }
+command = { trigger = { control = { province = 1040 data = -1 } } type = construct which = ic where = 1040 value = 0.768 }
+command = { trigger = { control = { province = 1040 data = -1 } } type = add_prov_resource which = 1040 value = 26.4925 where = oil }
+command = { trigger = { control = { province = 1041 data = -1 } } type = construct which = ic where = 1041 value = 4.8 }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 4.2 where = energy }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 3.92 where = metal }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 2 where = rare_materials }
+command = { trigger = { control = { province = 1041 data = -1 } } type = add_prov_resource which = 1041 value = 20.0828 where = oil }
+command = { trigger = { control = { province = 1045 data = -1 } } type = construct which = ic where = 1045 value = 3.84 }
+command = { trigger = { control = { province = 1045 data = -1 } } type = province_manpower which = 1045 value = 0.0365 }
+command = { trigger = { control = { province = 1048 data = -1 } } type = province_manpower which = 1048 value = 0.0365 }
+command = { trigger = { control = { province = 1049 data = -1 } } type = province_manpower which = 1049 value = 0.0365 }
+command = { trigger = { control = { province = 1050 data = -1 } } type = construct which = ic where = 1050 value = -1.248 }
+command = { trigger = { control = { province = 1050 data = -1 } } type = province_manpower which = 1050 value = 0.1458 }
+command = { trigger = { control = { province = 1532 data = -1 } } type = province_manpower which = 1532 value = 0.3844 }
+command = { trigger = { control = { province = 1533 data = -1 } } type = construct which = ic where = 1533 value = 0.6 }
+command = { trigger = { control = { province = 1533 data = -1 } } type = province_manpower which = 1533 value = 0.5125 }
+command = { trigger = { control = { province = 1533 data = -1 } } type = add_prov_resource which = 1533 value = 0.9081 where = oil }
+command = { trigger = { control = { province = 1534 data = -1 } } type = province_manpower which = 1534 value = 1.2812 }
+command = { trigger = { control = { province = 1534 data = -1 } } type = add_prov_resource which = 1534 value = 15.3125 where = energy }
+command = { trigger = { control = { province = 1534 data = -1 } } type = add_prov_resource which = 1534 value = 8.673 where = metal }
+command = { trigger = { control = { province = 1535 data = -1 } } type = province_manpower which = 1535 value = 0.3697 }
+command = { trigger = { control = { province = 1536 data = -1 } } type = province_manpower which = 1536 value = 0.2562 }
+command = { trigger = { control = { province = 1537 data = -1 } } type = construct which = ic where = 1537 value = 1.4 }
+command = { trigger = { control = { province = 1537 data = -1 } } type = province_manpower which = 1537 value = 0.5125 }
+command = { trigger = { control = { province = 1537 data = -1 } } type = add_prov_resource which = 1537 value = 2.1875 where = energy }
+command = { trigger = { control = { province = 1537 data = -1 } } type = add_prov_resource which = 1537 value = 0.2917 where = rare_materials }
+command = { trigger = { control = { province = 1538 data = -1 } } type = province_manpower which = 1538 value = 0.1281 }
+command = { trigger = { control = { province = 1539 data = -1 } } type = province_manpower which = 1539 value = 0.1281 }
+command = { trigger = { control = { province = 1540 data = -1 } } type = province_manpower which = 1540 value = 0.3697 }
+command = { trigger = { control = { province = 1540 data = -1 } } type = add_prov_resource which = 1540 value = -0.3673 where = energy }
 	}
 }
