@@ -154,13 +154,22 @@ command = { type = sleepminister which = 149 }
 command = { type = headofstate which = 23 } # Bormann
 command = { type = domestic which = defense_lobby value = -3 }
 command = { type = domestic which = interventionism value = -3 }
-command = { type = event which = 90000534 where = FIN when = 14 }
-command = { type = event which = 90000542 where = HUN when = 14 }
-command = { type = event which = 90000543 where = ROM when = 14 }
-command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
+command = { type = leave_alliance when = 1 }
 command = { type = dissent value = 25 }
+
+# Axis Crumbles
+command = { trigger = { participant = { country = HUN value = 2 } } type = event which = 90000542 where = HUN when = 2 }
+command = { trigger = { participant = { country = FRA value = 2 } } type = event which = 90000542 where = FRA when = 2 }
+command = { trigger = { participant = { country = SPA value = 2 } } type = event which = 90000542 where = SPA when = 2 }
+command = { trigger = { participant = { country = POR value = 2 } } type = event which = 90000542 where = POR when = 2 }
+command = { trigger = { participant = { country = ROM value = 2 } } type = event which = 90000542 where = ROM when = 2 }
+command = { trigger = { participant = { country = BUL value = 2 } } type = event which = 90000542 where = BUL when = 2 }
+command = { trigger = { participant = { country = FIN value = 2 } } type = event which = 90000542 where = FIN when = 2 }
+command = { trigger = { participant = { country = SWE value = 2 } } type = event which = 90000542 where = SWE when = 2 }
+command = { trigger = { participant = { country = TUR value = 2 } } type = event which = 90000542 where = TUR when = 2 }
 }
 }
+
 event = {
 id = 90000503
 country = GER
@@ -999,6 +1008,8 @@ name = ACTION_NAME_OK
 command = { type = inherit which = U41 value = 1 }
 command = { type = end_puppet }
 command = { type = end_access which = GER }
+command = { type = manpowerpool value = -500 }
+command = { type = strength which = land when = 0 where = 0 value = 0.33 }
 command = { type = event which = 90000529 where = GER when = 1 }
 command = { type = dissent value = 3 }
 }
@@ -1124,14 +1135,6 @@ action_a = {
 name = ACTION_NAME_OK
 command = { type = dissent value = 3 }
 command = { type = event which = 90000530 where = U58 when = 7 }
-command = { type = switch_allegiance which = -1 where = U58 }
-command = { type = switch_allegiance which = -1 where = U58 }
-command = { type = switch_allegiance which = -1 where = U58 }
-command = { type = switch_allegiance which = -1 where = U58 }
-command = { type = switch_allegiance which = -1 where = U58 }
-command = { type = switch_allegiance which = -2 where = U58 }
-command = { type = switch_allegiance which = -2 where = U58 }
-command = { type = switch_allegiance which = -3 where = U58 }
 command = { type = secedeprovince which = U58 value = 623 when = 1 }
 command = { type = secedeprovince which = U58 value = 624 when = 1 }
 command = { type = secedeprovince which = U58 value = 639 when = 1 }
@@ -1155,7 +1158,7 @@ desc = "90000530DESC"
 
 action_a = {
 name = ACTION_NAME_OK
-command = { type = free_ic value = 30 }
+command = { type = dissent value = 3 }
 command = { type = event which = 90000532 where = U40 when = 14 }
 command = { type = event which = 90000531 where = GER when = 1 }
 }
@@ -1219,48 +1222,17 @@ command = { type = inherit which = U58 value = 1 }
 command = { type = clrflag which = CivilWar }
 }
 }
-event = {
-id = 90000534
-country = FIN
-random = no
-style = 2
-picture = "reichstag"
 
-
-name = "90000534NAME" ### Finland leaves rump-Axis
-desc = "90000534DESC"
-
-action_a = {
-name = ACTION_NAME_OK
-command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
-}
-}
 event = {
 id = 90000542
-country = HUN
+country = ITA
 random = no
 style = 2
 picture = "reichstag"
 
 
-name = "90000542NAME" ### Hungary leaves rump-Axis
+name = "90000542NAME" 
 desc = "90000542DESC"
-
-action_a = {
-name = ACTION_NAME_OK
-command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
-}
-}
-event = {
-id = 90000543
-country = ROM
-random = no
-style = 2
-picture = "reichstag"
-
-
-name = "90000543NAME" ### Romania leaves rump-Axis
-desc = "90000543DESC"
 
 action_a = {
 name = ACTION_NAME_OK
@@ -1794,3 +1766,6 @@ event = {
     command = { type = make_puppet which = BLR }
 	}	
 }
+
+### Reform Axis - Possible ITA-GER War ###
+##########################################
