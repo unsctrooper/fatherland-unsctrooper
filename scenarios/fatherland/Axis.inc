@@ -22,7 +22,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
      democratic        = 1
      political_left    = 1 
      freedom           = 1 
-     free_market       = 9
+     free_market       = 2
      professional_army = 7
      defense_lobby     = 9 
      interventionism   = 9 
