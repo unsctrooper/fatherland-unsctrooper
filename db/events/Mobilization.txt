@@ -446,20 +446,21 @@ event = { #general demob
 	decision = {
 		NOT = { local_flag = demob }
 		OR = {
-			local_flag = MOB8
+			local_flag = MOB9
 			AND = {
-		        NOT = { local_flag = NEIN }
+				atwar = no
 				local_flag = MOB7
 			}
 		}
 	}
 
-	decision_trigger = { 
+decision_trigger = { 
 NOT = { local_flag = demob }
 NOT = { local_flag = do_not_demob } 
 		OR = {
 		    AND = {
-			local_flag = MOB8
+			    country = GER
+			    local_flag = MOB8
 				atwar = no
 				}
 			AND = {
