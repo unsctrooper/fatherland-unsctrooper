@@ -1,6 +1,7 @@
 event = { # Enable Nukes
 	id = 66600
 	random = no
+	persistent = yes
     TAG = { SOV FRA ENG USA GER ITA } 
 	
 	name = "Active Nukes"
