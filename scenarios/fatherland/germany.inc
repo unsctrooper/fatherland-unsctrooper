@@ -38,12 +38,12 @@
     relation = { tag = ENG value = -200 }
     relation = { tag = U01 value = -200 }
     relation = { tag = HUN value  = 200 access = yes }
-	relation = { tag = FIN value  = 150 access = yes guaranteed = { day = 1 month = december year = 1950 } }
+	relation = { tag = FIN value  = 150 access = yes guaranteed = { day = 1 month = december year = 1955 } }
     relation = { tag = IRQ value = 0 }
     relation = { tag = ITA value = 200 access = yes }
     relation = { tag = JAP value = -200 }
     relation = { tag = MAN value = 20 }
-	relation = { tag = TRA value = 150 access = yes guaranteed = { day = 1 month = december year = 1950 } }
+	relation = { tag = TRA value = 150 access = yes guaranteed = { day = 1 month = december year = 1955 } }
 	relation = { tag = DEN value = 150 access = yes }
     relation = { tag = MEN value = 20 }
     relation = { tag = NEP value = -200 }
@@ -61,7 +61,8 @@
     relation = { tag = USA value = -200 }
     relation = { tag = YEM value = -200 }
     relation = { tag = U02 value = -200 }
-	relation = { tag = U58 value = 200 access = yes } #SS
+	relation = { tag = U58 value = 200 access = yes }   #SS
+	relation = { tag = AXIS value = 200 access = yes }	Axis HQ
   }
    SpyInfo                = {  country = "GER" NumberOfSpies = 7  } 
    
