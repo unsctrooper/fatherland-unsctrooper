@@ -20,7 +20,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
        supplies = 7890 
        money = 550 
        manpower = 3000
-       dissent = 20
+       dissent = 10
        transports = 30 
        escorts = 15 
     
