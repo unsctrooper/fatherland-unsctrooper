@@ -354,7 +354,7 @@ construction = {
 }
 
 military = { 
-	relative_build_scheme 	= yes
+	relative_build_scheme 	= no
 	max_batch_peace			= 720 #540 
 	max_batch_war			= 360 #320 
 	max_batch_home_front	= 180
