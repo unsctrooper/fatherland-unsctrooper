@@ -352,35 +352,35 @@ event = {
 	}
 
 	date = { day = 1 month = january year = 1946 }
-	offset = 120
+	offset = 365
 	deathdate = { day = 29 month = june year = 1963 }
 
 	action = {
 		name = "EVT_8200043_A" # Corruption runs rampant
-		command = { trigger = { year = 1947 NOT = { year = 1948 } } type = dissent value = 6 }
+		command = { trigger = { year = 1947 NOT = { year = 1948 } } type = dissent value = 3 }
 		command = { trigger = { year = 1947 NOT = { year = 1948 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1947 NOT = { year = 1948 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1947 NOT = { year = 1948 } } type = remove_division which = -1 }
-		command = { trigger = { year = 1948 NOT = { year = 1949 } } type = dissent value = 9 }
+		command = { trigger = { year = 1948 NOT = { year = 1949 } } type = dissent value = 5 }
 		command = { trigger = { year = 1948 NOT = { year = 1949 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1948 NOT = { year = 1949 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1948 NOT = { year = 1949 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1948 NOT = { year = 1949 } } type = remove_division which = -1 }
-		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = dissent value = 12 }
+		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = dissent value = 6 }
 		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1949 NOT = { year = 1950 } } type = remove_division which = -1 }
-		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = dissent value = 15 }
+		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = dissent value = 7 }
 		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1950 NOT = { year = 1951 } } type = remove_division which = -1 }
-		command = { trigger = { year = 1951 NOT = { year = 1952 } } type = dissent value = 18 }
+		command = { trigger = { year = 1951 NOT = { year = 1952 } } type = dissent value = 9 }
 		command = { trigger = { year = 1951 NOT = { year = 1952 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1951 NOT = { year = 1952 } } type = remove_division which = -1 }
 		command = { trigger = { year = 1951 NOT = { year = 1952 } } type = remove_division which = -1 }
