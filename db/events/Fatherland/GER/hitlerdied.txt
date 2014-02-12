@@ -1228,6 +1228,7 @@ id = 90000542
 country = ITA
 random = no
 style = 2
+persistent = yes
 picture = "reichstag"
 
 
