@@ -33,16 +33,34 @@ event = {
 	date = { day = 1 month = january year = 1948 }
 	offset = 10
 	deathdate = { day = 12 month = march year = 1966 }
-
+	
 	action = {
-		name = "400A"
-		command = { type = setflag which = GenWest } 
-	    command = { type = trigger which = 401 }
+		name = "Revise the Program!"
+        trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+        command = { type = free_ic value = 50 }
+	    command = { type = inherit which = U47 value = 1 }
+        command = { type = make_puppet which = FLA }
+        command = { type = make_puppet which = WLL }
+        command = { type = event which = 401 where = GER when = 5 }
+        command = { type = event which = 403 where = GER when = 10 }
+		command = { type = event which = 404 where = GER when = 15 }
+		command = { type = event which = 406 where = GER when = 20 }
+		command = { type = event which = 407 where = GER when = 25 }
+		command = { type = event which = 411 where = GER when = 30 }
+		command = { trigger = { puppet = { country = SCH country = GER } } type = event which = 412 where = GER when = 35 }
+	}
+	action = {
+		name = "Proceed with the original Generalplan West"
+        trigger = { OR = { flag = SSGermany flag = LegGermany } } 
+	    command = { type = dissent value = 1 }
+		command = { type = event which = 411 where = GER when = 5 }
+		command = { trigger = { puppet = { country = SCH country = GER } } type = event which = 412 where = GER when = 10 }
 	}
 }
-##############
-### Norway ###
-##############
+
+#########################
+### Reorganize Norway ###
+#########################
 event = {
 	id = 401
 	random = no
@@ -55,38 +73,12 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "401A"
-	ai_chance = 99
-    command = { type = free_ic value = 20 }
+	command = { type = dissent value = 3 }
     command = { type = trigger which = 402 }
-    command = { type = event which = 403 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "401B"
-	ai_chance = 1
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = U45 value = 1 }
-    command = { type = event which = 403 where = GER when = 3 }
-	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "401A"
-	ai_chance = 20
-    command = { type = free_ic value = 20 }
-    command = { type = trigger which = 402 }
-    command = { type = event which = 403 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "401B"
-	ai_chance = 80
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = U45 value = 1 }
-    command = { type = event which = 403 where = GER when = 3 }
 	}
 }
+	
 event = {
 	id = 402
 	random = no
@@ -102,9 +94,11 @@ event = {
 	command = { type = country which = NOR }
 	} 
 }
+
 ###############
 ### Denmark ###
 ###############
+
 event = {
 	id = 403
 	random = no
@@ -117,36 +111,11 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "403A"
-	ai_chance = 99
-    command = { type = free_ic value = 5 }
-    command = { type = event which = 404 where = GER when = 3 }
+	command = { type = dissent value = 1 }
 	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "403B"
-	ai_chance = 1
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = DEN value = 1 }
-    command = { type = event which = 404 where = GER when = 3 }
 	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "403A"
-	ai_chance = 20
-    command = { type = free_ic value = 5 }
-    command = { type = event which = 404 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "403B"
-	ai_chance = 80
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = DEN value = 1 }
-    command = { type = event which = 404 where = GER when = 3 }
-	}
-}
+
 #######################
 ### The Netherlands ###
 #######################
@@ -162,38 +131,27 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "404A"
-	ai_chance = 80
-    command = { type = free_ic value = 15 }
+	ai_chance = 25
+	command = { type = dissent value = 3 }
     command = { type = trigger which = 409 }
-    command = { type = event which = 406 where = GER when = 3 }
 	}
 	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "404B"
-	ai_chance = 20
-	command = { type = dissent value = 3 }
+	ai_chance = 75
+	command = { type = dissent value = 1 }
 	command = { type = inherit which = U46 value = 1 }
-    command = { type = event which = 406 where = GER when = 3 }
+    command = { type = addcore which = 122 }
+	command = { type = addcore which = 118 }
+	command = { type = addcore which = 119 }
+	command = { type = addcore which = 120 }
+	command = { type = addcore which = 121 }
+	command = { type = addcore which = 123 }
+	command = { type = addcore which = 124 }
+	command = { type = addcore which = 125 }
 	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "404A"
-	ai_chance = 1
-    command = { type = free_ic value = 15 }
-    command = { type = trigger which = 409 }
-    command = { type = event which = 406 where = GER when = 3 }
 	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "404B"
-	ai_chance = 99
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = U46 value = 1 }
-    command = { type = event which = 406 where = GER when = 3 }
-	}
-}
+	
 event = {
 	id = 409
 	random = no
@@ -210,6 +168,7 @@ event = {
 	command = { type = trigger which = 405 }
 	} 
 	}
+	
 event = {
 	id = 405
 	random = no
@@ -225,9 +184,12 @@ event = {
 	command = { type = country which = HOL }
 	} 
 	}
+	
 ###############
 ### Belgium ###
 ###############
+
+# Flanders
 event = {
 	id = 406
 	random = no
@@ -240,36 +202,12 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "406A"
-	ai_chance = 99
-    command = { type = free_ic value = 5 }
-    command = { type = event which = 407 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "406B"
-	ai_chance = 1
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = FLA value = 1 }
-    command = { type = event which = 407 where = GER when = 3 }
-	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "406A"
-	ai_chance = 10
-    command = { type = free_ic value = 5 }
-    command = { type = event which = 407 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "406B"
-	ai_chance = 90
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = FLA value = 1 }
-    command = { type = event which = 407 where = GER when = 3 }
+	command = { type = dissent value = 1 }
 	}
 }
+
+# Wallonia
 event = {
 	id = 407
 	random = no
@@ -282,36 +220,13 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "407A"
 	ai_chance = 99
-    command = { type = free_ic value = 5 }
-    command = { type = event which = 408 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "407B"
-	ai_chance = 1
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = WLL value = 1 }
-    command = { type = event which = 408 where = GER when = 3 }
-	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "407A"
-	ai_chance = 10
-    command = { type = free_ic value = 5 }
-    command = { type = event which = 408 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "407B"
-	ai_chance = 90
-	command = { type = dissent value = 3 }
-	command = { type = inherit which = WLL value = 1 }
-    command = { type = event which = 408 where = GER when = 3 }
+	command = { type = dissent value = 1 }
 	}
 }
+
+# Brussels
 event = {
 	id = 408
 	random = no
@@ -327,19 +242,17 @@ event = {
 	name = "408A"
 	ai_chance = 50
 	command = { type = dissent value = 1 }
-    command = { type = event which = 411 where = GER when = 3 }
 	}
 	action_b = {
 	name = "408B"
 	ai_chance = 25
 	command = { type = secedeprovince which = FLA value = 116 }
-    command = { type = event which = 411 where = GER when = 3 }
 	}
 	action_c = {
 	name = "408C"
 	ai_chance = 25
 	command = { type = secedeprovince which = WLL value = 116 }
-    command = { type = event which = 411 where = GER when = 3 }
+	command = { type = addcore which = 116 }
 	}
 }
 ##############
@@ -437,7 +350,7 @@ event = {
 	trigger = { OR = { flag = SSGermany flag = LegGermany } }
 	name = "410B"
 	ai_chance = 20
-    command = { type = independence which = U47 } 
+    command = { type = independence which = U47 value = 1 } 
     command = { type = make_puppet which = U47 }
 	}
 }
@@ -638,6 +551,27 @@ id = 362
 }
 
 ### FLANDERS ###
+
+### Zwitserland ###
+###################
+event = {
+	id = 412
+	random = no
+	country = GER
+
+	name = "The Status of Switzerland"
+	desc = "Our Reichskommissariat Schweiz seems to be ready for gleischaltung within the Third Reich. They were offshoot of the Deutsche Volke anyway!"
+	style = 2
+	picture = "news_paper"	
+	
+	action_b = {
+	name = "Good!"
+	command = { type = dissent value = 1 }
+	command = { type = inherit which = SCH value = 1 }
+    command = { type = addcore which = 389 }
+	command = { type = addcore which = 392 }
+	}
+	}
 ###############################
 ### Flavour Events & Others ###
 ###############################

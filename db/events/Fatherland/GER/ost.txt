@@ -14,6 +14,7 @@ event = {
 	flag = PostHitler
 	puppet = { country = U40 country = GER } # Ostland
 	puppet = { country = U41 country = GER } # Ukraine
+	event = 411
 	}
 	
 	trigger = {
@@ -21,6 +22,7 @@ event = {
 	atwar = no
 	puppet = { country = U40 country = GER } # Ostland
 	puppet = { country = U41 country = GER } # Ukraine
+	event = 411
 	}
 	
 	name = "200NAME"
@@ -33,10 +35,22 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 
 	action = {
-		name = "200A"
-        command = { type = make_puppet which = BLR }
-		command = { type = setflag which = GenOst } 
-	    command = { type = trigger which = 201 }
+
+		name = "Revise the Program!"
+        trigger = { OR = { flag = MilGermany flag = NaziGermany } }
+        command = { type = free_ic value = 100 }
+        command = { type = free_manpower value = 1.5 }
+        command = { type = research_mod value = 25 }
+        command = { type = tc_mod value = 50 }
+        command = { type = event which = 201 where = GER when = 5 }
+        command = { type = event which = 215 where = GER when = 10 }
+        command = { type = event which = 213 where = GER when = 15 }
+        command = { type = event which = 205 where = GER when = 20 }
+	}
+	action = {
+		name = "Proceed with the original Generalplan Ost"
+        trigger = { OR = { flag = SSGermany flag = LegGermany } } 
+	    command = { type = dissent value = 1 }
 	}
 }
 ################
@@ -54,66 +68,24 @@ event = {
 	
 
 	action_a = { # Baltic Confederation
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "201A"
 	ai_chance = 50
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 10 }
-    command = { type = event which = 211 where = GER when = 3 }
+	command = { type = dissent value = 3 }
     command = { type = trigger which = 203 }
 	}
 	action_b = { # Independent Baltic States
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "201B"
-	ai_chance = 49
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 10 }
+	ai_chance = 50
+	command = { type = dissent value = 3 }
 	command = { type = inherit which = U40 value = 1 }
-    command = { type = event which = 215 where = GER when = 3 }
     command = { type = trigger which = 204 }
-	}
-	action_c = { # Annexation
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "201C"
-	ai_chance = 1
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = U40 value = 1 }
-    command = { type = trigger which = 205 }
-    command = { type = event which = 215 where = GER when = 3 }
-	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "201A"
-	ai_chance = 5
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 10 }
-    command = { type = event which = 211 where = GER when = 3 }
-    command = { type = trigger which = 203 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "201B"
-	ai_chance = 5
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 10 }
-	command = { type = inherit which = U40 value = 1 }
-    command = { type = event which = 215 where = GER when = 3 }
-    command = { type = trigger which = 204 }
-	}
-	action_c = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "201C"
-	ai_chance = 90
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = U40 value = 1 }
-    command = { type = trigger which = 205 }
-    command = { type = event which = 215 where = GER when = 3 }
 	}
 }
+
 event = {
 	id = 203
 	random = no
-	country = U45
+	country = U40
 	
 	name = "203NAME"
 	desc = "203DESC"
@@ -122,10 +94,36 @@ event = {
 	
 	action = {
 	name = ACTION_NAME_OK
-	command = { type = name where = U40 which = Ostland }
-    command = { type = trigger which = 208 }
+	command = { type = name where = U40 which = "BCC" }
+	command = { type = set_domestic which = professional_army value = 1 }
+	command = { type = local_clrflag which = MOB10 }
+	command = { type = local_clrflag which = MOB9 }
+	command = { type = local_clrflag which = MOB8 }
+	command = { type = local_clrflag which = MOB7 }
+	command = { type = local_clrflag which = MOB6 }
+	command = { type = local_clrflag which = MOB5 }
+	command = { type = local_clrflag which = MOB4 }
+	command = { type = local_clrflag which = MOB3 }
+	command = { type = local_clrflag which = MOB2 }
+	command = { type = local_clrflag which = NEIN }
+	command = { type = local_clrflag which = RES }
+    command = { type = addcore which = 274 }
+    command = { type = addcore which = 275 }
+    command = { type = addcore which = 271 }
+    command = { type = addcore which = 272 }
+    command = { type = addcore which = 273 }
+    command = { type = addcore which = 270 }
+    command = { type = addcore which = 267 }
+    command = { type = addcore which = 268 }
+    command = { type = addcore which = 264 }
+    command = { type = addcore which = 266 }
+    command = { type = addcore which = 265 }
+    command = { type = secederegion which = GER value = "Northern Russia" when = 0 }
+    command = { type = secederegion which = GER value = "Western Russia" when = 0 }
+    command = { type = secederegion which = GER value = "Russia" when = 0 }
 	} 
 }
+
 event = {
 	id = 204
 	random = no
@@ -144,158 +142,6 @@ event = {
     command = { type = make_puppet which = LIT }	
     command = { type = independence which = EST } 
     command = { type = make_puppet which = EST }	
-    command = { type = trigger which = 205 }
-	} 
-}
-
-
-event = {
-	id = 205
-	random = no
-	country = GER
-	
-	name = "205NAME"
-	desc = "205DESC"
- 	style = 2
-  	picture = "news_paper"
-
-	action = {
-	name = "205A"
-	ai_chance = 80
-	command = { type = dissent value = 5 }
-    command = { type = trigger which = 206 }
-	} 
-	action = {
-	name = "205B"
-	ai_chance = 20
-    command = { type = secedeprovince which = RUS value = 550 when = 1 }
-    command = { type = secedeprovince which = RUS value = 552 when = 1 }
-    command = { type = secedeprovince which = RUS value = 566 when = 1 }
-    command = { type = secedeprovince which = RUS value = 564 when = 1 }	
-    command = { type = secedeprovince which = RUS value = 549 when = 1 }
-    command = { type = secedeprovince which = RUS value = 551 when = 1 }
-    command = { type = secedeprovince which = RUS value = 560 when = 1 }
-    command = { type = secedeprovince which = RUS value = 565 when = 1 }
-    command = { type = secedeprovince which = RUS value = 573 when = 1 }
-    command = { type = secedeprovince which = RUS value = 561 when = 1 }
-    command = { type = secedeprovince which = RUS value = 577 when = 1 }
-    command = { type = secedeprovince which = RUS value = 558 when = 1 }
-    command = { type = secedeprovince which = RUS value = 559 when = 1 }
-    command = { type = secedeprovince which = RUS value = 562 when = 1 }
-    command = { type = secedeprovince which = RUS value = 557 when = 1 }
-    command = { type = secedeprovince which = RUS value = 556 when = 1 }
-    command = { type = secedeprovince which = RUS value = 555 when = 1 }
-    command = { type = secedeprovince which = RUS value = 563 when = 1 }
-    command = { type = secedeprovince which = RUS value = 554 when = 1 }
-    command = { type = secedeprovince which = RUS value = 569 when = 1 }
-    command = { type = alliance which = RUS }
-    command = { type = trigger which = 207 }
-	} 
-}
-event = {
-	id = 206
-	random = no
-	country = GER
-	
-	name = "206NAME"
-	desc = "206DESC"
- 	style = 2
-  	picture = "news_paper"
-
-	action = {
-	name = "206A"
-	ai_chance = 50
-	command = { type = dissent value = 1 }
-	} 
-	action = {
-	name = "206B"
-	ai_chance = 50
-    command = { type = alliance which = FIN }
-    command = { type = secedeprovince which = FIN value = 553 when = 1 }
-	} 
-}
-event = {
-	id = 207
-	random = no
-	country = GER
-	
-	name = "206NAME"
-	desc = "206DESC"
- 	style = 2
-  	picture = "news_paper"
-
-	action = {
-	name = "206A"
-	ai_chance = 50
-	command = { type = dissent value = 1 }
-	} 
-	action = {
-	name = "206B"
-	ai_chance = 25
-    command = { type = alliance which = FIN }
-    command = { type = secedeprovince which = FIN value = 553 when = 1 }
-	} 
-	action = {
-	name = "206C"
-	ai_chance = 25
-    command = { type = secedeprovince which = RUS value = 553 when = 1 }
-	} 
-}
-event = {
-	id = 208
-	random = no
-	country = GER
-	
-	name = "206NAME"
-	desc = "206DESC"
- 	style = 2
-  	picture = "news_paper"
-
-	action = {
-	name = "206D"
-	ai_chance = 50
-	command = { type = dissent value = -1 }
-	} 
-	action = {
-	name = "206B"
-	ai_chance = 25
-    command = { type = alliance which = FIN }
-    command = { type = trigger which = 209 }
-	} 
-	action = {
-	name = "206A"
-	ai_chance = 25
-    command = { type = trigger which = 210 }
-	} 
-}
-event = {
-	id = 209
-	random = no
-	country = U45
-	
-	name = "206NAME"
-	desc = "209DESC"
- 	style = 2
-  	picture = "news_paper"
-
-	action = {
-	name = ACTION_NAME_OK
-    command = { type = secedeprovince which = FIN value = 553 when = 1 }
-	} 
-}
-event = {
-	id = 210
-	random = no
-	country = U45
-	
-	name = "206NAME"
-	desc = "210DESC"
- 	style = 2
-  	picture = "news_paper"
-
-	action = {
-	name = ACTION_NAME_OK
-    command = { type = secedeprovince which = GER value = 553 when = 1 }
 	} 
 }
 
@@ -314,128 +160,56 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "211A"
-	ai_chance = 95
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 15 }
-    command = { type = event which = 213 where = GER when = 3 }
+	command = { type = dissent value = 3 }
+    command = { type = trigger which = 216 }
 	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "211B"
-	ai_chance = 5
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = BLR value = 1 }
-    command = { type = event which = 213 where = GER when = 3 }
-	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "211A"
-	ai_chance = 5
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 15 }
-    command = { type = event which = 213 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "211B"
-	ai_chance = 95
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = BLR value = 1 }
-    command = { type = event which = 213 where = GER when = 3 }
 }
-}
+
 event = {
-	id = 211
+	id = 216
 	random = no
-	country = GER
-
-	name = "211NAME"
-	desc = "211DESC"
-	style = 2
-	picture = "news_paper"	
+	country = BLR
 	
-
-	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "211A"
-	ai_chance = 50
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 15 }
-    command = { type = event which = 213 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "211B"
-	ai_chance = 5
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = BLR value = 1 }
-    command = { type = event which = 213 where = GER when = 3 }
-	}
-	action_c = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "211C"
-	ai_chance = 45
-    command = { type = trigger which = 212 }
-    command = { type = event which = 213 where = GER when = 3 }
-}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "211A"
-	ai_chance = 5
-    command = { type = free_ic value = 25 }
-    command = { type = research_mod value = 15 }
-    command = { type = event which = 213 where = GER when = 3 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "211B"
-	ai_chance = 90
-	command = { type = dissent value = 5 }
-	command = { type = inherit which = BLR value = 1 }
-    command = { type = event which = 213 where = GER when = 3 }
-}
-	action_c = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "211C"
-	ai_chance = 5
-    command = { type = trigger which = 212 }
-    command = { type = event which = 213 where = GER when = 3 }
-}
-}
-event = { 
-	id = 212
-	random = no
-	country = GER
-	
-	name = "212NAME"
-	desc = "212DESC"
- 	style = 2
+	name = "The Future of Belarus"
+	desc = "203DESC"
+  	style = 2
   	picture = "news_paper"
-
+	
 	action = {
-	name = ACTION_NAME_OK
-    command = { type = secedeprovince which = U40 value = 559 when = 1 }
-    command = { type = secedeprovince which = U40 value = 594 when = 1 }
-    command = { type = secedeprovince which = U40 value = 591 when = 1 }
-    command = { type = secedeprovince which = U40 value = 600 when = 1 }
-    command = { type = secedeprovince which = U40 value = 596 when = 1 }
-	command = { type = secedeprovince which = U40 value = 601 when = 1 }
-    command = { type = secedeprovince which = U40 value = 257 when = 1 }
-    command = { type = secedeprovince which = U40 value = 251 when = 1 }
-    command = { type = secedeprovince which = U40 value = 590 when = 1 }
-	command = { type = secedeprovince which = U40 value = 592 when = 1 }
-    command = { type = secedeprovince which = U40 value = 593 when = 1 }
-    command = { type = secedeprovince which = U40 value = 256 when = 1 }
-    command = { type = secedeprovince which = U40 value = 586 when = 1 }
-    command = { type = secedeprovince which = U40 value = 587 when = 1 }
-    command = { type = secedeprovince which = U40 value = 589 when = 1 }
-    command = { type = secedeprovince which = U40 value = 575 when = 1 }
-    command = { type = secedeprovince which = U40 value = 599 when = 1 }
-    command = { type = secedeprovince which = U40 value = 258 when = 1 }
+	name = "The Future of Belarus"
+	command = { type = name where = BLR which = Belarus }
+	command = { type = set_domestic which = professional_army value = 1 }
+	command = { type = local_clrflag which = MOB10 }
+	command = { type = local_clrflag which = MOB9 }
+	command = { type = local_clrflag which = MOB8 }
+	command = { type = local_clrflag which = MOB7 }
+	command = { type = local_clrflag which = MOB6 }
+	command = { type = local_clrflag which = MOB5 }
+	command = { type = local_clrflag which = MOB4 }
+	command = { type = local_clrflag which = MOB3 }
+	command = { type = local_clrflag which = MOB2 }
+	command = { type = local_clrflag which = NEIN }
+	command = { type = local_clrflag which = RES }
+    command = { type = addcore which = 599 }
+    command = { type = addcore which = 594 }
+    command = { type = addcore which = 591 }
+    command = { type = addcore which = 600 }
+    command = { type = addcore which = 596 }
+    command = { type = addcore which = 601 }
+    command = { type = addcore which = 257 }
+    command = { type = addcore which = 251 }
+    command = { type = addcore which = 590 }
+    command = { type = addcore which = 592 }
+    command = { type = addcore which = 593 }
+    command = { type = addcore which = 256 }
+    command = { type = addcore which = 586 }
+    command = { type = addcore which = 587 }
+    command = { type = addcore which = 589 }
+    command = { type = addcore which = 575 }
 	} 
 }
+
 ###############
 ### Ukraine ###
 ###############
@@ -451,36 +225,12 @@ event = {
 	
 
 	action_a = {
-    trigger = { OR = { flag = MilGermany flag = NaziGermany } }
 	name = "213A"
-	ai_chance = 95
+	command = { type = dissent value = 3 }
     command = { type = trigger which = 214 }
-    command = { type = free_ic value = 50 }
-    command = { type = research_mod value = 15 }
 	}
-	action_b = {
-	trigger = { OR = { flag = MilGermany flag = NaziGermany } }
-	name = "213B"
-	ai_chance = 5
-	command = { type = dissent value = 10 }
-	command = { type = inherit which = U41 value = 1 }
-	}
-	action_a = {
-    trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "213A"
-	ai_chance = 5
-    command = { type = trigger which = 214 }
-    command = { type = free_ic value = 50 }
-    command = { type = research_mod value = 15 }
-	}
-	action_b = {
-	trigger = { OR = { flag = SSGermany flag = LegGermany } }
-	name = "213B"
-	ai_chance = 95
-	command = { type = dissent value = 10 }
-	command = { type = inherit which = U41 value = 1 }
 }
-}
+
 event = {
 	id = 214
 	random = no
@@ -493,9 +243,57 @@ event = {
 	
 	action = {
 	name = ACTION_NAME_OK
+	command = { type = set_domestic which = professional_army value = 1 }
+	command = { type = local_clrflag which = MOB10 }
+	command = { type = local_clrflag which = MOB9 }
+	command = { type = local_clrflag which = MOB8 }
+	command = { type = local_clrflag which = MOB7 }
+	command = { type = local_clrflag which = MOB6 }
+	command = { type = local_clrflag which = MOB5 }
+	command = { type = local_clrflag which = MOB4 }
+	command = { type = local_clrflag which = MOB3 }
+	command = { type = local_clrflag which = MOB2 }
+	command = { type = local_clrflag which = NEIN }
+	command = { type = local_clrflag which = RES }
 	command = { type = country which = UKR }
 	} 
 }
-##############################
+
+#############
+### Lokot ###
+#############
+
+event = {
+	id = 205
+	random = no
+	country = GER
+	
+	name = "205NAME"
+	desc = "205DESC"
+ 	style = 2
+  	picture = "news_paper"
+
+	action = {
+	name = "We need to guard the border with the Soviets ourselves!"
+	ai_chance = 20
+	command = { type = dissent value = -3 }
+	} 
+	
+	action = {
+	name = "Recognize it as the only Russian State!"
+	ai_chance = 90
+	command = { type = dissent value = 3 }
+    command = { type = secederegion which = UTC value = "Northern Russia" when = 0 }
+    command = { type = secederegion which = UTC value = "Western Russia" when = 0 }
+    command = { type = secederegion which = UTC value = "Russia" when = 0 }
+    command = { type = secederegion which = UTC value = "Ukraine" when = 0 }
+    command = { type = secederegion which = UTC value = "Southern Russia" when = 0 }
+    command = { type = secederegion which = UTC value = "Central Russia" when = 0 }
+    command = { type = secederegion which = UTC value = "Kaukasus" when = 0 }
+    command = { type = alliance which = UTC }
+	} 
+}
+
+####################
 ### Flavour & Other Events ###
 ##############################

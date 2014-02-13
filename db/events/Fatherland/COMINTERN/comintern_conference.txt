@@ -21,6 +21,7 @@ event = {
 		deathdate = { day = 30 month = december year = 1963 }
 		
         trigger = {
+		flag = Internationale
 			OR = {
 				flag = CHC_won_civil_war
 				flag = CHI_won_civil_war
