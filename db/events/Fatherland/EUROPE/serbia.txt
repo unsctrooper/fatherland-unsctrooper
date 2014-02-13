@@ -36,18 +36,12 @@ event = {
 		exists = HUN
 		exists = ROM
 		year = 1942 				
-		NOT = {
-			OR = {			
-				ispuppet = GER
-				exists = SER		
-				war = { country = SOV country = GER }
-			}
-		}		
+		NOT = { exists = SER }		
 	}
 	decision_trigger = {
-		NOT = { war = { country = SOV country = GER } 
+		NOT = { exists = SER }		
 		}		
-	}
+
 	
 	name = "900NAME"
 	desc = "900DESC"
@@ -482,23 +476,18 @@ event = {
 	id = 912
 	random = no
 	country = GER
-	save_date = yes
 
 	trigger = {
-		flag = BanatEX
-		AND = {
-		event = { id = 911 days = 730 } 
-		owned = { province = 336 }
-		control = { province = 336 }
+    random = 10
 		}
-	}	
+	
 		
 	name = "912NAME"
 	desc = "912DESC"
 	style = 2
 	picture = "news_paper"	
 
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 1 month = january year = 1949 }
 	offset = 30
 	deathdate = { day = 30 month = december year = 1963 }
 

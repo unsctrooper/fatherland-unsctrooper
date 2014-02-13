@@ -68,7 +68,22 @@ style = 2
 picture = "news_paper"
 	
 action = { 
-name = "Okay!" 
+name = "Okay!"
+command = { type = removecore which = 389 }
+command = { type = removecore which = 390 }
+command = { type = removecore which = 391 }
+command = { type = removecore which = 392 }
+command = { type = dissent value = 10 }
+command = { type = manpowerpool value = -1000 }
+command = { type = set_domestic which = professional_army value = 7 }
+command = { type = local_setflag which = MOB7 }
+command = { type = local_setflag which = MOB6 }
+command = { type = local_setflag which = MOB5 }
+command = { type = local_setflag which = MOB4 }
+command = { type = local_setflag which = MOB3 }
+command = { type = local_setflag which = MOB2 }
+command = { type = local_setflag which = NEIN }
+command = { type = local_setflag which = RES }
 command = { type = name where = SCH which = "RK_S" }
 command = { type = flag_ext where = SCH which = "_RK_S" }
 command = { type = chiefofstaff which = 1050007 }

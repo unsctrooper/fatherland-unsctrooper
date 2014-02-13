@@ -21,6 +21,8 @@ event = {
 		name = "8014250A"
         command = { type = dissent value = 5 }
 		command = { type = ground_def_eff value = 0.5 }
+		command = { type = max_organization which = land value = -10 }
+		command = { type = morale which = land value = -10 }
 	}
 }
 event = { # Fate of Turkestan
@@ -597,8 +599,6 @@ event = {
 	action = {
 		name = "8014250A"
         command = { type = dissent value = 5 }
-		command = { type = max_organization which = land value = -5 }
-		command = { type = morale which = land value = -10 }
 	}
 }
 event = {
