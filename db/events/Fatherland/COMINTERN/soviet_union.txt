@@ -993,6 +993,7 @@ event = { # Dzhanov Defeat - Soviet
 	id = 8014280 
 	random = no
 	country = SOV
+    save_date = yes
 
 	trigger = {
     war = { country = SOV country = SIB }
@@ -1085,7 +1086,7 @@ event = { # What to do about the FER ?
 	
     trigger = {
 	AND = {
-	event = { id = 8014266 days = 365 } 
+	event = { id = 8014280 days = 180 } 
 	NOT = { exists = SIB }
 	NOT = { exists = U59 }		
 	}
@@ -1258,7 +1259,7 @@ event = { # What to do with the Sakhalin Islands?
 
 	
     trigger = {
-	event = { id = 8014286 days = 60 } 
+	event = { id = 8014286 days = 90 } 
 	}
 	
     date = { day = 1 month = january year = 1948 }
