@@ -625,6 +625,7 @@ event = {
 	country = GER
 	
 trigger = { 
+    NOT = { war = { country = GER country = USA } }
 	event = 90000511
 	event = 90000512
 	event = 90000513
