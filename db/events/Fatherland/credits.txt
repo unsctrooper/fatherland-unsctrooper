@@ -8,7 +8,7 @@ trigger = { NOT = { local_flag = 1945_dev_applied } }
 
 	date = { day = 1 month = january year = 1948 }
 	offset = 1
-	deathdate = { day = 29 month = december year = 2000 }  
+	deathdate = { day = 3 month = january year = 1948 }  
 
 name = CREDITS1
 desc = CREDITS2
