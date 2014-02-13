@@ -461,8 +461,6 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	multi_role = 18
-	multi_role = 17
 	equipment = { fighter = 100 manpower = 100 }
 }
 

@@ -41,6 +41,12 @@ event = {
 	command = { type = addcore which = 240 }
     command = { type = addcore which = 241 }
 	command = { type = addcore which = 242 }
+	command = { type = addcore which = 255 }
+    command = { type = addcore which = 252 }
+	command = { type = addcore which = 253 }
+    command = { type = addcore which = 254 }
+	command = { type = addcore which = 250 }
+	command = { type = addcore which = 229 }
 	}
 }
 

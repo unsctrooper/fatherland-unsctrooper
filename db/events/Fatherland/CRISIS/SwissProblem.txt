@@ -193,57 +193,249 @@ command = { type = dissent value = -3 }
 }
 }
 
+event = {
+id = 827
+country = GER
+random = no
+style = 2
+picture = "german_warposter"
+
+decision = {
+war = { country = GER country = SCH }
+}
+
+decision_trigger = { 
+supplies = 5000
+war = { country = GER country = SCH }
+}
+	
+trigger = {
+supplies = 5000
+war = { country = GER country = SCH }
+	}
+
+date = { day = 1 month = augustus year = 1948 }
+offset = 7
+deathdate = { day = 12 month = march year = 1966 }
+
+name = "Operation Greif"
+desc = "The Swiss resistance have proven to be harder than we could ever imagine. The Axis Headquarters has prepared 'Operation Greif', to be led by Otto Skorzeny (responsible for the rescue mission of Mussolini in 1943). In Operation Greif, German soldiers uniformed as Swiss will sabotage the forts and infrastructure of our enemies."
+
+action_a = {
+name = "Launch Operation Greif"
+command = { type = trigger which = 828 }
+command = { type = money value = -100 }
+command = { type = supplies value = -10000 } 
+}
+}
+
+event = { 
+	id = 828 
+	random = no
+	country = SCH
+
+	name = "Operation Greif"
+	desc = "The Germans have launched a secret mission in which they have disrupted our resistance organisation. Let's pray we won't end up as the next Reichskommissariat.." 
+	style = 2
+	picture = "German_Warposter"
+	
+
+	    action_a = {
+		name = "Oh no!"
+        command = { type = dissent value = 25 }
+        command = { type = construct which = land_fort where = 389 value = -5 }
+        command = { type = construct which = land_fort where = 390 value = -5 }
+        command = { type = construct which = land_fort where = 391 value = -5 }
+        command = { type = construct which = land_fort where = 392 value = -5 }
+	}
+}
+
 event = { # Execution of David Frankfurter
-	id = 827 
+	id = 829
 	random = no
 	country = GER
 
-	name = "8014251NAME"
-	desc = "8014251DESC" 
+	name = "The Execution of David Frankfurter"
+	desc = "We have captured David Frankfurter, a Croatian Jew who assasinated the Swiss branch leader of the NSDAP, in 1934. He was jailed by the Swiss government, but finally real justice can preserve!" 
 	style = 2
-	picture = "0turkestan0"
+	picture = "nwo\bonn_rathaus"
 	
-    #trigger = {
-    #puppet = { country = SCH country = GER }
-	#random = 25
-	#}
+    trigger = {
+    puppet = { country = SCH country = GER }
+	random = 25
+	}
 	
-    #date = { day = 1 month = january year = 1948 }
-	#offset = 30
-	#deathdate = { day = 30 month = december year = 1963 }
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
 
 
-	    action_a = { #Execute him!
-		name = "8014251A"
+	    action_a = { 
+		name = "Execute him!"
         command = { type = dissent value = -3 }
 	}
 }
 
-event = { # Improve Vital Trade Links w/ Vichy France & Italy
-	id = 828 
+### The LifeLine of Europe Project ###
+
+event = {
+	id = 830 
 	random = no
 	country = GER
+    save_date = yes
 
-	name = "8014251NAME"
-	desc = "8014251DESC" 
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
 	style = 2
-	picture = "0turkestan0"
+	picture = "invest_infrastructures"
 	
-    #trigger = {
-    #puppet = { country = SCH country = GER }
-	#}
+decision = {
+war = { country = GER country = SCH }
+}
+
+decision_trigger = { 
+money = 1000
+war = { country = GER country = SCH }
+}
 	
-    #date = { day = 1 month = january year = 1950 }
-	#offset = 30
-	#deathdate = { day = 30 month = december year = 1963 }
+trigger = {
+war = { country = GER country = SCH }
+	}
+	
+	
+    date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
 
 
 	    action_a = { #Yes
-		ai_chance = 20
-		name = "8014251A"
+		ai_chance = 50
+		name = "Let's get building!"
+        command = { type = money value = -2500 }
+        command = { type = setflag which = LifeLine1 }
 	}
-	    action_a = { #No
-		ai_chance = 20
-		name = "8014251A"
+	    action_b = { #No
+		ai_chance = 10
+		name = "Improve our enemies infrastructure? No!"
+        command = { type = money value = 100 }
+	}
+	    action_c = { #Ask Italy & France to contribute
+		ai_chance = 40
+		name = "Ask France & Italy to participate"
+        command = { type = money value = -1000 }
+        command = { type = setflag which = LifeLine2 }
+        command = { type = trigger which = 831 }
+        command = { type = trigger which = 832 }
+	}
+}
+
+event = { 
+	id = 831
+	random = no
+	country = FRA
+
+	name = "The Lifeline of West Europe"
+	desc = "The Germans have asked us to participate in a megalomaniac project to improve the infrastructure trough trough the Alps between Germany, France & Italy. While it will require a hefty sum of investments, it may prove to be lucrative." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+
+	    action_a = { 
+		ai_chance = 90
+		name = "Yes!"
+        command = { type = money value = -500 }
+	}
+	    action_b = { 
+		name = "No!"
+		ai_chance = 10
+        command = { type = money value = 100 }
+        command = { type = clrflag which = LifeLine2 }
+	}
+}
+
+event = {
+	id = 832
+	random = no
+	country = ITA
+
+	name = "The Lifeline of West Europe"
+	desc = "The Germans have asked us to participate in a megalomaniac project to improve the infrastructure trough trough the Alps between Germany, France & Italy. While it will require a hefty sum of investments, it may prove to be lucrative." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+
+	    action_a = { 
+		ai_chance = 95
+		name = "Yes!"
+        command = { type = money value = -500 }
+	}
+	    action_b = { 
+		name = "No!"
+		ai_chance = 5
+        command = { type = money value = 100 }
+        command = { type = clrflag which = LifeLine2 }
+	}
+}
+
+event = { #
+	id = 833
+	random = no
+	country = GER
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+    trigger = {
+	event = { id = 830 days = 365 } 
+    OR = { flag = LifeLine1 flag = Lifeline2 }
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { 
+		name = "Finally!"
+        command = { type = dissent value = -3 }
+        command = { type = industrial_modifier which = total value = 5 }
+        command = { type = trigger which = 834 }
+        command = { type = trigger which = 835 }
+	}
+}
+
+event = { 
+	id = 834
+	random = no
+	country = FRA
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+	    action_a = { 
+		name = "Finally!"
+        command = { type = dissent value = -3 }
+        command = { type = industrial_modifier which = total value = 5 }
+	}
+}
+
+event = { 
+	id = 835
+	random = no
+	country = ITA
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+	    action_a = { 
+		name = "Finally!"
+        command = { type = dissent value = -3 }
+        command = { type = industrial_modifier which = total value = 5 }
 	}
 }

@@ -44,10 +44,10 @@ event = {
     name = "Pull back from Turkestan"
 	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Turkestani elements in the Soviet Union. However, Turkestani nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
 	style = 2
-	picture = "newspaper"
+	picture = "news_paper"
 	
 	    action = {
-		name = "8014250A"
+		name = "Retreat!"
 		command = { type = peace which = SOV value = 1 }
         command = { type = leave_alliance when = 1 }
         command = { type = remove_division which = -1 }

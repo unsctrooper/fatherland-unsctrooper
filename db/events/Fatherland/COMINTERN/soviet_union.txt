@@ -884,7 +884,7 @@ event = { # Dzhanov Influences
 	
 	    action = { 
 		name = "Damn!"
-        command = { type = dissent value = 3 }
+        command = { type = dissent value = 1 }
         command = { type = switch_allegiance which = -1 where = SIB }
 	}
 }
@@ -910,7 +910,7 @@ event = { # Tsarist Influences
 	
 	    action = { 
 		name = "Damn!"
-        command = { type = dissent value = 3 }
+        command = { type = dissent value = 1 }
         command = { type = switch_allegiance which = -1 where = U59 }
 	}
 }

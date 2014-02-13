@@ -8,16 +8,13 @@ event = {
 	decision = {
 	flag = PostHitler
 	puppet = { country = U46 country = GER } # Netherlands
-	puppet = { country = FLA country = GER } # Belgium
-	puppet = { country = WLL country = GER } # Belgium
 	puppet = { country = U45 country = GER } # Norway	
 	}
 	
 	decision_trigger = {
 	flag = PostHitler
+	atwar = no
 	puppet = { country = U46 country = GER } # Netherlands
-	puppet = { country = FLA country = GER } # Belgium
-	puppet = { country = WLL country = GER } # Belgium
 	puppet = { country = U45 country = GER } # Norway	
 	}
 	
@@ -25,8 +22,6 @@ event = {
 	flag = PostHitler
 	atwar = no
 	puppet = { country = U46 country = GER } # Netherlands
-	puppet = { country = FLA country = GER } # Belgium
-	puppet = { country = WLL country = GER } # Belgium
 	puppet = { country = U45 country = GER } # Norway	
 	}
 	

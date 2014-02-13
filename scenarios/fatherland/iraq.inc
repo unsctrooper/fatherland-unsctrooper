@@ -33,7 +33,6 @@ rare_materials         = 100
      defense_lobby     = 4 
      interventionism   = 2 
     } 
-	peacetime_ic_mod       = 0.6
    nationalprovinces      = {  1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037 1041 1089  } 
    ownedprovinces         = {  1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037  } 
    controlledprovinces    = {  1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037  } 

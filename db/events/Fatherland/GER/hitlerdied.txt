@@ -1746,3 +1746,68 @@ event = {
 
 ### Reform Axis - Possible ITA-GER War ###
 ##########################################
+event = {
+	id = 90000557
+	random = no
+	country = GER
+	
+	decision = {
+	flag = PostHitler
+	}
+	
+	decision_trigger = {
+	flag = PostHitler
+    event = 400
+    event = 200
+	}
+	
+	trigger = {
+	flag = PostHitler
+    event = 400
+    event = 200
+	}
+	
+	name = "The Pact of Steel - Revived Axis"
+	desc = "After the death of Hitler and the chaos that ensued in the Reich, it's unclear whether our alliances with Italy, and with Europe as a whole still stand. We always had close relationships with Italy under Mussolini. Perhaps it's time to remind them of the Pact of Steel?"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "The Axis Reformed"
+  	    command = { type = alliance which = GER where = 1 when = 1 }
+        command = { type = alliance which = HUN }
+        command = { type = alliance which = ROM }
+        command = { type = alliance which = BUL }
+        command = { type = alliance which = CRO }
+        command = { type = alliance which = SER }
+	    command = { type = trigger which = 90000558 }
+	}
+}
+
+event = {
+id = 90000558
+country = ITA
+random = no
+style = 2
+picture = "reichstag"
+
+name = "The Pact of Steel - Revived Axis"
+desc = "After the death of Hitler and the chaos in the German Reich, the geopolitical order in Europe fell down with him. Now that Germany has found stability again, they have offered us to a renewed cooperation."
+
+action_a = {
+name = "The Pact of Steel will rise from it's ashes!"
+ai_chance = 100
+command = { type = dissent value = -5 }
+command = { type = alliance which = ITA }
+}
+
+action_b = {
+name = "We're no longer German allies!"
+ai_chance = 0 # Ger - Ita War [WIP] 
+command = { type = dissent value = 10 }
+}
+}

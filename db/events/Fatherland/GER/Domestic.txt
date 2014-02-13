@@ -104,3 +104,109 @@ name = "2000A"
 command = { type = free_ic value = -25 }
 }
 }
+
+event = {
+id = 2006
+country = GER
+random = no
+style = 2
+picture = "nwo\coventry_bombing"
+
+trigger = {
+event = 807
+random = 10
+}
+
+date = { day = 1 month = july year = 1948 }
+offset = 7
+deathdate = { day = 12 month = march year = 1966 }
+
+name = "The White Rose Movement"
+desc = "We have strong assumptions to believe that the White Rose Movement, a non-violent, intellectual resistance group of Munchen students, are involved with the recent Allied bombing of our nuclear reactors. In their last leaflet ''Fellow Germans!'', they celebrate the destruction of our weapons of mass destruction, as ''the most contemptible tyrant our people has ever endured'' should never get hold of such weapons."
+
+action_a = {
+name = "Prepare a Crackdown!"
+command = { type = money value = -100 }
+command = { type = supplies value = -1000 } 
+}
+}
+
+event = {
+id = 2007
+country = GER
+random = no
+style = 2
+picture = "nwo\coventry_bombing"
+
+trigger = {
+event = 2006
+random = 10
+}
+
+date = { day = 1 month = july year = 1948 }
+offset = 7
+deathdate = { day = 12 month = march year = 1966 }
+
+name = "The White Rose Trial"
+desc = "We have captured several key elements of the White Rose Movement. They have faced trial before the Volksgericht and have been sentenced to immediate death. The convicts have been beheaded by guillotine the same day, but showed resistance to the last minute. One female members reportedly said to the head judge: ''You know as well that this system is never meant to last! Why are you so cowardly that you won't admit it?"
+
+action_a = {
+name = "That's unfortunate"
+command = { type = dissent value = 1 }
+}
+}
+
+event = {
+id = 2008
+country = GER
+random = no
+style = 2
+picture = "nwo\coventry_cathedral"
+
+trigger = {
+event = 90000300
+}
+
+date = { day = 1 month = january year = 1948 }
+offset = 7
+deathdate = { day = 12 month = march year = 1966 }
+
+name = "The Warsaw Uprising"
+desc = "After the Gleischaltung of the General Gouvernement to the growing Third Reich, the Polish made their last attempt to reverse the events of history by rising up in Warschau. The Polish Home Army has been fueled by Catholic resistance, as German anti-clerical policy were the most severe in the former Poland. Resistance leaders have ordered instructions on how troops could continue to pray and celebrate religious festivals."
+
+action_a = {
+name = "Crackdown!"
+command = { type = dissent value = 3 }
+command = { type = relation which = ITA value = -50 }
+command = { type = relation which = HUN value = -50 }
+command = { type = revolt which = 232 when = 0 } 
+command = { type = revolt which = 232 when = 0 } 
+command = { type = revolt which = 232 when = 0 } 
+}
+}
+
+event = {
+id = 2009
+country = GER
+random = no
+style = 2
+picture = "reichstag"
+
+trigger = {
+flag = GoringGoebbels
+random = 25
+}
+
+date = { day = 1 month = january year = 1950 }
+offset = 60
+deathdate = { day = 12 month = march year = 1966 }
+
+name = "The Black Front"
+desc = "Otto Strasser, in exile since his brother was killed in 1934, has recently returned to Germany sensing increased political freedom after the death of Hitler. With Albert Speer having more influence than ever, Germany continues to rely on increasingly powerful industrial cooperations. More and more elements of the Nazi Party are attracted to Strasserism, the revived left-wing anti-capitalistic wing of the NSDAP"
+
+action_a = {
+name = "It's just the same as communism.."
+command = { type = dissent value = 1 }
+command = { type = domestic which = free_market value = 1 }
+}
+}

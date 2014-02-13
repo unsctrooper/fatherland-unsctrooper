@@ -9,10 +9,7 @@
   
  country = 
  {  tag                    = JOR 
-   name = "Transjordan"
-   puppet = ENG
-   
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
+ 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes } }
  
    # Resource Reserves 
 energy                 = 360
@@ -35,7 +32,6 @@ rare_materials         = 90
      defense_lobby     = 2 
      interventionism   = 6 
     } 
-	#peacetime_ic_mod       = 0.6
    nationalprovinces      = {  1022 1025 1024 1026 1023  } 
    ownedprovinces         = {  1022 1025 1024 1026 1023 } 
    controlledprovinces    = {  1022 1025 1024 1026 1023  } 

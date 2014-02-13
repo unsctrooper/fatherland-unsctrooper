@@ -7,7 +7,7 @@ event = {
 	country = GER	
 	
 	name = "The Rations of the War"
-	desc = "The German people have never suffered too much undernourishment during the Second World War, in contrary to most involved countries. In fact, the Germans lived in relative luxury, fueled by Germany's growing conquests. Only in the latter years, there were some forms of rationing in the country. After the war, the government never fully abolished those programs, due to the closed world market and troubles with increasing argicultural levels in specifically the Lebensraum in the East. However, it was during Hitler 59th birthday all food rationing were abolished - in the actual Fatherland, that was. Many other parts of German-influenced Europe still lived in relative poverty."
+	desc = "The Germans lived in relative luxury in WWII, fueled by Germany's growing conquests. Only in the latter years, there were some forms of rationing in the country. After the war, the government never fully abolished those programs, due to the closed world market and troubles with increasing argicultural levels in specifically the Lebensraum in the East. However, it was during Hitler 59th birthday all food rationing were abolished."
 	style = 2
 	picture = "news_paper"	
 	
@@ -37,7 +37,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "The Granary of the Fatherland"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"
 	style = 2
 	picture = "news_paper"	
 	
@@ -89,8 +89,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "Burning!"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
-	style = 2
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
 	picture = "news_paper"	
 	
 	action = {
@@ -117,8 +116,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "Massacre!"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
-	style = 2
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
 	picture = "news_paper"	
 	
 	action = {
@@ -143,8 +141,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "The Granary of the Fatherland"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
-	style = 2
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
 	picture = "news_paper"	
 	
 	action = {
@@ -161,8 +158,7 @@ event = {
 	country = GER
 		
 	name = "The Granary of the Fatherland"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
-	style = 2
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
 	picture = "news_paper"	
 	
 	action = {
@@ -195,8 +191,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "The Granary of the Fatherland"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
-	style = 2
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
 	picture = "news_paper"	
 	
 	action = {
@@ -213,8 +208,7 @@ event = {
 	country = GER	
 		
 	name = "Assassination of Koch"
-	desc = "The German people have been fooled into believing they've reaped the conquests of Europe, due to our recent abolishment of all food rations. The facts that Europe has essentially been banned from the world market by the Allies and that the current argicultural production of Europe hardly sufficed to feed the whole continent can't be neglected forever, otherwise the Reich will collapse under it's own weight. Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommisarriats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any argicultural process counterproductive. Mein Fürher, what should we do?"
-	style = 2
+	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
 	picture = "news_paper"	
 	
 	action = {

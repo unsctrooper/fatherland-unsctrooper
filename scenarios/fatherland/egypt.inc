@@ -97,7 +97,6 @@ rare_materials         = 135
       defense_lobby     = 3  
       interventionism   = 2  
       }  
-    peacetime_ic_mod       = 0.2
     headofstate            = {   type = 9 id = 340011   }   
     headofgovernment       = {   type = 9 id = 340002   }  # Ali Mahir Pasha  
     foreignminister        = {   type = 9 id = 340003   }  # Ali Mahir Pasha  
