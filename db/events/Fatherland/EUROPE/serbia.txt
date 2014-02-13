@@ -49,9 +49,9 @@ event = {
 	picture = "Reichstag"
 	decision_picture = "decision_anticominternpact"
 
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 15
-	deathdate = { day = 12 month = march year = 1966 }
+	deathdate = { day = 12 month = march year = 1940 }
 
 	action = {
 		name = "Keep Banat, and confirm Serbia as a puppet state!"
