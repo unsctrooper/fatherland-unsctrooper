@@ -353,38 +353,6 @@ event = {
 	}
 }
 
-event = {
-	id = 8002611
-	country = CAN
-
-	name = EVT_8002611_NAME
-	desc = EVT_8002611_DESC
-	picture = "nwo\canadian_red_scare"
-	decision_picture = "nwo\d_canadian_red_scare"
-	style = 1
-
-	decision = {
-		flag = cold_war
-		NOT = { government = communist }
-	}
-	
-	trigger = {
-		flag = cold_war
-		NOT = { government = communist }
-	}
-
-	date = { day = 1 month = january year = 1945 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action = {
-		name = "OK"
-		command = { type = dissent value = -2 }
-		command = { type = domestic which = political_left value = -2 }
-		command = { type = domestic which = freedom value = -2 }
-	}
-}
-
 ### Avro Arrow
 
 event = {
