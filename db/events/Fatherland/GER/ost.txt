@@ -287,8 +287,8 @@ event = {
     command = { type = secederegion which = UTC value = "Western Russia" when = 0 }
     command = { type = secederegion which = UTC value = "Russia" when = 0 }
     command = { type = secederegion which = UTC value = "Ukraine" when = 0 }
+    command = { type = secederegion which = UTC value = "Eastern Russia" when = 0 }
     command = { type = secederegion which = UTC value = "Southern Russia" when = 0 }
-    command = { type = secederegion which = UTC value = "Central Russia" when = 0 }
     command = { type = secederegion which = UTC value = "Kaukasus" when = 0 }
     command = { type = alliance which = UTC }
 	} 

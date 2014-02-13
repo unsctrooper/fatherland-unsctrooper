@@ -195,3 +195,38 @@ name = "Okay!"
 command = { type = alliance which = EGY }
 }
 }
+
+event = { # Revenge!
+	id = 66606
+	random = no
+    country = SOV
+	
+	name = "The Soviet Bear Awakes!"
+	desc = "The Germans have overstepped their limits and are in war with the Allies. While mushroom clouds are flying over the German Fatherland, we are free to take back our lands and liberate the opressed masses!" 
+	style = 2
+	picture = "news_paper"
+	
+decision = {
+war = { country = GER country = USA }
+flag = SOVFRIENDLY
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+flag = SOVFRIENDLY
+}
+	
+trigger = {
+war = { country = GER country = USA }
+flag = SOVFRIENDLY
+	}
+	
+date = { day = 1 month = january year = 1953 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = war which = GER }
+}
+}

@@ -145,3 +145,63 @@ event = {
 		command = { type = clrflag which = DeGaulleVichy  }
 	}
 }
+
+event = {
+id = 504
+	random = no
+	country = USA
+	style = 2
+	picture = "lend_lease"
+
+	trigger = {
+    flag = SOVfriendly
+	}
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 180
+	deathdate = { day = 1 month = december year = 1964 }
+
+	name = "Marshall Plan to Soviet Union"
+    desc = "The Soviets have proven to be of massive worth in the fight against Nazi Germany in the past, and have shown to be still a potent force. If we were to arm them militarilly and economically, perhaps they could one day seek their revenge against the Germans, together with us."
+	
+	action = {
+			name = "Yes!"
+			ai_chance = 90
+			command = { type = trigger which = 505 }
+			command = { type = relation which = SOV value = 100 }
+	}
+	
+	action = {
+			name = "No!"
+			ai_chance = 10
+			command = { type = relation which = SOV value = -100 }
+}
+}
+
+event = {
+	id = 505
+	random = no
+	country = SOV
+    name = "Marshall Plan to Soviet Union"
+    desc = "We  have proven to be of massive worth in the fight against Nazi Germany in the past, and have shown to be still a potent force. The Allies have decided to arm us militarilly and economically, so that we can one day seek our revenge against the Germans, together with the Allies."
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "Yes!"
+		ai_chance = 99
+        command = { type = peacetime_ic_mod value = 5 }
+		command = { type = construct which = ic where = -1 value = 5 }
+		command = { type = construct which = ic where = -1 value = 5 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+
+	}
+		action_b = {
+		ai_chance = 1
+		name = "No!"
+		command = { type = relation which = USA value = -50 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = clrflag which = DeGaulleVichy  }
+	}
+}
