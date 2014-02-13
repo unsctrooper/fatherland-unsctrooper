@@ -78266,796 +78266,3495 @@ U57;TP;12a Flotilla Naval Militar
 U57;TP;13a Flotilla Naval Militar
 U57;TP;14a Flotilla Naval Militar
 U57;TP;15a Flotilla Naval Militar
-U58;HQ;Cuartel General 1er Ejército
-U58;HQ;Cuartel General 2o Ejército
-U58;HQ;Cuartel General 3er Ejército
-U58;HQ;Cuartel General 4o Ejército
-U58;HQ;Cuartel General 5o Ejército
-U58;HQ;Cuartel General 6o Ejército
-U58;HQ;Cuartel General 7o Ejército
-U58;HQ;Cuartel General 8o Ejército
-U58;HQ;Cuartel General 9o Ejército
-U58;HQ;Cuartel General 10o Ejército
-U58;Inf;I División de Infantería
-U58;Inf;II División de Infantería
-U58;Inf;III División de Infantería
-U58;Inf;IV División de Infantería
-U58;Inf;V División de Infantería
-U58;Inf;VI División de Infantería
-U58;Inf;VII División de Infantería
-U58;Inf;VIII División de Infantería
-U58;Inf;IX División de Infantería
-U58;Inf;X División de Infantería
-U58;Inf;XI División de Infantería
-U58;Inf;XII División de Infantería
-U58;Inf;XIII División de Infantería
-U58;Inf;XIV División de Infantería
-U58;Inf;XV División de Infantería
-U58;Inf;XVI División de Infantería
-U58;Inf;XVII División de Infantería
-U58;Inf;XVIII División de Infantería
-U58;Inf;XIX División de Infantería
-U58;Inf;XX División de Infantería
-U58;Inf;XXI División de Infantería
-U58;Inf;XXII División de Infantería
-U58;Inf;XXIII División de Infantería
-U58;Inf;XXIV División de Infantería
-U58;Inf;XXV División de Infantería
-U58;Inf;XXVI División de Infantería
-U58;Inf;XXVII División de Infantería
-U58;Inf;XXVIII División de Infantería
-U58;Inf;XXIX División de Infantería
-U58;Inf;XXX División de Infantería
-U58;Gar;I División de Infantería
-U58;Gar;II División de Infantería
-U58;Gar;III División de Infantería
-U58;Gar;IV División de Infantería
-U58;Gar;V División de Infantería
-U58;Gar;VI División de Infantería
-U58;Gar;VII División de Infantería
-U58;Gar;VIII División de Infantería
-U58;Gar;IX División de Infantería
-U58;Gar;X División de Infantería
-U58;Gar;XI División de Infantería
-U58;Gar;XII División de Infantería
-U58;Gar;XIII División de Infantería
-U58;Gar;XIV División de Infantería
-U58;Gar;XV División de Infantería
-U58;Gar;XVI División de Infantería
-U58;Gar;XVII División de Infantería
-U58;Gar;XVIII División de Infantería
-U58;Gar;XIX División de Infantería
-U58;Gar;XX División de Infantería
-U58;Gar;XXI División de Infantería
-U58;Gar;XXII División de Infantería
-U58;Gar;XXIII División de Infantería
-U58;Gar;XXIV División de Infantería
-U58;Gar;XXV División de Infantería
-U58;Gar;XXVI División de Infantería
-U58;Gar;XXVII División de Infantería
-U58;Gar;XXVIII División de Infantería
-U58;Gar;XXIX División de Infantería
-U58;Gar;XXX División de Infantería
-U58;Cav;I División de Caballería
-U58;Cav;II División de Caballería
-U58;Cav;III División de Caballería
-U58;Cav;IV División de Caballería
-U58;Cav;V División de Caballería
-U58;Cav;VI División de Caballería
-U58;Cav;VII División de Caballería
-U58;Cav;VIII División de Caballería
-U58;Cav;IX División de Caballería
-U58;Cav;X División de Caballería
-U58;Mot;I División Infantería Motorizada
-U58;Mot;II División Infantería Motorizada
-U58;Mot;III División Infantería Motorizada
-U58;Mot;IV División Infantería Motorizada
-U58;Mot;V División Infantería Motorizada
-U58;Mot;VI División Infantería Motorizada
-U58;Mot;VII División Infantería Motorizada
-U58;Mot;VIII División Infantería Motorizada
-U58;Mot;IX División Infantería Motorizada
-U58;Mot;X División Infantería Motorizada
-U58;Mot;XI División Infantería Motorizada
-U58;Mot;XII División Infantería Motorizada
-U58;Mot;XIII División Infantería Motorizada
-U58;Mot;XIV División Infantería Motorizada
-U58;Mot;XV División Infantería Motorizada
-U58;Mec;I División Infantería Mecanizada
-U58;Mec;II División Infantería Mecanizada
-U58;Mec;III División Infantería Mecanizada
-U58;Mec;IV División Infantería Mecanizada
-U58;Mec;V División Infantería Mecanizada
-U58;Mec;VI División Infantería Mecanizada
-U58;Mec;VII División Infantería Mecanizada
-U58;Mec;VIII División Infantería Mecanizada
-U58;Mec;IX División Infantería Mecanizada
-U58;Mec;X División Infantería Mecanizada
-U58;Mec;XI División Infantería Mecanizada
-U58;Mec;XII División Infantería Mecanizada
-U58;Mec;XIII División Infantería Mecanizada
-U58;Mec;XIV División Infantería Mecanizada
-U58;Mec;XV División Infantería Mecanizada
-U58;L ARM;I División Blindada de México
-U58;L ARM;II División Blindada de México
-U58;L ARM;III División Blindada de México
-U58;L ARM;IV División Blindada de México
-U58;L ARM;V División Blindada de México
-U58;L ARM;VI División Blindada de México
-U58;L ARM;VII División Blindada de México
-U58;L ARM;VIII División Blindada de México
-U58;L ARM;IX División Blindada de México
-U58;L ARM;X División Blindada de México
-U58;L ARM;XI División Blindada de México
-U58;L ARM;XII División Blindada de México
-U58;L ARM;XIII División Blindada de México
-U58;L ARM;XIV División Blindada de México
-U58;L ARM;XV División Blindada de México
-U58;Arm;I División Blindada de México
-U58;Arm;II División Blindada de México
-U58;Arm;III División Blindada de México
-U58;Arm;IV División Blindada de México
-U58;Arm;V División Blindada de México
-U58;Arm;VI División Blindada de México
-U58;Arm;VII División Blindada de México
-U58;Arm;VIII División Blindada de México
-U58;Arm;IX División Blindada de México
-U58;Arm;X División Blindada de México
-U58;Arm;XI División Blindada de México
-U58;Arm;XII División Blindada de México
-U58;Arm;XIII División Blindada de México
-U58;Arm;XIV División Blindada de México
-U58;Arm;XV División Blindada de México
-U58;Par;1a División de Paracaidistas
-U58;Par;2a División de Paracaidistas
-U58;Par;3a División de Paracaidistas
-U58;Par;4a División de Paracaidistas
-U58;Par;5a División de Paracaidistas
-U58;Par;6a División de Paracaidistas
-U58;Par;7a División de Paracaidistas
-U58;Par;8a División de Paracaidistas
-U58;Par;9a División de Paracaidistas
-U58;Par;10a División de Paracaidistas
-U58;Mar;1a División de Comandos Marinos
-U58;Mar;2a División de Comandos Marinos
-U58;Mar;3a División de Comandos Marinos
-U58;Mar;4a División de Comandos Marinos
-U58;Mar;5a División de Comandos Marinos
-U58;Mar;6a División de Comandos Marinos
-U58;Mar;7a División de Comandos Marinos
-U58;Mar;8a División de Comandos Marinos
-U58;Mar;9a División de Comandos Marinos
-U58;Mar;10a División de Comandos Marinos
-U58;Mtn;1a División de Montaña
-U58;Mtn;2a División de Montaña
-U58;Mtn;3a División de Montaña
-U58;Mtn;4a División de Montaña
-U58;Mtn;5a División de Montaña
-U58;Mtn;6a División de Montaña
-U58;Mtn;7a División de Montaña
-U58;Mtn;8a División de Montaña
-U58;Mtn;9a División de Montaña
-U58;Mtn;10a División de Montaña
-U58;Mil;I División de Guardia Policial
-U58;Mil;II División de Guardia Policial
-U58;Mil;III División de Guardia Policial
-U58;Mil;IV División de Guardia Policial
-U58;Mil;V División de Guardia Policial
-U58;Mil;VI División de Guardia Policial
-U58;Mil;VII División de Guardia Policial
-U58;Mil;VIII División de Guardia Policial
-U58;Mil;IX División de Guardia Policial
-U58;Mil;X División de Guardia Policial
-U58;Mil;XI División de Guardia Policial
-U58;Mil;XII División de Guardia Policial
-U58;Mil;XIII División de Guardia Policial
-U58;Mil;XIV División de Guardia Policial
-U58;Mil;XV División de Guardia Policial
-U58;Mil;XVI División de Guardia Policial
-U58;Mil;XVII División de Guardia Policial
-U58;Mil;XVIII División de Guardia Policial
-U58;Mil;XVIX División de Guardia Policial
-U58;Mil;XX División de Guardia Policial
-U58;Mil;XXI División de Guardia Policial
-U58;Mil;XXII División de Guardia Policial
-U58;Mil;XXIII División de Guardia Policial
-U58;Mil;XXIV División de Guardia Policial
-U58;Mil;XXV División de Guardia Policial
-U58;Mil;XXVI División de Guardia Policial
-U58;Mil;XXVII División de Guardia Policial
-U58;Mil;XXVIII División de Guardia Policial
-U58;Mil;XXIX División de Guardia Policial
-U58;Mil;XXX División de Guardia Policial
-U58;Fig;1. Grupo Aéreo de Caza
-U58;Fig;2. Grupo Aéreo de Caza
-U58;Fig;3. Grupo Aéreo de Caza
-U58;Fig;4. Grupo Aéreo de Caza
-U58;Fig;5. Grupo Aéreo de Caza
-U58;Fig;6. Grupo Aéreo de Caza
-U58;Fig;7. Grupo Aéreo de Caza
-U58;Fig;8. Grupo Aéreo de Caza
-U58;Fig;9. Grupo Aéreo de Caza
-U58;Fig;10. Grupo Aéreo de Caza
-U58;Fig;11. Grupo Aéreo de Caza
-U58;Fig;12. Grupo Aéreo de Caza
-U58;Fig;13. Grupo Aéreo de Caza
-U58;Fig;14. Grupo Aéreo de Caza
-U58;Fig;15. Grupo Aéreo de Caza
-U58;Int F;1. Grupo Aéreo de Caza
-U58;Int F;2. Grupo Aéreo de Caza
-U58;Int F;3. Grupo Aéreo de Caza
-U58;Int F;4. Grupo Aéreo de Caza
-U58;Int F;5. Grupo Aéreo de Caza
-U58;Int F;6. Grupo Aéreo de Caza
-U58;Int F;7. Grupo Aéreo de Caza
-U58;Int F;8. Grupo Aéreo de Caza
-U58;Int F;9. Grupo Aéreo de Caza
-U58;Int F;10. Grupo Aéreo de Caza
-U58;Int F;11. Grupo Aéreo de Caza
-U58;Int F;12. Grupo Aéreo de Caza
-U58;Int F;13. Grupo Aéreo de Caza
-U58;Int F;14. Grupo Aéreo de Caza
-U58;Int F;15. Grupo Aéreo de Caza
-U58;Str;1. Grupo Aéreo Estratégico
-U58;Str;2. Grupo Aéreo Estratégico
-U58;Str;3. Grupo Aéreo Estratégico
-U58;Str;4. Grupo Aéreo Estratégico
-U58;Str;5. Grupo Aéreo Estratégico
-U58;Str;6. Grupo Aéreo Estratégico
-U58;Str;7. Grupo Aéreo Estratégico
-U58;Str;8. Grupo Aéreo Estratégico
-U58;Str;9. Grupo Aéreo Estratégico
-U58;Str;10. Grupo Aéreo Estratégico
-U58;Tac;1. Grupo Aéreo Táctico
-U58;Tac;2. Grupo Aéreo Táctico
-U58;Tac;3. Grupo Aéreo Táctico
-U58;Tac;4. Grupo Aéreo Táctico
-U58;Tac;5. Grupo Aéreo Táctico
-U58;Tac;6. Grupo Aéreo Táctico
-U58;Tac;7. Grupo Aéreo Táctico
-U58;Tac;8. Grupo Aéreo Táctico
-U58;Tac;9. Grupo Aéreo Táctico
-U58;Tac;10. Grupo Aéreo Táctico
-U58;Tac;11. Grupo Aéreo Táctico
-U58;Tac;12. Grupo Aéreo Táctico
-U58;Tac;13. Grupo Aéreo Táctico
-U58;Tac;14. Grupo Aéreo Táctico
-U58;Tac;15. Grupo Aéreo Táctico
-U58;CAS;1. Grupo Aéreo de Asalto
-U58;CAS;2. Grupo Aéreo de Asalto
-U58;CAS;3. Grupo Aéreo de Asalto
-U58;CAS;4. Grupo Aéreo de Asalto
-U58;CAS;5. Grupo Aéreo de Asalto
-U58;CAS;6. Grupo Aéreo de Asalto
-U58;CAS;7. Grupo Aéreo de Asalto
-U58;CAS;8. Grupo Aéreo de Asalto
-U58;CAS;9. Grupo Aéreo de Asalto
-U58;CAS;10. Grupo Aéreo de Asalto
-U58;CAS;11. Grupo Aéreo de Asalto
-U58;CAS;12. Grupo Aéreo de Asalto
-U58;CAS;13. Grupo Aéreo de Asalto
-U58;CAS;14. Grupo Aéreo de Asalto
-U58;CAS;15. Grupo Aéreo de Asalto
-U58;Nav;. Grupo Aéreo de la Marina
-U58;Nav;2. Grupo Aéreo de la Marina
-U58;Nav;3. Grupo Aéreo de la Marina
-U58;Nav;4. Grupo Aéreo de la Marina
-U58;Nav;5. Grupo Aéreo de la Marina
-U58;Nav;6. Grupo Aéreo de la Marina
-U58;Nav;7. Grupo Aéreo de la Marina
-U58;Nav;8. Grupo Aéreo de la Marina
-U58;Nav;9. Grupo Aéreo de la Marina
-U58;Nav;10. Grupo Aéreo de la Marina
-U58;Nav;11. Grupo Aéreo de la Marina
-U58;Nav;12. Grupo Aéreo de la Marina
-U58;Nav;13. Grupo Aéreo de la Marina
-U58;Nav;14. Grupo Aéreo de la Marina
-U58;Nav;15. Grupo Aéreo de la Marina
-U58;Nav;1. Grupo Aéreo Torpedero
-U58;Nav;2. Grupo Aéreo Torpedero
-U58;Nav;3. Grupo Aéreo Torpedero
-U58;Nav;4. Grupo Aéreo Torpedero
-U58;Nav;5. Grupo Aéreo Torpedero
-U58;Nav;6. Grupo Aéreo Torpedero
-U58;Nav;7. Grupo Aéreo Torpedero
-U58;Nav;8. Grupo Aéreo Torpedero
-U58;Nav;9. Grupo Aéreo Torpedero
-U58;Nav;10. Grupo Aéreo Torpedero
-U58;Nav;11. Grupo Aéreo Torpedero
-U58;Nav;12. Grupo Aéreo Torpedero
-U58;Nav;13. Grupo Aéreo Torpedero
-U58;Nav;14. Grupo Aéreo Torpedero
-U58;Trp;Lineas Aerotr. Mexicanas nro. 1
-U58;Trp;Lineas Aerotr. Mexicanas nro. 2
-U58;Trp;Lineas Aerotr. Mexicanas nro. 3
-U58;Trp;Lineas Aerotr. Mexicanas nro. 4
-U58;Trp;Lineas Aerotr. Mexicanas nro. 5
-U58;Trp;Lineas Aerotr. Mexicanas nro. 6
-U58;Trp;Lineas Aerotr. Mexicanas nro. 7
-U58;Trp;Lineas Aerotr. Mexicanas nro. 8
-U58;Trp;Lineas Aerotr. Mexicanas nro. 9
-U58;Trp;Lineas Aerotr. Mexicanas nro. 10
-U58;BB;Juarez
-U58;BB;Ciudad de México
-U58;BB;Montezuma
-U58;BC;Juarez
-U58;BC;Ciudad de México
-U58;BC;Montezuma
-U58;CV;República de México
-U58;CV;Xochichapal
-U58;CV;Cauhtemoc
-U58;27;Allende
-U58;27;Abasolo
-U58;27;Victoria
-U58;27;Mina
-U58;27;Bravo
-U58;27;Galeana
-U58;31;Allende
-U58;31;Abasolo
-U58;31;Victoria
-U58;31;Mina
-U58;31;Bravo
-U58;31;Galeana
-U58;CA;Guadalajara
-U58;CA;Pancho Villa
-U58;CA;Río Lobo
-U58;CA;Merida
-U58;CA;Monterrey
-U58;CA;Río Grande
-U58;CA;Tijuana
-U58;CA;Río del Norte
-U58;CA;Chiapas
-U58;CA;Chuela
-U58;CL;Guadalajara
-U58;CL;Pancho Villa
-U58;CL;Río Lobo
-U58;CL;Merida
-U58;CL;Monterrey
-U58;CL;Río Grande
-U58;CL;Tijuana
-U58;CL;Río del Norte
-U58;CL;Chiapas
-U58;CL;Chuela
-U58;DD;1a Flotilla de Destructores
-U58;DD;2a Flotilla de Destructores
-U58;DD;3a Flotilla de Destructores
-U58;DD;4a Flotilla de Destructores
-U58;DD;5a Flotilla de Destructores
-U58;DD;6a Flotilla de Destructores
-U58;DD;7a Flotilla de Destructores
-U58;DD;8a Flotilla de Destructores
-U58;DD;9a Flotilla de Destructores
-U58;DD;10a Flotilla de Destructores
-U58;DD;11a Flotilla de Destructores
-U58;DD;12a Flotilla de Destructores
-U58;DD;13a Flotilla de Destructores
-U58;DD;14a Flotilla de Destructores
-U58;DD;15a Flotilla de Destructores
-U58;SS;1a Flotilla de Submarinos
-U58;SS;2a Flotilla de Submarinos
-U58;SS;3a Flotilla de Submarinos
-U58;SS;4a Flotilla de Submarinos
-U58;SS;5a Flotilla de Submarinos
-U58;SS;6a Flotilla de Submarinos
-U58;SS;7a Flotilla de Submarinos
-U58;SS;8a Flotilla de Submarinos
-U58;SS;9a Flotilla de Submarinos
-U58;SS;10a Flotilla de Submarinos
-U58;SS;11a Flotilla de Submarinos
-U58;SS;12a Flotilla de Submarinos
-U58;SS;13a Flotilla de Submarinos
-U58;SS;14a Flotilla de Submarinos
-U58;SS;15a Flotilla de Submarinos
-U58;TP;1a Flotilla Naval Militar
-U58;TP;2a Flotilla Naval Militar
-U58;TP;3a Flotilla Naval Militar
-U58;TP;4a Flotilla Naval Militar
-U58;TP;5a Flotilla Naval Militar
-U58;TP;6a Flotilla Naval Militar
-U58;TP;7a Flotilla Naval Militar
-U58;TP;8a Flotilla Naval Militar
-U58;TP;9a Flotilla Naval Militar
-U58;TP;10a Flotilla Naval Militar
-U58;TP;11a Flotilla Naval Militar
-U58;TP;12a Flotilla Naval Militar
-U58;TP;13a Flotilla Naval Militar
-U58;TP;14a Flotilla Naval Militar
-U58;TP;15a Flotilla Naval Militar
-U59;HQ;Cuartel General 1er Ejército
-U59;HQ;Cuartel General 2o Ejército
-U59;HQ;Cuartel General 3er Ejército
-U59;HQ;Cuartel General 4o Ejército
-U59;HQ;Cuartel General 5o Ejército
-U59;HQ;Cuartel General 6o Ejército
-U59;HQ;Cuartel General 7o Ejército
-U59;HQ;Cuartel General 8o Ejército
-U59;HQ;Cuartel General 9o Ejército
-U59;HQ;Cuartel General 10o Ejército
-U59;Inf;I División de Infantería
-U59;Inf;II División de Infantería
-U59;Inf;III División de Infantería
-U59;Inf;IV División de Infantería
-U59;Inf;V División de Infantería
-U59;Inf;VI División de Infantería
-U59;Inf;VII División de Infantería
-U59;Inf;VIII División de Infantería
-U59;Inf;IX División de Infantería
-U59;Inf;X División de Infantería
-U59;Inf;XI División de Infantería
-U59;Inf;XII División de Infantería
-U59;Inf;XIII División de Infantería
-U59;Inf;XIV División de Infantería
-U59;Inf;XV División de Infantería
-U59;Inf;XVI División de Infantería
-U59;Inf;XVII División de Infantería
-U59;Inf;XVIII División de Infantería
-U59;Inf;XIX División de Infantería
-U59;Inf;XX División de Infantería
-U59;Inf;XXI División de Infantería
-U59;Inf;XXII División de Infantería
-U59;Inf;XXIII División de Infantería
-U59;Inf;XXIV División de Infantería
-U59;Inf;XXV División de Infantería
-U59;Inf;XXVI División de Infantería
-U59;Inf;XXVII División de Infantería
-U59;Inf;XXVIII División de Infantería
-U59;Inf;XXIX División de Infantería
-U59;Inf;XXX División de Infantería
-U59;Gar;I División de Infantería
-U59;Gar;II División de Infantería
-U59;Gar;III División de Infantería
-U59;Gar;IV División de Infantería
-U59;Gar;V División de Infantería
-U59;Gar;VI División de Infantería
-U59;Gar;VII División de Infantería
-U59;Gar;VIII División de Infantería
-U59;Gar;IX División de Infantería
-U59;Gar;X División de Infantería
-U59;Gar;XI División de Infantería
-U59;Gar;XII División de Infantería
-U59;Gar;XIII División de Infantería
-U59;Gar;XIV División de Infantería
-U59;Gar;XV División de Infantería
-U59;Gar;XVI División de Infantería
-U59;Gar;XVII División de Infantería
-U59;Gar;XVIII División de Infantería
-U59;Gar;XIX División de Infantería
-U59;Gar;XX División de Infantería
-U59;Gar;XXI División de Infantería
-U59;Gar;XXII División de Infantería
-U59;Gar;XXIII División de Infantería
-U59;Gar;XXIV División de Infantería
-U59;Gar;XXV División de Infantería
-U59;Gar;XXVI División de Infantería
-U59;Gar;XXVII División de Infantería
-U59;Gar;XXVIII División de Infantería
-U59;Gar;XXIX División de Infantería
-U59;Gar;XXX División de Infantería
-U59;Cav;I División de Caballería
-U59;Cav;II División de Caballería
-U59;Cav;III División de Caballería
-U59;Cav;IV División de Caballería
-U59;Cav;V División de Caballería
-U59;Cav;VI División de Caballería
-U59;Cav;VII División de Caballería
-U59;Cav;VIII División de Caballería
-U59;Cav;IX División de Caballería
-U59;Cav;X División de Caballería
-U59;Mot;I División Infantería Motorizada
-U59;Mot;II División Infantería Motorizada
-U59;Mot;III División Infantería Motorizada
-U59;Mot;IV División Infantería Motorizada
-U59;Mot;V División Infantería Motorizada
-U59;Mot;VI División Infantería Motorizada
-U59;Mot;VII División Infantería Motorizada
-U59;Mot;VIII División Infantería Motorizada
-U59;Mot;IX División Infantería Motorizada
-U59;Mot;X División Infantería Motorizada
-U59;Mot;XI División Infantería Motorizada
-U59;Mot;XII División Infantería Motorizada
-U59;Mot;XIII División Infantería Motorizada
-U59;Mot;XIV División Infantería Motorizada
-U59;Mot;XV División Infantería Motorizada
-U59;Mec;I División Infantería Mecanizada
-U59;Mec;II División Infantería Mecanizada
-U59;Mec;III División Infantería Mecanizada
-U59;Mec;IV División Infantería Mecanizada
-U59;Mec;V División Infantería Mecanizada
-U59;Mec;VI División Infantería Mecanizada
-U59;Mec;VII División Infantería Mecanizada
-U59;Mec;VIII División Infantería Mecanizada
-U59;Mec;IX División Infantería Mecanizada
-U59;Mec;X División Infantería Mecanizada
-U59;Mec;XI División Infantería Mecanizada
-U59;Mec;XII División Infantería Mecanizada
-U59;Mec;XIII División Infantería Mecanizada
-U59;Mec;XIV División Infantería Mecanizada
-U59;Mec;XV División Infantería Mecanizada
-U59;L ARM;I División Blindada de México
-U59;L ARM;II División Blindada de México
-U59;L ARM;III División Blindada de México
-U59;L ARM;IV División Blindada de México
-U59;L ARM;V División Blindada de México
-U59;L ARM;VI División Blindada de México
-U59;L ARM;VII División Blindada de México
-U59;L ARM;VIII División Blindada de México
-U59;L ARM;IX División Blindada de México
-U59;L ARM;X División Blindada de México
-U59;L ARM;XI División Blindada de México
-U59;L ARM;XII División Blindada de México
-U59;L ARM;XIII División Blindada de México
-U59;L ARM;XIV División Blindada de México
-U59;L ARM;XV División Blindada de México
-U59;Arm;I División Blindada de México
-U59;Arm;II División Blindada de México
-U59;Arm;III División Blindada de México
-U59;Arm;IV División Blindada de México
-U59;Arm;V División Blindada de México
-U59;Arm;VI División Blindada de México
-U59;Arm;VII División Blindada de México
-U59;Arm;VIII División Blindada de México
-U59;Arm;IX División Blindada de México
-U59;Arm;X División Blindada de México
-U59;Arm;XI División Blindada de México
-U59;Arm;XII División Blindada de México
-U59;Arm;XIII División Blindada de México
-U59;Arm;XIV División Blindada de México
-U59;Arm;XV División Blindada de México
-U59;Par;1a División de Paracaidistas
-U59;Par;2a División de Paracaidistas
-U59;Par;3a División de Paracaidistas
-U59;Par;4a División de Paracaidistas
-U59;Par;5a División de Paracaidistas
-U59;Par;6a División de Paracaidistas
-U59;Par;7a División de Paracaidistas
-U59;Par;8a División de Paracaidistas
-U59;Par;9a División de Paracaidistas
-U59;Par;10a División de Paracaidistas
-U59;Mar;1a División de Comandos Marinos
-U59;Mar;2a División de Comandos Marinos
-U59;Mar;3a División de Comandos Marinos
-U59;Mar;4a División de Comandos Marinos
-U59;Mar;5a División de Comandos Marinos
-U59;Mar;6a División de Comandos Marinos
-U59;Mar;7a División de Comandos Marinos
-U59;Mar;8a División de Comandos Marinos
-U59;Mar;9a División de Comandos Marinos
-U59;Mar;10a División de Comandos Marinos
-U59;Mtn;1a División de Montaña
-U59;Mtn;2a División de Montaña
-U59;Mtn;3a División de Montaña
-U59;Mtn;4a División de Montaña
-U59;Mtn;5a División de Montaña
-U59;Mtn;6a División de Montaña
-U59;Mtn;7a División de Montaña
-U59;Mtn;8a División de Montaña
-U59;Mtn;9a División de Montaña
-U59;Mtn;10a División de Montaña
-U59;Mil;I División de Guardia Policial
-U59;Mil;II División de Guardia Policial
-U59;Mil;III División de Guardia Policial
-U59;Mil;IV División de Guardia Policial
-U59;Mil;V División de Guardia Policial
-U59;Mil;VI División de Guardia Policial
-U59;Mil;VII División de Guardia Policial
-U59;Mil;VIII División de Guardia Policial
-U59;Mil;IX División de Guardia Policial
-U59;Mil;X División de Guardia Policial
-U59;Mil;XI División de Guardia Policial
-U59;Mil;XII División de Guardia Policial
-U59;Mil;XIII División de Guardia Policial
-U59;Mil;XIV División de Guardia Policial
-U59;Mil;XV División de Guardia Policial
-U59;Mil;XVI División de Guardia Policial
-U59;Mil;XVII División de Guardia Policial
-U59;Mil;XVIII División de Guardia Policial
-U59;Mil;XVIX División de Guardia Policial
-U59;Mil;XX División de Guardia Policial
-U59;Mil;XXI División de Guardia Policial
-U59;Mil;XXII División de Guardia Policial
-U59;Mil;XXIII División de Guardia Policial
-U59;Mil;XXIV División de Guardia Policial
-U59;Mil;XXV División de Guardia Policial
-U59;Mil;XXVI División de Guardia Policial
-U59;Mil;XXVII División de Guardia Policial
-U59;Mil;XXVIII División de Guardia Policial
-U59;Mil;XXIX División de Guardia Policial
-U59;Mil;XXX División de Guardia Policial
-U59;Fig;1. Grupo Aéreo de Caza
-U59;Fig;2. Grupo Aéreo de Caza
-U59;Fig;3. Grupo Aéreo de Caza
-U59;Fig;4. Grupo Aéreo de Caza
-U59;Fig;5. Grupo Aéreo de Caza
-U59;Fig;6. Grupo Aéreo de Caza
-U59;Fig;7. Grupo Aéreo de Caza
-U59;Fig;8. Grupo Aéreo de Caza
-U59;Fig;9. Grupo Aéreo de Caza
-U59;Fig;10. Grupo Aéreo de Caza
-U59;Fig;11. Grupo Aéreo de Caza
-U59;Fig;12. Grupo Aéreo de Caza
-U59;Fig;13. Grupo Aéreo de Caza
-U59;Fig;14. Grupo Aéreo de Caza
-U59;Fig;15. Grupo Aéreo de Caza
-U59;Int F;1. Grupo Aéreo de Caza
-U59;Int F;2. Grupo Aéreo de Caza
-U59;Int F;3. Grupo Aéreo de Caza
-U59;Int F;4. Grupo Aéreo de Caza
-U59;Int F;5. Grupo Aéreo de Caza
-U59;Int F;6. Grupo Aéreo de Caza
-U59;Int F;7. Grupo Aéreo de Caza
-U59;Int F;8. Grupo Aéreo de Caza
-U59;Int F;9. Grupo Aéreo de Caza
-U59;Int F;10. Grupo Aéreo de Caza
-U59;Int F;11. Grupo Aéreo de Caza
-U59;Int F;12. Grupo Aéreo de Caza
-U59;Int F;13. Grupo Aéreo de Caza
-U59;Int F;14. Grupo Aéreo de Caza
-U59;Int F;15. Grupo Aéreo de Caza
-U59;Str;1. Grupo Aéreo Estratégico
-U59;Str;2. Grupo Aéreo Estratégico
-U59;Str;3. Grupo Aéreo Estratégico
-U59;Str;4. Grupo Aéreo Estratégico
-U59;Str;5. Grupo Aéreo Estratégico
-U59;Str;6. Grupo Aéreo Estratégico
-U59;Str;7. Grupo Aéreo Estratégico
-U59;Str;8. Grupo Aéreo Estratégico
-U59;Str;9. Grupo Aéreo Estratégico
-U59;Str;10. Grupo Aéreo Estratégico
-U59;Tac;1. Grupo Aéreo Táctico
-U59;Tac;2. Grupo Aéreo Táctico
-U59;Tac;3. Grupo Aéreo Táctico
-U59;Tac;4. Grupo Aéreo Táctico
-U59;Tac;5. Grupo Aéreo Táctico
-U59;Tac;6. Grupo Aéreo Táctico
-U59;Tac;7. Grupo Aéreo Táctico
-U59;Tac;8. Grupo Aéreo Táctico
-U59;Tac;9. Grupo Aéreo Táctico
-U59;Tac;10. Grupo Aéreo Táctico
-U59;Tac;11. Grupo Aéreo Táctico
-U59;Tac;12. Grupo Aéreo Táctico
-U59;Tac;13. Grupo Aéreo Táctico
-U59;Tac;14. Grupo Aéreo Táctico
-U59;Tac;15. Grupo Aéreo Táctico
-U59;CAS;1. Grupo Aéreo de Asalto
-U59;CAS;2. Grupo Aéreo de Asalto
-U59;CAS;3. Grupo Aéreo de Asalto
-U59;CAS;4. Grupo Aéreo de Asalto
-U59;CAS;5. Grupo Aéreo de Asalto
-U59;CAS;6. Grupo Aéreo de Asalto
-U59;CAS;7. Grupo Aéreo de Asalto
-U59;CAS;8. Grupo Aéreo de Asalto
-U59;CAS;9. Grupo Aéreo de Asalto
-U59;CAS;10. Grupo Aéreo de Asalto
-U59;CAS;11. Grupo Aéreo de Asalto
-U59;CAS;12. Grupo Aéreo de Asalto
-U59;CAS;13. Grupo Aéreo de Asalto
-U59;CAS;14. Grupo Aéreo de Asalto
-U59;CAS;15. Grupo Aéreo de Asalto
-U59;Nav;. Grupo Aéreo de la Marina
-U59;Nav;2. Grupo Aéreo de la Marina
-U59;Nav;3. Grupo Aéreo de la Marina
-U59;Nav;4. Grupo Aéreo de la Marina
-U59;Nav;5. Grupo Aéreo de la Marina
-U59;Nav;6. Grupo Aéreo de la Marina
-U59;Nav;7. Grupo Aéreo de la Marina
-U59;Nav;8. Grupo Aéreo de la Marina
-U59;Nav;9. Grupo Aéreo de la Marina
-U59;Nav;10. Grupo Aéreo de la Marina
-U59;Nav;11. Grupo Aéreo de la Marina
-U59;Nav;12. Grupo Aéreo de la Marina
-U59;Nav;13. Grupo Aéreo de la Marina
-U59;Nav;14. Grupo Aéreo de la Marina
-U59;Nav;15. Grupo Aéreo de la Marina
-U59;Nav;1. Grupo Aéreo Torpedero
-U59;Nav;2. Grupo Aéreo Torpedero
-U59;Nav;3. Grupo Aéreo Torpedero
-U59;Nav;4. Grupo Aéreo Torpedero
-U59;Nav;5. Grupo Aéreo Torpedero
-U59;Nav;6. Grupo Aéreo Torpedero
-U59;Nav;7. Grupo Aéreo Torpedero
-U59;Nav;8. Grupo Aéreo Torpedero
-U59;Nav;9. Grupo Aéreo Torpedero
-U59;Nav;10. Grupo Aéreo Torpedero
-U59;Nav;11. Grupo Aéreo Torpedero
-U59;Nav;12. Grupo Aéreo Torpedero
-U59;Nav;13. Grupo Aéreo Torpedero
-U59;Nav;14. Grupo Aéreo Torpedero
-U59;Trp;Lineas Aerotr. Mexicanas nro. 1
-U59;Trp;Lineas Aerotr. Mexicanas nro. 2
-U59;Trp;Lineas Aerotr. Mexicanas nro. 3
-U59;Trp;Lineas Aerotr. Mexicanas nro. 4
-U59;Trp;Lineas Aerotr. Mexicanas nro. 5
-U59;Trp;Lineas Aerotr. Mexicanas nro. 6
-U59;Trp;Lineas Aerotr. Mexicanas nro. 7
-U59;Trp;Lineas Aerotr. Mexicanas nro. 8
-U59;Trp;Lineas Aerotr. Mexicanas nro. 9
-U59;Trp;Lineas Aerotr. Mexicanas nro. 10
-U59;BB;Juarez
-U59;BB;Ciudad de México
-U59;BB;Montezuma
-U59;BC;Juarez
-U59;BC;Ciudad de México
-U59;BC;Montezuma
-U59;CV;República de México
-U59;CV;Xochichapal
-U59;CV;Cauhtemoc
-U59;27;Allende
-U59;27;Abasolo
-U59;27;Victoria
-U59;27;Mina
-U59;27;Bravo
-U59;27;Galeana
-U59;31;Allende
-U59;31;Abasolo
-U59;31;Victoria
-U59;31;Mina
-U59;31;Bravo
-U59;31;Galeana
-U59;CA;Guadalajara
-U59;CA;Zapata
-U59;CA;Río Lobo
-U59;CA;Merida
-U59;CA;Monterrey
-U59;CA;Río Grande
-U59;CA;Tijuana
-U59;CA;Río del Norte
-U59;CA;Chiapas
-U59;CA;Chuela
-U59;CL;Guadalajara
-U59;CL;Zapata
-U59;CL;Río Lobo
-U59;CL;Merida
-U59;CL;Monterrey
-U59;CL;Río Grande
-U59;CL;Tijuana
-U59;CL;Río del Norte
-U59;CL;Chiapas
-U59;CL;Chuela
-U59;DD;1a Flotilla de Destructores
-U59;DD;2a Flotilla de Destructores
-U59;DD;3a Flotilla de Destructores
-U59;DD;4a Flotilla de Destructores
-U59;DD;5a Flotilla de Destructores
-U59;DD;6a Flotilla de Destructores
-U59;DD;7a Flotilla de Destructores
-U59;DD;8a Flotilla de Destructores
-U59;DD;9a Flotilla de Destructores
-U59;DD;10a Flotilla de Destructores
-U59;DD;11a Flotilla de Destructores
-U59;DD;12a Flotilla de Destructores
-U59;DD;13a Flotilla de Destructores
-U59;DD;14a Flotilla de Destructores
-U59;DD;15a Flotilla de Destructores
-U59;SS;1a Flotilla de Submarinos
-U59;SS;2a Flotilla de Submarinos
-U59;SS;3a Flotilla de Submarinos
-U59;SS;4a Flotilla de Submarinos
-U59;SS;5a Flotilla de Submarinos
-U59;SS;6a Flotilla de Submarinos
-U59;SS;7a Flotilla de Submarinos
-U59;SS;8a Flotilla de Submarinos
-U59;SS;9a Flotilla de Submarinos
-U59;SS;10a Flotilla de Submarinos
-U59;SS;11a Flotilla de Submarinos
-U59;SS;12a Flotilla de Submarinos
-U59;SS;13a Flotilla de Submarinos
-U59;SS;14a Flotilla de Submarinos
-U59;SS;15a Flotilla de Submarinos
-U59;TP;1a Flotilla Naval Militar
-U59;TP;2a Flotilla Naval Militar
-U59;TP;3a Flotilla Naval Militar
-U59;TP;4a Flotilla Naval Militar
-U59;TP;5a Flotilla Naval Militar
-U59;TP;6a Flotilla Naval Militar
-U59;TP;7a Flotilla Naval Militar
-U59;TP;8a Flotilla Naval Militar
-U59;TP;9a Flotilla Naval Militar
-U59;TP;10a Flotilla Naval Militar
-U59;TP;11a Flotilla Naval Militar
-U59;TP;12a Flotilla Naval Militar
-U59;TP;13a Flotilla Naval Militar
-U59;TP;14a Flotilla Naval Militar
-U59;TP;15a Flotilla Naval Militar
+U58;HQ;1. Armee
+U58;HQ;2. Armee
+U58;HQ;3. Armee
+U58;HQ;Heeresgruppe A
+U58;HQ;4. Armee
+U58;HQ;5. Armee
+U58;HQ;6. Armee
+U58;HQ;Heeresgruppe B
+U58;HQ;7. Armee
+U58;HQ;8. Armee
+U58;HQ;9. Armee
+U58;HQ;Heeresgruppe C
+U58;HQ;10. Armee
+U58;HQ;11. Armee
+U58;HQ;12. Armee
+U58;HQ;Heeresgruppe D
+U58;HQ;14. Armee
+U58;HQ;15. Armee
+U58;HQ;16. Armee
+U58;HQ;Heeresgruppe E
+U58;HQ;17. Armee
+U58;HQ;18. Armee
+U58;HQ;19. Armee
+U58;HQ;Heeresgruppe F
+U58;HQ;21. Armee
+U58;HQ;Heeresgruppe G
+U58;HQ;24. Armee
+U58;HQ;25. Armee
+U58;HQ;Heeresgruppe H
+U58;Inf;1. Infanterie-Division
+U58;Inf;5. Infanterie-Division
+U58;Inf;6. Infanterie-Division
+U58;Inf;7. Infanterie-Division
+U58;Inf;8. Infanterie-Division
+U58;Inf;9. Infanterie-Division
+U58;Inf;10. Infanterie-Division
+U58;Inf;11. Infanterie-Division
+U58;Inf;12. Infanterie-Division
+U58;Inf;15. Infanterie-Division
+U58;Inf;17. Infanterie-Division
+U58;Inf;18. Infanterie-Division
+U58;Inf;21. Infanterie-Division
+U58;Inf;23. Infanterie-Division
+U58;Inf;24. Infanterie-Division
+U58;Inf;25. Infanterie-Division
+U58;Inf;26. Infanterie-Division
+U58;Inf;28. Infanterie-Division
+U58;Inf;30. Infanterie-Division
+U58;Inf;31. Infanterie-Division
+U58;Inf;32. Infanterie-Division
+U58;Inf;34. Infanterie-Division
+U58;Inf;35. Infanterie-Division
+U58;Inf;36. Infanterie-Division
+U58;Inf;44. Infanterie-Division
+U58;Inf;45. Infanterie-Division
+U58;Inf;46. Infanterie-Division
+U58;Inf;50. Infanterie-Division
+U58;Inf;52. Infanterie-Division
+U58;Inf;56. Infanterie-Division
+U58;Inf;57. Infanterie-Division
+U58;Inf;58. Infanterie-Division
+U58;Inf;60. Infanterie-Division
+U58;Inf;61. Infanterie-Division
+U58;Inf;62. Infanterie-Division
+U58;Inf;68. Infanterie-Division
+U58;Inf;69. Infanterie-Division
+U58;Inf;71. Infanterie-Division
+U58;Inf;72. Infanterie-Division
+U58;Inf;73. Infanterie-Division
+U58;Inf;75. Infanterie-Division
+U58;Inf;76. Infanterie-Division
+U58;Inf;78. Infanterie-Division
+U58;Inf;79. Infanterie-Division
+U58;Inf;81. Infanterie-Division
+U58;Inf;82. Infanterie-Division
+U58;Inf;83. Infanterie-Division
+U58;Inf;86. Infanterie-Division
+U58;Inf;87. Infanterie-Division
+U58;Inf;88. Infanterie-Division
+U58;Inf;93. Infanterie-Division
+U58;Inf;94. Infanterie-Division
+U58;Inf;95. Infanterie-Division
+U58;Inf;96. Infanterie-Division
+U58;Inf;98. Infanterie-Division
+U58;Inf;143. Infanterie-Division
+U58;Inf;161. Infanterie-Division
+U58;Inf;162. Infanterie-Division
+U58;Inf;163. Infanterie-Division
+U58;Inf;164. Infanterie-Division
+U58;Inf;167. Infanterie-Division
+U58;Inf;168. Infanterie-Division
+U58;Inf;169. Infanterie-Division
+U58;Inf;170. Infanterie-Division
+U58;Inf;181. Infanterie-Division
+U58;Inf;183. Infanterie-Division
+U58;Inf;196. Infanterie-Division
+U58;Inf;197. Infanterie-Division
+U58;Inf;206. Infanterie-Division
+U58;Inf;207. Infanterie-Division
+U58;Inf;208. Infanterie-Division
+U58;Inf;209. Infanterie-Division
+U58;Inf;211. Infanterie-Division
+U58;Inf;212. Infanterie-Division
+U58;Inf;213. Infanterie-Division
+U58;Inf;214. Infanterie-Division
+U58;Inf;215. Infanterie-Division
+U58;Inf;216. Infanterie-Division
+U58;Inf;217. Infanterie-Division
+U58;Inf;218. Infanterie-Division
+U58;Inf;221. Infanterie-Division
+U58;Inf;223. Infanterie-Division
+U58;Inf;225. Infanterie-Division
+U58;Inf;227. Infanterie-Division
+U58;Inf;228. Infanterie-Division
+U58;Inf;231. Infanterie-Division
+U58;Inf;239. Infanterie-Division
+U58;Inf;246. Infanterie-Division
+U58;Inf;251. Infanterie-Division
+U58;Inf;252. Infanterie-Division
+U58;Inf;253. Infanterie-Division
+U58;Inf;254. Infanterie-Division
+U58;Inf;255. Infanterie-Division
+U58;Inf;256. Infanterie-Division
+U58;Inf;257. Infanterie-Division
+U58;Inf;258. Infanterie-Division
+U58;Inf;260. Infanterie-Division
+U58;Inf;262. Infanterie-Division
+U58;Inf;263. Infanterie-Division
+U58;Inf;267. Infanterie-Division
+U58;Inf;268. Infanterie-Division
+U58;Inf;269. Infanterie-Division
+U58;Inf;521. Infanterie-Division
+U58;Inf;526. Infanterie-Division
+U58;Inf;102. Infanterie-Division
+U58;Inf;106. Infanterie-Division
+U58;Inf;110. Infanterie-Division
+U58;Inf;111. Infanterie-Division
+U58;Inf;112. Infanterie-Division
+U58;Inf;113. Infanterie-Division
+U58;Inf;121. Infanterie-Division
+U58;Inf;122. Infanterie-Division
+U58;Inf;123. Infanterie-Division
+U58;Inf;125. Infanterie-Division
+U58;Inf;126. Infanterie-Division
+U58;Inf;129. Infanterie-Division
+U58;Inf;131. Infanterie-Division
+U58;Inf;132. Infanterie-Division
+U58;Inf;134. Infanterie-Division
+U58;Inf;137. Infanterie-Division
+U58;Inf;198. Infanterie-Division
+U58;Inf;199. Infanterie-Division
+U58;Inf;205. Infanterie-Division
+U58;Inf;272. Infanterie-Division
+U58;Inf;278. Infanterie-Division
+U58;Inf;279. Infanterie-Division
+U58;Inf;290. Infanterie-Division
+U58;Inf;291. Infanterie-Division
+U58;Inf;292. Infanterie-Division
+U58;Inf;293. Infanterie-Division
+U58;Inf;294. Infanterie-Division
+U58;Inf;295. Infanterie-Division
+U58;Inf;297. Infanterie-Division
+U58;Inf;298. Infanterie-Division
+U58;Inf;299. Infanterie-Division
+U58;Inf;302. Infanterie-Division
+U58;Inf;304. Infanterie-Division
+U58;Inf;305. Infanterie-Division
+U58;Inf;306. Infanterie-Division
+U58;Inf;319. Infanterie-Division
+U58;Inf;320. Infanterie-Division
+U58;Inf;321. Infanterie-Division
+U58;Inf;323. Infanterie-Division
+U58;Inf;327. Infanterie-Division
+U58;Inf;332. Infanterie-Division
+U58;Inf;333. Infanterie-Division
+U58;Inf;335. Infanterie-Division
+U58;Inf;336. Infanterie-Division
+U58;Inf;337. Infanterie-Division
+U58;Inf;338. Infanterie-Division
+U58;Inf;339. Infanterie-Division
+U58;Inf;340. Infanterie-Division
+U58;Inf;351. Infanterie-Division
+U58;Inf;358. Infanterie-Division
+U58;Inf;365. Infanterie-Division
+U58;Inf;379. Infanterie-Division
+U58;Inf;393. Infanterie-Division
+U58;Inf;395. Infanterie-Division
+U58;Inf;399. Infanterie-Division
+U58;Inf;554. Infanterie-Division
+U58;Inf;555. Infanterie-Division
+U58;Inf;556. Infanterie-Division
+U58;Inf;557. Infanterie-Division
+U58;Inf;296. Infanterie-Division
+U58;Inf;328. Infanterie-Division
+U58;Inf;329. Infanterie-Division
+U58;Inf;330. Infanterie-Division
+U58;Inf;331. Infanterie-Division
+U58;Inf;342. Infanterie-Division
+U58;Inf;416. Infanterie-Division
+U58;Inf;702. Infanterie-Division
+U58;Inf;707. Infanterie-Division
+U58;Inf;708. Infanterie-Division
+U58;Inf;709. Infanterie-Division
+U58;Inf;710. Infanterie-Division
+U58;Inf;711. Infanterie-Division
+U58;Inf;712. Infanterie-Division
+U58;Inf;713. Infanterie-Division
+U58;Inf;715. Infanterie-Division
+U58;Inf;716. Infanterie-Division
+U58;Inf;38. Infanterie-Division
+U58;Inf;39. Infanterie-Division
+U58;Inf;65. Infanterie-Division
+U58;Inf;19. Luftwaffen-Sturm-Division
+U58;Inf;20. Luftwaffen-Sturm-Division
+U58;Inf;189. Infanterie-Division
+U58;Inf;270. Infanterie-Division
+U58;Inf;280. Infanterie-Division
+U58;Inf;326. Infanterie-Division
+U58;Inf;334. Infanterie-Division
+U58;Inf;343. Infanterie-Division
+U58;Inf;344. Infanterie-Division
+U58;Inf;346. Infanterie-Division
+U58;Inf;347. Infanterie-Division
+U58;Inf;348. Infanterie-Division
+U58;Inf;349. Infanterie-Division
+U58;Inf;370. Infanterie-Division
+U58;Inf;371. Infanterie-Division
+U58;Inf;376. Infanterie-Division
+U58;Inf;377. Infanterie-Division
+U58;Inf;383. Infanterie-Division
+U58;Inf;384. Infanterie-Division
+U58;Inf;385. Infanterie-Division
+U58;Inf;387. Infanterie-Division
+U58;Inf;389. Infanterie-Division
+U58;Inf;162. Infanterie-Div. 'Turkestan'
+U58;Inf;242. Infanterie-Division
+U58;Inf;243. Infanterie-Division
+U58;Inf;244. Infanterie-Division
+U58;Inf;245. Infanterie-Division
+U58;Inf;264. Infanterie-Division
+U58;Inf;265. Infanterie-Division
+U58;Inf;266. Infanterie-Division
+U58;Inf;271. Infanterie-Division
+U58;Inf;274. Infanterie-Division
+U58;Inf;275. Infanterie-Division
+U58;Inf;276. Infanterie-Division
+U58;Inf;277. Infanterie-Division
+U58;Inf;282. Infanterie-Division
+U58;Inf;352. Infanterie-Division
+U58;Inf;353. Infanterie-Division
+U58;Inf;355. Infanterie-Division
+U58;Inf;Division 'Hermann Göring'
+U58;Inf;Sturm-Division Rhodos
+U58;Inf;356. Infanterie-Division
+U58;Inf;357. Infanterie-Division
+U58;Inf;359. Infanterie-Division
+U58;Inf;361. Infanterie-Division
+U58;Inf;362. Infanterie-Division
+U58;Inf;363. Infanterie-Division
+U58;Inf;364. Infanterie-Division
+U58;Inf;367. Infanterie-Division
+U58;Inf;540. Infanterie-Division
+U58;Inf;Infanterie-Div. 'Milowitz'
+U58;Inf;48. Infanterie-Division
+U58;Inf;49. Infanterie-Division
+U58;Inf;59. Infanterie-Division
+U58;Inf;64. Infanterie-Division
+U58;Inf;170. Infanterie-Division
+U58;Inf;177. Infanterie-Division
+U58;Inf;184. Infanterie-Division
+U58;Inf;185. Infanterie-Division
+U58;Inf;189. Infanterie-Division
+U58;Inf;192. Infanterie-Division
+U58;Inf;148. Infanterie-Division
+U58;Inf;159. Infanterie-Division
+U58;Inf;176. Infanterie-Division
+U58;Inf;180. Infanterie-Division
+U58;Inf;190. Infanterie-Division
+U58;Inf;203. Infanterie-Division
+U58;Inf;237. Infanterie-Division
+U58;Inf;286. Infanterie-Division
+U58;Inf;301. Infanterie-Division
+U58;Inf;462. Infanterie-Division
+U58;Inf;469. Infanterie-Division
+U58;Inf;539. Infanterie-Division
+U58;Inf;542. Infanterie-Division
+U58;Inf;560. Infanterie-Division
+U58;Inf;600. Russische Infanterie-Div.
+U58;Inf;141. Infanterie-Division
+U58;Inf;154. Infanterie-Division
+U58;Inf;155. Infanterie-Division
+U58;Inf;156. Infanterie-Division
+U58;Inf;158. Infanterie-Division
+U58;Inf;650. Russische Infanterie-Div.
+U58;Inf;160. Infanterie-Division
+U58;Inf;166. Infanterie-Division
+U58;Inf;182. Infanterie-Division
+U58;Inf;219. Infanterie-Division
+U58;Inf;226. Infanterie-Division
+U58;Inf;232. Infanterie-Division
+U58;Inf;236. Infanterie-Division
+U58;Inf;249. Infanterie-Division
+U58;Inf;281. Infanterie-Division
+U58;Inf;303. Infanterie-Division
+U58;Inf;309. Infanterie-Division
+U58;Inf;324. Infanterie-Division
+U58;Inf;Infanterie-Div. 'Jütland'
+U58;Inf;Infanterie-Div. 'Woldenberg'
+U58;Inf;Infanterie-Div. 'Mielau'
+U58;Inf;Infanterie-Div. 'Döberitz'
+U58;Inf;Infanterie-Div. 'Berlin'
+U58;Inf;Infanterie-Div. 'Hamburg'
+U58;Inf;703. Infanterie-Division
+U58;Inf;719. Infanterie-Division
+U58;Inf;Infanterie-Div. 'Potsdam'
+U58;Inf;Infanterie-Div. 'Scharnhorst'
+U58;Inf;Infanterie-Div. 'Ulrich v. Hutten'
+U58;Inf;Infanterie-Div. 'Ferdinand v. Schill'
+U58;Inf;Infanterie-Div. 'Ostpreußen'
+U58;Inf;827. Infanterie-Division
+U58;Inf;Infanterie-Div. 'Böhmen'
+U58;Inf;Infanterie-Div. 'Breslau'
+U58;Inf;Infanterie-Div. 'Demba'
+U58;Inf;Infanterie-Div. 'Döllersheim'
+U58;Inf;Infanterie-Div. 'Dresden'
+U58;Inf;Infanterie-Div. 'Donau'
+U58;Inf;Infanterie-Div. 'Fried. L. Jahn'
+U58;Inf;Infanterie-Div. 'Generalgouvernement'
+U58;Inf;Infanterie-Div. 'Grafenwöhr'
+U58;Inf;Infanterie-Div. 'Groß Born'
+U58;Inf;Infanterie-Div. 'Güstrow'
+U58;Inf;Infanterie-Div. 'Hamburg'
+U58;Inf;Infanterie-Div. 'Hannover'
+U58;Inf;Infanterie-Div. 'Kurland'
+U58;Inf;Infanterie-Div. 'Mähren'
+U58;Inf;Infanterie-Div. 'Münsingen'
+U58;Inf;Infanterie-Div. 'Neuhammer'
+U58;Inf;Infanterie-Div. 'Schlesien'
+U58;Inf;Infanterie-Div. 'Seeland'
+U58;Inf;Infanterie-Div. 'Wahn'
+U58;Inf;Infanterie-Div. 'Wildflecken'
+U58;Gar;52. Sicherungs-Division
+U58;Gar;201. Sicherungs-Division
+U58;Gar;203. Sicherungs-Division
+U58;Gar;207. Sicherungs-Division
+U58;Gar;213. Sicherungs-Division
+U58;Gar;141. Reserve-Division
+U58;Gar;221. Sicherungs-Division
+U58;Gar;143. Reserve-Division
+U58;Gar;281. Sicherungs-Division
+U58;Gar;285. Sicherungs-Division
+U58;Gar;147. Reserve-Division
+U58;Gar;286. Sicherungs-Division
+U58;Gar;325. Sicherungs-Division
+U58;Gar;400. Ersatz-Division
+U58;Gar;390. Sicherungs-Division
+U58;Gar;391. Sicherungs-Division
+U58;Gar;148. Reserve-Division
+U58;Gar;403. Sicherungs-Division
+U58;Gar;444. Sicherungs-Division
+U58;Gar;151. Reserve-Division
+U58;Gar;454. Sicherungs-Division
+U58;Gar;41. Festungs-Division
+U58;Gar;717. Sicherungs-Division
+U58;Gar;133. Festungs-Division
+U58;Gar;718. Sicherungs-Division
+U58;Gar;153. Reserve-Division
+U58;Gar;719. Sicherungs-Division
+U58;Gar;402. Ausbildungs-Division
+U58;Gar;720. Sicherungs-Division
+U58;Gar;721. Sicherungs-Division
+U58;Gar;154. Reserve-Division
+U58;Gar;722. Sicherungs-Division
+U58;Gar;723. Sicherungs-Division
+U58;Gar;724. Sicherungs-Division
+U58;Gar;156. Reserve-Division
+U58;Gar;725. Sicherungs-Division
+U58;Gar;726. Sicherungs-Division
+U58;Gar;157. Reserve-Division
+U58;Gar;727. Sicherungs-Division
+U58;Gar;158. Reserve-Division
+U58;Gar;159. Reserve-Division
+U58;Gar;856. Sicherungs-Division
+U58;Gar;859. Sicherungs-Division
+U58;Gar;160. Reserve-Division
+U58;Gar;877. Sicherungs-Division
+U58;Gar;735. Sicherungs-Division
+U58;Gar;165. Reserve-Division
+U58;Gar;812. Sicherungs-Division
+U58;Gar;895. Sicherungs-Division
+U58;Gar;166. Reserve-Division
+U58;Gar;742. Sicherungs-Division
+U58;Gar;171. Reserve-Division
+U58;Gar;785. Sicherungs-Division
+U58;Gar;172. Reserve-Division
+U58;Gar;173. Reserve-Division
+U58;Gar;182. Reserve-Division
+U58;Gar;188. Reserve-Gebirgs-Division
+U58;Gar;160. Infanterie-Division
+U58;Gar;166. Infanterie-Division
+U58;Gar;182. Infanterie-Division
+U58;Gar;219. Infanterie-Division
+U58;Gar;226. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Jütland'
+U58;Gar;232. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Woldenberg'
+U58;Gar;236. Infanterie-Division
+U58;Gar;249. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Mielau'
+U58;Gar;281. Infanterie-Division
+U58;Gar;303. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Döberitz'
+U58;Gar;309. Infanterie-Division
+U58;Gar;324. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Berlin'
+U58;Gar;Infanterie-Div. 'Hamburg'
+U58;Gar;703. Infanterie-Division
+U58;Gar;719. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Potsdam'
+U58;Gar;Infanterie-Div. 'Scharnhorst'
+U58;Gar;Infanterie-Div. 'Ulrich v. Hutten'
+U58;Gar;Infanterie-Div. 'Ferdinand v. Schill'
+U58;Gar;Infanterie-Div. 'Ostpreußen'
+U58;Gar;827. Infanterie-Division
+U58;Gar;Infanterie-Div. 'Böhmen'
+U58;Gar;Infanterie-Div. 'Breslau'
+U58;Gar;Infanterie-Div. 'Demba'
+U58;Gar;Infanterie-Div. 'Döllersheim'
+U58;Gar;Infanterie-Div. 'Dresden'
+U58;Gar;Infanterie-Div. 'Donau'
+U58;Gar;Infanterie-Div. 'Fried. L. Jahn'
+U58;Gar;Infanterie-Div. 'Generalgouvernement'
+U58;Gar;Infanterie-Div. 'Grafenwöhr'
+U58;Gar;Infanterie-Div. 'Groß Born'
+U58;Gar;Infanterie-Div. 'Güstrow'
+U58;Gar;Infanterie-Div. 'Hamburg'
+U58;Gar;Infanterie-Div. 'Hannover'
+U58;Gar;Infanterie-Div. 'Kurland'
+U58;Gar;Infanterie-Div. 'Mähren'
+U58;Gar;Infanterie-Div. 'Münsingen'
+U58;Gar;Infanterie-Div. 'Neuhammer'
+U58;Gar;Infanterie-Div. 'Schlesien'
+U58;Gar;Infanterie-Div. 'Seeland'
+U58;Gar;Infanterie-Div. 'Wahn'
+U58;Gar;Infanterie-Div. 'Wildflecken'
+U58;Cav;1. Kavallerie-Division
+U58;Cav;8. SS-Kav.Div. 'Florian Geyer'
+U58;Cav;1. Kossaken-Kavallerie-Division
+U58;Cav;22. SS-Kav.Div. 'Maria Theresia'
+U58;Cav;2. Kossaken-Kavallerie-Division
+U58;Cav;3. Kavallerie-Division
+U58;Cav;37. SS-Freiw.Kav.Div. 'Lützow'
+U58;Cav;4. Kavallerie-Division
+U58;Cav;5. Kavallerie-Division
+U58;Cav;6. Kavallerie-Division
+U58;Cav;7. Kavallerie-Division
+U58;Cav;8. Kavallerie-Division
+U58;Cav;9. Kavallerie-Division
+U58;Cav;10. Kavallerie-Division
+U58;Cav;11. Kavallerie-Division
+U58;Cav;12. Kavallerie-Division
+U58;Cav;13. Kavallerie-Division
+U58;Cav;14. Kavallerie-Division
+U58;Cav;15. Kavallerie-Division
+U58;Cav;16. Kavallerie-Division
+U58;Cav;17. Kavallerie-Division
+U58;Cav;18. Kavallerie-Division
+U58;Cav;19. Kavallerie-Division
+U58;Cav;20. Kavallerie-Division
+U58;Mot;2. Infanterie-Division (mot)
+U58;Mot;3. Infanterie-Division (mot)
+U58;Mot;13. Infanterie-Division (mot)
+U58;Mot;20. Infanterie-Division (mot)
+U58;Mot;29. Infanterie-Division (mot)
+U58;Mot;60. Infanterie-Division (mot)
+U58;Mot;36. Infanterie-Division (mot)
+U58;Mot;10. Infanterie-Division (mot)
+U58;Mot;14. Infanterie-Division (mot)
+U58;Mot;16. Infanterie-Division (mot)
+U58;Mot;18. Infanterie-Division (mot)
+U58;Mot;25. Infanterie-Division (mot)
+U58;Mot;345. Infanterie-Division (mot)
+U58;Mot;386. Infanterie-Division (mot)
+U58;Mot;1. Infanterie-Division
+U58;Mot;5. Infanterie-Division
+U58;Mot;6. Infanterie-Division
+U58;Mot;7. Infanterie-Division
+U58;Mot;8. Infanterie-Division
+U58;Mot;9. Infanterie-Division
+U58;Mot;10. Infanterie-Division
+U58;Mot;11. Infanterie-Division
+U58;Mot;12. Infanterie-Division
+U58;Mot;15. Infanterie-Division
+U58;Mot;17. Infanterie-Division
+U58;Mot;18. Infanterie-Division
+U58;Mot;21. Infanterie-Division
+U58;Mot;23. Infanterie-Division
+U58;Mot;24. Infanterie-Division
+U58;Mot;25. Infanterie-Division
+U58;Mot;26. Infanterie-Division
+U58;Mot;28. Infanterie-Division
+U58;Mot;30. Infanterie-Division
+U58;Mot;31. Infanterie-Division
+U58;Mot;32. Infanterie-Division
+U58;Mot;34. Infanterie-Division
+U58;Mot;35. Infanterie-Division
+U58;Mot;36. Infanterie-Division
+U58;Mot;44. Infanterie-Division
+U58;Mot;45. Infanterie-Division
+U58;Mot;46. Infanterie-Division
+U58;Mot;50. Infanterie-Division
+U58;Mot;52. Infanterie-Division
+U58;Mot;56. Infanterie-Division
+U58;Mot;57. Infanterie-Division
+U58;Mot;58. Infanterie-Division
+U58;Mot;60. Infanterie-Division
+U58;Mot;61. Infanterie-Division
+U58;Mot;62. Infanterie-Division
+U58;Mot;68. Infanterie-Division
+U58;Mot;69. Infanterie-Division
+U58;Mot;71. Infanterie-Division
+U58;Mot;72. Infanterie-Division
+U58;Mot;73. Infanterie-Division
+U58;Mot;75. Infanterie-Division
+U58;Mot;76. Infanterie-Division
+U58;Mot;78. Infanterie-Division
+U58;Mot;79. Infanterie-Division
+U58;Mot;81. Infanterie-Division
+U58;Mot;82. Infanterie-Division
+U58;Mot;83. Infanterie-Division
+U58;Mot;86. Infanterie-Division
+U58;Mot;87. Infanterie-Division
+U58;Mot;88. Infanterie-Division
+U58;Mot;93. Infanterie-Division
+U58;Mot;94. Infanterie-Division
+U58;Mot;95. Infanterie-Division
+U58;Mot;96. Infanterie-Division
+U58;Mot;98. Infanterie-Division
+U58;Mot;143. Infanterie-Division
+U58;Mot;161. Infanterie-Division
+U58;Mot;162. Infanterie-Division
+U58;Mot;163. Infanterie-Division
+U58;Mot;164. Infanterie-Division
+U58;Mot;167. Infanterie-Division
+U58;Mot;168. Infanterie-Division
+U58;Mot;169. Infanterie-Division
+U58;Mot;170. Infanterie-Division
+U58;Mot;181. Infanterie-Division
+U58;Mot;183. Infanterie-Division
+U58;Mot;196. Infanterie-Division
+U58;Mot;197. Infanterie-Division
+U58;Mot;206. Infanterie-Division
+U58;Mot;207. Infanterie-Division
+U58;Mot;208. Infanterie-Division
+U58;Mot;209. Infanterie-Division
+U58;Mot;211. Infanterie-Division
+U58;Mot;212. Infanterie-Division
+U58;Mot;213. Infanterie-Division
+U58;Mot;214. Infanterie-Division
+U58;Mot;215. Infanterie-Division
+U58;Mot;216. Infanterie-Division
+U58;Mot;217. Infanterie-Division
+U58;Mot;218. Infanterie-Division
+U58;Mot;221. Infanterie-Division
+U58;Mot;223. Infanterie-Division
+U58;Mot;225. Infanterie-Division
+U58;Mot;227. Infanterie-Division
+U58;Mot;228. Infanterie-Division
+U58;Mot;231. Infanterie-Division
+U58;Mot;239. Infanterie-Division
+U58;Mot;246. Infanterie-Division
+U58;Mot;251. Infanterie-Division
+U58;Mot;252. Infanterie-Division
+U58;Mot;253. Infanterie-Division
+U58;Mot;254. Infanterie-Division
+U58;Mot;255. Infanterie-Division
+U58;Mot;256. Infanterie-Division
+U58;Mot;257. Infanterie-Division
+U58;Mot;258. Infanterie-Division
+U58;Mot;260. Infanterie-Division
+U58;Mot;262. Infanterie-Division
+U58;Mot;263. Infanterie-Division
+U58;Mot;267. Infanterie-Division
+U58;Mot;14. Galizische SS-Freiw.-Div.
+U58;Mot;15. Lettische SS-Freiw.-Div.
+U58;Mot;20. Estische SS-Freiw.-Div.
+U58;Mot;19. Lettische SS-Freiw.-Div.
+U58;Mot;29. Italien. Waffen-Div. d. SS
+U58;Mot;30. SS-Freiw. Div. 'Walküre'
+U58;Mot;31. SS-Freiwilligen-Grenadier-Div.
+U58;Mot;25. Waffen-Gr.Div. d. SS 'Hunyadi'
+U58;Mot;26. Waffen-Gr.Div. d. SS 'Hungaria'
+U58;Mot;27. SS-Freiw.-Div. 'Langemark'
+U58;Mot;28. SS-Freiw.-Div. 'Wallonien'
+U58;Mot;33. Waffen-Gr.Div. d. SS 'Charlemagne'
+U58;Mot;32. SS-Freiw.Div. '30. Januar'
+U58;Mot;34. SS-Freiw.Div. 'Landstorm Nederland'
+U58;Mot;35. SS-Polizei-Grenadier-Div.
+U58;Mot;36. SS-Gren. Div. 'Wotan'
+U58;Mot;38. SS-Grenadier-Div. 'Nibelungen'
+U58;Mot;Führer-Grenadier-Division
+U58;Mot;463. Infanterie-Division (mot)
+U58;Mot;464. Infanterie-Division (mot)
+U58;Mot;465. Infanterie-Division (mot)
+U58;Mot;466. Infanterie-Division (mot)
+U58;Mot;468. Infanterie-Division (mot)
+U58;Mot;470. Infanterie-Division (mot)
+U58;Mot;471. Infanterie-Division (mot)
+U58;Mot;472. Infanterie-Division (mot)
+U58;Mot;473. Infanterie-Division (mot)
+U58;Mot;474. Infanterie-Division (mot)
+U58;Mot;475. Infanterie-Division (mot)
+U58;Mot;476. Infanterie-Division (mot)
+U58;Mot;477. Infanterie-Division (mot)
+U58;Mot;478. Infanterie-Division (mot)
+U58;Mot;479. Infanterie-Division (mot)
+U58;Mot;480. Infanterie-Division (mot)
+U58;Mot;481. Infanterie-Division (mot)
+U58;Mot;482. Infanterie-Division (mot)
+U58;Mot;483. Infanterie-Division (mot)
+U58;Mot;484. Infanterie-Division (mot)
+U58;Mot;485. Infanterie-Division (mot)
+U58;Mot;486. Infanterie-Division (mot)
+U58;Mot;487. Infanterie-Division (mot)
+U58;Mot;242. Infanterie-Division (mot)
+U58;Mot;243. Infanterie-Division (mot)
+U58;Mot;244. Infanterie-Division (mot)
+U58;Mot;245. Infanterie-Division (mot)
+U58;Mot;264. Infanterie-Division (mot)
+U58;Mot;265. Infanterie-Division (mot)
+U58;Mot;Division 'Hermann Göring'
+U58;Mot;Sturm-Division Rhodos
+U58;Mot;266. Infanterie-Division (mot)
+U58;Mot;271. Infanterie-Division (mot)
+U58;Mot;274. Infanterie-Division (mot)
+U58;Mot;275. Infanterie-Division (mot)
+U58;Mot;276. Infanterie-Division (mot)
+U58;Mot;277. Infanterie-Division (mot)
+U58;Mot;282. Infanterie-Division (mot)
+U58;Mot;352. Infanterie-Division (mot)
+U58;Mot;353. Infanterie-Division (mot)
+U58;Mot;355. Infanterie-Division (mot)
+U58;Mot;356. Infanterie-Division (mot)
+U58;Mot;357. Infanterie-Division (mot)
+U58;Mot;359. Infanterie-Division (mot)
+U58;Mot;361. Infanterie-Division (mot)
+U58;Mot;362. Infanterie-Division (mot)
+U58;Mot;363. Infanterie-Division (mot)
+U58;Mot;364. Infanterie-Division (mot)
+U58;Mot;367. Infanterie-Division (mot)
+U58;Mot;540. Infanterie-Division (mot)
+U58;Mot;Infanterie-Div. 'Milowitz'
+U58;Mot;48. Infanterie-Division (mot)
+U58;Mot;49. Infanterie-Division (mot)
+U58;Mot;59. Infanterie-Division (mot)
+U58;Mot;64. Infanterie-Division (mot)
+U58;Mot;170. Infanterie-Division (mot)
+U58;Mot;177. Infanterie-Division (mot)
+U58;Mot;184. Infanterie-Division (mot)
+U58;Mot;185. Infanterie-Division (mot)
+U58;Mot;189. Infanterie-Division (mot)
+U58;Mot;192. Infanterie-Division (mot)
+U58;Mot;148. Infanterie-Division (mot)
+U58;Mot;159. Infanterie-Division (mot)
+U58;Mot;176. Infanterie-Division (mot)
+U58;Mot;180. Infanterie-Division (mot)
+U58;Mot;190. Infanterie-Division (mot)
+U58;Mot;203. Infanterie-Division (mot)
+U58;Mot;237. Infanterie-Division (mot)
+U58;Mot;286. Infanterie-Division (mot)
+U58;Mot;301. Infanterie-Division (mot)
+U58;Mot;462. Infanterie-Division (mot)
+U58;Mot;469. Infanterie-Division (mot)
+U58;Mot;539. Infanterie-Division (mot)
+U58;Mot;542. Infanterie-Division (mot)
+U58;Mot;560. Infanterie-Division (mot)
+U58;Mot;600. Russische Infanterie-Div.
+U58;Mot;141. Infanterie-Division (mot)
+U58;Mot;154. Infanterie-Division (mot)
+U58;Mot;155. Infanterie-Division (mot)
+U58;Mot;156. Infanterie-Division (mot)
+U58;Mot;Marine-Division 'Gotenhafen'
+U58;Mot;158. Infanterie-Division (mot)
+U58;Mot;650. Russische Infanterie-Div.
+U58;Mot;160. Infanterie-Division (mot)
+U58;Mot;166. Infanterie-Division (mot)
+U58;Mot;182. Infanterie-Division (mot)
+U58;Mot;219. Infanterie-Division (mot)
+U58;Mot;226. Infanterie-Division (mot)
+U58;Mot;232. Infanterie-Division (mot)
+U58;Mot;236. Infanterie-Division (mot)
+U58;Mot;249. Infanterie-Division (mot)
+U58;Mot;281. Infanterie-Division (mot)
+U58;Mot;303. Infanterie-Division (mot)
+U58;Mot;309. Infanterie-Division (mot)
+U58;Mot;324. Infanterie-Division (mot)
+U58;Mot;Infanterie-Div. 'Jütland'
+U58;Mot;Infanterie-Div. 'Woldenberg'
+U58;Mot;Infanterie-Div. 'Mielau'
+U58;Mot;Infanterie-Div. 'Döberitz'
+U58;Mot;Infanterie-Div. 'Berlin'
+U58;Mot;Infanterie-Div. 'Hamburg'
+U58;Mot;703. Infanterie-Division (mot)
+U58;Mot;719. Infanterie-Division (mot)
+U58;Mot;Infanterie-Div. 'Potsdam'
+U58;Mot;Infanterie-Div. 'Scharnhorst'
+U58;Mot;Infanterie-Div. 'Ulrich v. Hutten'
+U58;Mot;Infanterie-Div. 'Ferdinand v. Schill'
+U58;Mot;Infanterie-Div. 'Ostpreußen'
+U58;Mot;827. Infanterie-Division (mot)
+U58;Mot;Infanterie-Div. 'Böhmen'
+U58;Mot;Infanterie-Div. 'Breslau'
+U58;Mot;Infanterie-Div. 'Demba'
+U58;Mot;Infanterie-Div. 'Döllersheim'
+U58;Mot;Infanterie-Div. 'Dresden'
+U58;Mot;Infanterie-Div. 'Donau'
+U58;Mot;Infanterie-Div. 'Fried. L. Jahn'
+U58;Mot;Infanterie-Div. 'Generalgouvernement'
+U58;Mot;Infanterie-Div. 'Grafenwöhr'
+U58;Mot;Infanterie-Div. 'Groß Born'
+U58;Mot;Infanterie-Div. 'Güstrow'
+U58;Mot;Infanterie-Div. 'Hamburg'
+U58;Mot;Infanterie-Div. 'Hannover'
+U58;Mot;Infanterie-Div. 'Kurland'
+U58;Mot;Infanterie-Div. 'Mähren'
+U58;Mot;Infanterie-Div. 'Münsingen'
+U58;Mot;Infanterie-Div. 'Neuhammer'
+U58;Mot;Infanterie-Div. 'Schlesien'
+U58;Mot;Infanterie-Div. 'Seeland'
+U58;Mot;Infanterie-Div. 'Wahn'
+U58;Mot;Infanterie-Div. 'Wildflecken'
+U58;Mec;1. Pz.Gr. SS-Leibst. Adolf Hitler
+U58;Mec;16. Panzergrenadier-Division
+U58;Mec;233. Panzergrenadier-Division
+U58;Mec;11. SS-Pz.Gr.Freiw.Div. 'Nordland'
+U58;Mec;3. Panzergrenadier-Division
+U58;Mec;Pz.Gren.-Div. 'Großdeutschland'
+U58;Mec;29. Panzergrenadier-Division
+U58;Mec;10. Panzergrenadier-Division
+U58;Mec;18. Panzergrenadier-Division
+U58;Mec;25. Panzergrenadier-Division
+U58;Mec;15. Panzergrenadier-Division
+U58;Mec;90. Panzergrenadier-Division
+U58;Mec;20. Panzergrenadier-Division
+U58;Mec;16. SS-Pz.Gr.Div. 'Reichsführer SS'
+U58;Mec;17. SS-Pz.Gr.Div. 'Götz Berlichingen'
+U58;Mec;18. SS-Pz.Gr.Div. 'Horst Wessel'
+U58;Mec;Panzergrenadier-Div. 'Brandenburg'
+U58;Mec;28. SS-Freiw.Pz.Gr.Div. 'Wallonien'
+U58;Mec;23. SS-Freiw.Pz.Gr.Div. 'Nederland'
+U58;Mec;40. SS-Freiw.Pz.Gr.Div. 'Feldhernhalle'
+U58;Mec;41. Waffen-Pz.Gr.Div. d. SS 'Kalevala'
+U58;Mec;42. SS-Pz.Gr.Div. 'Niedersachsen'
+U58;Mec;43. SS-Pz.Gr.Div. 'Reichsmarschall'
+U58;Mec;44. SS-Pz.Gr.Div. 'Wallenstein'
+U58;Mec;45. SS-Pz.Gr.Div. 'Waräger'
+U58;Mec;46. SS-Pz.Gr.Div. 'Walhalla'
+U58;Mec;488. Panzergrenadier-Division
+U58;Mec;489. Panzergrenadier-Division
+U58;Mec;490. Panzergrenadier-Division
+U58;Mec;491. Panzergrenadier-Division
+U58;Mec;492. Panzergrenadier-Division
+U58;Mec;493. Panzergrenadier-Division
+U58;Mec;494. Panzergrenadier-Division
+U58;Mec;495. Panzergrenadier-Division
+U58;Mec;496. Panzergrenadier-Division
+U58;Mec;497. Panzergrenadier-Division
+U58;Mec;498. Panzergrenadier-Division
+U58;Mec;499. Panzergrenadier-Division
+U58;Mec;500. Panzergrenadier-Division
+U58;Mec;501. Panzergrenadier-Division
+U58;Mec;502. Panzergrenadier-Division
+U58;Mec;503. Panzergrenadier-Division
+U58;Mec;504. Panzergrenadier-Division
+U58;Mec;505. Panzergrenadier-Division
+U58;Mec;506. Panzergrenadier-Division
+U58;Mec;507. Panzergrenadier-Division
+U58;Mec;508. Panzergrenadier-Division
+U58;Mec;509. Panzergrenadier-Division
+U58;Mec;510. Panzergrenadier-Division
+U58;Mec;511. Panzergrenadier-Division
+U58;Mec;512. Panzergrenadier-Division
+U58;Mec;513. Panzergrenadier-Division
+U58;Mec;514. Panzergrenadier-Division
+U58;Mec;515. Panzergrenadier-Division
+U58;Mec;516. Panzergrenadier-Division
+U58;Mec;517. Panzergrenadier-Division
+U58;Mec;518. Panzergrenadier-Division
+U58;Mec;519. Panzergrenadier-Division
+U58;Mec;520. Panzergrenadier-Division
+U58;Mec;522. Panzergrenadier-Division
+U58;Mec;523. Panzergrenadier-Division
+U58;Mec;524. Panzergrenadier-Division
+U58;Mec;525. Panzergrenadier-Division
+U58;Mec;242. Panzergrenadier-Division
+U58;Mec;243. Panzergrenadier-Division
+U58;Mec;244. Panzergrenadier-Division
+U58;Mec;245. Panzergrenadier-Division
+U58;Mec;264. Panzergrenadier-Division
+U58;Mec;265. Panzergrenadier-Division
+U58;Mec;266. Panzergrenadier-Division
+U58;Mec;271. Panzergrenadier-Division
+U58;Mec;274. Panzergrenadier-Division
+U58;Mec;275. Panzergrenadier-Division
+U58;Mec;276. Panzergrenadier-Division
+U58;Mec;277. Panzergrenadier-Division
+U58;Mec;282. Panzergrenadier-Division
+U58;Mec;352. Panzergrenadier-Division
+U58;Mec;353. Panzergrenadier-Division
+U58;Mec;355. Panzergrenadier-Division
+U58;Mec;356. Panzergrenadier-Division
+U58;Mec;357. Panzergrenadier-Division
+U58;Mec;359. Panzergrenadier-Division
+U58;Mec;361. Panzergrenadier-Division
+U58;Mec;362. Panzergrenadier-Division
+U58;Mec;363. Panzergrenadier-Division
+U58;Mec;364. Panzergrenadier-Division
+U58;Mec;367. Panzergrenadier-Division
+U58;Mec;540. Panzergrenadier-Division
+U58;Mec;Infanterie-Div. 'Milowitz'
+U58;Mec;48. Panzergrenadier-Division
+U58;Mec;49. Panzergrenadier-Division
+U58;Mec;59. Panzergrenadier-Division
+U58;Mec;64. Panzergrenadier-Division
+U58;Mec;Division 'Hermann Göring'
+U58;Mec;Sturm-Division Rhodos
+U58;Mec;170. Panzergrenadier-Division
+U58;Mec;177. Panzergrenadier-Division
+U58;Mec;184. Panzergrenadier-Division
+U58;Mec;185. Panzergrenadier-Division
+U58;Mec;189. Panzergrenadier-Division
+U58;Mec;192. Panzergrenadier-Division
+U58;Mec;148. Panzergrenadier-Division
+U58;Mec;159. Panzergrenadier-Division
+U58;Mec;176. Panzergrenadier-Division
+U58;Mec;180. Panzergrenadier-Division
+U58;Mec;190. Panzergrenadier-Division
+U58;Mec;203. Panzergrenadier-Division
+U58;Mec;237. Panzergrenadier-Division
+U58;Mec;286. Panzergrenadier-Division
+U58;Mec;301. Panzergrenadier-Division
+U58;Mec;462. Panzergrenadier-Division
+U58;Mec;469. Panzergrenadier-Division
+U58;Mec;539. Panzergrenadier-Division
+U58;Mec;542. Panzergrenadier-Division
+U58;Mec;560. Panzergrenadier-Division
+U58;Mec;600. Russische Infanterie-Div.
+U58;Mec;141. Panzergrenadier-Division
+U58;Mec;154. Panzergrenadier-Division
+U58;Mec;155. Panzergrenadier-Division
+U58;Mec;156. Panzergrenadier-Division
+U58;Mec;Marine-Division 'Gotenhafen'
+U58;Mec;650. Russische Infanterie-Div.
+U58;Mec;160. Panzergrenadier-Division
+U58;Mec;166. Panzergrenadier-Division
+U58;Mec;182. Panzergrenadier-Division
+U58;Mec;219. Panzergrenadier-Division
+U58;Mec;226. Panzergrenadier-Division
+U58;Mec;232. Panzergrenadier-Division
+U58;Mec;236. Panzergrenadier-Division
+U58;Mec;249. Panzergrenadier-Division
+U58;Mec;281. Panzergrenadier-Division
+U58;Mec;303. Panzergrenadier-Division
+U58;Mec;309. Panzergrenadier-Division
+U58;Mec;324. Panzergrenadier-Division
+U58;Mec;Infanterie-Div. 'Jütland'
+U58;Mec;Infanterie-Div. 'Woldenberg'
+U58;Mec;Infanterie-Div. 'Mielau'
+U58;Mec;Infanterie-Div. 'Döberitz'
+U58;Mec;Infanterie-Div. 'Berlin'
+U58;Mec;Infanterie-Div. 'Hamburg'
+U58;Mec;703. Panzergrenadier-Division
+U58;Mec;719. Panzergrenadier-Division
+U58;Mec;Infanterie-Div. 'Potsdam'
+U58;Mec;Infanterie-Div. 'Scharnhorst'
+U58;Mec;Infanterie-Div. 'Ulrich v. Hutten'
+U58;Mec;Infanterie-Div. 'Ferdinand v. Schill'
+U58;Mec;Infanterie-Div. 'Ostpreußen'
+U58;Mec;827. Panzergrenadier-Division
+U58;Mec;Infanterie-Div. 'Böhmen'
+U58;Mec;Infanterie-Div. 'Breslau'
+U58;Mec;Infanterie-Div. 'Demba'
+U58;Mec;Infanterie-Div. 'Döllersheim'
+U58;Mec;Infanterie-Div. 'Dresden'
+U58;Mec;Infanterie-Div. 'Donau'
+U58;Mec;Infanterie-Div. 'Fried. L. Jahn'
+U58;Mec;Infanterie-Div. 'Generalgouvernement'
+U58;Mec;Infanterie-Div. 'Grafenwöhr'
+U58;Mec;Infanterie-Div. 'Groß Born'
+U58;Mec;Infanterie-Div. 'Güstrow'
+U58;Mec;Infanterie-Div. 'Hamburg'
+U58;Mec;Infanterie-Div. 'Hannover'
+U58;Mec;Infanterie-Div. 'Kurland'
+U58;Mec;Infanterie-Div. 'Mähren'
+U58;Mec;Infanterie-Div. 'Münsingen'
+U58;Mec;Infanterie-Div. 'Neuhammer'
+U58;Mec;Infanterie-Div. 'Schlesien'
+U58;Mec;Infanterie-Div. 'Seeland'
+U58;Mec;Infanterie-Div. 'Wahn'
+U58;Mec;Infanterie-Div. 'Wildflecken'
+U58;Mec;15. Waffen Gr. SS (1st Latvian)
+U58;Mec;19. Waffen Gr. SS (2nd Latvian)
+U58;Mec;20. Waffen Gr. SS (1st Estonian)
+U58;L ARM;1. Panzer-Division
+U58;L ARM;2. Panzer-Division
+U58;L ARM;3. Panzer-Division
+U58;L ARM;4. Panzer-Division
+U58;L ARM;5. Panzer-Division
+U58;L ARM;10. Panzer-Division
+U58;L ARM;6. Panzer-Division
+U58;L ARM;7. Panzer-Division
+U58;L ARM;8. Panzer-Division
+U58;L ARM;9. Panzer-Division
+U58;L ARM;11. Panzer-Division
+U58;L ARM;14. Panzer-Division
+U58;L ARM;12. Panzer-Division
+U58;L ARM;13. Panzer-Division
+U58;L ARM;15. Panzer-Division
+U58;L ARM;16. Panzer-Division
+U58;L ARM;17. Panzer-Division
+U58;L ARM;18. Panzer-Division
+U58;L ARM;19. Panzer-Division
+U58;L ARM;20. Panzer-Division
+U58;L ARM;21. Panzer-Division
+U58;L ARM;22. Panzer-Division
+U58;L ARM;Fallschirm Pz-Div. 'Hermann Göring'
+U58;L ARM;23. Panzer-Division
+U58;L ARM;24. Panzer-Division
+U58;L ARM;25. Panzer-Division
+U58;L ARM;26. Panzer-Division
+U58;L ARM;27. Panzer-Division
+U58;L ARM;178. Reserve-Panzer-Division
+U58;L ARM;179. Reserve-Panzer-Division
+U58;L ARM;155. Reserve-Panzer-Division
+U58;L ARM;233. Reserve-Panzer-Division
+U58;L ARM;130. Panzer-Lehr-Division
+U58;L ARM;Panzer-Division 'Norwegen'
+U58;L ARM;116. Panzer-Division
+U58;L ARM;Panzer-Division 'Tatra'
+U58;L ARM;Panzer-Division 'Feldherrnhalle'
+U58;L ARM;232. Panzer-Division
+U58;L ARM;Panzer-Division 'Clausewitz'
+U58;L ARM;Panzer-Division 'Schlesien'
+U58;L ARM;Panzer-Division 'Holstein'
+U58;L ARM;Panzer-Division 'Juterbog'
+U58;L ARM;Panzer-Division 'Kurmark'
+U58;L ARM;Panzer-Division 'Muncheberg'
+U58;L ARM;Panzer-Division 'Kempf'
+U58;L ARM;Panzer-Division 'Döberitz'
+U58;L ARM;28. Panzer-Division
+U58;L ARM;29. Panzer-Division
+U58;L ARM;30. Panzer-Division
+U58;L ARM;31. Panzer-Division
+U58;L ARM;32. Panzer-Division
+U58;L ARM;33. Panzer-Division
+U58;L ARM;34. Panzer-Division
+U58;L ARM;35. Panzer-Division
+U58;L ARM;36. Panzer-Division
+U58;L ARM;37. Panzer-Division
+U58;L ARM;38. Panzer-Division
+U58;L ARM;39. Panzer-Division
+U58;L ARM;40. Panzer-Division
+U58;L ARM;41. Panzer-Division
+U58;L ARM;42. Panzer-Division
+U58;L ARM;43. Panzer-Division
+U58;L ARM;44. Panzer-Division
+U58;L ARM;45. Panzer-Division
+U58;L ARM;46. Panzer-Division
+U58;L ARM;47. Panzer-Division
+U58;L ARM;48. Panzer-Division
+U58;L ARM;49. Panzer-Division
+U58;L ARM;50. Panzer-Division
+U58;L ARM;51. Panzer-Division
+U58;L ARM;52. Panzer-Division
+U58;L ARM;53. Panzer-Division
+U58;L ARM;54. Panzer-Division
+U58;L ARM;55. Panzer-Division
+U58;L ARM;56. Panzer-Division
+U58;L ARM;57. Panzer-Division
+U58;L ARM;58. Panzer-Division
+U58;L ARM;59. Panzer-Division
+U58;L ARM;60. Panzer-Division
+U58;L ARM;61. Panzer-Division
+U58;L ARM;62. Panzer-Division
+U58;L ARM;63. Panzer-Division
+U58;L ARM;64. Panzer-Division
+U58;L ARM;65. Panzer-Division
+U58;L ARM;66. Panzer-Division
+U58;L ARM;67. Panzer-Division
+U58;L ARM;68. Panzer-Division
+U58;L ARM;69. Panzer-Division
+U58;L ARM;70. Panzer-Division
+U58;L ARM;71. Panzer-Division
+U58;L ARM;72. Panzer-Division
+U58;L ARM;73. Panzer-Division
+U58;L ARM;74. Panzer-Division
+U58;L ARM;75. Panzer-Division
+U58;L ARM;76. Panzer-Division
+U58;L ARM;77. Panzer-Division
+U58;L ARM;78. Panzer-Division
+U58;L ARM;79. Panzer-Division
+U58;L ARM;80. Panzer-Division
+U58;L ARM;81. Panzer-Division
+U58;L ARM;82. Panzer-Division
+U58;L ARM;83. Panzer-Division
+U58;L ARM;84. Panzer-Division
+U58;L ARM;85. Panzer-Division
+U58;L ARM;86. Panzer-Division
+U58;L ARM;87. Panzer-Division
+U58;L ARM;88. Panzer-Division
+U58;L ARM;89. Panzer-Division
+U58;L ARM;90. Panzer-Division
+U58;L ARM;91. Panzer-Division
+U58;L ARM;92. Panzer-Division
+U58;L ARM;93. Panzer-Division
+U58;L ARM;94. Panzer-Division
+U58;L ARM;95. Panzer-Division
+U58;L ARM;96. Panzer-Division
+U58;L ARM;97. Panzer-Division
+U58;L ARM;98. Panzer-Division
+U58;L ARM;99. Panzer-Division
+U58;L ARM;100. Panzer-Division
+U58;Arm;1. Panzer-Division
+U58;Arm;2. Panzer-Division
+U58;Arm;3. Panzer-Division
+U58;Arm;4. Panzer-Division
+U58;Arm;5. Panzer-Division
+U58;Arm;10. Panzer-Division
+U58;Arm;6. Panzer-Division
+U58;Arm;2. SS-Panzer-Div. 'Das Reich'
+U58;Arm;7. Panzer-Division
+U58;Arm;8. Panzer-Division
+U58;Arm;3. SS-Panzer-Div. 'Totenkopf'
+U58;Arm;9. Panzer-Division
+U58;Arm;11. Panzer-Division
+U58;Arm;14. Panzer-Division
+U58;Arm;12. Panzer-Division
+U58;Arm;13. Panzer-Division
+U58;Arm;15. Panzer-Division
+U58;Arm;16. Panzer-Division
+U58;Arm;17. Panzer-Division
+U58;Arm;18. Panzer-Division
+U58;Arm;19. Panzer-Division
+U58;Arm;20. Panzer-Division
+U58;Arm;5. SS-Panzer-Div. 'Wiking'
+U58;Arm;1. SS-Leibstandarte Adolf Hitler
+U58;Arm;21. Panzer-Division
+U58;Arm;22. Panzer-Division
+U58;Arm;Fallschirm Pz-Div. 'Hermann Göring'
+U58;Arm;23. Panzer-Division
+U58;Arm;24. Panzer-Division
+U58;Arm;25. Panzer-Division
+U58;Arm;26. Panzer-Division
+U58;Arm;27. Panzer-Division
+U58;Arm;9. SS-Panzer-Div. 'Hohenstaufen'
+U58;Arm;10. SS-Panzer-Div. 'Frundsberg'
+U58;Arm;11. SS-Panzer-Div. 'Vorwärts'
+U58;Arm;12. SS-Panzer-Div. 'Hitlerjugend'
+U58;Arm;178. Reserve-Panzer-Division
+U58;Arm;179. Reserve-Panzer-Division
+U58;Arm;155. Reserve-Panzer-Division
+U58;Arm;233. Reserve-Panzer-Division
+U58;Arm;130. Panzer-Lehr-Division
+U58;Arm;Panzer-Division 'Norwegen'
+U58;Arm;116. Panzer-Division
+U58;Arm;Panzer-Division 'Tatra'
+U58;Arm;Panzer-Division 'Feldherrnhalle'
+U58;Arm;232. Panzer-Division
+U58;Arm;Panzer-Division 'Clausewitz'
+U58;Arm;Panzer-Division 'Schlesien'
+U58;Arm;Panzer-Division 'Holstein'
+U58;Arm;Panzer-Division 'Juterbog'
+U58;Arm;Panzer-Division 'Kurmark'
+U58;Arm;Panzer-Division 'Muncheberg'
+U58;Arm;Panzer-Division 'Kempf'
+U58;Arm;Panzer-Division 'Döberitz'
+U58;Arm;28. Panzer-Division
+U58;Arm;29. Panzer-Division
+U58;Arm;30. Panzer-Division
+U58;Arm;31. Panzer-Division
+U58;Arm;32. Panzer-Division
+U58;Arm;33. Panzer-Division
+U58;Arm;34. Panzer-Division
+U58;Arm;35. Panzer-Division
+U58;Arm;36. Panzer-Division
+U58;Arm;37. Panzer-Division
+U58;Arm;38. Panzer-Division
+U58;Arm;39. Panzer-Division
+U58;Arm;40. Panzer-Division
+U58;Arm;41. Panzer-Division
+U58;Arm;42. Panzer-Division
+U58;Arm;43. Panzer-Division
+U58;Arm;44. Panzer-Division
+U58;Arm;45. Panzer-Division
+U58;Arm;46. Panzer-Division
+U58;Arm;47. Panzer-Division
+U58;Arm;48. Panzer-Division
+U58;Arm;49. Panzer-Division
+U58;Arm;50. Panzer-Division
+U58;Arm;51. Panzer-Division
+U58;Arm;52. Panzer-Division
+U58;Arm;53. Panzer-Division
+U58;Arm;54. Panzer-Division
+U58;Arm;55. Panzer-Division
+U58;Arm;56. Panzer-Division
+U58;Arm;57. Panzer-Division
+U58;Arm;58. Panzer-Division
+U58;Arm;59. Panzer-Division
+U58;Arm;60. Panzer-Division
+U58;Arm;61. Panzer-Division
+U58;Arm;62. Panzer-Division
+U58;Arm;63. Panzer-Division
+U58;Arm;64. Panzer-Division
+U58;Arm;65. Panzer-Division
+U58;Arm;66. Panzer-Division
+U58;Arm;67. Panzer-Division
+U58;Arm;68. Panzer-Division
+U58;Arm;69. Panzer-Division
+U58;Arm;70. Panzer-Division
+U58;Arm;71. Panzer-Division
+U58;Arm;72. Panzer-Division
+U58;Arm;73. Panzer-Division
+U58;Arm;74. Panzer-Division
+U58;Arm;75. Panzer-Division
+U58;Arm;76. Panzer-Division
+U58;Arm;77. Panzer-Division
+U58;Arm;78. Panzer-Division
+U58;Arm;79. Panzer-Division
+U58;Arm;80. Panzer-Division
+U58;Arm;81. Panzer-Division
+U58;Arm;82. Panzer-Division
+U58;Arm;83. Panzer-Division
+U58;Arm;84. Panzer-Division
+U58;Arm;85. Panzer-Division
+U58;Arm;86. Panzer-Division
+U58;Arm;87. Panzer-Division
+U58;Arm;88. Panzer-Division
+U58;Arm;89. Panzer-Division
+U58;Arm;90. Panzer-Division
+U58;Arm;91. Panzer-Division
+U58;Arm;92. Panzer-Division
+U58;Arm;93. Panzer-Division
+U58;Arm;94. Panzer-Division
+U58;Arm;95. Panzer-Division
+U58;Arm;96. Panzer-Division
+U58;Arm;97. Panzer-Division
+U58;Arm;98. Panzer-Division
+U58;Arm;99. Panzer-Division
+U58;Arm;100. Panzer-Division
+U58;Par;7. Flieger-Division
+U58;Par;1. Fallschirmjäger-Division
+U58;Par;2. Fallschirmjäger-Division
+U58;Par;3. Fallschirmjäger-Division
+U58;Par;4. Fallschirmjäger-Division
+U58;Par;5. Fallschirmjäger-Division
+U58;Par;6. Fallschirmjäger-Division
+U58;Par;Fallschirm-Jäger-Div. 'Erdmann'
+U58;Par;7. Fallschirmjäger-Division
+U58;Par;9. Fallschirmjäger-Division
+U58;Par;Fall.-Jäger-Ausb.-u.Ersatz-Div.
+U58;Par;8. Fallschirmjäger-Division
+U58;Par;10. Fallschirmjäger-Division
+U58;Par;11. Fallschirmjäger-Division
+U58;Par;20. Fallschirmjäger-Division
+U58;Par;21. Fallschirmjäger-Division
+U58;Par;22. Fallschirmjäger-Division
+U58;Par;23. Fallschirmjäger-Division
+U58;Par;24. Fallschirmjäger-Division
+U58;Par;25. Fallschirmjäger-Division
+U58;Par;26. Fallschirmjäger-Division
+U58;Mar;1. Marine-Sturm-Division
+U58;Mar;2. Marine-Sturm-Division
+U58;Mar;3. Marine-Sturm-Division
+U58;Mar;3. Marine-Sturm-Division
+U58;Mar;4. Marine-Sturm-Division
+U58;Mar;5. Marine-Sturm-Division
+U58;Mar;6. Marine-Sturm-Division
+U58;Mar;7. Marine-Sturm-Division
+U58;Mar;8. Marine-Sturm-Division
+U58;Mar;9. Marine-Sturm-Division
+U58;Mar;10. Marine-Sturm-Division
+U58;Mar;11. Marine-Sturm-Division
+U58;Mar;12. Marine-Sturm-Division
+U58;Mar;13. Marine-Sturm-Division
+U58;Mar;14. Marine-Sturm-Division
+U58;Mar;15. Marine-Sturm-Division
+U58;Mar;16. Marine-Sturm-Division
+U58;Mar;17. Marine-Sturm-Division
+U58;Mar;18. Marine-Sturm-Division
+U58;Mar;19. Marine-Sturm-Division
+U58;Mar;20. Marine-Sturm-Division
+U58;Mtn;1. Gebirgsjäger-Division
+U58;Mtn;2. Gebirgsjäger-Division
+U58;Mtn;3. Gebirgsjäger-Division
+U58;Mtn;6. Gebirgsjäger-Division
+U58;Mtn;4. Gebirgsjäger-Division
+U58;Mtn;5. Gebirgsjäger-Division
+U58;Mtn;6. SS-Freiw.-Geb.Div. 'Nord'
+U58;Mtn;7. Gebirgsjäger-Division
+U58;Mtn;7. SS-Freiw.-Geb.Div. 'Prinz Eugen'
+U58;Mtn;13. Waffen-SS Geb.Div. 'Handschar'
+U58;Mtn;188. Gebirgsjäger-Division
+U58;Mtn;21. Waffen-SS Geb.Div. 'Skanderbeg'
+U58;Mtn;23. Waffen-SS Geb.Div. 'Kama'
+U58;Mtn;24. Waffen-SS Geb.Div. 'Karstjäger'
+U58;Mtn;157. Gebirgsjäger-Division
+U58;Mtn;9. Gebirgsjäger-Division
+U58;Mtn;8. Gebirgsjäger-Division
+U58;Mtn;1. Skijäger-Division
+U58;Mtn;39. SS-Freiw.-Geb.Div. 'Andreas Höfer'
+U58;Mtn;10. Gebirgsjäger-Division
+U58;Mtn;11. Gebirgsjäger-Division
+U58;Mtn;12. Gebirgsjäger-Division
+U58;Mtn;13. Gebirgsjäger-Division
+U58;Mtn;14. Gebirgsjäger-Division
+U58;Mtn;15. Gebirgsjäger-Division
+U58;Mtn;16. Gebirgsjäger-Division
+U58;Mtn;17. Gebirgsjäger-Division
+U58;Mtn;18. Gebirgsjäger-Division
+U58;Mtn;19. Gebirgsjäger-Division
+U58;Mtn;20. Gebirgsjäger-Division
+U58;Mtn;6. Gebirgsjäger-Division
+U58;Mtn;158. Gebirgsjäger-Division
+U58;Mtn;189. Gebirgsjäger-Division
+U58;Mtn;190. Gebirgsjäger-Division
+U58;Mtn;191. Gebirgsjäger-Division
+U58;Mtn;192. Gebirgsjäger-Division
+U58;Mtn;193. Gebirgsjäger-Division
+U58;Mtn;194. Gebirgsjäger-Division
+U58;Mtn;195. Gebirgsjäger-Division
+U58;Mil;1. Luftwaffen-Feld-Division
+U58;Mil;2. Luftwaffen-Feld-Division
+U58;Mil;3. Luftwaffen-Feld-Division
+U58;Mil;4. Luftwaffen-Feld-Division
+U58;Mil;5. Luftwaffen-Feld-Division
+U58;Mil;6. Luftwaffen-Feld-Division
+U58;Mil;7. Luftwaffen-Feld-Division
+U58;Mil;8. Luftwaffen-Feld-Division
+U58;Mil;9. Luftwaffen-Feld-Division
+U58;Mil;10. Luftwaffen-Feld-Division
+U58;Mil;6. Volksgrenadier Division
+U58;Mil;9. Volksgrenadier Division
+U58;Mil;12. Volksgrenadier Division
+U58;Mil;16. Volksgrenadier Division
+U58;Mil;18. Volksgrenadier Division
+U58;Mil;19. Volksgrenadier Division
+U58;Mil;22. Volksgrenadier Division
+U58;Mil;26. Volksgrenadier Division
+U58;Mil;31. Volksgrenadier Division
+U58;Mil;36. Volksgrenadier Division
+U58;Mil;45. Volksgrenadier Division
+U58;Mil;47. Volksgrenadier Division
+U58;Mil;62. Volksgrenadier Division
+U58;Mil;78. Volks Sturm Division
+U58;Mil;79. Volksgrenadier Division
+U58;Mil;167. Volksgrenadier Division
+U58;Mil;183. Volksgrenadier Division
+U58;Mil;211. Volksgrenadier Division
+U58;Mil;212. Volksgrenadier Division
+U58;Mil;246. Volksgrenadier Division
+U58;Mil;256. Volksgrenadier Division
+U58;Mil;257. Volksgrenadier Division
+U58;Mil;271. Volksgrenadier Division
+U58;Mil;272. Volksgrenadier Division
+U58;Mil;276. Volksgrenadier Division
+U58;Mil;277. Volksgrenadier Division
+U58;Mil;320. Volksgrenadier Division
+U58;Mil;326. Volksgrenadier Division
+U58;Mil;337. Volksgrenadier Division
+U58;Mil;340. Volksgrenadier Division
+U58;Mil;347. Volksgrenadier Division
+U58;Mil;349. Volksgrenadier Division
+U58;Mil;352. Volksgrenadier Division
+U58;Mil;361. Volksgrenadier Division
+U58;Mil;363. Volksgrenadier Division
+U58;Mil;462. Volksgrenadier Division
+U58;Mil;541. Volksgrenadier Division
+U58;Mil;542. Volksgrenadier Division
+U58;Mil;544. Volksgrenadier Division
+U58;Mil;545. Volksgrenadier Division
+U58;Mil;547. Volksgrenadier Division
+U58;Mil;548. Volksgrenadier Division
+U58;Mil;549. Volksgrenadier Division
+U58;Mil;551. Volksgrenadier Division
+U58;Mil;553. Volksgrenadier Division
+U58;Mil;558. Volksgrenadier Division
+U58;Mil;559. Volksgrenadier Division
+U58;Mil;560. Volksgrenadier Division
+U58;Mil;561. Volksgrenadier Division
+U58;Mil;562. Volksgrenadier Division
+U58;Mil;563. Volksgrenadier Division
+U58;Mil;565. Volksgrenadier Division
+U58;Mil;566. Volksgrenadier Division
+U58;Mil;567. Volksgrenadier Division
+U58;Mil;568. Volksgrenadier Division
+U58;Mil;569. Volksgrenadier Division
+U58;Mil;570. Volksgrenadier Division
+U58;Mil;571. Volksgrenadier Division
+U58;Mil;572. Volksgrenadier Division
+U58;Mil;573. Volksgrenadier Division
+U58;Mil;574. Volksgrenadier Division
+U58;Mil;575. Volksgrenadier Division
+U58;Mil;576. Volksgrenadier Division
+U58;Mil;577. Volksgrenadier Division
+U58;Mil;578. Volksgrenadier Division
+U58;Mil;579. Volksgrenadier Division
+U58;Mil;580. Volksgrenadier Division
+U58;Mil;581. Volksgrenadier Division
+U58;Mil;582. Volksgrenadier Division
+U58;Mil;583. Volksgrenadier Division
+U58;Mil;584. Volksgrenadier Division
+U58;Mil;585. Volksgrenadier Division
+U58;Mil;586. Volksgrenadier Division
+U58;Mil;587. Volksgrenadier Division
+U58;Mil;588. Volksgrenadier Division
+U58;Mil;708. Volksgrenadier Division
+U58;Fig;JG 2 'Richthofen'
+U58;Fig;JG 3 'Udet'
+U58;Fig;JG 26 'Schlageter'
+U58;Fig;JG 53 'Pik As'
+U58;Fig;Jagdgeschwader 20
+U58;Fig;Jagdgeschwader 21
+U58;Fig;Jagdgeschwader 70
+U58;Fig;Jagdgeschwader 71
+U58;Fig;Jagdgeschwader 72
+U58;Fig;Jagdgeschwader 52
+U58;Fig;JG 77 'Herz As'
+U58;Fig;Jagdgeschwader 27
+U58;Fig;Jagdgeschwader 433
+U58;Fig;JG 51 'Mölders'
+U58;Fig;JG 1 'Oesau'
+U58;Fig;JG 54 'Grünherz'
+U58;Fig;Jagdgeschwader 28
+U58;Fig;JG 5 'Eismeer'
+U58;Fig;JG 7 'Nowotny'
+U58;Fig;Jagdgeschwader 103
+U58;Fig;Jagdgeschwader 101
+U58;Fig;Jagdgeschwader 107
+U58;Fig;Jagdgeschwader 102
+U58;Fig;Jagdgeschwader 105
+U58;Fig;Jagdgeschwader 104
+U58;Fig;Jagdgeschwader 106
+U58;Fig;Jagdgeschwader 11
+U58;Fig;Jagdgeschwader 300
+U58;Fig;Jagdgeschwader 50
+U58;Fig;Jagdgeschwader 108
+U58;Fig;Jagdgeschwader 25
+U58;Fig;Jagdgeschwader 301
+U58;Fig;Jagdgeschwader 110
+U58;Fig;Jagdgeschwader 302
+U58;Fig;Jagdgeschwader zbV
+U58;Fig;Jagdgeschwader 109
+U58;Fig;Jagdgeschwader 4
+U58;Fig;JG 6 'Horst Wessel'
+U58;Fig;Jagdgeschwader 112
+U58;Fig;Jagdgeschwader 113
+U58;Fig;Jagdgeschwader 111
+U58;Fig;Jagdgeschwader 76
+U58;Fig;Jagdgeschwader 117
+U58;Fig;Jagdgeschwader 114
+U58;Fig;Jagdgeschwader 115
+U58;Fig;Jagdgeschwader 116
+U58;Fig;Jagdgeschwader 400
+U58;Fig;Jagdgeschwader 401
+U58;Fig;Jagdgeschwader 402
+U58;Fig;Jagdgeschwader 403
+U58;Fig;Jagdgeschwader 404
+U58;Fig;Jagdgeschwader 405
+U58;Fig;Jagdgeschwader 406
+U58;Fig;Jagdgeschwader 407
+U58;Fig;Jagdgeschwader 408
+U58;Fig;Jagdgeschwader 409
+U58;Fig;Jagdgeschwader 410
+U58;Fig;Jagdgeschwader 411
+U58;Fig;Jagdgeschwader 412
+U58;Fig;Jagdgeschwader 413
+U58;Fig;Jagdgeschwader 414
+U58;Fig;Jagdgeschwader 415
+U58;Fig;Jagdgeschwader 416
+U58;Fig;Jagdgeschwader 417
+U58;Fig;Jagdgeschwader 418
+U58;Fig;Jagdgeschwader 419
+U58;Fig;Jagdgeschwader 420
+U58;Fig;Jagdgeschwader 421
+U58;Fig;Jagdgeschwader 422
+U58;Fig;Jagdgeschwader 423
+U58;Fig;Jagdgeschwader 424
+U58;Fig;Jagdgeschwader 425
+U58;Fig;Jagdgeschwader 426
+U58;Fig;Jagdgeschwader 427
+U58;Fig;Jagdgeschwader 428
+U58;Fig;Jagdgeschwader 429
+U58;Fig;Jagdgeschwader 430
+U58;Fig;Jagdgeschwader 431
+U58;Fig;Jagdgeschwader 441
+U58;Fig;Jagdgeschwader 451
+U58;Fig;Jagdgeschwader 461
+U58;Fig;Jagdgeschwader 471
+U58;Fig;Jagdgeschwader 481
+U58;Fig;Jagdgeschwader 491
+U58;Fig;Jagdgeschwader 501
+U58;Fig;Jagdgeschwader 511
+U58;Fig;Jagdgeschwader 521
+U58;Int F;JG 2 'Richthofen'
+U58;Int F;JG 3 'Udet'
+U58;Int F;JG 26 'Schlageter'
+U58;Int F;JG 53 'Pik As'
+U58;Int F;Jagdgeschwader 20
+U58;Int F;Jagdgeschwader 21
+U58;Int F;Jagdgeschwader 70
+U58;Int F;Jagdgeschwader 71
+U58;Int F;Jagdgeschwader 72
+U58;Int F;Jagdgeschwader 52
+U58;Int F;JG 77 'Herz As'
+U58;Int F;Jagdgeschwader 27
+U58;Int F;Jagdgeschwader 433
+U58;Int F;JG 51 'Mölders'
+U58;Int F;JG 1 'Oesau'
+U58;Int F;JG 54 'Grünherz'
+U58;Int F;Jagdgeschwader 28
+U58;Int F;JG 5 'Eismeer'
+U58;Int F;JG 7 'Nowotny'
+U58;Int F;Jagdgeschwader 103
+U58;Int F;Jagdgeschwader 101
+U58;Int F;Jagdgeschwader 107
+U58;Int F;Jagdgeschwader 102
+U58;Int F;Jagdgeschwader 105
+U58;Int F;Jagdgeschwader 104
+U58;Int F;Jagdgeschwader 106
+U58;Int F;Jagdgeschwader 11
+U58;Int F;Jagdgeschwader 300
+U58;Int F;Jagdgeschwader 50
+U58;Int F;Jagdgeschwader 108
+U58;Int F;Jagdgeschwader 25
+U58;Int F;Jagdgeschwader 301
+U58;Int F;Jagdgeschwader 110
+U58;Int F;Jagdgeschwader 302
+U58;Int F;Jagdgeschwader zbV
+U58;Int F;Jagdgeschwader 109
+U58;Int F;Jagdgeschwader 4
+U58;Int F;JG 6 'Horst Wessel'
+U58;Int F;Jagdgeschwader 112
+U58;Int F;Jagdgeschwader 113
+U58;Int F;Jagdgeschwader 111
+U58;Int F;Jagdgeschwader 76
+U58;Int F;Jagdgeschwader 117
+U58;Int F;Jagdgeschwader 114
+U58;Int F;Jagdgeschwader 115
+U58;Int F;Jagdgeschwader 116
+U58;Int F;Jagdgeschwader 400
+U58;Int F;Jagdgeschwader 401
+U58;Int F;Jagdgeschwader 402
+U58;Int F;Jagdgeschwader 403
+U58;Int F;Jagdgeschwader 404
+U58;Int F;Jagdgeschwader 405
+U58;Int F;Jagdgeschwader 406
+U58;Int F;Jagdgeschwader 407
+U58;Int F;Jagdgeschwader 408
+U58;Int F;Jagdgeschwader 409
+U58;Int F;Jagdgeschwader 410
+U58;Int F;Jagdgeschwader 411
+U58;Int F;Jagdgeschwader 412
+U58;Int F;Jagdgeschwader 413
+U58;Int F;Jagdgeschwader 414
+U58;Int F;Jagdgeschwader 415
+U58;Int F;Jagdgeschwader 416
+U58;Int F;Jagdgeschwader 417
+U58;Int F;Jagdgeschwader 418
+U58;Int F;Jagdgeschwader 419
+U58;Int F;Jagdgeschwader 420
+U58;Int F;Jagdgeschwader 421
+U58;Int F;Jagdgeschwader 422
+U58;Int F;Jagdgeschwader 423
+U58;Int F;Jagdgeschwader 424
+U58;Int F;Jagdgeschwader 425
+U58;Int F;Jagdgeschwader 426
+U58;Int F;Jagdgeschwader 427
+U58;Int F;Jagdgeschwader 428
+U58;Int F;Jagdgeschwader 429
+U58;Int F;Jagdgeschwader 430
+U58;Int F;Jagdgeschwader 431
+U58;Int F;Jagdgeschwader 441
+U58;Int F;Jagdgeschwader 451
+U58;Int F;Jagdgeschwader 461
+U58;Int F;Jagdgeschwader 471
+U58;Int F;Jagdgeschwader 481
+U58;Int F;Jagdgeschwader 491
+U58;Int F;Jagdgeschwader 501
+U58;Int F;Jagdgeschwader 511
+U58;Int F;Jagdgeschwader 521
+U58;Str;KG 1 'Hindenburg'
+U58;Str;KG 4 'General Wever'
+U58;Str;KG 26 'Löwen'
+U58;Str;KG 27 'Boelcke'
+U58;Str;Kampfgeschwader 28
+U58;Str;KG 51 'Edelweiß'
+U58;Str;KG 53 'Legion Condor'
+U58;Str;KG 54 'Totenkopf'
+U58;Str;KG 55 'Greif'
+U58;Str;Kampfgeschwader 100
+U58;Str;Kampfgeschwader 6
+U58;Str;Ergänzungskampfgruppe 2
+U58;Str;Ergänzungskampfgruppe 3
+U58;Str;Ergänzungskampfgruppe 4
+U58;Str;Ergänzungskampfgruppe 5
+U58;Str;Ergänzungskampfgruppe 6
+U58;Str;Kampfgeschwader 103
+U58;Str;Kampfgeschwader 104
+U58;Str;Kampfgeschwader 105
+U58;Str;Kampfgeschwader 106
+U58;Str;Kampfgeschwader 107
+U58;Str;Kampfgeschwader 108
+U58;Str;Kampfgeschwader 109
+U58;Str;Kampfgeschwader 110
+U58;Str;Kampfgeschwader 111
+U58;Str;Kampfgeschwader 112
+U58;Str;Kampfgeschwader 113
+U58;Str;Kampfgeschwader 114
+U58;Str;Kampfgeschwader 115
+U58;Str;Kampfgeschwader 116
+U58;Str;Kampfgeschwader 117
+U58;Str;Kampfgeschwader 118
+U58;Str;Kampfgeschwader 119
+U58;Str;Kampfgeschwader 120
+U58;Str;Kampfgeschwader 121
+U58;Str;Kampfgeschwader 122
+U58;Str;Kampfgeschwader 123
+U58;Str;Kampfgeschwader 124
+U58;Str;Kampfgeschwader 125
+U58;Str;Kampfgeschwader 126
+U58;Str;Kampfgeschwader 127
+U58;Str;Kampfgeschwader 128
+U58;Str;Kampfgeschwader 129
+U58;Str;Kampfgeschwader 130
+U58;Str;Kampfgeschwader 131
+U58;Str;Kampfgeschwader 132
+U58;Str;Kampfgeschwader 133
+U58;Str;Kampfgeschwader 134
+U58;Str;Kampfgeschwader 135
+U58;Str;Kampfgeschwader 136
+U58;Str;Kampfgeschwader 137
+U58;Str;Kampfgeschwader 138
+U58;Str;Kampfgeschwader 139
+U58;Str;Kampfgeschwader 140
+U58;Str;Kampfgeschwader 141
+U58;Str;Kampfgeschwader 142
+U58;Str;Kampfgeschwader 143
+U58;Str;Kampfgeschwader 144
+U58;Tac;KG 2 'Holzhammer'
+U58;Tac;KG 3 'Blitz'
+U58;Tac;Kampfgeschwader 25
+U58;Tac;KG 30 'Adler'
+U58;Tac;KG 1 'Hindenburg'
+U58;Tac;KG 4 'General Wever'
+U58;Tac;KG 26 'Löwen'
+U58;Tac;KG 27 'Boelcke'
+U58;Tac;Kampfgeschwader 28
+U58;Tac;KG 51 'Edelweiß'
+U58;Tac;KG 53 'Legion Condor'
+U58;Tac;KG 54 'Totenkopf'
+U58;Tac;KG 55 'Greif'
+U58;Tac;Kampfgeschwader 50
+U58;Tac;Kampfgeschwader 40
+U58;Tac;Kampfgeschwader 76
+U58;Tac;Kampfgeschwader 77
+U58;Tac;Kampfgeschwader 60
+U58;Tac;Kampfgeschwader 101
+U58;Tac;Kampfgeschwader 102
+U58;Tac;Kampfgeschwader 66
+U58;Tac;Kampfgeschwader 200
+U58;Tac;Kampfgeschwader 201
+U58;Tac;Kampfgeschwader 202
+U58;Tac;Kampfgeschwader 203
+U58;Tac;Kampfgeschwader 204
+U58;Tac;Kampfgeschwader 205
+U58;Tac;Kampfgeschwader 206
+U58;Tac;Kampfgeschwader 207
+U58;Tac;Kampfgeschwader 208
+U58;Tac;Kampfgeschwader 209
+U58;Tac;Kampfgeschwader 210
+U58;Tac;Kampfgeschwader 211
+U58;Tac;Kampfgeschwader 212
+U58;Tac;Kampfgeschwader 213
+U58;Tac;Kampfgeschwader 214
+U58;Tac;Kampfgeschwader 215
+U58;Tac;Kampfgeschwader 216
+U58;Tac;Kampfgeschwader 217
+U58;Tac;Kampfgeschwader 218
+U58;Tac;Kampfgeschwader 219
+U58;Tac;Kampfgeschwader 220
+U58;Tac;Kampfgeschwader 221
+U58;CAS;Sturzkampfgeschwader 51
+U58;CAS;StG 2 'Immelmann'
+U58;CAS;Sturzkampfgeschwader 76
+U58;CAS;Sturzkampfgeschwader 77
+U58;CAS;Sturzkampfgeschwader 1
+U58;CAS;Sturzkampfgeschwader 3
+U58;CAS;Schnellkampfgeschwader 210
+U58;CAS;Schlachtgeschwader 1
+U58;CAS;Sturzkampfgeschwader 5
+U58;CAS;Schnellkampfgeschwader 10
+U58;CAS;Sturzkampfgeschwader 101
+U58;CAS;Schlachtgeschwader 2
+U58;CAS;Schlachtgeschwader 101
+U58;CAS;Sturzkampfgeschwader 102
+U58;CAS;Sturzkampfgeschwader 151
+U58;CAS;Schlachtgeschwader 152
+U58;CAS;Schlachtgeschwader 104
+U58;CAS;Sturzkampfgeschwader 160
+U58;CAS;Sturzkampfgeschwader 162
+U58;CAS;Sturzkampfgeschwader 163
+U58;CAS;Sturzkampfgeschwader 165
+U58;CAS;Sturzkampfgeschwader 167
+U58;CAS;Sturzkampfgeschwader 168
+U58;CAS;Sturzkampfgeschwader 169
+U58;CAS;Sturzkampfgeschwader 170
+U58;CAS;Sturzkampfgeschwader 171
+U58;CAS;Sturzkampfgeschwader 172
+U58;CAS;Sturzkampfgeschwader 182
+U58;CAS;Sturzkampfgeschwader 183
+U58;CAS;Sturzkampfgeschwader 184
+U58;CAS;Sturzkampfgeschwader 186
+U58;CAS;Sturzkampfgeschwader 192
+U58;CAS;Sturzkampfgeschwader 195
+U58;Nav;Seeaufklärungsgruppe 125
+U58;Nav;Seeaufklärungsgruppe 126
+U58;Nav;Seeaufklärungsgruppe 127
+U58;Nav;Seeaufklärungsgruppe 128
+U58;Nav;Seeaufklärungsgruppe 129
+U58;Nav;Seeaufklärungsgruppe 130
+U58;Nav;Seeaufklärungsgruppe 131
+U58;Nav;Seeaufklärungsgruppe 128
+U58;Nav;Seeaufklärungsgruppe 129
+U58;Nav;Seeaufklärungsgruppe 130
+U58;Nav;Seeaufklärungsgruppe 131
+U58;Nav;Seeaufklärungsgruppe 132
+U58;Nav;Seeaufklärungsgruppe 133
+U58;Nav;Seeaufklärungsgruppe 134
+U58;Nav;Seeaufklärungsgruppe 135
+U58;Nav;Seeaufklärungsgruppe 136
+U58;Nav;Seeaufklärungsgruppe 137
+U58;Nav;Seeaufklärungsgruppe 138
+U58;Nav;Küstenfliegergruppe 106
+U58;Nav;Küstenfliegergruppe 206
+U58;Nav;Küstenfliegergruppe 306
+U58;Nav;Küstenfliegergruppe 406
+U58;Nav;Küstenfliegergruppe 506
+U58;Nav;Küstenfliegergruppe 606
+U58;Nav;Küstenfliegergruppe 706
+U58;Nav;Küstenfliegergruppe 806
+U58;Nav;Küstenfliegergruppe 906
+U58;Nav;Küstenfliegergruppe 206
+U58;Nav;Küstenfliegergruppe 306
+U58;Nav;Küstenfliegergruppe 806
+U58;Trp;Kampfgruppe zbV 9
+U58;Trp;Kampfgeschwader zbV 1
+U58;Trp;Kampfgeschwader zbV 2
+U58;Trp;Kampfgeschwader zbV 4
+U58;Trp;Kampfgeschwader zbV 5
+U58;Trp;Kampfgeschwader zbV 9
+U58;Trp;Kampfgeschwader zbV 172
+U58;Trp;Transportgeschwader 1
+U58;Trp;Transportgeschwader 2
+U58;Trp;Transportgeschwader 3
+U58;Trp;Transportgeschwader 4
+U58;Trp;Transportgeschwader 5
+U58;Trp;Transportgeschwader 10
+U58;Trp;Transportgeschwader 20
+U58;Trp;Transportgeschwader 30
+U58;Trp;Transportgeschwader 110
+U58;Trp;Kampfgruppe zbV 106
+U58;Trp;Kampfgruppe zbV 108
+U58;Trp;Kampfgruppe zbV 50
+U58;Trp;Kampfgruppe zbV 102
+U58;Trp;Kampfgruppe zbV 104
+U58;Trp;Kampfgruppe zbV 105
+U58;Trp;Kampfgruppe zbV 400
+U58;Trp;Kampfgruppe zbV 500
+U58;Trp;Kampfgruppe zbV 600
+U58;Trp;Kampfgruppe zbV 700
+U58;Trp;Kampfgruppe zbV 800
+U58;Trp;Kampfgruppe zbV 900
+U58;Trp;Kampfgruppe zbV 100
+U58;Trp;Kampfgruppe zbV 200
+U58;Trp;Kampfgruppe zbV 300
+U58;V1;Flak-Regiment 1 (W)
+U58;V1;Flak-Regiment 2 (W)
+U58;V1;Flak-Regiment 3 (W)
+U58;V1;Flak-Regiment 4 (W)
+U58;V1;Flak-Regiment 5 (W)
+U58;V1;Flak-Regiment 6 (W)
+U58;V1;Flak-Regiment 7 (W)
+U58;V1;Flak-Regiment 8 (W)
+U58;V1;Flak-Regiment 9 (W)
+U58;V1;Flak-Regiment 10 (W)
+U58;V1;Flak-Regiment 11 (W)
+U58;V1;Flak-Regiment 12 (W)
+U58;V1;Flak-Regiment 13 (W)
+U58;V1;Flak-Regiment 14 (W)
+U58;V1;Flak-Regiment 15 (W)
+U58;V1;Flak-Regiment 16 (W)
+U58;V1;Flak-Regiment 17 (W)
+U58;V1;Flak-Regiment 18 (W)
+U58;V1;Flak-Regiment 19 (W)
+U58;V1;Flak-Regiment 20 (W)
+U58;V1;Flak-Regiment 21 (W)
+U58;V1;Flak-Regiment 22 (W)
+U58;V1;Flak-Regiment 23 (W)
+U58;V1;Flak-Regiment 24 (W)
+U58;V1;Flak-Regiment 25 (W)
+U58;V1;Flak-Regiment 26 (W)
+U58;V1;Flak-Regiment 27 (W)
+U58;V1;Flak-Regiment 28 (W)
+U58;V1;Flak-Regiment 29 (W)
+U58;V1;Flak-Regiment 30 (W)
+U58;V1;Flak-Regiment 31 (W)
+U58;V1;Flak-Regiment 32 (W)
+U58;V1;Flak-Regiment 33 (W)
+U58;V1;Flak-Regiment 34 (W)
+U58;V1;Flak-Regiment 35 (W)
+U58;V1;Flak-Regiment 36 (W)
+U58;V1;Flak-Regiment 37 (W)
+U58;V1;Flak-Regiment 38 (W)
+U58;V1;Flak-Regiment 39 (W)
+U58;V1;Flak-Regiment 40 (W)
+U58;V1;Flak-Regiment 41 (W)
+U58;V1;Flak-Regiment 42 (W)
+U58;V1;Flak-Regiment 43 (W)
+U58;V1;Flak-Regiment 44 (W)
+U58;V1;Flak-Regiment 45 (W)
+U58;V1;Flak-Regiment 46 (W)
+U58;V1;Flak-Regiment 47 (W)
+U58;V1;Flak-Regiment 48 (W)
+U58;V1;Flak-Regiment 49 (W)
+U58;V1;Flak-Regiment 50 (W)
+U58;V2;Flak-Regiment 51 (W)
+U58;V2;Flak-Regiment 52 (W)
+U58;V2;Flak-Regiment 53 (W)
+U58;V2;Flak-Regiment 54 (W)
+U58;V2;Flak-Regiment 55 (W)
+U58;V2;Flak-Regiment 56 (W)
+U58;V2;Flak-Regiment 57 (W)
+U58;V2;Flak-Regiment 58 (W)
+U58;V2;Flak-Regiment 59 (W)
+U58;V2;Flak-Regiment 60 (W)
+U58;V2;Flak-Regiment 61 (W)
+U58;V2;Flak-Regiment 62 (W)
+U58;V2;Flak-Regiment 63 (W)
+U58;V2;Flak-Regiment 64 (W)
+U58;V2;Flak-Regiment 65 (W)
+U58;V2;Flak-Regiment 66 (W)
+U58;V2;Flak-Regiment 67 (W)
+U58;V2;Flak-Regiment 68 (W)
+U58;V2;Flak-Regiment 69 (W)
+U58;V2;Flak-Regiment 70 (W)
+U58;V2;Flak-Regiment 71 (W)
+U58;V2;Flak-Regiment 72 (W)
+U58;V2;Flak-Regiment 73 (W)
+U58;V2;Flak-Regiment 74 (W)
+U58;V2;Flak-Regiment 75 (W)
+U58;V2;Flak-Regiment 76 (W)
+U58;V2;Flak-Regiment 77 (W)
+U58;V2;Flak-Regiment 78 (W)
+U58;V2;Flak-Regiment 79 (W)
+U58;V2;Flak-Regiment 80 (W)
+U58;V2;Flak-Regiment 81 (W)
+U58;V2;Flak-Regiment 82 (W)
+U58;V2;Flak-Regiment 83 (W)
+U58;V2;Flak-Regiment 84 (W)
+U58;V2;Flak-Regiment 85 (W)
+U58;V2;Flak-Regiment 86 (W)
+U58;V2;Flak-Regiment 87 (W)
+U58;V2;Flak-Regiment 88 (W)
+U58;V2;Flak-Regiment 89 (W)
+U58;V2;Flak-Regiment 90 (W)
+U58;V2;Flak-Regiment 91 (W)
+U58;V2;Flak-Regiment 92 (W)
+U58;V2;Flak-Regiment 93 (W)
+U58;V2;Flak-Regiment 94 (W)
+U58;V2;Flak-Regiment 95 (W)
+U58;V2;Flak-Regiment 96 (W)
+U58;V2;Flak-Regiment 97 (W)
+U58;V2;Flak-Regiment 98 (W)
+U58;V2;Flak-Regiment 99 (W)
+U58;V2;Flak-Regiment 100 (W)
+U58;BB;Bismarck
+U58;BB;Tirpitz
+U58;BB;Friedrich der Große
+U58;BB;Großdeutschland
+U58;BB;Hindenburg
+U58;BB;Ludendorff
+U58;BB;Moltke
+U58;BB;Schleswig-Holstein
+U58;BB;Mark Brandenburg
+U58;BB;Südhannover-Braunschweig
+U58;BB;Thüringen
+U58;BB;Mecklenburg
+U58;BB;München-Oberbayern
+U58;BB;Magdeburg-Anhalt
+U58;BB;Weser-Ems
+U58;BB;Halle-Merseburg
+U58;BB;Hamburg
+U58;BB;Pommern
+U58;BB;Bayreuth
+U58;BB;Ostpreußen
+U58;BB;Niederschlesien
+U58;BB;Essen
+U58;BB;Düsseldorf
+U58;BB;Westfalen-Nord
+U58;BB;Köln-Aachen
+U58;BB;Kurhessen
+U58;BB;Oberdonau
+U58;BB;Hessen-Nassau
+U58;BB;Moselland
+U58;BB;Oberschlesien
+U58;BB;Osthannover
+U58;BB;Elsaß
+U58;BB;Westmark
+U58;BB;Berlin
+U58;BB;Sudetenland
+U58;BB;Westfalen-Süd
+U58;BB;Mainfranken
+U58;BB;Danzig-Westpreußen
+U58;BB;Franken
+U58;BB;Würtemberg Hohenzollern
+U58;BB;Baden
+U58;BB;Schwaben
+U58;BB;Salzburg
+U58;BB;Lothringen
+U58;BB;Niederdonau
+U58;BB;Wien
+U58;BB;Steiermark
+U58;BB;Kärnten
+U58;BB;Tirol-Voralberg
+U58;BB;Wartheland
+U58;BC;Scharnhorst
+U58;BC;Gneisenau
+U58;BC;Von der Tann
+U58;BC;Moltke
+U58;BC;Goeben
+U58;BC;Schleswig-Holstein
+U58;BC;Hamburg
+U58;BC;Pommern
+U58;BC;Südhannover-Braunschweig
+U58;BC;Mecklenburg
+U58;BC;München-Oberbayern
+U58;BC;Magdeburg-Anhalt
+U58;BC;Halle-Merseburg
+U58;BC;Sachsen
+U58;BC;Bayreuth
+U58;BC;Ostpreußen
+U58;BC;Niederschlesien
+U58;BC;Essen
+U58;BC;Düsseldorf
+U58;BC;Westfalen-Nord
+U58;BC;Köln-Aachen
+U58;BC;Kurhessen
+U58;BC;Oberdonau
+U58;BC;Hessen-Nassau
+U58;BC;Moselland
+U58;BC;Oberschlesien
+U58;BC;Osthannover
+U58;BC;Elsaß
+U58;BC;Westmark
+U58;BC;Berlin
+U58;BC;Sudetenland
+U58;BC;Westfalen-Süd
+U58;BC;Mainfranken
+U58;BC;Danzig-Westpreußen
+U58;BC;Franken
+U58;BC;Würtemberg Hohenzollern
+U58;BC;Baden
+U58;BC;Schwaben
+U58;BC;Salzburg
+U58;BC;Lothringen
+U58;BC;Niederdonau
+U58;BC;Wien
+U58;BC;Steiermark
+U58;BC;Kärnten
+U58;BC;Tirol-Voralberg
+U58;BC;Wartheland
+U58;CV;Graf Zeppelin
+U58;CV;Peter Strasser
+U58;CV;Seydlitz
+U58;CV;Clausewitz
+U58;CV;Barbarossa
+U58;CV;Seelöwe
+U58;CV;Amerika
+U58;CV;Rheingold
+U58;CV;Siegfried
+U58;CV;Parsifal
+U58;CV;Lohengrin
+U58;CV;Germania
+U58;CV;Richthofen
+U58;CV;Otto Lilienthal
+U58;CV;Hermann Göring
+U58;CV;Hugo Junkers
+U58;CV;Claude Dornier
+U58;CV;Ernst Heinkel
+U58;CV;Wilhelm Messerschmitt
+U58;CV;Hans Klemm
+U58;CV;Richard Wagner
+U58;CV;Johann Wolfgang von Goethe
+U58;CV;Friedrich Schiller
+U58;27;Weser
+U58;27;Elbe
+U58;27;Jade
+U58;27;Main
+U58;27;Neckar
+U58;27;Lahn
+U58;27;Rhein
+U58;27;Saale
+U58;31;Weser
+U58;31;Elbe
+U58;31;Jade
+U58;31;Main
+U58;31;Neckar
+U58;31;Lahn
+U58;31;Rhein
+U58;31;Saale
+U58;CA;Admiral Hipper
+U58;CA;Blücher
+U58;CA;Prinz Eugen
+U58;CA;Lützow
+U58;CA;Admiral Scheer
+U58;CA;Admiral Graf Spee
+U58;CA;Deutschland
+U58;CA;Frithjof
+U58;CA;Friedrich Carl
+U58;CA;Horst Wessel
+U58;CA;Götz von Berlichingen
+U58;CA;Admiral Pohl
+U58;CA;Admiral Holtzendorff
+U58;CA;Admiral Deinhard
+U58;CA;Admiral Zenker
+U58;CA;Admiral von Knorr
+U58;CA;Admiral Souchon
+U58;CA;von der Gröben
+U58;CA;Graf von Schwerin
+U58;CA;Roon
+U58;CA;Goeben
+U58;CA;Bülow
+U58;CA;Falkenhayn
+U58;CA;Hoffmann
+U58;CA;Moritz
+U58;CA;Zieten
+U58;CA;Bevan
+U58;CA;Kleist
+U58;CA;Bethmann-Hollweg
+U58;CA;Stosch
+U58;CA;Stein
+U58;CA;Steuben
+U58;CA;Yorck
+U58;CA;von der Tann
+U58;CA;Derfflinger
+U58;CA;Moltke
+U58;CA;Mackensen
+U58;CA;Clausewitz
+U58;CA;Seydlitz
+U58;CA;Großer Kurfürst
+U58;CA;Reichsmarschall
+U58;CA;Adolf Lüderitz
+U58;CA;Gorch Fock
+U58;CA;Friedrich Carl
+U58;CA;Plüschow
+U58;CA;Coronel
+U58;CA;Wörth
+U58;CA;Weissenburg
+U58;CA;Albert Speer
+U58;CA;Joseph Goebbels
+U58;CA;Wernher von Braun
+U58;CA;Großadmiral Raeder
+U58;CA;Admiral Hipper
+U58;CA;Blücher
+U58;CA;Prinz Eugen
+U58;CA;Lützow
+U58;CA;Admiral Scheer
+U58;CA;Admiral Graf Spee
+U58;CA;Deutschland
+U58;CA;Frithjof
+U58;CA;Friedrich Carl
+U58;CA;Horst Wessel
+U58;CA;Götz von Berlichingen
+U58;CA;Admiral Pohl
+U58;CA;Admiral Holtzendorff
+U58;CA;Admiral Deinhard
+U58;CA;Admiral Zenker
+U58;CA;Admiral von Knorr
+U58;CA;Admiral Souchon
+U58;CA;von der Gröben
+U58;CA;Graf von Schwerin
+U58;CA;Roon
+U58;CA;Goeben
+U58;CA;Bülow
+U58;CA;Falkenhayn
+U58;CA;Hoffmann
+U58;CA;Moritz
+U58;CA;Zieten
+U58;CA;Bevan
+U58;CA;Kleist
+U58;CA;Bethmann-Hollweg
+U58;CA;Stosch
+U58;CA;Stein
+U58;CA;Steuben
+U58;CA;Yorck
+U58;CA;von der Tann
+U58;CA;Derfflinger
+U58;CA;Moltke
+U58;CA;Mackensen
+U58;CA;Clausewitz
+U58;CA;Seydlitz
+U58;CA;Großer Kurfürst
+U58;CA;Reichsmarschall
+U58;CA;Adolf Lüderitz
+U58;CA;Gorch Fock
+U58;CA;Friedrich Carl
+U58;CA;Plüschow
+U58;CA;Coronel
+U58;CA;Wörth
+U58;CA;Weissenburg
+U58;CA;Albert Speer
+U58;CA;Joseph Goebbels
+U58;CA;Wernher von Braun
+U58;CA;Großadmiral Raeder
+U58;CA;Admiral Hipper
+U58;CA;Blücher
+U58;CA;Prinz Eugen
+U58;CA;Lützow
+U58;CA;Admiral Scheer
+U58;CA;Admiral Graf Spee
+U58;CA;Deutschland
+U58;CA;Frithjof
+U58;CA;Friedrich Carl
+U58;CA;Horst Wessel
+U58;CA;Götz von Berlichingen
+U58;CA;Admiral Pohl
+U58;CA;Admiral Holtzendorff
+U58;CA;Admiral Deinhard
+U58;CA;Admiral Zenker
+U58;CA;Admiral von Knorr
+U58;CA;Admiral Souchon
+U58;CA;von der Gröben
+U58;CA;Graf von Schwerin
+U58;CA;Heimdall
+U58;CA;Hildebrand
+U58;CA;Beowulf
+U58;CL;Königsberg
+U58;CL;Karlsruhe
+U58;CL;Köln
+U58;CL;Leipzig
+U58;CL;Nürnberg
+U58;CL;Emden
+U58;CL;Stuttgart
+U58;CL;Stettin
+U58;CL;Dresden
+U58;CL;Hannover
+U58;CL;Mainz
+U58;CL;Dortmund
+U58;CL;Augsburg
+U58;CL;Bamberg
+U58;CL;Magdeburg
+U58;CL;Breslau
+U58;CL;Straßburg
+U58;CL;Stralsund
+U58;CL;Rostock
+U58;CL;Graudenz
+U58;CL;Regensburg
+U58;CL;Pillau
+U58;CL;Elbing
+U58;CL;Frankfurt
+U58;CL;Wiesbaden
+U58;CL;Frankfurt
+U58;CL;Kolberg
+U58;CL;Heilbronn
+U58;CL;Ingolstadt
+U58;CL;Düsseldorf
+U58;CL;Duisberg
+U58;CL;Bochum
+U58;CL;Wuppertal
+U58;CL;Bielefeld
+U58;CL;Bonn
+U58;CL;Mannheim
+U58;CL;Gelsenkirchen
+U58;CL;Münster
+U58;CL;Mönchengladbach
+U58;CL;Chemnitz
+U58;CL;Braunschweig
+U58;CL;Aachen
+U58;CL;Krefeld
+U58;CL;Halle
+U58;CL;Kiel
+U58;CL;Oberhausen
+U58;CL;Lübeck
+U58;CL;Freiburg
+U58;CL;Hagen
+U58;CL;Erfurt
+U58;CL;Kassel
+U58;CL;Hamm
+U58;CL;Saarbrücken
+U58;CL;Herne
+U58;CL;Mülheim
+U58;CL;Solingen
+U58;CL;Osnabrück
+U58;CL;Ludwigshafen
+U58;CL;Leverkusen
+U58;CL;Oldenburg
+U58;CL;Neuss
+U58;CL;Paderborn
+U58;CL;Heidelberg
+U58;CL;Darmstadt
+U58;CL;Potsdam
+U58;CL;Würzburg
+U58;CL;Göttingen
+U58;CL;Recklinghausen
+U58;CL;Bottrop
+U58;CL;Wolfsburg
+U58;CL;München
+U58;CL;Emden
+U58;CL;Königsberg
+U58;CL;Karlsruhe
+U58;CL;Köln
+U58;CL;Leipzig
+U58;CL;Yorck
+U58;CL;Wolfsburg
+U58;CL;Brummer
+U58;CL;Bremse
+U58;CL;Nautilus
+U58;CL;Albatross
+U58;DD;1. Zerstörergeschwader
+U58;DD;2. Zerstörergeschwader
+U58;DD;3. Zerstörergeschwader
+U58;DD;4. Zerstörergeschwader
+U58;DD;5. Zerstörergeschwader
+U58;DD;6. Zerstörergeschwader
+U58;DD;7. Zerstörergeschwader
+U58;DD;8. Zerstörergeschwader
+U58;DD;9. Zerstörergeschwader
+U58;DD;10. Zerstörergeschwader
+U58;DD;11. Zerstörergeschwader
+U58;DD;12. Zerstörergeschwader
+U58;DD;13. Zerstörergeschwader
+U58;DD;14. Zerstörergeschwader
+U58;DD;15. Zerstörergeschwader
+U58;DD;16. Zerstörergeschwader
+U58;DD;17. Zerstörergeschwader
+U58;DD;18. Zerstörergeschwader
+U58;DD;19. Zerstörergeschwader
+U58;DD;20. Zerstörergeschwader
+U58;DD;21. Zerstörergeschwader
+U58;DD;22. Zerstörergeschwader
+U58;DD;23. Zerstörergeschwader
+U58;DD;24. Zerstörergeschwader
+U58;DD;25. Zerstörergeschwader
+U58;DD;26. Zerstörergeschwader
+U58;DD;27. Zerstörergeschwader
+U58;DD;28. Zerstörergeschwader
+U58;DD;29. Zerstörergeschwader
+U58;DD;30. Zerstörergeschwader
+U58;DD;31. Zerstörergeschwader
+U58;DD;32. Zerstörergeschwader
+U58;DD;33. Zerstörergeschwader
+U58;DD;34. Zerstörergeschwader
+U58;DD;35. Zerstörergeschwader
+U58;DD;36. Zerstörergeschwader
+U58;DD;37. Zerstörergeschwader
+U58;DD;38. Zerstörergeschwader
+U58;DD;39. Zerstörergeschwader
+U58;DD;40. Zerstörergeschwader
+U58;DD;41. Zerstörergeschwader
+U58;DD;42. Zerstörergeschwader
+U58;DD;43. Zerstörergeschwader
+U58;DD;44. Zerstörergeschwader
+U58;DD;45. Zerstörergeschwader
+U58;DD;46. Zerstörergeschwader
+U58;DD;47. Zerstörergeschwader
+U58;DD;48. Zerstörergeschwader
+U58;DD;49. Zerstörergeschwader
+U58;DD;50. Zerstörergeschwader
+U58;DD;51. Zerstörergeschwader
+U58;DD;52. Zerstörergeschwader
+U58;DD;53. Zerstörergeschwader
+U58;DD;54. Zerstörergeschwader
+U58;DD;55. Zerstörergeschwader
+U58;DD;56. Zerstörergeschwader
+U58;DD;57. Zerstörergeschwader
+U58;DD;58. Zerstörergeschwader
+U58;DD;59. Zerstörergeschwader
+U58;DD;60. Zerstörergeschwader
+U58;DD;61. Zerstörergeschwader
+U58;DD;62. Zerstörergeschwader
+U58;DD;63. Zerstörergeschwader
+U58;DD;64. Zerstörergeschwader
+U58;DD;65. Zerstörergeschwader
+U58;DD;66. Zerstörergeschwader
+U58;DD;67. Zerstörergeschwader
+U58;DD;68. Zerstörergeschwader
+U58;DD;69. Zerstörergeschwader
+U58;DD;70. Zerstörergeschwader
+U58;DD;71. Zerstörergeschwader
+U58;DD;72. Zerstörergeschwader
+U58;DD;73. Zerstörergeschwader
+U58;DD;74. Zerstörergeschwader
+U58;DD;75. Zerstörergeschwader
+U58;DD;76. Zerstörergeschwader
+U58;DD;77. Zerstörergeschwader
+U58;DD;78. Zerstörergeschwader
+U58;DD;79. Zerstörergeschwader
+U58;DD;80. Zerstörergeschwader
+U58;DD;81. Zerstörergeschwader
+U58;DD;82. Zerstörergeschwader
+U58;DD;83. Zerstörergeschwader
+U58;DD;84. Zerstörergeschwader
+U58;DD;85. Zerstörergeschwader
+U58;DD;86. Zerstörergeschwader
+U58;DD;87. Zerstörergeschwader
+U58;DD;88. Zerstörergeschwader
+U58;DD;89. Zerstörergeschwader
+U58;DD;90. Zerstörergeschwader
+U58;DD;91. Zerstörergeschwader
+U58;DD;92. Zerstörergeschwader
+U58;DD;93. Zerstörergeschwader
+U58;DD;94. Zerstörergeschwader
+U58;DD;95. Zerstörergeschwader
+U58;DD;96. Zerstörergeschwader
+U58;DD;97. Zerstörergeschwader
+U58;DD;98. Zerstörergeschwader
+U58;DD;99. Zerstörergeschwader
+U58;DD;100. Zerstörergeschwader
+U58;SS;1. Unterseebootsflottille
+U58;SS;2. Unterseebootsflottille
+U58;SS;3. Unterseebootsflottille
+U58;SS;5. Unterseebootsflottille
+U58;SS;6. Unterseebootsflottille
+U58;SS;7. Unterseebootsflottille
+U58;SS;9. Unterseebootsflottille
+U58;SS;10. Unterseebootsflottille
+U58;SS;11. Unterseebootsflottille
+U58;SS;12. Unterseebootsflottille
+U58;SS;13. Unterseebootsflottille
+U58;SS;14. Unterseebootsflottille
+U58;SS;23. Unterseebootsflottille
+U58;SS;29. Unterseebootsflottille
+U58;SS;30. Unterseebootsflottille
+U58;SS;33. Unterseebootsflottille
+U58;SS;35. Unterseebootsflottille
+U58;SS;36. Unterseebootsflottille
+U58;SS;37. Unterseebootsflottille
+U58;SS;38. Unterseebootsflottille
+U58;SS;39. Unterseebootsflottille
+U58;SS;40. Unterseebootsflottille
+U58;SS;41. Unterseebootsflottille
+U58;SS;42. Unterseebootsflottille
+U58;SS;43. Unterseebootsflottille
+U58;SS;44. Unterseebootsflottille
+U58;SS;45. Unterseebootsflottille
+U58;SS;18. Unterseebootsflottille
+U58;SS;19. Unterseebootsflottille
+U58;SS;20. Unterseebootsflottille
+U58;SS;21. Unterseebootsflottille
+U58;SS;22. Unterseebootsflottille
+U58;SS;23. Unterseebootsflottille
+U58;SS;24. Unterseebootsflottille
+U58;SS;25. Unterseebootsflottille
+U58;SS;26. Unterseebootsflottille
+U58;SS;27. Unterseebootsflottille
+U58;SS;31. Unterseebootsflottille
+U58;SS;32. Unterseebootsflottille
+U58;SS;46. Unterseebootsflottille
+U58;SS;47. Unterseebootsflottille
+U58;SS;48. Unterseebootsflottille
+U58;SS;49. Unterseebootsflottille
+U58;SS;50. Unterseebootsflottille
+U58;SS;51. Unterseebootsflottille
+U58;SS;52. Unterseebootsflottille
+U58;SS;53. Unterseebootsflottille
+U58;SS;54. Unterseebootsflottille
+U58;SS;55. Unterseebootsflottille
+U58;SS;56. Unterseebootsflottille
+U58;SS;57. Unterseebootsflottille
+U58;SS;58. Unterseebootsflottille
+U58;SS;59. Unterseebootsflottille
+U58;SS;60. Unterseebootsflottille
+U58;SS;61. Unterseebootsflottille
+U58;SS;62. Unterseebootsflottille
+U58;SS;63. Unterseebootsflottille
+U58;SS;64. Unterseebootsflottille
+U58;SS;65. Unterseebootsflottille
+U58;SS;66. Unterseebootsflottille
+U58;SS;67. Unterseebootsflottille
+U58;SS;68. Unterseebootsflottille
+U58;SS;69. Unterseebootsflottille
+U58;SS;70. Unterseebootsflottille
+U58;SS;71. Unterseebootsflottille
+U58;SS;72. Unterseebootsflottille
+U58;SS;73. Unterseebootsflottille
+U58;SS;74. Unterseebootsflottille
+U58;SS;75. Unterseebootsflottille
+U58;SS;76. Unterseebootsflottille
+U58;SS;77. Unterseebootsflottille
+U58;SS;78. Unterseebootsflottille
+U58;SS;79. Unterseebootsflottille
+U58;SS;80. Unterseebootsflottille
+U58;SS;81. Unterseebootsflottille
+U58;SS;82. Unterseebootsflottille
+U58;SS;83. Unterseebootsflottille
+U58;SS;84. Unterseebootsflottille
+U58;SS;85. Unterseebootsflottille
+U58;SS;86. Unterseebootsflottille
+U58;SS;87. Unterseebootsflottille
+U58;SS;88. Unterseebootsflottille
+U58;SS;89. Unterseebootsflottille
+U58;SS;90. Unterseebootsflottille
+U58;SS;91. Unterseebootsflottille
+U58;SS;92. Unterseebootsflottille
+U58;SS;93. Unterseebootsflottille
+U58;SS;94. Unterseebootsflottille
+U58;SS;95. Unterseebootsflottille
+U58;SS;96. Unterseebootsflottille
+U58;SS;97. Unterseebootsflottille
+U58;SS;98. Unterseebootsflottille
+U58;SS;99. Unterseebootsflottille
+U58;SS;100. Unterseebootsflottille
+U58;NS;101. Unterseebootsflottille
+U58;NS;102. Unterseebootsflottille
+U58;NS;103. Unterseebootsflottille
+U58;NS;105. Unterseebootsflottille
+U58;NS;106. Unterseebootsflottille
+U58;NS;107. Unterseebootsflottille
+U58;NS;109. Unterseebootsflottille
+U58;NS;110. Unterseebootsflottille
+U58;NS;111. Unterseebootsflottille
+U58;NS;112. Unterseebootsflottille
+U58;NS;113. Unterseebootsflottille
+U58;NS;114. Unterseebootsflottille
+U58;NS;123. Unterseebootsflottille
+U58;NS;129. Unterseebootsflottille
+U58;NS;130. Unterseebootsflottille
+U58;NS;133. Unterseebootsflottille
+U58;NS;135. Unterseebootsflottille
+U58;NS;136. Unterseebootsflottille
+U58;NS;137. Unterseebootsflottille
+U58;NS;138. Unterseebootsflottille
+U58;NS;139. Unterseebootsflottille
+U58;NS;140. Unterseebootsflottille
+U58;NS;141. Unterseebootsflottille
+U58;NS;142. Unterseebootsflottille
+U58;NS;143. Unterseebootsflottille
+U58;NS;144. Unterseebootsflottille
+U58;NS;145. Unterseebootsflottille
+U58;NS;118. Unterseebootsflottille
+U58;NS;119. Unterseebootsflottille
+U58;NS;120. Unterseebootsflottille
+U58;NS;121. Unterseebootsflottille
+U58;NS;122. Unterseebootsflottille
+U58;NS;123. Unterseebootsflottille
+U58;NS;124. Unterseebootsflottille
+U58;NS;125. Unterseebootsflottille
+U58;NS;126. Unterseebootsflottille
+U58;NS;127. Unterseebootsflottille
+U58;NS;131. Unterseebootsflottille
+U58;NS;132. Unterseebootsflottille
+U58;NS;146. Unterseebootsflottille
+U58;NS;147. Unterseebootsflottille
+U58;NS;148. Unterseebootsflottille
+U58;NS;149. Unterseebootsflottille
+U58;NS;150. Unterseebootsflottille
+U58;TP;4. Truppentransporterflottille
+U58;TP;5. Truppentransporterflottille
+U58;TP;6. Truppentransporterflottille
+U58;TP;7. Truppentransporterflottille
+U58;TP;8. Truppentransporterflottille
+U58;TP;9. Truppentransporterflottille
+U58;TP;10. Truppentransporterflottille
+U58;TP;11. Truppentransporterflottille
+U58;TP;12. Truppentransporterflottille
+U58;TP;13. Truppentransporterflottille
+U58;TP;14. Truppentransporterflottille
+U58;TP;15. Truppentransporterflottille
+U58;TP;16. Truppentransporterflottille
+U58;TP;17. Truppentransporterflottille
+U58;TP;18. Truppentransporterflottille
+U58;TP;19. Truppentransporterflottille
+U58;TP;20. Truppentransporterflottille
+U58;TP;21. Truppentransporterflottille
+U58;TP;22. Truppentransporterflottille
+U58;TP;23. Truppentransporterflottille
+U58;TP;24. Truppentransporterflottille
+U58;TP;25. Truppentransporterflottille
+U58;TP;26. Truppentransporterflottille
+U58;TP;27. Truppentransporterflottille
+U58;TP;28. Truppentransporterflottille
+U58;TP;29. Truppentransporterflottille
+U58;TP;30. Truppentransporterflottille
+U58;TP;31. Truppentransporterflottille
+U58;TP;32. Truppentransporterflottille
+U58;TP;33. Truppentransporterflottille
+U58;TP;34. Truppentransporterflottille
+U58;TP;35. Truppentransporterflottille
+U58;TP;36. Truppentransporterflottille
+U58;TP;37. Truppentransporterflottille
+U58;TP;38. Truppentransporterflottille
+U58;TP;39. Truppentransporterflottille
+U58;TP;40. Truppentransporterflottille
+U58;TP;41. Truppentransporterflottille
+U58;TP;42. Truppentransporterflottille
+U58;TP;43. Truppentransporterflottille
+U58;TP;44. Truppentransporterflottille
+U58;TP;45. Truppentransporterflottille
+U58;TP;46. Truppentransporterflottille
+U58;TP;47. Truppentransporterflottille
+U58;TP;48. Truppentransporterflottille
+U58;TP;49. Truppentransporterflottille
+U58;TP;50. Truppentransporterflottille
+U58;TP;51. Truppentransporterflottille
+U58;TP;52. Truppentransporterflottille
+U58;TP;53. Truppentransporterflottille
+U58;TP;54. Truppentransporterflottille
+U58;TP;55. Truppentransporterflottille
+U58;TP;56. Truppentransporterflottille
+U58;TP;57. Truppentransporterflottille
+U58;TP;58. Truppentransporterflottille
+U58;TP;59. Truppentransporterflottille
+U58;TP;60. Truppentransporterflottille
+U58;TP;61. Truppentransporterflottille
+U58;TP;62. Truppentransporterflottille
+U58;TP;63. Truppentransporterflottille
+U58;TP;64. Truppentransporterflottille
+U58;TP;65. Truppentransporterflottille
+U58;TP;66. Truppentransporterflottille
+U58;TP;67. Truppentransporterflottille
+U58;TP;68. Truppentransporterflottille
+U58;TP;69. Truppentransporterflottille
+U58;TP;70. Truppentransporterflottille
+U58;TP;71. Truppentransporterflottille
+U58;TP;72. Truppentransporterflottille
+U58;TP;73. Truppentransporterflottille
+U58;TP;74. Truppentransporterflottille
+U58;TP;75. Truppentransporterflottille
+U58;TP;76. Truppentransporterflottille
+U58;TP;77. Truppentransporterflottille
+U58;TP;78. Truppentransporterflottille
+U58;TP;79. Truppentransporterflottille
+U58;TP;80. Truppentransporterflottille
+U58;TP;81. Truppentransporterflottille
+U58;TP;82. Truppentransporterflottille
+U58;TP;83. Truppentransporterflottille
+U58;TP;84. Truppentransporterflottille
+U58;TP;85. Truppentransporterflottille
+U58;TP;86. Truppentransporterflottille
+U58;TP;87. Truppentransporterflottille
+U58;TP;88. Truppentransporterflottille
+U58;TP;89. Truppentransporterflottille
+U58;TP;90. Truppentransporterflottille
+U58;TP;91. Truppentransporterflottille
+U58;TP;92. Truppentransporterflottille
+U58;TP;93. Truppentransporterflottille
+U58;TP;94. Truppentransporterflottille
+U58;TP;95. Truppentransporterflottille
+U58;TP;96. Truppentransporterflottille
+U58;TP;97. Truppentransporterflottille
+U58;TP;98. Truppentransporterflottille
+U58;TP;99. Truppentransporterflottille
+U58;TP;100. Truppentransporterflottille
+U59;HQ;1-ya Armiya
+U59;HQ;2-ya Armiya
+U59;HQ;3-ya Armiya
+U59;HQ;4-ya Armiya
+U59;HQ;5-ya Armiya
+U59;HQ;6-ya Armiya
+U59;HQ;7-ya Armiya
+U59;HQ;8-ya Armiya
+U59;HQ;9-ya Armiya
+U59;HQ;10-ya Armiya
+U59;HQ;11-ya Armiya
+U59;HQ;12-ya Armiya
+U59;HQ;13-ya Armiya
+U59;HQ;14-ya Armiya
+U59;HQ;15-ya Armiya
+U59;HQ;16-ya Armiya
+U59;HQ;17-ya Armiya
+U59;HQ;18-ya Armiya
+U59;HQ;19-ya Armiya
+U59;HQ;20-ya Armiya
+U59;Inf;1-ya Pekhotnaya Diviziya
+U59;Inf;2-ya Pekhotnaya Diviziya
+U59;Inf;3-ya Pekhotnaya Diviziya
+U59;Inf;4-ya Pekhotnaya Diviziya
+U59;Inf;5-ya Pekhotnaya Diviziya
+U59;Inf;6-ya Pekhotnaya Diviziya
+U59;Inf;7-ya Pekhotnaya Diviziya
+U59;Inf;8-ya Pekhotnaya Diviziya
+U59;Inf;9-ya Pekhotnaya Diviziya
+U59;Inf;10-ya Pekhotnaya Diviziya
+U59;Inf;11-ya Pekhotnaya Diviziya
+U59;Inf;12-ya Pekhotnaya Diviziya
+U59;Inf;13-ya Pekhotnaya Diviziya
+U59;Inf;14-ya Pekhotnaya Diviziya
+U59;Inf;15-ya Pekhotnaya Diviziya
+U59;Inf;16-ya Pekhotnaya Diviziya
+U59;Inf;17-ya Pekhotnaya Diviziya
+U59;Inf;18-ya Pekhotnaya Diviziya
+U59;Inf;19-ya Pekhotnaya Diviziya
+U59;Inf;20-ya Pekhotnaya Diviziya
+U59;Inf;21-ya Pekhotnaya Diviziya
+U59;Inf;22-ya Pekhotnaya Diviziya
+U59;Inf;23-ya Pekhotnaya Diviziya
+U59;Inf;24-ya Pekhotnaya Diviziya
+U59;Inf;25-ya Pekhotnaya Diviziya
+U59;Inf;26-ya Pekhotnaya Diviziya
+U59;Inf;27-ya Pekhotnaya Diviziya
+U59;Inf;28-ya Pekhotnaya Diviziya
+U59;Inf;29-ya Pekhotnaya Diviziya
+U59;Inf;30-ya Pekhotnaya Diviziya
+U59;Inf;31-ya Pekhotnaya Diviziya
+U59;Inf;32-ya Pekhotnaya Diviziya
+U59;Inf;33-ya Pekhotnaya Diviziya
+U59;Inf;34-ya Pekhotnaya Diviziya
+U59;Inf;35-ya Pekhotnaya Diviziya
+U59;Inf;36-ya Pekhotnaya Diviziya
+U59;Inf;37-ya Pekhotnaya Diviziya
+U59;Inf;38-ya Pekhotnaya Diviziya
+U59;Inf;39-ya Pekhotnaya Diviziya
+U59;Inf;40-ya Pekhotnaya Diviziya
+U59;Inf;41-ya Pekhotnaya Diviziya
+U59;Inf;42-ya Pekhotnaya Diviziya
+U59;Inf;43-ya Pekhotnaya Diviziya
+U59;Inf;44-ya Pekhotnaya Diviziya
+U59;Inf;45-ya Pekhotnaya Diviziya
+U59;Inf;46-ya Pekhotnaya Diviziya
+U59;Inf;47-ya Pekhotnaya Diviziya
+U59;Inf;48-ya Pekhotnaya Diviziya
+U59;Inf;49-ya Pekhotnaya Diviziya
+U59;Inf;50-ya Pekhotnaya Diviziya
+U59;Inf;51-ya Pekhotnaya Diviziya
+U59;Inf;52-ya Pekhotnaya Diviziya
+U59;Inf;53-ya Pekhotnaya Diviziya
+U59;Inf;54-ya Pekhotnaya Diviziya
+U59;Inf;55-ya Pekhotnaya Diviziya
+U59;Inf;56-ya Pekhotnaya Diviziya
+U59;Inf;57-ya Pekhotnaya Diviziya
+U59;Inf;58-ya Pekhotnaya Diviziya
+U59;Inf;59-ya Pekhotnaya Diviziya
+U59;Inf;60-ya Pekhotnaya Diviziya
+U59;Inf;61-ya Pekhotnaya Diviziya
+U59;Inf;62-ya Pekhotnaya Diviziya
+U59;Inf;63-ya Pekhotnaya Diviziya
+U59;Inf;64-ya Pekhotnaya Diviziya
+U59;Inf;65-ya Pekhotnaya Diviziya
+U59;Inf;66-ya Pekhotnaya Diviziya
+U59;Inf;67-ya Pekhotnaya Diviziya
+U59;Inf;68-ya Pekhotnaya Diviziya
+U59;Inf;69-ya Pekhotnaya Diviziya
+U59;Inf;70-ya Pekhotnaya Diviziya
+U59;Inf;71-ya Pekhotnaya Diviziya
+U59;Inf;72-ya Pekhotnaya Diviziya
+U59;Inf;73-ya Pekhotnaya Diviziya
+U59;Inf;74-ya Pekhotnaya Diviziya
+U59;Inf;75-ya Pekhotnaya Diviziya
+U59;Inf;76-ya Pekhotnaya Diviziya
+U59;Inf;77-ya Pekhotnaya Diviziya
+U59;Inf;78-ya Pekhotnaya Diviziya
+U59;Inf;79-ya Pekhotnaya Diviziya
+U59;Inf;80-ya Pekhotnaya Diviziya
+U59;Inf;81-ya Pekhotnaya Diviziya
+U59;Inf;82-ya Pekhotnaya Diviziya
+U59;Inf;83-ya Pekhotnaya Diviziya
+U59;Inf;84-ya Pekhotnaya Diviziya
+U59;Inf;85-ya Pekhotnaya Diviziya
+U59;Inf;86-ya Pekhotnaya Diviziya
+U59;Inf;87-ya Pekhotnaya Diviziya
+U59;Inf;88-ya Pekhotnaya Diviziya
+U59;Inf;89-ya Pekhotnaya Diviziya
+U59;Inf;90-ya Pekhotnaya Diviziya
+U59;Inf;91-ya Pekhotnaya Diviziya
+U59;Inf;92-ya Pekhotnaya Diviziya
+U59;Inf;93-ya Pekhotnaya Diviziya
+U59;Inf;94-ya Pekhotnaya Diviziya
+U59;Inf;95-ya Pekhotnaya Diviziya
+U59;Inf;96-ya Pekhotnaya Diviziya
+U59;Inf;97-ya Pekhotnaya Diviziya
+U59;Inf;98-ya Pekhotnaya Diviziya
+U59;Inf;99-ya Pekhotnaya Diviziya
+U59;Inf;100-ya Pekhotnaya Diviziya
+U59;Inf;101-ya Pekhotnaya Diviziya
+U59;Inf;102-ya Pekhotnaya Diviziya
+U59;Inf;103-ya Pekhotnaya Diviziya
+U59;Inf;104-ya Pekhotnaya Diviziya
+U59;Inf;105-ya Pekhotnaya Diviziya
+U59;Inf;106-ya Pekhotnaya Diviziya
+U59;Inf;107-ya Pekhotnaya Diviziya
+U59;Inf;108-ya Pekhotnaya Diviziya
+U59;Inf;109-ya Pekhotnaya Diviziya
+U59;Inf;110-ya Pekhotnaya Diviziya
+U59;Inf;111-ya Pekhotnaya Diviziya
+U59;Inf;112-ya Pekhotnaya Diviziya
+U59;Inf;113-ya Pekhotnaya Diviziya
+U59;Inf;114-ya Pekhotnaya Diviziya
+U59;Inf;115-ya Pekhotnaya Diviziya
+U59;Inf;116-ya Pekhotnaya Diviziya
+U59;Inf;117-ya Pekhotnaya Diviziya
+U59;Inf;118-ya Pekhotnaya Diviziya
+U59;Inf;119-ya Pekhotnaya Diviziya
+U59;Inf;120-ya Pekhotnaya Diviziya
+U59;Inf;121-ya Pekhotnaya Diviziya
+U59;Inf;122-ya Pekhotnaya Diviziya
+U59;Inf;123-ya Pekhotnaya Diviziya
+U59;Inf;124-ya Pekhotnaya Diviziya
+U59;Inf;125-ya Pekhotnaya Diviziya
+U59;Inf;126-ya Pekhotnaya Diviziya
+U59;Inf;127-ya Pekhotnaya Diviziya
+U59;Inf;128-ya Pekhotnaya Diviziya
+U59;Inf;129-ya Pekhotnaya Diviziya
+U59;Inf;130-ya Pekhotnaya Diviziya
+U59;Inf;131-ya Pekhotnaya Diviziya
+U59;Inf;132-ya Pekhotnaya Diviziya
+U59;Inf;133-ya Pekhotnaya Diviziya
+U59;Inf;134-ya Pekhotnaya Diviziya
+U59;Inf;135-ya Pekhotnaya Diviziya
+U59;Inf;136-ya Pekhotnaya Diviziya
+U59;Inf;137-ya Pekhotnaya Diviziya
+U59;Inf;138-ya Pekhotnaya Diviziya
+U59;Inf;139-ya Pekhotnaya Diviziya
+U59;Inf;140-ya Pekhotnaya Diviziya
+U59;Inf;141-ya Pekhotnaya Diviziya
+U59;Inf;142-ya Pekhotnaya Diviziya
+U59;Inf;143-ya Pekhotnaya Diviziya
+U59;Inf;144-ya Pekhotnaya Diviziya
+U59;Inf;145-ya Pekhotnaya Diviziya
+U59;Inf;146-ya Pekhotnaya Diviziya
+U59;Inf;147-ya Pekhotnaya Diviziya
+U59;Inf;148-ya Pekhotnaya Diviziya
+U59;Inf;149-ya Pekhotnaya Diviziya
+U59;Inf;150-ya Pekhotnaya Diviziya
+U59;Inf;151-ya Pekhotnaya Diviziya
+U59;Inf;152-ya Pekhotnaya Diviziya
+U59;Inf;153-ya Pekhotnaya Diviziya
+U59;Inf;154-ya Pekhotnaya Diviziya
+U59;Inf;155-ya Pekhotnaya Diviziya
+U59;Inf;156-ya Pekhotnaya Diviziya
+U59;Inf;157-ya Pekhotnaya Diviziya
+U59;Inf;158-ya Pekhotnaya Diviziya
+U59;Inf;159-ya Pekhotnaya Diviziya
+U59;Inf;160-ya Pekhotnaya Diviziya
+U59;Inf;161-ya Pekhotnaya Diviziya
+U59;Inf;162-ya Pekhotnaya Diviziya
+U59;Inf;163-ya Pekhotnaya Diviziya
+U59;Inf;164-ya Pekhotnaya Diviziya
+U59;Inf;165-ya Pekhotnaya Diviziya
+U59;Inf;166-ya Pekhotnaya Diviziya
+U59;Inf;167-ya Pekhotnaya Diviziya
+U59;Inf;168-ya Pekhotnaya Diviziya
+U59;Inf;169-ya Pekhotnaya Diviziya
+U59;Inf;170-ya Pekhotnaya Diviziya
+U59;Inf;171-ya Pekhotnaya Diviziya
+U59;Inf;172-ya Pekhotnaya Diviziya
+U59;Inf;173-ya Pekhotnaya Diviziya
+U59;Inf;174-ya Pekhotnaya Diviziya
+U59;Inf;175-ya Pekhotnaya Diviziya
+U59;Inf;176-ya Pekhotnaya Diviziya
+U59;Inf;177-ya Pekhotnaya Diviziya
+U59;Inf;178-ya Pekhotnaya Diviziya
+U59;Inf;179-ya Pekhotnaya Diviziya
+U59;Inf;180-ya Pekhotnaya Diviziya
+U59;Inf;181-ya Pekhotnaya Diviziya
+U59;Inf;182-ya Pekhotnaya Diviziya
+U59;Inf;183-ya Pekhotnaya Diviziya
+U59;Inf;184-ya Pekhotnaya Diviziya
+U59;Inf;185-ya Pekhotnaya Diviziya
+U59;Inf;186-ya Pekhotnaya Diviziya
+U59;Inf;187-ya Pekhotnaya Diviziya
+U59;Inf;188-ya Pekhotnaya Diviziya
+U59;Inf;189-ya Pekhotnaya Diviziya
+U59;Inf;190-ya Pekhotnaya Diviziya
+U59;Inf;191-ya Pekhotnaya Diviziya
+U59;Inf;192-ya Pekhotnaya Diviziya
+U59;Inf;193-ya Pekhotnaya Diviziya
+U59;Inf;194-ya Pekhotnaya Diviziya
+U59;Inf;195-ya Pekhotnaya Diviziya
+U59;Inf;196-ya Pekhotnaya Diviziya
+U59;Inf;197-ya Pekhotnaya Diviziya
+U59;Inf;198-ya Pekhotnaya Diviziya
+U59;Inf;199-ya Pekhotnaya Diviziya
+U59;Inf;200-ya Pekhotnaya Diviziya
+U59;Gar;1-ya Okruzhnaya brigada
+U59;Gar;2-ya Okruzhnaya brigada
+U59;Gar;3-ya Okruzhnaya brigada
+U59;Gar;4-ya Okruzhnaya brigada
+U59;Gar;5-ya Okruzhnaya brigada
+U59;Gar;6-ya Okruzhnaya brigada
+U59;Gar;7-ya Okruzhnaya brigada
+U59;Gar;8-ya Okruzhnaya brigada
+U59;Gar;9-ya Okruzhnaya brigada
+U59;Gar;10-ya Okruzhnaya brigada
+U59;Gar;11-ya Okruzhnaya brigada
+U59;Gar;12-ya Okruzhnaya brigada
+U59;Gar;13-ya Okruzhnaya brigada
+U59;Gar;14-ya Okruzhnaya brigada
+U59;Gar;15-ya Okruzhnaya brigada
+U59;Gar;16-ya Okruzhnaya brigada
+U59;Gar;17-ya Okruzhnaya brigada
+U59;Gar;18-ya Okruzhnaya brigada
+U59;Gar;19-ya Okruzhnaya brigada
+U59;Gar;20-ya Okruzhnaya brigada
+U59;Gar;21-ya Okruzhnaya brigada
+U59;Gar;22-ya Okruzhnaya brigada
+U59;Gar;23-ya Okruzhnaya brigada
+U59;Gar;24-ya Okruzhnaya brigada
+U59;Gar;25-ya Okruzhnaya brigada
+U59;Gar;26-ya Okruzhnaya brigada
+U59;Cav;1-ya Kavaleriiskaya Diviziya
+U59;Cav;2-ya Kavaleriiskaya Diviziya
+U59;Cav;3-ya Kavaleriiskaya Diviziya
+U59;Cav;4-ya Kavaleriiskaya Diviziya
+U59;Cav;5-ya Kavaleriiskaya Diviziya
+U59;Cav;6-ya Kavaleriiskaya Diviziya
+U59;Cav;7-ya Kavaleriiskaya Diviziya
+U59;Cav;8-ya Kavaleriiskaya Diviziya
+U59;Cav;9-ya Kavaleriiskaya Diviziya
+U59;Cav;10-ya Kavaleriiskaya Diviziya
+U59;Cav;11-ya Kavaleriiskaya Diviziya
+U59;Cav;12-ya Kavaleriiskaya Diviziya
+U59;Cav;13-ya Kavaleriiskaya Diviziya
+U59;Cav;14-ya Kavaleriiskaya Diviziya
+U59;Cav;15-ya Kavaleriiskaya Diviziya
+U59;Cav;16-ya Kavaleriiskaya Diviziya
+U59;Cav;17-ya Kavaleriiskaya Diviziya
+U59;Cav;18-ya Kavaleriiskaya Diviziya
+U59;Cav;19-ya Kavaleriiskaya Diviziya
+U59;Cav;1-ya Terskaya Kazach'ya Diviziya
+U59;Cav;20-ya Kavaleriiskaya Diviziya
+U59;Cav;21-ya Kavaleriiskaya Diviziya
+U59;Cav;1-ya Sibirskaya Kazach'ya Diviziya
+U59;Cav;22-ya Kavaleriiskaya Diviziya
+U59;Cav;1-ya Uralskaya Kazach'ya Diviziya
+U59;Cav;23-ya Kavaleriiskaya Diviziya
+U59;Cav;1-ya Astrakhanskaya Kazach'ya Diviziya
+U59;Cav;24-ya Kavaleriiskaya Diviziya
+U59;Cav;25-ya Kavaleriiskaya Diviziya
+U59;Cav;2-ya Sibirskaya Kazach'ya Diviziya
+U59;Cav;26-ya Kavaleriiskaya Diviziya
+U59;Cav;27-ya Kavaleriiskaya Diviziya
+U59;Cav;1-ya Zabaykalskaya Kazach'ya Diviziya
+U59;Cav;28-ya Kavaleriiskaya Diviziya
+U59;Cav;29-ya Kavaleriiskaya Diviziya
+U59;Cav;2-ya Donskaya Kazach'ya Diviziya
+U59;Cav;30-ya Kavaleriiskaya Diviziya
+U59;Cav;3-ya Donskaya Kazach'ya Diviziya
+U59;Cav;31-ya Kavaleriiskaya Diviziya
+U59;Cav;32-ya Kavaleriiskaya Diviziya
+U59;Cav;2-ya Zabaykalskaya Kazach'ya Diviziya
+U59;Cav;3-ya Donskaya Kazach'ya Diviziya
+U59;Cav;4-ya Donskaya Kazach'ya Diviziya
+U59;Cav;33-ya Kavaleriiskaya Diviziya
+U59;Cav;34-ya Kavaleriiskaya Diviziya
+U59;Cav;35-ya Kavaleriiskaya Diviziya
+U59;Cav;36-ya Kavaleriiskaya Diviziya
+U59;Cav;37-ya Kavaleriiskaya Diviziya
+U59;Cav;38-ya Kavaleriiskaya Diviziya
+U59;Cav;39-ya Kavaleriiskaya Diviziya
+U59;Cav;40-ya Kavaleriiskaya Diviziya
+U59;Mot;1-ya Mobilnaya Diviziya
+U59;Mot;2-ya Mobilnaya Diviziya
+U59;Mot;3-ya Mobilnaya Diviziya
+U59;Mot;4-ya Mobilnaya Diviziya
+U59;Mot;5-ya Mobilnaya Diviziya
+U59;Mot;6-ya Mobilnaya Diviziya
+U59;Mot;7-ya Mobilnaya Diviziya
+U59;Mot;8-ya Mobilnaya Diviziya
+U59;Mot;9-ya Mobilnaya Diviziya
+U59;Mot;10-ya Mobilnaya Diviziya
+U59;Mot;11-ya Mobilnaya Diviziya
+U59;Mot;12-ya Mobilnaya Diviziya
+U59;Mot;13-ya Mobilnaya Diviziya
+U59;Mot;14-ya Mobilnaya Diviziya
+U59;Mot;15-ya Mobilnaya Diviziya
+U59;Mot;16-ya Mobilnaya Diviziya
+U59;Mot;17-ya Mobilnaya Diviziya
+U59;Mot;18-ya Mobilnaya Diviziya
+U59;Mot;19-ya Mobilnaya Diviziya
+U59;Mot;20-ya Mobilnaya Diviziya
+U59;Mot;21-ya Mobilnaya Diviziya
+U59;Mot;22-ya Mobilnaya Diviziya
+U59;Mot;23-ya Mobilnaya Diviziya
+U59;Mot;24-ya Mobilnaya Diviziya
+U59;Mot;25-ya Mobilnaya Diviziya
+U59;Mot;26-ya Mobilnaya Diviziya
+U59;Mot;27-ya Mobilnaya Diviziya
+U59;Mot;28-ya Mobilnaya Diviziya
+U59;Mot;29-ya Mobilnaya Diviziya
+U59;Mot;30-ya Mobilnaya Diviziya
+U59;Mot;31-ya Mobilnaya Diviziya
+U59;Mot;32-ya Mobilnaya Diviziya
+U59;Mec;1-ya Mekh. Diviziya
+U59;Mec;2-ya Mekh. Diviziya
+U59;Mec;3-ya Mekh. Diviziya
+U59;Mec;4-ya Mekh. Diviziya
+U59;Mec;5-ya Mekh. Diviziya
+U59;Mec;6-ya Mekh. Diviziya
+U59;Mec;7-ya Mekh. Diviziya
+U59;Mec;8-ya Mekh. Diviziya
+U59;Mec;9-ya Mekh. Diviziya
+U59;Mec;10-ya Mekh. Diviziya
+U59;Mec;11-ya Mekh. Diviziya
+U59;Mec;12-ya Mekh. Diviziya
+U59;Mec;13-ya Mekh. Diviziya
+U59;Mec;14-ya Mekh. Diviziya
+U59;Mec;15-ya Mekh. Diviziya
+U59;Mec;16-ya Mekh. Diviziya
+U59;Mec;17-ya Mekh. Diviziya
+U59;Mec;18-ya Mekh. Diviziya
+U59;Mec;19-ya Mekh. Diviziya
+U59;Mec;20-ya Mekh. Diviziya
+U59;Mec;21-ya Mekh. Diviziya
+U59;Mec;22-ya Mekh. Diviziya
+U59;Mec;23-ya Mekh. Diviziya
+U59;Mec;24-ya Mekh. Diviziya
+U59;Mec;25-ya Mekh. Diviziya
+U59;Mec;26-ya Mekh. Diviziya
+U59;Mec;27-ya Mekh. Diviziya
+U59;Mec;28-ya Mekh. Diviziya
+U59;Mec;29-ya Mekh. Diviziya
+U59;Mec;30-ya Mekh. Diviziya
+U59;Mec;31-ya Mekh. Diviziya
+U59;Mec;32-ya Mekh. Diviziya
+U59;Mec;33-ya Mekh. Diviziya
+U59;Mec;34-ya Mekh. Diviziya
+U59;Mec;35-ya Mekh. Diviziya
+U59;Mec;36-ya Mekh. Diviziya
+U59;Mec;37-ya Mekh. Diviziya
+U59;Mec;38-ya Mekh. Diviziya
+U59;Mec;39-ya Mekh. Diviziya
+U59;Mec;40-ya Mekh. Diviziya
+U59;Mec;41-ya Mekh. Diviziya
+U59;Mec;42-ya Mekh. Diviziya
+U59;Mec;43-ya Mekh. Diviziya
+U59;Mec;44-ya Mekh. Diviziya
+U59;Mec;45-ya Mekh. Diviziya
+U59;Mec;46-ya Mekh. Diviziya
+U59;Mec;47-ya Mekh. Diviziya
+U59;Mec;48-ya Mekh. Diviziya
+U59;Mec;49-ya Mekh. Diviziya
+U59;Mec;50-ya Mekh. Diviziya
+U59;Mec;51-ya Mekh. Diviziya
+U59;Mec;52-ya Mekh. Diviziya
+U59;Mec;53-ya Mekh. Diviziya
+U59;Mec;54-ya Mekh. Diviziya
+U59;Mec;55-ya Mekh. Diviziya
+U59;Mec;56-ya Mekh. Diviziya
+U59;Mec;57-ya Mekh. Diviziya
+U59;Mec;58-ya Mekh. Diviziya
+U59;Mec;59-ya Mekh. Diviziya
+U59;Mec;60-ya Mekh. Diviziya
+U59;Mec;61-ya Mekh. Diviziya
+U59;Mec;62-ya Mekh. Diviziya
+U59;Mec;63-ya Mekh. Diviziya
+U59;Mec;64-ya Mekh. Diviziya
+U59;Mec;65-ya Mekh. Diviziya
+U59;Mec;66-ya Mekh. Diviziya
+U59;L ARM;1-ya Tankovaya Brigada
+U59;L ARM;2-ya Tankovaya Brigada
+U59;L ARM;3-ya Tankovaya Brigada
+U59;L ARM;4-ya Tankovaya Brigada
+U59;L ARM;5-ya Tankovaya Brigada
+U59;L ARM;6-ya Tankovaya Brigada
+U59;L ARM;7-ya Tankovaya Brigada
+U59;L ARM;8-ya Tankovaya Brigada
+U59;L ARM;9-ya Tankovaya Brigada
+U59;L ARM;10-ya Tankovaya Brigada
+U59;L ARM;11-ya Tankovaya Brigada
+U59;L ARM;12-ya Tankovaya Brigada
+U59;L ARM;13-ya Tankovaya Brigada
+U59;L ARM;14-ya Tankovaya Brigada
+U59;L ARM;15-ya Tankovaya Brigada
+U59;L ARM;16-ya Tankovaya Brigada
+U59;L ARM;17-ya Tankovaya Brigada
+U59;L ARM;18-ya Tankovaya Brigada
+U59;L ARM;19-ya Tankovaya Brigada
+U59;L ARM;20-ya Tankovaya Brigada
+U59;L ARM;21-ya Tankovaya Brigada
+U59;L ARM;22-ya Tankovaya Brigada
+U59;L ARM;23-ya Tankovaya Brigada
+U59;L ARM;24-ya Tankovaya Brigada
+U59;L ARM;25-ya Tankovaya Brigada
+U59;L ARM;26-ya Tankovaya Brigada
+U59;L ARM;27-ya Tankovaya Brigada
+U59;L ARM;28-ya Tankovaya Brigada
+U59;L ARM;29-ya Tankovaya Brigada
+U59;L ARM;30-ya Tankovaya Brigada
+U59;L ARM;31-ya Tankovaya Brigada
+U59;L ARM;32-ya Tankovaya Brigada
+U59;L ARM;33-ya Tankovaya Brigada
+U59;L ARM;34-ya Tankovaya Brigada
+U59;L ARM;35-ya Tankovaya Brigada
+U59;L ARM;36-ya Tankovaya Brigada
+U59;L ARM;37-ya Tankovaya Brigada
+U59;L ARM;38-ya Tankovaya Brigada
+U59;L ARM;39-ya Tankovaya Brigada
+U59;L ARM;40-ya Tankovaya Brigada
+U59;L ARM;41-ya Tankovaya Brigada
+U59;L ARM;42-ya Tankovaya Brigada
+U59;L ARM;43-ya Tankovaya Brigada
+U59;L ARM;44-ya Tankovaya Brigada
+U59;L ARM;45-ya Tankovaya Brigada
+U59;L ARM;46-ya Tankovaya Brigada
+U59;L ARM;47-ya Tankovaya Brigada
+U59;L ARM;48-ya Tankovaya Brigada
+U59;L ARM;49-ya Tankovaya Brigada
+U59;L ARM;50-ya Tankovaya Brigada
+U59;Arm;1-ya Tankovaya Diviziya
+U59;Arm;2-ya Tankovaya Diviziya
+U59;Arm;3-ya Tankovaya Diviziya
+U59;Arm;4-ya Tankovaya Diviziya
+U59;Arm;5-ya Tankovaya Diviziya
+U59;Arm;6-ya Tankovaya Diviziya
+U59;Arm;7-ya Tankovaya Diviziya
+U59;Arm;8-ya Tankovaya Diviziya
+U59;Arm;9-ya Tankovaya Diviziya
+U59;Arm;10-ya Tankovaya Diviziya
+U59;Arm;11-ya Tankovaya Diviziya
+U59;Arm;12-ya Tankovaya Diviziya
+U59;Arm;13-ya Tankovaya Diviziya
+U59;Arm;14-ya Tankovaya Diviziya
+U59;Arm;15-ya Tankovaya Diviziya
+U59;Arm;16-ya Tankovaya Diviziya
+U59;Arm;17-ya Tankovaya Diviziya
+U59;Arm;18-ya Tankovaya Diviziya
+U59;Arm;19-ya Tankovaya Diviziya
+U59;Arm;20-ya Tankovaya Diviziya
+U59;Arm;21-ya Tankovaya Diviziya
+U59;Arm;22-ya Tankovaya Diviziya
+U59;Arm;23-ya Tankovaya Diviziya
+U59;Arm;24-ya Tankovaya Diviziya
+U59;Arm;25-ya Tankovaya Diviziya
+U59;Arm;26-ya Tankovaya Diviziya
+U59;Arm;27-ya Tankovaya Diviziya
+U59;Arm;28-ya Tankovaya Diviziya
+U59;Arm;29-ya Tankovaya Diviziya
+U59;Arm;30-ya Tankovaya Diviziya
+U59;Arm;31-ya Tankovaya Diviziya
+U59;Arm;32-ya Tankovaya Diviziya
+U59;Arm;33-ya Tankovaya Diviziya
+U59;Arm;34-ya Tankovaya Diviziya
+U59;Arm;35-ya Tankovaya Diviziya
+U59;Arm;36-ya Tankovaya Diviziya
+U59;Arm;37-ya Tankovaya Diviziya
+U59;Arm;38-ya Tankovaya Diviziya
+U59;Arm;39-ya Tankovaya Diviziya
+U59;Arm;40-ya Tankovaya Diviziya
+U59;Arm;41-ya Tankovaya Diviziya
+U59;Arm;42-ya Tankovaya Diviziya
+U59;Arm;43-ya Tankovaya Diviziya
+U59;Arm;44-ya Tankovaya Diviziya
+U59;Arm;45-ya Tankovaya Diviziya
+U59;Arm;46-ya Tankovaya Diviziya
+U59;Arm;47-ya Tankovaya Diviziya
+U59;Arm;48-ya Tankovaya Diviziya
+U59;Arm;49-ya Tankovaya Diviziya
+U59;Arm;50-ya Tankovaya Diviziya
+U59;Par;1-ya Aeromobilnaya Diviziya
+U59;Par;2-ya Aeromobilnaya Diviziya
+U59;Par;3-ya Aeromobilnaya Diviziya
+U59;Par;4-ya Aeromobilnaya Diviziya
+U59;Par;5-ya Aeromobilnaya Diviziya
+U59;Par;6-ya Aeromobilnaya Diviziya
+U59;Par;7-ya Aeromobilnaya Diviziya
+U59;Par;8-ya Aeromobilnaya Diviziya
+U59;Par;9-ya Aeromobilnaya Diviziya
+U59;Par;10-ya Aeromobilnaya Diviziya
+U59;Par;11-ya Aeromobilnaya Diviziya
+U59;Par;12-ya Aeromobilnaya Diviziya
+U59;Par;13-ya Aeromobilnaya Diviziya
+U59;Par;14-ya Aeromobilnaya Diviziya
+U59;Par;15-ya Aeromobilnaya Diviziya
+U59;Par;16-ya Aeromobilnaya Diviziya
+U59;Par;17-ya Aeromobilnaya Diviziya
+U59;Par;18-ya Aeromobilnaya Diviziya
+U59;Par;19-ya Aeromobilnaya Diviziya
+U59;Par;20-ya Aeromobilnaya Diviziya
+U59;Par;21-ya Aeromobilnaya Diviziya
+U59;Par;22-ya Aeromobilnaya Diviziya
+U59;Par;23-ya Aeromobilnaya Diviziya
+U59;Par;24-ya Aeromobilnaya Diviziya
+U59;Par;25-ya Aeromobilnaya Diviziya
+U59;Par;26-ya Aeromobilnaya Diviziya
+U59;Par;27-ya Aeromobilnaya Diviziya
+U59;Par;28-ya Aeromobilnaya Diviziya
+U59;Par;29-ya Aeromobilnaya Diviziya
+U59;Par;30-ya Aeromobilnaya Diviziya
+U59;Mar;1-ya Mor. Strelkovaya Diviziya
+U59;Mar;2-ya Mor. Strelkovaya Diviziya
+U59;Mar;3-ya Mor. Strelkovaya Diviziya
+U59;Mar;4-ya Mor. Strelkovaya Diviziya
+U59;Mar;5-ya Mor. Strelkovaya Diviziya
+U59;Mar;6-ya Mor. Strelkovaya Diviziya
+U59;Mar;7-ya Mor. Strelkovaya Diviziya
+U59;Mar;8-ya Mor. Strelkovaya Diviziya
+U59;Mar;9-ya Mor. Strelkovaya Diviziya
+U59;Mar;10-ya Mor. Strelkovaya Diviziya
+U59;Mar;11-ya Mor. Strelkovaya Diviziya
+U59;Mar;12-ya Mor. Strelkovaya Diviziya
+U59;Mar;13-ya Mor. Strelkovaya Diviziya
+U59;Mar;14-ya Mor. Strelkovaya Diviziya
+U59;Mar;15-ya Mor. Strelkovaya Diviziya
+U59;Mar;16-ya Mor. Strelkovaya Diviziya
+U59;Mar;17-ya Mor. Strelkovaya Diviziya
+U59;Mar;18-ya Mor. Strelkovaya Diviziya
+U59;Mar;19-ya Mor. Strelkovaya Diviziya
+U59;Mar;20-ya Mor. Strelkovaya Diviziya
+U59;Mtn;1-ya Gornaya Diviziya
+U59;Mtn;2-ya Gornaya Diviziya
+U59;Mtn;3-ya Gornaya Diviziya
+U59;Mtn;4-ya Gornaya Diviziya
+U59;Mtn;5-ya Gornaya Diviziya
+U59;Mtn;6-ya Gornaya Diviziya
+U59;Mtn;7-ya Gornaya Diviziya
+U59;Mtn;8-ya Gornaya Diviziya
+U59;Mtn;9-ya Gornaya Diviziya
+U59;Mtn;10-ya Gornaya Diviziya
+U59;Mtn;11-ya Gornaya Diviziya
+U59;Mtn;12-ya Gornaya Diviziya
+U59;Mtn;13-ya Gornaya Diviziya
+U59;Mtn;14-ya Gornaya Diviziya
+U59;Mtn;15-ya Gornaya Diviziya
+U59;Mtn;16-ya Gornaya Diviziya
+U59;Mtn;17-ya Gornaya Diviziya
+U59;Mtn;18-ya Gornaya Diviziya
+U59;Mtn;19-ya Gornaya Diviziya
+U59;Mtn;20-ya Gornaya Diviziya
+U59;Mil;1-ya Diviziya Opolcheniya
+U59;Mil;2-ya Diviziya Opolcheniya
+U59;Mil;3-ya Diviziya Opolcheniya
+U59;Mil;4-ya Diviziya Opolcheniya
+U59;Mil;5-ya Diviziya Opolcheniya
+U59;Mil;6-ya Diviziya Opolcheniya
+U59;Mil;7-ya Diviziya Opolcheniya
+U59;Mil;8-ya Diviziya Opolcheniya
+U59;Mil;9-ya Diviziya Opolcheniya
+U59;Mil;10-ya Diviziya Opolcheniya
+U59;Mil;11-ya Diviziya Opolcheniya
+U59;Mil;12-ya Diviziya Opolcheniya
+U59;Mil;13-ya Diviziya Opolcheniya
+U59;Mil;14-ya Diviziya Opolcheniya
+U59;Mil;15-ya Diviziya Opolcheniya
+U59;Mil;16-ya Diviziya Opolcheniya
+U59;Mil;17-ya Diviziya Opolcheniya
+U59;Mil;18-ya Diviziya Opolcheniya
+U59;Mil;19-ya Diviziya Opolcheniya
+U59;Mil;20-ya Diviziya Opolcheniya
+U59;Mil;21-ya Diviziya Opolcheniya
+U59;Mil;22-ya Diviziya Opolcheniya
+U59;Mil;23-ya Diviziya Opolcheniya
+U59;Mil;24-ya Diviziya Opolcheniya
+U59;Mil;25-ya Diviziya Opolcheniya
+U59;Mil;26-ya Diviziya Opolcheniya
+U59;Mil;27-ya Diviziya Opolcheniya
+U59;Mil;28-ya Diviziya Opolcheniya
+U59;Mil;29-ya Diviziya Opolcheniya
+U59;Mil;30-ya Diviziya Opolcheniya
+U59;Mil;31-ya Diviziya Opolcheniya
+U59;Mil;32-ya Diviziya Opolcheniya
+U59;Mil;33-ya Diviziya Opolcheniya
+U59;Mil;34-ya Diviziya Opolcheniya
+U59;Mil;35-ya Diviziya Opolcheniya
+U59;Mil;36-ya Diviziya Opolcheniya
+U59;Mil;37-ya Diviziya Opolcheniya
+U59;Mil;38-ya Diviziya Opolcheniya
+U59;Mil;39-ya Diviziya Opolcheniya
+U59;Mil;40-ya Diviziya Opolcheniya
+U59;Mil;41-ya Diviziya Opolcheniya
+U59;Mil;42-ya Diviziya Opolcheniya
+U59;Mil;43-ya Diviziya Opolcheniya
+U59;Mil;44-ya Diviziya Opolcheniya
+U59;Mil;45-ya Diviziya Opolcheniya
+U59;Mil;46-ya Diviziya Opolcheniya
+U59;Mil;47-ya Diviziya Opolcheniya
+U59;Mil;48-ya Diviziya Opolcheniya
+U59;Mil;49-ya Diviziya Opolcheniya
+U59;Mil;50-ya Diviziya Opolcheniya
+U59;Mil;51-ya Diviziya Opolcheniya
+U59;Mil;52-ya Diviziya Opolcheniya
+U59;Mil;53-ya Diviziya Opolcheniya
+U59;Mil;54-ya Diviziya Opolcheniya
+U59;Mil;55-ya Diviziya Opolcheniya
+U59;Mil;56-ya Diviziya Opolcheniya
+U59;Mil;57-ya Diviziya Opolcheniya
+U59;Mil;58-ya Diviziya Opolcheniya
+U59;Mil;59-ya Diviziya Opolcheniya
+U59;Mil;60-ya Diviziya Opolcheniya
+U59;Mil;61-ya Diviziya Opolcheniya
+U59;Mil;62-ya Diviziya Opolcheniya
+U59;Mil;63-ya Diviziya Opolcheniya
+U59;Mil;64-ya Diviziya Opolcheniya
+U59;Mil;65-ya Diviziya Opolcheniya
+U59;Mil;66-ya Diviziya Opolcheniya
+U59;Mil;67-ya Diviziya Opolcheniya
+U59;Mil;68-ya Diviziya Opolcheniya
+U59;Mil;69-ya Diviziya Opolcheniya
+U59;Mil;70-ya Diviziya Opolcheniya
+U59;Mil;71-ya Diviziya Opolcheniya
+U59;Mil;72-ya Diviziya Opolcheniya
+U59;Mil;73-ya Diviziya Opolcheniya
+U59;Mil;74-ya Diviziya Opolcheniya
+U59;Mil;75-ya Diviziya Opolcheniya
+U59;Mil;76-ya Diviziya Opolcheniya
+U59;Mil;77-ya Diviziya Opolcheniya
+U59;Mil;78-ya Diviziya Opolcheniya
+U59;Mil;79-ya Diviziya Opolcheniya
+U59;Mil;80-ya Diviziya Opolcheniya
+U59;Mil;81-ya Diviziya Opolcheniya
+U59;Mil;82-ya Diviziya Opolcheniya
+U59;Mil;83-ya Diviziya Opolcheniya
+U59;Mil;84-ya Diviziya Opolcheniya
+U59;Mil;85-ya Diviziya Opolcheniya
+U59;Mil;86-ya Diviziya Opolcheniya
+U59;Mil;87-ya Diviziya Opolcheniya
+U59;Mil;88-ya Diviziya Opolcheniya
+U59;Mil;89-ya Diviziya Opolcheniya
+U59;Mil;90-ya Diviziya Opolcheniya
+U59;Mil;91-ya Diviziya Opolcheniya
+U59;Mil;92-ya Diviziya Opolcheniya
+U59;Mil;93-ya Diviziya Opolcheniya
+U59;Mil;94-ya Diviziya Opolcheniya
+U59;Mil;95-ya Diviziya Opolcheniya
+U59;Mil;96-ya Diviziya Opolcheniya
+U59;Mil;97-ya Diviziya Opolcheniya
+U59;Mil;98-ya Diviziya Opolcheniya
+U59;Mil;99-ya Diviziya Opolcheniya
+U59;Mil;100-ya Diviziya Opolcheniya
+U59;Fig;1-y Aviaotryad
+U59;Fig;2-y Aviaotryad
+U59;Fig;3-y Aviaotryad
+U59;Fig;4-y Aviaotryad
+U59;Fig;5-y Aviaotryad
+U59;Fig;6-y Aviaotryad
+U59;Fig;7-y Aviaotryad
+U59;Fig;8-y Aviaotryad
+U59;Fig;9-y Aviaotryad
+U59;Fig;10-y Aviaotryad
+U59;Fig;11-y Aviaotryad
+U59;Fig;12-y Aviaotryad
+U59;Fig;13-y Aviaotryad
+U59;Fig;14-y Aviaotryad
+U59;Fig;15-y Aviaotryad
+U59;Fig;16-y Aviaotryad
+U59;Fig;17-y Aviaotryad
+U59;Fig;18-y Aviaotryad
+U59;Fig;19-y Aviaotryad
+U59;Fig;20-y Aviaotryad
+U59;Fig;21-y Aviaotryad
+U59;Fig;22-y Aviaotryad
+U59;Fig;23-y Aviaotryad
+U59;Fig;24-y Aviaotryad
+U59;Fig;25-y Aviaotryad
+U59;Fig;26-y Aviaotryad
+U59;Fig;27-y Aviaotryad
+U59;Fig;28-y Aviaotryad
+U59;Fig;29-y Aviaotryad
+U59;Fig;30-y Aviaotryad
+U59;Fig;31-y Aviaotryad
+U59;Fig;32-y Aviaotryad
+U59;Fig;33-y Aviaotryad
+U59;Fig;34-y Aviaotryad
+U59;Fig;35-y Aviaotryad
+U59;Fig;36-y Aviaotryad
+U59;Fig;37-y Aviaotryad
+U59;Fig;38-y Aviaotryad
+U59;Fig;39-y Aviaotryad
+U59;Fig;40-y Aviaotryad
+U59;Fig;41-y Aviaotryad
+U59;Int F;1-y Vozd. Otryad
+U59;Int F;2-y Vozd. Otryad
+U59;Int F;3-y Vozd. Otryad
+U59;Int F;4-y Vozd. Otryad
+U59;Int F;5-y Vozd. Otryad
+U59;Int F;6-y Vozd. Otryad
+U59;Int F;7-y Vozd. Otryad
+U59;Int F;8-y Vozd. Otryad
+U59;Int F;9-y Vozd. Otryad
+U59;Int F;10-y Vozd. Otryad
+U59;Int F;11-y Vozd. Otryad
+U59;Int F;12-y Vozd. Otryad
+U59;Int F;13-y Vozd. Otryad
+U59;Int F;14-y Vozd. Otryad
+U59;Int F;15-y Vozd. Otryad
+U59;Int F;16-y Vozd. Otryad
+U59;Int F;17-y Vozd. Otryad
+U59;Int F;18-y Vozd. Otryad
+U59;Int F;19-y Vozd. Otryad
+U59;Int F;20-y Vozd. Otryad
+U59;Int F;21-y Vozd. Otryad
+U59;Int F;22-y Vozd. Otryad
+U59;Int F;23-y Vozd. Otryad
+U59;Int F;24-y Vozd. Otryad
+U59;Int F;25-y Vozd. Otryad
+U59;Int F;26-y Vozd. Otryad
+U59;Int F;27-y Vozd. Otryad
+U59;Int F;28-y Vozd. Otryad
+U59;Int F;29-y Vozd. Otryad
+U59;Int F;30-y Vozd. Otryad
+U59;Int F;31-y Vozd. Otryad
+U59;Int F;32-y Vozd. Otryad
+U59;Int F;33-y Vozd. Otryad
+U59;Int F;34-y Vozd. Otryad
+U59;Int F;35-y Vozd. Otryad
+U59;Str;1-y Tyazh. Aviaotryad
+U59;Str;2-y Tyazh. Aviaotryad
+U59;Str;3-y Tyazh. Aviaotryad
+U59;Str;4-y Tyazh. Aviaotryad
+U59;Str;5-y Tyazh. Aviaotryad
+U59;Str;6-y Tyazh. Aviaotryad
+U59;Str;7-y Tyazh. Aviaotryad
+U59;Str;8-y Tyazh. Aviaotryad
+U59;Str;9-y Tyazh. Aviaotryad
+U59;Str;10-y Tyazh. Aviaotryad
+U59;Str;11-y Tyazh. Aviaotryad
+U59;Str;12-y Tyazh. Aviaotryad
+U59;Str;13-y Tyazh. Aviaotryad
+U59;Str;14-y Tyazh. Aviaotryad
+U59;Str;15-y Tyazh. Aviaotryad
+U59;Str;16-y Tyazh. Aviaotryad
+U59;Str;17-y Tyazh. Aviaotryad
+U59;Tac;1-y Bomb. Aviaotryad
+U59;Tac;2-y Bomb. Aviaotryad
+U59;Tac;3-y Bomb. Aviaotryad
+U59;Tac;4-y Bomb. Aviaotryad
+U59;Tac;5-y Bomb. Aviaotryad
+U59;Tac;6-y Bomb. Aviaotryad
+U59;Tac;7-y Bomb. Aviaotryad
+U59;Tac;8-y Bomb. Aviaotryad
+U59;Tac;9-y Bomb. Aviaotryad
+U59;Tac;10-y Bomb. Aviaotryad
+U59;Tac;11-y Bomb. Aviaotryad
+U59;Tac;12-y Bomb. Aviaotryad
+U59;Tac;13-y Bomb. Aviaotryad
+U59;Tac;14-y Bomb. Aviaotryad
+U59;Tac;15-y Bomb. Aviaotryad
+U59;Tac;16-y Bomb. Aviaotryad
+U59;Tac;17-y Bomb. Aviaotryad
+U59;CAS;1-y Udarny Aviaotryad
+U59;CAS;2-y Udarny Aviaotryad
+U59;CAS;3-y Udarny Aviaotryad
+U59;CAS;4-y Udarny Aviaotryad
+U59;CAS;5-y Udarny Aviaotryad
+U59;CAS;6-y Udarny Aviaotryad
+U59;CAS;7-y Udarny Aviaotryad
+U59;CAS;8-y Udarny Aviaotryad
+U59;CAS;9-y Udarny Aviaotryad
+U59;CAS;10-y Udarny Aviaotryad
+U59;CAS;11-y Udarny Aviaotryad
+U59;CAS;12-y Udarny Aviaotryad
+U59;CAS;13-y Udarny Aviaotryad
+U59;CAS;14-y Udarny Aviaotryad
+U59;CAS;15-y Udarny Aviaotryad
+U59;CAS;16-y Udarny Aviaotryad
+U59;CAS;17-y Udarny Aviaotryad
+U59;CAS;18-y Udarny Aviaotryad
+U59;CAS;19-y Udarny Aviaotryad
+U59;CAS;20-y Udarny Aviaotryad
+U59;CAS;21-y Udarny Aviaotryad
+U59;CAS;22-y Udarny Aviaotryad
+U59;CAS;23-y Udarny Aviaotryad
+U59;CAS;24-y Udarny Aviaotryad
+U59;CAS;25-y Udarny Aviaotryad
+U59;CAS;26-y Udarny Aviaotryad
+U59;CAS;27-y Udarny Aviaotryad
+U59;CAS;28-y Udarny Aviaotryad
+U59;CAS;29-y Udarny Aviaotryad
+U59;CAS;30-y Udarny Aviaotryad
+U59;CAS;31-y Udarny Aviaotryad
+U59;CAS;32-y Udarny Aviaotryad
+U59;CAS;33-y Udarny Aviaotryad
+U59;CAS;34-y Udarny Aviaotryad
+U59;CAS;35-y Udarny Aviaotryad
+U59;CAS;36-y Udarny Aviaotryad
+U59;CAS;37-y Udarny Aviaotryad
+U59;CAS;38-y Udarny Aviaotryad
+U59;CAS;39-y Udarny Aviaotryad
+U59;CAS;40-y Udarny Aviaotryad
+U59;CAS;41-y Udarny Aviaotryad
+U59;CAS;42-y Udarny Aviaotryad
+U59;CAS;43-y Udarny Aviaotryad
+U59;CAS;44-y Udarny Aviaotryad
+U59;CAS;45-y Udarny Aviaotryad
+U59;CAS;46-y Udarny Aviaotryad
+U59;Nav;1-y Morskoy Aviaotryad
+U59;Nav;2-y Morskoy Aviaotryad
+U59;Nav;3-y Morskoy Aviaotryad
+U59;Nav;4-y Morskoy Aviaotryad
+U59;Nav;5-y Morskoy Aviaotryad
+U59;Nav;6-y Morskoy Aviaotryad
+U59;Nav;7-y Morskoy Aviaotryad
+U59;Nav;8-y Morskoy Aviaotryad
+U59;Nav;9-y Morskoy Aviaotryad
+U59;Nav;10-y Morskoy Aviaotryad
+U59;Nav;11-y Morskoy Aviaotryad
+U59;Nav;12-y Morskoy Aviaotryad
+U59;Nav;13-y Morskoy Aviaotryad
+U59;Nav;14-y Morskoy Aviaotryad
+U59;Nav;15-y Morskoy Aviaotryad
+U59;Nav;16-y Morskoy Aviaotryad
+U59;Nav;17-y Morskoy Aviaotryad
+U59;Nav;18-y Morskoy Aviaotryad
+U59;Nav;19-y Morskoy Aviaotryad
+U59;Nav;20-y Morskoy Aviaotryad
+U59;Trp;1-y Transp. Aviaotryad
+U59;Trp;2-y Transp. Aviaotryad
+U59;Trp;3-y Transp. Aviaotryad
+U59;Trp;4-y Transp. Aviaotryad
+U59;Trp;5-y Transp. Aviaotryad
+U59;Trp;6-y Transp. Aviaotryad
+U59;Trp;7-y Transp. Aviaotryad
+U59;Trp;8-y Transp. Aviaotryad
+U59;Trp;9-y Transp. Aviaotryad
+U59;Trp;10-y Transp. Aviaotryad
+U59;BB;Imperator Petr I
+U59;BB;Imperator Alexander III
+U59;BB;Imperator Alexander II
+U59;BB;Imperator Alexander I
+U59;BB;Imperatritsa Anna
+U59;BB;Imperator Nikolay I
+U59;BB;Imperatritsa Ekaterina I
+U59;BB;Imperator Pavel I
+U59;BB;Imperator Petr III
+U59;BB;Imperator Nikolay II
+U59;BB;Admiral Ushakov
+U59;BB;Pobeda
+U59;BB;Chesma
+U59;BB;Sinop
+U59;BB;Ioann Grozny
+U59;BB;Andrey Pervozvanny
+U59;BB;Nikolay Chudotvorets
+U59;BB;Veliky Knyaz Konstantin
+U59;BC;Borodino
+U59;BC;Izmail
+U59;BC;Poltava
+U59;BC;Kniaz Potemkin-Tavrichesky
+U59;BC;Alexandr Nevsky
+U59;BC;Navarin
+U59;BC;Peresvet
+U59;BC;Oslyabia
+U59;BC;Kinburn
+U59;BC;Retvizan
+U59;BC;Kniaz Oleg
+U59;BC;Kniaz Igor
+U59;BC;Kniaz Svytoslav
+U59;BC;Svyatoi Vladimir
+U59;BC;Ilya Prorok
+U59;BC;Georgiy Pobenosets
+U59;CA;Kronstadt
+U59;CA;Sankt-Peterburg
+U59;CA;Odessa
+U59;CA;Revel
+U59;CA;Admiral Spiridov
+U59;CA;Simferopol
+U59;CA;Admiral Seniavin
+U59;CA;Admiral Lazarev
+U59;CA;Admiral Greig
+U59;CA;Admiral Kruzenstern
+U59;CA;Admiral Bellinsgauzen
+U59;CA;Admiral Chichagov
+U59;CA;Admiral Lefort
+U59;CA;Admiral Nevelskoy
+U59;CA;Admiral Butakov
+U59;CA;Feldmarshal Suvorov
+U59;CA;Feldmarshal Kutuzov
+U59;CA;General Bagration
+U59;CA;General Ermolov
+U59;CA;General Barklay-de-Tolli
+U59;CA;General Raevsky
+U59;CA;General Uvarov
+U59;CA;General Dokhturov
+U59;CA;Ataman Platov
+U59;CA;Okhotsk
+U59;CA;Vladivostok
+U59;CA;General Skobelev
+U59;CA;Feldmarshal Gurko
+U59;CA;Feldmarshal Rumyantsev
+U59;CA;Feldmarshal Paskevich
+U59;CL;Vityaz
+U59;CL;Sotnik
+U59;CL;Druzhinnik
+U59;CL;Voevoda
+U59;CL;Latnik
+U59;CL;Varyag
+U59;CL;Helsingfors
+U59;CL;Svyatoi Boris
+U59;CL;Svyatoi Gleb
+U59;CL;Muraviev-Amursky
+U59;CL;Muraviev-Karsky
+U59;CL;Fedor Stratilat
+U59;CL;Dmitry Solunsky
+U59;CL;Ioann Voin
+U59;CL;Arkhangel Mikhail
+U59;CL;Arkhangel Gavriil
+U59;CL;Pamiat Merkuria
+U59;CL;Pamiat Azova
+U59;CV;Nikolay Zhukovsky
+U59;CV;Alexander Mozhaysky
+U59;CV;Petr Nesterov
+U59;CV;Dmitry Donskoy
+U59;CV;Ilya Muromets
+U59;CV;Svyatogor
+U59;CV;Moskva
+U59;CV;Ivan III
+U59;CV;Ioann Kalita
+U59;CV;Daniil Moskovsky
+U59;CV;Yuri Dolgorukiy
+U59;27;Orlitsa
+U59;27;Almaz
+U59;27;Dakia
+U59;27;Korol Karl
+U59;27;Imperator Trajan
+U59;27;Rus'
+U59;27;Orel
+U59;27;Berkut
+U59;27;Krechet
+U59;27;Kondor
+U59;27;Sapsan
+U59;31;Orlitsa
+U59;31;Almaz
+U59;31;Dakia
+U59;31;Korol Karl
+U59;31;Imperator Trajan
+U59;31;Rus'
+U59;31;Orel
+U59;31;Berkut
+U59;31;Krechet
+U59;31;Kondor
+U59;31;Sapsan
+U59;DD;1-ya Flotiliya Esmintsev
+U59;DD;2-ya Flotiliya Esmintsev
+U59;DD;3-ya Flotiliya Esmintsev
+U59;DD;4-ya Flotiliya Esmintsev
+U59;DD;5-ya Flotiliya Esmintsev
+U59;DD;6-ya Flotiliya Esmintsev
+U59;DD;7-ya Flotiliya Esmintsev
+U59;DD;8-ya Flotiliya Esmintsev
+U59;DD;9-ya Flotiliya Esmintsev
+U59;DD;10-ya Flotiliya Esmintsev
+U59;DD;11-ya Flotiliya Esmintsev
+U59;DD;12-ya Flotiliya Esmintsev
+U59;DD;13-ya Flotiliya Esmintsev
+U59;DD;14-ya Flotiliya Esmintsev
+U59;DD;15-ya Flotiliya Esmintsev
+U59;DD;16-ya Flotiliya Esmintsev
+U59;DD;17-ya Flotiliya Esmintsev
+U59;DD;18-ya Flotiliya Esmintsev
+U59;DD;19-ya Flotiliya Esmintsev
+U59;DD;20-ya Flotiliya Esmintsev
+U59;SS;1-ya Podvodnaya Flotiliya
+U59;SS;2-ya Podvodnaya Flotiliya
+U59;SS;3-ya Podvodnaya Flotiliya
+U59;SS;4-ya Podvodnaya Flotiliya
+U59;SS;5-ya Podvodnaya Flotiliya
+U59;SS;6-ya Podvodnaya Flotiliya
+U59;SS;7-ya Podvodnaya Flotiliya
+U59;SS;8-ya Podvodnaya Flotiliya
+U59;SS;9-ya Podvodnaya Flotiliya
+U59;SS;10-ya Podvodnaya Flotiliya
+U59;SS;11-ya Podvodnaya Flotiliya
+U59;SS;12-ya Podvodnaya Flotiliya
+U59;SS;13-ya Podvodnaya Flotiliya
+U59;SS;14-ya Podvodnaya Flotiliya
+U59;SS;15-ya Podvodnaya Flotiliya
+U59;SS;16-ya Podvodnaya Flotiliya
+U59;SS;17-ya Podvodnaya Flotiliya
+U59;SS;18-ya Podvodnaya Flotiliya
+U59;SS;19-ya Podvodnaya Flotiliya
+U59;SS;20-ya Podvodnaya Flotiliya
+U59;TP;1-ya Transportnaya Flotiliya
+U59;TP;2-ya Transportnaya Flotiliya
+U59;TP;3-ya Transportnaya Flotiliya
+U59;TP;4-ya Transportnaya Flotiliya
+U59;TP;5-ya Transportnaya Flotiliya
+U59;TP;6-ya Transportnaya Flotiliya
+U59;TP;7-ya Transportnaya Flotiliya
+U59;TP;8-ya Transportnaya Flotiliya
+U59;TP;9-ya Transportnaya Flotiliya
+U59;TP;10-ya Transportnaya Flotiliya
+U59;TP;11-ya Transportnaya Flotiliya
+U59;TP;12-ya Transportnaya Flotiliya
+U59;TP;13-ya Transportnaya Flotiliya
+U59;TP;14-ya Transportnaya Flotiliya
+U59;TP;15-ya Transportnaya Flotiliya
+U59;TP;16-ya Transportnaya Flotiliya
+U59;TP;17-ya Transportnaya Flotiliya
+U59;TP;18-ya Transportnaya Flotiliya
+U59;TP;19-ya Transportnaya Flotiliya
+U59;TP;20-ya Transportnaya Flotiliya
 U70;HQ;1st Ugandan Army
 U70;HQ;2nd Ugandan Army
 U70;HQ;1st Ugandan Army Group
