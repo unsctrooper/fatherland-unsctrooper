@@ -1805,7 +1805,7 @@ action_a = {
 name = "The Pact of Steel will rise from it's ashes!"
 ai_chance = 100
 command = { type = dissent value = -5 }
-command = { type = alliance which = ITA }
+command = { type = alliance which = GER }
 }
 
 action_b = {
