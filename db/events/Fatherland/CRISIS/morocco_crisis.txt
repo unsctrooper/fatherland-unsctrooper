@@ -65,7 +65,7 @@ id = 90001501
 random = no
 country = SPA
 style = 2
-picture = "spanish_morroco"
+picture = "news_paper"
 
 
 	name = "A demand by the sultan of Morocco"
@@ -492,7 +492,7 @@ id = 90001516
 random = no
 country = SPA
 style = 2
-picture = "spanish_morocco"
+picture = "news_paper"
 
 
 	name = "A demand by the sultan of Morocco"
