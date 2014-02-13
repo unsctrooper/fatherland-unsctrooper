@@ -446,7 +446,7 @@ event = {
 	action_a = {
 	name = "ACTION_NAME_GREAT"
 		command = { type = dissent value = -10 }
-		command = { type =	alliance which = USA }
+		command = { type = alliance which = ENG }
 		command = { type = construct which = ic where = 717 value = -5 }
 	}
 }
