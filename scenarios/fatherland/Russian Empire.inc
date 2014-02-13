@@ -16,6 +16,7 @@ money                  = 50
 capital                = 1142
 manpower               = 50
 dissent                = 5
+vp = 1
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 3 
@@ -126,9 +127,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1142
      name     = "3-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 1  } 
+     id       = {  type = 23601 id = 1  } 
     division = 
-     { id       = {  type = 50000 id = 2  } 
+     { id       = {  type = 23601 id = 2  } 
        name     = "2-ya Mobilnaya Diviziya" 
        type     = motorized 
        model    = 2 
@@ -136,7 +137,7 @@ inventions = { 3000027 }
        experience = 40
       }
 	  division = 
-     { id       = {  type = 50000 id = 3  } 
+     { id       = {  type = 23601 id = 3  } 
        name     = "11-ya Pekhotnaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -144,7 +145,7 @@ inventions = { 3000027 }
        experience = 60
       }
 	  division = 
-     { id       = {  type = 50000 id = 4  } 
+     { id       = {  type = 23601 id = 4  } 
        name     = "9-ya Pekhotnaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -155,9 +156,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1142
      name     = "1-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 5  } 
+     id       = {  type = 23601 id = 5  } 
     division = 
-     { id       = {  type = 50000 id = 6  } 
+     { id       = {  type = 23601 id = 6  } 
        name     = "7-ya Pekhotnaya Diviziya" 
        type     = infantry 
        model    = 11
@@ -167,7 +168,7 @@ inventions = { 3000027 }
        experience = 20
       }
 	  division = 
-     { id       = {  type = 50000 id = 7  } 
+     { id       = {  type = 23601 id = 7  } 
        name     = "14-ya Pekhotnaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -177,7 +178,7 @@ inventions = { 3000027 }
        experience = 20
       }
 	  division = 
-     { id       = {  type = 50000 id = 8  } 
+     { id       = {  type = 23601 id = 8  } 
        name     = "3-ya Pekhotnaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -190,9 +191,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1143
      name     = "2-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 9  } 
+     id       = {  type = 23601 id = 9  } 
     division = 
-     { id       = {  type = 50000 id = 10  } 
+     { id       = {  type = 23601 id = 10  } 
        name     = "5-ya Pekhotnaya Diviziya" 
        type     = infantry 
        model    = 11
@@ -200,7 +201,7 @@ inventions = { 3000027 }
        experience = 20
       }
 	  division = 
-     { id       = {  type = 50000 id = 11  } 
+     { id       = {  type = 23601 id = 11  } 
        name     = "17-ya Pekhotnaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -208,7 +209,7 @@ inventions = { 3000027 }
        experience = 20
       }
 	  division = 
-     { id       = {  type = 50000 id = 12  } 
+     { id       = {  type = 23601 id = 12  } 
        name     = "16-ya Pekhotnaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -221,9 +222,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1144
      name     = "7-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 16  } 
+     id       = {  type = 23601 id = 16  } 
     division = 
-     { id       = {  type = 50000 id = 17  } 
+     { id       = {  type = 23601 id = 17  } 
        name     = "3-ya Diviziya Opolcheniya" 
        type     = militia 
        model    = 5
@@ -236,9 +237,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1145
      name     = "8-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 18  } 
+     id       = {  type = 23601 id = 18  } 
     division = 
-     { id       = {  type = 50000 id = 19  } 
+     { id       = {  type = 23601 id = 19  } 
        name     = "5-ya Diviziya Opolcheniya" 
        type     = militia 
        model    = 5
@@ -251,9 +252,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1146
      name     = "9-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 20 } 
+     id       = {  type = 23601 id = 20 } 
     division = 
-     { id       = {  type = 50000 id = 21  } 
+     { id       = {  type = 23601 id = 21  } 
        name     = "7-ya Diviziya Opolcheniya" 
        type     = militia 
        model    = 5
@@ -266,9 +267,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1147
      name     = "6-y Armeyskiy Korpus" 
-     id       = {  type = 50000 id = 22  } 
+     id       = {  type = 23601 id = 22  } 
     division = 
-     { id       = {  type = 50000 id = 23  } 
+     { id       = {  type = 23601 id = 23  } 
        name     = "1-ya Diviziya Opolcheniya" 
        type     = militia 
        model    = 5
@@ -281,17 +282,17 @@ inventions = { 3000027 }
   airunit =
   { location = 1143
     base     = 1143
-    id       = { type = 50000 id = 13 }
+    id       = { type = 23601 id = 13 }
     name     = "Novo Vozdushnogo Komandovaniya"
     division =
-    { id         = { type = 50000 id = 14 }
+    { id         = { type = 23601 id = 14 }
       name       = "3-y Vozd. Otryad"
       strength   = 25
       type       = interceptor
       model      = 12 
     }
     division =
-    { id         = { type = 50000 id = 15 }
+    { id         = { type = 23601 id = 15 }
       name       = "1-y Vozd. Otryad"
       strength   = 25
       type       = multi_role

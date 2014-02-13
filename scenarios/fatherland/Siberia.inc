@@ -17,6 +17,7 @@ money                  = 50
 capital                = 1157
 manpower               = 250
 dissent                = 5
+vp = 1
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
      democratic        = 3 
@@ -190,25 +191,25 @@ inventions = { 3000027 }
   #### Zhdanov Army ####
   ######################
     landunit = 
-   {  id       = {  type = 50001 id =  1 } 
+   {  id       = {  type = 23602 id =  1 } 
      name     = "10-i Mekhanizirovannyi Korpus" 
      location = 1156
       Division = 
-     {  id       = {  type = 50001 id = 2  } 
+     {  id       = {  type = 23602 id = 2  } 
        name     = "21-ya Tankovaya Diviziya" 
        strength = 65 
        type     = light_armor
 	   model    = 0 
       }
       Division = 
-     {  id       = {  type = 50001 id = 3  } 
+     {  id       = {  type = 23602 id = 3  } 
        name     = "24-ya Tankovaya Diviziya" 
        strength = 65 
        type     = light_armor
 	   model    = 0 
       }
       Division = 
-     {  id       = {  type = 50001 id = 4  } 
+     {  id       = {  type = 23602 id = 4  } 
        name     = "198-ya Motostrelkovaya Diviziya" 
        strength = 80 
        type     = motorized
@@ -216,11 +217,11 @@ inventions = { 3000027 }
       }
  } 
    landunit = 
-   {  id       = {  type = 50001 id =  5 } 
+   {  id       = {  type = 23602 id =  5 } 
      name     = "Leningradskyi Voennyi Okrug" 
      location = 1156  
      Division = 
-     {  id       = {  type = 50001 id = 6  } 
+     {  id       = {  type = 23602 id = 6  } 
        name     = "Leningradskyi Voennyi Okrug" 
        strength = 80 
        type     = HQ
@@ -229,21 +230,21 @@ inventions = { 3000027 }
 	   brigade_model = 2
 	   }
      Division = 
-     {  id       = {  type = 50001 id = 7  } 
+     {  id       = {  type = 23602 id = 7  } 
        name     = "177-ya Strelkovaya Diviziya" 
        strength = 80 
        type     = infantry 
 	   model    = 11
       }
      Division = 
-     {  id       = {  type = 50001 id = 8  } 
+     {  id       = {  type = 23602 id = 8  } 
        name     = "191-ya Strelkovaya Diviziya" 
        strength = 80 
        type     = infantry 
 	   model    = 11
       }
      Division = 
-     {  id       = {  type = 50001 id = 9  } 
+     {  id       = {  type = 23602 id = 9  } 
        name     = "8-ya Minskaya Strelkovaya Diviziya" 
        strength = 80 
        type     = infantry 
@@ -251,11 +252,11 @@ inventions = { 3000027 }
       }
  }
  landunit = 
-   {  id       = {  type = 50001 id =  17 } 
+   {  id       = {  type = 23602 id =  17 } 
     name     = "15-ya Armiya" 
     location = 1183
     Division = 
-    {  id       = {  type = 50001 id = 18  } 
+    {  id       = {  type = 23602 id = 18  } 
      name     = "34-ya Srednevolzhskaya Strelkovaya Diviziya" 
      strength = 80 
      type     = infantry 
@@ -263,39 +264,39 @@ inventions = { 3000027 }
      }
  }
    landunit = 
-   {  id       = {  type = 50001 id =  19 } 
+   {  id       = {  type = 23602 id =  19 } 
      name     = "17-ya Armiya" 
      location = 1148
       Division = 
-     {  id       = {  type = 50001 id = 20  } 
+     {  id       = {  type = 23602 id = 20  } 
        name     = "57-ya Tankovaya Diviziya" 
        strength = 20 
        type     = light_armor
 	   model    = 0
       }
       Division = 
-     {  id       = {  type = 50001 id = 21  } 
+     {  id       = {  type = 23602 id = 21  } 
        name     = "61-ya Tankovaya Diviziya" 
        strength = 20 
        type     = light_armor
 	   model    = 0 
       }
      Division = 
-     {  id       = {  type = 50001 id = 22  } 
+     {  id       = {  type = 23602 id = 22  } 
        name     = "36-ya Strelkovaya Diviziya" 
        strength = 70 
        type     = infantry 
 	   model    = 9
       }
      Division = 
-     {  id       = {  type = 50001 id = 23  } 
+     {  id       = {  type = 23602 id = 23  } 
        name     = "57-ya Strelkovaya Diviziya" 
        strength = 70 
        type     = infantry 
 	   model    = 9
       } 
      Division = 
-     {  id       = {  type = 50001 id = 24  } 
+     {  id       = {  type = 23602 id = 24  } 
        name     = "82-ya Strelkovaya Diviziya" 
        strength = 70 
        type     = infantry 
@@ -303,25 +304,25 @@ inventions = { 3000027 }
       } 
  }
    landunit = 
-   {  id       = {  type = 50001 id =  25 } 
+   {  id       = {  type = 23602 id =  25 } 
      name     = "7-ya Armiya" 
      location = 1148
       Division = 
-     {  id       = {  type = 50001 id = 26  } 
+     {  id       = {  type = 23602 id = 26  } 
        name     = "14-ya Tankovaya Diviziya" 
        strength = 10 
        type     = armor
 	   model    = 1
       }
       Division = 
-     {  id       = {  type = 50001 id = 27  } 
+     {  id       = {  type = 23602 id = 27  } 
        name     = "33-ya Tankovaya Diviziya" 
        strength = 10 
        type     = armor
 	   model    = 1
       }
       Division = 
-     {  id       = {  type = 50001 id = 28  } 
+     {  id       = {  type = 23602 id = 28  } 
        name     = "122-ya Motostrelkovaya Diviziya" 
        strength = 25
        type     = motorized
@@ -329,25 +330,25 @@ inventions = { 3000027 }
       }
  }
    landunit = 
-   {  id       = {  type = 50001 id =  29 } 
+   {  id       = {  type = 23602 id =  29 } 
      name     = "13-ya Armiya" 
      location = 1148
       Division = 
-     {  id       = {  type = 50001 id = 30  } 
+     {  id       = {  type = 23602 id = 30  } 
        name     = "45-ya Strelkovaya Diviziya" 
        strength = 75
        type     = infantry
 	   model    = 9
       }
       Division = 
-     {  id       = {  type = 50001 id = 31  } 
+     {  id       = {  type = 23602 id = 31  } 
        name     = "42-ya Strelkovaya Diviziya" 
        strength = 75
        type     = infantry
 	   model    = 9
       }
       Division = 
-     {  id       = {  type = 50001 id = 32  } 
+     {  id       = {  type = 23602 id = 32  } 
        name     = "41-ya Strelkovaya Diviziya" 
        strength = 75
        type     = motorized
@@ -355,25 +356,25 @@ inventions = { 3000027 }
       }
  }
    landunit = 
-   {  id       = {  type = 50001 id =  33 } 
+   {  id       = {  type = 23602 id =  33 } 
      name     = "21-ya Armiya" 
      location = 1148
       Division = 
-     {  id       = {  type = 50001 id = 34  } 
+     {  id       = {  type = 23602 id = 34  } 
        name     = "33-ya Strelkovaya Diviziya" 
        strength = 75 
        type     = infantry
 	   model    = 9
       }
       Division = 
-     {  id       = {  type = 50001 id = 35  } 
+     {  id       = {  type = 23602 id = 35  } 
        name     = "34-ya Strelkovaya Diviziya" 
        strength = 75 
        type     = infantry
 	   model    = 9
       }
       Division = 
-     {  id       = {  type = 50001 id = 36  } 
+     {  id       = {  type = 23602 id = 36  } 
        name     = "65-ya Motostrelkovaya Diviziya" 
        strength = 75
        type     = motorized
@@ -383,9 +384,9 @@ inventions = { 3000027 }
    landunit = 
    { location = 1156
      name     = "17-ya Armiya" 
-     id       = {  type = 50001 id = 37  } 
+     id       = {  type = 23602 id = 37  } 
     division = 
-     { id       = {  type = 50001 id = 38  } 
+     { id       = {  type = 23602 id = 38  } 
        name     = "82-ya Strelkovaya Diviziya" 
        type     = infantry 
        model    = 11
@@ -393,7 +394,7 @@ inventions = { 3000027 }
        experience = 20
       }
 	  division = 
-     { id       = {  type = 50001 id = 39  } 
+     { id       = {  type = 23602 id = 39  } 
        name     = "83-ya Strelkovaya Diviziya" 
        type     = infantry
        model    = 11 
@@ -401,7 +402,7 @@ inventions = { 3000027 }
        experience = 20
       }
 	  division = 
-     { id       = {  type = 50001 id = 40  } 
+     { id       = {  type = 23602 id = 40  } 
        name     = "84-ya Strelkovaya Diviziya"  
        type     = infantry
        model    = 11 
@@ -412,48 +413,48 @@ inventions = { 3000027 }
       }
 	  }
 airunit = { 
-	id = { type = 50001 id = 10 } 
+	id = { type = 23602 id = 10 } 
 	name = "Leningradskaya Vozdushnogo Komandovaniya" 
 	location = 542 # Leningrad
 	base = 542 # Leningrad 
 
 	division = { 
-	id = { type = 50001 id = 11 } 
+	id = { type = 23602 id = 11 } 
 		name = "1.LBABR" 
 		strength = 80 
 		type = multi_role 
 		model = 4 
 			}
 	division = { 
-	id = { type = 50001 id = 12 } 
+	id = { type = 23602 id = 12 } 
 		name = "2.IABR" 
 		strength = 80 
 		type = interceptor 
 		model = 7 
 			}
 	division = { 
-	id = { type = 50001 id = 13 } 
+	id = { type = 23602 id = 13 } 
 		name = "23.TBABR" 
 		strength = 80 
 		type = tactical_bomber 
 		model = 6 
 			}
 	division = { 
-	id = { type = 50001 id = 14 } 
+	id = { type = 23602 id = 14 } 
 		name = "40.TBABR" 
 		strength = 80 
 		type = tactical_bomber 
 		model = 5 
 			}
 	division = { 
-	id = { type = 50001 id = 15 } 
+	id = { type = 23602 id = 15 } 
 		name = "41.TBABR" 
 		strength = 80 
 		type = tactical_bomber 
 		model = 5 
 			}
 	division = { 
-	id = { type = 50001 id = 16 } 
+	id = { type = 23602 id = 16 } 
 		name = "3.TBABR" 
 		strength = 80 
 		type = strategic_bomber 
