@@ -9,7 +9,7 @@ event = {
 	name = "The Rations of the War"
 	desc = "The Germans lived in relative luxury in WWII, fueled by Germany's growing conquests. Only in the latter years, there were some forms of rationing in the country. After the war, the government never fully abolished those programs, due to the closed world market and troubles with increasing argicultural levels in specifically the Lebensraum in the East. However, it was during Hitler 59th birthday all food rationing were abolished."
 	style = 2
-	picture = "news_paper"	
+	picture = "nwo\hitler_final_victory"	
 	
 	date = { day = 20 month = april year = 1948 } 
 
@@ -39,19 +39,19 @@ event = {
 	name = "The Granary of the Fatherland"
 	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"
 	style = 2
-	picture = "news_paper"	
+	picture = "nwo\rosenberg_plan"	
 	
 	action = {
 	    ai_chance = 99
 		name = "We will establish control with force!" 
-		command = { type = dissent value = 3 }
+		command = { type = dissent value = 1 }
 		command = { type = manpowerpool value = -50 }
 		command = { type = trigger which = 93002 }
 	}
 	action = {
 	    ai_chance = 1
 		name = "They can't revolt forever" 
-		command = { type = dissent value = 25 }
+		command = { type = dissent value = 3 }
 	}
 }
 
@@ -60,10 +60,10 @@ event = {
 	random = no
 	country = U41	
 		
-	name = "XXX"
-	desc = "XXX"
+	name = "The Granary of the Fatherland"
+	desc = "The German central government in Berlin has promised to engage on a extensive pacification campaign of Ukraine, to ensure it's status as agricultural haven for the German Fatherland."
 	style = 2
-	picture = "news_paper"	
+	picture = "nwo\rosenberg_plan"	
 	
 	action = {
 		name = "Okay!" 
@@ -89,8 +89,9 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "Burning!"
-	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
-	picture = "news_paper"	
+	desc = "Despite the recent crackdown on partisans within the Reichskommissariat Ukraine, resistance group remains very active. Today, we've heard the unfortunate news that rebels have burned down various farms of German settlers."
+	picture = "nwo\rosenberg_plan"	
+	style = 2
 	
 	action = {
 		name = "Oh no!" 
@@ -116,8 +117,9 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 		
 	name = "Massacre!"
-	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
-	picture = "news_paper"	
+	desc = "Despite the recent crackdown on partisans within the Reichskommissariat Ukraine, resistance group remains very active. Today, we've heard the unfortunate news that Ukrainian barbarians have massacred a German colony."	
+    style = 2
+	picture = "nwo\rosenberg_plan"	
 	
 	action = {
 		name = "Oh no!" 
@@ -140,15 +142,24 @@ event = {
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 		
-	name = "The Granary of the Fatherland"
-	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
-	picture = "news_paper"	
+	name = "Revolution!"
+	desc = "The attempts by Berlin to pacify Ukraine have turned out to be counterproductive. The recent tensions have led to a large scale revolt which threaten to overthrow the Reichskommissariat!"	
+	style = 2
+	picture = "nwo\rosenberg_plan"	
 	
 	action = {
 		name = "Oh no!" 
+		command = { type = trigger which = 93006 }
+		command = { type = sleepevent which = 93003 }
+		command = { type = sleepevent which = 93004 }
 		command = { type = dissent value = 5 }
-		### Revolts
-		### German Reply
+		command = { type = revolt which = -3 } 
+		command = { type = revolt which = -3 } 
+		command = { type = revolt which = -3 } 
+		command = { type = revolt which = -3 } 
+		command = { type = revolt which = -3 } 
+		command = { type = revolt which = -3 } 
+
 	}
 }
 
@@ -157,32 +168,54 @@ event = {
 	random = no
 	country = GER
 		
-	name = "The Granary of the Fatherland"
-	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
-	picture = "news_paper"	
+	name = "The Troubles in Ukraine"
+	desc = "Hitler's envisioned Ukraine, one that'd fulfill the Fatherland of all his needs seems to be unviable. Currently, the Reichskommissariat Ukraine is in near anarchy and Ukrainian resistance groups endanger to overthrow our authority there. Mein Führer, what should we do?"	
+	style = 2
+	picture = "nwo\rosenberg_plan"	
 	
 	action = {
-		name = "Keep Koch!" 
-		command = { type = dissent value = 3 }
+		name = "Repress even harder!" 
+        ai_chance = 99
+		command = { type = dissent value = 1 }
+		command = { type = manpowerpool value = -50 }
 		command = { type = relation which = U40 value = -10 }
+		command = { type = trigger which = 93007 }
 	}
 	action = {
-		name = "Listen to Rosenberg - Replace Koch" 
-		command = { type = dissent value = 5 }
+		name = "Relax our policies" 
+        ai_chance = 1
+		command = { type = dissent value = 10 }
 		command = { type = relation which = U40 value = 10 }
-		### Sleep Assasination of Koch
-		### Replacement
 	}
 }
 
 event = {
-	id = 93007 # Assassination of Koch!
+	id = 93007 # Large Scale Revolt!
 	random = no
-	persistent = yes
 	country = U41	
 	
+	name = "Revolution!"
+	desc = "The attempts by Berlin to pacify Ukraine have turned out to be counterproductive. The recent tensions have led to a large scale revolt which threaten to overthrow the Reichskommissariat!"	
+	style = 2
+	picture = "nwo\rosenberg_plan"	
+	
+	action = {
+		name = "Danke!" 
+		command = { type = dissent value = -5 }
+		command = { type = add_division value = infantry when = 11 }
+		command = { type = add_division value = infantry when = 11 }
+		command = { type = add_division value = infantry when = 11 }
+
+	}
+}
+
+event = {
+	id = 93008 # Assassination of Koch!
+	random = no
+	country = GER	
+	
 	trigger = {
-	flag = GranaryUkraine
+    event = 93007
 	random = 25
 		}
 		
@@ -190,67 +223,47 @@ event = {
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 		
-	name = "The Granary of the Fatherland"
-	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
-	picture = "news_paper"	
-	
-	action = {
-		name = "Oh no!" 
-		command = { type = dissent value = 5 }
-		command = { type = manpowerpool value = -1 }
-		command = { type = trigger which = 93008 }
-	}
-}
-event = {
-	id = 93008 # Assassination of Koch!
-	random = no
-	persistent = yes
-	country = GER	
-		
-	name = "Assassination of Koch"
-	desc = "Hitler always envisioned the Lebensraum, especially the Ukraine, in the East to fulfill all food production Europe could ever need, but progress has been slow in the Reichskommissariats. Koch, Kommissar of Ukraine has failed to preserve Ukraine as the granary of Europe and has barely control over the region. Soviet terrorists are roaming free and regularly target the German colonists and their farms, making any agricultural process counterproductive. Mein Fürher, what should we do?"	style = 2
-	picture = "news_paper"	
+	name = "Assassination attempt on Kommissaris Koch!"
+	desc = "Even despite the hardest crackdowns on troubled Ukraine couldn't evade the violence to be escalating. Partisans organized themselves and invaded the RK capital of Rowne, and marched on to the Reichskommissaris' Office, where they attempted to destroy the building by a bomb."	
+    style = 2
+	picture = "nwo\rosenberg_plan"	
 	
 	action = {
 		name = "This will have reprisals!" 
-		command = { type = dissent value = 3 }
-		command = { type = manpowerpool value = -50 }
-	}
-	action = {
-		name = "That's sad.." 
-		command = { type = dissent value = 15 }
-	}
-}
-
-### Aftermath Events
-
-event = {
-	id = XXXX
-	random = no
-	country = U41	
-		
-	name = "XXX"
-	desc = "XXX"
-	style = 2
-	picture = "news_paper"	
-	
-	action = {
-	    ai_chance = 50
-		name = "Okay!" 
-		command = { type = dissent value = 10 }
-		command = { type = relation which = GER value = -10 }
-		command = { type = relation which = U40 value = 10 }
-		command = { type = free_supplies value = 25 }
-	    command = { type = local_setflag which = ReverseColl } # Step 1/2/3 e.g Perhaps move after Koch
-	}
-	action = {
-	    ai_chance = 50
-		name = "We are not here to help you!" 
 		command = { type = dissent value = 1 }
-		command = { type = relation which = GER value = 10 }
-		command = { type = relation which = U40 value = -10 }
 	}
 }
+
+
+### Aftermath Events -> Reforms, Koch gets replaced. 
+
+#  event = {
+#  id = XXXX
+#random = no
+#country = U41	
+#	
+#name = "XXX"
+#desc = "XXX"
+#style = 2
+#picture = "nwo\rosenberg_plan"	
+#
+#action = {
+#    ai_chance = 50
+#	name = "Okay!" 
+#	command = { type = dissent value = 10 }
+#	command = { type = relation which = GER value = -10 }
+#	command = { type = relation which = U40 value = 10 }
+#	command = { type = free_supplies value = 25 }
+#    command = { type = local_setflag which = ReverseColl } # Step 1/2/3 e.g Perhaps move after Koch
+#}
+#action = {
+#    ai_chance = 50
+#	name = "We are not here to help you!" 
+#	command = { type = dissent value = 1 }
+#	command = { type = relation which = GER value = 10 }
+#	command = { type = relation which = U40 value = -10 }
+#}
+#}
 
 ### Assisination of Koch! - > German Reply -> Argetinian Offer
 ### What to do with Southern Belarus
