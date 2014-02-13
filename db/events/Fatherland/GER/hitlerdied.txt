@@ -1204,8 +1204,8 @@ persistent = yes
 picture = "reichstag"
 
 
-name = "90000542NAME" 
-desc = "90000542DESC"
+name = "The Axis Crumbles" 
+desc = "With the death of Hitler and the personal alliances he signed during the years, combined with the chaos in the Third Reich has caused the fall of the geopolitical order in Europe. Therefore we are no longer officially aligned with either Germany. An uncertain Europe is awaiting us."
 
 action_a = {
 name = ACTION_NAME_OK
@@ -1310,10 +1310,11 @@ desc = "90000538DESC"
 action_a = {
 name = 90000538A
 ai_chance = 99
-command = { type = country which = RUS }
+command = { type = name where = UTC which = "Russian State" }
 command = { type = capital which = 572 }
 command = { type = belligerence value = 5 }
 }
+
 action_b = {
 name = 90000538B
 ai_chance = 1
@@ -1737,6 +1738,7 @@ event = {
     command = { type = make_puppet which = U40 }
     command = { type = independence which = BLR value = 1 }  
     command = { type = make_puppet which = BLR }
+    command = { type = make_puppet which = U42 }
 	}	
 }
 
