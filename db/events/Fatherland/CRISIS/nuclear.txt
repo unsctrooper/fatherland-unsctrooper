@@ -96,7 +96,9 @@ event = {
 		name = "802A"
 		command = { type = money value = -1000 }
 		command = { type = supplies value = -10000 } 
-		command = { type = construct which = nuclear_reactor where = 133 value = 2 }
+		command = { trigger = { ai = no } type = construct which = nuclear_reactor where = 133 value = 2 }
+		command = { trigger = { ai = yes } type = construct which = nuclear_reactor where = 133 value = 6 }
+
 	}
 }
 event = {
