@@ -9,9 +9,10 @@
    # Resource Reserves 
     puppet = UPE
 	name = SIK44
-energy                 = 240
-metal                  = 120
-rare_materials         = 60
+	flag_ext = _eastturkestan	
+    energy                 = 240
+    metal                  = 120
+    rare_materials         = 60
    oil                    = 5000 
    supplies               = 2000 
    money                  = 10 
@@ -20,8 +21,8 @@ rare_materials         = 60
    dissent                = 40 
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
-     democratic        = 3 
-     political_left    = 4 
+     democratic        = 4 
+     political_left    = 8
      freedom           = 3 
      free_market       = 3 
      professional_army = 6

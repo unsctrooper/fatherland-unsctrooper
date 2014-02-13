@@ -290,16 +290,16 @@ event = {
 	picture = "invest_infrastructures"
 	
 decision = {
-war = { country = GER country = SCH }
+puppet = { country = SCH country = GER }
 }
 
 decision_trigger = { 
 money = 1000
-war = { country = GER country = SCH }
+ puppet = { country = SCH country = GER }
 }
 	
 trigger = {
-war = { country = GER country = SCH }
+puppet = { country = SCH country = GER }
 	}
 	
 	

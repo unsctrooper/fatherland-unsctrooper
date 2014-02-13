@@ -155,7 +155,10 @@ command = { type = headofstate which = 23 } # Bormann
 command = { type = domestic which = defense_lobby value = -3 }
 command = { type = domestic which = interventionism value = -3 }
 command = { type = leave_alliance when = 1 }
-command = { type = dissent value = 20 }
+command = { type = dissent value = 10 }
+command = { type = relation which = HUN value = -100 }
+command = { type = relation which = ITA value = -100 }
+command = { type = relation which = ROM value = -100 }
 
 # Axis Crumbles
 command = { trigger = { participant = { country = HUN value = 2 } } type = event which = 90000542 where = HUN when = 2 }
@@ -167,6 +170,8 @@ command = { trigger = { participant = { country = BUL value = 2 } } type = event
 command = { trigger = { participant = { country = FIN value = 2 } } type = event which = 90000542 where = FIN when = 2 }
 command = { trigger = { participant = { country = SWE value = 2 } } type = event which = 90000542 where = SWE when = 2 }
 command = { trigger = { participant = { country = TUR value = 2 } } type = event which = 90000542 where = TUR when = 2 }
+command = { trigger = { participant = { country = TRA value = 2 } } type = event which = 90000542 where = TRA when = 2 }
+command = { trigger = { participant = { country = ITA value = 2 } } type = event which = 90000542 where = ITA when = 2 }
 }
 }
 
@@ -304,7 +309,7 @@ action_c = {
 trigger = { flag = GoringGoebbels }
 name = 90000506C
 ai_chance = 5
-command = { type = dissent value = 15 }
+command = { type = dissent value = 5 }
 command = { type = set_domestic which = democratic value = 3 }	
 command = { type = set_domestic which = political_left value = 3 }	
 command = { type = headofstate which = 15 } # Ludwig Beck
@@ -339,7 +344,7 @@ action_b = {
 trigger = { NOT = { flag = GoringGoebbels } }
 name = 90000506C
 ai_chance = 10
-command = { type = dissent value = 10 }
+command = { type = dissent value = 5 }
 command = { type = set_domestic which = democratic value = 3 }	
 command = { type = set_domestic which = political_left value = 3 }	
 command = { type = headofstate which = 15 } # Ludwig Beck
@@ -771,15 +776,6 @@ random = no
 style = 2
 picture = "Fatherland/German_Gathering"
 
-trigger = { 
-    flag = SSAlive
-	event = 90000518 
-	random = 3
-	}
-
-	date = { day = 1 month = january year = 1948 }
-	offset = 7
-	deathdate = { day = 1 month = january year = 1960 }	
 
 name = "90000519NAME" ### Heydrich/SS Coup attempt!
 desc = "90000519DESC"

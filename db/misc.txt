@@ -90,7 +90,7 @@ economy = {
 # Max final province revolt risk = THIS + current country dissent
 	60 # 100
 # Monthly Nationalism reduction
-	0.250
+	0.125
 # Time in days to send a division to an ally
 	30	
 # TC Load from undeployed brigades (multiplied on top of the division cost)
@@ -162,7 +162,7 @@ economy = {
 # Gearing bonus loss per level of brigade/attachment (added for every upgraded br./att.). Values 0.0 (0% or no gearing bonus lost) to 1.0 (100% or all gearing will be lost)
 	0.05 # -5% gearing bonus per level of upgrade
 # Modifier on dissent taken from nukes in national provinces. Dissent = (MP + IC*0.5) * Nuke Power * THIS.
-	0.5 #0.5
+	0.1 #0.5
 # Max daily dissent that can be added to player controlled countries when not enough supplies are produced (and the same time more then required IC is used on CG or on any other slider then on Supplies). 0.0 - Disabled, 1.0 - No restriction
 	0.0 #1.0
 # Nukes production rate modifier. Higher this is, longer it takes to get a new nuke.
