@@ -7,18 +7,21 @@ event = { # Enable Nukes
 	name = "Active Nukes"
 	desc = "World War III has broken out! Let's not hesistate and evade a long lasting war, but one of mutual destruction!" 
 	style = 2
-	picture = "sinkiang"
+	picture = "atomic_research"
 	
 decision = {
 supplies = 50
+NOT = { local_flag = nukeWWIII }
 }
 
 decision_trigger = { 
 war = { country = GER country = USA }
+NOT = { local_flag = nukeWWIII }
 }
 	
 trigger = {
 war = { country = GER country = USA }
+NOT = { local_flag = nukeWWIII }
 	}
 	
 date = { day = 1 month = january year = 1948 }
@@ -29,5 +32,166 @@ action = {
 name = "Okay!" 
 command = { type = dissent value = 5 }
 command = { type = enable_task which = nuke } 
+command = { type = setlocal_flag which = nukeWWIII } 
+}
+}
+
+event = { # Force Turkey in the War 
+	id = 66601
+	random = no
+    country = GER
+	
+	name = "Force Turkey in the War"
+	desc = "Turkey has always cautiously seeked neutrality between the Allies and the Axis and never showed any willingness to join either side. We need to strike trough Turkey to deal a suffering blow to the Allies in the Middle-East and North Africa." 
+	style = 2
+	picture = "German_Warposter"
+	
+decision = {
+war = { country = GER country = USA }
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+}
+	
+trigger = {
+war = { country = GER country = USA }
+	}
+	
+date = { day = 1 month = january year = 1953 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = war which = TUR }
+}
+}
+
+event = { # Force Saudi Arabia in the War
+	id = 66602
+	random = no
+    country = USA
+	
+	name = "Force Saudi Arabia in the War"
+	desc = "The King of Saudi Arabia, a personal friend of Roosevelt, has already long severed diplomatic ties with the Axis. Now that Axis eyes are sighting on the rich oil fields of the Middle-East, we need to persuade the Saudis to assist us in this war!" 
+	style = 2
+	picture = "news_paper"
+	
+decision = {
+war = { country = GER country = USA }
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+}
+	
+trigger = {
+war = { country = GER country = USA }
+	}
+	
+date = { day = 1 month = january year = 1953 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = alliance which = SAU }
+}
+}
+
+event = { # Force Iran in the War
+	id = 66603
+	random = no
+    country = ENG
+	
+	name = "Force Iran in the War"
+	desc = "The Shah of Iran, an ally of the West and under strong influence of the Allied powers, has long severed diplomatic ties with the Arab powers, fearing secretarian and ethnic conflicts in the Middle-East. Now with the Axis troops entering the Middle-East, we need to persuade Iran to assist us in this war!" 
+	style = 2
+	picture = "news_paper"
+	
+decision = {
+war = { country = GER country = USA }
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+}
+	
+trigger = {
+war = { country = GER country = USA }
+	}
+	
+date = { day = 1 month = january year = 1953 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = alliance which = IRA }
+}
+}
+
+event = { # Force Israel in WWIII
+	id = 66604
+	random = no
+    country = USA
+	
+	name = "Force Israel in the War"
+	desc = "Israel is encircled from all sides by the increasing Arab powers aligned to the Axis. It'd be the only logical choice for them to join us!" 
+	style = 2
+	picture = "news_paper"
+	
+decision = {
+war = { country = GER country = USA }
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+}
+	
+trigger = {
+war = { country = GER country = USA }
+	}
+	
+date = { day = 1 month = january year = 1953 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = alliance which = ISR }
+}
+}
+
+event = { # Force Nasser in WW III
+	id = 66605
+	random = no
+    country = ENG
+	
+	name = "Force the United Arab Republic in the War"
+	desc = "While the progressive and socialist policies of Nasser don't exactly fit with our own ideologue, nor with the our alliance with the conservative Arab Federation, the apparent hatred against the neocolonial Allies and Israel, give us the opportunity to get them in the war." 
+	style = 2
+	picture = "news_paper"
+	
+decision = {
+war = { country = GER country = USA }
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+}
+	
+trigger = {
+war = { country = GER country = USA }
+	}
+	
+date = { day = 1 month = january year = 1953 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = alliance which = EGY }
 }
 }
