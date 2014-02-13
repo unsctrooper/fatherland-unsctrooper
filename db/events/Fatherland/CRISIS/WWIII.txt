@@ -32,7 +32,7 @@ action = {
 name = "Okay!" 
 command = { type = dissent value = 5 }
 command = { type = enable_task which = nuke } 
-command = { type = setlocal_flag which = nukeWWIII } 
+command = { type = local_setflag which = nukeWWIII } 
 }
 }
 
@@ -128,7 +128,7 @@ deathdate = { day = 12 month = march year = 1966 }
 	
 action = { 
 name = "Okay!" 
-command = { type = alliance which = IRA }
+command = { type = alliance which = PER }
 }
 }
 
