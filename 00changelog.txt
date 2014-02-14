@@ -1,6 +1,6 @@
-####################################
-# Changelog for Beta version 3.0
-####################################
+#################################################
+# Changelog for Beta version 3.0 codename "V Day"
+#################################################
 
 #Events/Decision Modified (*) or Added (+) or Removed (-)
 	GERMANY
