@@ -46,8 +46,9 @@ event = {
 		command = { type = event which = 404 where = GER when = 15 }
 		command = { type = event which = 406 where = GER when = 20 }
 		command = { type = event which = 407 where = GER when = 25 }
-		command = { type = event which = 411 where = GER when = 30 }
-		command = { trigger = { puppet = { country = SCH country = GER } } type = event which = 412 where = GER when = 35 }
+		command = { type = event which = 408 where = GER when = 30 }
+		command = { type = event which = 411 where = GER when = 35 }
+		command = { trigger = { puppet = { country = SCH country = GER } } type = event which = 412 where = GER when = 40 }
 	}
 	action = {
 		name = "Proceed with the original Generalplan West"
@@ -242,6 +243,7 @@ event = {
 	name = "408A"
 	ai_chance = 50
 	command = { type = dissent value = 1 }
+	command = { type = addcore which = 116 }
 	}
 	action_b = {
 	name = "408B"
@@ -252,7 +254,6 @@ event = {
 	name = "408C"
 	ai_chance = 25
 	command = { type = secedeprovince which = WLL value = 116 }
-	command = { type = addcore which = 116 }
 	}
 }
 ##############

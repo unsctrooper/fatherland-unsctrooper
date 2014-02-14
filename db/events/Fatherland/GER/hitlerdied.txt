@@ -1633,13 +1633,13 @@ desc = "90000552DESC"
 
 action_a = {
 name = 90000552A
-ai_chance = 80
+ai_chance = 10
 command = { type = war which = HUN }
 }
 action_b = {
 name = 90000552B
-ai_chance = 20
-command = { type = dissent value = 10 }
+ai_chance = 90
+command = { type = dissent value = 3 }
 }
 }
 event = {
@@ -1654,13 +1654,13 @@ desc = "90000553DESC"
 
 action_a = {
 name = 90000553A
-ai_chance = 80
+ai_chance = 10
 command = { type = war which = ROM }
 }
 action_b = {
 name = 90000553B
-ai_chance = 20
-command = { type = dissent value = 10 }
+ai_chance = 90
+command = { type = dissent value = 3 }
 }
 }
 event = {

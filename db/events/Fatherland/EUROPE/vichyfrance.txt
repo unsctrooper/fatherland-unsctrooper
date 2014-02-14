@@ -391,7 +391,7 @@ desc = "363DESC"
 
 date = { day = 1 month = january year = 1948 }
 offset = 7
-deathdate = { day = 1 month = december year = 1955 }
+deathdate = { day = 1 month = december year = 1964 }
 
 action = {
 trigger = { flag = FreeVichy }  
@@ -440,7 +440,7 @@ id = 364
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 3
-	deathdate = { day = 1 month = december year = 1955 }
+	deathdate = { day = 1 month = december year = 1964 }
 
 	name = "364NAME"
     desc = "364DESC"
@@ -602,7 +602,7 @@ id = 372
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 3
-	deathdate = { day = 1 month = december year = 1955 }
+	deathdate = { day = 1 month = december year = 1964 }
 
 	name = "372NAME"
     desc = "372DESC"
@@ -685,14 +685,13 @@ id = 374
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 7
-	deathdate = { day = 1 month = december year = 1955 }
+	deathdate = { day = 1 month = december year = 1964 }
 
 	name = "374NAME"
     desc = "374DESC"
 	
 	action = {
 			name = "374A"
-			ai_chance = 99
 			command = { type = manpowerpool value = -1 }
 			command = { type = dissent value = 10 } 
 			command = { type = trigger which = 375 }

@@ -73,6 +73,10 @@ command = { type = removecore which = 389 }
 command = { type = removecore which = 390 }
 command = { type = removecore which = 391 }
 command = { type = removecore which = 392 }
+command = { type = addclaim which = 389 }
+command = { type = addclaim which = 390 }
+command = { type = addclaim which = 391 }
+command = { type = addclaim which = 392 }
 command = { type = dissent value = 10 }
 command = { type = manpowerpool value = -1000 }
 command = { type = set_domestic which = professional_army value = 7 }
@@ -229,7 +233,7 @@ supplies = 5000
 war = { country = GER country = SCH }
 	}
 
-date = { day = 1 month = augustus year = 1948 }
+date = { day = 1 month = september year = 1948 }
 offset = 7
 deathdate = { day = 12 month = march year = 1966 }
 

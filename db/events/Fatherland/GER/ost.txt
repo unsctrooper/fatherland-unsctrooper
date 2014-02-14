@@ -268,14 +268,14 @@ event = {
 	random = no
 	country = GER
 	
-	name = "205NAME"
+	name = "The Lokot Autonomy and Russia"
 	desc = "205DESC"
  	style = 2
   	picture = "news_paper"
 
 	action = {
 	name = "We need to guard the border with the Soviets ourselves!"
-	ai_chance = 20
+	ai_chance = 10
 	command = { type = dissent value = -3 }
 	} 
 	

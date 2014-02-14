@@ -87,7 +87,7 @@ event = {
 	# Propose the union
 	action = {
 		name = "Propose the union"
-		ai_chance = 90
+		ai_chance = 99
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = trigger which = 8218001 } 
 	}
@@ -95,7 +95,7 @@ event = {
 	# It doesn't interest us
 	action = {
 		name = "It doesn't interest us"
-		ai_chance = 10
+		ai_chance = 1
 		command = { type = dissent value = 5 }
 		command = { type = sleepevent which = 8218001 }
 	}
@@ -117,7 +117,7 @@ event = {
 	# We want to join
 	action = {
 		name = EVT_8218001_A
-		ai_chance = 90
+		ai_chance = 99
 		command = { type = relation which = EGY value = 200 }
 		command = { type = trigger which = 8218002 }
 	}
@@ -125,7 +125,7 @@ event = {
 	# It doesn't interest us
 	action = {
 		name = EVT_8218001_B
-		ai_chance = 10
+		ai_chance = 1
 		command = { type = relation which = EGY value = -100 }
 		command = { type = dissent value = 3 }
 	}
@@ -635,14 +635,14 @@ event = {
     }
 	}
 
-	date = { day = 1 month = january year = 1950 }
+	date = { day = 1 month = april year = 1950 }
 	offset = 14
 	deathdate = { day = 1 month = january year = 1964 }
 
 	# Propose it
 	action_a = {
 		name = EVT_8007517_A
-		ai_chance = 80
+		ai_chance = 99
 		command = { type = trigger which = 8218038 }
 	}
 	
@@ -650,7 +650,7 @@ event = {
 	action_b = {
 		name = EVT_8007517_B
 		trigger = { ai = yes }
-		ai_chance = 20
+		ai_chance = 1
 		command = { type = dissent value = 1 }
 	}
 
@@ -668,14 +668,14 @@ event = {
 	# Agree
 	action_a = {
 		name = EVT_8007518_A
-		ai_chance = 80
+		ai_chance = 99
 		command = { type = trigger which = 8218039 }
 	}
 
 	# We shall remain independent
 	action_b = {
 		name = EVT_8007518_B
-		ai_chance = 20
+		ai_chance = 1
 		command = { type = dissent value = 5 }
 	}
 	

@@ -428,13 +428,13 @@ event = { # Soviet Resurgent!!
 
 	    action_a = { # Check with Zhdanov
 		name = "8014260A"
-        ai_chance = 90
+        ai_chance = 99
         command = { type = dissent value = 1 }
 		command = { type = trigger which = 8014261 }
 	}
 	    action_b = { # We'll Rather Stay Independent
 		name = "8014260B" 
-		ai_chance = 10
+		ai_chance = 1
         command = { type = dissent value = -5 }
 		command = { type = trigger which = 8014264 }		
 	}
@@ -533,7 +533,7 @@ event = { # Dzhanov Reply
 
 	    action_a = { # Let Them Have It
 		name = "8014264A"
-        ai_chance = 75
+        ai_chance = 1
         command = { type = dissent value = 3 }
 		command = { type = alliance which = MON }
 		command = { type = relation which = MON value = 200 }		
@@ -541,7 +541,7 @@ event = { # Dzhanov Reply
 	}
 	    action_b = { # WAR!
 		name = "8014264B" 
-		ai_chance = 25
+		ai_chance = 99
         command = { type = dissent value = -3 }
 		command = { type = war which = MON }	
 	}
