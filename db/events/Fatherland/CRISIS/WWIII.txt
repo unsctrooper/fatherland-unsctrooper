@@ -167,7 +167,7 @@ command = { type = alliance which = ISR }
 event = { # Force Nasser in WW III
 	id = 66605
 	random = no
-    country = ENG
+    country = GER
 	
 	name = "Force the United Arab Republic in the War"
 	desc = "While the progressive and socialist policies of Nasser don't exactly fit with our own ideologue, nor with the our alliance with the conservative Arab Federation, the apparent hatred against the neocolonial Allies and Israel, give us the opportunity to get them in the war." 
