@@ -1,4 +1,143 @@
 ####################################
+# Changelog for Beta version 3.0
+####################################
+
+#Events/Decision Modified (*) or Added (+) or Removed (-)
+	GERMANY
+		- (+) Bailout events
+		- (*) Hitler Death Chain
+		- (*) Generalplan OST Chain
+		- (*) Generalplan WEST Chain
+		- (*) Domestic events
+	AXIS
+		- (+) Reichskommissariat Ukraine events
+		- (*) Reichskommissariat Kaukasus events
+		- (+) Axis military events
+	COMINTERN
+		- (+) New Soviet Area events
+		- (-) Vladivostok Conference
+	EUROPE
+		- (+) Turkey events
+		- (*) Italy domestic events
+		- (*) Italy Grand Council
+		- (*) Vichy France Petain Death Chain
+		- (*) Vichy France domestic
+		- (*) Serbia events
+		- (*) Transylvanian War
+		- (*) Spain domestic events
+		- (*) United Kingdom domestic events
+	CRISIS
+		- (+) The Swiss problem
+		- (+) Nuclear riding
+		- (+) Suez Crisis
+		- (+) Kuwait Crisis		
+		- (*) IRA Chain
+	ASIA
+		- (*) China civil war
+		- (*) Sinkiang fate		
+		- (*) Events for Burma 
+		- (*) Events for Ceylon
+		- (*) Events for Tibet 
+	AFRICA
+		- (*) Ethiopian crisis chain
+		- (*) South Africa events		
+	MIDDLE EAST
+		- (+) Israel formation events
+		- (+) Iran events
+		- (+) UAR events
+		- (+) Arab Federation events
+	AMERICAS
+		- (*) Marshall Plan chain		
+	GENERICS
+		- (+) Political Events - Coups & Regime Changes
+		- (+) Generic Decisions - Grand Offensive
+		- (*) Mobilization events
+
+#DB
+	- Add ministers_sik.csv (Xinjiang)
+	- Add ministers_u58.csv (SS Schutzstaffel)
+	- Add ministers_axi.csv (Axis)
+	- Add ministers_sib.csv (Siberia)
+	- Add ministers_u59.csv (Empire of Russia)
+	- Add ministers_upe.csv (Turkestan)
+	- Add ministers_slo.csv (Slovenia)
+	- Add ministers_u57.csv (Far Eastern Republic)
+	- Add ministers_pri.csv	(Primorsk)
+		
+#Config
+	- Review mods.csv
+	- Review world_names.csv
+	- Review scenario_text.csv
+	- Review unit_names.csv	
+	
+#Inc
+	- New inc for Axis
+	- New inc for Burma
+	- New inc for China Nationalist
+	- New inc for Sinkiang
+	- New inc for Romania
+	- New inc for Egypt
+	- New inc for Iran
+	- New inc for Iraq
+	- New inc for Italy
+	- New inc for Jordan
+	- New inc for Empire of Russia
+	- New inc for Saudi Arabia
+	- New inc for Siberia
+	- New inc for Soviet Union
+	- New inc for Belarus Central Rada
+	- New inc for Cossack Federation
+	- New inc for Croatia
+	- New inc for Finland
+	- New inc for Free France
+	- New inc for GG Polen
+	- New inc for Germany
+	- New inc for Japan
+	- New inc for Lebanon
+	- New inc for Lokot Republic
+	- New inc for Mongolia
+	- New inc for Montenegro
+	- New inc for Flanders
+	- New inc for Wallonia
+	- New inc for Ostland
+	- New inc for Serbia
+	- New inc for SS
+	- New inc for Turkestan
+	- New inc for Far Eastern Republic
+	
+# AI
+	- Improved AI for Soviet Union
+	- Improved AI for France
+	- Improved AI for Free France
+	- Improved AI for Germany
+	- Improved AI for United Kingdom
+	- Improved AI for China Commie and Nationalist
+	- Improved AI for SS
+	- Improved AI for all RK
+
+#Scenarios
+	- Review of fatherland.eug
+	
+#GFX
+	- Correct load screen
+	- New menu screen
+	- New event pics
+	- New icon
+	- New scenario pic
+	- New flags
+	- New counters
+
+#Other
+	- New nations playable (SS,AXIS,Far Eastern Republic,Siberia,Empire of Russia)
+	- Implementing of Cold War Tech Tree Expansion 
+	- Review of revolt.txt
+	- Remove duplicate files
+	- Minor fixing
+
+# Map fixing:
+	- Minor fixing
+	
+####################################
 # Changelog for Beta version 2.0
 ####################################
 
@@ -14,7 +153,6 @@
 		- (+) Spain entry into the axis event
 		- (+) Pacification of Moscow zone
 		- (+) Reichskommissariat Kaukasus events		
-		
 	COMINTERN
 		- (*) Vladivostok Conference
 		- (*) Soviet Union Domestic events
