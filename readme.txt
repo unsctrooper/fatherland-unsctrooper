@@ -1,5 +1,5 @@
 ###########################################################
-# Fatherland Beta 2.0
+# Fatherland Beta 3.0 codename "V Day"
 # A post-ww2 scenario with Germany victorious.
 ###########################################################
 
