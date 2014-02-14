@@ -250,7 +250,7 @@ landunit = {
 	  landunit = {
  id = { type = 17345  id = 40 }
  name = "OKW der Achsenkräfte"
- location = 1050
+ location = 157
   	division = {
    	id = { type = 17345  id = 41 }
        name     = "OKW der Achsenstreitkräfte" 
