@@ -24,7 +24,7 @@ combat = {
 	SCH = 1000
 }
 
- liberate = { BLR SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 LIT WLL FLA HUN ROM } 
+ liberate = { BLR SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 LIT WLL FLA HUN ROM TUR } 
 
 claim_acceptance = -69
 
