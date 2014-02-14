@@ -244,4 +244,42 @@ landunit = {
        experience = 40
       }
       } 
+	  
+	  ## Potsdam HQ
+	  
+	  landunit = {
+ id = { type = 17345  id = 40 }
+ name = "OKW der Achsenkräfte"
+ location = 1050
+  	division = {
+   	id = { type = 17345  id = 41 }
+       name     = "OKW der Achsenstreitkräfte" 
+       type     = hq 
+       model    = 4 
+       strength = 80 
+      }
+	 division = {
+   	id = { type = 17345  id = 42 }
+       name     = "Deutsch-Italienische Sonderbrigade" 
+       type     = paratrooper 
+       model    = 3
+       strength = 80 
+      }
+	 division = {
+   	id = { type = 17345  id = 43 }
+       name     = "Ungarische Expeditionsstreitkräfte" 
+       type     = motorized
+       model    = 3
+       strength = 50 
+	   max_strength = 50
+      }
+	division = {
+   	id = { type = 17345  id = 44 }
+       name     = "Rumänische Expeditionsstreitkräfte" 
+       type     = motorized
+       model    = 3
+       strength = 50 
+	   max_strength = 50
+      }
+      } 
 }
