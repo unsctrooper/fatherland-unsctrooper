@@ -382,7 +382,7 @@ inventions = { 3000027 }
       }
  }
    landunit = 
-   { location = 1156
+   { location = 1154
      name     = "17-ya Armiya" 
      id       = {  type = 23602 id = 37  } 
     division = 
