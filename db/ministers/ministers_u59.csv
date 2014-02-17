@@ -1,3 +1,11 @@
 U59;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
 1110001;Head of State;Kira I;1948;1964;1999;PA;Insignificant Layman;High;Kira_I;X
-1110002;Head of Government;Pavel Bermondt-Avalov;1948;1964;1999;PA;Old General;High;Pavel_Avalov;x
+1110002;Head of Government;Pavel Bermondt-Avalov;1948;1964;1999;PA;Old General;High;6379;x
+1110003;Foreign Minister;Viktor M. Baydalakov;1925;1964;1999;PA;biased intellectual;High;9320;X
+1110004;Minister of Armament;Mikhail Tereshchenko;1914;1964;1999;PA;corrupt kleptocrat;High;3058;X
+1110005;Minister of Security;Boris Gershun;1925;1964;1999;PA;crime fighter;High;9318;X
+1110006;Head of Military Intelligence;Andrei Shkuro;1930;1964;1999;PA;logistics specialist;High;6372;X
+1110007;Chief of Staff;Pavel Bermondt-Avalov;1933;1964;1999;PA;School of Psychology;Medium;6379;X
+1110008;Chief of Army;Pavel Bermondt-Avalov;1933;1964;1999;PA;Static Defence Doctrine;Medium;6379;X
+1110009;Chief of Navy;Alexey Zaev;1925;1964;1999;PA;open seas doctrine;High;5701;X
+1110010;Chief of Air Force;Vyacheslav Tkachov;1916;1964;1999;PA;carpet bombing doctrine;High;5464;X
