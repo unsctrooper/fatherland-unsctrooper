@@ -114,7 +114,7 @@ event = {
 	}
 	
 	name = "First point of congress : the trust in Benito Mussolini"
-	desc = "First point of congress : the trust in Benito Mussolini as DUCE. It should be a formality, but the outcome of the war and the last internal dissent on the country show some dissent on the Council"
+	desc = "First point of congress : the trust in Benito Mussolini as DUCE. It should be a formality, but the outcome of the World War II and the last internal dissent on the country show some dissent on the Council"
 	style = 2
 	picture = "Mussolini"		
 	
@@ -131,7 +131,7 @@ event = {
 	action_b = {
 		name = "The Grand Council no longer trust in Benito Mussolini !" # Il Duce forced to resign
 		ai_chance = 40
-		command = { type = dissent value = 5 }
+		command = { type = dissent value = 15 }
 		command = { type = trigger which = 90000602 }
 	}
 }
@@ -225,7 +225,7 @@ event = {
 		ai_chance = 20
 		trigger = { NOT = { flag = RadicalItaly } }
 		command = { type = setflag which = Chaos }
-		command = { type = dissent value = 2 }
+		command = { type = dissent value = 20 }
 		command = { type = flag_ext where = ITA which = _democratic }
 		command = { type = name where = ITA which = "Italian Republic" }
 		command = { type = headofstate which = 25017 } # Paolo Thaon di Revel, Mussolini HoG
@@ -235,14 +235,14 @@ event = {
 		name = "No, the King will continue to be a puppet "
 		ai_chance = 80
 		trigger = { NOT = { flag = RadicalItaly } }
-		command = { type = dissent value = -1 }
+		command = { type = dissent value = -5 }
 	}
 	action = { #Radicals at Power
 		name = "Yes, the Fascism will renew from the ashes of the Monarchy !"
 		ai_chance = 80
 		trigger = { flag = RadicalItaly }
 		command = { type = setflag which = Chaos }
-		command = { type = dissent value = 1 }
+		command = { type = dissent value = 10 }
 		command = { type = flag_ext where = ITA which = _rsi }
 		command = { type = name where = ITA which = "Italian Social Republic" }
 		command = { type = headofstate which = 25017 } # Paolo Thaon di Revel, Borghese HoG 
@@ -350,13 +350,13 @@ event = {
 	action_a = {
 	name = EVT_90000606_A # No pressure
 	ai_chance = 50
-	command = { type = dissent value = -1 }
+	command = { type = dissent value = -5 }
 	command = { type = domestic which = interventionism value = -2 }
 	}
 	action_b = {
 	name = EVT_90000606_B # Pressure
 	ai_chance = 50
-	command = { type = dissent value = 10 }
+	command = { type = dissent value = 5 }
 	command = { type = domestic which = interventionism value = 1 }
 	}
 }
@@ -385,7 +385,7 @@ event = {
 	action_a = {
 	name = EVT_90000607_A # Only arrest low-profile mafiosi
 	ai_chance = 50
-	command = { type = dissent value = -1 }
+	command = { type = dissent value = -2 }
 	command = { type = setflag which = mafia1 }
 	command = { type = removecore which = 433 }
 	command = { type = removecore which = 432 }
@@ -403,7 +403,7 @@ event = {
 	action_b = {
 	name = EVT_90000607_B # Launch a massive anti-mafia campaign
 	ai_chance = 50
-	command = { type = dissent value = -2 }
+	command = { type = dissent value = -4 }
 	command = { type = setflag which = mafia2 }
 	command = { type = removecore which = 433 }
 	command = { type = removecore which = 432 }
@@ -422,7 +422,7 @@ event = {
 	name = EVT_90000607_C # Ignore the problem
 	ai_chance = 50
 	command = { type = setflag which = mafia3 }
-	command = { type = dissent value = 10 }
+	command = { type = dissent value = 4 }
 	}
 }
 ###########################################################
@@ -464,7 +464,7 @@ event = {
 	ai_chance = 50
 	trigger = { NOT = { flag = IndustrialItaly } }
 	command = { type = domestic which = free_market value = -1 }
-	command = { type = dissent value = 1 }
+	command = { type = dissent value = -1 }
 	}
 }
 ###########################################################
@@ -550,7 +550,7 @@ event = {
 	trigger = { NOT = { OR = {
 	flag = RadicalItaly 
 	flag = IndustrialItaly } } } # Because Conservatives and radicals will not approve of this...
-	command = { type = dissent value = 3 }
+	command = { type = dissent value = 2 }
 	command = { type = industrial_modifier which = total value = 2 }
 	command = { type = manpowerpool value = 2 }
 	}

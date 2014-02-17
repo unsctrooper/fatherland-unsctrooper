@@ -8,6 +8,13 @@ Games Bug
 * RK Norwegen had the "United Ostland" event
 * Dewey as President, but Truman as Vicepresident, why?
 * The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
+* RK Schweiz has not correct counter
+* SS has not correct counter
+* AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
+* Germany has 90000520NAME event 
+* Romania has 90000538B event 
+* Lokot has 90000538A event
+* The SS ferocity may be incremented cause they have a white peace with Germany after they have inherit Ukraine.
 
 Mod Improvement
 
@@ -19,8 +26,6 @@ Forum's Feedback
 * Vichy France is not protected by Germany. If France Vichy is attacked by Allies Germany must intervene.
 * Germany-Cossacks unexpected war after the Volga Conference. Eventually made aftermath events(with a possible rename of Stalingrad ?).
 * Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
-* Italy broke free during their congress and goes left-wing radical, bug.
-* Italy got a pro-mussolini coup but nothing happens apparently
 * The "Reorganization of Ukraine" does nothing if the Cossack Federation does not exist.
 * The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
 * After soviet union chooses beria and begin the purges, siberia gets an event without a real name: 8014270NAME
