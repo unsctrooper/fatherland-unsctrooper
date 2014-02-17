@@ -13,3 +13,22 @@ Mod Improvement
 
 * Revision of mods.csv
 * Moving of events_pics bmp all under fatherland directory
+
+Forum's Feedback
+
+* Vichy France is not protected by Germany. If France Vichy is attacked by Allies Germany must intervene.
+* Germany-Cossacks unexpected war after the Volga Conference. Eventually made aftermath events(with a possible rename of Stalingrad ?).
+* Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
+* Italy broke free during their congress and goes left-wing radical, bug.
+* Italy got a pro-mussolini coup but nothing happens apparently
+* The "Reorganization of Ukraine" does nothing if the Cossack Federation does not exist.
+* The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
+* After soviet union chooses beria and begin the purges, siberia gets an event without a real name: 8014270NAME
+* There's not a surrender event if Germany invade Italy after them leave axis
+* Australia left the allies without event/reason
+* If you choose to nuke test on london and Ireland is already nazi, nothing happens (london should at least get destroyed or damaged?)
+* Despite heydrich killing himmler, himmler is still head of state of crimea
+* After ostland grabs leningrad germany should remove its claim on it because if ostland is still allied with you they will just give it back
+* The Empire of Russia has no ministers exept HoS and HoG
+* I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
+* If a nation of axis become democratic the Axis must intervene.
