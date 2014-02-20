@@ -44,6 +44,7 @@
     relation = { tag = JAP value = -200 }
     relation = { tag = MAN value = 20 }
 	relation = { tag = TRA value = 150 access = yes guaranteed = { day = 1 month = december year = 1955 } }
+	relation = { tag = FRA value = 100 access = yes guaranteed = { day = 1 month = december year = 1955 } }
 	relation = { tag = DEN value = 150 access = yes }
     relation = { tag = MEN value = 20 }
     relation = { tag = NEP value = -200 }

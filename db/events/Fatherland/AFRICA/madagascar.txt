@@ -1,10 +1,10 @@
 # Madagascar
 event = {
 	id = 8210001
-	tag = { ENG FRA ITA GER SPR SPA BEL HOL U05 U02 U01 }
+	tag = { U01 }
 
-	name = EVT_COLONIALUNREST_NAME
-	desc = EVT_COLONIALUNREST_DESC
+	name = "Colonial unrest in Madagascar"
+	desc = "Colonial unrest in Madagascar"
 	picture = "nwo\colonial_unrest"
 	style = 1
 
@@ -23,7 +23,6 @@ event = {
 		command = { type = revolt which = 1001 }
 		command = { type = revolt which = 1002 }
 		command = { type = revolt which = 1003 }
-		
 	}
 }
 
@@ -60,6 +59,9 @@ event = {
 		command = { type = chiefofnavy which = 690035 } # Olivier Randrianantenaina
 		command = { type = chiefofair which = 690037 } # Solomon Rabemanoela
 		
+		command = { type = peace which = USA value = 0 } #Allies
+		command = { type = peace which = U01 value = 0 } #France
+		
 		command = { type = trigger which = 8009111 }
 	}
 }
@@ -68,7 +70,7 @@ event = {
 
 event = {
 	id = 8009111
-	tag = { ENG FRA ITA GER SPR SPA BEL HOL U05 U02 U01 }
+	country = U01
 
 	name = "The Madagascar is independent"
 	desc = "They are independent."

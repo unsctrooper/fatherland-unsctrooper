@@ -1323,7 +1323,7 @@ event = {
 		}
 }
 #########################################################################
-#  Greco-Bulgarian Agreement
+#  Italian-Bulgarian Agreement
 #########################################################################
 
 	event = {
@@ -1346,7 +1346,7 @@ event = {
 		name = "It's a good agreement!"
 		ai_chance = 100
 		
-		command = { type = relation which = ITA value = 20 }
+		command = { type = relation which = BUL value = 20 }
 		command = { type = dissent value = -1 }					
 		}
 }
@@ -1371,7 +1371,7 @@ event = {
 		name = "It's a good agreement!"
 		ai_chance = 100
 		
-		command = { type = relation which = BUL value = 20 }
+		command = { type = relation which = ITA value = 20 }
 		command = { type = dissent value = -2 }				
 		}
 }

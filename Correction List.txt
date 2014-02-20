@@ -13,8 +13,6 @@ Games Bug
 * SS has not correct counter
 * AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
 * Germany has 90000520NAME event 
-* Romania has 90000538B event 
-* Lokot has 90000538A event
 * The SS ferocity may be incremented cause they have a white peace with Germany after they have inherit Ukraine.
 
 Mod Improvement

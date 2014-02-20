@@ -502,13 +502,13 @@ event = {
 
 	action = {
 		name = "Focus on a proposal of a full friendship and cooperation (non-agression pact, military access, trade agreements)" #Propose a full friendship (non-agression pact, military access)
-		ai_chance = 45	
+		ai_chance = 50	
 		command = { type = trigger which = 8012610 } 
 		command = { type = belligerence value = 1 }
 	}
 	action = {
 		name = "Focus on a proposal for a complete Axis alignement" #Invite to Axis
-		ai_chance = 50	
+		ai_chance = 45	
 		command = { type = trigger which = 8012611 } 	
 		command = { type = belligerence value = 3 }		
 	}
@@ -853,10 +853,10 @@ event = {
 	
 	date = { day = 0 month = january year = 1953 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1953 }
+	deathdate = { day = 30 month = december year = 1954 }
 	
 	trigger = {
-		event = 8012621
+		#event = 8012625
 		local_flag = SAFLIMITED
 		control = { province = 867 data = SAF } #Salisbury
 	}
@@ -902,7 +902,7 @@ event = {
 	
 	trigger = {
 		local_flag = SAFLIMITED
-		event = { id = 8012628 days = 30  }
+		event = { id = 8012625 days = 30  }
 		control = { province = 867 data = -1 } #Salisbury
 	}
 	
