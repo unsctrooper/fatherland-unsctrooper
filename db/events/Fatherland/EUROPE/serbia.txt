@@ -35,23 +35,21 @@ event = {
 	decision = {
 		exists = HUN
 		exists = ROM
-		year = 1942 				
-		NOT = { exists = SER }		
+		#year = 1948
 	}
 	decision_trigger = {
-		NOT = { exists = SER }		
-		}		
+		exists = SER
+	}		
 
-	
 	name = "900NAME"
 	desc = "900DESC"
 	style = 2
 	picture = "Reichstag"
 	decision_picture = "decision_anticominternpact"
 
-	date = { day = 1 month = january year = 1940 }
+	date = { day = 1 month = january year = 1948 }
 	offset = 15
-	deathdate = { day = 12 month = march year = 1940 }
+	deathdate = { day = 12 month = march year = 1948 }
 
 	action = {
 		name = "Keep Banat, and confirm Serbia as a puppet state!"

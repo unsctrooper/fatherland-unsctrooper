@@ -180,7 +180,7 @@ event = {
 		command = { type = sleepevent which = 90000605 }
 		command = { type = sleepevent which = 90000606 }
 		command = { type = sleepevent which = 90000609 }
-		command = { type = domestic which = political_left value = 3 } #Paternal Autocrat
+		command = { type = domestic which = political_left value = 2 } #Paternal Autocrat
 		#command = { type = sleepminister which = 25002 } #Mussolini HoS
 		command = { type = sleepminister which = 25004 } #Mussolini MoA
 		command = { type = sleepminister which = 25173 } #Mussolini FM

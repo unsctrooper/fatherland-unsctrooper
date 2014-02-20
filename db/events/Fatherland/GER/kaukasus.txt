@@ -12,6 +12,8 @@
 		#### 92008 - U42 - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
 		#### 92009 - GER - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
 		#### 92010 - TRA - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact		
+
+#### TODO		
 #### 92011 - GER - Offer Armenia to Turkey
 #### 92012 - TUR - Turkish answer
 		#### 92013 - GER - Germany and Turkey - Trebizond Conference
