@@ -3,11 +3,8 @@
 # Review Pako
 # 90000600-90000699
 #####################################
-# NUOVI
-# 90000680 # ITA # Italian situation
-# VECCHI
-# 90000600 # ITA # Extraordinary Grand Council of Fascism
 
+# 90000600 # ITA # Extraordinary Grand Council of Fascism
 # 90000601 # ITA # Mussolini enters the Palazzo Venezia
 # 90000602 # ITA # Il Duce forced to resign
 # 90000603 # ITA # Abolish the monarchy?
@@ -18,8 +15,8 @@
 # 90000608 # ITA # Chamber of Fasci and Corporations
 # 90000609 # ITA # Ideology of the National Fascist Party		
 # 90000610 # ITA # Women in Fascist society
-# 90000611 # ITA # Italo-Yemeni Treaty
-# 90000612 # YEM # Italo-Yemeni Treaty
+# 90000611 # ITA # Italo-Turkey Treaty
+# 90000612 # TUR # Italo-Turkey Treaty
 # 90000613 # ITA # Development project on Corfu? 				
 # 90000614 # ITA # Colonization of Albania 						
 # 90000615 # ITA # Colonization project on the Aegean Islands	

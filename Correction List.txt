@@ -1,4 +1,4 @@
-Updated 19/02
+Updated 22/02
 
 Games Bug
 
@@ -35,3 +35,6 @@ Forum's Feedback
 * After ostland grabs leningrad germany should remove its claim on it because if ostland is still allied with you they will just give it back
 * I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
 * If a nation of axis become democratic the Axis must intervene.
+* There is no Axis block, and Germany, once I take the "reform the axis" decision, does NOT become the alliance leader (makes inviting the Lokot Rep impossible)
+* There is no event for dealing with RK Kaukasus after you win the civil war
+* The Barbarossa II event is horribly bugged, as it requires Germany to station divisions in provinces that the SU grabs during the post-Hitler crisis
