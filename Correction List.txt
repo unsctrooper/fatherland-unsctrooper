@@ -1,4 +1,4 @@
-Updated 22/02
+Updated at 23/02
 
 Games Bug
 
@@ -32,9 +32,16 @@ Forum's Feedback
 * Australia left the allies without event/reason
 * If you choose to nuke test on london and Ireland is already nazi, nothing happens (london should at least get destroyed or damaged?)
 * Despite heydrich killing himmler, himmler is still head of state of crimea
-* After ostland grabs leningrad germany should remove its claim on it because if ostland is still allied with you they will just give it back
+* After ostland grabs leningrad Germany should remove its claim on it because if ostland is still allied with you they will just give it back
 * I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
 * If a nation of axis become democratic the Axis must intervene.
 * There is no Axis block, and Germany, once I take the "reform the axis" decision, does NOT become the alliance leader (makes inviting the Lokot Rep impossible)
 * There is no event for dealing with RK Kaukasus after you win the civil war
 * The Barbarossa II event is horribly bugged, as it requires Germany to station divisions in provinces that the SU grabs during the post-Hitler crisis
+
+* When the Axis collapsed, Georgia was left as the leader of the Axis and sole member.
+* There is no followup to the "Nuke London" event when germany conducts its first nuclear test. 
+* If Italy has gone left, it joins the reformed axis, and then immediately leaves.
+* The game crashes after confirming Soviet event about defeat of Siberian DR where Soviets should inherit Siberia and her troops. Everything is fine if you anex them manually before event triggers, but still it's shame to let all those troops go to waste.
+EDIT: I allied Communist China via event at the start of Chinese civil war before even going after Siberia, maybe this had something to do with it?
+* After you defeat the Turkestans as the USSR, there seems to be no difference in the "centralize" or "decentralize" options. I went with centralize. Also, the southernmost 'Stans are only claims, not cores. WAD?
