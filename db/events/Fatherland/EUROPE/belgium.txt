@@ -1,0 +1,229 @@
+################################################
+### Belgium EVENTS made by Pako thanks to NWO
+################################################
+#### 8212061 - BEL - Dissent and Riots spread in Belgian Congo
+#### 8212062 - BEL - The King call to rebellion
+#### 8212063 - FLA - The King call to rebellion - Flanders
+#### 8212064 - WLL - The King call to rebellion - Wallonia
+#### 8212065 - U47 - The King call to rebellion - RK
+#### 8212066 - BEL - Congo setup
+
+################################################
+#### 8212061 - BEL - Internal Dissent and Riots
+################################################
+event = {
+	id = 8212061
+	random = no
+	country = BEL	
+	persistent = yes
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	trigger = {
+		random = 50
+		NOT = {
+			local_flag = CON_INDEP
+		}
+	}
+	
+	name = "Dissent and riots spread in the Belgian Congo !"
+	desc = "In the Belgian Congo the dissent has reached very high levels. All the minorities are organizing to fight the Belgian occupation."
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Damn!"	
+		ai_chance = 100
+		command = { type = dissent value = 10 }
+		command = { type = money value = -25 }
+		command = { type = supplies value = -50 }		
+		command = { type = oilpool value = -100 }				
+	}
+}
+
+################################################
+#### 8212062 - BEL - Appeal to Dissent and Riots
+################################################
+event = {
+	id = 8212062
+	random = no
+	country = BEL	
+	persistent = no
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	trigger = {
+		random = 50
+	}
+	
+	name = "Appello del RE : Ribellatevi !"
+	desc = "Ribellatevi !"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Ribellatevi!"	
+		ai_chance = 100
+		command = { type = dissent value = -1 }		
+		command = { type = trigger which = 8212063 }
+		command = { type = trigger which = 8212064 }
+		command = { type = trigger which = 8212065 }
+	}
+}
+
+################################################
+#### 8212063 - FLA - Dissent and Riots
+################################################
+event = {
+	id = 8212063
+	random = no
+	country = FLA	
+	persistent = no
+	
+	name = "Appello dal Belgio alla ribellione"
+	desc = "Appello dal Belgio alla ribellione"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Damn!"	
+		ai_chance = 100
+		command = { type = dissent value = 10 }			
+		command = { type = money value = -25 }
+		command = { type = supplies value = -50 }		
+		command = { type = oilpool value = -100 }			
+	}
+}
+
+################################################
+#### 8212064 - WLL - Dissent and Riots
+################################################
+event = {
+	id = 8212064
+	random = no
+	country = WLL	
+	persistent = no
+	
+	name = "Appello dal Belgio alla ribellione"
+	desc = "Appello dal Belgio alla ribellione"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Damn!"	
+		ai_chance = 100
+		command = { type = dissent value = 25 }			
+		command = { type = money value = -50 }
+		command = { type = supplies value = -100 }		
+		command = { type = oilpool value = -120 }			
+	}
+}
+
+################################################
+#### 8212065 - FLA - Dissent and Riots
+################################################
+event = {
+	id = 8212065
+	random = no
+	country = U47	
+	persistent = no
+	
+	name = "Appello dal Belgio alla ribellione"
+	desc = "Appello dal Belgio alla ribellione"
+	
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Ribellatevi!"	
+		ai_chance = 100
+		command = { type = dissent value = 15 }			
+	}
+}
+
+################################################
+#### 8212066 - BEL - Congo situation
+################################################
+event = {
+	id = 8212066
+	country = BEL
+
+	name = EVT_INDEPENDENCE_CON_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = CON }
+		control = { province = 899 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+		random = 75
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = "Indipendent Congo + Belgian Leopoldville"
+		ai_chance = 95
+		command = { type = independence which = CON value = 1 }
+		command = { type = local_setflag which = CON_INDEP }
+		command = { type = removecore which = 904 } 
+		command = { type = removecore which = 903 } 
+		command = { type = removecore which = 905 } 
+		command = { type = removecore which = 906 } 
+		command = { type = removecore which = 901 } 
+		#command = { type = removecore which = 894 } 
+		command = { type = removecore which = 902 } 
+		command = { type = removecore which = 898 } 
+		command = { type = removecore which = 897 } 
+		#command = { type = removecore which = 899 } 
+		command = { type = removecore which = 890 } 
+	}
+	action = {
+		name = "Puppet Congo + Belgian Leopoldville"
+		ai_chance = 95
+		command = { type = independence which = CON value = 1 }
+		command = { type = local_setflag which = CON_INDEP }
+		command = { type = make_puppet which = CON }
+		command = { type = removecore which = 904 } 
+		command = { type = removecore which = 903 } 
+		command = { type = removecore which = 905 } 
+		command = { type = removecore which = 906 } 
+		command = { type = removecore which = 901 } 
+		#command = { type = removecore which = 894 } 
+		command = { type = removecore which = 902 } 
+		command = { type = removecore which = 898 } 
+		command = { type = removecore which = 897 } 
+		#command = { type = removecore which = 899 } 
+		command = { type = removecore which = 890 } 
+	}
+	action = {
+		name = "Civil War"
+		ai_chance = 95
+		command = { type = independence which = CON value = 1 }
+		command = { type = war which = CON }
+		#command = { type = removecore which = 904 } 
+		command = { type = removecore which = 903 } 
+		command = { type = removecore which = 905 } 
+		#command = { type = removecore which = 906 } 
+		#command = { type = removecore which = 901 } 
+		#command = { type = removecore which = 894 } 
+		command = { type = removecore which = 902 } 
+		#command = { type = removecore which = 898 } 
+		command = { type = removecore which = 897 } 
+		#command = { type = removecore which = 899 } 
+		#command = { type = removecore which = 890 } 
+	}
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}

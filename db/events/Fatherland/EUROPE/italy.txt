@@ -64,6 +64,10 @@
 # 90000657 # U01 # Take over Spanish colonies?
 # 90000658 # SPA # Free France takes over our colonies!
 
+# 90000659 # ITA # The Greek situation
+# 90000660 # ITA # Colonization of Greece finished (90000659)
+
+
 ###########################################################
 #Extraordinary Grand Council of Fascism
 ###########################################################
@@ -2110,7 +2114,7 @@ event = {
 	trigger = {
 			event = 90000615
 			random = 40
-		}
+	}
 	
 	name = EVT_90000646_NAME
 	desc = EVT_90000646_DESC
@@ -2266,3 +2270,150 @@ event = {
 	}
 }
 
+##################################
+# 90000659 # ITA # The Greek  situation
+##################################
+event = {
+	id = 90000659 # The Greek situation									
+	random = no
+	country = ITA	
+	
+	trigger = {
+		event = 90000616
+	}
+	
+	name = EVT_90000659_NAME
+	desc = EVT_90000659_DESC
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 1 month = july year = 1948 } 
+	offset = 10
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = { #Mussolini or Industrialists
+		name = LOCAL #Colonization but with some local autonomy
+		ai_chance = 20
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = free_supplies value = -5 } #offmap
+		command = { type = dissent value = 1 }
+	}
+	action = { #Mussolini or Industrialists
+		name = PUPPET #Create a loyal puppet
+		trigger = { NOT = { flag = RadicalItaly } }
+		ai_chance = 70
+		command = { type = free_supplies value = -1 } #offmap
+		command = { type = dissent value = -1 }
+		command = { type = removeclaim which = 360 } # Korce
+		command = { type = removeclaim which = 367 } # Ioannina
+		command = { type = removeclaim which = 369  } # Metsovo
+		command = { type = removeclaim which = 368 } # Larissa
+		command = { type = removeclaim which = 375 } # Levadhia
+		command = { type = removeclaim which = 376 } # Agrinion
+		command = { type = removeclaim which = 374 } # Calchis
+		command = { type = removeclaim which = 372 } # Patra
+		command = { type = removeclaim which = 373 } # Corinto		
+		command = { type = independence which = GRE value = 1}
+		command = { type = make_puppet which = GRE }
+	}
+	action = { #Mussolini or Industrialists
+		name = "No, status quo is the best solution"
+		ai_chance = 10
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000660 }
+	}
+	action = { #All
+		name = RUTHLESS #Aggressively encourage colonization and integration
+		ai_chance = 40
+		command = { type = free_supplies value = -10 } #offmap
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = GreeceItaly }
+	}
+	action = { #All
+		name = "No, status quo is the best solution"
+		ai_chance = 40
+		trigger = { flag = RadicalItaly }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 90000660 }
+	}
+}
+##################################
+# 90000660 # ITA # Colonization of Greece finished (90000659)
+##################################
+event = {
+	id = 90000660 # Colonization of Greece finished (90000659)
+	random = no
+	country = ITA	
+	
+	trigger = {
+			event = 90000659
+			control = { province = 372 }
+			control = { province = 373 }
+			control = { province = 374 }
+			control = { province = 375 }
+			control = { province = 376 }
+			control = { province = 367 }
+			control = { province = 368 }			
+			control = { province = 369 }
+			control = { province = 360 }			
+			random = 50
+		}
+	
+	name = EVT_90000660_NAME
+	desc = EVT_90000660_DESC
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+	date = { day = 1 month = january year = 1950 } 
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = free_supplies value = 5 }
+		command = { trigger = { flag = GreeceItaly } type = free_supplies value = 5 }
+		command = { type = dissent value = -1 }
+		command = { type = addcore which = 360 } 
+		command = { type = addcore which = 367 } 
+		command = { type = addcore which = 368 } 
+		command = { type = addcore which = 369 }	
+		command = { type = addcore which = 372 } 
+		command = { type = addcore which = 373 } 
+		command = { type = addcore which = 374 } 
+		command = { type = addcore which = 375 }		
+		command = { type = addcore which = 376 }
+		command = { trigger = { flag = GreeceItaly } type = construct which = ic where = 359 value = 1 }
+		command = { trigger = { flag = GreeceItaly } type = construct which = infrastructure where = 359 value = 10 }
+		command = { type = clrflag which = GreeceItaly }
+	}
+}
+event = {
+	id = 90000661 # Greek resistance
+	random = no
+	country = GRE	
+	
+	trigger = {
+			event = 90000659
+			random = 40
+	}
+	
+	name = "Resistenza Greca"
+	desc = "Resistenza Greca"
+	style = 2
+	picture = "mittelmeerdivision2"	
+	
+	date = { day = 1 month = january year = 1948 } 
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN	
+		command = { type = revolt which = 379 }
+		command = { type = revolt which = 367 }
+		command = { type = revolt which = 372 }
+		command = { type = revolt which = 374 }
+		command = { type = revolt which = 373 }
+		command = { type = dissent value = 1 }
+	}
+}

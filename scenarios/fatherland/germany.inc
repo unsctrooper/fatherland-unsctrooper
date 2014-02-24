@@ -182,6 +182,8 @@ claimedprovinces = {
 	252 229 250 253 254 255 # Poland
 	336 # Banat
 	553 # Military Administration of Leningrad
+	377 # Military Administration of Athens
+	382 # Military Administration of Crete
 }
 	# Germany 1944.12 techs 
 	# ###################### 

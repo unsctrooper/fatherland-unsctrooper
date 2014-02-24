@@ -1,60 +1,86 @@
-##################
-### New Events ###
+#####################################
+# French State (aka Vichy) events
+# Review Pako
+# 313
+# 350-?
+#####################################
+
+# 350 # FRA	# Armistice at Compiègne
+# 351 #	FRA	# Death of Petain
+# 352 # FRA # Chaos in France (chain only flag = UltraVichy)
+	##### 353 GER #Intervene in France? 
+	##### 354 FRA #The Government Falls!
+		########## 355 GER #Case Anton (354C)
+		########## 356 GER #We have defeated France - Again!
+		########## 313 FRA #It is done! Encore une fois!
+
+		
 ##############################
 ### Armistice at Compiègne ###
 ##############################
 event = {
-id = 350
-country = FRA
-random = no
-style = 2
-picture = "Petain"
+	id = 350
+	country = FRA
+	random = no
+	style = 2
+	picture = "Petain"
 
-date = { day = 5 month = january year = 1948 }
+	date = { day = 5 month = january year = 1948 }
 
-name = "350NAME"
-desc = "350DESC"
+	name = 350NAME #Armistice at Compiègne
+	desc = 350DESC
 
-action_a = {
-name = "350A"
-command = { type = peacetime_ic_mod value = -10 } # Puts France IC modifier to 0.5
-command = { type = trade which = GER where = FRA  supplies = 10 money = 15 when = 1500 value = 1 } 
-command = { type = access which = GER }	# German Use of Vichy Bases	
-command = { type = access which = ITA }	# Italian Use of Vichy Bases
-command = { type = deactivate_unit_type which = motorized } 
-command = { type = deactivate_unit_type which = mechanized } 
-command = { type = deactivate_unit_type which = light_armor } 
-command = { type = dissent value = 15 }
+	action_a = {
+		name = "350A" #Damn!
+		command = { type = peacetime_ic_mod value = -10 } # Puts France IC modifier to 0.5
+		command = { type = trade which = GER where = FRA  supplies = 10 money = 15 when = 1500 value = 1 } 
+		
+		command = { type = access which = GER }	# German Use of Vichy Bases	
+		command = { type = access which = ITA }	# Italian Use of Vichy Bases
+		
+		command = { type = deactivate_unit_type which = motorized } 
+		command = { type = deactivate_unit_type which = mechanized } 
+		command = { type = deactivate_unit_type which = light_armor } 
+		
+		command = { type = dissent value = 15 }
+	}
 }
-}
+
 ##############################
 ####### Death of Petain ######
 ##############################
 event = {
-id = 351
+	id = 351
 	random = no
 	save_date = yes
 	country = FRA	
 	style = 2
 	picture = "Petain"
 	
-	name = "351NAME"
-        desc = "351DESC"
+	name = 351NAME #Petain has died!
+	desc = 351DESC
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 30
 	deathdate = { day = 1 month = december year = 1955 }
 	
-
-trigger = { 
-		OR = { random = 3 AND = { random = 10 year = 1949 } year = 1950 }
+	trigger = { 
+		OR = { 
+			random = 3 
+			AND = { 
+				random = 10 year = 1949 
+			} 
+			year = 1950 
+		}
 	}
-
 	
 	action = {
-			name = "351A"
-			ai_chance = 60
+			name = "351A" #Admiral Darlan will return France to glory!
+			ai_chance = 50
+			
 			command = { type = end_non_aggression which = FRA where = GER } 
+			command = { type = relation which = GER value = 50 }
+			
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
 			command = { type = foreignminister which = 5397 }
@@ -64,8 +90,7 @@ trigger = {
 			command = { type = chiefofstaff which = 5399 }
 			command = { type = chiefofarmy which = 5136 }
 			command = { type = chiefofnavy which = 5009 }
-			command = { type = chiefofair which = 5196 }
-			command = { type = relation which = GER value = 50 }		
+			command = { type = chiefofair which = 5196 }		
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
 			command = { type = sleepminister which = 5239 }
@@ -75,14 +100,17 @@ trigger = {
 		    command = { type = sleepminister which = 5293 }
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
+			
 			command = { type = dissent value = 5 }
 			command = { type = setflag which = DarlanVichy } 
 	}
 	
 	action = {
-			name = "351B"
-			ai_chance = 30
+			name = "351B" #Pierre Laval will continue Petain's policies!
+			ai_chance = 35
+			
 			command = { type = end_non_aggression which = FRA where = GER } 
+			
 			command = { type = headofstate which = 5393 }
 			command = { type = headofgovernment which = 5197 }
 			command = { type = foreignminister which = 5201 }
@@ -103,15 +131,18 @@ trigger = {
 		    command = { type = sleepminister which = 5293 }
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
+			
 			command = { type = dissent value = 10 }
 			command = { type = setflag which = LavalVichy } 
 
 	}
 	
 	action = {
-			name = "351C"
-			ai_chance = 5
-			command = { type = end_non_aggression which = FRA where = GER } 
+			name = "351C" #Ultra-Collaborationist take over, supported by Germany!
+			ai_chance = 10
+			#command = { type = end_non_aggression which = FRA where = GER } 
+			command = { type = relation which = GER value = 100 }
+						
 			command = { type = headofstate which = 5395 }
 			command = { type = headofgovernment which = 5404 }
 			command = { type = foreignminister which = 5403 }
@@ -134,14 +165,18 @@ trigger = {
 		    command = { type = sleepminister which = 5293 }
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
+			
 			command = { type = dissent value = 15 }
 			command = { type = setflag which = UltraVichy } 
 	}
 	
 	action = {
-			name = "351D"
+			name = "351D" #The people riot and establish a true civil government!
 			ai_chance = 5
+			
 			command = { type = end_non_aggression which = FRA where = GER } 
+			command = { type = relation which = GER value = -50 }
+			
 			command = { type = headofstate which = 5396 }
 			command = { type = headofgovernment which = 5284 }
 		    command = { type = set_domestic which = democratic value = 7 }
@@ -156,75 +191,77 @@ trigger = {
 		    command = { type = sleepminister which = 5293 }
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
+			
 			command = { type = dissent value = 3 }
 			command = { type = setflag which = CivilVichy } 
+	}
 }
-}
+
+##############################
+### Chaos in France 	   ###
+##############################
 event = {
-id = 352
+	id = 352
 	random = no
 	country = FRA	
 	style = 2
 	picture = "ProtestAlexanderetta"
 	
-	name = "352NAME"
+	name = "352NAME" #Chaos in France
     desc = "352DESC"
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 14
 	deathdate = { day = 1 month = december year = 1955 }
 	
-
-trigger = { 
-		headofstate = 5395
+	trigger = { 
+		#headofstate = 5395 #Ultra-Collaborationist
+		flag = UltraVichy			
 	}
 
-	
 	action = {
-			name = "352A"
-			ai_chance = 50
+			name = "352A" #Request immediate German intervention!
+			ai_chance = 60
 			command = { type = dissent value = 30 }
 		    command = { type = trigger which = 353 }
-			
 	}
 	
 	action = {
-			name = "352B"
-			ai_chance = 50
-			command = { type = dissent value = 3 }
+			name = "352B" #We will put down the protests ourself!
+			ai_chance = 40
+			command = { type = dissent value = 10 }
+	}
+}
 
-}
-}
 event = {
-id = 353
+	id = 353
 	random = no
 	country = GER	
 	style = 2
 	picture = "Reichstag"
 	
-	name = "353NAME"
+	name = "353NAME" #Intervene in France?
     desc = "353DESC"
 	
 	action = {
-			name = "353A"
-			ai_chance = 30
+			name = "353A" #Send in the troops - Establish control!
+			ai_chance = 35
 			command = { type = dissent value = 5 }
 			command = { type = manpowerpool value = -10 }
 			command = { type = supplies value = -5000 } 
 	        command = { type = make_puppet which = FRA }
 		    command = { type = sleepevent which = 354 }
 			command = { type = trigger which = 313 }
-			
 	}
 	
 	action = {
-			name = "353B"
-			ai_chance = 70
+			name = "353B" #We don't have time for this
+			ai_chance = 65
 	        command = { type = relation which = GER value = 0 }
-}
+	}
 }
 event = {
-id = 354
+	id = 354
 	random = no
 	country = FRA
 	one_action = yes
@@ -232,80 +269,101 @@ id = 354
 	picture = "ProtestAlexanderetta"
 
 	trigger = {
-    flag = UltraVichy	
-	random = 20
+		flag = UltraVichy	
+		random = 20
 	}
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 7
 	deathdate = { day = 1 month = december year = 1955 }
 
-	name = "354NAME"
+	name = "354NAME" #The Government Falls!
     desc = "354DESC"
 	
 	action = {
-			name = "354A"
-			ai_chance = 80
-			command = { type = headofstate which = 5394 }
-			command = { type = headofgovernment which = 5189 }
-			command = { type = clrflag which = UltraVichy } 
-			command = { type = headofgovernment which = 5189 }
+			name = "354A" #Admiral Darlan
+			ai_chance = 60
+		
+			command = { type = relation which = GER value = -50 }
+			
 			command = { type = set_domestic which = democratic value = 4 }
 		    command = { type = set_domestic which = political_left value = 3 }
-	        command = { type = relation which = GER value = -50 }
+			
+			command = { type = clrflag which = UltraVichy } 
 			command = { type = setflag which = DarlanVichy } 
-	
+			
+			command = { type = headofstate which = 5394 }
+			command = { type = headofgovernment which = 5189 }
+			command = { type = foreignminister which = 5397 }
+			command = { type = armamentminister which = 5398 }
+			command = { type = ministerofsecurity which = 5215 }
+			command = { type = ministerofintelligence which = 5226 }
+			command = { type = chiefofstaff which = 5399 }
+			command = { type = chiefofarmy which = 5136 }
+			command = { type = chiefofnavy which = 5009 }
+			command = { type = chiefofair which = 5196 }		
+			
 	}
 	
 	action = {
-			name = "354B"
-			ai_chance = 15
-			command = { type = headofstate which = 5396 }
-			command = { type = headofgovernment which = 5284 }
+			name = "354B" #A new French Revolution - A new Republic!
+			ai_chance = 30
+			
+			command = { type = relation which = GER value = -50 }
+			
 			command = { type = clrflag which = UltraVichy } 
-		    command = { type = set_domestic which = democratic value = 7 }
-		    command = { type = set_domestic which = political_left value = 8 }
-            command = { type = relation which = GER value = -50 }			
-			command = { type = dissent value = 3 }
 			command = { type = setflag which = CivilVichy } 
-}
+			
+			command = { type = set_domestic which = democratic value = 7 }
+		    command = { type = set_domestic which = political_left value = 8 }
+			
+			command = { type = dissent value = 3 }
+			
+			command = { type = headofstate which = 5396 }
+			command = { type = headofgovernment which = 5284 }			
+	}
+	
 	action = {
-			name = "354C"
-			ai_chance = 5
-			command = { type = trigger which = 355 }
+			name = "354C" #Germany abuses the chaos to invade France! - Case Anton
+			ai_chance = 10
+			command = { type = trigger which = 355 }	
+	}
+}
 
-}
-}
 event = {
-id = 355
+	id = 355
 	random = no
 	country = GER	
 	style = 2
 	picture = "Reichstag"
 	
-	name = "355NAME"
+	name = "355NAME" #Case Anton
     desc = "355DESC"
 	
 	action = {
-			name = "355A"
+			name = "355A" #We will defeat France - again!
 			command = { type = dissent value = 5 }
 		    command = { type = war which = FRA }	
             command = { type = peacetime_ic_mod value = -10 }			
 	}
 }
 event = {
-id = 356
+	id = 356
 	random = no
 	country = GER	
 	style = 2
 	picture = "Reichstag"
-	name = "356NAME"
+	name = "356NAME" #We have defeated France - Again!
     desc = "356DESC"
 	
     trigger = {
-	NOT = { control = { province = 55 data = FRA } }
-    war = { country = GER country = FRA }
-	lost_national = { country = FRA value = 50 }
+		NOT = { 
+			control = { province = 55 data = FRA } 
+		}
+		war = { country = GER country = FRA }
+		lost_national = { 
+			country = FRA value = 50 
+		}
 	}
 	
     date = { day = 1 month = january year = 1948 }
@@ -313,7 +371,7 @@ id = 356
 	deathdate = { day = 30 month = december year = 1963 }
 	
 	action = {
-			name = "356A"
+			name = "356A" #Put the Pro-German elements in power, with our support
 			ai_chance = 99
 			command = { type = manpowerpool value = -10 }
 			command = { type = supplies value = -5000 } 
@@ -322,37 +380,41 @@ id = 356
             command = { type = peacetime_ic_mod value = 5 }			
 	}
 		action = {
-			name = "356B"
+			name = "356B" #We will destroy France for once and for all!
 			ai_chance = 1
 			command = { type = dissent value = 5 }
 			
 	}
 }
 event = {
-id = 313
+	id = 313
 	random = no
 	country = FRA
 	style = 2
 	picture = "aar_versailles"
 	
-	name = "313NAME"
+	name = "313NAME" #It is done! Encore une fois!
     desc = "313DESC"
 	
 	action = {
-		name = "313A"
+		name = "313A" #We have no choice
 		command = { type = dissent value = 20 }
+		
 		command = { type = headofstate which = 5395 }
 	    command = { type = headofgovernment which = 5381 }	
+		
         command = { trigger = { control = { province = 87 data = ITA } } type = secedeprovince which = ITA value = 87 when = 1 } # Nice - France
         command = { trigger = { control = { province = 86 data = ITA } } type = secedeprovince which = ITA value = 86 when = 1 } # Toulon - France
         command = { trigger = { control = { province = 90 data = ITA } } type = secedeprovince which = ITA value = 90 when = 1 } # Grenoble - France 
         command = { trigger = { control = { province = 91 data = ITA } } type = secedeprovince which = ITA value = 91 when = 1 } # Chambery - France
         command = { trigger = { control = { province = 94 data = ITA } } type = secedeprovince which = ITA value = 94 when = 1 } # Corsica - France 
+		
         command = { trigger = { control = { province = 80 data = SPA } } type = secedeprovince which = SPA value = 80 when = 1 } # Perpignan
         command = { trigger = { control = { province = 83 data = SPA } } type = secedeprovince which = SPA value = 83 when = 1 } # Pau
         command = { trigger = { control = { province = 84 data = SPA } } type = secedeprovince which = SPA value = 84 when = 1 } # Agen
         command = { trigger = { control = { province = 67 data = SPA } } type = secedeprovince which = SPA value = 67 when = 1 } # Mont-de-Marsan
         command = { trigger = { control = { province = 68 data = SPA } } type = secedeprovince which = SPA value = 68 when = 1 } # Bordeaux		
+		
 	    command = { type = secedearea which = GER value = "Bourgogne_Champagne" when = 1 }
 	    command = { type = secedearea which = GER value = "Lorraine_Alsace" when = 1 }
 	    command = { type = secedearea which = GER value = "Pas de Calais" when = 1 }
@@ -363,6 +425,7 @@ id = 313
 		command = { type = secedearea which = GER value = "Aquitaine" when = 1 }
 	    command = { type = secederegion which = GER value = "Benelux" when = 1 }
 	    command = { type = secederegion which = GER value = "Germany" when = 1 }
+		
         command = { trigger = { region = { region = Tunisia country = ITA value = 60 } } type = secederegion which = ITA value = Tunisia when = 1 }	
 		command = { type = setflag which = GerVichy } 		
 	}
@@ -371,37 +434,38 @@ id = 313
 ### Crisis in the Med ###
 #########################
 event = {
-id = 363
-country = FRA
-save_date = yes
-random = no
-style = 2
-picture = "news_paper"
+	id = 363
+	country = FRA
+	save_date = yes
+	random = no
+	style = 2
+	picture = "news_paper"
 
 	trigger = {
-	random = 10
-	OR = {
-	flag = GerVichy
-	flag = FreeVichy
+		random = 10
+		OR = {
+			flag = GerVichy
+			flag = FreeVichy
+		}
 	}
+
+	name = "363NAME" #An unexpected flight
+	desc = "363DESC"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = december year = 1964 }
+
+	action = {
+		trigger = { flag = FreeVichy }  
+		ai_chance = 99
+		name = "363A"
+		command = { type = dissent value = -5 }
+		command = { type = relation which = GER value = -50 }	
+		command = { type = relation which = U01 value = 50 }	
+		command = { type = setflag which = DeGaulleVichy } 
 	}
-
-name = "363NAME"
-desc = "363DESC"
-
-date = { day = 1 month = january year = 1948 }
-offset = 7
-deathdate = { day = 1 month = december year = 1964 }
-
-action = {
-trigger = { flag = FreeVichy }  
-ai_chance = 99
-name = "363A"
-command = { type = dissent value = -5 }
-command = { type = relation which = GER value = -50 }	
-command = { type = relation which = U01 value = 50 }	
-command = { type = setflag which = DeGaulleVichy } 
-}
+	
 action = {
 trigger = { flag = FreeVichy }
 ai_chance = 1
