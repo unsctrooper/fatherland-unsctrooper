@@ -79,7 +79,6 @@
 		207 199 198 196 201 #Protectorate of Bohemia and Moravia   
 		143 189 190 191 192 195 194 186 187 193 188 # Austria/Ostmark
 		200 206 205 197 202 204 203 # Sudetenland
-		216 # South Jutland
 		110 # Eupen
 		109 # Luxembourg
 		226 230 222 231 232 227 223 # Poland (cores)
@@ -100,7 +99,6 @@
 		143 189 190 191 192 195 194 186 187 193 188 # Austria/Ostmark
 		200 206 205 197 204 203 # Sudetenland
 		207 199 202 198 196 201 #Protectorate of Bohemia and Moravia   
-		216 # South Jutland
 		110 # Eupen
 		109 # Luxembourg
 		226 230 222 # Poland (cores)
@@ -144,7 +142,6 @@
 		207 199 202 198 196 201 #Protectorate of Bohemia and Moravia
 		143 189 190 191 192 195 194 186 187 193 188 # Austria/Ostmark
 		200 206 205 197 204 203 # Sudetenland
-		216 # South Jutland
 		110 # Eupen
 		109 # Luxembourg
 		226 230 222 # Poland (cores)
