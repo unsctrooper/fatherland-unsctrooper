@@ -2291,17 +2291,10 @@ event = {
 	offset = 10
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action = { #Mussolini or Industrialists
-		name = LOCAL #Colonization but with some local autonomy
-		ai_chance = 20
-		trigger = { NOT = { flag = RadicalItaly } }
-		command = { type = free_supplies value = -5 } #offmap
-		command = { type = dissent value = 1 }
-	}
-	action = { #Mussolini or Industrialists
+	action = { #All
 		name = PUPPET #Create a loyal puppet
-		trigger = { NOT = { flag = RadicalItaly } }
-		ai_chance = 70
+		#trigger = { NOT = { flag = RadicalItaly } }
+		ai_chance = 80
 		command = { type = free_supplies value = -1 } #offmap
 		command = { type = dissent value = -1 }
 		command = { type = removeclaim which = 360 } # Korce
@@ -2315,81 +2308,26 @@ event = {
 		command = { type = removeclaim which = 373 } # Corinto		
 		command = { type = independence which = GRE value = 1}
 		command = { type = make_puppet which = GRE }
+		command = { type = trigger which = 90000661 } #Hellenic State
 	}
 	action = { #Mussolini or Industrialists
 		name = "No, status quo is the best solution"
-		ai_chance = 10
+		ai_chance = 20
 		trigger = { NOT = { flag = RadicalItaly } }
 		command = { type = dissent value = 1 }
-		command = { type = sleepevent which = 90000660 }
 	}
-	action = { #All
-		name = RUTHLESS #Aggressively encourage colonization and integration
-		ai_chance = 40
-		command = { type = free_supplies value = -10 } #offmap
-		command = { type = dissent value = 1 }
-		command = { type = setflag which = GreeceItaly }
-	}
-	action = { #All
-		name = "No, status quo is the best solution"
-		ai_chance = 40
+	action = { #Radicals
+		name = "No, status quo with a military administration is the best solution"
+		ai_chance = 50
 		trigger = { flag = RadicalItaly }
 		command = { type = dissent value = 1 }
-		command = { type = sleepevent which = 90000660 }
 	}
 }
 ##################################
-# 90000660 # ITA # Colonization of Greece finished (90000659)
+# 90000660 # GRE # Greek resistance
 ##################################
 event = {
-	id = 90000660 # Colonization of Greece finished (90000659)
-	random = no
-	country = ITA	
-	
-	trigger = {
-			event = 90000659
-			control = { province = 372 }
-			control = { province = 373 }
-			control = { province = 374 }
-			control = { province = 375 }
-			control = { province = 376 }
-			control = { province = 367 }
-			control = { province = 368 }			
-			control = { province = 369 }
-			control = { province = 360 }			
-			random = 50
-		}
-	
-	name = EVT_90000660_NAME
-	desc = EVT_90000660_DESC
-	style = 2
-	picture = "mittelmeerdivision2"	
-	
-	date = { day = 1 month = january year = 1950 } 
-	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
-
-	action = {
-		name = ACTION_NAME_GREAT
-		command = { type = free_supplies value = 5 }
-		command = { trigger = { flag = GreeceItaly } type = free_supplies value = 5 }
-		command = { type = dissent value = -1 }
-		command = { type = addcore which = 360 } 
-		command = { type = addcore which = 367 } 
-		command = { type = addcore which = 368 } 
-		command = { type = addcore which = 369 }	
-		command = { type = addcore which = 372 } 
-		command = { type = addcore which = 373 } 
-		command = { type = addcore which = 374 } 
-		command = { type = addcore which = 375 }		
-		command = { type = addcore which = 376 }
-		command = { trigger = { flag = GreeceItaly } type = construct which = ic where = 359 value = 1 }
-		command = { trigger = { flag = GreeceItaly } type = construct which = infrastructure where = 359 value = 10 }
-		command = { type = clrflag which = GreeceItaly }
-	}
-}
-event = {
-	id = 90000661 # Greek resistance
+	id = 90000660 # Greek resistance
 	random = no
 	country = GRE	
 	
@@ -2398,8 +2336,8 @@ event = {
 			random = 40
 	}
 	
-	name = "Resistenza Greca"
-	desc = "Resistenza Greca"
+	name = "Greek resistance"
+	desc = "Greek resistance"
 	style = 2
 	picture = "mittelmeerdivision2"	
 	
@@ -2414,6 +2352,33 @@ event = {
 		command = { type = revolt which = 372 }
 		command = { type = revolt which = 374 }
 		command = { type = revolt which = 373 }
-		command = { type = dissent value = 1 }
+		command = { type = dissent value = 5 }
+	}
+}
+##################################
+# 90000661 # GRE # The Hellenic State
+##################################
+event = {
+	id = 90000661 # The Hellenic State
+	random = no
+	country = GRE	
+	
+	name = "The Hellenic State"
+	desc = "The Hellenic State"
+	style = 2
+	picture = "mittelmeerdivision2"	
+
+	action = {
+		name = "Great!"	
+
+		command = { type = flag_ext where = GRE which = _fascist }
+		command = { type = name where = GRE which = "Hellenic State" }
+		
+		command = { type = add_corps which = "300 Corps" value = land where = 373 }
+		command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
+		
+		command = { type = dissent value = -3 }
 	}
 }
