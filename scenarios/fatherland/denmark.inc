@@ -76,8 +76,8 @@
    
    nationalprovinces      = { 217 218 219 294 220 216
    1 2 3 1783 } 
-   ownedprovinces         = { 294 219 217 218 220} 
-   controlledprovinces    = { 294 219 217 218 220 } 
+   ownedprovinces         = { 294 219 217 218 220 216 } 
+   controlledprovinces    = { 294 219 217 218 220 216 } 
 	claimedprovinces 	  = { } 
 	
 	# Germany 1942.11 techs 
