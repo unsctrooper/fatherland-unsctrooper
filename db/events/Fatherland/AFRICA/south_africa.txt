@@ -719,6 +719,8 @@ event = {
 		command = { type = relation which = NZL value = -100 }
 		command = { type = relation which = AUS value = -100 }
 		
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
+		
 		command = { type = dissent value = 10 }			
 	}
 }
@@ -804,6 +806,7 @@ event = {
 	desc = "The South African Army Force direct intervention to help the white minority in Salisbury."
 	picture = "elections"
 	style = 1
+	save_date = yes
 	
 	date = { day = 0 month = january year = 1953 }
 	offset = 10
@@ -877,17 +880,18 @@ event = {
 	picture = "elections"
 	style = 1
 	
-	trigger = {
-		local_flag = SAFLIMITED
-		control = { province = 867 data = SAF } #Salisbury
-	}
-	
 	action = {
 		name = "We have lost this limited war, Salisbury is South African" 
 		ai_chance = 100
 		command = { type = peace which = SAF value = 0 }
 		command = { type = secedeprovince which = SAF value = 867 }
 		command = { type = secedeprovince which = SAF value = 866 }
+		command = { type = secedeprovince which = SAF value = 874 }
+		command = { type = secedeprovince which = SAF value = 877 }
+		command = { type = secedeprovince which = SAF value = 868 }
+		command = { type = secedeprovince which = SAF value = 869 }
+		command = { type = secedeprovince which = SAF value = 870 }
+		command = { type = secedeprovince which = SAF value = 871 }
 	}
 }
 

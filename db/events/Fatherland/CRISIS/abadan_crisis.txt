@@ -304,6 +304,8 @@ event = {
 		### End of blockade
 		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = trigger which = 90000110 }
+		command = { type = end_access which = GER }
+		
 	}
 }
 #Iranian coup d'état

@@ -36,10 +36,12 @@ event = {
 	action = {
 		name = "Damn!"	
 		ai_chance = 100
-		command = { type = dissent value = 10 }
-		command = { type = money value = -25 }
-		command = { type = supplies value = -50 }		
-		command = { type = oilpool value = -100 }				
+		
+		command = { type = revolt which = 904 }
+		command = { type = revolt which = 903 }
+		command = { type = revolt which = 905 }
+		
+		command = { type = dissent value = 3 }			
 	}
 }
 
@@ -171,55 +173,66 @@ event = {
 
 	action = {
 		name = "Indipendent Congo + Belgian Leopoldville"
-		ai_chance = 95
+		ai_chance = 15
+		
+		command = { type = addclaim which = 894 }
+		command = { type = addclaim which = 899 }		
+		
+		command = { type = removeclaim which = 904 } 
+		command = { type = removeclaim which = 903 } 
+		command = { type = removeclaim which = 905 } 
+		command = { type = removeclaim which = 906 } 
+		command = { type = removeclaim which = 901 } 
+		command = { type = removeclaim which = 902 } 
+		command = { type = removeclaim which = 898 } 
+		command = { type = removeclaim which = 897 } 
+		command = { type = removeclaim which = 890 } 
+		
 		command = { type = independence which = CON value = 1 }
+		
 		command = { type = local_setflag which = CON_INDEP }
-		command = { type = removecore which = 904 } 
-		command = { type = removecore which = 903 } 
-		command = { type = removecore which = 905 } 
-		command = { type = removecore which = 906 } 
-		command = { type = removecore which = 901 } 
-		#command = { type = removecore which = 894 } 
-		command = { type = removecore which = 902 } 
-		command = { type = removecore which = 898 } 
-		command = { type = removecore which = 897 } 
-		#command = { type = removecore which = 899 } 
-		command = { type = removecore which = 890 } 
 	}
 	action = {
 		name = "Puppet Congo + Belgian Leopoldville"
-		ai_chance = 95
+		ai_chance = 50
+		
+		command = { type = addclaim which = 894 }
+		command = { type = addclaim which = 899 }
+		
+		command = { type = removeclaim which = 904 } 
+		command = { type = removeclaim which = 903 } 
+		command = { type = removeclaim which = 905 } 
+		command = { type = removeclaim which = 906 } 
+		command = { type = removeclaim which = 901 } 
+		command = { type = removeclaim which = 902 } 
+		command = { type = removeclaim which = 898 } 
+		command = { type = removeclaim which = 897 } 
+		command = { type = removeclaim which = 890 }
+		
 		command = { type = independence which = CON value = 1 }
-		command = { type = local_setflag which = CON_INDEP }
 		command = { type = make_puppet which = CON }
-		command = { type = removecore which = 904 } 
-		command = { type = removecore which = 903 } 
-		command = { type = removecore which = 905 } 
-		command = { type = removecore which = 906 } 
-		command = { type = removecore which = 901 } 
-		#command = { type = removecore which = 894 } 
-		command = { type = removecore which = 902 } 
-		command = { type = removecore which = 898 } 
-		command = { type = removecore which = 897 } 
-		#command = { type = removecore which = 899 } 
-		command = { type = removecore which = 890 } 
+		command = { type = local_setflag which = CON_INDEP }
 	}
 	action = {
 		name = "Civil War"
-		ai_chance = 95
+		ai_chance = 30
+
+		command = { type = addclaim which = 894 }
+		command = { type = addclaim which = 899 }
+		
+		command = { type = removeclaim which = 904 } 
+		command = { type = removeclaim which = 903 } 
+		command = { type = removeclaim which = 905 } 
+		command = { type = removeclaim which = 906 } 
+		command = { type = removeclaim which = 901 } 
+		command = { type = removeclaim which = 902 } 
+		command = { type = removeclaim which = 898 } 
+		command = { type = removeclaim which = 897 } 
+		command = { type = removeclaim which = 890 }
+		
 		command = { type = independence which = CON value = 1 }
 		command = { type = war which = CON }
-		#command = { type = removecore which = 904 } 
-		command = { type = removecore which = 903 } 
-		command = { type = removecore which = 905 } 
-		#command = { type = removecore which = 906 } 
-		#command = { type = removecore which = 901 } 
-		#command = { type = removecore which = 894 } 
-		command = { type = removecore which = 902 } 
-		#command = { type = removecore which = 898 } 
-		command = { type = removecore which = 897 } 
-		#command = { type = removecore which = 899 } 
-		#command = { type = removecore which = 890 } 
+		command = { type = local_setflag which = CON_INDEP }
 	}
 	action = {
 		name = EVT_DONTLIBERATE

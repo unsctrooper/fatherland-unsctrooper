@@ -1,0 +1,1004 @@
+################################
+## UK
+################################
+
+#CIPRO
+event = {
+	id = 8212071
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_CYP_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = CYP }
+		control = { province = 388 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 70
+		command = { type = independence which = CYP value = 1 }
+		command = { type = make_puppet which = CYP }
+		command = { type = trigger which = 8212072 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 30
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 8212072
+	country = CYP
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212073
+	country = CYP
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = CYP country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+#Ghana
+event = {
+	id = 8212121
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_GLD_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = GLD }
+		control = { province = 956 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 90
+		command = { type = independence which = GLD value = 1 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 10
+		command = { type = dissent value = 2 }
+	}
+}
+
+#Guyana
+event = {
+	id = 8212141
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_GUY_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = GUY }
+		control = { province = 1997 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 70
+		command = { type = independence which = GUY value = 1 }
+		command = { type = make_puppet which = GUY }
+		command = { type = trigger which = 8212142 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 30
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212142
+	country = GUY
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+#Libya
+event = {
+	id = 8212181
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_LBY_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = LBY }
+		control = { province = 750 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 90
+		command = { type = independence which = LBY value = 1 }
+		command = { type = make_puppet which = LBY }
+		command = { type = trigger which = 8212182 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 10
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8212182
+	country = LBY
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212183
+	country = LBY
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = LBY country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+#Nigeria
+event = {
+	id = 8212271
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_NIG_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = NIG }
+		control = { province = 929 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 90
+		command = { type = independence which = NIG value = 1 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 10
+		command = { type = dissent value = 3 }
+	}
+}
+
+#Rhodesia
+event = {
+	id = 8212281
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_RHO_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = RHO }
+		control = { province = 867 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = RHO value = 1 }
+		command = { type = make_puppet which = RHO }
+		command = { type = trigger which = 8212282 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212282
+	country = RHO
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+#Sierra Leone
+event = {
+	id = 8212301
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_SIE_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = SIE }
+		control = { province = 964 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1965 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = SIE value = 1 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 2 }
+	}
+}
+
+#Somalia
+event = {
+	id = 8212311
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_SOM_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = SOM }
+		control = { province = 836 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 70
+		command = { type = independence which = SOM value = 1 }
+		command = { type = make_puppet which = SOM }
+		command = { type = trigger which = 8212312 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 30
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212312
+	country = SOM
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212313
+	country = SOM
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = SOM country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+#Sudan
+event = {
+	id = 8212331
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_SUD_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = SUD }
+		control = { province = 810 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = SUD value = 1 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8212371
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_U70_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U70 }
+		control = { province = 844 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1965 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U70 value = 1 }
+		command = { type = make_puppet which = U70 }
+		command = { type = trigger which = 8212372 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212372
+	country = U70
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212373
+	country = U70
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = U70 country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+event = {
+	id = 8212381
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_U75_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U75 }
+		control = { province = 1432 data = -1 }
+		flag = cold_war_pacific
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U75 value = 1 }
+		command = { type = make_puppet which = U75 }
+		command = { type = trigger which = 8212382 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212382
+	country = U75
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212383
+	country = U75
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = U75 country = ENG }
+		flag = cold_war_pacific
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+event = {
+	id = 8212461
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_U89_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U89 }
+		control = { province = 1782 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1966 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U89 value = 1 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 8212471
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_U90_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U90 }
+		control = { province = 841 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1966 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U90 value = 1 }
+		command = { type = make_puppet which = U90 }
+		command = { type = trigger which = 8212472 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8212472
+	country = U90
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212473
+	country = U90
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = U90 country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+event = {
+	id = 8212481
+	country = ENG
+	persistent = yes
+
+	name = EVT_INDEPENDENCE_U91_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U91 }
+		control = { province = 1041 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1965 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U91 value = 1 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212491
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_U92_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U92 }
+		control = { province = 429 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U92 value = 1 }
+		command = { type = make_puppet which = U92 }
+		command = { type = trigger which = 8212492 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 8212492
+	country = U92
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212541
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_U97_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U97 }
+		control = { province = 850 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 85
+		command = { type = independence which = U97 value = 1 }
+		command = { type = make_puppet which = U97 }
+		command = { type = trigger which = 8212542 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 15
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212542
+	country = U97
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212543
+	country = U97
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = U97 country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+
+event = {
+	id = 8212551
+	country = ENG
+	persistent = yes
+
+	name = EVT_SELFRULE_U98_NAME
+	desc = EVT_SELFRULE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		NOT = { exists = U98 }
+		control = { province = 1758 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1960 }
+
+	action = {
+		name = EVT_LIBERATE
+		ai_chance = 80
+		command = { type = independence which = U98 value = 1 }
+		command = { type = make_puppet which = U98 }
+		command = { type = trigger which = 8212552 }
+	}
+
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 20
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 8212552
+	country = U98
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	action = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+	}
+}
+
+event = {
+	id = 8212553
+	country = U98
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = U98 country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 1 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}

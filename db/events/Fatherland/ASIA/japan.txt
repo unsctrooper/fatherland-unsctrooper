@@ -1,0 +1,774 @@
+event = {
+	id = 8007801
+	country = JAP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = communist
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 9 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50031 } # Miyamoto Kenji
+		command = { type = foreignminister which = 50051 } # Shiga Yoshio
+		command = { type = armamentminister which = 50077 } # Tokuda Kyuichi
+		command = { type = ministerofsecurity which = 50107 } # Nosaka Sanzo
+		command = { type = ministerofintelligence which = 50125 } # Miyamoto Kenji
+		command = { type = chiefofstaff which = 50136 } # Ryonosuke Kusaka
+		command = { type = chiefofarmy which = 50137 } # Imai Takeo
+		command = { type = chiefofnavy which = 50145 } # Kawai Akira
+		command = { type = chiefofair which = 50151 } # Fukui Yoshi
+	}
+}
+
+event = {
+	id = 8007802
+	country = JAP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50018 } # Higashikuni Naruhiko
+		command = { type = foreignminister which = 50050 } # Shigemitsu Mamoru
+		command = { type = armamentminister which = 50074 } # Tojo Hideki
+		command = { type = ministerofsecurity which = 50104 } # Kato Hakujiro
+		command = { type = ministerofintelligence which = 50124 } # Koiso Kuniaki
+		command = { type = chiefofstaff which = 50134 } # Tojo Hideki
+		command = { type = chiefofarmy which = 50143 } # Tojo Hideki
+		command = { type = chiefofnavy which = 50147 } # Toyoda Soemu
+		command = { type = chiefofair which = 50163 } # Ushiroku Jun
+	}
+}
+
+event = {
+	id = 8007803
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1946 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50028 } # Shidehara Kijuro
+		command = { type = foreignminister which = 50038 } # Yoshida Shigeru
+		command = { type = armamentminister which = 50061 } # Ogasawara Sankuro
+		command = { type = ministerofsecurity which = 50085 } # Yamazaki Iwao
+		command = { type = ministerofintelligence which = 50113 } # Horikiri Zenjiro
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+		command = { type = foreignminister which = 50033 } # Ashida Hitoshi
+		command = { type = armamentminister which = 50053 } # Mizutani Chosaburo
+		command = { type = ministerofsecurity which = 50080 } # Kimura Kozaemon
+		command = { type = ministerofintelligence which = 50109 } # Katayama Tetsu
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007804
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50029 } # Yoshida Shigeru
+		command = { type = foreignminister which = 50038 } # Yoshida Shigeru
+		command = { type = armamentminister which = 50061 } # Ogasawara Sankuro
+		command = { type = ministerofsecurity which = 50085 } # Yamazaki Iwao
+		command = { type = ministerofintelligence which = 50113 } # Horikiri Zenjiro
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+		command = { type = foreignminister which = 50033 } # Ashida Hitoshi
+		command = { type = armamentminister which = 50053 } # Mizutani Chosaburo
+		command = { type = ministerofsecurity which = 50080 } # Kimura Kozaemon
+		command = { type = ministerofintelligence which = 50109 } # Katayama Tetsu
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007805
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1948 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+		command = { type = foreignminister which = 50033 } # Ashida Hitoshi
+		command = { type = armamentminister which = 50053 } # Mizutani Chosaburo
+		command = { type = ministerofsecurity which = 50080 } # Kimura Kozaemon
+		command = { type = ministerofintelligence which = 50109 } # Katayama Tetsu
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = 2 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50029 } # Yoshida Shigeru
+		command = { type = foreignminister which = 50038 } # Yoshida Shigeru
+		command = { type = armamentminister which = 50061 } # Ogasawara Sankuro
+		command = { type = ministerofsecurity which = 50085 } # Yamazaki Iwao
+		command = { type = ministerofintelligence which = 50113 } # Horikiri Zenjiro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007806
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1951 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50029 } # Yoshida Shigeru
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007807
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50029 } # Yoshida Shigeru
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8007808
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50029 } # Yoshida Shigeru
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007809
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1955 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50030 } # Hatoyama Ichiro
+		command = { type = foreignminister which = 50050 } # Shigemitsu Mamoru
+		command = { type = armamentminister which = 50187 } # Ichimada Hisato
+		command = { type = ministerofsecurity which = 50196 } # Nakamura Umekichi
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+		command = { type = foreignminister which = 50180 } # Kanichiro Kubota
+		command = { type = armamentminister which = 50054 } # Hoshijima Jiro
+		command = { type = ministerofsecurity which = 50080 } # Kimura Kozaemon
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007810
+	country = JAP
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		headofgovernment = 50030
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50176 } # Ishibashi Tanzan
+		command = { type = foreignminister which = 50181 } # Kishi Nobusuke
+		command = { type = armamentminister which = 50185 } # Ikeda Hayato
+		command = { type = ministerofsecurity which = 50196 } # Nakamura Umekichi
+	}
+}
+
+event = {
+	id = 8007811
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1959 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50177 } # Kishi Nobusuke
+		command = { type = foreignminister which = 50182 } # Fujiyama Aiichiro
+		command = { type = armamentminister which = 50187 } # Ichimada Hisato
+		command = { type = ministerofsecurity which = 50197 } # Ueki Koshiro
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50025 } # Katayama Tetsu
+		command = { type = foreignminister which = 50180 } # Kanichiro Kubota
+		command = { type = armamentminister which = 50191 } # Suehiro Nishio
+		command = { type = ministerofsecurity which = 50198 } # Hanamura Shiro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007812
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1962 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50178 } # Ikeda Hayato
+		command = { type = foreignminister which = 50183 } # Kosaka Zentaro
+		command = { type = armamentminister which = 50189 } # Mizuta Mikio
+		command = { type = ministerofsecurity which = 50197 } # Ueki Koshiro
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50179 } # Suehiro Nishio
+		command = { type = foreignminister which = 50180 } # Kanichiro Kubota
+		command = { type = armamentminister which = 50192 } # Usami Makoto
+		command = { type = ministerofsecurity which = 50199 } # Morinaga Teiichiro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8007813
+	country = JAP
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50178 } # Ikeda Hayato
+		command = { type = foreignminister which = 50183 } # Kosaka Zentaro
+		command = { type = armamentminister which = 50189 } # Mizuta Mikio
+		command = { type = ministerofsecurity which = 50197 } # Ueki Koshiro
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 6 }
+		
+		command = { trigger = { NOT = { event = 8322007 event = 8322008 event = 8322009 } } type = headofstate which = 50001 } # Hirohito
+		command = { trigger = { event = 8322007 } type = headofstate which = 50402 } # Kijuro Shidehara
+		command = { trigger = { event = 8322008 } type = headofstate which = 50012 } # Sanzo Nosaka
+		command = { trigger = { event = 8322009 } type = headofstate which = 50403 } # Emperor Takamatsu
+		
+		command = { type = headofgovernment which = 50179 } # Suehiro Nishio
+		command = { type = foreignminister which = 50180 } # Kanichiro Kubota
+		command = { type = armamentminister which = 50192 } # Usami Makoto
+		command = { type = ministerofsecurity which = 50199 } # Morinaga Teiichiro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+### Post-war events
+
+# New constitution
+event = {
+	id = 8007814
+	country = JAP
+
+	name = EVT_8007814_NAME
+	desc = EVT_8007814_DESC
+	picture = "nwo\japanese_constitution_1947"
+	style = 1
+
+	trigger = {
+		government = democratic
+		flag = cold_war_pacific
+	}
+
+	date = { day = 3 month = may year = 1947 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_8007814_A
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = democratic value = 2 }
+		command = { type = domestic which = freedom value = 3 }
+		command = { type = domestic which = free_market value = 3 }
+	}
+}
+
+# End of occupation
+event = {
+	id = 8007815
+	country = JAP
+
+	name = EVT_8007815_NAME
+	desc = EVT_8007815_DESC
+	picture = "nwo\macarthur_with_hirohito"
+	style = 1
+
+	trigger = {
+		government = democratic
+		flag = cold_war_pacific
+	}
+
+	date = { day = 28 month = april year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_8007815_A
+		command = { type = end_puppet }
+		command = { type = guarantee which = USA where = JAP }
+	}
+}
+
+# "Treaty of Mutual Cooperation and Security"
+event = {
+	id = 8007816
+	country = JAP
+
+	name = EVT_8007816_NAME
+	desc = EVT_8007816_DESC
+	picture = "nwo\american_japanese_treaty"
+	style = 1
+
+	trigger = {
+		government = democratic
+		flag = cold_war_pacific
+		exists = USA
+		NOT = { war = { country = USA } }
+	}
+
+	date = { day = 1 month = january year = 1960 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = EVT_8007816_A
+		ai_chance = 95
+		command = { type = relation which = USA value = 100 }
+		command = { type = guarantee which = USA where = JAP }
+	}
+	
+	action = {
+		name = EVT_8007816_B
+		ai_chance = 5
+		command = { type = dissent value = 15 }
+		command = { type = end_access which = USA }
+		command = { type = relation which = USA value = -150 }
+		command = { type = end_guarantee which = USA where = JAP }
+	}
+}

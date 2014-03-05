@@ -20,6 +20,7 @@ event = "db\events\fatherland\flavour.txt"
 event = "db\events\fatherland\africa\ethiopia.txt"
 event = "db\events\fatherland\africa\madagascar.txt"
 event = "db\events\fatherland\africa\south_africa.txt"
+event = "db\events\fatherland\africa\end_uk_colonialism.txt"
 
 # AMERICAS
 event = "db\events\fatherland\americas\argentina.txt"
@@ -53,6 +54,7 @@ event = "db\events\fatherland\asia\pakistan.txt"
 event = "db\events\fatherland\asia\sinkiang.txt"
 event = "db\events\fatherland\asia\tibet.txt"
 event = "db\events\fatherland\asia\thailand.txt"
+event = "db\events\fatherland\asia\japan.txt"
 
 # AXIS EUROPE
 event = "db\events\fatherland\axis_europe\Axis Military Events.txt"

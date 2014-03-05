@@ -84,7 +84,7 @@
  expirydate = { day = 30 month = december year = 1999 } 
  minimum = { 359 360 361 362 } 
  
- #extra = { 329 334 } 
+ extra = { 329 334 } 
  capital = 359 
  } 
  
@@ -613,18 +613,17 @@
  U85 = { # Congo-brazaville
  date = { day = 1 month = january year = 1914 } 
  expirydate = { day = 30 month = december year = 1999 } 
- minimum = { 904 903 905 906 901 894 902 898 897 899 } 
- 
- extra = { 890 } 
- capital = 901 
+ minimum = { 907 908  } 
+ extra = { 917 } 
+ capital = 907 
  }  
  
  CON = { # Congo
  date = { day = 1 month = january year = 1914 } 
  expirydate = { day = 30 month = december year = 1999 } 
- minimum = { 907 908  } 
- extra = { 917 } 
- capital = 907 
+ minimum = { 901 } 
+ extra = { 890 899 894 846 847 904 903 905 906 902 898 897 } 
+ capital = 901 
  }  
 
  COS = { # Costa Rica
@@ -968,9 +967,9 @@ GER = { # Germany
  GRE = { # Greece
  date = { day = 1 month = january year = 1914 } 
  expirydate = { day = 30 month = december year = 1999 } 
- minimum = { 377 365 369 }
+ minimum = { 377 365 }
  min = 1 
- extra = { 372 373 367 371 382 374 368 375 383 364 366 370 381 380 376 363 378 379 388 387 } 
+ extra = { 372 373 367 371 382 374 368 375 383 364 366 370 381 380 376 363 378 379 388 387 369 } 
  min_extra = 2 
  capital = 373 
  } 

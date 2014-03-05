@@ -6,14 +6,14 @@ Games Bug
 * Nehru has the wrong picture in India
 * Ceylon doesn't have any ministers, even when it had a "Change of government" event
 * Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
-* RK Norwegen had the "United Ostland" event
+V RK Norwegen had the "United Ostland" event
 * Dewey as President, but Truman as Vicepresident, why?
 * The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
-* RK Schweiz has not correct counter
-* SS has not correct counter
+V RK Schweiz has not correct counter
+V SS has not correct counter
 * AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
 * Germany has 90000520NAME event 
-* The SS ferocity may be incremented cause they have a white peace with Germany after they have inherit Ukraine.
+V The SS ferocity may be incremented cause they have a white peace with Germany after they have inherit Ukraine.
 
 Mod Improvement
 
@@ -22,7 +22,7 @@ Mod Improvement
 
 Forum's Feedback
 
-* Vichy France is not protected by Germany. If France Vichy is attacked by Allies Germany must intervene.
+V Vichy France is not protected by Germany. If France Vichy is attacked by Allies Germany must intervene.
 * Germany-Cossacks unexpected war after the Volga Conference. Eventually made aftermath events(with a possible rename of Stalingrad ?).
 * Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
 * The "Reorganization of Ukraine" does nothing if the Cossack Federation does not exist.

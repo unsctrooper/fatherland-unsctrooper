@@ -119,9 +119,8 @@ event = {
 		ai_chance = 70
 		
 		command = { type = removecore which = 709 } #Tbilisi
+		command = { type = capital which = 695 } #Sochi
 		
-		command = { type = independence which = GEO value = 0 when = 1 }
-				
 		command = { type = dissent value = 10 }
 		
 		command = { type = revolt which = 708 } #Kutaisi
@@ -131,6 +130,8 @@ event = {
 		command = { type = revolt which = 709 } #Tbilisi
 		
 		command = { type = revolt which = 710 } #Sukumi
+		
+		command = { type = independence which = GEO value = 0 when = 1 }
 		
 		command = { type = war which = GEO }
 	}
@@ -353,6 +354,8 @@ event = {
 
 		command = { type = make_puppet which = GEO }
 		
+		command = { type = sleepevent which = 92002 }
+		
 		#ARMENIA
 		command = { type = removeclaim which = 711 } #Yerevan
 		command = { type = removeclaim which = 712 } 
@@ -400,6 +403,8 @@ event = {
 		command = { type = removeclaim which = 708 } #Kutaisi
 		command = { type = removeclaim which = 709 } #Tbilisi
 		command = { type = removeclaim which = 710 } #Sukumi
+		
+		command = { type = secedeprovince which = GEO value = 709 }
 		
 		command = { type = independence which = GEO value = 0 when = 0 }
 

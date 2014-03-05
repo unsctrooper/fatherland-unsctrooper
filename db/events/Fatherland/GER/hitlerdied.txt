@@ -1215,7 +1215,9 @@ desc = "With the death of Hitler and the personal alliances he signed during the
 
 action_a = {
 name = ACTION_NAME_OK
-command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
+command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars 
+command = { type = 	peace which = USA value = 0 }
+}
 }
 }
 ############################
@@ -1402,6 +1404,7 @@ action_a = {
 name = 90000541A
 ai_chance = 80
 command = { type = war which = U42 }
+command = { type = 	end_non_aggression which = TRA where = SOV
 }
 action_b = {
 name = 90000541B

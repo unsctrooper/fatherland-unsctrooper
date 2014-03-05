@@ -65,8 +65,8 @@
 # 90000658 # SPA # Free France takes over our colonies!
 
 # 90000659 # ITA # The Greek situation
-# 90000660 # ITA # Colonization of Greece finished (90000659)
-
+# 90000660 # GRE # Greek resistance
+# 90000661 # GRE # The Hellenic State
 
 ###########################################################
 #Extraordinary Grand Council of Fascism
