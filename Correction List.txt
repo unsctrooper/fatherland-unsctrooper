@@ -1,46 +1,42 @@
-Updated at 23/02
+Updated at 06/03
 
 Games Bug
 
+GERMANY/SS/AXIS
 * When Heydrich kills Himmler the leader Himmler should also die. More generally, when the SS is purged, several SS ministers+leaders survive, intended?
-* Nehru has the wrong picture in India
-* Ceylon doesn't have any ministers, even when it had a "Change of government" event
-* Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
-V RK Norwegen had the "United Ostland" event
-* Dewey as President, but Truman as Vicepresident, why?
-* The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
-V RK Schweiz has not correct counter
-V SS has not correct counter
-* AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
 * Germany has 90000520NAME event 
-V The SS ferocity may be incremented cause they have a white peace with Germany after they have inherit Ukraine.
-
-Mod Improvement
-
-* Revision of mods.csv
-* Moving of events_pics bmp all under fatherland directory
-
-Forum's Feedback
-
-V Vichy France is not protected by Germany. If France Vichy is attacked by Allies Germany must intervene.
-* Germany-Cossacks unexpected war after the Volga Conference. Eventually made aftermath events(with a possible rename of Stalingrad ?).
-* Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
+* Germany-Cossacks war after the Volga Conference. Eventually made aftermath events(with a possible rename of Stalingrad ?).
 * The "Reorganization of Ukraine" does nothing if the Cossack Federation does not exist.
-* The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
-* After soviet union chooses beria and begin the purges, siberia gets an event without a real name: 8014270NAME
+* The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
+* Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
 * There's not a surrender event if Germany invade Italy after them leave axis
-* Australia left the allies without event/reason
-* If you choose to nuke test on london and Ireland is already nazi, nothing happens (london should at least get destroyed or damaged?)
-* Despite heydrich killing himmler, himmler is still head of state of crimea
+* If you choose to nuke test on london or moscow nothing happens (london/moscow should at least get destroyed or damaged?)
 * After ostland grabs leningrad Germany should remove its claim on it because if ostland is still allied with you they will just give it back
-* I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
 * If a nation of axis become democratic the Axis must intervene.
 * There is no Axis block, and Germany, once I take the "reform the axis" decision, does NOT become the alliance leader (makes inviting the Lokot Rep impossible)
 * There is no event for dealing with RK Kaukasus after you win the civil war
 * The Barbarossa II event is horribly bugged, as it requires Germany to station divisions in provinces that the SU grabs during the post-Hitler crisis
 * When the Axis collapsed, Georgia was left as the leader of the Axis and sole member.
-* There is no followup to the "Nuke London" event when germany conducts its first nuclear test. 
 * If Italy has gone left, it joins the reformed axis, and then immediately leaves.
-* The game crashes after confirming Soviet event about defeat of Siberian DR where Soviets should inherit Siberia and her troops. Everything is fine if you anex them manually before event triggers, but still it's shame to let all those troops go to waste.
-EDIT: I allied Communist China via event at the start of Chinese civil war before even going after Siberia, maybe this had something to do with it?
+
+USSR
+* The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
+* After soviet union chooses beria and begin the purges, siberia gets an event without a real name: 8014270NAME
 * After you defeat the Turkestans as the USSR, there seems to be no difference in the "centralize" or "decentralize" options. I went with centralize. Also, the southernmost 'Stans are only claims, not cores. WAD?
+
+EUROPE
+* Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
+* AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
+* I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
+
+ASIA
+* Nehru has the wrong picture in India
+* Ceylon doesn't have any ministers, even when it had a "Change of government" event
+* Australia left the allies without event/reason
+
+AMERICA
+* Dewey as President, but Truman as Vicepresident, why?
+
+Mod Improvement
+* Revision of mods.csv
+* Moving of events_pics bmp all under fatherland directory
