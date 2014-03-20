@@ -18,6 +18,8 @@ GERMANY/SS/AXIS
 * The Barbarossa II event is horribly bugged, as it requires Germany to station divisions in provinces that the SU grabs during the post-Hitler crisis
 * When the Axis collapsed, Georgia was left as the leader of the Axis and sole member.
 * If Italy has gone left, it joins the reformed axis, and then immediately leaves.
+* Germany's AI clearly goes for nukes (nice job) but sadly it builds no delivery systems. WWIII started for me in 1952 and Germany had just gotten its first nuke, but had no strategic bombers or rockets.
+* Germany seems extremely underpowered by 1952.
 
 USSR
 * The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
@@ -28,6 +30,7 @@ EUROPE
 * Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
 * AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
 * I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
+* UK is still the alliance leader, which probably should change at some point, especially as the UK loses its hold on the empire in the first few years. Maybe an event to change the alliance leader? The new DH allows for that I believe.
 
 ASIA
 * Nehru has the wrong picture in India
@@ -36,7 +39,9 @@ ASIA
 
 AMERICA
 * Dewey as President, but Truman as Vicepresident, why?
+* Very few USA events
 
 Mod Improvement
 * Revision of mods.csv
 * Moving of events_pics bmp all under fatherland directory
+ 
