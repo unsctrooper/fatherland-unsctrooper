@@ -33,8 +33,6 @@ EUROPE
 * UK is still the alliance leader, which probably should change at some point, especially as the UK loses its hold on the empire in the first few years. Maybe an event to change the alliance leader? The new DH allows for that I believe.
 
 ASIA
-* Nehru has the wrong picture in India
-* Ceylon doesn't have any ministers, even when it had a "Change of government" event
 * Australia left the allies without event/reason
 
 AMERICA
