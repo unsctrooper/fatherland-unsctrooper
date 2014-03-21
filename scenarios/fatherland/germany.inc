@@ -69,17 +69,16 @@ country = {
 		relation = { tag = MEX value = -25 }
 		relation = { tag = CHL value = 30 }
 		relation = { tag = ECU value = 25 }			
-		relation = { tag = DEN value = 100 }
-		relation = { tag = TUR value = 50 }
+		relation = { tag = TUR value = 50 guaranteed = { day = 01 month = january year = 1948 } }
 		relation = { tag = IRE value = 0 }
-		relation = { tag = TRA value = 50 }
+		relation = { tag = TRA value = 50 guaranteed = { day = 01 month = january year = 1948 } } # Cossacks
 		relation = { tag = POR value = 65 }
 		relation = { tag = SPA value = 85 }
 		relation = { tag = SCH value = -25 }
-		relation = { tag = FRA value = 50 }	
+		relation = { tag = FRA value = 50 guaranteed = { day = 01 month = january year = 1948 } }	
 		relation = { tag = SWE value = 50 }
-		relation = { tag = SER value = 25 }	
-	
+
+
 		# Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
 		relation = { tag = AST value = -200 }
 		relation = { tag = BEL value = -200 }
@@ -109,16 +108,24 @@ country = {
 		relation = { tag = UPE value = 50 } # Turkestan		
 		
 		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
-		relation = { tag = ITA value = 180 guaranteed = { day = 27 month = september year = 1940 } }
-		relation = { tag = CRO value = 120 guaranteed = { day = 1 month = may year = 1941 } }
-		relation = { tag = HUN value = 180 guaranteed = { day = 20 month = november year = 1940 } }
+		relation = { tag = ITA value = 180 guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = CRO value = 120 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = HUN value = 180 }
 		relation = { tag = ROM value = 150 }
 		relation = { tag = BUL value = 175 }
-		relation = { tag = SLO value = 200 access = yes guaranteed = { day = 20 month = november year = 1940 } }
 		relation = { tag = FIN value = 120 }
 		relation = { tag = MTN value = 100 }
-		relation = { tag = UTC value = 150 } # Lokot Republic
+		relation = { tag = BLR value = 200 access = yes }
+		
+		# Puppets inside the Axis
+		relation = { tag = SLO value = 200 access = yes }
+		relation = { tag = SER value = 200 access = yes }
+		relation = { tag = UTC value = 150 access = yes}  # Lokot Republic
 		relation = { tag = U58 value = 200 access = yes } # SS
+		
+		# Puppets outside the Axis
+		relation = { tag = DEN value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		
   }
    
     # provinces setup

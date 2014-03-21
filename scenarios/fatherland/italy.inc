@@ -68,7 +68,6 @@ country = {
 		relation = { tag = MEX value = -25 }
 		relation = { tag = CHL value = 30 }
 		relation = { tag = ECU value = 25 }			
-		relation = { tag = DEN value = 100 }
 		relation = { tag = TUR value = 50 }
 		relation = { tag = IRE value = 0 }
 		relation = { tag = TRA value = 50 }
@@ -77,7 +76,6 @@ country = {
 		relation = { tag = SCH value = -25 }
 		relation = { tag = FRA value = 50 }	
 		relation = { tag = SWE value = 50 }
-		relation = { tag = SER value = 10 }
 		
 		# Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
 		relation = { tag = AST value = -200 }
@@ -108,16 +106,19 @@ country = {
 		relation = { tag = UPE value = 50 } # Turkestan		
 		
 		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
-		relation = { tag = GER value = 180 guaranteed = { day = 27 month = september year = 1940 } }
-		relation = { tag = CRO value = 180 guaranteed = { day = 1 month = may year = 1941 } }
-		relation = { tag = HUN value = 175 guaranteed = { day = 20 month = november year = 1940 } }
+		relation = { tag = GER value = 180 guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = CRO value = 120 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = HUN value = 175 }
 		relation = { tag = ROM value = 150 }
 		relation = { tag = BUL value = 150 }
 		relation = { tag = SLO value = 120 }
 		relation = { tag = FIN value = 100 }
-		relation = { tag = MTN value = 200 access = yes}
+		relation = { tag = MTN value = 200 access = yes }
 		relation = { tag = UTC value = 50 } # Lokot Republic
 		relation = { tag = U58 value = 100 } # SS
+		relation = { tag = SER value = 50 }
+		# Outside the Axis but German's puppet
+		relation = { tag = DEN value = 100 }
 	}
   
     # provinces setup

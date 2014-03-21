@@ -1,36 +1,39 @@
+#####################
 # Reichskommissariat Ostland AI
+#####################
 
 switch = no # [yes/no] 
- max_front_ratio = 1.2  
- max_garrison_prop = 0.30 
- min_garrison_prop = 0.20 
-         evac_islands = yes  
-         use_offensive_supply = yes  
-         neutrality = 95.0000  
-         war = 0  
-         ferocity = no  
-         desperation = 0.3000  
- upgrading = 1.0
- reinforcement = 1.0
- strat_redeploy_threshold = 25 
- exp_force_ratio = 0.0 
- exp_force_ratios = { GER = 1.0 }  
- no_exp_forces_to = { } 
+max_front_ratio = 1.2  
+max_garrison_prop = 0.30 
+min_garrison_prop = 0.20 
+evac_islands = yes  
+use_offensive_supply = yes  
+neutrality = 95.0000  
+war = 0  
+ferocity = no  
+desperation = 0.3000  
+upgrading = 1.0
+reinforcement = 1.0
+strat_redeploy_threshold = 25 
+exp_force_ratio = 0.75
+exp_force_ratios = { GER = 1.0 }  
+no_exp_forces_to = { } 
   
- #################################### 
- # Diplomacy 
- #################################### 
- combat = { SOV = 300 } 
- 
- claim_acceptance = -59
-  
- befriend = { 
-   GER = 100 
- } 
- protect = {  
-   GER = 100 
- } 
- trade = { 
+##################### 
+# Diplomacy 
+##################### 
+combat = { 
+	SOV = 100 
+} 
+claim_acceptance = -59
+befriend = { 
+	GER = 100 
+} 
+protect = {  
+	GER = 100 
+} 
+
+trade = { 
    cancel_deal_threshold = 2 
   
    energy     = -1 
@@ -717,5 +720,3 @@ switch = no # [yes/no]
    core = { 
    }  
  } 
-  
- 
