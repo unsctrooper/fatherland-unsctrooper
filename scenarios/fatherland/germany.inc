@@ -24,7 +24,15 @@ country = {
 	supplies = 1800 
 	money = 1500
 
-	SpyInfo = {  country = "GER" NumberOfSpies = 15  } 
+	# spying
+	SpyInfo = { country = "ENG" NumberOfSpies = 8  } 
+	SpyInfo = { country = "SPA" NumberOfSpies = 8 }
+	SpyInfo = { country = "SOV" NumberOfSpies = 3 }
+	SpyInfo = { country = "GER" NumberOfSpies = 15 }
+	SpyInfo = { country = "HUN" NumberOfSpies = 2 }
+	SpyInfo = { country = "TUR" NumberOfSpies = 12 }
+	SpyInfo = { country = "SWE" NumberOfSpies = 10 }
+	SpyInfo = { country = "ITA" NumberOfSpies = 6 }
 	
 	# policy and government	
 	policy = {  
@@ -74,7 +82,7 @@ country = {
 		relation = { tag = TRA value = 50 guaranteed = { day = 01 month = january year = 1948 } } # Cossacks
 		relation = { tag = POR value = 65 }
 		relation = { tag = SPA value = 85 }
-		relation = { tag = SCH value = -25 }
+		relation = { tag = SCH value = -25 guaranteed = { day = 01 month = january year = 1948 } }
 		relation = { tag = FRA value = 50 guaranteed = { day = 01 month = january year = 1948 } }	
 		relation = { tag = SWE value = 50 }
 

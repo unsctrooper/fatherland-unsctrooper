@@ -1,35 +1,41 @@
-##############################
-# Country definition for UK #
-# Review by Pako #
-##############################
+#####################
+# Country definition for UK
+# Review by Pako
+#####################
  
- ##################### 
- # Country main data # 
- ##################### 
+##################### 
+# Country main data # 
+##################### 
   
- country = 
- {  tag                    = ENG 
+country = {  
+	tag = ENG 
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
+	capital = 29
+	manpower = 135
+	transports = 1600
+	escorts = 150
+	belligerence = 0
 	
+	# resources 
 	energy = 5000
 	metal = 5000
 	rare_materials = 2500
 	oil = 500
 	supplies = 10000
 	money = 500
-	manpower = 135
+	industrial_modifier = 1.05 # Marshall Plan boost simulation : 5%
 	
-	transports = 1600
-	escorts = 150
+	# spying	
+	SpyInfo = { country = "ENG" NumberOfSpies = 12  } 
+	SpyInfo = { country = "SPA" NumberOfSpies = 3 }
+	SpyInfo = { country = "SOV" NumberOfSpies = 5 }
+	SpyInfo = { country = "GER" NumberOfSpies = 7 }
+	SpyInfo = { country = "HUN" NumberOfSpies = 2 }
+	SpyInfo = { country = "TUR" NumberOfSpies = 10 }
+	SpyInfo = { country = "SWE" NumberOfSpies = 8 }
+	SpyInfo = { country = "ITA" NumberOfSpies = 6 }
 	
-	capital = 29
-	
-	dissent = 4
-	
-	industrial_modifier = 1.08
-	# Marshall Plan: 5%
-	# Occupation of Germany: 3%
-	
+	# policy and government	
 	policy = {
 		date = { year = 0 month = january day = 0 }
 		democratic = 10
@@ -40,79 +46,99 @@
 		defense_lobby = 6
 		interventionism = 4
 	}
-
-  diplomacy =
-  { relation = { tag = AFG value = -75 }
-    relation = { tag = ARG value = 20 }
-	relation = { tag = JOR value = 75 access = yes }
-    relation = { tag = AST value = 200 access = yes }
-    relation = { tag = BEL value = 200 }
-    relation = { tag = BHU value = 200 access = yes }
-    relation = { tag = BUL value = -150 }
-    relation = { tag = CAN value = 200 access = yes guaranteed = { day = 1 month = december year = 1947 } }
-    relation = { tag = CHI value = 80 }
-    relation = { tag = SLO value = -100 }
-    relation = { tag = ETH value = 50 }
-    relation = { tag = FIN value = -50 }
-    relation = { tag = U01 value = 200 access = yes guaranteed = { day = 1 month = december year = 1947 } }
-    relation = { tag = GER value = -200 }
-	relation = { tag = FRA value = -100 }
-    relation = { tag = GUA value = 50 }
-    relation = { tag = HOL value = 50 }
-    relation = { tag = HON value = 50 }
-    relation = { tag = HUN value = -100 }
-    relation = { tag = IRE value = 50 }
-    relation = { tag = IRQ value = 100 access = yes }
-    relation = { tag = ITA value = -200 }
-    relation = { tag = MEX value = 50 }
-    relation = { tag = NEP value = 200 access = yes }
-    relation = { tag = NZL value = 200 access = yes }
-    relation = { tag = OMN value = 150 access = yes }
-    relation = { tag = PER value = 100 access = yes }
-    relation = { tag = POR value = 75 guaranteed = { day = 1 month = december year = 1947 } }
-    relation = { tag = ROM value = -100 }
-    relation = { tag = SAF value = 200 access = yes }
-    relation =
-    { tag        = SAU
-      value      = 100
-      guaranteed = { day = 1 month = december year = 1947 }
-    }
-    relation =
-    { tag        = SCH
-      value      = 50
-      guaranteed = { day = 1 month = december year = 1947 }
-    }
-    relation = { tag = SIA value = 70 }
-    relation = { tag = SOV value = 100 }
-    relation = { tag = SPA value = -75 }
-    relation = { tag = SWE value = 20 }
-    relation =
-    { tag        = TUR
-      value      = 50
-      guaranteed = { day = 1 month = december year = 1947 }
-    }
-    relation = { tag = USA value = 200 }
-    relation = { tag = VEN value = -10 }
-    relation = { tag        = YEM
-      value      = 150
-      access     = yes     
-    }
-    relation = { tag = NIC value = 200 }
-    relation = { tag = U05 value = 125  }
-    relation = { tag = U02 value = 200 access = yes }
-  } 
+	dissent = 4
+	headofstate = { type = 9 id = 10014 }
+	headofgovernment = { type = 9 id = 10019 }
+	foreignminister = { type = 9 id = 10024 }
+	armamentminister = { type = 9 id = 10044 }
+	ministerofsecurity = { type = 9 id = 10065 }
+	ministerofintelligence = { type = 9 id = 10080 }
+	chiefofstaff = { type = 9 id = 10097 }
+	chiefofarmy = { type = 9 id = 10106 }
+	chiefofnavy = { type = 9 id = 10111 }
+	chiefofair = { type = 9 id = 10118 }
+	
+	dormant_ministers = { 10001 10011 10002 10004 10005 10058 10006 10007 10008 10101 10102 10009 10109 10010 10017 10022 10091 10103 10105 10119 10059 10131 10141 10142 10093 10112 10039 }
+	dormant_leaders = {  10083 10313  }
+	
+	# foreign diplomacy
+	diplomacy = { 
+		# Neutral AFG ARG BOL BRA CHI TRA DEN ECU IRE MEX MTN PAR PER POR SYR SWE URU PAK
+		relation = { tag = AFG value = -75 }
+		relation = { tag = CHI value = 80 }
+		relation = { tag = SAU value = 100 guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = SYR value = 30 }	
+		relation = { tag = PAK value = -50 }
+		relation = { tag = IND value = -50 }
+		relation = { tag = ARG value = -20 }
+		relation = { tag = URU value = 10 }
+		relation = { tag = BOL value = 10 }
+		relation = { tag = BRA value = -30 }
+		relation = { tag = PAR value = 0 }
+		relation = { tag = MEX value = 10 }
+		relation = { tag = CHL value = 30 }
+		relation = { tag = ECU value = 20 }			
+		relation = { tag = TUR value = 50 guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = IRE value = 50 }
+		relation = { tag = TRA value = -100 } # Cossacks
+		relation = { tag = POR value = 100 guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = SPA value = -50 }
+		relation = { tag = SCH value = 50 guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = FRA value = -50 }	
+		relation = { tag = SWE value = -10 }
+		
+		# Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
+		relation = { tag = AST value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = BEL value = 200 access = yes }
+		relation = { tag = BHU value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = CAN value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = EGY value = 50 }
+		relation = { tag = ETH value = 50 }
+		relation = { tag = U01 value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } } # Free France
+		relation = { tag = HOL value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = IRQ value = 50 access = yes }	
+		relation = { tag = NEP value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = NIC value = 200 }
+		relation = { tag = NZL value = 200 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = OMN value = 50 access = yes }	
+		relation = { tag = SAF value = 150 access = yes }
+		relation = { tag = YEM value = 50 access = yes }
+		relation = { tag = JAP value = 125 access = yes guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = JOR value = 50 access = yes }
+		
+		# Comintern SOV CHC MON and Soviet Area (SIB,U57,U59,UPE)
+		relation = { tag = SOV value = 50 }
+		relation = { tag = CHC value = -100 }
+		relation = { tag = MON value = 0 }
+		relation = { tag = SIB value = 80 } # Siberia
+		relation = { tag = U57 value = 65 } # Far Eastern Republic
+		relation = { tag = U59 value = 10 } # Russian Empire
+		relation = { tag = UPE value = -50 } # Turkestan		
+		
+		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
+		relation = { tag = ITA value = -180 }
+		relation = { tag = CRO value = -120 }
+		relation = { tag = HUN value = -180 }
+		relation = { tag = ROM value = -150 }
+		relation = { tag = BUL value = -175 }
+		relation = { tag = FIN value = 20 }
+		relation = { tag = MTN value = -100 }
+		relation = { tag = BLR value = -200 }
+		
+		# Puppets inside the Axis
+		relation = { tag = SLO value = -100 }
+		relation = { tag = SER value = -100  }
+		relation = { tag = UTC value = -150 }  # Lokot Republic
+		relation = { tag = U58 value = -200 } # SS
+		
+		# Puppets outside the Axis
+		relation = { tag = DEN value = -100}
+		
+}
   
-    SpyInfo = {  country = "ENG" NumberOfSpies = 12  } 
-	SpyInfo = { country = "SPA" NumberOfSpies = 3 }
-	SpyInfo = { country = "SOV" NumberOfSpies = 5 }
-	SpyInfo = { country = "GER" NumberOfSpies = 5 }
-	SpyInfo = { country = "HUN" NumberOfSpies = 2 }
-	SpyInfo = { country = "TUR" NumberOfSpies = 2 }
-	SpyInfo = { country = "SWE" NumberOfSpies = 2 }
-	SpyInfo = { country = "ITA" NumberOfSpies = 5 }
-    
-  nationalprovinces      = {  29 9 5 4 6 7 12 11 10 36 35 13 14 15 18 17 16 24 25 28  
-        19 26 27 20 23 22 21 8 }
+	# provinces setup
+    nationalprovinces = {  29 9 5 4 6 7 12 11 10 36 35 13 14 15 18 17 16 24 25 28  
+					  19 26 27 20 23 22 21 8 }
 		
   claimedprovinces = {  
    # Palestine
@@ -122,8 +148,7 @@
    # Hong Kong
    1371 
    }
-   
-   
+
    ownedprovinces         = {  
    
    #Great Britain
@@ -170,20 +195,6 @@
 	
 	inventions = { 3000011 3000012 3000015 3000016 3000017 3000018 3000019 3000020 3000027 3000028 3000031 }
 
-	headofstate = { type = 9 id = 10014 }
-	headofgovernment = { type = 9 id = 10019 }
-	foreignminister = { type = 9 id = 10024 }
-	armamentminister = { type = 9 id = 10044 }
-	ministerofsecurity = { type = 9 id = 10065 }
-	ministerofintelligence = { type = 9 id = 10080 }
-	chiefofstaff = { type = 9 id = 10097 }
-	chiefofarmy = { type = 9 id = 10106 }
-	chiefofnavy = { type = 9 id = 10111 }
-	chiefofair = { type = 9 id = 10118 }
-   dormant_ministers      = {  10001 10011 10002 10004 10005 10058 10006 10007 10008 10101 10102 10009 10109 10010 10017 10022 10091 10103 10105 10119 10059 10131 10141 10142 10093 
-                               10112 10039 
-                            }
-   dormant_leaders        = {  10083 10313  }
   
 	landunit = {
 		id = { type = 30251 id = 1 }

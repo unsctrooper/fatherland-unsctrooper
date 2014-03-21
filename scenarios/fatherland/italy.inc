@@ -14,7 +14,7 @@ country = {
 	manpower = 750
 	transports = 130
 	escorts = 35
-	belligerence = 10
+	belligerence = 5
 	
 	# resources 
 	energy = 3600
@@ -24,7 +24,15 @@ country = {
 	supplies = 1200
 	money = 650
 
+	# spying
 	SpyInfo = { country = "ITA" NumberOfSpies = 9  }
+	SpyInfo = { country = "ENG" NumberOfSpies = 3  } 
+	SpyInfo = { country = "SPA" NumberOfSpies = 6 }
+	SpyInfo = { country = "SOV" NumberOfSpies = 5 }
+	SpyInfo = { country = "GER" NumberOfSpies = 7 }
+	SpyInfo = { country = "HUN" NumberOfSpies = 2 }
+	SpyInfo = { country = "TUR" NumberOfSpies = 8 }
+	SpyInfo = { country = "SWE" NumberOfSpies = 4 }
 	
 	# policy and government
 	policy = {
@@ -73,7 +81,7 @@ country = {
 		relation = { tag = TRA value = 50 }
 		relation = { tag = POR value = 65 }
 		relation = { tag = SPA value = 85 }
-		relation = { tag = SCH value = -25 }
+		relation = { tag = SCH value = -25 guaranteed = { day = 01 month = january year = 1948 } }}
 		relation = { tag = FRA value = 50 }	
 		relation = { tag = SWE value = 50 }
 		
