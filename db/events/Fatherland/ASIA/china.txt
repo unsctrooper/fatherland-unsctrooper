@@ -1843,6 +1843,7 @@ event = {
 	command = { type = set_domestic which = interventionism value = 8 }
 	command = { type = dissent value = 10 }
 	command = { type = guarantee which = SOV where = CHI }
+	command = { type = access which = SOV }
 	command = { type = relation which = SOV value = 20 }
 	command = { type = relation which = USA value = -5 }
 	command = { type = relation which = GER value = -20 }
@@ -1881,8 +1882,8 @@ event = {
 	command = { trigger = { guarantee = { country = SOV country = CHI } } type = end_guarantee which = SOV where = CHI }
 	command = { type = relation which = SOV value = -20 }
 	command = { type = relation which = USA value = -20 }
-	command = { type = relation which = GER value = 50 }
-	command = { type = relation which = AXI value = 50 }
+	command = { type = relation which = GER value = 20 }
+	command = { type = relation which = AXI value = 20 }
 	command = { type = relation which = U57 value = -10 } #Far East Republic
 	command = { type = relation which = U59 value = -10 } #Russian Empire
 	command = { type = relation which = SIB value = -10 } #Siberia
@@ -1918,6 +1919,7 @@ event = {
 	command = { type = domestic which = freedom value = 1 }
 	command = { type = industrial_modifier which = total value = 25 }
 	command = { type = dissent value = 6 }
+	command = { type = setflag which = kmt_congress_end }
 	}
 	
 	action = {
@@ -1926,6 +1928,7 @@ event = {
 	command = { type = set_domestic which = free_market value = 4 }
 	command = { type = industrial_modifier which = total value = 15 }
 	command = { type = dissent value = 2 }
+	command = { type = setflag which = kmt_congress_end }
 	}
 	
 	action = {
@@ -1935,6 +1938,7 @@ event = {
 	command = { type = domestic which = freedom value = -1 }
 	command = { type = dissent value = 4 }
 	command = { type = research_mod value = 7 }
+	command = { type = setflag which = kmt_congress_end }
 	}
 }
 
@@ -1994,3 +1998,113 @@ event = {
 
 ##### Activate German divisions in China if China is in Axis !!!! #####
 ##### Americans and Soviets declare war on Axis China !!!! #####
+
+##### Coup against pro-Soviet government #####
+
+	event = { 
+	id = 8200159
+	random = no
+	country = CHI
+	
+	trigger = {
+	flag = china_prosoviet
+	flag = kmt_congress_end
+	exists = SOV
+	}
+
+	name = "EVT_8200159_NAME"
+	desc = "EVT_8200159_DESC"
+	picture = "ccip_unrest"
+	style = 2
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1980 }
+	
+	action = {
+	ai_chance = 95
+	name = "Accept the new anti-Soviet government."
+	command = { type = relation which = SOV value = -20 }
+	command = { type = domestic which = political_left value = 1 }
+	command = { type = end_guarantee which = SOV where = CHI }
+	command = { type = dissent value = -2 }
+	command = { type = clrflag which = china_prosoviet }
+	}
+
+	action = {
+	ai_chance = 5
+	name = "Smash this coup."
+	command = { type = relation which = SOV value = 10 }
+	command = { type = domestic which = political_left value = -1 }
+	command = { type = dissent value = 4 }
+	}
+	}
+	
+##### Invite China to the United Nations (USA) #####
+
+	event = { 
+	id = 8200160
+	random = no
+	country = USA
+	
+	trigger = {
+	flag = china_proamerican
+	flag = kmt_congress_end
+	exists = CHI
+	NOT = { alliance = { country = CHI country = USA } }
+	}
+
+	name = "EVT_8200160_NAME"
+	desc = "EVT_8200160_DESC"
+	picture = "fatherland\nato"
+	style = 1
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 65
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+	ai_chance = 85
+	name = "Offer China a formal invitation."
+	command = { type = relation which = CHI value = 10 }
+	command = { type = domestic which = interventionism value = -1 }
+	command = { type = domestic which = defense_lobby value = -1 }
+	command = { type = trigger which = 8200161 }
+	}
+	
+	action = {
+	ai_chance = 15
+	name = "The United Nations is strong enough."
+	command = { type = relation which = CHI value = -5 }
+	command = { type = domestic which = defense_lobby value = 1 }
+	command = { type = dissent value = 6 }
+	}
+	}
+
+##### China is invited into the United Nations #####
+
+	event = { 
+	id = 8200161
+	random = no
+	country = USA
+
+	name = "EVT_8200161_NAME"
+	desc = "EVT_8200161_DESC"
+	picture = "fatherland\nato"
+	style = 1
+	
+		action = {
+	ai_chance = 90
+	name = "Accept the invitation."
+	command = { type = alliance which = USA }
+	command = { type = gain_tech which = 6900 } # Armored Division Doctrine
+	command = { type = gain_tech which = -2 }
+	}
+	
+	action = {
+	ai_chance = 10
+	name = "We'll settle for good relations for now."
+	command = { type = dissent value = 4 }
+	}
+}
+
