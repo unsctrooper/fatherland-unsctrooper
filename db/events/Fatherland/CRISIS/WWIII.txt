@@ -61,7 +61,7 @@ trigger = {
 war = { country = GER country = USA }
 	}
 	
-date = { day = 1 month = january year = 1953 }
+date = { day = 1 month = january year = 1948 }
 offset = 30
 deathdate = { day = 12 month = march year = 1966 }
 	
@@ -93,7 +93,7 @@ trigger = {
 war = { country = GER country = USA }
 	}
 	
-date = { day = 1 month = january year = 1953 }
+date = { day = 1 month = january year = 1948 }
 offset = 30
 deathdate = { day = 12 month = march year = 1966 }
 	
@@ -125,7 +125,7 @@ trigger = {
 war = { country = GER country = USA }
 	}
 	
-date = { day = 1 month = january year = 1953 }
+date = { day = 1 month = january year = 1948 }
 offset = 30
 deathdate = { day = 12 month = march year = 1966 }
 	
@@ -189,7 +189,7 @@ trigger = {
 war = { country = GER country = USA }
 	}
 	
-date = { day = 1 month = january year = 1953 }
+date = { day = 1 month = january year = 1948 }
 offset = 30
 deathdate = { day = 12 month = march year = 1966 }
 	
@@ -224,12 +224,44 @@ war = { country = GER country = USA }
 flag = SOVFRIENDLY
 	}
 	
-date = { day = 1 month = january year = 1953 }
+date = { day = 1 month = january year = 1952 }
 offset = 30
 deathdate = { day = 12 month = march year = 1966 }
 	
 action = { 
 name = "Okay!" 
 command = { type = war which = GER }
+}
+}
+
+event = { # Force French State in WW III
+	id = 66607
+	random = no
+    country = GER
+	
+	name = "Force the French State in the War"
+	desc = "Force the French State in the War" 
+	style = 2
+	picture = "news_paper"
+	
+decision = {
+war = { country = GER country = USA }
+}
+
+decision_trigger = { 
+war = { country = GER country = USA }
+}
+	
+trigger = {
+war = { country = GER country = USA }
+	}
+	
+date = { day = 1 month = january year = 1948 }
+offset = 30
+deathdate = { day = 12 month = march year = 1966 }
+	
+action = { 
+name = "Okay!" 
+command = { type = alliance which = FRA }
 }
 }

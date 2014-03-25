@@ -1,0 +1,75 @@
+event = {
+	id = 999440
+	random = no
+	country = USA
+	
+	trigger = {  
+			control = { province = 1887 } # Los Angeles
+			money = 1000
+			NOT = {
+			lost_national = { country = USA value = 5 }
+				}
+			}
+
+	name = "Arroyo Seco Parkway"
+	desc = "The Arroyo Seco Parkway, formerly known as the Pasadena Freeway, is the first freeway in California and the western United States. It connects Los Angeles with Pasadena alongside the Arroyo Seco seasonal river. It is notable not only for being the first, mostly opened in 1940, but for representing the transitional phase between early parkways and modern freeways. Although it was completed in 1949, the structure was not fully used until September 22, 1953."
+
+	style = 2
+	picture = "usa_rt110"
+
+	date = { day = 30 month = december year = 1949 }
+	offset = 30
+	deathdate = { day = 9 month = march year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = dissent value = -1 }
+		command = { type = money value = -100 }
+		command = { type = construct which = infrastructure where = 1887 value = 10 }
+	}
+}
+
+event = {
+	id = 999442
+	random = no
+	tag = { CAN USA }
+	all = yes
+	
+	trigger = {  
+			money = 200
+			alliance = { country = USA country = CAN }
+			OR = {
+			war = { country = USA country = JAP }
+			war = { country = USA country = SOV }
+				}
+			NOT = {
+			lost_national = { country = USA value = 5 }
+			lost_national = { country = CAN value = 5 }
+				}
+			}
+
+	name = "Alaska Highway"
+	desc = "The Alaska Highway (also known as the Alaskan Highway, Alaska-Canadian Highway, or ALCAN Highway) was constructed during World War II for the purpose of connecting the contiguous U.S. to Alaska through Canada. It begins at the junction with several Canadian highways in Dawson Creek, British Columbia, and runs to Delta Junction, Alaska, via Whitehorse, Yukon. The entire route was completed October 28, 1942."
+
+	style = 2
+	picture = "usa_alaska"
+
+	date = { day = 28 month = october year = 1950 }
+	offset = 30
+	deathdate = { day = 9 month = march year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = relation which = CAN value = 10 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = money value = -200 }
+		command = { type = construct which = infrastructure where = 2103 value = 10 }
+		command = { type = construct which = infrastructure where = 2104 value = 10 }
+		command = { type = construct which = infrastructure where = 2105 value = 10 }
+		command = { type = construct which = infrastructure where = 2099 value = 10 }
+		command = { type = construct which = infrastructure where = 2095 value = 10 }
+		command = { type = construct which = infrastructure where = 2094 value = 10 }
+		command = { type = construct which = infrastructure where = 2140 value = 10 }
+		command = { type = construct which = infrastructure where = 2142 value = 10 }
+	}
+}

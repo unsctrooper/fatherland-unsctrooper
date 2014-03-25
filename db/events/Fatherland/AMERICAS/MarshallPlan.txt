@@ -154,7 +154,7 @@ id = 504
 	picture = "lend_lease"
 
 	trigger = {
-    flag = SOVfriendly
+    flag = SOVFRIENDLY
 	}
 	
 	date = { day = 1 month = january year = 1948 }

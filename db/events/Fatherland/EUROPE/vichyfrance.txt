@@ -1131,3 +1131,52 @@ atwar = GER
 	    command = { type = war which = GER }		
 	}
 }
+
+event = {
+	id = 999447
+	random = no
+	country = FRA
+	
+	trigger = {  
+			exists = U01 # Free France
+			}
+
+	name = "SOE Agents parachuted in France"
+	desc = "We have noticed who some agents are parachuted into metropolitan France."
+
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 24 month = september year = 1949 }
+
+	action = {
+		name = "Damn !" 
+		command = { type = dissent value = 1 }
+		command = { type = intelligence which = us value = -5 }
+		command = { type = intelligence which = them value = 5 }
+	}
+}
+
+event = {
+	id = 999448
+	random = no
+	country = U01
+	
+	trigger = {  
+			exists = FRA # Vichy France
+			}
+
+	name = "SOE Agents parachuted in France"
+	desc = "On the night of 24 September 1949,some agents are parachuted into metropolitan France."
+
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 25 month = september year = 1949 }
+
+	action = {
+		name = "ACTION_NAME_GREAT" 
+		command = { type = intelligence which = us value = 5 }
+		command = { type = intelligence which = them value = -5 }
+	}
+}

@@ -1382,6 +1382,29 @@ event = {
 	}	
 }
 
+event = {
+	id = 999357
+	random = no
+	country = CHC
+	trigger = {
+			NOT = {
+			war = { country = SOV country = CHI }
+				}
+			war = { country = CHC country = CHI }
+			}
+	date = { day = 12 month = october year = 1949 }
+	name = "Soviet Volunteer Air Group"
+	desc = "The Soviet Volunteer Air Group was the ostensibly volunteer Soviet Air Forces to support the People's Republic of China during the Chinese Civil War. Some 450 Soviet pilots and technicians brougth 155 fighter aircraft, 62 bombers, and 8 trainers into China. The Soviet squadrons were withdrawn in 1949."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_division value = multi_role when = 4 }
+		command = { type = relation which = SOV value = 20 }
+	}
+}
+
+
 #############################
 ### Post-Civil War events ###
 ### If Nat. China wins    ###
@@ -2086,7 +2109,7 @@ event = {
 	event = { 
 	id = 8200161
 	random = no
-	country = USA
+	country = CHI
 
 	name = "EVT_8200161_NAME"
 	desc = "EVT_8200161_DESC"
@@ -2107,4 +2130,3 @@ event = {
 	command = { type = dissent value = 4 }
 	}
 }
-

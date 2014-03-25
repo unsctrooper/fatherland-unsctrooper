@@ -21,6 +21,7 @@ event = "db\events\fatherland\africa\ethiopia.txt"
 event = "db\events\fatherland\africa\madagascar.txt"
 event = "db\events\fatherland\africa\south_africa.txt"
 event = "db\events\fatherland\africa\end_uk_colonialism.txt"
+event = "db\events\fatherland\africa\egypt.txt"
 
 # AMERICAS
 event = "db\events\fatherland\americas\argentina.txt"
@@ -112,4 +113,4 @@ event = "db\events\fatherland\middle_east\saudi_arabia.txt"
 event = "db\events\fatherland\middle_east\syria.txt"
 event = "db\events\fatherland\middle_east\united_arab_republic.txt"
 event = "db\events\fatherland\middle_east\yemen.txt"
-event = "db\events\fatherland\middle_east\israel.txt"
+#event = "db\events\fatherland\middle_east\israel.txt"

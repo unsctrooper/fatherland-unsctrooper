@@ -18,7 +18,7 @@
 # 90000112 # PER # German-Iranian Defense Treaty
 # 90000113 # GER # German-Iranian Defense Treaty: Cooperation
 # 90000114 # GER # German-Iranian Defense Treaty: Alliance
-# 90000114 # SOV # Axis presence in Iran
+# 90000115 # SOV # Axis presence in Iran
 
 event = {
 	id = 90000100
@@ -436,7 +436,7 @@ event = {
 }
 event = {
 	id = 90000113
-	country = GER
+	country = PER
 
 	name = 90000113_NAME
 	desc = 90000113_DESC
@@ -445,13 +445,15 @@ event = {
 
 	action = {
 		name = ACTION_NAME_GREAT
-		command = { type = relation which = PER value = 10 }
-		command = { type =	guarantee which = GER where = PER 	}
+		command = { type = relation which = GER value = 100 }
+		command = { type = guarantee which = GER where = PER }
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
 	}	
 }
 event = {
 	id = 90000114
-	country = GER
+	country = PER
 
 	name = 90000114_NAME
 	desc = 90000114_DESC
@@ -460,8 +462,11 @@ event = {
 
 	action = {
 		name = ACTION_NAME_GREAT
-		command = { type = relation which = PER value = 10 }
-		command = { type =	guarantee which = GER where = PER 	}
+		command = { type = relation which = GER value = 200 }
+		command = { type = guarantee which = GER where = PER }
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+		command = { type = alliance which = GER }
 	}	
 }
 event = {

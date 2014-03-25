@@ -1110,14 +1110,14 @@ event = { # What to do about the FER ?
 		command = { type = setflag which = SOVSTRONG } 	
         command = { type = dissent value = 1 }
 		command = { type = war which = U57 }
-		command = { type = setflag which = SOVUSAenemy } 
+		command = { type = setflag which = SOVENEMY } 
 	}
 	    action_c = { # 
 		name = "We have enough land to govern for now!" 
 		ai_chance = 1
 		command = { type = setflag which = SOVSTRONG } 	
         command = { type = dissent value = 5 }
-		command = { type = setflag which = SOVUSAneutr } 
+		command = { type = setflag which = SOVNEUTR } 
 	}
 }
 
@@ -1162,13 +1162,13 @@ event = { # The Americans Refuse!
         ai_chance = 50
 		command = { type = war which = U57 }
 		command = { type = relation which = USA value = -100 }		
-		command = { type = setflag which = SOVUSAenemy } 
+		command = { type = setflag which = SOVENEMY } 
 	}
 	    action_b = { # We have to accept..
 		name = "We have to accept.." 
 		ai_chance = 50
         command = { type = dissent value = 5 }
-		command = { type = setflag which = SOVUSAneutr } 
+		command = { type = setflag which = SOVNEUTR } 
 	}
 }
 
@@ -1213,13 +1213,13 @@ event = { # Conference of Tokyo - Offer I
         command = { type = peacetime_ic_mod value = -3 }
         command = { type = access which = USA }	
         command = { type = dissent value = 3 }
-		command = { type = setflag which = SOVUSAfriendly } 		
+		command = { type = setflag which = SOVFRIENDLY } 		
 	}
 	    action_b = { # Concessions? nah! 
 		name = "Consessions? No!" 
 		ai_chance = 1
 		command = { type = relation which = USA value = -100 }	
-		command = { type = setflag which = SOVUSAneutr } 
+		command = { type = setflag which = SOVNEUTR } 
 	}
 }
 
@@ -1239,14 +1239,14 @@ event = { # Conference of Tokyo - Offer II
 		command = { type = relation which = USA value = 50 }	
 		command = { type = relation which = U57 value = 50 }
         command = { type = peacetime_ic_mod value = 5 }
-		command = { type = setflag which = SOVUSAfriendly } 		
+		command = { type = setflag which = SOVFRIENDLY } 		
 	}
 	    action_b = { # 
 		name = "No, we'll take it ourselves!" 
 		ai_chance = 80
 		command = { type = relation which = USA value = -200 }	
 		command = { type = war which = U57 }
-		command = { type = setflag which = SOVUSAenemy } 
+		command = { type = setflag which = SOVENEMY } 
 	}
 }
 ##########################
@@ -1259,7 +1259,7 @@ event = { # What to do with the Sakhalin Islands?
 
 	
     trigger = {
-	event = { id = 8014286 days = 90 } 
+		event = { id = 8014286 days = 90 } 
 	}
 	
     date = { day = 1 month = january year = 1948 }
@@ -1289,21 +1289,21 @@ command = { type = secedeprovince which = JAP value = 1542 when = 1 }
 command = { type = secedeprovince which = JAP value = 1543 when = 1 }
 }
 action = {
-trigger = { flag = SOVfriendly } 
+trigger = { flag = SOVFRIENDLY } 
 ai_chance = 10 # Republic
 name = "An independent Sakhalin Republic!"
 command = { type = relation which = JAP value = -50 }	
 command = { type = relation which = SOV value = -50 }	
 }
 action = {
-trigger = { flag = SOVfriendly } 
+trigger = { flag = SOVFRIENDLY } 
 ai_chance = 10 # Military Administration
 name = "We'll put it under Military Administration"
 command = { type = relation which = JAP value = -50 }	
 command = { type = relation which = SOV value = -50 }	
 }
 action = {
-trigger = { flag = SOVfriendly } 
+trigger = { flag = SOVFRIENDLY } 
 ai_chance = 20
 name = "Hand it back to Japan"
 command = { type = relation which = JAP value = 25 }
@@ -1313,7 +1313,7 @@ command = { type = secedeprovince which = JAP value = 1542 when = 1 }
 command = { type = secedeprovince which = JAP value = 1543 when = 1 }
 }
 action = {
-trigger = { flag = SOVfriendly } 
+trigger = { flag = SOVFRIENDLY } 
 ai_chance = 70
 name = "Hand it back to the Soviets"
 command = { type = relation which = SOV value = 25 }
@@ -1326,6 +1326,113 @@ command = { type = secedeprovince which = SOV value = 1543 when = 1 }
 
 ################
 ### Mongolia ###
+################
+
+event = { # Fate of Mongolia
+	id = 8014288
+	random = no
+	country = SOV
+    save_date = yes
+
+	name = "Fate of Mongolia"
+	desc = "Now that we've regained our influence in the area we can again decide exactly what's going to happen with the Mongolia. Can either be integrated within the USSR as a Soviet Republic, our puppet once again." 
+	style = 2
+	picture = "east_turkestan"
+	
+    trigger = {
+		control = { province = 1124 data = SOV } # Ulan Bator
+		NOT = { exists = MON } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action_a = { 
+	name = "Integrate as Mongolia SSR" 
+	ai_chance = 50
+	command = { type = dissent value = 3 }
+	command = { type = relation which = CHI value = -15 }	
+	command = { type = relation which = CHC value = -15 }	
+	command = { type = addclaim which = 1120 }
+	command = { type = addclaim which = 1124 }
+	command = { type = addclaim which = 1125 }	
+	command = { type = addclaim which = 1123 }	
+	command = { type = addclaim which = 1121 }
+	command = { type = addclaim which = 1122 }	
+}
+action_b = { 
+	name = "Reinstall a puppet government"
+	ai_chance = 50
+	command = { type = dissent value = -3 }
+	command = { type = independence which = MON value = 1 } 
+	command = { type = make_puppet which = MON }
+	command = { type = relation which = CHI value = -25 }	
+	command = { type = relation which = CHC value = -25 }
+	command = { type = sleepevent which = 8014289 }
+}	
+}
+
+event = { # Integration of Mongolia SSR
+	id = 8014289
+	random = no
+	country = SOV
+
+	name = "Integration of Mongolia SSR"
+	desc = "Now they are completely part of Soviet Union !" 
+	style = 2
+	picture = "sinkiang"
+	
+    trigger = {
+		event = { id = 8014288 days = 180 } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action = { 
+	name = "Hurrah !" 
+		command = { type = addcore which = 1120 }
+		command = { type = addcore which = 1124 }
+		command = { type = addcore which = 1125 }	
+		command = { type = addcore which = 1123 }	
+		command = { type = addcore which = 1121 }
+		command = { type = addcore which = 1122 }	
+	}
+}
+
+##########################
+### A Gold Opportunity (If GER is at war with UK before the 1950 is a gold opportunity for revamp Soviet Union!)
+##########################
+
+event = { # A Gold Opportunity
+	id = 8014290
+	random = no
+	country = SOV
+
+	name = "The Axis are at war with the United Nations"
+	desc = "The Axis are at war with UN, is a gold opportunity for our revenge !" 
+	style = 2
+	picture = "sinkiang"
+	
+    trigger = {
+		war = { country = GER country = ENG }
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 100
+	deathdate = { day = 30 month = december year = 1949 }
+	
+action = { 
+	name = "At War !" 
+		command = { type = end_non_aggression which = GER where = SOV }
+		command = { type = end_non_aggression which = TRA where = SOV }
+		command = { type = war which = GER }
+		command = { type = war which = TRA }
+	}
+}
+
 ##########################
 ### VI - Internationale ##
 ##########################

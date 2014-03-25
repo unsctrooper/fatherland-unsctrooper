@@ -68,6 +68,10 @@
 # 90000660 # GRE # Greek resistance
 # 90000661 # GRE # The Hellenic State
 
+# 90000662 # ITA # Institute for Industrial Reconstruction
+# 90000663 # ITA # Reorganization of Blackshirt Divisions
+# 90000664 # ITA # Italian Naval New Construction Program
+
 ###########################################################
 #Extraordinary Grand Council of Fascism
 ###########################################################
@@ -1618,6 +1622,7 @@ event = {
 		ai_chance = 50
 		command = { type = sleepevent which = 90000630 }
 		command = { type = sleepevent which = 90000631 }
+		command = { type = sleepevent which = 90000633 }		
 		command = { type = headofstate which = 25016 } # Mussolini
 		command = { type = headofgovernment which = 25002 } #Mussolini
 		command = { type = flag_ext where = ITA which = _democratic }
@@ -1694,7 +1699,7 @@ event = {
 		command = { type = clrflag which = Chaos }
 		command = { type = flag_ext where = ITA }
 		command = { type = name where = ITA which = "Kingdom of Italy" }
-		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = democratic value = 2 }
 		command = { type = domestic which = political_left value = 1 }
 	}
 	action = {
@@ -2380,5 +2385,83 @@ event = {
 		command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
 		
 		command = { type = dissent value = -3 }
+	}
+}
+
+##################################
+# 90000662 # ITA # Institute for Industrial Reconstruction
+##################################
+event = {
+	id = 90000662
+	random = no
+	country = ITA
+	trigger = {
+			NOT = { 
+				government = democratic
+				 }
+			}
+	date = { day = 1 month = april year = 1948 }
+	name = "Institute for Industrial Reconstruction"
+	desc = "The Istituto per la Ricostruzione Industriale ('Institute for Industrial Reconstruction') was an Italian public holding established in 1933 by the Fascist regime with the objective to rescue, restructure and finance banks and private companies that went bankrupt during the Great Depression. Although initially conceived as a temporary measure, IRI continued to be operated throughout the duration of Fascist regime and well beyond."
+	style = 2
+	picture = "ersatz_conversion"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = money value = 300 }
+	}
+}
+
+##################################
+# 90000663 # ITA # Reorganization of Blackshirt Divisions
+##################################
+event = {
+	id = 90000663
+	random = no
+	country = ITA
+	trigger = {
+			headofgovernment = 25002 # Mussolini
+			NOT = { 
+				government = democratic
+				 }
+			}
+	date = { day = 3 month = october year = 1950 }
+	name = "Reorganization of Blackshirt Divisions"
+	desc = "The Blackshirts were fascist paramilitary armed squads in Italy during the period immediately following World War I and until the end of World War II. They were officially known as the Voluntary Militia for National Security. Their founders were nationalist intellectuals, former army officers and young landowners opposing peasants' and country labourers' unions. Their methods became harsher as Mussolini's power grew, and they used violence and intimidation against Mussolini's opponents."
+	style = 2
+	picture = "italian_blackshirts"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = max_organization which = militia value = 1 }
+		command = { type = max_organization which = garrison value = 1 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+##################################
+# 90000664 # ITA # Italian Naval New Construction Program
+##################################
+event = {
+	id = 90000664
+	random = no
+	country = ITA
+	trigger = {
+			headofgovernment = 25002 # Mussolini
+			NOT = { 
+				government = democratic
+				 }
+			}
+	date = { day = 7 month = january year = 1950 }
+	name = "Italian Naval New Construction Program"
+	desc = "The Italian government announced the beginning of a huge naval construction program. This plan augmented the Italian rearmament program introduced in 1950."
+	style = 2
+	picture = "agincourt"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = gain_tech which = 3690 } # Submarine
+		command = { type = gain_tech which = 3850 } # Transports
+		command = { type = gain_tech which = 12160 } # Escort Carrier
+		command = { type = gain_tech which = 3560 } # Carrier
+		command = { type = gain_tech which = 12040 } # Battleship		
 	}
 }

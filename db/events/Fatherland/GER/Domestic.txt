@@ -210,3 +210,475 @@ command = { type = dissent value = 1 }
 command = { type = domestic which = free_market value = 1 }
 }
 }
+
+event = {
+	id = 999497
+	random = no
+	country = GER
+	decision = {
+			OR = {
+				AND = {
+					atwar = ARG
+					alliance = { country = GER country = ARG }
+					}
+				AND = {
+					atwar = BRA
+					alliance = { country = GER country = BRA }
+					}
+				}
+			}
+	decision_trigger = {
+			supplies = 1000 
+			manpower = 7
+			OR = {
+				AND = {
+					atwar = ARG
+					alliance = { country = GER country = ARG }
+					}
+				AND = {
+					atwar = BRA
+					alliance = { country = GER country = BRA }
+					}
+				}
+			}
+	trigger = {
+			supplies = 1000 
+			manpower = 7
+			OR = {
+				AND = {
+					atwar = ARG
+					alliance = { country = GER country = ARG }
+					}
+				AND = {
+					atwar = BRA
+					alliance = { country = GER country = BRA }
+					}
+				}
+			}
+	date = { day = 2 month = december year = 1948 }
+	offset = 30
+	deathdate = { day = 2 month = december year = 1963 }
+
+	name = "Deutsche SüdameriKakorps"
+	desc = "To help the latin american allies Germany created the SüdameriKakorps. A small, yet strong, group of a single Panzer division that was feasible to be send over the dangerous Atlantic waters."
+	style = 2
+	picture = "afrika_korps"
+	decision_picture = "decision_afrika_korps"
+	action = {
+		name = "EVT1914_2104516_ACTIONA" # Send the troops
+		command = { type = manpowerpool value = -7 }
+		command = { trigger = { ai = no } type = supplies value = -1000 }
+		command = { type = trigger which = 999498 } # Aid to allies
+	}
+}
+
+event = {
+	id = 999498
+	random = no
+	tag = { ARG BRA }
+	all = no
+	name = "Deutsche SüdameriKakorps"
+	desc = "To help the latin american allies Germany created the SüdameriKakorps. A small, yet strong, group of a single Panzer division that was feasible to be send over the dangerous Atlantic waters."
+	style = 2
+	picture = "afrika_korps"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { trigger = { NOT = { technology = 2050 } } type = add_division which = "SüdameriKakorps" value = light_armor when = 1 }
+		command = { trigger = { technology = 2050 } type = add_division which = "SüdameriKakorps" value = light_armor when = 2 }
+	}
+}
+
+event = {
+	id = 999478
+	random = no
+	tag = { GER }
+	all = no
+	
+	trigger = {  
+			money = 100
+			NOT = { ispuppet = yes }
+			}
+
+	name = "New Enigma Cipher"
+	desc = "A New Enigma machine is any of a family of related electro-mechanical rotor cipher machines used for the encryption and decryption of secret messages. The Navy was the first branch of the German military to adopt Enigma. Although Enigma had some cryptographic weaknesses, in practice it was only in combination with procedural flaws, operator mistakes, captured key tables and hardware that Allied cryptanalysts were able to be so successful."
+
+	style = 2
+	picture = "ger_enigma"
+
+	date = { day = 10 month = june year = 1951 }
+	offset = 15
+	deathdate = { day = 10 month = june year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = surprise which = naval value = 5 }
+		command = { type = surprise which = land value = 5 }
+		command = { type = surprise which = air value = 5 }
+		command = { type = army_detection which = them value = -5 }
+	}
+}
+
+event = {
+	id = 999484
+	random = no
+	persistent = yes
+	save_date = yes
+	country = GER
+	trigger = {
+			OR = {
+				ideology = fascist
+				ideology = nazi
+				}
+			atwar = no
+			money = 100 
+			NOT = { 
+				local_flag = GERparty
+				 }
+			}
+	date = { day = 30 month = august year = 1948 }
+	offset = 30
+	deathdate = { day = 1 month = june year = 1964 }
+
+	name = "Parteitag"
+	desc = "The Nuremberg Rally (officially  Reichsparteitag, meaning Reich party convention) was the annual rally of the Nazi Party in Germany, held from 192. They were large Nazi propaganda events, especially after Hitler's rise to power in 1933. These events were held at the Nazi party rally grounds in Nuremberg from 1933 to 1938 and are usually referred to in English as the Nuremberg Rallies. Many films were made to commemorate them, the most famous of which is Triumph of the Will."
+	style = 2
+	picture = "ger_parteitag"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -1 } 
+		command = { trigger = { ai = no } type = money value = -100 }
+		command = { type = local_setflag which = GERparty }
+		command = { type = event which = 999485 where = -1 when = 355 }
+	}
+}
+
+event = {
+	id = 999485
+	random = no
+	persistent = yes
+	country = GER
+	name = "Parteitag organization"
+	desc = "The time to call the annual Parteitag is coming again!"
+	style = 2
+	picture = "ger_parteitag"
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = local_clrflag which = GERparty }
+	}
+}
+
+event = {
+	id = 999502
+	random = no
+	tag = { GER }
+	all = no
+	trigger = {
+			control = { province = 163 } # Berlin
+			NOT = {
+				lost_national = { country = GER value = 10 }
+				}
+			}
+	date = { day = 3 month = august year = 1950 }
+	offset = 5
+	deathdate = { day = 2 month = december year = 1963 }
+
+	name = "The Fa 223 Drache"
+	desc = "The Focke-Achgelis Fa 223 Drache ('Dragon' in English) was a helicopter developed by Germany during World War II. After being forced from Focke-Wulf in 1938, Henrich Focke and test pilot Gerd Achgelis formed a new company, Focke-Achgelis, devoted to developing rotary-winged aircraft. Their first successful prototype, the Fa-223, flew independently on August 3, 1940. The RLM ordered continued development, but the craft was not fully deployable until 1945."
+	style = 2
+	picture = "ger_drache"
+	action = {
+		name = "ACTION_NAME_GREAT" 
+		command = { trigger = { NOT = { technology = 7240 } } type = gain_tech which = 7240 } # Attack Helicopters
+	      command = { type = task_efficiency which = air_supply value = 0.2 }
+	}
+}
+
+event = {
+	id = 999563
+	random = no
+	tag = { GER }
+	all = no
+	trigger = {
+			control = { province = 163 } # Berlin
+			atwar = yes
+			technology = 2520 # Improved Anti-Air Artillery Brigade 
+			}
+	date = { day = 3 month = january year = 1949 }
+	offset = 5
+	deathdate = { day = 2 month = december year = 1963 }
+
+	name = "The 8.8 cm. Flak"
+	desc = "The 88 mm gun was designed as a German anti-aircraft artillery gun. But the Germans soon realised that the 88 performed well in its original role and it proved to be a superb anti-tank gun as well. Its success was due to its versatility: the standard anti-aircraft platform allowed gunners to depress the muzzle below horizontal, unlike most other anti-aircraft guns. It was widely used by Germany throughout the war, and the development of the original models led to a wide variety of guns."
+	style = 2
+	picture = "ger_flak"
+	action = {
+		name = "ACTION_NAME_EXCELLENT" 
+		command = { type = gain_tech which = 2190 } # Improved Tank Destroyer
+	      command = { type = hard_attack which = anti_air value = 1 }
+	}
+}
+event = {
+	id = 999057
+	random = no
+	persistent = no
+	country = GER
+	
+	decision = { 
+		OR = {
+		NOT = { war = { country = GER  country = FRA } }
+		NOT = { control = { province = 55 data = FRA } } # Paris
+		}
+		OR = {
+		NOT = { war = { country = GER  country = SOV } }
+		NOT = { control = { province = 572 data = SOV } } # Moscow
+		}
+		OR = {
+		NOT = { war = { country = GER  country = ENG } }
+		NOT = { control = { province = 29 data = ENG } } # London
+		}
+		     }
+
+	decision_trigger = { 
+		OR = {
+		NOT = { war = { country = GER  country = FRA } }
+		NOT = { control = { province = 55 data = FRA } } # Paris
+		}
+		OR = {
+		NOT = { war = { country = GER  country = SOV } }
+		NOT = { control = { province = 572 data = SOV } } # Moscow
+		}
+		OR = {
+		NOT = { war = { country = GER  country = ENG } }
+		NOT = { control = { province = 29 data = ENG } } # London
+		}
+		technology = 5100
+		money = 5000
+				}
+	trigger = { 
+		OR = {
+		NOT = { war = { country = GER  country = FRA } }
+		NOT = { control = { province = 55 data = FRA } } # Paris
+		}
+		OR = {
+		NOT = { war = { country = GER  country = SOV } }
+		NOT = { control = { province = 572 data = SOV } } # Moscow
+		}
+		OR = {
+		NOT = { war = { country = GER  country = ENG } }
+		NOT = { control = { province = 29 data = ENG } } # London
+		}
+		technology = 5100
+		money = 5000
+               }
+
+	name = "Welthauptstadt Germania"
+	desc = "We have restablished Germany to its deserved status of world power. It's time to show all the glory and mighty of our country, building up a completely new capital, that shall be the Earth's most important city and the capital of the world!" 
+	style = 2
+	picture = "germania"
+	decision_picture = "decision_germania"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "Let's start!"
+		command = { trigger = { ai = no } type = money value = -5000 }
+		command = { type = event which = 999058 where = -1 when = 1100 } #1100 ~ 3 years 
+	}
+}
+
+event = {
+	id = 999058
+	random = no
+	country = GER
+	
+	name = "We constructed Welthauptstadt Germania!"
+	desc = "It's done! After 4 and a half years of exhausting work, finally the new capital with its oversized buildings is ready. Now all the world shall knee to the German greatness. Congratulations, mein Führer, for this magnificent achievement!" 
+	style = 2
+	picture = "germania2"
+
+	action = {
+		name = "What's left but space?"
+	      command = { type = gain_tech which = 5900 }
+	      command = { trigger = { technology = 5900 } type = gain_tech which = 5910 }
+	      command = { type = gain_tech which = 7720 }
+	      command = { trigger = { technology = 7720 } type = gain_tech which = 7640 }
+	      command = { trigger = { technology = 7640 } type = gain_tech which = 7690 }
+	      command = { trigger = { technology = 7690 } type = gain_tech which = 7700 }
+	      command = { trigger = { technology = 7700 } type = gain_tech which = 7710 }
+	      command = { trigger = { technology = 7710 } type = gain_tech which = 7730 }
+	      command = { trigger = { technology = 7730 } type = gain_tech which = 7670 }
+	      command = { trigger = { technology = 7670 } type = gain_tech which = 7740 }
+	      command = { trigger = { technology = 7740 } type = gain_tech which = 7750 }
+	      command = { trigger = { technology = 7750 } type = gain_tech which = 7760 }
+	      command = { trigger = { technology = 7760 } type = gain_tech which = 7680 }
+	      command = { type = construct which = infrastructure where = 163 value = 50 }
+	      command = { type = construct which = air_base where = 163 value = 50 }
+		command = { type = province_keypoints which = 163 value = 5 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+event = {
+	id = 999061 
+	random = no
+	persistent = no
+	country = GER
+	
+	decision = { 
+		OR = {
+		war = { country = GER  country = ENG }
+		war = { country = GER  country = SOV }
+		war = { country = GER  country = USA }
+		}
+		OR = {
+		NOT = { building = { province = 163 type = flak value = 7 } } # Berlin
+		NOT = { building = { province = 154 type = flak value = 7 } } # Hamburg
+		NOT = { building = { province = 195 type = flak value = 7 } } # Vienna
+		NOT = { air = { size = 30 type  = 1 when = 0 where = 1 which = 1 } } # poor Luftwaffe!
+		}
+		     }
+
+	decision_trigger = { 
+		OR = {
+		war = { country = GER  country = ENG }
+		war = { country = GER  country = SOV }
+		war = { country = GER  country = USA }
+		}
+		OR = {
+		NOT = { building = { province = 163 type = flak value = 7 } } # Berlin
+		NOT = { building = { province = 154 type = flak value = 7 } } # Hamburg
+		NOT = { building = { province = 195 type = flak value = 7 } } # Vienna
+		NOT = { air = { size = 30 type  = 1 when = 0 where = 1 which = 1 } } # poor Luftwaffe!
+		}
+		technology = 5100
+		money = 2000
+				}
+	trigger = { 
+		OR = {
+		war = { country = GER  country = ENG }
+		war = { country = GER  country = SOV }
+		war = { country = GER  country = USA }
+		}
+		OR = {
+		NOT = { building = { province = 163 type = flak value = 7 } } # Berlin
+		NOT = { building = { province = 154 type = flak value = 7 } } # Hamburg
+		NOT = { building = { province = 195 type = flak value = 7 } } # Vienna
+		NOT = { air = { size = 30 type  = 1 when = 0 where = 1 which = 1 } } # poor Luftwaffe!
+		}
+		technology = 5100
+		money = 2000
+				}
+
+	name = "Build up the Flaktürme"
+	desc = "Flak towers were 8 complexes of large, above-ground, anti-aircraft gun blockhouse towers constructed in the cities of Berlin, Hamburg and Vienna from 1940 onwards. They were used by the Luftwaffe to defend against Allied air raids on these cities during World War II and also served as air-raid shelters for tens of thousands of people as well as to coordinate air defence. These towers were each supported by a radar installation that had a retractable radar dish and were constructed in a mere 6 months." 
+	style = 2
+	picture = "flaktower"
+	decision_picture = "decision_flaktower"
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "Schnell!"
+		command = { trigger = { ai = no } type = money value = -2000 }
+		command = { type = event which = 999062 where = -1 when = 180 } #180 = 6 months
+	}
+}
+
+event = {
+	id = 999062 
+	random = no
+	country = GER
+	
+	name = "We build up the Flaktürme!"
+	desc = "With concrete walls up to 3.5 metres thick, flak towers were considered to be invulnerable to attack with the usual ordnance carried by Allied bombers. The towers were able to sustain a rate of fire of 8000 rounds per minute from their multi-level guns, with a range of up to 14 km in a full 360-degree field of fire. The 3 flak towers around the outskirts of Berlin created a triangle of formidable anti-aircraft fire that covered the centre of Berlin." 
+	style = 2
+	picture = "flaktower"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+	      command = { type = gain_tech which = 5900 }
+	      command = { trigger = { technology = 5900 } type = gain_tech which = 5910 }
+	      command = { type = construct which = flak where = 163 value = 10 }
+	      command = { type = construct which = flak where = 154 value = 10 }
+	      command = { type = construct which = flak where = 195 value = 10 }
+		command = { type = AA_batteries value = 3 }
+	}
+}
+
+# Defend the RK Netherlands coast in case of war
+event = {
+	id = 999063
+	random = no
+	country = GER
+	
+	name = "Defend the Flanders and RK Netherland Coastline"
+	desc = "It's time to reorganize our coastline defense in the Flanders and in the RK Netherland" 
+	style = 2
+	picture = "flaktower"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1999 }
+	
+	trigger = { 
+		OR = {
+			war = { country = GER  country = ENG }
+			war = { country = GER  country = USA }
+		}
+	}
+				
+	action = {
+		name = "Schnell!"
+		# Flanders
+		command = { type = addclaim which = 49 }	
+		command = { type = addclaim which = 51 }	
+		command = { type = addclaim which = 114 }	
+		command = { type = addclaim which = 115 }
+		command = { type = trigger which = 999064 }
+		# RK Netherlands
+		command = { type = addclaim which = 125 }	
+		command = { type = addclaim which = 122 }		
+		command = { type = trigger which = 999065 }		
+		# Alliance with The Axis (temporary)
+		command = { type = alliance which = AXI }	
+	}
+}
+event = {
+	id = 999064
+	random = no
+	country = FLA
+	
+	name = "A temporary sacrifice"
+	desc = "The Wehrmacht will defend our coastlines" 
+	style = 2
+	picture = "flaktower"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = secedeprovince which = GER value = 49 when = 1 }
+		command = { type = secedeprovince which = GER value = 51 when = 1 }
+		command = { type = secedeprovince which = GER value = 114 when = 1 }	
+		command = { type = secedeprovince which = GER value = 115 when = 1 }		
+	}
+}
+event = {
+	id = 999065
+	random = no
+	country = U46
+	
+	name = "A temporary sacrifice"
+	desc = "The Wehrmacht will defend our coastlines" 
+	style = 2
+	picture = "flaktower"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = secedeprovince which = GER value = 125 when = 1 }
+		command = { type = secedeprovince which = GER value = 122 when = 1 }	
+	}
+}
