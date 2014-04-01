@@ -3,33 +3,32 @@ Updated at 06/03
 Games Bug
 
 GERMANY/SS/AXIS
-* When Heydrich kills Himmler the leader Himmler should also die. More generally, when the SS is purged, several SS ministers+leaders survive, intended?
-* Germany has 90000520NAME event 
+V When Heydrich kills Himmler the leader Himmler should also die. More generally, when the SS is purged, several SS ministers+leaders survive, intended?
+V Germany has 90000520NAME event 
 * Germany-Cossacks war after the Volga Conference. Eventually made aftermath events(with a possible rename of Stalingrad ?).
 * The "Reorganization of Ukraine" does nothing if the Cossack Federation does not exist.
 * The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
 * Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
 * There's not a surrender event if Germany invade Italy after them leave axis
-* If you choose to nuke test on london or moscow nothing happens (london/moscow should at least get destroyed or damaged?)
+V If you choose to nuke test on london or moscow nothing happens (london/moscow should at least get destroyed or damaged?)
 * After ostland grabs leningrad Germany should remove its claim on it because if ostland is still allied with you they will just give it back
 * If a nation of axis become democratic the Axis must intervene.
-* There is no Axis block, and Germany, once I take the "reform the axis" decision, does NOT become the alliance leader (makes inviting the Lokot Rep impossible)
+V There is no Axis block, and Germany, once I take the "reform the axis" decision, does NOT become the alliance leader (makes inviting the Lokot Rep impossible)
 * There is no event for dealing with RK Kaukasus after you win the civil war
 * The Barbarossa II event is horribly bugged, as it requires Germany to station divisions in provinces that the SU grabs during the post-Hitler crisis
-* When the Axis collapsed, Georgia was left as the leader of the Axis and sole member.
+V When the Axis collapsed, Georgia was left as the leader of the Axis and sole member.
 * If Italy has gone left, it joins the reformed axis, and then immediately leaves.
 * Germany's AI clearly goes for nukes (nice job) but sadly it builds no delivery systems. WWIII started for me in 1952 and Germany had just gotten its first nuke, but had no strategic bombers or rockets.
 * Germany seems extremely underpowered by 1952.
 
 USSR
-* The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
-* After soviet union chooses beria and begin the purges, siberia gets an event without a real name: 8014270NAME
-* After you defeat the Turkestans as the USSR, there seems to be no difference in the "centralize" or "decentralize" options. I went with centralize. Also, the southernmost 'Stans are only claims, not cores. WAD?
+V The Sinkiang Fate release only the Capital of Sinkiang cause the SU has core on the region.
+V After soviet union chooses beria and begin the purges, siberia gets an event without a real name: 8014270NAME
+V After you defeat the Turkestans as the USSR, there seems to be no difference in the "centralize" or "decentralize" options. I went with centralize. Also, the southernmost 'Stans are only claims, not cores. WAD?
 
 EUROPE
 * Defeated Romania, ceded Bessarabia/Odessa to RK Ukraine, then reestablished Romania which had Nikolayev province as an enclave inside Ukrainian territory.
 * AI of Spain and Hungary don't work correctly (the use default correct ?). They have all the division in the capital.
-* I left Romania and Hungary to fight it out over Transylvania, but then Hungary got couped by the allies in the middle of it ( The war continued though).
 * UK is still the alliance leader, which probably should change at some point, especially as the UK loses its hold on the empire in the first few years. Maybe an event to change the alliance leader? The new DH allows for that I believe.
 
 ASIA

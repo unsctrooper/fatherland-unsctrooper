@@ -100,6 +100,7 @@ event = "db\events\fatherland\ger\kaukasus.txt"
 event = "db\events\fatherland\ger\ukraine.txt"
 event = "db\events\fatherland\ger\domestic.txt"
 event = "db\events\fatherland\ger\Bailout.txt"
+event = "db\events\fatherland\ger\SS.txt"
 
 # MIDDLE EAST
 event = "db\events\fatherland\middle_east\iran.txt"

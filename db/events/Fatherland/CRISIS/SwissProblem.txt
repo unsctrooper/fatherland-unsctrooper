@@ -310,15 +310,18 @@ event = {
 	
 decision = {
 puppet = { country = SCH country = GER }
+alliance = { country = ITA } 
 }
 
 decision_trigger = { 
 money = 1000
  puppet = { country = SCH country = GER }
+ alliance = { country = ITA } 
 }
 	
 trigger = {
-puppet = { country = SCH country = GER }
+	puppet = { country = SCH country = GER }
+	alliance = { country = ITA } 
 	}
 	
 	
@@ -409,6 +412,7 @@ event = { #
     trigger = {
 	event = { id = 830 days = 365 } 
     OR = { flag = LifeLine1 flag = Lifeline2 }
+	alliance = { country = ITA } 
 	}
 	
     date = { day = 1 month = january year = 1948 }

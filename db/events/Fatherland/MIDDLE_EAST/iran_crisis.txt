@@ -11,7 +11,7 @@ event = {
 	id = 8500901
 	country = PER
 
-	name = EVT_8500901_NAME
+	name = "The Kurdish minority"
 	desc = "The Kurdish minority want more independence"#EVT_8500901_DESC
 	picture = "nwo\republic_of_mahabad"
 	style = 1
@@ -44,7 +44,7 @@ event = {
 		command = { type = province_revoltrisk which = 1084 value = 80 }
 		command = { type = relation which = TUR value = 50 }	
 		command = { type = relation which = IRQ value = 50 }	
-		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = SOV value = -25 }
 	}
 }
 

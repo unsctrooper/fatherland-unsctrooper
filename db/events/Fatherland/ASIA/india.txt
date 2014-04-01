@@ -290,6 +290,11 @@ event = {
 	picture = "nwo\independence_of_india"
 	style = 1
 
+trigger = {
+	random = 50
+}
+	
+	
 	date = { day = 0 month = january year = 1948 }
 	offset = 10
 	deathdate = { day = 30 month = december year = 1963 }

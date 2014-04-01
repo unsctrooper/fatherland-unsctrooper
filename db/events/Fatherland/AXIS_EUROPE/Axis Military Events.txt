@@ -1021,8 +1021,8 @@ country = SPA
 
 trigger = {
 NOT = {
-alliance = { country = GER country = SPA }
-alliance = { country = ITA country = SPA } # Alliance with Italy precludes alliance with Germany
+	alliance = { country = GER country = SPA }
+	alliance = { country = ITA country = SPA } # Alliance with Italy precludes alliance with Germany
 }
 participant = { country = GER value = 2 } # Germany is in Axis
 government = fascist

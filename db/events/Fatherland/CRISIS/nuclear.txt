@@ -478,7 +478,7 @@ event = {
 		command = { type = dissent value = -1 }
 	}
     action = {
-		name = "817A"
+		name = "817B"
 		ai_chance = 50
 		command = { type = dissent value = 1 }
 	}
@@ -525,24 +525,28 @@ event = { # Test Nuke
 	offset = 1
 	deathdate = { day = 30 month = december year = 1963 }
 	
-action_a = { 
+action = { 
 name = "Nuke Moscow"
-ai_chance = 75
+ai_chance = 80
 command = { type = relation which = SOV value = -200 }
 command = { type = relation which = TRA value = -50 }
 command = { type = relation which = UTC value = -50 }
-command = { type = belligerence which = GER value = 10 }
+command = { type = belligerence which = GER value = 25 }
 command = { type = construct which = ic where = 572 value = -5 }
-command = { type = construct which = infrastructure where = 572 value = -50 }
+command = { type = construct which = infrastructure where = 572 value = -70 }
+command = { type = construct which = land_fort where = 572 value = -5 }
+command = { type = construct which = flak where = 572 value = -5 }
+command = { type = construct which = air_base where = 572 value = -10 }
+
 
 }
-action_b = { 
-name = "Nuke London" 
-ai_chance = 5	
-command = { type = trigger which = 701 }
-command = { type = belligerence which = GER value = 25 }
-}
-action_c = { 
+# action = { 
+# name = "Nuke London" 
+# ai_chance = 5	
+# command = { type = trigger which = 701 }
+# command = { type = belligerence which = GER value = 25 }
+# }
+action = { 
 name = "We're no animals!" 
 ai_chance = 20
 command = { type = belligerence which = GER value = -5 }

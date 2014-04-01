@@ -55,19 +55,20 @@ style = 2
 picture = "news_paper"
 
 trigger = {
-exists = FRA
+	exists = FRA
 	NOT = { 
 	ispuppet = U01
 	atwar = U01
 	}
+	random = 70
 }
 
 
 	name = "The Home of the French Nation"
 	desc = "After the Fall of mainland France in 1940, the Free French governement finally regain a part of de jure metropolitan territories: the departements of Algeria. Howewer, the locals indigenous, if not hostiles, are not that happy by the Free French presence. Perhaps with a small improvement of their living conditions and the help of the pied-noir settlers we could integrate them in the National Community?"
 
-	date = { day = 1 month = january year = 1948 }
-	offset = 10
+	date = { day = 15 month = january year = 1948 }
+	offset = 25
 	deathdate = { day = 1 month = december year = 1960 }
 
 	action_a = {

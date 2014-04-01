@@ -175,18 +175,18 @@ random = no
 country = GER
 
 trigger = {
-control = { province = 572 data = GER }
-control = { province = 678 data = GER }
-control = { province = 570 data = GER }
-control = { province = 568 data = GER }
-event = 900401 # Revolts throughout Muscovy
+	control = { province = 572 data = GER }
+	control = { province = 678 data = GER }
+	control = { province = 570 data = GER }
+	control = { province = 568 data = GER }
+	event = 900401 # Revolts throughout Muscovy
 }
 
 name = "900404NAME"
 desc = "900404DESC" 
 style = 2
 picture = "fatherland\german_gathering"
-date = { day = 5 month = february year = 1948 }
+date = { day = 10 month = february year = 1948 }
 offset = 3
 deathdate = { day = 30 month = december year = 1980 }
 

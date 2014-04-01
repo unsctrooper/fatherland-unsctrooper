@@ -36,9 +36,9 @@ event = { # Fate of Turkestan
 	picture = "0turkestan0"
 	
     trigger = {
-	control = { province = 1103 data = SOV } #Tashkent
-	atwar = no 
-	NOT = { exists = UPE } 
+		control = { province = 1103 data = SOV } #Tashkent
+		atwar = no 
+		NOT = { exists = UPE } 
 	}
 	
     date = { day = 1 month = january year = 1948 }
@@ -155,8 +155,8 @@ event = { # Fate of East Turkestan
 	deathdate = { day = 30 month = december year = 1963 }
 	
 action_a = { 
-name = "8014252A" 
-ai_chance = 5
+name = "8014252A" # Integrate as Sinkiang SSR
+ai_chance = 50
 command = { type = dissent value = 3 }
 command = { type = local_setflag which = SIKSSR } 
 command = { type = relation which = CHI value = -50 }	
@@ -174,7 +174,7 @@ command = { type = addclaim which = 1282 }
 }
 action_b = { 
 name = "8014252B" # Reinstall Shenq Qai
-ai_chance = 70
+ai_chance = 35
 command = { type = dissent value = -3 }
 command = { type = independence which = SIK value = 1 } 
 command = { type = make_puppet which = SIK }
@@ -184,7 +184,7 @@ command = { type = event which = 8014254 where = SIK when = 1 }
 }	
 action_c = { 
 name = "8014252C" # Return to China after Civil War
-ai_chance = 20
+ai_chance = 10
 command = { type = dissent value = 1 }
 command = { type = local_setflag which = SovietReturnsSik } 
 command = { type = relation which = CHI value = 50 }	
@@ -848,8 +848,8 @@ event = { # Romanov Dzhanov Alliance
     event = 8014266
 	}
 
-	name = "8014270NAME"
-	desc = "8014270DESC" 
+	name = "It's time to make the Soviet Union on the correct way"
+	desc = "It's time to make the Soviet Union on the correct way" 
 	style = 2
 	picture = "nwo\succession_of_stalin"
 	

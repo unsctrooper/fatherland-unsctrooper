@@ -23,7 +23,7 @@ rare_materials         = 200
    capital                = 352 
    diplomacy = 
    { relation = {  tag = GER value = 200  } 
-     relation = {  tag = RSI value = 200  } 
+     relation = {  tag = ITA value = 200  } 
     } 
    SpyInfo                = {  country = "CRO" NumberOfSpies = 7  } 
    nationalprovinces      = {  337 345 344 352 353 355 354 347 357 358 356  351 
@@ -95,7 +95,7 @@ inventions = { 3000027 }
      free_market       = 4 
      freedom           = 3 
      professional_army = 8 
-     defense_lobby     = 7 
+     defense_lobby     = 8 
      interventionism   = 8 
     } 
    headofstate            = {  type = 9 id = 275042  } 

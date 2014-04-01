@@ -1,3 +1,4 @@
+# The Second World War
 event = {
 id = 2000
 country = GER
@@ -206,7 +207,7 @@ desc = "Otto Strasser, in exile since his brother was killed in 1934, has recent
 
 action_a = {
 name = "It's just the same as communism.."
-command = { type = dissent value = 1 }
+command = { type = dissent value = 3 }
 command = { type = domestic which = free_market value = 1 }
 }
 }
@@ -639,11 +640,31 @@ event = {
 		command = { type = addclaim which = 51 }	
 		command = { type = addclaim which = 114 }	
 		command = { type = addclaim which = 115 }
+		command = { type = construct which = coastal_fort where = 49 value = 1 }
+		command = { type = construct which = land_fort where = 49 value = 1 }		
+		command = { type = construct which = coastal_fort where = 51 value = 1 }
+		command = { type = construct which = land_fort where = 51 value = 1 }		
+		command = { type = construct which = coastal_fort where = 114 value = 1 }
+		command = { type = construct which = land_fort where = 114 value = 1 }		
+		command = { type = construct which = coastal_fort where = 115 value = 1 }
+		command = { type = construct which = land_fort where = 115 value = 1 }				
 		command = { type = trigger which = 999064 }
 		# RK Netherlands
 		command = { type = addclaim which = 125 }	
 		command = { type = addclaim which = 122 }		
+		command = { type = construct which = coastal_fort where = 125 value = 1 }
+		command = { type = construct which = land_fort where = 122 value = 1 }		
+		command = { type = construct which = coastal_fort where = 125 value = 1 }
+		command = { type = construct which = land_fort where = 122 value = 1 }			
 		command = { type = trigger which = 999065 }		
+		# Pool
+		command = { type = supplies value = -150 }
+		command = { type = oilpool value = -150 }
+		command = { type = metalpool value = -1000 }
+		command = { type = energypool value = -1000 }
+		command = { type = money value = -500 }
+		command = { type = manpowerpool value = -1 }
+		command = { type = dissent value = 1 }
 		# Alliance with The Axis (temporary)
 		command = { type = alliance which = AXI }	
 	}
@@ -659,11 +680,12 @@ event = {
 	picture = "flaktower"
 
 	action = {
-		name = "ACTION_NAME_GREAT"
+		name = "We have no choice"
 		command = { type = secedeprovince which = GER value = 49 when = 1 }
 		command = { type = secedeprovince which = GER value = 51 when = 1 }
 		command = { type = secedeprovince which = GER value = 114 when = 1 }	
 		command = { type = secedeprovince which = GER value = 115 when = 1 }		
+		command = { type = dissent value = 5 }
 	}
 }
 event = {
@@ -677,8 +699,9 @@ event = {
 	picture = "flaktower"
 
 	action = {
-		name = "ACTION_NAME_GREAT"
+		name = "We have no choice"
 		command = { type = secedeprovince which = GER value = 125 when = 1 }
 		command = { type = secedeprovince which = GER value = 122 when = 1 }	
+		command = { type = dissent value = 10 }
 	}
 }

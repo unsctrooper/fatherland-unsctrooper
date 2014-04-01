@@ -230,6 +230,10 @@ event = {
 		command = { type = removeclaim which = 897 } 
 		command = { type = removeclaim which = 890 }
 		
+		command = { type = leave_alliance when = 1 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		
 		command = { type = independence which = CON value = 1 }
 		command = { type = war which = CON }
 		command = { type = local_setflag which = CON_INDEP }
