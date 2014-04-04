@@ -3340,20 +3340,20 @@ landunit =
     division =
     { id         = { type = 14500 id = 629 }
       name       = "Kampfgeschwader 66"
-      strength   = 80
-      type       = tactical_bomber
-      model      = 9 # Ju 188
+      strength   = 100
+      type       = strategic_bomber
+      model      = 6 
       extra      = escort
-      brigade_model = 4
+      brigade_model = 3
     }
     division =
     { id         = { type = 14500 id = 630 }
       name       = "Kampfgeschwader 76"
-      strength   = 40
-      type       = tactical_bomber
-      model      = 9 # Ar 234A
+      strength   = 100
+      type       = strategic_bomber
+      model      = 6 # Ar 234A
       extra      = escort
-      brigade_model = 4
+      brigade_model = 3
     }
   }
   airunit =

@@ -547,7 +547,7 @@ command = { type = construct which = air_base where = 572 value = -10 }
 # command = { type = belligerence which = GER value = 25 }
 # }
 action = { 
-name = "We're no animals!" 
+name = "Not now" 
 ai_chance = 20
 command = { type = belligerence which = GER value = -5 }
 }
