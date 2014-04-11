@@ -186,16 +186,16 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
    {  relation = { tag = GER value = 200  } 
     } 
    SpyInfo                = {  country = "U58" NumberOfSpies = 1  } 
-   #headofstate            = {  type = 9 id = 1105001  } 
-   #headofgovernment       = {  type = 9 id = 1105002  } 
-   #foreignminister        = {  type = 9 id = 1105003  } 
-   #armamentminister       = {  type = 9 id = 1105004  } 
-   #ministerofsecurity     = {  type = 9 id = 1105005  } 
-   #ministerofintelligence = {  type = 9 id = 1105006  } 
-   #chiefofstaff           = {  type = 9 id = 1105007  } 
-   #chiefofarmy            = {  type = 9 id = 1105008  } 
-   #chiefofnavy            = {  type = 9 id = 1105009  } 
-   #chiefofair             = {  type = 9 id = 1105010  } 
+   headofstate            = {  type = 9 id = 1105001  } 
+   headofgovernment       = {  type = 9 id = 1105002  } 
+   foreignminister        = {  type = 9 id = 1105003  } 
+   armamentminister       = {  type = 9 id = 1105004  } 
+   ministerofsecurity     = {  type = 9 id = 1105005  } 
+   ministerofintelligence = {  type = 9 id = 1105006  } 
+   chiefofstaff           = {  type = 9 id = 1105007  } 
+   chiefofarmy            = {  type = 9 id = 1105008  } 
+   chiefofnavy            = {  type = 9 id = 1105009  } 
+   chiefofair             = {  type = 9 id = 1105010  } 
      landunit = 
    { location = 336 
      name     = "8. SS-Kav.Div. 'Florian Geyer'" 
