@@ -8,7 +8,6 @@ Compatibility:
 
 Installation instructions:
 1: Copy a clean install and unmodified version of Darkest Hour Full 1.03 and rename it "Fatherland".
-1b : Remove the ai folder.
 2: Download the mod.
 3: Copy contents of the downloaded archive into the newly copied directory (agree to replace all the files when asked).
 

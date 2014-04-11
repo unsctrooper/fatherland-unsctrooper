@@ -1281,7 +1281,7 @@ command = { type = relation which = SOV value = -25 }
 action = {
 trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
 ai_chance = 90
-name = "Hand it back to the Soviets"
+name = "Hand it back to the Japan"
 command = { type = relation which = JAP value = 25 }
 command = { type = relation which = SOV value = -50 }	
 command = { type = secedeprovince which = JAP value = 1541 when = 1 }
