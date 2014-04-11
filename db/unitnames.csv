@@ -85475,7 +85475,7 @@ USA;31;USS Saipan
 USA;31;USS Belleau Wood
 USA;31;USS Nassau
 USA;31;USS Peleliu
-USA:31;USS Bataan
+USA;31;USS Bataan
 USA;31;USS Bonhomme Richard
 USA;31;USS Boxer
 USA;31;USS Essex
@@ -89757,12 +89757,12 @@ DFR;49;47. Korvettengeschwader
 DFR;49;48. Korvettengeschwader
 DFR;49;49. Korvettengeschwader
 DFR;49;50. Korvettengeschwader
-ENG:41;1st Commando Brigade
-ENG:41;2nd Commando Brigade
-ENG:41;3rd Commando Brigade
-ENG:41;5th Airborne Brigade
+ENG;41;1st Commando Brigade
+ENG;41;2nd Commando Brigade
+ENG;41;3rd Commando Brigade
+ENG;41;5th Airborne Brigade
 ENG;41;24 Airmobile Brigade
-ENG:41;16 Air Assault Brigade
+ENG;41;16 Air Assault Brigade
 ENG;42;HMS Surrey
 ENG;42;HMS Northumberland
 ENG;42;HMS Middlesex

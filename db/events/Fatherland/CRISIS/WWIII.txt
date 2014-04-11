@@ -750,7 +750,7 @@ event = {
 
 # Ireland
 event = { 
-	id = 66613
+	id = 66615
 	random = no 
 	save_date = yes
 	country = GER
@@ -794,13 +794,13 @@ event = {
 		command = { type = setflag which = irelandWW3 } 
 		command = { type = money value = -2000 }
 		command = { type = supplies value = -2000 }
-		command = { type = trigger which = 66614 }
+		command = { type = trigger which = 66616 }
 	}
 	
 	action = { 
 		name = "They aren't necessary"
 		ai_chance = 80
-		command = { type = sleepevent which = 66614 }
+		command = { type = sleepevent which = 66616 }
 		command = { type = money value = 1500 }
 		command = { type = supplies value = 1500 }
 	}
@@ -809,7 +809,7 @@ event = {
 
 # Ireland answer
 event = {
-	id = 66614
+	id = 66616
 	random = no
 	country = IRL	
 	
