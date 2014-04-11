@@ -3289,7 +3289,7 @@ landunit =
     { id         = { type = 14500 id = 622 }
       name       = "KG 53 'Legion Condor'"
       strength   = 65
-      type       = tactical_bomber
+      type       = strategic_bomber
       model      = 9 # He 111H
       extra      = escort
       brigade_model = 4
@@ -3489,7 +3489,7 @@ landunit =
     { id         = { type = 14500 id = 649 }
       name       = "KG 26 'Löwen'"
       strength   = 80
-      type       = tactical_bomber
+      type       = strategic_bomber
       model      = 9 # Ju 88A
       extra      = escort
       brigade_model = 4

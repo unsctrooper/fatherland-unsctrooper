@@ -1,3 +1,99 @@
+#######################################################
+# Changelog for Beta version 4.0 codename "Middle West"
+#######################################################
+
+#Events/Decision Modified (*) or Added (+) or Removed (-)
+	GERMANY
+		- (*) Hitler Death Chain
+		- (*) Generalplan OST Chain
+		- (+/*) Domestic events (Build up Germania and others)
+		- (+) SS events
+	AXIS
+		- (*) Reichskommissariat Kaukasus events
+		- (*) Axis military events
+	COMINTERN
+		- (*) Soviet Area events
+		- (*) Vladivostok Conference
+	EUROPE
+		- (*) Italy domestic events
+		- (*) Italy Grand Council
+		- (*) Vichy France Petain Death Chain
+		- (*) Vichy France domestic
+		- (*) Serbia events
+		- (+) Belgium events
+	CRISIS
+		- (+) The Swiss problem
+		- (+) Nuclear riding
+		- (*) Suez Crisis
+		- (*) Kuwait Crisis		
+		- (*) IRA Chain
+		- (+) WW3 events
+	ASIA
+		- (*) India events
+	AFRICA
+		- (*) Egypt chain
+		- (*) South Africa events	
+		- (*) Madagascar independence		
+		- (+) End of UK Colonialism
+	MIDDLE EAST
+		- (-) Israel formation events
+		- (*) Iran events
+		- (+) UAR events
+		- (-) Arab Federation events
+	AMERICAS
+		- (*) Marshall Plan chain
+		- (+) USA flavour events
+	GENERICS
+		- (*) Political Events - Coups & Regime Changes
+		- (*) Generic Decisions - Grand Offensive
+		- (*) Mobilization events
+
+#DB
+	- Modified ministers_ind.csv
+	- Modified ministers_u58.csv (SS Schutzstaffel)
+	- Modified ministers_u59.csv (Empire of Russia)
+		
+#Config
+	- Review mods.csv
+	- Review world_names.csv
+	- Review scenario_text.csv
+	- Review unit_names.csv	
+	
+#Inc
+	- Revision inc for Germany
+	- Revision inc for USA
+	- Revisione inc for Italy
+	- Revisione inc for United Kingdom	
+	- Revision inc for Croatia	
+	- Revision inc for Denmark	
+	- Revision inc for Siberia
+	
+# AI
+	- Improved AI for Germany
+	- Improved AI for SS
+	- Improved AI for all RK
+	- Improved default AI
+
+#Scenarios
+	- Revision of fatherland.eug
+	
+#GFX
+	- New event pics
+	- New icon
+	- New scenario pic (Siberia,Empire of Russia,Egypt,Hellenic State)
+	- New flags 
+	- New counters
+
+#Other
+	- Added Hellenic State (Italy's puppets)
+	- Implementing of Cold War Tech Tree Expansion 
+	- Review of revolt.txt
+	- Remove duplicate files
+	- Bug fixing
+
+# Map fixing:
+	- Minor fixing
+
 #################################################
 # Changelog for Beta version 3.0 codename "V Day"
 #################################################

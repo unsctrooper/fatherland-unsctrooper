@@ -403,14 +403,14 @@ event = {
 		command = { type = headofstate which = 5395 }
 	    command = { type = headofgovernment which = 5381 }	
 		
-        command = { trigger = { control = { province = 87 data = ITA } } type = secedeprovince which = ITA value = 87 when = 1 } # Nice - France
+        command = { trigger = { control = { province = 87 data = ITA } } type = secedeprovince which = ITA value = 87 when = 0 } # Nice - France
         command = { trigger = { control = { province = 86 data = ITA } } type = secedeprovince which = ITA value = 86 when = 1 } # Toulon - France
         command = { trigger = { control = { province = 90 data = ITA } } type = secedeprovince which = ITA value = 90 when = 1 } # Grenoble - France 
-        command = { trigger = { control = { province = 91 data = ITA } } type = secedeprovince which = ITA value = 91 when = 1 } # Chambery - France
-        command = { trigger = { control = { province = 94 data = ITA } } type = secedeprovince which = ITA value = 94 when = 1 } # Corsica - France 
+        command = { trigger = { control = { province = 91 data = ITA } } type = secedeprovince which = ITA value = 91 when = 0 } # Chambery - France
+        command = { trigger = { control = { province = 94 data = ITA } } type = secedeprovince which = ITA value = 94 when = 0 } # Corsica - France 
 		
-        command = { trigger = { control = { province = 80 data = SPA } } type = secedeprovince which = SPA value = 80 when = 1 } # Perpignan
-        command = { trigger = { control = { province = 83 data = SPA } } type = secedeprovince which = SPA value = 83 when = 1 } # Pau
+        command = { trigger = { control = { province = 80 data = SPA } } type = secedeprovince which = SPA value = 80 when = 0 } # Perpignan
+        command = { trigger = { control = { province = 83 data = SPA } } type = secedeprovince which = SPA value = 83 when = 0 } # Pau
         command = { trigger = { control = { province = 84 data = SPA } } type = secedeprovince which = SPA value = 84 when = 1 } # Agen
         command = { trigger = { control = { province = 67 data = SPA } } type = secedeprovince which = SPA value = 67 when = 1 } # Mont-de-Marsan
         command = { trigger = { control = { province = 68 data = SPA } } type = secedeprovince which = SPA value = 68 when = 1 } # Bordeaux		
@@ -1128,6 +1128,7 @@ atwar = GER
 
 	action = {
 		name = "385A"
+		command = { type = 	end_non_aggression which = FRA where = GER }
 	    command = { type = war which = GER }		
 	}
 }

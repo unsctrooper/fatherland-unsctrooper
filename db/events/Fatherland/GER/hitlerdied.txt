@@ -180,6 +180,8 @@ command = { trigger = { participant = { country = SWE value = 2 } } type = event
 command = { trigger = { participant = { country = TUR value = 2 } } type = event which = 90000542 where = TUR when = 2 }
 command = { trigger = { participant = { country = TRA value = 2 } } type = event which = 90000542 where = TRA when = 2 }
 command = { trigger = { participant = { country = ITA value = 2 } } type = event which = 90000542 where = ITA when = 2 }
+command = { trigger = { participant = { country = PER value = 2 } } type = event which = 90000542 where = PER when = 2 }
+command = { trigger = { participant = { country = SAF value = 2 } } type = event which = 90000542 where = SAF when = 2 }
 }
 }
 # 90000503 # GER # Bormann realizes the Nazi Senate

@@ -1,5 +1,94 @@
-event = { # Enable Nukes
-	id = 66600
+# WW3 events by PAKO
+
+# 66600 - SOV - Is the WW3 Baby !
+# 66601 - Enable Nukes
+
+# 66602 - GER - Diplomatic campaing
+# Approach possible only from Axis
+# 66603 - GER - Spain
+# 66604 - SPA - Answer
+# 66605 - GER - Sweden 
+# 66606 - SWE - Answer
+# 66607  - GER - Iraq 
+# 66608 - IRQ - Answer
+# 66617 - GER - Croatia
+# 66618 - CRO - Answer
+# 66619 - GER - Bulgaria
+# 66620 - BUL - Answer
+# Approach possible from Axis and Allies
+# 66609 - GER - Portugal 
+# 66610 - POR - Answer
+# 66611 - GER - Turkey
+# 66612 - TUR - Answer
+# 66613 - GER - Persia 
+# 66614 - PER - Answer
+# 66615 - GER - Ireland 
+# 66616 - IRL - Answer 
+# Approach possible from Axis, Allies and Comintern
+# 66619 - GER - Pakistan # TODO
+# 66620 - PAK - Answer # TODO
+# 66621 - GER - India # TODO
+# 66622 - IND - Answer # TODO
+# 66623 - GER - Afghanistan # TODO
+# 66624 - AFG - Answer # TODO
+
+# 66650 - USA - Diplomatic campaign
+# 66651 - USA - Saudi Arabia
+# 66652 - SAU - Answer
+# 66653 - USA - Yemen # TODO
+# 66654 - YEM - Answer # TODO
+# 66655 - USA - Iceland # TODO
+# 66656 - ISL - Answer # TODO verificare il tag
+# 66657 - USA - China # TODO
+# 66658 - CHN - Answer # TODO verificare il tag
+
+# 66670 - SOV - Diplomatic campaign #TODO
+# 66671 - SOV - UAR # TODO
+# 66672 - EGY - Answer # TODO verificare il tag
+# 66673 - SOV - Pakistan # TODO
+# 66674 - PAK - Answer # TODO
+# 66675 - SOV - India # TODO
+# 66676 - IND - Answer # TODO
+# 66677 - SOV - Afghanistan # TODO
+# 66678 - AFG - Answer # TODO
+# 66679 - SOV - China Commie # TODO
+# 66680 - CHC - Answer # TODO verificare il tag
+
+# 66699 - SOV - The Soviet Bear Awakes!
+
+
+
+
+
+# 66600 - Is the WW3 Baby !
+event = {
+	id = 66600 
+	country = SOV
+	style = 2
+	picture = "nuke"
+	save_date = yes 
+	name = "Is the WW3 Baby !"
+	desc = "Is the WW3 Baby !" 
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1999 }
+
+	trigger = {
+		war = { country = GER country = USA }
+	}
+	
+	action = { 
+		name = "The time has come" 
+		command = { type = setflag which = WW3 }
+		command = { type = dissent value = -5 }
+	}
+	
+}
+
+# 66601 - Enable Nukes
+event = { 
+	id = 66601
 	random = no
 	persistent = yes
 	
@@ -9,198 +98,1101 @@ event = { # Enable Nukes
 	picture = "nuke"
 	decision_picture = "decision_atomic_research"
 	
-decision = {
-supplies = 50
-nuke = 1
-NOT = { local_flag = nukeWWIII }
-}
+	decision = {
+		supplies = 50
+		nuke = 1
+		NOT = { local_flag = nukeWWIII }
+	}
 
-decision_trigger = { 
-nuke = 1
-war = { country = GER country = USA }
-NOT = { local_flag = nukeWWIII }
-}
-	
-trigger = {
-nuke = 1 
-war = { country = GER country = USA }
-NOT = { local_flag = nukeWWIII }
+	decision_trigger = { 
+		nuke = 1
+		flag = WW3
+		NOT = { local_flag = nukeWWIII }
 	}
 	
-date = { day = 1 month = january year = 1948 }
-offset = 2
-deathdate = { day = 12 month = march year = 1966 }
-	
-action = { 
-name = "Push the button!" 
-command = { type = dissent value = 5 }
-command = { type = enable_task which = nuke } 
-command = { type = local_setflag which = nukeWWIII } 
-}
-}
-
-event = { # Force Turkey in the War 
-	id = 66601
-	random = no
-    country = GER
-	
-	name = "Force Turkey in the War"
-	desc = "Turkey has always cautiously seeked neutrality between the Allies and the Axis and never showed any willingness to join either side. We need to strike trough Turkey to deal a suffering blow to the Allies in the Middle-East and North Africa." 
-	style = 2
-	picture = "German_Warposter"
-	
-decision = {
-war = { country = GER country = USA }
-}
-
-decision_trigger = { 
-war = { country = GER country = USA }
-}
-	
-trigger = {
-war = { country = GER country = USA }
+	trigger = {
+		nuke = 1 
+		flag = WW3
+		NOT = { local_flag = nukeWWIII }
 	}
 	
-date = { day = 1 month = january year = 1948 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
+	date = { day = 1 month = january year = 1948 }
+	offset = 2
+	deathdate = { day = 12 month = march year = 1966 }
 	
-action = { 
-name = "Okay!" 
-command = { type = war which = TUR }
-}
+	action = { 
+		name = "Push the button!" 
+		command = { type = dissent value = 3 }
+		command = { type = enable_task which = nuke } 
+		command = { type = local_setflag which = nukeWWIII } 
+	}
 }
 
-event = { # Force Saudi Arabia in the War
+############################################
+#  German diplomatic campaign
+############################################
+event = { 
 	id = 66602
-	random = no
-    country = USA
+	random = no 
+	country = GER
 	
-	name = "Force Saudi Arabia in the War"
-	desc = "The King of Saudi Arabia, a personal friend of Roosevelt, has already long severed diplomatic ties with the Axis. Now that Axis eyes are sighting on the rich oil fields of the Middle-East, we need to persuade the Saudis to assist us in this war!" 
-	style = 2
-	picture = "news_paper"
-	
-decision = {
-war = { country = GER country = USA }
-}
-
-decision_trigger = { 
-war = { country = GER country = USA }
-}
-	
-trigger = {
-war = { country = GER country = USA }
+	decision = {
+		flag = WW3		
 	}
 	
-date = { day = 1 month = january year = 1948 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
-	
-action = { 
-name = "Okay!" 
-command = { type = alliance which = SAU }
-}
-}
-
-event = { # Force Iran in the War
-	id = 66603
-	random = no
-    country = ENG
-	
-	name = "Force Iran in the War"
-	desc = "The Shah of Iran, an ally of the West and under strong influence of the Allied powers, has long severed diplomatic ties with the Arab powers, fearing secretarian and ethnic conflicts in the Middle-East. Now with the Axis troops entering the Middle-East, we need to persuade Iran to assist us in this war!" 
-	style = 2
-	picture = "news_paper"
-	
-decision = {
-war = { country = GER country = USA }
-}
-
-decision_trigger = { 
-war = { country = GER country = USA }
-}
-	
-trigger = {
-war = { country = GER country = USA }
+	decision_trigger = { 
+		flag = WW3
+		money = 1000
 	}
 	
-date = { day = 1 month = january year = 1948 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
+	trigger = {
+		flag = WW3
+		money = 1000
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }
 	
-action = { 
-name = "Okay!" 
-command = { type = alliance which = PER }
-}
+	name = "German diplomatic offensive"
+	desc = "German diplomatic offensive"
+  	style = 2
+  	picture = "diplomatic_campaign"
+	decision_picture = "decision_diplomatic_campaign"
+	
+	action = {
+		ai_chance = 100
+		name = "Search new allies"
+		command = { type = money value = -1000 }
+		command = { type = inherit which = UTC value = 1 }
+	}
 }
 
-event = { # Force Israel in WWIII
+# Spain
+event = { 
+	id = 666003
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = SPA
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = SPA } }
+		NOT = { alliance = { country = GER country = SPA } }
+		NOT = { alliance = { country = USA country = SPA } }
+		NOT = { lost_national = { country = GER value = 20 } }
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 30
+		exists = SPA		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = SPA } }
+		NOT = { alliance = { country = GER country = SPA } }
+		NOT = { alliance = { country = USA country = SPA } }
+		NOT = { lost_national = { country = GER value = 20 } }		
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 45
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Spain in the war"
+	desc = "Try to envolve Spain in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Spain in the war"
+		ai_chance = 80
+		command = { type = setflag which = spainWW3 } 
+		command = { type = money value = -2500 }
+		command = { type = supplies value = -1500 }
+		command = { type = trigger which = 66604 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 20
+		command = { type = sleepevent which = 66604 }
+		command = { type = money value = 2500 }
+		command = { type = supplies value = 2500 }
+	}
+	
+}
+
+# Spain answer
+event = {
 	id = 66604
 	random = no
-    country = USA
+	country = SPA	
 	
-	name = "Force Israel in the War"
-	desc = "Israel is encircled from all sides by the increasing Arab powers aligned to the Axis. It'd be the only logical choice for them to join us!" 
-	style = 2
-	picture = "news_paper"
-	
-decision = {
-war = { country = GER country = USA }
-}
-
-decision_trigger = { 
-war = { country = GER country = USA }
-}
-	
-trigger = {
-war = { country = GER country = USA }
+	trigger = {
+		flag = spainWW3
 	}
 	
-date = { day = 1 month = january year = 1953 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
 	
-action = { 
-name = "Okay!" 
-command = { type = alliance which = ISR }
-}
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "Like in the WW2 ... NO WAY !!!! "
+		ai_chance = 50
+		# da implementare !!!!!
+		command = { type = clrflag which = spainWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "This time ..... YES !!!!!"
+		ai_chance = 50
+		# da implementare !!!!!
+		command = { type = clrflag which = spainWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
 }
 
-event = { # Force Nasser in WW III
-	id = 66605
+# Sweden
+event = { 
+	id = 666005
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = SWE
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = SWE } }
+		NOT = { alliance = { country = GER country = SWE } }
+		NOT = { alliance = { country = USA country = SWE } }
+		NOT = { lost_national = { country = GER value = 20 } }
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 30
+		exists = SWE		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = SWE } }
+		NOT = { alliance = { country = GER country = SWE } }
+		NOT = { alliance = { country = USA country = SWE } }
+		NOT = { lost_national = { country = GER value = 20 } }		
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Sweden in the war"
+	desc = "Try to envolve Sweden in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Sweden in the war"
+		ai_chance = 20
+		command = { type = setflag which = swedenWW3 } 
+		command = { type = money value = -3500 }
+		command = { type = supplies value = -5500 }
+		command = { type = trigger which = 66606 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 80
+		command = { type = sleepevent which = 66606 }
+		command = { type = money value = 1500 }
+		command = { type = supplies value = 1500 }
+	}
+	
+}
+
+# Sweden answer
+event = {
+	id = 66606
 	random = no
-    country = GER
+	country = SWE	
 	
-	name = "Force the United Arab Republic in the War"
-	desc = "While the progressive and socialist policies of Nasser don't exactly fit with our own ideologue, nor with the our alliance with the conservative Arab Federation, the apparent hatred against the neocolonial Allies and Israel, give us the opportunity to get them in the war." 
-	style = 2
-	picture = "news_paper"
-	
-decision = {
-war = { country = GER country = USA }
-}
-
-decision_trigger = { 
-war = { country = GER country = USA }
-}
-	
-trigger = {
-war = { country = GER country = USA }
+	trigger = {
+		flag = swedenWW3
 	}
 	
-date = { day = 1 month = january year = 1948 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
 	
-action = { 
-name = "Okay!" 
-command = { type = alliance which = EGY }
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "Like in the WW2 ... NO WAY !!!! "
+		ai_chance = 80
+		# da implementare !!!!!
+		command = { type = clrflag which = swedenWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "This time ..... YES !!!!!"
+		ai_chance = 20
+		# da implementare !!!!!
+		command = { type = clrflag which = swedenWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
 }
+
+# Iraq
+event = { 
+	id = 66607
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = IRQ
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = IRQ } }
+		NOT = { alliance = { country = GER country = IRQ } }
+		NOT = { alliance = { country = USA country = IRQ } }
+		NOT = { lost_national = { country = GER value = 20 } }		
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 30
+		exists = IRQ		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = IRQ } }
+		NOT = { alliance = { country = GER country = IRQ } }
+		NOT = { alliance = { country = USA country = IRQ } }
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Iraq in the war"
+	desc = "Try to envolve Iraq in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Iraq in the war"
+		ai_chance = 80
+		command = { type = setflag which = iraqWW3 } 
+		command = { type = money value = -3500 }
+		command = { type = supplies value = -5500 }
+		command = { type = trigger which = 66608 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 20
+		command = { type = sleepevent which = 66608 }
+		command = { type = money value = 1500 }
+		command = { type = supplies value = 1500 }
+	}
+	
 }
+
+# Iraq answer
+event = {
+	id = 66608
+	random = no
+	country = IRQ	
+	
+	trigger = {
+		flag = iraqWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "NO WAY !!!! "
+		ai_chance = 20
+		# da implementare !!!!!
+		command = { type = clrflag which = iraqWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "YES !!!!!"
+		ai_chance = 80
+		# da implementare !!!!!
+		command = { type = clrflag which = iraqWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# Portugal
+event = { 
+	id = 66609
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = POR
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = POR } }
+		NOT = { alliance = { country = GER country = POR } }
+		NOT = { alliance = { country = USA country = POR } }
+		alliance = { country = GER country = SPA } 
+		NOT = { lost_national = { country = GER value = 20 } }		
+		# verificare anche il sistema di governo del portogallo ?
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 30
+		exists = POR		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = POR } }
+		NOT = { alliance = { country = GER country = POR } }
+		NOT = { alliance = { country = USA country = POR } }
+		alliance = { country = GER country = SPA } 
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Portugal in the war"
+	desc = "Try to envolve Portugal in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Portugal in the war"
+		ai_chance = 80
+		command = { type = setflag which = portugalWW3 } 
+		command = { type = money value = -1500 }
+		command = { type = supplies value = -1500 }
+		command = { type = trigger which = 66610 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 20
+		command = { type = sleepevent which = 66610 }
+		command = { type = money value = 500 }
+		command = { type = supplies value = 500 }
+	}
+	
+}
+
+# Portugal answer
+event = {
+	id = 66610
+	random = no
+	country = POR	
+	
+	trigger = {
+		flag = portugalWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "NO WAY !!!! "
+		ai_chance = 20
+		# da implementare !!!!!
+		command = { type = clrflag which = portugalWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "YES !!!!!"
+		ai_chance = 80
+		# da implementare !!!!!
+		# rimuovere tutti i rapporti con gli inglesi
+		command = { type = clrflag which = portugalWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# Turkey
+event = { 
+	id = 66611
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = TUR
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = TUR } }
+		NOT = { alliance = { country = GER country = TUR } }
+		NOT = { alliance = { country = USA country = TUR } }
+		NOT = { lost_national = { country = GER value = 20 } }		
+		# verificare anche il sistema di governo del portogallo ?
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 30
+		exists = TUR		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = TUR } }
+		NOT = { alliance = { country = GER country = TUR } }
+		NOT = { alliance = { country = USA country = TUR } }
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Turkey in the war"
+	desc = "Try to envolve Turkey in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Turkey in the war"
+		ai_chance = 80
+		command = { type = setflag which = turkeyWW3 } 
+		command = { type = money value = -2000 }
+		command = { type = supplies value = -2000 }
+		command = { type = trigger which = 66612 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 20
+		command = { type = sleepevent which = 66612 }
+		command = { type = money value = 1500 }
+		command = { type = supplies value = 1500 }
+	}
+	
+}
+
+# Turkey answer
+event = {
+	id = 66612
+	random = no
+	country = TUR	
+	
+	trigger = {
+		flag = turkeyWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "NO WAY !!!! "
+		ai_chance = 20
+		# da implementare !!!!!
+		command = { type = clrflag which = turkeyWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "YES !!!!!"
+		ai_chance = 80
+		# da implementare !!!!!
+		# rimuovere tutti i rapporti con gli inglesi
+		command = { type = clrflag which = turkeyWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# Persia
+event = { 
+	id = 66613
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = PER
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = PER } }
+		NOT = { alliance = { country = GER country = PER } }
+		NOT = { alliance = { country = USA country = PER } }
+		NOT = { lost_national = { country = GER value = 20 } }		
+		# verificare anche il sistema di governo della persia ?
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 30
+		exists = PER		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = PER } }
+		NOT = { alliance = { country = GER country = PER } }
+		NOT = { alliance = { country = USA country = PER } }
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Persia in the war"
+	desc = "Try to envolve Persia in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Persia in the war"
+		ai_chance = 80
+		command = { type = setflag which = persiaWW3 } 
+		command = { type = money value = -2000 }
+		command = { type = supplies value = -2000 }
+		command = { type = trigger which = 66614 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 20
+		command = { type = sleepevent which = 66614 }
+		command = { type = money value = 1500 }
+		command = { type = supplies value = 1500 }
+	}
+	
+}
+
+# Persia answer
+event = {
+	id = 66614
+	random = no
+	country = PER	
+	
+	trigger = {
+		flag = persiaWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "NO WAY !!!! "
+		ai_chance = 20
+		# da implementare !!!!!
+		command = { type = clrflag which = persiaWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "YES !!!!!"
+		ai_chance = 80
+		# da implementare !!!!!
+		# rimuovere tutti i rapporti con gli inglesi
+		command = { type = clrflag which = persiaWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# Ireland
+event = { 
+	id = 66613
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = IRL
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = IRL } }
+		NOT = { alliance = { country = GER country = IRL } }
+		NOT = { alliance = { country = USA country = IRL } }
+		NOT = { lost_national = { country = GER value = 20 } }		
+		# verificare anche il sistema di governo della IRL ?
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 10
+		exists = IRL		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = IRL } }
+		NOT = { alliance = { country = GER country = IRL } }
+		NOT = { alliance = { country = USA country = IRL } }
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Ireland in the war"
+	desc = "Try to envolve Ireland in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Ireland in the war"
+		ai_chance = 20
+		command = { type = setflag which = irelandWW3 } 
+		command = { type = money value = -2000 }
+		command = { type = supplies value = -2000 }
+		command = { type = trigger which = 66614 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 80
+		command = { type = sleepevent which = 66614 }
+		command = { type = money value = 1500 }
+		command = { type = supplies value = 1500 }
+	}
+	
+}
+
+# Ireland answer
+event = {
+	id = 66614
+	random = no
+	country = IRL	
+	
+	trigger = {
+		flag = irelandWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "It's not in our interests"
+		ai_chance = 90
+		# da implementare !!!!!
+		command = { type = clrflag which = irelandWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "We'll liberate our island !"
+		ai_chance = 10
+		# da implementare !!!!!
+		# rimuovere tutti i rapporti con gli inglesi
+		command = { type = clrflag which = irelandWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# Croatia
+event = { 
+	id = 666017
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = CRO
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = CRO } }
+		NOT = { alliance = { country = GER country = CRO } }
+		NOT = { alliance = { country = USA country = CRO } }
+		NOT = { alliance = { country = ITA country = CRO } }
+		NOT = { lost_national = { country = GER value = 20 } }
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 80
+		exists = CRO		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = CRO } }
+		NOT = { alliance = { country = GER country = CRO } }
+		NOT = { alliance = { country = USA country = CRO } }
+		NOT = { alliance = { country = ITA country = CRO } }
+		NOT = { lost_national = { country = GER value = 20 } }	
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Croatia in the war"
+	desc = "Try to envolve Croatia in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Croatia in the war"
+		ai_chance = 90
+		command = { type = setflag which = croatiaWW3 } 
+		command = { type = money value = -500 }
+		command = { type = supplies value = -150 }
+		command = { type = trigger which = 66618 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 10
+		command = { type = sleepevent which = 66618 }
+		command = { type = money value = 250 }
+		command = { type = supplies value = 50 }
+	}
+	
+}
+
+# Croatian answer
+event = {
+	id = 66618
+	random = no
+	country = CRO	
+	
+	trigger = {
+		flag = croatiaWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "We want remain neutral"
+		ai_chance = 5
+		# da implementare !!!!!
+		command = { type = clrflag which = croatiaWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "We have no choice ... "
+		ai_chance = 95
+		# da implementare !!!!!
+		command = { type = clrflag which = croatiaWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# Bulgaria
+event = { 
+	id = 666019
+	random = no 
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = BUL
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = BUL } }
+		NOT = { alliance = { country = GER country = BUL } }
+		NOT = { alliance = { country = USA country = BUL } }
+		NOT = { alliance = { country = ITA country = BUL } }
+		NOT = { lost_national = { country = GER value = 20 } }
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66602 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 50
+		exists = BUL		
+		event = 66602 # German diplomatic offensive
+		NOT = { war = { country = GER country = BUL } }
+		NOT = { alliance = { country = GER country = BUL } }
+		NOT = { alliance = { country = USA country = BUL } }
+		NOT = { alliance = { country = ITA country = BUL } }
+		NOT = { lost_national = { country = GER value = 20 } }	
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 60
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Bulgaria in the war"
+	desc = "Try to envolve Bulgaria in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Bulgaria in the war"
+		ai_chance = 50
+		command = { type = setflag which = bulgariaWW3 } 
+		command = { type = money value = -500 }
+		command = { type = supplies value = -150 }
+		command = { type = trigger which = 66620 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 50
+		command = { type = sleepevent which = 66620 }
+		command = { type = money value = 250 }
+		command = { type = supplies value = 50 }
+	}
+	
+}
+
+# Bulgarian answer
+event = {
+	id = 66620
+	random = no
+	country = BUL	
+	
+	trigger = {
+		flag = bulgariaWW3
+	}
+	
+	name = "The Germany want an alliance"
+	desc = "The Germany want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "We want remain neutral"
+		ai_chance = 50
+		# da implementare !!!!!
+		command = { type = clrflag which = bulgariaWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "We have no choice ... "
+		ai_chance = 50
+		# da implementare !!!!!
+		command = { type = clrflag which = bulgariaWW3 }
+		command = { type = alliance which = GER }
+		command = { type = dissent value = -2 }
+	}
+}
+
+# ####################################
+# USA
+# ####################################
+
+############################################
+#  American diplomatic campaign
+############################################
+event = { 
+	id = 66650
+	random = no 
+	country = USA
+	
+	decision = {
+		flag = WW3		
+	}
+	
+	decision_trigger = { 
+		flag = WW3
+		money = 1000
+	}
+	
+	trigger = {
+		flag = WW3
+		money = 1000
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 10
+	deathdate = { day = 30 month = september year = 1999 }
+	
+	name = "American diplomatic offensive"
+	desc = "American diplomatic offensive"
+  	style = 2
+  	picture = "Reichstag"
+	decision_picture = "decision_rapallo_conference"
+	
+	action = {
+		ai_chance = 100
+		name = "Search new allies"
+		command = { type = alliance_leader where = 2 }
+		command = { type = money value = -1000 }
+	}
+}
+
+# Saudi Arabia
+event = { 
+	id = 666051
+	random = no 
+	save_date = yes
+	country = USA
+	
+	decision = {
+		exists = SAU
+		event = 66650 # American diplomatic offensive
+		NOT = { war = { country = GER country = SAU } }
+		NOT = { alliance = { country = GER country = SAU } }
+		NOT = { alliance = { country = USA country = SAU } }
+	}
+	
+	decision_trigger = {
+		flag = WW3
+		event = 66650 # German diplomatic offensive
+	}
+	
+	trigger = {
+		random = 50
+		exists = SAU		
+		event = 66650 # German diplomatic offensive
+		NOT = { war = { country = GER country = SAU } }
+		NOT = { alliance = { country = GER country = SAU } }
+		NOT = { alliance = { country = USA country = SAU } }	
+	}
+
+	date = { day = 1 month = january year = 1948 }		 
+	offset = 60
+	deathdate = { day = 30 month = september year = 1999 }	
+	
+	name = "Try to envolve Saudi Arabia in the war"
+	desc = "Try to envolve Saudi Arabia in the war"
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = { 
+		name = "Try to envolve Saudi Arabia in the war"
+		ai_chance = 50
+		command = { type = setflag which = saudiWW3 } 
+		command = { type = money value = -2500 }
+		command = { type = supplies value = -1500 }
+		command = { type = trigger which = 66652 }
+	}
+	
+	action = { 
+		name = "They aren't necessary"
+		ai_chance = 50
+		command = { type = sleepevent which = 66652 }
+		command = { type = money value = 250 }
+		command = { type = supplies value = 50 }
+	}
+	
+}
+
+# Saudi Arabia answer
+event = {
+	id = 66652
+	random = no
+	country = SAU	
+	
+	trigger = {
+		flag = 66652
+	}
+	
+	name = "The USA want an alliance"
+	desc = "The USA want an alliance"
+	style = 2
+	picture = "congress"		
+	
+	date = { day = 15 month = june year = 1948 }
+	offset = 5 
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action = {
+		name = "We want remain neutral"
+		ai_chance = 60
+		# da implementare !!!!!
+		command = { type = clrflag which = saudiWW3 }
+		command = { type = dissent value = 2 }
+	}
+	
+	action = {
+		name = "Why not ?"
+		ai_chance = 40
+		# da implementare !!!!!
+		command = { type = clrflag which = saudiWW3 }
+		command = { type = alliance which = USA }
+		command = { type = dissent value = -2 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 event = { # Revenge!
-	id = 66606
+	id = 66699
 	random = no
     country = SOV
 	
@@ -209,59 +1201,35 @@ event = { # Revenge!
 	style = 2
 	picture = "news_paper"
 	
-decision = {
-war = { country = GER country = USA }
-flag = SOVFRIENDLY
-}
-
-decision_trigger = { 
-war = { country = GER country = USA }
-flag = SOVFRIENDLY
-}
-	
-trigger = {
-war = { country = GER country = USA }
-flag = SOVFRIENDLY
+	decision = {
+		war = { country = GER country = USA }
 	}
-	
-date = { day = 1 month = january year = 1952 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
-	
-action = { 
-name = "Okay!" 
-command = { type = war which = GER }
-}
-}
 
-event = { # Force French State in WW III
-	id = 66607
-	random = no
-    country = GER
-	
-	name = "Force the French State in the War"
-	desc = "Force the French State in the War" 
-	style = 2
-	picture = "news_paper"
-	
-decision = {
-war = { country = GER country = USA }
-}
+	decision_trigger = { 
+		war = { country = GER country = USA }
+		OR = {
+			flag = SOVFRIENDLY
+			event = { id = 66600 days = 180 } 
+		}
 
-decision_trigger = { 
-war = { country = GER country = USA }
-}
-	
-trigger = {
-war = { country = GER country = USA }
 	}
-	
-date = { day = 1 month = january year = 1948 }
-offset = 30
-deathdate = { day = 12 month = march year = 1966 }
-	
-action = { 
-name = "Okay!" 
-command = { type = alliance which = FRA }
-}
+		
+	trigger = {
+	war = { country = GER country = USA }
+		OR = {
+			flag = SOVFRIENDLY
+			event = { id = 66600 days = 180 } 
+		}
+		random = 50
+	}
+		
+	date = { day = 1 month = january year = 1952 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1966 }
+		
+	action = { 
+	name = "Okay!" 
+	command = { type = end_non_aggression which = SOV where = GER }
+	command = { type = war which = GER }
+	}
 }

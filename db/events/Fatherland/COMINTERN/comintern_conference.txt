@@ -3,6 +3,7 @@
 ###### Credits Pako
 #############################################
 
+# Round One
 #############################################
 ###### The Vladivostok Conference
 #############################################
@@ -21,7 +22,8 @@ event = {
 		deathdate = { day = 30 month = december year = 1963 }
 		
         trigger = {
-		flag = Internationale
+			# flag = Internationale
+			NOT = { exists = U57 } # Far East Republic
 			OR = {
 				flag = CHC_won_civil_war
 				flag = CHI_won_civil_war
@@ -40,7 +42,7 @@ event = {
 				command = { type = dissent value = -1 }
 				
                 command = { type = set_relation which = CHC value = 20 }
-                command = { type = set_relation which = PRK value = 10 }
+               # command = { type = set_relation which = PRK value = 10 }
                 command = { type = set_relation which = MON value = 10 }
                 command = { type = set_relation which = SIK value = 10 }
         }
@@ -56,7 +58,7 @@ event = {
 				command = { type = dissent value = -3 }
 				
                 command = { type = set_relation which = CHC value = 30 }
-                command = { type = set_relation which = PRK value = 20 }
+                # command = { type = set_relation which = PRK value = 20 }
                 command = { type = set_relation which = MON value = 20 }
                 command = { type = set_relation which = SIK value = 20 }
         }
@@ -68,7 +70,7 @@ event = {
 				command = { type = domestic which = interventionism value = -3 }
 				
                 command = { type = set_relation which = CHC value = -20 }
-                command = { type = set_relation which = PRK value = -10 }
+                # command = { type = set_relation which = PRK value = -10 }
                 command = { type = set_relation which = MON value = -10 }
                 command = { type = set_relation which = SIK value = -10 }
                 
@@ -887,7 +889,6 @@ event = {
         action_b = {
 				ai_chance = 10
                 name = "Crush Them before they become too strong !"
-				
                 command = { type = war which = SOV }
         }			
 }
@@ -1283,12 +1284,12 @@ event = {
 		deathdate = { day = 1 month = december year = 1960 }
  
 		action_a = {
-				ai_chance = 50
+				ai_chance = 20
                 name = "Attack the Reich ! Spread the WW3 !"
                 command = { type = war which = GER }
         }	
 		action_b = {
-				ai_chance = 50
+				ai_chance = 80
                 name = "No, the time is not now !"
                 command = { type = dissent value = 20 }
         }			

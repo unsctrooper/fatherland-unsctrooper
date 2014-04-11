@@ -121,6 +121,8 @@ event = {
     command = { type = secederegion which = GER value = "Northern Russia" when = 0 }
     command = { type = secederegion which = GER value = "Western Russia" when = 0 }
     command = { type = secederegion which = GER value = "Russia" when = 0 }
+	command = { type = access which = GER }
+	command = { type = ai_prepare_war	which = SOV }	
 	} 
 }
 
@@ -207,6 +209,8 @@ event = {
     command = { type = addcore which = 587 }
     command = { type = addcore which = 589 }
     command = { type = addcore which = 575 }
+		command = { type = access which = GER }
+	command = { type = ai_prepare_war	which = SOV }	
 	} 
 }
 
@@ -256,6 +260,8 @@ event = {
 	command = { type = local_clrflag which = NEIN }
 	command = { type = local_clrflag which = RES }
 	command = { type = country which = UKR }
+	command = { type = access which = GER }
+	command = { type = ai_prepare_war	which = SOV }
 	} 
 }
 

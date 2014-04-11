@@ -123,7 +123,7 @@ event = {
 
 	date = { day = 1 month = august year = 1952 }
 	offset = 14
-	deathdate = { day = 29 month = december year = 1952 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# We want to join
 	action = {
@@ -211,7 +211,7 @@ event = {
 
 	date = { day = 1 month = february year = 1953 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# Propose the union
 	action = {
@@ -253,7 +253,7 @@ event = {
 
 	date = { day = 1 month = february year = 1953 }
 	offset = 14
-	deathdate = { day = 29 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 
 	# It doesn't interest us
@@ -344,7 +344,7 @@ event = {
 
 	date = { day = 1 month = february year = 1953 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# Propose the union
 	action = {
@@ -386,7 +386,7 @@ event = {
 
 	date = { day = 1 month = february year = 1953 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# We want to join
 	action = {
@@ -577,7 +577,7 @@ event = {
 
 	date = { day = 1 month = february year = 1954 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# Propose the union
 	action = {
@@ -622,7 +622,7 @@ event = {
 
 	date = { day = 1 month = february year = 1954 }
 	offset = 14
-	deathdate = { day = 29 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# We want to join
 	action = {
@@ -696,7 +696,7 @@ event = {
 
 	date = { day = 1 month = february year = 1954 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1958 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# Propose the union
 	action = {
@@ -741,7 +741,7 @@ event = {
 
 	date = { day = 1 month = february year = 1954 }
 	offset = 14
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	# We want to join
 	action = {
@@ -810,7 +810,7 @@ event = {
 
 	date = { day = 1 month = march year = 1955 }
 	offset = 5
-	deathdate = { day = 29 month = december year = 1955 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "Condamn the Imperialism of Axis and Allies"
@@ -879,7 +879,7 @@ event = {
 		}
 		date = { day = 1 month = january year = 1956 }
 		offset = 5
-		deathdate = { day = 29 month = march year = 1956 }
+		deathdate = { day = 29 month = march year = 1999 }
  
         action= {
 				ai_chance = 100
@@ -907,7 +907,7 @@ event = {
 		}
 		date = { day = 1 month = january year = 1956 }
 		offset = 5
-		deathdate = { day = 29 month = march year = 1956 }
+		deathdate = { day = 29 month = march year = 1999 }
 	
         action= {
 				ai_chance = 100
@@ -934,7 +934,7 @@ event = {
 		}
 		date = { day = 1 month = january year = 1956 }
 		offset = 5
-		deathdate = { day = 29 month = march year = 1956 }
+		deathdate = { day = 29 month = march year = 1999 }
  
         action= {
 				ai_chance = 100
@@ -961,7 +961,7 @@ event = {
 		}
 		date = { day = 1 month = january year = 1956 }
 		offset = 5
-		deathdate = { day = 29 month = march year = 1956 }
+		deathdate = { day = 29 month = march year = 1999 }
  
         action= {
 				ai_chance = 100
@@ -988,7 +988,7 @@ event = {
 		}
 		date = { day = 1 month = january year = 1956 }
 		offset = 5
-		deathdate = { day = 29 month = march year = 1956 }
+		deathdate = { day = 29 month = march year = 1999 }
 
         action= {
 				ai_chance = 100
@@ -1015,7 +1015,7 @@ event = {
 		}
 		date = { day = 1 month = january year = 1956 }
 		offset = 5
-		deathdate = { day = 29 month = march year = 1956 }
+		deathdate = { day = 29 month = march year = 1999 }
 
         action= {
 				ai_chance = 100
@@ -1064,7 +1064,7 @@ event = {
 
 	date = { day = 1 month = april year = 1956 }
 	offset = 25
-	deathdate = { day = 30 month = june year = 1956 }
+	deathdate = { day = 30 month = june year = 1999 }
 	
 	action = {
 		name = "Sudan e Libia"

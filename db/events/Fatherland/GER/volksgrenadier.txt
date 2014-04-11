@@ -4,12 +4,15 @@ event = { # Phase 1
 	country = GER
 	
 	trigger = {
-	atwar = yes	
+		OR = {
+			war = { country = GER country = USA }	
+			war = { country = GER country = SOV }				
+		}
 	OR = {
-	control = { province = 125 data = -2 }
-	control = { province = 116 data = -2 }
-	control = { province = 115 data = -2 }
-	control = { province = 108 data = -2 }
+		control = { province = 125 data = -2 }
+		control = { province = 116 data = -2 }
+		control = { province = 115 data = -2 }
+		control = { province = 108 data = -2 }
 		}
 	}	
 	name = EVT_Volksgrenadier_NAME
@@ -42,7 +45,10 @@ event = { # Phase 2
 	country = GER
 	
 	trigger = {
-	atwar = yes	
+		OR = {
+			war = { country = GER country = USA }	
+			war = { country = GER country = SOV }				
+		}
 	OR = {
 	AND = {
 	control = { province = 264 data = -2 }
@@ -81,7 +87,10 @@ event = { # Phase 3
 	country = GER
 	
 	trigger = {
-	atwar = yes	
+		OR = {
+			war = { country = GER country = USA }	
+			war = { country = GER country = SOV }				
+		}
 	OR = {
 	control = { province = 232 data = -2 }
 	control = { province = 234 data = -2 }
@@ -119,7 +128,10 @@ event = { # Phase 4
 	country = GER
 	
 	trigger = {
-	atwar = yes	
+		OR = {
+			war = { country = GER country = USA }	
+			war = { country = GER country = SOV }				
+		}
 		OR = {
 	OR = {
 	control = { province = 201 data = -2 }
@@ -163,7 +175,10 @@ event = { # Phase 5
 	country = GER
 	
 	trigger = {
-	atwar = yes	
+		OR = {
+			war = { country = GER country = USA }	
+			war = { country = GER country = SOV }				
+		}	
 		OR = {
 	OR = {
 	control = { province = 159 data = -2 }
