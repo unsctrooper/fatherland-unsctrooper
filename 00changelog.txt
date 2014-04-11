@@ -30,6 +30,7 @@
 		- (+) WW3 events
 	ASIA
 		- (*) India events
+		- (+) New Nationalist China victory chain
 	AFRICA
 		- (*) Egypt chain
 		- (*) South Africa events	
