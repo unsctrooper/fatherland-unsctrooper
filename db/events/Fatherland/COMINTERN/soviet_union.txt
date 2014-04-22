@@ -191,7 +191,7 @@ command = { type = relation which = CHI value = 50 }
 command = { type = relation which = CHC value = 50 }
 }
 action_d = { 
-name = "8014252B" # Contain Turkestani Elements
+name = "8014252D" # Contain Turkestani Elements
 ai_chance = 5
 command = { type = dissent value = -1 }
 command = { type = independence which = SIK value = 1 }  

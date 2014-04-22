@@ -188,9 +188,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 	# Radar
 	5410 5416 5417
 	# Oil Refining 
-	5190 5200
-	# Atomics
-	5470 5480
+	
 	# Medicine
 	5600 5610 5620 5630
 	# Rocket
@@ -304,7 +302,12 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 	# Air Doctrines - ww2 techs
 	27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470 
 	9010 9040 9050 9060 9070 9080 9090 9100 9110 9120 9130 9140 9150 9160 9170 9180 9190 9200 9210 9220 9230 9240
- 	} 
+ 	
+			# Industry Nuclear 
+		5470 5480 5490 5500 # 5510 5520 5530 5540
+		# Secret Weapons Nuclear
+		# 7170 7180 7190 # 16010	
+	} 
 
 inventions = { 3000027 }
    blueprints             = { } 

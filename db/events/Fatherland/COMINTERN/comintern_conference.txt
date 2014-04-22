@@ -1,11 +1,11 @@
 #############################################
-###### The Vladivostok Conference Chain  
+###### The Omsk Conference Chain  
 ###### Credits Pako
 #############################################
 
 # Round One
 #############################################
-###### The Vladivostok Conference
+###### The Omsk Conference
 #############################################
 event = {
         id = 600
@@ -14,7 +14,7 @@ event = {
 		style = 2
 		picture = "news_paper"
 		
-        name = "The Vladivostok Conference"
+        name = "The Omsk Conference"
         desc = "After the end of the chinese civil war the time has come to unite all the proletarian forces and forge a renovated Comintern !"
 	
 		date = { day = 1 month = january year = 1950 }
@@ -32,7 +32,7 @@ event = {
         }
  
         action = {
-                name = "Invite just the Socialist nations"
+                name = "Invite just our friends"
 				ai_chance = 45
                 command = { type = setflag which = COMINTERN_CONFERENCE }
 				
@@ -42,7 +42,7 @@ event = {
 				command = { type = dissent value = -1 }
 				
                 command = { type = set_relation which = CHC value = 20 }
-               # command = { type = set_relation which = PRK value = 10 }
+                command = { type = set_relation which = PRK value = 10 }
                 command = { type = set_relation which = MON value = 10 }
                 command = { type = set_relation which = SIK value = 10 }
         }
@@ -58,7 +58,7 @@ event = {
 				command = { type = dissent value = -3 }
 				
                 command = { type = set_relation which = CHC value = 30 }
-                # command = { type = set_relation which = PRK value = 20 }
+                command = { type = set_relation which = PRK value = 20 }
                 command = { type = set_relation which = MON value = 20 }
                 command = { type = set_relation which = SIK value = 20 }
         }
@@ -70,10 +70,10 @@ event = {
 				command = { type = domestic which = interventionism value = -3 }
 				
                 command = { type = set_relation which = CHC value = -20 }
-                # command = { type = set_relation which = PRK value = -10 }
+                command = { type = set_relation which = PRK value = -10 }
                 command = { type = set_relation which = MON value = -10 }
                 command = { type = set_relation which = SIK value = -10 }
-                
+
         }
 
 }
@@ -89,7 +89,7 @@ event = {
         }
  
         name = "We have received an invitation"
-        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        desc = "We have received an invitation from the Soviet Union for a conference in Omsk ... what will do ?"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
@@ -126,7 +126,7 @@ event = {
 				
                 command = { type = set_domestic which = interventionism value = -5 }
 				
-				command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
+				command = { type = leave_alliance when = 1 } # leave eventaully old alliance wars 
 				command = { type = end_access which = SOV }
 				command = { type = end_non_aggression which = SOV where = CHC }
 				command = { type = end_guarantee which = SOV where = CHC }
@@ -142,7 +142,7 @@ event = {
         }
  
         name = "We have received an invitation"
-        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        desc = "We have received an invitation from the Soviet Union for a conference in Omsk ... what will do ?"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
@@ -195,7 +195,7 @@ event = {
         }
  
         name = "We have received an invitation"
-        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        desc = "We have received an invitation from the Soviet Union for a conference in Omsk ... what will do ?"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
@@ -220,13 +220,8 @@ event = {
 		action_b = {
 				ai_chance = 10
                 name = "No, we don't need it ... we are puppets !"
-				
                 command = { type = dissent value = 10 }
-				
-                command = { type = set_relation which = SOV value = 20 }
-				
-				command = { type = dissent value = 10 }
-								
+                command = { type = set_relation which = SOV value = -20 }
         }
 
 }
@@ -239,7 +234,7 @@ event = {
         }
  
         name = "We have received an invitation"
-        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        desc = "We have received an invitation from the Soviet Union for a conference in Omsk ... what will do ?"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
@@ -264,13 +259,8 @@ event = {
 		action_b = {
 				ai_chance = 10
                 name = "No, we don't need it"
-				
-                command = { type = dissent value = 10 }
-				
                 command = { type = set_relation which = SOV value = 20 }
-				
 				command = { type = dissent value = 10 }
-								
         }
 
 }
@@ -284,7 +274,7 @@ event = {
         }
  
         name = "We have received an invitation"
-        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        desc = "We have received an invitation from the Soviet Union for a conference in Omsk ... what will do ?"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
@@ -306,13 +296,9 @@ event = {
 		
 		action_b = {
 				ai_chance = 10
-                name = "No, we don't need it ... we are puppets !"
-				
+                name = "No, we don't need it ... we are puppets !"				
                 command = { type = dissent value = 10 }
-				
-                command = { type = set_relation which = SOV value = 20 }
-				
-				command = { type = dissent value = 10 }
+                command = { type = set_relation which = SOV value = -20 }
         }
 
 }
@@ -326,7 +312,7 @@ event = {
         }
  
         name = "We have received an invitation"
-        desc = "We have received an invitation from the Soviet Union for a conference in Vladivostok ... what will do ?"
+        desc = "We have received an invitation from the Soviet Union for a conference in Omsk ... what will do ?"
         style = 0
  
 		date = { day = 1 month = january year = 1950 }
@@ -366,24 +352,20 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE
-				event = 601
-				event = 602
-				event = 603
-				#event = 604
         }
  
         name = "The Conference begins"
         desc = "All delegates are arrived, the Conference can officially begin."
         style = 0
  
-		date = { day = 1 month = january year = 1950 }
+		date = { day = 1 month = february year = 1950 }
 		offset = 10
 		deathdate = { day = 30 month = december year = 1963 }
  
         action_a = {
 				ai_chance = 100
                 name = "Hurrah !!!"
-                command = { type = money value = -10 }
+                command = { type = money value = -50 }
         }		
 }
 #############################################
@@ -410,9 +392,9 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
 				
-				#Relations
+				# Relations
 				
-                command = { type = belligerence value = 1 }
+                command = { type = belligerence value = 10 }
 				
 				command = { type = alliance which = CHC }
 				command = { type = relation which = CHC value = 200}
@@ -429,7 +411,7 @@ event = {
 				command = { type = access which = SIK }
 				command = { type = non_aggression which = SIK where = SOV }
 				
-				#Armies
+				# Armies
 				
 				command = { type = add_division value = hq when = 3 }
 				command = { type = add_division value = hq when = 3 }
@@ -506,7 +488,7 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
                 
-				command = { type = belligerence value = 1 }
+				command = { type = belligerence value = 10 }
 				
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
@@ -567,7 +549,7 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
                 
-				command = { type = belligerence value = 1 }
+				command = { type = belligerence value = 10 }
 				
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
@@ -618,8 +600,8 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
                 
-				command = { type = belligerence value = 1 }
-				#command = { type = alliance which = SOV }
+				command = { type = belligerence value = 10 }
+				# command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = MON }
@@ -660,8 +642,8 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
                 
-				command = { type = belligerence value = 1 }
-				#command = { type = alliance which = SOV }
+				command = { type = belligerence value = 10 }
+				# command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = SIK }
@@ -702,8 +684,8 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
                 
-				command = { type = belligerence value = 1 }
-				#command = { type = alliance which = SOV }
+				command = { type = belligerence value = 10  }
+				# command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = TRK }
@@ -744,8 +726,8 @@ event = {
 				ai_chance = 100
                 name = "We must forge a new strong workers world alliance !"
                 
-				command = { type = belligerence value = 1 }
-				#command = { type = alliance which = SOV }
+				command = { type = belligerence value = 10 }
+				# command = { type = alliance which = SOV }
 				command = { type = relation which = SOV value = 200}
 				command = { type = access which = SOV }
 				command = { type = non_aggression which = SOV where = KAZ }
@@ -773,15 +755,15 @@ event = {
         country = SOV
         trigger = {
                 flag = COMINTERN_CONFERENCE
-				event = 608
-				event = 609
+				# event = 608
+				# event = 609
         }
  
         name = "Foreign Policy"
         desc = "Where spread the revolution ?"
         style = 0
  
-		date = { day = 1 month = january year = 1950 }
+		date = { day = 10 month = february year = 1950 }
 		offset = 5
 		deathdate = { day = 30 month = december year = 1963 }
  
@@ -818,7 +800,7 @@ event = {
         desc = "We have to define a new economic policy of our new alliance"
         style = 0
  
-		date = { day = 1 month = january year = 1950 }
+		date = { day = 15 month = february year = 1950 }
 		offset = 5
 		deathdate = { day = 30 month = december year = 1963 }
  

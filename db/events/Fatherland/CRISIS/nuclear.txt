@@ -31,8 +31,9 @@ event = {
 		command = { type = relation which = USA value = 10 }
 		command = { type = money value = -1000 }
 		command = { type = supplies value = -10000 }
-		command = { type = building_prod_mod which = nuclear_reactor value = 50 }
-		command = { type = gain_tech which = 5540 }
+		command = { type = building_prod_mod which = nuclear_reactor value = 50 }		
+		command = { type = gain_tech which = 5520 }
+		command = { type = gain_tech which = 5530 }
 		command = { type = gain_tech which = 5540 }
 		command = { type = gain_tech which = 7170 }
 		command = { type = gain_tech which = 7180 }
@@ -59,7 +60,7 @@ event = {
 		command = { type = money value = -1000 }
 		command = { type = supplies value = -10000 } 
 		command = { type = building_prod_mod which = nuclear_reactor value = 50 }
-		command = { type = gain_tech which = 5540 }
+		command = { type = gain_tech which = 5530 }		
 		command = { type = gain_tech which = 5540 }
 		command = { type = gain_tech which = 7170 }
 		command = { type = gain_tech which = 7180 }
