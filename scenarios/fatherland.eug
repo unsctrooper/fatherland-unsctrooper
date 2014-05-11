@@ -77,7 +77,16 @@ globaldata = {
 
   dormant_leaders = { 
 	#PHI
-	325018 }
+	325018
+	#ARA
+	560092 560093 560094 560095 560096 560097
+	#EGY
+	340037 340038 340039 340040
+	#SYR
+	430038
+	#PAL
+	510029
+	}
   dormant_ministers = { 
 	#PHI
 	325001 325017
@@ -95,6 +104,11 @@ globaldata = {
 
 	#CHI - 1914 CGX Clique
 	55400 55401 55402 55403 55404 55405 55406 55407 55408 55409 55410 55411 55412 55413 55414 55415 55416 55417
+	
+	#ARA
+	560126 560127
+	#EGY
+	340225 340228 340135
 	}
   dormant_teams = {
 	#UCH
@@ -115,7 +129,11 @@ globaldata = {
 	55117 55118 #Academia Sinica for post civil war
 	55228 #National Southwestern Associated University
 	55235 55236 55237 #Split Boadings
-
+	
+	#ARA
+	560017 #German-manned Aeronautics & Rocket Center
+	#EGY
+	3400002 #German-manned Aeronautics & Rocket Center
   }
   
   ############################## 1948 ###############################

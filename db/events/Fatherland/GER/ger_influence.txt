@@ -1,0 +1,335 @@
+### 2100  GER  German Military Mission to Arab Countries
+### 2101  ARA  The Germans arrived!
+### 2102  EGY  The Germans arrived!
+### 2103  SYR  The Germans arrived!
+### 2104  PAL  The Germans arrived!
+#########################################################################
+#  German Military Mission to Arab Countries
+#########################################################################
+event = {
+	id = 2100
+	random = no
+	country = GER
+
+	decision = {
+		OR = {
+			AND = {
+			puppet = { country = ARA country = GER}
+			alliance = { country = GER country = ARA }
+				not = { 
+				exists = EGY
+				exists = PAL
+				exists = SYR
+				}
+			}
+			AND = {	
+			puppet = { country = EGY country = GER }
+			alliance = { country = GER country = EGY }
+			
+			puppet = { country = SYR country = GER }
+			alliance = { country = GER country = SYR }
+			
+			puppet = { country = PAL country = GER }
+			alliance = { country = GER country = PAL }
+				not = { 
+				exists = ARA
+				}
+			}
+		}
+	        }
+			
+	decision_trigger = { 
+		manpower = 15
+		supplies = 2500 
+		money = 200
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+			puppet = { country = ARA country = GER}
+			alliance = { country = GER country = ARA }
+				not = { 
+				exists = EGY
+				exists = PAL
+				exists = SYR
+				}
+			}
+			AND = {	
+			puppet = { country = EGY country = GER }
+			alliance = { country = GER country = EGY }
+			
+			puppet = { country = SYR country = GER }
+			alliance = { country = GER country = SYR }
+			
+			puppet = { country = PAL country = GER }
+			alliance = { country = GER country = PAL }
+				not = { 
+				exists = ARA
+				}
+			}
+		}
+	}
+
+	name = "German Military Mission to Arab Countries"
+	desc = "Now that we control Middle East, we should send a mix of propagandists, scientists and more importantly military 'councillors' to the locals to help them manage their army. That would ensure both our influence there and strenghtening our allies' armies."
+	style = 2
+	picture = ""
+
+	date = { day = 19 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action_a = {
+			trigger = { 
+			puppet = { country = ARA country = GER}
+			alliance = { country = GER country = ARA }
+				not = { 
+				exists = EGY
+				exists = PAL
+				exists = SYR
+				}
+		}
+		name = "Send it!" 
+		ai_chance = 100
+		command = { type = dissent value = -2 } # should clean up dissent from release of puppet
+		command = { type = money value = -200 }
+		command = { type = manpowerpool value = -15 }
+		command = { type = supplies value = -2500 }	
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = ARA value = 100 }
+		command = { type = trigger which = 2101 } #ARA
+	}
+	action_b = {
+			trigger = { 
+			puppet = { country = EGY country = GER }
+			alliance = { country = GER country = EGY }
+			
+			puppet = { country = SYR country = GER }
+			alliance = { country = GER country = SYR }
+			
+			puppet = { country = PAL country = GER }
+			alliance = { country = GER country = PAL }
+				not = { 
+				exists = ARA
+				}
+			}
+		
+		ai_chance = 100
+		name = "Send it!" 
+		command = { type = dissent value = -6 } # should clean up dissent from release of puppets
+		command = { type = money value = -200 }
+		command = { type = manpowerpool value = -15 }
+		command = { type = supplies value = -2500 }	
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = EGY value = 100 }
+		command = { type = relation which = SYR value = 100 }
+		command = { type = relation which = PAL value = 100 }
+		command = { type = trigger which = 2102 } #EGY
+		command = { type = trigger which = 2103 } #SYR
+		command = { type = trigger which = 2104 } #PAL
+	}
+	action = {
+		ai_chance = 0
+		name = "They don't need us."
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = ARA value = -25 }
+		command = { type = relation which = EGY value = -25 }
+		command = { type = relation which = SYR value = -25 }
+		command = { type = relation which = PAL value = -25 }
+	}
+}
+#########################################################################
+#  Arab Federation - The Germans arrived!
+#########################################################################
+event = {
+	id = 2101
+	random = no
+	country = ARA
+
+
+	name = "The Germans arrived!"
+	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
+	style = 2
+	picture = "Condor_Legion"
+	
+
+	action_a = {
+		name = ACTION_NAME_OK 
+		command = { type = supplies value = 5000 }
+		command = { type = wakeleader which = 560092 }
+		command = { type = wakeleader which = 560093 }
+		command = { type = wakeleader which = 560094 }
+		command = { type = wakeleader which = 560095 }
+		command = { type = wakeleader which = 560096 }
+		command = { type = wakeleader which = 560097 }
+		command = { type = wakeminister which = 560126 }
+		command = { type = foreignminister which = 560126 }
+		command = { type = wakeminister which = 560127 }
+		command = { type = ministerofintelligence which = 560127 }
+		command = { type = waketeam which = 560017 }
+	}
+}
+#########################################################################
+#  Egypt - The Germans arrived!
+#########################################################################
+event = {
+	id = 2102
+	random = no
+	country = EGY
+
+
+	name = "The Germans arrived!"
+	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
+	style = 2
+	picture = "Condor_Legion"
+	
+
+	action_a = {
+		name = ACTION_NAME_OK 
+		command = { type = supplies value = 3000 }
+		command = { type = wakeleader which = 340037 }
+		command = { type = wakeleader which = 340038 }
+		command = { type = wakeleader which = 340039 }
+		command = { type = wakeleader which = 340040 }
+		command = { type = wakeminister which = 340225 }
+		command = { type = foreignminister which = 340225 }
+		command = { type = wakeminister which = 340228 }
+		command = { type = ministerofintelligence which = 340228 }
+		command = { type = waketeam which = 3400002 }
+		command = { type = sleepminister which = 340063 }
+		command = { type = sleepminister which = 340072 }
+		command = { type = sleepminister which = 340075 }
+		command = { type = sleepminister which = 340089 }
+		command = { type = sleepminister which = 340107 }
+		command = { type = sleepminister which = 340108 }
+		command = { type = sleepminister which = 340109 }
+		command = { type = sleepminister which = 340110 }
+	}
+}
+#########################################################################
+#  Syria - The Germans arrived!
+#########################################################################
+event = {
+	id = 2103
+	random = no
+	country = SYR
+
+
+	name = "The Germans arrived!"
+	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
+	style = 2
+	picture = "Condor_Legion"
+	
+
+	action_a = {
+		name = ACTION_NAME_OK 
+		command = { type = supplies value = 1000 }
+		command = { type = wakeleader which = 430038 }
+		command = { type = sleepleader which = 430008 }
+		command = { type = sleepleader which = 430009 }
+		command = { type = sleepleader which = 430010 }
+		command = { type = sleepleader which = 430011 }
+		command = { type = sleepleader which = 430012 }
+		command = { type = sleepleader which = 430014 }
+		command = { type = sleepleader which = 430015 }
+		command = { type = sleepleader which = 430016 }
+		command = { type = sleepleader which = 430017 }
+		command = { type = sleepleader which = 430018 }
+		command = { type = sleepleader which = 430019 }
+		command = { type = sleepleader which = 430020 }
+		command = { type = sleepleader which = 430021 }
+		command = { type = sleepleader which = 430023 }
+		command = { type = sleepleader which = 430025 }
+		command = { type = sleepleader which = 430028 }
+		command = { type = sleepleader which = 430030 }
+		command = { type = sleepleader which = 430031 }
+		command = { type = sleepleader which = 430032 }
+		command = { type = sleepleader which = 430033 }
+		command = { type = sleepminister which = 430002 }
+		command = { type = sleepminister which = 430005 }
+		command = { type = sleepminister which = 430006 }
+		command = { type = sleepminister which = 430007 }
+		command = { type = sleepminister which = 430008 }
+		command = { type = sleepminister which = 430009 }
+		command = { type = sleepminister which = 430010 }
+		command = { type = sleepminister which = 430017 }
+		command = { type = sleepminister which = 430018 }
+		command = { type = sleepminister which = 430019 }
+		command = { type = sleepminister which = 430020 }
+		command = { type = sleepminister which = 430028 }
+		command = { type = sleepminister which = 430031 }
+		command = { type = sleepminister which = 430032 }
+		command = { type = sleepminister which = 430036 }
+		command = { type = sleepminister which = 430040 }
+		command = { type = sleepminister which = 430041 }
+		command = { type = sleepminister which = 430042 }
+		command = { type = sleepminister which = 430043 }
+		command = { type = sleepminister which = 430045 }
+		command = { type = sleepminister which = 430046 }
+		command = { type = sleepminister which = 430050 }
+		command = { type = sleepminister which = 430052 }
+		command = { type = sleepminister which = 430055 }
+		command = { type = sleepminister which = 430057 }
+		command = { type = sleepminister which = 430058 }
+	}
+}
+#########################################################################
+#  Palestine - The Germans arrived!
+#########################################################################
+event = {
+	id = 2104
+	random = no
+	country = PAL
+
+
+	name = "The Germans arrived!"
+	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
+	style = 2
+	picture = "Condor_Legion"
+	
+
+	action_a = {
+		name = ACTION_NAME_OK 
+		command = { type = supplies value = 1000 }
+		command = { type = wakeleader which = 510029 }
+		command = { type = sleepleader which = 510004 }
+		command = { type = sleepleader which = 510007 }
+		command = { type = sleepleader which = 510010 }
+		command = { type = sleepleader which = 510011 }
+		command = { type = sleepleader which = 510012 }
+		command = { type = sleepleader which = 510013 }
+		command = { type = sleepleader which = 510014 }
+		command = { type = sleepleader which = 510015 }
+		command = { type = sleepleader which = 510016 }
+		command = { type = sleepleader which = 510017 }
+		command = { type = sleepleader which = 510018 }
+		command = { type = sleepleader which = 510020 }
+		command = { type = sleepleader which = 510021 }
+		command = { type = sleepleader which = 510022 }
+		command = { type = sleepleader which = 510025 }
+		command = { type = sleepleader which = 510027 }
+		command = { type = sleepleader which = 510028 }
+		command = { type = sleepminister which = 510001 }
+		command = { type = sleepminister which = 510002 }
+		command = { type = sleepminister which = 510006 }
+		command = { type = sleepminister which = 510007 }
+		command = { type = sleepminister which = 510008 }
+		command = { type = sleepminister which = 510009 }
+		command = { type = sleepminister which = 510010 }
+		command = { type = sleepminister which = 510012 }
+		command = { type = sleepminister which = 510016 }
+		command = { type = sleepminister which = 510020 }
+		command = { type = sleepminister which = 510021 }
+		command = { type = sleepminister which = 510023 }
+		command = { type = sleepminister which = 510028 }
+		command = { type = sleepminister which = 510029 }
+		command = { type = sleepminister which = 510036 }
+		command = { type = sleepminister which = 510037 }
+		command = { type = sleepminister which = 510041 }
+		command = { type = sleepminister which = 510042 }
+		command = { type = sleepminister which = 510046 }
+		command = { type = sleepminister which = 510047 }
+		command = { type = sleepminister which = 510051 }
+	}
+}

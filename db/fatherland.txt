@@ -101,6 +101,7 @@ event = "db\events\fatherland\ger\ukraine.txt"
 event = "db\events\fatherland\ger\domestic.txt"
 event = "db\events\fatherland\ger\Bailout.txt"
 event = "db\events\fatherland\ger\SS.txt"
+event = "db\events\fatherland\ger\ger_influence.txt"
 
 # MIDDLE EAST
 event = "db\events\fatherland\middle_east\iran.txt"
@@ -115,3 +116,5 @@ event = "db\events\fatherland\middle_east\syria.txt"
 event = "db\events\fatherland\middle_east\united_arab_republic.txt"
 event = "db\events\fatherland\middle_east\yemen.txt"
 #event = "db\events\fatherland\middle_east\israel.txt"
+
+
