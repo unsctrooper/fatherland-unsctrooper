@@ -9,6 +9,7 @@
   
 country = {
 	tag = GER 
+		ai = "GER_1948.ai"
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes RES = yes NEIN = yes } }
 	capital = 163 # Berlin (obviously! :D)
 	manpower = 2500
@@ -367,11 +368,15 @@ country = {
 		14000 14010 14020 14030 14040
 		
 		# Great War Land Doctrines
-		6500 6510 6530 6580 6600 6610 6620 6630 6640 6650 6660 6670 6540 6910 
+		6500 6510 6530 6580 6600 6610 6620 6630 6640 6650 6660 6670 6680 6540 6910 
 
 		# WWII Land Doctrines
-		6560 6030 6120 6110 6130
-
+		# 6560 6030 6120 6110 6130
+		6210 6220 6260 6240 6270 6290 
+		
+		# Modern
+		14100
+		
 		# Naval Doctrines
 		# Engagement Theories
 		8010 8020 8030 8040 8050 8060 8070 8080

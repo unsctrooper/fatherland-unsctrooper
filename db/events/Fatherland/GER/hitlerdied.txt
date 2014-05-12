@@ -1212,9 +1212,16 @@ style = 2
 picture = "Fatherland/Wehrmacht2"
 
 trigger = {
-    NOT = { control = { province = 641 data = U58 } }
-	NOT = { control = { province = 617 data = U58 } }
-    war = { country = GER country = U58 }
+		OR = {
+			AND = {
+				NOT = { control = { province = 641 data = U58 } }
+				NOT = { control = { province = 617 data = U58 } }
+				war = { country = GER country = U58 }
+			}
+			NOT = { 
+				exists = U58
+			}
+		}
 	}
 	
 	date = { day = 1 month = january year = 1948 }

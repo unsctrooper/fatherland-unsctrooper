@@ -1230,6 +1230,8 @@ event = { # Revenge!
 	action = { 
 	name = "Okay!" 
 	command = { type = end_non_aggression which = SOV where = GER }
-	command = { type = war which = GER }
+	command = { type = war which = GER }	
+	command = { type = end_non_aggression which = SOV where = TRA }
+	command = { type = war which = TRA }
 	}
 }

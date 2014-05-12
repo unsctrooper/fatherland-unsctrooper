@@ -284,7 +284,7 @@
 	 peacetime_ic_mod       = 0.5
 	 wartime_ic_mod       = 0.8
     headofstate            = {  type = 9 id = 240001  }  
-    headofgovernment       = {  type = 9 id = 240024  }
+    headofgovernment       = {  type = 9 id = 240028  }
     foreignminister        = {  type = 9 id = 240036  }  
     armamentminister       = {  type = 9 id = 240004  }  
     ministerofsecurity     = {  type = 9 id = 240005  }  

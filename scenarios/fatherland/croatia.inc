@@ -28,7 +28,7 @@ rare_materials         = 200
    SpyInfo                = {  country = "CRO" NumberOfSpies = 7  } 
    nationalprovinces      = {  337 345 344 352 353 355 354 347 357 358 356  351 
    # Fiume
-   406 
+   # 406 
    } 
    ownedprovinces         = {  337 345 344 352 353 355 354 347 357 358 356  351 } 
    controlledprovinces    = {  337 345 344 352 353 355 354 347 357 358 356  351 } 
@@ -95,8 +95,8 @@ inventions = { 3000027 }
      free_market       = 4 
      freedom           = 3 
      professional_army = 8 
-     defense_lobby     = 8 
-     interventionism   = 8 
+     defense_lobby     = 9 
+     interventionism   = 9 
     } 
    headofstate            = {  type = 9 id = 275042  } 
    headofgovernment       = {  type = 9 id = 275002  } 

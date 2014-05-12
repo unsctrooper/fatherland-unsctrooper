@@ -1,4 +1,16 @@
 #######################################################
+# Changelog for Beta version ?
+#######################################################
+
+#Inc
+	- Revision inc for Germany (Nuclear)
+	- Revision inc for USA (Nuclear,New Cabinet)
+	- Revisione inc for Italy (Nuclear)
+	- Revisione inc for United Kingdom (Nuclear)
+	- Revision inc for Soviet Union	(Nuclear)
+
+	
+#######################################################
 # Changelog for Beta version 4.0 codename "Middle West"
 #######################################################
 

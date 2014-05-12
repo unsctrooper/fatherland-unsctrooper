@@ -1034,7 +1034,7 @@ name = "900038NAME"
 desc = "900038DESC"
 style = 1
 picture = "diplomatic_campaign"
-date = { day = 1 month = january year = 1940 }
+date = { day = 1 month = january year = 1949 }
 offset = 7
 deathdate = { day = 30 month = december year = 1980 }
 

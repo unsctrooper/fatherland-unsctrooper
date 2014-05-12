@@ -1,10 +1,10 @@
-Updated at 02/04
+Updated at 22/04
 
 Games Bug
 
 GERMANY/SS/AXIS
 * The "Reorganization of Ukraine" does nothing if the Cossack Federation does not exist.
-* The Cossack Republic event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
+* The Cossack Federation event in which Soviets get rebels in their country should lead to an automatic cancellation of the Non-Aggression pact as per "We can attack them when we want but they are protected by Germany"
 * Spy war in Swiss, the options of shoot out a swiss airport are only -1/+1 of dissent. Implement the options.
 * After ostland grabs leningrad Germany should remove its claim on it because if ostland is still allied with you they will just give it back
 * If a nation of axis become democratic the Axis must intervene.
@@ -22,7 +22,6 @@ ASIA
 * Australia left the allies without event/reason
 
 AMERICA
-* Dewey as President, but Truman as Vicepresident, why?
 * Very few USA events
 
 Mod Improvement
@@ -33,3 +32,56 @@ Mod Improvement
 * Revision of mods.csv
 * Moving of events_pics bmp all under fatherland directory
  
+ 
+Forum 
+ 
+- review the mobility focus germany and others Some models of older techs were missing: Strat Bomb '35, Fighter '40, Static Defense WW1, 
+Germany was in the wrong land doctrine path. 
+- Submarine doctrines were not researched up to date
+Rocket Interceptors were missing as well
+
+- the transylvania crisis and the volga conference are overlapping
+- the fate of serbia decision disappears after some days after the beginning of the game
+- after the transylvania crisis croatia left the axis with no reason
+- The German starting OOB is a complete nightmare, gave me a headache to reshape it to have decent corps, armies, wings. What is the point behinf mixing not motorized infantry with tanks? Motorized and not motorized infantry together? Interceptors and tactical bombers? HQ and Garnisons? 
+
+
+
+
+Considering the occupation of Germany in RL, I would have to assume that France wouldn't fare better in this timeline in opposite roles. To be able to deploy submarines, the coastline should be connected to Germany, and it also makes sense for defensive purposes. France should be a puppet of Germany, Germany surely would not withdraw from France, definitely not when the UK is still in existence. It would be way to dangerous to leave the western flank open like that.
+Spain and Portugal are neutral, I doubt very much that Germany would have let them sit idle 5 years after they had defeated the SU. Especially considering that Spain is the one chance to take out Gibraltar. Germany should and would rule the continent from east to west.
+
+The Cossack Federation looks like a German puppet and seems to be in the area ceased by the SU after a defeat, but it isn't a puppet of Germany or even allied. Wad? 
+
+I've noticed that the French have a powerful navy with modern carriers and battleships. Wad?
+
+The province Petrograd in Norther Serbia is directly controlled by Germany. Wad?
+
+
+
+
+
+
+The IC seems low compared to that of the US, considering what resources Germany now controls, especially human ones, I could be higher, likely would be, but that's relatively unimportant.
+As mentioned already above, the OOB looks like a nightmare. Likely I'll rewrite the starting OOB at one time because it's easier to do.
+
+I've used the optional flag package, as a result the SS-country has an orange-uni color flag with a white skull in a corner, looks odd, and Burma doesn't have a working animated flag in the diplomacy screen.
+
+The SS can annex the Lokot Republic during the war, and there is no option to re-release during events. Likewise, while the Lokot-turned-Russian State gets all the land in Russia, it does not get cores on it, leading to a whopping 60% revolt risk. Are there any followup events?
+
+Moyzir and another province beside it get granted netiher to Ukraine nor to Belarus.
+
+Belarus does not have cores on all its territory, some remain as claims.
+
+Post-civil war Ostland (if you go down the united Ostland route) does not have cores on lithuanian territory, only claims. 
+
+The second Versailles treaty results in Germany ceding ALL of France back to France. Including Elsas-Lorainne.
+
+Sometimes, after re-establishing the Pact Of Steel, Italy, Bulgaria, Hungary and Croatia flip to -200 relations. The balkan countries generally leave the alliance as well.
+
+How is the pro-Mussolini uprising handled? It fired two years ago, all the rebels were beaten a year ago, and Italy still have 10+ revolt risk. Is the AI just very bad at handling dissent, or if there a flag that did not get de-falgged?
+
+After the re-establishment of order events, there is still -50 offmap IC for Germany.
+
+
+The Second Operation Barbarossa event can still not be triggered, as the provinces where Germany is supposed to have armies in to trigger the war with the SU get grabbed by the SU when Hitler dies.

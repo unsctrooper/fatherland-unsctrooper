@@ -9,7 +9,7 @@
   
  country = 
  {  tag                    = U40 
-   #ai                     = "GER_1942.ai"
+   ai                     = "U40.ai"
    puppet = GER
    control = GER
    
