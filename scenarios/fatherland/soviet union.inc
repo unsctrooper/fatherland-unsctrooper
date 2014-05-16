@@ -1,31 +1,78 @@
-    ##############################
-    # Country definition for SOV #
-	# Review by Pako & T.C       #
-    ##############################
-     
-    #####################
-    # Country main data #
-    #####################
+#####################
+# Country definition for SOV
+# Review by Pako
+#####################
+
+#####################
+# Country main data 
+#####################
   
-	country = 
-	{  tag = SOV 
-ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes RES = yes } }
-	   regular_id = RUS 
-	   intrinsic_gov_type = leninist 
-	   capital = 1138 
-	   energy = 71235
-       metal = 48521
-	   rare_materials = 5369
-       oil = 4250 
-       supplies = 7890 
-       money = 550 
-       manpower = 3000
-       dissent = 10
-       transports = 30 
-       escorts = 15 
-    
-		diplomacy = { 
-		#Neutral AFG ARG BOL BRA CHI TRA DEN ECU IRE MEX MTN PAR PER POR SYR SWE URU PAK
+country = { 
+	tag = SOV 
+	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes MOB8 = yes RES = yes } }
+	capital = 1138 # Omsk	
+	manpower = 3000
+	transports = 30 	
+	escorts = 15 
+	belligerence = 5	
+	regular_id = RUS 
+	intrinsic_gov_type = leninist 
+	dissent = 10
+	
+	# resources 
+	energy = 71235
+	metal = 48521
+	rare_materials = 5369
+	oil = 4250 
+	supplies = 7890 
+	money = 550 
+
+	# spying
+	SpyInfo = { country = "ENG" NumberOfSpies = 4  } 
+	SpyInfo = { country = "SPA" NumberOfSpies = 2 }
+	SpyInfo = { country = "SOV" NumberOfSpies = 10 }
+	SpyInfo = { country = "GER" NumberOfSpies = 3 }
+	SpyInfo = { country = "HUN" NumberOfSpies = 4 }
+	SpyInfo = { country = "TUR" NumberOfSpies = 7 }
+	SpyInfo = { country = "SWE" NumberOfSpies = 2 }
+	SpyInfo = { country = "ITA" NumberOfSpies = 2 }
+
+	# policy and government	
+	policy = {  
+		date = {  year = 0 month = january day = 0  } 
+		democratic        = 1 
+		political_left    = 10 
+		freedom           = 1 
+		free_market       = 1 
+		professional_army = 7 
+		defense_lobby     = 10 
+		interventionism   = 10 
+    } 
+
+	headofstate = {  type = 9 id = 30012  } # Molotov
+	headofgovernment = {  type = 9 id = 30017  } # Beria
+	foreignminister = {  type = 9 id = 30021  } # Molotov
+	armamentminister = {  type = 9 id = 30004  } # Kaganovich
+	ministerofsecurity = {  type = 9 id = 30028  } # Beria
+	ministerofintelligence = {  type = 9 id = 30036  } # Ilichev
+	chiefofstaff = {  type = 9 id = 30043  } # Antonov
+	chiefofarmy = {  type = 9 id = 30072  } # Zhukov
+	chiefofnavy = {  type = 9 id = 30049  } # Kuznetsov
+	chiefofair = {  type = 9 id = 30143  } # Zhigarev
+	dormant_ministers = {  30003 30005 30007 30009 30006 30010 30026 30027 30032 30033 30048 30002 30011 30046 30076 30144 }
+	dormant_leaders = {  30050 30040 30042 30044 30085 30095 30097 30101 30108 30111 30127 30131 30135 30152 30156 30170 30175 30192 30194 30207
+						   30217 30220 30229 30232 30243 30255 30267 30272 30315 30316 30338 30339 30403 30409 30416 30454 30472 30477 30484 30487
+						   30498 30523 30543 30547 30550 30570 30571 30572 30602 30618 30654 30664 30673 30678 30701 30715 30716 30717 30718 30719
+						   30721 30722 30723 30650 30437 30512 30007 30374 30238 30276 30681 30353 30687 30407 30697 30499 30008 
+						   30057 30059 30063 30081 30084 30090 30098 30100 30107 30120 30136 30172 30174 30186 30190 30191 30198 30199 30214 30215
+						   30226 30242 30258 30263 30269 30275 30277 30296 30302 30324 30326 30345 30381 30391 30399 30401 30411 30419 30442 30445
+						   30447 30491 30494 30509 30521 30548 30552 30576 30614 30658 30660 30720 30473 30778 30076 30216 30744 30266 30322 30463
+						   30479 30538 30789 30313 30765 30767 30515 30776 30528 30758 30373 30564
+	}
+							
+	# foreign diplomacy										
+	diplomacy = { 
+		# Neutral AFG ARG BOL BRA CHI TRA DEN ECU IRE MEX MTN PAR PER POR SYR SWE URU PAK
 			relation = { tag = AFG value = -100 }
 			relation = { tag = CHI value = -100 }
 			relation = { tag = SAU value = -50 }
@@ -50,7 +97,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 			relation = { tag = FRA value = -150 }	
 			relation = { tag = SWE value = -10 }
 			relation = { tag = SER value = -100 }
-		#Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
+		# Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
 			relation = { tag = AST value = -100 }
 			relation = { tag = BEL value = -10 }
 			relation = { tag = BHU value = -10 }
@@ -68,11 +115,11 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 			relation = { tag = SAF value = -150 }
 			relation = { tag = YEM value = -10 }
 			relation = { tag = JAP value = -125 }
-		#Comintern CHC SOV MON
+		# Comintern CHC SOV MON
 			relation = { tag = CHC value = 150 }
-			#relation = { tag = SOV value = -200 }
+			# relation = { tag = SOV value = -200 }
 			relation = { tag = MON value = 200 access = yes guaranteed = { day = 27 month = september year = 1943 } }
-		#Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR
+		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR
 			relation = { tag = GER value = -200 }
 			relation = { tag = BUL value = -200 }
 			relation = { tag = CRO value = -200 }
@@ -84,7 +131,6 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 			relation = { tag = UTC value = -200 }
 			relation = { tag = ITA value = -200 }
 	}
-    
     
    nationalprovinces = {  1119 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 
 						  551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 
@@ -169,7 +215,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
  1105 1104 	 
    } 
 
-   SpyInfo = { country = "SOV" NumberOfSpies = 10 }
+
    
    # Soviet Techs
    # ################ 
@@ -311,37 +357,8 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 
 inventions = { 3000027 }
    blueprints             = { } 
-   policy = 
-   {  date              = {  year = 0 month = january day = 0  } 
-     democratic        = 1 
-     political_left    = 10 
-     freedom           = 1 
-     free_market       = 1 
-     professional_army = 7 
-     defense_lobby     = 10 
-     interventionism   = 10 
-    } 
 	peacetime_ic_mod       = 0.7
-   headofstate            = {  type = 9 id = 30012  } 
-   headofgovernment       = {  type = 9 id = 30094  }  
-   foreignminister        = {  type = 9 id = 30020  } 
-   armamentminister       = {  type = 9 id = 30004  } 
-   ministerofsecurity     = {  type = 9 id = 30028  } 
-   ministerofintelligence = {  type = 9 id = 30036  } 
-   chiefofstaff           = {  type = 9 id = 30151  } 
-   chiefofarmy            = {  type = 9 id = 30072  } 
-   chiefofnavy            = {  type = 9 id = 30049  } 
-   chiefofair             = {  type = 9 id = 30143  }
-   dormant_ministers      = {  30003 30005 30007 30009 30006 30010 30026 30027 30032 30033 30048 30002 30011 30046 30076 30144 }
-   dormant_leaders        = {  30050 30040 30042 30044 30085 30095 30097 30101 30108 30111 30127 30131 30135 30152 30156 30170 30175 30192 30194 30207
-                               30217 30220 30229 30232 30243 30255 30267 30272 30315 30316 30338 30339 30403 30409 30416 30454 30472 30477 30484 30487
-                               30498 30523 30543 30547 30550 30570 30571 30572 30602 30618 30654 30664 30673 30678 30701 30715 30716 30717 30718 30719
-                               30721 30722 30723 30650 30437 30512 30007 30374 30238 30276 30681 30353 30687 30407 30697 30499 30004 30008 30028
-                               30057 30059 30063 30081 30084 30090 30098 30100 30107 30120 30136 30172 30174 30186 30190 30191 30198 30199 30214 30215
-                               30226 30242 30258 30263 30269 30275 30277 30296 30302 30324 30326 30345 30381 30391 30399 30401 30411 30419 30442 30445
-                               30447 30491 30494 30509 30521 30548 30552 30576 30614 30658 30660 30720 30473 30778 30076 30216 30744 30266 30322 30463
-                               30479 30538 30789 30313 30765 30767 30515 30776 30528 30758 30373 30564
-                            }
+
 							
    landunit = 
    {  id       = {  type = 10848 id =  1 } 

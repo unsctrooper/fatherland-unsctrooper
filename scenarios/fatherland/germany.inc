@@ -9,13 +9,14 @@
   
 country = {
 	tag = GER 
-		ai = "GER_1948.ai"
+	ai = "GER_1948.ai"
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes RES = yes NEIN = yes } }
 	capital = 163 # Berlin (obviously! :D)
 	manpower = 2500
 	transports = 135 
 	escorts = 50 
 	belligerence = 10
+	dissent = 0
 
 	# resources 
 	energy = 35000
