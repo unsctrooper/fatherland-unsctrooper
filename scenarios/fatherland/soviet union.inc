@@ -46,7 +46,7 @@ country = {
 		free_market       = 1 
 		professional_army = 7 
 		defense_lobby     = 10 
-		interventionism   = 10 
+		interventionism   = 5 
     } 
 
 	headofstate = {  type = 9 id = 30012  } # Molotov
@@ -118,7 +118,7 @@ country = {
 		# Comintern CHC SOV MON
 			relation = { tag = CHC value = 150 }
 			# relation = { tag = SOV value = -200 }
-			relation = { tag = MON value = 200 access = yes guaranteed = { day = 27 month = september year = 1943 } }
+			relation = { tag = MON value = 50 }
 		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR
 			relation = { tag = GER value = -200 }
 			relation = { tag = BUL value = -200 }
@@ -1263,137 +1263,5 @@ airunit = {
 		}
 	
 	# Starting Build Queue 
-	division_development = {
-		name  = "Kaganovich"
-		type  = heavy_cruiser
-		model = 5
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8503 }
-		date  = { year = 1942 month = december day = 31 }
-	}
-	division_development = {
-		name  = "Kalinin"
-		type  = heavy_cruiser
-		model = 5
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8504 }
-		date  = { year = 1944 month = december day = 6 }
-	}
-	division_development = {
-		name  = "Chapayev"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8505 }
-		date  = { year = 1943 month = march day = 8 }
-	}
-	division_development = {
-		name  = "Zheleznyakov"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8506 }
-		date  = { year = 1943 month = march day = 30 }
-	}
-	division_development = {
-		name  = "Kuybyshev"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8507 }
-		date  = { year = 1943 month = february day = 28 }
-	}
-	division_development = {
-		name  = "Chkalov"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8508 }
-		date  = { year = 1943 month = february day = 28 }
-	}
-	division_development = {
-		name  = "Frunze"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8509 }
-		date  = { year = 1943 month = february day = 26 }
-	}
-	division_development = {
-		name  = "Ordzhinikidze"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8510 }
-		date  = { year = 1943 month = august day = 24 }
-	}
-	division_development = {
-		name  = "Sverdlov"
-		type  = heavy_cruiser
-		model = 6
-		extra1 = floatplane
-		brigade_model1 = 4
-		cost  = 0.1
-		id    = { type = 10848 id = 8511 }
-		date  = { year = 1943 month = october day = 3 }
-	}
-	division_development = {
-		name  = "Kronshtadt"
-		type  = battlecruiser
-		model = 3
-		cost  = 0.1
-		id    = { type = 10848 id = 8512 }
-		date  = { year = 1945 month = may day = 6 }
-	}
-	division_development = {
-		name  = "Sevastopol"
-		type  = battlecruiser
-		model = 3
-		cost  = 0.1
-		id    = { type = 10848 id = 8513 }
-		date  = { year = 1945 month = april day = 21 }
-	}
-	division_development = {
-		name  = "Sovyetskiy Soyuz"
-		type  = battleship
-		model = 8
-		cost  = 0.1
-		id    = { type = 10848 id = 8514 }
-		date  = { year = 1945 month = august day = 11 }
-	}
-	division_development = {
-		name  = "Sovyetskaya Ukraina"
-		type  = battleship
-		model = 8
-		cost  = 0.1
-		id    = { type = 10848 id = 8515 }
-		date  = { year = 1945 month = october day = 12 }
-	}
-	division_development = {
-		name  = "Sovyetskaya Rossiya"
-		type  = battleship
-		model = 8
-		cost  = 0.1
-		id    = { type = 10848 id = 8516 }
-		date  = { year = 1946 month = september day = 3 }
-	}
-
- }	
-
-	
+	# Nothing
+ }

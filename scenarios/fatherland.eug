@@ -181,7 +181,7 @@ globaldata = {
   { id         = { type = 16384 id = 135 }
     type       = non_aggression
     country    = "SOV"
-    country    = "MON"
+    country    = "SIB"
     startdate  = { year = 1935 month = december day = 30 }
     expirydate = { year = 1964 month = december day = 30 }
   }

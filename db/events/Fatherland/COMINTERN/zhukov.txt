@@ -1,0 +1,539 @@
+# ##########################
+# Zhukov by Pako
+# ##########################
+# 8014230 - Zhukov
+# 8014231 - Riorganizzazione dell'esercito
+
+# 8014232 - Rapporti con la Siberia
+# 8014233 - Risposta Siberia all'invito Sovietico
+# 8014234 - La Siberia ha accettato la nostra proposta
+# 8014235 - La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !
+# 8014236 - La Siberia preferisce una alleanza ma restando autonoma
+
+# 8014237 - Far Eastern Republic
+# 8014238 - Risposta FER all'invito Sovietico
+# 8014239 - La FER ha accettato la nostra proposta
+# 8014240 - La FERha rifiutato la nostra proposta e ci ha dichiarato guerra !
+# 8014241 - La FER preferisce una alleanza ma restando autonoma
+
+# 8014242 - Dovere dell'Armata Rossa supportare i comunisti nel mondo
+
+# 8014243 - Soviet support in Chinese Civil War (SOV)
+# 8014244 - Considerable support (CHC)
+# 8014245 - Limited support (CHC)	
+# 8014246 - Total support (CHC) - Alliance
+# 8014247 - No support (CHC)	
+
+#Scontri con Cosacchi
+#Afghanistan
+#Vietnam
+#Supporto RAU
+
+# 8014230 - Zhukov
+event = {
+	id = 8014230
+	random = no
+	country = SOV 
+	trigger = { 
+		headofstate = 30077 # Voroshilov
+		headofgovernment = 30153 # Zhukov
+		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
+		event = 8014269 # Soviet Union - 8014269 - Purges (Zhukov)
+	} 
+	name = "Zhukov prende il potere"
+	desc = "L'armata rossa prende il controllo della situazione"
+	style = 0
+	picture = "soviet_warposter" 
+	date = { day = 1 month = january year = 1949 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "Ok"
+        command = { type = dissent value = -5 }
+		command = { type = ground_def_eff value = 0.5 } # da rivedere
+		command = { type = max_organization which = land value = 5 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+# 8014231 - Riorganizzazione dell'esercito
+event = {
+	id = 8014231
+	random = no
+	country = SOV 
+	trigger = { 
+		headofstate = 30077 # Voroshilov
+		headofgovernment = 30153 # Zhukov
+		event = 8014230 # 8014230 - Zhukov al potere
+	} 
+	name = "Riorganizzazione dell'esercito"
+	desc = "Après de longs efforts, l'armée est remise à niveau." 
+	style = 0
+	picture = "soviet_warposter" 
+	date = { day = 1 month = january year = 1949 }
+	offset = 2
+	deathdate = { day = 12 month = march year = 1966 }
+	action = {#OK
+		ai_chance = 90
+		name = "Ok"
+		command = { type = max_organization which = infantry value = 10  }
+		command = { type = max_organization which = garrison value = 10  }
+		command = { type = max_organization which = militia value = 10  }
+		command = { type = max_organization which = mechanized value = 10  }
+		command = { type = max_organization which = light_armor value = 10  }
+		command = { type = max_organization which = armor value = 10  }
+		command = { type = max_organization which = motorized value = 10  }
+		command = { type = max_organization which = cavalry value = 10  }
+	}
+	action = {#KO
+		ai_chance = 10
+		name = "NON è necessario"
+		command = { type = dissent value = 1 }
+	}
+}
+
+# 8014232 - Rapporti con la Siberia
+event = {
+id = 8014232
+random = no
+country = SOV 
+trigger = {  
+		headofstate = 30077 # Voroshilov
+		headofgovernment = 30153 # Zhukov
+		event = 8014231 # 8014231 - Riorganizzazione dell'esercito
+} 
+name = "L'unione Sovietica e la Siberia"
+desc = "Avanziamo una offerat a Dzhanov per tornare pacificamente con noi ?"
+style = 0
+picture = "soviet_warposter" 
+	date = { day = 1 month = january year = 1949 }
+	offset = 1
+	deathdate = { day = 12 month = march year = 1966 }
+	
+	action = {
+		ai_chance = 50
+		name = "Ok"
+		command = { type = set_relation which = SIB value = 50 }
+		command = { type = trigger which = 8014203 } # risposta Siberia
+	}
+	
+	action = {
+		ai_chance = 50
+		name = "Non in questo momento"
+		command = { type = set_relation which = SIB value = -50 }
+	}
+}
+
+# 8014233 - Risposta Siberia all'invito Sovietico
+event = {
+	id = 8014233
+	random = no
+	country = SIB 
+
+	name = "L'unione Sovietica e la Siberia"
+	desc = "Torniamo sovietici ?"
+	style = 0
+	picture = "soviet_warposter" 
+	action = {
+	ai_chance = 25
+		name = "Ok"
+		command = { type = set_relation which = SOV value = 50 }
+		command = { type = trigger which = 8014234 } # 8014204 - La Siberia ha accettato la nostra proposta	
+	}
+	
+	action = {
+		ai_chance = 25
+		name = "NO"
+		command = { type = set_relation which = SOV value = -50 }
+		command = { type = trigger which = 8014235 } # 8014235 - La Siberia ha rifiutato la nostra proposta		
+		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
+	}
+	
+	action = {
+		ai_chance = 50
+		name = "Preferiamo una alleanza ma restando autonomi"
+		command = { type = set_relation which = SOV value = 50 }
+		# abbandonare l'alleanza con i romanov eventule
+		command = { type = trigger which = 8014236 } # 8014236 - La Siberia preferisce una alleanza ma restando autonoma
+	}
+
+}
+
+# 8014234 - La Siberia ha accettato la nostra proposta
+event = {
+	id = 8014234
+	random = no
+	country = SOV 
+	name = "E' ora di ritornare sovietici"
+	desc = "Torniamo a casa !"
+	style = 0
+	picture = "soviet_warposter" 
+
+	action = {
+		name = "Hurrah !"
+		command = { type = dissent value = -1 }
+		# command = { type = trigger which = 8014206 } # 8014206 - Dzhanov annuncia un suo ingresso nel governo	
+	}
+	
+}
+
+# 8014235 - La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !
+event = {
+	id = 8014235
+	random = no
+	country = SOV 
+	name = "La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !"
+	desc = "Nonostante le ns offerte hanno rifiutato, guerra sia !"
+	style = 0
+	picture = "soviet_warposter" 
+
+	action = {
+		name = "Ok"
+		command = { type = set_relation which = SIB value = -200 }		
+	}
+
+}
+
+# 8014236 - La Siberia preferisce una alleanza ma restando autonoma
+event = {
+	id = 8014236
+	random = no
+	country = SOV 
+	name = "Alleiamoci ma restando autonomi"
+	desc = "Alleanza con SIBERIA"
+	style = 0
+	picture = "soviet_warposter" 
+
+	action = {
+		ai_chance = 50
+		name = "Ok !"
+		command = { type = dissent value = -1 }
+		# alleanza con siberia e suoi alleati e guerra con zaristi	
+	}
+	action = {
+		ai_chance = 50
+		name = "No !"
+		command = { type = dissent value = -1 }
+		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia fil		
+	}
+}
+
+# 8014237 - Far Eastern Republic
+
+event = {
+id = 8014237
+random = no
+country = SOV 
+trigger = {  
+		headofstate = 30077 # Voroshilov
+		headofgovernment = 30153 # Zhukov
+		event = 8014233 # 8014233 - Risposta della Siberia
+} 
+name = "L'unione Sovietica e la FER"
+desc = "Avanziamo una offerat alla FER per tornare pacificamente con noi ?"
+style = 0
+picture = "soviet_warposter" 
+	date = { day = 1 month = january year = 1949 }
+	offset = 1
+	deathdate = { day = 12 month = march year = 1966 }
+	
+	action = {
+		ai_chance = 80
+		name = "Ok"
+		command = { type = set_relation which = U57 value = 50 }
+		command = { type = trigger which = 8014238 } # risposta FER
+	}
+	
+	action = {
+		ai_chance = 20
+		name = "Non in questo momento"
+		command = { type = set_relation which = U57 value = -50 }
+	}
+}
+
+# 8014238 - Risposta FER all'invito Sovietico
+event = {
+	id = 8014238
+	random = no
+	country = SIB 
+
+	name = "L'unione Sovietica e la FER"
+	desc = "Torniamo sovietici ?"
+	style = 0
+	picture = "soviet_warposter" 
+	action = {
+	ai_chance = 25
+		name = "Ok"
+		command = { type = set_relation which = SOV value = 50 }
+		command = { type = trigger which = 8014239 } # 8014239 - La FER ha accettato la nostra proposta	
+	}
+	
+	action = {
+		ai_chance = 25
+		name = "NO"
+		command = { type = set_relation which = SOV value = -50 }
+		command = { type = trigger which = 8014240 } # 8014240 - La FER ha rifiutato la nostra proposta					
+	}
+	
+	action = {
+		ai_chance = 50
+		name = "Preferiamo una alleanza ma restando autonomi"
+		command = { type = set_relation which = SOV value = 50 }
+		command = { type = trigger which = 8014241 } # 8014241 - La FER preferisce una alleanza ma restando autonoma
+	}
+
+}
+
+# 8014239 - La FER ha accettato la nostra proposta
+event = {
+	id = 8014239
+	random = no
+	country = SOV 
+	name = "E' ora di ritornare sovietici"
+	desc = "Torniamo a casa !"
+	style = 0
+	picture = "soviet_warposter" 
+
+	action = {
+		name = "Hurrah !"
+		command = { type = dissent value = -1 }
+		# ereditare la siberia
+		# command = { type = trigger which = 8014206 } # 8014206 - Dzhanov annuncia un suo ingresso nel governo	
+	}
+	
+}
+
+# 8014240 - La FER ha rifiutato la nostra proposta e ci ha dichiarato guerra !
+event = {
+	id = 8014240
+	random = no
+	country = SOV 
+	name = "La FER ha rifiutato la nostra proposta e ci ha dichiarato guerra !"
+	desc = "Nonostante le ns offerte hanno rifiutato, guerra sia !"
+	style = 0
+	picture = "soviet_warposter" 
+
+	action = {
+		name = "Ok"
+		command = { type = set_relation which = U57 value = -200 }	
+		# dichiarare guerra a U57		
+	}
+
+}
+
+# 8014241 - La FER preferisce una alleanza ma restando autonoma
+event = {
+	id = 8014241
+	random = no
+	country = SOV 
+	name = "Alleiamoci ma restando autonomi"
+	desc = "Alleanza con SIBERIA"
+	style = 0
+	picture = "soviet_warposter" 
+
+	action = {
+		ai_chance = 50
+		name = "Ok !"
+		command = { type = dissent value = -1 }
+		# alleanza con FER
+	}
+	action = {
+		ai_chance = 50
+		name = "No !"
+		command = { type = dissent value = -1 }
+		# dichiaraare guerra a FER		
+	}
+}
+
+# 8014242 - Dovere dell'Armata Rossa supportare i comunisti nel mondo
+event = {
+	id = 8014242
+	random = no
+	country = SOV 
+	trigger = { 
+		headofstate = 30077 # Voroshilov
+		headofgovernment = 30153 # Zhukov
+		event = 8014238 # 8014238 - Risposta FER all'invito Sovietico
+	} 
+	name = "Dovere dell'Armata Rossa supportare i comunisti nel mondo"
+	desc = "Dovere dell'Armata Rossa supportare i comunisti nel mondo"
+	style = 0
+	picture = "soviet_warposter" 
+	date = { day = 1 month = january year = 1949 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "Ok"
+		command = { type = domestic which = interventionism value = 5 }
+	}
+}
+
+# 8014243 - Soviet support in Chinese Civil War (SOV)
+event = { 
+	id = 8014243
+	random = no
+	country = SOV
+
+	name = "Supportiamo la Cina Comunista"
+	desc = "Supportiamo la Cina Comunista"
+	picture = "mao_with_stalin"
+	style = 1
+
+	trigger = {
+		war = { country = CHI country = CHC }
+		headofstate = 30077 # Voroshilov
+		headofgovernment = 30153 # Zhukov
+		event = 8014242 # 8014238 - # 8014242 - Dovere dell'Armata Rossa supportare i comunisti nel mondo
+
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Considerable support"
+		ai_chance = 0
+		command = { type = relation which = CHC value = 100 }
+		command = { type = supplies value = -1500 }
+		command = { type = oilpool value = -2000 }
+		command = { type = money value = -100 }
+		command = { type = belligerence value = 10 }
+		command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014244 }
+	}	
+	
+	action = {
+		name = "Limited support"
+		ai_chance = 10
+		command = { type = relation which = CHC value = 50 }
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -1000 }
+		command = { type = money value = -50 }
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 8014245 }		
+	}	
+	
+	action = {
+		name = "Propose alliance"
+		ai_chance = 0
+		command = { type = relation which = CHC value = 200 }
+		command = { type = money value = -2000 }
+		command = { type = belligerence value = 25 }
+		command = { type = dissent value = 15 }
+		command = { type = trigger which = 8014246 }
+	}	
+	
+	action = {
+		name = "No support directly, only diplomatic"
+		ai_chance = 90
+		command = { type = relation which = CHC value = -100 }
+		command = { type = trigger which = 8014247 }		
+	}	
+}
+# 8014244 - Considerable support (CHC)
+event = { 
+	id = 8014244
+	random = no
+	country = CHC
+
+	name = "EVT_8200008_NAME"
+	desc = "EVT_8200008_DESC"
+	picture = "soviets_in_ccw"
+	style = 1
+
+	action = {
+		name = EVT_8200008_A #"We will put it to good use"
+		command = { type = supplies value = 6000 }
+		command = { type = oilpool value = 3000 }
+		command = { type = money value = 500 }
+		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
+		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 0 }
+	}		
+}
+
+# 8014245 - Limited support (CHC)	
+event = { # Limited support (CHC)
+	id = 8014245
+	random = no
+	country = CHC
+
+	name = "EVT_8200007_NAME"
+	desc = "EVT_8200007_DESC"
+	picture = "soviets_in_ccw"	
+	style = 1
+
+	action = {
+		name = "We will put it to good use"
+		command = { type = supplies value = 3000 }
+		command = { type = oilpool value = 1000 }
+		command = { type = money value = 100 }
+	}		
+}
+
+
+# 8014246 - Total support (CHC) - Alliance
+event = { # Total support (CHC) - Alliance
+	id = 8014246
+	random = no
+	country = CHC
+
+	name = "EVT_8200009_NAME"
+	desc = "EVT_8200009_DESC"
+	picture = "mao_with_stalin_poster"	
+	style = 1
+
+	# Triggered by: 8200006
+
+	action = {
+		name = EVT_8200009_A #"Alliance of the working class!"
+		ai_chance = 60
+		command = { type = supplies value = 8000 }
+		command = { type = oilpool value = 5000 }
+		command = { type = money value = 1000 }
+		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
+		command = { type = add_division which = "2. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "3. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "6. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "7. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = add_division which = "8. Div Siberian Volunteers" value = mechanized when = 0 }
+		command = { type = alliance which = SOV }
+	}	
+
+	action = {
+		name = "Grazie ma questa è la nostra guerra. Accettiamo comunque volontari"
+		ai_chance = 40
+		command = { type = supplies value = 12000 }
+		command = { type = oilpool value = 8000 }
+		command = { type = money value = 500 }
+		command = { type = add_division which = "1. Div Siberian Volunteers" value = armor when = 1 }
+		command = { type = add_division which = "4. Div Siberian Volunteers" value = motorized when = 2 }
+		command = { type = add_division which = "5. Div Siberian Volunteers" value = mechanized when = 0 }
+		#command = { type = sleepevent which = 8200121 } # End of intervention
+	}		
+}
+# 8014247 - No support (CHC)	
+event = { # No support (CHC)
+	id = 8014247
+	random = no
+	country = CHC
+
+	name = "EVT_8200007_NAME"
+	desc = "EVT_8200007_DESC"
+	picture = "soviets_in_ccw"	
+	style = 1
+
+	action = {
+		name = "Visioni differenti"
+		command = { type = relation which = SOV value = -100 }
+	}		
+}

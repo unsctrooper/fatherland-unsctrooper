@@ -65,6 +65,12 @@ event = "db\events\fatherland\axis_europe\Intervention.txt"
 # COMINTERN
 event = "db\events\fatherland\comintern\comintern_conference.txt"
 event = "db\events\fatherland\comintern\soviet_union.txt"
+event = "db\events\fatherland\comintern\beria.txt"
+event = "db\events\fatherland\comintern\fareastern.txt"
+event = "db\events\fatherland\comintern\molotov.txt"
+event = "db\events\fatherland\comintern\siberia.txt"
+event = "db\events\fatherland\comintern\turkestan.txt"
+event = "db\events\fatherland\comintern\zhukov.txt"
 
 # CRISIS
 event = "db\events\fatherland\crisis\abadan_crisis.txt"

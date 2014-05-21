@@ -12,8 +12,8 @@ reinforcement = 0.0
 upgrading = 0.1  
 strat_redeploy_threshold = 50
 max_redeploying = 0.1
-exp_force_ratio = 0.0
-exp_force_ratios = { } 
+exp_force_ratio = 0.75
+exp_force_ratios = { }
 no_exp_forces_to = { }
 ferocity = yes
 
@@ -32,6 +32,7 @@ claim_acceptance = -69
 
 demand_claims = {
 }
+
 befriend = {
 	BLR = 50
 	SLO = 50

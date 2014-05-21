@@ -1,0 +1,633 @@
+# ##########################
+# ## Round II - Siberia Prepares
+# ##########################
+# 8014256 - U59 - Soviet Resurgent!!
+# 8014257 - SIB - Romanov Request
+# 8014259 - SIB - What to do about Russian Empire
+# 8014273 - SIB - Romanov Defeat - Dzhanov
+# 8014276 - U59 - Dzhanov Defeat - Romanov
+# 8014258 - U59 - Romanov-Dzhanov Alliance
+# 8014260 - MON - Soviet Resurgent!!
+# 8014261 - SIB - Mongols Offer
+# 8014262 - MON - Dhzanov-Mongol Alliance
+# 8014263 - MON - Alliance for Offers
+# 8014264 - SIB - Dzhanov Reply
+# 8014271 - SIB - What to do about Mongols
+
+# ##########################
+# ## Round IV - War Siberia - Soviet Union
+# ##########################
+# 8014270 - SIB - War Siberia-Soviet Union
+# 8014272 - SOV - Tsarist Influences
+# 8014279 - SOV - Dzhanov Influences
+# 8014274 - SOV - Tsarist Defeat - Soviet
+# 8014280 - SOV - Dzhanov Defeat - Soviet
+# 8014288 - SOV - Mongolia Defeat - Soviet
+# 8014289 - SOV - Integration of Mongolia SSR
+# 8014277 - U59 - Soviet Defeat - Romanov
+# 8014278 - SIB - Soviet Defeat - Dzhanov
+
+###################################
+### Round II - Siberia Prepares ###
+###################################
+### Russian Empire ###
+######################
+event = { # Soviet Resurgent!!
+	id = 8014256 
+	random = no
+	country = U59
+
+	name = "8014256NAME"
+	desc = "8014256DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+    trigger = {
+    event = 8014251
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { # Side with Zdhanov
+		name = "8014256A"
+        ai_chance = 75
+        command = { type = dissent value = 5 }
+		command = { type = trigger which = 8014257 }
+	}
+	    action_b = { # Weather the storm
+		name = "8014256B" 
+		ai_chance = 25
+        command = { type = dissent value = -10 }
+		command = { type = trigger which = 8014259 }
+	}
+}
+
+event = { # Romanov Request
+	id = 8014257 
+	random = no
+	country = SIB
+
+	name = "8014257NAME"
+	desc = "8014257DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+
+	    action_a = { # Side with the Romanovs!
+		name = "8014257A"
+        ai_chance = 80
+        command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014258 }
+	}
+	    action_b = { # Remove the Tsars!
+		name = "8014257B" 
+		ai_chance = 20
+        command = { type = dissent value = 5 }
+		command = { type = war which = U59 }	
+        command = { type = addcore which = 1142 }
+        command = { type = addcore which = 1143 }
+        command = { type = addcore which = 1144 }
+        command = { type = addcore which = 1145 }
+        command = { type = addcore which = 1146 }
+        command = { type = addcore which = 1147 }
+	}
+}
+event = { # What to do about Russian Empire
+	id = 8014259
+	random = no
+	country = SIB
+
+	name = "8014259NAME"
+	desc = "8014259DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+
+	    action_a = { 
+		name = "8014259A"
+        ai_chance = 99
+        command = { type = dissent value = 5 }
+		command = { type = war which = U59 }	
+        command = { type = addcore which = 1142 }
+        command = { type = addcore which = 1143 }
+        command = { type = addcore which = 1144 }
+        command = { type = addcore which = 1145 }
+        command = { type = addcore which = 1146 }
+        command = { type = addcore which = 1147 }
+	}
+	    action_b = { 
+		name = "8014259B"
+        ai_chance = 1
+        command = { type = dissent value = 1 }
+	}
+}
+
+event = { # Romanov Defeat - Dzhanov
+	id = 8014273 
+	random = no
+	country = SIB
+
+	trigger = {
+    war = { country = SIB country = U59 }
+	control = { province = 1142 data = SIB } # Novo
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Romanov Defeat"
+	desc = "We have marched into Novobirsk and executed the fake Tsarina. Long live Zhdanovism!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = U59 value = 1 }
+	}
+}
+
+event = { # Dzhanov Defeat - Romanov
+	id = 8014276 
+	random = no
+	country = U59
+
+	trigger = {
+    war = { country = U59 country = SIB }
+	control = { province = 1157 data = U59 } # Kansk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of Zhdanov"
+	desc = "We have marched into Kansk, executed Zhdanov and abolished the fake Siberian autority. Long live the Tsarina!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SIB value = 1 }
+	}
+}
+
+event = { # Romanov Dzhanov Alliance
+	id = 8014258 
+	random = no
+	country = U59
+
+	name = "8014258NAME"
+	desc = "8014258DESC" 
+	style = 2
+	picture = "Empire_Of_Russia"
+
+
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = 3 }
+		command = { type = alliance which = SIB }	
+		command = { type = relation which = SIB value = 200 }		
+        command = { type = addcore which = 1143 }
+        command = { type = addcore which = 1144 }
+        command = { type = addcore which = 1145 }
+        command = { type = addcore which = 1146 }
+        command = { type = addcore which = 1147 }
+	}
+}
+################
+### Mongolia ###
+################
+event = { # Soviet Resurgent!!
+	id = 8014260 
+	random = no
+	country = MON
+
+	name = "8014260NAME"
+	desc = "8014260DESC" 
+	style = 2
+	picture = "mongolia"
+	
+    trigger = {
+    event = 8014251
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { # Check with Zhdanov
+		name = "8014260A"
+        ai_chance = 99
+        command = { type = dissent value = 1 }
+		command = { type = trigger which = 8014261 }
+	}
+	    action_b = { # We'll Rather Stay Independent
+		name = "8014260B" 
+		ai_chance = 1
+        command = { type = dissent value = -5 }
+		command = { type = trigger which = 8014264 }		
+	}
+}
+
+event = { # Mongols Offer
+	id = 8014261 
+	random = no
+	country = SIB
+
+	name = "8014261NAME"
+	desc = "8014261DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action_a = { # Recognize their claims
+		name = "8014261A"
+        ai_chance = 50
+        command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014262 }
+	}
+	    action_b = { # Request our rightfull lands
+		name = "8014261B" 
+		ai_chance = 50
+        command = { type = dissent value = -3 }
+		command = { type = trigger which = 8014263 }
+        command = { type = addcore which = 1119 }
+        command = { type = addcore which = 1167 }
+        command = { type = addcore which = 1162 }
+	}
+}
+
+event = { # Dhzanov-Mongol Alliance
+	id = 8014262 
+	random = no
+	country = MON
+
+	name = "8014262NAME"
+	desc = "8014262DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = 1 }
+		command = { type = alliance which = SIB }
+		command = { type = relation which = SIB value = 200 }				
+        command = { type = addcore which = 1119 }
+        command = { type = addcore which = 1167 }
+        command = { type = addcore which = 1162 }
+	}
+}
+
+event = { # Alliance for Offers
+	id = 8014263 
+	random = no
+	country = MON
+
+	name = "8014263NAME"
+	desc = "8014263DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action_a = { # Accept
+		name = "8014263A"
+        ai_chance = 75
+        command = { type = dissent value = 3 }
+        command = { type = secedeprovince which = SIB value = 1119 when = 1 }
+        command = { type = secedeprovince which = SIB value = 1167 when = 1 }
+        command = { type = secedeprovince which = SIB value = 1162 when = 1 }
+		command = { type = alliance which = SIB }	
+		command = { type = relation which = SIB value = 200 }		
+
+	}
+	    action_b = { # No way!
+		name = "8014263B" 
+		ai_chance = 25
+        command = { type = dissent value = 3 }
+		command = { type = trigger which = 8014264 }
+	}
+}
+
+event = { # Dzhanov Reply
+	id = 8014264 
+	random = no
+	country = SIB
+
+	name = "8014264NAME"
+	desc = "8014264DESC" 
+	style = 2
+	picture = "mongolia"
+
+
+	    action_a = { # Let Them Have It
+		name = "8014264A"
+        ai_chance = 1
+        command = { type = dissent value = 3 }
+		command = { type = alliance which = MON }
+		command = { type = relation which = MON value = 200 }		
+
+	}
+	    action_b = { # WAR!
+		name = "8014264B" 
+		ai_chance = 99
+        command = { type = dissent value = -3 }
+		command = { type = war which = MON }	
+	}
+}
+
+event = { # What to do about Mongols
+	id = 8014271
+	random = no
+	country = SIB
+
+	name = "8014271NAME"
+	desc = "8014271DESC" 
+	style = 2
+	picture = "mongolia"
+
+	    action_a = { 
+		name = "8014271A"
+        ai_chance = 75
+        command = { type = dissent value = 5 }
+		command = { type = war which = MON }	
+        command = { type = addcore which = 1119 }
+        command = { type = addcore which = 1167 }
+        command = { type = addcore which = 1162 }
+	}
+	    action_b = { 
+		name = "8014271B"
+        ai_chance = 25
+        command = { type = dissent value = 1 }
+	}
+}
+
+
+
+
+event = { # War Siberia-Soviet Union
+	id = 8014270 
+	random = no
+	country = SIB
+	
+	#trigger = {
+	#	event = 8014266		
+	#}
+
+	name = "It's time to make the Soviet Union on the correct way"
+	desc = "It's time to make the Soviet Union on the correct way" 
+	style = 2
+	picture = "nwo\succession_of_stalin"
+	
+#date = { day = 1 month = january year = 1948 }
+#	offset = 7
+#	deathdate = { day = 12 month = march year = 1966 }
+	
+	    action = { 
+		name = "Damn!"
+		command = { type = 	end_non_aggression which = SOV where = SIB }
+        command = { type = war which = SOV }
+	}
+}
+event = { # Dzhanov Influences
+	id = 8014279
+	random = no
+	country = SOV
+    persistent = yes
+	
+	trigger = {
+    war = { country = SOV country = SIB }
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	name = "Dzhanov Influences"
+	desc = "Dzhanov's alternative, more democratic form of Communism has attracted some support within the Soviet Union. Perhaps we should check our ranks more often.." 
+	style = 2
+	picture = "nwo\succession_of_stalin"
+	
+	    action = { 
+		name = "Damn!"
+        command = { type = dissent value = 1 }
+        command = { type = switch_allegiance which = -1 where = SIB }
+	}
+}
+event = { # Tsarist Influences
+	id = 8014272 
+	random = no
+	country = SOV
+    persistent = yes
+
+	trigger = {
+    war = { country = SOV country = U59 }
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Tsarist Influences"
+	desc = "Even after all the Soviet purges and propaganda, there are still conservative elements loyal to the Tsar. Perhaps we should check our ranks more often.." 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Damn!"
+        command = { type = dissent value = 1 }
+        command = { type = switch_allegiance which = -1 where = U59 }
+	}
+}
+
+event = { # Romanov Defeat - Soviet
+	id = 8014274
+	random = no
+	country = SOV
+
+	trigger = {
+    war = { country = SOV country = U59 }
+	control = { province = 1142 data = SOV } # Novo
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Tsarist Defeat"
+	desc = "We have marched into Novobirsk and executed the fake Tsarina. Long live Bolshevism!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = U59 value = 1 }
+	}
+}
+
+event = { # Dzhanov Defeat - Soviet
+	id = 8014280 
+	random = no
+	country = SOV
+    save_date = yes
+
+	trigger = {
+    war = { country = SOV country = SIB }
+	control = { province = 1157 data = SOV } # Kansk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of Zhdanov"
+	desc = "We have marched into Kansk, executed Zhdanov and abolished the fake Siberian autority. Long live Bolshevism!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SIB value = 1 }
+	}
+}
+
+event = { # Mongolia defeated - Soviet
+	id = 8014288
+	random = no
+	country = SOV
+    save_date = yes
+
+	name = "Fate of Mongolia"
+	desc = "Now that we've regained our influence in the area we can again decide exactly what's going to happen with the Mongolia. Can either be integrated within the USSR as a Soviet Republic, our puppet once again." 
+	style = 2
+	picture = "east_turkestan"
+	
+    trigger = {
+		control = { province = 1124 data = SOV } # Ulan Bator
+		NOT = { exists = MON } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action_a = { 
+	name = "Integrate as Mongolia SSR" 
+	ai_chance = 50
+	command = { type = dissent value = 3 }
+	command = { type = relation which = CHI value = -15 }	
+	command = { type = relation which = CHC value = -15 }	
+	command = { type = addclaim which = 1120 }
+	command = { type = addclaim which = 1124 }
+	command = { type = addclaim which = 1125 }	
+	command = { type = addclaim which = 1123 }	
+	command = { type = addclaim which = 1121 }
+	command = { type = addclaim which = 1122 }	
+}
+action_b = { 
+	name = "Reinstall a puppet government"
+	ai_chance = 50
+	command = { type = dissent value = -3 }
+	command = { type = independence which = MON value = 1 } 
+	command = { type = make_puppet which = MON }
+	command = { type = relation which = CHI value = -25 }	
+	command = { type = relation which = CHC value = -25 }
+	command = { type = sleepevent which = 8014289 }
+}	
+}
+
+event = { # Integration of Mongolia SSR
+	id = 8014289
+	random = no
+	country = SOV
+
+	name = "Integration of Mongolia SSR"
+	desc = "Now they are completely part of Soviet Union !" 
+	style = 2
+	picture = "sinkiang"
+	
+    trigger = {
+		event = { id = 8014288 days = 180 } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action = { 
+	name = "Hurrah !" 
+		command = { type = addcore which = 1120 }
+		command = { type = addcore which = 1124 }
+		command = { type = addcore which = 1125 }	
+		command = { type = addcore which = 1123 }	
+		command = { type = addcore which = 1121 }
+		command = { type = addcore which = 1122 }	
+	}
+}
+
+event = { # Soviet Defeat - Romanov
+	id = 8014277 
+	random = no
+	country = U59
+
+	trigger = {
+    war = { country = U59 country = SOV }
+	control = { province = 1138 data = U59 } # Omsk
+	control = { province = 1137 data = U59 } # Kurgan
+	control = { province = 1132 data = U59 } # Cheylabisk
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of the Soviets"
+	desc = "We have marched into Omsk and abolished the crumbling Soviet Union. Long live the Tsarina!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SOV value = 1 }
+	}
+}
+event = { # Soviet Defeat - Dzhanov
+	id = 8014278
+	random = no
+	country = SIB
+
+	trigger = {
+    war = { country = SIB country = SOV }
+	control = { province = 1138 data = SIB }
+	control = { province = 1137 data = SIB }
+	control = { province = 1132 data = SIB }	
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "Defeat of the Soviets"
+	desc = "We have marched into Omsk and abolished the crumbling Soviet Union. Long live Zhdanov!" 
+	style = 2
+	picture = "Empire_Of_Russia"
+	
+	    action = { 
+		name = "Okay!"
+        command = { type = dissent value = -5 }
+	    command = { type = inherit which = SOV value = 1 }
+	}
+}
