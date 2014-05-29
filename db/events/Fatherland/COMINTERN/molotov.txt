@@ -144,14 +144,14 @@ event = {
 	style = 0
 	picture = "soviet_warposter" 
 	action = {
-	ai_chance = 50
+	ai_chance = 90
 		name = "Ok"
 		command = { type = set_relation which = SOV value = 50 }
 		command = { type = trigger which = 8014204 } # 8014204 - La Siberia ha accettato la nostra proposta	
 	}
 	
 	action = {
-		ai_chance = 50
+		ai_chance = 10
 		name = "NO"
 		command = { type = set_relation which = SOV value = -50 }
 		command = { type = trigger which = 8014205 } # 8014205 - La Siberia ha rifiutato la nostra proposta		
@@ -236,14 +236,14 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
-		ai_chance = 50
+		ai_chance = 90
 		name = "Ok"
 		command = { type = set_relation which = U57 value = 50 }
 		command = { type = trigger which = 8014208 } # 8014208 - Risposta Far East
 	}
 	
 	action = {
-		ai_chance = 50
+		ai_chance = 10
 		name = "Non in questo momento"
 		command = { type = set_relation which = U57 value = -50 }
 	}
@@ -262,14 +262,14 @@ event = {
 	style = 0
 	picture = "soviet_warposter" 
 	action = {
-	ai_chance = 50
+	ai_chance = 80
 		name = "Ok"
 		command = { type = set_relation which = SOV value = 50 }
 		command = { type = trigger which = 8014209 } # 8014204 - La FAR ha accettato la nostra proposta	
 	}
 	
 	action = {
-		ai_chance = 50
+		ai_chance = 20
 		name = "NO"
 		command = { type = set_relation which = SOV value = -50 }
 		command = { type = trigger which = 8014210 } # 8014205 - La FAR ha rifiutato la nostra proposta			

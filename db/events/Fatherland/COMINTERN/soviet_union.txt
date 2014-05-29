@@ -130,7 +130,7 @@ event = {
 		command = { type = set_domestic which = free_market value = 1 }
 		command = { type = set_domestic which = freedom value = 2 }	
 		command = { type = headofstate which = 30012 } # Vyacheslav Molotov
-		command = { type = headofgovernment which = 30085 } # Georgy M. Malenkov
+		command = { type = headofgovernment which = 30016 } # Vyacheslav Molotov	
 	}
 	action = {
 		name = "8014266B" # Beria (Stalinist)
@@ -155,7 +155,7 @@ event = {
 		command = { type = set_domestic which = political_left value = 8 }
 		command = { type = set_domestic which = free_market value = 1 }
 		command = { type = set_domestic which = freedom value = 1 }
-		command = { type = headofstate which = 30077 } # Voroshilov
+		command = { type = headofstate which = 30154 } # Zhukov
 		command = { type = headofgovernment which = 30153 } # Zhukov
 	}
 }
