@@ -3,6 +3,8 @@
 # ##########################
 # 8014250 - The Sleeping Bear, 1948
 # 8014290 - A Gold opportunity
+# 8014291 - 1st May
+# 8014292 - Anniversary of October's Revolution
 
 # ##########################
 # ## Round III - Soviet Leadership Crisis
@@ -334,3 +336,42 @@ event = {
 		command = { type = sleepminister which = 30094 }   		
 	}
 }
+
+event = {
+	id = 8014291
+	random = no
+	country = SOV
+	
+	date = { day = 1 month = may year = 1950 }
+	
+	name = "1st May of a new decade"
+	desc = "Un grand défilé est organisé pour le 1er mai. Les travailleurs, les jeunesses communistes et les militaires défilent en une grande procession colorée devant les leaders du parti communiste."
+	style = 0
+	picture = "mai_1"
+	action = {
+		name = "OK"
+		command = { type = money value = -50 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+# 8014292 - Anniversary of October's Revolution
+event = {
+	id = 8014292
+	random = no
+	country = SOV
+
+	date = { day = 7 month = november year = 1952 }
+	
+	name = "35 Anniversary of October's Revolution"
+	desc = "C'est le vingtième anniversaire de la révolution d'octobre 1917 qui marque le début du régime bolchevique en Russie. Dans la nuit du 24 au 25 octobre 1917 (dans l'ancien calendrier tsariste, ce qui correspond à la nuit du 6 au 7 novembre), Lénine et Trotsky lancent une insurrection à Petrograd (Saint-Pétersbourg) qui débute par la prise du Palais d'Hiver."
+	style = 0
+	picture = "news_paper"
+	action = {
+		name = "OK"
+		command = { type = dissent value = -1 } 
+		command = { type = money value = -100 } 
+		}
+	}
+	
+	

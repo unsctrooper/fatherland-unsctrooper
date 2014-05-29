@@ -1,6 +1,194 @@
-#Beria al potere
-#Guerra con Siberia
-	#Riorganizzazione dell'esercito
-	#Riorganizzazione polizia segreta
-	#Riorganizzazione dell'economia	
-	#Politica estera isolazionista
+# ##########################
+# Beria by Pako
+# ##########################
+
+# 8014100 - Beria take the power - v
+
+# 8014101 - Il culto della personalità
+# 8014102 - Esecuzione di spie britanniche
+# 8014103 - Esecuzione di spie britanniche - Reazione britannica
+# 8014104 - Embargo britannico	
+# 8014105 - Goulag reopened
+# 8014106 - Reorganization of NKVD
+	
+	
+	
+# 8014100 - Beria take the power
+event = {
+	id = 8014100
+	random = no
+	country = SOV 
+	trigger = { 
+		headofstate = 30152 # Beria
+		headofgovernment = 30017 # Beria
+		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
+		event = 8014268 # Soviet Union - 8014269 - Purges (Zhukov)
+	} 
+	name = "Beria take the power"
+	desc = "Moving inside the Communist Party of Soviet Union Molotov take the full power taking with his men the main places in the Party's burocracy. Beria is proclamed as the legitimate successor of Stalin."
+	style = 0
+	picture = "spread_revolution" 
+	date = { day = 1 month = january year = 1949 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "Ok"
+		command = { type = belligerence value = 3 }		
+		
+        command = { type = dissent value = 5 }
+		
+		command = { type = manpowerpool value = 50 }
+		
+		command = { type = peacetime_ic_mod value = 7 }		
+        command = { type = tc_mod value = 3 }		
+        command = { type = research_mod value = 7 }			
+		#	type = 	set_domestic which = [domestic policy type] value = X	
+		# [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism]
+		
+		# type = steal_tech which = [country tag/-1]		
+		command = { type = ambush value = 3 }
+		
+		command = { type = intelligence value = 5 } 
+		
+		command = { type = morale which = land value = 1 }
+	}
+}
+
+# 8014101 - Il culto della personalità
+event = {
+	id = 8014101
+	random = no
+	country = SOV
+	trigger = { 
+		atwar = no
+		headofstate = 30152 # Beria
+		headofgovernment = 30017 # Beria
+	}
+	name = "Le culte de la personnalité"
+	desc = "Staline prend un pouvoir personnel de plus en plus important, au détriment du Parti et a la grande inquiétude des vétérans de la révolution. Il encourage le culte de sa personnalité. Des portraits géants de Staline sont affichés dans toutes les endroits publics, la presse et des films célèbrent son infaillibilité et son génie."
+	style = 0
+	picture = "tannu_tuva"
+	date = { day = 15 month = february year = 1949 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1965 }
+	action = {
+		name = "Le petit père du peuple" 
+		command = { type = dissent value = -1 } # au lieu de 3 (Gerd)
+		command = { type = money value = -100 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+# 8014102 - Esecuzione di spie britanniche
+event = {
+	id = 8014102
+	random = no
+	country = SOV
+	trigger = {
+		atwar = no
+		headofstate = 30152 # Beria
+		headofgovernment = 30017 # Beria
+		exists = ENG
+	}
+	date = { day = 15 month = february year = 1949 }
+	offset = 35
+	deathdate = { day = 1 month = january year = 1965 }
+	name = "Le procès des espions britanniques"
+	desc = "A Moscou, s'ouvre le procès des 'espions britanniques', 6 ingénieurs de Métro-Vickers qui travaillaient sur un chantier en Oural. Coupables de sabotages et d'espionnage, l'un fut acquitté, deux firent 5 ans de prison, trois seront déportés en Sibérie. Allons-nous les juger ? Cela risque d'altérer nos relations avec l'Angleterre mais cela peut aussi faire un bon coup de propagande stigmatisant le capitalisme étranger."
+	style = 0
+	picture = "news_paper"
+	action_a = {	
+		name = "Un complot du capitalisme international"
+      	command = { type = dissent value = -1 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = trigger which = 8014103 }
+	}
+	}
+	
+# 8014103 - Esecuzione di spie britanniche - Reazione britannica
+event = {
+	id = 8014103
+	random = no
+	country = ENG
+	name = "Le procès des espions britanniques"
+	desc = "A Moscou, s'ouvre le procès des 'espions britanniques', 6 ingénieurs de Métro-Vickers qui travaillaient sur un chantier en Oural. Coupables de sabotages et d'espionnage, l'un fut acquitté, deux firent 5 ans de prison, trois iront faire un voyage en Sibérie. Notre gouvernement décide de réagir en décrétant un embargo sur les échanges commerciaux avec l'URSS."
+	style = 0	
+	picture = "news_paper"
+	action_a = {
+		name = "Appliquons un embargo"
+		command = { type = relation which = SOV value = -20 }
+		command = { type = end_trades which = ENG where = SOV }
+		command = { type = trigger which = 8014104 }
+		}
+	}
+# 8014104 - Embargo britannico
+event = {
+	id = 8014104
+	random = no
+	country = SOV
+	name = "Embargo britannique contre l'URSS"
+	desc = "En représailles contre la condamnation de ses ingénieurs, le gouvernement britannique vient de décréter un embargo contre nous. Tous nos échanges commerciaux avec la Grande-Bretagne sont annulés."
+	style = 0
+	picture = "flag_uk"
+	action_a = {	
+		name = "Les capitalistes ne perdent rien pour attendre"
+		command = { }
+	}
+	}
+
+	# 8014105 - Goulag reopened
+event = {
+	id = 8014105
+	random = no
+	country = SOV
+	trigger = {
+		atwar = no
+		headofstate = 30152 # Beria
+		headofgovernment = 30017 # Beria
+	}
+	date = { day = 15 month = february year = 1949 }
+	offset = 50
+	deathdate = { day = 1 month = january year = 1965 }
+	name = "Goulag reopened"
+	desc = "Goulag était l’abréviation de la direction des camps de travaux forcés et de rééducation idéologique, un département de la police secrète. Créé dans les années 20 par Lénine, le système atteint son apogée sous Staline avec plus de 476 complexes installés en Sibérie et en Asie centrale. Ces camps regroupaient des prisonniers de droit commun et des opposants politiques. Les prisonniers construirent plusieurs voies ferrées dans les régions arctiques, dont la ligne Kotlas Vorkuta."
+	style = 0
+	picture = "goulag"
+	action_a = {
+		name = "Le taux de mortalité y était très élevé..."
+		command = { type = money value = -200 }
+		command = { type = construct which = infrastructure where = 1155 value = 40 } # Norilsk
+		command = { type = construct which = ic where = 1155 value = 2 }
+		command = { type = dissent value = -2 } 
+		}
+}
+	# 8014106 - Reorganization of NKVD
+	event = {
+	id = 8014106
+	random = no
+	country = SOV
+	trigger = {
+		atwar = no
+		headofstate = 30152 # Beria
+		headofgovernment = 30017 # Beria2
+	}
+	name = "Le N.K.V.D renforce sa position" 
+	desc = "Sous la tutelle de Staline, Lavrenti Beria qui contrôle le N.K.V.D d'une main de fer réussit à mettre en place diverses mesures telles que le fait de haute-trahison en cas de recul face aux ennemis."
+	style = 0 
+	picture = "Beria"
+	date = { day = 15 month = february year = 1949 }
+	offset = 50
+	deathdate = { day = 1 month = january year = 1965 }
+	action = { 
+		name = "Cette stratégie n'a aucun sens mais si Staline le dit..."
+		command = { type = intelligence which = SOV value = 10 } # Modifier in percents		
+		command = {  type = max_organization which = infantry value = -3  }
+		command = {  type = max_organization which = garrison value = 2  }
+		command = {  type = max_organization which = militia value = 5  }
+		command = {  type = max_organization which = mechanized value = -3  }
+		command = {  type = max_organization which = light_armor value = -3  }
+		command = {  type = max_organization which = armor value = -3  }
+		command = {  type = max_organization which = motorized value = -3  }
+		command = {  type = max_organization which = cavalry value = -3  }
+ 	}
+}

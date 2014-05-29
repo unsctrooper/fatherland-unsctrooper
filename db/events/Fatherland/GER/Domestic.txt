@@ -14,6 +14,7 @@ desc = "2000DESC"
 action_a = {
 name = "2000A"
 command = { type = event which = 2001 where = GER when = 1 }
+command = { type = ai_prepare_war which = SOV }
 }
 }
 

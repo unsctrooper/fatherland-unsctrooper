@@ -1,7 +1,8 @@
 # ##########################
 # Zhukov by Pako
 # ##########################
-# 8014230 - Zhukov
+# 8014230 - Zhukov take the power - v
+
 # 8014231 - Riorganizzazione dell'esercito
 
 # 8014232 - Rapporti con la Siberia
@@ -24,24 +25,25 @@
 # 8014246 - Total support (CHC) - Alliance
 # 8014247 - No support (CHC)	
 
-#Scontri con Cosacchi
-#Afghanistan
-#Vietnam
-#Supporto RAU
+# todo
+# Scontri con Cosacchi
+# Afghanistan
+# Vietnam
+# Supporto RAU
 
-# 8014230 - Zhukov
+# 8014230 - Zhukov take the power
 event = {
 	id = 8014230
 	random = no
 	country = SOV 
 	trigger = { 
-		headofstate = 30077 # Voroshilov
+		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
 		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
 		event = 8014269 # Soviet Union - 8014269 - Purges (Zhukov)
 	} 
-	name = "Zhukov prende il potere"
-	desc = "L'armata rossa prende il controllo della situazione"
+	name = "Zhukov take the power"
+	desc = "There are too many problems inside the Party. The politcal are over, now is the time of Red Army and of his great commander in chief, Zhukov !"
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -50,10 +52,25 @@ event = {
 
 	action = {
 		name = "Ok"
-        command = { type = dissent value = -5 }
-		command = { type = ground_def_eff value = 0.5 } # da rivedere
+		command = { type = belligerence value = 5 }	
+		
+		command = { type = dissent value = 1 }
+				
+		command = { type = manpowerpool value = 75 }
+		
+		command = { type = peacetime_ic_mod value = 3 }		
+        command = { type = tc_mod value = 7 }		
+        command = { type = research_mod value = 3 }		
+		
+		command = { type = ground_def_eff value = 1.5 }
 		command = { type = max_organization which = land value = 5 }
 		command = { type = morale which = land value = 5 }
+		
+		command = { type = assault value = 3 }
+		
+		command = { type = intelligence value = 3 } 
+		
+		
 	}
 }
 
@@ -63,7 +80,7 @@ event = {
 	random = no
 	country = SOV 
 	trigger = { 
-		headofstate = 30077 # Voroshilov
+		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
 		event = 8014230 # 8014230 - Zhukov al potere
 	} 
@@ -99,7 +116,7 @@ id = 8014232
 random = no
 country = SOV 
 trigger = {  
-		headofstate = 30077 # Voroshilov
+		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
 		event = 8014231 # 8014231 - Riorganizzazione dell'esercito
 } 
@@ -226,7 +243,7 @@ id = 8014237
 random = no
 country = SOV 
 trigger = {  
-		headofstate = 30077 # Voroshilov
+		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
 		event = 8014233 # 8014233 - Risposta della Siberia
 } 
@@ -352,7 +369,7 @@ event = {
 	random = no
 	country = SOV 
 	trigger = { 
-		headofstate = 30077 # Voroshilov
+		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
 		event = 8014238 # 8014238 - Risposta FER all'invito Sovietico
 	} 
@@ -383,7 +400,7 @@ event = {
 
 	trigger = {
 		war = { country = CHI country = CHC }
-		headofstate = 30077 # Voroshilov
+		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
 		event = 8014242 # 8014238 - # 8014242 - Dovere dell'Armata Rossa supportare i comunisti nel mondo
 

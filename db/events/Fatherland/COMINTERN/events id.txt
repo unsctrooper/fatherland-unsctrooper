@@ -61,3 +61,30 @@
 # 8014283 - SOV - Conference of Tokyo - Offer I
 # 8014284 - SOV - Conference of Tokyo - Offer II
 # 8014285 - USA - What to do with the Sakhalin Islands?
+
+# ##########################
+# Zhukov by Pako
+# ##########################
+# 8014230 - Zhukov
+# 8014231 - Riorganizzazione dell'esercito
+
+# 8014232 - Rapporti con la Siberia
+# 8014233 - Risposta Siberia all'invito Sovietico
+# 8014234 - La Siberia ha accettato la nostra proposta
+# 8014235 - La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !
+# 8014236 - La Siberia preferisce una alleanza ma restando autonoma
+
+# 8014237 - Far Eastern Republic
+# 8014238 - Risposta FER all'invito Sovietico
+# 8014239 - La FER ha accettato la nostra proposta
+# 8014240 - La FERha rifiutato la nostra proposta e ci ha dichiarato guerra !
+# 8014241 - La FER preferisce una alleanza ma restando autonoma
+
+# 8014242 - Dovere dell'Armata Rossa supportare i comunisti nel mondo
+
+# 8014243 - Soviet support in Chinese Civil War (SOV)
+# 8014244 - Considerable support (CHC)
+# 8014245 - Limited support (CHC)	
+# 8014246 - Total support (CHC) - Alliance
+# 8014247 - No support (CHC)	
+

@@ -19,7 +19,7 @@ event = { # trigger by 90000516 GER
 		command = { type = sleepminister which = 1105009 }
 		command = { type = sleepminister which = 1105010 }
 		# Heydrich All
-		command = { type = headofstate which = 1105011 }
+		command = { type = headofstate which = 1105016 }
 		command = { type = chiefofstaff which = 1105012 }		
 		command = { type = chiefofarmy which = 1105013 }	
 		command = { type = chiefofnavy which = 1105014 }		

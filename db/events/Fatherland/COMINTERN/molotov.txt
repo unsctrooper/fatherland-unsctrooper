@@ -1,7 +1,8 @@
 # ##########################
 # Molotov by Pako
 # ##########################
-# 8014200 - Molotov
+# 8014200 - Molotov take the power - v
+
 
 # 8014201 - Congresso del PCUS
 # 8014202 - Rapporti con la Siberia
@@ -32,30 +33,43 @@
 
 
 
-# 8014200 - Molotov
+# 8014200 - Molotov take the power
 event = {
 	id = 8014200
 	random = no
 	country = SOV 
 	trigger = { 
 		headofstate = 30012 # Molotov
-		headofgovernment = 30085 # Malenkov
+		headofgovernment = 30016 # Molotov
 		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
 		event = 8014267 # Soviet Union - 8014267 - Purges (Molotov)
 	} 
-	name = "Molotov prende il potere"
-	desc = "Molotov al potere, diplomazia e riorganizzazione statale e congresso PCUS da tenere entro 1 mese" #
+	name = "Molotov take the power"
+	desc = "Moving inside the Communist Party of Soviet Union Molotov take the full power taking with his men the main places in the Party's burocracy. His first announce is a call of a Party Congress in 1 month from today."
 	style = 0
-	picture = "soviet_warposter" 
+	picture = "Mol_Rib" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 5
 	deathdate = { day = 12 month = march year = 1966 }
 
 	action = {
 		name = "Ok"
-        command = { type = dissent value = -5 }
-		command = { type = ground_def_eff value = 0.5 } # da rivedere
-		command = { type = max_organization which = land value = 5 }
+		command = { type = belligerence value = -1 }
+		
+        command = { type = dissent value = 2 }
+		
+		command = { type = manpowerpool value = 25 }
+		#	type = 	set_domestic which = [domestic policy type] value = X	
+		# [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism]
+		
+		command = { type = peacetime_ic_mod value = 5 }
+        command = { type = tc_mod value = 5 }		
+        command = { type = research_mod value = 5 }		
+		
+		command = { type = delay value = 3 }
+		
+		command = { type = intelligence value = 1 }
+		
 		command = { type = morale which = land value = 5 }
 	}
 }
@@ -67,7 +81,7 @@ event = {
 	country = SOV 
 	trigger = {  
 		headofstate = 30012 # Molotov
-		headofgovernment = 30085 # Malenkov
+		headofgovernment = 30016 # Molotov
 		event = 8014200 # 8014200 - Molotov
 	} 
 	
@@ -93,7 +107,7 @@ random = no
 country = SOV 
 trigger = {  
 		headofstate = 30012 # Molotov
-		headofgovernment = 30085 # Malenkov
+		headofgovernment = 30016 # Molotov
 		event = 8014201 # 8014200 - Molotov
 } 
 name = "L'unione Sovietica e la Siberia"
@@ -105,16 +119,17 @@ picture = "soviet_warposter"
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
-		ai_chance = 70
+		ai_chance = 90
 		name = "Ok"
 		command = { type = set_relation which = SIB value = 50 }
 		command = { type = trigger which = 8014203 } # risposta Siberia
 	}
 	
 	action = {
-		ai_chance = 30
-		name = "Non in questo momento"
+		ai_chance = 10
+		name = "Alla guerra !"
 		command = { type = set_relation which = SIB value = -50 }
+		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
 	}
 }
 
