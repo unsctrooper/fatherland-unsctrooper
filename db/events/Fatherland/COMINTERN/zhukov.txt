@@ -70,11 +70,10 @@ event = {
 		
 		command = { type = intelligence value = 3 } 
 		
-		
 	}
 }
 
-# 8014231 - Riorganizzazione dell'esercito
+# 8014231 - Reorganization of the Red Army
 event = {
 	id = 8014231
 	random = no
@@ -82,10 +81,11 @@ event = {
 	trigger = { 
 		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
-		event = 8014230 # 8014230 - Zhukov al potere
+		# event = 8014230 # 8014230 - Zhukov al potere
+		event = { id = 8014230 days = 5  }		
 	} 
-	name = "Riorganizzazione dell'esercito"
-	desc = "Après de longs efforts, l'armée est remise à niveau." 
+	name = "Reorganization of the Red Army"
+	desc = "It's time to made a complete reorganization of the Red Army" 
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -102,6 +102,7 @@ event = {
 		command = { type = max_organization which = armor value = 10  }
 		command = { type = max_organization which = motorized value = 10  }
 		command = { type = max_organization which = cavalry value = 10  }
+		
 	}
 	action = {#KO
 		ai_chance = 10
@@ -118,7 +119,8 @@ country = SOV
 trigger = {  
 		headofstate = 30154 # Zhukov
 		headofgovernment = 30153 # Zhukov
-		event = 8014231 # 8014231 - Riorganizzazione dell'esercito
+		# event = 8014231 # 8014231 - Riorganizzazione dell'esercito
+		event = { id = 8014231 days = 5  }				
 } 
 name = "L'unione Sovietica e la Siberia"
 desc = "Avanziamo una offerat a Dzhanov per tornare pacificamente con noi ?"
@@ -129,16 +131,17 @@ picture = "soviet_warposter"
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
-		ai_chance = 50
+		ai_chance = 60
 		name = "Ok"
 		command = { type = set_relation which = SIB value = 50 }
 		command = { type = trigger which = 8014203 } # risposta Siberia
 	}
 	
 	action = {
-		ai_chance = 50
+		ai_chance = 40
 		name = "Non in questo momento"
 		command = { type = set_relation which = SIB value = -50 }
+		command = { type = trigger which = 8014237 } # Far Eastern Republic		
 	}
 }
 
@@ -190,6 +193,7 @@ event = {
 	action = {
 		name = "Hurrah !"
 		command = { type = dissent value = -1 }
+		command = { type = trigger which = 8014237 } # Far Eastern Republic	
 		# command = { type = trigger which = 8014206 } # 8014206 - Dzhanov annuncia un suo ingresso nel governo	
 	}
 	
@@ -273,7 +277,7 @@ picture = "soviet_warposter"
 event = {
 	id = 8014238
 	random = no
-	country = SIB 
+	country = U57 
 
 	name = "L'unione Sovietica e la FER"
 	desc = "Torniamo sovietici ?"
