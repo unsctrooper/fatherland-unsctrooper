@@ -235,22 +235,6 @@ event = {
 	}
 }
 
-### Germany proposes entry into the Axis
-	
-#	action = {
-#	name = "Accept the German offer and join the Axis."
-#	ai_chance = 10
-#    command = { type = set_domestic which = democratic value = 2 }
-#    command = { type = set_domestic which = political_left value = 3 }
-#    command = { type = set_domestic which = professional_army value = 7 }
-#    command = { type = set_domestic which = interventionism value = 8 }
-#	command = { type = alliance which = GER }
-#	command = { type = relation which = GER value = 50 }
-#	command = { type = dissent value = 10 }
-#	command = { type = setflag which = china_axis }
-#	}
-
-
 ### Germany proposes military cooperation
 
 event = { 
