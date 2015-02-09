@@ -1,216 +1,247 @@
+#####################################
+# Reich Domestic events
+# Review Pako
+#####################################
+# 2000 - The Second World War
+# 2001 - Germany, 1948
+# 2002 - Nazi Order Öst
+# 2003 - Nazi Order West
+# 2004 - Nazi Order Süd
+# 2005 - Nazi Order Nord
+# 2006 - The White Rose Movement
+# 2007 - The White Rose Trial
+# 2008 - The Warsaw Uprising
+# 2009 - The Black Front
+# 999497 - Deutsche SüdameriKakorps
+# 999498 - Deutsche SüdameriKakorps - ARG BRA
+# 999478 - New Enigma Cipher
+# 999484 - Reichsparteitag
+# 999485 - Reichsparteitag organization
+# 999502 - The Fa 223 Drache Helicopter Project
+# 999563 - The 8.8 cm. Flak
+# 999057 - Welthauptstadt Germania
+# 999058 - We have build Welthauptstadt Germania!
+# 999061 - Build up the Flaktürme
+# 999062 - Flaktürme completed!
+# 999063 - Defend the Flanders and RK Netherland Coastline
+# 999064 - A temporary sacrifice - FLA
+# 999065 - A temporary sacrifice - U46
+#####################################
+
 # The Second World War
 event = {
-id = 2000
-country = GER
-random = no
-style = 2
-picture = "nwo/wartime"
+	id = 2000
+	country = GER
+	random = no
+	style = 2
+	picture = "nwo/wartime"
 
-date = { day = 5 month = january year = 1948 }
+	date = { day = 5 month = january year = 1948 }
 
-name = "2000NAME"
-desc = "2000DESC"
+	name = "2000NAME" #The Second World War
+	desc = "2000DESC"
 
-action_a = {
-name = "2000A"
-command = { type = event which = 2001 where = GER when = 1 }
-command = { type = ai_prepare_war which = SOV }
-}
-}
-
-event = {
-id = 2001
-country = GER
-random = no
-style = 2
-picture = "Hitler_Turkey"
-
-name = "2001NAME"
-desc = "2001DESC"
-
-action_a = {
-name = "2000A"
-command = { type = free_ic value = -25 }
-command = { type = event which = 2002 where = GER when = 1 }
-}
+	action_a = {
+		name = "2000A"
+		command = { type = event which = 2001 where = GER when = 1 }
+		command = { type = ai_prepare_war which = SOV }
+	}
 }
 
 event = {
-id = 2002
-country = GER
-random = no
-style = 2
-picture = "nwo/rosenberg_plan"
+	id = 2001
+	country = GER
+	random = no
+	style = 2
+	picture = "Hitler_Turkey"
 
-name = "2006NAME"
-desc = "2006DESC"
+	name = "2001NAME" #Germany, 1948
+	desc = "2001DESC"
 
-action_a = {
-name = "2000A"
-command = { type = free_ic value = -100 }
-command = { type = free_manpower value = -1.5 }
-command = { type = research_mod value = -25 }
-command = { type = tc_mod value = -50 }
-command = { type = event which = 2003 where = GER when = 1 }
+	action_a = {
+		name = "2000A"
+		command = { type = free_ic value = -25 } 
+		command = { type = event which = 2002 where = GER when = 1 }
+	}
 }
+
+event = {
+	id = 2002
+	country = GER
+	random = no
+	style = 2
+	picture = "nwo/rosenberg_plan"
+
+	name = "2006NAME" #Nazi Order Öst
+	desc = "2006DESC"
+
+	action_a = {
+		name = "2000A"
+		command = { type = free_ic value = -100 }
+		command = { type = free_manpower value = -1.5 }
+		command = { type = research_mod value = -25 }
+		command = { type = tc_mod value = -50 }
+		command = { type = event which = 2003 where = GER when = 1 }
+	}
 }
 
 
 event = {
-id = 2003
-country = GER
-random = no
-style = 2
-picture = "Petain"
+	id = 2003
+	country = GER
+	random = no
+	style = 2
+	picture = "Petain"
 
-name = "2003NAME"
-desc = "2003DESC"
+	name = "2003NAME" #Nazi Order West
+	desc = "2003DESC"
 
-action_a = {
-name = "2000A"
-command = { type = peacetime_ic_mod value = 10 }
-command = { type = free_ic value = -25 }
-command = { type = event which = 2004 where = GER when = 1 }
-}
-}
-
-event = {
-id = 2004
-country = GER
-random = no
-style = 2
-picture = "Mussolini"
-
-name = "2004NAME"
-desc = "2004DESC"
-
-action_a = {
-name = "2000A"
-command = { type = free_ic value = -25 }
-command = { type = event which = 2005 where = GER when = 1 }
-}
+	action_a = {
+		name = "2000A"
+		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = free_ic value = -25 }
+		command = { type = event which = 2004 where = GER when = 1 }
+	}
 }
 
 event = {
-id = 2005
-country = GER
-random = no
-style = 2
-picture = "Narvik"
+	id = 2004
+	country = GER
+	random = no
+	style = 2
+	picture = "Mussolini"
 
-name = "2005NAME"
-desc = "2005DESC"
+	name = "2004NAME" #Nazi Order Süd
+	desc = "2004DESC"
 
-action_a = {
-name = "2000A"
-command = { type = free_ic value = -25 }
-}
-}
-
-event = {
-id = 2006
-country = GER
-random = no
-style = 2
-picture = "nwo\coventry_bombing"
-
-trigger = {
-event = 807
-random = 10
-}
-
-date = { day = 1 month = july year = 1948 }
-offset = 7
-deathdate = { day = 12 month = march year = 1966 }
-
-name = "The White Rose Movement"
-desc = "We have strong assumptions to believe that the White Rose Movement, a non-violent, intellectual resistance group of Munchen students, are involved with the recent Allied bombing of our nuclear reactors. In their last leaflet ''Fellow Germans!'', they celebrate the destruction of our weapons of mass destruction, as ''the most contemptible tyrant our people has ever endured'' should never get hold of such weapons."
-
-action_a = {
-name = "Prepare a Crackdown!"
-command = { type = money value = -100 }
-command = { type = supplies value = -1000 } 
-}
+	action_a = {
+		name = "2000A"
+		command = { type = free_ic value = -25 }
+		command = { type = event which = 2005 where = GER when = 1 }
+	}
 }
 
 event = {
-id = 2007
-country = GER
-random = no
-style = 2
-picture = "nwo\coventry_bombing"
+	id = 2005
+	country = GER
+	random = no
+	style = 2
+	picture = "Narvik"
 
-trigger = {
-event = 2006
-random = 10
-}
+	name = "2005NAME" #Nazi Order Nord
+	desc = "2005DESC"
 
-date = { day = 1 month = july year = 1948 }
-offset = 7
-deathdate = { day = 12 month = march year = 1966 }
-
-name = "The White Rose Trial"
-desc = "We have captured several key elements of the White Rose Movement. They have faced trial before the Volksgericht and have been sentenced to immediate death. The convicts have been beheaded by guillotine the same day, but showed resistance to the last minute. One female members reportedly said to the head judge: ''You know as well that this system is never meant to last! Why are you so cowardly that you won't admit it?"
-
-action_a = {
-name = "That's unfortunate"
-command = { type = dissent value = 1 }
-}
+	action_a = {
+	name = "2000A"
+		command = { type = free_ic value = -25 }
+	}
 }
 
 event = {
-id = 2008
-country = GER
-random = no
-style = 2
-picture = "nwo\coventry_cathedral"
+	id = 2006
+	country = GER
+	random = no
+	style = 2
+	picture = "nwo\coventry_bombing"
 
-trigger = {
-event = 90000300
-}
+	trigger = {
+		event = 807
+		random = 10
+	}
 
-date = { day = 1 month = january year = 1948 }
-offset = 7
-deathdate = { day = 12 month = march year = 1966 }
+	date = { day = 1 month = july year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
 
-name = "The Warsaw Uprising"
-desc = "After the Gleischaltung of the General Gouvernement to the growing Third Reich, the Polish made their last attempt to reverse the events of history by rising up in Warschau. The Polish Home Army has been fueled by Catholic resistance, as German anti-clerical policy were the most severe in the former Poland. Resistance leaders have ordered instructions on how troops could continue to pray and celebrate religious festivals."
+	name = "The White Rose Movement"
+	desc = "We have strong assumptions to believe that the White Rose Movement, a non-violent, intellectual resistance group of Munchen students, are involved with the recent Allied bombing of our nuclear reactors. In their last leaflet ''Fellow Germans!'', they celebrate the destruction of our weapons of mass destruction, as ''the most contemptible tyrant our people has ever endured'' should never get hold of such weapons."
 
-action_a = {
-name = "Crackdown!"
-command = { type = dissent value = 3 }
-command = { type = relation which = ITA value = -50 }
-command = { type = relation which = HUN value = -50 }
-command = { type = revolt which = 232 when = 0 } 
-command = { type = revolt which = 232 when = 0 } 
-command = { type = revolt which = 232 when = 0 } 
-}
+	action_a = {
+		name = "Prepare a Crackdown!"
+		command = { type = money value = -100 }
+		command = { type = supplies value = -1000 } 
+	}
 }
 
 event = {
-id = 2009
-country = GER
-random = no
-style = 2
-picture = "reichstag"
+	id = 2007
+	country = GER
+	random = no
+	style = 2
+	picture = "nwo\coventry_bombing"
 
-trigger = {
-flag = GoringGoebbels
-random = 25
+	trigger = {
+		event = 2006
+		random = 10
+	}
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	name = "The White Rose Trial"
+	desc = "We have captured several key elements of the White Rose Movement. They have faced trial before the Volksgericht and have been sentenced to immediate death. The convicts have been beheaded by guillotine the same day, but showed resistance to the last minute. One female members reportedly said to the head judge: ''You know as well that this system is never meant to last! Why are you so cowardly that you won't admit it?"
+
+	action_a = {
+		name = "That's unfortunate"
+		command = { type = dissent value = 1 }
+	}
 }
 
-date = { day = 1 month = january year = 1950 }
-offset = 60
-deathdate = { day = 12 month = march year = 1966 }
+event = {
+	id = 2008
+	country = GER
+	random = no
+	style = 2
+	picture = "nwo\coventry_cathedral"
 
-name = "The Black Front"
-desc = "Otto Strasser, in exile since his brother was killed in 1934, has recently returned to Germany sensing increased political freedom after the death of Hitler. With Albert Speer having more influence than ever, Germany continues to rely on increasingly powerful industrial cooperations. More and more elements of the Nazi Party are attracted to Strasserism, the revived left-wing anti-capitalistic wing of the NSDAP"
+	trigger = {
+		event = 90000300
+	}
 
-action_a = {
-name = "It's just the same as communism.."
-command = { type = dissent value = 3 }
-command = { type = domestic which = free_market value = 1 }
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	name = "The Warsaw Uprising"
+	desc = "After the Gleischaltung of the General Gouvernement to the growing Third Reich, the Polish made their last attempt to reverse the events of history by rising up in Warschau. The Polish Home Army has been fueled by Catholic resistance, as German anti-clerical policy were the most severe in the former Poland. Resistance leaders have ordered instructions on how troops could continue to pray and celebrate religious festivals."
+
+	action_a = {
+		name = "Crackdown!"
+		command = { type = dissent value = 3 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = revolt which = 232 when = 0 } 
+		command = { type = revolt which = 232 when = 0 } 
+		command = { type = revolt which = 232 when = 0 } 
+	}
 }
+
+event = {
+	id = 2009
+	country = GER
+	random = no
+	style = 2
+	picture = "reichstag"
+
+	trigger = {
+		flag = GoringGoebbels
+		random = 25
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 60
+	deathdate = { day = 12 month = march year = 1966 }
+
+	name = "The Black Front"
+	desc = "Otto Strasser, in exile since his brother was killed in 1934, has recently returned to Germany sensing increased political freedom after the death of Hitler. With Albert Speer having more influence than ever, Germany continues to rely on increasingly powerful industrial cooperations. More and more elements of the Nazi Party are attracted to Strasserism, the revived left-wing anti-capitalistic wing of the NSDAP"
+
+	action_a = {
+		name = "It's just the same as communism.."
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = free_market value = 1 }
+	}
 }
 
 event = {
@@ -341,8 +372,8 @@ event = {
 	offset = 30
 	deathdate = { day = 1 month = june year = 1964 }
 
-	name = "Parteitag"
-	desc = "The Nuremberg Rally (officially  Reichsparteitag, meaning Reich party convention) was the annual rally of the Nazi Party in Germany, held from 192. They were large Nazi propaganda events, especially after Hitler's rise to power in 1933. These events were held at the Nazi party rally grounds in Nuremberg from 1933 to 1938 and are usually referred to in English as the Nuremberg Rallies. Many films were made to commemorate them, the most famous of which is Triumph of the Will."
+	name = "Reichsparteitag"
+	desc = "The Nuremberg Rally (officially Reichsparteitag, meaning Reich party convention) was the annual rally of the Nazi Party in Germany, held from 192. They were large Nazi propaganda events, especially after Hitler's rise to power in 1933. These events were held at the Nazi party rally grounds in Nuremberg from 1933 to 1938 and are usually referred to in English as the Nuremberg Rallies. Many films were made to commemorate them, the most famous of which is Triumph of the Will."
 	style = 2
 	picture = "ger_parteitag"
 	action = {
@@ -360,7 +391,7 @@ event = {
 	random = no
 	persistent = yes
 	country = GER
-	name = "Parteitag organization"
+	name = "Reichsparteitag organization"
 	desc = "The time to call the annual Parteitag is coming again!"
 	style = 2
 	picture = "ger_parteitag"
@@ -385,7 +416,7 @@ event = {
 	offset = 5
 	deathdate = { day = 2 month = december year = 1963 }
 
-	name = "The Fa 223 Drache"
+	name = "The Fa 223 Drache Helicopter Project"
 	desc = "The Focke-Achgelis Fa 223 Drache ('Dragon' in English) was a helicopter developed by Germany during World War II. After being forced from Focke-Wulf in 1938, Henrich Focke and test pilot Gerd Achgelis formed a new company, Focke-Achgelis, devoted to developing rotary-winged aircraft. Their first successful prototype, the Fa-223, flew independently on August 3, 1940. The RLM ordered continued development, but the craft was not fully deployable until 1945."
 	style = 2
 	picture = "ger_drache"
@@ -496,7 +527,7 @@ event = {
 	random = no
 	country = GER
 	
-	name = "We constructed Welthauptstadt Germania!"
+	name = "We have build Welthauptstadt Germania!"
 	desc = "It's done! After 4 and a half years of exhausting work, finally the new capital with its oversized buildings is ready. Now all the world shall knee to the German greatness. Congratulations, mein Führer, for this magnificent achievement!" 
 	style = 2
 	picture = "germania2"
@@ -596,7 +627,7 @@ event = {
 	random = no
 	country = GER
 	
-	name = "We build up the Flaktürme!"
+	name = "Flaktürme completed!"
 	desc = "With concrete walls up to 3.5 metres thick, flak towers were considered to be invulnerable to attack with the usual ordnance carried by Allied bombers. The towers were able to sustain a rate of fire of 8000 rounds per minute from their multi-level guns, with a range of up to 14 km in a full 360-degree field of fire. The 3 flak towers around the outskirts of Berlin created a triangle of formidable anti-aircraft fire that covered the centre of Berlin." 
 	style = 2
 	picture = "flaktower"

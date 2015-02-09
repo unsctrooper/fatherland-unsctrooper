@@ -1,3 +1,8 @@
+#####################################
+# Generalgovernment events
+# Review Pako
+#####################################
+# 90000300 - Future of the General Government
 
 event = {
 	id = 90000300
@@ -8,7 +13,7 @@ event = {
 		control = { province = 235 data = U44 }
 	}	
 	
-	name = EVT_90000300_NAME
+	name = EVT_90000300_NAME #Future of the General Government
 	desc = EVT_90000300_DESC
 	style = 2
 	picture = "generalgovernment"	
@@ -49,8 +54,3 @@ event = {
 	command = { type = addcore which = 229 }
 	}
 }
-
-#Extra IC/Infra
-#Warsaw Uprising
-
-

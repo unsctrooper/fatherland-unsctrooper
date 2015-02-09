@@ -1,0 +1,209 @@
+#####################################
+# List of events - GERMANY
+#####################################
+
+#####################################
+# Domestic events
+# Review Pako
+#####################################
+# 2000 - The Second World War
+# 2001 - Germany, 1948
+# 2002 - Nazi Order Öst
+# 2003 - Nazi Order West
+# 2004 - Nazi Order Süd
+# 2005 - Nazi Order Nord
+# 2006 - The White Rose Movement
+# 2007 - The White Rose Trial
+# 2008 - The Warsaw Uprising
+# 2009 - The Black Front
+# 999497 - Deutsche SüdameriKakorps
+# 999498 - Deutsche SüdameriKakorps - ARG BRA
+# 999478 - New Enigma Cipher
+# 999484 - Reichsparteitag
+# 999485 - Reichsparteitag organization
+# 999502 - The Fa 223 Drache Helicopter Project
+# 999563 - The 8.8 cm. Flak
+# 999057 - Welthauptstadt Germania
+# 999058 - We have build Welthauptstadt Germania!
+# 999061 - Build up the Flaktürme
+# 999062 - Flaktürme completed!
+# 999063 - Defend the Flanders and RK Netherland Coastline
+# 999064 - A temporary sacrifice - FLA
+# 999065 - A temporary sacrifice - U46
+#####################################
+
+#####################################
+# Bailout events
+# Review Pako
+#####################################
+# 77000 - We're bleeding dry! - U41 #RK Ukraine
+# 77001 - We're bleeding dry! - U41 #RK Ostland
+# 77002 - We're bleeding dry! - BLR #Belarus
+# 77003 - We're bleeding dry! - BLR #RK Kaukasus
+# 77100 - German reply 
+
+#####################################
+# Generalgovernment events
+# Review Pako
+#####################################
+# 90000300 - Future of the General Government
+
+#####################################
+# German influence
+# Review Pako
+#####################################
+# 2100 - German Military Mission to Arab Countries
+# 2101 - German aid have arrived - ARA
+# 2102 - German aid have arrived - EGY
+# 2103 - German aid have arrived - SYR
+# 2104 - German aid have arrived - PAL
+
+#####################################
+# Ost
+# Review Pako
+#####################################
+# 200 - Generalplan Ost
+# 201 - Ostland
+# 203 - United Ostland - U40
+# 204 - The minorites of Ostland
+# 205 - The Lokot Autonomy and Russia
+# 213 - Ukraine
+# 214 - Self rule of Ukraine - U41
+# 215 - Belarus
+# 216 - The future of Belarus - BLR
+
+#####################################
+# RK Ukraine
+# Review Pako
+#####################################
+# 93000 - The Rations of the War
+# 93001 - The Granary of the Fatherland
+# 93002 - The Granary of the Fatherland - U41
+# 93003 - Burning - U41
+# 93004 - Massacre - U41
+# 93005 - Revolut - U41
+# 93006 - Troubles in Ukraine 
+# 93007 - Large scale revolt - U41
+# 93008 - Assassination attempt on Kommissaris Koch!
+
+#####################################
+# West
+# Review Pako
+#####################################
+# 400 - Generalplan West
+# 401 - Norway
+# 402 - Norwegian Autonomy - U45
+# 403 - Denmark
+# 404 - The Netherlands
+# 405 - Dutch autonomy - U46
+# 406 - Flanders
+# 407 - Wallonia
+# 408 - Brussels 
+# 409 - We've lost our status! - HOL
+# 410 - Future of France
+# 411 - France
+# 412 - The Status of Switzerland
+# 357 - Renewed negotiations with Germany - FRA
+# 358 - Renewed negotiations with Germany
+# 359 - German Refuses! - FRA
+# 360 - Germany's Offer - FRA
+# 362 - The Outcome
+
+#####################################
+# Volksgrenadier
+# Review Pako
+#####################################
+# 90000200 - Volksgrenadier divisions deployed
+# 90000201 - Volksgrenadier divisions deployed
+# 90000202 - Volksgrenadier divisions deployed
+# 90000203 - Volksgrenadier divisions deployed
+# 90000204 - Volksgrenadier divisions deployed
+
+#####################################
+# SS
+# Review Pako
+#####################################
+# 90002000 - Heydrich vs. Himmler - U58
+
+#####################################
+# Kaukasus
+# Review Pako
+#####################################
+# 92000 - Dissent and Riots - U42
+# 92001 - Cechenian uprising - U42
+# 92002 - Georgian Revolts and the declaration of unilateral independence - U42
+# 92003 - Georgian position - GEO
+# 92004 - Armenian revolt  - U42
+# 92005 - Terrorism in RK  - U42
+# 92006 - Is time to reorganize the RK ?  - U42
+# 92007 - Reorganize the RK  - U42
+# 92008 - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact  - U42
+# 92009 - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact
+# 92010 - Reorganize RK - ReichKommissariat Kaukasus and the Cossack Federation - Sochi Pact - TRA
+
+#################################
+### Death of Hitler 
+#################################
+### Round 1 ###
+# 90000500 # GER # Hitler is sick
+# 90000501 # GER # Hitler visits the doctor
+# 90000502 # GER # Hitler dies
+# 90000503 # GER # Bormann realizes the Nazi Senate 
+# 90000504 # GER # Nazi Leadership Convenes
+# 90000505 # GER # Decision of the Wehrmacht
+# 90000506 # GER # The Leadership of Germany
+# 90000507 # GER # The End of Bormann
+# 90000508 # GER # The End of Göring
+# 90000509 # GER # The End of Goebbels
+# 90000510 # GER # The End of Speer
+### Round 2 ###
+# 90000511 # GER # Heydrich in Ukraine
+# 90000512 # GER # Berlin Allies Gauleiters
+# 90000513 # GER # Eva Braun
+# 90000514 # GER # Erwin Rommel
+# 90000515 # GER # Karl Dönitz
+# 90000516 # GER # Heydrich vs. Himmler
+### Round 3 ###
+# 90000517 # GER # Purge SS
+# 90000518 # GER # Success of Purge
+# 90000519 # GER # Heydrich Coup
+# 90000520 # GER # Purge of Anti-SS
+# 90000521 # GER # Ousting of SS
+# 90000522 # GER # Revolt of RK Ukraine
+# 90000523 # U40 # Ostland Leaves Germany
+# 90000524 # SLO # Slovakia Leaves Germany
+# 90000525 # UTC # Lokot Leaves Germany
+# 90000526 # U42 # Kaukusus Leaves Germany
+# 90000527 # UTC # Serbia Leaves Germany
+# 90000528 # U42 # Croatia Leaves Germany
+# 90000529 # GER # Revolt of RK Ukraine
+# 90000530 # U40 # Revolt of RK Ukraine
+# 90000531 # GER # Civil War!
+# 90000532 # U41 # Rosenberg Allies with Germany
+# 90000533 # GER # German Victory
+# 90000534 # FIN # Finland Leaves Axis
+# 90000542 # HUN # Hungary Leaves Axis
+# 90000543 # ROM # Romania Leaves Axis
+### Troubles in the East ###
+# 90000535 # GER # Ostland Occupies North Russia
+# 90000536 # UTC # Conquer Russia
+# 90000537 # GER # Lokot Occupies Russia
+# 90000538 # UTC # Become Russia Once Again
+# 90000539 # SOV # Conquer Russia
+# 90000540 # GER # Soviet Union Occupies Russia
+# 90000541 # TRA # Attack the Kaukusus
+### Troubles in Europe ###
+# 90000544 # SER # Serbia attacks Croatia
+# 90000545 # ITA # Italian Intervention
+# 90000546 # ITA # Take German Greece
+# 90000547 # GER # Italy occupies Greece
+# 90000548 # HUN # Banat
+# 90000549 # ROM # Banat
+# 90000550 # GER # Hungary occupies Banat
+# 90000551 # GER # Romania occupies Banat
+# 90000552 # ROM # Attack Hungary!
+# 90000553 # HUN # Attack Romania!
+# 90000554 # FRA # The Channel Coast
+# 90000555 # GER # France occupies The Channel
+### Aftermath ###
+# 90000556 # GER # Peace in the Fatherland

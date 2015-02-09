@@ -1,3 +1,13 @@
+#####################################
+# Volksgrenadier
+# Review Pako
+#####################################
+# 90000200 - Volksgrenadier divisions deployed
+# 90000201 - Volksgrenadier divisions deployed
+# 90000202 - Volksgrenadier divisions deployed
+# 90000203 - Volksgrenadier divisions deployed
+# 90000204 - Volksgrenadier divisions deployed
+
 event = { # Phase 1
 	id = 90000200
 	random = no

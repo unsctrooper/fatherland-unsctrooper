@@ -1,10 +1,20 @@
-# RK Ukraine ###
-################
+#####################################
+# Reich Bailout events
+# Review Pako
+#####################################
+# 77000 - We're bleeding dry! - U41 #RK Ukraine
+# 77001 - We're bleeding dry! - U41 #RK Ostland
+# 77002 - We're bleeding dry! - BLR #Belarus
+# 77003 - We're bleeding dry! - BLR #RK Kaukasus
+# 77100 - German reply 
 
+##############
+# RK Ukraine #
+##############
 event = {
 id = 77000
 	random = no
-	country = U41	
+	country = U41 
 	style = 2
 	persistent = yes
 	picture = "ProtestAlexanderetta"
@@ -18,8 +28,8 @@ id = 77000
 	
 
 trigger = { 
-NOT = { manpower = 10 } 
-NOT = { army = 30 } 
+		NOT = { manpower = 10 } 
+		NOT = { army = 30 } 
 	}
 
 	action = {
@@ -97,7 +107,7 @@ NOT = { army = 6 }
 }
 
 ############
-# Kakausus #
+# RK Kakausus #
 ############
 
 event = {

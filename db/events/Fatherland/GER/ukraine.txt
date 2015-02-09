@@ -1,5 +1,16 @@
-### RK Ukraine ###
-##################
+#####################################
+# RK Ukraine
+# Review Pako
+#####################################
+# 93000 - The Rations of the War
+# 93001 - The Granary of the Fatherland
+# 93002 - The Granary of the Fatherland - U41
+# 93003 - Burning - U41
+# 93004 - Massacre - U41
+# 93005 - Revolut - U41
+# 93006 - Troubles in Ukraine 
+# 93007 - Large scale revolt - U41
+# 93008 - Assassination attempt on Kommissaris Koch!
 
 event = {
 	id = 93000 # The Rations of the War
@@ -142,7 +153,7 @@ event = {
 	offset = 7
 	deathdate = { day = 30 month = december year = 1963 }
 		
-	name = "Revolution!"
+	name = "Revolts!"
 	desc = "The attempts by Berlin to pacify Ukraine have turned out to be counterproductive. The recent tensions have led to a large scale revolt which threaten to overthrow the Reichskommissariat!"	
 	style = 2
 	picture = "nwo\rosenberg_plan"	
@@ -168,7 +179,7 @@ event = {
 	random = no
 	country = GER
 		
-	name = "The Troubles in Ukraine"
+	name = "Troubles in Ukraine"
 	desc = "Hitler's envisioned Ukraine, one that'd fulfill the Fatherland of all his needs seems to be unviable. Currently, the Reichskommissariat Ukraine is in near anarchy and Ukrainian resistance groups endanger to overthrow our authority there. Mein Führer, what should we do?"	
 	style = 2
 	picture = "nwo\rosenberg_plan"	
@@ -194,7 +205,7 @@ event = {
 	random = no
 	country = U41	
 	
-	name = "Revolution!"
+	name = "Large Scale Revolt!"
 	desc = "The attempts by Berlin to pacify Ukraine have turned out to be counterproductive. The recent tensions have led to a large scale revolt which threaten to overthrow the Reichskommissariat!"	
 	style = 2
 	picture = "nwo\rosenberg_plan"	

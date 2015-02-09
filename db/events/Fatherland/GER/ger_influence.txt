@@ -1,8 +1,13 @@
-### 2100  GER  German Military Mission to Arab Countries
-### 2101  ARA  The Germans arrived!
-### 2102  EGY  The Germans arrived!
-### 2103  SYR  The Germans arrived!
-### 2104  PAL  The Germans arrived!
+#####################################
+# German influence
+# Review Pako
+#####################################
+# 2100 - German Military Mission to Arab Countries
+# 2101 - German aid have arrived - ARA
+# 2102 - German aid have arrived - EGY
+# 2103 - German aid have arrived - SYR
+# 2104 - German aid have arrived - PAL
+
 #########################################################################
 #  German Military Mission to Arab Countries
 #########################################################################
@@ -148,7 +153,7 @@ event = {
 	country = ARA
 
 
-	name = "The Germans arrived!"
+	name = "German aid have arrived"
 	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
 	style = 2
 	picture = "Condor_Legion"
@@ -179,7 +184,7 @@ event = {
 	country = EGY
 
 
-	name = "The Germans arrived!"
+	name = "German aid have arrived"
 	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
 	style = 2
 	picture = "Condor_Legion"
@@ -216,7 +221,7 @@ event = {
 	country = SYR
 
 
-	name = "The Germans arrived!"
+	name = "German aid have arrived"
 	desc = "Germany will now help us to develop our armies. Get ride of the English and French colonials!"
 	style = 2
 	picture = "Condor_Legion"

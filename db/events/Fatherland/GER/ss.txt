@@ -1,4 +1,9 @@
-# 90001000 # GER # Heydrich Eliminates Himmler
+#####################################
+# SS
+# Review Pako
+#####################################
+# 90002000 - Heydrich vs. Himmler - U58
+
 event = { # trigger by 90000516 GER
 	id = 90002000
 	country = U58

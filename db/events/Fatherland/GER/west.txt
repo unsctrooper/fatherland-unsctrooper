@@ -1,5 +1,26 @@
-### Generalplan West - Reorganisation after Hitler's Death ###
-##############################################################
+#####################################
+# West
+# Review Pako
+#####################################
+# 400 - Generalplan West
+# 401 - Norway
+# 402 - Norwegian Autonomy - U45
+# 403 - Denmark
+# 404 - The Netherlands
+# 405 - Dutch autonomy - U46
+# 406 - Flanders
+# 407 - Wallonia
+# 408 - Brussels 
+# 409 - We've lost our status! - HOL
+# 410 - Future of France
+# 411 - France
+# 412 - The Status of Switzerland
+# 357 - Renewed negotiations with Germany - FRA
+# 358 - Renewed negotiations with Germany
+# 359 - German Refuses! - FRA
+# 360 - Germany's Offer - FRA
+# 362 - The Outcome
+
 event = {
 	id = 400
 	random = no

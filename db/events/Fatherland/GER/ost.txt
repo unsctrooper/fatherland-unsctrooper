@@ -1,3 +1,17 @@
+#####################################
+# Ost
+# Review Pako
+#####################################
+# 200 - Generalplan Ost
+# 201 - Ostland
+# 203 - United Ostland - U40
+# 204 - The minorites of Ostland
+# 205 - The Lokot Autonomy and Russia
+# 213 - Ukraine
+# 214 - Self rule of Ukraine - U41
+# 215 - Belarus
+# 216 - The future of Belarus - BLR
+
 event = {
 	id = 200
 	random = no
