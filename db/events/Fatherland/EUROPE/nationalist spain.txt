@@ -1,37 +1,1291 @@
+#####################################
+# Spain events
+# Review Pako
+# 
+#####################################
 
+# 189057 - Economic reforms - Creation of S.N.T
+# 189058 - Economic reforms - Create the I.N.I.
+
+##############################################################################
+# Economic reforms
+##############################################################################
 event = {
-	id = 8014301
+	id = 189057
+	random = no
 	country = SPA
-
-	name = EVT_GOVTCHANGE_NAME
-	desc = EVT_GOVTCHANGE_DESC
-	picture = "nwo\govt_change"
-	style = 1
-
 	trigger = {
-		OR = {
-			government = democratic
-			government = communist
-		}
+		exists = SPA
 	}
-
-	date = { day = 0 month = january year = 1945 }
-	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
-
-	action = {
-		name = OK
-		ai_chance = 100
-		command = { type = headofstate which = 35011 } # Francisco Franco Bahamonde
-		command = { type = headofgovernment which = 35016 } # Francisco Franco Bahamonde
-		command = { type = foreignminister which = 35026 } # Alberto M. Artejo-?lvarez
-		command = { type = armamentminister which = 35056 } # Jos? Mar?a Lammami?
-		command = { type = ministerofsecurity which = 35090 } # Raimundo Fern?ndez Cuesta
-		command = { type = ministerofintelligence which = 35109 } # On?simo Redondo Ortega
-		command = { type = chiefofstaff which = 35120 } # Carlos Asensio Cabanillas
-		command = { type = chiefofarmy which = 35143 } # Antonio Aranda Mata
-		command = { type = chiefofnavy which = 35152 } # Tom?s Dom?nguez Ar?valo
-		command = { type = chiefofair which = 35169 } # Francisco Reglado Rodr?guez
+	name = "Economic reforms - Create the S.N.T"
+	desc = "The S.N.T (Service Nationale du blé) was an organization which established lachat and national sales of key products such as wheat for checking the prices. The producers were forced to sell wheat at a price fixed by this institution and the latter were to be sold at a price higher and taxed. This caused a reduction in production and especially creating market dun black."
+	style = 0
+	picture = "spain4"
+	date = { day = 1 month = august year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = september year = 1948 }
+	action_a = {
+		name = "Do it"
+		ai_chance = 60
+		command = { type = money value = 350 }
+		command = { type = dissent value = 4 }
+	}
+	action_b = {
+		ai_chance = 40
+		name = "It's not necessary"
+		command = { type = money value = -100 }
 	}
 }
 
+event = {
+	id = 189058
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+			}
+	}
+	name = "Economic reforms - Create the I.N.I."
+	desc = "In these days of reconstruction of the country by the fascist regime was created lI.N.I (National Institute of industry) who was a State holding that will allow the birth of large companies like SEAT, ENDESA, PEGASSO, etc..."
+	style = 0
+	picture = "Lend_Lease_SOV"
+	date = { day = 10 month = january year = 1949 }
+	offset = 40
+	deathdate = { day = 10 month = december year = 1949 }
+	action_a = {
+		name = "A full autarchy is the way"
+		ai_chance = 50
+		command = { type = money value = -500 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = industrial_modifier which = total value = 4 }
+		command = { type = construct which = IC where = -4 value = 2 }
+		command = { type = construct which = IC where = -4 value = 2 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = IC where = -4 value = 1 }
+	}
+	action_b = {
+		name = "We need a more open market"
+		ai_chance = 50		
+		command = { type = convoy which = 20 value = 474 when = 0 }
+		command = { type = convoy which = 20 value = 474 when = 2 }
+		command = { type = convoy which = 602 value = 474 when = 4 }
+		command = { type = convoy which = 602 value = 474 when = 16 }
+		command = { type = money value = 250 }
+	}
+}
+
+event = {
+	id = 189059
+	random = no
+	country = SPA
+	trigger = {
+	exists = SPA
+	}
+	name = "New occupational law"
+	desc = "We need a new occupational law. Avec cette loi, on régulait les conditions de travail de la zone national. Un salaire minimum était garanti, la sécurité sociale, l'aide aux familles et les congés payés. On décréta une augmentation de salaire pour les journaliers et une parcellisation des terres en accord avec les nécessités des familles paysannes. Pourtant, quasiment aucun de ces avantages ne s'appliquèrent."
+	style = 0
+	picture = "law"
+	date = { day = 7 month = march year = 1938 }
+	action_a = {
+		name = "Appliquons-la sans gros effort"
+		command = { type = money value = -100 }
+		command = { type = dissent value = -2 }
+	}
+	action_b = {
+		name = "S'investir sérieusement"
+		command = { type = money value = -250 }
+		command = { type = dissent value = -5 }
+	}
+	action_c = {
+		name = "Ne pas créer cette loi"
+		command = { type = dissent value = 3 }
+	}
+}
+
+######################################################################
+# Division de la Phalange
+#####################################################################
+event = {
+	id = 189220
+	random = no
+	country = SPA
+	date = { day = 19 month = april year = 1950 }
+	name = "Division dans la Phalange"
+	desc = "La Phalange se divise de plus en plus entre les Phalangistes de Manuel Hedilla, les Carlistes et l'armée affiliée à Franco. En effet, Hedilla s'inquiète de plus en plus de voir le mouvement se militariser et se radicaliser. Le fait de voir que l'Armée commence à prendre tous les postes du parti, de voir s'appliquer bon nombre d'idées réactionnaires ultra-cléricale font que les Phalangistes se sentent trahis et dépossédés du mouvement qu'ils avaient eux-mêmes lancés. L'ambiance est tendue."
+	style = 0
+	picture = "phalange"
+	action_a = {
+		name = "Du rififi chez les franquistes"
+		command = { type = dissent value = 2 }
+		}
+	}
+	
+######################################################################
+# Fermeture de Radio-Séville
+#####################################################################
+event = {
+	id = 189222
+	random = no
+	country = SPA
+	date = { day = 1 month = february year = 1948 }
+	name = "Radio-Séville clos ses émissions"
+	desc = "Radio-Séville était l'une des radios nationalistes qui diffusait les informations et le point de vue des Nationalistes dans tout le pays à l'instar de Radio-Salamanca son aînée. Mais Radio-Séville était fort populaire même parmi les républicains car Queipo de Llano avait une liberté de ton acerbe tant envers les Républicains qu'envers les groupes de chefs Nationalistes. Cette impertinence agaçait tant les conservateurs tant l'on vient de fermer les locaux définitivement."
+	style = 0
+	picture = "radio"
+	action_a = {
+		name = "Fermons le clapet à ces insolents "
+		command = { type = domestic which = freedom value = -1} # société fermée
+		command = { type = dissent value = -1 }
+		}
+	action_b = {
+		name = "Laissons une liberté de ton au régime"
+		command = { type = domestic which = freedom value = 1} # société ouverte
+		command = { type = dissent value = 1 }
+		}
+	}
+
+######################################################################
+# Censure rétablie
+#####################################################################
+event = {
+	id = 189223
+	random = no
+	country = SPA
+	date = { day = 22 month = april year = 1948 }
+	name = "Rétablissement de la Censure"
+	desc = "La loi sur la Presse qui vient d'être promulguée donne à l'Etat le contrôle total de l'information en Espagne : l'activité de journalisme est extrêmement réglementée, il faut une carte pour pouvoir écrire ou publier un article, seuls les journaux officiels d'obédience au régime sont autorisés. En échange de cette fin de la liberté de la presse, les journalistes sont achetés car leurs salaires seront décuplés et obtiendront d'énormes avantages sociaux."
+	style = 0
+	picture = "censure"
+	action_a = {
+		name = "Chut...."
+			command = { type = dissent value = -3 }
+			command = { type = money value = 300 }
+			command = { type = domestic which = freedom value = -1 }
+		}
+	action_b = {
+		name = "La censure, c'est le Moyen-âge"
+			command = { type = dissent value = 4 }
+			command = { type = domestic which = freedom value = 1 }
+		}
+	}
+
+######################################################################
+# Retour des Jésuites
+#####################################################################
+event = {
+	id = 189224
+	random = no
+	country = SPA
+	date = { day = 3 month = may year = 1951 }
+	name = "Retour des Jésuites"
+	desc = "La Congrégation Religieuse des Jésuites qui avait été expulsé de la République dès 1931 est à nouveau autorisée à revenir en Espagne et à reprendre son enseignement religieux ainsi que l'enseignement dans toutes les écoles du pays. L'Ordre acquiert même de nouveaux avantages qu'il n'avait pas au temps de la monarchie puisque Franco nomme deux jésuites comme proches conseillers : le prètre Lezirika et Menendez Reigada."
+	style = 0
+	picture = "pape"
+	action_a = {
+		name = "Amen!"
+		command = { type = dissent value = -1 }
+		}
+	}
+	
+######################################################################
+# Auxilio Social
+#####################################################################
+event = {
+	id = 189239
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPA }
+	}
+	date = { day = 17 month = march year = 1949 }
+	offset = 60
+	deathdate = { day = 17 month = march year = 1955 }
+	name = "L'Auxilio Social"
+	desc = "Au vu de la détresse extrême de la population espagnole, du ravitaillement insuffisant, de la rareté de l'électricité, de la dureté des hivers, le gouvernement vient d'instaurer l'Auxilio Social pour lutter contre la misère extrême des espagnols sans distinguer s'ils sont phalangistes ou républicain."
+	style = 0
+	picture = "SPA_victory"
+	action_a = {
+		name = "Gracias, gracias "
+		command = { type = dissent value = -2 }
+	}
+}
+
+##############################################################################
+# Pacto Ibérico
+##############################################################################
+event = {
+	id = 189025
+	random = no
+	country = SPA
+	trigger = {
+		atwar = no
+		event = 189013
+		}
+	name = "Proposons le Pacto Ibérico ?"
+	desc = "Le 17 mars 1939 l'Espagne et le Portugal formèrent un pacte d'amitié et de non agression, ce qui ravit les Alliés qui pouvaient voir l'Espagne comme un pays sur lequel on pouvait faire confiance par rapport à sa neutralité. Deux ans plus tard, ce pacte sera confirmé sous le nom de Pacto Ibérico."
+	style = 0
+	picture = "franco"
+	date = { day = 17 month = march year = 1949 }
+	offset = 30
+	deathdate = { day = 16 month = march year = 1951 }
+	action_a = {
+		name = "Signer"
+		command = { type = trigger which = 189026 }
+	}
+	action_b = {
+		name = "Ne pas signer"
+		command = { }
+	}
+}
+
+event = {
+	id = 189026
+	random = no
+	country = POR
+	trigger = {
+		atwar = no
+		}
+	name = "Le Pacto Ibérico"
+	desc = "Le 17 mars 1939 l'Espagne et le Portugal formèrent un pacte d'amitié et de non aggression, ce qui ravi les Alliés qui pouvaient voir l'Espagne comme un pays sur lequel on pouvait faire confiance par rapport à sa neutralité. Deux ans plus tard, ce pacte sera confirmé sous le nom de Pacto Ibérico."
+	style = 0
+	picture = "franco"
+	action_a = {
+		name = "Signer"
+		command = { type = dissent value = -1 }
+		command = { type = non_aggression which = SPA where = POR }
+		command = { type = guarantee which = SPA where = POR }
+	}
+	action_b = {
+		name = "Ne pas signer"
+		command = { }
+	}
+}
+
+##############################################################################
+# Anniversaire de Franco
+##############################################################################
+event = {
+	id = 189027
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Anniversaire du Generalísimo"
+	desc = "Arrive le 56ème anniversaire du Generalísimo."
+	style = 0
+	picture = "SPA_fascist"
+	date = { day = 4 month = december year = 1948 }
+	action_a = {
+		name = "Grande festivité"
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action_b = {
+		name = "simplement des félicitations"
+		command = { }
+	}
+}
+
+event = {
+	id = 189028
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Anniversaire du Généralissimo"
+	desc = "Arrive le 57ème anniversaire du Generalísimo."
+	style = 0
+	picture = "SPA_fascist"
+	date = { day = 4 month = december year = 1949 }
+	action_a = {
+		name = "Grande festivité"
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action_b = {
+		name = "Seulement nos félicitations"
+		command = { }
+	}
+}
+
+event = {
+	id = 189029
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Anniversaire du Generalísimo"
+	desc = "Arrive le 58ème anniversaire du Generalísimo."
+	style = 0
+	picture = "SPA_fascist"
+	date = { day = 4 month = december year = 1950}
+	action_a = {
+		name = "Grande festivité"
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action_b = {
+		name = "Seulement nos félicitations"
+		command = { }
+	}
+}
+
+event = {
+	id = 189030
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Anniversaire du Generalísimo"
+	desc = "Arrive le 59ème anniversaire du Generalísimo."
+	style = 0
+	picture = "SPA_fascist"
+	date = { day = 4 month = december year = 1951 }
+	action_a = {
+		name = "Grande festivité"
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action_b = {
+		name = "Seulement nos félicitations"
+		command = { }
+	}
+}
+
+event = {
+	id = 189031
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Anniversaire du Generalísimo"
+	desc = "Arrive le 60ème anniversaire du Generalísimo."
+	style = 0
+	picture = "SPA_fascist"
+	date = { day = 4 month = december year = 1952 }
+	action_a = {
+		name = "Grande festivité"
+		command = { type = money value = -400 }
+		command = { type = dissent value = -1 }
+	}
+	action_b = {
+		name = "Seulement nos félicitations"
+		command = { }
+	}
+}
+
+##########################################################################
+# Gouvernement républicain en exil
+#########################################################################
+event = {
+	id = 189039
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+		exists = SPR
+		}
+	}
+	name = "Réunion des Cours de la République"
+	desc = "Les Cours de la République se réunirent à Mexico et de là-bas créèrent le nouveau gouvernement républicain en exil et nommèrent Ferando de los Rios comme ministre d'état du gouvernement républicain exilé."
+	style = 0
+	picture = "gobierno"
+	date = { day = 12 month = january year = 1948 }
+	action_a = {
+		name = "De là-bas vous n'aurez aucun pouvoir"
+		command = { type = dissent value = 3 }
+	}
+}
+
+#########################################################
+# Loi de répression
+#########################################################
+event = {
+	id = 189123
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	name = "Loi sur la répression"
+	desc = "Le régime, avec des tribunaux militaires formés dans l'urgence, commence une période de féroce répression. Entre 23.500 et 29.000 espagnols furent fusillés et 300.000 autres furent emprisonnés. Beaucoup subirent la peine de mort, bien qu'ils bénéficièrent de remises de peine successives jusqu'en 1963. Un des instruments de cette politique se base sur cette loi."
+	style = 0
+	picture = "law"
+	date = { day = 1 month = march year = 1950 }
+	action_a = {
+		name = "Approuver la loi"
+		command = { type = manpowerpool value = -70 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Soyons magnanime"
+		command = { type = dissent value = 3 } # les opposants sont saufs
+	}
+}
+
+##############################################################################
+# Bazan
+########################################################
+event = {
+	id = 189128
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Création de Bazán"
+	desc = "L'entreprise nationale de construction navale Bazán commence à fonctionner. De plus, le TALGO commence à rouler de façon expérimentale."
+	style = 0
+	picture = "factory"
+	date = { day = 11 month = may year = 1952 }
+	action_a = {
+		name = "Ok"
+		command = { type = gain_tech which = 3090 }
+		command = { type = gain_tech which = 3150 }
+		command = { type = gain_tech which = 3210 }
+	}
+}
+
+##############################################################################
+# Loi de sécurité
+########################################################
+event = {
+	id = 189129
+	random = no
+	country = SPA
+	trigger = {
+
+	}
+	name = "Loi pour la sécurité de l'état"
+	desc = "Inspirée de la justice militaire, et caractéristique des états en guerre. Avec elle apparaissent de nouveaux délits et les peines se durcissent. L'association, la propagande illégale, les activités syndicales, le vol à main-armée sont considérés comme étant des délits graves."
+	style = 0
+	picture = "law"
+	date = { day = 29 month = march year = 1951 }
+	action_a = {
+		name = "Approuver la loi"
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Pas plus de repression"
+		command = { type = dissent value = 2 }
+		command = { type = construct which = ic where = -4 value = 2 }
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+	}
+}
+
+##############################################################################
+# Assurance maladie
+########################################################
+event = {
+	id = 189130
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Assurance maladie"
+	desc = "On crée l'assurance maladie obligatoire. A partir de ce moment, tous les travailleurs ont droit à une assistance sanitaire. Apparaissent dans le même temps les filles 'topolino', avec des talons hauts, semelles en liège, jupe vraiment courte, et coiffées avec audace. L'Eglise et les màmà sont scandalisés"
+	style = 0
+	date = { day = 15 month = december year = 1952 }
+	action_a = {
+		name = "Ok"
+		command = { type = dissent value = -3 }
+	}
+}
+
+
+##############################################################################
+# Famines
+########################################################
+event = {
+	id = 189133
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	name = "Famine"
+	desc = "Il n'y avait pas de sucre, la viande était un rêve, les marrons substituaient le pain. Dans les confiseries on faisaient des bonbons avec des amandes. Le tabac était rationné pour les hommes et interdit aux femmes. C'est une pénurie totale qui engendre la famine dans le pays."
+	style = 0
+	date = { day = 1 month = january year = 1953 }
+	action_a = {
+		name = "Por favor...."
+		command = { type = dissent value = 3 }
+	}
+}
+
+##############################################################################
+# Nouveautés
+########################################################
+event = {
+	id = 189134
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Magasins, ciné et football"
+	desc = "L'entrepreneur d'Asturies, Pepín Fernádez, émigrant de Cuba depuis de nombreuses années, fonda à Madrid les 'Galearías Preciados', les magasins le plus huppés de l'époque. Dans le même temps,  depuis le 23 avril, on double en version espagnol tous les films puisqu'il est dorénavant interdit de diffuser des film en VO. Cela permet à la censure d'édulcorer les dialogues. Un rayon de joie cependant : L'Atletic de Bilbao gagna"
+	style = 0
+	picture = "censure"
+	date = { day = 3 month = april year = 1953 }
+	action_a = {
+		name = "Surveillons ces nouveautés"
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+##############################################################################
+# Ecole de Marin
+########################################################
+event = {
+	id = 189135
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Ecole de la Marine"
+	desc = "On inaugure à Marín un centre de formation des futurs officiers de marine."
+	style = 0
+	picture = "spain9"
+	date = { day = 15 month = august year = 1949 }
+	action_a = {
+		name = "Accepter"
+		command = { type = money value = -300 }
+		command = { type = gain_tech which = 3040 }
+		command = { type = gain_tech which = 3430 }
+	}
+}
+
+event = {
+	id = 189147
+	random = no
+	country = SPR
+	trigger = {
+		NOT = {
+				exists = SPA
+			}
+	}
+	name = "Ecole des officiers de marine"
+	desc = "Inauguration à Marín d'un centre de formation des futurs officiers de marine."
+	style = 0
+	picture = "spain9"
+	date = { day = 15 month = august year = 1949 }
+	action_a = {
+		name = "Accepter"
+		command = { type = steal_tech which = SOV }
+		command = { type = steal_tech which = FRA }
+		command = { type = steal_tech which = ENG }
+		command = { type = steal_tech which = ENG }
+	}
+}
+
+##################################################
+# Monopole du tabac
+##################################################
+event = {
+	id = 189149
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Monopole du tabac"
+	desc = "Tabacalera S.A. assume le monopole de la production et distribution du tabac et inaugure la politique de concessions exclusives sur les droits."
+	style = 0
+	picture = "private_sector"
+	date = { day = 3 month = february year = 1950 }
+	action_a = {
+		name = "Ok"
+		command = { type = supplies value = 1500 }
+		command = { type = dissent value = -1 }
+		command = { type = money value = 350 } # Taxes juteuses dans le pays de Carmen
+	}
+}
+
+##################################################
+#  Fin du salut hitlérien
+##################################################
+event = {
+	id = 189150
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Dérogation du salut officiel"
+	desc = "Fin de l'obligation aux espagnols de saluer avec le bras levé. cela faisait quelque peu désordre dans une Europe qui venait d'écraser la peste noire..."
+	style = 0
+	date = { day = 11 month = september year = 1948 }
+	action_a = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+##################################################
+#  Aide argentine
+##################################################
+event = {
+	id = 189158
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+		alliance = { country = SPA country = GER }
+	}
+	name = "Aide de l'Argentine"
+	desc = "L'Espagne est isolée internationalement. Les ambassadeurs se retirent de Madrid. La frontière française est fermée, seule l'Argentine aida l'Espagne en envoyant viande, blé, maïs ..."
+	style = 0
+	picture = "argentina"
+	date = { day = 1 month = january year = 1948 }
+	offset = 20
+	deathdate = { day = 1 month = december year = 1953 }
+	action_a = {
+		name = "Accepter"
+		command = { type = supplies value = 1000 }
+		command = { type = oilpool value = 1000 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 189159
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Eva Perón et le Real Madrid"
+	desc = "Auréolé par de grandes espérance, Eva Pérón arriva en Espagne, amenant avec elle l'aide dont l'Espagne a besoin. Mais le plus important fut que le Real Madrid inaugurait son stade, le Nuevo Chamartin. Qu'importe de mourir de faim tant qu'on peut les voir courir derrière le ballon"
+	style = 0
+	picture = "argentina"
+	date = { day = 8 month = june year = 1948 }
+	action_a = {
+		name = "Accepter"
+		command = { type = dissent value = -1 }
+		command = { type = supplies value = 1000 }
+	}
+}
+
+##################################################
+# Achat de Panzer
+##################################################
+event = {
+	id = 189160
+	random = no
+	country = SPA
+	trigger = {
+		event = 189062
+		exists = SPA
+	}
+	name = "Achat de Panzers"
+	desc = "Les faibles acquisitions durant le conflit se résumèrent à un bataillon de chars allemands PzKpfw IV pour la création de la 1ère Division Blindée, qui s'intégrera dans le Régiment d'infanterie blindé 'Alcázar de Tolédo nº 61'."
+	style = 0
+	picture = "panzer"
+	date = { day = 1 month = january year = 1950 }
+	offset = 23
+	deathdate = { day = 1 month = december year = 1951 }
+	action_a = {
+		name = "Acheter les chars"
+		command = { type = add_division which = "1. Alcàzar de Tolédo" value = armor when = 0 }
+		command = { type = add_division which = "2. Alcàzar de Tolédo" value = armor when = 0 }
+		command = { type = add_division which = "3. Alcazar de Toledo" value = light_armor when = 0 }
+		command = { type = add_division which = "4. Alcàzar de Tolédo" value = light_armor when = 0 }
+
+		command = { type = money value = -500 }
+		command = { type = metalpool value = -1000 }
+		command = { type = trigger which = 189161 }
+	}
+	action_b = {
+		name = "Ne pas les acheter"
+		command = { }
+	}
+}
+
+event = {
+	id = 189161
+	random = no
+	country = GER
+	name = "Achat de Panzers"
+	desc = "L'Espagne nationaliste vient de nous passer une commande de deux divisions de panzers à nos entreprises d'armements. Du coup, ces dernières ont livrés leurs commandes et ont engrangé de bons bénéfices."
+	style = 0
+	picture = "panzer"
+	action_a = {
+		name = "Das gut"
+		command = { type = money value = 500 }
+		command = { type = metalpool value = 1000 }
+	}
+}
+
+##########################################
+#Serrano Suñer
+#########################################################
+event = {
+	id = 189101
+	random = no
+	country = SPA
+	trigger = {
+	NOT = {
+			exists = SPR
+		}
+	}
+	date = { day = 1 month = august year = 1949 }
+	offset = 3
+	deathdate = { day = 1 month = september year = 1949 }
+	name = "Serrano Suner"
+	desc = "Mon général, aujourd'hui un groupe de carliste qui célébraient une messe pour leurs morts, présidée par le général Varela a été attaqué par un groupe de phalangiste parlant allemand. Le général Dávila a démissionné, que devons-nous faire? La plupart des ministres désirent la tête de son beau-frère Suñer."
+	style = 0
+	picture = "spain11"
+	action_a = {
+		name = "Limoger Serrano Suñer"
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "L'Espagne est un pays fasciste"
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+##################################################
+#  L'artillerie Verdeja
+##################################################
+event = {
+	id = 189167
+	random = no
+	country = SPA
+	trigger = {
+		OR = {
+		war = { country = GER country = SOV }
+		war = { country = GER country = ENG }
+		war = { country = GER country = USA }
+		}
+	}
+	name = "Artillerie auto-propulsé Verdeja"
+	desc = "La seconde guerre mondiale était déjà bien avancée lorsque l'Espagne se décida d'étudier la construction d'une pièce d'artillerie auto-propulsée et pour cela on utilisa le châssis du prototype Verdeja-1 pour monter un canon de 75 mm, lui aussi en test. La nouvelle pièce restera au stade de prototype."
+	style = 0
+	picture = "american_assistance"
+	date = { day = 1 month = july year = 1949 }
+	offset = 18
+	deathdate = { day = 1 month = december year = 1950 }
+	action_a = {
+		name = "Abandonner l'idée"
+		command = { type = money value = 200 }
+	}
+	action_b = {
+		name = "Investir dans ce projet"
+		command = { type = gain_tech which = 2240 }
+		command = { type = money value = -200 }
+	}
+}
+
+######################################################################
+# Création des jeunesses phalangistes
+#####################################################################
+event = {
+	id = 189244
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 12 month = december year = 1948 }
+	offset = 30
+	deathdate = { day = 12 month = december year = 1950 }
+	name = "Création du Frente de Juventudes"
+	desc = "Malgré la très forte opposition de l'Eglise qui lutte contre toute tentative totalitaire pour subordonner l'esprit des jeunes et les faire dévier du catholicisme, Pilar Primo de Riviera, la sœur de José Antonio, vient de fonder le Frente de Juventudes, copie fidèle des jeunesses hitlériennes. Cela permet au régime d'assurer sa pérénité."
+	style = 0
+	picture = "spain2"
+	action_a = {
+		name = "Vivà Franco !"
+		command = { type = dissent value = -2 }
+		}
+	}
+
+event = {
+	id = 189245
+	random = no
+	country = SPR
+	trigger = {
+		NOT = { exists = SPA }
+	}
+	date = { day = 12 month = december year = 1948 }
+	offset = 30
+	deathdate = { day = 12 month = december year = 1950 }
+	name = "Création du Frente de Juventudes"
+	desc = "Malgré la très forte opposition de l'Eglise qui lutte contre toute tentative totalitaire pour subordonner l'esprit des jeunes et les faire dévier du catholicisme, le gouvernement républicain vient de fonder le Frente de Juventudes, copie fidèle des jeunesses stalinienne. Cela permet au régime d'assurer sa pérénité."
+	style = 0
+	picture = "spain2"
+	action_a = {
+		name = "Vivà la Républicà!"
+		command = { type = dissent value = -2 }
+		}
+	}
+
+######################################################################
+# Fondation du RENFE
+#####################################################################
+event = {
+	id = 189246
+	random = no
+	country = SPA
+	trigger = {
+	NOT = { exists = SPR }
+	}
+	date = { day = 1 month = february year = 1949 }
+	name = "Fondation du RENFE"
+	desc = "Franco vient de créer la première compagnie de chemin de fer national qui regroupe toutes les compagnies ferrés du pays privées sous le contrôle de l'Etat. C'est la fondation de la Red Nacional de Ferrocariles. La reconstruction des voies de chemins de fer détruites par la guerre en sera grandement facilitée."
+	style = 0
+	picture = "train1"
+	action_a = {
+		name = "Parfait"
+		command = { type = money value = 200 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		}
+	}
+######################################################################
+# Visite de Mussolini
+#####################################################################
+
+event = {
+	id = 189252
+	random = no
+	country = ITA
+	trigger = {
+		exists = SPA
+		OR = {
+			war = { country = ITA country = ENG }
+			war = { country = ITA country = SOV }
+		}
+		NOT = {
+			war = { country = SPA country = ENG }
+			war = { country = SPA country = SOV }
+			alliance = { country = SPA country = GER }
+			alliance = { country = SPA country = ITA }
+		}
+	}
+	date = { day = 12 month = february year = 1948 }
+	name = "Le Voyage du Duce à Madrid"
+	desc = "Les liens qui unissent Franco et Mussolini sont particulièrement fort. Si Franco n'aime guère Hitler et le nazisme, il a une sincère admiration pour le fascisme italien. D'autant plus qu'il doit à l'Italie une aide importante dans la guerre civile et sa reconstruction. Cette visite est cependant empoisonnée car le Duce aimerait obliger Franco à entrer en guerre à ses côtés , Saura-t-il le persuader?"
+	style = 0
+	picture = "franco"
+	action_a = {
+		name = "Franco, mio amici"
+		command = { type = trigger which = 189253 }
+		}
+	}
+
+
+event = {
+	id = 189253
+	random = no
+	country = SPA
+	name = "Visite du Duce en Espagne"
+	desc = "Le Duce vient de rencontrer le Caudillo à Bordighera pour infléchir Franco et le décider à entrer en guerre aux côtés de l'Axe. Cependant, Franco résista toujours. Il exigeait des conditions si insensées en ce qui concerne le ravitaillement, le Maroc et Gibraltar que le Duce se contentât de voir les ports du pays s'ouvrir aux flottes de l'Axe. Mais Le Duce est un ami moins dangereux que le Führer et vous pouvez décider de saisir cette chance pour entrer en guerre contre les Alliés..."
+	style = 0
+	picture = "duce"
+	action_a = {
+		name = "Oui, le monde doit nous appartenir!"
+		ai_chance = 0
+		#command = { type = leave_alliance }
+		#command = { type = trigger which = 189254 }
+		}
+	action_b = {
+		name = "Non, n'insistez pas..."
+		ai_chance = 100
+		command = { }
+		}
+	}
+
+
+######################################################################
+# Visite de Pétain
+#####################################################################
+event = {
+	id = 189255
+	random = no
+	country = SPA
+	trigger = {
+		exists = VIC
+		NOT = {
+			exists = SPR
+			atwar = no
+		}
+	}
+	date = { day = 14 month = february year = 1948 }
+	name = "Pétain visite Franco"
+	desc = "Une journée après la visite officielle de Mussolini, Franco accueille à Montpellier dans sa villa privée de Margharita le Maréchal Pétain venu lui entretenir des ambitions espagnoles en Afrique du Nord. Pour la France, il est inacceptable que Madrid puisse revendiquer des terres appartenant à l'Empire Français. Si l'entretien fut très cordial et amical, Franco n'en a cure car il sait que la France n'a plus de poids dans le nouvel ordre européen"
+	style = 0
+	picture = "petain"
+	action_a = {
+		name = "Deux amis se retrouvent"
+		command = { type = trigger which = 189256 }
+		}
+	}
+
+event = {
+	id = 189256
+	random = no
+	country = VIC
+	name = "Pétain visite Franco"
+	desc = "Une journée après la visite officielle de Mussolini, Franco accueille à Montpellier dans sa villa privée de Margharita le Maréchal Pétain venu lui entretenir des ambitions espagnoles en Afrique du Nord. Pour la France, il est inacceptable que Madrid puisse revendiquer des terres appartenant à l'Empire Français. Si l'entretien fut très cordial et amical, Franco n'en a cure car il sait que la France n'a plus de poids dans le nouvel ordre européen"
+	style = 0
+	picture = "franco"
+	action_a = {
+		name = "Deux amis se retrouvent"
+		command = { }
+		}
+	}
+
+######################################################################
+# Divergence chez les franquistes
+#####################################################################
+event = {
+	id = 189257
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 30 month = may year = 1949 }
+	name = "Violente divergence franquistes"
+	desc = "Le parti de Franco est secoué par de nombreuses disputes. Depuis la mort du roi Alfonso XIII, les franquistes, composés de militaires, de monarchistes et de carlistes, affrontent une force centrifuge : Les militaires, vrais soutien au régime, ne veulent pas voir la Phalange s'imposer en un parti unique à l'exemple du NSDAP allemand, les Monarchistes de Juan de Bourbon, représenté par Kindelan, s'oppose violemment aux Carlistes de Varela. Franco, lui, hésite : composer ou trancher?"
+	style = 0
+	picture = "phalange"
+	action_a = {
+		name = "Qui doit avoir le pouvoir?"
+		command = { type = dissent value = 4 }
+		}
+	}
+
+######################################################################
+# Virulente critique des monarchistes
+#####################################################################
+event = {
+	id = 189270
+	random = no
+	country = SPA  # manquait le country =, fab
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 15 month = december year = 1949 }
+	name = "La Fronde des généraux monarchistes"
+	desc = "L'incident a marqué : en plein Conseil supérieur de l'Armée, au centre du Pardo, devant Franco, le général Alfredo Kindelan Duany, porte-parole du courant monarchiste, a critiqué le pouvoir, s'attaquant à Surrano Suner, l'attitude fascisante de la Phalange. Surtout, il osa dire que l'Espagne devait rompre les liens avec l'Axe car cette dernière ne pouvait plus gagner la guerre. Il prôna un rapprochement avec les anglais. Franco ne dit mot mais l'armée lui donne un ultime avertissement."
+	style = 0
+	picture = "spain5"
+	action_a = {
+		name = "Il faut tout changer !"
+		command = { type = dissent value = 1 }
+		}
+	}
+
+######################################################################
+# Attentat à Madrid
+#####################################################################
+event = {
+	id = 189271
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 15 month = february year = 1950 }
+	name = "Attentat à Madrid"
+	desc = "Un attentat à la bombe vient d'exploser en plein centre de Madrid, pulvérisant un local de la Phalange. Cela rappel à Franco que les partisans républicains n'ont pas tous désarmés. A moins que ce ne soit l'œuvre d'anarchistes?"
+	style = 0
+	picture = "anarchistes"
+	action_a = {
+		name = "Recherchez les coupables!"
+		command = { }
+		}
+	}
+
+######################################################################
+# Interdiction du Carnaval
+#####################################################################
+event = {
+	id = 189272
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 3 month = march year = 1950 }
+	name = "Interdiction de faire le Carnaval"
+	desc = "La fête du Carnaval n'a jamais été très apprécié par l'Eglise car cette fête païenne suscitait tous les excès et les débordements. Surtout, l'on profitait de cette fête pour se moquer des institutions et en premier lieu du Clergé. Désormais, il n'en est plus question dans l'Espagne Catholique."
+	style = 0
+	picture = "pape"
+	action_a = {
+		name = "Enfin, on cesse cette fête païenne"
+		command = { type = dissent value = 1 }
+		}
+	}
+######################################################################
+# Manifestations religieuses
+#####################################################################
+event = {
+	id = 189276
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 24 month = september year = 1952 }
+	name = "Inauguration de la Camara Santa"
+	desc = "Franco vient inaugurer solennellement la Camara Santa à Oviedo. C'est l'un des plus anciens pèlerinages d'Espagne qui remonte à l'époque wisigothique et qui devint l'un des centres religieux les plus importants du Royaume des Asturies au temps de la Reconquista. Sa présence souligne à nouveau la collaboration étroite de l'Eglise et du pouvoir. Franco sait que sans l'Eglise et l'Armée, on ne gouverne pas l'Espagne."
+	style = 0
+	picture = "pelerinage"
+	action_a = {
+		name = "Amen"
+		command = { type = dissent value = -1 }
+		}
+	}
+#########################################################
+# Les Maquis
+#########################################################
+event = {
+	id = 189071
+	country = SPA
+trigger = {
+	government = fascist
+	event = 3004
+	NOT = {
+		alliance = { country = SPA country = SOV }
+		alliance = { country = SPA country = FRA }
+		}
+	}
+	random = no
+	date = { day = 19 month = july year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1950 }
+	name = "La guérilla antifranquiste"
+	desc = "Des milliers de personnes se cachèrent pour échapper à la répression franquiste. Certains s'unirent en créant des guérillas. La guérilla visait l'infrastructure, des mines ou des maisons de phalangistes... Avec la guerre mondiale, les guérilleros pensèrent que les Alliés allaient les aider et ils leurs transmirent des informations , aidèrent des milliers de juifs, espions, résistants, pilotes à fuir de la France occupée. Mais la guérilla ne fut jamais un danger pour Franco."
+	style = 0
+	picture = "SPR_Communist_Coup"
+	action_a = {
+	name = "La Guardia Civil s'en charge"
+		command = { type = dissent value = 4 }
+		command = { type = supplies value = -400 }
+		command = { type = manpowerpool value = -15 }
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = construct which = infrastructure where = -4 value = -5 }
+		command = { type = construct which = infrastructure where = -4 value = -5 }
+		command = { type = construct which = infrastructure where = -4 value = -5 }
+		command = { type = construct which = infrastructure where = -4 value = -5 }
+		command = { type = energypool value = -1000 }
+		command = { type = sleepevent which = 189073 }
+	}
+	action_b = {
+		name = "Economisons les ressources"
+		command = { type = trigger which = 189072 }
+	}
+}
+
+event = {
+	id = 189072
+	random = no
+	country = SPA
+	name = "Ignorons les maquisards"
+	desc = "Nous avons laissé le maquis en paix et il s'est développé lentement mais sûrement pour atteindre des proportions inquiétantes. Cela pourrait nous apporter des problèmes dans le futur."
+	style = 0
+	picture = "spain10"
+	action_a = {
+		name = "Nous en sommes conscients"
+		command = { }
+	}
+}	
+
+#####################################################
+# Maquis Vall d'Aran
+#########################################################
+event = {
+	id = 189118
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+		control = { province = 460 data = SPA }
+		OR = {
+			control = { province = 55 data = ENG }
+			control = { province = 55 data = USA }
+			control = { province = 55 data = SOV }
+		}
+	}
+	name = "Les Maquis nous attaquent!"
+	desc = "Monsieur, à l'aube, franchissant la frontière française par le Val d'Aran, un contingent de combattant de 3000 hommes environ nous a attaqué. Ils se sont organisés après la chute de Paris pour faire renaître la république en Espagne. Ils sont bien armés mais n'ont pas d'appui internationaux, en tout cas pour l'instant. Nous devons en finir avec eux!"
+	style = 0
+	picture = "spain10"
+	date = { day = 1 month = october year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1951 }
+	action_a = {
+		name = "Hijo de puta"
+		command = { type = independence which = SPR value = 1 }
+		command = { type = war which = SPR }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 189119 }
+	}
+}
+
+##########################################
+# Intérêts économiques allemands en Espagne (Gerd)
+##########################################
+event = {
+	id = 279551
+	random = no
+	country = SPA
+	trigger = {
+		exists = SPA
+		event = 3003
+		event = 50341 # AH
+	}
+	name = "Intérêts économiques allemands en Espagne"
+	desc = "Les transactions liées aux fournitures d'armes de l'Allemagne à l'Espagne nationaliste transitait par la société Hisma (Espagne) et la société Rowak (Allemagne), toutes deux aux mains de Johannes Bernhardt. Avec les devises provenant de la fourniture d'armes, l'Allemagne achetait à un prix avantageux des minerais de fer, de cuivre, de plomb et de mercure. Mais les allemands voulaient aussi acquérir des intérêts miniers dans des sociétés espagnoles, ce que Franco finit par autoriser en 1938."
+	style = 0
+	picture = "spain4"
+	date = { day = 1 month = february year = 1949 }
+	offset = 40
+	deathdate = { day = 1 month = december year = 1948 }
+	action_a = {
+		name = "Restons vigilants"
+		command = { type = rarematerialspool value = -1000 }
+		command = { type = metalpool value = -2000 }
+		command = { type = trigger which = 279552 }
+	}
+}
+
+event = {
+	id = 279552
+	random = no
+	country = GER
+	name = "Intérêts économiques allemands en Espagne"
+	desc = "Les transactions liées aux fournitures d'armes de l'Allemagne à l'Espagne nationaliste transitait par la société Hisma (Espagne) et la société Rowak (Allemagne), toutes deux aux mains de Johannes Bernhardt. Avec les devises provenant de la fourniture d'armes, l'Allemagne achetait à un prix avantageux des minerais de fer, de cuivre, de plomb et de mercure. Mais les allemands voulaient aussi acquérir des intérêts miniers dans des sociétés espagnoles, ce que Franco finit par autoriser en 1938."
+	style = 0
+	picture = "spain4"
+	action_a = {
+		name = "Prenons la place des anglais"
+		command = { type = rarematerialspool value = 1000 }
+		command = { type = metalpool value = 2000 }
+	}
+}
+
+##################################################
+# 1ère ligne aérienne Espagne-EUA
+##################################################
+event = {
+	id = 879051
+	random = no
+	country = SPA
+	trigger = {
+		atwar = no
+		NOT = {
+			exists = SPR
+		}
+		atwar = no
+	}
+	name = "Première ligne aérienne aux Etats-Unis"
+	desc = "Un DC-4 inaugure la première ligne aérienne reliant le pays aux Etats-Unis. Cet évènement fut célébré par un cocktail à la charge de Chicote. De plus, le 1er juillet s'ouvrit au public la Casa de Campo établissant différents tarifs pour les passagers."
+	style = 0
+	date = { day = 3 month = may year = 1949 }
+	action_a = {
+		name = "Accepter"
+		command = { type = construct which = infrastructure where = 460 value = 20 }
+		command = { type = construct which = ic where = 460 value = 2 }
+	}
+}
+
+##################################################
+#  Eva Peron à Madrid
+##################################################
+event = {
+	id = 879052
+	random = no
+	country = SPA
+	trigger = {
+		atwar = no
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Eva Perón et le Real Madrid"
+	desc = "Auréolée par de grandes espérance, Eva Pérón arriva en Espagne, amenant avec elle l'aide dont l'Espagne a besoin. Mais le plus important fut que le Real Madrid inaugurait son stade, le Nuevo Chamartin. Qu'importe de mourir de faim tant qu'on peut les voir courrir derrière le ballon."
+	style = 0
+	picture = "argentina"
+	date = { day = 8 month = june year = 1949 }
+	action_a = {
+		name = "Accepter"
+		command = { type = dissent value = -1 }
+		command = { type = supplies value = 1000 }
+	}
+}
+
+##################################################
+#  Mort de Manolete dans l'arène (Frgo)
+##################################################
+event = {
+	id = 879053
+	random = no
+	country = SPA
+	trigger = {
+		atwar = no
+		NOT = {
+			exists = SPR
+		}
+	}
+	date = { day = 28 month = august year = 1949 }
+	name = "Mort de Manolete dans l'arène"
+	desc = "Le célèbre matador espagnol Manolete, de son vrai nom Manuel Rodríguez Sánchez, est encorné dans l'arène de Linares (Andalousie) par le taureau Islero. Né trente ans plus tôt à Cordoue dans une famille de toreros, Manolete imposa un style, sobre et dramatique. Son nom sera donné à une passe, la manoletina, qu'il exécutait à la perfection."
+	style = 0
+	picture = "manolete"
+	action_a = {
+		name = "Un grand matador disparaît"
+		command = { type = dissent value = 1 }
+		}
+	}	

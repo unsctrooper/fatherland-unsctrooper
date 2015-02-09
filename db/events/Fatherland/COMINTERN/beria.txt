@@ -2,12 +2,12 @@
 # Beria by Pako
 # ##########################
 
-# 8014100 - Beria take the power - v
+# 8014100 -SOV- Beria take the power - v
 
-# 8014101 - Il culto della personalità
-# 8014102 - Esecuzione di spie britanniche
-# 8014103 - Esecuzione di spie britanniche - Reazione britannica
-# 8014104 - Embargo britannico	
+# 8014101 -SOV- The cult of personality - v
+# 8014102 - Execution of British spies
+# 8014103 - Execution of British spies - British reaction
+# 8014104 - British embargo
 # 8014105 - Goulag reopened
 # 8014106 - Reorganization of NKVD
 	
@@ -55,7 +55,7 @@ event = {
 	}
 }
 
-# 8014101 - Il culto della personalità
+# 8014101 - The cult of personality
 event = {
 	id = 8014101
 	random = no
@@ -65,22 +65,22 @@ event = {
 		headofstate = 30152 # Beria
 		headofgovernment = 30017 # Beria
 	}
-	name = "Le culte de la personnalité"
-	desc = "Staline prend un pouvoir personnel de plus en plus important, au détriment du Parti et a la grande inquiétude des vétérans de la révolution. Il encourage le culte de sa personnalité. Des portraits géants de Staline sont affichés dans toutes les endroits publics, la presse et des films célèbrent son infaillibilité et son génie."
+	name = "The cult of personality"
+	desc = "Beria takes a personal power more and more important, at the expense of the party and has the great concern of the veterans of the revolution. It encourages the cult of personality. Giant portraits of Stalin and Beria are displayed in all public places, the press and movies celebrate their infallibility and their genius."
 	style = 0
 	picture = "tannu_tuva"
 	date = { day = 15 month = february year = 1949 }
 	offset = 30
 	deathdate = { day = 1 month = january year = 1965 }
 	action = {
-		name = "Le petit père du peuple" 
-		command = { type = dissent value = -1 } # au lieu de 3 (Gerd)
+		name = "A strong guide" 
+		command = { type = dissent value = -1 }
 		command = { type = money value = -100 }
 		command = { type = domestic which = freedom value = -1 }
 	}
 }
 
-# 8014102 - Esecuzione di spie britanniche
+# 8014102 - Execution of British spies
 event = {
 	id = 8014102
 	random = no
