@@ -4,7 +4,7 @@
 # 8014200 - Molotov take the power - v
 
 
-# 8014201 - Congresso del PCUS
+# 8014201 - The congress of Communist Party of Soviet Union
 # 8014202 - Rapporti con la Siberia
 # 8014203 - Risposta Siberia all'invito Sovietico
 # 8014204 - La Siberia ha accettato la nostra proposta
@@ -85,8 +85,8 @@ event = {
 		event = 8014200 # 8014200 - Molotov
 	} 
 	
-	name = "Congresso del PCUS"
-	desc = "Congresso del PCUS per organizzare la nuova Unione Sovietica" 
+	name = "The congress of Communist Party of Soviet Union"
+	desc = "The congress of Communist Party of Soviet Union for a reorganization of the new Soviet Union" 
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -110,8 +110,8 @@ trigger = {
 		headofgovernment = 30016 # Molotov
 		event = 8014201 # 8014200 - Molotov
 } 
-name = "L'unione Sovietica e la Siberia"
-desc = "Avanziamo una offerat a Dzhanov per tornare pacificamente con noi ?"
+name = "The Soviet Union and the Siberia"
+desc = "We advance a offerat to Dzhanov to return peacefully with us"
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -127,7 +127,7 @@ picture = "soviet_warposter"
 	
 	action = {
 		ai_chance = 10
-		name = "Alla guerra !"
+		name = "No, it's time for war"
 		command = { type = set_relation which = SIB value = -50 }
 		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
 	}
@@ -139,20 +139,20 @@ event = {
 	random = no
 	country = SIB 
 
-	name = "L'unione Sovietica e la Siberia"
-	desc = "Torniamo sovietici ?"
+	name = "The Soviet Union and Siberia"
+	desc = "It's time to back home ?"
 	style = 0
 	picture = "soviet_warposter" 
 	action = {
 	ai_chance = 90
-		name = "Ok"
+		name = "Yes, return in the Union"
 		command = { type = set_relation which = SOV value = 50 }
 		command = { type = trigger which = 8014204 } # 8014204 - La Siberia ha accettato la nostra proposta	
 	}
 	
 	action = {
 		ai_chance = 10
-		name = "NO"
+		name = "No! Your communism is not the our"
 		command = { type = set_relation which = SOV value = -50 }
 		command = { type = trigger which = 8014205 } # 8014205 - La Siberia ha rifiutato la nostra proposta		
 		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
@@ -164,8 +164,8 @@ event = {
 	id = 8014204
 	random = no
 	country = SOV 
-	name = "E' ora di ritornare sovietici"
-	desc = "Torniamo a casa !"
+	name = "Welcome back Siberia !"
+	desc = "The Siberia has accepted our proposal !"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -182,8 +182,8 @@ event = {
 	id = 8014205
 	random = no
 	country = SOV 
-	name = "La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !"
-	desc = "Nonostante le ns offerte hanno rifiutato, guerra sia !"
+	name = "Siberia has rejected our proposal"
+	desc = "Siberia has rejected our proposal"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -203,8 +203,8 @@ event = {
 		event = 8014204 # 8014204 - La Siberia ha accettato la nostra proposta
 	} 
 	
-	name = "Dzhanov arriva al congresso e Molotov annuncia un suo ingresso nel governo e il reintegro della Siberia nell'URSS"
-	desc = "Dzhanov arriva al congresso e Molotov annuncia un suo ingresso nel governo e il reintegro della Siberia nell'URSS"
+	name = "Dzhanov arrives at Congress"
+	desc = "Dzhanov arrives at Congress and Molotov announces its entry into the Government and the reintegration of Siberia"
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -227,8 +227,8 @@ event = {
 			headofstate = 30012 # Molotov
 			event = 8014206
 	} 
-	name = "Approcciamo anche la repubblica del Far East ?"
-	desc = "Approcciamo anche la repubblica del Far East ?"
+	name = "The Soviet Union and the Far Eastern Republic"
+	desc = "It's time to back home ?"
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -244,7 +244,7 @@ event = {
 	
 	action = {
 		ai_chance = 10
-		name = "Non in questo momento"
+		name = "No, not now"
 		command = { type = set_relation which = U57 value = -50 }
 	}
 
@@ -256,8 +256,8 @@ event = {
 	random = no
 	country = U57 
 
-	name = "E' ora di ritornare Sovietici ?"
-	desc = "Torniamo a casa !"
+	name = "The Soviet Union and the Far Eastern Republic"
+	desc = "It's time to back home ?"
 
 	style = 0
 	picture = "soviet_warposter" 
@@ -270,7 +270,7 @@ event = {
 	
 	action = {
 		ai_chance = 20
-		name = "NO"
+		name = "No"
 		command = { type = set_relation which = SOV value = -50 }
 		command = { type = trigger which = 8014210 } # 8014205 - La FAR ha rifiutato la nostra proposta			
 	}
@@ -281,8 +281,8 @@ event = {
 	id = 8014209
 	random = no
 	country = SOV 
-	name = "E' ora di farli ritornare sovietici"
-	desc = "Tornano a casa !"
+	name = "Welcome back Far Eastern Republic !"
+	desc = "The Far Eastern Republic has accepted our proposal !"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -298,13 +298,13 @@ event = {
 	id = 8014210
 	random = no
 	country = SOV 
-	name = "La FAR ha rifiutato la nostra proposta !"
-	desc = "Nonostante le ns offerte hanno rifiutato !"
+	name = "The Far Eastern Republic has rejected our proposal"
+	desc = "The Far Eastern Republic has rejected our proposal"
 	style = 0
 	picture = "soviet_warposter" 
 
 	action = {
-		name = "Pur di evitare una guerra chiediamo un supporto internazionale in futuro"
+		name = "We will solve the problem in a near future"
 		command = { type = set_relation which = U57 value = -50 }		
 	}
 
@@ -320,15 +320,15 @@ event = {
 		event = 8014206 # Siberia inerhit by URSS
 		exists = U59
 	} 
-	name = "L'unione Sovietica e gli zaristi"
-	desc = "Nessun compromesso, schiacciamoli !"
+	name = "The Soviet Union and the Empire of Russia"
+	desc = "No compromise with the zarists!"
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 2
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {
-		name = "Guerra !"
+		name = "War !"
         command = { type = war which = U59 }
 	}
 	
@@ -344,15 +344,15 @@ event = {
 		event = 8014206 # Siberia inerhit by URSS
 		exists = MON
 	} 
-	name = "L'unione Sovietica e la Mongolia"
-	desc = "Portiamoli nella nostra sfera di influenza"
+	name = "The Soviet Union and the Mongolia"
+	desc = "They will back in our sphere of influence"
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 2
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {
-		name = "Con noi !"
+		name = "With us as always!"
 		command = { type = make_puppet which = MON }
 	}
 	
@@ -367,8 +367,8 @@ event = {
 		headofstate = 30012 # Molotov
 		event = 8014203 # 8014201 - Congresso del PCUS
 	} 
-	name = "Riorganizzazione dell'esercito"
-	desc = "Après de longs efforts, l'armée est remise à niveau." 
+	name = "Reorganization of the Red Army"
+	desc = "It's time to made a complete reorganization of the Red Army" 
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -403,8 +403,8 @@ event = {
 		headofstate = 30012 # Molotov
 		event = 8014213 # 8014213 - Riorganizzazione dell'esercito
 	} 
-	name = "Riorganizzazione dell'amministrazione e dell'industria" # Réorganisation de l'administration et de l'industrie
-	desc = "Une impulsion est donnée à la recherche industrielle." # Une impulsion est donnée à la recherche industrielle.
+	name = "Reorganization of industries" 
+	desc = "Reorganization of industries." 
 	style = 2
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -412,7 +412,7 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
-		name = "Molto bene !"
+		name = "Hurrah !"
 				command = { type = dissent value = -1 }
 		# command = { type = waketeam which = 3746 }
 		# command = { type = sleepteam which = 3712 }
@@ -436,23 +436,23 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014214 # 8014214 - Riorganizzazione dell'amministrazione e dell'industria
 } 
-name = "Relance de l'économie" # Relance de l'économie
-desc = "L'économie est déséquilibrée après l'inefficace politique stalinienne." # L'économie est déséquilibrée, après la politique stalinienne
+name = "Reorganization of economy" 
+desc = "Reorganization of economy" 
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 2
 	deathdate = { day = 12 month = march year = 1966 }
-action = {#Investir dans l'agriculture
+action = {
 ai_chance = 50
-Name = "Investir dans l'agriculture" 
+Name = "Invest in agriculture" 
 command = { type = dissent value = -15 }
 command = { type = industrial_modifier which = total value = -2  }
 command = { type = industrial_modifier which = supplies value = 1  }
 }
-action = {#Investir dans la production de biens de consommation
+action = {
 ai_chance = 40
-name = "Investir dans la production de biens de consommation" 
+name = "Invest in the production of consumer goods" 
 command = { type = dissent value = -10 }
 command = { type = industrial_modifier which = supplies value = 1  }
 command = { type = supplies value = -10000  }
@@ -461,9 +461,9 @@ command = { type = energypool value = -10000 }
 command = { type = rarematerialspool value = -2000 }
 command = { type = oilpool value = -2000  }
 }
-action = {#Rationaliser la production actuelle
+action = {
 ai_chance = 10
-Name = "Rationaliser la production actuelle" 
+Name = "Streamline current production" 
 command = {  type = industrial_modifier which = total value = 2 }
 command = { type = dissent value = 10 }
 }
@@ -479,15 +479,15 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014215 # 8014215 - Rilancio dell'economia
 } 
-name = "Réforme agricole" # Réforme agricole
-desc = "Les campagnes soviétiques ont énormément souffert, notamment pendant l'hiver 32-33. Ayant évincé Staline, nous pouvons choisir des voies plus rationnelles"
+name = "Agricultural reform" # Réforme agricole
+desc = "Soviet campaigns have suffered enormously, especially during winter 32-33. Having ousted Stalin, we can choose more rational ways"
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 2
 	deathdate = { day = 12 month = march year = 1966 }
 action = {
-name = "Accorder plus de libertés aux paysans" 
+name = "Grant more freedoms to farmers" 
 ai_chance = 40
 command = { type = dissent value = 5 }
 command = { type = industrial_modifier which = supplies value = 5  }
@@ -495,7 +495,7 @@ command = { type = domestic which = freedom value = 2 }
 command = { type = relative_manpower value = 5 }
 }
 action = {
-name = "Rationaliser l'organisation des kolkhozes" 
+name = "Streamline the Organization of kolkhozes" 
 ai_chance = 30
 command = { type = dissent value = 4 }
 command = { type = industrial_modifier which = supplies value = 5  }
@@ -503,7 +503,7 @@ command = { type = relative_manpower value = 5 }
 command = { type = sleepevent which = 92055 }
 }
 action = {
-Name = "Il est déjà trop tard" 
+Name = "It is already too late" 
 ai_chance = 30
 command = { type = sleepevent which = 92055 }
 command = { type = revolt which = -4 }
@@ -522,8 +522,8 @@ event = {
 			headofstate = 30012 # Molotov
 			event = 8014216 # 8014216 -  Riforma agricola
 	} 
-	name = "Politica Estera - Alleati" 
-	desc = "Le Congrès est réuni afin de statuer sur l'attitude à adopter à l'égard des pays qui ne sont pas (encore) communistes." # Le Congrès est réuni afin de statuer sur l'attitude à prendre par rapport aux pays non communistes.
+	name = "Foreign policy - Allies" 
+	desc = "The Congress is gathered to decide on lattitude to adopt to countries that are not (yet) Communists legard."
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -531,7 +531,7 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {
 		ai_chance = 60
-		name = "Confermiamo la nostra vicinanza agli Alleati" 
+		name = "We may stay more in contact with the our old allies" 
 		command = { type = domestic which = interventionism value = -1 }
 
 		command = { type = relation which = U01 value = 50 }
@@ -544,7 +544,7 @@ event = {
 	}
 	action = {
 		ai_chance = 30
-		name = "Limitiamo le relazioni al minimo" 
+		name = "Just normal relationship" 
 		command = { type = relation which = U01 value = 5 }
 		command = { type = relation which = ENG value = 5 }
 		command = { type = relation which = USA value = 5 }
@@ -556,7 +556,7 @@ event = {
 	
 	action = {#Ne faire aucun compromis avec les capitalistes !
 		ai_chance = 10
-		name = "Aucun compromis avec les capitalistes !"
+		name = "Turn on isolationism with the capitalists"
 		command = { type = relation which = U01 value = -50 }
 		command = { type = relation which = ENG value = -50 }
 		command = { type = relation which = USA value = -50 }
@@ -577,8 +577,8 @@ event = {
 			headofstate = 30012 # Molotov
 			event = 8014217 # 8014216 -  Politica estera - Alleati
 	} 
-	name = "Politica Estera - Asse"
-	desc = "Le Congrès est réuni afin de statuer sur l'attitude à adopter à l'égard des pays qui ne sont pas (encore) communistes." # Le Congrès est réuni afin de statuer sur l'attitude à prendre par rapport aux pays non communistes.
+	name = "Foreign Policy - Axis"
+	desc = "The Congress is gathered to decide on lattitude to adopt to countries that are not (yet) Communists legard."
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -586,7 +586,7 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {
 		ai_chance = 60
-		name = "Adopter une attitude pacifique, pour l'instant" 
+		name = "It's not the time for our revenge" 
 		command = { type = domestic which = interventionism value = -2 }
 
 		command = { type = relation which = GER value = 10 }
@@ -595,7 +595,7 @@ event = {
 	}
 action = {
 ai_chance = 40
-name = "Rivendichiamo le terre che ci aspettano con forza !" 
+		name = "We claim our rightfully land and a day we will take with force" 
 		command = { type = domestic which = interventionism value = 2 }
 		command = { type = relation which = ROM value = -200 }
 		command = { type = relation which = GER value = -200 }
@@ -614,8 +614,8 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014218 # 8014218 -  Politica estera - Asse
 } 
-name = "Politica Estera - Neutrali" # IXème Congrès du komintern
-desc = "Le Congrès est réuni afin de statuer sur l'attitude à adopter à l'égard des pays qui ne sont pas (encore) communistes." # Le Congrès est réuni afin de statuer sur l'attitude à prendre par rapport aux pays non communistes.
+name = "Foreign Policy - Neutral" # IXème Congrès du komintern
+	desc = "The Congress is gathered to decide on lattitude to adopt to countries that are not (yet) Communists legard."
 style = 0
 picture = "parliamentary_scandal" 
 	date = { day = 1 month = january year = 1949 }
@@ -623,7 +623,7 @@ picture = "parliamentary_scandal"
 	deathdate = { day = 12 month = march year = 1966 }
 action = {
 ai_chance = 50
-name = "L'URSS sia un faro per tutti i comunisti del mondo !" 
+name = "The new Soviet Union will be the leader of the Commie around the world !" 
 command = { type = domestic which = interventionism value = 1 }
 
 command = { type = relation which = CHC value = 25 }
@@ -631,7 +631,7 @@ command = { type = relation which = CHC value = 25 }
 }
 action = {
 ai_chance = 50
-name = "Il socialismo in un solo paese" 
+name = "The priorities is the socialism in our country" 
 command = { type = relation which = CHC value = -25 }
 }
 
@@ -646,15 +646,15 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014219 # 8014219 - Politica estera - Neutrali
 } 
-name = "Fine del Congresso del PCUS"
-desc = "Congresso del PCUS"
+name = "End of Congress"
+desc = "End of Congress"
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 5
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {
-		name = "Una nuova URSS comandata da Molotov !"
+		name = "A new era for Soviet Union !"
 		command = { type = dissent value = -1 }
 	}
 }

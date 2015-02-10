@@ -122,8 +122,8 @@ trigger = {
 		# event = 8014231 # 8014231 - Riorganizzazione dell'esercito
 		event = { id = 8014231 days = 5  }				
 } 
-name = "L'unione Sovietica e la Siberia"
-desc = "Avanziamo una offerat a Dzhanov per tornare pacificamente con noi ?"
+name = "The Soviet Union and Siberia"
+desc = "We advance a offerat to Dzhanov to return peacefully with us"
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -132,14 +132,14 @@ picture = "soviet_warposter"
 	
 	action = {
 		ai_chance = 60
-		name = "Ok"
+		name = "Yes, we welcome with open arms"
 		command = { type = set_relation which = SIB value = 50 }
 		command = { type = trigger which = 8014203 } # risposta Siberia
 	}
 	
 	action = {
 		ai_chance = 40
-		name = "Non in questo momento"
+		name = "No, not now"
 		command = { type = set_relation which = SIB value = -50 }
 		command = { type = trigger which = 8014237 } # Far Eastern Republic		
 	}
@@ -151,20 +151,20 @@ event = {
 	random = no
 	country = SIB 
 
-	name = "L'unione Sovietica e la Siberia"
-	desc = "Torniamo sovietici ?"
+	name = "The Soviet Union and Siberia"
+	desc = "It's time to back home ?"
 	style = 0
 	picture = "soviet_warposter" 
 	action = {
 	ai_chance = 25
-		name = "Ok"
+		name = "Yes, return in the Union"
 		command = { type = set_relation which = SOV value = 50 }
 		command = { type = trigger which = 8014234 } # 8014204 - La Siberia ha accettato la nostra proposta	
 	}
 	
 	action = {
 		ai_chance = 25
-		name = "NO"
+		name = "No! Your communism is not the our"
 		command = { type = set_relation which = SOV value = -50 }
 		command = { type = trigger which = 8014235 } # 8014235 - La Siberia ha rifiutato la nostra proposta		
 		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
@@ -172,7 +172,7 @@ event = {
 	
 	action = {
 		ai_chance = 50
-		name = "Preferiamo una alleanza ma restando autonomi"
+		name = "We propose just an alliance for now"
 		command = { type = set_relation which = SOV value = 50 }
 		# abbandonare l'alleanza con i romanov eventule
 		command = { type = trigger which = 8014236 } # 8014236 - La Siberia preferisce una alleanza ma restando autonoma
@@ -185,8 +185,8 @@ event = {
 	id = 8014234
 	random = no
 	country = SOV 
-	name = "E' ora di ritornare sovietici"
-	desc = "Torniamo a casa !"
+	name = "Welcome back Siberia !"
+	desc = "The Siberia has accepted our proposal !"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -204,8 +204,8 @@ event = {
 	id = 8014235
 	random = no
 	country = SOV 
-	name = "La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !"
-	desc = "Nonostante le ns offerte hanno rifiutato, guerra sia !"
+	name = "Siberia has rejected our proposal"
+	desc = "Siberia has rejected our proposal"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -221,20 +221,20 @@ event = {
 	id = 8014236
 	random = no
 	country = SOV 
-	name = "Alleiamoci ma restando autonomi"
-	desc = "Alleanza con SIBERIA"
+	name = "The Siberia propose an alliance"
+	desc = "The Siberia propose an alliance, what should we do ?"
 	style = 0
 	picture = "soviet_warposter" 
 
 	action = {
 		ai_chance = 50
-		name = "Ok !"
+		name = "Accept the proposal"
 		command = { type = dissent value = -1 }
 		# alleanza con siberia e suoi alleati e guerra con zaristi	
 	}
 	action = {
 		ai_chance = 50
-		name = "No !"
+		name = "No, it's time to use our army"
 		command = { type = dissent value = -1 }
 		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia fil		
 	}
@@ -251,8 +251,8 @@ trigger = {
 		headofgovernment = 30153 # Zhukov
 		event = 8014233 # 8014233 - Risposta della Siberia
 } 
-name = "L'unione Sovietica e la FER"
-desc = "Avanziamo una offerat alla FER per tornare pacificamente con noi ?"
+name = "The Soviet Union and the Far Eastern Republic"
+desc = "It's time to return peacefully at home"
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -261,14 +261,14 @@ picture = "soviet_warposter"
 	
 	action = {
 		ai_chance = 80
-		name = "Ok"
+		name = "Yes, make an offer to Vladivostok government"
 		command = { type = set_relation which = U57 value = 50 }
 		command = { type = trigger which = 8014238 } # risposta FER
 	}
 	
 	action = {
 		ai_chance = 20
-		name = "Non in questo momento"
+		name = "No, not now"
 		command = { type = set_relation which = U57 value = -50 }
 	}
 }
@@ -279,27 +279,27 @@ event = {
 	random = no
 	country = U57 
 
-	name = "L'unione Sovietica e la FER"
-	desc = "Torniamo sovietici ?"
+	name = "The Soviet Union and the Far Eastern Republic"
+	desc = "It's time to back home ?"
 	style = 0
 	picture = "soviet_warposter" 
 	action = {
 	ai_chance = 25
-		name = "Ok"
+		name = "Yes, return in the Union"
 		command = { type = set_relation which = SOV value = 50 }
 		command = { type = trigger which = 8014239 } # 8014239 - La FER ha accettato la nostra proposta	
 	}
 	
 	action = {
 		ai_chance = 25
-		name = "NO"
+		name = "No, we want a complete independence"
 		command = { type = set_relation which = SOV value = -50 }
 		command = { type = trigger which = 8014240 } # 8014240 - La FER ha rifiutato la nostra proposta					
 	}
 	
 	action = {
 		ai_chance = 50
-		name = "Preferiamo una alleanza ma restando autonomi"
+		name = "We propose just an alliance for now"
 		command = { type = set_relation which = SOV value = 50 }
 		command = { type = trigger which = 8014241 } # 8014241 - La FER preferisce una alleanza ma restando autonoma
 	}
@@ -311,8 +311,8 @@ event = {
 	id = 8014239
 	random = no
 	country = SOV 
-	name = "E' ora di ritornare sovietici"
-	desc = "Torniamo a casa !"
+	name = "The Far Eastern Republic accept our terms"
+	desc = "They're back!"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -330,13 +330,13 @@ event = {
 	id = 8014240
 	random = no
 	country = SOV 
-	name = "La FER ha rifiutato la nostra proposta e ci ha dichiarato guerra !"
-	desc = "Nonostante le ns offerte hanno rifiutato, guerra sia !"
+	name = "The Far Eastern Republic has rejected our proposal"
+	desc = "The Far Eastern Republic has rejected our proposal"
 	style = 0
 	picture = "soviet_warposter" 
 
 	action = {
-		name = "Ok"
+		name = "Damn"
 		command = { type = set_relation which = U57 value = -200 }	
 		# dichiarare guerra a U57		
 	}
@@ -348,8 +348,8 @@ event = {
 	id = 8014241
 	random = no
 	country = SOV 
-	name = "Alleiamoci ma restando autonomi"
-	desc = "Alleanza con SIBERIA"
+	name = "The Far Eastern Republic propose an alliance"
+	desc = "The Far Eastern Republic propose an alliance, what should we do ?"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -377,8 +377,8 @@ event = {
 		headofgovernment = 30153 # Zhukov
 		event = 8014238 # 8014238 - Risposta FER all'invito Sovietico
 	} 
-	name = "Dovere dell'Armata Rossa supportare i comunisti nel mondo"
-	desc = "Dovere dell'Armata Rossa supportare i comunisti nel mondo"
+	name = "The duty of Red Army is support the Communists around the world"
+	desc = "The duty of Red Army is support the Communists around the world"
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -397,8 +397,8 @@ event = {
 	random = no
 	country = SOV
 
-	name = "Supportiamo la Cina Comunista"
-	desc = "Supportiamo la Cina Comunista"
+	name = "We may support the Commie in China"
+	desc = "We may support the Commie in China"
 	picture = "mao_with_stalin"
 	style = 1
 

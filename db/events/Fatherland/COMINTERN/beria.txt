@@ -94,12 +94,12 @@ event = {
 	date = { day = 15 month = february year = 1949 }
 	offset = 35
 	deathdate = { day = 1 month = january year = 1965 }
-	name = "Le procès des espions britanniques"
-	desc = "A Moscou, s'ouvre le procès des 'espions britanniques', 6 ingénieurs de Métro-Vickers qui travaillaient sur un chantier en Oural. Coupables de sabotages et d'espionnage, l'un fut acquitté, deux firent 5 ans de prison, trois seront déportés en Sibérie. Allons-nous les juger ? Cela risque d'altérer nos relations avec l'Angleterre mais cela peut aussi faire un bon coup de propagande stigmatisant le capitalisme étranger."
+	name = "Execution of British spies"
+	desc = "In Moscow, opened the trial of British spies, 6 engineers from Metro-Vickers, who worked on a building site in Urals. Convicted of sabotage and despionnage, Mon was acquitted, two were 5 years in prison, three will be deported to Siberia. Should we judge them? This may dalterer our relations with England but it can also make a good shot of propaganda stigmatising foreign capitalism."
 	style = 0
 	picture = "news_paper"
 	action_a = {	
-		name = "Un complot du capitalisme international"
+		name = "A conspiracy of international capitalism"
       	command = { type = dissent value = -1 }
 		command = { type = relation which = ENG value = -20 }
 		command = { type = trigger which = 8014103 }
@@ -111,12 +111,12 @@ event = {
 	id = 8014103
 	random = no
 	country = ENG
-	name = "Le procès des espions britanniques"
-	desc = "A Moscou, s'ouvre le procès des 'espions britanniques', 6 ingénieurs de Métro-Vickers qui travaillaient sur un chantier en Oural. Coupables de sabotages et d'espionnage, l'un fut acquitté, deux firent 5 ans de prison, trois iront faire un voyage en Sibérie. Notre gouvernement décide de réagir en décrétant un embargo sur les échanges commerciaux avec l'URSS."
+	name = "Execution of British spies"
+	desc = "In Moscow, opened the trial of British spies, 6 engineers from Metro-Vickers, who worked on a building site in Urals. Convicted of sabotage and despionnage, Mon was acquitted, two did 5 years in prison, three will go to make a trip to Siberia. Our Government decided to react by decreeing an embargo on trade with URSS."
 	style = 0	
 	picture = "news_paper"
 	action_a = {
-		name = "Appliquons un embargo"
+		name = "Close diplomatical relations and make an embargo to Soviet Union"
 		command = { type = relation which = SOV value = -20 }
 		command = { type = end_trades which = ENG where = SOV }
 		command = { type = trigger which = 8014104 }
@@ -127,12 +127,12 @@ event = {
 	id = 8014104
 	random = no
 	country = SOV
-	name = "Embargo britannique contre l'URSS"
-	desc = "En représailles contre la condamnation de ses ingénieurs, le gouvernement britannique vient de décréter un embargo contre nous. Tous nos échanges commerciaux avec la Grande-Bretagne sont annulés."
+	name = "British embargo against Soviet Union"
+	desc = "In retaliation for the conviction of its engineers, the British Government comes to embargo against us. All our trade with Britain are cancelled."
 	style = 0
 	picture = "flag_uk"
 	action_a = {	
-		name = "Les capitalistes ne perdent rien pour attendre"
+		name = "Capitalists do not lose anything to wait"
 		command = { }
 	}
 	}
@@ -151,11 +151,11 @@ event = {
 	offset = 50
 	deathdate = { day = 1 month = january year = 1965 }
 	name = "Goulag reopened"
-	desc = "Goulag était l’abréviation de la direction des camps de travaux forcés et de rééducation idéologique, un département de la police secrète. Créé dans les années 20 par Lénine, le système atteint son apogée sous Staline avec plus de 476 complexes installés en Sibérie et en Asie centrale. Ces camps regroupaient des prisonniers de droit commun et des opposants politiques. Les prisonniers construirent plusieurs voies ferrées dans les régions arctiques, dont la ligne Kotlas Vorkuta."
+	desc = "Gulag was the abbreviation for the direction of the camps of forced work and ideological re-education, a Department of the secret police. Created in the 1920s by Lenin, the system reached its peak under Stalin with more than 476 complexes installed in Siberia and Central Asia. These camps included common law prisoners and political opponents. Prisoners built several railways in the Arctic regions, whose line Kotlas Vorkuta."
 	style = 0
 	picture = "goulag"
 	action_a = {
-		name = "Le taux de mortalité y était très élevé..."
+		name = "We need order"
 		command = { type = money value = -200 }
 		command = { type = construct which = infrastructure where = 1155 value = 40 } # Norilsk
 		command = { type = construct which = ic where = 1155 value = 2 }
@@ -172,8 +172,8 @@ event = {
 		headofstate = 30152 # Beria
 		headofgovernment = 30017 # Beria2
 	}
-	name = "Le N.K.V.D renforce sa position" 
-	desc = "Sous la tutelle de Staline, Lavrenti Beria qui contrôle le N.K.V.D d'une main de fer réussit à mettre en place diverses mesures telles que le fait de haute-trahison en cas de recul face aux ennemis."
+	name = "The reorganization of NKVD" 
+	desc = "Under the tutelage of Stalin, Lavrenty Beria, who controls the N.K.V.D dune iron hand managed to put in place various measures such as treason in the event of decline against the enemies."
 	style = 0 
 	picture = "Beria"
 	date = { day = 15 month = february year = 1949 }
