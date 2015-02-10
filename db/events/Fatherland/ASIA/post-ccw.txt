@@ -1,7 +1,7 @@
-#############################
-### Post-Civil War events ###
-### If Nat. China wins    ###
-#############################
+#######################################################
+### Post-Civil War events if Nationalist China wins ###
+###	By UNSC Trooper 								###
+#######################################################
 
 ### The price of victory for the Nationalist Government
 
@@ -707,3 +707,100 @@ event = {
 	command = { type = dissent value = 4 }
 	}
 }
+
+### The price of victory was paid
+
+event = { 
+	id = 8200162
+	random = no
+	country = CHI
+
+	name = "EVT_8200162_NAME"
+	desc = "EVT_8200162_DESC"
+	picture = "nwo\china_land_reform"
+	style = 1
+
+	trigger = {
+	NOT = { exists = CHC }
+	event = 8200145 # The price of victory
+	event = { id = 8200145 days = 1840 } # 5 years have passed since winning Civil War
+	}
+	
+		date = { day = 1 month = january year = 1945 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = "We have lost the people's hearts and minds."
+		command = { type = dissent value = -10 }
+		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = addcore which = 1301 where = -1 }
+		command = { type = addcore which = 1302 where = -1 }
+		command = { type = addcore which = 1307 where = -1 }
+		command = { type = addcore which = 1310 where = -1 }
+		command = { type = addcore which = 1304 where = -1 }
+		command = { type = addcore which = 1312 where = -1 }
+		command = { type = addcore which = 1297 where = -1 }
+		command = { type = addcore which = 1298 where = -1 }
+		command = { type = addcore which = 1300 where = -1 }
+		command = { type = addcore which = 1291 where = -1 }
+		command = { type = addcore which = 1292 where = -1 }
+		command = { type = addcore which = 1293 where = -1 }
+		command = { type = addcore which = 1296 where = -1 }
+		command = { type = addcore which = 1314 where = -1 }
+		command = { type = addcore which = 1315 where = -1 }
+		command = { type = addcore which = 1261 where = -1 }
+		command = { type = addcore which = 1262 where = -1 }
+		command = { type = addcore which = 1263 where = -1 }
+		command = { type = addcore which = 1264 where = -1 }
+		command = { type = addcore which = 1265 where = -1 }
+		command = { type = addcore which = 1266 where = -1 }
+		command = { type = addcore which = 1267 where = -1 }
+		command = { type = addcore which = 1283 where = -1 }
+		command = { type = addcore which = 1284 where = -1 }
+		command = { type = addcore which = 1285 where = -1 }
+		command = { type = addcore which = 1268 where = -1 }
+		command = { type = addcore which = 1269 where = -1 }
+		command = { type = addcore which = 1270 where = -1 }
+		command = { type = addcore which = 1271 where = -1 }
+		command = { type = addcore which = 1272 where = -1 }
+		command = { type = addcore which = 1248 where = -1 }
+		command = { type = addcore which = 1249 where = -1 }
+		command = { type = addcore which = 1250 where = -1 }
+		command = { type = addcore which = 1251 where = -1 }
+		command = { type = addcore which = 1252 where = -1 }
+		command = { type = addcore which = 1253 where = -1 }
+		command = { type = addcore which = 1254 where = -1 }
+		command = { type = addcore which = 1255 where = -1 }
+		command = { type = addcore which = 1256 where = -1 }
+		command = { type = addcore which = 1257 where = -1 }
+		command = { type = addcore which = 1258 where = -1 }
+		command = { type = addcore which = 1259 where = -1 }
+		command = { type = addcore which = 1260 where = -1 }
+		command = { type = addcore which = 1241 where = -1 }
+		command = { type = addcore which = 1242 where = -1 }
+		command = { type = addcore which = 1243 where = -1 }
+		command = { type = addcore which = 1244 where = -1 }
+		command = { type = addcore which = 1245 where = -1 }
+		command = { type = addcore which = 1246 where = -1 }
+		command = { type = addcore which = 1247 where = -1 }
+		command = { type = addcore which = 1238 where = -1 }
+		command = { type = addcore which = 1239 where = -1 }
+		command = { type = addcore which = 1240 where = -1 }
+		command = { type = addcore which = 1237 where = -1 }
+		command = { type = addcore which = 1209 where = -1 }
+		command = { type = addcore which = 1210 where = -1 }
+		command = { type = addcore which = 1213 where = -1 }
+		command = { type = addcore which = 1200 where = -1 }
+		command = { type = addcore which = 1206 where = -1 }
+		command = { type = addcore which = 1203 where = -1 }
+		command = { type = addcore which = 1198 where = -1 }
+		command = { type = addcore which = 1197 where = -1 }
+		command = { type = addcore which = 1201 where = -1 }
+	}	
+}
+
+#################################
+### War with the Soviet Union ###
+#################################
+
