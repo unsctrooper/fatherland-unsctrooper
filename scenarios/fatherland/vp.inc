@@ -303,3 +303,6 @@
  # Ireland : 2
  province = { id = 34 points = 1 } # Dublin !!!
  province = { id = 31 points = 1 } # Cork !!!
+ 
+ # Siberia
+ province = { id = 1157 points = 2 } # Kansk
