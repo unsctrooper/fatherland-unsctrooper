@@ -1,0 +1,40 @@
+#####################################
+# List of events - EUROPE
+# Rev. by Pako
+#####################################
+
+# Nationalist Spain
+# 
+# 189057 - Economic reforms first round
+# 189058 - Economic reforms second round
+# 189059 - New occupation law
+# 189220 - Internal politically problems
+# 189222 - Close Radio Sevilla
+# 189223 - State censorship
+# 189224 - Return of the Jesuits
+# 189239 - Social law
+# 189013 - Propose a new Pacto Ibérico ?
+# 189026 - The Pacto Ibérico - POR
+# 189027 - 56th birthday of Generalísimo
+# 189028 - 57th birthday of Generalísimo
+# 189029 - 58th birthday of Generalísimo
+# 189030 - 59th birthday of Generalísimo
+# 189031 - 60th birthday of Generalísimo
+# 189039 - The Republican Government in exile
+# 189123 - Suppression Act
+# 189128 - National shipbuilding company - Bazán
+# 189129 - Security of the State Act
+# 189130 - National Health insurance
+# 189133 - Starvation
+# 189134 - Cinema and Football
+# 189135 - Navy academy
+# 189147 - National foreign agency
+# 189149 - National Tobacco Company
+# 189150 - Change of greet
+# 189158 - Help from Argentina
+# 189159 - The new Real Madrid Stadium
+# 189160 - Purchase of Panzers
+# 189161 - Sale of Panzers - GER
+# 189246 - National railway company - RENFE
+# 189271 - Madrid bombing
+

@@ -34,23 +34,17 @@ event = {
 
 	action = {
 		name = "Ok"
-		command = { type = belligerence value = 3 }		
-		
-        command = { type = dissent value = 5 }
-		
-		command = { type = manpowerpool value = 50 }
-		
+		command = { type = belligerence value = 3 }				
+        command = { type = dissent value = 5 }		
+		command = { type = manpowerpool value = -50 }		
 		command = { type = peacetime_ic_mod value = 7 }		
         command = { type = tc_mod value = 3 }		
         command = { type = research_mod value = 7 }			
 		#	type = 	set_domestic which = [domestic policy type] value = X	
-		# [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism]
-		
+		# [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism]		
 		# type = steal_tech which = [country tag/-1]		
-		command = { type = ambush value = 3 }
-		
-		command = { type = intelligence value = 5 } 
-		
+		command = { type = ambush value = 3 }		
+		command = { type = intelligence value = 5 } 		
 		command = { type = morale which = land value = 1 }
 	}
 }
@@ -101,7 +95,7 @@ event = {
 	action_a = {	
 		name = "A conspiracy of international capitalism"
       	command = { type = dissent value = -1 }
-		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = ENG value = -50 }
 		command = { type = trigger which = 8014103 }
 	}
 	}
@@ -117,8 +111,13 @@ event = {
 	picture = "news_paper"
 	action_a = {
 		name = "Close diplomatical relations and make an embargo to Soviet Union"
-		command = { type = relation which = SOV value = -20 }
-		command = { type = end_trades which = ENG where = SOV }
+		command = { type = relation which = SOV value = -50 }
+		
+		command = { type = embargo which = ENG where = SOV value = 3} # 3 – enforce both trade and tech embargoes
+		command = { type = embargo which = CAN where = SOV value = 3} # 3 – enforce both trade and tech embargoes
+		command = { type = embargo which = AUS where = SOV value = 3} # 3 – enforce both trade and tech embargoes
+		command = { type = embargo which = NZL where = SOV value = 3} # 3 – enforce both trade and tech embargoes
+		
 		command = { type = trigger which = 8014104 }
 		}
 	}

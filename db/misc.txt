@@ -249,6 +249,8 @@ diplomacy = {
 # 0 (default) – only one country can be available (both settings are checked), 1 – regular_id setting is ignored, 
 # 2 – intrinsic_gov_type setting is ignored, 3 - regular_id and intrinsic_gov_type settings are ignored
 	0 #0
+# Enable return of occupied provinces, owned by non-enemy countries. If the province is owned by neutral country, it will be returned only when not in a war zone. 0 - Disabled, 1 - Check every day, 2 - Check every other day and so on.
+	30 #0
 }
 
 combat = {
@@ -266,6 +268,14 @@ combat = {
 	0.7 # 1.0 # 1.3
 # Attrition Severity Modifier
 	0.5 # 0.05
+# Daily attrition for Land units out of supply - Str. loss per day. Weather and terrain attrition add on top of it.
+	0.5 # 0.5
+# Daily attrition for Naval units out of supply - Str. loss per day. Note: Not applied to AI controlled fleets.
+	0.5 # 0.5
+# Daily attrition for Air units out of supply - Str. loss per day.
+	0.0 # 0.0
+# Lowest unit str. for attrition losses. Units with strength equal or lower then THIS will stop receiving attrition damage. Values above 0.0 prevent unit destruction by attrition. [0.5 = 0.5 STR, 100.0 = 100.0 STR etc.]
+	0.5 # 0.0
 # Combat Modifier: Base Proximity
 	0.15
 # Combat Modifier: Total Invasion Mod for each division above three.
@@ -346,6 +356,12 @@ combat = {
 	1.0
 # Convoy escorts model in battles. 0 = use current researched DD model; -1 = use one level below current researched DD model and so on. Do not use fractions and numbers above 0!
 	-1 #-1
+# Convoy transports model in battles. 0 = use current researched TP model; -1 = use one level below current researched TP model and so on. Do not use fractions and numbers above 0!
+	-1 #-100(always use model 0)
+# Chance for each added escort to convoy battles to be a CVE (when this unit type is activated for the country) instead of a DD. Valid values 0-100.
+	10 #0
+# CVE model in convoy battles. 0 = use current researched CVE model; -1 = use one level below current researched CVE model and so on. Do not use fractions and numbers above 0!
+    -1 #0
 # Delay in hours after a combat ends before new orders can be given.	
 	24
 # Maximum sizes of air-stacks
@@ -384,12 +400,16 @@ combat = {
 	0.6
 # Base chance of Naval units to avoid hit if defences left
 	0.6
+# Base chance of units attacked by province AA to avoid hit if defences left
+	0.3 #0.75
 # Base chance of Land units to avoid hit if no defences left.
 	0.9
 # Base chance of Air units to avoid hit if no defences left.
 	0.9
 # Base chance of Naval units to avoid hit if no defences left.
 	0.9
+# Base chance of units attacked by province AA to avoid hit if no defences left.
+	0.9 #-0.01	
 # CHANCE TO GET TERRAIN TRAIT 
 	2400
 # CHANCE TO GET EVENT TRAIT 
@@ -440,6 +460,32 @@ combat = {
 	2 #2
 # Land vs. Air - Str dmg air units takes from land units will increase by land unit org/ this value [multiplier]
 	25.0 #25.0
+# Air vs. Land - Org dmg lower limit - Land units attacked by air units will stop receive ORG damage when ORG drops to or below this absolute ORG value
+	10.0 #10.0
+# Navy vs. Air - Org dmg lower limit - Air units attacking naval units will stop receive ORG damage when ORG drops to or below this absolute ORG value
+	0.0 #10.0
+# Air vs. Navy - Org dmg lower limit - Naval units attacked by air units will stop receive ORG damage when ORG drops to or below this absolute ORG value
+	10.0 #10.0
+# Air vs. Province AA - Org dmg lower limit - Air units attacked by province AA during bombardment will stop receive ORG damage when ORG drops to or below this absolute ORG value
+	0.0 #10.0
+# Carriers vs. Bases - Org dmg per hour - ORG lost each hour by carriers while attacking naval or air bases
+	2.0 #5.0
+# Carriers vs. Bases - Org dmg lower limit - Carriers attacking naval and air bases will stop receive ORG damage (see above) when ORG drops to or below this absolute ORG value
+	10.0 #0.0
+# Carriers vs. Bases - Org dmg hit after bombardment - Carriers attacking naval and air bases will receive this ORG damage after every bombing run. Remaining ORG cannot be less then 'Carriers vs. Bases - Org dmg lower limit' (see above)
+	20.0 #10.0
+# Carriers vs. Bases - Str dmg - Increasing this will increase the STR damage inflicted by carriers to enemy units while attacking enemy bases [multiplier]
+	2.0 #2.0
+# Air vs. Navy - Critical hit chance - Chance for air units to inflict a critical hit (extra STR damage) to ships - checked for each hit inflicted in combat. 0-100 (0 - No critical hits ever, 100 - Every hit is critical)
+	10 #10
+# Air vs. Navy - Str dmg modifier for critical hits inflicted in combats (see above) [multiplier]
+	10.0 #10.0
+# Navy vs. Navy - Critical hit chance - Chance for naval units to inflict a critical hit (extra STR damage) to other ships - checked for each hit inflicted in combat. 0-100 (0 - No critical hits ever, 100 - Every hit is critical)
+	10 #10
+# Navy vs. Navy - Str dmg modifier for critical hits inflicted in combats (see above) [multiplier]
+	10.0 #10.0
+# Land vs. Air - Str dmg air units takes from land units will increase by land unit org/ this value [multiplier] when THIS > 0.0. Ignore this modifier when THIS = 0.0. Use it as multiplier [current org / max org] when THIS = -1.0.
+	-1.0 #25.0
 # Land vs. Air - Org dmg - Increasing this value will increase the org dmg air units takes from land units [multiplier]
 	0.1 #0.003
 # Land vs. Air - Str dmg 2 - Increasing this value will increase the str dmg air units takes from land units [multiplier]
@@ -454,6 +500,9 @@ combat = {
 	1.0 #100.0
 # Land vs. Land - Str dmg - Increasing this will increase STR damage land unit takes in battle with other land units [multiplier]
 	0.0175 #0.1
+# Land vs. Land - Str dmg limit - stop receiving STR damage once this STR limit is reached (prevent unit killing in land combat) and lose all remaining ORG instead. Ignored for Rebels
+#   Set above 0.1 to activate (units with STR less then 0.1 will be killed regardless of this setting)
+	0.5 #0.0	
 # Air vs. Air - Org dmg - Increasing this will increase ORG damage air unit takes in battle with other air units [multiplier]
 	0.4
 # Air vs. Air - Str dmg - Increasing this will increase STR damage air unit takes in battle with other air units [multiplier]
@@ -484,6 +533,14 @@ combat = {
 	1.0 #3.0
 # Pure sub stacks detection modifier ( 0 = subs will never be detected, 1.0 - no change )
 	0.5 #1.0
+# AA - Min inflicted ORG damage - starting value, it is modified before being used.
+	2.0 #2.0
+# AA - Additional inflicted ORG damage (random) - starting value, it is modified before being used. Don't use fractions!
+	2 #2
+# AA - Min inflicted STR damage - starting value, it is modified before being used.
+	1.0 #1.0
+# AA - Additional inflicted STR damage (random) - starting value, it is modified before being used. Don't use fractions!
+	3 #3
 # AA to Naval - Org dmg - Increasing this will increase ORG damage a fleet takes from province AA
 	0.15 #0.15
 # AA to Air - Org dmg - Increasing this will increase ORG damage an air unit takes from province AA
@@ -496,6 +553,20 @@ combat = {
 	0.5 #1
 # AA to Air bonus from radars. [AA power * (1 + Radar size * Radar Efficiency * THIS)].  0 – no radar bonus 
   	0.5 #0
+# Nukes: STR damage to units modifier. [(0.2 + rand[0.0 to 1.0]) * THIS * Nuke Damage Power]. [multiplier]
+	0.5 #0.5
+# Nukes: Max STR damage (as percentage of current STR) to friendly units (except for the bomber unit that drops the nuke). 0.0 - no damage to friendly units, 1.0 - take damage as any other unit. [multiplier]
+	0.5 #1.0
+# Nukes: ORG damage (as percentage of current ORG) to friendly units in province (except for the bomber unit that drops the nuke). 0.0 - no ORG damage to friendly units, 1.0 - 100% org damage [multiplier]
+	0.5 #1.0
+# Nukes: ORG damage (as percentage of current ORG) to enemy or neutral units in province. 0.0 - no ORG damage to affected units, 1.0 - 100% org damage [multiplier]
+	1.0 #1.0
+# Naval bombardment [1] - Chance for attacking bombers to hit the most damaged ship in fleet. [1] + [2] <= 100; 100 - [1] - [2] = chance to hit a random ship. Don't use fractions!
+	50 #50
+# Naval Bombardment [2] - Chance for attacking bombers to hit the best ship in fleet. [1] + [2] <= 100; 100 - [1] - [2] = chance to hit a random ship. Don't use fractions!
+	25 #25
+# Tactical Bombardment - Chance for attacking bombers to hit the most damaged (for Ground Attack mission) or the most disorganized (for Ground Support mission), but still above 0 ORG land unit. Otherwise a random land unit is targeted. 100 - THIS = chance to hit a random unit. Don't use fractions!
+	50 #50	
 # Movement bonus to units under command of leader with terrain trait when moving on such terrain
 	0.05
 # Movement bonus to units under command of leader with terrain trait when moving on similar terrain (Ranger in Jungles for example)
@@ -510,6 +581,64 @@ combat = {
 	0.1 #0.0
 # Organization regain bonus for units on friendly soil cap.
 	1.3 #1.2
+# ORG regain [all] - Enable new ORG regain logic. Following ORG regain modifiers are used only when this is enabled: 0 - disabled (old logic used), 1 - enabled
+	1 #0
+# ORG regain [all] - Morale effect. [1.0 + Morale * THIS]. Multiplier
+	0.01 #0.01
+# ORG regain [all] - Clear weather effect. Multiplier
+	1.0 #1.0
+# ORG regain [all] - Frozen weather effect. Multiplier
+	0.8 #1.0
+# ORG regain [all] - Raining weather effect. Multiplier
+	0.9 #1.0
+# ORG regain [all] - Snowing weather effect. Multiplier
+	0.8 #0.8
+# ORG regain [all] - Storm weather effect. Multiplier
+	0.8 #0.8
+# ORG regain [all] - Blizzard weather effect. Multiplier
+	0.6 #0.6
+# ORG regain [all] - Muddy weather effect. Multiplier
+	0.7 #0.7
+# ORG regain [naval] - Main modifier - higher this is, faster the ORG regain would be. Multiplier
+	1.0 #1.0
+# ORG regain [naval] - Out of fuel modifier. Used when out of fuel. Multiplier
+	0.8 #1.0
+# ORG regain [naval] - Out of supplies modifier. Used when out of supplies. Multiplier
+	0.6 #1.0
+# ORG regain [naval] - Current/Max ORG modifier. [1.0 + (1.0 - Current/Max ORG) * THIS]. Multiplier
+	3.0 #0.0
+# ORG regain [naval] - At naval base modifier. Used when in naval base. [1.0 + Port Size * THIS]. Multiplier
+	0.2 #0.2
+# ORG regain [naval] - At sea modifier. Used when not in a naval base. Multiplier
+	0.8 #1.0
+# ORG regain [air] - Main modifier - higher this is, faster the ORG regain would be. Multiplier
+	1.0 #1.0
+# ORG regain [air] - Out of fuel modifier. Used when out of fuel. Multiplier
+	0.6 #1.0
+# ORG regain [air] - Out of supplies modifier. Used when out of supplies. Multiplier
+	0.8 #1.0
+# ORG regain [air] - Current/Max ORG modifier. [1.0 + (1.0 - Current/Max ORG) * THIS]. Set to 0.0 to ignore. Multiplier
+	3.0 #0.0
+# ORG regain [air] - At airbase Size/Units modifier. Used when in airbase. [1.0 + Air base load (0.01 to 1.0) * THIS]. Multiplier
+	1.0 #1.0
+# ORG regain [air] - Out of airbase modifier. Used when not in airbase. Multiplier
+	0.1 #0.0
+# ORG regain [army] - Main modifier - higher this is, faster the ORG regain would be. Multiplier
+	1.0 #0.75
+# ORG regain [army] - Out of fuel modifier. Used when out of fuel. Multiplier
+	0.9 #1.0
+# ORG regain [army] - Out of supplies modifier. Used when out of supplies. Used as Multiplier when greater or equal to 0.0. Used as flat hourly ORG loss when negative
+	0.6 #-0.05
+# ORG regain [army] - Current/Max ORG modifier. [1.0 + (1.0 - Current/Max ORG) * THIS]. Set to 0.0 to ignore. Multiplier
+	3.0 # 3.0
+# ORG regain [army] - Friendly soil modifier. Used when the unit is in province owned by a friendly nation. Multiplier
+	1.3	#1.3
+# ORG regain [army] - In transportation modifier - Used for loaded on transport ships or planes land units. Multiplier
+	0.5 #0.0
+# ORG regain [army] - Moving modifier - Used when the land unit is moving (not retreating!) to another province. Used as Multiplier when greater or equal to 0.0. Used as flat hourly ORG loss when negative (and not out of supply)
+	0.1 #-0.02
+# ORG regain [army] - Retreating modifier - Used when the land unit is retreating. Set to 0.0 to ignore. Multiplier
+	0.8 #1.0	
 # Convoy interception by naval units on Interdiction, Combat Patrol, Shore Bomb. and ASW missions: 0 disabled for all, 1 - optional for players only (disabled by default), 2 - optional for players (enabled by default) and enabled for AI
 	2 #0 
 # Auto-return transport fleets to base on Amphibious assault and Sea transport missions (players only): 0 - enabled, 1 - enabled by default, optional, 2 - disabled by default, optional
@@ -789,8 +918,6 @@ mission = {
 	0 	# 0 = disabled by default, 1 = enabled by default
 	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
 	0.5	# Speed bonus: (Move time * This / mission_efficiency). Lower the better
-# Use Attack and Support Attack mission efficiencies as land combat modifiers for attackers. 0 – Disable, 1 - Enable
-	1 #0
 }
 
 country = {
@@ -1018,6 +1145,8 @@ ai = {
 	14 #0	
 # Use quick area check (Garrison AI) - could be inaccurate in some rare cases. 1 - Enabled, 0 - Disabled
 	1 # 0
+# Allow release of a new country if any of its provinces are in a current war zone (land connected to enemy province) for the releasing AI country. 1 - Allow the release, 0 - Do not release countries in war zones
+	0 #1
 # AI masters get all provinces conquered by AI puppets. 1 – Yes, 0 – No (old rules)
 	1 #0
 # Min. days after last province controller change required for the AI to release a country using that province. Used by revolters too.
@@ -1026,6 +1155,14 @@ ai = {
 	60 #60
 # Min. days after last province controller change required for the AI to secede a province to allied country (used when neither own or allied capital can supply this province) if the said province is used as supply base
 	120 #120
+# AI unit power calculation [used to calculate attack/defence odds] - usage of current STR and effective ORG in the calculation for land units: 0(old) - [(effective_ORG*3 + STR)/4], 1(new) - [(effective_ORG*STR)]
+	1 #0
+# AI unit power calculation [used to calculate attack/defence odds] - use current Ground Defense Efficiency in the calculation for land units: 0(old) - GDE not used, 1(new) - GDE is used as multiplier
+	1 #0
+# AI unit power calculation [used to calculate attack/defence odds] - min ORG: return 0 power for any division with ORG less then THIS.
+	2.0 #2.0
+# AI unit power calculation [used to calculate attack/defence odds] - min STR: return 0 power for any division with STR less then THIS.
+	1.0 #0.0	
 # Min. required relations between allied countries required for AI to secede claimed by the player provinces to him.
 	150.0 #150.0
 }
@@ -1123,6 +1260,14 @@ mod = {
 	1 #0
 # Set buildings to be buildable only in provinces (from game map view). 0 – Disable, 1 - Enable (Ports, Air Bases, Nuclear Reactors, Rocket Test Sites), 2 - Enable ( 1 +  provincial AA and Radars)
 	0 #0
+# Allow console cheats in multiplayer games: 0 - Disable cheats, 1 - Allow cheats
+	0 #0
+# Disallow manual change of assigned transports and escorts to a convoy (to prevent player exploits, especially in MP games). 0 - Manual change allowed, 1 - Manual change disallowed
+	0 #0
+# Include MP added by attached to the unit brigades in MP cost calculation for repair of damaged units. 0 - Disabled (unit MP used as MP cost base), 1 - Enabled (unit MP + MP for all attachments used as MP cost base) 
+	0 #0
+# Disallow detachment or attachment of brigades to units that are not at least of THIS percentage of their max STR [0.0 - 100.0]. 0.0 - allowed to units at any STR, 100.0 - allowed only to units at max STR. Note: Applied to players only.
+	0.0 #0.0	
 # Unit modifiers statistics page - switch to new style when more then THIS unit types are used per group (land/navy/air)
 	15 #15
 }
