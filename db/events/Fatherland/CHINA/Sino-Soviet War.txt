@@ -1,6 +1,339 @@
 ################################
 ### Sino-Soviet War			 ###
+### By UNSC Trooper			 ###
 ################################
 
-### Sino-Soviet War (if China is not in the Axis) ###
+#########################
+### 1. Generic Peace Events
+#########################
+# Sino-Soviet War (if China is not in the Axis - Axis Exp. Corps)
+# Sino-Soviet War (if China is in the Axis)
+# Sino-Soviet War (if China is in the UN)
+# Sino-Soviet War (if China is not in the UN - UN Exp. Corps)
+
+##################################################
+### 2. Sino-Soviet War started by the Soviet Union
+##################################################
+
+
+### Foreign Policy concerning China (if Zhukov in power)
+#######################################################
+
+event = {
+	id = 810000
+	random = no
+	country = SOV 
+	
+	trigger = { 
+		headofstate = 30154 # Zhukov
+		owned = { province = 1142 data = -1 } # Novosibirsk
+		owned = { province = 1191 data = -1 } # Vladivostok
+		owned = { province = 1157 data = -1 } # Kansk
+		NOT = {
+		exists = U57 # Far East Republic
+		exists = U59 # Empire of Russia
+		exists = SIB # Siberia
+		government = { type = communist country = CHI } # Nat. China is not communist
+		}
+		exists = CHI # Nat. China exists
+		government = communist
+		atwar = no
+	}
+	
+	name = "EVT_810000_NAME"
+	desc = "EVT_810000_DESC"
+	style = 1
+	picture = "fatherland/soviet_soldier" 
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1980 }
+	
+	action = {
+	name = "Nationalist China is a threat to the Soviet state and Communism."
+	ai_chance = 90
+	command = { type = belligerence value = 5 } 
+	command = { type = relation which = CHI value = -40 }
+	command = { type = dissent value = 4 }
+	command = { type = 	domestic which = defense_lobby value = 1 }
+	command = { type = 	domestic which = interventionism value = 1 }
+	command = { type = 	domestic which = professional_army value = 1 }
+	command = { type = 	end_non_aggression which = SOV where = CHI }
+	command = { type = 	setflag which = sov_anti_china }
+	}
+	
+	action = {
+	name = "Nationalist China is America's protege. We do not touch them."
+	ai_chance = 5
+	command = { type = dissent value = 2 }
+	command = { type = 	domestic which = defense_lobby value = -1 }
+	command = { type = 	domestic which = interventionism value = -1 }
+	command = { type = 	domestic which = professional_army value = -1 }
+	}
+	
+	action = {
+	name = "Friendly relations with Nationalist China."
+	ai_chance = 5
+	command = { type = dissent value = 2 }
+	command = { type = relation which = CHI value = 20 }
+	command = { type = belligerence value = -5 } 
+	command = { type = 	domestic which = defense_lobby value = -1 }
+	command = { type = 	domestic which = interventionism value = -1 }
+	command = { type = 	domestic which = professional_army value = -1 }
+	}
+}
+
+### Foreign Policy concerning China (if Molotov in power)
+#######################################################
+
+event = {
+	id = 810001
+	random = no
+	country = SOV 
+	
+	trigger = { 
+		headofstate = 30012 # Molotov
+		owned = { province = 1142 data = -1 } # Novosibirsk
+		owned = { province = 1191 data = -1 } # Vladivostok
+		owned = { province = 1157 data = -1 } # Kansk
+		NOT = {
+		exists = U57 # Far East Republic
+		exists = U59 # Empire of Russia
+		exists = SIB # Siberia
+		government = { type = communist country = CHI } # Nat. China is not communist
+		}
+		exists = CHI # Nat. China exists
+		government = communist
+		atwar = no
+	}
+	
+	name = "EVT_810000_NAME"
+	desc = "EVT_810000_DESC"
+	style = 1
+	picture = "fatherland/soviet_soldier" 
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1980 }
+	
+	action = {
+	name = "Nationalist China is a threat to the Soviet state and Communism."
+	ai_chance = 80
+	command = { type = belligerence value = 5 } 
+	command = { type = relation which = CHI value = -40 }
+	command = { type = dissent value = 4 }
+	command = { type = 	domestic which = defense_lobby value = 1 }
+	command = { type = 	domestic which = interventionism value = 1 }
+	command = { type = 	domestic which = professional_army value = 1 }
+	command = { type = 	end_non_aggression which = SOV where = CHI }
+	command = { type = 	setflag which = sov_anti_china }
+	}
+	
+	action = {
+	name = "Nationalist China is America's protege. We do not touch them."
+	ai_chance = 10
+	command = { type = dissent value = 2 }
+	command = { type = 	domestic which = defense_lobby value = -1 }
+	command = { type = 	domestic which = interventionism value = -1 }
+	command = { type = 	domestic which = professional_army value = -1 }
+	}
+	
+	action = {
+	name = "Friendly relations with Nationalist China."
+	ai_chance = 10
+	command = { type = dissent value = 2 }
+	command = { type = relation which = CHI value = 20 }
+	command = { type = belligerence value = -5 } 
+	command = { type = 	domestic which = defense_lobby value = -1 }
+	command = { type = 	domestic which = interventionism value = -1 }
+	command = { type = 	domestic which = professional_army value = -1 }
+	}
+}
+
+### Foreign Policy concerning China (if Beria in power)
+#######################################################
+
+event = {
+	id = 810002
+	random = no
+	country = SOV 
+	
+	trigger = { 
+		headofstate = 30152 # Beria
+		owned = { province = 1142 data = -1 } # Novosibirsk
+		owned = { province = 1191 data = -1 } # Vladivostok
+		owned = { province = 1157 data = -1 } # Kansk
+		NOT = {
+		exists = U57 # Far East Republic
+		exists = U59 # Empire of Russia
+		exists = SIB # Siberia
+		government = { type = communist country = CHI } # Nat. China is not communist
+		}
+		exists = CHI # Nat. China exists
+		government = communist
+		atwar = no
+	}
+	
+	name = "EVT_810000_NAME"
+	desc = "EVT_810000_DESC"
+	style = 1
+	picture = "fatherland/soviet_soldier" 
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1980 }
+	
+	action = {
+	name = "Nationalist China is a threat to the Soviet state and Communism."
+	ai_chance = 70
+	command = { type = belligerence value = 5 } 
+	command = { type = relation which = CHI value = -40 }
+	command = { type = dissent value = 4 }
+	command = { type = 	domestic which = defense_lobby value = 1 }
+	command = { type = 	domestic which = interventionism value = 1 }
+	command = { type = 	domestic which = professional_army value = 1 }
+	command = { type = 	end_non_aggression which = SOV where = CHI }
+	command = { type = 	setflag which = sov_anti_china }
+	}
+	
+	action = {
+	name = "Nationalist China is America's protege. We do not touch them."
+	ai_chance = 15
+	command = { type = dissent value = 2 }
+	command = { type = 	domestic which = defense_lobby value = -1 }
+	command = { type = 	domestic which = interventionism value = -1 }
+	command = { type = 	domestic which = professional_army value = -1 }
+	}
+	
+	action = {
+	name = "Friendly relations with Nationalist China."
+	ai_chance = 15
+	command = { type = dissent value = 2 }
+	command = { type = relation which = CHI value = 20 }
+	command = { type = belligerence value = -5 } 
+	command = { type = 	domestic which = defense_lobby value = -1 }
+	command = { type = 	domestic which = interventionism value = -1 }
+	command = { type = 	domestic which = professional_army value = -1 }
+	}
+}
+
+# Joint Soviet-Mongolian Front
+#############################
+
+event = {
+	id = 810003
+	random = no
+	country = SOV 
+	
+	trigger = { 
+	OR = {
+	event = 810000
+	event = 810001
+	event = 810002
+	}
+	flag = sov_anti_china
+	NOT = { alliance = { country = SOV country = MON } }
+	}
+	
+	name = "EVT_810003_NAME"
+	desc = "EVT_810003_DESC"
+	style = 1
+	picture = "fatherland/sovietarmy_color" 
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+
+	action = {
+	name = "Offer Mongolia a part in our anti-KMT campaigns."
+	ai_chance = 90
+	command = { type = trigger which = 810004 } # Mongolian alliance offer
+	command = { type = relation which = MON value = 10 }
+	}
+
+	action = {
+	name = "We should keep all the spoils to ourselves"
+	ai_chance = 10
+	command = { type = relation which = MON value = -10 }
+	}
+	}
+	
+# Soviet-Mongolian Front proposal
+#################################
+
+event = {
+	id = 810004
+	random = no
+	country = MON 
+
+	name = "EVT_810004_NAME"
+	desc = "EVT_810004_DESC"
+	style = 1
+	picture = "fatherland/sovietarmy_color" 
+
+	action = {
+	name = "China's place is under Mongolian leadership."
+	ai_chance = 90
+	command = { type =	alliance which = SOV }
+	command = { type = relation which = SOV value = 10 }
+	}
+
+	action = {
+	name = "We have no business in the chaos of China."
+	ai_chance = 10
+	command = { type = relation which = SOV value = -10 }
+	}
+	}
+	
+# Operation Amur Twilight
+#########################
+
+event = {
+	id = 810005
+	random = no
+	country = SOV 
+	
+	decision = { }
+	
+	decision_trigger = { 
+	OR = {
+	event = 810000
+	event = 810001
+	event = 810002
+	}
+	flag = sov_anti_china
+	atwar = no
+	}
+
+	trigger = { 
+	OR = {
+	event = 810000
+	event = 810001
+	event = 810002
+	}
+	flag = sov_anti_china
+	atwar = no
+	}
+	
+	name = "EVT_810005_NAME"
+	desc = "EVT_810005_DESC"
+	style = 1
+	picture = "fatherland/sovietarmy_color" 
+	decision_picture = "fatherland/decision_sovietarmy"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 2
+	deathdate = { day = 12 month = march year = 1980 }
+
+	action = {
+	name = "Destroy the KMT! Liberate China!"
+	command = { type = war which = CHI }
+	}
+	}
+	
+# Mao Zedong offers troops in offensive
+	
+###################################################
+### 3. Sino-Soviet War started by Nationalist China
+###################################################
 
