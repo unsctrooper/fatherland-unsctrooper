@@ -415,8 +415,8 @@ inventions = { 3000027 }
 airunit = { 
 	id = { type = 23602 id = 10 } 
 	name = "Leningradskaya Vozdushnogo Komandovaniya" 
-	location = 542 # Leningrad
-	base = 542 # Leningrad 
+	location = 1164 # Ust Kut
+	base = 1164
 
 	division = { 
 	id = { type = 23602 id = 11 } 
