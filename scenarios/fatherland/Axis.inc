@@ -285,4 +285,80 @@ landunit = {
 	   max_strength = 50
       }
       } 
+	  
+### Axis Task Force in China
+
+
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17345 id = 60 } 
+		name = "1. Bergsjaeger-Division in China"
+			type = bergsjaeger
+			model = 12
+			experience = 40
+			extra = artillery
+		}
+		
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17345 id = 61 } 
+		name = "2. Bergsjaeger-Division in China"
+			type = bergsjaeger
+			model = 12
+			experience = 40
+			extra = artillery
+		}
+		
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17345 id = 62 } 
+		name = "2. Bergsjaeger-Division in China"
+			type = bergsjaeger
+			model = 12
+			experience = 40
+			extra = artillery
+		}
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17345 id = 63 } 
+		name = "Divizia de Vanatori 'Manciuria'"
+			type = bergsjaeger
+			model = 12
+			experience = 25
+		}
+		
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17345 id = 64 } 
+		name = "Brigata Alpina 'Vittoria dell'Asse'"
+			type = bergsjaeger
+			model = 12
+			experience = 30
+		}
+		
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17345 id = 65 } 
+		name = "Panzerdivision 'Sieg der KMT'"
+			type = armor
+			model = 4
+			experience = 30
+		}
+		
+landdivision = {
+		dormant = yes
+
+	     id = { type = 17345 id = 66 } 
+		name = "Panzergrenadierdivision 'Sun Yat Sen'"
+			type = mechanized
+			model = 3
+			experience = 30
+		}
+	 
 }
