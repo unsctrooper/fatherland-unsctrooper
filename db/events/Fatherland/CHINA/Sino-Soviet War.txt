@@ -3,13 +3,119 @@
 ### By UNSC Trooper			 ###
 ################################
 
-#########################
-### 1. Generic Peace Events
-#########################
+#######################
+### 1. Generic  Events
+#######################
 # Sino-Soviet War (if China is not in the Axis - Axis Exp. Corps)
 # Sino-Soviet War (if China is in the Axis)
 # Sino-Soviet War (if China is in the UN)
 # Sino-Soviet War (if China is not in the UN - UN Exp. Corps)
+
+# Support Nationalist China against the Soviets
+###############################################
+
+	event = {
+	id = 811000
+	random = no
+	country = GER 
+	
+	trigger = { 
+	relation = { which = CHI value = -50 }
+	exists = CHI
+	exists = AXI
+	war = { country = CHI country = SOV }	
+	NOT = {
+	war = { country = -1 country = CHI }		
+	war = { country = AXI country = CHI }	
+	alliance = { country = -1 country = CHI }
+	}
+	}
+
+	name = "EVT_811000_NAME"
+	desc = "EVT_811000_DESC"
+	style = 1
+	picture = "nwo/kmt_end_of_instability" 
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+	
+	action = {
+	name = "Offer the Chinese an Axis expeditionary force."
+	ai_chance = 80
+	command = { type = trigger which = 811001 } # Chinese response
+	command = { type = 	relation which = CHI value = 15 }
+	}
+	
+	action = {
+	name = "Offer an Axis expeditionary force and control their army."
+	command = { type = trigger which = 811001 } # Chinese response
+	command = { trigger = { ai = no } type = military_control which = GER where = CHI value = 1 }
+	command = { trigger = { ai = no } type = military_control which = GER where = AXI value = 1 }
+	command = { type = 	relation which = CHI value = 15 }
+	}
+	
+	action = {
+	name = "What happens in Asia is none of our business."
+	ai_chance = 20
+	command = { type = 	relation which = CHI value = -15 }
+	}
+}
+
+# The Axis offers an Expeditionary Force
+########################################
+
+	event = {
+	id = 811001
+	random = no
+	country = CHI 
+
+	name = "EVT_811001_NAME"
+	desc = "EVT_811001_DESC"
+	style = 1
+	picture = "fatherland/german_warposter" 
+
+	action = {
+	name = "We need the support of the Axis!"
+	ai_chance = 80
+	command = { type = alliance which = AXI }
+	command = { type = trigger which = 811002 } # Axis Divisions activate in China
+	command = { type = 	relation which = GER value = 15 }
+	command = { type = 	relation which = AXI value = 15 }
+	}
+	
+	action = {
+	name = "The Axis is just another enemy of the Chinese people."
+	ai_chance = 20
+	command = { type = 	relation which = GER value = -15 }
+	command = { type = 	relation which = AXI value = -15 }
+	}
+	}
+
+# China accepts our proposal
+################################
+
+	event = {
+	id = 811002
+	random = no
+	country = AXI 
+
+	name = "EVT_811002_NAME"
+	desc = "EVT_811002_DESC"
+	style = 1
+	picture = "fatherland/german_warposter" 
+	
+	action = {
+	name = "Deploy the task force to China!"
+	command = { type = activate_division which = 17345 value = 60  where = 1338 when = 0 }
+	command = { type = activate_division which = 17345 value = 61  where = 1338 when = 0 }
+	command = { type = activate_division which = 17345 value = 62  where = 1338 when = 0 }
+	command = { type = activate_division which = 17345 value = 63  where = 1338 when = 0 }
+	command = { type = activate_division which = 17345 value = 64  where = 1338 when = 0 }
+	command = { type = activate_division which = 17345 value = 65  where = 1338 when = 0 }
+	}
+}
+
 
 ##################################################
 ### 2. Sino-Soviet War started by the Soviet Union
@@ -42,7 +148,7 @@ event = {
 	
 	name = "EVT_810000_NAME"
 	desc = "EVT_810000_DESC"
-	style = 1
+	style = 2
 	picture = "fatherland/soviet_soldier" 
 	
 	date = { day = 1 month = january year = 1948 }
@@ -109,7 +215,7 @@ event = {
 	
 	name = "EVT_810000_NAME"
 	desc = "EVT_810000_DESC"
-	style = 1
+	style = 2
 	picture = "fatherland/soviet_soldier" 
 	
 	date = { day = 1 month = january year = 1948 }
@@ -176,7 +282,7 @@ event = {
 	
 	name = "EVT_810000_NAME"
 	desc = "EVT_810000_DESC"
-	style = 1
+	style = 2
 	picture = "fatherland/soviet_soldier" 
 	
 	date = { day = 1 month = january year = 1948 }
@@ -237,7 +343,7 @@ event = {
 	
 	name = "EVT_810003_NAME"
 	desc = "EVT_810003_DESC"
-	style = 1
+	style = 2
 	picture = "fatherland/sovietarmy_color" 
 	
 	date = { day = 1 month = january year = 1948 }
@@ -268,7 +374,7 @@ event = {
 
 	name = "EVT_810004_NAME"
 	desc = "EVT_810004_DESC"
-	style = 1
+	style = 2
 	picture = "fatherland/sovietarmy_color" 
 
 	action = {
@@ -293,7 +399,15 @@ event = {
 	random = no
 	country = SOV 
 	
-	decision = { }
+	decision = {
+	OR = {
+	event = 810000
+	event = 810001
+	event = 810002
+	}
+	flag = sov_anti_china
+	atwar = no
+	}
 	
 	decision_trigger = { 
 	OR = {
@@ -317,7 +431,7 @@ event = {
 	
 	name = "EVT_810005_NAME"
 	desc = "EVT_810005_DESC"
-	style = 1
+	style = 2
 	picture = "fatherland/sovietarmy_color" 
 	decision_picture = "fatherland/decision_sovietarmy"
 	
@@ -327,11 +441,52 @@ event = {
 
 	action = {
 	name = "Destroy the KMT! Liberate China!"
+	ai_chance = 100
 	command = { type = war which = CHI }
 	}
 	}
 	
-# Mao Zedong offers troops in offensive
+# Chinese Communist Party joins our offensive
+#############################################
+
+event = {
+	id = 810006
+	random = no
+	country = SOV
+	
+	trigger = {
+	war = { country = CHI country = -1 }
+	government = communist
+	}
+	
+	name = "EVT_810006_NAME"
+	desc = "EVT_810006_DESC"
+	style = 2
+	picture = "nwo/mao_leads"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+	
+	action = {
+	name = "Their troops will aid us in Manchuria."
+	ai_chance = 95
+	command = { type = add_corps which = "CCP Expeditionary Force" value = land when = 30819 where = 1190 }
+	command = { type = add_division which = "1. CCP Volunteer Brigade" value = infantry when = 11 where = artillery }
+	command = { type = add_division which = "2. CCP Volunteer Brigade" value = infantry when = 11 }
+	command = { type = add_division which = "CCP Mountain Hunter Brigade" value = bergsjaeger when = 11 where = artillery }
+	command = { type = manpowerpool value = 40 }
+	command = { type = supplies value = -200 }
+	}
+	
+	action = {
+	name = "We don't need more mouths to feed."
+	ai_chance = 5
+	command = { type = morale which = land value = 1 }
+	}
+	}
+
+# Soviets set up Communist China after war
 	
 ###################################################
 ### 3. Sino-Soviet War started by Nationalist China
