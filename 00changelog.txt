@@ -1,12 +1,14 @@
 #######################################################
-# Changelog for Beta version ?
+# Changelog for Beta version 5.0 codename ?
 #######################################################
+
+#Events/Decision Modified (*) or Added (+) or Removed (-)
 
 #Inc
 	- Revision inc for Germany (Nuclear)
 	- Revision inc for USA (Nuclear,New Cabinet)
-	- Revisione inc for Italy (Nuclear)
-	- Revisione inc for United Kingdom (Nuclear)
+	- Revision inc for Italy (Nuclear)
+	- Revision inc for United Kingdom (Nuclear)
 	- Revision inc for Soviet Union	(Nuclear)
 
 	
