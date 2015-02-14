@@ -315,16 +315,6 @@ landdivision = {
  		dormant = yes
 
 	     id = { type = 17345 id = 62 } 
-		name = "2. Bergsjaeger-Division in China"
-			type = bergsjaeger
-			model = 12
-			experience = 40
-			extra = artillery
-		}
-landdivision = {
- 		dormant = yes
-
-	     id = { type = 17345 id = 63 } 
 		name = "Divizia de Vanatori 'Manciuria'"
 			type = bergsjaeger
 			model = 12
@@ -334,7 +324,7 @@ landdivision = {
 landdivision = {
  		dormant = yes
 
-	     id = { type = 17345 id = 64 } 
+	     id = { type = 17345 id = 63 } 
 		name = "Brigata Alpina 'Vittoria dell'Asse'"
 			type = bergsjaeger
 			model = 12
@@ -344,7 +334,7 @@ landdivision = {
 landdivision = {
  		dormant = yes
 
-	     id = { type = 17345 id = 65 } 
+	     id = { type = 17345 id = 64 } 
 		name = "Panzerdivision 'Sieg der KMT'"
 			type = armor
 			model = 4
@@ -354,7 +344,7 @@ landdivision = {
 landdivision = {
 		dormant = yes
 
-	     id = { type = 17345 id = 66 } 
+	     id = { type = 17345 id = 65 } 
 		name = "Panzergrenadierdivision 'Sun Yat Sen'"
 			type = mechanized
 			model = 2
