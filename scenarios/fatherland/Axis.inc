@@ -357,7 +357,7 @@ landdivision = {
 	     id = { type = 17345 id = 66 } 
 		name = "Panzergrenadierdivision 'Sun Yat Sen'"
 			type = mechanized
-			model = 3
+			model = 2
 			experience = 30
 		}
 	 
