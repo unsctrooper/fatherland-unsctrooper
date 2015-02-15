@@ -602,6 +602,8 @@ event = {
 
 	action = {
 	name = "Great!"
+	command = { type = headofstate which = 260848 }
+	command = { type = headofgovernment which = 260849 }
 	command = { type = 	set_domestic which = democratic value = 1 }
 	command = { type = 	set_domestic which = political_left value = 9 }
 	command = { type = 	set_domestic which = freedom value = 8 }
@@ -615,6 +617,8 @@ event = {
 	command = { type = add_division which = "CCP. 2. Infantry" value = infantry when = 13 where = armored_car }
 	command = { type = add_division which = "CCP. 3. Infantry" value = infantry when = 13 where = artillery }
 	command = { type = add_division which = "CCP. 1. Tank Division" value = armor when = 3 where = artillery }
+	command = { type = manpowerpool value = 200 }
+	command = { type = supplies value = 400 }
 	}
 	}
 
