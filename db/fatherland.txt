@@ -59,7 +59,7 @@ event = "db\events\fatherland\asia\japan.txt"
 
 # CHINA
 event = "db\events\fatherland\china\Post-CCW.txt"
-event = "db\events\fatherland\china\Sino-Soviet War.txt"
+event = "db\events\fatherland\china\Sino-Russian Wars.txt"
 
 # AXIS EUROPE
 event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
