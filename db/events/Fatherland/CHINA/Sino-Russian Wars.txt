@@ -1,5 +1,5 @@
 ################################
-### Sino-Russian Wars			 ###
+### Sino-Russian Wars		 ###
 ### By UNSC Trooper			 ###
 ################################
 
@@ -165,9 +165,6 @@ event = {
 	
 	trigger = { 
 		headofstate = 30154 # Zhukov
-		owned = { province = 1142 data = -1 } # Novosibirsk
-		owned = { province = 1191 data = -1 } # Vladivostok
-		owned = { province = 1157 data = -1 } # Kansk
 		NOT = {
 		exists = U57 # Far East Republic
 		exists = U59 # Empire of Russia
@@ -232,9 +229,6 @@ event = {
 	
 	trigger = { 
 		headofstate = 30012 # Molotov
-		owned = { province = 1142 data = -1 } # Novosibirsk
-		owned = { province = 1191 data = -1 } # Vladivostok
-		owned = { province = 1157 data = -1 } # Kansk
 		NOT = {
 		exists = U57 # Far East Republic
 		exists = U59 # Empire of Russia
@@ -299,9 +293,6 @@ event = {
 	
 	trigger = { 
 		headofstate = 30152 # Beria
-		owned = { province = 1142 data = -1 } # Novosibirsk
-		owned = { province = 1191 data = -1 } # Vladivostok
-		owned = { province = 1157 data = -1 } # Kansk
 		NOT = {
 		exists = U57 # Far East Republic
 		exists = U59 # Empire of Russia
@@ -554,6 +545,11 @@ event = {
 	picture = "nwo/mao_leads"
 	decision_picture = "fatherland/decision_redstar"
 	
+		date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+
+	
 	action = {
 	name = "Set up the People's Republic of China"
 	ai_chance = 40
@@ -627,6 +623,127 @@ event = {
 
 	
 ###################################################
-### 3. Sino-Soviet War started by Nationalist China
+### 3. Sino-Russian Wars started by Nationalist China
 ###################################################
 
+### The Eastern Dragon Awakes ###
+
+event = {
+	id = 810009
+	random = no
+	country = CHI
+	
+	decision = { 
+	event = 8200145 # The Price of Victory - CHI
+	NOT = {
+	war = { country = -1 country = U57 }	
+	war = { country = -1 country = SOV }	
+	war = { country = -1 country = MON }	
+	war = { country = -1 country = SIB }	
+	}
+	}
+
+	trigger = {
+	event = 8200156 # Congress of China - Economic Policy - CHI
+	NOT = {
+	war = { country = -1 country = U57 }	
+	war = { country = -1 country = SOV }	
+	war = { country = -1 country = MON }	
+	war = { country = -1 country = SIB }	
+	}
+	}
+
+	decision_trigger = {
+	event = 8200156
+	NOT = {
+	war = { country = -1 country = U57 }	
+	war = { country = -1 country = SOV }	
+	war = { country = -1 country = MON }	
+	war = { country = -1 country = SIB }	
+	}
+	}
+	
+	name = "EVT_810009_NAME"
+	desc = "EVT_810009_DESC"
+	style = 1
+	picture = "fatherland/chinese_dragon"
+	decision_picture = "fatherland/decision_usarmy"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+
+	action = {
+	name = "Expand into the Far East Republic."
+	ai_chance = 30
+	command = { trigger = { exists = U57 } type = war which = U57 }
+	command = { type = 	belligerence value = 5 }
+	command = { type = 	dissent value = 5 }
+	}
+	
+	action = {
+	name = "Expand into Siberia."
+	ai_chance = 10
+	command = { trigger = { exists = SIB } type = war which = SIB }
+	command = { type = 	belligerence value = 5 }
+	command = { type = 	dissent value = 5 }
+	}
+	
+	action = {
+	name = "Advance into Mongolia."
+	ai_chance = 20
+	command = { trigger = { exists = MON } type = war which = MON }
+	command = { type = 	belligerence value = 5 }
+	command = { type = 	dissent value = 2 }
+	}
+	
+	action = {
+	name = "Smash the Soviet Union once and for all."
+	ai_chance = 40
+	command = { trigger = { exists = SOV } type = war which = SOV }
+	command = { type = 	belligerence value = 5 }
+	command = { type = 	dissent value = 7 }
+	}
+	
+	}
+	
+### The Bear and the Dragon ###
+
+event = {
+	id = 810010
+	random = no
+	country = CHI
+
+	trigger = { 
+	owned = { province = 1191 data = SOV }
+	NOT = {
+	war = { country = -1 country = SOV }	
+	}
+	army = { size = 45 type = 1 when = 0 where = 0 which = 0 country = -1 }	# China has at least 45 inf.
+	}
+
+	name = "EVT_810010_NAME"
+	desc = "EVT_810010_DESC"
+	style = 1
+	picture = "fatherland/chinese_dragon"
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+
+	action = {
+	name = "Smash the Soviet Union once and for all."
+	ai_chance = 75
+	command = { type = war which = SOV }
+	command = { type = 	belligerence value = 5 }
+	command = { type = 	dissent value = 5 }
+	}
+	
+	action = {
+	name = "Hold off for now."
+	ai_chance = 25
+	command = { type = 	belligerence value = -2 }
+	}
+	
+	}
+	

@@ -596,7 +596,6 @@ event = {
 	}
 }
 
-##### Activate German divisions in China if China is in Axis !!!! #####
 ##### Americans and Soviets declare war on Axis China !!!! #####
 
 ##### Coup against pro-Soviet government #####
@@ -724,6 +723,12 @@ event = {
 	NOT = { exists = CHC }
 	event = 8200145 # The price of victory
 	event = { id = 8200145 days = 1840 } # 5 years have passed since winning Civil War
+	atwar = no
+	owned = { province = 1297 data = -1 }
+	owned = { province = 1298 data = -1 }
+	owned = { province = 1317 data = -1 }
+	owned = { province = 1337 data = -1 }
+	owned = { province = 1338 data = -1 }
 	}
 	
 		date = { day = 1 month = january year = 1945 }
