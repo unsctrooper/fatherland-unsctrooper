@@ -40,6 +40,7 @@ rare_materials         = 500
    manpower               = 3670
    transports             = 100 
    escorts                = 2 
+   dissent = 15
     
   diplomacy =
   { 
