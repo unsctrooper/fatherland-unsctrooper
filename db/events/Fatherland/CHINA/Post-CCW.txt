@@ -309,7 +309,7 @@ event = {
 	action = {
 	ai_chance = 90
 	name = "Centralization - crusade against warlords!"
-	command = { type = dissent value = 17 }
+	command = { type = dissent value = 10 }
 	command = { type = set_domestic which = freedom value = 3 }
 	command = { type = set_domestic which = professional_army value = 8 }
 	command = { type = manpowerpool value = 150 }
@@ -737,7 +737,7 @@ event = {
 
 	action = {
 		name = "We have lost the people's hearts and minds."
-		command = { type = dissent value = -10 }
+		command = { type = dissent value = -20 }
 		command = { type = peacetime_ic_mod value = 10 }
 		command = { type = addcore which = 1301 where = -1 }
 		command = { type = addcore which = 1302 where = -1 }
