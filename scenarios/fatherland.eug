@@ -5,25 +5,20 @@ header = {
 	startdate  = { year = 1948 }
 	selectable = { AXI AFG ARG AST BHU BOL BRA BUL CAN CHC CHI TRA COS CRO CUB DEN DOM ECU EGY ENG FIN U01 GER GUA HAI HON HUN ICL INO IRQ IRE ITA JAP JOR LEB UTC LIB MEX MON MTN NEP NIC NZL OMN PAN PAR PER POR PRU PHI ROM SAF SAU SLO SIK SOV SPA SYR SWE TAN SIA TIB TUR URU USA VEN YEM 
 				   U42 U44 HOL U45 U46 U40 U03 U41 IND BEL WLL PAK FRA CMB LAO VIE ETH SER BLR U57 U58 UPE U59 SIB U47 SCH }  
+				   
   GER        = { desc = "GER_1948_DESC" }
   ITA        = { desc = "ITA_1948_DESC" }
-  FIN 	     = { desc = "FIN_1948_DESC" }
-  SPA        = { desc = "SPA_1948_DESC" }
-
-
-
-
  
   ENG        = { desc = "ENG_1948_DESC" }
   USA        = { desc = "USA_1948_DESC" }
   U01 	     = { desc = "U01_1948_DESC" }
 
-
-
-
   SOV        = { desc = "SOV_1948_DESC" }
   CHC        = { desc = "CHC_1948_DESC" }
   CHI        = { desc = "CHI_1948_DESC" }
+  
+  ALS 	     = { desc = "ALS_1948_DESC" }
+  AXI        = { desc = "AXI_1948_DESC" }
 
 }
 globaldata = { 
