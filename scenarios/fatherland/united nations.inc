@@ -1,6 +1,6 @@
  
  ############################## 
- # Country definition for U58 # 
+ # Country definition for ALS # 
  ############################## 
   
  country = 
@@ -18,7 +18,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    supplies               = 200 
    money                  = 10 
    manpower               = 10
-   capital                =  1795 # New York
+   capital                = 1795 # New York
        
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
@@ -187,16 +187,16 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
      relation = { tag = AXI value = -150  } 
     } 
    SpyInfo                = {  country = "ALS" NumberOfSpies = 1  } 
-   #headofstate            = {  type = 9 id = 1105001  } 
-   #headofgovernment       = {  type = 9 id = 1105002  } 
-   #foreignminister        = {  type = 9 id = 1105003  } 
-   #armamentminister       = {  type = 9 id = 1105004  } 
-   #ministerofsecurity     = {  type = 9 id = 1105005  } 
-   #ministerofintelligence = {  type = 9 id = 1105006  } 
-   #chiefofstaff           = {  type = 9 id = 1105007  } 
-   #chiefofarmy            = {  type = 9 id = 1105008  } 
-   #chiefofnavy            = {  type = 9 id = 1105009  } 
-   #chiefofair             = {  type = 9 id = 1105010  }
+   #headofstate            = {  type = 9 id = 199101  } 
+   #headofgovernment       = {  type = 9 id = 199102  } 
+   #foreignminister        = {  type = 9 id = 199103  } 
+   #armamentminister       = {  type = 9 id = 199104  } 
+   #ministerofsecurity     = {  type = 9 id = 199105  } 
+   #ministerofintelligence = {  type = 9 id = 199106  } 
+   #chiefofstaff           = {  type = 9 id = 199107  } 
+   #chiefofarmy            = {  type = 9 id = 199108  } 
+   #chiefofnavy            = {  type = 9 id = 199109  } 
+   #chiefofair             = {  type = 9 id = 199110  }
   
 landunit = {
  id = { type = 17346  id = 29 }
