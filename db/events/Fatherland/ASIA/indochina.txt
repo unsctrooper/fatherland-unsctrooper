@@ -1,60 +1,46 @@
-########################
-# Cambodia and Cochinchina
-########################
-# 90001000 # The Treaty of Franco-Cambodian friendship (CMB)
-# 90001001 # The Treaty of Franco-Cambodian friendship (Indochinese Union)
-# 90001002 # The Vietnamese reaction to the acknoledgement of cambodian claims (VIE)
-########################################
-# The French in Indochina
-########################################
-# 90001003 # U01 # The Treaty of Fontainebleau - What to do now?
-# 90001004 # U03 # Orders from the Capital
-# 90001005 #  # 
-# 90001006 #  # 
-# 90001007 #  # 
-# 90001008 #  # 
-# 90001009 #  # 
-# 90001010 #  # 
-# 90001011 #  # 
-# 90001012 #  # 
-# 90001013 #  # 
-# 90001014 #  # 
-########################################
-event = {
-id = 90001000
-random = no
-country = CMB
-style = 2
-picture = "news_paper"
+# ##########################
+# Indochina by Pako
+# ##########################
+# 90001000 - The Treaty of Franco-Cambodian friendship - CMB - 11/1949
+# 90001001 - The Treaty of Franco-Cambodian friendship - U03
+# 90001002 - The Vietnamese reaction - VIE
+# 90001003 - Revolts in North Vietnam - U03
+# 90001004 - The North Vietnam revolution - U03
+# 90001005 - The Indochina reaction - U03
+# 90001006 - The North Vietnam People's Army - U27
 
-trigger = {
-exists = U03
-ispuppet = CMB
+event = {
+	id = 90001000
+	random = no
+	country = CMB
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		exists = U03
+		ispuppet = CMB
 	}
 
+	date = { day = 8 month = november year = 1949 }	
 
-date = { day = 8 month = november year = 1949 }	
+	name = "The Treaty of Franco-Cambodian friendship"
+	desc = "We are now autonomous inside the Indochinese Union for more than 3 years, and our relations with the French are better than ever. Howewer, we are now preparing for our full independance, wich shall take place in 1951, and we should ask the french to recognize now ours claims to Cochinchina if we want to ever take it back..."
 
-name = "The Treaty of Franco-Cambodian friendship"
-desc = "We are now autonomous inside the Indochinese Union for more than 3 years, and our relations with the French are better than ever. Howewer, we are now preparing for our full independance, wich shall take place in 1951, and we should ask the french to recognize now ours claims to Cochinchina if we want to ever take it back..."
-
-
-	action_a = {
+	action = {
 		ai_chance = 100
 		name = "Sign the Treaty, and ask the French to acknoledge our claims!"
-	        command = { type = dissent value = -5 }
-            command = { type = addcore   which = 1399  }
-            command = { type = addcore   which = 1403  }
-			command = { type = trigger which = 90001001 }
+		command = { type = dissent value = -5 }
+		command = { type = addcore which = 1399  }
+		command = { type = addcore which = 1403  }
+		command = { type = trigger which = 90001001 }
 		}
 
-	action_b = {
-
+	action = {
 		ai_chance = 0
 		name = "Sign it without mentionning Cochinchina."
-	        command = { type = dissent value = 1 }
-			command = { type = relation which = U03 value = 25 }
-		}
+		command = { type = dissent value = 1 }
+		command = { type = relation which = U03 value = 25 }
+	}
 }
 event = {
 	id = 90001001 
@@ -66,18 +52,18 @@ event = {
 	style = 2
 	picture = "news_paper"	
 
-	action_a = {
-	name = "Recognize them, we will decide whom to give the province when we leave!"
-	ai_chance = 100
-	command = { type = setflag which = CMBCLAIMs }
-	command = { type = relation which = CMB value = 50 }
-	command = { type = trigger which = 90001002 }	
+	action = {
+		name = "Recognize them, we will decide whom to give the province when we leave!"
+		ai_chance = 100
+		command = { type = setflag which = CMBCLAIMs }
+		command = { type = relation which = CMB value = 50 }
+		command = { type = trigger which = 90001002 }	
 	}
-	action_b = {
-	name = "No, that would be betraying the Treaty of Fontainebleau."
-	ai_chance = 0
-	command = { type = relation which = VIE value = 25 }
-	command = { type = relation which = CMB value = -25 }
+	action = {
+		name = "No, that would be betraying the Treaty of Fontainebleau."
+		ai_chance = 0
+		command = { type = relation which = VIE value = 25 }
+		command = { type = relation which = CMB value = -25 }
 	}
 }
 event = {
@@ -94,5 +80,1971 @@ event = {
 		name = "How they dare? Saigon is Viet!"
 		command = { type = relation which = U03 value = -50 }
 		command = { type = relation which = CMB value = -50 }
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 90001003
+	random = no
+	
+	country = U03	
+	
+	trigger = {
+		event = 90001002
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 90
+	deathdate = { day = 29 month = august year = 1950 }
+	
+	name = "Revolts in North Vietnam"
+	desc = "After ours acknowledge of the treacherous cambodians claims on Cochinchina, at Hanoi a commie insurrection destroy the palace of goverment of the autonomus State of Vietnam. Dissolve the Autonomous Government and send the troops to Hanoi."
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Send troops to Hanoi and dissolve the Autonomous State of Vietnam"
+		command = { type = dissent value = 5 }
+		command = { type = inherit which = VIE }
+	}
+}
+event = {
+	id = 90001004
+	random = no
+	country = U03	
+	
+	name = "The North Vietnam revolution"
+	desc = "At Hanoi the the uprising became a revolution, the Socialist Democratic Republic of Vietnam is proclaimed!"
+	style = 2
+	picture = "news_paper"	
+
+	trigger = {
+		event = 90001003
+	}
+
+	date = { day = 1 month = september year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = november year = 1950 }
+	
+	action = {
+		name = "The Socialist Democratic Republic of Vietnam is proclaimed!"
+		command = { type = independence which = U72 }
+		command = { type = relation which = U72 value = -50 }
+		command = { type = dissent value = 5 }		
+	}
+}
+event = {
+	id = 90001005
+	random = no
+	country = U03	
+	
+	name = "The Indochina reaction"
+	desc = "In response at the Socialist Democratic Republic of Vietnam we must made a new puppet Vietnamese State"
+	style = 2
+	picture = "news_paper"	
+
+	trigger = {
+		event = 90001004
+	}
+
+	date = { day = 1 month = december year = 1950 }
+	offset = 25
+	deathdate = { day = 29 month = january year = 1951 }
+	
+	action = {
+		name = "Made a new puppet Vietnamese State"
+		command = { type = dissent value = -3 }		
+		command = { type = relation which = U27 value = -50 }
+		command = { type = independence which = VIE }
 		}
+}
+event = {
+	id = 90001006
+	random = no
+	country = U27
+	
+	trigger = {
+		exists = U27
+		event = 90001004
+	}
+	
+	name = "Creation of the North Vietnam People's Army"
+	desc = "Creation of the North Vietnam People's Army"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = december year = 1950 }
+	offset = 15
+	deathdate = { day = 29 month = january year = 1951 }
+
+	action = {
+	name = "Create the Army"
+	command = { type = add_corps which = "1st North Vietnam Army" value = land where = 1395 }
+	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+	command = { type = add_corps which = "1st Vietcong Army" value = land where = 1395 }
+	command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "4th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
+	}
+}
+event = {
+	id = 90001007
+	random = no
+	country = VIE
+	
+	trigger = {
+		exists = U27
+		event = 90001006
+	}
+	
+	name = "Creation of the South Viet Army"
+	desc = "Creation of the South Viet Army"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = december year = 1950 }
+	offset = 15
+	deathdate = { day = 29 month = january year = 1951 }
+
+	action = {
+	name = "Create the Army"
+	command = { type = add_corps which = "1st South Vietnam Army" value = land where = 1397 }
+	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+	command = { type = add_corps which = "1st South Vietnam Army" value = land where = 1397 }
+	command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+	command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
+	}
+}
+event = {
+	id = 8228001
+	country = U01
+
+	name = EVT_8228001_NAME
+	desc = EVT_8228001_DESC
+	picture = nwo\french_vietnam
+	style = 1
+	
+	trigger = {
+		exists = VIE
+		exists = U72
+	}
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1955 }
+
+	# Let's ask Americans and Chinese for assistance (they may help but also give Vietnam to Chinese)
+	action = {
+		name = EVT_8228001_A
+		ai_chance = 60
+		trigger = { 
+			OR = {
+				alliance = { country = USA } 
+				relation = { which = USA value = 100 }
+			}
+		}
+		command = { type = dissent value = 3 }
+		command = { type = trigger which = 8228002 }
+		command = { type = manpowerpool value = -40 }
+		command = { type = supplies value = -2000 }
+		command = { type = money value = -500 }
+	}
+	
+	# Let's cope with it alone
+	action = {
+		name = EVT_8228001_B
+		ai_chance = 30
+		command = { type = dissent value = 10 }
+		command = { type = setflag which = french_full_support_in_vietnam }
+		command = { type = manpowerpool value = -40 }
+		command = { type = supplies value = -2000 }
+		command = { type = money value = -500 }
+		command = { type = dissent value = 2 }
+	}
+	
+	# Provide limited support
+	action = {
+		name = EVT_8228001_B
+		ai_chance = 8
+		command = { type = dissent value = 14 }
+		command = { type = setflag which = french_limited_support_in_vietnam }
+		command = { type = manpowerpool value = -20 }
+		command = { type = supplies value = -1000 }
+		command = { type = money value = -200 }
+		command = { type = dissent value = 2 }
+	}
+	
+	# Prepare to leave Indochina
+	action = {
+		name = EVT_8228001_C
+		ai_chance = 2
+		command = { type = dissent value = 20 }
+		command = { type = domestic which = interventionism value = -2 }
+		command = { type = end_mastery which = U03 }
+		command = { type = end_mastery which = VIE } 
+		command = { type = end_mastery which = LAO }
+		command = { type = independence which = CMB }
+		command = { type = independence which = LAO }
+		command = { type = independence which = VIE }
+		command = { type = peace which = u72 }
+	}
+
+}
+
+### USA responds to the French
+
+event = {
+	id = 8228002
+	country = USA
+
+	name = EVT_8228002_NAME
+	desc = EVT_8228002_DESC
+	picture = nwo\french_vietnam
+	style = 1
+
+	# Let's ask Chiang to help
+	action = {
+		name = EVT_8228002_A
+		trigger = { 
+			relation = { which = CHI value = 50 }
+			NOT = { flag = CHC_won_civil_war }
+		}
+		ai_chance = 60
+		command = { type = relation which = CHI value = 10 }
+		command = { type = relation which = U01 value = -100 }
+		command = { type = trigger which = 8228003 }
+	}
+	
+	# Let's stay neutral
+	action = {
+		name = EVT_8228002_B
+		ai_chance = 30
+		command = { type = relation which = U01 value = -50 }
+	}
+	
+	# Help the French at once!
+	action = {
+		name = EVT_8228001_C
+		ai_chance = 10
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = U01 value = 100 }
+		command = { type = supplies value = -2000 }
+		command = { type = money value = -500 }
+		command = { type = trigger which = 8228005 }
+	}
+
+}
+
+### Chiang is asked to invade Vietnam
+
+event = {
+	id = 8228003
+	country = CHI
+
+	name = EVT_8228003_NAME
+	desc = EVT_8228003_DESC
+	picture = nwo\chinese_vietnam
+	style = 1
+
+	# Never!
+	action = {
+		name = EVT_8228003_A
+		ai_chance = 75
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	
+	# Let's attack the South
+	action = {
+		name = EVT_8228003_B
+		ai_chance = 25
+		command = { type = war which = U72 }
+		command = { type = war which = VIE }
+		command = { type = dissent value = 20 }
+		command = { type = belligerence value = 50 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = U01 value = -150 }
+	}
+
+}
+
+### Americans help out the French in First Indochina War
+
+event = {
+	id = 8228005
+	country = VIE
+
+	name = EVT_8228005_NAME
+	desc = EVT_8228005_DESC
+	picture = nwo\american_support_for_vietnam
+	style = 1
+
+	action = {
+		name = EVT_8228005_A
+		command = { type = dissent value = -15 }
+		command = { type = relation which = USA value = 100 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = marine when = 6 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+	}
+
+}
+
+### War erupts
+
+event = {
+	id = 8228010
+	country = U72
+	persistent = yes
+
+	name = EVT_8228010_NAME
+	desc = EVT_8228010_DESC
+	picture = nwo\first_indochina_war
+	decision_picture = nwo\d_first_indochina_war
+	style = 1	
+
+	decision = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = VIE
+		##flag = cold_war_pacific
+	}
+
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = VIE
+		#flag = cold_war_pacific
+	}
+
+	date = { day = 1 month = july year = 1946 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = EVT_8228010_A #"It is time for war!"
+		ai_chance = 25
+		command = { type = war which = VIE }
+	}	
+
+	action = {
+		name = EVT_8228010_B #"The time is not ripe"
+		ai_chance = 75
+		trigger = { ai = yes }
+		command = { type = relation which = VIE value = 1 }
+	}	
+}
+
+event = {
+	id = 8228011
+	country = VIE
+	persistent = yes
+
+	name = EVT_8228011_NAME
+	desc = EVT_8228011_DESC
+	picture = nwo\first_indochina_war
+	decision_picture = nwo\d_first_indochina_war
+	style = 1	
+
+	decision = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = U72
+		#flag = cold_war_pacific
+	}
+
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = U72
+		#flag = cold_war_pacific
+	}
+
+	date = { day = 1 month = july year = 1946 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = EVT_8228011_A #"It is time for war!"
+		ai_chance = 25
+		command = { type = war which = U72 }
+	}	
+
+	action = {
+		name = EVT_8228011_B #"The time is not ripe"
+		ai_chance = 75
+		trigger = { ai = yes }
+		command = { type = relation which = U72 value = 1 }
+	}	
+}
+
+### Vietnamese states get assistance
+
+event = {
+	id = 8228020
+	country = U72
+	persistent = yes
+
+	name = EVT_8228020_NAME
+	desc = EVT_8228020_DESC
+	picture = nwo\north_vietnam
+	style = 1	
+
+	trigger = {
+		war = { country = U72 country = VIE }
+		random = 50
+	}
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228020_A #"Great to see!"
+		ai_chance = 100
+		command = { trigger = { random = 15 } type = add_division value = infantry when = 12 }
+		command = { trigger = { NOT = { flag = CHI_won_civil_war } } type = add_division value = militia when = 7 }
+		command = { trigger = { random = 5 } type = add_division value = militia when = 7 }
+	}	
+
+	action = {
+		name = EVT_8228020_B #"We want supplies instead"
+		ai_chance = 0
+		command = { type = supplies value = 1000 }
+	}	
+}
+
+event = {
+	id = 8228021
+	country = VIE
+	persistent = yes
+
+	name = EVT_8228021_NAME
+	desc = EVT_8228021_DESC
+	picture = nwo\south_vietnam
+	style = 1	
+
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228021_A #"Great to see!"
+		ai_chance = 100
+		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
+		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
+		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
+		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
+		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
+		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
+		command = { trigger = { OR = { flag = french_full_support_in_vietnam flag = french_limited_support_in_vietnam } } type = add_division value = infantry when = 12 }
+		command = { trigger = { flag = french_full_support_in_vietnam } type = add_division value = infantry when = 12 }
+	}	
+
+	action = {
+		name = EVT_8228021_B #"We want supplies instead"
+		ai_chance = 0
+		command = { type = supplies value = 1000 }
+	}	
+}
+
+# French assistance for South Vietnam
+event = {
+	id = 8228022
+	country = U01
+	persistent = yes
+
+	name = EVT_8228022_NAME
+	desc = EVT_8228022_DESC
+	picture = nwo\french_in_south_vietnam
+	decision_picture = nwo\d_french_in_south_vietnam
+	style = 1	
+
+	decision = {
+		war = { country = U72 country = VIE }
+		puppet = { country = VIE country = U01 }
+		OR = {
+			flag = french_full_support_in_vietnam
+			flag = french_limited_support_in_vietnam
+		}
+	}
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		puppet = { country = VIE country = U01 }
+		OR = {
+			flag = french_full_support_in_vietnam
+			flag = french_limited_support_in_vietnam
+		}
+	}
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228022_A #Increase support
+		ai_chance = 1
+		trigger = { flag = french_limited_support_in_vietnam }
+		command = { type = clrflag which = french_limited_support_in_vietnam }
+		command = { type = setflag which = french_full_support_in_vietnam }
+		command = { type = manpowerpool value = -40 }
+		command = { type = supplies value = -2000 }
+		command = { type = money value = -500 }
+		command = { type = dissent value = 2 }
+	}	
+	
+	action = {
+		name = EVT_8228022_B #Decrease support
+		ai_chance = 2
+		
+		command = { trigger = { flag = french_full_support_in_vietnam } type = clrflag which = french_full_support_in_vietnam }
+		command = { trigger = { flag = french_full_support_in_vietnam } type = setflag which = french_limited_support_in_vietnam }
+		command = { trigger = { flag = french_full_support_in_vietnam } type = manpowerpool value = 10 }
+		command = { trigger = { flag = french_full_support_in_vietnam } type = supplies value = 500 }
+		command = { trigger = { flag = french_full_support_in_vietnam } type = money value = 100 }
+		command = { trigger = { flag = french_full_support_in_vietnam } type = dissent value = -2 }
+		
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = clrflag which = french_full_support_in_vietnam }
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = clrflag which = french_limited_support_in_vietnam }
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = manpowerpool value = 10 }
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = supplies value = 500 }
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = money value = 100 }
+	
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = end_mastery which = VIE }
+		command = { trigger = { flag = french_limited_support_in_vietnam } type = dissent value = 12 }
+	}
+	
+	action = {
+		name = EVT_8228022_C #Don't change anything
+		trigger = { ai = yes }
+		ai_chance = 97
+		command = { type = money value = 1 }
+	}	
+}
+
+# Battle of Na San - hedgehog tactics
+event = {
+	id = 8228030
+	country = VIE
+
+	name = EVT_8228030_NAME
+	desc = EVT_8228030_DESC
+	picture = nwo\south_vietnam
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		puppet = { country = VIE country = U01 }
+		random = 50
+	}
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228030_A
+		ai_chance = 100
+		command = { type = add_division value = bergsjaeger when = 12 where = artillery }
+		command = { type = add_division value = bergsjaeger when = 12 where = artillery }
+		command = { trigger = { random = 50 } type = add_division value = bergsjaeger when = 12 where = artillery }
+		command = { trigger = { random = 50 } type = add_division value = bergsjaeger when = 12 where = artillery }
+		command = { type = dissent value = -7 }
+	}	
+}
+
+# Tassigny takes over command
+event = {
+	id = 8228031
+	country = VIE
+
+	name = EVT_8228031_NAME
+	desc = EVT_8228031_DESC
+	picture = nwo\south_vietnam
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		puppet = { country = VIE country = U01 }
+		random = 50
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = EVT_8228031_A
+		ai_chance = 100
+		command = { trigger = { control = { province = 1396 data = -1 } } type = construct which = land_fort where = 1396 value = 2 }
+		command = { trigger = { control = { province = 1397 data = -1 } } type = construct which = land_fort where = 1397 value = 2 }
+		command = { trigger = { control = { province = 1399 data = -1 } } type = construct which = land_fort where = 1399 value = 2 }
+		command = { type = dissent value = -5 }
+	}	
+}
+
+# Mao wins the war
+event = {
+	id = 8228032
+	country = U72
+
+	name = EVT_8228032_NAME
+	desc = EVT_8228032_DESC
+	picture = nwo\north_vietnam
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		flag = CHC_won_civil_war
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228032_A	
+		ai_chance = 100
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = supplies value = 5000 }
+		command = { type = dissent value = -10 }
+	}	
+}
+
+# Battle of Dien Bien Phu
+event = {
+	id = 8228033
+	country = U72
+
+	name = EVT_8228033_NAME
+	desc = EVT_8228033_DESC
+	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		random = 50
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228033_A
+		ai_chance = 100
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = bergsjaeger when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = dissent value = -10 }
+	}	
+}
+
+# South Vietnam grows weary
+event = {
+	id = 8228034
+	country = VIE
+
+	name = EVT_8228034_NAME
+	desc = EVT_8228034_DESC
+	picture = nwo\south_vietnam
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8228034_A
+		ai_chance = 100
+		command = { type = dissent value = 5 }
+		command = { trigger = { event = 8228033 } type = dissent value = 10 }
+	}	
+}
+
+### Geneva conference
+
+# Geneva Conference - France gives green light
+event = {
+	id = 8228040
+	country = U01
+	persistent = yes
+
+	name = EVT_8228040_NAME
+	desc = EVT_8228040_DESC
+	picture = nwo\geneva_conference
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		puppet = { country = VIE country = U01 }
+	}
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228040_A
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+		command = { type = belligerence value = 15 }
+	}	
+	
+	action = {
+		name = EVT_8228040_B
+		ai_chance = 20
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = trigger which = 8228041 }
+		command = { type = trigger which = 8228042 }
+	}	
+}
+
+# Both Vietnam states agree
+
+event = {
+	id = 8228041
+	country = U72
+
+	name = EVT_8228041_NAME
+	desc = EVT_8228041_DESC
+	picture = nwo\geneva_conference
+	style = 1	
+
+	action = {
+		name = EVT_8228041_A
+		ai_chance = 100
+		command = { type = dissent value = -3 }
+	}	
+	
+	action = {
+		name = EVT_8228041_B
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 8228043 }
+	}	
+}
+
+event = {
+	id = 8228042
+	country = VIE
+
+	name = EVT_8228042_NAME
+	desc = EVT_8228042_DESC
+	picture = nwo\geneva_conference
+	style = 1	
+
+	action = {
+		name = EVT_8228042_A
+		ai_chance = 100
+		command = { type = dissent value = -3 }
+	}	
+	
+	action = {
+		name = EVT_8228042_B
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 8228043 }
+	}
+}
+
+# Geneva Accord
+event = {
+	id = 8228043
+	country = VIE
+
+	name = EVT_8228043_NAME
+	desc = EVT_8228043_DESC
+	picture = nwo\geneva_conference
+	style = 1	
+
+	action = {
+		name = EVT_8228043_A
+		ai_chance = 100
+		command = { type = peace which = U72 }
+	}
+}
+
+### All-country elections
+
+# North Vietnam agrees
+event = {
+	id = 8228050
+	country = U72
+
+	name = EVT_8228050_NAME
+	desc = EVT_8228050_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+	
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		event = 8228043
+		exists = VIE
+	}
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228050_A
+		ai_chance = 95
+		command = { type = dissent value = -3 }
+		command = { type = trigger which = 8228051 }
+	}	
+	
+	action = {
+		name = EVT_8228050_B
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 10 }
+	}	
+}
+
+# South Vietnam declines
+event = {
+	id = 8228051
+	country = VIE
+
+	name = EVT_8228051_NAME
+	desc = EVT_8228051_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228051_A
+		ai_chance = 75
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 10 }
+	}	
+	
+	action = {
+		name = EVT_8228051_B
+		ai_chance = 25
+		command = { type = dissent value = -3 }
+		command = { type = trigger which = 8228052 }
+	}	
+}
+
+# Organization of elections
+event = {
+	id = 8228052
+	country = U72
+
+	name = EVT_8228052_NAME
+	desc = EVT_8228052_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+	
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		event = 8228051
+		exists = VIE
+	}
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228052_A # Rig the elections!
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = vietnamese_elections_rigged_by_U72 }
+	}	
+	
+	action = {
+		name = EVT_8228052_B # Let elections go mostly fair
+		ai_chance = 10
+		command = { type = dissent value = -5 }
+	}	
+}
+
+event = {
+	id = 8228053
+	country = U72
+
+	name = EVT_8228053_NAME
+	desc = EVT_8228053_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+	
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		event = 8228051
+		exists = VIE
+	}
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228053_A # Rig the elections!
+		ai_chance = 90
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = vietnamese_elections_rigged_by_VIE }
+	}	
+	
+	action = {
+		name = EVT_8228053_B # Let elections go mostly fair
+		ai_chance = 10
+		command = { type = dissent value = -5 }
+	}	
+}
+
+# Outcome of elections
+
+event = {
+	id = 8228054
+	country = REB
+
+	name = EVT_8228054_NAME
+	desc = EVT_8228054_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+	
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		event = 8228052
+		event = 8228053
+		exists = VIE
+		exists = U72
+	}
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	# Both elections are rigged (note: Nth Vietnam is slightly denser populated)
+	action = {
+		name = EVT_8228054_A # North Vietnam wins!
+		ai_chance = 80
+		trigger = { 
+			flag = vietnamese_elections_rigged_by_U72
+			flag = vietnamese_elections_rigged_by_VIE 
+		}
+		command = { type = trigger which = 8228060 }
+	}	
+	
+	action = {
+		name = EVT_8228054_B # South Vietnam wins!
+		ai_chance = 20
+		trigger = { 
+			flag = vietnamese_elections_rigged_by_U72
+			flag = vietnamese_elections_rigged_by_VIE 
+		}
+		command = { type = trigger which = 8228062 }
+	}
+	
+	# Northern elections are rigged, southern are not
+	action = {
+		name = EVT_8228054_A # North Vietnam wins!
+		ai_chance = 99
+		trigger = { 
+			flag = vietnamese_elections_rigged_by_U72
+			NOT = { flag = vietnamese_elections_rigged_by_VIE }
+		}
+		command = { type = trigger which = 8228064 }
+	}	
+	
+	action = {
+		name = EVT_8228054_B # South Vietnam wins!
+		ai_chance = 1
+		trigger = { 
+			flag = vietnamese_elections_rigged_by_U72
+			NOT = { flag = vietnamese_elections_rigged_by_VIE }
+		}
+		command = { type = trigger which = 8228066 }
+	}
+	
+	# Southern elections are rigged, northern are not
+	action = {
+		name = EVT_8228054_A # North Vietnam wins!
+		ai_chance = 4
+		trigger = { 
+			NOT = { flag = vietnamese_elections_rigged_by_U72 }
+			flag = vietnamese_elections_rigged_by_VIE
+		}
+		command = { type = trigger which = 8228068 }
+	}	
+	
+	action = {
+		name = EVT_8228054_B # South Vietnam wins!
+		ai_chance = 96
+		trigger = { 
+			NOT = { flag = vietnamese_elections_rigged_by_U72 }
+			flag = vietnamese_elections_rigged_by_VIE
+		}
+		command = { type = trigger which = 8228070 }
+	}
+	
+	# Both elections are free and fair
+	action = {
+		name = EVT_8228054_A # North Vietnam wins!
+		ai_chance = 55
+		trigger = { 
+			NOT = { flag = vietnamese_elections_rigged_by_U72 }
+			NOT = { flag = vietnamese_elections_rigged_by_VIE }
+		}
+		command = { type = trigger which = 8228072 }
+	}	
+	
+	action = {
+		name = EVT_8228054_B # South Vietnam wins!
+		ai_chance = 45
+		trigger = { 
+			NOT = { flag = vietnamese_elections_rigged_by_U72 }
+			NOT = { flag = vietnamese_elections_rigged_by_VIE }
+		}
+		command = { type = trigger which = 8228074 }
+	}
+}
+
+### Both elections are rigged
+
+event = {
+	id = 8228060
+	country = VIE
+
+	name = EVT_8228060_NAME
+	desc = EVT_8228060_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228060_A # Denounce the results!
+		ai_chance = 85
+		command = { type = war which = U72 }
+		command = { type = dissent value = 12 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228060_B # Accept results (Game Over)
+		ai_chance = 15
+		command = { type = trigger which = 8228061 }
+	}	
+}
+
+event = {
+	id = 8228061
+	country = U72
+
+	name = EVT_8228061_NAME
+	desc = EVT_8228061_DESC
+	picture = nwo\united_vietnam_under_hanoi
+	style = 1	
+
+	action = {
+		name = EVT_8228061_A
+		command = { type = inherit which = VIE } # Vietnam will be left-wing radical
+	}
+}
+
+event = {
+	id = 8228062
+	country = U72
+
+	name = EVT_8228062_NAME
+	desc = EVT_8228062_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228060_A # Denounce the results!
+		ai_chance = 80
+		command = { type = war which = VIE }
+		command = { type = dissent value = 15 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228062_B # Accept results (Game Over)
+		ai_chance = 20
+		command = { type = trigger which = 8228063 }
+	}	
+}
+
+event = {
+	id = 8228063
+	country = VIE
+
+	name = EVT_8228063_NAME
+	desc = EVT_8228063_DESC
+	picture = nwo\united_vietnam_under_saigon
+	style = 1	
+
+	action = {
+		name = EVT_8228063_A
+		command = { type = inherit which = U72 } # Vietnam will be social conservative
+	}
+}
+
+### Only northern elections are rigged
+event = {
+	id = 8228064
+	country = VIE
+
+	name = EVT_8228064_NAME
+	desc = EVT_8228064_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228064_A # Denounce the results!
+		ai_chance = 95
+		command = { type = war which = U72 }
+		command = { type = dissent value = 8 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228060_B # Accept results (Game Over)
+		ai_chance = 5
+		command = { type = trigger which = 8228065 }
+	}	
+}
+
+event = {
+	id = 8228065
+	country = U72
+
+	name = EVT_8228065_NAME
+	desc = EVT_8228065_DESC
+	picture = nwo\united_vietnam_under_hanoi
+	style = 1	
+
+	action = {
+		name = EVT_8228065_A
+		command = { type = inherit which = VIE } # Vietnam will be leninist
+	}
+}
+
+event = {
+	id = 8228066
+	country = U72
+
+	name = EVT_8228066_NAME
+	desc = EVT_8228066_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228066_A # Denounce the results!
+		ai_chance = 70
+		command = { type = war which = VIE }
+		command = { type = dissent value = 25 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228066_B # Accept results (Game Over)
+		ai_chance = 30
+		command = { type = trigger which = 8228067 }
+	}	
+}
+
+event = {
+	id = 8228067
+	country = VIE
+
+	name = EVT_8228067_NAME
+	desc = EVT_8228067_DESC
+	picture = nwo\united_vietnam_under_saigon
+	style = 1	
+
+	action = {
+		name = EVT_8228067_A
+		command = { type = inherit which = U72 } # Vietnam will be paternal autocrat
+	}
+}
+
+### Only southern elections are rigged
+event = {
+	id = 8228068
+	country = VIE
+
+	name = EVT_8228068_NAME
+	desc = EVT_8228068_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228068_A # Denounce the results!
+		ai_chance = 70
+		command = { type = war which = U72 }
+		command = { type = dissent value = 25 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228068_B # Accept results (Game Over)
+		ai_chance = 30
+		command = { type = trigger which = 8228069 }
+	}	
+}
+
+event = {
+	id = 8228069
+	country = U72
+
+	name = EVT_8228069_NAME
+	desc = EVT_8228069_DESC
+	picture = nwo\united_vietnam_under_hanoi
+	style = 1	
+
+	action = {
+		name = EVT_8228069_A
+		command = { type = inherit which = VIE } # Vietnam will be leninist
+	}
+}
+
+event = {
+	id = 8228070
+	country = U72
+
+	name = EVT_8228070_NAME
+	desc = EVT_8228070_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228066_A # Denounce the results!
+		ai_chance = 70
+		command = { type = war which = VIE }
+		command = { type = dissent value = 8 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228066_B # Accept results (Game Over)
+		ai_chance = 30
+		command = { type = trigger which = 8228071 }
+	}	
+}
+
+event = {
+	id = 8228071
+	country = VIE
+
+	name = EVT_8228071_NAME
+	desc = EVT_8228071_DESC
+	picture = nwo\united_vietnam_under_saigon
+	style = 1	
+
+	action = {
+		name = EVT_8228071_A
+		command = { type = inherit which = U72 } # Vietnam will be paternal autocrat
+	}
+}
+
+### Elections are totally free
+event = {
+	id = 8228072
+	country = VIE
+
+	name = EVT_8228072_NAME
+	desc = EVT_8228072_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228072_A # Denounce the results!
+		ai_chance = 50
+		command = { type = war which = U72 }
+		command = { type = dissent value = 30 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228072_B # Accept results (Game Over)
+		ai_chance = 50
+		command = { type = trigger which = 8228073 }
+	}	
+}
+
+event = {
+	id = 8228073
+	country = U72
+
+	name = EVT_8228073_NAME
+	desc = EVT_8228073_DESC
+	picture = nwo\united_vietnam_under_hanoi
+	style = 1	
+
+	action = {
+		name = EVT_8228073_A
+		command = { type = inherit which = VIE } # Vietnam will be social liberal
+	}
+}
+
+event = {
+	id = 8228074
+	country = U72
+
+	name = EVT_8228074_NAME
+	desc = EVT_8228074_DESC
+	picture = nwo\vietnam_elections
+	style = 1	
+
+	action = {
+		name = EVT_8228074_A # Denounce the results!
+		ai_chance = 50
+		command = { type = war which = VIE }
+		command = { type = dissent value = 30 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}	
+	
+	action = {
+		name = EVT_8228074_B # Accept results (Game Over)
+		ai_chance = 50
+		command = { type = trigger which = 8228075 }
+	}	
+}
+
+event = {
+	id = 8228075
+	country = VIE
+
+	name = EVT_8228075_NAME
+	desc = EVT_8228075_DESC
+	picture = nwo\united_vietnam_under_saigon
+	style = 1	
+
+	action = {
+		name = EVT_8228075_A
+		command = { type = inherit which = U72 } # Vietnam will be market liberal
+	}
+}
+
+### War erupts
+
+event = {
+	id = 8228100
+	country = U72
+	persistent = yes
+
+	name = EVT_8228100_NAME
+	desc = EVT_8228100_DESC
+	picture = nwo\second_indochina_war
+	decision_picture = nwo\d_second_indochina_war
+	style = 1	
+
+	decision = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = VIE
+		#flag = cold_war_pacific
+	}
+
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = VIE
+		#flag = cold_war_pacific
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228100_A #"It is time for war!"
+		ai_chance = 25
+		command = { type = war which = VIE }
+	}	
+
+	action = {
+		name = EVT_8228100_B #"The time is not ripe"
+		ai_chance = 75
+		trigger = { ai = yes }
+		command = { type = relation which = VIE value = 1 }
+	}	
+}
+
+event = {
+	id = 8228101
+	country = VIE
+	persistent = yes
+
+	name = EVT_8228101_NAME
+	desc = EVT_8228101_DESC
+	picture = nwo\second_indochina_war
+	decision_picture = nwo\d_second_indochina_war
+	style = 1	
+
+	decision = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = U72
+		#flag = cold_war_pacific
+	}
+
+	trigger = {
+		NOT = { war = { country = U72 country = VIE } }
+		exists = U72
+		#flag = cold_war_pacific
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228101_A #"It is time for war!"
+		ai_chance = 25
+		command = { type = war which = U72 }
+	}	
+
+	action = {
+		name = EVT_8228101_B #"The time is not ripe"
+		ai_chance = 75
+		trigger = { ai = yes }
+		command = { type = relation which = U72 value = 1 }
+	}	
+}
+
+### Second Indochina War assistance
+
+event = {
+	id = 8228110
+	country = U72
+	persistent = yes
+
+	name = EVT_8228110_NAME
+	desc = EVT_8228110_DESC
+	picture = nwo\vietcong
+	style = 1	
+
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 240
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = EVT_8228110_A
+		ai_chance = 100
+		command = { type = add_division value = militia when = 8 }
+		command = { trigger = { random = 10 } type = add_division value = militia when = 8 }
+		command = { trigger = { random = 5 } type = add_division value = infantry when = 15 }
+	}	
+
+	action = {
+		name = EVT_8228110_B
+		ai_chance = 0
+		command = { type = supplies value = 500 }
+	}	
+}
+
+event = {
+	id = 8228111
+	country = VIE
+	persistent = yes
+
+	name = EVT_8228111_NAME
+	desc = EVT_8228111_DESC
+	picture = nwo\americans_in_vietnam
+	style = 1	
+
+	trigger = {
+		war = { country = U72 country = VIE }
+		flag = vietnam_war_limited_usa_assistance
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 240
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = EVT_8228111_A
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = add_division value = infantry when = 15 }
+		command = { type = add_division value = marine when = 9 }
+		command = { trigger = { random = 50 } type = add_division value = marine when = 9 }
+		command = { trigger = { random = 30 } type = add_division value = cavalry when = 14 }
+		command = { trigger = { random = 10 } type = add_division value = cavalry when = 14 }
+	}	
+
+	action = {
+		name = EVT_8228111_B
+		ai_chance = 0
+		command = { type = supplies value = 1500 }
+	}	
+}
+
+event = {
+	id = 8228112
+	country = VIE
+	persistent = yes
+
+	name = EVT_8228112_NAME
+	desc = EVT_8228112_DESC
+	picture = nwo\americans_in_vietnam
+	style = 1	
+
+	trigger = {
+		war = { country = U72 country = VIE }
+		flag = vietnam_war_total_usa_assistance
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228111_A
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = add_division value = marine when = 9 }
+		command = { type = add_division value = marine when = 9 }
+		command = { trigger = { random = 80 } type = add_division value = cavalry when = 14 }
+		command = { trigger = { random = 50 } type = add_division value = cavalry when = 14 }
+	}	
+
+	action = {
+		name = EVT_8228111_B
+		ai_chance = 0
+		command = { type = supplies value = 2500 }
+	}	
+}
+
+### American decide whether to help Vietnam
+
+event = {
+	id = 8228120
+	country = USA
+
+	name = EVT_8228120_NAME
+	desc = EVT_8228120_DESC
+	picture = nwo\vietnam_war
+	style = 1	
+
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1957 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228120_A # Offer limited help
+		ai_chance = 80
+		command = { type = relation which = VIE value = 150 }
+		command = { type = relation which = U72 value = -150 }
+		command = { type = dissent value = -5 }
+		command = { type = setflag which = vietnam_war_limited_usa_assistance }
+	}	
+	
+	action = {
+		name = EVT_8228120_B # Offer far-reaching help
+		ai_chance = 15
+		command = { type = relation which = VIE value = 300 }
+		command = { type = relation which = U72 value = -300 }
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = setflag which = vietnam_war_total_usa_assistance }
+	}	
+
+	action = {
+		name = EVT_8228120_C # Stay neutral
+		ai_chance = 5
+		command = { type = dissent value = 8 }
+		command = { type = domestic which = interventionism value = -1 }
+	}	
+}
+
+### Miscellanneous events
+
+event = {
+	id = 8228130
+	country = VIE
+
+	name = EVT_8228130_NAME
+	desc = EVT_8228130_DESC
+	picture = nwo\strategic_hamlet_program
+	decision_picture = nwo\d_strategic_hamlet_program
+	style = 1	
+
+	decision = {
+		war = { country = U72 country = VIE }
+	}
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1957 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228130_A
+		ai_chance = 85
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = dissent value = -5 }
+		command = { type = supplies value = -400 }
+	}	
+	
+	action = {
+		name = EVT_8228130_B
+		ai_chance = 15
+		trigger = { ai = yes }
+		command = { type = money value = 200 }
+	}
+}
+
+event = {
+	id = 8228131
+	country = U72
+
+	name = EVT_8228131_NAME
+	desc = EVT_8228131_DESC
+	picture = nwo\le_duan
+	style = 1	
+
+	decision = {
+		war = { country = U72 country = VIE }
+	}
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1958 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228131_A
+		ai_chance = 85
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = dissent value = -5 }
+	}	
+	
+	action = {
+		name = EVT_8228131_B
+		ai_chance = 15
+		trigger = { ai = yes }
+		command = { type = domestic which = freedom value = 1 }
+	}
+}
+
+# Coup d'etat against Ngo Dinh Diem
+event = {
+	id = 8228132
+	country = VIE
+	one_action = yes
+
+	name = EVT_8228132_NAME
+	desc = EVT_8228132_DESC
+	picture = nwo\ngo_dinh_diem_dead
+	style = 1	
+
+	decision = {
+		war = { country = U72 country = VIE }
+	}
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1958 }
+	offset = 720
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228132_A
+		ai_chance = 85
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+		command = { type = dissent value = 10 }
+	}	
+	
+	action = {
+		name = EVT_8228132_B
+		ai_chance = 15
+		command = { type = dissent value = 20 }
+	}
+}
+
+### Turmoil in South Vietnam
+event = {
+	id = 8228140
+	country = VIE
+
+	name = EVT_8228140_NAME
+	desc = EVT_8228140_DESC
+	picture = nwo\vietcong_attacks
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+	}
+
+	date = { day = 1 month = january year = 1970 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_8228140_A
+		command = { type = dissent value = 5 }
+		command = { type = remove_division which = -1 }
+	}
+}
+
+### Americans change their level of engagement in Vietnam and feel its results
+event = {
+	id = 8228150
+	country = USA
+
+	name = EVT_8228150_NAME
+	desc = EVT_8228150_DESC
+	picture = nwo\vietnam_war_protests
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		OR = {
+			flag = vietnam_war_limited_usa_assistance
+			flag = vietnam_war_total_usa_assistance
+		}
+	}
+
+	date = { day = 1 month = january year = 1958 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228150_A
+		command = { trigger = { flag = vietnam_war_limited_usa_assistance } type = dissent value = 3 }
+		command = { trigger = { flag = vietnam_war_total_usa_assistance } type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8228151
+	country = USA
+
+	name = EVT_8228151_NAME
+	desc = EVT_8228151_DESC
+	picture = nwo\vietnam_war
+	decision_picture = nwo\d_vietnam_war
+	style = 1	
+	
+	decision = {
+		war = { country = U72 country = VIE }
+		OR = {
+			flag = vietnam_war_limited_usa_assistance
+			flag = vietnam_war_total_usa_assistance
+		}
+	}
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		OR = {
+			flag = vietnam_war_limited_usa_assistance
+			flag = vietnam_war_total_usa_assistance
+		}
+	}
+
+	date = { day = 1 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	# More involvement
+	action = {
+		name = EVT_8228151_A
+		trigger = { flag = vietnam_war_limited_usa_assistance }
+		ai_chance = 5
+		command = { type = clrflag which = vietnam_war_limited_usa_assistance }
+		command = { type = setflag which = vietnam_war_total_usa_assistance }
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+	# Less involvement
+	action = {
+		name = EVT_8228151_B
+		trigger = { flag = vietnam_war_total_usa_assistance }
+		ai_chance = 5
+		command = { type = clrflag which = vietnam_war_total_usa_assistance }
+		command = { type = setflag which = vietnam_war_limited_usa_assistance }
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	
+	# Pull out
+	action = {
+		name = EVT_8228151_C
+		trigger = { flag = vietnam_war_limited_usa_assistance }
+		ai_chance = 1
+		command = { type = clrflag which = vietnam_war_limited_usa_assistance }
+		command = { type = clrflag which = vietnam_war_total_usa_assistance }
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+	
+	# Let it stay
+	action = {
+		name = EVT_8228151_D
+		ai_chance = 94
+		trigger = { ai = yes }
+		command = { type = money value = 1 }
+	}
+}
+
+### Both countries get IC boost
+event = {
+	id = 8228198
+	country = U72
+
+	name = EVT_8228198_NAME
+	desc = EVT_8228198_DESC
+	picture = nwo\north_vietnam
+	style = 1	
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228198_A
+		command = { type = construct which = ic where = 1395 value = 4 }
+	}
+}
+
+event = {
+	id = 8228199
+	country = VIE
+
+	name = EVT_8228199_NAME
+	desc = EVT_8228199_DESC
+	picture = nwo\south_vietnam
+	style = 1	
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228199_A
+		command = { type = construct which = ic where = 1399 value = 4 }
+	}
+}
+
+# Ho Chi Minh trail
+
+event = {
+	id = 8228200
+	country = U72
+
+	name = EVT_8228200_NAME
+	desc = EVT_8228200_DESC
+	picture = nwo\ho_chi_minh_trail
+	decision_picture = nwo\d_ho_chi_minh_trail
+	style = 1	
+	
+	decision = {
+		war = { country = U72 country = VIE }
+		exists = LAO
+		NOT = { war = { country = LAO } }
+	}
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		exists = LAO
+		NOT = { war = { country = LAO } }
+	}
+
+	date = { day = 1 month = january year = 1959 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8228200_A
+		ai_chance = 99
+		command = { type = supplies value = -1000 }
+		command = { type = trigger which = 8228201 }
+	}
+	
+	action = {
+		name = EVT_8228200_B
+		ai_chance = 1
+		trigger = { ai = yes }
+		command = { type = money value = 1 }
+	}
+}
+
+event = {
+	id = 8228201
+	country = LAO
+
+	name = EVT_8228201_NAME
+	desc = EVT_8228201_DESC
+	picture = nwo\ho_chi_minh_trail
+	style = 1	
+	
+	action = {
+		name = EVT_8228201_A
+		command = { type = access which = U72 }
+	}
 }

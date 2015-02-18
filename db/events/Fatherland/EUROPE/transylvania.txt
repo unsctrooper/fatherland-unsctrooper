@@ -134,6 +134,7 @@ event = {
 	name = ACTION_NAME_OK
 	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 	command = { type = set_relation which = GER value = -150 } 
+	command = { type = ai_prepare_war which = ROM }
 	}
 }
 event = {
@@ -150,6 +151,7 @@ event = {
 	name = ACTION_NAME_OK
 	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	command = { type = set_relation which = GER value = -150 }
+	command = { type = ai_prepare_war which = HUN }	
 	}
 }
 #Conference events 90000004-90000010

@@ -8,10 +8,10 @@ event = {
 		local_flag = Tannenbaum
 	}
 	decision_trigger = { 
-	event = { id = 817 days = 30 } 
+	event = { id = 817 days = 120 } 
 	}
 	trigger = {
-	event = { id = 817 days = 30 } 
+	event = { id = 817 days = 120 } 
 	}
 	
 	date = { day = 1 month = january year = 1948 }
