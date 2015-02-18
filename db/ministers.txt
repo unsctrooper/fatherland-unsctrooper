@@ -7,6 +7,7 @@ ministers_ara.csv
 ministers_arg.csv
 ministers_arm.csv
 ministers_ast.csv
+ministers_als.csv
 ministers_aus.csv
 ministers_azb.csv
 ministers_bel.csv
