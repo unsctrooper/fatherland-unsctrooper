@@ -17,8 +17,8 @@ header = {
   CHC        = { desc = "CHC_1948_DESC" }
   CHI        = { desc = "CHI_1948_DESC" }
   
-  ALS 	     = { desc = "ALS_1948_DESC" }
   AXI        = { desc = "AXI_1948_DESC" }
+  ALS 	     = { desc = "ALS_1948_DESC" }
 
 }
 globaldata = { 
