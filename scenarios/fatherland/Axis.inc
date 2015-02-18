@@ -18,7 +18,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
    supplies               = 200 
    money                  = 10 
    manpower               = 10
-   capital                = 1050 
+   capital                = 157 
        
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
