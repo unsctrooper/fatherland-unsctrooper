@@ -136,6 +136,11 @@
 	desc = "EVT_811003_DESC"
 	style = 1
 	picture = "fatherland/german_gathering" 
+	
+		date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+
 
 	action = {
 	name = "Control the Axis forces."
@@ -148,7 +153,36 @@
 	}
 }
 
-# Disbanding the Axis Task Force
+# Axis Forces retreat from China
+################################
+
+	event = {
+	id = 811060
+	random = no
+	country = AXI
+	
+	trigger = {
+	event = 811002
+	war = { country = -1 country = SOV }
+	war = { country = CHI country = SOV }
+	control = { province = 1299 data = SOV } # Chongqing
+	control = { province = 1337 data = SOV } # Nanjing
+	}
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 12 month = march year = 1980 }
+	
+	name = "EVT_811060_NAME"
+	desc = "EVT_811060_DESC"
+	style = 1
+	picture = "fatherland/german_gathering" 
+	
+	action = {
+	name = "Pull out of China."
+	command = { type = leave_alliance }
+	}
+}
 
 ##################################################
 ### 2. Sino-Soviet War started by the Soviet Union
@@ -626,7 +660,8 @@ event = {
 ### 3. Sino-Russian Wars started by Nationalist China
 ###################################################
 
-### The Eastern Dragon Awakes ###
+### The Eastern Dragon Awakes
+#############################
 
 event = {
 	id = 810009
@@ -707,7 +742,8 @@ event = {
 	
 	}
 	
-### The Bear and the Dragon ###
+### The Bear and the Dragon
+############################
 
 event = {
 	id = 810010
