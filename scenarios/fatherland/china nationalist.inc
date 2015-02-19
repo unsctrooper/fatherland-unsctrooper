@@ -19,8 +19,13 @@ province = { id = 1307   # Huaihua
  } 
  
   province = { id = 1299   # Chongqing
-   ic       = -1
+   ic       = -5
  } 
+ 
+   province = { id = 1297   # Chengdu
+   ic       = -5
+ } 
+
  
  ##################### 
  # Country main data # 
@@ -216,6 +221,20 @@ rare_materials         = 500
 6500 6510 6530 6580 6600 6610 6680 6620 6630 6640 6650 6660 6670 6540 6910
 6570 6300 6310 6320
 5980
+# Early Torpedos
+3720
+# Turret Battleship
+3410
+# Predreadnought
+3420
+# Dreadnaught
+3430
+# Super Dreadnaught
+3440
+# 1928 Cavalry
+1360
+# Mass Production
+5820
 } 
 inventions = { 3000027 }
    policy = 

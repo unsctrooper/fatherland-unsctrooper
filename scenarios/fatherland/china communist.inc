@@ -8,7 +8,7 @@
  } 
 
  province = { id = 1247   # Beijing
-   ic       = 2
+   ic       = 4
  } 
   
  province = { id = 1323   # Anyang
@@ -16,7 +16,7 @@
  } 
  
  province = { id = 1241   # Tianjin
-   ic       = 2
+   ic       = 4
  } 
  
   province = { id = 1254   # Hequ
@@ -148,7 +148,11 @@ rare_materials         = 60
 	# Manpower Focus
 	6570
 	#Air Doctrines - ww2 techs
-	27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470 9010   
+	27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470 9010
+# Mass Production
+5820	
+# Early mechanization
+5710
 	}
 	
 inventions = { 3000027 }
