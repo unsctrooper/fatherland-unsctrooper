@@ -2,10 +2,10 @@
 ### Belgium EVENTS made by Pako thanks to NWO
 ################################################
 #### 8212061 - BEL - Dissent and Riots spread in Belgian Congo
-#### 8212062 - BEL - The King call to rebellion
-#### 8212063 - FLA - The King call to rebellion - Flanders
-#### 8212064 - WLL - The King call to rebellion - Wallonia
-#### 8212065 - U47 - The King call to rebellion - RK
+#### 8212062 - BEL - King's radio appeal from Congo
+#### 8212063 - FLA - King's radio appeal - Flanders
+#### 8212064 - WLL - King's radio appeal - Wallonia
+#### 8212065 - U47 - King's radio appeal - RK
 #### 8212066 - BEL - Congo setup
 
 ################################################
@@ -62,13 +62,13 @@ event = {
 		random = 50
 	}
 	
-	name = "Appello del RE : Ribellatevi !"
-	desc = "Ribellatevi !"
+	name = "King's radio appeal"
+	desc = "Rise up against the nazi!"
 	style = 2
 	picture = "news_paper"	
 
 	action = {
-		name = "Ribellatevi!"	
+		name = "Rise up!"	
 		ai_chance = 100
 		command = { type = dissent value = -1 }		
 		command = { type = trigger which = 8212063 }
@@ -86,8 +86,8 @@ event = {
 	country = FLA	
 	persistent = no
 	
-	name = "Appello dal Belgio alla ribellione"
-	desc = "Appello dal Belgio alla ribellione"
+	name = "King's radio appeal from Congo"
+	desc = "Rise up against the nazi!"
 	style = 2
 	picture = "news_paper"	
 
@@ -110,8 +110,8 @@ event = {
 	country = WLL	
 	persistent = no
 	
-	name = "Appello dal Belgio alla ribellione"
-	desc = "Appello dal Belgio alla ribellione"
+	name = "King's radio appeal from Congo"
+	desc = "Rise up against the nazi!"
 	style = 2
 	picture = "news_paper"	
 
@@ -134,8 +134,8 @@ event = {
 	country = U47	
 	persistent = no
 	
-	name = "Appello dal Belgio alla ribellione"
-	desc = "Appello dal Belgio alla ribellione"
+	name = "King's radio appeal from Congo"
+	desc = "Rise up against the nazi!"
 	
 	style = 2
 	picture = "news_paper"	
@@ -172,7 +172,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1954 }
 
 	action = {
-		name = "Indipendent Congo + Belgian Leopoldville"
+		name = "An indipendent Congo and a Belgian Leopoldville"
 		ai_chance = 15
 		
 		command = { type = addclaim which = 894 }
@@ -193,7 +193,7 @@ event = {
 		command = { type = local_setflag which = CON_INDEP }
 	}
 	action = {
-		name = "Puppet Congo + Belgian Leopoldville"
+		name = "A puppet Congo with a Belgian Leopoldville"
 		ai_chance = 50
 		
 		command = { type = addclaim which = 894 }
@@ -236,11 +236,49 @@ event = {
 		
 		command = { type = independence which = CON value = 1 }
 		command = { type = war which = CON }
-		command = { type = local_setflag which = CON_INDEP }
+		command = { type = local_setflag which = CON_WAR }
 	}
 	action = {
 		name = EVT_DONTLIBERATE
 		ai_chance = 5
 		command = { type = dissent value = 5 }
 	}
+}
+
+################################################
+#### 8212067 - CON - Congo setup
+################################################
+event = {
+	id = 8212067
+	country = CON
+
+	name = "The Congo National Free Army"
+	desc = "The Congo National Free Army"
+	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		event = 8212066
+		flag = CON_WAR
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action = {
+		name = "Create the Army"
+		command = { type = add_corps which = "1st North Army" value = land where = 906 }
+		command = { type = add_division which = "1st Rifle Division" value = infantry when = 4 }
+		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 4 }
+		command = { type = add_corps which = "1st Central Army" value = land where = 901 }
+		command = { type = add_division which = "1st Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "2nd Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "3rd Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "4th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "5th Militia Division" value = militia when = 5 }
+		command = { type = add_division which = "6th Militia Division" value = militia when = 4 }
+		command = { type = add_division which = "7th Militia Division" value = militia when = 3 }
+	}
+
 }

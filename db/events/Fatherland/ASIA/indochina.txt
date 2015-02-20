@@ -128,6 +128,10 @@ event = {
 	
 	action = {
 		name = "The Socialist Democratic Republic of Vietnam is proclaimed!"
+		command = { type = add_corps which = "1st North Vietnam Army" value = land where = 1395 }
+		command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+		command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
 		command = { type = independence which = U72 }
 		command = { type = relation which = U72 value = -50 }
 		command = { type = dissent value = 5 }		
@@ -168,8 +172,8 @@ event = {
 		event = 90001004
 	}
 	
-	name = "Creation of the North Vietnam People's Army"
-	desc = "Creation of the North Vietnam People's Army"
+	name = "Creation of the Vietcong Army"
+	desc = "Creation of the Vietcong Army"
 	style = 2
 	picture = "news_paper"
 
@@ -179,10 +183,6 @@ event = {
 
 	action = {
 	name = "Create the Army"
-	command = { type = add_corps which = "1st North Vietnam Army" value = land where = 1395 }
-	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
 	command = { type = add_corps which = "1st Vietcong Army" value = land where = 1395 }
 	command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
 	command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
@@ -200,7 +200,7 @@ event = {
 	
 	trigger = {
 		exists = U27
-		event = 90001006
+		event = 90001005
 	}
 	
 	name = "Creation of the South Viet Army"
@@ -209,8 +209,8 @@ event = {
 	picture = "news_paper"
 
 	date = { day = 1 month = december year = 1950 }
-	offset = 15
-	deathdate = { day = 29 month = january year = 1951 }
+	offset = 5
+	deathdate = { day = 29 month = january year = 1952 }
 
 	action = {
 	name = "Create the Army"
