@@ -2,10 +2,6 @@
 ### Sino-Russian Wars		 ###
 ### By UNSC Trooper			 ###
 ################################
-
-#######################
-### 1. Generic  Events
-#######################
 # Sino-Soviet War (if China is not in the UN - UN Exp. Corps)
 
 ##############################
@@ -205,7 +201,10 @@ event = {
 		exists = SIB # Siberia
 		government = { type = communist country = CHI } # Nat. China is not communist
 		}
+		OR = {
 		exists = CHI # Nat. China exists
+		exists = U87 # Fascist China exists
+		}
 		government = communist
 		atwar = no
 	}
@@ -269,7 +268,10 @@ event = {
 		exists = SIB # Siberia
 		government = { type = communist country = CHI } # Nat. China is not communist
 		}
+		OR = {
 		exists = CHI # Nat. China exists
+		exists = U87 # Fascist China exists
+		}
 		government = communist
 		atwar = no
 	}
@@ -333,7 +335,10 @@ event = {
 		exists = SIB # Siberia
 		government = { type = communist country = CHI } # Nat. China is not communist
 		}
+		OR = {
 		exists = CHI # Nat. China exists
+		exists = U87 # Fascist China exists
+		}
 		government = communist
 		atwar = no
 	}
@@ -513,7 +518,10 @@ event = {
 	country = SOV
 	
 	trigger = {
+	OR = {
 	war = { country = CHI country = -1 }
+	war = { country = U87 country = -1 }
+	}
 	government = communist
 	}
 	
@@ -559,7 +567,10 @@ event = {
 	
 	decision_trigger = {
 	NOT = {
+	OR = {
 	war = { country = CHI country = -1 }
+	war = { country = U97 country = -1 }
+	}
 	}
 	owned = { province = 1260 data = -1 } # Soviets own Yan'an.
 	government = communist
@@ -567,7 +578,10 @@ event = {
 	
 	trigger = {
 	NOT = {
+	OR = {
 	war = { country = CHI country = -1 }
+	war = { country = U97 country = -1 }
+	}	
 	}
 	owned = { province = 1260 data = -1 } # Soviets own Yan'an.
 	government = communist
@@ -635,8 +649,8 @@ event = {
 
 	action = {
 	name = "Great!"
-	command = { type = headofstate which = 260848 }
-	command = { type = headofgovernment which = 260849 }
+	command = { type = headofstate which = 260848 } # Mao Zedong
+	command = { type = headofgovernment which = 260849 } # Mao Zedong
 	command = { type = 	set_domestic which = democratic value = 1 }
 	command = { type = 	set_domestic which = political_left value = 9 }
 	command = { type = 	set_domestic which = freedom value = 8 }
@@ -666,7 +680,7 @@ event = {
 event = {
 	id = 810009
 	random = no
-	country = CHI
+tag = { CHI U87 }
 	
 	decision = { 
 	event = 8200145 # The Price of Victory - CHI
@@ -748,7 +762,7 @@ event = {
 event = {
 	id = 810010
 	random = no
-	country = CHI
+tag = { CHI U87 }
 
 	trigger = { 
 	owned = { province = 1191 data = SOV }
@@ -783,3 +797,209 @@ event = {
 	
 	}
 	
+####################
+## Peace Events   ##
+####################
+
+# China sues for Peace - Soviet victory
+#######################################
+
+event = {
+id = 810040
+random = no
+tag = { CHI U87 }
+
+decision = {
+OR = {
+war = { country = CHI country = SOV }
+war = { country = U87 country = SOV }
+}
+control = { province = 1299 data = SOV } # Chongqing
+control = { province = 1317 data = SOV } # Wuhan
+control = { province = 1337 data = SOV } # Nanjing
+control = { province = 1338 data = SOV } # Shanghai
+}
+
+decision_trigger = {
+OR = {
+war = { country = CHI country = SOV }
+war = { country = U87 country = SOV }
+}
+control = { province = 1299 data = SOV } # Chongqing
+control = { province = 1317 data = SOV } # Wuhan
+control = { province = 1337 data = SOV } # Nanjing
+control = { province = 1338 data = SOV } # Shanghai
+}
+
+trigger = {
+OR = {
+war = { country = CHI country = SOV }
+war = { country = U87 country = SOV }
+}
+control = { province = 1299 data = SOV } # Chongqing
+control = { province = 1317 data = SOV } # Wuhan
+control = { province = 1337 data = SOV } # Nanjing
+control = { province = 1338 data = SOV } # Shanghai
+}
+
+name = "EVT_810040_NAME"
+desc = "EVT_810040_DESC"
+style = 1
+picture = "fatherland/soviet_soldier"
+decision_picture = "fatherland/d_kmt_sovietunion"
+	
+date = { day = 1 month = january year = 1948 }
+offset = 5
+deathdate = { day = 12 month = march year = 1980 }
+
+action = {
+name = "China is lost - sue for peace."
+command = { type = trigger which = 810041 }
+}
+
+action = {
+name = "Never surrender to the Reds!"
+command = { type = belligerence value = 5 }
+}
+
+}
+
+# China sues for peace
+######################
+
+event = {
+id = 810041
+random = no
+country = SOV
+
+name = "EVT_810041_NAME"
+desc = "EVT_810041_DESC"
+style = 1
+picture = "fatherland/soviet_soldier"
+
+action = {
+name = "Send them our terms."
+ai_chance = 100
+command = { type = trigger which = 810042 } # The Treaty of Shanghai
+command = { type = trigger which = 810043 } # The Treaty of Shanghai - for Fascist China
+}
+
+action = {
+name = "Refuse the proposal - fight to the end!"
+ai_chance = 0
+command = { }
+}
+}
+
+# The Treaty of Shanghai
+########################
+
+event = {
+id = 810042
+random = no
+country = CHI
+
+name = "EVT_810042_NAME"
+desc = "EVT_810042_DESC"
+style = 1
+picture = "nwo/commie_switch"
+
+action = {
+name = "Sign the treaty - peace with the Soviets."
+ai_chance = 75
+command = { type = dissent value = 15 }
+command = { type = name where = -1 which = "Republic of South China" }
+command = { trigger = { exists = CHI } type = 	guarantee which = SOV where = CHI }
+command = { trigger = { exists = U87 } type = 	guarantee which = SOV where = U87 }
+command = { trigger = { exists = CHI } type = non_aggression which = CHI where = SOV }
+command = { trigger = { exists = U87 } type = non_aggression which = CHI where = SOV }
+command = { type = 	set_domestic which = democratic value = 4 }
+command = { type = 	set_domestic which = political_left value = 8 }
+command = { type = 	set_domestic which = free_market value = 4 }
+command = { type = secedearea which = SOV value = Heilongjiang when = 0 }
+command = { type = secedearea which = SOV value = Jilin when = 0 }
+command = { type = secedearea which = SOV value = Liaoning when = 0 }
+command = { type = secedearea which = SOV value = Rehe when = 0 }
+command = { type = secedearea which = SOV value = Chahar when = 0 }
+command = { type = secedearea which = SOV value = Hebei when = 0 }
+command = { type = secedearea which = SOV value = Suiyuan_Ningxia when = 0 }
+command = { type = secedearea which = SOV value = Gansu when = 0 }
+command = { type = secedearea which = SOV value = Qinghai when = 0 }
+command = { type = secedearea which = SOV value = Shanxi when = 0 }
+command = { type = secedearea which = SOV value = Shaanxi when = 0 }
+command = { type = secedearea which = SOV value = Shandong when = 0 }
+command = { type = secedearea which = SOV value = Henan when = 0 }
+command = { type = secedearea which = SOV value = Jiangsu when = 0 }
+command = { type = secedearea which = SOV value = Anhui when = 0 }
+command = { type = secedearea which = SOV value = Hubei when = 0 }
+command = { type = secedearea which = SOV value = Sichuan when = 0 }
+command = { type = secedearea which = SOV value = Xikang when = 0 }
+command = { type = secedearea which = SOV value = Guizhou when = 0 }
+command = { type = secedearea which = SOV value = Yunnan when = 0 }
+command = { type = secedearea which = SOV value = Hunan when = 0 }
+}
+
+action = {
+name = "Such an outrage must never befall China!"
+ai_chance = 25
+command = { }
+}
+
+}
+
+# The Treaty of Shanghai - U87
+########################
+
+event = {
+id = 810043
+random = no
+country = U87
+
+name = "EVT_810042_NAME"
+desc = "EVT_810042_DESC"
+style = 1
+picture = "nwo/commie_switch"
+
+action = {
+name = "Sign the treaty - peace with the Soviets."
+ai_chance = 75
+command = { type = dissent value = 15 }
+command = { type = name where = -1 which = "Republic of South China" }
+command = { trigger = { exists = CHI } type = 	guarantee which = SOV where = CHI }
+command = { trigger = { exists = U87 } type = 	guarantee which = SOV where = U87 }
+command = { trigger = { exists = CHI } type = non_aggression which = CHI where = SOV }
+command = { trigger = { exists = U87 } type = non_aggression which = CHI where = SOV }
+command = { type = 	set_domestic which = democratic value = 4 }
+command = { type = 	set_domestic which = political_left value = 8 }
+command = { type = 	set_domestic which = free_market value = 4 }
+command = { type = secedearea which = SOV value = Heilongjiang when = 0 }
+command = { type = secedearea which = SOV value = Jilin when = 0 }
+command = { type = secedearea which = SOV value = Liaoning when = 0 }
+command = { type = secedearea which = SOV value = Rehe when = 0 }
+command = { type = secedearea which = SOV value = Chahar when = 0 }
+command = { type = secedearea which = SOV value = Hebei when = 0 }
+command = { type = secedearea which = SOV value = Suiyuan_Ningxia when = 0 }
+command = { type = secedearea which = SOV value = Gansu when = 0 }
+command = { type = secedearea which = SOV value = Qinghai when = 0 }
+command = { type = secedearea which = SOV value = Shanxi when = 0 }
+command = { type = secedearea which = SOV value = Shaanxi when = 0 }
+command = { type = secedearea which = SOV value = Shandong when = 0 }
+command = { type = secedearea which = SOV value = Henan when = 0 }
+command = { type = secedearea which = SOV value = Jiangsu when = 0 }
+command = { type = secedearea which = SOV value = Anhui when = 0 }
+command = { type = secedearea which = SOV value = Hubei when = 0 }
+command = { type = secedearea which = SOV value = Sichuan when = 0 }
+command = { type = secedearea which = SOV value = Xikang when = 0 }
+command = { type = secedearea which = SOV value = Guizhou when = 0 }
+command = { type = secedearea which = SOV value = Yunnan when = 0 }
+command = { type = secedearea which = SOV value = Hunan when = 0 }
+}
+
+action = {
+name = "Such an outrage must never befall China!"
+ai_chance = 25
+command = { }
+}
+
+}
+
