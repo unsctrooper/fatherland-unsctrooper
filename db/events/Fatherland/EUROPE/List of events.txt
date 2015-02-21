@@ -1,10 +1,8 @@
 #####################################
 # List of events - EUROPE
 # Rev. by Pako
-#####################################
-
 # Nationalist Spain
-# 
+#####################################
 # 189057 - Economic reforms first round
 # 189058 - Economic reforms second round
 # 189059 - New occupation law
@@ -38,3 +36,57 @@
 # 189246 - National railway company - RENFE
 # 189271 - Madrid bombing
 
+#####################################
+# List of events - EUROPE
+# Rev. by Pako
+# Vichy France
+#####################################
+# 350 - Armistice at Compiègne
+# 351 - Death of Petain
+# 352 - Chaos in France
+# 353 - Intervene in France? - GER
+# 354 - The Government Falls!
+# 355 - Case Anton - GER
+# 356 - We have defeated France - Again! - GER
+# 313 - It is done! Encore une fois!
+# 363 - An unexpected flight
+# 364 - Approachment with Free France
+# 367 - United States meddles in France! - GER
+# 368 - German tries to impose a blockade! - USA
+# 369 - United States ignores blockade! - GER
+# 370 - German Blockade
+# 371 - Germany shot down American planes! - USA
+# 372 - What to do with Vichy France - U01
+# 373 - French Resistance launch attacks!
+# 374 - Marseilles joins Free France?
+# 375 - Massacre in Marseilles - U01
+# 376 - Free French meddles in Vichy France - GER
+# 377 - War in France! - USA
+# 378 - Open up to the world!
+# 379 - Neglect the limitations on armor!
+# 380 - Conscription!
+# 381 - Exile Germans in France!
+# 382 - Economic Limitations
+# 383 - The Armistice at Compiègne is void!
+# 384 - France declares the Armistice at Compiègne void! - GER
+# 385 - The French Revenge
+# 999447 - SOE Agents parachuted in France
+# 999448 - SOE Agents parachuted in France - U01
+
+#####################################
+# List of events - EUROPE
+# Rev. by Pako
+# Free France - U01
+#####################################
+# 308 # U01 # De Gaulle's Appeal
+# 309 # U01 # Move the Capital - Fatherland
+# 310 # U01 # The Home of the French Nation
+# 311 # U01 # A Tunisian Province?
+# 317 # U01 # The Morocco Protectorate
+# 318 # MOR # A New Statut
+# 319 # GER # Mohammed V seeks asylum
+# 320 # U01 # The Moroccan Uprising
+# 321 # MOR # Independance
+# 322 # U01 # Morocco is winning
+# 323 # U01 # Moroccan rebellion crushed
+# 324 # MOR # A New Marocco (Peaceful independance)

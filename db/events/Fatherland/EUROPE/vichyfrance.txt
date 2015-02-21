@@ -215,8 +215,7 @@ event = {
 	deathdate = { day = 1 month = december year = 1955 }
 	
 	trigger = { 
-		#headofstate = 5395 #Ultra-Collaborationist
-		flag = UltraVichy			
+		flag = UltraVichy #Ultra-Collaborationist
 	}
 
 	action = {
@@ -245,7 +244,7 @@ event = {
 	
 	action = {
 			name = "353A" #Send in the troops - Establish control!
-			ai_chance = 35
+			ai_chance = 40
 			command = { type = dissent value = 5 }
 			command = { type = manpowerpool value = -10 }
 			command = { type = supplies value = -5000 } 
@@ -256,8 +255,8 @@ event = {
 	
 	action = {
 			name = "353B" #We don't have time for this
-			ai_chance = 65
-	        command = { type = relation which = GER value = 0 }
+			ai_chance = 60
+	        command = { type = relation which = FRA value = -100 }
 	}
 }
 event = {
@@ -403,14 +402,14 @@ event = {
 		command = { type = headofstate which = 5395 }
 	    command = { type = headofgovernment which = 5381 }	
 		
-        command = { trigger = { control = { province = 87 data = ITA } } type = secedeprovince which = ITA value = 87 when = 0 } # Nice - France
+        command = { trigger = { war = { country = ITA country = FRA } } type = secedeprovince which = ITA value = 87 when = 0 } # Nice - France
+        command = { trigger = { war = { country = ITA country = FRA } } type = secedeprovince which = ITA value = 91 when = 0 } # Chambery - France
+        command = { trigger = { war = { country = ITA country = FRA } } type = secedeprovince which = ITA value = 94 when = 0 } # Corsica - France 		
         command = { trigger = { control = { province = 86 data = ITA } } type = secedeprovince which = ITA value = 86 when = 1 } # Toulon - France
         command = { trigger = { control = { province = 90 data = ITA } } type = secedeprovince which = ITA value = 90 when = 1 } # Grenoble - France 
-        command = { trigger = { control = { province = 91 data = ITA } } type = secedeprovince which = ITA value = 91 when = 0 } # Chambery - France
-        command = { trigger = { control = { province = 94 data = ITA } } type = secedeprovince which = ITA value = 94 when = 0 } # Corsica - France 
-		
-        command = { trigger = { control = { province = 80 data = SPA } } type = secedeprovince which = SPA value = 80 when = 0 } # Perpignan
-        command = { trigger = { control = { province = 83 data = SPA } } type = secedeprovince which = SPA value = 83 when = 0 } # Pau
+
+        command = { trigger = { war = { country = SPA country = FRA } } type = secedeprovince which = SPA value = 80 when = 0 } # Perpignan
+        command = { trigger = { war = { country = SPA country = FRA }  } type = secedeprovince which = SPA value = 83 when = 0 } # Pau
         command = { trigger = { control = { province = 84 data = SPA } } type = secedeprovince which = SPA value = 84 when = 1 } # Agen
         command = { trigger = { control = { province = 67 data = SPA } } type = secedeprovince which = SPA value = 67 when = 1 } # Mont-de-Marsan
         command = { trigger = { control = { province = 68 data = SPA } } type = secedeprovince which = SPA value = 68 when = 1 } # Bordeaux		
@@ -423,6 +422,7 @@ event = {
 	    command = { type = secedearea which = GER value = "Brittany" when = 1 }
 		command = { type = secedearea which = GER value = "Loire" when = 1 }
 		command = { type = secedearea which = GER value = "Aquitaine" when = 1 }
+		
 	    command = { type = secederegion which = GER value = "Benelux" when = 1 }
 	    command = { type = secederegion which = GER value = "Germany" when = 1 }
 		
@@ -458,7 +458,7 @@ event = {
 
 	action = {
 		trigger = { flag = FreeVichy }  
-		ai_chance = 99
+		ai_chance = 90
 		name = "363A"
 		command = { type = dissent value = -5 }
 		command = { type = relation which = GER value = -50 }	
@@ -466,27 +466,27 @@ event = {
 		command = { type = setflag which = DeGaulleVichy } 
 	}
 	
-action = {
-trigger = { flag = FreeVichy }
-ai_chance = 1
-name = "363B"
-command = { type = dissent value = 3 }
-}
-action = {
-trigger = { flag = GerVichy }
-ai_chance = 1
-name = "363A"
-command = { type = dissent value = -5 }
-command = { type = relation which = GER value = -50 }	
-command = { type = relation which = U01 value = 50 }	
-command = { type = setflag which = DeGaulleVichy } 
-}
-action = {
-trigger = { flag = GerVichy }
-ai_chance = 99
-name = "363B"
-command = { type = dissent value = 3 }
-}
+	action = {
+		trigger = { flag = FreeVichy }
+		ai_chance = 10
+		name = "363B"
+		command = { type = dissent value = 3 }
+	}
+	action = {
+		trigger = { flag = GerVichy }
+		ai_chance = 10
+		name = "363A"
+		command = { type = dissent value = -5 }
+		command = { type = relation which = GER value = -50 }	
+		command = { type = relation which = U01 value = 50 }	
+		command = { type = setflag which = DeGaulleVichy } 
+	}
+	action = {
+		trigger = { flag = GerVichy }
+		ai_chance = 90
+		name = "363B"
+		command = { type = dissent value = 3 }
+	}
 }
 
 event = {
@@ -547,7 +547,7 @@ id = 367
 	
 	action = {
 			name = "367A"
-			ai_chance = 95
+			ai_chance = 90
 			command = { type = peacetime_ic_mod value = -10 }
 		    command = { type = relation which = USA value = -50 }
 		    command = { type = relation which = FRA value = -50 }
@@ -556,7 +556,7 @@ id = 367
 	
 	action = {
 			name = "367B"
-			ai_chance = 5
+			ai_chance = 10
 			command = { type = dissent value = 10 }
 			command = { type = peacetime_ic_mod value = -10 }
 } 
@@ -574,13 +574,13 @@ id = 368
 	
 	action = {
 			name = "368A"
-			ai_chance = 95
+			ai_chance = 90
 			command = { type = trigger which = 369 }			
 	}
 	
 	action = {
 			name = "368B"
-			ai_chance = 5
+			ai_chance = 10
 			command = { type = dissent value = 3 }
 			command = { type = trigger which = 370 }
 } 
@@ -827,27 +827,16 @@ id = 377
 	
 	action = {
 			name = "377A"
-			ai_chance = 25
+			ai_chance = 50
 		    command = { type = alliance which = U01 }	
 	}
 	
 	action = {
 			name = "377B"
-			ai_chance = 75
-			command = { type = relation which = U01 value = -50 }
-}
-	action = {
-			name = "377A"
-			trigger = { war = { country = GER country = U08 } }  
-			ai_chance = 99
-		    command = { type = alliance which = U01 }	
-	}
-	action = {
-			name = "377B"
-			trigger = { war = { country = GER country = U08 } }   
-			ai_chance = 1
-			command = { type = relation which = U01 value = -50 }
-}
+			ai_chance = 50
+			command = { type = relation which = U01 value = -100 }
+    }	
+
 }
 #####################################
 ### France Gearing Up For Revenge ###
@@ -923,6 +912,7 @@ event = {
 		command = { type = relation which = GER value = -30 }
 		command = { type = dissent value = -2 }
 		command = { type = peacetime_ic_mod value = 10 }
+		
         command = { type = activate_unit_type which = motorized } 
         command = { type = activate_unit_type which = mechanized } 
         command = { type = activate_unit_type which = light_armor } 
@@ -977,6 +967,18 @@ event = {
 		command = { type = local_setflag which = MOB4 }		
 		command = { type = local_setflag which = MOB5 }		
 		command = { type = local_setflag which = MOB6 }
+		
+		command = { type = add_corps which = "1st Paris Army" value = land where = 906 }
+		command = { type = add_division which = "1st Rifle Division" value = infantry when = 10 }
+		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 10 }
+		command = { type = add_corps which = "1st Garcon Army" value = land where = 901 }
+		command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "4th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
 		
 	}
 }
@@ -1103,17 +1105,17 @@ event = {
 	country = FRA
 
 	decision = {
-flag = VichyStrong 
+		flag = VichyStrong 
 	}
 
 	decision_trigger = {
-flag = VichyStrong 
-atwar = GER
+		flag = VichyStrong 
+		atwar = GER
 	}
 
 	trigger = {
-flag = VichyStrong 
-atwar = GER
+		flag = VichyStrong 
+		atwar = GER
 	}
    
 	name = "385NAME"
@@ -1123,12 +1125,12 @@ atwar = GER
 	decision_picture = "decision_Rhineland"
 
 	date = { day = 0 month = january year = 1948 }
-	offset = 7
+	offset = 70
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
 		name = "385A"
-		command = { type = 	end_non_aggression which = FRA where = GER }
+		command = { type = end_non_aggression which = FRA where = GER }
 	    command = { type = war which = GER }		
 	}
 }
