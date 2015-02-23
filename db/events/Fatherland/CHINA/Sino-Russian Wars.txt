@@ -854,11 +854,13 @@ deathdate = { day = 12 month = march year = 1980 }
 
 action = {
 name = "China is lost - sue for peace."
+ai_chance = 80
 command = { type = trigger which = 810041 }
 }
 
 action = {
 name = "Never surrender to the Reds!"
+ai_chance = 20
 command = { type = belligerence value = 5 }
 }
 
@@ -909,6 +911,7 @@ name = "Sign the treaty - peace with the Soviets."
 ai_chance = 75
 command = { type = dissent value = 15 }
 command = { type = name where = -1 which = "Republic of South China" }
+command = { type = 	peace which = SOV value = 1 }
 command = { trigger = { exists = CHI } type = 	guarantee which = SOV where = CHI }
 command = { trigger = { exists = U87 } type = 	guarantee which = SOV where = U87 }
 command = { trigger = { exists = CHI } type = non_aggression which = CHI where = SOV }
@@ -916,6 +919,8 @@ command = { trigger = { exists = U87 } type = non_aggression which = CHI where =
 command = { type = 	set_domestic which = democratic value = 4 }
 command = { type = 	set_domestic which = political_left value = 8 }
 command = { type = 	set_domestic which = free_market value = 4 }
+command = { type = 	set_domestic which = interventionism value = 8 }
+command = { type = 	access which = SOV }
 command = { type = secedearea which = SOV value = Heilongjiang when = 0 }
 command = { type = secedearea which = SOV value = Jilin when = 0 }
 command = { type = secedearea which = SOV value = Liaoning when = 0 }
@@ -965,6 +970,7 @@ name = "Sign the treaty - peace with the Soviets."
 ai_chance = 75
 command = { type = dissent value = 15 }
 command = { type = name where = -1 which = "Republic of South China" }
+command = { type = 	peace which = SOV value = 1 }
 command = { trigger = { exists = CHI } type = 	guarantee which = SOV where = CHI }
 command = { trigger = { exists = U87 } type = 	guarantee which = SOV where = U87 }
 command = { trigger = { exists = CHI } type = non_aggression which = CHI where = SOV }
@@ -972,6 +978,8 @@ command = { trigger = { exists = U87 } type = non_aggression which = CHI where =
 command = { type = 	set_domestic which = democratic value = 4 }
 command = { type = 	set_domestic which = political_left value = 8 }
 command = { type = 	set_domestic which = free_market value = 4 }
+command = { type = 	set_domestic which = interventionism value = 8 }
+command = { type = 	access which = SOV }
 command = { type = secedearea which = SOV value = Heilongjiang when = 0 }
 command = { type = secedearea which = SOV value = Jilin when = 0 }
 command = { type = secedearea which = SOV value = Liaoning when = 0 }
@@ -1001,5 +1009,138 @@ ai_chance = 25
 command = { }
 }
 
+}
+
+# Soviet Union sues for peace - Chinese victory
+###############################################
+
+# Soviet Union disintegrates following peace
+
+ event = {
+id = 810044
+random = no
+tag = { CHI U87 }
+
+decision = {
+war = { country = -1 country = SOV }
+}
+
+decision_trigger = {
+war = { country = -1 country = SOV }
+control = { province = 1191 data = -1 } # Vladivostok
+control = { province = 1170 data = -1 } # Never
+control = { province = 1189 data = -1 } # Nikolaevsk-on-Amur
+}
+
+trigger = {
+war = { country = -1 country = SOV }
+control = { province = 1191 data = -1 } # Vladivostok
+control = { province = 1170 data = -1 } # Never
+control = { province = 1189 data = -1 } # Nikolaevsk-on-Amur
+}
+
+name = "EVT_810044_NAME"
+desc = "EVT_810044_DESC"
+style = 1
+picture = "fatherland/sino_soviet_war"
+decision_picture = "nwo/d_kmt_sovietunion"
+
+date = { day = 1 month = january year = 1948 }
+offset = 5
+deathdate = { day = 12 month = march year = 1980 }
+
+action = {
+name = "Send the Soviets our peace terms - claim Siberia."
+ai_chance = 40
+command = { type = trigger which = 810045 }
+command = { type = dissent value = -7 }
+}
+
+action = {
+name = "Claim only Primorsk."
+ai_chance = 60
+command = { type = trigger which = 810046 }
+command = { type = dissent value = -5 }
+}
+
+action = {
+name = "Fight to the end - crush the Bolsheviks!"
+ai_chance = 0
+command = { type = dissent value = 7 }
+}
+}
+
+# China claims Siberia - peace negotiations
+###########################################
+
+event = {
+id = 810045
+random = no
+country = SOV
+
+name = "EVT_810045_NAME"
+desc = "EVT_810045_DESC"
+style = 1
+picture = "fatherland/sino_soviet_war"
+
+action = {
+name = "We must have peace - cede eastern Siberia."
+ai_chance = 75
+command = { type = dissent value = 10 }
+command = { trigger = { exists = CHI } type = 	peace which = CHI value = 1 }
+command = { trigger = { exists = U87 } type = 	peace which = U87 value = 1 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Primorski when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Khabarovsk when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Amur when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Magadan when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Kamchatka when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Yakutsk when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Primorski when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Khabarovsk when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Amur when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Magadan when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Kamchatka when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Yakutsk when = 0 }
+}
+
+action = {
+name = "Never surrender to the Chinese hordes!"
+ai_chance = 25
+command = { type = dissent value = 3 }
+}
+}
+
+# China claims Primorsk - peace negotiations
+###########################################
+
+event = {
+id = 810046
+random = no
+country = SOV
+
+name = "EVT_810045_NAME"
+desc = "EVT_810045_DESC"
+style = 1
+picture = "fatherland/sino_soviet_war"
+
+action = {
+name = "We must have peace - cede Primorsk."
+ai_chance = 75
+command = { type = dissent value = 10 }
+command = { trigger = { exists = CHI } type = 	peace which = CHI value = 1 }
+command = { trigger = { exists = U87 } type = 	peace which = U87 value = 1 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Primorski when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Khabarovsk when = 0 }
+command = { trigger = { exists = CHI } type = secedearea which = CHI value = Amur when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Primorski when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Khabarovsk when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = CHI value = Amur when = 0 }
+}
+
+action = {
+name = "Never surrender to the Chinese hordes!"
+ai_chance = 25
+command = { type = dissent value = 3 }
+}
 }
 
