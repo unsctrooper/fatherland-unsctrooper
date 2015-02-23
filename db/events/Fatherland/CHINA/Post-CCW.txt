@@ -373,18 +373,24 @@ event = {
 	command = { type = set_domestic which = democratic value = 4 }
 	command = { type = set_domestic which = political_left value = 4 }
 	command = { type = local_setflag which = kmt_authoritarian }
-	command = { trigger = { local_flag = german_friendship } type = relation which = GER value = 10 } 
+	command = { type = relation which = GER value = 10 } 
 	#ministers
 }
 
 	action = {
 	ai_chance = 20
 	name = "Totalitarian state - Fascism"
+	command = { type =	country which = U87 } # Change into Fascist China
+	command = { type = inherit which = CHI when = 0 value = 1 }
 	command = { type = dissent value = 8 }
 	command = { type = set_domestic which = democratic value = 2 }
 	command = { type = set_domestic which = political_left value = 3 }
-	command = { trigger = { local_flag = german_friendship } type = relation which = GER value = 10 } 
-	command = { type = local_setflag which = kmt_authoritarian }
+	command = { type = set_domestic which = interventionism value = 8 }
+	command = { type = set_domestic which = defense_lobby value = 9 }
+	command = { type = set_domestic which = free_market value = 3 }
+	command = { type = set_domestic which = freedom value = 3 }
+	command = { type = relation which = GER value = 10 } 
+	command = { type = local_setflag which = fascist_china }
 	#ministers
 }
 
@@ -596,8 +602,6 @@ event = {
 	}
 }
 
-##### Americans and Soviets declare war on Axis China !!!! #####
-
 ##### Coup against pro-Soviet government #####
 
 	event = { 
@@ -736,7 +740,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1980 }
 
 	action = {
-		name = "We have lost the people's hearts and minds."
+		name = "We have regained the people's confidence."
 		command = { type = dissent value = -20 }
 		command = { type = peacetime_ic_mod value = 10 }
 		command = { type = addcore which = 1301 where = -1 }
@@ -805,3 +809,72 @@ event = {
 	}	
 }
 
+# Join the Axis Powers - Fascist China
+######################################
+
+event = { 
+	id = 8200163
+	random = no
+	country = U87
+	
+	trigger = {
+	government = fascist
+	NOT = { 
+	ispuppet = yes 
+	alliance = { country = U87 country = GER }
+	alliance = { country = U87 country = SOV }
+	alliance = { country = U87 country = USA }
+	}
+
+	name = "EVT_8200163_NAME"
+	desc = "EVT_8200163_DESC"
+	picture = "fatherland\german_warposter"
+	style = 1
+	
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1980 }
+	
+	action = {
+	name = "Ask entry into the Axis Powers."
+	ai_chance = 100
+	command = { type = trigger which = 8200164 }
+	command = { type = relation which = U87 value = 20 }
+	}
+
+	action = {
+	name = "Stay out the Cold War."
+	ai_chance = 0
+	command = { type = relation which = GER value = -10 }
+	command = { type = relation which = AXI value = -10 }
+	}
+}
+
+# German response to China's membership request
+###############################################
+
+event = { 
+	id = 8200164
+	random = no
+	country = GER
+
+	name = "EVT_8200164_NAME"
+	desc = "EVT_8200164_DESC"
+	picture = "fatherland\chinese_dragon"
+	style = 1
+
+	action = {
+	name = "Welcome the Dragon into the Axis."
+	ai_chance = 100
+	command = { type = relation which = U87 value = 20 }
+	command = { type = alliance which = U87 }
+	}
+
+	action = {
+	name = "Deny their request."
+	ai_chance = 0
+	command = { type = relation which = U87 value = -10 }
+	}
+	}
+
+# Wang Jingwei coup d'etat
