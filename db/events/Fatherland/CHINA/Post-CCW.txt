@@ -1,6 +1,27 @@
 #######################################################
-### Post-Civil War events if Nationalist China wins ###
-###	By UNSC Trooper 								###
+### Post-Civil War events if Nationalist China wins
+###	By UNSC Trooper 								
+###
+# 8200145 CHI The price of victory for the Nationalist Government
+# 8200146 CHI The nation is united - calls for Congress
+# 8200147 GER Axis Opportunity in China
+# 8200148 GER German Diplomatic mission to China
+# 8200151 CHI Germany proposes military cooperation
+# 8200149 CHI Germany offers its friendship
+# 8200152 GER China refuses our propositions
+# 8200153 CHI Congress of All China - Internal Policy 
+# 8200154 CHI Congress of All China - Government Policy
+# 8200155 CHI Congress of All China - Foreign Policy
+# 8200156 CHI Congress of All China - Economic Policy
+# 8200157 GER China binds its future to the Axis
+# 8200158 CHI China is invited into the Axis
+# 8200159 CHI Coup against pro-Soviet government
+# 8200160 USA Invite China to the United Nations
+# 8200160 CHI China is invited into the United Nations
+# 8200162 CHI The price of victory was paid
+# 8200163 U87 Join the Axis Powers - Fascist China
+# 8200164 GER The Chinese National Social State requests Axis membership
+# 8200165 CHI Chinese National Social State proclaimed!
 #######################################################
 
 ### The price of victory for the Nationalist Government
@@ -12,7 +33,7 @@ event = {
 
 	name = "EVT_8200145_NAME"
 	desc = "EVT_8200145_DESC"
-	picture = "nwo\china_land_reform"
+	picture = "nwo\kmt_end_of_instability"
 	style = 1
 
 	trigger = {
@@ -383,6 +404,7 @@ event = {
 	command = { type =	country which = U87 } # Change into Fascist China
 	command = { type = inherit which = CHI when = 0 value = 1 }
 	command = { type = dissent value = 8 }
+	command = { type = trigger which = 8200165 } # The Chinese National Social State
 	command = { type = set_domestic which = democratic value = 2 }
 	command = { type = set_domestic which = political_left value = 3 }
 	command = { type = set_domestic which = interventionism value = 8 }
@@ -825,6 +847,7 @@ event = {
 	alliance = { country = U87 country = SOV }
 	alliance = { country = U87 country = USA }
 	}
+	}
 
 	name = "EVT_8200163_NAME"
 	desc = "EVT_8200163_DESC"
@@ -832,7 +855,7 @@ event = {
 	style = 1
 	
 	date = { day = 1 month = january year = 1945 }
-	offset = 1
+	offset = 2
 	deathdate = { day = 29 month = december year = 1980 }
 	
 	action = {
@@ -876,5 +899,95 @@ event = {
 	command = { type = relation which = U87 value = -10 }
 	}
 	}
+	
+# Chinese National Social State proclaimed
+##########################################
 
-# Wang Jingwei coup d'etat
+event = { 
+	id = 8200165
+	random = no
+	country = U87
+
+	name = "EVT_8200165_NAME"
+	desc = "EVT_8200165_DESC"
+	picture = "fatherland\chinese_dragon"
+	style = 2
+
+	action = {
+	name = "Long live the new Chinese state!"
+	command = { type = manpowerpool value = -50 }
+	command = { type = peacetime_ic_mod value = 5 }
+	command = { type = add_division which = "1. PNSM Security Brigade" value = militia when = 7 where = armor }
+	command = { type = add_division which = "2. PNSM Security Brigade" value = militia when = 7 where = artillery }
+	command = { type = add_division which = "3. PNSM Security Brigade" value = militia when = 7 where = artillery }
+	command = { type = add_division which = "4. PNSM Security Brigade" value = militia when = 7 where = armor }
+	command = { type = add_division which = "5. PNSM Security Brigade" value = militia when = 7 }
+	command = { type = mountain_attack which = militia value = 10 } 
+	command = { type = mountain_defense which = militia value = 15 } 
+	command = { type = hill_attack which = militia value = 10 } 
+	command = { type = hill_defense which = militia value = 15 } 
+	command = { type = hill_attack which = infantry value = 5 } 
+	command = { type = hill_defense which = infantry value = 10 } 
+	command = { type = morale which = land value = 5 }
+	command = { type = relation which = SOV value = -20 }
+	command = { type = relation which = U57 value = -20 } #Far East Republic
+	command = { type = relation which = U59 value = -20 } #Russian Empire
+	command = { type = relation which = SIB value = -20 } #Siberia
+	}
+	}
+
+
+# Blue Shirt Fascist militias attempt coup
+##########################################
+
+	event = { 
+	id = 8200166
+	random = no
+	country = CHI
+	
+	trigger = {
+	event = 8200156 # End of Congress
+	NOT = {
+	ideology = { type = fascist country = CHI }
+	ideology = { type = national_socialist country = CHI }
+	alliance = { country = -1 country = GER }	
+	}
+	}
+	
+	name = "EVT_8200166_NAME"
+	desc = "EVT_8200166_DESC"
+	picture = "nwo\chinese_civil_war"
+	style = 2
+	
+	date = { day = 1 month = january year = 1945 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+	name = "Listen to their demands - establish National Social China."
+	ai_chance = 60
+	command = { type =	country which = U87 } # Change into Fascist China
+	command = { type = inherit which = CHI when = 0 value = 1 }
+	command = { type = dissent value = 8 }
+	command = { type = trigger which = 8200165 } # The Chinese National Social State
+	command = { type = set_domestic which = democratic value = 2 }
+	command = { type = set_domestic which = political_left value = 3 }
+	command = { type = set_domestic which = interventionism value = 8 }
+	command = { type = set_domestic which = defense_lobby value = 9 }
+	command = { type = set_domestic which = free_market value = 3 }
+	command = { type = set_domestic which = freedom value = 3 }
+	command = { type = relation which = GER value = 10 }
+	command = { type = relation which = AXI value = 10 } 
+}
+
+	action = {
+	name = "Smash this coup!"
+	ai_chance = 40
+	command = { type = dissent value = 4 }
+	command = { type = revolt which = 1247 when = 0 } # Beijing
+	command = { type = revolt which = 1199 when = 0 } # Harbin
+	command = { type = revolt which = 1214 when = 0 } # Shenyang
+	command = { type = revolt which = 1236 when = 0 } # Chengde
+	command = { type = revolt which = 1206 when = 0 } # Jilin
+}
+}
