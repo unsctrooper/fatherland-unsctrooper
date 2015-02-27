@@ -79,6 +79,9 @@
 	command = { type = trigger which = 811002 } # Axis Divisions activate in China
 	command = { type = 	relation which = GER value = 20 }
 	command = { type = 	relation which = AXI value = 20 }
+	command = { type = 	relation which = ENG value = -20 }
+	command = { type = 	relation which = USA value = -20 }
+	command = { type = 	relation which = ALS value = -20 }
 	}
 	
 	action = {

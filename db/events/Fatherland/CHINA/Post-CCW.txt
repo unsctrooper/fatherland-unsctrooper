@@ -22,6 +22,7 @@
 # 8200163 U87 Join the Axis Powers - Fascist China
 # 8200164 GER The Chinese National Social State requests Axis membership
 # 8200165 CHI Chinese National Social State proclaimed!
+# 8200166 CHI Blue Shirt Fascist militias attempt coup
 #######################################################
 
 ### The price of victory for the Nationalist Government
@@ -276,6 +277,9 @@ event = {
     command = { type = set_domestic which = interventionism value = 8 }
 	command = { type = non_aggression which = GER where = CHI }
 	command = { type = relation which = GER value = 10 }
+	command = { type = 	relation which = USA value = -20 }
+	command = { type = 	relation which = ENG value = -20 }
+	command = { type = 	relation which = ALS value = -20 }
 	command = { type = gain_tech which = -2 }
 	command = { type = dissent value = 2 }
 	}
@@ -412,6 +416,10 @@ event = {
 	command = { type = set_domestic which = free_market value = 3 }
 	command = { type = set_domestic which = freedom value = 3 }
 	command = { type = relation which = GER value = 10 } 
+	command = { type = 	relation which = USA value = -20 }
+	command = { type = 	relation which = SOV value = -20 }
+	command = { type = 	relation which = ENG value = -20 }
+	command = { type = 	relation which = ALS value = -20 }
 	command = { type = local_setflag which = fascist_china }
 	#ministers
 }
