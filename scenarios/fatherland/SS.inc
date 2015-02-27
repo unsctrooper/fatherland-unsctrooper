@@ -28,7 +28,7 @@
      free_market       = 1 
      professional_army = 8
      defense_lobby     = 10 
-     interventionism   = 1 
+     interventionism   = 10 
     } 
    nationalprovinces      = { 641 } 
    ownedprovinces         = { 639 637 641 638 640 } 
