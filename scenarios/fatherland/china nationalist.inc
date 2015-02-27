@@ -17,14 +17,6 @@ province = { id = 1307   # Huaihua
  province = { id = 1217   # Anshan
    ic       = -2
  } 
- 
-  province = { id = 1299   # Chongqing
-   ic       = -5
- } 
- 
-   province = { id = 1297   # Chengdu
-   ic       = -5
- } 
 
  
  ##################### 
@@ -452,7 +444,7 @@ inventions = { 3000027 }
       }
      Division = 
      { id         = {  type = 22000 id = 72  } 
-       name       = "13. Bubing Shi" 
+       name       = "14. Bubing Shi" 
        type       = infantry 
 	   strength  = 60
        model     = 8
@@ -536,7 +528,7 @@ inventions = { 3000027 }
       }
 	  Division = 
      { id         = {  type = 22000 id = 92  } 
-       name       = "14. Bubing Lü" 
+       name       = "17. Bubing Lü" 
        type       = militia 
 	   strength  = 60
        model     = 5
@@ -556,6 +548,67 @@ inventions = { 3000027 }
        model     = 5
       }
 	  }
+	  
+			  landunit = 
+   {  location = 1269 # 
+     name     = "Inner Mongolian Corps" 
+     id       = {  type = 22000 id = 95  }
+     Division = 
+     { id         = {  type = 22000 id = 96  } 
+       name       = "20. Bubing Lü" 
+       type       = infantry 
+	   strength  = 60
+       model     = 5
+      }
+	   Division = 
+     { id         = {  type = 22000 id = 97  } 
+       name       = "21. Bubing Lü" 
+       type       = infantry 
+	   strength  = 60
+       model     = 5
+      }
+}
+
+			  landunit = 
+   {  location = 1270 # 
+     name     = "2. Inner Mongolian Corps" 
+     id       = {  type = 22000 id = 98  }
+     Division = 
+     { id         = {  type = 22000 id = 99  } 
+       name       = "22. Bubing Lü" 
+       type       = infantry 
+	   strength  = 60
+       model     = 5
+      }
+}
+
+			  landunit = 
+   {  location = 1235 # 
+     name     = "1. Manchurian Corps" 
+     id       = {  type = 22000 id = 100  }
+     Division = 
+     { id         = {  type = 22000 id = 101  } 
+       name       = "23. Bubing Lü" 
+       type       = infantry 
+	   strength  = 60
+       model     = 5
+      }
+}
+
+			  landunit = 
+   {  location = 1245 # 
+     name     = "2. Manchurian Corps" 
+     id       = {  type = 22000 id = 102 }
+     Division = 
+     { id         = {  type = 22000 id = 103 } 
+       name       = "24. Bubing Lü" 
+       type       = infantry 
+	   strength  = 60
+       model     = 5
+      }
+}
+	
+	
   airunit =
   { location = 1297
     id       = { type = 22000 id = 300 }
