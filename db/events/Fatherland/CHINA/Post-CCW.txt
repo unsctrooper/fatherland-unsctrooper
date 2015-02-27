@@ -730,6 +730,11 @@ event = {
 	ai_chance = 90
 	name = "Accept the invitation."
 	command = { type = alliance which = USA }
+	command = { type = 	relation which = USA value = 20 }
+	command = { type = 	relation which = ENG value = 20 }
+	command = { type = 	relation which = ALS value = 20 }
+	command = { type = 	relation which = GER value = -20 }
+	command = { type = 	relation which = AXI value = -20 }
 	command = { type = gain_tech which = 6900 } # Armored Division Doctrine
 	command = { type = gain_tech which = -2 }
 	}
