@@ -593,5 +593,20 @@ landunit =
        experience = 80
 		}
 	 }
+	 
+	 
+	   landunit = 
+   { location = 641 # Sevastopol 
+     name     = "SS. Kampfgruppe Nord" 
+     id       = {  type = 14500 id = 11054  }
+ division = 
+     { id       = {  type = 14500 id = 11055 } 
+       name     = "14. Galizische SS-Freiw.-Div." 
+       type     = bergsjaeger 
+       model    = 12 
+       strength = 70
+       experience = 80
+		}
+	 }
   } 
  
