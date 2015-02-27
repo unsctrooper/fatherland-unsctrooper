@@ -888,7 +888,7 @@ name = "90000521NAME"
 desc = "90000521DESC"
 
 action_a = {
-name = ACTION_NAME_OK
+name = "The SS has taken over the Fatherland!"
 command = { type = dissent value = -5 }
 command = { type = sleepminister which = 280 }
 command = { type = sleepminister which = 23 }
