@@ -962,7 +962,6 @@ event = {
 	event = 8200156 # End of Congress
 	NOT = {
 	ideology = { type = fascist country = CHI }
-	ideology = { type = national_socialist country = CHI }
 	alliance = { country = -1 country = GER }	
 	}
 	}
