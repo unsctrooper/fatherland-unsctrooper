@@ -598,9 +598,9 @@ landunit =
 	   landunit = 
    { location = 641 # Sevastopol 
      name     = "SS. Kampfgruppe Nord" 
-     id       = {  type = 14500 id = 11054  }
+     id       = {  type = 14500 id = 11070  }
  division = 
-     { id       = {  type = 14500 id = 11055 } 
+     { id       = {  type = 14500 id = 11071 } 
        name     = "14. Galizische SS-Freiw.-Div." 
        type     = bergsjaeger 
        model    = 12 
