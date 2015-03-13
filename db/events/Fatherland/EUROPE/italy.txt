@@ -2432,7 +2432,7 @@ event = {
 	name = "Reorganization of Blackshirt Divisions"
 	desc = "The Blackshirts were fascist paramilitary armed squads in Italy during the period immediately following World War I and until the end of World War II. They were officially known as the Voluntary Militia for National Security. Their founders were nationalist intellectuals, former army officers and young landowners opposing peasants' and country labourers' unions. Their methods became harsher as Mussolini's power grew, and they used violence and intimidation against Mussolini's opponents."
 	style = 2
-	picture = "italian_blackshirts"
+	picture = "italian_warposter"
 	action = {
 		name = "ACTION_NAME_GREAT"
 		command = { type = max_organization which = militia value = 1 }
