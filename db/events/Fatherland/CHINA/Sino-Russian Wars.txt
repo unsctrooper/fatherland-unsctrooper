@@ -1,11 +1,38 @@
 ################################
 ### Sino-Russian Wars		 ###
 ### By UNSC Trooper			 ###
-################################
-# Sino-Soviet War (if China is not in the UN - UN Exp. Corps)
+################################ 
 
 ##############################
-# Axis Intervention in China #
+# Axis Intervention in China 
+# 811000 GER Support Nationalist China against the Soviets
+# 811001 CHI Axis offers an Expeditionary Force
+# 811002 AXI China accepts our proposal
+# 811003 CHI Chinese control over Axis Task Force
+# 811060 AXI Axis Forces retreat from China
+
+# Sino-Soviet War started by Soviet Union
+# 810000 SOV Foreign Policy concerning China (if Zhukov in power)
+# 810001 SOV Foreign Policy concerning China (if Molotov in power)
+# 810002 SOV Foreign Policy concerning China (if Beria in power)
+# 810003 SOV Joint Soviet-Mongolian Front
+# 810004 MON Soviet-Mongolian Front proposal
+# 810005 SOV Operation Amur Twilight
+# 810006 SOV Chinese Communist Party joins offensive
+# 810007 SOV Set up the PRC
+# 810008 CHC Creation of the PRC
+
+# Sino-Russian Wars started by China
+# 810009 CHI The Dragon of the East Awakes
+# 810010 CHI/U87 The Bear and the Dragon
+
+# Peace events
+# 810040 CHI/U87 China sues for peace - Soviet victory 
+# 810041 SOV China sues for peace
+# 810042 CHI/U87 The Treaty of Shanghai
+# 810044 CHI/U87 Soviet Union sues for peace - Chinese victory
+# 810045 SOV China claims Siberia - peace negotiations
+# 810046 SOV China claims Primorsk - peace negotiations
 ##############################
 
 # Support Nationalist China against the Soviets - GER
