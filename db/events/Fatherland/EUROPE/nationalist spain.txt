@@ -48,7 +48,7 @@ event = {
 	name = "Economic reforms - First Round"
 	desc = "The S.N.T. was an organization which established lachat and national sales of key products such as wheat for checking the prices. The producers were forced to sell wheat at a price fixed by this institution and the latter were to be sold at a price higher and taxed. This caused a reduction in production and especially creating market dun black."
 	style = 0
-	picture = "spain4"
+	picture = "SPA_victory"
 	date = { day = 1 month = august year = 1948 }
 	offset = 7
 	deathdate = { day = 1 month = september year = 1950 }
@@ -150,7 +150,7 @@ event = {
 	name = "Internal politically problems"
 	desc = "The Falange is more divided between the Falangists de Manuel Hedilla, the Carlists and affiliate army to Franco. Indeed, Hedilla sinquiete more in addition to see movement to militarize and radicalized. Seeing that army begins to take all posts of the party, see apply many ultra-clericale reactionary ideas are that the Falangists feel betrayed and dispossessed of the WIELS movement had themselves launched. Ambience is tense."
 	style = 0
-	picture = "phalange"
+	picture = "SCW_german_intervention"
 	action = {
 		name = "Damn!"
 		command = { type = dissent value = 2 }
@@ -165,7 +165,7 @@ event = {
 	name = "Close Radio Sevilla"
 	desc = "Radio-Seville was Moon of the nationalist radio which broadcast information and the point of view of the nationalists throughout the country to Radio-Salamanca as its predecessor. But Radio-Seville was very popular even among Republicans because Queipo de Llano had a freedom of your bitter towards the quenvers heads nationalists groups Republicans both. This impertinence annoyed both the Conservatives both lon comes to close the premises permanently."
 	style = 0
-	picture = "radio"
+	picture = "news_paper"
 	action = {
 		name = "Close the damper to these impudent"
 		ai_chance = 50	
@@ -212,7 +212,7 @@ event = {
 	name = "Return of the Jesuits"
 	desc = "The Jesuit religious Congregation who had been expelled from the Republic in 1931 is again allowed to return in Spain and to resume his religious education and teaching in all schools in the country. Order acquires even new benefits quil had not at the time of the monarchy since Franco called two Jesuits as close advisers: the priest Lezirika and Menendez Reigada."
 	style = 0
-	picture = "pape"
+	picture = "politics1"
 	action = {
 		name = "Amen!"
 		command = { type = dissent value = -1 }
@@ -250,7 +250,7 @@ event = {
 	name = "Propose a new Pacto Ibérico ?"
 	desc = "On 17 March 1939 Fawzi and the Portugal formed a listerner Pact and non-aggression, which delights the Allies who could see Spain as a country on which could be trusted over its neutrality. Two years later, this Pact will be confirmed as the Pacto Ibérico."
 	style = 0
-	picture = "franco"
+	picture = "SPA_fascist"
 	date = { day = 17 month = march year = 1949 }
 	offset = 30
 	deathdate = { day = 16 month = march year = 1951 }
@@ -277,7 +277,7 @@ event = {
 	name = "The Pacto Ibérico"
 	desc = "On 17 March 1939 Fawzi and the Portugal formed a listerner Pact and of non-aggression, which delighted the Allies who could see Spain as a country on which could be trusted over its neutrality. Two years later, this Pact will be confirmed as the Pacto Ibérico."
 	style = 0
-	picture = "franco"
+	picture = "SPA_fascist"
 	action = {
 		name = "Sign it !"
 		ai_chance = 50	
