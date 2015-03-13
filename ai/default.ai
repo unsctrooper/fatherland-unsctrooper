@@ -326,18 +326,18 @@ leader_ratio = {
 	air_lt_General 		=0.11
 }
 garrison = {
-	defend_overseas_beaches = yes
-	home_multiplier 	= 1.0
-	overseas_multiplier 	= 0.5
-	home_peace_cap 		= 100
-	war_zone_odds 		= 2.0
+	defend_overseas_beaches = no
+	home_multiplier 	= 0.5
+	overseas_multiplier 	= 0.2
+	home_peace_cap 	= 3
+	war_zone_odds 	= 2
 	key_point_prio_mult	= 1
-	revolt_risk_mult	= 1.0
+	revolt_risk_mult	= 2
 
 	# PRIORITIES:
-	beach			= 10	# Beach level 2
+	beach			= 40	# Beach level 2
 	capital			= 40	# Our capital
-	human_border		= 0	# Ignored for allied human players
+	human_border		= 50	# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
 	
 	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"

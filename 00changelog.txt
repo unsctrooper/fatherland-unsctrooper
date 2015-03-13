@@ -1,16 +1,108 @@
 #######################################################
-# Changelog for Beta version 5.0 codename ?
+# Changelog for Beta version 5.0 codename "Red Dawn"
 #######################################################
 
 #Events/Decision Modified (*) or Added (+) or Removed (-)
-
+	GERMANY
+		- (*) Hitler Death Chain
+		- (*) SS events
+		- (*) West Generalplan
+		- (*) Ost Generalplan
+		- (+/*) Ukraine RK
+		- (+/*) German Influences
+		- (*) Generalgovernment
+		- (+/*) Bailout events
+		- (+/*) Domestic events 
+		- (*) Axis events
+		- (+) Bonus - List of events
+	CHINA
+		- (+) Sino-Russian Wars
+		- (+) Sino-Soviet War
+		- (+) Chinas events
+		- (*) Post Chinese Civil War events
+	ASIA
+		- (+) Indochina Wars
+		- (*) India events
+	EUROPE
+		- (+/*) French State
+		- (+/*) Belgium		
+		- (+) Nationalist Spain
+		- (*) Italy
+		- (+/*) Free France
+		- (*) Serbia
+		- (+) Bonus - List of events		
+	COMINTERN
+		- (+/*) Soviet Union (Beria,Molotov,Zhukov + more)
+		- (*) Comintern Conference
+		- (+/*) Far Eastern Republic 
+		- (+/*) Siberia
+		- (+) Bonus - List of events
+	- MIDDLE EAST
+		- (*) Persia
+		- (*) United Arab Republic
+	- INTERNATIONAL CRISIS
+		- (+) Swiss Problem
+		- (*) Transylvania 		
+		- (*) Suez 
+		- (*) Kuwait
+		- (*) Abadan
+		- (+) China/Soviet Union
+	- AFRICA
+		- (+/*) South Africa
+		- (+) End of UK Colonialism
+		- (*) Madagascar
+	- AMERICA
+		- (*) Marshall Plan
+		- (*) USA
+#DB
+	Leaders
+	- New leaders for Arab Federation
+	- New leaders for Cossack Federation
+	- New leaders for Egypt
+	Ministers
+	- Modified ministers_U87.csv
+	- Modified ministers_als.csv
+	- Modified ministers_sov.csv	
 #Inc
 	- Revision inc for Germany (Nuclear)
 	- Revision inc for USA (Nuclear,New Cabinet)
 	- Revision inc for Italy (Nuclear)
 	- Revision inc for United Kingdom (Nuclear)
 	- Revision inc for Soviet Union	(Nuclear)
+	- Revision inc for SS
+	- Revision inc for China Nationalist and Commie China
+	- Revision inc for Axis 
+	- Add inc for United Nations
+	- Revision inc for Siberia
+	- Revision inc for Ostland
+	- Revision inc for Croatia
+	- Revision inc for Denmark	
+	
+# AI
+	- Improved AI for Germany
+	- Improved AI for SS
+	- Improved AI for all RK
+	- Improved default AI
+	
+#Scenarios
+	- Revision of fatherland.eug
+	
+#GFX
+	- New event pics
+	- New icon
+	- New scenario pic 
+	- New flags 
+	- New counters
 
+#Other
+	- Added United Nations faction
+	- Implementing of Cold War Tech Tree Expansion 
+	- Review of revolt.txt
+	- Remove duplicate files
+	- Bug fixing
+
+# Map fixing:
+	- Minor fixing
 	
 #######################################################
 # Changelog for Beta version 4.0 codename "Middle West"
