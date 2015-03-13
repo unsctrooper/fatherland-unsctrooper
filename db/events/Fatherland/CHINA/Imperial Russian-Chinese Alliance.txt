@@ -78,8 +78,8 @@ event = {
 	random = no
 	country = CHI
 
-	name = "EVT_8200300_NAME"
-	desc = "EVT_8200300_DESC"
+	name = "EVT_8200301_NAME"
+	desc = "EVT_8200301_DESC"
 	picture = "fatherland\dragon_and_bear"
 	style = 1
 
