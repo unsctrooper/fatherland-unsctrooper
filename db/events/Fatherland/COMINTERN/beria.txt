@@ -129,7 +129,7 @@ event = {
 	name = "British embargo against Soviet Union"
 	desc = "In retaliation for the conviction of its engineers, the British Government comes to embargo against us. All our trade with Britain are cancelled."
 	style = 0
-	picture = "flag_uk"
+	picture = "british_tactical_victory_pacific"
 	action_a = {	
 		name = "Capitalists do not lose anything to wait"
 		command = { }
@@ -152,7 +152,7 @@ event = {
 	name = "Goulag reopened"
 	desc = "Gulag was the abbreviation for the direction of the camps of forced work and ideological re-education, a Department of the secret police. Created in the 1920s by Lenin, the system reached its peak under Stalin with more than 476 complexes installed in Siberia and Central Asia. These camps included common law prisoners and political opponents. Prisoners built several railways in the Arctic regions, whose line Kotlas Vorkuta."
 	style = 0
-	picture = "goulag"
+	picture = "gulag"
 	action_a = {
 		name = "We need order"
 		command = { type = money value = -200 }
@@ -174,7 +174,7 @@ event = {
 	name = "The reorganization of NKVD" 
 	desc = "Under the tutelage of Stalin, Lavrenty Beria, who controls the N.K.V.D dune iron hand managed to put in place various measures such as treason in the event of decline against the enemies."
 	style = 0 
-	picture = "Beria"
+	picture = "soviet_reinforcments"
 	date = { day = 15 month = february year = 1949 }
 	offset = 50
 	deathdate = { day = 1 month = january year = 1965 }

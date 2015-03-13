@@ -345,9 +345,12 @@ event = {
 	date = { day = 1 month = may year = 1950 }
 	
 	name = "1st May of a new decade"
-	desc = "Un grand défilé est organisé pour le 1er mai. Les travailleurs, les jeunesses communistes et les militaires défilent en une grande procession colorée devant les leaders du parti communiste."
+	desc = "A great parade has been organized for the celebration of the 1st of May. Workers, communist youth and military personnel are marching in a grand and colorful procession in honor of their Communist leaders and their Workers' State."
+	
+	#Un grand défilé est organisé pour le 1er mai. Les travailleurs, les jeunesses communistes et les #militaires défilent en une grande procession colorée devant les leaders du parti communiste.
+	
 	style = 0
-	picture = "mai_1"
+	picture = "SCW_soviet_intervention"
 	action = {
 		name = "OK"
 		command = { type = money value = -50 }
