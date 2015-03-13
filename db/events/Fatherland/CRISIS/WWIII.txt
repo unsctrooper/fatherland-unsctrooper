@@ -23,7 +23,7 @@
 # 66613 - GER - Persia 
 # 66614 - PER - Answer
 # 66615 - GER - Ireland 
-# 66616 - IRL - Answer 
+# 66616 - IRE - Answer 
 # Approach possible from Axis, Allies and Comintern
 # 66619 - GER - Pakistan # TODO
 # 66620 - PAK - Answer # TODO
@@ -756,13 +756,13 @@ event = {
 	country = GER
 	
 	decision = {
-		exists = IRL
+		exists = IRE
 		event = 66602 # German diplomatic offensive
-		NOT = { war = { country = GER country = IRL } }
-		NOT = { alliance = { country = GER country = IRL } }
-		NOT = { alliance = { country = USA country = IRL } }
+		NOT = { war = { country = GER country = IRE } }
+		NOT = { alliance = { country = GER country = IRE } }
+		NOT = { alliance = { country = USA country = IRE } }
 		NOT = { lost_national = { country = GER value = 20 } }		
-		# verificare anche il sistema di governo della IRL ?
+		# verificare anche il sistema di governo della IRE ?
 	}
 	
 	decision_trigger = {
@@ -772,11 +772,11 @@ event = {
 	
 	trigger = {
 		random = 10
-		exists = IRL		
+		exists = IRE		
 		event = 66602 # German diplomatic offensive
-		NOT = { war = { country = GER country = IRL } }
-		NOT = { alliance = { country = GER country = IRL } }
-		NOT = { alliance = { country = USA country = IRL } }
+		NOT = { war = { country = GER country = IRE } }
+		NOT = { alliance = { country = GER country = IRE } }
+		NOT = { alliance = { country = USA country = IRE } }
 	}
 
 	date = { day = 1 month = january year = 1948 }		 
@@ -811,7 +811,7 @@ event = {
 event = {
 	id = 66616
 	random = no
-	country = IRL	
+	country = IRE	
 	
 	trigger = {
 		flag = irelandWW3
