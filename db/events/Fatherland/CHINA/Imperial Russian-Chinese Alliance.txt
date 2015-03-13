@@ -1,0 +1,161 @@
+##########################################################
+# Empire of Russia - Nationalist China alliance
+#
+# 8200300 U59 The Tsarist Bear and the Dragon
+# 8200301 CHI The Gentle Whisper of a Lost Tsar
+# 8200302 U59 Imperial Russian-Chinese Alliance is forged!
+# 8200302 CHI Soviet Union at war with Empire of Russia
+##########################################################
+
+# The Tsarist Bear and the Dragon
+################################
+
+event = { 
+	id = 8200300
+	random = no
+	country = U59 # Empire of Russia
+	
+	decision = {
+	exists = CHI
+	OR = {
+	exists = SOV
+	exists = SIB
+	exists = U57 # Far East Republic
+	}
+	NOT = { atwar = yes }
+	}
+	
+	decision_trigger = {
+	exists = CHI
+	OR = {
+	exists = SOV
+	exists = SIB
+	exists = U57 # Far East Republic
+	}
+	NOT = { atwar = yes }
+	}
+	
+	trigger = {
+	exists = CHI
+	OR = {
+	exists = SOV
+	exists = SIB
+	exists = U57 # Far East Republic
+	}
+	NOT = { atwar = yes }
+	}
+
+	name = "EVT_8200300_NAME"
+	desc = "EVT_8200300_DESC"
+	picture = "fatherland\dragon_and_bear"
+	decision_picture = "fatherland\decision_reichstag_color"
+	style = 1
+	
+	date = { day = 5 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+	name = "Push for an alliance with the Dragon."
+	ai_chance = 80
+	command = { type = trigger which = 8200301 }
+	command = { type = domestic which = interventionism value = 1 }
+	command = { type = relation which = CHI value = 15 }
+	}
+	
+	action = {
+	name = "Tsarism will prevail on its own."
+	ai_chance = 20
+	command = { type = relation which = CHI value = -10 }
+	}
+	}
+	
+	# The Gentle Whisper of a Lost Tsar
+	###################################
+	
+	event = { 
+	id = 8200301
+	random = no
+	country = CHI
+
+	name = "EVT_8200300_NAME"
+	desc = "EVT_8200300_DESC"
+	picture = "fatherland\dragon_and_bear"
+	style = 1
+
+	action = {
+	name = "Rekindle a lost friendship - accept alliance."
+	ai_chance = 75
+	command = { type = alliance which = U59 }
+	command = { type = domestic which = interventionism value = 1 }
+	command = { type = domestic which = defense_lobby value = 1 }
+	command = { type = relation which = U59 value = 20 }
+	command = { type = trigger which = 8200302 }
+	command = { type = dissent value = -1 }
+	}
+	
+	action = {
+	name = "We do not need this pathetic neo-Tsarist rabble."
+	ai_chance = 25
+	command = { type = relation which = U59 value = -10 }
+	}
+	}
+
+# Imperial Russian-Chinese Alliance is forged!
+###############################################
+
+	event = { 
+	id = 8200302
+	random = no
+	country = U59
+
+	name = "EVT_8200302_NAME"
+	desc = "EVT_8200302_DESC"
+	picture = "fatherland\dragon_and_bear"
+	style = 1
+
+	action = {
+	name = "The Bear and the Dragon stand firm."
+	command = { type = relation which = CHI value = 20 }
+	command = { type = steal_tech which = CHI }
+	command = { type = steal_tech which = CHI }
+	command = { type = steal_tech which = CHI }
+	}
+	}
+	
+# Soviet Union at war with Empire of Russia
+###########################################
+
+event = { 
+	id = 8200303
+	random = no
+	country = CHI
+	
+	trigger = {
+	alliance = { country = -1 country = U59 }	
+	war = { country = SOV country = U59 }	
+	}
+
+	name = "EVT_8200303_NAME"
+	desc = "EVT_8200303_DESC"
+	picture = "fatherland\sovietarmy_color"
+	style = 1
+	
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+	name = "We must leave the alliance."
+	ai_chance = 100
+	command = { type = leave_alliance when = 1 }
+	command = { type = relation which = U59 value = -10 }
+	}
+
+	action = {
+	name = "We cannot betray our Russian allies."
+	ai_chance = 0
+	command = { type = relation which = U59 value = 10 }
+	command = { type = dissent value = 2 }
+	}
+}
