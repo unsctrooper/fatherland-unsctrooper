@@ -1,4 +1,4 @@
-name       = "Fatherland"
+name       = "1948: Fatherland"
 panel      = "scenarios/data/fatherland.bmp"
 header = {
 	name       = "Fatherland"
