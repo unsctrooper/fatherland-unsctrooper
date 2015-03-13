@@ -3,6 +3,9 @@
 ### By UNSC Trooper			 ###
 ################################ 
 
+# Notes for next release:
+# Soviet Union disintegrates after defeat against China
+
 ##############################
 # Axis Intervention in China 
 # 811000 GER Support Nationalist China against the Soviets
