@@ -79,7 +79,7 @@ event = {
 	name = "German Military Mission to Arab Countries"
 	desc = "Now that we control Middle East, we should send a mix of propagandists, scientists and more importantly military 'councillors' to the locals to help them manage their army. That would ensure both our influence there and strenghtening our allies' armies."
 	style = 2
-	picture = ""
+	picture = "wehrmacht1"
 
 	date = { day = 19 month = july year = 1936 }
 	offset = 5
