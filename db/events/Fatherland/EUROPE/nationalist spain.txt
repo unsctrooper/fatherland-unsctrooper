@@ -579,7 +579,7 @@ event = {
 	name = "Cinema and Football"
 	desc = "Pepin Fernadez, emigrating from Cuba for many years, founded in Madrid the Galearias Preciados, the most exclusive shops of time. At the same time, since April 23, we double version Spanish all home movies is now forbidden to broadcast the film in VO. This allows censorship dedulcorer dialogues. A ray of joy however: LAtletic de Bilbao won"
 	style = 0
-	picture = "censure"
+	picture = "failed_objective"
 	date = { day = 3 month = april year = 1953 }
 	action = {
 		name = "Monitor the situation"
@@ -599,7 +599,7 @@ event = {
 	name = "Navy academy"
 	desc = "It inaugurates sailor a future naval officers training centre."
 	style = 0
-	picture = "spain9"
+	picture = "naval_reinforcements"
 	date = { day = 15 month = august year = 1952 }
 	action = {
 		name = "Hurrah!"
@@ -621,7 +621,7 @@ event = {
 	name = "National foreign agency"
 	desc = "A new spy agency"
 	style = 0
-	picture = "spain9"
+	picture = "failed_objective"
 	date = { day = 15 month = august year = 1953 }
 	action_a = {
 		name = "Yes"
@@ -730,7 +730,7 @@ event = {
 	name = "Purchase of Panzers"
 	desc = "The low acquisitions during the conflict résumèrent to a battalion of German PzKpfw IV tanks for the creation of the 1st Armored Division, which sintegrera in the dinfanterie Regiment shielded Alcázar de Toledo No. 61."
 	style = 0
-	picture = "panzer"
+	picture = "panzer_reserves"
 	date = { day = 1 month = january year = 1950 }
 	offset = 23
 	deathdate = { day = 1 month = december year = 1951 }
@@ -754,7 +754,7 @@ event = {
 	name = "Sale of Panzers"
 	desc = "Nationalist Spain comes from place us an order for two divisions of panzers to our darmements businesses. Suddenly, they have delivered their orders and have reaped good profits."
 	style = 0
-	picture = "panzer"
+	picture = "panzer_reserves"
 	action = {
 		name = "Das gut"
 		command = { type = money value = 500 }
@@ -773,7 +773,7 @@ event = {
 	name = "National railway company - RENFE"
 	desc = "Franco has created the first national railway company which consolidates all shod the country's private companies under the control of the State. This is the Foundation of the Red Nacional de Ferrocariles. The reconstruction of railway roads destroyed by the war will be greatly facilitated."
 	style = 0
-	picture = "train1"
+	picture = "industry_sabotaged"
 	action = {
 		name = "Great!"
 		command = { type = money value = 200 }
@@ -792,9 +792,9 @@ event = {
 	}
 	date = { day = 15 month = february year = 1950 }
 	name = "Madrid bombing"
-	desc = "A bomb attack has just dexploser in the centre of Madrid, spraying a local of the Phalanx. This reminder to Franco Republican supporters have steps all disarmed. Unless it is loeuvre danarchistes?"
+	desc = "A bomb attack has just exploded in the centre of Madrid, spraying a local of the Phalanx. This reminder to Franco Republican supporters have not disarmed yet."
 	style = 0
-	picture = "anarchistes"
+	picture = "comander_assasinated"
 	action = {
 		name = "Damn!"
 		command = { type = dissent value = 1 }
