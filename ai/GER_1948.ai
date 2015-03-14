@@ -34,6 +34,7 @@ demand_claims = {
 }
 
 befriend = {
+	CHI = 150 # Germany will try to ally China to the Axis.
 	BLR = 50
 	SLO = 50
    	ITA = 50 
@@ -56,6 +57,7 @@ befriend = {
 	ROM = 50
 }
 protect = {
+	CHI = 70 # Germany will try to ally China to the Axis.
 	BLR = 50
 	SLO = 50
    	ITA = 50 
@@ -98,8 +100,8 @@ trade = {
 		SPA = 80
 		SOV = 80
 		BUL = 100
+		CHI = 70
 		JAP = 50
-		CHI = 50
 		LUX = 80
 		HOL = 100
 		NOR = 40
@@ -116,18 +118,22 @@ tech_sharing = {
 		BUL = 100
 		HUN = 100
 		SPA = 120
-		YUG = 50
-		CZE = 70
 		ITA = 150
 		SWE = 50
 		FIN = 120
-		JAP = 150
+		CHI = 150
 		TUR = 100
 	}
 	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
 	not = { }
 	prioritized = { }
 }
+
+resistance = { 
+SOV = 8
+U59 = 7 # Empire of Russia
+}
+
 ###################################
 # Spying
 ###################################
