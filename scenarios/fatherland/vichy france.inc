@@ -57,7 +57,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
    #Formerly occupied north
    70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99 67 57 38 40 41 42
    
-   90  86  94 93 92 91	87 # Former Occupation of France by Italy
+   90  86  94 93 92 # Former Occupation of France by Italy
 							
    #                         2000  1767  1768                            
        #                                                   833   
@@ -76,7 +76,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
    #Formerly occupied north
    70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99 67 57 38 40 41 42
    
-  90  86  94 93 92 91	87 # Former Occupation of France by Italy	
+  90  86  94 93 92 # Former Occupation of France by Italy	
 
 							
    #                         2000  1767  1768                            
