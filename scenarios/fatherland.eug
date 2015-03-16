@@ -25,7 +25,7 @@ globaldata = {
 	startdate = { year = 1948 month = january day = 1 }
 	axis = { 
 		id = { type = 15000 id = 2 }
-		participant = { GER SLO ITA BUL CRO MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58 U47 }
+		participant = { GER SLO ITA BUL CRO MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM BLR U58 U47 }
 	}
 	allies = { 
 		id = { type = 15000 id = 1 }
