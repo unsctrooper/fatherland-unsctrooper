@@ -1,5 +1,5 @@
 ###########################################################
-# Fatherland Beta 4.0 codename "Middle West"
+# Fatherland Beta 5.0 codename "Red Dawn"
 # A post-ww2 scenario with Germany victorious.
 ###########################################################
 
