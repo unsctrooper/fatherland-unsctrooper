@@ -85,4 +85,3 @@ After the re-establishment of order events, there is still -50 offmap IC for Ger
 
 
 The Second Operation Barbarossa event can still not be triggered, as the provinces where Germany is supposed to have armies in to trigger the war with the SU get grabbed by the SU when Hitler dies.
-.
