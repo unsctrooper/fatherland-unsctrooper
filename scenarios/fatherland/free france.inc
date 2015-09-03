@@ -55,6 +55,7 @@
     relation = { tag = LEB value = 50 access = yes }  
     relation = { tag = SYR value = 50 access = yes }  
 	relation = { tag = U03 value = 150 access = yes } 
+relation = { tag = ALS value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
   }
 
    SpyInfo                = {  country = "U01" NumberOfSpies = 9  } 
@@ -347,18 +348,18 @@ inventions = { 3000027 }
    # 1st Army
    landunit = 
    { id       = {  type = 13500 id = 617  } 
-     name     = "Ière Armée" 
+     name     = "IÃ¨re ArmÃ©e" 
      location = 978 
      division = 
      { id       = {  type = 13500 id = 618  } 
-       name     = "Ière Armée" 
+       name     = "IÃ¨re ArmÃ©e" 
        type     = hq 
        model    = 2 
        strength = 75 
       } 
      division = 
      { id       = {  type = 13500 id = 616  } 
-       name     = "2ème Division Blindée" 
+       name     = "2Ã¨me Division BlindÃ©e" 
        type     = armor 
        model    = 2 
        strength = 60 
@@ -367,14 +368,14 @@ inventions = { 3000027 }
       } 
      division = 
      { id       = {  type = 13500 id = 626  } 
-       name     = "1ère Division d'Infanterie" 
+       name     = "1Ã¨re Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
       } 
      division = 
      { id       = {  type = 13500 id = 629  } 
-       name     = "14ème Division d'Infanterie" 
+       name     = "14Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -382,18 +383,18 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 608  } 
-     name     = "IIème Corps d'Armée" 
+     name     = "IIÃ¨me Corps d'ArmÃ©e" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 609  } 
-       name     = "1ère Division Française Libre" 
+       name     = "1Ã¨re Division FranÃ§aise Libre" 
        type     = motorized 
        model    = 1 
        strength = 70 
       } 
      division = 
      { id       = {  type = 13500 id = 619  } 
-       name     = "1ère Division Blindée" 
+       name     = "1Ã¨re Division BlindÃ©e" 
        type     = armor 
        model    = 1 
        strength = 70 
@@ -402,14 +403,14 @@ inventions = { 3000027 }
       } 
      division = 
      { id       = {  type = 13500 id = 611  } 
-       name     = "3ème Division d'Infanterie Algérienne" 
+       name     = "3Ã¨me Division d'Infanterie AlgÃ©rienne" 
        type     = infantry 
        model    = 10 
        strength = 70 
       } 
      division = 
      { id       = {  type = 13500 id = 620  } 
-       name     = "9ème Division d'Infanterie Coloniale" 
+       name     = "9Ã¨me Division d'Infanterie Coloniale" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -417,11 +418,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 615  } 
-     name     = "Ière Corps d'Armée" 
+     name     = "IÃ¨re Corps d'ArmÃ©e" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 614  } 
-       name     = "2ème Division d'Infanterie Marocaine" 
+       name     = "2Ã¨me Division d'Infanterie Marocaine" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -430,14 +431,14 @@ inventions = { 3000027 }
       } 
      division = 
      { id       = {  type = 13500 id = 612  } 
-       name     = "4ème Division Marocaine de Montagne" 
+       name     = "4Ã¨me Division Marocaine de Montagne" 
        type     = bergsjaeger 
        model    = 10 
        strength = 60 
       } 
      division = 
      { id       = {  type = 13500 id = 613  } 
-       name     = "5ème Division Blindée" 
+       name     = "5Ã¨me Division BlindÃ©e" 
        type     = armor 
        model    = 1 
        strength = 60 
@@ -446,7 +447,7 @@ inventions = { 3000027 }
       } 
      division = 
      { id       = {  type = 13500 id = 621  } 
-       name     = "10ème Division d'Infanterie" 
+       name     = "10Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -454,11 +455,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 1002  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 728
      division = 
      { id       = {  type = 13500 id = 46  } 
-       name     = "9ème Division d'Infanterie Coloniale" 
+       name     = "9Ã¨me Division d'Infanterie Coloniale" 
        type     = infantry 
        model    = 9 
        strength = 25 
@@ -466,11 +467,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 1004  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 625  } 
-       name     = "27ème Division d'Infanterie Alpine" 
+       name     = "27Ã¨me Division d'Infanterie Alpine" 
        type     = bergsjaeger 
        model    = 10 
        strength = 70 
@@ -478,11 +479,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 1005  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 627  } 
-       name     = "36ème Division d'Infanterie" 
+       name     = "36Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -490,11 +491,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 628  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 630  } 
-       name     = "10ème Division d'Infanterie" 
+       name     = "10Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -502,11 +503,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 631  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 632  } 
-       name     = "19ème Division d'Infanterie" 
+       name     = "19Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -514,11 +515,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 633  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 634  } 
-       name     = "23ème Division d'Infanterie" 
+       name     = "23Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -526,11 +527,11 @@ inventions = { 3000027 }
     } 
    landunit = 
    { id       = {  type = 13500 id = 635  } 
-     name     = "Forces Françaises Libres" 
+     name     = "Forces FranÃ§aises Libres" 
      location = 978
      division = 
      { id       = {  type = 13500 id = 636  } 
-       name     = "25ème Division d'Infanterie" 
+       name     = "25Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 10 
        strength = 70 
@@ -539,12 +540,12 @@ inventions = { 3000027 }
 
 	navalunit = { 
 		id = { type = 13500 id = 700 } 
-		name = "Force Naval Française Libre" 
+		name = "Force Naval FranÃ§aise Libre" 
 		location = 23 
 		base = 23 
 		division = { 
 			id = { type = 13500 id = 301 } 
-			name = "Béarn" 
+			name = "BÃ©arn" 
 			type = escort_carrier 
 			model = 1 
 			}
@@ -625,85 +626,85 @@ inventions = { 3000027 }
 			}
 		division = { 
 			id = { type = 13500 id = 307 } 
-			name = "1ère Flottille de Contre-Torpilleurs" 
+			name = "1Ã¨re Flottille de Contre-Torpilleurs" 
 			type = destroyer 
 			model = 3 
 			} 
 		division = { 
 			id = { type = 13500 id = 308 } 
-			name = "2ème Flottille de Contre-Torpilleurs" 
+			name = "2Ã¨me Flottille de Contre-Torpilleurs" 
 			type = destroyer 
 			model = 3 
 			} 
 		division = { 
 			id = { type = 13500 id = 321 } 
-			name = "3ème Flottille de Contre-Torpilleurs" 
+			name = "3Ã¨me Flottille de Contre-Torpilleurs" 
 			type = destroyer 
 			model = 3 
 			}
 		division = { 
 			id = { type = 13500 id = 322 } 
-			name = "4ème Flottille de Contre-Torpilleurs" 
+			name = "4Ã¨me Flottille de Contre-Torpilleurs" 
 			type = destroyer 
 			model = 3 
 			} 
 		division = { 
 			id = { type = 13500 id = 342 } 
-			name = "1ère Flottille de Sous-Marins" 
+			name = "1Ã¨re Flottille de Sous-Marins" 
 			type = submarine 
 			model = 5 
 			} 
 		division = { 
 			id = { type = 13500 id = 343 } 
-			name = "2ème Flottille de Sous-Marins" 
+			name = "2Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 5 
 			} 
 		division = { 
 			id = { type = 13500 id = 344 } 
-			name = "3ème Flottille de Sous-Marins" 
+			name = "3Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 5 
 			} 
 		division = { 
 			id = { type = 13500 id = 345 } 
-			name = "4ème Flottille de Sous-Marins" 
+			name = "4Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 5 
 			} 
 		division = { 
 			id = { type = 13500 id = 346 } 
-			name = "5ème Flottille de Sous-Marins" 
+			name = "5Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 4 
 			} 
 		division = { 
 			id = { type = 13500 id = 309 } 
-			name = "1ère Flottille de Convoi" 
+			name = "1Ã¨re Flottille de Convoi" 
 			type = transport 
 			model = 2 
 			}  
 		division = { 
 			id = { type = 13500 id = 324 } 
-			name = "2ème Flottille de Convoi" 
+			name = "2Ã¨me Flottille de Convoi" 
 			type = transport 
 			model = 2 
 			}
 		division = { 
 			id = { type = 13500 id = 340 } 
-			name = "3ème Flottille de Convoi" 
+			name = "3Ã¨me Flottille de Convoi" 
 			type = transport 
 			model = 2 
 			}
 		division = { 
 			id = { type = 13500 id = 360 } 
-			name = "4ème Flottille de Convoi" 
+			name = "4Ã¨me Flottille de Convoi" 
 			type = transport 
 			model = 2 
 			} 
 		division = { 
 			id = { type = 13500 id = 364 } 
-			name = "5ème Flottille de Convoi" 
+			name = "5Ã¨me Flottille de Convoi" 
 			type = transport 
 			model = 2 
 			}
@@ -711,7 +712,7 @@ inventions = { 3000027 }
 		} 
    airunit = 
    {  id       = {  type = 13500 id = 800  } 
-     name     = "Commande Aérienne d'Afrique du Nord" 
+     name     = "Commande AÃ©rienne d'Afrique du Nord" 
      location = 727 
      base     = 727
      Division = 
@@ -745,7 +746,7 @@ inventions = { 3000027 }
     }
    airunit = 
    {  id       = {  type = 13500 id = 803  } 
-     name     = "Commande Aérienne Caledonie Nouvelle" 
+     name     = "Commande AÃ©rienne Caledonie Nouvelle" 
      location = 1582 
      base     = 1582 
      Division = 
@@ -758,7 +759,7 @@ inventions = { 3000027 }
     }
    airunit = 
    {  id       = {  type = 13500 id = 508  } 
-     name     = "Commande Aérienne Afrique Ouest" 
+     name     = "Commande AÃ©rienne Afrique Ouest" 
      location = 978 
      base     = 978 
      Division = 
@@ -777,7 +778,7 @@ inventions = { 3000027 }
      location = 1002
      division = 
      { id       = {  type = 13500 id = 50  } 
-       name     = "1ère Division d'Infanterie de Réserve" 
+       name     = "1Ã¨re Division d'Infanterie de RÃ©serve" 
        type     = militia 
        model    = 4 
        strength = 55 
@@ -792,7 +793,7 @@ landunit =
      location = 718
      division = 
      { id       = {  type = 13500 id = 18  } 
-       name     = "Commandement Supérieur des Troupes de Tunisie" 
+       name     = "Commandement SupÃ©rieur des Troupes de Tunisie" 
        type     = hq 
        model    = 2 
        strength = 30 
@@ -840,7 +841,7 @@ landunit =
      location = 724 
      division = 
      { id       = {  type = 13500 id = 26  } 
-       name     = "Division de Meknès" 
+       name     = "Division de MeknÃ¨s" 
        type     = infantry 
        model    = 8 
        strength = 40 
@@ -848,7 +849,7 @@ landunit =
     } 
    landunit = 
    { id       = {  type = 13500 id = 27  } 
-     name     = "XIX. Région Militaire" 
+     name     = "XIX. RÃ©gion Militaire" 
      location = 727
      division = 
      { id       = {  type = 13500 id = 28  } 
@@ -867,7 +868,7 @@ landunit =
     } 
    landunit = 
    { id       = {  type = 13500 id = 30  } 
-     name     = "XIX. Région Militaire" 
+     name     = "XIX. RÃ©gion Militaire" 
      location = 728
      division = 
      { id       = {  type = 13500 id = 31  } 
@@ -886,7 +887,7 @@ landunit =
     } 
    landunit = 
    { id       = {  type = 13500 id = 33  } 
-     name     = "XIX. Région Militaire" 
+     name     = "XIX. RÃ©gion Militaire" 
      location = 735
      division = 
      { id       = {  type = 13500 id = 34  } 
@@ -905,7 +906,7 @@ landunit =
     } 
    landunit = 
    { id       = {  type = 13500 id = 36  } 
-     name     = "XIX. Région Militaire" 
+     name     = "XIX. RÃ©gion Militaire" 
      location = 747
      division = 
      { id       = {  type = 13500 id = 37  } 
@@ -928,14 +929,14 @@ landunit =
      location = 978
      division = 
      { id       = {  type = 13500 id = 47  } 
-       name     = "2éme Division d'Infanterie Coloniale" 
+       name     = "2Ã©me Division d'Infanterie Coloniale" 
        type     = infantry 
        model    = 7 
        strength = 25 
       } 
      division = 
      { id       = {  type = 13500 id = 48  } 
-       name     = "3éme Division d'Infanterie Coloniale" 
+       name     = "3Ã©me Division d'Infanterie Coloniale" 
        type     = infantry 
        model    = 7 
        strength = 25 
