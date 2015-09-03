@@ -155,6 +155,7 @@
     }
     relation = { tag = YEM value = 100 }
     relation = { tag = U05 value = 70  }  
+    relation = { tag = ALS value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } } #Guarantee independence of UN
   }   
     SpyInfo = { country = "USA" NumberOfSpies = 11  }   
 	SpyInfo = { country = "U01" NumberOfSpies = 3 }
