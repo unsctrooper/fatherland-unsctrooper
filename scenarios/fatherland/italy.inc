@@ -114,6 +114,7 @@ country = {
 		relation = { tag = UPE value = 50 } # Turkestan		
 		
 		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
+		relation = { tag = AXI value = 180 access = yes guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = GER value = 180 guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = CRO value = 120 access = yes guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = HUN value = 175 }
@@ -1054,7 +1055,7 @@ country = {
           }
          division =
          { id       = {  type = 23500 id = 15  }
-           name     = "36a Divisione 'Forlì'"
+           name     = "36a Divisione 'ForlÃ¬'"
            type     = infantry
            model    = 11
            strength = 70
@@ -1442,7 +1443,7 @@ country = {
 			}
 		division = { 
 			id = { type = 13500 id = 306 } 
-			name = "La Galissonnière" # owned by Italy until handed over to the Free French after the Italian Armistice
+			name = "La GalissonniÃ¨re" # owned by Italy until handed over to the Free French after the Italian Armistice
 			type = light_cruiser 
 			model = 4 
 			}
