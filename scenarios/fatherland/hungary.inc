@@ -41,6 +41,7 @@ rare_materials         = 1000
       guaranteed = { day = 27 month = september year = 1940 }
     }
     relation = { tag = ROM value = -200 }
+    relation = { tag = AXI value = 170 access = yes guaranteed = { day = 1 month = january year = 1948 } }
   } 
    SpyInfo                = {  country = "HUN" NumberOfSpies = 7  } 
  nationalprovinces = {  209 210 215 276 277 278 279 280 281 282 283 284 296 341 } 
@@ -146,11 +147,11 @@ inventions = { 3000027 }
    # ROYAL HUNGARIAN ARMY
    landunit = 
    {  id       = {  type = 20500 id = 1  } 
-     name     = "Magyar Kiralyi HonvÈdsÈg" 
+     name     = "Magyar Kiralyi Honv√©ds√©g" 
      location = 284 
 	Division = 
      {  id       = {  type = 20500 id = 2  } 
-       name     = "Magyar Kiralyi HonvÈdsÈg Fˆhadiszallas" 
+       name     = "Magyar Kiralyi Honv√©ds√©g F√∂hadiszallas" 
        strength     = 50
        type     = hq
 	   model = 2
@@ -162,21 +163,21 @@ inventions = { 3000027 }
      location = 284 
      Division = 
      {  id       = {  type = 20500 id = 55  } 
-       name     = "1. T·bori p·ncÈloshadostz·ly" 
+       name     = "1. T√°bori p√°nc√©loshadostz√°ly" 
        strength     = 75
        type     = armor 
 	   model = 3
       } 
      Division = 
      {  id       = {  type = 20500 id = 60  } 
-       name     = "1. Motoros rÈszleg" 
+       name     = "1. Motoros r√©szleg" 
        strength     = 55
        type     = motorized 
 	   model = 3
       } 
 	 Division = 
      {  id       = {  type = 20500 id = 80  } 
-       name     = "2. Motoros rÈszleg" 
+       name     = "2. Motoros r√©szleg" 
        strength     = 55
        type     = motorized 
 	   model = 3
@@ -188,7 +189,7 @@ inventions = { 3000027 }
      location = 284 
      Division = 
      {  id       = {  type = 20500 id = 62  } 
-       name     = "22. Kˆnnyuhadoszt·ly" 
+       name     = "22. K√∂nnyuhadoszt√°ly" 
        strength     = 55
        type     = infantry
 	   model = 10
@@ -201,7 +202,7 @@ inventions = { 3000027 }
      location = 296 
      Division = 
      {  id       = {  type = 20500 id = 64  } 
-       name     = "1. Lovashadoszt·ly" 
+       name     = "1. Lovashadoszt√°ly" 
        strength     = 50
        type     = cavalry 
 	   model = 10
@@ -213,7 +214,7 @@ inventions = { 3000027 }
      location = 296 
      Division = 
      {  id       = {  type = 20500 id = 38  } 
-       name     = "18. Foglaljahadoszt·ly" 
+       name     = "18. Foglaljahadoszt√°ly" 
        strength     = 55
        type     = garrison 
 	   model = 6
@@ -221,18 +222,18 @@ inventions = { 3000027 }
     } 
    landunit = 
    {  id       = {  type = 20500 id = 65  } 
-     name     = "VIII. Katonai kˆrzet" 
+     name     = "VIII. Katonai k√∂rzet" 
      location = 292 
      Division = 
      {  id       = {  type = 20500 id = 66  } 
-       name     = "24. Gyaloghadoszt·ly" 
+       name     = "24. Gyaloghadoszt√°ly" 
        strength     = 65
        type     = infantry 
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 44  } 
-       name     = "23. Foglaljahadoszt·ly" 
+       name     = "23. Foglaljahadoszt√°ly" 
        strength     = 55
        type     = infantry 
 	   model = 10
@@ -251,7 +252,7 @@ inventions = { 3000027 }
      location = 213 
      Division = 
      {  id       = {  type = 20500 id = 50  } 
-       name     = "25. Gyaloghadoszt·ly" 
+       name     = "25. Gyaloghadoszt√°ly" 
        strength     = 45
        type     = infantry
 	   model = 10
@@ -271,14 +272,14 @@ inventions = { 3000027 }
      location = 292 
      Division = 
      {  id       = {  type = 20500 id = 8  } 
-       name     = "6. Gyaloghadoszt·ly" 
+       name     = "6. Gyaloghadoszt√°ly" 
        strength     = 65
        type     = infantry 
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 7  } 
-       name     = "5. Foglaljahadoszt·ly" 
+       name     = "5. Foglaljahadoszt√°ly" 
        strength     = 55
        type     = infantry 
 	   model = 10
@@ -286,18 +287,18 @@ inventions = { 3000027 }
     } 
    landunit = 
    {  id       = {  type = 20500 id = 41  } 
-     name     = "VII. Katonai kˆrzet" 
+     name     = "VII. Katonai k√∂rzet" 
      location = 209 
      Division = 
      {  id       = {  type = 20500 id = 43  } 
-       name     = "20. Gyaloghadoszt·ly" 
+       name     = "20. Gyaloghadoszt√°ly" 
        strength     = 65
        type     = infantry 
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 42  } 
-       name     = "19. Foglaljahadoszt·ly" 
+       name     = "19. Foglaljahadoszt√°ly" 
        strength     = 55
        type     = infantry
 	   model = 10
@@ -310,14 +311,14 @@ inventions = { 3000027 }
      location = 277 
      Division = 
      {  id       = {  type = 20500 id = 9  } 
-       name     = "7. Gyaloghadoszt·ly" 
+       name     = "7. Gyaloghadoszt√°ly" 
        strength     = 65
        type     = infantry 
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 24  } 
-       name     = "9. Foglaljahadoszt·ly" 
+       name     = "9. Foglaljahadoszt√°ly" 
        strength     = 55
        type     = infantry 
 	   model = 10
@@ -329,14 +330,14 @@ inventions = { 3000027 }
      location = 341 
      Division = 
      {  id       = {  type = 20500 id = 28  } 
-       name     = "10. Gyaloghadoszt·ly" 
+       name     = "10. Gyaloghadoszt√°ly" 
        strength     = 65
        type     = infantry
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 30  } 
-       name     = "12. Foglaljahadoszt·ly" 
+       name     = "12. Foglaljahadoszt√°ly" 
        strength     = 55
        type     = infantry 
 	   model = 10
@@ -348,7 +349,7 @@ inventions = { 3000027 }
      location = 277 
      Division = 
      {  id       = {  type = 20500 id = 32  } 
-       name     = "13. Gyaloghadoszt·ly" 
+       name     = "13. Gyaloghadoszt√°ly" 
        strength     = 65
        type     = infantry
 	   model = 10
@@ -361,7 +362,7 @@ inventions = { 3000027 }
      location = 605 
      Division = 
      {  id       = {  type = 20500 id = 57  } 
-       name     = "201. Kˆnnyu biztons·gihadoszt·ly" 
+       name     = "201. K√∂nnyu biztons√°gihadoszt√°ly" 
        strength     = 75
        type     = infantry
 	   model = 10
@@ -370,21 +371,21 @@ inventions = { 3000027 }
       } 
      Division = 
      {  id       = {  type = 20500 id = 46  } 
-       name     = "2. Kˆnnyuhadoszt·ly" 
+       name     = "2. K√∂nnyuhadoszt√°ly" 
        strength     = 75
        type     = infantry
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 48  } 
-       name     = "5. Kˆnnyuhadoszt·ly" 
+       name     = "5. K√∂nnyuhadoszt√°ly" 
        strength     = 75
        type     = infantry
 	   model = 10
       } 
      Division = 
      {  id       = {  type = 20500 id = 47  } 
-       name     = "8. Kˆnnyuhadoszt·ly" 
+       name     = "8. K√∂nnyuhadoszt√°ly" 
        strength     = 75
        type     = infantry 
 	   model = 10
@@ -398,7 +399,7 @@ inventions = { 3000027 }
      location = 605 
      Division = 
      {  id       = {  type = 20500 id = 59  } 
-       name     = "1. Kˆnnyu biztons·gihadoszt·ly" 
+       name     = "1. K√∂nnyu biztons√°gihadoszt√°ly" 
        strength     = 75
        type     = infantry
 	   model = 10
@@ -411,19 +412,19 @@ inventions = { 3000027 }
    # 1ST AIR ARMY
    airunit = 
    {  id       = {  type = 20500 id = 70  } 
-     name     = "I LÈgÌ Hadsereg" 
+     name     = "I L√©g√≠ Hadsereg" 
      location = 284 
      base     = 284 
      Division = 
      {  id       = {  type = 20500 id = 71  } 
-       name     = "I.Vad·szoszt·ly" 
+       name     = "I.Vad√°szoszt√°ly" 
        type     = interceptor 
        model    = 5
        strength = 30 
       } 
      Division = 
      {  id       = {  type = 20500 id = 72  } 
-       name     = "I.Vad·szbomb·zÛ Oszt·ly" 
+       name     = "I.Vad√°szbomb√°z√≥ Oszt√°ly" 
        type     = tactical_bomber 
        model    = 4 
        strength = 30 
@@ -432,7 +433,7 @@ inventions = { 3000027 }
 	
 	  ### Volga Coalition Troops ###
 	
-landdivision = { dormant = yes id = { type = 20500 id = 100 } name = "Volga rendorsÈgi kˆrzet" type = garrison model = 6 extra = artillery brigade_model = 9 }
+landdivision = { dormant = yes id = { type = 20500 id = 100 } name = "Volga rendors√©gi k√∂rzet" type = garrison model = 6 extra = artillery brigade_model = 9 }
 
 	
   } 
