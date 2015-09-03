@@ -118,6 +118,7 @@ country = {
 		relation = { tag = UPE value = 50 } # Turkestan		
 		
 		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
+		relation = { tag = AXI value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = ITA value = 180 guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = CRO value = 120 access = yes guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = HUN value = 180 }
@@ -175,7 +176,7 @@ country = {
 		# Non-National provinces
 		377 382 383 # Military Administration of Greece
 		553 # Military Administration of Leningrad
-		98 97 106 96 # Military Administation of France (Zone réservée)
+		98 97 106 96 # Military Administation of France (Zone rÃ©servÃ©e)
 		101 102 103 # Military Administation of France (Zone interdite)
 		69 68   37  39   # 45 43 44 46 53 50 67 57 38 40 41 42# Military Administration of France (Atlantic Wall)
 		336 # Banat region of Serbia 
@@ -450,7 +451,7 @@ landunit =
    landunit = 
    { location = 68 								  # Bordeaux
      name     = "9. Armee" 
-     leader   = 319 # von Lüttwitz
+     leader   = 319 # von LÃ¼ttwitz
      id       = {  type = 14500 id = 132  } 
      division = 
      { id       = {  type = 14500 id = 133  } 
@@ -793,7 +794,7 @@ landunit =
 	   # DENMARK OCCUPATION FORCE
    landunit = 
    { location = 217 
-     name     = "Wehrm. Befehlshaber Dänemark" 
+     name     = "Wehrm. Befehlshaber DÃ¤nemark" 
      id       = {  type = 14500 id = 308  } 
      division = 
      { id       = {  type = 14500 id = 309  } 
@@ -805,7 +806,7 @@ landunit =
     }
    landunit = 
    { location = 220 
-     name     = "Wehrm. Befehlshaber Dänemark" 
+     name     = "Wehrm. Befehlshaber DÃ¤nemark" 
      id       = {  type = 14500 id = 310  } 
      division = 
      { id       = {  type = 14500 id = 311  } 
@@ -897,7 +898,7 @@ landunit =
       }
 	  division = 
      { id       = {  type = 14500 id = 274  } 
-       name     = "5. Gebirgsjäger-Division" 
+       name     = "5. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 80 
@@ -905,7 +906,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 8  } 
-       name     = "7. Gebirgsjäger-Division" 
+       name     = "7. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12
        strength = 80 
@@ -929,7 +930,7 @@ landunit =
       }
 	division = 
      { id       = {  type = 14500 id = 193  } 
-       name     = "3. Gebirgsjäger-Division" 
+       name     = "3. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 80 
@@ -937,7 +938,7 @@ landunit =
       }
 	division = 
      { id       = {  type = 14500 id = 356  } 
-       name     = "3. Fallschirmjäger-Division" 
+       name     = "3. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3 
        strength = 80
@@ -947,7 +948,7 @@ landunit =
    landunit = 
    { location = 377							#Athens 
      name     = "LXVII. Armeekorps" 
-     leader   = 248 # Schörner
+     leader   = 248 # SchÃ¶rner
      id       = {  type = 14500 id = 26  } 
     division = 
      { id       = {  type = 14500 id = 12  } 
@@ -1024,7 +1025,7 @@ landunit =
       }
        division = 
      { id       = {  type = 14500 id = 13333  } 
-       name     = "117. Jäger-Division" 
+       name     = "117. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 40 
@@ -1064,11 +1065,11 @@ landunit =
     }
 	   landunit = 
    { location = 383
-     name     = "Kommandantur d. Ost Ägäis" 
+     name     = "Kommandantur d. Ost Ã„gÃ¤is" 
      id       = {  type = 14500 id = 265  } 
      division = 
      { id       = {  type = 14500 id = 266  } 
-       name     = "Kommandantur d. Ost Ägäis" 
+       name     = "Kommandantur d. Ost Ã„gÃ¤is" 
        type     = garrison 
        model    = 6 
        strength = 25 
@@ -1090,7 +1091,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 252  } 
-       name     = "104. Jäger-Division" 
+       name     = "104. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 50
@@ -1151,7 +1152,7 @@ landunit =
 	   landunit = 
    { location = 254
      name     = "52. Sicherungs-Division" 
-     leader   = 248 # Schörner
+     leader   = 248 # SchÃ¶rner
      id       = {  type = 14501 id = 30  } 
 
 	   division = 
@@ -1191,7 +1192,7 @@ landunit =
      id       = {  type = 14500 id = 312  } 
      division = 
      { id       = {  type = 14500 id = 315  } 
-       name     = "2. Gebirgsjäger-Division" 
+       name     = "2. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 80 
@@ -1199,7 +1200,7 @@ landunit =
       }
 	   division = 
      { id       = {  type = 14500 id = 237  } 
-       name     = "1. Gebirgsjäger-Division" 
+       name     = "1. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 80 
@@ -1207,7 +1208,7 @@ landunit =
       }
 	division = 
      { id       = {  type = 14500 id = 302  } 
-       name     = "114. Jäger-Division" 
+       name     = "114. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 80 
@@ -1222,7 +1223,7 @@ landunit =
      id       = {  type = 14500 id = 182  } 
      division = 
      { id       = {  type = 14500 id = 183  } 
-       name     = "1. Skijäger-Division" 
+       name     = "1. SkijÃ¤ger-Division" 
        type     = infantry 
        model    = 12
        strength = 80 
@@ -1232,7 +1233,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 184  } 
-       name     = "97. Jäger-Division" 
+       name     = "97. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 80 
@@ -1246,7 +1247,7 @@ landunit =
      id       = {  type = 14500 id = 191  } 
      division = 
      { id       = {  type = 14500 id = 194  } 
-       name     = "4. Gebirgsjäger-Division" 
+       name     = "4. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 80 
@@ -1265,7 +1266,7 @@ landunit =
      id       = {  type = 14500 id = 136  } 
       division = 
      { id       = {  type = 14500 id = 305  } 
-       name     = "188. Reserve-Gebirgsjäger-Division" 
+       name     = "188. Reserve-GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 10
@@ -1283,7 +1284,7 @@ landunit =
      id       = {  type = 14500 id = 304  } 
     division = 
      { id       = {  type = 14500 id = 7  } 
-       name     = "6. Gebirgsjäger-Division" 
+       name     = "6. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12 
        strength = 100
@@ -1291,7 +1292,7 @@ landunit =
       }
       division = 
      { id       = {  type = 14500 id = 111  } 
-       name     = "28. Jäger-Division" 
+       name     = "28. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 100 
@@ -1301,7 +1302,7 @@ landunit =
       }
 	  division = 
      { id       = {  type = 14500 id = 185  } 
-       name     = "101. Jäger-Division" 
+       name     = "101. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12
        strength = 100
@@ -1318,7 +1319,7 @@ landunit =
      
    division = 
      { id       = {  type = 14500 id = 203  } 
-       name     = "118. Jäger-Division" 
+       name     = "118. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12
        strength = 100 
@@ -1328,7 +1329,7 @@ landunit =
       }
     division = 
      { id       = {  type = 14500 id = 124  } 
-       name     = "5. Jäger-Division" 
+       name     = "5. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 100 
@@ -1338,7 +1339,7 @@ landunit =
       }
 	  division = 
      { id       = {  type = 14500 id = 285  } 
-       name     = "157. Gebirgsjäger-Division" 
+       name     = "157. GebirgsjÃ¤ger-Division" 
        type     = bergsjaeger 
        model    = 12
        strength = 100 
@@ -1353,7 +1354,7 @@ landunit =
     	  
 	division = 
      { id       = {  type = 14500 id = 291  } 
-       name     = "42. Jäger-Division" 
+       name     = "42. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 100 
@@ -1373,7 +1374,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 189  } 
-       name     = "100. Jäger-Division" 
+       name     = "100. JÃ¤ger-Division" 
        type     = infantry 
        model    = 12 
        strength = 100 
@@ -1534,7 +1535,7 @@ landunit =
     }
    landunit = 
    { location = 654 
-     name     = "Heeresgruppe Süd Reserve" 
+     name     = "Heeresgruppe SÃ¼d Reserve" 
      leader   = 75 # Friessner
      id       = {  type = 14500 id = 195  } 
      division = 
@@ -1856,7 +1857,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 330  } 
-       name     = "7. Fallschirmjäger-Division" 
+       name     = "7. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3 
        strength = 50 
@@ -1904,7 +1905,7 @@ landunit =
      id       = {  type = 14500 id = 392  } 
      division = 
      { id       = {  type = 14500 id = 393  } 
-       name     = "5. Fallschirmjäger-Division" 
+       name     = "5. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3
        strength = 50
@@ -1914,7 +1915,7 @@ landunit =
      
      division = 
      { id       = {  type = 14500 id = 395  } 
-       name     = "Führer-Grenadier-Division" 
+       name     = "FÃ¼hrer-Grenadier-Division" 
        type     = mechanized 
        model    = 1 
        strength = 25 
@@ -2003,7 +2004,7 @@ landunit =
    landunit = 
    { location = 207 
      name     = "8. Armee" 
-     leader   = 367 # Wöhler
+     leader   = 367 # WÃ¶hler
      id       = {  type = 14500 id = 206  } 
      division = 
      { id       = {  type = 14500 id = 207  } 
@@ -2052,7 +2053,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 324  } 
-       name     = "2. Fallschirmjäger-Division" 
+       name     = "2. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3 
        strength = 50 
@@ -2060,7 +2061,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 325  } 
-       name     = "6. Fallschirmjäger-Division" 
+       name     = "6. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3 
        strength = 50
@@ -2134,7 +2135,7 @@ landunit =
    landunit = 
    { location = 235 
      name     = "4. Panzerarmee" 
-     leader   = 552 # Gräser C.
+     leader   = 552 # GrÃ¤ser C.
      id       = {  type = 14500 id = 160  } 
      division = 
      { id       = {  type = 14500 id = 161  } 
@@ -2328,7 +2329,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 99  } 
-       name     = "Fallschirm Pz-Div. 'Hermann Göring'" 
+       name     = "Fallschirm Pz-Div. 'Hermann GÃ¶ring'" 
        type     = armor 
        model    = 3 
        strength = 25 
@@ -2510,7 +2511,7 @@ landunit =
       }
      division = 
      { id       = {  type = 14500 id = 381  } 
-       name     = "Panzer-Führerbegleitdivision" 
+       name     = "Panzer-FÃ¼hrerbegleitdivision" 
        type     = armor 
        model    = 3 
        strength = 25
@@ -2635,11 +2636,11 @@ landunit =
     }
 	landunit = 
    { location = 134 
-     name     = "I. Fallschirmjägerkorps" 
+     name     = "I. FallschirmjÃ¤gerkorps" 
      id       = {  type = 14500 id = 289  } 
      division = 
      { id       = {  type = 14500 id = 290  } 
-       name     = "1. Fallschirmjäger-Division" 
+       name     = "1. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3 
        strength = 65 
@@ -2647,7 +2648,7 @@ landunit =
       }
 	    division = 
      { id       = {  type = 14500 id = 287  } 
-       name     = "4. Fallschirmjäger-Division" 
+       name     = "4. FallschirmjÃ¤ger-Division" 
        type     = paratrooper 
        model    = 3 
        strength = 65 
@@ -2722,11 +2723,11 @@ landunit =
     }
 	landunit = 
    { location = 185 
-     name     = "Panzerkorps 'Hermann Göring'" 
+     name     = "Panzerkorps 'Hermann GÃ¶ring'" 
      id       = {  type = 14500 id = 115  } 
      division = 
      { id       = {  type = 14500 id = 116  } 
-       name     = "Panzergrenadier-Div. 'Hermann Göring'" 
+       name     = "Panzergrenadier-Div. 'Hermann GÃ¶ring'" 
        type     = mechanized 
        model    = 1 
        strength = 30 
@@ -3245,7 +3246,7 @@ landunit =
     name     = "Luftflotte I"
     division =
     { id         = { type = 14500 id = 615 }
-      name       = "JG 54 'Grünherz'"
+      name       = "JG 54 'GrÃ¼nherz'"
       strength   = 80
       type       = interceptor
       model      = 12 # Bf 109G
@@ -3282,7 +3283,7 @@ landunit =
     name     = "Luftflotte III"
     division =
     { id         = { type = 14500 id = 620 }
-      name       = "KG 51 'Edelweiß'"
+      name       = "KG 51 'EdelweiÃŸ'"
       strength   = 40
       type       = multi_role
       model      = 9 # Me 262
@@ -3498,7 +3499,7 @@ landunit =
     }
     division =
     { id         = { type = 14500 id = 649 }
-      name       = "KG 26 'Löwen'"
+      name       = "KG 26 'LÃ¶wen'"
       strength   = 80
       type       = strategic_bomber
       model      = 9 # Ju 88A
@@ -3514,7 +3515,7 @@ landunit =
     name     = "Luftflotte VI"
     division =
     { id         = { type = 14500 id = 651 }
-      name       = "JG 51 'Mölders'"
+      name       = "JG 51 'MÃ¶lders'"
       strength   = 80
       type       = interceptor
       model      = 12 # Bf 109G
@@ -3732,7 +3733,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 806  } 
-       name  = "Lützow" 
+       name  = "LÃ¼tzow" 
        type  = heavy_cruiser 
        model = 4 
 	extra1 = floatplane
@@ -3772,7 +3773,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 810  } 
-       name  = "Nürnberg" 
+       name  = "NÃ¼rnberg" 
        type  = light_cruiser 
        model = 4 
       } 
@@ -3784,13 +3785,13 @@ landunit =
       } 
 	  Division = 
      {  id    = {  type = 14500 id = 812  } 
-       name  = "Köln" 
+       name  = "KÃ¶ln" 
        type  = light_cruiser 
        model = 3 
       } 
      Division = 
      {  id    = {  type = 14500 id = 813  } 
-       name  = "1. Zerstörergeschwader" 
+       name  = "1. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 6 
 	extra1 = naval_torpedoes_s
@@ -3798,7 +3799,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 814  } 
-       name  = "2. Zerstörergeschwader" 
+       name  = "2. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 5 
 	   strength = 20
@@ -3807,7 +3808,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 815  } 
-       name  = "3. Zerstörergeschwader" 
+       name  = "3. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 6 
 	   strength = 20
@@ -3816,7 +3817,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 816  } 
-       name  = "4. Zerstörergeschwader" 
+       name  = "4. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 7
 	extra1 = naval_torpedoes_s
@@ -3824,7 +3825,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 817  } 
-       name  = "5. Zerstörergeschwader" 
+       name  = "5. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 7 
 	extra1 = naval_anti_air_s
@@ -3832,7 +3833,7 @@ landunit =
       } 
      Division = 
      {  id    = {  type = 14500 id = 818  } 
-       name  = "6. Zerstörergeschwader" 
+       name  = "6. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 7 
 	strength = 60
@@ -3841,7 +3842,7 @@ landunit =
       } 
 	 Division = 
      {  id    = {  type = 14500 id = 819  } 
-       name  = "7. Zerstörergeschwader" 
+       name  = "7. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 7 
 	strength = 40
@@ -3850,7 +3851,7 @@ landunit =
       } 
 	 Division = 
      {  id    = {  type = 14500 id = 820  } 
-       name  = "8. Zerstörergeschwader" 
+       name  = "8. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 7 
 	strength = 10
@@ -3859,7 +3860,7 @@ landunit =
       } 
 	 Division = 
      {  id    = {  type = 14500 id = 821  } 
-       name  = "9. Zerstörergeschwader" 
+       name  = "9. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 8 
 	strength = 10
@@ -3868,7 +3869,7 @@ landunit =
       }   
 	 Division = 
      {  id    = {  type = 14500 id = 822  } 
-       name  = "10. Zerstörergeschwader" 
+       name  = "10. ZerstÃ¶rergeschwader" 
        type  = destroyer 
        model = 7 
 	extra1 = naval_asw
@@ -4471,25 +4472,25 @@ landunit =
 			} 
 		division = { 
 			id = { type = 10848 id = 5207 } 
-			name = "1. Umgewandelt Zerstörergeschwader" 
+			name = "1. Umgewandelt ZerstÃ¶rergeschwader" 
 			type = destroyer 
 			model = 4 
 			}
 		division = { 
 			id = { type = 10848 id = 5502 } 
-			name = "2. Umgewandelt Zerstörergeschwader" 
+			name = "2. Umgewandelt ZerstÃ¶rergeschwader" 
 			type = destroyer 
 			model = 4 
 			} 
 		division = { 
 			id = { type = 10848 id = 5503 } 
-			name = "3. Umgewandelt Zerstörergeschwader" 
+			name = "3. Umgewandelt ZerstÃ¶rergeschwader" 
 			type = destroyer 
 			model = 4 
 			} 
 		division = { 
 			id = { type = 10848 id = 5504 } 
-			name = "4. Umgewandelt Zerstörergeschwader" 
+			name = "4. Umgewandelt ZerstÃ¶rergeschwader" 
 			type = destroyer 
 			model = 4 
 			} 
