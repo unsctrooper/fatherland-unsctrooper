@@ -24,6 +24,7 @@ rare_materials         = 200
    diplomacy = 
    { relation = {  tag = GER value = 200  } 
      relation = {  tag = ITA value = 200  } 
+   relation = { tag = AXI value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
     } 
    SpyInfo                = {  country = "CRO" NumberOfSpies = 7  } 
    nationalprovinces      = {  337 345 344 352 353 355 354 347 357 358 356  351 
