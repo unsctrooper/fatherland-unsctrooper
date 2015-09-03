@@ -47,6 +47,7 @@ rare_materials         = 2000
     }
     relation = { tag = SOV value = -200 }
     relation = { tag = TUR value = 100 }
+    relation = { tag = AXI value = 150 access = yes guaranteed = { day = 1 month = january year = 1948 } }
   }
    SpyInfo                = {  country = "ROM" NumberOfSpies = 8  } 
   nationalprovinces      = {  316 308 311 315 285 309 310 297 314 312 
