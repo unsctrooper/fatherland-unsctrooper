@@ -30,6 +30,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
     relation = { tag = ITA value = 50 }
     relation = { tag = JAP value = 50 }
     relation = { tag = U03 value = 50 }
+    relation = { tag = AXI value = 50 access = yes guaranteed = { day = 1 month = january year = 1948 } }
   }
    SpyInfo                = {  country = "FRA" NumberOfSpies = 9  } 
    # Togoland 
@@ -285,32 +286,32 @@ inventions = { 3000027 }
 
    landunit = 
    { id       = {  type = 13500 id = 1  } 
-     name     = "Armée Métropolitaine" 
+     name     = "ArmÃ©e MÃ©tropolitaine" 
      location = 55
      division = 
      { id       = {  type = 13500 id = 2  } 
-       name     = "Armée Métropolitaine" 
+       name     = "ArmÃ©e MÃ©tropolitaine" 
        type     = hq 
        model    = 4 
        strength = 75
       } 
      division = 
      { id       = {  type = 13500 id = 3  } 
-       name     = "1ème Division d'Infanterie" 
+       name     = "1Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 12
        strength = 75
       } 
      division = 
      { id       = {  type = 13500 id = 4  } 
-       name     = "3ème Division d'Infanterie" 
+       name     = "3Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 12
        strength = 75
       } 
      division = 
      { id       = {  type = 13500 id = 5  } 
-       name     = "8ème Division d'Infanterie" 
+       name     = "8Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 12
        strength = 75
@@ -322,7 +323,7 @@ inventions = { 3000027 }
      location = 85 
      division = 
      { id       = {  type = 13500 id = 6001 } 
-       name     = "2ème Division d'Infanterie" 
+       name     = "2Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 12
        strength = 75
@@ -331,7 +332,7 @@ inventions = { 3000027 }
       } 
 	       division = 
      { id       = {  type = 13500 id = 6002  } 
-       name     = "4ème Division d'Infanterie" 
+       name     = "4Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 12
        strength = 75
@@ -340,7 +341,7 @@ inventions = { 3000027 }
       } 
 	       division = 
      { id       = {  type = 13500 id = 6003  } 
-       name     = "5ème Division d'Infanterie" 
+       name     = "5Ã¨me Division d'Infanterie" 
        type     = infantry 
        model    = 12
        strength = 75
@@ -354,21 +355,21 @@ inventions = { 3000027 }
      location = 89 
      division = 
      { id       = {  type = 13500 id = 6004  } 
-       name     = "2e Div. Légère de Cavalerie" 
+       name     = "2e Div. LÃ©gÃ¨re de Cavalerie" 
        type     = cavalry
        model    = 11
        strength = 50
       } 
 	       division = 
      { id       = {  type = 13500 id = 6005 } 
-       name     = "3e Div. Légère de Cavalerie" 
+       name     = "3e Div. LÃ©gÃ¨re de Cavalerie" 
        type     = cavalry
        model    = 11
        strength = 50
       } 
 	       division = 
      { id       = {  type = 13500 id = 6006 } 
-       name     = "4e Div. Légère de Cavalerie" 
+       name     = "4e Div. LÃ©gÃ¨re de Cavalerie" 
        type     = cavalry
        model    = 11
        strength = 50
@@ -531,7 +532,7 @@ inventions = { 3000027 }
 			} 
 		division = { 
 			id = { type = 13500 id = 3033 } 
-			name = "Algérie" 
+			name = "AlgÃ©rie" 
 			type = heavy_cruiser 
 			model = 4 
 			}
@@ -675,61 +676,61 @@ inventions = { 3000027 }
 		base = 86 
 		division = { 
 			id = { type = 13500 id = 3460 } 
-			name = "6ème Flottille de Sous-Marins" 
+			name = "6Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3056 } 
-			name = "7ème Flottille de Sous-Marins" 
+			name = "7Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3057 } 
-			name = "8ème Flottille de Sous-Marins" 
+			name = "8Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3058 } 
-			name = "9ème Flottille de Sous-Marins" 
+			name = "9Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3059 } 
-			name = "10ème Flottille de Sous-Marins" 
+			name = "10Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3060} 
-			name = "11ème Flottille de Sous-Marins" 
+			name = "11Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3061 } 
-			name = "13ème Flottille de Sous-Marins" 
+			name = "13Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3062 } 
-			name = "14ème Flottille de Sous-Marins" 
+			name = "14Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3063 } 
-			name = "15ème Flottille de Sous-Marins" 
+			name = "15Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
 		division = { 
 			id = { type = 13500 id = 3064 } 
-			name = "16ème Flottille de Sous-Marins" 
+			name = "16Ã¨me Flottille de Sous-Marins" 
 			type = submarine 
 			model = 7
 		} 
