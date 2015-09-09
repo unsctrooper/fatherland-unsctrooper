@@ -29,9 +29,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -119,9 +119,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive3"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -210,9 +210,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive5"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -295,9 +295,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive5"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -382,9 +382,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive2"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -461,9 +461,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -546,9 +546,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1925 }
+	deathdate = { day = 29 month = december year = 1925 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -629,9 +629,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1925 }
+	deathdate = { day = 29 month = december year = 1925 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -710,9 +710,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"

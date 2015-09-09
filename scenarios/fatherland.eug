@@ -137,152 +137,152 @@ globaldata = {
     type       = non_aggression
     country    = "ENG"
     country    = "POR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 131 }
     type       = non_aggression
     country    = "ENG"
     country    = "SAU"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 132 }
     type       = non_aggression
     country    = "ENG"
     country    = "YEM"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 133 }
     type       = non_aggression
     country    = "ENG"
     country    = "TUR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 134 }
     type       = non_aggression
     country    = "ENG"
     country    = "IRE"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 135 }
     type       = non_aggression
     country    = "SOV"
     country    = "SIB"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 136 }
     type       = non_aggression
     country    = "SOV"
     country    = "TUR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 137 }
     type       = non_aggression
     country    = "SOV"
     country    = "CHI"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 138 }
     type       = non_aggression
     country    = "GER"
     country    = "TUR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 139 }
     type       = non_aggression
     country    = "GER"
     country    = "SCH"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 142 }
     type       = non_aggression
     country    = "JAP"
     country    = "SIA"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 143 }
     type       = non_aggression
     country    = "JAP"
     country    = "SOV"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1945 month = may day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1945 month = may day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 144 }
     type       = non_aggression
     country    = "U01"
     country    = "TUR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   # treaty = {
   # id = { type = 16384 id = 145 }
   # type = non_aggression
   # country = "BUL"
   # country = "SOV"
-  # startdate = { year = 1935 month = december day = 30 }
-  # expirydate = { year = 1944 month = december day = 30 }
+  # startdate = { year = 1935 month = december day = 29 }
+  # expirydate = { year = 1944 month = december day = 29 }
   # }
   treaty =
   { id         = { type = 16384 id = 146 }
     type       = non_aggression
     country    = "U29"
     country    = "TUR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 147 }
     type       = non_aggression
     country    = "POR"
     country    = "SPA"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 148 }
     type       = non_aggression
     country    = "YEM"
     country    = "SAU"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 149 }
     type       = non_aggression
     country    = "TUR"
     country    = "AFG"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 150 }
     type       = non_aggression
     country    = "SWE"
     country    = "FIN"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   # ############### AMERICAN CONFERENCE TREATIES ################
   treaty =
@@ -290,160 +290,160 @@ globaldata = {
     type       = non_aggression
     country    = "USA"
     country    = "ARG"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 152 }
     type       = non_aggression
     country    = "USA"
     country    = "BOL"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 153 }
     type       = non_aggression
     country    = "USA"
     country    = "BRA"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 154 }
     type       = non_aggression
     country    = "USA"
     country    = "CAN"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 155 }
     type       = non_aggression
     country    = "USA"
     country    = "CHL"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 156 }
     type       = non_aggression
     country    = "USA"
     country    = "COS"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 157 }
     type       = non_aggression
     country    = "USA"
     country    = "CUB"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 158 }
     type       = non_aggression
     country    = "USA"
     country    = "DOM"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 159 }
     type       = non_aggression
     country    = "USA"
     country    = "ECU"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 160 }
     type       = non_aggression
     country    = "USA"
     country    = "GUA"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 161 }
     type       = non_aggression
     country    = "USA"
     country    = "HAI"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 162 }
     type       = non_aggression
     country    = "USA"
     country    = "HON"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 163 }
     type       = non_aggression
     country    = "USA"
     country    = "MEX"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 164 }
     type       = non_aggression
     country    = "USA"
     country    = "NIC"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 165 }
     type       = non_aggression
     country    = "USA"
     country    = "PAN"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 166 }
     type       = non_aggression
     country    = "USA"
     country    = "PAR"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 167 }
     type       = non_aggression
     country    = "USA"
     country    = "PRU"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 168 }
     type       = non_aggression
     country    = "USA"
     country    = "SAL"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 169 }
     type       = non_aggression
     country    = "USA"
     country    = "URU"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   treaty =
   { id         = { type = 16384 id = 170 }
     type       = non_aggression
     country    = "USA"
     country    = "VEN"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   
   # ###################### Fatherland #####################  
@@ -452,32 +452,32 @@ globaldata = {
     type       = non_aggression
     country    = "SOV"
     country    = "TRA"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
     treaty =
   { id         = { type = 16384 id = 172 }
     type       = non_aggression
     country    = "GER"
     country    = "FRA"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
    treaty =
   { id         = { type = 16384 id = 173 }
     type       = non_aggression
     country    = "GER"
     country    = "SOV"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
     treaty =
   { id         = { type = 16384 id = 174 }
     type       = non_aggression
     country    = "ENG"
     country    = "SOV"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
   }
   # ###################### 1944 TRADES #####################
   treaty =
@@ -485,8 +485,8 @@ globaldata = {
     type       = trade
     country    = "SWE"
     country    = "GER"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
     metal      = -10
     energy     = 14
     cancel     = no
@@ -496,8 +496,8 @@ globaldata = {
     type       = trade
     country    = "VEN"
     country    = "U01"
-    startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1935 month = december day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
     oil        = -12
     supplies   = 1
     energy     = 1
@@ -508,8 +508,8 @@ globaldata = {
     type           = trade
     country        = "USA"
     country        = "CHI"
-    startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1964 month = december day = 30 }
+    startdate      = { year = 1935 month = december day = 29 }
+    expirydate     = { year = 1964 month = december day = 29 }
     oil            = -5
     energy         = -25
     rare_materials = -5
@@ -521,8 +521,8 @@ globaldata = {
     type       = trade
     country    = "ROM"
     country    = "GER"
-    startdate  = { year = 1940 month = january day = 30 }
-    expirydate = { year = 1964 month = december day = 30 }
+    startdate  = { year = 1940 month = january day = 29 }
+    expirydate = { year = 1964 month = december day = 29 }
     oil        = -10
     energy     = 10
     metal      = 10
@@ -533,8 +533,8 @@ globaldata = {
     type           = trade
     country        = "GER"
     country        = "TUR"
-    startdate      = { year = 1940 month = january day = 30 }
-    expirydate     = { year = 1964 month = december day = 30 }
+    startdate      = { year = 1940 month = january day = 29 }
+    expirydate     = { year = 1964 month = december day = 29 }
     metal          = -2
     supplies       = -3
     rare_materials = 6
@@ -544,8 +544,8 @@ globaldata = {
     type           = trade
     country        = "USA"
     country        = "NZL"
-    startdate      = { year = 1940 month = january day = 30 }
-    expirydate     = { year = 1964 month = december day = 30 }
+    startdate      = { year = 1940 month = january day = 29 }
+    expirydate     = { year = 1964 month = december day = 29 }
     energy         = -10
     metal          = -4
     rare_materials = -3
@@ -558,8 +558,8 @@ globaldata = {
     type           = trade
     country        = "USA"
     country        = "AST"
-    startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1964 month = december day = 30 }
+    startdate      = { year = 1935 month = december day = 29 }
+    expirydate     = { year = 1964 month = december day = 29 }
     rare_materials = -5
     oil            = -4
     money          = 2
@@ -570,8 +570,8 @@ globaldata = {
     type           = trade
     country        = "USA"
     country        = "CAN"
-    startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1964 month = december day = 30 }
+    startdate      = { year = 1935 month = december day = 29 }
+    expirydate     = { year = 1964 month = december day = 29 }
     rare_materials = -5
     oil            = -3
     money          = 2

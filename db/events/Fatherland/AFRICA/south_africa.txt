@@ -54,9 +54,9 @@ event = {
 		}
 	}
 
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 0 month = january year = 1948 }
 	offset = 100
-	deathdate = { day = 30 month = december year = 1948 }
+	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
 		name = "The Herenigde Nasionale Party (HNP) won the elections!"
@@ -100,7 +100,7 @@ event = {
 	id = 8012602
 	country = SAF
 
-	name = "Bombing at the Congress"
+	name = "Bomb at the Congress of the Democrat United Party (DUP) in Johannesburg"
 	desc = "A bomb exploding during the Democrat United Party Congress in Johannesburg"
 	picture = "news_paper"
 	style = 1
@@ -111,7 +111,7 @@ event = {
 
 	date = { day = 0 month = january year = 1949 }
 	offset = 50
-	deathdate = { day = 30 month = june year = 1950 }
+	deathdate = { day = 29 month = june year = 1950 }
 
 	action = {
 		name = "The bomb killing J.C.Smuts and the greatest exponents of the party"
@@ -131,8 +131,8 @@ event = {
 		command = { type = sleepteam which = 425008 }
 		command = { type = sleepleader which = 425027 }
 		
-		command = { type = dissent value = 10 }
-		command = { type = belligerence value = 3 }
+		command = { type = dissent value = 20 }
+		command = { type = belligerence value = 5 }
 		
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = set_domestic which = political_left value = 3 }
@@ -148,8 +148,8 @@ event = {
 		name = "The bomb injuring J.C.Smuts and some members of the party."
 		ai_chance = 30
 		
-		command = { type = dissent value = 5 }
-		command = { type = belligerence value = 1 }
+		command = { type = dissent value = 15 }
+		command = { type = belligerence value = 3 }
 	}
 }
 
@@ -160,7 +160,7 @@ event = {
 	id = 8012613
 	country = SAF
 
-	name = "Priority : restore order"
+	name = "New National Provisional Government priority : restore order"
 	desc = "The new government has the priority to restore order in the country; for this reason the new elections are suspended and the parliament vote for given special powers to our new Head of Government D.F.Malan"
 	picture = "apartheid"
 	style = 1
@@ -179,12 +179,12 @@ event = {
 
 	}
 
-	date = { day = 1 month = july year = 1950 }
+	date = { day = 0 month = july year = 1950 }
 	offset = 25
 	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
-		name = "By force, if necessary"
+		name = "Send the Army"
 		command = { type = dissent value = -5 }
 		#command = { type = domestic which = democratic value = -1 }
 		#command = { type = domestic which = freedom value = -4 }
@@ -217,7 +217,7 @@ event = {
 		}
 	}
 
-	date = { day = 1 month = january year = 1951 }
+	date = { day = 0 month = january year = 1951 }
 	offset = 30
 	deathdate = { day = 29 month = june year = 1951 }
 
@@ -250,7 +250,7 @@ event = {
 		
 	}
 
-	date = { day = 1 month = july year = 1951 }
+	date = { day = 0 month = july year = 1951 }
 	offset = 50
 	deathdate = { day = 29 month = december year = 1951 }
 
@@ -286,12 +286,22 @@ event = {
 		name = "Remain Union of South Africa and rest in Commonwealth"
 		ai_chance = 25
 		
-		command = { type = relation which = ENG value = 50 }
+		command = { type = relation which = ENG value = 100 }
+		command = { type = relation which = USA value = 100 }
+		command = { type = relation which = U01 value = 100 } #Free France
+		command = { type = relation which = AST value = 100 }
+		command = { type = relation which = NZL value = 100 }
+		
+		command = { type = relation which = GER value = -25 }
+		command = { type = relation which = ITA value = -25 }
 		
 		command = { type = dissent value = 1 }
 		command = { type = belligerence value = -1 }
 		
-		command = { type = trigger which = 8012614 } #New relationship
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		
+		command = { type = trigger which = 8012614 } #New relationship with United Kingdom
 	}
 
 }
@@ -304,7 +314,7 @@ event = {
         country = GER
  
         name = "German Reaction at the South African Constituional Referendum result"
-        desc = "The South Africa is now a Republic out from Commonwealth ! Congrats with the Afrikaaner !"
+        desc = "The South Africa is now a sovereign republic outside of the Commonwealth ! Congrats with the Afrikaaner !"
         style = 1
  
         action = {
@@ -312,14 +322,14 @@ event = {
                 name = "Congrats with the Afrikaaner !"				
 				command = { type = relation which = SAF value = 50 }
 				command = { type = embargo which = -1 where = SAF value = 0 } #remove embargo
+				command = { type = belligerence value = 1 }
         }	
         action = {
 				ai_chance = 5
                 name = "They are so far away !"
-                command = { type = relation which = SAF value = -25 }
+                command = { type = relation which = SAF value = -50 }
 				
 				command = { type = dissent value = 1 }
-				command = { type = belligerence value = 1 }
         }			
 }
 event = {
@@ -328,7 +338,7 @@ event = {
         country = ENG
  
         name = "UK Reaction at the South African Constituional Referendum results"
-        desc = "The South Africa is now a Republic out from Commonwealth ! It's simple unaccetable !" 
+        desc = "The South Africa is now a Republic out from Commonwealth ! We can't stay out !" 
         style = 0
  
         action= {
@@ -436,27 +446,27 @@ event = {
 	}
 	
 	name = "Invite the HoG of Republiek van Suid-Afrika at Berlin"
-	desc = "It's time to known this new Republiek van Suid-Afrika Head of Government !"
+	desc = "It's time to known this new Republiek van Suid-Afrika"
 	style = 2
 	picture = "congress"	
 	decision_picture = "decision_congress"
 	
 	date = { day = 5 month = january year = 1952 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1952 }
+	deathdate = { day = 29 month = december year = 1952 }
 
 	action = {
 		name = "Invite our Afrikaaner camerades !"
 		ai_chance = 90
 		command = { type = trigger which = 8012608 }
 		command = { type = relation which = SAF value = 25 }
+		command = { type = belligerence value = 1 }	
 	}
 	action = {
 		name = "No, it's not necessary. They are too far from us"
 		ai_chance = 10
 		command = { type = relation which = SAF value = -25 }
-		command = { type = dissent value = 1 }
-		command = { type = belligerence value = 1 }		
+		command = { type = dissent value = 1 }		
 	}
 
 }
@@ -634,7 +644,7 @@ event = {
 	}
 	
 	action = {
-		name = "We want become a powerfull South Africa"
+		name = "We want become a powerful South Africa"
 		ai_chance = 100
 		command = { type = trigger which = 8012616 } 	
 	}
@@ -775,7 +785,7 @@ event = {
 	
 	date = { day = 0 month = january year = 1953 }
 	offset = 50
-	deathdate = { day = 30 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1953 }
 	
 	trigger = {
 		OR = { #Meeting with Axis failed or only Economical Agreement with Germany
@@ -785,7 +795,7 @@ event = {
 			event = 8012617
 			event = 8012618
 		}
-		control = { province = 867 data = -1 }
+		control = { province = 867 data = -1 } #Salisbury
 		random = 80
 	}
 	
@@ -810,7 +820,7 @@ event = {
 	
 	date = { day = 0 month = january year = 1953 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1953 }
 	
 	trigger = {
 		OR = { #Meeting with Axis failed or only Economical Agreement with Germany
@@ -856,7 +866,7 @@ event = {
 	
 	date = { day = 0 month = january year = 1953 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1954 }
 	
 	trigger = {
 		#event = 8012625
@@ -907,11 +917,11 @@ event = {
 	trigger = {
 		local_flag = SAFLIMITED
 		event = { id = 8012625 days = 30  }
-		control = { province = 867 data = -1 } #Salisbury
+		NOT = { control = { province = 867 data = SAF } #Salisbury }
 	}
 	
 	action = {
-		name = "We have won this limited war, Salisbury rest British" 
+		name = "We have won this limited war, Salisbury rest British"
 		ai_chance = 100
 		command = { type = peace which = SAF value = 0 }
 	}

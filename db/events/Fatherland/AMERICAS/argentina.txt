@@ -16,7 +16,7 @@ event = {
 
 	date = { day = 0 month = january year = 1946 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1950 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -69,7 +69,7 @@ event = {
 
 	date = { day = 0 month = january year = 1951 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1954 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -107,7 +107,7 @@ event = {
 
 	date = { day = 0 month = january year = 1955 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = "EVT_8000803_A"
@@ -157,7 +157,7 @@ event = {
 
 	date = { day = 0 month = january year = 1958 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1962 }
+	deathdate = { day = 29 month = december year = 1962 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -206,7 +206,7 @@ event = {
 
 	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -246,7 +246,7 @@ event = {
 		headofstate = 165024 # Peron
 	}
 
-	date = { day = 1 month = january year = 1947 }
+	date = { day = 0 month = january year = 1947 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1948 }
 
@@ -279,7 +279,7 @@ event = {
 
 	date = { day = 26 month = july year = 1952 }
 	offset = 1
-	deathdate = { day = 30 month = july year = 1952 }
+	deathdate = { day = 29 month = july year = 1952 }
 
 	action = {
 		name = "EVT_8000807_A"

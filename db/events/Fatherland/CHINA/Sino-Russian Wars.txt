@@ -210,6 +210,7 @@
 	action = {
 	name = "Pull out of China."
 	command = { type = leave_alliance }
+	command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars
 	}
 }
 

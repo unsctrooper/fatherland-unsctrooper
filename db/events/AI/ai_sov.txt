@@ -44,7 +44,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = january year = 1940 }
 
@@ -74,7 +74,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = january year = 1940 }
 
@@ -285,7 +285,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -313,7 +313,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -346,7 +346,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -372,7 +372,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -415,7 +415,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -463,7 +463,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -514,7 +514,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -567,7 +567,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 3
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -619,7 +619,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 3
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -654,7 +654,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -875,7 +875,7 @@ event = { #  (Lithuania)
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = march year = 1940 }
+	date = { day = 0 month = march year = 1940 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1942 }
 
@@ -901,7 +901,7 @@ event = { #  (Latvia)
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = march year = 1940 }
+	date = { day = 0 month = march year = 1940 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1942 }
 
@@ -927,7 +927,7 @@ event = { #  (Estonia)
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = march year = 1940 }
+	date = { day = 0 month = march year = 1940 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1942 }
 
@@ -978,7 +978,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1032,7 +1032,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1072,7 +1072,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1105,7 +1105,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 2
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1118,7 +1118,7 @@ event = {
 # Soviets fortify their country
 #############################################
 event = {
-	#id = 3007030
+	id = 3007030
 	random = no 
 	country = SOV
 	
@@ -1165,9 +1165,9 @@ event = {
 	name = "AI_EVENT"
 	desc = "AI_EVENT"
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1945 }
 
 	action_a = { 
 		command = { type = capital which = 680 }
@@ -1196,9 +1196,9 @@ event = {
 	name = "AI_EVENT"
 	desc = "AI_EVENT"
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1945 }
 
 	action_a = { 
 		command = { type = capital which = 641 }
@@ -1234,9 +1234,9 @@ event = {
 	name = "AI_EVENT"
 	desc = "AI_EVENT"
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1945 }
 
 	action_a = { 
 		command = { type = capital which = 572 }
@@ -1307,7 +1307,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1964 }
 
@@ -1331,7 +1331,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 0 month = january year = 1933 }
 	offset = 7
 	deathdate = { day = 29 month = december year = 1964 }
 

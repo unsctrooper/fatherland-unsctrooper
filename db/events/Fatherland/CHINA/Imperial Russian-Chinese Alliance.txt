@@ -85,7 +85,7 @@ event = {
 
 	action = {
 	name = "Rekindle a lost friendship - accept alliance."
-	ai_chance = 75
+	ai_chance = 25
 	command = { type = alliance which = U59 }
 	command = { type = domestic which = interventionism value = 1 }
 	command = { type = domestic which = defense_lobby value = 1 }
@@ -96,7 +96,7 @@ event = {
 	
 	action = {
 	name = "We do not need this pathetic neo-Tsarist rabble."
-	ai_chance = 25
+	ai_chance = 75
 	command = { type = relation which = U59 value = -10 }
 	}
 	}

@@ -1,8 +1,3 @@
-#####################################
-# Generalgovernment events
-# Review Pako
-#####################################
-# 90000300 - Future of the General Government
 
 event = {
 	id = 90000300
@@ -13,7 +8,7 @@ event = {
 		control = { province = 235 data = U44 }
 	}	
 	
-	name = EVT_90000300_NAME #Future of the General Government
+	name = EVT_90000300_NAME
 	desc = EVT_90000300_DESC
 	style = 2
 	picture = "generalgovernment"	
@@ -54,3 +49,104 @@ event = {
 	command = { type = addcore which = 229 }
 	}
 }
+
+#Extra IC/Infra
+#Warsaw Uprising
+###############
+### 
+# Baltic Federation - Integration - Germany 
+###
+###############
+
+event = {
+	id = 31200101
+	random = no
+	country = GER
+	
+	trigger = {
+		control = { province = 264 data = U40 }
+		event = 203 
+	           }	
+	
+	name = "Integrating Ostland-Step1"
+	desc = "Ostland may have a formal kind of autonomy, but we think its time to end this farce. Our rule in Estonia and Latvia will be ensured through the rising numbers of collaborateurs, several tens of thousands of german colonists that arrived here over the course of the recent years and through a final, concentrated wave of settlers from the rhine area. Obvously, the matter of Lithuania and the russian territorys is an entirely different one. We will have to find other ways to deal with them"
+	style = 2
+	picture = "generalgovernment"	
+
+	date = { day = 1 month = october year = 1949 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "Keep the status quo" # Status quo
+	ai_chance = 0
+	command = { type = 	dissent value = -1 }
+	}
+	action = {
+	name = "Integrate the baltic people and send the colonists." # Annexation
+	ai_chance = 100
+	command = { type = dissent value = 5 }
+	command = { type = inherit which = U40 value = 1 }
+	command = { type = event which = 31200102 where = -1 when = 120 }
+
+        command = { type = addclaim which = 267 }
+	command = { type = addclaim which = 268 }
+	command = { type = addclaim which = 269 }
+	command = { type = addclaim which = 264 }
+	command = { type = addclaim which = 265 }
+	command = { type = addclaim which = 266 }
+        command = { type = province_manpower which = 145 value = -1 }
+
+	command = { type = addclaim which = 270 }
+	command = { type = addclaim which = 271 }
+	command = { type = addclaim which = 272 }
+	command = { type = addclaim which = 273 }
+        command = { type = addclaim which = 274 }
+   	command = { type = addclaim which = 275 }
+
+        command = { type = addclaim which = 258 }
+	command = { type = addclaim which = 259 }
+	command = { type = addclaim which = 260 }
+        command = { type = addclaim which = 262 }
+	command = { type = addclaim which = 263 }
+	}
+}
+
+
+
+# balische konföderation ist u40
+
+
+event = {
+	id = 31200102
+	random = no
+	country = GER			
+	name = "Integrating Ostland-Step2"
+	desc = "With the people of the area getting ever more used to our rule and the colonists becoming an integral part of there society, we can finally claim that we finished what the Teutonic and Livonian order begun long ago. We brought enlightenment to the people."
+	style = 2
+	picture = "generalgovernment"	
+
+	action = {
+	name = "Time to celebrate!" # Annexation
+
+	command = { type = dissent value = -8 }
+
+        command = { type = addcore which = 267 }
+	command = { type = addcore which = 268 }
+	command = { type = addcore which = 269 }
+	command = { type = addcore which = 264 }
+	command = { type = addcore which = 265 }
+	command = { type = addcore which = 266 }
+        command = { type = province_manpower which = 264 value = 1 }
+
+	command = { type = addcore which = 270 }
+	command = { type = addcore which = 271 }
+	command = { type = addcore which = 272 }
+	command = { type = addcore which = 273 }
+        command = { type = addcore which = 274 }
+   	command = { type = addcore which = 275 }
+
+	}
+}
+
+

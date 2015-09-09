@@ -28,57 +28,57 @@
   { relation =
     { tag        = ARG
       value      = 75
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = AST value = 150 }
     relation = { tag = BEL value = 75 }
 	relation =
     { tag        = ICL
       value      = 85
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
 	  access = yes
     }
     relation =
     { tag        = BOL
       value      = 85
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = BRA
       value      = 120
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = CAN value = 200 }
     relation = { tag = CHI value = 100 }
     relation =
     { tag        = CHL
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = COL
       value      = 75
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = COS
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = CUB
       value      = 200
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = DOM
       value      = 125
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = ECU
       value      = 75
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = ENG value = 200 }
     relation = { tag = FIN value = -50 }
@@ -87,18 +87,18 @@
     relation =
     { tag        = GUA
       value      = 125
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = HAI
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = HOL value = 70 }
     relation =
     { tag        = HON
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = IRE value = 75 }
     relation = { tag = IRQ value = 120 }
@@ -109,49 +109,49 @@
     relation =
     { tag        = MEX
       value      = 125
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = NEP value = 100 }
     relation =
     { tag        = NIC
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = NZL value = 125 }
     relation = { tag = OMN value = 100 }
     relation =
     { tag        = PAN
       value      = 175
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = PAR
       value      = 75
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = PHI value = 200 access = yes }
     relation =
     { tag        = PRU
       value      = 75
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = SAF value = 125 }
     relation =
     { tag        = SAL
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = SOV value = 175 }
     relation = { tag = SWE value = 75 }
     relation =
     { tag        = URU
       value      = 100
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation =
     { tag        = VEN
       value      = 125
-      guaranteed = { day = 30 month = december year = 1947 }
+      guaranteed = { day = 29 month = december year = 1947 }
     }
     relation = { tag = YEM value = 100 }
     relation = { tag = U05 value = 70  }  

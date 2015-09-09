@@ -78,9 +78,9 @@
 	trigger = {
 			NOT = { war = { country = ENG } }
 			}
-	date = { day = 16 month = february year = 1949 }
+	date = { day = 06 month = february year = 1949 }
 	offset = 1
-	deathdate = { day = 18 month = february year = 1949 }
+	deathdate = { day = 08 month = february year = 1949 }
 	
 	name = "Anglo-Irish Trade Pact"
 	desc = "After several years of a disastrous trade war, the British and Irish governments signed a trade pact which greatly reduced tariffs between the two countries. The Irish government finally agreed to pay the land annuities to British claimants, but Irish exporters regained access to their most lucrative market."
@@ -107,9 +107,9 @@
 	trigger = {
 			NOT = { war = { country = IRE } }
 			}
-	date = { day = 16 month = february year = 1949 }
+	date = { day = 06 month = february year = 1949 }
 	offset = 1
-	deathdate = { day = 18 month = february year = 1949 }
+	deathdate = { day = 08 month = february year = 1949 }
 	
 	name = "Anglo-Irish Trade Pact"
 	desc = "After several years of a disastrous trade war, the British and Irish governments signed a trade pact which greatly reduced tariffs between the two countries. The Irish government finally agreed to pay the land annuities to British claimants, but Irish exporters regained access to their most lucrative market."
@@ -214,9 +214,9 @@
 	trigger = {
 			NOT = { war = { country = TUR } }
 			}
-	date = { day = 10 month = april year = 1948 }
+	date = { day = 00 month = april year = 1948 }
 	offset = 1
-	deathdate = { day = 12 month = april year = 1948 }
+	deathdate = { day = 02 month = april year = 1948 }
 	
 	name = "Turkish Fortify the Straits"
 	desc = "The Turkish government fortify the Straits."
@@ -249,9 +249,9 @@
 	trigger = {
 			NOT = { war = { country = U01 } }
 			}
-	date = { day = 11 month = june year = 1949 }
+	date = { day = 01 month = june year = 1949 }
 	offset = 1
-	deathdate = { day = 13 month = june year = 1949 }
+	deathdate = { day = 03 month = june year = 1949 }
 	
 	name = "Reorganization of the Bank of France"
 	desc = "It's time to reorganize the Bank of Free France"
@@ -277,7 +277,7 @@
 			}
 	date = { day = 08 month = august year = 1951 }
 	offset = 1
-	deathdate = { day = 10 month = august year = 1951 }
+	deathdate = { day = 29 month = august year = 1951 }
 	
 	name = "Iraqi-Syrian Treaty of Friendship"
 	desc = "The Iraq and Syrian governments signed a treaty of friendship"
@@ -304,7 +304,7 @@
 			}
 	date = { day = 08 month = august year = 1951 }
 	offset = 1
-	deathdate = { day = 10 month = august year = 1951 }
+	deathdate = { day = 29 month = august year = 1951 }
 	
 	name = "Iraqi-Syrian Treaty of Friendship"
 	desc = "The Iraq and Syrian governments signed a treaty of friendship"
@@ -725,7 +725,7 @@
 	trigger = {
 			NOT = { war = { country = SOV } }
 			}
-	date = { day = 18 month = march year = 1952 }
+	date = { day = 08 month = march year = 1952 }
 	offset = 1
 	deathdate = { day = 20 month = march year = 1952 }
 	
@@ -861,9 +861,9 @@
 	trigger = {
 			NOT = { war = { country = ITA } }
 			}
-	date = { day = 14 month = may year = 1951 }
+	date = { day = 04 month = may year = 1951 }
 	offset = 1
-	deathdate = { day = 16 month = may year = 1951 }
+	deathdate = { day = 06 month = may year = 1951 }
 	
 	name = "Muslim Insurrection in Southern Albania"
 	desc = "A Muslim insurrection broke out in southern Albania after the Italian government issued a decree prohibiting the veiling of women. The revolt reflected a larger protest movement which opposed King Zog's dictatorial rule."
@@ -1081,7 +1081,7 @@ event = {
 			NOT = { war = { country = MEX } }
 			}
 		
-	date = { day = 31 month = october year = 1950 }
+	date = { day = 29 month = october year = 1950 }
 	offset = 1
 	deathdate = { day = 02 month = november year = 1950 }
 	
@@ -1108,7 +1108,7 @@ event = {
 			NOT = { war = { country = USA } }
 			}
 		
-	date = { day = 31 month = october year = 1950 }
+	date = { day = 29 month = october year = 1950 }
 	offset = 1
 	deathdate = { day = 02 month = november year = 1950 }
 	
@@ -1134,7 +1134,7 @@ event = {
 			NOT = { war = { country = ENG } }
 			}
 		
-	date = { day = 31 month = october year = 1950 }
+	date = { day = 29 month = october year = 1950 }
 	offset = 1
 	deathdate = { day = 02 month = november year = 1950 }
 	
@@ -1251,9 +1251,9 @@ event = {
 			NOT = { war = { country = TUR } }
 			}
 		
-	date = { day = 16 month = may year = 1950 }
+	date = { day = 06 month = may year = 1950 }
 	offset = 1
-	deathdate = { day = 18 month = may year = 1950 }
+	deathdate = { day = 08 month = may year = 1950 }
 	
 	name = "Anglo-Turkish Agreement"
 	desc = "The British and Turkish governments signed an agreement to promote stability in the eastern Mediterranean."
@@ -1277,9 +1277,9 @@ event = {
 			NOT = { war = { country = ENG } }
 			}
 		
-	date = { day = 16 month = may year = 1950 }
+	date = { day = 06 month = may year = 1950 }
 	offset = 1
-	deathdate = { day = 18 month = may year = 1950 }
+	deathdate = { day = 08 month = may year = 1950 }
 	
 	name = "Anglo-Turkish Agreement"
 	desc = "The British and Turkish governments signed an agreement to promote stability in the eastern Mediterranean."
@@ -1307,9 +1307,9 @@ event = {
 			exists = ITA
 			}
 		
-	date = { day = 28 month = july year = 1950 }
+	date = { day = 28 month = june year = 1950 }
 	offset = 1
-	deathdate = { day = 30 month = july year = 1950 }
+	deathdate = { day = 29 month = july year = 1950 }
 	
 	name = "Revolt in Crete"
 	desc = "Political dissatisfaction led to a revolt on the island of Crete. The Italian government took immediate access to suppress the rebellion."
@@ -1334,9 +1334,9 @@ event = {
 			exists = ITA
 			}
 		
-	date = { day = 29 month = july year = 1951 }
+	date = { day = 20 month = july year = 1951 }
 	offset = 1
-	deathdate = { day = 31 month = july year = 1951 }
+	deathdate = { day = 25 month = july year = 1951 }
 	
 	name = "Italian-Bulgarian Agreement"
 	desc = "The Bulgarian and Italian governments signed an economic and friendshipo agreement"
@@ -1359,9 +1359,9 @@ event = {
 			exists = BUL
 			}
 		
-	date = { day = 29 month = july year = 1938 }
+	date = { day = 20 month = july year = 1951 }
 	offset = 1
-	deathdate = { day = 31 month = july year = 1938 }
+	deathdate = { day = 25 month = july year = 1951 }
 	
 	name = "Italian-Bulgarian Agreement"
 	desc = "The Bulgarian and Italian governments signed an economic and friendshipo agreement"
@@ -1444,9 +1444,9 @@ event = {
 						
 			}
 		
-	date = { day = 11 month = november year = 1951 }
+	date = { day = 01 month = november year = 1951 }
 	offset = 1
-	deathdate = { day = 13 month = november year = 1951 }
+	deathdate = { day = 03 month = november year = 1951 }
 	
 	name = "U.S.-Mexican Property Agreement"
 	desc = "After serious tensions after the Mexican government expropriated the property of American oil companies operating in Mexico, the U.S. and Mexican governments signed an agreement on the land question issue. Under this plan, commissioners would appraise the value of the properties and the Mexican government would pay compensation to the American oil companies at a rate of $1 million per annum until the claims were liquidated. The two governments, could not reach an agreement to settle the oil issue."
@@ -1472,9 +1472,9 @@ event = {
 						
 			}
 		
-	date = { day = 11 month = november year = 1951 }
+	date = { day = 01 month = november year = 1951 }
 	offset = 1
-	deathdate = { day = 13 month = november year = 1951 }
+	deathdate = { day = 03 month = november year = 1951 }
 	
 	name = "U.S.-Mexican Property Agreement"
 	desc = "After serious tensions after the Mexican government expropriated the property of American oil companies operating in Mexico, the U.S. and Mexican governments signed an agreement on the land question issue. Under this plan, commissioners would appraise the value of the properties and the Mexican government would pay compensation to the American oil companies at a rate of $1 million per annum until the claims were liquidated. The two governments, could not reach an agreement to settle the oil issue."
@@ -1503,9 +1503,9 @@ event = {
 						
 			}
 		
-	date = { day = 16 month = november year = 1952 }
+	date = { day = 06 month = november year = 1952 }
 	offset = 1
-	deathdate = { day = 18 month = november year = 1952 }
+	deathdate = { day = 08 month = november year = 1952 }
 	
 	name = "Anglo-Canadian-U.S. Trade Agreement"
 	desc = "The British, Canadian, and American governments signed a major trade agreement, which the three countries had negotiated for a considerable period of time. Each state agreed to considerable trade concessions, a position which marked growing cooperation between the English-speaking countries."
@@ -1533,9 +1533,9 @@ event = {
 						
 			}
 		
-	date = { day = 16 month = november year = 1952 }
+	date = { day = 06 month = november year = 1952 }
 	offset = 1
-	deathdate = { day = 18 month = november year = 1952 }
+	deathdate = { day = 08 month = november year = 1952 }
 	
 	name = "Anglo-Canadian-U.S. Trade Agreement"
 	desc = "The British, Canadian, and American governments signed a major trade agreement, which the three countries had negotiated for a considerable period of time. Each state agreed to considerable trade concessions, a position which marked growing cooperation between the English-speaking countries."
@@ -1563,9 +1563,9 @@ event = {
 						
 			}
 		
-	date = { day = 16 month = november year = 1952 }
+	date = { day = 06 month = november year = 1952 }
 	offset = 1
-	deathdate = { day = 18 month = november year = 1952 }
+	deathdate = { day = 08 month = november year = 1952 }
 	
 	name = "Anglo-Canadian-U.S. Trade Agreement"
 	desc = "The British, Canadian, and American governments signed a major trade agreement, which the three countries had negotiated for a considerable period of time. Each state agreed to considerable trade concessions, a position which marked growing cooperation between the English-speaking countries."
@@ -1596,7 +1596,7 @@ event = {
 						
 			}
 		
-	date = { day = 18 month = january year = 1951 }
+	date = { day = 08 month = january year = 1951 }
 	offset = 1
 	deathdate = { day = 20 month = january year = 1951 }
 	
@@ -1625,9 +1625,9 @@ event = {
 		   exists = CAN 
 		    }
 		
-	date = { day = 16 month = may year = 1951 }
+	date = { day = 06 month = may year = 1951 }
 	offset = 1
-	deathdate = { day = 18 month = may year = 1951 }
+	deathdate = { day = 08 month = may year = 1951 }
 	
 	name = "British Royal Visit to Canada"
 	desc = "King George VI and Queen Elizabeth arrived in Canada to begin an official state visit to the dominion. This was the first time a British monarch visited Canada and the Canadian welcome reinforced Anglo-Canadian ties."
@@ -1652,9 +1652,9 @@ event = {
 		   exists = ENG 
 		    }
 		
-	date = { day = 16 month = may year = 1951 }
+	date = { day = 06 month = may year = 1951 }
 	offset = 1
-	deathdate = { day = 18 month = may year = 1951 }
+	deathdate = { day = 08 month = may year = 1951 }
 	
 	name = "British Royal Visit to Canada"
 	desc = "King George VI and Queen Elizabeth arrived in Canada to begin an official state visit to the dominion. This was the first time a British monarch visited Canada and the Canadian welcome reinforced Anglo-Canadian ties."

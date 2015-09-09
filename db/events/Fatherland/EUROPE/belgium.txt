@@ -259,11 +259,11 @@ event = {
 
 	trigger = {
 		event = 8212066
-		flag = CON_WAR
+		#flag = CON_WAR
 	}
 
 	date = { day = 1 month = january year = 1950 }
-	offset = 360
+	offset = 1
 	deathdate = { day = 30 month = december year = 1954 }
 
 	action = {

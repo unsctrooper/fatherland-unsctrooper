@@ -20,9 +20,9 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 0 month = january year = 1948 }
 	offset = 320
-	deathdate = { day = 30 month = december year = 1948 }
+	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
 		name = "OK"
@@ -46,7 +46,7 @@ event = {
 
 	date = { day = 0 month = january year = 1949 }
 	offset = 320
-	deathdate = { day = 30 month = december year = 1949 }
+	deathdate = { day = 29 month = december year = 1949 }
 
 	action = {
 		name = "OK"
@@ -70,7 +70,7 @@ event = {
 
 	date = { day = 0 month = january year = 1950 }
 	offset = 320
-	deathdate = { day = 30 month = december year = 1950 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = "EVT_8004906_A"
@@ -107,7 +107,7 @@ event = {
 
 	date = { day = 0 month = january year = 1951 }
 	offset = 15
-	deathdate = { day = 30 month = february year = 1951 }
+	deathdate = { day = 29 month = february year = 1951 }
 
 	action = {
 		name = "EVT_8004907_A"
@@ -134,7 +134,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1961 }
+	deathdate = { day = 29 month = december year = 1961 }
 
 	action = {
 		name = "OK"
@@ -158,7 +158,7 @@ event = {
 
 	date = { day = 0 month = january year = 1962 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "OK"

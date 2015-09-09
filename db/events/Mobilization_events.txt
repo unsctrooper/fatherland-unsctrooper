@@ -1645,9 +1645,9 @@ event = { #Backup event that triggers at war when the player forgot to mobilize 
 	style = 1
 	picture = "Wehrmacht"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 12
-	deathdate = { day = 30 month = december year = 1963 }	
+	deathdate = { day = 29 month = december year = 1963 }	
 	
 	action = {
 		name = "1350002name" 
@@ -1691,9 +1691,9 @@ event = { #Backup event that triggers at war when the player forgot to mobilize 
 	style = 1
 	picture = "Wehrmacht"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 35
-	deathdate = { day = 30 month = december year = 1963 }	
+	deathdate = { day = 29 month = december year = 1963 }	
 	
 	action = {
 		name = "1350002name" 
@@ -1736,9 +1736,9 @@ event = { # generates 16 militia divisions during war
 	style = 2
 	picture = "Wehrmacht"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 15
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		 trigger = { 
@@ -1850,9 +1850,9 @@ event = { # generates 3 Infantry Divisions. Polish and french volunteers
 	style = 2
 	picture = "Wehrmacht"
 	
-	date = { day = 1 month = january year = 1936 }
+	date = { day = 0 month = january year = 1936 }
 	offset = 10
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 
 	
@@ -1890,9 +1890,9 @@ event = { #Friendly Warning
 	style = 1
 	picture = "Wehrmacht"
 
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 270
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "1350000text8"

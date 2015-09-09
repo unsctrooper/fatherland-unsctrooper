@@ -20,9 +20,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1955 }
+	date = { day = 0 month = january year = 1955 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1959 }
+	deathdate = { day = 29 month = december year = 1959 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -70,9 +70,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1960 }
+	date = { day = 0 month = january year = 1960 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1964 }
+	deathdate = { day = 29 month = december year = 1964 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -100,9 +100,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1957 }
+	date = { day = 0 month = january year = 1957 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1961 }
+	deathdate = { day = 29 month = december year = 1961 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -135,9 +135,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1953 }
+	date = { day = 0 month = january year = 1953 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -188,9 +188,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1947 }
+	date = { day = 0 month = january year = 1947 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -238,9 +238,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1952 }
+	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -268,9 +268,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1959 }
+	date = { day = 0 month = january year = 1959 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -303,9 +303,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1953 }
+	date = { day = 0 month = january year = 1953 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -356,9 +356,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1961 }
+	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1965 }
+	deathdate = { day = 29 month = december year = 1965 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -391,9 +391,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1949 }
+	date = { day = 0 month = january year = 1949 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1953 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -441,9 +441,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1960 }
+	date = { day = 0 month = january year = 1960 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -471,9 +471,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1956 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1960 }
+	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -505,9 +505,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1961 }
+	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1965 }
+	deathdate = { day = 29 month = december year = 1965 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -555,9 +555,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1963 }
+	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -584,9 +584,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1959 }
+	date = { day = 0 month = january year = 1959 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -634,9 +634,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1963 }
+	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -663,9 +663,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1962 }
+	date = { day = 0 month = january year = 1962 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1966 }
+	deathdate = { day = 29 month = december year = 1966 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -697,9 +697,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1962 }
+	date = { day = 0 month = january year = 1962 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1966 }
+	deathdate = { day = 29 month = december year = 1966 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -747,9 +747,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1963 }
+	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -776,9 +776,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1961 }
+	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1965 }
+	deathdate = { day = 29 month = december year = 1965 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -810,9 +810,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1956 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1960 }
+	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -862,9 +862,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1960 }
+	date = { day = 0 month = january year = 1960 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1964 }
+	deathdate = { day = 29 month = december year = 1964 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -912,9 +912,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1961 }
+	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A
@@ -941,9 +941,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 1 month = january year = 1956 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1960 }
+	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -991,9 +991,9 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 1 month = january year = 1961 }
+	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1999 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_FULLINDEPENDENCE_A

@@ -1,6 +1,12 @@
 # ##########################
 # ## Round I - Turkestan Troubles
 # ##########################
+# 8014300 - Death of Turkestan SOV
+# 8014301 - East Turkestan wants to negotiate? SIK
+# 8014302 - What to do with East Turkestan ? SOV
+# 8014303 - The soviet answer SIK
+# 8014304 - East Turkestan has accepted our peace terms !! SOV
+# 8014305 (it's after "fate of turkestan" below) - Soviet administration in Turkestan is now #fully operationnal
 # 8014251 - Fate of Turkestan
 # 8014252 - Fate of East Turkestan
 # 8014253 - Integration of Sinkiang SSR
@@ -10,6 +16,231 @@
 # ###################################
 # ## Round I - Turkestan Troubles ###
 # ###################################
+
+event = { # Death of Turkestan
+        id = 8014300
+        random = no
+        country = SOV
+
+        name = "EVT_8014300_NAME"
+        desc = "EVT_8014300_DESC"
+        style = 2
+        picture = "0turkestan0"
+
+    trigger = {
+           control = { province = 1103 data = SOV }
+           war = { country = SOV country = UPE }
+       }
+
+     date = { day = 1 month = january year = 1948 }
+     offset = 1
+     deathdate = { day = 29 month = december year = 1950 }
+
+action = { 
+        name = "EVT_8014300A"
+        command = { type = inherit which = UPE }
+        command = { type = event which = 8014301 where = SIK when = 1 }
+      }
+}
+
+############### East turkestan wants to negotiate?
+event = { 
+        id = 8014301
+        random = no
+        country = SIK
+
+        name = "EVT_8014301_NAME"
+        desc = "EVT_8014301_DESC"
+        style = 2
+        picture = "east_turkestan"
+
+    trigger = {
+                event = 8014300
+                war = { country = SOV country = SIK }
+            }
+
+     date = { day = 1 month = january year = 1948 }
+     offset = 1
+     deathdate = { day = 29 month = december year = 1950 }
+
+action = {
+        name = "EVT_8014301A"
+        ai_chance = 10
+      }
+
+action = {
+        name = "EVT_8014301B"
+        ai_chance = 90
+        command = { type = setflag which = east_turkestan_wants_to_negotiate }
+        command = { type = event which = 8014302 where = SOV when = 1 }
+
+      }
+}
+
+########### east turkestan fate round 1
+event = { 
+        id = 8014302
+        random = no
+        country = SOV
+
+        name = "EVT_8014302_NAME"
+        desc = "EVT_8014302_DESC"
+        style = 2
+        picture = "east_turkestan"
+
+    trigger = {
+           event = 8014301
+           NOT = { exists = UPE }
+           war = { country = SOV country = SIK }
+           flag = east_turkestan_wants_to_negotiate
+       }
+
+      date = { day = 1 month = january year = 1948 }
+      offset = 1
+      deathdate = { day = 29 month = december year = 1950 }
+
+action = {
+         name = "EVT_8014302A"
+         command = { type = clrflag which = east_turkestan_wants_to_negotiate }
+         command = { type = setflag which = we_failed }
+         command = { type = event which = 8014303 where = SIK when = 1 }
+         ai_chance = 40
+      }
+
+action = {
+        name = "EVT_8014302B"
+        command = { type = event which = 8014303 where = SIK when = 1 }
+        command = { type = setflag which = SIK_puppet }
+        ai_chance = 30
+
+      }
+
+action = {
+         name = "EVT_8014302C"
+         command = { type = event which = 8014303 where = SIK when = 1 }
+         command = { type = setflag which = threat_SIK }
+         ai_chance = 40
+      }
+
+action = {
+        name = "EVT_8014302D"
+	command = { type = local_setflag which = SovietReturnsSik } 
+	command = { type = relation which = CHI value = 50 }	
+	command = { type = relation which = CHC value = 50 }
+        ai_chance = 20
+     }
+}
+
+############ east turkestan fate round 2
+event = { 
+        id = 8014303
+        random = no
+        country = SIK
+
+        name = "EVT_8014303_NAME"
+        desc = "EVT_8014303_DESC"
+        style = 2
+
+      trigger = {
+               event = 8014302
+           }
+
+        date = { day = 1 month = january year = 1948 }
+        offset = 1
+        deathdate = { day = 29 month = december year = 1950 }
+
+action = {
+       trigger = { OR = { flag = threat_SIK flag = SIK_puppet } }
+       name = "EVT_8014303A"
+       ai_chance = 30
+     }
+
+action = {
+        trigger = { flag = threat_SIK }
+        name = "EVT_8014303B"
+        command = { type = event which = 8014304 }
+        command = { type = setflag which = SIK_surrender }
+        ai_chance = 20
+     }
+
+action = {
+        trigger = { flag = SIK_puppet }
+        name = "EVT_8014303C"
+        command = { type = setflag which = puppet_SIK }
+        ai_chance = 60
+     }
+
+action = {
+        trigger = { flag = we_failed }
+        name = "EVT_8014303D"
+        command = { type = clrflag which = we_failed }
+    }
+
+}
+
+################ east turkestan fate final round
+event = {
+        id = 8014304
+        random = no
+        country = SOV
+        name = "EVT_8014304_NAME"
+        desc = "EVT_8014304_DESC"
+        style = 2
+
+    trigger = {
+            event = 8014303
+            OR = { flag = puppet_SIK flag = SIK_surrender }
+             
+         }
+
+          date = { day = 1 month = january year = 1948 }
+          offset = 1
+          deathdate = { day = 29 month = december year = 1950 }
+
+action = {    
+     trigger = { flag = SIK_surrender }
+         name = "EVT_8014304A"
+         command = { type = inherit which = SIK }
+         command = { type = clrflag which = SIK_surrender }
+         command = { type = clrflag which = east_turkestan_wants_to_negotiate }
+         command = { type = clrflag which = threat_SIK }
+      }
+
+action = { 
+    trigger = { flag = puppet_SIK }
+        name = "8014252B" # Reinstall Shenq Qai
+	command = { type = dissent value = -3 }
+	command = { type = make_puppet which = SIK }
+	command = { type = relation which = CHI value = -25 }	
+	command = { type = relation which = CHC value = -25 }
+	command = { type = event which = 8014254 where = SIK when = 1 }
+        command = { type = clrflag which = puppet_SIK }
+        command = { type = clrflag which = east_turkestan_wants_to_negotiate }
+        command = { type = clrflag which = SIK_puppet }
+      }
+
+action = {
+     trigger = { flag = puppet_SIK } 
+	name = "8014252D" # Contain Turkestani Elements
+	ai_chance = 5
+	command = { type = dissent value = -1 }
+	command = { type = independence which = SIK value = 1 }  
+	command = { type = make_puppet which = SIK }
+	command = { type = relation which = CHI value = -50 }	
+	command = { type = relation which = CHC value = -50 }
+	command = { type = event which = 8014255 where = SIK when = 1 }
+        command = { type = clrflag which = puppet_SIK }
+        command = { type = clrflag which = east_turkestan_wants_to_negotiate }
+        command = { type = clrflag which = SIK_puppet }
+     }	
+}
+
+
+
+
+
+
+
 event = { # Fate of Turkestan
 	id = 8014251 
 	random = no
@@ -17,6 +248,7 @@ event = { # Fate of Turkestan
 
 	name = "8014251NAME"
 	desc = "8014251DESC" 
+        save_date = yes
 	style = 2
 	picture = "0turkestan0"
 	
@@ -31,17 +263,16 @@ event = { # Fate of Turkestan
 	deathdate = { day = 30 month = december year = 1963 }
 
 
-	action = { # Decentralize
-		name = "8014251A"
-        ai_chance = 80
-        command = { type = dissent value = -5 }
-        command = { type = manpowerpool value = -100 } 
+	action = { # Install a soviet administration
+		name = "8014251B"
+                ai_chance = 70
+                command = { type = dissent value = 15 }
+                command = { type = manpowerpool value = -100 } 
 		command = { type = peacetime_ic_mod value = -5 }
-		command = { type = morale which = land value = 10 }
-		command = { type = max_organization which = land value = 5 }
-		command = { type = ground_def_eff value = 0.75 }
-	   
-	   command = { type = addcore which = 1101 }
+	        command = { type = setflag which = soviet_admin_turkestan }
+                command = { type = free_money value = -2 }
+
+	    command = { type = addcore which = 1101 }
 	    command = { type = addcore which = 1102 }
 	    command = { type = addcore which = 1100 }
 	    command = { type = addcore which = 1097 }
@@ -75,17 +306,18 @@ event = { # Fate of Turkestan
 	    command = { type = addcore which = 1112 }
 	    command = { type = addcore which = 501 }
 	}
-	action = { # Centralize
-		name = "8014251B" 
-		ai_chance = 20
-        command = { type = dissent value = -10 }
-        command = { type = research_mod value = 10 }
-        command = { type = tc_mod value = 10 }
+	action = { # keep local administration
+		name = "8014251A" 
+		ai_chance = 30
+                command = { type = dissent value = -5 }
+                command = { type = research_mod value = 10 }
+                command = { type = tc_mod value = 10 }
 		command = { type = peacetime_ic_mod value = 5 }
 		command = { type = morale which = land value = 10 }
 		command = { type = max_organization which = land value = 5 }
 		command = { type = ground_def_eff value = 0.75 }
-	   
+	        command = { type = free_money value = -3 }
+
   	    command = { type = addcore which = 506 }
 	    command = { type = addcore which = 507 }
 	    command = { type = addcore which = 505 }
@@ -120,6 +352,48 @@ event = { # Fate of Turkestan
 	}
 }
 
+########### soviet administration in turkestan is now fully opterationnal
+event = {
+        id = 8014305
+        random = no
+        country = SOV
+
+        name = "EVT_8014305_NAME"
+        desc = "EVT_8014305_DESC"
+        style = 2
+
+     trigger = {
+             flag = soviet_admin_turkestan
+             event = 8014251
+             event = { id = 8014251 days = 180 }
+       }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+                name = "EVT_8014305A"
+                command = { type = research_mod value = 15 }
+                command = { type = tc_mod value = 20 }
+                command = { type = dissent value = -10 }
+                command = { type = manpowerpool value = 350 } 
+		command = { type = peacetime_ic_mod value = 15 }
+		command = { type = morale which = land value = 5 }
+		command = { type = max_organization which = land value = 5 }
+                command = { type = free_money value = 3 }
+		command = { type = morale which = land value = 10 }
+		command = { type = max_organization which = land value = 5 }
+		command = { type = ground_def_eff value = 0.75 }
+                command = { type = clrflag which = soviet_admin_turkestan }
+        }
+}
+
+
+
+
+
+
 event = { # Fate of East Turkestan
 	id = 8014252 
 	random = no
@@ -135,6 +409,7 @@ event = { # Fate of East Turkestan
 		atwar = no
 		control = { province = 1281 data = SOV } # Uruumqi
 		NOT = { exists = SIK } 
+                NOT = { event = 8014304 }
 	}
 	
     date = { day = 1 month = january year = 1948 }
@@ -201,7 +476,7 @@ event = { # Integration of Sinkiang SSR
 	picture = "sinkiang"
 	
     trigger = {
-	event = { id = 8014253 days = 180 } 
+	event = { id = 8014252 days = 180 } 
 	}
 	
     date = { day = 1 month = january year = 1948 }

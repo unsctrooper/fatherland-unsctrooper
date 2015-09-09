@@ -43,9 +43,9 @@ event = {  #Establish a professional military
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	
 	action = { #Establish a professional military
@@ -108,9 +108,9 @@ event = {  #Prolong Conscription
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	
 	action = { #Enact Selective Conscription
@@ -213,9 +213,9 @@ event = {  #Prolong Conscription through congress for democratic usa
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	
 	action = { #Enact Selective Conscription
@@ -300,9 +300,9 @@ event = {  #partial mob for all nations
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 
 	action = { #Enact Partial Mobilisation
@@ -354,9 +354,9 @@ event = {  #general mob for all nations
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = { #Enact General Mobilisation
 		
@@ -403,9 +403,9 @@ event = {  #total mob for all nations
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	
 	action = { #Enact Extended Mobilisation
@@ -494,9 +494,9 @@ NOT = { local_flag = do_not_demob }
 	picture = "Wehrmacht"
 	decision_picture = "decision_german_total_war"
 	
-	date = { day = 1 month = january year = 1914 }
+	date = { day = 0 month = january year = 1914 }
 	offset = 60
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	
 	action = {

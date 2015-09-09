@@ -9,7 +9,7 @@ event = {
 
 	date = { day = 0 month = january year = 1945 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1945 }
 
 	action = {
 		name = "OK"
@@ -44,7 +44,7 @@ event = {
 
 	date = { day = 0 month = january year = 1946 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1950 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -94,7 +94,7 @@ event = {
 
 	date = { day = 0 month = january year = 1951 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1953 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -144,7 +144,7 @@ event = {
 
 	date = { day = 0 month = january year = 1954 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1955 }
+	deathdate = { day = 29 month = december year = 1955 }
 
 	action = {
 		name = "EVT_8002004_A"
@@ -174,7 +174,7 @@ event = {
 
 	date = { day = 0 month = january year = 1956 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1960 }
+	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -216,7 +216,7 @@ event = {
 
 	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -261,7 +261,7 @@ event = {
 
 	date = { day = 0 month = july year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "EVT_8002007_A"
@@ -286,7 +286,7 @@ event = {
 		headofstate = 160302 # Kubitschek
 	}
 
-	date = { day = 1 month = january year = 1956 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1960 }
 
@@ -328,7 +328,7 @@ event = {
 		headofstate = 160302 # Kubitschek
 	}
 
-	date = { day = 1 month = january year = 1956 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1959 }
 
@@ -361,7 +361,7 @@ event = {
 		event = 8002010
 	}
 
-	date = { day = 1 month = january year = 1956 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1960 }
 

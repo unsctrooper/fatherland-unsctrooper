@@ -385,7 +385,7 @@ trade = {
 	U49 = -1
 	SOV = 100
    } 
-   province_priorities = { 134 = 100 # Stutgart } 
+   province_priorities = { }  # 134 = 100 Stuttgart
    area_multiplier = { } 
  } 
  front = {  

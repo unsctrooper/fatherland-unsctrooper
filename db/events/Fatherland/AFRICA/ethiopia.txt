@@ -39,9 +39,9 @@
 			 }
 		 }
 		 
-		 date = { day = 1 month = january year = 1949 }
+		 date = { day = 0 month = january year = 1949 }
 		 offset = 100 
-		 deathdate = { day = 30 month = january year = 1960 }
+		 deathdate = { day = 29 month = january year = 1960 }
 		 
 		 action_a = {
 			name = "It's true, at the end we need a railroad"
@@ -73,9 +73,9 @@
 			 }
 		 }
 
-		  date = { day = 1 month = august year = 1949 }
+		  date = { day = 0 month = august year = 1949 }
 		 offset = 45 
-		 deathdate = { day = 30 month = january year = 1960 }
+		 deathdate = { day = 29 month = january year = 1960 }
 		 
 
 	 action_a = {
@@ -124,9 +124,9 @@
 			 }
 		 }
 
-		  date = { day = 1 month = december year = 1949 }
+		  date = { day = 0 month = december year = 1949 }
 		 offset = 80 
-		 deathdate = { day = 30 month = january year = 1960 }
+		 deathdate = { day = 29 month = january year = 1960 }
 		 
 
 	 action = {
@@ -368,9 +368,9 @@
 	 style = 2
 	 picture = "news_paper"		 
 
-		 date = { day = 1 month = december year = 1949 }
+		 date = { day = 0 month = december year = 1949 }
 		 offset = 10 
-		 deathdate = { day = 30 month = january year = 1960 }
+		 deathdate = { day = 29 month = january year = 1960 }
 
 	 
 	 trigger = {
@@ -431,9 +431,9 @@
 	 style = 2
 	 picture = "news_paper"		 
 
-	 date = { day = 1 month = december year = 1949 }
+	 date = { day = 0 month = december year = 1949 }
 	 offset = 10 
-	 deathdate = { day = 30 month = january year = 1960 }
+	 deathdate = { day = 29 month = january year = 1960 }
 
 	 
 	 trigger = {
@@ -495,9 +495,9 @@
 	 style = 2
 	 picture = "news_paper"		 
 
-		 date = { day = 1 month = december year = 1949 }
+		 date = { day = 0 month = december year = 1949 }
 		 offset = 10 
-		 deathdate = { day = 30 month = january year = 1960 }
+		 deathdate = { day = 29 month = january year = 1960 }
 
 	 
 	 trigger = {
@@ -563,9 +563,9 @@
 	 style = 2
 	 picture = "news_paper"		 
 
-		 date = { day = 1 month = december year = 1949 }
+		 date = { day = 0 month = december year = 1949 }
 		 offset = 10 
-		 deathdate = { day = 30 month = january year = 1960 }
+		 deathdate = { day = 29 month = january year = 1960 }
 
 	 
 	 trigger = {

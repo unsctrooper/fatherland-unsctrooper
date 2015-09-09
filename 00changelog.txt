@@ -1,4 +1,45 @@
 #######################################################
+# Changelog for Beta version 6.0 codename "xxx"
+#######################################################
+
+#Events/Decision Modified (*) or Added (+) or Removed (-)
+	GERMANY
+		- (*) Ost Generalplan
+		- (*) Generalgovernment
+	EUROPE
+		- (+/*) Free France
+	CHINA
+		- (*) Russian-Chinese alliance
+	AFRICA
+		- (*) South Africa
+#DB
+	Leaders
+	- New leaders for Free France
+	Ministers
+	- Modified ministers_U01.csv (Free France)
+	
+#Inc
+	- Revision inc for Germany 
+	- Revision inc for USA 
+	- Revision inc for Italy
+	- Revision inc for United Kingdom 
+	- Revision inc for Soviet Union
+	- Revision inc for SS
+	- Revision inc for China Nationalist and Commie China
+	- Revision inc for Axis 
+	- Revision inc for Free France
+	- Revision inc for Canada
+	- Revision inc for Romania
+	- Revision inc for Hungary
+	- Revision inc for Croatia
+
+#GFX
+	- New event pics
+	
+# AI
+	- Improved AI for Soviet Union
+	
+#######################################################
 # Changelog for Beta version 5.0 codename "Red Dawn"
 #######################################################
 

@@ -34,3 +34,4 @@ Things to help with:
 - Crisis suggestions and events, as well as peace treaties.
 - Internal strife events for Germany.
 - Any other events for a post-WW2 world with Germany victorious.
+

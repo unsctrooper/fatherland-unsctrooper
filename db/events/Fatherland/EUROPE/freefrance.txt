@@ -13,6 +13,10 @@
 # 322 # U01 # Morocco is winning
 # 323 # U01 # Moroccan rebellion crushed
 # 324 # MOR # A New Marocco (Peaceful independance)
+# 326 # U01 # Cheikh Raymond the Musician
+# 327 # U01 # Congress of the Algerian Communist Party
+# 328 # U01 # Strike supported by the PCA
+# 329-331 # U01 # Free France's starting events (player only)
 ########################################
 event = {
 id = 308
@@ -495,4 +499,139 @@ event = {
 		command = { type = sleepminister which = 505047 }
 		command = { type = setflag which = MORfreeF }
 		}
+}
+
+
+########################################
+
+#########################################
+# Arts & Sciences
+#########################################
+
+event = {
+id = 326
+random = no
+country = U01
+style = 2
+
+date = { day = 27 month = july year = 1962 }
+
+name = "Cheikh Raymond, the Concorde Musician"
+desc = "Today is Raymond Leyris' 50th birthday! Better known as Cheikh Raymond, he is a renowned Algerian Jewish musician, specialized in 'malouf' music and 'oud' (the lute), widely respected by both Jews and Muslims, who gave him his title of 'Cheikh' (elder). His father was a Jew from Batna who died during WW1, and his mother a French citizen , an example of the multicultural blending of French Algeria. He plays his repertoire throughout the country, including the famous song 'Malahbibi Malou'."
+
+action_a = {
+name = "Great!"
+command = { type = dissent value = -1 }
+}
+}
+
+#########################################
+# Communist agitation
+#########################################
+event = {
+	id = 327
+	random = no
+	country = U01
+	style = 2
+
+	name = "Congress of the Algerian Communist Party"
+	desc = "The secretary general Larbi Bouhali opened the Congress of the Algerian Communist Party by stating that 'the future of Algeria will be decided primarily by the struggle of our people on our national soil'. Composed of a majority of Arabs and some Europeans, it is still a hotbed of seditious and anti-colonialist elements, even after Moscow supported a purge of the most nationalistic elements including the then secretary general Amar Ouzegane in support of our struggle against the Third Reich last year."
+	picture = "news_paper"
+
+	date = { day = 14 month = march year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = march year = 1949 }
+
+
+action_a = {
+name = "Well, I suppose it could be worse…"
+command = { type = dissent value = 5 }
+}
+}
+
+event = {
+	id = 328
+	random = no
+	country = U01
+
+	trigger = {
+		random = 5
+		dissent = 0
+		atwar = no
+		NOT = { dissent = 10 }
+		}
+
+	name = "A new strike, supported by the PCA!"
+	desc = "Dozens of workers stopped to work today, interrupting their factory's production and demanding better working conditions, wages and the end of 'the inequalities between Arabs and Pieds-Noirs', supported by the Algerian Communist Party (PCA)."
+	style = 2
+	picture = "news_paper"
+
+	persistent = yes
+	date = { day = 1 month = january year = 1942 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = "Placate them one way or another, stability is paramount!"
+		command = { type = dissent value = 1 }
+	}
+}
+
+#########################################
+# The Constitutionnal Order of the Exiled France
+#########################################
+
+event = {
+	id = 329
+	random = no
+	country = U01
+	style = 2
+
+	trigger = {
+        ai = no
+	}
+
+	name = "France's difficult Challenge..."
+	desc = "With France apparently divided for long, De Gaulle's Free France had to adapt, and began to govern France's far-flung colonies without the strength of the metropolis. The loss of the mainland against Germany, of Indochina against the Japanese and the infighting among Pétainist and Gaullist French colonials changed considerably how the natives resented French rule, leading to unrest in most colonies, and the independence of Syria and Lebanon in the Levant after the League of Nations mandate collapse."
+        picture = "news_paper"
+
+	date = { day = 15 month = january year = 1948 }
+
+	action_a = {
+		name = "What are France's institutions?"
+		command = { type = trigger which = 330 }
+	}
+}
+
+event = {
+	id = 330
+	random = no
+	country = U01
+	style = 2
+
+	name = "The Constitutionnal Order of the Exiled France"
+	desc = "The Provisional Government reformed itself after the end of the hostilities into the 'French Union', including the Republic (of which mainly Algeria is controlled), 'territories d'Outre-mer' (ex-colonies), and 'associated States' (ex-protectorates). The natives gain the right to vote, but in a different ballot than the one reserved to ethnic French and selected natives (civil servants, graduates, traditional elites…), and end up with less delegates despite representing around 95% of the total population."
+        picture = "news_paper"
+
+	action_a = {
+		name = "France is still the beacon of Civilization!"
+                command = { type = trigger which = 331 }
+}
+}
+
+
+event = {
+	id = 331
+	random = no
+	country = U01
+	style = 2
+
+	name = "The French presence in Indochina"
+	desc = "After the Treaty of Oran, signed by Georges Bidault and Ho Chi Minh, Viet Nam, Laos and Cambodia joined the French Union as 'associated states', with independent armies, parliaments and finances. Viet Nam, of which Annam and Cochinchina are recognized integral parts but remain under colonial rule, became a constitutional monarchy headed by the Emperor Duy Tan, exiled in 1916 for nationalism, and gained exclusive control of Tonkin while France is committed to fully withdraw from Indochina in July 1951."
+        picture = "news_paper"
+
+	action_a = {
+		name = "Breaking France's words could have a disastrous effect!"
+                command = { }
+}
 }
