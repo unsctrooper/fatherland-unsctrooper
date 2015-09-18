@@ -2,7 +2,71 @@
 # SS
 # Review Pako
 #####################################
+
 # 90002000 - Heydrich vs. Himmler - U58
+
+
+
+##################################################################################
+# L'Etat SS
+##################################################################################
+event = {
+
+		id = 90002001
+		date = { day = 0 month = january year = 1948 }	
+		offset = 7 
+		deathdate = { day = 1 month = february year = 1948 }
+		random = no
+		country = U58	
+		picture = "SS"
+		
+			name = "The SS State"
+			style = 0	
+			desc = "Description : TODO"
+		action_a = {
+			name = "Heil!"
+			command = { type = dissent value = -5 }
+		}
+	}
+	
+##################################################################################
+# Waffen-SS : Un Etat dans l'Etat
+##################################################################################
+event = {
+		id = 90002002
+		date = { day = 0 month = january year = 1949 }	
+		offset = 7 
+		deathdate = { day = 0 month = february year = 1949 }
+
+		random = no
+		country = GER	
+		picture = "SS"
+
+			name = "A State inside a State"
+			style = 0	
+			desc = "Description : TODO"
+		action_a = {
+		name = "Two Millions of Reichsmark"
+		command = { type = money value = -200 }
+		}
+		
+		action_b = {
+		name = "Three Millions of Reichsmark"
+		command = { type = money value = -300 }
+		}
+		
+		action_c = {
+		name = "Four Millions of Reichsmark"
+	
+		command = { type = money value = -400 }
+		}
+		action_d = {
+		name = "Nein !"
+		
+		}		
+	}
+
+
 
 event = { # trigger by 90000516 GER
 	id = 90002000

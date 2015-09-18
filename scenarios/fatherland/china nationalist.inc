@@ -313,33 +313,7 @@ inventions = { 3000027 }
       } 
      dig_in   = 20.000 
     }
-   landunit = 
-   {  location = 1236 # Chengde
-     name     = "4. Juntuan" 
-     id       = {  type = 22000 id = 10  }
-     Division = 
-     { id         = {  type = 22000 id = 11  } 
-       name       = "8. Bubing Shi" 
-       type       = infantry 
-	   strength  = 60
-       model     = 8
-      } 
-     Division = 
-     { id         = {  type = 22000 id = 12  } 
-       name       = "9. Bubing Shi" 
-       type       = infantry 
-	   strength  = 60
-       model     = 8
-      }
-     Division = 
-     { id         = {  type = 22000 id = 13  } 
-       name       = "10. Bubing Shi" 
-       type       = infantry 
-	   strength  = 60
-       model     = 8
-      } 
-     dig_in   = 20.000 
-    }
+
    landunit = 
    {  location = 1256 # Baoji
      name     = "5. Juntuan" 
@@ -367,42 +341,7 @@ inventions = { 3000027 }
       }
      dig_in   = 20.000 
     }
-   landunit = 
-   {  location = 1339 # Souzhou
-     name     = "6. Juntuan" 
-     id       = {  type = 22000 id = 18  }
-     Division = 
-     { id         = {  type = 22000 id = 19  } 
-       name       = "4. Bubing Lü" 
-       type       = militia 
-	   strength  = 60
-       model     = 5
-      } 
-     Division = 
-     { id         = {  type = 22000 id = 20  } 
-       name       = "5. Bubing Lü" 
-       type       = militia 
-	   strength  = 60
-       model     = 5
-      } 
-     Division = 
-     { id         = {  type = 22000 id = 21  } 
-       name       = "1. Guo Qibing Jun" 
-       type       = cavalry 
-	   strength  = 40
-       model     = 10
-	  extra = sp_artillery
-	   brigade_model = 1
-      }
-     Division = 
-     { id         = {  type = 22000 id = 22  } 
-       name       = "6. Bubing Lü" 
-       type       = militia 
-	   strength  = 60
-       model     = 5
-      }
-     dig_in   = 20.000 
-    }
+
    landunit = 
    {  location = 1324 # Zhengzhou
      name     = "7. Juntuan" 

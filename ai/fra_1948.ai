@@ -519,13 +519,13 @@ leader_ratio = {
 	air_lt_General 		=0.11
 }
 garrison = {
-	defend_overseas_beaches = no
-	home_multiplier 		= 8.0
-	overseas_multiplier 	= 0.0
-	home_peace_cap 			= 150
-	war_zone_odds 			= 2.0
-	key_point_prio_mult		= 0.3
-	revolt_risk_mult		= 0.3
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 1.0
 
 	# PRIORITIES:
 	beach			= 5 	# Beach level 2
@@ -533,102 +533,31 @@ garrison = {
 	human_border	= 0		
 	war_target		= 20 # 50	
 	
-	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
-	claim_threat		= 0		# If we are neutral, countries with claims on us get this
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 30		# If we are neutral, countries with claims on us get this
 	unstable_border		= 0		# Bordering countries at war with someone else get this
 
 	# Borders with specific countries
 	country_priorities = {
-		GER = 120
-     	ITA = 50
-
+		GER = 40
 	}
 	ignore = {
-		#Actual Beaches to Ignore
-		930 # Port Harcourt
-		951 # Porto Novo
-		950 # Lome
-		966  # Conakry
-		1001 # Madagaskar
-		1002 # Madagaskar
-		996 # Reunion
 
-		1395 # Indo China
-		1396 # Indo China
-		1397 # Indo China
-		
-		49  # Calais
-		50  # Dieppe
-		45  # Le Havre
-		44  # Caen
-		38  # Rennes
-		37  # Brest
-		39  # Lorient
-		57  # Nantes
-		68  # Bordeaux
-		67 # Mont-de-Marzan
-		79 # Beziers
-		80 # Perpignan
-		82 # Montpellier
-		89 # Marseille
-		86 # Toulon
-		724 # Oujda
-
-		#Libya
-		773   #Al Jaghbun
-		754   #Aujila
-		774  #Calanslo
-		751   #Ghadames
-		755   #Sorno
-		
-		#Egypt/East Africa
-		800  #Siwa
-		789   #Qattara
-		801  #AinDalla
-		806  #El Atiun
-		808  #El Obeid
-		809  #Waw
-		807  #Malakal
-		805  #Omdurman
-		833  #Djibouti
-		812  #Gallabal
-		811  #Kassala
-		843  #Marsabit
-
-		#Ethiopia
-		817  #Asmara
-		819  #Adwa
-		822  #Gonder
-		820  #Debre
-		829  #Gambela
-		830  #Jima
-		826  #Moyale
-		821  #Denakil
-		823  #Dese
-		818  #Diredawa
-		827  #Ogaden
-		837  #Bardera
-
-		#Belgian Congo
-		904  #Stanleyville
-		903  #Buta
-		905  #Costermanville
-		906  #Coquihatville
-		898  #Abertville
-		902  #Kindu-Port-Empain
-		901  #Leopoldville
-		908 926 919 923 917 907 # Border with Belgian Congo
-
-		#Libya Border
-		741 # Gabes
-		740 # Gafsa
-		946 #Agadez (wtf)
-		922 738 746
-		
-		# south america
-		2000 #cayenne
 	}
-	province_priorities = { }
+	province_priorities = { 
+		86 = 20
+		88 = 20
+		90 = 20
+		95 = 20
+		100 = 20
+		99 = 20
+		56 = 20
+		47 = 20
+		70 = 20
+		67 = 20
+		83 = 20
+		80 = 20
+	}
 	area_multiplier = {
 		# Africa
 		#747 = 0.20 # Tunis

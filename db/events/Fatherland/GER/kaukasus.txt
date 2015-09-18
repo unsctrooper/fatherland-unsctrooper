@@ -438,34 +438,6 @@ event = {
 		
 		command = { type = dissent value = 30 }
 	}
-		
-	action = {
-		name = ""
-		ai_chance = 100
-		
-		#COSSACKS
-		#695
-		#694
-		command = { type = removeclaim which = 693 } 
-		command = { type = removeclaim which = 696 } 		
-		command = { type = removeclaim which = 701 } 	
-		command = { type = removeclaim which = 702 } 		
-		command = { type = removeclaim which = 703 } 
-		command = { type = removeclaim which = 704 } 		
-		command = { type = removeclaim which = 705 } 		
-		command = { type = removeclaim which = 707 } 	
-		
-		command = { type = secedeprovince which = TRA value = 693 }
-		command = { type = secedeprovince which = TRA value = 696 }
-		command = { type = secedeprovince which = TRA value = 701 }
-		command = { type = secedeprovince which = TRA value = 702 }
-		command = { type = secedeprovince which = TRA value = 703 }
-		command = { type = secedeprovince which = TRA value = 704 }
-		command = { type = secedeprovince which = TRA value = 705 }	
-		command = { type = secedeprovince which = TRA value = 707 }	
-
-		command = { type = trigger which = 92008 }
-	}
 	
 }
 ################################################
@@ -478,6 +450,9 @@ event = {
 	
 	trigger = {
 		event = 92007
+		NOT = {
+			war = { country = GER country = TRA }
+		}
 	}
 	
 	name = "Reorganize the RK"

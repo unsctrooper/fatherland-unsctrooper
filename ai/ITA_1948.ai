@@ -359,7 +359,12 @@ garrison = {
 		SCH = 10
 		CRO = 10
 	}
-	province_priorities = { }
+	province_priorities = { 
+	359 = 20
+	373 = 20
+	369 = 20
+	329 = 20
+	}
 	area_multiplier = { }
 }
 front = { 

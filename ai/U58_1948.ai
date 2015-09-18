@@ -15,8 +15,8 @@ desperation = 0.3000
 upgrading = 1.0
 reinforcement = 1.0
 strat_redeploy_threshold = 25 
-exp_force_ratio = 0.15
-exp_force_ratios = { U40 = 1.0 }  
+exp_force_ratio = 0
+exp_force_ratios = { GER = 0.90 }  
 no_exp_forces_to = { } 
 
 ##################### 

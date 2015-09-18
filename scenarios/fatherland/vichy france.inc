@@ -12,7 +12,7 @@
 ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
     flag_ext               = _Vic
     name                   = FRA_1
-    ai                     = "vic_1941.ai"
+    ai                     = "FRA_1948.ai"
    capital                = 55 # Paris
    # Resource Reserves 
    energy                 = 200
@@ -49,6 +49,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
    49 50 51 52
    #Atlantic Wall (French part)
    69 68 67 57 40 41 37 38 39 45 42 43 44 46 53
+   91 87 # Nice and Savoy/Chamberry
     } 
    # Metropolitan France 
    ownedprovinces         = {  
@@ -67,6 +68,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
        #  1003                
        #    719 999 1000 
        #  1730 1752 
+	   91 87 # Nice and Savoy/Chamberry
                              } 
    # Togoland 
    # Metropolitan France 
@@ -78,7 +80,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
    70 62 61 65 63 64 66 58 60 59 47 48 55 54 56 95 100 99 67 57 38 40 41 42
    
   90  86  94 93 92 # Former Occupation of France by Italy	
-
+	91 87 # Nice and Savoy/Chamberry
 							
    #                         2000  1767  1768                            
        #                                                   833   

@@ -9,7 +9,6 @@
   
  country = 
  {  tag                    = BUR
-	flag_ext = _socialist
 	ai_settings	= { flags = { MOB1 = yes } } 	
 puppet = ENG 
    capital                = 1459 

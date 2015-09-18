@@ -85,7 +85,7 @@ event = {
 
 	action = {
 	name = "Rekindle a lost friendship - accept alliance."
-	ai_chance = 25
+	ai_chance = 50
 	command = { type = alliance which = U59 }
 	command = { type = domestic which = interventionism value = 1 }
 	command = { type = domestic which = defense_lobby value = 1 }
@@ -96,7 +96,7 @@ event = {
 	
 	action = {
 	name = "We do not need this pathetic neo-Tsarist rabble."
-	ai_chance = 75
+	ai_chance = 50
 	command = { type = relation which = U59 value = -10 }
 	}
 	}
@@ -146,16 +146,16 @@ event = {
 	deathdate = { day = 29 month = december year = 1980 }
 
 	action = {
-	name = "We must leave the alliance."
-	ai_chance = 100
-	command = { type = leave_alliance when = 1 }
-	command = { type = relation which = U59 value = -10 }
+		name = "We must leave the alliance."
+		ai_chance = 90
+		command = { type = leave_alliance when = 1 }
+		command = { type = relation which = U59 value = -10 }
 	}
 
 	action = {
-	name = "We cannot betray our Russian allies."
-	ai_chance = 0
-	command = { type = relation which = U59 value = 10 }
-	command = { type = dissent value = 2 }
+		name = "We cannot betray our Russian allies."
+		ai_chance = 10
+		command = { type = relation which = U59 value = 10 }
+		command = { type = dissent value = 2 }
 	}
 }
