@@ -6,8 +6,14 @@
 	GERMANY
 		- (*) Ost Generalplan
 		- (*) Generalgovernment
+		- (*) Kuaukasus
+		- (+/*) SS
 	EUROPE
 		- (+/*) Free France
+		- (+/*) French State
+	COMINTERN
+		- (*) Soviet Union
+		- (+/*) Turkestan (credits battles25)
 	CHINA
 		- (*) Russian-Chinese alliance
 	AFRICA
@@ -32,12 +38,24 @@
 	- Revision inc for Romania
 	- Revision inc for Hungary
 	- Revision inc for Croatia
+	- Revision inc for Burma	
 
 #GFX
 	- New event pics
+	- New flags
 	
 # AI
 	- Improved AI for Soviet Union
+	- Improved AI for Germany
+	- Improved AI for Italy
+	- Improved AI for Bulgaria
+	- Improved AI for Croatia
+	- Improved AI for Finland
+	- Improved AI for France State
+	- Improved AI for Hungary
+	- Improved AI for Romania
+	- Improved AI for Nationalist Spain
+	- Improved AI for SS
 	
 #######################################################
 # Changelog for Beta version 5.0 codename "Red Dawn"
@@ -579,7 +597,7 @@ Peru,San Salvador,Urugay,Venezuela) (Ticket Cookie)
 - Revision of Nationalist China and Communist China (Pako)
 
 #Other
-- Add Cabinet&Ministers for French State (event Pétain's death) (Ticket Cookie)
+- Add Cabinet&Ministers for French State (event PÃ©tain's death) (Ticket Cookie)
 ####################################
 # Changelog for Alpha version 0.30
 ####################################
