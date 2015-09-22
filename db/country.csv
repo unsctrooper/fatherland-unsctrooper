@@ -1,5 +1,5 @@
-country;main color;leader language;ArmyNationalitySprite;END
-AFG;LightGray;ENG;ENG;X
+country;main color;leader language;Army Nationality Sprite;Model Nationality Picture ;Model Nationality Icon;Model Nationality Name;END
+AFG;LightGray;ENG;ENG;;;;X
 ALB;DarkBrown;ENG;ITA;X
 ALG;LightYellow;FRA;FRA;X
 ANG;UserColor4;POR;ENG;X
