@@ -174,7 +174,7 @@ country = {
 		104 105 107 # Alsace
 		
 		# Non-National provinces
-		377 382 383 # Military Administration of Greece
+		382 370 # Military Administration of Greece
 		553 # Military Administration of Leningrad
 		98 97 106 96 # Military Administation of France (Zone réservée)
 		101 102 103 # Military Administation of France (Zone interdite)
@@ -213,7 +213,7 @@ country = {
 		104 105 107 # Alsace
 		
 		#Non-National provinces
-		377 382 383 # Military Administration of Greece
+		382 370 # Military Administration of Greece
 		553 # Military Administration of Leningrad
 		101 102 103 106 96 97 98 # Military Administation of France (Zone interdite)
 		69 68   37  39  # 42 43 44 46 45 50 53 67 57 40 41 38# Military Administration of France (Atlantic Wall)

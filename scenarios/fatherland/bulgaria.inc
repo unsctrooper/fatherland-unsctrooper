@@ -42,8 +42,8 @@ rare_materials         = 5000
              #Macedonia and Greece 
              365 366 333 328 363 
               } 
-   ownedprovinces         = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 365 366 370 } 
-   controlledprovinces    = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 365 366 370 }
+   ownedprovinces         = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 } 
+   controlledprovinces    = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 }
    claimedprovinces = { 331 334 } 
    
 	# Eastern Minor Tech '44.12 
