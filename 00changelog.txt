@@ -57,6 +57,9 @@
 	- Improved AI for Nationalist Spain
 	- Improved AI for SS
 	
+#Other
+	- Update country.csv for complete compatibility with official 1.04 patch
+	
 #######################################################
 # Changelog for Beta version 5.0 codename "Red Dawn"
 #######################################################
