@@ -4,7 +4,7 @@
 ###########################################################
 
 # Compatibility:
-- Darkest Hour Full 1.04RC1 version, unmodified.
+- Darkest Hour Full 1.04
 
 # Installation instructions:
 1: Copy a clean install and unmodified version of Darkest Hour Full 1.04RC1 and rename it "Fatherland".
