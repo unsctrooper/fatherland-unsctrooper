@@ -37,7 +37,7 @@ rare_materials         = 1000
 	 
 	SpyInfo                = {  country = "GRE" NumberOfSpies = 3  }
 	
-	nationalprovinces = { 366 365 370 367 369 371 368 375 376 374 377 372 373 383 381 } 
+	nationalprovinces = { 366 365 370 367 369 371 368 375 376 374 377 372 373 383 381 363 364 360 } 
 	ownedprovinces = { 366 365 367 369 371 368 375 376 374 377 372 373 383 381 } 
 	controlledprovinces = { 366 365 367 369 371 368 375 376 374 377 372 373 383 381 } 
 	
