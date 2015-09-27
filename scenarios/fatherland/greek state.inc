@@ -122,18 +122,18 @@ inventions = { 3000027 }
 
 	   # Greek State Army
    landunit = 
-   {  id       = {  type = 20600 id = 1  } 
+   {  id       = {  type = 20601 id = 1  } 
      name     = "Vasilikos Ellinikou Stratou" 
      location = 377 
 	Division = 
-   {  id       = {  type = 20600 id = 2  } 
+   {  id       = {  type = 20601 id = 2  } 
        name     = "Vasilikos tmíma omada" 
        strength     = 50
        type     = hq
 	   model = 4
       } 
 	Division = 
-   {  id       = {  type = 20600 id = 3 } 
+   {  id       = {  type = 20601 id = 3 } 
        name     = "1.Vasilikos tmíma diairesi" 
        strength     = 50
        type     = bergsjaeger
@@ -143,11 +143,11 @@ inventions = { 3000027 }
     } 
 	
    landunit = 
-   {  id       = {  type = 20600 id = 4 } 
+   {  id       = {  type = 20601 id = 4 } 
      name     = "2. Vasilikos Ellinikou Stratou" 
      location = 366 
 	Division = 
-   {  id       = {  type = 20600 id = 5 } 
+   {  id       = {  type = 20601 id = 5 } 
        name     = "2. Vasilikos tmíma diairesi" 
        strength     = 50
        type     = infantry
@@ -155,7 +155,7 @@ inventions = { 3000027 }
 	   extra = artillery
       } 
 	  Division =
-	{  id       = {  type = 20600 id = 6 } 
+	{  id       = {  type = 20601 id = 6 } 
        name     = "3. Vasilikos tmíma diairesi" 
        strength     = 50
        type     = infantry
