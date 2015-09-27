@@ -116,8 +116,8 @@ inventions = { 3000027 }
      free_market       = 4 
      freedom           = 3 
      professional_army = 6 
-     defense_lobby     = 7 
-     interventionism   = 8 
+     defense_lobby     = 5
+     interventionism   = 4
     } 
 
 	   # Greek State Army
