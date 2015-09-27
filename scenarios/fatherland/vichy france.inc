@@ -10,7 +10,7 @@
  country = 
  {  tag                    = FRA 
 ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
-    flag_ext               = _Vic
+
     name                   = FRA_1
     ai                     = "FRA_1948.ai"
    capital                = 55 # Paris
