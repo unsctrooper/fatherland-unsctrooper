@@ -1555,10 +1555,10 @@
 		}
 		division = {
 			id = { type = 30304 id = 505 }
-			name = "30th Mtn. Infantry Division"
+			name = "31st Mtn. Infantry Division"
 			strength = 100
-			type = infantry
-			model = 10
+			type = bergsjaeger
+			model = 8
 			extra = artillery
 			brigade_model = 11
 		}
