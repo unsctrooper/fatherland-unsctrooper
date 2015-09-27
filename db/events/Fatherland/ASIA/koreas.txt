@@ -35,35 +35,35 @@ event = {
 	}
 }
 
-event = {
-	id = 8200001
-	random = no
-	country = KOR
+#event = {
+#	id = 8200001
+#	random = no
+#	country = KOR
 	
-	trigger = {
-		exists = KOR
-	}
+#	trigger = {
+#		exists = KOR
+#	}
 	
-	name = "Creation of the South Korea Army"
-	desc = "Creation of the South Korea Army"
-	style = 2
-	picture = "news_paper"
+#	name = "Creation of the South Korea Army"
+#	desc = "Creation of the South Korea Army"
+#	style = 2
+#	picture = "news_paper"
+#
+#	date = { day = 1 month = january year = 1948 }
+#	offset = 25
+#	deathdate = { day = 30 month = december year = 1963 }
 
-	date = { day = 1 month = january year = 1948 }
-	offset = 25
-	deathdate = { day = 30 month = december year = 1963 }
-
-	action = {
-	name = "Create the Army"
-	command = { type = add_corps which = "1st Korean Army" value = land where = 1228 }
-	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 11 }
-	command = { type = add_division which = "4th Rifle Division" value = infantry when = 11 }
-	command = { type = add_division which = "5th Rifle Division" value = infantry when = 11 }
-	command = { type = add_corps which = "2nd Korean Army" value = land where = 1232 }
-	command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
-	command = { type = add_division which = "6th Rifle Division" value = infantry when = 10 }
-	command = { type = add_division which = "7th Rifle Division" value = infantry when = 10 }
-	}
-}
+#	action = {
+#	name = "Create the Army"
+#	command = { type = add_corps which = "1st Korean Army" value = land where = 1228 }
+#	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+#	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+#	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 11 }
+#	command = { type = add_division which = "4th Rifle Division" value = infantry when = 11 }
+#	command = { type = add_division which = "5th Rifle Division" value = infantry when = 11 }
+#	command = { type = add_corps which = "2nd Korean Army" value = land where = 1232 }
+#	command = { type = add_division which = "1st Cavalry Division" value = cavalry when = 10 }
+#	command = { type = add_division which = "6th Rifle Division" value = infantry when = 10 }
+#	command = { type = add_division which = "7th Rifle Division" value = infantry when = 10 }
+#	}
+#}

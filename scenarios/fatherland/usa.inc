@@ -206,10 +206,6 @@
   1783
   #Attu Island
   2174
-  #South Korea 
-  1228 1229 1233 1232 1231 1230 
-  # North Korea
-  1224 1226 1227 1225 1222 1223 1221
   #Trust Territory of the Pacific Islands
   1665 1666 1667 1668 1669 1670 1671 1672 1674 1675 1676 1677 1681 1684 1685 1686 
   #Okinawa
@@ -242,10 +238,6 @@
   1783
   #Attu Island
   2174
-  #South Korea 
-  1228 1229 1233 1232 1231 1230  
-  # North Korea
-  1224 1226 1227 1225 1222 1223 1221
   #Trust Territory of the Pacific Islands
   1665 1666 1667 1668 1669 1670 1671 1672 1674 1675 1676 1677 1681 1684 1685 1686 
   #Okinawa
