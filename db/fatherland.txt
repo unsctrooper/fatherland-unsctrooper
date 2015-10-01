@@ -38,6 +38,7 @@ event = "db\events\fatherland\americas\paraguay.txt"
 event = "db\events\fatherland\americas\peru.txt"
 event = "db\events\fatherland\americas\uruguay.txt"
 event = "db\events\fatherland\americas\venezuela.txt"
+event = "db\events\fatherland\americas\usa.txt"
 
 # ASIA
 event = "db\events\fatherland\asia\brunei.txt"
