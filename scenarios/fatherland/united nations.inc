@@ -245,7 +245,8 @@ landdivision = {
 			type = armor
 			model = 4
 			experience = 35
-			extra = engineer		
+			extra = engineer	
+			brigade_model1 = 5			
 			}
 		
 landdivision = {
@@ -257,7 +258,7 @@ landdivision = {
 			model = 3
 			experience = 35
 			extra = engineer
-			extra2 = tank_destroyer
+			brigade_model1 = 5
 		}
 
 	 
