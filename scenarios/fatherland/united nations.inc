@@ -185,6 +185,7 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
      relation = { tag = USA value = 150  } 
      relation = { tag = GER value = -150  } 
      relation = { tag = AXI value = -150  } 
+	 relation = { tag = SOV value = 50 access = yes } 
     } 
    SpyInfo                = {  country = "ALS" NumberOfSpies = 1  } 
    #headofstate            = {  type = 9 id = 199101  } 
@@ -231,5 +232,34 @@ landunit = {
        strength = 80 
       }
 	  }
+	 
+#############################
+# UN Command for Central Asia
+#############################
+
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17346 id = 60 } 
+		name = "1. UN Command Central Asia Brigade"
+			type = armor
+			model = 4
+			experience = 35
+			extra = engineer		
+			}
+		
+landdivision = {
+ 		dormant = yes
+
+	     id = { type = 17346 id = 61 } 
+		name = "2. UN Command Central Asia Brigade"
+			type = motorized
+			model = 3
+			experience = 35
+			extra = engineer
+			extra2 = tank_destroyer
+		}
+
+	 
 	 
 }
