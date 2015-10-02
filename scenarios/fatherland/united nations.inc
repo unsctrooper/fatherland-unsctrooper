@@ -257,8 +257,7 @@ landdivision = {
 			type = motorized
 			model = 3
 			experience = 35
-			extra = engineer
-			brigade_model1 = 5
+			extra = sp_artillery
 		}
 
 	 
