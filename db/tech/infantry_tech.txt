@@ -3870,7 +3870,7 @@ technology =
     # Semimodern Gun Repair
     component = { id = 199194 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
     # Basic Computing Machine Support
-    component = { id = 199195 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
+    component = { id = 199195 name = TECH_CMP_INFANTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
     required = { 199170 199180 }
     effects =
     { command = { type = repair_mod value = 60 }

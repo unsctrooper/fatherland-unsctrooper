@@ -914,6 +914,10 @@ event = {
 	picture = "elections"
 	style = 1
 	
+	date = { day = 0 month = january year = 1953 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1954 }
+	
 	trigger = {
 		local_flag = SAFLIMITED
 		event = { id = 8012625 days = 30  }

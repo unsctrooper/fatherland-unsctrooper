@@ -118,7 +118,7 @@ country = {
 		relation = { tag = UPE value = 50 } # Turkestan		
 		
 		# Axis GER SLO ITA BUL CRO FIN MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM SER BLR U58
-		relation = { tag = AXI value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = AXI value = 200 access = yes }
 		relation = { tag = ITA value = 180 guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = CRO value = 120 access = yes guaranteed = { day = 1 month = january year = 1948 } }
 		relation = { tag = HUN value = 180 }

@@ -12,6 +12,13 @@
 # 8014253 - Integration of Sinkiang SSR
 # 8014254 - SIK - Shenq Quai
 # 8014255 - SIK - Turkestani State
+# 8014306 - SOV - The warehouses inspection
+# 8014307 - SOV - the german's left equipment
+# 8014308 - CHC - the soviet give us the captured german equipment
+# 8014309 - SOV - The fate of the turkmen army
+# 8014310 - SOV - The incorporation of the turkmen army
+# 8014311 - SOV - what to do with Turkmen militia
+# 8014312 - SOV - the fate of eastern turkestan military
 
 # ###################################
 # ## Round I - Turkestan Troubles ###
@@ -140,6 +147,7 @@ event = {
         name = "EVT_8014303_NAME"
         desc = "EVT_8014303_DESC"
         style = 2
+        picture = "east_turkestan"
 
       trigger = {
                event = 8014302
@@ -160,14 +168,14 @@ action = {
         name = "EVT_8014303B"
         command = { type = event which = 8014304 }
         command = { type = setflag which = SIK_surrender }
-        ai_chance = 20
+        ai_chance = 60
      }
 
 action = {
         trigger = { flag = SIK_puppet }
         name = "EVT_8014303C"
         command = { type = setflag which = puppet_SIK }
-        ai_chance = 60
+        ai_chance = 70
      }
 
 action = {
@@ -186,6 +194,7 @@ event = {
         name = "EVT_8014304_NAME"
         desc = "EVT_8014304_DESC"
         style = 2
+        picture = "east_turkestan"
 
     trigger = {
             event = 8014303
@@ -217,12 +226,13 @@ action = {
         command = { type = clrflag which = puppet_SIK }
         command = { type = clrflag which = east_turkestan_wants_to_negotiate }
         command = { type = clrflag which = SIK_puppet }
+        ai_chance = 50
       }
 
 action = {
      trigger = { flag = puppet_SIK } 
 	name = "8014252D" # Contain Turkestani Elements
-	ai_chance = 5
+	ai_chance = 50
 	command = { type = dissent value = -1 }
 	command = { type = independence which = SIK value = 1 }  
 	command = { type = make_puppet which = SIK }
@@ -265,7 +275,7 @@ event = { # Fate of Turkestan
 
 	action = { # Install a soviet administration
 		name = "8014251B"
-                ai_chance = 70
+                ai_chance = 75
                 command = { type = dissent value = 15 }
                 command = { type = manpowerpool value = -100 } 
 		command = { type = peacetime_ic_mod value = -5 }
@@ -308,7 +318,7 @@ event = { # Fate of Turkestan
 	}
 	action = { # keep local administration
 		name = "8014251A" 
-		ai_chance = 30
+		ai_chance = 25
                 command = { type = dissent value = -5 }
                 command = { type = research_mod value = 10 }
                 command = { type = tc_mod value = 10 }
@@ -361,6 +371,7 @@ event = {
         name = "EVT_8014305_NAME"
         desc = "EVT_8014305_DESC"
         style = 2
+        picture = "new_soviet_administration"
 
      trigger = {
              flag = soviet_admin_turkestan
@@ -386,6 +397,8 @@ action = {
 		command = { type = max_organization which = land value = 5 }
 		command = { type = ground_def_eff value = 0.75 }
                 command = { type = clrflag which = soviet_admin_turkestan }
+                command = { type = event which = 8014307 where = SOV when = 2 }
+                command = { type = event which = 8014309 where = SOV when = 4 }
         }
 }
 
@@ -393,8 +406,9 @@ action = {
 
 
 
+############### Fate of East Turkestan
+event = { 
 
-event = { # Fate of East Turkestan
 	id = 8014252 
 	random = no
 	country = SOV
@@ -418,12 +432,12 @@ event = { # Fate of East Turkestan
 	
 action = { 
 	name = "8014252A" # Integrate as Sinkiang SSR
-	ai_chance = 50
-	command = { type = dissent value = 3 }
+	ai_chance = 60
+	command = { type = dissent value = 10 }
 	command = { type = local_setflag which = SIKSSR } 
 	command = { type = relation which = CHI value = -50 }	
 	command = { type = relation which = CHC value = -50 }	
-	
+	command = { type = manpowerpool value = -20 }
 	command = { type = addclaim which = 1273 }
 	command = { type = addclaim which = 1274 }
 	command = { type = addclaim which = 1275 }
@@ -437,8 +451,18 @@ action = {
 }
 action = { 
 	name = "8014252B" # Reinstall Shenq Qai
-	ai_chance = 35
+	ai_chance = 25
 	command = { type = dissent value = -3 }
+	command = { type = removeclaim which = 1273 }
+	command = { type = removeclaim which = 1274 }
+	command = { type = removeclaim which = 1275 }
+	command = { type = removeclaim which = 1276 }
+	command = { type = removeclaim which = 1277 }
+	command = { type = removeclaim which = 1278 }
+	command = { type = removeclaim which = 1279 }
+	command = { type = removeclaim which = 1280 }
+	command = { type = removeclaim which = 1281 }
+	command = { type = removeclaim which = 1282 }
 	command = { type = independence which = SIK value = 1 } 
 	command = { type = make_puppet which = SIK }
 	command = { type = relation which = CHI value = -25 }	
@@ -448,7 +472,17 @@ action = {
 action = { 
 	name = "8014252C" # Return to China after Civil War
 	ai_chance = 10
-	command = { type = dissent value = 1 }
+	command = { type = dissent value = 5 }
+	command = { type = removeclaim which = 1273 }
+	command = { type = removeclaim which = 1274 }
+	command = { type = removeclaim which = 1275 }
+	command = { type = removeclaim which = 1276 }
+	command = { type = removeclaim which = 1277 }
+	command = { type = removeclaim which = 1278 }
+	command = { type = removeclaim which = 1279 }
+	command = { type = removeclaim which = 1280 }
+	command = { type = removeclaim which = 1281 }
+	command = { type = removeclaim which = 1282 }
 	command = { type = local_setflag which = SovietReturnsSik } 
 	command = { type = relation which = CHI value = 50 }	
 	command = { type = relation which = CHC value = 50 }
@@ -456,7 +490,17 @@ action = {
 action = { 
 	name = "8014252D" # Contain Turkestani Elements
 	ai_chance = 5
-	command = { type = dissent value = -1 }
+	command = { type = dissent value = -5 }
+	command = { type = removeclaim which = 1273 }
+	command = { type = removeclaim which = 1274 }
+	command = { type = removeclaim which = 1275 }
+	command = { type = removeclaim which = 1276 }
+	command = { type = removeclaim which = 1277 }
+	command = { type = removeclaim which = 1278 }
+	command = { type = removeclaim which = 1279 }
+	command = { type = removeclaim which = 1280 }
+	command = { type = removeclaim which = 1281 }
+	command = { type = removeclaim which = 1282 }	
 	command = { type = independence which = SIK value = 1 }  
 	command = { type = make_puppet which = SIK }
 	command = { type = relation which = CHI value = -50 }	
@@ -465,7 +509,8 @@ action = {
 }	
 }
 
-event = { # Integration of Sinkiang SSR
+################" Integration of Sinkiang SSR
+event = { 
 	id = 8014253 
 	random = no
 	country = SOV
@@ -477,28 +522,37 @@ event = { # Integration of Sinkiang SSR
 	
     trigger = {
 	event = { id = 8014252 days = 180 } 
+        NOT = { exists = SIK }
 	}
 	
-    date = { day = 1 month = january year = 1948 }
+        date = { day = 1 month = january year = 1948 }
 	offset = 1
 	deathdate = { day = 30 month = december year = 1963 }
 	
 action = { 
 name = "Okay!" 
-command = { type = addcore which = 1273 }
-command = { type = addcore which = 1274 }
-command = { type = addcore which = 1275 }
-command = { type = addcore which = 1276 }
-command = { type = addcore which = 1277 }
-command = { type = addcore which = 1278 }
-command = { type = addcore which = 1279 }
-command = { type = addcore which = 1280 }
-command = { type = addcore which = 1281 }
-command = { type = addcore which = 1282 }
-}
+                command = { type = research_mod value = 5 }
+                command = { type = tc_mod value = 10 }
+                command = { type = dissent value = -10 }
+                command = { type = manpowerpool value = 50 } 
+				command = { type = peacetime_ic_mod value = 2 }
+                command = { type = addcore which = 1273 }
+                command = { type = addcore which = 1274 }
+                command = { type = addcore which = 1275 }
+                command = { type = addcore which = 1276 }
+                command = { type = addcore which = 1277 }
+                command = { type = addcore which = 1278 }
+                command = { type = addcore which = 1279 }
+                command = { type = addcore which = 1280 }
+                command = { type = addcore which = 1281 }
+                command = { type = addcore which = 1282 }
+                command = { type = event which = 8014312 where = SOV when = 1}
+        }
 }
 
-event = { # Shenq Quai
+
+################## Shenq Quai
+event = { 
 	id = 8014254 
 	random = no
 	country = SIK
@@ -510,15 +564,17 @@ event = { # Shenq Quai
 	
 action = { 
 name = "Okay!" 
-command = { type = headofstate which = 420024 }  
-command = { type = headofgovernment which = 420025 }  
-command = { type = add_division value = militia when = 1 }
-command = { type = add_division value = militia when = 1 }
-command = { type = add_division value = militia when = 1 }
-}
+            command = { type = headofstate which = 420024 }  
+            command = { type = headofgovernment which = 420025 }  
+            command = { type = add_division value = militia when = 1 }
+            command = { type = add_division value = militia when = 1 }
+            command = { type = add_division value = militia when = 1 }
+       }
 }
 
-event = { # Turkestani State
+
+#################### Turkestani State
+event = { 
 	id = 8014255 
 	random = no
 	country = SIK
@@ -544,3 +600,369 @@ command = { type = add_division value = cavalry when = 1 }
 command = { type = add_division value = cavalry when = 1 }
 }
 }
+
+
+############################The warehouses inspection
+event = {
+     id = 8014306
+     random = no
+     country = SOV
+     name = "The Warehouses Inspection"
+     desc = "EVT_8014306_DESC"
+     style = 2
+     picture = "warehouse"
+
+     trigger = {
+
+              atwar = no
+              day = 14
+              month = 6
+              year = 1948
+           }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "let's empty these warehouses!!"
+command = { type = manpowerpool value = -270 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = infantry when = 10 }
+command = { type = add_division value = mechanized when = 0 }
+command = { type = add_division value = mechanized when = 0 }
+command = { type = add_division value = mechanized when = 0 }
+command = { type = add_division value = motorized when = 1 }
+command = { type = add_division value = motorized when = 1 }
+command = { type = add_division value = motorized when = 1 }
+command = { type = add_division value = motorized when = 1 }
+command = { type = add_division value = motorized when = 1 }
+command = { type = add_division value = light_armor when = 2 }
+command = { type = add_division value = light_armor when = 2 }
+command = { type = add_division value = armor when = 0 }
+command = { type = add_division value = interceptor when = 8 }
+command = { type = add_division value = interceptor when = 8 }
+command = { type = add_division value = interceptor when = 8 }
+command = { type = add_division value = interceptor when = 8 }
+command = { type = add_division value = multi_role when = 6 }
+command = { type = add_division value = multi_role when = 6 }
+command = { type = add_division value = multi_role when = 6 }
+command = { type = add_division value = tactical_bomber when = 6 }
+command = { type = add_division value = tactical_bomber when = 6 }
+command = { type = add_division value = tactical_bomber when = 6 }
+command = { type = add_division value = transport_plane when = 2 }
+command = { type = add_division value = transport_plane when = 2 }
+command = { type = add_division value = strategic_bomber when = 4 }
+
+          }
+
+}
+
+
+
+#########################The german's left equipement
+event = {
+      id = 8014307
+      random = no
+      country = SOV
+      name = "The german's left equipment"
+      desc = "EVT_8014307_DESC"
+      style = 2
+      picture = "german_equipment"
+
+     trigger = {
+              event = 8014305
+
+           }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "Let's outfit some divisions"
+command = { type = manpowerpool value = -40 }
+command = { type = add_division value = bergsjaeger when = 12 }
+command = { type = add_division value = hq when = 3 }
+command = { type = add_division value = mechanized when = 1 }
+command = { type = add_division value = mechanized when = 1 }
+ai_chance = 65
+        }
+
+action = {
+name = "give these to our fellow communists"
+command = { type = relation which = CHC value = 60 }
+command = { type = event which = 804308 where = CHC when = 1 }
+ai_chance = 35
+        }
+
+}
+
+
+#########################The soviets give us captured german equipment
+event = { 
+        id = 8014308
+        random = no
+        country = CHC
+        name = "The Soviets give us captured german equipment"
+        desc = "The soviets decided to give us the captured german equipment in their war against Tukestan instead of using it themselves, it will certainly be of use against the nationalists."
+        style = 2
+        picture = "german_equipment"
+
+        trigger = {
+                 event = 8014307
+               }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "Let's outfit some divisions"
+command = { type = manpowerpool value = -40 }
+command = { type = add_division value = bergsjaeger when = 12 }
+command = { type = add_division value = hq when = 3 }
+command = { type = add_division value = mechanized when = 1 }
+command = { type = add_division value = mechanized when = 1 }
+
+          }
+
+}
+
+
+
+###########################The fate of the Turkmen army
+event = {
+        id = 8014309
+        random = no
+        country = SOV
+        name = "The fate of the Turkmen army"
+        desc = "EVT_8014309_DESC"
+        style = 2
+        picture = "turkestan_army"
+
+        trigger = { 
+                  event = 8014305
+            
+              }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "Incorporate what we can into our ranks"
+command = { type = event which = 8014310 where = SOV when = 2 }
+ai_chance = 45
+
+         }
+
+action = { 
+name = "We don't need them, send them home"
+command = { type = dissent value = -5 }
+command = { type = manpowerpool value = 160 }
+ai_chance = 35
+
+          }
+
+action = {
+name = "They are nonetheless traitor to the Soviet Union!!To the goulags!"
+command = { type = dissent value = 15 }
+command = { type = tc_mod value = 3 }
+command = { type = peacetime_ic_mod value = 3 }
+command = { type = province_revoltrisk which = 1101 value = 25 }#all core province of turkestan
+command = { type = province_revoltrisk which = 1102 value = 25 }
+command = { type = province_revoltrisk which = 1100 value = 25 }
+command = { type = province_revoltrisk which = 1099 value = 25 }
+command = { type = province_revoltrisk which = 1106 value = 25 }
+command = { type = province_revoltrisk which = 1097 value = 25 }
+command = { type = province_revoltrisk which = 1098 value = 25 }
+command = { type = province_revoltrisk which = 1105 value = 25 }
+command = { type = province_revoltrisk which = 1103 value = 25 }
+command = { type = province_revoltrisk which = 1104 value = 25 }
+command = { type = province_revoltrisk which = 1107 value = 25 }
+ai_chance = 20
+
+         }
+}
+
+
+###########################The incorporation of the turkmen army
+event = {
+       id = 8014310
+       random = no
+       country = SOV
+       one_action = yes
+       name = "The incorporation of the turkmen army"
+       desc = "Since we decided to incorporate them in he Red army, with desertion and the losses of the war, plus maybe some the anti-soviet sentiment, there's still to see how many will join us."
+       style = 2
+       picture = "turkestan_army"
+
+      trigger = {
+                event = 8014309
+
+               }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "most of them join our glorious Red Army"
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = cavalry when = 10 }
+command = { type = add_division which = cavalry when = 10 }
+command = { type = event which = 8014311 where = SOV when = 1}
+ai_chance = 35
+           }
+
+action = {
+name = "Some of them join us"
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = cavalry when = 10 }
+command = { type = event which = 8014311 where = SOV when = 1 }
+ai_chance = 50
+          }
+
+action = {
+name = "Few of them join our ranks"
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = infantry when = 10 }
+command = { type = add_division which = cavalry when = 10 }
+command = { type = event which = 8014311 where = SOV when = 1 }
+ai_chance = 15
+         }
+
+}
+
+
+##########################What to do with turkmen militia
+event = {
+        id = 8014311
+        random = no
+        country = SOV
+        name = "What to do with Turkmen militiamen?"
+        desc = "The fact that we chose to enlist the turkmens into our army bring the question of militiamen. We can incorporate them or send them home to appease the tension with turkmen people."
+        style = 2
+        picture = "militia"
+
+        trigger = { 
+                event = 8014310
+
+                }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "incorporate them"
+command = { type = add_division which = militia when = 5 }
+command = { type = add_division which = militia when = 5 }
+command = { type = add_division which = militia when = 5 }
+command = { type = add_division which = militia when = 5 }
+command = { type = add_division which = militia when = 5 }
+command = { type = add_division which = militia when = 5 }
+command = { type = dissent value = 10 }
+ai_chance = 50
+         }
+
+action = {
+name = "Send them home"
+command = { type = dissent value = -5 }
+command = { type = manpowerpool value = 45 }
+ai_chance = 50
+        }
+
+}
+
+
+###############################The fate of Eastern Turkestan's military
+event = { 
+         id = 8014312
+         random = no
+         country = SOV
+         name = "The fate of Eastern Turkestan's military"
+         desc = "EVT_8014312_DESC"
+         style = 2
+         picture = "sinkiang_army"
+
+         trigger = {
+                  event = 8014253
+
+                 }
+
+       date = { day = 1 month = january year = 1948 }
+       offset = 1
+       deathdate = { day = 29 month = december year = 1951 }
+
+action = {
+name = "Recall only the professionnal part"
+command = { type = manpowerpool value = 35 }
+command = { type = add_division which = infantry when = 7 }
+command = { type = add_division which = infantry when = 7 }
+command = { type = add_division which = cavalry when = 7 }
+command = { type = dissent value = -2 }
+ai_chance = 55
+         }
+
+action = {
+name = "recall everyone"
+command = { type = add_division which = infantry when = 7 }
+command = { type = add_division which = infantry when = 7 }
+command = { type = add_division which = cavalry when = 7 }
+command = { type = add_division which = militia when = 4 }
+command = { type = add_division which = militia when = 4 }
+command = { type = add_division which = militia when = 4 }
+command = { type = dissent value = 10 }
+ai_chance = 25
+         }
+
+action = { 
+name = "we do not need these men"
+command = { type = manpowerpool value = 75 }
+command = { type = dissent value = -5 }
+ai_chance = 10
+         }
+
+action = {
+name = "they helped the traitors, to the goulags!!"
+command = { type = dissent value = 7 }
+command = { type = tc_mod value = 2 }
+command = { type = peacetime_ic_mod value = 2 }
+command = { type = province_revoltrisk which = 1273 value = 20 }
+command = { type = province_revoltrisk which = 1276 value = 20 }
+command = { type = province_revoltrisk which = 1280 value = 20 }
+command = { type = province_revoltrisk which = 1281 value = 20 }
+command = { type = province_revoltrisk which = 1277 value = 20 }
+command = { type = province_revoltrisk which = 1275 value = 20 }
+command = { type = province_revoltrisk which = 1282 value = 20 }
+command = { type = province_revoltrisk which = 1279 value = 20 }
+command = { type = province_revoltrisk which = 1274 value = 20 }
+}
+
+}
+
+
+

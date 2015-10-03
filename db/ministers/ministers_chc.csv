@@ -10,7 +10,7 @@ CHC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 260807;Chief of Army;Ye Ting;1927;1938;1947;LWR;Decisive Battle Doctrine;Medium;9220;X
 260808;Chief of Air Force;Ye Ting;1927;1938;1947;LWR;Carpet Bombing Doctrine;Medium;9220;X
 260809;Head of Military Intelligence;Deng Xiaoping;1924;1989;1994;LWR;Industrial Specialist;High;2338;X
-260810;Head of State;Deng Xiaoping;1924;1993;1994;LWR;Mixed economy;High;2338;X
+260810;Head of State;Deng Xiaoping;1924;1993;1994;LWR;Die-hard Reformer;High;2338;X
 260811;Minister of Armament;Deng Xiaoping;1924;1989;1994;LWR;Mixed economy;High;2338;X
 260812;Chief of Staff;Deng Xiaoping;1924;1969;1970;LWR;school of manoeuvre;High;2338;X
 260813;Chief of Army;Deng Xiaoping;1924;1969;1970;LWR;Doctrine of autonomy;High;2338;X
@@ -48,8 +48,8 @@ CHC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 260845;Head of Military Intelligence;Otto Braun;1932;1935;1940;ST;Dismal Enigma;Medium;9225;X
 260846;Chief of Staff;Otto Braun;1932;1935;1940;ST;School of Psychology;Medium;9225;X
 260847;Chief of Army;Otto Braun;1932;1935;1940;ST;Decisive Battle Doctrine;Medium;9225;X
-260848;Head of State;Mao Zedong;1921;1977;1977;ST;man of the people;Undying;2334;X
-260849;Head of Government;Mao Zedong;1921;1977;1977;ST;old general;Undying;2334;X
+260848;Head of State;Mao Zedong;1921;1977;1977;ST;Autocratic Charmer;Undying;2334;X
+260849;Head of Government;Mao Zedong;1921;1977;1977;ST;Political Protege;Undying;2334;X
 260850;Minister of Security;Mao Zedong;1921;1958;1958;ST;man of the people;Undying;2334;X
 260851;Chief of Army;Mao Zedong;1921;1958;1958;ST;old general;Undying;2334;X
 260852;Minister of Security;Li Lisan;1927;1931;1964;ST;Prince of Terror;Medium;8622;X
