@@ -1,3 +1,20 @@
+#############################################
+### USA Cold War interventions and events
+###										  
+### UN Intervention against Turkestan	
+###  
+### 999500 Turkestani Revolt - UN Response USA
+### 999501 UN Command Session - Turkestani Crisis USA
+### 999503 Deploy the UN Command for Central Asia - ALS (UN)
+### 999504 Control of the UN Command for Central Asia SOV
+### 999505 Relinquishing control of the UN Command SOV
+### 999506 The United Nations sends aid SOV
+### 999507 The United Nations sends aid + control the Red Army SOV
+### 999508 US control of the Soviet army USA
+### 999508 Disband the UN-Soviet alliance ALS (UN)
+
+
+
 event = {
 	id = 999440
 	random = no
@@ -72,4 +89,305 @@ event = {
 		command = { type = construct which = infrastructure where = 2140 value = 10 }
 		command = { type = construct which = infrastructure where = 2142 value = 10 }
 	}
+}
+
+###########################################
+### UN Intervention against Turkestan	###
+###########################################
+
+### Turkestani Revolt - UN Response
+
+event = {
+id = 999500
+random = no
+country = USA
+
+trigger = { 
+war = { country = AXI country = SOV } 
+war = { country = UPE country = SOV } 
+}
+
+name = "EVT_999500_NAME"
+desc = "EVT_999500_DESC"
+style = 2
+picture = "0turkestan0"
+date = { day = 1 month = january year = 1948 } 
+offset = 5
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 90
+name = "Convene the UN Command Council."
+command = { type = trigger which = 999501 }
+command = { type = domestic which = interventionism value = 1 }
+}
+
+action = {
+ai_chance = 10
+name = "The Turkestani revolt is none of the UN's business."
+command = { type = dissent value = 5 }
+command = { type = relation which = SOV value = -10 }
+command = { type = domestic which = interventionism value = -1 }
+}
+}
+
+### UN Command Session - Turkestani Crisis
+
+event = {
+id = 999501
+random = no
+country = USA
+
+name = "EVT_999501_NAME"
+desc = "EVT_999501_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+ai_chance = 90
+name = "Assemble the UN Expeditionary Command for Central Asia."
+command = { type = trigger which = 999503 }
+command = { type = manpowerpool value = -25 }
+command = { type = supplies value = -500 }
+command = { type = oilpool value = -700 }
+command = { type = relation which = SOV value = 15 }
+command = { type = relation which = ALS value = 10 }
+command = { type = relation which = ENG value = 10 }
+command = { type = relation which = CAN value = 10 }
+command = { type = relation which = U01 value = 10 } # Free France
+command = { type = relation which = KOR value = 10 }
+}
+
+action = {
+ai_chance = 10
+name = "Provide material and supplies to the Soviet Union."
+command = { type = trigger which = 999506 }
+command = { type = supplies value = -500 }
+command = { type = oilpool value = -700 }
+command = { type = relation which = SOV value = 10 }
+command = { type = relation which = ALS value = 5 }
+command = { type = relation which = ENG value = 5 }
+command = { type = relation which = CAN value = 5 }
+command = { type = relation which = U01 value = 5 } # Free France
+command = { type = relation which = KOR value = 5 }
+}
+
+action = {
+name = "Provide supplies to the Soviets and control the Soviet army."
+command = { trigger = { ai = no } type = military_control which = USA where = SOV value = 1 }
+command = { trigger = { ai = no } type = trigger which = 999507 }
+command = { trigger = { ai = no } type = supplies value = -500 }
+command = { trigger = { ai = no } type = oilpool value = -700 }
+command = { trigger = { ai = no } type = relation which = SOV value = 10 }
+command = { trigger = { ai = no } type = relation which = ALS value = 5 }
+command = { trigger = { ai = no } type = relation which = ENG value = 5 }
+command = { trigger = { ai = no } type = relation which = CAN value = 5 }
+command = { trigger = { ai = no } type = relation which = U01 value = 5 } # Free France
+command = { trigger = { ai = no } type = relation which = KOR value = 5 }
+}
+}
+
+### Deploy the UN Command for Central Asia
+
+event = {
+id = 999503
+random = no
+country = ALS
+
+name = "EVT_999503_NAME"
+desc = "EVT_999503_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_corps which = "UN Command for Central Asia" value = land where = 1138 } # Omsk
+command = { type = activate_division which = 17346 value = 60 where = 1138 when = 0 }
+command = { type = activate_division which = 17346 value = 61 where = 1138 when = 0 }
+command = { type = alliance which = SOV }
+command = { type = manpowerpool value = 25 }
+command = { type = supplies value = 500 }
+command = { type = oilpool value = 700 }
+}
+}
+
+### Controlling the UN Central Asia Command (if SOV is human)
+
+event = {
+id = 999504
+random = no
+country = SOV
+
+trigger = {
+ai = no
+event = 999503 # Deploy the UN Command for Central Asia
+}
+
+name = "EVT_999504_NAME"
+desc = "EVT_999504_DESC"
+style = 1
+picture = "fatherland\un_troops"
+date = { day = 1 month = january year = 1948 } 
+offset = 5
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+name = "Take control of the UN force."
+command = { type = military_control which = SOV where = ALS value = 1 }
+command = { type = relation which = ALS value = 10 }
+}
+
+action = {
+name = "It is not needeed."
+command = { }
+}
+}
+
+### Relinquish control of the UN Command
+
+event = {
+id = 999505
+random = no
+country = SOV
+
+trigger = {
+event = 999504
+NOT = { war = { country = -1 country = UPE } }
+}
+
+name = "EVT_999505_NAME"
+desc = "EVT_999505_DESC"
+style = 1
+picture = "fatherland\un_troops"
+date = { day = 1 month = january year = 1948 } 
+offset = 3
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+name = "Relinquish control of the UN force."
+command = { type = military_control which = SOV where = ALS value = 0 } # Relinquish
+}
+}
+
+### The United Nations sends aid
+
+event = {
+id = 999506
+random = no
+country = SOV
+
+name = "EVT_999506_NAME"
+desc = "EVT_999506_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+ai_chance = 99
+name = "The aid is welcome."
+command = { type = supplies value = 500 }
+command = { type = oilpool value = 700 }
+command = { type = relation which = ALS value = 5 }
+command = { type = relation which = USA value = 5 }
+command = { type = relation which = ENG value = 5 }
+command = { type = relation which = CAN value = 5 }
+command = { type = relation which = U01 value = 5 }
+}
+
+action = {
+ai_chance = 1
+name = "We don't need it."
+command = { type = relation which = ALS value = -5 }
+command = { type = relation which = USA value = -5 }
+command = { type = relation which = ENG value = -5 }
+command = { type = relation which = CAN value = -5 }
+command = { type = relation which = U01 value = -5 }
+}
+}
+
+### The United Nations sends aid - USA controls SOV Army
+
+event = {
+id = 999507
+random = no
+country = SOV
+
+name = "EVT_999506_NAME"
+desc = "EVT_999506_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+ai_chance = 99
+name = "The aid is welcome."
+command = { type = supplies value = 500 }
+command = { type = oilpool value = 700 }
+command = { type = relation which = ALS value = 5 }
+command = { type = relation which = USA value = 5 }
+command = { type = relation which = ENG value = 5 }
+command = { type = relation which = CAN value = 5 }
+command = { type = relation which = U01 value = 5 }
+}
+
+action = {
+ai_chance = 1
+name = "We don't need it."
+command = { type = relation which = ALS value = -5 }
+command = { type = relation which = USA value = -5 }
+command = { type = relation which = ENG value = -5 }
+command = { type = relation which = CAN value = -5 }
+command = { type = relation which = U01 value = -5 }
+}
+}
+
+### Soviet-Turkestani War is over - relinquish military control (USA)
+
+event = {
+id = 999508
+random = no
+country = USA
+
+trigger = {
+military_control = { country = -1 country = SOV }
+NOT = { war = { country = SOV country = UPE } }
+}
+
+name = "EVT_999508_NAME"
+desc = "EVT_999508_DESC"
+style = 1
+picture = "fatherland\sovietarmy_color"
+date = { day = 1 month = january year = 1948 } 
+offset = 3
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+name = "Relinquish control of the Soviet army."
+command = { type = military_control which = USA where = SOV value = 0 } # Relinquish
+}
+}
+
+### Disbanding the UN-Soviet alliance
+
+event = {
+id = 999509
+random = no
+country = ALS
+
+trigger = {
+event = 999503
+NOT = { war = { country = SOV country = UPE } }
+alliance = { country = -1 country = SOV }	
+}
+
+name = "EVT_999509_NAME"
+desc = "EVT_999509_DESC"
+style = 1
+picture = "fatherland\sovietarmy_color"
+date = { day = 1 month = january year = 1948 } 
+offset = 3
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+name = "Leave UN-Soviet alliance."
+command = { type = leave_alliance }
+}
 }
