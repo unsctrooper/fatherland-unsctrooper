@@ -109,3 +109,38 @@ inventions = { 3000027 }
    peacetime_ic_mod = 0.6
    wartime_ic_mod = 0.7
   }
+  
+  	landunit = {
+		id = { type = 9023 id = 1 }
+		name = "I Burmese Corps"
+		location = 1415
+		division = {
+			id = { type = 9023 id = 2 }
+			name = "1st Division"
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 9023 id = 3 }
+			name = "2nd Division"
+			type = infantry
+			model = 11
+		}
+	}
+	landunit = {
+		id = { type = 9023 id = 4 }
+		name = "II Burmese Corps"
+		location = 1410
+		division = {
+			id = { type = 9023 id = 5 }
+			name = "3rd Division"
+			type = infantry
+			model = 11
+		}
+		division = {
+			id = { type = 9023 id = 6 }
+			name = "4th Division"
+			type = infantry
+			model = 11
+		}
+	}

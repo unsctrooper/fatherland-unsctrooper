@@ -11,6 +11,7 @@
  {  tag                    = BLR 
    name = "Belarussian Central Rada"
    puppet = U40
+   control = U40
 
    	free = { supplies = 10 } 
 

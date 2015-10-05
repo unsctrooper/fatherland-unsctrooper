@@ -40,10 +40,10 @@ rare_materials         = 5000
    SpyInfo                = {  country = "BUL" NumberOfSpies = 6  } 
   nationalprovinces      = {  318 323 325 324 321 320 319 326 364 317 331 307 370 322 
              #Macedonia and Greece 
-             365 366 333 328 363 
+             365 366 333 328 363 370
               } 
-   ownedprovinces         = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 } 
-   controlledprovinces    = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 }
+   ownedprovinces         = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 370 } 
+   controlledprovinces    = {  318 323 325 324 321 320 319 326 317 322 307 328 331 333 363 364 370 }
    claimedprovinces = { 331 334 } 
    
 	# Eastern Minor Tech '44.12 

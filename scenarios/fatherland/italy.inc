@@ -81,7 +81,7 @@ country = {
 		relation = { tag = TRA value = 50 }
 		relation = { tag = POR value = 65 }
 		relation = { tag = SPA value = 85 }
-		relation = { tag = SCH value = -25 guaranteed = { day = 01 month = january year = 1948 } }
+		relation = { tag = SCH value = -25 }
 		relation = { tag = FRA value = 50 }	
 		relation = { tag = SWE value = 50 }
 		

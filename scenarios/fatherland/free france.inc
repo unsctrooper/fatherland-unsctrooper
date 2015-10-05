@@ -25,7 +25,7 @@
    
   diplomacy =
   { relation = { tag = AST value = 150 }
-    relation = { tag = BEL value = 200 }
+    relation = { tag = BEL value = 200 access = yes }  
     relation = { tag = BHU value = 150 }
     relation = { tag = BUL value = -200 }
     relation = { tag = CAN value = 150 }

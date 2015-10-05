@@ -5,8 +5,8 @@
 switch = no # [yes/no] 
 ferocity = yes 
 max_front_ratio = 1.2  
-max_garrison_prop = 0.30 
-min_garrison_prop = 0.20 
+max_garrison_prop = 0.10 
+min_garrison_prop = 0.05 
 evac_islands = yes  
 use_offensive_supply = yes  
 neutrality = 95.0000  
@@ -16,7 +16,7 @@ upgrading = 1.0
 reinforcement = 1.0
 strat_redeploy_threshold = 25 
 exp_force_ratio = 0
-exp_force_ratios = { GER = 0.90 }  
+exp_force_ratios = { GER = 100 }  
 no_exp_forces_to = { } 
 
 ##################### 
@@ -353,43 +353,35 @@ trade = {
  } 
  garrison = { 
    defend_overseas_beaches = yes 
-   home_multiplier   = 1.0 
-   overseas_multiplier = 0.5 
-   home_peace_cap     = 20 
-   war_zone_odds     = 2.0 
+   home_multiplier   = 0.1
+   overseas_multiplier = 1.0
+   home_peace_cap     = 3 
+   war_zone_odds     = 1
    key_point_prio_mult  = 0 
    revolt_risk_mult  = 1.0 
   
    # PRIORITIES: 
-   beach      = 20  # Beach level 2 
-   capital      = 10  # Our capital 
+   beach      = 0  # Beach level 2 
+   capital      = 5  # Our capital 
    human_border  = 0    # Ignored for allied human players 
    war_target    = 80  # The next country targeted for attack by this AI 
     
-   opposing_alliance  = 1000  # For neutrals, all alliances are "opposing" 
+   opposing_alliance  = 100  # For neutrals, all alliances are "opposing" 
    claim_threat    = 0  # If we are neutral, countries with claims on us get this 
    unstable_border    = 100  # Bordering countries at war with someone else get this 
   
    # Borders with specific countries 
    country_priorities = { 
-    GER = 100
-	U40 = -1
-	U41 = -1
-	U42 = -1
-	U43 = -1
-	U44 = -1
-	U45 = -1
-	U46 = -1
-	U47 = -1
-	U48 = -1
-	U49 = -1
+	GER = 100
 	SOV = 100
    } 
-   province_priorities = { }  # 134 = 100 Stuttgart
+   province_priorities = { 
+	134 = 100
+	}  # 134 = 100 Stuttgart
    area_multiplier = { } 
  } 
  front = {  
-   recklessness     = 2 # 0-3 
+   recklessness     = 1 # 0-3 
    distrib_vs_ai     = offensive 
    distrib_vs_human   = reactive 
   

@@ -1,0 +1,54 @@
+event = {
+id = 750375
+random = no
+country = TRA
+style = 2
+persistent = yes
+
+trigger = {
+random = 20
+}
+
+date = { day = 1 month = january year = 1949 }
+offset = 90
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Russian peasants are rioting!"
+desc = "A small feud over land has escalated into a major riot between Russian peasants and the nearby Cossacks. The police has arrested leaders of these anti-Cossack riots and their lands has been confiscated."
+
+action_a = {
+	name = "They should go back to Russia where they belong!"
+	command = { type = dissent value = 1 }
+	command = { type = money value = -5 }
+}
+}
+
+##########
+
+#Peter Krasnov passes away
+
+event = {
+id = 750371
+random = no
+country = TRA
+style = 2
+
+trigger = {
+random = 50
+}
+
+date = { day = 9 month = november year = 1945 }
+offset = 50
+deathdate = { day = 10 month = november year = 1950 }
+
+name = "Pyotr Krasnov Passes Away"
+desc = "Pyotr Krasnov, hero of the cossack people, passed away in his dacha near Grozny."
+picture = "minister_died"
+
+action_a = {
+name = "Even heroes must die."
+command = { type = sleepminister which = 523001 }
+command = { type = sleepminister which = 523002 }
+command = { type = sleepteam which = 14707 }
+}
+}

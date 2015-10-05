@@ -113,6 +113,7 @@ event = "db\events\fatherland\ger\ukraine.txt"
 event = "db\events\fatherland\ger\domestic.txt"
 event = "db\events\fatherland\ger\Bailout.txt"
 event = "db\events\fatherland\ger\SS.txt"
+event = "db\events\fatherland\ger\cossacks.txt"
 event = "db\events\fatherland\ger\ger_influence.txt"
 
 # MIDDLE EAST

@@ -146,7 +146,7 @@ manpower               = 250
 landunit = {
  id = { type = 17345  id = 5 }
  name = "2. Ordu"
- location = 507
+ location = 1103
   	division = {
    	id = { type = 17345  id = 6 }
    	name = "4. Piyade Tümeni"

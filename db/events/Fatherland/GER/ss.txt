@@ -3,35 +3,36 @@
 # Review Pako
 #####################################
 
+# General events
+# 90002001 - The SS State - U58
+# 90002002 - A State inside a State - GER
+# 
+
+# Civil war events
 # 90002000 - Heydrich vs. Himmler - U58
 
-
-
-##################################################################################
-# L'Etat SS
-##################################################################################
 event = {
-
 		id = 90002001
-		date = { day = 0 month = january year = 1948 }	
-		offset = 7 
-		deathdate = { day = 1 month = february year = 1948 }
-		random = no
 		country = U58	
 		picture = "SS"
 		
-			name = "The SS State"
-			style = 0	
-			desc = "Description : TODO"
-		action_a = {
+		date = { day = 0 month = january year = 1948 }	
+		offset = 7 
+		deathdate = { day = 1 month = february year = 1948 }
+		
+		random = no
+		
+		name = "The SS State"
+		style = 0	
+		desc = "Description : TODO"
+		
+		action = {
+			ai_chance = 100
 			name = "Heil!"
 			command = { type = dissent value = -5 }
 		}
 	}
 	
-##################################################################################
-# Waffen-SS : Un Etat dans l'Etat
-##################################################################################
 event = {
 		id = 90002002
 		date = { day = 0 month = january year = 1949 }	
@@ -42,32 +43,73 @@ event = {
 		country = GER	
 		picture = "SS"
 
-			name = "A State inside a State"
-			style = 0	
-			desc = "Description : TODO"
-		action_a = {
-		name = "Two Millions of Reichsmark"
-		command = { type = money value = -200 }
+		name = "A State inside a State"
+		style = 0	
+		desc = "Description : TODO"
+		
+		action = {
+			ai_chance = 20
+			name = "No money"
+			command = { type = relation which = U58 value = -100 }
+		}	
+		
+		action = {
+			ai_chance = 20
+			name = "One Millions of Reichsmark"
+			command = { type = money value = -100 }
+			command = { type = relation which = U58 value = -80 }
 		}
 		
-		action_b = {
-		name = "Three Millions of Reichsmark"
-		command = { type = money value = -300 }
+		action = {
+			ai_chance = 20
+			name = "Two Millions of Reichsmark"
+			command = { type = money value = -200 }
+			command = { type = relation which = U58 value = -40 }
 		}
 		
-		action_c = {
-		name = "Four Millions of Reichsmark"
-	
-		command = { type = money value = -400 }
+		action = {
+			ai_chance = 20
+			name = "Three Millions of Reichsmark"
+			command = { type = money value = -300 }
+			command = { type = relation which = U58 value = -20 } 			
 		}
-		action_d = {
-		name = "Nein !"
 		
+		action = {
+			ai_chance = 20		
+			name = "Four Millions of Reichsmark"	
+			command = { type = money value = -400 }		
 		}		
+	
 	}
 
+event = {
+		id = 90002003
+		country = U58	
+		picture = "SS"
+		
+		date = { day = 0 month = january year = 1948 }	
+		offset = 7 
+		deathdate = { day = 1 month = february year = 1948 }
+		
+		random = no
+		
+		name = "Unlock Georgian Divisions"
+		style = 0	
+		desc = "Description : TODO"
+		
+		trigger = {
+			war = { country = U58  country = GEO }	
+		}
+		
+		action = {
+			ai_chance = 100
+			name = "Unlock Georgian Divisions!"
+			command = { type = unlock_division which = 14500 value = 11049 }		
+			command = { type = unlock_division which = 14500 value = 11051 }				
+		}
+	}	
 
-
+	
 event = { # trigger by 90000516 GER
 	id = 90002000
 	country = U58

@@ -61,6 +61,8 @@
  province = {  id = 713 points = 1  } # Baku !!!
  province = {  id = 1142 points = 1  } # Novosibirsk !!!
  province = {  id = 1103 points = 1  } # Tashkent !!!
+ province = {  id = 1099 points = 1  } # Samarkand !!!
+ province = {  id = 504 points = 1  } # Alma-Ata !!!
  province = {  id = 1151 points = 1  } # Sverdlosk !!!
  
  province = {  id = 262  points = 1  } #Kaunas 
