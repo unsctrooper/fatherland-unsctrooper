@@ -17,7 +17,7 @@
      oil                    = 90000   
      supplies               = 90000   
      money                  = 100   
-     manpower               = 1800
+     manpower               = 300
      transports             = 4325 
      escorts                = 1500 
      research_mod = 0.75
