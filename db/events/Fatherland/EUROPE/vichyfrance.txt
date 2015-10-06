@@ -78,7 +78,7 @@ event = {
 			name = "351A" #Admiral Darlan will return France to glory!
 			ai_chance = 40
 			
-			command = { type = end_non_aggression which = FRA where = GER } 
+			#command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = 50 }
 			
 			command = { type = headofstate which = 5394 }
@@ -109,7 +109,7 @@ event = {
 			name = "351B" #Pierre Laval will continue Petain's policies!
 			ai_chance = 30
 			
-			command = { type = end_non_aggression which = FRA where = GER } 
+			#command = { type = end_non_aggression which = FRA where = GER } 
 			
 			command = { type = headofstate which = 5393 }
 			command = { type = headofgovernment which = 5197 }
@@ -244,10 +244,11 @@ event = {
 	
 	action = {
 			name = "353A" #Send in the troops - Establish control!
-			ai_chance = 40
+			ai_chance = 60
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = dissent value = 5 }
 			command = { type = manpowerpool value = -10 }
-			command = { type = supplies value = -5000 } 
+			command = { type = supplies value = -1000 } 
 	        command = { type = make_puppet which = FRA }
 		    command = { type = sleepevent which = 354 }
 			command = { type = trigger which = 313 }
@@ -255,7 +256,8 @@ event = {
 	
 	action = {
 			name = "353B" #We don't have time for this
-			ai_chance = 60
+			ai_chance = 40
+			command = { type = end_non_aggression which = FRA where = GER } 
 	        command = { type = relation which = FRA value = -100 }
 	}
 }
@@ -282,7 +284,7 @@ event = {
 	action = {
 			name = "354A" #Admiral Darlan
 			ai_chance = 60
-		
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = -50 }
 			
 			command = { type = set_domestic which = democratic value = 4 }
@@ -307,7 +309,7 @@ event = {
 	action = {
 			name = "354B" #A new French Revolution - A new Republic!
 			ai_chance = 30
-			
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = -50 }
 			
 			command = { type = clrflag which = UltraVichy } 
@@ -341,6 +343,7 @@ event = {
 	
 	action = {
 			name = "355A" #We will defeat France - again!
+			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = dissent value = 5 }
 		    command = { type = war which = FRA }	
             command = { type = peacetime_ic_mod value = -10 }			
@@ -401,15 +404,19 @@ event = {
 		
 		command = { type = headofstate which = 5395 }
 	    command = { type = headofgovernment which = 5381 }	
+				
+		command = { type = removecore which = 87 }		
+		command = { type = removecore which = 91 }		
+		command = { type = removecore which = 94 }				
 		
-        command = { trigger = { war = { country = ITA country = FRA } } type = secedeprovince which = ITA value = 87 when = 0 } # Nice - France
-        command = { trigger = { war = { country = ITA country = FRA } } type = secedeprovince which = ITA value = 91 when = 0 } # Chambery - France
-        command = { trigger = { war = { country = ITA country = FRA } } type = secedeprovince which = ITA value = 94 when = 0 } # Corsica - France 		
+        command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = ITA value = 87 when = 0 } # Nice - France
+        command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = ITA value = 91 when = 0 } # Chambery - France
+        command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = ITA value = 94 when = 0 } # Corsica - France 		
         command = { trigger = { control = { province = 86 data = ITA } } type = secedeprovince which = ITA value = 86 when = 1 } # Toulon - France
         command = { trigger = { control = { province = 90 data = ITA } } type = secedeprovince which = ITA value = 90 when = 1 } # Grenoble - France 
 
-        command = { trigger = { war = { country = SPA country = FRA } } type = secedeprovince which = SPA value = 80 when = 0 } # Perpignan
-        command = { trigger = { war = { country = SPA country = FRA }  } type = secedeprovince which = SPA value = 83 when = 0 } # Pau
+        command = { trigger = { alliance = { country = SPA country = GER } } type = secedeprovince which = SPA value = 80 when = 0 } # Perpignan
+        command = { trigger = { alliance = { country = SPA country = GER }  } type = secedeprovince which = SPA value = 83 when = 0 } # Pau
         command = { trigger = { control = { province = 84 data = SPA } } type = secedeprovince which = SPA value = 84 when = 1 } # Agen
         command = { trigger = { control = { province = 67 data = SPA } } type = secedeprovince which = SPA value = 67 when = 1 } # Mont-de-Marsan
         command = { trigger = { control = { province = 68 data = SPA } } type = secedeprovince which = SPA value = 68 when = 1 } # Bordeaux		
