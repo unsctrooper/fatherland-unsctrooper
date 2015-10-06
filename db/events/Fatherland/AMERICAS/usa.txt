@@ -1,8 +1,8 @@
-#############################################
+#########################################
 ### USA Cold War interventions and events
-###										  
+######################################### 
 ### UN Intervention against Turkestan	
-###  
+###
 ### 999500 Turkestani Revolt - UN Response USA
 ### 999501 UN Command Session - Turkestani Crisis USA
 ### 999503 Deploy the UN Command for Central Asia - ALS (UN)
@@ -10,8 +10,22 @@
 ### 999505 Relinquishing control of the UN Command SOV
 ### 999506 The United Nations sends aid SOV
 ### 999507 The United Nations sends aid + control the Red Army SOV
-### 999508 US control of the Soviet army USA
-### 999508 Disband the UN-Soviet alliance ALS (UN)
+### 999508 Relinquish US control of the Soviet army USA
+### 999509 Disband the UN-Soviet alliance ALS (UN)
+###
+### The Reich-American Cold War, 1948
+### 1948: United Nations Command Council
+### 1. UN Command Council: Political Leaders
+### 2. UN Command Council: Military Leaders
+### 2. UN Command Council: Armament and Volunteers
+###
+### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture Plan
+### 
+### UN Liberty Shield: Europe
+### UN Liberty Shield: Far East Asia
+### UN Liberty Shield: Siberia and West Asia
+### UN Liberty Shield: Africa
+### UN Liberty Shield: South America
 
 
 
@@ -112,12 +126,12 @@ desc = "EVT_999500_DESC"
 style = 2
 picture = "0turkestan0"
 date = { day = 1 month = january year = 1948 } 
-offset = 5
+offset = 7
 deathdate = { day = 29 month = december year = 1990 }
 
 action = {
 ai_chance = 90
-name = "Convene the UN Command Council."
+name = "Convene the UN Command Session."
 command = { type = trigger which = 999501 }
 command = { type = domestic which = interventionism value = 1 }
 }
@@ -390,4 +404,102 @@ action = {
 name = "Leave UN-Soviet alliance."
 command = { type = leave_alliance }
 }
+}
+
+##############################################
+### The Reich-American Cold War (1948) 	   ###
+### Leads to Cold War buildup or isolation ###
+##############################################
+
+event = {
+id = 999510
+random = no
+country = USA
+
+trigger = {
+exists = AXI # Axis exists.
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+NOT = { war = { country = USA country = ENG } }
+alliance = { country = -1 country = ENG }	
+NOT = { war = { country = -1 country = GER } }
+}
+
+name = "EVT_999510_NAME"
+desc = "EVT_999510_DESC"
+style = 1
+picture = "fatherland\coldwar1"
+date = { day = 1 month = january year = 1948 } 
+offset = 5
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 95
+name = "We must actively combat Fascism across the world." # Triggers Cold War buildup
+command = { type = domestic which = interventionism value = 1 }
+command = { type = setflag which = usa_cw_intervention }
+}
+
+action = {
+ai_chance = 5
+name = "America First. No foreign meddling."
+command = { type = domestic which = interventionism value = -2 }
+command = { type = setflag which = usa_cw_isolation }
+}
+}
+
+### 1948: United Nations Command Council
+
+event = {
+id = 999511
+random = no
+country = USA
+
+decision = { 
+exists = AXI # Axis exists.
+exists = ALS # United Nations exists on-map
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+}
+
+decision_trigger = {  
+event = 999510
+exists = AXI # Axis exists.
+exists = ALS # United Nations exists on-map
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+NOT = { war = { country = USA country = ENG } }
+alliance = { country = -1 country = ENG }	
+NOT = { war = { country = -1 country = GER } }
+}
+
+trigger = {
+event = 999510
+exists = AXI # Axis exists.
+exists = ALS # United Nations exists on-map
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+NOT = { war = { country = USA country = ENG } }
+alliance = { country = -1 country = ENG }	
+NOT = { war = { country = -1 country = GER } }
+}
+
+name = "EVT_999511_NAME"
+desc = "EVT_999511_DESC"
+style = 1
+picture = "fatherland\un_poster1"
+decision_picture = "fatherland\decision_un"
+date = { day = 1 month = february year = 1948 } 
+offset = 5
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 90
+name = "The world is in ruins - hold the Council."
+command = { type = domestic which = interventionism value = -2 }
+command = { type = setflag which = un_council_1948 }
+}
+
+action = {
+ai_chance = 10
+name = "We do not need the Council at this time."
+command = { }
+}
+
 }
