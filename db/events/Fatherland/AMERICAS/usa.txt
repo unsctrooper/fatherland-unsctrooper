@@ -15,9 +15,18 @@
 ###
 ### The Reich-American Cold War, 1948
 ### 1948: United Nations Command Council
-### 1. UN Command Council: Political Leaders
-### 2. UN Command Council: Military Leaders
-### 2. UN Command Council: Armament and Volunteers
+### 1. UN Command Council: Internal Policy
+### 1.1 UN Adopts the Common Front Resolution
+### 1.2 UN yields to American power
+### 2. UN Command Council: Armament and Tactics
+### 2.1 UN Army adopts armor-mechanized focus
+### 2.2 UN Army adopts special forces-guerrilla focus
+### 2.3 UN Army adopts aerial superiority focus
+### 3. UN Command Council: Volunteers (TBC)
+###
+### The Isolationist Paradox
+### Francis Parker Yockey's "The Coldest Peace"
+### Francis Parker Yockey Assassinated
 ###
 ### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture Plan
 ### 
@@ -458,6 +467,7 @@ decision = {
 exists = AXI # Axis exists.
 exists = ALS # United Nations exists on-map
 government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+atwar = no
 }
 
 decision_trigger = {  
@@ -468,6 +478,7 @@ government = { type = fascist country = GER } # Germany is fascist in the Axis b
 NOT = { war = { country = USA country = ENG } }
 alliance = { country = -1 country = ENG }	
 NOT = { war = { country = -1 country = GER } }
+atwar = no
 }
 
 trigger = {
@@ -478,6 +489,7 @@ government = { type = fascist country = GER } # Germany is fascist in the Axis b
 NOT = { war = { country = USA country = ENG } }
 alliance = { country = -1 country = ENG }	
 NOT = { war = { country = -1 country = GER } }
+atwar = no
 }
 
 name = "EVT_999511_NAME"
@@ -485,21 +497,352 @@ desc = "EVT_999511_DESC"
 style = 1
 picture = "fatherland\un_poster1"
 decision_picture = "fatherland\decision_un"
-date = { day = 1 month = february year = 1948 } 
+date = { day = 25 month = january year = 1948 } 
 offset = 5
 deathdate = { day = 29 month = december year = 1990 }
 
 action = {
 ai_chance = 90
 name = "The world is in ruins - hold the Council."
-command = { type = domestic which = interventionism value = -2 }
 command = { type = setflag which = un_council_1948 }
 }
 
 action = {
 ai_chance = 10
 name = "We do not need the Council at this time."
-command = { }
+command = { type = domestic which = interventionism value = -1 }
+}
 }
 
+### UN Command Council: Internal Policy
+
+event = {
+id = 999512
+random = no
+country = USA
+
+trigger = {
+event = 999511
+flag = un_council_1948
+atwar = no
+}
+
+name = "EVT_999512_NAME"
+desc = "EVT_999512_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+date = { day = 25 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 20
+name = "Common Front Resolution - democratic military representation."
+command = { type = setflag which = un_democratic }
+command = { type = trigger which = 999513 }
+}
+
+action = {
+ai_chance = 80
+name = "The UN must yield to American power."
+command = { type = trigger which = 999514 }
+command = { type = relation which = ALS value = 50 }
+}
+}
+
+### UN Adopts the Common Front Resolution
+
+event = {
+id = 999513
+random = no
+country = ALS
+
+name = "EVT_999513_NAME"
+desc = "EVT_999513_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+
+action = {
+name = "Adopt it."
+command = { type = manpowerpool value = 25 }
+command = { type = add_corps which = "2. UN Task Force" value = land where = 1795 } # New York
+command = { type = add_division which = "10. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+command = { type = add_division which = "11. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+command = { type = add_division which = "12. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+}
+}
+
+### UN Will Be Led by America
+
+event = {
+id = 999514
+random = no
+country = ALS
+
+name = "EVT_999514_NAME"
+desc = "EVT_999514_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+
+action = {
+name = "Ok."
+command = { type = add_corps which = "UN Shock Force" value = land where = 1795 } # New York
+command = { type = add_division which = "1. UN Shock Armor Brigade" value = armor when = 5 where = sp_artillery }
+command = { type = add_division which = "2. UN Shock Brigade" value = mechanized when = 2 where = sp_artillery }
+}
+}
+
+### UN Command Council: Armament and Tactics
+
+event = {
+id = 999515
+random = no
+country = USA
+
+trigger = {
+event = 999512
+flag = un_council_1948
+atwar = no
+}
+
+name = "EVT_999515_NAME"
+desc = "EVT_999515_DESC"
+style = 1
+picture = "fatherland\un_troops"
+date = { day = 25 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 30
+name = "Armored and mechanized focus."
+command = { type = trigger which = 999516 }
+}
+
+action = {
+ai_chance = 60
+name = "Guerrilla and Special Forces focus."
+command = { type = trigger which = 999517 }
+}
+
+action = {
+ai_chance = 10
+name = "Air support and strategic bombing focus."
+command = { type = trigger which = 999518 }
+}
+}
+
+### UN Army adopts armor-mechanized focus
+
+event = {
+id = 999516
+random = no
+country = ALS
+
+name = "EVT_999516_NAME"
+desc = "EVT_999516_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+name = "Ok."
+command = { type = build_division which = armor value = sp_artillery when = 1 }
+command = { type = encirclement value = 3 }
+command = { type = breakthrough value = 3 }
+command = { type = hard_attack which = infantry value = 5 }
+command = { type = hard_attack which = armor value = 3 }
+command = { type = hard_attack which = mechanized value = 3 }
+}
+}
+
+### UN Army adopts special forces-guerrilla focus
+
+event = {
+id = 999517
+random = no
+country = ALS
+
+name = "EVT_999517_NAME"
+desc = "EVT_999517_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+name = "Ok."
+command = { type = add_division which = "1. UN Special Ops Command" value = paratrooper when = 3 where = -50 }
+command = { type = assault value = 7 }
+command = { type = ambush value = 7 }
+command = { type = no_supplies_combat_mod which = paratrooper value = 3 }
+command = { type = no_supplies_combat_mod which = marine value = 3 }
+command = { type = no_supplies_combat_mod which = motorized value = 3 }
+command = { type = no_supplies_combat_mod which = mechanized value = 3 }
+command = { type = soft_attack which = paratrooper value = 5 }
+command = { type = soft_attack which = marine value = 5 }
+command = { type = soft_attack which = motorized value = 5 }
+command = { type = soft_attack which = mechanized value = 5 }
+command = { type = toughness which = paratrooper value = 5 }
+command = { type = toughness which = marine value = 5 }
+command = { type = toughness which = motorized value = 5 }
+command = { type = toughness which = mechanized value = 5 }
+command = { type = morale which = paratrooper value = 7 }
+command = { type = morale which = marine value = 7 }
+command = { type = morale which = motorized value = 7 }
+command = { type = morale which = mechanized value = 7 }
+}
+}
+
+### UN Army adopts aerial superiority focus
+
+event = {
+id = 999518
+random = no
+country = ALS
+
+name = "EVT_999518_NAME"
+desc = "EVT_999518_DESC"
+style = 1
+picture = "fatherland\un_troops"
+
+action = {
+name = "Ok."
+command = { type = add_division which = "UN Bombing Group" value = strategic_bomber when = 6 where = -40 }
+}
+}
+
+### UN Command Council: Volunteers
+
+#event = {
+#id = 999519
+#random = no
+#country = USA
+
+#trigger = {
+#event = 999515
+#flag = un_council_1948
+#atwar = no
+#}
+
+#name = "EVT_999519_NAME"
+#desc = "EVT_999519_DESC"
+#style = 1
+#picture = "fatherland\un_troops"
+#date = { day = 25 month = january year = 1948 } 
+#offset = 2
+#deathdate = { day = 29 month = december year = 1990 }
+
+#action = {
+#ai_chance = 70
+#name = "Anglo-American-French forces will be the backbone."
+#command = { type = relative_manpower value = -0.2 }
+#command = { type = industrial_modifier which = supplies value = -2 }
+#command = { type = trigger which = 999520 }
+#}
+
+#action = {
+#ai_chance = 30
+#name = "Soviet, Korean and Canadian forces will take part."
+#command = { }
+#}
+#}
+
+### The Isolationist Paradox
+
+event = {
+id = 999520
+random = no
+country = USA
+
+trigger = {
+event = 999510 # Reich-American Cold War
+flag = usa_cw_intervention # US is interventionist
+atwar = no
+NOT = { war = { country = -1 country = GER } }
+exists = AXI # Axis exists.
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+}
+
+name = "EVT_999520_NAME"
+desc = "EVT_999520_DESC"
+style = 1
+picture = "fatherland\us_isolation"
+date = { day = 1 month = january year = 1948 } 
+offset = 90
+deathdate = { day = 29 month = december year = 1950 }
+
+action = {
+ai_chance = 60
+name = "They are Fascist agents. Hunt them down."
+command = { type = dissent value = 7 }
+command = { type = industrial_modifier which = total value = -5 }
+command = { type = local_setflag which = usa_antifascism }
+}
+
+action = {
+ai_chance = 10
+name = "Ignore them."
+command = { type = dissent value = 5 }
+}
+}
+
+### Francis Parker Yockey's "The Coldest Peace"
+
+event = {
+id = 999521
+random = no
+country = USA
+
+trigger = {
+local_flag = usa_antifascism
+atwar = no
+exists = AXI # Axis exists.
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+}
+
+name = "EVT_999521_NAME"
+desc = "EVT_999521_DESC"
+style = 0
+picture = "fatherland\FPY"
+date = { day = 1 month = january year = 1948 } 
+offset = 20
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 90
+name = "Investigate and bring him to trial."
+command = { type = dissent value = 4 }
+command = { type = local_setflag which = fpy }
+}
+
+action = {
+ai_chance = 10
+name = "He is not a threat."
+command = { type = dissent value = 2 }
+}
+}
+
+### Death of Francis Parker Yockey
+
+event = {
+id = 999522
+random = no
+country = USA
+
+trigger = {
+local_flag = fpy
+}
+
+name = "EVT_999523_NAME"
+desc = "EVT_999523_DESC"
+style = 0
+picture = "fatherland\FPY"
+date = { day = 1 month = january year = 1948 } 
+offset = 20
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+name = "This will heighten tensions with Germany."
+command = { type = dissent value = 4 }
+command = { type = relation which = GER value = -10 }
+command = { type = local_clrflag which = fpy }
+}
 }
