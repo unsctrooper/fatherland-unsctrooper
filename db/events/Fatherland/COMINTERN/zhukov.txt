@@ -134,14 +134,14 @@ picture = "soviet_warposter"
 		ai_chance = 60
 		name = "Yes, we welcome with open arms"
 		command = { type = set_relation which = SIB value = 50 }
-		command = { type = trigger which = 8014203 } # risposta Siberia
+		command = { type = trigger which = 8014233 } # risposta Siberia
 	}
 	
 	action = {
 		ai_chance = 40
 		name = "No, not now"
 		command = { type = set_relation which = SIB value = -50 }
-		command = { type = trigger which = 8014237 } # Far Eastern Republic		
+		command = { type = trigger which = 8014270 } # Siberia.txt
 	}
 }
 

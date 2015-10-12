@@ -580,7 +580,7 @@ event = {
 	style = 1
 
 	action_a = {
-		name = "Iraq is our Israel! Go ahead!" 
+		name = "Iraq could be a good friend ! Go ahead!" 
 		ai_chance = 99 # Temporary to ensure WW III breaking out after all!
 		command = { type = money value = -2500 }
         command = { type = event which = 8500326 where = IRQ when = 3 }

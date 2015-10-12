@@ -31,7 +31,7 @@ event = {
 		NOT = { war = { country = IND country = CHC } }
 	}
 
-	date = { day = 0 month = january year = 1960 }
+	date = { day = 0 month = january year = 1951 }
 	offset = 360
 	deathdate = { day = 30 month = december year = 1960 }
 
@@ -68,9 +68,9 @@ event = {
 		NOT = { war = { country = IND country = CHC } }
 	}
 
-	date = { day = 0 month = january year = 1961 }
+	date = { day = 0 month = january year = 1951 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1961 }
+	deathdate = { day = 30 month = december year = 1951 }
 
 	action = {
 		name = EVT_8229001_A # Initiate the policy
@@ -108,9 +108,9 @@ event = {
 		NOT = { war = { country = IND country = CHC } }
 	}
 
-	date = { day = 0 month = june year = 1962 }
+	date = { day = 0 month = june year = 1952 }
 	offset = 30
-	deathdate = { day = 30 month = june year = 1962 }
+	deathdate = { day = 30 month = june year = 1952 }
 
 	action = {
 		name = EVT_8229002_A # Hold the line! (high risk of war with China)
@@ -146,9 +146,9 @@ event = {
 		NOT = { war = { country = IND country = CHC } }
 	}
 
-	date = { day = 0 month = august year = 1962 }
+	date = { day = 0 month = august year = 1952 }
 	offset = 30
-	deathdate = { day = 30 month = august year = 1962 }
+	deathdate = { day = 30 month = august year = 1952 }
 
 	action = {
 		name = EVT_8229003_A # This means war!
@@ -197,9 +197,9 @@ event = {
 		war = { country = IND country = CHC }
 	}
 
-	date = { day = 0 month = september year = 1962 }
+	date = { day = 0 month = september year = 1952 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1962 }
+	deathdate = { day = 30 month = december year = 1952 }
 
 	action = {
 		name = EVT_8229010_A # Send a letter
@@ -231,9 +231,9 @@ event = {
 		war = { country = IND country = CHC }
 	}
 
-	date = { day = 0 month = september year = 1962 }
+	date = { day = 0 month = september year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1962 }
+	deathdate = { day = 30 month = december year = 1952 }
 
 	action = {
 		name = EVT_8229011_A # We can do better
@@ -277,9 +277,9 @@ event = {
 		}
 	}
 
-	date = { day = 0 month = november year = 1962 }
+	date = { day = 0 month = november year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = EVT_8229020_A # It's enough for us, announce end of war
@@ -349,9 +349,9 @@ event = {
 		}
 	}
 
-	date = { day = 0 month = november year = 1962 }
+	date = { day = 0 month = november year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = EVT_8229022_A # It's enough for us, announce end of war
@@ -427,9 +427,9 @@ event = {
 		}
 	}
 
-	date = { day = 0 month = november year = 1962 }
+	date = { day = 0 month = november year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = EVT_8229030_A # It's enough for us, announce end of war
@@ -510,9 +510,9 @@ event = {
 		control = { province = 1289 data = -1 } # Lhasa
 	}
 
-	date = { day = 0 month = november year = 1962 }
+	date = { day = 0 month = november year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = EVT_8229032_A # It's enough for us, announce end of war
@@ -595,9 +595,9 @@ event = {
 		control = { province = 1289 data = -1 } # Lhasa
 	}
 
-	date = { day = 0 month = november year = 1962 }
+	date = { day = 0 month = november year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = EVT_8229034_A # Set Tibet free!
@@ -630,9 +630,9 @@ event = {
 		event = 8229034
 	}
 
-	date = { day = 0 month = november year = 1962 }
+	date = { day = 0 month = november year = 1952 }
 	offset = 7
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 30 month = december year = 1953 }
 
 	action = {
 		name = EVT_8229035_A

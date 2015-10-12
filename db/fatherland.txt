@@ -2,10 +2,10 @@
 # Fatherland events
 #####################################
 
-# CREDITS
+#CREDITS
 event = "db\events\fatherland\credits.txt"
 
-# SECRET WEAPONS
+#SECRET WEAPONS
 event = "db\events\secret_weapon_events.txt"
 
 #MOBILIZATION EVENTS
@@ -16,14 +16,14 @@ event = "db\events\generic_decisions.txt"
 #FLAVOUR
 event = "db\events\fatherland\flavour.txt"
 
-# AFRICA
+#AFRICA
 event = "db\events\fatherland\africa\ethiopia.txt"
 event = "db\events\fatherland\africa\madagascar.txt"
 event = "db\events\fatherland\africa\south_africa.txt"
-event = "db\events\fatherland\africa\end_uk_colonialism.txt"
 event = "db\events\fatherland\africa\egypt.txt"
+event = "db\events\fatherland\africa\end_uk_colonialism.txt"
 
-# AMERICAS
+#AMERICAS
 event = "db\events\fatherland\americas\argentina.txt"
 event = "db\events\fatherland\americas\brazil.txt"
 event = "db\events\fatherland\americas\canada.txt"
@@ -32,19 +32,18 @@ event = "db\events\fatherland\americas\colombia.txt"
 event = "db\events\fatherland\americas\cuba.txt"
 event = "db\events\fatherland\americas\ecuador.txt"
 event = "db\events\fatherland\americas\el_salvador.txt"
-event = "db\events\fatherland\americas\marshallplan.txt"
 event = "db\events\fatherland\americas\panama.txt"
 event = "db\events\fatherland\americas\paraguay.txt"
 event = "db\events\fatherland\americas\peru.txt"
 event = "db\events\fatherland\americas\uruguay.txt"
 event = "db\events\fatherland\americas\venezuela.txt"
 event = "db\events\fatherland\americas\usa.txt"
+event = "db\events\fatherland\americas\marshallplan.txt"
 
-# ASIA
+#ASIA
 event = "db\events\fatherland\asia\brunei.txt"
 event = "db\events\fatherland\asia\burma.txt"
 event = "db\events\fatherland\asia\ceylon.txt"
-event = "db\events\fatherland\asia\china.txt"
 event = "db\events\fatherland\asia\india.txt"
 event = "db\events\fatherland\asia\indochina.txt"
 event = "db\events\fatherland\asia\koreas.txt"
@@ -58,18 +57,20 @@ event = "db\events\fatherland\asia\tibet.txt"
 event = "db\events\fatherland\asia\thailand.txt"
 event = "db\events\fatherland\asia\japan.txt"
 
-# CHINA
+#CHINA
 event = "db\events\fatherland\china\Post-CCW.txt"
 event = "db\events\fatherland\china\Sino-Russian Wars.txt"
+#event = "db\events\fatherland\china\Sino-Soviet War.txt"
 event = "db\events\fatherland\china\Imperial Russian-Chinese Alliance.txt"
+event = "db\events\fatherland\china\china.txt"
 
-# AXIS EUROPE
+#AXIS EUROPE
 event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
 event = "db\events\fatherland\axis_europe\Moscow.txt"
 event = "db\events\fatherland\axis_europe\Intervention.txt"
 
-# COMINTERN
-event = "db\events\fatherland\comintern\comintern_conference.txt"
+#COMINTERN
+#event = "db\events\fatherland\comintern\comintern_conference.txt"
 event = "db\events\fatherland\comintern\soviet_union.txt"
 event = "db\events\fatherland\comintern\beria.txt"
 event = "db\events\fatherland\comintern\fareastern.txt"
@@ -78,7 +79,7 @@ event = "db\events\fatherland\comintern\siberia.txt"
 event = "db\events\fatherland\comintern\turkestan.txt"
 event = "db\events\fatherland\comintern\zhukov.txt"
 
-# CRISIS
+#CRISIS
 event = "db\events\fatherland\crisis\abadan_crisis.txt"
 event = "db\events\fatherland\crisis\nuclear.txt"
 event = "db\events\fatherland\crisis\SwissProblem.txt"
@@ -89,7 +90,7 @@ event = "db\events\fatherland\crisis\morocco_crisis.txt"
 event = "db\events\fatherland\crisis\WWIII.txt"
 event = "db\events\fatherland\crisis\SuezKuwaitCrisis.txt"
 
-# EUROPE
+#EUROPE
 event = "db\events\fatherland\europe\cyprus.txt"
 event = "db\events\fatherland\europe\freefrance.txt"
 event = "db\events\fatherland\europe\italy.txt"
@@ -102,7 +103,7 @@ event = "db\events\fatherland\europe\unitedkingdom.txt"
 event = "db\events\fatherland\europe\vichyfrance.txt"
 event = "db\events\fatherland\europe\belgium.txt"
 
-# GER
+#GERMANY
 event = "db\events\fatherland\ger\ost.txt"
 event = "db\events\fatherland\ger\west.txt"
 event = "db\events\fatherland\ger\hitlerdied.txt"
@@ -116,7 +117,7 @@ event = "db\events\fatherland\ger\SS.txt"
 event = "db\events\fatherland\ger\cossacks.txt"
 event = "db\events\fatherland\ger\ger_influence.txt"
 
-# MIDDLE EAST
+#MIDDLE EAST
 event = "db\events\fatherland\middle_east\iran.txt"
 event = "db\events\fatherland\middle_east\iran_crisis.txt"
 event = "db\events\fatherland\middle_east\iraq.txt"

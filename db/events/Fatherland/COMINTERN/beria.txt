@@ -2,9 +2,8 @@
 # Beria by Pako
 # ##########################
 
-# 8014100 -SOV- Beria take the power - v
-
-# 8014101 -SOV- The cult of personality - v
+# 8014100 - Beria take the power
+# 8014101 - The cult of personality
 # 8014102 - Execution of British spies
 # 8014103 - Execution of British spies - British reaction
 # 8014104 - British embargo
@@ -12,44 +11,48 @@
 # 8014106 - Reorganization of NKVD
 	
 	
-	
+##########################	
 # 8014100 - Beria take the power
+##########################
 event = {
 	id = 8014100
-	random = no
 	country = SOV 
-	trigger = { 
-		headofstate = 30152 # Beria
-		headofgovernment = 30017 # Beria
-		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
-		event = 8014268 # Soviet Union - 8014269 - Purges (Zhukov)
-	} 
-	name = "Beria take the power"
-	desc = "Moving inside the Communist Party of Soviet Union Molotov take the full power taking with his men the main places in the Party's burocracy. Beria is proclamed as the legitimate successor of Stalin."
+	random = no
 	style = 0
-	picture = "spread_revolution" 
+	picture = "nwo/beria_rules_ussr" 
+
+	name = "Beria take the power"
+	desc = "With a policy of verbal and physical violence Beria took power within the Communist Party. The purges that followed allowed the new Secretary of the Communist Party no longer no opponent to contain. Within weeks, Beria has realized the dream of becoming the sole and indisputable heir to Stalin."
+	
 	date = { day = 1 month = january year = 1949 }
 	offset = 5
 	deathdate = { day = 12 month = march year = 1966 }
 
+	trigger = { 
+		headofstate = 30152 # Beria
+		headofgovernment = 30017 # Beria
+		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
+		event = 8014268 # The Great Purges II (Beria)
+	} 
+		
 	action = {
-		name = "Ok"
+		name = "Long live to the new Secretary of the Communist Party of the Soviet Union, Beria"
 		command = { type = belligerence value = 3 }				
         command = { type = dissent value = 5 }		
 		command = { type = manpowerpool value = -50 }		
 		command = { type = peacetime_ic_mod value = 7 }		
         command = { type = tc_mod value = 3 }		
-        command = { type = research_mod value = 7 }			
-		#	type = 	set_domestic which = [domestic policy type] value = X	
-		# [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism]		
-		# type = steal_tech which = [country tag/-1]		
+        command = { type = research_mod value = 7 }		
+		command = { type = set_domestic which = political_left value = 10}
 		command = { type = ambush value = 3 }		
 		command = { type = intelligence value = 5 } 		
 		command = { type = morale which = land value = 1 }
 	}
 }
 
+##########################
 # 8014101 - The cult of personality
+##########################
 event = {
 	id = 8014101
 	random = no
@@ -62,7 +65,7 @@ event = {
 	name = "The cult of personality"
 	desc = "Beria takes a personal power more and more important, at the expense of the party and has the great concern of the veterans of the revolution. It encourages the cult of personality. Giant portraits of Stalin and Beria are displayed in all public places, the press and movies celebrate their infallibility and their genius."
 	style = 0
-	picture = "tannu_tuva"
+	picture = "nwo/beria_rules_ussr"
 	date = { day = 15 month = february year = 1949 }
 	offset = 30
 	deathdate = { day = 1 month = january year = 1965 }
@@ -74,7 +77,9 @@ event = {
 	}
 }
 
+##########################
 # 8014102 - Execution of British spies
+##########################
 event = {
 	id = 8014102
 	random = no
@@ -89,18 +94,27 @@ event = {
 	offset = 35
 	deathdate = { day = 1 month = january year = 1965 }
 	name = "Execution of British spies"
-	desc = "In Moscow, opened the trial of British spies, 6 engineers from Metro-Vickers, who worked on a building site in Urals. Convicted of sabotage and despionnage, Mon was acquitted, two were 5 years in prison, three will be deported to Siberia. Should we judge them? This may dalterer our relations with England but it can also make a good shot of propaganda stigmatising foreign capitalism."
+	desc = "In Omsk, opened the trial of British spies, 6 engineers from Metro-Vickers, who worked on a building site in Urals. Convicted of sabotage and despionnage, Mon was acquitted, two were 5 years in prison, three will be deported to Siberia. Should we judge them? This may dalterer our relations with England but it can also make a good shot of propaganda stigmatising foreign capitalism."
 	style = 0
 	picture = "news_paper"
-	action_a = {	
-		name = "A conspiracy of international capitalism"
+	action = {	
+		ai_chance = 90
+		name = "Must be judged by the Court of the Soviet People"
       	command = { type = dissent value = -1 }
 		command = { type = relation which = ENG value = -50 }
 		command = { type = trigger which = 8014103 }
 	}
+	action = {	
+		ai_chance = 10
+		name = "Send them in UK"
+      	command = { type = dissent value = 5 }
+		command = { type = relation which = ENG value = 10 }
 	}
-	
+}
+
+##########################	
 # 8014103 - Esecuzione di spie britanniche - Reazione britannica
+##########################
 event = {
 	id = 8014103
 	random = no
@@ -109,8 +123,8 @@ event = {
 	desc = "In Moscow, opened the trial of British spies, 6 engineers from Metro-Vickers, who worked on a building site in Urals. Convicted of sabotage and despionnage, Mon was acquitted, two did 5 years in prison, three will go to make a trip to Siberia. Our Government decided to react by decreeing an embargo on trade with URSS."
 	style = 0	
 	picture = "news_paper"
-	action_a = {
-		name = "Close diplomatical relations and make an embargo to Soviet Union"
+	action = {
+		name = "Close diplomatic relations and start an embargo to Soviet Union"
 		command = { type = relation which = SOV value = -50 }
 		
 		command = { type = embargo which = ENG where = SOV value = 3} # 3 – enforce both trade and tech embargoes
@@ -121,22 +135,30 @@ event = {
 		command = { type = trigger which = 8014104 }
 		}
 	}
+
+##########################	
 # 8014104 - Embargo britannico
+##########################
 event = {
 	id = 8014104
 	random = no
 	country = SOV
 	name = "British embargo against Soviet Union"
-	desc = "In retaliation for the conviction of its engineers, the British Government comes to embargo against us. All our trade with Britain are cancelled."
+	desc = "Because criminal proceedings British citizens were placed under embargo by the commonwealth"
 	style = 0
-	picture = "british_tactical_victory_pacific"
-	action_a = {	
+	picture = "news_paper"
+	action = {	
 		name = "Capitalists do not lose anything to wait"
-		command = { }
+      	command = { type = dissent value = 5 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = CAN value = -50 }		
 	}
-	}
-
-	# 8014105 - Goulag reopened
+}
+##########################
+# 8014105 - Goulag reopened
+##########################
 event = {
 	id = 8014105
 	random = no
@@ -152,8 +174,8 @@ event = {
 	name = "Goulag reopened"
 	desc = "Gulag was the abbreviation for the direction of the camps of forced work and ideological re-education, a Department of the secret police. Created in the 1920s by Lenin, the system reached its peak under Stalin with more than 476 complexes installed in Siberia and Central Asia. These camps included common law prisoners and political opponents. Prisoners built several railways in the Arctic regions, whose line Kotlas Vorkuta."
 	style = 0
-	picture = "gulag"
-	action_a = {
+	picture = "news_paper"
+	action = {
 		name = "We need order"
 		command = { type = money value = -200 }
 		command = { type = construct which = infrastructure where = 1155 value = 40 } # Norilsk
@@ -161,7 +183,9 @@ event = {
 		command = { type = dissent value = -2 } 
 		}
 }
-	# 8014106 - Reorganization of NKVD
+##########################
+# 8014106 - Reorganization of NKVD
+##########################
 	event = {
 	id = 8014106
 	random = no
@@ -172,15 +196,16 @@ event = {
 		headofgovernment = 30017 # Beria2
 	}
 	name = "The reorganization of NKVD" 
-	desc = "Under the tutelage of Stalin, Lavrenty Beria, who controls the N.K.V.D dune iron hand managed to put in place various measures such as treason in the event of decline against the enemies."
+	desc = "Lavrenty Beria, who controls the N.K.V.D dune iron hand managed to put in place various measures such as treason in the event of decline against the enemies."
 	style = 0 
 	picture = "soviet_reinforcments"
 	date = { day = 15 month = february year = 1949 }
 	offset = 50
 	deathdate = { day = 1 month = january year = 1965 }
 	action = { 
-		name = "Cette stratégie n'a aucun sens mais si Staline le dit..."
+		name = "Start a complete re-organization"
 		command = { type = intelligence which = SOV value = 10 } # Modifier in percents		
+	
 		command = {  type = max_organization which = infantry value = -3  }
 		command = {  type = max_organization which = garrison value = 2  }
 		command = {  type = max_organization which = militia value = 5  }

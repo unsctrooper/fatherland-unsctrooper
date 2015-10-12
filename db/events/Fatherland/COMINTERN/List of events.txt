@@ -1,10 +1,32 @@
 #####################################
 # List of events - SOVIET UNION
 # Rev. by Pako
+# In chronological order
+#####################################
+
+#####################################
+# soviet_union.txt
 #####################################
 # (soviet_union.txt)
 # 8014250 - The Sleeping Bear, 1948
 # 8014290 - A Gold opportunity
+# 8014291 - 1st May
+# 8014292 - Anniversary of October's Revolution
+
+# ##########################
+# ## Soviet Leadership Crisis
+# ##########################
+# 8014265 - The Leadership of the Soviet Union
+# 8014266 - Who's in charge?
+# 8014267 - The Great Purges II (Molotov)
+# 8014268 - The Great Purges II (Beria)
+# 8014269 - The Great Purges II (Zhukov)
+
+# ##########################
+# ## Flavours
+# ##########################
+# 8014291 - 1st May of a new decade
+# 8014292 - 35th Anniversary of October's Revolution
 
 # ##########################
 # ## Round I - Turkestan Troubles (turkestan.txt)

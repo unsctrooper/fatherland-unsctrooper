@@ -269,10 +269,10 @@ event = {
 		command = { type = dissent value = -6 }
 		command = { type = max_organization which = infantry value = 10 }
 		command = { type = max_organization which = militia value = 10 }
-		command = { type = max_organization which = bergsjaeger value = 10 }
+		#command = { type = max_organization which = bergsjaeger value = 10 }
 		command = { type = morale which = infantry value = 40 }
 		command = { type = morale which = militia value = 40 }
-		command = { type = morale which = bergsjaeger value = 40 }
+		#command = { type = morale which = bergsjaeger value = 40 }
 	}	
 }
 
@@ -300,10 +300,10 @@ event = {
 		name = EVT_8200041_A #"Victory at last!"
 		command = { type = max_organization which = infantry value = -10 }
 		command = { type = max_organization which = militia value = -10 }
-		command = { type = max_organization which = bergsjaeger value = -10 }
+		#command = { type = max_organization which = bergsjaeger value = -10 }
 		command = { type = morale which = infantry value = -40 }
 		command = { type = morale which = militia value = -40 }
-		command = { type = morale which = bergsjaeger value = -40 }
+		#command = { type = morale which = bergsjaeger value = -40 }
 	}	
 }
 
@@ -418,7 +418,7 @@ event = {
 
 	action = {
 		name = "EVT_8200044_A" # Provide considerable support
-		ai_chance = 90
+		ai_chance = 70
 		command = { type = relation which = CHI value = 100 }
 		command = { type = relation which = CHC value = -150 }
 		command = { type = supplies value = -1000 }
@@ -429,7 +429,7 @@ event = {
 	
 	action = {
 		name = "EVT_8200044_B" # No support
-		ai_chance = 1
+		ai_chance = 10
 		command = { type = relation which = CHI value = -50 }
 		command = { type = relation which = CHC value = 10 }
 		command = { type = domestic which = interventionism value = -1 }
@@ -438,7 +438,7 @@ event = {
 	
 	action = {
 		name = "EVT_8200044_C" # Little support
-		ai_chance = 4
+		ai_chance = 15
 		command = { type = relation which = CHI value = 20 }
 		command = { type = relation which = CHC value = -50 }
 		command = { type = supplies value = -500 }
@@ -449,7 +449,7 @@ event = {
 	
 	action = {
 		name = "EVT_8200044_D" # Propose full alliance
-		ai_chance = 6
+		ai_chance = 5
 		command = { type = relation which = CHI value = 150 }
 		command = { type = relation which = CHC value = -200 }
 		command = { type = supplies value = -2000 }
@@ -597,7 +597,7 @@ event = {
 		vp = 5
 	}
 
-	date = { day = 1 month = january year = 1945 }
+	date = { day = 1 month = january year = 1948 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1949 }
 
@@ -1382,7 +1382,7 @@ event = {
 	}	
 }
 
-event = {
+event = { #Soviet Volunteers Air Group
 	id = 999357
 	random = no
 	country = CHC
@@ -1393,7 +1393,7 @@ event = {
 			war = { country = CHC country = CHI }
 			}
 	date = { day = 12 month = october year = 1949 }
-	name = "Soviet Volunteer Air Group"
+	name = "Soviet Volunteers Air Group"
 	desc = "The Soviet Volunteer Air Group was the ostensibly volunteer Soviet Air Forces to support the People's Republic of China during the Chinese Civil War. Some 450 Soviet pilots and technicians brougth 155 fighter aircraft, 62 bombers, and 8 trainers into China. The Soviet squadrons were withdrawn in 1949."
 	style = 2
 	picture = "news_paper"

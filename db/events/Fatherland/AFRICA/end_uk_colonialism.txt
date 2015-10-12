@@ -100,7 +100,7 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 0 month = january year = 1957 }
+	date = { day = 0 month = january year = 1954 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1961 }
 
@@ -188,9 +188,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 0 month = january year = 1950 }
 	offset = 360
-	deathdate = { day = 29 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1955 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -238,7 +238,7 @@ event = {
 		NOT = { atwar = ENG }
 	}
 
-	date = { day = 0 month = january year = 1952 }
+	date = { day = 0 month = january year = 1955 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1999 }
 
@@ -268,7 +268,7 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 0 month = january year = 1959 }
+	date = { day = 0 month = january year = 1956 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -303,9 +303,9 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 0 month = january year = 1953 }
+	date = { day = 0 month = january year = 1955 }
 	offset = 360
-	deathdate = { day = 29 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1958 }
 
 	action = {
 		name = EVT_LIBERATE
@@ -391,7 +391,7 @@ event = {
 		NOT = { government = fascist }
 	}
 
-	date = { day = 0 month = january year = 1949 }
+	date = { day = 0 month = january year = 1951 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1953 }
 

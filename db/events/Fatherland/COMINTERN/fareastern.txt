@@ -2,83 +2,86 @@
 # ## Round V - Far Eastern Republic
 # ##########################
 # 8014286 - SOV - What to do about the FER ? 
-# 8014287 - USA - The Soviet Plea
+# 8014287 - U57 - The Soviet Plea
 # 8014281 - SOV - The Americans Refuse!
-# 8014282 - USA - Conference of Tokyo
-# 8014283 - SOV - Conference of Tokyo - Offer I
-# 8014284 - SOV - Conference of Tokyo - Offer II
+# 8014282 - U57 - Conference of Vladivostok
+# 8014283 - SOV - Conference of Vladivostok - Offer I
+# 8014284 - SOV - Conference of Vladivostok - Offer II
 # 8014285 - USA - What to do with the Sakhalin Islands?
 
 #######################################
-### Round V - Far Eastern Republic ###
+### Round V - Far Eastern Republic (U57) 
 #######################################
-event = { # What to do about the FER ? 
+event = { 
 	id = 8014286 
 	random = no
 	country = SOV
     save_date = yes
 
-	name = "The Status of the Far Eastern Republic"
-	desc = "Now that we have established control over these unrecognized breakoff states, it's time to face the Allied aligned Far Eastern Republic." 
+	name = "The status of the Far Eastern Republic and the Sakhalin Islands"
+	desc = "The Far Eastern Republic and the Sakhalin Islands represent a problem that needs to be fixed" 
 	style = 2
 	picture = "news_paper"
 	
     trigger = {
-	AND = {
-	event = { id = 8014280 days = 180 } 
-	NOT = { exists = SIB }
-	NOT = { exists = U59 }		
-	}
+		AND = {
+			event = { id = 8014280 days = 180 } 
+			NOT = { exists = SIB }
+			NOT = { exists = U59 }		
+		}
 	}
 	
     date = { day = 1 month = january year = 1948 }
-	offset = 1
+	offset = 120
 	deathdate = { day = 30 month = december year = 1963 }
 
 
-	    action_a = { # Push the Allies for a Conference!
-		name = "Push the Allies for a Conference!"
-        ai_chance = 95
+	action = { 
+		name = "Diplomatic solution"
+        ai_chance = 70
 		command = { type = setflag which = SOVSTRONG } 	
         command = { type = dissent value = -1 }
 	    command = { type = trigger which = 8014287 }
 	}
-	    action_b = { # War!
-		name = "Violence is the way!" 
-		ai_chance = 4
+	
+	action = { 
+		name = "Declare war to Far Eastern Republic" 
+		ai_chance = 20
 		command = { type = setflag which = SOVSTRONG } 	
+		command = { type = setflag which = SOVENEMY } 		
         command = { type = dissent value = 1 }
 		command = { type = war which = U57 }
-		command = { type = setflag which = SOVENEMY } 
 	}
-	    action_c = { # 
+	   
+	action = {  
 		name = "We have enough land to govern for now!" 
-		ai_chance = 1
+		ai_chance = 10
 		command = { type = setflag which = SOVSTRONG } 	
+		command = { type = setflag which = SOVNEUTR } 		
         command = { type = dissent value = 5 }
-		command = { type = setflag which = SOVNEUTR } 
 	}
+	
 }
 
-event = { # Soviet Offer
+event = {
 	id = 8014287
 	random = no
-	country = USA
+	country = U57
 
 	name = "The Soviet Plea"
-	desc = "The Soviet Union, slowly getting back on it's feet, has approached us regarding the status of the Far Eastern Republic. While we've never been friends, the Soviet Union is still an profitable partner in the battle against the Axis." 
+	desc = "The Soviets has approached us regarding our status, with a proposition of turn back in the Soviet Union" 
 	style = 2
 	picture = "news_paper"
 	
-	    action_a = { # Yes
-		name = "Call a Conference!"
+	action = { 
+		name = "Ok but we want an international conference"
         ai_chance = 80
 		command = { type = relation which = SOV value = 50 }
-		command = { type = relation which = U57 value = -50 }
         command = { type = event which = 8014282 where = USA when = 14 }		
 	}
-	    action_b = { # No 
-		name = "Communism is over! No!" 
+	
+	action = {  
+		name = "We have a different vision of socialism" 
 		ai_chance = 20
 		command = { type = relation which = SOV value = -50 }
 		command = { type = relation which = U57 value = 50 }
@@ -86,114 +89,111 @@ event = { # Soviet Offer
 	}
 }
 
-event = { # The Americans Refuse!
+event = {
 	id = 8014281
 	random = no
 	country = SOV
 
-	name = "American Refusal"
-	desc = "The American have refused our request to reconsider the status of the Far Eastern Republic." 
+	name = "The Far Eastern Republic refuse"
+	desc = "The Far Eastern Republic have refused our request to reconsider its status, what should we do?" 
 	style = 2
 	picture = "news_paper"
 	
-	    action_a = { # War it is!
-		name = "War it is!"
-        ai_chance = 50
+	action = {
+		name = "So, is war"
+        ai_chance = 70
 		command = { type = war which = U57 }
-		command = { type = relation which = USA value = -100 }		
+		command = { type = relation which = USA value = -20 }		
 		command = { type = setflag which = SOVENEMY } 
 	}
-	    action_b = { # We have to accept..
-		name = "We have to accept.." 
-		ai_chance = 50
+	
+	action = { 
+		name = "We bitterly accept their decision" 
+		ai_chance = 30
         command = { type = dissent value = 5 }
 		command = { type = setflag which = SOVNEUTR } 
 	}
 }
 
-event = { # Conference of Tokyo
+event = {
 	id = 8014282
 	random = no
-	country = USA
+	country = U57
 
-	name = "Conference of Tokyo"
-	desc = "Soviet and Western diplomats have gathered in the capital of Japan to discuss the status of the Far Eastern Republic." 
+	name = "Conference of Vladivostok"
+	desc = "Soviets and Far Eastern Republicans diplomats have gathered in Vladivostok to discuss the status of the Far Eastern Republic." 
 	style = 2
 	picture = "news_paper"
 	
-	    action_a = { # Far Eastern Republic to Soviets, with consessions
-		name = "The Far Eastern Republic is integral to Russia"
-        ai_chance = 75
-		command = { type = relation which = SOV value = 25 }	
+	action = { 
+		name = "Okay we'll return to be part of the Union"
+        ai_chance = 70
+		command = { type = relation which = SOV value = 50 }	
 	    command = { type = trigger which = 8014283 }		
 	}
-	    action_b = { # The FER stays independent!
-		name = "The Far Eastern Republic stays independent!" 
-		ai_chance = 25
+	    
+	action = {
+		name = "The Far Eastern Republic remain independent!" 
+		ai_chance = 30
 		command = { type = relation which = SOV value = -100 }	
 	    command = { type = trigger which = 8014284 }
 	}
 }
 
-event = { # Conference of Tokyo - Offer I
+event = {
 	id = 8014283
 	random = no
 	country = SOV
 
-	name = "The American Offer"
-	desc = "The Americans have approached us with a very lucrative deal. We'll be recognized rule over Primorsk, for economic and political consessions." 
+	name = "The Far Eastern Republic accept our proposal"
+	desc = "Our proposal has been accepted, the FER will be integrated as Far Eastern SSR" 
 	style = 2
 	picture = "news_paper"
 	
-	    action_a = { # Yes!
-		name = "Yes!"
-        ai_chance = 99
+	action = { 
+		name = "Welcome back tovarish!"
+        ai_chance = 100
 	    command = { type = inherit which = U57 value = 1 }
         command = { type = peacetime_ic_mod value = -3 }
-        command = { type = access which = USA }	
-        command = { type = dissent value = 3 }
+        command = { type = dissent value = -5 }
 		command = { type = setflag which = SOVFRIENDLY } 		
-	}
-	    action_b = { # Concessions? nah! 
-		name = "Consessions? No!" 
-		ai_chance = 1
-		command = { type = relation which = USA value = -100 }	
-		command = { type = setflag which = SOVNEUTR } 
 	}
 }
 
-event = { # Conference of Tokyo - Offer II
+event = { 
 	id = 8014284
 	random = no
 	country = SOV
 
-	name = "The American Offer"
-	desc = "The Americans have approached us with an outrageous deal. They want us to recognize the Far Eastern Republic as independent entity!" 
+	name = "The Far Eastern Republic want to remain independent"
+	desc = "The Far Eastern Republic want to remain independent" 
 	style = 2
 	picture = "news_paper"
 	
-	    action_a = { # 
-		name = "We have no choice.."
+	action = { 
+		name = "So, is war" 
+		ai_chance = 80
+		command = { type = relation which = USA value = -20 }	
+		command = { type = war which = U57 }
+		command = { type = setflag which = SOVENEMY } 
+	}
+	
+	action = {
+		name = "We bitterly accept their decision"
         ai_chance = 20
-		command = { type = relation which = USA value = 50 }	
+		command = { type = relation which = USA value = 20 }	
 		command = { type = relation which = U57 value = 50 }
         command = { type = peacetime_ic_mod value = 5 }
 		command = { type = setflag which = SOVFRIENDLY } 		
 	}
-	    action_b = { # 
-		name = "No, we'll take it ourselves!" 
-		ai_chance = 80
-		command = { type = relation which = USA value = -200 }	
-		command = { type = war which = U57 }
-		command = { type = setflag which = SOVENEMY } 
-	}
+	
+
 }
 
-event = { # What to do with the Sakhalin Islands?
+event = {
 	id = 8014285
 	random = no
 	country = USA
-
 	
     trigger = {
 		event = { id = 8014286 days = 90 } 
@@ -208,55 +208,52 @@ event = { # What to do with the Sakhalin Islands?
 	style = 2
 	picture = "news_paper"
 	
-action = {
-trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
-ai_chance = 10 # Military Administration
-name = "We'll put it under military administration"
-command = { type = relation which = JAP value = -25 }	
-command = { type = relation which = SOV value = -25 }	
-}
-action = {
-trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
-ai_chance = 90
-name = "Hand it back to the Japan"
-command = { type = relation which = JAP value = 25 }
-command = { type = relation which = SOV value = -50 }	
-command = { type = secedeprovince which = JAP value = 1541 when = 1 }
-command = { type = secedeprovince which = JAP value = 1542 when = 1 }
-command = { type = secedeprovince which = JAP value = 1543 when = 1 }
-}
-action = {
-trigger = { flag = SOVFRIENDLY } 
-ai_chance = 10 # Republic
-name = "An independent Sakhalin Republic!"
-command = { type = relation which = JAP value = -50 }	
-command = { type = relation which = SOV value = -50 }	
-}
-action = {
-trigger = { flag = SOVFRIENDLY } 
-ai_chance = 10 # Military Administration
-name = "We'll put it under Military Administration"
-command = { type = relation which = JAP value = -50 }	
-command = { type = relation which = SOV value = -50 }	
-}
-action = {
-trigger = { flag = SOVFRIENDLY } 
-ai_chance = 20
-name = "Hand it back to Japan"
-command = { type = relation which = JAP value = 25 }
-command = { type = relation which = SOV value = -50 }	
-command = { type = secedeprovince which = JAP value = 1541 when = 1 }
-command = { type = secedeprovince which = JAP value = 1542 when = 1 }
-command = { type = secedeprovince which = JAP value = 1543 when = 1 }
-}
-action = {
-trigger = { flag = SOVFRIENDLY } 
-ai_chance = 70
-name = "Hand it back to the Soviets"
-command = { type = relation which = SOV value = 25 }
-command = { type = relation which = JAP value = -50 }	
-command = { type = secedeprovince which = SOV value = 1541 when = 1 }
-command = { type = secedeprovince which = SOV value = 1542 when = 1 }
-command = { type = secedeprovince which = SOV value = 1543 when = 1 }
-}
+	action = {
+		trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
+		ai_chance = 10
+		name = "We must maintain a military administration"
+		command = { type = relation which = JAP value = -25 }	
+		command = { type = relation which = SOV value = -25 }	
+	}
+	
+	action = {
+		trigger = { OR = { flag = SOVenemy flag = SOVneutr } } 
+		ai_chance = 90
+		name = "Hand it back to the Japan"
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = SOV value = -50 }	
+		command = { type = secedeprovince which = JAP value = 1541 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1542 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1543 when = 1 }
+	}
+		
+	action = {
+		trigger = { flag = SOVFRIENDLY } 
+		ai_chance = 10
+		name = "We'll put it under Military Administration"
+		command = { type = relation which = JAP value = -50 }	
+		command = { type = relation which = SOV value = -50 }	
+	}
+	
+	action = {
+		trigger = { flag = SOVFRIENDLY } 
+		ai_chance = 20
+		name = "Hand it back to Japan"
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = SOV value = -50 }	
+		command = { type = secedeprovince which = JAP value = 1541 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1542 when = 1 }
+		command = { type = secedeprovince which = JAP value = 1543 when = 1 }
+	}
+	
+	action = {
+		trigger = { flag = SOVFRIENDLY } 
+		ai_chance = 70
+		name = "Hand it back to the Soviets"
+		command = { type = relation which = SOV value = 25 }
+		command = { type = relation which = JAP value = -50 }	
+		command = { type = secedeprovince which = SOV value = 1541 when = 1 }
+		command = { type = secedeprovince which = SOV value = 1542 when = 1 }
+		command = { type = secedeprovince which = SOV value = 1543 when = 1 }
+	}
 }

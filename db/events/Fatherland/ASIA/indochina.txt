@@ -27,7 +27,7 @@ event = {
 	desc = "We are now autonomous inside the Indochinese Union for more than 3 years, and our relations with the French are better than ever. Howewer, we are now preparing for our full independance, wich shall take place in 1951, and we should ask the french to recognize now ours claims to Cochinchina if we want to ever take it back..."
 
 	action = {
-		ai_chance = 100
+		ai_chance = 80
 		name = "Sign the Treaty, and ask the French to acknoledge our claims!"
 		command = { type = dissent value = -5 }
 		command = { type = addcore which = 1399  }
@@ -36,7 +36,7 @@ event = {
 		}
 
 	action = {
-		ai_chance = 0
+		ai_chance = 20
 		name = "Sign it without mentionning Cochinchina."
 		command = { type = dissent value = 1 }
 		command = { type = relation which = U03 value = 25 }
@@ -54,14 +54,14 @@ event = {
 
 	action = {
 		name = "Recognize them, we will decide whom to give the province when we leave!"
-		ai_chance = 100
+		ai_chance = 80
 		command = { type = setflag which = CMBCLAIMs }
 		command = { type = relation which = CMB value = 50 }
 		command = { type = trigger which = 90001002 }	
 	}
 	action = {
 		name = "No, that would be betraying the Treaty of Fontainebleau."
-		ai_chance = 0
+		ai_chance = 20
 		command = { type = relation which = VIE value = 25 }
 		command = { type = relation which = CMB value = -25 }
 	}
@@ -128,10 +128,6 @@ event = {
 	
 	action = {
 		name = "The Socialist Democratic Republic of Vietnam is proclaimed!"
-		command = { type = add_corps which = "1st North Vietnam Army" value = land where = 1395 }
-		command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
-		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
-		command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
 		command = { type = independence which = U72 }
 		command = { type = relation which = U72 value = -50 }
 		command = { type = dissent value = 5 }		
@@ -158,17 +154,17 @@ event = {
 	action = {
 		name = "Made a new puppet Vietnamese State"
 		command = { type = dissent value = -3 }		
-		command = { type = relation which = U27 value = -50 }
+		command = { type = relation which = U72 value = -50 }
 		command = { type = independence which = VIE }
 		}
 }
 event = {
 	id = 90001006
 	random = no
-	country = U27
+	country = U72
 	
 	trigger = {
-		exists = U27
+		exists = U72
 		event = 90001004
 	}
 	
@@ -182,15 +178,19 @@ event = {
 	deathdate = { day = 29 month = january year = 1951 }
 
 	action = {
-	name = "Create the Army"
-	command = { type = add_corps which = "1st Vietcong Army" value = land where = 1395 }
-	command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "4th Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
+		name = "Create the Army and setup the State"
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = free_market value = 1 }
+		command = { type = set_domestic which = freedom value = 2 }			
+		command = { type = add_corps which = "1st Vietcong Army" value = land where = 1395 }
+		command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "4th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
 	}
 }
 event = {
@@ -199,7 +199,7 @@ event = {
 	country = VIE
 	
 	trigger = {
-		exists = U27
+		exists = U72
 		event = 90001005
 	}
 	
@@ -213,16 +213,16 @@ event = {
 	deathdate = { day = 29 month = january year = 1952 }
 
 	action = {
-	name = "Create the Army"
-	command = { type = add_corps which = "1st South Vietnam Army" value = land where = 1397 }
-	command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
-	command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
-	command = { type = add_corps which = "1st South Vietnam Army" value = land where = 1397 }
-	command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
-	command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
+		name = "Create the Army"
+		command = { type = add_corps which = "1st South Vietnam Army" value = land where = 1397 }
+		command = { type = add_division which = "1st Rifle Division" value = infantry when = 12 }
+		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 12 }
+		command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+		command = { type = add_division which = "3rd Rifle Division" value = infantry when = 12 }
+		command = { type = add_corps which = "1st South Vietnam Army" value = land where = 1397 }
+		command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+		command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
 	}
 }
 event = {
@@ -246,7 +246,7 @@ event = {
 	# Let's ask Americans and Chinese for assistance (they may help but also give Vietnam to Chinese)
 	action = {
 		name = EVT_8228001_A
-		ai_chance = 60
+		ai_chance = 50
 		trigger = { 
 			OR = {
 				alliance = { country = USA } 
@@ -275,7 +275,7 @@ event = {
 	# Provide limited support
 	action = {
 		name = EVT_8228001_B
-		ai_chance = 8
+		ai_chance = 15
 		command = { type = dissent value = 14 }
 		command = { type = setflag which = french_limited_support_in_vietnam }
 		command = { type = manpowerpool value = -20 }
@@ -286,8 +286,8 @@ event = {
 	
 	# Prepare to leave Indochina
 	action = {
-		name = EVT_8228001_C
-		ai_chance = 2
+		name = EVT_8228001_D
+		ai_chance = 5
 		command = { type = dissent value = 20 }
 		command = { type = domestic which = interventionism value = -2 }
 		command = { type = end_mastery which = U03 }
@@ -302,7 +302,6 @@ event = {
 }
 
 ### USA responds to the French
-
 event = {
 	id = 8228002
 	country = USA
@@ -328,14 +327,14 @@ event = {
 	# Let's stay neutral
 	action = {
 		name = EVT_8228002_B
-		ai_chance = 30
+		ai_chance = 25
 		command = { type = relation which = U01 value = -50 }
 	}
 	
 	# Help the French at once!
 	action = {
 		name = EVT_8228001_C
-		ai_chance = 10
+		ai_chance = 15
 		command = { type = dissent value = 10 }
 		command = { type = domestic which = interventionism value = 1 }
 		command = { type = relation which = U01 value = 100 }
@@ -360,14 +359,14 @@ event = {
 	# Never!
 	action = {
 		name = EVT_8228003_A
-		ai_chance = 75
+		ai_chance = 60
 		command = { type = domestic which = interventionism value = -1 }
 	}
 	
 	# Let's attack the South
 	action = {
 		name = EVT_8228003_B
-		ai_chance = 25
+		ai_chance = 40
 		command = { type = war which = U72 }
 		command = { type = war which = VIE }
 		command = { type = dissent value = 20 }
@@ -512,7 +511,7 @@ event = {
 
 	action = {
 		name = EVT_8228020_A #"Great to see!"
-		ai_chance = 100
+		ai_chance = 80
 		command = { trigger = { random = 15 } type = add_division value = infantry when = 12 }
 		command = { trigger = { NOT = { flag = CHI_won_civil_war } } type = add_division value = militia when = 7 }
 		command = { trigger = { random = 5 } type = add_division value = militia when = 7 }
@@ -520,7 +519,7 @@ event = {
 
 	action = {
 		name = EVT_8228020_B #"We want supplies instead"
-		ai_chance = 0
+		ai_chance = 20
 		command = { type = supplies value = 1000 }
 	}	
 }
@@ -545,7 +544,7 @@ event = {
 
 	action = {
 		name = EVT_8228021_A #"Great to see!"
-		ai_chance = 100
+		ai_chance = 80
 		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
 		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
 		command = { trigger = { random = 50 } type = add_division value = militia when = 7 }
@@ -558,7 +557,7 @@ event = {
 
 	action = {
 		name = EVT_8228021_B #"We want supplies instead"
-		ai_chance = 0
+		ai_chance = 20
 		command = { type = supplies value = 1000 }
 	}	
 }

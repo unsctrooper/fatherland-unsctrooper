@@ -3,7 +3,6 @@
 # ##########################
 # 8014200 - Molotov take the power - v
 
-
 # 8014201 - The congress of Communist Party of Soviet Union
 # 8014202 - Rapporti con la Siberia
 # 8014203 - Risposta Siberia all'invito Sovietico
@@ -28,12 +27,6 @@
 
 # 8014220 - Fine del congresso del PCUS (Molotov)
 
-
-
-
-
-
-# 8014200 - Molotov take the power
 event = {
 	id = 8014200
 	random = no
@@ -44,37 +37,31 @@ event = {
 		event = 8014266 # Soviet Union - 8014266 - Who's in charge ?
 		event = 8014267 # Soviet Union - 8014267 - Purges (Molotov)
 	} 
+	
 	name = "Molotov take the power"
 	desc = "Moving inside the Communist Party of Soviet Union Molotov take the full power taking with his men the main places in the Party's burocracy. His first announce is a call of a Party Congress in 1 month from today."
 	style = 0
 	picture = "Mol_Rib" 
+	
 	date = { day = 1 month = january year = 1949 }
 	offset = 5
 	deathdate = { day = 12 month = march year = 1966 }
 
 	action = {
-		name = "Ok"
-		command = { type = belligerence value = -1 }
-		
-        command = { type = dissent value = 2 }
-		
+		name = "The new secretary of the Communist Party of Soviet Union : Molotov"
+		command = { type = belligerence value = -1 }		
+        command = { type = dissent value = 2 }		
 		command = { type = manpowerpool value = 25 }
-		#	type = 	set_domestic which = [domestic policy type] value = X	
-		# [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism]
-		
+		command = { type = set_domestic which = political_left value = 9}
 		command = { type = peacetime_ic_mod value = 5 }
         command = { type = tc_mod value = 5 }		
-        command = { type = research_mod value = 5 }		
-		
+        command = { type = research_mod value = 5 }				
 		command = { type = delay value = 3 }
-		
 		command = { type = intelligence value = 1 }
-		
 		command = { type = morale which = land value = 5 }
 	}
 }
 
-# 8014201 - Congresso del PCUS
 event = {
 	id = 8014201
 	random = no
@@ -85,87 +72,89 @@ event = {
 		event = 8014200 # 8014200 - Molotov
 	} 
 	
-	name = "The congress of Communist Party of Soviet Union"
-	desc = "The congress of Communist Party of Soviet Union for a reorganization of the new Soviet Union" 
+	name = "The XVIII Congress of the Communist Party of Soviet Union"
+	desc = "A month after his power grab Molotov party holds a Congress that will define the future of the Union" 
 	style = 0
-	picture = "soviet_warposter" 
+	picture = "tva" 
+	
 	date = { day = 1 month = january year = 1949 }
 	offset = 30
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
-		name = "Inizio dei lavori"
+		name = "The Congress starts"
         command = { type = dissent value = -1 }
-		command = { type = morale which = land value = 1 }		
+		command = { type = morale which = land value = 1 }	
+		command = { type = money value = -200 }
 	}
 }
 
-# 8014202 - Rapporti con la Siberia
 event = {
-id = 8014202
-random = no
-country = SOV 
-trigger = {  
-		headofstate = 30012 # Molotov
-		headofgovernment = 30016 # Molotov
-		event = 8014201 # 8014200 - Molotov
-} 
-name = "The Soviet Union and the Siberia"
-desc = "We advance a offerat to Dzhanov to return peacefully with us"
-style = 0
-picture = "soviet_warposter" 
+	id = 8014202
+	random = no
+	country = SOV 
+	trigger = {  
+			headofstate = 30012 # Molotov
+			headofgovernment = 30016 # Molotov
+			event = 8014201 # 8014200 - Molotov
+	} 
+	name = "XVII Congress - Relations with Siberia"
+	desc = "We must return to a Soviet Union strong and independent, we need the Siberia and its resources. Dzhanov is a reasonable person and with the proposal to join the Government probably will allow a peaceful integration of the Siberian Republic"
+	style = 0
+	picture = "soviet_warposter" 
+	
 	date = { day = 1 month = january year = 1949 }
 	offset = 1
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
 		ai_chance = 90
-		name = "Ok"
+		name = "Advance a diplomatic solution to Dzhanov"
 		command = { type = set_relation which = SIB value = 50 }
-		command = { type = trigger which = 8014203 } # risposta Siberia
+		command = { type = trigger which = 8014203 }
 	}
 	
 	action = {
 		ai_chance = 10
-		name = "No, it's time for war"
+		name = "No, we solve the problem by force"
 		command = { type = set_relation which = SIB value = -50 }
-		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
+		command = { type = trigger which = 8014270 } 
 	}
 }
 
-# 8014203 - Risposta Siberia all'invito Sovietico
 event = {
 	id = 8014203
 	random = no
 	country = SIB 
 
 	name = "The Soviet Union and Siberia"
-	desc = "It's time to back home ?"
+	desc = "The Soviet Union is asking us to return in the Union and offers to a Government place to Dzanhov. It's time to back home ?"
 	style = 0
 	picture = "soviet_warposter" 
+
 	action = {
-	ai_chance = 90
-		name = "Yes, return in the Union"
+		ai_chance = 90
+		name = "Yes, return in the Union to spread a new socialism !"
 		command = { type = set_relation which = SOV value = 50 }
-		command = { type = trigger which = 8014204 } # 8014204 - La Siberia ha accettato la nostra proposta	
+		command = { type = trigger which = 8014204 } 
 	}
 	
 	action = {
 		ai_chance = 10
-		name = "No! Your communism is not the our"
+		name = "No! Our vision of socialism is different"
 		command = { type = set_relation which = SOV value = -50 }
-		command = { type = trigger which = 8014205 } # 8014205 - La Siberia ha rifiutato la nostra proposta		
-		command = { type = trigger which = 8014270 } # 8014270 - War Siberia - Soviet Union in Siberia file			
+		command = { type = trigger which = 8014205 } 
+		command = { type = trigger which = 8014270 } 
 	}
+	
 }
 
-# 8014204 - La Siberia ha accettato la nostra proposta
 event = {
 	id = 8014204
 	random = no
 	country = SOV 
 	name = "Welcome back Siberia !"
-	desc = "The Siberia has accepted our proposal !"
+	desc = "The Siberia has accepted our proposal"
 	style = 0
 	picture = "soviet_warposter" 
 
@@ -177,24 +166,22 @@ event = {
 	
 }
 
-# 8014205 - La Siberia ha rifiutato la nostra proposta e ci ha dichiarato guerra !
 event = {
 	id = 8014205
 	random = no
 	country = SOV 
-	name = "Siberia has rejected our proposal"
-	desc = "Siberia has rejected our proposal"
+	name = "Siberia wants to remain independent"
+	desc = "Siberia wants to remain independent and refused our proposal"
 	style = 0
 	picture = "soviet_warposter" 
 
 	action = {
-		name = "Ok"
+		name = "We can't afford a separate Siberia"
 		command = { type = set_relation which = SIB value = -200 }		
 	}
 
 }
 
-# 8014206 - Dzhanov arriva al congresso e Molotov annuncia un suo ingresso nel governo e il reintegro della Siberia nell'URSS
 event = {
 	id = 8014206
 	random = no
@@ -203,22 +190,21 @@ event = {
 		event = 8014204 # 8014204 - La Siberia ha accettato la nostra proposta
 	} 
 	
-	name = "Dzhanov arrives at Congress"
-	desc = "Dzhanov arrives at Congress and Molotov announces its entry into the Government and the reintegration of Siberia"
+	name = "Dzanhov comes to Congress"
+	desc = "Dzanhov comes to Congress and announces to the audience Molotov his entry into Government and the reintegration of Siberia in the Union"
 	style = 0
-	picture = "soviet_warposter" 
+	picture = "tva" 
 	date = { day = 1 month = january year = 1949 }
 	offset = 5
 	deathdate = { day = 12 month = march year = 1966 }
 	
 	action = {
-		name = "Hurrah !"
+		name = "Dzhanov is the new HoG and Siberia return in the Union"
 		command = { type = inherit which = SIB value = 1} 
-		# command = { type = headofgovernment which = ? } # Dzhanov 	
+		command = { type = headofgovernment which = 30018 } # Dzhanov 	
 	}
 }
 
-# 8014207 - Approcciamo anche la repubblica del Far East ?
 event = {
 	id = 8014207
 	random = no
@@ -227,8 +213,8 @@ event = {
 			headofstate = 30012 # Molotov
 			event = 8014206
 	} 
-	name = "The Soviet Union and the Far Eastern Republic"
-	desc = "It's time to back home ?"
+	name = "Relations with Far Eastern Republic"
+	desc = "We must return to a Soviet Union strong and independent, we need the Far Eastern Republic and its resources."
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -237,26 +223,26 @@ event = {
 	
 	action = {
 		ai_chance = 90
-		name = "Ok"
+		name = "Advance a diplomatic solution"
 		command = { type = set_relation which = U57 value = 50 }
 		command = { type = trigger which = 8014208 } # 8014208 - Risposta Far East
 	}
 	
 	action = {
 		ai_chance = 10
-		name = "No, not now"
+		name = "No, we solve the problem by force"
 		command = { type = set_relation which = U57 value = -50 }
+		command = { type = trigger which = 8014284 }
 	}
 
 }
 
-# 8014208 - Risposta Far East
 event = {
 	id = 8014208
 	random = no
 	country = U57 
 
-	name = "The Soviet Union and the Far Eastern Republic"
+	name = "XVII Congress - The Soviet Union and the Far Eastern Republic"
 	desc = "It's time to back home ?"
 
 	style = 0
@@ -305,7 +291,8 @@ event = {
 
 	action = {
 		name = "We will solve the problem in a near future"
-		command = { type = set_relation which = U57 value = -50 }		
+		command = { type = set_relation which = U57 value = -50 }
+		command = { type = trigger which = 8014284 }
 	}
 
 }
@@ -320,7 +307,7 @@ event = {
 		event = 8014206 # Siberia inerhit by URSS
 		exists = U59
 	} 
-	name = "The Soviet Union and the Empire of Russia"
+	name = "XVII Congress - The Soviet Union and the Empire of Russia"
 	desc = "No compromise with the zarists!"
 	style = 0
 	picture = "soviet_warposter" 
@@ -344,7 +331,7 @@ event = {
 		event = 8014206 # Siberia inerhit by URSS
 		exists = MON
 	} 
-	name = "The Soviet Union and the Mongolia"
+	name = "XVII Congress - The Soviet Union and the Mongolia"
 	desc = "They will back in our sphere of influence"
 	style = 0
 	picture = "soviet_warposter" 
@@ -365,14 +352,14 @@ event = {
 	country = SOV 
 	trigger = { 
 		headofstate = 30012 # Molotov
-		event = 8014203 # 8014201 - Congresso del PCUS
+		event = 8014201 # 8014201 - Congresso del PCUS
 	} 
-	name = "Reorganization of the Red Army"
+	name = "XVII Congress - Reorganization of the Red Army"
 	desc = "It's time to made a complete reorganization of the Red Army" 
 	style = 0
 	picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
-	offset = 2
+	offset = 10
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {#OK
 		ai_chance = 90
@@ -403,7 +390,7 @@ event = {
 		headofstate = 30012 # Molotov
 		event = 8014213 # 8014213 - Riorganizzazione dell'esercito
 	} 
-	name = "Reorganization of industries" 
+	name = "XVII Congress - Reorganization of industries" 
 	desc = "Reorganization of industries." 
 	style = 2
 	picture = "soviet_warposter" 
@@ -436,7 +423,7 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014214 # 8014214 - Riorganizzazione dell'amministrazione e dell'industria
 } 
-name = "Reorganization of economy" 
+name = "XVII Congress - Reorganization of economy" 
 desc = "Reorganization of economy" 
 style = 0
 picture = "soviet_warposter" 
@@ -479,7 +466,7 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014215 # 8014215 - Rilancio dell'economia
 } 
-name = "Agricultural reform" # Réforme agricole
+name = "XVII Congress - Reorganization of agricolture" # Réforme agricole
 desc = "Soviet campaigns have suffered enormously, especially during winter 32-33. Having ousted Stalin, we can choose more rational ways"
 style = 0
 picture = "soviet_warposter" 
@@ -522,7 +509,7 @@ event = {
 			headofstate = 30012 # Molotov
 			event = 8014216 # 8014216 -  Riforma agricola
 	} 
-	name = "Foreign policy - Allies" 
+	name = "XVII Congress - Foreign policy - Allies" 
 	desc = "The Congress is gathered to decide on lattitude to adopt to countries that are not (yet) Communists legard."
 	style = 0
 	picture = "soviet_warposter" 
@@ -577,7 +564,7 @@ event = {
 			headofstate = 30012 # Molotov
 			event = 8014217 # 8014216 -  Politica estera - Alleati
 	} 
-	name = "Foreign Policy - Axis"
+	name = "XVII Congress - Foreign Policy - Axis"
 	desc = "The Congress is gathered to decide on lattitude to adopt to countries that are not (yet) Communists legard."
 	style = 0
 	picture = "soviet_warposter" 
@@ -614,7 +601,7 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014218 # 8014218 -  Politica estera - Asse
 } 
-name = "Foreign Policy - Neutral" # IXème Congrès du komintern
+name = "XVII Congress - Foreign Policy - Neutrals" # IXème Congrès du komintern
 	desc = "The Congress is gathered to decide on lattitude to adopt to countries that are not (yet) Communists legard."
 style = 0
 picture = "parliamentary_scandal" 
@@ -646,7 +633,7 @@ trigger = {
 		headofstate = 30012 # Molotov
 		event = 8014219 # 8014219 - Politica estera - Neutrali
 } 
-name = "End of Congress"
+name = "XVII Congress - End of Congress"
 desc = "End of Congress"
 style = 0
 picture = "soviet_warposter" 

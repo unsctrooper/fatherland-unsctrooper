@@ -1,15 +1,16 @@
-##### Generic decisions/events
-### ??
-################################
+#####################################
+# Fatherland Generic decisions/events
+#####################################
+
+#####################################
 # Grand Offensive - GER
-################################
+#####################################
 event = {
 	id = 1300002
 	random = no
 	country = GER
 	
 	decision = { atwar = yes }
-
 	decision_trigger = { supplies = 10000 }
 
 	trigger = {
@@ -86,9 +87,9 @@ event = {
 	}
 }
 
-################################
+#####################################
 # Grand Offensive - SOV
-################################
+#####################################
 event = {
 	id = 1300004
 	random = no
@@ -183,9 +184,9 @@ event = {
 	}
 }
 
-################################
+#####################################
 # Grand Offensive - ENG
-################################
+#####################################
 event = {
 	id = 1300006
 	random = no
@@ -264,9 +265,9 @@ event = {
 	}
 }
 
-################################
+#####################################
 # Grand Offensive - JAP
-################################
+#####################################
 event = {
 	id = 1300008
 	random = no
@@ -355,9 +356,9 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#####################################
 # Grand Offensive - USA
-################################
+#####################################
 event = {
 	id = 13000010
 	random = no
@@ -435,13 +436,13 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
-# Grand Offensive - U08
-################################
+#####################################
+# Grand Offensive - U01 - Free France
+#####################################
 event = {
 	id = 13000012
 	random = no
-	country = U08
+	country = U01
 
 	decision = { atwar = yes }
 
@@ -492,7 +493,7 @@ event = {
 event = {
 	id = 1300013
 	random = no
-	country = U08
+	country = U01
 
 	name = "GrandOffensiveOverName"
 	desc = "GrandOffensiveDesc" 
@@ -519,9 +520,9 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#####################################
 # Grand Offensive - FRA
-################################
+#####################################
 event = {
 	id = 13000014
 	random = no
@@ -602,9 +603,9 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#####################################
 # Grand Offensive - RUS
-################################
+#####################################
 event = {
 	id = 13000016
 	random = no
@@ -684,13 +685,13 @@ event = {
 	}
 }
 
-################################
-# Grand Offensive - U09
-################################
+#####################################
+# Grand Offensive - ITA
+#####################################
 event = {
 	id = 13000018
 	random = no
-	country = U09
+	country = ITA
 
 	decision = { atwar = yes }
 
@@ -740,7 +741,7 @@ event = {
 event = {
 	id = 1300019
 	random = no
-	country = U09
+	country = ITA
    
 	name = "GrandOffensiveOverName"
 	desc = "GrandOffensiveDesc" 

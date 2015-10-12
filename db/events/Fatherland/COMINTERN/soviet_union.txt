@@ -15,8 +15,15 @@
 # 8014268 - The Great Purges II (Beria)
 # 8014269 - The Great Purges II (Zhukov)
 
-# ##################################################################################
+# ##########################
+# ## Flavours
+# ##########################
+# 8014291 - 1st May of a new decade
+# 8014292 - 35th Anniversary of October's Revolution
+
+##########################
 # The Sleeping Bear, 1948
+##########################
 event = {
 	id = 8014250
 	random = no
@@ -39,7 +46,7 @@ event = {
 }
 
 ##########################
-### A Gold Opportunity (If GER is at war with UK before the 1950 is a gold opportunity for revamp Soviet Union!)
+# A Gold Opportunity (If GER is at war with UK before the 1950 is a gold opportunity for revamp Soviet Union!)
 ##########################
 
 event = { # A Gold Opportunity
@@ -69,9 +76,8 @@ action = {
 	}
 }
 
-
 ############################################
-### Round III - Soviet Leadership Crisis ###
+# Soviet Leadership Crisis ###
 ############################################
 
 event = {
@@ -99,6 +105,10 @@ event = {
         command = { type = dissent value = 5 }
 	}
 }
+
+#####################################
+# Who's in charge?
+#####################################
 event = {
 	id = 8014266
 	random = no
@@ -121,7 +131,7 @@ event = {
 
 	action = {
 		name = "8014266A" # Molotov (Burocracy)
-		ai_chance = 50
+		ai_chance = 40
         command = { type = dissent value = 10 }
 		command = { type = trigger which = 8014267 }
 		# command = { type = trigger which = 8014270 }
@@ -139,7 +149,7 @@ event = {
 		command = { type = trigger which = 8014268 }
 		command = { type = trigger which = 8014270 }
 		command = { type = set_domestic which = democratic value = 1 }
-		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = set_domestic which = political_left value = 10 }
 		command = { type = set_domestic which = free_market value = 4 }
 		command = { type = set_domestic which = freedom value = 1 }
 		command = { type = headofstate which = 30152 } # Beria
@@ -147,7 +157,7 @@ event = {
 	}
 	action = {
 		name = "8014266C" # Voroshilov / Zhukov (Red Army)
-		ai_chance = 20
+		ai_chance = 30
         command = { type = dissent value = 10 }
 		command = { type = trigger which = 8014269 }
 		# command = { type = trigger which = 8014270 }
@@ -159,6 +169,12 @@ event = {
 		command = { type = headofgovernment which = 30153 } # Zhukov
 	}
 }
+#####################################
+# The Great Purges II
+# 8014267 - The Great Purges II (Molotov)
+# 8014268 - The Great Purges II (Beria)
+# 8014269 - The Great Purges II (Zhukov)
+#####################################
 event = {
 	id = 8014267
 	random = no
@@ -337,6 +353,11 @@ event = {
 	}
 }
 
+# ##########################
+# ## Flavours
+# ##########################
+# 8014291 - 1st May of a new decade
+# 8014292 - 35th Anniversary of October's Revolution
 event = {
 	id = 8014291
 	random = no
@@ -346,9 +367,6 @@ event = {
 	
 	name = "1st May of a new decade"
 	desc = "A great parade has been organized for the celebration of the 1st of May. Workers, communist youth and military personnel are marching in a grand and colorful procession in honor of their Communist leaders and their Workers' State."
-	
-	#Un grand défilé est organisé pour le 1er mai. Les travailleurs, les jeunesses communistes et les #militaires défilent en une grande procession colorée devant les leaders du parti communiste.
-	
 	style = 0
 	picture = "SCW_soviet_intervention"
 	action = {
@@ -366,7 +384,7 @@ event = {
 
 	date = { day = 7 month = november year = 1952 }
 	
-	name = "35 Anniversary of October's Revolution"
+	name = "35th Anniversary of October's Revolution"
 	desc = "C'est le vingtième anniversaire de la révolution d'octobre 1917 qui marque le début du régime bolchevique en Russie. Dans la nuit du 24 au 25 octobre 1917 (dans l'ancien calendrier tsariste, ce qui correspond à la nuit du 6 au 7 novembre), Lénine et Trotsky lancent une insurrection à Petrograd (Saint-Pétersbourg) qui débute par la prise du Palais d'Hiver."
 	style = 0
 	picture = "news_paper"
@@ -376,5 +394,3 @@ event = {
 		command = { type = money value = -100 } 
 		}
 	}
-	
-	

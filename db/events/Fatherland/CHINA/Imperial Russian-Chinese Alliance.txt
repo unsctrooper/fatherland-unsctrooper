@@ -85,7 +85,7 @@ event = {
 
 	action = {
 	name = "Rekindle a lost friendship - accept alliance."
-	ai_chance = 50
+	ai_chance = 40
 	command = { type = alliance which = U59 }
 	command = { type = domestic which = interventionism value = 1 }
 	command = { type = domestic which = defense_lobby value = 1 }
@@ -96,7 +96,7 @@ event = {
 	
 	action = {
 	name = "We do not need this pathetic neo-Tsarist rabble."
-	ai_chance = 50
+	ai_chance = 60
 	command = { type = relation which = U59 value = -10 }
 	}
 	}
@@ -133,7 +133,7 @@ event = {
 	
 	trigger = {
 	alliance = { country = -1 country = U59 }	
-	war = { country = SOV country = U59 }	
+		war = { country = SOV country = U59 }	
 	}
 
 	name = "EVT_8200303_NAME"
