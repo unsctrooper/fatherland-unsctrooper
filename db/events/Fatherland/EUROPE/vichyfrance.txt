@@ -30,7 +30,7 @@ event = {
 	name = 350NAME #Armistice at Compiègne
 	desc = 350DESC
 
-	action_a = {
+	action = {
 		name = "350A" #Damn!
 		command = { type = peacetime_ic_mod value = -10 } # Puts France IC modifier to 0.5
 		command = { type = trade which = GER where = FRA  supplies = 10 money = 15 when = 1500 value = 1 } 
@@ -271,7 +271,7 @@ event = {
 
 	trigger = {
 		flag = UltraVichy	
-		random = 20
+		random = 10
 	}
 	
 	date = { day = 1 month = january year = 1948 }

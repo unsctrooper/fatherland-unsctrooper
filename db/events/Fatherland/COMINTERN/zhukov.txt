@@ -321,8 +321,7 @@ event = {
 	action = {
 		name = "Hurrah !"
 		command = { type = dissent value = -1 }
-		# ereditare la siberia
-		# command = { type = trigger which = 8014206 } # 8014206 - Dzhanov annuncia un suo ingresso nel governo	
+		command = { type = inherit which = U57 value = 1 }
 	}
 	
 }

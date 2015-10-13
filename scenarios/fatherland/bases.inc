@@ -361,17 +361,17 @@ province = { id = 2023   # Santiago de Chile - Chile - Andes
  
  #.#.# China com 
  
-province = { id = 1255   # Pingliang - Shaanxi - China
-   landfort = 3 
- } 
+#province = { id = 1255   # Pingliang - Shaanxi - China
+ #  landfort = 3 
+# } 
  
-province = { id = 1259   # Yan'an - Shaanxi - China
-   landfort = 3 
- } 
+#province = { id = 1259   # Yan'an - Shaanxi - China
+  # landfort = 3 
+ #} 
  
-province = { id = 1260   # Yulin - Shaanxi - China
-   landfort = 3 
- } 
+#province = { id = 1260   # Yulin - Shaanxi - China
+ #  landfort = 3 
+ #} 
  
  #.#.# China Fengtian 
  

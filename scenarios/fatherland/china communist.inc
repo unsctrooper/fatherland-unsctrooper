@@ -35,7 +35,7 @@
 	ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes} }	
    intrinsic_gov_type     = leninist 
    extra_tc               = 7 
-   capital                = 1259 # Yan'an 
+   capital                = 1247 # Beijing
    # Resource Reserves 
 energy                 = 240
 metal                  = 120

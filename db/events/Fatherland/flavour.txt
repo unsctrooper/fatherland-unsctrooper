@@ -900,8 +900,12 @@
 		name = "Damn!"
 		ai_chance = 100
 		
-		command = { type = dissent value = 1 } 
-		command = { type = revolt which = 1015 }											
+		command = { type = dissent value = 5 } 
+		command = { type = revolt which = 1015 }	
+		command = { type = revolt which = 1015 }
+		command = { type = revolt which = 1015 }
+		command = { type = revolt which = 1015 }
+		command = { type = revolt which = 1015 }		
 		}
 }
 #########################################################################
@@ -979,9 +983,14 @@ event = {
 		name = "Damn!"
 		ai_chance = 100
 		
-		command = { type = dissent value = 2 }
+		command = { type = dissent value = 10 }
 		command = { type = revolt which = 1029 }	
-		command = { type = revolt which = 1036 }
+		command = { type = revolt which = 1029 }
+		command = { type = revolt which = 1029 }	
+		command = { type = revolt which = 1036 }	
+		command = { type = revolt which = 1036 }	
+		command = { type = revolt which = 1036 }	
+		
 		}
 }
 

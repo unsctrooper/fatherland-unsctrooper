@@ -608,7 +608,8 @@ event = { # Soviet Defeat - Dzhanov
 	id = 8014278
 	random = no
 	country = SIB
-
+	save_date = yes
+	
 	trigger = {
     war = { country = SIB country = SOV }
 	control = { province = 1138 data = SIB }

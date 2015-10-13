@@ -49,8 +49,10 @@ country = {
 		interventionism   = 5 
     } 
 
-	headofstate = {  type = 9 id = 30012  } # Molotov
-	headofgovernment = {  type = 9 id = 30017  } # Beria
+	#headofstate = {  type = 9 id = 30012  } # Molotov
+	#headofgovernment = {  type = 9 id = 30017  } # Beria
+	headofstate = {  type = 9 id = 30001  } # Kalinin
+	headofgovernment = {  type = 9 id = 30002  } # KPSS	
 	foreignminister = {  type = 9 id = 30021  } # Molotov
 	armamentminister = {  type = 9 id = 30004  } # Kaganovich
 	ministerofsecurity = {  type = 9 id = 30028  } # Beria
@@ -59,7 +61,7 @@ country = {
 	chiefofarmy = {  type = 9 id = 30072  } # Zhukov
 	chiefofnavy = {  type = 9 id = 30049  } # Kuznetsov
 	chiefofair = {  type = 9 id = 30143  } # Zhigarev
-	dormant_ministers = {  30003 30005 30007 30009 30006 30010 30026 30027 30032 30033 30048 30002 30011 30046 30076 30144 }
+	dormant_ministers = {  30003 30005 30007 30009 30006 30010 30026 30027 30032 30033 30048 30011 30046 30076 30144 }
 	dormant_leaders = {  30050 30040 30042 30044 30085 30095 30097 30101 30108 30111 30127 30131 30135 30152 30156 30170 30175 30192 30194 30207
 						   30217 30220 30229 30232 30243 30255 30267 30272 30315 30316 30338 30339 30403 30409 30416 30454 30472 30477 30484 30487
 						   30498 30523 30543 30547 30550 30570 30571 30572 30602 30618 30654 30664 30673 30678 30701 30715 30716 30717 30718 30719

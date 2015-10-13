@@ -27,7 +27,7 @@ event = {
 		AND = {
 			event = { id = 8014280 days = 180 } 
 			NOT = { exists = SIB }
-			NOT = { exists = U59 }		
+			#NOT = { exists = U59 }		
 		}
 	}
 	
@@ -222,6 +222,9 @@ event = {
 		name = "Hand it back to the Japan"
 		command = { type = relation which = JAP value = 25 }
 		command = { type = relation which = SOV value = -50 }	
+		command = { type = removeclaim which = 1541 }
+		command = { type = removeclaim which = 1542 }
+		command = { type = removeclaim which = 1543 }		
 		command = { type = secedeprovince which = JAP value = 1541 when = 1 }
 		command = { type = secedeprovince which = JAP value = 1542 when = 1 }
 		command = { type = secedeprovince which = JAP value = 1543 when = 1 }
@@ -241,6 +244,9 @@ event = {
 		name = "Hand it back to Japan"
 		command = { type = relation which = JAP value = 25 }
 		command = { type = relation which = SOV value = -50 }	
+		command = { type = removeclaim which = 1541 }
+		command = { type = removeclaim which = 1542 }
+		command = { type = removeclaim which = 1543 }				
 		command = { type = secedeprovince which = JAP value = 1541 when = 1 }
 		command = { type = secedeprovince which = JAP value = 1542 when = 1 }
 		command = { type = secedeprovince which = JAP value = 1543 when = 1 }
@@ -252,6 +258,9 @@ event = {
 		name = "Hand it back to the Soviets"
 		command = { type = relation which = SOV value = 25 }
 		command = { type = relation which = JAP value = -50 }	
+		command = { type = removeclaim which = 1541 }
+		command = { type = removeclaim which = 1542 }
+		command = { type = removeclaim which = 1543 }				
 		command = { type = secedeprovince which = SOV value = 1541 when = 1 }
 		command = { type = secedeprovince which = SOV value = 1542 when = 1 }
 		command = { type = secedeprovince which = SOV value = 1543 when = 1 }

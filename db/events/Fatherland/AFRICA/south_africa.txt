@@ -62,7 +62,7 @@ event = {
 		name = "The Herenigde Nasionale Party (HNP) won the elections!"
 		ai_chance = 70
 		
-		command = { type = dissent value = -5 }
+		command = { type = dissent value = 5 }
 		
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = set_domestic which = political_left value = 3 }
@@ -79,7 +79,7 @@ event = {
 		name = "The Democrat United Party (DUP) won the elections!"
 		ai_chance = 30
 	
-		command = { type = dissent value = -2 }
+		command = { type = dissent value = 2 }
 		
 		command = { type = set_domestic which = democratic value = 5 }
 		command = { type = set_domestic which = political_left value = 5 }
@@ -211,7 +211,7 @@ event = {
 			ideology = fascist
 			ideology = nazi
 		}
-				OR = {
+		OR = {
 			headofgovernment = 425018 # D. F. Malan
 			headofgovernment = 425076 # van Rensburg
 		}
@@ -223,7 +223,7 @@ event = {
 
 	action = {
 		name = "Shameful laws"
-		command = { type = dissent value = 10 }
+		command = { type = dissent value = 30 }
 		#command = { type = domestic which = democratic value = -1 }
 		#command = { type = domestic which = freedom value = -4 }
 	}
