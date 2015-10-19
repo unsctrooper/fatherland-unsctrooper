@@ -1,0 +1,278 @@
+event = {
+	id = 8006601
+	country = HAI
+
+	name = EVT_8006601_NAME
+	desc = EVT_8006601_DESC
+	picture = "nwo\paul_magloire"
+	style = 1
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 180
+	deathdate = { day = 29 month = june year = 1950 }
+
+	action = {
+		name = EVT_8006601_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 350088 } # Paul Magloire
+		command = { type = headofgovernment which = 350021 } # Paul Magloire
+		command = { type = foreignminister which = 350027 } # Dr Georges Rigaud
+		command = { type = armamentminister which = 350038 } # Jean Francois Duvalier
+		command = { type = ministerofsecurity which = 350049 } # Gusley Vildrouin
+		command = { type = ministerofintelligence which = 350059 } # Dr Georges Rigaud
+		command = { type = chiefofstaff which = 350069 } # Antoine Levelt
+		command = { type = chiefofarmy which = 350074 } # Antoine Levelt
+		command = { type = chiefofnavy which = 350079 } # Georges L?ger
+		command = { type = chiefofair which = 350084 } # Antoine Levelt
+	}
+}
+
+event = {
+	id = 8006602
+	country = HAI
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = july year = 1950 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 350014 } # Franck Lavaud
+		command = { type = headofgovernment which = 350021 } # Paul Magloire
+		command = { type = foreignminister which = 350027 } # Dr Georges Rigaud
+		command = { type = armamentminister which = 350039 } # Louis Dejoie
+		command = { type = ministerofsecurity which = 350053 } # Antoine Levelt
+		command = { type = ministerofintelligence which = 350059 } # Dr Georges Rigaud
+		command = { type = chiefofstaff which = 350069 } # Antoine Levelt
+		command = { type = chiefofarmy which = 350074 } # Antoine Levelt
+		command = { type = chiefofnavy which = 350079 } # Georges L?ger
+		command = { type = chiefofair which = 350084 } # Antoine Levelt
+	}
+}
+
+event = {
+	id = 8006603
+	country = HAI
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 350200 } # Francois Duvalier
+		command = { type = headofgovernment which = 350201 } # Francois Duvalier
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 350012 } # Louis Déjoie
+		command = { type = headofgovernment which = 350202 } # Louis Déjoie
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8006604
+	country = HAI
+
+	name = EVT_DEATH_NAME
+	desc = EVT_DEATH_DESC
+	picture = nwo\death
+	style = 1
+
+	date = { day = 0 month = january year = 1971 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action = {
+		name = EVT_DEATH
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = sleepminister which = 350200 } # François Duvalier
+		command = { type = sleepminister which = 350201 } # François Duvalier
+		command = { type = headofstate which = 350203 } # Jean-Claude Duvalier
+		command = { type = headofgovernment which = 350204 } # Jean-Claude Duvalier
+	}
+}
+
+event = {
+	id = 8006605
+	country = HAI
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1986 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1987 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 350205 } # Henri Namphy
+		command = { type = headofgovernment which = 350206 } # Henri Namphy
+	}
+}
+
+event = {
+	id = 8006606
+	country = HAI
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 350207 } # Prosper Avril
+		command = { type = headofgovernment which = 350208 } # Prosper Avril
+	}
+}
+
+event = {
+	id = 8006607
+	country = HAI
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1990 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 350209 } # Ertha Pascal-Trouillot
+		command = { type = headofgovernment which = 350210 } # Ertha Pascal-Trouillot
+	}
+}
+
+event = {
+	id = 8006608
+	country = HAI
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1991 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 350211 } # Jean-Bertrand Aristide
+		command = { type = headofgovernment which = 350212 } # Jean-Bertrand Aristide
+	}
+}
+
+event = {
+	id = 8006609
+	country = HAI
+
+	name = EVT_8006609_NAME
+	desc = EVT_8006609_DESC
+	picture = "nwo\hurricane"
+	style = 1
+
+	date = { day = 0 month = october year = 1954 }
+	offset = 20
+	deathdate = { day = 29 month = october year = 1954 }
+
+	action = {
+		name = EVT_8006609_A
+		command = { type = dissent value = 20 }
+	}
+
+}
+
+event = {
+	id = 8006610
+	country = HAI
+
+	name = EVT_8006610_NAME
+	desc = EVT_8006610_DESC
+	picture = "nwo\francois_duvalier"
+	style = 1
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8006610_A
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = freedom value = -3 }
+	}
+
+}
+
+event = {
+	id = 8006611
+	country = HAI
+
+	name = EVT_8006611_NAME
+	desc = EVT_8006611_DESC
+	picture = "nwo\francois_duvalier"
+	style = 1
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1983 }
+
+	action = {
+		name = EVT_8006611_A
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = freedom value = -2 }
+	}
+
+}

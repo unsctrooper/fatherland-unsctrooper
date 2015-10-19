@@ -1,0 +1,12 @@
+
+combat = {
+	ALB = 0
+}
+
+invasion = {
+
+		invasion = no
+ 	
+      
+	target = { } 
+} 

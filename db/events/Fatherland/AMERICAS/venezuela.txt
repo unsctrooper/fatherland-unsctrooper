@@ -13,7 +13,7 @@ event = {
 
 	date = { day = 0 month = january year = 1945 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1947 }
+	deathdate = { day = 29 month = december year = 1947 }
 
 	action = {
 		name = EVT_8017801_A
@@ -44,7 +44,7 @@ event = {
 
 	date = { day = 0 month = january year = 1948 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1948 }
+	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
 		name = EVT_ELECTIONS_LEFT
@@ -92,7 +92,7 @@ event = {
 
 	date = { day = 27 month = november year = 1948 }
 	offset = 1
-	deathdate = { day = 30 month = december year = 1950 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = EVT_8017803_A
@@ -132,7 +132,7 @@ event = {
 
 	date = { day = 0 month = january year = 1951 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = EVT_8017804_A
@@ -161,7 +161,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1952 }
+	deathdate = { day = 29 month = december year = 1952 }
 
 	action = {
 		name = EVT_8017805_A # We decide the results
@@ -210,7 +210,7 @@ event = {
 
 	date = { day = 0 month = january year = 1953 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = OK
@@ -239,7 +239,7 @@ event = {
 
 	date = { day = 0 month = january year = 1958 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1958 }
+	deathdate = { day = 29 month = december year = 1958 }
 
 	action = {
 		name = EVT_8017807_A # Sign it
@@ -280,7 +280,7 @@ event = {
 
 	date = { day = 0 month = january year = 1959 }
 	offset = 30
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = EVT_ELECTIONS_LEFT
@@ -305,3 +305,272 @@ event = {
 	}
 }
 
+event = {
+	id = 8017809
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1964 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1967 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180207 } # Raul Leoni
+		command = { type = headofgovernment which = 180208 } # Raul Leoni
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180200 } # Rafael Caldera
+		command = { type = headofgovernment which = 180201 } # Rafael Caldera
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8017810
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1968 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180200 } # Rafael Caldera
+		command = { type = headofgovernment which = 180201 } # Rafael Caldera
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180209 } # Gonzalo Barrios
+		command = { type = headofgovernment which = 180210 } # Gonzalo Barrios
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8017811
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180213 } # Carlos Andrés Pérez
+		command = { type = headofgovernment which = 180214 } # Carlos Andrés Pérez
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180211 } # Leonardo Fernandez
+		command = { type = headofgovernment which = 180212 } # Leonardo Fernandez
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8017812
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1983 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180215 } # Luis Herrera Campins
+		command = { type = headofgovernment which = 180216 } # Luis Herrera Campins
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180217 } # Luis Pinerua Ordaz
+		command = { type = headofgovernment which = 180218 } # Luis Pinerua Ordaz
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8017813
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1984 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1987 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180219 } # Jaime Lusinchi
+		command = { type = headofgovernment which = 180220 } # Jaime Lusinchi
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180200 } # Rafael Caldera
+		command = { type = headofgovernment which = 180201 } # Rafael Caldera
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8017814
+	country = VEN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180213 } # Carlos Andrés Pérez
+		command = { type = headofgovernment which = 180214 } # Carlos Andrés Pérez
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 180221 } # Eduardo Fernandez
+		command = { type = headofgovernment which = 180222 } # Eduardo Fernandez
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}

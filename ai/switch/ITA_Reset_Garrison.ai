@@ -1,0 +1,111 @@
+# Italy Reset Garrison after Ethiopia AI File by Lothos    db
+
+max_garrison_prop = 0.70
+min_garrison_prop = 0.60
+
+combat = { }
+target = { }
+liberate = { SCH SPA U66 U49 }
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+   	overseas_multiplier = 0.75
+	home_peace_cap 		= 80
+	war_zone_odds 		= 1.5
+	key_point_prio_mult	= 0.5
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 60	# Beach level 2
+	capital			= 140	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+   	unstable_border    = 10  # Bordering countries at war with someone else get this 
+
+	# Borders with specific countries
+	country_priorities = {
+		SCH = -1
+     		ENG = 10
+     		EGY = 60	
+     		FRA = 30 
+		AUS = -1
+		GER = -1
+		YUG = 30
+		SOV = 0.1
+		GRE = 100
+	}
+	province_priorities = {
+
+		#Homeland
+		422 = 90 
+		426 = 60
+		421 = 150
+		416 = 90
+		419 = 150 
+		412 = 90
+		400 = 90
+		
+		# Sisily
+		433 = 150
+		430 = 150
+		432 = 60
+		425 = 90
+
+		# French Border
+		398  = 90  #Turin
+		396  = 90  #Genoa
+
+		434  = 60  #Sardinia
+		379  = 30  #Rhodes
+		
+		# North Africa
+		752  = 50
+		750  = 90
+		757 = 30
+		756 = 30
+		759 = 30
+		763 = 30
+
+		761  = 90    # ben
+		765 = 90     # tobruk
+		767 = 60
+
+		771  = 90
+
+
+		769  = 20
+		770  = 20
+
+     		825  = 50  # Addis Adeba 
+		
+		# Albania prep for Greece invasion
+		360  = 100
+	
+
+		#Border with Egypt
+		772  = 60
+		770  = 60
+
+  
+     		825  = 30  # Addis Adeba 
+	}
+	area_multiplier = {
+		422  = 1.5  #Taranto
+	
+		434  = 1.2  #Sardinia
+		379  = 1.0  #Rhodes
+	
+		# North Africa
+		769  = 1.5
+		770  = 1.5
+		752  = 1.5
+
+		#825 = 1.1 # Addis Adeba
+	}
+}

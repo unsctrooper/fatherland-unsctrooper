@@ -95,7 +95,7 @@ event = {
 	deathdate = { day = 12 month = march year = 1966 }
 	action = {#OK
 		ai_chance = 90
-		name = "Ok"
+		name = "The glorious Red Army will rise again"
 		command = { type = max_organization which = infantry value = 10  }
 		command = { type = max_organization which = garrison value = 10  }
 		command = { type = max_organization which = militia value = 10  }
@@ -108,8 +108,8 @@ event = {
 	}
 	action = {#KO
 		ai_chance = 10
-		name = "NON è necessario"
-		command = { type = dissent value = 1 }
+		name = "Not now"
+		command = { type = dissent value = 5 }
 	}
 }
 
@@ -125,7 +125,7 @@ trigger = {
 		event = { id = 8014231 days = 5  }				
 } 
 name = "The Soviet Union and Siberia"
-desc = "We advance a offerat to Dzhanov to return peacefully with us"
+desc = "We advance a request to Dzhanov to return peacefully with us"
 style = 0
 picture = "soviet_warposter" 
 	date = { day = 1 month = january year = 1949 }
@@ -134,7 +134,7 @@ picture = "soviet_warposter"
 	
 	action = {
 		ai_chance = 60
-		name = "Yes, we welcome with open arms"
+		name = "Yes,welcome them with open arms"
 		command = { type = set_relation which = SIB value = 50 }
 		command = { type = trigger which = 8014233 } # risposta Siberia
 	}
@@ -232,6 +232,7 @@ event = {
 		ai_chance = 50
 		name = "Accept the proposal"
 		command = { type = dissent value = -1 }
+		command = { type = alliance which = SIB }
 		# alleanza con siberia e suoi alleati e guerra con zaristi	
 	}
 	action = {
@@ -358,6 +359,7 @@ event = {
 		ai_chance = 50
 		name = "Ok !"
 		command = { type = dissent value = -1 }
+				command = { type = alliance which = U57 }
 		# alleanza con FER
 	}
 	action = {

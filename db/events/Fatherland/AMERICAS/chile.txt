@@ -13,7 +13,7 @@ event = {
 
 	date = { day = 0 month = january year = 1946 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -63,7 +63,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -113,7 +113,7 @@ event = {
 
 	date = { day = 0 month = january year = 1958 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -137,6 +137,236 @@ event = {
 		name = "EVT_ELECTIONS_NOCHANGE"
 		ai_chance = 0
 		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003004
+	country = CHL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1964 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 210303 } # Eduardo Frei Montalva
+		command = { type = headofgovernment which = 210304 } # Eduardo Frei Montalva
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 210018 } # Salvador Allende
+		command = { type = headofgovernment which = 210029 } # Salvador Allende
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8003005
+	country = CHL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1970 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 210018 } # Salvador Allende
+		command = { type = headofgovernment which = 210029 } # Salvador Allende
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 211202 } # Jorge Alessandri Rodriguez
+		command = { type = headofgovernment which = 210138 } # Jorge Alessandri Rodriguez
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8003006
+	country = CHL
+	one_action = yes
+
+	name = EVT_8003006_NAME
+	desc = EVT_8003006_DESC
+	picture = nwo\augusto_pinochet
+	style = 1
+
+	date = { day = 0 month = january year = 1973 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = EVT_8003006_A
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 210305 } # Augusto Pinochet Ugarte
+		command = { type = headofgovernment which = 210306 } # Augusto Pinochet Ugarte
+	}
+	action = {
+		name = EVT_8003006_B
+		ai_chance = 2
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 210018 } # Salvador Allende
+		command = { type = headofgovernment which = 210029 } # Salvador Allende
+	}
+}
+
+event = {
+	id = 8003007
+	country = CHL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1990 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 210307 } # Patricio Aylwin Azócar
+		command = { type = headofgovernment which = 210308 } # Patricio Aylwin Azócar
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 210309 } # Hernan Büchi Buc
+		command = { type = headofgovernment which = 210310 } # Hernan Büchi Buc
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8003008
+	country = CHL
+
+	name = EVT_8003008_NAME
+	desc = EVT_8003008_DESC
+	picture = nwo\chicago_boys
+	decision_picture = nwo\d_chicago_boys
+	style = 1
+
+	decision = {
+		headofstate = 210305
+		atwar = no
+	}
+	
+	trigger = {
+		headofstate = 210305
+		atwar = no
+	}
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = EVT_8003008_A
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = domestic which = free_market value = 8 }
+		command = { type = money value = 5000 }
+	}
+	
+	action = {
+		name = EVT_8003008_B
+		trigger = { ai = yes }
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 8003009
+	country = CHL
+
+	name = EVT_8003009_NAME
+	desc = EVT_8003009_DESC
+	picture = nwo\augusto_pinochet
+	style = 1
+	
+	trigger = {
+		headofstate = 210305
+	}
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1988 }
+
+	action = {
+		name = EVT_8003009_A
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 3 }
+	}
+	
+	action = {
+		name = EVT_8003009_B
+		ai_chance = 15
+		command = { type = dissent value = 15 }
 	}
 }
 

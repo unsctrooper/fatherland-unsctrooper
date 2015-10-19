@@ -8,16 +8,33 @@ construction = {
 	max_land_level = 1
 	fort_borders = { }
 	fort_provs	= {
-		189 # Novograd
-		190 # Staraya Russa
-		288 # Rzhev
-		182 # Mozhaisk
-		94 # Naginsdk
-		238 # Kiev
-		258 # Rostov
-		248 # Kharkov
-		243 # Kursk
-		181 # Kaluga
-		233 # Odessa
+		# 551  #Novograd
+		# 559  #Staraya Russa
+		# 558  #Rzhev
+		# 574  #Mozhaisk
+		# 567  #Naginsdk
+		617  #Kiev
+		631  #Rostov
+		636  #Kharkov
+		602  #Kursk
+		585  #Kaluga
+		626  #Odessa
+
+# kherson to riga
+		# 624
+		# 623
+		630
+		632
+		629
+		# 610
+		# 608
+		# 607
+		# 601
+		# 600
+		# 590
+		# 593
+		# 266
+		# 265
+		# 264
 	}
 }

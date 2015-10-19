@@ -1,0 +1,116 @@
+# Soviet war with Germany AI File by Lothos
+#
+#  Db for wif2
+
+max_garrison_prop = 0.80
+min_garrison_prop = 0.60
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.0
+	overseas_multiplier		= 0.5
+	home_peace_cap 			= 600
+	war_zone_odds 			= 1.0
+	key_point_prio_mult		= 0.3
+	revolt_risk_mult		= 0.3
+
+	# PRIORITIES:
+	beach			= 60	# Beach level 2
+	capital			= 250	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 220	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		CHI = -1
+		AFG = -1
+		PER = -1
+		TUR = -1
+		CGX = -1
+		CYN = -1
+		CHC = -1
+		CSX = -1
+		FIN = 25
+		ROM = 20
+		POL = 75
+		GER = 75
+		ITA = 50
+		JAP = 10
+		MAN = 10
+		SWE = -1
+		NOR = -1
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		553   = 230  #Leningrad
+		617   = 120  #Kiev
+		627   = 120  #Dnepropetrovsk
+		663   = 220  #Stalingrad
+		636   = 120  #Kharkov
+		588   = 120  #Bryansk  db was 587
+		1191  = 120  #Vladivostock
+		535   = 120  #Murmansk
+		641   = 120  #Sevastopool
+		589   = 210  #Smolensk
+
+		# Forests near Moscow
+		592 = 90
+		586 = 90
+		574 = 90
+		568 = 90 
+		567 = 90 
+		# 570 = 90
+
+		# 3rd line defense n Kerson North to Smol?
+		624 = 90
+		623 = 90
+		630 = 90
+		632 = 90
+
+		629 = 90
+		610 = 90
+		608 = 90
+		607 = 90
+
+		601 = 90
+		600 = 90
+
+		#   4th line   Rostov to vytegra
+		644 = 60
+		649 = 60
+		653 = 60
+		654 = 60
+		652 = 60
+		579 = 60
+		571 = 60
+		570 = 60 
+		569 = 60
+		563 = 60
+		555 = 60
+		556 = 60
+
+		# airports and river defense
+		585 = 45
+		590 = 75   # vitebsk
+		265 = 75
+		266 = 75
+		240 = 75
+	}
+	ignore = {
+		268  #Liepaja (German Border easy surround hex)
+	}
+	area_multiplier = {	}
+}

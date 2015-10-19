@@ -1,0 +1,354 @@
+event = {
+	id = 8000101
+	country = AFG
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofgovernment which = 155013 } # Muhammed Hashim
+		command = { type = foreignminister which = 155021 } # Asadullah Seraj Khan
+		command = { type = armamentminister which = 155034 } # Muhammed Nowroz
+		command = { type = ministerofsecurity which = 155042 } # Muhammed Ghobar
+		command = { type = ministerofintelligence which = 155049 } # Mohammed Etemadi Khan
+		command = { type = chiefofstaff which = 155053 } # Gholam Wali
+		command = { type = chiefofarmy which = 155058 } # Nasirullah Husain
+		command = { type = chiefofnavy which = 155063 } # Shah Wali Khan
+		command = { type = chiefofair which = 155068 } # Ali Muhammed Khan
+	}
+}
+
+event = {
+	id = 8000102
+	country = AFG
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofgovernment which = 155200 } # Mohammed Daoud
+		command = { type = foreignminister which = 155072 } # Mohammed Maiwandwal
+	}
+}
+
+event = {
+	id = 8000103
+	country = AFG
+
+	name = "EVT_BIRTHDAY_NAME"
+	desc = "EVT_BIRTHDAY_DESC"
+	picture = "nwo\birthday"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = "EVT_HAPPYBIRTHDAY"
+		ai_chance = 100
+		command = { type = headofstate which = 155012 } # Muhammed Zahir
+	}
+}
+
+event = {
+	id = 8000104
+	country = AFG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 155201 } # Mohammad Yusuf
+	}
+}
+
+event = {
+	id = 8000105
+	country = AFG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1965 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 155202 } # Mohammad Hashim Maiwandwal
+	}
+}
+
+event = {
+	id = 8000106
+	country = AFG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 155203 } # Mohammad Nur Ahmad Etemadi
+	}
+}
+
+event = {
+	id = 8000107
+	country = AFG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1971 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1971 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 155204 } # Abdul Zahir
+	}
+}
+
+event = {
+	id = 8000108
+	country = AFG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1972 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 155205 } # Mohammad Musa Shafiq
+	}
+}
+
+event = {
+	id = 8000109
+	country = AFG
+
+	name = EVT_8000109_NAME
+	desc = EVT_8000109_DESC
+	picture = nwo\afghani_coup_1973
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+	}
+
+	date = { day = 0 month = january year = 1973 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = EVT_8000109_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 155206 } # Mohammed Daoud
+		command = { type = headofgovernment which = 155200 } # Mohammed Daoud
+	}
+	
+	action = {
+		name = EVT_8000109_B
+		ai_chance = 0
+		command = { type = dissent value = 20 }
+		command = { type = sleepevent which = 8000110 }
+		command = { type = sleepevent which = 8000111 }
+		command = { type = sleepevent which = 8000112 }
+		command = { type = sleepevent which = 8176110 } # Soviet intervention
+	}
+}
+
+event = {
+	id = 8000110
+	country = AFG
+
+	name = EVT_8000110_NAME
+	desc = EVT_8000110_DESC
+	picture = nwo\saur_revolution
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		event = 8176110
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = EVT_8000110_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 155207 } # Nur Muhammad Taraki
+		command = { type = headofgovernment which = 155208 } # Nur Muhammad Taraki
+	}
+}
+
+event = {
+	id = 8000111
+	country = AFG
+
+	name = EVT_8000111_NAME
+	desc = EVT_8000111_DESC
+	picture = nwo\soviet_intervention_in_afghanistan
+	style = 1
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = EVT_8000111_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 155209 } # Ahmad Shah Massoud
+		command = { type = headofgovernment which = 155210 } # Gulbuddin Hekmatyar
+		command = { type = independence which = UPS value = 0 }
+		# Army in disarray
+		command = { type = demobilize which = land when = 0 where = 1 value = 3 }
+		# But we have Mujahideens
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		command = { type = add_division value = militia when = 11 }
+		
+		# Balancing
+		command = { type = add_corps where = 2171 }
+		command = { type = add_division value = garrison when = 10 }
+		command = { type = add_division value = garrison when = 10 }
+		command = { type = add_division value = garrison when = 10 }
+		command = { type = add_corps where = 2169 }
+		command = { type = add_division value = garrison when = 10 }
+		command = { type = add_division value = garrison when = 10 }
+		command = { type = add_division value = garrison when = 10 }
+	}
+}
+
+event = {
+	id = 8000112
+	country = AFG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1991 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 155211 } # Burhanuddin Rabbani
+		command = { type = headofgovernment which = 155210 } # Gulbuddin Hekmatyar
+	}
+}

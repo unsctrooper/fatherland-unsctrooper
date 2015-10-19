@@ -1,0 +1,10 @@
+# Japan fortifies the Pacific Border AI File by Lothos  db
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.120 
+
+	coastal_fort = yes
+}

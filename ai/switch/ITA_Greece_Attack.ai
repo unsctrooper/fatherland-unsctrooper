@@ -1,0 +1,98 @@
+# Italy vs Greece AI File by Lothos   db
+
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	province_priorities = {	
+
+		#Homeland
+		422 = 90 
+		426 = 60
+		421 = 150
+		416 = 90
+		419 = 150 
+		412 = 90
+		400 = 90
+		
+		# Sisily
+		433 = 150
+		430 = 150
+		432 = 60
+		425 = 90
+
+		# French Border
+		398  = 90  #Turin
+		396  = 90  #Genoa
+
+		434  = 60  #Sardinia
+		379  = 30  #Rhodes
+		
+		# North Africa
+		752  = 50
+		750  = 90
+		757 = 30
+		756 = 30
+		759 = 30
+		763 = 30
+
+		761  = 90    # ben
+		765 = 90     # tobruk
+		767 = 60
+
+		771  = 90
+
+
+		769  = 20
+		770  = 20
+
+     		825  = 50  # Addis Adeba 
+		
+		# Albania prep for Greece invasion
+		360  = 100
+
+
+
+}
+	area_multiplier = { }
+   	country_priorities = {  
+		FRA = -1  
+		FIN = -1 
+		SCH = -1 
+		ENG = -1 
+		ETH = 150 
+		AUS = -1 
+		CZE = 25 
+		YUG = 50 
+		SOV = -1 
+ 	} 
+}
+
+invasion = {
+
+		invasion = yes
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 0.01	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 20.0	#higher = avoid long distance.
+	pocket		= 30.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 0.01	#higher = much more vary of troops in province.
+	adjacentenemy 	= 0.01	#higher = much more vary of troops nearby
+	air_base	= 0.1 
+      	naval_base 	= 0.1 
+      	air_support 	= 3.0 
+      	redirect 	= priority
+	ignore		= no
+      
+	target = { 
+		377 = 500 # Athens
+		372 = 1500  # patra
+
+
+		 } 
+} 

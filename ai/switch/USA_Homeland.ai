@@ -1,0 +1,110 @@
+# USA Homeland defense AI File by Lothos  DB wif2
+
+upgrading = 0.20
+#reinforcement = 0.30
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+	max_batch_peace 		= 780 
+	max_batch_war 			= 520 
+	max_batch_home_front 	= 380
+
+	#### Divisions etc...
+	infantry 	= 40
+	cavalry 	= 0
+	motorized 	= 8
+	mechanized 	= 8
+	light_armor 	= 0
+	armor 		= 8
+	paratrooper 	= 0
+	marine 		= 3
+	bergsjaeger 	= 0
+	garrison	= 0
+    hq 			= 4
+	militia 	= 0
+#				71 %
+	interceptor 	= 9
+	multi_role 	= 2
+	cas 		= 0
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 3
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				19 %
+	battleship 	= 0
+	carrier 	= 0
+	escort_carrier	= 0
+	destroyer 	= 5
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 	= 0
+	transports 	= 5
+#				10 %
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 2.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 175    #  DB
+	war_zone_odds 		= 6.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 90	# Beach level 2
+	capital			= 180	# Our capital
+	human_border		= 100	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 10	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 30
+
+
+
+	province_priorities = { 
+
+
+
+		1839 = 60 #cities Mil, to Syracuse
+		1832 = 60
+		1845 = 60
+		1806 = 60
+		1792 = 60
+
+		#  border prov. with canada
+		1734 = 60
+		1786 = 60
+		1787 = 60
+		1789 = 60
+
+		1734 = 90 #Pearl Harbour
+		1735 = 90
+		1736 = 90
+		1737 = 90
+		1809 = 60 #Washington
+		1812 = 90
+		1889 = 85 #San Francisco
+		 1886 = 90 # San Diego 
+		889 = 60   # panama i think DB
+
+		}
+
+
+
+
+
+
+
+
+
+}

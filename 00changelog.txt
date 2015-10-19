@@ -18,6 +18,11 @@
 		- (*) Russian-Chinese alliance
 	AFRICA
 		- (*) South Africa
+	AMERICAS
+		- (+) Argentina
+		- (+) Brazil
+		- (+) Canada
+		- (+) Other Minors
 #DB
 	Leaders
 	- New leaders for Free France
@@ -46,6 +51,7 @@
 	
 # AI
 	- Improved AI for Soviet Union
+	- Improved AI for United Kingdom
 	- Improved AI for Germany
 	- Improved AI for Italy
 	- Improved AI for Bulgaria
@@ -56,6 +62,23 @@
 	- Improved AI for Romania
 	- Improved AI for Nationalist Spain
 	- Improved AI for SS
+	- New AI for Argentina
+	- New AI for Australia
+	- New AI for Belgium
+	- New AI for Brazil
+	- New AI for Canada
+	- New AI for Denmark
+	- New AI for Greece
+	- New AI for Holland
+	- New AI for Indonesia
+	- New AI for Japan
+	- New AI for Mexico
+	- New AI for Mongolia
+	- New AI for Norway
+	- New AI for New Zealand
+	- New AI for South Africa
+	- New AI for Sweden
+	- New AI for Other Minors	
 	
 #Other
 	- Update country.csv for complete compatibility with official 1.04 patch

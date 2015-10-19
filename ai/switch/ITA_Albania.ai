@@ -1,0 +1,16 @@
+
+combat = {
+	ALB = 300
+}
+
+invasion = {
+
+		invasion = yes
+
+      
+	target = { 
+		359 = 1000  # tirana
+
+
+		 } 
+}

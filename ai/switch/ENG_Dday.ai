@@ -1,0 +1,155 @@
+# USA is planning D-Day so lets help
+
+exp_force_ratio = 0.10  # db
+exp_force_ratios = {
+	USA = 1.0
+} 
+no_exp_forces_to = { }
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 25   # db
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+		348 = 30 # Gibraltar
+		429   = 30  #Malta
+		790  = 30  #Alexandria
+		20 = 10 # Exeter
+	}
+	area_multiplier = {
+		348 = 2.0 # Gibraltar
+		429   = 2.0  #Malta
+		790  = 1.5  #Alexandria
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion	= yes
+	help_allies = no
+      
+	staging_province = {
+		23  	#Plymouth
+		27  	#Portsmouth
+		26  	#Dover
+		25		#Norwich	
+		}
+		
+	target = {
+		#England      removed DB
+		#26  = 2000  #Dover
+		#25  = 2000  #Norwich
+		#27  = 2000  #Portsmouth
+		#23  = 9000  #Plymouth
+		#22  = 9000  #Cardif
+		#36  = 9000  #Belfast
+		#17  = 9000  #Manchester
+		#12  = 9000  #Edinburgh
+		#11  = 9000  #Glasgow
+
+		#Denmark
+		217	= 10  #Arborg
+		220	= 10  #Arhus
+		219	= 10	#Odense
+		
+		#Norway
+		491	= 1000	#Alesund
+		485	= 1000	#Kristiansand
+		483	= 1000	#Oslo
+		493	= 1000	#Trondheim
+		495	= 1000	#Narvik
+		
+		#Germany
+		152 = 100   #Kiel
+		147	= 100	#Wilhelmshaven
+		153	= 100	#Rostock
+		158	= 100	#Stettin
+
+	
+		#France
+		49	= 8000  #Calais
+		53	= 8000  #Dieppe
+		44	= 8000  #Caen
+		37	= 8000  #Brest
+		39	= 8000  #Lorient
+		68  = 8000  #Bordeaux
+		69	= 8000	#La Rochelle
+		46	= 8000	#Bayeux
+		51	= 8000	#Dunkirk
+		82	= 3000	#Montpellier
+		86	= 3000	#Marseille
+	
+		# Belgium
+		114	= 1000  #Bruges
+		115	= 1000	#Antwerpen	
+
+		#Holland
+		125	= 1000	#Rotterdam
+		122	= 1000	#Amsterdam
+
+        # Italy
+        430 = -1 #Palermo
+        433 = -1 #Syracuse
+        434 = -1 #Cagliari
+        94 = -1 #Corsica
+        422 = -1 #Taranto
+        427 = -1 #Salerno
+        416 = -1 #Anzio
+        419 = -1 #Rome
+        412 = -1 #Ancona
+        400 = -1 #Venice
+
+        429 = 8 #Malta
+
+        # North Africa
+        900 = 80 #Suez
+        789 = 10 #Alexandra
+        717 = -1 #Rabat
+        728 = -1 #Oran
+        727 = -1 #Algiers
+        748 = -1 #Bizerte
+        747 = -1 #Tunis
+        750 = -1 #Tripoli
+        761 = -10 #Benghazi
+        765 = -10 #Tobruk
+
+        # Middle East
+        1019 = -1 #Beirut
+        1008 = -1 #Tel Aviv
+        1004 = -1 #El Arish
+    
+        # Greece
+        382 = -1 #Crete
+        372 = -1 #Patras
+        377 = -1 #Athens
+        370 = -1 #Alexandroupoli
+
+        # Yugoslavia/Albania
+        359 = -1 #Tirana
+        343 = -1 #Dubrovnik
+        
+        # Turkey
+        378 = -1 #Kalymnos
+        379 = -1 #Rhodes
+        388 = -1 #Nicosia
+		}
+} 

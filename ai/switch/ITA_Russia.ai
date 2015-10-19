@@ -1,0 +1,94 @@
+# Italy vs Russia/Usa/France AI File by Lothos   db
+
+max_garrison_prop = 0.45
+min_garrison_prop = 0.35
+exp_force_ratio = 0.10
+exp_force_ratios = {
+	GER = 1.0
+} 
+
+no_exp_forces_to = { FRA ROM HUN BUL FIN VIC JAP SIA MAN }
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier	= 0.5
+	home_peace_cap 		= 45
+	war_zone_odds 		= 1.0
+	key_point_prio_mult	= 0.5
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 60	# Beach level 2
+	capital			= 150	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		VIC = -1
+		SCH = -1
+		ENG = 70
+		FRA = 30
+		AUS = -1
+		GER = -1
+		YUG = 50
+		SOV = 0.2
+		GRE = 20
+	}
+	province_priorities = { 
+
+				#Homeland
+		422 = 90 
+		426 = 60
+		421 = 125
+		416 = 90
+		419 = 125 
+		412 = 90
+		400 = 90
+		
+		# Sisily
+		433 = 125
+		430 = 125
+		432 = 60
+		425 = 90
+
+		# French Border
+		398  = 90  #Turin
+		396  = 90  #Genoa
+
+		434  = 60  #Sardinia
+		379  = 30  #Rhodes
+		
+		# North Africa
+		752  = 50
+		750  = 90
+		757 = 30
+		756 = 30
+		759 = 30
+		763 = 30
+
+		761  = 90    # ben
+		765 = 90     # tobruk
+		767 = 60
+
+		771  = 90
+
+
+		769  = 20
+		770  = 20
+
+     		825  = 30  # Addis Adeba 
+
+
+		377 = 100 # Athens
+
+}
+	area_multiplier = { }
+}

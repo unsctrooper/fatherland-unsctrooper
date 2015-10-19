@@ -216,7 +216,7 @@ event = {
 
 	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -246,7 +246,7 @@ event = {
 }
 
 event = {
-	id = 8002008
+	id = 8002007
 	country = BRA
 
 	name = "EVT_8002007_NAME"
@@ -261,7 +261,7 @@ event = {
 
 	date = { day = 0 month = july year = 1961 }
 	offset = 360
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "EVT_8002007_A"
@@ -272,15 +272,253 @@ event = {
 	}
 }
 
+event = {
+	id = 8002008
+	country = BRA
+
+	name = EVT_8002008_NAME
+	desc = EVT_8002008_DESC
+	picture = nwo\castelo_branco
+	style = 1
+
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+	}
+
+	date = { day = 0 month = january year = 1964 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = EVT_8002008_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160326 } # Castelo Branco
+		command = { type = headofgovernment which = 160327 } # José Maria Alkmin
+	}
+}
 
 event = {
 	id = 8002009
+	country = BRA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1968 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160328 } # Costa e Silva
+		command = { type = headofgovernment which = 160329 } # Pedro Aleixo
+	}
+}
+
+event = {
+	id = 8002010
+	country = BRA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1969 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160330 } # Emilio Medici
+		command = { type = headofgovernment which = 160331 } # Augusto Rademaker
+	}
+}
+
+event = {
+	id = 8002011
+	country = BRA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160332 } # Ernesto Geisel
+		command = { type = headofgovernment which = 160333 } # Adalberto Pereira dos Santos
+	}
+}
+
+event = {
+	id = 8002012
+	country = BRA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1984 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 160312 } # Joao Figueiredo
+		command = { type = headofgovernment which = 160334 } # Aureliano Chaves
+	}
+}
+
+event = {
+	id = 8002013
+	country = BRA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1985 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 160322 } # José Sarney
+		command = { type = headofgovernment which = 160323 } # José Sarney
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 160324 } # Paulo Maluf
+		command = { type = headofgovernment which = 160335 } # Flavio Portela Marcilio
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8002014
+	country = BRA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1990 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 160338 } # Fernando Collor
+		command = { type = headofgovernment which = 160339 } # Itamar Franco
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 160336 } # Luiz Inácio Lula da Silva
+		command = { type = headofgovernment which = 160337 } # José Paulo Bisol
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+###
+
+event = {
+	id = 8002015
 	random = no
 	country = BRA
 	picture = "nwo\plano_de_metas"
 
-	name = "EVT_8002009_NAME"
-	desc = "EVT_8002009_DESC"
+	name = "EVT_8002015_NAME"
+	desc = "EVT_8002015_DESC"
 
 	trigger = {
 		headofstate = 160302 # Kubitschek
@@ -291,7 +529,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
-		name = "EVT_8002009_A"
+		name = "EVT_8002015_A"
 		ai_chance = 95
 		command = { type = money value = -5000 }
 		command = { type = construct which = ic where = -1 value = 2 }
@@ -307,7 +545,7 @@ event = {
 	}
 	
 	action = {
-		name = "EVT_8002009_B"
+		name = "EVT_8002015_B"
 		ai_chance = 5
 		command = { type = dissent value = -3 }
 		command = { type = money value = 1000 }
@@ -316,11 +554,11 @@ event = {
 }
 
 event = {
-	id = 8002010
+	id = 8002016
 	country = BRA
 	
-	name = "EVT_8002010_NAME"
-	desc = "EVT_8002010_DESC"
+	name = "EVT_8002016_NAME"
+	desc = "EVT_8002016_DESC"
 	picture = "nwo\building_brasilia"
 	style = 1
 
@@ -333,13 +571,13 @@ event = {
 	deathdate = { day = 29 month = december year = 1959 }
 
 	action = {
-		name = "EVT_8002010_A"
+		name = "EVT_8002016_A"
 		ai_chance = 95
 		command = { type = money value = -5000 }
 	}
 	
 	action = {
-		name = "EVT_8002010_B"
+		name = "EVT_8002016_B"
 		ai_chance = 5
 		command = { type = dissent value = -3 }
 		command = { type = money value = 1000 }
@@ -349,11 +587,11 @@ event = {
 }
 
 event = {
-	id = 8002011
+	id = 8002017
 	country = BRA
 	
-	name = "EVT_8002011_NAME"
-	desc = "EVT_8002011_DESC"
+	name = "EVT_8002017_NAME"
+	desc = "EVT_8002017_DESC"
 	picture = "nwo\brasilia"
 	style = 1
 	
@@ -366,7 +604,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
-		name = "EVT_8002011_A"
+		name = "EVT_8002017_A"
 		command = { type = dissent value = -2 }
 		command = { type = capital which = 2067 }
 		command = { type = construct which = ic where = 2067 value = 6 }

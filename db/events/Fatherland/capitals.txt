@@ -1,0 +1,701 @@
+event = {
+	id = 8205002
+	tag = { ALB U28 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 359 } }
+		control = { province = 359 data = -1 } 
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 359 } # Tirana
+	}
+}
+
+event = {
+	id = 8205011
+	tag = { AUS U16 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 195 } }
+				control = { province = 195 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 189 } }
+				control = { province = 189 data = -1 }
+				NOT = { control = { province = 195 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 189 data = -1 } } type = capital which = 189 } # Innsbruck
+		command = { trigger = { control = { province = 195 data = -1 } } type = capital which = 195 } # Vienna
+	}
+}
+
+event = {
+	id = 8205014
+	tag = { BEL U17 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 116 } }
+		control = { province = 116 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 116 } # Brussels
+	}
+}
+
+event = {
+	id = 8205022
+	tag = { BUL U29 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 321 } }
+		control = { province = 321 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 321 } # Sofia
+	}
+}
+
+event = {
+	id = 8205042
+	tag = { CZE U31 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 207 } }
+		control = { province = 207 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 207 } # Prague
+	}
+}
+
+event = {
+	id = 8205043
+	tag = { U24 U25 DDR DFR }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 163 } }
+				control = { province = 163 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 131 } }
+				control = { province = 131 data = -1 }
+				NOT = { control = { province = 163 data = -1 } }
+			}
+			AND = {
+				NOT = { capital = { province = 179 } }
+				control = { province = 179 data = -1 }
+				NOT = { control = { province = 163 data = -1 } }
+				NOT = { control = { province = 131 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 179 data = -1 } } type = capital which = 179 } # Munich
+		command = { trigger = { control = { province = 131 data = -1 } } type = capital which = 131 } # Bonn (Cologne)
+		command = { trigger = { control = { province = 163 data = -1 } } type = capital which = 163 } # Berlin
+	}
+}
+
+event = {
+	id = 8205044
+	tag = { DEN U22 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 294 } }
+		control = { province = 294 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 294 } # Copenhagen
+	}
+}
+
+event = {
+	id = 8205055
+	tag = { FIN U20 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 525 } }
+		control = { province = 525 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 525 } # Helsinki
+	}
+}
+
+event = {
+	id = 8205057
+	tag = { FRA U01 U11 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 55 } }
+				control = { province = 55 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 89 } }
+				control = { province = 89 data = -1 }
+				NOT = { control = { province = 55 data = -1 } }
+			}
+			AND = {
+				NOT = { capital = { province = 58 } }
+				control = { province = 58 data = -1 }
+				NOT = { control = { province = 89 data = -1 } }
+				NOT = { control = { province = 55 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 58 data = -1 } } type = capital which = 58 } # Bordeaux
+		command = { trigger = { control = { province = 89 data = -1 } } type = capital which = 89 } # Marseilles
+		command = { trigger = { control = { province = 55 data = -1 } } type = capital which = 55 } # Paris
+	}
+}
+
+event = {
+	id = 8205062
+	tag = { GRE U33 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 377 } }
+		control = { province = 377 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 377 } # Athens
+	}
+}
+
+event = {
+	id = 8205067
+	tag = { HOL U10 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 122 } }
+		control = { province = 122 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 122 } # Amsterdam
+	}
+}
+
+event = {
+	id = 8205069
+	tag = { HUN U13 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 284 } }
+		control = { province = 284 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 284 } # Budapest
+	}
+}
+
+event = {
+	id = 8205075
+	tag = { IRE }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 34 } }
+		control = { province = 34 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 34 } # Dublin
+	}
+}
+
+event = {
+	id = 8205077
+	tag = { ITA U14 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 419 } }
+				control = { province = 419 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 407 } }
+				control = { province = 407 data = -1 }
+				NOT = { control = { province = 419 data = -1 } }
+			}
+			AND = {
+				NOT = { capital = { province = 421 } }
+				control = { province = 421 data = -1 }
+				NOT = { control = { province = 407 data = -1 } }
+				NOT = { control = { province = 419 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 421 data = -1 } } type = capital which = 421 } # Naples
+		command = { trigger = { control = { province = 407 data = -1 } } type = capital which = 407 } # Milan
+		command = { trigger = { control = { province = 419 data = -1 } } type = capital which = 419 } # Rome
+	}
+}
+
+event = {
+	id = 8205106
+	tag = { NOR U19 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 483 } }
+		control = { province = 483 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 483 } # Oslo
+	}
+}
+
+event = {
+	id = 8205116
+	tag = { POL U32 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 232 } }
+				control = { province = 232 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 235 } }
+				control = { province = 235 data = -1 }
+				NOT = { control = { province = 232 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 235 data = -1 } } type = capital which = 235 } # Cracow
+		command = { trigger = { control = { province = 232 data = -1 } } type = capital which = 232 } # Warsaw
+	}
+}
+
+event = {
+	id = 8205117
+	tag = { POR U15 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 476 } }
+				control = { province = 476 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 481 } }
+				control = { province = 481 data = -1 }
+				NOT = { control = { province = 476 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 481 data = -1 } } type = capital which = 481 } # Porto
+		command = { trigger = { control = { province = 476 data = -1 } } type = capital which = 476 } # Lisbon
+	}
+}
+
+event = {
+	id = 8205123
+	tag = { ROM U30 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 316 } }
+		control = { province = 316 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 316 } # Bucharest
+	}
+}
+
+event = {
+	id = 8205131
+	tag = { SCH U26 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 392 } }
+		control = { province = 392 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 392 } # Bern
+	}
+}
+
+event = {
+	id = 8205143
+	tag = { SPA SPR U35 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 460 } }
+				control = { province = 460 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 440 } }
+				control = { province = 440 data = -1 }
+				NOT = { control = { province = 460 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 440 data = -1 } } type = capital which = 440 } # Barcelona
+		command = { trigger = { control = { province = 460 data = -1 } } type = capital which = 460 } # Madrid
+	}
+}
+
+event = {
+	id = 8205146
+	tag = { SWE U21 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 2159 } }
+		control = { province = 2159 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 2159 } # Stockholm
+	}
+}
+
+event = {
+	id = 8205155
+	tag = { TUR U34 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { capital = { province = 1075 } }
+				control = { province = 1075 data = -1 }
+			}
+			AND = {
+				NOT = { capital = { province = 409 } }
+				control = { province = 409 data = -1 }
+				NOT = { control = { province = 1075 data = -1 } }
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { trigger = { control = { province = 409 data = -1 } } type = capital which = 409 } # Istanbul
+		command = { trigger = { control = { province = 1075 data = -1 } } type = capital which = 1075 } # Ankara
+	}
+}
+
+event = {
+	id = 8205183
+	tag = { YUG U27 }
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 338 } }
+		control = { province = 338 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 338 } # Belgrade
+	}
+}
+
+event = {
+	id = 8205073
+	country = INO
+	persistent = yes
+
+	name = EVT_CAPITALMOVE_NAME
+	desc = EVT_CAPITALMOVE_DESC
+	picture = "nwo\capital_city"
+	style = 1
+	
+	trigger = {
+		NOT = { capital = { province = 1647 } }
+		control = { province = 1647 data = -1 }
+		atwar = no
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action = {
+		name = "OK"
+		command = { type = capital which = 1647 } # Jakarta
+	}
+}

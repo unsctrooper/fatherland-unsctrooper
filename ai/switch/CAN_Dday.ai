@@ -1,0 +1,8 @@
+# USA is planning D-Day so lets help   db
+
+exp_force_ratio = 0.80
+exp_force_ratios = {
+	USA = 0.50
+	ENG = 0.50
+} 
+no_exp_forces_to = { }

@@ -1,0 +1,134 @@
+# England sends fleet into the Channel and med
+
+admiral = { 
+	ignore = {
+		"Southeast Northsea"
+		"kattegat"
+		"Bothnian Bay"
+		"northern baltic"
+		"southern baltic"
+		"East North Sea"
+		"Norwegian Sea"
+
+		#Central Mediterranean
+		"Adriatic Sea"
+		# "Tyrrhenian Sea"
+
+		#Western Mediterranean
+		#"Costa del Sol"
+		#"Gulf of Lyon"
+		#"Algerian Coast"
+
+		#Eastern Mediterranean
+		"Black Sea"
+		# "Aegean Sea"
+
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+
+		#China Coast
+		"Taiwan Strait"
+		"Yellow Sea"
+
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk"
+
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea" 
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+		
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"Carolines"
+		
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+
+	target = { 
+     	2682 = 100   
+     	2683 = 100   
+     	2684 = 100 
+
+	2195 = 100   # med Algiers to Alexandria
+	2194 = 120
+	2193 = 120
+	2192 = 120
+	2182 = 220
+	2183 = 120
+	2175 = 100
+	2738 = 100
+	2177 = 120
+	2740 = 100
+	2176 = 160 
+	} 
+	core = {
+		#british coast
+     	2716 
+     	2685 
+     	2683 
+     	2682 
+     	2698 
+     	2700 
+     	2709 
+     	2708 
+		#### Gibraltar, suez, malta, cyprus
+		2430
+     	 
+		
+		
+	}
+}

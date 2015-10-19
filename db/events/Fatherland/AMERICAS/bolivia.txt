@@ -1,0 +1,806 @@
+## TODO: Remake the following event as elections
+
+#event = {
+#	id = 2900037
+#	random = no
+#	country = BOL
+#	style = 2
+#	picture = "news_paper"
+#	one_action = yes
+#
+#	trigger = {
+#		NOT = { ispuppet = BOL }
+#		}
+#
+#	name = "ELECTION_TITLE"
+#	desc = "ELECTION_DESC"
+#
+#	date = { day = 00 month = may year = 1946 }
+#
+#
+#	action_a = {
+#		ai_chance = 60
+#		name = "ELECT_B"
+#		command = { type = dissent value = -3 }
+#		command = { type = set_domestic which = democratic value = 7 }
+#		command = { type = set_domestic which = political_left value = 6 }
+#		command = { type = headofstate which = 205015 }
+#		command = { type = headofgovernment which = 205036 }
+#		command = { type = foreignminister which = 205053 }
+#		command = { type = armamentminister which = 205078 }
+#		command = { type = ministerofsecurity which = 205103 }
+#		command = { type = ministerofintelligence which = 205124 }
+#		}
+#	action_b = {
+#		ai_chance = 30
+#		name = "ELECT_A"
+#		command = { type = dissent value = -3 }
+#		command = { type = set_domestic which = democratic value = 6 }
+#		command = { type = set_domestic which = political_left value = 9 }
+#		command = { type = headofstate which = 205022 }
+#		command = { type = headofgovernment which = 205039 }
+#		command = { type = foreignminister which = 205069 }
+#		command = { type = armamentminister which = 205093 }
+#		command = { type = ministerofsecurity which = 205118 }
+#		command = { type = ministerofintelligence which = 205134 }
+#		}
+#	action_c = {
+#		ai_chance = 10
+#		name = "KEEPCURRENT"
+#		command = { type = dissent value = -1 }
+#		}
+#	}
+
+
+event = {
+	id = 8001801
+	country = BOL
+
+	name = "EVT_8001801_NAME"
+	desc = "EVT_8001801_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 205021 # Villaroel
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1946 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = 10 }
+		command = { type = headofstate which = 205019 } # Tomas Monje Gutierrez
+		command = { type = headofgovernment which = 205036 } # Julian Montellano Carrasco
+		command = { type = foreignminister which = 205053 } # Enrique Hertzog Garaizabal
+		command = { type = armamentminister which = 205078 } # Julian Montellano Carrasco
+		command = { type = ministerofsecurity which = 205103 } # Mamerto U. Harriaque
+		command = { type = ministerofintelligence which = 205124 } # Aniceto Solares
+	}
+}
+
+event = {
+	id = 8001802
+	country = BOL
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 90
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 205187 } # Enrique Hertzog Garaizabal
+		command = { type = headofgovernment which = 205033 } # Enrique Hertzog Garaizabal
+		command = { type = foreignminister which = 205055 } # Hugo Ballivi?n Rojas
+		command = { type = armamentminister which = 205081 } # Mario Torres
+		command = { type = ministerofsecurity which = 205108 } # Carlos Blanco Galindo
+		command = { type = ministerofintelligence which = 205128 } # Juan Lopez y Lopez
+		command = { type = chiefofstaff which = 205142 } # Tomas Monje Gutierrez
+		command = { type = chiefofarmy which = 205186 } # Tomas Monje Gutierrez
+		command = { type = chiefofnavy which = 205165 } # Guillermo Arancha Basutto
+		command = { type = chiefofair which = 205179 } # Alberto Ostria Gutierrez
+	}
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 205305 } # Fernando Guachalla
+		command = { type = headofgovernment which = 205039 } # Victor Paz Estenssorro
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 8001803
+	country = BOL
+
+	name = "EVT_8001803_NAME"
+	desc = "EVT_8001803_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 205187 # Garaizabal
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = headofstate which = 205306 } # Mamerto Urriolagoitia
+	}
+}
+
+event = {
+	id = 8001804
+	country = BOL
+
+	name = "EVT_8001804_NAME"
+	desc = "EVT_8001804_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "EVT_8001804_A"
+		ai_chance = 90
+		command = { type = dissent value = 10 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205189 } # Hugo Ballivi?n Rojas
+		command = { type = headofgovernment which = 205192 } # Hugo Ballivi?n Rojas
+		command = { type = foreignminister which = 205052 } # Tomas Manuel El?o
+		command = { type = armamentminister which = 205078 } # Julian Montellano Carrasco
+		command = { type = ministerofsecurity which = 205102 } # Carlos Salinas Aramayo
+		command = { type = ministerofintelligence which = 205124 } # Aniceto Solares
+		command = { type = chiefofstaff which = 205142 } # Tomas Monje Gutierrez
+		command = { type = chiefofarmy which = 205159 } # Enrique Baldivieso Aparicio
+		command = { type = chiefofnavy which = 205165 } # Guillermo Arancha Basutto
+		command = { type = chiefofair which = 205176 } # Julian Montellano Carrasco
+	}
+	action = {
+		name = "EVT_8001804_B"
+		ai_chance = 10
+		command = { type = dissent value = 25 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 205022 } # Victor Paz Estenssorro
+		command = { type = headofgovernment which = 205190 } # Hernan Silas Zuazo
+	}
+}
+
+event = {
+	id = 8001805
+	country = BOL
+
+	name = "EVT_8001805_NAME"
+	desc = "EVT_8001805_DESC"
+	picture = "nwo\victor_paz_estenssoro"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "EVT_8001805_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = dissent value = -10 }
+		command = { type = headofstate which = 205022 } # Victor Paz Estenssorro
+		command = { type = headofgovernment which = 205190 } # Hernan Silas Zuazo
+		command = { type = foreignminister which = 205191 } # Nuflo Chavez Ort?z
+		command = { type = armamentminister which = 205095 } # Victor Paz Estenssorro
+		command = { type = ministerofsecurity which = 205119 } # Gunnar Mendoza Loza
+		command = { type = ministerofintelligence which = 205134 } # Walter Guevera
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = construct which = ic where = -1 value = 2 }
+		command = { type = add_prov_resource which = -1 value = 2 where = metal }
+		command = { type = add_prov_resource which = -1 value = 4 where = energy }
+		command = { type = add_prov_resource which = -1 value = 1 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 1 where = oil }
+	}
+}
+
+event = {
+	id = 8001806
+	country = BOL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 205302 } # Hernan Silas Zuazo
+		command = { type = headofgovernment which = 205303 } # Nuflo Chavez Ortiz
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 205300 } # Walter Guevera
+		command = { type = headofgovernment which = 205301 } # Rene Barrientos Ortuno
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8001807
+	country = BOL
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 205022 } # Victor Paz Estenssorro
+		command = { type = headofgovernment which = 205304 } # Juan Lechin Oquendo
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 205300 } # Walter Guevera
+		command = { type = headofgovernment which = 205301 } # Rene Barrientos Ortuno
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8001808
+	country = BOL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1964 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 100
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205307 } # René Barrientos
+		command = { type = headofgovernment which = 205308 } # René Barrientos
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 100
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 205309 } # Victor Paz Estenssorro
+		command = { type = headofgovernment which = 205301 } # Rene Barrientos Ortuno
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8001809
+	country = BOL
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 205307
+	}
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205310 } # Alfredo Ovando Candia
+		command = { type = headofgovernment which = 205311 } # Alfredo Ovando Candia
+	}
+}
+
+event = {
+	id = 8001810
+	country = BOL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1968 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205307 } # René Barrientos
+		command = { type = headofgovernment which = 205308 } # René Barrientos
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = 10 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 205312 } # Bernardino Bilbao Rioja
+		command = { type = headofgovernment which = 205033 } # Enrique Hertzog Garaizabal
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8001811
+	country = BOL
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 205307
+	}
+
+	date = { day = 0 month = january year = 1969 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205310 } # Alfredo Ovando Candia
+		command = { type = headofgovernment which = 205311 } # Alfredo Ovando Candia
+	}
+}
+
+event = {
+	id = 8001812
+	country = BOL
+
+	name = EVT_8001812_NAME
+	desc = EVT_8001812_DESC
+	picture = nwo\juan_jose_torres
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1970 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = EVT_8001812_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 205313 } # Juan José Torres
+		command = { type = headofgovernment which = 205314 } # Juan José Torres
+	}
+}
+
+event = {
+	id = 8001813
+	country = BOL
+
+	name = EVT_8001813_NAME
+	desc = EVT_8001813_DESC
+	picture = nwo\hugo_banzer
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1971 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = EVT_8001813_A
+		ai_chance = 100
+		command = { type = dissent value = 10 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205315 } # Hugo Banzer
+		command = { type = headofgovernment which = 205316 } # Hugo Banzer
+	}
+}
+
+event = {
+	id = 8001814
+	country = BOL
+
+	name = EVT_8001814_NAME
+	desc = EVT_8001814_DESC
+	picture = nwo\david_padilla
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = EVT_8001814_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205317 } # David Padilla
+		command = { type = headofgovernment which = 205318 } # David Padilla
+	}
+}
+
+event = {
+	id = 8001815
+	country = BOL
+
+	name = EVT_8001815_NAME
+	desc = EVT_8001815_DESC
+	picture = nwo\lidia_gueiler
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1979 }
+
+	action = {
+		name = EVT_8001815_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205319 } # Lidia Gueiler Tejada
+		command = { type = headofgovernment which = 205320 } # Lidia Gueiler Tejada
+	}
+}
+
+event = {
+	id = 8001816
+	country = BOL
+
+	name = EVT_8001816_NAME
+	desc = EVT_8001816_DESC
+	picture = nwo\garcia_meza_dictatorship
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = EVT_8001816_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205321 } # Luis García Meza Tejada
+		command = { type = headofgovernment which = 205322 } # Luis García Meza Tejada
+	}
+	action = {
+		name = EVT_8001816_B
+		ai_chance = 100
+		command = { type = dissent value = 15 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 205323 } # Hernán Siles Zuazo
+		command = { type = headofgovernment which = 205324 } # Hernán Siles Zuazo
+	}
+}
+
+event = {
+	id = 8001817
+	country = BOL
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1981 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205325 } # Celso Torrelio
+		command = { type = headofgovernment which = 205326 } # Celso Torrelio
+	}
+}
+
+event = {
+	id = 8001818
+	country = BOL
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1984 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 205323 } # Hernán Siles Zuazo
+		command = { type = headofgovernment which = 205327 } # Jaime Paz Zamora
+	}
+}
+
+event = {
+	id = 8001819
+	country = BOL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1985 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1988 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 205309 } # Víctor Paz Estenssoro
+		command = { type = headofgovernment which = 205328 } # Julio Garrett Ayllón
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205315 } # Hugo Banzer
+		command = { type = headofgovernment which = 205329 } # Luis Ossio
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8001820
+	country = BOL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1989 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 205327 } # Jaime Paz Zamora
+		command = { type = headofgovernment which = 205329 } # Luis Ossio
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 205315 } # Hugo Banzer
+		command = { type = headofgovernment which = 205330 } # Carlos Palenque
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+

@@ -1,0 +1,21 @@
+# France Standard Garrison Defense AI File by Lothos    DB
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		BEL = 30
+		LUX = 100
+		GER = 200
+		SPA = -1
+		SPR = -1
+		ITA = 30
+		SCH = -1
+		ENG = -1
+		CAN = -1
+		AST = -1
+		NZL = -1
+	}
+}

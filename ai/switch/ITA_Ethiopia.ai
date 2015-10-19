@@ -1,0 +1,40 @@
+# Italy Ethiopia AI File by DrBob
+
+
+max_front_ratio = 1.0 
+max_garrison_prop = 0.40
+min_garrison_prop = 0.35
+  
+
+max_front_ratios = { 
+   ETH = 2.0 
+	SOV = 0.1
+	FRA = 0.5
+	ENG = 0.5
+}
+
+
+combat = { 
+	ETH = 280
+	 
+}
+ 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+
+
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier = 2.0
+	home_peace_cap 		= 30
+}
+
+invasion = {
+
+		invasion = yes
+
+ 	
+       
+} 

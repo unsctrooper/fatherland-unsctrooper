@@ -1,0 +1,121 @@
+# USA Invade UK AI File by Lothos   db
+
+max_garrison_prop = 0.20
+min_garrison_prop = 0.15
+
+# exp_force_ratio = 0.000 
+# exp_force_ratios = { } 
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	home_multiplier 	= 1.25
+	overseas_multiplier = 0.5
+	home_peace_cap 		= 75
+	war_zone_odds 		= 5.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 30		# Beach level 2
+	capital			= 120		# Our capital
+	human_border	= 0		# Ignored for allied human players
+	
+	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CAN = 90
+		MEX = -1
+		SPA = -1
+		SPR = -1
+		SCH = -1
+		GER = 60
+		JAP = 100
+		ITA = 60
+		SOV = -1
+	}
+
+	ignore = {	}
+
+	province_priorities = { 
+
+		1839 = 90 #cities Mil, to Syracuse
+		1832 = 90
+		1845 = 90
+		1806 = 90
+		1792 = 90
+
+		#  border prov. with canada
+		1734 = 120
+		1786 = 120
+		1787 = 120
+		1789 = 120
+
+
+		1809 = 60 #Washington
+		1812 = 90
+		1889 = 85 #San Francisco
+		 1886 = 90 # San Diego 
+		889 = 60   # panama i think DB
+
+		}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion			= no
+ 	base				= 0.001	#Relative modifier. (lower = specific targets much more important.)
+	random				= 0.01	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance  		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 250.0	# How far should the staging area be from the target invasion point
+	distance			= 0.01	#higher = avoid long distance.
+	pocket				= 0.10	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 0.1	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.5	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    	naval_base 			= 0.2 
+    	air_support 		= 0.2 
+    	redirect 			= home
+	ignore				= no
+	help_allies 		= no 	#[yes/no]
+      
+
+} 
+
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 28    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 20 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+	min_core_attack_fleets  = 4		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 2 	# ENG/USA default 3, JAP default 2 everyone else is 1
+
+	
+	target = {
+		2326 = 1000
+		2324 = 500
+		2334 = 500
+		2335 = 500
+		2653 = 500
+		2652 = 500
+
+
+		2425 = 500
+		2429 = 500
+		2470 = 500
+		2471 = 500
+		2473 = 500
+		2485 = 300
+		2486 = 300
+		2555 = 300
+	} 
+	
+}

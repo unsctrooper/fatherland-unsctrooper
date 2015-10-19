@@ -9,7 +9,7 @@ event = {
 
 	date = { day = 0 month = january year = 1947 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1947 }
+	deathdate = { day = 29 month = december year = 1947 }
 
 	action = {
 		name = "EVT_8004801_A"
@@ -44,7 +44,7 @@ event = {
 
 	date = { day = 0 month = january year = 1948 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = EVT_8004802_A
@@ -94,7 +94,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1955 }
+	deathdate = { day = 29 month = december year = 1955 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -144,7 +144,7 @@ event = {
 
 	date = { day = 0 month = january year = 1956 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1959 }
+	deathdate = { day = 29 month = december year = 1959 }
 
 	action = {
 		name = "OK"
@@ -171,7 +171,7 @@ event = {
 
 	date = { day = 0 month = january year = 1960 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1960 }
+	deathdate = { day = 29 month = december year = 1960 }
 
 	action = {
 		name = "OK"
@@ -194,7 +194,7 @@ event = {
 
 	date = { day = 0 month = january year = 1961 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1962 }
+	deathdate = { day = 29 month = december year = 1962 }
 
 	action = {
 		name = "EVT_8004806_A"
@@ -217,7 +217,7 @@ event = {
 
 	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1964 }
 
 	action = {
 		name = "EVT_8004807_A"
@@ -226,6 +226,308 @@ event = {
 		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofstate which = 190205 } # Ram?n Castro Jij?n
 		command = { type = headofgovernment which = 190206 } # Ram?n Castro Jij?n
+	}
+}
+
+event = {
+	id = 8004808
+	country = ECU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1967 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 190207 } # Otto Arosemena
+		command = { type = headofgovernment which = 190208 } # Otto Arosemena
+	}
+}
+
+event = {
+	id = 8004809
+	country = ECU
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1968 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1971 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 190013 } # José María Velasco Ibarra
+		command = { type = headofgovernment which = 190211 } # Jorge Zavala Baquerizo
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 190209 } # Andrés Córdova
+		command = { type = headofgovernment which = 190210 } # Jorge Crespo
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8004810
+	country = ECU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1972 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 190212 } # Guillermo Rodríguez Lara
+		command = { type = headofgovernment which = 190213 } # Guillermo Rodríguez Lara
+	}
+}
+
+event = {
+	id = 8004811
+	country = ECU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1976 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 190214 } # Alfredo Poveda
+		command = { type = headofgovernment which = 190215 } # Guillermo Duran
+	}
+}
+
+event = {
+	id = 8004812
+	country = ECU
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 190216 } # Jaime Roldós
+		command = { type = headofgovernment which = 190217 } # Osvaldo Hurtado Larrea
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 190218 } # Sixto Durán Ballén
+		command = { type = headofgovernment which = 190219 } # León Febres Cordero
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8004813
+	country = ECU
+
+	name = EVT_DEATH_NAME
+	desc = EVT_DEATH_DESC
+	picture = nwo\death
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 190216
+	}
+
+	date = { day = 0 month = january year = 1981 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1983 }
+
+	action = {
+		name = EVT_DEATH
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = sleepminister which = 190216 } # Jaime Roldós
+		command = { type = headofstate which = 190220 } # Osvaldo Hurtado Larrea
+		command = { type = headofgovernment which = 190221 } # León Roldós Aguilera
+	}
+}
+
+event = {
+	id = 8004814
+	country = ECU
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1984 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1987 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 190224 } # León Febres Cordero
+		command = { type = headofgovernment which = 190225 } # Blasco Penaherrera Padilla
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 190222 } # Rodrigo Borja Cevallos
+		command = { type = headofgovernment which = 190223 } # Luis Costales
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8004815
+	country = ECU
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 190222 } # Rodrigo Borja Cevallos
+		command = { type = headofgovernment which = 190226 } # Luis Parodi Valverde
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 190227 } # Abdalá Bucaram
+		command = { type = headofgovernment which = 190228 } # Sixto Durán Ballén
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
 	}
 }
 

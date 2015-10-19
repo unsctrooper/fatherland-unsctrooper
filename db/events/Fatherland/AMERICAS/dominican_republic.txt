@@ -1,0 +1,465 @@
+event = {
+	id = 8004601
+	country = DOM
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 320001 } # Raf?l Trujillo
+		command = { type = headofgovernment which = 320018 } # Raf?l Trujillo
+		command = { type = foreignminister which = 320027 } # Arturo Despradel
+		command = { type = armamentminister which = 320035 } # Luis Amiamo Tio
+		command = { type = ministerofsecurity which = 320042 } # Donald Reid Cabral
+		command = { type = ministerofintelligence which = 320049 } # Hector Trujillo
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 320014 } # Rafael Espaillat
+		command = { type = headofgovernment which = 320021 } # Rafael Bonelly Fondeur
+		command = { type = foreignminister which = 320030 } # Emilio de los Santos
+		command = { type = armamentminister which = 320038 } # Jorge Balaguer
+		command = { type = ministerofsecurity which = 320045 } # Alberto Garcia Vienda
+		command = { type = ministerofintelligence which = 320050 } # Alberto Garcia Vienda
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8004602
+	country = DOM
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 320068 } # Hector Trujillo
+		command = { type = headofgovernment which = 320200 } # Hector Trujillo
+	}
+}
+
+event = {
+	id = 8004603
+	country = DOM
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 320068 } # Hector Trujillo
+		command = { type = headofgovernment which = 320201 } # Joaquin Balaguer
+	}
+}
+
+event = {
+	id = 8004604
+	country = DOM
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 320202 } # Joaquin Balaguer
+		command = { type = headofgovernment which = 320203 } # Rafael Filiberto Bonnelly
+	}
+}
+
+event = {
+	id = 8004605
+	country = DOM
+
+	name = "EVT_GOVTCHANGE_NAME"
+	desc = "EVT_GOVTCHANGE_DESC"
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 320204 } # Rafael Filiberto Bonnelly
+		command = { type = headofgovernment which = 320205 } # Nicolas Pichardo
+	}
+}
+
+event = {
+	id = 8004606
+	country = DOM
+
+	name = "EVT_8004606_NAME"
+	desc = "EVT_8004606_DESC"
+	picture = "nwo\juan_bosch"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 180
+	deathdate = { day = 29 month = september year = 1963 }
+
+	action = {
+		name = "EVT_8004606_A"
+		#ai_chance = 95
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 320206 } # Juan Bosch
+		command = { type = headofgovernment which = 320207 } # Armando Gonzalez Tamayo
+	}
+	
+	action = {
+		name = "EVT_8004606_B"
+		ai_chance = 5
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 320210 } # Viriato Fiallo
+		command = { type = headofgovernment which = 320211 } # José Fernando Caminero
+	}
+}
+
+event = {
+	id = 8004607
+	country = DOM
+
+	name = "EVT_8004607_NAME"
+	desc = "EVT_8004607_DESC"
+	picture = "nwo\triumvirate_coup"
+	style = 1
+
+	date = { day = 0 month = october year = 1963 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "EVT_8004607_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 320208 } # Elias Wessin
+		command = { type = headofgovernment which = 320209 } # Elias Wessin
+	}
+}
+
+event = {
+	id = 8004608
+	country = DOM
+
+	name = EVT_8004608_NAME
+	desc = EVT_8004608_DESC
+	picture = nwo\operation_power_pack
+	style = 1
+	
+	trigger = {
+		event = 8004615
+	}
+
+	date = { day = 0 month = january year = 1965 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = EVT_8004608_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 320212 } # Héctor García Godoy
+		command = { type = headofgovernment which = 320213 } # Héctor García Godoy
+	}
+}
+
+event = {
+	id = 8004609
+	country = DOM
+
+	name = EVT_8004609_NAME
+	desc = EVT_8004609_DESC
+	picture = nwo\joaquin_balaguer
+	style = 1
+	
+	trigger = {
+		event = 8004615
+	}
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action = {
+		name = EVT_8004609_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 320202 } # Joaquín Balaguer
+		command = { type = headofgovernment which = 320214 } # Francisco Augusto Lora
+	}
+}
+
+event = {
+	id = 8004610
+	country = DOM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		event = 8004615
+	}
+	
+	date = { day = 0 month = january year = 1970 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofgovernment which = 320215 } # Carlos Rafael Goico
+	}
+}
+
+event = {
+	id = 8004611
+	country = DOM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		event = 8004615
+	}
+	
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 320216 } # Antonio Guzmán Fernández
+		command = { type = headofgovernment which = 320217 } # Jacobo Majluta Azar
+	}
+}
+
+event = {
+	id = 8004612
+	country = DOM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		event = 8004615
+	}
+	
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 320220 } # Salvador Jorge Blanco
+		command = { type = headofgovernment which = 320218 } # Manuel Fernandez Marmol
+	}
+}
+
+event = {
+	id = 8004613
+	country = DOM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		event = 8004615
+	}
+	
+	date = { day = 0 month = january year = 1986 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 320220 } # Joaquín Balaguer
+		command = { type = headofgovernment which = 320219 } # Carlos Morales Troncoso
+	}
+}
+
+event = {
+	id = 8004614
+	country = DOM
+
+	name = "EVT_8004614_NAME"
+	desc = "EVT_8004614_DESC"
+	picture = "nwo\assassination_of_trujillo"
+	style = 1
+
+	date = { day = 29 month = may year = 1961 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action = {
+		name = "EVT_8004614_A"
+		ai_chance = 100
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = sleepminister which = 320001 }
+		command = { type = sleepminister which = 320007 }
+		command = { type = sleepminister which = 320008 }
+		command = { type = sleepminister which = 320018 }
+		command = { type = sleepminister which = 320034 }
+		command = { type = sleepminister which = 320059 }
+		command = { type = sleepminister which = 320064 }
+	}
+}
+
+event = {
+	id = 8004615
+	country = USA
+
+	name = EVT_8004615_NAME
+	desc = EVT_8004615_DESC
+	picture = nwo\operation_power_pack
+	decision_picture = nwo\d_operation_power_pack
+	style = 1
+	
+	decision = {
+		exists = DOM
+		flag = cold_War
+		NOT = { war = { country = USA country = DOM } }
+		domestic = { type = interventionism value = 3 }
+	}
+	
+	trigger = {
+		exists = DOM
+		flag = cold_War
+		NOT = { war = { country = USA country = DOM } }
+		domestic = { type = interventionism value = 3 }
+	}
+
+	date = { day = 0 month = january year = 1965 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = EVT_8004615_A
+		ai_chance = 90
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+	action = {
+		name = EVT_8004615_B
+		ai_chance = 10
+		command = { type = sleepevent which = 8004608 }
+		command = { type = sleepevent which = 8004609 }
+		command = { type = sleepevent which = 8004610 }
+		command = { type = sleepevent which = 8004611 }
+		command = { type = sleepevent which = 8004612 }
+		command = { type = sleepevent which = 8004613 }
+	}
+}

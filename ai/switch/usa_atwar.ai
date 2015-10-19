@@ -1,0 +1,466 @@
+# USA atwar AI File  db
+
+
+strat_redeploy_threshold = 35
+max_redeploying = 0.250
+
+max_garrison_prop = 0.40
+min_garrison_prop = 0.30
+
+exp_force_ratio = 0.0
+exp_force_ratios = { } 
+
+combat = {
+	GER = 100
+	JAP = 130
+	ITA = 100
+	VIC = 80
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	country_priorities = {
+		CAN = -1
+		MEX = -1
+		SPA = -1
+		SPR = -1
+		SCH = -1
+		VIC = 30
+		GER = 60
+		JAP = 60
+		ITA = 60
+	}
+	province_priorities = {
+
+
+		# East Coast  kand west
+		
+
+		1809 = 60 #Washington
+		1812 = 90
+		1889 = 85 #San Francisco
+		 1886 = 90 # San Diego 
+		
+		
+		#Central Pacific
+		 #Pearl Harbour
+		1734 = 180
+		1736 = 60
+		1737 = 60
+		1735 = 60
+
+		# Africa      DH
+		718 = 90 # casa
+
+		# greenland and Iceland
+		1783 = 30
+		1 = 30
+		
+			}
+	area_multiplier = {
+		1734 = 2.5 #Pearl Harbour
+	}
+
+
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 3
+	reserve_prop		= 0.15
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+
+  	enemy_handicap = { } 
+   	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion		= no
+ 	base			= 0.1 # 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 0.01	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1 # 0.1	#increase to avoid coastal forts more.
+	beach			= 0.1 # 0.1	#higher, avoid worst beaches.
+	distance		= 0.1 # 0.1	#higher = avoid long distance.
+	max_distance  		= 90.0  #About the distance from Japan to Batavia
+	max_staging_distance    = 80.0	# How far should the staging area be from the target invasion point
+	pocket			= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 0.1	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.1	#higher = much more vary of troops nearby
+	air_base		= 0.2
+    naval_base 			= 0.1 
+    air_support 		= 0.5 
+    redirect 			= nearest
+	ignore			= no
+	help_allies 		= no
+      
+	staging_province = { 
+
+		1795  	#New York    DH
+		# 1953	# Mi
+		1812	# Norfolk
+		  1886 # San Diego 
+			     
+		1889 # San Francisco
+		1734 # Pearl harbour
+
+		 }
+
+	target = {
+
+
+		# -----------------
+		# Italy     DH
+		
+		
+
+		#England    DH
+		26  = 900  #Dover
+		25  = 900  #Norwich
+		27  = 900 #Portsmouth
+		23  = 900  #Plymouth
+		22  = 900  #Cardif
+		36  = 900  #Belfast
+		
+
+		# PACIFIC OCEAN
+		# -------------
+		
+
+		#Pearl Harbour
+		1734 = 1800
+		1736 = 600
+		1737 = 600
+		1735 = 600
+
+		# MEDITERRANEAN SEA
+		# -----------------
+
+      # Italy
+        430 = 80 #Palermo
+        433 = 80 #Syracuse
+        434 = 40 #Cagliari
+        94 = 40 #Corsica
+        422 = 80 #Taranto
+        427 = 80 #Salerno
+        416 = 80 #Anzio
+        419 = 80 #Rome
+        412 = 20 #Ancona
+        400 = 20 #Venice
+
+        429 = 800 #Malta
+
+        # North Africa
+        900 = 800 #Suez
+        789 = 100 #Alexandra
+        717 = 100 #Rabat
+        728 = 100 #Oran
+        727 = 200 #Algiers
+        748 = 200 #Bizerte
+        747 = 300 #Tunis
+        750 = 300 #Tripoli
+        761 = 200 #Benghazi
+        765 = 200 #Tobruk
+
+        #Denmark      shut down  Occupied Germany
+        217 = -1 #Arborg
+        220 = -1 #Arhus
+        219 = -1 #Odense
+        
+        #Norway
+        491 = -1 #Alesund
+        485 = -1 #Kristiansand
+        483 = -1 #Oslo
+        493 = -1 #Trondheim
+        495 = -1 #Narvik
+        
+        #Germany
+        152 = -1 #Kiel
+        147 = -1 #Wilhelmshaven
+        153 = -1 #Rostock
+        158 = -1 #Stettin
+
+    
+        #France
+        49 = -1 #Calais
+        53 = -1 #Dieppe
+        44 = -1 #Caen
+        37 = -1 #Brest
+        39 = -1 #Lorient
+        68 = -1 #Bordeaux
+        69 = -1 #La Rochelle
+        46 = -1 #Bayeux
+        51 = -1 #Dunkirk
+        82 = -1 #Montpellier
+        86 = -1 #Marseille
+    
+        # Belgium
+        114 = -1 #Bruges
+        115 = -1 #Antwerpen
+
+        #Holland
+        125 = -1 #Rotterdam
+        122 = -1 #Amsterdam
+
+		#Alaska
+
+		#Alaska - mainland
+
+		#Kurils
+
+		#Central Pacific
+
+		#South Pacific
+
+		#New Zealand
+
+		#Australia
+
+		#Coral Sea
+
+		#Carolinese
+
+		#Molucca
+
+		#Borneo
+
+		#Java
+
+		#Sumatra
+
+		#Hainan
+
+		#Philippines
+
+		#Luzon
+		
+
+		#Formose
+		
+		#RyuKyu Islands
+		
+
+		#Malaisia
+		
+
+		#Indochina
+		
+
+		#Sakhalin
+	
+
+		#China-Korea
+	
+
+		#Kyushu
+		
+
+		#Shikoku
+		
+
+		#Japan
+		
+
+		#Hokaido
+		
+
+		#Canada - vancouver
+		
+
+		#USA-West Coast
+		
+
+		#Latin America
+
+
+		# ATLANTIC OCEAN
+		# -------------
+		#Islands in cold Water
+
+
+		#Bahamas and Bermuda
+
+		#Mid Atlantic
+		
+		#South America
+		
+		#Carabean
+		
+	
+	} 
+} 
+	admiral = {
+
+	 min_org	= 100	# NEW: Percent of org gained back before the unit can leave port
+	 min_dmg	= 50    # NEW: Percent of dmg gained back before the unit can leave port
+	 return_org 	= 80 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	 return_dmg 	= 60 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 2 	
+		ignore = {
+		"Southeast Northsea"
+
+
+		#Norway Coast (Denmark Coast)
+		"Norwegian Sea"
+		"East North Sea"
+		"Kattegat"
+	
+
+
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+		
+		#Central Mediterranean
+		"Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+
+
+
+	}
+
+            target = {  
+			2316 = 200 2315 = 200 2319 = 200 2320 = 200 2346 = 200 2345 = 200
+			2321 = 150 2322 = 100 2323 = 100 2325 = 75 2327 = 75
+ 		} 
+
+	core = {
+		#west coast to Pearl
+		2388 
+		2389 
+		2390
+		2391
+		2386
+		2382
+		2375
+		2380
+		2383
+		2636
+		2637
+
+		2381 2379 2382 2380 2633 
+
+		# Pearl to iwo jima
+		2414 2418 2631 2635 2476 2416
+
+		# islands
+		2639 2424 2476 2474 2478
+		
+		#2339 
+		#2338 
+		#2336 
+
+		# East coast#Panama/guantanamo
+		#2316 
+		#2315
+		#2319
+		#2320
+		#2346
+		#2345 
+		#2321
+		#2322 
+		#2323 
+		#2325
+		#2327 
+		
+		 
+		
+				
+	}
+
+            # base = { 1734 1812 1795 } 
+
+}

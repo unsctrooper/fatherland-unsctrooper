@@ -1,0 +1,349 @@
+event = {
+	id = 8006801
+	country = HON
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -18 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 355011 } # Tiburcio Carias Andina
+		command = { type = headofgovernment which = 355019 } # Juan Manuel Galvez
+		command = { type = foreignminister which = 355028 } # Silverio La?nez Villamin
+		command = { type = armamentminister which = 355039 } # Fausto Davil?
+		command = { type = ministerofsecurity which = 355052 } # Abraham Williams Calderon
+		command = { type = ministerofintelligence which = 355059 } # Tiburcio Carias Andina
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 355012 } # Jos? Zu?iga Huete
+		command = { type = headofgovernment which = 355021 } # Julio Lozano D?az
+		command = { type = foreignminister which = 355031 } # Roberto Michelleti Bain
+		command = { type = armamentminister which = 355045 } # Dr Ramon Villeda Morales
+		command = { type = ministerofsecurity which = 355053 } # Roberto Ort?z Almendares
+		command = { type = ministerofintelligence which = 355062 } # Hernan Fernandez Silva
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8006802
+	country = HON
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 355085 } # Juan Manuel Galvez
+		command = { type = headofgovernment which = 355086 } # Hernan Fernandez Silva
+		command = { type = foreignminister which = 355029 } # Juan Manuel Galvez
+		command = { type = armamentminister which = 355041 } # Juan Manuel Galvez
+		command = { type = ministerofsecurity which = 355005 } # Carlos Alberto Ucles
+		command = { type = ministerofintelligence which = 355006 } # Raimundo Stochler Garcia
+		command = { type = chiefofstaff which = 355082 } # Juan Manuel Galvez
+		command = { type = chiefofarmy which = 355071 } # Juan Manuel Galvez
+		command = { type = chiefofnavy which = 355083 } # Carlos Vaupel Comeza
+		command = { type = chiefofair which = 355078 } # Didier Masson
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 355012 } # Jos? Zu?iga Huete
+		command = { type = headofgovernment which = 355024 } # Francisco S. Tapio Toro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8006803
+	country = HON
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -18 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 355201 } # Julio Lozano D?az
+		command = { type = headofgovernment which = 355086 } # Hernan Fernandez Silva
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 355200 } # Dr Ramon Villeda Morales
+		command = { type = headofgovernment which = 355024 } # Francisco S. Tapio Toro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+# Honduran Coup of 1957
+event = {
+	id = 8006804
+	country = HON
+
+	name = EVT_8006804_NAME
+	desc = EVT_8006804_DESC
+	picture = "nwo\empty"
+	style = 1
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = EVT_8006804_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 355202 } # Dr Ramon Villeda Morales
+		command = { type = headofgovernment which = 355203 } # Jos? Mejia Arellano
+	}
+}
+
+event = {
+	id = 8006805
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 355204 } # Oswaldo López Arellano
+		command = { type = headofgovernment which = 355205 } # Ricardo Zuniga Agustinus
+	}
+}
+
+event = {
+	id = 8006806
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1971 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 355206 } # Ramón Ernesto Cruz Uclés
+		command = { type = headofgovernment which = 355207 } # René Bendana Meza
+	}
+}
+
+event = {
+	id = 8006807
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1973 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1974 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 355208 } # Oswaldo López Arellano
+		command = { type = headofgovernment which = 355209 } # Oswaldo López Arellano
+	}
+}
+
+event = {
+	id = 8006808
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1975 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 355210 } # Juan Alberto Melgar Castro
+		command = { type = headofgovernment which = 355211 } # Juan Alberto Melgar Castro
+	}
+}
+
+event = {
+	id = 8006809
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 355212 } # Policarpo Paz García
+		command = { type = headofgovernment which = 355213 } # Policarpo Paz García
+	}
+}
+
+event = {
+	id = 8006810
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 355219 } # Roberto Suazo Córdova
+		command = { type = headofgovernment which = 355214 } # Marcelino Ponce Martínez
+	}
+}
+
+event = {
+	id = 8006811
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1986 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 355215 } # José Azcona del Hoyo
+		command = { type = headofgovernment which = 355216 } # Alfredo Fortín
+	}
+}
+
+event = {
+	id = 8006812
+	country = HON
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1990 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 355217 } # Rafael L. Callejas Romero
+		command = { type = headofgovernment which = 355218 } # Jacobo Hernández Cruz
+	}
+}

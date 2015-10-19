@@ -1,0 +1,8 @@
+# ENG North Africa exp force to USA - DB
+
+
+exp_force_ratio = 0.15
+
+exp_force_ratios = { ENG = 1.0 }
+no_exp_forces_to = { FRA GER ITA VIC }
+

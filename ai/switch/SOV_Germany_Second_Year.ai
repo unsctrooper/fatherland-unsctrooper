@@ -1,0 +1,19 @@
+# Soviet Second Year war with Germany AI File by Lothos    DB
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 3
+	reserve_prop		= 0.2
+	panic_ratio_vs_ai	= 3.0
+	panic_ratio_vs_human = 3.0
+	base_attack_odds	= 1.4
+	min_attack_odds		= 1.2
+	max_attack_odds		= 2.5
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.7
+} 

@@ -13,7 +13,7 @@ event = {
 
 	date = { day = 0 month = january year = 1946 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1949 }
+	deathdate = { day = 29 month = december year = 1949 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -63,7 +63,7 @@ event = {
 
 	date = { day = 0 month = january year = 1950 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1950 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = "EVT_8003202_A"
@@ -109,7 +109,7 @@ event = {
 
 	date = { day = 0 month = january year = 1951 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1952 }
+	deathdate = { day = 29 month = december year = 1952 }
 
 	action = {
 		name = "EVT_8003203_A"
@@ -130,7 +130,7 @@ event = {
 
 	date = { day = 0 month = january year = 1953 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1956 }
+	deathdate = { day = 29 month = december year = 1956 }
 
 	action = {
 		name = "EVT_8003204_A"
@@ -161,7 +161,7 @@ event = {
 
 	date = { day = 0 month = january year = 1957 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = "OK"
@@ -182,7 +182,7 @@ event = {
 
 	date = { day = 0 month = january year = 1958 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1961 }
+	deathdate = { day = 29 month = december year = 1961 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -224,7 +224,7 @@ event = {
 
 	date = { day = 0 month = january year = 1962 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1965 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -251,3 +251,296 @@ event = {
 	}
 }
 
+event = {
+	id = 8003208
+	country = COL
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 175311 } # Carlos Lleras Restrepo
+		command = { type = headofgovernment which = 175312 } # Carlos Lleras Restrepo
+	}
+}
+
+event = {
+	id = 8003209
+	country = COL
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1970 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 175313 } # Misael Pastrana Borrero
+		command = { type = headofgovernment which = 175314 } # Misael Pastrana Borrero
+	}
+}
+
+event = {
+	id = 8003210
+	country = COL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 175307 } # Alfonso Lopez Michelsen 
+		command = { type = headofgovernment which = 175308 } # Alfonso Lopez Michelsen 
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 175315 } # Álvaro Gómez Hurtado
+		command = { type = headofgovernment which = 175316 } # Álvaro Gómez Hurtado
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003211
+	country = COL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 175317 } # Julio César Turbay Ayala
+		command = { type = headofgovernment which = 175318 } # Julio César Turbay Ayala
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 175319 } # Belisario Betancur Cuartas
+		command = { type = headofgovernment which = 175320 } # Belisario Betancur Cuartas
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003212
+	country = COL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 175319 } # Belisario Betancur Cuartas
+		command = { type = headofgovernment which = 175320 } # Belisario Betancur Cuartas
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 175307 } # Alfonso Lopez Michelsen 
+		command = { type = headofgovernment which = 175308 } # Alfonso Lopez Michelsen 
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003213
+	country = COL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1986 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 175321 } # Virgilio Barco Vargas
+		command = { type = headofgovernment which = 175322 } # Virgilio Barco Vargas
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 175315 } # Alvaro Gómez Hurtado
+		command = { type = headofgovernment which = 175316 } # Alvaro Gómez Hurtado
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003214
+	country = COL
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1990 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 175323 } # César Gaviria
+		command = { type = headofgovernment which = 175324 } # César Gaviria
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 175315 } # Alvaro Gómez Hurtado
+		command = { type = headofgovernment which = 175316 } # Alvaro Gómez Hurtado
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8003215
+	country = COL
+
+	name = EVT_8003215_NAME
+	desc = EVT_8003215_DESC
+	picture = nwo\medellin_cartel
+	style = 1
+
+	trigger = {
+		atwar = no
+	}
+
+	date = { day = 0 month = january year = 1985 }
+	offset = 1080
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = EVT_8003215_A
+		command = { type = dissent value = 10 }
+		
+	}
+}

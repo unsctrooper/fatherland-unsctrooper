@@ -206,7 +206,7 @@ event = {
 
 	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1964 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -237,8 +237,356 @@ event = {
 	id = 8000806
 	country = ARG
 
-	name = "EVT_8000806_NAME"
-	desc = "EVT_8000806_DESC"
+	name = EVT_8000806_NAME
+	desc = EVT_8000806_DESC
+	picture = nwo\revolucion_argentina
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action = {
+		name = EVT_8000806_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165314 } # Juan Carlos Ongania
+		command = { type = headofgovernment which = 165315 } # Juan Carlos Ongania
+	}
+}
+
+event = {
+	id = 8000807
+	country = ARG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1970 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165316 } # Roberto M. Levingston
+		command = { type = headofgovernment which = 165317 } # Roberto M. Levingston
+	}
+}
+
+event = {
+	id = 8000808
+	country = ARG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1971 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165318 } # Alejandro A. Lanusse
+		command = { type = headofgovernment which = 165319 } # Alejandro A. Lanusse
+	}
+}
+
+event = {
+	id = 8000809
+	country = ARG
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1973 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165320 } # Juan Domingo Perón
+		command = { type = headofgovernment which = 165321 } # Isabel Martinez de Perón
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 165304 } # Ricardo Balbin
+		command = { type = headofgovernment which = 165309 } # Ricardo Balbin
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8000810
+	country = ARG
+
+	name = EVT_8000810_NAME
+	desc = EVT_8000810_DESC
+	picture = nwo\death_of_peron
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = july year = 1974 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = EVT_8000810_A
+		ai_chance = 100
+		command = { trigger = { headofstate = 165320 } type = set_domestic which = democratic value = 6 }
+		command = { trigger = { headofstate = 165320 } type = set_domestic which = political_left value = 4 }
+		command = { type = sleepminister which = 165024 } # Juan Domingo Perón
+		command = { type = sleepminister which = 165038 } # Juan Domingo Perón
+		command = { type = sleepminister which = 165071 } # Juan Domingo Perón
+		command = { type = sleepminister which = 165134 } # Juan Domingo Perón
+		command = { type = sleepminister which = 165144 } # Juan Domingo Perón
+		command = { type = sleepminister which = 165152 } # Juan Domingo Perón
+		command = { type = sleepminister which = 165320 } # Juan Domingo Perón
+		command = { trigger = { headofstate = 165320 } type = headofstate which = 165321 } # Isabel Martinez de Perón
+	}
+}
+
+event = {
+	id = 8000811
+	country = ARG
+
+	name = EVT_8000811_NAME
+	desc = EVT_8000811_DESC
+	picture = nwo\jorge_rafael_videla
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1976 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = EVT_8000811_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165322 } # Jorge Rafael Videla
+		command = { type = headofgovernment which = 165323 } # Jorge Rafael Videla
+	}
+}
+
+event = {
+	id = 8000812
+	country = ARG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1981 }
+	offset = 180
+	deathdate = { day = 29 month = june year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165324 } # Roberto Eduardo Viola
+		command = { type = headofgovernment which = 165325 } # Roberto Eduardo Viola
+	}
+}
+
+event = {
+	id = 8000813
+	country = ARG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = july year = 1981 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165326 } # Leopoldo Galtieri
+		command = { type = headofgovernment which = 165327 } # Leopoldo Galtieri
+	}
+}
+
+event = {
+	id = 8000814
+	country = ARG
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1982 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 165328 } # Reynaldo Bignone
+		command = { type = headofgovernment which = 165329 } # Reynaldo Bignone
+	}
+}
+
+event = {
+	id = 8000815
+	country = ARG
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1983 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1988 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 165330 } # Raúl Alfonsín
+		command = { type = headofgovernment which = 165331 } # Víctor Martínez
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 165332 } # Italo Luder
+		command = { type = headofgovernment which = 165333 } # Deolindo Bittel
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8000816
+	country = ARG
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1989 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -18 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 165336 } # Carlos Menem
+		command = { type = headofgovernment which = 165337 } # Eduardo Duhalde
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 165334 } # Eduardo Angeloz
+		command = { type = headofgovernment which = 165335 } # Juan Manuel Casella
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+###
+
+event = {
+	id = 8000817
+	country = ARG
+
+	name = "EVT_8000817_NAME"
+	desc = "EVT_8000817_DESC"
 	picture = "nwo\juan_peron"
 	style = 1
 	
@@ -251,7 +599,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
-		name = "EVT_8000806_A"
+		name = "EVT_8000817_A"
 		command = { type = dissent value = -5 }
 		command = { type = set_domestic which = freedom value = -1 }
 		command = { type = construct which = ic where = -1 value = 2 }
@@ -269,11 +617,11 @@ event = {
 }
 
 event = {
-	id = 8000807
+	id = 8000818
 	country = ARG	
 
-	name = "EVT_8000807_NAME"
-	desc = "EVT_8000807_DESC"
+	name = "EVT_8000818_NAME"
+	desc = "EVT_8000818_DESC"
 	picture = "nwo\eva_peron_death"
 	style = 1
 
@@ -282,7 +630,7 @@ event = {
 	deathdate = { day = 29 month = july year = 1952 }
 
 	action = {
-		name = "EVT_8000807_A"
+		name = "EVT_8000818_A"
 		command = { type = dissent value = -1 }
 		command = { type = sleepminister value = 35134 }
 	}	

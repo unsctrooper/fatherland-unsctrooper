@@ -1,0 +1,129 @@
+# Soviet Finland AI File by Lothos   db
+
+ 
+max_front_ratios = {
+	FIN = 1.0 # 
+	ROM = 2.0 # 
+	GER = 4.0
+	HUN = 1.75
+	JAP = 0.8
+}
+
+reinforcement = 0.15 # db
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	province_priorities = {
+
+     		553   = 230  #Leningrad
+		617   = 120  #Kiev
+		632   = 120  #Dnepropetrovsk
+		663   = 220  #Stalingrad
+		636   = 150  #Kharkov
+		588   = 120  #Bryansk  	db
+		1191  = 120  #Vladivostock
+		535   = 120  #Murmansk
+		641   = 150  #Sevastopool
+		589   = 150  #Smolensk
+
+		# In depth defense
+
+		# 270 = 10 # Tallinn
+		604 = 210 # Kursk
+		590 = 100 # Vitebsk
+		552 = 60 # Gdov
+		584 = 60 # Tula
+		# 644 = 10 # Rostov
+
+		# Forests near Moscow
+		592 = 90
+		586 = 90
+		574 = 90
+		568 = 90 
+		567 = 90 
+		570 = 90
+		
+		# German Soviet Border   DB
+		239 = 150
+		242 = 150
+		245 = 150
+		247 = 150
+		253 = 150
+		250 = 150
+		254 = 150
+		255 = 150		
+		263 = 150
+		259 = 150		
+		262 = 150
+
+
+		# 1st line
+	
+		264  = 90  #riga
+		267  = 60
+		258  = 60
+		255  = 60
+		251  = 60
+		248  = 60
+		# 595  = 30
+		616  = 60
+		611  = 60
+		612  = 60
+		619  = 60
+		620  = 60
+		626  = 60
+
+		# 2nd line
+		618 = 50
+		614 = 50
+		616 = 50
+		595 = 50
+		597 = 50
+		596 = 50
+		599 = 50
+		593 = 50
+		564 = 50
+		566 = 50
+
+		# 3rd line defense n Kerson North to 
+		624 = 60
+		623 = 60
+		630 = 60
+		632 = 60
+
+		629 = 60
+		610 = 60
+		608 = 60
+		607 = 60
+
+		601 = 60
+		600 = 60
+
+		#   4th line   Rostov to vytegra
+		644 = 40
+		649 = 40
+		653 = 40
+		654 = 40
+		652 = 40
+		579 = 40
+		571 = 40
+		570 = 40 
+		569 = 40
+		563 = 40
+		555 = 40
+		556 = 40
+
+				# airports and river defense
+		585 = 45
+		590 = 75   # vitebsk
+		265 = 75
+		266 = 75
+		240 = 75
+	}
+	area_multiplier = {
+		535  = 1.2  #Murmansk
+     		553  = 2.0  #Leningrad 
+	}
+}

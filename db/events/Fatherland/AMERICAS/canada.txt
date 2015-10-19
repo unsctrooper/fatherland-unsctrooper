@@ -13,7 +13,7 @@ event = {
 
 	date = { day = 0 month = january year = 1946 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = "OK"
@@ -37,7 +37,7 @@ event = {
 
 	date = { day = 0 month = january year = 1948 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -85,7 +85,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1958 }
+	deathdate = { day = 29 month = december year = 1958 }
 
 	action = {
 		name = "OK"
@@ -109,7 +109,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1956 }
+	deathdate = { day = 29 month = december year = 1956 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -154,7 +154,7 @@ event = {
 
 	date = { day = 0 month = january year = 1957 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1958 }
+	deathdate = { day = 29 month = december year = 1958 }
 
 	action = {
 		name = "EVT_ELECTIONS_RIGHT"
@@ -202,7 +202,7 @@ event = {
 
 	date = { day = 0 month = january year = 1959 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "OK"
@@ -226,7 +226,7 @@ event = {
 
 	date = { day = 0 month = january year = 1963 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1964 }
 
 	action = {
 		name = "EVT_ELECTIONS_LEFT"
@@ -261,11 +261,445 @@ event = {
 
 event = {
 	id = 8002608
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1965 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220117 } # Lester B. Pearson
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220116 } # John Diefenbaker
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8002609
+	country = CAN
+
+	name = EVT_GOVGENERAL_NAME
+	desc = EVT_GOVGENERAL_DESC
+	picture = nwo\governor_general
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1967 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 220300 } # Roland Michener
+	}
+}
+
+event = {
+	id = 8002610
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1968 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1971 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220301 } # Pierre Trudeau
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220302 } # Robert Stanfield
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8002611
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1972 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220301 } # Pierre Trudeau
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220302 } # Robert Stanfield
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8002612
+	country = CAN
+
+	name = EVT_GOVGENERAL_NAME
+	desc = EVT_GOVGENERAL_DESC
+	picture = nwo\governor_general
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 220303 } # Jules Léger
+	}
+}
+
+event = {
+	id = 8002613
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220301 } # Pierre Trudeau
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220302 } # Robert Stanfield
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+	}
+}
+
+event = {
+	id = 8002614
+	country = CAN
+
+	name = EVT_GOVGENERAL_NAME
+	desc = EVT_GOVGENERAL_DESC
+	picture = nwo\governor_general
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1983 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 220304 } # Edward Schreyer
+	}
+}
+
+event = {
+	id = 8002615
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1979 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220305 } # Joe Clark
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220301 } # Pierre Trudeau
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+	}
+}
+
+event = {
+	id = 8002616
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1983 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220301 } # Pierre Trudeau
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220305 } # Joe Clark
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8002617
+	country = CAN
+
+	name = EVT_GOVGENERAL_NAME
+	desc = EVT_GOVGENERAL_DESC
+	picture = nwo\governor_general
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1984 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 220306 } # Jeanne Sauvé
+	}
+}
+
+event = {
+	id = 8002618
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1984 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1987 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220308 } # Brian Mulroney
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220307 } # John Turner
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+	}
+}
+
+event = {
+	id = 8002619
+	country = CAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 220308 } # Brian Mulroney
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 220307 } # John Turner
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8002620
+	country = CAN
+
+	name = EVT_GOVGENERAL_NAME
+	desc = EVT_GOVGENERAL_DESC
+	picture = nwo\governor_general
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1990 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 220309 } # Ray Hnatyshyn
+	}
+}
+
+
+#######
+
+event = {
+	id = 8002621
 	country = ENG
 	
-	name = EVT_8002608_NAME
-	desc = EVT_8002608_DESC
-	picture = "NWO\newfoundland"
+	name = EVT_8002621_NAME
+	desc = EVT_8002621_DESC
+	picture = nwo\newfoundland
 	style = 1
 
 	trigger = {
@@ -275,26 +709,26 @@ event = {
 		exists = CAN
 	}
 
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 0 month = january year = 1948 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		name = EVT_8002608_A
+		name = EVT_8002621_A
 		ai_chance = 80
 		command = { type = secedearea which = CAN value = "New Foundland" when = 1 }
 		command = { type = dissent value = -2 }
 	}
 
 	action = {
-		name = EVT_8002608_B
+		name = EVT_8002621_B
 		ai_chance = 18
 		command = { type = dissent value = 3 }
 		command = { type = sleepevent which = 8002609 }
 	}
 	
 	action = {
-		name = EVT_8002608_C
+		name = EVT_8002621_C
 		ai_chance = 2
 		command = { type = independence which = U60 value = 1 when = 0 } # Newfoundland
 		command = { type = sleepevent which = 8002609 }
@@ -303,24 +737,24 @@ event = {
 }
 
 event = {
-	id = 8002609
+	id = 8002622
 	country = CAN
 
-	name = EVT_8002609_NAME
-	desc = EVT_8002609_DESC
-	picture = "NWO\newfoundland"
+	name = EVT_8002622_NAME
+	desc = EVT_8002622_DESC
+	picture = nwo\newfoundland
 	style = 1
 
 	trigger = {
 		event = 8002608
 	}
 
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 0 month = january year = 1948 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		name = "OK"
+		name = EVT_8002622_A
 		command = { type = addcore which = 2136 }
 		command = { type = addcore which = 2137 }
 		command = { type = addcore which = 2138 }
@@ -329,12 +763,12 @@ event = {
 }
 
 event = {
-	id = 8002610
+	id = 8002623
 	country = CAN
 
-	name = EVT_8002610_NAME
-	desc = EVT_8002610_DESC
-	picture = "nwo\canadian_oil_fields"
+	name = EVT_8002623_NAME
+	desc = EVT_8002623_DESC
+	picture = nwo\canadian_oil_fields
 	style = 1
 
 	trigger = {
@@ -342,25 +776,57 @@ event = {
 		control = { province = 2104 data = -1 }
 	}
 
-	date = { day = 1 month = january year = 1947 }
+	date = { day = 0 month = january year = 1947 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		name = "OK"
+		name = EVT_8002623_A
 		command = { type = add_prov_resource which = 2103 value = 4 where = oil } # Edmonton
 		command = { type = add_prov_resource which = 2104 value = 2 where = oil } # Calgary
+	}
+}
+
+event = {
+	id = 8002624
+	country = CAN
+
+	name = EVT_8002624_NAME
+	desc = EVT_8002624_DESC
+	picture = nwo\canadian_red_scare
+	decision_picture = nwo\d_canadian_red_scare
+	style = 1
+
+	decision = {
+		flag = cold_war
+		NOT = { government = communist }
+	}
+	
+	trigger = {
+		flag = cold_war
+		NOT = { government = communist }
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8002624_A
+		command = { type = dissent value = -2 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = freedom value = -2 }
 	}
 }
 
 ### Avro Arrow
 
 event = {
-	id = 8002612
+	id = 8002625
 	country = CAN
 
-	name = EVT_8002612_NAME
-	desc = EVT_8002612_DESC
+	name = EVT_8002625_NAME
+	desc = EVT_8002625_DESC
 	picture = nwo\avro_arrow
 	style = 1
 	
@@ -368,19 +834,19 @@ event = {
 		flag = cold_war
 	}
 
-	date = { day = 1 month = january year = 1958 }
+	date = { day = 0 month = january year = 1958 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		name = EVT_8002612_A # Avro Arrow is cancelled
+		name = EVT_8002625_A # Avro Arrow is cancelled
 		trigger = { headofgovernment = 220116 } # Diefenbaker is in power
 		ai_chance = 100
 		command = { type = dissent value = 5 }
 	}
 
 	action = {
-		name = EVT_8002612_B # Avro Arrow enters service
+		name = EVT_8002625_B # Avro Arrow enters service
 		trigger = { NOT = { headofgovernment = 220116 } } # Diefenbaker is not in power
 		ai_chance = 98
 		command = { type = money value = -1000 }
@@ -388,10 +854,164 @@ event = {
 	}
 	
 	action = {
-		name = EVT_8002612_C # Save money
+		name = EVT_8002625_C # Save money
 		trigger = { NOT = { headofgovernment = 220116 } } # Diefenbaker is not in power
 		ai_chance = 2
 		command = { type = money value = 1000 }
 		command = { type = dissent value = 3 }
+	}
+}
+
+### Canada gets a new flag
+
+event = {
+	id = 8002626
+	country = CAN
+
+	name = EVT_8002626_NAME
+	desc = EVT_8002626_DESC
+	picture = nwo\maple_leaf_flag
+	style = 1
+	
+	date = { day = 05 month = february year = 1965 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = EVT_8002626_A # Establish a new flag
+		ai_chance = 100
+		command = { type = flag_ext where = CAN which = _1965 }
+	}
+
+	action = {
+		name = EVT_8002626_B # Let the old flag stay
+		ai_chance = 0
+		command = { type = relation which = ENG value = 5 }
+	}
+}
+
+### Tensions in Quebec
+
+event = {
+	id = 8002627
+	country = CAN
+
+	name = EVT_8002627_NAME
+	desc = EVT_8002627_DESC
+	picture = nwo\montreal
+	style = 1
+	
+	trigger = {
+		atwar = no
+		control = { province = 2117 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 1600
+	deathdate = { day = 29 month = december year = 1967 }
+
+	action = {
+		name = EVT_8002627_A
+		ai_chance = 100
+		command = { type = construct which = ic where = 2117 value = 5 }
+	}
+}
+
+event = {
+	id = 8002628
+	country = CAN
+
+	name = EVT_8002628_NAME
+	desc = EVT_8002628_DESC
+	picture = nwo\quebec_october_crisis
+	style = 1
+	
+	trigger = {
+		atwar = no
+		NOT = { exists = QUE }
+	}
+
+	date = { day = 0 month = october year = 1970 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = EVT_8002628_A # Change our course towards Quebec
+		ai_chance = 85
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = dissent value = 5 }
+	}
+	
+	action = {
+		name = EVT_8002628_B
+		ai_chance = 15
+		command = { type = dissent value = 20 }
+		command = { type = sleepevent which = 8002629 }
+	}
+}
+
+event = {
+	id = 8002629
+	country = CAN
+
+	name = EVT_8002629_NAME
+	desc = EVT_8002629_DESC
+	picture = nwo\quebec_independence
+	style = 1
+	
+	trigger = {
+		atwar = no
+		NOT = { exists = QUE }
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1979 }
+
+	action = {
+		name = EVT_8002629_A # Allow referendum
+		ai_chance = 85
+		command = { type = dissent value = -2 }
+	}
+	
+	action = {
+		name = EVT_8002629_B
+		ai_chance = 15
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 8002630 }
+	}
+}
+
+event = {
+	id = 8002630
+	country = CAN
+	one_action = yes
+
+	name = EVT_8002630_NAME
+	desc = EVT_8002630_DESC
+	picture = nwo\quebec_independence
+	style = 1
+	
+	trigger = {
+		event = 8002629
+		NOT = { exists = QUE }
+	}
+
+	date = { day = 0 month = may year = 1980 }
+	offset = 30
+	deathdate = { day = 29 month = may year = 1980 }
+
+	action = {
+		name = EVT_8002630_A
+		ai_chance = 97
+		command = { type = dissent value = -10 }
+	}
+	
+	action = {
+		name = EVT_8002630_B
+		ai_chance = 3
+		command = { type = independence which = QUE value = 0 }
+		command = { type = non_aggression which = CAN where = QUE }
+		command = { type = alliance which = QUE }
 	}
 }

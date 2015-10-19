@@ -1,0 +1,89 @@
+# Italy loads homeland defense AI File by Lothos  db for wif2
+
+
+max_front_ratio = 1.0
+max_front_ratios = { 	# Override the default against specific countries. Ignored against humans.
+	FRA = 0.2 
+	SOV = -1
+	VIC = 0.2
+	ENG = 0.5
+	
+}
+max_garrison_prop = 0.60
+min_garrison_prop = 0.50
+exp_force_ratio = 0.0
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 	= 1.5
+	overseas_multiplier = 0.3
+	home_peace_cap 		= 120
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.5
+	revolt_risk_mult	= 0.5
+
+	# PRIORITIES:
+	beach			= 50	# Beach level 2
+	capital			= 150	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 0		# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+
+				#Homeland
+		422 = 90 
+		426 = 60
+		421 = 250
+		416 = 190
+		419 = 250 
+		412 = 90
+		400 = 90
+		
+		# Sisily
+		433 = 150
+		430 = 150
+		432 = 60
+		425 = 90
+
+		# French Border
+		398  = 90  #Turin
+		396  = 90  #Genoa
+
+		434  = 60  #Sardinia
+		379  = 30  #Rhodes
+		
+		# North Africa
+		752  = 30
+		750  = 60
+		757 = 30
+		756 = 30
+		759 = 30
+		763 = 30
+
+		761  = 60    # ben
+		765 = 60     # tobruk
+		767 = 60
+
+		771  = 60
+
+
+		769  = 20
+		770  = 20
+
+     		825  = 30  # Addis Adeba 
+
+
+
+
+
+
+	}
+	area_multiplier = { }
+}

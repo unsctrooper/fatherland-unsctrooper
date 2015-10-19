@@ -23,14 +23,14 @@ no_exp_forces_to = { }
 # Diplomacy 
 ##################### 
 combat = { 
-	SOV = 100 
+	
 } 
 claim_acceptance = -59
 befriend = { 
-	GER = 100 
+	
 } 
 protect = {  
-	GER = 100 
+	
 } 
 
 trade = { 
@@ -362,7 +362,7 @@ trade = {
   
    # PRIORITIES: 
    beach      = 0  # Beach level 2 
-   capital      = 5  # Our capital 
+   capital      = 0  # Our capital 
    human_border  = 0    # Ignored for allied human players 
    war_target    = 80  # The next country targeted for attack by this AI 
     

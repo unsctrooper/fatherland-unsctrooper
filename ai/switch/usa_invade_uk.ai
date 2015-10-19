@@ -1,0 +1,145 @@
+# USA Invade UK AI File by Lothos   db
+
+max_garrison_prop = 0.12
+min_garrison_prop = 0.1
+
+exp_force_ratio = 0.000 
+exp_force_ratios = { } 
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	home_multiplier 	= 0.25
+	overseas_multiplier = 1.0
+	home_peace_cap 		= 45
+	war_zone_odds 		= 5.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 30		# Beach level 2
+	capital			= 60		# Our capital
+	human_border	= 0		# Ignored for allied human players
+	
+	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	ignore = {	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion			= yes
+ 	base				= 0.001	#Relative modifier. (lower = specific targets much more important.)
+	random				= 0.01	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance  		= 200.0  #About the distance from Japan to Batavia
+	max_staging_distance = 200.0	# How far should the staging area be from the target invasion point
+	distance			= 0.01	#higher = avoid long distance.
+	pocket				= 0.10	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 0.1	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.5	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    	naval_base 			= 0.2 
+    	air_support 		= 0.2 
+    	redirect 			= priority
+	ignore				= no
+	help_allies 		= no 	#[yes/no]
+      
+	staging_province = {
+		1		#Reykjavik
+		717		#Rabat
+     		1795	#New York 
+		# 23		#Plymouth
+		# 27		#Portsmouth
+		# 26		#Dover
+		# 348		#Gibraltar
+	}
+	target = {
+		#England
+		26  = 9000  #Dover
+		25  = 9000  #Norwich
+		27  = 9000  #Portsmouth
+		23  = 9000  #Plymouth
+		22  = 9000  #Cardif
+		36  = 9000  #Belfast
+		17  = 9000  #Manchester
+		12  = 9000  #Edinburgh
+		11	= 9000  #Glasgow
+
+		# Middle East
+		1004  = -1	#	El Arish
+		1005  = -1	#	Sharm el Sheikh
+		1008  = -1	#	Tel Aviv
+		1019  = -1	#	Beirut
+		1032  = -1	#	Basrah
+		1038  = -1	#	Doha
+		1039  = -1	#	Abu Dhabi
+		1040  = -1	#	Dammam
+		1041  = -1	#	Kuwait
+		1043  = -1	#	Khasab
+		1048  = -1	#	Medina
+		1051  = -1	#	El Mukalla
+		1052  = -1	#	Masqat
+
+
+		#Temp Shut Down of Europe
+		#Norway
+		483  = -1	#	Oslo
+		485  = -1	#	Kristiansand
+		491  = -1	#	Alesund
+		493  = -1	#	Trondheim
+		495  = -1	#	Narvik
+
+
+		# Baltic States (in case of un-holy alliance)
+		226  = -1	#	Gdynia
+		264  = -1	#	Riga
+		269  = -1	#	Jelgava
+		270  = -1	#	Tallinn
+		275  = -1	#	Kuressaare
+		516  = -1	#	Tornio
+		521  = -1	#	Vaasa
+		524  = -1	#	Turku
+		525  = -1	#	Helsinki
+		526  = -1	#	Ahvenanmaa
+		530  = -1	#	Terijoki
+		531  = -1	#	Viipuri
+		535  = -1	#	Murmansk
+		542  = -1	#	Arkhangelsk
+		553  = -1	#	Leningrad
+
+
+		# German
+		147   = -1	#	Wilhelmshaven
+		152   = -1	#	Kiel
+		153   = -1	#	Rostock
+		158   = -1	#	Stettin
+		181   = -1	#	Danzig
+		184   = -1	#	Koenigsberg
+
+	
+		# Atlantic Wall
+		37   = -1	#	Brest
+		39   = -1	#	Lorient
+		44   = -1	#	Caen
+		46   = -1	#	Bayeux
+		49   = -1	#	Calais
+		51   = -1	#	Dunkirk
+		53   = -1	#	Dieppe
+		68   = -1	#	Bordeaux
+		69   = -1	#	La Rochelle
+		82   = -1	#	Montpellier
+		86   = -1	#	Marseille
+		94   = -1	#	Corsica
+		114   = -1	#	Bruges
+		115   = -1	#	Antwerpen
+		122   = -1	#	Amsterdam
+		125   = -1	#	Rotterdam
+	}
+} 

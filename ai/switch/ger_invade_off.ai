@@ -1,0 +1,32 @@
+# German End of Norway Invasion AI File by DB
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion	= no # yes
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 0.01	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 20.0	#higher = avoid long distance.
+	max_distance	 = 25.0  #About the distance from Rostock to Narvik
+        max_staging_distance = 25
+	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5 
+    	naval_base 	= 0.1 
+    	air_support 	= 3.0 
+    	redirect 	= home
+	ignore		= no
+	help_allies 	= no	#[yes/no]
+
+	staging_province = {
+		# 296 # Rostock  cleared for wif2
+		# 90
+		# 294
+	}
+      
+	
+}

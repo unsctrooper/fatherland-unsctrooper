@@ -1,0 +1,575 @@
+event = {
+	id = 8006301
+	country = GUA
+
+	name = EVT_8006301_NAME
+	desc = EVT_8006301_DESC
+	picture = "nwo\ten_years_of_spring"
+	style = 1
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1944 }
+
+	action = {
+		name = EVT_8006301_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 305100 } # Francisco Javier Arana
+		command = { type = headofgovernment which = 305016 } # Francisco Javier Arana
+		command = { type = foreignminister which = 305023 } # Carlos Argumedo Salazar
+		command = { type = armamentminister which = 305028 } # Juan Arevalo Bermejo
+		command = { type = ministerofsecurity which = 305036 } # Manuel Orellana
+		command = { type = ministerofintelligence which = 305043 } # Adrian Recinos
+		command = { type = chiefofstaff which = 305050 } # Manuel Orellana
+		command = { type = chiefofarmy which = 305052 } # Jacopo Arbenz Guzman
+		command = { type = chiefofnavy which = 305058 } # Jorge Torriello Garrido
+		command = { type = chiefofnavy which = 305059 } # Jos? Ezuira Abel
+	}
+}
+
+event = {
+	id = 8006302
+	country = GUA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = communist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 305012 } # Juan Arevalo Bermejo
+		command = { type = headofgovernment which = 305101 } # Juan Arevalo Bermejo
+		command = { type = foreignminister which = 305024 } # Jorge Torriello Garrido
+		command = { type = armamentminister which = 305029 } # Jacopo Arbenz Guzman
+		command = { type = ministerofsecurity which = 305037 } # Manuel Valladares
+		command = { type = ministerofintelligence which = 305045 } # Tomas Mendoza Urribe
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 305102 } # Adri?n Recinos
+		command = { type = headofgovernment which = 305103 } # Adri?n Recinos
+		command = { type = foreignminister which = 305024 } # Jorge Torriello Garrido
+		command = { type = armamentminister which = 305029 } # Jacopo Arbenz Guzman
+		command = { type = ministerofsecurity which = 305037 } # Manuel Valladares
+		command = { type = ministerofintelligence which = 305045 } # Tomas Mendoza Urribe
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8006303
+	country = GUA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -18 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 305011 } # Jacopo Arbenz Guzman
+		command = { type = headofgovernment which = 305104 } # Jacopo Arbenz Guzman
+		command = { type = foreignminister which = 305025 } # Enrique Mu?oz Meany
+		command = { type = armamentminister which = 305030 } # Diego A. Castro Arigon
+		command = { type = ministerofsecurity which = 305036 } # Manuel Orellana
+		command = { type = ministerofintelligence which = 305044 } # Jacopo Arbenz Guzman
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 305105 } # M. Ydigaras Fuentes
+		command = { type = headofgovernment which = 305106 } # M. Ydigaras Fuentes
+		command = { type = foreignminister which = 305026 } # Francisco Javier Arana
+		command = { type = armamentminister which = 305032 } # Jos? Matos
+		command = { type = ministerofsecurity which = 305039 } # Carlos Castillo Armas
+		command = { type = ministerofintelligence which = 305046 } # Felip? Uriarte T?mas
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 18 }
+	}
+}
+
+event = {
+	id = 8006304
+	country = GUA
+	one_action = yes
+
+	name = EVT_8006304_NAME
+	desc = EVT_8006304_DESC
+	picture = "nwo\operation_pbsuccess"
+	style = 1
+	
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = EVT_8006304_A
+		ai_chance = 90
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = headofstate which = 305107 } # Carlos Castillo Armas
+		command = { type = headofgovernment which = 305108 } # Luis A. G. L?pez
+		command = { type = dissent value = 20 }
+		command = { type = relation which = USA value = 100 }
+	}
+	
+	action = {
+		name = EVT_8006304_A
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = political_left value = 4 }
+		command = { type = relation which = USA value = -100 }
+	}
+}
+
+event = {
+	id = 8006305
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 305105 } # M. Ydigaras Fuentes
+		command = { type = headofgovernment which = 305109 } # Clemente Marroqu?n Rojas
+	}
+}
+
+event = {
+	id = 8006306
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 305110 } # Enrique Peralta Azurdia
+		command = { type = headofgovernment which = 305111 } # Catalino Chávez Pérez
+	}
+}
+
+event = {
+	id = 8006307
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 305112 } # Julio C. Méndez Montenegro
+		command = { type = headofgovernment which = 305109 } # Clemente Marroquín Rojas
+	}
+}
+
+event = {
+	id = 8006308
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1970 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305113 } # Carlos M. Arana Osorio
+		command = { type = headofgovernment which = 305114 } # Eduardo R. Cáceres Lenhoff
+	}
+}
+
+event = {
+	id = 8006309
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305115 } # Kjell E. Laugerud García
+		command = { type = headofgovernment which = 305116 } # Mario A. Sandoval Alarcón
+	}
+}
+
+event = {
+	id = 8006310
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1979 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305117 } # Fernando R. Lucas García
+		command = { type = headofgovernment which = 305118 } # Francisco Villagrán Kramer
+	}
+}
+
+event = {
+	id = 8006311
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 305119 } # Óscar Mendoza Azurdia
+	}
+}
+
+event = {
+	id = 8006312
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1982 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305120 } # Efraín Ríos Montt
+		command = { type = headofgovernment which = 305121 } # Efraín Ríos Montt
+	}
+}
+
+event = {
+	id = 8006313
+	country = GUA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1983 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305122 } # Óscar H. Mejía Victores
+		command = { type = headofgovernment which = 305123 } # Óscar H. Mejía Victores
+	}
+}
+
+event = {
+	id = 8006314
+	country = GUA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1986 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305126 } # Vinicio Cerezo
+		command = { type = headofgovernment which = 305127 } # Roberto Carpio Nicolle
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 305124 } # Jorge Serrano Elías
+		command = { type = headofgovernment which = 305125 } # Jorge Serrano Elías
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8006315
+	country = GUA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1991 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 305124 } # Jorge Serrano Elías
+		command = { type = headofgovernment which = 305128 } # Gustavo A. Espina Salguero
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 305129 } # Jorge Carpio
+		command = { type = headofgovernment which = 305130 } # Luis A. Cabrera Hidalgo
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+event = {
+	id = 8006316
+	country = USA
+
+	name = EVT_8006316_NAME
+	desc = EVT_8006316_DESC
+	picture = "nwo\operation_pbsuccess"
+	decision_picture = "nwo\d_operation_pbsuccess"
+	style = 1
+	
+	decision = {
+		atwar = no
+		exists = GUA
+	}
+	
+	trigger = {
+		atwar = no
+		exists = GUA
+	}
+	
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = EVT_8006316_A
+		ai_chance = 90
+		command = { type = belligerence value = 5 }
+		command = { type = trigger which = 8006304 }
+	}
+	
+	action = {
+		name = EVT_8006316_B
+		trigger = { ai = yes }
+		ai_chance = 10
+		command = { type = money value = 1 }
+	}
+}
+
+event = {
+	id = 8006317
+	country = GUA
+
+	name = EVT_8006317_NAME
+	desc = EVT_8006317_DESC
+	picture = nwo\guatemalan_civil_war
+	style = 1
+	
+	decision = {
+		atwar = no
+		NOT = { 
+			domestic = { type = democratic value = 7 } 
+			domestic = { type = political_left value = 6 } 
+		}
+	}
+	
+	date = { day = 0 month = january year = 1980 }
+	offset = 1000
+	deathdate = { day = 29 month = december year = 1983 }
+
+	action = {
+		name = EVT_8006317_A
+		command = { type = dissent value = 20 }
+	}
+}

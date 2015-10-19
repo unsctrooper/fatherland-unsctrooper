@@ -1,0 +1,4 @@
+# Soviet upgrading and reinforcing of units   db
+
+reinforcement = 0.04
+upgrading = 0.14  # was 0.2

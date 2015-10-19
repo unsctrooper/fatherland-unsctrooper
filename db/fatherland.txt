@@ -16,6 +16,15 @@ event = "db\events\generic_decisions.txt"
 #FLAVOUR
 event = "db\events\fatherland\flavour.txt"
 
+#CAPITALS
+event = "db\events\fatherland\capitals.txt"
+
+#BUILDINGS
+event = "db\events\fatherland\buildings.txt"
+
+#PEACE TEST
+event = "db\events\fatherland\peace_in_our_time.txt"
+
 #AFRICA
 event = "db\events\fatherland\africa\ethiopia.txt"
 event = "db\events\fatherland\africa\madagascar.txt"
@@ -26,12 +35,20 @@ event = "db\events\fatherland\africa\end_uk_colonialism.txt"
 #AMERICAS
 event = "db\events\fatherland\americas\argentina.txt"
 event = "db\events\fatherland\americas\brazil.txt"
+event = "db\events\fatherland\americas\bolivia.txt"
 event = "db\events\fatherland\americas\canada.txt"
 event = "db\events\fatherland\americas\chile.txt"
 event = "db\events\fatherland\americas\colombia.txt"
+event = "db\events\fatherland\americas\costa_rica.txt"
 event = "db\events\fatherland\americas\cuba.txt"
+event = "db\events\fatherland\americas\dominican_republic.txt"
 event = "db\events\fatherland\americas\ecuador.txt"
 event = "db\events\fatherland\americas\el_salvador.txt"
+event = "db\events\fatherland\americas\guatemala.txt"
+event = "db\events\fatherland\americas\haiti.txt"
+event = "db\events\fatherland\americas\honduras.txt"
+event = "db\events\fatherland\americas\mexico.txt"
+event = "db\events\fatherland\americas\nicaragua.txt"
 event = "db\events\fatherland\americas\panama.txt"
 event = "db\events\fatherland\americas\paraguay.txt"
 event = "db\events\fatherland\americas\peru.txt"
@@ -42,6 +59,7 @@ event = "db\events\fatherland\americas\marshallplan.txt"
 
 #ASIA
 event = "db\events\fatherland\asia\brunei.txt"
+event = "db\events\fatherland\asia\afghanistan.txt"
 event = "db\events\fatherland\asia\burma.txt"
 event = "db\events\fatherland\asia\ceylon.txt"
 event = "db\events\fatherland\asia\india.txt"

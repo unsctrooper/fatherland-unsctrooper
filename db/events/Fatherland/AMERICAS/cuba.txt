@@ -9,7 +9,7 @@ event = {
 
 	date = { day = 0 month = january year = 1948 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1949 }
+	deathdate = { day = 29 month = december year = 1949 }
 
 	action = {
 		name = "OK"
@@ -30,7 +30,7 @@ event = {
 
 	date = { day = 0 month = january year = 1950 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1950 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = "OK"
@@ -51,7 +51,7 @@ event = {
 
 	date = { day = 0 month = january year = 1951 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1951 }
+	deathdate = { day = 29 month = december year = 1951 }
 
 	action = {
 		name = "OK"
@@ -73,7 +73,7 @@ event = {
 
 	date = { day = 0 month = january year = 1952 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1954 }
+	deathdate = { day = 29 month = december year = 1954 }
 
 	action = {
 		name = "OK"
@@ -94,7 +94,7 @@ event = {
 
 	date = { day = 0 month = january year = 1955 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1956 }
+	deathdate = { day = 29 month = december year = 1956 }
 
 	action = {
 		name = "OK"
@@ -115,7 +115,7 @@ event = {
 
 	date = { day = 0 month = january year = 1957 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1957 }
+	deathdate = { day = 29 month = december year = 1957 }
 
 	action = {
 		name = "OK"
@@ -142,7 +142,7 @@ event = {
 
 	date = { day = 0 month = january year = 1958 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1958 }
+	deathdate = { day = 29 month = december year = 1958 }
 
 	action = {
 		name = "OK"
@@ -171,6 +171,12 @@ event = {
 		command = { type = dissent value = -25 }
 		command = { type = setflag which = castro_rules }
 		command = { type = clrflag which = castro_rebellion }
+		# Carte blanche with superpowers, Cuba will decide its alignment
+		command = { type = set_relation which = USA value = 0 }
+		command = { type = set_relation which = SOV value = 0 }
+		# End non-aggression pact with USA and guarantee
+		command = { type = end_non_aggression which = USA where = CUB }
+		command = { type = end_guarantee which = USA where = CUB }
 	}
 }
 
@@ -189,7 +195,7 @@ event = {
 
 	date = { day = 0 month = january year = 1960 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1975 }
 
 	action = {
 		name = "OK"
@@ -198,15 +204,43 @@ event = {
 	}
 }
 
-### Castro
-
 event = {
 	id = 8003810
 	country = CUB
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = communist
+	}
+
+	date = { day = 0 month = january year = 1976 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 85205 } # Fidel Castro
+	}
+}
+
+
+
+### Castro
+
+event = {
+	id = 8003811
+	country = CUB
 	one_action = yes
 	
-	name = EVT_8003810_NAME
-	desc = EVT_8003810_DESC
+	name = EVT_8003811_NAME
+	desc = EVT_8003811_DESC
 	picture = "nwo\moncada_barracks"
 	style = 1
 
@@ -222,14 +256,14 @@ event = {
 	deathdate = { day = 29 month = december year = 1954 }
 
 	action = {
-		name = EVT_8003810_A
+		name = EVT_8003811_A
 		ai_chance = 98
 		command = { type = dissent value = -3 }
 	}
 	
 	# Castro rebellion starts early, with high dissent value from the beginning
 	action = {
-		name = EVT_8003810_B
+		name = EVT_8003811_B
 		ai_chance = 2
 		command = { type = dissent value = 10 }
 		command = { type = setflag which = castro_rebellion }
@@ -238,13 +272,13 @@ event = {
 }
 
 event = {
-	id = 8003811
+	id = 8003812
 	country = CUB
 	persistent = yes
 	one_action = yes
 
-	name = EVT_8003811_NAME
-	desc = EVT_8003811_DESC
+	name = EVT_8003812_NAME
+	desc = EVT_8003812_DESC
 	picture = "nwo\castro_rebellion"
 	style = 1
 
@@ -252,13 +286,17 @@ event = {
 		OR = {
 			government = fascist
 			government = democratic
+			AND = {
+				government = communist
+				random = 25
+			}
 		}
 		flag = castro_rebellion
 		NOT = { flag = castro_rules }
 		random = 50
 	}
 	
-	date = { day = 1 month = january year = 1954 }
+	date = { day = 0 month = january year = 1954 }
 	offset = 180
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -266,7 +304,7 @@ event = {
 	
 	# Castro remains in hiding
 	action = {
-		name = EVT_8003811_A
+		name = EVT_8003812_A
 		ai_chance = 96
 		trigger = { year = 1954 NOT = { year = 1956 } }
 		command = { type = dissent value = 12 }		
@@ -274,7 +312,7 @@ event = {
 	
 	# Castro succeeds
 	action = {
-		name = EVT_8003811_B
+		name = EVT_8003812_B
 		ai_chance = 2
 		trigger = { year = 1954 NOT = { year = 1956 } }
 		command = { type = dissent value = -6 }		
@@ -283,18 +321,18 @@ event = {
 	
 	# Castro is caught!!
 	action = {
-		name = EVT_8003811_C
+		name = EVT_8003812_C
 		ai_chance = 2
 		trigger = { year = 1954 NOT = { year = 1956 } }
 		command = { type = dissent value = -12 }		
-		command = { type = trigger which = 8003812 }		
+		command = { type = trigger which = 8003813 }		
 	}
 	
 	## 1956-1958
 	
 	# Castro remains in hiding
 	action = {
-		name = EVT_8003811_A
+		name = EVT_8003812_A
 		ai_chance = 90
 		trigger = { year = 1956 NOT = { year = 1958 } }
 		command = { type = dissent value = 12 }		
@@ -302,7 +340,7 @@ event = {
 	
 	# Castro succeeds
 	action = {
-		name = EVT_8003811_B
+		name = EVT_8003812_B
 		ai_chance = 6
 		trigger = { year = 1956 NOT = { year = 1958 } }
 		command = { type = dissent value = -6 }		
@@ -311,18 +349,18 @@ event = {
 	
 	# Castro is caught!!
 	action = {
-		name = EVT_8003811_C
+		name = EVT_8003812_C
 		ai_chance = 4
 		trigger = { year = 1956 NOT = { year = 1958 } }
 		command = { type = dissent value = -12 }		
-		command = { type = trigger which = 8003812 }		
+		command = { type = trigger which = 8003813 }		
 	}
 	
 	## 1959
 	
 	# Castro remains in hiding
 	action = {
-		name = EVT_8003811_A
+		name = EVT_8003812_A
 		ai_chance = 50
 		trigger = { year = 1959 NOT = { year = 1960 } }
 		command = { type = dissent value = 12 }		
@@ -330,7 +368,7 @@ event = {
 	
 	# Castro succeeds
 	action = {
-		name = EVT_8003811_B
+		name = EVT_8003812_B
 		ai_chance = 48
 		trigger = { year = 1959 NOT = { year = 1960 } }
 		command = { type = dissent value = -6 }		
@@ -339,18 +377,18 @@ event = {
 	
 	# Castro is caught!!
 	action = {
-		name = EVT_8003811_C
+		name = EVT_8003812_C
 		ai_chance = 2
 		trigger = { year = 1959 NOT = { year = 1960 } }
 		command = { type = dissent value = -12 }		
-		command = { type = trigger which = 8003812 }		
+		command = { type = trigger which = 8003813 }		
 	}
 	
 	## 1960-61
 	
 	# Castro remains in hiding
 	action = {
-		name = EVT_8003811_A
+		name = EVT_8003812_A
 		ai_chance = 50
 		trigger = { year = 1960 NOT = { year = 1961 } }
 		command = { type = dissent value = 12 }		
@@ -358,7 +396,7 @@ event = {
 	
 	# Castro succeeds
 	action = {
-		name = EVT_8003811_B
+		name = EVT_8003812_B
 		ai_chance = 30
 		trigger = { year = 1960 NOT = { year = 1961 } }
 		command = { type = dissent value = -6 }		
@@ -367,18 +405,18 @@ event = {
 	
 	# Castro is caught!!
 	action = {
-		name = EVT_8003811_C
+		name = EVT_8003812_C
 		ai_chance = 20
 		trigger = { year = 1960 NOT = { year = 1961 } }
 		command = { type = dissent value = -12 }		
-		command = { type = trigger which = 8003812 }		
+		command = { type = trigger which = 8003813 }		
 	}
 	
 	## 1962-1963
 	
 	# Castro remains in hiding
 	action = {
-		name = EVT_8003811_A
+		name = EVT_8003812_A
 		ai_chance = 10
 		trigger = { year = 1962 }
 		command = { type = dissent value = 12 }		
@@ -386,7 +424,7 @@ event = {
 	
 	# Castro succeeds
 	action = {
-		name = EVT_8003811_B
+		name = EVT_8003812_B
 		ai_chance = 20
 		trigger = { year = 1962 }
 		command = { type = dissent value = -6 }		
@@ -395,33 +433,11 @@ event = {
 	
 	# Castro is caught!!
 	action = {
-		name = EVT_8003811_C
+		name = EVT_8003812_C
 		ai_chance = 70
 		trigger = { year = 1962 }
 		command = { type = dissent value = -12 }		
-		command = { type = trigger which = 8003812 }		
-	}
-
-}
-
-event = {
-	id = 8003812
-	country = CUB
-	persistent = yes
-
-	name = EVT_8003812_NAME
-	desc = EVT_8003812_DESC
-	picture = "nwo\castro_rebellion"
-	style = 1
-
-	action = {
-		name = EVT_8003812_A
-		command = { type = dissent value = 3 }
-		command = { type = clrflag which = castro_rebellion }
-		command = { type = sleepminister which = 85074 }
-		command = { type = sleepminister which = 85077 }
-		command = { type = sleepminister which = 85108 }
-		command = { type = sleepminister which = 85109 }
+		command = { type = trigger which = 8003813 }		
 	}
 
 }
@@ -429,34 +445,17 @@ event = {
 event = {
 	id = 8003813
 	country = CUB
-	
+	persistent = yes
+
 	name = EVT_8003813_NAME
 	desc = EVT_8003813_DESC
-	picture = "nwo\granma"	
+	picture = "nwo\castro_rebellion"
 	style = 1
-
-	trigger = {
-		OR = {
-			government = fascist
-			government = democratic
-		}
-		NOT = { flag = castro_rebellion }
-	}
-	
-	date = { day = 1 month = december year = 1956 }
-	offset = 30
-	deathdate = { day = 29 month = december year = 1956 }
 
 	action = {
 		name = EVT_8003813_A
-		ai_chance = 95
-		command = { type = setflag which = castro_rebellion }
-	}
-	
-	action = {
-		name = EVT_8003813_B
-		ai_chance = 5
-		command = { type = dissent value = -3 }
+		command = { type = dissent value = 3 }
+		command = { type = clrflag which = castro_rebellion }
 		command = { type = sleepminister which = 85074 }
 		command = { type = sleepminister which = 85077 }
 		command = { type = sleepminister which = 85108 }
@@ -471,45 +470,40 @@ event = {
 	
 	name = EVT_8003814_NAME
 	desc = EVT_8003814_DESC
-	picture = "nwo\castro_with_khrushchev"
+	picture = "nwo\granma"	
 	style = 1
 
 	trigger = {
-		government = communist
-		flag = castro_rules
+		OR = {
+			government = fascist
+			government = democratic
+		}
+		NOT = { flag = castro_rebellion }
 	}
 	
-	date = { day = 1 month = january year = 1961 }
-	offset = 90
-	deathdate = { day = 29 month = december year = 1963 }
+	date = { day = 0 month = december year = 1956 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1956 }
 
 	action = {
 		name = EVT_8003814_A
 		ai_chance = 95
-		command = { type = set_domestic which = democratic value = 3 }
-		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = set_domestic which = freedom value = 2 }
-		command = { type = relation which = USA value = -150 }
-		command = { type = relation which = SOV value = 150 }
-		command = { type = guarantee which = SOV where = CUB }
-		command = { type = end_guarantee which = USA where = CUB }
-		command = { type = end_non_aggression which = USA where = CUB }
+		command = { type = setflag which = castro_rebellion }
 	}
 	
 	action = {
 		name = EVT_8003814_B
 		ai_chance = 5
-		command = { type = dissent value = 15 }
-		command = { type = set_domestic which = democratic value = 5 }
-		command = { type = set_domestic which = political_left value = 7 }
-		command = { type = set_domestic which = freedom value = 5 }
-		command = { type = relation which = USA value = 100 }
-		command = { type = clrflag which = castro_rules	}
+		command = { type = dissent value = -3 }
+		command = { type = sleepminister which = 85074 }
+		command = { type = sleepminister which = 85077 }
+		command = { type = sleepminister which = 85108 }
+		command = { type = sleepminister which = 85109 }
 	}
 
 }
 
-### Bay of Pigs Invasion and Missile Crisis
+### Bay of Pigs Invasion
 
 event = {
 	id = 8003815
@@ -525,7 +519,7 @@ event = {
 		flag = cold_war
 	}
 	
-	date = { day = 1 month = march year = 1961 }
+	date = { day = 0 month = march year = 1961 }
 	offset = 30
 	deathdate = { day = 29 month = june year = 1961 }
 
@@ -557,7 +551,7 @@ event = { # Bay of Pigs invasion resolution
 		event = 8003815
 	}
 	
-	date = { day = 1 month = april year = 1961 }
+	date = { day = 0 month = april year = 1961 }
 	offset = 30
 	deathdate = { day = 29 month = december year = 1961 }
 
@@ -572,11 +566,20 @@ event = { # Bay of Pigs invasion resolution
 	# Success
 	action = {
 		name = OK
+		trigger = { NOT = { event = 8003836 } }
 		ai_chance = 10
 		command = { type = trigger which = 8702919 }
 		command = { type = trigger which = 8702920 }
 	}
-
+	
+	# Success
+	action = {
+		name = OK
+		trigger = { event = 8003836 }
+		ai_chance = 180
+		command = { type = trigger which = 8702919 }
+		command = { type = trigger which = 8702920 }
+	}
 }
 
 ### CUB: Failure of invasion
@@ -610,8 +613,8 @@ event = {
 
 	action = {
 		name = EVT_8003818_A
-		command = { type = dissent value = -5 }
-		command = { type = relation which = USA value = -100 }
+		command = { type = dissent value = 5 }
+		command = { type = relation which = CUB value = -100 }
 		command = { type = relation which = SOV value = 100 }
 	}
 
@@ -655,6 +658,468 @@ event = {
 		name = EVT_8003820_A
 		command = { type = dissent value = -5 }
 		command = { type = make_puppet which = CUB } # Batista is on our mercy
+	}
+
+}
+
+### Cuba at Crossroads
+
+# 8003821: Visit in the USA
+# 8003822: Agrarian Reform
+# 8003823: Antagonizing Urrutia
+# 8003824: General Assembly of UN
+# 8003825: Integrated Revolutionary Organizations
+# 8003826: Nationalization of Refineries
+# 8003830: Cuban alignment is decided
+# 8003831: USA reacts to Cuban alignment
+# 8003832: SOV reacts to Cuban alignment
+
+# Castro's visit in the USA
+event = {
+	id = 8003821
+	country = CUB
+	
+	name = EVT_8003821_NAME
+	desc = EVT_8003821_DESC
+	picture = nwo\castro_laying_wreath
+	style = 1
+
+	trigger = {
+		exists = USA
+		flag = castro_rules
+		atwar = no
+	}
+	
+	date = { day = 05 month = april year = 1959 }
+	offset = 1
+	deathdate = { day = 26 month = april year = 1959 }
+
+	action = {
+		name = EVT_8003821_A # Carry out charm offensive
+		ai_chance = 80
+		command = { type = dissent value = 3 }
+		command = { type = belligerence value = -5 }
+		command = { type = relation which = USA value = 75 }
+		command = { type = relation which = SOV value = -25 }
+	}
+	
+	action = {
+		name = EVT_8003821_B # Preach Marxism
+		ai_chance = 20
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = SOV value = 15 }
+	}
+
+}
+
+# Agrarian reform
+event = {
+	id = 8003822
+	country = CUB
+	
+	name = EVT_8003822_NAME
+	desc = EVT_8003822_DESC
+	picture = nwo\cuban_agrarian_reform
+	style = 1
+
+	trigger = {
+		flag = castro_rules
+		atwar = no
+	}
+	
+	date = { day = 06 month = may year = 1959 }
+	offset = 1
+	deathdate = { day = 08 month = may year = 1959 }
+
+	action = {
+		name = EVT_8003822_A # Land to the masses
+		ai_chance = 80
+		command = { type = dissent value = -3 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = SOV value = 25 }
+	}
+	
+	action = {
+		name = EVT_8003822_B # Soothe landowners
+		ai_chance = 20
+		command = { type = dissent value = 6 }
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = SOV value = -60 }
+	}
+
+}
+
+# Fall of Urrutia
+event = {
+	id = 8003823
+	country = CUB
+	
+	name = EVT_8003823_NAME
+	desc = EVT_8003823_DESC
+	picture = nwo\manuel_urrutia
+	style = 1
+
+	trigger = {
+		flag = castro_rules
+		headofstate = 85203
+		atwar = no
+	}
+	
+	date = { day = 22 month = july year = 1959 }
+	offset = 1
+	deathdate = { day = 24 month = july year = 1959 }
+
+	action = {
+		name = EVT_8003823_A # He's fervent anti-communist
+		ai_chance = 95
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = relation which = USA value = -25 }
+		command = { type = relation which = SOV value = 40 }
+	}
+	
+	action = {
+		name = EVT_8003823_B # We need moderates like him
+		ai_chance = 5
+		command = { type = sleepevent which = 8003809 }
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = SOV value = -25 }
+	}
+
+}
+
+# General UN Assembly of 1960
+event = {
+	id = 8003824
+	country = CUB
+	
+	name = EVT_8003824_NAME
+	desc = EVT_8003824_DESC
+	picture = nwo\hotel_theresa
+	style = 1
+
+	trigger = {
+		flag = castro_rules
+		exists = USA
+		atwar = no
+	}
+	
+	date = { day = 0 month = september year = 1960 }
+	offset = 1
+	deathdate = { day = 29 month = september year = 1960 }
+
+	action = {
+		name = EVT_8003824_A # Stay at Shelburne Hotel
+		ai_chance = 95
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = relation which = USA value = -25 }
+		command = { type = relation which = SOV value = 40 }
+	}
+	
+	action = {
+		name = EVT_8003824_B # Visit Hotel Theresa
+		ai_chance = 5
+		command = { type = sleepevent which = 8003809 }
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = SOV value = -25 }
+	}
+
+}
+
+# Integrated Revolutionary Organizations
+event = {
+	id = 8003825
+	country = CUB
+	
+	name = EVT_8003825_NAME
+	desc = EVT_8003825_DESC
+	picture = nwo\cuban_communist_party
+	style = 1
+
+	trigger = {
+		flag = castro_rules
+		atwar = no
+	}
+	
+	date = { day = 05 month = april year = 1959 }
+	offset = 1
+	deathdate = { day = 26 month = april year = 1959 }
+
+	action = {
+		name = EVT_8003825_A # Unite under the red banner!
+		ai_chance = 95
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = SOV value = 50 }
+	}
+	
+	action = {
+		name = EVT_8003825_B # Strength in plurality
+		ai_chance = 5
+		command = { type = relation which = USA value = 50 }
+		command = { type = relation which = SOV value = -25 }
+	}
+
+}
+
+# Nationalization of Refineries
+event = {
+	id = 8003826
+	country = CUB
+	
+	name = EVT_8003826_NAME
+	desc = EVT_8003826_DESC
+	picture = nwo\cuban_oil_industry
+	style = 1
+
+	trigger = {
+		flag = castro_rules
+		atwar = no
+	}
+	
+	date = { day = 0 month = january year = 1960 }
+	offset = 60
+	deathdate = { day = 29 month = february year = 1960 }
+
+	action = {
+		name = EVT_8003826_A # We will lay hands on our black gold
+		ai_chance = 95
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = SOV value = 10 }
+	}
+	
+	action = {
+		name = EVT_8003826_B # Offer concessions
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+		command = { type = relation which = USA value = 20 }
+		command = { type = relation which = SOV value = -25 }
+	}
+
+}
+
+# Cuba at Crossroads
+event = {
+	id = 8003830
+	country = CUB
+	
+	name = EVT_8003830_NAME
+	desc = EVT_8003830_DESC
+	picture = nwo\fidel_castro_thinking
+	style = 1
+
+	trigger = {
+		flag = castro_rules
+		atwar = no
+		event = 8003821
+		event = 8003822
+		event = 8003823
+		event = 8003824
+		event = 8003825
+		event = 8003826
+	}
+	
+	date = { day = 0 month = january year = 1960 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = EVT_8003830_A
+		trigger = {
+			relation = { which = USA value = 100 }
+			NOT = { relation = { which = SOV value = 100 } }
+		}
+		command = { type = trigger which = 8003831 }
+		command = { type = domestic which = interventionism value = 2 }
+	}
+	
+	action = {
+		name = EVT_8003830_B
+		trigger = {
+			relation = { which = SOV value = 100 }
+			NOT = { relation = { which = USA value = 100 } }
+		}
+		command = { type = trigger which = 8003832 }
+		command = { type = domestic which = interventionism value = 2 }
+	}
+	
+	action = {
+		name = EVT_8003830_C # We go third way
+		trigger = {
+			NOT = {
+				AND = {
+					relation = { which = SOV value = 100 }
+					NOT = { relation = { which = USA value = 100 } }
+				}
+				AND = {
+					relation = { which = USA value = 100 }
+					NOT = { relation = { which = SOV value = 100 } }
+				}
+			}
+		}
+		command = { type = domestic which = interventionism value = -4 }
+		command = { type = dissent value = 10 }
+	}
+
+}
+
+### Cuba aligns with USA
+
+event = {
+	id = 8003831
+	country = USA
+	
+	name = EVT_8003831_NAME
+	desc = EVT_8003831_DESC
+	picture = nwo\american_cuba
+	style = 1
+
+	action = {
+		name = EVT_8003831_A # Establish protectorate
+		ai_chance = 75
+		command = { type = belligerence value = 15 }
+		command = { type = trigger which = 8003833 }
+	}
+	
+	action = {
+		name = EVT_8003831_B # Give them fair deal
+		ai_chance = 25
+		command = { type = trigger which = 8003834 }
+	}
+
+}
+
+### Cuba aligns with SOV
+
+event = {
+	id = 8003832
+	country = CUB
+	
+	name = EVT_8003832_NAME
+	desc = EVT_8003832_DESC
+	picture = nwo\soviet_cuba
+	style = 1
+
+	action = {
+		name = EVT_8003832_A # Establish cordial relations
+		ai_chance = 95
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 8003835 }
+	}
+	
+	action = {
+		name = EVT_8003832_B # It's too far from Moscow
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = trigger which = 8003836 }
+	}
+
+}
+
+### USA gains full control over Cuba
+
+event = {
+	id = 8003833
+	country = CUB
+	
+	name = EVT_8003833_NAME
+	desc = EVT_8003833_DESC
+	picture = nwo\american_cuba
+	style = 1
+
+	action = {
+		name = EVT_8003833_A
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = dissent value = 10 }
+		command = { type = clrflag which = castro_rules }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = relation which = USA value = 150 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = guarantee which = USA where = CUB }
+		command = { type = non_aggression which = USA where = CUB }
+	}
+
+}
+
+### USA helps Cuba develop
+
+event = {
+	id = 8003834
+	country = CUB
+	
+	name = EVT_8003834_NAME
+	desc = EVT_8003834_DESC
+	picture = nwo\american_cuba
+	style = 1
+
+	action = {
+		name = EVT_8003834_A
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = dissent value = -10 }
+		command = { type = clrflag which = castro_rules }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = SOV value = -150 }
+	}
+
+}
+
+### SOV stays in Cuba
+
+event = {
+	id = 8003835
+	country = CUB
+	
+	name = EVT_8003835_NAME
+	desc = EVT_8003835_DESC
+	picture = nwo\soviet_cuba
+	style = 1
+
+	action = {
+		name = EVT_8003835_A
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = SOV value = 150 }
+		command = { type = guarantee which = SOV where = CUB }
+		command = { type = end_guarantee which = USA where = CUB }
+		command = { type = end_non_aggression which = USA where = CUB }
+	}
+
+}
+
+### SOV brushes off Cuba
+
+event = {
+	id = 8003836
+	country = CUB
+	
+	name = EVT_8003836_NAME
+	desc = EVT_8003836_DESC
+	picture = nwo\soviet_cuba
+	style = 1
+
+	action = {
+		name = EVT_8003836_A
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = dissent value = 10 }
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = end_guarantee which = USA where = CUB }
+		command = { type = end_non_aggression which = USA where = CUB }
 	}
 
 }

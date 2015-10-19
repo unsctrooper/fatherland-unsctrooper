@@ -1,0 +1,193 @@
+max_front_ratios = {
+	GER = 4.0
+	ITA = 4.0
+	JAP = 2.0
+	VIC = 2.0
+	SCA = 2.0
+	SPA = 2.0
+	NOR = 2.0
+}
+
+exp_force_ratio = 0.150   #   .5  db
+exp_force_ratios = {
+	USA = 1.0
+} 
+garrison = {
+	province_priorities  = { 497  = 200 493  = 200 491  = 150 483  = 150
+		20 = 10 # Exeter
+
+		348 = 50 # Gibraltar
+		429  = 50 # Malta 
+		790 = 50 # Alexandria 
+		
+		# England Coast
+		26 = 60 # Dover 
+		#5 = 60 # Norwich 
+		27 = 60 # Portsmouth 
+		23 = 60 # Plymouth 
+		17 = 30 # Manchester
+		24 = 30 # Liverpool 
+		12 = 30 # Edimburg
+		11 = 30 # Glasgow
+		5 = 50 # Scap Flow
+		36 = 30 # Belfast
+		20 = 10 # Exeter
+
+		15 = 40 # hull
+		13 = 40 # sunderland
+	} 
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1.5
+	panic_ratio_vs_human	= 1.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.01
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+
+	
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+admiral = {
+	min_core_attack_fleets  = 3  # db	
+}
+
+invasion = { 
+ 	invasion			= yes
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 0.01	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 250	# How far should the staging area be from the target invasion point
+	distance		= 0.1	#higher = avoid long distance.
+	pocket			= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.5	#prioritise taking pure islands.
+	enemy			= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
+	air_base		= 1.5
+    	naval_base 		= 1.5 
+    	air_support 		= 3.0     
+    	redirect 		= home  # db
+	ignore			= no   # db
+	help_allies 		= yes	#[yes/no]
+
+	staging_province = {
+		23  	#Plymouth
+		26  	#Dover
+		25		#Norwich
+		5 		#Scapa Flow		
+		}	
+
+	target = { 
+
+	#France
+		49	= -1  #Calais
+		53	= -1  #Dieppe
+		44	= -1  #Caen
+		37	= -1  #Brest
+		39	= -1  #Lorient
+		68  = -1  #Bordeaux
+		69	= -1	#La Rochelle
+		46	= -1	#Bayeux
+		51	= -1	#Dunkirk
+		82	= -1	#Montpellier
+		86	= -1	#Marseille
+	
+		# Belgium
+		114	= -1  #Bruges
+		115	= -1 #Antwerpen	
+
+		#Holland
+		125	= -1	#Rotterdam
+		122	= -1	#Amsterdam
+
+		
+
+		        #Germany
+        152 = -1 #Kiel
+        147 = -1 #Wilhelmshaven
+        153 = -1 #Rostock
+        158 = -1 #Stettin
+
+		#Norway
+		491	= 8000	#Alesund
+		485	= 8000	#Kristiansand
+		483	= 3000	#Oslo
+		493	= 8000	#Trondheim
+		495	= 8000	#Narvik
+
+		429 = 8000  #Malta
+		
+		# Italy
+		430	= -1  #Palermo
+		433	= -1  #Syracuse
+		434	= -1  #Cagliari
+		94	= -1  #Corsica
+		422	= -1  #Taranto
+		427	= -1  #Salerno
+		416	= -1  #Anzio
+		419	= -1  #Rome
+		412	= -1  #Ancona
+		400	= -1  #Venice
+
+		# North Africa
+		900	= 8000	# Suez
+		789	= 1000  #Alexandra
+		717	= 500	#Rabat
+		728	= 500	#Oran
+		727	= 500	#Algiers
+		748	= 500	#Bizerte
+		747	= 500	#Tunis
+		750	= 500	#Tripoli
+		761	= 500	#Benghazi
+		765	= 500	#Tobruk
+
+		# Middle East
+		1019  = 2500	#Beirut
+		1008  = 2500 #Tel Aviv
+		1004  = 2500 #El Arish	
+	
+		# Greece
+		382  = 2000  #Crete
+		372  = -1  #Patras
+		377  = -1  #Athens
+		370  = -1   #Alexandroupoli
+
+		# Yugoslavia/Albania
+		359  = -1  #Tirana
+		343  = -1  #Dubrovnik
+		
+		# Turkey
+		378  = -1  #Kalymnos
+		379  = 50 #Rhodes
+		388  = 20  #Nicosia
+		
+		#Spain
+		475	 = 3000	 #Palma de Mallorca
+		473	 = -1	 #Cadiz
+		449  = -1  #Vigo
+		441  = -1  #Coruna
+		472  = -1  #Huelva
+		463  = -1  #Murcia
+		464  = -1  #Valencia		
+		440  = -1  #Barcelona
+		
+		#Portugal
+		995  = 300  #Azores
+		477  = -1  #Setubal
+		476  = -1  #Lissabon		
+	}
+}

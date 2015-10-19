@@ -1,0 +1,330 @@
+ # USA Nafrica file by DB   for wif2  
+
+exp_force_ratio = 0.0
+exp_force_ratios = { } 
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 4
+	reserve_prop		= 0.25
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.25
+   	min_attack_odds    = 1.1 
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.1
+	withdraw_odds		= 0.6
+
+  	enemy_handicap = { } 
+   	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 0.01	#How big a random range.  (1.0 = 1%)   DB
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.01	#higher, avoid worst beaches.
+	max_distance  		= 110.0  #About the distance from Japan to Batavia
+	max_staging_distance = 110.0 # How far should the staging area be from the target invasion point
+	distance		= 0.01	#higher = avoid long distance.
+	pocket			= 0.2	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.01	#prioritise taking pure islands.
+	enemy			= 0.1	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.1	#higher = much more vary of troops nearby
+	air_base		= 0.5 
+    naval_base 			= 0.5 
+    #air_support 		= 3.0 
+    redirect 			= nearest
+	ignore			= no
+	help_allies 		= yes 	#[yes/no]
+      
+		
+
+	staging_province = {
+		1795 # NY
+		     
+		 1812    #  Norfolk
+		#  #Gibraltar
+		# 	#Malta	
+
+		
+		  1886 # San Diego 
+
+	     	1889 # San Francisco
+		1734 # Pearl harbour	
+	}
+
+	target = {
+		#England    lowered all DB  all DH
+		26  = 90  #Dover
+		25  = 90  #Norwich
+		27  = 90  #Portsmouth
+		23  = 90  #Plymouth
+		22  = 90  #Cardif
+		36  = 90  #Belfast
+		17  = 90  #Manchester
+		12  = 90  #Edinburgh
+		11  = 90  #Glasgow
+
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		430	= 11  #Palermo
+		433	= 11  #Syracuse
+		434	= 11  #Cagliari
+		94	= 11  #Corsica
+		422	= -1  #Taranto
+		427	= -1  #Salerno
+		416	= -1  #Anzio
+		419	= -1  #Rome
+		412	= -1  #Ancona
+		400	= -1  #Venice
+
+		429 = 800  #Malta
+
+		# North Africa
+		900	= -1	# Suez
+		789	= 100  #Alexandra
+		717	= 1000	#Rabat
+		728	= 3000	#Oran
+		727	= 4000	#Algiers
+		748	= 2000	#Bizerte
+		747	= 1000	#Tunis
+		750	= 1000	#Tripoli
+		761	= 200	#Benghazi
+		765	= 200	#Tobruk
+
+		# Middle East
+		1019  = 50	#Beirut
+		1008  = 50 #Tel Aviv
+		1004  = 50 #El Arish
+
+		#Pearl Harbour
+		1734 = 1800
+		1736 = 60
+		1737 = 60
+		1735 = 60
+
+		# Middle East
+		1004  = -1	#	El Arish
+		1005  = -1	#	Sharm el Sheikh
+		1008  = -1	#	Tel Aviv
+		1019  = -1	#	Beirut
+		1032  = -1	#	Basrah
+		1038  = -1	#	Doha
+		1039  = -1	#	Abu Dhabi
+		1040  = -1	#	Dammam
+		1041  = -1	#	Kuwait
+		1043  = -1	#	Khasab
+		1048  = -1	#	Medina
+		1051  = -1	#	El Mukalla
+		1052  = -1	#	Masqat
+
+
+		#Temp Shut Down of Europe
+		#Norway
+		483  = -1	#	Oslo
+		485  = -1	#	Kristiansand
+		491  = -1	#	Alesund
+		493  = -1	#	Trondheim
+		495  = -1	#	Narvik
+
+
+		# Baltic States (in case of un-holy alliance)
+		226  = -1	#	Gdynia
+		264  = -1	#	Riga
+		269  = -1	#	Jelgava
+		270  = -1	#	Tallinn
+		275  = -1	#	Kuressaare
+		516  = -1	#	Tornio
+		521  = -1	#	Vaasa
+		524  = -1	#	Turku
+		525  = -1	#	Helsinki
+		526  = -1	#	Ahvenanmaa
+		530  = -1	#	Terijoki
+		531  = -1	#	Viipuri
+		535  = -1	#	Murmansk
+		542  = -1	#	Arkhangelsk
+		553  = -1	#	Leningrad
+
+
+		# German
+		147   = -1	#	Wilhelmshaven
+		152   = -1	#	Kiel
+		153   = -1	#	Rostock
+		158   = -1	#	Stettin
+		181   = -1	#	Danzig
+		184   = -1	#	Koenigsberg
+
+	
+		# Atlantic Wall
+		37   = -1	#	Brest
+		39   = -1	#	Lorient
+		44   = -1	#	Caen
+		46   = -1	#	Bayeux
+		49   = -1	#	Calais
+		51   = -1	#	Dunkirk
+		53   = -1	#	Dieppe
+		68   = -1	#	Bordeaux
+		69   = -1	#	La Rochelle
+		82   = -1	#	Montpellier
+		86   = -1	#	Marseille
+		94   = -1	#	Corsica
+		114   = -1	#	Bruges
+		115   = -1	#	Antwerpen
+		122   = -1	#	Amsterdam
+		125   = -1	#	Rotterdam
+
+        # Greece
+        382 = -1 #Crete
+        372 = -1 #Patras
+        377 = -1 #Athens
+        370 = -1 #Alexandroupoli
+
+        # Yugoslavia/Albania
+        359 = -1 #Tirana
+        343 = -1 #Dubrovnik
+	} 
+} 
+
+	admiral = {
+
+	 min_org	= 90	# NEW: Percent of org gained back before the unit can leave port
+	 min_dmg	= 50    # NEW: Percent of dmg gained back before the unit can leave port
+	 return_org 	= 80 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	 return_dmg 	= 60 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+		ignore = {
+		"Southeast Northsea"
+
+
+		#Norway Coast (Denmark Coast)
+		"Norwegian Sea"
+		"East North Sea"
+		"Kattegat"
+	
+
+
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+
+
+		
+		#Central Mediterranean
+		# "Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+
+
+
+	}
+
+            target = { 2636 = 250 2639 = 225 2631 = 200 2414 = 175 2424 = 175 2426 = 175 
+
+			2195 = 200 2194 = 200 2193 = 175 2192 = 150 2181 = 150 2183 = 150 2185 = 100 2175 = 100
+
+ 		} 
+
+             base = { 
+		17 # ply
+
+		348 	#Gibraltar
+
+		1734 # Pearl harbour
+	     	# 1889 # San Francisco
+		 
+		  1886 # San Diego 
+     		1812 # Norfolk 
+     		1953 # Miami 
+     		1795 # New York 
+     		1789 # Boston 
+	
+		#1683 # Guam
+		
+	} 
+
+}

@@ -1,0 +1,37 @@
+# Japan Recon Islands if not at war   DrBob
+
+
+
+
+###################################
+# Invasions and Naval
+###################################
+ 
+admiral = { 
+
+	base = {
+		1552 # Tokyo
+		# 1557 # Nagoya
+		# 1556 # 
+		1553 # Osaka
+		1554 # Hiroshima
+
+		1675  # eniwetok   need forward bases
+		1661  # iwojima
+		1681    # wotje
+	}
+
+	target = { 2414 = 200 
+		   2418 = 200 
+		2631 = 200 
+		2635 = 150 
+		2476 = 150 
+		2416 = 150
+
+		2634 = 600  # north and west of Hawaii
+	 	2383 = 300
+		 2637 = 300
+		2638 = 200
+ }
+
+}

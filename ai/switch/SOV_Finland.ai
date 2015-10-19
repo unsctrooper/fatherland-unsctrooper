@@ -1,0 +1,175 @@
+# Soviet Finland AI File by Lothos   db
+
+max_front_ratio = 1.00 
+max_front_ratios = {
+	FIN = 3.0 # 
+	ROM = 1.0 # 1.0
+	GER = 2.0
+	HUN = 0.75
+	JAP = 0.8
+}
+max_garrison_prop = 0.60
+min_garrison_prop = 0.50
+
+reinforcement = 0.20
+
+construction = { 
+
+	max_factor = 0.00
+
+	land_fort = no
+	
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.0
+	overseas_multiplier		= 0.5
+	home_peace_cap 			= 500
+	war_zone_odds 			= 3.0
+	key_point_prio_mult		= 0.3
+	revolt_risk_mult		= 0.0
+
+	# PRIORITIES:
+	beach				= 30	# Beach level 2
+	capital				= 140	# Our capital
+	human_border		= 0		# Ignored for allied human players
+	war_target			= 50	# The next country targeted for attack by this AI
+	reserves 			= 20	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0		# If we are neutral, countries with claims on us get this
+	unstable_border		= 0		# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		CHI = -1
+		AFG = -1
+		PER = 10
+		TUR = 20
+		FIN = 50
+		ROM = 30
+		POL = 20
+		GER = 75
+		ITA = 50
+		JAP = 1
+		MAN = 1
+		SWE = 20
+		NOR = 20
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		553   = 330  #Leningrad
+		617   = 120  #Kiev
+		632   = 120  #Dnepropetrovsk
+		663   = 220  #Stalingrad
+		636   = 220  #Kharkov
+		588   = 120  #Bryansk  	db
+		1191  = 220  #Vladivostock
+		535   = 120  #Murmansk
+		641   = 220  #Sevastopool
+		589   = 220  #Smolensk
+
+		# In depth defense
+
+		# 270 = 10 # Tallinn
+		604 = 210 # Kursk
+		590 = 100 # Vitebsk
+		552 = 40 # Gdov
+		584 = 40 # Tula
+		# 644 = 10 # Rostov
+
+		# Forests near Moscow
+		592 = 50
+		586 = 50
+		574 = 50
+		568 = 50 
+		567 = 50 
+		570 = 50
+		
+		# German Soviet Border
+	
+		264  = 60  #riga
+		267  = 60
+		258  = 60
+		255  = 60
+		251  = 60
+		248  = 60
+		# 595  = 30
+		616  = 60
+		611  = 60
+		612  = 60
+		619  = 60
+		620  = 60
+		626  = 60
+
+		# 2nd line
+		618 = 90
+		614 = 90
+		616 = 90
+		595 = 90
+		597 = 90
+		596 = 90
+		599 = 90
+		593 = 90
+		564 = 90
+		566 = 90
+
+		# 3rd line defense n Kerson North to 
+		624 = 60
+		623 = 60
+		630 = 60
+		632 = 60
+
+		629 = 60
+		610 = 60
+		608 = 60
+		607 = 60
+
+		601 = 60
+		600 = 60
+
+		#   4th line   Rostov to vytegra
+		644 = 60
+		649 = 60
+		653 = 60
+		654 = 60
+		652 = 60
+		579 = 60
+		571 = 60
+		570 = 60 
+		569 = 60
+		563 = 60
+		555 = 60
+		556 = 60
+
+				# airports and river defense
+		585 = 45
+		590 = 75   # vitebsk
+		265 = 75
+		266 = 75
+		240 = 75
+		
+		# Winter war buildup
+		539  = 135
+		537  = 135
+		536  = 135
+	}
+	area_multiplier = {
+		535  = 1.5  #Murmansk
+		553  = 1.5  #Leningrad
+		
+		# Winter war buildup
+		539  = 3.5
+		537  = 3.5
+		536  = 3.5
+	}
+}

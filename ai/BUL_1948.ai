@@ -5,8 +5,8 @@ max_front_ratio = 1.2
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 neutrality = 120 
-war = 1
-upgrading = 0.35
+war = 0 # Bulgaria tends to DOW against Australia...Tannu Tuva...WTF?!
+upgrading = 0.25
 reinforcement = 0.0
 strat_redeploy_threshold = 25
 exp_force_ratio = 0.1 
@@ -57,7 +57,7 @@ target = {
 	328 = 50  # Stip
 }
 trade = {
-	cancel_deal_threshold = 2
+	cancel_deal_threshold = 1.75
 
 	energy 		= -1
 	rare_materials 	= -1
@@ -125,8 +125,8 @@ tech_sharing = {
 ###################################
 spyprefs =
 {
-	percentage_on_spies 		= 0.2
-	percentage_foreign_mission 	= 0.6
+	percentage_on_spies 		= 0.1
+	percentage_foreign_mission 	= 0.5
 
 	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
 	spyprefsdata = 
@@ -189,7 +189,7 @@ spyprefs =
 ###################################
 #Default values
 construction = { 
-	max_factor = 0.000 
+	max_factor = 0.5000 
 
 
 	AA_batteries = no
@@ -219,8 +219,8 @@ construction = {
 	fort_borders = { } 
 
 	ic_at_war = no 
-	force_ic_until = 1935
-	ic_end_year = 1935
+	force_ic_until = 1936
+	ic_end_year = 1937
 	IC_provs = {
 		321 # Sofia
 	} 
@@ -229,8 +229,8 @@ construction = {
 military = { 
 	relative_build_scheme 	= no
 	max_batch_peace 		= 680 
-	max_batch_war 			= 320 
-	max_batch_home_front = 180
+	max_batch_war 			= 520 
+	max_batch_home_front = 380
         extra_convoys_war = 0.0000 
         extra_convoys_peace = 0.0000 
 
@@ -305,20 +305,26 @@ military = {
 technology = { 
 	endgoal 	= { } 
 		preference 	= { 
-		# Manufacturing
-		5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+		# Manufacturing 5130 
+		5810 5820 5050 5830 5060 5070 5110 5120 5840 5850 5860
 
 		# Construction Engineering
-		5800 5080 5090 5100 5900 5910
-
-		# Applied Assembly lines
-		5140 5150 5160 5170 5180
+		# 5800 5080 5090 5100 5900 5910
 
 		# Regular Infantry
 		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
 
 		# Field Artillery Support
 		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+
+		# anti tank
+		2400 2410 2420 2430 
+
+		# Static Anti-Air
+		2800 2450 21180 21190 21200 2460 2470 2480 2490 2500 11080
+
+		# Anti Air Brigade
+		2810 2820 2510 2520 2530 2540 11090
 		
 		# Manpower Focus Human Wave Path (SOV)
 		6570 6300 6310 6320 6330 6340 6350 6360 6370 14060 6900
@@ -333,8 +339,9 @@ technology = {
 		#EQUIPMENT Jungle / Desert / Sturdy
 		5940 5950 5960 5970 5980 5990
 		
-		# Applied Assembly lines 
-		5150 5160 5170
+
+		# Applied Assembly lines
+		5140 5150 5160 5170 5180
 
 		# Airborne Infantry
 		1670 1680 1690 1700 1710 1720 1730 1740
@@ -353,6 +360,9 @@ technology = {
 
 		# Air Transports
 		4290 4250 4260 4270 15180 15190
+
+		# Seaplanes
+		4740 4750 4760 4770 4780 4790 4850 4860
 
 		# Multi-Role
 		4300 4310 4320 4330 4340 4040 4070 4100 4350
@@ -390,11 +400,7 @@ technology = {
 		# SP Rocket Artillery
 		2980 2260 2270 2280 11050 11060 2990 
 		
-		# Static Anti-Air
-		2800 2450 21180 21190 21200 2460 2470 2480 2490 2500 11080
-
-		# Anti Air Brigade
-		2810 2820 2510 2520 2530 2540 11090 
+ 
 
 		# Rocket Artillery
 		2970 2370 2380 2390
@@ -411,7 +417,7 @@ technology = {
 	industry 	= 4
 	aircraft 	= 1
 	naval 		= 0
-	land_doctrines 	= 1
+	land_doctrines 	= 2
 	secret_weapons 	= 0
 	air_doctrines 	= 1
 	naval_doctrines = 0
@@ -422,29 +428,29 @@ technology = {
 ###################################
 leader_ratio = {
 	land_field_marshal 	=0.02
-	land_general 		=0.031
+	land_general 		=0.131
 	land_lt_general 	=0.41
 
 	sea_grand_admiral 	=0.02
-	sea_admiral 		=0.061
+	sea_admiral 		=0.161
 	sea_vice_admiral 	=0.401
 
 	air_marshal 		=0.02
-	air_general 		=0.091
-	air_lt_General 		=0.11
+	air_general 		=0.191
+	air_lt_General 		=0.21
 }
 garrison = {
 	defend_overseas_beaches = yes
 	home_multiplier 	= 1.0
 	overseas_multiplier 	= 0.5
-	home_peace_cap 		= 20
+	home_peace_cap 		= 40
 	war_zone_odds 		= 2.0
 	key_point_prio_mult	= 0
 	revolt_risk_mult	= 1.0
 
 	# PRIORITIES:
 	beach			= 20	# Beach level 2
-	capital			= 40	# Our capital
+	capital			= 90	# Our capital
 	human_border		= 0	# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
 	
@@ -454,21 +460,23 @@ garrison = {
 
 	# Borders with specific countries
 	country_priorities = {
+		GER = -1
+		ITA = -1
+		ROM = 20
+		YUG = 20
+		HUN = 20
+		SOV = 100
+		SLO = -1
+		POL = 50
 		TUR = 20
 	}
-	province_priorities = {	
-		307 = 20
-		331 = 20
-		333 = 20
-		325 = 20
-		370 = 20
-	}
+	province_priorities = {	}
 	area_multiplier = { }
 }
 front = { 
 	recklessness 		= 1 # 0-3
-	distrib_vs_ai 		= even
-	distrib_vs_human 	= even
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
 
 	enemy_reinf_days	= 6
 	reserve_prop		= 0.1
@@ -564,7 +572,7 @@ air_marshal = {
 invasion = { 
 	invasion	= no
  	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
-	random		= 8.0	#How big a random range.  (1.0 = 1%)
+	random		= 0.01	#How big a random range.  (1.0 = 1%)
 	coastal		= 0.1	#increase to avoid coastal forts more.
 	beach		= 0.1	#higher, avoid worst beaches.
 	distance	= 20.0	#higher = avoid long distance.
@@ -582,9 +590,9 @@ invasion = {
 } 
 admiral = { 
 	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
-	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	min_dmg		= 68    # NEW: Percent of dmg gained back before the unit can leave port
 	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
-	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+	return_dmg 	= 50 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
 
 	ignore = {
 		#Baltic Area

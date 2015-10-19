@@ -16,7 +16,7 @@ event = {
 
 	date = { day = 0 month = january year = 1948 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1948 }
+	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
 		name = OK
@@ -54,7 +54,7 @@ event = {
 
 	date = { day = 0 month = january year = 1949 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1949 }
+	deathdate = { day = 29 month = december year = 1949 }
 
 	action = {
 		name = OK
@@ -90,7 +90,7 @@ event = {
 
 	date = { day = 0 month = january year = 1950 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1953 }
+	deathdate = { day = 29 month = december year = 1953 }
 
 	action = {
 		name = OK
@@ -127,7 +127,7 @@ event = {
 
 	date = { day = 0 month = january year = 1954 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = EVT_8011304_A
@@ -157,12 +157,35 @@ event = {
 
 	date = { day = 0 month = january year = 1958 }
 	offset = 360
-	deathdate = { day = 30 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1988 }
 
 	action = {
 		name = EVT_8011305_A
 		ai_chance = 100
 		command = { type = dissent value = 10 }
 		command = { type = domestic which = freedom value = -2 }
+	}
+}
+
+event = {
+	id = 8011306
+	country = PAR
+
+	name = EVT_8011306_NAME
+	desc = EVT_8011306_DESC
+	picture = nwo\alfred_stroessner
+	style = 1
+
+	date = { day = 0 month = january year = 1989 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_8011306_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 200204 } # Andrés Rodríguez
+		command = { type = headofgovernment which = 200205 } # Andrés Rodríguez
 	}
 }

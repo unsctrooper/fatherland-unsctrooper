@@ -1,0 +1,267 @@
+### Relocation and addition of special buildings
+
+event = {
+	id = 8217000
+	country = USA
+
+	name = EVT_8217000_NAME
+	desc = EVT_8217000_DESC
+	picture = nwo\cape_canaveral
+	style = 1
+
+	trigger = {
+		building = { province = 1904 type = rocket_test value = 1 } 
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 1 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 2 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -1 }
+		command = { type = construct which = rocket_test where = 1949 value = 1 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 2 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 3 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -2 }
+		command = { type = construct which = rocket_test where = 1949 value = 2 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 3 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 4 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -3 }
+		command = { type = construct which = rocket_test where = 1949 value = 3 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 4 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 5 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -4 }
+		command = { type = construct which = rocket_test where = 1949 value = 4 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 5 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 6 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -5 }
+		command = { type = construct which = rocket_test where = 1949 value = 5 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 6 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 7 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -6 }
+		command = { type = construct which = rocket_test where = 1949 value = 6 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 7 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 8 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -7 }
+		command = { type = construct which = rocket_test where = 1949 value = 7 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 8 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 9 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -8 }
+		command = { type = construct which = rocket_test where = 1949 value = 8 }
+	}	
+	
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 9 } 
+			NOT = { building = { province = 1904 type = rocket_test value = 10 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -9 }
+		command = { type = construct which = rocket_test where = 1949 value = 9 }
+	}	
+
+	action = {
+		name = EVT_8217000_A
+		trigger = { 
+			building = { province = 1904 type = rocket_test value = 10 } 
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 1904 value = -10 }
+		command = { type = construct which = rocket_test where = 1949 value = 10 }
+	}	
+	
+	action = {
+		name = EVT_8217000_B
+		ai_chance = 0
+		command = { type = money value = 10 }
+	}	
+}
+
+event = {
+	id = 8217001
+	country = SOV
+
+	name = EVT_8217001_NAME
+	desc = EVT_8217001_DESC
+	picture = nwo\baikonur_cosmodrome
+	style = 1
+
+	trigger = {
+		building = { province = 577 type = rocket_test value = 1 } 
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 1 } 
+			NOT = { building = { province = 577 type = rocket_test value = 2 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -1 }
+		command = { type = construct which = rocket_test where = 1110 value = 1 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 2 } 
+			NOT = { building = { province = 577 type = rocket_test value = 3 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -2 }
+		command = { type = construct which = rocket_test where = 1110 value = 2 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 3 } 
+			NOT = { building = { province = 577 type = rocket_test value = 4 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -3 }
+		command = { type = construct which = rocket_test where = 1110 value = 3 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 4 } 
+			NOT = { building = { province = 577 type = rocket_test value = 5 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -4 }
+		command = { type = construct which = rocket_test where = 1110 value = 4 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 5 } 
+			NOT = { building = { province = 577 type = rocket_test value = 6 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -5 }
+		command = { type = construct which = rocket_test where = 1110 value = 5 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 6 } 
+			NOT = { building = { province = 577 type = rocket_test value = 7 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -6 }
+		command = { type = construct which = rocket_test where = 1110 value = 6 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 7 } 
+			NOT = { building = { province = 577 type = rocket_test value = 8 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -7 }
+		command = { type = construct which = rocket_test where = 1110 value = 7 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 8 } 
+			NOT = { building = { province = 577 type = rocket_test value = 9 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -8 }
+		command = { type = construct which = rocket_test where = 1110 value = 8 }
+	}	
+	
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 9 } 
+			NOT = { building = { province = 577 type = rocket_test value = 10 } }
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -9 }
+		command = { type = construct which = rocket_test where = 1110 value = 9 }
+	}	
+
+	action = {
+		name = EVT_8217001_A
+		trigger = { 
+			building = { province = 577 type = rocket_test value = 10 } 
+		}
+		ai_chance = 100
+		command = { type = construct which = rocket_test where = 577 value = -10 }
+		command = { type = construct which = rocket_test where = 1110 value = 10 }
+	}	
+	
+	action = {
+		name = EVT_8217001_B
+		ai_chance = 0
+		command = { type = money value = 10 }
+	}	
+}
