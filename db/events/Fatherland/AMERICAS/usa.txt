@@ -14,6 +14,7 @@
 ### 999509 Disband the UN-Soviet alliance ALS (UN)
 ###
 ### The Reich-American Cold War, 1948
+###
 ### 1948: United Nations Command Council
 ### 1. UN Command Council: Internal Policy
 ### 1.1 UN Adopts the Common Front Resolution
@@ -26,9 +27,16 @@
 ###
 ### The Isolationist Paradox
 ### Francis Parker Yockey's "The Coldest Peace"
-### Francis Parker Yockey Assassinated
+### Death of Francis Parker Yockey
+### America eliminates Francis Parker Yockey
 ###
-### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture Plan
+### UN Sanctions: Pacification of Moscow
+### UN Sanctions: China joins the Axis
+### UN Sanctions: Spain joins the Axis
+### UN Sanctions: Portugal joins the Axis
+### The Cold War gets warm
+###
+### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture-France Plan
 ### 
 ### UN Liberty Shield: Europe
 ### UN Liberty Shield: Far East Asia
@@ -456,7 +464,9 @@ command = { type = setflag which = usa_cw_isolation }
 }
 }
 
-### 1948: United Nations Command Council
+#############################################
+### 1948: United Nations Command Council ####
+#############################################
 
 event = {
 id = 999511
@@ -569,6 +579,8 @@ command = { type = add_corps which = "2. UN Task Force" value = land where = 179
 command = { type = add_division which = "10. UN Infantry Brigade" value = motorized when = 3 where = -70 }
 command = { type = add_division which = "11. UN Infantry Brigade" value = motorized when = 3 where = -70 }
 command = { type = add_division which = "12. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+command = { type = domestic which = democratic value = 1 }
+command = { type = domestic which = freedom value = 1 }
 }
 }
 
@@ -589,6 +601,8 @@ name = "Ok."
 command = { type = add_corps which = "UN Shock Force" value = land where = 1795 } # New York
 command = { type = add_division which = "1. UN Shock Armor Brigade" value = armor when = 5 where = sp_artillery }
 command = { type = add_division which = "2. UN Shock Brigade" value = mechanized when = 2 where = sp_artillery }
+command = { type = domestic which = democratic value = -1 }
+command = { type = domestic which = freedom value = -1 }
 }
 }
 
@@ -831,8 +845,8 @@ trigger = {
 local_flag = fpy
 }
 
-name = "EVT_999523_NAME"
-desc = "EVT_999523_DESC"
+name = "EVT_999522_NAME"
+desc = "EVT_999522_DESC"
 style = 0
 picture = "fatherland\FPY"
 date = { day = 1 month = january year = 1948 } 
@@ -844,5 +858,326 @@ name = "This will heighten tensions with Germany."
 command = { type = dissent value = 4 }
 command = { type = relation which = GER value = -10 }
 command = { type = local_clrflag which = fpy }
+}
+}
+
+### America eliminates Francis Parker Yockey
+
+event = {
+id = 999523
+random = no
+country = GER
+
+name = "EVT_999523_NAME"
+desc = "EVT_999523_DESC"
+style = 0
+picture = "fatherland\FPY"
+
+action = {
+name = "We expect the US will do worse."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+###########################
+### UN Sanctions events ###
+###########################
+
+### UN Sanctions: Pacification of Moscow
+
+event = {
+id = 999524
+random = no
+country = USA
+
+trigger = {
+OR = {
+flag = moscow_total
+flag = moscow_limited
+}
+}
+
+name = "EVT_999524_NAME"
+desc = "EVT_999524_DESC"
+style = 1
+picture = "fatherland\moscow"
+date = { day = 1 month = january year = 1948 } 
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+ai_chance = 90
+name = "Close economic relations with Germany."
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -10 }
+command = { type = end_trades which = USA where = GER }
+command = { type = end_trades which = ALS where = GER }
+command = { type = manpowerpool value = 20 }
+command = { type = domestic which = professional_army value = -1 }
+command = { type = trigger which = 999525 }
+}
+
+action = {
+ai_chance = 10
+name = "This is none of our concern."
+command = { type = dissent value = 4 }
+}
+}
+
+### UN Sanctions: Pacification of Moscow - GER
+
+event = {
+id = 999525
+random = no
+country = GER
+
+name = "EVT_999525_NAME"
+desc = "EVT_999525_DESC"
+style = 1
+picture = "fatherland\moscow"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### UN Sanctions: China joins the Axis
+
+event = {
+id = 999526
+random = no
+country = USA
+
+trigger = {
+exists = AXI # Axis exists.
+alliance = { country = GER country = CHI }	
+NOT = { war = { country = -1 country = GER } }
+}
+
+name = "EVT_999526_NAME"
+desc = "EVT_999526_DESC"
+style = 1
+picture = "fatherland\chinese_dragon"
+date = { day = 1 month = january year = 1948 } 
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+ai_chance = 90
+name = "Close economic relations with Germany and China."
+command = { type = dissent value = 3 }
+command = { type = relation which = GER value = -10 }
+command = { type = end_trades which = USA where = GER }
+command = { type = end_trades which = ALS where = GER }
+command = { type = relation which = CHI value = -10 }
+command = { type = end_trades which = USA where = CHI }
+command = { type = end_trades which = ALS where = CHI }
+command = { type = manpowerpool value = 20 }
+command = { type = domestic which = professional_army value = -1 }
+command = { type = trigger which = 999527 }
+command = { type = trigger which = 999528 }
+}
+
+action = {
+ai_chance = 10
+name = "This is none of our concern."
+command = { type = dissent value = 5 }
+}
+}
+
+### UN Sanctions: China joins the axis - GER
+
+event = {
+id = 999527
+random = no
+country = GER
+
+name = "EVT_999527_NAME"
+desc = "EVT_999527_DESC"
+style = 1
+picture = "fatherland\chinese_dragon"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### UN Sanctions: China joins the axis - CHI
+
+event = {
+id = 999528
+random = no
+country = CHI
+
+name = "EVT_999528_NAME"
+desc = "EVT_999528_DESC"
+style = 1
+picture = "fatherland\chinese_dragon"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### UN Sanctions: Spain joins the Axis
+
+event = {
+id = 999529
+random = no
+country = USA
+
+trigger = {
+exists = AXI # Axis exists.
+alliance = { country = GER country = SPA }	
+NOT = { war = { country = -1 country = GER } }
+}
+
+name = "EVT_999529_NAME"
+desc = "EVT_999529_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+date = { day = 1 month = january year = 1948 } 
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+ai_chance = 90
+name = "Close economic relations with Germany and Spain."
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -10 }
+command = { type = end_trades which = USA where = GER }
+command = { type = end_trades which = ALS where = GER }
+command = { type = relation which = SPA value = -10 }
+command = { type = end_trades which = USA where = SPA }
+command = { type = end_trades which = ALS where = SPA }
+command = { type = manpowerpool value = 20 }
+command = { type = domestic which = professional_army value = -1 }
+command = { type = trigger which = 999530 }
+command = { type = trigger which = 999531 }
+}
+
+action = {
+ai_chance = 10
+name = "This is none of our concern."
+command = { type = dissent value = 4 }
+}
+}
+
+### UN Sanctions: Spain joins the axis - GER
+
+event = {
+id = 999530
+random = no
+country = GER
+
+name = "EVT_999530_NAME"
+desc = "EVT_999530_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### UN Sanctions: Spain joins the axis - SPA
+
+event = {
+id = 999531
+random = no
+country = SPA
+
+name = "EVT_999531_NAME"
+desc = "EVT_999531_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### UN Sanctions: Portugal joins the Axis
+
+event = {
+id = 999532
+random = no
+country = USA
+
+trigger = {
+exists = AXI # Axis exists.
+alliance = { country = GER country = POR }	
+NOT = { war = { country = -1 country = GER } }
+}
+
+name = "EVT_999532_NAME"
+desc = "EVT_999532_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+date = { day = 1 month = january year = 1948 } 
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+ai_chance = 90
+name = "Close economic relations with Germany and Portugal."
+command = { type = dissent value = 1 }
+command = { type = relation which = GER value = -10 }
+command = { type = end_trades which = USA where = GER }
+command = { type = end_trades which = ALS where = GER }
+command = { type = relation which = POR value = -10 }
+command = { type = end_trades which = USA where = POR }
+command = { type = end_trades which = ALS where = POR }
+command = { type = manpowerpool value = 20 }
+command = { type = domestic which = professional_army value = -1 }
+command = { type = trigger which = 999533 }
+command = { type = trigger which = 999534 }
+}
+
+action = {
+ai_chance = 10
+name = "This is none of our concern."
+command = { type = dissent value = 4 }
+}
+}
+
+### UN Sanctions: Portugal joins the axis - GER
+
+event = {
+id = 999533
+random = no
+country = GER
+
+name = "EVT_999533_NAME"
+desc = "EVT_999533_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### UN Sanctions: Portugal joins the axis - POR
+
+event = {
+id = 999534
+random = no
+country = POR
+
+name = "EVT_999534_NAME"
+desc = "EVT_999534_DESC"
+style = 1
+picture = "nwo\geneva_conference"
+
+action = {
+name = "Der Kalte Krieg gets warmer."
+command = { type = relation which = USA value = -10 }
 }
 }

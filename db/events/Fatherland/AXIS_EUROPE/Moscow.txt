@@ -121,15 +121,9 @@ picture = "fatherland\wehrmacht1"
 action = {
 name = "This will take some time to quell."
 command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
-command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
-command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
-command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
 command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
-command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
-command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
-command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
-command = { type = 	province_revoltrisk which = 539 value = 40 } # Petrozavodsk in Finland
-command = { type = 	province_revoltrisk which = 541 value = 40 } # Belomorsk in Finland
+command = { type = 	province_revoltrisk which = 539 value = 30 } # Petrozavodsk in Finland
+command = { type = 	province_revoltrisk which = 541 value = 30 } # Belomorsk in Finland
 }
 }
 
@@ -200,5 +194,7 @@ action = {
 name = "Moscow is in German hands once more."
 command = { type = dissent value = -3 }
 command = { type = 	province_revoltrisk which = 572 value = 25 }
+command = { type = clrflag which = moscow_total }
+command = { type = clrflag which = moscow_limited }
 }
 }
