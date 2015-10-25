@@ -1281,3 +1281,60 @@ date = { day = 2 month = november year = 1948 }
 		command = { type = chiefofair which = 240195 }
 	}
 }
+
+### US Presidential Election of 1952
+### Earl Warren (Richard Nixon) vs. Adlai Stevenson (John Sparkman)
+
+event = {
+id = 999537
+random = no
+country = USA
+
+trigger = {
+government = democratic
+NOT = { ispuppet = USA }
+}
+
+name = "EVT_999537_NAME"
+desc = "EVT_999537_DESC"
+style = 2
+picture = "nwo\elections"
+
+date = { day = 4 month = november year = 1952 }
+
+	action = {
+		name = "Elect Warren"
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -3 }
+		command = { type = headofstate which = 240414 } # Earl Warren
+		command = { type = headofgovernment which = 240171 } # Richard M. Nixon
+		command = { type = foreignminister which = 240175 } # John Foster Dulles
+		command = { type = armamentminister which = 240179 } # George M. Humphrey
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240220 }
+		command = { type = chiefofnavy which = 240194 }
+		command = { type = chiefofair which = 240229 }
+	}
+
+	action = {
+		name = "Elect Stevenson"
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240169 } # Adlai Stevenson
+		command = { type = headofgovernment which = 240172 } # John Sparkman
+		command = { type = foreignminister which = 240176 } # Culbert Levy Olson
+		command = { type = armamentminister which = 240180 } # Herbert R. O'Connor
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240189 } # William Preston Lane
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240220 }
+		command = { type = chiefofnavy which = 240194 }
+		command = { type = chiefofair which = 240229 }
+	}
+}
