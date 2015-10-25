@@ -34,7 +34,16 @@
 ### UN Sanctions: China joins the Axis
 ### UN Sanctions: Spain joins the Axis
 ### UN Sanctions: Portugal joins the Axis
-### The Cold War gets warm
+### The Eternal Cold War
+###
+### US Presidential Election of 1948
+### US Presidential Election of 1952
+### US Presidential Election of 1956
+### US Presidential Election of 1960
+### US Presidential Election of 1964
+### US Presidential Election of 1968
+### US Presidential Election of 1972
+### US Presidential Election of 1976
 ###
 ### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture-France Plan
 ### 
@@ -913,7 +922,6 @@ command = { type = relation which = GER value = -10 }
 command = { type = end_trades which = USA where = GER }
 command = { type = end_trades which = ALS where = GER }
 command = { type = manpowerpool value = 20 }
-command = { type = domestic which = professional_army value = -1 }
 command = { type = trigger which = 999525 }
 }
 
@@ -974,7 +982,6 @@ command = { type = relation which = CHI value = -10 }
 command = { type = end_trades which = USA where = CHI }
 command = { type = end_trades which = ALS where = CHI }
 command = { type = manpowerpool value = 20 }
-command = { type = domestic which = professional_army value = -1 }
 command = { type = trigger which = 999527 }
 command = { type = trigger which = 999528 }
 }
@@ -1054,7 +1061,6 @@ command = { type = relation which = SPA value = -10 }
 command = { type = end_trades which = USA where = SPA }
 command = { type = end_trades which = ALS where = SPA }
 command = { type = manpowerpool value = 20 }
-command = { type = domestic which = professional_army value = -1 }
 command = { type = trigger which = 999530 }
 command = { type = trigger which = 999531 }
 }
@@ -1134,7 +1140,6 @@ command = { type = relation which = POR value = -10 }
 command = { type = end_trades which = USA where = POR }
 command = { type = end_trades which = ALS where = POR }
 command = { type = manpowerpool value = 20 }
-command = { type = domestic which = professional_army value = -1 }
 command = { type = trigger which = 999533 }
 command = { type = trigger which = 999534 }
 }
@@ -1180,4 +1185,99 @@ action = {
 name = "Der Kalte Krieg gets warmer."
 command = { type = relation which = USA value = -10 }
 }
+}
+
+### The Eternal Cold War (persistent event)
+
+event = {
+id = 999535
+random = no
+country = USA
+persistent = yes
+
+trigger = {
+exists = AXI # Axis exists.
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+NOT = { war = { country = USA country = ENG } }
+NOT = { war = { country = -1 country = GER } }
+NOT = { alliance = { country = -1 country = GER } }
+policy = { country = GER type = interventionism value = 5 }
+NOT = { flag = usa_cw_isolation } # USA is not isolationist
+}
+
+name = "EVT_999535_NAME"
+desc = "EVT_999535_DESC"
+style = 1
+picture = "fatherland\coldwar1"
+date = { day = 1 month = august year = 1948 } 
+offset = 365
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "There is no end in sight."
+command = { type = dissent value = 2 }
+command = { type = relation which = GER value = -10 }
+command = { type = relation which = AXI value = -10 }
+command = { type = manpowerpool value = 10 }
+command = { type = domestic which = professional_army value = 1 }
+}
+}
+
+#################################
+### US Presidential Elections ###
+#################################
+
+### US Presidential Election of 1948
+
+event = {
+id = 999536
+random = no
+country = USA
+
+trigger = {
+government = democratic
+NOT = { ispuppet = USA }
+}
+
+name = "EVT_999536_NAME"
+desc = "EVT_999536_DESC"
+style = 2
+picture = "fatherland\dewey"
+
+date = { day = 2 month = november year = 1948 }
+
+	action = {
+		name = "Elect Truman"
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -8 }
+		command = { type = headofstate which = 240013 } # Harry S. Truman
+		command = { type = headofgovernment which = 240025 } # Alben W. Barkley
+		command = { type = foreignminister which = 240040 } # George C. Marshall
+		command = { type = armamentminister which = 240177 } # John W. Snyder
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240097 } # Roscoe H. Hillenkoetter
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240191 }
+		command = { type = chiefofnavy which = 240192 }
+		command = { type = chiefofair which = 240195 }
+	}
+	action = {
+		name = "Elect Dewey"
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240017 } # Thomas E. Dewey
+		command = { type = headofgovernment which = 240028 } # John Bricker
+		command = { type = foreignminister which = 240041 } # Arthur Vandenberg
+		command = { type = armamentminister which = 240062 } # Warren G. Hooper
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240098 } # William J. Donovan
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240191 }
+		command = { type = chiefofnavy which = 240192 }
+		command = { type = chiefofair which = 240195 }
+	}
 }
