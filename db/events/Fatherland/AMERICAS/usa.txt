@@ -36,14 +36,11 @@
 ### UN Sanctions: Portugal joins the Axis
 ### The Eternal Cold War
 ###
-### US Presidential Election of 1948
-### US Presidential Election of 1952
-### US Presidential Election of 1956
-### US Presidential Election of 1960
+### US Presidential Election of 1948 (Thomas Dewey vs. Harry Truman)
+### US Presidential Election of 1952 (Earl Warren vs. Adlai Stevenson)
+### US Presidential Election of 1956 (Earl Warren vs. Estes Kefauver)
+### US Presidential Election of 1960 (John F. Kenndy vs. Richard Nixon)
 ### US Presidential Election of 1964
-### US Presidential Election of 1968
-### US Presidential Election of 1972
-### US Presidential Election of 1976
 ###
 ### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture-France Plan
 ### 
@@ -1228,6 +1225,7 @@ command = { type = domestic which = professional_army value = 1 }
 #################################
 
 ### US Presidential Election of 1948
+### Dewey vs. Truman
 
 event = {
 id = 999536
@@ -1399,3 +1397,113 @@ date = { day = 6 month = november year = 1956 }
 ### US Presidential Election of 1960
 ### J.F.K. vs. Nixon
 
+event = {
+id = 999539
+random = no
+country = USA
+
+trigger = {
+government = democratic
+NOT = { ispuppet = USA }
+}
+
+name = "EVT_999539_NAME"
+desc = "EVT_999539_DESC"
+style = 2
+picture = "nwo\usa_elections_1960"
+
+date = { day = 8 month = november year = 1960 }
+
+	action = {
+		name = "Elect Kennedy"
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240202 } # John F. Kennedy
+		command = { type = headofgovernment which = 240204 } # Lyndon B. Johnson
+		command = { type = foreignminister which = 240207 } # Dean Rusk
+		command = { type = armamentminister which = 240210 } # C. Douglas Dillon
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240213 } # John A. McCone
+		command = { type = chiefofstaff which = 240218 }
+		command = { type = chiefofarmy which = 240223 }
+		command = { type = chiefofnavy which = 240227 }
+		command = { type = chiefofair which = 240231 }
+	}
+	
+	action = {
+		name = "Elect Nixon"
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -4 }
+		command = { type = headofstate which = 240201 } # Richard M. Nixon
+		command = { type = headofgovernment which = 240203 } # Henry Cabot Lodge jr.
+		command = { type = foreignminister which = 240206 } # Strom Thurmond
+		command = { type = armamentminister which = 240211 } # Nelson A. Rockefeller
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240218 }
+		command = { type = chiefofarmy which = 240223 }
+		command = { type = chiefofnavy which = 240227 }
+		command = { type = chiefofair which = 240231 }
+	}
+}
+
+### US Presidential Election of 1964
+### J.F.K. vs. Nixon
+
+event = {
+id = 999540
+random = no
+country = USA
+
+trigger = {
+government = democratic
+NOT = { ispuppet = USA }
+}
+
+name = "EVT_999540_NAME"
+desc = "EVT_999540_DESC"
+style = 2
+picture = "nwo\usa_elections_1960"
+
+date = { day = 3 month = november year = 1964 }
+
+	action = {
+		name = "Elect Kennedy"
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240202 } # John F. Kennedy
+		command = { type = headofgovernment which = 240204 } # Lyndon B. Johnson
+		command = { type = foreignminister which = 240207 } # Dean Rusk
+		command = { type = armamentminister which = 240210 } # C. Douglas Dillon
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240213 } # John A. McCone
+		command = { type = chiefofstaff which = 240218 }
+		command = { type = chiefofarmy which = 240223 }
+		command = { type = chiefofnavy which = 240227 }
+		command = { type = chiefofair which = 240231 }
+	}
+	
+	action = {
+		name = "Elect Nixon"
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -4 }
+		command = { type = headofstate which = 240201 } # Richard M. Nixon
+		command = { type = headofgovernment which = 240203 } # Henry Cabot Lodge jr.
+		command = { type = foreignminister which = 240206 } # Strom Thurmond
+		command = { type = armamentminister which = 240211 } # Nelson A. Rockefeller
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240218 }
+		command = { type = chiefofarmy which = 240223 }
+		command = { type = chiefofnavy which = 240227 }
+		command = { type = chiefofair which = 240231 }
+	}
+}
