@@ -1298,7 +1298,7 @@ NOT = { ispuppet = USA }
 name = "EVT_999537_NAME"
 desc = "EVT_999537_DESC"
 style = 2
-picture = "nwo\elections"
+picture = "fatherland\earl_warren"
 
 date = { day = 4 month = november year = 1952 }
 
@@ -1338,3 +1338,64 @@ date = { day = 4 month = november year = 1952 }
 		command = { type = chiefofair which = 240229 }
 	}
 }
+
+### US Presidential Election of 1956
+### Earl Warren vs. Estes Kefauver
+
+event = {
+id = 999538
+random = no
+country = USA
+
+trigger = {
+government = democratic
+NOT = { ispuppet = USA }
+}
+
+name = "EVT_999538_NAME"
+desc = "EVT_999538_DESC"
+style = 2
+picture = "fatherland\earl_warren"
+
+date = { day = 6 month = november year = 1956 }
+
+	action = {
+		name = "Elect Warren"
+		ai_chance = 70
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -3 }
+		command = { type = headofstate which = 240414 } # Earl Warren
+		command = { type = headofgovernment which = 240171 } # Richard M. Nixon
+		command = { type = foreignminister which = 240175 } # John Foster Dulles
+		command = { type = armamentminister which = 240179 } # George M. Humphrey
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240220 }
+		command = { type = chiefofnavy which = 240194 }
+		command = { type = chiefofair which = 240229 }
+	}
+
+		action = {
+		name = "Elect Kefauver"
+		ai_chance = 30
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240415 } # Estes Kefauver
+		command = { type = headofgovernment which = 240172 } # John Sparkman
+		command = { type = foreignminister which = 240176 } # Culbert Levy Olson
+		command = { type = armamentminister which = 240180 } # Herbert R. O'Connor
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240189 } # William Preston Lane
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240220 }
+		command = { type = chiefofnavy which = 240194 }
+		command = { type = chiefofair which = 240229 }
+	}
+	}
+	
+### US Presidential Election of 1960
+### J.F.K. vs. Nixon
+
