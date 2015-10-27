@@ -2,7 +2,6 @@
 ### USA Cold War interventions and events
 ######################################### 
 ### UN Intervention against Turkestan	
-###
 ### 999500 Turkestani Revolt - UN Response USA
 ### 999501 UN Command Session - Turkestani Crisis USA
 ### 999503 Deploy the UN Command for Central Asia - ALS (UN)
@@ -40,16 +39,27 @@
 ### US Presidential Election of 1952 (Earl Warren vs. Adlai Stevenson)
 ### US Presidential Election of 1956 (Earl Warren vs. Estes Kefauver)
 ### US Presidential Election of 1960 (John F. Kenndy vs. Richard Nixon)
-### US Presidential Election of 1964
+### US Presidential Election of 1964 (John F. Kenndy vs. Richard Nixon)
 ###
-### Ridgway UN Liberty Shield Strategy, McArthur Siberian-Asian Front Strategy, Spaatz Central Front Strategy, Eisenhower European Rupture-France Plan
-### 
+### Semi-Centennial Strategic Convention
+###
+### Matthew Ridgway's UN Liberty Shield
 ### UN Liberty Shield: Europe
 ### UN Liberty Shield: Far East Asia
 ### UN Liberty Shield: Siberia and West Asia
 ### UN Liberty Shield: Africa
 ### UN Liberty Shield: South America
-
+###
+### Douglas McArthur's Siberian-Asian Front Strategy
+### The Question of the Russias
+### The Question of China -> The Question of Japan (if China is in Axis)
+### 
+### Carl Spaatz's Central Front Strategy (Mediterranean and Middle East)
+### Mobilizing the Mediterranean
+### Mobilizing the Middle East
+###
+### Eisenhower's European Division-France Plan (if French State and Spain not in Axis)
+### Charles De Gaulle prepares pro-Allied coup in mainland France followed by Allied invasion
 
 
 event = {
@@ -1506,4 +1516,83 @@ date = { day = 3 month = november year = 1964 }
 		command = { type = chiefofnavy which = 240227 }
 		command = { type = chiefofair which = 240231 }
 	}
+}
+
+############################################
+### Semi-Centennial Strategic Convention ###
+############################################
+
+event = {
+id = 999541
+random = no
+country = USA
+
+trigger = {
+NOT = { ispuppet = USA }
+exists = AXI # Axis exists.
+government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+NOT = { war = { country = USA country = ENG } }
+NOT = { war = { country = -1 country = GER } }
+}
+
+name = "EVT_999541_NAME"
+desc = "EVT_999541_DESC"
+style = 1
+picture = "fatherland\strategic_convention"
+date = { day = 25 month = january year = 1948 } 
+offset = 1
+deathdate = { day = 29 month = december year = 1990 }
+
+action = {
+ai_chance = 100
+name = "Show the plans."
+command = { type = trigger which = 999542 } # Strategic Options
+}
+
+action = {
+ai_chance = 0
+name = "I am not interested."
+command = { }
+}
+}
+
+### Strategic Options for combatting the Axis
+
+event = {
+id = 999542
+random = no
+country = USA
+
+name = "EVT_999542_NAME"
+desc = "EVT_999542_DESC"
+style = 1
+picture = "fatherland\strategic_convention"
+
+action = {
+ai_chance = 50
+name = "Ridgway's UN Liberty Shield Strategy"
+command = { type = trigger which = 999543 } # Ridgway's UN Liberty Shield Strategy
+command = { type = setflag which = un_liberty_shield }
+}
+
+action = {
+ai_chance = 15
+name = "MacArthur's Siberian-Asian Front Strategy"
+command = { type = trigger which = 999544 } # MacArthur's Siberian-Asian Front Strategy
+command = { type = setflag which = us_siberian_front }
+}
+
+action = {
+ai_chance = 30
+name = "Spaatz's Mediterranean-Middle East Strategy"
+command = { type = trigger which = 999545 } # Spaatz's Central Front (Mediterranean-Middle East) Strategy
+command = { type = setflag which = us_central_front }
+}
+
+action = {
+ai_chance = 5
+name = "Eisenhower's France-First Strategy"
+command = { type = trigger which = 999546 } # Eisenhower's France-First Strategy
+command = { type = setflag which = us_france_first }
+}
 }
