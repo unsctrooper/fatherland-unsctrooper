@@ -35,7 +35,7 @@ rare_materials         = 5000
     relation = { tag = ROM value = 125 }
     relation = { tag = SOV value = -200 }
     relation = { tag = TUR value = -10 }
-	relation = { tag = AXI value = 170 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+	relation = { tag = AXI value = 170 access = yes }
   } 
    SpyInfo                = {  country = "BUL" NumberOfSpies = 6  } 
   nationalprovinces      = {  318 323 325 324 321 320 319 326 364 317 331 307 370 322 

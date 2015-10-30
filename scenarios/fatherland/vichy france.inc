@@ -30,7 +30,7 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes } }
     relation = { tag = ITA value = 50 }
     relation = { tag = JAP value = 50 }
     relation = { tag = U03 value = 50 }
-    relation = { tag = AXI value = 50 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+    relation = { tag = AXI value = 50 access = yes }
   }
    SpyInfo                = {  country = "FRA" NumberOfSpies = 9  } 
    # Togoland 

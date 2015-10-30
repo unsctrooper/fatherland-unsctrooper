@@ -55,7 +55,7 @@ country = {
 		relation = { tag = FRA value = 150 }
 		relation = { tag = HOL value = 80 }
 		relation = { tag = USA value = 200 }
-		relation = { tag = ALS value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = ALS value = 200 access = yes }
 	}
 	
 	dormant_ministers = { 220094 220001 220095 220096 220013 220019 220014 220021 220025 220004 220005 }

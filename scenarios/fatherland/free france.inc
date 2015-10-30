@@ -55,7 +55,7 @@
     relation = { tag = LEB value = 50 access = yes }  
     relation = { tag = SYR value = 50 access = yes }  
 	relation = { tag = U03 value = 150 access = yes } 
-relation = { tag = ALS value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+relation = { tag = ALS value = 200 access = }
   }
 
    SpyInfo                = {  country = "U01" NumberOfSpies = 9  } 

@@ -35,9 +35,7 @@ rare_materials         = 1300
 	relation = { tag = U59 value = 10 }
 	relation = { tag = U57 value = -30 }
 	relation = { tag = ENG value = 100 }
-	relation = { tag = ALS value = 100 
-	guaranteed = { day = 1 month = january year = 1948 } 
-	access = yes }
+	relation = { tag = ALS value = 100 access = yes }
 	 }
 
 SpyInfo                = {  country = "KOR" NumberOfSpies = 5 }

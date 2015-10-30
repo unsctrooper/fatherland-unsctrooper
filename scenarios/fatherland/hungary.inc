@@ -40,8 +40,8 @@ rare_materials         = 1000
       value      = 125
       guaranteed = { day = 27 month = september year = 1940 }
     }
-    relation = { tag = ROM value = -200 }
-    relation = { tag = AXI value = 170 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+    relation = { tag = ROM value = 10 }
+    relation = { tag = AXI value = 170 access = yes }
   } 
    SpyInfo                = {  country = "HUN" NumberOfSpies = 7  } 
  nationalprovinces = {  209 210 215 276 277 278 279 280 281 282 283 284 296 341 } 

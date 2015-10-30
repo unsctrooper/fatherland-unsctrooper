@@ -100,7 +100,7 @@ country = {
 			relation = { tag = SWE value = -10 }
 			relation = { tag = SER value = -100 }
 		# Allies ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN
-		relation = { tag = ALS value = 100 access = yes guaranteed = { day = 1 month = january year = 1948 } }
+		relation = { tag = ALS value = 100 access = yes }
 			relation = { tag = AST value = -100 }
 			relation = { tag = BEL value = -10 }
 			relation = { tag = BHU value = -10 }
