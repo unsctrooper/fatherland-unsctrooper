@@ -24,6 +24,7 @@ country = {
   escorts        = 75
 
   diplomacy = {
+  relation = { tag = AXI value = 200 access = yes }
     relation = { tag = AFG value = 0 }
     relation = { tag = CHI value = 25 }
     relation = { tag = SAU value = -25 }
