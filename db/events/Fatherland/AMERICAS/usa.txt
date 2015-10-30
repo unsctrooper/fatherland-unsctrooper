@@ -1637,7 +1637,7 @@ picture = "fatherland\un_troops"
 action = {
 ai_chance = 40
 name = "Join the United Nations."
-command = { type =	alliance which = USA when = 2 }
+command = { type =	alliance which = USA }
 command = { type = 	dissent value = 5 }
 }
 
@@ -1669,16 +1669,18 @@ offset = 1
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
-trigger = { exists = CHI }
-trigger = { NOT = alliance = { country = CHI country = -1 } }
+trigger = { exists = CHI 
+NOT = { alliance = { country = CHI country = USA } } 
+}
 ai_chance = 70
 name = "Attempt to ally Nationalist China."
 command = { type = trigger which = 999546 }
 }
 
 action = {
-trigger = { exists = CHC }
-trigger = { NOT = { exists = CHI } }
+trigger = { exists = CHC
+NOT = { exists = CHI } 
+}
 ai_chance = 20
 name = "Attempt to ally Communist China."
 command = { type = trigger which = 999547 }
@@ -1706,11 +1708,11 @@ picture = "fatherland\un_troops"
 action = {
 ai_chance = 70
 name = "Join the United Nations."
-command = { type =	alliance which = USA when = 2 }
-command { type = relation which = USA value = 30 }
-command { type = relation which = ALS value = 30 }
-command { type = relation which = ENG value = 30 }
-command { type = relation which = SOV value = 10 }
+command = { type =	alliance which = USA }
+command = { type = relation which = USA value = 30 }
+command = { type = relation which = ALS value = 30 }
+command = { type = relation which = ENG value = 30 }
+command = { type = relation which = SOV value = 10 }
 command = { type = 	dissent value = 3 }
 }
 
@@ -1736,11 +1738,11 @@ picture = "fatherland\un_troops"
 action = {
 ai_chance = 30
 name = "Join the United Nations."
-command = { type = alliance which = USA when = 2 }
-command { type = relation which = USA value = 30 }
-command { type = relation which = ALS value = 30 }
-command { type = relation which = ENG value = 30 }
-command { type = relation which = SOV value = 50 }
+command = { type = alliance which = USA }
+command = { type = relation which = USA value = 30 }
+command = { type = relation which = ALS value = 30 }
+command = { type = relation which = ENG value = 30 }
+command = { type = relation which = SOV value = 50 }
 command = { type = 	dissent value = 7 }
 }
 
@@ -1808,24 +1810,28 @@ offset = 1
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
-trigger = { exists = SOV }
-trigger = { NOT = alliance = { country = SOV country = -1 } }
+trigger = { 
+exists = SOV 
+NOT = { alliance = { country = SOV country = USA } }
+}
 ai_chance = 20
 name = "Attempt to ally the Soviet Union."
 command = { type = trigger which = 999550 }
 }
 
 action = {
-trigger = { exists = U59 }
-trigger = { NOT = alliance = { country = U59 country = -1 } }
+trigger = { exists = U59
+NOT = { alliance = { country = U59 country = USA } }
+}
 ai_chance = 10
 name = "Attempt to ally the Siberian Democratic Republic."
 command = { type = trigger which = 999551 }
 }
 
 action = {
-trigger = { exists = SIB }
-trigger = { NOT = alliance = { country = SIB country = -1 } }
+trigger = { exists = SIB
+NOT = { alliance = { country = SIB country = USA } }
+}
 ai_chance = 20
 name = "Attempt to ally the Empire of Russia."
 command = { type = trigger which = 999552 }
@@ -1861,8 +1867,10 @@ picture = "fatherland\un_troops"
 action = {
 ai_chance = 90
 name = "Join the United Nations."
-command = { type = alliance which = USA }
+command = { type = access which = USA }
+command = { type = access which = ALS }
 command = { type = relation which = USA value = 30 }
+command = { type = relation which = ALS value = 30 }
 }
 
 action = {
