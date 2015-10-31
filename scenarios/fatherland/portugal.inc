@@ -2,11 +2,10 @@
 # Portugal
 # #############################
 
-
 country = {
 	tag = POR
-	energy = 500
-	metal = 500
+	energy = 450
+	metal = 300
 	rare_materials = 200
 	oil = 200
 	supplies = 200
@@ -44,7 +43,7 @@ country = {
 	SpyInfo = { country = "HOL" NumberOfSpies = 1 }
 	SpyInfo = { country = "TUR" NumberOfSpies = 1 }
 	SpyInfo = { country = "SPA" NumberOfSpies = 3 }
-	SpyInfo = { country = "BRA" NumberOfSpies = 1 }
+	SpyInfo = { country = "BRA" NumberOfSpies = 2 }
 	SpyInfo = { country = "POR" NumberOfSpies = 1 }
 	
 	nationalprovinces = { 476 477 478 479 480 481 482 994 995 }
@@ -60,6 +59,10 @@ country = {
 		relation = { tag = ENG value = 100 }
 		relation = { tag = SAF value = 50 }
 		relation = { tag = USA value = -25 }
+		relation = { tag = SPA value = 75 }
+		realtion = { tag = GER value = 45 }
+		realtion = { tag = ITA value = 35 }
+		relation = { tag = SOV value = -75 }		
 	}
 	
 	dormant_ministers = { 20004 20019 20020 20021 20022 20023 20024 20025 20030 20031 20032 20011 20012 20005 20006 20037 20007 20008 20042 20009 20010 }

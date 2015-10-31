@@ -5,6 +5,11 @@
 #####################################
 # Nationalist Spain
 # 
+# 189032 - ESPANA, UNA GRANDE Y LIBRE
+# 189033 - Political situation
+# 189034 - The Second World War
+# 189035 - North Africa
+# 189036 - The Economic situation
 # 189057 - Economic reforms first round
 # 189058 - Economic reforms second round
 # 189059 - New occupation law
@@ -39,6 +44,102 @@
 # 189271 - Madrid bombing
 
 event = {
+	id = 189032
+	random = no
+	country = SPA
+	style = 1
+	picture = "spanish_warposter"
+	
+	date = { day = 3 month = february year = 1948 }
+	name = "Espana, una grande y libre"
+	desc = "Franco's victory was followed by a national consolidation and the vengeance of the season. The Repubicans side fought were forced into concentration camps or lost their civil rights. Killings by anarchists kostet the executions. Separatist parties was banned nationalist who supported the Independence Party of Navarre with the exception of. The mayor was appointed by General Franco, loyal military officers. Catalonia and the Basque Country, the use of local languages was banned."
+
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+		}
+}
+	
+event = {
+	id = 189033
+	random = no
+	country = SPA
+	style = 1
+	picture = "spanish_warposter"
+	
+	date = { day = 5 month = february year = 1948 }
+	name = "Political Situation" 
+	desc = "Politically, Franco managed to unite ideologically completely incompatible Falangist and Karlistit one and under one umbrella organization. This Falange Espanola Tradicional y de las Juntas de Ofensiv Nacional Sindical had since 1939 the country's only legal political party. Advanced Fascism and the Catholic-conservatism cohabitation does not always go smoothly: August 16, 1942 in Bilbao, the Falangist and karlistien squabbles grenade attack Begona Church"
+
+	action = {
+		name = "Falange Espanola Tradicional y de las Juntas de Ofensiv Nacional Sindical"
+		ai_chance = 100	
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+event = {
+	id = 189034
+	random = no
+	country = SPA
+	style = 1
+	picture = "spanish_warposter"
+	
+	date = { day = 7 month = february year = 1948 }
+	
+	name = "The Second World War" 
+	desc = "During the WW2 Franco signed an agreement with the Vichy Government's favorable trade agreement and entered into negotiations with Germany's accession to battle the Axis side. Adolf Hitler met Franco in south-eastern France in Hendaye on 23 October 1940. Franco demanded the war in exchange for the accession of money and raw materials, as well as Gibraltar, French North Africa. Hitler could not agree to terms, without the friendly relations with the French government romuttuisivat. "
+
+	action = {
+		name = "We did not ride the storm"
+		ai_chance = 100	
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 189035
+	random = no
+	country = SPA
+	style = 1
+	picture = "spanish_warposter"
+	
+	date = { day = 10 month = february year = 1948 }
+	
+	name = "The Spanish Sahara" 
+	desc = "The Western Allies landed in French North Africa in November 1942 and began to prepare for the invasion of Fortress Europe against. The United Kingdom and the United States put pressure on Spain to break with anyone and everyone. Franco began to worry about the Allied infringing the territorial integrity of Spain. American troops were clustered positions in northern Morocco to the border."
+
+	action = {
+		name = "Damn!"
+		ai_chance = 100	
+		command = { type = dissent value = 1 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = U01 value = -20 }
+	}
+}
+
+event = {
+	id = 189036
+	random = no
+	country = SPA
+	style = 1
+	picture = "spanish_warposter"
+	
+	date = { day = 13 month = february year = 1948 }	
+	
+	name = "The Economic situation" 
+	desc = "Spain's economy is not so good"
+
+	action = {
+		name = "We need reforms"
+		ai_chance = 100	
+		command = { type = domestic which = free_market value = -1 }
+	}
+}
+
+event = {
 	id = 189057
 	random = no
 	country = SPA
@@ -47,8 +148,8 @@ event = {
 	}
 	name = "Economic reforms - First Round"
 	desc = "The S.N.T. was an organization which established lachat and national sales of key products such as wheat for checking the prices. The producers were forced to sell wheat at a price fixed by this institution and the latter were to be sold at a price higher and taxed. This caused a reduction in production and especially creating market dun black."
-	style = 0
-	picture = "SPA_victory"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 1 month = august year = 1948 }
 	offset = 7
 	deathdate = { day = 1 month = september year = 1950 }
@@ -61,8 +162,9 @@ event = {
 	action = {
 		ai_chance = 40
 		name = "No, it's not necessary"
-		command = { type = money value = 250 }
 		command = { type = dissent value = 3 }
+		command = { type = sleepevent which = 189058 }
+		command = { type = domestic which = free_market value = 1 }		
 	}
 }
 
@@ -75,8 +177,8 @@ event = {
 	}
 	name = "Economic reforms - Second Round"
 	desc = "In these days of reconstruction of the country by the fascist regime was created lI.N.I (National Institute of industry) who was a State holding that will allow the birth of large companies like SEAT, ENDESA, PEGASSO, etc..."
-	style = 0
-	picture = "Lend_Lease_SOV"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 10 month = january year = 1949 }
 	offset = 40
 	deathdate = { day = 10 month = december year = 1951 }
@@ -98,16 +200,19 @@ event = {
 		command = { type = construct which = IC where = -4 value = 1 }
 		command = { type = construct which = IC where = -4 value = 1 }
 		
+		command = { type = domestic which = free_market value = 1 }				
 	}
 	action = {
 		name = "We need a more open market"
 		ai_chance = 50		
+		command = { type = money value = 500 }
+		
 		command = { type = convoy which = 20 value = 474 when = 0 }
 		command = { type = convoy which = 20 value = 474 when = 2 }
 		command = { type = convoy which = 602 value = 474 when = 4 }
 		command = { type = convoy which = 602 value = 474 when = 16 }
-		
-		command = { type = money value = 250 }
+
+		command = { type = domestic which = free_market value = -1 }				
 	}
 }
 
@@ -120,24 +225,26 @@ event = {
 	}
 	name = "New occupational law"
 	desc = "We need a new occupational law. With this law, are regulated the working conditions of the area national. Was guaranteed a minimum wage, social security, ugly families and paid leave. It decreed an increase in salary for laborers and fragmentation of land in accordance with the needs of peasant families. However, almost none of these advantages do sappliquerent."
-	style = 0
-	picture = "law"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 7 month = march year = 1938 }
 	action = {
-		name = "Apply it without effort"
-		ai_chance = 40	
-		command = { type = money value = -100 }
-		command = { type = dissent value = -2 }
-	}
-	action = {
-		name = "Apply it with a great effort"
+		name = "Aggressive law. Large state control."
 		ai_chance = 40	
 		command = { type = money value = -250 }
-		command = { type = dissent value = -5 }
+		command = { type = dissent value = -2 }
+		command = { type = peacetime_ic_mod value = 2 }
+	}
+	action = {
+		name = "Moderate law. Blended control."
+		ai_chance = 40	
+		command = { type = money value = -125 }
+		command = { type = dissent value = -1 }
+		command = { type = peacetime_ic_mod value = 1 }
 	}
 	action = {
 		ai_chance = 20	
-		name = "Don't create this law"
+		name = "We don't need a new law"
 		command = { type = dissent value = 3 }
 	}
 }
@@ -149,8 +256,8 @@ event = {
 	date = { day = 19 month = april year = 1950 }
 	name = "Internal politically problems"
 	desc = "The Falange is more divided between the Falangists de Manuel Hedilla, the Carlists and affiliate army to Franco. Indeed, Hedilla sinquiete more in addition to see movement to militarize and radicalized. Seeing that army begins to take all posts of the party, see apply many ultra-clericale reactionary ideas are that the Falangists feel betrayed and dispossessed of the WIELS movement had themselves launched. Ambience is tense."
-	style = 0
-	picture = "SCW_german_intervention"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Damn!"
 		command = { type = dissent value = 2 }
@@ -161,21 +268,21 @@ event = {
 	id = 189222
 	random = no
 	country = SPA
-	date = { day = 1 month = february year = 1948 }
+	date = { day = 1 month = march year = 1948 }
 	name = "Close Radio Sevilla"
 	desc = "Radio-Seville was Moon of the nationalist radio which broadcast information and the point of view of the nationalists throughout the country to Radio-Salamanca as its predecessor. But Radio-Seville was very popular even among Republicans because Queipo de Llano had a freedom of your bitter towards the quenvers heads nationalists groups Republicans both. This impertinence annoyed both the Conservatives both lon comes to close the premises permanently."
-	style = 0
-	picture = "news_paper"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Close the damper to these impudent"
 		ai_chance = 50	
-		command = { type = domestic which = freedom value = -1} # société fermée
+		command = { type = domestic which = freedom value = -1}
 		command = { type = dissent value = -1 }
 		}
 	action = {
 		name = "Let freedom of tone to the regime"
 		ai_chance = 50	
-		command = { type = domestic which = freedom value = 1} # société ouverte
+		command = { type = domestic which = freedom value = 1} 
 		command = { type = dissent value = 1 }
 		}
 	}
@@ -187,19 +294,19 @@ event = {
 	date = { day = 22 month = april year = 1948 }
 	name = "State censorship"
 	desc = "The law on the press which has just promulgated Desmond gives to the State total control of information in Spain: journalism activity is highly regulated, a card is required in order to write or publish an article, only logs official dobedience to the regime are allowed. In Exchange for this end of the freedom of the press, journalists are purchased because their wages will be increased tenfold and will get benefits nationally."
-	style = 0
-	picture = "censure"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Silence,please!"
-			ai_chance = 50	
-			command = { type = dissent value = -3 }
-			command = { type = money value = 300 }
+			ai_chance = 50							
+		    command = { type = dissent value = -1 }			
 			command = { type = domestic which = freedom value = -1 }
 		}
 	action = {
 		name = "No, it's not necessary"
 			ai_chance = 50	
-			command = { type = dissent value = 4 }
+			command = { type = money value = 50 }
+			command = { type = dissent value = 1 }
 			command = { type = domestic which = freedom value = 1 }
 		}
 	}
@@ -211,8 +318,8 @@ event = {
 	date = { day = 3 month = may year = 1948 }
 	name = "Return of the Jesuits"
 	desc = "The Jesuit religious Congregation who had been expelled from the Republic in 1931 is again allowed to return in Spain and to resume his religious education and teaching in all schools in the country. Order acquires even new benefits quil had not at the time of the monarchy since Franco called two Jesuits as close advisers: the priest Lezirika and Menendez Reigada."
-	style = 0
-	picture = "politics1"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Amen!"
 		command = { type = dissent value = -1 }
@@ -229,14 +336,24 @@ event = {
 	date = { day = 17 month = march year = 1949 }
 	offset = 60
 	deathdate = { day = 17 month = march year = 1955 }
-	name = "Social law"
-	desc = "In the light of the extreme distress of the Spanish population, of insufficient supply, the scarcity of electricity, for the hardness of the winters, the Government has dinstaurer lAuxilio Social to combat extreme Spaniards without distinguishing poverty sils are falangists or Republican."
-	style = 0
-	picture = "SPA_victory"
-	action = {
-		name = "Gracias, gracias "
-		command = { type = dissent value = -2 }
-	}
+	name = "Agricoltural Reforms"
+	desc = "In the light of the extreme distress of the Spanish population, the Government answer would be too institute price control and tarrifs on grains and other cereals."
+	style = 1
+	picture = "spanish_warposter"
+action = {
+		name = "Implement price controls."
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = free_market value = -2 }
+}
+
+action = {
+		name = "We will let the market decide."
+		ai_chance = 50
+		command = { type = dissent value = 1 }
+		command = { type = domestic which = free_market value = 2 }
+}
+
 }
 
 event = {
@@ -249,13 +366,13 @@ event = {
 		}
 	name = "Propose a new Pacto Ibérico ?"
 	desc = "On 17 March 1939 Fawzi and the Portugal formed a listerner Pact and non-aggression, which delights the Allies who could see Spain as a country on which could be trusted over its neutrality. Two years later, this Pact will be confirmed as the Pacto Ibérico."
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 17 month = march year = 1949 }
 	offset = 30
 	deathdate = { day = 16 month = march year = 1951 }
 	action = {
-		name = "Yes, a new order on Penisula Iberica"
+		name = "Yes, Portugal is our natural ally"
 		ai_chance = 60	
 		command = { type = trigger which = 189026 }
 	}
@@ -276,8 +393,8 @@ event = {
 		}
 	name = "The Pacto Ibérico"
 	desc = "On 17 March 1939 Fawzi and the Portugal formed a listerner Pact and of non-aggression, which delighted the Allies who could see Spain as a country on which could be trusted over its neutrality. Two years later, this Pact will be confirmed as the Pacto Ibérico."
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Sign it !"
 		ai_chance = 50	
@@ -285,24 +402,23 @@ event = {
 		command = { type = non_aggression which = SPA where = POR }
 		command = { type = guarantee which = SPA where = POR }
 		command = { type = relation which = SPA value = 100 }
-		command = { type = relation which = ITA value = 20 }
-		command = { type = relation which = GER value = 20 }
+		command = { type = relation which = ITA value = 50 }
+		command = { type = relation which = GER value = 50 }
 		command = { type = relation which = ENG value = -100 }
-		command = { type = relation which = USA value = -20 }
-		command = { type = relation which = FRA value = -20 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = FRA value = -50 }
+		command = { type = domestic which = interventionism value = -1 }		
 	}
 	action = {
 		name = "No, not now"
 		ai_chance = 50	
 		command = { type = dissent value = 1 }
-
 		command = { type = relation which = SPA value = -50 }
 		command = { type = relation which = ITA value = -20 }
 		command = { type = relation which = GER value = -20 }
-		command = { type = relation which = ENG value = 20 }
-		command = { type = relation which = USA value = 10 }
-		command = { type = relation which = FRA value = 10 }
-		
+		command = { type = relation which = ENG value = 50 }
+		command = { type = relation which = USA value = 20 }
+		command = { type = relation which = FRA value = 20 }		
 		command = { type = domestic which = interventionism value = -1 }
 
 	}
@@ -319,8 +435,8 @@ event = {
 	}
 	name = "56th birthday of Generalísimo"
 	desc = "Birthday of the Generalísimo, he turn to 56"
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 4 month = december year = 1948 }
 	action = {
 		name = "Great parade in Madrid"
@@ -346,8 +462,8 @@ event = {
 	}
 	name = "57th birthday of Generalísimo"
 	desc = "Birthday of the Generalísimo, he turn to 57"
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 4 month = december year = 1949 }
 	action = {
 		name = "Great parade in Madrid"
@@ -373,8 +489,8 @@ event = {
 	}
 	name = "58th birthday of Generalísimo"
 	desc = "Birthday of the Generalísimo, he turn to 58"
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 4 month = december year = 1950}
 	action = {
 		name = "Great parade in Madrid"
@@ -400,8 +516,8 @@ event = {
 	}
 	name = "59th birthday of Generalísimo"
 	desc = "Birthday of the Generalísimo, he turn to 59"
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 4 month = december year = 1951 }
 	action = {
 		name = "Great parade in Madrid"
@@ -427,8 +543,8 @@ event = {
 	}
 	name = "60th birthday of Generalísimo"
 	desc = "Birthday of the Generalísimo, he turn to 59"
-	style = 0
-	picture = "SPA_fascist"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 4 month = december year = 1952 }
 	action = {
 		name = "Great parade in Madrid"
@@ -448,8 +564,8 @@ event = {
 	}
 	name = "The Republican Government in exile"
 	desc = "The Republican Government in exile met in Mexico City and from there named Ferando of los Rios as Minister State of the exiled Republican government."
-	style = 0
-	picture = "gobierno"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 12 month = september year = 1948 }
 	action = {
 		name = "You don't have no power"
@@ -467,8 +583,8 @@ event = {
 	}
 	name = "Suppression Act"
 	desc = "The regime with military courts formed in urgency, begins a period of fierce repression. Between 23,500 and 29,000 Spaniards were shot and 300,000 others were imprisoned. Many suffered the death penalty, although WIELS profited from remissions successive his 1963. One of the instruments of this policy is based on this law."
-	style = 0
-	picture = "law"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 1 month = march year = 1950 }
 	action = {
 		name = "Sign it !"
@@ -479,7 +595,7 @@ event = {
 	action = {
 		ai_chance = 30	
 		name = "No, we're magnanimous"
-		command = { type = dissent value = 3 } # les opposants sont saufs
+		command = { type = dissent value = 3 } 
 	}
 }
 
@@ -494,8 +610,8 @@ event = {
 	}
 	name = "National shipbuilding company - Bazán"
 	desc = "National shipbuilding company Bazan starts to work. In addition, the TALGO starts rolling on an experimental basis."
-	style = 0
-	picture = "factory"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 11 month = may year = 1952 }
 	action = {
 		name = "Hurrah !"
@@ -514,20 +630,22 @@ event = {
 	}
 	name = "Security of the State Act"
 	desc = "Inspired by the military justice, and characteristic of the States at war. With it appear new offences and sentences become hardened. Association, illegal propaganda, trade union activities, the hand-army are regarded as serious offences."
-	style = 0
-	picture = "law"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 29 month = march year = 1951 }
 	action = {
 		name = "Approve the law"
 		ai_chance = 50
-		command = { type = dissent value = 5 }
-		command = { type = construct which = ic where = -4 value = 2 }	
+		command = { type = dissent value = 3 }
+		command = { type = manpowerpool value = -10 }	
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = money value = 250 }	
 	}
 	action = {
-		name = "No more repression"
+		name = "No, we don't need more repression"
 		ai_chance = 50
-		command = { type = dissent value = -5 }
-		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = freedom value = 1 }
 	}
 }
 
@@ -542,11 +660,12 @@ event = {
 	}
 	name = "National health insurance"
 	desc = "It creates compulsory health insurance. From this moment, all workers are entitled to health assistance. Appear at the same time girls topolino, with high heels, soles Cork, really short skirt, topped with Audacity. The Church and the mama are outraged"
-	style = 0
+	style = 1
 	date = { day = 15 month = december year = 1952 }
 	action = {
 		name = "Ok"
 		command = { type = dissent value = -1 }
+		command = { type = money value = -50 }	
 	}
 }
 
@@ -559,11 +678,12 @@ event = {
 	}
 	name = "Starvation"
 	desc = "There was no sugar, meat was a dream, the Maroons substituted bread. In confectionery it were candy with almonds. Tobacco was strip for men and forbidden to women. CEST a total shortage causing famine in the country."
-	style = 0
+	style = 1
 	date = { day = 1 month = january year = 1953 }
 	action_a = {
 		name = "Damn!"
 		command = { type = dissent value = 3 }
+		command = { type = manpowerpool value = -10 }	
 	}
 }
 
@@ -578,8 +698,8 @@ event = {
 	}
 	name = "Cinema and Football"
 	desc = "Pepin Fernadez, emigrating from Cuba for many years, founded in Madrid the Galearias Preciados, the most exclusive shops of time. At the same time, since April 23, we double version Spanish all home movies is now forbidden to broadcast the film in VO. This allows censorship dedulcorer dialogues. A ray of joy however: LAtletic de Bilbao won"
-	style = 0
-	picture = "failed_objective"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 3 month = april year = 1953 }
 	action = {
 		name = "Monitor the situation"
@@ -598,12 +718,12 @@ event = {
 	}
 	name = "Navy academy"
 	desc = "It inaugurates sailor a future naval officers training centre."
-	style = 0
-	picture = "naval_reinforcements"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 15 month = august year = 1952 }
 	action = {
 		name = "Hurrah!"
-		command = { type = money value = -300 }
+		command = { type = money value = -100 }
 		command = { type = gain_tech which = 3040 }
 		command = { type = gain_tech which = 3430 }
 	}
@@ -620,12 +740,12 @@ event = {
 	}
 	name = "National foreign agency"
 	desc = "A new spy agency"
-	style = 0
-	picture = "failed_objective"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 15 month = august year = 1953 }
 	action_a = {
 		name = "Yes"
-		command = { type = money value = -300 }
+		command = { type = money value = -100 }
 		command = { type = steal_tech which = FRA }
 		command = { type = steal_tech which = POR }
 		command = { type = steal_tech which = MEX }
@@ -643,14 +763,14 @@ event = {
 	}
 	name = "National Tobacco Company"
 	desc = "Tabacalera S.A. assumes a monopoly on the production and distribution of tobacco and inaugurates exclusive concessions on rights policy."
-	style = 0
-	picture = "private_sector"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 3 month = february year = 1950 }
 	action_a = {
 		name = "Ok"
 		command = { type = supplies value = 1500 }
 		command = { type = dissent value = -1 }
-		command = { type = money value = 350 } # Taxes juteuses dans le pays de Carmen
+		command = { type = money value = 350 } 
 	}
 }
 
@@ -665,7 +785,7 @@ event = {
 	}
 	name = "Change of greet"
 	desc = "End of obligation to the Spanish to greet with your arm raised up. It was somewhat messy in a Europe that had decraser the black plague..."
-	style = 0
+	style = 1
 	date = { day = 11 month = september year = 1955 }
 	action = {
 		name = "Ok"
@@ -685,13 +805,13 @@ event = {
 	}
 	name = "Help from Argentina"
 	desc = "The Spain is isolated internationally. Ambassadors withdrew from Madrid. The French border is closed, only lArgentine aida Fawzi in sending meat, wheat, corn..."
-	style = 0
-	picture = "argentina"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 1 month = january year = 1948 }
 	offset = 20
 	deathdate = { day = 1 month = december year = 1953 }
 	action = {
-		name = "Accepter"
+		name = "Gracias!"
 		command = { type = supplies value = 1000 }
 		command = { type = oilpool value = 1000 }
 		command = { type = dissent value = 5 }
@@ -710,8 +830,8 @@ event = {
 	}
 	name = "The new Real Madrid Stadium"
 	desc = "The Real Madrid opened his Nuevo Chamartín Stadium. Quimporte of starvation both quon can see them running behind the ball"
-	style = 0
-	picture = "argentina"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 8 month = june year = 1949 }
 	action = {
 		name = "Hurrah!"
@@ -729,13 +849,13 @@ event = {
 	}
 	name = "Purchase of Panzers"
 	desc = "The low acquisitions during the conflict résumèrent to a battalion of German PzKpfw IV tanks for the creation of the 1st Armored Division, which sintegrera in the dinfanterie Regiment shielded Alcázar de Toledo No. 61."
-	style = 0
-	picture = "panzer_reserves"
+	style = 1
+	picture = "spanish_warposter"
 	date = { day = 1 month = january year = 1950 }
 	offset = 23
 	deathdate = { day = 1 month = december year = 1951 }
 	action = {
-		name = "Acheter les chars"
+		name = "Buy the Panzers"
 		command = { type = add_division which = "1. Alcàzar de Tolédo" value = armor when = 0 }
 		command = { type = add_division which = "2. Alcàzar de Tolédo" value = armor when = 0 }
 		command = { type = add_division which = "3. Alcazar de Toledo" value = light_armor when = 0 }
@@ -753,8 +873,8 @@ event = {
 	country = GER
 	name = "Sale of Panzers"
 	desc = "Nationalist Spain comes from place us an order for two divisions of panzers to our darmements businesses. Suddenly, they have delivered their orders and have reaped good profits."
-	style = 0
-	picture = "panzer_reserves"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Das gut"
 		command = { type = money value = 500 }
@@ -772,8 +892,8 @@ event = {
 	date = { day = 1 month = february year = 1949 }
 	name = "National railway company - RENFE"
 	desc = "Franco has created the first national railway company which consolidates all shod the country's private companies under the control of the State. This is the Foundation of the Red Nacional de Ferrocariles. The reconstruction of railway roads destroyed by the war will be greatly facilitated."
-	style = 0
-	picture = "industry_sabotaged"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Great!"
 		command = { type = money value = 200 }
@@ -793,8 +913,8 @@ event = {
 	date = { day = 15 month = february year = 1950 }
 	name = "Madrid bombing"
 	desc = "A bomb attack has just exploded in the centre of Madrid, spraying a local of the Phalanx. This reminder to Franco Republican supporters have not disarmed yet."
-	style = 0
-	picture = "comander_assasinated"
+	style = 1
+	picture = "spanish_warposter"
 	action = {
 		name = "Damn!"
 		command = { type = dissent value = 1 }
