@@ -118,8 +118,8 @@ inventions = { 3000027 }
      free_market       = 6 
      freedom           = 6
      professional_army = 7
-     defense_lobby     = 8
-     interventionism   = 8
+     defense_lobby     = 6
+     interventionism   = 4
     } 
 
 	   # Korean Army
