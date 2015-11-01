@@ -20,7 +20,7 @@
 # 810002 SOV Foreign Policy concerning China (if Beria in power)
 # 810003 SOV Joint Soviet-Mongolian Front
 # 810004 MON Soviet-Mongolian Front proposal
-# 810005 SOV Operation Amur Twilight
+# 810005 SOV Operation Mongolian Twilight
 # 810006 SOV Chinese Communist Party joins offensive
 # 810007 SOV Set up the PRC
 # 810008 CHC Creation of the PRC
@@ -488,7 +488,7 @@ event = {
 	}
 	}
 	
-# Operation Amur Twilight
+# Operation Mongolian Twilight
 #########################
 
 event = {
