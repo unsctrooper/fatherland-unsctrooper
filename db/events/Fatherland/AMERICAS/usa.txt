@@ -47,7 +47,6 @@
 ### UN Liberty Shield: Europe
 ### UN Liberty Shield: Far East Asia
 ### UN Liberty Shield: Siberia and West Asia
-### UN Liberty Shield: South America
 ###
 ### Douglas McArthur's Siberian-Asian Front Strategy
 ### The Question of the Russias
@@ -1517,9 +1516,9 @@ date = { day = 3 month = november year = 1964 }
 	}
 }
 
-############################################
-### Semi-Centennial Strategic Convention ###
-############################################
+###############################################
+### Washington Strategic Convention of 1949 ###
+###############################################
 
 event = {
 id = 999541
@@ -1814,18 +1813,9 @@ trigger = {
 exists = SOV 
 NOT = { alliance = { country = SOV country = USA } }
 }
-ai_chance = 20
+ai_chance = 50
 name = "Attempt to ally the Soviet Union."
 command = { type = trigger which = 999550 }
-}
-
-action = {
-trigger = { exists = U59
-NOT = { alliance = { country = U59 country = USA } }
-}
-ai_chance = 10
-name = "Attempt to ally the Siberian Democratic Republic."
-command = { type = trigger which = 999551 }
 }
 
 action = {
@@ -1833,12 +1823,21 @@ trigger = { exists = SIB
 NOT = { alliance = { country = SIB country = USA } }
 }
 ai_chance = 20
+name = "Attempt to ally the Siberian Democratic Republic."
+command = { type = trigger which = 999551 }
+}
+
+action = {
+trigger = { exists = U59
+NOT = { alliance = { country = U59 country = USA } }
+}
+ai_chance = 10
 name = "Attempt to ally the Empire of Russia."
 command = { type = trigger which = 999552 }
 }
 
 action = {
-ai_chance = 50
+ai_chance = 20
 name = "Attempt to ally all Russian breakaway states."
 command = { type = trigger which = 999550 }
 command = { type = trigger which = 999551 }
@@ -1871,6 +1870,7 @@ command = { type = access which = USA }
 command = { type = access which = ALS }
 command = { type = relation which = USA value = 30 }
 command = { type = relation which = ALS value = 30 }
+command ={ type = 	guarantee which = USA where = SOV }
 }
 
 action = {
@@ -1931,3 +1931,43 @@ name = "Refuse."
 command = { }
 }
 }
+
+### Results of the UN Liberty Shield initiative
+
+event = {
+id = 999553
+random = no
+country = USA
+
+trigger = {
+event = 999549 # UN Liberty Shield: Siberia and West Asia
+OR = {
+alliance = { country = USA country = SOV } 
+alliance = { country = USA country = U59 } 
+alliance = { country = USA country = SIB } 
+alliance = { country = USA country = CHI } 
+alliance = { country = USA country = CHC } 
+alliance = { country = USA country = TUR } 
+}
+}
+
+name = "EVT_999553_NAME"
+desc = "EVT_999553_DESC"
+style = 1
+picture = "fatherland\un_troops"
+date = { day = 1 month = january year = 1948 } 
+offset = 3
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "We have strengthened the free world and won valuable allies."
+command = { type = domestic which = interventionism value = 1 }
+command = { type = dissent value = -5 }
+command = { type = relation which = ALS value = 20 }
+}
+}
+
+#################################################
+### MacArthur's Siberian-Asian Front Strategy ###
+#################################################
+
