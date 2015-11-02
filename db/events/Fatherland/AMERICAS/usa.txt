@@ -41,12 +41,13 @@
 ### US Presidential Election of 1960 (John F. Kenndy vs. Richard Nixon)
 ### US Presidential Election of 1964 (John F. Kenndy vs. Richard Nixon)
 ###
-### Washington Strategic Convention of 1949
+### Washington Strategic Convention of 1950
 ###
 ### Matthew Ridgway's UN Liberty Shield
 ### UN Liberty Shield: Europe
 ### UN Liberty Shield: Far East Asia
 ### UN Liberty Shield: Siberia and West Asia
+### UN Liberty Shield deployed
 ###
 ### Douglas McArthur's Siberian-Asian Front Strategy
 ### The Question of the Russias
@@ -1568,29 +1569,22 @@ style = 1
 picture = "fatherland\strategic_convention"
 
 action = {
-ai_chance = 40
+ai_chance = 50
 name = "Ridgway's UN Liberty Shield Strategy"
 command = { type = trigger which = 999543 } # Ridgway's UN Liberty Shield Strategy
 command = { type = setflag which = un_liberty_shield }
 }
 
 action = {
-ai_chance = 25
-name = "MacArthur's Siberian-Asian Front Strategy"
-command = { } # MacArthur's Siberian-Asian Front Strategy
-command = { type = trigger which = 999554 }
-command = { type = setflag which = us_siberian_front }
-}
-
-action = {
-ai_chance = 20
+ai_chance = 30
 name = "Spaatz's Mediterranean-Middle East Strategy"
 command = { } # Spaatz's Central Front (Mediterranean-Middle East) Strategy
+command = { type = trigger which = 999554 }
 command = { type = setflag which = us_central_front }
 }
 
 action = {
-ai_chance = 5
+ai_chance = 20
 name = "Eisenhower's France-First Strategy"
 command = { } # Eisenhower's France-First Strategy
 command = { type = setflag which = us_france_first }
@@ -1974,3 +1968,248 @@ command = { type = relation which = ALS value = 20 }
 ### Carl Spaatz's Central Front Strategy (Mediterranean and Middle East) ###
 ############################################################################
 
+### Mobilzing the Mediterranean
+
+event = {
+id = 999554
+random = no
+country = USA
+
+name = "EVT_999554_NAME"
+desc = "EVT_999554_DESC"
+style = 1
+picture = "mittelmeerdivision2"
+
+action = {
+ai_chance = 90
+name = "Acquire Tobruk in the Mediterranean."
+command = { trigger = { owned = { province = 765 data = ENG } } type = trigger which = 999555 } # Acquire from UK
+command = { trigger = { owned = { province = 765 data = LBY } } type = trigger which = 999556 } # Acquire from Libya
+command = { type = money value = -100 }
+command = { trigger = { ai = no } type = trigger which = 999557 } # Control the Free French Army
+}
+
+action = {
+ai_chance = 10
+name = "Ignore the Mediterranean."
+command = { }
+}
+}
+
+### Leasing Tobruk to the USA - ENG
+
+event = {
+id = 999555
+random = no
+country = ENG
+
+name = "EVT_999555_NAME"
+desc = "EVT_999555_DESC"
+style = 1
+picture = "mittelmeerdivision2"
+
+action = {
+ai_chance = 80
+name = "Grant them Tobruk."
+command = { type = secedeprovince which = USA value = 765 }
+command = { type = relation which = USA value = 10 }
+command = { type = money value = 100 }
+}
+
+action = {
+ai_chance = 20
+name = "Refuse."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### Leasing Tobruk to the USA - LBY
+
+event = {
+id = 999556
+random = no
+country = LBY
+
+name = "EVT_999555_NAME"
+desc = "EVT_999555_DESC"
+style = 1
+picture = "mittelmeerdivision2"
+
+action = {
+ai_chance = 80
+name = "Grant them Tobruk."
+command = { type = secedeprovince which = USA value = 765 }
+command = { type = relation which = USA value = 10 }
+command = { type = money value = 100 }
+}
+
+action = {
+ai_chance = 20
+name = "Refuse."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### US control of the Free French Army proposed
+
+event = {
+id = 999557
+random = no
+country = U01
+
+name = "EVT_999557_NAME"
+desc = "EVT_999557_DESC"
+style = 1
+picture = "mittelmeerdivision2"
+
+action = {
+ai_chance = 40
+name = "Grant them military control."
+command = { type = military_control which = USA where = U01 value = 1 }
+command = { type = relation which = USA value = 10 }
+}
+}
+
+action = {
+ai_chance = 60
+name = "Refuse."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### Mobilizing the Middle East
+
+event = {
+id = 999558
+random = no
+country = USA
+
+trigger = {
+event = 999554 # Mobilizing the Mediterranean
+}
+
+name = "EVT_999558_NAME"
+desc = "EVT_999558_DESC"
+style = 1
+picture = "iraq"
+date = { day = 1 month = january year = 1948 } 
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+ai_chance = 90
+name = "Request military access in Syria and Iraq."
+command = { trigger = { exists = SYR } type = trigger which = 999559 } # Acquire from UK
+command = { trigger = { exists = IRQ } type = trigger which = 999560 }
+}
+
+action = {
+ai_chance = 10
+name = "Ignore the Middle East."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### USA requests military access - SYR
+
+event = {
+id = 999559
+random = no
+country = SYR
+
+name = "EVT_999559_NAME"
+desc = "EVT_999559_DESC"
+style = 1
+picture = "iraq"
+
+action = {
+ai_chance = 80
+name = "Grant them military access."
+command = { type =	alliance which = USA }
+command = { type = relation which = USA value = 10 }
+}
+}
+
+action = {
+ai_chance = 20
+name = "Refuse."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### USA requests military access - IRQ
+
+event = {
+id = 999560
+random = no
+country = IRQ
+
+name = "EVT_999559_NAME"
+desc = "EVT_999559_DESC"
+style = 1
+picture = "iraq"
+
+action = {
+ai_chance = 60
+name = "Grant them military access."
+command = { type =	alliance which = USA }
+command = { type = relation which = USA value = 10 }
+}
+}
+
+action = {
+ai_chance = 40
+name = "Refuse."
+command = { type = relation which = USA value = -10 }
+}
+}
+
+### Middle Eastern nations refuse UN alliance
+
+event = {
+id = 999561
+random = no
+country = USA
+
+trigger = {
+999558 # Mobilzing the Middle East
+OR = {
+NOT = {
+alliance = { country = USA country = SYR }
+alliance = { country = USA country = IRQ }
+}
+}
+}
+
+name = "EVT_999561_NAME"
+desc = "EVT_999561_DESC"
+style = 1
+picture = "iraq"
+date = { day = 1 month = january year = 1948 } 
+offset = 3
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = {
+NOT = { alliance = { country = USA country = SYR } }
+}
+name = "Force them in - declare war."
+command = { type = 	war which = SYR }
+command = { type = dissent value = 5 }
+}
+
+action = {
+trigger = {
+NOT = { alliance = { country = USA country = IRQ } }
+}
+name = "Force them in - declare war."
+command = { type = 	war which = IRQ }
+command = { type = dissent value = 5 }
+}
+
+action = {
+ai_chance = 20
+name = "Ignore the Middle East."
+command = { }
+}
+}
