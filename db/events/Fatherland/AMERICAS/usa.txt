@@ -2075,7 +2075,7 @@ event = 999554 # Mobilizing the Mediterranean
 name = "EVT_999558_NAME"
 desc = "EVT_999558_DESC"
 style = 1
-picture = "iraq"
+picture = "nwo/iraq"
 date = { day = 1 month = january year = 1948 } 
 offset = 1
 deathdate = { day = 29 month = december year = 2020 }
@@ -2104,7 +2104,7 @@ country = SYR
 name = "EVT_999559_NAME"
 desc = "EVT_999559_DESC"
 style = 1
-picture = "iraq"
+picture = "nwo/iraq"
 
 action = {
 ai_chance = 80
@@ -2130,7 +2130,7 @@ country = IRQ
 name = "EVT_999559_NAME"
 desc = "EVT_999559_DESC"
 style = 1
-picture = "iraq"
+picture = "nwo/iraq"
 
 action = {
 ai_chance = 60
@@ -2154,7 +2154,7 @@ random = no
 country = USA
 
 trigger = {
-999558 # Mobilzing the Middle East
+event = 999558 # Mobilzing the Middle East
 OR = {
 NOT = {
 alliance = { country = USA country = SYR }
@@ -2166,7 +2166,7 @@ alliance = { country = USA country = IRQ }
 name = "EVT_999561_NAME"
 desc = "EVT_999561_DESC"
 style = 1
-picture = "iraq"
+picture = "nwo/iraq"
 date = { day = 1 month = january year = 1948 } 
 offset = 3
 deathdate = { day = 29 month = december year = 2020 }
