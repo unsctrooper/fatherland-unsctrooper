@@ -127,9 +127,9 @@
 inventions = { 3000027 }
    policy = 
    {  date              = {  year = 0 month = january day = 0  } 
-     democratic        = 2
-     political_left    = 3
-     free_market       = 3
+     democratic        = 3 
+     political_left    = 9 
+     free_market       = 1 
      freedom           = 3
      professional_army = 6 
      defense_lobby     = 5 
