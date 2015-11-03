@@ -48,17 +48,9 @@
 ### UN Liberty Shield: Far East Asia
 ### UN Liberty Shield: Siberia and West Asia
 ### UN Liberty Shield deployed
-###
-### Douglas McArthur's Siberian-Asian Front Strategy
-### The Question of the Russias
-### The Question of China -> The Question of Japan (if China is in Axis)
 ### 
 ### Carl Spaatz's Central Front Strategy (Mediterranean and Middle East)
 ### Mobilizing the Mediterranean
-### Mobilizing the Middle East
-###
-### Eisenhower's European Division-France Plan (if French State and Spain not in Axis)
-### Charles De Gaulle prepares pro-Allied coup in mainland France followed by Allied invasion
 
 
 event = {
@@ -1582,13 +1574,6 @@ command = { } # Spaatz's Central Front (Mediterranean-Middle East) Strategy
 command = { type = trigger which = 999554 }
 command = { type = setflag which = us_central_front }
 }
-
-action = {
-ai_chance = 20
-name = "Eisenhower's France-First Strategy"
-command = { } # Eisenhower's France-First Strategy
-command = { type = setflag which = us_france_first }
-}
 }
 
 ### UN Liberty Shield Strategy: Turkey
@@ -2068,7 +2053,6 @@ name = "Grant them military control."
 command = { type = military_control which = USA where = U01 value = 1 }
 command = { type = relation which = USA value = 10 }
 }
-}
 
 action = {
 ai_chance = 60
@@ -2128,7 +2112,6 @@ name = "Grant them military access."
 command = { type =	alliance which = USA }
 command = { type = relation which = USA value = 10 }
 }
-}
 
 action = {
 ai_chance = 20
@@ -2154,7 +2137,6 @@ ai_chance = 60
 name = "Grant them military access."
 command = { type =	alliance which = USA }
 command = { type = relation which = USA value = 10 }
-}
 }
 
 action = {
@@ -2213,3 +2195,4 @@ name = "Ignore the Middle East."
 command = { }
 }
 }
+
