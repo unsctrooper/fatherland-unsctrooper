@@ -86,6 +86,7 @@ event = "db\events\fatherland\china\china.txt"
 event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
 event = "db\events\fatherland\axis_europe\Moscow.txt"
 event = "db\events\fatherland\axis_europe\Intervention.txt"
+event = "db\events\fatherland\axis_europe\German-Soviet border war.txt"
 
 #COMINTERN
 #event = "db\events\fatherland\comintern\comintern_conference.txt"
