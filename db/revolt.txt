@@ -3204,7 +3204,7 @@ country = { ENG } #only UK can release it
 
 U62 = { # Goralenland
 date = { day = 0 month = january year = 1914 } 
-expirydate = { day = 29 month = december year = 1964 } 
+expirydate = { day = 29 month = december year = 2000 } 
 minimum = { 236 
 } 
 extra = { } 
@@ -3214,7 +3214,7 @@ country = { GER } #only Ger can release it
 } 
 U54 = { # Galicia
 date = { day = 0 month = january year = 1914 } 
-expirydate = { day = 29 month = december year = 1964 } 
+expirydate = { day = 29 month = december year = 2000 } 
 minimum = { 239 242 241 240 238 
 } 
 extra = { 300 301 } 
@@ -3224,8 +3224,40 @@ country = { GER } #only Ger can release it
 } 
 U57 = { # Far Eastern Republic
 date = { day = 0 month = january year = 1933 } 
-expirydate = { day = 29 month = december year = 1999 } 
+expirydate = { day = 29 month = december year = 2000 } 
 minimum = { 1185 1191 1192 1193 1195 1196 } 
 extra = { 1161 1162 1167 1168 1169 1170 1171 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1186 1187 1188 1189 1190 1194 1541 1542 } 
 capital = 1191 
+} 
+
+### Asian Reichskommissariats
+
+U56 = { # Reichskommissariat Ural
+date = { day = 0 month = january year = 1948 } 
+expirydate = { day = 29 month = december year = 2000 } 
+minimum = { 1132 1131 1133 } 
+extra = { 687 1126 1127 1151 1128 1130 1129 1153 } 
+capital = 1132
+country = { GER }
+intrinsic_gov_type = nazi
+} 
+
+U63 = { # Reichskommissariat Westsibirien
+date = { day = 0 month = january year = 1948 } 
+expirydate = { day = 29 month = december year = 2000 } 
+minimum = { 1142 1143 1144 } 
+extra = { 1152 1154 1148 1149 1150 1135 1136 1137 1138 1139 1140 1141 1145 1146 1147 1156 1157 1158 1155 1165 1166 1069 1119 1164 1070 1162 1161 1163 1168 1169 } 
+capital = 1142 # Novosibirsk
+country = { GER }
+intrinsic_gov_type = nazi
+} 
+
+U64 = { # Reichskommissariat Ostsibirien
+date = { day = 0 month = january year = 1948 } 
+expirydate = { day = 29 month = december year = 2000 } 
+minimum = { 1170 1176 } 
+extra = { 1177 1179 1178 1180 1182 1181 1183 1184 1186 1171 1189 1174 1187 1188 1175 } 
+capital = 1176 # Blagoveschensk
+country = { GER }
+intrinsic_gov_type = nazi
 } 
