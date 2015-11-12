@@ -1,4 +1,25 @@
 
+event = {
+	id = 8005000
+	random = no
+	country = ENG
+
+	name = "The Second World War"
+	desc = "Desc: TODO"
+	style = 1
+	picture = "English_declaration_war"
+
+	date = { day = 15 month = january year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "A tragical outcome"
+		command = { type = dissent value = 1 }
+	}
+}
+
 ## Elections from NWO2
 
 event = {

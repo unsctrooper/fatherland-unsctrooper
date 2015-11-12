@@ -108,6 +108,7 @@ event = "db\events\fatherland\crisis\sino_indian_war.txt"
 event = "db\events\fatherland\crisis\morocco_crisis.txt"
 event = "db\events\fatherland\crisis\WWIII.txt"
 event = "db\events\fatherland\crisis\SuezKuwaitCrisis.txt"
+event = "db\events\fatherland\crisis\transylvania.txt"
 
 #EUROPE
 event = "db\events\fatherland\europe\cyprus.txt"
@@ -116,11 +117,11 @@ event = "db\events\fatherland\europe\italy.txt"
 event = "db\events\fatherland\europe\nationalist spain.txt"
 event = "db\events\fatherland\europe\serbia.txt"
 event = "db\events\fatherland\europe\sweden.txt"
-event = "db\events\fatherland\europe\transylvania.txt"
 event = "db\events\fatherland\europe\turkey.txt"
 event = "db\events\fatherland\europe\unitedkingdom.txt"
 event = "db\events\fatherland\europe\vichyfrance.txt"
 event = "db\events\fatherland\europe\belgium.txt"
+event = "db\events\fatherland\europe\finland.txt"
 
 #GERMANY
 event = "db\events\fatherland\ger\ost.txt"

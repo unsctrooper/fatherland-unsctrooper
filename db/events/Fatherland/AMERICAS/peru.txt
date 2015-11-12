@@ -93,7 +93,7 @@ event = {
 	picture = "nwo\manuel_odria"
 	style = 1
 
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 0 month = january year = 1949 }
 	offset = 360
 	deathdate = { day = 30 month = december year = 1949 }
 

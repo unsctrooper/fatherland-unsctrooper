@@ -149,7 +149,7 @@ name = "EVT_999500_NAME"
 desc = "EVT_999500_DESC"
 style = 2
 picture = "0turkestan0"
-date = { day = 1 month = january year = 1948 } 
+date = { day = 1 month = february year = 1948 } 
 offset = 7
 deathdate = { day = 29 month = december year = 1990 }
 
@@ -265,7 +265,7 @@ name = "EVT_999504_NAME"
 desc = "EVT_999504_DESC"
 style = 1
 picture = "fatherland\un_troops"
-date = { day = 1 month = january year = 1948 } 
+date = { day = 1 month = february year = 1948 } 
 offset = 5
 deathdate = { day = 29 month = december year = 1990 }
 
@@ -297,7 +297,7 @@ name = "EVT_999505_NAME"
 desc = "EVT_999505_DESC"
 style = 1
 picture = "fatherland\un_troops"
-date = { day = 1 month = january year = 1948 } 
+date = { day = 1 month = february year = 1948 } 
 offset = 3
 deathdate = { day = 29 month = december year = 1990 }
 
@@ -393,7 +393,7 @@ name = "EVT_999508_NAME"
 desc = "EVT_999508_DESC"
 style = 1
 picture = "fatherland\sovietarmy_color"
-date = { day = 1 month = january year = 1948 } 
+date = { day = 1 month = february year = 1948 } 
 offset = 3
 deathdate = { day = 29 month = december year = 1990 }
 
@@ -420,7 +420,7 @@ name = "EVT_999509_NAME"
 desc = "EVT_999509_DESC"
 style = 1
 picture = "fatherland\sovietarmy_color"
-date = { day = 1 month = january year = 1948 } 
+date = { day = 1 month = february year = 1948 } 
 offset = 3
 deathdate = { day = 29 month = december year = 1990 }
 
@@ -452,7 +452,7 @@ name = "EVT_999510_NAME"
 desc = "EVT_999510_DESC"
 style = 1
 picture = "fatherland\coldwar1"
-date = { day = 1 month = january year = 1948 } 
+date = { day = 10 month = january year = 1948 } 
 offset = 5
 deathdate = { day = 29 month = december year = 1990 }
 

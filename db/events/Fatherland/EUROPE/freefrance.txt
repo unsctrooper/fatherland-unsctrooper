@@ -1,8 +1,9 @@
 ########################################
 # Free France (U01)
 ########################################
+# 307 # U01 # The Second World War
 # 308 # U01 # De Gaulle's Appeal
-# 309 # U01 # Move the Capital - Fatherland
+# 309 # U01 # Move the Capital - Fatherland - TODO
 # 310 # U01 # The Home of the French Nation
 # 311 # U01 # A Tunisian Province?
 # 317 # U01 # The Morocco Protectorate
@@ -13,123 +14,147 @@
 # 322 # U01 # Morocco is winning
 # 323 # U01 # Moroccan rebellion crushed
 # 324 # MOR # A New Marocco (Peaceful independance)
+# 325 # MOR # A New Marocco (Warmonger independence)
 # 326 # U01 # Cheikh Raymond the Musician
-# 327 # U01 # Congress of the Algerian Communist Party
+# 327 # U01 # Congress of the Algerian Communist Party (PCA)
 # 328 # U01 # Strike supported by the PCA
 # 329-331 # U01 # Free France's starting events (player only)
 ########################################
-event = {
-id = 308
-country = U01
-persistent = yes
-style = 2
-picture = "Appel_de_Gaulle"
 
-trigger = {
-	day = 18
-	month = 5
-	NOT = {
-		day = 19
-		}
-	NOT = {
-		month = 6
-		}
+# 307 # U01 # The Second World War
+event = {
+	id = 307
+	random = no
+	country = U01
+
+	name = "The Second World War"
+	desc = "Desc: TODO"
+	style = 1
+	picture = "fall_of_petain"
+
+	date = { day = 18 month = january year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "A tragical outcome"
+		command = { type = dissent value = 1 }
+	}
+}
+
+# 308 # U01 # De Gaulle's Appeal
+event = {
+	id = 308
+	country = U01
+	persistent = yes
+	style = 2
+	picture = "Appel_de_Gaulle"
+
+	trigger = {
+		day = 18
+		month = 5
+		NOT = {
+			day = 19
+			}
+		NOT = {
+			month = 6
+			}
 	}
 
-date = { day = 0 month = january year = 1936 }
-offset = 1
-deathdate = { day = 29 month = december year = 1963 }
+	date = { day = 0 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
 
-name = "308NAME"
-desc = "308DESC"
+	name = "308NAME"
+	desc = "308DESC"
 
-action_a = {
-name = "308A"
-command = { type = dissent value = -1 }
-command = { type = add_division value = militia }
-command = { type = manpowerpool value = 30 }
-}
-}
-
-event = {
-id = 310
-random = no
-country = U01
-style = 2
-picture = "news_paper"
-
-trigger = {
-	exists = FRA
-	NOT = { 
-	ispuppet = U01
-	atwar = U01
+	action = {
+		name = "308A"
+		command = { type = dissent value = -1 }
+		command = { type = add_division value = militia }
+		command = { type = manpowerpool value = 30 }
 	}
-	random = 70
 }
 
+# 310 # U01 # The Home of the French Nation
+event = {
+	id = 310
+	random = no
+	country = U01
+	style = 2
+	picture = "news_paper"
 
-	name = "The Home of the French Nation"
-	desc = "After the Fall of mainland France in 1940, the Free French governement finally regain a part of de jure metropolitan territories: the departements of Algeria. Howewer, the locals indigenous, if not hostiles, are not that happy by the Free French presence. Perhaps with a small improvement of their living conditions and the help of the pied-noir settlers we could integrate them in the National Community?"
+	trigger = {
+		exists = FRA
+		NOT = { 
+		ispuppet = U01
+		atwar = U01
+		}
+		random = 70
+	}
 
-	date = { day = 15 month = january year = 1948 }
-	offset = 25
-	deathdate = { day = 1 month = december year = 1960 }
+		name = "The Home of the French Nation"
+		desc = "After the Fall of mainland France in 1940, the Free French governement finally regain a part of de jure metropolitan territories: the departements of Algeria. Howewer, the locals indigenous, if not hostiles, are not that happy by the Free French presence. Perhaps with a small improvement of their living conditions and the help of the pied-noir settlers we could integrate them in the National Community?"
 
-	action_a = {
-		ai_chance = 65
-		name = "Integrate them at all costs, we are all Frenchs!"
-	        command = { type = set_domestic which = freedom value = 8  }
-                command = { type = addcore   which = 727  }
-                command = { type = addcore   which = 728  }
-                command = { type = addcore   which = 729  }
-                command = { type = addcore   which = 730  }
-                command = { type = addcore   which = 731  }
-                command = { type = addcore   which = 732  }
-                command = { type = addcore   which = 733  }
-                command = { type = addcore   which = 734  }
-                command = { type = addcore   which = 735  }
-                command = { type = addcore   which = 736  }
-                command = { type = addcore   which = 743  }
-				command = { type = wakeminister which = 820091 }
-				command = { type = wakeminister which = 820092 }
-				command = { type = wakeleader which = 820097 }
-				command = { type = setflag which = Assimilation1 }
-				command = { type = money value = -1000  }
+		date = { day = 15 month = september year = 1948 }
+		offset = 25
+		deathdate = { day = 1 month = december year = 1960 }
+
+		action = {
+			ai_chance = 65
+			name = "Integrate the Algerian at all costs, we are all Frenchs!"
+			command = { type = set_domestic which = freedom value = 8  }
+			command = { type = addcore   which = 727  }
+			command = { type = addcore   which = 728  }
+			command = { type = addcore   which = 729  }
+			command = { type = addcore   which = 730  }
+			command = { type = addcore   which = 731  }
+			command = { type = addcore   which = 732  }
+			command = { type = addcore   which = 733  }
+			command = { type = addcore   which = 734  }
+			command = { type = addcore   which = 735  }
+			command = { type = addcore   which = 736  }
+			command = { type = addcore   which = 743  }
+			command = { type = wakeminister which = 820091 }
+			command = { type = wakeminister which = 820092 }
+			command = { type = wakeleader which = 820097 }
+			command = { type = setflag which = Assimilation1 }
+			command = { type = money value = -1000  }
 		}
 
-	action_b = {
-
-		ai_chance = 35
-		name = "France is so close... I won't spend any money on Algeria."
-	        command = { type = dissent value = 1 }
+		action = {
+			ai_chance = 35
+			name = "France is so close... I won't spend any money on Algeria."
+				command = { type = dissent value = 1 }
 				command = { type = money value = 100  }
 		}
 }
 
+# 311 # U01 # A Tunisian Province?
 event = {
-id = 311
-random = no
-country = U01
-style = 2
-picture = "news_paper"
+	id = 311
+	random = no
+	country = U01
+	style = 2
+	picture = "news_paper"
 
-trigger = {
-exists = FRA
-event = 310
-flag = Assimilation1
-}
-
+	trigger = {
+		exists = FRA
+		event = 310
+		flag = Assimilation1
+	}
 
 	name = "A new Tunisian Province?"
 	desc = "The Beylicat of Tunis is less and less popular, thanks to a better treatment of the locals indigenous by the French authorities. With the influx of the refugees from Vichy 'France' established there and the support of the old 'pieds-noirs' community, we could very well abolish the protectorate and integrate Tunisia in de jure France. Howewer, it would mean give to the locals Arabs and ethnics frenchs equals rights, including voting right, to placate them."
 	
-	date = { day = 1 month = january year = 1951 }
+	date = { day = 1 month = september year = 1950 }
 	offset = 90
 	deathdate = { day = 1 month = december year = 1960 }
 
-	action_a = {
+	action = {
 		ai_chance = 65
-		name = "Integrate them at all costs, we are all Frenchs!"
+		name = "Integrate the Tunisian at all costs, we are all Frenchs!"
                 command = { type = addcore   which = 740  }
                 command = { type = addcore   which = 741  }
                 command = { type = addcore   which = 742  }
@@ -146,16 +171,18 @@ flag = Assimilation1
 				command = { type = setflag which = Assimilation1_1 }
 		}
 
-	action_b = {
+	action = {
 
 		ai_chance = 35
-		name = "Citizenship? Please, veto it quickly."
+			name = "France is so close... I won't spend any money on Tunisia."
 	        command = { type = dissent value = 1 }
 			command = { type = money value = 100  }
 			command = { type = clrflag which = Assimilation1 }
 			command = { type = setflag which = Assimilation1_2 }
 		}
 }
+
+# 317 # U01 # The Morocco Protectorate
 event = {
 	id = 317
 	random = no
@@ -188,7 +215,7 @@ event = {
 	offset = 20
 	deathdate = { day = 12 month = march year = 1966 }
 
-	action_a = {
+	action = {
 		name = "A most clever move!"
 		ai_chance = 60
 		command = { type = removeclaim which = 721 }
@@ -213,14 +240,14 @@ event = {
 		command = { type = relation which = ENG value = -5 } #UK see it as supporting similar demands from theirs africans colonies
 		command = { type = setflag which = Emancipation1 }
 	}
-	action_b = {
+	action = {
 		name = "Ridiculous. If Mohammed Ben Youssef try anything, we will act in force; we didn't need the help of a local notable."
 		ai_chance = 35
 		command = { type = relation which = ENG value = 25 } #same policy with UK
 		command = { type = relation which = USA value = -5 } #anti-colonialist stance of the USA
 		command = { type = setflag which = Oppression1 } 
 	}
-	action_c = {
+	action = {
 		name = "If they want their independance, they will have it!"
 		ai_chance = 5
 		command = { type = removeclaim which = 721 }
@@ -245,6 +272,8 @@ event = {
 		command = { type = relation which = ENG value = -15 }  #UK see it as supporting similar demands from theirs africans colonies
 	}
 }
+
+# 318 # MOR # A New Statut
 event = {
 	id = 318
 	random = no
@@ -274,6 +303,8 @@ event = {
 		command = { type = trigger which = 319 }
 		}
 }
+
+# 319 # GER # Mohammed V seeks asylum
 event = {
 	id = 319
 	random = no
@@ -299,6 +330,8 @@ event = {
 		command = { type = relation which = U01 value = 5 }
 	}	
 }
+
+# 320 # U01 # The Moroccan Uprising
 event = {
 	id = 320
 	random = no
@@ -326,6 +359,8 @@ event = {
 		command = { type = dissent value = 10 }
 		}
 }
+
+# 321 # MOR # Independance
 event = {
 	id = 321
 	random = no
@@ -374,6 +409,8 @@ event = {
 		command = { type = war which = U01 }
 	}
 }
+
+# 322 # U01 # Morocco is winning
 event = {
 	id = 322
 	random = no
@@ -424,6 +461,8 @@ event = {
 		command = { type = dissent value = 10 }
 	}
 }
+
+# 323 # U01 # Moroccan rebellion crushed
 event = {
 	id = 323
 	random = no
@@ -455,6 +494,8 @@ event = {
 		command = { type = construct which = ic where = 717 value = -5 }
 	}
 }
+
+# 324 # MOR # A New Marocco (Peaceful independance)
 event = {
 	id = 324
 	random = no
@@ -481,6 +522,8 @@ event = {
 		command = { type = add_division which = "1st Morocco Cavalry Division" value = cavalry when = 8 }
 		}
 }
+
+# 325 # MOR # A New Marocco (Warmonger independence)
 event = {
 	id = 325
 	random = no
@@ -501,9 +544,6 @@ event = {
 		}
 }
 
-
-########################################
-
 #########################################
 # Arts & Sciences
 #########################################
@@ -519,7 +559,7 @@ date = { day = 27 month = july year = 1962 }
 name = "Cheikh Raymond, the Concorde Musician"
 desc = "Today is Raymond Leyris' 50th birthday! Better known as Cheikh Raymond, he is a renowned Algerian Jewish musician, specialized in 'malouf' music and 'oud' (the lute), widely respected by both Jews and Muslims, who gave him his title of 'Cheikh' (elder). His father was a Jew from Batna who died during WW1, and his mother a French citizen , an example of the multicultural blending of French Algeria. He plays his repertoire throughout the country, including the famous song 'Malahbibi Malou'."
 
-action_a = {
+action = {
 name = "Great!"
 command = { type = dissent value = -1 }
 }
@@ -528,13 +568,14 @@ command = { type = dissent value = -1 }
 #########################################
 # Communist agitation
 #########################################
+# 327 # U01 # Congress of the Algerian Communist Party (PCA)
 event = {
 	id = 327
 	random = no
 	country = U01
 	style = 2
 
-	name = "Congress of the Algerian Communist Party"
+	name = "Congress of the Algerian Communist Party (PCA)"
 	desc = "The secretary general Larbi Bouhali opened the Congress of the Algerian Communist Party by stating that 'the future of Algeria will be decided primarily by the struggle of our people on our national soil'. Composed of a majority of Arabs and some Europeans, it is still a hotbed of seditious and anti-colonialist elements, even after Moscow supported a purge of the most nationalistic elements including the then secretary general Amar Ouzegane in support of our struggle against the Third Reich last year."
 	picture = "news_paper"
 
@@ -543,12 +584,13 @@ event = {
 	deathdate = { day = 29 month = march year = 1949 }
 
 
-action_a = {
+action = {
 name = "Well, I suppose it could be worse…"
 command = { type = dissent value = 5 }
 }
 }
 
+# 328 # U01 # Strike supported by the PCA
 event = {
 	id = 328
 	random = no
@@ -567,11 +609,11 @@ event = {
 	picture = "news_paper"
 
 	persistent = yes
-	date = { day = 1 month = january year = 1942 }
-	offset = 23
+	date = { day = 1 month = october year = 1949 }
+	offset = 100
 	deathdate = { day = 29 month = december year = 1970 }
 
-	action_a = {
+	action = {
 		name = "Placate them one way or another, stability is paramount!"
 		command = { type = dissent value = 1 }
 	}
@@ -581,6 +623,7 @@ event = {
 # The Constitutionnal Order of the Exiled France
 #########################################
 
+# 329-331 # U01 # Free France's starting events (player only)
 event = {
 	id = 329
 	random = no

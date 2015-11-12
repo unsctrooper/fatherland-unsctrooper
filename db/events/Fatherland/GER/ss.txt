@@ -1,56 +1,127 @@
 #####################################
-# SS
-# Review Pako
+# SS events
+# Made by Pako
 #####################################
 
 # General events
-# 90002001 - The SS State - U58
-# 90002002 - A State inside a State - GER
-# 
+# 90002001 - Reichsbezirk Gotenland - The SS State - U58 - 1948
+# 90002002 - Reichsbezirk Gotenland Government - U58 - 1948
+# 90002003 - Reichsbezirk Gotenland Economy - U58 - 1948 
+# 90002004 - Aid for Reichsbezirk Gotenland - GER - 1949 
+# 90002005 - Economic Aid from Fatherland - U58 - 1949
+# 90002006 - No Aid from Fatherland - U58 - 1949
+# 90002007 - Expansion in northern sector  - U58  - 1949 
+# 90002008 - Kherson and Melitopol - U41 - 1949
+# 90002009 - Waffen SS Parade in Theodoricshafen - U58 - 1949
+# 90002010 - Unlock Divisions Decision- U58 - TEST
 
 # Civil war events
 # 90002000 - Heydrich vs. Himmler - U58
 
 event = {
-		id = 90002001
-		country = U58	
-		picture = "SS"
-		
-		date = { day = 0 month = january year = 1948 }	
-		offset = 7 
-		deathdate = { day = 1 month = february year = 1948 }
-		
-		random = no
-		
-		name = "The SS State"
-		style = 0	
-		desc = "Description : TODO"
-		
-		action = {
-			ai_chance = 100
-			name = "Heil!"
-			command = { type = dissent value = -5 }
-		}
-	}
-	
-event = {
-		id = 90002002
-		date = { day = 0 month = january year = 1949 }	
-		offset = 7 
-		deathdate = { day = 0 month = february year = 1949 }
+	id = 90002001
+	random = no
+	country = U58
 
+	name = "Reichsbezirk Gotenland - The SS State"
+	desc = "Reichsbezirk Gotenland is a separate administrative region of the Third Reich, which comprises the Crimean peninsula (Generalbezirk Crimea) and land Perekop isthmus in the northern side until Dnjepriin (Teilbezirk Taurida). The area is under direct administration of the SS."
+	style = 1
+	picture = "galiciaSS"
+
+	date = { day = 15 month = january year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "A State inside a State"
+		command = { type = domestic which = interventionism value = 1 }
+	}
+}
+
+event = {
+	id = 90002002
+	random = no
+	country = U58
+
+	name = "Reichsbezirk Gotenland Government"
+	desc = "Reichsbezirk Gotenland Reichsbezirk Gotenland Government is the representetion of the SS gerarchy, with Himmler as head of state (Reichsbezirkfuhrer) and Heydrich in the role of the head of government of the Reichsbezirk. But all is not as it appears within the SS ..."
+	style = 1
+	picture = "galiciaSS"
+
+	date = { day = 1 month = february year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "A State inside a State"
+		command = { type = domestic which = freedom value = 1 }
+	}
+}
+event = {
+	id = 90002003
+	random = no
+	country = U58
+
+	name = "The Reichsbezirk Gotenland Economy"
+	desc = "Gotenlandin economy relies on the bustling tourism and a thriving agriculture that supports the stone base. In the north, there are also important industrial centers, such as Canköy, Perekop and Ermanarich. Gotenland exports of grain, fruit, vegetables, wine, meat products, limestone and iron. The most important wine-growing region are Krimgartenin, Yalta and Freudewaldin coastal regions. The main port is Theodoricshafen (ex. Sevastopol)."
+	style = 1
+	picture = "galiciaSS"
+
+	date = { day = 15 month = may year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 25
+		name = "Improve the industrial centers"
+		command = { type = money value = -500 }
+		command = { type = construct which = ic where = -4 value = 1 }		
+		command = { type = domestic which = free_market value = 1 }
+	}
+	action = {
+		ai_chance = 25
+		name = "Improve agricolture"
+		command = { type = money value = 50 }		
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = domestic which = free_market value = -1 }
+	}
+	action = {
+		ai_chance = 25
+		name = "Improve tourism"
+		command = { type = money value = 150 }		
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = domestic which = freedom value = 1 }
+	}
+	action = {
+		ai_chance = 25
+		name = "Improve the sea port of Theodoricshafen"
+		command = { type = money value = -300 }
+		command = { type = construct which = naval_base where = -4 value = 2 }
+		command = { type = construct which = land_fort where = -4 value = 2 }
+	}
+}
+
+event = {
+		id = 90002004
 		random = no
 		country = GER	
-		picture = "SS"
-
-		name = "A State inside a State"
-		style = 0	
-		desc = "Description : TODO"
 		
+		name = "Aid for Reichsbezirk Gotenland"
+		desc = "Himmler has request an economic aid for the Reichsbezirk Gotenland for complete a plain of investment in the region. What should we do?"
+		style = 1
+		picture = "galiciaSS"
+		
+		date = { day = 0 month = march year = 1949 }	
+		offset = 7 
+		deathdate = { day = 29 month = december year = 1990 }
+
 		action = {
 			ai_chance = 20
-			name = "No money"
+			name = "No Aid"
 			command = { type = relation which = U58 value = -100 }
+			command = { type = setflag which = ger_noaid_ss }
 		}	
 		
 		action = {
@@ -58,6 +129,8 @@ event = {
 			name = "One Millions of Reichsmark"
 			command = { type = money value = -100 }
 			command = { type = relation which = U58 value = -80 }
+			command = { type = setflag which = ger_aid_ss }
+			command = { type = setflag which = ger_aid_1 }
 		}
 		
 		action = {
@@ -65,6 +138,8 @@ event = {
 			name = "Two Millions of Reichsmark"
 			command = { type = money value = -200 }
 			command = { type = relation which = U58 value = -40 }
+			command = { type = setflag which = ger_aid_ss }
+			command = { type = setflag which = ger_aid_2 }
 		}
 		
 		action = {
@@ -72,43 +147,195 @@ event = {
 			name = "Three Millions of Reichsmark"
 			command = { type = money value = -300 }
 			command = { type = relation which = U58 value = -20 } 			
+			command = { type = setflag which = ger_aid_ss }
+			command = { type = setflag which = ger_aid_3 }			
 		}
 		
 		action = {
 			ai_chance = 20		
 			name = "Four Millions of Reichsmark"	
 			command = { type = money value = -400 }		
+			command = { type = setflag which = ger_aid_ss }
+	        command = { type = setflag which = ger_aid_4 }						
 		}		
 	
 	}
 
-event = {
-		id = 90002003
-		country = U58	
-		picture = "SS"
-		
-		date = { day = 0 month = january year = 1948 }	
-		offset = 7 
-		deathdate = { day = 1 month = february year = 1948 }
-		
+	event = {
+		id = 90002005
 		random = no
+		country = U58	
 		
-		name = "Unlock Georgian Divisions"
-		style = 0	
-		desc = "Description : TODO"
+		name = "Economic Aid from Fatherland"
+		desc = "The Reich has guaranteed an economic aid who we have requested"
+		style = 1
+		picture = "galiciaSS"
 		
 		trigger = {
-			war = { country = U58  country = GEO }	
+			event = 90002004
+			flag = ger_aid_ss
+		}		
+		
+		date = { day = 10 month = march year = 1949 }	
+		offset = 2 
+		deathdate = { day = 29 month = december year = 1990 }
+
+		action = {
+			ai_chance = 100
+			name = "Economic Aid arrived"
+			command = { trigger = { flag = ger_aid_1 } type = money  value = 100 }
+			command = { trigger = { flag = ger_aid_2 } type = money  value = 200 }
+			command = { trigger = { flag = ger_aid_3 } type = money  value = 300 }	
+			command = { trigger = { flag = ger_aid_4 } type = money  value = 400 }			
+		}	
+
+	}
+	
+	event = {
+		id = 90002006
+		random = no
+		country = U58	
+		
+		name = "No Aid from Fatherland"
+		desc = "The Reich has not guaranteed an economic aid who we have requested"
+		style = 1
+		picture = "galiciaSS"
+		
+		trigger = {
+			event = 90002004
+			flag = ger_noaid_ss
+		}		
+		
+		date = { day = 10 month = march year = 1949 }	
+		offset = 2 
+		deathdate = { day = 29 month = december year = 1990 }
+
+		action = {
+			ai_chance = 100
+			name = "Damn!"
+			command = { type = dissent  value = 3 }		
+		}	
+	}
+
+	event = {
+		id = 90002007
+		random = no
+		country = U58	
+		
+		name = "Expansion in northern sector"
+		desc = "The Kherson and Melitopol province are under RK Ukraine administration for the Original Generaplan OST order. But for someones in the SS the two provinces must by part of Reichsbezirk Gotenland especially for Heydrich and his personal interesting on the industrial area of Kherson. But, if we take the provinces, the central command in Berlin couldn't be happy ... "
+		style = 1
+		picture = "galiciaSS"
+		
+		decision = { 
+			exists = U58 
+		}
+
+		decision_trigger = {  
+			exists = U58 
+		}
+
+		date = { day = 0 month = august year = 1949 }	
+		offset = 50
+		deathdate = { day = 0 month = january year = 1990 }
+				
+		action = {
+			ai_chance = 50
+			name = "Stay with Heydrich and take the provinces of Kherson and Melitopol"
+			command = { type = relation which = GER value = -50 }		
+			command = { type = relation which = U41 value = -50 } #Ukraine
+			command = { type =	addcore   which = 623 } #Kherson
+			command = { type =	addcore   which = 624 } #Melitopol
+			command = { type = trigger which = 90002008 }
 		}
 		
 		action = {
-			ai_chance = 100
-			name = "Unlock Georgian Divisions!"
-			command = { type = unlock_division which = 14500 value = 11049 }		
-			command = { type = unlock_division which = 14500 value = 11051 }				
-		}
+			ai_chance = 50
+			name = "Stay with Himmler and don't expanse our territories in the northern sector"
+			command = { type = relation which = GER value = 20 }		
+			command = { type = relation which = U41 value = 50 } #Ukraine			
+		}		
 	}	
 
+	event = {
+		id = 90002008
+		random = no
+		country = U41	
+		
+		name = "Kherson and Melitopol"
+		desc = "The Kherson and Melitopol province are under RK Ukraine administration for the Original Generaplan OST order. But for someones in the SS the two provinces must by part of Reichsbezirk Gotenland especially for Heydrich and his personal interesting on the industrial area of Kherson. But, if we take the provinces, the central command in Berlin couldn't be happy ... "
+		style = 1
+		picture = "galiciaSS"
+						
+		action = {
+			ai_chance = 100
+			name = "There's nothing we can do ..."
+			command = { type =	removecore   which = 623 } #Kherson
+			command = { type =	removecore   which = 624 } #Melitopol
+			command = { type =	secedeprovince which = U58 value = 623} 
+			command = { type =	secedeprovince which = U58 value = 624} 			
+		}
+		
+	}	
+	
+		event = {
+		id = 90002009
+		random = no
+		country = U58	
+		
+		name = "Waffen SS Parade in Theodoricshafen"
+		desc = "Today, in the capital of Reichsbezirk Gotenland, there's a Waffen SS Great Parade. But the tension between Himmler and Heydrich continues to rise ..."
+		style = 1
+		picture = "galiciaSS"
+		
+		date = { day = 0 month = september year = 1949 }	
+		offset = 10 
+		deathdate = { day = 0 month = january year = 1990 }
+				
+		action = {
+			ai_chance = 100
+			name = "Hurrah!"
+			command = { type = money value = -200 }
+			command = { type = dissent value = -1 }
+		}
+	}		
+	
+	event = {
+		id = 90002010
+		random = no
+		country = U58	
+		
+		name = "Unlock our Divisions"
+		desc = "Description : TEST to Unlock Divisions"
+		style = 1
+		picture = "galiciaSS"
+		
+		decision = { 
+			exists = U58 
+			ai = no	
+		}
+
+		decision_trigger = {  
+			exists = U58 
+		}
+
+	trigger = {
+		event = 90000516 #GER event
+		war = { country = -1 country = GER }  #War with Germany
+		headofstate = 1105016 #Heydrich
+	}
+
+		date = { day = 0 month = january year = 1948 }	
+		offset = 7 
+		deathdate = { day = 0 month = january year = 1990 }
+				
+		action = {
+			ai_chance = 100
+			name = "Unlock our Divisions!"
+			command = { type = unlock_division which = 14500 value = 11049 }		
+			command = { type = unlock_division which = 14501 value = 11051 }				
+		}
+	}		
 	
 event = { # trigger by 90000516 GER
 	id = 90002000
@@ -120,7 +347,7 @@ event = { # trigger by 90000516 GER
 	name = "90000516NAME" 
 	desc = "90000516DESC"
 
-	action_a = {
+	action = {
 		name = ACTION_NAME_OK
 		command = { type = dissent value = 5 }
 		# Himmler KO

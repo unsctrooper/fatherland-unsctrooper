@@ -17,7 +17,7 @@ event = {
 	country = BEL	
 	persistent = yes
 	
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 0 month = august year = 1948 }
 	offset = 100
 	deathdate = { day = 29 month = december year = 1960 }
 	
@@ -54,7 +54,7 @@ event = {
 	country = BEL	
 	persistent = no
 	
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 0 month = october year = 1948 }
 	offset = 100
 	deathdate = { day = 29 month = december year = 1960 }
 	

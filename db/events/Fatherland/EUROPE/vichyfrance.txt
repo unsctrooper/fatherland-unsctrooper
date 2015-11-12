@@ -1,23 +1,33 @@
 #####################################
 # French State (aka Vichy) events
 # Review Pako
-# 313
-# 350-?
 #####################################
 
-# 350 # FRA	# Armistice at Compiègne
-# 351 #	FRA	# Death of Petain
-# 352 # FRA # Chaos in France (chain only flag = UltraVichy)
+# 350 #Armistice at Compiègne - 1948
+# 351 #Death of Petain - 1948 or 1949 or 1950
+
+# 352 #Chaos in France 1948 or 1949 or 1950 (chain only with flag = UltraVichy)
 	##### 353 GER #Intervene in France? 
 	##### 354 FRA #The Government Falls!
 		########## 355 GER #Case Anton (354C)
 		########## 356 GER #We have defeated France - Again!
 		########## 313 FRA #It is done! Encore une fois!
-# 363 # An unexpected flight
 		
-##############################
-### Armistice at Compiègne ###
-##############################
+# 363 # An unexpected flight
+
+# 364 #Approachment with Free France
+# 367 #United States meddles in France!
+# 368 #German tries to impose a blockade!
+# 369 #United States ignores blockade!
+# 371 #Germany shot down American planes!
+# 372 #What to do with Vichy France
+# 373 #French Resistance launch attacks!
+# 374 #Marseilles joins Free France?	
+# 375 # ?
+# 376 #Free French meddles in Vichy France
+# 377 #War in France!
+		
+# 350 #Armistice at Compiègne - 1948
 event = {
 	id = 350
 	country = FRA
@@ -25,7 +35,7 @@ event = {
 	style = 2
 	picture = "Petain"
 
-	date = { day = 5 month = january year = 1948 }
+	date = { day = 25 month = january year = 1948 }
 
 	name = 350NAME #Armistice at Compiègne
 	desc = 350DESC
@@ -46,9 +56,7 @@ event = {
 	}
 }
 
-##############################
-####### Death of Petain ######
-##############################
+# 351 #Death of Petain - 1948 or 1949 or 1950
 event = {
 	id = 351
 	random = no
@@ -76,11 +84,11 @@ event = {
 	
 	action = {
 			name = "351A" #Admiral Darlan will return France to glory!
-			ai_chance = 40
+			ai_chance = 30
 			
 			#command = { type = end_non_aggression which = FRA where = GER } 
-			command = { type = relation which = GER value = 50 }
-			
+			command = { type = relation which = GER value = 20 }
+			#New Government
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
 			command = { type = foreignminister which = 5397 }
@@ -91,6 +99,7 @@ event = {
 			command = { type = chiefofarmy which = 5136 }
 			command = { type = chiefofnavy which = 5009 }
 			command = { type = chiefofair which = 5196 }		
+			#Sleep Ministers
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
 			command = { type = sleepminister which = 5239 }
@@ -107,10 +116,11 @@ event = {
 	
 	action = {
 			name = "351B" #Pierre Laval will continue Petain's policies!
-			ai_chance = 30
+			ai_chance = 25
 			
 			#command = { type = end_non_aggression which = FRA where = GER } 
-			
+			command = { type = relation which = GER value = 20 }
+			#New Government
 			command = { type = headofstate which = 5393 }
 			command = { type = headofgovernment which = 5197 }
 			command = { type = foreignminister which = 5201 }
@@ -121,7 +131,7 @@ event = {
 			command = { type = chiefofarmy which = 5221 }
 			command = { type = chiefofnavy which = 5009 }
 			command = { type = chiefofair which = 5196 }	
-            command = { type = relation which = GER value = 50 }					
+			#Sleep Ministers
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
 			command = { type = sleepminister which = 5239 }
@@ -139,10 +149,10 @@ event = {
 	
 	action = {
 			name = "351C" #Ultra-Collaborationist take over, supported by Germany!
-			ai_chance = 20
+			ai_chance = 25
 			#command = { type = end_non_aggression which = FRA where = GER } 
-			command = { type = relation which = GER value = 100 }
-						
+			command = { type = relation which = GER value = 200 }
+			#New Government
 			command = { type = headofstate which = 5395 }
 			command = { type = headofgovernment which = 5404 }
 			command = { type = foreignminister which = 5403 }
@@ -153,8 +163,8 @@ event = {
 			command = { type = chiefofarmy which = 5371 }
 			command = { type = chiefofnavy which = 5377 }
 			command = { type = chiefofair which = 5196 }
-		    command = { type = set_domestic which = democratic value = 1 }
-		    command = { type = set_domestic which = political_left value = 1 }
+			
+			#Sleep Ministers
 			command = { type = relation which = GER value = 150 }	
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
@@ -166,22 +176,24 @@ event = {
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
 			
+			command = { type = set_domestic which = democratic value = 1 } #dictatorship
+		    command = { type = set_domestic which = political_left value = 1 } #nationalsocialist
+			
 			command = { type = dissent value = 15 }
 			command = { type = setflag which = UltraVichy } 
 	}
 	
 	action = {
 			name = "351D" #The people riot and establish a true civil government!
-			ai_chance = 10
+			ai_chance = 20
 			
 			command = { type = end_non_aggression which = FRA where = GER } 
-			command = { type = relation which = GER value = -50 }
-			
+			command = { type = relation which = GER value = -200 }
+			#New Government			
 			command = { type = headofstate which = 5396 }
 			command = { type = headofgovernment which = 5284 }
-		    command = { type = set_domestic which = democratic value = 7 }
-		    command = { type = set_domestic which = political_left value = 8 }
-            command = { type = relation which = GER value = -50 }			
+
+			#Sleep Ministers			
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
 			command = { type = sleepminister which = 5239 }
@@ -192,14 +204,14 @@ event = {
 			command = { type = sleepleader which = 5237 }
 	        command = { type = sleepleader which = 78 }
 			
+			command = { type = set_domestic which = democratic value = 7 }
+		    command = { type = set_domestic which = political_left value = 8 }
 			command = { type = dissent value = 3 }
 			command = { type = setflag which = CivilVichy } 
 	}
 }
 
-##############################
-### Chaos in France 	   ###
-##############################
+# 352 #Chaos in France 1948 or 1949 or 1950
 event = {
 	id = 352
 	random = no
@@ -232,6 +244,9 @@ event = {
 	}
 }
 
+##############################
+### Intervene in France?	   ###
+##############################
 event = {
 	id = 353
 	random = no
@@ -261,6 +276,8 @@ event = {
 	        command = { type = relation which = FRA value = -100 }
 	}
 }
+
+#The Government Falls! 
 event = {
 	id = 354
 	random = no
@@ -275,7 +292,7 @@ event = {
 	}
 	
 	date = { day = 1 month = january year = 1948 }
-	offset = 7
+	offset = 70
 	deathdate = { day = 1 month = december year = 1955 }
 
 	name = "354NAME" #The Government Falls!
@@ -292,6 +309,8 @@ event = {
 			
 			command = { type = clrflag which = UltraVichy } 
 			command = { type = setflag which = DarlanVichy } 
+			
+			command = { type = dissent value = -1 }
 			
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
@@ -310,7 +329,7 @@ event = {
 			name = "354B" #A new French Revolution - A new Republic!
 			ai_chance = 30
 			command = { type = end_non_aggression which = FRA where = GER } 
-			command = { type = relation which = GER value = -50 }
+			command = { type = relation which = GER value = -150 }
 			
 			command = { type = clrflag which = UltraVichy } 
 			command = { type = setflag which = CivilVichy } 
@@ -318,7 +337,7 @@ event = {
 			command = { type = set_domestic which = democratic value = 7 }
 		    command = { type = set_domestic which = political_left value = 8 }
 			
-			command = { type = dissent value = 3 }
+			command = { type = dissent value = -3 }
 			
 			command = { type = headofstate which = 5396 }
 			command = { type = headofgovernment which = 5284 }			
@@ -331,6 +350,7 @@ event = {
 	}
 }
 
+#Germany abuses the chaos to invade France! - Case Anton
 event = {
 	id = 355
 	random = no
@@ -344,11 +364,12 @@ event = {
 	action = {
 			name = "355A" #We will defeat France - again!
 			command = { type = end_non_aggression which = FRA where = GER } 
-			command = { type = dissent value = 5 }
+			command = { type = dissent value = 3 }
 		    command = { type = war which = FRA }	
             command = { type = peacetime_ic_mod value = -10 }			
 	}
 }
+#We have defeated France - Again!
 event = {
 	id = 356
 	random = no
@@ -359,10 +380,10 @@ event = {
     desc = "356DESC"
 	
     trigger = {
+		war = { country = GER country = FRA }
 		NOT = { 
 			control = { province = 55 data = FRA } 
-		}
-		war = { country = GER country = FRA }
+		}			
 		lost_national = { 
 			country = FRA value = 50 
 		}
@@ -374,7 +395,7 @@ event = {
 	
 	action = {
 			name = "356A" #Put the Pro-German elements in power, with our support
-			ai_chance = 99
+			ai_chance = 90
 			command = { type = manpowerpool value = -10 }
 			command = { type = supplies value = -5000 } 
 	        command = { type = make_puppet which = FRA }
@@ -383,11 +404,13 @@ event = {
 	}
 		action = {
 			name = "356B" #We will destroy France for once and for all!
-			ai_chance = 1
+			ai_chance = 10
 			command = { type = dissent value = 5 }
 			
 	}
 }
+
+#It is done! Encore une fois!
 event = {
 	id = 313
 	random = no
@@ -440,6 +463,8 @@ event = {
 #########################
 ### Crisis in the Med ###
 #########################
+
+#363 # An unexpected flight
 event = {
 	id = 363
 	country = FRA
@@ -496,6 +521,7 @@ event = {
 	}
 }
 
+# 364 #Approachment with Free France
 event = {
 id = 364
 	random = no
@@ -533,6 +559,8 @@ id = 364
 
 }
 }
+
+# 367 #United States meddles in France!
 event = {
 id = 367
 	random = no
@@ -569,6 +597,7 @@ id = 367
 } 
 }
 
+# 368 #German tries to impose a blockade!
 event = {
 id = 368
 	random = no
@@ -592,6 +621,8 @@ id = 368
 			command = { type = trigger which = 370 }
 } 
 } 
+
+# 369 #United States ignores blockade!
 event = {
 id = 369
 	random = no
@@ -614,6 +645,8 @@ id = 369
 			command = { type = dissent value = 1 }
 } 
 } 
+
+# 370 #German Blockade
 event = {
 id = 370
 	random = no
@@ -634,6 +667,8 @@ id = 370
 		    command = { type = embargo which = FRA where = U08 value = 3 }				
 	}
 } 
+
+# 371 #Germany shot down American planes!
 event = {
 id = 371
 	random = no
@@ -658,6 +693,8 @@ id = 371
 		    command = { type = alliance which = FRA }
 } 
 } 
+
+# 372 #What to do with Vichy France
 event = {
 id = 372
 	random = no
@@ -696,6 +733,8 @@ id = 372
 
 }
 }
+
+# 373 #French Resistance launch attacks!
 event = {
 	id = 373
 	random = no
@@ -741,6 +780,8 @@ deathdate = { day = 30 month = december year = 1963 }
         command = { type = dissent value = 3 }
 	}
 	}
+	
+# 374 #Marseilles joins Free France?	
 event = {
 id = 374
 	random = no
@@ -771,6 +812,8 @@ id = 374
 		    command = {  type = revolt which = 89 }			
 	}
 }
+
+# 375 # ?
 event = {
 id = 375
 	random = no
@@ -796,6 +839,8 @@ id = 375
 			command = { type = trigger which = 376 }
 }
 }
+
+# 376 #Free French meddles in Vichy France
 event = {
 id = 376
 	random = no
@@ -822,6 +867,8 @@ id = 376
 
 }
 }
+
+# 377 #War in France!
 event = {
 id = 377
 	random = no

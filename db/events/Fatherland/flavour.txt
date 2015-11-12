@@ -37,6 +37,7 @@
 #  Anglo-Canadian-U.S. Trade Agreement (ENG,USA,CAN)
 #  German Claim in Antarctica (GER)
 #  British Royal Visit to Canada (ENG,CAN)
+# Anniversary of the Battle of Stalingrad
 
 #########################################################################
 #  General Strikes in Morocco
@@ -1708,3 +1709,43 @@ event = {
 																								
 	}
 }	
+
+#########################################
+# Anniversary of the Battle of Stalingrad '64 - '75
+#########################################
+
+event = {
+id = 7776471
+random = no
+country = GER
+
+name = "Anniversary of the Battle of Stalingrad"
+desc = "5 years ago, the Axis armies crushdown the Red Army in the city of Stalin, Stalingrad"
+style = 2
+picture = "stalingrad"
+date = { day = 24 month = february year = 1949 }
+
+action = {
+ai_chance = 100
+name = "The most important battle of the war"
+command = { type = dissent value = -0.5 }
+command = { type = trigger which = 7776472 }
+}
+}
+
+event = {
+id = 7776472
+random = no
+TAG = { ROM HUN ITA CRO SPA RUS} # Armies on the Eastern Front
+all = yes
+
+name = "Anniversary of the Battle of Stalingrad"
+desc = "5 years ago, the Axis armies crushdown the Red Army in the city of Stalin, Stalingrad"
+style = 2
+picture = "stalingrad"
+
+action_a = {
+name = "The most important battle of the war"
+command = { type = dissent value = -0.5 }
+}
+}

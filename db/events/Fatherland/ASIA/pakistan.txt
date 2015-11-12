@@ -263,7 +263,7 @@ event = {
 	picture = "nwo\independence_of_pakistan"
 	style = 1
 
-	date = { day = 5 month = january year = 1948 }
+	date = { day = 20 month = january year = 1948 }
 	offset = 3
 	deathdate = { day = 30 month = december year = 1963 }
 

@@ -20,7 +20,7 @@ event = {
 	}
 	
 	trigger = {
-    month = 2
+    month = 4
 	}
 
 	date = { day = 1 month = january year = 1948 }

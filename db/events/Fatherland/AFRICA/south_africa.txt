@@ -54,7 +54,7 @@ event = {
 		}
 	}
 
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 0 month = march year = 1948 }
 	offset = 100
 	deathdate = { day = 29 month = december year = 1948 }
 

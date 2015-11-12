@@ -23,6 +23,9 @@
   escorts                = 25
   free                   = { ic = 25 energy = 60 metal = 30 rare_materials = 15 oil = 20 supplies = 50 money = 10 }
    
+   no_exp_forces_to = {
+	ETH
+}
   diplomacy =
   { relation = { tag = AST value = 150 }
     relation = { tag = BEL value = 200 access = yes }  

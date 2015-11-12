@@ -297,9 +297,9 @@ inventions = { 3000027 }
      {  experience = 60 
        id         = {  type = 24000 id = 16  } 
        name       = "5. Bubing Shi" 
-       type       = infantry 
+       type       = militia 
        strength  = 60
-       model      = 8
+       model      = 5
       } 
 	  Division = 
      {  experience = 60 
@@ -386,11 +386,9 @@ inventions = { 3000027 }
      {
        id         = {  type = 24000 id = 27  } 
        name       = "4. Zhidui" 
-       type       = bergsjaeger 
+       type       = militia 
        strength  = 60
-       model      = 8
-	   extra = artillery
-	   brigade_model = 10
+       model      = 5
       } 
 	  }
 	 	   landunit = 
@@ -417,9 +415,9 @@ inventions = { 3000027 }
      {
        id         = {  type = 24000 id = 31  } 
        name       = "5. Zhidui" 
-       type       = bergsjaeger 
+       type       = militia 
        strength  = 60
-       model      = 8
+       model      = 5
       } 
 	      Division = 
      {
@@ -439,17 +437,17 @@ inventions = { 3000027 }
      {  
        id         = {  type = 24000 id = 40  } 
        name       = "12. Bubing Shi"
-       type       = infantry 
+       type       = militia 
        strength  = 60
-       model      = 8
+       model      = 5
       } 
 	 Division = 
      {  
        id         = {  type = 24000 id = 36  } 
        name       = "13. Bubing Shi" 
-       type       = infantry 
+       type       = militia 
        strength  = 60
-       model      = 8
+       model      = 5
       } 
 }
   	 	   landunit = 

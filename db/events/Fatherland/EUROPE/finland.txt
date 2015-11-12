@@ -1,0 +1,273 @@
+#####################################
+# Finland events
+# Made by Pako
+#####################################
+
+# General events
+# 90005000 The Greater Finland - 1948
+# 90005001 East Karelia - 1948
+# 90005002 The Finnish Army - 1948
+# 90005003 Revolts in East Karelia - 1949
+# 90005004 Policy - 1949
+# 90005005 The Finnish-German society - 1949
+# 90005006 Soviet-Finnish border skirmish - 1950
+# 90005007 Soviet-Finnish border skirmish - 1950 - SOV
+# 90005008 It's not the time yet - 1950
+# 90005009 WW3 - 1950
+
+
+event = {
+	id = 90005000
+	random = no
+	country = FIN
+
+	name = "The Greater Finland"
+	desc = "What is the Greater Finland, whose boundary is drawn with the sword from the White Sea to Lake Ladoga? Finland received the Continuation War, which decided in Stockholm in peace for himself three natural isthmus cross, Viena, and Olonets Karelia and Kuollan Peninsula, which Hitler personally promised to Finland visit Mannerheim's birthday."
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = february year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "Hurrah!"
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 90005001
+	random = no
+	country = FIN
+
+	name = "East Karelia"
+	desc = "The young Republic, as well as a blessing and a problem. New Frontier Province Reconstruction was poor for Finland tremendous effort. A specific problem is constituted from the transferred Russian and Ukrainian settlers to East Karelia during the Soviet era."
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = march year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "Karelia is finnish"
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 90005002
+	random = no
+	country = FIN
+
+	name = "The Finnish Army"
+	desc = "The Finnish army guarded by vigilant bloody shores of Lake Onega and Kuollan Peninsula deserted fell tops "of the Eastern enemy" against. As a result of the Continuation War, the military doctrine has changed from defense to attack."
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = april year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "Change of prospective"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 90005003
+	random = no
+	country = FIN
+
+	name = "900402NAME"
+	desc = "900402DESC"
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = january year = 1949 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = "This will take some time to quell."
+		command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
+		command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
+		command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
+		command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
+		command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
+		command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
+		command = { type = 	province_revoltrisk which = 539 value = 30 } # Petrozavodsk in Finland
+		command = { type = 	province_revoltrisk which = 541 value = 30 } # Belomorsk in Finland
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 90005004
+	random = no
+	country = FIN
+
+	name = "Policy"
+	desc = "President of the Republic is elected by an electoral college vote every six years. Greater Finnish president has broad powers.  Deputies (200) are elected every four years. Finland gave women the right to vote in the first in Europe. Still the proportion of women parliaments plant is the largest of the new Europe"
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = february year = 1949 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "A new era for Finland"
+		command = { type = dissent value = -1 }
+	}
+
+}
+
+event = {
+	id = 90005005
+	random = no
+	country = FIN
+
+	name = "The Finnish-German society"
+	desc = "Outside the parliamentary system is also significant pressure groups and opinion leaders, such as the Academic Karelia Society (AKS), and the Finnish-German Society (SSS). The post war political life has been marked by long-standing blue-black co-operation between national forces and the fascist right-wing conservatives. The Social Democrats have been in the postwar period in opposition."
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = august year = 1949 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 50
+		name = "A close relationship with the Reich"
+		command = { type = dissent value = -1 }
+		command = { type = money value = -200 }
+		command = { type = relation which = GER value = 20 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+		action = {
+		ai_chance = 50
+		name = "It's not necessary"
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = -20 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+ event = {
+	id = 90005006
+	random = no
+	country = FIN
+
+	name = "Skirmishes on the frontier"
+	desc = "There has been a small skirmish between one of our border patrols and Soviet police.  Eight of our brave soldiers were killed, and many are saying that it is time to launch a war to avenge their deaths."
+	style = 1
+	picture = "events_empty"
+
+	date = { day = 15 month = january year = 1950 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 50
+		name = "They fired first! Demand a full apology!"
+		command = { type = dissent value = -5 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = trigger which = 90005007 }
+	}
+	action = {
+		ai_chance = 50
+		name = "This was our fault, send them a note"
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = relation which = SOV value = -25 }
+		command = { type = trigger which = 90005007 }
+	}
+}
+
+event = {
+	id = 90005007
+	random = no
+	country = SOV
+
+	name = "Skirmishes on the frontier"
+	desc = "At 7 am this morning, gunshots were heard from both sides of the border, in an inccident that resulted in eight deaths in Finnish side. Even though our local commander has assured us that the Finnish fired first, we have just received a note from the Finnish diplomats stating that their troops only fired after they were attacked by our men!"
+	style = 1
+	picture = "events_empty"
+
+action = {
+	ai_chance = 100
+	name = "If you want, we're ready"
+	command = { type = dissent value = -1 }
+	command = { type = domestic which = defense_lobby value = -1 }
+	command = { type = trigger which = 90005008 }
+}
+
+}
+
+event = {
+	id = 90005008
+	random = no
+	country = FIN
+
+	name = "It's not the time yet ..."
+	desc = "It's not the time yet for a war with Soviet Union ... back down for the moment ...."
+	style = 1
+	picture = "events_empty"
+
+	action = {
+		ai_chance = 100
+		name = "Back Down"
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 90005009
+	random = no
+	country = FIN
+
+	name = "WW3"
+	desc = "The WW3 is started ... what will do ?"
+	style = 1
+	picture = "events_empty"
+
+	trigger = {
+		war = { country =GER  country = SOV }
+	}
+	
+	date = { day = 15 month = september year = 1950 } 
+	offset = 50
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 50
+		name = "Enter in the Axis and  fight only the Soviets"
+		command = { type =	alliance which =GER }
+		command = { type = 	end_non_aggression which = FIN where =SOV }
+		command = { type = 	non_aggression which = FIN where =ENG }
+		command = { type = 	non_aggression which = FIN where =USA }		
+		command = { type = 	non_aggression which = FIN where =U01 }				
+	}
+	
+	action = {
+		ai_chance = 30
+		name = "Enter in the Axis and  fight the Soviets and the Allies"
+		command = { type =	alliance which =GER }
+		command = { type = 	end_non_aggression which = FIN where =SOV }
+	}
+	
+	action = {
+		ai_chance = 20
+		name = "Stay Neutral !"
+		command = { type = domestic which = interventionism value = -10 }
+	}
+}

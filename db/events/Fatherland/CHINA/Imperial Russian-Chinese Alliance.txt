@@ -51,7 +51,7 @@ event = {
 	decision_picture = "fatherland\decision_reichstag_color"
 	style = 1
 	
-	date = { day = 5 month = january year = 1948 }
+	date = { day = 5 month = april year = 1948 }
 	offset = 5
 	deathdate = { day = 29 month = december year = 1980 }
 

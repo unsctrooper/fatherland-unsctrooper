@@ -21,7 +21,7 @@ event = {
 	style = 2
 	picture = "lend_lease"
 
-	date = { day = 1 month = january year = 1948 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 35
 	deathdate = { day = 29 month = december year = 1951 }
 

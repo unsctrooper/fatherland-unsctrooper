@@ -100,7 +100,7 @@ command = { type = 	province_revoltrisk which = 568 value = 30 }
 command = { type = 	province_revoltrisk which = 567 value = 30 }
 command = { type = 	province_revoltrisk which = 571 value = 30 }
 command = { type = 	province_revoltrisk which = 679 value = 30 } # Muron
-command = { type = trigger which = 900402 } # Revolts in Finnish Russia
+#command = { type = trigger which = 900402 } # Revolts in Finnish Russia
 }
 }
 
@@ -108,24 +108,24 @@ command = { type = trigger which = 900402 } # Revolts in Finnish Russia
 # Revolts in East Karelia
 #########################
 
-event = {
-id = 900402
-random = no
-country = FIN
+#event = {
+#id = 900402
+#random = no
+#country = FIN
 
-name = "900402NAME"
-desc = "900402DESC" 
-style = 2
-picture = "fatherland\wehrmacht1"
+#name = "900402NAME"
+#desc = "900402DESC" 
+#style = 2
+#picture = "fatherland\wehrmacht1"
 
-action = {
-name = "This will take some time to quell."
-command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
-command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
-command = { type = 	province_revoltrisk which = 539 value = 30 } # Petrozavodsk in Finland
-command = { type = 	province_revoltrisk which = 541 value = 30 } # Belomorsk in Finland
-}
-}
+#action = {
+#name = "This will take some time to quell."
+#command = { type = revolt which = 539 when = 0 } # Petrozavodsk in Finland
+#command = { type = revolt which = 541 when = 0 } # Belomorsk in Finland
+#command = { type = 	province_revoltrisk which = 539 value = 30 } # Petrozavodsk in Finland
+#command = { type = 	province_revoltrisk which = 541 value = 30 } # Belomorsk in Finland
+#}
+#}
 
 ######################
 # Resistance in Moscow

@@ -11,9 +11,9 @@ event = {
 		government = democratic
 	}
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 0 month = september year = 1948 }
 	offset = 30
-	deathdate = { day = 29 month = december year = 1947 }
+	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
 		name = EVT_8017801_A
@@ -42,9 +42,9 @@ event = {
 		}
 	}
 
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 0 month = january year = 1949 }
 	offset = 30
-	deathdate = { day = 29 month = december year = 1948 }
+	deathdate = { day = 29 month = december year = 1949 }
 
 	action = {
 		name = EVT_ELECTIONS_LEFT

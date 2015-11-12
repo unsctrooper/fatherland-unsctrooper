@@ -7,9 +7,9 @@ event = {
 	picture = "nwo\govt_change"
 	style = 1
 
-	date = { day = 0 month = january year = 1947 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1947 }
+	date = { day = 0 month = june year = 1948 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1948 }
 
 	action = {
 		name = "EVT_8004801_A"
@@ -42,7 +42,7 @@ event = {
 		government = democratic
 	}
 
-	date = { day = 0 month = january year = 1948 }
+	date = { day = 0 month = january year = 1949 }
 	offset = 360
 	deathdate = { day = 29 month = december year = 1951 }
 
