@@ -1,0 +1,12 @@
+U64;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+1020301;Head of State;Wolf-Heinrich Graf von Helldorf;1948;1975;1975;NS;Reichskommissar;Very High;U64_001;X
+1020302;Head of Government;Wolf-Heinrich Graf von Helldorf;1933;1964;1999;NS;Political Protege;Very High;U64_001;X
+1020303;Foreign Minister;Theodor Adrian von Renteln;1933;1964;1999;NS;Iron fisted Brute;Very High;U64_002;X
+1020304;Minister of Armament;Albert Speer;1933;1981;1981;NS;Genius organizer;High;2645;X
+1020305;Minister of Security;Erich von dem Bach-Zalewski;1935;1980;1980;NS;Prince of Terror;Very High;L533;X
+1020306;Head of Military Intelligence;Erich von dem Bach-Zalewski;1935;1964;1999;NS;Logistics Specialist;High;L533;X
+1020307;Chief of Staff;Erich von dem Bach-Zalewski;1935;1980;1980;NS;school of manoeuvre;Very High;L533;X
+1020308;Chief of Army;Erich von dem Bach-Zalewski;1935;1980;1980;NS;decisive battle doctrine;Very High;L533;X
+1020309;Chief of Navy;Erich Raeder;1933;1960;1960;NS;Decisive Naval Battle Doctrine;High;2642;X
+1020310;Chief of Air Force;Hermann Göring;1933;1973;1973;NS;The Iron Knight;Very High;2643;X
