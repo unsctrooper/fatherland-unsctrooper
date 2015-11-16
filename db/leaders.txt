@@ -218,3 +218,6 @@ yunnan.csv
 uch.csv
 turkestan.csv
 unitednations.csv
+rk_ural.csv
+rk_westsibirien.csv
+rk_ostsibirien.csv
