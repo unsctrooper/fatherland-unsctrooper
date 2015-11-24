@@ -5,46 +5,46 @@ technology =
   desc        = TECH_NAVAL_DESC # Localized description
   label =
   { tag      = TECH_CAT_LIGHTCRUISERS
-    position = { x = 5 y = 1 }
+    position = { x = 24 y = 10 }
   }
   label =
   { tag      = TECH_CAT_BATTLESHIPS
-    position = { x = 117 y = 1 }
+    position = { x = 160 y = 10 }
   }  
   label =
   { tag      = TECH_CAT_BATTLECRUISERS
-    position = { x = 229 y = 1 }
+    position = { x = 296 y = 10 }
   }
   label =
   { tag      = TECH_CAT_HEAVYCRUISERS
-    position = { x = 341 y = 1 }
+    position = { x = 432 y = 10 }
   }
   label =
   { tag      = TECH_CAT_DESTROYERS
-    position = { x = 5 y = 231 }
+    position = { x = 24 y = 220 }
   }
   label =
   { tag      = TECH_CAT_SUBMARINES
-    position = { x = 117 y = 231 }
+    position = { x = 160 y = 220 }
   }
   label =
   { tag      = TECH_CAT_LIGHTCARRIER
-    position = { x = 453 y = 1 }
+    position = { x = 296 y = 220 }
   }
   label =
   { tag      = TECH_CAT_AIRCARRIERS
-    position = { x = 453 y = 231 }
+    position = { x = 432 y = 220 }
   }
   label =
   { tag      = TECH_CAT_TRANSPORTS
-    position  = { x = 229 y = 407 }
+    position  = { x = 296 y = 370 }
   }
     # Torpedo Gunboat
   application =
   { id        = 3010
     name      = TECH_APP_NAVAL_1_NAME
 
-    position  = { x = 5 y = 245 }
+    position  = { x = 24 y = 234 }
 	picture   = "DH3010"
     year      = 1885
     # Torpedo Gunboat Hull
@@ -68,7 +68,7 @@ technology =
   { id        = 3020
     name      = TECH_APP_NAVAL_2_NAME
 
-    position  = { x = 5 y = 263 }
+    position  = { x = 24 y = 252 }
 	picture   = "DH3020"
     year      = 1902
     # Fleet  Destroyer Hull
@@ -92,7 +92,7 @@ technology =
   { id        = 3030
     name      = TECH_APP_NAVAL_3_NAME
 
-    position  = { x = 5 y = 281 }
+    position  = { x = 24 y = 270 }
 	picture   = "DH3030"
     year      = 1909
     # Great War Destroyer Hull
@@ -117,7 +117,7 @@ technology =
   { id        = 3040
     name      = TECH_APP_NAVAL_4_NAME
 
-    position  = { x = 5 y = 299 }
+    position  = { x = 24 y = 288 }
 	picture   = "3010"
     year      = 1916
     # Great War Destroyer Hull
@@ -141,7 +141,7 @@ technology =
   { id        = 3050
     name      = TECH_APP_NAVAL_5_NAME
 
-    position  = { x = 5 y = 317 }
+    position  = { x = 24 y = 306 }
 	picture   = "3020"
     year      = 1923
     # Early Destroyer Hull
@@ -166,7 +166,7 @@ technology =
   { id        = 3060
     name      = TECH_APP_NAVAL_6_NAME
 
-    position  = { x = 5 y = 335 }
+    position  = { x = 24 y = 324 }
 	picture   = "3030"
     year      = 1933
     # Improved Destroyer Hull
@@ -191,7 +191,7 @@ technology =
   { id        = 3070
     name      = TECH_APP_NAVAL_7_NAME
 
-    position  = { x = 5 y = 353 }
+    position  = { x = 24 y = 342 }
 	picture   = "3040"
     year      = 1937
     # Semi-Modern Destroyer Hull
@@ -216,7 +216,7 @@ technology =
   { id        = 12000
     name      = TECH_APP_NAVAL_100_NAME
 
-    position  = { x = 5 y = 371 }
+    position  = { x = 24 y = 360 }
 	picture   = "3050"
     year      = 1941
     # Modern Destroyer Hull
@@ -241,7 +241,7 @@ technology =
   { id        = 3080
     name      = TECH_APP_NAVAL_8_NAME
 
-    position  = { x = 5 y = 389 }
+    position  = { x = 24 y = 378 }
 	picture   = "3060"
     year      = 1945
     # Advanced Destroyer Hull
@@ -260,19 +260,15 @@ technology =
       command = { type = scrap_model which = destroyer value = 6 }
       command = { type = convoy_def_eff value = 0.05 }
     }
-  } 
-  label =
-  { tag      = TECH_CAT_DDG
-    position = { x = 5 y = 407 }
-  }
+  }  
   # Missile Destroyer
   application =
   { id        = 3090
     name      = TECH_APP_NAVAL_9_NAME
 
-    position  = { x = 5 y = 421 }
-	picture   = "3090"
-    year      = 1953
+    position  = { x = 24 y = 396 }
+	picture   = "12000"
+    year      = 1955
     # Missile Destroyer Hull
     component = { id = 3091 name = TECH_CMP_NAVAL_9_1_NAME type = naval_engineering difficulty = 5 }
     # Missile Destroyer Propulsion
@@ -285,85 +281,9 @@ technology =
     component = { id = 3095 name = TECH_CMP_NAVAL_9_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 3080 }
     effects =
-    { command = { type = activate_unit_type which = d_06 }
-	  command = { type = new_model which = d_06 value = 0 }
+    { command = { type = new_model which = destroyer value = 9 }
       command = { type = scrap_model which = destroyer value = 7 }
-      command = { type = scrap_model which = destroyer value = 8 }
-	  command = { type = deactivate_unit_type which = destroyer }
       command = { type = convoy_def_eff value = 0.05 }
-    }
-  }
-  application = {
-  id = 12080
-  name = TECH_APP_NAVAL_117_NAME
-  position = { x = 5 y = 439 }
-  picture = "12080"
-  year = 1958
-  
-  #Modern Destroyer Hull Design
-  component = { id = 12081 name = TECH_CMP_NAVAL_117_1_NAME type = naval_engineering difficulty = 7 }
-  #Modern Destroyer Propulsion
-  component = { id = 12082 name = TECH_CMP_NAVAL_117_2_NAME type = naval_engineering difficulty = 7 }
-  #Mixed Gun & Missile Weaponry
-  component = { id = 12083 name = TECH_CMP_NAVAL_117_3_NAME type = naval_artillery difficulty = 7 }
-  #Modern ASW Equipment
-  component = { id = 12084 name = TECH_CMP_NAVAL_117_4_NAME type = electronics difficulty = 7 }
-  #Modern ASW Flotilla Tactics
-  component = { id = 12085 name = TECH_CMP_NAVAL_117_5_NAME type = small_taskforce_tactics difficulty = 7 }
-  required = { 3090 }
-  effects = {
-   command = { type = new_model which = d_06 value = 1 }
-      command = { type = scrap_model which = d_06 value = 0 }
-      command = { type = convoy_def_eff value = 0.05 }
-    }
-  }
-  application = {
-  id = 12090
-  name = TECH_APP_NAVAL_129_NAME
-  position = { x = 5 y = 457 }
-  picture = "12090"
-  year = 1962
-  
-  #Modern Destroyer Hull Design
-  component = { id = 12091 name = TECH_CMP_NAVAL_129_1_NAME type = naval_engineering difficulty = 8 }
-  #Modern Destroyer Propulsion
-  component = { id = 12092 name = TECH_CMP_NAVAL_129_2_NAME type = naval_engineering difficulty = 8 }
-  #Mixed Gun & Missile Weaponry
-  component = { id = 12093 name = TECH_CMP_NAVAL_129_3_NAME type = naval_artillery difficulty = 8 }
-  #Modern ASW Equipment
-  component = { id = 12094 name = TECH_CMP_NAVAL_129_4_NAME type = electronics difficulty = 8 }
-  #Modern ASW Flotilla Tactics
-  component = { id = 12095 name = TECH_CMP_NAVAL_129_5_NAME type = small_taskforce_tactics difficulty = 8 }
-  required = { 12080 }
-  effects = {
-   command = { type = new_model which = d_06 value = 2 }
-      command = { type = scrap_model which = d_06 value = 1 }
-      command = { type = convoy_def_eff value = 0.05 }
-    }
-  }
-  application = {
-  id = 12170
-  name = TECH_APP_NAVAL_130_NAME
-  position = { x = 5 y = 475 }
-  picture = "12170"
-  year = 1972
-  
-  #Modern Destroyer Hull Design
-  component = { id = 12171 name = TECH_CMP_NAVAL_130_1_NAME type = naval_engineering difficulty = 9 }
-  #Modern Destroyer Propulsion
-  component = { id = 12172 name = TECH_CMP_NAVAL_130_2_NAME type = naval_engineering difficulty = 9 }
-  #Mixed Gun & Missile Weaponry
-  component = { id = 12173 name = TECH_CMP_NAVAL_130_3_NAME type = naval_artillery difficulty = 9 }
-  #Modern ASW Equipment
-  component = { id = 12174 name = TECH_CMP_NAVAL_130_4_NAME type = electronics difficulty = 9 }
-  #Modern ASW Flotilla Tactics
-  component = { id = 12175 name = TECH_CMP_NAVAL_130_5_NAME type = small_taskforce_tactics difficulty = 9 }
-  required = { 12090 }
-  effects = {
-   command = { type = new_model which = d_06 value = 3 }
-      command = { type = scrap_model which = d_06 value = 2 }
-      command = { type = convoy_def_eff value = 0.05 }
-	  command = { type = new_model which = d_06 value = 4 }
     }
   }
   # Protected Cruiser
@@ -371,7 +291,7 @@ technology =
   { id        = 3110
     name      = TECH_APP_NAVAL_11_NAME
 
-    position  = { x = 5 y = 15 }
+    position  = { x = 24 y = 24 }
 	picture   = "DH3110"
     year      = 1881
     # Protected Cruiser Hull
@@ -395,7 +315,7 @@ technology =
   { id        = 3120
     name      = TECH_APP_NAVAL_12_NAME
 
-    position  = { x = 5 y = 33 }
+    position  = { x = 24 y = 42 }
 	picture   = "DH3120"
     year      = 1903
     # Great War Light Cruiser Hull
@@ -419,7 +339,7 @@ technology =
   { id        = 3130
     name      = TECH_APP_NAVAL_13_NAME
 
-    position  = { x = 5 y = 51 }
+    position  = { x = 24 y = 60 }
 	picture   = "3070"
     year      = 1912
     # Early Light Cruiser Hull
@@ -443,7 +363,7 @@ technology =
   { id        = 3140
     name      = TECH_APP_NAVAL_14_NAME
 
-    position  = { x = 5 y = 69 }
+    position  = { x = 24 y = 78 }
 	picture   = "3080"
     year      = 1922
     # Basic Light Cruiser Hull
@@ -467,7 +387,7 @@ technology =
   { id        = 3150
     name      = TECH_APP_NAVAL_15_NAME
 
-    position  = { x = 5 y = 87 }
+    position  = { x = 24 y = 96 }
 	picture   = "3090"
     year      = 1930
     # Improved Light Cruiser Hull
@@ -491,7 +411,7 @@ technology =
   { id        = 3160
     name      = TECH_APP_NAVAL_16_NAME
 
-    position  = { x = 5 y = 105 }
+    position  = { x = 24 y = 114 }
 	picture   = "3100"
     year      = 1935
     # Semi-Modern Light Cruiser Hull
@@ -515,7 +435,7 @@ technology =
   { id        = 12010
     name      = TECH_APP_NAVAL_101_NAME
 
-    position  = { x = 5 y = 123 }
+    position  = { x = 24 y = 132 }
 	picture   = "3110"
     year      = 1940
     # Modern Light Cruiser Hull
@@ -532,7 +452,6 @@ technology =
     effects =
     { command = { type = new_model which = light_cruiser value = 6 }
       command = { type = scrap_model which = light_cruiser value = 4 }
-	  command = { type = new_model which = light_cruiser value = 10 }
     }
   }
   # Advanced Light Cruiser
@@ -540,7 +459,7 @@ technology =
   { id        = 3170
     name      = TECH_APP_NAVAL_17_NAME
 
-    position  = { x = 5 y = 141 }
+    position  = { x = 24 y = 150 }
 	picture   = "3120"
     year      = 1945
     # Advanced Light Cruiser Hull
@@ -564,7 +483,7 @@ technology =
   { id        = 3180
     name      = TECH_APP_NAVAL_18_NAME
 
-    position  = { x = 5 y = 159 }
+    position  = { x = 24 y = 168 }
 	picture   = "12010"
     year      = 1953
     # Missile Light Cruiser Hull
@@ -581,309 +500,14 @@ technology =
     effects =
     { command = { type = new_model which = light_cruiser value = 8 }
       command = { type = scrap_model which = light_cruiser value = 6 }
-	  command = { type = scrap_model which = light_cruiser value = 10 }
     }
   }  
-  label = {
-  tag = TECH_CAT_LARGEASW
-  position = { x = 453 y = 407 }
-  }
-  
-  application = {
-  id = 3590
-  name = TECH_APP_NAVAL_131_NAME
-  
-  position = { x = 453 y = 421 }
-  picture = "3590"
-  year = 1959
-  
-  # Missile Light Cruiser Hull
-    component = { id = 3591 name = TECH_CMP_NAVAL_131_1_NAME type = naval_engineering difficulty = 5 }
-    # Missile Light Cruiser Propulsion
-    component = { id = 3592 name = TECH_CMP_NAVAL_131_2_NAME type = naval_engineering difficulty = 5 }
-    # Naval Cruiser Gun 180+mm
-    component = { id = 3593 name = TECH_CMP_NAVAL_131_3_NAME type = seamanship difficulty = 5 }
-    # Advanced Anti-Air Equipment
-    component = { id = 3594 name = TECH_CMP_NAVAL_131_4_NAME type = electronics difficulty = 5 }
-    # Missile Light Cruiser Prototype Testing
-    component = { id = 3595 name = TECH_CMP_NAVAL_131_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-    required  = { 3180 12080 } 
-    effects =
-    { command = { type = activate_unit_type which = d_07 }
-	command = { type = new_model which = d_07 value = 0 }
-    }
-  } 
-  application = {
-  id = 3600
-  name = TECH_APP_NAVAL_132_NAME
-  
-  position = { x = 453 y = 439 }
-  picture = "3600"
-  year = 1966
-  
-  # Missile Light Cruiser Hull
-    component = { id = 3601 name = TECH_CMP_NAVAL_132_1_NAME type = naval_engineering difficulty = 5 }
-    # Missile Light Cruiser Propulsio
-    component = { id = 3602 name = TECH_CMP_NAVAL_132_2_NAME type = naval_engineering difficulty = 5 }
-    # Naval Cruiser Gun 180+mm
-    component = { id = 3603 name = TECH_CMP_NAVAL_132_3_NAME type = seamanship difficulty = 5 }
-    # Advanced Anti-Air Equipment
-    component = { id = 3604 name = TECH_CMP_NAVAL_132_4_NAME type = electronics difficulty = 5 }
-    # Missile Light Cruiser Prototype Testing
-    component = { id = 3605 name = TECH_CMP_NAVAL_132_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-    required  = { 3590 } 
-    effects =
-    { command = { type = new_model which = d_07 value = 1 }
-	command = { type = scrap_model which = d_07 value = 0 }
-    }
-  } 
-  application = {
-  id = 12180
-  name = TECH_APP_NAVAL_133_NAME
-  
-  position = { x = 453 y = 457 }
-  picture = "12180"
-  year = 1977
-  
-  # Missile Light Cruiser Hull
-    component = { id = 12181 name = TECH_CMP_NAVAL_133_1_NAME type = naval_engineering difficulty = 5 }
-    # Missile Light Cruiser Propulsio
-    component = { id = 12182 name = TECH_CMP_NAVAL_133_2_NAME type = naval_engineering difficulty = 5 }
-    # Naval Cruiser Gun 180+mm
-    component = { id = 12183 name = TECH_CMP_NAVAL_133_3_NAME type = seamanship difficulty = 5 }
-    # Advanced Anti-Air Equipment
-    component = { id = 12184 name = TECH_CMP_NAVAL_133_4_NAME type = electronics difficulty = 5 }
-    # Missile Light Cruiser Prototype Testing
-    component = { id = 12185 name = TECH_CMP_NAVAL_133_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-    required  = { 3600 } 
-    effects =
-    { command = { type = new_model which = d_07 value = 2 }
-	command = { type = scrap_model which = d_07 value = 1 }
-    }
-  } 
-    label = { 
-  tag = TECH_CAT_CORVETTE
-  position = { x = 341 y = 231 }
-  }
-  application = {
-  id = 12190
-  name = TECH_APP_NAVAL_134_NAME
-  
-  position = { x = 341 y = 245 }
-  picture = "12190"
-  year = 1939
-  
-  #Early Corvette Hull Design
-  component = { id = 12191 name = TECH_CMP_NAVAL_134_1_NAME type = naval_engineering difficulty = 3 }
-  #Very Light Armament
-  component = { id = 12192 name = TECH_CMP_NAVAL_134_2_NAME type = naval_artillery difficulty = 3 }
-  #Sensors and Processing Systems
-  component = { id = 12193 name = TECH_CMP_NAVAL_134_4_NAME type = electronics difficulty = 3 }
-  #Corvette Propulsion
-  component = { id = 12194 name = TECH_CMP_NAVAL_134_2_NAME type = naval_engineering difficulty = 3 }
-  #Prototype Tests
-  component = { id = 12195 name = TECH_CMP_NAVAL_134_5_NAME type = technical_efficiency difficulty = 3 double_time = yes }
-  required = { 3070 }
-  effects = {
-  command = { type = activate_unit_type which = d_08 }
-  command = { type = new_model which = d_08 value = 0 }
-  }
-  }
-    application = {
-  id = 12200
-  name = TECH_APP_NAVAL_135_NAME
-  
-  position = { x = 341 y = 263 }
-  picture = "12200"
-  year = 1944
-  
-  #Early Corvette Hull Design
-  component = { id = 12201 name = TECH_CMP_NAVAL_135_1_NAME type = naval_engineering difficulty = 4 }
-  #Very Light Armament
-  component = { id = 12202 name = TECH_CMP_NAVAL_135_2_NAME type = naval_artillery difficulty = 4 }
-  #Sensors and Processing Systems
-  component = { id = 12203 name = TECH_CMP_NAVAL_135_4_NAME type = electronics difficulty = 4 }
-  #Corvette Propulsion
-  component = { id = 12204 name = TECH_CMP_NAVAL_135_2_NAME type = naval_engineering difficulty = 4 }
-  #Prototype Tests
-  component = { id = 12205 name = TECH_CMP_NAVAL_135_5_NAME type = technical_efficiency difficulty = 4 double_time = yes }
-  required = { 12190 }
-  effects = { command = { type = new_model which = d_08 value = 1 }
-  command = { type = scrap_model which = d_08 value = 0 }
-  }
-  }
-      application = {
-  id = 12210
-  name = TECH_APP_NAVAL_136_NAME
-  
-  position = { x = 341 y = 281 }
-  picture = "12210"
-  year = 1958
-  
-  #Early Corvette Hull Design
-  component = { id = 12211 name = TECH_CMP_NAVAL_136_1_NAME type = naval_engineering difficulty = 5 }
-  #Very Light Armament
-  component = { id = 12212 name = TECH_CMP_NAVAL_136_2_NAME type = naval_artillery difficulty = 5 }
-  #Sensors and Processing Systems
-  component = { id = 12213 name = TECH_CMP_NAVAL_136_4_NAME type = electronics difficulty = 5 }
-  #Corvette Propulsion
-  component = { id = 12214 name = TECH_CMP_NAVAL_136_2_NAME type = naval_engineering difficulty = 5 }
-  #Prototype Tests
-  component = { id = 12215 name = TECH_CMP_NAVAL_136_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-  required = { 12200 }
-  effects = { command = { type = new_model which = d_08 value = 2 }
-  command = { type = scrap_model which = d_08 value = 1 }
-  }
-  }
-        application = {
-  id = 12220
-  name = TECH_APP_NAVAL_137_NAME
-  
-  position = { x = 341 y = 299 }
-  picture = "12220"
-  year = 1966
-  
-  #Early Corvette Hull Design
-  component = { id = 12221 name = TECH_CMP_NAVAL_137_1_NAME type = naval_engineering difficulty = 6 }
-  #Very Light Armament
-  component = { id = 12222 name = TECH_CMP_NAVAL_137_2_NAME type = naval_artillery difficulty = 6 }
-  #Sensors and Processing Systems
-  component = { id = 12223 name = TECH_CMP_NAVAL_137_4_NAME type = electronics difficulty = 6 }
-  #Corvette Propulsion
-  component = { id = 12224 name = TECH_CMP_NAVAL_137_2_NAME type = naval_engineering difficulty = 6 }
-  #Prototype Tests
-  component = { id = 12225 name = TECH_CMP_NAVAL_137_5_NAME type = technical_efficiency difficulty = 6 double_time = yes }
-  required = { 12210 }
-  effects = { command = { type = new_model which = d_08 value = 3 }
-  command = { type = scrap_model which = d_08 value = 2 }
-  }
-  }
-        application = {
-  id = 12230
-  name = TECH_APP_NAVAL_138_NAME
-  
-  position = { x = 341 y = 317 }
-  picture = "12230"
-  year = 1976
-  
-  #Early Corvette Hull Design
-  component = { id = 12231 name = TECH_CMP_NAVAL_138_1_NAME type = naval_engineering difficulty = 7 }
-  #Very Light Armament
-  component = { id = 12232 name = TECH_CMP_NAVAL_138_2_NAME type = naval_artillery difficulty = 7 }
-  #Sensors and Processing Systems
-  component = { id = 12233 name = TECH_CMP_NAVAL_138_4_NAME type = electronics difficulty = 7 }
-  #Corvette Propulsion
-  component = { id = 12234 name = TECH_CMP_NAVAL_138_2_NAME type = naval_engineering difficulty = 7 }
-  #Prototype Tests
-  component = { id = 12235 name = TECH_CMP_NAVAL_138_5_NAME type = technical_efficiency difficulty = 7 double_time = yes }
-  required = { 12220 }
-  effects = { command = { type = new_model which = d_08 value = 4 }
-  command = { type = scrap_model which = d_08 value = 3 }
-  }
-  }
-        application = {
-  id = 12240
-  name = TECH_APP_NAVAL_139_NAME
-  
-  position = { x = 341 y = 335 }
-  picture = "12240"
-  year = 1985
-  
-  #Early Corvette Hull Design
-  component = { id = 12241 name = TECH_CMP_NAVAL_139_1_NAME type = naval_engineering difficulty = 8 }
-  #Very Light Armament
-  component = { id = 12242 name = TECH_CMP_NAVAL_139_2_NAME type = naval_artillery difficulty = 8 }
-  #Sensors and Processing Systems
-  component = { id = 12243 name = TECH_CMP_NAVAL_139_4_NAME type = electronics difficulty = 8 }
-  #Corvette Propulsion
-  component = { id = 12244 name = TECH_CMP_NAVAL_139_2_NAME type = naval_engineering difficulty = 8 }
-  #Prototype Tests
-  component = { id = 12245 name = TECH_CMP_NAVAL_139_5_NAME type = technical_efficiency difficulty = 8 double_time = yes }
-  required = { 12230 }
-  effects = { command = { type = new_model which = d_08 value = 5 }
-  command = { type = scrap_model which = d_08 value = 4 }
-  }
-  }
-      label = { 
-  tag = TECH_CAT_MISSCORVETTE
-  position = { x = 576 y = 407 }
-  }
-          application = {
-  id = 12250
-  name = TECH_APP_NAVAL_140_NAME
-  
-  position = { x = 576 y = 421 }
-  picture = "12250"
-  year = 1958
-  
-  #Early Corvette Hull Design
-  component = { id = 12251 name = TECH_CMP_NAVAL_140_1_NAME type = naval_engineering difficulty = 5 }
-  #Very Light Armament
-  component = { id = 12252 name = TECH_CMP_NAVAL_140_2_NAME type = rocketry difficulty = 5 }
-  #Sensors and Processing Systems
-  component = { id = 12253 name = TECH_CMP_NAVAL_140_4_NAME type = electronics difficulty = 5 }
-  #Corvette Propulsion
-  component = { id = 12254 name = TECH_CMP_NAVAL_140_2_NAME type = naval_engineering difficulty = 5 }
-  #Prototype Tests
-  component = { id = 12255 name = TECH_CMP_NAVAL_140_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-  required = { 12210 }
-  effects = { command = { type = activate_unit_type which = d_09 }
-  command = { type = new_model which = d_09 value = 0 }
-  }
-  }
-  
-            application = {
-  id = 12260
-  name = TECH_APP_NAVAL_141_NAME
-  
-  position = { x = 576 y = 439 }
-  picture = "12260"
-  year = 1967
-  
-  #Early Corvette Hull Design
-  component = { id = 12261 name = TECH_CMP_NAVAL_141_1_NAME type = naval_engineering difficulty = 6 }
-  #Very Light Armament
-  component = { id = 12262 name = TECH_CMP_NAVAL_141_2_NAME type = rocketry difficulty = 6 }
-  #Sensors and Processing Systems
-  component = { id = 12263 name = TECH_CMP_NAVAL_141_4_NAME type = electronics difficulty = 6 }
-  #Corvette Propulsion
-  component = { id = 12264 name = TECH_CMP_NAVAL_141_2_NAME type = naval_engineering difficulty = 6 }
-  #Prototype Tests
-  component = { id = 12265 name = TECH_CMP_NAVAL_141_5_NAME type = technical_efficiency difficulty = 6 double_time = yes }
-  required = { 12250 }
-  effects = { command = { type = new_model which = d_09 value = 1 }
-  command = { type = scrap_model which = d_09 value = 0 }
-  }
-  }
-              application = {
-  id = 12270
-  name = TECH_APP_NAVAL_142_NAME
-  
-  position = { x = 576 y = 457 }
-  picture = "12270"
-  year = 1977
-  
-  #Early Corvette Hull Design
-  component = { id = 12271 name = TECH_CMP_NAVAL_142_1_NAME type = naval_engineering difficulty = 7 }
-  #Very Light Armament
-  component = { id = 12272 name = TECH_CMP_NAVAL_142_2_NAME type = rocketry difficulty = 7 }
-  #Sensors and Processing Systems
-  component = { id = 12273 name = TECH_CMP_NAVAL_142_4_NAME type = electronics difficulty = 7 }
-  #Corvette Propulsion
-  component = { id = 12274 name = TECH_CMP_NAVAL_142_2_NAME type = naval_engineering difficulty = 7 }
-  #Prototype Tests
-  component = { id = 12275 name = TECH_CMP_NAVAL_142_5_NAME type = technical_efficiency difficulty = 7 double_time = yes }
-  required = { 12260 }
-  effects = { command = { type = new_model which = d_09 value = 2 }
-  command = { type = scrap_model which = d_09 value = 1 }
-  }
-  }
   # Armoured Frigate
   application =
   { id        = 3210
     name      = TECH_APP_NAVAL_21_NAME
 
-    position  = { x = 341 y = 15 }
+    position  = { x = 432 y = 24 }
 	picture   = "DH3210"
     year      = 1873
     # Armoured Frigate Hull
@@ -907,7 +531,7 @@ technology =
   { id        = 3220
     name      = TECH_APP_NAVAL_22_NAME
 
-    position  = { x = 341 y = 33 }
+    position  = { x = 432 y = 42 }
 	picture   = "DH3220"
     year      = 1888
     # Armoured Cruiser Hull
@@ -925,14 +549,14 @@ technology =
     { command = { type = new_model which = heavy_cruiser value = 1 }
     }
   } 
-  # Early Heavy Cruiser
+  # Improved Armoured Cruiser
   application =
   { id        = 3230
     name      = TECH_APP_NAVAL_23_NAME
 
-    position  = { x = 341 y = 51 }
+    position  = { x = 432 y = 60 }
 	picture   = "3130"
-    year      = 1907
+    year      = 1902
     # Early Heavy Cruiser Hull
     component = { id = 3231 name = TECH_CMP_NAVAL_23_1_NAME type = naval_engineering difficulty = 2 }
     # Early Heavy Cruiser Propulsion
@@ -949,14 +573,14 @@ technology =
       command = { type = scrap_model which = heavy_cruiser value = 0 }	
     }
   }
-  # Interwar Heavy Cruiser
+  # Early Heavy Cruiser
   application =
   { id        = 3240
     name      = TECH_APP_NAVAL_24_NAME
 
-    position  = { x = 341 y = 69 }
+    position  = { x = 432 y = 78 }
 	picture   = "3140"
-    year      = 1922
+    year      = 1916
     # Interwar Heavy Cruiser Hull
     component = { id = 3241 name = TECH_CMP_NAVAL_24_1_NAME type = naval_engineering difficulty = 3 }
     # Interwar Heavy Cruiser Propulsion
@@ -978,7 +602,7 @@ technology =
   { id        = 3250
     name      = TECH_APP_NAVAL_25_NAME
 
-    position  = { x = 341 y = 87 }
+    position  = { x = 432 y = 96 }
 	picture   = "3150"
     year      = 1930
     # Improved Heavy Cruiser Hull
@@ -1001,7 +625,7 @@ technology =
   { id        = 3260
     name      = TECH_APP_NAVAL_26_NAME
 
-    position  = { x = 341 y = 105 }
+    position  = { x = 432 y = 114 }
 	picture   = "3160"
     year      = 1934
     # Semi-Modern Heavy Cruiser Hull
@@ -1025,7 +649,7 @@ technology =
   { id        = 12020
     name      = TECH_APP_NAVAL_102_NAME
 
-    position  = { x = 341 y = 123 }
+    position  = { x = 432 y = 132 }
 	picture   = "3170"
     year      = 1941
     # Modern Heavy Cruiser Hull
@@ -1049,7 +673,7 @@ technology =
   { id        = 3270
     name      = TECH_APP_NAVAL_27_NAME
 
-    position  = { x = 341 y = 141 }
+    position  = { x = 432 y = 150 }
 	picture   = "3180"
     year      = 1946
     # Advanced Heavy Cruiser Hull
@@ -1073,7 +697,7 @@ technology =
   { id        = 3280
     name      = TECH_APP_NAVAL_28_NAME
 
-    position  = { x = 341 y = 159 }
+    position  = { x = 432 y = 168 }
 	picture   = "12020"
     year      = 1952
     # Missile  Heavy Cruiser Hull
@@ -1092,59 +716,12 @@ technology =
       command = { type = scrap_model which = heavy_cruiser value = 6 }
     }
   }
-  application = {
-  id = 3500
-  name = TECH_APP_NAVAL_118_NAME
-  
-  position = { x = 341 y = 177 }
-  picture = "3500"
-  year = 1959
-  
-  #Improved Missile Cruiser Hull Design
-  component = { id = 3501 name = TECH_CMP_NAVAL_118_1_NAME type = naval_engineering difficulty = 6 }
-  #Modern Propulsion
-  component = { id = 3502 name = TECH_CMP_NAVAL_118_2_NAME type = naval_engineering difficulty = 6 }
-  #Missile Batteries
-  component = { id = 3503 name = TECH_CMP_NAVAL_118_3_NAME type = rocketry difficulty = 6 }
-  #Modern Naval Radar
-  component = { id = 3504 name = TECH_CMP_NAVAL_118_4_NAME type = electronics difficulty = 6 }
-  #ASW Torpedo Launchers
-  component = { id = 3505 name = TECH_CMP_NAVAL_118_5_NAME type = naval_artillery difficulty = 6 }
-  required = { 3280 7270 }
-  effects =
-    { command = { type = new_model which = heavy_cruiser value = 9 }
-      command = { type = scrap_model which = heavy_cruiser value = 7 }
-    }
-  }
-  application = {
-  id = 3580
-  name = TECH_APP_NAVAL_119_NAME
-  position = { x = 341 y = 195 }
-  picture = "3580"
-  year = 1980
-  
-  #Modern Missile Cruiser Hull Design
-  component = { id = 3581 name = TECH_CMP_NAVAL_119_1_NAME type = naval_engineering difficulty = 6 }
-  #Modern Propulsion
-  component = { id = 3582 name = TECH_CMP_NAVAL_119_2_NAME type = naval_engineering difficulty = 6 }
-  #Missile Batteries
-  component = { id = 3583 name = TECH_CMP_NAVAL_118_3_NAME type = rocketry difficulty = 6 }
-  #Anti Ship Missile Counter Measures
-  component = { id = 3584 name = TECH_CMP_NAVAL_118_4_NAME type = electronics difficulty = 6 }
-  #Improved ASW Torpedo Launchers
-  component = { id = 3585 name = TECH_CMP_NAVAL_118_5_NAME type = naval_artillery difficulty = 6 }
-  required = { 3500 }
-  effects = {
-  command = { type = new_model which = heavy_cruiser value = 10 }
-      command = { type = scrap_model which = heavy_cruiser value = 8 }
-    }
-  }
   # Early Battlecruiser
   application =
   { id        = 3310
     name      = TECH_APP_NAVAL_31_NAME
 
-    position  = { x = 229 y = 15 }
+    position  = { x = 296 y = 24 }
 	picture   = "3190"
     year      = 1906
     # Early Battlecruiser Hull
@@ -1169,7 +746,7 @@ technology =
   { id        = 3320
     name      = TECH_APP_NAVAL_32_NAME
 
-    position  = { x = 229 y = 33 }
+    position  = { x = 296 y = 42 }
 	picture   = "3200"
     year      = 1912
     # Improved Battlecruiser Hull
@@ -1193,7 +770,7 @@ technology =
   { id        = 3330
     name      = TECH_APP_NAVAL_33_NAME
 
-    position  = { x = 229 y = 51 }
+    position  = { x = 296 y = 60 }
 	picture   = "3210"
     year      = 1918
     # Heavy Battlecruiser Hull
@@ -1217,7 +794,7 @@ technology =
   { id        = 3340
     name      = TECH_APP_NAVAL_34_NAME
 
-    position  = { x = 229 y = 69 }
+    position  = { x = 296 y = 78 }
 	picture   = "3220"
     year      = 1934
     # Basic Battlecruiser Hull
@@ -1241,7 +818,7 @@ technology =
   { id        = 3350
     name      = TECH_APP_NAVAL_35_NAME
 
-    position  = { x = 229 y = 87 }
+    position  = { x = 296 y = 96 }
 	picture   = "3230"
     year      = 1941
     # Semi-Modern Battlecruiser Hull
@@ -1265,7 +842,7 @@ technology =
   { id        = 12030
     name      = TECH_APP_NAVAL_103_NAME
 
-    position  = { x = 229 y = 105 }
+    position  = { x = 296 y = 114 }
 	picture   = "12030"
     year      = 1951
     # Modern Battlecruiser Hull
@@ -1284,36 +861,13 @@ technology =
       command = { type = scrap_model which = battlecruiser value = 3 }
     }
   }
-  label = {
-  tag = TECH_CAT_ARMDBOX
-  position = { x = 229 y = 123 }
-  }
-  application = {
-  id= 12340
-  name = TECH_APP_NAVAL_149_NAME
-  
-  position = { x = 229 y = 137 }
-  picture = "12340"
-  year = 1984
-  
-  component = { id = 12341 name = TECH_CMP_NAVAL_149_1_NAME type = naval_engineering difficulty = 5 }
-  component = { id = 12342 name = TECH_CMP_NAVAL_149_2_NAME type = rocketry difficulty = 5 }
-  component = { id = 12343 name = TECH_CMP_NAVAL_149_3_NAME type = naval_engineering difficulty = 5 }
-  component = { id = 12344 name = TECH_CMP_NAVAL_149_4_NAME type = seamanship difficulty = 5 }
-  component = { id = 12345 name = TECH_CMP_NAVAL_149_5_NAME type = naval_engineering difficulty = 5 double_time = yes }
-  required = { 12170 }
-  effects = {
-  command = { type = activate_unit_type which = b_14 }
-  command = { type = new_model which = b_14 value = 0 }
-  }
-  }
   
   # Turret Battleship
   application =
   { id        = 3410
     name      = TECH_APP_NAVAL_41_NAME
 
-    position  = { x = 117 y = 15 }
+    position  = { x = 160 y = 24 }
 	picture   = "DH3410"
     year      = 1874
     # Great War Battleship Hull
@@ -1337,7 +891,7 @@ technology =
   { id        = 3420
     name      = TECH_APP_NAVAL_42_NAME
 
-    position  = { x = 117 y = 33 }
+    position  = { x = 160 y = 42 }
 	picture   = "DH3420"
     year      = 1894
     # Early Battleship Hull
@@ -1361,7 +915,7 @@ technology =
   { id        = 3430
     name      = TECH_APP_NAVAL_43_NAME
 
-    position  = { x = 117 y = 51 }
+    position  = { x = 160 y = 60 }
 	picture   = "3300"
     year      = 1904
     # Basic Battleship Hull
@@ -1385,7 +939,7 @@ technology =
   { id        = 3440
     name      = TECH_APP_NAVAL_44_NAME
 
-    position  = { x = 117 y = 69 }
+    position  = { x = 160 y = 78 }
 	picture   = "3240"
     year      = 1909
     # Advanced Battleship Hull
@@ -1409,7 +963,7 @@ technology =
   { id        = 3450
     name      = TECH_APP_NAVAL_45_NAME
 
-    position  = { x = 117 y = 87 }
+    position  = { x = 160 y = 96 }
 	picture   = "3250"
     year      = 1913
     # Advanced Battleship Hull
@@ -1433,7 +987,7 @@ technology =
   { id        = 3456
     name      = TECH_APP_NAVAL_456_NAME
 
-    position  = { x = 117 y = 105 }
+    position  = { x = 160 y = 114 }
 	picture   = "3260"
     year      = 1917
     # Advanced Battleship Hull
@@ -1457,7 +1011,7 @@ technology =
   { id        = 3460
     name      = TECH_APP_NAVAL_46_NAME
 
-    position  = { x = 117 y = 123 }
+    position  = { x = 160 y = 132 }
 	picture   = "3270"
     year      = 1922
     # Advanced Battleship Hull
@@ -1481,7 +1035,7 @@ technology =
   { id        = 3470
     name      = TECH_APP_NAVAL_47_NAME
 
-    position  = { x = 117 y = 141 }
+    position  = { x = 160 y = 150 }
 	picture   = "3280"
     year      = 1934
     # Improved Battleship Hull
@@ -1505,7 +1059,7 @@ technology =
   { id        = 3480
     name      = TECH_APP_NAVAL_48_NAME
 
-    position  = { x = 117 y = 177 }
+    position  = { x = 160 y = 168 }
 	picture   = "3290"
     year      = 1939
     # Semi-Modern Battleship Hull
@@ -1529,7 +1083,7 @@ technology =
   { id        = 12040
     name      = TECH_APP_NAVAL_104_NAME
 
-    position  = { x = 117 y = 213 }
+    position  = { x = 160 y = 186 }
 	picture   = "12040"
     year      = 1947
     # Modern Battleship Hull
@@ -1553,7 +1107,7 @@ technology =
   { id        = 3490
     name      = TECH_APP_NAVAL_49_NAME
 
-    position  = { x = 127 y = 159 }
+    position  = { x = 296 y = 150 }
 	picture   = "3310"
     year      = 1937
     # Super Heavy Battleship Hull
@@ -1576,7 +1130,7 @@ technology =
   { id        = 12050
     name      = TECH_APP_NAVAL_105_NAME
 
-    position  = { x = 127 y = 195 }
+    position  = { x = 296 y = 168 }
 	picture   = "12050"
     year      = 1944
     # Improved Super Heavy Battleship Hull
@@ -1601,7 +1155,7 @@ technology =
   { id        = 3510
     name      = TECH_APP_NAVAL_51_NAME
 
-    position  = { x = 453 y = 245 }
+    position  = { x = 432 y = 234 }
 	picture   = "3320"
     year      = 1922
     # Great War Air Carrier Hull
@@ -1627,7 +1181,7 @@ technology =
   { id        = 3520
     name      = TECH_APP_NAVAL_52_NAME
 
-    position  = { x = 453 y = 263 }
+    position  = { x = 432 y = 252 }
 	picture   = "3330"
     year      = 1930
     # Early Air Carrier Hull
@@ -1651,7 +1205,7 @@ technology =
   { id        = 3530
     name      = TECH_APP_NAVAL_53_NAME
 
-    position  = { x = 453 y = 281 }
+    position  = { x = 432 y = 270 }
 	picture   = "3340"
     year      = 1934
     # Basic Air Carrier Hull
@@ -1676,7 +1230,7 @@ technology =
   { id        = 3540
     name      = TECH_APP_NAVAL_54_NAME
 
-    position  = { x = 453 y = 299 }
+    position  = { x = 432 y = 288 }
 	picture   = "3350"
     year      = 1937
     # Improved Air Carrier Hull
@@ -1701,7 +1255,7 @@ technology =
   { id        = 3550
     name      = TECH_APP_NAVAL_55_NAME
 
-    position  = { x = 453 y = 317 }
+    position  = { x = 432 y = 306 }
 	picture   = "3360"
     year      = 1940
     # Semi-Modern Air Carrier Hull
@@ -1726,7 +1280,7 @@ technology =
   { id        = 12060
     name      = TECH_APP_NAVAL_106_NAME
 
-    position  = { x = 453 y = 335 }
+    position  = { x = 432 y = 324 }
 	picture   = "3370"
     year      = 1943
     # Modern Air Carrier Hull
@@ -1751,7 +1305,7 @@ technology =
   { id        = 3560
     name      = TECH_APP_NAVAL_56_NAME
 
-    position  = { x = 453 y = 353 }
+    position  = { x = 432 y = 342 }
 	picture   = "3390"
     year      = 1947
     # Advanced Air Carrier Hull
@@ -1776,7 +1330,7 @@ technology =
   { id        = 3570
     name      = TECH_APP_NAVAL_57_NAME
 
-    position  = { x = 453 y = 371 }
+    position  = { x = 432 y = 360 }
 	picture   = "12060"
     year      = 1951
     # Advanced Air Carrier Superheavy Hull
@@ -1802,7 +1356,7 @@ technology =
   { id        = 12100
     name      = TECH_APP_NAVAL_110_NAME
 
-    position  = { x = 453 y = 15 }
+    position  = { x = 296 y = 234 }
 	picture   = "12100"
     year      = 1912
     # ?
@@ -1826,7 +1380,7 @@ technology =
   { id        = 12110
     name      = TECH_APP_NAVAL_111_NAME
 
-    position  = { x = 453 y = 33 }
+    position  = { x = 296 y = 252 }
 	picture   = "12110"
     year      = 1916
     # ?
@@ -1850,7 +1404,7 @@ technology =
   { id        = 12120
     name      = TECH_APP_NAVAL_112_NAME
 
-    position  = { x = 453 y = 51 }
+    position  = { x = 296 y = 270 }
 	picture   = "DH12120"
     year      = 1920
     # ?
@@ -1875,7 +1429,7 @@ technology =
   { id        = 12130
     name      = TECH_APP_NAVAL_113_NAME
 
-    position  = { x = 453 y = 69 }
+    position  = { x = 296 y = 288 }
 	picture   = "12120"
     year      = 1929
     # ?
@@ -1892,7 +1446,6 @@ technology =
     effects =
     { command = { type = activate_unit_type which = light_carrier }
 	  command = { type = new_model which = light_carrier value = 0 }
-	  command = { type = new_model which = escort_carrier value = 7 }
     }
   }
   # Improved Light Carrier
@@ -1900,7 +1453,7 @@ technology =
   { id        = 12140
     name      = TECH_APP_NAVAL_114_NAME
 
-    position  = { x = 453 y = 87 }
+    position  = { x = 296 y = 306 }
 	picture   = "12130"
     year      = 1941
     # ?
@@ -1925,7 +1478,7 @@ technology =
   { id        = 12150
     name      = TECH_APP_NAVAL_115_NAME
 
-    position  = { x = 453 y = 105 }
+    position  = { x = 296 y = 324 }
 	picture   = "12140"
     year      = 1944
     # ?
@@ -1944,7 +1497,6 @@ technology =
       command = { type = scrap_model which = escort_carrier value = 2 }
 	  command = { type = new_model which = light_carrier value = 2 }
 	  command = { type = scrap_model which = light_carrier value = 0 }
-	  command = { type = scrap_model which = escort_carrier value = 7 }
     }
   }
   # Modern Light Carrier
@@ -1952,7 +1504,7 @@ technology =
   { id        = 12160
     name      = TECH_APP_NAVAL_116_NAME
 
-    position  = { x = 453 y = 123 }
+    position  = { x = 296 y = 342 }
 	picture   = "12150"
     year      = 1948
     # ?
@@ -1971,135 +1523,13 @@ technology =
       command = { type = scrap_model which = light_carrier value = 1 }
     }
   }
-  application = {
-  id = 12290
-  name = TECH_APP_NAVAL_144_NAME
-  
-  position = { x = 453 y = 141 }
-  picture = "12290"
-  year = 1959
-  
-    # ?
-    component = { id = 12291 name = TECH_CMP_NAVAL_144_1_NAME type = carrier_design difficulty = 6 }
-    # ?
-    component = { id = 12292 name = TECH_CMP_NAVAL_144_2_NAME type = naval_engineering difficulty = 6 }
-    # ?
-    component = { id = 12293 name = TECH_CMP_NAVAL_144_3_NAME type = naval_artillery difficulty = 6 }
-    # ?
-    component = { id = 12294 name = TECH_CMP_NAVAL_144_4_NAME type = seamanship difficulty = 6 }
-    # ?
-    component = { id = 12295 name = TECH_CMP_NAVAL_144_5_NAME type = technical_efficiency difficulty = 6 double_time = yes }
-    required  = { 12150 4470 }
-    effects =
-    { command = { type = new_model which = light_carrier value = 4 }
-      command = { type = scrap_model which = escort_carrier value = 3 }
-      command = { type = scrap_model which = escort_carrier value = 4 }
-		}
-  }
-  application = {
-  id = 12300
-  name = TECH_APP_NAVAL_145_NAME
-  
-  position = { x = 463 y = 159 }
-  picture = "12300"
-  year = 1970
-  
-      # ?
-    component = { id = 12301 name = TECH_CMP_NAVAL_145_1_NAME type = carrier_design difficulty = 7 }
-    # ?
-    component = { id = 12302 name = TECH_CMP_NAVAL_145_2_NAME type = naval_engineering difficulty = 7 }
-    # ?
-    component = { id = 12303 name = TECH_CMP_NAVAL_145_3_NAME type = naval_artillery difficulty = 7 }
-    # ?
-    component = { id = 12304 name = TECH_CMP_NAVAL_145_4_NAME type = seamanship difficulty = 7 }
-    # ?
-    component = { id = 12305 name = TECH_CMP_NAVAL_145_5_NAME type = technical_efficiency difficulty = 7 double_time = yes }
-	required = { 12290 }
-	effects =
-    { command = { type = new_model which = escort_carrier value = 5 }
-	command = { type = scrap_model which = light_carrier value = 4 }
-	command = { trigger = { technology = 15260 } type = activate_unit_type which = b_10 }
-	  command = { trigger = { technology = 15260 } type = new_model which = b_10 value = 0 }
-	}
-	}
-	  application = {
-  id = 12310
-  name = TECH_APP_NAVAL_146_NAME
-  
-  position = { x = 453 y = 177 }
-  picture = "12310"
-  year = 1971
-  
-    # ?
-    component = { id = 12311 name = TECH_CMP_NAVAL_146_1_NAME type = carrier_design difficulty = 7 }
-    # ?
-    component = { id = 12312 name = TECH_CMP_NAVAL_146_2_NAME type = naval_engineering difficulty = 7 }
-    # ?
-    component = { id = 12313 name = TECH_CMP_NAVAL_146_3_NAME type = naval_artillery difficulty = 7 }
-    # ?
-    component = { id = 12314 name = TECH_CMP_NAVAL_146_4_NAME type = seamanship difficulty = 7 }
-    # ?
-    component = { id = 12315 name = TECH_CMP_NAVAL_146_5_NAME type = technical_efficiency difficulty = 7 double_time = yes }
-    required  = { 12290 4480 }
-    effects =
-    { command = { type = new_model which = light_carrier value = 5 }
-	command = { type = scrap_model which = light_carrier value = 4 }
-	}
-  }
-    application = {
-  id = 12320
-  name = TECH_APP_NAVAL_147_NAME
-  
-  position = { x = 463 y = 195 }
-  picture = "12320"
-  year = 1982
-  
-      # ?
-    component = { id = 12321 name = TECH_CMP_NAVAL_147_1_NAME type = carrier_design difficulty = 8 }
-    # ?
-    component = { id = 12322 name = TECH_CMP_NAVAL_147_2_NAME type = naval_engineering difficulty = 8 }
-    # ?
-    component = { id = 12323 name = TECH_CMP_NAVAL_147_3_NAME type = naval_artillery difficulty = 8 }
-    # ?
-    component = { id = 12324 name = TECH_CMP_NAVAL_147_4_NAME type = seamanship difficulty = 8 }
-    # ?
-    component = { id = 12325 name = TECH_CMP_NAVAL_147_5_NAME type = technical_efficiency difficulty = 8 double_time = yes }
-	required = { 12300 }
-	effects =
-    { command = { type = new_model which = escort_carrier value = 6 }
-	command = { type = scrap_model which = escort_carrier value = 5 }
-	}
-	}
-	  application = {
-  id = 12330
-  name = TECH_APP_NAVAL_148_NAME
-  
-  position = { x = 453 y = 213 }
-  picture = "12330"
-  year = 1989
-  
-    # ?
-    component = { id = 12331 name = TECH_CMP_NAVAL_148_1_NAME type = carrier_design difficulty = 9 }
-    # ?
-    component = { id = 12332 name = TECH_CMP_NAVAL_148_2_NAME type = naval_engineering difficulty = 9 }
-    # ?
-    component = { id = 12333 name = TECH_CMP_NAVAL_148_3_NAME type = naval_artillery difficulty = 9 }
-    # ?
-    component = { id = 12334 name = TECH_CMP_NAVAL_148_4_NAME type = seamanship difficulty = 9 }
-    # ?
-    component = { id = 12335 name = TECH_CMP_NAVAL_148_5_NAME type = technical_efficiency difficulty = 9 double_time = yes }
-    required  = { 12310 4490 }
-    effects =
-    { command = { type = new_model which = light_carrier value = 6 }
-	command = { type = scrap_model which = light_carrier value = 5 }
-	}
-  }
+
   # Dive Boat
   application =
   { id        = 3610
     name      = TECH_APP_NAVAL_61_NAME
 
-    position  = { x = 117 y = 245 }
+    position  = { x = 160 y = 234 }
 	picture   = "DH3610"
     year      = 1896
     # Experimental Pressure Hull
@@ -2123,7 +1553,7 @@ technology =
   { id        = 3620
     name      = TECH_APP_NAVAL_62_NAME
 
-    position  = { x = 117 y = 263 }
+    position  = { x = 160 y = 252 }
 	picture   = "DH3620"
     year      = 1912
     # Basic Pressure Hull
@@ -2147,7 +1577,7 @@ technology =
   { id        = 3630
     name      = TECH_APP_NAVAL_63_NAME
 
-    position  = { x = 117 y = 281 }
+    position  = { x = 160 y = 270 }
 	picture   = "3400"
     year      = 1915
     # Improved Pressure Hull
@@ -2171,7 +1601,7 @@ technology =
   { id        = 3640
     name      = TECH_APP_NAVAL_64_NAME
 
-    position  = { x = 117 y = 299 }
+    position  = { x = 160 y = 288 }
 	picture   = "3410"
     year      = 1924
     # Improved Pressure Hull
@@ -2188,6 +1618,8 @@ technology =
     effects =
     { command = { type = new_model which = submarine value = 3 }
 	  command = { type = scrap_model which = submarine value = 1 }
+	  command = { type = activate_unit_type which = nuclear_submarine }
+	  command = { type = new_model which = Nuclear_submarine value = 0 }
     }
   }  
   # Improved Submarine
@@ -2195,7 +1627,7 @@ technology =
   { id        = 3650
     name      = TECH_APP_NAVAL_65_NAME
 
-    position  = { x = 117 y = 317 }
+    position  = { x = 160 y = 306 }
 	picture   = "3420"
     year      = 1933
     # Improved Pressure Hull
@@ -2211,10 +1643,9 @@ technology =
     required  = { 3640 }
     effects =
     { command = { type = new_model which = submarine value = 4 }
-	  command = { type = scrap_model which = submarine value = 2 }
-	  command = { type = activate_unit_type which = nuclear_submarine }
-	  command = { type = new_model which = Nuclear_submarine value = 0 }
-	  
+	  command = { type = scrap_model which = submarine value = 2 }	  
+	  command = { type = new_model which = nuclear_submarine value = 1 }
+	  command = { type = scrap_model which = nuclear_submarine value = 0 }
     }
   }  
   # Long Range Submarine
@@ -2222,7 +1653,7 @@ technology =
   { id        = 3660
     name      = TECH_APP_NAVAL_66_NAME
 
-    position  = { x = 117 y = 335 }
+    position  = { x = 160 y = 324 }
 	picture   = "3430"
     year      = 1937
     # Advanced Pressure Hull
@@ -2246,7 +1677,7 @@ technology =
   { id        = 3670
     name      = TECH_APP_NAVAL_67_NAME
 
-    position  = { x = 117 y = 353 }
+    position  = { x = 160 y = 342 }
 	picture   = "DH3670"
     year      = 1940
     # Advanced Pressure Hull
@@ -2263,8 +1694,6 @@ technology =
     effects =
     { command = { type = new_model which = submarine value = 6 }
 	  command = { type = scrap_model which = submarine value = 4 }
-	  command = { type = new_model which = nuclear_submarine value = 1 }
-	  command = { type = scrap_model which = nuclear_submarine value = 0 }
     }
   }
   # Diesel-electric Submarine
@@ -2272,7 +1701,7 @@ technology =
   { id        = 3680
     name      = TECH_APP_NAVAL_68_NAME
 
-    position  = { x = 117 y = 371 }
+    position  = { x = 160 y = 360 }
 	picture   = "3440"
     year      = 1943
     # Streamlined Pressure Hull
@@ -2289,6 +1718,8 @@ technology =
     effects =
     { command = { type = new_model which = submarine value = 7 }
       command = { type = scrap_model which = submarine value = 5 }
+	  command = { type = new_model which = nuclear_submarine value = 3 }
+	  command = { type = scrap_model which = nuclear_submarine value = 1 }
     }
   }
   # Semi-Modern Submarine
@@ -2296,7 +1727,7 @@ technology =
   { id        = 3690
     name      = TECH_APP_NAVAL_69_NAME
 
-    position  = { x = 117 y = 407 }
+    position  = { x = 160 y = 378 }
 	picture   = "3450"
     year      = 1950
     # Coated Pressure Hull
@@ -2320,7 +1751,7 @@ technology =
   { id        = 3700
     name      = TECH_APP_NAVAL_70_NAME
 
-    position  = { x = 117 y = 425 }
+    position  = { x = 160 y = 396 }
 	picture   = "DH3700"
     year      = 1955
     # Coated Pressure Hull
@@ -2339,82 +1770,14 @@ technology =
       command = { type = scrap_model which = submarine value = 7 }
     }
   }
-  application = {
-  id = 3800
-  name = TECH_APP_NAVAL_120_NAME
-  position = { x = 117 y = 443 }
-  picture = "3800"
-  year = 1960
-  
-  #Basic Modern Submarine Hull
-  component = { id = 3801 name = TECH_CMP_NAVAL_120_1_NAME type = submarine_design difficulty = 6 }
-  #Modern Schnorkel
-  component = { id = 3802 name = TECH_CMP_NAVAL_120_2_NAME type = naval_engineering difficulty = 6 }
-  #Super Silent Engine
-  component = { id = 3803 name = TECH_CMP_NAVAL_120_3_NAME type = submarine_design difficulty = 6 }
-  #Underwater Radar
-  component = { id = 3804 name = TECH_CMP_NAVAL_120_4_NAME type = electronics difficulty = 6 }
-  # Basic Modern Submarine Prototype Testing
-  component = { id = 3805 name = TECH_CMP_NAVAL_120_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-  required  = { 3700 }
-    effects =
-    { command = { type = new_model which = submarine value = 10 }
-      command = { type = scrap_model which = submarine value = 8 }
-    }
-  }
-  application = {
-  id = 3870
-  name = TECH_APP_NAVAL_121_NAME
-  position = { x = 117 y = 461 }
-  picture = "3870"
-  year = 1967
-  
-  #Improved Modern Submarine Hull
-  component = { id = 3871 name = TECH_CMP_NAVAL_121_1_NAME type = submarine_design difficulty = 6 }
-  #Modern Schnorkel
-  component = { id = 3872 name = TECH_CMP_NAVAL_121_2_NAME type = naval_engineering difficulty = 6 }
-  #Fast Silent Engine
-  component = { id = 3873 name = TECH_CMP_NAVAL_121_3_NAME type = submarine_design difficulty = 6 }
-  #Electronic Warfare Equipment
-  component = { id = 3874 name = TECH_CMP_NAVAL_121_4_NAME type = electronics difficulty = 6 }
-  # Improved Modern Submarine Prototype Testing
-  component = { id = 3875 name = TECH_CMP_NAVAL_121_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-  required  = { 3800 }
-    effects =
-    { command = { type = new_model which = submarine value = 11 }
-      command = { type = scrap_model which = submarine value = 9 }
-    }
-  }
-  application = {
-  id = 3880
-  name = TECH_APP_NAVAL_122_NAME
-  position = { x = 117 y = 479 }
-  picture = "3880"
-  year = 1980
-  #Improved Modern Submarine Hull
-  component = { id = 3881 name = TECH_CMP_NAVAL_122_1_NAME type = submarine_design difficulty = 7 }
-  #Modern Schnorkel
-  component = { id = 3882 name = TECH_CMP_NAVAL_122_2_NAME type = naval_engineering difficulty = 7 }
-  #Fast Silent Engine
-  component = { id = 3883 name = TECH_CMP_NAVAL_122_3_NAME type = submarine_design difficulty = 7 }
-  #Electronic Warfare Equipment
-  component = { id = 3884 name = TECH_CMP_NAVAL_122_4_NAME type = electronics difficulty = 7 }
-  # Improved Modern Submarine Prototype Testing
-  component = { id = 3885 name = TECH_CMP_NAVAL_122_5_NAME type = technical_efficiency difficulty = 6 double_time = yes }
-  required  = { 3870 }
-    effects =
-    { command = { type = new_model which = submarine value = 12 }
-      command = { type = scrap_model which = submarine value = 10 }
-    }
-  }
   # Super Heavy Submarine
   application =
   { id        = 3710
     name      = TECH_APP_NAVAL_71_NAME
 
-    position  = { x = 127 y = 389 }
+    position  = { x = 160 y = 418 }
 	picture   = "DH3710"
-    year      = 1944
+    year      = 1940
     # Large Pressure Hull
     component = { id = 3711 name = TECH_CMP_NAVAL_71_1_NAME type = submarine_design difficulty = 5 }
     # Basic Schnorkel
@@ -2427,8 +1790,7 @@ technology =
     component = { id = 3715 name = TECH_CMP_NAVAL_71_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
     required  = { 3670 }
     effects =
-    { command = { type = new_model which = Nuclear_submarine value = 2 }
-	  command = { type = scrap_model which = Nuclear_submarine value = 1 }
+    { command = { type = new_model which = nuclear_submarine value = 2 }
     }
   }  
   # Troopship
@@ -2436,7 +1798,7 @@ technology =
   { id        = 3810
     name      = TECH_APP_NAVAL_81_NAME
 
-    position  = { x = 229 y = 421 }
+    position  = { x = 296 y = 384 }
 	picture   = "DH3810"
     year      = 1845
 	# Troopship Hull
@@ -2460,7 +1822,7 @@ technology =
   { id        = 3820
     name      = TECH_APP_NAVAL_82_NAME
 
-    position  = { x = 229 y = 439 }
+    position  = { x = 296 y = 402 }
 	picture   = "DH3820"
     year      = 1925
 	# Troopship Hull
@@ -2484,7 +1846,7 @@ technology =
   { id        = 3830
     name      = TECH_APP_NAVAL_83_NAME
 
-    position  = { x = 229 y = 457 }
+    position  = { x = 296 y = 420 }
 	picture   = "DH3830"
     year      = 1936
 	# Troopship Hull
@@ -2508,7 +1870,7 @@ technology =
   { id        = 3840
     name      = TECH_APP_NAVAL_84_NAME
 
-    position  = { x = 229 y = 475 }
+    position  = { x = 432 y = 384 }
 	picture   = "DH3840"
     year      = 1941
 	# Troopship Hull
@@ -2532,7 +1894,7 @@ technology =
   { id        = 3850
     name      = TECH_APP_NAVAL_85_NAME
 
-    position  = { x = 341 y = 421 }
+    position  = { x = 432 y = 402 }
 	picture   = "DH3850"
     year      = 1949
 	# Troopship Hull
@@ -2556,7 +1918,7 @@ technology =
   { id        = 3860
     name      = TECH_APP_NAVAL_86_NAME
 
-    position  = { x = 341 y = 439 }
+    position  = { x = 432 y = 420 }
 	picture   = "DH3860"
     year      = 1955
 	# Troopship Hull
@@ -2575,56 +1937,10 @@ technology =
 	  command = { type = scrap_model which = transport value = 4 }
     }
   }
-  application =
-  { id        = 12350
-    name      = TECH_APP_NAVAL_150_NAME
-
-    position  = { x = 341 y = 457 }
-	picture   = "12350"
-    year      = 1971
-	# Troopship Hull
-    component = { id = 12351 name = TECH_CMP_NAVAL_150_1_NAME type = naval_engineering difficulty = 8 }
-    # Troopship Propulsion
-    component = { id = 12352 name = TECH_CMP_NAVAL_150_2_NAME type = naval_engineering difficulty = 8 }
-    # Naval Gun 120+mm
-    component = { id = 12353 name = TECH_CMP_NAVAL_150_3_NAME type = naval_artillery difficulty = 8 }
-    # Troopship ??? Equipment
-    component = { id = 12354 name = TECH_CMP_NAVAL_150_4_NAME type = naval_engineering difficulty = 8 }
-    # Troopship Prototype Testing
-    component = { id = 12355 name = TECH_CMP_NAVAL_150_5_NAME type = technical_efficiency difficulty = 8 double_time = yes }
-    required  = { 3860 }
-    effects =
-    { command = { type = new_model which = transport value = 6 }
-	  command = { type = scrap_model which = transport value = 5 }
-    }
-  }
-    application =
-  { id        = 12360
-    name      = TECH_APP_NAVAL_151_NAME
-
-    position  = { x = 341 y = 475 }
-	picture   = "12360"
-    year      = 1995
-	# Troopship Hull
-    component = { id = 12361 name = TECH_CMP_NAVAL_151_1_NAME type = naval_engineering difficulty = 10 }
-    # Troopship Propulsion
-    component = { id = 12362 name = TECH_CMP_NAVAL_151_2_NAME type = naval_engineering difficulty = 10 }
-    # Naval Gun 120+mm
-    component = { id = 12363 name = TECH_CMP_NAVAL_151_3_NAME type = naval_artillery difficulty = 10 }
-    # Troopship ??? Equipment
-    component = { id = 12364 name = TECH_CMP_NAVAL_151_4_NAME type = naval_engineering difficulty = 10 }
-    # Troopship Prototype Testing
-    component = { id = 12365 name = TECH_CMP_NAVAL_151_5_NAME type = technical_efficiency difficulty = 10 double_time = yes }
-    required  = { 12350 }
-    effects =
-    { command = { type = new_model which = transport value = 7 }
-	  command = { type = scrap_model which = transport value = 6 }
-    }
-  }
   
   label =
   { tag      = TECH_CAT_ASW_EQUIPMENT
-    position = { x = 229 y = 231 }
+    position = { x = 558 y = 10 }
   }
   
   # ASW Equipment 1918
@@ -2632,7 +1948,7 @@ technology =
   { id        = 3900
     name      = TECH_APP_NAVAL_90_NAME
 
-    position = { x = 229 y = 245 }
+    position = { x = 558 y = 24 }
 	picture   = "DH3900"
     year      = 1918
     # ASW Equipment 1936 Construction
@@ -2657,7 +1973,7 @@ technology =
   { id        = 3910
     name      = TECH_APP_NAVAL_91_NAME
 
-    position = { x = 229 y = 263 }
+    position = { x = 558 y = 42 }
 	picture   = "DH3910"
     year      = 1934
     # ASW Equipment 1940 Construction
@@ -2682,7 +1998,7 @@ technology =
   { id        = 3920
     name      = TECH_APP_NAVAL_92_NAME
 
-    position = { x = 229 y = 281 }
+    position = { x = 558 y = 60 }
 	picture   = "DH3920"
     year      = 1942
     # ASW Equipment 1942 Construction
@@ -2708,7 +2024,7 @@ technology =
   { id        = 3930
     name      = TECH_APP_NAVAL_93_NAME
 
-    position = { x = 229 y = 299 }
+    position = { x = 558 y = 78 }
 	picture   = "DH3930"
     year      = 1945
     # ASW Equipment 1945 Construction
@@ -2734,7 +2050,7 @@ technology =
   { id        = 3940
     name      = TECH_APP_NAVAL_94_NAME
 
-    position = { x = 229 y = 317 }
+    position = { x = 558 y = 96 }
 	picture   = "DH3940"
     year      = 1952
     # ASW Equipment 1948 Construction
@@ -2760,7 +2076,7 @@ technology =
   { id        = 3950
     name      = TECH_APP_NAVAL_95_NAME
 
-    position = { x = 229 y = 335 }
+    position = { x = 558 y = 114 }
 	picture   = "DH3950"
     year      = 1960
     # ASW Equipment 1952 Construction
@@ -2780,209 +2096,10 @@ technology =
 		command = { type = scrap_model which = naval_asw value = 4 }
     }
   }
-    # ASW Equipment 1964
-  application =
-  { id        = 12370
-    name      = TECH_APP_NAVAL_152_NAME
-
-    position = { x = 229 y = 353 }
-	picture   = "12370"
-    year      = 1964
-    # ASW Equipment 1952 Construction
-    component = { id = 12371 name = TECH_CMP_NAVAL_152_1_NAME type = naval_engineering difficulty = 8 }
-    # ASW Equipment 1952 Sonar
-    component = { id = 12372 name = TECH_CMP_NAVAL_152_2_NAME type = electronics difficulty = 8 }
-    # ASW Equipment 1952 Launch Systems
-    component = { id = 12373 name = TECH_CMP_NAVAL_152_3_NAME type = naval_artillery difficulty = 8 }
-    # ASW Equipment 1952 Warhead
-    component = { id = 12374 name = TECH_CMP_NAVAL_152_4_NAME type = naval_artillery difficulty = 8 }
-    # ASW Equipment 1952 Prototype Testing
-    component = { id = 12375 name = TECH_CMP_NAVAL_152_5_NAME type = technical_efficiency difficulty = 8 double_time = yes }
-    required  = { 3950 }
-    effects =
-    { 
-		command = { type = new_model which = naval_asw value = 6 }
-		command = { type = scrap_model which = naval_asw value = 5 }
-    }
-  }
   
-      # ASW Equipment 1980
-  application =
-  { id        = 12380
-    name      = TECH_APP_NAVAL_153_NAME
-
-    position = { x = 229 y = 371 }
-	picture   = "12380"
-    year      = 1980
-    # ASW Equipment 1952 Construction
-    component = { id = 12381 name = TECH_CMP_NAVAL_153_1_NAME type = naval_engineering difficulty = 10 }
-    # ASW Equipment 1952 Sonar
-    component = { id = 12382 name = TECH_CMP_NAVAL_153_2_NAME type = electronics difficulty = 10 }
-    # ASW Equipment 1952 Launch Systems
-    component = { id = 12383 name = TECH_CMP_NAVAL_153_3_NAME type = naval_artillery difficulty = 10 }
-    # ASW Equipment 1952 Warhead
-    component = { id = 12384 name = TECH_CMP_NAVAL_153_4_NAME type = naval_artillery difficulty = 10 }
-    # ASW Equipment 1952 Prototype Testing
-    component = { id = 12385 name = TECH_CMP_NAVAL_153_5_NAME type = technical_efficiency difficulty = 10 double_time = yes }
-    required  = { 12370 }
-    effects =
-    { 
-		command = { type = new_model which = naval_asw value = 7 }
-		command = { type = scrap_model which = naval_asw value = 6 }
-    }
-  }
-  label = {
-  tag = TECH_CAT_FRIGATES
-  position = { x = 576 y = 1 }
-  }
-  application = {
-  id = 3890
-  name = TECH_APP_NAVAL_123_NAME
-  
-  position = { x = 576 y = 15 }
-  picture = "3890"
-  year = 1941
-  
-  #Sloop Hull Adaptation
-  component = { id = 3891 name = TECH_CMP_NAVAL_123_1_NAME type = naval_engineering difficulty = 3 }
-  #Frigate Propulsion
-  component = { id = 3892 name = TECH_CMP_NAVAL_123_2_NAME type = naval_engineering difficulty = 3 }
-  #100mm Naval Gun
-  component = { id = 3893 name = TECH_CMP_NAVAL_123_3_NAME type = naval_artillery difficulty = 3 }
-  #ASW Weapons
-  component = { id = 3894 name = TECH_CMP_NAVAL_123_4_NAME type = electronics difficulty = 3 }
-  #Prototype Tests
-  component = { id = 3895 name = TECH_CMP_NAVAL_123_5_NAME type = technical_efficiency difficulty = 3 double_time = yes }
-  required = { 3910 12000 }
-  effects = { 
-  command = { type = activate_unit_type which = d_05 }
-  command = { type = new_model which = d_05 value = 0 }
-  }
-  }
-  application = {
-  id = 3960
-  name = TECH_APP_NAVAL_124_NAME
-  
-  position = { x = 576 y = 33 }
-  picture = "3960"
-  year = 1945
-  
-  #Sloop Hull Adaptation
-  component = { id = 3961 name = TECH_CMP_NAVAL_124_1_NAME type = naval_engineering difficulty = 4 }
-  #Frigate Propulsion
-  component = { id = 3962 name = TECH_CMP_NAVAL_124_2_NAME type = naval_engineering difficulty = 4 }
-  #100mm Naval Gun
-  component = { id = 3963 name = TECH_CMP_NAVAL_124_3_NAME type = naval_artillery difficulty = 4 }
-  #ASW Weapons
-  component = { id = 3964 name = TECH_CMP_NAVAL_124_4_NAME type = electronics difficulty = 4 }
-  #Prototype Tests
-  component = { id = 3965 name = TECH_CMP_NAVAL_124_5_NAME type = technical_efficiency difficulty = 4 double_time = yes }
-  required = { 3890 }
-  effects = { 
-  command = { type = new_model which = d_05 value = 1 }
-  command = { type = scrap_model which = d_05 value = 0 }
-  }
-  }
-  application = {
-  id = 3970
-  name = TECH_APP_NAVAL_125_NAME
-  
-  position = { x = 576 y = 51 }
-  picture = "3970"
-  year = 1951
-  
-  #Sloop Hull Adaptation
-  component = { id = 3971 name = TECH_CMP_NAVAL_125_1_NAME type = naval_engineering difficulty = 4 }
-  #Frigate Propulsion
-  component = { id = 3972 name = TECH_CMP_NAVAL_125_2_NAME type = naval_engineering difficulty = 4 }
-  #100mm Naval Gun
-  component = { id = 3973 name = TECH_CMP_NAVAL_125_3_NAME type = naval_artillery difficulty = 4 }
-  #ASW Weapons
-  component = { id = 3974 name = TECH_CMP_NAVAL_125_4_NAME type = electronics difficulty = 4 }
-  #Prototype Tests
-  component = { id = 3975 name = TECH_CMP_NAVAL_125_5_NAME type = technical_efficiency difficulty = 4 double_time = yes }
-  required = { 3960 }
-  effects = { 
-  command = { type = new_model which = d_05 value = 2 }
-  command = { type = scrap_model which = d_05 value = 1 }
-  }
-  }
-  application = {
-  id = 3980
-  name = TECH_APP_NAVAL_126_NAME
-  
-  position = { x = 576 y = 69 }
-  picture = "3980"
-  year = 1958
-  
-  #Developed Frigate Hull Design
-  component = { id = 3981 name = TECH_CMP_NAVAL_126_1_NAME type = naval_engineering difficulty = 5 }
-  #Developed Propulsion
-  component = { id = 3982 name = TECH_CMP_NAVAL_126_2_NAME type = naval_engineering difficulty = 5 }
-  #76mm Naval Fast Firing Gun/20mm AA Guns
-  component = { id = 3983 name = TECH_CMP_NAVAL_126_3_NAME type = naval_artillery difficulty = 5 }
-  #ASW Weapons
-  component = { id = 3984 name = TECH_CMP_NAVAL_126_4_NAME type = electronics difficulty = 5 }
-  #Prototype Tests
-  component = { id = 3985 name = TECH_CMP_NAVAL_126_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-  required = { 3970 }
-  effects = { 
-  command = { type = new_model which = d_05 value = 3 }
-  command = { type = scrap_model which = d_05 value = 2 }
-  }
-  }
-  application = {
-  id = 3990
-  name = TECH_APP_NAVAL_127_NAME
-  
-  position = { x = 576 y = 87 }
-  picture = "3990"
-  year = 1962
-  
-  #Advanced Frigate Hull Design
-  component = { id = 3991 name = TECH_CMP_NAVAL_127_1_NAME type = naval_engineering difficulty = 6 }
-  #Developed Propulsion
-  component = { id = 3992 name = TECH_CMP_NAVAL_127_2_NAME type = naval_engineering difficulty = 6 }
-  #76mm Naval Fast Firing Gun/20mm AA Guns
-  component = { id = 3993 name = TECH_CMP_NAVAL_127_3_NAME type = naval_artillery difficulty = 6 }
-  #ASW Weapons
-  component = { id = 3994 name = TECH_CMP_NAVAL_127_4_NAME type = electronics difficulty = 6 }
-  #Prototype Tests
-  component = { id = 3995 name = TECH_CMP_NAVAL_127_5_NAME type = technical_efficiency difficulty = 6 double_time = yes }
-  required = { 3980 }
-  effects = { 
-  command = { type = new_model which = d_05 value = 4 }
-  command = { type = scrap_model which = d_05 value = 3 }
-  }
-  }
-  application = {
-  id = 3380
-  name = TECH_APP_NAVAL_128_NAME
-  
-  position = { x = 576 y = 105 }
-  picture = "3380"
-  year = 1973
-  
-  #Advanced Frigate Hull Design
-  component = { id = 3381 name = TECH_CMP_NAVAL_128_1_NAME type = naval_engineering difficulty = 7 }
-  #Developed Propulsion
-  component = { id = 3382 name = TECH_CMP_NAVAL_128_2_NAME type = naval_engineering difficulty = 7 }
-  #76mm Naval Fast Firing Gun/20mm AA Guns
-  component = { id = 3383 name = TECH_CMP_NAVAL_128_3_NAME type = naval_artillery difficulty = 7 }
-  #ASW Weapons
-  component = { id = 3384 name = TECH_CMP_NAVAL_128_4_NAME type = electronics difficulty = 7 }
-  #Prototype Tests
-  component = { id = 3385 name = TECH_CMP_NAVAL_128_5_NAME type = technical_efficiency difficulty = 7 double_time = yes }
-  required = { 3990 }
-  effects = { 
-  command = { type = new_model which = d_05 value = 5 }
-  command = { type = scrap_model which = d_05 value = 4 }
-  }
-  }
-
     label =
   { tag      = TECH_CAT_TORPEDO
-    position = { x = 576 y = 123 }
+    position = { x = 558 y = 220 }
   }
   
   # Early Practical Torpedos 1866-94
@@ -2990,7 +2107,7 @@ technology =
   { id        = 3720
     name      = TECH_APP_NAVAL_72_NAME
 
-    position = { x = 576 y = 137 } 
+    position = { x = 558 y = 234 } 
 	picture   = "DH3720"
     year      = 1870
     # Torpedo Design
@@ -3017,7 +2134,7 @@ technology =
   { id        = 3730
     name      = TECH_APP_NAVAL_73_NAME
 
-    position = { x = 576 y = 155 } 
+    position = { x = 558 y = 252 } 
 	picture   = "DH3730"
     year      = 1904
     # Airdropped Torpedo Design
@@ -3042,7 +2159,7 @@ technology =
   { id        = 3736
     name      = TECH_APP_NAVAL_736_NAME
 
-    position = { x = 581 y = 173 } 
+    position = { x = 558 y = 270 } 
 	picture   = "DH3736"
     year      = 1912
     # Airdropped Torpedo Design
@@ -3061,6 +2178,8 @@ technology =
 		command = { type = naval_attack which = naval_bomber value = 3 }
 		command = { type = naval_attack which = cag value = 2 }
 		command = { type = convoy_attack which = cag value = 2 }
+		command = { type = naval_attack which = light_cag value = 2 }
+		command = { type = convoy_attack which = light_cag value = 2 }
     }
   }	
   # Great War Torpedo 
@@ -3068,7 +2187,7 @@ technology =
   { id        = 3740
     name      = TECH_APP_NAVAL_74_NAME
 
-    position = { x = 576 y = 191 } 
+    position = { x = 558 y = 288 } 
 	picture   = "DH3740"
     year      = 1916
     # Torpedo Design
@@ -3094,7 +2213,7 @@ technology =
   { id        = 3750
     name      = TECH_APP_NAVAL_75_NAME
 
-    position = { x = 576 y = 209 } 
+    position = { x = 558 y = 306 } 
 	picture   = "DH3750"
     year      = 1927
     # Torpedo Design
@@ -3120,7 +2239,7 @@ technology =
   { id        = 3760
     name      = TECH_APP_NAVAL_76_NAME
 
-    position = { x = 576 y = 227 } 
+    position = { x = 558 y = 324 } 
 	picture   = "DH3760"
     year      = 1935
     # Torpedo Design
@@ -3141,6 +2260,8 @@ technology =
 		command = { type = naval_attack which = naval_bomber value = 2 }
 		command = { type = naval_attack which = cag value = 1 }
 		command = { type = convoy_attack which = cag value = 1 }
+		command = { type = naval_attack which = light_cag value = 1 }
+		command = { type = convoy_attack which = light_cag value = 1 }
     }
   }		
   # Semi Modern Torpedo (Acustic) 
@@ -3148,7 +2269,7 @@ technology =
   { id        = 3770
     name      = TECH_APP_NAVAL_77_NAME
 
-    position = { x = 576 y = 245 } 
+    position = { x = 558 y = 342 } 
 	picture   = "DH3770"
     year      = 1943
     # Torpedo Design
@@ -3174,7 +2295,7 @@ technology =
   { id        = 3780
     name      = TECH_APP_NAVAL_78_NAME
 
-    position = { x = 576 y = 263 } 
+    position = { x = 558 y = 360 } 
 	picture   = "DH3780"
     year      = 1948
     # Torpedo Design
@@ -3198,7 +2319,7 @@ technology =
   { id        = 3790
     name      = TECH_APP_NAVAL_79_NAME
 
-    position = { x = 576 y = 281 } 
+    position = { x = 558 y = 378 } 
 	picture   = "DH3790"
     year      = 1954
     # Torpedo Design
@@ -3220,164 +2341,8 @@ technology =
 		command = { type = naval_attack which = naval_bomber value = 2 }
 		command = { type = naval_attack which = cag value = 1 }
 		command = { type = convoy_attack which = cag value = 1 }
+		command = { type = naval_attack which = light_cag value = 1 }
+		command = { type = convoy_attack which = light_cag value = 1 }
     }
-  }	
-    # Advanced Torpedo
-   application =
-  { id        = 15350
-    name      = TECH_APP_NAVAL_154_NAME
-
-    position = { x = 581 y = 299 } 
-	picture   = "15350"
-    year      = 1957
-    # Torpedo Design
-    component = { id = 15351 name = TECH_CMP_NAVAL_154_1_NAME type = naval_engineering difficulty = 8 }
-    # Gyroscope
-    component = { id = 15352 name = TECH_CMP_NAVAL_154_2_NAME type = mechanics difficulty = 8 }
-    # HBX warhead
-    component = { id = 15353 name = TECH_CMP_NAVAL_154_3_NAME type = chemistry difficulty = 8 }
-    # Basic Compressed Air Torp. engine
-    component = { id = 15354 name = TECH_CMP_NAVAL_154_4_NAME type = naval_engineering difficulty = 8 }
-    # Torpedo Prototype Testing
-    component = { id = 15355 name = TECH_CMP_NAVAL_154_5_NAME type = naval_artillery difficulty = 8 double_time = yes }
-    required  = { 3790 }
-    effects =
-    { 	
-		
-		command = { type = sub_attack which = naval_torpedoes_s value = 3 }
-
-    }
-  }	
-    # Semi Modern Torpedo
-   application =
-  { id        = 15360
-    name      = TECH_APP_NAVAL_155_NAME
-
-    position = { x = 576 y = 317 } 
-	picture   = "15360"
-    year      = 1957
-    # Torpedo Design
-    component = { id = 15361 name = TECH_CMP_NAVAL_155_1_NAME type = naval_engineering difficulty = 8 }
-    # Gyroscope
-    component = { id = 15362 name = TECH_CMP_NAVAL_155_2_NAME type = mechanics difficulty = 8 }
-    # HBX warhead
-    component = { id = 15363 name = TECH_CMP_NAVAL_155_3_NAME type = chemistry difficulty = 8 }
-    # Basic Compressed Air Torp. engine
-    component = { id = 15364 name = TECH_CMP_NAVAL_155_4_NAME type = naval_engineering difficulty = 8 }
-    # Torpedo Prototype Testing
-    component = { id = 15365 name = TECH_CMP_NAVAL_155_5_NAME type = naval_artillery difficulty = 8 double_time = yes }
-    required  = { 3780 }
-    effects =
-    { 	
-		command = { type = convoy_attack which = naval_torpedoes_s value = 3 }
-		command = { type = naval_attack which = naval_torpedoes_s value = 3 }
-		command = { type = naval_attack which = naval_bomber value = 3 }
-		command = { type = naval_attack which = cag value = 2 }
-		command = { type = convoy_attack which = cag value = 2 }
-    }
-  }
-    # Modern Torpedo 
-   application =
-  { id        = 15370
-    name      = TECH_APP_NAVAL_156_NAME
-
-    position = { x = 576 y = 335 } 
-	picture   = "15370"
-    year      = 1964
-    # Torpedo Design
-    component = { id = 15371 name = TECH_CMP_NAVAL_156_1_NAME type = naval_engineering difficulty = 9 }
-    # Early Gyroscope
-    component = { id = 15372 name = TECH_CMP_NAVAL_156_2_NAME type = mechanics difficulty = 9 }
-    # HBX warhead
-    component = { id = 15373 name = TECH_CMP_NAVAL_156_3_NAME type = chemistry difficulty = 9 }
-    # Basic Compressed Air Torp. engine
-    component = { id = 15374 name = TECH_CMP_NAVAL_156_4_NAME type = naval_engineering difficulty = 9 }
-    # Torpedo Prototype Testing
-    component = { id = 15375 name = TECH_CMP_NAVAL_156_5_NAME type = naval_artillery difficulty = 9 double_time = yes }
-    required  = { 15360 }
-    effects =
-    {
-      	command = { type = new_model which = naval_torpedoes_s value = 2 }
-    }
-  }
-      # Semi Modern Torpedo
-   application =
-  { id        = 15380
-    name      = TECH_APP_NAVAL_157_NAME
-
-    position = { x = 576 y = 353 } 
-	picture   = "15380"
-    year      = 1970
-    # Torpedo Design
-    component = { id = 15381 name = TECH_CMP_NAVAL_157_1_NAME type = naval_engineering difficulty = 9 }
-    # Gyroscope
-    component = { id = 15382 name = TECH_CMP_NAVAL_157_2_NAME type = mechanics difficulty = 9 }
-    # HBX warhead
-    component = { id = 15383 name = TECH_CMP_NAVAL_157_3_NAME type = chemistry difficulty = 9 }
-    # Basic Compressed Air Torp. engine
-    component = { id = 15384 name = TECH_CMP_NAVAL_157_4_NAME type = naval_engineering difficulty = 9 }
-    # Torpedo Prototype Testing
-    component = { id = 15385 name = TECH_CMP_NAVAL_157_5_NAME type = naval_artillery difficulty = 9 double_time = yes }
-    required  = { 15370 }
-    effects =
-    { 	
-		command = { type = convoy_attack which = naval_torpedoes_s value = 4 }
-		command = { type = naval_attack which = naval_torpedoes_s value = 4 }
-		command = { type = naval_attack which = naval_bomber value = 4 }
-		command = { type = naval_attack which = cag value = 4 }
-		command = { type = convoy_attack which = cag value = 4 }
-    }
-  }
-     # Modern Torpedo 
-   application =
-  { id        = 15390
-    name      = TECH_APP_NAVAL_158_NAME
-
-    position = { x = 576 y = 371 } 
-	picture   = "15390"
-    year      = 1972
-    # Torpedo Design
-    component = { id = 15391 name = TECH_CMP_NAVAL_158_1_NAME type = naval_engineering difficulty = 10 }
-    # Early Gyroscope
-    component = { id = 15392 name = TECH_CMP_NAVAL_158_2_NAME type = mechanics difficulty = 10 }
-    # HBX warhead
-    component = { id = 15393 name = TECH_CMP_NAVAL_158_3_NAME type = chemistry difficulty = 10 }
-    # Basic Compressed Air Torp. engine
-    component = { id = 15394 name = TECH_CMP_NAVAL_158_4_NAME type = naval_engineering difficulty = 10 }
-    # Torpedo Prototype Testing
-    component = { id = 15395 name = TECH_CMP_NAVAL_158_5_NAME type = naval_artillery difficulty = 10 double_time = yes }
-    required  = { 15380 }
-    effects =
-    {
-      	command = { type = new_model which = naval_torpedoes_s value = 3 }
-    }
-  }
-	label = {
-	tag = TECH_CAT_CIWS
-	position = { x = 5 y = 177 }
-	}
-	          application = {
-  id = 12280
-  name = TECH_APP_NAVAL_143_NAME
-  
-  position = { x = 5 y = 191 }
-  picture = "12280"
-  year = 1979
-  
-  #Early Corvette Hull Design
-  component = { id = 12281 name = TECH_CMP_NAVAL_143_1_NAME type = naval_artillery difficulty = 5 }
-  #Very Light Armament
-  component = { id = 12282 name = TECH_CMP_NAVAL_143_2_NAME type = technical_efficiency difficulty = 5 }
-  #Sensors and Processing Systems
-  component = { id = 12283 name = TECH_CMP_NAVAL_143_4_NAME type = electronics difficulty = 5 }
-  #Corvette Propulsion
-  component = { id = 12284 name = TECH_CMP_NAVAL_143_2_NAME type = electronics difficulty = 5 }
-  #Prototype Tests
-  component = { id = 12285 name = TECH_CMP_NAVAL_143_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
-  required = { 3380 12170 }
-  effects = { command = { type = activate_unit_type which = b_08 }
-  command = { type = new_model which = b_08 value = 0 }
-  }
-  }
-	
+  }	  
 }

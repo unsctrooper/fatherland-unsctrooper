@@ -6,9 +6,6 @@ allowed_brigades = naval_fire_controll_s
 allowed_brigades = naval_improved_hull_s
 allowed_brigades = naval_torpedoes_s
 allowed_brigades = floatplane
-allowed_brigades = b_01
-allowed_brigades = b_08
-allowed_brigades = b_14
 
 # 0 - Armoured Frigate (1873)
 model = {
@@ -242,7 +239,7 @@ model = {
 	equipment = { heavy_cruiser = 1 manpower = 1800 }
 }
 
-# 8 - Heavy Missile Cruiser (1952) - Albany class
+# 8 - Heavy Missile Cruiser (1952)
 model = {
 	cost						= 3
 	buildtime 					= 1300
@@ -256,8 +253,8 @@ model = {
 	visibility					= 70
 	seadefence					= 30
 	airdefence					= 22
-	seaattack					= 15
-	convoyattack				= 15
+	seaattack					= 14
+	convoyattack				= 14
 	subattack					= 1
 	airattack					= 8
 	shorebombardment			= 6
@@ -271,60 +268,31 @@ model = {
 	equipment = { heavy_cruiser = 1 manpower = 1300 }
 }
 
-# 9 - Improved Heavy Missile Cruiser (1959) - Leahy/Belknap class
+# 9 - Nuclear Heavy Cruiser (1958)
 model = {
-	cost						= 3.5
-	buildtime 					= 1358
+	cost						= 3
+	buildtime 					= 1300
 	defaultorganisation 		= 20
 	morale						= 30
-	manpower					= 1.3
+	manpower					= 2
 	maxspeed					= 33
 	surfacedetectioncapability	= 2
 	airdetectioncapability		= 3
 	subdetectioncapability		= 8
 	visibility					= 70
 	seadefence					= 30
-	airdefence					= 23
-	seaattack					= 16
-	convoyattack				= 16
+	airdefence					= 22
+	seaattack					= 14
+	convoyattack				= 14
 	subattack					= 1
-	airattack					= 11
-	shorebombardment			= 7
+	airattack					= 6
+	shorebombardment			= 6
 	transportcapability			= 0
-	range						= 14000
-	supplyconsumption			= 0.7
-	fuelconsumption				= 0.6
-	distance					= 0.34
+	range						= 40000
+	supplyconsumption			= 1.6
+	fuelconsumption				= 0
+	distance					= 0.32
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { heavy_cruiser = 1 manpower = 1300 }
-}
-
-# 10 - Modern Missile Cruiser (1980) - Ticonderoga class
-model = {
-	cost						= 3.5
-	buildtime 					= 1500
-	defaultorganisation 		= 20
-	morale						= 30
-	manpower					= 1.5
-	maxspeed					= 36
-	surfacedetectioncapability	= 5
-	airdetectioncapability		= 4
-	subdetectioncapability		= 9
-	visibility					= 70
-	seadefence					= 34
-	airdefence					= 28
-	seaattack					= 23
-	convoyattack				= 23
-	subattack					= 1
-	airattack					= 15
-	shorebombardment			= 11
-	transportcapability			= 0
-	range						= 18000
-	supplyconsumption			= 0.7
-	fuelconsumption				= 0.6
-	distance					= 0.34
-	reinforce_time				= 0.4
-	reinforce_cost				= 0.6	
-	equipment = { heavy_cruiser = 1 manpower = 1500 }
+	equipment = { heavy_cruiser = 1 manpower = 2000 }
 }

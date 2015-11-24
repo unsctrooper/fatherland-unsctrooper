@@ -210,7 +210,7 @@ model = {
 	}
 }
 
-# 8 - Improved Turbojet Carrier Air Group (1956) A4D Skyhawk/A3D Skywarrior/F11F Tiger
+# 8 - Improved Turbojet Carrier Air Group (1956)
 model = {
 	cost 						= 6.5
 	buildtime 					= 190
@@ -224,110 +224,6 @@ model = {
 	subattack					= 10
 	airattack					= 20
 	shorebombardment			= 20
-	distance					= 2.5
-	supplyconsumption			= 1
-	fuelconsumption				= 1.5
-	upgrade_time_factor 		= 0.4
-	upgrade_cost_factor 		= 0.6
-	equipment = { 
-		fighter = 30
-		bomber = 30
-		manpower = 150
-	}
-}
-
-# 9 - Advanced Turbojet Carrier Air Group (1961) McDonnell Douglas F-4B Phantom II/North American A-5 Vigilante/Grumman A-6 Intruder
-model = {
-	cost 						= 7
-	buildtime 					= 210
-	manpower 					= 0.15
-	surfacedetectioncapability	= 24
-	airdetectioncapability 		= 20
-	subdetectioncapability		= 18
-	airdefence					= -21
-	seaattack					= 24
-	convoyattack				= 24
-	subattack					= 12
-	airattack					= 22
-	shorebombardment			= 22
-	distance					= 2.5
-	supplyconsumption			= 1
-	fuelconsumption				= 1.5
-	upgrade_time_factor 		= 0.4
-	upgrade_cost_factor 		= 0.6
-	equipment = { 
-		fighter = 30
-		bomber = 30
-		manpower = 150
-	}
-}
-
-# 10 - Semi Modern Turbojet Carrier Air Group (1970) McDonnell Douglas F-4N Phantom II/LTV A-7B Corsair II/Northrop Grumman EA-6B Prowler
-model = {
-	cost 						= 7.5
-	buildtime 					= 210
-	manpower 					= 0.15
-	surfacedetectioncapability	= 26
-	airdetectioncapability 		= 22
-	subdetectioncapability		= 20
-	airdefence					= -22
-	seaattack					= 26
-	convoyattack				= 26
-	subattack					= 14
-	airattack					= 24
-	shorebombardment			= 24
-	distance					= 2.5
-	supplyconsumption			= 1
-	fuelconsumption				= 1.5
-	upgrade_time_factor 		= 0.4
-	upgrade_cost_factor 		= 0.6
-	equipment = { 
-		fighter = 30
-		bomber = 30
-		manpower = 150
-	}
-}
-
-# 11 - Modern Turbojet Carrier Air Group (1974) Grumman F-14A Tomcat/LTV A-7E Corsair II/Lockheed S-3 Viking
-model = {
-	cost 						= 7.75
-	buildtime 					= 230
-	manpower 					= 0.15
-	surfacedetectioncapability	= 28
-	airdetectioncapability 		= 24
-	subdetectioncapability		= 22
-	airdefence					= -24
-	seaattack					= 28
-	convoyattack				= 28
-	subattack					= 16
-	airattack					= 26
-	shorebombardment			= 26
-	distance					= 2.5
-	supplyconsumption			= 1
-	fuelconsumption				= 1.5
-	upgrade_time_factor 		= 0.4
-	upgrade_cost_factor 		= 0.6
-	equipment = { 
-		fighter = 30
-		bomber = 30
-		manpower = 150
-	}
-}
-
-# 12 - Improved Modern Turbojet Carrier Air Group (1983) F/A-18 Hornet/LTV A-7E Corsair II/Lockheed S-3 Viking
-model = {
-	cost 						= 8
-	buildtime 					= 250
-	manpower 					= 0.15
-	surfacedetectioncapability	= 30
-	airdetectioncapability 		= 26
-	subdetectioncapability		= 24
-	airdefence					= -26
-	seaattack					= 30
-	convoyattack				= 30
-	subattack					= 18
-	airattack					= 28
-	shorebombardment			= 28
 	distance					= 2.5
 	supplyconsumption			= 1
 	fuelconsumption				= 1.5

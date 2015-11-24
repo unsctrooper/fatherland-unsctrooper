@@ -134,39 +134,3 @@ model = {
 	upgrade_cost_factor	= 0.42
 	equipment = { manpower = 3500 trucks = 92}
 }
-
-# 8 - Engineer (1970)
-model = {
-	cost				= 6
-	buildtime			= 90
-	manpower			= 2.1
-	toughness			= 1
-	defensiveness		= -1
-	softattack			= 0
-	hardattack			= 2
-	maxspeed			= 1
-	morale				= 6
-	supplyconsumption	= 0.27
-	fuelconsumption		= 0.5
-	upgrade_time_factor	= 0.40
-	upgrade_cost_factor	= 0.42
-	equipment = { manpower = 2100 trucks = 92 medium_armor = 30 }
-}
-
-# 9 - Engineer (1980)
-model = {
-	cost				= 6.5
-	buildtime			= 90
-	manpower			= 2.1
-	toughness			= 1
-	defensiveness		= -2
-	softattack			= 0
-	hardattack			= 3
-	maxspeed			= 2
-	morale				= 7
-	supplyconsumption	= 0.30
-	fuelconsumption		= 0.6
-	upgrade_time_factor	= 0.40
-	upgrade_cost_factor	= 0.42
-	equipment = { manpower = 2100 trucks = 92 medium_armor = 30 }
-}

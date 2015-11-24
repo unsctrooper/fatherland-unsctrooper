@@ -32,7 +32,7 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 20
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -50,7 +50,7 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 19
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -68,7 +68,7 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 17
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -86,7 +86,7 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 18
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -104,7 +104,7 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 18
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -122,7 +122,7 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 18
+	speed_cap			= 21
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
 
@@ -140,42 +140,6 @@ model = {
 	fuelconsumption		= 1.2
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.6
-	speed_cap			= 20
-	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
-}
-
-# 8 - Adv. Mod SP Artillery (1963)
-model = {
-	cost 				= 8
-	buildtime	 		= 140
-	manpower 			= 3
-	defensiveness 		= -7
-	toughness 			= -4
-	softness			= -2
-	softattack			= 10
-	hardattack			= 5
-	supplyconsumption 	= 0.6
-	fuelconsumption		= 1.2
-	upgrade_time_factor = 0.4
-	upgrade_cost_factor = 0.6
-	speed_cap			= 20
-	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
-}
-
-# 9 - Adv. Mod SP Artillery (1975)
-model = {
-	cost 				= 9
-	buildtime	 		= 140
-	manpower 			= 3
-	defensiveness 		= -7
-	toughness 			= -4
-	softness			= -3
-	softattack			= 13
-	hardattack			= 8
-	supplyconsumption 	= 0.8
-	fuelconsumption		= 1.4
-	upgrade_time_factor = 0.4
-	upgrade_cost_factor = 0.6
-	speed_cap			= 20
+	speed_cap			= 22
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }

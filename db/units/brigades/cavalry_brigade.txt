@@ -204,8 +204,8 @@ model = {
 	buildtime	 			= 350
 	manpower 				= 4
 	defaultorganisation		= 2
-	defensiveness 			= 4
-	toughness				= 4
+	defensiveness 			= -4
+	toughness				= -4
 	softness				= -5
 	softattack				= 6
 	hardattack           	= 2
@@ -223,8 +223,8 @@ model = {
 	cost 					= 4.5
 	buildtime	 			= 350
 	manpower 				= 4
-	defensiveness 			= 4
-	toughness				= 4
+	defensiveness 			= -4
+	toughness				= -4
 	softness				= -5
 	softattack				= 6
 	hardattack           	= 5
@@ -237,80 +237,19 @@ model = {
 	equipment = { manpower = 4000 trucks = 164 artillery = 30 halftracks = 226 medium_armor = 60 }
 }
 
-# 14 - Armored Cavalry Brigade (1953)
-model = {
-	cost 					= 4.5
-	buildtime	 			= 350
-	manpower 				= 4
-	defensiveness 			= 4
-	toughness				= 4
-	softness				= -5
-	softattack				= 7
-	hardattack           	= 6
-	transportweight			= 15
-	supplyconsumption 		= 0.8
-	fuelconsumption			= 2
-	upgrade_time_factor 	= 0.8
-	upgrade_cost_factor 	= 0.6
-	speed_cap				= 21
-	equipment = { manpower = 4000 trucks = 164 artillery = 30 halftracks = 226 medium_armor = 60 }
-}
-
-# 15 - Armored Cavalry Brigade (1961)
+# 14 - Air Cavalry Brigade (1951)
 model = {
 	cost 					= 5
-	buildtime	 			= 350
-	manpower 				= 4
-	defensiveness 			= 4
-	toughness				= 4
-	softness				= -5
-	softattack				= 8
-	hardattack           	= 6
-	transportweight			= 15
-	supplyconsumption 		= 0.8
-	fuelconsumption			= 2
+	buildtime	 			= 390
+	manpower 				= 1
+	suppression				= 2
+	softattack				= 5
+	hardattack              = 6
+	transportweight			= 10
+	supplyconsumption 		= 0.9
+	fuelconsumption			= 1.5
 	upgrade_time_factor 	= 0.8
 	upgrade_cost_factor 	= 0.6
-	speed_cap				= 21
-	equipment = { manpower = 4000 trucks = 164 artillery = 30 halftracks = 226 medium_armor = 60 }
+	speed_cap				= 50
+	equipment = { manpower = 1000 helicopter = 48 }
 }
-
-# 16 - Armored Cavalry Brigade (1978)
-model = {
-	cost 					= 5.5
-	buildtime	 			= 350
-	manpower 				= 4
-	defensiveness 			= 4
-	toughness				= 4
-	softness				= -5
-	softattack				= 10
-	hardattack           	= 8
-	transportweight			= 15
-	supplyconsumption 		= 0.8
-	fuelconsumption			= 2
-	upgrade_time_factor 	= 0.8
-	upgrade_cost_factor 	= 0.6
-	speed_cap				= 21
-	equipment = { manpower = 4000 trucks = 164 artillery = 30 halftracks = 226 medium_armor = 60 }
-}
-
-# 17 - Armored Cavalry Brigade (1981)
-model = {
-	cost 					= 6
-	buildtime	 			= 350
-	manpower 				= 4
-	defensiveness 			= 4
-	toughness				= 4
-	softness				= -5
-	softattack				= 12
-	hardattack           	= 9
-	transportweight			= 15
-	supplyconsumption 		= 0.8
-	fuelconsumption			= 2
-	upgrade_time_factor 	= 0.8
-	upgrade_cost_factor 	= 0.6
-	speed_cap				= 21
-	equipment = { manpower = 4000 trucks = 164 artillery = 30 halftracks = 226 medium_armor = 60 }
-}
-
-

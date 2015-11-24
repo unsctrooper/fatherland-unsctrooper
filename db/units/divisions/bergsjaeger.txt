@@ -5,17 +5,13 @@ allowed_brigades =  anti_air
 allowed_brigades =  cavalry_brigade
 allowed_brigades =  engineer		
 allowed_brigades =  police
-allowed_brigades = b_02
-allowed_brigades = b_04
-allowed_brigades = b_05
-allowed_brigades = b_06
 
 upgrade = { type = infantry		upgrade_time_factor = 0.25	upgrade_cost_factor = 0.88 }
 
 # 0 - Early Light Division (1870)
 model = {
 	cost 					= 6
-	buildtime	 			= 420
+	buildtime	 			= 290
 	manpower 				= 11
 	maxspeed 				= 6
 	defaultorganisation 	= 30
@@ -41,7 +37,7 @@ model = {
 # 1 - Early Light Division (1897)
 model = {
 	cost 					= 6
-	buildtime	 			= 420
+	buildtime	 			= 290
 	manpower 				= 11
 	maxspeed 				= 6
 	defaultorganisation 	= 30
@@ -67,7 +63,7 @@ model = {
 # 2 - Early Light Division (1907)
 model = {
 	cost 					= 6
-	buildtime	 			= 420
+	buildtime	 			= 290
 	manpower 				= 11
 	maxspeed 				= 6
 	defaultorganisation 	= 30
@@ -93,7 +89,7 @@ model = {
 # 3 - Early Light Division (1914)
 model = {
 	cost 					= 6
-	buildtime	 			= 420
+	buildtime	 			= 290
 	manpower 				= 11
 	maxspeed 				= 6
 	defaultorganisation 	= 30
@@ -119,7 +115,7 @@ model = {
 # 4 - Early Light Division (1916)
 model = {
 	cost 					= 6
-	buildtime	 			= 420
+	buildtime	 			= 290
 	manpower 				= 11
 	maxspeed 				= 6
 	defaultorganisation 	= 30
@@ -145,7 +141,7 @@ model = {
 # 5 - Early Mountain Division (1918)
 model = {
 	cost 					= 6
-	buildtime	 			= 420
+	buildtime	 			= 290
 	manpower 				= 13
 	maxspeed 				= 6
 	defaultorganisation 	= 35
@@ -163,6 +159,7 @@ model = {
 	fuelconsumption			= 0
 	upgrade_time_factor 	= 0.20 
 	upgrade_cost_factor 	= 0.75
+	upgrade_time_boost		= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time			= 0.45
 	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 87 horses = 5842 artillery = 36 heavy_artillery = 8 anti_tank = 6  }
@@ -187,8 +184,8 @@ model = {
 	transportweight			= 8
 	supplyconsumption 		= 0.8
 	fuelconsumption			= 0
-	upgrade_time_factor 	= 0.20 
-	upgrade_cost_factor 	= 0.75
+	upgrade_time_factor		= 0.40
+	upgrade_cost_factor		= 0.75
 	reinforce_time			= 0.45
 	reinforce_cost 			= 0.33
 	equipment = { manpower = 13000 trucks = 102 horses = 5648 artillery = 42 heavy_artillery = 8 anti_tank = 8 }
@@ -470,84 +467,6 @@ model = {
 	softattack				= 16
 	hardattack				= 5
 	airattack				= 4
-	transportweight			= 9
-	supplyconsumption 		= 1.1
-	fuelconsumption			= 0.2
-	upgrade_time_factor 	= 0.20 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.45
-	reinforce_cost 			= 0.33
-	equipment = {  manpower = 10000 trucks = 2326 artillery = 128 heavy_artillery = 48 anti_tank = 36 anti_air = 30 }
-}
-
-# 18 - Elite Mountain Division (1966)
-model = {
-	cost 					= 6
-	buildtime	 			= 420
-	manpower 				= 10
-	maxspeed 				= 6
-	defaultorganisation 	= 35
-	morale					= 40
-	defensiveness 			= 35
-	toughness				= 40
-	softness				= 90
-	suppression				= 3
-	airdefence				= 13
-	softattack				= 17
-	hardattack				= 5
-	airattack				= 4
-	transportweight			= 9
-	supplyconsumption 		= 1.1
-	fuelconsumption			= 0.2
-	upgrade_time_factor 	= 0.20 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.45
-	reinforce_cost 			= 0.33
-	equipment = {  manpower = 10000 trucks = 2326 artillery = 128 heavy_artillery = 48 anti_tank = 36 anti_air = 30 }
-}
-
-# 19 - Elite Mountain Division (1972)
-model = {
-	cost 					= 6.5
-	buildtime	 			= 420
-	manpower 				= 10
-	maxspeed 				= 6
-	defaultorganisation 	= 35
-	morale					= 40
-	defensiveness 			= 34
-	toughness				= 40
-	softness				= 90
-	suppression				= 3
-	airdefence				= 12
-	softattack				= 18
-	hardattack				= 6
-	airattack				= 5
-	transportweight			= 9
-	supplyconsumption 		= 1.1
-	fuelconsumption			= 0.2
-	upgrade_time_factor 	= 0.20 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.45
-	reinforce_cost 			= 0.33
-	equipment = {  manpower = 10000 trucks = 2326 artillery = 128 heavy_artillery = 48 anti_tank = 36 anti_air = 30 }
-}
-
-# 20 - Elite Mountain Division (1982)
-model = {
-	cost 					= 7
-	buildtime	 			= 420
-	manpower 				= 10
-	maxspeed 				= 6
-	defaultorganisation 	= 40
-	morale					= 40
-	defensiveness 			= 32
-	toughness				= 40
-	softness				= 90
-	suppression				= 3
-	airdefence				= 10
-	softattack				= 20
-	hardattack				= 7
-	airattack				= 6
 	transportweight			= 9
 	supplyconsumption 		= 1.1
 	fuelconsumption			= 0.2

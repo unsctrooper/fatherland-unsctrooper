@@ -101,36 +101,3 @@ model = {
 	speed_cap			= 16
 	equipment = { manpower = 3000 heavy_artillery = 34 }
 }
-
-# 6 - Self Propelled Super Heavy Artillery (1963)
-model = {
-	cost 				= 10
-	buildtime	 		= 200
-	manpower 			= 3
-	defensiveness 		= -1
-	toughness 			= -5	
-	softattack			= 12
-	hardattack			= 3
-	supplyconsumption 	= 1
-	fuelconsumption		= 1.3
-	upgrade_time_factor = 0.4
-	upgrade_cost_factor = 0.55
-	speed_cap			= 16
-	equipment = { manpower = 3000 halftracks = 34 trucks = 56 heavy_artillery = 34 }
-}
-# 7 - Super Heavy Artillery (1975)
-model = {
-	cost 				= 10
-	buildtime	 		= 200
-	manpower 			= 3
-	defensiveness 		= -1
-	toughness 			= -5	
-	maxspeed 			= -2
-	softattack			= 14
-	hardattack			= 5
-	supplyconsumption 	= 0.80
-	upgrade_time_factor = 0.4
-	upgrade_cost_factor = 0.55
-	speed_cap			= 16
-	equipment = { manpower = 3000 heavy_artillery = 34 }
-}

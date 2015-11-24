@@ -1,9 +1,6 @@
 # MODEL_14_
 
 allowed_brigades =  escort
-allowed_brigades = b_11
-allowed_brigades = b_12
-max_allowed_brigades = 2
 
 upgrade = { type = naval_bomber			upgrade_time_factor = 0.54	upgrade_cost_factor = 1.40 }
 upgrade = { type = tactical_bomber		upgrade_time_factor = 0.54	upgrade_cost_factor = 1.40 }
@@ -57,6 +54,7 @@ model = {
 	fuelconsumption				= 1.0
 	upgrade_time_factor 		= 0.60 
 	upgrade_cost_factor 		= 0.50
+	upgrade_time_boost 			= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 1000 }
@@ -82,8 +80,8 @@ model = {
 	range						= 1000
 	supplyconsumption 			= 3.0
 	fuelconsumption				= 1.0
-	upgrade_time_factor 		= 0.60 
-	upgrade_cost_factor 		= 0.50
+	upgrade_time_factor 		= 0.90
+	upgrade_cost_factor 		= 1.00
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 1000 }
@@ -143,7 +141,7 @@ model = {
 	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
-# 5 - Advanced Strategic Bomber - Consolidated B-24 Liberator (1942)/Avro Lancaster B.I
+# 5 - Advanced Strategic Bomber - Consolidated B-24 Liberator (1942)
 model = {
 	cost 						= 24
 	buildtime					= 270
@@ -170,7 +168,7 @@ model = {
 	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
 
-# 6 - Semi-Modern Strategic Bomber (1945) Avro Lincoln Avro Lancaster B.VII
+# 6 - Semi-Modern Strategic Bomber (1945)
 model = {
 	cost 						= 24
 	buildtime					= 270
@@ -271,87 +269,6 @@ model = {
 	range						= 6000
 	supplyconsumption 			= 4.5
 	fuelconsumption				= 5.0
-	upgrade_time_factor 		= 0.60 
-	upgrade_cost_factor 		= 0.50
-	reinforce_time				= 0.60
-	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
-}
-
-# 10 - Improved Intercontinental Strategic Bomber (1961)
-model = {
-	cost 						= 43
-	buildtime					= 280
-	defaultorganisation 		= 30
-	morale						= 20
-	manpower					= 3.5
-	maxspeed					= 875
-	surfacedetectioncapability	= 4
-	airdetectioncapability		= 3
-	surfacedefence				= 1
-	airdefence					= 6
-	airattack					= 6
-	strategicattack				= 18
-	softattack					= 4
-	hardattack					= 1
-	navalattack					= 0
-	range						= 6500
-	supplyconsumption 			= 5.5
-	fuelconsumption				= 6.0
-	upgrade_time_factor 		= 0.60 
-	upgrade_cost_factor 		= 0.50
-	reinforce_time				= 0.60
-	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
-}
-
-# 11 - Supersonic Strategic Bomber (1973)
-model = {
-	cost 						= 45
-	buildtime					= 280
-	defaultorganisation 		= 30
-	morale						= 20
-	manpower					= 3.5
-	maxspeed					= 1600
-	surfacedetectioncapability	= 2
-	airdetectioncapability		= 2
-	surfacedefence				= 3 #These are ultra Fast!
-	airdefence					= 7
-	airattack					= 5
-	strategicattack				= 22
-	softattack					= 6
-	hardattack					= 2
-	navalattack					= 0
-	range						= 5500
-	supplyconsumption 			= 6.5
-	fuelconsumption				= 7.0
-	upgrade_time_factor 		= 0.60 
-	upgrade_cost_factor 		= 0.50
-	reinforce_time				= 0.60
-	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
-}
-
-# 12 - Stealth Strategic Bomber (1989) B-2 Spirit/BAE Taranis/Sukhoi PAK-DA
-model = {
-	cost 						= 55
-	buildtime					= 330
-	defaultorganisation 		= 30
-	morale						= 20
-	manpower					= 3.5
-	maxspeed					= 1000
-	surfacedetectioncapability	= 3
-	airdetectioncapability		= 3
-	surfacedefence				= 1 
-	airdefence					= 2
-	airattack					= 1
-	strategicattack				= 26
-	softattack					= 8
-	hardattack					= 4
-	navalattack					= 4
-	range						= 6000
-	supplyconsumption 			= 7.5
-	fuelconsumption				= 7.5
 	upgrade_time_factor 		= 0.60 
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60

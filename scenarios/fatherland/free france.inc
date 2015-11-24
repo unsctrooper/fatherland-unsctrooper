@@ -23,12 +23,9 @@
   escorts                = 25
   free                   = { ic = 25 energy = 60 metal = 30 rare_materials = 15 oil = 20 supplies = 50 money = 10 }
    
-   no_exp_forces_to = {
-	ETH
-}
   diplomacy =
   { relation = { tag = AST value = 150 }
-    relation = { tag = BEL value = 200 access = yes }  
+    relation = { tag = BEL value = 200 }
     relation = { tag = BHU value = 150 }
     relation = { tag = BUL value = -200 }
     relation = { tag = CAN value = 150 }
@@ -58,7 +55,7 @@
     relation = { tag = LEB value = 50 access = yes }  
     relation = { tag = SYR value = 50 access = yes }  
 	relation = { tag = U03 value = 150 access = yes } 
-relation = { tag = ALS value = 200 access = }
+relation = { tag = ALS value = 200 access = yes guaranteed = { day = 1 month = january year = 1948 } }
   }
 
    SpyInfo                = {  country = "U01" NumberOfSpies = 9  } 

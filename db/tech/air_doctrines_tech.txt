@@ -101,7 +101,9 @@ technology =
     required  = { 9040 }
     effects =
     { command = { type = snow_attack which = cas value = 10 }
+      command = { type = snow_defense which = cas value = 10 }
       command = { type = rain_attack which = cas value = 10 }
+      command = { type = rain_defense which = cas value = 10 }
     }
   }
   # Night Strikes Doctrine
@@ -253,11 +255,23 @@ technology =
     required  = { 9100 9110 9120 }
     effects =
     { command = { type = night_attack which = tactical_bomber value = 10 }
-      command = { type = night_defense which = tactical_bomber value = 50 }
+      command = { type = night_defense which = tactical_bomber value = 10 }
       command = { type = snow_attack which = tactical_bomber value = 10 }
+      command = { type = snow_defense which = tactical_bomber value = 10 }
       command = { type = rain_attack which = tactical_bomber value = 10 }
+      command = { type = rain_defense which = tactical_bomber value = 10 }
+      command = { type = night_attack which = transport_plane value = 10 }
+      command = { type = night_defense which = transport_plane value = 10 }
+      command = { type = snow_attack which = transport_plane value = 10 }
+      command = { type = snow_defense which = transport_plane value = 10 }
+      command = { type = rain_attack which = transport_plane value = 10 }
+      command = { type = rain_defense which = transport_plane value = 10 }
       command = { type = night_attack which = naval_bomber value = 10 }
-      command = { type = night_defense which = naval_bomber value = 50 }
+      command = { type = night_defense which = naval_bomber value = 10 }
+      command = { type = snow_attack which = naval_bomber value = 10 }
+      command = { type = snow_defense which = naval_bomber value = 10 }
+      command = { type = rain_attack which = naval_bomber value = 10 }
+      command = { type = rain_defense which = naval_bomber value = 10 }
     }
   }
   # Strategic Destruction Doctrine
@@ -380,9 +394,11 @@ technology =
     required  = { 9150 9160 9170 }
     effects =
     { command = { type = night_attack which = strategic_bomber value = 10 }
-      command = { type = night_defense which = strategic_bomber value = 50 }
+      command = { type = night_defense which = strategic_bomber value = 10 }
       command = { type = snow_attack which = strategic_bomber value = 10 }
+      command = { type = snow_defense which = strategic_bomber value = 10 }
       command = { type = rain_attack which = strategic_bomber value = 10 }
+      command = { type = rain_defense which = strategic_bomber value = 10 }
     }
   }
   # First Strike Doctrine
@@ -406,10 +422,16 @@ technology =
     OR_required = { 9010 }
     required    = { }
     effects =
-    { command = { type = night_attack which = interceptor value = 10 }
+    { command = { type = night_attack which = interceptor value = 5 }
+	  command = { type = night_defense which = interceptor value = 5 }
+	  command = { type = night_attack which = rocket_interceptor value = 5 }
+	  command = { type = night_defense which = rocket_interceptor value = 5 }
       command = { type = night_attack which = multi_role value = 5 }
+      command = { type = night_defense which = multi_role value = 5 }
       command = { type = max_organization which = interceptor value = 3 }
       command = { type = morale which = interceptor value = 13 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
+      command = { type = morale which = rocket_interceptor value = 13 }
       command = { type = max_organization which = multi_role value = 3 }
       command = { type = morale which = multi_role value = 13 }
     }
@@ -436,6 +458,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 3 }
       command = { type = morale which = interceptor value = 3 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
+      command = { type = morale which = rocket_interceptor value = 3 }
       command = { type = max_organization which = multi_role value = 3 }
       command = { type = morale which = multi_role value = 3 }
     }
@@ -462,6 +486,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 3 }
       command = { type = morale which = interceptor value = 3 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
+      command = { type = morale which = rocket_interceptor value = 3 }
       command = { type = max_organization which = multi_role value = 3 }
       command = { type = morale which = multi_role value = 3 }
     }
@@ -488,9 +514,17 @@ technology =
     effects =
     { 
 	  command = { type = snow_attack which = interceptor value = 5 }
-      command = { type = rain_attack which = interceptor value = 5 }
+      command = { type = snow_defense which = interceptor value = 5 }
+	  command = { type = rain_attack which = interceptor value = 5 }
+      command = { type = rain_defense which = interceptor value = 5 }
+      command = { type = snow_attack which = rocket_interceptor value = 5 }
+      command = { type = snow_defense which = rocket_interceptor value = 5 }
+      command = { type = rain_attack which = rocket_interceptor value = 5 }
+      command = { type = rain_defense which = rocket_interceptor value = 5 }
       command = { type = snow_attack which = multi_role value = 10 }
+      command = { type = snow_defense which = multi_role value = 10 }
       command = { type = rain_attack which = multi_role value = 10 }
+      command = { type = rain_defense which = multi_role value = 10 }
     }
   }
   # Perimeter Defence Doctrine
@@ -514,10 +548,16 @@ technology =
     OR_required = { 9130 9180 }
     required    = { }
     effects =
-    { command = { type = night_defense which = interceptor value = 20 }
-      command = { type = night_defense which = multi_role value = 20 }
+    { command = { type = night_attack which = interceptor value = 5 }
+	  command = { type = night_defense which = interceptor value = 5 }
+	  command = { type = night_attack which = rocket_interceptor value = 5 }
+	  command = { type = night_defense which = rocket_interceptor value = 5 }
+      command = { type = night_attack which = multi_role value = 5 }
+      command = { type = night_defense which = multi_role value = 5 }
       command = { type = max_organization which = interceptor value = 3 }
       command = { type = morale which = interceptor value = 10 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
+      command = { type = morale which = rocket_interceptor value = 10 }
       command = { type = max_organization which = multi_role value = 3 }
       command = { type = morale which = multi_role value = 10 }
     }
@@ -543,6 +583,7 @@ technology =
     required  = { 9230 }
     effects =
     { command = { type = max_organization which = interceptor value = 3 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
       command = { type = max_organization which = multi_role value = 3 }
 	  command = { type = task_efficiency which = air_superiority value = 0.25 }
     }
@@ -568,6 +609,7 @@ technology =
     required  = { 9230 }
     effects =
     { command = { type = morale which = interceptor value = 10 }
+      command = { type = morale which = rocket_interceptor value = 10 }
       command = { type = morale which = multi_role value = 5 }
 	  command = { type = task_efficiency which = air_scramble value = 0.25 }
     }
@@ -593,6 +635,7 @@ technology =
     required  = { 9230 }
     effects =
     { command = { type = max_organization which = interceptor value = 3 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
       command = { type = max_organization which = multi_role value = 3 }
     }
   }
@@ -689,7 +732,9 @@ technology =
     effects =
     { 
 	  command = { type = snow_attack which = cas value = 10 }
+	  command = { type = snow_defense which = cas value = 10 }
       command = { type = rain_attack which = cas value = 10 }
+      command = { type = rain_defense which = cas value = 10 }
     }
   }
   # Offensive Fighter Box doctrine
@@ -714,6 +759,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 3 }
       command = { type = morale which = interceptor value = 3 }
+      command = { type = max_organization which = rocket_interceptor value = 3 }
+      command = { type = morale which = rocket_interceptor value = 3 }
       command = { type = max_organization which = multi_role value = 3 }
       command = { type = morale which = multi_role value = 3 }
     }
@@ -740,6 +787,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 2 }
+	  command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 2 } 
       command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 2 }
     }
@@ -765,6 +814,7 @@ technology =
     required  = { 9310 }
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
+      command = { type = max_organization which = rocket_interceptor value = 2 }
       command = { type = max_organization which = multi_role value = 2 }
     }
   }
@@ -790,9 +840,17 @@ technology =
     effects =
     { 
       command = { type = snow_attack which = interceptor value = 5 }
+      command = { type = snow_defense which = interceptor value = 5 }
       command = { type = rain_attack which = interceptor value = 5 }
+      command = { type = rain_defense which = interceptor value = 5 }
+      command = { type = snow_attack which = rocket_interceptor value = 5 }
+      command = { type = snow_defense which = rocket_interceptor value = 5 }
+      command = { type = rain_attack which = rocket_interceptor value = 5 }
+      command = { type = rain_defense which = rocket_interceptor value = 5 }
       command = { type = snow_attack which = multi_role value = 10 }
+      command = { type = snow_defense which = multi_role value = 10 }
       command = { type = rain_attack which = multi_role value = 10 }
+      command = { type = rain_defense which = multi_role value = 10 }
     }
   }
   # Infrastructure Destruction Doctrine
@@ -870,8 +928,20 @@ technology =
     effects =
     { command = { type = max_organization which = tactical_bomber value = 3 }
       command = { type = morale which = tactical_bomber value = 3 }
+      command = { type = snow_attack which = tactical_bomber value = 10 }
+      command = { type = snow_defense which = tactical_bomber value = 10 }
+      command = { type = rain_attack which = tactical_bomber value = 10 }
+      command = { type = rain_defense which = tactical_bomber value = 10 }
       command = { type = max_organization which = naval_bomber value = 3 }
       command = { type = morale which = naval_bomber value = 3 }
+      command = { type = snow_attack which = naval_bomber value = 10 }
+      command = { type = snow_defense which = naval_bomber value = 10 }
+      command = { type = rain_attack which = naval_bomber value = 10 }
+      command = { type = rain_defense which = naval_bomber value = 10 }
+      command = { type = snow_attack which = transport_plane value = 10 }
+      command = { type = snow_defense which = transport_plane value = 10 }
+      command = { type = rain_attack which = transport_plane value = 10 }
+      command = { type = rain_defense which = transport_plane value = 10 }
       command = { type = task_efficiency which = airborne_assault value = 0.1 }
     }
   }
@@ -924,6 +994,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 2 }
+	  command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 2 } 
       command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 2 }
     }
@@ -950,6 +1022,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 2 }
+	  command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 2 } 
       command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 2 }
     }
@@ -976,6 +1050,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 2 }
+	  command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 2 } 
       command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 2 }
     }
@@ -1002,6 +1078,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 10 }
+	  command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 10 } 
       command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 10 }
     }
@@ -1076,7 +1154,9 @@ technology =
     effects =
     { 
       command = { type = snow_attack which = strategic_bomber value = 10 }
+      command = { type = snow_defense which = strategic_bomber value = 10 }
       command = { type = rain_attack which = strategic_bomber value = 10 }
+      command = { type = rain_defense which = strategic_bomber value = 10 }
 	  command = { type = task_efficiency which = strategic_bombardment value = 0.1 }
     }
   }
@@ -1161,6 +1241,7 @@ technology =
     { command = { type = deactivate which = 27070 }
       command = { type = max_organization which = air value = 1 }
       command = { type = morale which = interceptor value = 5 }
+      command = { type = morale which = rocket_interceptor value = 5 } 
       command = { type = AA_batteries value = 5 }
 	  command = { type = task_efficiency which = air_scramble value = 0.25 }
     }
@@ -1187,7 +1268,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 5 }
       command = { type = morale which = interceptor value = 5 }
-      ##command = { type = build_cost which = interceptor when = now where = relative value = -10 }
+      command = { type = max_organization which = rocket_interceptor value = 5 }
+      command = { type = morale which = rocket_interceptor value = 5 }
     }
   }
   # Anti Air Gun Support
@@ -1212,6 +1294,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 3 }
       command = { type = morale which = interceptor value = 3 }
+	  command = { type = max_organization which = rocket_interceptor value = 3 }
+      command = { type = morale which = rocket_interceptor value = 3 } 
       command = { type = building_prod_mod which = flak value = 50 }
     }
   }
@@ -1237,7 +1321,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 3 }
-      ##command = { type = build_cost which = interceptor when = now where = relative value = -10 }
+      command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 3 }
       command = { type = AA_batteries value = 5 }
     }
   }
@@ -1269,9 +1354,18 @@ technology =
       command = { type = snow_defense which = interceptor value = 10 }
       command = { type = storm_attack which = interceptor value = 10 }
       command = { type = storm_defense which = interceptor value = 10 }
-      command = { type = urban_defense which = interceptor value = 10 }
       command = { type = max_organization which = interceptor value = 2 } 
       command = { type = morale which = interceptor value = 5 }
+      command = { type = night_attack which = rocket_interceptor value = 15 }
+      command = { type = night_defense which = rocket_interceptor value = 15 }
+      command = { type = rain_attack which = rocket_interceptor value = 10 }
+      command = { type = rain_defense which = rocket_interceptor value = 10 }
+      command = { type = snow_attack which = rocket_interceptor value = 10 }
+      command = { type = snow_defense which = rocket_interceptor value = 10 }
+      command = { type = storm_attack which = rocket_interceptor value = 10 }
+      command = { type = storm_defense which = rocket_interceptor value = 10 }
+      command = { type = max_organization which = rocket_interceptor value = 2 } 
+      command = { type = morale which = rocket_interceptor value = 5 }
     }
   }
   # Enemy Air Force Attrition
@@ -1425,7 +1519,8 @@ technology =
       command = { type = snow_defense which = multi_role value = 10 }
       command = { type = storm_attack which = multi_role value = 10 }
       command = { type = storm_defense which = multi_role value = 10 }
-      command = { type = urban_attack which = multi_role value = 10 }
+      command = { type = blizzard_attack which = multi_role value = 10 }
+      command = { type = blizzard_defense which = multi_role value = 10 }
       command = { type = morale which = multi_role value = 2 } 
       command = { type = max_organization which = multi_role value = 5 }
     }
@@ -1769,10 +1864,14 @@ technology =
     component = { id = 27245 name = TECH_CMP_AD_74_5_NAME type = centralized_execution difficulty = 5 }
     required  = { 27230 }
     effects =
-    { command = { type = jungle_attack which = cas value = 20 }
+    { command = { type = jungle_attack which = cas value = 5 }
       command = { type = swamp_attack which = cas value = 5 }
-      command = { type = forest_attack which = cas value = 10 }
+      command = { type = forest_attack which = cas value = 5 }
       command = { type = hill_attack which = cas value = 5 }
+      command = { type = jungle_attack which = tactical_bomber value = 5 }
+      command = { type = swamp_attack which = tactical_bomber value = 5 }
+      command = { type = forest_attack which = tactical_bomber value = 5 }
+      command = { type = hill_attack which = tactical_bomber value = 5 }
       command = { type = jungle_attack which = cavalry value = 10 }
       command = { type = jungle_move which = cavalry value = 10 }
       command = { type = swamp_attack which = cavalry value = 10 }
@@ -1878,15 +1977,20 @@ technology =
     component = { id = 27275 name = TECH_CMP_AD_77_5_NAME type = chemistry difficulty = 7 double_time = yes }
     required  = { 27260 }
     effects =
-    { command = { type = jungle_attack which = cas value = 20 }
-      command = { type = swamp_attack which = cas value = 10 }
+    { command = { type = jungle_attack which = cas value = 5 }
+      command = { type = swamp_attack which = cas value = 5 }
       command = { type = forest_attack which = cas value = 5 }
       command = { type = hill_attack which = cas value = 5 }
-      command = { type = jungle_attack which = strategic_bomber value = 20 }
+      command = { type = jungle_attack which = tactical_bomber value = 5 }
+      command = { type = swamp_attack which = tactical_bomber value = 5 }
+      command = { type = forest_attack which = tactical_bomber value = 5 }
+      command = { type = hill_attack which = tactical_bomber value = 5 }
+      command = { type = jungle_attack which = strategic_bomber value = 10 }
       command = { type = swamp_attack which = strategic_bomber value = 10 }
-      command = { type = forest_attack which = strategic_bomber value = 5 }
-      command = { type = hill_attack which = strategic_bomber value = 5 }
+      command = { type = forest_attack which = strategic_bomber value = 10 }
+      command = { type = hill_attack which = strategic_bomber value = 10 }
       command = { type = max_organization which = cas value = 10 }
+      command = { type = max_organization which = tactical_bomber value = 5 }
       command = { type = max_organization which = strategic_bomber value = 5 }
     }
   }
@@ -2158,6 +2262,8 @@ technology =
       command = { type = building_prod_mod which = flak value = 50 }
       command = { type = max_organization which = interceptor value = 6 }
       command = { type = morale which = interceptor value = 10 }
+      command = { type = max_organization which = rocket_interceptor value = 6 }
+      command = { type = morale which = rocket_interceptor value = 10 }
       command = { type = max_organization which = multi_role value = 6 }
       command = { type = morale which = multi_role value = 10 }
     }
@@ -2365,11 +2471,16 @@ technology =
     component = { id = 27454 name = TECH_CMP_AD_95_4_NAME type = training difficulty = 7 }
     # Adverse Weather Combat Trials
     component = { id = 27455 name = TECH_CMP_AD_95_5_NAME type = training difficulty = 7 double_time = yes }
-    required  = { 27420 8920 }# antisub role + sonobuoy from naval doctrines
+    required  = { 27420 8310 }# Naval Bomber Anti Submarine Role (1952) + Modern Aerial Convoy Defense (1952) from naval doctrines
     effects =
-    {       command = { type = snow_attack which = naval_bomber value = 15 }
-            command = { type = rain_attack which = naval_bomber value = 15 }
-            command = { type = night_attack which = naval_bomber value = 10 }
+    {       command = { type = snow_attack which = naval_bomber value = 10 }
+            command = { type = snow_defense which = naval_bomber value = 10 }
+            command = { type = rain_attack which = naval_bomber value = 10 }
+            command = { type = rain_defense which = naval_bomber value = 10 }
+            command = { type = storm_attack which = naval_bomber value = 10 }
+            command = { type = storm_defense which = naval_bomber value = 10 }
+            command = { type = blizzard_attack which = naval_bomber value = 10 }
+            command = { type = blizzard_defense which = naval_bomber value = 10 }
     }
   }
 ##########################
@@ -2396,12 +2507,14 @@ technology =
     required  = { 27560 }
     effects =
     { 
-	  command = { type = max_organization which = interceptor value = -16 }
+      command = { type = max_organization which = interceptor value = -16 }
       command = { type = morale which = interceptor value = -8 }
-	  command = { type = max_organization which = multi_role value = -12 }
+	  command = { type = max_organization which = rocket_interceptor value = -16 }
+      command = { type = morale which = rocket_interceptor value = -8 } 
+      command = { type = max_organization which = multi_role value = -12 }
       command = { type = morale which = multi_role value = -6 }
-			command = { type = task_efficiency which = runway_cratering value = 0.15 }
-			command = { type = task_efficiency which = air_superiority value = 0.15 }	  
+      command = { type = task_efficiency which = runway_cratering value = 0.15 }
+      command = { type = task_efficiency which = air_superiority value = 0.15 }	  
 
     }
   }
@@ -2411,7 +2524,7 @@ technology =
     name      = TECH_APP_AD_102_NAME
 
     position  = { x = 371 y = 78 }
-	picture   = "DH27470"
+    picture   = "DH27470"
     year      = 1925
     # Interwar Bomber Doctrine
     component = { id = 27471 name = TECH_CMP_AD_102_1_NAME type = training difficulty = 25 }
@@ -2424,25 +2537,25 @@ technology =
     # Counter-Air Tactics
     component = { id = 27475 name = TECH_CMP_AD_102_5_NAME type = training difficulty = 25 }
     required  = { 27600 27550 }
-	or_required  = { }
+    or_required  = { }
     effects =
     { 
- 	  command = { type = max_organization which = cas value = -15 }
+      command = { type = max_organization which = cas value = -15 }
       command = { type = morale which = cas value = -12 }
-	  command = { type = max_organization which = tactical_bomber value = -10 }
-	  command = { type = morale which = tactical_bomber value = -2 }	  
-	  command = { type = max_organization which = strategic_bomber value = -10 }
-      command = { type = morale which = strategic_bomber value = -4 }	  
-	  command = { type = max_organization which = naval_bomber value = -19 }
-	  command = { type = morale which = naval_bomber value = -10 }
-	        command = { type = task_efficiency which = convoy_air_raiding value = 0.15 }
-			command = { type = task_efficiency which = ground_attack value = 0.15 }
-			command = { type = task_efficiency which = interdiction value = 0.2 }
-			command = { type = task_efficiency which = naval_strike value = 0.15 }
-			command = { type = task_efficiency which = logistical_strike value = 0.15 }
-			command = { type = task_efficiency which = strategic_bombardment value = 0.3 }
-			command = { type = task_efficiency which = port_strike value = 0.15 }
-			command = { type = task_efficiency which = installation_strike value = 0.15 }	      
+      command = { type = max_organization which = tactical_bomber value = -10 }
+      command = { type = morale which = tactical_bomber value = -2 }
+      command = { type = max_organization which = strategic_bomber value = -10 }
+      command = { type = morale which = strategic_bomber value = -4 }
+      command = { type = max_organization which = naval_bomber value = -19 }
+      command = { type = morale which = naval_bomber value = -10 }
+      command = { type = task_efficiency which = convoy_air_raiding value = 0.15 }
+      command = { type = task_efficiency which = ground_attack value = 0.15 }
+      command = { type = task_efficiency which = interdiction value = 0.2 }
+      command = { type = task_efficiency which = naval_strike value = 0.15 }
+      command = { type = task_efficiency which = logistical_strike value = 0.15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.3 }
+      command = { type = task_efficiency which = port_strike value = 0.15 }
+      command = { type = task_efficiency which = installation_strike value = 0.15 }	      
     }
   }
 # Air Superiority Doctrine
@@ -2451,7 +2564,7 @@ technology =
     name      = TECH_APP_AD_1_NAME
 
     position  = { x = 562 y = 10 }
-	picture   = "9010"
+    picture   = "9010"
     year      = 1933
     # Tactical Unit - Wing
     component = { id = 9011 name = TECH_CMP_AD_1_1_NAME type = training difficulty = 5 }
@@ -2467,11 +2580,15 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 2 }
       command = { type = morale which = interceptor value = 2 }
+	  command = { type = max_organization which = rocket_interceptor value = 2 }
+      command = { type = morale which = rocket_interceptor value = 2 } 
       command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 2 }
       command = { type = max_organization which = cag value = 2 }
       command = { type = morale which = cag value = 2 }
-	  command = { type = task_efficiency which = air_superiority value = 0.15 }
+      command = { type = max_organization which = light_cag value = 2 }
+      command = { type = morale which = light_cag value = 2 }
+      command = { type = task_efficiency which = air_superiority value = 0.15 }
     }
   }
 #################### 
@@ -2498,6 +2615,7 @@ technology =
     required  = { 9030 }
     effects =
     { command = { type = morale which = interceptor value = 10 }
+      command = { type = morale which = rocket_interceptor value = 10 } 
       command = { type = morale which = multi_role value = 10 }
 	  command = { type = morale which = cas value = 10 }
 	  command = { type = task_efficiency which = air_superiority value = 0.15 }
@@ -2525,8 +2643,10 @@ technology =
 	or_required  = { 27520 27530 27540 27570 }
     effects =
     { command = { type = morale which = interceptor value = 10 }
+      command = { type = morale which = rocket_interceptor value = 10 } 
       command = { type = morale which = multi_role value = 10 }
       command = { type = morale which = cag value = 10 }
+	  command = { type = morale which = light_cag value = 10 }
       command = { type = morale which = cas value = 10 }
 	  command = { type = morale which = naval_bomber value = 10 }
 	  command = { type = morale which = strategic_bomber value = 10 }
@@ -2612,6 +2732,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 10 }
       command = { type = morale which = interceptor value = 5 }
+	  command = { type = max_organization which = rocket_interceptor value = 10 }
+      command = { type = morale which = rocket_interceptor value = 5 } 
 	  command = { type = max_organization which = multi_role value = 5 }
       command = { type = morale which = multi_role value = 2 }
     }
@@ -2667,6 +2789,8 @@ technology =
     { 
 	  command = { type = max_organization which = interceptor value = 5 }
       command = { type = morale which = interceptor value = 5 }
+	  command = { type = max_organization which = rocket_interceptor value = 5 }
+      command = { type = morale which = rocket_interceptor value = 5 } 
 	  command = { type = max_organization which = multi_role value = 2 }
       command = { type = morale which = multi_role value = 2 }
 	  command = { type = task_efficiency which = air_superiority value = 0.15 }
@@ -2776,6 +2900,8 @@ technology =
     effects =
     { command = { type = max_organization which = interceptor value = 5 }
       command = { type = morale which = interceptor value = 2 }
+	  command = { type = max_organization which = rocket_interceptor value = 5 }
+      command = { type = morale which = rocket_interceptor value = 2 } 
 	  command = { type = max_organization which = strategic_bomber value = 5 }
       command = { type = morale which = strategic_bomber value = 2 }  
 	  command = { type = max_organization which = cas value = 5 }
@@ -2786,16 +2912,16 @@ technology =
 	  command = { type = morale which = tactical_bomber value = 2 }
 	  command = { type = max_organization which = naval_bomber value = 5 }
 	  command = { type = morale which = naval_bomber value = 2 }
-		command = { type = task_efficiency which = convoy_air_raiding value = 0.1 }
-		command = { type = task_efficiency which = ground_attack value = 0.1 }
-		command = { type = task_efficiency which = interdiction value = 0.1 }
-		command = { type = task_efficiency which = naval_strike value = 0.1 }
-		command = { type = task_efficiency which = logistical_strike value = 0.1 }
-		command = { type = task_efficiency which = strategic_bombardment value = 0.1 }
-		command = { type = task_efficiency which = port_strike value = 0.1 }
-		command = { type = task_efficiency which = installation_strike value = 0.1 }
-		command = { type = task_efficiency which = runway_cratering value = 0.1 }
-		command = { type = task_efficiency which = air_superiority value = 0.1 }
+	  command = { type = task_efficiency which = convoy_air_raiding value = 0.1 }
+	  command = { type = task_efficiency which = ground_attack value = 0.1 }
+	  command = { type = task_efficiency which = interdiction value = 0.1 }
+	  command = { type = task_efficiency which = naval_strike value = 0.1 }
+	  command = { type = task_efficiency which = logistical_strike value = 0.1 }
+	  command = { type = task_efficiency which = strategic_bombardment value = 0.1 }
+	  command = { type = task_efficiency which = port_strike value = 0.1 }
+	  command = { type = task_efficiency which = installation_strike value = 0.1 }
+	  command = { type = task_efficiency which = runway_cratering value = 0.1 }
+	  command = { type = task_efficiency which = air_superiority value = 0.1 }
     }
   }  
 # Naval Aerial Support Concept  

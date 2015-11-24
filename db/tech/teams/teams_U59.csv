@@ -1,20 +1,12 @@
 U59;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
-1110000;Central Research Institute of Shipbuilding Technology;T11003;6;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110001;Machine-Building Plant-MZiK;T7204;5;1890;2000;general_equipment;rocketry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110002;Vyatka Factory Design Bureau;T3710;6;1863;2000;mechanics;artillery;munitions;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110003;Mikoyan Design Bureau;T7207;5;1939;2000;aeronautics;general_equipment;fighter_design;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110004;V.A. Degtyarev Plant;T7213;6;1917;2000;general_equipment;artillery;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110005;Saint-Petersburg Naval Academy;100504;3;1900;2000;naval_artillery;small_taskforce_tactics;submarine_tactics;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110006;Igor Sikorsky;100273;7;1912;2000;aeronautics;mechanics;electronics;artillery;bomber_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110007;Abram Ioffe;100275;7;1910;1960;mathematics;chemistry;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110008;Pavel Bermondt-Avalov;100591;5;1938;1955;infantry_focus;decentralized_execution;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110009;Alexander Kolchak;100279;5;1915;1960;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110010;Alexei Kazakov;100476;4;1915;1950;piloting;fighter_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110011;George Gamow;100480;6;1926;2000;mathematics;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110012;Vladimir Zvorykin;100704;8;1917;1954;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110013;Vladimir Galkovsky;100705;5;1929;1958;mathematics;rocketry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110014;Zhukovsky Air Force Academy;100706;6;1906;2000;aeronautics;electronics;training;centralized_execution;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110015;Alexander Prokofiev-Seversky;100707;5;1915;2000;piloting;bomber_tactics;fighter_design;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110016;Obukhov plant;100709;7;1863;2000;mechanics;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110017;Okhrana;T5150390;5;1866;2000;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-1110018;Novosibirsk Heavy Industry Authority;re_01;4;1948;2000;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110000;Emiliano Zapata ;100647;6;1910;1919;small_unit_tactics;infantry_focus;individual_courage;decentralized_execution;MANEUVER_TACTICS;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110001;Hacienda de Atlihuayán;100655;1;1911;1964;general_equipment;munitions;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110003;Morelos Community;100656;3;1910;1964;chemistry;medicine;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110004;Eufemio Zapata;100657;4;1910;1917;management;individual_courage;small_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110006;Manuel Palafox;100579;3;1910;1930;small_taskforce_tactics;infantry_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110007;Felipe Neri Jiménez;100658;1;1911;1914;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110008;Montaño Sánchez Otilio;100659;3;1910;1917;management;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110009;Ingenio Azucarero 'La Abeja';100660;4;1910;1964;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110010;Ferrocarriles Nacionales de México;100577;4;1964;1964;mechanics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110011;Fábrica Nacional de Armas;100572;3;1964;1964;industrial_engineering;chemistry;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1110012;TNCA;T2200;4;1947;1947;aeronautics;avionics;bomber_design;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

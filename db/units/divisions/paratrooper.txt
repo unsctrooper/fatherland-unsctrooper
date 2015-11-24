@@ -2,8 +2,6 @@
 
 allowed_brigades =  glider_armor
 allowed_brigades =  glider_artillery
-allowed_brigades = b_02
-allowed_brigades = b_05
 
 upgrade = { type = infantry		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.28 }
 
@@ -140,8 +138,6 @@ model = {
 # 5 - Modern Airborne Division (1953) 
 model = {
 	cost 					= 10
-	cavalry = 14
-	paratrooper = 6
 	buildtime	 			= 410
 	manpower 				= 9
 	maxspeed 				= 6
@@ -169,7 +165,6 @@ model = {
 model = {
 	cost 					= 10
 	buildtime	 			= 410
-	paratrooper = 7
 	manpower 				= 9
 	maxspeed 				= 6
 	defaultorganisation 	= 35
@@ -197,7 +192,6 @@ model = {
 	cost 					= 10
 	buildtime	 			= 410
 	manpower 				= 9
-	paratrooper = 8
 	maxspeed 				= 6
 	defaultorganisation 	= 35
 	morale					= 40
@@ -211,111 +205,6 @@ model = {
 	airattack				= 7
 	transportweight			= 10
 	supplyconsumption 		= 1.1
-	fuelconsumption			= 0.0
-	upgrade_time_factor 	= 0.15 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.55
-	reinforce_cost 			= 0.33
-	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
-}
-
-# 8 - Elite Airborne Division (1966) 
-model = {
-	cost 					= 10
-	buildtime	 			= 410
-	manpower 				= 9
-	maxspeed 				= 6
-	paratrooper = 9
-	defaultorganisation 	= 35
-	morale					= 40
-	defensiveness 			= 35
-	toughness				= 40
-	softness				= 95
-	suppression				= 3
-	airdefence				= 14
-	softattack				= 18
-	hardattack				= 9
-	airattack				= 7
-	transportweight			= 10
-	supplyconsumption 		= 1.1
-	fuelconsumption			= 0.0
-	upgrade_time_factor 	= 0.15 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.55
-	reinforce_cost 			= 0.33
-	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
-}
-
-# 9 - Elite Airborne Division (1972) 
-model = {
-	cost 					= 10
-	buildtime	 			= 410
-	manpower 				= 9
-	maxspeed 				= 6
-	defaultorganisation 	= 35
-	morale					= 40
-	defensiveness 			= 35
-	toughness				= 40
-	softness				= 95
-	suppression				= 3
-	airdefence				= 14
-	softattack				= 20
-	hardattack				= 10
-	airattack				= 8
-	transportweight			= 10
-	supplyconsumption 		= 1.1
-	fuelconsumption			= 0.0
-	upgrade_time_factor 	= 0.15 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.55
-	reinforce_cost 			= 0.33
-	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
-}
-
-# 10 - Elite Airborne Division (1982) 
-model = {
-	cost 					= 11
-	buildtime	 			= 410
-	manpower 				= 9
-	maxspeed 				= 6
-	defaultorganisation 	= 40
-	morale					= 50
-	defensiveness 			= 35
-	toughness				= 40
-	softness				= 95
-	suppression				= 3
-	airdefence				= 13
-	softattack				= 22
-	hardattack				= 13
-	airattack				= 10
-	transportweight			= 10
-	supplyconsumption 		= 1.2
-	fuelconsumption			= 0.0
-	upgrade_time_factor 	= 0.15 
-	upgrade_cost_factor 	= 0.75
-	reinforce_time			= 0.55
-	reinforce_cost 			= 0.33
-	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
-}
-
-# 11 - Elite Airborne Division (1990) 
-model = {
-	cost 					= 11.5
-	buildtime	 			= 410
-	manpower 				= 9
-	maxspeed 				= 6
-	defaultorganisation 	= 45
-	morale					= 55
-	defensiveness 			= 35
-	toughness				= 40
-	softness				= 95
-	suppression				= 3
-	airdefence				= 11
-	softattack				= 24
-	hardattack				= 15
-	airattack				= 11
-	transportweight			= 10
-	supplyconsumption 		= 1.2
 	fuelconsumption			= 0.0
 	upgrade_time_factor 	= 0.15 
 	upgrade_cost_factor 	= 0.75

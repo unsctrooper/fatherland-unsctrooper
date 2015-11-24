@@ -107,39 +107,3 @@ model = {
 	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
 }
-
-# 6 - Modern SP AA Artillery (1963)
-model = {
-	cost 				= 6
-	buildtime	 		= 90
-	manpower 			= 3
-	defensiveness 		= 0
-	hardattack			= 2
-	softattack			= 4
-	airattack			= 8
-	airdefence			= -5
-	supplyconsumption 	= 0.18
-	fuelconsumption		= 1.14
-	upgrade_time_factor = 0.4
-	upgrade_cost_factor = 0.6
-	speed_cap			= 20
-	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
-}
-
-# 7 - Mobile SAM System (1969)
-model = {
-	cost 				= 6
-	buildtime	 		= 90
-	manpower 			= 3
-	defensiveness 		= 0
-	hardattack			= 4
-	softattack			= 2
-	airattack			= 12
-	airdefence			= -5
-	supplyconsumption 	= 0.18
-	fuelconsumption		= 1.14
-	upgrade_time_factor = 0.4
-	upgrade_cost_factor = 0.6
-	speed_cap			= 20
-	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
-}
