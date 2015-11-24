@@ -186,6 +186,12 @@ inventions = { 3000027 3000028 3000031 3000017 3000018 }
      relation = { tag = GER value = -150  } 
      relation = { tag = AXI value = -150  } 
 	 relation = { tag = SOV value = 50 access = yes } 
+	 relation = { tag = USA value = 200 access = yes } 
+	 relation = { tag = CAN value = 50 access = yes } 
+	 relation = { tag = ENG value = 50 access = yes } 
+	 relation = { tag = U01 value = 50 access = yes } # FREE FRANCE
+	 relation = { tag = KOR value = 50 access = yes } 
+	 relation = { tag = MEX value = 50 access = yes } 
     } 
    SpyInfo                = {  country = "ALS" NumberOfSpies = 1  } 
    #headofstate            = {  type = 9 id = 199101  } 
