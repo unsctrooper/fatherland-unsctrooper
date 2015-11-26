@@ -183,6 +183,21 @@ ai_settings	= { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes
 inventions = { 3000027 3000028 3000031 3000017 3000018 }
    diplomacy = 
    {  relation = { tag = GER value = 150  } 
+   relation = { tag = GER value = 200 access = yes }
+   relation = { tag = ITA value = 150 access = yes }
+   relation = { tag = ROM value = 150 access = yes }
+   relation = { tag = HUN value = 150 access = yes }
+   relation = { tag = BUL value = 150 access = yes }
+   relation = { tag = CRO value = 150 access = yes }
+   relation = { tag = FRA value = 150 access = yes }
+   relation = { tag = GRE value = 150 access = yes }
+   relation = { tag = FIN value = 150 access = yes }
+   relation = { tag = U45 value = 150 access = yes } # RK Norwegen
+   relation = { tag = U46 value = 150 access = yes }
+   relation = { tag = U47 value = 150 access = yes }
+   relation = { tag = U40 value = 150 access = yes }
+   relation = { tag = U41 value = 150 access = yes }
+   relation = { tag = U42 value = 150 access = yes }
     } 
    SpyInfo                = {  country = "AXI" NumberOfSpies = 1  } 
    #headofstate            = {  type = 9 id = 1105001  } 
