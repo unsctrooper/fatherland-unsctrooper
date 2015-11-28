@@ -151,4 +151,7 @@ event = "db\events\fatherland\middle_east\united_arab_republic.txt"
 event = "db\events\fatherland\middle_east\yemen.txt"
 #event = "db\events\fatherland\middle_east\israel.txt"
 
-
+#POST WW3 VICTORY
+event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_Asia.txt"
+event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_America.txt"
+event = "db\events\fatherland\post_ww3\WWIII_UN_victory.txt"

@@ -1,0 +1,201 @@
+### Axis victory in Asia: RK Ural, RK Westsibirien, RK Ostsibirien
+
+# 1. Occupation of European Russia
+# 2. Occupation of Kazakhstan
+
+### Occupation of European Russia
+
+event = {
+id = 300000
+random = no
+country = GER
+
+trigger = {
+### Germany or RK Muscovy owns Muscovy area
+OR = {
+owned = { province = 572 data = GER } # Moscow
+owned = { province = 680 data = GER } # Gorky
+owned = { province = 542 data = GER } # Archangelsk
+owned = { province = 688 data = GER } # Ukhta
+owned = { province = 572 data = U43 } # Moscow
+owned = { province = 680 data = U43 } # Gorky
+owned = { province = 542 data = U43 } # Archangelsk
+owned = { province = 688 data = U43 } # Ukhta
+}
+### Siberian powers do not exist anymore
+NOT = {
+exists = SOV
+exists = SIB
+exists = U59 # Empire of Russia
+}
+}
+
+name = "EVT_300000_NAME"
+desc = "EVT_300000_DESC"
+style = 1
+picture = "fatherland\rk_moskowien"
+date = { day = 1 month = january year = 1948 } 
+offset = 3
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+NOT = {
+exists = U43
+headofstate = 15 # Ludwig Beck
+}
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 30
+name = "Release Reichskommissariat Moskowien."
+command = { type = independence which = U43 value = 1 when = 0 }
+command = { type = make_puppet which = U43 }
+command = { type = dissent value = -2 }
+command = { type = secedearea which = U43 value = Arkhangelsk }
+command = { type = secederegion which = U43 value = Northern Russia }
+command = { type = secedearea which = U43 value = Gorkij }
+command = { type = secedearea which = U43 value = Reservoire Rybinsk }
+command = { type = secedearea which = U43 value = Kazan }
+command = { type = secedeprovince which = U43 value = 689 } # Solikamsk
+}
+
+action = {
+trigger = { 
+exists = U43 
+NOT = {
+headofstate = 15 # Ludwig Beck
+}
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+} 
+ai_chance = 30
+name = "Assign territory to Reichskommissariat Moskowien."
+command = { type = dissent value = -2 }
+command = { type = secedearea which = U43 value = Arkhangelsk }
+command = { type = secederegion which = U43 value = Northern Russia }
+command = { type = secedearea which = U43 value = Gorkij }
+command = { type = secedearea which = U43 value = Reservoire Rybinsk }
+command = { type = secedearea which = U43 value = Kazan }
+command = { type = secedeprovince which = U43 value = 689 } # Solikamsk
+}
+
+action = {
+trigger = { 
+NOT = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+headofstate = 1 # Hitler
+}
+} 
+ai_chance = 60
+name = "Release Russia and assign territory to it." # Organization of the Russian State
+command = { type = independence which = RUS value = 1 when = 0 }
+command = { type = make_puppet which = RUS }
+command = { type = dissent value = 4 }
+command = { type = secedearea which = RUS value = Arkhangelsk }
+command = { type = secederegion which = RUS value = Northern Russia }
+command = { type = secedearea which = RUS value = Gorkij }
+command = { type = secedearea which = RUS value = Reservoire Rybinsk }
+command = { type = secedearea which = RUS value = Kazan }
+command = { type = secedeprovince which = RUS value = 689 } # Solikamsk
+}
+
+
+action = {
+trigger = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+NOT = { headofstate = 1 } # Hitler
+} 
+ai_chance = 60
+name = "Assign territory to the Russian State." # Organization of the Russian State
+command = { type = dissent value = 4 }
+command = { type = secedearea which = RUS value = Arkhangelsk }
+command = { type = secederegion which = RUS value = Northern Russia }
+command = { type = secedearea which = RUS value = Gorkij }
+command = { type = secedearea which = RUS value = Reservoire Rybinsk }
+command = { type = secedearea which = RUS value = Kazan }
+command = { type = secedeprovince which = RUS value = 689 } # Solikamsk
+}
+
+action = {
+name = "Integrate with the Reich."
+ai_chance = 10
+command = { type = dissent value = -4 }
+}
+}
+
+### Occupation of Central Asia
+
+event = {
+id = 300001
+random = no
+country = GER
+
+trigger = {
+event = 300000 # Occupation of European Russia
+# Germany, Cossacks, or RK Kaukasus own Turkestan
+OR = {
+region = { region = Kazakhstan country = GER data = 2 value = 80 }
+region = { region = Kazakhstan country = TRA data = 2 value = 80 }
+region = { region = Kazakhstan country = U42 data = 2 value = 80 }
+region = { region = Central Asia country = GER data = 2 value = 80 }
+region = { region = Central Asia country = TRA data = 2 value = 80 }
+region = { region = Central Asia country = U42 data = 2 value = 80 }
+}
+}
+
+name = "EVT_300001_NAME"
+desc = "EVT_300001_DESC"
+style = 1
+picture = "fatherland\0turkestan0"
+date = { day = 1 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+NOT = {
+exists = U48
+headofstate = 15 # Ludwig Beck
+}
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 60
+name = "Release Reichskommissariat Turkestan."
+command = { type = independence which = U48 value = 1 when = 0 }
+command = { type = make_puppet which = U48 }
+command = { type = dissent value = -6 }
+command = { type = secederegion which = U48 value = Kazakhstan }
+command = { type = secederegion which = U48 value = Central Asia }
+}
+
+action = {
+trigger = { 
+NOT = {
+exists = UPE
+}
+}
+ai_chance = 30
+name = "Release puppet Turkestan."
+command = { type = independence which = UPE value = 1 when = 0 }
+command = { type = make_puppet which = UPE }
+command = { type = dissent value = 2 }
+command = { type = secederegion which = UPE value = Kazakhstan }
+command = { type = secederegion which = UPE value = Central Asia }
+}
+
+action = {
+name = "Integrate with the Reich."
+ai_chance = 10
+command = { type = dissent value = -4 }
+}
+}
