@@ -18,12 +18,9 @@ country = GER
 
 trigger = {
 ### Germany owns entire Muscovy area
-OR = {
-AND = {
 owned = { province = 572 data = GER } # Moscow
 owned = { province = 680 data = GER } # Gorky
 owned = { province = 542 data = GER } # Archangelsk
-}
 ### Siberian powers do not exist anymore
 NOT = {
 exists = SOV
@@ -37,7 +34,7 @@ desc = "EVT_300000_DESC"
 style = 1
 picture = "fatherland\rk_moskowien"
 date = { day = 1 month = january year = 1948 } 
-offset = 3
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -242,6 +239,8 @@ command = { type = secedearea which = U56 value = "Vorkuta" }
 command = { type = secedearea which = U56 value = "Perm" }
 command = { type = secedearea which = U56 value = "Sverdlovsk" }
 command = { type = secedearea which = U56 value = "Ufa" }
+command = { type = secedeprovince which = U56 value = 690 when = 0 }
+command = { type = secedeprovince which = U56 value = 1134 when = 0 }
 }
 
 action = {
@@ -257,6 +256,8 @@ command = { type = secedearea which = RUS value = "Vorkuta" }
 command = { type = secedearea which = RUS value = "Perm" }
 command = { type = secedearea which = RUS value = "Sverdlovsk" }
 command = { type = secedearea which = RUS value = "Ufa" }
+command = { type = secedeprovince which = RUS value = 690 when = 0 }
+command = { type = secedeprovince which = RUS value = 1134 when = 0 }
 command = { type = local_setflag which = ns_russia_urals }
 }
 
@@ -343,11 +344,9 @@ country = GER
 
 trigger = {
 event = 300003
-area = { area = "Irkutsk" country = GER data = 2 value = 80 }
 area = { area = "Yakutsk" country = GER data = 2 value = 80 }
 area = { area = "Magadan" country = GER data = 2 value = 80 }
 area = { area = "Kamchatka" country = GER data = 2 value = 80 }
-owned = { province = 1161 data = GER }
 }
 
 name = "EVT_300004_NAME"
@@ -430,8 +429,7 @@ country = GER
 
 trigger = {
 event = 300004
-area = { area = "Khabarovsk" country = GER data = 2 value = 80 }
-area = { area = "Amur" country = GER data = 2 value = 80 }
+area = { area = "Primorski" country = GER data = 2 value = 80 }
 }
 
 name = "EVT_300005_NAME"
@@ -459,6 +457,7 @@ command = { type = dissent value = -3 }
 command = { type = secedearea which = U64 value = "Khabarovsk" }
 command = { type = secedearea which = U64 value = "Amur" }
 command = { type = secedearea which = U64 value = "Zabaikalye" }
+command = { type = secedearea which = U64 value = "Primorski" }
 }
 
 action = {
@@ -473,6 +472,7 @@ command = { type = dissent value = 2 }
 command = { type = secedearea which = RUS value = "Khabarovsk" }
 command = { type = secedearea which = RUS value = "Amur" }
 command = { type = secedearea which = RUS value = "Zabaikalye" }
+command = { type = secedearea which = RUS value = "Primorski" }
 }
 
 action = {
@@ -493,6 +493,7 @@ command = { type = dissent value = 2 }
 command = { type = secedearea which = CHI value = "Khabarovsk" }
 command = { type = secedearea which = CHI value = "Amur" }
 command = { type = secedearea which = CHI value = "Zabaikalye" }
+command = { type = secedearea which = CHI value = "Primorski" }
 }
 
 action = {
@@ -510,6 +511,7 @@ random = no
 country = GER
 
 trigger = {
+event = 300005
 area = { area = "Mongolia" country = GER data = 2 value = 80 }
 }
 
@@ -518,7 +520,7 @@ desc = "EVT_300006_DESC"
 style = 1
 picture = "fatherland\mongolia"
 date = { day = 1 month = january year = 1948 } 
-offset = 2
+offset = 5
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
