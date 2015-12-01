@@ -1,8 +1,13 @@
-### Axis victory in Asia: RK Ural, RK Westsibirien, RK Ostsibirien
+### Axis victory in Asia
+### Germany owns entire Siberia, Far East and Mongolia at the end of WW3 in Asia
 
 # 1. Occupation of European Russia
 # 2. Occupation of Kazakhstan
 # 3. Occupation of Urals
+# 4. Occupation of Western Siberia
+# 5. Occupation of Eastern Siberia
+# 6. Occupation of Russian Far East
+# 7. Occupation of Mongolia
 
 ### Occupation of European Russia
 
@@ -96,7 +101,7 @@ command = { type = secedearea which = RUS value = "Nizhnij Novgorod" }
 command = { type = secedearea which = RUS value = "Reservoire Rybinsk" }
 command = { type = secedearea which = RUS value = "Kazan" }
 command = { type = secederegion which = RUS value = "Southern Russia" }
-command = { type = secedeprovince which = RUS value = 689 } # Solikamsk
+command = { type = local_setflag which = ns_russia_arch }
 }
 
 
@@ -115,6 +120,7 @@ command = { type = secedearea which = RUS value = "Reservoire Rybinsk" }
 command = { type = secedearea which = RUS value = "Kazan" }
 command = { type = secederegion which = RUS value = "Southern Russia" }
 command = { type = secedeprovince which = RUS value = 689 } # Solikamsk
+command = { type = local_setflag which = ns_russia_arch }
 }
 
 action = {
@@ -132,7 +138,7 @@ random = no
 country = GER
 
 trigger = {
-event = 300000 # Occupation of European Russia
+event = 300000
 # Germany, Cossacks, or RK Kaukasus own Turkestan
 OR = {
 region = { region = "Kazakstan" country = GER data = 2 value = 80 }
@@ -203,20 +209,10 @@ country = GER
 
 trigger = {
 event = 300001
-OR = {
 area = { area = "Vorkuta" country = GER data = 2 value = 80 }
 area = { area = "Perm" country = GER data = 2 value = 80 }
 area = { area = "Sverdlovsk" country = GER data = 2 value = 80 }
 area = { area = "Ufa" country = GER data = 2 value = 80 }
-area = { area = "Vorkuta" country = RUS data = 2 value = 80 }
-area = { area = "Perm" country = RUS data = 2 value = 80 }
-area = { area = "Sverdlovsk" country = RUS data = 2 value = 80 }
-area = { area = "Ufa" country = RUS data = 2 value = 80 }
-area = { area = "Vorkuta" country = U43 data = 2 value = 80 }
-area = { area = "Perm" country = U43 data = 2 value = 80 }
-area = { area = "Sverdlovsk" country = U43 data = 2 value = 80 }
-area = { area = "Ufa" country = U43 data = 2 value = 80 }
-}
 }
 
 name = "EVT_300002_NAME"
@@ -237,7 +233,7 @@ ideology = NAZI
 ideology = FASCIST
 }
 }
-ai_chance = 50
+ai_chance = 60
 name = "Release Reichskommissariat Ural."
 command = { type = independence which = U56 value = 1 when = 0 }
 command = { type = make_puppet which = U56 }
@@ -252,19 +248,326 @@ action = {
 trigger = { 
 exists = RUS 
 alliance = { country = GER country = RUS }
+local_flag = ns_russia_arch
 }
-ai_chance = 40
+ai_chance = 30
 name = "Annex into Russia."
 command = { type = dissent value = 5 }
 command = { type = secedearea which = RUS value = "Vorkuta" }
 command = { type = secedearea which = RUS value = "Perm" }
 command = { type = secedearea which = RUS value = "Sverdlovsk" }
 command = { type = secedearea which = RUS value = "Ufa" }
+command = { type = local_setflag which = ns_russia_urals }
 }
 
 action = {
 name = "Integrate with the Reich."
 ai_chance = 10
 command = { type = dissent value = -4 }
+}
+}
+
+### Occupation of Western Siberia
+
+event = {
+id = 300003
+random = no
+country = GER
+
+trigger = {
+event = 300002
+area = { area = "Tomsk" country = GER data = 2 value = 80 }
+area = { area = "Tyumen" country = GER data = 2 value = 80 }
+area = { area = "Omsk" country = GER data = 2 value = 80 }
+area = { area = "Novosibirsk" country = GER data = 2 value = 80 }
+area = { area = "North Krasnoyarsk" country = GER data = 2 value = 80 }
+area = { area = "South Krasnoyarsk" country = GER data = 2 value = 80 }
+}
+
+name = "EVT_300003_NAME"
+desc = "EVT_300003_DESC"
+style = 1
+picture = "fatherland\siberia"
+date = { day = 1 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+NOT = {
+headofstate = 15 # Ludwig Beck
+}
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 50
+name = "Release Reichskommissariat Westsibirien."
+command = { type = independence which = U63 value = 1 when = 0 }
+command = { type = make_puppet which = U63 }
+command = { type = dissent value = -6 }
+}
+
+action = {
+trigger = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+local_flag = ns_russia_urals
+}
+ai_chance = 40
+name = "Cede to Russia."
+command = { type = dissent value = 5 }
+command = { type = secedearea which = RUS value = "Tomsk" }
+command = { type = secedearea which = RUS value = "Tyumen" }
+command = { type = secedearea which = RUS value = "Omsk" }
+command = { type = secedearea which = RUS value = "Novosibirsk" }
+command = { type = secedearea which = RUS value = "North Krasnoyarsk" }
+command = { type = secedearea which = RUS value = "South Krasnoyarsk" }
+command = { type = local_setflag which = ns_russia_westsiberia }
+}
+
+action = {
+name = "Integrate with the Reich."
+ai_chance = 10
+command = { type = dissent value = -4 }
+}
+}
+
+### Occupation of Eastern Siberia
+
+event = {
+id = 300004
+random = no
+country = GER
+
+trigger = {
+event = 300003
+area = { area = "Irkutsk" country = GER data = 2 value = 80 }
+area = { area = "Yakutsk" country = GER data = 2 value = 80 }
+area = { area = "Magadan" country = GER data = 2 value = 80 }
+area = { area = "Kamchatka" country = GER data = 2 value = 80 }
+owned = { province = 1161 data = GER }
+}
+
+name = "EVT_300004_NAME"
+desc = "EVT_300004_DESC"
+style = 1
+picture = "fatherland\siberia"
+date = { day = 1 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+NOT = {
+headofstate = 15 # Ludwig Beck
+}
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 50
+name = "Release Reichskommissariat Ostsibirien."
+command = { type = independence which = U64 value = 1 when = 0 }
+command = { type = make_puppet which = U64 }
+command = { type = dissent value = -6 }
+}
+
+action = {
+ai_chance = 15
+name = "Release puppet Siberian Republic."
+command = { type = independence which = SIB value = 1 when = 0 }
+command = { type = make_puppet which = SIB }
+command = { type = dissent value = 4 }
+}
+
+action = {
+trigger = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+local_flag = ns_russia_westsiberia
+}
+ai_chance = 25
+name = "Cede to Russia."
+command = { type = dissent value = 2 }
+command = { type = secedearea which = RUS value = "Irkutsk" }
+command = { type = secedearea which = RUS value = "Yakutsk" }
+command = { type = secedearea which = RUS value = "Magadan" }
+command = { type = secedearea which = RUS value = "Kamchatka" }
+command = { type = secedeprovince which = RUS value = 1161 when = 0 }
+command = { type = local_setflag which = ns_russia_eastsiberia }
+}
+
+action = {
+trigger = { 
+alliance = { country = GER country = CHI }
+}
+ai_chance = 50
+name = "Cede Eastern Siberia to Nationalist China."
+command = { type = dissent value = 2 }
+command = { type = secedearea which = CHI value = "Irkutsk" }
+command = { type = secedearea which = CHI value = "Yakutsk" }
+command = { type = secedearea which = CHI value = "Magadan" }
+command = { type = secedearea which = CHI value = "Kamchatka" }
+command = { type = secedeprovince which = CHI value = 1161 when = 0 }
+}
+
+action = {
+name = "Integrate with the Reich."
+ai_chance = 10
+command = { type = dissent value = -4 }
+}
+}
+
+### Occupation of Russian Far East
+
+event = {
+id = 300005
+random = no
+country = GER
+
+trigger = {
+event = 300004
+area = { area = "Khabarovsk" country = GER data = 2 value = 80 }
+area = { area = "Amur" country = GER data = 2 value = 80 }
+}
+
+name = "EVT_300005_NAME"
+desc = "EVT_300005_DESC"
+style = 1
+picture = "fatherland\far_east"
+date = { day = 1 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+NOT = {
+headofstate = 15 # Ludwig Beck
+}
+exists = U64
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 50
+name = "Integrate with RK Ostsibirien."
+command = { type = dissent value = -3 }
+command = { type = secedearea which = U64 value = "Khabarovsk" }
+command = { type = secedearea which = U64 value = "Amur" }
+command = { type = secedearea which = U64 value = "Zabaikalye" }
+}
+
+action = {
+trigger = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+local_flag = ns_russia_eastsiberia
+}
+ai_chance = 25
+name = "Cede to Russia."
+command = { type = dissent value = 2 }
+command = { type = secedearea which = RUS value = "Khabarovsk" }
+command = { type = secedearea which = RUS value = "Amur" }
+command = { type = secedearea which = RUS value = "Zabaikalye" }
+}
+
+action = {
+ai_chance = 15
+name = "Release puppet Far East Republic."
+command = { type = independence which = U57 value = 1 when = 0 }
+command = { type = make_puppet which = U57 }
+command = { type = dissent value = 4 }
+}
+
+action = {
+trigger = { 
+alliance = { country = GER country = CHI }
+}
+ai_chance = 70
+name = "Cede Far East to Nationalist China."
+command = { type = dissent value = 2 }
+command = { type = secedearea which = CHI value = "Khabarovsk" }
+command = { type = secedearea which = CHI value = "Amur" }
+command = { type = secedearea which = CHI value = "Zabaikalye" }
+}
+
+action = {
+name = "Integrate with the Reich."
+ai_chance = 10
+command = { type = dissent value = -4 }
+}
+}
+
+### Occupation of Mongolia
+
+event = {
+id = 300006
+random = no
+country = GER
+
+trigger = {
+area = { area = "Mongolia" country = GER data = 2 value = 80 }
+}
+
+name = "EVT_300006_NAME"
+desc = "EVT_300006_DESC"
+style = 1
+picture = "fatherland\mongolia"
+date = { day = 1 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+NOT = {
+headofstate = 15 # Ludwig Beck
+}
+exists = U64
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 20
+name = "Integrate with RK Westsibirien."
+command = { type = dissent value = -3 }
+command = { type = secedearea which = U64 value = "Mongolia" }
+}
+
+action = {
+trigger = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+local_flag = ns_russia_westsiberia
+}
+ai_chance = 15
+name = "Cede to Russia."
+command = { type = dissent value = 2 }
+command = { type = secedearea which = RUS value = "Mongolia" }
+}
+
+action = {
+ai_chance = 5
+name = "Release puppet Mongolia."
+command = { type = independence which = MON value = 1 when = 0 }
+command = { type = make_puppet which = MON }
+command = { type = dissent value = 4 }
+}
+
+action = {
+trigger = { 
+NOT = {
+war = { country = GER  country = CHI }
+}
+}
+ai_chance = 60
+name = "Cede Mongolia to Nationalist China."
+command = { type = dissent value = 2 }
+command = { type = secedearea which = CHI value = "Mongolia" }
+command = { type = 	relation which = CHI value = 50 }
 }
 }
