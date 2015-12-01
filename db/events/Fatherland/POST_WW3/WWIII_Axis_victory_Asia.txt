@@ -573,3 +573,72 @@ command = { type = secedearea which = CHI value = "Mongolia" }
 command = { type = 	relation which = CHI value = 50 }
 }
 }
+
+### Astrakhan occupied by Germany
+
+event = {
+id = 300007
+random = no
+country = GER
+
+trigger = {
+owned = { province = 706 data = GER } # Astrakhan
+owned = { province = 660 data = GER } # Volzhsky
+}
+
+name = "EVT_300007_NAME"
+desc = "EVT_300007_DESC"
+style = 1
+picture = "fatherland\wehrmacht1"
+date = { day = 1 month = january year = 1948 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { 
+exists = RUS 
+alliance = { country = GER country = RUS }
+}
+ai_chance = 60
+name = "Cede to Russia."
+command = { type = dissent value = 1 }
+command = { type = secedeprovince which = RUS value = 706 }
+command = { type = secedeprovince which = RUS value = 660 }
+}
+
+action = {
+trigger = { 
+exists = TRA
+NOT = { war = { country = -1 country = TRA } }
+}
+ai_chance = 50
+name = "Cede to Cossack Federation."
+command = { type = dissent value = 1 }
+command = { type = secedeprovince which = RUS value = 706 }
+command = { type = secedeprovince which = RUS value = 660 }
+}
+
+action = {
+trigger = { 
+exists = U43
+NOT = {
+headofstate = 15 # Ludwig Beck
+}
+OR = {
+ideology = NAZI
+ideology = FASCIST
+}
+}
+ai_chance = 40
+name = "Cede to Reichskommissariat Moskowien."
+command = { type = dissent value = -1 }
+command = { type = secedeprovince which = U43 value = 706 }
+command = { type = secedeprovince which = U43 value = 660 }
+}
+
+action = {
+name = "Integrate with the Reich."
+ai_chance = 10
+command = { type = dissent value = -4 }
+}
+}
