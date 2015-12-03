@@ -63,7 +63,8 @@ command = { type = secedearea which = U43 value = "Kursk" }
 command = { type = secedearea which = U43 value = "Voronezh" }
 command = { type = secedearea which = U43 value = "Engels" }
 command = { type = secedearea which = U43 value = "Astrakhan" }
-}
+command = { type = secedeprovince which = U43 value = 651 }
+command = { type = secedeprovince which = U43 value = 654 } # Voronezh}
 
 action = {
 trigger = { 
@@ -88,6 +89,8 @@ command = { type = secedearea which = U43 value = "Kursk" }
 command = { type = secedearea which = U43 value = "Voronezh" }
 command = { type = secedearea which = U43 value = "Engels" }
 command = { type = secedearea which = U43 value = "Astrakhan" }
+command = { type = secedeprovince which = U43 value = 651 }
+command = { type = secedeprovince which = U43 value = 654 } # Voronezh
 }
 
 action = {
@@ -112,6 +115,8 @@ command = { type = secedearea which = RUS value = "Kursk" }
 command = { type = secedearea which = RUS value = "Voronezh" }
 command = { type = secedearea which = RUS value = "Engels" }
 command = { type = secedearea which = RUS value = "Astrakhan" }
+command = { type = secedeprovince which = RUS value = 651 }
+command = { type = secedeprovince which = RUS value = 654 } # Voronezh
 command = { type = local_setflag which = ns_russia_arch }
 }
 
@@ -135,6 +140,8 @@ command = { type = secedearea which = RUS value = "Kursk" }
 command = { type = secedearea which = RUS value = "Voronezh" }
 command = { type = secedearea which = RUS value = "Engels" }
 command = { type = secedearea which = RUS value = "Astrakhan" }
+command = { type = secedeprovince which = RUS value = 651 }
+command = { type = secedeprovince which = RUS value = 654 } # Voronezh
 command = { type = local_setflag which = ns_russia_arch }
 }
 
