@@ -8,6 +8,7 @@
 # 5. Occupation of Eastern Siberia
 # 6. Occupation of Russian Far East
 # 7. Occupation of Mongolia
+# 8. Occupation of Astrakhan
 
 ### Occupation of European Russia
 
@@ -22,11 +23,11 @@ owned = { province = 572 data = GER } # Moscow
 owned = { province = 680 data = GER } # Gorky
 owned = { province = 542 data = GER } # Archangelsk
 ### Siberian powers do not exist anymore
-NOT = {
-exists = SOV
-exists = SIB
-exists = U59 # Empire of Russia
-}
+#NOT = {
+#exists = SOV
+#exists = SIB
+#exists = U59 # Empire of Russia
+#}
 }
 
 name = "EVT_300000_NAME"
@@ -57,7 +58,11 @@ command = { type = secederegion which = U43 value = "Northern Russia" }
 command = { type = secedearea which = U43 value = "Nizhnij Novgorod" }
 command = { type = secedearea which = U43 value = "Reservoire Rybinsk" }
 command = { type = secedearea which = U43 value = "Kazan" }
-command = { type = secedeprovince which = U43 value = 689 } # Solikamsk
+command = { type = secedearea which = U43 value = "Penza" }
+command = { type = secedearea which = U43 value = "Kursk" }
+command = { type = secedearea which = U43 value = "Voronezh" }
+command = { type = secedearea which = U43 value = "Engels" }
+command = { type = secedearea which = U43 value = "Astrakhan" }
 }
 
 action = {
@@ -78,7 +83,11 @@ command = { type = secederegion which = U43 value = "Northern Russia" }
 command = { type = secedearea which = U43 value = "Nizhnij Novgorod" }
 command = { type = secedearea which = U43 value = "Reservoire Rybinsk" }
 command = { type = secedearea which = U43 value = "Kazan" }
-command = { type = secedeprovince which = U43 value = 689 } # Solikamsk
+command = { type = secedearea which = U43 value = "Penza" }
+command = { type = secedearea which = U43 value = "Kursk" }
+command = { type = secedearea which = U43 value = "Voronezh" }
+command = { type = secedearea which = U43 value = "Engels" }
+command = { type = secedearea which = U43 value = "Astrakhan" }
 }
 
 action = {
@@ -98,6 +107,11 @@ command = { type = secedearea which = RUS value = "Nizhnij Novgorod" }
 command = { type = secedearea which = RUS value = "Reservoire Rybinsk" }
 command = { type = secedearea which = RUS value = "Kazan" }
 command = { type = secederegion which = RUS value = "Southern Russia" }
+command = { type = secedearea which = RUS value = "Penza" }
+command = { type = secedearea which = RUS value = "Kursk" }
+command = { type = secedearea which = RUS value = "Voronezh" }
+command = { type = secedearea which = RUS value = "Engels" }
+command = { type = secedearea which = RUS value = "Astrakhan" }
 command = { type = local_setflag which = ns_russia_arch }
 }
 
@@ -116,7 +130,11 @@ command = { type = secedearea which = RUS value = "Nizhnij Novgorod" }
 command = { type = secedearea which = RUS value = "Reservoire Rybinsk" }
 command = { type = secedearea which = RUS value = "Kazan" }
 command = { type = secederegion which = RUS value = "Southern Russia" }
-command = { type = secedeprovince which = RUS value = 689 } # Solikamsk
+command = { type = secedearea which = RUS value = "Penza" }
+command = { type = secedearea which = RUS value = "Kursk" }
+command = { type = secedearea which = RUS value = "Voronezh" }
+command = { type = secedearea which = RUS value = "Engels" }
+command = { type = secedearea which = RUS value = "Astrakhan" }
 command = { type = local_setflag which = ns_russia_arch }
 }
 
@@ -152,7 +170,7 @@ desc = "EVT_300001_DESC"
 style = 1
 picture = "0turkestan0"
 date = { day = 1 month = january year = 1948 } 
-offset = 2
+offset = 4
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -217,7 +235,7 @@ desc = "EVT_300002_DESC"
 style = 1
 picture = "fatherland\urals"
 date = { day = 1 month = january year = 1948 } 
-offset = 2
+offset = 6
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -290,7 +308,7 @@ desc = "EVT_300003_DESC"
 style = 1
 picture = "fatherland\siberia"
 date = { day = 1 month = january year = 1948 } 
-offset = 2
+offset = 8
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -354,7 +372,7 @@ desc = "EVT_300004_DESC"
 style = 1
 picture = "fatherland\siberia"
 date = { day = 1 month = january year = 1948 } 
-offset = 2
+offset = 10
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -437,7 +455,7 @@ desc = "EVT_300005_DESC"
 style = 1
 picture = "fatherland\far_east"
 date = { day = 1 month = january year = 1948 } 
-offset = 2
+offset = 12
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -511,7 +529,7 @@ random = no
 country = GER
 
 trigger = {
-event = 300005
+event = 300004 # Occupation of Eastern Siberia
 area = { area = "Mongolia" country = GER data = 2 value = 80 }
 }
 
@@ -520,7 +538,7 @@ desc = "EVT_300006_DESC"
 style = 1
 picture = "fatherland\mongolia"
 date = { day = 1 month = january year = 1948 } 
-offset = 5
+offset = 14
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -565,12 +583,12 @@ trigger = {
 NOT = {
 war = { country = GER  country = CHI }
 }
-}
 ai_chance = 60
 name = "Cede Mongolia to Nationalist China."
 command = { type = dissent value = 2 }
 command = { type = secedearea which = CHI value = "Mongolia" }
-command = { type = 	relation which = CHI value = 50 }
+command = { type = relation which = CHI value = 50 }
+}
 }
 }
 
@@ -602,8 +620,8 @@ alliance = { country = GER country = RUS }
 ai_chance = 60
 name = "Cede to Russia."
 command = { type = dissent value = 1 }
-command = { type = secedeprovince which = RUS value = 706 }
-command = { type = secedeprovince which = RUS value = 660 }
+command = { type = secedearea which = RUS value = "Engels" }
+command = { type = secedearea which = RUS value = "Astrakhan" }
 }
 
 action = {
@@ -614,8 +632,8 @@ NOT = { war = { country = -1 country = TRA } }
 ai_chance = 50
 name = "Cede to Cossack Federation."
 command = { type = dissent value = 1 }
-command = { type = secedeprovince which = RUS value = 706 }
-command = { type = secedeprovince which = RUS value = 660 }
+command = { type = secedeprovince which = TRA value = 706 }
+command = { type = secedeprovince which = TRA value = 660 }
 }
 
 action = {
@@ -632,8 +650,8 @@ ideology = FASCIST
 ai_chance = 40
 name = "Cede to Reichskommissariat Moskowien."
 command = { type = dissent value = -1 }
-command = { type = secedeprovince which = U43 value = 706 }
-command = { type = secedeprovince which = U43 value = 660 }
+command = { type = secedearea which = U43 value = "Engels" }
+command = { type = secedearea which = U43 value = "Astrakhan" }
 }
 
 action = {
