@@ -9,6 +9,8 @@
 # 6. Occupation of Russian Far East
 # 7. Occupation of Mongolia
 # 8. Occupation of Astrakhan
+############################
+# Events for creation of armies
 
 ### Occupation of European Russia
 
@@ -22,12 +24,6 @@ trigger = {
 owned = { province = 572 data = GER } # Moscow
 owned = { province = 680 data = GER } # Gorky
 owned = { province = 542 data = GER } # Archangelsk
-### Siberian powers do not exist anymore
-#NOT = {
-#exists = SOV
-#exists = SIB
-#exists = U59 # Empire of Russia
-#}
 }
 
 name = "EVT_300000_NAME"
@@ -54,39 +50,40 @@ name = "Release Reichskommissariat Moskowien."
 command = { type = independence which = U43 value = 1 when = 0 }
 command = { type = make_puppet which = U43 }
 command = { type = dissent value = -2 }
+command = { type = trigger which = 300008 } # RK Moskowien Army
 command = { type = secederegion which = U43 value = "Northern Russia" }
 command = { type = secedearea which = U43 value = "Nizhnij Novgorod" }
 command = { type = secedearea which = U43 value = "Reservoire Rybinsk" }
 command = { type = secedearea which = U43 value = "Kazan" }
 command = { type = secedearea which = U43 value = "Penza" }
 command = { type = secedearea which = U43 value = "Kursk" }
-command = { type = secedearea which = U43 value = "Voronezh" }
+command = { type = secedearea which = U43 value = "Tambov" }
 command = { type = secedearea which = U43 value = "Engels" }
 command = { type = secedearea which = U43 value = "Astrakhan" }
 command = { type = secedeprovince which = U43 value = 651 }
-command = { type = secedeprovince which = U43 value = 654 } # Voronezh}
+command = { type = secedeprovince which = U43 value = 654 } # Voronezh
+}
 
 action = {
-trigger = { 
+trigger = {
 exists = U43 
-NOT = {
-headofstate = 15 # Ludwig Beck
-}
+NOT = { headofstate = 15 } # Ludwig Beck 
 OR = {
 ideology = NAZI
 ideology = FASCIST
 }
-} 
+}
 ai_chance = 30
 name = "Assign territory to Reichskommissariat Moskowien."
 command = { type = dissent value = -2 }
+command = { type = trigger which = 300008 } # RK Moskowien Army
 command = { type = secederegion which = U43 value = "Northern Russia" }
 command = { type = secedearea which = U43 value = "Nizhnij Novgorod" }
 command = { type = secedearea which = U43 value = "Reservoire Rybinsk" }
 command = { type = secedearea which = U43 value = "Kazan" }
 command = { type = secedearea which = U43 value = "Penza" }
 command = { type = secedearea which = U43 value = "Kursk" }
-command = { type = secedearea which = U43 value = "Voronezh" }
+command = { type = secedearea which = U43 value = "Tambov" }
 command = { type = secedearea which = U43 value = "Engels" }
 command = { type = secedearea which = U43 value = "Astrakhan" }
 command = { type = secedeprovince which = U43 value = 651 }
@@ -112,7 +109,7 @@ command = { type = secedearea which = RUS value = "Kazan" }
 command = { type = secederegion which = RUS value = "Southern Russia" }
 command = { type = secedearea which = RUS value = "Penza" }
 command = { type = secedearea which = RUS value = "Kursk" }
-command = { type = secedearea which = RUS value = "Voronezh" }
+command = { type = secedearea which = RUS value = "Tambov" }
 command = { type = secedearea which = RUS value = "Engels" }
 command = { type = secedearea which = RUS value = "Astrakhan" }
 command = { type = secedeprovince which = RUS value = 651 }
@@ -137,7 +134,7 @@ command = { type = secedearea which = RUS value = "Kazan" }
 command = { type = secederegion which = RUS value = "Southern Russia" }
 command = { type = secedearea which = RUS value = "Penza" }
 command = { type = secedearea which = RUS value = "Kursk" }
-command = { type = secedearea which = RUS value = "Voronezh" }
+command = { type = secedearea which = RUS value = "Tambov" }
 command = { type = secedearea which = RUS value = "Engels" }
 command = { type = secedearea which = RUS value = "Astrakhan" }
 command = { type = secedeprovince which = RUS value = 651 }
@@ -177,7 +174,7 @@ desc = "EVT_300001_DESC"
 style = 1
 picture = "0turkestan0"
 date = { day = 1 month = january year = 1948 } 
-offset = 4
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -196,6 +193,7 @@ name = "Release Reichskommissariat Turkestan."
 command = { type = independence which = U48 value = 1 when = 0 }
 command = { type = make_puppet which = U48 }
 command = { type = dissent value = -6 }
+command = { type = trigger which = 300009 } # RK Turkestan Army
 command = { type = secederegion which = U48 value = "Kazakstan" }
 command = { type = secederegion which = U48 value = "Central Asia" }
 }
@@ -242,7 +240,7 @@ desc = "EVT_300002_DESC"
 style = 1
 picture = "fatherland\urals"
 date = { day = 1 month = january year = 1948 } 
-offset = 6
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -260,6 +258,7 @@ name = "Release Reichskommissariat Ural."
 command = { type = independence which = U56 value = 1 when = 0 }
 command = { type = make_puppet which = U56 }
 command = { type = dissent value = -6 }
+command = { type = trigger which = 300010 } # RK Ural Army
 command = { type = secedearea which = U56 value = "Vorkuta" }
 command = { type = secedearea which = U56 value = "Perm" }
 command = { type = secedearea which = U56 value = "Sverdlovsk" }
@@ -315,7 +314,7 @@ desc = "EVT_300003_DESC"
 style = 1
 picture = "fatherland\siberia"
 date = { day = 1 month = january year = 1948 } 
-offset = 8
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -333,6 +332,7 @@ name = "Release Reichskommissariat Westsibirien."
 command = { type = independence which = U63 value = 1 when = 0 }
 command = { type = make_puppet which = U63 }
 command = { type = dissent value = -6 }
+command = { type = trigger which = 300011 } # RK Westsibirien Army
 }
 
 action = {
@@ -379,7 +379,7 @@ desc = "EVT_300004_DESC"
 style = 1
 picture = "fatherland\siberia"
 date = { day = 1 month = january year = 1948 } 
-offset = 10
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -397,6 +397,7 @@ name = "Release Reichskommissariat Ostsibirien."
 command = { type = independence which = U64 value = 1 when = 0 }
 command = { type = make_puppet which = U64 }
 command = { type = dissent value = -6 }
+command = { type = trigger which = 300012 } # RK Ostsibirien Army
 }
 
 action = {
@@ -405,6 +406,7 @@ name = "Release puppet Siberian Republic."
 command = { type = independence which = SIB value = 1 when = 0 }
 command = { type = make_puppet which = SIB }
 command = { type = dissent value = 4 }
+command = { type = trigger which = 300014 } # Far East Republic Army
 }
 
 action = {
@@ -462,7 +464,7 @@ desc = "EVT_300005_DESC"
 style = 1
 picture = "fatherland\far_east"
 date = { day = 1 month = january year = 1948 } 
-offset = 12
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
@@ -506,6 +508,7 @@ name = "Release puppet Far East Republic."
 command = { type = independence which = U57 value = 1 when = 0 }
 command = { type = make_puppet which = U57 }
 command = { type = dissent value = 4 }
+command = { type = trigger which = 300014 } # Far East Republic Army
 }
 
 action = {
@@ -536,7 +539,7 @@ random = no
 country = GER
 
 trigger = {
-event = 300004 # Occupation of Eastern Siberia
+event = 300004
 area = { area = "Mongolia" country = GER data = 2 value = 80 }
 }
 
@@ -545,14 +548,12 @@ desc = "EVT_300006_DESC"
 style = 1
 picture = "fatherland\mongolia"
 date = { day = 1 month = january year = 1948 } 
-offset = 14
+offset = 2
 deathdate = { day = 29 month = december year = 2020 }
 
 action = {
-trigger = { 
-NOT = {
-headofstate = 15 # Ludwig Beck
-}
+trigger = {
+NOT = { headofstate = 15 } # Ludwig Beck
 exists = U64
 OR = {
 ideology = NAZI
@@ -586,16 +587,14 @@ command = { type = dissent value = 4 }
 }
 
 action = {
-trigger = { 
-NOT = {
-war = { country = GER  country = CHI }
+trigger = {
+NOT = { war = { country = GER  country = CHI } }
 }
 ai_chance = 60
 name = "Cede Mongolia to Nationalist China."
 command = { type = dissent value = 2 }
 command = { type = secedearea which = CHI value = "Mongolia" }
 command = { type = relation which = CHI value = 50 }
-}
 }
 }
 
@@ -665,5 +664,156 @@ action = {
 name = "Integrate with the Reich."
 ai_chance = 10
 command = { type = dissent value = -4 }
+}
+}
+
+#######################
+# Creation of armies ##
+#######################
+
+### Creation of RK Moskowien Army
+
+event = {
+id = 300008
+random = no
+country = U43
+
+name = "EVT_300008_NAME"
+desc = "EVT_300008_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Moskowische Schutzpolizei Division" value = cavalry when = 13 where = -50 }
+command = { type = add_division which = "2. Moskowische Schutzpolizei Division" value = motorized when = 4 where = -50 }
+command = { type = add_division which = "3. Moskowische Schutzpolizei Division" value = infantry when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
+}
+}
+
+### Creation of RK Turkestan Army
+
+event = {
+id = 300009
+random = no
+country = U48
+
+name = "EVT_300009_NAME"
+desc = "EVT_300009_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Turkestanische Schutzpolizei Division" value = cavalry when = 13 where = -50 }
+command = { type = add_division which = "2. Turkestanische Schutzpolizei Division" value = motorized when = 4 where = -50 }
+command = { type = add_division which = "3. Turkestanische Schutzpolizei Division" value = infantry when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
+}
+}
+
+### Creation of RK Ural Army
+
+event = {
+id = 300010
+random = no
+country = U56
+
+name = "EVT_300010_NAME"
+desc = "EVT_300010_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Uralische Schutzpolizei Division" value = cavalry when = 13 where = -50 }
+command = { type = add_division which = "2. Uralische Schutzpolizei Division" value = motorized when = 4 where = -50 }
+command = { type = add_division which = "3. Uralische Schutzpolizei Division" value = bergsjaeger when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
+}
+}
+
+### Creation of RK Westsibirien Army
+
+event = {
+id = 300011
+random = no
+country = U63
+
+name = "EVT_300011_NAME"
+desc = "EVT_300011_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Westsibirische Verteidigungsdivision" value = garrison when = 16 where = -50 }
+command = { type = add_division which = "2. Westsibirische Verteidigungsdivision" value = garrison when = 16 where = -50 }
+command = { type = add_division which = "1. Westsibirische Jaegerdivision" value = bergsjaeger when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
+}
+}
+
+### Creation of RK Ostsibirien Army
+
+event = {
+id = 300012
+random = no
+country = U64
+
+name = "EVT_300012_NAME"
+desc = "EVT_300012_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Ostsibirische Verteidigungsdivision" value = garrison when = 16 where = -50 }
+command = { type = add_division which = "2. Ostsibirische Pzg. Division" value = mechanized when = 2 where = -50 }
+command = { type = add_division which = "1. Ostsibirische Jaegerdivision" value = bergsjaeger when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
+}
+}
+
+### Creation of Siberian Army
+
+event = {
+id = 300013
+random = no
+country = SIB
+
+name = "EVT_300013_NAME"
+desc = "EVT_300013_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Sibirische Infanteriedivision" value = infantry when = 13 where = -50 }
+command = { type = add_division which = "2. Sibirische Infanteriedivision" value = infantry when = 13 where = -50 }
+command = { type = add_division which = "1. Sibirische Jaegerdivision" value = bergsjaeger when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
+}
+}
+
+### Creation of Far East Republic Army
+
+event = {
+id = 300014
+random = no
+country = U57
+
+name = "EVT_300014_NAME"
+desc = "EVT_300014_DESC"
+style = 1
+picture = "fatherland\german_warposter"
+
+action = {
+name = "Deploy the troops"
+command = { type = add_division which = "1. Far Eastern Motorized" value = motorized when = 4 where = -50 }
+command = { type = add_division which = "2. Far Eastern Infantry" value = infantry when = 13 where = -50 }
+command = { type = add_division which = "1. Far Eastern Jaeger" value = bergsjaeger when = 13 where = -50 }
+command = { type = manpowerpool value = -30 }
 }
 }
