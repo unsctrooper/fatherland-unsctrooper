@@ -153,5 +153,6 @@ event = "db\events\fatherland\middle_east\yemen.txt"
 
 #POST WW3 VICTORY
 event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_Asia.txt"
+event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_Britain.txt"
 event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_America.txt"
 event = "db\events\fatherland\post_ww3\WWIII_UN_victory.txt"

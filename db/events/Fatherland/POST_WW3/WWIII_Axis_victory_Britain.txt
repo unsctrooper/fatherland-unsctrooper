@@ -1,0 +1,2882 @@
+#### Surrender events - Partition of United Kingdom #### (original chain from Darkest Hour Full)
+### 2003080  GER  Negotiated peace with the United Kingdom
+### 2001040  ENG  British surrender
+### 2001095  ENG  British surrender
+### 2001041  ENG  England surrenders (surrender by nuke)
+### 2001042  ENG  England surrenders (conventional surrender)
+### 2003081  GER  England surrenders (surrender conditions)
+### 2006015  ITA  England surrenders (German demands)
+### 2006016  ITA  England surrenders (surrender conditions)
+### 2003082  GER  England surrenders (Italian demands)
+### 2007057  SOV  England surrenders (surrender conditions)
+### 2011032  JAP  England surrenders (surrender conditions)
+### 2001043  ENG  England surrenders (study demands)
+### 2001044  ENG  England surrenders (reaction to surrender requests)
+### 2003083  GER  England surrenders (reaction to surrender requests)
+### 2001051  ENG  England surrenders (reaction to surrender requests)
+### 2006017  ITA  England surrenders (reaction to surrender requests)
+### 2001047  ENG  England surrenders (reaction to surrender requests)
+### 2007058  SOV  England surrenders (reaction to surrender requests)
+### 2001048  ENG  England surrenders (reaction to surrender requests)
+### 2011033  JAP  England surrenders (reaction to surrender requests)
+### 2001049  ENG  The UK retreat from the Pacific
+### 2001050  ENG  The UK retreat from the Pacific (reaction to Pacific surrender requests)
+### 2011034  JAP  The UK retreat from the Pacific (reaction to Pacific surrender requests)
+### 2003084  ENG  The Empire breaks apart
+### 2045001  CAN  The Empire breaks apart
+### 2049105  USA  The Empire breaks apart
+### 2046010  AST  The Empire breaks apart
+### 2001045  ENG  The future of the Empire
+### 2045002  CAN  The future of the Empire
+### 2185004  U02  The future of the Empire
+### 2046001  AST  The future of the Empire
+### 2044001  NZL  The future of the Empire
+### 2001046  ENG  The future of the Empire
+
+#########################################################################
+#  Surrender events - Partition of United Kingdom
+#########################################################################
+event = {
+	id = 2003080
+	random = no
+	country = GER
+
+	name = EVT_13_NAME
+	desc = EVT_13_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		OR = {
+			control = { province = 55 data = -3 } #Paris in controlled by GER or ally
+			NOT = {
+				war = { country = FRA country = GER }
+			}
+		}
+		control = { province = 29 data = -3  } #London in controlled by GER or ally
+		lost_VP = { country = ENG value = 75 }
+		lost_IC = { country = ENG value = 75 }
+		#NOT = { war = { country = USA country = GER } }
+		NOT = { lost_national = { country = GER value = 15 } }
+		random = 50
+	}
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action_a = {
+		ai_chance = 100
+		name = "Demand surrender and concessions"
+		command = { type = dissent value = -5 }
+		#command = { type = end_mastery which = SCO }
+		command = { type = money value = 5000 }
+		command = { type = addclaim which = 5 } # Kirkwall - Scotland 
+		command = { type = addclaim which = 9 } # Lerwick - Scotland
+		command = { type = addclaim which = 20 } # Exeter - England
+		command = { type = addclaim which = 23 } # Plymouth - England		
+		command = { type = trigger which = 2001040 }
+	}
+	action_b = {
+		ai_chance = 0
+		name = "Continue the war"
+		command = { type = dissent value = -2 }
+		command = { type = money value = 2500 }
+		command = { type = sleepevent which = 20010340 }
+	}
+}
+
+
+event = {
+	id = 2001040
+	random = no
+	country = ENG
+
+	name = EVT_66_NAME
+	desc = EVT_66_DESC
+	style = 2
+	picture = "news_paper"
+
+	# Triggered by German event 2003080
+
+	action_a = {
+		ai_chance = 100
+		name = EVT_66_ACTA
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = 15 }
+		command = { type = end_access which = USA }
+		command = { type = relation which = USA value = -50 }
+		command = { type = set_relation which = ITA value = 50 }
+		command = { type = set_relation which = GER value = 50 }
+		#inherit England if England is German or Italian puppet
+		command = { trigger = { 
+				OR = { 
+					puppet = { country = U73 country = GER } 
+					AND = {
+						puppet = { country = U73 country = ITA } 
+						alliance = { country = GER country = ITA } 
+					}
+				} 
+			} type = inherit which = U73 }
+		#remove claims
+		#command = { type = removecore which = 5 } # Kirkwall - Scotland 
+		#command = { type = removecore which = 9 } # Lerwick - Scotland
+		#command = { type = removecore which = 20 } # Exeter - England
+		#command = { type = removecore which = 23 } # Plymouth - England
+		command = { type = removeclaim which = 1041 } # Madinat al-Kuwait - Middle East
+		command = { type = removeclaim which = 429 } # Malta - Italy
+		command = { type = removeclaim which = 388 } # Lefkosia - Anatolia
+		command = { type = removeclaim which = 387 } # Gazimagusa - Anatolia
+		command = { type = removeclaim which = 388 } # Lefkosia - Anatolia
+		command = { type = removeclaim which = 387 } # Gazimagusa - Anatolia
+		command = { type = removeclaim which = 348 } # Gibraltar - Spain
+		command = { type = removeclaim which = 791 } # Bur Sa'id - Egypt trigger is intentional to keep a port at the canal
+		command = { type = removeclaim which = 900 } # Suez - Egypt		
+		command = { type = removeclaim which = 1843 where = CAN } # St. John's - Eastern Canada 
+		command = { type = removeclaim which = 1842 where = CAN } # Nain - Eastern Canada		
+		command = { type = removeclaim which = 1771 where = USA } # The Bahamas - Caribbean
+		command = { type = removeclaim which = 1773 where = USA } # The Bermudas - Caribbean
+		command = { type = removeclaim which = 1792 where = USA } # Belize City - Central America
+		command = { type = removeclaim which = 1371 where = USA } # Hong Kong - China
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 778 } #Egpy
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 779 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 780 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 781 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 782 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 783 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 784 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 785 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 786 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 788 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 789 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 790 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 791 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 792 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 793 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 794 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 795 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 796 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 797 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 798 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 799 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 800 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 801 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 802 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 803 } #Sudan
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 804 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 805 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 806 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 807 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 808 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 809 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 810 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 811 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 812 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 813 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 814 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 815 } #Eritra
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 816 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 817 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 836 } #Somlia
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 837 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 838 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 832 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 833 } 
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 822 } #Ethiopia
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 823 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 820 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 825 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 829 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 830 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 819 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 821 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 818 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 828 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 831 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 826 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 827 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 824 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 834 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = removeclaim which = 935 }
+
+		#Incase Italy has taken control
+		command = { trigger = { control = { province = 5 data = ITA } }  type = secedeprovince which = ITA value = 5 } # Kirkwall - Scotland 
+		command = { trigger = { control = { province = 9 data = ITA } }  type = secedeprovince which = ITA value = 9 } # Lerwick - Scotland
+		command = { trigger = { control = { province = 20 data = ITA } }  type = secedeprovince which = ITA value = 20 } # Exeter - England
+		command = { trigger = { control = { province = 454 data = ITA } }  type = secedeprovince which = ITA value = 23 } # Plymouth - England 
+		command = { trigger = { control = { province = 1041 data = ITA } }  type = secedeprovince which = ITA value = 1041 } # Madinat al-Kuwait - Middle East
+		#IF Germany or UK has control give provinces to Germany
+		command = { type = secedeprovince which = GER value = 5 } # Kirkwall - Scotland 
+		command = { type = secedeprovince which = GER value = 9 } # Lerwick - Scotland
+		command = { type = secedeprovince which = GER value = 20 } # Exeter - England
+		command = { type = secedeprovince which = GER value = 23 } # Plymouth - England
+		command = { type = secedeprovince which = GER value = 1041 } # Madinat al-Kuwait - Middle East
+
+		#Incase Germany has control
+		command = { trigger = { control = { province = 429 data = GER } }  type = secedeprovince which = GER value = 429 } # Malta - Italy
+		command = { trigger = { control = { province = 388 data = GER } }  type = secedeprovince which = GER value = 388 } # Lefkosia - Anatolia
+		command = { trigger = { control = { province = 388 data = GER } }  type = secedeprovince which = GER value = 387 } # Gazimagusa - Anatolia
+		command = { trigger = { control = { province = 387 data = GER } }  type = secedeprovince which = GER value = 388 } # Lefkosia - Anatolia
+		command = { trigger = { control = { province = 388 data = GER } }  type = secedeprovince which = GER value = 387 } # Gazimagusa - Anatolia
+		command = { trigger = { control = { province = 348 data = GER } }  type = secedeprovince which = GER value = 348 } # Gibraltar - Spain
+		command = { trigger = { control = { province = 900 data = GER } }  type = secedeprovince which = GER value = 791 } # Bur Sa'id - Egypt trigger is intentional to keep a port at the canal
+		command = { trigger = { control = { province = 900 data = GER } }  type = secedeprovince which = GER value = 900 } # Suez - Egypt
+		#If Italy or UK control give them to Italy.(except gibraltar goes to spain if UK controls))
+		command = { type = secedeprovince which = ITA value = 429 } # Malta - Italy
+		command = { type = secedeprovince which = ITA value = 388 } # Lefkosia - Anatolia
+		command = { type = secedeprovince which = ITA value = 387 } # Gazimagusa - Anatolia
+		command = { trigger = { control = { province = 348 data = ITA } } type = secedeprovince which = ITA value = 348 } # Gibraltar - Spain
+		command = { type = secedeprovince which = ITA value = 791 } # Bur Sa'id - Egypt
+		command = { type = secedeprovince which = ITA value = 900 } # Suez - Egypt
+		#Incase Nat Spain or UK control Gibraltar give it to spain.
+		command = { type = secedeprovince which = SPA value = 348 } # Gibraltar - Spain
+		#If UK still controlls, Canada takes control
+		command = { trigger = { control = { province = 1843 data = ENG } }  type = secedeprovince which = CAN value = 1843 } # St. John's - Eastern Canada 
+		command = { trigger = { control = { province = 1842 data = ENG } }  type = secedeprovince which = CAN value = 1842 } # Nain - Eastern Canada
+		#Incase Germany control
+		command = { trigger = { control = { province = 1843 data = GER } }  type = secedeprovince which = GER value = 1843 } # St. John's - Eastern Canada 
+		command = { trigger = { control = { province = 1842 data = GER } }  type = secedeprovince which = GER value = 1842 } # Nain - Eastern Canada
+		#Incase Italy control 
+		command = { trigger = { control = { province = 1843 data = ITA } }  type = secedeprovince which = ITA value = 1843 } # St. John's - Eastern Canada 
+		command = { trigger = { control = { province = 1842 data = ITA } }  type = secedeprovince which = ITA value = 1842 } # Nain - Eastern Canada
+
+		#If UK still controlls Caribbean, US takes control
+		command = { trigger = { control = { province = 1771 data = ENG } } type = secedeprovince which = USA value = 1771 } # The Bahamas - Caribbean
+		command = { trigger = { control = { province = 1773 data = ENG } } type = secedeprovince which = USA value = 1773 } # The Bermudas - Caribbean
+		command = { trigger = { control = { province = 1792 data = ENG } } type = secedeprovince which = USA value = 1792 } # Belize City - Central America
+		command = { trigger = { control = { province = 1371 data = ENG } control = { province = 1370 data = CHI } } type = secedeprovince which = CHI value = 1371 } # Hong Kong - China
+		command = { trigger = { control = { province = 1371 data = ENG } puppet = { country = CHI country = JAP }  control = { province = 1370 data = CHI } } type = secedeprovince which = JAP value = 1371 } # Hong Kong - China
+		command = { trigger = { control = { province = 1371 data = ENG } control = { province = 1370 data = JAP } } type = secedeprovince which = JAP value = 1371 }
+		command = { trigger = { control = { province = 1371 data = ENG } } type = secedeprovince which = USA value = 1371 } # Hong Kong - China
+		
+		#Incase Italy has taken Caribbean
+		command = { trigger = { control = { province = 1771 data = ITA } } type = secedeprovince which = ITA value = 1771 } # The Bahamas - Caribbean
+		command = { trigger = { control = { province = 1773 data = ITA } } type = secedeprovince which = ITA value = 1773 } # The Bermudas - Caribbean
+		command = { trigger = { control = { province = 1792 data = ITA } } type = secedeprovince which = ITA value = 1792 } # Belize City - Central America
+		
+		#Incase Germany has taken Caribbean
+		command = { trigger = { control = { province = 1771 data = GER } } type = secedeprovince which = GER value = 1771 } # The Bahamas - Caribbean
+		command = { trigger = { control = { province = 1773 data = GER } } type = secedeprovince which = GER value = 1773 } # The Bermudas - Caribbean
+		command = { trigger = { control = { province = 1792 data = GER } } type = secedeprovince which = GER value = 1792 } # Belize City - Central America
+
+		#Italy gets Egypt and Sudan
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Egypt"}
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Sudan"}
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Ethiopia"}		
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Horn of Africa"}
+
+		#Incase Uk controls Iceland, Far Oer and Greenland
+		command = { type = secedeprovince which = GER value = 1 } #Reykjavik
+		command = { type = secedeprovince which = GER value = 2 } #Torshavn
+		command = { type = secedeprovince which = GER value = 3 } #Torshavn
+		command = { type = secedeprovince which = GER value = 1783 } #Greenland
+		
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = GER value = 1 }
+
+		command = { type = domestic which = defense_lobby value = -2 }
+		command = { type = domestic which = freedom value = -2 }
+
+		#command = { type = headofstate which = 10013 }
+		#command = { type = headofgovernment which = 10020 }
+		#command = { type = foreignminister which = 10026 }
+		#command = { type = armamentminister which = 10045 }
+		#command = { type = ministerofsecurity which = 10066 }
+		#command = { type = ministerofintelligence which = 10081 }
+		#command = { type = chiefofstaff which = 10098 }
+		#command = { type = chiefofarmy which = 10107 }
+		#command = { type = chiefofnavy which = 10113 }
+		#command = { type = chiefofair which = 10120 }
+
+		command = { type = end_mastery which = YEM }
+		command = { type = end_mastery which = OMN }
+		command = { type = end_mastery which = BHU }
+		command = { type = end_mastery which = NEP }
+		command = { type = end_mastery which = AST }
+		command = { type = end_mastery which = NZL }
+		command = { type = end_mastery which = CAN }
+		command = { type = end_mastery which = SAF }
+		command = { type = end_mastery which = IRE }
+		command = { trigger = { puppet = { country = U02 country = ENG } } type = inherit which = U02 } #British Raj
+		command = { trigger = { NOT = { exists = LEB } } type = independence which = LEB value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = SYR } } type = independence which = SYR value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = EGY } } type = independence which = EGY value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = IRQ } } type = independence which = IRQ value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = JOR } } type = independence which = JOR value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = IND } } type = independence which = IND value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = PAK } } type = independence which = PAK value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = BUR } } type = independence which = BUR value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = MLY } } type = independence which = MLY value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = U79 } } type = independence which = U79 value = 1 when = 1 } #West Indies
+		command = { trigger = { NOT = { exists = GUY } } type = independence which = GUY value = 1 when = 1 }
+		command = { type = flag_ext where = ENG which = _nazi } 
+		command = { type = event which = 2001095 where = ENG when = 1 } 
+		command = { type = sleepevent which = 2003084} #deactivate empire breaks apart
+	}
+	action_b = {
+		ai_chance = 0
+		name = EVT_66_ACTB
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 2001095
+	random = no
+	country = ENG
+
+	name = EVT_66_NAME
+	desc = EVT_66_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "Damn"
+		#to be sure that they are transferred (inheriting England may prevent secedeprovince to work in same event)
+		command = { trigger = { control = { province = 5 data = ITA } }  type = secedeprovince which = ITA value = 5 } # Kirkwall - Scotland 
+		command = { trigger = { control = { province = 9 data = ITA } }  type = secedeprovince which = ITA value = 9 } # Lerwick - Scotland
+		command = { trigger = { control = { province = 20 data = ITA } }  type = secedeprovince which = ITA value = 20 } # Exeter - England
+		command = { trigger = { control = { province = 454 data = ITA } }  type = secedeprovince which = ITA value = 23 } # Plymouth - England 
+		command = { trigger = { control = { province = 1041 data = ITA } }  type = secedeprovince which = ITA value = 1041 } # Madinat al-Kuwait - Middle East
+		command = { type = secedeprovince which = GER value = 5 } # Kirkwall - Scotland 
+		command = { type = secedeprovince which = GER value = 9 } # Lerwick - Scotland
+		command = { type = secedeprovince which = GER value = 20 } # Exeter - England
+		command = { type = secedeprovince which = GER value = 23 } # Plymouth - England
+		command = { type = secedeprovince which = GER value = 1041 } # Madinat al-Kuwait - Middle Eas
+		#again, to be sure (for example it is not possible to inherit British Raj and release India/Pakistan/Burma in the same event)
+		command = { trigger = { NOT = { exists = LEB } } type = independence which = LEB value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = SYR } } type = independence which = SYR value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = EGY } } type = independence which = EGY value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = IRQ } } type = independence which = IRQ value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = JOR } } type = independence which = JOR value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = IND } } type = independence which = IND value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = PAK } } type = independence which = PAK value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = BUR } } type = independence which = BUR value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = MLY } } type = independence which = MLY value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = U79 } } type = independence which = U79 value = 1 when = 1 } #West Indies
+		command = { trigger = { NOT = { exists = GUY } } type = independence which = GUY value = 1 when = 1 }		
+		command = { type = secedearea which = PAK value = Pakistan }
+		command = { type = secedeprovince which = PAK value = 1278 } #Sumdo
+		command = { type = secederegion which = IND value = India }
+	}
+}
+##################################
+#new uk surrender events
+######################################
+event = {
+	id = 2001041 # surrender by nuke, special event cause uk has relative low landmass compared to other countries and is far more threatend by nukes.
+	random = no
+	name = "uksur_name"
+	desc = "130670_desc"
+	style = 2
+	picture = "nuke"
+	country = ENG
+
+	trigger = {
+		OR = {
+			war = { country = ENG country = GER }
+			war = { country = ENG country = SOV }
+			war = { country = ENG country = JAP }
+		}
+		OR = {
+			AND = {	
+				NOT = { nuked = 1 }
+				random = 20
+				nuked = { country = ENG data = -1 }
+				OR ={ 
+					nuked = { country = ENG data = -1 where = 4 } # Stornoway - Scotland
+					nuked = { country = ENG data = -1 where = 5 } # Kirkwall - Scotland
+					nuked = { country = ENG data = -1 where = 6 } # Inverness - Scotland
+					nuked = { country = ENG data = -1 where = 7 } # Aberdeen - Scotland
+					nuked = { country = ENG data = -1 where = 11 } # Glasgow - Scotland
+					nuked = { country = ENG data = -1 where = 10 } # Dumfries - Scotland
+					nuked = { country = ENG data = -1 where = 13 } # Sunderland - England
+					nuked = { country = ENG data = -1 where = 17 } # Manchester - England
+					nuked = { country = ENG data = -1 where = 18 } # Sheffield - England
+					nuked = { country = ENG data = -1 where = 24 } # Birmingham - England
+					nuked = { country = ENG data = -1 where = 22 } # Cardiff - England
+					nuked = { country = ENG data = -1 where = 28 } # Oxford - England
+					nuked = { country = ENG data = -1 where = 25 } # Norwich - England
+					nuked = { country = ENG data = -1 where = 29 } # London - England
+					nuked = { country = ENG data = -1 where = 26 } # Dover - England
+					nuked = { country = ENG data = -1 where = 27 } # Portsmouth - England
+					nuked = { country = ENG data = -1 where = 19 } # Bristol - England
+					nuked = { country = ENG data = -1 where = 20 } # Exeter - England
+					nuked = { country = ENG data = -1 where = 23 } # Plymouth - England                
+					nuked = { country = ENG data = -1 where = 16 } # Lincoln - England
+					nuked = { country = ENG data = -1 where = 12 } # Edinburgh - Scotland
+					nuked = { country = ENG data = -1 where = 21 } # Caernarfon - England
+					nuked = { country = ENG data = -1 where = 14 } # Carlisle - England
+					nuked = { country = ENG data = -1 where = 8 } # Fort William - Scotland
+					}
+				}
+			AND ={
+				NOT = { nuked = 1 }
+				random = 60
+				nuked = { country = ENG data = -2}
+				OR ={
+					nuked = { country = ENG data = -1 where = 4 } # Stornoway - Scotland
+					nuked = { country = ENG data = -1 where = 5 } # Kirkwall - Scotland
+					nuked = { country = ENG data = -1 where = 6 } # Inverness - Scotland
+					nuked = { country = ENG data = -1 where = 7 } # Aberdeen - Scotland
+					nuked = { country = ENG data = -1 where = 11 } # Glasgow - Scotland
+					nuked = { country = ENG data = -1 where = 10 } # Dumfries - Scotland
+					nuked = { country = ENG data = -1 where = 13 } # Sunderland - England
+					nuked = { country = ENG data = -1 where = 17 } # Manchester - England
+					nuked = { country = ENG data = -1 where = 18 } # Sheffield - England
+					nuked = { country = ENG data = -1 where = 24 } # Birmingham - England
+					nuked = { country = ENG data = -1 where = 22 } # Cardiff - England
+					nuked = { country = ENG data = -1 where = 28 } # Oxford - England
+					nuked = { country = ENG data = -1 where = 25 } # Norwich - England
+					nuked = { country = ENG data = -1 where = 29 } # London - England
+					nuked = { country = ENG data = -1 where = 26 } # Dover - England
+					nuked = { country = ENG data = -1 where = 27 } # Portsmouth - England
+					nuked = { country = ENG data = -1 where = 19 } # Bristol - England
+					nuked = { country = ENG data = -1 where = 20 } # Exeter - England
+					nuked = { country = ENG data = -1 where = 23 } # Plymouth - England                
+					nuked = { country = ENG data = -1 where = 16 } # Lincoln - England
+					nuked = { country = ENG data = -1 where = 12 } # Edinburgh - Scotland
+					nuked = { country = ENG data = -1 where = 21 } # Caernarfon - England
+					nuked = { country = ENG data = -1 where = 14 } # Carlisle - England
+					nuked = { country = ENG data = -1 where = 8 } # Fort William - Scotland
+					}
+				}
+			AND ={
+				NOT = { nuked = 1 }
+				nuked = { country = ENG data = -3}
+				OR ={
+					nuked = { country = ENG data = -1 where = 4 } # Stornoway - Scotland
+					nuked = { country = ENG data = -1 where = 5 } # Kirkwall - Scotland
+					nuked = { country = ENG data = -1 where = 6 } # Inverness - Scotland
+					nuked = { country = ENG data = -1 where = 7 } # Aberdeen - Scotland
+					nuked = { country = ENG data = -1 where = 11 } # Glasgow - Scotland
+					nuked = { country = ENG data = -1 where = 10 } # Dumfries - Scotland
+					nuked = { country = ENG data = -1 where = 13 } # Sunderland - England
+					nuked = { country = ENG data = -1 where = 17 } # Manchester - England
+					nuked = { country = ENG data = -1 where = 18 } # Sheffield - England
+					nuked = { country = ENG data = -1 where = 24 } # Birmingham - England
+					nuked = { country = ENG data = -1 where = 22 } # Cardiff - England
+					nuked = { country = ENG data = -1 where = 28 } # Oxford - England
+					nuked = { country = ENG data = -1 where = 25 } # Norwich - England
+					nuked = { country = ENG data = -1 where = 29 } # London - England
+					nuked = { country = ENG data = -1 where = 26 } # Dover - England
+					nuked = { country = ENG data = -1 where = 27 } # Portsmouth - England
+					nuked = { country = ENG data = -1 where = 19 } # Bristol - England
+					nuked = { country = ENG data = -1 where = 20 } # Exeter - England
+					nuked = { country = ENG data = -1 where = 23 } # Plymouth - England                
+					nuked = { country = ENG data = -1 where = 16 } # Lincoln - England
+					nuked = { country = ENG data = -1 where = 12 } # Edinburgh - Scotland
+					nuked = { country = ENG data = -1 where = 21 } # Caernarfon - England
+					nuked = { country = ENG data = -1 where = 14 } # Carlisle - England
+					nuked = { country = ENG data = -1 where = 8 } # Fort William - Scotland
+					}
+				}
+			}
+		}
+	
+	date = { day = 0 month = january year = 1940 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+        trigger = {
+			war = { country = ENG country = GER }
+			nuked = { country = GER country = ENG data = 1 }
+		}
+		name = "uksur_ger"
+		ai_chance = 85
+		command = { type = demobilize which = land when = 0 where = 0 value = 30 } #keep only 30 land units after being nuked
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = { type = trigger which = 2003081 } #GER England surrenders (surrender conditions)
+	}
+	action = {
+		trigger = {
+			war = { country = ENG country = SOV }
+			nuked = { country = SOV country = ENG data = 1}
+		}
+		name = "Surrender to Soviets."
+		ai_chance = 85
+		command = { type = demobilize which = land when = 0 where = 0 value = 30 } #keep only 30 land units after being nuked
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = { type = trigger which = 2007057 } #sov
+	}
+	action = {
+		trigger = {
+			war = { country = ENG country = JAP }
+			nuked = { country = JAP country = ENG data = 1}
+		}
+		name = "Surrender to Japan."
+		ai_chance = 85
+		command = { type = demobilize which = land when = 0 where = 0 value = 30 } #keep only 30 land units after being nuked
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = {type = trigger which = 2011032 } #Jap
+		} 
+	action = {
+		name = "No surrender."
+		ai_chance = 15
+		command = { type = dissent value = 5 }
+	}       
+}
+       
+event = {
+	id = 2001042 #conventional surrender
+	random = no
+	name = "uksur_name"
+	desc = "130671_desc"
+	style = 2
+	picture = "news_paper"
+
+	country = ENG
+
+	trigger = {
+		AND = {
+			NOT = { region = { region = "England" } }
+			NOT = { region = { region = "Scotland" } }
+		}
+		OR = {
+			war = { country = ENG country = GER }
+			war = { country = ENG country = SOV }
+			war = { country = ENG country = JAP }
+			war = { country = ENG country = ITA }
+		}
+		OR = {
+			AND ={
+				random = 20
+				OR = {
+					area = { area = "East England" country = -2 }
+					area = { area = "West England" country = -2 }
+					area = { area = "North England" country = -2 }
+					area = { area = "South Scotland" country = -2 }
+					AND = {
+						control = { province = 5 data = -2 } #Scapa Flow
+						control = { province = 6 data = -2 } #Inverness
+						control = { province = 7 data = -2 } #Aberdeen
+						control = { province = 8 data = -2 } #Fort William
+					}
+				}
+			}
+			AND ={
+				random = 40
+				AND = {
+					area = { area = "South Scotland" country = -2 }
+					control = { province = 13 data = -2 } #Sunderland
+					control = { province = 14 data = -2 } #Carlisle
+					control = { province = 5 data = -2 } #Scapa Flow
+					control = { province = 6 data = -2 } #Inverness                  
+					control = { province = 7 data = -2 } #Aberdeen
+					control = { province = 8 data = -2 } #Fort William
+				}
+			}
+			AND = {
+				random = 60
+				AND = {
+					area = { area = "East England" country = -2 }
+					area = { area = "West England" country = -2 }
+					control = { province = 15 data = -2 } #Hull
+					control = { province = 17 data = -2 } #Manchester            
+					control = { province = 18 data = -2 } #Sheffield
+				}
+			}
+			AND ={
+				area = { area = "East England" country = -2 }
+				area = { area = "West England" country = -2 }
+				area = { area = "North England" country = -2 }
+				area = { area = "South Scotland" country = -2 }
+				AND = {
+					control = { province = 5 data = -2 } #Scapa Flow
+					control = { province = 6 data = -2 } #Inverness   
+					control = { province = 7 data = -2 } #Aberdeen
+					control = { province = 8 data = -2 } #Fort William
+				}
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1937 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		trigger = { 
+			war = { country = ENG country = GER }
+			OR = {
+				area = { area = "East England" country = GER }
+				area = { area = "West England" country = GER }
+				area = { area = "North England" country = GER }
+				area = { area = "South Scotland" country = GER }
+				AND = {
+					control = { province = 5 data = GER }
+					control = { province = 6 data = GER }
+					control = { province = 7 data = GER }
+					control = { province = 8 data = GER }
+				}
+			}
+		}
+		name = "uksur_ger"
+		ai_chance = 90
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = { type = trigger which = 2003081 } #GER England surrenders (surrender conditions)
+	}
+	action = {
+		trigger = {
+			war = { country = ENG country = SOV }
+			OR = {
+				area = { area = "East England" country = SOV }
+				area = { area = "West England" country = SOV }
+				area = { area = "North England" country = SOV }
+				area = { area = "South Scotland" country = SOV }
+				AND = {
+					control = { province = 5 data = SOV }
+					control = { province = 6 data = SOV }
+					control = { province = 7 data = SOV }
+					control = { province = 8 data = SOV }
+				}
+			}
+		}
+		name = "uksur_sov"
+		ai_chance = 90
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = { type = trigger which = 2007057 } #sov
+	}
+	action = {
+		trigger = {
+			war = { country = ENG country = JAP }
+			OR = {
+				area = { area = "East England" country = JAP }
+				area = { area = "West England" country = JAP }
+				area = { area = "North England" country = JAP }
+				area = { area = "South Scotland" country = JAP }
+				AND = {
+					control = { province = 5 data = JAP }
+					control = { province = 6 data = JAP }
+					control = { province = 7 data = JAP }
+					control = { province = 8 data = JAP }
+				}
+			}
+		}
+		name = "uksur_jap"
+		ai_chance = 85
+		command = { type = capital which = 1843 }
+		command = { type = trigger which = 2011032 } #Jap
+	} 
+	action = {
+		trigger = {
+			war = { country = ENG country = ITA }
+			OR = {
+				area = { area = "East England" country = ITA }
+				area = { area = "West England" country = ITA }
+				area = { area = "North England" country = ITA }
+				area = { area = "South Scotland" country = ITA }
+				AND = {
+					control = { province = 5 data = ITA }
+					control = { province = 6 data = ITA }
+					control = { province = 7 data = ITA }
+					control = { province = 8 data = ITA }
+				}
+			}
+		}
+		name = "uksur_ITA"
+		ai_chance = 85
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = {type = trigger which = 2006016 } #ITA
+	}   
+	action = {
+		name = "ukno_sur"
+		ai_chance = 10
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 2003081 #surrender conditions
+	random = no
+	name = "uksur_name"
+	desc = "130672_desc"
+	style = 2
+	picture = "news_paper"
+	country = GER
+
+	#triggered by 2001042
+
+	action = {
+		name = "130672a"
+		ai_chance = 5
+		command = { type = setflag which = whitepeace}
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }
+		command = { type = secederegion which = U73 value = "England" }
+		command = { type = secederegion which = U73 value = "Scotland" }
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = trigger which = 2006015 }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom 
+	} 
+	action = {
+		trigger = {
+			OR = {
+				area = { area = "East England" country = GER }
+				area = { area = "West England" country = GER }
+				area = { area = "North England" country = GER }
+				area = { area = "South Scotland" country = GER }
+				AND = {
+					control = { province = 5 data = GER }
+					control = { province = 6 data = GER }
+					control = { province = 7 data = GER }
+					control = { province = 8 data = GER }
+				}
+			}
+		}
+		name = "130672b"
+		ai_chance = 85
+		command = { type = setflag which = lightdem}
+		command = { type = addclaim which = 20 } #Exeter
+		command = { type = addclaim which = 23 } #Plymouth
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }
+		command = { type = secedearea which = U73 value = "North England" }
+		command = { type = secedearea which = U73 value = "East England" }
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = trigger which = 2006015 }  
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom 		
+	}
+	action = {
+		trigger = {
+			OR = {
+				AND = {
+					area = { area = "South Scotland" country = GER }
+					control = { province = 13 data = GER }
+					control = { province = 14 data = GER }
+					control = { province = 5 data = GER }
+					control = { province = 6 data = GER }                  
+					control = { province = 7 data = GER }
+					control = { province = 8 data = GER }
+				}
+				AND = {
+					area = { area = "East England" country = GER }
+					area = { area = "West England" country = GER }
+					control = { province = 15 data = GER }
+					control = { province = 17 data = GER }                  
+					control = { province = 18 data = GER }
+					control = { province = 16 data = GER }
+				}
+			}
+		}
+		name = "130672c"
+		ai_chance = 65
+		command = { type = setflag which = meddem }
+		command = { type = addclaim which = 20 } #Exeter
+		command = { type = addclaim which = 23 } #Plymouth		
+		command = { type = addclaim which = 26 } #Dover
+		command = { type = addclaim which = 27 } #Portsmouth			
+		command = { type = independence which = U73 value = 1 }	
+		command = { type = make_puppet which = U73 }
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 25 } # Norwich - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = trigger which = 2006015 }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom 
+	}
+	action = {
+		trigger = {
+			area = { area = "East England" country = GER }
+			area = { area = "West England" country = GER }
+			area = { area = "North England" country = GER }
+			area = { area = "South Scotland" country = GER }
+			AND = {
+				control = { province = 5 data = GER }
+				control = { province = 6 data = GER }
+				control = { province = 7 data = GER }
+				control = { province = 8 data = GER }
+			}
+		}
+		name = "130672d"
+		ai_chance = 55
+		command = { type = setflag which = highdem }
+		command = { type = addclaim which = 20 } #Exeter
+		command = { type = addclaim which = 23 } #Plymouth		
+		command = { type = addclaim which = 26 } #Dover
+		command = { type = addclaim which = 27 } #Portsmouth		
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = independence which = SCO value = 1 }
+		command = { type = make_puppet which = SCO }
+		command = { type = secederegion which = SCO value = Scotland}
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = trigger which = 2006015 }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom 
+	}   
+	action = {
+		name = "130672e"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	} 	
+}
+
+event = {
+	id = 2006015 #german demands
+	random = no
+	name = "uksur_name"
+	desc = "1306100_desc"
+	style = 2
+	picture = "news_paper"
+	country = ITA
+
+	#triggered by 2001042
+
+	action = {
+		name = "Yes"
+		command = { type = secederegion which = U73 value = "England" }
+		command = { trigger = { NOT = { flag = highdem } } type = secederegion which = U73 value = "Scotland" }
+		command = { trigger = { flag = highdem } type = secederegion which = SCO value = "Scotland" }
+	} 
+}
+
+event = {
+	id = 2006016 #surrender conditions
+	random = no
+	name = "uksur_name"
+	desc = "130672_desc"
+	style = 2
+	picture = "news_paper"
+	country = ITA
+
+	#triggered by 2001042
+
+	action = {
+		name = "130672a"
+		ai_chance = 5
+		command = { type = setflag which = whitepeace}
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }		
+		command = { type = secederegion which = U73 value = "England"}
+		command = { type = secederegion which = U73 value = "Scotland"}
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA }}type = trigger which = 2003082 }
+	} 
+	action = {
+		trigger = {
+			OR = {
+				area = { area = "East England" country = ITA }
+				area = { area = "West England" country = ITA }
+				area = { area = "North England" country = ITA }
+				area = { area = "South Scotland" country = ITA }
+				AND = {
+					control = { province = 5 data = ITA }
+					control = { province = 6 data = ITA }
+					control = { province = 7 data = ITA }
+					control = { province = 8 data = ITA }
+				}
+			}
+		}
+		name = "130672b"
+		ai_chance = 85
+		command = { type = setflag which = lightdem}
+		command = { type = addclaim which = 20 } #Exeter
+		command = { type = addclaim which = 23 } #Plymouth					
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }		
+		command = { type = secedearea which = U73 value = "North England" }
+		command = { type = secedearea which = U73 value = "East England" }
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA }}type = trigger which = 2003082 }
+	}
+	action = {
+		trigger = {
+			OR = {
+				AND = {
+					area = { area = "South Scotland" country = ITA }
+					control = { province = 13 data = ITA }
+					control = { province = 14 data = ITA }
+					control = { province = 5 data = ITA }
+					control = { province = 6 data = ITA }                  
+					control = { province = 7 data = ITA }
+					control = { province = 8 data = ITA }
+				}
+				AND = {
+					area = { area = "East England" country = ITA }
+					area = { area = "West England" country = ITA }
+					control = { province = 15 data = ITA }
+					control = { province = 17 data = ITA }                  
+					control = { province = 18 data = ITA }
+					control = { province = 16 data = ITA }
+				}
+			}
+		}
+		name = "130672c"
+		ai_chance = 65
+		command = { type = setflag which = meddem}
+		command = { type = addclaim which = 20 } #Exeter
+		command = { type = addclaim which = 23 } #Plymouth		
+		command = { type = addclaim which = 26 } #Dover
+		command = { type = addclaim which = 27 } #Portsmouth			
+		command = { type = independence which = U73 value = 1 }	
+		command = { type = make_puppet which = U73 }		
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 25 } # Norwich - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA }}type = trigger which = 2003082 }
+	}
+	action = {
+		trigger = {
+			area = { area = "East England" country = ITA }
+			area = { area = "West England" country = ITA }
+			area = { area = "North England" country = ITA }
+			area = { area = "South Scotland" country = ITA }
+			control = { province = 5 data = ITA }
+			control = { province = 6 data = ITA }
+			control = { province = 7 data = ITA }
+			control = { province = 8 data = ITA }
+		}
+		name = "130672d"
+		ai_chance = 55
+		command = { type = setflag which = highdem}
+		command = { type = addclaim which = 20 } #Exeter
+		command = { type = addclaim which = 23 } #Plymouth		
+		command = { type = addclaim which = 26 } #Dover
+		command = { type = addclaim which = 27 } #Portsmouth		
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = independence which = SCO value = 1 }
+		command = { type = make_puppet which = SCO }
+		command = { type = secederegion which = SCO value = Scotland}
+		command = { type = trigger which = 2001043 }
+		command = { trigger = { alliance = { country = GER country = ITA }}type = trigger which = 2003082 }
+	}    
+	action = {
+		name = "130672e"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	} 	
+}    
+
+event = {
+	id = 2003082 #italian demands
+	random = no
+	name = "uksur_name"
+	desc = "1306100_desc"
+	style = 2
+	picture = "news_paper"
+	country = GER
+
+	#triggered by 2001042
+
+	action = {
+		name = "Yes."
+		command = { type = secederegion which = U73 value = "England" }
+		command = { trigger = { NOT = { flag = highdem } } type = secederegion which = U73 value = "Scotland" }
+		command = { trigger = { flag = highdem } type = secederegion which = SCO value = "Scotland" }
+	} 
+}
+
+
+event = {
+	id = 2007057 #surrender conditions
+	random = no
+	name = "uksur_name"
+	desc = "130672_desc"
+	style = 2
+	picture = "news_paper"
+	country = SOV
+
+	#triggered by 2001042
+
+	action = {
+		name = "130672a"
+		ai_chance = 5
+		command = { type = setflag which = whitepeace}
+		command = { type = independence which = U12 value = 1 }
+		command = { type = make_puppet which = U12 }		
+		command = { type = secederegion which = U12 value = "England"}
+		command = { type = secederegion which = U12 value = "Scotland"}
+		command = { type = trigger which = 2001043 }
+	} 
+	action = {
+		trigger = {
+			OR = {
+				area = { area = "East England" country = SOV }
+				area = { area = "West England" country = SOV }
+				area = { area = "North England" country = SOV }
+				area = { area = "South Scotland" country = SOV }
+				AND = {
+					control = { province = 5 data = SOV }
+					control = { province = 6 data = SOV }
+					control = { province = 7 data = SOV }
+					control = { province = 8 data = SOV }
+				}
+			}
+		}
+		name = "130682b"
+		ai_chance = 85
+		command = { type = setflag which = lightdem}
+		command = { type = addclaim which = 5 } #Scapa Flow
+		command = { type = addclaim which = 9 } #Lerwick
+		command = { type = independence which = U12 value = 1 }
+		command = { type = make_puppet which = U12 }		
+		command = { type = secederegion which = U12 value = "England" }
+		command = { type = secedearea which = U12 value = "South Scotland" } 
+		command = { type = secedeprovince which = U12 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U12 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U12 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U12 value = 8 } #Fort William
+		command = { type = trigger which = 2001043 }
+	}
+	action = {
+		trigger = {
+			OR = {
+				AND = {
+					area = { area = "South Scotland" country = SOV }
+					control = { province = 13 data = SOV }
+					control = { province = 14 data = SOV }
+					control = { province = 5 data = SOV }
+					control = { province = 6 data = SOV }                  
+					control = { province = 7 data = SOV }
+					control = { province = 8 data = SOV }
+				}
+				AND = {
+					area = { area = "East England" country = SOV }
+					area = { area = "West England" country = SOV }
+					control = { province = 15 data = SOV }
+					control = { province = 17 data = SOV }                  
+					control = { province = 18 data = SOV }
+					control = { province = 16 data = SOV }
+				}
+			}
+		}
+		name = "130682c"
+		ai_chance = 65
+		command = { type = setflag which = meddem}
+		command = { type = addclaim which = 4 } #Stornoway
+		command = { type = addclaim which = 5 } #Scapa Flow
+		command = { type = addclaim which = 6 } #Inverness
+		command = { type = addclaim which = 7 } #Aberdeen
+		command = { type = addclaim which = 8 } #Fort William
+		command = { type = addclaim which = 9 } #Lerwick
+		command = { type = independence which = U12 value = 1 }
+		command = { type = make_puppet which = U12 }		
+		command = { type = secederegion which = U12 value = "England" }
+		command = { type = secedearea which = U12 value = "South Scotland" } 		
+		command = { type = trigger which = 2001043 }
+	}
+	action = {
+		trigger = {
+			area = { area = "East England" country = SOV }
+			area = { area = "West England" country = SOV }
+			area = { area = "North England" country = SOV }
+			area = { area = "South Scotland" country = SOV }
+			AND = {
+				control = { province = 5 data = SOV }
+				control = { province = 6 data = SOV }
+				control = { province = 7 data = SOV }
+				control = { province = 8 data = SOV }
+			}
+		}
+		name = "130682d"
+		ai_chance = 55
+		command = { type = setflag which = highdem}
+		command = { type = addclaim which = 4 } #Stornoway
+		command = { type = addclaim which = 5 } #Scapa Flow
+		command = { type = addclaim which = 6 } #Inverness
+		command = { type = addclaim which = 7 } #Aberdeen
+		command = { type = addclaim which = 8 } #Fort William
+		command = { type = addclaim which = 9 } #Lerwick
+		command = { type = addclaim which = 10 } #Dumfries		
+		command = { type = addclaim which = 11 } #Glasgow	
+		command = { type = addclaim which = 12 } #Edinburgh
+		command = { type = independence which = U12 value = 1 }
+		command = { type = make_puppet which = U12 }		
+		command = { type = secederegion which = U12 value = "England" }
+		command = { type = trigger which = 2001043 }
+	}
+	action = {
+		name = "130672e"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}	
+}
+
+event = {
+	id = 2011032 #surrender conditions
+	random = no
+	name = "uksur_name"
+	desc = "130672_desc"
+	style = 2
+	picture = "news_paper"
+	country = JAP
+
+	#triggered by 2001042
+
+	action = {
+		name = "130672a"
+		ai_chance = 5
+		command = { type = setflag which = whitepeace}
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }		
+		command = { type = secederegion which = U73 value = "England"}
+		command = { type = secederegion which = U73 value = "Scotland"}
+		command = { type = trigger which = 2001043 }
+	} 
+	action = {
+		trigger = {
+			OR = {
+				area = { area = "East England" country = JAP }
+				area = { area = "West England" country = JAP }
+				area = { area = "North England" country = JAP }
+				area = { area = "South Scotland" country = JAP }
+				AND = {
+					control = { province = 5 data = JAP }
+					control = { province = 6 data = JAP }
+					control = { province = 7 data = JAP }
+					control = { province = 8 data = JAP }
+				}
+			}
+		}
+		name = "130692b"
+		ai_chance = 85
+		command = { type = setflag which = lightdem}
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }		
+		command = { type = secederegion which = U73 value = "England"}
+		command = { type = secederegion which = U73 value = "Scotland"}
+		command = { type = trigger which = 2001043 }
+	}
+	action = {
+		trigger = {
+			OR = {
+				AND = {
+					area = { area = "South Scotland" country = JAP }
+					control = { province = 13 data = JAP }
+					control = { province = 14 data = JAP }
+					control = { province = 5 data = JAP }
+					control = { province = 6 data = JAP }                  
+					control = { province = 7 data = JAP }
+					control = { province = 8 data = JAP }
+				}
+				AND = {
+					area = { area = "East England" country = JAP }
+					area = { area = "West England" country = JAP }
+					control = { province = 15 data = JAP }
+					control = { province = 17 data = JAP }                  
+					control = { province = 18 data = JAP }
+					control = { province = 16 data = JAP }
+				}
+			}
+		}
+		name = "130692c"
+		ai_chance = 65
+		command = { type = setflag which = meddem}
+		command = { type = addclaim which = 17 } #Manchester
+		command = { type = addclaim which = 35 } #Londonderry
+		command = { type = addclaim which = 36 } #Belfast
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }		
+		command = { type = secedearea which = U73 value = "North England" }
+		command = { type = secedearea which = U73 value = "East England" }
+		command = { type = secedearea which = U73 value = "West England" }
+		command = { type = secedeprovince which = U73 value = 13 } #Sunderland
+		command = { type = secedeprovince which = U73 value = 14 } #Carlisle
+		command = { type = secedeprovince which = U73 value = 15 } #Hull
+		command = { type = secedeprovince which = U73 value = 16 } #Lincoln
+		command = { type = secedeprovince which = U73 value = 18 } #Sheffield
+		command = { type = secederegion which = U73 value = "Scotland" } 
+		command = { type = trigger which = 2001043 }
+	}
+	action = {
+		trigger = {
+			area = { area = "East England" country = JAP }
+			area = { area = "West England" country = JAP }
+			area = { area = "North England" country = JAP }
+			area = { area = "South Scotland" country = JAP }
+			control = { province = 8 data = JAP }
+			control = { province = 5 data = JAP }
+			control = { province = 6 data = JAP }
+			control = { province = 7 data = JAP }
+		}
+		name = "130692d"
+		ai_chance = 55
+		command = { type = setflag which = highdem}
+		command = { type = addclaim which = 17 } #Manchester
+		command = { type = addclaim which = 21 } # Caernarfon - England
+		command = { type = addclaim which = 22 } # Cardiff - England
+		command = { type = addclaim which = 24 } # Birmingham - England
+		command = { type = addclaim which = 35 } #Londonderry
+		command = { type = addclaim which = 36 } #Belfast		
+		command = { type = independence which = U73 value = 1 }
+		command = { type = make_puppet which = U73 }		
+		command = { type = secedearea which = U73 value = "North England" }
+		command = { type = secedearea which = U73 value = "East England" }
+		command = { type = secedearea which = U73 value = "West England" }
+		command = { type = secedeprovince which = U73 value = 13 } #Sunderland
+		command = { type = secedeprovince which = U73 value = 14 } #Carlisle
+		command = { type = secedeprovince which = U73 value = 15 } #Hull
+		command = { type = secedeprovince which = U73 value = 16 } #Lincoln
+		command = { type = secedeprovince which = U73 value = 18 } #Sheffield
+		command = { type = secedeprovince which = U73 value = 19 } #Bristol
+		command = { type = secedeprovince which = U73 value = 20 } #Exter
+		command = { type = secedeprovince which = U73 value = 23 } #Plymouth
+		command = { type = secederegion which = U73 value = "Scotland" } 
+		command = { type = trigger which = 2001043 }
+	}
+	action = {
+		name = "130672e"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}	
+}
+
+event = {
+	id = 2001043 #study demands
+	random = no
+	name = "uksur_name"
+	desc = "130673_desc"
+	style = 2
+	picture = "news_paper"
+	country = ENG
+	save_date = yes
+
+	#triggered by UK surrender conditions
+	action = {
+		name = "uk_presur"
+		trigger = { flag = whitepeace}
+		command = { trigger = {event = 2003081} type = trigger which = 2001044 } #accept the demands GER
+		command = { trigger = {event = 2007057} type = trigger which = 2001047 } #accept the demands SOV
+		command = { trigger = {event = 2011032} type = trigger which = 2001048 } #accept the demands JAP
+		command = { trigger = {event = 2006016} type = trigger which = 2001051 } #accept the demands ITA
+		command = { type = sleepteam which = 10006 } #Enfield Arsenal
+		command = { type = sleepteam which = 10007 } #English Electric Company
+		command = { type = sleepteam which = 10016 } #Vauxhall Motors
+	}
+	action = {
+		name = "uk_presur"
+		trigger = { flag = lightdem}
+		command = { trigger = {event = 2003081} type = trigger which = 2001044 } #accept the demands GER
+		command = { trigger = {event = 2007057} type = trigger which = 2001047 } #accept the demands SOV
+		command = { trigger = {event = 2011032} type = trigger which = 2001048 } #accept the demands JAP
+		command = { trigger = {event = 2006016} type = trigger which = 2001051 } #accept the demands ITA
+		command = { type = sleepteam which = 10006 } #Enfield Arsenal
+		command = { type = sleepteam which = 10007 } #English Electric Company
+		command = { type = sleepteam which = 10016 } #Vauxhall Motors
+	}
+	action = {
+		name = "uk_presur"
+		trigger = { flag = meddem}
+		command = { trigger = {event = 2003081} type = trigger which = 2001044 } #accept the demands GER
+		command = { trigger = {event = 2007057} type = trigger which = 2001047 } #accept the demands SOV
+		command = { trigger = {event = 2011032} type = trigger which = 2001048 } #accept the demands JAP
+		command = { trigger = {event = 2006016} type = trigger which = 2001051 } #accept the demands ITA
+		command = { type = sleepteam which = 10006 } #Enfield Arsenal
+		command = { type = sleepteam which = 10007 } #English Electric Company
+		command = { type = sleepteam which = 10016 } #Vauxhall Motors
+	}
+	action = {
+		name = "uk_presur"
+		trigger = { flag = highdem}
+		command = { trigger = {event = 2003081} type = trigger which = 2001044 } #accept the demands GER
+		command = { trigger = {event = 2007057} type = trigger which = 2001047 } #accept the demands SOV
+		command = { trigger = {event = 2011032} type = trigger which = 2001048 } #accept the demands JAP
+		command = { trigger = {event = 2006016} type = trigger which = 2001051 } #accept the demands ITA
+		command = { type = sleepteam which = 10006 } #Enfield Arsenal
+		command = { type = sleepteam which = 10007 } #English Electric Company
+		command = { type = sleepteam which = 10016 } #Vauxhall Motors         
+	}
+}
+
+event = {
+	id = 2001044 #reaction to surrender requests
+	random = no
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+	country = ENG
+
+	#triggered by UK surrender conditions
+	action = {
+		name = "uk_sur"
+		trigger = { flag = whitepeace }
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = flag_ext where = U73 which = _GERpuppet }
+		command = { type = trigger which = 2003083 }
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = lightdem }
+		command = { type = secedeprovince which = GER value = 20 } # Exeter - England
+		command = { type = secedeprovince which = GER value = 23 } # Plymouth - England
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = flag_ext where = U73 which = _GERpuppet }
+		command = { type = trigger which = 2003083 }
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = meddem}
+		command = { type = secedeprovince which = GER value = 26 } # Dover - England
+		command = { type = secedeprovince which = GER value = 27 } # Portsmouth - England
+		command = { type = secedeprovince which = GER value = 20 } # Exeter - England
+		command = { type = secedeprovince which = GER value = 23 } # Plymouth - England
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = flag_ext where = U73 which = _GERpuppet }
+		command = { type = trigger which = 2003083 }
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = highdem}
+		command = { type = secedeprovince which = IRE value = 36 } # Belfast - Ireland
+		command = { type = secedeprovince which = IRE value = 35 } # Londonderry - Ireland
+		command = { type = secedeprovince which = GER value = 26 } # Dover - England
+		command = { type = secedeprovince which = GER value = 27 } # Portsmouth - England
+		command = { type = secedeprovince which = GER value = 20 } # Exeter - England
+		command = { type = secedeprovince which = GER value = 23 } # Plymouth - England
+		command = { type = independence which = SCO value = 0 } #units change allegiance
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England }
+		command = { type = secederegion which = SCO value = Scotland }
+		command = { type = secederegion which = IRE value = Ireland }
+		command = { type = flag_ext where = U73 which = _GERpuppet }
+		command = { type = trigger which = 2003083 }
+	}
+}
+
+event = {
+	id = 2003083 #reaction to surrender requests
+	random = no
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+	country = GER
+
+	#triggered by UK surrender conditions
+	action = {
+		name = "uk_sur"
+		trigger = { flag = whitepeace}
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secederegion which = U73 value = England }
+		command = { type = secederegion which = U73 value = "Scotland" }
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 
+		command = { type = secederegion which = U73 value = Ireland }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom (as a whole)
+		command = { type = clrflag which = whitepeace}
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = lightdem }
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secedearea which = U73 value = "North England" }
+		command = { type = secedearea which = U73 value = "East England" }
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 
+		command = { type = secederegion which = U73 value = Ireland }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom (as a whole)
+		command = { type = clrflag which = lightdem}
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = meddem }
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England			
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 25 } # Norwich - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 
+		command = { type = secederegion which = IRE value = Ireland }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom (as a whole)
+		command = { type = clrflag which = meddem}
+	}
+		action = {
+		name = "uk_sur"
+		trigger = { flag = highdem }
+		command = { type = make_puppet which = U73 }
+		command = { type = make_puppet which = SCO }
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England		
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 25 } # Norwich - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secedeprovince which = SCO value = 4 } #Stornoway
+		command = { type = secedeprovince which = SCO value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = SCO value = 6 } #Inverness 
+		command = { type = secedeprovince which = SCO value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = SCO value = 8 } #Fort William
+		command = { type = secedeprovince which = SCO value = 9 } #Lerwick
+		command = { type = secedeprovince which = SCO value = 10 } #Dumfries
+		command = { type = secedeprovince which = SCO value = 11 } #Glasgow 
+		command = { type = secedeprovince which = SCO value = 12 } #Edinburgh 
+		command = { type = secederegion which = IRE value = Ireland }
+		command = { type = sleepevent which = 2003080 } #GER Negotiated peace with the United Kingdom (as a whole)
+		command = { type = clrflag which = highdem}
+	}
+}
+
+event = {
+	id = 2001051 #reaction to surrender requests
+	random = no
+	country = ENG
+
+	#triggered by UK surrender conditions
+	
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "uk_sur"
+		trigger = { flag = whitepeace}
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = trigger which = 2006017 }
+	}
+	action = {
+		trigger = { flag = lightdem}
+		name = "uk_sur"
+		command = { type = secedeprovince which = ITA value = 20 } # Exeter - England
+		command = { type = secedeprovince which = ITA value = 23 } # Plymouth - England
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = trigger which = 2006017 }
+	}
+	action = {
+		trigger = { flag = meddem}
+		name = "uk_sur"
+		command = { type = secedeprovince which = ITA value = 26 } # Dover - England
+		command = { type = secedeprovince which = ITA value = 27 } # Portsmouth - England
+		command = { type = secedeprovince which = ITA value = 20 } # Exeter - England
+		command = { type = secedeprovince which = ITA value = 23 } # Plymouth - England
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = trigger which = 2006017 }
+	}
+	action = {
+		trigger = { flag = highdem}
+		name = "uk_sur"
+		command = { type = secedeprovince which = IRE value = 36 } # Belfast - Ireland
+		command = { type = secedeprovince which = IRE value = 35 } # Londonderry - Ireland
+		command = { type = secedeprovince which = ITA value = 26 } # Dover - England
+		command = { type = secedeprovince which = ITA value = 27 } # Portsmouth - England
+		command = { type = secedeprovince which = ITA value = 20 } # Exeter - England
+		command = { type = secedeprovince which = ITA value = 23 } # Plymouth - England
+		command = { type = independence which = SCO value = 0 } #units change allegiance
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = SCO value = Scotland}
+		command = { type = secederegion which = IRE value = Ireland}
+		command = { type = trigger which = 2006017 }			 
+	}
+}
+
+event = {
+	id = 2006017 #reaction to surrender requests
+	random = no
+	country = ITA
+	
+	#triggered by UK surrender conditions
+	
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		trigger = { flag = whitepeace}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 		
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = clrflag which = whitepeace}
+	}
+	action = {
+		trigger = { flag = lightdem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedearea which = U73 value = "East England"}
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 		
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = clrflag which = lightdem}
+	}
+	action = {
+		trigger = { flag = meddem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England		
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 25 } # Norwich - England
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 		
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = clrflag which = meddem}
+	}
+	action = {
+		trigger = { flag = highdem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = secedearea which = U73 value = "North England"}
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England		
+		command = { type = secedeprovince which = U73 value = 21 } # Caernarfon - England
+		command = { type = secedeprovince which = U73 value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = U73 value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = U73 value = 25 } # Norwich - England		
+		command = { type = secedeprovince which = U73 value = 28 } # Oxford - England
+		command = { type = secedeprovince which = U73 value = 29 } # London - England
+		command = { type = make_puppet which = SCO }
+		command = { type = secederegion which = SCO value = Scotland}
+		command = { type = secedeprovince which = SCO value = 4 } #Stornoway
+		command = { type = secedeprovince which = SCO value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = SCO value = 6 } #Inverness 
+		command = { type = secedeprovince which = SCO value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = SCO value = 8 } #Fort William
+		command = { type = secedeprovince which = SCO value = 9 } #Lerwick
+		command = { type = secedeprovince which = SCO value = 10 } #Dumfries
+		command = { type = secedeprovince which = SCO value = 11 } #Glasgow 
+		command = { type = secedeprovince which = SCO value = 12 } #Edinburgh 		
+		command = { type = secederegion which = IRE value = Ireland}
+		command = { type = clrflag which = highdem}
+	}
+}   
+
+event = {
+	id = 2001047 #reaction to surrender requests
+	random = no
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+	country = ENG
+
+	#triggered by UK surrender conditions
+	action = {
+		name = "uk_sur"
+		trigger = { flag = whitepeace}
+		command = { type = independence which = U12 value = 0 } #units change allegiance
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secederegion which = U12 value = Scotland}
+		command = { type = secederegion which = U12 value = Ireland}
+		command = { type = trigger which = 2007058 }
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = lightdem}
+		command = { type = secedeprovince which = SOV value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = SOV value = 9 } #Lerwick
+		command = { type = independence which = U12 value = 0 } #units change allegiance
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secedeprovince which = U12 value = 4 } # Stornoway - Scotland
+		command = { type = secedeprovince which = U12 value = 6 } # Inverness - Scotland
+		command = { type = secedeprovince which = U12 value = 7 } # Aberdeen - Scotland
+		command = { type = secedeprovince which = U12 value = 8 } # Fort William - Scotland
+		command = { type = secedeprovince which = U12 value = 10 } # Dumfries - Scotland
+		command = { type = secedeprovince which = U12 value = 11 } # Glasgow - Scotland
+		command = { type = secedeprovince which = U12 value = 12 } # Edinburgh - Scotlan	
+		command = { type = secederegion which = U12 value = Ireland}
+		command = { type = trigger which = 2007058 }
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = meddem}
+		command = { type = secedeprovince which = SOV value = 4 } # Stornoway - Scotland
+		command = { type = secedeprovince which = SOV value = 5 } # Scapa Flow - Scotland
+		command = { type = secedeprovince which = SOV value = 6 } # Inverness - Scotland
+		command = { type = secedeprovince which = SOV value = 7 } # Aberdeen - Scotland
+		command = { type = secedeprovince which = SOV value = 8 } # Fort William - Scotland
+		command = { type = secedeprovince which = SOV value = 9 } # Lerwick - Scotland
+		command = { type = independence which = U12 value = 0 } #units change allegiance
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secedeprovince which = U12 value = 10 } # Dumfries - Scotland
+		command = { type = secedeprovince which = U12 value = 11 } # Glasgow - Scotland
+		command = { type = secedeprovince which = U12 value = 12 } # Edinburgh - Scotlan		
+		command = { type = secederegion which = U12 value = Scotland}
+		command = { type = secederegion which = U12 value = Ireland}
+		command = { type = trigger which = 2007058 }
+	}
+	action = {
+		name = "uk_sur"
+		trigger = { flag = highdem}
+		command = { type = secedeprovince which = SOV value = 4 } # Stornoway - Scotland
+		command = { type = secedeprovince which = SOV value = 5 } # Scapa Flow - Scotland
+		command = { type = secedeprovince which = SOV value = 6 } # Inverness - Scotland
+		command = { type = secedeprovince which = SOV value = 7 } # Aberdeen - Scotland
+		command = { type = secedeprovince which = SOV value = 8 } # Fort William - Scotland
+		command = { type = secedeprovince which = SOV value = 9 } # Lerwick - Scotland
+		command = { type = secedeprovince which = SOV value = 10 } # Dumfries - Scotland
+		command = { type = secedeprovince which = SOV value = 11 } # Glasgow - Scotland
+		command = { type = secedeprovince which = SOV value = 12 } # Edinburgh - Scotland
+		command = { type = secederegion which = SOV value = Scotland}
+		command = { type = independence which = U12 value = 0 } #units change allegiance
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secederegion which = IRE value = Ireland}
+		command = { type = trigger which = 2007058 }
+	}
+}
+
+event = {
+	id = 2007058 #reaction to surrender requests
+	random = no
+	country = SOV
+
+	#triggered by UK surrender conditionsù
+	
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		trigger = { flag = whitepeace}
+		name = "uk_sur"
+		command = { type = make_puppet which = U12 }
+		command = { type = addclaim which = 4 where = U12 } #Stornoway
+		command = { type = addclaim which = 5 where = U12 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U12 } #Inverness
+		command = { type = addclaim which = 7 where = U12 } #Aberdeen
+		command = { type = addclaim which = 8 where = U12 } #Fort William
+		command = { type = addclaim which = 9 where = U12 } #Lerwick
+		command = { type = addclaim which = 10 where = U12 } #Dumfires
+		command = { type = addclaim which = 11 where = U12 } #Glasgow
+		command = { type = addclaim which = 12 where = U12 } #Edinburgh
+		command = { type = addclaim which = 35 where = U12 } #Londonderry
+		command = { type = addclaim which = 36 where = U12 } #Belfast
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secederegion which = U12 value = Scotland}
+		command = { type = secedeprovince which = U12 value = 4 } # Stornoway - Scotland
+		command = { type = secedeprovince which = U12 value = 5 } # Scapa Flow - Scotland
+		command = { type = secedeprovince which = U12 value = 6 } # Inverness - Scotland
+		command = { type = secedeprovince which = U12 value = 7 } # Aberdeen - Scotland
+		command = { type = secedeprovince which = U12 value = 8 } # Fort William - Scotland
+		command = { type = secedeprovince which = U12 value = 9 } # Lerwick - Scotland
+		command = { type = secedeprovince which = U12 value = 10 } # Dumfries - Scotland
+		command = { type = secedeprovince which = U12 value = 11 } # Glasgow - Scotland
+		command = { type = secedeprovince which = U12 value = 12 } # Edinburgh - Scotland			
+		command = { type = secederegion which = U12 value = Ireland}
+		command = { type = clrflag which = whitepeace}
+	}
+	action = {
+		trigger = { flag = lightdem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U12 }
+		command = { type = addclaim which = 4 where = U12 } #Stornoway
+		command = { type = addclaim which = 6 where = U12 } #Inverness
+		command = { type = addclaim which = 7 where = U12 } #Aberdeen
+		command = { type = addclaim which = 8 where = U12 } #Fort William
+		command = { type = addclaim which = 10 where = U12 } #Dumfires
+		command = { type = addclaim which = 11 where = U12 } #Glasgow
+		command = { type = addclaim which = 12 where = U12 } #Edinburgh
+		command = { type = addclaim which = 35 where = U12 } #Londonderry
+		command = { type = addclaim which = 36 where = U12 } #Belfast
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secedearea which = U12 value = "South Scotland"}
+		command = { type = secedeprovince which = U12 value = 4 } # Stornoway - Scotland
+		command = { type = secedeprovince which = U12 value = 6 } # Inverness - Scotland
+		command = { type = secedeprovince which = U12 value = 7 } # Aberdeen - Scotland
+		command = { type = secedeprovince which = U12 value = 8 } # Fort William - Scotland
+		command = { type = secedeprovince which = U12 value = 10 } # Dumfries - Scotland
+		command = { type = secedeprovince which = U12 value = 11 } # Glasgow - Scotland
+		command = { type = secedeprovince which = U12 value = 12 } # Edinburgh - Scotland		
+		command = { type = secederegion which = U12 value = Ireland}
+		command = { type = clrflag which = lightdem}
+	}
+	action = {
+		trigger = { flag = meddem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U12 }
+		command = { type = addclaim which = 10 where = U12 } #Dumfires
+		command = { type = addclaim which = 11 where = U12 } #Glasgow
+		command = { type = addclaim which = 12 where = U12 } #Edinburgh
+		command = { type = addclaim which = 35 where = U12 } #Londonderry
+		command = { type = addclaim which = 36 where = U12 } #Belfast
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secedearea which = U12 value = "South Scotland"}
+		command = { type = secedeprovince which = U12 value = 10 } # Dumfries - Scotland
+		command = { type = secedeprovince which = U12 value = 11 } # Glasgow - Scotland
+		command = { type = secedeprovince which = U12 value = 12 } # Edinburgh - Scotland			
+		command = { type = secederegion which = U12 value = Ireland}
+		command = { type = clrflag which = meddem}
+	}
+	action = {
+		trigger = { flag = highdem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U12 }
+		command = { type = secedeprovince which = IRE value = 36 } # Belfast - Ireland
+		command = { type = secedeprovince which = IRE value = 35 } # Londonderry - Ireland
+		command = { type = secederegion which = U12 value = England}
+		command = { type = secederegion which = IRE value = Ireland}
+		command = { type = clrflag which = highdem}
+	}
+}
+
+
+event = {
+	id = 2001048 #reaction to surrender requests
+	random = no
+	country = ENG
+	
+	#triggered by UK surrender conditions
+	
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+
+	
+	action = {
+		trigger = { flag = whitepeace}
+		name = "uk_sur"
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = trigger which = 2011033 }
+	}
+	action = {
+		trigger = { flag = lightdem}
+		name = "uk_sur"
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = trigger which = 2011033 }
+	}
+	action = {
+		trigger = { flag = meddem}
+		name = "uk_sur"
+		command = { type = secedeprovince which = JAP value = 36 } # Belfast - Ireland
+		command = { type = secedeprovince which = JAP value = 35 } # Londonderry - Ireland
+		command = { type = secedeprovince which = JAP value = 17 } # Manchester - England
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = JAP value = Ireland}
+		command = { type = trigger which = 2011033 }
+	}
+	action = {
+		trigger = { flag = highdem}
+		name = "uk_sur"
+		command = { type = secedeprovince which = JAP value = 36 } # Belfast - Ireland
+		command = { type = secedeprovince which = JAP value = 35 } # Londonderry - Ireland
+		command = { type = secedeprovince which = JAP value = 17 } # Manchester - England
+		command = { type = secedeprovince which = JAP value = 24 } # Birmingham - England
+		command = { type = secedeprovince which = JAP value = 22 } # Cardiff - England
+		command = { type = secedeprovince which = JAP value = 21 } # Caernarfon - England
+		command = { type = independence which = U73 value = 0 } #units change allegiance
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secederegion which = JAP value = Ireland}
+		command = { type = trigger which = 2011033 }
+	}
+}
+
+event = {
+	id = 2011033 #reaction to surrender requests
+	random = no
+	country = JAP
+	
+	#triggered by UK surrender conditions
+	
+	name = "uksur_name"
+	desc = "130674_desc"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		trigger = { flag = whitepeace}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 		
+		command = { type = secederegion which = U73 value = Ireland}
+		command = { type = clrflag which = whitepeace}
+	}
+	action = {
+		trigger = { flag = lightdem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = addclaim which = 35 where = U73 } #Londonderry
+		command = { type = addclaim which = 36 where = U73 } #Belfast
+		command = { type = secederegion which = U73 value = England}
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 		
+		command = { type = secederegion which = U73 value = Ireland}		
+		command = { type = trigger which = 2001050 } #uk pacific surrender
+		command = { type = clrflag which = lightdem}
+	}
+	action = {
+		trigger = { flag = meddem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = secedearea which = U73 value = "West England"}
+		command = { type = secedearea which = U73 value = "East England"}
+		command = { type = secedeprovince which = U73 value = 13 } # Sunderland - England
+		command = { type = secedeprovince which = U73 value = 15 } # Hull - England
+		command = { type = secedeprovince which = U73 value = 18 } # Sheffield - England
+		command = { type = secedeprovince which = U73 value = 16 } # Lincoln - England
+		command = { type = secedeprovince which = U73 value = 14 } # Carlisle - England
+		command = { type = secederegion which = U73 value = Scotland}
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 		
+		command = { type = trigger which = 2001050 } #uk pacific surrender
+		command = { type = clrflag which = meddem}
+	}
+	action = {
+		trigger = { flag = highdem}
+		name = "uk_sur"
+		command = { type = make_puppet which = U73 }
+		command = { type = addclaim which = 4 where = U73 } #Stornoway
+		command = { type = addclaim which = 5 where = U73 } #Scapa Flow
+		command = { type = addclaim which = 6 where = U73 } #Inverness
+		command = { type = addclaim which = 7 where = U73 } #Aberdeen
+		command = { type = addclaim which = 8 where = U73 } #Fort William
+		command = { type = addclaim which = 9 where = U73 } #Lerwick
+		command = { type = addclaim which = 10 where = U73 } #Dumfires
+		command = { type = addclaim which = 11 where = U73 } #Glasgow
+		command = { type = addclaim which = 12 where = U73 } #Edinburgh
+		command = { type = secedearea which = U73 value = "East England"}
+		command = { type = secedeprovince which = U73 value = 13 } # Sunderland - England
+		command = { type = secedeprovince which = U73 value = 14 } # Carlisle - England
+		command = { type = secedeprovince which = U73 value = 15 } # Hull - England
+		command = { type = secedeprovince which = U73 value = 16 } # Lincoln - England
+		command = { type = secedeprovince which = U73 value = 18 } # Sheffield - England
+		command = { type = secedeprovince which = U73 value = 19 } # Bristol - England
+		command = { type = secedeprovince which = U73 value = 20 } # Exeter - England
+		command = { type = secedeprovince which = U73 value = 23 } # Plymouth - England
+		command = { type = secedeprovince which = U73 value = 4 } #Stornoway
+		command = { type = secedeprovince which = U73 value = 5 } #Scapa Flow
+		command = { type = secedeprovince which = U73 value = 6 } #Inverness 
+		command = { type = secedeprovince which = U73 value = 7 } #Aberdeen 
+		command = { type = secedeprovince which = U73 value = 8 } #Fort William
+		command = { type = secedeprovince which = U73 value = 9 } #Lerwick
+		command = { type = secedeprovince which = U73 value = 10 } #Dumfries
+		command = { type = secedeprovince which = U73 value = 11 } #Glasgow 
+		command = { type = secedeprovince which = U73 value = 12 } #Edinburgh 
+		command = { type = trigger which = 2001050 } #uk pacific surrender
+		command = { type = clrflag which = highdem}
+	}
+}		  
+
+event = {
+	id = 2001049 #Pacific surrender
+	random = no
+	name = "130693_name"
+	desc = "130693_desc"
+	style = 2
+	picture = "news_paper"
+	country = ENG
+
+	trigger = {
+		OR = {
+			region = { region = "Indochine"  country = JAP }
+			puppet = { country = U03 country = JAP } #Indochinese Union
+		}
+		OR = {
+			region = { region = "Indonesia"  country = JAP }
+			puppet = { country = INO country = JAP } #Indonesia
+		}
+		region = { region = "American Pacific" country = JAP }
+		region = { region = "Asian Pacific"  country = JAP }
+		region = { region = "North Solomon Islands" country = JAP }
+		control = { province = 1371 data = JAP } #Hong Kong
+	}
+
+	date = { day = 8 month = march year = 1937 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 2020 }
+
+	#triggered by UK surrender conditions
+	action = {
+		name = "130693a"
+		command = { type = trigger which = 2001050 }
+	}
+	action = {
+		name = "Never."
+		command = { type = dissent value = 10 }
+	}
+}    
+
+event = {
+	id = 2001050 #reaction to Pacific surrender requests
+	random = no
+	country = ENG
+	
+	#triggered by UK surrender conditions
+	
+	name = "130693_name"
+	desc = "130695_desc"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "uk_sur"
+		command = { type = secederegion which = JAP value = "Indochine"}
+		command = { type = secederegion which = JAP value = "Indonesia"}
+		command = { type = secederegion which = JAP value = "American Pacific"}
+		command = { type = secederegion which = JAP value = "Asian Pacific"}
+		command = { type = secederegion which = JAP value = "North Solomon Islands"}
+		command = { type = secedeprovince which = JAP value = 1371 } # Hong Kong - China
+		command = { type = dissent value = 2}
+		command = { type = trigger which = 2011034 }
+	}
+}
+
+event = {
+	id = 2011034 #reaction to Pacific surrender requests
+	random = no
+	country = JAP
+
+	#triggered by UK surrender conditions
+
+	name = "130693_name"
+	desc = "130696_desc"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "evt_130696a"
+		command = { type = dissent value = -10 }
+	}
+}
+
+### The Future of the British Empire (AI falls apart, player centralize)
+
+event = {
+	id = 2003084 #future of the empire
+	random = no
+	style = 2
+	persistent = yes
+	one_action = yes
+	country = ENG
+
+	name = "130675_name"
+	desc = "130675_desc"
+	picture = "news_paper"
+
+	trigger = {
+		ai = yes
+		event = { id = 2001043 days = 7  } #ENG  England surrenders
+	}
+
+	date = { day = 8 month = march year = 1938 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 2020 }
+
+
+	action = {
+		trigger = {
+			control = { province = 1611 data = ENG } #Male (Maldives)
+			OR = {
+				exists = U02
+				exists = IND
+			}
+		}
+		name = ACTION_NAME_DAMN
+		ai_chance = 70
+		command = { type = removeclaim which = 1509 } #Jaffna
+		command = { type = removeclaim which = 1510 } #Kandy
+		command = { type = removeclaim which = 1511 } #Colombo
+		command = { type = removeclaim which = 1611 } #Male (Maldives)
+		command = { type = removeclaim which = 1612 } #Karavatti
+		command = { type = removeclaim which = 1613 } #West Island
+		command = { type = removeclaim which = 1614 } #Christmas
+		command = { type = end_mastery which = U02  }
+		command = { type = secedearea which = U02 value = "Ceylon" }
+		command = { type = secederegion which = U02 value = "Diego Garcia Island" }
+		command = { type = secedearea which = IND value = "Ceylon" }
+		command = { type = secederegion which = IND value = "Diego Garcia Island" }
+	}
+	action = { 
+		trigger = { control = { province = 2045 data = ENG } exists = ARG }  # Falkland Islands
+		name = ACTION_NAME_DAMN
+		ai_chance = 20
+		command = { type = removeclaim which = 2045 } # Falkland Islands
+		command = { type = secedeprovince which = ARG value = 2045 } # Falkland Islands
+	}
+	action = {
+		trigger = { 
+			control = { province = 2086 data = ENG } # Belize City - Central America
+			OR = {
+				exists = GUA
+				exists = MEX
+			}
+		}
+		name = ACTION_NAME_DAMN
+		ai_chance = 20      
+		command = { type = removeclaim which = 2086 } # Belize City
+		command = { trigger = { exists = GUA } type = secedeprovince which = GUA value = 2086 } # Belize City
+		command = { trigger = { NOT = { exists = GUA } } type = secedeprovince which = MEX value = 2086 } # Belize City
+	}
+	action = {
+		trigger = { 
+			control = { province = 840 data = ENG } 
+			OR = {
+				exists = YEM
+				exists = OMN
+				exists = IRQ
+			}
+		}
+		name = ACTION_NAME_DAMN
+		ai_chance = 50
+		command = { trigger = { exists = YEM } type = removeclaim which = 1053 } # Aden - Middle East
+		command = { trigger = { exists = YEM } type = removeclaim which = 1051 } # Al-Mukalla - Middle East
+		command = { trigger = { exists = YEM } type = removeclaim which = 840 } # Suqutra - Horn of Africa
+		command = { type = secedeprovince which = YEM value = 1053 } # Aden - Middle East
+		command = { type = secedeprovince which = YEM value = 1051 } # Al-Mukalla - Middle East
+		command = { type = secedeprovince which = YEM value = 840 } # Suqutra - Horn of Africa
+		command = { trigger = { exists = OMN } type = removeclaim which = 1038 } # Ad-Dohah - Middle East
+		command = { trigger = { exists = OMN } type = removeclaim which = 1039 } # Abu zabi - Middle East
+		command = { trigger = { exists = OMN } type = removeclaim which = 1042 } # Al-Manamah - Middle East
+		command = { type = secedeprovince which = OMN value = 1038 } # Ad-Dohah - Middle East
+		command = { type = secedeprovince which = OMN value = 1039 } # Abu zabi - Middle East
+		command = { trigger = { exists = IRQ } type = removeclaim which = 1041 } # Kuwait - Middle East
+		command = { type = secedeprovince which = IRQ value = 1041 } # Kuwait - Middle East
+	}
+	action = {
+		trigger = { control = { province = 1997 data = ENG } }
+		name = ACTION_NAME_DAMN
+		ai_chance = 20
+		command = { type = removeclaim which = 1998 } # Bartica - Grand Colombia
+		command = { type = removeclaim which = 1997 } # Georgetown - Grand Colombia
+		command = { type = independence which = GUY value = 1}
+		command = { type = secedeprovince which = GUY value = 1998 } # Bartica - Grand Colombia
+		command = { type = secedeprovince which = GUY value = 1997 } # Georgetown - Grand Colombia
+	}
+	action = {
+		trigger = { control = { province = 1997 data = ENG } exists = BRA}     
+		name = ACTION_NAME_DAMN
+		ai_chance = 20
+		command = { type = removeclaim which = 1998 } # Bartica - Grand Colombia
+		command = { type = removeclaim which = 1997 } # Georgetown - Grand Colombia		
+		command = { type = secedeprovince which = BRA value = 1998 } # Bartica - Grand Colombia
+		command = { type = secedeprovince which = BRA value = 1997 } # Georgetown - Grand Colombia
+	}
+	action = {
+		trigger = { control = { province = 1773 data = ENG } exists = USA } # The Bermudas - Caribbean
+		name = ACTION_NAME_DAMN
+		ai_chance = 90
+		command = { type = removeclaim which = 1753 } # Dominica
+		command = { type = removeclaim which = 1754 } # Montserrat
+		command = { type = removeclaim which = 1755 } # St Vincent
+		command = { type = removeclaim which = 1757 } # Anguilla
+		command = { type = removeclaim which = 1758 } # Trinidad
+		command = { type = removeclaim which = 1759 } # Atigua & Barbuda
+		command = { type = removeclaim which = 1760 } # Saint Kitts
+		command = { type = removeclaim which = 1763 } # Saint George's
+		command = { type = removeclaim which = 1764 } # Barbados
+		command = { type = removeclaim which = 1766 } # British Virgin Islands
+		command = { type = removeclaim which = 1769 } # Tobago
+		command = { type = removeclaim which = 1770 } # St Lucia
+		command = { type = removeclaim which = 1771 } # The Bahamas
+		command = { type = removeclaim which = 1772 } # Turks and Caicos
+		command = { type = removeclaim which = 1773 } # The Bermudas
+		command = { type = removeclaim which = 1774 } # Cayman Islands
+		command = { type = removeclaim which = 1782 } # Jamaica
+		command = { type = secederegion which = USA value = Caribbean } 
+	}
+	action = {
+		trigger = { control = { province = 1758 data = ENG }  } # Trinidad
+		name = ACTION_NAME_DAMN
+		ai_chance = 50
+		command = { type = removeclaim which = 1753 } # Dominica
+		command = { type = removeclaim which = 1754 } # Montserrat
+		command = { type = removeclaim which = 1755 } # St Vincent
+		command = { type = removeclaim which = 1757 } # Anguilla
+		command = { type = removeclaim which = 1758 } # Trinidad
+		command = { type = removeclaim which = 1759 } # Atigua & Barbuda
+		command = { type = removeclaim which = 1760 } # Saint Kitts
+		command = { type = removeclaim which = 1763 } # Saint George's
+		command = { type = removeclaim which = 1764 } # Barbados
+		command = { type = removeclaim which = 1766 } # British Virgin Islands
+		command = { type = removeclaim which = 1769 } # Tobago
+		command = { type = removeclaim which = 1770 } # St Lucia
+		command = { type = removeclaim which = 1771 } # The Bahamas
+		command = { type = removeclaim which = 1772 } # Turks and Caicos
+		command = { type = removeclaim which = 1774 } # Cayman Islands
+		command = { type = removeclaim which = 1782 } # Jamaica	
+		command = { type = independence which = U79 value = 1} #West Indies
+		command = { type = secedeprovince which = U79 value = 1753 } # Dominica
+		command = { type = secedeprovince which = U79 value = 1754 } # Montserrat
+		command = { type = secedeprovince which = U79 value = 1755 } # St Vincent
+		command = { type = secedeprovince which = U79 value = 1757 } # Anguilla
+		command = { type = secedeprovince which = U79 value = 1758 } # Trinidad
+		command = { type = secedeprovince which = U79 value = 1759 } # Atigua & Barbuda
+		command = { type = secedeprovince which = U79 value = 1760 } # Saint Kitts
+		command = { type = secedeprovince which = U79 value = 1763 } # Saint George's
+		command = { type = secedeprovince which = U79 value = 1764 } # Barbados
+		command = { type = secedeprovince which = U79 value = 1766 } # British Virgin Islands
+		command = { type = secedeprovince which = U79 value = 1769 } # Tobago
+		command = { type = secedeprovince which = U79 value = 1770 } # St Lucia
+		command = { type = secedeprovince which = U79 value = 1771 } # The Bahamas
+		command = { type = secedeprovince which = U79 value = 1772 } # Turks and Caicos
+		command = { type = secedeprovince which = U79 value = 1774 } # Cayman Islands
+		command = { type = secedeprovince which = U79 value = 1782 } # Jamaica
+	}
+	action = {
+		trigger = { control = { province = 348 data = ENG} exists = USA alliance = { country = ENG country = USA } }       
+		name = ACTION_NAME_DAMN
+		ai_chance = 90
+		command = { type = removeclaim which = 348 } # Gibraltar - Spain
+		command = { type = secedeprovince which = USA value = 348 } # Gibraltar - Spain
+	}
+	action = {
+		trigger = { 
+			control = { province = 1432 data = ENG } #Singapore
+			OR = {
+				exists = HOL
+				exists = U05
+				exists = SIA
+				AND = { 
+					exists = JAP
+					war = { country = ENG country = JAP }
+				}
+			}
+		} 
+		name = ACTION_NAME_DAMN
+		ai_chance = 70
+		command = { type = removeclaim which = 1432 } # Singapore
+		command = { type = removeclaim which = 1433 } # Kota Bahru
+		command = { type = removeclaim which = 1434 } # Alor Setar
+		command = { type = removeclaim which = 1435 } # Ipoh
+		command = { type = removeclaim which = 1436 } # Kuantan
+		command = { type = removeclaim which = 1437 } # Johor Bahru
+		command = { type = removeclaim which = 1438 } # Kuala Lumpur
+		command = { type = removeclaim which = 1624 } # Kuching
+		command = { type = removeclaim which = 1625 } # Bandar Seri Begawan
+		command = { type = removeclaim which = 1626 } # Jesselton
+		command = { type = removeclaim which = 1613 } # West Island - Diego Garcia Island
+		command = { type = removeclaim which = 1614 } # Christmas - Diego Garcia Island   
+		command = { trigger = { exists = JAP war = { country = ENG country = JAP } } type = secederegion which = JAP value = "Indochine"}
+		command = { trigger = { exists = JAP war = { country = ENG country = JAP } } type = secederegion which = JAP value = "Indonesia"}
+		command = { trigger = { exists = JAP war = { country = ENG country = JAP } } type = secedeprovince which = JAP value = 1613 } # West Island - Diego Garcia Island
+		command = { trigger = { exists = JAP war = { country = ENG country = JAP } } type = secedeprovince which = JAP value = 1614 } # Christmas - Diego Garcia Island 		
+		command = { trigger = { exists = HOL } type = secederegion which = HOL value = "Indochine"}
+		command = { trigger = { exists = HOL } type = secederegion which = HOL value = "Indonesia"}
+		command = { trigger = { exists = HOL } type = secederegion which = HOL value = "Indonesia"}
+		command = { trigger = { exists = HOL } type = secedeprovince which = HOL value = 1613 } # West Island - Diego Garcia Island
+		command = { trigger = { exists = HOL } type = secedeprovince which = HOL value = 1614 } # Christmas - Diego Garcia Island   
+		command = { trigger = { NOT = { exists = HOL } exists = U05 } type = secederegion which = U05 value = "Indonesia"}
+		command = { trigger = { NOT = { exists = HOL } exists = SIA } type = secederegion which = SIA value = "Indochine"}
+		command = { trigger = { NOT = { exists = HOL exists = U05 } exists = SIA } type = secederegion which = SIA value = "Indonesia"}
+		command = { trigger = { NOT = { exists = HOL } exists = SIA } type = secedeprovince which = SIA value = 1613 } # West Island - Diego Garcia Island
+		command = { trigger = { NOT = { exists = HOL } exists = SIA } type = secedeprovince which = SIA value = 1614 } # Christmas - Diego Garcia Island   
+	}
+	action = {
+		trigger = { control = { province = 1728 data = ENG } } #Suva, Fiji
+		name = ACTION_NAME_DAMN
+		ai_chance = 70   
+		command = { type = removeclaim which = 1371 } # Hong Kong
+		command = { type = removeclaim which = 1588 } # Santa Isabel
+		command = { type = removeclaim which = 1589 } # New Georgia
+		command = { type = removeclaim which = 1590 } # Lunga
+		command = { type = removeclaim which = 1591 } # Malaita
+		command = { type = removeclaim which = 1592 } # Nendo
+		command = { type = removeclaim which = 1593 } # Guadalcanal
+		command = { type = removeclaim which = 1678 } # Makin
+		command = { type = removeclaim which = 1679 } # Abemama
+		command = { type = removeclaim which = 1680 } # Tarawa
+		command = { type = removeclaim which = 1682 } # Nauru
+		command = { type = removeclaim which = 1687 } # Funafuti
+		command = { type = removeclaim which = 1728 } # Suva
+		command = { type = removeclaim which = 1729 } # Labasa
+		command = { type = removeclaim which = 1746 } # Christmas Island
+		command = { type = removeclaim which = 1749 } # Nuku'alofa
+		command = { type = removeclaim which = 1750 } # Kanton
+		command = { type = secederegion which = USA value = "American Pacific"}
+		command = { type = secederegion which = USA value = "Asian Pacific"}
+		command = { type = secederegion which = USA value = "North Solomon Islands"}
+		command = { type = secedeprovince which = USA value = 1371 } # Hong Kong - China
+	}
+	action = {
+		trigger = { control = { province = 850 data = ENG } exists = SAF alliance = { country = ENG country = SAF } } #Dar es Salaam 
+		name = ACTION_NAME_DAMN
+		ai_chance = 5   
+		command = { type = removeclaim which = 839 } # Garissa
+		command = { type = removeclaim which = 841 } # Nairobi
+		command = { type = removeclaim which = 842 } # Mombasa
+		command = { type = removeclaim which = 843 } # Nakuru
+		command = { type = removeclaim which = 844 } # Kampala
+		command = { type = removeclaim which = 845 } # Gulu
+		command = { type = removeclaim which = 848 } # Mwanza
+		command = { type = removeclaim which = 849 } # Mbeya
+		command = { type = removeclaim which = 850 } # Dar es Salaam
+		command = { type = removeclaim which = 851 } # Tabora
+		command = { type = removeclaim which = 852 } # Zanzibar
+		command = { type = removeclaim which = 859 } # Livingstone
+		command = { type = removeclaim which = 860 } # Kalabo
+		command = { type = removeclaim which = 861 } # Kasama
+		command = { type = removeclaim which = 862 } # Chingola
+		command = { type = removeclaim which = 863 } # Lusaka
+		command = { type = removeclaim which = 864 } # Blantyre
+		command = { type = removeclaim which = 865 } # Chipata
+		command = { type = removeclaim which = 866 } # Bulawayo
+		command = { type = removeclaim which = 867 } # Salisbury
+		command = { type = removeclaim which = 868 } # Wankie
+		command = { type = removeclaim which = 869 } # Francistown
+		command = { type = removeclaim which = 870 } # Gaberones
+		command = { type = removeclaim which = 871 } # Maun
+		command = { type = removeclaim which = 874 } # Maseru
+		command = { type = removeclaim which = 877 } # Mbabane
+		command = { type = removeclaim which = 896 } # Saint Helena
+		command = { type = secederegion which = SAF value = "Central Africa"}
+		command = { type = secederegion which = SAF value = "South Africa"}
+		command = { type = secederegion which = SAF value = "East Africa"}
+	}
+	action = {
+		trigger = { 
+			exists = ITA 
+			war = { country = ENG country = ITA }
+			OR = {
+				control = { province = 429 data = ENG } #Malta
+				control = { province = 387 data = ENG } #Famagosta
+				control = { province = 389 data = ENG } #Nicosia
+				control = { province = 380 data = ENG } #Sitia
+				control = { province = 382 data = ENG } #Irakleio
+			}
+		} 
+		name = ACTION_NAME_DAMN
+		ai_chance = 15  
+		command = { type = removeclaim which = 429 } #Malta
+		command = { type = removeclaim which = 387 } #Famagosta
+		command = { type = removeclaim which = 388 } #Nicosia
+		command = { type = removeclaim which = 380 } #Sitia
+		command = { type = removeclaim which = 382 } #Irakleio
+		command = { type = secedeprovince which = ITA value = 429 } #Malta
+		command = { type = secedeprovince which = ITA value = 387 } #Famagosta
+		command = { type = secedeprovince which = ITA value = 388 } #Nicosia
+		command = { type = secedeprovince which = ITA value = 380 } #Sitia
+		command = { trigger = { war = { country = ENG country = GER } } type = secedeprovince which = ITA value = 382 } #Irakleio
+		command = { type = secedeprovince which = ITA value = 382 } #Irakleio
+	}
+	action = {
+		trigger = { 
+			OR = {
+				control = { province = 993 data = ENG } #Ascension Island
+				control = { province = 900 data = ENG } #Suez
+				control = { province = 825 data = ENG } #Addis Adeb
+				control = { province = 802 data = ENG } #El Qasr
+			}
+		} 
+		name = ACTION_NAME_DAMN
+		ai_chance = 10  
+		command = { type = removeclaim which = 778 } #Bir Fuad
+		command = { type = removeclaim which = 779 } #Siwah
+		command = { type = removeclaim which = 780 } #Sidi Barrani
+		command = { type = removeclaim which = 781 } #As Sollum
+		command = { type = removeclaim which = 782 } #Bir Baylih
+		command = { type = removeclaim which = 783 } #El Alamein
+		command = { type = removeclaim which = 784 } #Fuqa
+		command = { type = removeclaim which = 785 } #Matruh
+		command = { type = removeclaim which = 786 } #Dimyat
+		command = { type = removeclaim which = 788 } #Giza
+		command = { type = removeclaim which = 789 } #Alexandria
+		command = { type = removeclaim which = 790 } #Tanta
+		command = { type = removeclaim which = 791 } #Port Said
+		command = { type = removeclaim which = 792 } #El Faiyum
+		command = { type = removeclaim which = 793 } #Miniah
+		command = { type = removeclaim which = 794 } #Asyut
+		command = { type = removeclaim which = 795 } #Aswan
+		command = { type = removeclaim which = 796 } #El Ghardaqah
+		command = { type = removeclaim which = 797 } #Luxor
+		command = { type = removeclaim which = 798 } #El Kharga
+		command = { type = removeclaim which = 799 } #Moghara
+		command = { type = removeclaim which = 800 } #Bir Nahid
+		command = { type = removeclaim which = 801 } #El Farafra
+		command = { type = removeclaim which = 802 } #El Qasr
+		command = { type = removeclaim which = 803 } # Wadi Halfa
+		command = { type = removeclaim which = 804 } # Dunqula
+		command = { type = removeclaim which = 805 } # Omdurman
+		command = { type = removeclaim which = 806 } # El Obeid
+		command = { type = removeclaim which = 807 } # Juba
+		command = { type = removeclaim which = 808 } # Nayala
+		command = { type = removeclaim which = 809 } # Waw
+		command = { type = removeclaim which = 810 } # Khartoum
+		command = { type = removeclaim which = 811 } # El Qadarif
+		command = { type = removeclaim which = 812 } # Malakal
+		command = { type = removeclaim which = 813 } # Port Sudan
+		command = { type = removeclaim which = 814 } # Kassala
+		command = { type = removeclaim which = 832 } # Hargeisa
+		command = { type = removeclaim which = 929 } # Lagos
+		command = { type = removeclaim which = 930 } # Port Harcourt
+		command = { type = removeclaim which = 931 } # Katsina-Ala
+		command = { type = removeclaim which = 932 } # Ibadan
+		command = { type = removeclaim which = 933 } # Buea
+		command = { type = removeclaim which = 934 } # Oshogbo
+		command = { type = removeclaim which = 935 } # Benin City
+		command = { type = removeclaim which = 936 } # Yola
+		command = { type = removeclaim which = 937 } # Sokoto
+		command = { type = removeclaim which = 938 } # Maiduguri
+		command = { type = removeclaim which = 939 } # Kaduna
+		command = { type = removeclaim which = 940 } # Kano
+		command = { type = removeclaim which = 941 } # Abuja
+		command = { type = removeclaim which = 952 } # Tamale
+		command = { type = removeclaim which = 953 } # Wa
+		command = { type = removeclaim which = 954 } # Kumasi
+		command = { type = removeclaim which = 955 } # Ho
+		command = { type = removeclaim which = 956 } # Accra
+		command = { type = removeclaim which = 964 } # Freetown
+		command = { type = removeclaim which = 979 } # Banjul
+		command = { type = removeclaim which = 993 } # Ascension Islands
+		command = { type = removeclaim which = 997 } # Port Louis
+		command = { type = removeclaim which = 998 } # Port Victoria
+		command = { type = removeclaim which = 1004 } #El Arish
+		command = { type = removeclaim which = 1005 } #Sharm el Sheikh
+		command = { type = removeclaim which = 1006 } #Al Qantarah
+		command = { type = removeclaim which = 1007 } #Bur Tawfiq
+		command = { type = removeclaim which = 1008 } #Tel Aviv
+		command = { type = removeclaim which = 1009 } #Gaza
+		command = { type = removeclaim which = 1010 } #Eilat
+		command = { type = removeclaim which = 1011 } #Haifa
+		command = { type = removeclaim which = 1172 } #Jerusalem
+		command = { type = removeclaim which = 1013 } #Akko
+		command = { type = removeclaim which = 1022 } #Amman
+		command = { type = removeclaim which = 1023 } #Irbid
+		command = { type = removeclaim which = 1024 } #As Zarqa
+		command = { type = removeclaim which = 1025 } #Ma'an
+		command = { type = removeclaim which = 1026 } #Al Kerak
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "West Africa"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Morocco"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Algeria"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Sahara"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Libya"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Tunisia"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Middle East"}
+		command = { trigger = { exists = U01 } type = secederegion which = U01 value = "Madagascar"}
+		command = { trigger = { exists = ITA war = { country = ENG country = ITA } } type = secederegion which = ITA value = "Egypt"}
+		command = { trigger = { exists = ITA war = { country = ENG country = ITA } } type = secederegion which = ITA value = "Sudan"}
+		command = { trigger = { exists = ITA war = { country = ENG country = ITA } } type = secederegion which = ITA value = "Ethiopia"}		
+		command = { trigger = { exists = ITA war = { country = ENG country = ITA } } type = secederegion which = ITA value = "Horn of Africa"}		
+		command = { trigger = { exists = EGY } type = secederegion which = EGY value = "Egypt"}
+		command = { trigger = { exists = EGY } type = secederegion which = EGY value = "Sudan"}
+		command = { trigger = { exists = ETH } type = secederegion which = ETH value = "Ethiopia"}
+		command = { trigger = { exists = ETH } type = secederegion which = ETH value = "Horn of Africa"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "West Africa"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Morocco"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Algeria"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Sahara"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Libya"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Tunisia"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Middle East"}
+		command = { trigger = { NOT = { exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Madagascar"}
+		command = { trigger = { NOT = { exists = EGY } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Egypt"}
+		command = { trigger = { NOT = { exists = EGY } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Sudan"}
+		command = { trigger = { NOT = { exists = ETH } exists = U01 } type = secederegion which = U01 value = "Ethiopia"}
+		command = { trigger = { NOT = { exists = ETH exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Ethiopia"}
+		command = { trigger = { NOT = { exists = ETH } exists = U01 } type = secederegion which = U01 value = "Horn of Africa"}
+		command = { trigger = { NOT = { exists = ETH exists = U01 } exists = USA alliance = { country = ENG country = USA } } type = secederegion which = USA value = "Horn of Africa"}
+		
+	}
+	action = {   
+		name = ACTION_NAME_DAMN
+		ai_chance = 1
+		command = { trigger = { participant = { country = CAN value = 1 } NOT = { ispuppet = CAN } } type = trigger which = 2045001 } #CAN
+		command = { trigger = { OR = {
+							NOT = { participant = { country = CAN value = 1 } }
+							ispuppet = CAN
+						}
+						participant = { country = USA value = 1 } #member of Allies
+						NOT = { ispuppet = USA } 
+			} type = trigger which = 2049105 } #USA (in Allies)
+		command = { trigger = { OR = {
+							NOT = { participant = { country = CAN value = 1 } }
+							ispuppet = CAN
+						}
+						OR = {
+							NOT = { participant = { country = USA value = 1 } }
+							ispuppet = USA
+						}
+						participant = { country = AST value = 1 } #member of Allies
+						NOT = { ispuppet = AST } 
+			} type = trigger which = 2046010 } #AST
+		command = { trigger = { OR = {
+							NOT = { participant = { country = CAN value = 1 } }
+							ispuppet = CAN
+						}
+						OR = {
+							NOT = { participant = { country = USA value = 1 } }
+							ispuppet = USA
+						}
+						NOT = { participant = { country = USA value = 2 } }#not member of Axis
+						NOT = { participant = { country = USA value = 3 } }#not member of Comintern
+						NOT = { ispuppet = USA } 
+			} type = trigger which = 2049105 } #USA (not in Allies)
+		command = { type = sleepevent which = 2003084}   
+	}         
+}
+
+event = {
+	id = 2045001 #future of the empire
+	random = no
+	name = "130675_name"
+	desc = "130676_desc"
+	style = 2
+	picture = "news_paper"
+
+	country = CAN
+
+	action = {
+		name = "130676a"
+		command = { type = inherit which = ENG value = 1}
+	}
+}
+
+event = {
+	id = 2049105 #future of the empire
+	random = no
+	name = "130675_name"
+	desc = "EVT_2049105_DESC"
+	style = 2
+	picture = "news_paper"
+
+	country = USA
+
+	action = {
+		name = "130676a"
+		command = { type = inherit which = ENG value = 1}
+	}
+}
+
+event = {
+	id = 2046010 #future of the empire
+	random = no
+	name = "130675_name"
+	desc = "EVT_2046010_DESC"
+	style = 2
+	picture = "news_paper"
+
+	country = AST
+
+	action = {
+		name = "130676a"
+		command = { type = inherit which = ENG value = 1}
+	}
+}
+
+event = {
+	id = 2001045 #future of the empire
+	random = no
+	name = "130677_name"
+	desc = "130677_desc"
+	style = 2
+	picture = "news_paper"
+	save_date = yes
+	country = ENG
+
+	trigger = {
+		ai = no
+		event = { id = 2001043 days = 7  } #ENG  England surrenders
+	}
+
+	date = { day = 8 month = march year = 1938 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		name = "130677a"
+		ai_chance = 33
+		command = { type = setflag which = CANcap}
+		command = {type = trigger which = 2045002 } #can
+		command = {type = trigger which = 2185004 } #ind
+		command = {type = trigger which = 2046001 } #aust
+		command = {type = trigger which = 2044001 } #nzl
+	}
+	action = {
+		name = "130677b"
+		ai_chance = 33
+		command = { type = setflag which = ASTcap }
+		command = {type = trigger which = 2045002 }
+		command = {type = trigger which = 2185004 }
+		command = {type = trigger which = 2046001 }
+		command = {type = trigger which = 2044001 }
+	}
+	action = {
+		name = "130677c"
+		ai_chance = 33
+		command = { type = setflag which = U02cap }
+		command = {type = trigger which = 2045002 }
+		command = {type = trigger which = 2185004 }
+		command = {type = trigger which = 2046001 }
+		command = {type = trigger which = 2044001 }
+	}
+}
+
+event = {
+	id = 2045002 #future of the empire
+	random = no
+	country = CAN
+
+	name = "130677_name"
+	desc = "130678_desc"
+	picture = "news_paper"
+	style = 2
+
+	action = {
+		name = "comacc"
+		ai_chance = 70
+		command = { type = setflag which = CANacc}
+	}
+	action = {
+		trigger = { flag = CANcap}
+		name = "comacc"
+		ai_chance = 90
+		command = { type = setflag which = CANacc}
+	}
+	action = {
+		name = "comrej"
+		ai_chance = 30
+		command = {}
+	}
+}   
+
+event = {
+	id = 2185004 #future of the empire
+	random = no
+	country = U02
+
+	name = "130677_name"
+	desc = "130678_desc"
+	picture = "news_paper"
+	style = 2
+
+	action = {
+		name = "comacc"
+		ai_chance = 50
+		command = { type = setflag which = U02acc}
+	}
+	action = {
+		trigger = { flag = U02cap}
+		name = "comacc"
+		ai_chance = 90
+		command = { type = setflag which = U02acc}
+	}
+	action = {
+		name = "comrej"
+		ai_chance = 50
+		command = {}
+	}
+}
+
+event = {
+	id = 2046001 #future of the empire
+	random = no
+
+	country = AST
+	name = "130677_name"
+	desc = "130678_desc"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "comacc"
+		ai_chance = 70
+		command = { type = setflag which = ASTacc}
+	}
+	action = {
+		trigger = { flag = ASTcap}
+		name = "comacc"
+		ai_chance = 90
+		command = { type = setflag which = ASTacc}
+	}
+	action = {
+		name = "comrej"
+		ai_chance = 30
+		command = {}
+	}
+}
+
+event = {
+	id = 2044001 #future of the empire
+	random = no
+	country = NZL
+
+	name = "130677_name"
+	desc = "130678_desc"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "comacc"
+		ai_chance = 70
+		command = { type = setflag which = NZLacc}
+	}
+	action = {
+		trigger = { flag = ASTcap}
+		name = "comacc"
+		ai_chance = 90
+		command = { type = setflag which = NZLacc}
+	}
+	action = {
+		name = "comrej"
+		ai_chance = 30
+		command = {}
+	}
+}
+
+event = {
+	id = 2001046 #future of the empire
+	random = no
+	name = "130677_name"
+	desc = "130682_desc"
+	style = 2
+	picture = "news_paper"
+
+	country = ENG
+
+	trigger = {
+		ai = no
+		event = { id = 2001045 days = 14  }
+	}
+
+	date = { day = 8 month = march year = 1938 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 2020 }
+
+
+	action = {
+		name = "130682a"
+		command = { trigger = { flag = CANacc } type = inherit which = CAN value = 1}
+		command = { trigger = { flag = ASTacc } type = inherit which = AST value = 1}
+		command = { trigger = { flag = NZLacc } type = inherit which = NZL value = 1}
+		command = { trigger = { flag = U02acc } type = inherit which = U02 value = 1}
+		command = { trigger = { flag = CANcap } type = capital which = 2108 } #Ottawa
+		command = { trigger = { flag = ASTcap } type = capital which = 1707 } #Canberra
+		command = { trigger = { flag = U02cap } type = capital which = 1459 } #Deli   
+		command = { type = clrflag which = CANacc}
+		command = { type = clrflag which = ASTacc}
+		command = { type = clrflag which = NZLacc}
+		command = { type = clrflag which = U02acc}
+		command = { type = clrflag which = CANcap}
+		command = { type = clrflag which = U02cap}
+		command = { type = clrflag which = ASTcap}
+	}
+}
+
