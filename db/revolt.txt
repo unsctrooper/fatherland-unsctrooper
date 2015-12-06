@@ -3235,8 +3235,8 @@ capital = 1191
 U56 = { # Reichskommissariat Ural
 date = { day = 0 month = january year = 1948 } 
 expirydate = { day = 29 month = december year = 2000 } 
-minimum = { 1132 1131 1133 } 
-extra = { 687 1126 1127 1151 1128 1130 1129 1153 } 
+minimum = { 1132 } 
+claims = { 1131 1133 687 1126 1127 1151 1128 1130 1129 1153 } 
 capital = 1132
 country = { GER }
 intrinsic_gov_type = nazi
@@ -3245,8 +3245,8 @@ intrinsic_gov_type = nazi
 U63 = { # Reichskommissariat Westsibirien
 date = { day = 0 month = january year = 1948 } 
 expirydate = { day = 29 month = december year = 2000 } 
-minimum = { 1142 1143 1144 } 
-extra = { 1152 1154 1148 1149 1150 1135 1136 1137 1138 1139 1140 1141 1145 1146 1147 1156 1157 1158 1155 1165 1166 1069 1119 1164 1070 1162 1161 1163 1168 1169 1167 } 
+minimum = { 1142 } 
+claims = { 1143 1144 1152 1154 1148 1149 1150 1135 1136 1137 1138 1139 1140 1141 1145 1146 1147 1156 1157 1158 1155 1165 1166 1069 1119 1164 1070 1162 1161 1163 1168 1169 1167 } 
 capital = 1142 # Novosibirsk
 country = { GER }
 intrinsic_gov_type = nazi
@@ -3255,8 +3255,8 @@ intrinsic_gov_type = nazi
 U64 = { # Reichskommissariat Ostsibirien
 date = { day = 0 month = january year = 1948 } 
 expirydate = { day = 29 month = december year = 2000 } 
-minimum = { 1170 1176 } 
-extra = { 1177 1179 1178 1180 1182 1181 1183 1184 1186 1171 1189 1174 1187 1188 1175 } 
+minimum = { 1176 } 
+claims = { 1170 1177 1179 1178 1180 1182 1181 1183 1184 1186 1171 1189 1174 1187 1188 1175 } 
 capital = 1176 # Blagoveschensk
 country = { GER }
 intrinsic_gov_type = nazi
