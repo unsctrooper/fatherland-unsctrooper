@@ -1,18 +1,18 @@
 event = {
-id = 700
+	id = 700
 	random = no
 	country = GER	
 	style = 2
 	picture = "reichstag"
 	
-	name = "700NAME" 
+	name = "700NAME"  #The new leadership of the IRA (Possible WW3 outcome)
     desc = "700DESC" 
 	
 	date = { day = 25 month = september year = 1948 }
 	
 	action = {
 			name = "700A" 
-			ai_chance = 99
+			ai_chance = 90
 			command = { type = local_setflag which = GERIRA } 
 		    command = { type = manpowerpool value = -1 }
 			command = { type = belligerence which = GER value = 5 }
@@ -22,7 +22,7 @@ id = 700
 	
 	action = {
 			name = "700B"
-			ai_chance = 1
+			ai_chance = 10
 			command = { type = domestic which = interventionism value = -1 }
 }
 }
@@ -38,7 +38,7 @@ id = 701
     local_flag = GERIRA
 	}
 	
-	name = "701NAME" 
+	name = "701NAME" #The strategy of the IRA
     desc = "701DESC"
 	
 	date = { day = 1 month = january year = 1949 }
@@ -74,15 +74,15 @@ flag = IRAIRE
 random = 10
 }
 
-name = "702NAME"
+name = "702NAME" #Bombing!
 desc = "702DESC"
 
 date = { day = 1 month = july year = 1949 }
 offset = 14
 deathdate = { day = 1 month = december year = 1955 }
 
-action_a = {
-name = "702A"
+action = {
+name = "702A" #Damn!
 command = { type = trigger which = 721 }
 command = { type = dissent value = 5 }
 command = { type = supplies value = -100 }
@@ -102,15 +102,15 @@ flag = IRAIRE
 random = 10
 }
 
-name = "703NAME"
+name = "703NAME" #Assassination!
 desc = "703DESC"
 
 date = { day = 1 month = july year = 1949 }
 offset = 14
 deathdate = { day = 1 month = december year = 1955 }
 
-action_a = {
-name = "703A"
+action = {
+name = "703A" #Damn!
 command = { type = trigger which = 721 }
 command = { type = dissent value = 3 }
 }
@@ -128,22 +128,22 @@ flag = IRAIRE
 random = 10
 }
 
-name = "704NAME"
+name = "704NAME" #Hostage!
 desc = "704DESC"
 
 date = { day = 1 month = july year = 1949 }
 offset = 14
 deathdate = { day = 1 month = december year = 1955 }
 
-action_a = {
-name = "704A"
+action = {
+name = "704A" #We have to pay!
 ai_chance = 50
 command = { type = trigger which = 721 }
 command = { type = dissent value = 1 }
 command = { type = money value = -100 }	
 }
-action_b = {
-name = "704B"
+action = {
+name = "704B" #No deals with terrorists!
 ai_chance = 50
 command = { type = trigger which = 721 }
 command = { type = dissent value = 5 }
@@ -162,15 +162,15 @@ flag = IRANIRE
 random = 10
 }
 
-name = "705NAME"
+name = "705NAME" #Bombing!
 desc = "705DESC"
 
 date = { day = 1 month = july year = 1949 }
 offset = 14
 deathdate = { day = 1 month = december year = 1955 }
 
-action_a = {
-name = "705A"
+action = {
+name = "705A" #Damn!
 command = { type = trigger which = 711 }
 command = { type = dissent value = 5 }
 command = { type = supplies value = -100 }
@@ -190,14 +190,14 @@ flag = IRANIRE
 random = 10
 }
 
-name = "706NAME"
+name = "706NAME" #Assassination!
 desc = "706DESC"
 
 date = { day = 1 month = july year = 1949 }
 offset = 14
 deathdate = { day = 1 month = december year = 1955 }
 
-action_a = {
+action = {
 name = "706A"
 command = { type = trigger which = 711 }
 command = { type = dissent value = 3 }
@@ -216,21 +216,21 @@ flag = IRANIRE
 random = 10
 }
 
-name = "707NAME"
+name = "707NAME" #Hostage!
 desc = "707DESC"
 
 date = { day = 1 month = july year = 1949 }
 offset = 14
 deathdate = { day = 1 month = december year = 1955 }
 
-action_a = {
+action = {
 name = "707A"
 ai_chance = 50
 command = { type = trigger which = 711 }
 command = { type = dissent value = 1 }
 command = { type = money value = -100 }	
 }
-action_b = {
+action = {
 name = "707B"
 ai_chance = 50
 command = { type = trigger which = 711 }
@@ -248,12 +248,12 @@ trigger = {
 flag = IRAUK
 }
 
-name = "708NAME"
+name = "708NAME" #New Years Bombing
 desc = "708DESC"
 
 date = { day = 1 month = january year = 1950 }
 
-action_a = {
+action = {
 name = "708A"
 command = { type = supplies value = -100 }
 command = { type = money value = -100 }	
@@ -271,18 +271,18 @@ trigger = {
 flag = IRAUK
 }
 
-name = "709NAME"
+name = "709NAME" #Germany is supporting the IRA!
 desc = "709DESC"
 
 date = { day = 14 month = january year = 1950 }
 
-action_a = {
+action = {
 name = "709A"
 ai_chance = 80
 command = { type = dissent value = 5 }
 command = { type = trigger which = 710 }
 }
-action_b = {
+action = {
 name = "709B"
 ai_chance = 20
 command = { type = war which = GER }
@@ -295,20 +295,20 @@ random = no
 style = 2
 picture = "reichstag"
 
-name = "710NAME"
+name = "710NAME" #We have been discovered!
 desc = "710DESC"
 
-action_a = {
+action = {
 name = "710A"
-ai_chance = 80
+ai_chance = 70
 command = { type = local_clrflag which = GERIRA  }
 command = { type = clrflag which = IRAUK  }
 command = { type = money value = -100 }	
 command = { type = dissent value = 3 }
 }
-action_b = {
-name = "710B"
-ai_chance = 20
+action = {
+name = "710B" #WW3
+ai_chance = 30 
 command = { type = war which = ENG }
 }
 }
@@ -318,7 +318,7 @@ event = {
 	random = no
 	persistent = yes
 
-	name = "711NAME"
+	name = "711NAME" #Root down on the IRA
 	desc = "711DESC" 
 	style = 2
 	picture = "public_jobs"
@@ -344,7 +344,7 @@ event = {
 	random = no
 	persistent = yes
 
-	name = "711NAME"
+	name = "711NAME" #Root down on the IRA
 	desc = "711DESC" 
 	style = 2
 	picture = "public_jobs"
@@ -372,10 +372,10 @@ persistent = yes
 style = 2
 picture = "reichstag"
 
-name = "712NAME"
+name = "712NAME" #The IRA request extra help
 desc = "712DESC"
 
-action_a = {
+action = {
 name = "712A"
 ai_chance = 40
 command = { type = setflag which = IRAIRE }  
@@ -384,7 +384,7 @@ command = { type = belligerence which = GER value = 5 }
 command = { type = supplies value = -2000 }
 command = { type = money value = -400 }
 }
-action_b = {
+action = {
 name = "712B"
 ai_chance = 40
 command = { type = setflag which = IRANIRE }  
@@ -393,7 +393,7 @@ command = { type = belligerence which = GER value = 5 }
 command = { type = supplies value = -2000 }
 command = { type = money value = -400 }
 }
-action_c = {
+action = {
 name = "712C"
 ai_chance = 20
 command = { type = money value = 100 }
@@ -415,18 +415,18 @@ date = { day = 1 month = july year = 1949 }
 offset = 30
 deathdate = { day = 1 month = december year = 1955 }
 
-name = "713NAME"
+name = "713NAME" #Germany is cooperating with the IRA!
 desc = "713DESC"
 
-action_a = {
+action = {
 name = "713A"
-ai_chance = 99
+ai_chance = 70
 command = { type = trigger which = 714 }
 }
-action_b = {
+action = {
 name = "713B"
-ai_chance = 1
-command = { type = war which = GER }
+ai_chance = 30
+command = { type = war which = GER } #WW3
 }
 }
 event = {
@@ -436,7 +436,7 @@ random = no
 style = 2
 picture = "reichstag"
 
-name = "714NAME"
+name = "714NAME" #We have been discovered!
 desc = "714DESC"
 
 action_a = {

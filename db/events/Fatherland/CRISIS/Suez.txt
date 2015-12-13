@@ -1,9 +1,32 @@
-# "Aswan High Dam"
+#####################################
+# Suez crisis events
+# Made by Pako
+#####################################
+
+# 8500301 - Aswan High Dam - EGY
+# 8500302 - Nationalization of Suez Canal - ENG
+# 8500303 - Put pressure for a diplomatic solution - ALS
+# 8500304 - Operation Kadesh - ENG
+# 8500305 - Suez War - EGY
+# 8500311 - The United Nations position - ALS
+# 8500312 - UN meddles in Suez war - German reaction - GER
+# 8500313 - Germany sent an ultimatum for Suez War - UN reaction - ALS
+# 8500314 - UN ignores ultimatum - German final decision - GER
+# 8500315 - The UN economic support - ENG
+# 8500316 - The Axis economic support - EGY
+
+# Suez war conclusions
+
+# 8500320 - Diplomatic conclusion of Suez war, white peace - ENG
+# 8500321 - Suez War is won - ENG
+# 8500322 - Diplomatic conclusion of Suez war, white peace but for Egypt is a victory - EGY
+# 8500323 - Suez War is lost - EGY
+
 event = {
 	id = 8500301
 	country = EGY
 
-	name = EVT_8500301_NAME
+	name = EVT_8500301_NAME #Aswan High Dam
 	desc = EVT_8500301_DESC
 	picture = "nwo\aswan_dam"
 	style = 1
@@ -15,30 +38,47 @@ event = {
 	# Huge Aswan Dam funded with help from Germany and with plans to nationalize Suez Canal
 	action = {
 		name = "Huge Aswan Dam funded with help from Germany and with plans to nationalize Suez Canal"
-		ai_chance = 45
+		ai_chance = 60
 		command = { type = construct which = ic where = 795 value = 4 }
 		command = { type = construct which = infrastructure where = 795 value = 40 }
+		
 		command = { type = add_prov_resource which = 795 value = 30 where = energy }
+		
+		command = { type = relation which = ALS value = -100 }
 		command = { type = relation which = USA value = -100 }
 		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = U01 value = -100 }		
 		command = { type = relation which = SOV value = -100 }
+		
+		command = { type = relation which = AXI value = 100 }
 		command = { type = relation which = GER value = 100 }
+		command = { type = relation which = ITA value = 100 }		
+		
 		command = { type = addcore which = 900 } # Suez
+		command = { trigger = { ai = yes } type = ai_prepare_war which = ENG }
 	}
 	
 	# Huge Aswan Dam funded with help from Soviet Union
 	action = {
-		name = "Huge Aswan Dam funded with help from Soviet Union"
-		ai_chance = 45
+		name = "Huge Aswan Dam funded with help from Soviet Union and with plans to nationalize Suez Canal"
+		ai_chance = 30
 		command = { type = construct which = ic where = 795 value = 4 }
 		command = { type = construct which = infrastructure where = 795 value = 40 }
+		
 		command = { type = add_prov_resource which = 795 value = 30 where = energy }
+		
+		command = { type = relation which = ALS value = -50 }
 		command = { type = relation which = USA value = -50 }
 		command = { type = relation which = ENG value = -50 }
-		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = U01 value = -50 }		
 		command = { type = relation which = SOV value = 100 }
+		
+		command = { type = relation which = AXI value = -100 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = relation which = ITA value = -100 }	
+		
 		command = { type = addcore which = 900 } # Suez
-		command = { type = sleepevent which = 8500302 }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = ENG }		
 	}	
 	
 	# Smaller, western-funded Aswan Dam
@@ -47,21 +87,28 @@ event = {
 		ai_chance = 10
 		command = { type = construct which = ic where = 795 value = 2 }
 		command = { type = construct which = infrastructure where = 795 value = 20 }
+		
 		command = { type = add_prov_resource which = 795 value = 15 where = energy }
+		
+		command = { type = relation which = ALS value = 100 }
 		command = { type = relation which = USA value = 100 }
 		command = { type = relation which = ENG value = 100 }
+		command = { type = relation which = U01 value = 100 }		
+		command = { type = relation which = SOV value = -50 }
+		
+		command = { type = relation which = AXI value = -100 }
 		command = { type = relation which = GER value = -100 }
-		command = { type = relation which = SOV value = -100 }		
+		command = { type = relation which = ITA value = -100 }	
+		
 		command = { type = sleepevent which = 8500302 }
 	}
-
 }
 
 event = {
 	id = 8500302
 	country = ENG
 
-	name = EVT_8500302_NAME
+	name = EVT_8500302_NAME #Nationalization of Suez Canal
 	desc = EVT_8500302_DESC
 	picture = "nwo\nasser_speaking"
 	style = 1
@@ -76,13 +123,18 @@ event = {
 
 	# Prepare for a regional conflict
 	action = {
-		name = "Prepare for a regional conflict"
+		name = "We cannot accept the Nationalization of the channel, prepare for a regional conflict"
 		ai_chance = 80
 		command = { type = secedeprovince which = EGY value = 900 } # Suez
 		command = { type = money value = -1000 }
-		command = { type = relation which = USA value = -50 }
-		command = { type = relation which = EGY value = -200 }
+		
+		command = { type = relation which = ALS value = -20 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = U01 value = -20 }		
+		command = { type = relation which = SOV value = -40 }
+		
 		command = { type = belligerence value = 5 }
+		
 		command = { type = trigger value = 8500303 }		
 		command = { type = trigger which = 8500304 }
 	}
@@ -93,19 +145,23 @@ event = {
 		ai_chance = 20
 		command = { type = secedeprovince which = EGY value = 900 } # Suez
 		command = { type = relation which = EGY value = 100 }
+		command = { type = relation which = ALS value = 20 }
+		command = { type = relation which = USA value = 20 }
+		command = { type = relation which = U01 value = 20 }		
+		command = { type = relation which = SOV value = 40 }
+		
 		command = { type = dissent value = 5 }
-		command = { type = belligerence value = -10 }
+		
+		command = { type = belligerence value = -5 }
 	}
-
 }
 
-# Operation Kadesh - USA reaction
 event = {
 	id = 8500303
-	country = USA
+	country = ALS
 
-	name = "Suez Crisis"
-	desc = "We take the leads of UN"
+	name = "Put pressure for a diplomatic solution"
+	desc = "Put pressure for a diplomatic solution"
 	picture = "nwo\operation_kadesh"
 	style = 1
 
@@ -117,22 +173,20 @@ event = {
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 	
-	#  USA reaction
 	action = {
-		name = "It's not the way"
-		ai_chance = 98
-		command = { type = relation which = ENG value = -50 }
-		command = { type = relation which = EGY value = -200 }
-		command = { type = dissent value = 2 }
+		name = "The UN council push for a diplomatic solution of the Suez crisis"
+		ai_chance = 80
+		command = { type = relation which = ENG value = 10 }
+		command = { type = relation which = EGY value = 10 }
+		command = { type = belligerence value = -1 }
 	}
 	
-	# It's too risky
 	action = {
-		name = "Do nothing"
-		ai_chance = 2
-		command = { type = dissent value = 10 }
+		name = "Egypt must accept the UK business on Suez Channel"
+		ai_chance = 20
+		command = { type = relation which = ENG value = 50 }
+		command = { type = relation which = EGY value = -100 }
 	}
-
 }
 
 # Operation Kadesh
@@ -142,28 +196,36 @@ event = {
 	country = ENG
 
 	name = "Operation Kadesh"
-	desc = "Operation Kadesh"
+	desc = "Operation Kadesh - We need to retake the control of the Suez Channel"
 	picture = "nwo\operation_kadesh"
 	style = 1
 
 	# Invade
-	action_a = {
-		name = EVT_8500304_A
-		ai_chance = 98
+	action = {
+		name = EVT_8500304_A 
+		ai_chance = 90
 		command = { type = leave_alliance }
 		command = { type = war which = EGY }
 		command = { type = belligerence value = 5 }
 		command = { type = dissent value = 5 }
+
+		command = { type = relation which = ALS value = -20 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = U01 value = -20 }		
+		command = { type = relation which = SOV value = -40 }
 	}
 	
 	# It's too risky
-	action_b = {
+	action = {
 		name = EVT_8500304_B
-		ai_chance = 2
+		ai_chance = 10
 		command = { type = belligerence value = -5 }
 		command = { type = dissent value = 10 }
+		command = { type = relation which = ALS value = 20 }
+		command = { type = relation which = USA value = 20 }
+		command = { type = relation which = U01 value = 20 }		
+		command = { type = relation which = SOV value = 40 }		
 	}
-
 }
 
 event = {
@@ -178,39 +240,36 @@ event = {
 	
 	trigger = {
 			war = { country = EGY country = ENG }
-				event = 8500304
+			event = 8500304
 		}
 
 	date = { day = 1 month = september year = 1950 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
-	action_a = {
-		name = EVT_8500305_A
+	action = {
+		name = "Mobilize the militian and the reserves"
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }		
+		command = { type = add_division value = militia when = 8 }
+		command = { type = add_division value = militia when = 8 }
+		command = { type = add_division value = militia when = 8 }		
 		command = { type = add_division value = militia when = 8 }
 		command = { type = add_division value = militia when = 8 }
 		command = { type = add_division value = militia when = 8 }		
 		command = { type = dissent value = -10 }
 	}
-
 }
 
-# American reaction to the Suez War
+# UN reaction to the Suez War
 event = {
 	id = 8500311
-	country = USA
+	country = ALS
 
-	name = "Bring UK to table"
-	desc = "Bring UK to table"
+	name = "The United Nations position"
+	desc = "The British has started the invasion of Egypt, what will do ?"
 	picture = "nwo\suez_war_intervention"
 	style = 1
 
@@ -225,28 +284,29 @@ event = {
 	
 	# Urge them to quit
 	action = {
-		name = EVT_8500311_A
+		name = "Bring UK to a negoziation table with Egypt"
 		ai_chance = 50
-		command = { type = relation which = ENG value = -50 }
-		command = { type = relation which = EGY value = 50 }
+		command = { type = relation which = ENG value = 20 }
+		command = { type = relation which = EGY value = 20 }
+		command = { type = belligerence value = -1 }
+		command = { type = dissent value = -1 }
 		command = { type = sleepevent which = 8500312 }
 	}
 	
 	# Support UK advance
 	action = {
-		name = "Support United Kingdom anyway"
+		name = "Support the militar action of UK"
 		ai_chance = 50
 		command = { type = relation which = ENG value = 150 }
 		command = { type = relation which = EGY value = -150 }
-		command = { type = belligerence value = 10 }
-		command = { type = dissent value = 8 }
+		command = { type = belligerence value = 3 }
+		command = { type = dissent value = 1 }
 		command = { type = trigger which = 8500315 }
 		command = { type = sleepevent which = 8500320 } # Conclusion of Suez War
 	}
-
 }
 
-# America meddles in Suez War - German reaction
+# UN meddles in Suez War - German reaction
 event = {
 	id = 8500312
 	country = GER
@@ -268,9 +328,17 @@ event = {
 	action = {
 		name = EVT_8500312_A
 		ai_chance = 50
+		
 		command = { type = relation which = EGY value = 150 }
-		command = { type = relation which = ENG value = -150 }
-		command = { type = relation which = USA value = -100 }
+		
+		command = { type = relation which = ALS value = -150 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = U01 value = -150 }		
+		command = { type = relation which = SOV value = -150 }		
+		
+		command = { type = belligerence value = 3 }
+		command = { type = dissent value = -1 }
+		
 		command = { type = trigger which = 8500313 }
 		command = { type = trigger which = 8500316 }
 	}
@@ -279,9 +347,16 @@ event = {
 	action = {
 		name = EVT_8500312_B
 		ai_chance = 40
+		
 		command = { type = relation which = EGY value = 100 }
-		command = { type = relation which = ENG value = -100 }
-		command = { type = relation which = USA value = -50 }
+				
+		command = { type = relation which = ALS value = -100 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = U01 value = -100 }		
+		command = { type = relation which = SOV value = -100 }	
+		
+		command = { type = belligerence value = 1 }
+		
 		command = { type = trigger which = 8500316 }
 	}
 
@@ -289,18 +364,24 @@ event = {
 	action = {
 		name = EVT_8500312_C
 		ai_chance = 10
-		command = { type = relation which = USA value = -10 }
-		command = { type = relation which = EGY value = -100 }
+		
+		command = { type = relation which = EGY value = 50 }
+		
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = U01 value = -50 }		
+		command = { type = relation which = SOV value = -50 }	
+		
+		command = { type = belligerence value = -1 }
 	}
-
 }
 
-# German ultimatum for Suez War - American reaction
+# Germany sent an ultimatum for Suez War - UN reaction
 event = {
 	id = 8500313
-	country = USA
+	country = ALS
 
-	name = EVT_8500313_NAME
+	name = EVT_8500313_NAME #Germany sent an ultimatum for Suez War
 	desc = EVT_8500313_DESC
 	picture = "nwo\suez_war_intervention"
 	style = 1
@@ -311,25 +392,30 @@ event = {
 	
 	# Back off
 	action = {
-		name = "We not intervene directly"
-		ai_chance = 93
+		name = "The United Nations won't intervene in the Suez war"
+		ai_chance = 50
+		
 		command = { type = relation which = ENG value = -10 }
 		command = { type = relation which = GER value = 10 }
-		command = { type = dissent value = 7 }
+		
+		command = { type = belligerence value = -1 }
+		command = { type = dissent value = 1 }
 	}
 	
 	# Let them have the war (Possible WW3)
 	action = {
 		name = EVT_8500313_B
 		ai_chance = 7
-		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = GER value = -50 }
 		command = { type = trigger which = 8500314 }
-		command = { type = alliance which = ENG }
+		
+		command = { type = belligerence value = 3 }
+		command = { type = dissent value = 1 }
+		#command = { type = alliance which = ENG }
 	}
-
 }
 
-# USA ignores ultimatum - German final decision
+# UN ignores ultimatum - German final decision
 event = {
 	id = 8500314
 	country = GER
@@ -346,47 +432,53 @@ event = {
 	# Then it is war (WW3)
 	action = {
 		name = EVT_8500314_A
-		ai_chance = 75
+		ai_chance = 60
 		command = { type = alliance which = EGY }
+		
 		command = { type = war which = USA }
 		command = { type = war which = ENG }
-		command = { type = dissent value = 3 }
+		
+		command = { type = dissent value = 1 }
 	}
 	
 	# After all, better not
 	action = {
 		name = EVT_8500314_B
-		ai_chance = 25
-		command = { type = dissent value = 25 }
+		ai_chance = 40
+		command = { type = dissent value = 5 }
 		command = { type = domestic which = interventionism value = -1 }
+		command = { type = belligerence value = -3 }
 	}
-
 }
 
+# The UN economic support
 event = {
 	id = 8500315
 	country = ENG
 	
-	# American assistance in Suez War
-	name = EVT_8500315_NAME
+	name = "The UN economic assistance"
 	desc = EVT_8500315_DESC
 	picture = "nwo\operation_kadesh"
 	style = 1
 	
 	action = {
-		name = EVT_8500315_A
+		name = "The UN economic support"
 		command = { type = supplies value = 500 }
+		command = { type = money value = 500 }		
+		command = { type = oil value = 500 }		
+		command = { type = rare_materials value = 500 }		
+		command = { type = metal value = 500 }				
+		command = { type = energy value = 500 }		
 		command = { type = dissent value = -5 }
 	}
-
 }
 
+# The Axis economic support
 event = {
 	id = 8500316
 	country = EGY
 
-	# American assistance in Suez War
-	name = "German assistance in Suez War"
+	name = "The Axis economic support"
 	desc = EVT_8500316_DESC
 	picture = "nwo\nasser_in_crowd"
 	style = 1
@@ -396,15 +488,18 @@ event = {
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
-		command = { type = supplies value = 3000 }
+		command = { type = supplies value = 500 }
+		command = { type = money value = 500 }		
+		command = { type = oil value = 500 }		
+		command = { type = rare_materials value = 500 }		
+		command = { type = metal value = 500 }				
+		command = { type = energy value = 500 }		
 		command = { type = dissent value = -5 }
 	}
-
 }
 
 ### Peaceful conclusion of Suez Crisis
-
-# Conclusion of Suez Crisis
+# Diplomatic conclusion of Suez war, white peace
 event = {
 	id = 8500320
 	country = ENG
@@ -426,26 +521,28 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	# Cease fire
-	action_a = {
+	action = {
 		name = EVT_8500320_A
-		ai_chance = 100
+		ai_chance = 80
 		command = { type = peace which = EGY value = 0 }
 		command = { type = trigger which = 8500322 }
-		command = { type = alliance which = USA }
-		command = { type = alliance_leader which = ENG where = 2 }
+		command = { type = alliance which = ALS }
+		command = { type = dissent value = 1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = belligerence value = -1 }
 	}
 	
 	# We will not be intimidated
-	action_b = {
+	action = {
 		name = EVT_8500320_B
-		ai_chance = 0
-		command = { type = leave_alliance }
-		command = { type = dissent value = 30 }
-		command = { type = belligerence value = 30 }
+		ai_chance =20
+		#command = { type = leave_alliance }
+		command = { type = dissent value = 3 }
+		command = { type = belligerence value = 3 }
+		command = { type = domestic which = interventionism value = 1 }		
 		# Germany helps Egypt again
 		command = { type = trigger which = 8500316 }
 	}
-
 }
 
 # Suez War is won
@@ -462,25 +559,27 @@ event = {
 		war = { country = EGY country = ENG }
 		event = 8500305
 		NOT = { control = { province = 787 data = EGY } } # Cairo
-		}
-
-	date = { day = 1 month = september year = 1950 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		name = EVT_8500321_A
-		ai_chance = 100
-		command = { type = peace which = EGY value = 0 }
-		command = { type = dissent value = 10 }
-		command = { type = belligerence value = 10 }
-		command = { type = trigger which = 8500323 }
-		command = { type = alliance which = USA }
-		command = { type = alliance_leader which = ENG where = 2 }		
+		NOT = { control = { province = 900 data = EGY } } # Suez
+		NOT = { control = { province = 1008 data = EGY } } # Tel Aviv		
 	}
 
+	date = { day = 1 month = september year = 1950 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "We've Won !"
+		ai_chance = 100
+		command = { type = peace which = EGY value = 0 }
+		command = { type = dissent value = -3 }
+		command = { type = belligerence value = 3 }
+		command = { type = trigger which = 8500323 }
+		command = { type = alliance which = ALS }
+		#command = { type = alliance_leader which = ENG where = 2 }		
+	}
 }
 
+# Diplomatic conclusion of Suez war, white peace but for Egypt is a victory
 event = {
 	id = 8500322
 	random = no
@@ -491,12 +590,15 @@ event = {
 	picture = "nwo\egypt_wins_suez_war"
 	style = 1
 
-	action_a = {
-		name = EVT_8500322_A
-		command = { type = dissent value = -20 }
+	action = {
+		name = "We've Won !"
+		command = { type = dissent value = -25 }
+		command = { type = belligerence value = 5 }
+		command = { type = domestic which = interventionism value = 1 }		
+		command = { type = addcore which = 900 } # Suez
 	}
-
 }
+
 
 event = {
 	id = 8500323
@@ -534,144 +636,4 @@ event = {
 		command = { type = set_relation which = GER value = -150 }
 	}
 
-}
-
-#####################
-### Kuwait Crisis ###
-#####################
-event = {
-	id = 8500324
-	country = IRQ
-
-	name = "The Status of Kuwait"
-	desc = "The nationalisation of the Suez has left the United Arab Republic with much needed prestige to proclaim itself the champion of the Arab World and threaten our Federation. We should seek German help with acting on our claim on Kuwait!"
-	picture = "nwo\nasser_speaking"
-	style = 1
-	
-	trigger = {
-		# control = { province = 900 data = EGY } #Suez
-		control = { province = 1034 data = IRQ } # Bagdad
-	}
-
-	date = { day = 1 month = january year = 1954 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		name = "Send an envoy to Berlin!" 
-		ai_chance = 99 # Temporary to ensure WW III breaking out after all!
-		command = { type = money value = -100 }
-		command = { type = trigger which = 8500325 }
-	}
-	action_b = {
-		name = "It's too dangerous"
-		ai_chance = 1
-		command = { type = dissent value = 5 }
-	}
-}
-
-event = {
-	id = 8500325
-	country = GER
-
-	name = "The Status of Kuwait"
-	desc = "The nationalization of the Suez Channel has left the Arab Federation on a quest for their own Arab prestige project. They've set their eyes on Kuwait, separated from Iraq after the dissolution of the Ottoman Empire."
-	picture = "nwo\nasser_speaking"
-	style = 1
-
-	action_a = {
-		name = "Iraq could be a good friend ! Go ahead!" 
-		ai_chance = 99 # Temporary to ensure WW III breaking out after all!
-		command = { type = money value = -2500 }
-        command = { type = event which = 8500326 where = IRQ when = 3 }
-	}
-	action_b = {
-		name = "It's too dangerous"
-		ai_chance = 1
-		command = { type = dissent value = 3 }
-	}
-}
-
-event = {
-	id = 8500326
-	country = IRQ
-
-	name = "The Kuwait Ultimatum"
-	desc = "Fueled by direct German help, we're able to make a strong ultimatum on Kuwait."
-	picture = "nwo\nasser_speaking"
-	style = 1
-
-	action_a = {
-		name = "Kuwait or war!" 
-		command = { type = add_division which = "German Contingent" value = armor when = 5 }
-		command = { type = add_division which = "German Contingent" value = motorized when = 5 }
-		command = { type = add_division which = "German Contingent" value = motorized when = 5 }
-		command = { type = add_division value = motorized when = 5 }
-		command = { type = add_division value = motorized when = 5 }
-		command = { type = add_division value = motorized when = 5 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = money value = -100 }
-		command = { type = trigger which = 8500327 }
-	}
-}
-
-event = {
-	id = 8500327
-	country = ENG
-
-	name = "The Kuwait Ultimatum"
-	desc = "Fueled by direct German help, we're able to make a strong ultimatum on Kuwait."
-	picture = "nwo\nasser_speaking"
-	style = 1
-
-	action_a = {
-		name = "Then it is war!" 
-		command = { type = war which = IRQ }
-	}
-}
-
-event = {
-	id = 8500328
-	country = GER
-	
-	trigger = {
-    event = 8500327
-	}
-
-	date = { day = 1 month = january year = 1954 }
-	offset = 7
-	deathdate = { day = 29 month = december year = 1963 }
-
-	name = "The War in the Middle East"
-	desc = "The Iraqi claims to Kuwait have spawned the alliance of neo colonial powers to destroy our Arab ally. We need to make them stop!"
-	picture = "nwo\nasser_speaking"
-	style = 1
-
-	action_a = {
-		name = "Pull back or face German arms!" 
-		ai_chance = 99 # Temporary to ensure WW III breaking out after all!
-        command = { type = event which = 8500329 where = GER when = 3 }
-	}
-	action_b = {
-		name = "It's too dangerous"
-		ai_chance = 1
-		command = { type = dissent value = 3 }
-	}
-}
-
-event = {
-	id = 8500329
-	country = GER
-
-	name = "Britian remains defiant!"
-	desc = ""
-	picture = "nwo\nasser_speaking"
-	style = 1
-
-	action_a = {
-		name = "Then it is war!" 
-        command = { type = alliance which = IRQ }
-	}
 }

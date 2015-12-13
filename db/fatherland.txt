@@ -107,7 +107,8 @@ event = "db\events\fatherland\crisis\colonials.txt"
 event = "db\events\fatherland\crisis\sino_indian_war.txt"
 event = "db\events\fatherland\crisis\morocco_crisis.txt"
 event = "db\events\fatherland\crisis\WWIII.txt"
-event = "db\events\fatherland\crisis\SuezKuwaitCrisis.txt"
+#event = "db\events\fatherland\crisis\SuezKuwaitCrisis.txt"
+event = "db\events\fatherland\crisis\Suez.txt"
 event = "db\events\fatherland\crisis\transylvania.txt"
 
 #EUROPE

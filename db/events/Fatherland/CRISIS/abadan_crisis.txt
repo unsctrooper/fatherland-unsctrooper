@@ -120,14 +120,14 @@ event = {
 
 	action = {
 		name = EVT_90000102_A # Sanctions are successful
-		ai_chance = 80
+		ai_chance = 50
 		command = { type = industrial_modifier which = total value = -10 }
 		command = { type = dissent value = 15 }
 	}
 	
 	action = {
 		name = EVT_90000102_B # Sanctions are a failure
-		ai_chance = 20
+		ai_chance = 50
 		command = { type = dissent value = 10 } # There's some turmoil, anyway
 		command = { type = sleepevent which = 90000103 }
 		command = { type = sleepevent which = 90000109 } # Operation Ajax															
@@ -153,13 +153,13 @@ event = {
 
 	action = {
 		name = EVT_90000103_A # Oh oh
-		ai_chance = 40
+		ai_chance = 30
 		command = { type = dissent value = 15 }
 	}
 	
 	action = {
 		name = EVT_90000103_B # Ask Germany
-		ai_chance = 60
+		ai_chance = 70
 		command = { type = dissent value = 10 } # There's some turmoil, anyway
 		command = { type = trigger which = 90000104 }
 	}
@@ -199,7 +199,7 @@ event = {
 
 	action = {
 		name = EVT_90000105__A # Send it
-		ai_chance = 50
+		ai_chance = 60
 		command = { type = relation which = PER value = -50 }
 		command = { type = trigger which = 90000106 } # German reaction
 	}
@@ -222,13 +222,13 @@ event = {
 
 	action = {
 		name = EVT_90000106_A # Withdraw
-		ai_chance = 75
+		ai_chance = 60
 		command = { type = relation which = PER value = -50 }
 	}
 	
 	action = {
 		name = EVT_90000106_B # Risk war
-		ai_chance = 25
+		ai_chance = 40
 		command = { type = trigger which = 90000108 } # Germans are able to send Iranians help 				
 		command = { type = trigger which = 90000107 }
 	}
@@ -245,7 +245,7 @@ event = {
 
 	action = {
 		name = EVT_90000107_A # WW3
-		ai_chance = 40
+		ai_chance = 50
 		command = { type = war which = GER }
 		command = { type = war which = PER }
 		command = { type = dissent value = 5 }
@@ -253,7 +253,7 @@ event = {
 	
 	action = {
 		name = EVT_90000107_B # Back down
-		ai_chance = 60
+		ai_chance = 50
 		command = { type = dissent value = 10 }
 		command = { type = domestic which = interventionism value = -1 }
 	}
