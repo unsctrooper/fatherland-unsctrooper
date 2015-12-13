@@ -5,12 +5,12 @@
 
 # 8500301 - Aswan High Dam - EGY
 # 8500302 - Nationalization of Suez Canal - ENG
-# 8500303 - Put pressure for a diplomatic solution - ALS
+# 8500303 - Put pressure for a diplomatic solution - USA
 # 8500304 - Operation Kadesh - ENG
 # 8500305 - Suez War - EGY
-# 8500311 - The United Nations position - ALS
+# 8500311 - The United Nations position - USA
 # 8500312 - UN meddles in Suez war - German reaction - GER
-# 8500313 - Germany sent an ultimatum for Suez War - UN reaction - ALS
+# 8500313 - Germany sent an ultimatum for Suez War - UN reaction - USA
 # 8500314 - UN ignores ultimatum - German final decision - GER
 # 8500315 - The UN economic support - ENG
 # 8500316 - The Axis economic support - EGY
@@ -158,7 +158,7 @@ event = {
 
 event = {
 	id = 8500303
-	country = ALS
+	country = USA
 
 	name = "Put pressure for a diplomatic solution"
 	desc = "Put pressure for a diplomatic solution"
@@ -266,7 +266,7 @@ event = {
 # UN reaction to the Suez War
 event = {
 	id = 8500311
-	country = ALS
+	country = USA
 
 	name = "The United Nations position"
 	desc = "The British has started the invasion of Egypt, what will do ?"
@@ -379,7 +379,7 @@ event = {
 # Germany sent an ultimatum for Suez War - UN reaction
 event = {
 	id = 8500313
-	country = ALS
+	country = USA
 
 	name = EVT_8500313_NAME #Germany sent an ultimatum for Suez War
 	desc = EVT_8500313_DESC
@@ -526,7 +526,7 @@ event = {
 		ai_chance = 80
 		command = { type = peace which = EGY value = 0 }
 		command = { type = trigger which = 8500322 }
-		command = { type = alliance which = ALS }
+		command = { type = alliance which = USA }
 		command = { type = dissent value = 1 }
 		command = { type = domestic which = interventionism value = -1 }
 		command = { type = belligerence value = -1 }
@@ -574,7 +574,7 @@ event = {
 		command = { type = dissent value = -3 }
 		command = { type = belligerence value = 3 }
 		command = { type = trigger which = 8500323 }
-		command = { type = alliance which = ALS }
+		command = { type = alliance which = USA }
 		#command = { type = alliance_leader which = ENG where = 2 }		
 	}
 }
