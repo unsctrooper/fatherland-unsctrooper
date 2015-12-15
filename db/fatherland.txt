@@ -86,7 +86,7 @@ event = "db\events\fatherland\china\china.txt"
 event = "db\events\fatherland\axis_europe\Axis Military Events.txt"
 event = "db\events\fatherland\axis_europe\Moscow.txt"
 event = "db\events\fatherland\axis_europe\Intervention.txt"
-event = "db\events\fatherland\axis_europe\German-Soviet border war.txt"
+#event = "db\events\fatherland\axis_europe\German-Soviet border war.txt"
 
 #COMINTERN
 #event = "db\events\fatherland\comintern\comintern_conference.txt"
@@ -99,17 +99,20 @@ event = "db\events\fatherland\comintern\turkestan.txt"
 event = "db\events\fatherland\comintern\zhukov.txt"
 
 #CRISIS
-event = "db\events\fatherland\crisis\abadan_crisis.txt"
+#locals (add also Rhodesia in South Africa files and Ethiopia in Ethiopia files)
+event = "db\events\fatherland\crisis\transylvania.txt"
 event = "db\events\fatherland\crisis\nuclear.txt"
-event = "db\events\fatherland\crisis\SwissProblem.txt"
-event = "db\events\fatherland\crisis\ira.txt"
+event = "db\events\fatherland\crisis\switzerland.txt"
 event = "db\events\fatherland\crisis\colonials.txt"
 event = "db\events\fatherland\crisis\sino_indian_war.txt"
-event = "db\events\fatherland\crisis\morocco_crisis.txt"
+#WW3 flashpoints
+event = "db\events\fatherland\crisis\abadan.txt"
+event = "db\events\fatherland\crisis\suez.txt"
+event = "db\events\fatherland\crisis\kuwait.txt"
+event = "db\events\fatherland\crisis\ira.txt"
+event = "db\events\fatherland\crisis\morocco.txt"
+# WW3
 event = "db\events\fatherland\crisis\WWIII.txt"
-#event = "db\events\fatherland\crisis\SuezKuwaitCrisis.txt"
-event = "db\events\fatherland\crisis\Suez.txt"
-event = "db\events\fatherland\crisis\transylvania.txt"
 
 #EUROPE
 event = "db\events\fatherland\europe\cyprus.txt"

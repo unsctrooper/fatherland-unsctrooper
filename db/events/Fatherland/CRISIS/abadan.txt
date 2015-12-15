@@ -1,0 +1,515 @@
+#####################################
+# Abadan crisis events
+# Made by Pako
+# NOTE: This event chain is an adapted event chain from the NWO Mod. 
+# All credits go to this mod for the original idea. 
+# Some events were added, and the Abadan crisis in Fatherland is betwen Germany and USA
+#####################################
+
+# Abadan crisis :
+# 90000100 # PER # Iran nationalizes oil fields - Start of Abadan Crisis (Possible WW3 outcome)
+# 90000101 # ALS # Abadan Crisis (Possible WW3 outcome)
+# 90000102 # PER # The United Nations imposes sanctions - Abadan Crisis
+# 90000103 # PER # Sanctions take their toll on us - Abadan Crisis
+# 90000104 # GER # Iranians ask for help - Abadan Crisis
+# 90000105 # USA # Germany supports Iran - Abadan Crisis
+# 90000106 # GER # The Allies send their ultimatum - Abadan Crisis
+# 90000107 # USA # Germany defies our ultimatum - Abadan Crisis
+# 90000108 # PER # German aid arrives - Abadan Crisis
+# 90000109 # PER # Operation Ajax - Abadan Crisis
+# 90000110 # PER # Change of Government - Abadan Crisis
+# 90000111 # GER # German-Iranian Treaty of Friendship
+# 90000112 # PER # German-Iranian Treaty of Friendship
+# 90000113 # PER # Iran signs the treaty
+# 90000114 # PER # German-Iranian Alliance
+# 90000115 # SOV # Axis presence in Iran
+
+event = {
+	id = 90000100
+	country = PER
+
+	name = "Iran nationalizes oil fields - Start of Abadan Crisis (Possible WW3 outcome)"
+	desc = "The AIOC was the United Kingdom's ""single largest overseas asset"" and a ""source of national pride"" in the British post-war era of Clement Attlee, and Ernest Bevin. Even as late as the ""1940s and early 1950s some high British officials still believed that Persian petroleum was actually and rightly British petroleum because it had been discovered by the British, developed by British capital, and exploited through British skill and British ingenuity."
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		puppet = { country = PER country = ENG }
+		OR = { 
+			#AND = {
+			#	year = 1950
+			#	random = 15
+			#	}
+			AND = {
+				year = 1951
+				random = 30
+				}
+			year = 1952
+			}
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = "Nationalize!" # Nationalize!
+		ai_chance = 80
+		command = { type = industrial_modifier which = total value = 5 }
+		
+		command = { type = add_prov_resource which = 1089 value = 50 where = oil }
+		command = { type = add_prov_resource which = 1090 value = 20 where = oil }
+		command = { type = add_prov_resource which = 1091 value = 5 where = oil }
+		
+		command = { type = relation which = ALS value = -100 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = U01 value = -100 }		
+		command = { type = relation which = SOV value = -100 }
+		
+		command = { type = relation which = AXI value = 50 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = ITA value = 50 }		
+		
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+		
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars 
+	}
+	
+	action = {
+		name = "It's not necessary" # No
+		ai_chance = 20
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 90000101 }
+	}
+}
+
+
+event = {
+	id = 90000101
+	country = ALS
+
+	name = "Abadan Crisis (Possible WW3 outcome)"
+	desc = "The AIOC was the United Kingdom's ""single largest overseas asset"" and a ""source of national pride"" in the British post-war era of Clement Attlee, and Ernest Bevin. Even as late as the ""1940s and early 1950s some high British officials still believed that Persian petroleum was actually and rightly British petroleum because it had been discovered by the British, developed by British capital, and exploited through British skill and British ingenuity."
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		event = 90000100
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action = {
+		name = "Impose sanctions on Iran!" # Impose sanctions
+		ai_chance = 85
+		command = { type = belligerence value = 10 }
+		command = { type = relation which = PER value = -100 }
+	}
+	
+	action = {
+		name = "We must Accept the nationalization" # Accept
+		ai_chance = 15
+		command = { type = dissent value = 5 }
+		command = { type = relation which = PER value = 100 }
+		command = { type = sleepevent which = 90000102 }
+	}
+}
+
+
+event = {
+	id = 90000102
+	country = PER
+	one_action = yes
+
+	name = "The United Nations imposes sanctions - Abadan Crisis"
+	desc = "The British government is trying to bring us down to our knees by means of an international embargo!"
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		event = 90000101
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = february year = 1953 }
+
+	action = {
+		name = "Sanctions hurt us!" # Sanctions are successful
+		ai_chance = 50
+		command = { type = industrial_modifier which = total value = -10 }
+		command = { type = dissent value = 15 }
+	}
+	
+	action = {
+		name = "Sanctions don't hurt us!" # Sanctions are a failure
+		ai_chance = 50
+		command = { type = dissent value = 10 } # There's some turmoil, anyway
+		command = { type = sleepevent which = 90000103 }
+		command = { type = sleepevent which = 90000109 } # Operation Ajax															
+	}
+}
+
+event = {
+	id = 90000103
+	country = PER
+	one_action = yes
+
+	name = "Sanctions take their toll on us - Abadan Crisis"
+	desc = "The UN sanctions have crippled our trade, it is time to look for a strong ally who can help us against Allies."
+	picture = "abadan_oil"
+	style = 1
+
+	trigger = {
+		event = 90000102
+	}
+
+	date = { day = 0 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 30 month = february year = 1953 }
+
+	action = {
+		name = "We are doomed!" # Oh oh
+		ai_chance = 30
+		command = { type = dissent value = 15 }
+	}
+	
+	action = {
+		name = "Ask help to Axis powers" # Ask Germany
+		ai_chance = 70
+		command = { type = dissent value = 10 } # There's some turmoil, anyway
+		command = { type = trigger which = 90000104 }
+	}
+}
+
+# Germans are asked for help
+event = {
+	id = 90000104
+	country = GER
+
+	name = "Iranians ask for help - Abadan Crisis"
+	desc = "Iran has asked us to support them against the United Nations, if we can get Iran on our side this will greatly extend our geopolitical power, but we may risk war with the Allies"
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name ="Support Iran" # Help out
+		ai_chance = 80
+		command = { type = relation which = PER value = 50 }
+		command = { type = trigger which = 90000105 } # British ultimatum
+	}
+	
+	action = {
+		name = "This is too risky ... "# Too risky...
+		ai_chance = 20
+		command = { type = relation which = PER value = -50 }
+	}
+}
+
+# USA ultimatum
+event = {
+	id = 90000105
+	country = USA
+
+	name = "Germany supports Iran - Abadan Crisis"
+	desc = "Germany support Iran. We can send them an ultimatum to cease their support, but we might risk a new world war!"
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = "Send the ultimatum (Possible WW3 Outcome)" # Send it
+		ai_chance = 70
+		command = { type = relation which = PER value = -50 }
+		command = { type = trigger which = 90000106 } # German reaction
+	}
+	
+	action = {
+		name = "Stay out, this is too risky" # Too risky...
+		ai_chance = 30
+		command = { type = trigger which = 90000108 } # Germans are able to send Iranians help     		
+	}
+}
+
+# German reaction to ultimatum
+event = {
+	id = 90000106
+	country = GER
+
+	name = "The Allies send their ultimatum - Abadan Crisis"
+	desc = "The Allies have told us they will not back down in the Abadan crisis and demand us to cease support  for the new Iranian government, or risk war!"
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = "Stay out, this is too risky" # Too risky...
+		ai_chance = 60
+		command = { type = relation which = PER value = -50 }
+	}
+	
+	action = {
+		name = "We are not afraid (Possible WW3 Outcome)" # Risk war
+		ai_chance = 40
+		command = { type = trigger which = 90000108 } # Germans are able to send Iranians help 				
+		command = { type = trigger which = 90000107 }
+	}
+}
+
+# The Alies carry out ultimatum
+event = {
+	id = 90000107
+	country = USA
+
+	name = "Germany defies our ultimatum - Abadan Crisis"
+	desc = "The Germans have defied our ultimatum, now it is time to show our teeth!"
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = "Destroy the Nazis! (WW3 Flashpoint)" # WW3
+		ai_chance = 50
+		command = { type = war which = GER }
+		command = { type = war which = PER }
+		command = { type = dissent value = 5 }
+	}
+	
+	action = {
+		name = "This is too risky…." # Back down
+		ai_chance = 50
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+# German help arrives
+event = {
+	id = 90000108
+	country = PER
+
+	name = "German aid arrives - Abadan Crisis"
+	desc = "German has send us aid and specialists, we are entering a new era of cooperation!"
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = "Great" # Thanks!
+		ai_chance = 100
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = dissent value = -20 }
+		command = { type = trigger which = 90000115 }
+	}
+}
+
+#Operation Ajax
+event = {
+	id = 90000109
+	country = PER
+
+	name = "Operation Ajax - Abadan Crisis"
+	desc = "Operation Ajax has started, the allies have taken full control of our country!"
+	picture = "operation_ajax"
+	style = 1
+
+	trigger = {
+		event = 90000103 # We got hit by sanctions
+		NOT = { event = 90000108 } # Germans didn't help
+	}
+
+	date = { day = 0 month = march year = 1950  }
+	offset = 45
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action = {
+		name = "Damn!"
+		command = { type = dissent value = 10 }
+		command = { type = add_prov_resource which = 1089 value = -50 where = oil }
+		command = { type = add_prov_resource which = 1090 value = -20 where = oil }
+		command = { type = add_prov_resource which = 1091 value = -5 where = oil }
+		### End of blockade
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = trigger which = 90000110 }
+		command = { type = end_access which = GER }		
+	}
+}
+
+#Iranian coup d'état
+event = {
+	id = 90000110
+	country = PER
+
+	name = "Change of Government - Abadan Crisis "
+	desc = ""
+	picture ="The Operation Ajax was succesful. We've a completely review of our cabinet"
+	style = 1
+
+	action = {
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 }
+		command = { type = headofgovernment which = 150101 }
+		command = { type = foreignminister which = 150031 }
+		command = { type = armamentminister which = 150047 }
+		command = { type = ministerofsecurity which = 150052 }
+		command = { type = ministerofintelligence which = 150065 }
+		command = { type = chiefofstaff which = 150103 }
+		command = { type = chiefofarmy which = 150105 }
+		command = { type = chiefofnavy which = 150083 }
+		command = { type = chiefofair which = 150104 }
+		command = { type = dissent value = 3 }
+		command = { type = sleepevent which = 2500124 }
+		command = { type = sleepevent which = 2500125 }
+		command = { type = set_relation which = ENG value = 100 }
+		command = { type = set_relation which = USA value = 100 }
+		command = { type = set_relation which = FRA value = 100 }
+		command = { type = set_relation which = SOV value = 0 }
+		command = { type = set_relation which = GER value = -100 }
+	}
+}
+
+event = {
+	id = 90000111
+	random = no
+	save_date = yes
+	country = GER
+	
+	decision = {	
+		event = 90000108
+			NOT = { alliance = { country = GER country = PER } }
+	}
+	decision_trigger = { 
+	NOT = { war = { country = ENG country = GER } }
+	
+	OR = {
+		ai = yes
+		relation = { which = PER value = 100 }	
+		}
+	}
+	
+	name = "German-Iranian Treaty of Friendship"
+	desc = "Now that we have helped Iran against the British, we should see if it is possible to align Iran closer to the Axis alliance."
+	style = 2
+	picture = "decision_persia"
+	decision_picture = "persia"
+
+	date = { day = 1 month = march year = 1950 }
+	offset = 30
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = {
+		name = "Offer military cooperation"
+		ai_chance = 50
+		command = { type = setflag which = Iran1 }
+		command = { type = trigger which = 90000112 }
+	}
+	action = {
+		name = "Offer an alliance"
+		ai_chance = 40
+		command = { type = setflag which = Iran2 }
+		command = { type = trigger which = 90000112 }
+	}
+	action = {
+		name = "We are not interested in Iran"
+		ai_chance = 10
+		command = { type = sleepevent which = 90000112 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 90000112
+	country = PER
+
+	name = "German-Iranian Treaty of Friendship"
+	desc = "The Germans have offered us increased cooperation between our countries. They will protect us against the British, but we might get dragged into an all-out war in the future."
+	picture = "persia"
+	style = 1
+
+	action = {
+		name = "Limit the pact to military cooperation" 
+		ai_chance = 50
+		command = { type = clrflag which =  Iran1 }
+		command = { type = clrflag which =  Iran2 }
+		command = { type = belligerence value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = 	access which = GER } 
+		command = { type = trigger which = 90000113 }
+	}	
+	action = {
+		name = "Enter a military alliance with Germany" 
+		ai_chance = 40
+		trigger = { flag = Iran2 }
+		command = { type = clrflag which =  Iran1 }
+		command = { type = clrflag which =  Iran2 }
+		command = { type = belligerence value = 2 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = 	access which = GER } 
+		command = { type =	alliance which = GER }
+		command = { type = trigger which = 90000114 }
+	}
+	action = {
+		name = "We are not interested in any of this" 
+		ai_chance = 10
+		command = { type = belligerence value = -1 }
+		command = { type = clrflag which =  Iran1 }
+		command = { type = clrflag which =  Iran2 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = sleepevent which = 90000113 }
+		command = { type = sleepevent which = 90000114 }
+	}
+}
+
+event = {
+	id = 90000113
+	country = PER
+
+	name = "Iran signs the treaty"
+	desc = "Iran has agreed to improved military cooperation between our two countries"
+	picture = "persia"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = GER value = 100 }
+		command = { type = guarantee which = GER where = PER }
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+	}	
+}
+event = {
+	id = 90000114
+	country = PER
+
+	name = "German-Iranian Alliance"
+	desc = "Iran has agreed to enter the Axis alliance"
+	picture = "persia"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = relation which = GER value = 200 }
+		command = { type = guarantee which = GER where = PER }
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+		command = { type = alliance which = GER }
+	}	
+}
+event = {
+	id = 90000115
+	country = SOV
+
+	name = "Axis presence in Iran"
+	desc = "Germany has increased its influence on Iran. This is very bad news for us as it may open a second front in a future war."
+	picture = "abadan_oil"
+	style = 1
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = relation which = PER value = -100 }
+	}
+}

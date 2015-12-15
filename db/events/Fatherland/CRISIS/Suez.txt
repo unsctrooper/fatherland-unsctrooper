@@ -1,11 +1,14 @@
 #####################################
 # Suez crisis events
 # Made by Pako
+# NOTE: This event chain is an adapted event chain from the NWO Mod. 
+# All credits go to that mod for the original idea. 
+# Some events were added, and the Suez crisis in Fatherland is betwen UK and Egypt
 #####################################
 
 # 8500301 - Aswan High Dam - EGY
 # 8500302 - Nationalization of Suez Canal - ENG
-# 8500303 - Put pressure for a diplomatic solution - USA
+# 8500303 - Put pressure for a diplomatic solution - ALS
 # 8500304 - Operation Kadesh - ENG
 # 8500305 - Suez War - EGY
 # 8500311 - The United Nations position - USA
@@ -26,13 +29,13 @@ event = {
 	id = 8500301
 	country = EGY
 
-	name = EVT_8500301_NAME #Aswan High Dam
-	desc = EVT_8500301_DESC
+	name = "Aswan High Dam" #Aswan High Dam
+	desc = "Building a second dam in Aswan, designed to withstand huge amount of water, required investment bigger than Egypt could afford. Western world, Germany and Soviet are ready to provide some help. Nasser must choose a more or less risky path for the new Egypt."
 	picture = "nwo\aswan_dam"
 	style = 1
 
-	date = { day = 1 month = july year = 1950 }
-	offset = 60
+	date = { day = 0 month = july year = 1950 }
+	offset = 10
 	deathdate = { day = 29 month = december year = 1963 }
 
 	# Huge Aswan Dam funded with help from Germany and with plans to nationalize Suez Canal
@@ -100,6 +103,10 @@ event = {
 		command = { type = relation which = GER value = -100 }
 		command = { type = relation which = ITA value = -100 }	
 		
+		command = { type = guarantee which = USA where = EGY }	
+		command = { type = guarantee which = ENG where = EGY }	
+		command = { type = guarantee which = U01 where = EGY }	
+		
 		command = { type = sleepevent which = 8500302 }
 	}
 }
@@ -108,8 +115,8 @@ event = {
 	id = 8500302
 	country = ENG
 
-	name = EVT_8500302_NAME #Nationalization of Suez Canal
-	desc = EVT_8500302_DESC
+	name = "Nationalization of Suez Canal - Start of Suez Crisis" #Nationalization of Suez Canal
+	desc = "In a speech in Alexandria, Nasser deliberately pronounced the name of Ferdinand de Lesseps, the builder of the canal, a code-word for Egyptian forces to seize control of the canal. Americans were reluctant to provide far-reaching support but United Kingdom was evaluate all possible solutions."
 	picture = "nwo\nasser_speaking"
 	style = 1
 	
@@ -117,13 +124,13 @@ event = {
 		event = 8500301
 	}
 
-	date = { day = 1 month = september year = 1950 }
-	offset = 30
+	date = { day = 0 month = september year = 1950 }
+	offset = 15
 	deathdate = { day = 29 month = december year = 1963 }
 
 	# Prepare for a regional conflict
 	action = {
-		name = "We cannot accept the Nationalization of the channel, prepare for a regional conflict"
+		name = "We cannot accept the Nationalization of Suez canal, prepare for a regional conflict"
 		ai_chance = 80
 		command = { type = secedeprovince which = EGY value = 900 } # Suez
 		command = { type = money value = -1000 }
@@ -135,13 +142,13 @@ event = {
 		
 		command = { type = belligerence value = 5 }
 		
-		command = { type = trigger value = 8500303 }		
-		command = { type = trigger which = 8500304 }
+		#command = { type = trigger value = 8500303 }		
+		#command = { type = trigger which = 8500304 }
 	}
 	
 	# Let the matter fall
 	action = {
-		name = EVT_8500302_C
+		name = "Let the matter fall"
 		ai_chance = 20
 		command = { type = secedeprovince which = EGY value = 900 } # Suez
 		command = { type = relation which = EGY value = 100 }
@@ -158,10 +165,10 @@ event = {
 
 event = {
 	id = 8500303
-	country = USA
+	country = ALS
 
-	name = "Put pressure for a diplomatic solution"
-	desc = "Put pressure for a diplomatic solution"
+	name = "The United Nations position - Suez Crisis"
+	desc = "The Suez Crisis has started and the Allies must be take a position. In a council in New York the allies reach an agreement."
 	picture = "nwo\operation_kadesh"
 	style = 1
 
@@ -169,8 +176,8 @@ event = {
 				event = 8500302
 		}
 
-	date = { day = 1 month = september year = 1950 }
-	offset = 1
+	date = { day = 0 month = september year = 1950 }
+	offset = 10
 	deathdate = { day = 29 month = december year = 1963 }
 	
 	action = {
@@ -195,14 +202,18 @@ event = {
 	random = no
 	country = ENG
 
-	name = "Operation Kadesh"
+	name = "Operation Kadesh - Suez Crisis"
 	desc = "Operation Kadesh - We need to retake the control of the Suez Channel"
 	picture = "nwo\operation_kadesh"
 	style = 1
-
+	
+	date = { day = 0 month = october year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+	
 	# Invade
 	action = {
-		name = EVT_8500304_A 
+		name = "Invade Egypt" 
 		ai_chance = 90
 		command = { type = leave_alliance }
 		command = { type = war which = EGY }
@@ -217,7 +228,7 @@ event = {
 	
 	# It's too risky
 	action = {
-		name = EVT_8500304_B
+		name = "It's too risky"
 		ai_chance = 10
 		command = { type = belligerence value = -5 }
 		command = { type = dissent value = 10 }
@@ -231,10 +242,11 @@ event = {
 event = {
 	id = 8500305
 	country = EGY
-
+    save_date = yes
+	
 	# Suez war
-	name = EVT_8500305_NAME
-	desc = EVT_8500305_DESC
+	name = "Then, it's war - Suez Crisis"
+	desc = "Egypt was determined to defend the Sinai Peninsula and the Canal or, at very least, slow the advance and wait for enraged international community to condemn British invasion."
 	picture = "nwo\nasser_in_crowd"
 	style = 1
 	
@@ -243,22 +255,24 @@ event = {
 			event = 8500304
 		}
 
-	date = { day = 1 month = september year = 1950 }
-	offset = 1
+	date = { day = 1 month = october year = 1950 }
+	offset = 2
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		name = "Mobilize the militian and the reserves"
+		name = "Recall all the reservists !"
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
 		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
+		
 		command = { type = add_division value = militia when = 8 }
-		command = { type = add_division value = militia when = 8 }
-		command = { type = add_division value = militia when = 8 }		
 		command = { type = add_division value = militia when = 8 }
 		command = { type = add_division value = militia when = 8 }
 		command = { type = add_division value = militia when = 8 }		
+		command = { type = add_division value = militia when = 8 }
+		command = { type = add_division value = militia when = 8 }
+		command = { type = add_division value = militia when = 8 }		
+		
 		command = { type = dissent value = -10 }
 	}
 }
@@ -268,7 +282,7 @@ event = {
 	id = 8500311
 	country = USA
 
-	name = "The United Nations position"
+	name = "The United States take a position - Suez Crisis"
 	desc = "The British has started the invasion of Egypt, what will do ?"
 	picture = "nwo\suez_war_intervention"
 	style = 1
@@ -278,19 +292,21 @@ event = {
 		war = { country = ENG country = EGY }
 	}
 
-	date = { day = 16 month = september year = 1950 }
+	date = { day = 16 month = october year = 1950 }
 	offset = 7
 	deathdate = { day = 29 month = november year = 1956 }
 	
 	# Urge them to quit
 	action = {
-		name = "Bring UK to a negoziation table with Egypt"
+		name = "Bring UK to a negoziation table with Egypt in Tobruk"
 		ai_chance = 50
 		command = { type = relation which = ENG value = 20 }
 		command = { type = relation which = EGY value = 20 }
+		
 		command = { type = belligerence value = -1 }
 		command = { type = dissent value = -1 }
-		command = { type = sleepevent which = 8500312 }
+		
+		command = { type = sleepevent which = 8500312 } #German reaction
 	}
 	
 	# Support UK advance
@@ -299,20 +315,22 @@ event = {
 		ai_chance = 50
 		command = { type = relation which = ENG value = 150 }
 		command = { type = relation which = EGY value = -150 }
+		
 		command = { type = belligerence value = 3 }
 		command = { type = dissent value = 1 }
+		
 		command = { type = trigger which = 8500315 }
 		command = { type = sleepevent which = 8500320 } # Conclusion of Suez War
 	}
 }
 
-# UN meddles in Suez War - German reaction
+# USA meddles in Suez War - German reaction
 event = {
 	id = 8500312
 	country = GER
 
-	name = EVT_8500312_NAME
-	desc = EVT_8500312_DESC
+	name = "America meddles in Suez War - Suez Crisis"
+	desc = "In the United States many Democratic and Republican politicians alike openly supported the British including the Senate leader Lyndon B. Johnson who urged Eisenhower to give his full support. The Congress is ready to give them green light."
 	picture = "nwo\suez_war_intervention"
 	style = 1
 	trigger = {
@@ -320,13 +338,13 @@ event = {
 		war = { country = ENG country = EGY }
 	}
 
-	date = { day = 20 month = september year = 1950 }
+	date = { day = 20 month = october year = 1950 }
 	offset = 1
 	deathdate = { day = 29 month = december year = 1956 }
 	
 	# Send an ultimatum and support Egypt
 	action = {
-		name = EVT_8500312_A
+		name = "Send an ultimatum to USA and support Egypt"
 		ai_chance = 50
 		
 		command = { type = relation which = EGY value = 150 }
@@ -345,7 +363,7 @@ event = {
 	
 	# Support Egypt
 	action = {
-		name = EVT_8500312_B
+		name = "Condam the British invasion but support Egypt only with economic aid"
 		ai_chance = 40
 		
 		command = { type = relation which = EGY value = 100 }
@@ -362,7 +380,7 @@ event = {
 
 	# File a protest
 	action = {
-		name = EVT_8500312_C
+		name = "Just an official note of condamn"
 		ai_chance = 10
 		
 		command = { type = relation which = EGY value = 50 }
@@ -381,8 +399,8 @@ event = {
 	id = 8500313
 	country = USA
 
-	name = EVT_8500313_NAME #Germany sent an ultimatum for Suez War
-	desc = EVT_8500313_DESC
+	name = "" #Germany sent an ultimatum for Suez War
+	desc = "Germany sent an ultimatum - Suez Crisis"
 	picture = "nwo\suez_war_intervention"
 	style = 1
 
@@ -392,7 +410,7 @@ event = {
 	
 	# Back off
 	action = {
-		name = "The United Nations won't intervene in the Suez war"
+		name = "Back off ... we don't want a WW3"
 		ai_chance = 50
 		
 		command = { type = relation which = ENG value = -10 }
@@ -404,8 +422,8 @@ event = {
 	
 	# Let them have the war (Possible WW3)
 	action = {
-		name = EVT_8500313_B
-		ai_chance = 7
+		name = "Reject the ultimatum - (Possible WW3)"
+		ai_chance = 50
 		command = { type = relation which = GER value = -50 }
 		command = { type = trigger which = 8500314 }
 		
@@ -420,8 +438,8 @@ event = {
 	id = 8500314
 	country = GER
 
-	name = EVT_8500314_NAME
-	desc = EVT_8500314_DESC
+	name = "USA reject our ultimatum - Suez Crisis - WW3 Flashpoint"
+	desc = "US ignores the ultimatum, we may take the final decision"
 	picture = "nwo\suez_war_intervention"
 	style = 1
 
@@ -431,7 +449,7 @@ event = {
 	
 	# Then it is war (WW3)
 	action = {
-		name = EVT_8500314_A
+		name = "Then, it's the WW3"
 		ai_chance = 60
 		command = { type = alliance which = EGY }
 		
@@ -443,7 +461,7 @@ event = {
 	
 	# After all, better not
 	action = {
-		name = EVT_8500314_B
+		name = "After all, better not ... for now"
 		ai_chance = 40
 		command = { type = dissent value = 5 }
 		command = { type = domestic which = interventionism value = -1 }
@@ -456,8 +474,8 @@ event = {
 	id = 8500315
 	country = ENG
 	
-	name = "The UN economic assistance"
-	desc = EVT_8500315_DESC
+	name = "The UN economic assistance - Suez Crisis"
+	desc = "In spite of possible diplomatic repercussions, UN decided to support our cause against Egyptians to send us economic supplies."
 	picture = "nwo\operation_kadesh"
 	style = 1
 	
@@ -478,16 +496,16 @@ event = {
 	id = 8500316
 	country = EGY
 
-	name = "The Axis economic support"
-	desc = EVT_8500316_DESC
+	name = "The Axis economic support - Suez Crisis"
+	desc = "In spite of possible diplomatic repercussions, the Axis decided to support our cause against Egyptians to send us economic supplies and some volunteers divisions."
 	picture = "nwo\nasser_in_crowd"
 	style = 1
 	
 	action = {
 		name = EVT_8500316_A
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
-		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = militia when = 8 }
+		command = { type = add_division value = militia when = 8 }
+		command = { type = add_division value = militia when = 8 }
 		command = { type = supplies value = 500 }
 		command = { type = money value = 500 }		
 		command = { type = oil value = 500 }		
@@ -504,44 +522,69 @@ event = {
 	id = 8500320
 	country = ENG
 
-	name = EVT_8500320_NAME
-	desc = EVT_8500320_DESC
+	name = "Suez War effort - Suez Crisis"
+	desc = "Advance of British forces was not swift enough as their advance was stopped and condemnation from the international community prompted them to halt their maneuvers and seek for peaceful resolution."
 	picture = "nwo\egypt_wins_suez_war"
 	style = 1
 	
 	trigger = {
 		war = { country = EGY country = ENG }
 		event = 8500305
+		event = { id = 8500305 days = 25  }   # Check if event with EVENT_ID has fired at least X days ago		
 		control = { province = 787 data = EGY } # Cairo
-		control = { province = 1008 data = ENG } # Tel Aviv
-		}
+		control = { province = 900 data = EGY } # Cairo		
+		#control = { province = 1008 data = ENG } # Tel Aviv
+	}
 
-	date = { day = 1 month = september year = 1950 }
-	offset = 30
+	date = { day = 25 month = october year = 1950 }
+	offset = 5
 	deathdate = { day = 29 month = december year = 1963 }
 
 	# Cease fire
 	action = {
-		name = EVT_8500320_A
+		name = "Cease fire"
 		ai_chance = 80
-		command = { type = peace which = EGY value = 0 }
-		command = { type = trigger which = 8500322 }
+		command = { type = peace which = EGY value = 0 }		
 		command = { type = alliance which = USA }
+		
 		command = { type = dissent value = 1 }
 		command = { type = domestic which = interventionism value = -1 }
 		command = { type = belligerence value = -1 }
+		
+		command = { type = trigger which = 8500322 }		
 	}
 	
 	# We will not be intimidated
 	action = {
-		name = EVT_8500320_B
+		name = "We'll not be intimidated"
 		ai_chance =20
 		#command = { type = leave_alliance }
 		command = { type = dissent value = 3 }
 		command = { type = belligerence value = 3 }
 		command = { type = domestic which = interventionism value = 1 }		
+		
 		# Germany helps Egypt again
 		command = { type = trigger which = 8500316 }
+	}
+}
+
+event = {
+	id = 8500322
+	random = no
+	country = EGY
+
+	name = "Cease fire - Suez Crisis"
+	desc = "Nasser's plan was bold but paid off. Egyptian defence was strong enough to withstand British forces and now international mediation will ensure that we will have the right to keep Suez as ours."
+	picture = "nwo\egypt_wins_suez_war"
+	style = 1
+
+	action = {
+		name = "We've Won !"
+		command = { type = dissent value = -25 }
+		command = { type = belligerence value = 5 }
+		command = { type = domestic which = interventionism value = 1 }		
+		
+		command = { type = addcore which = 900 } # Suez
 	}
 }
 
@@ -550,14 +593,15 @@ event = {
 	id = 8500321
 	country = ENG
 
-	name = EVT_8500321_NAME
-	desc = EVT_8500321_DESC
+	name = "Suez War is won - Suez Crisis"
+	desc = "British forces were surprisingly quick to advance through the deserts and topple the Nasser's regime."
 	picture = "nwo\egypt_loses_suez_war"
 	style = 1
 	
 	trigger = {
 		war = { country = EGY country = ENG }
-		event = 8500305
+		#event = 8500305
+		event = { id = 8500305 days = 25  }   # Check if event with EVENT_ID has fired at least X days ago		
 		NOT = { control = { province = 787 data = EGY } } # Cairo
 		NOT = { control = { province = 900 data = EGY } } # Suez
 		NOT = { control = { province = 1008 data = EGY } } # Tel Aviv		
@@ -575,43 +619,23 @@ event = {
 		command = { type = belligerence value = 3 }
 		command = { type = trigger which = 8500323 }
 		command = { type = alliance which = USA }
+		#command = { type = make_puppet which = EGY }
 		#command = { type = alliance_leader which = ENG where = 2 }		
 	}
 }
-
-# Diplomatic conclusion of Suez war, white peace but for Egypt is a victory
-event = {
-	id = 8500322
-	random = no
-	country = EGY
-
-	name = EVT_8500322_NAME
-	desc = EVT_8500322_DESC
-	picture = "nwo\egypt_wins_suez_war"
-	style = 1
-
-	action = {
-		name = "We've Won !"
-		command = { type = dissent value = -25 }
-		command = { type = belligerence value = 5 }
-		command = { type = domestic which = interventionism value = 1 }		
-		command = { type = addcore which = 900 } # Suez
-	}
-}
-
 
 event = {
 	id = 8500323
 	random = no
 	country = EGY
 
-	name = EVT_8500323_NAME
-	desc = EVT_8500323_DESC
+	name = "Suez War is lost - Suez Crisis"
+	desc = "Nasser's plan was bold but turned against himself. British were deadly effective and our own power base too small to effectively wage the war. Nasser will face a martial court while the new government will once again ally itself with the Western powers."
 	picture = "nwo\egypt_loses_suez_war"
 	style = 1
 	
-	action_a = {
-		name = EVT_8500323_A
+	action = {
+		name = "A new Government"
 		command = { type = dissent value = 20 }
 		command = { type = flag_ext where = EGY }
 		command = { type = headofstate which = 340200 } # Fuad II
@@ -635,5 +659,4 @@ event = {
 		command = { type = set_relation which = ENG value = 50 }
 		command = { type = set_relation which = GER value = -150 }
 	}
-
 }

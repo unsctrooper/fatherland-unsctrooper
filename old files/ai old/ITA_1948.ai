@@ -1,0 +1,556 @@
+##############################
+# AI definition for ITA #
+# Review by Pako #
+##############################
+
+switch = no # [yes/no]
+max_front_ratio = 1.50 
+max_garrison_prop = 0.40
+min_garrison_prop = 0.30
+neutrality = 0
+war = 0
+reinforcement = 0.20 
+upgrading = 0.20
+strat_redeploy_threshold = 35
+max_redeploying = 0.05
+exp_force_ratio = 0.50
+no_exp_forces_to = { }
+
+###################################
+# Diplomacy
+###################################
+combat = { 
+}
+
+claim_acceptance = -100
+
+demand_claims = { FRA U01 ENG GRE CRO }
+liberate = { SCH SPA POR CRO SER HUN ROM TUR FRA AUS }
+resistance = { 
+	ENG = 10
+	U01 = 10
+	SOV = 10
+	FRA = 6
+}
+befriend = {
+	GER = 100
+	ROM = 60
+	SLO = 50
+	BUL = 80 
+	HUN = 80 
+	SPA = 60
+	CRO = 60
+	SWE = 10
+	FIN = 20
+	POR = 20
+	TUR = 30
+}
+protect = {
+	CRO = 80 
+	MTN = 100
+	U66 = 100
+	TUR = 40
+}
+target = { 
+	429 = 100 #Malta
+	750 = 90 #Tripoli
+	760 = 90 #Bengazi
+	787 = 60 #Cairo
+}  
+trade = {
+	cancel_deal_threshold = 3
+
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+
+	favored = {
+		GER = 100
+		ROM = 100
+		HUN = 80
+		CRO = 100
+		SPA = 80
+		BUL = 50
+		SWE = 100
+		FIN = 50
+		FRA = 20
+		SER = 30
+		POR = 10
+		TUR = 40
+		JAP = 50
+		SLO = 20
+	}
+	
+	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
+}
+tech_sharing = {
+	favored = {
+		ROM = 120
+		SLO = 80
+		BUL = 100
+		HUN = 100
+		SPA = 120
+		CRO = 50
+		GER = 150
+		SWE = 50
+		FIN = 120
+		JAP = 150
+		TUR = 80
+	}
+	embargo = { ENG USA U01 AST NZL CAN SAF BEL EGY IRQ JAP NEP NIC OMN CHC SOV MON }
+	not = { }
+	prioritized = { }
+}
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.8
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
+	spyprefsdata = 
+	{
+		NumberOfSpies = 20
+		min_number_of_spies = 3
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
+		country 		= ITA
+	}
+	spyprefsdata = {
+		country_priorities	= 10 # 8
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= ENG
+	}
+	spyprefsdata = {
+		country_priorities	= 8
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 0
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= FRA
+	}
+	spyprefsdata = {
+		country_priorities	= 5
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 1
+		disrupt_techteam 	= 4
+		country 			= SOV
+	}
+	spyprefsdata = {
+		country_priorities	= 4
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 0
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= USA
+	}
+	spyprefsdata = {
+		country_priorities	= 4
+		steal_blueprint 	= 1 # 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 1
+		sabotage_industry 	= 8 # 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= U01
+	}
+}
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.50 
+
+	AA_batteries = not_atwar
+	max_AA_level = 4
+	
+	AA_provs = { 
+		419 # Roma
+		411 # Bologna
+		407 # Milan
+		400 # Venezia
+		398 # Turin
+		421 # Naples
+		396 # Genoa
+	} 
+
+	coastal_fort = yes
+	max_coastal_level = 3
+	coastal_fort_provs = { 
+		430 #Palermo
+		422 #Taranto
+	} 
+
+	radar_station = not_atwar 
+	max_radar = 5 
+	radar_provs = { 
+		398 # Turin
+		419 # Roma
+		431 # Messina
+		422 #Taranto
+	} 
+
+	air_base = no
+	max_air_base = 2
+	air_base_provs = { } 
+
+	naval_base = no
+	max_naval_base = 3 
+	naval_base_provs = { } 
+
+	land_fort = no
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = no 
+	force_ic_until = 1949
+	ic_end_year = 1960
+	IC_provs = {
+		419 # Roma
+		411 # Bologna
+		407 # Milan
+		400 # Venezia
+		398 # Turin
+		421 # Naples
+	} 
+}
+
+military = { 
+	relative_build_scheme 	= no
+	max_batch_peace 	= 680 
+	max_batch_war 		= 320 
+	max_batch_home_front = 180
+	extra_convoys_war = 0.0500 
+	extra_convoys_peace = 0.0500 
+
+	#### Divisions etc...
+	infantry 		= 15
+	cavalry 		= 0
+	motorized 		= 5
+	mechanized 		= 4
+	light_armor 	= 0
+	armor 			= 8
+	paratrooper 	= 0
+	marine 			= 1
+	bergsjaeger 	= 12
+	garrison		= 3
+    hq 				= 4
+	militia 		= 0
+#				47 %
+	interceptor 	= 5
+	multi_role 		= 0
+	cas 			= 0
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 5
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				15 %
+	battleship 		= 5
+	carrier 		= 5
+	escort_carrier	= 3
+	destroyer 		= 5
+	light_cruiser 	= 5
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 5
+	nuclear_submarine = 0
+	transports 		= 5
+#				38 %
+
+}
+
+technology = { 
+	endgoal 	= { } 
+	preference = { } 
+	ignore 	= { }
+ 
+	armor 		= 2
+	infantry 	= 5
+	industry 	= 4
+	aircraft 	= 1
+	naval 		= 1
+	land_doctrines 	= 1
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 1
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+leader_ratio = {
+	land_field_marshal 	=0.02
+	land_general 		=0.031
+	land_lt_general 	=0.41
+
+	sea_grand_admiral 	=0.02
+	sea_admiral 		=0.061
+	sea_vice_admiral 	=0.401
+
+	air_marshal 		=0.02
+	air_general 		=0.091
+	air_lt_General 		=0.11
+}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier = 0.4
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.5
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 100	# Beach level 2
+	capital			= 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = { 
+		FRA = 35
+		GER = 10
+		SCH = 10
+		CRO = 10
+	}
+	province_priorities = { 
+	359 = 20
+	373 = 20
+	369 = 20
+	329 = 20
+	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.1
+	min_attack_odds		= 0.9
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+###################################
+# Air bombardment and defense
+###################################
+# Air AI File For Ground Bombings as priority
+# bomber is now obsolete and NOT USED AT ALL replace and use Air Marshal instead
+
+air_marshal = {
+	min_mission_strength_org	= 0.8
+	icxdayscostfactor 			= 10.0		# How to value true industrial cost when calculating expect causalties
+	manpowercostfactor			= 100.0		# How to value manpower cost when calculating expect causalties
+	destructionriskthreashold 	= 0.2		# when to fear a divisiopn might be destroyed
+
+	# desirability is a multiplier used when calcualting the mission desirability
+	airsuperioritydesirability 		= 30.0
+	groundattackdesirability 		= 40.0
+	inderdictiondesirability 		= 20.0
+	logisticalstrikedesirability 	= 2.0
+	runwaycrateringdesirability 	= 10.0
+	strategicstrikedesirability 	= 10.0
+	installationstrikedesirability 	= 5.0
+	navalstrikedesirability 		= 15.0
+	portstrikedesirability 			= 9.0
+	convoyraiddesirability			= 9.0
+
+	# tolerance is the required kill:loss ration expected to do 
+	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
+	airsuperioritylosstolerance 	= 1.0
+	groundattacklosstolerance 		= 1.0
+	interdictionlosstolerance 		= 2.0
+	logisticalstrikelosstolerance 	= 0.5
+	runwaycrateringlosstolerance 	= 1.5
+	strategicstriketolerance 		= 4.5
+	installationstriketolerance 	= 1.5
+	navalstriketolerance 			= 1.0
+	portstriketolerance 			= 1.0
+	convoyraidtolerance				= 1.0
+
+	# efficency is a tweakable param to adjust according to how 
+	#    much actual damage comes from doing this mission (not to be confused with desirability)
+	logisticalstrikeefficency 	= 0.01
+	runwaycrateringefficency 	= 0.01
+	strategicstrikeefficency 	= 0.01
+	installationstrikeefficency = 0.01
+
+	taskforcetype = { name = "Air Superiority" desiredratio = 0.400 rangeweight = 10.000 airkillpowerweight = 2000.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes air_superiority = yes } 
+	taskforcetype = { name = "Soft Bombing" desiredratio = 0.250 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 2000.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 2000.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -0.500 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.050 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 2000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = -2000.000 softkillpowerweight = -2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = -2000.000 transportcapacityweight = 1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+ 	base					= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random					= 1.0	#How big a random range.  (1.0 = 1%)
+	coastal					= 0.05	#increase to avoid coastal forts more.
+	beach					= 0.1	#higher, avoid worst beaches.
+	distance				= 0.1	#higher = avoid long distance.
+	max_distance    		= 100.0  #
+	max_staging_distance	= 100	# How far should the staging area be from the target invasion point
+	pocket					= 50.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island					= 5.0	#prioritise taking pure islands.
+	enemy					= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 			= 0.5	#higher = much more vary of troops nearby
+	air_base				= 1.5 
+    naval_base 				= 1.0 
+    #air_support 			= 3.0 
+    #redirect 				= priority
+	ignore					= no
+	help_allies 			=  no
+      
+	staging_province = {
+		422 # Taranto 
+		430	# Palermo
+		433	# Syracuse	
+		379	# Rhodes		
+	}
+	
+	target = { 
+		429 = 20000  #Malta
+		
+		# Italy
+		430	= 8000  #Palermo
+		433	= 8000  #Syracuse
+		434	= 8000  #Cagliari
+		94	= 8000  #Corsica
+		422	= 8000  #Taranto
+		427	= 8000  #Salerno
+		416	= 8000  #Anzio
+		419	= 8000  #Rome
+		412	= 8000  #Ancona
+		400	= 8000  #Venice	
+	
+		# North Africa
+		900	= 1000	# Suez
+		789	= 1000  #Alexandra
+		717	= 500	#Rabat
+		728	= 500	#Oran
+		727	= 500	#Algiers
+		748	= 500	#Bizerte
+		747	= 500	#Tunis
+		750	= 500	#Tripoli
+		761	= 500	#Benghazi
+		765	= 500	#Tobruk
+
+		# Middle East
+		1019  = 500	#Beirut
+		1008  = 500 #Tel Aviv
+		1004  = 500 #El Arish	
+	
+		# Greece
+		382  = 2000  #Crete
+		372  = 500  #Patras
+		377  = 500  #Athens
+		370  = 500   #Alexandroupoli
+
+		# Yugoslavia/Albania
+		359  = 2000  #Tirana
+		343  = 200  #Dubrovnik
+
+		# Turkey
+		378  = 500  #Kalymnos
+		379  = 2000 #Rhodes
+		388  = 2000  #Nicosia
+		
+		#Spain
+		475	 = 500	 #Palma de Mallorca
+		473	 = 500	 #Cadiz
+		449  = 500  #Vigo
+		441  = 500  #Coruna
+		472  = 500  #Huelva
+		463  = 500  #Murcia
+		464  = 500  #Valencia		
+		440  = 500  #Barcelona
+		
+		#Portugal
+		995  = 100  #Azores
+		477  = 500  #Setubal
+		476  = 500  #Lissabon	
+	} 
+} 
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	#Which provinces to use as bases..
+	base = {
+		400 # Venice 
+		396 # Genoa 
+		422  # Taranto 
+	}
+	target = { } 
+	core = {
+		2184 
+		2192
+		2182
+		2180
+     	2734 
+     	2735 
+		##Africa
+		2183
+		2175
+		2177
+	}
+}

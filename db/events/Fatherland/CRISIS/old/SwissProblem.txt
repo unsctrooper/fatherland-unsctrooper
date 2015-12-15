@@ -1,0 +1,464 @@
+event = {
+	id = 819
+	random = no
+	country = GER
+
+	decision = {
+		event = 817
+		local_flag = Tannenbaum
+	}
+	decision_trigger = { 
+	event = { id = 817 days = 120 } 
+	}
+	trigger = {
+	event = { id = 817 days = 120 } 
+	}
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 12 month = march year = 1966 }
+
+	name = "819NAME"
+	desc = "819DESC" 
+	style = 2
+	picture = "reichstag"
+
+	action = {
+		    name = "819A" # Operation Tannenbaum
+			command = { type = end_non_aggression which = SCH where = GER } 
+		    command = { type = war which = SCH }
+	}
+}
+
+event = { # Fate of Switzerland
+	id = 820
+	random = no
+	country = GER
+
+	name = "Fate of Switzerland"
+	desc = "We've finally occupied the stubborn Swiss. They're only an offspring of the Deutsche Volke and therefore should be prepared to be integrated!" 
+	style = 2
+	picture = "news_paper"
+	
+    trigger = {
+	control = { province = 392 data = GER } 
+	NOT = { exists = SCH } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+	
+action_a = { 
+name = "RK Schweiz" 
+command = { type = independence which = SCH value = 1 } 
+command = { type = make_puppet which = SCH }
+command = { type = event which = 821 where = SCH when = 1 }
+}
+}
+
+event = { # RK Switzerland
+	id = 821
+	random = no
+	country = SCH
+
+name = "RK Schweiz"
+desc = "Our so called German brother have decided our destinity: We're just one more area to be eventually integrated into the Third Reich." 
+style = 2
+picture = "news_paper"
+	
+action = { 
+name = "Okay!"
+command = { type = removecore which = 389 }
+command = { type = removecore which = 390 }
+command = { type = removecore which = 391 }
+command = { type = removecore which = 392 }
+command = { type = addclaim which = 389 }
+command = { type = addclaim which = 390 }
+command = { type = addclaim which = 391 }
+command = { type = addclaim which = 392 }
+command = { type = dissent value = 10 }
+command = { type = manpowerpool value = -1000 }
+command = { type = set_domestic which = professional_army value = 7 }
+command = { type = local_setflag which = MOB7 }
+command = { type = local_setflag which = MOB6 }
+command = { type = local_setflag which = MOB5 }
+command = { type = local_setflag which = MOB4 }
+command = { type = local_setflag which = MOB3 }
+command = { type = local_setflag which = MOB2 }
+command = { type = local_setflag which = NEIN }
+command = { type = local_setflag which = RES }
+command = { type = name where = SCH which = "RK_S" }
+command = { type = flag_ext where = SCH which = "_RK_S" }
+command = { type = chiefofstaff which = 1050007 }
+command = { type = chiefofarmy which = 1050008 }
+command = { type = chiefofnavy which = 1050009 }
+command = { type = chiefofair which = 1050010 }
+}
+}
+event = { # Partition of Switzerland
+	id = 822 
+	random = no
+	country = GER
+
+	name = "Partition of Switzerland"
+	desc = "Not only do we have interests in Switzerland, so do Italy and France. While France has to be appeased every now and then, Geneva belong to the Holy Roman Borders and we should never offer German blood for French gain. Italy, on the other hand, has been our loyal ally most of the times." 
+	style = 2
+	picture = "news_paper"
+	
+    trigger = {
+    puppet = { country = SCH country = GER }
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action = { #Chur to Italy, Geneva to Vichy
+		name = "Chur to Italy, Geneva to Vichy"
+        ai_chance = 20
+        command = { type = relation which = SCH value = -50 }	
+        command = { type = relation which = ITA value = 50 }
+        command = { type = relation which = FRA value = 25 }
+		command = { type = trigger which = 823 }	
+		command = { type = trigger which = 824 }		
+	}
+	    action = { #Chur to Italy, Geneva Swiss
+		name = "Chur to Italy" 
+		ai_chance = 60
+        command = { type = relation which = SCH value = -50 }	
+        command = { type = relation which = ITA value = 50 }
+        command = { type = relation which = FRA value = -25 }	
+		command = { type = trigger which = 823 }
+	}
+	    action = { #All German!
+		name = "Maintain Swiss unity" 
+		ai_chance = 20
+        command = { type = relation which = SCH value = 50 }	
+        command = { type = relation which = ITA value = -50 }
+        command = { type = relation which = FRA value = -25 }	
+	}
+}
+event = { # Chur
+	id = 823
+	random = no
+	country = SCH
+
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
+style = 2
+picture = "news_paper"
+	
+action = { 
+name = "Okay!" 
+command = { type = removecore which = 390 }
+command = { type = dissent value = 5 }
+command = { type = secedeprovince which = ITA value = 390 when = 1 }
+command = { type = trigger which = 825 }
+}
+}
+
+event = { # Geneva
+	id = 824
+	random = no
+	country = SCH
+
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
+style = 2
+picture = "news_paper"
+	
+action = { 
+name = "Okay!" 
+command = { type = removecore which = 391 }
+command = { type = dissent value = 5 }
+command = { type = secedeprovince which = FRA value = 391 when = 1 }
+command = { type = trigger which = 826 }
+}
+}
+
+event = { # Chur
+	id = 825
+	random = no
+	country = ITA
+
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
+style = 2
+picture = "news_paper"
+	
+action = { 
+name = "Okay!" 
+command = { type = addcore which = 390 }
+command = { type = dissent value = -3 }
+}
+}
+
+event = { # Geneva
+	id = 826
+	random = no
+	country = FRA
+
+name = "Partition of Switzerland"
+desc = "The German Führher has decided what the destiny is of the different Swiss cantons." 
+style = 2
+picture = "news_paper"
+	
+action = { 
+name = "Okay!" 
+command = { type = addcore which = 391 }
+command = { type = dissent value = -3 }
+}
+}
+
+event = {
+id = 827
+country = GER
+random = no
+style = 2
+picture = "german_warposter"
+
+decision = {
+war = { country = GER country = SCH }
+}
+
+decision_trigger = { 
+supplies = 5000
+war = { country = GER country = SCH }
+}
+	
+trigger = {
+supplies = 5000
+war = { country = GER country = SCH }
+	}
+
+date = { day = 1 month = september year = 1948 }
+offset = 7
+deathdate = { day = 12 month = march year = 1966 }
+
+name = "Operation Greif"
+desc = "The Swiss resistance have proven to be harder than we could ever imagine. The Axis Headquarters has prepared 'Operation Greif', to be led by Otto Skorzeny (responsible for the rescue mission of Mussolini in 1943). In Operation Greif, German soldiers uniformed as Swiss will sabotage the forts and infrastructure of our enemies."
+
+action_a = {
+name = "Launch Operation Greif"
+command = { type = trigger which = 828 }
+command = { type = money value = -100 }
+command = { type = supplies value = -10000 } 
+}
+}
+
+event = { 
+	id = 828 
+	random = no
+	country = SCH
+
+	name = "Operation Greif"
+	desc = "The Germans have launched a secret mission in which they have disrupted our resistance organisation. Let's pray we won't end up as the next Reichskommissariat.." 
+	style = 2
+	picture = "German_Warposter"
+	
+
+	    action_a = {
+		name = "Oh no!"
+        command = { type = dissent value = 25 }
+        command = { type = construct which = land_fort where = 389 value = -5 }
+        command = { type = construct which = land_fort where = 390 value = -5 }
+        command = { type = construct which = land_fort where = 391 value = -5 }
+        command = { type = construct which = land_fort where = 392 value = -5 }
+	}
+}
+
+event = { # Execution of David Frankfurter
+	id = 829
+	random = no
+	country = GER
+
+	name = "The Execution of David Frankfurter"
+	desc = "We have captured David Frankfurter, a Croatian Jew who assasinated the Swiss branch leader of the NSDAP, in 1934. He was jailed by the Swiss government, but finally real justice can preserve!" 
+	style = 2
+	picture = "nwo\bonn_rathaus"
+	
+    trigger = {
+    puppet = { country = SCH country = GER }
+	random = 25
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { 
+		name = "Execute him!"
+        command = { type = dissent value = -3 }
+	}
+}
+
+### The LifeLine of Europe Project ###
+
+event = {
+	id = 830 
+	random = no
+	country = GER
+    save_date = yes
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+decision = {
+puppet = { country = SCH country = GER }
+alliance = { country = ITA } 
+}
+
+decision_trigger = { 
+money = 1000
+ puppet = { country = SCH country = GER }
+ alliance = { country = ITA } 
+}
+	
+trigger = {
+	puppet = { country = SCH country = GER }
+	alliance = { country = ITA } 
+	}
+	
+	
+    date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action = { #Yes
+		ai_chance = 50
+		name = "Let's get building!"
+        command = { type = money value = -2500 }
+        command = { type = setflag which = LifeLine1 }
+	}
+	    action = { #No
+		ai_chance = 10
+		name = "Improve our enemies infrastructure? No!"
+        command = { type = money value = 100 }
+	}
+	    action = { #Ask Italy & France to contribute
+		ai_chance = 40
+		name = "Ask France & Italy to participate"
+        command = { type = money value = -1000 }
+        command = { type = setflag which = LifeLine2 }
+        command = { type = trigger which = 831 }
+        command = { type = trigger which = 832 }
+	}
+}
+
+event = { 
+	id = 831
+	random = no
+	country = FRA
+
+	name = "The Lifeline of West Europe"
+	desc = "The Germans have asked us to participate in a megalomaniac project to improve the infrastructure trough trough the Alps between Germany, France & Italy. While it will require a hefty sum of investments, it may prove to be lucrative." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+
+	    action = { 
+		ai_chance = 90
+		name = "Yes!"
+        command = { type = money value = -500 }
+	}
+	    action = { 
+		name = "No!"
+		ai_chance = 10
+        command = { type = money value = 100 }
+        command = { type = clrflag which = LifeLine2 }
+	}
+}
+
+event = {
+	id = 832
+	random = no
+	country = ITA
+
+	name = "The Lifeline of West Europe"
+	desc = "The Germans have asked us to participate in a megalomaniac project to improve the infrastructure trough trough the Alps between Germany, France & Italy. While it will require a hefty sum of investments, it may prove to be lucrative." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+
+	    action = { 
+		ai_chance = 95
+		name = "Yes!"
+        command = { type = money value = -500 }
+	}
+	    action = { 
+		name = "No!"
+		ai_chance = 5
+        command = { type = money value = 100 }
+        command = { type = clrflag which = LifeLine2 }
+	}
+}
+
+event = { #
+	id = 833
+	random = no
+	country = GER
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+    trigger = {
+	event = { id = 830 days = 365 } 
+    OR = { flag = LifeLine1 flag = Lifeline2 }
+	alliance = { country = ITA } 
+	}
+	
+    date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+
+	    action_a = { 
+		name = "Finally!"
+        command = { type = dissent value = -3 }
+        command = { type = industrial_modifier which = total value = 5 }
+        command = { type = trigger which = 834 }
+        command = { type = trigger which = 835 }
+	}
+}
+
+event = { 
+	id = 834
+	random = no
+	country = FRA
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+	    action_a = { 
+		name = "Finally!"
+        command = { type = dissent value = -3 }
+        command = { type = industrial_modifier which = total value = 5 }
+	}
+}
+
+event = { 
+	id = 835
+	random = no
+	country = ITA
+
+	name = "The Lifeline of West Europe"
+	desc = "With our unquestionable control over Switzerland and the whole of Western Europe, we have the opportunity to invest in a massive project to improve our links with our allies France and Italy. It's likely to be very expensive, with the need of innovative constructions right trough the Alps, but it will probably turn out to be economically lucrative for all of Western Europe." 
+	style = 2
+	picture = "invest_infrastructures"
+	
+	    action_a = { 
+		name = "Finally!"
+        command = { type = dissent value = -3 }
+        command = { type = industrial_modifier which = total value = 5 }
+	}
+}

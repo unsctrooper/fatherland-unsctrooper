@@ -20,6 +20,14 @@
 # ##########################
 # 8014291 - 1st May of a new decade
 # 8014292 - 35th Anniversary of October's Revolution
+# 90000428 - Orenburg uprising
+# 90000429 - Astrakhan uprising
+# 90000436 - Astrakhan uprising, Cossacks intervene - TRA
+# 90000437 - Astrakhan uprising, Cossacks intervene
+
+
+
+
 
 ##########################
 # The Sleeping Bear, 1948
@@ -358,6 +366,12 @@ event = {
 # ##########################
 # 8014291 - 1st May of a new decade
 # 8014292 - 35th Anniversary of October's Revolution
+# 90000428 - Orenburg uprising
+# 90000429 - Astrakhan uprising
+# 90000436 - Astrakhan uprising, Cossacks intervene - TRA
+# 90000437 - Astrakhan uprising, Cossacks intervene
+
+
 event = {
 	id = 8014291
 	random = no
@@ -394,3 +408,142 @@ event = {
 		command = { type = money value = -100 } 
 		}
 	}
+	
+event = {
+	id = 90000428 # Orenburg uprising
+	random = no
+	country = SOV
+	
+	trigger = {
+	 OR = {
+			AND = {
+				year = 1948
+				random = 50
+			}
+			AND = {
+				year = 1949
+				random = 75
+			}			
+			year = 1950
+			}
+	}	
+	name = "Orenburg uprising"
+	desc = "Reactionary forces loyal to White traitor emigrants have staged an uprising in Orenburg!"
+	style = 1
+	picture = "0caucasus"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "Send the Red Army"
+		command = { type = revolt which = 1134 } 
+		command = { type = revolt which = 1134 } 
+		command = { type = revolt which = 1134 } 
+		command = { type = revolt which = 1134 } 
+	}
+}	
+
+event = {
+	id = 90000429 # Astrakhan uprising
+	random = no
+	country = SOV
+	
+	trigger = {
+	 OR = {
+			AND = {
+				war = { country = UPE country = SOV }
+				random = 80
+			}
+			AND = {
+				year = 1950
+				random = 25
+			}
+			random = 10
+			}
+	}	
+	
+	name = "Astrakhan uprising"
+	desc = "Reactionary forces loyal to White traitor emigrants have staged an uprising in Astrakhan!"
+	style = 2
+	picture = "0cossacks"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "Send the Red Army"
+		command = { type = revolt which = 706 } 
+		command = { type = revolt which = 706 } 
+		command = { type = revolt which = 706 } 
+	}
+}
+
+event = {
+	id = 90000436 #Astrakhan uprising, Cossacks intervene
+	random = no
+	country = TRA
+	
+	trigger = {
+	event = 90000429
+	}	
+	
+	name = "Astrakhan uprising"
+	desc = "There's a lot of unrest in the restive region of Astrakhan. Should we exploit this unrest by sending an undercover expedition?"
+	style = 2
+	picture = "0cossacks"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "Let's challenge the Reds…"
+	ai_chance = 60
+	command = { type = relation which = SOV value = -100 }
+	command = { type = belligerence which = TRA value = 1 }
+	command = { type = supplies value = -250 } 
+	command = { type = addclaim which = 706 }
+	command = { type = trigger which = 90000437 }
+	}
+	action = {
+		name = "This is too dangerous ..."
+		ai_chance = 40
+		command = { type = 	belligerence which = TRA value = -1 }
+	}
+}
+event = {
+	id = 90000437 #Astrakhan uprising, Cossacks intervene
+	random = no
+	country = SOV
+	one_action = yes
+	
+	trigger = {
+		event = 90000436
+	}	
+	
+	name = "Battle of Astrakhan"
+	desc = "Our forces are currently fighting the Cossacks. We could declare full war on them, but they enjoy German protection."
+	style = 2
+	picture = "0cossacks"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+	name = "We've lost this battle ..." # We lost!
+	ai_chance = 50
+	command = { type = dissent value = 1 }
+	command = { type = secedeprovince which = TRA value = 706 }
+	command = { type = removecore which = 706 }
+	command = { type = addclaim which = 706 }
+	}
+	action = {
+	name = "We've retake the full control of the city" # We won!
+	ai_chance = 50
+	command = { type = 	dissent value = -1 }
+	}
+}

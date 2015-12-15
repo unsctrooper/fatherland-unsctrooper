@@ -115,7 +115,7 @@ event = { # Partition of Switzerland
 	deathdate = { day = 30 month = december year = 1963 }
 
 
-	    action_a = { #Chur to Italy, Geneva to Vichy
+	    action = { #Chur to Italy, Geneva to Vichy
 		name = "Chur to Italy, Geneva to Vichy"
         ai_chance = 20
         command = { type = relation which = SCH value = -50 }	
@@ -124,7 +124,7 @@ event = { # Partition of Switzerland
 		command = { type = trigger which = 823 }	
 		command = { type = trigger which = 824 }		
 	}
-	    action_b = { #Chur to Italy, Geneva Swiss
+	    action = { #Chur to Italy, Geneva Swiss
 		name = "Chur to Italy" 
 		ai_chance = 60
         command = { type = relation which = SCH value = -50 }	
@@ -132,8 +132,8 @@ event = { # Partition of Switzerland
         command = { type = relation which = FRA value = -25 }	
 		command = { type = trigger which = 823 }
 	}
-	    action_c = { #All German!
-		name = "They're all German!" 
+	    action = { #All German!
+		name = "Maintain Swiss unity" 
 		ai_chance = 20
         command = { type = relation which = SCH value = 50 }	
         command = { type = relation which = ITA value = -50 }
@@ -330,18 +330,18 @@ trigger = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 
-	    action_a = { #Yes
+	    action = { #Yes
 		ai_chance = 50
 		name = "Let's get building!"
         command = { type = money value = -2500 }
         command = { type = setflag which = LifeLine1 }
 	}
-	    action_b = { #No
+	    action = { #No
 		ai_chance = 10
 		name = "Improve our enemies infrastructure? No!"
         command = { type = money value = 100 }
 	}
-	    action_c = { #Ask Italy & France to contribute
+	    action = { #Ask Italy & France to contribute
 		ai_chance = 40
 		name = "Ask France & Italy to participate"
         command = { type = money value = -1000 }
@@ -362,12 +362,12 @@ event = {
 	picture = "invest_infrastructures"
 	
 
-	    action_a = { 
+	    action = { 
 		ai_chance = 90
 		name = "Yes!"
         command = { type = money value = -500 }
 	}
-	    action_b = { 
+	    action = { 
 		name = "No!"
 		ai_chance = 10
         command = { type = money value = 100 }
@@ -386,12 +386,12 @@ event = {
 	picture = "invest_infrastructures"
 	
 
-	    action_a = { 
+	    action = { 
 		ai_chance = 95
 		name = "Yes!"
         command = { type = money value = -500 }
 	}
-	    action_b = { 
+	    action = { 
 		name = "No!"
 		ai_chance = 5
         command = { type = money value = 100 }

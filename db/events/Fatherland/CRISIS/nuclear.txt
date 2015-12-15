@@ -16,7 +16,7 @@ event = {
         event = 2001		
 	}
 	
-	name = "800NAME"
+	name = "800NAME" #British Nuclear Program
 	desc = "800DESC"
 	style = 2
 	picture = "atomic_research"
@@ -49,7 +49,7 @@ event = {
 	save_date = yes
 	country = GER
 
-	name = "801NAME"
+	name = "801NAME" #German Nuclear Program
 	desc = "801DESC" 
 	style = 2
 	picture = "atomic_research"
@@ -84,7 +84,7 @@ event = {
 	flag = gernuke
 	}
 
-	name = "802NAME"
+	name = "802NAME" #The Vemorsk Plant
 	desc = "802DESC" 
 	style = 2
 	picture = "atomic_research"
@@ -120,7 +120,7 @@ event = {
 		supplies = 1000
 	}
 	
-	name = "803NAME"
+	name = "803NAME" #Sabotage the German Program
 	desc = "803DESC"
 	style = 2
 	picture = "resistance"
@@ -145,7 +145,7 @@ event = {
 	event = { id = 803 days = 30 } 
 	}
 
-	name = "804NAME"
+	name = "804NAME" #British Activity
 	desc = "804DESC" 
 	style = 2
 	picture = "news_paper"
@@ -172,7 +172,7 @@ event = {
 	save_date = yes
 	country = ENG
 
-	name = "805NAME"
+	name = "805NAME" #The Swiss betray us!
 	desc = "805DESC" 
 	style = 2
 	picture = "resistance"
@@ -490,7 +490,7 @@ event = {
 	country = GER
 	save_date = yes
 
-	name = "818NAME"
+	name = "818NAME" #The Airport Incident
 	desc = "818DESC" 
 	style = 2
 	picture = "resistance"
@@ -554,21 +554,21 @@ command = { type = belligerence which = GER value = -5 }
 }
 }
 
-event = {
-	id = 7001 # London has been nuked!!
-	random = no
-	country = ENG
+#event = {
+#	id = 7001 # London has been nuked!!
+#	random = no
+#	country = ENG
 
-	name = "London has been nuked!"
-	desc = "In a cowardly attack, the Germans have nuked our capital. This of course means immediate war!" 
-	style = 2
-	picture = "atomic_research"
+#	name = "London has been nuked!"
+#	desc = "In a cowardly attack, the Germans have nuked our capital. This of course means immediate war!" 
+#	style = 2
+#	picture = "atomic_research"
 
-	action = {
-		name = "Damn!"
-		command = { type = dissent value = 10 }
-        command = { type = construct which = ic where = 29 value = -10 }
-        command = { type = construct which = infrastructure where = 29 value = -50 }
-        command = { type = war which = GER }
-	}
-}
+#	action = {
+#		name = "Damn!"
+#		command = { type = dissent value = 10 }
+  #      command = { type = construct which = ic where = 29 value = -10 }
+  #      command = { type = construct which = infrastructure where = 29 value = -50 }
+  #      command = { type = war which = GER }
+#	}
+#}
