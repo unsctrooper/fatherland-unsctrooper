@@ -244,8 +244,8 @@ event = {
 			name = "Stay with Heydrich and take the provinces of Kherson and Melitopol"
 			command = { type = relation which = GER value = -50 }		
 			command = { type = relation which = U41 value = -50 } #Ukraine
-			command = { type =	addcore   which = 623 } #Kherson
-			command = { type =	addcore   which = 624 } #Melitopol
+			command = { type =	addclaim   which = 623 } #Kherson
+			command = { type =	addclaim  which = 624 } #Melitopol
 			command = { type = trigger which = 90002008 }
 		}
 		
@@ -272,6 +272,8 @@ event = {
 			name = "There's nothing we can do ..."
 			command = { type =	removecore   which = 623 } #Kherson
 			command = { type =	removecore   which = 624 } #Melitopol
+			command = { type =	removeclaim   which = 623 } #Kherson
+			command = { type =	removeclaim   which = 624 } #Melitopol			
 			command = { type =	secedeprovince which = U58 value = 623} 
 			command = { type =	secedeprovince which = U58 value = 624} 			
 		}

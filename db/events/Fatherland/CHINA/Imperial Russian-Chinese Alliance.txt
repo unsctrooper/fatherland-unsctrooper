@@ -148,7 +148,8 @@ event = {
 	action = {
 		name = "We must leave the alliance."
 		ai_chance = 90
-		command = { type = leave_alliance when = 1 }
+		command = { type = leave_alliance }
+		command = { type = peace which = SOV }
 		command = { type = relation which = U59 value = -10 }
 	}
 

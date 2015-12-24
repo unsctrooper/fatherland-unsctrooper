@@ -37,7 +37,7 @@
 #  Anglo-Canadian-U.S. Trade Agreement (ENG,USA,CAN)
 #  German Claim in Antarctica (GER)
 #  British Royal Visit to Canada (ENG,CAN)
-# Anniversary of the Battle of Stalingrad
+# Anniversary of the Battle of Stalingrad (GER,ROM,HUN,ITA)
 
 #########################################################################
 #  General Strikes in Morocco
@@ -1736,7 +1736,7 @@ command = { type = trigger which = 7776472 }
 event = {
 id = 7776472
 random = no
-TAG = { ROM HUN ITA CRO SPA RUS} # Armies on the Eastern Front
+tag = { ROM HUN ITA CRO SPA RUS} # Armies on the Eastern Front
 all = yes
 
 name = "Anniversary of the Battle of Stalingrad"
