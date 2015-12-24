@@ -23,3 +23,11 @@ ai old/U01_1948.ai
 ai old/U40.ai
 ai old/U41.ai
 db/1914_events.txt
+config.eu
+gfx/interface/pics/U06_001.bmp
+gfx/interface/pics/U06_003.bmp
+gfx/interface/pics/U06_004.bmp
+gfx/interface/pics/U06_005.bmp
+gfx/interface/pics/U06_002.bmp
+gfx/interface/pics/U06_005.bmp
+*.bmp
