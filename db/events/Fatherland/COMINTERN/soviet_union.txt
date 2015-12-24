@@ -418,11 +418,11 @@ event = {
 	 OR = {
 			AND = {
 				year = 1948
-				random = 50
+				random = 35
 			}
 			AND = {
 				year = 1949
-				random = 75
+				random = 50
 			}			
 			year = 1950
 			}
@@ -437,6 +437,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
+		ai_chance = 100
 		name = "Send the Red Army"
 		command = { type = revolt which = 1134 } 
 		command = { type = revolt which = 1134 } 
@@ -455,6 +456,7 @@ event = {
 			AND = {
 				war = { country = UPE country = SOV }
 				random = 80
+				month = march
 			}
 			AND = {
 				year = 1950
@@ -474,6 +476,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
+		ai_chance = 100
 		name = "Send the Red Army"
 		command = { type = revolt which = 706 } 
 		command = { type = revolt which = 706 } 
