@@ -1,21 +1,33 @@
 U06;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
 ;Replacements;;;;;;;;;X
-845001;Head of State;Arthur Greiser;1934;1964;1999;NS;Powerhungry Demagogue;Very High;3388;X
-845002;Head of Government;Arthur Greiser;1934;1964;1999;NS;Silent Workhorse;Very High;3388;X
-845003;Foreign Minister;Arthur Greiser;1934;1964;1999;NS;Biased Intellectual;Very High;3388;X
-845004;Minister of Armament;Julius Hoppenrath;1934;1964;1999;FA;Laissez-Faire Capitalist;High;3389;X
-845005;Minister of Security;Willibald Wiercinski-Keiser;1933;1964;1999;SC;Silent Lawyer;High;3390;X
-845006;Head of Military Intelligence;Arthur Greiser;1934;1964;1999;NS;Dismal Enigma;High;3388;X
-845007;Chief of Staff;Arthur Greiser;1934;1964;1999;NS;School of Manoeuvre;High;3388;X
-845008;Chief of Army;Arthur Greiser;1934;1964;1999;NS;Elastic Defence Doctrine;High;3388;X
-845009;Chief of Navy;Johan A. Nederbragt;1934;1964;1999;SC;Open Seas Doctrine;High;unknownminister;X
-845010;Chief of Air Force;Arthur Greiser;1934;1964;1999;NS;Army Aviation Doctrine;High;3388;X
-845011;Head of State;Ernst Ziehm;1914;1962;1999;PA;Popular Figurehead;Very High;5774;X
-845012;Head of Government;Ernst Ziehm;1914;1962;1999;PA;Silent Workhorse;Very High;5774;X
-845013;Foreign Minister;Ernst Ziehm;1914;1962;1999;PA;Biased Intellectual;Very High;5774;X
-845014;Head of State;Hermann Rauschning;1924;1935;1999;NS;Autocratic Charmer;Low;5775;X
-845015;Head of Government;Hermann Rauschning;1924;1935;1999;NS;Flamboyant Tough Guy;Low;5775;X
-845016;Foreign Minister;Hermann Rauschning;1924;1935;1999;NS;Ideological Crusader;Low;5775;X
-845017;Head of State;Albert Forster;1939;1964;1999;NS;Stern Imperialist;Very High;5776;X
-845018;Head of Government;Albert Forster;1939;1964;1999;NS;Political Protege;Very High;5776;X
-845019;Foreign Minister;Albert Forster;1939;1964;1999;NS;Iron Fisted Brute;Very High;5776;X
+845001;Head of State;Fritz Kuhn;1933;1952;1952;FA;Barking Buffoon;High;M6011;X
+845002;Head of Government;Fritz Kuhn;1933;1952;1952;FA;Naive Optimist;High;M6011;X
+845003;Foreign Minister;William D. Pelley;1933;1966;1966;NS;Ideological Crusader;Medium;M6094;X
+845004;Foreign Minister;Ezra Pound;1933;1973;1973;FA;Biased Intellectual;High;M6069;X
+845005;Foreign Minister;Lawrence Dennis;1930;1978;1978;FA;Ideological Crusader;High;M6071;X
+845006;Minister of Armament;William D. Pelley;1933;1966;1966;FA;Air to Sea Proponent;Very High;M6094;X
+845007;Minister of Security;William D. Pelley;1940;1966;1966;NS;Crooked Kleptocrat;Medium;M6094;X
+845008;Minister of Security;Dr. Samuel Green;1940;1950;1950;FA;Man of the People;Medium;M6054;X
+845009;Head of Military Intelligence;Dr. Hiram W. Evans;1933;1967;1967;FA;Political Specialist;High;M6132;X
+845010;Head of Military Intelligence;Dr. James A. Colescott;1940;1951;1951;FA;Political Specialist;High;M6016;X
+845011;Chief of Staff;Parker Sage;1933;1964;1964;FA;School of Defence;High;M6017;X
+845012;Chief of Army;George Van Horn Moseley;1932;1961;1961;NS;Armoured Spearhead Doctrine;High;9709;X
+845013;Chief of Navy;William S. Benson;1912;1932;1932;FA;Decisive Naval Battle Doctrine;High;3614;X
+845014;Chief of Navy;Dr. James A. Colescott;1933;1951;1951;NS;Open Seas Doctrine;High;M6016;X
+845015;Chief of Air Force;Charles Lindbergh;1924;1975;1975;FA;Air Superiority Doctrine;High;M6020;X
+845016;Chief of Air Force;Martin J. Monti;1943;2001;2001;FA;Naval Aviation Doctrine;High;M6174;X
+845017;Chief of Air Force;Nathan B. Forrest III;1940;1981;1981;NS;Army Aviation Doctrine;High;M6173;X
+845018;Head of State;George Lincoln Rockwell;1945;2000;2000;NS;Popular Figurehead;Very High;U06_001;X
+845019;Head of Government;George Lincoln Rockwell;1945;2000;2000;NS;Naive Optimist;Very High;U06_001;X
+845020;Head of State;Rocky Suhayda;1955;2020;2020;NS;powerhungry demagogue;Very High;U06_002;X
+845021;Head of Government;Rocky Suhayda;1955;2020;2020;NS;flamboyant tough guy;Very High;U06_002;X
+845022;Head of State;William Luther Pierce;1945;2002;2002;NS;Popular Figurehead;Very High;U06_003;X
+845023;Head of Government;William Luther Pierce;1945;2002;2002;NS;political protege;Very High;U06_003;X
+845024;Foreign Minister;William Luther Pierce;1960;2002;2002;FA;ideological crusader;Very High;U06_003;X
+845025;Minister of Armament;William Daniel Johnson;1964;2020;2020;FA;laissez-faire capitalist;Very High;U06_004;X
+845026;Minister of Security;William Daniel Johnson;1964;2020;2020;FA;prince of terror;Medium;U06_004;X
+845027;Chief of Staff;Jim Gilchrist;1970;2020;2020;FA;school of manoeuvre;High;U06_005;X
+845028;Chief of Army;Jim Gilchrist;1970;2020;2020;FA;elastic defence doctrine;High;U06_005;X
+845029;Head of Military Intelligence;Jim Gilchrist;1970;2020;2020;FA;logistics specialist;High;U06_005;X
+845030;Chief of Navy;Jim Gilchrist;1970;2020;2020;FA;power projection doctrine;High;U06_005;X
+845031;Chief of Air Force;Jim Gilchrist;1970;2020;2020;FA;Air Superiority Doctrine;High;U06_005;X
