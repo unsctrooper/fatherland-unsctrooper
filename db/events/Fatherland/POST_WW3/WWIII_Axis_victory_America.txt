@@ -420,10 +420,45 @@ event = {
 	# triggered by us surrender 2049047
 
 	action = {
+	ai_chance = 100
 		name = "Release the Independent States of America"
 		command = { type = independence which = U06 value = 1 when = 0 }
 		command = { type = 	make_puppet which = U06 }
 		command = { type = 	alliance which = U06 }
-		command = { type = trigger which = 2049071 }
+	}
+	
+		action = {
+	ai_chance = 0
+		name = "Not now"
+		command = { }
 	}
 }   
+
+event = {
+	id = 2049071
+	random = no
+	country = U06
+
+	name = "ISA Armed Forces"
+	desc = "ISA Armed Forces"
+	style = 2
+	picture = "news_paper"
+
+	trigger = { exists = U06 }
+   
+	date = { day = 0 month = january year = 1948 }
+	offset = 1 #30
+	deathdate = { day = 29 month = december year = 2020 }
+	
+	action = {
+	name = "ISA Armed Forces deployment"
+	command = { type = add_corps which = "I. SS Army Corps" value = land where = 1806 } # Pittsburgh
+	command = { type = add_division which = "50. SS Division 'Frederick the Great'"  value = paratrooper when = 3 }
+	command = { type = add_corps which = "II. SS Army Corps" value = land where = 1811 } # Huntington
+	command = { type = add_division which = "51. SS Pz. Division 'Concord and Lexington'" value = armor when = 4 }
+	command = { type = add_corps which = "III. SS Army Corps" value = land where = 1791 } # Buffalo
+	command = { type = add_division which = "51. SS Pzg. Division 'Von Steuben'" value = mechanized when = 1 where = tank_destroyer }
+	command = { type = add_corps which = "I. National Air Fleet" value = air where = 1809 } # Washington
+	command = { type = add_division which = "1. Fighter Group" value = multi_role when = 9 }
+	}
+	}
