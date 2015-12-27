@@ -1,4 +1,4 @@
-### Axis victory in Asia: RK Ural, RK Westsibirien, RK Ostsibirien
+### Axis victory in America
 
 
 event = {
@@ -6,8 +6,8 @@ event = {
 	random = no
 	country = USA
 
-	name = 130661_NAME
-	desc = 130661_DESC
+	name = EVT_2049051_NAME
+	desc = EVT_2049051_DESC
 	style = 2
 	picture = "news_paper"
 
@@ -57,7 +57,7 @@ event = {
 	}
 	action = {
 		ai_chance = 20
-		name = 130660b
+		name = "Never"
 		command = { type = sleepevent which = 2003075 }
 	}
 }
@@ -81,7 +81,17 @@ event = {
 		command = { type = trigger which = 2049052 }
 	}
 	action = {
-		ai_chance = 50
+			trigger = {
+			OR = {
+				area = { area = "Florida" country = GER }
+				area = { area = "Maryland_Delaware" country = GER }
+				area = { area = "New York" country = GER }
+				area = { area = "Massachussets" country = GER }
+				area = { area = "South Carolina" country = GER }
+				area = { area = "Virginia" country = GER }
+			}
+		}
+		ai_chance = 34
 		name = "Annex East Coast. Leave the West nominally free."
 		command = { type = setflag which = GERclaim0 }
 		command = { type = trigger which = 2049052 }
@@ -101,7 +111,6 @@ event = {
 		name = "Set up puppet. Leave the West nominally free."
 		command = { type = setflag which = GERclaim1 }
 		command = { type = trigger which = 2049052 }
-		command = { type = 	independence which = U06 value = 1 when = 0 }
 	}
 	action = {
 		trigger = {
@@ -114,7 +123,7 @@ event = {
 				area = { area = "Virginia" country = GER }
 			}
 		}
-		ai_chance = 75
+		ai_chance = 10
 		name = "Set up puppet and continue fighting."
 		command = { type = independence which = U06 value = 1 when = 0 }
 	}
@@ -124,6 +133,8 @@ event = {
 		command = { type = sleepevent which = 2049052 }
 	}
 }
+
+### The Boston Armistice: German demands
 
 event = {
 	id = 2049052
@@ -169,6 +180,12 @@ event = {
 
 		command = { type =  secederegion which = GER value = "Iceland" }
 		command = { type =  secederegion which = GER value = "Greenland" }
+		
+		command = { trigger = { puppet = { country = PHI country = USA } } type = end_mastery which = PHI }
+		command = { trigger = { access = { country = PHI country = USA } } type = trigger which = 2066001 }
+		command = { trigger = { puppet = { country = LIB country = USA } } type = end_mastery which = LIB }
+		command = { trigger = { access = { country = LIB country = USA } } type = trigger which = 2077001 }
+		command = { trigger = { access = { country = CUB country = USA } } type = trigger which = 2049064 }		
 
 		# Pacific Isles
 		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "American Pacific" when = 1 }
@@ -249,6 +266,8 @@ event = {
 		command = { type = domestic which = freedom value = -2 }
 		command = { type = set_domestic which = defense_lobby value = 1 }
 		command = { type = set_domestic which = interventionism value = 1 }
+		
+		command = { type = trigger which = 2049070 } # Set up German puppet on East Coast
 
 		command = { trigger = { puppet = { country = PHI country = USA } } type = end_mastery which = PHI }
 		command = { trigger = { access = { country = PHI country = USA } } type = trigger which = 2066001 }
@@ -264,6 +283,24 @@ event = {
 		command = { type = secederegion which = GER value = "Caribbean" when = 1 } 
 		command = { type = secedeprovince which = GER value = 1795 when = 1 } # New York - Northeast US
 
+		# Eastcoast
+		command = { trigger = { area = { area = "Georgia" country = GER } } type = secedearea which = GER value = "Georgia" when = 1 }
+		command = { trigger = { area = { area = "Florida" country = GER } } type = secedearea which = GER value = "Florida" when = 1 } #
+		command = { trigger = { area = { area = "North Carolina" country = GER } } type = secedearea which = GER value = "North Carolina" when = 1 } #
+		command = { trigger = { area = { area = "South Carolina" country = GER } } type = secedearea which = GER value = "South Carolina" when = 1 }
+		command = { trigger = { area = { area = "West Virginia" country = GER } } type = secedearea which = GER value = "West Virginia" when = 1 } #
+		command = { trigger = { area = { area = "Virginia" country = GER } } type = secedearea which = GER value = "Virginia" when = 1 } #
+		command = { trigger = { area = { area = "Pennsylvania" country = GER } } type = secedearea which = GER value = "Pennsylvania" when = 1 }
+		command = { trigger = { area = { area = "Maryland_Delaware" country = GER } } type = secedearea which = GER value = "Maryland_Delaware" when = 1 } 
+		command = { trigger = { area = { area = "New Jersey" country = GER } } type = secedearea which = GER value = "New Jersey" when = 1 } #
+		command = { trigger = { area = { area = "New York" country = GER } } type = secedearea which = GER value = "New York" when = 1 }
+		command = { trigger = { control = { province = 1796 data = GER } } type = secedeprovince which = GER value = 1796 when = 1 } # Providence - Northeast US 
+		command = { trigger = { control = { province = 1787 data = GER } } type = secedeprovince which = GER value = 1787 when = 1 } # Concord - Northeast US 
+		command = { trigger = { area = { area = "Massachussets" country = GER } } type = secedearea which = GER value = "Massachussets" when = 1 } 
+		command = { trigger = { area = { area = "Vermont" country = GER } } type = secedearea which = GER value = "Vermont" when = 1 } 
+		command = { trigger = { area = { area = "New Hampshire" country = GER } } type = secedearea which = GER value = "New Hampshire" when = 1 } 
+		command = { trigger = { area = { area = "Maine" country = GER } } type = secedearea which = GER value = "Maine" when = 1 } 
+		
 		# Pacific Isles
 		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "American Pacific" when = 1 }
 		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "Asian Pacific" when = 1 }
@@ -313,3 +350,80 @@ event = {
 		command = { type = dissent value = 5 }
 	}
 }      
+
+event = {
+	id = 2066001
+	random = no
+	country = PHI
+
+	name = 130643_NAME #US - Military Access
+	desc = 130643_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action_a = {
+		name = "Of course"
+		command = { type = end_access which = USA }
+	}
+}      
+	  
+event = {
+	id = 2077001
+	random = no
+	country = LIB
+
+	name = 130643_NAME #US - Military Access
+	desc = 130643_DESC
+	style = 2
+		picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action_a = {
+		name = "Of course"
+		command = { type = end_access which = USA }
+	}
+}   
+
+event = {
+	id = 2049064
+	random = no
+	country = CUB
+
+	name = 130643_NAME #US - Military Access
+	desc = 130643_DESC
+	style = 2
+		picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action_a = {
+		name = "Of course"
+		command = { type = end_access which = USA }
+	}
+}   
+
+### The Independent States of America - German puppet
+
+event = {
+	id = 2049070
+	random = no
+	country = GER
+
+	name = EVT_2049070_NAME
+	desc = EVT_2049070_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action = {
+		name = "Release the Independent States of America"
+		command = { type = independence which = U06 value = 1 when = 0 }
+		command = { type = 	make_puppet which = U06 }
+		command = { type = 	alliance which = U06 }
+		command = { type = trigger which = 2049071 }
+	}
+}   
