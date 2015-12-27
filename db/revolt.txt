@@ -3161,7 +3161,7 @@ UGS = { # Arkhangelsk Government
  capital = 1647
  } 
  
- U06 = { # Nazi Amerika
+ U06 = { # Nazi Amerika (Independent States of America)
  date = { day = 0 month = january year = 1945 } 
  expirydate = { day = 29 month = december year = 2020 } 
  minimum = { 1809  } # Washington D.C.
@@ -3182,6 +3182,8 @@ UGS = { # Arkhangelsk Government
  1890 1891 1894 1881 
  1870 1861 1903 1851 1916 1927 1912 1852 1853 1854 1867 1849 1917 1933 1835 1840 1848 1844 1822 1823 1827 1941 1946 1959 1800 
  1794 1824 1798 1799 1786 1938 
+ country = { GER }
+intrinsic_gov_type = nazi
  }
  }
  
