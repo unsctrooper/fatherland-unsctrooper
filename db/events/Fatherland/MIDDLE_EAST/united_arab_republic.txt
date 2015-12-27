@@ -659,7 +659,7 @@ event = {
 	action = {
 		name = EVT_8218022_A
 		command = { type = dissent value = -5 }
-		command = { type = inherit which = LEB value = 1 }
+		command = { type = inherit which = LEB value = 0 }
 		
 		command = { type = addcore which = 1018 }
 		command = { type = addcore which = 1019 }

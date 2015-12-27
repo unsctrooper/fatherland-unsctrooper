@@ -5,7 +5,7 @@
 #### 8004904 - EGY - Government change (1949)
 #### 8004906 - EGY - Revolution of 1950 (1950)
 #### 8004907 - EGY - Deposition of Fuad II (1951)
-#### 8004908 - EGY - Government change (Nasser)
+#### 8004908 - EGY - Government change (Nasser - 1952)
 #### 8004909 - EGY - Government change
 
 #########################################################
