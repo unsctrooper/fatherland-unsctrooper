@@ -821,6 +821,7 @@ tag = { CHI U87 }
 	command = { type = war which = SOV }
 	command = { type = 	belligerence value = 5 }
 	command = { type = 	dissent value = 5 }
+	command = { type = end_non_aggression which = SOV }
 	}
 	
 	action = {

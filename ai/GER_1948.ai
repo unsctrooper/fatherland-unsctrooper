@@ -811,16 +811,16 @@ front = {
 	river 		= 1.0
 
 	enemy_handicap = {
-	FRA = 300
-	BEL = 300
-	HOL = 300
-	LUX = 300
+	#FRA = 300
+	#BEL = 300
+	#HOL = 300
+	#LUX = 300
 	} 
 	passivity = {
-	FRA = 100
-	BEL = 100
-	HOL = 100
-	LUX = 100
+	#FRA = 100
+	#BEL = 100
+	#HOL = 100
+	#LUX = 100
 	}
 } 
 ###################################

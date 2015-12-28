@@ -545,7 +545,7 @@ event = {
 	command = { type = addclaim which = 706 }
 	}
 	action = {
-	name = "We've retake the full control of the city" # We won!
+	name = "We'll retake the full control of the region" # We won!
 	ai_chance = 50
 	command = { type = 	dissent value = -1 }
 	}

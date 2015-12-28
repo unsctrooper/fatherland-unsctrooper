@@ -35,12 +35,15 @@ event = {
 	decision = {
 		exists = HUN
 		exists = ROM
-		#year = 1948
+		event = 2005
 	}
 	decision_trigger = {
 		exists = SER
 	}		
-
+	trigger = {
+		exists = SER
+		event = 2005
+	}		
 	name = "900NAME"
 	desc = "900DESC"
 	style = 2
@@ -52,7 +55,7 @@ event = {
 	deathdate = { day = 12 month = march year = 1948 }
 
 	action = {
-		name = "Keep Banat, and confirm Serbia as a puppet state!"
+		name = "Keep Banat, and confirm Serbia as a puppet state"
 		ai_chance = 20
 		
 		command = { type = make_puppet which = SER } 
@@ -62,12 +65,16 @@ event = {
 		
 		command = { type = relation which = HUN value = -25 } 
 		command = { type = relation which = ROM value = -25 } 
-		
+		command = { type = relation which = CRO value = 25 } 
+		command = { type = relation which = BUL value = 10 } 
+		command = { type = relation which = SER value = -50 } 
+				
 		command = { type = setflag which = Banat }
+		
 		command = { type = trigger which = 908 } #The Fate of Bor
 	}
 	action = {
-		name = "Keep Banat, and give at Serbia a limited autonomy!"
+		name = "Keep Banat, and give at Serbia a limited autonomy"
 		ai_chance = 20
 		
 		command = { type = end_mastery which = SER }
@@ -78,17 +85,22 @@ event = {
 		command = { type = relation which = ROM value = -50 } 
 		command = { type = relation which = CRO value = -25 } 
 		command = { type = relation which = BUL value = -20 } 
+		command = { type = relation which = SER value = 50 } 
 		
 	}
 	action = {
 		name = "Hungary served us well, give them the Banat"
 		ai_chance = 30
 		
+		command = { type = removecore which = 336 }
 		command = { type = removeclaim which = 336 }
 		command = { type = secedeprovince which = HUN value = 336 }
 		
 		command = { type = relation which = HUN value = 100 } 
-		command = { type = relation which = ROM value = -50} 
+		command = { type = relation which = ROM value = -100 } 
+		command = { type = relation which = CRO value = -25 } 
+		command = { type = relation which = BUL value = -20 } 
+		command = { type = relation which = SER value = -25 } 
 		
 		command = { type = trigger which = 906 } #The National Government - Puppet
 		command = { type = trigger which = 904 } #Hungarian Banat
@@ -98,15 +110,19 @@ event = {
 		name = "Romania served us well, give them the Banat" 
 		ai_chance = 30
 		
+		command = { type = removecore which = 336 }
 		command = { type = removeclaim which = 336 } 
 		command = { type = secedeprovince which = ROM value = 336 }
 		
-		command = { type = relation which = HUN value = -50 } 
-		command = { type = relation which = ROM value = 100} 
+		command = { type = relation which = HUN value = -100 } 
+		command = { type = relation which = ROM value = 100 } 
+		command = { type = relation which = CRO value = -15 } 
+		command = { type = relation which = BUL value = -30 } 
+		command = { type = relation which = SER value = -25 } 
 
 		command = { type = trigger which = 906 } #The National Government - Puppet
 		command = { type = trigger which = 905 } #Romanian Banat
-		command = { type = trigger which = 908 } #The Fate of Bor
+		#command = { type = trigger which = 908 } #The Fate of Bor
 	}
 	action = {
 		name = "Return Banat to Serbia and give them a limited autonomy"
@@ -116,10 +132,12 @@ event = {
 		command = { type = secedeprovince which = SER value = 336 }
 		
 		command = { type = relation which = HUN value = -50 } 
-		command = { type = relation which = ROM value = -50} 
+		command = { type = relation which = ROM value = -50 } 
+		command = { type = relation which = CRO value = -30 } 
+		command = { type = relation which = BUL value = -10 } 
+		command = { type = relation which = SER value = 100 } 
 
 		command = { type = trigger which = 902 } #The National Government - Autonomy
-
 	}
 }
 
@@ -166,18 +184,19 @@ event = {
 	trigger = {
 		OR = { 
 		flag = Banat1
-		flag = Banat2 }
+		flag = Banat2 
+		}
 		
 		NOT = { war = { country = GER country = SOV } }
-			OR = { 
-		AND = {
-		event = { id = 901 days = 360 } 
-		flag = Banat1 	
-		}
-		AND = {
-		event = { id = 901 days = 450 } 
-		flag = Banat2 	
-		}
+		OR = { 
+				AND = {
+					event = { id = 901 days = 360 } 
+					flag = Banat1 	
+				}
+				AND = {
+					event = { id = 901 days = 450 } 
+					flag = Banat2 	
+				}
 		}
 	}	
 		
@@ -193,7 +212,7 @@ event = {
 	action = {
 	name = "ACTION_NAME_GREAT"
 	command = { type = addcore which = 336 } 
-	command = { type = 	dissent value = 1 }
+	command = { type = dissent value = 1 }
 		}
 	}	
 
@@ -215,13 +234,14 @@ event = {
 		command = { type = set_domestic which = freedom value = 3 }
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = headofstate which = 415001 }
-		command = { type = flag_ext which = "_fas" where = SER }
+		command = { type = flag_ext which = "_aut" where = SER }
 		
 		command = { type = set_relation which = GER value = 200 }
 		command = { type = set_relation which = ITA value = 150 }
-		command = { type = set_relation which = HUN value = 50 }
-		command = { type = set_relation which = ROM value = 50 }
-		command = { type = set_relation which = BUL value = 30 }
+		command = { type = set_relation which = HUN value = -25 }
+		command = { type = set_relation which = ROM value = -25 }
+		command = { type = set_relation which = BUL value = 10 }
+		command = { type = set_relation which = CRO value = -50 }
 		
 		#command = { type = removecore which = 336 } 
 		#command = { type = removecore which = 331 } 
@@ -231,8 +251,12 @@ event = {
 		command = { type = add_division value = infantry when = 10 }
 		command = { type = add_division value = infantry when = 10 }
 		command = { type = add_division value = militia when = 6 }
-		
+		command = { type = add_division value = militia when = 6 }
+			command = { type = add_division value = militia when = 6 }
+			
       	command = { type = dissent value = -5 }
+		
+		command = { type = 	end_puppet }
 		}
 	}
 
@@ -287,7 +311,6 @@ event = {
 	desc = "904DESC"
 	style = 2
 	picture = "news_paper"	
-
 
 	action = {
 			name =  "ACTION_NAME_GREAT"
@@ -367,11 +390,12 @@ event = {
 
 	action = {
 		name = "We cannot oppose, Bor to Romania" #908A
-		ai_chance = 85
+		ai_chance = 80
 		command = { type = relation which = ROM value = 50} 
 		command = { type = relation which = GER value = -10 } # SER is a puppet and cannot oppose
 		
-		command = { type = removeclaim which = 339 } 
+		command = { type = removecore which = 339 } 
+		command = { type = addclaim which = 339 } 
 		command = { type = secedeprovince which = ROM value = 339 }
 		
 		command = { type = trigger which = 909 } 
@@ -380,8 +404,8 @@ event = {
 	}
 	action = {
 		name = "Bor is too much important for our country, beseech the Germany and keep the province" #908B
-		ai_chance = 15
-		command = { type = relation which = ROM value = -25 } # Bor is not very important
+		ai_chance = 20
+		command = { type = relation which = ROM value = -25 } # Bor is not very important for ROM
 		command = { type = relation which = GER value = -50 }
 		command = { type = dissent value = -10 }
 	}

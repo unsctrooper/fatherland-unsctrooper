@@ -426,7 +426,7 @@ deathdate = { day = 29 month = december year = 1990 }
 
 action = {
 name = "Leave UN-Soviet alliance."
-command = { type = leave_alliance }
+        command = { type = leave_alliance when = 1 }
 }
 }
 

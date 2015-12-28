@@ -32,7 +32,7 @@ event = {
 
 	date = { day = 1 month = july year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name =  EVT_8200030_A #"It is time for a unified China !"
@@ -76,7 +76,7 @@ event = { # Communist China initiates the civil war
 
 	date = { day = 1 month = july year = 1948 }
 	offset = 45
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1950 }
 
 	action = {
 		name = EVT_8200031_A #"It is time for war!"
@@ -437,7 +437,7 @@ event = {
 	}	
 	
 	action = {
-		name = "EVT_8200044_C" # Little support
+		name = "Limited Support" # Little support
 		ai_chance = 15
 		command = { type = relation which = CHI value = 20 }
 		command = { type = relation which = CHC value = -50 }
@@ -452,6 +452,7 @@ event = {
 		ai_chance = 5
 		command = { type = relation which = CHI value = 150 }
 		command = { type = relation which = CHC value = -200 }
+		command = { type = relation which = SOV value = -100 }
 		command = { type = supplies value = -2000 }
 		command = { type = oilpool value = -1000 }
 		command = { type = money value = -1500 }
@@ -524,7 +525,7 @@ event = { # Total support (CHI)
 
 	action = {
 		name = "EVT_8200047_A" #"Forge anticommunist alliance!"
-		ai_chance = 60
+		ai_chance = 80
 		command = { type = trigger which = 8500111 }
 		command = { type = supplies value = 3000 }
 		command = { type = oilpool value = 1000 }
@@ -536,12 +537,13 @@ event = { # Total support (CHI)
 		command = { type = add_division which = "5. Div American Marines" value = marine when = 5 }
 		command = { type = add_division which = "6. Div American Marines" value = marine when = 5 }
 		command = { type = dissent value = -12 }
+		command = { type = leave_alliance when = 1 }
 		command = { type = alliance which = USA }
 	}	
 
 	action = {
 		name = "EVT_8200047_B" #"We'll do it ourselves"
-		ai_chance = 40
+		ai_chance = 20
 		command = { type = supplies value = 3000 }
 		command = { type = oilpool value = 1000 }
 		command = { type = money value = 1000 }
@@ -571,16 +573,6 @@ event = {
 
 	trigger = {
 		OR = {
-			AND = {
-				year = 1946
-				NOT = { year = 1947 }
-				random = 15
-			}
-			AND = {
-				year = 1947
-				NOT = { year = 1948 }
-				random = 25
-			}
 			AND = {
 				year = 1948
 				NOT = { year = 1949 }

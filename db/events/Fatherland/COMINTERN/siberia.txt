@@ -79,13 +79,13 @@ event = { # Romanov Request
 
 	    action_a = { # Side with the Romanovs!
 		name = "8014257A"
-        ai_chance = 80
+        ai_chance = 70
         command = { type = dissent value = 3 }
 		command = { type = trigger which = 8014258 }
 	}
 	    action_b = { # Remove the Tsars!
 		name = "8014257B" 
-		ai_chance = 20
+		ai_chance = 30
         command = { type = dissent value = 5 }
 		command = { type = war which = U59 }	
         command = { type = addcore which = 1142 }

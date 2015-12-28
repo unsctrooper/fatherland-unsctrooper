@@ -91,7 +91,7 @@ event = {
 		}		
 	}
 	
-	name = EVT_90000600_NAME
+	name = "The 1948 Extraordinary Gran Consiglio"
 	desc = "Due to the strong social tensions in the country for the first time since the end of World War 2 the Grand Council of Fascism organized a national conference to discuss Italy's social, economic, political and foreign policy. The Grand Council begin."
 	style = 2
 	picture = "Mussolini"	
@@ -118,8 +118,8 @@ event = {
 		event = 90000600
 	}
 	
-	name = "First point of congress : the trust in Benito Mussolini"
-	desc = "First point of congress : the trust in Benito Mussolini as DUCE. It should be a formality, but the outcome of the World War II and the last internal dissent on the country show some dissent on the Council"
+	name = "Congress Opening : trust in Benito Mussolini"
+	desc = "The 1948 Extraordinary Congress open with a vote on the trust in Benito Mussolini as DUCE. It should be a formality, but the outcome of the World War II and the last internal dissent on the country show some dissidents also in the Council"
 	style = 2
 	picture = "Mussolini"		
 	
@@ -128,13 +128,13 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action_a = {
-		name = "We trust again in Benito Mussolini, he's IL DUCE !"
+		name = "We trust ever in Benito Mussolini, he's IL DUCE !"
 		ai_chance = 60
 		command = { type = sleepevent which = 90000602 }
 		command = { type = setflag which = Council }
 	}
 	action_b = {
-		name = "The Grand Council no longer trust in Benito Mussolini !" # Il Duce forced to resign
+		name = "The Grand Council no longer trust in Benito Mussolini" # Il Duce forced to resign
 		ai_chance = 40
 		command = { type = dissent value = 15 }
 		command = { type = trigger which = 90000602 }
@@ -152,8 +152,8 @@ event = {
 		event = 90000601
 	}
 	
-	name = "Il Duce is forced to resign and is arrested by the militia!"
-	desc = "Most of the Grand Council of Fascism has accepted that il Duce is no longer fit to govern and put under arrest, now is the time to choose quickly a new command-in-Chief"
+	name = "Benito Mussolini is forced to resign and is arrested by the militia!"
+	desc = "Most of the Grand Council of Fascism has accepted that il Duce is no longer fit to govern and put under arrest in Rome; now is the time to choose quickly a new DUCE"
 	style = 2
 	picture = "congress"		
 	
@@ -256,7 +256,7 @@ event = {
 		name = "No, we cannot risk others unrest"
 		ai_chance = 20
 		trigger = { flag = RadicalItaly }
-		command = { }
+		command = { type = dissent value = -5 }
 	}
 }
 ###########################################################
@@ -313,20 +313,20 @@ event = {
 	offset = 5 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
+	action = {
 	name = EVT_90000605_A # Blackshirts
 	ai_chance = 50
 	command = { type = domestic which = democratic value = -1 }
 	command = { type = dissent value = 1 }
 	}
-	action_b = {
+	action = {
 	name = EVT_90000605_B # Allow other youth movements but monitor them closely.
-	ai_chance = 40
+	ai_chance = 10
 	command = { type = dissent value = 2 }
 	}
-	action_c = {
+	action = {
 	name = EVT_90000605_C # Also allow Catholic Youth movements.
-	ai_chance = 50
+	ai_chance = 40
 	command = { type = domestic which = democratic value = 1 }
 	command = { type = dissent value = 1 }
 	}
@@ -352,13 +352,13 @@ event = {
 	offset = 10 # 30
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
+	action = {
 	name = EVT_90000606_A # No pressure
 	ai_chance = 50
 	command = { type = dissent value = -5 }
 	command = { type = domestic which = interventionism value = -2 }
 	}
-	action_b = {
+	action = {
 	name = EVT_90000606_B # Pressure
 	ai_chance = 50
 	command = { type = dissent value = 5 }
@@ -387,7 +387,7 @@ event = {
 	offset = 15
 	deathdate = { day = 30 month = december year = 1963 }
 
-	action_a = {
+	action = {
 	name = EVT_90000607_A # Only arrest low-profile mafiosi
 	ai_chance = 50
 	command = { type = dissent value = -2 }
@@ -405,7 +405,7 @@ event = {
 	command = { type = removecore which = 421 }
 	command = { type = resource which = supplies value = -500 }
 	}
-	action_b = {
+	action = {
 	name = EVT_90000607_B # Launch a massive anti-mafia campaign
 	ai_chance = 50
 	command = { type = dissent value = -4 }
@@ -423,7 +423,7 @@ event = {
 	command = { type = removecore which = 421 }
 	command = { type = resource which = supplies value = -1000 }
 	}
-	action_b = {
+	action = {
 	name = EVT_90000607_C # Ignore the problem
 	ai_chance = 50
 	command = { type = setflag which = mafia3 }

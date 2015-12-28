@@ -53,14 +53,14 @@ event = {
 	picture = "nwo\rosenberg_plan"	
 	
 	action = {
-	    ai_chance = 99
+	    ai_chance = 90
 		name = "We will establish control with force!" 
 		command = { type = dissent value = 1 }
 		command = { type = manpowerpool value = -50 }
 		command = { type = trigger which = 93002 }
 	}
 	action = {
-	    ai_chance = 1
+	    ai_chance = 10
 		name = "They can't revolt forever" 
 		command = { type = dissent value = 3 }
 	}
@@ -81,6 +81,17 @@ event = {
 		command = { type = dissent value = -5 }
 		command = { type = manpowerpool value = 50 }
 	    command = { type = local_setflag which = GranaryUkraine } 
+		
+command = { type = province_revoltrisk which = 244 value = 40 }
+command = { type = province_revoltrisk which = 636 value = 20 }
+command = { type = province_revoltrisk which = 617 value = 20 }
+command = { type = province_revoltrisk which = 245 value = 20 }
+command = { type = province_revoltrisk which = 249 value = 20 }
+command = { type = province_revoltrisk which = 616 value = 20 }
+command = { type = province_revoltrisk which = 614 value = 20 }
+command = { type = province_revoltrisk which = 632 value = 20 }
+command = { type = province_revoltrisk which = 630 value = 20 }
+		
 	}
 }
 

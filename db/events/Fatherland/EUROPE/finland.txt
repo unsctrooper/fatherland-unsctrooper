@@ -4,7 +4,7 @@
 #####################################
 
 # General events
-# 90005000 The Greater Finland - 1948
+# 90005000 The Great Finland - 1948
 # 90005001 East Karelia - 1948
 # 90005002 The Finnish Army - 1948
 # 90005003 Revolts in East Karelia - 1949
@@ -21,8 +21,8 @@ event = {
 	random = no
 	country = FIN
 
-	name = "The Greater Finland"
-	desc = "What is the Greater Finland, whose boundary is drawn with the sword from the White Sea to Lake Ladoga? Finland received the Continuation War, which decided in Stockholm in peace for himself three natural isthmus cross, Viena, and Olonets Karelia and Kuollan Peninsula, which Hitler personally promised to Finland visit Mannerheim's birthday."
+	name = "The Great Finland"
+	desc = "What is the Great Finland, whose boundary is drawn with the sword from the White Sea to Lake Ladoga? Finland received the Continuation War, which decided in Stockholm in peace for himself three natural isthmus cross, Viena, and Olonets Karelia and Kuollan Peninsula, which Hitler personally promised to Finland visit Mannerheim's birthday."
 	style = 1
 	picture = "events_empty"
 

@@ -599,12 +599,20 @@ event = {
 	style = 1
 	
 	trigger = {
-		war = { country = EGY country = ENG }
-		#event = 8500305
-		event = { id = 8500305 days = 25  }   # Check if event with EVENT_ID has fired at least X days ago		
-		NOT = { control = { province = 787 data = EGY } } # Cairo
-		NOT = { control = { province = 900 data = EGY } } # Suez
-		NOT = { control = { province = 1008 data = EGY } } # Tel Aviv		
+		OR = {
+			AND = {
+					war = { country = EGY country = ENG }
+					#event = 8500305
+					event = { id = 8500305 days = 25  }   # Check if event with EVENT_ID has fired at least X days ago		
+					NOT = { control = { province = 787 data = EGY } } # Cairo
+					NOT = { control = { province = 900 data = EGY } } # Suez
+					NOT = { control = { province = 1008 data = EGY } } # Tel Aviv	
+			}
+			NOT = {
+					exists = EGY
+			}
+		}
+	
 	}
 
 	date = { day = 1 month = september year = 1950 }

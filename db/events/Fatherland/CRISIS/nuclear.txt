@@ -9,11 +9,13 @@ event = {
 	}
 	decision_trigger = { 
 		year = 1948	
-        event = 2001		
+        event = 2001	
+		event = 8005000		
 	}
 	trigger = {
         year = 1948
         event = 2001		
+		event = 8005000		
 	}
 	
 	name = "800NAME" #British Nuclear Program

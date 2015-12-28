@@ -586,7 +586,12 @@ event = {
 
 action = {
 name = "Well, I suppose it could be worse…"
-command = { type = dissent value = 5 }
+	
+		command = { type = province_revoltrisk which = 727 value = 25  } #Algeri
+		
+		command = { type = dissent value = 5 }											
+
+		command = { type = money value = -50 }
 }
 }
 

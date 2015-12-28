@@ -12,19 +12,23 @@ event = {
 	style = 1	
 	
 	decision = {
-    war = { country = AXI country = SOV }
+		war = { country = AXI country = SOV }
 	}
 		
 	decision_trigger = {
-    war = { country = AXI country = SOV }
+		war = { country = AXI country = SOV }
 	}
 	
 	trigger = {
-    month = 4
+		control = { province = 1112 data = SOV } #Novokazalinsk
+		control = { province = 1108 data = SOV } #Chimkent
+		control = { province = 1109 data = SOV } #Dzambul
+		control = { province = 1107 data = SOV } #Frunze
+		control = { province = 504 data = SOV } #Alma-Ata
 	}
 
 	date = { day = 1 month = january year = 1948 }
-	offset = 14
+	offset = 5
 	deathdate = { day = 1 month = january year = 1964 }
 
 	action = {

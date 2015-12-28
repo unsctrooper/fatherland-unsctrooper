@@ -463,6 +463,16 @@ action = {
 	command = { type = removeclaim which = 1280 }
 	command = { type = removeclaim which = 1281 }
 	command = { type = removeclaim which = 1282 }
+		command = { type = removecore which = 1273 }
+	command = { type = removecore which = 1274 }
+	command = { type = removecore which = 1275 }
+	command = { type = removecore which = 1276 }
+	command = { type = removecore which = 1277 }
+	command = { type = removecore which = 1278 }
+	command = { type = removecore which = 1279 }
+	command = { type = removecore which = 1280 }
+	command = { type = removecore which = 1281 }
+	command = { type = removecore which = 1282 }
 	command = { type = independence which = SIK value = 1 } 
 	command = { type = make_puppet which = SIK }
 	command = { type = relation which = CHI value = -25 }	
@@ -483,6 +493,16 @@ action = {
 	command = { type = removeclaim which = 1280 }
 	command = { type = removeclaim which = 1281 }
 	command = { type = removeclaim which = 1282 }
+			command = { type = removecore which = 1273 }
+	command = { type = removecore which = 1274 }
+	command = { type = removecore which = 1275 }
+	command = { type = removecore which = 1276 }
+	command = { type = removecore which = 1277 }
+	command = { type = removecore which = 1278 }
+	command = { type = removecore which = 1279 }
+	command = { type = removecore which = 1280 }
+	command = { type = removecore which = 1281 }
+	command = { type = removecore which = 1282 }
 	command = { type = local_setflag which = SovietReturnsSik } 
 	command = { type = relation which = CHI value = 50 }	
 	command = { type = relation which = CHC value = 50 }
@@ -566,9 +586,9 @@ action = {
 name = "Okay!" 
             command = { type = headofstate which = 420024 }  
             command = { type = headofgovernment which = 420025 }  
-            command = { type = add_division value = militia when = 1 }
-            command = { type = add_division value = militia when = 1 }
-            command = { type = add_division value = militia when = 1 }
+            command = { type = add_division value = militia when = 3 }
+            command = { type = add_division value = militia when = 3 }
+            command = { type = add_division value = militia when = 3 }
        }
 }
 

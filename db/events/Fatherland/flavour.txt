@@ -62,9 +62,15 @@
 		name = "We can't stand it anymore!"
 		ai_chance = 100
 		
-		command = { type = dissent which = 717 value = 1 } #Rabat
-		command = { type = dissent which = 718 value = 1 } #Casablanca
-						
+		command = { type = province_revoltrisk which = 717 value = 25  } #Rabat
+		command = { type = province_revoltrisk which = 718 value = 25  } #Casablanca
+		command = { type = province_revoltrisk which = 722 value = 25  } #Marrakech
+		
+		command = { type = dissent value = 5 }											
+
+		command = { type = money value = -50 }
+		command = { type = supplies value = -50 }
+		
 	}
 }
 
@@ -1729,22 +1735,22 @@ action = {
 ai_chance = 100
 name = "The most important battle of the war"
 command = { type = dissent value = -0.5 }
-command = { type = trigger which = 7776472 }
+#command = { type = trigger which = 7776472 }
 }
 }
 
 event = {
 id = 7776472
 random = no
-tag = { ROM HUN ITA CRO SPA RUS} # Armies on the Eastern Front
-all = yes
+TAG = { ROM HUN ITA CRO SPA RUS } # Armies on the Eastern Front
 
 name = "Anniversary of the Battle of Stalingrad"
 desc = "5 years ago, the Axis armies crushdown the Red Army in the city of Stalin, Stalingrad"
 style = 2
 picture = "stalingrad"
+date = { day = 24 month = february year = 1949 }
 
-action_a = {
+action = {
 name = "The most important battle of the war"
 command = { type = dissent value = -0.5 }
 }

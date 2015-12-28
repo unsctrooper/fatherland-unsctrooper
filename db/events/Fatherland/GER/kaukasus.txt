@@ -89,6 +89,8 @@ event = {
 		command = { type = money value = -25 }
 		command = { type = supplies value = -50 }		
 		command = { type = oilpool value = -25 }
+		
+		command = { type = capital which = 695 } #Sochi
 	}
 }
 
@@ -117,9 +119,6 @@ event = {
 	action = {
 		name = "We can't accept their unilateral independence !"	
 		ai_chance = 70
-		
-		command = { type = removecore which = 709 } #Tbilisi
-		command = { type = capital which = 695 } #Sochi
 		
 		command = { type = dissent value = 10 }
 		
@@ -167,6 +166,9 @@ event = {
 		command = { type = removecore which = 708 } #Kutaisi
 		command = { type = removecore which = 709 } #Tbilisi
 		command = { type = removecore which = 710 } #Sukumi
+		command = { type = removeclaim which = 708 } #Kutaisi
+		command = { type = removeclaim which = 709 } #Tbilisi
+		command = { type = removeclaim which = 710 } #Sukumi
 		
 		command = { type = independence which = GEO value = 0 when = 1 }
 	}
@@ -199,7 +201,7 @@ event = {
 		ai_chance = 50
 		
 		command = { type = alliance value = GER }
-		
+				command = { type = end_puppet }
 		command = { type = relation which = GER value = 200 }
 		command = { type = relation which = U42 value = 200 }
 		
@@ -341,7 +343,7 @@ event = {
 	picture = "mittelmeerdivision2"	
 
 	action = {
-		name = "The Orthodoxs (Armenia/Georgia) get their independence"
+		name = "Only Orthodoxs (Armenia/Georgia) get their independence"
 		ai_chance = 20
 		
 		#GEORGIA
@@ -372,7 +374,7 @@ event = {
 	}
 	
 	action = {
-		name = "The Muslims (Azerbijan) get their independence"
+		name = "Only Muslims (Azerbijan) get their independence"
 		ai_chance = 20
 		
 		#AZERBAIJAN
@@ -392,7 +394,7 @@ event = {
 	}
 		
 	action = {
-		name = "The minorities get their independence"
+		name = "All the minorities get their independence"
 		ai_chance = 50
 		
 		#NEW RK CAPITAL
@@ -409,6 +411,8 @@ event = {
 		command = { type = independence which = GEO value = 0 when = 0 }
 
 		command = { type = make_puppet which = GEO }
+		
+		command = { type = sleepevent which =9002 }  
 		
 		#ARMENIA
 		command = { type = removeclaim which = 711 } #Yerevan

@@ -32,7 +32,7 @@ globaldata = {
 
 	allies = { 
 		id = { type = 15000 id = 1 }
-		participant = { ENG USA U01 AST NZL CAN SAF BEL KOR }
+		participant = { USA ENG U01 AST NZL CAN SAF BEL KOR }
 	}
 
 	axis = { 
