@@ -1,5 +1,14 @@
-### Axis victory in America
+### Axis victory in America in WW3 (based on the DH Full USA surrender chain)
 
+# 2049051 German armies overrun the Homeland
+# 2003075 US Surrender - German demands
+# 2049052 The Boston Armistice: German demands
+# 2049070 The Independent States of America - German puppet
+# 2049071 Army of the ISA
+# 2049048 The USA collapses
+
+
+# German armies overrun the Homeland
 
 event = {
 	id = 2049051
@@ -9,7 +18,7 @@ event = {
 	name = EVT_2049051_NAME
 	desc = EVT_2049051_DESC
 	style = 2
-	picture = "news_paper"
+	picture = "fatherland\german_warposter"
 
 	trigger = {
 		war = { country = GER country = USA }
@@ -70,7 +79,7 @@ event = {
    name = 130661_NAME #US Surrender - GERman demands
    desc = 130661_DESC
    style = 2
-			picture = "news_paper"
+	picture = "fatherland\us_isolation"
 
    # triggered by us surrender 2049051
 
@@ -144,7 +153,7 @@ event = {
 	name = 130662_name
 	desc = 130662_desc
 	style = 2
-	picture = "news_paper"
+	picture = "fatherland\german_warposter"
 
 	# triggered by GERanese choice event 2003075
 
@@ -415,7 +424,7 @@ event = {
 	name = EVT_2049070_NAME
 	desc = EVT_2049070_DESC
 	style = 2
-	picture = "news_paper"
+	picture = "fatherland\nazi_amerika"
 
 	# triggered by us surrender 2049047
 
@@ -444,7 +453,7 @@ event = {
 	name = "ISA Armed Forces"
 	desc = "ISA Armed Forces"
 	style = 2
-	picture = "news_paper"
+	picture = "fatherland\nazi_amerika"
 
 	trigger = { exists = U06 }
    
@@ -459,8 +468,90 @@ event = {
 	command = { type = add_corps which = "II. SS Army Corps" value = land where = 1811 } # Huntington
 	command = { type = add_division which = "51. SS Pz. Division 'Concord and Lexington'" value = armor when = 4 }
 	command = { type = add_corps which = "III. SS Army Corps" value = land where = 1791 } # Buffalo
-	command = { type = add_division which = "51. SS Pzg. Division 'Von Steuben'" value = mechanized when = 1 where = tank_destroyer }
+	command = { type = add_division which = "52. SS Pzg. Division 'Von Steuben'" value = mechanized when = 1 where = tank_destroyer }
 	command = { type = add_corps which = "I. National Air Fleet" value = air where = 1809 } # Washington
 	command = { type = add_division which = "1. Fighter Group" value = multi_role when = 9 }
 	}
 	}
+	
+# The USA collapses
+	
+event = {
+	id = 2049048
+	random = no
+	country = USA
+	one_action = yes
+	persistent = yes
+
+	name = 130645_NAME
+	desc = 130645_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		flag = usunrest # from us harsh surrender
+		OR = {
+			AND = {
+				random = 35
+				dissent = 10
+			}
+			AND = {
+				random = 75
+				dissent = 33
+			}
+		}
+	}
+   
+	date = { day = 0 month = january year = 1941 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		trigger = {
+			exists = TEX
+			exists = CAL
+			exists = CSA
+			area = { area = Alaska country = CAN }
+		}
+		ai_chance = 100
+		name = 130645a
+		command = { type = sleepevent which = 2049048 }
+	}   
+	action = {                    #does not allways lead to a sepearation as all secession command have a chance to fail
+		trigger = {
+			OR = {
+				not = { exists = TEX }
+				not = { exists = CAL }
+				not = { exists = CSA }
+				not = {   area = { area = Alaska country = CAN } }
+			}
+		}
+		ai_chance = 85
+		name = 130645b
+		command = { trigger = { not = { exists = CAL } } type = independence which = CAL value = 0 }
+		command = { trigger = { not = { exists = CSA } } type = independence which = CSA value = 0 }
+		command = { trigger = { not = { exists = TEX } } type = independence which = TEX value = 0 }
+		command = { trigger = { not = { area = { area = Alaska country = CAN }} } type = secederegion which = CAN value = "Alaska" when = 1 }
+		command = { type = secederegion which = CSA value = "Southeast US" when = 1 }
+		command = { type = secedearea which = CSA value = "Arkansas" when = 1 }
+		command = { type = secedearea which = CSA value = "Louisiana" when = 1 }
+		command = { type = secedearea which = TEX value = "Texas" when = 1 }
+		command = { type = secedearea which = TEX value = "Oklahoma" when = 1 }
+		command = { type = secedearea which = TEX value = "Kansas" when = 1 }
+		command = { type = secedearea which = TEX value = "Colorado" when = 1 }
+		command = { type = secedearea which = TEX value = "New Mexico" when = 1 }
+		command = { type = secedearea which = CAL value = "Washington" when = 1 }
+		command = { type = secedearea which = CAL value = "Oregon" when = 1 }
+		command = { type = secedearea which = CAL value = "California" when = 1 }
+		command = { type = secedearea which = CAL value = "Idaho" when = 1 }
+		command = { type = secedearea which = CAL value = "Nevada" when = 1 }
+		command = { type = secedearea which = CAL value = "Utah" when = 1 }
+		command = { type = secedearea which = CAL value = "Arizona" when = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		ai_chance = 20
+		name = 130645c
+		command = { type = dissent value = 5 }
+	}
+}
