@@ -56,7 +56,7 @@
 
 # 66699 - SOV - The Soviet Bear Awakes!
 
-
+# WW3 starts if war declared on Axis or UN
 
 
 
@@ -1234,4 +1234,246 @@ event = { # Revenge!
 	command = { type = end_non_aggression which = SOV where = TRA }
 	command = { type = war which = TRA }
 	}
+}
+
+#######################
+# WW3 ignition chains #
+#######################
+
+###WW3 starts if war is declared on Axis by UN
+
+event = { 
+id = 66700
+random = no
+country = AXI
+
+trigger = {
+OR = {
+attack = USA # Attacked by USA
+attack = ENG # Attacked by ENG
+attack = ALS # Attacked by United Nations
+attack = CAN # Attacked by CAN
+attack = U01 # Attacked by Free France
+attack = KOR # Attacked by Korea
+}
+}
+
+name = "The Axis has been attacked"
+desc = "The Axis alliance has found itself under attack by the forces of the UN. It is time to put an end to this conflict once and for all." 
+style = 2
+picture = "news_paper"
+date = { day = 0 month = january year = 1948 }
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "The UN has attacked the Axis!"
+command = { type = alliance which = GER } # Enter the alliance and start war
+command = { type = alliance which = ITA }
+command = { type = alliance which = ROM }
+command = { type = alliance which = HUN }
+command = { type = alliance which = CRO }
+}
+}
+
+###Axis-Soviet War if Soviets declare war on the Axis
+
+event = { 
+id = 66701
+random = no
+country = AXI
+
+trigger = {
+attack = SOV # Attacked by SOV
+}
+
+name = "The Axis has been attacked"
+desc = "The Axis alliance has found itself under attack by the forces of the UN. It is time to put an end to this conflict once and for all." 
+style = 2
+picture = "news_paper"
+date = { day = 0 month = january year = 1948 }
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "The Soviet Union has attacked the Axis!"
+command = { type = alliance which = GER } # Enter the alliance and start war
+command = { type = alliance which = ITA }
+command = { type = alliance which = ROM }
+command = { type = alliance which = HUN }
+command = { type = alliance which = CRO }
+}
+}
+
+#WW3 if UN is attacked by Axis
+
+event = { 
+id = 66702
+random = no
+country = ALS
+
+trigger = {
+OR = {
+attack = GER # Attacked by GER
+attack = ITA # Attacked by ITA
+attack = ROM # Attacked by ROM
+attack = HUN # Attacked by HUN
+attack = BUL # Attacked by BUL
+attack = CRO # Attacked by CRO
+attack = FRA # Attacked by FRA
+AND = {
+attack = SPA # Attacked by SPA
+alliance = { country = GER country = SPA }
+}
+AND = {
+attack = POR # Attacked by POR
+alliance = { country = GER country = POR }
+}
+AND = {
+attack = SAF # Attacked by South Africa
+alliance = { country = GER country = SAF }
+}
+AND = {
+attack = TUR # Attacked by TUR
+alliance = { country = GER country = TUR }
+}
+AND = {
+attack = DEN # Attacked by DEN
+alliance = { country = GER country = DEN }
+}
+AND = {
+attack = UKR # Attacked by UKR
+alliance = { country = GER country = UKR }
+}
+AND = {
+attack = RUS # Attacked by RUS
+alliance = { country = GER country = RUS }
+}
+AND = {
+attack = CHI # Attacked by CHI
+alliance = { country = GER country = CHI }
+}
+AND = {
+attack = U87 # Attacked by Fascist China
+alliance = { country = GER country = U87 }
+}
+AND = {
+attack = JAP # Attacked by JAP
+alliance = { country = GER country = JAP }
+}
+}
+}
+
+name = "The UN has been attacked"
+desc = "The United Nations alliance has found itself under attack by the forces of the Axis. It is time to put an end to this conflict once and for all." 
+style = 2
+picture = "news_paper"
+date = { day = 0 month = january year = 1948 }
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "The Axis has attacked the UN."
+command = { type = alliance which = USA } # Enter the alliance and start war
+command = { type = alliance which = ENG }
+command = { type = alliance which = U01 }
+command = { type = alliance which = CAN }
+}
+}
+
+#Axis country joins alliance in WW3
+
+event = { 
+id = 66703
+random = no
+country = AXI
+
+trigger = {
+OR = {
+war = { country = GER  country = USA }
+AND = {
+war = { country = GER  country = ENG }
+alliance = { country = USA country = ENG }
+}
+AND = {
+war = { country = GER  country = U01 }
+alliance = { country = USA country = U01 }
+}
+AND = {
+war = { country = GER  country = CAN }
+alliance = { country = USA country = CAN }
+}
+AND = {
+war = { country = GER  country = KOR }
+alliance = { country = USA country = KOR }
+}
+}
+}
+
+name = "World War III has begun"
+desc = "World War III has begun" 
+style = 2
+picture = "news_paper"
+date = { day = 0 month = january year = 1948 }
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "World War III has begun"
+command = { type = alliance which = GER } # Enter the alliance
+command = { type = alliance which = ITA }
+command = { type = alliance which = ROM }
+command = { type = alliance which = HUN }
+command = { type = alliance which = CRO }
+}
+}
+
+#UN country joins alliance in WW3
+
+event = { 
+id = 66704
+random = no
+country = ALS
+
+trigger = {
+OR = {
+war = { country = USA  country = GER }
+AND = {
+war = { country = USA  country = ITA }
+alliance = { country = GER country = ITA }
+}
+AND = {
+war = { country = USA  country = ROM }
+alliance = { country = GER country = ROM }
+}
+AND = {
+war = { country = USA  country = HUN }
+alliance = { country = GER country = HUN }
+}
+AND = {
+war = { country = USA  country = RUS }
+alliance = { country = GER country = RUS }
+}
+AND = {
+war = { country = USA  country = FRA }
+alliance = { country = GER country = FRA }
+}
+}
+}
+
+name = "World War III has begun"
+desc = "World War III has begun" 
+style = 2
+picture = "news_paper"
+date = { day = 0 month = january year = 1948 }
+offset = 1
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+name = "World War III has begun"
+command = { type = alliance which = USA } # Enter the alliance
+command = { type = alliance which = ENG }
+command = { type = alliance which = U01 }
+command = { type = alliance which = CAN }
+}
 }
