@@ -418,11 +418,11 @@ event = {
 	 OR = {
 			AND = {
 				year = 1948
-				random = 35
+				random = 50
 			}
 			AND = {
 				year = 1949
-				random = 50
+				random = 75
 			}			
 			year = 1950
 			}

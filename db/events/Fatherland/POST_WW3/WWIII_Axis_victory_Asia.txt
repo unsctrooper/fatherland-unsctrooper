@@ -428,7 +428,10 @@ command = { type = local_setflag which = ns_russia_eastsiberia }
 
 action = {
 trigger = { 
+OR = {
 alliance = { country = GER country = CHI }
+alliance = { country = GER country = U87 } # Fascist China
+}
 }
 ai_chance = 50
 name = "Cede Eastern Siberia to Nationalist China."
@@ -438,6 +441,11 @@ command = { type = secedearea which = CHI value = "Yakutsk" }
 command = { type = secedearea which = CHI value = "Magadan" }
 command = { type = secedearea which = CHI value = "Kamchatka" }
 command = { type = secedeprovince which = CHI value = 1161 when = 0 }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Irkutsk" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Yakutsk" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Magadan" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Kamchatka" }
+command = { trigger = { exists = U87 } type = secedeprovince which = U87 value = 1161 when = 0 }
 }
 
 action = {
@@ -513,7 +521,10 @@ command = { type = trigger which = 300014 } # Far East Republic Army
 
 action = {
 trigger = { 
+OR = {
 alliance = { country = GER country = CHI }
+alliance = { country = GER country = U87 } # Fascist China
+}
 }
 ai_chance = 70
 name = "Cede Far East to Nationalist China."
@@ -522,6 +533,10 @@ command = { type = secedearea which = CHI value = "Khabarovsk" }
 command = { type = secedearea which = CHI value = "Amur" }
 command = { type = secedearea which = CHI value = "Zabaikalye" }
 command = { type = secedearea which = CHI value = "Primorski" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Khabarovsk" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Amur" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Zabaikalye" }
+command = { trigger = { exists = U87 } type = secedearea which = U87 value = "Primorski" }
 }
 
 action = {

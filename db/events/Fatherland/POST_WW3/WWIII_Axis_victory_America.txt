@@ -1,1 +1,557 @@
-### Axis victory in Asia: RK Ural, RK Westsibirien, RK Ostsibirien
+### Axis victory in America in WW3 (based on the DH Full USA surrender chain)
+
+# 2049051 German armies overrun the Homeland
+# 2003075 US Surrender - German demands
+# 2049052 The Boston Armistice: German demands
+# 2049070 The Independent States of America - German puppet
+# 2049071 Army of the ISA
+# 2049048 The USA collapses
+
+
+# German armies overrun the Homeland
+
+event = {
+	id = 2049051
+	random = no
+	country = USA
+
+	name = EVT_2049051_NAME
+	desc = EVT_2049051_DESC
+	style = 2
+	picture = "fatherland\german_warposter"
+
+	trigger = {
+		war = { country = GER country = USA }
+		#OR = {                                 #Staging area
+		#	area = { area = "Iceland" country = GER }      
+		#	area = { area = "Bermuda" country = GER }
+		#	control = { province = 2137 data = GER } #St. John's
+		#}
+		OR = {                                    # Major harbor on the west coast
+			control = { province = 1789 data = GER } #Boston
+			control = { province = 1795 data = GER } #New York
+			control = { province = 1809 data = GER } #Washington
+			control = { province = 1812 data = GER } #Norfolk
+			control = { province = 1953  data = GER } #Miami
+		}
+		OR = {                                    # lost US soil, lower if the coutry gets nuked.
+			lost_national = { country = USA value = 55 }
+			AND =  {
+				NOT = { nuked = 1 }
+				nuked = { country = USA  data = -1 }
+				lost_national = { country = USA value = 40 }
+			}
+			AND =  {
+				NOT = { nuked = 1 }
+				nuked = { country = USA  data = -2 }
+				lost_national = { country = USA value = 23 }
+			}
+			AND =  {
+				NOT = { nuked = 1 }
+				nuked = { country = USA  data = -3 }
+				lost_national = { country = USA value = 15 }
+			}
+		}
+		random = 50
+	}
+   
+	date = { day = 0 month = january year = 1948 }
+	offset = 1 #30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 80
+		name = ACTION_NAME_YES
+		command = { type = trigger which = 2003075 }
+	}
+	action = {
+		ai_chance = 20
+		name = "Never"
+		command = { type = sleepevent which = 2003075 }
+	}
+}
+
+event = {
+   id = 2003075
+   random = no
+   country = GER
+
+   name = 130661_NAME #US Surrender - GERman demands
+   desc = 130661_DESC
+   style = 2
+	picture = "fatherland\us_isolation"
+
+   # triggered by us surrender 2049051
+
+	action = {
+		ai_chance = 5
+		name = "Status Quo"
+		command = { type = setflag which = GERpeace }
+		command = { type = trigger which = 2049052 }
+	}
+	action = {
+			trigger = {
+			OR = {
+				area = { area = "Florida" country = GER }
+				area = { area = "Maryland_Delaware" country = GER }
+				area = { area = "New York" country = GER }
+				area = { area = "Massachussets" country = GER }
+				area = { area = "South Carolina" country = GER }
+				area = { area = "Virginia" country = GER }
+			}
+		}
+		ai_chance = 34
+		name = "Annex East Coast. Leave the West nominally free."
+		command = { type = setflag which = GERclaim0 }
+		command = { type = trigger which = 2049052 }
+	}
+	action = {
+		trigger = {
+			OR = {
+				area = { area = "Florida" country = GER }
+				area = { area = "Maryland_Delaware" country = GER }
+				area = { area = "New York" country = GER }
+				area = { area = "Massachussets" country = GER }
+				area = { area = "South Carolina" country = GER }
+				area = { area = "Virginia" country = GER }
+			}
+		}
+		ai_chance = 50
+		name = "Set up puppet. Leave the West nominally free."
+		command = { type = setflag which = GERclaim1 }
+		command = { type = trigger which = 2049052 }
+	}
+	action = {
+		trigger = {
+			OR = {
+				area = { area = "Florida" country = GER }
+				area = { area = "Maryland_Delaware" country = GER }
+				area = { area = "New York" country = GER }
+				area = { area = "Massachussets" country = GER }
+				area = { area = "South Carolina" country = GER }
+				area = { area = "Virginia" country = GER }
+			}
+		}
+		ai_chance = 10
+		name = "Set up puppet and continue fighting."
+		command = { type = independence which = U06 value = 1 when = 0 }
+	}
+	action = {
+		ai_chance = 1
+		name = "Total Conquest"
+		command = { type = sleepevent which = 2049052 }
+	}
+}
+
+### The Boston Armistice: German demands
+
+event = {
+	id = 2049052
+	random = no
+	country = USA
+
+	name = 130662_name
+	desc = 130662_desc
+	style = 2
+	picture = "fatherland\german_warposter"
+
+	# triggered by GERanese choice event 2003075
+
+	action = {
+		trigger = { flag = GERpeace }
+		ai_chance = 80
+		name = "Sign the treaty"
+		command = { type = dissent value = 10 }
+		command = { type = set_relation which = GER value = 50 }
+		command = { type = non_aggression which = USA where = GER }
+
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = set_domestic which = defense_lobby value = 1 }
+		command = { type = set_domestic which = interventionism value = 1 }
+
+		command = { type = clrflag which = GERpeace }
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = GER value = 1 }
+	}
+	action = {
+		trigger = { flag = GERclaim0 }
+		ai_chance = 70
+		name = "Sign the treaty"
+		command = { type = dissent value = 15 }
+		command = { type = set_relation which = GER value = 50 }
+		command = { type = non_aggression which = USA where = GER }
+
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = set_domestic which = defense_lobby value = 1 }
+		command = { type = set_domestic which = interventionism value = 1 }
+
+		command = { type =  secederegion which = GER value = "Iceland" }
+		command = { type =  secederegion which = GER value = "Greenland" }
+		
+		command = { trigger = { puppet = { country = PHI country = USA } } type = end_mastery which = PHI }
+		command = { trigger = { access = { country = PHI country = USA } } type = trigger which = 2066001 }
+		command = { trigger = { puppet = { country = LIB country = USA } } type = end_mastery which = LIB }
+		command = { trigger = { access = { country = LIB country = USA } } type = trigger which = 2077001 }
+		command = { trigger = { access = { country = CUB country = USA } } type = trigger which = 2049064 }		
+
+		# Pacific Isles
+		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "American Pacific" when = 1 }
+		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "Asian Pacific" when = 1 }
+		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "North Solomon Islands" when = 1 }
+		command = { trigger = { exists = ENG NOT = { ispuppet = ENG war = { country = ENG country = USA} } } type =  secederegion which = ENG value = "American Pacific" when = 1 }
+		command = { trigger = { exists = ENG NOT = { ispuppet = ENG war = { country = ENG country = USA} } } type =  secederegion which = ENG value = "Asian Pacific" when = 1 }
+		command = { trigger = { exists = AST NOT = { ispuppet = AST war = { country = AST country = USA} } } type =  secederegion which = AST value = "American Pacific" when = 1 }
+		command = { trigger = { exists = AST NOT = { ispuppet = AST war = { country = AST country = USA} } } type =  secederegion which = AST value = "Asian Pacific" when = 1 }
+		
+	    # Strategic assets
+		command = { type = secedeprovince which = GER value = 889 when = 1 } # Balboa - Central America
+		command = { type = secedeprovince which = GER value = 1778 when = 1 } # Guantanamo Bay Naval Base - Caribbean
+		command = { type = secederegion which = GER value = "Caribbean" when = 1 }
+		command = { type =  secedeprovince which = GER value = 1795 when = 1 } # New York - Northeast US
+
+		# Eastcoast
+		command = { trigger = { area = { area = "Georgia" country = GER } } type = secedearea which = GER value = "Georgia" when = 1 }
+		command = { trigger = { area = { area = "Florida" country = GER } } type = secedearea which = GER value = "Florida" when = 1 } #
+		command = { trigger = { area = { area = "North Carolina" country = GER } } type = secedearea which = GER value = "North Carolina" when = 1 } #
+		command = { trigger = { area = { area = "South Carolina" country = GER } } type = secedearea which = GER value = "South Carolina" when = 1 }
+		command = { trigger = { area = { area = "West Virginia" country = GER } } type = secedearea which = GER value = "West Virginia" when = 1 } #
+		command = { trigger = { area = { area = "Virginia" country = GER } } type = secedearea which = GER value = "Virginia" when = 1 } #
+		command = { trigger = { area = { area = "Pennsylvania" country = GER } } type = secedearea which = GER value = "Pennsylvania" when = 1 }
+		command = { trigger = { area = { area = "Maryland_Delaware" country = GER } } type = secedearea which = GER value = "Maryland_Delaware" when = 1 } #
+		command = { trigger = { area = { area = "New Jersey" country = GER } } type = secedearea which = GER value = "New Jersey" when = 1 } #
+		command = { trigger = { area = { area = "New York" country = GER } } type = secedearea which = GER value = "New York" when = 1 }
+		command = { trigger = { control = { province = 1796 data = GER } } type = secedeprovince which = GER value = 1796 when = 1 } # Providence - Northeast US 
+		command = { trigger = { control = { province = 1787 data = GER } } type = secedeprovince which = GER value = 1787 when = 1 } # Concord - Northeast US 
+		command = { trigger = { area = { area = "Massachussets" country = GER } } type = secedearea which = GER value = "Massachussets" when = 1 } 
+		command = { trigger = { area = { area = "Vermont" country = GER } } type = secedearea which = GER value = "Vermont" when = 1 } 
+		command = { trigger = { area = { area = "New Hampshire" country = GER } } type = secedearea which = GER value = "New Hampshire" when = 1 } 
+		command = { trigger = { area = { area = "Maine" country = GER } } type = secedearea which = GER value = "Maine" when = 1 } 
+
+		#Regions gained by UK surrender
+		command = { type = secedeprovince which = GER value = 348 when = 1 } # Gibraltar
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "West Africa" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Morocco" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Algeria" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Sahara" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Libya" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Tunisia" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Middle East" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Madagascar" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Egypt" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Sudan" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Ethiopia" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Horn of Africa" when = 1 }
+		command = { type = secederegion which = GER value = "West Africa" when = 1 }
+		command = { type = secederegion which = GER value = "Morocco" when = 1 }
+		command = { type = secederegion which = GER value = "Algeria" when = 1 }
+		command = { type = secederegion which = GER value = "Sahara" when = 1 }
+		command = { type = secederegion which = GER value = "Libya" when = 1 }
+		command = { type = secederegion which = GER value = "Tunisia" when = 1 }
+		command = { type = secederegion which = GER value = "Middle East" when = 1 }
+		command = { type = secederegion which = GER value = "Madagascar" when = 1 }
+		command = { type = secederegion which = GER value = "Egypt" when = 1 }
+		command = { type = secederegion which = GER value = "Sudan" when = 1 }
+		command = { type = secederegion which = GER value = "Ethiopia" when = 1 }
+		command = { type = secederegion which = GER value = "Horn of Africa" when = 1 }
+
+		
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = GER value = 1 }
+		command = { type = clrflag which = GERclaim0 }
+		command = { type = setflag which = usunrest }
+	}
+	action = {
+		trigger = { flag = GERclaim1 }
+
+		ai_chance = 60
+		name = "Sign the treaty"
+		command = { type = dissent value = 30 }
+		command = { type = set_relation which = GER value = 50 }
+		command = { type = non_aggression which = USA where = GER }
+
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = set_domestic which = defense_lobby value = 1 }
+		command = { type = set_domestic which = interventionism value = 1 }
+		
+		command = { type = trigger which = 2049070 } # Set up German puppet on East Coast
+
+		command = { trigger = { puppet = { country = PHI country = USA } } type = end_mastery which = PHI }
+		command = { trigger = { access = { country = PHI country = USA } } type = trigger which = 2066001 }
+		command = { trigger = { puppet = { country = LIB country = USA } } type = end_mastery which = LIB }
+		command = { trigger = { access = { country = LIB country = USA } } type = trigger which = 2077001 }
+		command = { trigger = { access = { country = CUB country = USA } } type = trigger which = 2049064 }		
+	
+		command = { type = secederegion which = GER value = "Iceland" when = 1 }
+		command = { type = secederegion which = GER value = "Greenland" when = 1 }
+		# Strategic assets
+		command = { type = secedeprovince which = GER value = 889 when = 1 } # Balboa - Central America
+		command = { type = secedeprovince which = GER value = 1778 when = 1 } # Guantanamo Bay Naval Base - Caribbean
+		command = { type = secederegion which = GER value = "Caribbean" when = 1 } 
+		command = { type = secedeprovince which = GER value = 1795 when = 1 } # New York - Northeast US
+
+		# Eastcoast
+		command = { trigger = { area = { area = "Georgia" country = GER } } type = secedearea which = GER value = "Georgia" when = 1 }
+		command = { trigger = { area = { area = "Florida" country = GER } } type = secedearea which = GER value = "Florida" when = 1 } #
+		command = { trigger = { area = { area = "North Carolina" country = GER } } type = secedearea which = GER value = "North Carolina" when = 1 } #
+		command = { trigger = { area = { area = "South Carolina" country = GER } } type = secedearea which = GER value = "South Carolina" when = 1 }
+		command = { trigger = { area = { area = "West Virginia" country = GER } } type = secedearea which = GER value = "West Virginia" when = 1 } #
+		command = { trigger = { area = { area = "Virginia" country = GER } } type = secedearea which = GER value = "Virginia" when = 1 } #
+		command = { trigger = { area = { area = "Pennsylvania" country = GER } } type = secedearea which = GER value = "Pennsylvania" when = 1 }
+		command = { trigger = { area = { area = "Maryland_Delaware" country = GER } } type = secedearea which = GER value = "Maryland_Delaware" when = 1 } 
+		command = { trigger = { area = { area = "New Jersey" country = GER } } type = secedearea which = GER value = "New Jersey" when = 1 } #
+		command = { trigger = { area = { area = "New York" country = GER } } type = secedearea which = GER value = "New York" when = 1 }
+		command = { trigger = { control = { province = 1796 data = GER } } type = secedeprovince which = GER value = 1796 when = 1 } # Providence - Northeast US 
+		command = { trigger = { control = { province = 1787 data = GER } } type = secedeprovince which = GER value = 1787 when = 1 } # Concord - Northeast US 
+		command = { trigger = { area = { area = "Massachussets" country = GER } } type = secedearea which = GER value = "Massachussets" when = 1 } 
+		command = { trigger = { area = { area = "Vermont" country = GER } } type = secedearea which = GER value = "Vermont" when = 1 } 
+		command = { trigger = { area = { area = "New Hampshire" country = GER } } type = secedearea which = GER value = "New Hampshire" when = 1 } 
+		command = { trigger = { area = { area = "Maine" country = GER } } type = secedearea which = GER value = "Maine" when = 1 } 
+		
+		# Pacific Isles
+		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "American Pacific" when = 1 }
+		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "Asian Pacific" when = 1 }
+		command = { trigger = { alliance = { country = GER country = JAP } } type = secederegion which = JAP value = "North Solomon Islands" when = 1 }
+		command = { trigger = { exists = ENG NOT = { ispuppet = ENG war = { country = ENG country = USA} } } type =  secederegion which = ENG value = "American Pacific" when = 1 }
+		command = { trigger = { exists = ENG NOT = { ispuppet = ENG war = { country = ENG country = USA} } } type =  secederegion which = ENG value = "Asian Pacific" when = 1 }
+		command = { trigger = { exists = AST NOT = { ispuppet = AST war = { country = AST country = USA} } } type =  secederegion which = AST value = "American Pacific" when = 1 }
+		command = { trigger = { exists = AST NOT = { ispuppet = AST war = { country = AST country = USA} } } type =  secederegion which = AST value = "Asian Pacific" when = 1 }
+
+		#Regions gained by UK surrender
+		command = { type = secedeprovince which = GER value = 348 when = 1 } # Gibraltar
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "West Africa" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Morocco" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Algeria" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Sahara" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Libya" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Tunisia" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Middle East" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Madagascar" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Egypt" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Sudan" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Ethiopia" when = 1 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secederegion which = ITA value = "Horn of Africa" when = 1 }
+		command = { type = secederegion which = GER value = "West Africa" when = 1 }
+		command = { type = secederegion which = GER value = "Morocco" when = 1 }
+		command = { type = secederegion which = GER value = "Algeria" when = 1 }
+		command = { type = secederegion which = GER value = "Sahara" when = 1 }
+		command = { type = secederegion which = GER value = "Libya" when = 1 }
+		command = { type = secederegion which = GER value = "Tunisia" when = 1 }
+		command = { type = secederegion which = GER value = "Middle East" when = 1 }
+		command = { type = secederegion which = GER value = "Madagascar" when = 1 }
+		command = { type = secederegion which = GER value = "Egypt" when = 1 }
+		command = { type = secederegion which = GER value = "Sudan" when = 1 }
+		command = { type = secederegion which = GER value = "Ethiopia" when = 1 }
+		command = { type = secederegion which = GER value = "Horn of Africa" when = 1 }
+			
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = GER value = 1 }
+		command = { type = clrflag which = GERclaim1 }
+		command = { type = setflag which = usunrest }
+	}
+
+	action = {
+		ai_chance = 30
+		name = "There is still hope."
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 5 }
+	}
+}      
+
+event = {
+	id = 2066001
+	random = no
+	country = PHI
+
+	name = 130643_NAME #US - Military Access
+	desc = 130643_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action_a = {
+		name = "Of course"
+		command = { type = end_access which = USA }
+	}
+}      
+	  
+event = {
+	id = 2077001
+	random = no
+	country = LIB
+
+	name = 130643_NAME #US - Military Access
+	desc = 130643_DESC
+	style = 2
+		picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action_a = {
+		name = "Of course"
+		command = { type = end_access which = USA }
+	}
+}   
+
+event = {
+	id = 2049064
+	random = no
+	country = CUB
+
+	name = 130643_NAME #US - Military Access
+	desc = 130643_DESC
+	style = 2
+		picture = "news_paper"
+
+	# triggered by us surrender 2049047
+
+	action_a = {
+		name = "Of course"
+		command = { type = end_access which = USA }
+	}
+}   
+
+### The Independent States of America - German puppet
+
+event = {
+	id = 2049070
+	random = no
+	country = GER
+
+	name = EVT_2049070_NAME
+	desc = EVT_2049070_DESC
+	style = 2
+	picture = "fatherland\nazi_amerika"
+
+	# triggered by us surrender 2049047
+
+	action = {
+	ai_chance = 100
+		name = "Release the Independent States of America"
+		command = { type = independence which = U06 value = 1 when = 0 }
+		command = { type = 	make_puppet which = U06 }
+		command = { type = 	alliance which = U06 }
+	}
+	
+		action = {
+	ai_chance = 0
+		name = "Not now"
+		command = { }
+	}
+}   
+
+### Army of the ISA
+
+event = {
+	id = 2049071
+	random = no
+	country = U06
+
+	name = "ISA Armed Forces"
+	desc = "ISA Armed Forces"
+	style = 2
+	picture = "fatherland\nazi_amerika"
+
+	trigger = { exists = U06 }
+   
+	date = { day = 0 month = january year = 1948 }
+	offset = 1 #30
+	deathdate = { day = 29 month = december year = 2020 }
+	
+	action = {
+	name = "ISA Armed Forces deployment"
+	command = { type = add_corps which = "I. SS Army Corps" value = land where = 1806 } # Pittsburgh
+	command = { type = add_division which = "50. SS Division 'Frederick the Great'"  value = paratrooper when = 3 }
+	command = { type = add_corps which = "II. SS Army Corps" value = land where = 1811 } # Huntington
+	command = { type = add_division which = "51. SS Pz. Division 'Concord and Lexington'" value = armor when = 4 }
+	command = { type = add_corps which = "III. SS Army Corps" value = land where = 1791 } # Buffalo
+	command = { type = add_division which = "52. SS Pzg. Division 'Von Steuben'" value = mechanized when = 1 where = tank_destroyer }
+	command = { type = add_corps which = "I. National Air Fleet" value = air where = 1809 } # Washington
+	command = { type = add_division which = "1. Fighter Group" value = multi_role when = 9 }
+	}
+	}
+	
+# The USA collapses
+	
+event = {
+	id = 2049048
+	random = no
+	country = USA
+	one_action = yes
+	persistent = yes
+
+	name = 130645_NAME
+	desc = 130645_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		flag = usunrest # from us harsh surrender
+		OR = {
+			AND = {
+				random = 35
+				dissent = 10
+			}
+			AND = {
+				random = 75
+				dissent = 33
+			}
+		}
+	}
+   
+	date = { day = 0 month = january year = 1941 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		trigger = {
+			exists = TEX
+			exists = CAL
+			exists = CSA
+			area = { area = Alaska country = CAN }
+		}
+		ai_chance = 100
+		name = 130645a
+		command = { type = sleepevent which = 2049048 }
+	}   
+	action = {                    #does not allways lead to a sepearation as all secession command have a chance to fail
+		trigger = {
+			OR = {
+				not = { exists = TEX }
+				not = { exists = CAL }
+				not = { exists = CSA }
+				not = {   area = { area = Alaska country = CAN } }
+			}
+		}
+		ai_chance = 85
+		name = 130645b
+		command = { trigger = { not = { exists = CAL } } type = independence which = CAL value = 0 }
+		command = { trigger = { not = { exists = CSA } } type = independence which = CSA value = 0 }
+		command = { trigger = { not = { exists = TEX } } type = independence which = TEX value = 0 }
+		command = { trigger = { not = { area = { area = Alaska country = CAN }} } type = secederegion which = CAN value = "Alaska" when = 1 }
+		command = { type = secederegion which = CSA value = "Southeast US" when = 1 }
+		command = { type = secedearea which = CSA value = "Arkansas" when = 1 }
+		command = { type = secedearea which = CSA value = "Louisiana" when = 1 }
+		command = { type = secedearea which = TEX value = "Texas" when = 1 }
+		command = { type = secedearea which = TEX value = "Oklahoma" when = 1 }
+		command = { type = secedearea which = TEX value = "Kansas" when = 1 }
+		command = { type = secedearea which = TEX value = "Colorado" when = 1 }
+		command = { type = secedearea which = TEX value = "New Mexico" when = 1 }
+		command = { type = secedearea which = CAL value = "Washington" when = 1 }
+		command = { type = secedearea which = CAL value = "Oregon" when = 1 }
+		command = { type = secedearea which = CAL value = "California" when = 1 }
+		command = { type = secedearea which = CAL value = "Idaho" when = 1 }
+		command = { type = secedearea which = CAL value = "Nevada" when = 1 }
+		command = { type = secedearea which = CAL value = "Utah" when = 1 }
+		command = { type = secedearea which = CAL value = "Arizona" when = 1 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		ai_chance = 20
+		name = 130645c
+		command = { type = dissent value = 5 }
+	}
+}
