@@ -299,8 +299,8 @@ desc = "90000506DESC"
 
 action_a = {
 trigger = { flag = GoringGoebbels }
-name = 90000506A
-ai_chance = 70
+name = 90000506A # Hermann Göring and his allies take over
+ai_chance = 50
 command = { type = dissent value = -1 }	
 command = { type = clrflag which = GoringGoebbels } 
 command = { type = setflag which = NaziGermany } 
@@ -310,7 +310,7 @@ command = { type = event which = 90000507 where = GER when = 3 }
 }
 action_b = {
 trigger = { flag = GoringGoebbels }
-name = 90000506B
+name = 90000506B # Bormann gets rid of the opposition
 ai_chance = 20
 command = { type = dissent value = -1 }
 command = { type = clrflag which = GoringGoebbels } 
@@ -321,7 +321,7 @@ command = { type = event which = 90000510 where = GER when = 5 }
 }
 action_c = {
 trigger = { flag = GoringGoebbels }
-name = 90000506C
+name = 90000506C # The Wehrmacht will guarantee order and stability
 ai_chance = 10
 command = { type = dissent value = 5 }
 command = { type = set_domestic which = democratic value = 3 }	
@@ -344,6 +344,30 @@ command = { type = flag_ext where = GER which = "_U19" }
 command = { type = clrflag which = GoringGoebbels } 
 command = { type = setflag which = MilGermany } 
 }
+action_d = {
+trigger = { flag = GoringGoebbels }
+name = 90000506D # SS takes leadership
+ai_chance = 20
+command = { type = dissent value = 7 }
+command = { type = headofstate which = 276 } # Heinrich Himmler
+command = { type = headofgovernment which = 277 } # Heinrich Himmler
+command = { type = foreignminister which = 37 } # Alfred Rosenberg
+command = { type = armamentminister which = 60 } # Walther Darre
+command = { type = ministerofsecurity which = 206 } # Reinhard Heydrich
+command = { type = chiefofstaff which = 230 } # Karl Friedrich Otto Wolff
+command = { type = chiefofarmy which = 194 } # Paul Hausser
+command = { type = chiefofnavy which = 164 } #Alfred Saalwächter
+command = { type = chiefofair which = 199 } # Hans-Jürgen Stumpff
+command = { type = sleepevent which = 90000511 }
+command = { type = sleepevent which = 90000512 }
+command = { type = sleepevent which = 90000516 }
+command = { type = sleepevent which = 90000517 }
+command = { type = setflag which = SSGermany } 
+command = { type = clrflag which = LegGermany } 
+command = { type = clrflag which = NaziGermany } 
+command = { type = clrflag which = MilGermany } 
+}
+
 action_a = {
 trigger = { NOT = { flag = GoringGoebbels} }
 name = 90000506B
@@ -502,6 +526,7 @@ command = { type = relation which = U41 value = -50 }
 command = { type = relation which = U58 value = -50 }
 }
 }
+
 # 90000512 # GER # Berlin Allies Gauleiters
 event = { # Nazi 'Senate' Allies with Gauleiters
 id = 90000512
@@ -812,7 +837,7 @@ desc = "90000519DESC"
 
 action_a = {
 name = 90000519A
-ai_chance = 90
+ai_chance = 60
 command = { type = event which = 90000522 where = U58 when = 7 } # ? 
 command = { type = dissent value = 5 }
 command = { type = trigger which = 90000520 }
@@ -820,7 +845,7 @@ command = { type = trigger which = 90000520 }
 
 action_b = {
 name = 90000519B
-ai_chance = 10
+ai_chance = 40
 command = { type = trigger which = 90000521 }
 command = { type = dissent value = 10 }
 command = { type = headofstate which = 274 }		# Heydrich
