@@ -3,9 +3,6 @@
 ### By UNSC Trooper			 ###
 ################################ 
 
-# Notes for next release:
-# Soviet Union disintegrates after defeat against China
-
 ##############################
 # Axis Intervention in China 
 # 811000 GER Support Nationalist China against the Soviets
@@ -50,9 +47,9 @@
 	relation = { which = CHI value = -50 }
 	exists = CHI
 	exists = AXI
-	war = { country = CHI country = SOV }	
+	war = { country = CHI country = SOV }
 	NOT = {
-	war = { country = -1 country = CHI }		
+	war = { country = -1 country = CHI }
 	war = { country = AXI country = CHI }	
 	alliance = { country = -1 country = CHI }
 	}
@@ -241,6 +238,7 @@ event = {
 		}
 		government = communist
 		atwar = no
+		event = { id = 8200145 days = 365 } # Fire a year after Nationalist victory in Civil War
 	}
 	
 	name = "EVT_810000_NAME"
@@ -308,6 +306,7 @@ event = {
 		}
 		government = communist
 		atwar = no
+		event = { id = 8200145 days = 365 } # Fire a year after Nationalist victory in Civil War
 	}
 	
 	name = "EVT_810000_NAME"
@@ -375,6 +374,7 @@ event = {
 		}
 		government = communist
 		atwar = no
+		event = { id = 8200145 days = 365 } # Fire a year after Nationalist victory in Civil War
 	}
 	
 	name = "EVT_810000_NAME"
@@ -734,6 +734,7 @@ tag = { CHI U87 }
 	war = { country = -1 country = MON }	
 	war = { country = -1 country = SIB }	
 	}
+	event = { id = 8200145 days = 365 } # Fire a year after Nationalist victory in Civil War
 	}
 
 	decision_trigger = {
@@ -744,6 +745,7 @@ tag = { CHI U87 }
 	war = { country = -1 country = MON }	
 	war = { country = -1 country = SIB }	
 	}
+	event = { id = 8200145 days = 365 } # Fire a year after victory in Civil War
 	}
 	
 	name = "EVT_810009_NAME"
@@ -800,10 +802,10 @@ tag = { CHI U87 }
 
 	trigger = { 
 	owned = { province = 1191 data = SOV }
-	NOT = {
-	war = { country = -1 country = SOV }	
-	}
-	army = { size = 45 type = 1 when = 0 where = 0 which = 0 country = -1 }	# China has at least 45 inf.
+	exists = SOV
+	NOT = { war = { country = -1 country = SOV } }
+	army = { size = 55 type = 1 when = 0 where = 0 which = 0 country = -1 }	# China has at least 55 inf.
+	event = { id = 8200145 days = 365 } # Fire a year after victory in Civil War
 	}
 
 	name = "EVT_810010_NAME"
