@@ -78,7 +78,6 @@ event = "db\events\fatherland\asia\japan.txt"
 #CHINA
 event = "db\events\fatherland\china\Post-CCW.txt"
 event = "db\events\fatherland\china\Sino-Russian Wars.txt"
-#event = "db\events\fatherland\china\Sino-Soviet War.txt"
 event = "db\events\fatherland\china\Imperial Russian-Chinese Alliance.txt"
 event = "db\events\fatherland\china\china.txt"
 
