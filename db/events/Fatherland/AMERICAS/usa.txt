@@ -766,6 +766,10 @@ command = { type = add_division which = "UN Bombing Group" value = strategic_bom
 #}
 #}
 
+###############################
+### The isolationist threat ###
+###############################
+
 ### The Isolationist Paradox
 
 event = {
@@ -992,7 +996,7 @@ command = { type = dissent value = 5 }
 }
 }
 
-### UN Sanctions: China joins the axis - GER
+### UN Sanctions: China joins the axis - GER reaction
 
 event = {
 id = 999527
@@ -1561,7 +1565,7 @@ style = 1
 picture = "fatherland\strategic_convention"
 
 action = {
-ai_chance = 50
+ai_chance = 70
 name = "Ridgway's UN Liberty Shield Strategy"
 command = { type = trigger which = 999543 } # Ridgway's UN Liberty Shield Strategy
 command = { type = setflag which = un_liberty_shield }
@@ -1575,6 +1579,10 @@ command = { type = trigger which = 999554 }
 command = { type = setflag which = us_central_front }
 }
 }
+
+#########################
+### UN Liberty Shield ###
+#########################
 
 ### UN Liberty Shield Strategy: Turkey
 

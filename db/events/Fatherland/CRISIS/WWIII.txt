@@ -1278,32 +1278,32 @@ command = { type = alliance which = CRO }
 
 ###Axis-Soviet War if Soviets declare war on the Axis
 
-event = { 
-id = 66701
-random = no
-country = AXI
+#event = { 
+#id = 66701
+#random = no
+#country = AXI
 
-trigger = {
-attack = SOV # Attacked by SOV
-}
+#trigger = {
+#attack = SOV # Attacked by SOV
+#}
 
-name = "The Axis has been attacked"
-desc = "The Axis alliance has found itself under attack by the forces of the UN. It is time to put an end to this conflict once and for all." 
-style = 2
-picture = "news_paper"
-date = { day = 0 month = january year = 1948 }
-offset = 1
-deathdate = { day = 29 month = december year = 2020 }
+#name = "The Axis has been attacked"
+#desc = "The Axis alliance has found itself under attack by the forces of the UN. It is time to put an end to this conflict once and for all." 
+#style = 2
+#picture = "news_paper"
+#date = { day = 0 month = january year = 1948 }
+#offset = 1
+#deathdate = { day = 29 month = december year = 2020 }
 
-action = {
-name = "The Soviet Union has attacked the Axis!"
-command = { type = alliance which = GER } # Enter the alliance and start war
-command = { type = alliance which = ITA }
-command = { type = alliance which = ROM }
-command = { type = alliance which = HUN }
-command = { type = alliance which = CRO }
-}
-}
+#action = {
+#name = "The Soviet Union has attacked the Axis!"
+#command = { type = alliance which = GER } # Enter the alliance and start war
+#command = { type = alliance which = ITA }
+#command = { type = alliance which = ROM }
+#command = { type = alliance which = HUN }
+#command = { type = alliance which = CRO }
+#}
+#}
 
 #WW3 if UN is attacked by Axis
 
