@@ -1,2 +1,235 @@
-# SS-State Germania
-# Annex Gotenland
+### SS-State Germania ###
+# Replacement of Wehrmacht with Waffen-SS (bonus morale)
+# Introduction of Waffen-SS as Axis Troops
+# SS Fallschirmjaeger divisions: "Himmler"
+# Himmler's Germanic Church
+# Annexation RKs - creation of Greater Germanic Reich
+
+# AI events in separate file: mass troops on Soviet border, buildup of motorized SS divisions
+
+# 90001000 # SS-Staat Germania proclaimed
+# 90001001 # USA reaction to SS-Staat Germania
+# 90001002 # ENG reaction to SS-Staat Germania
+# 90001003 # ALS reaction to SS-Staat Germania
+# 90001004 # Fate of the Crimean SS State
+# 90001005 # Fate of the SS State Burgundy
+# 90001006 # Waffen-SS transition into the Army
+
+### SS-Staat Germania proclaimed ###
+
+event = {
+id = 90001000
+country = GER
+random = no
+
+#trigger = { flag = SSGermany } # Flag set in hilterdied.txt 
+
+name = "EVT_90001000_NAME"
+desc = "EVT_90001000_DESC"
+style = 2
+picture = "fatherland\ss1"
+#date = { day = 1 month = january year = 1948 }
+#offset = 1
+#deathdate = { day = 1 month = january year = 2020 }	
+
+action = {
+name = "SS-Staat Germania rises!"
+command = { type = belligerence value = 5 }
+command = { type = set_domestic which = political_left value = 1 }
+command = { type = set_domestic which = democratic value = 1 }
+command = { type = set_domestic which = freedom value = 1 }
+command = { type = set_domestic which = free_market value = 3 }
+command = { type = set_domestic which = defense_lobby value = 8 }
+command = { type = set_domestic which = interventionism value = 9 }
+command = { type = 	relation which = ALS value = -10 }
+command = { type = 	relation which = USA value = -10 }
+command = { type = 	relation which = ENG value = -10 }
+command = { type = 	relation which = CAN value = -10 }
+command = { type = 	relation which = U01 value = -10 }
+command = { type = 	relation which = KOR value = -10 }
+command = { type = trigger which = 90001001 } # USA reaction
+command = { type = trigger which = 90001002 } # ENG reaction
+command = { type = trigger which = 90001003 } # UN reaction
+}
+}
+
+### USA reaction to SS-Staat Germania ###
+
+event = {
+id = 90001001
+country = USA
+random = no
+
+name = "EVT_90001001_NAME"
+desc = "EVT_90001001_DESC"
+style = 2
+picture = "fatherland\ss1"
+
+action = {
+ai_chance = 90
+name = "Further tension is ahead"
+command = { type = belligerence value = 2 }
+command = { type = 	relation which = GER value = -10 }
+command = { type = 	relation which = AXI value = -10 }
+}
+
+action = {
+ai_chance = 10
+name = "This does not concern us"
+command = { }
+}
+}
+
+### ENG reaction to SS-Staat Germania ###
+
+event = {
+id = 90001002
+country = ENG
+random = no
+
+name = "EVT_90001001_NAME"
+desc = "EVT_90001001_DESC"
+style = 2
+picture = "fatherland\ss1"
+
+action = {
+ai_chance = 90
+name = "Further tension is ahead"
+command = { type = belligerence value = 2 }
+command = { type = 	relation which = GER value = -10 }
+command = { type = 	relation which = AXI value = -10 }
+}
+
+action = {
+ai_chance = 10
+name = "This does not concern us"
+command = { }
+}
+}
+
+### UN reaction to SS-Staat Germania ###
+
+event = {
+id = 90001003
+country = ALS
+random = no
+
+name = "EVT_90001001_NAME"
+desc = "EVT_90001001_DESC"
+style = 2
+picture = "fatherland\ss1"
+
+action = {
+ai_chance = 90
+name = "Further tension is ahead"
+command = { type = belligerence value = 2 }
+command = { type = 	relation which = GER value = -10 }
+command = { type = 	relation which = AXI value = -10 }
+}
+
+action = {
+ai_chance = 10
+name = "This does not concern us"
+command = { }
+}
+}
+
+### Fate of Crimean SS State ###
+
+event = {
+id = 90001004
+country = GER
+random = no
+
+trigger = { flag = SSGermany # Flag set in hilterdied.txt 
+exists = U58
+} 
+
+name = "EVT_90001004_NAME"
+desc = "EVT_90001004_DESC"
+style = 1
+picture = "fatherland\crimea-ss"
+date = { day = 1 month = january year = 1948 }
+offset = 1
+deathdate = { day = 1 month = january year = 2020 }	
+
+action = {
+ai_chance = 100
+name = "Incorporate into SS-Staat Germania"
+command = { type = inherit which = U58 when = 0 value = 1 }
+command = { type = dissent value = -2 }
+}
+
+action = {
+ai_chance = 0
+name = "Not now"
+command = { }
+}
+}
+
+### Fate of SS State Burgundy ###
+
+event = {
+id = 90001005
+country = GER
+random = no
+
+trigger = { flag = SSGermany # Flag set in hilterdied.txt 
+exists = U52 # SS-Burgundy
+} 
+
+name = "EVT_90001005_NAME"
+desc = "EVT_90001005_DESC"
+style = 5
+picture = "fatherland\burgundy-ss"
+date = { day = 1 month = january year = 1948 }
+offset = 1
+deathdate = { day = 1 month = january year = 2020 }	
+
+action = {
+ai_chance = 100
+name = "Incorporate into SS-Staat Germania"
+command = { type = inherit which = U52 when = 0 value = 1 }
+command = { type = dissent value = -2 }
+}
+
+action = {
+ai_chance = 0
+name = "Not now"
+command = { }
+}
+}
+
+### Waffen-SS transition into the Army ###
+
+event = {
+id = 90001006
+country = GER
+random = no
+
+trigger = { 
+flag = SSGermany # Flag set in hilterdied.txt 
+event = { id = 90001000 days = 90  } # At least 3 months passed since SS seized power
+} 
+
+name = "EVT_90001006_NAME"
+desc = "EVT_90001006_DESC"
+style = 5
+picture = "fatherland\ss2"
+date = { day = 1 month = january year = 1948 }
+offset = 5
+deathdate = { day = 1 month = january year = 2020 }	
+
+action = {
+ai_chance = 100
+name = "Decommission Heer units and activate Waffen-SS units"
+command = { type = inherit which = U52 when = 0 value = 1 }
+command = { type = dissent value = -2 }
+}
+
+action = {
+ai_chance = 0
+name = "Not now"
+command = { }
+}
+}
