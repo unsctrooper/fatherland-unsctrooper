@@ -3277,3 +3277,14 @@ capital = 1176 # Blagoveschensk
 country = { GER }
 intrinsic_gov_type = nazi
 } 
+
+U58 = { # SS
+date = { day = 0 month = january year = 1948 } 
+expirydate = { day = 29 month = december year = 2020 } 
+minimum = { 641 } # Sevastopol
+claims = { 639 637 641 638 640 } 
+capital = 641 # Blagoveschensk
+country = { GER }
+intrinsic_gov_type = nazi
+regular_id = GER
+} 

@@ -358,6 +358,8 @@ command = { type = chiefofstaff which = 230 } # Karl Friedrich Otto Wolff
 command = { type = chiefofarmy which = 194 } # Paul Hausser
 command = { type = chiefofnavy which = 164 } #Alfred Saalwächter
 command = { type = chiefofair which = 199 } # Hans-Jürgen Stumpff
+command = { type = name where = -1 which = "SS-Staat Germania" }
+command = { type = flag_ext where = -1 which = "_ss" }
 command = { type = sleepevent which = 90000511 }
 command = { type = sleepevent which = 90000512 }
 command = { type = sleepevent which = 90000516 }
@@ -400,6 +402,31 @@ command = { type = event which = 90000507 where = GER when = 3 }
 command = { type = event which = 90000508 where = GER when = 4 }
 command = { type = event which = 90000509 where = GER when = 5 }
 command = { type = event which = 90000510 where = GER when = 6 }
+}
+action_c = {
+trigger = { NOT = { flag = GoringGoebbels } }
+name = 90000506D # SS takes leadership
+ai_chance = 20
+command = { type = dissent value = 7 }
+command = { type = headofstate which = 276 } # Heinrich Himmler
+command = { type = headofgovernment which = 277 } # Heinrich Himmler
+command = { type = foreignminister which = 37 } # Alfred Rosenberg
+command = { type = armamentminister which = 60 } # Walther Darre
+command = { type = ministerofsecurity which = 206 } # Reinhard Heydrich
+command = { type = chiefofstaff which = 230 } # Karl Friedrich Otto Wolff
+command = { type = chiefofarmy which = 194 } # Paul Hausser
+command = { type = chiefofnavy which = 164 } #Alfred Saalwächter
+command = { type = chiefofair which = 199 } # Hans-Jürgen Stumpff
+command = { type = name where = -1 which = "SS-Staat Germania" }
+command = { type = flag_ext where = -1 which = "_ss" }
+command = { type = sleepevent which = 90000511 }
+command = { type = sleepevent which = 90000512 }
+command = { type = sleepevent which = 90000516 }
+command = { type = sleepevent which = 90000517 }
+command = { type = setflag which = SSGermany } 
+command = { type = clrflag which = LegGermany } 
+command = { type = clrflag which = NaziGermany } 
+command = { type = clrflag which = MilGermany } 
 }
 }
 # 90000507 # GER # The End of Bormann
@@ -858,6 +885,8 @@ command = { type = chiefofstaff which = 230 }		# Karl Friedrich Otto Wolff
 command = { type = chiefofarmy which = 194 }		# Paul Hausser
 command = { type = chiefofnavy which = 161 }		# Karl Dönitz
 command = { type = chiefofair which = 197 }		# Otto Dessloch
+command = { type = name where = -1 which = "SS-Staat Germania" }
+command = { type = flag_ext where = -1 which = "_ss" }
 command = { type = setflag which = SSGermany } 
 command = { type = clrflag which = LegGermany } 
 command = { type = clrflag which = NaziGermany } 
