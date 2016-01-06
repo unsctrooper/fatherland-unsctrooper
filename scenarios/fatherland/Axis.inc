@@ -288,7 +288,7 @@ landunit = {
        name     = "Ungarische Expeditionsstreitkräfte" 
        type     = motorized
        model    = 3
-       strength = 50 
+       strength = 30 
 	   max_strength = 50
       }
 	division = {
@@ -296,7 +296,15 @@ landunit = {
        name     = "Rumänische Expeditionsstreitkräfte" 
        type     = motorized
        model    = 3
-       strength = 50 
+       strength = 30 
+	   max_strength = 50
+      }
+	division = {
+   	id = { type = 17345  id = 45 }
+       name     = "Franzosische Expeditionsstreitkräfte" 
+       type     = motorized
+       model    = 3
+       strength = 30 
 	   max_strength = 50
       }
       } 

@@ -1,31 +1,31 @@
 ### SS-State Germania ###
-# Replacement of Wehrmacht with Waffen-SS (bonus morale)
 # Introduction of Waffen-SS as Axis Troops
-# SS Fallschirmjaeger divisions: "Himmler"
 # Himmler's Germanic Church
 # Annexation RKs - creation of Greater Germanic Reich
 
-# AI events in separate file: mass troops on Soviet border, buildup of motorized SS divisions
+# AI events in separate file: mass troops on Soviet border, buildup of motorized SS divisions, nuking Soviet rump
 
 # 90001000 # SS-Staat Germania proclaimed
-# 90001001 # USA reaction to SS-Staat Germania
-# 90001002 # ENG reaction to SS-Staat Germania
-# 90001003 # ALS reaction to SS-Staat Germania
+# 90001001 # USA / Germany becomes the SS-State Germania
+# 90001002 # ENG / Germany becomes the SS-State Germania
+# 90001003 # ALS / Germany becomes the SS-State Germania
 # 90001004 # Fate of the Crimean SS State
 # 90001005 # Fate of the SS State Burgundy
 # 90001006 # Waffen-SS transition into the Army
+# 90001007 # Waffen-SS rises above the Army
+# 90001008 # 500. SS-Fallschirmjaeger Div. "Himmler"
 
 ### SS-Staat Germania proclaimed ###
 
 event = {
-id = 90001000
+id = 91000000
 country = GER
 random = no
 
 #trigger = { flag = SSGermany } # Flag set in hilterdied.txt 
 
-name = "EVT_90001000_NAME"
-desc = "EVT_90001000_DESC"
+name = "EVT_91000000_NAME"
+desc = "EVT_91000000_DESC"
 style = 2
 picture = "fatherland\ss1"
 #date = { day = 1 month = january year = 1948 }
@@ -47,21 +47,22 @@ command = { type = 	relation which = ENG value = -10 }
 command = { type = 	relation which = CAN value = -10 }
 command = { type = 	relation which = U01 value = -10 }
 command = { type = 	relation which = KOR value = -10 }
-command = { type = trigger which = 90001001 } # USA reaction
-command = { type = trigger which = 90001002 } # ENG reaction
-command = { type = trigger which = 90001003 } # UN reaction
+command = { type = trigger which = 90001101 } # USA reaction
+command = { type = trigger which = 90001102 } # ENG reaction
+command = { type = trigger which = 90001103 } # UN reaction
+command = { type = event which = 91000006 where = -1 when = 20 }
 }
 }
 
 ### USA reaction to SS-Staat Germania ###
 
 event = {
-id = 90001001
+id = 91000001
 country = USA
 random = no
 
-name = "EVT_90001001_NAME"
-desc = "EVT_90001001_DESC"
+name = "EVT_91000001_NAME"
+desc = "EVT_91000001_DESC"
 style = 2
 picture = "fatherland\ss1"
 
@@ -83,12 +84,12 @@ command = { }
 ### ENG reaction to SS-Staat Germania ###
 
 event = {
-id = 90001002
+id = 91000002
 country = ENG
 random = no
 
-name = "EVT_90001001_NAME"
-desc = "EVT_90001001_DESC"
+name = "EVT_91000001_NAME"
+desc = "EVT_91000001_DESC"
 style = 2
 picture = "fatherland\ss1"
 
@@ -110,12 +111,12 @@ command = { }
 ### UN reaction to SS-Staat Germania ###
 
 event = {
-id = 90001003
+id = 91000003
 country = ALS
 random = no
 
-name = "EVT_90001001_NAME"
-desc = "EVT_90001001_DESC"
+name = "EVT_91000001_NAME"
+desc = "EVT_91000001_DESC"
 style = 2
 picture = "fatherland\ss1"
 
@@ -137,7 +138,7 @@ command = { }
 ### Fate of Crimean SS State ###
 
 event = {
-id = 90001004
+id = 91000004
 country = GER
 random = no
 
@@ -145,8 +146,8 @@ trigger = { flag = SSGermany # Flag set in hilterdied.txt
 exists = U58
 } 
 
-name = "EVT_90001004_NAME"
-desc = "EVT_90001004_DESC"
+name = "EVT_91000004_NAME"
+desc = "EVT_91000004_DESC"
 style = 1
 picture = "fatherland\crimea-ss"
 date = { day = 1 month = january year = 1948 }
@@ -170,7 +171,7 @@ command = { }
 ### Fate of SS State Burgundy ###
 
 event = {
-id = 90001005
+id = 91000005
 country = GER
 random = no
 
@@ -178,9 +179,9 @@ trigger = { flag = SSGermany # Flag set in hilterdied.txt
 exists = U52 # SS-Burgundy
 } 
 
-name = "EVT_90001005_NAME"
-desc = "EVT_90001005_DESC"
-style = 5
+name = "EVT_91000005_NAME"
+desc = "EVT_91000005_DESC"
+style = 1
 picture = "fatherland\burgundy-ss"
 date = { day = 1 month = january year = 1948 }
 offset = 1
@@ -203,28 +204,112 @@ command = { }
 ### Waffen-SS transition into the Army ###
 
 event = {
-id = 90001006
+id = 91000006
+country = GER
+random = no
+
+name = "EVT_91000006_NAME"
+desc = "EVT_91000006_DESC"
+style = 1
+picture = "fatherland\ss2"
+
+action = {
+ai_chance = 100
+name = "Begin decommissioning Heer units"
+command = { type = setflag which = waffenss }
+command = { type = dissent value = 4 }
+}
+
+action = {
+ai_chance = 0
+name = "Not now"
+command = { }
+}
+}
+
+### The Waffen-SS rises above the Army ###
+
+event = {
+id = 91000007
 country = GER
 random = no
 
 trigger = { 
-flag = SSGermany # Flag set in hilterdied.txt 
-event = { id = 90001000 days = 90  } # At least 3 months passed since SS seized power
+flag = waffenss
 } 
 
-name = "EVT_90001006_NAME"
-desc = "EVT_90001006_DESC"
-style = 5
+name = "EVT_91000007_NAME"
+desc = "EVT_91000007_DESC"
+style = 1
 picture = "fatherland\ss2"
 date = { day = 1 month = january year = 1948 }
-offset = 5
+offset = 20
+deathdate = { day = 1 month = january year = 2020 }	
+
+action = {
+name = "Decommission Heer units and activate Waffen-SS units"
+command = { type = manpowerpool value = -10 }
+command = { type = metalpool value = -100 }
+command = { type = energypool value = -50 }
+command = { trigger = { division_exists = { type = 14500 id = 67 } } type = remove_division which = 14500 value = 67 } # 4. Panzer Div.
+command = { trigger = { division_exists = { type = 14500 id = 68 } } type = remove_division which = 14500 value = 68 } # 12. Panzer Div.
+command = { trigger = { division_exists = { type = 14500 id = 407 } } type = remove_division which = 14500 value = 407 } # 21. Panzer Div.
+command = { trigger = { division_exists = { type = 14500 id = 218 } } type = remove_division which = 14500 value = 218 } # 1. Panzer Div.
+command = { trigger = { division_exists = { type = 14500 id = 219 } } type = remove_division which = 14500 value = 219 } # 3. Panzer Div.
+command = { trigger = { division_exists = { type = 14500 id = 406 } } type = remove_division which = 14500 value = 406 } # 25. Panzergrenadier-Division
+command = { trigger = { division_exists = { type = 14500 id = 77 } } type = remove_division which = 14500 value = 77 } # 18. Panzergrenadier-Division
+command = { trigger = { division_exists = { type = 14500 id = 296 } } type = remove_division which = 14500 value = 296 } # 29. Panzergrenadier-Division
+command = { trigger = { division_exists = { type = 14500 id = 297 } } type = remove_division which = 14500 value = 297 } # 90. Panzergrenadier-Division
+command = { type = add_division which = "40. SS. Pz.Div. 'Stahlhelm'" value = armor when = 4 where = sp_artillery }
+command = { type = add_division which = "41. SS. Pz.Div. 'Stalingrad'" value = armor when = 4 where = sp_artillery }
+command = { type = add_division which = "42. SS. Pz.Div. 'Hauser'" value = armor when = 4 where = sp_artillery }
+command = { type = add_division which = "43. SS. Pz.Div. 'Endsieg'" value = armor when = 4 }
+command = { type = add_division which = "44. SS. Pz.Div. 'Erstes Reich'" value = armor when = 4 }
+command = { type = add_division which = "45. SS. Pz.Gr.Div. 'Deutschland Erwache'" value = mechanized when = 2 where = sp_artillery }
+command = { type = add_division which = "46. SS. Pz.Gr.Div. 'Ostfront'" value = mechanized when = 2 }
+command = { type = add_division which = "47. SS. Pz.Gr.Div. 'Felix Alfarth'" value = mechanized when = 2 }
+command = { type = add_division which = "48. SS. Pz.Gr.Div. 'Europa'" value = mechanized when = 2 where = tank_destroyer }
+command = { type = morale which = armor value = 10 }
+command = { type = morale which = mechanized value = 10 }
+command = { type = morale which = bergsjaeger value = 10 }
+command = { type = max_organization which = armor value = 5 }
+command = { type = max_organization which = mechanized value = 5 }
+command = { type = max_organization which = bergsjaeger value = 5 }
+command = { type = hard_attack which = armor value = 3 }
+command = { type = hard_attack which = sp_artillery value = 3 }
+command = { type = hard_attack which = tank_destroyer value = 3 }
+command = { type = soft_attack which = mechanized value = 3 }
+command = { type = soft_attack which = bergsjaeger value = 3 }
+}
+}
+
+### Fallschirmjaeger Div. "Himmler" ###
+
+event = {
+id = 91000008
+country = GER
+random = no
+
+trigger = { 
+flag = waffenss
+} 
+
+name = "EVT_91000008_NAME"
+desc = "EVT_91000008_DESC"
+style = 1
+picture = "fatherland\fallschirmjaeger"
+date = { day = 1 month = january year = 1948 }
+offset = 20
 deathdate = { day = 1 month = january year = 2020 }	
 
 action = {
 ai_chance = 100
-name = "Decommission Heer units and activate Waffen-SS units"
-command = { type = inherit which = U52 when = 0 value = 1 }
-command = { type = dissent value = -2 }
+name = "Activate 500. SS Paratroop Div. 'Himmler'"
+command = { type = add_division which = "500. SS-Fallschirm. Div. 'Himmler'" value = paratrooper when = 3 }
+command = { type = manpowerpool value = -10 }
+command = { type = morale which = paratrooper value = 10 }
+command = { type = max_organization which = paratrooper value = 5 }
+command = { type = soft_attack which = paratrooper value = 3 }
 }
 
 action = {

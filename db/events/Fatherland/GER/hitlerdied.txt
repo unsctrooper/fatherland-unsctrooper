@@ -358,7 +358,7 @@ command = { type = chiefofstaff which = 230 } # Karl Friedrich Otto Wolff
 command = { type = chiefofarmy which = 194 } # Paul Hausser
 command = { type = chiefofnavy which = 164 } #Alfred Saalwächter
 command = { type = chiefofair which = 199 } # Hans-Jürgen Stumpff
-command = { type = trigger which = 90001000 } # on ss-germany.txt
+command = { type = trigger which = 91000000 } # on ss-germany.txt
 command = { type = name where = -1 which = "SS-Staat Germania" }
 command = { type = flag_ext where = -1 which = "_ss" }
 command = { type = sleepevent which = 90000511 }
@@ -418,7 +418,7 @@ command = { type = chiefofstaff which = 230 } # Karl Friedrich Otto Wolff
 command = { type = chiefofarmy which = 194 } # Paul Hausser
 command = { type = chiefofnavy which = 164 } #Alfred Saalwächter
 command = { type = chiefofair which = 199 } # Hans-Jürgen Stumpff
-command = { type = trigger which = 90001000 } # on ss-germany.txt
+command = { type = trigger which = 91000000 } # on ss-germany.txt
 command = { type = name where = -1 which = "SS-Staat Germania" }
 command = { type = flag_ext where = -1 which = "_ss" }
 command = { type = sleepevent which = 90000511 }
@@ -887,7 +887,7 @@ command = { type = chiefofstaff which = 230 }		# Karl Friedrich Otto Wolff
 command = { type = chiefofarmy which = 194 }		# Paul Hausser
 command = { type = chiefofnavy which = 161 }		# Karl Dönitz
 command = { type = chiefofair which = 197 }		# Otto Dessloch
-command = { type = trigger which = 90001000 } # on ss-germany.txt
+command = { type = trigger which = 90000000 } # on ss-germany.txt
 command = { type = name where = -1 which = "SS-Staat Germania" }
 command = { type = flag_ext where = -1 which = "_ss" }
 command = { type = setflag which = SSGermany } 
