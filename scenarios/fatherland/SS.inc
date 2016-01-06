@@ -458,32 +458,5 @@ country = {
       locked         = yes
     }
   }
-  landunit = {
-    id       = { type = 14500 id = 11052 }
-    name     = "14. Galizische SS-Freiw.-Div."
-    location = 242
-    division = {
-      id             = { type = 14500 id = 11053 }
-      name           = "14. Galizische SS-Freiw.-Div."
-      type           = motorized
-      model          = 2
-      strength       = 70
-      experience     = 80
-      locked         = yes
-    }
-  }
-  landunit = {
-    id       = { type = 14500 id = 11070 }
-    name     = "SS. Kampfgruppe Nord"
-    location = 641
-    division = {
-      id             = { type = 14500 id = 11071 }
-      name           = "14. Galizische SS-Freiw.-Div."
-      type           = bergsjaeger
-      model          = 12
-      strength       = 70
-      experience     = 80
-      locked         = yes
-    }
-  }
+
 }

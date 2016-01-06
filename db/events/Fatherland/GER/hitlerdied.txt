@@ -887,7 +887,7 @@ command = { type = chiefofstaff which = 230 }		# Karl Friedrich Otto Wolff
 command = { type = chiefofarmy which = 194 }		# Paul Hausser
 command = { type = chiefofnavy which = 161 }		# Karl Dönitz
 command = { type = chiefofair which = 197 }		# Otto Dessloch
-command = { type = trigger which = 90000000 } # on ss-germany.txt
+command = { type = trigger which = 91000000 } # on ss-germany.txt
 command = { type = name where = -1 which = "SS-Staat Germania" }
 command = { type = flag_ext where = -1 which = "_ss" }
 command = { type = setflag which = SSGermany } 
@@ -1275,6 +1275,7 @@ trigger = {
 				NOT = { control = { province = 641 data = U58 } }
 				NOT = { control = { province = 617 data = U58 } }
 				war = { country = GER country = U58 }
+				NOT = { flag = SSGermany } # SS Germany doesn't exist
 			}
 			NOT = { 
 				exists = U58
