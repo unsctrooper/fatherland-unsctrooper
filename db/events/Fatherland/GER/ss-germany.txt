@@ -1,7 +1,7 @@
 ### SS-State Germania ###
-# Introduction of Waffen-SS as Axis Troops
 # Himmler's Germanic Church
 # Annexation RKs - creation of Greater Germanic Reich
+# SS places Iron Guard, Arrow Cross Party and other Fascist parties in satellite states.
 
 # AI events in separate file: mass troops on Soviet border, buildup of motorized SS divisions, nuking Soviet rump
 
@@ -14,6 +14,8 @@
 # 90001006 # Waffen-SS transition into the Army
 # 90001007 # Waffen-SS rises above the Army
 # 90001008 # 500. SS-Fallschirmjaeger Div. "Himmler"
+# 90001009 # Creation of Axis Waffen-SS
+# 90001010 # Multinational Waffen-SS under Axis Command
 
 ### SS-Staat Germania proclaimed ###
 
@@ -22,15 +24,10 @@ id = 91000000
 country = GER
 random = no
 
-#trigger = { flag = SSGermany } # Flag set in hilterdied.txt 
-
 name = "EVT_91000000_NAME"
 desc = "EVT_91000000_DESC"
 style = 2
 picture = "fatherland\ss1"
-#date = { day = 1 month = january year = 1948 }
-#offset = 1
-#deathdate = { day = 1 month = january year = 2020 }	
 
 action = {
 name = "SS-Staat Germania rises!"
@@ -299,7 +296,7 @@ desc = "EVT_91000008_DESC"
 style = 1
 picture = "fatherland\fallschirmjaeger"
 date = { day = 1 month = january year = 1948 }
-offset = 20
+offset = 15
 deathdate = { day = 1 month = january year = 2020 }	
 
 action = {
@@ -316,5 +313,102 @@ action = {
 ai_chance = 0
 name = "Not now"
 command = { }
+}
+}
+
+### Transfer units to Axis Waffen-SS ###
+
+event = {
+id = 91000009
+country = GER
+random = no
+
+trigger = { 
+flag = waffenss
+exists = AXI
+event = 91000007
+} 
+
+name = "EVT_91000009_NAME"
+desc = "EVT_91000009_DESC"
+style = 1
+picture = "fatherland\ss_divisions"
+date = { day = 1 month = january year = 1948 }
+offset = 5
+deathdate = { day = 1 month = january year = 2020 }	
+
+action = {
+ai_chance = 85
+name = "Transfer multinational units to the Axis Command"
+command = { type = trigger which = 91000010 }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11004 } } type = remove_division which = 14500 value = 11004 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11005 } } type = remove_division which = 14500 value = 11005 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11007 } } type = remove_division which = 14500 value = 11007 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11013 } } type = remove_division which = 14500 value = 11013 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11015 } } type = remove_division which = 14500 value = 11015 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11022 } } type = remove_division which = 14500 value = 11022 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11023 } } type = remove_division which = 14500 value = 11023 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11035 } } type = remove_division which = 14500 value = 11035 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11036 } } type = remove_division which = 14500 value = 11036 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11038 } } type = remove_division which = 14500 value = 11038 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11040 } } type = remove_division which = 14500 value = 11040 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11042 } } type = remove_division which = 14500 value = 11042 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11044 } } type = remove_division which = 14500 value = 11044 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11045 } } type = remove_division which = 14500 value = 11045 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11047 } } type = remove_division which = 14500 value = 11047 } }
+command = { command = { trigger = { division_exists = { type = 14500 id = 11049 } } type = remove_division which = 14500 value = 11049 } }
+}
+
+action = {
+ai_chance = 15
+name = "Not necessary"
+command = { }
+}
+}
+
+### Multinational Waffen-SS under Axis Command ###
+
+event = {
+id = 91000010
+country = AXI
+random = no
+
+name = "EVT_91000010_NAME"
+desc = "EVT_91000010_DESC"
+style = 1
+picture = "fatherland\ss_divisions"
+
+action = {
+name = "Transfer multinational units to the Axis Command"
+command = { type = add_division which = "21. Waffen-SS Geb.Div. 'Skanderbeg'" value = bergsjaeger when = 13 }
+command = { type = add_division which = "21. Albanische SS-Freiw.-Div." value = motorized when = 4 }
+command = { type = add_division which = "13. Waffen-SS Geb.Div. 'Handschar'" value = bergsjaeger when = 13 }
+command = { type = add_division which = "5. SS-Panzer-Div. 'Wiking'" value = armor when = 4 where = heavy_armor }
+command = { type = add_division which = "22. SS-Kav.Div. 'Maria Theresia'" value = cavalry when = 13 }
+command = { type = add_division which = "4. SS-Pz.Gr.Brig. 'Nederland'" value = mechanized when = 2 }
+command = { type = add_division which = "11. SS-Pz.Gr.Freiw.Div. 'Nordland'" value = mechanized when = 2 }
+command = { type = add_division which = "25. Waffen-Gr.Div. d. SS 'Hunyadi'" value = motorized when = 4 }
+command = { type = add_division which = "26. Waffen-Gr.Div. d. SS 'Hungaria'" value = motorized when = 4 }
+command = { type = add_division which = "28. SS-Freiw.-Div. 'Wallonien'" value = motorized when = 4 }
+command = { type = add_division which = "27. SS-Freiw.-Div. 'Langemark'" value = motorized when = 4 }
+command = { type = add_division which = "1. Waffen-SS 'Galizien' Division" value = infantry when = 13 where = armored_car }
+command = { type = add_division which = "15. Lettische SS-Freiw.-Div." value = motorized when = 4 }
+command = { type = add_division which = "19. Lettische SS-Freiw.-Div." value = motorized when = 4 }
+command = { type = add_division which = "20. Estische SS-Freiw.-Div." value = motorized when = 4 }
+command = { type = add_division which = "Georgian Waffen-SS Legion" value = infantry when = 13 }
+command = { type = morale which = armor value = 10 }
+command = { type = morale which = mechanized value = 10 }
+command = { type = morale which = motorized value = 10 }
+command = { type = morale which = infantry value = 10 }
+command = { type = morale which = bergsjaeger value = 10 }
+command = { type = hard_attack which = armor value = 3 }
+command = { type = hard_attack which = sp_artillery value = 3 }
+command = { type = hard_attack which = tank_destroyer value = 3 }
+command = { type = soft_attack which = mechanized value = 3 }
+command = { type = soft_attack which = motorized value = 3 }
+command = { type = soft_attack which = infantry value = 3 }
+command = { type = soft_attack which = bergsjaeger value = 3 }
+command = { type = soft_attack which = armored_car value = 3 }
+command = { type = soft_attack which = heavy_armor value = 3 }
 }
 }
