@@ -1270,13 +1270,13 @@ style = 2
 picture = "Fatherland/Wehrmacht2"
 
 trigger = {
+NOT = { flag = SSGermany } # SS Germany doesn't exist
 		OR = {
 			AND = {
 				NOT = { control = { province = 641 data = U58 } }
 				NOT = { control = { province = 617 data = U58 } }
 				war = { country = GER country = U58 }
-				NOT = { flag = SSGermany } # SS Germany doesn't exist
-			}
+							}
 			NOT = { 
 				exists = U58
 			}
