@@ -5,6 +5,12 @@
 # 8014290 - A Gold opportunity
 # 8014291 - 1st May
 # 8014292 - Anniversary of October's Revolution
+# 8014293 - Remembering the death of V. I. Lenin
+
+# 90000428 - Orenburg uprising
+# 90000429 - Astrakhan uprising
+# 90000436 - Astrakhan uprising, Cossacks intervene - TRA
+# 90000437 - Astrakhan uprising, Cossacks intervene
 
 # ##########################
 # ## Soviet Leadership Crisis
@@ -14,19 +20,6 @@
 # 8014267 - The Great Purges II (Molotov)
 # 8014268 - The Great Purges II (Beria)
 # 8014269 - The Great Purges II (Zhukov)
-
-# ##########################
-# ## Flavours
-# ##########################
-# 8014291 - 1st May of a new decade
-# 8014292 - 35th Anniversary of October's Revolution
-# 90000428 - Orenburg uprising
-# 90000429 - Astrakhan uprising
-# 90000436 - Astrakhan uprising, Cossacks intervene - TRA
-# 90000437 - Astrakhan uprising, Cossacks intervene
-
-
-
 
 
 ##########################
@@ -364,13 +357,6 @@ event = {
 # ##########################
 # ## Flavours
 # ##########################
-# 8014291 - 1st May of a new decade
-# 8014292 - 35th Anniversary of October's Revolution
-# 90000428 - Orenburg uprising
-# 90000429 - Astrakhan uprising
-# 90000436 - Astrakhan uprising, Cossacks intervene - TRA
-# 90000437 - Astrakhan uprising, Cossacks intervene
-
 
 event = {
 	id = 8014291
@@ -408,6 +394,38 @@ event = {
 		command = { type = money value = -100 } 
 		}
 	}
+
+# 8014293 - Remembering the death of V. I. Lenin
+event = {
+id = 8014293
+country = SOV
+style = 2
+persistent = yes
+picture = "leninrem"
+
+trigger = {
+day = 4
+month = 9
+NOT = {
+day = 5
+}
+NOT = {
+month = 10
+}
+}
+
+date = { day = 1 month = january year = 1936 }
+offset = 1
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Remembering the death of V. I. Lenin"
+desc = "Today we remember the death of the greatest socialist revolutionary the world has ever seen, V. I. Lenin. His contribution to the cause will never be forgotten."
+
+action = {
+name = "Lenin is Eternal!"
+command = { type = dissent value = -1 }
+}
+}	
 	
 event = {
 	id = 90000428 # Orenburg uprising

@@ -3,31 +3,41 @@
 # Review Pako
 #####################################
 
-# 350 #Armistice at Compiègne - 1948
-# 351 #Death of Petain - 1948 or 1949 or 1950
+# 350 - Armistice at Compiègne
+# 351 - Death of Petain - 1948 or 1949 or 1950
+# 352 - Chaos in France 1948 or 1949 or 1950 (chain only with flag = UltraVichy)
+# 353 - Intervene in France?  - GER
+# 354 - The Government Falls!
+# 355 - Case Anton (354C) - GER
+# 356 - We have defeated France - Again! - GER
+# 313 - It is done! Encore une fois!
+# 363 - An unexpected flight
+# 364 - Approachment with Free France
+# 367 - United States meddles in France - GER
+# 368 - German tries to impose a blockade - USA
+# 369 - United States ignores blockade - GER
+# 371 - Germany shot down American planes - USA
+# 372 - What to do with Vichy France - U01
+# 373 - French Resistance launch attacks
+# 374 - Marseilles joins Free France
+# 375 - Massacre in Marseilles - U01
+# 376 - Free French meddles in Vichy France - GER
+# 377 - War in France - USA
+# 378 - Open up to the world 
+# 379 - Neglect the limitations on armor
+# 380 - Conscription
+# 381 - Economic Limitations
+# 382 - Economic Limitations
+# 383 - The Armistice at Compiègne is void
+# 384 - France declares the Armistice at Compiègne void - GER
+# 385 - The French Revenge
 
-# 352 #Chaos in France 1948 or 1949 or 1950 (chain only with flag = UltraVichy)
-	##### 353 GER #Intervene in France? 
-	##### 354 FRA #The Government Falls!
-		########## 355 GER #Case Anton (354C)
-		########## 356 GER #We have defeated France - Again!
-		########## 313 FRA #It is done! Encore une fois!
-		
-# 363 # An unexpected flight
 
-# 364 #Approachment with Free France
-# 367 #United States meddles in France!
-# 368 #German tries to impose a blockade!
-# 369 #United States ignores blockade!
-# 371 #Germany shot down American planes!
-# 372 #What to do with Vichy France
-# 373 #French Resistance launch attacks!
-# 374 #Marseilles joins Free France?	
-# 375 # ?
-# 376 #Free French meddles in Vichy France
-# 377 #War in France!
-		
-# 350 #Armistice at Compiègne - 1948
+
+
+
+
+# 350 - Armistice at Compiègne
 event = {
 	id = 350
 	country = FRA
@@ -37,11 +47,11 @@ event = {
 
 	date = { day = 25 month = january year = 1948 }
 
-	name = 350NAME #Armistice at Compiègne
-	desc = 350DESC
+	name = "Armistice at Compiègne" #Armistice at Compiègne
+	desc = "After the fall of France in 1940, we were forced to sign the humilating Armistice at Compiègne. While it was never meant to be a permanent peace treaty, the armistice is still being forced upon us. It limits our army, and forces us to make concessions in every way imaginable."
 
 	action = {
-		name = "350A" #Damn!
+		name = "We are humiliated"
 		command = { type = peacetime_ic_mod value = -10 } # Puts France IC modifier to 0.5
 		command = { type = trade which = GER where = FRA  supplies = 10 money = 15 when = 1500 value = 1 } 
 		
@@ -56,17 +66,17 @@ event = {
 	}
 }
 
-# 351 #Death of Petain - 1948 or 1949 or 1950
+# 351 - Death of Petain - 1948 or 1949 or 1950
 event = {
 	id = 351
 	random = no
 	save_date = yes
 	country = FRA	
 	style = 2
-	picture = "Petain"
+	picture = "0funeral"
 	
-	name = 351NAME #Petain has died!
-	desc = 351DESC
+	name = "The death of Marshal Petain" #Petain has died!
+	desc = "Marshal Petain, our hero in both World Wars, has died in peace. While the Marshal is universally loved in France, his old age prevented him from either establishing unquestionable power or a clear path for the country. Several factions therefor claim the succesion, some of them seeking to strengthen France's power within the German Order, others striving for return France to her former glory. Pierre Laval, the current Prime Minister and official successor stands again against his rival Admiral Darlan, who's prefered by both the army and the French citizens. Of course, there are also riots in the street."
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 30
@@ -74,7 +84,7 @@ event = {
 	
 	trigger = { 
 		OR = { 
-			random = 3 
+			random = 5 
 			AND = { 
 				random = 10 year = 1949 
 			} 
@@ -83,11 +93,12 @@ event = {
 	}
 	
 	action = {
-			name = "351A" #Admiral Darlan will return France to glory!
+			name = "Admiral Darlan, militar government"
 			ai_chance = 30
 			
 			#command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = 20 }
+
 			#New Government
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
@@ -99,6 +110,7 @@ event = {
 			command = { type = chiefofarmy which = 5136 }
 			command = { type = chiefofnavy which = 5009 }
 			command = { type = chiefofair which = 5196 }		
+			
 			#Sleep Ministers
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
@@ -112,14 +124,16 @@ event = {
 			
 			command = { type = dissent value = 5 }
 			command = { type = setflag which = DarlanVichy } 
+			
 	}
 	
 	action = {
-			name = "351B" #Pierre Laval will continue Petain's policies!
-			ai_chance = 25
+			name = "Pierre Laval and a conservative government" 
+			ai_chance = 30
 			
 			#command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = 20 }
+			
 			#New Government
 			command = { type = headofstate which = 5393 }
 			command = { type = headofgovernment which = 5197 }
@@ -131,6 +145,7 @@ event = {
 			command = { type = chiefofarmy which = 5221 }
 			command = { type = chiefofnavy which = 5009 }
 			command = { type = chiefofair which = 5196 }	
+			
 			#Sleep Ministers
 			command = { type = sleepminister which = 5188 }
 			command = { type = sleepminister which = 5237 }
@@ -144,14 +159,14 @@ event = {
 			
 			command = { type = dissent value = 10 }
 			command = { type = setflag which = LavalVichy } 
-
 	}
 	
 	action = {
-			name = "351C" #Ultra-Collaborationist take over, supported by Germany!
+			name = "Ultra-Collaborationist take over, supported by Germany" 
 			ai_chance = 25
 			#command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = 200 }
+			
 			#New Government
 			command = { type = headofstate which = 5395 }
 			command = { type = headofgovernment which = 5404 }
@@ -184,11 +199,12 @@ event = {
 	}
 	
 	action = {
-			name = "351D" #The people riot and establish a true civil government!
-			ai_chance = 20
+			name = "Henri Rol-Tanguy and an independent civil government"
+			ai_chance = 15
 			
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = -200 }
+			
 			#New Government			
 			command = { type = headofstate which = 5396 }
 			command = { type = headofgovernment which = 5284 }
@@ -206,12 +222,13 @@ event = {
 			
 			command = { type = set_domestic which = democratic value = 7 }
 		    command = { type = set_domestic which = political_left value = 8 }
-			command = { type = dissent value = 3 }
+			
+			command = { type = dissent value = -3 }
 			command = { type = setflag which = CivilVichy } 
 	}
 }
 
-# 352 #Chaos in France 1948 or 1949 or 1950
+# 352 - Chaos in France 1948 or 1949 or 1950 (chain only with flag = UltraVichy)
 event = {
 	id = 352
 	random = no
@@ -219,8 +236,8 @@ event = {
 	style = 2
 	picture = "ProtestAlexanderetta"
 	
-	name = "352NAME" #Chaos in France
-    desc = "352DESC"
+	name = "Chaos in France" #Chaos in France
+    desc = "The very fact that France is now being controlled by Pro-German forces has not gone unnoticed by the French citizens. Over the last few weeks, riots have been emerging all over the country and the French resistance is stronger than ever before. We have to act"
 	
 	date = { day = 1 month = january year = 1948 }
 	offset = 14
@@ -231,22 +248,20 @@ event = {
 	}
 
 	action = {
-			name = "352A" #Request immediate German intervention!
+			name = "Request immediate Axis intervention"
 			ai_chance = 60
 			command = { type = dissent value = 30 }
 		    command = { type = trigger which = 353 }
 	}
 	
 	action = {
-			name = "352B" #We will put down the protests ourself!
+			name = "We will put down the protests ourself" 
 			ai_chance = 40
-			command = { type = dissent value = 10 }
+			command = { type = dissent value = 15 }
 	}
 }
 
-##############################
-### Intervene in France?	   ###
-##############################
+# 353 - Intervene in France?  - GER
 event = {
 	id = 353
 	random = no
@@ -254,27 +269,31 @@ event = {
 	style = 2
 	picture = "Reichstag"
 	
-	name = "353NAME" #Intervene in France?
-    desc = "353DESC"
+	name = "Intervene in France" #Intervene in France?
+    desc = "Pro-German factions in the French state have come under heavy pressure from their own citizens. They have requested our support, but it will require a very big effort from us to establish stable control in France, while Germany itself has enough other priorities."
 	
 	action = {
-			name = "353A" #Send in the troops - Establish control!
-			ai_chance = 60
+			name = "Send the Wehrmacht and take the control of Paris" #Send in the troops - Establish control!
+			ai_chance = 70
+			
 			command = { type = end_non_aggression which = FRA where = GER } 
-			command = { type = dissent value = 5 }
+			command = { type = make_puppet which = FRA }
+			
+			command = { type = dissent value = 3 }
 			command = { type = manpowerpool value = -10 }
-			command = { type = supplies value = -1000 } 
-	        command = { type = make_puppet which = FRA }
-		    command = { type = sleepevent which = 354 }
-			command = { type = trigger which = 313 }
+			command = { type = supplies value = -1000 } 	       
+			
+		    command = { type = sleepevent which = 354 } #The Government falls
+			command = { type = trigger which = 313 } 
 	}
 	
 	action = {
-			name = "353B" #We don't have time for this
-			ai_chance = 40
+			name = "Let the French sort out" 
+			ai_chance = 30
 			command = { type = end_non_aggression which = FRA where = GER } 
 	        command = { type = relation which = FRA value = -100 }
 	}
+	
 }
 
 #The Government Falls! 
@@ -295,14 +314,16 @@ event = {
 	offset = 70
 	deathdate = { day = 1 month = december year = 1955 }
 
-	name = "354NAME" #The Government Falls!
-    desc = "354DESC"
+	name = "The Ultra-Collaborationist Government falls"
+    desc = "The Pro-Axis government has been toppled by the French citizens themself! They now have either the power to allow Darlan and the army to return, or establishing a true civilian government."
 	
 	action = {
-			name = "354A" #Admiral Darlan
+			name = "Admiral Darlan will return the France to the glory" #Admiral Darlan
 			ai_chance = 60
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = -50 }
+			
+			command = { type = name where = FRA which = "France" }
 			
 			command = { type = set_domestic which = democratic value = 4 }
 		    command = { type = set_domestic which = political_left value = 3 }
@@ -310,7 +331,7 @@ event = {
 			command = { type = clrflag which = UltraVichy } 
 			command = { type = setflag which = DarlanVichy } 
 			
-			command = { type = dissent value = -1 }
+			command = { type = dissent value = -5 }
 			
 			command = { type = headofstate which = 5394 }
 			command = { type = headofgovernment which = 5189 }
@@ -323,13 +344,19 @@ event = {
 			command = { type = chiefofnavy which = 5009 }
 			command = { type = chiefofair which = 5196 }		
 			
+			command = { type = add_corps which = "1st Paris Army" value = land where = 55 }
+			command = { type = add_division which = "1st Rifle Division" value = infantry when = 10 }
+			command = { type = add_division which = "2nd Rifle Division" value = infantry when = 10 }
+			
 	}
 	
 	action = {
-			name = "354B" #A new French Revolution - A new Republic!
+			name = "Revolution ! A new Frenc Republic is proclaimed" #A new French Revolution - A new Republic!
 			ai_chance = 30
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = relation which = GER value = -150 }
+			
+			command = { type = name where = FRA which = "France Republic" }
 			
 			command = { type = clrflag which = UltraVichy } 
 			command = { type = setflag which = CivilVichy } 
@@ -337,14 +364,24 @@ event = {
 			command = { type = set_domestic which = democratic value = 7 }
 		    command = { type = set_domestic which = political_left value = 8 }
 			
-			command = { type = dissent value = -3 }
+			command = { type = dissent value = -10 }
 			
-			command = { type = headofstate which = 5396 }
+			command = { type = headofstate which = 5396 } #Henri Rol-Tanguy
 			command = { type = headofgovernment which = 5284 }			
+			
+			command = { type = add_corps which = "1st Garcon Army" value = land where = 55 }
+			command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
+			command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
+			command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
+			command = { type = add_division which = "4th Militia Division" value = militia when = 8 }
+			command = { type = add_division which = "5th Militia Division" value = militia when = 8 }
+			command = { type = add_division which = "6th Militia Division" value = militia when = 8 }
+			command = { type = add_division which = "7th Militia Division" value = militia when = 8 }
+
 	}
 	
 	action = {
-			name = "354C" #Germany abuses the chaos to invade France! - Case Anton
+			name = "The Ultra-Collaborationist Government request an immediate Axis intervention" 
 			ai_chance = 10
 			command = { type = trigger which = 355 }	
 	}
@@ -358,17 +395,17 @@ event = {
 	style = 2
 	picture = "Reichstag"
 	
-	name = "355NAME" #Case Anton
-    desc = "355DESC"
+	name = "Case Anton" #Case Anton
+    desc = "The disorder in France has become too big. We need to sweep clean the nation of anti-German sentiments."
 	
 	action = {
-			name = "355A" #We will defeat France - again!
+			name = "We will defeat France, again" #We will defeat France - again!
 			command = { type = end_non_aggression which = FRA where = GER } 
 			command = { type = dissent value = 3 }
 		    command = { type = war which = FRA }	
-            command = { type = peacetime_ic_mod value = -10 }			
 	}
 }
+
 #We have defeated France - Again!
 event = {
 	id = 356
@@ -376,8 +413,8 @@ event = {
 	country = GER	
 	style = 2
 	picture = "Reichstag"
-	name = "356NAME" #We have defeated France - Again!
-    desc = "356DESC"
+	name = "We have defeated France, again" #We have defeated France - Again!
+    desc = "We have taken Paris, and have brought stability trough the Wehrmacht"
 	
     trigger = {
 		war = { country = GER country = FRA }
@@ -390,23 +427,23 @@ event = {
 	}
 	
     date = { day = 1 month = january year = 1948 }
-	offset = 1
+	offset = 3
 	deathdate = { day = 30 month = december year = 1963 }
 	
 	action = {
-			name = "356A" #Put the Pro-German elements in power, with our support
-			ai_chance = 90
+			name = "Put the Pro-German elements in power, with our support" #Put the Pro-German elements in power, with our support
+			ai_chance = 80
 			command = { type = manpowerpool value = -10 }
-			command = { type = supplies value = -5000 } 
+			command = { type = supplies value = -1000 } 
 	        command = { type = make_puppet which = FRA }
-			command = { type = trigger which = 313 }
-            command = { type = peacetime_ic_mod value = 5 }			
+			command = { type = trigger which = 313 } #It's done encore un fois
+            command = { type = peacetime_ic_mod value = 5 } #New economic advantage		
 	}
 		action = {
-			name = "356B" #We will destroy France for once and for all!
-			ai_chance = 10
-			command = { type = dissent value = 5 }
-			
+			name = "Occupy the entire France" #We will destroy France for once and for all!
+			ai_chance = 20
+			command = { type = dissent value = 3 }
+			command = { type = inherit which = FRA value = 0 }
 	}
 }
 
@@ -418,11 +455,12 @@ event = {
 	style = 2
 	picture = "aar_versailles"
 	
-	name = "313NAME" #It is done! Encore une fois!
-    desc = "313DESC"
+	name = "We have been defeated ... encore un fois" 
+    desc = "We have been defeated - again! The Germans demand us to return to our Armistice borders, and have placed our government under strict German control. If France had any chance to revive, it is lost now."
 	
 	action = {
-		name = "313A" #We have no choice
+		name = "We have no choice" #We have no choice
+		
 		command = { type = dissent value = 20 }
 		
 		command = { type = headofstate which = 5395 }
@@ -456,13 +494,10 @@ event = {
 	    command = { type = secederegion which = GER value = "Benelux" when = 1 }
 	    command = { type = secederegion which = GER value = "Germany" when = 1 }
 		
-        command = { trigger = { region = { region = Tunisia country = ITA value = 60 } } type = secederegion which = ITA value = Tunisia when = 1 }	
+        #command = { trigger = { region = { region = Tunisia country = ITA value = 60 } } type = secederegion which = ITA value = Tunisia when = 1 }	
 		command = { type = setflag which = GerVichy } 		
 	}
 }
-#########################
-### Crisis in the Med ###
-#########################
 
 #363 # An unexpected flight
 event = {
@@ -481,8 +516,8 @@ event = {
 		}
 	}
 
-	name = "363NAME" #An unexpected flight
-	desc = "363DESC"
+	name = "An unexpected flight" #An unexpected flight
+	desc = "The countryside of Marseilles was shocked by the sight of a military plane, cleary marked with Free French signs, landing in the fields. The passengers, retired soldiers, declare an end to enimity between the two French states and strive for approachement between the two sides. Those traitors have been welcomed by our own citizens and calls are arising to end this artificial division of France"
 
 	date = { day = 1 month = january year = 1948 }
 	offset = 7
@@ -491,33 +526,61 @@ event = {
 	action = {
 		trigger = { flag = FreeVichy }  
 		ai_chance = 90
-		name = "363A"
+		name = "They are brothers,welcome them"
 		command = { type = dissent value = -5 }
+		
 		command = { type = relation which = GER value = -50 }	
+		command = { type = relation which = ITA value = -50 }	
+		
+		command = { type = relation which = USA value = 50 }	
+		command = { type = relation which = ENG value = 50 }			
 		command = { type = relation which = U01 value = 50 }	
+		
 		command = { type = setflag which = DeGaulleVichy } 
 	}
 	
 	action = {
 		trigger = { flag = FreeVichy }
 		ai_chance = 10
-		name = "363B"
-		command = { type = dissent value = 3 }
+		name = "They are like invaders, arrest them"
+		
+		command = { type = relation which = GER value = 50 }	
+		command = { type = relation which = ITA value = 50 }	
+		
+		command = { type = relation which = USA value = -50 }	
+		command = { type = relation which = ENG value = -50 }			
+		command = { type = relation which = U01 value = -50 }	
+		
+		command = { type = dissent value = 10 }
 	}
 	action = {
 		trigger = { flag = GerVichy }
 		ai_chance = 10
-		name = "363A"
+		name = "They are brothers,welcome them"
 		command = { type = dissent value = -5 }
+		
 		command = { type = relation which = GER value = -50 }	
+		command = { type = relation which = ITA value = -50 }	
+		
+		command = { type = relation which = USA value = 50 }	
+		command = { type = relation which = ENG value = 50 }			
 		command = { type = relation which = U01 value = 50 }	
+		
 		command = { type = setflag which = DeGaulleVichy } 
 	}
 	action = {
 		trigger = { flag = GerVichy }
 		ai_chance = 90
-		name = "363B"
-		command = { type = dissent value = 3 }
+		name = "They are like invaders, arrest them"
+		
+		command = { type = relation which = GER value = 50 }	
+		command = { type = relation which = ITA value = 50 }	
+		
+		command = { type = relation which = USA value = -50 }	
+		command = { type = relation which = ENG value = -50 }			
+		command = { type = relation which = U01 value = -50 }	
+		
+		command = { type = dissent value = 5 }
 	}
 }
 
@@ -539,23 +602,32 @@ id = 364
 	offset = 3
 	deathdate = { day = 1 month = december year = 1964 }
 
-	name = "364NAME"
-    desc = "364DESC"
+	name = "Approachment with Free France"
+    desc = "After last month's 'plane incident', we have the unique opportunity to meet with our enemies and brother, the French leadership under De Gaulle"
 	
 	action = {
-			name = "364A"
+			name = "Invite them over"
 			ai_chance = 90
-			command = { type = relation which = U01 value = 50 }
-            command = { type = relation which = USA value = 50 }
-            command = { type = relation which = ENG value = 50 }				
+		command = { type = relation which = GER value = -50 }	
+		command = { type = relation which = ITA value = -50 }	
+		
+		command = { type = relation which = USA value = 50 }	
+		command = { type = relation which = ENG value = 50 }			
+		command = { type = relation which = U01 value = 50 }			
 			command = { type = dissent value = -3 } 			
 	}
 	
 	action = {
-			name = "364B"
+			name = "Not now"
 			ai_chance = 10
 			command = { type = dissent value = 3 }			
 			command = { type = clrflag which = DeGaulleVichy  }
+		command = { type = relation which = GER value = 50 }	
+		command = { type = relation which = ITA value = 50 }	
+		
+		command = { type = relation which = USA value = -50 }	
+		command = { type = relation which = ENG value = -50 }			
+		command = { type = relation which = U01 value = -50 }				
 
 }
 }
@@ -577,11 +649,11 @@ id = 367
 	offset = 5
 	deathdate = { day = 1 month = december year = 1955 }
 
-	name = "367NAME"
-    desc = "367DESC"
+	name = "United States meddles in France"
+    desc = "We've discovered the French traitors have joined the Marshal Plan! As we speak, American material is flowing in France. If we do not act, we might as well see American troops in France, too"
 	
 	action = {
-			name = "367A"
+			name = "Impose a blockade"
 			ai_chance = 90
 			command = { type = peacetime_ic_mod value = -10 }
 		    command = { type = relation which = USA value = -50 }
@@ -590,9 +662,9 @@ id = 367
 	}
 	
 	action = {
-			name = "367B"
+			name = "Let it happen"
 			ai_chance = 10
-			command = { type = dissent value = 10 }
+			command = { type = dissent value = 5 }
 			command = { type = peacetime_ic_mod value = -10 }
 } 
 }
@@ -605,17 +677,17 @@ id = 368
 	style = 2 
 	picture = "news_paper"             
 
-	name = "368NAME"
-    desc = "368DESC"
+	name = "German tries to impose a blockade"
+    desc = "After Vichy France's participation in our Marshall Plan, the German government has decided to impose a blockade on France. However, Germany capablities of fullfilling such a task are very small"
 	
 	action = {
-			name = "368A"
+			name = "We'll send them trough Spain, for example"
 			ai_chance = 90
 			command = { type = trigger which = 369 }			
 	}
 	
 	action = {
-			name = "368B"
+			name = "We shouldn't anger Germany even more"
 			ai_chance = 10
 			command = { type = dissent value = 3 }
 			command = { type = trigger which = 370 }
@@ -630,17 +702,17 @@ id = 369
 	style = 2 
 	picture = "news_paper"             
 
-	name = "369NAME"
-    desc = "369DESC"
+	name = "United States ignores blockade"
+    desc = "Despite our clear warnings to the United States and even imposing a blockade, American help is still being transported to France. We should give a more physical warning, perhaps."
 	
 	action = {
-			name = "369A"
+			name = "Shoot down a plane or two"
 			ai_chance = 80
 			command = { type = trigger which = 371 }			
 	}
 	
 	action = {
-			name = "369B"
+			name = "Let it happen"
 			ai_chance = 20
 			command = { type = dissent value = 1 }
 } 
@@ -654,17 +726,19 @@ id = 370
 	style = 2 
 	picture = "naval_blockade"             
 
-	name = "370NAME"
-    desc = "370DESC"
+	name = "German Blockade"
+    desc = "Germany has succesfully blockades us, which means we won't be able to receive Marshall help anymore. Besides that very fact, we're restriced from the world market sans our direct neighbours."
 	
 	action = {
-			name = "370A"
+			name = "Damn"
 		    command = { type = dissent value = 5 }
+			
 		    command = { type = construct which = ic where = 55 value = -5 }
             command = { type = peacetime_ic_mod value = -10 }
+			
 		    command = { type = embargo which = FRA where = ENG value = 3 }
 		    command = { type = embargo which = FRA where = USA value = 3 }	
-		    command = { type = embargo which = FRA where = U08 value = 3 }				
+		    command = { type = embargo which = FRA where = U01 value = 3 }				
 	}
 } 
 
@@ -676,18 +750,18 @@ id = 371
 	style = 2 
 	picture = "Wehrmacht"             
 
-	name = "371NAME"
-    desc = "371DESC"
+	name = "Germany shot down American planes"
+    desc = "Germany has shot down several United States airplanes, in response to our refusal to oust Vichy France from the Marshal Plan. It's essentially a declaration of war, but we're not warmongers like they are"
 	
 	action = {
-			name = "371A"
+			name = "Time to back down"
 			ai_chance = 80
 			command = { type = trigger which = 370 }
 			command = { type = dissent value = 5 }		
 	}
 	
 	action = {
-			name = "371B"
+			name = "This means WAR" #WW3
 			ai_chance = 20
 		    command = { type = war which = GER }	
 		    command = { type = alliance which = FRA }
@@ -712,26 +786,26 @@ id = 372
 	offset = 3
 	deathdate = { day = 1 month = december year = 1964 }
 
-	name = "372NAME"
-    desc = "372DESC"
+	name = "What to do with French State"
+    desc = "Events in French State lately have shown we'll never be able to have a peacefull solution to our division. We might want to apply different methods to bring down the French State government"
 	
 	action = {
-			name = "372A"
-			ai_chance = 99
-			command = { type = relation which = FRA value = -10 }
-			command = { type = relation which = GER value = -10 }
+			name = "The French Resistance is strong than ever"
+			ai_chance = 90
+			command = { type = relation which = FRA value = -50 }
+			command = { type = relation which = GER value = -50 }
+			
 			command = { type = manpowerpool value = -10 }
-			command = { type = supplies value = -5000 } 
-			command = { type = dissent value = -3 } 
+			command = { type = supplies value = -1500 } 
+			command = { type = dissent value = -5 } 
 		    command = { type = setflag which = resistance }			
 	}
 	
 	action = {
-			name = "372B"
-			ai_chance = 1
-			command = { type = dissent value = 3 }			
-
-}
+			name = "We can't do anything"
+			ai_chance = 10
+			command = { type = dissent value = 10 }			
+	}
 }
 
 # 373 #French Resistance launch attacks!
@@ -750,8 +824,8 @@ deathdate = { day = 30 month = december year = 1963 }
 	event = { id = 372 days = 30 }  
 	}
 	
-	name = "373DESC"
-	desc = "373DESC"
+	name = "The partisans activity is growing"
+	desc = "A large number of France has taken it to the streets and danger the very existance of our government! If we do not put them down quick enough, we might not weather the storm."
 	style = 2
 	picture = "resistance"
 
@@ -763,19 +837,19 @@ deathdate = { day = 30 month = december year = 1963 }
 	}
 	action = { trigger = { control = { province = 89 data = FRA } }
 		ai_chance = 25
-		name = "373A"
+		name = "Send the Army"
 		command = {  type = revolt which = 89 }
         command = { type = dissent value = 3 }
 	}
 	action = { trigger = { control = { province = 55 data = FRA } }
 		ai_chance = 25
-		name = "373A"
+		name = "Send the Army"
 		command = {  type = revolt which = 55 }
         command = { type = dissent value = 3 }
 	}
 	action = { trigger = { control = { province = 74 data = FRA } }
 		ai_chance = 25
-		name = "373A"
+		name = "Send the Army"
 		command = {  type = revolt which = 74 }
         command = { type = dissent value = 3 }
 	}
@@ -799,12 +873,12 @@ id = 374
 	offset = 7
 	deathdate = { day = 1 month = december year = 1964 }
 
-	name = "374NAME"
-    desc = "374DESC"
+	name = "Revolts in Marseille"
+    desc = "Marseilles is again a hotspot of partisan activity! The citizens of the city have revolted and declare unity with Free France. We can't let this happen"
 	
 	action = {
-			name = "374A"
-			command = { type = manpowerpool value = -1 }
+			name = "Send the Army"
+			command = { type = manpowerpool value = -10 }
 			command = { type = dissent value = 10 } 
 			command = { type = trigger which = 375 }
 		    command = {  type = revolt which = 89 }	
@@ -813,7 +887,7 @@ id = 374
 	}
 }
 
-# 375 # ?
+# 375 # Massacre in Marseilles
 event = {
 id = 375
 	random = no
@@ -821,23 +895,23 @@ id = 375
 	style = 2
 	picture = "news_paper"
 
-	name = "375NAME"
-    desc = "375DESC"
+	name = "Massacre in Marseilles"
+    desc = "The citizens  of Marseilles have revolted against the government, but have been put down by the army. They declared unity with our government, and we might want to intervene when the illegal one is as unstable as it seems"
 	
 	action = {
-			name = "375A"
-			ai_chance = 80
-			command = { type = dissent value = 5 } 		
+			name = "Let's not start another World War"
+			ai_chance = 60
+			command = { type = dissent value = 10 } 		
 	}
 	
 	action = {
-			name = "375B"
-			ai_chance = 20
+			name = "We'll bring those traitors down"
+			ai_chance = 40
 			command = { type = dissent value = -3 } 
-			command = {	type = leave_alliance when = 1 } #leave eventaully old alliance wars }
+			command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
 		    command = { type = war which = FRA }
 			command = { type = trigger which = 376 }
-}
+	}
 }
 
 # 376 #Free French meddles in Vichy France
@@ -848,24 +922,22 @@ id = 376
 	style = 2
 	picture = "news_paper"
 
-	name = "376NAME"
-    desc = "376DESC"
+	name = "Free French meddles in Marseilles"
+    desc = "Reports are coming in from continental France; the population of Marseilles has risen up and declared unity with Free France. We can absolutely not allow an allied foothold in mainland Europe"
 	
 	action = {
-			name = "376A"
+			name = "This means WAR!"
 			ai_chance = 50
 		    command = { type = alliance which = FRA }	
 			command = { type = trigger which = 377 }
 	}
 	
 	action = {
-			name = "376B"
+			name = "Let's them sort out"
 			ai_chance = 50
-			command = { type = peacetime_ic_mod value = -10 }
-			command = { type = relation which = FRA value = -10 }
+			command = { type = relation which = FRA value = -50 }
 			command = { type = trigger which = 377 }
-
-}
+	}
 }
 
 # 377 #War in France!
@@ -876,17 +948,17 @@ id = 377
 	style = 2
 	picture = "news_paper"
 
-	name = "377NAME"
-    desc = "377DESC"
+	name = "War in France"
+    desc = "After the population of Marseilles declared unity with the French government in Algiers a conflict has broken out between the two countries. Free France is nominally our ally, so we may act as we please"
 	
 	action = {
-			name = "377A"
+			name = "This means WAR!"
 			ai_chance = 50
 		    command = { type = alliance which = U01 }	
 	}
 	
 	action = {
-			name = "377B"
+			name = "Let's them sort out"
 			ai_chance = 50
 			command = { type = relation which = U01 value = -100 }
     }	
@@ -902,19 +974,19 @@ event = {
 	country = FRA
 
 	decision = {
-    flag = FreeVichy
+		flag = FreeVichy
 	}
 
 	decision_trigger = {
-    flag = FreeVichy 
+		flag = FreeVichy 
 	}
 
 	trigger = {
-    flag = FreeVichy
+		flag = FreeVichy
 	}
    
-	name = "378NAME"
-	desc = "378DESC" 
+	name = "Open up to the world"
+	desc = "Vichy France has had some minor recognation in the initial years of the war. After the end of the war, it became completely isolated and was forced to participate in the plans Germany had for Europe. As a first step in our rearming, we should establish contacts with the Allies again and open up." 
 	style = 2
 	picture = "Rhineland"
 	decision_picture = "decision_Rhineland"
@@ -924,15 +996,18 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "378A"
-		command = { type = relation which = GER value = -30 }
+		name = "We come in peace"
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
 		command = { type = relation which = ENG value = 50 }
 		command = { type = relation which = USA value = 50 }
-		command = { type = dissent value = -2 }
+		command = { type = relation which = U01 value = 50 }		
+		command = { type = dissent value = -3 }
 		command = { type = money value = -100 }
 		command = { type = peacetime_ic_mod value = 10 }
 	}
-	}
+}
+	
 event = {
 	id = 379
 	random = no
@@ -951,8 +1026,8 @@ event = {
 	event = { id = 378 days = 30 } 
 	}
    
-	name = "379NAME"
-	desc = "379DESC" 
+	name = "Neglect the limitations on armor"
+	desc = "Germany won the Second World War by sweeping it's tanks across Europe. After we were defeated back in 1940, Germany made sure we would never be able to posses those war winning vehicles. It's about time we neglect those limitations." 
 	style = 2
 	picture = "Rhineland"
 	decision_picture = "decision_Rhineland"
@@ -991,8 +1066,8 @@ event = {
 	event = { id = 379 days = 30 } 
 	}
    
-	name = "380NAME"
-	desc = "380DESC" 
+	name = "Conscription"
+	desc = "After the war conscription in France was abolished and declared illegal by the German oppressors. Now that we're getting stronger each and every day, we might as well conscript our population again. Germany will surely not act too harsh" 
 	style = 2
 	picture = "Rhineland"
 	decision_picture = "decision_Rhineland"
@@ -1002,7 +1077,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "380A"
+		name = "Manpower"
 		command = { type = relation which = GER value = -30 }
 		command = { type = dissent value = -2 }
 		command = { type = peacetime_ic_mod value = 10 }
@@ -1017,15 +1092,16 @@ event = {
 		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 4.5 when = 1 }		
 		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 5 when = 1 }
 		command = { trigger = { NOT = { local_flag = MOB2 } } type = local_setflag which = MOB2 }
+		
 		command = { type = local_setflag which = MOB3 }
 		command = { type = local_setflag which = MOB4 }		
 		command = { type = local_setflag which = MOB5 }		
 		command = { type = local_setflag which = MOB6 }
 		
-		command = { type = add_corps which = "1st Paris Army" value = land where = 906 }
+		command = { type = add_corps which = "1st Paris Army" value = land where = 55 }
 		command = { type = add_division which = "1st Rifle Division" value = infantry when = 10 }
 		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 10 }
-		command = { type = add_corps which = "1st Garcon Army" value = land where = 901 }
+		command = { type = add_corps which = "1st Garcon Army" value = land where = 55 }
 		command = { type = add_division which = "1st Militia Division" value = militia when = 8 }
 		command = { type = add_division which = "2nd Militia Division" value = militia when = 8 }
 		command = { type = add_division which = "3rd Militia Division" value = militia when = 8 }
@@ -1036,6 +1112,7 @@ event = {
 		
 	}
 }
+
 event = {
 	id = 381
 	random = no
@@ -1054,8 +1131,8 @@ event = {
 	event = { id = 380 days = 30 } 
 	}
    
-	name = "381NAME"
-	desc = "381DESC" 
+	name = "Economic Limitations"
+	desc = "The most crippling of the punishments Germany gave us, were the economic ones. We were robbed of both factories and workforces and were treated as a mere tributary state." 
 	style = 2
 	picture = "Rhineland"
 	decision_picture = "decision_Rhineland"
@@ -1065,7 +1142,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "381A"
+		name = "Bon voyage"
 		command = { type = relation which = GER value = -30 }
 		command = { type = dissent value = -2 }
 		command = { type = peacetime_ic_mod value = 10 }
@@ -1090,8 +1167,8 @@ event = {
 	event = { id = 381 days = 30 } 
 	}
    
-	name = "382NAME"
-	desc = "382DESC" 
+	name = "Economic Limitations"
+	desc = "The most crippling of the punishments Germany gave us, were the economic ones. We were robbed of both factories and workforces and were treated as a mere tributary state" 
 	style = 2
 	picture = "Rhineland"
 	decision_picture = "decision_Rhineland"
@@ -1101,7 +1178,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "382A"
+		name = "French resources for France"
 		command = { type = dissent value = -2 }
 		command = { type = money value = 500 }
 		command = { type = peacetime_ic_mod value = 10 }
@@ -1114,13 +1191,13 @@ event = {
 	random = no
 	country = FRA
 
-	name = "383NAME"
-	desc = "383DESC" 
+	name = "The Armistice at Compiègne is void"
+	desc = "We have succesfully thrown away the terms imposed upon us by the Armistice at Compiègne, therefor we can declare it nullified. Germany might act, but we're already too strong to be defeated a third time, right?" 
 	style = 2
 	picture = "Rhineland"
 
 	action = {
-		name = "383A"
+		name = "W la France!"
 		command = { type = trigger which = 384 }
 		command = { type = dissent value = -10 }
 		command = { type = relation which = GER value = -100 }
@@ -1134,19 +1211,19 @@ event = {
 	random = no
 	country = GER
 
-	name = "384NAME"
-	desc = "384DESC" 
+	name = "France declares the Armistice at Compiègne void"
+	desc = "Over the past few months, France has neglected most of the terms imposed by us after the Fall of France in the armistice at Compiègne. Now, they have officially declared the Armistice to be nullified. As our economy partly depends on the economic concessions done by France, we might want o act." 
 	style = 2
 	picture = "Rhineland"
 
 	action = {
-		name = "384A"
+		name = "We have other priorities"
 		ai_chance = 70
 		command = { type = peacetime_ic_mod value = -10 }
 		command = { type = dissent value = 5 }
 	}
 		action = {
-		name = "384B"
+		name = "This means WAR!"
 		ai_chance = 30
 	    command = { type = war which = FRA }
 		command = { type = peacetime_ic_mod value = -10 }
@@ -1172,8 +1249,8 @@ event = {
 		atwar = GER
 	}
    
-	name = "385NAME"
-	desc = "385DESC" 
+	name = "The French Revenge"
+	desc = "Ever since the humilating defeat in 1940, we are preparing for that one day on which we can finally strike back and take revenge on the German warmongers for their behaviour, ever since the existance of a German state.;Ever since the humilating defeat in 1940, we are preparing for that one day on which we can finally strike back and take revenge on the German warmongers for their behaviour, ever since the existance of a German state" 
 	style = 2
 	picture = "Rhineland"
 	decision_picture = "decision_Rhineland"
@@ -1183,7 +1260,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1963 }
 
 	action = {
-		name = "385A"
+		name = "For our fathers!"
 		command = { type = end_non_aggression which = FRA where = GER }
 	    command = { type = war which = GER }		
 	}

@@ -1,12 +1,17 @@
 ########################################
 # Free France (U01)
 ########################################
-# 307 # U01 # The Second World War
-# 308 # U01 # De Gaulle's Appeal
-# 309 # U01 # Move the Capital - Fatherland - TODO
-# 310 # U01 # The Home of the French Nation
-# 311 # U01 # A Tunisian Province?
-# 317 # U01 # The Morocco Protectorate
+# 307 - The Second World War
+# 308 - The 18 June Appeal
+# 309 - 
+# 310 - The department of Algeria
+# 311 - The department of Tunisia
+# 312 - 
+# 313 - 
+# 314 - 
+# 315 - 
+# 316 - 
+# 317 - The department of Morocco
 # 318 # MOR # A New Statut
 # 319 # GER # Mohammed V seeks asylum
 # 320 # U01 # The Moroccan Uprising
@@ -21,6 +26,9 @@
 # 329-331 # U01 # Free France's starting events (player only)
 ########################################
 
+
+
+
 # 307 # U01 # The Second World War
 event = {
 	id = 307
@@ -30,7 +38,7 @@ event = {
 	name = "The Second World War"
 	desc = "Desc: TODO"
 	style = 1
-	picture = "fall_of_petain"
+	picture = "petain"
 
 	date = { day = 18 month = january year = 1948 } 
 	offset = 5
@@ -66,14 +74,14 @@ event = {
 	offset = 1
 	deathdate = { day = 29 month = december year = 1963 }
 
-	name = "308NAME"
-	desc = "308DESC"
+	name = "The 18 June Appeal"
+	desc = "June 18, 1940, General De Gaulle launched his appeal to the Resistance from London. Since then, each year volunteers rally to Free France"
 
 	action = {
-		name = "308A"
+		name = "Vive la France Libre !"
 		command = { type = dissent value = -1 }
 		command = { type = add_division value = militia }
-		command = { type = manpowerpool value = 30 }
+		command = { type = manpowerpool value = 10 }
 	}
 }
 
@@ -94,8 +102,8 @@ event = {
 		random = 70
 	}
 
-		name = "The Home of the French Nation"
-		desc = "After the Fall of mainland France in 1940, the Free French governement finally regain a part of de jure metropolitan territories: the departements of Algeria. Howewer, the locals indigenous, if not hostiles, are not that happy by the Free French presence. Perhaps with a small improvement of their living conditions and the help of the pied-noir settlers we could integrate them in the National Community?"
+		name = "The department of Algeria"
+		desc = "After the Fall of mainland France in 1940, the Free French governement has regained a part of de jure metropolitan territories: the departements of Algeria. Howewer, the locals indigenous, if not hostiles, are not that happy by the Free French presence. Perhaps with a small improvement of their living conditions and the help of the pied-noir settlers we could integrate them in the National Community?"
 
 		date = { day = 15 month = september year = 1948 }
 		offset = 25
@@ -104,7 +112,9 @@ event = {
 		action = {
 			ai_chance = 65
 			name = "Integrate the Algerian at all costs, we are all Frenchs!"
+			
 			command = { type = set_domestic which = freedom value = 8  }
+			
 			command = { type = addcore   which = 727  }
 			command = { type = addcore   which = 728  }
 			command = { type = addcore   which = 729  }
@@ -116,22 +126,25 @@ event = {
 			command = { type = addcore   which = 735  }
 			command = { type = addcore   which = 736  }
 			command = { type = addcore   which = 743  }
+			
 			command = { type = wakeminister which = 820091 }
 			command = { type = wakeminister which = 820092 }
 			command = { type = wakeleader which = 820097 }
+			
 			command = { type = setflag which = Assimilation1 }
+			
 			command = { type = money value = -1000  }
 		}
 
 		action = {
 			ai_chance = 35
-			name = "France is so close... I won't spend any money on Algeria."
-				command = { type = dissent value = 1 }
-				command = { type = money value = 100  }
+			name = "France is so close ... I won't spend any money on Algeria."
+				command = { type = dissent value = 3 }
+				command = { type = money value = 1000  }
 		}
 }
 
-# 311 # U01 # A Tunisian Province?
+# 311 - The department of Tunisia
 event = {
 	id = 311
 	random = no
@@ -145,44 +158,47 @@ event = {
 		flag = Assimilation1
 	}
 
-	name = "A new Tunisian Province?"
-	desc = "The Beylicat of Tunis is less and less popular, thanks to a better treatment of the locals indigenous by the French authorities. With the influx of the refugees from Vichy 'France' established there and the support of the old 'pieds-noirs' community, we could very well abolish the protectorate and integrate Tunisia in de jure France. Howewer, it would mean give to the locals Arabs and ethnics frenchs equals rights, including voting right, to placate them."
+	name = "The department of Tunisia"
+	desc = "The Beylicat of Tunis is less and less popular, thanks to a better treatment of the locals indigenous by the French authorities. With the influx of the refugees from French State established there and the support of the old 'pieds-noirs' community, we could very well abolish the protectorate and integrate Tunisia in de jure France. Howewer, it would mean give to the locals Arabs and ethnics frenchs equals rights, including voting right, to placate them."
 	
-	date = { day = 1 month = september year = 1950 }
+	date = { day = 1 month = may year = 1949 }
 	offset = 90
 	deathdate = { day = 1 month = december year = 1960 }
 
 	action = {
 		ai_chance = 65
 		name = "Integrate the Tunisian at all costs, we are all Frenchs!"
-                command = { type = addcore   which = 740  }
-                command = { type = addcore   which = 741  }
-                command = { type = addcore   which = 742  }
-                command = { type = addcore   which = 744  }
-                command = { type = addcore   which = 745  }
-                command = { type = addcore   which = 746  }
-                command = { type = addcore   which = 747  }
-                command = { type = addcore   which = 748  }
-                command = { type = addcore   which = 749  }
-				command = { type = wakeminister which = 820093 }
-				command = { type = dissent value = 5 }
-				command = { type = money value = -2000  }
-				command = { type = clrflag which = Assimilation1 }
-				command = { type = setflag which = Assimilation1_1 }
+		
+		command = { type = addcore   which = 740  }
+		command = { type = addcore   which = 741  }
+		command = { type = addcore   which = 742  }
+		command = { type = addcore   which = 744  }
+		command = { type = addcore   which = 745  }
+		command = { type = addcore   which = 746  }
+		command = { type = addcore   which = 747  }
+		command = { type = addcore   which = 748  }
+		command = { type = addcore   which = 749  }
+		
+		command = { type = wakeminister which = 820093 }
+		command = { type = dissent value = 5 }
+		
+		command = { type = money value = -1000  }
+		command = { type = clrflag which = Assimilation1 }
+		command = { type = setflag which = Assimilation1_1 }
+		
 		}
 
 	action = {
-
 		ai_chance = 35
 			name = "France is so close... I won't spend any money on Tunisia."
-	        command = { type = dissent value = 1 }
-			command = { type = money value = 100  }
+	        command = { type = dissent value = 3 }
+			command = { type = money value = 1000  }
 			command = { type = clrflag which = Assimilation1 }
 			command = { type = setflag which = Assimilation1_2 }
 		}
 }
 
-# 317 # U01 # The Morocco Protectorate
+# 317 - The department of Morocco
 event = {
 	id = 317
 	random = no
@@ -200,7 +216,7 @@ event = {
     event = 1808		
 	}
 	
-	name = "The Morocco Protectorate"
+	name = "The department of Morocco"
 	desc = "Morocco is a french protectorate and country's soldiers fought vaillantly in both World War in the name of our Republic, but now that we are at peace, the Sultan Mohammed Ben Youssef is joining the nationalists, in a threatening move. The Pasha of Marrakesh, El Glaoui, have an interesting proposition: make him Grand Vizir, replace the current Sultan, and give the protectorate more freedom in its domestic affair, while keeping an important role in the army and control of the kingdom's diplomatics relations."
 	style = 2
 	picture = "news_paper"
@@ -208,7 +224,7 @@ event = {
 
 	trigger = {
 		NOT = { war = { country = U01 country = FRA } }
-    event = 1808	
+		event = 1808	
 	}
 	
 	date = { day = 1 month = january year = 1948 }

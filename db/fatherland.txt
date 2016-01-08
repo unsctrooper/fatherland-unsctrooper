@@ -125,6 +125,7 @@ event = "db\events\fatherland\europe\unitedkingdom.txt"
 event = "db\events\fatherland\europe\vichyfrance.txt"
 event = "db\events\fatherland\europe\belgium.txt"
 event = "db\events\fatherland\europe\finland.txt"
+event = "db\events\fatherland\europe\bulgaria.txt"
 
 #GERMANY
 event = "db\events\fatherland\ger\ost.txt"

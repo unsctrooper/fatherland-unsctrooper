@@ -3,6 +3,11 @@
 # Rev. by Pako
 # Nationalist Spain
 #####################################
+# 189032 - ESPANA, UNA GRANDE Y LIBRE
+# 189033 - Political situation
+# 189034 - The Second World War
+# 189035 - North Africa
+# 189036 - The Economic situation
 # 189057 - Economic reforms first round
 # 189058 - Economic reforms second round
 # 189059 - New occupation law
