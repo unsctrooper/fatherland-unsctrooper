@@ -1726,9 +1726,9 @@ random = no
 country = GER
 
 name = "Anniversary of the Battle of Stalingrad"
-desc = "5 years ago, the Axis armies crushdown the Red Army in the city of Stalin, Stalingrad"
+desc = "5 years ago, the Axis armies crushed down the Red Army in the city of Stalin, Stalingrad"
 style = 2
-picture = "stalingrad"
+picture = "fatherland\stalingrad"
 date = { day = 24 month = february year = 1949 }
 
 action = {
@@ -1747,7 +1747,7 @@ TAG = { ROM HUN ITA CRO SPA RUS } # Armies on the Eastern Front
 name = "Anniversary of the Battle of Stalingrad"
 desc = "5 years ago, the Axis armies crushdown the Red Army in the city of Stalin, Stalingrad"
 style = 2
-picture = "stalingrad"
+picture = "fatherland\stalingrad"
 date = { day = 24 month = february year = 1949 }
 
 action = {

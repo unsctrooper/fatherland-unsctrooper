@@ -51,14 +51,14 @@ CHC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 260848;Head of State;Mao Zedong;1921;1977;1977;ST;Autocratic Charmer;Undying;2334;X
 260849;Head of Government;Mao Zedong;1921;1977;1977;ST;Political Protege;Undying;2334;X
 260850;Minister of Security;Mao Zedong;1921;1958;1958;ST;man of the people;Undying;2334;X
-260851;Chief of Army;Mao Zedong;1921;1958;1958;ST;old general;Undying;2334;X
+260851;Chief of Army;Mao Zedong;1921;1958;1958;ST;Guerilla warfare doctrine;Undying;2334;X
 260852;Minister of Security;Li Lisan;1927;1931;1964;ST;Prince of Terror;Medium;8622;X
 260853;Head of Government;Li Lisan;1928;1931;1964;ST;ambitious union boss;Medium;8622;X
 260854;Chief of Staff;Li Lisan;1929;1931;1964;ST;School of Mass Combat;Medium;8622;X
 260855;Head of Military Intelligence;Zhou Enlai;1919;1976;1976;LWR;Dismal Enigma;Undying;8983;X
 260856;Minister of Security;Zhou Enlai;1919;1976;1976;LWR;Man of the People;Undying;2339;X
 260857;Minister of Armament;Zhou Enlai;1919;1976;1976;LWR;Resource Industrialist;Undying;2339;X
-260858;Head of Government;Zhou Enlai;1919;1976;1976;LWR;Benevolent Gentleman;Undying;2339;X
+260858;Head of Government;Zhou Enlai;1919;1976;1976;LWR;Zhou_Enlai;Undying;2339;X
 260859;Head of State;Zhou Enlai;1919;1976;1976;LWR;Benevolent Gentleman;Undying;2339;X
 260860;Chief of Staff;Zhou Enlai;1919;1976;1976;LWR;school of mass combat;Undying;8983;X
 260861;Foreign Minister;Zhou Enlai;1949;1976;1976;LWR;Great Compromiser;Undying;2339;X

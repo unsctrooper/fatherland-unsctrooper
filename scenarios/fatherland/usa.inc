@@ -378,8 +378,8 @@
 			model = 3
 			id = { type = 30304 id = 9 }
 			name = "75th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -455,8 +455,6 @@
 			model = 3
 			id = { type = 30304 id = 17 }
 			name = "102nd Infantry Division"
-			extra = anti_air
-			brigade_model = 4
 			experience = 15
 		}
 		division = {
@@ -549,8 +547,8 @@
 			model = 3
 			id = { type = 30304 id = 26 }
 			name = "99th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -664,8 +662,8 @@
 			id = { type = 30304 id = 37 }
 			name = "26th Infantry Division"
 			experience = 15
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 		}
 		division = {
 			type = motorized
@@ -699,8 +697,8 @@
 			model = 3
 			id = { type = 30304 id = 41 }
 			name = "1st Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 	}
@@ -772,8 +770,8 @@
 			model = 3
 			id = { type = 30304 id = 48 }
 			name = "63rd Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -811,8 +809,8 @@
 			model = 3
 			id = { type = 30304 id = 52 }
 			name = "42nd Infantry Division"
-			extra = anti_air
-			brigade_model = 4
+			extra = sp_anti_air
+			brigade_model = 1
 			experience = 15
 		}
 		division = {
@@ -829,8 +827,8 @@
 			model = 3
 			id = { type = 30304 id = 54 }
 			name = "86th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -853,8 +851,8 @@
 			id = { type = 30304 id = 56 }
 			name = "44th Infantry Divisions"
 			experience = 15
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 		}
 		division = {
 			type = motorized
@@ -1089,8 +1087,8 @@
 			model = 3
 			id = { type = 30304 id = 78 }
 			name = "96th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -1098,8 +1096,8 @@
 			model = 3
 			id = { type = 30304 id = 79 }
 			name = "7th Infantry Division"
-			extra = anti_air
-			brigade_model = 4
+			extra = sp_anti_air
+			brigade_model = 1
 			experience = 15
 		}
 		division = {
@@ -1130,8 +1128,8 @@
 			model = 3
 			id = { type = 30304 id = 82 }
 			name = "31st Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 	}
@@ -1153,8 +1151,8 @@
 			model = 3
 			id = { type = 30304 id = 84 }
 			name = "41st Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -1162,8 +1160,8 @@
 			model = 3
 			id = { type = 30304 id = 85 }
 			name = "33rd Infantry Division"
-			extra = anti_air
-			brigade_model = 4
+			extra = sp_anti_air
+			brigade_model = 1
 			experience = 15
 		}
 	}
@@ -1185,17 +1183,17 @@
 			model = 3
 			id = { type = 30304 id = 87 }
 			name = "43rd Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
 			type = motorized
 			model = 3
 			id = { type = 30304 id = 88 }
-			name = "Americal Infantry Division"
-			extra = anti_air
-			brigade_model = 4
+			name = "'America' Infantry Division"
+			extra = sp_anti_air
+			brigade_model = 1
 			experience = 15
 		}
 	}
@@ -1208,8 +1206,8 @@
 			model = 3
 			id = { type = 30304 id = 89 }
 			name = "77th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -1217,8 +1215,8 @@
 			model = 3
 			id = { type = 30304 id = 90 }
 			name = "98th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 		division = {
@@ -1247,8 +1245,8 @@
 			model = 3
 			id = { type = 30304 id = 93 }
 			name = "37th Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 			experience = 15
 		}
 	}
@@ -1326,7 +1324,7 @@
 		division = {
 			experience = 15
 			id = { type = 30304 id = 100 }
-			name = "86th Infantry Division"
+			name = "86th Mec. Infantry Division"
 			strength = 100
 			type = mechanized
 			model = 1
@@ -1548,7 +1546,7 @@
 		name = "2. Korean Protection Force"
 		division = {
 			id = { type = 30304 id = 504 }
-			name = "86th Infantry Division"
+			name = "1. Korean Exp. Division"
 			strength = 100
 			type = infantry
 			model = 10

@@ -136,8 +136,8 @@ country = {
 			strength = 100
 			type = motorized
 			model = 3
-			extra = anti_air
-			brigade_model = 4
+			extra = sp_anti_air
+			brigade_model = 1
 		}
 	}
 	navalunit = {

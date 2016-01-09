@@ -1005,8 +1005,8 @@ country = {
       name           = "92. Grenadier-Brigade (mot)"
       type           = motorized
       model          = 3
-      extra          = artillery
-      brigade_model  = 11
+      extra          = sp_artillery
+      brigade_model  = 2
       strength       = 80
       experience     = 40
     }

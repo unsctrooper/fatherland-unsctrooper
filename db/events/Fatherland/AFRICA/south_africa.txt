@@ -195,7 +195,7 @@ event = {
 		command = { type = revolt which = -3 }
 		
 		command = { type = money value = -50 }
-		command = { type = manpower value = -1 }
+		command = { type = manpowerpool value = -1 }
 		command = { type = supplies value = -100 }
 		
 		# [oil, metal, energy, rare_materials, supplies, money, manpower]		
@@ -936,7 +936,7 @@ event = {
 	trigger = {
 		local_flag = SAFLIMITED
 		event = { id = 8012625 days = 30  }
-		NOT = { control = { province = 867 data = SAF } #Salisbury }
+		NOT = { control = { province = 867 data = SAF } } #Salisbury
 	}
 	
 	action = {

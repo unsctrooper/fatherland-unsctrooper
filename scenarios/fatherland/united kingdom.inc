@@ -227,16 +227,16 @@ country = {
 			model = 3
 			id = { type = 30254 id = 3 }
 			name = "53rd (Welsh) Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 		}
 		division = {
 			type = motorized
 			model = 3
 			id = { type = 30254 id = 4 }
 			name = "52nd (Lowland) Infantry Division"
-			extra = anti_air
-			brigade_model = 4
+			extra = sp_anti_air
+			brigade_model = 1
 		}
 		division = {
 			type = motorized
@@ -258,17 +258,17 @@ country = {
 			type = motorized
 			model = 3
 			id = { type = 30254 id = 36 }
-			name = "51rd Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			name = "51st Infantry Division"
+			extra = sp_artillery
+			brigade_model = 2
 		}
 		division = {
 			type = motorized
 			model = 3
 			id = { type = 30254 id = 37 }
-			name = "61nd Infantry Division"
-			extra = anti_air
-			brigade_model = 4
+			name = "61st Infantry Division"
+			extra = sp_anti_air
+			brigade_model = 1
 		}
 		division = {
 			type = motorized
@@ -365,8 +365,8 @@ country = {
 			model = 3
 			id = { type = 30254 id = 9 }
 			name = "55th (West Lancashire) Infantry Division"
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 		}
 		division = {
 			type = infantry
@@ -404,9 +404,8 @@ country = {
 			model = 3
 			id = { type = 30254 id = 13 }
 			name = "5th Infantry Division"
-			
-			extra = artillery
-			brigade_model = 11
+			extra = sp_artillery
+			brigade_model = 2
 		}
 		division = {
 			type = motorized
@@ -433,8 +432,8 @@ country = {
 			strength = 35
 			max_strength = 35
 			
-			extra = anti_air
-			brigade_model = 4
+			extra = sp_anti_air
+			brigade_model = 1
 		}
 		division = {
 			type = motorized

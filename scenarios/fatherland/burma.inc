@@ -28,10 +28,7 @@ rare_materials         = 1380
    escorts                = 20 
   
    
-   diplomacy = 
-   {   
-  relation = {  tag = JAP value = 50  }  
-    } 
+   diplomacy =  {    relation = {  tag = JAP value = 50  }      } 
    nationalprovinces      = { 
 1411 1409 1420 1419 1415 1410 1417 1416 1418 1412 1413 1407 1408 1406 1414 } 
    ownedprovinces         = {   
@@ -96,8 +93,8 @@ rare_materials         = 1380
 6560
 } 
 inventions = { 3000027 }
-  policy = 
-   {  date              = {  year = 0 month = january day = 0  } 
+  policy = {  
+  date              = {  year = 0 month = january day = 0  } 
      democratic        = 5 
      political_left    = 3 
      freedom           = 3 

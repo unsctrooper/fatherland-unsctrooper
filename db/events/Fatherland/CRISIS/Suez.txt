@@ -483,10 +483,10 @@ event = {
 		name = "The UN economic support"
 		command = { type = supplies value = 500 }
 		command = { type = money value = 500 }		
-		command = { type = oil value = 500 }		
-		command = { type = rare_materials value = 500 }		
-		command = { type = metal value = 500 }				
-		command = { type = energy value = 500 }		
+		command = { type = oilpool value = 500 }		
+		command = { type = rarematerialspool value = 500 }		
+		command = { type = metalpool value = 500 }				
+		command = { type = energypool value = 500 }		
 		command = { type = dissent value = -5 }
 	}
 }

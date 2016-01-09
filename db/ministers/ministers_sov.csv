@@ -1,7 +1,7 @@
 SOV;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
 ;Replacements;;;;;;;;;X
 30001;Head of State;Mikhail I. Kalinin;1922;1964;1999;ST;Weary Stiffneck;High;3176;X
-30002;Head of Government;KPSS;1930;1964;1999;ST;Paranoid megalomaniac2;High;SOV0;X
+30002;Head of Government;KPSS;1930;1964;1999;ST;Local tyrant;High;SOV0;X
 30003;Foreign Minister;Maksim M. Litvinov;1930;1964;1999;ST;Persuader of Democracies;Medium;3178;X
 30004;Minister of Armament;Lazar M. Kaganovich;1930;1962;1999;ST;Iron Lazar;High;3179;X
 30005;Minister of Security;Genrikh G. Yagoda;1933;1939;1999;ST;Purged Purger;Low;3180;X

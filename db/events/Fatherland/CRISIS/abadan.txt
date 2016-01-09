@@ -29,7 +29,7 @@ event = {
 	country = PER
 
 	name = "Iran nationalizes oil fields - Start of Abadan Crisis (Possible WW3 outcome)"
-	desc = "The AIOC was the United Kingdom's ""single largest overseas asset"" and a ""source of national pride"" in the British post-war era of Clement Attlee, and Ernest Bevin. Even as late as the ""1940s and early 1950s some high British officials still believed that Persian petroleum was actually and rightly British petroleum because it had been discovered by the British, developed by British capital, and exploited through British skill and British ingenuity."
+	desc = "The AIOC was the United Kingdom's 'single largest overseas asset' and a 'source of national pride' in the British post-war era of Clement Attlee, and Ernest Bevin. Even as late as the 1940s and early 1950s some high British officials still believed that Persian petroleum was actually and rightly British petroleum because it had been discovered by the British, developed by British capital, and exploited through British skill and British ingenuity."
 	picture = "abadan_oil"
 	style = 1
 
@@ -91,7 +91,7 @@ event = {
 	country = ALS
 
 	name = "Abadan Crisis (Possible WW3 outcome)"
-	desc = "The AIOC was the United Kingdom's ""single largest overseas asset"" and a ""source of national pride"" in the British post-war era of Clement Attlee, and Ernest Bevin. Even as late as the ""1940s and early 1950s some high British officials still believed that Persian petroleum was actually and rightly British petroleum because it had been discovered by the British, developed by British capital, and exploited through British skill and British ingenuity."
+	desc = "The AIOC was the United Kingdom's 'single largest overseas asset' and a 'source of national pride' in the British post-war era of Clement Attlee, and Ernest Bevin. Even as late as the 1940s and early 1950s some high British officials still believed that Persian petroleum was actually and rightly British petroleum because it had been discovered by the British, developed by British capital, and exploited through British skill and British ingenuity."
 	picture = "abadan_oil"
 	style = 1
 
