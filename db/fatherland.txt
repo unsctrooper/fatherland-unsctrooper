@@ -141,8 +141,6 @@ event = "db\events\fatherland\ger\SS.txt"
 event = "db\events\fatherland\ger\ss-germany.txt"
 event = "db\events\fatherland\ger\cossacks.txt"
 event = "db\events\fatherland\ger\ger_influence.txt"
-# AI GERMANY
-event = "db\events\fatherland\ger\ai\AI_SS_GER.txt"
 
 #MIDDLE EAST
 event = "db\events\fatherland\middle_east\iran.txt"

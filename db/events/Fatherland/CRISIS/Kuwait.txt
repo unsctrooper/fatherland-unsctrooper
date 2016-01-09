@@ -45,13 +45,13 @@ event = {
 
 	action = {
 		name = "Iraq could be a good friend ! Go ahead!" 
-		ai_chance = 90 # Temporary to ensure WW III breaking out after all!
+		ai_chance = 30 
 		command = { type = money value = -1500 }
         command = { type = event which = 8500326 where = IRQ when = 10 }
 	}
 	action = {
-		name = "It's not our concern"
-		ai_chance = 10
+		name = "Tell them to stand down. We are not ready for World War III."
+		ai_chance = 70
 		command = { type = dissent value = 3 }
 	}
 }
@@ -89,7 +89,7 @@ event = {
 	country = ENG
 
 	name = "The Kuwait Ultimatum"
-	desc = "Fueled by direct German help, we're able to make a strong ultimatum on Kuwait."
+	desc = "Fueled by direct German help, Iraq has presented us an ultimatum to cede Kuwait to it. It seems there is only one way to answer this threat."
 	picture = "nwo\nasser_speaking"
 	style = 1
 

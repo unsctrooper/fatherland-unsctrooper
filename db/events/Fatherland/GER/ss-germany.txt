@@ -1,9 +1,5 @@
 ### SS-State Germania ###
 
-# AI events file: db\events\fatherland\ger\ai\AI_SS_GER.txt
-
-mass troops on Soviet border, buildup of motorized SS divisions, nuking Soviet rump
-
 ### Domestic ###
 # 91000000 # SS-Staat Germania proclaimed
 # 91000001 # USA / Germany becomes the SS-State Germania
