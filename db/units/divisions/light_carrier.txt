@@ -1,9 +1,11 @@
-#MODEL_27_
+#MODEL_31_
 
 allowed_brigades = naval_anti_air_l
 allowed_brigades = naval_radar_l
 allowed_brigades = naval_improved_hull_l
 allowed_brigades = light_cag
+allowed_brigades = b_09
+allowed_brigades = b_15
 
 max_allowed_brigades = 4
 
@@ -121,4 +123,91 @@ model = {
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
 	equipment = { carrier = 1 manpower = 1800 }
+}
+
+# 4 - Early Helicopter Carrier (1959) - USS Iwo Jima (LPH-2)/Jeanne d'Arc (R97)/Moskva-class
+model = {
+	cost						= 1.5
+	buildtime 					= 877
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.71
+	maxspeed					= 20
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 7
+	subdetectioncapability		= 9
+	visibility					= 75
+	seadefence					= 33
+	airdefence					= 24
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 1
+	airattack					= 2
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 13000
+	supplyconsumption			= 1.0
+	fuelconsumption				= 0.7
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 714 }
+}
+
+# 5 - Basic Helicopter Carrier (1971) - Tarawa-class/HMS Illustrious (R06)/
+model = {
+	cost						= 2.0
+	buildtime 					= 1870
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 20
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 9
+	subdetectioncapability		= 11
+	visibility					= 75
+	seadefence					= 30
+	airdefence					= 21
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 1
+	airattack					= 2
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 14000
+	supplyconsumption			= 1.0
+	fuelconsumption				= 0.7
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 807 }
+}
+
+# 6 - Improved Helicopter Carrier (1989) - HMS Ocean (L12)/Wasp-class
+model = {
+	cost						= 2.2
+	buildtime 					= 1870
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.68
+	maxspeed					= 20
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 10
+	subdetectioncapability		= 13
+	visibility					= 75
+	seadefence					= 27
+	airdefence					= 18
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 1
+	airattack					= 2
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 1.0
+	fuelconsumption				= 0.7
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 680 }
 }

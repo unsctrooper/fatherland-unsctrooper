@@ -196,6 +196,7 @@ model = {
 	fuelconsumption				= 0.2
 	upgrade_time_factor 		= 0.8
 	upgrade_cost_factor 		= 0.6
+	b_01 = 0
 	equipment = {
 		floatplane = 4
 		manpower = 20

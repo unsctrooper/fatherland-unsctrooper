@@ -84,7 +84,6 @@
 #	1. It is possible to redefine the type of named unit types (like cavalry = { type = infantry }).
 #	2. No gaps (like defining d_02 without defining d_01) in UnitTypeName are allowed!
 #	3. On add or remove of unit type, gfx\map\hoi_counter_strip.bmp must be updated to match the number of currently defined unit types.
-#	4. On add or remove of unit type, modifiers.csv file must be updated to match the number of currently defined unit types.
 ########
 
 eyr = {
@@ -666,4 +665,150 @@ d_rsv_39 = {	# Reserved for use by Darkest Hour Full
 d_rsv_40 = {	# Reserved for use by Darkest Hour Full
 	#ID			40
 	list_prio	= -1
+}
+
+d_01 = {
+	#ID 41
+	type = cavalry
+	name = NAME_AIRASSAULTDIVISION
+	short_name = SNAME_AIRASSAULTDIVISION
+	desc = LDESC_AIRASSAULTDIVISION
+	short_desc = SDESC_AIRASSAULTDIVISION
+	eyr = 1
+	sprite = d_01
+	transmute = cavalry
+	gfx_prio = 6
+	value = 1.15
+	list_prio = 70
+	}
+	
+d_02 = {
+	#ID 42
+	type = heavy_cruiser
+	name = NAME_NUCLEARCRUISER
+	short_name = SNAME_NUCLEARCRUISER
+	desc = LDESC_NUCLEARCRUISER
+	short_desc = SDESC_NUCLEARCRUISER
+	eyr = 5
+	sprite = heavy_cruiser
+	transmute = heavy_cruiser
+	gfx_prio = 5
+	value = 30
+	heavy_cruiser = yes
+	list_prio = 30
+	ui_prio = 5
+	}
+d_03 = {
+	#ID 43
+	type = nuclear_submarine
+	name = NAME_NUCATTACKSUB
+	short_name = SNAME_NUCATTACKSUB
+	desc = LDESC_NUCATTACKSUB
+	short_desc = SDESC_NUCATTACKSUB
+	eyr = 8
+	sprite = submarine
+	transmute = submarine
+	gfx_prio = 1
+	value		= 1.0
+	list_prio	= 90
+}
+d_04 = {
+	#ID 44
+	type = nuclear_submarine
+	name = NAME_SSBN
+	short_name = SNAME_SSBN
+	desc = LDESC_SSBN
+	short_desc = SDESC_SSBN
+	eyr = 8
+	sprite = submarine
+	transmute = submarine
+	gfx_prio = 1
+	value		= 1.0
+	list_prio	= 90
+}
+d_05 = {
+	#ID 45
+	type = destroyer
+	name = NAME_FRIGATE
+	short_name = SNAME_FRIGATE
+	desc = LDESC_FRIGATE
+	short_desc = SDESC_FRIGATE
+	eyr			= 7
+	sprite		= destroyer
+	transmute	= destroyer
+	gfx_prio	= 3
+	#destroyer	= yes
+	value		= 1.0
+	list_prio	= 10
+}
+d_06 = {
+	#ID 46
+	type = heavy_cruiser
+	name = NAME_DDG
+	short_name = SNAME_DDG
+	desc = LDESC_DDG
+	short_desc = SDESC_DDG
+	eyr = 7
+	sprite = destroyer
+	transmute = destroyer
+	gfx_prio = 3
+	value = 1.0
+	list_prio = 10
+}
+d_07 = {
+	#ID 47
+	type = light_cruiser
+	name = NAME_LARGEASWDD
+	short_name = SNAME_LARGEASWDD
+	desc = LDESC_LARGEASWDD
+	short_desc = SDESC_LARGEASWDD
+	eyr = 7
+	sprite = light_cruiser
+	transmute = destroyer
+	gfx_prio = 3
+	value = 1.0
+	list_prio = 10
+}
+d_08 = {
+	#ID 48
+	type = destroyer
+	name = NAME_GUNCORVETTE
+	short_name = SNAME_GUNCORVETTE
+	desc = LDESC_GUNCORVETTE
+	short_desc = SDESC_GUNCORVETTE
+	eyr = 7
+	sprite = destroyer
+	transmute = destroyer
+	gfx_prio = 3
+	value = 1.0
+	list_prio = 10
+}
+d_09 = {
+	#ID 49
+	type = destroyer
+	name = NAME_MISSILECORVETTE
+	short_name = SNAME_MISSILECORVETTE
+	desc = LDESC_MISSILECORVETTE
+	short_desc = SDESC_MISSILECORVETTE
+	eyr = 7
+	sprite = destroyer
+	transmute = destroyer
+	gfx_prio = 3
+	value = 1.0
+	list_prio = 10
+}
+d_10 = {
+	#ID 50
+	type = interceptor
+	name = NAME_LIGHTWEIGHTFIGHTER
+	short_name = SNAME_LIGHTWEIGHTFIGHTER
+	desc = LDESC_LIGHTWEIGHTFIGHTER
+	short_desc = SDESC_LIGHTWEIGHTFIGHTER
+	eyr = 2
+	sprite = interceptor
+	transmute = interceptor
+	gfx_prio = 2
+	value = 1.0
+	list_prio = 10
+	interceptor	= yes
 }

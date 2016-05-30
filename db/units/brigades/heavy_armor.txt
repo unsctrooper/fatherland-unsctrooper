@@ -36,8 +36,8 @@ model = {
 	softattack			= 2
 	supplyconsumption 	= 0.8
 	fuelconsumption		= 4
-	upgrade_time_factor = 0.8
-	upgrade_cost_factor = 0.6
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
 	speed_cap			= 13
 	equipment = { manpower = 2500 heavy_armor = 80 }
 }
@@ -56,8 +56,8 @@ model = {
 	softattack			= 2
 	supplyconsumption 	= 0.8
 	fuelconsumption		= 4.2
-	upgrade_time_factor = 0.8
-	upgrade_cost_factor = 0.6
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
 	speed_cap			= 12
 	equipment = { manpower = 2500 heavy_armor = 94  }
 }
@@ -76,8 +76,8 @@ model = {
 	softattack			= 2
 	supplyconsumption 	= 0.9
 	fuelconsumption		= 4.4
-	upgrade_time_factor = 0.8
-	upgrade_cost_factor = 0.6
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
 	speed_cap			= 17
 	equipment = { manpower = 2500 heavy_armor = 102  }
 }
@@ -96,8 +96,8 @@ model = {
 	softattack			= 3
 	supplyconsumption 	= 0.9
 	fuelconsumption		= 4.6
-	upgrade_time_factor = 0.8
-	upgrade_cost_factor = 0.6
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
 	speed_cap			= 18
 	equipment = { manpower = 2500 heavy_armor = 111 }
 }
@@ -116,8 +116,9 @@ model = {
 	softattack			= 6
 	supplyconsumption 	= 0.9
 	fuelconsumption		= 4.8
-	upgrade_time_factor = 0.8
-	upgrade_cost_factor = 0.6
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
 	speed_cap			= 20
+	medium_armor = 9
 	equipment = { manpower = 2500 heavy_armor = 98  }
 }

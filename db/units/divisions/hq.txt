@@ -1,9 +1,12 @@
 # MODEL_10_
 
 allowed_brigades =	anti_air
-allowed_brigades =  sp_anti_air
 allowed_brigades =  engineer		
 allowed_brigades =  police
+allowed_brigades = b_02
+allowed_brigades = b_05
+allowed_brigades = b_06
+allowed_brigades = b_07
 
 # 0 - Basic HQ Division (1870)
 model = {
@@ -166,4 +169,82 @@ model = {
 	reinforce_time			= 0.60
 	reinforce_cost 			= 0.75
 	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 }
+}
+
+# 6 - Improved Modern HQ Division (1956)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 17
+	defaultorganisation		= 10
+	morale 					= 30
+	defensiveness 			= 8
+	toughness 				= 10
+	softness 				= 60
+	suppression 			= 2
+	airdefence				= 5
+	softattack				= 3
+	hardattack				= 2
+	airattack				= 5
+	transportweight			= 35
+	supplyconsumption		= 3.2
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 helicopter = 54 }
+}
+
+# 7 - Improved Modern HQ Division (1967)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 20
+	defaultorganisation		= 10
+	morale 					= 30
+	defensiveness 			= 7
+	toughness 				= 10
+	softness 				= 60
+	suppression 			= 2
+	airdefence				= 5
+	softattack				= 4
+	hardattack				= 3
+	airattack				= 6
+	transportweight			= 35
+	supplyconsumption		= 3.5
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 helicopter = 54 }
+}
+
+# 8 - Improved Modern HQ Division (1975)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 25
+	defaultorganisation		= 10
+	morale 					= 30
+	defensiveness 			= 6
+	toughness 				= 10
+	softness 				= 60
+	suppression 			= 2
+	airdefence				= 4
+	softattack				= 5
+	hardattack				= 4
+	airattack				= 7
+	transportweight			= 35
+	supplyconsumption		= 3.5
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 helicopter = 54 }
 }

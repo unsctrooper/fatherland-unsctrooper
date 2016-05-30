@@ -1,6 +1,7 @@
 # MODEL_15_
 
 allowed_brigades =  escort
+allowed_brigades = b_11
 
 upgrade = { type = naval_bomber			upgrade_time_factor = 0.54	upgrade_cost_factor	= 1.40 }
 upgrade = { type = strategic_bomber		upgrade_time_factor = 0.54	upgrade_cost_factor = 1.40 }
@@ -108,7 +109,6 @@ model = {
 	fuelconsumption				= 0.7
 	upgrade_time_factor 		= 0.60 
 	upgrade_cost_factor 		= 0.50
-	upgrade_time_boost 			= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { bomber = 100 manpower = 600 }
@@ -134,8 +134,8 @@ model = {
 	range						= 700
 	supplyconsumption 			= 1.5
 	fuelconsumption				= 3
-	upgrade_time_factor 		= 0.90
-	upgrade_cost_factor 		= 1.00
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { bomber = 100 manpower = 600 }
@@ -355,4 +355,31 @@ model = {
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { bomber = 100 manpower = 600 }
+}
+
+# 13 - Strike Fighter (1979)
+model = { 
+	cost 						= 30
+	buildtime	 				= 240
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2500
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 15
+	surfacedefence				= 3
+	airdefence					= 6
+	airattack					= 13
+	strategicattack				= 8
+	softattack					= 14
+	hardattack					= 12
+	navalattack					= 14
+	range						= 1300
+	supplyconsumption 			= 2.2
+	fuelconsumption				= 3.4
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { fighter = 100 manpower = 100 }
 }

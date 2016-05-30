@@ -235,3 +235,107 @@ model = {
 		manpower = 75
 	}
 }
+
+# 9 - Advanced Light Turbojet Carrier Air Group (1961)
+model = {
+	cost 						= 3.5
+	buildtime 					= 210
+	manpower 					= 0.07
+	surfacedetectioncapability	= 12
+	airdetectioncapability 		= 10
+	subdetectioncapability		= 9
+	airdefence					= -10
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 6
+	airattack					= 11
+	shorebombardment			= 11
+	distance					= 2.5
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.75
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 15
+		bomber = 15
+		manpower = 75
+	}
+}
+
+# 10 - Semi Modern Light Turbojet Carrier Air Group (1970)
+model = {
+	cost 						= 3.75
+	buildtime 					= 210
+	manpower 					= 0.07
+	surfacedetectioncapability	= 13
+	airdetectioncapability 		= 11
+	subdetectioncapability		= 10
+	airdefence					= -10
+	seaattack					= 13
+	convoyattack				= 13
+	subattack					= 7
+	airattack					= 12
+	shorebombardment			= 12
+	distance					= 2.5
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.75
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 15
+		bomber = 15
+		manpower = 75
+	}
+}
+
+# 11 - Modern Light Turbojet Carrier Air Group (1974)
+model = {
+	cost 						= 4
+	buildtime 					= 230
+	manpower 					= 0.07
+	surfacedetectioncapability	= 14
+	airdetectioncapability 		= 12
+	subdetectioncapability		= 11
+	airdefence					= -10
+	seaattack					= 14
+	convoyattack				= 14
+	subattack					= 8
+	airattack					= 13
+	shorebombardment			= 13
+	distance					= 2.5
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.75
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 15
+		bomber = 15
+		manpower = 75
+	}
+}
+
+# 12 - Improved Modern Light Turbojet Carrier Air Group (1983)
+model = {
+	cost 						= 4.25
+	buildtime 					= 250
+	manpower 					= 0.07
+	surfacedetectioncapability	= 15
+	airdetectioncapability 		= 13
+	subdetectioncapability		= 12
+	airdefence					= -11
+	seaattack					= 15
+	convoyattack				= 15
+	subattack					= 9
+	airattack					= 14
+	shorebombardment			= 14
+	distance					= 2.5
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.75
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 15
+		bomber = 15
+		manpower = 75
+	}
+}

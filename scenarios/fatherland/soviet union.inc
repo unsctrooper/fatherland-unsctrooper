@@ -988,6 +988,48 @@ inventions = { 3000027 }
 	   }
 }
 
+   landunit = 
+   {  id       = {  type = 10848 id =  1600 } 
+     name     = "67-i Strelkovyi Korpus" 
+     location = 690
+     Division = 
+     {  id       = {  type = 10848 id = 1601  } 
+       name     = "102-ya Strelkovaya Diviziya" 
+       strength = 70 
+       type     = infantry 
+	   model    = 18
+      }
+     Division = 
+     {  id       = {  type = 10848 id = 1602  } 
+       name     = "132-ya Strelkovaya Diviziya" 
+       strength = 70 
+       type     = infantry 
+	   model    = 19
+      }
+     Division = 
+     {  id       = {  type = 10848 id = 1603  } 
+       name     = "151-ya Strelkovaya Diviziya" 
+       strength = 70 
+       type     = infantry 
+	   model    = 20
+      }
+	      Division = 
+     {  id       = {  type = 10848 id = 1604  } 
+       name     = "151-ya Strelkovaya Diviziya" 
+       strength = 70 
+       type     = infantry 
+	   model    = 21
+      }
+	       Division = 
+     {  id       = {  type = 10848 id = 1605  } 
+       name     = "151-ya Strelkovaya Diviziya" 
+       strength = 70 
+       type     = infantry 
+	   model    = 22
+      }
+ }
+
+
 # Air OOB
 #MVO
 airunit = { 

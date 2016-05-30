@@ -1,14 +1,22 @@
 # MODEL_2_
 
+allowed_brigades =  artillery
 allowed_brigades =  medium_armor		
+allowed_brigades =  anti_air		
 allowed_brigades =  sp_artillery	
 allowed_brigades =  sp_anti_air
 allowed_brigades =  tank_destroyer
 allowed_brigades =  light_armor_brigade
+allowed_brigades =  amph_armor 
 allowed_brigades =  heavy_armor	
 allowed_brigades =  super_heavy_armor
 allowed_brigades =  armored_car
-allowed_brigades =  engineer		
+allowed_brigades =  engineer	
+allowed_brigades = b_02	
+allowed_brigades = b_04
+allowed_brigades = b_05
+allowed_brigades = b_06
+allowed_brigades = b_07
 
 upgrade = { type = infantry		upgrade_time_factor = 0.19	upgrade_cost_factor = 1.16 }
 upgrade = { type = mechanized	upgrade_time_factor = 0.80	upgrade_cost_factor = 0.32 }
@@ -222,3 +230,135 @@ model = {
 	reinforce_cost 			= 0.45
 	equipment = { manpower = 13000 trucks = 2640 artillery = 76 heavy_artillery = 26 anti_tank = 56 anti_air = 32 armored_car = 28 }
 }
+
+# 8 - Modern Motorized Division (1968)
+model = {
+	cost 					= 12
+	buildtime	 			= 315
+	manpower 				= 13
+	maxspeed 				= 30
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 75
+	suppression				= 6
+	airdefence				= 6
+	softattack				= 26
+	hardattack				= 9
+	airattack				= 7
+	transportweight			= 30
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 6.5
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.72
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.45
+	equipment = { manpower = 13000 trucks = 2640 artillery = 76 heavy_artillery = 26 anti_tank = 56 anti_air = 32 armored_car = 28 }
+}
+
+# 9 - Modern Motorized Division (1974)
+model = {
+	cost 					= 12
+	buildtime	 			= 315
+	manpower 				= 13
+	maxspeed 				= 31
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 75
+	suppression				= 6
+	airdefence				= 6
+	softattack				= 30
+	hardattack				= 11
+	airattack				= 8
+	transportweight			= 30
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 6.5
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.72
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.45
+	equipment = { manpower = 13000 trucks = 2640 artillery = 76 heavy_artillery = 26 anti_tank = 56 anti_air = 32 armored_car = 28 }
+}
+
+# 10 - Modern Motorized Division (1980)
+model = {
+	cost 					= 12
+	buildtime	 			= 315
+	manpower 				= 13
+	maxspeed 				= 32
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 75
+	suppression				= 6
+	airdefence				= 6
+	softattack				= 32
+	hardattack				= 12
+	airattack				= 9
+	transportweight			= 30
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 6.6
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.72
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.45
+	equipment = { manpower = 13000 trucks = 2640 artillery = 76 heavy_artillery = 26 anti_tank = 56 anti_air = 32 armored_car = 28 }
+}
+
+# 11 - Modern Motorized Division (1984)
+model = {
+	cost 					= 12
+	buildtime	 			= 315
+	manpower 				= 13
+	maxspeed 				= 33
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 75
+	suppression				= 6
+	airdefence				= 6
+	softattack				= 33
+	hardattack				= 13
+	airattack				= 10
+	transportweight			= 30
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 6.6
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.72
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.45
+	equipment = { manpower = 13000 trucks = 2640 artillery = 76 heavy_artillery = 26 anti_tank = 56 anti_air = 32 armored_car = 28 }
+}
+
+# 12 - Modern Motorized Division (1989)
+model = {
+	cost 					= 12
+	buildtime	 			= 315
+	manpower 				= 13
+	maxspeed 				= 35
+	defaultorganisation 	= 30
+	morale					= 35
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 75
+	suppression				= 6
+	airdefence				= 5
+	softattack				= 35
+	hardattack				= 14
+	airattack				= 11
+	transportweight			= 30
+	supplyconsumption 		= 1.5
+	fuelconsumption			= 6.7
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.72
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.45
+	equipment = { manpower = 13000 trucks = 2640 artillery = 76 heavy_artillery = 26 anti_tank = 56 anti_air = 32 armored_car = 28 }
+}
+
+

@@ -14,14 +14,14 @@ technology =
  #### WW1 Era Single engine ###
   label =
   { tag      = TECH_CAT_fighters
-    position = { x = 60 y = 10 }
+    position = { x = 60 y = 1 }
   }
 	# Prewar unarmed Reconaisence
   application =
   { id        = 4500
     name      = TECH_APP_AIRCRAFT_50_NAME
 	
-    position  = { x = 56 y = 24 }
+    position  = { x = 56 y = 15 }
 	picture   = "DH1910"
     year      = 1910
     # Interwar Short Range Engine
@@ -45,7 +45,7 @@ technology =
   { id        = 4510
     name      = TECH_APP_AIRCRAFT_51_NAME
 
-    position  = { x = 56 y = 42 }
+    position  = { x = 56 y = 33 }
 	picture   = "DH4510"
     year      = 1914
     # Interwar Short Range Engine
@@ -69,7 +69,7 @@ technology =
   { id        = 4520
     name      = TECH_APP_AIRCRAFT_52_NAME
 
-    position  = { x = 56 y = 60 }
+    position  = { x = 56 y = 51 }
 	picture   = "DH4520"
     year      = 1915
     # Interwar Short Range Engine
@@ -93,7 +93,7 @@ technology =
   { id        = 4530
     name      = TECH_APP_AIRCRAFT_53_NAME
 
-    position  = { x = 3 y = 78 }
+    position  = { x = 3 y = 69 }
 	picture   = "DH4530"
     year      = 1916
     # Interwar Short Range Engine
@@ -117,7 +117,7 @@ technology =
   { id        = 4540
     name      = TECH_APP_AIRCRAFT_54_NAME
 
-    position  = { x = 3 y = 96 }
+    position  = { x = 3 y = 87 }
 	picture   = "DH4540"
     year      = 1917
     # Interwar Short Range Engine
@@ -141,7 +141,7 @@ technology =
   { id        = 4550
     name      = TECH_APP_AIRCRAFT_55_NAME
 
-    position  = { x = 3 y = 114 }
+    position  = { x = 3 y = 105 }
 	picture   = "DH4550"
     year      = 1918
     # Interwar Short Range Engine
@@ -165,7 +165,7 @@ technology =
   { id        = 4010
     name      = TECH_APP_AIRCRAFT_1_NAME
 
-    position  = { x = 3 y = 132 }
+    position  = { x = 3 y = 123 }
 	picture   = "4010"
     year      = 1924
     # Interwar Short Range Engine
@@ -189,7 +189,7 @@ technology =
   { id        = 4020
     name      = TECH_APP_AIRCRAFT_2_NAME
 
-    position  = { x = 3 y = 150 }
+    position  = { x = 3 y = 141 }
 	picture   = "4020"
     year      = 1930
     # Early Short Range Engine
@@ -210,14 +210,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_interceptors
-    position = { x = 14 y = 250 }
+    position = { x = 14 y = 159 }
   }
   # Basic Interceptor
   application =
   { id        = 4030
     name      = TECH_APP_AIRCRAFT_3_NAME
 
-    position  = { x = 3 y = 264 }
+    position  = { x = 3 y = 173 }
 	picture   = "4030"
     year      = 1937
     # Basic Short Range Engine
@@ -234,6 +234,7 @@ technology =
     effects =
     { command = { type = new_model which = interceptor value = 8 }
       command = { type = scrap_model which = interceptor value = 7 }
+	  command = { type = info_may_cause which = 7810 }
     }
   }
   # Improved Interceptor
@@ -241,7 +242,7 @@ technology =
   { id        = 4060
     name      = TECH_APP_AIRCRAFT_6_NAME
 
-    position  = { x = 3 y = 282 }
+    position  = { x = 3 y = 191 }
 	picture   = "4060"
     year      = 1940
     # Improved Short Range Engine
@@ -265,7 +266,7 @@ technology =
   { id        = 4090
     name      = TECH_APP_AIRCRAFT_9_NAME
 
-    position  = { x = 3 y = 300 }
+    position  = { x = 3 y = 209 }
 	picture   = "4090"
     year      = 1942
     # Advanced Short Range Engine
@@ -289,7 +290,7 @@ technology =
   { id        = 15000
     name      = TECH_APP_AIRCRAFT_100_NAME
 
-    position  = { x = 3 y = 318 }
+    position  = { x = 3 y = 227 }
 	picture   = "15000"
     year      = 1944
     # ?
@@ -306,6 +307,8 @@ technology =
     effects =
     { command = { type = new_model which = interceptor value = 11 }
       command = { type = scrap_model which = interceptor value = 10 }
+	  command = { type = scrap_model which = d_10 value = 0 }
+	  command = { type = deactivate_unit_type which = d_10 }
     }
   }
   # Improved Turbojet Interceptor
@@ -313,7 +316,7 @@ technology =
   { id        = 15010
     name      = TECH_APP_AIRCRAFT_101_NAME
 
-    position  = { x = 3 y = 336 }
+    position  = { x = 3 y = 259 }
 	picture   = "15010"
     year      = 1947
     # ?
@@ -330,6 +333,7 @@ technology =
     effects =
     { command = { type = new_model which = interceptor value = 12 }
       command = { type = scrap_model which = interceptor value = 11 }
+	  command = { type = deactivate_unit_type which = rocket_interceptor }
     }
   }
   # Supersonic Interceptor
@@ -337,7 +341,7 @@ technology =
   { id        = 15020
     name      = TECH_APP_AIRCRAFT_102_NAME
 
-    position  = { x = 3 y = 354 }
+    position  = { x = 3 y = 277 }
 	picture   = "15020"
     year      = 1950
     # ?
@@ -361,7 +365,7 @@ technology =
   { id        = 4560
     name      = TECH_APP_AIRCRAFT_56_NAME
 
-    position  = { x = 3 y = 372 }
+    position  = { x = 3 y = 295 }
 	picture   = "DH4560"
     year      = 1954
     # ?
@@ -385,7 +389,7 @@ technology =
   { id        = 4570
     name      = TECH_APP_AIRCRAFT_57_NAME
 
-    position  = { x = 3 y = 390 }
+    position  = { x = 3 y = 313 }
 	picture   = "DH4570"
     year      = 1958
     # ?
@@ -409,7 +413,7 @@ technology =
   { id        = 4580
     name      = TECH_APP_AIRCRAFT_58_NAME
 
-    position  = { x = 3 y = 408 }
+    position  = { x = 3 y = 331 }
 	picture   = "DH4580"
     year      = 1962
     # ?
@@ -428,13 +432,37 @@ technology =
       command = { type = scrap_model which = interceptor value = 15 }
     }
   }
+  #Advanced Supersonic Interceptor
+  application = {
+  id = 4410
+  name = TECH_APP_AIRCRAFT_219_NAME
+  
+  position = { x = 3 y = 349 }
+  picture = "4410"
+  year = 1971
+  #Adv. Supersonic Interceptor Airframe
+  component = { id = 4411 name = TECH_CMP_AIRCRAFT_219_1_NAME type = Fighter_Design difficulty = 8 double_time = yes }
+  #Medium & Short Range AA Missiles
+  component = { id = 4412 name = TECH_CMP_AIRCRAFT_219_2_NAME type = rocketry difficulty = 8 }
+  #Look-up and look-down capable radar
+  component = { id = 4413 name = TECH_CMP_AIRCRAFT_219_3_NAME type = electronics difficulty = 8 }
+  #Passive electronically scanned array (PESA)
+  component = { id = 4414 name = TECH_CMP_AIRCRAFT_219_4_NAME type = avionics difficulty = 8 }
+  #Prototype Testing
+  component = { id = 4415 name = TECH_CMP_AIRCRAFT_219_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+  required = { 4580 15500 }
+  effects = {
+  command = { type = new_model which = interceptor value = 17 }
+      command = { type = scrap_model which = interceptor value = 16 }
+    }
+  }
 ################### Multi role fighters ######################
 	# Early WW1 MR
   application =
   { id        = 4300
     name      = TECH_APP_AIRCRAFT_30_NAME
 
-    position  = { x = 114 y = 78 }
+    position  = { x = 114 y = 69 }
 	picture   = "DH4300"
     year      = 1916
     # Interwar Short Range Engine
@@ -458,7 +486,7 @@ technology =
   { id        = 4310
     name      = TECH_APP_AIRCRAFT_31_NAME
 
-    position  = { x = 114 y = 96 }
+    position  = { x = 114 y = 87 }
 	picture   = "DH4310"
     year      = 1917
     # Interwar Short Range Engine
@@ -482,7 +510,7 @@ technology =
   { id        = 4320
     name      = TECH_APP_AIRCRAFT_32_NAME
 
-    position  = { x = 114 y = 114 }
+    position  = { x = 114 y = 105 }
 	picture   = "DH4320"
     year      = 1918
     # Interwar Short Range Engine
@@ -506,7 +534,7 @@ technology =
   { id        = 4330
     name      = TECH_APP_AIRCRAFT_33_NAME
 
-    position  = { x = 114 y = 132 }
+    position  = { x = 114 y = 123 }
 	picture   = "DH4330"
     year      = 1926
     # Interwar Short Range Engine
@@ -530,7 +558,7 @@ technology =
   { id        = 4340
     name      = TECH_APP_AIRCRAFT_34_NAME
 
-    position  = { x = 114 y = 150 }
+    position  = { x = 114 y = 141 }
 	picture   = "DH4340"
     year      = 1932
     # Early Short Range Engine
@@ -551,14 +579,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_multifighters
-    position = { x = 120 y = 250 }
+    position = { x = 120 y = 159 }
   }
   # Basic Multirole Fighter
   application =
   { id        = 4040
     name      = TECH_APP_AIRCRAFT_4_NAME
 
-    position  = { x = 114 y = 264 }
+    position  = { x = 114 y = 173 }
 	picture   = "4040"
     year      = 1938
     # Basic Medium Range Engine
@@ -582,7 +610,7 @@ technology =
   { id        = 4070
     name      = TECH_APP_AIRCRAFT_7_NAME
 
-    position  = { x = 114 y = 282 }
+    position  = { x = 114 y = 191 }
 	picture   = "4070"
     year      = 1940
     # Improved Medium Range Engine
@@ -606,7 +634,7 @@ technology =
   { id        = 4100
     name      = TECH_APP_AIRCRAFT_10_NAME
 
-    position  = { x = 114 y = 300 }
+    position  = { x = 114 y = 209 }
 	picture   = "4100"
     year      = 1943
     # Semi-modern Medium Range Engine
@@ -630,7 +658,7 @@ technology =
   { id        = 4350
     name      = TECH_APP_AIRCRAFT_35_NAME
 
-    position  = { x = 114 y = 318 }
+    position  = { x = 114 y = 227 }
 	picture   = "DH4350"
     year      = 1945
     # Advanced Medium Range Engine
@@ -647,14 +675,20 @@ technology =
     effects =
     { command = { type = new_model which = multi_role value = 8 }
       command = { type = scrap_model which = multi_role value = 7 }
+	  command = { type = scrap_model which = d_10 value = 0 }
+	  command = { type = deactivate_unit_type which = d_10 }
     }
-  }   
+  } 
+  label = {
+  tag = TECH_CAT_JETFIG
+  position = { x = 72 y = 245 }
+  }
   # Turbojet Multirole
   application =
   { id        = 15030
     name      = TECH_APP_AIRCRAFT_103_NAME
 
-    position  = { x = 114 y = 336 }
+    position  = { x = 114 y = 259 }
 	picture   = "15030"
     year      = 1948
     # ?
@@ -671,6 +705,8 @@ technology =
     effects =
     { command = { type = new_model which = multi_role value = 9 }
       command = { type = scrap_model which = multi_role value = 8 }
+	  command = { type = deactivate_unit_type which = rocket_interceptor }
+	  
     }
   }
   # Improved Turbojet Multirole
@@ -678,7 +714,7 @@ technology =
   { id        = 15040
     name      = TECH_APP_AIRCRAFT_104_NAME
 
-    position  = { x = 114 y = 354 }
+    position  = { x = 114 y = 277 }
 	picture   = "15040"
     year      = 1950
     # ?
@@ -702,7 +738,7 @@ technology =
   { id        = 15050
     name      = TECH_APP_AIRCRAFT_105_NAME
 
-    position  = { x = 114 y = 372 }
+    position  = { x = 114 y = 295 }
 	picture   = "15050"
     year      = 1954
     # ?
@@ -726,7 +762,7 @@ technology =
   { id        = 4360
     name      = TECH_APP_AIRCRAFT_36_NAME
 
-    position  = { x = 167 y = 390 }
+    position  = { x = 114 y = 313 }
 	picture   = "DH4360"
     year      = 1959
     # ?
@@ -752,7 +788,7 @@ technology =
   { id        = 4370
     name      = TECH_APP_AIRCRAFT_37_NAME
 
-    position  = { x = 167 y = 408 }
+    position  = { x = 114 y = 331 }
 	picture   = "DH4370"
     year      = 1963
     # ?
@@ -773,16 +809,83 @@ technology =
       command = { type = scrap_model which = escort value = 7 }
     }
   } 
+  application = {
+  id = 4380
+  name = TECH_APP_AIRCRAFT_217_NAME
+  position = { x = 114 y = 349 }
+  picture = "4380"
+  year = 1967
+   # ?
+    component = { id = 4381 name = TECH_CMP_AIRCRAFT_217_1_NAME type = rocketry difficulty = 8 double_time = yes }
+    # ?
+    component = { id = 4382 name = TECH_CMP_AIRCRAFT_217_2_NAME type = fighter_design difficulty = 8 }
+    # ?
+    component = { id = 4383 name = TECH_CMP_AIRCRAFT_217_3_NAME type = rocketry difficulty = 8 }
+    # ?
+    component = { id = 4384 name = TECH_CMP_AIRCRAFT_217_4_NAME type = avionics difficulty = 8 }
+    # ?
+    component = { id = 4385 name = TECH_CMP_AIRCRAFT_217_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+	required = { 4370 15500 }
+	effects = {
+	command = { type = new_model which = multi_role value = 14 }
+      command = { type = scrap_model which = multi_role value = 13 }
+	  }
+	}
+  application = {
+  id = 4390
+  name = TECH_APP_AIRCRAFT_218_NAME
+  position = { x = 114 y = 367 }
+  picture = "4390"
+  year = 1974
+  #Fourth Generation Jet Fighter Airframe
+  component = { id = 4391 name = TECH_CMP_AIRCRAFT_218_1_NAME type = fighter_design difficulty = 10 double_time = yes }
+  #AA Missile & 20mm Gun
+  component = { id = 4392 name = TECH_CMP_AIRCRAFT_218_2_NAME type = rocketry difficulty = 10 }
+  #Pulse Doppler Radar
+  component = { id = 4393 name = TECH_CMP_AIRCRAFT_218_3_NAME type = avionics difficulty = 10 double_time = yes }
+  #Heads-up-display (HUD)
+  component = { id = 4394 name = TECH_CMP_AIRCRAFT_218_4_NAME type = avionics difficulty = 10 }
+  #Prototype Testing
+  component = { id = 4395 name = TECH_CMP_AIRCRAFT_218_5_NAME type = aircraft_testing difficulty = 10 double_time = yes }
+  required = { 4380 15500 }
+  effects = {
+  command = { type = new_model which = multi_role value = 15 }
+      command = { type = scrap_model which = multi_role value = 14 }
+	  }
+	}
+  application = {
+  id = 4880
+  name = TECH_APP_AIRCRAFT_247_NAME
+  position = { x = 114 y = 385 }
+  picture = "4880"
+  year = 1983
+    #Improved Fouth Generation Jet Fighter Airframe
+  component = { id = 4881 name = TECH_CMP_AIRCRAFT_247_1_NAME type = fighter_design difficulty = 11 double_time = yes }
+
+  component = { id = 4882 name = TECH_CMP_AIRCRAFT_247_2_NAME type = rocketry difficulty = 11 }
+
+  component = { id = 4883 name = TECH_CMP_AIRCRAFT_247_3_NAME type = artillery difficulty = 11 double_time = yes }
+
+  component = { id = 4884 name = TECH_CMP_AIRCRAFT_247_4_NAME type = avionics difficulty = 11 }
+
+  component = { id = 4885 name = TECH_CMP_AIRCRAFT_247_5_NAME type = aircraft_testing difficulty = 11 double_time = yes }
+  required = { 4380 15500 }
+  effects = {
+  command = { type = new_model which = multi_role value = 16 }
+      command = { type = scrap_model which = multi_role value = 15 }
+	  }
+	}
+  
   label =
   { tag      = TECH_CAT_escfighters
-    position = { x = 230 y = 250 }
+    position = { x = 230 y = 231 }
   }
   # Early Escort Fighter
   application =
   { id        = 4050
     name      = TECH_APP_AIRCRAFT_5_NAME
 
-    position  = { x = 226 y = 264 }
+    position  = { x = 226 y = 245 }
 	picture   = "4050"
     year      = 1937
     # Basic Long Range Engine
@@ -806,7 +909,7 @@ technology =
   { id        = 4080
     name      = TECH_APP_AIRCRAFT_8_NAME
 
-    position  = { x = 226 y = 282 }
+    position  = { x = 226 y = 263 }
 	picture   = "4080"
     year      = 1940
     # Improved Long Range Engine
@@ -830,7 +933,7 @@ technology =
   { id        = 4110
     name      = TECH_APP_AIRCRAFT_11_NAME
 
-    position  = { x = 226 y = 300 }
+    position  = { x = 226 y = 281 }
 	picture   = "4110"
     year      = 1943
     # Advanced Long Range Engine
@@ -854,7 +957,7 @@ technology =
   { id        = 4116
     name      = TECH_APP_AIRCRAFT_216_NAME
 
-    position  = { x = 226 y = 318 }
+    position  = { x = 226 y = 299 }
 	picture   = "4110"
     year      = 1945
     # Advanced Long Range Engine
@@ -878,7 +981,7 @@ technology =
   { id        = 15060
     name      = TECH_APP_AIRCRAFT_106_NAME
 
-    position  = { x = 226 y = 336 }
+    position  = { x = 226 y = 317 }
 	picture   = "15060"
     year      = 1947
     # ?
@@ -902,7 +1005,7 @@ technology =
   { id        = 15070
     name      = TECH_APP_AIRCRAFT_107_NAME
 
-    position  = { x = 226 y = 354 }
+    position  = { x = 226 y = 335 }
 	picture   = "15070"
     year      = 1951
     # ?
@@ -926,7 +1029,7 @@ technology =
   { id        = 15080
     name      = TECH_APP_AIRCRAFT_108_NAME
 
-    position  = { x = 226 y = 372 }
+    position  = { x = 226 y = 353 }
 	picture   = "15080"
     year      = 1954
     # ?
@@ -945,6 +1048,126 @@ technology =
       command = { type = scrap_model which = escort value = 5 }
     }
   }
+  label = {
+  tag = TECH_CAT_REFUELPLANE
+  position = { x = 226 y = 393 }
+  }
+  application = {
+  id = 4890
+  name = TECH_APP_AIRCRAFT_248_NAME
+  
+  position = { x = 226 y = 407 }
+  picture = "4890"
+  year = 1948
+  
+      # ?
+    component = { id = 4891 name = TECH_CMP_AIRCRAFT_248_1_NAME type = bomber_Design difficulty = 3  }
+    # ?
+    component = { id = 4892 name = TECH_CMP_AIRCRAFT_248_2_NAME type = technical_efficiency difficulty = 6 }
+    # ?
+    component = { id = 4893 name = TECH_CMP_AIRCRAFT_248_3_NAME type = avionics difficulty = 6 }
+    # ?
+    component = { id = 4894 name = TECH_CMP_AIRCRAFT_248_4_NAME type = aeronautics difficulty = 6 }
+    # ?
+    component = { id = 4895 name = TECH_CMP_AIRCRAFT_248_5_NAME type = piloting difficulty = 6 double_time = yes }
+	required = { 4246 }
+	effects = {
+	command = { type = activate_unit_type which = b_11 }
+	command = { type = new_model which = b_11 value = 0 }
+	}
+	}
+	application = {
+	id = 4970
+	name = TECH_APP_AIRCRAFT_249_NAME
+	
+	position = { x = 226 y = 425 }
+	picture = "4970"
+	year = 1956
+          # ?
+    component = { id = 4971 name = TECH_CMP_AIRCRAFT_249_1_NAME type = bomber_Design difficulty = 8 double_time = yes }
+    # ?
+    component = { id = 4972 name = TECH_CMP_AIRCRAFT_249_2_NAME type = technical_efficiency difficulty = 8 }
+    # ?
+    component = { id = 4973 name = TECH_CMP_AIRCRAFT_249_3_NAME type = avionics difficulty = 8 }
+    # ?
+    component = { id = 4974 name = TECH_CMP_AIRCRAFT_249_4_NAME type = aeronautics difficulty = 8 }
+    # ?
+    component = { id = 4975 name = TECH_CMP_AIRCRAFT_249_5_NAME type = piloting difficulty = 8 double_time = yes }
+	required = { 4890 }
+	effects = {
+	command = { type = new_model which = b_11 value = 1 }
+	command = { type = scrap_model which = b_11 value = 0 }
+	}
+	}
+		application = {
+	id = 4980
+	name = TECH_APP_AIRCRAFT_250_NAME
+	
+	position = { x = 226 y = 443 }
+	picture = "4980"
+	year = 1962
+          # ?
+    component = { id = 4981 name = TECH_CMP_AIRCRAFT_250_1_NAME type = bomber_Design difficulty = 9 double_time = yes }
+    # ?
+    component = { id = 4982 name = TECH_CMP_AIRCRAFT_250_2_NAME type = technical_efficiency difficulty = 9 }
+    # ?
+    component = { id = 4983 name = TECH_CMP_AIRCRAFT_250_3_NAME type = avionics difficulty = 9 }
+    # ?
+    component = { id = 4984 name = TECH_CMP_AIRCRAFT_250_4_NAME type = aeronautics difficulty = 9 }
+    # ?
+    component = { id = 4985 name = TECH_CMP_AIRCRAFT_250_5_NAME type = piloting difficulty = 9 double_time = yes }
+	required = { 4970 }
+	effects = {
+	command = { type = new_model which = b_11 value = 2 }
+	command = { type = scrap_model which = b_11 value = 1 }
+	}
+	}
+		application = {
+	id = 4990
+	name = TECH_APP_AIRCRAFT_251_NAME
+	
+	position = { x = 226 y = 461 }
+	picture = "4990"
+	year = 1976
+          # ?
+    component = { id = 4991 name = TECH_CMP_AIRCRAFT_251_1_NAME type = bomber_Design difficulty = 10 double_time = yes }
+    # ?
+    component = { id = 4992 name = TECH_CMP_AIRCRAFT_251_2_NAME type = technical_efficiency difficulty = 10 }
+    # ?
+    component = { id = 4993 name = TECH_CMP_AIRCRAFT_251_3_NAME type = avionics difficulty = 10 }
+    # ?
+    component = { id = 4994 name = TECH_CMP_AIRCRAFT_251_4_NAME type = aeronautics difficulty = 10 }
+    # ?
+    component = { id = 4995 name = TECH_CMP_AIRCRAFT_251_5_NAME type = piloting difficulty = 10 double_time = yes }
+	required = { 4980 }
+	effects = {
+	command = { type = new_model which = b_11 value = 3 }
+	command = { type = scrap_model which = b_11 value = 2 }
+	}
+	}
+	application = {
+	id = 15090
+	name = TECH_APP_AIRCRAFT_252_NAME
+	
+	position = { x = 226 y = 479 }
+	picture = "15090"
+	year = 1980
+          # ?
+    component = { id = 15091 name = TECH_CMP_AIRCRAFT_252_1_NAME type = bomber_Design difficulty = 11 double_time = yes }
+    # ?
+    component = { id = 15092 name = TECH_CMP_AIRCRAFT_252_2_NAME type = technical_efficiency difficulty = 11 }
+    # ?
+    component = { id = 15093 name = TECH_CMP_AIRCRAFT_252_3_NAME type = avionics difficulty = 11 }
+    # ?
+    component = { id = 15094 name = TECH_CMP_AIRCRAFT_252_4_NAME type = aeronautics difficulty = 11 }
+    # ?
+    component = { id = 15095 name = TECH_CMP_AIRCRAFT_252_5_NAME type = piloting difficulty = 11 double_time = yes }
+	required = { 4990 }
+	effects = {
+	command = { type = new_model which = b_11 value = 4 }
+	command = { type = scrap_model which = b_11 value = 3 }
+	}
+	}
   
 ####################### Bomber Section ###########################
   # Prewar bomber designs, Taube, Voisin
@@ -952,7 +1175,7 @@ technology =
   { id        = 4600
     name      = TECH_APP_AIRCRAFT_60_NAME
 
-    position  = { x = 226 y = 24 }
+    position  = { x = 226 y = 15 }
 	picture   = "DH4600"
     year      = 1911
     # Interwar Short-Range Bomber Engine
@@ -973,14 +1196,14 @@ technology =
   } 
   label =
   { tag      = TECH_CAT_cas
-    position = { x = 232 y = 100 }
+    position = { x = 232 y = 33 }
   }
   # Early Close Air Support Aircraft
   application =
   { id        = 4400
     name      = TECH_APP_AIRCRAFT_40_NAME
 
-    position  = { x = 226 y = 114 }
+    position  = { x = 226 y = 47 }
 	picture   = "DH4400"
     year      = 1934
     # Basic Short-Range Bomber Engine
@@ -1004,7 +1227,7 @@ technology =
   { id        = 4170
     name      = TECH_APP_AIRCRAFT_17_NAME
 
-    position  = { x = 226 y = 132 }
+    position  = { x = 226 y = 65 }
 	picture   = "4170"
     year      = 1937
     # Basic Short-Range Bomber Engine
@@ -1028,7 +1251,7 @@ technology =
   { id        = 4280
     name      = TECH_APP_AIRCRAFT_18_NAME
 
-    position  = { x = 226 y = 150 }
+    position  = { x = 226 y = 83 }
 	picture   = "4280"
     year      = 1940
     # Improved Short-Range Bomber Engine
@@ -1052,7 +1275,7 @@ technology =
   { id        = 4450
     name      = TECH_APP_AIRCRAFT_45_NAME
 
-    position  = { x = 226 y = 168 }
+    position  = { x = 226 y = 101 }
 	picture   = "DH4450"
     year      = 1943
     # Semi-modern Short-Range Bomber Engine
@@ -1076,7 +1299,7 @@ technology =
   { id        = 4180
     name      = TECH_APP_AIRCRAFT_19_NAME
 
-    position  = { x = 226 y = 186 }
+    position  = { x = 226 y = 119 }
 	picture   = "4180"
     year      = 1945
     # Advanced Short-Range Bomber Engine
@@ -1100,7 +1323,7 @@ technology =
   { id        = 15120
     name      = TECH_APP_AIRCRAFT_112_NAME
 
-    position  = { x = 226 y = 204 }
+    position  = { x = 226 y = 137 }
 	picture   = "15120"
     year      = 1948
     # Advanced Short-Range Bomber Engine
@@ -1124,7 +1347,7 @@ technology =
   { id        = 15130
     name      = TECH_APP_AIRCRAFT_113_NAME
 
-    position  = { x = 226 y = 222 }
+    position  = { x = 226 y = 155 }
 	picture   = "15130"
     year      = 1954
     # Advanced Short-Range Bomber Engine
@@ -1143,13 +1366,64 @@ technology =
       command = { type = scrap_model which = cas value = 5 }
     }
   }
+  #
+  application = {
+  id = 4420
+  name = TECH_APP_AIRCRAFT_222_NAME
+  
+  position = { x = 226 y = 173 }
+  picture = "15220"
+  year = 1966
+  
+  #Medium Turbojet Engine
+  component = { id = 4421 name = TECH_CMP_AIRCRAFT_222_1_NAME type = aeronautics difficulty = 9 }
+  #Light Bomber Airframe
+  component = { id = 4422 name = TECH_CMP_AIRCRAFT_222_2_NAME type = fighter_design difficulty = 9 }
+  #Air-to-surface missile
+  component = { id = 4423 name = TECH_CMP_AIRCRAFT_222_3_NAME type = rocketry difficulty = 9 }
+  #Terrain Following Radar
+  component = { id = 4424 name = TECH_CMP_AIRCRAFT_222_4_NAME type = avionics difficulty = 9 }
+  #Prototype Tests
+  component = { id = 4425 name = TECH_CMP_AIRCRAFT_222_5_NAME type = aircraft_testing difficulty = 9 double_time = yes }
+  required = { 15130 }
+  effects = {
+  command = { type = new_model which = cas value = 7 }
+      command = { type = scrap_model which = cas value = 8 }
+	  command = { type = activate_unit_type which = b_03 }
+	  command = { type = new_model which = b_03 value = 0 }
+    }
+  }
+  application = {
+  id = 4430
+  name = TECH_APP_AIRCRAFT_223_NAME
+  
+  position = { x = 226 y = 191 }
+  picture = "4430"
+  year = 1975
+  
+  #Modern Airfans
+  component = { id = 4431 name = TECH_CMP_AIRCRAFT_223_1_NAME type = aeronautics difficulty = 10 }
+  #Attack Aircraft Airframe
+  component = { id = 4432 name = TECH_CMP_AIRCRAFT_223_2_NAME type = fighter_design difficulty = 10 }
+  #30mm Fast Firing Cannon, A-S Missiles and Bombs
+  component = { id = 4433 name = TECH_CMP_AIRCRAFT_223_3_NAME type = rocketry difficulty = 10 }
+  #Laser Tracker Pod
+  component = { id = 4434 name = TECH_CMP_AIRCRAFT_223_4_NAME type = avionics difficulty = 10 }
+  #Prototype Tests
+  component = { id = 4435 name = TECH_CMP_AIRCRAFT_223_5_NAME type = aircraft_testing difficulty = 10 double_time = yes }
+  required = { 4420 }
+  effects = {
+  command = { type = new_model which = cas value = 8 }
+      command = { type = scrap_model which = cas value = 7 }
+    }
+  }
 #  label =
 #  { tag      = TECH_CAT_bombers
 #    position = { x = 226 y = 10 }
 #  }
   label =
   { tag      = TECH_CAT_tactbombers
-    position = { x = 340 y = 10 }
+    position = { x = 340 y = 1 }
   }
   # WW1 era bombers 
 # Early Bombers - Farman S.11, 
@@ -1157,7 +1431,7 @@ technology =
   { id        = 4610
     name      = TECH_APP_AIRCRAFT_61_NAME
 
-    position  = { x = 338 y = 24 }
+    position  = { x = 338 y = 15 }
 	picture   = "DH4610"
     year      = 1914
     # Interwar Short-Range Bomber Engine
@@ -1181,7 +1455,7 @@ technology =
   { id        = 4620
     name      = TECH_APP_AIRCRAFT_62_NAME
 
-    position  = { x = 338 y = 42 }
+    position  = { x = 338 y = 33 }
 	picture   = "DH4620"
     year      = 1916
     # Interwar Short-Range Bomber Engine
@@ -1205,7 +1479,7 @@ technology =
   { id        = 4630
     name      = TECH_APP_AIRCRAFT_63_NAME
 
-    position  = { x = 338 y = 60 }
+    position  = { x = 338 y = 51 }
 	picture   = "DH4630"
     year      = 1918
     # Interwar Short-Range Bomber Engine
@@ -1229,7 +1503,7 @@ technology =
   { id        = 4120
     name      = TECH_APP_AIRCRAFT_12_NAME
 
-    position  = { x = 338 y = 78 }
+    position  = { x = 338 y = 69 }
 	picture   = "4120"
     year      = 1924
     # Interwar Short-Range Bomber Engine
@@ -1253,7 +1527,7 @@ technology =
   { id        = 4130
     name      = TECH_APP_AIRCRAFT_13_NAME
 
-    position  = { x = 338 y = 96 }
+    position  = { x = 338 y = 87 }
 	picture   = "4130"
     year      = 1932
     # Early Short-Range Bomber Engine
@@ -1277,7 +1551,7 @@ technology =
   { id        = 4140
     name      = TECH_APP_AIRCRAFT_14_NAME
 
-    position  = { x = 338 y = 114 }
+    position  = { x = 338 y = 105 }
 	picture   = "4140"
     year      = 1938
     # Basic Medium-Range Bomber Engine
@@ -1301,7 +1575,7 @@ technology =
   { id        = 4150
     name      = TECH_APP_AIRCRAFT_15_NAME
 
-    position  = { x = 338 y = 132 }
+    position  = { x = 338 y = 123 }
 	picture   = "4150"
     year      = 1940
     # Improved Medium-Range Bomber Engine
@@ -1325,7 +1599,7 @@ technology =
   { id        = 4160
     name      = TECH_APP_AIRCRAFT_16_NAME
 
-    position  = { x = 338 y = 150 }
+    position  = { x = 338 y = 141 }
 	picture   = "4160"
     year      = 1943
     # Advanced Medium-Range Bomber Engine
@@ -1349,7 +1623,7 @@ technology =
   { id        = 15100
     name      = TECH_APP_AIRCRAFT_110_NAME
 
-    position  = { x = 338 y = 168 }
+    position  = { x = 338 y = 159 }
 	picture   = "15100"
     year      = 1945
     # ?
@@ -1373,7 +1647,7 @@ technology =
   { id        = 15110
     name      = TECH_APP_AIRCRAFT_111_NAME
 
-    position  = { x = 338 y = 186 }
+    position  = { x = 338 y = 177 }
 	picture   = "15110"
     year      = 1949
     # ?
@@ -1397,7 +1671,7 @@ technology =
   { id        = 4640
     name      = TECH_APP_AIRCRAFT_64_NAME
 
-    position  = { x = 391 y = 204 }
+    position  = { x = 338 y = 195 }
 	picture   = "DH4640"
     year      = 1954
     # ?
@@ -1414,16 +1688,14 @@ technology =
     effects =
     { command = { type = new_model which = tactical_bomber value = 11 }
       command = { type = scrap_model which = tactical_bomber value = 10 }
-	  command = { type = new_model which = naval_bomber value = 7 }
-      command = { type = scrap_model which = naval_bomber value = 6 }
-    }
+	}
   }
   # Advanced Turbojet Tac Bomber
   application =
   { id        = 4650
     name      = TECH_APP_AIRCRAFT_65_NAME
 
-    position  = { x = 391 y = 222 }
+    position  = { x = 338 y = 213 }
 	picture   = "DH4650"
     year      = 1960
     # ?
@@ -1440,20 +1712,22 @@ technology =
     effects =
     { command = { type = new_model which = tactical_bomber value = 12 }
       command = { type = scrap_model which = tactical_bomber value = 11 }
-	  command = { type = new_model which = naval_bomber value = 8 }
-      command = { type = scrap_model which = naval_bomber value = 7 }
+	  #command = { type = new_model which = naval_bomber value = 8 }
+      #command = { type = scrap_model which = naval_bomber value = 7 }
     }
-  }   
+  }
+  
+	
   label =
   { tag      = TECH_CAT_stratbombers
-    position = { x = 558 y = 10 }
+    position = { x = 558 y = 1 }
   }
 # 1st generation 4E Bombers - Sikorsky Mourometz V 1914
     application =
   { id        = 4800
     name      = TECH_APP_AIRCRAFT_80_NAME
 
-    position  = { x = 562 y = 24 }
+    position  = { x = 562 y = 15 }
 	picture   = "DH4800"
     year      = 1914
     # Interwar Short-Range Bomber Engine
@@ -1477,7 +1751,7 @@ technology =
   { id        = 4810
     name      = TECH_APP_AIRCRAFT_81_NAME
 
-    position  = { x = 562 y = 42 }
+    position  = { x = 562 y = 33 }
 	picture   = "DH4810"
     year      = 1918
     # Interwar Short-Range Bomber Engine
@@ -1501,7 +1775,7 @@ technology =
   { id        = 4820
     name      = TECH_APP_AIRCRAFT_82_NAME
 
-    position  = { x = 562 y = 60 }
+    position  = { x = 562 y = 51 }
 	picture   = "DH4820"
     year      = 1930
     # Interwar Short-Range Bomber Engine
@@ -1525,7 +1799,7 @@ technology =
   { id        = 4220
     name      = TECH_APP_AIRCRAFT_23_NAME
 
-    position  = { x = 562 y = 78 }
+    position  = { x = 562 y = 69 }
 	picture   = "4220"
     year      = 1935
     # Basic Long-Range Bomber Engine
@@ -1549,7 +1823,7 @@ technology =
   { id        = 4230
     name      = TECH_APP_AIRCRAFT_24_NAME
 
-    position  = { x = 562 y = 96 }
+    position  = { x = 562 y = 87 }
 	picture   = "4230"
     year      = 1939
     # Improved Long-Range Bomber Engine
@@ -1573,7 +1847,7 @@ technology =
   { id        = 4240
     name      = TECH_APP_AIRCRAFT_25_NAME
 
-    position  = { x = 562 y = 114 }
+    position  = { x = 562 y = 105 }
 	picture   = "4240"
     year      = 1942
     # Advanced Long-Range Bomber Engine
@@ -1597,7 +1871,7 @@ technology =
   { id        = 4246
     name      = TECH_APP_AIRCRAFT_246_NAME
 
-    position  = { x = 562 y = 132 }
+    position  = { x = 562 y = 123 }
 	picture   = "DH4246"
     year      = 1945
     # ?
@@ -1621,7 +1895,7 @@ technology =
   { id        = 15160
     name      = TECH_APP_AIRCRAFT_116_NAME
 
-    position  = { x = 562 y = 150 }
+    position  = { x = 562 y = 141 }
 	picture   = "15160"
     year      = 1949
     # ?
@@ -1645,7 +1919,7 @@ technology =
   { id        = 15170
     name      = TECH_APP_AIRCRAFT_117_NAME
 
-    position  = { x = 562 y = 168}
+    position  = { x = 562 y = 159 }
 	picture   = "15170"
     year      = 1954
     # ?
@@ -1669,7 +1943,7 @@ technology =
   { id        = 16030
     name      = TECH_APP_SW_103_NAME
 
-    position  = { x = 562 y = 186 }
+    position  = { x = 562 y = 177 }
 	picture   = "16030"
     year      = 1958
     component = { id = 16031 name = TECH_CMP_SW_103_1_NAME type = rocketry difficulty = 8 }
@@ -1684,18 +1958,46 @@ technology =
     required  = { 15170 }
     effects =
     { command = { type = new_model which = strategic_bomber value = 9 }
+	command = { type = scrap_model which = strategic_bomber value = 8 }
     }
   }
+  #Improved Intercontinental Strategic Bomber
+  application = {
+  id = 4840
+  name = TECH_APP_AIRCRAFT_237_NAME
+  
+  position = { x = 562 y = 195 }
+  picture = "4840"
+  year = 1962
+  
+  #Improved Intercontinental Strategic Bomber Airframe
+  component = { id = 4841 name = TECH_CMP_AIRCRAFT_237_1_NAME type = bomber_design difficulty = 9 }
+  #Improved Intercontinental Strategic Bomber Engine
+  component = { id = 4842 name = TECH_CMP_AIRCRAFT_237_2_NAME type = rocketry difficulty = 9 }
+  #Ultra Heavy Bomb Payload
+  component = { id = 4843 name = TECH_CMP_AIRCRAFT_237_3_NAME type = avionics difficulty = 9 }
+  #Countermeasures
+  component = { id = 4844 name = TECH_CMP_AIRCRAFT_237_4_NAME type = avionics difficulty = 9 }
+  #Prototype Tests
+  component = { id = 4845 name = TECH_CMP_AIRCRAFT_237_5_NAME type = aircraft_testing difficulty = 9 double_time = yes }
+  required = { 16030 }
+  effects =
+    { command = { type = new_model which = strategic_bomber value = 10 }
+	command = { type = scrap_model which = strategic_bomber value = 9 }
+	command = { type = info_may_cause which = 4870 }
+    }
+  }
+  
   label =
   { tag      = TECH_CAT_navbombers
-    position = { x = 449 y = 10 }
+    position = { x = 449 y = 1 }
   }
 # Early Naval Bomber
   application =
   { id        = 4700
     name      = TECH_APP_AIRCRAFT_70_NAME
 
-    position  = { x = 450 y = 60 }
+    position  = { x = 450 y = 15 }
 	picture   = "DH4700"
     year      = 1918
     # Basic Medium-Range Bomber Engine
@@ -1719,7 +2021,7 @@ technology =
   { id        = 4710
     name      = TECH_APP_AIRCRAFT_71_NAME
 
-    position  = { x = 450 y = 78 }
+    position  = { x = 450 y = 33 }
 	picture   = "DH4710"
     year      = 1924
     # Basic Medium-Range Bomber Engine
@@ -1743,7 +2045,7 @@ technology =
   { id        = 4190
     name      = TECH_APP_AIRCRAFT_20_NAME
 
-    position  = { x = 450 y = 114 }
+    position  = { x = 450 y = 51 }
 	picture   = "4190"
     year      = 1938
     # Basic Medium-Range Bomber Engine
@@ -1767,7 +2069,7 @@ technology =
   { id        = 4200
     name      = TECH_APP_AIRCRAFT_21_NAME
 
-    position  = { x = 450 y = 132 }
+    position  = { x = 450 y = 69 }
 	picture   = "4200"
     year      = 1941
     # Improved Medium-Range Bomber Engine
@@ -1791,7 +2093,7 @@ technology =
   { id        = 4210
     name      = TECH_APP_AIRCRAFT_22_NAME
 
-    position  = { x = 450 y = 150 }
+    position  = { x = 450 y = 87 }
 	picture   = "4210"
     year      = 1943
     # Advanced Medium-Range Bomber Engine
@@ -1815,7 +2117,7 @@ technology =
   { id        = 15140
     name      = TECH_APP_AIRCRAFT_114_NAME
 
-    position  = { x = 450 y = 168 }
+    position  = { x = 450 y = 105 }
 	picture   = "15140"
     year      = 1945
     # Advanced Medium-Range Bomber Engine
@@ -1839,7 +2141,7 @@ technology =
   { id        = 15150
     name      = TECH_APP_AIRCRAFT_115_NAME
 
-    position  = { x = 450 y = 186 }
+    position  = { x = 450 y = 123 }
 	picture   = "15150"
     year      = 1949
     # Advanced Medium-Range Bomber Engine
@@ -1858,16 +2160,112 @@ technology =
       command = { type = scrap_model which = naval_bomber value = 5 }
     }
   }
+    # Adv Turbojet Naval Bomber
+  application =
+  { id        = 15290
+    name      = TECH_APP_AIRCRAFT_259_NAME
+
+    position  = { x = 450 y = 141 }
+	picture   = "15290"
+    year      = 1954
+    # Advanced Medium-Range Bomber Engine
+    component = { id = 15291 name = TECH_CMP_AIRCRAFT_259_1_NAME type = bomber_design difficulty = 7 double_time = yes }
+    # Advanced Medium Bomber Airframe
+    component = { id = 15292 name = TECH_CMP_AIRCRAFT_259_2_NAME type = aeronautics difficulty = 7 }
+    # Airborne Homing Torpedos
+    component = { id = 15293 name = TECH_CMP_AIRCRAFT_259_3_NAME type = rocketry difficulty = 7 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id = 15294 name = TECH_CMP_AIRCRAFT_259_4_NAME type = avionics difficulty = 7 }
+    # Advanced Medium-Range Bomber Prototype Tests
+    component = { id = 15295 name = TECH_CMP_AIRCRAFT_259_5_NAME type = aircraft_testing difficulty = 7 double_time = yes }
+    required  = { 15150 }
+    effects =
+    { command = { type = new_model which = naval_bomber value = 7 }
+      command = { type = scrap_model which = naval_bomber value = 6 }
+    }
+  }
+      # Adv Turbojet Naval Bomber
+  application =
+  { id        = 15300
+    name      = TECH_APP_AIRCRAFT_260_NAME
+
+    position  = { x = 450 y = 159 }
+	picture   = "15300"
+    year      = 1961
+    # Advanced Medium-Range Bomber Engine
+    component = { id = 15301 name = TECH_CMP_AIRCRAFT_260_1_NAME type = bomber_design difficulty = 7 double_time = yes }
+    # Advanced Medium Bomber Airframe
+    component = { id = 15302 name = TECH_CMP_AIRCRAFT_260_2_NAME type = aeronautics difficulty = 7 }
+    # Airborne Homing Torpedos
+    component = { id = 15303 name = TECH_CMP_AIRCRAFT_260_3_NAME type = rocketry difficulty = 7 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id = 15304 name = TECH_CMP_AIRCRAFT_260_4_NAME type = avionics difficulty = 7 }
+    # Advanced Medium-Range Bomber Prototype Tests
+    component = { id = 15305 name = TECH_CMP_AIRCRAFT_260_5_NAME type = aircraft_testing difficulty = 7 double_time = yes }
+    required  = { 15290 }
+    effects =
+    { command = { type = new_model which = naval_bomber value = 8 }
+      command = { type = scrap_model which = naval_bomber value = 7 }
+    }
+  }
+        # Modern Turbojet Naval Bomber
+  application =
+  { id        = 15310
+    name      = TECH_APP_AIRCRAFT_261_NAME
+
+    position  = { x = 450 y = 177 }
+	picture   = "15310"
+    year      = 1974
+    # Advanced Medium-Range Bomber Engine
+    component = { id = 15311 name = TECH_CMP_AIRCRAFT_261_1_NAME type = bomber_design difficulty = 8 double_time = yes }
+    # Advanced Medium Bomber Airframe
+    component = { id = 15312 name = TECH_CMP_AIRCRAFT_261_2_NAME type = aeronautics difficulty = 8 }
+    # Airborne Homing Torpedos
+    component = { id = 15313 name = TECH_CMP_AIRCRAFT_261_3_NAME type = rocketry difficulty = 8 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id = 15314 name = TECH_CMP_AIRCRAFT_261_4_NAME type = avionics difficulty = 8 }
+    # Advanced Medium-Range Bomber Prototype Tests
+    component = { id = 15315 name = TECH_CMP_AIRCRAFT_261_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+    required  = { 15300 }
+    effects =
+    { command = { type = new_model which = naval_bomber value = 9 }
+      command = { type = scrap_model which = naval_bomber value = 8 }
+    }
+  }
+          # Improved Modern Turbojet Naval Bomber
+  application =
+  { id        = 15320
+    name      = TECH_APP_AIRCRAFT_262_NAME
+
+    position  = { x = 450 y = 195 }
+	picture   = "15320"
+    year      = 1985
+    # Advanced Medium-Range Bomber Engine
+    component = { id = 15321 name = TECH_CMP_AIRCRAFT_262_1_NAME type = bomber_design difficulty = 9 double_time = yes }
+    # Advanced Medium Bomber Airframe
+    component = { id = 15322 name = TECH_CMP_AIRCRAFT_262_2_NAME type = aeronautics difficulty = 9 }
+    # Airborne Homing Torpedos
+    component = { id = 15323 name = TECH_CMP_AIRCRAFT_262_3_NAME type = rocketry difficulty = 9 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id = 15324 name = TECH_CMP_AIRCRAFT_262_4_NAME type = avionics difficulty = 9 }
+    # Advanced Medium-Range Bomber Prototype Tests
+    component = { id = 15325 name = TECH_CMP_AIRCRAFT_262_5_NAME type = aircraft_testing difficulty = 9 double_time = yes }
+    required  = { 15310 }
+    effects =
+    { command = { type = new_model which = naval_bomber value = 10 }
+      command = { type = scrap_model which = naval_bomber value = 9 }
+    }
+  }
   label =
   { tag      = TECH_CAT_airtransp
-    position = { x = 558 y = 250 }
+    position = { x = 558 y = 231 }
   }
   # Early Air Transport
   application =
   { id        = 4290
     name      = TECH_APP_AIRCRAFT_29_NAME
 
-    position  = { x = 562 y = 264 }
+    position  = { x = 562 y = 245 }
 	picture   = "10020"
     year      = 1926
     # Basic Long-Range Bomber Engine
@@ -1891,7 +2289,7 @@ technology =
   { id        = 4250
     name      = TECH_APP_AIRCRAFT_26_NAME
 
-    position  = { x = 562 y = 282 }
+    position  = { x = 562 y = 263 }
 	picture   = "4250"
     year      = 1934
     # Basic Long-Range Bomber Engine
@@ -1915,7 +2313,7 @@ technology =
   { id        = 4260
     name      = TECH_APP_AIRCRAFT_27_NAME
 
-    position  = { x = 562 y = 300 }
+    position  = { x = 562 y = 281 }
 	picture   = "4260"
     year      = 1938
     # Improved Long-Range Bomber Engine
@@ -1940,7 +2338,7 @@ technology =
   { id        = 4270
     name      = TECH_APP_AIRCRAFT_28_NAME
 
-    position  = { x = 562 y = 318 }
+    position  = { x = 562 y = 299 }
 	picture   = "4270"
     year      = 1941
     # Advanced Long-Range Bomber Engine
@@ -1965,7 +2363,7 @@ technology =
   { id        = 15180
     name      = TECH_APP_AIRCRAFT_118_NAME
 
-    position  = { x = 562 y = 336 }
+    position  = { x = 562 y = 317 }
 	picture   = "15180"
     year      = 1944
     component = { id = 15181 name = TECH_CMP_AIRCRAFT_118_1_NAME type = bomber_design difficulty = 7 double_time = yes }
@@ -1985,7 +2383,7 @@ technology =
   { id        = 15190
     name      = TECH_APP_AIRCRAFT_119_NAME
 
-    position  = { x = 562 y = 354 }
+    position  = { x = 562 y = 335 }
 	picture   = "15190"
     year      = 1950
     component = { id = 15191 name = TECH_CMP_AIRCRAFT_119_1_NAME type = bomber_design difficulty = 8 double_time = yes }
@@ -2001,16 +2399,195 @@ technology =
 	  command = { type = info_may_cause which = 7240 } # Air Cavalry Division
     }
   }
+  # Imp Modern Air Transport
+  application = {
+  id = 15200
+  name = TECH_APP_AIRCRAFT_220_NAME
+  
+  position = { x = 562 y = 353 }
+  picture = "15200"
+  year = 1957
+  
+  #3,400 kW Engine
+  component = { id = 15201 name = TECH_CMP_AIRCRAFT_220_1_NAME type = aeronautics difficulty = 8 }
+  #Transport Airframe
+  component = { id = 15202 name = TECH_CMP_AIRCRAFT_220_2_NAME type = bomber_design difficulty = 8 double_time = yes }
+  #Very Large Cargo Capacity
+  component = { id = 15203 name = TECH_CMP_AIRCRAFT_220_3_NAME type = bomber_design difficulty = 8 }
+  #Weather & Navegational radar
+  component = { id = 15204 name = TECH_CMP_AIRCRAFT_220_4_NAME type = avionics difficulty = 8 }
+  #Prototype Tests
+  component = { id = 15205 name = TECH_CMP_AIRCRAFT_220_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+  required = { 15190 }
+  effects =
+    { command = { type = new_model which = transport_plane value = 6 }
+      command = { type = scrap_model which = transport_plane value = 5 }
+      command = { type = task_efficiency which = air_supply value = 0.8 }
+	  }
+  }
+  #adv Modern air transport
+  application = {
+  id = 15210
+  name = TECH_APP_AIRCRAFT_221_NAME
+  position = { x = 562 y = 371 }
+  picture = "15210"
+  year = 1965
+  
+  #Cargo Turbojet Engines
+  component = { id = 15211 name = TECH_CMP_AIRCRAFT_221_1_NAME type = rocketry difficulty = 8 }
+  #Transport Airframe
+  component = { id = 15222 name = TECH_CMP_AIRCRAFT_221_2_NAME type = bomber_design difficulty = 8 double_time = yes }
+  #Airlifter level Cargo Capacity
+  component = { id = 15223 name = TECH_CMP_AIRCRAFT_221_3_NAME type = bomber_design difficulty = 8 }
+  #Adv Modern Avionics
+  component = { id = 15224 name = TECH_CMP_AIRCRAFT_221_4_NAME type = avionics difficulty = 8 }
+  #Prototype Tests
+  component = { id = 15225 name = TECH_CMP_AIRCRAFT_221_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+  required = { 15200 }
+  effects =
+    { command = { type = new_model which = transport_plane value = 7 }
+      command = { type = scrap_model which = transport_plane value = 6 }
+      command = { type = task_efficiency which = air_supply value = 0.9 }
+	  }
+  }
+    #adv Modern air transport
+  application = {
+  id = 15330
+  name = TECH_APP_AIRCRAFT_263_NAME
+  position = { x = 562 y = 389 }
+  picture = "15330"
+  year = 1980
+  
+  #Cargo Turbojet Engines
+  component = { id = 15331 name = TECH_CMP_AIRCRAFT_263_1_NAME type = rocketry difficulty = 10 }
+  #Transport Airframe
+  component = { id = 15332 name = TECH_CMP_AIRCRAFT_263_2_NAME type = bomber_design difficulty = 10 double_time = yes }
+  #Airlifter level Cargo Capacity
+  component = { id = 15333 name = TECH_CMP_AIRCRAFT_263_3_NAME type = bomber_design difficulty = 10 }
+  #Adv Modern Avionics
+  component = { id = 15334 name = TECH_CMP_AIRCRAFT_263_4_NAME type = avionics difficulty = 10 }
+  #Prototype Tests
+  component = { id = 15335 name = TECH_CMP_AIRCRAFT_263_5_NAME type = aircraft_testing difficulty = 10 double_time = yes }
+  required = { 15210 }
+  effects =
+    { command = { type = new_model which = transport_plane value = 8 }
+      command = { type = scrap_model which = transport_plane value = 7 }
+      command = { type = task_efficiency which = air_supply value = 1 }
+	  }
+  }
+      #adv Modern air transport
+  application = {
+  id = 15340
+  name = TECH_APP_AIRCRAFT_264_NAME
+  position = { x = 562 y = 407 }
+  picture = "15340"
+  year = 1992
+  
+  #Cargo Turbojet Engines
+  component = { id = 15341 name = TECH_CMP_AIRCRAFT_264_1_NAME type = rocketry difficulty = 12 }
+  #Transport Airframe
+  component = { id = 15342 name = TECH_CMP_AIRCRAFT_264_2_NAME type = bomber_design difficulty = 12 double_time = yes }
+  #Airlifter level Cargo Capacity
+  component = { id = 15343 name = TECH_CMP_AIRCRAFT_264_3_NAME type = bomber_design difficulty = 12 }
+  #Adv Modern Avionics
+  component = { id = 15344 name = TECH_CMP_AIRCRAFT_264_4_NAME type = avionics difficulty = 12 }
+  #Prototype Tests
+  component = { id = 15345 name = TECH_CMP_AIRCRAFT_264_5_NAME type = aircraft_testing difficulty = 12 double_time = yes }
+  required = { 15330 }
+  effects =
+    { command = { type = new_model which = transport_plane value = 9 }
+      command = { type = scrap_model which = transport_plane value = 8 }
+      command = { type = task_efficiency which = air_supply value = 1.1 }
+	  }
+  }
+  label = {
+  tag = TECH_CAT_FIXEDWINGGUNSHIP
+  position = { x = 338 y = 429 }
+  }
+  application = { 
+  id = 4690
+  name = TECH_APP_AIRCRAFT_233_NAME
+  position = { x = 338 y = 443 }
+  picture = "4690"
+  year = 1965
+  
+  #Old transport adapatation
+  component = { id = 4691 name = TECH_CMP_AIRCRAFT_233_1_NAME type = bomber_design difficulty = 8 }
+  #Weapon mounting
+  component = { id = 4692 name = TECH_CMP_AIRCRAFT_233_2_NAME type = mechanics difficulty = 8 }
+  #Fly-Over Tactics
+  component = { id = 4693 name = TECH_CMP_AIRCRAFT_233_3_NAME type = piloting difficulty = 4 }
+  #Land Team Coordination
+  component = { id = 4694 name = TECH_CMP_AIRCRAFT_233_4_NAME type = combined_arms_focus difficulty = 5 }
+  #Prototype Tests
+  component = { id = 4695 name = TECH_CMP_AIRCRAFT_233_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+  required = { 4370 4590 }
+  effects = {
+  command = { trigger = { technology = 27230 } type = activate_unit_type which = b_04 }
+  command = { trigger = { technology = 27230 } type = new_model which = b_04 value = 0 }
+  command = { type = activate_unit_type which = b_13 }
+  command = { type = new_model which = b_13 value = 0 }
+  }
+  }
+  application = {
+  id = 4720
+  name = TECH_APP_AIRCRAFT_234_NAME
+  position = { x = 338 y = 461 }
+  picture = "4720"
+  year = 1968
+  #Old transport adapatation
+  component = { id = 4721 name = TECH_CMP_AIRCRAFT_234_1_NAME type = bomber_design difficulty = 8 }
+  #Weapon mounting
+  component = { id = 4722 name = TECH_CMP_AIRCRAFT_234_2_NAME type = mechanics difficulty = 8 }
+  #Fly-Over Tactics
+  component = { id = 4723 name = TECH_CMP_AIRCRAFT_234_3_NAME type = piloting difficulty = 4 }
+  #Land Team Coordination
+  component = { id = 4724 name = TECH_CMP_AIRCRAFT_234_4_NAME type = combined_arms_focus difficulty = 5 }
+  #Prototype Tests
+  component = { id = 4725 name = TECH_CMP_AIRCRAFT_234_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+  required = { 4690 }
+  effects = {
+  command = { trigger = { technology = 27230 } type = new_model which = b_04 value = 1 }
+  command = { trigger = { technology = 27230 } type = scrap_model which = b_04 value = 0 }
+  command = { type = new_model which = b_13 value = 1 }
+  command = { type = scrap_model which = b_13 value = 0 }
+  }
+  }
+  application = {
+  id = 4730
+  name = TECH_APP_AIRCRAFT_235_NAME
+  position = { x = 338 y = 479 }
+  picture = "4730"
+  year = 1975
+  #Modern transport adapatation
+  component = { id = 4731 name = TECH_CMP_AIRCRAFT_235_1_NAME type = bomber_design difficulty = 8 }
+  #Weapon mounting
+  component = { id = 4732 name = TECH_CMP_AIRCRAFT_235_2_NAME type = mechanics difficulty = 8 }
+  #Fly-Over Tactics
+  component = { id = 4733 name = TECH_CMP_AIRCRAFT_235_3_NAME type = piloting difficulty = 4 }
+  #Land Team Coordination
+  component = { id = 4734 name = TECH_CMP_AIRCRAFT_235_4_NAME type = combined_arms_focus difficulty = 5 }
+  #Prototype Tests
+  component = { id = 4735 name = TECH_CMP_AIRCRAFT_235_5_NAME type = aircraft_testing difficulty = 8 double_time = yes }
+  required = { 4690 }
+  effects = {
+  command = { trigger = { technology = 27230 } type = new_model which = b_04 value = 2 }
+  command = { trigger = { technology = 27230 } type = scrap_model which = b_04 value = 1 }
+  command = { type = new_model which = b_13 value = 2 }
+  command = { type = scrap_model which = b_13 value = 1 }
+  }
+  }
+  
     label =
   { tag      = TECH_CAT_SEAPLANES
-    position = { x = 338 y = 250 }
+    position = { x = 338 y = 231 }
   }
   	# Early Seaplanes
   application =
   { id        = 4740
     name      = TECH_APP_AIRCRAFT_74_NAME
 
-    position = { x = 338 y = 264 }
+    position = { x = 338 y = 245 }
 	picture   = "DH4740"
     year      = 1911
     # Seaplane design study
@@ -2034,7 +2611,7 @@ technology =
   { id        = 4750
     name      = TECH_APP_AIRCRAFT_75_NAME
 
-    position = { x = 338 y = 282 }
+    position = { x = 338 y = 263 }
 	picture   = "DH4750"
     year      = 1914
     # Seaplane design study
@@ -2058,7 +2635,7 @@ technology =
   { id        = 4760
     name      = TECH_APP_AIRCRAFT_76_NAME
 
-    position = { x = 338 y = 300 }
+    position = { x = 338 y = 281 }
 	picture   = "DH4760"
     year      = 1918
     # Seaplane design study
@@ -2082,7 +2659,7 @@ technology =
   { id        = 4770
     name      = TECH_APP_AIRCRAFT_77_NAME
 
-    position = { x = 338 y = 318 }
+    position = { x = 338 y = 299 }
 	picture   = "DH4770"
     year      = 1924
     # Seaplane design study
@@ -2106,7 +2683,7 @@ technology =
   { id        = 4780
     name      = TECH_APP_AIRCRAFT_78_NAME
 
-    position = { x = 338 y = 336 }
+    position = { x = 338 y = 317 }
 	picture   = "DH4780"
     year      = 1928
     # Seaplane design study
@@ -2130,7 +2707,7 @@ technology =
   { id        = 4790
     name      = TECH_APP_AIRCRAFT_79_NAME
 
-    position = { x = 338 y = 354 }
+    position = { x = 338 y = 335 }
 	picture   = "DH4790"
     year      = 1932
     # Seaplane design study
@@ -2154,7 +2731,7 @@ technology =
   { id        = 4850
     name      = TECH_APP_AIRCRAFT_85_NAME
 
-    position = { x = 338 y = 372 }
+    position = { x = 338 y = 353 }
 	picture   = "DH4850"
     year      = 1937
     # Seaplane design study
@@ -2178,7 +2755,7 @@ technology =
   { id        = 4860
     name      = TECH_APP_AIRCRAFT_86_NAME
 
-    position = { x = 338 y = 390 }
+    position = { x = 338 y = 371 }
 	picture   = "DH4860"
     year      = 1941
     # Seaplane design study
@@ -2197,16 +2774,280 @@ technology =
 	  command = { type = scrap_model which = floatplane value = 6 }
     }
   }
-  label =
-  { tag      = TECH_CAT_CAG
-    position = { x = 449 y = 250 }
+  label = { 
+  tag = TECH_CAT_AWACS
+  position = { x = 562 y = 447 }
+  }
+  application = {
+  id = 15230
+  name = TECH_APP_AIRCRAFT_253_NAME
+  position = { x = 562 y = 461 }
+  picture = "15230"
+  year = 1953
+  
+  component = { id = 15231 name = TECH_CMP_AIRCRAFT_253_1_NAME type = bomber_design difficulty = 7 }
+  component = { id = 15232 name = TECH_CMP_AIRCRAFT_253_2_NAME type = avionics difficulty = 6 }
+  component = { id = 15233 name = TECH_CMP_AIRCRAFT_253_3_NAME type = piloting difficulty = 4 }
+  component = { id = 15234 name = TECH_CMP_AIRCRAFT_253_4_NAME type = combined_arms_focus difficulty = 5 }
+  component = { id = 15235 name = TECH_CMP_AIRCRAFT_253_5_NAME type = aircraft_testing difficulty = 6 double_time = yes }
+  required = { 4246 53030 }
+  effects = {
+  command = { type = activate_unit_type which = b_12 }
+  command = { type = new_model which = b_12 value = 0 }
+  }
+  }
+   application = {
+  id = 15240
+  name = TECH_APP_AIRCRAFT_254_NAME
+  position = { x = 562 y = 479 }
+  picture = "15240"
+  year = 1977
+  
+  component = { id = 15241 name = TECH_CMP_AIRCRAFT_254_1_NAME type = bomber_design difficulty = 7 }
+  component = { id = 15242 name = TECH_CMP_AIRCRAFT_254_2_NAME type = avionics difficulty = 6 }
+  component = { id = 15243 name = TECH_CMP_AIRCRAFT_254_3_NAME type = piloting difficulty = 4 }
+  component = { id = 15244 name = TECH_CMP_AIRCRAFT_254_4_NAME type = combined_arms_focus difficulty = 5 }
+  component = { id = 15245 name = TECH_CMP_AIRCRAFT_254_5_NAME type = aircraft_testing difficulty = 6 double_time = yes }
+  required = { 15230 }
+  #Note to myself: Add more radar techs
+ 
+  effects = {
+	command = { type = new_model which = b_12 value = 1 }
+	command = { type = scrap_model which = b_12 value = 0 }
+  }
+  }
+  label =  { 
+  tag = TECH_CAG_NAVHELO
+  position = { x = 3 y = 393 }
+  }
+  application = {
+  id = 4440
+  name = TECH_APP_AIRCRAFT_224_NAME
+  position = { x = 3 y = 407 }
+  picture = "4440"
+  year = 1943
+  
+  #Improvement of Experimental Helicopter
+  component = { id = 4441 name = TECH_CMP_AIRCRAFT_224_1_NAME type = rt_user_1 difficulty = 3 }
+  #Usage in S&R
+  component = { id = 4442 name = TECH_CMP_AIRCRAFT_224_2_NAME type = piloting difficulty = 3 }
+  #Early Portable Detection Devices
+  component = { id = 4443 name = TECH_CMP_AIRCRAFT_224_3_NAME type = general_equipment difficulty = 2 }
+  #Ship Coordination
+  component = { id = 4444 name = TECH_CMP_AIRCRAFT_224_4_NAME type = seamanship difficulty = 2 }
+  # Prototype Tests
+  component = { id = 4445 name = TECH_CMP_AIRCRAFT_224_5_NAME type = aircraft_testing difficulty = 3 double_time = yes }
+  required = { 4860 }
+  effects = { 
+  command = { type = activate_unit_type which = b_01 }
+  command = { type = new_model which = b_01 value = 0 }
+  }
+  }
+  application = {
+  id = 4460
+  name = TECH_APP_AIRCRAFT_225_NAME
+  position = { x = 3 y = 425 }
+  picture = "4460"
+  year = 1947
+  
+  #Ultra Light Helicopter Airframe
+  component = { id = 4461 name = TECH_CMP_AIRCRAFT_225_1_NAME type = rt_user_1 difficulty = 4 }
+  #Predefined Patrol Routes
+  component = { id = 4462 name = TECH_CMP_AIRCRAFT_225_2_NAME type = seamanship difficulty = 4 }
+  #Submarine Spotting Training
+  component = { id = 4463 name = TECH_CMP_AIRCRAFT_225_3_NAME type = piloting difficulty = 4 }
+  #Portable Small Radio
+  component = { id = 4464 name = TECH_CMP_AIRCRAFT_225_4_NAME type = avionics difficulty = 4 }
+  #Prototype Tests
+  component = { id = 4465 name = TECH_CMP_AIRCRAFT_225_5_NAME type = aircraft_testing difficulty = 4 double_time = yes }
+  required = { 4440 }
+  effects = { 
+  command = { type = new_model which = b_01 value = 1 }
+  command = { type = scrap_model which = b_01 value = 0 }
+  }
+  }
+  application = {
+  id = 4470
+  name = TECH_APP_AIRCRAFT_226_NAME
+  position = { x = 3 y = 443 }
+  picture = "4470"
+  year = 1953
+  
+  #Naval Adaptation process of an Army Helicopter
+  component = { id = 4471 name = TECH_CMP_AIRCRAFT_226_1_NAME type = rt_user_1 difficulty = 4 }
+  #Air Dropped Depth Charge
+  component = { id = 4472 name = TECH_CMP_AIRCRAFT_226_2_NAME type = naval_artillery difficulty = 3 }
+  #Early Portable ASW Radar
+  component = { id = 4473 name = TECH_CMP_AIRCRAFT_226_3_NAME type = avionics difficulty = 4 }
+  #Helicopter ASW Attack training
+  component = { id = 4474 name = TECH_CMP_AIRCRAFT_226_4_NAME type = piloting difficulty = 4 }
+  #Prototype Tests
+  component = { id = 4475 name = TECH_CMP_AIRCRAFT_226_5_NAME type = aircraft_testing difficulty = 4 double_time = yes }
+  required = { 4460 7240 }
+  effects = { 
+  command = { type = new_model which = b_01 value = 2 }
+  command = { type = scrap_model which = b_01 value = 1 }
+  command = { type = activate_unit_type which = b_15 }
+  command = { type = new_model which = b_15 value = 0 }
+  }
+  }
+  application = {
+  id = 4480
+  name = TECH_APP_AIRCRAFT_227_NAME
+  position = { x = 3 y = 461 }
+  picture = "4480"
+  year = 1961
+  
+  #ASW Dedicated Submarine Helicopter Airframe
+  component = { id = 4481 name = TECH_CMP_AIRCRAFT_227_1_NAME type = rt_user_1 difficulty = 5 }
+  #Advanced ASW Torpedoes
+  component = { id = 4482 name = TECH_CMP_AIRCRAFT_227_2_NAME type = naval_artillery difficulty = 4 }
+  #Sonobuoys
+  component = { id = 4483 name = TECH_CMP_AIRCRAFT_227_3_NAME type = avionics difficulty = 5 }
+  #Dipping Sonar
+  component = { id = 4484 name = TECH_CMP_AIRCRAFT_227_4_NAME type = avionics difficulty = 5 }
+  #Prototype Tests
+  component = { id = 4485 name = TECH_CMP_AIRCRAFT_227_5_NAME type = aircraft_testing difficulty = 5 double_time = yes }
+  required = { 4470 }
+  effects = { 
+  command = { type = new_model which = b_01 value = 3 }
+  command = { type = scrap_model which = b_01 value = 2 }
+  command = { type = new_model which = b_15 value = 1 }
+  command = { type = scrap_model which = b_15 value = 0 }
+  }
+  }
+  application = {
+  id = 4490
+  name = TECH_APP_AIRCRAFT_228_NAME
+  position = { x = 3 y = 479 }
+  picture = "4490"
+  year = 1978
+  
+  #Modern Submarine Hunter Helicopter Airframe
+  component = { id = 4491 name = TECH_CMP_AIRCRAFT_228_1_NAME type = rt_user_1 difficulty = 7 }
+  #Modern ASW Torpedoes
+  component = { id = 4492 name = TECH_CMP_AIRCRAFT_228_2_NAME type = naval_artillery difficulty = 6 }
+  #Rapid Airborne Mine Clearance System (RAMICS)
+  component = { id = 4493 name = TECH_CMP_AIRCRAFT_228_3_NAME type = piloting difficulty = 6 }
+  #Magnetic anomaly detector
+  component = { id = 4494 name = TECH_CMP_AIRCRAFT_228_4_NAME type = avionics difficulty = 7 }
+  #Prototype Tests
+  component = { id = 4495 name = TECH_CMP_AIRCRAFT_228_5_NAME type = aircraft_testing difficulty = 7 double_time = yes }
+  required = { 4480 }
+  effects = { 
+  command = { type = new_model which = b_01 value = 4 }
+  command = { type = scrap_model which = b_01 value = 3 }
+    command = { type = new_model which = b_15 value = 2 }
+  command = { type = scrap_model which = b_15 value = 1 }
+  }
+  }
+  label = {
+  tag = TECH_CAT_ATTHELO
+  position = { x = 114 y = 411 }
+  }
+  application = {
+  id = 4590
+  name = TECH_APP_AIRCRAFT_229_NAME
+  position = { x = 114 y = 425 }
+  picture = "4590"
+  year = 1962
+  
+  #Transport Helicopter Conversion Study
+  component = { id = 4591 name = TECH_CMP_AIRCRAFT_229_1_NAME type = rt_user_1 difficulty = 4 }
+  #Weaponry Coupling
+  component = { id = 4592 name = TECH_CMP_AIRCRAFT_229_2_NAME type = mechanics difficulty = 3 }
+  #Infantry Support Tactics
+  component = { id = 4593 name = TECH_CMP_AIRCRAFT_229_3_NAME type = piloting difficulty = 4 }
+  #Fast Infil and Exfil
+  component = { id = 4594 name = TECH_CMP_AIRCRAFT_229_4_NAME type = small_unit_tactics difficulty = 4 }
+  #Prototype Tests
+  component = { id = 4595 name = TECH_CMP_AIRCRAFT_229_5_NAME type = aircraft_testing difficulty = 3 double_time = yes }
+  required = { 4480 7640 }
+  effects = {
+  command = { type = activate_unit_type which = b_02 }
+  command = { type = new_model which = b_02 value = 0 }
+  }
+  }
+  application = {
+  id = 4660
+  name = TECH_APP_AIRCRAFT_230_NAME
+  position = { x = 114 y = 443 }
+  picture = "4660"
+  year = 1967
+  
+  #Attack Helicopter Airframe
+  component = { id = 4661 name = TECH_CMP_AIRCRAFT_230_1_NAME type = rt_user_1 difficulty = 5 }
+  #Multi-Barrelled Miniguns
+  component = { id = 4662 name = TECH_CMP_AIRCRAFT_230_2_NAME type = artillery difficulty = 4 }
+  #AA Evading Tactics
+  component = { id = 4663 name = TECH_CMP_AIRCRAFT_230_3_NAME type = piloting difficulty = 5 }
+  #AT Tactics
+  component = { id = 4664 name = TECH_CMP_AIRCRAFT_230_4_NAME type = piloting difficulty = 5 }
+  #Prototype Tests
+  component = { id = 4665 name = TECH_CMP_AIRCRAFT_230_5_NAME type = aircraft_testing difficulty = 4 double_time = yes }
+  required = { 4590 }
+  effects = {
+  command = { type = new_model which = b_02 value = 1 }
+  command = { type = scrap_model which = b_02 value = 0 }
+  }
+  }
+  application = {
+  id = 4670
+  name = TECH_APP_AIRCRAFT_231_NAME
+  position = { x = 114 y = 461 }
+  picture = "4670"
+  year = 1975
+  
+  #Attack Helicopter Airframe
+  component = { id = 4671 name = TECH_CMP_AIRCRAFT_231_1_NAME type = rt_user_1 difficulty = 6 }
+  #Ground attack & AA armament
+  component = { id = 4672 name = TECH_CMP_AIRCRAFT_231_2_NAME type = artillery difficulty = 5 }
+  #Fast AT Destroying Tactics
+  component = { id = 4673 name = TECH_CMP_AIRCRAFT_231_3_NAME type = piloting difficulty = 6 }
+  #Radar Assembling
+  component = { id = 4674 name = TECH_CMP_AIRCRAFT_231_4_NAME type = electronics difficulty = 6 }
+  #Prototype Tests
+  component = { id = 4675 name = TECH_CMP_AIRCRAFT_231_5_NAME type = aircraft_testing difficulty = 5 double_time = yes }
+  required = { 4660 }
+  effects = {
+  command = { type = new_model which = b_02 value = 2 }
+  command = { type = scrap_model which = b_02 value = 1 }
+  }
+  }
+  application = {
+  id = 4680
+  name = TECH_APP_AIRCRAFT_232_NAME
+  position = { x = 114 y = 479 }
+  picture = "4680"
+  year = 1980
+  
+  #Advanced Attack Helicopter Airframe
+  component = { id = 4681 name = TECH_CMP_AIRCRAFT_232_1_NAME type = rt_user_1 difficulty = 7 }
+  #Area Weapon Subsystem
+  component = { id = 4682 name = TECH_CMP_AIRCRAFT_232_2_NAME type = artillery difficulty = 6 }
+  #Fire Control Radar
+  component = { id = 4683 name = TECH_CMP_AIRCRAFT_232_3_NAME type = avionics difficulty = 7 }
+  #Rotor Systems
+  component = { id = 4684 name = TECH_CMP_AIRCRAFT_232_1_NAME type = rt_user_1 difficulty = 7 }
+  #Prototype Tests
+  component = { id = 4685 name = TECH_CMP_AIRCRAFT_232_5_NAME type = aircraft_testing difficulty = 6 double_time = yes }
+  required = { 4670 }
+  effects = {
+  command = { type = new_model which = b_02 value = 3 }
+  command = { type = scrap_model which = b_02 value = 2 }
+  }
+  }
+ 
+  label = {
+   tag      = TECH_CAT_CAG
+    position = { x = 453 y = 231 }
   }
     # Carrier Air Group 1922
   application =
   { id        = 4900
     name      = TECH_APP_AIRCRAFT_90_NAME
 
-    position = { x = 450 y = 264 }
+    position = { x = 450 y = 245 }
 	picture   = "DH4900"
     year      = 1922
     # Carrier capable Dive bomber 
@@ -2234,7 +3075,7 @@ technology =
   { id        = 4910
     name      = TECH_APP_AIRCRAFT_91_NAME
 
-    position  = { x = 450 y = 282 }
+    position  = { x = 450 y = 263 }
 	picture   = "DH4910"
     year      = 1930
     component = { id = 4911 name = TECH_CMP_AIRCRAFT_91_1_NAME type = bomber_design difficulty = 4 }
@@ -2256,7 +3097,7 @@ technology =
   { id        = 4920
     name      = TECH_APP_AIRCRAFT_92_NAME
 
-    position  = { x = 450 y = 300 }
+    position  = { x = 450 y = 281 }
 	picture   = "DH4920"
     year      = 1934
     component = { id = 4921 name = TECH_CMP_AIRCRAFT_92_1_NAME type = bomber_design difficulty = 4 }
@@ -2278,7 +3119,7 @@ technology =
   { id        = 4930
     name      = TECH_APP_AIRCRAFT_93_NAME
 
-    position  = { x = 450 y = 318 }
+    position  = { x = 450 y = 299 }
 	picture   = "DH4930"
     year      = 1937
     component = { id = 4931 name = TECH_CMP_AIRCRAFT_93_1_NAME type = bomber_design difficulty = 4 }
@@ -2300,7 +3141,7 @@ technology =
   { id        = 4940
     name      = TECH_APP_AIRCRAFT_94_NAME
 
-    position  = { x = 450 y = 336 }
+    position  = { x = 450 y = 317 }
 	picture   = "DH4940"
     year      = 1940
     component = { id = 4941 name = TECH_CMP_AIRCRAFT_94_1_NAME type = bomber_design difficulty = 5 }
@@ -2322,7 +3163,7 @@ technology =
   { id        = 4950
     name      = TECH_APP_AIRCRAFT_95_NAME
 
-    position  = { x = 450 y = 354 }
+    position  = { x = 450 y = 335 }
 	picture   = "DH4950"
     year      = 1943
     component = { id = 4951 name = TECH_CMP_AIRCRAFT_95_1_NAME type = bomber_design difficulty = 5 }
@@ -2344,7 +3185,7 @@ technology =
   { id        = 4960
     name      = TECH_APP_AIRCRAFT_96_NAME
 
-    position  = { x = 450 y = 372 }
+    position  = { x = 450 y = 353 }
 	picture   = "DH4960"
     year      = 1947
     component = { id = 4961 name = TECH_CMP_AIRCRAFT_96_1_NAME type = bomber_design difficulty = 6 }
@@ -2366,7 +3207,7 @@ technology =
   { id        = 7050
     name      = TECH_APP_SW_5_NAME
 
-    position  = { x = 450 y = 390 }
+    position  = { x = 450 y = 371 }
 	picture   = "7050"
     year      = 1951 # was 1944
     # Naval Turbojet Engine
@@ -2389,7 +3230,7 @@ technology =
   { id = 7280
     name = TECH_APP_SW_30_NAME # new
 
-    position = { x = 450 y = 408 }
+    position = { x = 450 y = 389 }
 	picture   = "7280"
     year = 1956
     # Improved Turbojet Engine
@@ -2405,6 +3246,101 @@ technology =
       command = { type = scrap_model which = cag value = 7 }
 	  command = { type = new_model which = light_cag value = 8 }
 	  command = { type = scrap_model which = light_cag value = 7 }
+	}
+  }
+  # Adv. Turbojet Carrier Air Group
+  application =
+  { id = 15250
+    name = TECH_APP_AIRCRAFT_255_NAME 
+
+    position = { x = 450 y = 407 }
+	picture   = "15250"
+    year = 1961
+    # Improved Turbojet Engine
+    component = { id = 15251 name = TECH_CMP_AIRCRAFT_255_1_NAME type = rocketry difficulty = 12 }
+    component = { id = 15252 name = TECH_CMP_AIRCRAFT_255_2_NAME type = bomber_design difficulty = 9 }
+    component = { id = 15253 name = TECH_CMP_AIRCRAFT_255_3_NAME type = munitions difficulty = 8 }
+    component = { id = 15254 name = TECH_CMP_AIRCRAFT_255_4_NAME type = avionics difficulty = 9 }
+    component = { id = 15255 name = TECH_CMP_AIRCRAFT_255_5_NAME type = Fighter_Design difficulty = 9 }	
+    component = { id = 15256 name = TECH_CMP_AIRCRAFT_255_6_NAME type = aircraft_testing difficulty = 11 double_time = yes }
+    required = { 7280 }
+    effects =
+    { command = { type = new_model which = cag value = 9 }
+      command = { type = scrap_model which = cag value = 8 }
+	  command = { type = new_model which = light_cag value = 9 }
+	  command = { type = scrap_model which = light_cag value = 8 }
+	}
+  }
+    # Semi-Mod. Turbojet Carrier Air Group
+  application =
+  { id = 15260
+    name = TECH_APP_AIRCRAFT_256_NAME 
+
+    position = { x = 450 y = 425 }
+	picture   = "15260"
+    year = 1970
+    # Improved Turbojet Engine
+    component = { id = 15261 name = TECH_CMP_AIRCRAFT_256_1_NAME type = rocketry difficulty = 13 }
+    component = { id = 15262 name = TECH_CMP_AIRCRAFT_256_2_NAME type = bomber_design difficulty = 10 }
+    component = { id = 15263 name = TECH_CMP_AIRCRAFT_256_3_NAME type = munitions difficulty = 9 }
+    component = { id = 15264 name = TECH_CMP_AIRCRAFT_256_4_NAME type = avionics difficulty = 10 }
+    component = { id = 15265 name = TECH_CMP_AIRCRAFT_256_5_NAME type = Fighter_Design difficulty = 10 }	
+    component = { id = 15266 name = TECH_CMP_AIRCRAFT_256_6_NAME type = aircraft_testing difficulty = 12 double_time = yes }
+    required = { 15250 }
+    effects =
+    { command = { type = new_model which = cag value = 10 }
+      command = { type = scrap_model which = cag value = 9 }
+	  command = { type = new_model which = light_cag value = 10 }
+	  command = { type = scrap_model which = light_cag value = 9 }
+	  
+	}
+  }
+      # Mod. Turbojet Carrier Air Group
+  application =
+  { id = 15270
+    name = TECH_APP_AIRCRAFT_257_NAME 
+
+    position = { x = 450 y = 443 }
+	picture   = "15270"
+    year = 1974
+    # Improved Turbojet Engine
+    component = { id = 15271 name = TECH_CMP_AIRCRAFT_257_1_NAME type = rocketry difficulty = 14 }
+    component = { id = 15272 name = TECH_CMP_AIRCRAFT_257_2_NAME type = bomber_design difficulty = 11 }
+    component = { id = 15273 name = TECH_CMP_AIRCRAFT_257_3_NAME type = munitions difficulty = 10 }
+    component = { id = 15274 name = TECH_CMP_AIRCRAFT_257_4_NAME type = avionics difficulty = 11 }
+    component = { id = 15275 name = TECH_CMP_AIRCRAFT_257_5_NAME type = Fighter_Design difficulty = 11 }	
+    component = { id = 15276 name = TECH_CMP_AIRCRAFT_257_6_NAME type = aircraft_testing difficulty = 13 double_time = yes }
+    required = { 15260 }
+    effects =
+    { command = { type = new_model which = cag value = 11 }
+      command = { type = scrap_model which = cag value = 10 }
+	  command = { type = new_model which = light_cag value = 11 }
+	  command = { type = scrap_model which = light_cag value = 10 }
+	  
+	}
+  }
+        # Imp Mod. Turbojet Carrier Air Group
+  application =
+  { id = 15280
+    name = TECH_APP_AIRCRAFT_258_NAME 
+
+    position = { x = 450 y = 461 }
+	picture   = "15280"
+    year = 1983
+    # Improved Turbojet Engine
+    component = { id = 15281 name = TECH_CMP_AIRCRAFT_258_1_NAME type = rocketry difficulty = 15 }
+    component = { id = 15282 name = TECH_CMP_AIRCRAFT_258_2_NAME type = bomber_design difficulty = 12 }
+    component = { id = 15283 name = TECH_CMP_AIRCRAFT_258_3_NAME type = munitions difficulty = 11 }
+    component = { id = 15284 name = TECH_CMP_AIRCRAFT_258_4_NAME type = avionics difficulty = 12 }
+    component = { id = 15285 name = TECH_CMP_AIRCRAFT_258_5_NAME type = Fighter_Design difficulty = 12 }	
+    component = { id = 15286 name = TECH_CMP_AIRCRAFT_258_6_NAME type = aircraft_testing difficulty = 14 double_time = yes }
+    required = { 15270 }
+    effects =
+    { command = { type = new_model which = cag value = 12 }
+      command = { type = scrap_model which = cag value = 11 }
+	  command = { type = new_model which = light_cag value = 12 }
+	  command = { type = scrap_model which = light_cag value = 11 }
+	  
 	}
   }
 }

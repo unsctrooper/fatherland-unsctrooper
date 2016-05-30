@@ -6,6 +6,8 @@ allowed_brigades = naval_fire_controll_s
 allowed_brigades = naval_improved_hull_s
 allowed_brigades = naval_torpedoes_s
 allowed_brigades = floatplane
+allowed_brigades = b_01
+allowed_brigades = b_14
 
 # 0 - Protected Light Cruiser (1881)
 model = {
@@ -292,6 +294,35 @@ model = {
 	supplyconsumption			= 0.8
 	fuelconsumption				= 0.0
 	distance					= 0.26
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { light_cruiser = 1 manpower = 850 }
+}
+
+# 10 - Anti Air Light Cruiser (1940) Atlanta-class/Bellona class
+model = {
+	cost						= 1.4
+	buildtime 					= 1090
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.85
+	maxspeed					= 35
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 9
+	subdetectioncapability		= 8
+	visibility					= 60
+	seadefence					= 36
+	airdefence					= 12
+	seaattack					= 5
+	convoyattack				= 5
+	subattack					= 1
+	airattack					= 24
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 9000
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.4
+	distance					= 0.24
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
 	equipment = { light_cruiser = 1 manpower = 850 }

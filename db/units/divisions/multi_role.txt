@@ -1,5 +1,6 @@
 # MODEL_12_
 
+allowed_brigades = b_11
 upgrade = { type = cas					upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
 upgrade = { type = interceptor			upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
 upgrade = { type = rocket_interceptor	upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
@@ -80,7 +81,6 @@ model = {
 	fuelconsumption				= 0.7
 	upgrade_time_factor		 	= 0.60 
 	upgrade_cost_factor 		= 0.50
-	upgrade_time_boost 			= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 100 }
@@ -106,8 +106,8 @@ model = {
 	range						= 325
 	supplyconsumption 			= 1.1
 	fuelconsumption				= 1.8
-	upgrade_time_factor 		= 0.90
-	upgrade_cost_factor 		= 1.00
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	equipment = { fighter = 100 manpower = 100 }
@@ -221,7 +221,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 8 - Advanced Multi-Role Fighter (1945)
+# 8 - Advanced Multi-Role Fighter (1945) P-47N
 model = { 
 	cost 						= 22
 	buildtime	 				= 210
@@ -248,7 +248,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 9 - Early Turbojet Multi-Role Fighter (1948)
+# 9 - Early Turbojet Multi-Role Fighter -First Generation (1948) Mikoyan-Gurevich MiG-15/Republic F-84 Thunderjet/Dassault MD.452 Mystère/Saab 21R/De Havilland Vampire FB.5
 model = { 
 	cost 						= 24
 	buildtime	 				= 210
@@ -275,7 +275,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 10 - Basic Turbojet Multi-Role Fighter (1950)
+# 10 - Basic Turbojet Multi-Role Fighter -First Generation (1950) Republic F-84F Thunderstreak/Mikoyan-Gurevich MiG-17/Dassault MD.454 Mystère IV/De Havilland Venom FB.1
 model = { 
 	cost 						= 25
 	buildtime	 				= 210
@@ -302,7 +302,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 11 - Improved Turbojet Multi-Role Fighter (1954)
+# 11 - Improved Turbojet Multi-Role Fighter - Second Generation (1954) Mikoyan-Gurevich MiG-19 Sukhoi Su-7/North American F-100D Super Sabre McDonnell F-101 Voodoo/Hawker Hunter F.4/Saab 32 Lansen/Dassault Super Mystère B2/
 model = { 
 	cost 						= 26
 	buildtime	 				= 210
@@ -329,7 +329,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 12 - Supersonic Turbojet Multi-Role Fighter (1959)
+# 12 - Supersonic Turbojet Multi-Role Fighter - Second Generation (1959) English Electric Lightning F.6/Mikoyan-Gurevich Mig-21/Saab 35 Draken/Republic F-105 Thunderchief Lockheed F-104G Starfighter/Dassault Mirage IIIE/HAL HF-24 Marut/IAI Nesher
 model = { 
 	cost 						= 27
 	buildtime	 				= 210
@@ -356,7 +356,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 13 - Modern Supersonic Turbojet Multi-Role Fighter (1963)
+# 13 - Modern Supersonic Turbojet Multi-Role Fighter - Third Generation (1963) F-4D Phantom II Northrop F-5A/Mikoyan-Gurevich Mig-21bis/Dassault Mirage F.1C/Saab 37 Viggen/HESA Saeqeh
 model = { 
 	cost 						= 28
 	buildtime	 				= 210
@@ -380,5 +380,144 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 14 - Advanced Supersonic Turbojet Multi-Role Fighter  - Third Generation (1968) F-4E Phantom II Northrop F-5E Tiger II/Mikoyan Gurevich MiG-23B/IAI Kfir/Atlas Cheetah/Dassault Mirage F1E
+model = { 
+	cost 						= 29
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2000
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 12
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 9
+	strategicattack				= 0
+	softattack					= 8
+	hardattack					= 8
+	navalattack					= 8
+	range						= 1300
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.0
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 15 - Fourth Generation Supersonic Turbojet Multi-Role Fighter (1976) F-16 Fighting Falcon/Sukhoi Su-27S/Mikoyan MiG-29/Panavia Tornado IDS/Dassault Mirage 2000-5/AIDC F-CK-1 Ching-kuo
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2300
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 13
+	surfacedefence				= 2
+	airdefence					= 4
+	airattack					= 10
+	strategicattack				= 0
+	softattack					= 11
+	hardattack					= 11
+	navalattack					= 11
+	range						= 1500
+	supplyconsumption 			= 2.1
+	fuelconsumption				= 3.1
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 16 - Fourth & Half Generation Supersonic Turbojet Multi-Role Fighter (1983) F-18 Hornet/Mig-35/Eurofighter Typhoon/Saab JAS 39 Gripen/Dassault Rafale/HAL Tejas
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2500
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 15
+	surfacedefence				= 2
+	airdefence					= 3
+	airattack					= 13
+	strategicattack				= 2
+	softattack					= 13
+	hardattack					= 13
+	navalattack					= 13
+	range						= 1700
+	supplyconsumption 			= 2.1
+	fuelconsumption				= 3.1
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 18
+	multi_role = 17
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 17 - Stealth Fighter (1983) Lockheed F-117 Nighthawk
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2000
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 15
+	surfacedefence				= 1
+	airdefence					= 1
+	airattack					= 13
+	strategicattack				= 3
+	softattack					= 13
+	hardattack					= 10
+	navalattack					= 10
+	range						= 1500
+	supplyconsumption 			= 2.1
+	fuelconsumption				= 3.1
+	upgrade_time_factor 		= 0.80 
+	upgrade_cost_factor 		= 1.0
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 18
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 18 - Fifth Generation Supersonic Turbojet Multi-Role Fighter (1990) F-22 Raptor/Sukhoi PAK FA/Chengdu J-20
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2500
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 16
+	surfacedefence				= 2
+	airdefence					= 2
+	airattack					= 15
+	strategicattack				= 4
+	softattack					= 15
+	hardattack					= 15
+	navalattack					= 15
+	range						= 2000
+	supplyconsumption 			= 2.3
+	fuelconsumption				= 3.5
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 17
 	equipment = { fighter = 100 manpower = 100 }
 }

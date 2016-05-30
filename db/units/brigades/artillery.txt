@@ -13,7 +13,7 @@ model = {
 	supplyconsumption 	= 0.24
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 7
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 22 }
 }
 
@@ -30,7 +30,7 @@ model = {
 	supplyconsumption 	= 0.32
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 7
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 42 }
 }
 
@@ -47,7 +47,7 @@ model = {
 	supplyconsumption 	= 0.44
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 7
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 }
 }
 
@@ -64,7 +64,7 @@ model = {
 	supplyconsumption 	= 0.44
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 26 heavy_artillery = 18  }
 }
 
@@ -81,7 +81,7 @@ model = {
 	supplyconsumption 	= 0.46
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 28 heavy_artillery = 22  }
 }
 
@@ -98,7 +98,7 @@ model = {
 	supplyconsumption 	= 0.48
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 }
 }
 
@@ -115,7 +115,7 @@ model = {
 	supplyconsumption 	= 0.5
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -132,7 +132,7 @@ model = {
 	supplyconsumption 	= 0.55
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -149,7 +149,7 @@ model = {
 	supplyconsumption 	= 0.55
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -166,7 +166,7 @@ model = {
 	supplyconsumption 	= 0.60
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 6
+	speed_cap			= 8
 	equipment = { manpower = 3000 horses = 780 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -183,7 +183,7 @@ model = {
 	supplyconsumption	= 0.65
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 14
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 668 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -200,7 +200,7 @@ model = {
 	supplyconsumption 	= 0.65
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 15
+	speed_cap			= 18
 	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -217,7 +217,7 @@ model = {
 	supplyconsumption 	= 0.7
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 15
+	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }
 
@@ -234,6 +234,40 @@ model = {
 	supplyconsumption 	= 0.8
 	upgrade_time_factor = 0.4
 	upgrade_cost_factor = 0.55
-	speed_cap			= 15
+	speed_cap			= 22
+	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
+}
+
+# 14 - Improved Modern Field Artillery (1963)
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	toughness 			= -3	
+	maxspeed 			= 0
+	softattack			= 10
+	hardattack			= 5
+	supplyconsumption 	= 0.9
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 22
+	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
+}
+
+# 15 - Improved Modern Field Artillery (1975) FH-70/M198 howitzer/L118
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= -3
+	toughness 			= -3	
+	maxspeed 			= 0
+	softattack			= 12
+	hardattack			= 7
+	supplyconsumption 	= 0.9
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 22
 	equipment = { manpower = 3000 trucks = 680 artillery = 48 heavy_artillery = 24 anti_tank = 51 }
 }

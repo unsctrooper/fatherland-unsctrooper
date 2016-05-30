@@ -39,3 +39,43 @@ model = {
 	speed_cap			= 19
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
+
+# 2 - Light Glider Armor (1958)
+model = {
+	cost 				= 9
+	buildtime	 		= 170 # 140 for regular L ARM
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 3
+	softattack			= 6 
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 19
+	equipment = { manpower = 2500 medium_armor = 94 }
+}
+
+# 3 - Airborne IFV (1968) -M551 Sheridan, BMD-1
+model = {
+	cost 				= 9
+	buildtime	 		= 170 # 140 for regular L ARM
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 4
+	softattack			= 10 
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 19
+	equipment = { manpower = 2500 medium_armor = 94 }
+}

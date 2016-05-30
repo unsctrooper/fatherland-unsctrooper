@@ -259,40 +259,11 @@ model = {
 	airattack					= 7
 	shorebombardment			= 2
 	transportcapability			= 0
-	range						= 9000
+	range						= 8500
 	supplyconsumption			= 0.3
 	fuelconsumption				= 0.3
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
 	equipment = { destroyer = 5 manpower = 1600 }
-}
-
-# 9 - Missile Destroyer (1955)
-model = {
-	cost						= 1.6
-	buildtime 					= 570
-	defaultorganisation 		= 20
-	morale						= 30
-	manpower					= 1.65
-	maxspeed					= 35
-	surfacedetectioncapability	= 4
-	airdetectioncapability		= 9
-	subdetectioncapability		= 14
-	visibility					= 50
-	seadefence					= 33
-	airdefence					= 21
-	seaattack					= 9
-	convoyattack				= 9
-	subattack					= 16
-	airattack					= 9
-	shorebombardment			= 2
-	transportcapability			= 0
-	range						= 10000
-	supplyconsumption			= 0.3
-	fuelconsumption				= 0.3
-	distance					= 0.22
-	reinforce_time				= 0.4
-	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 1650 }
 }

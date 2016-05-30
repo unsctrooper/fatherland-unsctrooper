@@ -126,18 +126,39 @@ model = {
 	upgrade_cost_factor 		= 0.6
 }
 
-# 6 - ASW Suite (1962) guided rockets
+# 6 - ASW Suite (1964) ASW Missiles
 model = {
 	cost 						= 2.0
 	buildtime					= 100
 	manpower 					= 0.0
 	surfacedetectioncapability	= 0
 	airdetectioncapability		= 0
-	subdetectioncapability		= 7
+	subdetectioncapability		= 9
 	airdefence					= 0
 	seaattack					= 0
 	convoyattack				= 0
-	subattack					= 15
+	subattack					= 12
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 7 - ASW Suite (1980) ASW Missiles
+model = {
+	cost 						= 2.0
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 10
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 16
 	airattack					= 0
 	shorebombardment			= 0
 	distance					= 0

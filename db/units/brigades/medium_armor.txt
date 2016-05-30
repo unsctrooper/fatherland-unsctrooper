@@ -219,3 +219,103 @@ model = {
 	speed_cap			= 24
 	equipment = { manpower = 2500 medium_armor = 154 }
 }
+
+# 11 - Improved Modern MBT (1967)
+model = {
+	cost 				= 15
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -3
+	toughness 			= -3
+	defaultorganisation = 8
+	softness			= -5
+	hardattack			= 9
+	softattack			= 10
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 4.5
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 24
+	equipment = { manpower = 2500 medium_armor = 112 }
+}
+
+# 12 - Advanced Modern MBT (1976)
+model = {
+	cost 				= 16
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -3
+	toughness 			= -3
+	defaultorganisation = 8
+	softness			= -5
+	hardattack			= 11
+	softattack			= 13
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 5.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 24
+	equipment = { manpower = 2500 medium_armor = 112 }
+}
+
+# 13 - Advanced Modern MBT (1980)
+model = {
+	cost 				= 17
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -4
+	toughness 			= -3
+	defaultorganisation = 8
+	softness			= -5
+	hardattack			= 13
+	softattack			= 15
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 5.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 24
+	equipment = { manpower = 2500 medium_armor = 112 }
+}
+
+# 14 - Advanced Modern MBT (1985)
+model = {
+	cost 				= 18
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -5
+	toughness 			= -3
+	defaultorganisation = 8
+	softness			= -5
+	hardattack			= 15
+	softattack			= 18
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 5.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 24
+	equipment = { manpower = 2500 medium_armor = 112 }
+}
+
+# 15 - Futuristic Modern MBT (1992)
+model = {
+	cost 				= 20
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -5
+	toughness 			= -3
+	defaultorganisation = 8
+	softness			= -5
+	hardattack			= 18
+	softattack			= 22
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 5.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 24
+	equipment = { manpower = 2500 medium_armor = 112 }
+}

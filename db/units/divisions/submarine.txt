@@ -265,7 +265,7 @@ model = {
 	equipment = { submarine = 5 manpower = 400 }
 }
 
-# 9 - Modern Submarine (1955)
+# 9 - Modern Submarine (1955) Type 201/Oberon Class/Zulu Class/Narval-class
 model = {
 	cost						= 2.5
 	buildtime					= 450
@@ -279,9 +279,9 @@ model = {
 	visibility					= 0.1
 	seadefence					= 32
 	airdefence					= 19
-	seaattack					= 5
-	convoyattack				= 10
-	subattack					= 5
+	seaattack					= 6
+	convoyattack				= 11
+	subattack					= 6
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
@@ -294,89 +294,89 @@ model = {
 	equipment = { submarine = 5 manpower = 450 }
 }
 
-# 10 - Nuclear Submarine (1954)
+# 10 - Basic Modern Submarine (1960) Foxtrot-class/type 205/Aréthuse-class
 model = {
 	cost						= 3
-	buildtime					= 1000
+	buildtime					= 450
 	defaultorganisation			= 10
 	morale						= 30
-	manpower					= 0.5
-	maxspeed					= 25
+	manpower					= 0.45
+	maxspeed					= 23
 	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
 	subdetectioncapability		= 1
 	visibility					= 0.1
-	seadefence					= 28
-	airdefence					= 16
+	seadefence					= 33
+	airdefence					= 20
+	seaattack					= 7
+	convoyattack				= 13
+	subattack					= 7
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { submarine = 5 manpower = 450 }
+}
+
+# 11 - Improved Modern Submarine (1967) Tango Class/Type 206
+model = {
+	cost						= 3.5
+	buildtime					= 450
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.45
+	maxspeed					= 24
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 34
+	airdefence					= 21
 	seaattack					= 8
-	convoyattack				= 12
+	convoyattack				= 15
 	subattack					= 8
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 40000
-	supplyconsumption			= 1.9
-	fuelconsumption				= 0
+	range						= 16000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 500 }
+	equipment = { submarine = 5 manpower = 450 }
 }
 
-# 11 - Nuclear Attack Submarine (1957)
+# 12 - Advanced Modern Submarine (1980) Kilo class/Type 209
 model = {
-	cost						= 3.5
-	buildtime					= 1000
+	cost						= 4
+	buildtime					= 450
 	defaultorganisation			= 10
 	morale						= 30
-	manpower					= 0.55
-	maxspeed					= 25
+	manpower					= 0.45
+	maxspeed					= 26
 	surfacedetectioncapability	= 1
 	airdetectioncapability		= 1
-	subdetectioncapability		= 1
+	subdetectioncapability		= 2
 	visibility					= 0.1
-	seadefence					= 28
-	airdefence					= 16
-	seaattack					= 8
-	convoyattack				= 12
-	subattack					= 8
+	seadefence					= 36
+	airdefence					= 23
+	seaattack					= 10
+	convoyattack				= 18
+	subattack					= 10
 	airattack					= 1
 	shorebombardment			= 0
 	transportcapability			= 0
-	range						= 40000
-	supplyconsumption			= 1.9
-	fuelconsumption				= 0
+	range						= 17000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 550 }
-}
-
-# 12 - Nuclear Ballistic Submarine (1960)
-model = {
-	cost						= 3.5
-	buildtime					= 1000
-	defaultorganisation			= 10
-	morale						= 30
-	manpower					= 0.55
-	maxspeed					= 25
-	surfacedetectioncapability	= 1
-	airdetectioncapability		= 1
-	subdetectioncapability		= 1
-	visibility					= 0.1
-	seadefence					= 28
-	airdefence					= 16
-	seaattack					= 5
-	convoyattack				= 7
-	subattack					= 4
-	airattack					= 1
-	shorebombardment			= 8
-	transportcapability			= 0
-	range						= 40000
-	supplyconsumption			= 1.9
-	fuelconsumption				= 0
-	distance					= 0.2
-	reinforce_time				= 0.4
-	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 550 }
+	equipment = { submarine = 5 manpower = 450 }
 }

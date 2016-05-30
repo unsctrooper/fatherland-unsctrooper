@@ -4,6 +4,7 @@ allowed_brigades = cag
 allowed_brigades = naval_anti_air_l
 allowed_brigades = naval_radar_l
 allowed_brigades = naval_improved_hull_l
+allowed_brigades = b_08
 max_allowed_brigades = 4
 
 # 0 - Converted Carrier (1922)
@@ -259,6 +260,35 @@ model = {
 	shorebombardment			= 2
 	transportcapability			= 0
 	range						= 40000
+	supplyconsumption			= 3.5
+	fuelconsumption				= 0
+	distance					= 0.05
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 5000 }
+}
+
+# 9 - Improved Nuclear Carrier (1967)
+model = {
+	cost						= 9
+	buildtime 					= 2506
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 5.5
+	maxspeed					= 34
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 5
+	subdetectioncapability		= 1
+	visibility					= 100
+	seadefence					= 14
+	airdefence					= 21
+	seaattack					= 6
+	convoyattack				= 6
+	subattack					= 1
+	airattack					= 6
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 60000
 	supplyconsumption			= 3.5
 	fuelconsumption				= 0
 	distance					= 0.05

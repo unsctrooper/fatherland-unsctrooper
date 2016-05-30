@@ -6,14 +6,14 @@ technology =
   desc        = TECH_INDUSTRY_DESC # Localized description
   label =
   { tag      = TECH_CAT_AGRICULTURE
-    position = { x = 554 y = 10 }
+    position = { x = 576 y = 1 }
   }
   #Early Agriculture Research
   application =
   { id        = 5700
     name      = TECH_APP_INDUSTRY_70_NAME
 
-    position  = { x = 554 y = 24 }
+    position  = { x = 576 y = 15 }
 	picture   = "DH5700"
     year      = 1910
     # 
@@ -38,7 +38,7 @@ technology =
   { id        = 5710
     name      = TECH_APP_INDUSTRY_71_NAME
 
-    position  = { x = 554 y = 42 }
+    position  = { x = 576 y = 33 }
 	picture   = "DH5710"
     year      = 1915
     # Early Tractors
@@ -63,7 +63,7 @@ technology =
   { id        = 5010
     name      = TECH_APP_INDUSTRY_1_NAME
 
-    position  = { x = 554 y = 60 }
+    position  = { x = 576 y = 51 }
 	picture   = "5010"
     year      = 1922
     # Scientific Plowing Technique
@@ -88,7 +88,7 @@ technology =
   { id        = 5020
     name      = TECH_APP_INDUSTRY_2_NAME
 
-    position  = { x = 554 y = 78 }
+    position  = { x = 576 y = 69 }
 	picture   = "5020"
     year      = 1928
     # Plowing Machine
@@ -113,7 +113,7 @@ technology =
   { id        = 5030
     name      = TECH_APP_INDUSTRY_3_NAME
 
-    position  = { x = 554 y = 96 }
+    position  = { x = 576 y = 87 }
 	picture   = "5030"
     year      = 1937
     # Synthetic Fertilizers
@@ -138,7 +138,7 @@ technology =
   { id        = 5040
     name      = TECH_APP_INDUSTRY_4_NAME
 
-    position  = { x = 554 y = 114 }
+    position  = { x = 576 y = 105 }
 	picture   = "5040"
     year      = 1945
     # Industrial Pasteurization
@@ -163,9 +163,10 @@ technology =
   { id        = 5720
     name      = TECH_APP_INDUSTRY_72_NAME
 
-    position  = { x = 554 y = 132 }
+    position  = { x = 576 y = 123 }
 	picture   = "13000"
     year      = 1950
+
     # Improved Tractors
     component = { id = 5721 name = TECH_CMP_INDUSTRY_72_1_NAME type = vehicle_engineering difficulty = 7 }
     # Mechanical combine
@@ -188,7 +189,7 @@ technology =
   { id        = 53000
     name      = TECH_APP_INDUSTRY_100_NAME
 
-    position  = { x = 554 y = 150 }
+    position  = { x = 576 y = 141 }
 	picture   = "13010"
     year      = 1955
     # Industrial Pasteurization
@@ -213,7 +214,7 @@ technology =
   { id        = 53010
     name      = TECH_APP_INDUSTRY_101_NAME
 
-    position  = { x = 554 y = 168 }
+    position  = { x = 576 y = 159 }
 	picture   = "DH53010"
     year      = 1960
     # Industrial Pasteurization
@@ -235,14 +236,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_MANUFACTURING
-    position = { x = 24 y = 10 }
+    position = { x = 5 y = 1 }
   }
   # Scientific Management
   application =
   { id        = 5810
     name      = TECH_APP_INDUSTRY_81_NAME
 
-    position  = { x = 24 y = 24 }
+    position  = { x = 5 y = 15 }
 	picture   = "DH5810"
     year      = 1910
    # Cemented Tungsten Carbide
@@ -265,7 +266,7 @@ technology =
   { id        = 5820
     name      = TECH_APP_INDUSTRY_82_NAME
 
-    position  = { x = 24 y = 42 }
+    position  = { x = 5 y = 33 }
 	picture   = "DH5820"
     year      = 1915
    # Cemented Tungsten Carbide
@@ -289,7 +290,7 @@ technology =
   { id        = 5050
     name      = TECH_APP_INDUSTRY_5_NAME
 
-    position  = { x = 24 y = 60 }
+    position  = { x = 5 y = 51 }
 	picture   = "5050"
     year      = 1920
     # Cemented Tungsten Carbide
@@ -312,7 +313,7 @@ technology =
   { id        = 5830
     name      = TECH_APP_INDUSTRY_83_NAME
 
-    position  = { x = 24 y = 78 }
+    position  = { x = 5 y = 69 }
 	picture   = "5080"
     year      = 1925
    # Cemented Tungsten Carbide
@@ -335,7 +336,7 @@ technology =
   { id        = 5060
     name      = TECH_APP_INDUSTRY_6_NAME
 
-    position  = { x = 24 y = 96 }
+    position  = { x = 5 y = 87 }
 	picture   = "5060"
     year      = 1930
     # Industrial Ceramic
@@ -351,10 +352,6 @@ technology =
     required  = { 5830 }
     effects =
     { command = { type = industrial_modifier which = total value = 2 }
-      command = { type = activate_unit_type which = naval_improved_hull_l }
-      command = { type = new_model which = naval_improved_hull_l value = 0 }
-      command = { type = activate_unit_type which = naval_improved_hull_s }
-      command = { type = new_model which = naval_improved_hull_s value = 0 }
     }
   }
   # Advanced Machine Tools / Product standardisation
@@ -362,7 +359,7 @@ technology =
   { id        = 5070
     name      = TECH_APP_INDUSTRY_7_NAME
 
-    position  = { x = 24 y = 114 }
+    position  = { x = 5 y = 105 }
 	picture   = "5070"
     year      = 1935
     # Industrial Diamonds
@@ -385,7 +382,7 @@ technology =
   { id        = 5130
     name      = TECH_APP_INDUSTRY_13_NAME
 
-    position  = { x = 24 y = 132 }
+    position  = { x = 5 y = 123 }
 	picture   = "5130"
     year      = 1940
     # Modular Design
@@ -409,7 +406,7 @@ technology =
   { id        = 5110
     name      = TECH_APP_INDUSTRY_11_NAME
 
-    position  = { x = 24 y = 150 }
+    position  = { x = 5 y = 141 }
 	picture   = "5110"
     year      = 1945
     # Mass Production
@@ -433,7 +430,7 @@ technology =
   { id        = 5120
     name      = TECH_APP_INDUSTRY_12_NAME
 
-    position  = { x = 24 y = 168 }
+    position  = { x = 5 y = 159 }
 	picture   = "5120"
     year      = 1950
     # General Production Planning
@@ -457,7 +454,7 @@ technology =
   { id        = 5840
     name      = TECH_APP_INDUSTRY_84_NAME
 
-    position  = { x = 24 y = 186 }
+    position  = { x = 5 y = 177 }
 	picture   = "DH5840"
     year      = 1955
    # Cemented Tungsten Carbide
@@ -480,11 +477,11 @@ technology =
   { id        = 5850
     name      = TECH_APP_INDUSTRY_85_NAME
 
-    position  = { x = 24 y = 204 }
+    position  = { x = 5 y = 195 }
 	picture   = "DH5850"
     year      = 1960
    # Cemented Tungsten Carbide
-    component = { id = 5871 name = TECH_CMP_INDUSTRY_85_1_NAME type = electronics difficulty = 9 }
+    component = { id = 5851 name = TECH_CMP_INDUSTRY_85_1_NAME type = electronics difficulty = 9 }
     # Precision Techniques
     component = { id = 5852 name = TECH_CMP_INDUSTRY_85_2_NAME type = management difficulty = 9 }
     # Basic Welding Techniques
@@ -499,12 +496,34 @@ technology =
 	  command = { type = industrial_modifier which = supplies value = 5 }
     }
   }
+    # Industrial Robotics 
+  application =
+  { id        = 5730
+    name      = TECH_APP_INDUSTRY_117_NAME
+    position  = { x = 7 y = 213 }
+    picture   = "5730"
+    year      = 1961
+    # Improved Industrial Computers
+component = { id = 5731 name = TECH_CMP_INDUSTRY_117_1_NAME type = industrial_engineering difficulty = 7 }
+    # Practical Integrated Circuits
+component = { id = 5732 name = TECH_CMP_INDUSTRY_117_2_NAME type = electronics difficulty = 7 }
+    # Compiled Programming Languages
+component = { id = 5733 name = TECH_CMP_INDUSTRY_117_3_NAME type = mathematics difficulty = 7 }
+    # Advanced Materials Science
+component = { id = 5734 name = TECH_CMP_INDUSTRY_117_4_NAME type = industrial_engineering difficulty = 7 }
+    # Industrial Application
+component = { id = 5735 name = TECH_CMP_INDUSTRY_117_5_NAME type = management difficulty = 7 double_time = yes }
+    required  = { 5850 16050 } #1960 computers sw tech advanced planning and scheduling
+    effects =
+    { command = { type = industrial_modifier which = total value = 5 }
+    }
+  }
   # Computer integrated manufacturing
     application =
   { id        = 5860
     name      = TECH_APP_INDUSTRY_86_NAME
 
-    position  = { x = 24 y = 222 }
+    position  = { x = 5 y = 231 }
 	picture   = "DH5860"
     year      = 1964
    # Cemented Tungsten Carbide
@@ -522,16 +541,64 @@ technology =
     { command = { type = industrial_modifier which = total value = 5 }
     }
   }
+    # Early Automated Manufacturing Techniques
+  application =
+  { id        = 5740
+    name      = TECH_APP_INDUSTRY_118_NAME
+    position  = { x = 5 y = 249 }
+    picture   = "5740"
+    year      = 1975
+    # Modular Design
+ component = { id = 5741 name = TECH_CMP_INDUSTRY_118_1_NAME type = management difficulty = 11 }
+    # Platform Development
+ component = { id = 5742 name = TECH_CMP_INDUSTRY_118_2_NAME type = management difficulty = 11 }
+    # Sectional Assembly
+ component = { id = 5743 name = TECH_CMP_INDUSTRY_118_3_NAME type = industrial_engineering difficulty = 11 }
+    # Fracture Mechanics
+ component = { id = 5744 name = TECH_CMP_INDUSTRY_118_4_NAME type = industrial_engineering difficulty = 11 }
+    # Experimentation Process
+ component = { id = 5745 name = TECH_CMP_INDUSTRY_118_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 5730 5860 }
+    effects =
+    { 
+command = { type = industrial_modifier which = total value = 10 }
+    }
+  }
+  
+  # Improved Automated Manufacturing Techniques
+  application =
+  { id        = 5750
+    name      = TECH_APP_INDUSTRY_119_NAME
+    position  = { x = 5 y = 267 }
+    picture   = "5750"
+    year      = 1989
+    # lights-out manufacturing
+component = { id = 5751 name = TECH_CMP_INDUSTRY_119_1_NAME type = management difficulty = 15 }
+    # Fieldbus industrial computer network protocols
+component = { id = 5752 name = TECH_CMP_INDUSTRY_119_2_NAME type = management difficulty = 15}
+    # improved industrial robots
+component = { id = 5753 name = TECH_CMP_INDUSTRY_119_3_NAME type = industrial_engineering difficulty = 15 }
+    # computer numerical control
+component = { id = 5754 name = TECH_CMP_INDUSTRY_119_4_NAME type = electronics difficulty = 15 }
+    # Computer-aided manufacturing Software
+component = { id = 5755 name = TECH_CMP_INDUSTRY_119_5_NAME type = mathematics difficulty = 12 double_time = yes }
+    required  = { 5740 }
+    effects =
+    { 
+command = { type = industrial_modifier which = total value = 25 }
+}
+  }
+  
   label =
   { tag      = TECH_CAT_ASSEMBLYLINES
-    position = { x = 24 y = 240 }
+    position = { x = 5 y = 294 }
   }
   # Aircraft Assembly Line
   application =
   { id        = 5140
     name      = TECH_APP_INDUSTRY_14_NAME
 
-    position  = { x = 40 y = 254 }
+    position  = { x = 5 y = 308 }
 	picture   = "5140"
     year      = 1940
     # Aircraft Modules
@@ -546,18 +613,15 @@ technology =
     component = { id = 5145 name = TECH_CMP_INDUSTRY_14_5_NAME type = management difficulty = 8 double_time = yes }
     required  = { 5130 }
     effects =
-    { command = { type = build_time which = interceptor when = on_upgrade where = relative value = -58 } # First INT model is produced for 72 days only
-      command = { type = build_time which = rocket_interceptor when = on_upgrade where = relative value = -10 } # Rocket Assembly Line reduces build time with 10% more
-      command = { type = build_time which = multi_role when = on_upgrade where = relative value = -58 } # First FTR model is produced for 72 days only
-      command = { type = build_time which = cas when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_bomber when = on_upgrade where = relative value = -66 } # First NAV model is produced for 72 days only
-      command = { type = build_time which = strategic_bomber when = on_upgrade where = relative value = -75 } # First STR model is produced for 72 days only
-      command = { type = build_time which = tactical_bomber when = on_upgrade where = relative value = -64 } # First TAC model is produced for 72 days only
-      command = { type = build_time which = transport_plane when = on_upgrade where = relative value = -40 }
+    { command = { type = build_time which = interceptor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = multi_role when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = escort when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = cas when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = naval_bomber when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = strategic_bomber when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = tactical_bomber when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = transport_plane when = on_upgrade where = relative value = -40 }
       command = { type = build_time which = cag when = on_upgrade where = relative value = -20 }
-	  command = { type = build_time which = light_cag when = on_upgrade where = relative value = -20 }
-	  command = { type = build_time which = floatplane when = on_upgrade where = relative value = -20 }
     }
   }
   # Ship Assembly Line
@@ -565,7 +629,7 @@ technology =
   { id        = 5150
     name      = TECH_APP_INDUSTRY_15_NAME
 
-    position  = { x = 40 y = 272 }
+    position  = { x = 5 y = 326 }
 	picture   = "5150"
     year      = 1940
     # Ship Modules
@@ -580,29 +644,25 @@ technology =
     component = { id = 5155 name = TECH_CMP_INDUSTRY_15_5_NAME type = management difficulty = 8 double_time = yes }
     required  = { 5130 }
     effects =
-    { command = { type = build_time which = battlecruiser when = on_upgrade where = relative value = -26 }
-      command = { type = build_time which = battleship when = on_upgrade where = relative value = -24 }
-      command = { type = build_time which = carrier when = on_upgrade where = relative value = -26 }
-      command = { type = build_time which = light_carrier when = on_upgrade where = relative value = -24 }
-	  command = { type = build_time which = escort_carrier when = on_upgrade where = relative value = -6 }
-      command = { type = build_time which = destroyer when = on_upgrade where = relative value = -42 }
-      command = { type = build_time which = heavy_cruiser when = on_upgrade where = relative value = -22 }
-      command = { type = build_time which = light_cruiser when = on_upgrade where = relative value = -23 }
-      command = { type = build_time which = submarine when = on_upgrade where = relative value = -27 }
+    { command = { type = build_time which = battlecruiser when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = battleship when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = carrier when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_carrier when = on_upgrade where = relative value = -20 }
+	  command = { type = build_time which = escort_carrier when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = destroyer when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = heavy_cruiser when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_cruiser when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = submarine when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = nuclear_submarine when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = transport when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_asw when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_anti_air_l when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_anti_air_s when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_fire_controll_l when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_fire_controll_s when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_improved_hull_l when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_improved_hull_s when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_radar_l when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_radar_s when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = naval_torpedoes_s when = on_upgrade where = relative value = -20 }
       command = { type = convoy_prod_mod which = transports value = 20 }
       command = { type = convoy_prod_mod which = escorts value = 20 }
+
+	command = { type = activate_unit_type which = naval_improved_hull_l }
+	command = { type = new_model which = naval_improved_hull_l value = 0 }
+
+	command = { type = activate_unit_type which = naval_improved_hull_s }
+	command = { type = new_model which = naval_improved_hull_s value = 0 }
     }
   }
   # Vehicle Assembly Line
@@ -610,7 +670,7 @@ technology =
   { id        = 5160
     name      = TECH_APP_INDUSTRY_16_NAME
 
-    position  = { x = 40 y = 290 }
+    position  = { x = 5 y = 344 }
 	picture   = "5160"
     year      = 1940
     # Vehicle Modules
@@ -627,15 +687,14 @@ technology =
     effects =
     { command = { type = build_time which = armor when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = light_armor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = light_armor_brigade when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = amph_armor when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = glider_armor when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = mechanized when = on_upgrade where = relative value = -13 }
-      command = { type = build_time which = motorized when = on_upgrade where = relative value = -13 }  
+      command = { type = build_time which = motorized when = on_upgrade where = relative value = -13 }
       command = { type = build_time which = armored_car when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = light_armor_brigade when = on_upgrade where = relative value = -20 } 
-      command = { type = build_time which = medium_armor when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = heavy_armor when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = super_heavy_armor when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = amph_armor when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = glider_armor when = on_upgrade where = relative value = -20 }	
       command = { type = build_time which = tank_destroyer when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = sp_artillery when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = sp_anti_air when = on_upgrade where = relative value = -20 }
@@ -646,7 +705,7 @@ technology =
   { id        = 5170
     name      = TECH_APP_INDUSTRY_17_NAME
 
-    position  = { x = 40 y = 308 }
+    position  = { x = 5 y = 362 }
 	picture   = "5170"
     year      = 1942
     # Rocket Modules
@@ -663,7 +722,6 @@ technology =
     effects =
     { command = { type = build_time which = flying_bomb when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = flying_rocket when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = rocket_interceptor when = on_upgrade where = relative value = -10 }
     }
   }
   # Small Arms Assembly Line
@@ -671,7 +729,7 @@ technology =
   { id        = 5180
     name      = TECH_APP_INDUSTRY_18_NAME
 
-    position  = { x = 40 y = 326 }
+    position  = { x = 5 y = 380 }
 	picture   = "5180"
     year      = 1940
     # Modular Construction
@@ -690,30 +748,30 @@ technology =
       command = { type = build_time which = cavalry when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = militia when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = garrison when = on_upgrade where = relative value = -20 }
+      command = { type = build_time which = police when = on_upgrade where = relative value = -10 }
       command = { type = build_time which = paratrooper when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
       command = { type = build_time which = marine when = on_upgrade where = relative value = -10 }
-      command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -14.5 }
+      command = { type = build_time which = engineer when = on_upgrade where = relative value = -10 }
       command = { type = build_time which = mechanized when = on_upgrade where = relative value = -7 }
       command = { type = build_time which = motorized when = on_upgrade where = relative value = -7 }
-      command = { type = build_time which = engineer when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = police when = on_upgrade where = relative value = -20 }
+      #command = { type = build_time which = medium_armor when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = anti_air when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = artillery when = on_upgrade where = relative value = -20 }
-	  command = { type = build_time which = super_heavy_artillery when = on_upgrade where = relative value = -20 }
       command = { type = build_time which = glider_artillery when = on_upgrade where = relative value = -20 }
-      command = { type = build_time which = cavalry_brigade when = on_upgrade where = relative value = -20 }
+      #command = { type = build_time which = cavalry_brigade when = on_upgrade where = relative value = -20 }
     }
   }
   label =
   { tag      = TECH_CAT_CONSTRUCTION
-    position = { x = 148 y = 10 }
+    position = { x = 175 y = 1 }
   }
   # Early Construction Engineering
   application =
   { id        = 5800
     name      = TECH_APP_INDUSTRY_80_NAME
 
-    position  = { x = 148 y = 24 }
+    position  = { x = 118 y = 15 }
 	picture   = "DH5800"
     year      = 1870
     # Basic Standardization
@@ -741,7 +799,7 @@ technology =
   { id        = 5080
     name      = TECH_APP_INDUSTRY_8_NAME
 
-    position  = { x = 148 y = 42 }
+    position  = { x = 230 y = 15 }
 	picture   = "DH1830"
     year      = 1910
     # Basic Standardization
@@ -766,7 +824,7 @@ technology =
   { id        = 5090
     name      = TECH_APP_INDUSTRY_9_NAME
 
-    position  = { x = 148 y = 60 }
+    position  = { x = 118 y = 33 }
 	picture   = "5090"
     year      = 1930
     # Improved Standardization
@@ -784,7 +842,7 @@ technology =
     { command = { type = building_prod_mod which = ic value = 10 }
 	  command = { type = building_prod_mod which = infrastructure value = 15 }
 	  command = { type = building_prod_mod which = land_fort value = 10 }
-	  command = { type = building_prod_mod which = coastal_fort value = 10 }
+      	command = { type = building_prod_mod which = coastal_fort value = 10 }
     }
   }
   # Advanced Construction Engineering
@@ -792,7 +850,7 @@ technology =
   { id        = 5100
     name      = TECH_APP_INDUSTRY_10_NAME
 
-    position  = { x = 148 y = 78 }
+    position  = { x = 230 y = 33 }
 	picture   = "5100"
     year      = 1940
     # Advanced Standardization
@@ -821,7 +879,7 @@ technology =
   { id        = 5900
     name      = TECH_APP_INDUSTRY_90_NAME
 
-    position  = { x = 148 y = 96 }
+    position  = { x = 118 y = 51 }
 	picture   = "DH5900"
     year      = 1950
     # Advanced Standardization
@@ -849,7 +907,7 @@ technology =
   { id        = 5910
     name      = TECH_APP_INDUSTRY_91_NAME
 
-    position  = { x = 148 y = 114 }
+    position  = { x = 230 y = 51 }
 	picture   = "DH5910"
     year      = 1960
     # Advanced Standardization
@@ -872,16 +930,100 @@ technology =
 	  command = { type = building_prod_mod which = nuclear_reactor value = 20 }
     }
   }
+    # AdvModern Construction Engineering
+  application =
+  { id        = 59900
+    name      = TECH_APP_INDUSTRY_127_NAME
+
+    position  = { x = 118 y = 69 }
+	picture   = "59900"
+    year      = 1970
+    # Advanced Standardization
+    component = { id = 59001 name = TECH_CMP_INDUSTRY_127_1_NAME type = industrial_engineering difficulty = 10 }
+    # Advanced Quality Control
+    component = { id = 59002 name = TECH_CMP_INDUSTRY_127_2_NAME type = management difficulty = 10 }
+    # Advanced Reliability Engineering
+    component = { id = 59003 name = TECH_CMP_INDUSTRY_127_3_NAME type = industrial_engineering difficulty = 10 }
+    # Advanced Test Planning
+    component = { id = 59004 name = TECH_CMP_INDUSTRY_127_4_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Construction Engineering Development Process
+    component = { id = 59005 name = TECH_CMP_INDUSTRY_127_5_NAME type = industrial_engineering difficulty = 10 double_time = yes }
+    required  = { 5910 }
+    effects =
+    { command = { type = building_prod_mod which = radar_station value = 30 }
+	  command = { type = building_prod_mod which = air_base value = 30 }
+	  command = { type = building_prod_mod which = naval_base value = 30 }
+	  command = { type = building_prod_mod which = infrastructure value = 30 }
+	  command = { type = building_prod_mod which = rocket_test value = 30 }
+	  command = { type = building_prod_mod which = nuclear_reactor value = 30 }
+    }
+  }
+      # AdvModern Construction Engineering
+  application =
+  { id        = 59910
+    name      = TECH_APP_INDUSTRY_128_NAME
+
+    position  = { x = 230 y = 69 }
+	picture   = "59910"
+    year      = 1980
+    # Advanced Standardization
+    component = { id = 59011 name = TECH_CMP_INDUSTRY_128_1_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Quality Control
+    component = { id = 59012 name = TECH_CMP_INDUSTRY_128_2_NAME type = management difficulty = 11 }
+    # Advanced Reliability Engineering
+    component = { id = 59013 name = TECH_CMP_INDUSTRY_128_3_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Test Planning
+    component = { id = 59014 name = TECH_CMP_INDUSTRY_128_4_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Construction Engineering Development Process
+    component = { id = 59015 name = TECH_CMP_INDUSTRY_128_5_NAME type = industrial_engineering difficulty = 11 double_time = yes }
+    required  = { 59900 }
+    effects =
+    { command = { type = building_prod_mod which = radar_station value = 40 }
+	  command = { type = building_prod_mod which = air_base value = 40 }
+	  command = { type = building_prod_mod which = naval_base value = 40 }
+	  command = { type = building_prod_mod which = infrastructure value = 40 }
+	  command = { type = building_prod_mod which = rocket_test value = 40 }
+	  command = { type = building_prod_mod which = nuclear_reactor value = 40 }
+    }
+  }
+        # AdvModern Construction Engineering
+  application =
+  { id        = 59920
+    name      = TECH_APP_INDUSTRY_129_NAME
+
+    position  = { x = 174 y = 87 }
+	picture   = "59920"
+    year      = 1990
+    # Advanced Standardization
+    component = { id = 59021 name = TECH_CMP_INDUSTRY_129_1_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Quality Control
+    component = { id = 59022 name = TECH_CMP_INDUSTRY_129_2_NAME type = management difficulty = 11 }
+    # Advanced Reliability Engineering
+    component = { id = 59023 name = TECH_CMP_INDUSTRY_129_3_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Test Planning
+    component = { id = 59024 name = TECH_CMP_INDUSTRY_129_4_NAME type = industrial_engineering difficulty = 11 }
+    # Advanced Construction Engineering Development Process
+    component = { id = 59025 name = TECH_CMP_INDUSTRY_129_5_NAME type = industrial_engineering difficulty = 11 double_time = yes }
+    required  = { 59910 }
+    effects =
+    { command = { type = building_prod_mod which = radar_station value = 50 }
+	  command = { type = building_prod_mod which = air_base value = 50 }
+	  command = { type = building_prod_mod which = naval_base value = 50 }
+	  command = { type = building_prod_mod which = infrastructure value = 50 }
+	  command = { type = building_prod_mod which = rocket_test value = 50 }
+	  command = { type = building_prod_mod which = nuclear_reactor value = 50 }
+    }
+  }
   label =
   { tag      = TECH_CAT_MATERIALS
-    position = { x = 24 y = 350 }
+    position = { x = 5 y = 398 }
   }
   # Plastics
   application =
   { id        = 53040
     name      = TECH_APP_INDUSTRY_104_NAME
 
-    position  = { x = 24 y = 364 }
+    position  = { x = 5 y = 412 }
 	picture   = "13040"
     year      = 1945
     # ?
@@ -904,7 +1046,7 @@ technology =
   { id        = 53050
     name      = TECH_APP_INDUSTRY_105_NAME
 
-    position  = { x = 24 y = 384 }
+    position  = { x = 5 y = 430 }
 	picture   = "13050"
     year      = 1951
     # ?
@@ -925,14 +1067,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_ROCKETRY
-    position = { x = 24 y = 416 }
+    position = { x = 5 y = 448 }
   }
   # Experimental Rocket Engine
   application =
   { id        = 5560
     name      = TECH_APP_INDUSTRY_56_NAME
 
-    position  = { x = 24 y = 430 }
+    position  = { x = 5 y = 462 }
 	picture   = "5560"
     year      = 1928
     # Chamber
@@ -952,14 +1094,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_COMPUTERS	
-    position = { x = 308 y = 10 }
+    position = { x = 345 y = 1 }
   }
   # Census Tabulating Machine
   application =
   { id        = 5310
     name      = TECH_APP_INDUSTRY_31_NAME
 
-    position  = { x = 308 y = 24 }
+    position  = { x = 345 y = 15 }
 	picture   = "5310"
     year      = 1897
     # Fine Mechanics
@@ -983,7 +1125,7 @@ technology =
   { id        = 54010
     name      = TECH_APP_INDUSTRY_401_NAME
 
-    position  = { x = 308 y = 42 }
+    position  = { x = 345 y = 33 }
 	picture   = "DH54010"
     year      = 1908
     # Fine Mechanics
@@ -1007,7 +1149,7 @@ technology =
   { id        = 54020
     name      = TECH_APP_INDUSTRY_402_NAME
 
-    position  = { x = 308 y = 60 }
+    position  = { x = 345 y = 51 }
 	picture   = "DH54020"
     year      = 1916
     # Fine Mechanics
@@ -1033,7 +1175,7 @@ technology =
   { id        = 54030
     name      = TECH_APP_INDUSTRY_403_NAME
 
-    position  = { x = 308 y = 78 }
+    position  = { x = 345 y = 69 }
 	picture   = "DH54030"
     year      = 1928
     # Fine Mechanics
@@ -1056,7 +1198,7 @@ technology =
   { id        = 5320
     name      = TECH_APP_INDUSTRY_32_NAME
 
-    position  = { x = 308 y = 96 }
+    position  = { x = 345 y = 96 }
 	picture   = "5320"
     year      = 1937
     # Applied Mathematics
@@ -1080,7 +1222,7 @@ technology =
   { id        = 5330
     name      = TECH_APP_INDUSTRY_33_NAME
 
-    position  = { x = 308 y = 134 }
+    position  = { x = 345 y = 134 }
 	picture   = "5330"
     year      = 1940
     # Machine Code
@@ -1103,7 +1245,7 @@ technology =
   { id        = 5340
     name      = TECH_APP_INDUSTRY_34_NAME
 
-    position  = { x = 308 y = 170 }
+    position  = { x = 345 y = 170 }
 	picture   = "5340"
     year      = 1942
     # Assembler Languages
@@ -1128,14 +1270,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_CRYPTOGRAPHY
-    position = { x = 433 y = 10 }
+    position = { x = 460 y = 1 }
   }
   # ciphering machine 1918
   application =
   { id        = 5316
     name      = TECH_APP_INDUSTRY_316_NAME
 
-    position  = { x = 433 y = 24 }
+    position  = { x = 460 y = 15 }
 	picture   = "DH5316"
     year      = 1918
     # Keyboard
@@ -1162,7 +1304,7 @@ technology =
   { id        = 5326
     name      = TECH_APP_INDUSTRY_326_NAME
 
-    position  = { x = 433 y = 44 }
+    position  = { x = 460 y = 51 }
 	picture   = "DH5326"
     year      = 1922
     # Keyboard
@@ -1189,7 +1331,7 @@ technology =
   { id        = 5327
     name      = TECH_APP_INDUSTRY_327_NAME
 
-    position  = { x = 433 y = 62 }
+    position  = { x = 460 y = 69 }
 	picture   = "DH5327"
     year      = 1923
     # Identification of Message Keys
@@ -1216,7 +1358,7 @@ technology =
   { id        = 5350
     name      = TECH_APP_INDUSTRY_35_NAME
 
-    position  = { x = 433 y = 89 }
+    position  = { x = 460 y = 87 }
 	picture   = "5350"
     year      = 1937
     # Keyboard
@@ -1243,7 +1385,7 @@ technology =
   { id        = 5360
     name      = TECH_APP_INDUSTRY_36_NAME
 
-    position  = { x = 433 y = 107 }
+    position  = { x = 460 y = 105 }
 	picture   = "5360"
     year      = 1938
     # Identification of Message Keys
@@ -1270,7 +1412,7 @@ technology =
   { id        = 5370
     name      = TECH_APP_INDUSTRY_37_NAME
 
-    position  = { x = 433 y = 125 }
+    position  = { x = 460 y = 123 }
 	picture   = "5370"
     year      = 1940
     # Binary system characters
@@ -1297,7 +1439,7 @@ technology =
   { id        = 5380
     name      = TECH_APP_INDUSTRY_38_NAME
 
-    position  = { x = 433 y = 143 }
+    position  = { x = 460 y = 141 }
 	picture   = "5380"
     year      = 1941
     # Identification of Multiple Message Keys
@@ -1324,7 +1466,7 @@ technology =
   { id        = 5390
     name      = TECH_APP_INDUSTRY_39_NAME
 
-    position  = { x = 433 y = 161 }
+    position  = { x = 460 y = 159 }
 	picture   = "5390"
     year      = 1943
     # 5-Bit combinations
@@ -1351,7 +1493,7 @@ technology =
   { id        = 5400
     name      = TECH_APP_INDUSTRY_40_NAME
 
-    position  = { x = 433 y = 179 }
+    position  = { x = 460 y = 177 }
 	picture   = "5400"
     year      = 1943
     # Identification of Parallel Texts
@@ -1378,7 +1520,7 @@ technology =
   { id        = 53060
     name      = TECH_APP_INDUSTRY_106_NAME
 
-    position  = { x = 433 y = 197 }
+    position  = { x = 345 y = 206 }
 	picture   = "13060"
     year      = 1948
     # ?
@@ -1405,7 +1547,7 @@ technology =
   { id        = 53116
     name      = TECH_APP_INDUSTRY_116_NAME
 
-    position  = { x = 433 y = 215 }
+    position  = { x = 345 y = 242 }
 	picture   = "DH53116"
     year      = 1960
     # ?
@@ -1427,16 +1569,211 @@ technology =
       command = { type = army_detection which = them value = -10 }
     }
   }
+  # Advanced information theory
+  application =
+  { id        = 5890
+    name      = TECH_APP_INDUSTRY_126_NAME
+
+    position  = { x = 345 y = 278 }
+	picture   = "5890"
+    year      = 1976
+    # ?
+    component = { id = 5891 name = TECH_CMP_INDUSTRY_126_1_NAME type = mathematics difficulty = 8 }
+    # ?
+    component = { id = 5892 name = TECH_CMP_INDUSTRY_126_2_NAME type = mathematics difficulty = 8 }
+    # ?
+    component = { id = 5893 name = TECH_CMP_INDUSTRY_126_3_NAME type = mathematics difficulty = 8 }
+    # ?
+    component = { id = 5894 name = TECH_CMP_INDUSTRY_126_4_NAME type = mathematics difficulty = 8 }
+    # ?
+    component = { id = 5895 name = TECH_CMP_INDUSTRY_126_5_NAME type = mathematics difficulty = 8 }
+    required  = { 53116 }
+    effects =
+    { command = { type = intelligence which = them value = -10 }
+      command = { type = surprise which = naval value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = surprise which = air value = 5 }
+      command = { type = army_detection which = them value = -10 }
+    }
+  }
+############################################
+## Cold War Era Intelligence Techs   #######
+############################################
+  # Post War Spycraft
+  application =
+  { id        = 5760
+    name      = TECH_APP_INDUSTRY_120_NAME
+    position  = { x = 460 y = 195 }
+    picture   = "5760"
+    year      = 1948
+    # Psychological operations Experience (PSYOP)
+    component = { id = 5761 name = TECH_CMP_INDUSTRY_120_1_NAME type = centralized_execution difficulty = 7 }
+    # fellow travellers and useful idiots
+	component = { id = 5762 name = TECH_CMP_INDUSTRY_120_2_NAME type = rt_user_2 difficulty = 7 }
+    # Counter-espionage Experience
+	component = { id = 5763 name = TECH_CMP_INDUSTRY_120_3_NAME type = centralized_execution difficulty = 7 }
+    # Practical Human Intelligence (HUMINT)  Experience
+	component = { id = 5764 name = TECH_CMP_INDUSTRY_120_4_NAME type = individual_courage difficulty = 7 }
+    # Reorganization of Inteligence Agencies
+	component = { id = 5765 name = TECH_CMP_INDUSTRY_120_5_NAME type = management difficulty = 7 double_time = yes }
+    required  = { 53060 }
+    effects =
+    { command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = intelligence which = us value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = surprise which = naval value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = surprise which = air value = 5 }
+     }
+  }
+    # Early Cold War Spycraft
+  application =
+  { id        = 5770
+    name      = TECH_APP_INDUSTRY_121_NAME
+    position  = { x = 460 y = 213 }
+    picture   = "5770"
+    year      = 1953
+    # Drug induced Behavioral Engineering Experiments
+component = { id = 5771 name = TECH_CMP_INDUSTRY_121_1_NAME type = chemistry difficulty = 8 }
+    # Media manipulation
+component = { id = 5772 name = TECH_CMP_INDUSTRY_121_2_NAME type = centralized_execution difficulty = 8 }
+    # Double agents
+component = { id = 5773 name = TECH_CMP_INDUSTRY_121_3_NAME type = rt_user_2 difficulty = 8 }
+    # Front Organizations
+component = { id = 5774 name = TECH_CMP_INDUSTRY_121_4_NAME type = centralized_execution difficulty = 8 }
+    # Transnational Covert operations
+component = { id = 5775 name = TECH_CMP_INDUSTRY_121_5_NAME type = management difficulty = 8 double_time = yes }
+    required  = { 5760 53060 }
+    effects =
+    { command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = intelligence which = us value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = surprise which = naval value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = surprise which = air value = 5 }
+    }
+  }
+# Improved Cold War Spycraft
+  application =
+  { id        = 5780
+    name      = TECH_APP_INDUSTRY_122_NAME
+      position  = { x = 460 y = 231 }
+    picture   = "5780"
+    year      = 1962
+    # High Resolution Aerial Photography
+component = { id = 5781 name = TECH_CMP_INDUSTRY_122_1_NAME type = piloting difficulty = 9 }
+    # Proxy Battles
+component = { id = 5782 name = TECH_CMP_INDUSTRY_122_2_NAME type = decentralized_execution difficulty = 9 }
+    # Phony Defections
+component = { id = 5783 name = TECH_CMP_INDUSTRY_122_3_NAME type = rt_user_2 difficulty = 9 }
+    # Miniaturized Eavesdropping Devices
+component = { id = 5784 name = TECH_CMP_INDUSTRY_122_4_NAME type = electronics difficulty = 9 }
+    # Black Operations
+component = { id = 5785 name = TECH_CMP_INDUSTRY_122_5_NAME type = management difficulty = 9 double_time = yes }
+    required  = { 5770 53116 }
+    effects =
+    { command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = intelligence which = us value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = surprise which = naval value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = surprise which = air value = 5 }
+    }
+  }
+  # Advanced Cold War Spycraft
+  application =
+  { id        = 5790
+    name      = TECH_APP_INDUSTRY_123_NAME
+    position  = { x = 460 y = 249 }
+    picture   = "5790"
+    year      = 1972
+    # Satellite Photography
+component = { id = 5791 name = TECH_CMP_INDUSTRY_123_1_NAME type = avionics difficulty = 10 }
+    # Numbers Stations
+component = { id = 5792 name = TECH_CMP_INDUSTRY_123_2_NAME type = electronics difficulty = 10 double_time = yes }
+    # Industrial Infiltration
+component = { id = 5793 name = TECH_CMP_INDUSTRY_123_3_NAME type = rt_user_2 difficulty = 10 }
+    # Modern Eavesdropping Devices
+component = { id = 5794 name = TECH_CMP_INDUSTRY_123_4_NAME type = electronics difficulty = 10 }
+    # Computerized Data Management
+component = { id = 5795 name = TECH_CMP_INDUSTRY_123_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 5780 7420 53116 }
+    effects =
+    { command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = intelligence which = us value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = surprise which = naval value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = surprise which = air value = 5 }
+    }
+  }
+# Late Cold War Spycraft
+  application =
+  { id        = 5870
+    name      = TECH_APP_INDUSTRY_124_NAME
+    position  = { x = 460 y = 267 }
+    picture   = "5870"
+    year      = 1979
+    # Improved Analyst training
+component = { id = 5871 name = TECH_CMP_INDUSTRY_124_1_NAME type = training difficulty = 10 double_time = yes }
+    # Improved Cryptanalysis
+component = { id = 5872 name = TECH_CMP_INDUSTRY_124_2_NAME type = mathematics difficulty = 10 double_time = yes }
+    # Improved Reconnaissance Devices
+component = { id = 5873 name = TECH_CMP_INDUSTRY_124_3_NAME type = electronics difficulty = 10 double_time = yes }
+    # Improved Black Operations
+component = { id = 5874 name = TECH_CMP_INDUSTRY_124_4_NAME type = rt_user_2 difficulty = 10 }
+    # Arduous Training Regimen 
+component = { id = 5875 name = TECH_CMP_INDUSTRY_124_5_NAME type = training difficulty = 10 double_time = yes }
+    required  = { 5790 5890 }
+    effects =
+    {  command = { type = intelligence which = them value = -10 }
+      command = { type = intelligence which = us value = 10 }
+      command = { type = surprise which = naval value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = surprise which = air value = 5 }
+      command = { type = army_detection which = them value = -10 }
+    }
+  }
+# Modern Spycraft
+  application =
+  { id        = 5880
+    name      = TECH_APP_INDUSTRY_125_NAME
+    position  = { x = 460 y = 285 }
+    picture   = "5880"
+    year      = 1995
+    # Border Security Focus
+component = { id = 5881 name = TECH_CMP_INDUSTRY_125_1_NAME type = rt_user_2 difficulty = 10 double_time = yes }
+    # Cyber Security Focus 
+component = { id = 5882 name = TECH_CMP_INDUSTRY_125_2_NAME type = mathematics difficulty = 10 double_time = yes }
+    # Counter terrorism focus 
+component = { id = 5883 name = TECH_CMP_INDUSTRY_125_3_NAME type = rt_user_2 difficulty = 10 double_time = yes }
+    #  Sophisticated Signals intelligence network (SIGINT) 
+component = { id = 5884 name = TECH_CMP_INDUSTRY_125_4_NAME type = electronics difficulty = 20 double_time = yes }
+    # Unambiguous Chain of Command 
+component = { id = 5885 name = TECH_CMP_INDUSTRY_125_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 5870 5890 }
+    effects =
+    { command = { type = intelligence which = us value = 10 }
+      command = { type = surprise which = naval value = 10 }
+      command = { type = surprise which = land value = 10 }
+      command = { type = surprise which = air value = 10 }
+      command = { type = army_detection which = them value = -10 }
+    }
+  }
   label =
   { tag      = TECH_CAT_RRWARNING
-    position = { x = 174 y = 218 }
+    position = { x = 175 y = 118 }
   }
   # Basic Decimetric Radar Warning Sites
   application =
   { id        = 5410
     name      = TECH_APP_INDUSTRY_41_NAME
 
-    position  = { x = 174 y = 232 }
+    position  = { x = 175 y = 132 }
 	picture   = "5410"
     year      = 1936
     # Basic Antenna
@@ -1461,7 +1798,7 @@ technology =
   { id        = 5416
     name      = TECH_APP_INDUSTRY_416_NAME
 
-    position  = { x = 189 y = 250 }
+    position  = { x = 118 y = 150 }
 	picture   = "DH5416"
     year      = 1937
     # Basic Antenna
@@ -1487,7 +1824,7 @@ technology =
   { id        = 5417
     name      = TECH_APP_INDUSTRY_417_NAME
 
-    position  = { x = 189 y = 268 }
+    position  = { x = 230 y = 150 }
 	picture   = "DH5417"
     year      = 1939
     # Basic Antenna
@@ -1517,7 +1854,7 @@ technology =
   { id        = 5420
     name      = TECH_APP_INDUSTRY_42_NAME
 
-    position  = { x = 174 y = 286 }
+    position  = { x = 175 y = 168 }
 	picture   = "5420"
     year      = 1940
     # Improved Antenna
@@ -1540,7 +1877,7 @@ technology =
   { id        = 5426
     name      = TECH_APP_INDUSTRY_426_NAME
 
-    position  = { x = 189 y = 304 }
+    position  = { x = 185 y = 186 }
 	picture   = "DH5426"
     year      = 1941
     # Transportable Antenna
@@ -1555,24 +1892,7 @@ technology =
     component = { id = 54265 name = TECH_CMP_INDUSTRY_426_5_NAME type = training difficulty = 8 }
     required  = { 5420 }
     effects =
-    { command = { type = air_detection value = 1 when = on_upgrade which = air }
-	  command = { type = surface_detection value = 1 when = on_upgrade which = air }
-      command = { type = night_attack which = interceptor value = 10 }
-      command = { type = night_defense which = interceptor value = 10 }
-      command = { type = night_attack which = rocket_interceptor value = 10 }
-      command = { type = night_defense which = rocket_interceptor value = 10 }
-      command = { type = night_attack which = multi_role value = 10 }
-      command = { type = night_defense which = multi_role value = 10 }
-      command = { type = night_attack which = cas value = 10 }
-      command = { type = night_defense which = cas value = 10 }
-      command = { type = night_attack which = tactical_bomber value = 10 }
-      command = { type = night_defense which = tactical_bomber value = 10 }
-      command = { type = night_attack which = naval_bomber value = 10 }
-      command = { type = night_defense which = naval_bomber value = 10 }
-      command = { type = night_attack which = strategic_bomber value = 10 }
-      command = { type = night_defense which = strategic_bomber value = 10 }
-      command = { type = night_attack which = transport_plane value = 10 }
-      command = { type = night_defense which = transport_plane value = 10 }
+    { command = { type = air_detection value = 10 when = on_upgrade which = Interceptor }
 	  command = { type = task_efficiency which = asw value = 0.03 }
 	  command = { type = new_model which = naval_radar_l value = 2 }
 	  command = { type = scrap_model which = naval_radar_l value = 1 }
@@ -1593,7 +1913,7 @@ technology =
   { id        = 5430
     name      = TECH_APP_INDUSTRY_43_NAME
 
-    position  = { x = 174 y = 322 }
+    position  = { x = 118 y = 204 }
 	picture   = "5430"
     year      = 1942
     # Advanced Antenna
@@ -1616,7 +1936,7 @@ technology =
   { id        = 5440
     name      = TECH_APP_INDUSTRY_44_NAME
 
-    position  = { x = 174 y = 340 }
+    position  = { x = 230 y = 204 }
 	picture   = "5440"
     year      = 1944
     # Tower Antenna
@@ -1639,7 +1959,7 @@ technology =
   { id        = 5466
     name      = TECH_APP_INDUSTRY_466_NAME
 
-    position  = { x = 189 y = 358 }
+    position  = { x = 185 y = 222 }
 	picture   = "DH5466"
     year      = 1945
     component = { id = 54661 name = TECH_CMP_INDUSTRY_466_1_NAME type = mechanics difficulty = 7 }
@@ -1649,26 +1969,11 @@ technology =
     component = { id = 54665 name = TECH_CMP_INDUSTRY_466_5_NAME type = training difficulty = 7 }
     required  = { 5440 }
     effects =
-    { command = { type = air_detection value = 1 when = on_upgrade which = air }
-	  command = { type = surface_detection value = 1 when = on_upgrade which = air }
-      command = { type = night_attack which = interceptor value = 10 }
-      command = { type = night_defense which = interceptor value = 10 }
-      command = { type = night_attack which = rocket_interceptor value = 10 }
-      command = { type = night_defense which = rocket_interceptor value = 10 }
-      command = { type = night_attack which = multi_role value = 10 }
-      command = { type = night_defense which = multi_role value = 10 }
-      command = { type = night_attack which = cas value = 10 }
-      command = { type = night_defense which = cas value = 10 }
-      command = { type = night_attack which = tactical_bomber value = 10 }
-      command = { type = night_defense which = tactical_bomber value = 10 }
-      command = { type = night_attack which = naval_bomber value = 10 }
-      command = { type = night_defense which = naval_bomber value = 10 }
-      command = { type = night_attack which = strategic_bomber value = 10 }
-      command = { type = night_defense which = strategic_bomber value = 10 }
-      command = { type = night_attack which = transport_plane value = 10 }
-      command = { type = night_defense which = transport_plane value = 10 }
+    { command = { type = air_detection value = 15 when = on_upgrade which = Interceptor }
       command = { type = task_efficiency which = strategic_bombardment value = 0.1 }
       command = { type = task_efficiency which = asw value = 0.07 }
+      command = { type = night_attack which = strategic_bomber value = 10 }
+      command = { type = night_attack which = naval_bomber value = 10 }
       command = { type = new_model which = naval_radar_l value = 3 }
       command = { type = scrap_model which = naval_radar_l value = 2 }
 	  command = { type = night_attack which = naval_radar_l value = 5 }
@@ -1688,7 +1993,7 @@ technology =
   { id        = 5450
     name      = TECH_APP_INDUSTRY_45_NAME
 
-    position  = { x = 174 y = 376 }
+    position  = { x = 118 y = 240 }
 	picture   = "5450"
     year      = 1946
     # Movable Antenna
@@ -1711,7 +2016,7 @@ technology =
   { id        = 5460
     name      = TECH_APP_INDUSTRY_46_NAME
 
-    position  = { x = 174 y = 394 }
+    position  = { x = 230 y = 240 }
 	picture   = "5460"
     year      = 1949
     # Transportable Antenna
@@ -1734,7 +2039,7 @@ technology =
   { id        = 53030
     name      = TECH_APP_INDUSTRY_103_NAME
 
-    position  = { x = 174 y = 412 }
+    position  = { x = 175 y = 258 }
 	picture   = "13030"
     year      = 1952
     # Transportable Antenna
@@ -1757,7 +2062,7 @@ technology =
   { id        = 5476
     name      = TECH_APP_INDUSTRY_476_NAME
 
-    position  = { x = 189 y = 430 }
+    position  = { x = 185 y = 276 }
 	picture   = "DH5476"
     year      = 1953
     component = { id = 54761 name = TECH_CMP_INDUSTRY_476_1_NAME type = technical_efficiency difficulty = 8 }
@@ -1768,15 +2073,7 @@ technology =
     required  = { 53030 }
     effects =
     { command = { type = night_attack which = strategic_bomber value = 15 }
-      command = { type = night_defense which = strategic_bomber value = 15 }
       command = { type = night_attack which = naval_bomber value = 15 }
-      command = { type = night_defense which = naval_bomber value = 15 }
-      command = { type = night_attack which = cas value = 15 }
-      command = { type = night_defense which = cas value = 15 }
-      command = { type = night_attack which = tactical_bomber value = 15 }	
-      command = { type = night_defense which = tactical_bomber value = 15 }
-      command = { type = night_attack which = transport_plane value = 15 }
-      command = { type = night_defense which = transport_plane value = 15 }		  
       command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
       command = { type = task_efficiency which = asw value = 0.15 }
 	  command = { type = new_model which = naval_radar_l value = 4 }
@@ -1798,7 +2095,7 @@ technology =
   { id        = 53070
     name      = TECH_APP_INDUSTRY_107_NAME
 
-    position  = { x = 174 y = 448 }
+    position  = { x = 175 y = 294 }
 	picture   = "DH53070"
     year      = 1955
     # Transportable Antenna
@@ -1818,14 +2115,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_SYNTHETICOIL
-    position = { x = 308 y = 240 }
+    position = { x = 460 y = 303 }
   }
   # Basic Oil Refining
   application =
   { id        = 5190
     name      = TECH_APP_INDUSTRY_19_NAME
 
-    position  = { x = 308 y = 254 }
+    position  = { x = 460 y = 317 }
 	picture   = "5190"
     year      = 1914
     # Basic Distillation
@@ -1848,7 +2145,7 @@ technology =
   { id        = 5200
     name      = TECH_APP_INDUSTRY_20_NAME
 
-    position  = { x = 308 y = 272 }
+    position  = { x = 460 y = 335 }
 	picture   = "5200"
     year      = 1938
     # Improved Distillation
@@ -1871,7 +2168,7 @@ technology =
   { id        = 5210
     name      = TECH_APP_INDUSTRY_21_NAME
 
-    position  = { x = 308 y = 290 }
+    position  = { x = 460 y = 353 }
 	picture   = "5210"
     year      = 1940
     # Advanced Distillation
@@ -1894,7 +2191,7 @@ technology =
   { id        = 5220
     name      = TECH_APP_INDUSTRY_22_NAME
 
-    position  = { x = 308 y = 308 }
+    position  = { x = 460 y = 371 }
 	picture   = "5220"
     year      = 1941
     # Basic Catalysts
@@ -1917,7 +2214,7 @@ technology =
   { id        = 5230
     name      = TECH_APP_INDUSTRY_23_NAME
 
-    position  = { x = 308 y = 326 }
+    position  = { x = 460 y = 389 }
 	picture   = "5230"
     year      = 1942
     # Improved Catalysts
@@ -1940,7 +2237,7 @@ technology =
   { id        = 5240
     name      = TECH_APP_INDUSTRY_24_NAME
 
-    position  = { x = 308 y = 344 }
+    position  = { x = 460 y = 407 }
 	picture   = "5240"
     year      = 1943
     # Advanced Catalysts
@@ -1963,7 +2260,7 @@ technology =
   { id        = 53020
     name      = TECH_APP_INDUSTRY_102_NAME
 
-    position  = { x = 308 y = 362 }
+    position  = { x = 460 y = 425 }
 	picture   = "13020"
     year      = 1945
     # Modern Catalysts
@@ -1983,14 +2280,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_NUCLEAR
-    position = { x = 433 y = 240 }
+    position = { x = 308 y = 299 }
   }
   # Faculty of Atomic Research
   application =
   { id        = 5470
     name      = TECH_APP_INDUSTRY_47_NAME
 
-    position  = { x = 433 y = 254 }
+    position  = { x = 345 y = 299 }
 	picture   = "5470"
     year      = 1936
     # Department of Atomic Physics
@@ -2013,7 +2310,7 @@ technology =
   { id        = 5480
     name      = TECH_APP_INDUSTRY_48_NAME
 
-    position  = { x = 433 y = 272 }
+    position  = { x = 345 y = 317 }
 	picture   = "5480"
     year      = 1936
     # X-ray Spectrometry Lab
@@ -2036,7 +2333,7 @@ technology =
   { id        = 5490
     name      = TECH_APP_INDUSTRY_49_NAME
 
-    position  = { x = 432 y = 290 }
+    position  = { x = 345 y = 335 }
 	picture   = "5490"
     year      = 1939
     # Department of Nuclear Physics
@@ -2059,7 +2356,7 @@ technology =
   { id        = 5500
     name      = TECH_APP_INDUSTRY_50_NAME
 
-    position  = { x = 433 y = 308 }
+    position  = { x = 345 y = 353 }
 	picture   = "5500"
     year      = 1941
     # Experimental Proof of the Equivalence of Mass and Energy
@@ -2083,7 +2380,7 @@ technology =
   { id        = 5510
     name      = TECH_APP_INDUSTRY_51_NAME
 
-    position  = { x = 433 y = 326 }
+    position  = { x = 345 y = 371 }
 	picture   = "5510"
     year      = 1941
     # Betatron Particle Accelerator
@@ -2106,7 +2403,7 @@ technology =
   { id        = 5520
     name      = TECH_APP_INDUSTRY_52_NAME
 
-    position  = { x = 433 y = 344 }
+    position  = { x = 345 y = 389 }
 	picture   = "5520"
     year      = 1941
     # Nuclear Reactor Design
@@ -2129,7 +2426,7 @@ technology =
   { id        = 5530
     name      = TECH_APP_INDUSTRY_53_NAME
 
-    position  = { x = 433 y = 362 }
+    position  = { x = 345 y = 407 }
 	picture   = "5530"
     year      = 1943
     # Core Structure
@@ -2152,7 +2449,7 @@ technology =
   { id        = 5540
     name      = TECH_APP_INDUSTRY_54_NAME
 
-    position  = { x = 433 y = 380 }
+    position  = { x = 345 y = 425 }
 	picture   = "5540"
     year      = 1944
     # Nuclear Power Plant Design
@@ -2178,14 +2475,14 @@ technology =
   }
   label =
   { tag      = TECH_CAT_MEDICINE
-    position = { x = 554 y = 240 }
+    position = { x = 576 y = 213 }
   }
   # Early Antibiotics
   application =
   { id        = 5600
     name      = TECH_APP_INDUSTRY_60_NAME
 
-    position  = { x = 554 y = 254 }
+    position  = { x = 576 y = 227 }
 	picture   = "DH5600"
     year      = 1910
     # 
@@ -2205,12 +2502,13 @@ technology =
 		command = { type = trickleback_mod value = 1 }
     }
   }
+
   # Indirect Blood transfusions
   application =
   { id        = 5610
     name      = TECH_APP_INDUSTRY_61_NAME
 
-    position  = { x = 554 y = 272 }
+    position  = { x = 576 y = 245 }
 	picture   = "DH5610"
     year      = 1915
     # 
@@ -2230,12 +2528,13 @@ technology =
 		command = { type = trickleback_mod value = 1 }
     }
   }
+
   # Early Pharmacology
   application =
   { id        = 5620
     name      = TECH_APP_INDUSTRY_62_NAME
 
-    position  = { x = 554 y = 290 }
+    position  = { x = 576 y = 263 }
 	picture   = "DH5620"
     year      = 1923
     # 
@@ -2255,12 +2554,13 @@ technology =
 		command = { type = trickleback_mod value = 1 }
     }
   } 
+
   # Sulfa group Antibiotics
   application =
   { id        = 5630
     name      = TECH_APP_INDUSTRY_63_NAME
 
-    position  = { x = 554 y = 308 }
+    position  = { x = 576 y = 281 }
 	picture   = "DH5630"
     year      = 1932
     # 
@@ -2280,12 +2580,13 @@ technology =
 		command = { type = trickleback_mod value = 1 }
     }
   } 
+
   # Basic Pharmacology
   application =
   { id        = 5640
     name      = TECH_APP_INDUSTRY_64_NAME
 
-    position  = { x = 554 y = 326 }
+    position  = { x = 576 y = 299 }
 	picture   = "DH5640"
     year      = 1938
     # 
@@ -2310,7 +2611,7 @@ technology =
   { id        = 5650
     name      = TECH_APP_INDUSTRY_65_NAME
 
-    position  = { x = 554 y = 344 }
+    position  = { x = 576 y = 317 }
 	picture   = "DH5650"
     year      = 1944
     # 
@@ -2330,12 +2631,13 @@ technology =
 		command = { type = trickleback_mod value = 1 }
     }
   }
+
   # Improved Antibiotic
   application =
   { id        = 5660
     name      = TECH_APP_INDUSTRY_66_NAME
 
-    position  = { x = 554 y = 362 }
+    position  = { x = 576 y = 335 }
 	picture   = "DH5660"
     year      = 1948
     # 
@@ -2354,12 +2656,13 @@ technology =
 	  command = { type = trickleback_mod value = 2 }
     }
   } 
+
   # Improved Pharmacology
   application =
   { id        = 5670
     name      = TECH_APP_INDUSTRY_67_NAME
 
-    position  = { x = 554 y = 380 }
+    position  = { x = 576 y = 353 }
 	picture   = "DH5670"
     year      = 1954
     # 
@@ -2379,13 +2682,210 @@ technology =
 		command = { type = trickleback_mod value = 2 }
 		command = { type = attrition_mod value = 2 }
     }
+  }
+    label =
+  { tag      = TECH_CAT_HOSPITALS
+    position = { x = 180 y = 357 }
+  }
+    # Great War Hospital System
+  application =
+  { id        = 14000
+    name      = TECH_APP_LD_100_NAME
+
+    position  = { x = 118 y = 371 }
+	picture   = "14000"
+    year      = 1914
+    # ?
+    component = { id = 14001 name = TECH_CMP_LD_100_1_NAME type = individual_courage difficulty = 4 }
+    # ?
+    component = { id = 14002 name = TECH_CMP_LD_100_2_NAME type = training difficulty = 4 }
+    # ?
+    component = { id = 14003 name = TECH_CMP_LD_100_3_NAME type = combined_arms_focus difficulty = 4 }
+    # ?
+    component = { id = 14004 name = TECH_CMP_LD_100_4_NAME type = medicine difficulty = 4 }
+    # ?
+    component = { id = 14005 name = TECH_CMP_LD_100_5_NAME type = mechanics difficulty = 4 }
+    required  = { }
+    effects =
+    { command = { type = attrition_mod value = 1 }
+      command = { type = trickleback_mod value = 2 }
+    }
+  }
+      # Improved Great War Hospital System
+  application =
+  { id        = 14010
+    name      = TECH_APP_LD_101_NAME
+
+    position  = { x = 230 y = 371 }
+	picture   = "DH14010"
+    year      = 1916
+    # ?
+    component = { id = 14011 name = TECH_CMP_LD_101_1_NAME type = individual_courage difficulty = 4 }
+    # ?
+    component = { id = 14012 name = TECH_CMP_LD_101_2_NAME type = training difficulty = 4 }
+    # ?
+    component = { id = 14013 name = TECH_CMP_LD_101_3_NAME type = combined_arms_focus difficulty = 4 }
+    # ?
+    component = { id = 14014 name = TECH_CMP_LD_101_4_NAME type = medicine difficulty = 4 }
+    # ?
+    component = { id = 14015 name = TECH_CMP_LD_101_5_NAME type = vehicle_engineering difficulty = 4 }
+    required  = { 14000 }
+    effects =
+    { command = { type = attrition_mod value = 1 }
+      command = { type = trickleback_mod value = 6 } #higher trickleback due to gas
+    }
+  }
+      # Early Hospital System
+  application =
+  { id        = 14020
+    name      = TECH_APP_LD_102_NAME
+
+    position  = { x = 118 y = 389 }
+	picture   = "14010"
+    year      = 1924
+    # ?
+    component = { id = 14021 name = TECH_CMP_LD_102_1_NAME type = centralized_execution difficulty = 5 }
+    # ?
+    component = { id = 14022 name = TECH_CMP_LD_102_2_NAME type = medicine difficulty = 5 }
+    # ?
+    component = { id = 14023 name = TECH_CMP_LD_102_3_NAME type = individual_courage difficulty = 5 }
+    # ?
+    component = { id = 14024 name = TECH_CMP_LD_102_4_NAME type = technical_efficiency difficulty = 5 }
+    # ?
+    component = { id = 14025 name = TECH_CMP_LD_102_5_NAME type = training difficulty = 5 }
+    required  = { 14010 }
+    effects =
+    { command = { type = attrition_mod value = 1 }
+     # command = { type = trickleback_mod value = -2 } # gas no longer used so the overall trickle back is lower 
+    }
+  }
+    # Basic Hospital System
+  application =
+  { id        = 14030
+    name      = TECH_APP_LD_103_NAME
+
+    position  = { x = 230 y = 389 }
+	picture   = "14020"
+    year      = 1936
+    # ?
+    component = { id = 14031 name = TECH_CMP_LD_103_1_NAME type = centralized_execution difficulty = 6 }
+    # ?
+    component = { id = 14032 name = TECH_CMP_LD_103_2_NAME type = small_unit_tactics difficulty = 6 }
+    # ?
+    component = { id = 14033 name = TECH_CMP_LD_103_3_NAME type = medicine difficulty = 6 }
+    # ?
+    component = { id = 14034 name = TECH_CMP_LD_103_4_NAME type = mechanics difficulty = 6 }
+    # ?
+    component = { id = 14035 name = TECH_CMP_LD_103_5_NAME type = training difficulty = 6 }
+    required  = { 14020 }
+    effects =
+    { command = { type = attrition_mod value = 1 }
+     # command = { type = trickleback_mod value = 2 }
+    }
   } 
+      # Improved Hospital System
+  application =
+  { id        = 14040
+    name      = TECH_APP_LD_104_NAME
+
+    position  = { x = 118 y = 407 }
+	picture   = "14030"
+    year      = 1944
+    # ?
+    component = { id = 14041 name = TECH_CMP_LD_103_1_NAME type = centralized_execution difficulty = 7 }
+    # ?
+    component = { id = 14042 name = TECH_CMP_LD_103_2_NAME type = small_unit_tactics difficulty = 7 }
+    # ?
+    component = { id = 14043 name = TECH_CMP_LD_103_3_NAME type = medicine difficulty = 7 }
+    # ?
+    component = { id = 14044 name = TECH_CMP_LD_103_4_NAME type = individual_courage difficulty = 7 }
+    # ?
+    component = { id = 14045 name = TECH_CMP_LD_103_5_NAME type = training difficulty = 7 }
+    required  = { 14030 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 2 }
+    }
+  }
+      # Semi-modern Hospital System
+  application =
+  { id        = 14110
+    name      = TECH_APP_LD_111_NAME
+
+    position  = { x = 230 y = 407 }
+	picture   = "14040"
+    year      = 1951
+    # ?
+    component = { id = 14111 name = TECH_CMP_LD_111_1_NAME type = aeronautics difficulty = 8 }
+    # ?
+    component = { id = 14112 name = TECH_CMP_LD_111_2_NAME type = large_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14113 name = TECH_CMP_LD_111_3_NAME type = medicine difficulty = 8 }
+    # ?
+    component = { id = 14114 name = TECH_CMP_LD_111_4_NAME type = electronics difficulty = 8 }
+    # ?
+    component = { id = 14115 name = TECH_CMP_LD_111_5_NAME type = training difficulty = 8 }
+    required  = { 14040 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 2 }
+    }
+  }
+  
+      # Advanced Hospital System
+  application =
+  { id        = 14120
+    name      = TECH_APP_LD_112_NAME
+
+    position  = { x = 118 y = 425 }
+	picture   = "DH14120"
+    year      = 1962
+    # ?
+    component = { id = 14121 name = TECH_CMP_LD_112_1_NAME type = aeronautics difficulty = 8 }
+    # ?
+    component = { id = 14122 name = TECH_CMP_LD_112_2_NAME type = nuclear_physics difficulty = 8 }
+    # ?
+    component = { id = 14123 name = TECH_CMP_LD_112_3_NAME type = medicine difficulty = 8 }
+    # ?
+    component = { id = 14124 name = TECH_CMP_LD_112_4_NAME type = electronics difficulty = 8 }
+    # ?
+    component = { id = 14125 name = TECH_CMP_LD_112_5_NAME type = training difficulty = 8 }
+    required  = { 14110 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 3 }
+    }
+  }
+  # Modern Hospital System
+  application =
+  { id        = 14130
+    name      = TECH_APP_LD_113_NAME
+
+    position  = { x = 230 y = 425 }
+	picture   = "DH14130"
+    year      = 1970
+    # ?
+    component = { id = 14131 name = TECH_CMP_LD_113_1_NAME type = aeronautics difficulty = 8 }
+    # ?
+    component = { id = 14132 name = TECH_CMP_LD_113_2_NAME type = technical_efficiency difficulty = 8 }
+    # ?
+    component = { id = 14133 name = TECH_CMP_LD_113_3_NAME type = medicine difficulty = 8 }
+    # ?
+    component = { id = 14134 name = TECH_CMP_LD_113_4_NAME type = electronics difficulty = 8 }
+    # ?
+    component = { id = 14135 name = TECH_CMP_LD_113_5_NAME type = training difficulty = 8 }
+    required  = { 14120 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 3 }
+    }
+  }
   
   
   # Specialised Equipment
   label =
   { tag      = TECH_CAT_EQUIPMENT
-    position  = { x = 325 y = 417 }
+    position  = { x = 125 y = 443 }
   }  
   
   # Infantry equipment - winter
@@ -2393,7 +2893,7 @@ technology =
   { id        = 5920
     name      = TECH_APP_INDUSTRY_92_NAME
 
-    position  = { x = 314 y = 435 }
+    position  = { x = 125 y = 461 }
 	picture   = "DH5920"
     year      = 1939
     # 
@@ -2450,7 +2950,7 @@ technology =
   { id        = 5930
     name      = TECH_APP_INDUSTRY_93_NAME
 
-    position  = { x = 314 y = 452 }
+    position  = { x = 125 y = 479 }
 	picture   = "DH5930"
     year      = 1940
     # 
@@ -2517,7 +3017,7 @@ technology =
   { id        = 5940
     name      = TECH_APP_INDUSTRY_94_NAME
 
-    position  = { x = 426 y = 435 }
+    position  = { x = 226 y = 461 }
 	picture   = "DH5940"
     year      = 1939
     # 
@@ -2581,7 +3081,7 @@ technology =
   { id        = 5950
     name      = TECH_APP_INDUSTRY_95_NAME
 
-    position  = { x = 426 y = 452 }
+    position  = { x = 226 y = 479 }
 	picture   = "DH5950"
     year      = 1940
     # 
@@ -2648,7 +3148,7 @@ technology =
   { id        = 5960
     name      = TECH_APP_INDUSTRY_96_NAME
 
-    position  = { x = 538 y = 435 }
+    position  = { x = 327 y = 461 }
 	picture   = "DH5960"
     year      = 1939
     # 
@@ -2688,7 +3188,7 @@ technology =
   { id        = 5970
     name      = TECH_APP_INDUSTRY_97_NAME
 
-    position  = { x = 538 y = 452 }
+    position  = { x = 327 y = 479 }
 	picture   = "DH5970"
     year      = 1940
     # 
@@ -2734,7 +3234,7 @@ technology =
   { id        = 5980
     name      = TECH_APP_INDUSTRY_98_NAME
 
-    position  = { x = 426 y = 415 }
+    position  = { x = 226 y = 443 }
 	picture   = "DH5980"
     year      = 1939
     # 
@@ -2802,7 +3302,7 @@ technology =
   { id        = 5990
     name      = TECH_APP_INDUSTRY_99_NAME
 
-    position  = { x = 538 y = 415 }
+    position  = { x = 327 y = 443 }
 	picture   = "DH5990"
     year      = 1940
     # 

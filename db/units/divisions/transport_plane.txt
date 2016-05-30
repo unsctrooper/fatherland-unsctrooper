@@ -170,3 +170,115 @@ model = {
 	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 200 }
 }
+
+# 6 - Imp Modern Transport Plane (1957) Lockheed C-130B Hercules/Antonov An-12/Transall C-160D/de Havilland Canada DHC-4 Caribou/Breguet 941
+model = {
+	cost 						= 20
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 425
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 4
+	airdefence					= 18
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 1200
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.3
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}
+
+# 7 - Imp Modern Transport Plane (1965) Lockheed C-5A Galaxy/Antonov An-26/Kawasaki C-1/CASA C-212A Aviocar/Ilyushin Il-76D/Hawker Siddeley Andover
+model = {
+	cost 						= 22
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 500
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 4
+	airdefence					= 18
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 1500
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.3
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}
+
+# 8 - Adv Modern Transport Plane (1980) Lockheed C-5B Galaxy/CASA-IPTN CN-235/Antonov An-124/Shaanxi Y-8/Short C-23 Sherpa
+model = {
+	cost 						= 24
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 525
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 4
+	airdefence					= 18
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 1800
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.5
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}
+
+# 9 - Modern Transport Plane (1992) Boeing C-17A Globemaster III/EADS CASA C-295/Antonov An-70/Airbus A400M Atlas
+model = {
+	cost 						= 26
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 550
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 3
+	airdefence					= 16
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 2300
+	supplyconsumption 			= 1
+	fuelconsumption				= 3
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}

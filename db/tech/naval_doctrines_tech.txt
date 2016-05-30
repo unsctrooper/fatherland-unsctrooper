@@ -142,7 +142,7 @@ technology =
 
     position  = { x = 560 y = 92 }
 	picture   = "8050"
-    year      = 1890
+    year      = 1880
     # Basic Convoy Escorting
 	component = { id = 8051 name = TECH_CMP_ND_5_1_NAME type = naval_training difficulty = 4 }
     # Basic Ship-to-Ship Communication 
@@ -988,10 +988,13 @@ technology =
     required  = { 8620 }
     effects =
     { command = { type = task_efficiency which = convoy_raiding value = 0.05 }
-      command = { type = max_positioning which = submarine value = 0.05 }
-      command = { type = min_positioning which = submarine value = 0.05 }
-      command = { type = max_positioning which = nuclear_submarine value = 0.05 }
-      command = { type = min_positioning which = nuclear_submarine value = 0.05 }
+      command = { type = max_positioning which = carrier value = 0.05 }
+      command = { type = min_positioning which = carrier value = 0.05 }
+      command = { type = max_positioning which = light_carrier value = 0.10 }
+      command = { type = min_positioning which = light_carrier value = 0.05 }
+	  command = { type = max_positioning which = escort_carrier value = 0.10 }
+      command = { type = min_positioning which = escort_carrier value = 0.05 }
+
     }
   }
   # Advanced Submarine Operations
@@ -2266,12 +2269,12 @@ technology =
 	  command = { type = morale which = carrier value = 10 }
 	  command = { type = morale which = light_carrier value = 10 }
 	  command = { type = morale which = escort_carrier value = 10 }
-	  command = { type = max_positioning which = carrier value = 0.1 }
-	  command = { type = min_positioning which = carrier value = 0.1 }
-	  command = { type = max_positioning which = light_carrier value = 0.1 }
-	  command = { type = min_positioning which = light_carrier value = 0.1 }
-	  command = { type = max_positioning which = escort_carrier value = 0.1 }
-	  command = { type = min_positioning which = escort_carrier value = 0.1 }
+	  command = { type = max_positioning which = carrier value = 0.05 }
+	  command = { type = min_positioning which = carrier value = 0.05 }
+	  command = { type = max_positioning which = light_carrier value = 0.05 }
+	  command = { type = min_positioning which = light_carrier value = 0.05 }
+	  command = { type = max_positioning which = escort_carrier value = 0.05 }
+	  command = { type = min_positioning which = escort_carrier value = 0.05 }
     }
   }
   # Land-Sea Air Defense
@@ -2580,17 +2583,11 @@ technology =
 	  command = { type = task_efficiency which = naval_port_strike value = 0.1 }
       command = { type = task_efficiency which = naval_airbase_strike value = 0.1 }
 	  command = { type = rain_attack which = carrier value = 5 }
-	  command = { type = rain_defense which = carrier value = 5 }
 	  command = { type = snow_attack which = carrier value = 5 }
-	  command = { type = snow_defense which = carrier value = 5 }
 	  command = { type = rain_attack which = light_carrier value = 5 }
-	  command = { type = rain_defense which = light_carrier value = 5 }
 	  command = { type = snow_attack which = light_carrier value = 5 }
-	  command = { type = snow_defense which = light_carrier value = 5 }
 	  command = { type = rain_attack which = escort_carrier value = 5 }
-	  command = { type = rain_defense which = escort_carrier value = 5 }
 	  command = { type = snow_attack which = escort_carrier value = 5 }
-	  command = { type = snow_defense which = escort_carrier value = 5 }
     }
   }     
   #----------------------------  
@@ -2687,17 +2684,11 @@ technology =
 	  command = { type = task_efficiency which = naval_port_strike value = 0.05 }
       command = { type = task_efficiency which = naval_airbase_strike value = 0.05 }
 	  command = { type = rain_attack which = carrier value = 5 }
-	  command = { type = rain_defense which = carrier value = 5 }
 	  command = { type = snow_attack which = carrier value = 5 }
-	  command = { type = snow_defense which = carrier value = 5 }
 	  command = { type = rain_attack which = light_carrier value = 5 }
-	  command = { type = rain_defense which = light_carrier value = 5 }
 	  command = { type = snow_attack which = light_carrier value = 5 }
-	  command = { type = snow_defense which = light_carrier value = 5 }
 	  command = { type = rain_attack which = escort_carrier value = 5 }
-	  command = { type = rain_defense which = escort_carrier value = 5 }
 	  command = { type = snow_attack which = escort_carrier value = 5 }
-	  command = { type = snow_defense which = escort_carrier value = 5 }
     }
   }
   
@@ -2721,7 +2712,7 @@ technology =
     component = { id = 82305 name = TECH_CMP_ND_230_5_NAME type = small_unit_tactics difficulty = 7 }
     required  = { 8080 }
     effects =
-    { command = { type = task_efficiency which = amphibious_assault value = 0.10 }
+    { command = { type = task_efficiency which = amphibious_assault value = 0.05 }
 	  command = { type = task_efficiency which = shore_bombardment value = 0.05 }
 	  command = { type = max_amphib_mod value = 2 }
 	  command = { type = task_efficiency which = sea_transport       value = 0.05 }
@@ -2742,7 +2733,7 @@ technology =
     component = { id = 82315 name = TECH_CMP_ND_231_5_NAME type = naval_training difficulty = 8 }
     required  = { 82300 }
     effects =
-    { command = { type = task_efficiency which = amphibious_assault value = 0.15 }
+    { command = { type = task_efficiency which = amphibious_assault value = 0.05 }
 	  command = { type = task_efficiency which = shore_bombardment value = 0.10 }	
 	  command = { type = max_amphib_mod value = 3 }
 	  command = { type = task_efficiency which = sea_transport       value = 0.10 }
@@ -2763,7 +2754,7 @@ technology =
     component = { id = 82325 name = TECH_CMP_ND_232_5_NAME type = general_equipment difficulty = 9 }
     required  = { 82310 }
     effects =
-    { command = { type = task_efficiency which = amphibious_assault value = 0.15 }
+    { command = { type = task_efficiency which = amphibious_assault value = 0.10 }
 	  command = { type = task_efficiency which = shore_bombardment value = 0.10 }
 	  command = { type = max_amphib_mod value = 5 }
 	  command = { type = task_efficiency which = sea_transport       value = 0.10 }
@@ -2784,7 +2775,7 @@ technology =
     component = { id = 82335 name = TECH_CMP_ND_233_5_NAME type = naval_training difficulty = 10 }
     required  = { 82320 }
     effects =
-    { command = { type = task_efficiency which = amphibious_assault value = 0.20 }
+    { command = { type = task_efficiency which = amphibious_assault value = 0.10 }
 	  command = { type = task_efficiency which = shore_bombardment value = 0.15 }
 	  command = { type = max_amphib_mod value = 7 }
 	  command = { type = task_efficiency which = sea_transport       value = 0.10 }
