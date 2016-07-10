@@ -139,7 +139,8 @@ TECH_CAT_ATTHELO;Attack Helicopters;Attack Helicopters;Attack Helicopters;Attack
 TECH_CAG_NAVHELO;Naval Helicopters;Naval Helicopters;Naval Helicopters;Naval Helicopters;Naval Helicopters;Naval Helicopters;;Naval Helicopters;;;X
 TECH_CAT_JETFIG;Jet Fighters;Jet Fighters;Jet Fighters;Jet Fighters;Jet Fighters;Jet Fighters;;Jet Fighters;;;X
 TECH_CAT_MBT;Main Battle Tanks;Main Battle Tanks;Main Battle Tanks;Main Battle Tanks;Main Battle Tanks;Main Battle Tanks;;Main Battle Tanks;;;X
-TECH_CAT_INFANTRY;Regular Infantry;Infanterie;Fanteria;Infanterнa;Infanterie;Piechota;;Пехота;;;X
+TECH_CAT_INFANTRY;WW2 Infantry;WW2 Infantry;WW2 Infantry;WW2 Infantry;WW2 Infantry;WW2 Infantry;;WW2 Infantry;;;X
+TECH_CAT_CW_INFANTRY;Kalte Krieg Infantry;Kalte Krieg Infantry;Kalte Krieg Infantry;Kalte Krieg Infantry;Kalte Krieg Infantry;Kalte Krieg Infantry;;Kalte Krieg Infantry;;;X
 TECH_CAT_AIRBORNE;Airborne Infantry;Aйroportй;Forze aerotrasportate;Aerotransportada;Fallschirmjдger;Desant powietrzny;;Воздушно-десантные войска;;;X
 TECH_CAT_MARINES;Marines;Infanterie de marine;Marine;Inf. de marina;Marineinfanterie;Piechota morska;;Морская пехота;;;X
 TECH_CAT_MOUNTAIN;Light / Mountain;Montagne;Alpini;Inf. de montaсa;Gebirgsjдger;Strzelcy gуrscy;;Горнострелки;;;X

@@ -323,3 +323,81 @@ model = {
 	reinforce_cost 			= 0.15
 	equipment = { manpower = 10000 trucks = 840 artillery = 8 anti_tank = 10 }
 }
+
+# 12 - Militia (1993)
+model = {
+	cost 					= 4
+	buildtime	 			= 150
+	manpower 				= 10
+	maxspeed 				= 6
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 40
+	toughness 				= 50
+	softness 				= 100
+	suppression 			= 3
+	airdefence 				= 15
+	softattack 				= 14
+	hardattack 				= 8
+	airattack 				= 7
+	transportweight 		= 10
+	supplyconsumption 		= 1
+	fuelconsumption 		= 0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.25
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
+	equipment = { manpower = 10000 trucks = 850 artillery = 9 anti_tank = 11 }
+}
+
+# 13 - Militia (2003)
+model = {
+	cost 					= 4
+	buildtime	 			= 150
+	manpower 				= 10
+	maxspeed 				= 6
+	defaultorganisation 	= 25
+	morale 					= 35
+	defensiveness 			= 40
+	toughness 				= 50
+	softness 				= 100
+	suppression 			= 3
+	airdefence 				= 15
+	softattack 				= 15
+	hardattack 				= 9
+	airattack 				= 7
+	transportweight 		= 10
+	supplyconsumption 		= 1
+	fuelconsumption 		= 0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.25
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
+	equipment = { manpower = 10000 trucks = 860 artillery = 10 anti_tank = 12 }
+}
+
+# 13 - Militia (2013)
+model = {
+	cost 					= 4
+	buildtime	 			= 150
+	manpower 				= 10
+	maxspeed 				= 6
+	defaultorganisation 	= 25
+	morale 					= 35
+	defensiveness 			= 40
+	toughness 				= 50
+	softness 				= 100
+	suppression 			= 3
+	airdefence 				= 15
+	softattack 				= 16
+	hardattack 				= 10
+	airattack 				= 7
+	transportweight 		= 10
+	supplyconsumption 		= 1
+	fuelconsumption 		= 0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.25
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
+	equipment = { manpower = 10000 trucks = 870 artillery = 11 anti_tank = 13 }
+}

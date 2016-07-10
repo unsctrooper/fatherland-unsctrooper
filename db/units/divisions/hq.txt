@@ -248,3 +248,82 @@ model = {
 	reinforce_cost 			= 0.75
 	equipment = { manpower = 5000 halftracks = 25 medium_armor = 25 helicopter = 54 }
 }
+
+
+# 9 - Improved Modern HQ Division (1989)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 27
+	defaultorganisation		= 10
+	morale 					= 30
+	defensiveness 			= 6
+	toughness 				= 10
+	softness 				= 55
+	suppression 			= 2
+	airdefence				= 4
+	softattack				= 6
+	hardattack				= 5
+	airattack				= 8
+	transportweight			= 35
+	supplyconsumption		= 4.2
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 5000 halftracks = 30 medium_armor = 30 helicopter = 60 }
+}
+
+# 10 - Improved Modern HQ Division (2000)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 35
+	defaultorganisation		= 20
+	morale 					= 30
+	defensiveness 			= 6
+	toughness 				= 10
+	softness 				= 55
+	suppression 			= 2
+	airdefence				= 4
+	softattack				= 7
+	hardattack				= 6
+	airattack				= 9
+	transportweight			= 35
+	supplyconsumption		= 4.2
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 5000 halftracks = 35 medium_armor = 35 helicopter = 65 }
+}
+
+# 11 - Improved Modern HQ Division (2010)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 35
+	defaultorganisation		= 20
+	morale 					= 35
+	defensiveness 			= 6
+	toughness 				= 15
+	softness 				= 55
+	suppression 			= 2
+	airdefence				= 4
+	softattack				= 8
+	hardattack				= 7
+	airattack				= 10
+	transportweight			= 35
+	supplyconsumption		= 4.5
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 5000 halftracks = 40 medium_armor = 40 helicopter = 70 }
+}

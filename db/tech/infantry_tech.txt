@@ -8,6 +8,10 @@ technology =
     position = { x = 5 y = 5 }
   }
   label =
+  { tag = TECH_CAT_CW_INFANTRY
+  position = { x = 5 y = 73 }
+  }
+  label =
   { tag      = TECH_CAT_ENGINEERS
     position = { x = 230 y = 199 }
   }
@@ -55,287 +59,13 @@ technology =
 #################### REGULAR INFANTRY DIVISIONS
 ###################################################################
 
-  # 1870 INFANTRY
-  application =
-  { id        = 1010
-    name      = TECH_APP_INFANTRY_01_NAME
-
-    position  = { x = 5 y = 19 }
-	picture   = "DH1010"
-    year      = 1870
-    # Service Rifle
-    component = { id = 1011 name = TECH_CMP_INFANTRY_01_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1012 name = TECH_CMP_INFANTRY_01_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1013 name = TECH_CMP_INFANTRY_01_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1014 name = TECH_CMP_INFANTRY_01_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1015 name = TECH_CMP_INFANTRY_01_5_NAME type = training difficulty = 3 }
-    required  = { }
-    effects =
-    { command = { type = activate_unit_type which = infantry }
-      command = { type = new_model which = infantry value = 0 }
-	  command = { type = activate_unit_type which = garrison }
-      command = { type = new_model which = garrison value = 0 }
-      command = { type = activate_unit_type which = police }
-	  command = { type = activate_unit_type which = militia }
-      command = { type = new_model which = militia value = 0 }
-    }
-  }
-
-  # 1897 INFANTRY
-  application =
-  { id        = 1020
-    name      = TECH_APP_INFANTRY_02_NAME
-
-    position  = { x = 5 y = 37 }
-	picture   = "DH1020"
-    year      = 1897
-    # Service Rifle
-    component = { id = 1021 name = TECH_CMP_INFANTRY_02_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1022 name = TECH_CMP_INFANTRY_02_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1023 name = TECH_CMP_INFANTRY_02_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1024 name = TECH_CMP_INFANTRY_02_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1025 name = TECH_CMP_INFANTRY_02_5_NAME type = training difficulty = 3 }
-    required  = { 1010 }
-    effects =
-    { command = { type = new_model which = infantry value = 1 }
-      command = { type = scrap_model which = infantry value = 0 }
-	  command = { type = new_model which = militia value = 1 }
-      command = { type = scrap_model which = militia value = 0 }
-    }
-  }
-
-  # 1907 INFANTRY
-  application =
-  { id        = 1030
-    name      = TECH_APP_INFANTRY_03_NAME
-
-    position  = { x = 5 y = 55 }
-	picture   = "14080"
-    year      = 1907
-    # Service Rifle
-    component = { id = 1031 name = TECH_CMP_INFANTRY_03_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1032 name = TECH_CMP_INFANTRY_03_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1033 name = TECH_CMP_INFANTRY_03_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1034 name = TECH_CMP_INFANTRY_03_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1035 name = TECH_CMP_INFANTRY_03_5_NAME type = training difficulty = 3 }
-    required  = { 1020 }
-    effects =
-    { command = { type = new_model which = infantry value = 2 }
-      command = { type = scrap_model which = infantry value = 1 }
-	  command = { type = new_model which = garrison value = 1 }
-      command = { type = scrap_model which = garrison value = 0 }
-    }
-  }
-
-  # 1914 INFANTRY
-  application =
-  { id        = 1040
-    name      = TECH_APP_INFANTRY_04_NAME
-
-    position  = { x = 5 y = 73 }
-	picture   = "DH1040"
-    year      = 1914
-    # Service Rifle
-    component = { id = 1041 name = TECH_CMP_INFANTRY_04_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1042 name = TECH_CMP_INFANTRY_04_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1043 name = TECH_CMP_INFANTRY_04_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1044 name = TECH_CMP_INFANTRY_04_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1045 name = TECH_CMP_INFANTRY_04_5_NAME type = training difficulty = 3 }
-    required  = { 1030 }
-    effects =
-    { command = { type = new_model which = infantry value = 3 }
-      command = { type = scrap_model which = infantry value = 2 }
-	  command = { type = new_model which = militia value = 2 }
-      command = { type = scrap_model which = militia value = 1 }
-    }
-  }
-
-  # 1916 INFANTRY
-  application =
-  { id        = 1050
-    name      = TECH_APP_INFANTRY_05_NAME
-
-    position  = { x = 5 y = 91 }
-	picture   = "DH1050"
-    year      = 1916
-    # Service Rifle
-    component = { id = 1051 name = TECH_CMP_INFANTRY_05_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1052 name = TECH_CMP_INFANTRY_05_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1053 name = TECH_CMP_INFANTRY_05_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1054 name = TECH_CMP_INFANTRY_05_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1055 name = TECH_CMP_INFANTRY_05_5_NAME type = training difficulty = 3 }
-    required  = { 1040 }
-    effects =
-    { command = { type = new_model which = infantry value = 4 }
-      command = { type = scrap_model which = infantry value = 3 }
-	  command = { type = new_model which = garrison value = 2 }
-      command = { type = scrap_model which = garrison value = 1 }
-    }
-  }
-
-  # 1918 INFANTRY
-  application =
-  { id        = 1060
-    name      = TECH_APP_INFANTRY_06_NAME
-
-    position  = { x = 5 y = 109 }
-	picture   = "1010"
-    year      = 1918
-    # Service Rifle
-    component = { id = 1061 name = TECH_CMP_INFANTRY_06_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1062 name = TECH_CMP_INFANTRY_06_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1063 name = TECH_CMP_INFANTRY_06_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1064 name = TECH_CMP_INFANTRY_06_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1065 name = TECH_CMP_INFANTRY_06_5_NAME type = training difficulty = 3 }
-    required  = { 1050 }
-    effects =
-    { command = { type = new_model which = infantry value = 5 }
-      command = { type = scrap_model which = infantry value = 4 }
-	  command = { type = new_model which = militia value = 3 }
-      command = { type = scrap_model which = militia value = 2 }
-    }
-  }
-
-  # 1921 INFANTRY
-  application =
-  { id        = 1070
-    name      = TECH_APP_INFANTRY_07_NAME
-
-    position  = { x = 5 y = 127 }
-	picture   = "1160"
-    year      = 1921
-    # Service Rifle
-    component = { id = 1071 name = TECH_CMP_INFANTRY_07_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1072 name = TECH_CMP_INFANTRY_07_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1073 name = TECH_CMP_INFANTRY_07_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1074 name = TECH_CMP_INFANTRY_07_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1075 name = TECH_CMP_INFANTRY_07_5_NAME type = training difficulty = 3 }
-    required  = { 1060 }
-    effects =
-    { command = { type = new_model which = infantry value = 6 }
-      command = { type = scrap_model which = infantry value = 5 }
-	  command = { type = new_model which = garrison value = 3 }
-      command = { type = scrap_model which = garrison value = 2 }
-      command = { type = new_model which = police value = 1 }
-      command = { type = scrap_model which = police value = 0 }
-    }
-  }
-
-  # 1926 INFANTRY
-  application =
-  { id        = 1080
-    name      = TECH_APP_INFANTRY_08_NAME
-
-    position  = { x = 5 y = 145 }
-	picture   = "1100"
-    year      = 1926
-    # Machine Pistol
-    component = { id = 1081 name = TECH_CMP_INFANTRY_08_1_NAME type = general_equipment difficulty = 3 }
-    # Infantry Gun
-    component = { id = 1082 name = TECH_CMP_INFANTRY_08_2_NAME type = artillery difficulty = 3 }
-    # Signal Command System
-    component = { id = 1083 name = TECH_CMP_INFANTRY_08_3_NAME type = electronics difficulty = 3 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1084 name = TECH_CMP_INFANTRY_08_4_NAME type = munitions difficulty = 3 }
-    # Infantry Training
-    component = { id = 1085 name = TECH_CMP_INFANTRY_08_5_NAME type = training difficulty = 3 }
-    required  = { 1070 }
-    effects =
-    { command = { type = new_model which = infantry value = 7 }
-      command = { type = scrap_model which = infantry value = 6 }
-	  command = { type = new_model which = militia value = 4 }
-      command = { type = scrap_model which = militia value = 3 }
-    }
-  }
-
-  # 1931 INFANTRY
-  application =
-  { id        = 1090
-    name      = TECH_APP_INFANTRY_09_NAME
-
-    position  = { x = 5 y = 163 }
-	picture   = "1130"
-    year      = 1931
-    # Machine Pistol
-    component = { id = 1091 name = TECH_CMP_INFANTRY_09_1_NAME type = general_equipment difficulty = 4 }
-    # Infantry Gun
-    component = { id = 1092 name = TECH_CMP_INFANTRY_09_2_NAME type = artillery difficulty = 4 }
-    # Signal Command System
-    component = { id = 1093 name = TECH_CMP_INFANTRY_09_3_NAME type = electronics difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1094 name = TECH_CMP_INFANTRY_09_4_NAME type = munitions difficulty = 4 }
-    # Infantry Training
-    component = { id = 1095 name = TECH_CMP_INFANTRY_09_5_NAME type = training difficulty = 4 }
-    required  = { 1080 }
-    effects =
-    { command = { type = new_model which = infantry value = 8 }
-      command = { type = scrap_model which = infantry value = 7 }
-	  command = { type = new_model which = garrison value = 4 }
-      command = { type = scrap_model which = garrison value = 3 }
-    }
-  }
-
-  # 1936 INFANTRY
-  application =
-  { id        = 1100
-    name      = TECH_APP_INFANTRY_10_NAME
-
-    position  = { x = 5 y = 181 }
-	picture   = "1020"
-    year      = 1936
-    # Assault Rifle
-    component = { id = 1101 name = TECH_CMP_INFANTRY_10_1_NAME type = general_equipment difficulty = 4 }
-    # Infantry Gun
-    component = { id = 1102 name = TECH_CMP_INFANTRY_10_2_NAME type = artillery difficulty = 4 }
-    # Signal Command System
-    component = { id = 1103 name = TECH_CMP_INFANTRY_10_3_NAME type = electronics difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1104 name = TECH_CMP_INFANTRY_10_4_NAME type = munitions difficulty = 4 }
-    # Infantry Training
-    component = { id = 1105 name = TECH_CMP_INFANTRY_10_5_NAME type = training difficulty = 4 }
-    required  = { 1090 }
-    effects =
-    { command = { type = new_model which = infantry value = 9 }
-      command = { type = scrap_model which = infantry value = 8 }
-	  command = { type = new_model which = militia value = 5 }
-      command = { type = scrap_model which = militia value = 4 }
-    }
-  }
 
   # 1939 INFANTRY
   application =
   { id        = 1110
     name      = TECH_APP_INFANTRY_11_NAME
 
-    position  = { x = 5 y = 199 }
+    position  = { x = 5 y = 19 }
 	picture   = "1030"
     year      = 1939
     # Assault Rifle
@@ -362,7 +92,7 @@ technology =
   { id        = 1120
     name      = TECH_APP_INFANTRY_12_NAME
 
-    position  = { x = 5 y = 217 }
+    position  = { x = 5 y = 37 }
 	picture   = "1040"
     year      = 1942
     # Assault Rifle
@@ -389,7 +119,7 @@ technology =
   { id        = 1130
     name      = TECH_APP_INFANTRY_13_NAME
 
-    position  = { x = 5 y = 235 }
+    position  = { x = 5 y = 55 }
 	picture   = "1060"
     year      = 1945
     # Assault Rifle
@@ -418,7 +148,7 @@ technology =
   { id        = 1140
     name      = TECH_APP_INFANTRY_14_NAME
 
-    position  = { x = 5 y = 253 }
+    position  = { x = 5 y = 91 }
 	picture   = "10000"
     year      = 1948
     # Assault Rifle
@@ -445,7 +175,7 @@ technology =
   { id        = 1150
     name      = TECH_APP_INFANTRY_15_NAME
 
-    position  = { x = 5 y = 271 }
+    position  = { x = 5 y = 109 }
 	picture   = "10010"
     year      = 1951
     # Assault Rifle
@@ -471,7 +201,7 @@ technology =
   { id        = 13000
     name      = TECH_APP_INFANTRY_300_NAME
 
-    position  = { x = 5 y = 289 }
+    position  = { x = 5 y = 127 }
 	picture   = "1050"
     year      = 1954
     # Assault Rifle
@@ -497,7 +227,7 @@ technology =
   { id        = 13010
     name      = TECH_APP_INFANTRY_301_NAME
 
-    position  = { x = 5 y = 307 }
+    position  = { x = 5 y = 145 }
 	picture   = "10060"
     year      = 1958
     # Assault Rifle
@@ -523,7 +253,7 @@ technology =
   { id        = 13020
     name      = TECH_APP_INFANTRY_302_NAME
 
-    position  = { x = 5 y = 325 }
+    position  = { x = 5 y = 163 }
 	picture   = "10070"
     year      = 1962
     # Assault Rifle
@@ -551,7 +281,7 @@ technology =
   id = 13090
   name = TECH_APP_INFANTRY_320_NAME
   
-  position = { x = 5 y = 343 }
+  position = { x = 5 y = 181 }
   picture = "13090"
   year = 1967
   #5.56mm Assault Rifle
@@ -575,7 +305,7 @@ technology =
   id = 13100
   name = TECH_APP_INFANTRY_321_NAME
   
-  position = { x = 5 y = 361 }
+  position = { x = 5 y = 199 }
   picture = "13100"
   year = 1973
   #Under-barrel Grenade Launcher
@@ -603,7 +333,7 @@ technology =
   id = 13180
   name = TECH_APP_INFANTRY_329_NAME
   
-  position = { x = 5 y = 379 }
+  position = { x = 5 y = 217 }
   picture = "13180"
   year = 1979
   #Under-barrel Grenade Launcher
@@ -627,7 +357,7 @@ technology =
   id = 13190
   name = TECH_APP_INFANTRY_330_NAME
   
-  position = { x = 5 y = 397 }
+  position = { x = 5 y = 235 }
   picture = "13190"
   year = 1983
   #Under-barrel Grenade Launcher
@@ -655,7 +385,7 @@ technology =
   id = 13200
   name = TECH_APP_INFANTRY_331_NAME
   
-  position = { x = 5 y = 415 }
+  position = { x = 5 y = 253 }
   picture = "13200"
   year = 1989
   #Under-barrel Grenade Launcher

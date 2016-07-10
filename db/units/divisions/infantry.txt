@@ -627,3 +627,133 @@ model = {
 	reinforce_cost 			= 0.33
 	equipment = { manpower = 10000 trucks = 2500 artillery = 250 heavy_artillery = 60 anti_tank = 40 anti_air = 40 }
 }
+
+# 23 - Elite Infantry Division (1995)
+model = {
+	cost 					= 8
+	buildtime	 			= 300
+	manpower 				= 10
+	maxspeed 				= 6
+	defaultorganisation 	= 40
+	morale					= 40
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 85
+	suppression				= 6
+	airdefence				= 10
+	softattack				= 24
+	hardattack				= 14
+	airattack				= 14
+	transportweight			= 10
+	supplyconsumption 		= 1.5
+	fuelconsumption			= 1.0
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 10000 trucks = 2600 artillery = 260 heavy_artillery = 80 anti_tank = 50 anti_air = 50 }
+}
+
+# 24 - Elite Infantry Division (2000) # Post-Cold War
+model = {
+	cost 					= 8
+	buildtime	 			= 300
+	manpower 				= 10
+	maxspeed 				= 7
+	defaultorganisation 	= 50
+	morale					= 50
+	defensiveness 			= 40
+	toughness				= 45
+	softness				= 75
+	suppression				= 7
+	airdefence				= 10
+	softattack				= 25
+	hardattack				= 15
+	airattack				= 16
+	transportweight			= 10
+	supplyconsumption 		= 1.5
+	fuelconsumption			= 1.5
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 10000 trucks = 2700 artillery = 270 heavy_artillery = 90 anti_tank = 60 anti_air = 60 }
+}
+
+# 25 - Elite Infantry Division (2005) 
+model = {
+	cost 					= 8
+	buildtime	 			= 300
+	manpower 				= 10
+	maxspeed 				= 8
+	defaultorganisation 	= 50
+	morale					= 50
+	defensiveness 			= 45
+	toughness				= 50
+	softness				= 65
+	suppression				= 7
+	airdefence				= 10
+	softattack				= 26
+	hardattack				= 16
+	airattack				= 17
+	transportweight			= 10
+	supplyconsumption 		= 1.5
+	fuelconsumption			= 1.5
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 10000 trucks = 2800 artillery = 280 heavy_artillery = 100 anti_tank = 70 anti_air = 70 }
+}
+
+# 26 - Elite Infantry Division (2010) 
+model = {
+	cost 					= 8
+	buildtime	 			= 300
+	manpower 				= 10
+	maxspeed 				= 8
+	defaultorganisation 	= 60
+	morale					= 60
+	defensiveness 			= 50
+	toughness				= 55
+	softness				= 55
+	suppression				= 7
+	airdefence				= 10
+	softattack				= 27
+	hardattack				= 17
+	airattack				= 18
+	transportweight			= 10
+	supplyconsumption 		= 1.6
+	fuelconsumption			= 1.6
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 10000 trucks = 2900 artillery = 290 heavy_artillery = 110 anti_tank = 80 anti_air = 80 }
+}
+
+# 27 - Elite Infantry Division (2015) 
+model = {
+	cost 					= 8
+	buildtime	 			= 300
+	manpower 				= 10
+	maxspeed 				= 8
+	defaultorganisation 	= 60
+	morale					= 60
+	defensiveness 			= 50
+	toughness				= 65
+	softness				= 55
+	suppression				= 8
+	airdefence				= 10
+	softattack				= 28
+	hardattack				= 18
+	airattack				= 19
+	transportweight			= 10
+	supplyconsumption 		= 1.6
+	fuelconsumption			= 1.6
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 10000 trucks = 3000 artillery = 300 heavy_artillery = 120 anti_tank = 90 anti_air = 90 }
+}

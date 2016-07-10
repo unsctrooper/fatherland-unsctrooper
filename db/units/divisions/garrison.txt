@@ -321,3 +321,81 @@ model = {
 	reinforce_cost 			= 0.15
 	equipment = { manpower = 10000 artillery = 82 heavy_artillery = 60 anti_tank = 45 anti_air = 15 }
 }
+
+# 12 - Garrison (1993)
+model = {
+	cost 					= 4
+	buildtime 				= 160
+	manpower 				= 10
+	maxspeed 				= 0
+	defaultorganisation 	= 30
+	morale 					= 30
+	defensiveness 			= 35
+	toughness 				= 40
+	softness 				= 65
+	suppression 			= 15
+	airdefence 				= 15
+	softattack				= 17
+	hardattack 				= 10
+	airattack 				= 10
+	transportweight 		= 5
+	supplyconsumption 		= 1.1
+	fuelconsumption 		= 0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.25
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
+	equipment = { manpower = 10000 artillery = 92 heavy_artillery = 70 anti_tank = 55 anti_air = 25 }
+}
+
+# 13 - Garrison (2003)
+model = {
+	cost 					= 4
+	buildtime 				= 160
+	manpower 				= 10
+	maxspeed 				= 0
+	defaultorganisation 	= 35
+	morale 					= 35
+	defensiveness 			= 40
+	toughness 				= 40
+	softness 				= 45
+	suppression 			= 16
+	airdefence 				= 16
+	softattack				= 18
+	hardattack 				= 11
+	airattack 				= 11
+	transportweight 		= 5
+	supplyconsumption 		= 1.2
+	fuelconsumption 		= 0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.25
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
+	equipment = { manpower = 10000 artillery = 102 heavy_artillery = 80 anti_tank = 65 anti_air = 35 }
+}
+
+# 14 - Garrison (2013)
+model = {
+	cost 					= 4
+	buildtime 				= 160
+	manpower 				= 10
+	maxspeed 				= 0
+	defaultorganisation 	= 40
+	morale 					= 35
+	defensiveness 			= 45
+	toughness 				= 45
+	softness 				= 35
+	suppression 			= 17
+	airdefence 				= 17
+	softattack				= 19
+	hardattack 				= 12
+	airattack 				= 12
+	transportweight 		= 5
+	supplyconsumption 		= 1.3
+	fuelconsumption 		= 0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.25
+	reinforce_time			= 0.75
+	reinforce_cost 			= 0.15
+	equipment = { manpower = 10000 artillery = 112 heavy_artillery = 90 anti_tank = 75 anti_air = 45 }
+}
