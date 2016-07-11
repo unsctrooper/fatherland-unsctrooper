@@ -219,7 +219,7 @@ model = {
 	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
 }
 
-# 8 - Elite Airborne Division (1966) 
+# 8 - Elite Special Forces Division (1966) 
 model = {
 	cost 					= 10
 	buildtime	 			= 410
@@ -246,7 +246,7 @@ model = {
 	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
 }
 
-# 9 - Elite Airborne Division (1972) 
+# 9 - Elite Special Forces Division (1972) 
 model = {
 	cost 					= 10
 	buildtime	 			= 410
@@ -272,7 +272,7 @@ model = {
 	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
 }
 
-# 10 - Elite Airborne Division (1982) 
+# 10 - Elite Special Forces Division (1982) 
 model = {
 	cost 					= 11
 	buildtime	 			= 410
@@ -298,7 +298,7 @@ model = {
 	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
 }
 
-# 11 - Elite Airborne Division (1990) 
+# 11 - Elite Special Forces Division (1990) 
 model = {
 	cost 					= 11.5
 	buildtime	 			= 410
@@ -322,4 +322,108 @@ model = {
 	reinforce_time			= 0.55
 	reinforce_cost 			= 0.33
 	equipment = { manpower = 9000 artillery = 36 heavy_artillery = 8 anti_tank = 20 anti_air = 32 armored_car = 24 medium_armor = 32  }
+}
+
+# 12 - Elite Special Forces Division (2000) 
+model = {
+	cost 					= 11.5
+	buildtime	 			= 410
+	manpower 				= 9
+	maxspeed 				= 7
+	defaultorganisation 	= 50
+	morale					= 55
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 85
+	suppression				= 4
+	airdefence				= 10
+	softattack				= 26
+	hardattack				= 17
+	airattack				= 12
+	transportweight			= 10
+	supplyconsumption 		= 1.3
+	fuelconsumption			= 0.0
+	upgrade_time_factor 	= 0.15 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 9000 artillery = 46 heavy_artillery = 9 anti_tank = 25 anti_air = 42 armored_car = 34 medium_armor = 42  }
+}
+
+# 13 - Elite Special Forces Division (2005) 
+model = {
+	cost 					= 11.5
+	buildtime	 			= 410
+	manpower 				= 9
+	maxspeed 				= 7
+	defaultorganisation 	= 50
+	morale					= 55
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 85
+	suppression				= 4
+	airdefence				= 10
+	softattack				= 28
+	hardattack				= 19
+	airattack				= 12
+	transportweight			= 10
+	supplyconsumption 		= 1.3
+	fuelconsumption			= 0.0
+	upgrade_time_factor 	= 0.15 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 9000 artillery = 46 heavy_artillery = 9 anti_tank = 25 anti_air = 42 armored_car = 34 medium_armor = 42  }
+}
+
+# 14 - Elite Special Forces Division (2010) 
+model = {
+	cost 					= 11.5
+	buildtime	 			= 410
+	manpower 				= 9
+	maxspeed 				= 7
+	defaultorganisation 	= 50
+	morale					= 55
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 85
+	suppression				= 4
+	airdefence				= 9
+	softattack				= 30
+	hardattack				= 21
+	airattack				= 13
+	transportweight			= 10
+	supplyconsumption 		= 1.3
+	fuelconsumption			= 0.0
+	upgrade_time_factor 	= 0.15 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 9000 artillery = 46 heavy_artillery = 9 anti_tank = 25 anti_air = 42 armored_car = 34 medium_armor = 42  }
+}
+
+# 15 - Elite Special Forces Division (2015) 
+model = {
+	cost 					= 11.5
+	buildtime	 			= 410
+	manpower 				= 9
+	maxspeed 				= 7
+	defaultorganisation 	= 50
+	morale					= 55
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 75
+	suppression				= 4
+	airdefence				= 9
+	softattack				= 32
+	hardattack				= 23
+	airattack				= 14
+	transportweight			= 10
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 0.2
+	upgrade_time_factor 	= 0.15 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.55
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 9000 artillery = 50 heavy_artillery = 10  anti_tank = 30 anti_air = 45 armored_car = 40 medium_armor = 45  }
 }
