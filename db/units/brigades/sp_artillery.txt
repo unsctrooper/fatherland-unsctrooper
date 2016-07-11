@@ -179,3 +179,93 @@ model = {
 	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 56 artillery = 86 heavy_artillery = 8 anti_tank = 26 halftracks = 60  }
 }
+
+# 10 - Adv. Mod SP Artillery (1980)
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= -8
+	toughness 			= -5
+	softness			= -3
+	softattack			= 16
+	hardattack			= 11
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 60 artillery = 90 heavy_artillery = 10 anti_tank = 28 halftracks = 65  }
+}
+
+# 11 - Adv. Mod SP Artillery (1985)
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= -8
+	toughness 			= -5
+	softness			= -3
+	softattack			= 19
+	hardattack			= 14
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 60 artillery = 90 heavy_artillery = 10 anti_tank = 28 halftracks = 65  }
+}
+
+# 12 - Adv. Mod SP Artillery (1995)
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= -9
+	toughness 			= -6
+	softness			= -4
+	softattack			= 22
+	hardattack			= 17
+	supplyconsumption 	= 1
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 65 artillery = 95 heavy_artillery = 15 anti_tank = 30 halftracks = 70  }
+}
+
+# 12 - Adv. Mod SP Artillery (2005)
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= -9
+	toughness 			= -6
+	softness			= -4
+	softattack			= 25
+	hardattack			= 20
+	supplyconsumption 	= 1
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 65 artillery = 95 heavy_artillery = 15 anti_tank = 30 halftracks = 70  }
+}
+
+# 12 - Adv. Mod SP Artillery (2015)
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= -9
+	toughness 			= -6
+	softness			= -4
+	softattack			= 28
+	hardattack			= 23
+	supplyconsumption 	= 1.2
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 65 artillery = 95 heavy_artillery = 15 anti_tank = 30 halftracks = 70  }
+}
