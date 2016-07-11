@@ -125,3 +125,150 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 }
+
+# 6 - large naval AA Brigade (1956)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -5
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 12
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 7 - large naval AA Brigade (1966)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -5
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 14
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 8 - large naval AA Brigade (1976)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -6
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 15
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 9 - large naval AA Brigade (1986)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -6
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 16
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 10 - large naval AA Brigade (1996)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -7
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 17
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 10 - large naval AA Brigade (2006)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -7
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 18
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 11 - large naval AA Brigade (2016)  rocket guided
+model = {
+	cost 						= 3
+	buildtime					= 190
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -8
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 19
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
