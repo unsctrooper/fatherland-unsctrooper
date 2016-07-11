@@ -189,3 +189,79 @@ model = {
 	upgrade_cost_factor = 0.75
 	equipment = { manpower = 3000 armored_car = 126 }
 }
+
+# 10 - Advanced Modern Armored Car (1984)
+model = {
+	cost 				= 3.5
+	buildtime 			= 100
+	manpower 			= 3
+	defensiveness 		= -5
+	toughness 			= -5
+	defaultorganisation = 5
+	softness 			= -2
+	softattack 			= 6
+	hardattack 			= 4
+	suppression			= 5
+	supplyconsumption 	= 0.5
+	fuelconsumption 	= 0.3
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.75
+	equipment = { manpower = 3000 armored_car = 126 }
+}
+
+# 11 - Advanced Modern Armored Car (1994)
+model = {
+	cost 				= 3.5
+	buildtime 			= 100
+	manpower 			= 3
+	defensiveness 		= -6
+	toughness 			= -6
+	defaultorganisation = 6
+	softness 			= -3
+	softattack 			= 7
+	hardattack 			= 5
+	suppression			= 6
+	supplyconsumption 	= 0.8
+	fuelconsumption 	= 0.5
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.75
+	equipment = { manpower = 3000 armored_car = 130 }
+}
+
+# 12 - Advanced Modern Armored Car (2004)
+model = {
+	cost 				= 3.5
+	buildtime 			= 100
+	manpower 			= 3
+	defensiveness 		= -6
+	toughness 			= -6
+	defaultorganisation = 6
+	softness 			= -3
+	softattack 			= 8
+	hardattack 			= 6
+	suppression			= 6
+	supplyconsumption 	= 0.8
+	fuelconsumption 	= 0.5
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.75
+	equipment = { manpower = 3000 armored_car = 130 }
+}
+
+# 13 - Advanced Modern Armored Car (2014)
+model = {
+	cost 				= 3.5
+	buildtime 			= 100
+	manpower 			= 3
+	defensiveness 		= -6
+	toughness 			= -6
+	defaultorganisation = 6
+	softness 			= -3
+	softattack 			= 9
+	hardattack 			= 7
+	suppression			= 6
+	supplyconsumption 	= 0.9
+	fuelconsumption 	= 0.8
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.75
+	equipment = { manpower = 3000 armored_car = 140 }
+}

@@ -143,3 +143,93 @@ model = {
 	speed_cap			= 20
 	equipment = { manpower = 3000 trucks = 468 artillery = 12 anti_air = 52 }
 }
+
+# 8 - Mobile SAM System (1979)
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 6
+	softattack			= 4
+	airattack			= 14
+	airdefence			= -6
+	supplyconsumption 	= 0.20
+	fuelconsumption		= 1.18
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 478 artillery = 15 anti_air = 55 }
+}
+
+# 9 - Mobile SAM System (1988)
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 6
+	softattack			= 4
+	airattack			= 15
+	airdefence			= -7
+	supplyconsumption 	= 0.20
+	fuelconsumption		= 1.18
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 478 artillery = 15 anti_air = 55 }
+}
+
+# 9 - Mobile SAM System (1998)
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 8
+	softattack			= 6
+	airattack			= 15
+	airdefence			= -7
+	supplyconsumption 	= 0.20
+	fuelconsumption		= 1.18
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 478 artillery = 15 anti_air = 55 }
+}
+
+# 10 - Mobile SAM System (2008)
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 8
+	softattack			= 6
+	airattack			= 15
+	airdefence			= -7
+	supplyconsumption 	= 0.22
+	fuelconsumption		= 1.20
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 488 artillery = 18 anti_air = 58 }
+}
+
+# 11 - Mobile SAM System (2015)
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 9
+	softattack			= 6
+	airattack			= 16
+	airdefence			= -8
+	supplyconsumption 	= 0.22
+	fuelconsumption		= 1.20
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 trucks = 488 artillery = 18 anti_air = 58 }
+}
