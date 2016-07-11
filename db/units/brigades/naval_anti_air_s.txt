@@ -125,3 +125,150 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 }
+
+# 6 - small naval AA Brigade (1956)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -3
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 10
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 7 - small naval AA Brigade (1966)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -4
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 11
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 8 - small naval AA Brigade (1976)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -4
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 12
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 9 - small naval AA Brigade (1986)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -5
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 13
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 9 - small naval AA Brigade (1996)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -5
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 14
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 10 - small naval AA Brigade (2006)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -5
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 15
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 10 - small naval AA Brigade (2016)  rocket guided
+model = {
+	cost 						= 1.5
+	buildtime					= 120
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -6
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 15
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
