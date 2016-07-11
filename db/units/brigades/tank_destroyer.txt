@@ -179,3 +179,75 @@ model = {
 	speed_cap			= 20
 	equipment = { manpower = 3000 medium_armor = 116 }
 }
+
+# 10 - Ultra Modern Tank Destroyer (1985) 
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -3
+	softattack			= 8
+	hardattack			= 12
+	supplyconsumption 	= 0.36
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	equipment = { manpower = 3000 medium_armor = 200 }
+}
+
+# 11 - Ultra Modern Tank Destroyer (1995) 
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -4
+	softattack			= 9
+	hardattack			= 14
+	supplyconsumption 	= 0.40
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 21
+	equipment = { manpower = 3000 medium_armor = 200 }
+}
+
+# 12 - Ultra Modern Tank Destroyer (2005) 
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -4
+	softattack			= 10
+	hardattack			= 16
+	supplyconsumption 	= 0.45
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 21
+	equipment = { manpower = 3000 medium_armor = 210 }
+}
+
+# 13 - Ultra Modern Tank Destroyer (2015) 
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 0
+	toughness 			= 0
+	softness			= -5
+	softattack			= 11
+	hardattack			= 18
+	supplyconsumption 	= 0.45
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	speed_cap			= 21
+	equipment = { manpower = 3000 medium_armor = 210 }
+}
