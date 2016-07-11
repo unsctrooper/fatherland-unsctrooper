@@ -118,3 +118,88 @@ model = {
 	speed_cap			= 22
 	equipment = { manpower = 3000 horses = 680 anti_air = 64 }
 }
+
+# 7 - Modern Anti-Air (1976)
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 3
+	airattack			= 7
+	airdefence			= -6
+	maxspeed 			= 0
+	supplyconsumption 	= 0.20
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.5
+	speed_cap			= 22
+	equipment = { manpower = 3000 horses = 0 anti_air = 70 }
+}
+
+# 8 - Modern Anti-Air (1986)
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 3
+	airattack			= 8
+	airdefence			= -7
+	maxspeed 			= 0
+	supplyconsumption 	= 0.20
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.5
+	speed_cap			= 22
+	equipment = { manpower = 3000 horses = 0 anti_air = 70 }
+}
+
+# 9 - Modern Anti-Air (1996)
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 4
+	airattack			= 9
+	airdefence			= -7
+	maxspeed 			= 0
+	supplyconsumption 	= 0.20
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.5
+	speed_cap			= 22
+	equipment = { manpower = 3000 horses = 0 anti_air = 70 }
+}
+
+# 10 - Modern Anti-Air (2006)
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 5
+	airattack			= 10
+	airdefence			= -8
+	maxspeed 			= 0
+	supplyconsumption 	= 0.30
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.5
+	speed_cap			= 22
+	equipment = { manpower = 3000 horses = 0 anti_air = 75 }
+}
+
+# 11 - Modern Anti-Air (2016)
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 0
+	hardattack			= 6
+	airattack			= 10
+	airdefence			= -8
+	maxspeed 			= 0
+	supplyconsumption 	= 0.30
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.5
+	speed_cap			= 22
+	equipment = { manpower = 3000 horses = 0 anti_air = 75 }
+}
