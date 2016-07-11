@@ -1,5 +1,34 @@
 detachable = yes
-# 0 - Semi-Modern AT Gun (1955) T-12 antitank gun
+
+# 0 - Semi-Modern AT Gun (1940) 
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 0.2
+	defensiveness 		= 4
+	hardattack			= 7
+	maxspeed 			= -1
+	supplyconsumption 	= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { manpower = 200 anti_tank = 55 }
+}
+
+# 1 - Semi-Modern AT Gun (1943) 
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 0.2
+	defensiveness 		= 5
+	hardattack			= 8
+	maxspeed 			= -1
+	supplyconsumption 	= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { manpower = 200 anti_tank = 50 }
+}
+
+# 2 - Semi-Modern AT Gun (1955) T-12 antitank gun
 model = {
 	cost 				= 5
 	buildtime	 		= 60
@@ -13,7 +42,7 @@ model = {
 	equipment = { manpower = 200 anti_tank = 54 }
 }
 
-# 1 - Modern AT Gun (1970) T-12A antitank gun
+# 3 - Modern AT Gun (1970) T-12A antitank gun
 model = {
 	cost 				= 5
 	buildtime	 		= 60
@@ -27,7 +56,7 @@ model = {
 	equipment = { manpower = 200 anti_tank = 54 }
 }
 
-# 2 - Modern AT Gun (1987) Sprut anti-tank gun
+# 4 - Modern AT Gun (1987) Sprut anti-tank gun
 model = {
 	cost 				= 5
 	buildtime	 		= 60
@@ -39,4 +68,46 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
 	equipment = { manpower = 200 anti_tank = 54 }
+}
+
+# 5 - Modern AT Gun (1997) Sprut anti-tank gun
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 0.2
+	defensiveness 		= 8
+	hardattack			= 15
+	maxspeed 			= -1
+	supplyconsumption 	= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { manpower = 200 anti_tank = 60 }
+}
+
+# 6 - Modern AT Gun (2007) Sprut anti-tank gun
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 0.2
+	defensiveness 		= 9
+	hardattack			= 17
+	maxspeed 			= -1
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { manpower = 200 anti_tank = 65 }
+}
+
+# 7 - Modern AT Gun (2007) Sprut anti-tank gun
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 0.2
+	defensiveness 		= 9
+	hardattack			= 18
+	maxspeed 			= -1
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { manpower = 200 anti_tank = 60 }
 }
