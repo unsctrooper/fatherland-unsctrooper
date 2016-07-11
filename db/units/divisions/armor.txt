@@ -364,3 +364,84 @@ model = {
 	reinforce_cost 			= 0.75
 	equipment = { manpower = 8000 trucks = 260 artillery = 72 heavy_artillery = 28 anti_tank = 24 anti_air = 24 armored_car = 50 halftracks = 428 medium_armor = 336 }
 }
+
+# 13 - Future Armored Division (2000)
+model = {
+	cost 					= 30
+	buildtime	 			= 360
+	manpower 				= 8
+	maxspeed 				= 30
+	defaultorganisation 	= 35
+	morale					= 30
+	defensiveness 			= 14
+	toughness				= 22
+	softness				= 18
+	suppression				= 2
+	airdefence				= 3
+	softattack				= 40
+	hardattack				= 48
+	airattack				= 19
+	transportweight			= 45
+	supplyconsumption 		= 3.1
+	fuelconsumption			= 16.1
+	no_fuel_combat_mod 		= -0.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 8000 trucks = 270 artillery = 82 heavy_artillery = 38 anti_tank = 34 anti_air = 34 armored_car = 60 halftracks = 528 medium_armor = 436 }
+}
+
+# 14 - Future Armored Division (2007)
+model = {
+	cost 					= 30
+	buildtime	 			= 360
+	manpower 				= 8
+	maxspeed 				= 30
+	defaultorganisation 	= 35
+	morale					= 30
+	defensiveness 			= 14
+	toughness				= 22
+	softness				= 16
+	suppression				= 2
+	airdefence				= 3
+	softattack				= 42
+	hardattack				= 50
+	airattack				= 19
+	transportweight			= 45
+	supplyconsumption 		= 3.1
+	fuelconsumption			= 16.1
+	no_fuel_combat_mod 		= -0.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 8000 trucks = 270 artillery = 82 heavy_artillery = 38 anti_tank = 34 anti_air = 34 armored_car = 60 halftracks = 528 medium_armor = 436 }
+}
+
+# 15 - Future Armored Division (2015)
+model = {
+	cost 					= 30
+	buildtime	 			= 360
+	manpower 				= 8
+	maxspeed 				= 30
+	defaultorganisation 	= 35
+	morale					= 30
+	defensiveness 			= 14
+	toughness				= 22
+	softness				= 16
+	suppression				= 2
+	airdefence				= 3
+	softattack				= 44
+	hardattack				= 52
+	airattack				= 18
+	transportweight			= 45
+	supplyconsumption 		= 3.2
+	fuelconsumption			= 16.1
+	no_fuel_combat_mod 		= -0.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 8000 trucks = 270 artillery = 82 heavy_artillery = 38 anti_tank = 34 anti_air = 34 armored_car = 60 halftracks = 528 medium_armor = 436 }
+}
