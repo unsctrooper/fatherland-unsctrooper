@@ -491,3 +491,171 @@ model = {
 	interceptor 				= -2
 	equipment = { fighter = 100 manpower = 100 }
 }
+
+# 18 - Supersonic Interceptor (1980) 
+model = { 
+	cost 						= 29
+	buildtime	 				= 215
+	defaultorganisation 		= 30
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 1900
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 13
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 12
+	strategicattack				= 0
+	softattack					= 4
+	hardattack					= 1
+	navalattack					= 0
+	range						= 1300
+	supplyconsumption 			= 1.5
+	fuelconsumption				= 2.6
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	interceptor 				= -2
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 19 - Supersonic Interceptor (1989) 
+model = { 
+	cost 						= 29
+	buildtime	 				= 215
+	defaultorganisation 		= 30
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 2000
+	surfacedetectioncapability	= 11
+	airdetectioncapability		= 14
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 13
+	strategicattack				= 0
+	softattack					= 5
+	hardattack					= 1
+	navalattack					= 0
+	range						= 1400
+	supplyconsumption 			= 1.6
+	fuelconsumption				= 2.6
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	interceptor 				= -2
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 20 - Supersonic Interceptor (1995) 
+model = { 
+	cost 						= 29
+	buildtime	 				= 215
+	defaultorganisation 		= 30
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 2000
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 15
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 14
+	strategicattack				= 0
+	softattack					= 5
+	hardattack					= 1
+	navalattack					= 0
+	range						= 1400
+	supplyconsumption 			= 1.6
+	fuelconsumption				= 2.6
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	interceptor 				= -2
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 21 - Supersonic Interceptor (2001) 
+model = { 
+	cost 						= 30
+	buildtime	 				= 220
+	defaultorganisation 		= 30
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 2100
+	surfacedetectioncapability	= 13
+	airdetectioncapability		= 16
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 15
+	strategicattack				= 0
+	softattack					= 6
+	hardattack					= 1
+	navalattack					= 0
+	range						= 1800
+	supplyconsumption 			= 1.7
+	fuelconsumption				= 2.7
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	interceptor 				= -2
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 22 - Supersonic Interceptor (2009) 
+model = { 
+	cost 						= 30
+	buildtime	 				= 220
+	defaultorganisation 		= 35
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 2100
+	surfacedetectioncapability	= 14
+	airdetectioncapability		= 17
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 16
+	strategicattack				= 0
+	softattack					= 7
+	hardattack					= 2
+	navalattack					= 0
+	range						= 1900
+	supplyconsumption 			= 1.7
+	fuelconsumption				= 2.7
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	interceptor 				= -2
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 23 - Supersonic Interceptor (2016) 
+model = { 
+	cost 						= 30
+	buildtime	 				= 220
+	defaultorganisation 		= 35
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 2100
+	surfacedetectioncapability	= 15
+	airdetectioncapability		= 18
+	surfacedefence				= 1
+	airdefence					= 3
+	airattack					= 17
+	strategicattack				= 0
+	softattack					= 8
+	hardattack					= 2
+	navalattack					= 0
+	range						= 1900
+	supplyconsumption 			= 1.7
+	fuelconsumption				= 2.7
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	interceptor 				= -2
+	equipment = { fighter = 100 manpower = 100 }
+}
