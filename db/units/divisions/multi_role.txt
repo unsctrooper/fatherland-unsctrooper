@@ -248,7 +248,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 9 - Early Turbojet Multi-Role Fighter -First Generation (1948) Mikoyan-Gurevich MiG-15/Republic F-84 Thunderjet/Dassault MD.452 Mystère/Saab 21R/De Havilland Vampire FB.5
+# 9 - Early Turbojet Multi-Role Fighter -First Generation (1948) Mikoyan-Gurevich MiG-15/Republic F-84 Thunderjet/Dassault MD.452 MystÃ¨re/Saab 21R/De Havilland Vampire FB.5
 model = { 
 	cost 						= 24
 	buildtime	 				= 210
@@ -275,7 +275,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 10 - Basic Turbojet Multi-Role Fighter -First Generation (1950) Republic F-84F Thunderstreak/Mikoyan-Gurevich MiG-17/Dassault MD.454 Mystère IV/De Havilland Venom FB.1
+# 10 - Basic Turbojet Multi-Role Fighter -First Generation (1950) Republic F-84F Thunderstreak/Mikoyan-Gurevich MiG-17/Dassault MD.454 MystÃ¨re IV/De Havilland Venom FB.1
 model = { 
 	cost 						= 25
 	buildtime	 				= 210
@@ -302,7 +302,7 @@ model = {
 	equipment = { fighter = 100 manpower = 100 }
 }
 
-# 11 - Improved Turbojet Multi-Role Fighter - Second Generation (1954) Mikoyan-Gurevich MiG-19 Sukhoi Su-7/North American F-100D Super Sabre McDonnell F-101 Voodoo/Hawker Hunter F.4/Saab 32 Lansen/Dassault Super Mystère B2/
+# 11 - Improved Turbojet Multi-Role Fighter - Second Generation (1954) Mikoyan-Gurevich MiG-19 Sukhoi Su-7/North American F-100D Super Sabre McDonnell F-101 Voodoo/Hawker Hunter F.4/Saab 32 Lansen/Dassault Super MystÃ¨re B2/
 model = { 
 	cost 						= 26
 	buildtime	 				= 210
@@ -514,6 +514,118 @@ model = {
 	range						= 2000
 	supplyconsumption 			= 2.3
 	fuelconsumption				= 3.5
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 17
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 19- Fifth Generation Supersonic Turbojet Multi-Role Fighter (1997) 
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2700
+	surfacedetectioncapability	= 11
+	airdetectioncapability		= 17
+	surfacedefence				= 2
+	airdefence					= 2
+	airattack					= 16
+	strategicattack				= 4
+	softattack					= 17
+	hardattack					= 15
+	navalattack					= 16
+	range						= 2400
+	supplyconsumption 			= 2.5
+	fuelconsumption				= 3.6
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 17
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 20- Fifth Generation Supersonic Turbojet Multi-Role Fighter (2004)
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2700
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 18
+	surfacedefence				= 2
+	airdefence					= 1
+	airattack					= 17
+	strategicattack				= 5
+	softattack					= 18
+	hardattack					= 16
+	navalattack					= 17
+	range						= 2400
+	supplyconsumption 			= 2.5
+	fuelconsumption				= 3.6
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 17
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 21- Fifth Generation Supersonic Turbojet Multi-Role Fighter (2010)
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 35
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2800
+	surfacedetectioncapability	= 13
+	airdetectioncapability		= 19
+	surfacedefence				= 2
+	airdefence					= 1
+	airattack					= 18
+	strategicattack				= 5
+	softattack					= 19
+	hardattack					= 17
+	navalattack					= 18
+	range						= 2500
+	supplyconsumption 			= 2.6
+	fuelconsumption				= 3.7
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	multi_role = 17
+	equipment = { fighter = 100 manpower = 100 }
+}
+
+# 22- Fifth Generation Supersonic Turbojet Multi-Role Fighter (2017)
+model = { 
+	cost 						= 30
+	buildtime	 				= 210
+	defaultorganisation 		= 35
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 2800
+	surfacedetectioncapability	= 14
+	airdetectioncapability		= 20
+	surfacedefence				= 1
+	airdefence					= 1
+	airattack					= 19
+	strategicattack				= 6
+	softattack					= 20
+	hardattack					= 18
+	navalattack					= 19
+	range						= 2500
+	supplyconsumption 			= 2.6
+	fuelconsumption				= 3.7
 	upgrade_time_factor 		= 0.60 
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
