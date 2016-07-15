@@ -1,7 +1,7 @@
 #BRIG_MODEL_42_
 detachable = yes
 
-# 0 - Converted Gunship (1962) -UH-1H/Mi-2URP Salamandra/Aérospatiale SA341.1001 Gazelle
+# 0 - Converted Gunship (1962) -UH-1H/Mi-2URP Salamandra/AÃ©rospatiale SA341.1001 Gazelle
 model = {
 	cost 				= 4
 	buildtime	 		= 150
@@ -81,3 +81,82 @@ model = {
 	equipment = { manpower = 900 helicopter = 54 }
 }
 
+# 4 - Advanced Attack Helicopter (1987)
+model = {
+	cost 				= 6
+	buildtime	 		= 173
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 2
+	softness			= -2
+	hardattack			= 14
+	softattack			= 16
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 2.9
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 54 }
+}
+
+# 5 - Advanced Attack Helicopter (1999)
+model = {
+	cost 				= 7
+	buildtime	 		= 180
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 2
+	softness			= -2
+	hardattack			= 16
+	softattack			= 18
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 3.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 60 }
+}
+
+# 6 - Advanced Attack Helicopter (2007)
+model = {
+	cost 				= 7
+	buildtime	 		= 180
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 3
+	softness			= -3
+	hardattack			= 18
+	softattack			= 20
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 3.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 60 }
+}
+
+# 7 - Advanced Attack Helicopter (2015)
+model = {
+	cost 				= 7
+	buildtime	 		= 180
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 3
+	softness			= -3
+	hardattack			= 20
+	softattack			= 22
+	supplyconsumption 	= 0.9
+	fuelconsumption		= 3.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 60 }
+}
