@@ -220,3 +220,123 @@ model = {
 	reinforce_cost 			= 0.50
 	equipment = { bomber = 100 manpower = 200 }
 }
+
+# 9 - Improved Turbojet Close Air Support Aircraft (1984)
+model = {
+	cost 					= 27
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 1700
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 5
+	airdefence				= 9
+	softattack				= 12
+	hardattack				= 11
+	airattack				= 7
+	navalattack				= 7
+	supplyconsumption 		= 2.2
+	range					= 1200
+	fuelconsumption			= 3.0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 10 - Improved Turbojet Close Air Support Aircraft (1993)
+model = {
+	cost 					= 28
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 1800
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 9
+	softattack				= 13
+	hardattack				= 12
+	airattack				= 8
+	navalattack				= 8
+	supplyconsumption 		= 2.4
+	range					= 1400
+	fuelconsumption			= 3.0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 11 - Improved Turbojet Close Air Support Aircraft (2002)
+model = {
+	cost 					= 29
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 2000
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 9
+	softattack				= 14
+	hardattack				= 13
+	airattack				= 9
+	navalattack				= 9
+	supplyconsumption 		= 2.5
+	range					= 1500
+	fuelconsumption			= 3.0
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 12 - Improved Turbojet Close Air Support Aircraft (2011)
+model = {
+	cost 					= 29
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 2000
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 9
+	softattack				= 15
+	hardattack				= 14
+	airattack				= 10
+	navalattack				= 10
+	supplyconsumption 		= 2.6
+	range					= 1700
+	fuelconsumption			= 3.1
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 12 - Improved Turbojet Close Air Support Aircraft (2018)
+model = {
+	cost 					= 29
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 2000
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 8
+	softattack				= 16
+	hardattack				= 15
+	airattack				= 11
+	navalattack				= 11
+	supplyconsumption 		= 2.6
+	range					= 1800
+	fuelconsumption			= 3.2
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
