@@ -148,3 +148,29 @@ model = {
 		manpower = 2
 	}
 }
+
+# 6 - Improved Modern ASW Helicopter (2010) 
+model = {
+	cost 						= 0.5
+	buildtime					= 150
+	manpower 					= 0.01
+	surfacedetectioncapability	= 20
+	airdetectioncapability		= 11
+	subdetectioncapability		= 18
+	airdefence					= 0
+	seaattack					= 6
+	convoyattack				= 6
+	subattack					= 11
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.05
+	supplyconsumption 			= 0.2
+	fuelconsumption				= 0.2
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}
+
