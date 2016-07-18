@@ -282,3 +282,87 @@ model = {
 	reinforce_cost 				= 0.50
 	equipment = { transport_plane = 100 manpower = 200 }
 }
+
+# 9 - Modern Transport Plane (2000) 
+model = {
+	cost 						= 28
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 600
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 2
+	airdefence					= 14
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 2600
+	supplyconsumption 			= 1.2
+	fuelconsumption				= 3.2
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}
+
+# 10 - Modern Transport Plane (2010) 
+model = {
+	cost 						= 30
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 650
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 2
+	airdefence					= 14
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 2900
+	supplyconsumption 			= 1.2
+	fuelconsumption				= 3.2
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}
+
+# 11 - Modern Transport Plane (2015) 
+model = {
+	cost 						= 30
+	buildtime					= 200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.1
+	maxspeed					= 700
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	surfacedefence				= 2
+	airdefence					= 14
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	transportcapability			= 1
+	range						= 3200
+	supplyconsumption 			= 1.5
+	fuelconsumption				= 3.5
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { transport_plane = 100 manpower = 200 }
+}
