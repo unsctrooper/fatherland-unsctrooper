@@ -358,3 +358,57 @@ model = {
 	reinforce_cost 				= 0.50
 	equipment = { heavy_bomber = 100 manpower = 1000 }
 }
+
+# 12 - Stealth Strategic Bomber (2000)
+model = {
+	cost 						= 60
+	buildtime					= 350
+	defaultorganisation 		= 30
+	morale						= 20
+	manpower					= 3.5
+	maxspeed					= 1500
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	surfacedefence				= 1 
+	airdefence					= 2
+	airattack					= 4
+	strategicattack				= 28
+	softattack					= 10
+	hardattack					= 6
+	navalattack					= 5
+	range						= 7000
+	supplyconsumption 			= 7.8
+	fuelconsumption				= 7.8
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { heavy_bomber = 100 manpower = 1000 }
+}
+
+# 12 - Stealth Strategic Bomber (2010)
+model = {
+	cost 						= 65
+	buildtime					= 350
+	defaultorganisation 		= 30
+	morale						= 20
+	manpower					= 3.5
+	maxspeed					= 1700
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	surfacedefence				= 1 
+	airdefence					= 2
+	airattack					= 5
+	strategicattack				= 30
+	softattack					= 12
+	hardattack					= 8
+	navalattack					= 6
+	range						= 7500
+	supplyconsumption 			= 8
+	fuelconsumption				= 8
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { heavy_bomber = 100 manpower = 1000 }
+}
