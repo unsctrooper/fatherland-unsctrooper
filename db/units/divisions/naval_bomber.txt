@@ -302,3 +302,84 @@ model = {
 	reinforce_cost 				= 0.50
 	equipment = { bomber = 100 manpower = 600 }
 }
+
+# 11 - Improved Modern Turbojet Naval Bomber (1996)
+model = {
+	cost 						= 26
+	buildtime					= 240
+	defaultorganisation 		= 30
+	morale						= 25
+	manpower					= 2.2
+	maxspeed					= 1600
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 3
+	surfacedefence				= 4
+	airdefence					= 12
+	airattack					= 3
+	strategicattack				= 3
+	softattack					= 4
+	hardattack					= 11
+	navalattack					= 15
+	range						= 4500
+	supplyconsumption 			= 2.1
+	fuelconsumption				= 3.6
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { bomber = 100 manpower = 600 }
+}
+
+# 12 - Improved Modern Turbojet Naval Bomber (2007)
+model = {
+	cost 						= 27
+	buildtime					= 240
+	defaultorganisation 		= 30
+	morale						= 25
+	manpower					= 2.2
+	maxspeed					= 1700
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 4
+	surfacedefence				= 3
+	airdefence					= 11
+	airattack					= 3
+	strategicattack				= 3
+	softattack					= 5
+	hardattack					= 12
+	navalattack					= 16
+	range						= 5000
+	supplyconsumption 			= 2.3
+	fuelconsumption				= 3.8
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { bomber = 100 manpower = 600 }
+}
+
+# 13 - Improved Modern Turbojet Naval Bomber (2018)
+model = {
+	cost 						= 28
+	buildtime					= 240
+	defaultorganisation 		= 30
+	morale						= 25
+	manpower					= 2.2
+	maxspeed					= 1800
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 5
+	surfacedefence				= 3
+	airdefence					= 10
+	airattack					= 3
+	strategicattack				= 3
+	softattack					= 5
+	hardattack					= 13
+	navalattack					= 17
+	range						= 5500
+	supplyconsumption 			= 2.4
+	fuelconsumption				= 3.9
+	upgrade_time_factor 		= 0.60 
+	upgrade_cost_factor 		= 0.50
+	reinforce_time				= 0.60
+	reinforce_cost 				= 0.50
+	equipment = { bomber = 100 manpower = 600 }
+}
