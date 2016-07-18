@@ -116,30 +116,117 @@ model = {
 	equipment = { destroyer = 1 manpower = 315 }
 }
 
-# 4 - AEGIS Missile Destroyer (1972) Arleigh Bruke-class
+# 4 - Missile Destroyer (1982)
 model = {
-	cost						= 1.1
+	cost						= 1.3
 	buildtime 					= 1000
 	defaultorganisation 		= 20
 	morale						= 30
 	manpower					= 0.31
-	maxspeed					= 38
-	surfacedetectioncapability	= 5
-	airdetectioncapability		= 8
-	subdetectioncapability		= 10
+	maxspeed					= 39
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 9
+	subdetectioncapability		= 11
 	visibility					= 25
-	seadefence					= 32
+	seadefence					= 28
 	airdefence					= 8
-	seaattack					= 7
-	convoyattack				= 7
-	subattack					= 6
-	airattack					= 26
-	shorebombardment			= 1
+	seaattack					= 15
+	convoyattack				= 16
+	subattack					= 14
+	airattack					= 14
+	shorebombardment			= 2
 	transportcapability			= 0
-	range						= 13000
-	supplyconsumption			= 0.1
-	fuelconsumption				= 0.3
-	distance					= 0.2
+	range						= 14000
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.4
+	distance					= 0.3
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 315 }
+}
+
+# 5 - Missile Destroyer (1992)
+model = {
+	cost						= 1.5
+	buildtime 					= 1000
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.31
+	maxspeed					= 39
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 10
+	subdetectioncapability		= 12
+	visibility					= 25
+	seadefence					= 28
+	airdefence					= 8
+	seaattack					= 16
+	convoyattack				= 17
+	subattack					= 15
+	airattack					= 15
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 14000
+	supplyconsumption			= 0.3
+	fuelconsumption				= 0.5
+	distance					= 0.4
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 315 }
+}
+
+# 6 - Missile Destroyer (2002)
+model = {
+	cost						= 1.6
+	buildtime 					= 1000
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.31
+	maxspeed					= 40
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 11
+	subdetectioncapability		= 13
+	visibility					= 25
+	seadefence					= 28
+	airdefence					= 4
+	seaattack					= 17
+	convoyattack				= 18
+	subattack					= 16
+	airattack					= 16
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.6
+	distance					= 0.5
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 315 }
+}
+
+# 7 - Missile Destroyer (2012)
+model = {
+	cost						= 1.7
+	buildtime 					= 1000
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.31
+	maxspeed					= 40
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 12
+	subdetectioncapability		= 14
+	visibility					= 25
+	seadefence					= 28
+	airdefence					= 4
+	seaattack					= 18
+	convoyattack				= 9
+	subattack					= 17
+	airattack					= 17
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.7
+	distance					= 0.6
 	reinforce_time				= 0.2
 	reinforce_cost				= 0.3	
 	equipment = { destroyer = 1 manpower = 315 }
