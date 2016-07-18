@@ -112,7 +112,7 @@ model = {
 
 # 4 Improved AWACS Aircraft (2015)
 model = { 
-	cost 						= 25
+	cost 						= 30
 	buildtime	 				= 200
 	defaultorganisation 		= 0
 	morale						= 0
