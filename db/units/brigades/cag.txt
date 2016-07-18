@@ -339,3 +339,81 @@ model = {
 		manpower = 150
 	}
 }
+
+# 13 - Improved Modern Turbojet Carrier Air Group (1993)
+model = {
+	cost 						= 8.5
+	buildtime 					= 250
+	manpower 					= 0.15
+	surfacedetectioncapability	= 32
+	airdetectioncapability 		= 28
+	subdetectioncapability		= 26
+	airdefence					= -27
+	seaattack					= 32
+	convoyattack				= 32
+	subattack					= 20
+	airattack					= 30
+	shorebombardment			= 30
+	distance					= 2.5
+	supplyconsumption			= 1
+	fuelconsumption				= 1.6
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
+}
+
+# 14 - Improved Modern Turbojet Carrier Air Group (2003)
+model = {
+	cost 						= 9
+	buildtime 					= 250
+	manpower 					= 0.15
+	surfacedetectioncapability	= 34
+	airdetectioncapability 		= 30
+	subdetectioncapability		= 28
+	airdefence					= -28
+	seaattack					= 34
+	convoyattack				= 34
+	subattack					= 22
+	airattack					= 32
+	shorebombardment			= 32
+	distance					= 2.6
+	supplyconsumption			= 1.2
+	fuelconsumption				= 1.6
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
+}
+
+# 15 - Improved Modern Turbojet Carrier Air Group (2013)
+model = {
+	cost 						= 9.5
+	buildtime 					= 250
+	manpower 					= 0.15
+	surfacedetectioncapability	= 36
+	airdetectioncapability 		= 32
+	subdetectioncapability		= 30
+	airdefence					= -29
+	seaattack					= 36
+	convoyattack				= 36
+	subattack					= 24
+	airattack					= 34
+	shorebombardment			= 24
+	distance					= 2.8
+	supplyconsumption			= 1.2
+	fuelconsumption				= 1.7
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 30
+		bomber = 30
+		manpower = 150
+	}
+}
