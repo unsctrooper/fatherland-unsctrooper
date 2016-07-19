@@ -1592,7 +1592,7 @@ technology =
     required  = { 3490 }
     effects =
     { command = { type = new_model which = battleship value = 21 }
-	  #command = { trigger = { technology = 7200 } type = new_model which = battleship value = 13 } #If nuclear BB first
+	  command = { trigger = { technology = 7200 } type = new_model which = battleship value = 22 } #If nuclear BB first
       command = { type = scrap_model which = battleship value = 20 }
     }
   }
