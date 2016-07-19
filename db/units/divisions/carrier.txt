@@ -290,8 +290,153 @@ model = {
 	transportcapability			= 0
 	range						= 60000
 	supplyconsumption			= 3.5
-	fuelconsumption				= 0
+	fuelconsumption				= 2
 	distance					= 0.05
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 5000 }
+}
+
+# 10 - Improved Nuclear Carrier (1975)
+model = {
+	cost						= 9.5
+	buildtime 					= 2700
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 5.5
+	maxspeed					= 36
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 5
+	subdetectioncapability		= 1
+	visibility					= 100
+	seadefence					= 12
+	airdefence					= 19
+	seaattack					= 7
+	convoyattack				= 6
+	subattack					= 1
+	airattack					= 7
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 65000
+	supplyconsumption			= 3.7
+	fuelconsumption				= 2.5
+	distance					= 0.07
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 5000 }
+}
+
+# 11 - Improved Nuclear Carrier (1980)
+model = {
+	cost						= 10
+	buildtime 					= 2800
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 5.5
+	maxspeed					= 38
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 6
+	subdetectioncapability		= 1
+	visibility					= 100
+	seadefence					= 10
+	airdefence					= 17
+	seaattack					= 8
+	convoyattack				= 7
+	subattack					= 1
+	airattack					= 8
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 70000
+	supplyconsumption			= 3.7
+	fuelconsumption				= 2.5
+	distance					= 0.07
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 5000 }
+}
+
+# 12 - Improved Nuclear Carrier (1990)
+model = {
+	cost						= 10.5
+	buildtime 					= 2800
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 5.5
+	maxspeed					= 40
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 7
+	subdetectioncapability		= 1
+	visibility					= 100
+	seadefence					= 8
+	airdefence					= 15
+	seaattack					= 9
+	convoyattack				= 8
+	subattack					= 1
+	airattack					= 9
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 75000
+	supplyconsumption			= 3.8
+	fuelconsumption				= 3
+	distance					= 0.07
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 5000 }
+}
+
+# 13 - Improved Nuclear Carrier (2000)
+model = {
+	cost						= 11
+	buildtime 					= 2900
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 5.5
+	maxspeed					= 42
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 8
+	subdetectioncapability		= 1
+	visibility					= 100
+	seadefence					= 8
+	airdefence					= 14
+	seaattack					= 10
+	convoyattack				= 9
+	subattack					= 1
+	airattack					= 10
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 80000
+	supplyconsumption			= 3.9
+	fuelconsumption				= 3.2
+	distance					= 0.07
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 5000 }
+}
+
+# 14 - Improved Nuclear Carrier (2010)
+model = {
+	cost						= 11
+	buildtime 					= 2900
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 5.5
+	maxspeed					= 42
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 9
+	subdetectioncapability		= 1
+	visibility					= 100
+	seadefence					= 8
+	airdefence					= 14
+	seaattack					= 11
+	convoyattack				= 10
+	subattack					= 1
+	airattack					= 11
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 85000
+	supplyconsumption			= 3.9
+	fuelconsumption				= 3.2
+	distance					= 0.07
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
 	equipment = { carrier = 1 manpower = 5000 }

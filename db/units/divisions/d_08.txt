@@ -177,3 +177,90 @@ model = {
 	reinforce_cost				= 0.6	
 	equipment = { destroyer = 10 manpower = 890 }
 }
+
+# 6 - Modern Corvette (1995)
+model = {
+	cost						= 0.5
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 37
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 6
+	subdetectioncapability		= 14
+	visibility					= 10
+	seadefence					= 36
+	airdefence					= 10
+	seaattack					= 6
+	convoyattack				= 6
+	subattack					= 14
+	airattack					= 5
+	shorebombardment			= 4
+	transportcapability			= 0
+	range						= 2100
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.2
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 890 }
+}
+
+# 7 - Modern Corvette (2005)
+model = {
+	cost						= 0.5
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 37
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 7
+	subdetectioncapability		= 15
+	visibility					= 10
+	seadefence					= 34
+	airdefence					= 8
+	seaattack					= 7
+	convoyattack				= 7
+	subattack					= 15
+	airattack					= 6
+	shorebombardment			= 5
+	transportcapability			= 0
+	range						= 2300
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.2
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 890 }
+}
+
+# 7 - Modern Corvette (2015)
+model = {
+	cost						= 0.7
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 37
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 8
+	subdetectioncapability		= 16
+	visibility					= 10
+	seadefence					= 32
+	airdefence					= 7
+	seaattack					= 8
+	convoyattack				= 8
+	subattack					= 16
+	airattack					= 7
+	shorebombardment			= 5
+	transportcapability			= 0
+	range						= 2600
+	supplyconsumption			= 0.3
+	fuelconsumption				= 0.4
+	distance					= 0.4
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 890 }
+}
