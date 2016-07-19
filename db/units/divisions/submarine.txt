@@ -294,7 +294,7 @@ model = {
 	equipment = { submarine = 5 manpower = 450 }
 }
 
-# 10 - Basic Modern Submarine (1960) Foxtrot-class/type 205/Aréthuse-class
+# 10 - Basic Modern Submarine (1960) Foxtrot-class/type 205/ArÃ©thuse-class
 model = {
 	cost						= 3
 	buildtime					= 450
@@ -376,6 +376,122 @@ model = {
 	supplyconsumption			= 0.7
 	fuelconsumption				= 0.5
 	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { submarine = 5 manpower = 450 }
+}
+
+# 13 - Advanced Modern Submarine (1990)
+model = {
+	cost						= 4
+	buildtime					= 450
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.45
+	maxspeed					= 29
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 3
+	visibility					= 0.1
+	seadefence					= 37
+	airdefence					= 24
+	seaattack					= 11
+	convoyattack				= 21
+	subattack					= 12
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 18000
+	supplyconsumption			= 0.8
+	fuelconsumption				= 0.6
+	distance					= 0.3
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { submarine = 5 manpower = 450 }
+}
+
+# 14 - Advanced Modern Submarine (2000)
+model = {
+	cost						= 4.5
+	buildtime					= 450
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.45
+	maxspeed					= 30
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 4
+	visibility					= 0.1
+	seadefence					= 37
+	airdefence					= 24
+	seaattack					= 13
+	convoyattack				= 24
+	subattack					= 13
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 19000
+	supplyconsumption			= 0.8
+	fuelconsumption				= 0.6
+	distance					= 0.3
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { submarine = 5 manpower = 450 }
+}
+
+# 15 - Advanced Modern Submarine (2000)
+model = {
+	cost						= 4.5
+	buildtime					= 450
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.45
+	maxspeed					= 30
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 4
+	visibility					= 0.1
+	seadefence					= 37
+	airdefence					= 24
+	seaattack					= 13
+	convoyattack				= 24
+	subattack					= 13
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 19000
+	supplyconsumption			= 0.9
+	fuelconsumption				= 0.7
+	distance					= 0.4
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { submarine = 5 manpower = 450 }
+}
+
+# 15 - Advanced Modern Submarine (2010)
+model = {
+	cost						= 5
+	buildtime					= 450
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.45
+	maxspeed					= 30
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 5
+	visibility					= 0.1
+	seadefence					= 37
+	airdefence					= 24
+	seaattack					= 14
+	convoyattack				= 26
+	subattack					= 14
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 20000
+	supplyconsumption			= 0.9
+	fuelconsumption				= 0.7
+	distance					= 0.4
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
 	equipment = { submarine = 5 manpower = 450 }
