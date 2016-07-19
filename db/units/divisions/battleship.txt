@@ -531,10 +531,70 @@ model = {
 	equipment = { battleship = 1 manpower = 2200 }
 }
 
+######## Railgun Battleships ##########
+
+# 18 - Experimental Railgun Battleship (2000)
+model = {
+	cost						= 10
+	buildtime 					= 2500
+	defaultorganisation 		= 20
+	morale						= 35
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 10
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 5
+	airdefence					= 14
+	seaattack					= 40
+	airattack					= 15
+	subattack					= 3
+	convoyattack				= 40
+	shorebombardment			= 25
+	transportcapability			= 0
+	range						= 70000
+	supplyconsumption			= 3.5
+	fuelconsumption				= 0
+	distance					= 0.50
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 19 - Experimental Railgun Battleship (2010)
+model = {
+	cost						= 10
+	buildtime 					= 2700
+	defaultorganisation 		= 20
+	morale						= 35
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 11
+	airdetectioncapability		= 12
+	subdetectioncapability		= 5
+	visibility					= 90
+	seadefence					= 4
+	airdefence					= 13
+	seaattack					= 43
+	airattack					= 17
+	subattack					= 3
+	convoyattack				= 43
+	shorebombardment			= 27
+	transportcapability			= 0
+	range						= 70000
+	supplyconsumption			= 3.5
+	fuelconsumption				= 0
+	distance					= 0.50
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
 
 ######## Super Heavies ##############
 
-# 11 - Super Heavy Battleship (1937)
+# 20 - Super Heavy Battleship (1937)
 model = {
 	cost						= 6
 	buildtime 					= 1670
@@ -563,7 +623,7 @@ model = {
 	equipment = { battleship = 1 manpower = 2800 }
 }
 
-# 12 - Modern Super Heavy Battleship (1944)
+# 21 - Modern Super Heavy Battleship (1944)
 model = {
 	cost						= 6
 	buildtime 					= 1670
@@ -592,7 +652,7 @@ model = {
 	equipment = { battleship = 1 manpower = 3000 }
 }
 
-# 13 - Nuclear Super Heavy Battleship (1956)
+# 22 - Nuclear Super Heavy Battleship (1956)
 model = {
 	cost						= 6.5
 	buildtime 					= 1670
