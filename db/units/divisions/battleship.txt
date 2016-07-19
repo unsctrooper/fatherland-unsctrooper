@@ -328,6 +328,210 @@ model = {
 	equipment = { battleship = 1 manpower = 2200 }
 }
 
+# 11 - Nuclear Battleship (1960)
+model = {
+	cost						= 6.5
+	buildtime 					= 1750
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 3
+	subdetectioncapability		= 3
+	visibility					= 90
+	seadefence					= 12
+	airdefence					= 21
+	seaattack					= 30
+	airattack					= 6
+	subattack					= 1
+	convoyattack				= 30
+	shorebombardment			= 16
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 2.6
+	fuelconsumption				= 0
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 12 - Nuclear Battleship (1970)
+model = {
+	cost						= 7
+	buildtime 					= 1800
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 4
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 11
+	airdefence					= 20
+	seaattack					= 31
+	airattack					= 7
+	subattack					= 1
+	convoyattack				= 31
+	shorebombardment			= 17
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 2.6
+	fuelconsumption				= 0
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 13 - Nuclear Battleship (1980)
+model = {
+	cost						= 7.5
+	buildtime 					= 1850
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 4
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 11
+	airdefence					= 20
+	seaattack					= 31
+	airattack					= 7
+	subattack					= 1
+	convoyattack				= 31
+	shorebombardment			= 17
+	transportcapability			= 0
+	range						= 50000
+	supplyconsumption			= 2.6
+	fuelconsumption				= 0
+	distance					= 0.44
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 14 - Nuclear Battleship (1980)
+model = {
+	cost						= 7.5
+	buildtime 					= 1850
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 5
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 10
+	airdefence					= 19
+	seaattack					= 32
+	airattack					= 7
+	subattack					= 1
+	convoyattack				= 32
+	shorebombardment			= 18
+	transportcapability			= 0
+	range						= 50000
+	supplyconsumption			= 2.7
+	fuelconsumption				= 0
+	distance					= 0.44
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 15 - Nuclear Battleship (1990)
+model = {
+	cost						= 8
+	buildtime 					= 1900
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 6
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 9
+	airdefence					= 18
+	seaattack					= 33
+	airattack					= 8
+	subattack					= 2
+	convoyattack				= 33
+	shorebombardment			= 19
+	transportcapability			= 0
+	range						= 50000
+	supplyconsumption			= 2.8
+	fuelconsumption				= 0
+	distance					= 0.46
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 16 - Nuclear Battleship (2000)
+model = {
+	cost						= 8.5
+	buildtime 					= 1950
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 7
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 8
+	airdefence					= 17
+	seaattack					= 34
+	airattack					= 9
+	subattack					= 2
+	convoyattack				= 34
+	shorebombardment			= 18
+	transportcapability			= 0
+	range						= 55000
+	supplyconsumption			= 2.9
+	fuelconsumption				= 0
+	distance					= 0.48
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+# 17 - Nuclear Battleship (2010)
+model = {
+	cost						= 9
+	buildtime 					= 2000
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2.2
+	maxspeed					= 30
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 8
+	subdetectioncapability		= 4
+	visibility					= 90
+	seadefence					= 7
+	airdefence					= 16
+	seaattack					= 35
+	airattack					= 10
+	subattack					= 2
+	convoyattack				= 35
+	shorebombardment			= 19
+	transportcapability			= 0
+	range						= 60000
+	supplyconsumption			= 3
+	fuelconsumption				= 0
+	distance					= 0.48
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { battleship = 1 manpower = 2200 }
+}
+
+
 ######## Super Heavies ##############
 
 # 11 - Super Heavy Battleship (1937)
