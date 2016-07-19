@@ -20,3 +20,69 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 }
+
+# 1 - Armored Box Launcher & Anti Ship Missiles (1994)
+model = {
+	cost 						= 1
+	buildtime					= 110
+	manpower 					= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 32
+	convoyattack				= 31
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 2 - Armored Box Launcher & Anti Ship Missiles (2004)
+model = {
+	cost 						= 1.4
+	buildtime					= 110
+	manpower 					= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 33
+	convoyattack				= 32
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 3 - Armored Box Launcher & Anti Ship Missiles (2014)
+model = {
+	cost 						= 1.5
+	buildtime					= 130
+	manpower 					= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 34
+	convoyattack				= 33
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
