@@ -1568,7 +1568,7 @@ technology =
     component = { id = 3495 name = TECH_CMP_NAVAL_49_5_NAME type = technical_efficiency difficulty = 6 double_time = yes }
     required  = { 3470 }
     effects =
-    { command = { type = new_model which = battleship value = 11 }
+    { command = { type = new_model which = battleship value = 20 }
     }
   }
   # Improved Super Heavy Battleship
@@ -1591,9 +1591,9 @@ technology =
     component = { id = 12055 name = TECH_CMP_NAVAL_105_5_NAME type = technical_efficiency difficulty = 7 double_time = yes }
     required  = { 3490 }
     effects =
-    { command = { type = new_model which = battleship value = 12 }
-	  command = { trigger = { technology = 7200 } type = new_model which = battleship value = 13 } #If nuclear BB first
-      command = { type = scrap_model which = battleship value = 11 }
+    { command = { type = new_model which = battleship value = 21 }
+	  #command = { trigger = { technology = 7200 } type = new_model which = battleship value = 13 } #If nuclear BB first
+      command = { type = scrap_model which = battleship value = 20 }
     }
   }
   # Converted Carrier
