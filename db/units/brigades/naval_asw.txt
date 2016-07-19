@@ -167,3 +167,66 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 }
+
+# 8 - ASW Suite (1990) ASW Missiles
+model = {
+	cost 						= 2.0
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 12
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 18
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 9 - ASW Suite (2000) ASW Missiles
+model = {
+	cost 						= 2.2
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 14
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 20
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
+
+# 10 - ASW Suite (2010) ASW Missiles
+model = {
+	cost 						= 2.2
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 16
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 22
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}
