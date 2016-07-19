@@ -562,7 +562,7 @@ model = {
 	equipment = { battleship = 1 manpower = 2200 }
 }
 
-# 19 - Experimental Railgun Battleship (2010)
+# 19 - Improved Railgun Battleship (2010)
 model = {
 	cost						= 10
 	buildtime 					= 2700
