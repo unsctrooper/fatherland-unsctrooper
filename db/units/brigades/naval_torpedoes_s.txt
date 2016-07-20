@@ -84,3 +84,45 @@ model = {
 	upgrade_time_factor 		= 0.8
 	upgrade_cost_factor 		= 0.6
 }
+
+# 4 - Advanced Modern guided torpedoes (1992)
+model = {
+	cost						= 1
+	buildtime					= 170
+	manpower					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seaattack					= 11
+	convoyattack				= 12
+	subattack					= 14
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+}
+
+# 5 - Advanced Modern guided torpedoes (2012)
+model = {
+	cost						= 1
+	buildtime					= 190
+	manpower					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seaattack					= 12
+	convoyattack				= 13
+	subattack					= 16
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption			= 0.8
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+}
