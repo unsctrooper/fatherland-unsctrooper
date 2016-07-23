@@ -149,7 +149,7 @@ TECH_CAT_SUPPLY;Supply;Approvisionnement;Rifornimenti;Suministros;Versorgung;Zao
 TECH_CAT_MOTORIZED;Motorized Infantry;Motorisй;Motorizzata;Motorizadas;Motorisierte;Zmotoryzowane;;Моторизованная пехота;;;X
 TECH_CAT_MECHANIZED;Mechanized Infantry;Mйcanisй;Meccanizzata;Mecanizadas;Mechanisierte;Zmechanizowane;;Механизированная пехота;;;X
 TECH_CAT_ENGINEERS;Combat Engineers;Gйnie de combat;Genieri da combattimento;Ingenierios de Combate;Sturmpioniere;Inїynierowie wojskowi;;Инженерно-саперные войска;;;X
-TECH_CAT_MANUFACTURING;Manufacturing;Fabrication;Produzione;Fabricaciуn;Herstellung;Wytwarzanie;;Производство;;;X
+TECH_CAT_MANUFACTURING;Manufacturing/Robotics;Fabrication;Produzione;Fabricaciуn;Herstellung;Wytwarzanie;;Производство;;;X
 TECH_CAT_ROCKETRY;Rocketry;Fusйonautique;Missilistica;Tйcnica de cohetes;Raketen;Technologia rakietowa;;Ракетостроение;;;X
 TECH_CAT_AGRICULTURE;Agriculture;Agriculture;Agricoltura;Agricultura;Landwirtschaft;Rolnictwo;;Сельское хозяйство;;;X
 TECH_CAT_RRWARNING;Radar Warning;Avertissement radar;Allarme radar;Aviso de radar;Radarwarnung;Ostrzeganie radarowe;;Радиолокационные станции;;;X
@@ -4297,7 +4297,7 @@ TECH_CMP_INDUSTRY_84_2_NAME;Long period appointment;Embauche d'ouvrier longue pй
 TECH_CMP_INDUSTRY_84_3_NAME;Optimized Worker Time Tables;Temps de travail optimisй des ouvriers;Tabelle di lavoro ottimizzate;Tablas de tiempos de trabajo optimizadas;Optimierte Arbeitszeitplдne;Zoptymalizowane tabele czasu pracy;;Оптимизированный рабочий график;;;X
 TECH_CMP_INDUSTRY_84_4_NAME;Advanced Resource Queue System;Systиme avancй de l'attente de ressources;Sistema avanzato di accodamento risorse;Sistema avanzado de cola de recursos;Erweiterte Ressourcenzuleitungssystem;Zaawansowany system kolejkowania zasobуw;;Усов. система очередности ресурсов;;;X
 TECH_CMP_INDUSTRY_84_5_NAME;Result control;Suivi des performance;Controllo risultati;Control de resultados;Endkontrolle;Kontrola rezultatуw;;Контроль результатов;;;X
-TECH_APP_INDUSTRY_85_NAME;Advanced planning and scheduling;Planification avancйe;Pianificazione e programmazione avanzate;Planeamiento y programaciуn avanzada;Fortschrittliche Ablaufplanung;Zaawansowane planowanie;;Перспективное планирование;;;X
+TECH_APP_INDUSTRY_85_NAME;Automation Research and Development;Planification avancйe;Pianificazione e programmazione avanzate;Planeamiento y programaciуn avanzada;Fortschrittliche Ablaufplanung;Zaawansowane planowanie;;Перспективное планирование;;;X
 TECH_CMP_INDUSTRY_85_1_NAME;Factory Electrification;Йlectrification des usines;Elettrificazione fabbriche;Electrificaciуn de fбbricas;Elektrifizierung von Produktionsstдtten;Elektryfikacja fabryk;;Фабричная электрификация;;;X
 TECH_CMP_INDUSTRY_85_2_NAME;Night - Day teams;Йquipes Jour Nuit;Turni giorno-notte;Equipos diurnos y nocturnos;Tag-Nacht Schichten;Zespoіy dzienno-nocne;;Круглосуточные смены;;;X
 TECH_CMP_INDUSTRY_85_3_NAME;Foreman turnover;Rotation des chefs d'йquipe;Turnover capisquadra;Rotacion de Jefes de Equipo;Durchrotieren der Vorarbeiter;Zmiana kierownikуw odcinkуw;;Контроль товарооборота;;;X
@@ -4381,7 +4381,7 @@ TECH_CMP_INDUSTRY_117_2_NAME;Practical Integrated Circuits;Practical Integrated 
 TECH_CMP_INDUSTRY_117_3_NAME;Compiled Programming Languages;Compiled Programming Languages;Compiled Programming Languages;Compiled Programming Languages;Compiled Programming Languages;Compiled Programming Languages;;Compiled Programming Languages;;;X
 TECH_CMP_INDUSTRY_117_4_NAME;Advanced Materials Science;Advanced Materials Science;Advanced Materials Science;Advanced Materials Science;Advanced Materials Science;Advanced Materials Science;;Advanced Materials Science;;;X
 TECH_CMP_INDUSTRY_117_5_NAME;Industrial Application;Industrial Application;Industrial Application;Industrial Application;Industrial Application;Industrial Application;;Industrial Application;;;X
-TECH_APP_INDUSTRY_118_NAME;Early Automated Manufacturing Techniques;Early Automated Manufacturing Techniques;Early Automated Manufacturing Techniques;Early Automated Manufacturing Techniques;Early Automated Manufacturing Techniques;Early Automated Manufacturing Techniques;;Early Automated Manufacturing Techniques;;;X
+TECH_APP_INDUSTRY_118_NAME;Electrical Input;;;;;;;;;;X
 TECH_CMP_INDUSTRY_118_1_NAME;Modular Design;Modular Design;Modular Design;Modular Design;Modular Design;Modular Design;;Modular Design;;;X
 TECH_CMP_INDUSTRY_118_2_NAME;Platform Development;Platform Development;Platform Development;Platform Development;Platform Development;Platform Development;;Platform Development;;;X
 TECH_CMP_INDUSTRY_118_3_NAME;Sectional Assembly;Sectional Assembly;Sectional Assembly;Sectional Assembly;Sectional Assembly;Sectional Assembly;;Sectional Assembly;;;X
@@ -6087,7 +6087,7 @@ SHORT_TECH_APP_INDUSTRY_81_NAME;Production 1910;Production 1910;Gestione scienti
 SHORT_TECH_APP_INDUSTRY_82_NAME;Production 1915;Production 1915;Produzione di massa;Prod. Masiva;Produktion 1915;Masowa prod.;;Массовое пр-во;;;X
 SHORT_TECH_APP_INDUSTRY_83_NAME;Production 1925;Production 1925;Supporto gestionale;Soporte Man.;Produktion 1925;Wsparcie zarz.;;Сист. поддерж. пр-ва;;;X
 SHORT_TECH_APP_INDUSTRY_84_NAME;Production 1955;Production 1955;Personalizzazione di massa;Personalizaciуn Man.;Produktion 1955;Masowa indyw.;;Масс. индивид. прод.;;;X
-SHORT_TECH_APP_INDUSTRY_85_NAME;Production 1960;Production 1960;Pian. E Progr. Avanzate;APS;Produktion 1960;APS;;Перспект. планиров.;;;X
+SHORT_TECH_APP_INDUSTRY_85_NAME;Automation R&D;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_86_NAME;Production 1964;Production 1964;Manifatt. Comp. Integrata;CIM;Produktion 1964;CIM;;Внед. комп. в пр-во;;;X
 SHORT_TECH_APP_INDUSTRY_90_NAME;Construction 1950;Construction 1950;Costruzione semi mod.;Construcciуn S-M;Konstruktion 1950;Powoj. konstr.;;Полусов. строит. пром.;;;X
 SHORT_TECH_APP_INDUSTRY_91_NAME;Construction 1960;Construction 1960;Costruzione mod.;Construcciуn Mod.;Konstruktion 1960;Wspуіcz. konstr.;;Соврем. строит. пром.;;;X
@@ -6101,7 +6101,7 @@ SHORT_TECH_APP_INDUSTRY_105_NAME;Adv Material Sci;Sc. matiиre avancйe;Scienza de
 SHORT_TECH_APP_INDUSTRY_106_NAME;Basic Info Theory;Thйorie d'info de base;Teoria Base dell'Informazione;Teorнa informaciуn bбsica;Informationstheor.;Podstawowa teoria inf. ;;Базов. теор. инф.;;;X
 SHORT_TECH_APP_INDUSTRY_116_NAME;Imp Info Theory;Thйorie de l'information amйliorйe;Teoria dell'informazione migl.;Teorнa informaciуn mejorada;Verb.Info.Theorie;Ulepszona teoria inform.;;Улучш. теор. инф.;;;X
 SHORT_TECH_APP_INDUSTRY_117_NAME;Industrial Robotics;Industrial Robotics;Industrial Robotics;Industrial Robotics;Industrial Robotics;Industrial Robotics;;Industrial Robotics;;;X
-SHORT_TECH_APP_INDUSTRY_118_NAME;Production 1975;Production 1975;Manifatt. Comp. Integrata;CIM;Produktion 1975;CIM;;Внед. комп. в пр-во;;;X
+SHORT_TECH_APP_INDUSTRY_118_NAME;Electrical Input;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_119_NAME;Production 1989;Production 1989;Manifatt. Comp. Integrata;CIM;Produktion 1989;CIM;;Внед. комп. в пр-во;;;X
 SHORT_TECH_APP_INDUSTRY_120_NAME;Post War Spycraft;Post War Spycraft;Post War Spycraft;Post War Spycraft;Post War Spycraft;Post War Spycraft;;Post War Spycraft;;;X
 SHORT_TECH_APP_INDUSTRY_121_NAME;Early CW Spycraft;Early CW Spycraft;Early CW Spycraft;Early CW Spycraft;Early CW Spycraft;Early CW Spycraft;;Early CW Spycraft;;;X
@@ -7999,5 +7999,125 @@ TECH_CMP_SW_31_2_NAME;Semiconductor Primary Memory;Mйmoire primaire а semi-condu
 TECH_CMP_SW_31_3_NAME;High-Speed Electronic Calculator;Calculateur йlectronique а grande vitesse;Calcolatore elettronico ad alta velocitа;Calculadora electrуnica super-rбpida;Hochgeschwindigkeitsrechner;Szybki kalkulator elektroniczny;;Высокоскоростной эл. калькулятор;;;X
 TECH_CMP_SW_31_4_NAME;Type A Format;Format de Type A;Formato tipo A;Formato tipo A;Typ A Format;Format typu A;;Формат типа 'А';;;X
 TECH_CMP_SW_31_5_NAME;Type B Format;Format de Type B;Formato tipo B;Formato tipo B;Typ B Format;Format typu B;;Формат типа 'Б';;;X
+TECH_APP_INDUSTRY_53301_NAME;Basic Industrial Agriculture;Machine informatique II;Elaboratore migliorato;Computadora mejorada;Verbesserte Rechenmaschine;Ulepszona maszyna licz?ca;;;;;X
+TECH_APP_INDUSTRY_33_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_53301_1_NAME;Machine Code;Code machine;Codice macchina;Codigo maquina;Maschinenkode ;Kod maszynowy;;;;;X
+TECH_CMP_INDUSTRY_53301_2_NAME;Control and Arithmetic Unit;Unites controle et arithmetique;Unita di calcolo;Unidad de control y aritmetica;Kontroll- und Arithmetische Einheit;Jednostka zarz?dzaj?ca i obliczeniowa;;;;;X
+TECH_CMP_INDUSTRY_53301_3_NAME;Data Storage Relays;Relais mise en memoire;Gruppo raccolta dati;Reles de almacenamiento de datos;Datenspeicher- Relais;Prze??czniki magazynow danych;;;;;X
+TECH_CMP_INDUSTRY_53301_4_NAME;Punch Tape and Reader;Lecteur et bande a perforer;Nastro perforato e lettore;Cinta perforada y lector;Streifenlocher und -leser;Dziurkacz i czytnik ta?my;;;;;X
+TECH_CMP_INDUSTRY_53301_5_NAME;Improved Computing Machine Prototype Tests;Essais du prototype de machine informatique II;Test prototipo elaboratore migliorato;Pruebas de prototipo de computadora mejorada;Prototypentests verb. Rechenmaschinen ;Testy prot. ulepszonej maszyny licz?cej;;;;;X
+TECH_APP_INDUSTRY_57_NAME;Green Revolution;Turboreacteur ;Turbogetto;Motor de turborreaccion;Turbojet Maschine;Silnik turboodrz.;;;;;X
+TECH_APP_INDUSTRY_57_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_57_1_NAME;Compressor;Compresseur;Compressore;Compresor;Kompressor;Kompresor;;;;;X
+TECH_CMP_INDUSTRY_57_2_NAME;Fan;Ventilateur;Ventola;Ventilador;Geblase;Turbina;;;;;X
+TECH_CMP_INDUSTRY_57_3_NAME;Air intake;Admission d’air;Presa d'aria;Admision de aire;Lufteinlass;Wlot powietrza;;;;;X
+TECH_CMP_INDUSTRY_57_4_NAME;Fuel injector;Injecteur de combustible;Iniettore di carburante;Inyector de combustible;Einspritzduse;Wtryskiwacz;;;;;X
+TECH_CMP_INDUSTRY_57_5_NAME;Burner;Bruleur;Bruciatore;Quemador;Brenner;Komora spalania;;;;;X
+TECH_APP_INDUSTRY_58_NAME;Integrated Pest Management;Developpement de bombes volantes;Sviluppo bomba volante;Desarrollo de bomba volante;Flugbombenentwicklung;Rozwoj lataj?cych bomb;;;;;X
+TECH_APP_INDUSTRY_58_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_58_1_NAME;Solid Fuel Rocket Engine;Propulseur de combustible solide;Motore razzo a combustibile solido;Motor de cohete de combustible solido;Feststoff-Raketentriebwerk;Silnik rakietowy na paliwo sta?e;;;;;X
+TECH_CMP_INDUSTRY_58_2_NAME;Gyroscope Autopilot;Autopilote gyro;Giroscopio autopilota;Autodireccion giroscopica;Gyroskop-Autopilot;Autopilot ?yroskopowy;;;;;X
+TECH_CMP_INDUSTRY_58_3_NAME;Launch Catapult;Lance-catapulte;Catapulta di lancio;Catapulta de lanzamiento;Startkatapult;Wyrzutnia startowa;;;;;X
+TECH_CMP_INDUSTRY_58_4_NAME;Modified Steering Fens;F. navigation modif.;Sistemi di manovra modificati;Aletas de correccion de direccion;Modifizierte Lenkvorrichtung;Zmodyfikowane lotki;;;;;X
+TECH_CMP_INDUSTRY_58_5_NAME;Trajectory Test Flights;Vol d’essai trajectoire;Voli di prova traiettoria;Vuelos de prueba de trayectoria;Flugbahn - Testflug;Testy trajektorii lotu;;;;;X
+TECH_APP_INDUSTRY_59_NAME;Gene Manipulation;Developpement de fusee;Sviluppo razzo volante;Desarrollo de cohete volante;Flugraketenentwicklung;Rozwoj rakiet niekierowanych;;;;;X
+TECH_APP_INDUSTRY_59_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_59_1_NAME;Liquid Fuel Rocket Engine;Propulseur de combustible liquide;Motore razzo a combustibile liquido;Motor de cohete de combustible liquido;Flussigkeits-Raketentriebwerk;Silnik rakietowy na paliwo ciek?e;;;;;X
+TECH_CMP_INDUSTRY_59_2_NAME;Advanced Gyroscope Autopilot;Autopilote gyro III;Giroscopio autopilota avanzato;Autodireccion giroscopica avanzada;Fortschrittlicher Gyroskop-Autopilot;Zaawansowany autopilot ?yroskopowy;;;;;X
+TECH_CMP_INDUSTRY_59_3_NAME;Mobile Launch Sites;Sites de lancement mobiles;Siti di lancio mobili;Centros moviles de lanzamiento;Mobile Startrampen;Mobilne wyrzutnie;;;;;X
+TECH_CMP_INDUSTRY_59_4_NAME;Reinforced Ribs;Nervures renforcees;Strutture rinforzate;Costillas reforzadas;Verstarkte Spanten;Wzmocniona konstrukcja;;;;;X
+TECH_CMP_INDUSTRY_59_5_NAME;Trajectory Test Flights;Vol d’essai trajectoire;Voli di prova traiettoria;Vuelos de prueba de trayectoria;Flugbahn - Testflug;Testy trajektorii lotu;;;;;X
+SHORT_TECH_APP_INDUSTRY_5601_NAME;High Yield Crop;;;;;;;;;;x
+TECH_APP_INDUSTRY_56_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_56_1_NAME;Chamber;Chambre;Camera;Camara;Kammer;Zbiornik paliwa;;;;;X
+TECH_CMP_INDUSTRY_56_2_NAME;Diffuser;Diffuseur;Diffusore;Difusor;Diffusor;Dyfuzor;;;;;X
+TECH_CMP_INDUSTRY_56_3_NAME;Nozzle;Buse;Ugello;Tobera;Duse;Dysza;;;;;X
+TECH_CMP_INDUSTRY_56_4_NAME;Fuel injector;Injecteur de combustible;Iniettore di carburante;Inyector de combustible;Einspritzduse;Wtryskiwacz;;;;;X
+TECH_CMP_INDUSTRY_56_5_NAME;Burner;Bruleur;Bruciatore;Quemador;Brenner;Komora spalania;;;;;X
+TECH_APP_INDUSTRY_55_NAME;Intensive Farming;Site de test des missiles et de recherches;Centro test e ricerca razzi;Planta de ensayos cohetes;Raketentest und -forschungsanlage;Stanowisko badania i testowania rakiet;;;;;X
+TECH_APP_INDUSTRY_55_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_55_1_NAME;Wind Tunnels;Tunnels aerodynamiques;Tunnel del vento;Tuneles aerodinamicos;Windtunnel;Tunele aerodynamiczne;;;;;X
+TECH_CMP_INDUSTRY_55_2_NAME;Test Range;Portee des tests ;Poligono di prova;Poligono de pruebas;Testbereich;Poligon do?wiadczalny;;;;;X
+TECH_CMP_INDUSTRY_55_3_NAME;Telemetrics Station;Station de telemesure;Stazione telemetrica;Emisor telemetrico;Telemetrische Station;Stacja telemetryczna;;;;;X
+TECH_CMP_INDUSTRY_55_4_NAME;Rocket Fuels;Propergol;Combustibile per razzi;Combustibles para cohetes;Raketenbrennstoffe;Paliwa rakietowe;;;;;X
+TECH_CMP_INDUSTRY_55_5_NAME;Basic Rocket Flight Tests;Essais de vols de missiles I;Test di volo razzo di base;Pruebas de vuelo de cohete basico;Einfache Raketenflugtests;Podstawowe loty probne rakiet;;;;;X
+TECH_APP_INDUSTRY_55601_NAME;High-Yield Crop Variations;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_53301_NAME;Agriculture 1964;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_57_NAME;Green Revolution;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_58_NAME;Int. Pest Management;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_59_NAME;Gene Manipulation;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_55601_NAME;High-Yield Crops;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_55_NAME;Intensive Farming;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_68_NAME;Mod. Pharmacology;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_69_NAME;Adv. Mod. Pharmacology;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_70_NAME;Cyber. Med. Tech;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_710_NAME;Postmdrn. Surgery;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_57201_NAME;Imp. Postmdrn. Surgery;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_57301_NAME;Fut. Cyber Medicine;;;;;;;;;;X
+TECH_APP_INDUSTRY_68_NAME;Modern Pharmacology;;;;;;;;;;X
+TECH_APP_INDUSTRY_69_NAME;Advanced Modern Pharmacology;;;;;;;;;;X
+TECH_APP_INDUSTRY_70_NAME;Cybernetic Medical Technology;;;;;;;;;;X
+TECH_APP_INDUSTRY_710_NAME;Postmodern Surgery;;;;;;;;;;X
+TECH_APP_INDUSTRY_57201_NAME;Improved Postmodern Surgery;;;;;;;;;;X
+TECH_APP_INDUSTRY_57301_NAME;Futuristic Cyber Medicine;;;;;;;;;;X
+TECH_APP_INDUSTRY_51901_NAME;Improved Production Effeciency;;;;;;;;;;X
+TECH_APP_INDUSTRY_51901_DESC;Improved Production Effeciency;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_51901_NAME;Imp. Production Eff.;;;;;;;;;;X
+TECH_CMP_INDUSTRY_51901_1_NAME;Basic Distillation;Distillation I;Distillazione di base;Destilacion basica;Einfache Destillation;Podstawowa destylacja;;;;;X
+TECH_CMP_INDUSTRY_51901_2_NAME;Basic Cracker;Craqueur I;Violazione di base;Pirolizador basico;Einfacher Cracker;Podstawowy rozk?ad;;;;;X
+TECH_CMP_INDUSTRY_51901_3_NAME;Basic Isomerisation;Isomerisation I;Conversione in isomero di base;Isomerizacion basica;Einfache Isomerisierung;Podstawowa izomeryzacja;;;;;X
+TECH_CMP_INDUSTRY_51901_4_NAME;Basic Hydrogen Treatment;Traitement a l’hydrogene I;Trattamento idrogeno di base;Tratamiento basico del hidrogeno;Einfache Wasserstoffbehandlung;Podstawowa obrobka wodorowa;;;;;X
+TECH_CMP_INDUSTRY_51901_5_NAME;Basic Test Facility;Installation d’essai I;Struttura di prova di base;Planta experimental basica;Einfache Testanlage;Podstawowe stanowisko testowe;;;;;X
+TECH_APP_INDUSTRY_52001_NAME;Improved Electronical Input Controls;;;;;;;;;;X
+TECH_APP_INDUSTRY_52001_DESC;Improved Electronical Input Controls;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_52001_NAME;Imp. Electr. Input;;;;;;;;;;X
+TECH_CMP_INDUSTRY_52001_1_NAME;Improved Distillation;Distillation II;Distillazione migliorata;Destilacion mejorada;Verbesserte Destillation;Ulepszona destylacja;;;;;X
+TECH_CMP_INDUSTRY_52001_2_NAME;Improved Cracker;Craqueur II;Violazione migliorata;Pirolizador mejorado;Verbesserter Cracker;Ulepszony rozk?ad;;;;;X
+TECH_CMP_INDUSTRY_52001_3_NAME;Improved Isomerisation;Isomerisation II;Conversione in isomero migliorata;Isomerizacion mejorada;Verbesserte Isometrisierung;Ulepszona izomeryzacja;;;;;X
+TECH_CMP_INDUSTRY_52001_4_NAME;Improved Hydrogen Treatment;Traitement a l’hydrogene II;Trattamento idrogeno migliorato;Tratamiento mejorado del hidrogeno;Verbesserte Wasserstoffbehandlung;Ulepszona obrobka wodorowa;;;;;X
+TECH_CMP_INDUSTRY_52001_5_NAME;Improved Test Facility;Installation d’essai II;Struttura di prova migliorata;Planta experimental mejorada;Verbesserte Testanlage;Ulepszone stanowisko testowe;;;;;X
+TECH_APP_INDUSTRY_52101_NAME;Advanced Electronical Input Controls;;;;;;;;;;X
+TECH_APP_INDUSTRY_52101_DESC;Advanced Electronical Input Controls;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_52101_NAME;Adv. Electr. Input;;;;;;;;;;X
+TECH_CMP_INDUSTRY_52101_1_NAME;Advanced Distillation;Distillation II;Distillazione migliorata;Destilacion mejorada;Verbesserte Destillation;Ulepszona destylacja;;;;;X
+TECH_CMP_INDUSTRY_52101_2_NAME;Advanced Cracker;Craqueur II;Violazione migliorata;Pirolizador mejorado;Verbesserter Cracker;Ulepszony rozk?ad;;;;;X
+TECH_CMP_INDUSTRY_52101_3_NAME;Advanced Isomerisation;Isomerisation II;Conversione in isomero migliorata;Isomerizacion mejorada;Verbesserte Isometrisierung;Ulepszona izomeryzacja;;;;;X
+TECH_CMP_INDUSTRY_52101_4_NAME;Advanced Hydrogen Treatment;Traitement a l’hydrogene II;Trattamento idrogeno migliorato;Tratamiento mejorado del hidrogeno;Verbesserte Wasserstoffbehandlung;Ulepszona obrobka wodorowa;;;;;X
+TECH_CMP_INDUSTRY_52101_5_NAME;Advanced Test Facility;Installation d’essai II;Struttura di prova migliorata;Planta experimental mejorada;Verbesserte Testanlage;Ulepszone stanowisko testowe;;;;;X
+TECH_APP_INDUSTRY_52201_NAME;Modern Electronical Input Controls;;;;;;;;;;X
+TECH_APP_INDUSTRY_52201_DESC;Modern Electronical Input Controls;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_52201_NAME;Adv. Electr. Input;;;;;;;;;;X
+TECH_CMP_INDUSTRY_52201_1_NAME;Modern Distillation;Distillation II;Distillazione migliorata;Destilacion mejorada;Verbesserte Destillation;Ulepszona destylacja;;;;;X
+TECH_CMP_INDUSTRY_52201_2_NAME;Modern Cracker;Craqueur II;Violazione migliorata;Pirolizador mejorado;Verbesserter Cracker;Ulepszony rozk?ad;;;;;X
+TECH_CMP_INDUSTRY_52201_3_NAME;Modern Isomerisation;Isomerisation II;Conversione in isomero migliorata;Isomerizacion mejorada;Verbesserte Isometrisierung;Ulepszona izomeryzacja;;;;;X
+TECH_CMP_INDUSTRY_52201_4_NAME;Modern Hydrogen Treatment;Traitement a l’hydrogene II;Trattamento idrogeno migliorato;Tratamiento mejorado del hidrogeno;Verbesserte Wasserstoffbehandlung;Ulepszona obrobka wodorowa;;;;;X
+TECH_CMP_INDUSTRY_52201_5_NAME;Modern Test Facility;Installation d’essai II;Struttura di prova migliorata;Planta experimental mejorada;Verbesserte Testanlage;Ulepszone stanowisko testowe;;;;;X
+TECH_APP_INDUSTRY_52301_NAME;Semimodern Automation;;;;;;;;;;X
+TECH_APP_INDUSTRY_52301_DESC;Semimodern Automation;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_52301_NAME;Semimodern Automation;;;;;;;;;;X
+TECH_CMP_INDUSTRY_52301_1_NAME;Improved Catalysts;Catalyseurs II;Catalizzatori migliorati;Catalizadores mejorados;Verbesserte Beschleuniger;Ulepszone katalizatory;;;;;X
+TECH_CMP_INDUSTRY_52301_2_NAME;Improved Reactors;Reacteurs II;Reattori migliorati;Reactores mejorados;Verbesserte Reaktoren;Ulepszone reaktory;;;;;X
+TECH_CMP_INDUSTRY_52301_3_NAME;Improved Product Processing;Traitement de produit II;Lavorazione del prodotto migliorata;Procesamiento mejorado del producto;Verbesserte Produktverarbeitung;Ulepszone przetwarzanie produktu;;;;;X
+TECH_CMP_INDUSTRY_52301_4_NAME;Improved Feedstock Preparation;Preparation matieres premieres d’alimentation II;Preparazione materiali migliorata;Disponibilidad de suministro mejorada;Verbesserte Rohmaterialvorbereitung;Ulepszone przygotowanie materia?u;;;;;X
+TECH_CMP_INDUSTRY_52301_5_NAME;Improved Oil Plant Prototype Tests;Essais du prototype raffinerie II;Test prototipo fabbrica petrolio migliorata;Pruebas de prototipo de planta mejorada de combustible;Prototypentests verbesserter Hydrierwerke;Ulepszone testy paliwa syntetycznego;;;;;X
+TECH_APP_INDUSTRY_52401_NAME;Futuristic Robotics;;;;;;;;;;X
+TECH_APP_INDUSTRY_52401_DESC;Futuristic Robotics;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_52401_NAME;Futuristic Robotics;;;;;;;;;;X
+TECH_CMP_INDUSTRY_52401_1_NAME;Futuristic Catalysts;Catalyseurs II;Catalizzatori migliorati;Catalizadores mejorados;Verbesserte Beschleuniger;Ulepszone katalizatory;;;;;X
+TECH_CMP_INDUSTRY_52401_2_NAME;Futuristic Reactors;Reacteurs II;Reattori migliorati;Reactores mejorados;Verbesserte Reaktoren;Ulepszone reaktory;;;;;X
+TECH_CMP_INDUSTRY_52401_3_NAME;Futuristic Product Processing;Traitement de produit II;Lavorazione del prodotto migliorata;Procesamiento mejorado del producto;Verbesserte Produktverarbeitung;Ulepszone przetwarzanie produktu;;;;;X
+TECH_CMP_INDUSTRY_52401_4_NAME;Futuristic Feedstock Preparation;Preparation matieres premieres d’alimentation II;Preparazione materiali migliorata;Disponibilidad de suministro mejorada;Verbesserte Rohmaterialvorbereitung;Ulepszone przygotowanie materia?u;;;;;X
+TECH_CMP_INDUSTRY_52401_5_NAME;Futuristic Oil Plant Prototype Tests;Essais du prototype raffinerie II;Test prototipo fabbrica petrolio migliorata;Pruebas de prototipo de planta mejorada de combustible;Prototypentests verbesserter Hydrierwerke;Ulepszone testy paliwa syntetycznego;;;;;X
+TECH_APP_INDUSTRY_130_NAME;Futuristic Construction Engineering;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_130_NAME;Construction 2000;;;;;;;;;;X
+TECH_CMP_INDUSTRY_130_1_NAME;Futuristic Modern Standardization;Standardisation moderne;Standardizzazione moderna;Estandarizaciуn moderna;Moderne Standardisierung;Wspуіczesna standaryzacja;;Современная стандартизация;;;X
+TECH_CMP_INDUSTRY_130_2_NAME;Futuristic Modern Quality Control;Contrфle de qualitй moderne;Controllo della qualitа moderno;Control de calidad moderno;Moderne Qualitдtskontrolle;Wspуіczesna kontrola jakoњci;;Современный контроль качества;;;X
+TECH_CMP_INDUSTRY_130_3_NAME;Futuristic Modern Reliability Engineering;Ingйnierie de la fiabilitй moderne;Affidabilitа ingegneristica moderna;Fiabilidad de la ingenierнa moderna;Moderner Zuverlдssigkeitsaspekt;Wspуіczesna inїynieria procesуw;;Современная техника безопасности;;;X
+TECH_CMP_INDUSTRY_130_4_NAME;Futuristic Computerized Test Planning;Planification des tests informatisй;Pianificazione computerizzata dei test;Planeamiento de pruebas cientificas informatizado;Computergestьtze Testplannung;Skomputeryzowane planowanie testуw;;Планирование компьютерного анализа;;;X
+TECH_CMP_INDUSTRY_130_5_NAME;Futuristic Modern Construction Engineering Development Process;Processus de dйveloppement de l'ingйnierie de construction moderne;Processo di sviluppo di Ingegneria delle costruzioni moderno;Ingenierнa de la construcciуn del Proceso de Desarrollo moderna;Computergestьtze Bauingenieurs-Technik;Wspуіczesny rozwуj procesуw konstrukcyjnych;;Соврем. организация инженерно-строительных процессов;;;X
+TECH_APP_INDUSTRY_140_NAME;Improved Futuristic Construction Engineering;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_140_NAME;Construction 2010;;;;;;;;;;X
+TECH_APP_INDUSTRY_150_NAME;Advanced Futuristic Construction Engineering;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_150_NAME;Construction 2015;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
