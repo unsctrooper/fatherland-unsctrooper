@@ -2232,7 +2232,7 @@ component = { id = 5885 name = TECH_CMP_INDUSTRY_125_5_NAME type = management di
   { id        = 5476
     name      = TECH_APP_INDUSTRY_476_NAME
 
-    position  = { x = 185 y = 276 }
+    position  = { x = 175 y = 276 }
 	picture   = "DH5476"
     year      = 1953
     component = { id = 54761 name = TECH_CMP_INDUSTRY_476_1_NAME type = technical_efficiency difficulty = 8 }
@@ -2283,6 +2283,249 @@ component = { id = 5885 name = TECH_CMP_INDUSTRY_125_5_NAME type = management di
     { command = { type = radar_eff value = 15 }
     }
   }
+  
+    # Improved Modern Centimetric Radar Warning Sites
+  application =
+  { id        = 553080
+    name      = TECH_APP_INDUSTRY_553080_NAME
+
+    position  = { x = 175 y = 312 }
+	picture   = "DH53070"
+    year      = 1963
+    # Transportable Antenna
+    component = { id = 53076 name = TECH_CMP_INDUSTRY_107_1_NAME type = technical_efficiency difficulty = 10 }
+    # Transmitter Frequency ??cm/?GHz
+    component = { id = 53077 name = TECH_CMP_INDUSTRY_107_2_NAME type = electronics difficulty = 10 }
+    # Modern electrical structure
+    component = { id = 53078 name = TECH_CMP_INDUSTRY_107_3_NAME type = electronics difficulty = 10 }
+    # Modern Electromechanical Plotting Device
+    component = { id = 53079 name = TECH_CMP_INDUSTRY_107_4_NAME type = electronics difficulty = 10 }
+    # Modern Air Defence Network
+    component = { id = 53080 name = TECH_CMP_INDUSTRY_107_5_NAME type = management difficulty = 10 }
+    required  = { 53070 }
+    effects =
+    { command = { type = night_attack which = strategic_bomber value = 15 }
+      command = { type = night_attack which = naval_bomber value = 15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
+      command = { type = task_efficiency which = asw value = 0.15 }
+	  command = { type = new_model which = naval_radar_l value = 5 }
+      command = { type = scrap_model which = naval_radar_l value = 4 }
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	  
+      command = { type = new_model which = naval_radar_s value = 4 }
+      command = { type = scrap_model which = naval_radar_s value = 5 }
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }
+	  command = { type = radar_eff value = 15 }	  
+	 }
+    }
+  
+     # Advanced Modern Centimetric Radar Warning Sites
+  application =
+  { id        = 553090
+    name      = TECH_APP_INDUSTRY_553090_NAME
+
+    position  = { x = 175 y = 330 }
+	picture   = "DH53070"
+    year      = 1973
+    # Transportable Antenna
+    component = { id = 53081 name = TECH_CMP_INDUSTRY_107_1_NAME type = technical_efficiency difficulty = 10 }
+    # Transmitter Frequency ??cm/?GHz
+    component = { id = 53082 name = TECH_CMP_INDUSTRY_107_2_NAME type = electronics difficulty = 10 }
+    # Modern electrical structure
+    component = { id = 53083 name = TECH_CMP_INDUSTRY_107_3_NAME type = electronics difficulty = 10 }
+    # Modern Electromechanical Plotting Device
+    component = { id = 53084 name = TECH_CMP_INDUSTRY_107_4_NAME type = electronics difficulty = 10 }
+    # Modern Air Defence Network
+    component = { id = 53085 name = TECH_CMP_INDUSTRY_107_5_NAME type = management difficulty = 10 }
+    required  = { 553080 }
+    effects =
+    { command = { type = night_attack which = strategic_bomber value = 15 }
+      command = { type = night_attack which = naval_bomber value = 15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
+      command = { type = task_efficiency which = asw value = 0.15 }
+	  command = { type = new_model which = naval_radar_l value = 6 }
+      command = { type = scrap_model which = naval_radar_l value = 5 }
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	  
+      command = { type = new_model which = naval_radar_s value = 5 }
+      command = { type = scrap_model which = naval_radar_s value = 4 }
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }	 
+	  command = { type = radar_eff value = 15 }	  
+	 }
+    }
+ 
+     # Postmodern Radar Warning Sites
+  application =
+  { id        = 53100
+    name      = TECH_APP_INDUSTRY_53100_NAME
+
+    position  = { x = 175 y = 348 }
+	picture   = "DH53070"
+    year      = 1983
+    # Transportable Antenna
+    component = { id = 53086 name = TECH_CMP_INDUSTRY_107_1_NAME type = technical_efficiency difficulty = 10 }
+    # Transmitter Frequency ??cm/?GHz
+    component = { id = 53087 name = TECH_CMP_INDUSTRY_107_2_NAME type = electronics difficulty = 10 }
+    # Modern electrical structure
+    component = { id = 53088 name = TECH_CMP_INDUSTRY_107_3_NAME type = electronics difficulty = 10 }
+    # Modern Electromechanical Plotting Device
+    component = { id = 53089 name = TECH_CMP_INDUSTRY_107_4_NAME type = electronics difficulty = 10 }
+    # Modern Air Defence Network
+    component = { id = 53090 name = TECH_CMP_INDUSTRY_107_5_NAME type = management difficulty = 10 }
+    required  = { 553090 }
+    effects =
+    { command = { type = night_attack which = strategic_bomber value = 15 }
+      command = { type = night_attack which = naval_bomber value = 15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
+      command = { type = task_efficiency which = asw value = 0.15 }
+	  command = { type = new_model which = naval_radar_l value = 7 }
+      command = { type = scrap_model which = naval_radar_l value = 6 }
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	  
+      command = { type = new_model which = naval_radar_s value = 6 }
+      command = { type = scrap_model which = naval_radar_s value = 5 }
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }	 
+	  command = { type = radar_eff value = 15 }	  
+	 }
+    }
+
+       # Post-CW Radar Warning Sites
+  application =
+  { id        = 53110
+    name      = TECH_APP_INDUSTRY_53110_NAME
+
+    position  = { x = 175 y = 366 }
+	picture   = "DH53070"
+    year      = 1993
+    # Transportable Antenna
+    component = { id = 53091 name = TECH_CMP_INDUSTRY_107_1_NAME type = technical_efficiency difficulty = 10 }
+    # Transmitter Frequency ??cm/?GHz
+    component = { id = 53092 name = TECH_CMP_INDUSTRY_107_2_NAME type = electronics difficulty = 10 }
+    # Modern electrical structure
+    component = { id = 53093 name = TECH_CMP_INDUSTRY_107_3_NAME type = electronics difficulty = 10 }
+    # Modern Electromechanical Plotting Device
+    component = { id = 53094 name = TECH_CMP_INDUSTRY_107_4_NAME type = electronics difficulty = 10 }
+    # Modern Air Defence Network
+    component = { id = 53095 name = TECH_CMP_INDUSTRY_107_5_NAME type = management difficulty = 10 }
+    required  = { 53100 }
+    effects =
+    { command = { type = night_attack which = strategic_bomber value = 15 }
+      command = { type = night_attack which = naval_bomber value = 15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
+      command = { type = task_efficiency which = asw value = 0.15 }
+	  command = { type = new_model which = naval_radar_l value = 8 }
+      command = { type = scrap_model which = naval_radar_l value = 7 }
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	  
+      command = { type = new_model which = naval_radar_s value = 7 }
+      command = { type = scrap_model which = naval_radar_s value = 6 }
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }	 
+	  command = { type = radar_eff value = 15 }	  
+	 }
+    }
+
+    # Improved Post-CW Radar Warning Sites
+  application =
+  { id        = 53120
+    name      = TECH_APP_INDUSTRY_53120_NAME
+
+    position  = { x = 175 y = 384 }
+	picture   = "DH53070"
+    year      = 2003
+    # Transportable Antenna
+    component = { id = 53096 name = TECH_CMP_INDUSTRY_107_1_NAME type = technical_efficiency difficulty = 10 }
+    # Transmitter Frequency ??cm/?GHz
+    component = { id = 53097 name = TECH_CMP_INDUSTRY_107_2_NAME type = electronics difficulty = 10 }
+    # Modern electrical structure
+    component = { id = 53098 name = TECH_CMP_INDUSTRY_107_3_NAME type = electronics difficulty = 10 }
+    # Modern Electromechanical Plotting Device
+    component = { id = 53099 name = TECH_CMP_INDUSTRY_107_4_NAME type = electronics difficulty = 10 }
+    # Modern Air Defence Network
+    component = { id = 530100 name = TECH_CMP_INDUSTRY_107_5_NAME type = management difficulty = 10 }
+    required  = { 53110 }
+    effects =
+    { command = { type = night_attack which = strategic_bomber value = 15 }
+      command = { type = night_attack which = naval_bomber value = 15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
+      command = { type = task_efficiency which = asw value = 0.15 }
+	  command = { type = new_model which = naval_radar_l value = 9 }
+      command = { type = scrap_model which = naval_radar_l value = 8 }
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	  
+      command = { type = new_model which = naval_radar_s value = 8 }
+      command = { type = scrap_model which = naval_radar_s value = 7 }
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }	 
+	  command = { type = radar_eff value = 15 }	  
+	 }
+    }
+
+      # Advanced Furutistic Radar Warning Sites
+  application =
+  { id        = 53130
+    name      = TECH_APP_INDUSTRY_53130_NAME
+
+    position  = { x = 175 y = 402 }
+	picture   = "DH53070"
+    year      = 2013
+    # Transportable Antenna
+    component = { id = 530101 name = TECH_CMP_INDUSTRY_107_1_NAME type = technical_efficiency difficulty = 10 }
+    # Transmitter Frequency ??cm/?GHz
+    component = { id = 530102 name = TECH_CMP_INDUSTRY_107_2_NAME type = electronics difficulty = 10 }
+    # Modern electrical structure
+    component = { id = 530103 name = TECH_CMP_INDUSTRY_107_3_NAME type = electronics difficulty = 10 }
+    # Modern Electromechanical Plotting Device
+    component = { id = 530104 name = TECH_CMP_INDUSTRY_107_4_NAME type = electronics difficulty = 10 }
+    # Modern Air Defence Network
+    component = { id = 530105 name = TECH_CMP_INDUSTRY_107_5_NAME type = management difficulty = 10 }
+    required  = { 53070 }
+    effects =
+    { command = { type = night_attack which = strategic_bomber value = 15 }
+      command = { type = night_attack which = naval_bomber value = 15 }
+      command = { type = task_efficiency which = strategic_bombardment value = 0.15 }
+      command = { type = task_efficiency which = asw value = 0.15 }
+	  command = { type = new_model which = naval_radar_l value = 10 }
+      command = { type = scrap_model which = naval_radar_l value = 9 }
+	  command = { type = night_attack which = naval_radar_l value = 5 }
+	  command = { type = night_defense which = naval_radar_l value = 5 }	  
+	  command = { type = rain_attack which = naval_radar_l value = 5 }
+	  command = { type = rain_defense which = naval_radar_l value = 5 }	  
+      command = { type = new_model which = naval_radar_s value = 9 }
+      command = { type = scrap_model which = naval_radar_s value = 8 }
+	  command = { type = night_attack which = naval_radar_s value = 3 }
+	  command = { type = night_defense which = naval_radar_s value = 3 }
+	  command = { type = rain_attack which = naval_radar_s value = 3 }
+	  command = { type = rain_defense which = naval_radar_s value = 3 }	 
+	  command = { type = radar_eff value = 15 }	  
+	 }
+    }
+	
+
+  
   label =
   { tag      = TECH_CAT_SYNTHETICOIL
     position = { x = 460 y = 303 }
