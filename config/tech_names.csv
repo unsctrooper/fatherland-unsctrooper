@@ -4243,12 +4243,11 @@ TECH_CMP_INDUSTRY_67_2_NAME;Chemical synthesis;Synthиse chimique;Sintesi chimica
 TECH_CMP_INDUSTRY_67_3_NAME;Slow Penicillin Excretion;Excrйtion lente de la pйnicilline;Escrezione lenta di penicillina;Lenta excreciуn de penicilina;Langsame Ausscheidung;Powolne pozyskiwanie penicyliny;;Медленное выделение пенициллина;;;X
 TECH_CMP_INDUSTRY_67_4_NAME;Antipseudomonal Penicillins;Penicilline Antipseudomonale;Penicillina anti-pseudomona;Las penicilinas antipseudomonas;Antipseudomonale Penicilline;Penicylina przeciwpseudomonalna;;Пеницилин антипсодомонал;;;X
 TECH_CMP_INDUSTRY_67_5_NAME;Improved Syringe;Seringue prй remplies;Siringhe migliorate;Jeringuillas mejoradas;Verbesserte Spritzen;Ulepszona strzykawka;;Улучшенный шприц;;;X
-TECH_APP_INDUSTRY_70_NAME;Early Agriculture Research;Recherche agricole;Ricerca agricola rudimentale;Investigaciуn agraria temprana;Frьhe landwirtschaftliche Forschung;Wczesne bad. nad rolnictwem;;Раннее сельское хозяйство;;;X
-TECH_CMP_INDUSTRY_70_1_NAME;Motorized plowing;Labourage motorisй;Aratura motorizzata;Arados motorizados;Motorpflug;Zmotoryzowana orka;;Моторизованное вспахивание;;;X
-TECH_CMP_INDUSTRY_70_2_NAME;Tractor prototype;Premier tracteur;Prototipo di trattore;Prototipo de tractor;Traktor Prototyp;Prototyp traktora;;Прототип трактора;;;X
-TECH_CMP_INDUSTRY_70_3_NAME;Automatic press;Pressoir а essence;Pressa automatica;Prensa automбtica;Automatische Pressen;Automatyczna prasa;;Автоматический пресс;;;X
-TECH_CMP_INDUSTRY_70_4_NAME;Farm electrification;Йlectrification des fermes;Elettrificazione fattorie;Electrificaciуn de granjas;Elektrifizierung von Bauernhцfen;Elektryfikacja farm;;Электрификация ферм;;;X
-TECH_CMP_INDUSTRY_70_5_NAME;Culture optimization;Optimisation des cultures;Ottimizzazione colture;Optimizaciуn cultural;Kulturoptimierung;Optymalizacja kultur;;Оптимизация с/х культур;;;X
+TECH_CMP_INDUSTRY_70_1_NAME;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_70_2_NAME;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_70_3_NAME;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_70_4_NAME;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_70_5_NAME;;;;;;;;;;;X
 TECH_APP_INDUSTRY_71_NAME;Early mechanization;Mйcanisation prйcoce;Meccanizzazione rudimentale;Mecanizaciуn temprana;Frьhe Mechanisierung;Wczesna mechanizacja;;Ранняя механизация;;;X
 TECH_CMP_INDUSTRY_71_1_NAME;Early Tractors;Tracteur;Trattori rudimentali;Tractores tempranos;Frьher Traktor;Wczesne traktory;;Ранний трактор;;;X
 TECH_CMP_INDUSTRY_71_2_NAME;Harvest;Moissonneuse;Raccolto;Cosecha;Ernte;Zbiory;;Урожай;;;X
@@ -6034,12 +6033,12 @@ SHORT_TECH_APP_INDUSTRY_15_NAME;Ship Ass Line;Chaоne montg nav.;Catena di montag
 SHORT_TECH_APP_INDUSTRY_16_NAME;Vehicle Ass Line;Chaоne montg vйhic.;Catena di montaggio veicoli;Cad. mont. vehнc.;Fahrzeug-FlieЯband;Linia mont. samoch.;;Машиностроит. конв.;;;X
 SHORT_TECH_APP_INDUSTRY_17_NAME;Rocket Ass Line;Chaоne montg miss.;Catena di montaggio razzi;Cad. mont. cohet.;Raketen-FlieЯband;Linia mont. rakiet;;Ракетный конвейер;;;X
 SHORT_TECH_APP_INDUSTRY_18_NAME;Sm Arms Ass Line;C. m. petites arm.;Catena di montaggio armi sottomarine;Cad. mont. Armas;Waffen-FlieЯband;Linia mont. broni;;Конв. стрелк. оружия;;;X
-SHORT_TECH_APP_INDUSTRY_19_NAME;Plant 1914;Raffinage 1914;Lavorazione di base;Refinado bбsico;Hydrierwerk 1914;Podst. rafinacja;;Базов. нефтеперераб.;;;X
-SHORT_TECH_APP_INDUSTRY_20_NAME;Plant 1938;Raffinage 1938;Lavorazione migliorata;Refinado mejorado;Hydrierwerk 1938;Ulepszona rafinacja;;Улуч. нефтеперераб.;;;X
-SHORT_TECH_APP_INDUSTRY_21_NAME;Plant 1940;Raffinage 1940;Lavorazione avanzata;Refinado avanzado;Hydrierwerk 1940;Zaaw. rafinacja;;Усов. нефтеперераб.;;;X
-SHORT_TECH_APP_INDUSTRY_22_NAME;Plant 1941;Centrale 1941;Fabbrica di base;Planta bбsica;Hydrierwerk 1941;Podst. wytwуrnia;;Базов. нефтесинтез;;;X
-SHORT_TECH_APP_INDUSTRY_23_NAME;Plant 1942;Centrale 1942;Fabbrica migliorata;Planta mejorada;Hydrierwerk 1942;Ulepsz. wytwуrnia;;Улуч. нефтесинтез;;;X
-SHORT_TECH_APP_INDUSTRY_24_NAME;Plant 1943;Centrale 1943;Fabbrica avanzata;Planta avanzada;Hydrierwerk 1943;Zaaw. wytwуrnia;;Усов. нефтесинтез;;;X
+SHORT_TECH_APP_INDUSTRY_19_NAME;Plant 1940;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_20_NAME;Plant 1950;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_21_NAME;Plant 1960;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_22_NAME;Plant 1975;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_23_NAME;Plant 1990;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_24_NAME;Plant 2000;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_25_NAME;Basic Polymers;Polymиres I;Polimeri di base;Polнmeros bбsicos;Einfache Polymere;Podst. polimery;;Базовые полимеры;;;X
 SHORT_TECH_APP_INDUSTRY_26_NAME;Improved Polymers;Polymиres II;Polimeri migliorati;Polнmeros mejorados;Verbesserte Polymere;Ulepszone polimery;;Улучш. полимеры;;;X
 SHORT_TECH_APP_INDUSTRY_27_NAME;Advanced Polymers;Polymиres III;Polimeri avanzati;Polнmeros avanzados;Moderne Polymere;Zaaw. polimery;;Усов. полимеры;;;X
@@ -6079,7 +6078,7 @@ SHORT_TECH_APP_INDUSTRY_64_NAME;Basic Pharmacology;Pharmacologie de base;Farmaco
 SHORT_TECH_APP_INDUSTRY_65_NAME;Mass Produced Penicillin;Peniciline;Produzione massiva di penicillina;Penicilina;Penicillin;Penicylina mas. prod.;;Массов. пр-во пениц.;;;X
 SHORT_TECH_APP_INDUSTRY_66_NAME;Improved Antibiotics;Antibiotiques amйliorйs;Antibiotici migliorati;Antibioticos mejorados;verb. Antibiot.;Ulepsz. antybiotyki;;Улуч. антибиотики;;;X
 SHORT_TECH_APP_INDUSTRY_67_NAME;Improved Pharmacology;Pharmacologie amйliorйe;Farmacologia migliorata;Farmacologнa moderna;Verb. Pharmaka;Ulepsz. farmakologia;;Улуч. фармакология;;;X
-SHORT_TECH_APP_INDUSTRY_70_NAME;Agriculture 1910;Agriculture 1910;Agricoltura rudimentale;Agricultura temprana;Landwirtsch. 1910;Wczesne rolnictwo;;Раннее сельск. хоз-во;;;X
+SHORT_TECH_APP_INDUSTRY_70_NAME;Cyber Med. Tech;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_71_NAME;Agriculture 1915;Agriculture 1915;Meccanizzazione rudimentale;Mec. Temprana;Landwirtsch. 1915;Wczesna mech.;;Ранняя механизация;;;X
 SHORT_TECH_APP_INDUSTRY_72_NAME;Agriculture 1950;Agriculture 1950;Meccanizzazione semi mod.;Mec. Semimoderna;Landwirtsch. 1950;Powoj. mech.;;Полусов. механиз.;;;X
 SHORT_TECH_APP_INDUSTRY_80_NAME;Construction 1870;Construction 1870;Costruzione rudimentale;Construcciуn temprana;Konstruktion 1870;Wczesna konstrukcja;;Ранняя строит. пром.;;;X
@@ -6094,7 +6093,7 @@ SHORT_TECH_APP_INDUSTRY_91_NAME;Construction 1960;Construction 1960;Costruzione 
 SHORT_TECH_APP_INDUSTRY_107_NAME;Adv.Mod.Centimetric;Centimйtrique moderne;Centimetrico Moderno;Centim. mod.;Mod. cm-Radar;Now. centymetrowy;;Элит. сантиметр. РЛС;;;X
 SHORT_TECH_APP_INDUSTRY_100_NAME;Agriculture 1955;Prod. avancйe;Produzione Avanzata;Prod. avanzada;Landwirtsch. 1955;Zaawansowana prod.;;Усов. сельскох. пр-во;;;X
 SHORT_TECH_APP_INDUSTRY_101_NAME;Agriculture 1960;Prod. Moderne;Produzione Moderna;Prod. moderna;Landwirtsch. 1960;Nowoczesna prod.;;Совр. сельскох. пр-во;;;X
-SHORT_TECH_APP_INDUSTRY_102_NAME;Plant 1945;Fabrique moderne 1945;Impianti Moderni;Planta moderna;Hydrierwerk 1945;Nowoczesny zakіad;;Совр. нефтесинтез;;;X
+SHORT_TECH_APP_INDUSTRY_102_NAME;Plant 2010;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_103_NAME;Mod Centimetric;Centimйtrique moderne;Centimetrico Moderno;Centim. mod.;Mod. cm-Radar;Now. centymetrowy;;Совр. сантиметр. РЛС;;;X
 SHORT_TECH_APP_INDUSTRY_104_NAME;Plastics;Plastiques;Materiali Plastici;Plбsticos;Plastik;Plastiki;;Пластмассы;;;X
 SHORT_TECH_APP_INDUSTRY_105_NAME;Adv Material Sci;Sc. matiиre avancйe;Scienza dei Materiali Avanzata;Cien. mat. ava.;Fortg. Materialfor.;Zaaw. nauka o mat. ;;Совр. материаловед.;;;X
@@ -8119,5 +8118,104 @@ TECH_APP_INDUSTRY_140_NAME;Improved Futuristic Construction Engineering;;;;;;;;;
 SHORT_TECH_APP_INDUSTRY_140_NAME;Construction 2010;;;;;;;;;;X
 TECH_APP_INDUSTRY_150_NAME;Advanced Futuristic Construction Engineering;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_150_NAME;Construction 2015;;;;;;;;;;X
+TECH_APP_INDUSTRY_10_NAME;12-bit Microprocessing;Genie construction III;Ingegneria di costruzione avanzata;Ingenieria de construccion avanzada;Fortschrittliches Konstruktionswesen;Zaawansowana technika konstrukcyjna;;;;;X
+TECH_APP_INDUSTRY_5900_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5900_1_NAME;Advanced Standardization;Normalisation III;Standardizzazione avanzata;Unificacion avanzada;Fortschrittliche Standardisierung;Zaawansowana standaryzacja;;;;;X
+TECH_CMP_INDUSTRY_5900_2_NAME;Advanced Quality Control;Controle qualite III;Controllo qualita avanzato;Control de calidad avanzado;Fortschrittliche Qualitatskontrolle;Zaawansowana kontrola jako?ci;;;;;X
+TECH_CMP_INDUSTRY_5900_3_NAME;Advanced Reliability Engineering;Etudes de fiabilite III;Ingegneria di affidabilita avanzata;Ingenieria de fiabilidad avanzada;Fortschrittliche Zuverlassigkeitsaspekt;Zaawansowana technika niezawodno?ci;;;;;X
+TECH_CMP_INDUSTRY_5900_4_NAME;Advanced Test Planning;Amenagement materiel III;Pianificazione test avanzata;Planificacion de pruebas avanzada;Fortschrittliche Testplanung;Zaawansowane planowanie testow;;;;;X
+TECH_CMP_INDUSTRY_5900_5_NAME;Advanced Construction Engineering Development Process;Processus de developpement du genie construction III;Processo di ingegneria delle costruzioni avanzato;Proceso de desarrollo de ingenieria de construccion avanzada;Fortschrittliche Konstruktionsentwicklung;Zaawansowany proces rozwoju technik konstr.;;;;;X
+TECH_APP_INDUSTRY_5910_NAME;32-bit Microprocessing;Controle de production;Controllo della produzione;Control de produccion;Produktionskontrolle;Kontrola produkcji;;;;;X
+TECH_APP_INDUSTRY_5910_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5910_1_NAME;Mass Production;Production de masse;Produzione di massa;Produccion en masa;Massenproduktion;Produkcja masowa;;;;;X
+TECH_CMP_INDUSTRY_5910_2_NAME;Scientific Management;Gestion scientifique;Gestione scientifica;Gestion cientifica;Wissenschaftliches Management;Zarz?dzanie naukowe;;;;;X
+TECH_CMP_INDUSTRY_5910_3_NAME;Continuous Improvement;Amelioration continue;Miglioramento continuo;Mejora continua;Standige Weiterentwicklung;Ci?g?e usprawnienia;;;;;X
+TECH_CMP_INDUSTRY_5910_4_NAME;Setup Time Reduction;Reduction temps de montage;Riduzione tempi di preparazione;Reduccion del tiempo de ajuste;Verkurzte Rustzeit;Redukcja czasu instalacji;;;;;X
+TECH_CMP_INDUSTRY_5910_5_NAME;Production Control Development Process;Processus de developpement de controle de la production;Processo di sviluppo del controllo produzione;Proceso de desarrollo de control de produccion;Entwicklungsprozess der Produktionskontrolle;Proces rozwoju kontroli produkcji;;;;;X
+TECH_APP_INDUSTRY_5920_NAME;Multi-core Processing;Planification de la production;Pianificazione della produzione;Planificacion de la produccion;Produktionsplanung;Planowanie produkcji;;;;;X
+TECH_APP_INDUSTRY_5920_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5920_1_NAME;General Production Planning;Planification de la production generale;Pianificazione della produzione generale;Planificacion de la produccion general;Allgemeine Produktionsplanung;Powszechne planowanie produkcji;;;;;X
+TECH_CMP_INDUSTRY_5920_2_NAME;Inventory Planning;Planification d’inventaire;Pianificazione inventario;Planificacion del inventario;Inventarplanung;Planowanie zapasow;;;;;X
+TECH_CMP_INDUSTRY_5920_3_NAME;Resource Queue System;Systeme de file d’attente des ressources;Sistema di allocazione delle risorse;Sistema de cola de recursos;Ressourcen-Listensystem;System kolejkowania zasobow;;;;;X
+TECH_CMP_INDUSTRY_5920_4_NAME;Advanced Worker Time Tables;Calendrier ouvrier III;Orari di lavoro avanzati;Horarios laborales avanzados;Fortschrittlicher Arbeitsstundenplan;Zaawansowane tabele czasu pracy;;;;;X
+TECH_CMP_INDUSTRY_5920_5_NAME;Production Planning Development Process;Processus de developpement du planning de la production;Processo di sviluppo della pianificazione produzione;Proceso de desarrollo de planificacion de la produccion;Entwicklungsprozess der Produktionsplanung;Proces rozwoju planowania produkcji;;;;;X
+TECH_APP_INDUSTRY_5930_NAME;64-bit Microprocessing;Experimentation chaine de montage;Esperimento catena di montaggio;Experimentacion en la cadena de montaje;Flie?band-Experimente;Do?wiadczalna linia monta?owa;;;;;X
+TECH_APP_INDUSTRY_5930_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5930_1_NAME;Modular Design;Modele modulaire;Progettazione modulare;Diseno modular;Modulardesign;Projekt modu?owy;;;;;X
+TECH_CMP_INDUSTRY_5930_2_NAME;Platform Development;Developpement de plate-forme;Sviluppo piattaforma;Desarrollo de plataforma;Plattformentwicklung;Rozwoj platformy;;;;;X
+TECH_CMP_INDUSTRY_5930_3_NAME;Sectional Assembly;Montage en sections;Assemblaggio settoriale;Montaje modular;Getrennte Montage;Monta? segmentowy;;;;;X
+TECH_CMP_INDUSTRY_5930_4_NAME;Fracture Mechanics;Mecanique de la rupture;Meccaniche di rottura;Mecanica de fractura;Frakturmechanik;Mechanika zmeczen;;;;;X
+TECH_CMP_INDUSTRY_5930_5_NAME;Experimentation Process;Processus d’experimentation;Processo di sperimentazione;Proceso de experimentacion;Experimentierprozess;Proces do?wiadczalny;;;;;X
+TECH_APP_INDUSTRY_5940_NAME;2000 Tech;Chaine de montage avions;Catena di montaggio aerei;Cadena de montaje de aeronaves;Flugzeug-Flie?bandfertigung;Linia monta?owa samolotow;;;;;X
+TECH_APP_INDUSTRY_5940_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5940_1_NAME;Aircraft Modules;Modules avions;Moduli aerei;Modulos de aeronaves;Flugzeugmodule;Modu?y samolotow;;;;;X
+TECH_CMP_INDUSTRY_5940_2_NAME;Environmental Tests;Essais en environnement;Test ambientali;Pruebas medioambientales;Umwelttests;Testy ?rodowiskowe;;;;;X
+TECH_CMP_INDUSTRY_5940_3_NAME;Propulsion Adaptation;Adaptation propulsion;Adattamento della propulsione;Adaptacion de propulsion;Antriebsanpassung;Dostosowywanie napedu;;;;;X
+TECH_CMP_INDUSTRY_5940_4_NAME;Assembly Line Process;Processus chaine de montage;Processo catena di montaggio;Proceso de cadena de montaje;Flie?bandprozess;Proces monta?owy;;;;;X
+TECH_CMP_INDUSTRY_5940_5_NAME;Production Tests;Essais de production;Test di produzione;Pruebas de produccion;Produktionstests;Testy produkcyjne;;;;;X
+TECH_APP_INDUSTRY_5940_NAME;2005 Tech;Chaine de montage navires;Catena di montaggio navi;Cadena de montaje de navios;Schiffs-Flie?bandfertigung;Linia monta?owa statkow;;;;;X
+TECH_APP_INDUSTRY_5950_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5950_1_NAME;Ship Modules;Modules navire;Moduli navi;Modulos de navios;Schiffsmodule;Modu?y okretow;;;;;X
+TECH_CMP_INDUSTRY_5950_2_NAME;Environmental Tests;Essais en environnement;Test ambientali;Pruebas medioambientales;Umwelttests;Testy ?rodowiskowe;;;;;X
+TECH_CMP_INDUSTRY_5950_3_NAME;Propulsion Adaptation;Reglage propulsion;Adattamento della propulsione;Adaptacion de propulsion;Antriebsanpassung;Dostosowywanie napedu;;;;;X
+TECH_CMP_INDUSTRY_5950_4_NAME;Assembly Line Process;Processus chaine de montage;Processo catena di montaggio;Proceso de cadena de montaje;Flie?bandprozess;Proces monta?owy;;;;;X
+TECH_CMP_INDUSTRY_5950_5_NAME;Production Tests;Essais de production;Test di produzione;Pruebas de produccion;Produktionstests;Testy produkcyjne;;;;;X
+TECH_APP_INDUSTRY_5960_NAME;2010 Tech;Chaine de montage vehicules;Catena di montaggio veicoli;Cadena de montaje de vehiculos;Fahrzeug-Flie?bandfertigung;Linia monta?owa pojazdow;;;;;X
+TECH_APP_INDUSTRY_5960_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5960_1_NAME;Vehicle Modules;Modules vehicule;Moduli veicoli;Modulos de vehiculos;Fahrzeugmodule;Modu?y pojazdow;;;;;X
+TECH_CMP_INDUSTRY_5960_2_NAME;Environmental Tests;Essais en environnement;Test ambientali;Pruebas medioambientales;Umwelttests;Testy ?rodowiskowe;;;;;X
+TECH_CMP_INDUSTRY_5960_3_NAME;Propulsion Adaptation;Adaptation propulsion;Adattamento della propulsione;Adaptacion de propulsion;Antriebsanpassung;Dostosowywanie napedu;;;;;X
+TECH_CMP_INDUSTRY_5960_4_NAME;Assembly Line Process;Processus chaine de montage;Processo catena di montaggio;Proceso de cadena de montaje;Flie?bandprozess;Proces monta?owy;;;;;X
+TECH_CMP_INDUSTRY_5960_5_NAME;Production Tests;Essais de production;Test di produzione;Pruebas de produccion;Produktionstests;Testy produkcyjne;;;;;X
+TECH_APP_INDUSTRY_5970_NAME;2015 Tech;Chaine de montage missiles;Catena di montaggio razzi;Cadena de montaje de cohetes;Raketen-Flie?bandfertigung;Linia monta?owa rakiet;;;;;X
+TECH_APP_INDUSTRY_5970_DESC;;;;;;;;;;;X
+TECH_CMP_INDUSTRY_5970_1_NAME;Rocket Modules;Modules missile;Moduli razzi;Modulos de cohetes;Raketenmodule;Modu?y rakiet;;;;;X
+TECH_CMP_INDUSTRY_5970_2_NAME;Environmental Tests;Essais en environnement;Test ambientali;Pruebas medioambientales;Umwelttests;Testy ?rodowiskowe;;;;;X
+TECH_CMP_INDUSTRY_5970_3_NAME;Propulsion Adaptation;Adaptation propulsion;Adattamento della propulsione;Adaptacion de propulsion;Antriebsanpassung;Dostosowywanie napedu;;;;;X
+TECH_CMP_INDUSTRY_5970_4_NAME;Assembly Line Process;Processus chaine de montage;Processo catena di montaggio;Proceso de cadena de montaje;Flie?bandprozess;Proces monta?owy;;;;;X
+TECH_CMP_INDUSTRY_5980_5_NAME;Production Tests;Essais de production;Test di produzione;Pruebas de produccion;Produktionstests;Testy produkcyjne;;;;;X
+SHORT_TECH_APP_INDUSTRY_5900_NAME;12-bit Microprocess;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5910_NAME;32-bit Microprocess;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5920_NAME;Multi-core Process;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5930_NAME;64-bit Microprocess;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5940_NAME;2000 Tech;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_55950_NAME;2005 Tech;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5960_NAME;2010 Tech;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5970_NAME;2015 Tech;;;;;;;;;;x
+TECH_APP_INDUSTRY_551900_NAME;12-bit Microprocessing;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_551900_NAME;12-bit Microprocessing;;;;;;;;;;x
+TECH_APP_INDUSTRY_55950_NAME;2005 Tech;;;;;;;;;;x
+TECH_APP_INDUSTRY_553080_NAME;Improved Modern Centimetric Radar Warning Sites;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_553080_NAME;Imp. Mod. Centimetric Radar;;;;;;;;;;x
+TECH_APP_INDUSTRY_553090_NAME;Advanced Modern Centimetric Radar Warning Sites;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_553090_NAME;Adv. Mod. Centimetric Radar;;;;;;;;;;x
+TECH_APP_INDUSTRY_53100_NAME;Postmodern Radar Warning Sites;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_53100_NAME;Postmodern Radar Sites;;;;;;;;;;x
+TECH_APP_INDUSTRY_53110_NAME;Post-CW Radar Warning Sites;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_53110_NAME;Post-CW Radar Sites;;;;;;;;;;x
+TECH_APP_INDUSTRY_53120_NAME;Improved Post-CW Radar Warning Sites;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_53120_NAME;Imp. Post-CW Radar;;;;;;;;;;x
+TECH_APP_INDUSTRY_53130_NAME;Futuristic Radar Warning Sites;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_53130_NAME;Futuristic Radar Sites;;;;;;;;;;x
+TECH_APP_INDUSTRY_52880_NAME;Advanced Modern Spycraft;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_52880_NAME;Adv. Mod. Spycraft;;;;;;;;;;x
+TECH_APP_INDUSTRY_52890_NAME;Futuristic Spycraft;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_52890_NAME;Futuristic Spycraft;;;;;;;;;;x
+TECH_APP_INDUSTRY_53060_NAME;Basic Material Science;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_53060_NAME;Bas. Mat. Science;;;;;;;;;;x
+TECH_APP_INDUSTRY_530701_NAME;Improved Material Science;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_530701_NAME;Imp. Mat. Science;;;;;;;;;;x
+TECH_APP_INDUSTRY_530801_NAME;Advanced Material Science;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_530801_NAME;Adv. Mat. Science;;;;;;;;;;x
+TECH_APP_INDUSTRY_530901_NAME;Semimodern Material Science;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_530901_NAME;Semimod. Mat. Science;;;;;;;;;;x
+TECH_APP_INDUSTRY_531001_NAME;Modern Material Science;;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_531001_NAME;Mod. Mat. Science;;;;;;;;;;x
+TECH_APP_INDUSTRY_5470_NAME;Basic Civilian Power Production;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5470_NAME;Bas. Civ. Power Prod.;;;;;;;;;x
+TECH_APP_INDUSTRY_5480_NAME;Advanced Civilian Power Production;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5480_NAME;Adv. Civ. Power Prod.;;;;;;;;;x
+TECH_APP_INDUSTRY_5490_NAME;Modern Civilian Power Production;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_5490_NAME;Mod. Civ. Power Prod.;;;;;;;;;x
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
