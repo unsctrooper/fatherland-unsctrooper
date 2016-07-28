@@ -82,7 +82,7 @@ model = {
 
 # 4 - Airborne IFV (1980) 
 model = {
-	cost 				= 9
+	cost 				= 10
 	buildtime	 		= 170 # 140 for regular L ARM
 	manpower 			= 2.5
 	maxspeed 			= 0
@@ -100,9 +100,9 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 4 - Airborne IFV (2000) 
+# 5 - Airborne IFV (2000) 
 model = {
-	cost 				= 9
+	cost 				= 10
 	buildtime	 		= 170 # 140 for regular L ARM
 	manpower 			= 2.5
 	maxspeed 			= 0
