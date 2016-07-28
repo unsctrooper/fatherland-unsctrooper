@@ -901,6 +901,11 @@ BRIG_MODEL_11_3;Improved Anti-Air;Batterie DCA II;contraerea migliorata;Antiaér
 BRIG_MODEL_11_4;Advanced Anti-Air;Batterie DCA III;contraerea avanzata;Antiaéreo avanzado;Fortschrittliche Flugabwehr;Zaawansowane p-lot.;;Óñîâ. ìîá. ÏÂÎ;;;X
 BRIG_MODEL_11_5;Semi-Modern Anti-Air;Batterie DCA semi-moderne;contraerea semi-moderna;Antiaéreo semimoderno;Halbmoderne Flugabwehr;Powojenne p-lot.;;Ïîëóñîâ. ìîá. ÏÂÎ;;;X
 BRIG_MODEL_11_6;Modern Anti-Air;Anti-air moderne;contraerea Moderna;AA Moderno;Moderne Flugabwehr;Nowoczesne p-lot;;Ñîâð. ìîá. ÏÂÎ;;;X
+BRIG_MODEL_11_7;Modern Anti-Air '76;;;;;;;;;;;X
+BRIG_MODEL_11_8;Modern Anti-Air '86;;;;;;;;;;;X
+BRIG_MODEL_11_9;Modern Anti-Air '96;;;;;;;;;;;X
+BRIG_MODEL_11_10;Modern Anti-Air 2006;;;;;;;;;;;X
+BRIG_MODEL_11_11;Modern Anti-Air 2016;;;;;;;;;;;X
 BRIG_MODEL_12_0;Police 1870;Police 1870;Polizia 1870;Policía 1870;Polizei 1870;¯andarmeria 1870;;Ïîëèöèÿ 1870-ãî;;;X
 BRIG_MODEL_12_1;Police 1921;Police 1921;Polizia 1921;Policía 1921;Polizei 1921;¯andarmeria 1921;;Ïîëèöèÿ 1921-ãî;;;X
 BRIG_MODEL_12_2;Police 1944;Police 1944;Polizia 1944;Policía 1944;Polizei 1944;¯andarmeria 1944;;Ïîëèöèÿ 1944-ãî;;;X
