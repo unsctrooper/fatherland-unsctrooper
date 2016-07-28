@@ -894,6 +894,10 @@ BRIG_MODEL_10_6;Semi-Modern Armored Car;Véhicule blindé III;Autoblinda semi-mo
 BRIG_MODEL_10_7;Modern Armored Car;Véhicule blindé IV;Autoblinda moderna;Vehículo blindado moderno;Moderner Panzerwagen;Nowoczesny pojazd pancerny;;Ýëèòíûé áðîíåàâòîìîáèëü;;;X
 BRIG_MODEL_10_8;Improved Modern Armoured Car;Improved Modern Armoured Car;Improved Modern Armoured Car;Improved Modern Armoured Car;Improved Modern Armoured Car;Improved Modern Armoured Car;;Improved Modern Armoured Car;;;X
 BRIG_MODEL_10_9;Advanced Modern Armoured Car;Advanced Modern Armoured Car;Advanced Modern Armoured Car;Advanced Modern Armoured Car;Advanced Modern Armoured Car;Advanced Modern Armoured Car;;Advanced Modern Armoured Car;;;X
+BRIG_MODEL_10_10;Advanced Modern Armoured Car '84;;;;;;;;;;;X
+BRIG_MODEL_10_11;Advanced Modern Armoured Car '94;;;;;;;;;;;X
+BRIG_MODEL_10_12;Advanced Modern Armoured Car 2004;;;;;;;;;;;X
+BRIG_MODEL_10_13;Advanced Modern Armoured Car 2014;;;;;;;;;;;X
 BRIG_MODEL_11_0;Great war Anti-Air;Batterie DCA grande guerre;contraerea della grande guerra;Antiaéreo Gran Guerra;Weltkriegs Flugabwehr;Obrona p-lot. z I w. œw.;;Ìîá. ÏÂÎ ïåðèîäà ÏÌÂ;;;X
 BRIG_MODEL_11_1;Interwar Anti-Air;Batterie DCA entre-guerre;contraerea interbellica;Antiaéreo Entreguerras;Vorkriegs Flugabwehr;Miêdzywoj. obrona p-lot.;;Ìåæâîåííàÿ ìîá. ÏÂÎ;;;X
 BRIG_MODEL_11_2;Basic Anti-Air;Batterie DCA I;contraerea di base;Antiaéreo básico;Einfache Flugabwehr;Podstawowe p-lot.;;Áàçîâîå ìîá. ÏÂÎ;;;X
@@ -1100,7 +1104,11 @@ BRIG_MODEL_28_3;Advanced SP AA Artillery;Lance-Roquettes AM III;Contraerea semov
 BRIG_MODEL_28_4;Semi-Modern SP AA Artillery;Artillerie de missiles AM semi-moderne;Contraerea semovente Semi Moderna;Artillería LCo APr semimoderna;Halbmoderner RW(Sfl);Powojenna s-b. artyleria p-lot.;;Ïîëóñîâ. ÇÑÓ;;;X
 BRIG_MODEL_28_5;Modern SP AA Artillery;Artillerie de missiles AM moderne;Contraerea semovente Moderna;Artillería LCo APr moderna;Moderner RW(Sfl);Nowoczesna s.-b. art. p-lot.;;Ñîâðåì. ÇÑÓ;;;X
 BRIG_MODEL_28_6;Imp. Modern SP AA Artillery;Imp. Modern SP AA Artillery;Imp. Modern SP AA Artillery;Imp. Modern SP AA Artillery;Imp. Modern SP AA Artillery;Imp. Modern SP AA Artillery;;Imp. Modern SP AA Artillery;;;X
-BRIG_MODEL_28_7;Mobile SAM System;Mobile SAM System;Mobile SAM System;Mobile SAM System;Mobile SAM System;Mobile SAM System;;Mobile SAM System;;;X
+BRIG_MODEL_28_7;Mobile SAM System;;;;;;;;;;;X
+BRIG_MODEL_28_8;Modern SP AA Artillery;;;;;;;;;;;X
+BRIG_MODEL_28_9;Imp. Modern SP AA Artillery;;;;;;;;;;;X
+BRIG_MODEL_28_10;Adv. Modern SP AA Artillery;;;;;;;;;;;X
+BRIG_MODEL_28_11;Postmodern SP AA Artillery;;;;;;;;;;;X
 BRIG_MODEL_29_0;Medium Armor '24;Char moyen '24;Carro medio successivo alla Grande Guerrra;Blindado medio Mk I.;M. Panzer I;Œredni czo³g I;;Áàçîâûé ìåæâîåíí. ñðåäí. òàíê;;;X 
 BRIG_MODEL_29_1;Medium Armor '28;Char moyen '28;Carro medio rudimentale del periodo interbellico;Blindado medio Mk II.;M. Panzer II;Œredni czo³g II;;Óëó÷ø. ìåæâîåíí. ñðåäí. òàíê;;;X
 BRIG_MODEL_29_2;Medium Armor '34;Char moyen '34;Carro medio avanzato del periodo interbellico;Blindado medio Mk III.;M. Panzer III;Œredni czo³g III;;Óñîâ. ìåæâîåíí. ñðåäí. òàíê;;;X
