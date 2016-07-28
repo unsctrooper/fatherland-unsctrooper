@@ -98,7 +98,7 @@ model = {
 	equipment = { manpower = 200 anti_tank = 65 }
 }
 
-# 7 - Modern AT Gun (2007) Sprut anti-tank gun
+# 7 - Modern AT Gun (2017) Sprut anti-tank gun
 model = {
 	cost 				= 5
 	buildtime	 		= 60
