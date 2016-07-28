@@ -838,6 +838,10 @@ BRIG_MODEL_6_6;Modern Tank Destroyer;Chasseur de chars moderne;Caccia carri Mode
 BRIG_MODEL_6_7;Imp. Modern Tank Destroyer;Chasseur de chars moderne amélioré;Caccia carri Moderno migliorato;Cazacarros Monderno Imp.;Verbesserter moderner Jagdpanzer;Ulepsz. niszczyciel czo³gów;;Ýëèòíîå ÑõÏÒÎ;;;X
 BRIG_MODEL_6_8;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;;Adv. Modern Tank Destroyer;;;X
 BRIG_MODEL_6_9;Very Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;Adv. Modern Tank Destroyer;;Adv. Modern Tank Destroyer;;;X
+BRIG_MODEL_6_10;Ultra Modern Tank Destroyer;;;;;;;;;;;X
+BRIG_MODEL_6_11;Future Modern Tank Destroyer;;;;;;;;;;;X
+BRIG_MODEL_6_12;Future Imp. Modern Tank Destroyer;;;;;;;;;;;X
+BRIG_MODEL_6_13;Future Adv. Modern Tank Destroyer;;;;;;;;;;;X
 BRIG_MODEL_7_0;Great War Tank;Char Grande Guerre;Carro della Grande Guerra;Tanque de la Gran Guerra;Vorkriegs-Panzer;Czo³g z I w. œw.;;Ëåãêèé òàíê ÏÌÂ;;;X
 BRIG_MODEL_7_1;Post-War Tank I;Char Post-Grande Guerre I;Carro successivo alla Grande Guerra I;Tanque de postguerra I;Nachkriegs-Panzer I;Czo³g z koñca I w. œw. kl. I;;Ðàííèé ìåæâîåíí. ëåãê. òàíê;;;X
 BRIG_MODEL_7_2;Post-War Tank II;Char Post-Grande Guerre II;Carro successivo alla Grande Guerra II;Tanque de postguerra II;Nachkriegs-Panzer II;Czo³g z koñca I w. œw. kl. II;;Áàçîâûé ìåæâîåíí. ëåãê. òàíê;;;X
@@ -850,6 +854,11 @@ BRIG_MODEL_7_8;Armored Cavalry 1946;Cavalerie blindée '46;Cavalleria Corazzata 
 BRIG_MODEL_7_9;Semi-Modern Light Tank;Semi-Modern Light Tank;Semi-Modern Light Tank;Semi-Modern Light Tank;Semi-Modern Light Tank;Semi-Modern Light Tank;;Semi-Modern Light Tank;;;X
 BRIG_MODEL_7_10;Modern Light Tank;Modern Light Tank;Modern Light Tank;Modern Light Tank;Modern Light Tank;Modern Light Tank;;Modern Light Tank;;;X
 BRIG_MODEL_7_11;Infantry Fighting Vehicle;Infantry Fighting Vehicle;Infantry Fighting Vehicle;Infantry Fighting Vehicle;Infantry Fighting Vehicle;Infantry Fighting Vehicle;;Infantry Fighting Vehicle;;;X
+BRIG_MODEL_7_12;Infantry Fighting Vehicle 1975;;;;;;;;;;;X
+BRIG_MODEL_7_13;Infantry Fighting Vehicle 1985;;;;;;;;;;;X
+BRIG_MODEL_7_14;Infantry Fighting Vehicle 1995;;;;;;;;;;;X
+BRIG_MODEL_7_15;Infantry Fighting Vehicle 2005;;;;;;;;;;;X
+BRIG_MODEL_7_16;Infantry Fighting Vehicle 2015;;;;;;;;;;;X
 BRIG_MODEL_8_0;Great War Heavy Tank;Char Grande Guerre;Carro della Grande Guerra;Tanque de la Gran Guerra;Vorkriegs-Panzer;Czo³g z I w. œw.;;Òÿæ.òàíê ÏÌÂ;;;X
 BRIG_MODEL_8_1;Basic Heavy Tank;Char lourd I;Carro pesante di base;Tanque pesado básico;Einfacher schwerer Panzer;Podst. czo³g ciê¿ki;;Áàçîâûé òÿæ. òàíê;;;X
 BRIG_MODEL_8_2;Improved Heavy Tank;Char lourd II;Carro pesante potenziato;Tanque pesado mejorado;Verbesserter schwerer Panzer;Ulepszony czo³g ciê¿ki;;Óëó÷. òÿæ. òàíê;;;X
@@ -1016,6 +1025,8 @@ BRIG_MODEL_33_0;Light Glider Armor '39;Blindé Léger par Planeur 39;Carro Aereo
 BRIG_MODEL_33_1;Light Glider Armor '44;Blindé Léger par Planeur 44;Carro Aereotrasportato leggero '44;Planeador ligero '44;Leichte Luftlandeartillerie '44;Lekki czo³g spadochronowy '44;;Äåñàíòíûå òàíêè '44;;;X
 BRIG_MODEL_33_2;Light Airborne Armor '58;Blindé Léger par Planeur 58;Carro Aereotrasportato leggero '58;Planeador ligero '58;Leichte Luftlandeartillerie '58;Lekki czo³g spadochronowy '58;;Äåñàíòíûå òàíêè '58;;;X
 BRIG_MODEL_33_3;Airborne IFV '68;Blindé Léger par Planeur 68;Carro Aereotrasportato leggero '68;Planeador ligero '68;Leichte Luftlandeartillerie '68;Lekki czo³g spadochronowy '68;;Äåñàíòíûå òàíêè '68;;;X
+BRIG_MODEL_33_4;Airborne IFV '80;;;;;;;;;;;X
+BRIG_MODEL_33_5;Airborne IFV 2000;;;;;;;;;;;X
 BRIG_MODEL_34_0;Glider Artillery '40;Artillerie par Planeur 40;Artiglieria Aereotrasportata '40;Planeador con artillería '40;Luftlandeartillerie '40;Artyleria spadochronowa '40;;Äåñàíòíàÿ àðòèëëåðèÿ '40;;;X
 BRIG_MODEL_34_1;Glider Artillery '42;Artillerie par Planeur 42;Artiglieria Aereotrasportata '42;Planeador con artillería '42;Luftlandeartillerie '42;Artyleria spadochronowa '42;;Äåñàíòíàÿ àðòèëëåðèÿ '42;;;X
 BRIG_MODEL_34_2;Glider Artillery '45;Artillerie par Planeur 45;Artiglieria Aereotrasportata '45;Planeador con artillería '45;Luftlandeartillerie '45;Artyleria spadochronowa '45;;Äåñàíòíàÿ àðòèëëåðèÿ '45;;;X
