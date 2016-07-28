@@ -815,6 +815,12 @@ BRIG_MODEL_1_12;Semi Modern Field Artillery;Artillerie moderne;Artiglieria moder
 BRIG_MODEL_1_13;Modern Field Artillery;Artillerie VII;Artiglieria avanzata;Artillería avanzada;Fortschrittliche Artillerie;Zaaw. artyleria;;Ýëèòíàÿ ïîëåâàÿ àðòèëëåðèÿ;;;X
 BRIG_MODEL_1_14;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;;Improved Modern Field Artillery;;;X
 BRIG_MODEL_1_15;Advanced Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;Improved Modern Field Artillery;;Improved Modern Field Artillery;;;X
+BRIG_MODEL_1_16;Modern Field Artillery 1980;;;;;;;;;;X
+BRIG_MODEL_1_17;Modern Field Artillery 1985;;;;;;;;;;X
+BRIG_MODEL_1_18;Modern Field Artillery 1995;;;;;;;;;;X
+BRIG_MODEL_1_19;Modern Field Artillery 2000;;;;;;;;;;X
+BRIG_MODEL_1_20;Modern Field Artillery 2005;;;;;;;;;;X
+BRIG_MODEL_1_21;Modern Field Artillery 2015;;;;;;;;;;X
 BRIG_MODEL_2_0;Early SP Artillery;Première artillerie AM;Artiglieria semovente rudimentale;Artillería APr temprana;Frühe SA-Artillerie;Wczesna art. samobie¿na;;Ðàííÿÿ ÑÀÓ;;;X
 BRIG_MODEL_2_1;Basic SP Artillery;Artillerie AM I;Artiglieria semovente di base;Artillería APr básica;Einfache SA-Artillerie;Podst. art. samobie¿na;;Áàçîâàÿ ÑÀÓ;;;X
 BRIG_MODEL_2_2;Improved SP Artillery;Artillerie AM II;Artiglieria semovente migliorata;Artillería APr mejorada;Verbesserte SA-Artillerie;Ulepszona art. samobie¿na;;Óëó÷øåííàÿ ÑÀÓ;;;X
@@ -825,9 +831,19 @@ BRIG_MODEL_2_6;Bas. Modern SP Artillery;Artillerie AM améliorée;Artiglieria se
 BRIG_MODEL_2_7;Imp. Modern SP Artillery;Artillerie AM avancée;Artiglieria semovente Moderna avanzata;Artilleria APr. Moderna Adv.;Fortschrittliche moderne Artillerie auf Selbstfahrlafette;Zaaw. nowocz. artyleria samobie¿na;;Óñîâ. ýëèòíàÿ ÑÀÓ;;;X
 BRIG_MODEL_2_8;Adv. Modern SP Artillery;Adv. Modern SP Artillery;Adv. Modern SP Artillery;Adv. Modern SP Artillery;Adv. Modern SP Artillery;Adv. Modern SP Artillery;;Adv. Modern SP Artillery;;;X
 BRIG_MODEL_2_9;Imp. Adv. Modern SP Artillery;Imp. Adv. Modern SP Artillery;Imp. Adv. Modern SP Artillery;Imp. Adv. Modern SP Artillery;Imp. Adv. Modern SP Artillery;Imp. Adv. Modern SP Artillery;;Imp. Adv. Modern SP Artillery;;;X
+BRIG_MODEL_2_10;Modern SP Artillery 1980;;;;;;;;;;X
+BRIG_MODEL_2_11;Modern SP Artillery 1985;;;;;;;;;;X
+BRIG_MODEL_2_12;Modern SP Artillery 1995;;;;;;;;;;X
+BRIG_MODEL_2_13;Modern SP Artillery 2005;;;;;;;;;;X
+BRIG_MODEL_2_14;Modern SP Artillery 2015;;;;;;;;;;X
 BRIG_MODEL_5_0;Semi-Modern AT Gun Brigade;Semi-Modern AT Gun Brigade;Semi-Modern AT Gun Brigade;Semi-Modern AT Gun Brigade;Semi-Modern AT Gun Brigade;Semi-Modern AT Gun Brigade;;Semi-Modern AT Gun Brigade;;;X
 BRIG_MODEL_5_1;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;;Modern AT Gun Brigade;;;X
-BRIG_MODEL_5_2;Improved Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;Modern AT Gun Brigade;;Modern AT Gun Brigade;;;X
+BRIG_MODEL_5_2;Improved Modern AT Gun Brigade;;;;;;;;;;X
+BRIG_MODEL_5_3;Improved Modern AT Gun Brigade '70;;;;;;;;;;X
+BRIG_MODEL_5_4;Improved Modern AT Gun Brigade '87;;;;;;;;;;X
+BRIG_MODEL_5_5;Improved Modern AT Gun Brigade '97;;;;;;;;;;X
+BRIG_MODEL_5_6;Improved Modern AT Gun Brigade 2007;;;;;;;;;;X
+BRIG_MODEL_5_7;Improved Modern AT Gun Brigade 2017;;;;;;;;;;X
 BRIG_MODEL_6_0;Early Tank Destroyer;Premier chasseur de chars;Caccia carri rudimentale;Cazacarros temprano;Früher Jagdpanzer;Wczesny niszcz. czo³g.;;Ðàííåå ÑõÏÒÎ;;;X
 BRIG_MODEL_6_1;Basic Tank Destroyer;Chasseur de chars I;Caccia carri di base;Cazacarros básico;Einfacher Jagdpanzer;Podst. niszcz. czo³g.;;Áàçîâîå ÑõÏÒÎ;;;X
 BRIG_MODEL_6_2;Heavy Tank Destroyer;Chasseur de chars lourd;Caccia carri pesante;Cazacarros pesado;Schwerer Jagdpanzer;Ciê¿ki niszcz. czo³g.;;Òÿæ. ÑõÏÒÎ;;;X
@@ -942,7 +958,13 @@ BRIG_MODEL_17_1;Basic AA;DCA de base;Anti-Aerea di base;AA Básico;Einfache Flug
 BRIG_MODEL_17_2;Improved AA;DCA améliorée;Anti-Aerea migliorata;AA Mejorado;Verbesserte Flugabwehrbrigade;Ulepsz. obr. p-lot.;;Óëó÷. ÏÂÎ;;;X
 BRIG_MODEL_17_3;Advanced AA;DCA avancée;Anti-Aerea avanzata;AA Avanzado;Fortschrittl. Flugabwehrbrigade;Zaawans. obr. p-lot.;;Óñîâ. ÏÂÎ;;;X
 BRIG_MODEL_17_4;Semi-Modern AA;DCA semi-moderne;Anti-Aerea semi-moderna;AA Semimoderno;Halbmoderne Flugabwehrbrigade;Powojenna obr. p-lot.;;Ïîëóñîâ. ÏÂÎ;;;X
-BRIG_MODEL_17_5;Modern AA;DCA moderne;Anti-Aerea moderna;AA Moderno;Moderne Flugabwehrbrigade;Wspó³czesna obr. p-lot.;;Ñîâð. ÏÂÎ;;;X
+BRIG_MODEL_17_6;Modern AA '56;;;;;;;;;;X
+BRIG_MODEL_17_7;Modern AA '66;;;;;;;;;;X
+BRIG_MODEL_17_8;Modern AA '76;;;;;;;;;;X
+BRIG_MODEL_17_9;Modern AA '86;;;;;;;;;;X
+BRIG_MODEL_17_10;Modern AA '96;;;;;;;;;;X
+BRIG_MODEL_17_11;Modern AA 2006;;;;;;;;;;X
+BRIG_MODEL_17_12;Modern AA 2016;;;;;;;;;;X
 BRIG_MODEL_18_0;Early Searchradar;Radar simple;Radar rudimentale;Radar de búsqueda temprano;Frühes Suchradar;Wczesny radar;;Ðàíí. ÐËÑ;;;X
 BRIG_MODEL_18_1;Basic Radar;Radar;Radar;Radar;Radar;Podst. radar;;Îñí. ÐËÑ;;;X
 BRIG_MODEL_18_2;Impr. Radar;Radar amélioré;Radar migliorato;Radar;Verb. Radar;Ulepsz. radar;;Óëó÷. ÐËÑ;;;X
@@ -966,6 +988,13 @@ BRIG_MODEL_22_2;Impr. Capital AA;DCA de Navire Amiral;Anti-Aerea migliorata per 
 BRIG_MODEL_22_3;Adv. Capital AA;DCA de Navire Amiral;Anti-Aerea avanzata per navi maggiori;AA de gran unidad Adv;Fortschrittliche GKS-Flak;Ulepsz. obr. p-lot. wlk. floty;;Óñîâ. ÏÂÎ êðóïí. êîðàáëåé ;;;X
 BRIG_MODEL_22_4;S-M. Capital AA;DCA de Navire Amiral;Anti-Aerea semi-moderna per navi maggiori;AA de gran unidad SM;Halbmoderne GKS-Flak;Zaawans. obr. p-lot. wlk. floty;;Ïîëóñîâ. ÏÂÎ êðóïí. êîðàáëåé ;;;X
 BRIG_MODEL_22_5;Mod. Capital AA;DCA de Navire Amiral;Anti-Aerea moderna per navi maggiori;AA de gran unidad Mod.;Moderne GKS-Flak;Powoj. obr. p-lot. wlk. floty;;Ñîâð. ÏÂÎ êðóïí. êîðàáëåé ;;;X
+BRIG_MODEL_22_6;Mod. Capital AA '56;;;;;;;;;;X
+BRIG_MODEL_22_7;Mod. Capital AA '66;;;;;;;;;;X
+BRIG_MODEL_22_8;Mod. Capital AA '76;;;;;;;;;;X
+BRIG_MODEL_22_9;Mod. Capital AA '86;;;;;;;;;;X
+BRIG_MODEL_22_10;Mod. Capital AA '96;;;;;;;;;;X
+BRIG_MODEL_22_11;Mod. Capital AA 2006;;;;;;;;;;X
+BRIG_MODEL_22_12;Mod. Capital AA 2016;;;;;;;;;;X
 BRIG_MODEL_23_0;Early Surfaceradar;Radar de Navire Amiral;Radar rudimentali per navi maggiori;Radar de gran unidad;Frühes GKS-Radar;Wspó³cz. obr. p-lot. wlk. floty;;Ðàíí. ÐËÑ;;;X
 BRIG_MODEL_23_1;Early Capital Searchradar;Radar de Navire Amiral;Radar per navi maggiori;Radar de gran unidad temprano;Einfaches GKS-Radar;Wczesny radar nawodny;;Áàç. ÐËÑ;;;X
 BRIG_MODEL_23_2;Basic Capital Radar;Radar de Navire Amiral;Radar di base per navi maggiori;Radar de gran unidad básico;Verbessertes GKS-Radar;Wczesny radar nawodny wlk. floty;;Óëó÷. ÐËÑ;;;X
