@@ -79,3 +79,44 @@ model = {
 	speed_cap			= 19
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
+
+# 4 - Airborne IFV (1980) 
+model = {
+	cost 				= 9
+	buildtime	 		= 170 # 140 for regular L ARM
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 5
+	softattack			= 11 
+	supplyconsumption 	= 0.9
+	fuelconsumption		= 2.1
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 19
+	equipment = { manpower = 2500 medium_armor = 94 }
+}
+
+# 4 - Airborne IFV (2000) 
+model = {
+	cost 				= 9
+	buildtime	 		= 170 # 140 for regular L ARM
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -3
+	toughness 			= -3
+	defaultorganisation = 3
+	softness			= -3
+	hardattack			= 6
+	softattack			= 12 
+	supplyconsumption 	= 1
+	fuelconsumption		= 2.2
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 19
+	equipment = { manpower = 2500 medium_armor = 94 }
+}
+
