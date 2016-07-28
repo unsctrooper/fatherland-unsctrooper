@@ -935,6 +935,10 @@ BRIG_MODEL_18_0;Early Searchradar;Radar simple;Radar rudimentale;Radar de búsqu
 BRIG_MODEL_18_1;Basic Radar;Radar;Radar;Radar;Radar;Podst. radar;;Îñí. ÐËÑ;;;X
 BRIG_MODEL_18_2;Impr. Radar;Radar amélioré;Radar migliorato;Radar;Verb. Radar;Ulepsz. radar;;Óëó÷. ÐËÑ;;;X
 BRIG_MODEL_18_3;Adv. Radar;Radar avancé;Radar avanzato;Radar Adv.;Fort. Radar;Zaawans. radar;;Óñîâ. ÐËÑ;;;X
+BRIG_MODEL_18_4;Mod. Radar;;;;;;;;;;X
+BRIG_MODEL_18_5;Postmodern Radar;;;;;;;;;;X
+BRIG_MODEL_18_6;Imp. Postmodern Radar;;;;;;;;;;X
+BRIG_MODEL_18_7;Adv. Postmodern Radar;;;;;;;;;;X
 BRIG_MODEL_19_0;Fire Control;Système de visée;Centrale di Tiro;Control de tiro;Feuerleitsystem;Kontrola ognia;;ÑÓÎ ìàëûõ êîðàáëåé;;;X
 BRIG_MODEL_19_1;Improved Fire Control;Système de visée amélioré;Centrale di Tiro migliorato;Control de tiro;Verb. Feuerleitsystem;Ulepsz. kontrola ognia;;Óëó÷. ÑÓÎ ìàëûõ êîðàáëåé;;;X
 BRIG_MODEL_19_2;Advanced Fire Control;Système de visée avancé;Centrale di Tiro avanzato;Control de tiro avanzado;Fort. Feuerleitsystem;Zaawans. kontrola ognia;;Óñîâ. ÑÓÎ ìàëûõ êîðàáëåé;;;X
@@ -955,6 +959,12 @@ BRIG_MODEL_23_1;Early Capital Searchradar;Radar de Navire Amiral;Radar per navi 
 BRIG_MODEL_23_2;Basic Capital Radar;Radar de Navire Amiral;Radar di base per navi maggiori;Radar de gran unidad básico;Verbessertes GKS-Radar;Wczesny radar nawodny wlk. floty;;Óëó÷. ÐËÑ;;;X
 BRIG_MODEL_23_3;Impr. Capital Radar;Radar de Navire Amiral;Radar migliorato per navi maggiori;Radar de gran unidad mejorado;Fortschrittliches GKS-Radar;Podst. radar wlk. floty;;Ñîâð. ÐËÑ;;;X
 BRIG_MODEL_23_4;Adv. Capital Radar;Radar de Navire Amiral;Radar avanzato per navi maggiori;Radar de gran unidad avanzado;Modernes GKS-Radar;Ulepsz. radar wlk. floty;;Óñîâ. ÐËÑ;;;X
+BRIG_MODEL_23_5;Modern Search Radar;;;;;;;;;;X
+BRIG_MODEL_23_6;Imp. Modern Search Radar;;;;;;;;;;X
+BRIG_MODEL_23_7;Adv. Modern Search Radar;;;;;;;;;;X
+BRIG_MODEL_23_8;Postmodern Search Radar;;;;;;;;;;X
+BRIG_MODEL_23_9;Imp. Postmodern Search Radar;;;;;;;;;;X
+BRIG_MODEL_23_10;Adv. Postmodern Search Radar;;;;;;;;;;X
 BRIG_MODEL_24_0;Capital Fire Control;Système de visée de Navire Amiral;Centrale di Tiro per navi maggiori;Control de tiro de gran unidad;GKS-Feuerleitsystem;Zaawans. radar wlk. floty;;ÑÓÎ 20-ãî êðóïí. êîðàáëåé;;;X
 BRIG_MODEL_24_1;Impr. Capital Fire Control;Système de visée de Navire Amiral;Centrale di Tiro migliorata per navi maggiori;Control de tiro de gran unidad mejorado;Verb. GKS-Feuerleitsystem;Kontrola ognia wlk. floty;;Óëó÷. ÑÓÎ 20-ãî êðóïí. êîðàáëåé;;;X
 BRIG_MODEL_24_2;Adv. Capital Fire Control;Système de visée de Navire Amiral;Centrale di Tiro avanzata per navi maggiori;Control de tiro de gran unidad avanzado;Fort. GKS Feuerleitsystem;Ulepsz. kontrola ognia wlk. floty;;Óñîâ. ÑÓÎ 20-ãî êðóïí. êîðàáëåé;;;X
