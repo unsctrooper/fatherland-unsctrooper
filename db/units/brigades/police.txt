@@ -41,3 +41,59 @@ model = {
 	upgrade_cost_factor = 0.6
 	equipment = { manpower = 2000 horses = 300 trucks = 66 armored_car = 20 }
 }
+
+# 3 - Police (1960)
+model = {
+	cost 				= 1.5
+	buildtime	 		= 110
+	manpower 			= 2
+	defaultorganisation = 0
+	suppression			= 9
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 2000 horses = 300 trucks = 66 armored_car = 20 }
+}
+
+# 4 - Police (1980)
+model = {
+	cost 				= 1.5
+	buildtime	 		= 110
+	manpower 			= 2
+	defaultorganisation = 0
+	suppression			= 11
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 2000 horses = 300 trucks = 66 armored_car = 20 }
+}
+
+# 5 - Police (2000)
+model = {
+	cost 				= 1.5
+	buildtime	 		= 110
+	manpower 			= 2
+	defaultorganisation = 0
+	suppression			= 13
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 2000 horses = 300 trucks = 66 armored_car = 20 }
+}
+
+# 6 - Police (2015)
+model = {
+	cost 				= 1.5
+	buildtime	 		= 110
+	manpower 			= 2
+	defaultorganisation = 0
+	suppression			= 15
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 2000 horses = 300 trucks = 66 armored_car = 20 }
+}
