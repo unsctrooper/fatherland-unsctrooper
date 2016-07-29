@@ -274,6 +274,8 @@ technology =
       command = { type = scrap_model which = militia value = 8 }
 	  command = { type = new_model which = garrison value = 9 }
       command = { type = scrap_model which = garrison value = 8 }
+	 command = { type = new_model which = police value = 3 }
+      command = { type = scrap_model which = police value = 2 }
     }
   }
   #1967 INFANTRY
@@ -378,6 +380,8 @@ technology =
       command = { type = scrap_model which = militia value = 10 }
 	  command = { type = new_model which = garrison value = 11 }
       command = { type = scrap_model which = garrison value = 10 }
+	 command = { type = new_model which = police value = 4 }
+      command = { type = scrap_model which = police value = 3 }
 	  }
 	}
 	#1989 INFANTRY
@@ -402,6 +406,147 @@ technology =
   effects = {
   command = { type = new_model which = infantry value = 22 }
       command = { type = scrap_model which = infantry value = 21 }
+	  }
+	}
+	
+	#1995 INFANTRY
+  application = {
+  id = 132101
+  name = TECH_APP_INFANTRY_132101_NAME
+  
+  position = { x = 5 y = 271 }
+  picture = "13200"
+  year = 1995
+  #Under-barrel Grenade Launcher
+  component = { id = 132006 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
+  #40mm Grenade
+  component = { id = 132007 name = TECH_CMP_INFANTRY_331_2_NAME type = munitions difficulty = 8 }
+  #All-purpose Lightweight Individual Carrying Equipment
+  component = { id = 132008 name = TECH_CMP_INFANTRY_331_3_NAME type = general_equipment difficulty = 8 }
+  #Improved Modern Signal System
+  component = { id = 132009 name = TECH_CMP_INFANTRY_331_4_NAME type = electronics difficulty = 8 }
+  #Improved Modern Infantry Training
+  component = { id = 132010 name = TECH_CMP_INFANTRY_331_5_NAME type = training difficulty = 8 }
+  required = { 13200 }
+  effects = {
+  command = { type = new_model which = infantry value = 23 }
+      command = { type = scrap_model which = infantry value = 22 }
+	  command = { type = new_model which = militia value = 12 }
+      command = { type = scrap_model which = militia value = 11 }
+	  command = { type = new_model which = garrison value = 12 }
+      command = { type = scrap_model which = garrison value = 11 }
+	  }
+	}
+
+	#2000 INFANTRY
+  application = {
+  id = 132201
+  name = TECH_APP_INFANTRY_132201_NAME
+  
+  position = { x = 5 y = 289 }
+  picture = "13200"
+  year = 2000
+  #Under-barrel Grenade Launcher
+  component = { id = 132011 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
+  #40mm Grenade
+  component = { id = 132012 name = TECH_CMP_INFANTRY_331_2_NAME type = munitions difficulty = 8 }
+  #All-purpose Lightweight Individual Carrying Equipment
+  component = { id = 132013 name = TECH_CMP_INFANTRY_331_3_NAME type = general_equipment difficulty = 8 }
+  #Improved Modern Signal System
+  component = { id = 132014 name = TECH_CMP_INFANTRY_331_4_NAME type = electronics difficulty = 8 }
+  #Improved Modern Infantry Training
+  component = { id = 132015 name = TECH_CMP_INFANTRY_331_5_NAME type = training difficulty = 8 }
+  required = { 132101 }
+  effects = {
+  command = { type = new_model which = infantry value = 24 }
+      command = { type = scrap_model which = infantry value = 23 }
+	command = { type = new_model which = police value = 5 }
+	command = { type = scrap_model which = police value = 4 }
+	  }
+	}
+
+	#2005 INFANTRY
+  application = {
+  id = 132301
+  name = TECH_APP_INFANTRY_132301_NAME
+  
+  position = { x = 5 y = 307 }
+  picture = "13200"
+  year = 2000
+  #Under-barrel Grenade Launcher
+  component = { id = 132016 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
+  #40mm Grenade
+  component = { id = 132017 name = TECH_CMP_INFANTRY_331_2_NAME type = munitions difficulty = 8 }
+  #All-purpose Lightweight Individual Carrying Equipment
+  component = { id = 132018 name = TECH_CMP_INFANTRY_331_3_NAME type = general_equipment difficulty = 8 }
+  #Improved Modern Signal System
+  component = { id = 132019 name = TECH_CMP_INFANTRY_331_4_NAME type = electronics difficulty = 8 }
+  #Improved Modern Infantry Training
+  component = { id = 132020 name = TECH_CMP_INFANTRY_331_5_NAME type = training difficulty = 8 }
+  required = { 132201 }
+  effects = {
+  command = { type = new_model which = infantry value = 25 }
+      command = { type = scrap_model which = infantry value = 24 }
+	  command = { type = new_model which = militia value = 13 }
+      command = { type = scrap_model which = militia value = 12 }
+		  command = { type = new_model which = garrison value = 13 }
+      command = { type = scrap_model which = garrison value = 12 }
+	  }
+	}
+
+	#2010 INFANTRY
+  application = {
+  id = 132401
+  name = TECH_APP_INFANTRY_132401_NAME
+  
+  position = { x = 5 y = 325 }
+  picture = "13200"
+  year = 2000
+  #Under-barrel Grenade Launcher
+  component = { id = 132021 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
+  #40mm Grenade
+  component = { id = 132022 name = TECH_CMP_INFANTRY_331_2_NAME type = munitions difficulty = 8 }
+  #All-purpose Lightweight Individual Carrying Equipment
+  component = { id = 132023 name = TECH_CMP_INFANTRY_331_3_NAME type = general_equipment difficulty = 8 }
+  #Improved Modern Signal System
+  component = { id = 132024 name = TECH_CMP_INFANTRY_331_4_NAME type = electronics difficulty = 8 }
+  #Improved Modern Infantry Training
+  component = { id = 132025 name = TECH_CMP_INFANTRY_331_5_NAME type = training difficulty = 8 }
+  required = { 132301 }
+  effects = {
+  command = { type = new_model which = infantry value = 26 }
+      command = { type = scrap_model which = infantry value = 25 }
+	  }
+	}
+
+	#2015 INFANTRY
+  application = {
+  id = 132501
+  name = TECH_APP_INFANTRY_132501_NAME
+  
+  position = { x = 5 y = 343 }
+  picture = "13200"
+  year = 2000
+  #Under-barrel Grenade Launcher
+  component = { id = 132026 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
+  #40mm Grenade
+  component = { id = 132027 name = TECH_CMP_INFANTRY_331_2_NAME type = munitions difficulty = 8 }
+  #All-purpose Lightweight Individual Carrying Equipment
+  component = { id = 132028 name = TECH_CMP_INFANTRY_331_3_NAME type = general_equipment difficulty = 8 }
+  #Improved Modern Signal System
+  component = { id = 132029 name = TECH_CMP_INFANTRY_331_4_NAME type = electronics difficulty = 8 }
+  #Improved Modern Infantry Training
+  component = { id = 132030 name = TECH_CMP_INFANTRY_331_5_NAME type = training difficulty = 8 }
+  required = { 132401 }
+  effects = {
+  command = { type = new_model which = infantry value = 27 }
+      command = { type = scrap_model which = infantry value = 26 }
+	command = { type = new_model which = police value = 6 }
+	command = { type = scrap_model which = police value = 5 }
+	  command = { type = new_model which = militia value = 14 }
+      command = { type = scrap_model which = militia value = 13 }
+	  command = { type = new_model which = garrison value = 14 }
+      command = { type = scrap_model which = garrison value = 13 }
 	  }
 	}
 

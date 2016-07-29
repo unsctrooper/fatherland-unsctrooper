@@ -3812,4 +3812,139 @@ component = { id = 51890 name = TECH_CMP_INDUSTRY_125_5_NAME type = management d
     }
   }  
   
+    label =
+  { tag      = TECH_CAT_NUCLEAR
+    position = { x = 576 y = 407 }
+  }
+  
+    # Experimental Reactor
+  application =
+  { id        = 5520
+    name      = TECH_APP_INDUSTRY_52_NAME
+
+    position  = { x = 576 y = 425 }
+	picture   = "5520"
+    year      = 1941
+    # Nuclear Reactor Design
+    component = { id = 5521 name = TECH_CMP_INDUSTRY_52_1_NAME type = nuclear_engineering difficulty = 10 }
+    # Reflector Material Tests
+    component = { id = 5522 name = TECH_CMP_INDUSTRY_52_2_NAME type = nuclear_engineering difficulty = 10 }
+    # Moderator Material Tests
+    component = { id = 5523 name = TECH_CMP_INDUSTRY_52_3_NAME type = nuclear_engineering difficulty = 10 }
+    # Heavy Water Plant
+    component = { id = 5524 name = TECH_CMP_INDUSTRY_52_4_NAME type = nuclear_engineering difficulty = 10 }
+    # Reactor Prototype Tests
+    component = { id = 5525 name = TECH_CMP_INDUSTRY_52_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 5510 }
+    effects =
+    { command = { type = max_reactor_size value = 3 }
+	command = { type = allow_building which = nuclear_reactor }
+    }
+  }
+  # Nuclear Reactor Operability
+  application =
+  { id        = 5530
+    name      = TECH_APP_INDUSTRY_53_NAME
+
+    position  = { x = 576 y = 443 }
+	picture   = "5530"
+    year      = 1943
+    # Core Structure
+    component = { id = 5531 name = TECH_CMP_INDUSTRY_53_1_NAME type = nuclear_engineering difficulty = 10 }
+    # Reflector
+    component = { id = 5532 name = TECH_CMP_INDUSTRY_53_2_NAME type = nuclear_engineering difficulty = 10 }
+    # Moderator
+    component = { id = 5533 name = TECH_CMP_INDUSTRY_53_3_NAME type = nuclear_engineering difficulty = 10 }
+    # Applied Rare Minerals
+    component = { id = 5534 name = TECH_CMP_INDUSTRY_53_4_NAME type = nuclear_engineering difficulty = 10 }
+    # Operationability Tests
+    component = { id = 5535 name = TECH_CMP_INDUSTRY_53_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 5520 }
+    effects =
+    { command = { type = max_reactor_size value = 4 }
+    }
+  }
+  # Nuclear Power Production
+  application =
+  { id        = 5540
+    name      = TECH_APP_INDUSTRY_54_NAME
+
+    position  = { x = 576 y = 461 }
+	picture   = "5540"
+    year      = 1944
+    # Nuclear Power Plant Design
+    component = { id = 5541 name = TECH_CMP_INDUSTRY_54_1_NAME type = nuclear_engineering difficulty = 10 }
+    # Nuclear Propulsion Design
+    component = { id = 5542 name = TECH_CMP_INDUSTRY_54_2_NAME type = nuclear_engineering difficulty = 10 }
+    # Emergency Shut-down System
+    component = { id = 5543 name = TECH_CMP_INDUSTRY_54_3_NAME type = nuclear_engineering difficulty = 10 }
+    # Nuclear Waste Disposal
+    component = { id = 5544 name = TECH_CMP_INDUSTRY_54_4_NAME type = nuclear_engineering difficulty = 10 }
+    # Power Station Prototype Tests
+    component = { id = 5545 name = TECH_CMP_INDUSTRY_54_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 5530 }
+    effects =
+    { command = { type = max_reactor_size value = 5 }
+      #command = { type = add_prov_resource which = -4 value = 50 where = energy }
+      command = { type = info_may_cause which = 7170 }
+      command = { type = info_may_cause which = 7200 }
+      command = { type = info_may_cause which = 7210 }
+      command = { type = info_may_cause which = 7220 }
+      command = { type = info_may_cause which = 7230 }
+    }
+  }
+
+    # Basic Civilian Power Production
+  application =
+  { id        = 55670
+    name      = TECH_APP_INDUSTRY_55670_NAME
+    desc      = TECH_APP_INDUSTRY_55670_DESC
+    position  = { x = 576 y = 479 }
+    year      = 1950
+    component = { id = 55671 name = TECH_CMP_INDUSTRY_67_1_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55672 name = TECH_CMP_INDUSTRY_67_2_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55673 name = TECH_CMP_INDUSTRY_67_3_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55674 name = TECH_CMP_INDUSTRY_67_4_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55675 name = TECH_CMP_INDUSTRY_67_5_NAME type = management difficulty = 8 }
+    required  = { 5540 }
+    effects =
+    { command = { type = add_prov_resource which = -4 value = 75 where = energy }
+    }
+  }
+  
+    # Advanced Civilian Power Production
+  application =
+  { id        = 55680
+    name      = TECH_APP_INDUSTRY_55680_NAME
+    desc      = TECH_APP_INDUSTRY_55680_DESC
+    position  = { x = 460 y = 461 }
+    year      = 1960
+    component = { id = 55681 name = TECH_CMP_INDUSTRY_68_1_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55682 name = TECH_CMP_INDUSTRY_68_2_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55683 name = TECH_CMP_INDUSTRY_68_3_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55684 name = TECH_CMP_INDUSTRY_68_4_NAME type = mechanics difficulty = 8 }
+    component = { id = 55685 name = TECH_CMP_INDUSTRY_68_5_NAME type = management difficulty = 8 }
+    required  = { 55670 }
+    effects =
+    { command = { type = add_prov_resource which = -4 value = 75 where = energy }
+    }
+  }
+  # Modern Civilian Power Production
+  application =
+  { id        = 55690
+    name      = TECH_APP_INDUSTRY_55690_NAME
+    desc      = TECH_APP_INDUSTRY_55690_DESC
+    position  = { x = 460 y = 479 }
+    year      = 1980
+    component = { id = 55691 name = TECH_CMP_INDUSTRY_69_1_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55692 name = TECH_CMP_INDUSTRY_69_2_NAME type = nuclear_engineering difficulty = 8 }
+    component = { id = 55693 name = TECH_CMP_INDUSTRY_69_3_NAME type = nuclear_engineering difficulty = 9 }
+    component = { id = 55694 name = TECH_CMP_INDUSTRY_69_4_NAME type = management difficulty = 10 }
+    component = { id = 55695 name = TECH_CMP_INDUSTRY_69_5_NAME type = management difficulty = 10 double_time = yes }
+    required  = { 55680 }
+    effects =
+    { command = { type = add_prov_resource which = -4 value = 100 where = energy }
+    }
+  }
+  
 }

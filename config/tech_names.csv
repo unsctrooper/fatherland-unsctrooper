@@ -8217,5 +8217,21 @@ TECH_APP_INDUSTRY_5480_NAME;Advanced Civilian Power Production;;;;;;;;;x
 SHORT_TECH_APP_INDUSTRY_5480_NAME;Adv. Civ. Power Prod.;;;;;;;;;x
 TECH_APP_INDUSTRY_5490_NAME;Modern Civilian Power Production;;;;;;;;;x
 SHORT_TECH_APP_INDUSTRY_5490_NAME;Mod. Civ. Power Prod.;;;;;;;;;x
+TECH_APP_INDUSTRY_55670_NAME;Basic Civilian Power Production;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_55670_NAME;Bas. Civ. Production;;;;;;;;;x
+TECH_APP_INDUSTRY_55680_NAME;Advanced Civilian Power Production;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_55680_NAME;Adv. Civ. Production;;;;;;;;;x
+TECH_APP_INDUSTRY_55690_NAME;Modern Civilian Power Production;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_55690_NAME;Mod. Civ. Production;;;;;;;;;x
+TECH_APP_INFANTRY_132101_NAME;1995 Infantry;;;;;;;;;x
+SHORT_TECH_APP_INFANTRY_132101_NAME;1995 Infantry;;;;;;;;;x
+TECH_APP_INFANTRY_132201_NAME;2000 Infantry;;;;;;;;;x
+SHORT_TECH_APP_INFANTRY_132201_NAME;2000 Infantry;;;;;;;;;x
+TECH_APP_INFANTRY_132301_NAME;2005 Infantry;;;;;;;;;x
+SHORT_TECH_APP_INFANTRY_132301_NAME;2005 Infantry;;;;;;;;;x
+TECH_APP_INFANTRY_132401_NAME;2010 Infantry;;;;;;;;;x
+SHORT_TECH_APP_INFANTRY_132401_NAME;2010 Infantry;;;;;;;;;x
+TECH_APP_INFANTRY_132501_NAME;2015 Infantry;;;;;;;;;x
+SHORT_TECH_APP_INFANTRY_132501_NAME;2015 Infantry;;;;;;;;;x
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
