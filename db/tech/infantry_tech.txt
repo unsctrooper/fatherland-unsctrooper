@@ -1466,7 +1466,7 @@ technology =
 
     position  = { x = 564 y = 199 }
 	picture   = "13380"
-    year      = 2005
+    year      = 2015
     # Assault Rifle
     component = { id = 77121 name = TECH_CMP_INFANTRY_349_1_NAME type = general_equipment difficulty = 6 }
     # Armoured Halftracks
@@ -1486,8 +1486,6 @@ technology =
     }
   }
 
-
-  
 ###################################################################
 #################### MOTORIZED DIVISIONS
 ###################################################################
@@ -3118,223 +3116,12 @@ technology =
 #################### SUPPLY
 ###################################################################
 
-  # ARMY LOGISTICS
-  application =
-  { id        = 1910
-    name      = TECH_APP_INFANTRY_91_NAME
-
-    position  = { x = 456 y = 309 }
-	picture   = "DH1910"
-    year      = 1911
-    # General Supply System
-    component = { id = 1911 name = TECH_CMP_INFANTRY_91_1_NAME type = centralized_execution difficulty = 5 }
-    # Early Requisition Order System
-    component = { id = 1912 name = TECH_CMP_INFANTRY_91_2_NAME type = management difficulty = 3 }
-    # Early Land Convoy System
-    component = { id = 1913 name = TECH_CMP_INFANTRY_91_3_NAME type = management difficulty = 3 }
-    # Early Stock & Storage
-    component = { id = 1914 name = TECH_CMP_INFANTRY_91_4_NAME type = general_equipment difficulty = 3 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1915 name = TECH_CMP_INFANTRY_91_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { }
-    effects =
-    { command = { type = tc_mod value = 10 }
-      command = { type = supply_dist_mod value = 10 }
-    }
-  }
-  # MOBILIZATION
-  application =
-  { id        = 1920
-    name      = TECH_APP_INFANTRY_92_NAME
-
-    position  = { x = 576 y = 309 }
-	picture   = "DH1920"
-    year      = 1914
-    # General Drafts
-    component = { id = 1921 name = TECH_CMP_INFANTRY_92_1_NAME type = centralized_execution difficulty = 6 }
-    # Mass Equipment Production
-    component = { id = 1922 name = TECH_CMP_INFANTRY_92_2_NAME type = general_equipment difficulty = 4 }
-    # Mass Supply Production
-    component = { id = 1923 name = TECH_CMP_INFANTRY_92_3_NAME type = industrial_engineering difficulty = 4 }
-    # Mass Training
-    component = { id = 1924 name = TECH_CMP_INFANTRY_92_4_NAME type = training difficulty = 4 }
-    # Mass Mobilization
-    component = { id = 1925 name = TECH_CMP_INFANTRY_92_5_NAME type = management difficulty = 9 }
-    required  = { 1910 }
-    effects =
-    { command = { type = tc_mod value = 10 }
-      command = { type = relative_manpower value = 10 }
-      command = { type = industrial_modifier which = supplies value = 10 }
-      command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
-      command = { type = build_time which = militia when = on_upgrade where = relative value = -10 }
-      command = { type = enable_task which = strat_redeploy }
-    }
-  }
-  # BASIC SUPPLY
-  application =
-  { id        = 1930
-    name      = TECH_APP_INFANTRY_93_NAME
-
-    position  = { x = 456 y = 327 }
-	picture   = "DH1930"
-    year      = 1914
-    # Basic Supply System
-    component = { id = 1931 name = TECH_CMP_INFANTRY_93_1_NAME type = centralized_execution difficulty = 5 }
-    # Basic Requisition Order System
-    component = { id = 1932 name = TECH_CMP_INFANTRY_93_2_NAME type = management difficulty = 5 }
-    # Basic Land Convoy System
-    component = { id = 1933 name = TECH_CMP_INFANTRY_93_3_NAME type = management difficulty = 5 }
-    # Basic Stock & Storage
-    component = { id = 1934 name = TECH_CMP_INFANTRY_93_4_NAME type = general_equipment difficulty = 5 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1935 name = TECH_CMP_INFANTRY_93_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { 1910 }
-    effects =
-    { command = { type = tc_mod value = 5 }
-      command = { type = tc_occupied_mod value = 10 }
-      command = { type = attrition_mod value = 5 }
-      command = { type = supply_dist_mod value = 5 }
-      command = { type = task_efficiency which = strat_redeploy value = 0.1 }
-      command = { type = repair_mod value = 5 }
-    }
-  }
-  # GENERAL LOGISTICS
-  application =
-  { id        = 1940
-    name      = TECH_APP_INFANTRY_94_NAME
-
-    position  = { x = 576 y = 327 }
-	picture   = "DH1940"
-    year      = 1916
-    # Great War Supply System
-    component = { id = 1941 name = TECH_CMP_INFANTRY_94_1_NAME type = centralized_execution difficulty = 5 }
-    # Great War Requisition Order System
-    component = { id = 1942 name = TECH_CMP_INFANTRY_94_2_NAME type = management difficulty = 5 }
-    # Great War Land Convoy System
-    component = { id = 1943 name = TECH_CMP_INFANTRY_94_3_NAME type = management difficulty = 5 }
-    # Great War Stock & Storage
-    component = { id = 1944 name = TECH_CMP_INFANTRY_94_4_NAME type = general_equipment difficulty = 5 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1945 name = TECH_CMP_INFANTRY_94_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { 1930 }
-    effects =
-    { command = { type = tc_mod value = 10 }
-      command = { type = supply_dist_mod value = 10 }
-      command = { type = supply_consumption which = land value = -0.20 }
-    }
-  }
-  # FRONTLINE LOGISTICS
-  application =
-  { id        = 1950
-    name      = TECH_APP_INFANTRY_95_NAME
-
-    position  = { x = 456 y = 345 }
-	picture   = "DH1950"
-    year      = 1916
-    # Great War Supply System
-    component = { id = 1951 name = TECH_CMP_INFANTRY_95_1_NAME type = centralized_execution difficulty = 5 }
-    # Frontline Supply
-    component = { id = 1952 name = TECH_CMP_INFANTRY_95_2_NAME type = management difficulty = 5 }
-    # Frontline Reinforcing
-    component = { id = 1953 name = TECH_CMP_INFANTRY_95_3_NAME type = management difficulty = 5 }
-    # Great War Stock & Storage
-    component = { id = 1954 name = TECH_CMP_INFANTRY_95_4_NAME type = general_equipment difficulty = 5 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1955 name = TECH_CMP_INFANTRY_95_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { 1930 }
-    effects =
-    { command = { type = attrition_mod value = 5 }
-      command = { type = task_efficiency which = strat_redeploy value = 0.05 }
-      command = { type = repair_mod value = 20 }
-    }
-  }
-  # REINFORCEMENT LOGISTICS
-  application =
-  { id        = 1960
-    name      = TECH_APP_INFANTRY_96_NAME
-
-    position  = { x = 576 y = 345 }
-	picture   = "10110"
-    year      = 1918
-    # Late Great War Supply System
-    component = { id = 1961 name = TECH_CMP_INFANTRY_96_1_NAME type = centralized_execution difficulty = 5 }
-    # Late Great War Frontline Supply
-    component = { id = 1962 name = TECH_CMP_INFANTRY_96_2_NAME type = management difficulty = 5 }
-    # Late Great War Land Convoy System
-    component = { id = 1963 name = TECH_CMP_INFANTRY_96_3_NAME type = management difficulty = 5 }
-    # Late Great War Stock & Storage
-    component = { id = 1964 name = TECH_CMP_INFANTRY_96_4_NAME type = general_equipment difficulty = 5 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1965 name = TECH_CMP_INFANTRY_96_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { 1940 1950 }
-    effects =
-    { command = { type = tc_mod value = 5 }
-      command = { type = tc_occupied_mod value = 10 }
-      command = { type = attrition_mod value = 5 }
-      command = { type = supply_dist_mod value = 5 }
-      command = { type = task_efficiency which = strat_redeploy value = 0.05 }
-    }
-  }
-  # INTERBELLUM SUPPLY 1924
-  application =
-  { id        = 1970
-    name      = TECH_APP_INFANTRY_97_NAME
-
-    position  = { x = 456 y = 363 }
-	picture   = "DH1970"
-    year      = 1924
-    # Early Interwar Supply System
-    component = { id = 1971 name = TECH_CMP_INFANTRY_97_1_NAME type = centralized_execution difficulty = 5 }
-    # Early Interwar Frontline Supply
-    component = { id = 1972 name = TECH_CMP_INFANTRY_97_2_NAME type = management difficulty = 5 }
-    # Early Interwar Land Convoy System
-    component = { id = 1973 name = TECH_CMP_INFANTRY_97_3_NAME type = management difficulty = 5 }
-    # Early Interwar Stock & Storage
-    component = { id = 1974 name = TECH_CMP_INFANTRY_97_4_NAME type = general_equipment difficulty = 5 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1975 name = TECH_CMP_INFANTRY_97_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { 1960 }
-    effects =
-    { command = { type = tc_mod value = 5 }
-      command = { type = tc_occupied_mod value = 10 }
-      command = { type = attrition_mod value = 5 }
-      command = { type = supply_dist_mod value = 5 }
-      command = { type = task_efficiency which = strat_redeploy value = 0.025 }
-    }
-  }
-  # INTERBELLUM SUPPLY 1930
-  application =
-  { id        = 1980
-    name      = TECH_APP_INFANTRY_98_NAME
-
-    position  = { x = 576 y = 363 }
-	picture   = "DH1980"
-    year      = 1930
-    # Late Interwar Supply System
-    component = { id = 1981 name = TECH_CMP_INFANTRY_98_1_NAME type = centralized_execution difficulty = 5 }
-    # Late Interwar Frontline Supply
-    component = { id = 1982 name = TECH_CMP_INFANTRY_98_2_NAME type = management difficulty = 5 }
-    # Late Interwar Land Convoy System
-    component = { id = 1983 name = TECH_CMP_INFANTRY_98_3_NAME type = management difficulty = 5 }
-    # Late Interwar Stock & Storage
-    component = { id = 1984 name = TECH_CMP_INFANTRY_98_4_NAME type = general_equipment difficulty = 5 }
-    # Strategic Refuel, Resupply, and Reinforcing
-    component = { id = 1985 name = TECH_CMP_INFANTRY_98_5_NAME type = large_unit_tactics difficulty = 5 }
-    required  = { 1970 }
-    effects =
-    { command = { type = tc_mod value = 5 }
-      command = { type = tc_occupied_mod value = 10 }
-      command = { type = attrition_mod value = 5 }
-      command = { type = supply_dist_mod value = 5 }
-      command = { type = task_efficiency which = strat_redeploy value = 0.025 }
-    }
-  }
   # REAR AREA SUPPLY DUMPS
   application =
   { id        = 1990
     name      = TECH_APP_INFANTRY_99_NAME
 
-    position  = { x = 456 y = 381 }
+    position  = { x = 456 y = 313 }
 	picture   = "1310"
     year      = 1936
     # Static Area Supply System
@@ -3347,7 +3134,7 @@ technology =
     component = { id = 1994 name = TECH_CMP_INFANTRY_99_4_NAME type = general_equipment difficulty = 6 }
     # Strategic Refuel, Resupply, and Reinforcing
     component = { id = 1995 name = TECH_CMP_INFANTRY_99_5_NAME type = large_unit_tactics difficulty = 6 }
-    required  = { 1980 }
+    required  = { }
     effects =
     { command = { type = tc_mod value = 10 }
       command = { type = tc_occupied_mod value = 20 }
@@ -3355,6 +3142,7 @@ technology =
       command = { type = supply_dist_mod value = 10 }
       command = { type = task_efficiency which = strat_redeploy value = 0.05 }
       command = { type = supply_consumption value = -0.02 }
+	  command = { type = enable_task which = strat_redeploy }
     }
   }
   # DEEP LOGISTICS ORGANIZATION
@@ -3362,7 +3150,7 @@ technology =
   { id        = 199100
     name      = TECH_APP_INFANTRY_100_NAME
 
-    position  = { x = 456 y = 399 }
+    position  = { x = 456 y = 331 }
 	picture   = "1320"
     year      = 1940
     # Dynamic Priority Supply System
@@ -3390,7 +3178,7 @@ technology =
   { id        = 199110
     name      = TECH_APP_INFANTRY_101_NAME
 
-    position  = { x = 456 y = 417 }
+    position  = { x = 456 y = 349 }
 	picture   = "1330"
     year      = 1944
     # Low Echelon Supply System
@@ -3418,7 +3206,7 @@ technology =
   { id        = 199120
     name      = TECH_APP_INFANTRY_102_NAME
 
-    position  = { x = 456 y = 435 }
+    position  = { x = 456 y = 367 }
 	picture   = "10090"
     year      = 1948
     # Advanced Low Echelon Supply System
@@ -3448,7 +3236,7 @@ technology =
 
 	picture   = "1340"
     year      = 1938
-    position  = { x = 576 y = 381 }
+    position  = { x = 576 y = 313 }
     # Bulky Tools
     component = { id = 199131 name = TECH_CMP_INFANTRY_103_1_NAME type = mechanics difficulty = 6 }
     # Standardized Repair Capacity
@@ -3470,7 +3258,7 @@ technology =
   { id        = 199140
     name      = TECH_APP_INFANTRY_104_NAME
 
-    position  = { x = 576 y = 399 }
+    position  = { x = 576 y = 331 }
 	picture   = "1350"
     year      = 1942
     # Movable Tools
@@ -3496,7 +3284,7 @@ technology =
 
 	picture   = "1360"
     year      = 1946
-    position  = { x = 576 y = 417 }
+    position  = { x = 576 y = 349 }
     # Flexible Tools
     component = { id = 199151 name = TECH_CMP_INFANTRY_105_1_NAME type = mechanics difficulty = 8 }
     # Multitask Repair Capacity
@@ -3521,7 +3309,7 @@ technology =
 
 	picture   = "1370"
     year = 1950
-    position = { x = 576 y = 435 }
+    position = { x = 576 y = 367 }
     # Electronics Repair
     component = { id = 199161 name = TECH_CMP_INFANTRY_106_1_NAME type = electronics difficulty = 9 }
     # Advanced Repair Capacity
@@ -3543,7 +3331,7 @@ technology =
   { id        = 199170
     name      = TECH_APP_INFANTRY_107_NAME
 
-    position  = { x = 456 y = 453 }
+    position  = { x = 456 y = 385 }
 	picture   = "DH199170"
     year      = 1955
     # Low Echelon Supply System
@@ -3573,7 +3361,7 @@ technology =
 
 	picture   = "DH199180"
     year = 1955
-    position = { x = 576 y = 453 }
+    position = { x = 576 y = 385 }
     # Semimodern Electronics Repair
     component = { id = 199181 name = TECH_CMP_INFANTRY_108_1_NAME type = electronics double_time = yes difficulty = 5 }
     # Semimodern Repair Capacity
@@ -3597,7 +3385,7 @@ technology =
 
 	picture   = "199190"
     year = 1965
-    position = { x = 576 y = 471 }
+    position = { x = 576 y = 403 }
     # Semimodern Electronics Repair
     component = { id = 199191 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
     # Semimodern Repair Capacity
@@ -3619,7 +3407,7 @@ technology =
   { id        = 199200
     name      = TECH_APP_INFANTRY_351_NAME
 
-    position  = { x = 456 y = 471 }
+    position  = { x = 456 y = 403 }
 	picture   = "199200"
     year      = 1965
     # Low Echelon Supply System
@@ -3643,4 +3431,246 @@ technology =
     }
   }
   
+      # Modern Repair
+  application =
+  { id = 199190
+    name = TECH_APP_INFANTRY_350_NAME
+
+	picture   = "199190"
+    year = 1965
+    position = { x = 576 y = 403 }
+    # Semimodern Electronics Repair
+    component = { id = 199191 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
+    # Semimodern Repair Capacity
+    component = { id = 199192 name = TECH_CMP_INFANTRY_350_2_NAME type = mechanics double_time = yes difficulty = 6 }
+    # Semimodern Vehicle Repair
+    component = { id = 199193 name = TECH_CMP_INFANTRY_350_3_NAME type = vehicle_engineering double_time = yes difficulty = 6 }
+    # Semimodern Gun Repair
+    component = { id = 199194 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
+    # Basic Computing Machine Support
+    component = { id = 199195 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
+    required = { 199170 199180 }
+    effects =
+    { command = { type = repair_mod value = 60 }
+      command = { type = building_prod_mod which = air_base value = 30 }
+    }
+  }
+
+
+    # Continental Power Projection
+  application =
+  { id        = 77200
+    name      = TECH_APP_INFANTRY_77200_NAME
+
+    position  = { x = 456 y = 421 }
+	picture   = "199200"
+    year      = 1980
+    # Low Echelon Supply System
+    component = { id = 77201 name = TECH_CMP_INFANTRY_351_1_NAME type = decentralized_execution double_time = yes difficulty = 6 }
+    # Dynamic Supply Reports
+    component = { id = 77202 name = TECH_CMP_INFANTRY_351_2_NAME type = management double_time = yes difficulty = 6 }
+    # Circular Transport System
+    component = { id = 77203 name = TECH_CMP_INFANTRY_351_3_NAME type = management double_time = yes difficulty = 6 }
+    # Advanced Stock and Storage
+    component = { id = 77204 name = TECH_CMP_INFANTRY_351_4_NAME type = general_equipment double_time = yes difficulty = 6 }
+    # Tactical refuel and replenishment
+    component = { id = 77205 name = TECH_CMP_INFANTRY_351_5_NAME type = small_unit_tactics double_time = yes difficulty = 6 }
+    required  = { 199200 199190 }
+    effects =
+    { command = { type = tc_mod value = 30 }
+      command = { type = tc_occupied_mod value = 60 }
+      command = { type = attrition_mod value = 45 }
+      command = { type = supply_dist_mod value = 30 }
+      command = { type = task_efficiency which = strat_redeploy value = 0.05 }
+      command = { type = supply_consumption value = -0.02 }
+    }
+  }
+
+   # Post-Modern Repair
+  application =
+  { id = 77210
+    name = TECH_APP_INFANTRY_77210_NAME
+
+	picture   = "199190"
+    year = 1980
+    position = { x = 576 y = 421 }
+    # Semimodern Electronics Repair
+    component = { id = 77211 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
+    # Semimodern Repair Capacity
+    component = { id = 77212 name = TECH_CMP_INFANTRY_350_2_NAME type = mechanics double_time = yes difficulty = 6 }
+    # Semimodern Vehicle Repair
+    component = { id = 77213 name = TECH_CMP_INFANTRY_350_3_NAME type = vehicle_engineering double_time = yes difficulty = 6 }
+    # Semimodern Gun Repair
+    component = { id = 77214 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
+    # Basic Computing Machine Support
+    component = { id = 77215 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
+    required = { 77200 199190 }
+    effects =
+    { command = { type = repair_mod value = 60 }
+      command = { type = building_prod_mod which = air_base value = 30 }
+    }
+  }
+
+      # Global Power Projection
+  application =
+  { id        = 77220
+    name      = TECH_APP_INFANTRY_77220_NAME
+
+    position  = { x = 456 y = 439 }
+	picture   = "199200"
+    year      = 1990
+    # Low Echelon Supply System
+    component = { id = 77221 name = TECH_CMP_INFANTRY_351_1_NAME type = decentralized_execution double_time = yes difficulty = 6 }
+    # Dynamic Supply Reports
+    component = { id = 77222 name = TECH_CMP_INFANTRY_351_2_NAME type = management double_time = yes difficulty = 6 }
+    # Circular Transport System
+    component = { id = 77223 name = TECH_CMP_INFANTRY_351_3_NAME type = management double_time = yes difficulty = 6 }
+    # Advanced Stock and Storage
+    component = { id = 77224 name = TECH_CMP_INFANTRY_351_4_NAME type = general_equipment double_time = yes difficulty = 6 }
+    # Tactical refuel and replenishment
+    component = { id = 77225 name = TECH_CMP_INFANTRY_351_5_NAME type = small_unit_tactics double_time = yes difficulty = 6 }
+    required  = { 77200 77210 }
+    effects =
+    { command = { type = tc_mod value = 30 }
+      command = { type = tc_occupied_mod value = 60 }
+      command = { type = attrition_mod value = 45 }
+      command = { type = supply_dist_mod value = 30 }
+      command = { type = task_efficiency which = strat_redeploy value = 0.05 }
+      command = { type = supply_consumption value = -0.02 }
+    }
+  }
+
+     # Post-CW Repair
+  application =
+  { id = 77230
+    name = TECH_APP_INFANTRY_77230_NAME
+
+	picture   = "199190"
+    year = 1990
+    position = { x = 576 y = 439 }
+    # Semimodern Electronics Repair
+    component = { id = 77231 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
+    # Semimodern Repair Capacity
+    component = { id = 77232 name = TECH_CMP_INFANTRY_350_2_NAME type = mechanics double_time = yes difficulty = 6 }
+    # Semimodern Vehicle Repair
+    component = { id = 77233 name = TECH_CMP_INFANTRY_350_3_NAME type = vehicle_engineering double_time = yes difficulty = 6 }
+    # Semimodern Gun Repair
+    component = { id = 77234 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
+    # Basic Computing Machine Support
+    component = { id = 77235 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
+    required = { 77220 77210 }
+    effects =
+    { command = { type = repair_mod value = 60 }
+      command = { type = building_prod_mod which = air_base value = 30 }
+    }
+  }
+
+       # Global Power Network
+  application =
+  { id        = 77240
+    name      = TECH_APP_INFANTRY_77240_NAME
+
+    position  = { x = 456 y = 457 }
+	picture   = "199200"
+    year      = 2000
+    # Low Echelon Supply System
+    component = { id = 77241 name = TECH_CMP_INFANTRY_351_1_NAME type = decentralized_execution double_time = yes difficulty = 6 }
+    # Dynamic Supply Reports
+    component = { id = 77242 name = TECH_CMP_INFANTRY_351_2_NAME type = management double_time = yes difficulty = 6 }
+    # Circular Transport System
+    component = { id = 77243 name = TECH_CMP_INFANTRY_351_3_NAME type = management double_time = yes difficulty = 6 }
+    # Advanced Stock and Storage
+    component = { id = 77244 name = TECH_CMP_INFANTRY_351_4_NAME type = general_equipment double_time = yes difficulty = 6 }
+    # Tactical refuel and replenishment
+    component = { id = 77245 name = TECH_CMP_INFANTRY_351_5_NAME type = small_unit_tactics double_time = yes difficulty = 6 }
+    required  = { 77220 77230 }
+    effects =
+    { command = { type = tc_mod value = 30 }
+      command = { type = tc_occupied_mod value = 60 }
+      command = { type = attrition_mod value = 45 }
+      command = { type = supply_dist_mod value = 30 }
+      command = { type = task_efficiency which = strat_redeploy value = 0.05 }
+      command = { type = supply_consumption value = -0.02 }
+    }
+  }
+
+     # Info Era Repair
+  application =
+  { id = 77250
+    name = TECH_APP_INFANTRY_77250_NAME
+
+	picture   = "199190"
+    year = 2000
+    position = { x = 576 y = 457 }
+    # Semimodern Electronics Repair
+    component = { id = 77251 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
+    # Semimodern Repair Capacity
+    component = { id = 77252 name = TECH_CMP_INFANTRY_350_2_NAME type = mechanics double_time = yes difficulty = 6 }
+    # Semimodern Vehicle Repair
+    component = { id = 77253 name = TECH_CMP_INFANTRY_350_3_NAME type = vehicle_engineering double_time = yes difficulty = 6 }
+    # Semimodern Gun Repair
+    component = { id = 77254 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
+    # Basic Computing Machine Support
+    component = { id = 77255 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
+    required = { 77240 77230 }
+    effects =
+    { command = { type = repair_mod value = 60 }
+      command = { type = building_prod_mod which = air_base value = 30 }
+    }
+  }
+
+   # Reinforced Global Power Network
+  application =
+  { id        = 77260
+    name      = TECH_APP_INFANTRY_77260_NAME
+
+    position  = { x = 456 y = 475 }
+	picture   = "199200"
+    year      = 2010
+    # Low Echelon Supply System
+    component = { id = 77261 name = TECH_CMP_INFANTRY_351_1_NAME type = decentralized_execution double_time = yes difficulty = 6 }
+    # Dynamic Supply Reports
+    component = { id = 77261 name = TECH_CMP_INFANTRY_351_2_NAME type = management double_time = yes difficulty = 6 }
+    # Circular Transport System
+    component = { id = 77263 name = TECH_CMP_INFANTRY_351_3_NAME type = management double_time = yes difficulty = 6 }
+    # Advanced Stock and Storage
+    component = { id = 77264 name = TECH_CMP_INFANTRY_351_4_NAME type = general_equipment double_time = yes difficulty = 6 }
+    # Tactical refuel and replenishment
+    component = { id = 77265 name = TECH_CMP_INFANTRY_351_5_NAME type = small_unit_tactics double_time = yes difficulty = 6 }
+    required  = { 77240 77250 }
+    effects =
+    { command = { type = tc_mod value = 30 }
+      command = { type = tc_occupied_mod value = 60 }
+      command = { type = attrition_mod value = 45 }
+      command = { type = supply_dist_mod value = 30 }
+      command = { type = task_efficiency which = strat_redeploy value = 0.05 }
+      command = { type = supply_consumption value = -0.02 }
+    }
+  }
+
+       # Info Network Repair
+  application =
+  { id = 77270
+    name = TECH_APP_INFANTRY_77270_NAME
+
+	picture   = "199190"
+    year = 2010
+    position = { x = 576 y = 475 }
+    # Semimodern Electronics Repair
+    component = { id = 77271 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
+    # Semimodern Repair Capacity
+    component = { id = 77272 name = TECH_CMP_INFANTRY_350_2_NAME type = mechanics double_time = yes difficulty = 6 }
+    # Semimodern Vehicle Repair
+    component = { id = 77273 name = TECH_CMP_INFANTRY_350_3_NAME type = vehicle_engineering double_time = yes difficulty = 6 }
+    # Semimodern Gun Repair
+    component = { id = 77274 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
+    # Basic Computing Machine Support
+    component = { id = 77275 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
+    required = { 77260 77250 }
+    effects =
+    { command = { type = repair_mod value = 60 }
+      command = { type = building_prod_mod which = air_base value = 30 }
+    }
+  }
+   
 }

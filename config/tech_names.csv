@@ -8257,10 +8257,26 @@ SHORT_TECH_APP_INFANTRY_77060_NAME;1990 Engineers;;;;;;;;;;X
 TECH_APP_INFANTRY_77070_NAME;2000 Combat Engineer Brigade;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_77070_NAME;2000 Engineers;;;;;;;;;;X
 TECH_APP_INFANTRY_77100_NAME;Modern Exosuit Division;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_77100_NAME;Modern Exosuit Inf.;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77100_NAME;Mod. Exosuit Inf.;;;;;;;;;;X
 TECH_APP_INFANTRY_77110_NAME;Improved Exosuit Division;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_77110_NAME;Improved Exosuit Inf.;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77110_NAME;Imp. Exosuit Inf.;;;;;;;;;;X
 TECH_APP_INFANTRY_77120_NAME;Advanced Exosuit Division;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_77120_NAME;Advanced Exosuit Inf.;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77120_NAME;Adv. Exosuit Inf.;;;;;;;;;;X
+TECH_APP_INFANTRY_77200_NAME;Continental Power Projection;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77200_NAME;Cont. Power Projection;;;;;;;;;;X
+TECH_APP_INFANTRY_77210_NAME;Post-Modern Repair;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77210_NAME;Post-Modern Repair;;;;;;;;;;X
+TECH_APP_INFANTRY_77220_NAME;Global Power Projection;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77220_NAME;Global Power Projection;;;;;;;;;;X
+TECH_APP_INFANTRY_77230_NAME;Post-CW Repair;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77230_NAME;Post-CW Repair;;;;;;;;;;X
+TECH_APP_INFANTRY_77240_NAME;Global Power Network;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77240_NAME;Global Power Network;;;;;;;;;;X
+TECH_APP_INFANTRY_77250_NAME;Information Era Repair;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77250_NAME;Info Era Repair;;;;;;;;;;X
+TECH_APP_INFANTRY_77260_NAME;Reinforced Global Power Network;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77260_NAME;Reinforced Global Nwk.;;;;;;;;;;X
+TECH_APP_INFANTRY_77270_NAME;Information Network Repair;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77270_NAME;Info Network Repair;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
