@@ -13,7 +13,7 @@ technology =
   }
   label =
   { tag      = TECH_CAT_ENGINEERS
-    position = { x = 230 y = 199 }
+    position = { x = 228 y = 309 }
   }
   label =
   { tag      = TECH_CAT_SUPPLY
@@ -53,7 +53,11 @@ technology =
   }
   label = {
   tag = TECH_CAT_SPECFORC
-  position = { x = 195 y = 397 }
+  position = { x = 5 y = 379 }
+  }
+  label = {
+  tag = TECH_CAT_EXOSUIT
+  position = { x = 564 y = 145 }
   }
 ###################################################################
 #################### REGULAR INFANTRY DIVISIONS
@@ -472,7 +476,7 @@ technology =
   
   position = { x = 5 y = 307 }
   picture = "13200"
-  year = 2000
+  year = 2005
   #Under-barrel Grenade Launcher
   component = { id = 132016 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
   #40mm Grenade
@@ -501,7 +505,7 @@ technology =
   
   position = { x = 5 y = 325 }
   picture = "13200"
-  year = 2000
+  year = 2010
   #Under-barrel Grenade Launcher
   component = { id = 132021 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
   #40mm Grenade
@@ -526,7 +530,7 @@ technology =
   
   position = { x = 5 y = 343 }
   picture = "13200"
-  year = 2000
+  year = 2015
   #Under-barrel Grenade Launcher
   component = { id = 132026 name = TECH_CMP_INFANTRY_331_1_NAME type = artillery difficulty = 8 }
   #40mm Grenade
@@ -554,237 +558,13 @@ technology =
 #################### LIGHT / MOUNTAIN INFANTRY DIVISIONS
 ###################################################################
 
-  # 1870 LIGHT INFANTRY
-  application =
-  { id        = 1160
-    name      = TECH_APP_INFANTRY_16_NAME
-
-    position  = { x = 116 y = 19 }
-	picture   = "DH1160"
-    year      = 1870
-    # Light Terrain Equipment
-    component = { id = 1161 name = TECH_CMP_INFANTRY_16_1_NAME type = general_equipment difficulty = 4 }
-    # Light Battle Equipment
-    component = { id = 1162 name = TECH_CMP_INFANTRY_16_3_NAME type = general_equipment difficulty = 3 }
-    # Light Weaponry
-    component = { id = 1163 name = TECH_CMP_INFANTRY_16_2_NAME type = general_equipment difficulty = 3 }
-    # Light Infantry Training
-    component = { id = 1164 name = TECH_CMP_INFANTRY_16_4_NAME type = training difficulty = 5 }
-    # Light Infantry Tactics
-    component = { id = 1165 name = TECH_CMP_INFANTRY_16_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { }
-    effects =
-    { command = { type = activate_unit_type which = bergsjaeger }
-      command = { type = new_model which = bergsjaeger value = 0 }
-    }
-  }
-
-  # 1897 LIGHT INFANTRY
-  application =
-  { id        = 1170
-    name      = TECH_APP_INFANTRY_17_NAME
-
-    position  = { x = 116 y = 37 }
-	picture   = "DH1170"
-    year      = 1897
-    # Light Terrain Equipment
-    component = { id = 1171 name = TECH_CMP_INFANTRY_17_1_NAME type = general_equipment difficulty = 4 }
-    # Light Battle Equipment
-    component = { id = 1172 name = TECH_CMP_INFANTRY_17_3_NAME type = general_equipment difficulty = 3 }
-    # Light Weaponry
-    component = { id = 1173 name = TECH_CMP_INFANTRY_17_2_NAME type = general_equipment difficulty = 3 }
-    # Light Infantry Training
-    component = { id = 1174 name = TECH_CMP_INFANTRY_17_4_NAME type = training difficulty = 5 }
-    # Light Infantry Tactics
-    component = { id = 1175 name = TECH_CMP_INFANTRY_17_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1160 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 1 }
-      command = { type = scrap_model which = bergsjaeger value = 0 }
-    }
-  }
-
-  # 1907 LIGHT INFANTRY
-  application =
-  { id        = 1180
-    name      = TECH_APP_INFANTRY_18_NAME
-
-    position  = { x = 116 y = 55 }
-	picture   = "DH1180"
-    year      = 1907
-    # Light Terrain Equipment
-    component = { id = 1181 name = TECH_CMP_INFANTRY_18_1_NAME type = general_equipment difficulty = 4 }
-    # Light Battle Equipment
-    component = { id = 1182 name = TECH_CMP_INFANTRY_18_3_NAME type = general_equipment difficulty = 3 }
-    # Light Weaponry
-    component = { id = 1183 name = TECH_CMP_INFANTRY_18_2_NAME type = general_equipment difficulty = 3 }
-    # Light Infantry Training
-    component = { id = 1184 name = TECH_CMP_INFANTRY_18_4_NAME type = training difficulty = 5 }
-    # Light Infantry Tactics
-    component = { id = 1185 name = TECH_CMP_INFANTRY_18_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1170 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 2 }
-      command = { type = scrap_model which = bergsjaeger value = 1 }
-     }
-  }
-
-  # 1914 LIGHT INFANTRY
-  application =
-  { id        = 1190
-    name      = TECH_APP_INFANTRY_19_NAME
-
-    position  = { x = 116 y = 73 }
-	picture   = "DH1190"
-    year      = 1914
-    # Light Terrain Equipment
-    component = { id = 1191 name = TECH_CMP_INFANTRY_19_1_NAME type = mountain_training difficulty = 4 }
-    # Light Battle Equipment
-    component = { id = 1192 name = TECH_CMP_INFANTRY_19_3_NAME type = mountain_training difficulty = 3 }
-    # Light Weaponry
-    component = { id = 1193 name = TECH_CMP_INFANTRY_19_2_NAME type = general_equipment difficulty = 3 }
-    # Light Infantry Training
-    component = { id = 1194 name = TECH_CMP_INFANTRY_19_4_NAME type = mountain_training difficulty = 5 }
-    # Light Infantry Tactics
-    component = { id = 1195 name = TECH_CMP_INFANTRY_19_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1180 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 3 }
-      command = { type = scrap_model which = bergsjaeger value = 2 }
-    }
-  }
-
-  # 1916 MOUNTAIN INFANTRY
-  application =
-  { id        = 1200
-    name      = TECH_APP_INFANTRY_20_NAME
-
-    position  = { x = 116 y = 91 }
-	picture   = "DH1200"
-    year      = 1916
-    # Light Terrain Equipment
-    component = { id = 1201 name = TECH_CMP_INFANTRY_20_1_NAME type = mountain_training difficulty = 4 }
-    # Light Battle Equipment
-    component = { id = 1202 name = TECH_CMP_INFANTRY_20_3_NAME type = mountain_training difficulty = 3 }
-    # Light Weaponry
-    component = { id = 1203 name = TECH_CMP_INFANTRY_20_2_NAME type = artillery difficulty = 3 }
-    # Light Infantry Training
-    component = { id = 1204 name = TECH_CMP_INFANTRY_20_4_NAME type = mountain_training difficulty = 5 }
-    # Light Infantry Tactics
-    component = { id = 1205 name = TECH_CMP_INFANTRY_20_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1190 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 4 }
-      command = { type = scrap_model which = bergsjaeger value = 3 }
-	  }
-  }
-
-  # 1918 MOUNTAIN INFANTRY
-  application =
-  { id        = 1210
-    name      = TECH_APP_INFANTRY_21_NAME
-
-    position  = { x = 116 y = 109 }
-	picture   = "DH1210"
-    year      = 1918
-    # Mountain Equipment
-    component = { id = 1211 name = TECH_CMP_INFANTRY_21_1_NAME type = mountain_training difficulty = 4 }
-    # Mountain Heavy Weaponry
-    component = { id = 1212 name = TECH_CMP_INFANTRY_21_3_NAME type = artillery difficulty = 4 }
-    # Mountain Vehicle Design
-    component = { id = 1213 name = TECH_CMP_INFANTRY_21_2_NAME type = mountain_training difficulty = 4 }
-    # Mountain Training
-    component = { id = 1214 name = TECH_CMP_INFANTRY_21_4_NAME type = mountain_training difficulty = 5 }
-    # Mountain Warfare Tactics
-    component = { id = 1215 name = TECH_CMP_INFANTRY_21_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1060 1200 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 5 }
-      command = { type = scrap_model which = bergsjaeger value = 4 }
-    }
-  }
-
-  # 1921 MOUNTAIN INFANTRY
-  application =
-  { id        = 1220
-    name      = TECH_APP_INFANTRY_22_NAME
-
-    position  = { x = 116 y = 127 }
-	picture   = "DH1220"
-    year      = 1921
-    # Mountain Equipment
-    component = { id = 1221 name = TECH_CMP_INFANTRY_22_1_NAME type = mountain_training difficulty = 4 }
-    # Mountain Heavy Weaponry
-    component = { id = 1222 name = TECH_CMP_INFANTRY_22_3_NAME type = artillery difficulty = 4 }
-    # Mountain Vehicle Design
-    component = { id = 1223 name = TECH_CMP_INFANTRY_22_2_NAME type = mountain_training difficulty = 4 }
-    # Mountain Training
-    component = { id = 1224 name = TECH_CMP_INFANTRY_22_4_NAME type = mountain_training difficulty = 5 }
-    # Mountain Warfare Tactics
-    component = { id = 1225 name = TECH_CMP_INFANTRY_22_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1210 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 6 }
-      command = { type = scrap_model which = bergsjaeger value = 5 }
-    }
-  }
-
-  # 1925 MOUNTAIN INFANTRY
-  application =
-  { id        = 1230
-    name      = TECH_APP_INFANTRY_23_NAME
-
-    position  = { x = 116 y = 145 }
-	picture   = "DH1230"
-    year      = 1925
-    # Mountain Equipment
-    component = { id = 1231 name = TECH_CMP_INFANTRY_23_1_NAME type = mountain_training difficulty = 4 }
-    # Mountain Heavy Weaponry
-    component = { id = 1232 name = TECH_CMP_INFANTRY_23_3_NAME type = artillery difficulty = 4 }
-    # Mountain Vehicle Design
-    component = { id = 1233 name = TECH_CMP_INFANTRY_23_2_NAME type = mountain_training difficulty = 4 }
-    # Mountain Training
-    component = { id = 1234 name = TECH_CMP_INFANTRY_23_4_NAME type = mountain_training difficulty = 5 }
-    # Mountain Warfare Tactics
-    component = { id = 1235 name = TECH_CMP_INFANTRY_23_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1220 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 7 }
-      command = { type = scrap_model which = bergsjaeger value = 6 }
-    }
-  }
-
-  # 1930 MOUNTAIN INFANTRY
-  application =
-  { id        = 1240
-    name      = TECH_APP_INFANTRY_24_NAME
-
-    position  = { x = 116 y = 163 }
-	picture   = "1150"
-    year      = 1930
-    # Mountain Equipment
-    component = { id = 1241 name = TECH_CMP_INFANTRY_24_1_NAME type = mountain_training difficulty = 4 }
-    # Mountain Heavy Weaponry
-    component = { id = 1242 name = TECH_CMP_INFANTRY_24_3_NAME type = artillery difficulty = 4 }
-    # Mountain Vehicle Design
-    component = { id = 1243 name = TECH_CMP_INFANTRY_24_2_NAME type = mountain_training difficulty = 4 }
-    # Mountain Training
-    component = { id = 1244 name = TECH_CMP_INFANTRY_24_4_NAME type = mountain_training difficulty = 5 }
-    # Mountain Warfare Tactics
-    component = { id = 1245 name = TECH_CMP_INFANTRY_24_5_NAME type = small_unit_tactics difficulty = 5 }
-    required  = { 1230 }
-    effects =
-    { command = { type = new_model which = bergsjaeger value = 8 }
-      command = { type = scrap_model which = bergsjaeger value = 7 }
-    }
-  }
 
   # 1935 MOUNTAIN INFANTRY
   application =
   { id        = 1250
     name      = TECH_APP_INFANTRY_25_NAME
 
-    position  = { x = 116 y = 181 }
+    position  = { x = 116 y = 19 }
 	picture   = "1110"
     year      = 1935
     # Mountain Equipment
@@ -809,7 +589,7 @@ technology =
   { id        = 1260
     name      = TECH_APP_INFANTRY_26_NAME
 
-    position  = { x = 116 y = 199 }
+    position  = { x = 116 y = 37 }
 	picture   = "1120"
     year      = 1939
     # Mountain Equipment
@@ -833,7 +613,7 @@ technology =
   { id        = 1270
     name      = TECH_APP_INFANTRY_27_NAME
 
-    position  = { x = 116 y = 217 }
+    position  = { x = 116 y = 55 }
 	picture   = "1140"
     year      = 1942
     # Mountain Equipment
@@ -857,7 +637,7 @@ technology =
   { id        = 1280
     name      = TECH_APP_INFANTRY_28_NAME
 
-    position  = { x = 116 y = 235 }
+    position  = { x = 116 y = 73 }
 	picture   = "DH1280"
     year      = 1945
     # Mountain Equipment
@@ -882,7 +662,7 @@ technology =
   { id        = 1290
     name      = TECH_APP_INFANTRY_29_NAME
 
-    position  = { x = 116 y = 253 }
+    position  = { x = 116 y = 91 }
 	picture   = "10040"
     year      = 1948
     # Mountain Equipment
@@ -907,7 +687,7 @@ technology =
   { id        = 1300
     name      = TECH_APP_INFANTRY_30_NAME
 
-    position  = { x = 116 y = 271 }
+    position  = { x = 116 y = 109 }
 	picture   = "10050"
     year      = 1951
     # Mountain Equipment
@@ -931,7 +711,7 @@ technology =
   { id        = 13030
     name      = TECH_APP_INFANTRY_303_NAME
 
-    position  = { x = 116 y = 289 }
+    position  = { x = 116 y = 128 }
 	picture   = "DH13030"
     year      = 1955
     # Mountain Equipment
@@ -955,7 +735,7 @@ technology =
   { id        = 13040
     name      = TECH_APP_INFANTRY_304_NAME
 
-    position  = { x = 116 y = 307 }
+    position  = { x = 116 y = 146 }
 	picture   = "DH13040"
     year      = 1959
     # Mountain Equipment
@@ -979,7 +759,7 @@ technology =
   { id        = 13050
     name      = TECH_APP_INFANTRY_305_NAME
 
-    position  = { x = 116 y = 325 }
+    position  = { x = 116 y = 164 }
 	picture   = "DH13050"
     year      = 1963
     # Mountain Equipment
@@ -1003,7 +783,7 @@ technology =
   { id        = 13210
     name      = TECH_APP_INFANTRY_332_NAME
 
-    position  = { x = 116 y = 343 }
+    position  = { x = 116 y = 182 }
 	picture   = "13210"
     year      = 1966
     # Mountain Equipment
@@ -1027,7 +807,7 @@ technology =
   { id        = 13220
     name      = TECH_APP_INFANTRY_333_NAME
 
-    position  = { x = 116 y = 361 }
+    position  = { x = 116 y = 200 }
 	picture   = "13220"
     year      = 1972
     # Mountain Equipment
@@ -1051,7 +831,7 @@ technology =
   { id        = 13230
     name      = TECH_APP_INFANTRY_334_NAME
 
-    position  = { x = 116 y = 379 }
+    position  = { x = 116 y = 218 }
 	picture   = "13230"
     year      = 1982
     # Mountain Equipment
@@ -1070,11 +850,114 @@ technology =
       command = { type = scrap_model which = bergsjaeger value = 19 }
     }
   }
+  
+  # 1992 MOUNTAIN INFANTRY
+  application =
+  { id        = 1324501
+    name      = TECH_APP_INFANTRY_1324501_NAME
+
+    position  = { x = 116 y = 236 }
+	picture   = "13230"
+    year      = 1992
+    # Mountain Equipment
+    component = { id = 513231 name = TECH_CMP_INFANTRY_334_1_NAME type = mountain_training difficulty = 8 }
+    # Mountain Heavy Weaponry
+    component = { id = 513232 name = TECH_CMP_INFANTRY_334_2_NAME type = artillery difficulty = 8 }
+    # Mountain Vehicle Design
+    component = { id = 513233 name = TECH_CMP_INFANTRY_334_3_NAME type = vehicle_engineering difficulty = 8 }
+    # Mountain Training
+    component = { id = 513234 name = TECH_CMP_INFANTRY_334_4_NAME type = mountain_training difficulty = 10 }
+    # Mountain Warfare Tactics
+    component = { id = 513235 name = TECH_CMP_INFANTRY_334_5_NAME type = small_unit_tactics difficulty = 10 }
+    required  = { 13230 }
+    effects =
+    { command = { type = new_model which = bergsjaeger value = 21 }
+      command = { type = scrap_model which = bergsjaeger value = 20 }
+    }
+  }
+
+   # 2000 MOUNTAIN INFANTRY
+  application =
+  { id        = 1325501
+    name      = TECH_APP_INFANTRY_1325501_NAME
+
+    position  = { x = 116 y = 254 }
+	picture   = "13230"
+    year      = 2000
+    # Mountain Equipment
+    component = { id = 513236 name = TECH_CMP_INFANTRY_334_1_NAME type = mountain_training difficulty = 8 }
+    # Mountain Heavy Weaponry
+    component = { id = 513237 name = TECH_CMP_INFANTRY_334_2_NAME type = artillery difficulty = 8 }
+    # Mountain Vehicle Design
+    component = { id = 513238 name = TECH_CMP_INFANTRY_334_3_NAME type = vehicle_engineering difficulty = 8 }
+    # Mountain Training
+    component = { id = 513239 name = TECH_CMP_INFANTRY_334_4_NAME type = mountain_training difficulty = 10 }
+    # Mountain Warfare Tactics
+    component = { id = 513240 name = TECH_CMP_INFANTRY_334_5_NAME type = small_unit_tactics difficulty = 10 }
+    required  = { 1324501 }
+    effects =
+    { command = { type = new_model which = bergsjaeger value = 22 }
+      command = { type = scrap_model which = bergsjaeger value = 21 }
+    }
+  }
+
+   # 2010 MOUNTAIN INFANTRY
+  application =
+  { id        = 132601
+    name      = TECH_APP_INFANTRY_132601_NAME
+
+    position  = { x = 116 y = 272 }
+	picture   = "13230"
+    year      = 2010
+    # Mountain Equipment
+    component = { id = 513241 name = TECH_CMP_INFANTRY_334_1_NAME type = mountain_training difficulty = 8 }
+    # Mountain Heavy Weaponry
+    component = { id = 513242 name = TECH_CMP_INFANTRY_334_2_NAME type = artillery difficulty = 8 }
+    # Mountain Vehicle Design
+    component = { id = 513243 name = TECH_CMP_INFANTRY_334_3_NAME type = vehicle_engineering difficulty = 8 }
+    # Mountain Training
+    component = { id = 513244 name = TECH_CMP_INFANTRY_334_4_NAME type = mountain_training difficulty = 10 }
+    # Mountain Warfare Tactics
+    component = { id = 513245 name = TECH_CMP_INFANTRY_334_5_NAME type = small_unit_tactics difficulty = 10 }
+    required  = { 1325501 }
+    effects =
+    { command = { type = new_model which = bergsjaeger value = 23 }
+      command = { type = scrap_model which = bergsjaeger value = 22 }
+    }
+  }
+
+    # 2015 MOUNTAIN INFANTRY
+  application =
+  { id        = 132701
+    name      = TECH_APP_INFANTRY_132701_NAME
+
+    position  = { x = 116 y = 290 }
+	picture   = "13230"
+    year      = 2015
+    # Mountain Equipment
+    component = { id = 513246 name = TECH_CMP_INFANTRY_334_1_NAME type = mountain_training difficulty = 8 }
+    # Mountain Heavy Weaponry
+    component = { id = 513247 name = TECH_CMP_INFANTRY_334_2_NAME type = artillery difficulty = 8 }
+    # Mountain Vehicle Design
+    component = { id = 513248 name = TECH_CMP_INFANTRY_334_3_NAME type = vehicle_engineering difficulty = 8 }
+    # Mountain Training
+    component = { id = 513249 name = TECH_CMP_INFANTRY_334_4_NAME type = mountain_training difficulty = 10 }
+    # Mountain Warfare Tactics
+    component = { id = 513250 name = TECH_CMP_INFANTRY_334_5_NAME type = small_unit_tactics difficulty = 10 }
+    required  = { 132601 }
+    effects =
+    { command = { type = new_model which = bergsjaeger value = 24 }
+      command = { type = scrap_model which = bergsjaeger value = 23 }
+    }
+  }
+
+  ##### SF Bd. #####
+  
   application = {
   id = 13390
   name = TECH_APP_INFANTRY_352_NAME
   
-  position = { x = 116 y = 411 }
+  position = { x = 5 y = 397 }
   picture = "13390"
   year = 1941
   
@@ -1098,7 +981,7 @@ technology =
   id = 13400
   name = TECH_APP_INFANTRY_353_NAME
   
-  position = { x = 116 y = 429 }
+  position = { x = 117 y = 397 }
   picture = "13400"
   year = 1945
   
@@ -1125,7 +1008,7 @@ technology =
   id = 13410
   name = TECH_APP_INFANTRY_354_NAME
   
-  position = { x = 116 y = 447 }
+  position = { x = 5 y = 415 }
   picture = "13410"
   year = 1951
   
@@ -1152,7 +1035,7 @@ technology =
   id = 13420
   name = TECH_APP_INFANTRY_355_NAME
   
-  position = { x = 116 y = 465 }
+  position = { x = 117 y = 415 }
   picture = "13420"
   year = 1957
   
@@ -1179,7 +1062,7 @@ technology =
   id = 13430
   name = TECH_APP_INFANTRY_356_NAME
   
-  position = { x = 228 y = 411 }
+  position = { x = 5 y = 433 }
   picture = "13430"
   year = 1963
   
@@ -1206,7 +1089,7 @@ technology =
   id = 13440
   name = TECH_APP_INFANTRY_357_NAME
   
-  position = { x = 228 y = 429 }
+  position = { x = 117 y = 433 }
   picture = "13440"
   year = 1975
   
@@ -1229,11 +1112,11 @@ technology =
 	command = { trigger = { technology = 12310 } type = new_model which = b_09 value = 3 }
     }
   }
-          application = {
+    application = {
   id = 13450
   name = TECH_APP_INFANTRY_358_NAME
-  
-  position = { x = 228 y = 447 }
+
+  position = { x = 5 y = 451 }
   picture = "13450"
   year = 1985
   
@@ -1256,309 +1139,70 @@ technology =
 	command = { trigger = { technology = 12310 } type = new_model which = b_09 value = 4 }
     }
   }
+  
+   application = {
+  id = 13460
+  name = TECH_APP_INFANTRY_13460_NAME
+
+  position = { x = 117 y = 451 }
+  picture = "13450"
+  year = 1995
+  
+  #Commando Training
+  component = { id = 513451 name = TECH_CMP_INFANTRY_358_1_NAME type = training difficulty = 5 }
+  #Fast Attack Tactics
+  component = { id = 513452 name = TECH_CMP_INFANTRY_358_2_NAME type = small_unit_tactics difficulty = 5 }
+  #Special Equipment
+  component = { id = 513453 name = TECH_CMP_INFANTRY_358_3_NAME type = general_equipment difficulty = 5 }
+  #Fast Infil & Exfil
+  component = { id = 513454 name = TECH_CMP_INFANTRY_358_4_NAME type = small_unit_tactics difficulty = 5 }
+  #Commando Combat
+  component = { id = 513455 name = TECH_CMP_INFANTRY_358_5_NAME type = small_unit_tactics difficulty = 5 }
+  required  = { 13450 }
+  effects =
+    { 
+	command = { type = new_model which = b_06 value = 7 }
+	command = { type = scrap_model which = b_06 value = 6 }
+    }
+  }
+
+   application = {
+  id = 13470
+  name = TECH_APP_INFANTRY_13470_NAME
+
+  position = { x = 5 y = 469 }
+  picture = "13450"
+  year = 2010
+  
+  #Commando Training
+  component = { id = 513456 name = TECH_CMP_INFANTRY_358_1_NAME type = training difficulty = 5 }
+  #Fast Attack Tactics
+  component = { id = 513457 name = TECH_CMP_INFANTRY_358_2_NAME type = small_unit_tactics difficulty = 5 }
+  #Special Equipment
+  component = { id = 513458 name = TECH_CMP_INFANTRY_358_3_NAME type = general_equipment difficulty = 5 }
+  #Fast Infil & Exfil
+  component = { id = 513459 name = TECH_CMP_INFANTRY_358_4_NAME type = small_unit_tactics difficulty = 5 }
+  #Commando Combat
+  component = { id = 513460 name = TECH_CMP_INFANTRY_358_5_NAME type = small_unit_tactics difficulty = 5 }
+  required  = { 13460 }
+  effects =
+    { 
+	command = { type = new_model which = b_06 value = 8 }
+	command = { type = scrap_model which = b_06 value = 7 }
+    }
+  }
+
+  
 ###################################################################
 #################### CAVALRY DIVISIONS
 ###################################################################
-  # 1870 CAVALRY
-  application =
-  { id        = 13060
-    name      = TECH_APP_INFANTRY_306_NAME
-
-    position  = { x = 564 y = 19 }	
-	picture   = "1210"
-    year      = 1870
-    # Lance and Carbine
-    component = { id = 13061 name = TECH_CMP_INFANTRY_31_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 13062 name = TECH_CMP_INFANTRY_31_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 13063 name = TECH_CMP_INFANTRY_31_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 13064 name = TECH_CMP_INFANTRY_31_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 13065 name = TECH_CMP_INFANTRY_31_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { }
-    effects =
-    { command = { type = activate_unit_type which = cavalry }
-      command = { type = new_model which = cavalry value = 0 }
-	  command = { type = activate_unit_type which = cavalry_brigade }
-	  command = { type = new_model which = cavalry_brigade value = 0 }
-    }
-  }
-  # 1897 CAVALRY
-  application =
-  { id        = 13070
-    name      = TECH_APP_INFANTRY_307_NAME
-
-    position  = { x = 564 y = 35 }	
-	picture   = "DH13070"
-    year      = 1897
-    # Lance and Carbine
-    component = { id = 13071 name = TECH_CMP_INFANTRY_31_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 13072 name = TECH_CMP_INFANTRY_31_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 13073 name = TECH_CMP_INFANTRY_31_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 13074 name = TECH_CMP_INFANTRY_31_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 13075 name = TECH_CMP_INFANTRY_31_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 13060 }
-    effects =
-    { command = { type = new_model which = cavalry value = 1 }
-      command = { type = scrap_model which = cavalry value = 0 }
-	  command = { type = new_model which = cavalry_brigade value = 1 }
-	  command = { type = scrap_model which = cavalry_brigade value = 0 }
-    }
-  }
-  # 1907 CAVALRY
-  application =
-  { id        = 13080
-    name      = TECH_APP_INFANTRY_308_NAME
-
-    position  = { x = 564 y = 51 }	
-	picture   = "DH13080"
-    year      = 1907
-    # Lance and Carbine
-    component = { id = 13081 name = TECH_CMP_INFANTRY_31_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 13082 name = TECH_CMP_INFANTRY_31_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 13083 name = TECH_CMP_INFANTRY_31_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 13084 name = TECH_CMP_INFANTRY_31_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 13085 name = TECH_CMP_INFANTRY_31_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 13070 }
-    effects =
-    { command = { type = new_model which = cavalry value = 2 }
-      command = { type = scrap_model which = cavalry value = 1 }
-	  command = { type = new_model which = cavalry_brigade value = 2 }
-	  command = { type = scrap_model which = cavalry_brigade value = 1 }
-    }
-  }
-  # 1914 CAVALRY
-  application =
-  { id        = 1310
-    name      = TECH_APP_INFANTRY_31_NAME
-
-    position  = { x = 564 y = 67 }	
-	picture   = "DH13080"
-    year      = 1914
-    # Lance and Carbine
-    component = { id = 1311 name = TECH_CMP_INFANTRY_31_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 1312 name = TECH_CMP_INFANTRY_31_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1313 name = TECH_CMP_INFANTRY_31_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 1314 name = TECH_CMP_INFANTRY_31_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 1315 name = TECH_CMP_INFANTRY_31_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 13080 }
-    effects =
-    { command = { type = new_model which = cavalry value = 3 }
-      command = { type = scrap_model which = cavalry value = 2 }
-	  command = { type = new_model which = cavalry_brigade value = 3 }
-	  command = { type = scrap_model which = cavalry_brigade value = 2 }
-    }
-  }
-
-  # 1916 CAVALRY
-  application =
-  { id        = 1320
-    name      = TECH_APP_INFANTRY_32_NAME
-
-    position  = { x = 564 y = 83 }	
-	picture   = "DH1320"
-    year      = 1916
-    # Cavalry Service Rifle
-    component = { id = 1321 name = TECH_CMP_INFANTRY_32_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 1322 name = TECH_CMP_INFANTRY_32_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1323 name = TECH_CMP_INFANTRY_32_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 1324 name = TECH_CMP_INFANTRY_32_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 1325 name = TECH_CMP_INFANTRY_32_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 1310 }
-    effects =
-    { command = { type = new_model which = cavalry value = 4 }
-      command = { type = scrap_model which = cavalry value = 3 }
-	  command = { type = new_model which = cavalry_brigade value = 4 }
-	  command = { type = scrap_model which = cavalry_brigade value = 3 }
-    }
-  }
-
-  # 1918 CAVALRY
-  application =
-  { id        = 1330
-    name      = TECH_APP_INFANTRY_33_NAME
-
-    position  = { x = 564 y = 99 }	
-	picture   = "1190"
-    year      = 1918
-    # Cavalry Service Rifle
-    component = { id = 1331 name = TECH_CMP_INFANTRY_33_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 1332 name = TECH_CMP_INFANTRY_33_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1333 name = TECH_CMP_INFANTRY_33_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 1334 name = TECH_CMP_INFANTRY_33_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 1335 name = TECH_CMP_INFANTRY_33_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 1320 }
-    effects =
-    { command = { type = new_model which = cavalry value = 5 }
-      command = { type = scrap_model which = cavalry value = 4 }
-	  command = { type = new_model which = cavalry_brigade value = 5 }
-	  command = { type = scrap_model which = cavalry_brigade value = 4 }
-    }
-  }
-
-  # 1921 CAVALRY
-  application =
-  { id        = 1340
-    name      = TECH_APP_INFANTRY_34_NAME
-
-    position  = { x = 564 y = 115 }	
-	picture   = "DH1340"
-    year      = 1921
-    # Cavalry Service Rifle
-    component = { id = 1341 name = TECH_CMP_INFANTRY_34_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 1342 name = TECH_CMP_INFANTRY_34_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1343 name = TECH_CMP_INFANTRY_34_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 1344 name = TECH_CMP_INFANTRY_34_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 1345 name = TECH_CMP_INFANTRY_34_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 1330 }
-    effects =
-    { command = { type = new_model which = cavalry value = 6 }
-      command = { type = scrap_model which = cavalry value = 5 }
-	  command = { type = new_model which = cavalry_brigade value = 6 }
-	  command = { type = scrap_model which = cavalry_brigade value = 5 }
-    }
-  }
-
-  # 1924 CAVALRY
-  application =
-  { id        = 1350
-    name      = TECH_APP_INFANTRY_35_NAME
-
-    position  = { x = 564 y = 131 }	
-	picture   = "DH1350"
-    year      = 1924
-    # Cavalry Service Rifle
-    component = { id = 1351 name = TECH_CMP_INFANTRY_35_1_NAME type = general_equipment difficulty = 4 }
-    # Horse Artillery
-    component = { id = 1352 name = TECH_CMP_INFANTRY_35_2_NAME type = artillery difficulty = 4 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1353 name = TECH_CMP_INFANTRY_35_3_NAME type = munitions difficulty = 4 }
-    # Cavalry Training
-    component = { id = 1354 name = TECH_CMP_INFANTRY_35_4_NAME type = training difficulty = 4 }
-    # Cavalry Tactics
-    component = { id = 1355 name = TECH_CMP_INFANTRY_35_5_NAME type = cavalry_tactics difficulty = 5 } # Cavalry tactics
-    required  = { 1340 }
-    effects =
-    { command = { type = new_model which = cavalry value = 7 }
-      command = { type = scrap_model which = cavalry value = 6 }
-	  command = { type = new_model which = cavalry_brigade value = 7 }
-	  command = { type = scrap_model which = cavalry_brigade value = 6 }
-    }
-  }
-
-  # 1928 CAVALRY
-  application =
-  { id        = 1360
-    name      = TECH_APP_INFANTRY_36_NAME
-
-    position  = { x = 564 y = 147 }	
-	picture   = "DH1360"
-    year      = 1928
-    # Cavalry Service Rifle
-    component = { id = 1361 name = TECH_CMP_INFANTRY_36_1_NAME type = general_equipment difficulty = 5 }
-    # Horse Artillery
-    component = { id = 1362 name = TECH_CMP_INFANTRY_36_2_NAME type = artillery difficulty = 5 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1363 name = TECH_CMP_INFANTRY_36_3_NAME type = munitions difficulty = 5 }
-    # Cavalry Training
-    component = { id = 1364 name = TECH_CMP_INFANTRY_36_4_NAME type = training difficulty = 5 }
-    # Cavalry Tactics
-    component = { id = 1365 name = TECH_CMP_INFANTRY_36_5_NAME type = cavalry_tactics difficulty = 6 } # Cavalry tactics
-    required  = { 1350 }
-    effects =
-    { command = { type = new_model which = cavalry value = 8 }
-      command = { type = scrap_model which = cavalry value = 7 }
-	  command = { type = new_model which = cavalry_brigade value = 8 }
-	  command = { type = scrap_model which = cavalry_brigade value = 7 }
-    }
-  }
-
-  # 1932 CAVALRY
-  application =
-  { id        = 1370
-    name      = TECH_APP_INFANTRY_37_NAME
-
-    position  = { x = 564 y = 163 }	
-	picture   = "DH1370"
-    year      = 1932
-    # Cavalry Service Rifle
-    component = { id = 1371 name = TECH_CMP_INFANTRY_37_1_NAME type = general_equipment difficulty = 5 }
-    # Horse Artillery
-    component = { id = 1372 name = TECH_CMP_INFANTRY_37_2_NAME type = artillery difficulty = 5 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1373 name = TECH_CMP_INFANTRY_37_3_NAME type = munitions difficulty = 5 }
-    # Cavalry Training
-    component = { id = 1374 name = TECH_CMP_INFANTRY_37_4_NAME type = training difficulty = 5 }
-    # Cavalry Tactics
-    component = { id = 1375 name = TECH_CMP_INFANTRY_37_5_NAME type = cavalry_tactics difficulty = 6 } # Cavalry tactics
-    required  = { 1360 }
-    effects =
-    { command = { type = new_model which = cavalry value = 9 }
-      command = { type = scrap_model which = cavalry value = 8 }
-	  command = { type = new_model which = cavalry_brigade value = 9 }
-	  command = { type = scrap_model which = cavalry_brigade value = 8 }
-    }
-  }
-
-  # 1936 CAVALRY
-  application =
-  { id        = 1380
-    name      = TECH_APP_INFANTRY_38_NAME
-
-    position  = { x = 564 y = 179 }	
-	picture   = "1200"
-    year      = 1936
-    # Machine Pistol
-    component = { id = 1381 name = TECH_CMP_INFANTRY_38_1_NAME type = general_equipment difficulty = 5 }
-    # Horse Artillery
-    component = { id = 1382 name = TECH_CMP_INFANTRY_38_2_NAME type = artillery difficulty = 5 }
-    # Ammunitions, Grenades, and Mines
-    component = { id = 1383 name = TECH_CMP_INFANTRY_38_3_NAME type = munitions difficulty = 5 }
-    # Cavalry Training
-    component = { id = 1384 name = TECH_CMP_INFANTRY_38_4_NAME type = training difficulty = 5 }
-    # Cavalry Tactics
-    component = { id = 1385 name = TECH_CMP_INFANTRY_38_5_NAME type = cavalry_tactics difficulty = 6 } # Cavalry tactics
-    required  = { 1370 }
-    effects =
-    { command = { type = new_model which = cavalry value = 10 }
-      command = { type = scrap_model which = cavalry value = 9 }
-	  command = { type = new_model which = cavalry_brigade value = 10 }
-	  command = { type = scrap_model which = cavalry_brigade value = 9 }
-    }
-  }
 
   # SEMI-MOTORIZED CAVALRY
   application =
   { id        = 1390
     name      = TECH_APP_INFANTRY_39_NAME
 
-    position  = { x = 564 y = 195 }	
+    position  = { x = 564 y = 19 }	
 	picture   = "DH1390"
     year      = 1939
     # Machine Pistol
@@ -1579,6 +1223,8 @@ technology =
 	  command = { type = scrap_model which = cavalry_brigade value = 10 }
 	  command = { type = desert_move which = cavalry value = 17 }
 	  command = { type = desert_defense which = cavalry value = 13 }
+	  command = { type = activate_unit_type which = cavalry }
+	  command = { type = activate_unit_type which = cavalry_brigade }
     }
   }
 ###################################################################
@@ -1590,7 +1236,7 @@ technology =
   { id        = 1530
     name      = TECH_APP_INFANTRY_53_NAME
 
-    position  = { x = 564 y = 211 }
+    position  = { x = 564 y = 37 }
 	picture   = "DH1530"
     year      = 1942
     # Assault Rifle
@@ -1619,7 +1265,7 @@ technology =
   { id        = 1540
     name      = TECH_APP_INFANTRY_54_NAME
 
-    position  = { x = 564 y = 227 }
+    position  = { x = 564 y = 55 }
 	picture   = "DH1540"
     year      = 1946
     # Assault Rifle
@@ -1647,7 +1293,7 @@ technology =
   { id        = 13350
     name      = TECH_APP_INFANTRY_346_NAME
 
-    position  = { x = 564 y = 243 }
+    position  = { x = 564 y = 73 }
 	picture   = "13350"
     year      = 1953
     # Assault Rifle
@@ -1675,7 +1321,7 @@ technology =
   { id        = 13360
     name      = TECH_APP_INFANTRY_347_NAME
 
-    position  = { x = 564 y = 259 }
+    position  = { x = 564 y = 91 }
 	picture   = "13360"
     year      = 1961
     # Assault Rifle
@@ -1703,7 +1349,7 @@ technology =
   { id        = 13370
     name      = TECH_APP_INFANTRY_348_NAME
 
-    position  = { x = 564 y = 275 }
+    position  = { x = 564 y = 109 }
 	picture   = "13370"
     year      = 1978
     # Assault Rifle
@@ -1731,7 +1377,7 @@ technology =
   { id        = 13380
     name      = TECH_APP_INFANTRY_349_NAME
 
-    position  = { x = 564 y = 291 }
+    position  = { x = 564 y = 127 }
 	picture   = "13380"
     year      = 1981
     # Assault Rifle
@@ -1754,6 +1400,93 @@ technology =
 	  command = { type = desert_defense which = cavalry value = 5 }
     }
   }
+  
+#######################################
+################ EXOSUIT DIVISION #####
+#######################################
+
+  # Modern Exosuit Shock Division (1995)
+  application =
+  { id        = 77100
+    name      = TECH_APP_INFANTRY_77100_NAME
+
+    position  = { x = 564 y = 163 }
+	picture   = "13380"
+    year      = 1995
+    # Assault Rifle
+    component = { id = 77101 name = TECH_CMP_INFANTRY_349_1_NAME type = general_equipment difficulty = 6 }
+    # Armoured Halftracks
+    component = { id = 77102 name = TECH_CMP_INFANTRY_349_2_NAME type = vehicle_engineering difficulty = 7 }
+    # Armoured Cavalry Equipment
+    component = { id = 77103 name = TECH_CMP_INFANTRY_349_3_NAME type = mechanics difficulty = 7 }
+    # Mechanized Infantry Training
+    component = { id = 77104 name = TECH_CMP_INFANTRY_349_4_NAME type = training difficulty = 9 }
+    # Spearhead & Maneuver
+    component = { id = 77105 name = TECH_CMP_INFANTRY_349_5_NAME type = combined_arms_focus difficulty = 9 }
+    required  = { 77000 } # 1992 Mech. Inf.
+    effects =
+    { command = { type = new_model which = cavalry value = 18 }
+      command = { type = scrap_model which = cavalry value = 17 }
+	  command = { type = desert_move which = cavalry value = 10 }
+	  command = { type = desert_defense which = cavalry value = 5 }
+    }
+  }
+  
+    # Improved Exosuit Shock Division (2005)
+  application =
+  { id        = 77110
+    name      = TECH_APP_INFANTRY_77110_NAME
+
+    position  = { x = 564 y = 181 }
+	picture   = "13380"
+    year      = 2005
+    # Assault Rifle
+    component = { id = 77111 name = TECH_CMP_INFANTRY_349_1_NAME type = general_equipment difficulty = 6 }
+    # Armoured Halftracks
+    component = { id = 77112 name = TECH_CMP_INFANTRY_349_2_NAME type = vehicle_engineering difficulty = 7 }
+    # Armoured Cavalry Equipment
+    component = { id = 77113 name = TECH_CMP_INFANTRY_349_3_NAME type = mechanics difficulty = 7 }
+    # Mechanized Infantry Training
+    component = { id = 77114 name = TECH_CMP_INFANTRY_349_4_NAME type = training difficulty = 9 }
+    # Spearhead & Maneuver
+    component = { id = 77115 name = TECH_CMP_INFANTRY_349_5_NAME type = combined_arms_focus difficulty = 9 }
+    required  = { 77100 }
+    effects =
+    { command = { type = new_model which = cavalry value = 19 }
+      command = { type = scrap_model which = cavalry value = 18 }
+	  command = { type = desert_move which = cavalry value = 10 }
+	  command = { type = desert_defense which = cavalry value = 5 }
+    }
+  }
+
+   # Advanced Exosuit Shock Division (2015)
+  application =
+  { id        = 77120
+    name      = TECH_APP_INFANTRY_77120_NAME
+
+    position  = { x = 564 y = 199 }
+	picture   = "13380"
+    year      = 2005
+    # Assault Rifle
+    component = { id = 77121 name = TECH_CMP_INFANTRY_349_1_NAME type = general_equipment difficulty = 6 }
+    # Armoured Halftracks
+    component = { id = 77122 name = TECH_CMP_INFANTRY_349_2_NAME type = vehicle_engineering difficulty = 7 }
+    # Armoured Cavalry Equipment
+    component = { id = 77123 name = TECH_CMP_INFANTRY_349_3_NAME type = mechanics difficulty = 7 }
+    # Mechanized Infantry Training
+    component = { id = 77124 name = TECH_CMP_INFANTRY_349_4_NAME type = training difficulty = 9 }
+    # Spearhead & Maneuver
+    component = { id = 77125 name = TECH_CMP_INFANTRY_349_5_NAME type = combined_arms_focus difficulty = 9 }
+    required  = { 77110 }
+    effects =
+    { command = { type = new_model which = cavalry value = 20 }
+      command = { type = scrap_model which = cavalry value = 19 }
+	  command = { type = desert_move which = cavalry value = 10 }
+	  command = { type = desert_defense which = cavalry value = 5 }
+    }
+  }
+
+
   
 ###################################################################
 #################### MOTORIZED DIVISIONS
@@ -2322,6 +2055,157 @@ technology =
       command = { type = scrap_model which = mechanized value = 8 } 
 	  }
 	}
+
+	application = {
+  id = 77000
+  name = TECH_APP_INFANTRY_77000_NAME
+  
+  position = { x = 228 y = 199 }
+  picture = "13250"
+  year = 1992
+  
+  #Advanced APC
+  component = { id = 77001 name = TECH_CMP_INFANTRY_336_1_NAME type = vehicle_engineering difficulty = 10 }
+  #Infantry Support Vehicle
+  component = { id = 77002 name = TECH_CMP_INFANTRY_336_2_NAME type = vehicle_engineering difficulty = 9 }
+  #Integrated SP Artillery Usage
+  component = { id = 77003 name = TECH_CMP_INFANTRY_336_3_NAME type = small_unit_tactics difficulty = 10 }
+  #Battlefield Troop Delivery Tactics
+  component = { id = 77004 name = TECH_CMP_INFANTRY_336_4_NAME type = small_unit_tactics difficulty = 11 }
+  #Spearhead & Maneuver
+  component = { id = 77005 name = TECH_CMP_INFANTRY_336_5_NAME type = combined_arms_focus difficulty = 11 }
+  required = { 13250 }
+  effects = {
+  command = { type = new_model which = mechanized value = 10 }
+      command = { type = scrap_model which = mechanized value = 9 } 
+	  }
+	}
+
+	application = {
+  id = 77010
+  name = TECH_APP_INFANTRY_77010_NAME
+  
+  position = { x = 228 y = 217 }
+  picture = "13250"
+  year = 1996
+  
+  #Advanced APC
+  component = { id = 77011 name = TECH_CMP_INFANTRY_336_1_NAME type = vehicle_engineering difficulty = 10 }
+  #Infantry Support Vehicle
+  component = { id = 77012 name = TECH_CMP_INFANTRY_336_2_NAME type = vehicle_engineering difficulty = 9 }
+  #Integrated SP Artillery Usage
+  component = { id = 77013 name = TECH_CMP_INFANTRY_336_3_NAME type = small_unit_tactics difficulty = 10 }
+  #Battlefield Troop Delivery Tactics
+  component = { id = 77014 name = TECH_CMP_INFANTRY_336_4_NAME type = small_unit_tactics difficulty = 11 }
+  #Spearhead & Maneuver
+  component = { id = 77015 name = TECH_CMP_INFANTRY_336_5_NAME type = combined_arms_focus difficulty = 11 }
+  required = { 77000 }
+  effects = {
+  command = { type = new_model which = mechanized value = 11 }
+      command = { type = scrap_model which = mechanized value = 10 } 
+	  }
+	}
+
+	application = {
+  id = 77020
+  name = TECH_APP_INFANTRY_77020_NAME
+  
+  position = { x = 228 y = 235 }
+  picture = "13250"
+  year = 2000
+  
+  #Advanced APC
+  component = { id = 77021 name = TECH_CMP_INFANTRY_336_1_NAME type = vehicle_engineering difficulty = 10 }
+  #Infantry Support Vehicle
+  component = { id = 77022 name = TECH_CMP_INFANTRY_336_2_NAME type = vehicle_engineering difficulty = 9 }
+  #Integrated SP Artillery Usage
+  component = { id = 77023 name = TECH_CMP_INFANTRY_336_3_NAME type = small_unit_tactics difficulty = 10 }
+  #Battlefield Troop Delivery Tactics
+  component = { id = 77024 name = TECH_CMP_INFANTRY_336_4_NAME type = small_unit_tactics difficulty = 11 }
+  #Spearhead & Maneuver
+  component = { id = 77025 name = TECH_CMP_INFANTRY_336_5_NAME type = combined_arms_focus difficulty = 11 }
+  required = { 77010 }
+  effects = {
+  command = { type = new_model which = mechanized value = 12 }
+      command = { type = scrap_model which = mechanized value = 11 } 
+	  }
+	}
+
+	application = {
+  id = 77030
+  name = TECH_APP_INFANTRY_77030_NAME
+  
+  position = { x = 228 y = 253 }
+  picture = "13250"
+  year = 2004
+  
+  #Advanced APC
+  component = { id = 77031 name = TECH_CMP_INFANTRY_336_1_NAME type = vehicle_engineering difficulty = 10 }
+  #Infantry Support Vehicle
+  component = { id = 77032 name = TECH_CMP_INFANTRY_336_2_NAME type = vehicle_engineering difficulty = 9 }
+  #Integrated SP Artillery Usage
+  component = { id = 77033 name = TECH_CMP_INFANTRY_336_3_NAME type = small_unit_tactics difficulty = 10 }
+  #Battlefield Troop Delivery Tactics
+  component = { id = 77034 name = TECH_CMP_INFANTRY_336_4_NAME type = small_unit_tactics difficulty = 11 }
+  #Spearhead & Maneuver
+  component = { id = 77035 name = TECH_CMP_INFANTRY_336_5_NAME type = combined_arms_focus difficulty = 11 }
+  required = { 77020 }
+  effects = {
+  command = { type = new_model which = mechanized value = 13 }
+      command = { type = scrap_model which = mechanized value = 12 } 
+	  }
+	}
+
+	application = {
+  id = 77040
+  name = TECH_APP_INFANTRY_77040_NAME
+  
+  position = { x = 228 y = 271 }
+  picture = "13250"
+  year = 2010
+  
+  #Advanced APC
+  component = { id = 77041 name = TECH_CMP_INFANTRY_336_1_NAME type = vehicle_engineering difficulty = 10 }
+  #Infantry Support Vehicle
+  component = { id = 77042 name = TECH_CMP_INFANTRY_336_2_NAME type = vehicle_engineering difficulty = 9 }
+  #Integrated SP Artillery Usage
+  component = { id = 77043 name = TECH_CMP_INFANTRY_336_3_NAME type = small_unit_tactics difficulty = 10 }
+  #Battlefield Troop Delivery Tactics
+  component = { id = 77044 name = TECH_CMP_INFANTRY_336_4_NAME type = small_unit_tactics difficulty = 11 }
+  #Spearhead & Maneuver
+  component = { id = 77045 name = TECH_CMP_INFANTRY_336_5_NAME type = combined_arms_focus difficulty = 11 }
+  required = { 77030 }
+  effects = {
+  command = { type = new_model which = mechanized value = 14 }
+      command = { type = scrap_model which = mechanized value = 13 } 
+	  }
+	}
+
+	application = {
+  id = 77050
+  name = TECH_APP_INFANTRY_77050_NAME
+  
+  position = { x = 228 y = 289 }
+  picture = "13250"
+  year = 2015
+  
+  #Advanced APC
+  component = { id = 77051 name = TECH_CMP_INFANTRY_336_1_NAME type = vehicle_engineering difficulty = 10 }
+  #Infantry Support Vehicle
+  component = { id = 77052 name = TECH_CMP_INFANTRY_336_2_NAME type = vehicle_engineering difficulty = 9 }
+  #Integrated SP Artillery Usage
+  component = { id = 77053 name = TECH_CMP_INFANTRY_336_3_NAME type = small_unit_tactics difficulty = 10 }
+  #Battlefield Troop Delivery Tactics
+  component = { id = 77054 name = TECH_CMP_INFANTRY_336_4_NAME type = small_unit_tactics difficulty = 11 }
+  #Spearhead & Maneuver
+  component = { id = 77055 name = TECH_CMP_INFANTRY_336_5_NAME type = combined_arms_focus difficulty = 11 }
+  required = { 77040 }
+  effects = {
+  command = { type = new_model which = mechanized value = 15 }
+      command = { type = scrap_model which = mechanized value = 14 } 
+	  }
+	}
+
 
 ###################################################################
 #################### NAVAL INFANTRY
@@ -2981,93 +2865,12 @@ technology =
 #################### ENGINEER BRIGADES
 ###################################################################
 
-  # COMBAT ENGINEERS
-  application =
-  { id        = 1830
-    name      = TECH_APP_INFANTRY_83_NAME
-
-    position  = { x = 228 y = 213 }
-	picture   = "DH1830"
-    year      = 1911
-    # Combat Engineer Equipment
-    component = { id = 1831 name = TECH_CMP_INFANTRY_83_1_NAME type = general_equipment difficulty = 1 }
-    # Logistics Equipment
-    component = { id = 1832 name = TECH_CMP_INFANTRY_83_2_NAME type = general_equipment difficulty = 1 }
-    # Logistics Management
-    component = { id = 1833 name = TECH_CMP_INFANTRY_83_3_NAME type = management difficulty = 1 }
-    # Explosives and Mines
-    component = { id = 1834 name = TECH_CMP_INFANTRY_83_4_NAME type = chemistry difficulty = 1 }
-    # Engineer Training
-    component = { id = 1835 name = TECH_CMP_INFANTRY_83_5_NAME type = training difficulty = 1 }
-    required  = { 1910 }
-    effects =
-    { command = { type = activate_unit_type which = engineer }
-      command = { type = new_model which = engineer value = 0 }
-      command = { type = supply_dist_mod value = 1 }
-      command = { type = tc_mod value = 1 }
-      command = { type = building_prod_mod which = air_base value = 1 }
-    }
-  }
-  # 1916 ENGINEER
-  application =
-  { id        = 1840
-    name      = TECH_APP_INFANTRY_84_NAME
-
-    position  = { x = 228 y = 231 }
-	picture   = "DH1840"
-    year      = 1916
-    # Combat Engineer Equipment
-    component = { id = 1841 name = TECH_CMP_INFANTRY_84_1_NAME type = general_equipment difficulty = 1 }
-    # Logistics Equipment
-    component = { id = 1842 name = TECH_CMP_INFANTRY_84_2_NAME type = general_equipment difficulty = 1 }
-    # Logistics Management
-    component = { id = 1843 name = TECH_CMP_INFANTRY_84_3_NAME type = management difficulty = 1 }
-    # Explosives and Mines
-    component = { id = 1844 name = TECH_CMP_INFANTRY_84_4_NAME type = chemistry difficulty = 1 }
-    # Engineer Training
-    component = { id = 1845 name = TECH_CMP_INFANTRY_84_5_NAME type = training difficulty = 1 }
-    required  = { 1830 }
-    effects =
-    { command = { type = new_model which = engineer value = 1 }
-      command = { type = scrap_model which = engineer value = 0 }
-      command = { type = supply_dist_mod value = 1 }
-      command = { type = tc_mod value = 1 }
-      command = { type = building_prod_mod which = air_base value = 1 }
-    }
-  }
-  # 1921 ENGINEER
-  application =
-  { id        = 1850
-    name      = TECH_APP_INFANTRY_85_NAME
-
-    position  = { x = 228 y = 249 }
-	picture   = "DH1850"
-    year      = 1921
-    # Combat Engineer Equipment
-    component = { id = 1851 name = TECH_CMP_INFANTRY_85_1_NAME type = general_equipment difficulty = 1 }
-    # Logistics Equipment
-    component = { id = 1852 name = TECH_CMP_INFANTRY_85_2_NAME type = general_equipment difficulty = 1 }
-    # Logistics Management
-    component = { id = 1853 name = TECH_CMP_INFANTRY_85_3_NAME type = management difficulty = 1 }
-    # Explosives and Mines
-    component = { id = 1854 name = TECH_CMP_INFANTRY_85_4_NAME type = chemistry difficulty = 1 }
-    # Engineer Training
-    component = { id = 1855 name = TECH_CMP_INFANTRY_85_5_NAME type = training difficulty = 1 }
-    required  = { 1840 }
-    effects =
-    { command = { type = new_model which = engineer value = 2 }
-      command = { type = scrap_model which = engineer value = 1 }
-      command = { type = supply_dist_mod value = 1 }
-      command = { type = tc_mod value = 1 }
-      command = { type = building_prod_mod which = air_base value = 1 }
-    }
-  }
   # 1930 ENGINEER
   application =
   { id        = 1860
     name      = TECH_APP_INFANTRY_86_NAME
 
-    position  = { x = 228 y = 267 }
+    position  = { x = 228 y = 325 }
 	picture   = "DH1860"
     year      = 1930
     # Combat Engineer Equipment
@@ -3082,7 +2885,9 @@ technology =
     component = { id = 1865 name = TECH_CMP_INFANTRY_86_5_NAME type = training difficulty = 2 }
     required  = { 1850 }
     effects =
-    { command = { type = new_model which = engineer value = 3 }
+    { 
+	command = { type = activate_unit_type which = engineer }
+	command = { type = new_model which = engineer value = 3 }
       command = { type = scrap_model which = engineer value = 2 }
       command = { type = supply_dist_mod value = 1 }
       command = { type = tc_mod value = 1 }
@@ -3094,7 +2899,7 @@ technology =
   { id        = 1870
     name      = TECH_APP_INFANTRY_87_NAME
 
-    position  = { x = 228 y = 285 }
+    position  = { x = 228 y = 343 }
 	picture   = "DH1870"
     year      = 1939
     # Combat Engineer Equipment
@@ -3121,7 +2926,7 @@ technology =
   { id        = 1880
     name      = TECH_APP_INFANTRY_88_NAME
 
-    position  = { x = 228 y = 303 }
+    position  = { x = 228 y = 361 }
 	picture   = "DH1880"
     year      = 1945
     # Combat Engineer Equipment
@@ -3148,7 +2953,7 @@ technology =
   { id        = 1890
     name      = TECH_APP_INFANTRY_89_NAME
 
-    position  = { x = 228 y = 321 }
+    position  = { x = 228 y = 379 }
 	picture   = "DH1890"
     year      = 1952
     # Combat Engineer Equipment
@@ -3175,7 +2980,7 @@ technology =
   { id        = 1900
     name      = TECH_APP_INFANTRY_90_NAME
 
-    position  = { x = 228 y = 339 }
+    position  = { x = 228 y = 397 }
 	picture   = "DH1900"
     year      = 1960
     # Combat Engineer Equipment
@@ -3202,7 +3007,7 @@ technology =
   { id        = 13290
     name      = TECH_APP_INFANTRY_340_NAME
 
-    position  = { x = 228 y = 357 }
+    position  = { x = 228 y = 415 }
 	picture   = "13290"
     year      = 1970
     # Combat Engineer Equipment
@@ -3229,7 +3034,7 @@ technology =
   { id        = 13300
     name      = TECH_APP_INFANTRY_341_NAME
 
-    position  = { x = 228 y = 375 }
+    position  = { x = 228 y = 433 }
 	picture   = "13300"
     year      = 1980
     # Combat Engineer Equipment
@@ -3251,6 +3056,63 @@ technology =
       command = { type = building_prod_mod which = air_base value = 1 }
     }
   }
+  
+       # 1995 ENGINEER
+  application =
+  { id        = 77060
+    name      = TECH_APP_INFANTRY_77060_NAME
+
+    position  = { x = 228 y = 451 }
+	picture   = "13300"
+    year      = 1990
+    # Combat Engineer Equipment
+    component = { id = 77061 name = TECH_CMP_INFANTRY_341_1_NAME type = general_equipment difficulty = 4 }
+    # Logistics Equipment
+    component = { id = 77062 name = TECH_CMP_INFANTRY_341_2_NAME type = general_equipment difficulty = 4 }
+    # Logistics Management
+    component = { id = 77063 name = TECH_CMP_INFANTRY_341_3_NAME type = management difficulty = 4 }
+    # Explosives and Mines
+    component = { id = 77064 name = TECH_CMP_INFANTRY_341_4_NAME type = chemistry difficulty = 4 }
+    # Engineer Training
+    component = { id = 77065 name = TECH_CMP_INFANTRY_341_5_NAME type = training difficulty = 4 }
+    required  = { 13300 }
+    effects =
+    { command = { type = new_model which = engineer value = 10 }
+      command = { type = scrap_model which = engineer value = 9 }
+      command = { type = supply_dist_mod value = 1 }
+      command = { type = tc_mod value = 1 }
+      command = { type = building_prod_mod which = air_base value = 1 }
+    }
+  }
+
+       # 2000 ENGINEER
+  application =
+  { id        = 77070
+    name      = TECH_APP_INFANTRY_77070_NAME
+
+    position  = { x = 228 y = 469 }
+	picture   = "13300"
+    year      = 2000
+    # Combat Engineer Equipment
+    component = { id = 77066 name = TECH_CMP_INFANTRY_341_1_NAME type = general_equipment difficulty = 4 }
+    # Logistics Equipment
+    component = { id = 77067 name = TECH_CMP_INFANTRY_341_2_NAME type = general_equipment difficulty = 4 }
+    # Logistics Management
+    component = { id = 77068 name = TECH_CMP_INFANTRY_341_3_NAME type = management difficulty = 4 }
+    # Explosives and Mines
+    component = { id = 77069 name = TECH_CMP_INFANTRY_341_4_NAME type = chemistry difficulty = 4 }
+    # Engineer Training
+    component = { id = 77071 name = TECH_CMP_INFANTRY_341_5_NAME type = training difficulty = 4 }
+    required  = { 77060 }
+    effects =
+    { command = { type = new_model which = engineer value = 11 }
+      command = { type = scrap_model which = engineer value = 10 }
+      command = { type = supply_dist_mod value = 1 }
+      command = { type = tc_mod value = 1 }
+      command = { type = building_prod_mod which = air_base value = 1 }
+    }
+  }
+
 
 ###################################################################
 #################### SUPPLY

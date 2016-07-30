@@ -145,6 +145,7 @@ TECH_CAT_AIRBORNE;Airborne Infantry;Aйroportй;Forze aerotrasportate;Aerotranspor
 TECH_CAT_MARINES;Marines;Infanterie de marine;Marine;Inf. de marina;Marineinfanterie;Piechota morska;;Морская пехота;;;X
 TECH_CAT_MOUNTAIN;Light / Mountain;Montagne;Alpini;Inf. de montaсa;Gebirgsjдger;Strzelcy gуrscy;;Горнострелки;;;X
 TECH_CAT_CAVALRY;Cavalry;Cavalerie;Cavalleria;Caballerнa;Kavallerie;Kawaleria;;Кавалерия;;;X
+TECH_CAT_EXOSUIT;Exosuit Infantry;;;;;;;;;;X
 TECH_CAT_SUPPLY;Supply;Approvisionnement;Rifornimenti;Suministros;Versorgung;Zaopatrzenie;;Тыловое обеспечение и снабжение;;;X
 TECH_CAT_MOTORIZED;Motorized Infantry;Motorisй;Motorizzata;Motorizadas;Motorisierte;Zmotoryzowane;;Моторизованная пехота;;;X
 TECH_CAT_MECHANIZED;Mechanized Infantry;Mйcanisй;Meccanizzata;Mecanizadas;Mechanisierte;Zmechanizowane;;Механизированная пехота;;;X
@@ -8210,28 +8211,56 @@ SHORT_TECH_APP_INDUSTRY_530801_NAME;Adv. Mat. Science;;;;;;;;;;x
 TECH_APP_INDUSTRY_530901_NAME;Semimodern Material Science;;;;;;;;;;x
 SHORT_TECH_APP_INDUSTRY_530901_NAME;Semimod. Mat. Science;;;;;;;;;;x
 TECH_APP_INDUSTRY_531001_NAME;Modern Material Science;;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_531001_NAME;Mod. Mat. Science;;;;;;;;;;x
-TECH_APP_INDUSTRY_5470_NAME;Basic Civilian Power Production;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_5470_NAME;Bas. Civ. Power Prod.;;;;;;;;;x
-TECH_APP_INDUSTRY_5480_NAME;Advanced Civilian Power Production;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_5480_NAME;Adv. Civ. Power Prod.;;;;;;;;;x
-TECH_APP_INDUSTRY_5490_NAME;Modern Civilian Power Production;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_5490_NAME;Mod. Civ. Power Prod.;;;;;;;;;x
-TECH_APP_INDUSTRY_55670_NAME;Basic Civilian Power Production;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_55670_NAME;Bas. Civ. Production;;;;;;;;;x
-TECH_APP_INDUSTRY_55680_NAME;Advanced Civilian Power Production;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_55680_NAME;Adv. Civ. Production;;;;;;;;;x
-TECH_APP_INDUSTRY_55690_NAME;Modern Civilian Power Production;;;;;;;;;x
-SHORT_TECH_APP_INDUSTRY_55690_NAME;Mod. Civ. Production;;;;;;;;;x
-TECH_APP_INFANTRY_132101_NAME;1995 Infantry;;;;;;;;;x
-SHORT_TECH_APP_INFANTRY_132101_NAME;1995 Infantry;;;;;;;;;x
-TECH_APP_INFANTRY_132201_NAME;2000 Infantry;;;;;;;;;x
-SHORT_TECH_APP_INFANTRY_132201_NAME;2000 Infantry;;;;;;;;;x
-TECH_APP_INFANTRY_132301_NAME;2005 Infantry;;;;;;;;;x
-SHORT_TECH_APP_INFANTRY_132301_NAME;2005 Infantry;;;;;;;;;x
-TECH_APP_INFANTRY_132401_NAME;2010 Infantry;;;;;;;;;x
-SHORT_TECH_APP_INFANTRY_132401_NAME;2010 Infantry;;;;;;;;;x
-TECH_APP_INFANTRY_132501_NAME;2015 Infantry;;;;;;;;;x
-SHORT_TECH_APP_INFANTRY_132501_NAME;2015 Infantry;;;;;;;;;x
+SHORT_TECH_APP_INDUSTRY_531001_NAME;Mod. Mat. Science;;;;;;;;;;X
+TECH_APP_INDUSTRY_55670_NAME;Basic Civilian Power Production;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_55670_NAME;Bas. Civ. Production;;;;;;;;;;X
+TECH_APP_INDUSTRY_55680_NAME;Advanced Civilian Power Production;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_55680_NAME;Adv. Civ. Production;;;;;;;;;;X
+TECH_APP_INDUSTRY_55690_NAME;Modern Civilian Power Production;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_55690_NAME;Mod. Civ. Production;;;;;;;;;;X
+TECH_APP_INFANTRY_132101_NAME;1995 Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132101_NAME;1995 Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_132201_NAME;2000 Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132201_NAME;2000 Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_132301_NAME;2005 Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132301_NAME;2005 Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_132401_NAME;2010 Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132401_NAME;2010 Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_132501_NAME;2015 Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132501_NAME;2015 Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_1324501_NAME;1992 Mountain Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_1324501_NAME;1992 Mnt. Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_1325501_NAME;2000 Mountain Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_1325501_NAME;2000 Mnt. Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_132601_NAME;2010 Mountain Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132601_NAME;2010 Mnt. Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_132701_NAME;2015 Mountain Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132701_NAME;2015 Mnt. Infantry;;;;;;;;;;X
+TECH_APP_INFANTRY_13460_NAME;Futuristic Special Forces Brigade;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_13460_NAME;SF Bde. 1995;;;;;;;;;;X
+TECH_APP_INFANTRY_13470_NAME;Improved Futuristic Special Forces Brigade;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_13470_NAME;SF Bde. 2010;;;;;;;;;;X
+TECH_APP_INFANTRY_77000_NAME;1992 Mechanized Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77000_NAME;1992 Mechanized;;;;;;;;;;X
+TECH_APP_INFANTRY_77010_NAME;1996 Mechanized Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77010_NAME;1996 Mechanized;;;;;;;;;;X
+TECH_APP_INFANTRY_77020_NAME;2000 Mechanized Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77020_NAME;2000 Mechanized;;;;;;;;;;X
+TECH_APP_INFANTRY_77030_NAME;2004 Mechanized Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77030_NAME;2004 Mechanized;;;;;;;;;;X
+TECH_APP_INFANTRY_77040_NAME;2010 Mechanized Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77040_NAME;2010 Mechanized;;;;;;;;;;X
+TECH_APP_INFANTRY_77050_NAME;2015 Mechanized Infantry;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77050_NAME;2015 Mechanized;;;;;;;;;;X
+TECH_APP_INFANTRY_77060_NAME;1990 Combat Engineer Brigade;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77060_NAME;1990 Engineers;;;;;;;;;;X
+TECH_APP_INFANTRY_77070_NAME;2000 Combat Engineer Brigade;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77070_NAME;2000 Engineers;;;;;;;;;;X
+TECH_APP_INFANTRY_77100_NAME;Modern Exosuit Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77100_NAME;Modern Exosuit Inf.;;;;;;;;;;X
+TECH_APP_INFANTRY_77110_NAME;Improved Exosuit Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77110_NAME;Improved Exosuit Inf.;;;;;;;;;;X
+TECH_APP_INFANTRY_77120_NAME;Advanced Exosuit Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77120_NAME;Advanced Exosuit Inf.;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X

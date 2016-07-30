@@ -399,34 +399,7 @@ model = {
 	equipment = { manpower = 12000 trucks = 980 artillery = 90 heavy_artillery = 52 anti_tank = 52 anti_air = 56 halftracks = 658  medium_armor = 68  }
 }
 
-# 14 - Elite Mechanized Division (2007) 
-model = {
-	cost 					= 15
-	buildtime	 			= 345
-	manpower 				= 12
-	maxspeed 				= 39
-	defaultorganisation 	= 37
-	morale					= 50
-	defensiveness 			= 20
-	toughness				= 26
-	softness				= 40
-	suppression				= 2
-	airdefence				= 8
-	softattack				= 44
-	hardattack				= 35
-	airattack				= 23
-	transportweight			= 30
-	supplyconsumption 		= 1.7
-	fuelconsumption			= 12
-	no_fuel_combat_mod 		= -0.2
-	upgrade_time_factor 	= 0.60 
-	upgrade_cost_factor 	= 0.72
-	reinforce_time			= 0.60
-	reinforce_cost 			= 0.72
-	equipment = { manpower = 12000 trucks = 990 artillery = 100 heavy_artillery = 62 anti_tank = 62 anti_air = 66 halftracks = 668  medium_armor = 78  }
-}
-
-# 15 - Elite Mechanized Division (2010) 
+# 14 - Elite Mechanized Division (2010) 
 model = {
 	cost 					= 15
 	buildtime	 			= 345
@@ -453,7 +426,7 @@ model = {
 	equipment = { manpower = 12000 trucks = 990 artillery = 100 heavy_artillery = 62 anti_tank = 62 anti_air = 66 halftracks = 668  medium_armor = 78  }
 }
 
-# 16 - Elite Mechanized Division (2015) 
+# 14 - Elite Mechanized Division (2015) 
 model = {
 	cost 					= 15
 	buildtime	 			= 345

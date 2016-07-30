@@ -553,7 +553,7 @@ model = {
 	equipment = { manpower = 11000 trucks = 2486 artillery = 86 heavy_artillery = 22 anti_tank = 52 anti_air = 22 armored_car = 93 halftracks = 386  medium_armor = 117 }
 }
 
-# 20 - Improved Exosuit Shock Division (2015)
+# 20 - Advanced Exosuit Shock Division (2015)
 model = {
 	cost 					= 15
 	buildtime	 			= 350

@@ -124,3 +124,39 @@ model = {
 	upgrade_cost_factor	= 0.42
 	equipment = { manpower = 1000 helicopter = 10}
 }
+
+# 7 - Special Forces Brigade '95
+model = { 
+	cost				= 10
+	buildtime			= 250
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -4
+	softattack			= 21
+	hardattack			= 9
+	maxspeed			= 7
+	morale				= 8
+	supplyconsumption	= 0.2
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 helicopter = 10}
+}
+
+# 8 - Special Forces Brigade 2010
+model = { 
+	cost				= 10.5
+	buildtime			= 250
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -5
+	softattack			= 23
+	hardattack			= 11
+	maxspeed			= 7
+	morale				= 8
+	supplyconsumption	= 0.3
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 helicopter = 10}
+}
