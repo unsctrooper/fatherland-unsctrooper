@@ -2209,106 +2209,6 @@ technology =
 #################### NAVAL INFANTRY
 ###################################################################
 
-  # 1922 NAVAL INFANTRY
-  application =
-  { id        = 1560
-    name      = TECH_APP_INFANTRY_56_NAME
-
-	picture   = "DH1560"
-    year      = 1922
-    position  = { x = 452 y = 19 }
-    # Service Rifle
-    component = { id = 1561 name = TECH_CMP_INFANTRY_56_1_NAME type = general_equipment difficulty = 3 }
-    # Amphibious Assault Tactics
-    component = { id = 1562 name = TECH_CMP_INFANTRY_56_2_NAME type = small_unit_tactics difficulty = 4 double_time = yes }
-    # Naval Gunfire
-    component = { id = 1563 name = TECH_CMP_INFANTRY_56_3_NAME type = marine_training difficulty = 4 }
-    # Amphibious Assault Vehicles
-    component = { id = 1564 name = TECH_CMP_INFANTRY_56_4_NAME type = marine_training difficulty = 4 }
-    # Naval Infantry Training
-    component = { id = 1565 name = TECH_CMP_INFANTRY_56_5_NAME type = marine_training difficulty = 4 double_time = yes }
-    OR_required  = { 1050 1200 }
-    effects =
-    { command = { type = activate_unit_type which = marine }
-      command = { type = new_model which = marine value = 0 }
-      command = { type = task_efficiency which = amphibious_assault value = 0.05 }
-    }
-  }
-  # 1925 NAVAL INFANTRY
-  application =
-  { id        = 1570
-    name      = TECH_APP_INFANTRY_57_NAME
-
-	picture   = "DH1570"
-    year      = 1925
-    position  = { x = 452 y = 37 }
-    # Service Rifle
-    component = { id = 1571 name = TECH_CMP_INFANTRY_57_1_NAME type = general_equipment difficulty = 3 }
-    # Amphibious Assault Tactics
-    component = { id = 1572 name = TECH_CMP_INFANTRY_57_2_NAME type = small_unit_tactics difficulty = 4 double_time = yes }
-    # Naval Gunfire
-    component = { id = 1573 name = TECH_CMP_INFANTRY_57_3_NAME type = marine_training difficulty = 4 }
-    # Amphibious Assault Vehicles
-    component = { id = 1574 name = TECH_CMP_INFANTRY_57_4_NAME type = marine_training difficulty = 4 }
-    # Naval Infantry Training
-    component = { id = 1575 name = TECH_CMP_INFANTRY_57_5_NAME type = marine_training difficulty = 4 double_time = yes }
-    required  = { 1560 }
-    effects =
-    { command = { type = new_model which = marine value = 1 }
-      command = { type = scrap_model which = marine value = 0 }
-      command = { type = task_efficiency which = amphibious_assault value = 0.05 }
-    }
-  }
-  # 1931 NAVAL INFANTRY
-  application =
-  { id        = 1580
-    name      = TECH_APP_INFANTRY_58_NAME
-
-	picture   = "DH1580"
-    year      = 1931
-    position  = { x = 452 y = 55 }
-    # Service Rifle
-    component = { id = 1581 name = TECH_CMP_INFANTRY_58_1_NAME type = general_equipment difficulty = 4 }
-    # Amphibious Assault Tactics
-    component = { id = 1582 name = TECH_CMP_INFANTRY_58_2_NAME type = small_unit_tactics difficulty = 4 double_time = yes }
-    # Naval Gunfire
-    component = { id = 1583 name = TECH_CMP_INFANTRY_58_3_NAME type = marine_training difficulty = 4 }
-    # Amphibious Assault Vehicles
-    component = { id = 1584 name = TECH_CMP_INFANTRY_58_4_NAME type = marine_training difficulty = 4 }
-    # Naval Infantry Training
-    component = { id = 1585 name = TECH_CMP_INFANTRY_58_5_NAME type = marine_training difficulty = 4 double_time = yes }
-    required  = { 1570 }
-    effects =
-    { command = { type = new_model which = marine value = 2 }
-      command = { type = scrap_model which = marine value = 1 }
-      command = { type = task_efficiency which = amphibious_assault value = 0.05 }
-    }
-  }
-  # 1937 NAVAL INFANTRY
-  application =
-  { id        = 1590
-    name      = TECH_APP_INFANTRY_59_NAME
-
-	picture   = "DH1590"
-    year      = 1937
-    position  = { x = 452 y = 73 }
-    # Machine Pistol
-    component = { id = 1591 name = TECH_CMP_INFANTRY_59_1_NAME type = general_equipment difficulty = 4 }
-    # Amphibious Assault Tactics
-    component = { id = 1592 name = TECH_CMP_INFANTRY_59_2_NAME type = small_unit_tactics difficulty = 5 double_time = yes }
-    # Naval Gunfire
-    component = { id = 1593 name = TECH_CMP_INFANTRY_59_3_NAME type = marine_training difficulty = 5 }
-    # Amphibious Assault Vehicles
-    component = { id = 1594 name = TECH_CMP_INFANTRY_59_4_NAME type = marine_training difficulty = 5 }
-    # Naval Infantry Training
-    component = { id = 1595 name = TECH_CMP_INFANTRY_59_5_NAME type = marine_training difficulty = 5 double_time = yes }
-    required  = { 1580 }
-    effects =
-    { command = { type = new_model which = marine value = 3 }
-      command = { type = scrap_model which = marine value = 2 }
-      command = { type = task_efficiency which = amphibious_assault value = 0.05 }
-    }
-  }
   # 1940 NAVAL INFANTRY
   application =
   { id        = 1600
@@ -2316,7 +2216,7 @@ technology =
 
 	picture   = "DH1600"
     year      = 1940
-    position  = { x = 452 y = 91 }
+    position  = { x = 452 y = 19 }
     # Machine Pistol
     component = { id = 1601 name = TECH_CMP_INFANTRY_60_1_NAME type = general_equipment difficulty = 5 }
     # Amphibious Assault Tactics
@@ -2329,7 +2229,9 @@ technology =
     component = { id = 1605 name = TECH_CMP_INFANTRY_60_5_NAME type = marine_training difficulty = 5 double_time = yes }
     required  = { 1590 }
     effects =
-    { command = { type = new_model which = marine value = 4 }
+    { 
+	command = { type = activate_unit_type which = marine }
+	command = { type = new_model which = marine value = 4 }
       command = { type = scrap_model which = marine value = 3 }
       command = { type = task_efficiency which = amphibious_assault value = 0.05 }
     }
@@ -2341,7 +2243,7 @@ technology =
 
 	picture   = "DH1610"
     year      = 1943
-    position  = { x = 452 y = 109 }
+    position  = { x = 452 y = 37 }
     # Assault Rifle
     component = { id = 1611 name = TECH_CMP_INFANTRY_61_1_NAME type = general_equipment difficulty = 6 }
     # Amphibious Assault Tactics
@@ -2366,7 +2268,7 @@ technology =
 
 	picture   = "DH1620"
     year      = 1946
-    position  = { x = 452 y = 127 }
+    position  = { x = 452 y = 55 }
     # Assault Rifle
     component = { id = 1621 name = TECH_CMP_INFANTRY_62_1_NAME type = general_equipment difficulty = 6 }
     # Amphibious Assault Tactics
@@ -2391,7 +2293,7 @@ technology =
 
 	picture   = "DH1630"
     year      = 1949
-    position  = { x = 452 y = 145 }
+    position  = { x = 452 y = 73 }
     # Assault Rifle
     component = { id = 1631 name = TECH_CMP_INFANTRY_63_1_NAME type = general_equipment difficulty = 7 }
     # Amphibious Assault Tactics
@@ -2416,7 +2318,7 @@ technology =
 
 	picture   = "DH1640"
     year      = 1953
-    position  = { x = 452 y = 163 }
+    position  = { x = 452 y = 91 }
     # Assault Rifle
     component = { id = 1641 name = TECH_CMP_INFANTRY_64_1_NAME type = general_equipment difficulty = 7 }
     # Amphibious Assault Tactics
@@ -2441,7 +2343,7 @@ technology =
 
 	picture   = "DH1650"
     year      = 1957
-    position  = { x = 452 y = 181 }
+    position  = { x = 452 y = 109 }
     # Assault Rifle
     component = { id = 1651 name = TECH_CMP_INFANTRY_65_1_NAME type = general_equipment difficulty = 7 }
     # Amphibious Assault Tactics
@@ -2466,7 +2368,7 @@ technology =
 
 	picture   = "DH1660"
     year      = 1961
-    position  = { x = 452 y = 199 }
+    position  = { x = 452 y = 127 }
     # Assault Rifle
     component = { id = 1661 name = TECH_CMP_INFANTRY_66_1_NAME type = general_equipment difficulty = 7 }
     # Amphibious Assault Tactics
@@ -2491,7 +2393,7 @@ technology =
   
   picture = "13130"
   year = 1972
-  position = { x = 452 y = 217 }
+  position = { x = 452 y = 145 }
   
   #Assault Rifle
   component = { id = 13131 name = TECH_CMP_INFANTRY_324_1_NAME type = general_equipment difficulty = 7 }
@@ -2517,7 +2419,7 @@ technology =
   
   picture = "13330"
   year = 1981
-  position = { x = 452 y = 235 }
+  position = { x = 452 y = 163 }
   
   #Assault Rifle
   component = { id = 13331 name = TECH_CMP_INFANTRY_344_1_NAME type = general_equipment difficulty = 7 }
@@ -2536,14 +2438,14 @@ technology =
       command = { type = task_efficiency which = amphibious_assault value = 0.07 }
     }
   }
-      #1988 NAVAL INFANTRY
+  #1988 NAVAL INFANTRY
   application = {
   id = 13340
   name = TECH_APP_INFANTRY_345_NAME
   
   picture = "13340"
   year = 1988
-  position = { x = 452 y = 253 }
+  position = { x = 452 y = 181 }
   
   #Assault Rifle
   component = { id = 13341 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
@@ -2563,6 +2465,142 @@ technology =
     }
   }
 
+   #1990 NAVAL INFANTRY
+  application = {
+  id = 77300
+  name = TECH_APP_INFANTRY_345_NAME
+  
+  picture = "13340"
+  year = 1990
+  position = { x = 452 y = 199 }
+  
+  #Assault Rifle
+  component = { id = 77301 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
+  #Amphibious Assault Tactics
+  component = { id = 77302 name = TECH_CMP_INFANTRY_345_2_NAME type = marine_training difficulty = 8 double_time = yes }
+  #Modern Marine Recon Tactics
+  component = { id = 77303 name = TECH_CMP_INFANTRY_345_3_NAME type = marine_training difficulty = 8 }
+  # Amphibious Assault Vehicles
+  component = { id = 77304 name = TECH_CMP_INFANTRY_345_4_NAME type = vehicle_engineering difficulty = 8 }
+  # Naval Infantry Training
+  component = { id = 77305 name = TECH_CMP_INFANTRY_345_5_NAME type = marine_training difficulty = 8 double_time = yes }
+  required = { 13340 }
+  effects = 
+  { command = { type = new_model which = marine value = 14 }
+      command = { type = scrap_model which = marine value = 13 }
+      command = { type = task_efficiency which = amphibious_assault value = 0.07 }
+    }
+  }
+  
+    #2000 NAVAL INFANTRY
+  application = {
+  id = 77310
+  name = TECH_APP_INFANTRY_345_NAME
+  
+  picture = "13340"
+  year = 2000
+  position = { x = 452 y = 217 }
+  
+  #Assault Rifle
+  component = { id = 77311 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
+  #Amphibious Assault Tactics
+  component = { id = 77312 name = TECH_CMP_INFANTRY_345_2_NAME type = marine_training difficulty = 8 double_time = yes }
+  #Modern Marine Recon Tactics
+  component = { id = 77313 name = TECH_CMP_INFANTRY_345_3_NAME type = marine_training difficulty = 8 }
+  # Amphibious Assault Vehicles
+  component = { id = 77314 name = TECH_CMP_INFANTRY_345_4_NAME type = vehicle_engineering difficulty = 8 }
+  # Naval Infantry Training
+  component = { id = 77315 name = TECH_CMP_INFANTRY_345_5_NAME type = marine_training difficulty = 8 double_time = yes }
+  required = { 77300 }
+  effects = 
+  { command = { type = new_model which = marine value = 15 }
+      command = { type = scrap_model which = marine value = 14 }
+      command = { type = task_efficiency which = amphibious_assault value = 0.07 }
+    }
+  }
+
+   #2005 NAVAL INFANTRY
+  application = {
+  id = 77320
+  name = TECH_APP_INFANTRY_345_NAME
+  
+  picture = "13340"
+  year = 2005
+  position = { x = 452 y = 235 }
+  
+  #Assault Rifle
+  component = { id = 77321 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
+  #Amphibious Assault Tactics
+  component = { id = 77322 name = TECH_CMP_INFANTRY_345_2_NAME type = marine_training difficulty = 8 double_time = yes }
+  #Modern Marine Recon Tactics
+  component = { id = 77323 name = TECH_CMP_INFANTRY_345_3_NAME type = marine_training difficulty = 8 }
+  # Amphibious Assault Vehicles
+  component = { id = 77324 name = TECH_CMP_INFANTRY_345_4_NAME type = vehicle_engineering difficulty = 8 }
+  # Naval Infantry Training
+  component = { id = 77325 name = TECH_CMP_INFANTRY_345_5_NAME type = marine_training difficulty = 8 double_time = yes }
+  required = { 77310 }
+  effects = 
+  { command = { type = new_model which = marine value = 16 }
+      command = { type = scrap_model which = marine value = 15 }
+      command = { type = task_efficiency which = amphibious_assault value = 0.07 }
+    }
+  }
+
+     #2010 NAVAL INFANTRY
+  application = {
+  id = 77330
+  name = TECH_APP_INFANTRY_345_NAME
+  
+  picture = "13340"
+  year = 2010
+  position = { x = 452 y = 253 }
+  
+  #Assault Rifle
+  component = { id = 77331 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
+  #Amphibious Assault Tactics
+  component = { id = 77332 name = TECH_CMP_INFANTRY_345_2_NAME type = marine_training difficulty = 8 double_time = yes }
+  #Modern Marine Recon Tactics
+  component = { id = 77333 name = TECH_CMP_INFANTRY_345_3_NAME type = marine_training difficulty = 8 }
+  # Amphibious Assault Vehicles
+  component = { id = 77334 name = TECH_CMP_INFANTRY_345_4_NAME type = vehicle_engineering difficulty = 8 }
+  # Naval Infantry Training
+  component = { id = 77335 name = TECH_CMP_INFANTRY_345_5_NAME type = marine_training difficulty = 8 double_time = yes }
+  required = { 77320 }
+  effects = 
+  { command = { type = new_model which = marine value = 17 }
+      command = { type = scrap_model which = marine value = 16 }
+      command = { type = task_efficiency which = amphibious_assault value = 0.07 }
+    }
+  }
+
+       #2015 NAVAL INFANTRY
+  application = {
+  id = 77340
+  name = TECH_APP_INFANTRY_345_NAME
+  
+  picture = "13340"
+  year = 2015
+  position = { x = 452 y = 253 }
+  
+  #Assault Rifle
+  component = { id = 77341 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
+  #Amphibious Assault Tactics
+  component = { id = 77342 name = TECH_CMP_INFANTRY_345_2_NAME type = marine_training difficulty = 8 double_time = yes }
+  #Modern Marine Recon Tactics
+  component = { id = 77343 name = TECH_CMP_INFANTRY_345_3_NAME type = marine_training difficulty = 8 }
+  # Amphibious Assault Vehicles
+  component = { id = 77344 name = TECH_CMP_INFANTRY_345_4_NAME type = vehicle_engineering difficulty = 8 }
+  # Naval Infantry Training
+  component = { id = 77345 name = TECH_CMP_INFANTRY_345_5_NAME type = marine_training difficulty = 8 double_time = yes }
+  required = { 77330 }
+  effects = 
+  { command = { type = new_model which = marine value = 18 }
+      command = { type = scrap_model which = marine value = 17 }
+      command = { type = task_efficiency which = amphibious_assault value = 0.07 }
+    }
+  }
+
+  
 ###################################################################
 #################### AIRBORNE INFANTRY
 ###################################################################
