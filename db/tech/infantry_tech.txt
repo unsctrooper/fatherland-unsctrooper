@@ -981,7 +981,7 @@ technology =
   id = 13400
   name = TECH_APP_INFANTRY_353_NAME
   
-  position = { x = 117 y = 397 }
+  position = { x = 117 y = 415 }
   picture = "13400"
   year = 1945
   
@@ -1035,7 +1035,7 @@ technology =
   id = 13420
   name = TECH_APP_INFANTRY_355_NAME
   
-  position = { x = 117 y = 415 }
+  position = { x = 117 y = 433 }
   picture = "13420"
   year = 1957
   
@@ -1089,7 +1089,7 @@ technology =
   id = 13440
   name = TECH_APP_INFANTRY_357_NAME
   
-  position = { x = 117 y = 433 }
+  position = { x = 117 y = 451 }
   picture = "13440"
   year = 1975
   
@@ -1144,7 +1144,7 @@ technology =
   id = 13460
   name = TECH_APP_INFANTRY_13460_NAME
 
-  position = { x = 117 y = 451 }
+  position = { x = 117 y = 469 }
   picture = "13450"
   year = 1995
   
@@ -1489,36 +1489,12 @@ technology =
 ###################################################################
 #################### MOTORIZED DIVISIONS
 ###################################################################
-  # 1935 MOTORIZED INFANTRY
-  application =
-  { id        = 1396
-    name      = TECH_APP_INFANTRY_319_NAME
-
-    position  = { x = 340 y = 19 }
-	picture   = "1220"
-    year      = 1935
-    # Trucks
-    component = { id = 131911 name = TECH_CMP_INFANTRY_40_1_NAME type = vehicle_engineering difficulty = 4 }
-    # Machine Pistol
-    component = { id = 131922 name = TECH_CMP_INFANTRY_40_2_NAME type = general_equipment difficulty = 3 }
-    # Towed Artillery
-    component = { id = 131933 name = TECH_CMP_INFANTRY_40_3_NAME type = vehicle_engineering difficulty = 4 }
-    # Combined Arms Initiative Training
-    component = { id = 131944 name = TECH_CMP_INFANTRY_40_4_NAME type = training difficulty = 5 double_time = yes }
-    # Motorized Infantry Tactics
-    component = { id = 131955 name = TECH_CMP_INFANTRY_40_5_NAME type = combined_arms_focus difficulty = 5 double_time = yes }
-    required  = { 1090 }
-    effects =
-    { command = { type = activate_unit_type which = motorized }
-      command = { type = new_model which = motorized value = 0 }
-    }
-  }
   # 1939 MOTORIZED INFANTRY
   application =
   { id        = 1400
     name      = TECH_APP_INFANTRY_40_NAME
 
-    position  = { x = 340 y = 37 }
+    position  = { x = 340 y = 19 }
 	picture   = "1230"
     year      = 1939
     # Trucks
@@ -1543,7 +1519,7 @@ technology =
   { id        = 1410
     name      = TECH_APP_INFANTRY_41_NAME
 
-    position  = { x = 340 y = 55 }
+    position  = { x = 340 y = 37 }
 	picture   = "1240"
     year      = 1942
     # Trucks
@@ -1568,7 +1544,7 @@ technology =
   { id        = 1420
     name      = TECH_APP_INFANTRY_42_NAME
 
-    position  = { x = 340 y = 73 }
+    position  = { x = 340 y = 55 }
 	picture   = "1250"
     year      = 1945
     # Trucks
@@ -1594,7 +1570,7 @@ technology =
   { id        = 1430
     name      = TECH_APP_INFANTRY_43_NAME
 
-    position  = { x = 340 y = 91 }
+    position  = { x = 340 y = 73 }
 	picture   = "DH1430"
     year      = 1948
     # Trucks
@@ -1620,7 +1596,7 @@ technology =
   { id        = 1440
     name      = TECH_APP_INFANTRY_44_NAME
 
-    position  = { x = 340 y = 109 }
+    position  = { x = 340 y = 91 }
 	picture   = "DH1440"
     year      = 1952
     # Trucks
@@ -1646,7 +1622,7 @@ technology =
   { id        = 1450
     name      = TECH_APP_INFANTRY_45_NAME
 
-    position  = { x = 340 y = 127 }
+    position  = { x = 340 y = 109 }
 	picture   = "1270"
     year      = 1956
     # Trucks
@@ -1672,7 +1648,7 @@ technology =
   { id        = 1460
     name      = TECH_APP_INFANTRY_46_NAME
 
-    position  = { x = 340 y = 145 }
+    position  = { x = 340 y = 127 }
 	picture   = "DH1460"
     year      = 1960
     # Trucks
@@ -1695,7 +1671,7 @@ technology =
   application = {
   id = 13160
   name = TECH_APP_INFANTRY_327_NAME
-  position = { x = 340 y = 163 }
+  position = { x = 340 y = 145 }
   picture = "13160"
   year = 1968
   # Trucks
@@ -1718,7 +1694,7 @@ technology =
   application = {
   id = 13170
   name = TECH_APP_INFANTRY_328_NAME
-  position = { x = 340 y = 181 }
+  position = { x = 340 y = 163 }
   picture = "13170"
   year = 1974
   # Trucks
@@ -1741,7 +1717,7 @@ technology =
   application = {
   id = 13260
   name = TECH_APP_INFANTRY_337_NAME
-  position = { x = 340 y = 199 }
+  position = { x = 340 y = 181 }
   picture = "13260"
   year = 1981
   # Trucks
@@ -1764,7 +1740,7 @@ technology =
   application = {
   id = 13270
   name = TECH_APP_INFANTRY_338_NAME
-  position = { x = 340 y = 217 }
+  position = { x = 340 y = 199 }
   picture = "13270"
   year = 1984
   # Trucks
@@ -1783,11 +1759,11 @@ technology =
       command = { type = scrap_model which = motorized value = 10 }
 	  }
 	}
-	  	  #1988 MOTORIZED INFANTRY
+  #1988 MOTORIZED INFANTRY
   application = {
   id = 13280
   name = TECH_APP_INFANTRY_339_NAME
-  position = { x = 340 y = 235 }
+  position = { x = 340 y = 217 }
   picture = "13280"
   year = 1988
   # Trucks
@@ -1804,6 +1780,150 @@ technology =
   effects = {
   command = { type = new_model which = motorized value = 12 }
       command = { type = scrap_model which = motorized value = 11 }
+	  }
+	}
+  #1992 MOTORIZED INFANTRY
+  application = {
+  id = 77400
+  name = TECH_APP_INFANTRY_77400_NAME
+  position = { x = 340 y = 235 }
+  picture = "13280"
+  year = 1992
+  # Trucks
+  component = { id = 13281 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  # Assault Rifle
+  component = { id = 13282 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  # Mobilized Artillery
+  component = { id = 13283 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  # Combined Arms Initiative Training
+  component = { id = 13284 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  # Motorized Infantry Tactics
+  component = { id = 13285 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  required = { 13280 }
+  effects = {
+  command = { type = new_model which = motorized value = 13 }
+      command = { type = scrap_model which = motorized value = 12 }
+	  }
+	}
+	
+  label =
+  { tag      = TECH_CAT_MOTORIZED_CONT
+    position = { x = 116 y = 308 }
+  }
+	
+  #1996 MOTORIZED INFANTRY
+  application = {
+  id = 77410
+  name = TECH_APP_INFANTRY_77410_NAME
+  position = { x = 116 y = 326 }
+  picture = "13280"
+  year = 1996
+  # Trucks
+  component = { id = 77411 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  # Assault Rifle
+  component = { id = 77412 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  # Mobilized Artillery
+  component = { id = 77413 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  # Combined Arms Initiative Training
+  component = { id = 77414 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  # Motorized Infantry Tactics
+  component = { id = 77415 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  required = { 77400 }
+  effects = {
+  command = { type = new_model which = motorized value = 14 }
+      command = { type = scrap_model which = motorized value = 13 }
+	  }
+	}
+  #2000 MOTORIZED INFANTRY
+  application = {
+  id = 77420
+  name = TECH_APP_INFANTRY_77420_NAME
+  position = { x = 116 y = 344 }
+  picture = "13280"
+  year = 2000
+  # Trucks
+  component = { id = 77421 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  # Assault Rifle
+  component = { id = 77422 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  # Mobilized Artillery
+  component = { id = 77423 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  # Combined Arms Initiative Training
+  component = { id = 77424 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  # Motorized Infantry Tactics
+  component = { id = 77425 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  required = { 77410 }
+  effects = {
+  command = { type = new_model which = motorized value = 15 }
+      command = { type = scrap_model which = motorized value = 14 }
+	  }
+	}
+  #2005 MOTORIZED INFANTRY
+  application = {
+  id = 77430
+  name = TECH_APP_INFANTRY_77430_NAME
+  position = { x = 116 y = 362 }
+  picture = "13280"
+  year = 2005
+  # Trucks
+  component = { id = 77431 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  # Assault Rifle
+  component = { id = 77432 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  # Mobilized Artillery
+  component = { id = 77433 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  # Combined Arms Initiative Training
+  component = { id = 77434 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  # Motorized Infantry Tactics
+  component = { id = 77435 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  required = { 77420 }
+  effects = {
+  command = { type = new_model which = motorized value = 16 }
+      command = { type = scrap_model which = motorized value = 15 }
+	  }
+	}
+  #2010 MOTORIZED INFANTRY
+  application = {
+  id = 77440
+  name = TECH_APP_INFANTRY_77440_NAME
+  position = { x = 116 y = 380 }
+  picture = "13280"
+  year = 2010
+  # Trucks
+  component = { id = 77441 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  # Assault Rifle
+  component = { id = 77442 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  # Mobilized Artillery
+  component = { id = 77443 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  # Combined Arms Initiative Training
+  component = { id = 77444 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  # Motorized Infantry Tactics
+  component = { id = 77445 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  required = { 77430 }
+  effects = {
+  command = { type = new_model which = motorized value = 17 }
+      command = { type = scrap_model which = motorized value = 16 }
+	  }
+	}
+  #2015 MOTORIZED INFANTRY
+  application = {
+  id = 77450
+  name = TECH_APP_INFANTRY_77450_NAME
+  position = { x = 116 y = 398 }
+  picture = "13280"
+  year = 2015
+  # Trucks
+  component = { id = 77451 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  # Assault Rifle
+  component = { id = 77452 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  # Mobilized Artillery
+  component = { id = 77453 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  # Combined Arms Initiative Training
+  component = { id = 77454 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  # Motorized Infantry Tactics
+  component = { id = 77455 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  required = { 77440 }
+  effects = {
+  command = { type = new_model which = motorized value = 18 }
+      command = { type = scrap_model which = motorized value = 17 }
 	  }
 	}
 
@@ -2468,7 +2588,7 @@ technology =
    #1990 NAVAL INFANTRY
   application = {
   id = 77300
-  name = TECH_APP_INFANTRY_345_NAME
+  name = TECH_APP_INFANTRY_77300_NAME
   
   picture = "13340"
   year = 1990
@@ -2495,7 +2615,7 @@ technology =
     #2000 NAVAL INFANTRY
   application = {
   id = 77310
-  name = TECH_APP_INFANTRY_345_NAME
+  name = TECH_APP_INFANTRY_77310_NAME
   
   picture = "13340"
   year = 2000
@@ -2522,7 +2642,7 @@ technology =
    #2005 NAVAL INFANTRY
   application = {
   id = 77320
-  name = TECH_APP_INFANTRY_345_NAME
+  name = TECH_APP_INFANTRY_77320_NAME
   
   picture = "13340"
   year = 2005
@@ -2549,7 +2669,7 @@ technology =
      #2010 NAVAL INFANTRY
   application = {
   id = 77330
-  name = TECH_APP_INFANTRY_345_NAME
+  name = TECH_APP_INFANTRY_77330_NAME
   
   picture = "13340"
   year = 2010
@@ -2576,11 +2696,11 @@ technology =
        #2015 NAVAL INFANTRY
   application = {
   id = 77340
-  name = TECH_APP_INFANTRY_345_NAME
+  name = TECH_APP_INFANTRY_77340_NAME
   
   picture = "13340"
   year = 2015
-  position = { x = 452 y = 253 }
+  position = { x = 452 y = 271 }
   
   #Assault Rifle
   component = { id = 77341 name = TECH_CMP_INFANTRY_345_1_NAME type = general_equipment difficulty = 7 }
@@ -2605,36 +2725,12 @@ technology =
 #################### AIRBORNE INFANTRY
 ###################################################################
 
-  # 1938 AIRBORNE INFANTRY
-  application =
-  { id        = 1670
-    name      = TECH_APP_INFANTRY_67_NAME
-
-    position  = { x = 340 y = 267 }
-	picture   = "DH1670"
-    year      = 1938
-    # Machine Pistol
-    component = { id = 1671 name = TECH_CMP_INFANTRY_67_1_NAME type = general_equipment difficulty = 4 }
-    # Airborne Assault Tactics
-    component = { id = 1672 name = TECH_CMP_INFANTRY_67_2_NAME type = small_unit_tactics difficulty = 5 double_time = yes }
-    # Landing Equipment
-    component = { id = 1673 name = TECH_CMP_INFANTRY_67_3_NAME type = airborne_training difficulty = 5 }
-    # Paratrooper Vehicles
-    component = { id = 1674 name = TECH_CMP_INFANTRY_67_4_NAME type = airborne_training difficulty = 5 }
-    # Paratrooper Drop Training
-    component = { id = 1675 name = TECH_CMP_INFANTRY_67_5_NAME type = airborne_training difficulty = 5 double_time = yes }
-    required  = { 1080 }
-    effects =
-    { command = { type = activate_unit_type which = paratrooper }
-      command = { type = new_model which = paratrooper value = 0 }
-    }
-  }
   # 1941 AIRBORNE INFANTRY
   application =
   { id        = 1680
     name      = TECH_APP_INFANTRY_68_NAME
 
-    position  = { x = 340 y = 285 }
+    position  = { x = 340 y = 267 }
 	picture   = "DH1680"
     year      = 1941
     # Machine Pistol
@@ -2649,7 +2745,9 @@ technology =
     component = { id = 1685 name = TECH_CMP_INFANTRY_68_5_NAME type = airborne_training difficulty = 5 double_time = yes }
     required  = { 1670 }
     effects =
-    { command = { type = new_model which = paratrooper value = 1 }
+    { 
+	command = { type = activate_unit_type which = paratrooper }
+	command = { type = new_model which = paratrooper value = 1 }
       command = { type = scrap_model which = paratrooper value = 0 }
     }
   }
@@ -2658,7 +2756,7 @@ technology =
   { id        = 1690
     name      = TECH_APP_INFANTRY_69_NAME
 
-    position  = { x = 340 y = 303 }
+    position  = { x = 340 y = 285 }
 	picture   = "1100"
     year      = 1944
     # Assault Rifle
@@ -2682,7 +2780,7 @@ technology =
   { id        = 1700
     name      = TECH_APP_INFANTRY_70_NAME
 
-    position  = { x = 340 y = 321 }
+    position  = { x = 340 y = 303 }
 	picture   = "DH1700"
     year      = 1947
     # Assault Rifle
@@ -2706,7 +2804,7 @@ technology =
   { id        = 1710
     name      = TECH_APP_INFANTRY_71_NAME
 
-    position  = { x = 340 y = 339 }
+    position  = { x = 340 y = 321 }
 	picture   = "DH1710"
     year      = 1950
     # Assault Rifle
@@ -2730,7 +2828,7 @@ technology =
   { id        = 1720
     name      = TECH_APP_INFANTRY_72_NAME
 
-    position  = { x = 340 y = 357 }
+    position  = { x = 340 y = 339 }
 	picture   = "DH1720"
     year      = 1953
     # Assault Rifle
@@ -2754,7 +2852,7 @@ technology =
   { id        = 1730
     name      = TECH_APP_INFANTRY_73_NAME
 
-    position  = { x = 340 y = 375 }
+    position  = { x = 340 y = 357 }
 	picture   = "DH1730"
     year      = 1957
     # Assault Rifle
@@ -2778,7 +2876,7 @@ technology =
   { id        = 1740
     name      = TECH_APP_INFANTRY_74_NAME
 
-    position  = { x = 340 y = 393 }
+    position  = { x = 340 y = 375 }
 	picture   = "DH1740"
     year      = 1961
     # Assault Rifle
@@ -2802,7 +2900,7 @@ technology =
   id = 13110
   name = TECH_APP_INFANTRY_322_NAME
   
-  position = { x = 340 y = 411 }
+  position = { x = 340 y = 393 }
   picture = "13110"
   year = 1966
   # Assault Rifle
@@ -2826,7 +2924,7 @@ technology =
   id = 13120
   name = TECH_APP_INFANTRY_323_NAME
   
-  position = { x = 340 y = 429 }
+  position = { x = 340 y = 411 }
   picture = "13120"
   year = 1972
   
@@ -2851,7 +2949,7 @@ technology =
   id = 13310
   name = TECH_APP_INFANTRY_342_NAME
   
-  position = { x = 340 y = 447 }
+  position = { x = 340 y = 429 }
   picture = "13310"
   year = 1982
   
@@ -2876,7 +2974,7 @@ technology =
   id = 13320
   name = TECH_APP_INFANTRY_343_NAME
   
-  position = { x = 340 y = 465 }
+  position = { x = 340 y = 447 }
   picture = "13320"
   year = 1990
   
@@ -2896,7 +2994,112 @@ technology =
       command = { type = scrap_model which = paratrooper value = 10 }
     }
   }
-
+    #2000 AIRBORNE INFANTRY
+  application = {
+  id = 77500
+  name = TECH_APP_INFANTRY_77500_NAME
+  
+  position = { x = 340 y = 447 }
+  picture = "13320"
+  year = 2000
+  
+  #Assault Rifle
+  component = { id = 77501 name = TECH_CMP_INFANTRY_343_1_NAME type = general_equipment difficulty = 7 }
+  # Airborne Assault Tactics
+  component = { id = 77502 name = TECH_CMP_INFANTRY_343_2_NAME type = small_unit_tactics difficulty = 8 double_time = yes }
+  #Heavy Equipment Drop Training
+  component = { id = 77503 name = TECH_CMP_INFANTRY_343_3_NAME type = airborne_training difficulty = 8 }
+  #Specialized Support Battalion Training
+  component = { id = 77504 name = TECH_CMP_INFANTRY_343_4_NAME type = airborne_training difficulty = 8 }
+  #Improved Modern Paradrop Training
+  component = { id = 77505 name = TECH_CMP_INFANTRY_343_5_NAME type = airborne_training difficulty = 8 double_time = yes }
+  required = { 13320 }
+  effects = {
+  command = { type = new_model which = paratrooper value = 12 }
+      command = { type = scrap_model which = paratrooper value = 11 }
+    }
+  }
+ 
+   label =
+  { tag      = TECH_CAT_AIRBORNE_CONT
+    position = { x = 564 y = 217 }
+  }
+  
+    #2005 AIRBORNE INFANTRY
+  application = {
+  id = 77510
+  name = TECH_APP_INFANTRY_77510_NAME
+  
+  position = { x = 564 y = 235 }
+  picture = "13320"
+  year = 2005
+  
+  #Assault Rifle
+  component = { id = 77511 name = TECH_CMP_INFANTRY_343_1_NAME type = general_equipment difficulty = 7 }
+  # Airborne Assault Tactics
+  component = { id = 77512 name = TECH_CMP_INFANTRY_343_2_NAME type = small_unit_tactics difficulty = 8 double_time = yes }
+  #Heavy Equipment Drop Training
+  component = { id = 77513 name = TECH_CMP_INFANTRY_343_3_NAME type = airborne_training difficulty = 8 }
+  #Specialized Support Battalion Training
+  component = { id = 77514 name = TECH_CMP_INFANTRY_343_4_NAME type = airborne_training difficulty = 8 }
+  #Improved Modern Paradrop Training
+  component = { id = 77515 name = TECH_CMP_INFANTRY_343_5_NAME type = airborne_training difficulty = 8 double_time = yes }
+  required = { 77500 }
+  effects = {
+  command = { type = new_model which = paratrooper value = 13 }
+      command = { type = scrap_model which = paratrooper value = 12 }
+    }
+  }
+    #2010 AIRBORNE INFANTRY
+  application = {
+  id = 77520
+  name = TECH_APP_INFANTRY_77520_NAME
+  
+  position = { x = 564 y = 253 }
+  picture = "13320"
+  year = 2010
+  
+  #Assault Rifle
+  component = { id = 77521 name = TECH_CMP_INFANTRY_343_1_NAME type = general_equipment difficulty = 7 }
+  # Airborne Assault Tactics
+  component = { id = 77522 name = TECH_CMP_INFANTRY_343_2_NAME type = small_unit_tactics difficulty = 8 double_time = yes }
+  #Heavy Equipment Drop Training
+  component = { id = 77523 name = TECH_CMP_INFANTRY_343_3_NAME type = airborne_training difficulty = 8 }
+  #Specialized Support Battalion Training
+  component = { id = 77524 name = TECH_CMP_INFANTRY_343_4_NAME type = airborne_training difficulty = 8 }
+  #Improved Modern Paradrop Training
+  component = { id = 77525 name = TECH_CMP_INFANTRY_343_5_NAME type = airborne_training difficulty = 8 double_time = yes }
+  required = { 77510 }
+  effects = {
+  command = { type = new_model which = paratrooper value = 14 }
+      command = { type = scrap_model which = paratrooper value = 13 }
+    }
+  }
+    #2015 AIRBORNE INFANTRY
+  application = {
+  id = 77530
+  name = TECH_APP_INFANTRY_77530_NAME
+  
+  position = { x = 564 y = 271 }
+  picture = "13320"
+  year = 2015
+  
+  #Assault Rifle
+  component = { id = 77531 name = TECH_CMP_INFANTRY_343_1_NAME type = general_equipment difficulty = 7 }
+  # Airborne Assault Tactics
+  component = { id = 77532 name = TECH_CMP_INFANTRY_343_2_NAME type = small_unit_tactics difficulty = 8 double_time = yes }
+  #Heavy Equipment Drop Training
+  component = { id = 77533 name = TECH_CMP_INFANTRY_343_3_NAME type = airborne_training difficulty = 8 }
+  #Specialized Support Battalion Training
+  component = { id = 77534 name = TECH_CMP_INFANTRY_343_4_NAME type = airborne_training difficulty = 8 }
+  #Improved Modern Paradrop Training
+  component = { id = 77535 name = TECH_CMP_INFANTRY_343_5_NAME type = airborne_training difficulty = 8 double_time = yes }
+  required = { 77520 }
+  effects = {
+  command = { type = new_model which = paratrooper value = 15 }
+      command = { type = scrap_model which = paratrooper value = 14 }
+    }
+  }
 ###################################################################
 #################### ENGINEER BRIGADES
 ###################################################################
@@ -3416,30 +3619,7 @@ technology =
       command = { type = building_prod_mod which = air_base value = 20 }
     }
   }
-    # Modern Repair
-  application =
-  { id = 199190
-    name = TECH_APP_INFANTRY_350_NAME
 
-	picture   = "199190"
-    year = 1965
-    position = { x = 576 y = 403 }
-    # Semimodern Electronics Repair
-    component = { id = 199191 name = TECH_CMP_INFANTRY_350_1_NAME type = electronics double_time = yes difficulty = 6 }
-    # Semimodern Repair Capacity
-    component = { id = 199192 name = TECH_CMP_INFANTRY_350_2_NAME type = mechanics double_time = yes difficulty = 6 }
-    # Semimodern Vehicle Repair
-    component = { id = 199193 name = TECH_CMP_INFANTRY_350_3_NAME type = vehicle_engineering double_time = yes difficulty = 6 }
-    # Semimodern Gun Repair
-    component = { id = 199194 name = TECH_CMP_INFANTRY_350_4_NAME type = technical_efficiency double_time = yes difficulty = 6 }
-    # Basic Computing Machine Support
-    component = { id = 199195 name = TECH_CMP_INDUSTRY_350_5_NAME type = management double_time = yes difficulty = 6 }
-    required = { 199170 199180 }
-    effects =
-    { command = { type = repair_mod value = 60 }
-      command = { type = building_prod_mod which = air_base value = 30 }
-    }
-  }
     # Modern Logistics
   application =
   { id        = 199200
@@ -3668,7 +3848,7 @@ technology =
     # Low Echelon Supply System
     component = { id = 77261 name = TECH_CMP_INFANTRY_351_1_NAME type = decentralized_execution double_time = yes difficulty = 6 }
     # Dynamic Supply Reports
-    component = { id = 77261 name = TECH_CMP_INFANTRY_351_2_NAME type = management double_time = yes difficulty = 6 }
+    component = { id = 77262 name = TECH_CMP_INFANTRY_351_2_NAME type = management double_time = yes difficulty = 6 }
     # Circular Transport System
     component = { id = 77263 name = TECH_CMP_INFANTRY_351_3_NAME type = management double_time = yes difficulty = 6 }
     # Advanced Stock and Storage

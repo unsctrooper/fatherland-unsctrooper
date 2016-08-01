@@ -148,6 +148,8 @@ TECH_CAT_CAVALRY;Cavalry;Cavalerie;Cavalleria;Caballerнa;Kavallerie;Kawaleria;;К
 TECH_CAT_EXOSUIT;Exosuit Infantry;;;;;;;;;;X
 TECH_CAT_SUPPLY;Supply;Approvisionnement;Rifornimenti;Suministros;Versorgung;Zaopatrzenie;;Тыловое обеспечение и снабжение;;;X
 TECH_CAT_MOTORIZED;Motorized Infantry;Motorisй;Motorizzata;Motorizadas;Motorisierte;Zmotoryzowane;;Моторизованная пехота;;;X
+TECH_CAT_MOTORIZED_CONT;Post-CW Motorized Inf.;;;;;;;;;;X
+TECH_CAT_AIRBORNE_CONT;Post-CW Special Forces;;;;;;;;;;X
 TECH_CAT_MECHANIZED;Mechanized Infantry;Mйcanisй;Meccanizzata;Mecanizadas;Mechanisierte;Zmechanizowane;;Механизированная пехота;;;X
 TECH_CAT_ENGINEERS;Combat Engineers;Gйnie de combat;Genieri da combattimento;Ingenierios de Combate;Sturmpioniere;Inїynierowie wojskowi;;Инженерно-саперные войска;;;X
 TECH_CAT_MANUFACTURING;Manufacturing/Robotics;Fabrication;Produzione;Fabricaciуn;Herstellung;Wytwarzanie;;Производство;;;X
@@ -1116,16 +1118,16 @@ TECH_CMP_INFANTRY_321_3_NAME;All-purpose Lightweight Individual Carrying Equipme
 TECH_CMP_INFANTRY_321_4_NAME;Improved Modern Signal System;Improved Modern Signal System;Improved Modern Signal System;Improved Modern Signal System;Improved Modern Signal System;Improved Modern Signal System;;Improved Modern Signal System;;;X
 TECH_CMP_INFANTRY_321_5_NAME;Improved Modern Infantry Training;Improved Modern Infantry Training;Improved Modern Infantry Training;Improved Modern Infantry Training;Improved Modern Infantry Training;Improved Modern Infantry Training;;Improved Modern Infantry Training;;;X
 ##;;;;;;;;;;;X
-TECH_APP_INFANTRY_322_NAME;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;;1966 Airborne Division;;;X
-SHORT_TECH_APP_INFANTRY_322_NAME;1966 Airborne;1966 Parachutistes;Paracadutisti 1966;Paracaidista 1966;FJ.Div. 1966;Spadochron. 1966;;ВДВ 1961 г.;;;X
+TECH_APP_INFANTRY_322_NAME;1966 Special Forces Division;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;1966 Airborne Division;;1966 Airborne Division;;;X
+SHORT_TECH_APP_INFANTRY_322_NAME;1966 Special Forces;1966 Parachutistes;Paracadutisti 1966;Paracaidista 1966;FJ.Div. 1966;Spadochron. 1966;;ВДВ 1961 г.;;;X
 TECH_CMP_INFANTRY_322_1_NAME;Specialized Assault Rifle;Specialized Assault Rifle;Specialized Assault Rifle;Specialized Assault Rifle;Specialized Assault Rifle;Specialized Assault Rifle;;Specialized Assault Rifle;;;X
 TECH_CMP_INFANTRY_322_2_NAME;Modern Airborne Assault Tactics;Modern Airborne Assault Tactics;Modern Airborne Assault Tactics;Modern Airborne Assault Tactics;Modern Airborne Assault Tactics;Modern Airborne Assault Tactics;;Modern Airborne Assault Tactics;;;X
 TECH_CMP_INFANTRY_322_3_NAME;Fast Deployment;Fast Deployment;Fast Deployment;Fast Deployment;Fast Deployment;Fast Deployment;;Fast Deployment;;;X
 TECH_CMP_INFANTRY_322_4_NAME;Brigademental Combat System;Brigademental Combat System;Brigademental Combat System;Brigademental Combat System;Brigademental Combat System;Brigademental Combat System;;Brigademental Combat System;;;X
 TECH_CMP_INFANTRY_322_5_NAME;Modern Paradrop Training;Modern Paradrop Training;Modern Paradrop Training;Modern Paradrop Training;Modern Paradrop Training;Modern Paradrop Training;;Modern Paradrop Training;;;X
 ##;;;;;;;;;;;X
-TECH_APP_INFANTRY_323_NAME;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;;1972 Airborne Division;;;X
-SHORT_TECH_APP_INFANTRY_323_NAME;1972 Airborne;1972 Airborne;1972 Airborne;1972 Airborne;1972 Airborne;1972 Airborne;;1972 Airborne;;;X
+TECH_APP_INFANTRY_323_NAME;1972 Special Forces Division;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;1972 Airborne Division;;1972 Airborne Division;;;X
+SHORT_TECH_APP_INFANTRY_323_NAME;1972 Special Forces;1972 Airborne;1972 Airborne;1972 Airborne;1972 Airborne;1972 Airborne;;1972 Airborne;;;X
 TECH_CMP_INFANTRY_323_1_NAME;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;;Assault Rifle;;;X
 TECH_CMP_INFANTRY_323_2_NAME;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;;Improved Modern Airborne Assault Tactics;;;X
 TECH_CMP_INFANTRY_323_3_NAME;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;;Heavy Equipment Drop Training;;;X
@@ -1276,16 +1278,16 @@ TECH_CMP_INFANTRY_341_3_NAME;Logistics Management;Gestion de la logistique;Gesti
 TECH_CMP_INFANTRY_341_4_NAME;Explosives and Mines;Explosifs et des Mines;Esplosivi e mine;Explosivos y Minas;Explosivstoffe;Materiaіy wybuchowe i miny;;Взрывчатка и мины;;;X
 TECH_CMP_INFANTRY_341_5_NAME;Engineer Training;Formation du gйnie;Addestramento genieri;Entrenamiento de Ingenieros;Pionierausbildung;Trening inїynierуw;;Обучение саперов;;;X
 ##;;;;;;;;;;;X
-TECH_APP_INFANTRY_342_NAME;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;;1982 Airborne Division;;;X
-SHORT_TECH_APP_INFANTRY_342_NAME;1982 Airborne;1982 Airborne;1982 Airborne;1982 Airborne;1982 Airborne;1982 Airborne;;1982 Airborne;;;X
+TECH_APP_INFANTRY_342_NAME;1982 Special Forces Division;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;1982 Airborne Division;;1982 Airborne Division;;;X
+SHORT_TECH_APP_INFANTRY_342_NAME;1982 Special Forces;1982 Airborne;1982 Airborne;1982 Airborne;1982 Airborne;1982 Airborne;;1982 Airborne;;;X
 TECH_CMP_INFANTRY_342_1_NAME;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;;Assault Rifle;;;X
 TECH_CMP_INFANTRY_342_2_NAME;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;;Improved Modern Airborne Assault Tactics;;;X
 TECH_CMP_INFANTRY_342_3_NAME;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;;Heavy Equipment Drop Training;;;X
 TECH_CMP_INFANTRY_342_4_NAME;Specialized Support Battalion Training;Specialized Support Battalion Training;Specialized Support Battalion Training;Specialized Support Battalion Training;Specialized Support Battalion Training;Specialized Support Battalion Training;;Specialized Support Battalion Training;;;X
 TECH_CMP_INFANTRY_342_5_NAME;Improved Modern Paradrop Training;Improved Modern Paradrop Training;Improved Modern Paradrop Training;Improved Modern Paradrop Training;Improved Modern Paradrop Training;Improved Modern Paradrop Training;;Improved Modern Paradrop Training;;;X
 ##;;;;;;;;;;;X
-TECH_APP_INFANTRY_343_NAME;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;;1990 Airborne Division;;;X
-SHORT_TECH_APP_INFANTRY_343_NAME;1990 Airborne;1990 Airborne;1990 Airborne;1990 Airborne;1990 Airborne;1990 Airborne;;1990 Airborne;;;X
+TECH_APP_INFANTRY_343_NAME;1990 Special Forces Division;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;1990 Airborne Division;;1990 Airborne Division;;;X
+SHORT_TECH_APP_INFANTRY_343_NAME;1990 Special Forces;1990 Airborne;1990 Airborne;1990 Airborne;1990 Airborne;1990 Airborne;;1990 Airborne;;;X
 TECH_CMP_INFANTRY_343_1_NAME;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;Assault Rifle;;Assault Rifle;;;X
 TECH_CMP_INFANTRY_343_2_NAME;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;Improved Modern Airborne Assault Tactics;;Improved Modern Airborne Assault Tactics;;;X
 TECH_CMP_INFANTRY_343_3_NAME;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;Heavy Equipment Drop Training;;Heavy Equipment Drop Training;;;X
@@ -8278,5 +8280,35 @@ TECH_APP_INFANTRY_77260_NAME;Reinforced Global Power Network;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_77260_NAME;Reinforced Global Nwk.;;;;;;;;;;X
 TECH_APP_INFANTRY_77270_NAME;Information Network Repair;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_77270_NAME;Info Network Repair;;;;;;;;;;X
+TECH_APP_INFANTRY_77300_NAME;1990 Mechanized Naval Infantry Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77300_NAME;1990 Mech. Naval;;;;;;;;;;X
+TECH_APP_INFANTRY_77310_NAME;2000 Mechanized Naval Infantry Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77310_NAME;2000 Mech. Naval;;;;;;;;;;X
+TECH_APP_INFANTRY_77320_NAME;2005 Mechanized Naval Infantry Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77320_NAME;2005 Mech. Naval;;;;;;;;;;X
+TECH_APP_INFANTRY_77330_NAME;2010 Mechanized Naval Infantry Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77330_NAME;2010 Mech. Naval;;;;;;;;;;X
+TECH_APP_INFANTRY_77340_NAME;2015 Mechanized Naval Infantry Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77340_NAME;2015 Mech. Naval;;;;;;;;;;X
+TECH_APP_INFANTRY_77400_NAME;1992 Motorized Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77400_NAME;1992 Motorized;;;;;;;;;;X
+TECH_APP_INFANTRY_77410_NAME;1996 Motorized Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77410_NAME;1996 Motorized;;;;;;;;;;X
+TECH_APP_INFANTRY_77420_NAME;2000 Motorized Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77420_NAME;2000 Motorized;;;;;;;;;;X
+TECH_APP_INFANTRY_77430_NAME;2005 Motorized Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77430_NAME;2005 Motorized;;;;;;;;;;X
+TECH_APP_INFANTRY_77440_NAME;2010 Motorized Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77440_NAME;2010 Motorized;;;;;;;;;;X
+TECH_APP_INFANTRY_77450_NAME;2015 Motorized Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77450_NAME;2015 Motorized;;;;;;;;;;X
+TECH_APP_INFANTRY_77500_NAME;2000 Special Forces Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77500_NAME;2000 Special Forces;;;;;;;;;;X
+TECH_APP_INFANTRY_77510_NAME;2005 Special Forces Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77510_NAME;2005 Special Forces;;;;;;;;;;X
+TECH_APP_INFANTRY_77520_NAME;2010 Special Forces Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77520_NAME;2010 Special Forces;;;;;;;;;;X
+TECH_APP_INFANTRY_77530_NAME;2015 Special Forces Division;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_77530_NAME;2015 Special Forces;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
