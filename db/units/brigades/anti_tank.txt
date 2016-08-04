@@ -97,17 +97,3 @@ model = {
 	upgrade_cost_factor = 1.0
 	equipment = { manpower = 200 anti_tank = 65 }
 }
-
-# 7 - Modern AT Gun (2017) Sprut anti-tank gun
-model = {
-	cost 				= 5
-	buildtime	 		= 60
-	manpower 			= 0.2
-	defensiveness 		= 9
-	hardattack			= 18
-	maxspeed 			= -1
-	supplyconsumption 	= 0.4
-	upgrade_time_factor = 0.5
-	upgrade_cost_factor = 1.0
-	equipment = { manpower = 200 anti_tank = 60 }
-}

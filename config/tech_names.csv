@@ -148,7 +148,7 @@ TECH_CAT_CAVALRY;Cavalry;Cavalerie;Cavalleria;Caballerнa;Kavallerie;Kawaleria;;К
 TECH_CAT_EXOSUIT;Exosuit Infantry;;;;;;;;;;X
 TECH_CAT_SUPPLY;Supply;Approvisionnement;Rifornimenti;Suministros;Versorgung;Zaopatrzenie;;Тыловое обеспечение и снабжение;;;X
 TECH_CAT_MOTORIZED;Motorized Infantry;Motorisй;Motorizzata;Motorizadas;Motorisierte;Zmotoryzowane;;Моторизованная пехота;;;X
-TECH_CAT_MOTORIZED_CONT;Post-CW Motorized Inf.;;;;;;;;;;X
+TECH_CAT_MOTORIZED_CONT;Post-CW Motor. Inf.;;;;;;;;;;X
 TECH_CAT_AIRBORNE_CONT;Post-CW Special Forces;;;;;;;;;;X
 TECH_CAT_MECHANIZED;Mechanized Infantry;Mйcanisй;Meccanizzata;Mecanizadas;Mechanisierte;Zmechanizowane;;Механизированная пехота;;;X
 TECH_CAT_ENGINEERS;Combat Engineers;Gйnie de combat;Genieri da combattimento;Ingenierios de Combate;Sturmpioniere;Inїynierowie wojskowi;;Инженерно-саперные войска;;;X
@@ -8310,5 +8310,57 @@ TECH_APP_INFANTRY_77520_NAME;2010 Special Forces Division;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_77520_NAME;2010 Special Forces;;;;;;;;;;X
 TECH_APP_INFANTRY_77530_NAME;2015 Special Forces Division;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_77530_NAME;2015 Special Forces;;;;;;;;;;X
+TECH_APP_ARMOR_78000_NAME;Infantry Fighting Vehicle 1975;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78000_NAME;I.F.V. 1975;;;;;;;;;;X
+TECH_APP_ARMOR_78010_NAME;Infantry Fighting Vehicle 1985;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78010_NAME;I.F.V. 1985;;;;;;;;;;X
+TECH_APP_ARMOR_78020_NAME;Infantry Fighting Vehicle 1995;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78020_NAME;I.F.V. 1995;;;;;;;;;;X
+TECH_APP_ARMOR_78030_NAME;Infantry Fighting Vehicle 2005;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78030_NAME;I.F.V. 2005;;;;;;;;;;X
+TECH_APP_ARMOR_78040_NAME;Infantry Fighting Vehicle 2015;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78040_NAME;I.F.V. 2015;;;;;;;;;;X
+TECH_APP_ARMOR_78100_NAME;Advanced Ultra Modern MBT;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78100_NAME;MBT 1992;;;;;;;;;;X
+TECH_APP_ARMOR_78110_NAME;Post-CW Ultra Modern MBT;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78110_NAME;MBT 2000;;;;;;;;;;X
+TECH_APP_ARMOR_78120_NAME;Futuristic Modern MBT;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78120_NAME;MBT 2007;;;;;;;;;;X
+TECH_APP_ARMOR_78130_NAME;Ultra Futuristic Modern MBT;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78130_NAME;MBT 2015;;;;;;;;;;X
+TECH_APP_ARMOR_78150_NAME;Modern Field Artillery 1985;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78150_NAME;Artillery 1985;;;;;;;;;;X
+TECH_APP_ARMOR_78160_NAME;Post-Cold War Field Artillery 1995;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78160_NAME;Artillery 1995;;;;;;;;;;X
+TECH_APP_ARMOR_78170_NAME;Post-Cold War Advanced Field Artillery 2005;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78170_NAME;Artillery 2005;;;;;;;;;;X
+TECH_APP_ARMOR_78180_NAME;Futuristic Field Artillery 2015;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78180_NAME;Artillery 2015;;;;;;;;;;X
+TECH_APP_ARMOR_78200_NAME;Late-CW Advanced SP Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78200_NAME;SA Art. 1985;;;;;;;;;;X
+TECH_APP_ARMOR_78210_NAME;Post-CW Advanced SP Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78210_NAME;SA Art. 1995;;;;;;;;;;X
+TECH_APP_ARMOR_78220_NAME;Future Advanced SP Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78220_NAME;SA Art. 2005;;;;;;;;;;X
+TECH_APP_ARMOR_78230_NAME;Improved Future Advanced SP Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78230_NAME;SA Art. 2015;;;;;;;;;;X
+TECH_APP_ARMOR_78290_NAME;1997 Advanced Anti-Tank Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78290_NAME;Anti-Tank 1997;;;;;;;;;;X
+TECH_APP_ARMOR_78300_NAME;2007 Advanced Anti-Tank Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78300_NAME;Anti-Tank 2007;;;;;;;;;;X
+TECH_APP_ARMOR_78330_NAME;Static Anti-Air Artillery 1949;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78330_NAME;Anti-Air 1949;;;;;;;;;;X
+TECH_APP_ARMOR_78340_NAME;Static Anti-Air Artillery 1966;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78340_NAME;Anti-Air 1966;;;;;;;;;;X
+TECH_APP_ARMOR_78350_NAME;Static Anti-Air Artillery 1976;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78350_NAME;Anti-Air 1976;;;;;;;;;;X
+TECH_APP_ARMOR_78360_NAME;Static Anti-Air Artillery 1986;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78360_NAME;Anti-Air 1986;;;;;;;;;;X
+TECH_APP_ARMOR_78370_NAME;Static Anti-Air Artillery 1996;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78370_NAME;Anti-Air 1996;;;;;;;;;;X
+TECH_APP_ARMOR_78380_NAME;Static Anti-Air Artillery 2006;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78380_NAME;Anti-Air 2006;;;;;;;;;;X
+TECH_APP_ARMOR_78390_NAME;Static Anti-Air Artillery 2016;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78390_NAME;Anti-Air 2016;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X

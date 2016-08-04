@@ -689,7 +689,7 @@ technology =
     }
   }
 ######################################
-# Armor Division Formation
+# Armor Division Formation | DO NOT REMOVE !!!!!!!!
 ######################################
   label =
   { tag      = TECH_CAT_ARMOR
