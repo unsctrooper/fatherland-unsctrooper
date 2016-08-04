@@ -1059,6 +1059,13 @@ SDESC_SH_ARTILLERY;This division has a Super Heavy Artillery brigade.;Cette divi
 LDESC_SH_ARTILLERY;Super Heavy Artillery pieces are called upon to break a siege or bust a gaping hole in the enemy's lines. They will be helpful against fortifications.;Les pièces d'artillerie super lourdes sont amenées pour finir un siège, ou pour créer un trou béant dans les lignes ennemies. Elles sont très utiles contre les fortifications.;L'artiglieria supe pesante è usata per rompere un assedio o per sfondare le linee nemiche. è utile contro le fortificazioni.;Las piezas de artillería superpesadas se utilizan para romper un sitio o para hacer un enorme agujero en las líneas enemigas. Serán de ayuda contra fortificaciones. ;Überschwere Artillerie eignet sich vorzüglich für die Belagerung von Festungen oder zum Durchstoss durch Bunkerlinien.;Superciê¿ka artyleria jest wykorzystywana tam, gdzie potrzeba przerwaæ linie wroga lub prze³amaæ oblê¿enie. Bêdzie ona szczególnie przydatna przeciwko fortyfikacjom.;;Ñâåðõòÿæåëàÿ àðòèëëåðèÿ ñïîñîáíà ñâîåé ìîùüþ îðãàíèçîâàòü íàñòîÿùèé ïðîðûâ îáîðîíû ïðîòèâíèêà, ÷òî äåëàåò åå î÷åíü ïîëåçíîé ïðè óíè÷òîæåíèè âðàæåñêèõ ôîðòèôèêàöèé è óêðåïëåííûõ ðàéîíîâ. ;;;X
 BRIG_MODEL_32_0;Amphibious Light Armor '39;Blindé Léger Amphibie 39;Carro Anfibio leggero '39;Amfibio ligero '39;Amphibienpanzer '39;Lekki czo³g desantowy '39;;Ïëàâàþùèå òàíêè '39;;;X
 BRIG_MODEL_32_1;Amphibious Light Armor '44;Blindé Léger Amphibie 44;Carro Anfibio leggero '44;Amfibio ligero '44;Amphibienpanzer '44;Lekki czo³g desantowy '44;;Ïëàâàþùèå òàíêè'44;;;X
+BRIG_MODEL_32_2;;Amphibious Light Armor '58;;;;;;;;;;;X
+BRIG_MODEL_32_3;;Amphibious Light Armor '68;;;;;;;;;;;X
+BRIG_MODEL_32_4;;Amphibious Light Armor '78;;;;;;;;;;;X
+BRIG_MODEL_32_5;;Amphibious Light Armor '88;;;;;;;;;;;X
+BRIG_MODEL_32_6;;Amphibious Light Armor '98;;;;;;;;;;;X
+BRIG_MODEL_32_7;;Amphibious Light Armor 2008;;;;;;;;;;;X
+BRIG_MODEL_32_8;;Amphibious Light Armor 2015;;;;;;;;;;;X
 BRIG_MODEL_33_0;Light Glider Armor '39;Blindé Léger par Planeur 39;Carro Aereotrasportato leggero '39;Planeador ligero '39;Leichte Luftlandeartillerie '39;Lekki czo³g spadochronowy '39;;Äåñàíòíûå òàíêè '39;;;X
 BRIG_MODEL_33_1;Light Glider Armor '44;Blindé Léger par Planeur 44;Carro Aereotrasportato leggero '44;Planeador ligero '44;Leichte Luftlandeartillerie '44;Lekki czo³g spadochronowy '44;;Äåñàíòíûå òàíêè '44;;;X
 BRIG_MODEL_33_2;Light Airborne Armor '58;Blindé Léger par Planeur 58;Carro Aereotrasportato leggero '58;Planeador ligero '58;Leichte Luftlandeartillerie '58;Lekki czo³g spadochronowy '58;;Äåñàíòíûå òàíêè '58;;;X
