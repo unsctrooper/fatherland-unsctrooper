@@ -40,7 +40,7 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 2 - Light Amphibious Armor (1950)
+# 2 - Light Amphibious Armor (1958)
 model = {
 	cost 				= 8.5
 	buildtime	 		= 170 # 140 for regular L ARM
@@ -60,7 +60,7 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 3 - Light Amphibious Armor (1960)
+# 3 - Light Amphibious Armor (1968)
 model = {
 	cost 				= 8.7
 	buildtime	 		= 170 # 140 for regular L ARM
@@ -80,7 +80,7 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 4 - Light Amphibious Armor (1970)
+# 4 - Light Amphibious Armor (1978)
 model = {
 	cost 				= 9
 	buildtime	 		= 170 # 140 for regular L ARM
@@ -100,7 +100,7 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 5 - Light Amphibious Armor (1980)
+# 5 - Light Amphibious Armor (1988)
 model = {
 	cost 				= 9.3
 	buildtime	 		= 170 # 140 for regular L ARM
@@ -120,7 +120,7 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 6 - Light Amphibious Armor (1990)
+# 6 - Light Amphibious Armor (1998)
 model = {
 	cost 				= 9.5
 	buildtime	 		= 170 # 140 for regular L ARM
@@ -140,7 +140,7 @@ model = {
 	equipment = { manpower = 2500 medium_armor = 94 }
 }
 
-# 7 - Light Amphibious Armor (2000)
+# 7 - Light Amphibious Armor (2008)
 model = {
 	cost 				= 9.5
 	buildtime	 		= 170 # 140 for regular L ARM
