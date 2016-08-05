@@ -8362,5 +8362,60 @@ TECH_APP_ARMOR_78380_NAME;Static Anti-Air Artillery 2006;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_78380_NAME;Anti-Air 2006;;;;;;;;;;X
 TECH_APP_ARMOR_78390_NAME;Static Anti-Air Artillery 2016;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_78390_NAME;Anti-Air 2016;;;;;;;;;;X
+TECH_APP_ARMOR_78600_NAME;Cold War Advanced Rocket Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78600_NAME;Rocket Art. 1955;;;;;;;;;;X
+TECH_APP_ARMOR_78610_NAME;Advanced Rocket Artillery 1970;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78610_NAME;Rocket Art. 1970;;;;;;;;;;X
+TECH_APP_ARMOR_78620_NAME;Post-CW Advanced Rocket Artillery 1990;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78620_NAME;Rocket Art. 1990;;;;;;;;;;X
+TECH_APP_ARMOR_78630_NAME;Postmodern Advanced Rocket Artillery 2010;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78630_NAME;Rocket Art. 2010;;;;;;;;;;X
+TECH_APP_ARMOR_78650_NAME;Airborne IFV 1980;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78650_NAME;Glider Arm. 1980;;;;;;;;;;X
+TECH_APP_ARMOR_78660_NAME;Airborne IFV 2000;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78660_NAME;Glider Arm. 2000;;;;;;;;;;X
+TECH_APP_ARMOR_78290_NAME;Anti-Tank Artillery 1997;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78290_NAME;Anti-Tank 1997;;;;;;;;;;X
+TECH_APP_ARMOR_78680_NAME;Mid-CW Advanced SP Rocket Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78680_NAME;SA R. Art. 1975;;;;;;;;;;X
+TECH_APP_ARMOR_78690_NAME;Post-CW Advanced SP Rocket Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78690_NAME;SA R. Art. 1990;;;;;;;;;;X
+TECH_APP_ARMOR_78700_NAME;Postmodern Advanced SP Rocket Artillery;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78700_NAME;SA R. Art. 2005;;;;;;;;;;X
+TECH_CAT_CW_RCTART;CW Rocket Artillery;;;;;;;;;;X
+TECH_CAT_CW_GLIARM;CW Glider Armor;;;;;;;;;;X
+TECH_CAT_CW_SPRART;CW Self-Propelled R. Art.;;;;;;;;;;X
+TECH_CAT_CW_ANTIAIRBRIG;CW Anti-Air Brigade;;;;;;;;;;X
+TECH_CAT_CW_SPANTIAIR;CW SP Anti-Air Brigade;;;;;;;;;;X
+TECH_APP_ARMOR_78720_NAME;Improved Modern Anti-Air Artillery Brigade;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78720_NAME;AA Brigade 1976;;;;;;;;;;X
+TECH_APP_ARMOR_78730_NAME;Advanced Modern Anti-Air Artillery Brigade;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78730_NAME;AA Brigade 1986;;;;;;;;;;X
+TECH_APP_ARMOR_78740_NAME;Post-CW Anti-Air Artillery Brigade;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78740_NAME;AA Brigade 1996;;;;;;;;;;X
+TECH_APP_ARMOR_78750_NAME;Postmodern Anti-Air Artillery Brigade;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78750_NAME;AA Brigade 2006;;;;;;;;;;X
+TECH_APP_ARMOR_78760_NAME;improved Postmodern Anti-Air Artillery Brigade;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78760_NAME;AA Brigade 2016;;;;;;;;;;X
+TECH_APP_ARMOR_78770_NAME;Mid-CW Modern SP Anti-Air AA;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78770_NAME;SP AA 1969;;;;;;;;;;X
+TECH_APP_ARMOR_78780_NAME;Modern SP Anti-Air AA;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78780_NAME;SP AA 1979;;;;;;;;;;X
+TECH_APP_ARMOR_78790_NAME;Advanced Modern SP Anti-Air AA;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78790_NAME;SP AA 1988;;;;;;;;;;X
+TECH_APP_ARMOR_78800_NAME;Post-CW Modern SP Anti-Air AA;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78800_NAME;SP AA 1998;;;;;;;;;;X
+TECH_APP_ARMOR_78810_NAME;Postmodern SP Anti-Air AA;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78810_NAME;SP AA 2008;;;;;;;;;;X
+TECH_APP_ARMOR_78820_NAME;Improved Postmodern SP Anti-Air AA;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_78820_NAME;SP AA 2015;;;;;;;;;;X
+TECH_APP_ARMOR_79000_NAME;Late-CW Modern Armored Car;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_79000_NAME;AC 1984;;;;;;;;;;X
+TECH_APP_ARMOR_79010_NAME;Post-CW Modern Armored Car;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_79010_NAME;AC 1994;;;;;;;;;;X
+TECH_APP_ARMOR_79020_NAME;Postmodern Armored Car;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_79020_NAME;AC 2004;;;;;;;;;;X
+TECH_APP_ARMOR_79030_NAME;improved Postmodern Armored Car;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_79030_NAME;AC 2014;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
 #EOF;;;;;;;;;;;X

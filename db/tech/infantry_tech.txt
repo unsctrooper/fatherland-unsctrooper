@@ -1767,15 +1767,15 @@ technology =
   picture = "13280"
   year = 1988
   # Trucks
-  component = { id = 13281 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
+  component = { id = 132810 name = TECH_CMP_INFANTRY_339_1_NAME type = vehicle_engineering difficulty = 10 }
   # Assault Rifle
-  component = { id = 13282 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
+  component = { id = 132820 name = TECH_CMP_INFANTRY_339_2_NAME type = general_equipment difficulty = 9 }
   # Mobilized Artillery
-  component = { id = 13283 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
+  component = { id = 132830 name = TECH_CMP_INFANTRY_339_3_NAME type = artillery difficulty = 10 }
   # Combined Arms Initiative Training
-  component = { id = 13284 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
+  component = { id = 132840 name = TECH_CMP_INFANTRY_339_4_NAME type = training difficulty = 12 }
   # Motorized Infantry Tactics
-  component = { id = 13285 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
+  component = { id = 132850 name = TECH_CMP_INFANTRY_339_5_NAME type = combined_arms_focus difficulty = 12 }
   required = { 13270 }
   effects = {
   command = { type = new_model which = motorized value = 12 }
