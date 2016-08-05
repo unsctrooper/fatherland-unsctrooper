@@ -147,7 +147,7 @@ technology =
 	command = { type = scrap_model which = light_armor_brigade value = 9 }
 	}
   }
-  #Infantry Fighting Vehicle (Schützenpanzer 12-3, M-113 ACAV, BMP-1)
+  #Infantry Fighting Vehicle (SchÃ¼tzenpanzer 12-3, M-113 ACAV, BMP-1)
   application = {
   id = 21020
   name = TECH_APP_ARMOR_299_NAME
@@ -1623,7 +1623,7 @@ technology =
   component = { id = 21042 name = TECH_CMP_ARMOR_301_2_NAME type = mechanics difficulty = 5 }
   #Heavy HEAT Ammo
   component = { id = 21043 name = TECH_CMP_ARMOR_301_3_NAME type = munitions difficulty = 5 }
-  #360º Traverse
+  #360Âº Traverse
   component = { id = 21044 name = TECH_CMP_ARMOR_301_4_NAME type = mechanics difficulty = 5 }
   #Fast Deployment Training
   component = { id = 21045 name = TECH_CMP_ARMOR_301_5_NAME type = training difficulty = 5 }
@@ -1649,7 +1649,7 @@ technology =
   component = { id = 21252 name = TECH_CMP_ARMOR_319_2_NAME type = mechanics difficulty = 5 }
   #Heavy HEAT Ammo
   component = { id = 21253 name = TECH_CMP_ARMOR_319_3_NAME type = munitions difficulty = 5 }
-  #360º Traverse
+  #360Âº Traverse
   component = { id = 21254 name = TECH_CMP_ARMOR_319_4_NAME type = mechanics difficulty = 5 }
   #Fast Deployment Training
   component = { id = 21255 name = TECH_CMP_ARMOR_319_5_NAME type = training difficulty = 5 }
@@ -1675,7 +1675,7 @@ technology =
   component = { id = 78152 name = TECH_CMP_ARMOR_319_2_NAME type = mechanics difficulty = 5 }
   #Heavy HEAT Ammo
   component = { id = 78153 name = TECH_CMP_ARMOR_319_3_NAME type = munitions difficulty = 5 }
-  #360º Traverse
+  #360Âº Traverse
   component = { id = 78154 name = TECH_CMP_ARMOR_319_4_NAME type = mechanics difficulty = 5 }
   #Fast Deployment Training
   component = { id = 78155 name = TECH_CMP_ARMOR_319_5_NAME type = training difficulty = 5 }
@@ -1699,7 +1699,7 @@ technology =
   component = { id = 78162 name = TECH_CMP_ARMOR_319_2_NAME type = mechanics difficulty = 5 }
   #Heavy HEAT Ammo
   component = { id = 78163 name = TECH_CMP_ARMOR_319_3_NAME type = munitions difficulty = 5 }
-  #360º Traverse
+  #360Âº Traverse
   component = { id = 78164 name = TECH_CMP_ARMOR_319_4_NAME type = mechanics difficulty = 5 }
   #Fast Deployment Training
   component = { id = 78165 name = TECH_CMP_ARMOR_319_5_NAME type = training difficulty = 5 }
@@ -1723,7 +1723,7 @@ technology =
   component = { id = 78172 name = TECH_CMP_ARMOR_319_2_NAME type = mechanics difficulty = 5 }
   #Heavy HEAT Ammo
   component = { id = 78173 name = TECH_CMP_ARMOR_319_3_NAME type = munitions difficulty = 5 }
-  #360º Traverse
+  #360Âº Traverse
   component = { id = 78174 name = TECH_CMP_ARMOR_319_4_NAME type = mechanics difficulty = 5 }
   #Fast Deployment Training
   component = { id = 78175 name = TECH_CMP_ARMOR_319_5_NAME type = training difficulty = 5 }
@@ -1747,7 +1747,7 @@ technology =
   component = { id = 78182 name = TECH_CMP_ARMOR_319_2_NAME type = mechanics difficulty = 5 }
   #Heavy HEAT Ammo
   component = { id = 78183 name = TECH_CMP_ARMOR_319_3_NAME type = munitions difficulty = 5 }
-  #360º Traverse
+  #360Âº Traverse
   component = { id = 78184 name = TECH_CMP_ARMOR_319_4_NAME type = mechanics difficulty = 5 }
   #Fast Deployment Training
   component = { id = 78185 name = TECH_CMP_ARMOR_319_5_NAME type = training difficulty = 5 }
@@ -2937,7 +2937,7 @@ application = {
   { id        = 2810
     name      = TECH_APP_ARMOR_81_NAME
 
-    position  = { x = 554 y = 24 }
+#    position  = { x = 554 y = 24 }
 	picture   = "DH2810"
     year      = 1918
     # Elder Anti-Air Gun 75mm
@@ -2961,7 +2961,7 @@ application = {
   { id        = 2820
     name      = TECH_APP_ARMOR_82_NAME
 
-    position  = { x = 554 y = 42 }
+#    position  = { x = 554 y = 42 }
 	picture   = "DH2820"
     year      = 1924
     # Early Anti-Air Gun 75mm
@@ -2985,7 +2985,7 @@ application = {
   { id        = 2510
     name      = TECH_APP_ARMOR_51_NAME
 
-    position  = { x = 554 y = 60 }
+#    position  = { x = 554 y = 60 }
 	picture   = "DH2510"
     year      = 1930
     # Anti-Air Gun 20mm
@@ -3009,7 +3009,7 @@ application = {
   { id        = 2520
     name      = TECH_APP_ARMOR_52_NAME
 
-    position  = { x = 554 y = 78 }
+    position  = { x = 554 y = 24 }
 	picture   = "2520"
     year      = 1936
     # Anti-Air Gun 40mm
@@ -3033,7 +3033,7 @@ application = {
   { id        = 2530
     name      = TECH_APP_ARMOR_53_NAME
 
-    position  = { x = 554 y = 96 }
+    position  = { x = 554 y = 42 }
 	picture   = "2530"
     year      = 1942
     # Anti-Air Gun 20mm Quad
@@ -3057,7 +3057,7 @@ application = {
   { id        = 2540
     name      = TECH_APP_ARMOR_54_NAME
 
-    position  = { x = 554 y = 114 }
+    position  = { x = 554 y = 60 }
 	picture   = "2540"
     year      = 1948
     # Anti-Air Gun 40mm Quad
@@ -3081,7 +3081,7 @@ application = {
   { id        = 11090
     name      = TECH_APP_ARMOR_109_NAME
 
-    position  = { x = 554 y = 132 }
+    position  = { x = 554 y = 78 }
 	picture   = "11090"
     year      = 1956
     # ?
@@ -3100,9 +3100,127 @@ application = {
       command = { type = scrap_model which = anti_air value = 5 }
     }
   }
+<<<<<<< HEAD
   
   
   
+=======
+  application =
+  { id        = 78400
+    name      = TECH_APP_ARMOR_78400_NAME
+
+    position  = { x = 554 y = 96 }
+	picture   = "11090"
+    year      = 1976
+    # ?
+    component = { id = 78401 name = TECH_CMP_ARMOR_109_1_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78402 name = TECH_CMP_ARMOR_109_2_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78403 name = TECH_CMP_ARMOR_109_3_NAME type = munitions difficulty = 3 }
+    # ?
+    component = { id = 78404 name = TECH_CMP_ARMOR_109_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 78405 name = TECH_CMP_ARMOR_109_5_NAME type = training difficulty = 5 }
+    required  = { 11090 }
+    effects =
+    { command = { type = new_model which = anti_air value = 7 }
+      command = { type = scrap_model which = anti_air value = 6 }
+    }
+  }
+  application =
+  { id        = 78410
+    name      = TECH_APP_ARMOR_78410_NAME
+
+    position  = { x = 554 y = 114 }
+	picture   = "11090"
+    year      = 1986
+    # ?
+    component = { id = 78411 name = TECH_CMP_ARMOR_109_1_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78412 name = TECH_CMP_ARMOR_109_2_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78413 name = TECH_CMP_ARMOR_109_3_NAME type = munitions difficulty = 3 }
+    # ?
+    component = { id = 78414 name = TECH_CMP_ARMOR_109_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 78415 name = TECH_CMP_ARMOR_109_5_NAME type = training difficulty = 5 }
+    required  = { 78400 }
+    effects =
+    { command = { type = new_model which = anti_air value = 7 }
+      command = { type = scrap_model which = anti_air value = 6 }
+    }
+  }
+   application =
+  { id        = 78420
+    name      = TECH_APP_ARMOR_78420_NAME
+
+    position  = { x = 554 y = 132 }
+	picture   = "11090"
+    year      = 1996
+    # ?
+    component = { id = 78421 name = TECH_CMP_ARMOR_109_1_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78422 name = TECH_CMP_ARMOR_109_2_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78423 name = TECH_CMP_ARMOR_109_3_NAME type = munitions difficulty = 3 }
+    # ?
+    component = { id = 78424 name = TECH_CMP_ARMOR_109_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 78425 name = TECH_CMP_ARMOR_109_5_NAME type = training difficulty = 5 }
+    required  = { 78410 }
+    effects =
+    { command = { type = new_model which = anti_air value = 8 }
+      command = { type = scrap_model which = anti_air value = 7 }
+    }
+  } 
+   application =
+  { id        = 78430
+    name      = TECH_APP_ARMOR_78430_NAME
+
+    position  = { x = 554 y = 150 }
+	picture   = "11090"
+    year      = 2006
+    # ?
+    component = { id = 78431 name = TECH_CMP_ARMOR_109_1_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78432 name = TECH_CMP_ARMOR_109_2_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78433 name = TECH_CMP_ARMOR_109_3_NAME type = munitions difficulty = 3 }
+    # ?
+    component = { id = 78434 name = TECH_CMP_ARMOR_109_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 78435 name = TECH_CMP_ARMOR_109_5_NAME type = training difficulty = 5 }
+    required  = { 78420 }
+    effects =
+    { command = { type = new_model which = anti_air value = 9 }
+      command = { type = scrap_model which = anti_air value = 8 }
+    }
+  } 
+   application =
+  { id        = 78440
+    name      = TECH_APP_ARMOR_78440_NAME
+
+    position  = { x = 554 y = 168 }
+	picture   = "11090"
+    year      = 2016
+    # ?
+    component = { id = 78441 name = TECH_CMP_ARMOR_109_1_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78442 name = TECH_CMP_ARMOR_109_2_NAME type = artillery difficulty = 5 }
+    # ?
+    component = { id = 78443 name = TECH_CMP_ARMOR_109_3_NAME type = munitions difficulty = 3 }
+    # ?
+    component = { id = 78444 name = TECH_CMP_ARMOR_109_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 78445 name = TECH_CMP_ARMOR_109_5_NAME type = training difficulty = 5 }
+    required  = { 78430 }
+    effects =
+    { command = { type = new_model which = anti_air value = 10 }
+      command = { type = scrap_model which = anti_air value = 9 }
+    }
+  } 
+>>>>>>> origin/master
   
   label =
   { tag      = TECH_CAT_SPANTIAIR
