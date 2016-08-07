@@ -6,14 +6,14 @@ technology =
 
   label =
   { tag      = TECH_CAT_lighttanks
-    position = { x = 24 y = 5 }
+    position = { x = 24 y = 2 }
   }
   # Basic Light Tank A13, FCM 36, Pnz 38(t), BT-7M
   application =
   { id        = 2040
     name      = TECH_APP_ARMOR_4_NAME
 
-    position  = { x = 24 y = 23 }
+    position  = { x = 24 y = 20 }
 	picture   = "2040"
     year      = 1938
     # Light Welded Armor
@@ -44,7 +44,7 @@ technology =
   { id        = 2050
     name      = TECH_APP_ARMOR_5_NAME
 
-    position  = { x = 24 y = 41 }
+    position  = { x = 24 y = 35 }
 	picture   = "2050"
     year      = 1939
     # Light Sloped Armor
@@ -76,7 +76,7 @@ technology =
   { id        = 2060
     name      = TECH_APP_ARMOR_6_NAME
 
-    position  = { x = 24 y = 59 }
+    position  = { x = 24 y = 53 }
 	picture   = "2060"
     year      = 1944
     # Light Advanced Sloped Armor
@@ -105,7 +105,7 @@ technology =
   { id = 21000
   name = TECH_APP_ARMOR_297_NAME
   
-  position = { x = 24 y = 77 }
+  position = { x = 24 y = 71 }
   picture = "21000"
   year = 1952
   #Light Semi-Modern Cold Rolled Steel Armour
@@ -128,7 +128,7 @@ technology =
   application = {
   id = 21010
   name = TECH_APP_ARMOR_298_NAME
-  position = { x = 24 y = 95 }
+  position = { x = 24 y = 86 }
   picture = "21010"
   year = 1959
   #Light Modern Cold Rolled Steel Armour
@@ -151,7 +151,7 @@ technology =
   application = {
   id = 21020
   name = TECH_APP_ARMOR_299_NAME
-  position = { x = 24 y = 113 }
+  position = { x = 24 y = 101 }
   picture = "21020"
   year = 1965
   #Sloped Light Armour
@@ -175,7 +175,7 @@ technology =
   application = {
   id = 78000
   name = TECH_APP_ARMOR_78000_NAME
-  position = { x = 24 y = 131 }
+  position = { x = 24 y = 116 }
   picture = "21020"
   year = 1975
   #Sloped Light Armour
@@ -199,7 +199,7 @@ technology =
   application = {
   id = 78010
   name = TECH_APP_ARMOR_78010_NAME
-  position = { x = 24 y = 149 }
+  position = { x = 24 y = 131 }
   picture = "21020"
   year = 1985
   #Sloped Light Armour
@@ -222,7 +222,7 @@ technology =
   application = {
   id = 78020
   name = TECH_APP_ARMOR_78020_NAME
-  position = { x = 24 y = 167 }
+  position = { x = 24 y = 146 }
   picture = "21020"
   year = 1995
   #Sloped Light Armour
@@ -245,7 +245,7 @@ technology =
   application = {
   id = 78030
   name = TECH_APP_ARMOR_78030_NAME
-  position = { x = 24 y = 185 }
+  position = { x = 24 y = 161 }
   picture = "21020"
   year = 2005
   #Sloped Light Armour
@@ -268,7 +268,7 @@ technology =
   application = {
   id = 78040
   name = TECH_APP_ARMOR_78040_NAME
-  position = { x = 24 y = 203 }
+  position = { x = 24 y = 176 }
   picture = "21020"
   year = 2015
   #Sloped Light Armour
@@ -291,14 +291,14 @@ technology =
   
   label =
   { tag      = TECH_CAT_mediumtanks
-    position = { x = 24 y = 221 }
+    position = { x = 24 y = 191 }
   }  
   # Improved Medium Tank T-34, A27M,
   application =
   { id        = 2080
     name      = TECH_APP_ARMOR_8_NAME
 
-    position  = { x = 24 y = 239 }
+    position  = { x = 24 y = 206 }
 	picture   = "2080"
     year      = 1941
     # Medium Sloped Armor
@@ -326,7 +326,7 @@ technology =
   { id        = 2090
     name      = TECH_APP_ARMOR_9_NAME
 
-    position  = { x = 24 y = 257 }
+    position  = { x = 24 y = 221 }
 	picture   = "2090"
     year      = 1943
     # Medium Advanced Sloped Armor
@@ -353,7 +353,7 @@ technology =
   { id        = 2140
     name      = TECH_APP_ARMOR_14_NAME
 
-    position  = { x = 24 y = 275 }
+    position  = { x = 24 y = 236 }
 	picture   = "2140"
     year      = 1945
     # Reactive Armor Plates
@@ -384,7 +384,7 @@ technology =
   { id        = 11000
     name      = TECH_APP_ARMOR_100_NAME
 
-    position  = { x = 24 y = 293 }
+    position  = { x = 24 y = 251 }
 	picture   = "11000"
     year      = 1948
     # ?
@@ -411,7 +411,7 @@ technology =
   { id        = 2660
     name      = TECH_APP_ARMOR_66_NAME
 
-    position  = { x = 24 y = 311 }
+    position  = { x = 24 y = 266 }
 	picture   = "DH2660"
     year      = 1952
     # ?
@@ -438,7 +438,7 @@ technology =
   { id        = 11010
     name      = TECH_APP_ARMOR_101_NAME
 
-    position  = { x = 24 y = 329 }
+    position  = { x = 24 y = 281 }
 	picture   = "11010"
     year      = 1956
     # ?
@@ -465,7 +465,7 @@ technology =
   { id        = 2670
     name      = TECH_APP_ARMOR_67_NAME
 
-    position  = { x = 24 y = 347 }
+    position  = { x = 24 y = 296 }
 	picture   = "DH2670"
     year      = 1962
     # ?
@@ -492,7 +492,7 @@ technology =
 	id = 21030
 	name = TECH_APP_ARMOR_300_NAME
 	
-	position = { x = 24 y = 365 }
+	position = { x = 24 y = 311 }
 	picture = "21030"
 	year = 1967
 	
@@ -519,7 +519,7 @@ technology =
 	id = 21100
 	name = TECH_APP_ARMOR_307_NAME
 	
-	position = { x = 24 y = 383 }
+	position = { x = 24 y = 326 }
 	picture = "21100"
 	year = 1976
 	
@@ -546,7 +546,7 @@ technology =
 	id = 21150
 	name = TECH_APP_ARMOR_312_NAME
 	
-	position = { x = 24 y = 401 }
+	position = { x = 24 y = 341 }
 	picture = "21150"
 	year = 1980
 	
@@ -573,7 +573,7 @@ technology =
 	id = 21160
 	name = TECH_APP_ARMOR_313_NAME
 	
-	position = { x = 24 y = 419 }
+	position = { x = 24 y = 356 }
 	picture = "21160"
 	year = 1985
 	
@@ -593,6 +593,8 @@ technology =
 	command = { trigger = { technology = 6900 } type = scrap_model which = armor value = 10 }
 	command = { type = new_model which = medium_armor value = 14 }
     command = { type = scrap_model which = medium_armor value = 13 }
+	  command = { type = new_model which = tank_destroyer value = 10 }
+      command = { type = scrap_model which = tank_destroyer value = 9 }
 	command = { type = info_may_cause which = 7710 }
 	}
 	}
@@ -601,7 +603,7 @@ technology =
 	id = 78100
 	name = TECH_APP_ARMOR_78100_NAME
 	
-	position = { x = 24 y = 437 }
+	position = { x = 24 y = 371 }
 	picture = "21160"
 	year = 1992
 	
@@ -628,7 +630,7 @@ technology =
 	id = 78110
 	name = TECH_APP_ARMOR_78110_NAME
 	
-	position = { x = 24 y = 455 }
+	position = { x = 24 y = 386 }
 	picture = "21160"
 	year = 2000
 	
@@ -648,6 +650,8 @@ technology =
 	command = { trigger = { technology = 6900 } type = scrap_model which = armor value = 12 }
 	command = { type = new_model which = medium_armor value = 16 }
     command = { type = scrap_model which = medium_armor value = 15 }
+    command = { type = new_model which = tank_destroyer value = 11 }
+   command = { type = scrap_model which = tank_destroyer value = 10 }
 	}
 	}
 			#Advanced Modern MBT
@@ -655,7 +659,7 @@ technology =
 	id = 78120
 	name = TECH_APP_ARMOR_78120_NAME
 	
-	position = { x = 24 y = 473 }
+	position = { x = 24 y = 401 }
 	picture = "21160"
 	year = 2007
 	
@@ -675,6 +679,8 @@ technology =
 	command = { trigger = { technology = 6900 } type = scrap_model which = armor value = 13 }
 	command = { type = new_model which = medium_armor value = 17 }
     command = { type = scrap_model which = medium_armor value = 16 }
+	command = { type = new_model which = tank_destroyer value = 12 }
+      command = { type = scrap_model which = tank_destroyer value = 11 }
 	}
 	}
 			#Advanced Modern MBT
@@ -682,7 +688,7 @@ technology =
 	id = 78130
 	name = TECH_APP_ARMOR_78130_NAME
 	
-	position = { x = 24 y = 491 }
+	position = { x = 24 y = 416 }
 	picture = "21160"
 	year = 2015
 	
@@ -702,6 +708,8 @@ technology =
 	command = { trigger = { technology = 6900 } type = scrap_model which = armor value = 14 }
 	command = { type = new_model which = medium_armor value = 18 }
     command = { type = scrap_model which = medium_armor value = 17 }
+		  command = { type = new_model which = tank_destroyer value = 13 }
+      command = { type = scrap_model which = tank_destroyer value = 12 }
 	}
 	}
 
@@ -1126,7 +1134,7 @@ technology =
   }
   label =
   { tag      = TECH_CAT_armouredcar
-    position = { x = 554 y = 303 }
+    position = { x = 554 y = 247 }
   }
   # Prewar Armoured Car
   application =
@@ -1205,7 +1213,7 @@ technology =
   { id        = 2020
     name      = TECH_APP_ARMOR_2_NAME
 
-    position  = { x = 554 y = 317 }
+    position  = { x = 554 y = 262 }
 	picture   = "2020"
     year      = 1929
     # Tankette Armor
@@ -1229,7 +1237,7 @@ technology =
   { id        = 2150
     name      = TECH_APP_ARMOR_15_NAME
 
-    position  = { x = 554 y = 335 }
+    position  = { x = 554 y = 277 }
 	picture   = "2150"
     year      = 1936
     # Light Armor Plating
@@ -1253,7 +1261,7 @@ technology =
   { id        = 2160
     name      = TECH_APP_ARMOR_16_NAME
 
-    position  = { x = 554 y = 353 }
+    position  = { x = 554 y = 292 }
 	picture   = "2160"
     year      = 1942
     # Light Armor Plating
@@ -1277,7 +1285,7 @@ technology =
   { id = 2890
     name = TECH_APP_ARMOR_89_NAME
 
-    position = { x = 554 y = 371 }
+    position = { x = 554 y = 307 }
 	picture   = "DH2890"
     year = 1948
     # Light Armor Plating
@@ -1301,7 +1309,7 @@ technology =
   { id = 11110
     name = TECH_APP_ARMOR_110_NAME
 
-    position = { x = 554 y = 389 }
+    position = { x = 554 y = 322 }
 	picture   = "DH11110"
     year = 1954
     # Light Armor Plating
@@ -1324,7 +1332,7 @@ technology =
   application = {
   id = 21060
   name = TECH_APP_ARMOR_303_NAME
-  position = { x = 554 y = 407 }
+  position = { x = 554 y = 337 }
   picture = "21060"
   year = 1963
   #Steel Light Armour
@@ -1347,7 +1355,7 @@ technology =
 		application = {
 	id = 21120
 	name = TECH_APP_ARMOR_309_NAME
-	position = { x = 554 y = 425 }
+	position = { x = 554 y = 352 }
 	picture = "21120"
 	year = 1974
 	
@@ -1371,7 +1379,7 @@ technology =
 		application = {
 	id = 79000
 	name = TECH_APP_ARMOR_79000_NAME
-	position = { x = 554 y = 443 }
+	position = { x = 554 y = 362 }
 	picture = "21120"
 	year = 1984
 	
@@ -1395,7 +1403,7 @@ technology =
 		application = {
 	id = 79010
 	name = TECH_APP_ARMOR_79010_NAME
-	position = { x = 554 y = 461 }
+	position = { x = 554 y = 377 }
 	picture = "21120"
 	year = 1994
 	
@@ -1419,7 +1427,7 @@ technology =
 		application = {
 	id = 79020
 	name = TECH_APP_ARMOR_79020_NAME
-	position = { x = 554 y = 479 }
+	position = { x = 554 y = 392 }
 	picture = "21120"
 	year = 2004
 	
@@ -1443,7 +1451,7 @@ technology =
 		application = {
 	id = 79030
 	name = TECH_APP_ARMOR_79030_NAME
-	position = { x = 554 y = 497 }
+	position = { x = 554 y = 407 }
 	picture = "21120"
 	year = 2014
 	
@@ -2930,14 +2938,14 @@ application = {
   
   label =
   { tag      = TECH_CAT_antiairbrig
-    position = { x = 558 y = 10 }
+    position = { x = 558 y = 7 }
   }
   # Great War Anti-Air Artillery
   application =
   { id        = 2810
     name      = TECH_APP_ARMOR_81_NAME
 
-    position  = { x = 554 y = 24 }
+    position  = { x = 554 y = 22 }
 	picture   = "DH2810"
     year      = 1918
     # Elder Anti-Air Gun 75mm
@@ -2961,7 +2969,7 @@ application = {
   { id        = 2820
     name      = TECH_APP_ARMOR_82_NAME
 
-    position  = { x = 554 y = 42 }
+    position  = { x = 554 y = 37 }
 	picture   = "DH2820"
     year      = 1924
     # Early Anti-Air Gun 75mm
@@ -2985,7 +2993,7 @@ application = {
   { id        = 2510
     name      = TECH_APP_ARMOR_51_NAME
 
-    position  = { x = 554 y = 60 }
+    position  = { x = 554 y = 52 }
 	picture   = "DH2510"
     year      = 1930
     # Anti-Air Gun 20mm
@@ -3009,7 +3017,7 @@ application = {
   { id        = 2520
     name      = TECH_APP_ARMOR_52_NAME
 
-    position  = { x = 554 y = 78 }
+    position  = { x = 554 y = 67 }
 	picture   = "2520"
     year      = 1936
     # Anti-Air Gun 40mm
@@ -3033,7 +3041,7 @@ application = {
   { id        = 2530
     name      = TECH_APP_ARMOR_53_NAME
 
-    position  = { x = 554 y = 96 }
+    position  = { x = 554 y = 82 }
 	picture   = "2530"
     year      = 1942
     # Anti-Air Gun 20mm Quad
@@ -3057,7 +3065,7 @@ application = {
   { id        = 2540
     name      = TECH_APP_ARMOR_54_NAME
 
-    position  = { x = 554 y = 114 }
+    position  = { x = 554 y = 97 }
 	picture   = "2540"
     year      = 1948
     # Anti-Air Gun 40mm Quad
@@ -3081,7 +3089,7 @@ application = {
   { id        = 11090
     name      = TECH_APP_ARMOR_109_NAME
 
-    position  = { x = 554 y = 132 }
+    position  = { x = 554 y = 112 }
 	picture   = "11090"
     year      = 1956
     # ?
@@ -3101,19 +3109,17 @@ application = {
     }
   }
   
-  
-  
-  
+    
   label =
   { tag      = TECH_CAT_SPANTIAIR
-    position = { x = 554 y = 154 }
+    position = { x = 554 y = 127 }
   }
   # Early SP Anti-Air Artillery Brigade
   application =
   { id        = 22910
     name      = TECH_APP_ARMOR_291_NAME
 
-    position  = { x = 554 y = 168 }
+    position  = { x = 554 y = 142 }
 	picture   = "DH22910"
     year      = 1940
     # Anti-Air Gun 20mm
@@ -3138,7 +3144,7 @@ application = {
   { id        = 22920
     name      = TECH_APP_ARMOR_292_NAME
 
-    position  = { x = 554 y = 186 }
+    position  = { x = 554 y = 157 }
 	picture   = "DH22920"
     year      = 1942
     # Anti-Air Gun 40mm
@@ -3162,7 +3168,7 @@ application = {
   { id        = 22930
     name      = TECH_APP_ARMOR_293_NAME
 
-    position  = { x = 554 y = 204 }
+    position  = { x = 554 y = 172 }
 	picture   = "1290"
     year      = 1944
     # Anti-Air Gun 20mm Quad
@@ -3186,7 +3192,7 @@ application = {
   { id        = 22940
     name      = TECH_APP_ARMOR_294_NAME
 
-    position  = { x = 554 y = 222 }
+    position  = { x = 554 y = 187 }
 	picture   = "DH22940"
     year      = 1948
     # Anti-Air Gun 40mm Quad
@@ -3210,7 +3216,7 @@ application = {
   { id        = 22950
     name      = TECH_APP_ARMOR_295_NAME
 
-    position  = { x = 554 y = 240 }
+    position  = { x = 554 y = 202 }
 	picture   = "DH22950"
     year      = 1952
     # ?
@@ -3234,7 +3240,7 @@ application = {
   { id        = 22960
     name      = TECH_APP_ARMOR_296_NAME
 
-    position  = { x = 554 y = 258 }
+    position  = { x = 554 y = 217 }
 	picture   = "DH22960"
     year      = 1958
     # ?
@@ -3257,7 +3263,7 @@ application = {
   application = {
   id = 21050
   name = TECH_APP_ARMOR_302_NAME
-  position = { x = 554 y = 276 }
+  position = { x = 554 y = 232 }
   picture = "21050"
   year = 1963
   
