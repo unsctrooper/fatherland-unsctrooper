@@ -1103,14 +1103,14 @@ technology =
   }
     label =
   { tag      = TECH_CAT_MOBILITY_CW
-    position = { x = 1 y = 152 }
+    position = { x = 1 y = 31 }
   }
   # Modern Blitzkrieg
   application =
   { id        = 14100
     name      = TECH_APP_LD_110_NAME
 
-    position  = { x = 1 y = 166 }
+    position  = { x = 1 y = 46 }
 	picture   = "14100"
     year      = 1947
     component = { id = 14101 name = TECH_CMP_LD_10_3_NAME type = combined_arms_focus difficulty = 8 }
@@ -1144,7 +1144,7 @@ technology =
   { id        = 6720
     name      = TECH_APP_LD_142_NAME
 
-    position = { x = 112 y = 166 }
+    position = { x = 109 y = 46 }
 	picture   = "DH6720"
     year      = 1948
     # ? 
@@ -1174,7 +1174,7 @@ technology =
   { id        = 6740
     name      = TECH_APP_LD_144_NAME
 
-    position = { x = 223 y = 157 }
+    position = { x = 218 y = 31 }
 	picture   = "2170"
     year      = 1953
     # ? 
@@ -1232,9 +1232,9 @@ technology =
   application =
   { id        = 6730
     name      = TECH_APP_LD_143_NAME
-    position = { x = 223 y = 175 }
-	position = { x = 223 y = 257 }
-	position = { x = 223 y = 337 }
+    position = { x = 218 y = 46 }
+#	position = { x = 223 y = 257 }
+#	position = { x = 223 y = 337 }
 	picture   = "DH6730"
     year      = 1950
     # ? 
@@ -1268,7 +1268,7 @@ technology =
   { id        = 6810
     name      = TECH_APP_LD_151_NAME
 
-    position = { x = 334 y = 157 }
+    position = { x = 327 y = 31 }
 	picture   = "10100"
     year      = 1955
     # ? 
@@ -1298,9 +1298,9 @@ technology =
   { id        = 6750
     name      = TECH_APP_LD_145_NAME
 	
-    position = { x = 334 y = 175 }
-	position = { x = 334 y = 257 }	
-	position = { x = 334 y = 337 }
+    position = { x = 327 y = 46 }
+#	position = { x = 334 y = 257 }	
+#	position = { x = 334 y = 337 }
 	picture   = "DH6750"
     year      = 1955
     # ? 
@@ -1330,9 +1330,9 @@ technology =
   { id        = 6760
     name      = TECH_APP_LD_146_NAME
 	
-    position = { x = 449 y = 157 }
-	position = { x = 449 y = 257 }
-	position = { x = 449 y = 337 }
+    position = { x = 436 y = 31 }
+#	position = { x = 449 y = 257 }
+#	position = { x = 449 y = 337 }
 	picture   = "10030"
     year      = 1960
     # ? 
@@ -1361,7 +1361,7 @@ technology =
   { id        = 6820
     name      = TECH_APP_LD_152_NAME
 
-    position = { x = 449 y = 175 }
+    position = { x = 436 y = 46 }
 	picture   = "10080"
     year      = 1963
     # ? 
@@ -1391,7 +1391,7 @@ technology =
   { id        = 6830
     name      = TECH_APP_LD_153_NAME
 
-    position = { x = 565 y = 166 }
+    position = { x = 545 y = 31 }
 	picture   = "DH6840"
     year      = 1970
     # ? 
@@ -1423,13 +1423,13 @@ technology =
 ######################################
     label =
   { tag      = TECH_CAT_MANPOWER
-    position = { x = 1 y = 192 }
+    position = { x = 1 y = 61 }
   }
   application =
   { id        = 6570
     name      = TECH_APP_LD_127_NAME
 
-    position = { x = 1 y = 206 }
+    position = { x = 1 y = 76 }
 	picture   = "DH6570"
     year      = 1930
     # ? 
@@ -1463,7 +1463,7 @@ technology =
   { id        = 6300
     name      = TECH_APP_LD_30_NAME
 
-    position  = { x = 112 y = 206 }
+    position  = { x = 109 y = 76 }
 	picture   = "6300"
     year      = 1936
     # High Echelon Fire Support
@@ -1489,7 +1489,7 @@ technology =
   { id        = 6310
     name      = TECH_APP_LD_31_NAME
 
-    position  = { x = 223 y = 206 }
+    position  = { x = 217 y = 76 }
 	picture   = "6310"
     year      = 1937
     # Artillery divisions
@@ -1529,7 +1529,7 @@ technology =
   { id        = 6320
     name      = TECH_APP_LD_32_NAME
 
-    position  = { x = 334 y = 199 }
+    position  = { x = 327 y = 61 }
 	picture   = "6320"
     year      = 1940
     # Artillery groups
@@ -1559,7 +1559,7 @@ technology =
   { id        = 6330
     name      = TECH_APP_LD_33_NAME
 
-    position  = { x = 334 y = 217 }
+    position  = { x = 327 y = 76 }
 	picture   = "6330"
     year      = 1940
     # Mechanized forward elements
@@ -1608,7 +1608,7 @@ technology =
   { id        = 6340
     name      = TECH_APP_LD_34_NAME
 
-    position  = { x = 449 y = 199 }
+    position  = { x = 436 y = 61 }
 	picture   = "6340"
     year      = 1941
     # Counterpreparating artillery fire
@@ -1648,7 +1648,7 @@ technology =
   { id        = 6350
     name      = TECH_APP_LD_35_NAME
 
-    position  = { x = 449 y = 217 }
+    position  = { x = 436 y = 76 }
 	picture   = "6350"
     year      = 1941
     # Operational deception 
@@ -1676,7 +1676,7 @@ technology =
   { id        = 6370
     name      = TECH_APP_LD_37_NAME
 
-    position  = { x = 565 y = 199 }
+    position  = { x = 545 y = 61 }
 	picture   = "6370"
     year      = 1942
     # Airmobile combined-arms formations 
@@ -1742,16 +1742,16 @@ technology =
       command = { type = sce_frequency value = 0.25 }
     }
   }
-      label =
-  { tag      = TECH_CAT_MANPOWER_CW
-    position = { x = 1 y = 232 }
-  }
+#      label =
+#  { tag      = TECH_CAT_MANPOWER_CW
+#    position = { x = 1 y = 232 }
+#  }
   # Mechanized Wave
   application =
   { id        = 14060
     name      = TECH_APP_LD_106_NAME
 
-    position  = { x = 1 y = 246 }
+#    position  = { x = 1 y = 246 }
 	picture   = "14060"
     year      = 1946
     # ?
@@ -1790,7 +1790,7 @@ technology =
   { id        = 6770
     name      = TECH_APP_LD_147_NAME
 
-    position = { x = 112 y = 246 }
+ #   position = { x = 112 y = 246 }
 	picture   = "DH6770"
     year      = 1948
     # ? 
@@ -1826,7 +1826,7 @@ technology =
   { id        = 6780
     name      = TECH_APP_LD_148_NAME
 
-    position = { x = 223 y = 239 }
+#    position = { x = 223 y = 239 }
 	picture   = "1280"
     year      = 1952
     # ? 
@@ -1853,7 +1853,7 @@ technology =
   { id        = 6860
     name      = TECH_APP_LD_156_NAME
 
-    position = { x = 334 y = 239 }
+#    position = { x = 334 y = 239 }
 	picture   = "1300"
     year      = 1957
     # ? 
@@ -1884,7 +1884,7 @@ technology =
   { id        = 6870
     name      = TECH_APP_LD_157_NAME
 
-    position = { x = 449 y = 239 }
+#    position = { x = 449 y = 239 }
 	picture   = "1260"
     year      = 1963
     # ? 
@@ -1914,7 +1914,7 @@ technology =
   { id        = 6840
     name      = TECH_APP_LD_154_NAME
 
-    position = { x = 565 y = 246 }
+#    position = { x = 565 y = 246 }
 	picture   = "DH6840"
     year      = 1970
     # ? 
@@ -2314,16 +2314,16 @@ technology =
 ########
 # NATO #
 ########
-      label =
-  { tag      = TECH_CAT_NATODOC
-    position = { x = 1 y = 312 }
-  }
+#      label =
+#  { tag      = TECH_CAT_NATODOC
+#    position = { x = 1 y = 312 }
+#  }
   # Air Land Battle
   application =
   { id        = 14050
     name      = TECH_APP_LD_105_NAME
 
-    position  = { x = 1 y = 326 }
+#    position  = { x = 1 y = 326 }
 	picture   = "14050"
     year      = 1946
     # ?
@@ -2356,7 +2356,7 @@ technology =
   { id        = 6790
     name      = TECH_APP_LD_149_NAME
 
-    position = { x = 112 y = 326 }
+#    position = { x = 112 y = 326 }
 	picture   = "DH6790"
     year      = 1949
     # ? 
@@ -2388,7 +2388,7 @@ technology =
   { id        = 6800
     name      = TECH_APP_LD_150_NAME
 
-    position = { x = 223 y = 319 }
+#    position = { x = 223 y = 319 }
 	picture   = "1090"
     year      = 1951
     # ? 
@@ -2420,7 +2420,7 @@ technology =
   { id        = 6880
     name      = TECH_APP_LD_158_NAME
 
-    position = { x = 334 y = 319 }
+#    position = { x = 334 y = 319 }
 	picture   = "14090"
     year      = 1958
     # ? 
@@ -2461,7 +2461,7 @@ technology =
   { id        = 6890
     name      = TECH_APP_LD_159_NAME
 
-    position = { x = 449 y = 319 }
+#    position = { x = 449 y = 319 }
 	picture   = "DH6890"
     year      = 1966
     # ? 
@@ -2490,7 +2490,7 @@ technology =
   { id        = 6850
     name      = TECH_APP_LD_155_NAME
 
-    position = { x = 565 y = 314 }
+#    position = { x = 565 y = 314 }
 	picture   = "DH6850"
     year      = 1970
     # ? 
