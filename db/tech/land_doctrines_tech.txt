@@ -1948,14 +1948,14 @@ technology =
 ######################################
       label =
   { tag      = TECH_CAT_SUPFIREPOWER
-    position = { x = 1 y = 272 }
+    position = { x = 1 y = 91 }
   }
   # Firepower Focus Doctrine
   application =
   { id        = 6010
     name      = TECH_APP_LD_1_NAME
 
-	position = { x = 1 y = 286 }
+	position = { x = 1 y = 106 }
 	picture   = "6010"
     year      = 1930
     # Tactical unit - Battalion 
@@ -1987,7 +1987,7 @@ technology =
   { id        = 6020
     name      = TECH_APP_LD_2_NAME
 
-    position  = { x = 112 y = 286 }
+    position  = { x = 109 y = 106 }
 	picture   = "6020"
     year      = 1936
     # High Echelon Fire Support
@@ -2018,7 +2018,7 @@ technology =
   { id        = 6040
     name      = TECH_APP_LD_4_NAME
 
-    position = { x = 223 y = 279 }
+    position = { x = 327 y = 91 }
 	picture   = "6040"
     year      = 1937
     # Mid Echelon Fire Support
@@ -2056,7 +2056,7 @@ technology =
   { id        = 6050
     name      = TECH_APP_LD_5_NAME
 
-    position  = { x = 223 y = 297 }
+    position  = { x = 327 y = 106 }
 	picture   = "6050"
     year      = 1938
     # Pre-computed firing data
@@ -2096,7 +2096,7 @@ technology =
   { id        = 6060
     name      = TECH_APP_LD_6_NAME
 
-    position  = { x = 334 y = 279 }
+    position  = { x = 436 y = 91 }
 	picture   = "6060"
     year      = 1939
     # Mid Echelon Fire Support
@@ -2136,7 +2136,7 @@ technology =
   { id        = 6070
     name      = TECH_APP_LD_7_NAME
 
-    position  = { x = 334 y = 297 }
+    position  = { x = 436 y = 106 }
 	picture   = "6070"
     year      = 1940
     # Low Echelon Fire Support
@@ -2188,7 +2188,7 @@ technology =
   { id        = 6080
     name      = TECH_APP_LD_8_NAME
 
-    position  = { x = 449 y = 286 }
+    position  = { x = 545 y = 91 }
 	picture   = "6080"
     year      = 1942
     # Tactical unit - Platoon
@@ -2231,7 +2231,7 @@ technology =
   { id        = 6100
     name      = TECH_APP_LD_10_NAME
 
-    position  = { x = 565 y = 276 }
+    position  = { x = 654 y = 91 }
 	picture   = "6100"
     year      = 1943
     # Artillery Proximity fuses
@@ -2274,7 +2274,7 @@ technology =
   { id        = 6090
     name      = TECH_APP_LD_9_NAME
 
-    position  = { x = 565 y = 294 }
+    position  = { x = 654 y = 106 }
 	picture   = "6090"
     year      = 1943
     # Time on Target firemissions
