@@ -1676,7 +1676,7 @@ technology =
   { id        = 6370
     name      = TECH_APP_LD_37_NAME
 
-    position  = { x = 545 y = 61 }
+    position  = { x = 545 y = 46 }
 	picture   = "6370"
     year      = 1942
     # Airmobile combined-arms formations 
@@ -1710,7 +1710,7 @@ technology =
   { id        = 6360
     name      = TECH_APP_LD_36_NAME
 
-    position  = { x = 565 y = 217 }
+    position  = { x = 545 y = 61 }
 	picture   = "6360"
     year      = 1943
     # Bind enemy in depth-operations
@@ -2018,7 +2018,7 @@ technology =
   { id        = 6040
     name      = TECH_APP_LD_4_NAME
 
-    position = { x = 327 y = 91 }
+    position = { x = 218 y = 91 }
 	picture   = "6040"
     year      = 1937
     # Mid Echelon Fire Support
@@ -2056,7 +2056,7 @@ technology =
   { id        = 6050
     name      = TECH_APP_LD_5_NAME
 
-    position  = { x = 327 y = 106 }
+    position  = { x = 218 y = 106 }
 	picture   = "6050"
     year      = 1938
     # Pre-computed firing data
@@ -2096,7 +2096,7 @@ technology =
   { id        = 6060
     name      = TECH_APP_LD_6_NAME
 
-    position  = { x = 436 y = 91 }
+    position  = { x = 327 y = 91 }
 	picture   = "6060"
     year      = 1939
     # Mid Echelon Fire Support
@@ -2136,7 +2136,7 @@ technology =
   { id        = 6070
     name      = TECH_APP_LD_7_NAME
 
-    position  = { x = 436 y = 106 }
+    position  = { x = 327 y = 106 }
 	picture   = "6070"
     year      = 1940
     # Low Echelon Fire Support
@@ -2188,7 +2188,7 @@ technology =
   { id        = 6080
     name      = TECH_APP_LD_8_NAME
 
-    position  = { x = 545 y = 91 }
+    position  = { x = 436 y = 91 }
 	picture   = "6080"
     year      = 1942
     # Tactical unit - Platoon
@@ -2231,7 +2231,7 @@ technology =
   { id        = 6100
     name      = TECH_APP_LD_10_NAME
 
-    position  = { x = 654 y = 91 }
+    position  = { x = 545 y = 76 }
 	picture   = "6100"
     year      = 1943
     # Artillery Proximity fuses
@@ -2274,7 +2274,7 @@ technology =
   { id        = 6090
     name      = TECH_APP_LD_9_NAME
 
-    position  = { x = 654 y = 106 }
+    position  = { x = 545 y = 91 }
 	picture   = "6090"
     year      = 1943
     # Time on Target firemissions
@@ -2525,14 +2525,14 @@ technology =
 ######################################
       label =
   { tag      = TECH_CAT_GRANDBATTLE
-    position = { x = 1 y = 352 }
+    position = { x = 1 y = 121 }
   }
   # Defensive Focus
   application =
   { id        = 6560
     name      = TECH_APP_LD_126_NAME
 
-    position = { x = 1 y = 366 }
+    position = { x = 1 y = 136 }
 	picture   = "DH6560"
     year      = 1930
     # ? 
@@ -2569,7 +2569,7 @@ technology =
 
 	picture   = "6030"
     year      = 1936
-    position  = { x = 112 y = 366 }
+    position  = { x = 108 y = 136 }
     # High Echelon Fire Support
     component = { id = 6031 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 5 }
     # Advance under Fire
@@ -2624,7 +2624,7 @@ technology =
   { id        = 6120
     name      = TECH_APP_LD_12_NAME
 
-    position  = { x = 223 y = 359 }
+    position  = { x = 217 y = 121 }
 	picture   = "6120"
     year      = 1936
     # Organic divisional artillery
@@ -2663,7 +2663,7 @@ technology =
   { id        = 6110
     name      = TECH_APP_LD_11_NAME
 
-    position  = { x = 223 y = 377 }
+    position  = { x = 217 y = 136 }
 	picture   = "6110"
     year      = 1938
     # Multiple pre-planned targets
@@ -2707,7 +2707,7 @@ technology =
   { id        = 6130
     name      = TECH_APP_LD_13_NAME
 
-    position  = { x = 334 y = 359 }
+    position  = { x = 326 y = 121 }
 	picture   = "6130"
     year      = 1940
     # Multiple Bunker-lines
@@ -2748,7 +2748,7 @@ technology =
   { id        = 6140
     name      = TECH_APP_LD_14_NAME
 
-    position  = { x = 334 y = 377 }
+    position  = { x = 326 y = 136 }
 	picture   = "6140"
     year      = 1942
     # Artillery divisions
@@ -2787,7 +2787,7 @@ technology =
   { id        = 6150
     name      = TECH_APP_LD_15_NAME
 
-    position  = { x = 449 y = 359 }
+    position  = { x = 435 y = 121 }
 	picture   = "6150"
     year      = 1942
     # Field fortification emphasis
@@ -2815,7 +2815,7 @@ technology =
   { id        = 6170
     name      = TECH_APP_LD_17_NAME
 
-    position  = { x = 449 y = 377 }
+    position  = { x = 435 y = 136 }
 	picture   = "6170"
     year      = 1943
     # Dedicated artillery
@@ -2846,7 +2846,7 @@ technology =
   { id        = 6180
     name      = TECH_APP_LD_18_NAME
 
-    position  = { x = 565 y = 334 }
+    position  = { x = 545 y = 106 }
 	picture   = "6180"
     year      = 1944
     # low level field artillery
@@ -2889,7 +2889,7 @@ technology =
   { id        = 6200
     name      = TECH_APP_LD_20_NAME
 
-    position  = { x = 565 y = 352 }
+    position  = { x = 545 y = 121 }
 	picture   = "6200"
     year      = 1944
     # Combined arms operations
@@ -2924,7 +2924,7 @@ technology =
   { id        = 14070
     name      = TECH_APP_LD_107_NAME
 
-    position  = { x = 565 y = 370 }
+    position  = { x = 545 y = 136 }
 	picture   = "14070"
     year      = 1946
     # ?
@@ -2961,7 +2961,7 @@ technology =
 ######################################
       label =
   { tag      = TECH_CAT_LIGHTINF
-    position = { x = 1 y = 392 }
+    position = { x = 1 y = 151 }
   }
 # Light infantry
   application = { 
@@ -2969,7 +2969,7 @@ technology =
 	name = TECH_APP_LD_39_NAME
 
 
-	position = { x = 1 y = 406 }
+	position = { x = 1 y = 166 }
 	picture   = "DH6390"
     year = 1936
 
@@ -3013,7 +3013,7 @@ technology =
 
 	picture   = "DH6400"
     year      = 1936
-    position  = { x = 112 y = 406 }
+    position  = { x = 108 y = 166 }
     # High Echelon Fire Support
     component = { id = 6401 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 5 }
     # Advance under Fire
@@ -3064,7 +3064,7 @@ technology =
   { id        = 6420
     name      = TECH_APP_LD_12_NAME
 
-    position  = { x = 223 y = 399 }
+    position  = { x = 217 y = 151 }
 	picture   = "DH6420"
     year      = 1936
     # Organic divisional artillery
@@ -3102,7 +3102,7 @@ technology =
   { id        = 6410
     name      = TECH_APP_LD_11_NAME
 
-    position  = { x = 223 y = 417 }
+    position  = { x = 217 y = 166 }
 	picture   = "DH6410"
     year      = 1938
     # Multiple pre-planned targets
@@ -3147,7 +3147,7 @@ technology =
   { id        = 6430
     name      = TECH_APP_LD_13_NAME
 
-    position  = { x = 334 y = 399 }
+    position  = { x = 326 y = 151 }
 	picture   = "DH6430"
     year      = 1940
     # Multiple Bunker-lines
@@ -3189,7 +3189,7 @@ technology =
   { id        = 6440
     name      = TECH_APP_LD_14_NAME
     #position = { x = 576 y = 88 }
-    position  = { x = 334 y = 417 }
+    position  = { x = 326 y = 166 }
 	picture   = "DH6440"
     year      = 1942
     # Artillery divisions
@@ -3229,7 +3229,7 @@ technology =
 	name = TECH_APP_LD_45_NAME
 
     #position  = { x = 520 y = 71 }
-	position = { x = 449 y = 399 }
+	position = { x = 435 y = 151 }
 	picture   = "DH6450"
     year = 1941
 
@@ -3273,7 +3273,7 @@ technology =
   { id        = 6160
     name      = TECH_APP_LD_16_NAME
 
-    position  = { x = 449 y = 417 }
+    position  = { x = 435 y = 166 }
 	picture   = "6160"
     year      = 1942
     # Night Attacks
@@ -3338,7 +3338,7 @@ technology =
 	name = TECH_APP_LD_46_NAME
 
 
-	position = { x = 565 y = 390 }
+	position = { x = 545 y = 151 }
 	picture   = "DH6460"
     year = 1943
 
@@ -3382,7 +3382,7 @@ technology =
   { id        = 6190
     name      = TECH_APP_LD_19_NAME
 
-    position  = { x = 565 y = 408 }
+    position  = { x = 545 y = 166 }
 	picture   = "6190"
     year      = 1943
     # Self sustaining units
@@ -3430,7 +3430,7 @@ technology =
 	name = TECH_APP_LD_49_NAME
 
 
-	position = { x = 565 y = 426 }
+	position = { x = 545 y = 181 }
 	picture   = "DH6490"
     year = 1946
 
@@ -3466,13 +3466,13 @@ technology =
 #########################################
       label =
   { tag      = TECH_CAT_PPLWAR
-    position = { x = 1 y = 432 }
+    position = { x = 1 y = 181 }
   }
   application = {
  id        = 14140
     name      = TECH_APP_LD_114_NAME
     
-    position  = { x = 1 y = 446 }
+    position  = { x = 1 y = 196 }
 	picture   = "14140"
     year      = 1937
  #Protracted War Theory- infantry focus
@@ -3511,7 +3511,7 @@ application =
 { id        = 14150
     name      = TECH_APP_LD_115_NAME
 
-    position  = { x = 1 y = 464 }
+    position  = { x = 1 y = 211 }
     picture   = "14150"
     year      = 1938
     # Trading Space for Time
@@ -3561,7 +3561,7 @@ application =
 { id        = 14160
     name      = TECH_APP_LD_116_NAME
 
-    position  = { x = 112 y = 446 }
+    position  = { x = 108 y = 196 }
     picture   = "14160"
     year      = 1939
 # Ideological promotion
@@ -3620,7 +3620,7 @@ application =
 { id        = 14170
     name      = TECH_APP_LD_117_NAME
 
-    position  = { x = 112 y = 464 }
+    position  = { x = 108 y = 211 }
     picture   = "14170"
     year      = 1941
 # Hit-and-run strikes
@@ -3669,7 +3669,7 @@ application =
 { id        = 14180
     name      = TECH_APP_LD_118_NAME
 
-    position  = { x = 223 y = 446 }
+    position  = { x = 217 y = 196 }
     picture   = "14180"
     year      = 1942
 # Fish in the Sea Doctrine
@@ -3729,7 +3729,7 @@ application =
 { id        = 14190
     name      = TECH_APP_LD_119_NAME
 
-    position  = { x = 223 y = 464 }
+    position  = { x = 217 y = 211 }
     picture   = "14190"
     year      = 1945
 #Asymmetric warfare theory
@@ -3770,7 +3770,7 @@ application =
 { id        = 14200
     name      = TECH_APP_LD_161_NAME
 
-    position  = { x = 334 y = 446 }
+    position  = { x = 326 y = 196 }
 	picture   = "14200"
     year      = 1948
 # Demoralization of the enemy
@@ -3818,7 +3818,7 @@ application =
 { id        = 14220
     name      = TECH_APP_LD_163_NAME
 
-    position  = { x = 334 y = 464 }
+    position  = { x = 326 y = 211 }
     picture   = "14220"
     year = 1960
     # International Support
@@ -3871,7 +3871,7 @@ application =
 { id        = 14230
     name      = TECH_APP_LD_164_NAME
 
-    position  = { x = 449 y = 446 }
+    position  = { x = 435 y = 196 }
     picture   = "14230"
     year      = 1960
 # Peopleӳ War Experience
@@ -3925,7 +3925,7 @@ application =
 { id        = 14240
     name      = TECH_APP_LD_165_NAME
 
-    position  = { x = 565 y = 446 }
+    position  = { x = 545 y = 196 }
     picture   = "14240"
     year      = 1960
     # Foreign Support Focus
@@ -3982,7 +3982,7 @@ application =
 { id        = 14250
     name      = TECH_APP_LD_166_NAME
 
-    position  = { x = 449 y = 476 }
+    position  = { x = 435 y = 211 }
     picture   = "14250"
     year      = 1960
 # ashes of his fathers and the temples of his gods worldview
@@ -4035,7 +4035,7 @@ application =
 { id        = 14260
     name      = TECH_APP_LD_167_NAME
 
-    position  = { x = 565 y = 476 }
+    position  = { x = 545 y = 211 }
     picture   = "14260"
     year      = 1970
 # Theory of Productive Forces
