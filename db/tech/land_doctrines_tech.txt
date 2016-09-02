@@ -4097,4 +4097,79 @@ command = { type = fort_attack which = mechanized value = 5 }
     }
   }
 
- }
+
+
+ ########################################
+ #### NEW FATHERLAND TECHS           ####
+ ########################################
+ 
+  label =
+  { tag      = TECH_CAT_AXIS
+    position = { x = 100 y = 227 }
+  }
+ 
+ # Unternehmen Festung Europa (def+off)
+application = 
+{ id        = 80010
+    name      = TECH_APP_LD_80010_NAME
+
+    position  = { x = 1 y = 242 }
+    picture   = "14260"
+    year      = 1948
+
+component = { id = 80011 name = TECH_CMP_LD_167_1_NAME type = mathematics difficulty = 10 }
+component = { id = 80012 name = TECH_CMP_LD_167_2_NAME type = technical_efficiency difficulty = 30 }
+component = { id = 80013 name = TECH_CMP_LD_167_3_NAME type = management difficulty = 10 }
+component = { id = 80014 name = TECH_CMP_LD_167_4_NAME type = centralized_execution difficulty = 30 }
+component = { id = 80015 name = TECH_CMP_LD_167_5_NAME type = industrial_engineering difficulty = 30 }
+
+ required  = {  }
+    effects =
+    { 
+command = { type = ground_def_eff value = 1.00 }
+command = { type = new_model which = hq value = 5 }
+command = { type = scrap_model which = hq value = 4 }
+command = { type = deactivate which = 14230 } #Focalism
+command = { type = deactivate which = 14240 } #Urban Insurgency
+command = { type = deactivate which = 14250 } #Folk & Faith
+command = { type = deactivate which = 14220 } #Protracted People's War
+command = { type = trickleback_mod value = 1 }
+command = { type = attrition_mod value = 1 }
+command = { type = intelligence which = us value = 15  }
+command = { type = intelligence which = them value = -5 }
+command = { type = surprise which = land value = 5 }
+command = { type = army_detection which = us value = 10 }
+command = { type = army_detection which = them value = -5 }
+command = { type = wartime_ic_mod value = 10 }
+command = { type = hq_supply_eff value = 3 }
+command = { type = sce_frequency value = 0.3 }
+command = { type = muddy_defense which = land value = 5 }
+command = { type = plain_defense which = land value = 5 }
+command = { type = desert_defense which = land value = 5 }
+command = { type = mountain_defense which = land value = 5 }
+command = { type = hill_defense which = land value = 5 }
+command = { type = forest_defense which = land value = 5 }
+command = { type = jungle_defense which = land value = 5 }
+command = { type = swamp_defense which = land value = 5 }
+command = { type = urban_defense which = land value = 5 }
+command = { type = max_organization which = land value = 20 }
+command = { type = morale which = land value = 5 }
+command = { type = muddy_attack which = armor value = 5 }
+command = { type = plain_attack which = armor value = 15 }
+command = { type = desert_attack which = armor value = 5 }
+command = { type = hill_attack which = armor value = 5 }
+command = { type = forest_attack which = armor value = 5 }
+command = { type = urban_attack which = armor value = 5 }
+command = { type = fort_attack which = armor value = 5 }
+command = { type = muddy_attack which = mechanized value = 5 }
+command = { type = plain_attack which = mechanized value = 15 }
+command = { type = desert_attack which = mechanized value = 5 }
+command = { type = hill_attack which = mechanized value = 5 }
+command = { type = forest_attack which = mechanized value = 5 }
+command = { type = urban_attack which = mechanized value = 5 }
+command = { type = fort_attack which = mechanized value = 5 }
+    }
+  }
+
+
+} 
